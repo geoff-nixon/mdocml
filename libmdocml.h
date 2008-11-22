@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: libmdocml.h,v 1.1.1.1 2008/11/22 14:53:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -19,7 +19,31 @@
 #ifndef LIBMDOCML_H
 #define LIBMDOCML_H
 
+#include <sys/types.h>
+
+struct	md_rbuf {
+	int		 fd;
+	const char	*name;
+	char		*buf;
+	size_t		 bufsz;
+	size_t		 line;
+};
+
+struct	md_mbuf {
+	int		 fd;
+	const char	*name;
+	char		*buf;
+	size_t		 bufsz;
+	size_t		 pos;
+};
+
+enum	md_type {
+	MD_DUMMY
+};
+
 __BEGIN_DECLS
+
+int	md_run(enum md_type, struct md_mbuf *, struct md_rbuf *);
 
 __END_DECLS
 

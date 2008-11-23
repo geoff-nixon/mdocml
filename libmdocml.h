@@ -1,4 +1,4 @@
-/* $Id: libmdocml.h,v 1.4 2008/11/23 19:10:03 kristaps Exp $ */
+/* $Id: libmdocml.h,v 1.5 2008/11/23 22:30:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -43,7 +43,7 @@ struct	md_args {
 	union md_params	 params;/* Parameters for parser. */
 	enum md_type	 type;	/* Type of parser. */
 	int		 dbg;	/* Debug level. */
-#define	MD_DBG_TREE	(1 << 0)/* Print the parse tree to stdout. */
+#define	MD_DBG_TREE	 1
 };
 
 struct	md_buf {

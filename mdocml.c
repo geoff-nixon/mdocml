@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.5 2008/11/22 20:15:34 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.6 2008/11/23 11:05:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -72,6 +72,7 @@ main(int argc, char *argv[])
 		in = *argv++;
 
 	args.type = MD_HTML4_STRICT;
+	args.dbg = MD_DBG_TREE;
 
 	return(begin_io(&args, out ? out : "-", in ? in : "-"));
 }

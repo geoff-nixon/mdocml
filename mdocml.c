@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.6 2008/11/23 11:05:25 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.7 2008/11/23 19:10:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -166,6 +166,9 @@ begin_bufs(const struct md_args *args,
 
 	if (-1 == fstat(in->fd, &stin)) {
 		warn("%s", in->name);
+		return(1);
+	} else if (0 == stin.st_size) {
+		warnx("%s: empty file", in->name);
 		return(1);
 	} else if (-1 == fstat(out->fd, &stout)) {
 		warn("%s", out->name);

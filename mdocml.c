@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.8 2008/11/23 22:30:53 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.9 2008/11/23 23:12:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -55,6 +55,8 @@ main(int argc, char *argv[])
 	extern int	 optind;
 
 	out = in = NULL;
+
+	(void)memset(&args, 0, sizeof(struct md_args));
 	
 	while (-1 != (c = getopt(argc, argv, "vo:")))
 		switch (c) {
@@ -75,7 +77,7 @@ main(int argc, char *argv[])
 	if (1 == argc)
 		in = *argv++;
 
-	args.type = MD_HTML4_STRICT;
+	args.type = MD_DUMMY;
 
 	return(begin_io(&args, out ? out : "-", in ? in : "-"));
 }

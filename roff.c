@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.1 2008/11/24 14:24:55 kristaps Exp $ */
+/* $Id: roff.c,v 1.2 2008/11/24 18:32:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -33,6 +33,8 @@ enum	roffd {
 	ROFF_ENTER = 0, 
 	ROFF_EXIT 
 };
+
+/* FIXME: prolog roffs can be text roffs, too. */
 
 enum	rofftype { 
 	ROFF_TITLE, 

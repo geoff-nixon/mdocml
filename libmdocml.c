@@ -1,4 +1,4 @@
-/* $Id: libmdocml.c,v 1.6 2008/11/23 22:30:53 kristaps Exp $ */
+/* $Id: libmdocml.c,v 1.7 2008/11/23 23:12:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -199,6 +199,7 @@ again:
 			return(md_run_leave(args, mbuf, rbuf, -1, p));
 		}
 
+		line[pos] = 0;
 		if ( ! (*fp)(args, mbuf, rbuf, line, pos, p))
 			return(md_run_leave(args, mbuf, rbuf, -1, p));
 		rbuf->line++;

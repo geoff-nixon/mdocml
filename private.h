@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.8 2008/11/26 16:50:34 kristaps Exp $ */
+/* $Id: private.h,v 1.9 2008/11/26 21:42:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -137,7 +137,9 @@ struct	md_mbuf {
 #define	ROFF_Fc		 97
 #define	ROFF_Oo		 98
 #define	ROFF_Oc		 99
-#define	ROFF_MAX	 100
+#define	ROFF_Bk		 100
+#define	ROFF_Ek		 101
+#define	ROFF_MAX	 102
 
 #define	ROFF_Split	 0
 #define	ROFF_Nosplit	 1

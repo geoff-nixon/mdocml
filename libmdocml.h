@@ -1,4 +1,4 @@
-/* $Id: libmdocml.h,v 1.6 2008/11/23 23:12:47 kristaps Exp $ */
+/* $Id: libmdocml.h,v 1.7 2008/11/25 12:14:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -42,6 +42,10 @@ enum	md_type {
 struct	md_args {
 	union md_params	 params;/* Parameters for parser. */
 	enum md_type	 type;	/* Type of parser. */
+
+	int		 warnings;
+#define	MD_WARN_ALL	(1 << 0)
+	int		 verbosity;
 };
 
 struct	md_buf {

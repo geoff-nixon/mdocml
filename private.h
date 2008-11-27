@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.9 2008/11/26 21:42:59 kristaps Exp $ */
+/* $Id: private.h,v 1.10 2008/11/27 11:23:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -215,6 +215,7 @@ struct	roffcb {
 	int	(*roffout)(int);
 	int	(*roffblkin)(int);
 	int	(*roffblkout)(int);
+	int	(*roffspecial)(int);
 };
 
 __BEGIN_DECLS

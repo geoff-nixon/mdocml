@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.12 2008/11/26 22:27:07 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.13 2008/11/27 17:27:50 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -79,8 +79,6 @@ main(int argc, char *argv[])
 
 	if (1 == argc)
 		in = *argv++;
-
-	args.type = MD_DUMMY;
 
 	return(begin_io(&args, out ? out : "-", in ? in : "-"));
 }

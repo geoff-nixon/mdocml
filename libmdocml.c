@@ -1,4 +1,4 @@
-/* $Id: libmdocml.c,v 1.10 2008/11/25 12:51:17 kristaps Exp $ */
+/* $Id: libmdocml.c,v 1.11 2008/11/27 16:54:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -141,7 +141,7 @@ md_run_leave(const struct md_args *args, struct md_mbuf *mbuf,
 			c = -1;
 		break;
 	default:
-		if ( ! md_exit_dummy(data, -1 == c ? 0 : 1))
+		if ( ! md_exit_valid(data, -1 == c ? 0 : 1))
 			c = -1;
 		break;
 	}
@@ -173,7 +173,7 @@ md_run_enter(const struct md_args *args, struct md_mbuf *mbuf,
 		fp = md_line_html4_strict;
 		break;
 	default:
-		fp = md_line_dummy;
+		fp = md_line_valid;
 		break;
 	}
 
@@ -244,7 +244,7 @@ md_run(const struct md_args *args,
 			(args, &mbuf, &rbuf);
 		break;
 	default:
-		data = md_init_dummy
+		data = md_init_valid
 			(args, &mbuf, &rbuf);
 		break;
 	}

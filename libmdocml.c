@@ -1,4 +1,4 @@
-/* $Id: libmdocml.c,v 1.11 2008/11/27 16:54:58 kristaps Exp $ */
+/* $Id: libmdocml.c,v 1.12 2008/11/28 11:21:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -56,8 +56,7 @@ md_buf_fill(struct md_rbuf *in)
 }
 
 
-static int
-md_buf_flush(struct md_mbuf *buf)
+static int md_buf_flush(struct md_mbuf *buf)
 {
 	ssize_t		 sz;
 

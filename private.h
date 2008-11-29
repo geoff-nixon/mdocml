@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.15 2008/11/28 15:25:49 kristaps Exp $ */
+/* $Id: private.h,v 1.16 2008/11/29 14:14:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -216,7 +216,7 @@ struct	roffcb {
 	int	(*roffin)(void *, int, int *, char **);
 	int	(*roffdata)(void *, char *);
 	int	(*roffout)(void *, int);
-	int	(*roffblkin)(void *, int);
+	int	(*roffblkin)(void *, int, int *, char **);
 	int	(*roffblkout)(void *, int);
 	int	(*roffspecial)(void *, int);
 };

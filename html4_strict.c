@@ -1,4 +1,4 @@
-/* $Id: html4_strict.c,v 1.7 2008/11/24 14:24:55 kristaps Exp $ */
+/* $Id: html4_strict.c,v 1.8 2008/11/25 12:14:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -25,7 +25,7 @@
 
 /* ARGSUSED */
 int
-md_line_html4_strict(void *data, char *buf, size_t sz)
+md_line_html4_strict(void *data, char *buf)
 {
 
 	return(1);

@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.22 2008/11/30 18:53:11 kristaps Exp $ */
+/* $Id: roff.c,v 1.23 2008/11/30 20:53:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -979,7 +979,7 @@ roff_layout(ROFFCALL_ARGS)
 	if (NULL == *argv)
 		return(1);
 
-	if ( ! (*tree->cb.roffin)(tree->arg, tok, 0, argcp, argvp))
+	if ( ! (*tree->cb.roffin)(tree->arg, tok, argcp, argvp))
 		return(0);
 
 	if ( ! (ROFF_PARSED & tokens[tok].flags)) {
@@ -1075,7 +1075,7 @@ roff_text(ROFFCALL_ARGS)
 	argcp[i] = ROFF_ARGMAX;
 	argvp[i] = NULL;
 
-	if ( ! (*tree->cb.roffin)(tree->arg, tok, 1, argcp, argvp))
+	if ( ! (*tree->cb.roffin)(tree->arg, tok, argcp, argvp))
 		return(0);
 
 	if ( ! (ROFF_PARSED & tokens[tok].flags)) {

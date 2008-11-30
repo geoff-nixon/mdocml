@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.20 2008/11/30 12:41:45 kristaps Exp $ */
+/* $Id: roff.c,v 1.21 2008/11/30 18:50:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1022,7 +1022,7 @@ roff_layout(ROFFCALL_ARGS)
 
 		assert(i > 0);
 		if ( ! roffispunct(argv[--i]))
-			return(1);
+			return((*tree->cb.roffout)(tree->arg, tok));
 
 		while (i >= 0 && roffispunct(argv[i]))
 			i--;

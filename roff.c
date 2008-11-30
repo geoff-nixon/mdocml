@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.23 2008/11/30 20:53:34 kristaps Exp $ */
+/* $Id: roff.c,v 1.24 2008/11/30 21:41:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -518,6 +518,10 @@ roffparse(struct rofftree *tree, char *buf)
 	char		 *argv[ROFF_MAXARG];
 	char		**argvp;
 
+	if (0 != *buf && 0 != *(buf + 1) && 0 != *(buf + 2))
+		if (0 == strncmp(buf, ".\\\"", 3))
+			return(1);
+
 	if (ROFF_MAX == (tok = rofffindtok(buf + 1))) {
 		roff_err(tree, buf + 1, "bogus line macro");
 		return(0);
@@ -525,9 +529,9 @@ roffparse(struct rofftree *tree, char *buf)
 		roff_err(tree, buf + 1, "unsupported macro `%s'", 
 				toknames[tok]);
 		return(0);
-	} else if (ROFF_COMMENT == tokens[tok].type)
-		return(1);
-	
+	}
+
+	assert(ROFF___ != tok);
 	if ( ! roffargs(tree, tok, buf, argv)) 
 		return(0);
 

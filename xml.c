@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.1 2008/11/30 21:41:35 kristaps Exp $ */
+/* $Id: xml.c,v 1.2 2008/11/30 23:05:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -40,7 +40,8 @@ enum	md_tok {
 	MD_BLKOUT,
 	MD_IN,
 	MD_OUT,
-	MD_TEXT
+	MD_TEXT,
+	MD_OVERRIDE
 };
 
 struct	md_xml {
@@ -329,8 +330,19 @@ rofftail(void *arg)
 static int
 roffspecial(void *arg, int tok)
 {
+	struct md_xml	*p;
 
-	/* FIXME */
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	switch (tok) {
+	case (ROFF_Ns):
+		p->last = MD_OVERRIDE;
+		break;
+	default:
+		break;
+	}
+
 	return(1);
 }
 
@@ -480,6 +492,8 @@ roffout(void *arg, int tok)
 
 	assert(arg);
 	p = (struct md_xml *)arg;
+
+	/* Continue with a regular out token. */
 
 	if (0 == p->pos && ! mbuf_indent(p))
 		return(0);

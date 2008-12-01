@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.2 2008/11/30 23:05:57 kristaps Exp $ */
+/* $Id: xml.c,v 1.3 2008/12/01 09:25:18 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -557,3 +557,4 @@ roffdata(void *arg, int space, char *buf)
 	p->last = MD_TEXT;
 	return(1);
 }
+

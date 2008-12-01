@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.3 2008/12/01 09:25:18 kristaps Exp $ */
+/* $Id: xml.c,v 1.4 2008/12/01 15:32:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -28,7 +28,7 @@
 #include "libmdocml.h"
 #include "private.h"
 
-#define	INDENT		 4
+#define	MAXINDENT	 8
 #define	COLUMNS		 60
 
 #ifdef	__linux__ /* FIXME */
@@ -141,11 +141,11 @@ mbuf_indent(struct md_xml *p)
 	assert(p->pos == 0);
 
 	/* LINTED */
-	for (i = 0; i < MIN(p->indent, INDENT); i++)
+	for (i = 0; i < MIN(p->indent, MAXINDENT); i++)
 		if ( ! md_buf_putstring(p->mbuf, "    "))
 			return(0);
 
-	p->pos += i * INDENT;
+	p->pos += i * 4;
 	return(1);
 }
 
@@ -195,7 +195,7 @@ mbuf_data(struct md_xml *p, int space, char *buf)
 				return(0);
 			if ( ! mbuf_nputstring(p, bufp, sz))
 				return(0);
-			if (p->indent * INDENT + sz >= COLUMNS) {
+			if (p->indent * MAXINDENT + sz >= COLUMNS) {
 				if ( ! mbuf_newline(p))
 					return(0);
 				continue;

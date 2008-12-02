@@ -1,4 +1,4 @@
-/* $Id: libmdocml.c,v 1.15 2008/11/30 20:53:34 kristaps Exp $ */
+/* $Id: libmdocml.c,v 1.16 2008/11/30 21:41:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -150,7 +150,7 @@ md_run_leave(const struct md_args *args, struct md_mbuf *mbuf,
 	}
 
 	/* Make final flush of buffer. */
-	if ( ! md_buf_flush(mbuf))
+	if (-1 != c && ! md_buf_flush(mbuf))
 		return(-1);
 
 	return(c);

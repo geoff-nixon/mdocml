@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.13 2008/11/27 17:27:50 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.14 2008/11/28 11:21:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -106,6 +106,9 @@ leave_io(const struct md_buf *out,
 		warn("%s", out->name);
 		c = 1;
 	}
+	if (1 == c && STDOUT_FILENO != out->fd)
+		if (-1 == unlink(out->name))
+			warn("%s", out->name);
 
 	return(c);
 }

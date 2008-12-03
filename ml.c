@@ -1,4 +1,4 @@
-/* $Id: ml.c,v 1.1 2008/12/02 18:26:57 kristaps Exp $ */
+/* $Id: ml.c,v 1.2 2008/12/03 14:39:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -70,6 +70,19 @@ ml_nputs(struct md_mbuf *p, const char *buf, size_t sz, size_t *pos)
 	if ( ! md_buf_puts(p, buf, sz))
 		return(0);
 
+	*pos += sz;
+	return(1);
+}
+
+
+int
+ml_puts(struct md_mbuf *p, const char *buf, size_t *pos)
+{
+	size_t		 sz;
+
+	sz = strlen(buf);
+	if ( ! md_buf_puts(p, buf, sz))
+		return(0);
 	*pos += sz;
 	return(1);
 }

@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.27 2008/12/04 16:19:52 kristaps Exp $ */
+/* $Id: private.h,v 1.28 2008/12/04 16:34:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -65,7 +65,9 @@ struct	md_mbuf {
 #define	ROFFTok_Bar	 25
 #define	ROFFTok_Nan	 26
 #define	ROFFTok_Quote	 27
-#define	ROFFTok_MAX	 28
+#define	ROFFTok_Sp_0	 28
+#define	ROFFTok_Slash	 29
+#define	ROFFTok_MAX	 30
 
 #define	ROFF___	 	 0
 #define	ROFF_Dd		 1
@@ -251,7 +253,6 @@ struct	roffcb {
 			const char *, const char *, const char *);
 	int	(*rofftail)(void *);
 	int	(*roffdata)(void *, int, const char *, char *);
-	int	(*rofftoken)(void *, int, int);
 	int	(*roffin)(void *, int, int *, char **);
 	int	(*roffout)(void *, int);
 	int	(*roffblkin)(void *, int, int *, char **);
@@ -290,7 +291,7 @@ struct	rofftree *roff_alloc(const struct roffcb *, void *);
 int		  roff_engine(struct rofftree *, char *);
 int		  roff_free(struct rofftree *, int);
 
-int		  rofftok_scan(const char *);
+int		  rofftok_scan(const char *, int *);
 
 __END_DECLS
 

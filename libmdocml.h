@@ -1,4 +1,4 @@
-/* $Id: libmdocml.h,v 1.10 2008/11/30 21:41:35 kristaps Exp $ */
+/* $Id: libmdocml.h,v 1.11 2008/12/03 14:39:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -26,7 +26,9 @@ struct 	md_params_xml {
 };
 
 struct 	md_params_html {
-	int		 dummy;
+	char		*css;
+	int		 flags;
+#define	HTML_CSS_EMBED	(1 << 0)
 };
 
 union	md_params {

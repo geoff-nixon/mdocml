@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.11 2008/12/03 19:21:58 kristaps Exp $ */
+/* $Id: xml.c,v 1.12 2008/12/03 21:27:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -31,15 +31,21 @@ static	ssize_t		xml_begintag(struct md_mbuf *,
 				const struct md_args *, 
 				enum md_ns, int, 
 				const int *, const char **);
-static	int		xml_begin(struct md_mbuf *, 
-				const struct md_args *);
+static	int		xml_begin(struct md_mbuf *,
+	       			const struct md_args *, 
+				const struct tm *, 
+				const char *, const char *, 
+				const char *, const char *);
 static	int		xml_end(struct md_mbuf *, 
 				const struct md_args *);
 
 
 /* ARGSUSED */
 static int 
-xml_begin(struct md_mbuf *mbuf, const struct md_args *args)
+xml_begin(struct md_mbuf *mbuf, const struct md_args *args,
+		const struct tm *tm, const char *os, 
+		const char *title, const char *section, 
+		const char *vol)
 {
 	size_t		 res;
 

@@ -1,4 +1,4 @@
-/* $Id: ml.h,v 1.1 2008/12/03 14:39:59 kristaps Exp $ */
+/* $Id: ml.h,v 1.2 2008/12/03 19:21:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -29,15 +29,16 @@ enum	md_ns {
 	MD_NS_DEFAULT,
 };
 
-typedef	int	(*ml_begin)(struct md_mbuf *, 
-		const struct md_args *);
+typedef	int	(*ml_begin)(struct md_mbuf *, const struct md_args *,
+			const struct tm *, const char *, const char *,
+			const char *, const char *);
 typedef	int	(*ml_end)(struct md_mbuf *, 
-		const struct md_args *);
+			const struct md_args *);
 typedef	ssize_t	(*ml_endtag)(struct md_mbuf *, 
-		const struct md_args *, enum md_ns, int);
+			const struct md_args *, enum md_ns, int);
 typedef	ssize_t	(*ml_begintag)(struct md_mbuf *, 
-		const struct md_args *, enum md_ns, int, 
-		const int *, const char **);
+			const struct md_args *, enum md_ns, int, 
+			const int *, const char **);
 
 
 __BEGIN_DECLS

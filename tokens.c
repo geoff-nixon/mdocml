@@ -1,4 +1,4 @@
-/* $Id: ml.c,v 1.3 2008/12/03 19:21:58 kristaps Exp $ */
+/* $Id: tokens.c,v 1.1 2008/12/04 16:19:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -88,7 +88,12 @@ rofftok_predef(const char *buf)
 	if ('(' == *buf)
 		return(rofftok_defined(++buf));
 
-	/* TODO */
+	switch (*buf) {
+	case ('q'):
+		return(ROFFTok_Quote);
+	default:
+		break;
+	}
 
 	return(-1);
 }
@@ -173,6 +178,8 @@ rofftok_scan(const char *buf)
 			return(ROFFTok_Hyphen);
 		case ('*'):
 			return(rofftok_predef(++buf));
+		case ('\\'):
+			return(ROFFTok_MAX);
 		default:
 			break;
 		}

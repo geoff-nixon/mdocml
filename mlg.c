@@ -1,4 +1,4 @@
-/* $Id: mlg.c,v 1.4 2008/12/04 11:25:29 kristaps Exp $ */
+/* $Id: mlg.c,v 1.5 2008/12/04 16:19:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -594,10 +594,6 @@ mlg_rofftoken(void *arg, int space, int value)
 		seq = "&nbsp;";
 		sz = 6;
 		break;
-	case (ROFFTok_Null):
-		seq = "";
-		sz = 0;
-		break;
 	case (ROFFTok_Hyphen):
 		seq = "&#8208;";
 		sz = 7;
@@ -670,13 +666,20 @@ mlg_rofftoken(void *arg, int space, int value)
 		seq = "Nan";
 		sz = 3;
 		break;
+	case (ROFFTok_Quote):
+		seq = "&quot;";
+		sz = 6;
+		break;
+	default:
+		/* TODO: print error. */
+		return(0);
 	}
 
 	if (space && ! ml_nputs(p->mbuf, " ", 1, &res))
 		return(0);
 	p->pos += res;
 
-	if (0 != sz && ! ml_nputs(p->mbuf, seq, sz, &res))
+	if ( ! ml_nputs(p->mbuf, seq, sz, &res))
 		return(0);
 	p->pos += res;
 

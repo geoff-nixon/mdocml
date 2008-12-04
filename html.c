@@ -1,4 +1,4 @@
-/* $Id: html.c,v 1.3 2008/12/03 21:27:56 kristaps Exp $ */
+/* $Id: html.c,v 1.4 2008/12/04 11:25:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -163,7 +163,7 @@ html_begin(struct md_mbuf *mbuf, const struct md_args *args,
 
 	assert(args->params.html.css);
 	if (HTML_CSS_EMBED & args->params.html.flags) {
-		if ( ! ml_puts(mbuf, "    <style><!--\n", &res))
+		if ( ! ml_puts(mbuf, "    <style type=\"text/css\"><!--\n", &res))
 			return(0);
 		if ( ! html_loadcss(mbuf, args->params.html.css))
 			return(0);

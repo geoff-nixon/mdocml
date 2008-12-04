@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.12 2008/12/03 21:27:56 kristaps Exp $ */
+/* $Id: xml.c,v 1.13 2008/12/04 11:25:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -82,6 +82,8 @@ xml_begintag(struct md_mbuf *mbuf, const struct md_args *args,
 		const int *argc, const char **argv)
 {
 	size_t		 res;
+
+	/* FIXME: doesn't print arguments! */
 
 	res = 0;
 

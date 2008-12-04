@@ -1,4 +1,4 @@
-/* $Id: html.c,v 1.4 2008/12/04 11:25:29 kristaps Exp $ */
+/* $Id: html.c,v 1.5 2008/12/04 16:19:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -380,16 +380,25 @@ html_begintag(struct md_mbuf *mbuf, const struct md_args *args,
 	case (MD_NS_BLOCK):
 		if ( ! html_blocktagname(mbuf, args, tok))
 			return(0);
+		if (NULL == argc || NULL == argv)
+			return(1);
+		assert(argc && argv);
 		return(html_blocktagargs(mbuf, args, 
 					tok, argc, argv));
 	case (MD_NS_BODY):
 		if ( ! html_blockbodytagname(mbuf, args, tok))
 			return(0);
+		if (NULL == argc || NULL == argv)
+			return(1);
+		assert(argc && argv);
 		return(html_blockbodytagargs(mbuf, args, 
 					tok, argc, argv));
 	case (MD_NS_HEAD):
 		if ( ! html_blockheadtagname(mbuf, args, tok))
 			return(0);
+		if (NULL == argc || NULL == argv)
+			return(1);
+		assert(argc && argv);
 		return(html_blockheadtagargs(mbuf, args, 
 					tok, argc, argv));
 	default:
@@ -398,6 +407,9 @@ html_begintag(struct md_mbuf *mbuf, const struct md_args *args,
 
 	if ( ! html_inlinetagname(mbuf, args, tok))
 		return(0);
+	if (NULL == argc || NULL == argv)
+		return(1);
+	assert(argc && argv);
 	return(html_inlinetagargs(mbuf, args, tok, argc, argv));
 }
 

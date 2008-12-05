@@ -1,4 +1,4 @@
-/* $Id: ml.c,v 1.4 2008/12/04 16:19:52 kristaps Exp $ */
+/* $Id: ml.c,v 1.5 2008/12/04 19:31:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -28,6 +28,14 @@
 extern	size_t		  strlcat(char *, const char *, size_t);
 extern	size_t		  strlcpy(char *, const char *, size_t);
 #endif
+
+
+int
+ml_putstring(struct md_mbuf *p, const char *buf, size_t *pos)
+{
+
+	return(ml_nputstring(p, buf, strlen(buf), pos));
+}
 
 
 int

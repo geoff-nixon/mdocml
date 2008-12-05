@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.39 2008/12/04 19:31:57 kristaps Exp $ */
+/* $Id: roff.c,v 1.40 2008/12/04 23:10:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -41,6 +41,7 @@
 /* TODO: unify empty-content tags a la <br />. */
 /* TODO: macros with a set number of arguments? */
 /* TODO: validate Dt macro arguments. */
+/* FIXME: Bl -diag ignore callable children. */
 
 enum	roffd { 
 	ROFF_ENTER = 0, 

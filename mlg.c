@@ -1,4 +1,4 @@
-/* $Id: mlg.c,v 1.10 2008/12/05 17:43:14 kristaps Exp $ */
+/* $Id: mlg.c,v 1.11 2008/12/05 19:45:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -447,6 +447,17 @@ mlg_roffspecial(void *arg, int tok, const char *start, char **more)
 			return(0);
 		break;
 	case (ROFF_Fn):
+		abort(); /* TODO */
+		break;
+	case (ROFF_Nm):
+		assert(*more);
+		if ( ! mlg_begintag(p, MD_NS_INLINE, tok, NULL, NULL))
+			return(0);
+		if ( ! ml_puts(p->mbuf, *more++, &p->pos))
+			return(0);
+		assert(NULL == *more);
+		if ( ! mlg_endtag(p, MD_NS_INLINE, tok))
+			return(0);
 		break;
 	case (ROFF_Ns):
 		p->flags |= ML_OVERRIDE_ONE;

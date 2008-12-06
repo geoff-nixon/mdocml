@@ -1,4 +1,4 @@
-/* $Id: roff.h,v 1.3 2008/12/06 16:50:18 kristaps Exp $ */
+/* $Id: roff.h,v 1.4 2008/12/06 19:41:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -133,10 +133,10 @@ static	const struct rofftok tokens[ROFF_MAX] = {
 	{   roff_depr, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ot */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Pa */
 	{   roff_text, roffarg_Rv, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Rv */
-	{   roff_text, roffarg_St, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* St */
-	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Va */
-	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Vt */ /* XXX needs arg */
-	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, /*XXX*/ -1 }, /* Xr */
+/*Ok*/	{roff_ordered, roffarg_St, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* St */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Va */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Vt */ /* FIXME: section/linebreak. */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Xr */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* %A */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE}, /* %B */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %D */
@@ -150,7 +150,7 @@ static	const struct rofftok tokens[ROFF_MAX] = {
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %V */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ac */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ao */
-	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Aq */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Aq */
 /*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* At */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Bc */
 	{ roff_layout, NULL, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Bf */ /* FIXME */

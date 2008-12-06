@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.15 2008/12/05 17:43:14 kristaps Exp $ */
+/* $Id: xml.c,v 1.16 2008/12/05 19:45:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -58,6 +58,7 @@ xml_printtagargs(struct md_mbuf *mbuf, const int *argc,
 		return(0);
 	assert(argc && argv);
 
+	/* LINTED */
 	for (res = 0, i = 0; ROFF_ARGMAX != (c = argc[i]); i++) {
 		if ( ! ml_nputs(mbuf, " ", 1, &res))
 			return(-1);

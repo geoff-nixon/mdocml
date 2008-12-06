@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.42 2008/12/05 22:34:30 kristaps Exp $ */
+/* $Id: roff.h,v 1.1 2008/12/05 22:54:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -119,7 +119,7 @@ static	const struct rofftok tokens[ROFF_MAX] = {
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Dv */ /* XXX needs arg */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Er */ /* XXX needs arg */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ev */ /* XXX needs arg */
-	{   roff_text, roffarg_Ex, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ex */
+	{roff_ordered, roffarg_Ex, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ex */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fa */ /* XXX needs arg */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Fd */
 	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fl */

@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.43 2008/12/05 22:54:44 kristaps Exp $ */
+/* $Id: roff.c,v 1.44 2008/12/06 13:18:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -660,6 +660,16 @@ roffspecial(struct rofftree *tree, int tok,
 			return(0);
 		}
 		break;
+	
+	case (ROFF_Ud):
+		/* FALLTHROUGH */
+	case (ROFF_Bt):
+		if (0 != sz) {
+			roff_err(tree, start, "`%s' expects no args",
+					toknames[tok]);
+			return(0);
+		}
+		break;
 	default:
 		break;
 	}
@@ -1170,8 +1180,6 @@ roff_layout(ROFFCALL_ARGS)
 static int
 roff_ordered(ROFFCALL_ARGS) 
 {
-	/* FIXME: the tail-switch statement is in two different places:
-	 * consolidate. */
 	int		 i, first, c, argcp[ROFF_MAXLINEARG];
 	char		*ordp[ROFF_MAXLINEARG], *p,
 			*argvp[ROFF_MAXLINEARG];

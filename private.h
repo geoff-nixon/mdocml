@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.30 2008/12/04 23:10:51 kristaps Exp $ */
+/* $Id: private.h,v 1.31 2008/12/06 21:10:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -248,21 +248,21 @@ enum	roffmsg { ROFF_WARN, ROFF_ERROR };
 
 struct	roffcb {
 	void	(*roffmsg)(void *, enum roffmsg, 
-			const char *, const char *, char *);
+			const char *, const char *, const char *);
 	int	(*roffhead)(void *, const struct tm *, const char *, 
 			const char *, const char *, const char *);
 	int	(*rofftail)(void *);
-	int	(*roffdata)(void *, int, const char *, char *);
-	int	(*roffin)(void *, int, int *, char **);
+	int	(*roffdata)(void *, int, const char *, const char *);
+	int	(*roffin)(void *, int, int *, const char **);
 	int	(*roffout)(void *, int);
-	int	(*roffblkin)(void *, int, int *, char **);
+	int	(*roffblkin)(void *, int, int *, const char **);
 	int	(*roffblkout)(void *, int);
-	int	(*roffblkheadin)(void *, int, int *, char **);
+	int	(*roffblkheadin)(void *, int, int *, const char **);
 	int	(*roffblkheadout)(void *, int);
-	int	(*roffblkbodyin)(void *, int, int *, char **);
+	int	(*roffblkbodyin)(void *, int, int *, const char **);
 	int	(*roffblkbodyout)(void *, int);
 	int	(*roffspecial)(void *, int, const char *, 
-			const int *, const char **, char **);
+			const int *, const char **, const char **);
 };
 
 struct	rofftree;

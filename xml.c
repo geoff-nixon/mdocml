@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.17 2008/12/06 21:10:31 kristaps Exp $ */
+/* $Id: xml.c,v 1.18 2008/12/07 21:30:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -131,7 +131,8 @@ xml_begin(struct md_mbuf *mbuf, const struct md_args *args,
 				"encoding=\"UTF-8\"?>\n", NULL))
 		return(0);
 	return(ml_puts(mbuf, "<mdoc xmlns:block=\"block\" "
-				"xmlns:special=\"special\" "
+				"xmlns:body=\"body\" "
+				"xmlns:head=\"head\" "
 				"xmlns:inline=\"inline\">", NULL));
 }
 

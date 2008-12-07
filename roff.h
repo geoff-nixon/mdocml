@@ -1,4 +1,4 @@
-/* $Id: roff.h,v 1.6 2008/12/07 14:38:57 kristaps Exp $ */
+/* $Id: roff.h,v 1.7 2008/12/07 16:41:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -119,7 +119,7 @@ static	const struct rofftok tokens[ROFF_MAX] = {
 /*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Er */ /* XXX needs arg */ /* FIXME: section. */
 /*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ev */ /* XXX needs arg */
 /*Ok*/	{roff_ordered, roffarg_Ex, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ex */ /* FIXME: sections. */
-	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fa */ /* XXX needs arg */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fa */ /* XXX needs arg */
 /*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Fd */ /* FIXME: section/linebreak. */
 /*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fl */
 /*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fn */ /* FIXME: section/linebreak. */

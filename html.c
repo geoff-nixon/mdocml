@@ -1,4 +1,4 @@
-/* $Id: html.c,v 1.14 2008/12/07 21:30:49 kristaps Exp $ */
+/* $Id: html.c,v 1.15 2008/12/08 12:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -141,7 +141,6 @@ html_It_headtagname(struct md_mbuf *mbuf, struct htmlq *q,
 		switch (n->argc[i]) {
 		case (ROFF_Ohang):
 			return(ml_nputs(mbuf, "div", 3, res));
-
 		case (ROFF_Tag):
 			/* FALLTHROUGH */
 		case (ROFF_Column): 
@@ -151,8 +150,7 @@ html_It_headtagname(struct md_mbuf *mbuf, struct htmlq *q,
 		}
 	}
 
-	abort();
-	/* NOTREACHED */
+	return(0);
 }
 
 
@@ -202,10 +200,7 @@ html_It_bodytagname(struct md_mbuf *mbuf, struct htmlq *q,
 	}
 
 	assert(i != ROFF_MAXLINEARG);
-	abort();
-	/* NOTREACHED */
-
-	return(1);
+	return(0);
 }
 
 
@@ -247,8 +242,7 @@ html_Bl_bodytagname(struct md_mbuf *mbuf, struct htmlq *q,
 	}
 
 	assert(i != ROFF_MAXLINEARG);
-	abort();
-	/* NOTREACHED */
+	return(0);
 }
 
 
@@ -298,8 +292,7 @@ html_It_blocktagname(struct md_mbuf *mbuf, struct htmlq *q,
 	}
 
 	assert(i != ROFF_MAXLINEARG);
-	abort();
-	/* NOTREACHED */
+	return(0);
 }
 
 

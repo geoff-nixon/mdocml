@@ -1,4 +1,4 @@
-/* $Id: mlg.c,v 1.19 2008/12/07 21:30:49 kristaps Exp $ */
+/* $Id: literals.c,v 1.1 2008/12/07 22:40:18 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -23,6 +23,46 @@
 #include "libmdocml.h"
 #include "private.h"
 #include "ml.h"
+
+
+char *
+ml_section(enum roffmsec sec) 
+{
+
+	switch (sec) {
+	case(ROFF_MSEC_1):
+		return("1");
+	case(ROFF_MSEC_2):
+		return("2");
+	case(ROFF_MSEC_3):
+		return("3");
+	case(ROFF_MSEC_3p):
+		return("3p");
+	case(ROFF_MSEC_4):
+		return("4");
+	case(ROFF_MSEC_5):
+		return("5");
+	case(ROFF_MSEC_6):
+		return("6");
+	case(ROFF_MSEC_7):
+		return("7");
+	case(ROFF_MSEC_8):
+		return("8");
+	case(ROFF_MSEC_9):
+		return("9");
+	case(ROFF_MSEC_UNASS):
+		return("unass");
+	case(ROFF_MSEC_DRAFT):
+		return("draft");
+	case(ROFF_MSEC_PAPER):
+		return("paper");
+	default:
+		break;
+	}
+
+	abort();
+	/* NOTREACHED */
+}
 
 
 char *

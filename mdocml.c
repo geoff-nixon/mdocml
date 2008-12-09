@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.17 2008/12/04 11:25:29 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.18 2008/12/09 00:27:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -49,6 +49,10 @@ static	int		 begin_bufs(const struct md_args *,
 				struct md_buf *, struct md_buf *);
 static int		 leave_bufs(const struct md_buf *, 
 				const struct md_buf *, int);
+
+#ifdef __linux__
+extern	int		 getsubopt(char **, char *const *, char **);
+#endif
 
 int
 main(int argc, char *argv[])
@@ -265,7 +269,8 @@ usage(void)
 {
 	extern char	*__progname;
 
-	(void)printf("usage: %s [-v] [-Wwarn...]  [-f filter] "
-			"[-o outfile] [infile]\n", __progname);
+	(void)fprintf(stderr, "usage: %s [-v] [-Wwarn...]  "
+			"[-f filter] [-o outfile] [infile]\n", 
+			__progname);
 }
 

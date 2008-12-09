@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.19 2008/12/07 23:44:19 kristaps Exp $ */
+/* $Id: xml.c,v 1.20 2008/12/08 12:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -20,7 +20,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "libmdocml.h"
 #include "private.h"
 #include "ml.h"
 

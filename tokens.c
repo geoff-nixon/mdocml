@@ -1,4 +1,4 @@
-/* $Id: tokens.c,v 1.2 2008/12/04 16:34:59 kristaps Exp $ */
+/* $Id: tokens.c,v 1.3 2008/12/04 19:31:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -20,7 +20,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "libmdocml.h"
 #include "private.h"
 
 

@@ -1,4 +1,4 @@
-/* $Id: literals.c,v 1.2 2008/12/08 12:46:28 kristaps Exp $ */
+/* $Id: literals.c,v 1.3 2008/12/08 16:29:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -23,6 +23,8 @@
 #include "libmdocml.h"
 #include "private.h"
 #include "ml.h"
+
+/* FIXME: make this roff_section and so on. */
 
 
 char *

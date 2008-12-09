@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.16 2008/12/03 19:21:58 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.17 2008/12/04 11:25:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -54,8 +54,11 @@ int
 main(int argc, char *argv[])
 {
 	int		 c;
-	char		*out, *in;
+	char		*out, *in, *opts, *v;
 	struct md_args	 args;
+#define ALL     	 0
+#define ERROR     	 1
+	char		*toks[] = { "all", "error", NULL };
 
 	extern char	*optarg;
 	extern int	 optind;
@@ -66,7 +69,7 @@ main(int argc, char *argv[])
 
 	args.type = MD_XML;
 
-	while (-1 != (c = getopt(argc, argv, "c:ef:o:vW")))
+	while (-1 != (c = getopt(argc, argv, "c:ef:o:vW:")))
 		switch (c) {
 		case ('c'):
 			if (args.type != MD_HTML)
@@ -93,7 +96,19 @@ main(int argc, char *argv[])
 			args.verbosity++;
 			break;
 		case ('W'):
-			args.warnings |= MD_WARN_ALL;
+			opts = optarg;
+			while (*opts) 
+				switch (getsubopt(&opts, toks, &v)) {
+				case (ALL):
+					args.warnings |= MD_WARN_ALL;
+					break;
+				case (ERROR):
+					args.warnings |= MD_WARN_ERROR;
+					break;
+				default:
+					usage();
+					return(1);
+				}
 			break;
 		default:
 			usage();
@@ -250,6 +265,7 @@ usage(void)
 {
 	extern char	*__progname;
 
-	(void)printf("usage: %s [-vW] [-f filter] [-o outfile] "
-			"[infile]\n", __progname);
+	(void)printf("usage: %s [-v] [-Wwarn...]  [-f filter] "
+			"[-o outfile] [infile]\n", __progname);
 }
+

@@ -1,4 +1,4 @@
-/* $Id: literals.c,v 1.4 2008/12/09 00:27:17 kristaps Exp $ */
+/* $Id: literals.c,v 1.5 2008/12/09 17:09:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -23,7 +23,7 @@
 #include "private.h"
 
 #define	ROFF_ATTname_V1		"v1"
-#define	ROFF_ATTname_V2		"v1"
+#define	ROFF_ATTname_V2		"v2"
 #define	ROFF_ATTname_V3		"v3"
 #define	ROFF_ATTname_V6		"v6"
 #define	ROFF_ATTname_V7		"v7"

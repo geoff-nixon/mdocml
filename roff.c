@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.54 2008/12/09 00:27:17 kristaps Exp $ */
+/* $Id: roff.c,v 1.55 2008/12/09 17:09:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -704,7 +704,7 @@ roffspecial(struct rofftree *tree, int tok, const char *start,
 	case (ROFF_At):
 		if (0 == sz)
 			break;
-		if (ROFF_ATT_MAX == roff_att(*ordp))
+		if (ROFF_ATT_MAX != roff_att(*ordp))
 			break;
 		return(roff_errp(tree, *ordp, tok, ERR_BADARG));
 	

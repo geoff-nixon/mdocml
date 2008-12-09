@@ -1,4 +1,4 @@
-/* $Id: libmdocml.h,v 1.11 2008/12/03 14:39:59 kristaps Exp $ */
+/* $Id: libmdocml.h,v 1.12 2008/12/04 11:25:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -47,6 +47,7 @@ struct	md_args {
 
 	int		 warnings;
 #define	MD_WARN_ALL	(1 << 0)
+#define	MD_WARN_ERROR	(1 << 1)
 	int		 verbosity;
 };
 

@@ -1,4 +1,4 @@
-/* $Id: libmdocml.c,v 1.18 2008/12/03 14:39:59 kristaps Exp $ */
+/* $Id: libmdocml.c,v 1.19 2008/12/08 16:29:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -25,7 +25,6 @@
 #include <string.h>
 #include <unistd.h>
 
-#include "libmdocml.h"
 #include "private.h"
 
 static	int	 md_run_enter(const struct md_args *, 

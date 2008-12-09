@@ -1,4 +1,4 @@
-/* $Id: ml.h,v 1.9 2008/12/07 22:40:18 kristaps Exp $ */
+/* $Id: ml.h,v 1.10 2008/12/08 12:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -65,9 +65,6 @@ int		  ml_nputs(struct md_mbuf *,
 int		  ml_puts(struct md_mbuf *, const char *, size_t *);
 int		  ml_putchars(struct md_mbuf *, 
 			char, size_t, size_t *);
-char		 *ml_literal(int, const int *,
-			const char **, const char **);
-char		 *ml_section(enum roffmsec);
 
 struct md_mlg	 *mlg_alloc(const struct md_args *, 
 			const struct md_rbuf *, struct md_mbuf *,

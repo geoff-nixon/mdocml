@@ -1,4 +1,4 @@
-/* $Id: ml.c,v 1.6 2008/12/05 11:28:17 kristaps Exp $ */
+/* $Id: ml.c,v 1.7 2008/12/05 19:45:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -20,7 +20,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "libmdocml.h"
 #include "private.h"
 #include "ml.h"
 

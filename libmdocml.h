@@ -1,4 +1,4 @@
-/* $Id: libmdocml.h,v 1.12 2008/12/04 11:25:29 kristaps Exp $ */
+/* $Id: libmdocml.h,v 1.13 2008/12/09 00:27:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -21,10 +21,6 @@
 
 #include <sys/types.h>
 
-struct 	md_params_xml {
-	int		 dummy;
-};
-
 struct 	md_params_html {
 	char		*css;
 	int		 flags;
@@ -32,13 +28,13 @@ struct 	md_params_html {
 };
 
 union	md_params {
-	struct md_params_xml xml;
 	struct md_params_html html;
 };
 
 enum	md_type {
 	MD_XML,			/* XML. */
-	MD_HTML			/* HTML4.01-strict. */
+	MD_HTML,		/* HTML4.01-strict. */
+	MD_NOOP			/* Validates only. */
 };
 
 struct	md_args {

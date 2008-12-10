@@ -1,4 +1,4 @@
-/* $Id: mlg.c,v 1.23 2008/12/09 17:09:12 kristaps Exp $ */
+/* $Id: mlg.c,v 1.24 2008/12/10 00:52:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -58,7 +58,7 @@ static	int		 mlg_roffmsg(void *arg,
 				const char *, const char *);
 static	int		 mlg_roffhead(void *, const struct tm *, 
 				const char *, const char *, 
-				enum roffmsec, const char *);
+				enum roffmsec, enum roffvol);
 static	int		 mlg_rofftail(void *);
 static	int		 mlg_roffin(void *, int, 
 				int *, const char **);
@@ -404,7 +404,7 @@ mlg_alloc(const struct md_args *args,
 
 static int
 mlg_roffhead(void *arg, const struct tm *tm, const char *os, 
-		const char *title, enum roffmsec sec, const char *vol)
+		const char *title, enum roffmsec sec, enum roffvol vol)
 {
 	struct md_mlg	*p;
 

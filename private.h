@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.38 2008/12/10 12:09:47 kristaps Exp $ */
+/* $Id: private.h,v 1.39 2008/12/10 13:15:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -376,6 +376,10 @@ void		 *md_init_html(const struct md_args *,
 			struct md_mbuf *, const struct md_rbuf *);
 int		  md_line_html(void *, char *);
 int		  md_exit_html(void *, int);
+void		 *md_init_noop(const struct md_args *,
+			struct md_mbuf *, const struct md_rbuf *);
+int		  md_line_noop(void *, char *);
+int		  md_exit_noop(void *, int);
 void		 *md_init_xml(const struct md_args *,
 			struct md_mbuf *, const struct md_rbuf *);
 int		  md_line_xml(void *, char *);

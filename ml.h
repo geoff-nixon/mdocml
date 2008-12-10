@@ -1,4 +1,4 @@
-/* $Id: ml.h,v 1.13 2008/12/10 10:43:57 kristaps Exp $ */
+/* $Id: ml.h,v 1.14 2008/12/10 12:05:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -33,7 +33,7 @@ enum	md_ns {
 	MD_NS_HEAD,
 	MD_NS_BODY,
 	MD_NS_INLINE,
-	MD_NS_DEFAULT,
+	MD_NS_DEFAULT
 };
 
 enum	ml_scope {

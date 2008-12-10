@@ -1,4 +1,4 @@
-/* $Id: mlg.c,v 1.28 2008/12/10 13:41:58 kristaps Exp $ */
+/* $Id: noop.c,v 1.1 2008/12/10 14:42:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -19,6 +19,7 @@
 #include <assert.h>
 #include <err.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "private.h"
 
@@ -86,6 +87,7 @@ md_line_noop(void *data, char *buf)
 }
 
 
+/* ARGSUSED */
 void *
 md_init_noop(const struct md_args *args, 
 		struct md_mbuf *mbuf, const struct md_rbuf *rbuf)

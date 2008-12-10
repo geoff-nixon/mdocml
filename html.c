@@ -1,4 +1,4 @@
-/* $Id: html.c,v 1.22 2008/12/10 12:05:33 kristaps Exp $ */
+/* $Id: html.c,v 1.23 2008/12/10 12:09:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -764,6 +764,25 @@ html_inlinetagargs(struct md_mbuf *mbuf,
 		return(0);
 
 	switch (tok) {
+	case (ROFF_Sh):
+
+		/* FIXME: use API in ml.h. */
+
+		assert(*argv);
+		if ( ! ml_nputs(mbuf, " name=\"", 7, res))
+			return(0);
+		if ( ! ml_putstring(mbuf, *argv++, res))
+			return(0);
+		while (*argv) {
+			if ( ! ml_putstring(mbuf, "_", res))
+				return(0);
+			if ( ! ml_putstring(mbuf, *argv++, res))
+				return(0);
+		}
+		if ( ! ml_nputs(mbuf, "\"", 1, res))
+			return(0);
+		break;
+
 	case (ROFF_Sx):
 
 		/* FIXME: use API in ml.h. */
@@ -771,10 +790,17 @@ html_inlinetagargs(struct md_mbuf *mbuf,
 		assert(*argv);
 		if ( ! ml_nputs(mbuf, " href=\"#", 8, res))
 			return(0);
-		if ( ! ml_putstring(mbuf, *argv, res))
+		if ( ! ml_putstring(mbuf, *argv++, res))
 			return(0);
+		while (*argv) {
+			if ( ! ml_putstring(mbuf, "_", res))
+				return(0);
+			if ( ! ml_putstring(mbuf, *argv++, res))
+				return(0);
+		}
 		if ( ! ml_nputs(mbuf, "\"", 1, res))
 			return(0);
+
 		break;
 	default:
 		break;
@@ -791,6 +817,8 @@ html_inlinetagname(struct md_mbuf *mbuf,
 {
 
 	switch (tok) {
+	case (ROFF_Sh):
+		return(html_stput(mbuf, HTML_TAG_A, res));
 	case (ROFF_Pp):
 		return(html_stput(mbuf, HTML_TAG_DIV, res));
 	case (ROFF_Sx):

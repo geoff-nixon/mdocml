@@ -1,4 +1,4 @@
-/* $Id: html.h,v 1.2 2008/12/10 00:58:15 kristaps Exp $ */
+/* $Id: html.h,v 1.3 2008/12/10 12:09:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -51,7 +51,9 @@ enum	html_attr {
 	HTML_ATTR_REL	= 5,
 	HTML_ATTR_HREF	= 6,
 	HTML_ATTR_WIDTH	= 7,
-	HTML_ATTR_ALIGN	= 8
+	HTML_ATTR_ALIGN	= 8,
+	HTML_ATTR_VALIGN = 9,
+	HTML_ATTR_NOWRAP = 10
 };
 
 enum	html_type {

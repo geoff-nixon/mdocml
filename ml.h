@@ -1,4 +1,4 @@
-/* $Id: ml.h,v 1.12 2008/12/10 00:52:46 kristaps Exp $ */
+/* $Id: ml.h,v 1.13 2008/12/10 10:43:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -48,7 +48,10 @@ struct	ml_cbs {
 			const char *, const char *,
 			enum roffmsec, enum roffvol);
 	int	(*ml_end)(struct md_mbuf *, 
-			const struct md_args *);
+			const struct md_args *,
+			const struct tm *, 
+			const char *, const char *,
+			enum roffmsec, enum roffvol);
 	ssize_t	(*ml_beginstring)(struct md_mbuf *,
 			const struct md_args *,
 			const char *, size_t);

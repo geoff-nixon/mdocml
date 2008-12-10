@@ -1,4 +1,4 @@
-/* $Id: html.c,v 1.21 2008/12/10 10:43:57 kristaps Exp $ */
+/* $Id: html.c,v 1.22 2008/12/10 12:05:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -959,6 +959,7 @@ html_free(void *p)
 }
 
 
+/* ARGSUSED */
 static ssize_t 
 html_beginhttp(struct md_mbuf *mbuf, 
 		const struct md_args *args, 
@@ -977,6 +978,7 @@ html_beginhttp(struct md_mbuf *mbuf,
 }
 
 
+/* ARGSUSED */
 static ssize_t 
 html_endhttp(struct md_mbuf *mbuf, 
 		const struct md_args *args, 

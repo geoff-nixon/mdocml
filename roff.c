@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.57 2008/12/10 00:52:46 kristaps Exp $ */
+/* $Id: roff.c,v 1.58 2008/12/10 10:43:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -164,7 +164,9 @@ roff_free(struct rofftree *tree, int flush)
 			goto end;
 	}
 
-	if ( ! (*tree->cb.rofftail)(tree->arg))
+	if ( ! (*tree->cb.rofftail)(tree->arg, &tree->tm,
+				tree->os, tree->title, 
+				tree->section, tree->volume))
 		goto end;
 
 	error = 0;

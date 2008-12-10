@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.35 2008/12/09 17:09:12 kristaps Exp $ */
+/* $Id: private.h,v 1.36 2008/12/10 10:43:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -346,7 +346,8 @@ struct	roffcb {
 			const char *, const char *, const char *);
 	int	(*roffhead)(void *, const struct tm *, const char *, 
 			const char *, enum roffmsec, enum roffvol);
-	int	(*rofftail)(void *);
+	int	(*rofftail)(void *, const struct tm *, const char *, 
+			const char *, enum roffmsec, enum roffvol);
 	int	(*roffdata)(void *, int, const char *, const char *);
 	int	(*roffin)(void *, int, int *, const char **);
 	int	(*roffout)(void *, int);
@@ -391,6 +392,7 @@ enum roffmsec	  roff_msec(const char *);
 int		  roff_sec(const char **);
 enum roffatt	  roff_att(const char *);
 enum roffvol	  roff_vol(const char *);
+char		 *roff_volname(enum roffvol);
 
 __END_DECLS
 

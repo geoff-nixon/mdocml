@@ -1,4 +1,4 @@
-/* $Id: ml.h,v 1.10 2008/12/08 12:46:28 kristaps Exp $ */
+/* $Id: ml.h,v 1.11 2008/12/09 17:09:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -19,6 +19,13 @@
 #ifndef ML_H
 #define ML_H
 
+#include "private.h"
+
+#define	COLUMNS		  72
+#define	INDENT_SZ	  4
+#define	INDENT(x)	  ((x) > MAXINDENT ? MAXINDENT : (x))
+#define	MAXINDENT	  10
+
 struct	md_mlg;
 
 enum	md_ns {
@@ -27,6 +34,11 @@ enum	md_ns {
 	MD_NS_BODY,
 	MD_NS_INLINE,
 	MD_NS_DEFAULT,
+};
+
+enum	ml_scope {
+	ML_OPEN,
+	ML_CLOSE
 };
 
 struct	ml_cbs {
@@ -66,11 +78,15 @@ int		  ml_puts(struct md_mbuf *, const char *, size_t *);
 int		  ml_putchars(struct md_mbuf *, 
 			char, size_t, size_t *);
 
+/* FIXME: move into mlg.h or private.h. */
 struct md_mlg	 *mlg_alloc(const struct md_args *, 
 			const struct md_rbuf *, struct md_mbuf *,
 			const struct ml_cbs *);
 int		  mlg_exit(struct md_mlg *, int);
 int		  mlg_line(struct md_mlg *, char *);
+
+int		  ml_tagput(struct md_mbuf *, 
+			enum ml_scope, const char *, size_t *);
 
 __END_DECLS
 

@@ -1,4 +1,4 @@
-/* $Id: noop.c,v 1.1 2008/12/10 14:42:46 kristaps Exp $ */
+/* $Id: noop.c,v 1.2 2008/12/10 16:03:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -281,7 +281,7 @@ noop_roffmsg(void *arg, enum roffmsg lvl,
 
 		} else
 			(void)snprintf(b, sizeof(b), 
-					"%s:%zu: %s: %s (col %zu)", 
+					"%s:%zu: %s: %s (%zu)", 
 					p->rbuf->name, p->rbuf->line, 
 					level, msg, pos - buf);
 	} else 

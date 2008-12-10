@@ -1,4 +1,4 @@
-/* $Id: roff.c,v 1.60 2008/12/10 12:09:47 kristaps Exp $ */
+/* $Id: roff.c,v 1.61 2008/12/10 13:15:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -38,7 +38,6 @@
 /* TODO: (warn) some sections need specific elements. */
 /* TODO: (warn) NAME section has particular order. */
 /* TODO: macros with a set number of arguments? */
-/* TODO: validate Dt macro arguments. */
 /* FIXME: Bl -diag supposed to ignore callable children. */
 
 struct	roffnode {
@@ -1166,7 +1165,7 @@ static int
 roff_layout(ROFFCALL_ARGS) 
 {
 	int		 i, c, argcp[ROFF_MAXLINEARG];
-	char		*argvp[ROFF_MAXLINEARG];
+	char		*argvp[ROFF_MAXLINEARG], *p;
 
 	/*
 	 * The roff_layout function is for multi-line macros.  A layout
@@ -1192,7 +1191,7 @@ roff_layout(ROFFCALL_ARGS)
 		return((*tree->cb.roffblkout)(tree->arg, tok));
 	} 
 
-	argv++;
+	p = *argv++;
 	assert( ! (ROFF_CALLABLE & tokens[tok].flags));
 
 	if ( ! roffparseopts(tree, tok, &argv, argcp, argvp))
@@ -1249,6 +1248,10 @@ roff_layout(ROFFCALL_ARGS)
 			return(0);
 
 		tree->asec |= tree->csec;
+
+		if ( ! roffspecial(tree, tok, p, argcp, 
+					(const char **)argvp, 0, argv))
+			return(0);
 		break;
 	default:
 		break;

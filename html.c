@@ -1,4 +1,4 @@
-/* $Id: html.c,v 1.18 2008/12/09 19:57:26 kristaps Exp $ */
+/* $Id: html.c,v 1.19 2008/12/10 00:52:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -485,7 +485,10 @@ html_begin(struct md_mbuf *mbuf, const struct md_args *args,
 	if ( ! html_tputln(mbuf, ML_CLOSE, i, HTML_TAG_TD))
 		return(0);
 
-	if ( ! html_tputln(mbuf, ML_OPEN, i, HTML_TAG_TD))
+	attr[0].attr = HTML_ATTR_ALIGN;
+	attr[0].val = "right";
+
+	if ( ! html_aputln(mbuf, ML_OPEN, i, HTML_TAG_TD, 1, attr))
 		return(0);
 	if ( ! ml_putstring(mbuf, ts, NULL))
 		return(0);

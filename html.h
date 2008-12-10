@@ -1,4 +1,4 @@
-/* $Id: ml.h,v 1.11 2008/12/09 17:09:12 kristaps Exp $ */
+/* $Id: html.h,v 1.1 2008/12/10 00:52:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -51,6 +51,7 @@ enum	html_attr {
 	HTML_ATTR_REL	= 5,
 	HTML_ATTR_HREF	= 6,
 	HTML_ATTR_WIDTH	= 7,
+	HTML_ATTR_ALIGN	= 8,
 };
 
 enum	html_type {

@@ -1,4 +1,4 @@
-/* $Id: xml.c,v 1.20 2008/12/08 12:46:28 kristaps Exp $ */
+/* $Id: xml.c,v 1.21 2008/12/09 17:09:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -67,6 +67,8 @@ xml_printtagargs(struct md_mbuf *mbuf, const int *argc,
 	for (res = 0, i = 0; ROFF_ARGMAX != (c = argc[i]); i++) {
 		if ( ! ml_nputs(mbuf, " ", 1, &res))
 			return(-1);
+
+		/* FIXME: should puke on some, no? */
 
 		if ( ! ml_puts(mbuf, tokargnames[c], &res))
 			return(-1);

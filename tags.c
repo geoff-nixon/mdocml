@@ -1,4 +1,4 @@
-/* $Id: tags.c,v 1.1 2008/12/10 00:52:46 kristaps Exp $ */
+/* $Id: tags.c,v 1.2 2008/12/10 00:58:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -37,7 +37,7 @@ static	const char * const tagnames[] = {
 static	const char * const attrnames[] = {
 	"class",	"http-equiv",	"content",	"name",
 	"type",		"rel",		"href",		"width",
-	"align",
+	"align",	"valign",	"nowrap",
 	};
 
 static	const char * const typenames[] = {

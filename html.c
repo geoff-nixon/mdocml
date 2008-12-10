@@ -1,4 +1,4 @@
-/* $Id: html.c,v 1.24 2008/12/10 13:41:58 kristaps Exp $ */
+/* $Id: html.c,v 1.25 2008/12/10 17:31:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -127,6 +127,7 @@ html_It_headtagname(struct md_mbuf *mbuf, struct htmlq *q,
 {
 	struct htmlnode	*n;
 	int		 i;
+	struct html_pair attr[2];
 
 	for (n = q->last; n; n = n->parent)
 		if (n->tok == ROFF_Bl)
@@ -141,9 +142,17 @@ html_It_headtagname(struct md_mbuf *mbuf, struct htmlq *q,
 		case (ROFF_Ohang):
 			return(html_stput(mbuf, HTML_TAG_DIV, res));
 		case (ROFF_Tag):
-			/* FALLTHROUGH */
+			attr[0].attr = HTML_ATTR_VALIGN;
+			attr[0].val = "top";
+			attr[1].attr = HTML_ATTR_NOWRAP;
+			attr[1].val = "true";
+			return(html_saput(mbuf, HTML_TAG_TD, 
+						res, 2, attr));
 		case (ROFF_Column): 
-			return(html_stput(mbuf, HTML_TAG_TD, res));
+			attr[0].attr = HTML_ATTR_VALIGN;
+			attr[0].val = "top";
+			return(html_saput(mbuf, HTML_TAG_TD, 
+						res, 1, attr));
 		default:
 			break;
 		}
@@ -160,6 +169,7 @@ html_It_bodytagname(struct md_mbuf *mbuf, struct htmlq *q,
 {
 	struct htmlnode	*n;
 	int		 i;
+	struct html_pair attr[1];
 
 	for (n = q->last; n; n = n->parent)
 		if (n->tok == ROFF_Bl)
@@ -192,7 +202,10 @@ html_It_bodytagname(struct md_mbuf *mbuf, struct htmlq *q,
 		case (ROFF_Tag):
 			/* FALLTHROUGH */
 		case (ROFF_Column): 
-			return(html_stput(mbuf, HTML_TAG_TD, res));
+			attr[0].attr = HTML_ATTR_VALIGN;
+			attr[0].val = "top";
+			return(html_saput(mbuf, HTML_TAG_TD, 
+						res, 1, attr));
 		default:
 			break;
 		}

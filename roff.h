@@ -1,4 +1,4 @@
-/* $Id: roff.h,v 1.8 2008/12/07 22:40:18 kristaps Exp $ */
+/* $Id: roff.h,v 1.9 2008/12/08 12:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -125,7 +125,7 @@ static	const struct rofftok tokens[ROFF_MAX] = {
 	{   roff_noop, NULL, NULL, roffparent_El, NULL, ROFF_Bl, ROFF_LAYOUT, 0 }, /* El */
 	{ roff_layout, NULL, NULL, roffparent_It, NULL, ROFF_It, ROFF_LAYOUT, ROFF_PARSED | ROFF_SHALLOW }, /* It */
 	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ad */ /* FIXME */
-	{   roff_text, NULL, roffarg_An, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* An */ /* FIXME: no-args? */
+	{   roff_text, NULL, roffarg_An, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* An */ /* FIXME: args/no-args, yech. */
 /*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ar */
 /*Ok*/	{   roff_text, roffmsec_Cd, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Cd */
 /*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Cm */

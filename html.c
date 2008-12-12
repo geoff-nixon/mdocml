@@ -1,4 +1,4 @@
-/* $Id: html.c,v 1.25 2008/12/10 17:31:57 kristaps Exp $ */
+/* $Id: html.c,v 1.26 2008/12/10 17:40:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -822,6 +822,10 @@ html_inlinetagname(struct md_mbuf *mbuf,
 {
 
 	switch (tok) {
+	case (ROFF_Dl):
+		/* FALLTHROUGH */
+	case (ROFF_D1):
+		return(html_stput(mbuf, HTML_TAG_DIV, res));
 	case (ROFF_Sh):
 		return(html_stput(mbuf, HTML_TAG_A, res));
 	case (ROFF_Pp):

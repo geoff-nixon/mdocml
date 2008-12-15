@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.20 2008/12/10 14:42:46 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.21 2008/12/15 01:54:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -207,6 +207,9 @@ print_node(const struct mdoc_node *n, int indent)
 		p = mdoc_macronames[n->data.block.tok];
 		t = "block";
 		break;
+	default:
+		abort();
+		/* NOTREACHED */
 	}
 
 	for (i = 0; i < indent; i++)

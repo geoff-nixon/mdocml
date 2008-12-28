@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.4 2008/12/23 05:30:49 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.5 2008/12/28 00:34:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -224,6 +224,7 @@ enum	mdoc_warn {
 	WARN_SEC_OO,
 	WARN_ARGS_GE1,
 	WARN_ARGS_EQ0,
+	WARN_COMPAT_TROFF
 };
 
 struct	mdoc_arg {

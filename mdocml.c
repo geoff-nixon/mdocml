@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.24 2008/12/23 05:30:49 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.25 2008/12/28 00:34:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -181,13 +181,16 @@ buf_begin(struct md_parse *p)
 static void
 print_node(const struct mdoc_node *n, int indent)
 {
-	const char	*p, *t;
-	int		 i, j;
-	size_t		 argc;
-	struct mdoc_arg	*argv;
+	const char	 *p, *t;
+	int		  i, j;
+	size_t		  argc, sz;
+	char		**params;
+	struct mdoc_arg	 *argv;
 
 	argv = NULL;
 	argc = 0;
+	params = NULL;
+	sz = 0;
 
 	switch (n->type) {
 	case (MDOC_TEXT):
@@ -202,6 +205,8 @@ print_node(const struct mdoc_node *n, int indent)
 	case (MDOC_HEAD):
 		p = mdoc_macronames[n->data.head.tok];
 		t = "block-head";
+		params = n->data.head.args;
+		sz = n->data.head.sz;
 		break;
 	case (MDOC_ELEM):
 		assert(NULL == n->child);
@@ -209,6 +214,8 @@ print_node(const struct mdoc_node *n, int indent)
 		t = "element";
 		argv = n->data.elem.argv;
 		argc = n->data.elem.argc;
+		params = n->data.elem.args;
+		sz = n->data.elem.sz;
 		break;
 	case (MDOC_BLOCK):
 		p = mdoc_macronames[n->data.block.tok];
@@ -230,6 +237,9 @@ print_node(const struct mdoc_node *n, int indent)
 		for (j = 0; j < (int)argv[i].sz; j++)
 			(void)printf(" \"%s\"", argv[i].value[j]);
 	}
+
+	for (i = 0; i < (int)sz; i++)
+		(void)printf(" \"%s\"", params[i]);
 
 	(void)printf("\n");
 
@@ -340,7 +350,7 @@ msg_err(void *arg, int tok, int col, enum mdoc_err type)
 		fmt = "scope: closure macro `%s' has no context";
 		break;
 	case (ERR_SCOPE_NONEST):
-		fmt = "scope: macro `%s' may not be nested";
+		fmt = "scope: macro `%s' may not be nested in the current context";
 		break;
 	case (ERR_MACRO_NOTSUP):
 		fmt = "macro `%s' not supported";

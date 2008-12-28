@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.25 2008/12/28 00:34:20 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.26 2008/12/28 21:25:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -490,6 +490,9 @@ msg_warn(void *arg, int tok, int col, enum mdoc_warn type)
 		break;
 	case (WARN_IGN_BEFORE_BLK):
 		fmt = "ignore: macro before block macro `%s' ignored";
+		break;
+	case (WARN_COMPAT_TROFF):
+		fmt = "compat: macro `%s' behaves differently in troff and nroff";
 		break;
 	default:
 		abort();

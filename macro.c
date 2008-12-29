@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.10 2008/12/29 12:19:41 kristaps Exp $ */
+/* $Id: macro.c,v 1.11 2008/12/29 18:08:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -219,6 +219,18 @@ append_const(struct mdoc *mdoc, int tok,
 		mdoc_word_alloc(mdoc, pos, args[1]);
 		return(1);
 
+	case (MDOC_Nd):
+		if (sz > 0)
+			break;
+		if ( ! mdoc_warn(mdoc, tok, pos, WARN_ARGS_GE1))
+			return(0);
+		break;
+	
+	case (MDOC_Hf):
+		if (1 == sz)
+			break;
+		return(mdoc_err(mdoc, tok, pos, ERR_ARGS_EQ1));
+
 	case (MDOC_Bx):
 		/* FALLTHROUGH */
 	case (MDOC_Bsx):
@@ -306,6 +318,10 @@ append_text(struct mdoc *mdoc, int tok,
 	case (MDOC_Dv):
 		/* FALLTHROUGH */
 	case (MDOC_Ic):
+		/* FALLTHROUGH */
+	case (MDOC_Sy):
+		/* FALLTHROUGH */
+	case (MDOC_Sx):
 		/* FALLTHROUGH */
 	case (MDOC_Va):
 		/* FALLTHROUGH */

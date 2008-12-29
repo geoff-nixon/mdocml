@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.27 2008/12/28 23:07:04 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.28 2008/12/29 18:08:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -369,6 +369,9 @@ msg_err(void *arg, int tok, int col, enum mdoc_err type)
 		break;
 	case (ERR_ARGS_EQ0):
 		fmt = "macro `%s' expects zero arguments";
+		break;
+	case (ERR_ARGS_EQ1):
+		fmt = "macro `%s' expects one argument";
 		break;
 	case (ERR_ARGS_GE1):
 		fmt = "macro `%s' expects one or more arguments";

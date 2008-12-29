@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.5 2008/12/28 00:34:20 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.6 2008/12/28 23:07:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -19,7 +19,7 @@
 #ifndef MDOC_H
 #define MDOC_H
 
-#define	MDOC_LINEARG_MAX 9
+#define	MDOC_LINEARG_MAX 8
 
 #define	MDOC___	 	 0
 #define	MDOC_Dd		 1

@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.7 2008/12/28 23:07:04 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.8 2008/12/29 12:19:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -138,7 +138,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ NULL, 0 }, /* Ac */
 	{ NULL, 0 }, /* Ao */
 	{ macro_scoped_pline, MDOC_CALLABLE }, /* Aq */
-	{ NULL, 0 }, /* At */
+	{ macro_constant, 0 }, /* At */
 	{ NULL, 0 }, /* Bc */
 	{ NULL, 0 }, /* Bf */ 
 	{ NULL, 0 }, /* Bo */
@@ -185,10 +185,10 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ NULL, 0 }, /* Oc */
 	{ NULL, 0 }, /* Bk */
 	{ NULL, 0 }, /* Ek */
-	{ NULL, 0 }, /* Bt */
+	{ macro_constant, 0 }, /* Bt */
 	{ NULL, 0 }, /* Hf */
 	{ NULL, 0 }, /* Fr */
-	{ NULL, 0 }, /* Ud */
+	{ macro_constant, 0 }, /* Ud */
 };
 
 const	char * const *mdoc_macronames = __mdoc_macronames;

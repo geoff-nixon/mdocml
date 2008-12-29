@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.45 2008/12/28 00:34:20 kristaps Exp $ */
+/* $Id: private.h,v 1.46 2008/12/28 21:25:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -94,6 +94,7 @@ int	  	  xstrcmp(const char *, const char *);
 void	 	 *xcalloc(size_t, size_t);
 char	 	 *xstrdup(const char *);
 
+int		  macro_constant_delimited(MACRO_PROT_ARGS);
 int		  macro_text(MACRO_PROT_ARGS);
 int		  macro_scoped_implicit(MACRO_PROT_ARGS);
 int		  macro_scoped_explicit(MACRO_PROT_ARGS);

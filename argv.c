@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.1 2008/12/23 05:30:49 kristaps Exp $ */
+/* $Id: argv.c,v 1.2 2008/12/28 00:34:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -178,6 +178,13 @@ lookup(int tok, const char *argv)
 		else if (xstrcmp(argv, "compact"))
 			return(MDOC_Compact);
 		break;
+	
+	case (MDOC_Rv):
+		/* FALLTHROUGH */
+	case (MDOC_Ex):
+		if (xstrcmp(argv, "std"))
+			return(MDOC_Std);
+		break;
 
 	default:
 		abort();
@@ -258,6 +265,8 @@ parse(struct mdoc *mdoc, int tok,
 		v->value = NULL;
 		break;
 
+	case(MDOC_Std):
+		/* FALLTHROUGH */
 	case(MDOC_Width):
 		/* FALLTHROUGH */
 	case(MDOC_Offset):

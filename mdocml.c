@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.28 2008/12/29 18:08:44 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.29 2008/12/29 19:25:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -499,6 +499,9 @@ msg_warn(void *arg, int tok, int col, enum mdoc_warn type)
 		break;
 	case (WARN_IGN_AFTER_BLK):
 		fmt = "ignore: macro `%s' ignored after block macro";
+		break;
+	case (WARN_IGN_OBSOLETE):
+		fmt = "ignore: macro `%s' is obsolete";
 		break;
 	case (WARN_IGN_BEFORE_BLK):
 		fmt = "ignore: macro before block macro `%s' ignored";

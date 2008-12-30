@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.8 2008/12/29 18:08:44 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.9 2008/12/29 19:25:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -241,6 +241,7 @@ enum	mdoc_warn {
 	WARN_SYNTAX_QUOTED,
 	WARN_IGN_AFTER_BLK,
 	WARN_IGN_BEFORE_BLK,
+	WARN_IGN_OBSOLETE,
 	WARN_SEC_OO,
 	WARN_ARGS_GE1,
 	WARN_ARGS_EQ0,

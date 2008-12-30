@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.2 2008/12/28 00:34:20 kristaps Exp $ */
+/* $Id: argv.c,v 1.3 2008/12/30 13:43:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -98,10 +98,8 @@ mdoc_args(struct mdoc *mdoc, int tok, int *pos, char *buf, int fl, char **v)
 	/*
 	 * If we're a quoted string (and quoted strings are allowed),
 	 * then parse ahead to the next quote.  If none's found, it's an
-	 * error.  After, parse to the next word.  We're not allowed to
-	 * also be DELIM requests (for now).
+	 * error.  After, parse to the next word.  
 	 */
-	assert( ! (fl & ARGS_DELIM));
 
 	*v = &buf[++(*pos)];
 

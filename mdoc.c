@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.9 2008/12/29 18:08:44 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.10 2008/12/29 19:25:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -105,7 +105,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ macro_text, MDOC_CALLABLE }, /* Dv */ 
 	{ macro_text, MDOC_CALLABLE }, /* Er */ 
 	{ macro_text, MDOC_CALLABLE }, /* Ev */ 
-	{ NULL, 0 }, /* Ex */
+	{ macro_constant_argv, 0 }, /* Ex */
 	{ macro_text, MDOC_CALLABLE }, /* Fa */ 
 	{ NULL, 0 }, /* Fd */ 
 	{ macro_text, MDOC_CALLABLE }, /* Fl */
@@ -119,7 +119,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ NULL, 0 }, /* Op */
 	{ NULL, 0 }, /* Ot */
 	{ macro_text, MDOC_CALLABLE }, /* Pa */
-	{ NULL, 0 }, /* Rv */
+	{ macro_constant_argv, 0 }, /* Rv */
 	{ NULL, 0 }, /* St */
 	{ macro_text, MDOC_CALLABLE }, /* Va */
 	{ macro_text, MDOC_CALLABLE }, /* Vt */ 

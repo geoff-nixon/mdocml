@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.9 2008/12/29 19:25:29 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.10 2008/12/30 19:06:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -215,7 +215,8 @@ enum 	mdoc_err {
 	ERR_ARGS_EQ1,
 	ERR_ARGS_GE1,
 	ERR_ARGS_LE2,
-	ERR_ARGS_MANY
+	ERR_ARGS_MANY,
+	ERR_CHILD_HEAD
 };
 
 enum	mdoc_att {

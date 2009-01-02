@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.15 2008/12/30 19:06:03 kristaps Exp $ */
+/* $Id: macro.c,v 1.16 2009/01/01 20:40:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -146,6 +146,15 @@ append_text_argv(struct mdoc *mdoc, int tok, int pos,
 
 	if ( ! mdoc_valid_pre(mdoc, tok, pos, 0, NULL, argc, argv))
 		return(0);
+
+	switch (tok) {
+	case (MDOC_Pf):
+		/* TODO: only use first two arguments in element. */
+		break;
+	default:
+		break;
+	}
+
 	mdoc_elem_alloc(mdoc, pos, tok, (size_t)argc, 
 			argv, (size_t)sz, _CC(args));
 	mdoc->next = MDOC_NEXT_SIBLING;
@@ -331,6 +340,9 @@ macro_close_explicit(MACRO_PROT_ARGS)
 		break;
 	case (MDOC_Re):
 		tt = MDOC_Rs;
+		break;
+	case (MDOC_Ef):
+		tt = MDOC_Bf;
 		break;
 	default:
 		abort();
@@ -542,6 +554,10 @@ again:
 }
 
 
+/* 
+ * FIXME: like in with macro_constant, have the append_ routine chop the
+ * number of requisite arguments (this is ugly when done in-line).
+ */
 int
 macro_constant_delimited(MACRO_PROT_ARGS)
 {

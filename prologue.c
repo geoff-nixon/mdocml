@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.15 2008/12/30 19:06:03 kristaps Exp $ */
+/* $Id: prologue.c,v 1.1 2009/01/01 20:40:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -18,6 +18,9 @@
  */
 #include <assert.h>
 #include <stdlib.h>
+#ifdef __linux__
+#include <time.h>
+#endif
 
 #include "private.h"
 

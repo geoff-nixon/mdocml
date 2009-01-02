@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.4 2008/12/30 19:06:03 kristaps Exp $ */
+/* $Id: argv.c,v 1.5 2009/01/01 20:40:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -133,6 +133,22 @@ lookup(int tok, const char *argv)
 {
 
 	switch (tok) {
+	case (MDOC_Bf):
+		if (xstrcmp(argv, "emphasis"))
+			return(MDOC_Emphasis);
+		else if (xstrcmp(argv, "literal"))
+			return(MDOC_Literal);
+		else if (xstrcmp(argv, "symbolic"))
+			return(MDOC_Symbolic);
+		break;
+
+	case (MDOC_An):
+		if (xstrcmp(argv, "split"))
+			return(MDOC_Split);
+		else if (xstrcmp(argv, "nosplit"))
+			return(MDOC_Nosplit);
+		break;
+
 	case (MDOC_Bd):
 		if (xstrcmp(argv, "ragged"))
 			return(MDOC_Ragged);
@@ -307,39 +323,6 @@ parse(struct mdoc *mdoc, int tok,
 	ppos = *pos;
 
 	switch (v->arg) {
-	case(MDOC_Compact):
-		/* FALLTHROUGH */
-	case(MDOC_Ragged):
-		/* FALLTHROUGH */
-	case(MDOC_Unfilled):
-		/* FALLTHROUGH */
-	case(MDOC_Literal):
-		/* FALLTHROUGH */
-	case(MDOC_File):
-		/* FALLTHROUGH */
-	case(MDOC_Bullet):
-		/* FALLTHROUGH */
-	case(MDOC_Dash):
-		/* FALLTHROUGH */
-	case(MDOC_Hyphen):
-		/* FALLTHROUGH */
-	case(MDOC_Item):
-		/* FALLTHROUGH */
-	case(MDOC_Enum):
-		/* FALLTHROUGH */
-	case(MDOC_Tag):
-		/* FALLTHROUGH */
-	case(MDOC_Diag):
-		/* FALLTHROUGH */
-	case(MDOC_Hang):
-		/* FALLTHROUGH */
-	case(MDOC_Ohang):
-		/* FALLTHROUGH */
-	case(MDOC_Inset):
-		v->sz = 0;
-		v->value = NULL;
-		break;
-
 	case(MDOC_Std):
 		/* FALLTHROUGH */
 	case(MDOC_Width):
@@ -384,9 +367,11 @@ parse(struct mdoc *mdoc, int tok,
 
 		v->sz = i;
 		break;
+
 	default:
-		abort();
-		/* NOTREACHED */
+		v->sz = 0;
+		v->value = NULL;
+		break;
 	}
 
 	return(1);

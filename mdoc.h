@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.10 2008/12/30 19:06:03 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.11 2009/01/01 20:40:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -189,7 +189,9 @@
 #define MDOC_svid4	 57
 #define	MDOC_Filled	 58
 #define	MDOC_Words	 59
-#define	MDOC_ARG_MAX	 60
+#define	MDOC_Emphasis	 60
+#define	MDOC_Symbolic	 61
+#define	MDOC_ARG_MAX	 62
 
 enum 	mdoc_err {
 	ERR_SYNTAX_QUOTE, /* NOTUSED */

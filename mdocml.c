@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.31 2009/01/01 20:40:16 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.32 2009/01/03 18:38:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -207,7 +207,6 @@ print_node(const struct mdoc_node *n, int indent)
 		t = "block-head";
 		break;
 	case (MDOC_ELEM):
-		assert(NULL == n->child);
 		p = mdoc_macronames[n->data.elem.tok];
 		t = "element";
 		argv = n->data.elem.argv;

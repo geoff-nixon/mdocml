@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.11 2009/01/01 20:40:16 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.12 2009/01/02 14:06:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -218,7 +218,10 @@ enum 	mdoc_err {
 	ERR_ARGS_GE1,
 	ERR_ARGS_LE2,
 	ERR_ARGS_MANY,
-	ERR_CHILD_HEAD
+	ERR_SYNTAX_CHILDHEAD,
+	ERR_SYNTAX_CHILDBODY,
+	ERR_SYNTAX_EMPTYBODY,
+	ERR_SYNTAX_EMPTYHEAD
 };
 
 enum	mdoc_att {
@@ -242,6 +245,7 @@ enum	mdoc_warn {
 	WARN_SYNTAX_MACLIKE,
 	WARN_SYNTAX_ARGLIKE,
 	WARN_SYNTAX_QUOTED,
+	WARN_SYNTAX_EMPTYBODY,
 	WARN_IGN_AFTER_BLK,
 	WARN_IGN_BEFORE_BLK,
 	WARN_IGN_OBSOLETE,

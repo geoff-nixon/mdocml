@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.15 2009/01/03 22:10:22 kristaps Exp $ */
+/* $Id: action.c,v 1.1 2009/01/05 14:14:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -160,5 +160,7 @@ mdoc_action(struct mdoc *mdoc, int tok, int pos)
 	default:
 		break;
 	}
+
+	MDOC_Nm... ?
 #endif
 

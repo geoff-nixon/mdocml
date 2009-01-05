@@ -1,4 +1,4 @@
-/* $Id: prologue.c,v 1.1 2009/01/01 20:40:16 kristaps Exp $ */
+/* $Id: prologue.c,v 1.2 2009/01/02 14:06:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -23,6 +23,8 @@
 #endif
 
 #include "private.h"
+
+/* FIXME: deprecate into actions.c! */
 
 static int		 prologue_dt(MACRO_PROT_ARGS);
 static int		 prologue_dd(MACRO_PROT_ARGS);

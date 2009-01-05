@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.32 2009/01/03 18:38:39 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.33 2009/01/03 22:10:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -205,6 +205,10 @@ print_node(const struct mdoc_node *n, int indent)
 	case (MDOC_HEAD):
 		p = mdoc_macronames[n->data.head.tok];
 		t = "block-head";
+		break;
+	case (MDOC_TAIL):
+		p = mdoc_macronames[n->data.tail.tok];
+		t = "block-tail";
 		break;
 	case (MDOC_ELEM):
 		p = mdoc_macronames[n->data.elem.tok];

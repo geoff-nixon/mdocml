@@ -1,4 +1,4 @@
-/* $Id: hash.c,v 1.2 2008/12/15 02:23:12 kristaps Exp $ */
+/* $Id: hash.c,v 1.3 2008/12/23 05:30:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -112,6 +112,8 @@ mdoc_tokhash_find(const void *arg, const char *tmp)
 		minor = tmp[1] - 97;
 
 	ind = (major * 27) + minor;
+	if (ind < 0 || ind >= (27 * 26))
+		return(MDOC_MAX);
 
 	if (NULL == htab[ind])
 		return(MDOC_MAX);

@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.13 2009/01/03 18:38:39 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.14 2009/01/05 16:11:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -221,7 +221,8 @@ enum 	mdoc_err {
 	ERR_SYNTAX_CHILDHEAD,
 	ERR_SYNTAX_CHILDBODY,
 	ERR_SYNTAX_EMPTYBODY,
-	ERR_SYNTAX_EMPTYHEAD
+	ERR_SYNTAX_EMPTYHEAD,
+	ERR_SYNTAX_NOTEXT
 };
 
 enum	mdoc_att {

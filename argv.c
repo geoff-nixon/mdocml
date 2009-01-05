@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.5 2009/01/01 20:40:16 kristaps Exp $ */
+/* $Id: argv.c,v 1.6 2009/01/02 14:06:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -160,6 +160,11 @@ lookup(int tok, const char *argv)
 			return(MDOC_File);
 		else if (xstrcmp(argv, "offset"))
 			return(MDOC_Offset);
+		break;
+
+	case (MDOC_Bk):
+		if (xstrcmp(argv, "words"))
+			return(MDOC_Words);
 		break;
 
 	case (MDOC_Bl):

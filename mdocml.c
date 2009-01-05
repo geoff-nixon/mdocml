@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.33 2009/01/03 22:10:22 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.34 2009/01/05 16:11:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -328,6 +328,9 @@ msg_err(void *arg, int tok, int col, enum mdoc_err type)
 	fmt = lit = NULL;
 
 	switch (type) {
+	case (ERR_SYNTAX_NOTEXT):
+		lit = "syntax: context-free text disallowed";
+		break;
 	case (ERR_SYNTAX_QUOTE):
 		lit = "syntax: disallowed argument quotation";
 		break;
@@ -357,7 +360,7 @@ msg_err(void *arg, int tok, int col, enum mdoc_err type)
 		fmt = "scope: macro `%s' may not be nested in the current context";
 		break;
 	case (ERR_MACRO_NOTSUP):
-		fmt = "macro `%s' not supported";
+		lit = "macro not supported";
 		break;
 	case (ERR_MACRO_NOTCALL):
 		fmt = "macro `%s' not callable";

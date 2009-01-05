@@ -1,4 +1,4 @@
-/* $Id: prologue.c,v 1.2 2009/01/02 14:06:16 kristaps Exp $ */
+/* $Id: prologue.c,v 1.3 2009/01/05 16:11:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -66,10 +66,6 @@ again:
 	default:
 		break;
 	}
-
-	if (MDOC_MAX != mdoc_find(mdoc, args[j]) && ! mdoc_warn
-			(mdoc, tok, lastarg, WARN_SYNTAX_MACLIKE))
-		return(0);
 
 	if (0 == j) {
 		if (xstrlcpy(mdoc->meta.title, args[0], META_TITLE_SZ))

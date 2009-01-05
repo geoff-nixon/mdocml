@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.52 2009/01/01 20:40:16 kristaps Exp $ */
+/* $Id: private.h,v 1.53 2009/01/03 22:10:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -85,6 +85,7 @@ time_t		  mdoc_atotime(const char *);
 int		  mdoc_valid_pre(struct mdoc *, int, int,
 			int, const struct mdoc_arg *);
 int		  mdoc_valid_post(struct mdoc *, int, int);
+int		  mdoc_action(struct mdoc *, int, int);
 
 int		  mdoc_argv(struct mdoc *, int, 
 			struct mdoc_arg *, int *, char *);

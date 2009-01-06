@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.3 2008/12/28 00:34:20 kristaps Exp $ */
+/* $Id: strings.c,v 1.4 2008/12/29 18:08:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -132,6 +132,8 @@ time_t
 mdoc_atotime(const char *p)
 {
 	struct tm	 tm;
+
+	(void)memset(&tm, 0, sizeof(struct tm));
 
 	if (strptime(p, "%b %d %Y", &tm))
 		return(mktime(&tm));

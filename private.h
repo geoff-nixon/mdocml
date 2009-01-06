@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.54 2009/01/05 14:14:04 kristaps Exp $ */
+/* $Id: private.h,v 1.55 2009/01/05 16:11:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -43,10 +43,11 @@ struct	mdoc_macro {
 	int	(*fp)(struct mdoc *, int, int, int *, char *);
 	int	  flags;
 #define	MDOC_CALLABLE	(1 << 0)
-#define	MDOC_EXPLICIT	(1 << 1)
-#define	MDOC_QUOTABLE	(1 << 2)
-#define	MDOC_PROLOGUE	(1 << 3)
-#define	MDOC_NESTED	(1 << 4)
+#define	MDOC_PARSED	(1 << 1)
+#define	MDOC_EXPLICIT	(1 << 2)
+#define	MDOC_QUOTABLE	(1 << 3)
+#define	MDOC_PROLOGUE	(1 << 4)
+#define	MDOC_NESTED	(1 << 5)
 };
 
 extern	const struct mdoc_macro *const mdoc_macros;

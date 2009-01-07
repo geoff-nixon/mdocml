@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.24 2009/01/06 15:49:44 kristaps Exp $ */
+/* $Id: macro.c,v 1.25 2009/01/07 15:53:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -314,7 +314,7 @@ macro_close_explicit(MACRO_PROT_ARGS)
 					return(0);
 				flushed = 1;
 			}
-			if ( ! mdoc_macro(mdoc, c, lastarg, pos, buf))
+			if ( ! mdoc_macro(mdoc, c, line, lastarg, pos, buf))
 				return(0);
 			break;
 		}
@@ -405,7 +405,7 @@ macro_text(MACRO_PROT_ARGS)
 				return(0);
 			}
 			mdoc_argv_free(argc, argv);
-			if ( ! mdoc_macro(mdoc, c, lastarg, pos, buf))
+			if ( ! mdoc_macro(mdoc, c, line, lastarg, pos, buf))
 				return(0);
 			if (ppos > 1)
 				return(1);
@@ -504,7 +504,7 @@ macro_scoped(MACRO_PROT_ARGS)
 			continue;
 		}
 
-		if ( ! mdoc_macro(mdoc, c, lastarg, pos, buf))
+		if ( ! mdoc_macro(mdoc, c, line, lastarg, pos, buf))
 			return(0);
 		break;
 	}
@@ -565,7 +565,7 @@ macro_scoped_line(MACRO_PROT_ARGS)
 			continue;
 		}
 
-		if ( ! mdoc_macro(mdoc, c, lastarg, pos, buf))
+		if ( ! mdoc_macro(mdoc, c, line, lastarg, pos, buf))
 			return(0);
 		break;
 	}
@@ -645,7 +645,7 @@ macro_constant_scoped(MACRO_PROT_ARGS)
 				mdoc_body_alloc(mdoc, ppos, tok);
 				mdoc->next = MDOC_NEXT_CHILD;
 			}
-			if ( ! mdoc_macro(mdoc, c, lastarg, pos, buf))
+			if ( ! mdoc_macro(mdoc, c, line, lastarg, pos, buf))
 				return(0);
 			break;
 		}
@@ -751,7 +751,7 @@ macro_constant_delimited(MACRO_PROT_ARGS)
 			if ( ! flushed && ! rewind_elem(mdoc, ppos, tok))
 				return(0);
 			flushed = 1;
-			if ( ! mdoc_macro(mdoc, c, lastarg, pos, buf))
+			if ( ! mdoc_macro(mdoc, c, line, lastarg, pos, buf))
 				return(0);
 			break;
 		}

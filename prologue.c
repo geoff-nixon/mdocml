@@ -1,4 +1,4 @@
-/* $Id: prologue.c,v 1.3 2009/01/05 16:11:14 kristaps Exp $ */
+/* $Id: prologue.c,v 1.4 2009/01/05 17:57:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -203,11 +203,11 @@ macro_prologue(MACRO_PROT_ARGS)
 
 	switch (tok) {
 	case (MDOC_Dt):
-		return(prologue_dt(mdoc, tok, ppos, pos, buf));
+		return(prologue_dt(mdoc, tok, line, ppos, pos, buf));
 	case (MDOC_Dd):
-		return(prologue_dd(mdoc, tok, ppos, pos, buf));
+		return(prologue_dd(mdoc, tok, line, ppos, pos, buf));
 	case (MDOC_Os):
-		return(prologue_os(mdoc, tok, ppos, pos, buf));
+		return(prologue_os(mdoc, tok, line, ppos, pos, buf));
 	default:
 		break;
 	}

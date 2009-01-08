@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.27 2009/01/07 16:11:40 kristaps Exp $ */
+/* $Id: macro.c,v 1.28 2009/01/08 14:55:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -55,19 +55,20 @@ rewind_last(struct mdoc *mdoc, struct mdoc_node *to)
 {
 
 	assert(to);
-	while (mdoc->last != to) {
+	if (mdoc->last == to)
+		return(1);
+
+	do {
+		mdoc->last = mdoc->last->parent;
+		assert(mdoc->last);
 		if ( ! mdoc_valid_post(mdoc))
 			return(0);
 		if ( ! mdoc_action_post(mdoc))
 			return(0);
-		mdoc->last = mdoc->last->parent;
-		assert(mdoc->last);
-	}
+	} while (mdoc->last != to);
 
 	mdoc->next = MDOC_NEXT_SIBLING;
-	if ( ! mdoc_valid_post(mdoc))
-		return(0);
-	return(mdoc_action_post(mdoc));
+	return(1);
 }
 
 

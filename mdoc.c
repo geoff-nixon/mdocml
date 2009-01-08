@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.22 2009/01/07 16:11:40 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.23 2009/01/08 14:55:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -85,9 +85,9 @@ const	char *const __mdoc_argnames[MDOC_ARG_MAX] = {
 
 const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ NULL, 0 }, /* \" */
-	{ macro_prologue, MDOC_PROLOGUE }, /* Dd */
-	{ macro_prologue, MDOC_PROLOGUE }, /* Dt */
-	{ macro_prologue, MDOC_PROLOGUE }, /* Os */
+	{ macro_constant, MDOC_PROLOGUE }, /* Dd */
+	{ macro_constant, MDOC_PROLOGUE }, /* Dt */
+	{ macro_constant, MDOC_PROLOGUE }, /* Os */
 	{ macro_scoped, 0 }, /* Sh */
 	{ macro_scoped, 0 }, /* Ss */ 
 	{ macro_text, 0 }, /* Pp */ 

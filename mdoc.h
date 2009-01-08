@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.15 2009/01/05 17:57:08 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.16 2009/01/07 15:53:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -421,7 +421,7 @@ struct	mdoc_node {
 struct	mdoc_cb {
 	int	(*mdoc_err)(void *, int, int, enum mdoc_err);
 	int	(*mdoc_warn)(void *, int, int, enum mdoc_warn);
-	void	(*mdoc_msg)(void *, int, const char *);
+	void	(*mdoc_msg)(void *, int, int, const char *);
 };
 
 extern	const char *const *mdoc_macronames;

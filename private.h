@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.59 2009/01/07 16:11:40 kristaps Exp $ */
+/* $Id: private.h,v 1.60 2009/01/08 14:55:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -78,6 +78,7 @@ int		  mdoc_elem_alloc(struct mdoc *, int, int,
 			int, size_t, const struct mdoc_arg *);
 int		  mdoc_block_alloc(struct mdoc *, int, int, 
 			int, size_t, const struct mdoc_arg *);
+int		  mdoc_root_alloc(struct mdoc *);
 int		  mdoc_head_alloc(struct mdoc *, int, int, int);
 int		  mdoc_tail_alloc(struct mdoc *, int, int, int);
 int		  mdoc_body_alloc(struct mdoc *, int, int, int);

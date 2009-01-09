@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.8 2009/01/05 17:57:07 kristaps Exp $ */
+/* $Id: argv.c,v 1.9 2009/01/08 14:55:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -411,8 +411,8 @@ mdoc_argv(struct mdoc *mdoc, int line, int tok,
 		buf[(*pos)++] = 0;
 
 	if (MDOC_ARG_MAX == (v->arg = lookup(tok, argv))) {
-		(void)mdoc_perr(mdoc, line, i, ERR_SYNTAX_ARG);
-		return(ARGV_ERROR);
+		(void)mdoc_pwarn(mdoc, line, i, WARN_SYNTAX_ARGLIKE);
+		return(ARGV_WORD);
 	}
 
 	while (buf[*pos] && isspace(buf[*pos]))

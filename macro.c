@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.32 2009/01/12 12:52:21 kristaps Exp $ */
+/* $Id: macro.c,v 1.33 2009/01/12 16:39:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -68,6 +68,8 @@ rewind_last(struct mdoc *mdoc, struct mdoc_node *to)
 			return(0);
 		if ( ! mdoc_action_post(mdoc))
 			return(0);
+		mdoc_msg(mdoc, "rewound to %s", 
+				mdoc_macronames[mdoc->last->tok]);
 		return(1);
 	}
 
@@ -78,6 +80,8 @@ rewind_last(struct mdoc *mdoc, struct mdoc_node *to)
 			return(0);
 		if ( ! mdoc_action_post(mdoc))
 			return(0);
+		mdoc_msg(mdoc, "rewound to %s",
+				mdoc_macronames[mdoc->last->tok]);
 	} while (mdoc->last != to);
 
 	return(1);
@@ -109,11 +113,10 @@ rewind_body(struct mdoc *mdoc, int tok)
 
 	/* LINTED */
 	for (n = mdoc->last; n; n = n->parent) {
-		if (MDOC_BODY != n->type) 
-			continue;
-		if (tok == (t = n->tok))
+		t = n->tok;
+		if (MDOC_BODY == n->type && tok == t)
 			break;
-		if ( ! (MDOC_EXPLICIT & mdoc_macros[t].flags))
+		if (MDOC_NESTED & mdoc_macros[t].flags)
 			continue;
 		return(mdoc_verr(mdoc, n, ERR_SCOPE_BREAK));
 	}
@@ -133,11 +136,10 @@ rewind_head(struct mdoc *mdoc, int tok)
 
 	/* LINTED */
 	for (n = mdoc->last; n; n = n->parent) {
-		if (MDOC_HEAD != n->type) 
-			continue;
-		if (tok == (t = n->tok))
+		t = n->tok;
+		if (MDOC_HEAD == n->type && tok == t)
 			break;
-		if ( ! (MDOC_EXPLICIT & mdoc_macros[t].flags))
+		if (MDOC_NESTED & mdoc_macros[t].flags)
 			continue;
 		return(mdoc_verr(mdoc, n, ERR_SCOPE_BREAK));
 	}
@@ -157,9 +159,8 @@ rewind_expblock(struct mdoc *mdoc, int tok)
 
 	/* LINTED */
 	for ( ; n; n = n->parent) {
-		if (MDOC_BLOCK != n->type)
-			continue;
-		if (tok == (t = n->tok))
+		t = n->tok;
+		if (MDOC_BLOCK == n->type && tok == t)
 			break;
 		if (MDOC_NESTED & mdoc_macros[t].flags)
 			continue;
@@ -181,9 +182,8 @@ rewind_impblock(struct mdoc *mdoc, int tok)
 
 	/* LINTED */
 	for ( ; n; n = n->parent) {
-		if (MDOC_BLOCK != n->type) 
-			continue;
-		if (tok == (t = n->tok))
+		t = n->tok;
+		if (MDOC_BLOCK == n->type && tok == t)
 			break;
 		if ( ! (MDOC_EXPLICIT & mdoc_macros[t].flags))
 			continue;

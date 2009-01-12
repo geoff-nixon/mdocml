@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.39 2009/01/12 10:31:53 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.40 2009/01/12 12:52:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -238,12 +238,16 @@ print_node(const struct mdoc_node *n, int indent)
 
 	for (i = 0; i < (int)argc; i++) {
 		(void)printf(" -%s", mdoc_argnames[argv[i].arg]);
+		if (j > 0)
+			(void)printf(" [");
 		for (j = 0; j < (int)argv[i].sz; j++)
-			(void)printf(" \"%s\"", argv[i].value[j]);
+			(void)printf(" [%s]", argv[i].value[j]);
+		if (j > 0)
+			(void)printf(" ]");
 	}
 
 	for (i = 0; i < (int)sz; i++)
-		(void)printf(" \"%s\"", params[i]);
+		(void)printf(" [%s]", params[i]);
 
 	(void)printf(" %d:%d\n", n->line, n->pos);
 

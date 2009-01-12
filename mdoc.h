@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.18 2009/01/09 14:45:44 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.19 2009/01/12 10:31:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -221,6 +221,7 @@ enum 	mdoc_err {
 	ERR_ARGS_LE8,
 	ERR_ARGS_MANY,
 	ERR_SYNTAX_CHILDBAD,
+	ERR_SYNTAX_PARENTBAD,
 	ERR_SYNTAX_CHILDHEAD,
 	ERR_SYNTAX_CHILDBODY,
 	ERR_SYNTAX_EMPTYBODY,
@@ -249,7 +250,9 @@ enum	mdoc_warn {
 	WARN_SYNTAX_MACLIKE,
 	WARN_SYNTAX_ARGLIKE,
 	WARN_SYNTAX_QUOTED,
+	WARN_SYNTAX_EMPTYHEAD,
 	WARN_SYNTAX_EMPTYBODY,
+	WARN_SYNTAX_NOBODY,
 	WARN_IGN_AFTER_BLK,
 	WARN_IGN_BEFORE_BLK,
 	WARN_IGN_OBSOLETE,
@@ -379,27 +382,16 @@ struct	mdoc_text {
 };
 
 struct	mdoc_block {
-	int		  tok;
 	size_t		  argc;
 	struct mdoc_arg	 *argv;
-};
-
-struct	mdoc_head {
-	int		  tok;
-};
-
-struct	mdoc_tail {
-	int		  tok;
-};
-
-struct	mdoc_body {
-	int		  tok;
+	struct mdoc_node *head;
+	struct mdoc_node *body;
+	struct mdoc_node *tail;
 };
 
 struct	mdoc_elem {
 	size_t		  sz;
 	char		**args;
-	int		  tok;
 	size_t		  argc;
 	struct mdoc_arg	 *argv;
 };
@@ -407,9 +399,6 @@ struct	mdoc_elem {
 union	mdoc_data {
 	struct mdoc_text  text;
 	struct mdoc_elem  elem;
-	struct mdoc_body  body;
-	struct mdoc_head  head;
-	struct mdoc_tail  tail;
 	struct mdoc_block block;
 };
 
@@ -420,6 +409,7 @@ struct	mdoc_node {
 	struct mdoc_node *prev;
 	int		  line;
 	int		  pos;
+	int		  tok;
 	enum mdoc_type	  type;
 	union mdoc_data	  data;
 };

@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.9 2009/01/08 14:55:59 kristaps Exp $ */
+/* $Id: argv.c,v 1.10 2009/01/09 15:07:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -403,6 +403,9 @@ mdoc_argv(struct mdoc *mdoc, int line, int tok,
 
 	i = *pos;
 	argv = &buf[++(*pos)];
+
+	v->line = line;
+	v->pos = *pos;
 
 	while (buf[*pos] && ! isspace(buf[*pos]))
 		(*pos)++;

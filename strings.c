@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.4 2008/12/29 18:08:44 kristaps Exp $ */
+/* $Id: strings.c,v 1.5 2009/01/06 15:49:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -306,4 +306,31 @@ mdoc_atoatt(const char *p)
 		return(ATT_V4);
 	
 	return(ATT_DEFAULT);
+}
+
+
+char *
+mdoc_type2a(enum mdoc_type type)
+{
+	switch (type) {
+	case (MDOC_ROOT):
+		return("root");
+	case (MDOC_BLOCK):
+		return("block");
+	case (MDOC_HEAD):
+		return("block-head");
+	case (MDOC_BODY):
+		return("block-body");
+	case (MDOC_TAIL):
+		return("block-tail");
+	case (MDOC_ELEM):
+		return("elem");
+	case (MDOC_TEXT):
+		return("text");
+	default:
+		break;
+	}
+
+	abort();
+	/* NOTREACHED */
 }

@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.26 2009/01/12 16:39:57 kristaps Exp $ */
+/* $Id: validate.c,v 1.27 2009/01/12 17:26:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -79,8 +79,10 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ pres_prologue, NULL }, /* Os */
 	/* FIXME: preceding Pp. */ 
 	/* FIXME: NAME section internal ordering. */
+	/* FIXME: can only be a child of root. */
 	{ NULL, posts_sh }, /* Sh */ 
 	/* FIXME: preceding Pp. */
+	/* FIXME: can only be a child of Sh. */
 	{ NULL, posts_ss }, /* Ss */ 
 	/* FIXME: proceeding... */
 	{ NULL, posts_pp }, /* Pp */ 

@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.19 2009/01/12 10:31:53 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.20 2009/01/12 12:52:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -192,6 +192,8 @@
 #define	MDOC_Emphasis	 60
 #define	MDOC_Symbolic	 61
 #define	MDOC_ARG_MAX	 62
+
+/* FIXME: have these be generic groups. */
 
 enum 	mdoc_err {
 	ERR_SYNTAX_QUOTE, /* NOTUSED */
@@ -433,6 +435,8 @@ int	 	  mdoc_parseln(struct mdoc *, int, char *buf);
 const struct mdoc_node
 		 *mdoc_result(struct mdoc *);
 int		  mdoc_endparse(struct mdoc *);
+
+char		 *mdoc_type2a(enum mdoc_type);
 
 __END_DECLS
 

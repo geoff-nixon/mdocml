@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.61 2009/01/09 14:45:44 kristaps Exp $ */
+/* $Id: private.h,v 1.62 2009/01/12 16:39:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -52,8 +52,7 @@ struct	mdoc_macro {
 #define	MDOC_EXPLICIT	(1 << 2)
 #define	MDOC_QUOTABLE	(1 << 3)
 #define	MDOC_PROLOGUE	(1 << 4)
-#define	MDOC_NESTED	(1 << 5)
-#define	MDOC_TABSEP	(1 << 6)
+#define	MDOC_TABSEP	(1 << 5)
 };
 
 extern	const struct mdoc_macro *const mdoc_macros;
@@ -133,7 +132,7 @@ int		  macro_constant_scoped(MACRO_PROT_ARGS);
 int		  macro_constant_delimited(MACRO_PROT_ARGS);
 int		  macro_text(MACRO_PROT_ARGS);
 int		  macro_scoped(MACRO_PROT_ARGS);
-int		  macro_close_explicit(MACRO_PROT_ARGS);
+int		  macro_scoped_close(MACRO_PROT_ARGS);
 int		  macro_scoped_line(MACRO_PROT_ARGS);
 int		  macro_prologue(MACRO_PROT_ARGS);
 int		  macro_end(struct mdoc *);

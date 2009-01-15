@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.11 2009/01/12 10:31:53 kristaps Exp $ */
+/* $Id: argv.c,v 1.12 2009/01/12 16:39:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -173,6 +173,8 @@ lookup(int tok, const char *argv)
 			return(MDOC_Ragged);
 		else if (xstrcmp(argv, "unfilled"))
 			return(MDOC_Unfilled);
+		else if (xstrcmp(argv, "filled"))
+			return(MDOC_Filled);
 		else if (xstrcmp(argv, "literal"))
 			return(MDOC_Literal);
 		else if (xstrcmp(argv, "file"))

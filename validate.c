@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.27 2009/01/12 17:26:42 kristaps Exp $ */
+/* $Id: validate.c,v 1.28 2009/01/14 11:58:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -394,6 +394,8 @@ pre_bd(struct mdoc *mdoc, struct mdoc_node *node)
 		case (MDOC_Ragged):
 			/* FALLTHROUGH */
 		case (MDOC_Unfilled):
+			/* FALLTHROUGH */
+		case (MDOC_Filled):
 			/* FALLTHROUGH */
 		case (MDOC_Literal):
 			/* FALLTHROUGH */

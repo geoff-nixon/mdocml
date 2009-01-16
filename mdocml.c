@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.43 2009/01/15 15:59:19 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.44 2009/01/15 17:38:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -339,7 +339,7 @@ msg_err(void *arg, int line, int col, const char *msg)
 
 	p = (struct md_parse *)arg;
 
-	xfprintf(stderr, "%s:%d: error: %s (column %d)", 
+	xfprintf(stderr, "%s:%d: error: %s (column %d)\n", 
 			p->name, line, msg, col);
 	return(0);
 }
@@ -355,7 +355,7 @@ msg_msg(void *arg, int line, int col, const char *msg)
 	if (0 == p->dbg)
 		return;
 
-	xfprintf(stderr, "%s:%d: debug: %s (column %d)", 
+	xfprintf(stderr, "%s:%d: debug: %s (column %d)\n", 
 			p->name, line, msg, col);
 }
 

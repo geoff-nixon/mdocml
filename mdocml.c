@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.44 2009/01/15 17:38:57 kristaps Exp $ */
+/* $Id: mdocml.c,v 1.45 2009/01/16 11:50:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -194,6 +194,7 @@ buf_begin(struct md_parse *p)
 }
 
 
+/* TODO: remove this to a print-tree output filter. */
 static void
 print_node(const struct mdoc_node *n, int indent)
 {

@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.63 2009/01/14 11:58:24 kristaps Exp $ */
+/* $Id: private.h,v 1.64 2009/01/15 17:38:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -40,6 +40,10 @@ struct	mdoc {
 	enum mdoc_sec	  sec_last;
 };
 
+
+/* FIXME: it's 9 (this isn't used properly). */
+
+#define	MDOC_LINEARG_MAX 12
 
 #define	MACRO_PROT_ARGS	struct mdoc *mdoc, int tok, int line, \
 			int ppos, int *pos, char *buf

@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.5 2009/01/06 15:49:44 kristaps Exp $ */
+/* $Id: strings.c,v 1.6 2009/01/14 11:58:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -36,8 +36,6 @@ mdoc_iscdelim(char p)
 {
 
 	switch (p) {
-	case('{'):
-		/* FALLTHROUGH */
 	case('.'):
 		/* FALLTHROUGH */
 	case(','):
@@ -57,6 +55,8 @@ mdoc_iscdelim(char p)
 	case('['):
 		/* FALLTHROUGH */
 	case(']'):
+		/* FALLTHROUGH */
+	case('{'):
 		/* FALLTHROUGH */
 	case('}'):
 		return(1);

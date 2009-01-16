@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.37 2009/01/15 17:38:57 kristaps Exp $ */
+/* $Id: macro.c,v 1.38 2009/01/16 11:50:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -950,6 +950,8 @@ macro_constant_delimited(MACRO_PROT_ARGS)
 		/* FALLTHROUGH */
 	case (MDOC_Ns):
 		/* FALLTHROUGH */
+	case (MDOC_Pf):
+		/* FALLTHROUGH */
 	case (MDOC_Ux):
 		/* FALLTHROUGH */
 	case (MDOC_St):
@@ -1044,8 +1046,6 @@ macro_constant(MACRO_PROT_ARGS)
 	struct mdoc_arg	 argv[MDOC_LINEARG_MAX];
 	char		*p;
 
-	/* FIXME: parsing macros! */
-
 	fl = 0;
 	if (MDOC_QUOTABLE & mdoc_macros[tok].flags)
 		fl = ARGS_QUOTED;
@@ -1083,6 +1083,15 @@ macro_constant(MACRO_PROT_ARGS)
 			return(0);
 		if (ARGS_EOLN == c)
 			break;
+
+		if (-1 == (c = lookup(mdoc, line, lastarg, tok, p)))
+			return(0);
+		else if (MDOC_MAX != c) {
+			if ( ! rewind_elem(mdoc, tok))
+				return(0);
+			return(mdoc_macro(mdoc, c, line, 
+						lastarg, pos, buf));
+		}
 
 		if ( ! mdoc_word_alloc(mdoc, line, lastarg, p))
 			return(0);

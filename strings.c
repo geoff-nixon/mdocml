@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.6 2009/01/14 11:58:24 kristaps Exp $ */
+/* $Id: strings.c,v 1.7 2009/01/16 11:50:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -135,9 +135,9 @@ mdoc_atotime(const char *p)
 
 	(void)memset(&tm, 0, sizeof(struct tm));
 
-	if (strptime(p, "%b %d %Y", &tm))
+	if (0 == strptime(p, "%b %d %Y", &tm))
 		return(mktime(&tm));
-	if (strptime(p, "%b %d, %Y", &tm))
+	if (0 == strptime(p, "%b %d, %Y", &tm))
 		return(mktime(&tm));
 
 	return(0);
@@ -228,6 +228,8 @@ mdoc_atoarch(const char *p)
 		return(ARCH_amiga);
 	else if (0 == strcmp(p, "arc"))
 		return(ARCH_arc);
+	else if (0 == strcmp(p, "arm"))
+		return(ARCH_arm);
 	else if (0 == strcmp(p, "armish"))
 		return(ARCH_armish);
 	else if (0 == strcmp(p, "aviion"))

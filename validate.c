@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.30 2009/01/15 17:38:58 kristaps Exp $ */
+/* $Id: validate.c,v 1.31 2009/01/16 11:50:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -306,7 +306,8 @@ pre_display(struct mdoc *mdoc, struct mdoc_node *node)
 	if (MDOC_BLOCK != node->type)
 		return(1);
 
-	for (n = mdoc->last; n; n = n->parent) 
+	assert(mdoc->last);
+	for (n = mdoc->last->parent; n; n = n->parent) 
 		if (MDOC_BLOCK == n->type)
 			if (MDOC_Bd == n->tok)
 				break;

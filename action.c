@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.7 2009/01/12 12:52:21 kristaps Exp $ */
+/* $Id: action.c,v 1.8 2009/01/16 11:50:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -292,11 +292,18 @@ post_dd(struct mdoc *mdoc)
 
 		if ( ! xstrlcat(date, n->data.text.string, sz))
 			return(mdoc_nerr(mdoc, n, "badly-formed manual date parameter"));
-		if ( ! xstrlcat(date, " ", sz))
+		if (n->next && ! xstrlcat(date, " ", sz))
 			return(mdoc_nerr(mdoc, n, "badly-formed manual date parameter"));
 	}
 
 	if (mdoc->meta.date && NULL == n) {
+		mdoc_msg(mdoc, "parsed time: %u since epoch", 
+				mdoc->meta.date);
+		return(1);
+	} else if (n)
+		return(mdoc_err(mdoc, "badly-formed manual date"));
+
+	if ((mdoc->meta.date = mdoc_atotime(date))) {
 		mdoc_msg(mdoc, "parsed time: %u since epoch", 
 				mdoc->meta.date);
 		return(1);

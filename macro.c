@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.38 2009/01/16 11:50:54 kristaps Exp $ */
+/* $Id: macro.c,v 1.39 2009/01/16 14:04:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -577,7 +577,7 @@ macro_text(MACRO_PROT_ARGS)
 		return(mdoc_perr(mdoc, line, ppos, "too many arguments"));
 	}
 
-	c = mdoc_elem_alloc(mdoc, line, la, tok, argc, argv);
+	c = mdoc_elem_alloc(mdoc, line, ppos, tok, argc, argv);
 
 	if (0 == c) {
 		mdoc_argv_free(argc, argv);
@@ -629,7 +629,7 @@ macro_text(MACRO_PROT_ARGS)
 			lastpunct = 1;
 		} else if (lastpunct) {
 			c = mdoc_elem_alloc(mdoc, line, 
-					la, tok, argc, argv);
+					ppos, tok, argc, argv);
 			if (0 == c) {
 				mdoc_argv_free(argc, argv);
 				return(0);
@@ -976,7 +976,7 @@ macro_constant_delimited(MACRO_PROT_ARGS)
 		return(0);
 	}
 
-	c = mdoc_elem_alloc(mdoc, line, lastarg, tok, argc, argv);
+	c = mdoc_elem_alloc(mdoc, line, ppos, tok, argc, argv);
 	mdoc_argv_free(argc, argv);
 
 	if (0 == c)

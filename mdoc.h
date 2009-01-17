@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.23 2009/01/16 12:23:25 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.24 2009/01/17 14:04:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -346,10 +346,9 @@ struct	mdoc_meta {
 	enum mdoc_vol	  vol;
 	enum mdoc_arch	  arch;
 	time_t		  date;
-#define	META_TITLE_SZ	 (64)
-	char		  title[META_TITLE_SZ];
-#define	META_OS_SZ	 (64)
-	char		  os[META_OS_SZ];
+	char		 *title;
+	char		 *os;
+	char		 *name;
 };
 
 struct	mdoc_text {

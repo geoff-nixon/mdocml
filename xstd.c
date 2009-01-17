@@ -1,4 +1,4 @@
-/* $Id: xstd.c,v 1.1 2008/12/23 05:30:49 kristaps Exp $ */
+/* $Id: xstd.c,v 1.2 2008/12/29 18:08:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -16,6 +16,7 @@
  * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  * PERFORMANCE OF THIS SOFTWARE.
  */
+#include <assert.h>
 #include <err.h>
 #include <stdlib.h>
 #include <string.h>
@@ -73,6 +74,30 @@ xstrdup(const char *p)
 		err(EXIT_FAILURE, "strdup");
 	return(pp);
 }
+
+
+int
+xstrlcats(char *buf, const struct mdoc_node *n, size_t sz)
+{
+	char		 *p;
+
+	assert(sz > 0);
+	assert(buf);
+	*buf = 0;
+
+	for ( ; n; n = n->next) {
+		assert(MDOC_TEXT == n->type);
+		p = n->data.text.string;
+		if ( ! xstrlcat(buf, p, sz))
+			return(0);
+		if (n->next && ! xstrlcat(buf, " ", sz))
+			return(0);
+	}
+
+	return(1);
+}
+
+
 
 
 #ifdef __linux__

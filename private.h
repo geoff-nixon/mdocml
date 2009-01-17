@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.65 2009/01/16 12:23:25 kristaps Exp $ */
+/* $Id: private.h,v 1.66 2009/01/17 14:04:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -122,7 +122,7 @@ int		  mdoc_tokhash_find(const void *, const char *);
 void		  mdoc_tokhash_free(void *);
 int		  mdoc_isdelim(const char *);
 int		  mdoc_iscdelim(char);
-enum	mdoc_sec  mdoc_atosec(size_t, const char **);
+enum	mdoc_sec  mdoc_atosec(const char *);
 enum	mdoc_msec mdoc_atomsec(const char *);
 enum	mdoc_vol  mdoc_atovol(const char *);
 enum	mdoc_arch mdoc_atoarch(const char *);
@@ -154,6 +154,7 @@ int		  mdoc_args(struct mdoc *, int,
 #define	ARGS_DELIM	(1 << 1)
 #define	ARGS_TABSEP	(1 << 2)
 
+int		  xstrlcats(char *, const struct mdoc_node *, size_t);
 int	  	  xstrlcat(char *, const char *, size_t);
 int	  	  xstrlcpy(char *, const char *, size_t);
 int	  	  xstrcmp(const char *, const char *);

@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.22 2009/01/15 17:38:57 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.23 2009/01/16 12:23:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -419,9 +419,6 @@ const struct mdoc_node *mdoc_result(struct mdoc *);
 
 /* Signal end of parse sequence (boolean retval). */
 int		  mdoc_endparse(struct mdoc *);
-
-/* Node type to static string. */
-char		 *mdoc_type2a(enum mdoc_type);
 
 __END_DECLS
 

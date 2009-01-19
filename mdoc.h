@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.25 2009/01/17 16:15:27 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.26 2009/01/19 17:02:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -416,8 +416,11 @@ struct	mdoc	 *mdoc_alloc(void *data, const struct mdoc_cb *);
 /* Parse a single line (boolean retval). */
 int	 	  mdoc_parseln(struct mdoc *, int, char *buf);
 
-/* Get parse result or NULL. */
-const struct mdoc_node *mdoc_result(struct mdoc *);
+/* Get result first node. */
+const struct mdoc_node *mdoc_node(struct mdoc *);
+
+/* Get result meta-information. */
+const struct mdoc_meta *mdoc_meta(struct mdoc *);
 
 /* Signal end of parse sequence (boolean retval). */
 int		  mdoc_endparse(struct mdoc *);

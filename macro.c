@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.41 2009/01/17 20:10:36 kristaps Exp $ */
+/* $Id: macro.c,v 1.42 2009/01/19 17:02:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -961,9 +961,10 @@ macro_constant_delimited(MACRO_PROT_ARGS)
 int
 macro_constant(MACRO_PROT_ARGS)
 {
-	int		 c, lastarg, argc, fl;
-	struct mdoc_arg	 argv[MDOC_LINEARG_MAX];
-	char		*p;
+	int		  c, lastarg, argc, fl;
+	struct mdoc_arg	  argv[MDOC_LINEARG_MAX];
+	char		 *p;
+	struct mdoc_node *n;
 
 	fl = 0;
 	if (MDOC_QUOTABLE & mdoc_macros[tok].flags)
@@ -1019,7 +1020,31 @@ macro_constant(MACRO_PROT_ARGS)
 		mdoc->next = MDOC_NEXT_SIBLING;
 	}
 
-	return(rewind_elem(mdoc, tok));
+	if ( ! rewind_elem(mdoc, tok))
+		return(0);
+	if ( ! (MDOC_NOKEEP & mdoc_macros[tok].flags))
+		return(1);
+
+	assert(mdoc->last->tok == tok);
+	if (mdoc->last->parent->child == mdoc->last)
+		mdoc->last->parent->child = mdoc->last->prev;
+	if (mdoc->last->prev)
+		mdoc->last->prev->next = NULL;
+
+	n = mdoc->last;
+	assert(NULL == mdoc->last->next);
+
+	if (mdoc->last->prev) {
+		mdoc->last = mdoc->last->prev;
+		mdoc->next = MDOC_NEXT_SIBLING;
+	} else {
+		mdoc->last = mdoc->last->parent;
+		mdoc->next = MDOC_NEXT_CHILD;
+	}
+
+	mdoc_node_freelist(n);
+
+	return(1);
 }
 
 

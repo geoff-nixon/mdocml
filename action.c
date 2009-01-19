@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.10 2009/01/17 16:15:27 kristaps Exp $ */
+/* $Id: action.c,v 1.11 2009/01/17 16:47:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -297,6 +297,10 @@ post_dd(struct mdoc *mdoc)
 int
 mdoc_action_post(struct mdoc *mdoc)
 {
+
+	if (MDOC_ACTED & mdoc->last->flags)
+		return(1);
+	mdoc->last->flags |= MDOC_ACTED;
 
 	if (MDOC_TEXT == mdoc->last->type)
 		return(1);

@@ -1,4 +1,4 @@
-/* $Id: mdocml.c,v 1.47 2009/01/16 15:58:50 kristaps Exp $ */
+	/* $Id: mdocml.c,v 1.48 2009/01/17 14:04:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -232,7 +232,7 @@ parse_leave(struct md_parse *p, int code)
 
 	if ( ! mdoc_endparse(p->mdoc))
 		code = 0;
-	if (p->print && (n = mdoc_result(p->mdoc)))
+	if (p->print && (n = mdoc_node(p->mdoc)))
 		(*p->print)(n);
 
 	mdoc_free(p->mdoc);

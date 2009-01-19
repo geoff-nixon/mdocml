@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.36 2009/01/19 17:02:58 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.37 2009/01/19 17:51:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -228,19 +228,6 @@ mdoc_meta(struct mdoc *mdoc)
 
 
 void
-mdoc_meta_free(struct mdoc *mdoc)
-{
-
-	if (mdoc->meta.title)
-		free(mdoc->meta.title);
-	if (mdoc->meta.os)
-		free(mdoc->meta.os);
-	if (mdoc->meta.name)
-		free(mdoc->meta.name);
-}
-
-
-void
 mdoc_free(struct mdoc *mdoc)
 {
 
@@ -248,7 +235,13 @@ mdoc_free(struct mdoc *mdoc)
 		mdoc_node_freelist(mdoc->first);
 	if (mdoc->htab)
 		mdoc_tokhash_free(mdoc->htab);
-	
+	if (mdoc->meta.title)
+		free(mdoc->meta.title);
+	if (mdoc->meta.os)
+		free(mdoc->meta.os);
+	if (mdoc->meta.name)
+		free(mdoc->meta.name);
+
 	free(mdoc);
 }
 

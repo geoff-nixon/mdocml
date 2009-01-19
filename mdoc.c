@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.34 2009/01/17 16:15:27 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.35 2009/01/17 20:10:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -725,6 +725,7 @@ argdup(size_t argsz, const struct mdoc_arg *args)
 }
 
 
+/* FIXME: deprecate. */
 char *
 mdoc_node2a(struct mdoc_node *node)
 {
@@ -741,6 +742,7 @@ mdoc_node2a(struct mdoc_node *node)
 		(void)xstrlcat(buf, node->data.text.string, 64);
 	else
 		(void)xstrlcat(buf, mdoc_macronames[node->tok], 64);
+	(void)xstrlcat(buf, "'", 64);
 
 	return(buf);
 }

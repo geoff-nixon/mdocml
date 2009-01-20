@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.44 2009/01/20 12:51:28 kristaps Exp $ */
+/* $Id: macro.c,v 1.45 2009/01/20 13:05:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1213,8 +1213,7 @@ macro_end(struct mdoc *mdoc)
 			continue;
 		if ( ! (MDOC_EXPLICIT & mdoc_macros[n->tok].flags))
 			continue;
-		mdoc_nerr(mdoc, n, "macro scope still open on exit");
-		return(0);
+		return(mdoc_nerr(mdoc, n, "macro scope still open on exit"));
 	}
 
 	return(rewind_last(mdoc, mdoc->first));

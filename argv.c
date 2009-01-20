@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.18 2009/01/20 12:51:28 kristaps Exp $ */
+/* $Id: argv.c,v 1.19 2009/01/20 13:05:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -25,9 +25,14 @@
 
 #include "private.h"
 
+/*
+ * Parse arguments and parameters of macros.  Arguments follow the
+ * syntax of `-arg [val [valN...]]', while parameters are free-form text
+ * following arguments (if any).  This file must correctly handle the
+ * strange punctuation rules dictated by groff.
+ */
+
 /* FIXME: .It called with -column and quoted arguments. */
-/* FIXME: if arguments are quoted, they should not be later parsed for
- * macros. */
 
 static	int		 lookup(int, const char *);
 static	int		 parse(struct mdoc *, int,

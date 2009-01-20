@@ -1,4 +1,4 @@
-/* $Id: hash.c,v 1.3 2008/12/23 05:30:49 kristaps Exp $ */
+/* $Id: hash.c,v 1.4 2009/01/05 17:57:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -24,6 +24,12 @@
 #include <string.h>
 
 #include "private.h"
+
+/*
+ * Routines for the perfect-hash hashtable used by the parser to look up
+ * tokens by their string-ified names (`.Fl' -> MDOC_Fl).  The
+ * allocation penalty for this is 27 * 26 * sizeof(ptr).
+ */
 
 
 void

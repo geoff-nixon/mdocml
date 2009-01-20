@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.70 2009/01/20 12:51:28 kristaps Exp $ */
+/* $Id: private.h,v 1.71 2009/01/20 13:05:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -60,9 +60,7 @@ struct	mdoc_macro {
 #define	MDOC_CALLABLE	 (1 << 0)
 #define	MDOC_PARSED	 (1 << 1)
 #define	MDOC_EXPLICIT	 (1 << 2)
-#define	MDOC_QUOTABLE	 (1 << 3)
-#define	MDOC_PROLOGUE	 (1 << 4)
-#define	MDOC_TABSEP	 (1 << 5)
+#define	MDOC_PROLOGUE	 (1 << 3)
 };
 
 #define	mdoc_nwarn(mdoc, node, type, fmt, ...) \
@@ -158,10 +156,6 @@ int		  mdoc_args(struct mdoc *, int,
 #define	ARGS_WORD	(1)
 #define	ARGS_PUNCT	(2)
 #define	ARGS_QWORD	(3)
-
-#define	ARGS_QUOTED	(1 << 0)
-#define	ARGS_DELIM	(1 << 1)
-#define	ARGS_TABSEP	(1 << 2)
 
 int		  xstrlcats(char *, const struct mdoc_node *, size_t);
 int	  	  xstrlcat(char *, const char *, size_t);

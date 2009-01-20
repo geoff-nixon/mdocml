@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.17 2009/01/19 17:02:58 kristaps Exp $ */
+/* $Id: argv.c,v 1.18 2009/01/20 12:51:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -148,18 +148,18 @@ mdoc_args(struct mdoc *mdoc, int line, int *pos, char *buf, int fl, char **v)
 
 	buf[(*pos)++] = 0;
 	if (0 == buf[*pos])
-		return(ARGS_WORD);
+		return(ARGS_QWORD);
 
 	while (buf[*pos] && isspace(buf[*pos]))
 		(*pos)++;
 
 	if (buf[*pos])
-		return(ARGS_WORD);
+		return(ARGS_QWORD);
 
 	if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_COMPAT, "whitespace at end-of-line"))
 		return(ARGS_ERROR);
 
-	return(ARGS_WORD);
+	return(ARGS_QWORD);
 }
 
 

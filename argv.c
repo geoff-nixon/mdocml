@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.21 2009/01/20 13:49:36 kristaps Exp $ */
+/* $Id: argv.c,v 1.22 2009/01/20 20:56:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -169,7 +169,6 @@ mdoc_args(struct mdoc *mdoc, int line,
 	if (MDOC_It == tok) {
 		n = mdoc->last->parent;
 		/* FIXME: scan for ARGS_TABSEP. */
-
 	}
 
 	if (0 == buf[*pos])

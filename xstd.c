@@ -1,4 +1,4 @@
-/* $Id: xstd.c,v 1.3 2009/01/17 16:15:27 kristaps Exp $ */
+/* $Id: xstd.c,v 1.4 2009/01/20 13:44:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -32,6 +32,14 @@
 extern	size_t		 strlcat(char *, const char *, size_t);
 extern	size_t		 strlcpy(char *, const char *, size_t);
 #endif
+
+
+int
+xstrncmp(const char *p1, const char *p2, size_t sz)
+{
+
+	return(0 == strncmp(p1, p2, sz));
+}
 
 int
 xstrcmp(const char *p1, const char *p2)

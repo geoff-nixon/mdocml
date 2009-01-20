@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.9 2009/01/17 16:15:27 kristaps Exp $ */
+/* $Id: strings.c,v 1.10 2009/01/20 13:49:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -124,12 +124,18 @@ time_t
 mdoc_atotime(const char *p)
 {
 	struct tm	 tm;
+	char		*pp;
 
 	(void)memset(&tm, 0, sizeof(struct tm));
 
-	if (0 == strptime(p, "%b %d %Y", &tm))
+	if (xstrcmp(p, "$Mdocdate$"))
+		return(time(NULL));
+	if ((pp = strptime(p, "$Mdocdate: %b %d %Y $", &tm)) && 0 == *pp)
 		return(mktime(&tm));
-	if (0 == strptime(p, "%b %d, %Y", &tm))
+	/* XXX - this matches "June 1999", which is wrong. */
+	if ((pp = strptime(p, "%b %d %Y", &tm)) && 0 == *pp)
+		return(mktime(&tm));
+	if ((pp = strptime(p, "%b %d, %Y", &tm)) && 0 == *pp)
 		return(mktime(&tm));
 
 	return(0);

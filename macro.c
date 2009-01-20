@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.45 2009/01/20 13:05:28 kristaps Exp $ */
+/* $Id: macro.c,v 1.46 2009/01/20 15:06:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -713,12 +713,16 @@ macro_scoped(MACRO_PROT_ARGS)
 
 	assert ( ! (MDOC_CALLABLE & mdoc_macros[tok].flags));
 
+	/* First rewind extant implicit scope. */
+
 	if ( ! (MDOC_EXPLICIT & mdoc_macros[tok].flags)) {
 		if ( ! rewind_subblock(MDOC_BODY, mdoc, tok, line, ppos))
 			return(0);
 		if ( ! rewind_impblock(mdoc, tok, line, ppos))
 			return(0);
 	}
+
+	/* Parse arguments. */
 
 	for (argc = 0; argc < MDOC_LINEARG_MAX; argc++) {
 		lastarg = *pos;

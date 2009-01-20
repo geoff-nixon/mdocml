@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.38 2009/01/19 17:53:54 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.39 2009/01/20 12:51:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -432,6 +432,7 @@ mdoc_node_append(struct mdoc *mdoc, struct mdoc_node *p)
 		break;
 	}
 
+	/* This sort-of works (re-opening of text macros...). */
 	if (mdoc->linetok > MDOC_LINEARG_SOFTMAX) 
 		if ( ! mdoc_nwarn(mdoc, p, WARN_COMPAT, 
 					"suggested %d tokens per line exceeded (has %d)",

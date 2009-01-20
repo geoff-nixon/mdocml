@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.16 2009/01/17 20:10:36 kristaps Exp $ */
+/* $Id: argv.c,v 1.17 2009/01/19 17:02:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -25,8 +25,9 @@
 
 #include "private.h"
 
-
 /* FIXME: .It called with -column and quoted arguments. */
+/* FIXME: if arguments are quoted, they should not be later parsed for
+ * macros. */
 
 static	int		 lookup(int, const char *);
 static	int		 parse(struct mdoc *, int,

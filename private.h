@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.73 2009/01/20 22:55:46 kristaps Exp $ */
+/* $Id: private.h,v 1.74 2009/01/21 11:35:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -154,6 +154,7 @@ int		  mdoc_args(struct mdoc *, int,
 #define	ARGS_WORD	(1)
 #define	ARGS_PUNCT	(2)
 #define	ARGS_QWORD	(3)
+#define	ARGS_PHRASE	(4)
 
 int		  xstrlcats(char *, const struct mdoc_node *, size_t);
 int	  	  xstrlcat(char *, const char *, size_t);

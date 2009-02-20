@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.74 2009/01/21 11:35:26 kristaps Exp $ */
+/* $Id: private.h,v 1.75 2009/01/22 14:56:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -131,6 +131,11 @@ enum	mdoc_vol  mdoc_atovol(const char *);
 enum	mdoc_arch mdoc_atoarch(const char *);
 enum	mdoc_att  mdoc_atoatt(const char *);
 time_t		  mdoc_atotime(const char *);
+
+/* FIXME: these three are only for output channels. */
+char 		 *mdoc_arch2a(enum mdoc_arch);
+char 		 *mdoc_vol2a(enum mdoc_vol);
+char 		 *mdoc_msec2a(enum mdoc_msec);
 
 char		 *mdoc_type2a(enum mdoc_type);
 char		 *mdoc_node2a(struct mdoc_node *);

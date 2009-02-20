@@ -1,4 +1,4 @@
-/* $Id: tree.c,v 1.2 2009/01/17 14:04:25 kristaps Exp $ */
+/* $Id: tree.c,v 1.4 2009/02/20 11:04:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -122,8 +122,10 @@ treeprint_r(const struct mdoc_node *n, int indent)
 }
 
 
+/* ARGSUSED */
 int
-treeprint(const struct mdoc_node *node)
+treeprint(const struct mdoc_node *node,
+		const struct mdoc_meta *meta)
 {
 
 	treeprint_r(node, 0);

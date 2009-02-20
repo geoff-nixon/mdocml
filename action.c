@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.15 2009/01/20 22:55:46 kristaps Exp $ */
+/* $Id: action.c,v 1.16 2009/01/21 11:35:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -243,7 +243,7 @@ post_dt(struct mdoc *mdoc)
 	}
 
 	if (NULL == mdoc->meta.title)
-		mdoc->meta.title = xstrdup("untitled");
+		mdoc->meta.title = xstrdup("UNTITLED");
 
 	mdoc_msg(mdoc, "title: %s", mdoc->meta.title);
 

@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.28 2009/01/20 13:44:05 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.29 2009/02/20 07:43:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -420,6 +420,14 @@ const struct mdoc_meta *mdoc_meta(struct mdoc *);
 
 /* Signal end of parse sequence (boolean retval). */
 int		  mdoc_endparse(struct mdoc *);
+
+const char 	 *mdoc_arch2a(enum mdoc_arch);
+
+const char 	 *mdoc_vol2a(enum mdoc_vol);
+
+const char 	 *mdoc_msec2a(enum mdoc_msec);
+
+int		  mdoc_isdelim(const char *);
 
 __END_DECLS
 

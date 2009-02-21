@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.48 2009/02/21 14:56:58 kristaps Exp $ */
+/* $Id: validate.c,v 1.49 2009/02/21 15:34:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -35,7 +35,7 @@ typedef	int	(*v_post)(struct mdoc *);
 /* FIXME: some sections should only occur in specific msecs. */
 /* FIXME: ignoring Pp. */
 /* FIXME: math symbols. */
-/* FIXME: valid character-escape checks. */
+/* FIXME: valid character-escape checks!!!! */
 /* FIXME: make sure required sections are included (NAME, ...). */
 
 struct	valids {

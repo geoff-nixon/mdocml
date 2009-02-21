@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.4 2009/02/21 15:34:46 kristaps Exp $ */
+/* $Id: term.h,v 1.1 2009/02/21 19:05:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -42,15 +42,20 @@ struct	termact {
 	int		(*pre)(struct termp *,
 				const struct mdoc_meta *,
 				const struct mdoc_node *);
-	int		(*post)(struct termp *,
+	void		(*post)(struct termp *,
 				const struct mdoc_meta *,
 				const struct mdoc_node *);
 };
+
+void			  termprint(const struct mdoc_node *,
+				const struct mdoc_meta *);
 
 void			  newln(struct termp *);
 void			  vspace(struct termp *);
 void			  word(struct termp *, const char *);
 void			  flushln(struct termp *);
+void			  transcode(struct termp *, 
+				const char *, size_t);
 
 const	struct termact 	 *termacts;
 

@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.47 2009/01/21 17:56:32 kristaps Exp $ */
+/* $Id: validate.c,v 1.48 2009/02/21 14:56:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -709,6 +709,7 @@ pre_it(struct mdoc *mdoc, struct mdoc_node *node)
 {
 
 	/* TODO: -width attribute must be specified for -tag. */
+	/* TODO: children too big for -width? */
 
 	if (MDOC_BLOCK != node->type)
 		return(1);

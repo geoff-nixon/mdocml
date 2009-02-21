@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.16 2009/01/21 11:35:26 kristaps Exp $ */
+/* $Id: action.c,v 1.17 2009/02/20 11:04:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -216,6 +216,7 @@ post_dt(struct mdoc *mdoc)
 
 	assert(NULL == mdoc->meta.title);
 
+	/* LINTED */
 	for (i = 0, n = mdoc->last->child; n; n = n->next, i++) {
 		assert(MDOC_TEXT == n->type);
 		p = n->data.text.string;

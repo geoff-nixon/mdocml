@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.11 2009/01/20 22:55:46 kristaps Exp $ */
+/* $Id: strings.c,v 1.12 2009/02/20 23:35:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -336,7 +336,7 @@ mdoc_type2a(enum mdoc_type type)
 }
 
 
-char *
+const char *
 mdoc_arch2a(enum mdoc_arch arch)
 {
 
@@ -404,7 +404,7 @@ mdoc_arch2a(enum mdoc_arch arch)
 }
 
 
-char *
+const char *
 mdoc_vol2a(enum mdoc_vol vol)
 {
 
@@ -438,7 +438,7 @@ mdoc_vol2a(enum mdoc_vol vol)
 }
 
 
-char *
+const char *
 mdoc_msec2a(enum mdoc_msec msec)
 {
 

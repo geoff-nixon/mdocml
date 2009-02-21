@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.75 2009/01/22 14:56:21 kristaps Exp $ */
+/* $Id: private.h,v 1.76 2009/02/20 23:35:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -123,7 +123,6 @@ void		  mdoc_sibling(struct mdoc *, int, struct mdoc_node **,
 void		 *mdoc_tokhash_alloc(void);
 int		  mdoc_tokhash_find(const void *, const char *);
 void		  mdoc_tokhash_free(void *);
-int		  mdoc_isdelim(const char *);
 int		  mdoc_iscdelim(char);
 enum	mdoc_sec  mdoc_atosec(const char *);
 enum	mdoc_msec mdoc_atomsec(const char *);
@@ -131,11 +130,6 @@ enum	mdoc_vol  mdoc_atovol(const char *);
 enum	mdoc_arch mdoc_atoarch(const char *);
 enum	mdoc_att  mdoc_atoatt(const char *);
 time_t		  mdoc_atotime(const char *);
-
-/* FIXME: these three are only for output channels. */
-char 		 *mdoc_arch2a(enum mdoc_arch);
-char 		 *mdoc_vol2a(enum mdoc_vol);
-char 		 *mdoc_msec2a(enum mdoc_msec);
 
 char		 *mdoc_type2a(enum mdoc_type);
 char		 *mdoc_node2a(struct mdoc_node *);

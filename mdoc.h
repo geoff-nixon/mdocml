@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.30 2009/02/21 21:00:06 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.31 2009/02/22 14:31:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -413,10 +413,10 @@ struct	mdoc	 *mdoc_alloc(void *data, const struct mdoc_cb *);
 int	 	  mdoc_parseln(struct mdoc *, int, char *buf);
 
 /* Get result first node (after mdoc_endparse!). */
-const struct mdoc_node *mdoc_node(struct mdoc *);
+const struct mdoc_node *mdoc_node(const struct mdoc *);
 
 /* Get result meta-information (after mdoc_endparse!). */
-const struct mdoc_meta *mdoc_meta(struct mdoc *);
+const struct mdoc_meta *mdoc_meta(const struct mdoc *);
 
 /* Signal end of parse sequence (boolean retval). */
 int		  mdoc_endparse(struct mdoc *);

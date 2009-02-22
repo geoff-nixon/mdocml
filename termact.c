@@ -1,4 +1,4 @@
-/* $Id: termact.c,v 1.1 2009/02/21 19:05:28 kristaps Exp $ */
+/* $Id: termact.c,v 1.2 2009/02/21 21:00:06 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -618,7 +618,7 @@ termp_aq_pre(DECL_ARGS)
 
 	if (MDOC_BODY != node->type)
 		return(1);
-	word(p, "\\<");
+	word(p, "<");
 	p->flags |= TERMP_NOSPACE;
 	return(1);
 }
@@ -632,7 +632,7 @@ termp_aq_post(DECL_ARGS)
 	if (MDOC_BODY != node->type)
 		return;
 	p->flags |= TERMP_NOSPACE;
-	word(p, "\\>");
+	word(p, ">");
 }
 
 

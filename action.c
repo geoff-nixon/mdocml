@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.17 2009/02/20 11:04:23 kristaps Exp $ */
+/* $Id: action.c,v 1.18 2009/02/21 21:00:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -194,6 +194,7 @@ post_sh(struct mdoc *mdoc)
 	if (xstrlcats(buf, mdoc->last->child, 64)) {
 		if (SEC_CUSTOM != (sec = mdoc_atosec(buf)))
 			mdoc->lastnamed = sec;
+		mdoc->lastsec = sec;
 		return(1);
 	}
 

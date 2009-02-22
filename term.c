@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.7 2009/02/22 14:31:08 kristaps Exp $ */
+/* $Id: term.c,v 1.8 2009/02/22 15:50:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -319,8 +319,11 @@ word(struct termp *p, const char *word)
 	len = strlen(word);
 	assert(len > 0);
 
-	if (mdoc_isdelim(word))
-		p->flags |= TERMP_NOSPACE;
+	if (mdoc_isdelim(word)) {
+		if ( ! (p->flags & TERMP_IGNDELIM))
+			p->flags |= TERMP_NOSPACE;
+		p->flags &= ~TERMP_IGNDELIM;
+	}
 
 	/* LINTED */
 	for (j = i = 0; i < len; i++) {

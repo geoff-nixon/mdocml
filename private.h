@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.76 2009/02/20 23:35:36 kristaps Exp $ */
+/* $Id: private.h,v 1.77 2009/02/21 21:00:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -38,6 +38,7 @@ struct	mdoc {
 	struct mdoc_node *first;
 	struct mdoc_meta  meta;
 	enum mdoc_sec	  lastnamed;
+	enum mdoc_sec	  lastsec;
 };
 
 

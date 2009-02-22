@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.29 2009/02/20 07:43:15 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.30 2009/02/21 21:00:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -382,7 +382,7 @@ struct	mdoc_node {
 #define	MDOC_ACTED	 (1 << 1)
 	enum mdoc_type	  type;
 	union mdoc_data	  data;
-	/* FIXME: have an enum mdoc_sec. */
+	enum mdoc_sec	  sec;
 };
 
 /* Call-backs for parse messages. */

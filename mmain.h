@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.4 2009/02/22 19:23:48 kristaps Exp $ */
+/* $Id: mmain.h,v 1.1 2009/02/22 22:58:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -22,8 +22,8 @@
 /* 
  * This is a convenience library for utilities implementing mdoc(3)
  * accepting a similar set of command-line patterns.  mmain handles
- * error reporting (to the terminal), preparing and reading the input
- * file, and enacting the parse itself.
+ * error reporting (to the terminal), command-line parsing, preparing
+ * and reading the input file, and enacting the parse itself.
  */
 
 #include "mdoc.h"
@@ -34,9 +34,9 @@ struct	mmain;
 
 struct	mmain		*mmain_alloc(void);
 __dead void		 mmain_exit(struct mmain *, int);
-int			 mmain_getopt(struct mmain *, int, 
-				char *[], const char *);
-int			 mmain_isopt(int);
+int			 mmain_getopt(struct mmain *, int, char *[], 
+				const char *, const char *, void *,
+				int (*)(void *, int, const char *));
 struct mdoc		*mmain_mdoc(struct mmain *);
 void			 mmain_usage(const char *);
 

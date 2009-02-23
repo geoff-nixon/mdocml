@@ -1,4 +1,4 @@
-	/* $Id: mmain.c,v 1.2 2009/02/23 07:09:13 kristaps Exp $ */
+	/* $Id: mmain.c,v 1.3 2009/02/23 12:45:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -147,8 +147,8 @@ mmain_getopt(struct mmain *p, int argc, char *argv[],
 }
 
 
-__dead void
-mmain_exit(struct mmain *p, int code)
+dead_pre void
+mmain_exit(struct mmain *p, int code) 
 {
 
 	if (p->mdoc)

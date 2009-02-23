@@ -68,6 +68,11 @@
 					INSTALLING SOURCES
 					</h1>
 
+					<p>
+					Sources correctly build and install on OpenBSD, NetBSD and Linux operating systems, tested variously on
+					i386, AMD64 and Alpha.
+					</p>
+
 					<h2>
 					nightly source
 					</h2>
@@ -138,7 +143,7 @@
 			<tr>
 				<td>
 					<div class="foot">
-						Copyright &#169; 2009 Kristaps D&#382;onsons, $Date: 2009/02/19 12:22:55 $
+						Copyright &#169; 2009 Kristaps D&#382;onsons, $Date: 2009/02/23 15:19:47 $
 					</div>
 				</td>
 			</tr>

@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.25 2009/01/22 12:21:03 kristaps Exp $ */
+/* $Id: argv.c,v 1.26 2009/01/22 14:56:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -26,10 +26,9 @@
 #include "private.h"
 
 /*
- * Parse arguments and parameters of macros.  Arguments follow the
- * syntax of `-arg [val [valN...]]', while parameters are free-form text
- * following arguments (if any).  This file must correctly handle the
- * strange punctuation rules dictated by groff.
+ * Routines to parse arguments of macros.  Arguments follow the syntax
+ * of `-arg [val [valN...]]'.  Arguments come in all types:  quoted
+ * arguments, multiple arguments per value, no-value arguments, etc.
  */
 
 #define	ARGS_QUOTED	(1 << 0)

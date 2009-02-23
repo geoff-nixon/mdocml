@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.12 2009/02/20 23:35:36 kristaps Exp $ */
+/* $Id: strings.c,v 1.13 2009/02/21 21:00:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -21,9 +21,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#ifndef __OpenBSD__
+#ifdef __linux__
 #include <time.h>
 #endif
+
+/*
+ * Convert scalars to and from string format.
+ */
 
 #include "private.h"
 

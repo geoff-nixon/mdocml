@@ -1,4 +1,4 @@
-/* $Id: hash.c,v 1.4 2009/01/05 17:57:07 kristaps Exp $ */
+/* $Id: hash.c,v 1.5 2009/01/20 13:44:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -28,9 +28,8 @@
 /*
  * Routines for the perfect-hash hashtable used by the parser to look up
  * tokens by their string-ified names (`.Fl' -> MDOC_Fl).  The
- * allocation penalty for this is 27 * 26 * sizeof(ptr).
+ * allocation penalty for this is 27 * 26 * sizeof(ptr). 
  */
-
 
 void
 mdoc_tokhash_free(void *htab)

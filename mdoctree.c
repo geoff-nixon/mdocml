@@ -1,4 +1,4 @@
-	/* $Id: mdoctree.c,v 1.2 2009/02/22 22:58:39 kristaps Exp $ */
+	/* $Id: mdoctree.c,v 1.3 2009/02/23 07:09:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -33,9 +33,6 @@ main(int argc, char *argv[])
 {
 	struct mmain	*p;
 	const struct mdoc *mdoc;
-
-	extern int	 optreset;
-	extern int	 optind;
 
 	p = mmain_alloc();
 

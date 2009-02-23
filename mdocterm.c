@@ -1,4 +1,4 @@
-	/* $Id: mdocterm.c,v 1.3 2009/02/23 07:09:13 kristaps Exp $ */
+	/* $Id: mdocterm.c,v 1.4 2009/02/23 09:33:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -23,6 +23,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#ifdef __linux__
+#include <time.h>
+#endif
 
 #include "mmain.h"
 #include "term.h"
@@ -60,9 +64,6 @@ main(int argc, char *argv[])
 	struct mmain	*p;
 	const struct mdoc *mdoc;
 	struct termp	 termp;
-
-	extern int	 optreset;
-	extern int	 optind;
 
 	p = mmain_alloc();
 

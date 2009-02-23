@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.27 2009/02/23 12:45:19 kristaps Exp $ */
+/* $Id: argv.c,v 1.28 2009/02/23 15:19:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -715,7 +715,7 @@ int
 mdoc_argv(struct mdoc *mdoc, int line, int tok,
 		struct mdoc_arg *v, int *pos, char *buf)
 {
-	int		 i, ppos;
+	int		 i;
 	char		*p;
 
 	(void)memset(v, 0, sizeof(struct mdoc_arg));
@@ -758,7 +758,6 @@ mdoc_argv(struct mdoc *mdoc, int line, int tok,
 
 	/* FIXME: whitespace if no value. */
 
-	ppos = *pos;
 	if ( ! argv(mdoc, line, v, pos, buf))
 		return(ARGV_ERROR);
 

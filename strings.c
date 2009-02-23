@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.13 2009/02/21 21:00:06 kristaps Exp $ */
+/* $Id: strings.c,v 1.14 2009/02/23 12:45:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -21,7 +21,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#ifdef __linux__
+#ifndef __OpenBSD__
 #include <time.h>
 #endif
 

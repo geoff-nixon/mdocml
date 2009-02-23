@@ -1,4 +1,4 @@
-	/* $Id: mdocterm.c,v 1.4 2009/02/23 09:33:34 kristaps Exp $ */
+	/* $Id: mdocterm.c,v 1.5 2009/02/23 12:45:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -167,10 +167,9 @@ flushln(struct termp *p)
 			for (j = 0; j < p->offset; j++)
 				putchar(' ');
 			vis = 0;
-		} else if (vis + vsz >= maxvis) {
+		} else if (vis + vsz >= maxvis)
 			/* FIXME */
 			errx(1, "word breaks right margin");
-		}
 
 		/* 
 		 * Write out the word and a trailing space.  Omit the

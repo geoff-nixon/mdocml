@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.15 2009/02/23 15:34:53 kristaps Exp $ */
+/* $Id: strings.c,v 1.16 2009/02/24 11:43:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -55,14 +55,16 @@ mdoc_isescape(const char *p)
 		/* FALLTHROUGH */
 	case (' '):
 		/* FALLTHROUGH */
+	case ('&'):
+		/* FALLTHROUGH */
 	case ('.'):
 		/* FALLTHROUGH */
 	case ('e'):
 		return(2);
 	case ('('):
-		if (0 == *++p)
+		if (0 == *++p || ! isgraph(*p))
 			return(0);
-		if (0 == *++p)
+		if (0 == *++p || ! isgraph(*p))
 			return(0);
 		return(4);
 	case ('['):
@@ -72,7 +74,7 @@ mdoc_isescape(const char *p)
 	}
 
 	for (c = 3, p++; *p && ']' != *p; p++, c++)
-		if (isspace(*p))
+		if ( ! isgraph(*p))
 			break;
 
 	return(*p == ']' ? c : 0);

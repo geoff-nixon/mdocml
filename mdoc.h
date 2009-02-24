@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.32 2009/02/22 22:58:39 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.33 2009/02/23 09:33:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -363,8 +363,6 @@ struct	mdoc_block {
 
 /* In-line element node. */
 struct	mdoc_elem {
-	size_t		  sz;
-	char		**args;
 	size_t		  argc;
 	struct mdoc_arg	 *argv;
 };

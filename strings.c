@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.14 2009/02/23 12:45:19 kristaps Exp $ */
+/* $Id: strings.c,v 1.15 2009/02/23 15:34:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -34,6 +34,50 @@
 #ifdef __linux__
 extern	char		*strptime(const char *, const char *, struct tm *);
 #endif
+
+
+size_t
+mdoc_isescape(const char *p)
+{
+	size_t		 c;
+	
+	if ('\\' != *p++)
+		return(0);
+
+	switch (*p) {
+	case ('\\'):
+		/* FALLTHROUGH */
+	case ('\''):
+		/* FALLTHROUGH */
+	case ('`'):
+		/* FALLTHROUGH */
+	case ('-'):
+		/* FALLTHROUGH */
+	case (' '):
+		/* FALLTHROUGH */
+	case ('.'):
+		/* FALLTHROUGH */
+	case ('e'):
+		return(2);
+	case ('('):
+		if (0 == *++p)
+			return(0);
+		if (0 == *++p)
+			return(0);
+		return(4);
+	case ('['):
+		break;
+	default:
+		return(0);
+	}
+
+	for (c = 3, p++; *p && ']' != *p; p++, c++)
+		if (isspace(*p))
+			break;
+
+	return(*p == ']' ? c : 0);
+}
+
 
 int
 mdoc_iscdelim(char p)

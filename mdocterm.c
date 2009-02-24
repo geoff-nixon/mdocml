@@ -1,4 +1,4 @@
-	/* $Id: mdocterm.c,v 1.6 2009/02/23 15:19:47 kristaps Exp $ */
+	/* $Id: mdocterm.c,v 1.7 2009/02/23 15:34:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -305,6 +305,10 @@ pescape(struct termp *p, const char *word, size_t *i, size_t len)
 			stringa(p, "<-");
 		else if ('-' == word[*i] && '>' == word[*i + 1])
 			stringa(p, "->");
+		else if ('l' == word[*i] && 'q' == word[*i + 1])
+			chara(p, '\"');
+		else if ('r' == word[*i] && 'q' == word[*i + 1])
+			chara(p, '\"');
 
 		(*i)++;
 		return;

@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.54 2009/02/24 11:43:13 kristaps Exp $ */
+/* $Id: validate.c,v 1.55 2009/02/24 12:20:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -17,6 +17,7 @@
  * PERFORMANCE OF THIS SOFTWARE.
  */
 #include <assert.h>
+#include <ctype.h>
 #include <stdlib.h>
 
 #include "private.h"
@@ -396,6 +397,9 @@ check_text(struct mdoc *mdoc, size_t line, size_t pos, const char *p)
 	size_t		 c;
 
 	for ( ; *p; p++) {
+		if ( ! isprint(*p) && '\t' != *p)
+			return(mdoc_perr(mdoc, line, pos,
+					"invalid characters"));
 		if ('\\' != *p)
 			continue;
 		if ((c = mdoc_isescape(p))) {
@@ -403,7 +407,7 @@ check_text(struct mdoc *mdoc, size_t line, size_t pos, const char *p)
 			continue;
 		}
 		return(mdoc_perr(mdoc, line, pos,
-				"invalid escape sequence"));
+					"invalid escape sequence"));
 	}
 
 	return(1);

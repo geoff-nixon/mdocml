@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.80 2009/02/24 11:43:13 kristaps Exp $ */
+/* $Id: private.h,v 1.81 2009/02/24 12:20:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -130,7 +130,6 @@ enum	mdoc_sec  mdoc_atosec(const char *);
 enum	mdoc_msec mdoc_atomsec(const char *);
 enum	mdoc_vol  mdoc_atovol(const char *);
 enum	mdoc_arch mdoc_atoarch(const char *);
-enum	mdoc_att  mdoc_atoatt(const char *);
 time_t		  mdoc_atotime(const char *);
 
 char		 *mdoc_type2a(enum mdoc_type);

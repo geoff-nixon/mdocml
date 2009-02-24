@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.50 2009/02/22 19:23:48 kristaps Exp $ */
+/* $Id: macro.c,v 1.51 2009/02/23 12:45:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -170,8 +170,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ macro_constant_scoped, MDOC_CALLABLE | MDOC_PARSED | MDOC_EXPLICIT }, /* Xo */
 	/* XXX - .Fo supposed to be (but isn't) callable. */
 	{ macro_scoped, MDOC_EXPLICIT }, /* Fo */ 
-	/* XXX - .Fc supposed to be (but isn't) callable. */
-	{ macro_scoped_close, MDOC_EXPLICIT }, /* Fc */ 
+	{ macro_scoped_close, MDOC_EXPLICIT | MDOC_CALLABLE | MDOC_PARSED }, /* Fc */ 
 	{ macro_constant_scoped, MDOC_CALLABLE | MDOC_PARSED | MDOC_EXPLICIT }, /* Oo */
 	{ macro_scoped_close, MDOC_EXPLICIT | MDOC_CALLABLE | MDOC_PARSED }, /* Oc */
 	{ macro_scoped, MDOC_EXPLICIT }, /* Bk */

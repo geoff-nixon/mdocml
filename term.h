@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.9 2009/02/25 15:12:26 kristaps Exp $ */
+/* $Id: term.h,v 1.10 2009/02/25 17:02:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -38,6 +38,7 @@ struct	termp {
 #define	TERMP_LITERAL	 (1 << 5)	/* Literal words. */
 #define	TERMP_IGNDELIM	 (1 << 6)	/* Delims like regulars. */
 #define	TERMP_NONOSPACE	 (1 << 7)	/* No space (no autounset). */
+#define	TERMP_NORPAD	 (1 << 8)	/* No rightpad. */
 	char		 *buf;
 };
 

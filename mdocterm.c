@@ -1,4 +1,4 @@
-	/* $Id: mdocterm.c,v 1.8 2009/02/24 14:52:55 kristaps Exp $ */
+	/* $Id: mdocterm.c,v 1.9 2009/02/25 12:09:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -416,6 +416,8 @@ body(struct termp *p, const struct mdoc_meta *meta,
 
 	dochild = 1;
 	pair.type = 0;
+	pair.offset = 0;
+	pair.flag = 0;
 
 	if (MDOC_TEXT != node->type) {
 		if (termacts[node->tok].pre)
@@ -426,24 +428,14 @@ body(struct termp *p, const struct mdoc_meta *meta,
 
 	/* Children. */
 
-	switch (pair.type) {
-	case (TERMPAIR_FLAG):
-		p->flags |= pair.data.flag;
-		break;
-	default:
-		break;
-	}
+	if (TERMPAIR_FLAG & pair.type)
+		p->flags |= pair.flag;
 
 	if (dochild && node->child)
 		body(p, meta, node->child);
 
-	switch (pair.type) {
-	case (TERMPAIR_FLAG):
-		p->flags &= ~pair.data.flag;
-		break;
-	default:
-		break;
-	}
+	if (TERMPAIR_FLAG & pair.type)
+		p->flags &= ~pair.flag;
 
 	/* Post-processing. */
 

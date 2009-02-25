@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.5 2009/02/24 16:16:45 kristaps Exp $ */
+/* $Id: term.h,v 1.6 2009/02/25 12:09:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -43,15 +43,15 @@ struct	termp {
 struct	termpair {
 	int		  type;
 #define	TERMPAIR_FLAG	 (1 << 0)
-	union {
-		int	  flag;
-	} data;
+	int	  	  flag;
+	size_t	  	  offset;
 };
 
 #define	TERMPAIR_SETFLAG(p, fl) \
 	do { \
-		(p)->data.flag = (fl); \
-		(p)->type = TERMPAIR_FLAG; \
+		assert(! (TERMPAIR_FLAG & (p)->type)); \
+		(p)->flag = (fl); \
+		(p)->type |= TERMPAIR_FLAG; \
 	} while (0)
 
 struct	termact {

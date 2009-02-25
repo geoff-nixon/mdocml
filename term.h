@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.7 2009/02/25 12:27:37 kristaps Exp $ */
+/* $Id: term.h,v 1.8 2009/02/25 13:30:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -41,11 +41,13 @@ struct	termp {
 };
 
 struct	termpair {
+	struct termpair	 *ppair;
 	int		  type;
 #define	TERMPAIR_FLAG	 (1 << 0)
 	int	  	  flag;
 	size_t	  	  offset;
 	size_t	  	  rmargin;
+	int		  count;
 };
 
 #define	TERMPAIR_SETFLAG(p, fl) \

@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.4 2009/02/22 19:23:48 kristaps Exp $ */
+/* $Id: term.h,v 1.5 2009/02/24 16:16:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -40,11 +40,27 @@ struct	termp {
 	char		 *buf;
 };
 
+struct	termpair {
+	int		  type;
+#define	TERMPAIR_FLAG	 (1 << 0)
+	union {
+		int	  flag;
+	} data;
+};
+
+#define	TERMPAIR_SETFLAG(p, fl) \
+	do { \
+		(p)->data.flag = (fl); \
+		(p)->type = TERMPAIR_FLAG; \
+	} while (0)
+
 struct	termact {
 	int		(*pre)(struct termp *,
+				struct termpair *,
 				const struct mdoc_meta *,
 				const struct mdoc_node *);
 	void		(*post)(struct termp *,
+				struct termpair *,
 				const struct mdoc_meta *,
 				const struct mdoc_node *);
 };

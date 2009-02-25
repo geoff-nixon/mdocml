@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.12 2009/02/25 15:12:26 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.13 2009/02/25 17:02:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -91,7 +91,7 @@ main(int argc, char *argv[])
 	if (NULL == (termp.buf = malloc(termp.maxcols)))
 		err(1, "malloc");
 
-	header(&termp, mdoc_meta(mdoc));
+	/*header(&termp, mdoc_meta(mdoc));*/
 	body(&termp, NULL, mdoc_meta(mdoc), mdoc_node(mdoc));
 	footer(&termp, mdoc_meta(mdoc));
 
@@ -168,7 +168,7 @@ flushln(struct termp *p)
 		 * the line with TERMP_NOBREAK).
 		 */
 
-		if (vis && vis + vsz >= maxvis) {
+		if (vis && vis + vsz > maxvis) {
 			/* FIXME */
 			if (p->flags & TERMP_NOBREAK)
 				errx(1, "word breaks right margin");
@@ -176,7 +176,7 @@ flushln(struct termp *p)
 			for (j = 0; j < p->offset; j++)
 				putchar(' ');
 			vis = 0;
-		} else if (vis + vsz >= maxvis)
+		} else if (vis + vsz > maxvis)
 			/* FIXME */
 			errx(1, "word breaks right margin");
 
@@ -203,8 +203,9 @@ flushln(struct termp *p)
 	 */
 
 	if (p->flags & TERMP_NOBREAK) {
-		for ( ; vis < maxvis; vis++)
-			putchar(' ');
+		if ( ! (p->flags & TERMP_NORPAD))
+			for ( ; vis < maxvis; vis++)
+				putchar(' ');
 	} else
 		putchar('\n');
 

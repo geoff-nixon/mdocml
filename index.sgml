@@ -74,7 +74,8 @@
 					</p>
 
 					<p>
-					The most current version is <b>@VERSION@</b>, dated <b>@VDATE@</b>.
+					The most current version is <span class="attn">@VERSION@</span>, dated 
+					<span class="attn">@VDATE@</span>.
 					</p>
 
 					<h2>
@@ -140,7 +141,7 @@
 			<tr>
 				<td>
 					<div class="foot">
-						Copyright &#169; 2009 Kristaps D&#382;onsons, $Date: 2009/02/25 12:32:50 $
+						Copyright &#169; 2009 Kristaps D&#382;onsons, $Date: 2009/02/25 12:37:18 $
 					</div>
 				</td>
 			</tr>

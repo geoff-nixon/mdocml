@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.6 2009/02/25 12:09:20 kristaps Exp $ */
+/* $Id: term.h,v 1.7 2009/02/25 12:27:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -45,6 +45,7 @@ struct	termpair {
 #define	TERMPAIR_FLAG	 (1 << 0)
 	int	  	  flag;
 	size_t	  	  offset;
+	size_t	  	  rmargin;
 };
 
 #define	TERMPAIR_SETFLAG(p, fl) \

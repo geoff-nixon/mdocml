@@ -1,4 +1,4 @@
-	/* $Id: mdocterm.c,v 1.7 2009/02/23 15:34:53 kristaps Exp $ */
+	/* $Id: mdocterm.c,v 1.8 2009/02/24 14:52:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -410,28 +410,46 @@ body(struct termp *p, const struct mdoc_meta *meta,
 		const struct mdoc_node *node)
 {
 	int		 dochild;
+	struct termpair	 pair;
 
 	/* Pre-processing. */
 
 	dochild = 1;
+	pair.type = 0;
 
 	if (MDOC_TEXT != node->type) {
 		if (termacts[node->tok].pre)
-			if ( ! (*termacts[node->tok].pre)(p, meta, node))
+			if ( ! (*termacts[node->tok].pre)(p, &pair, meta, node))
 				dochild = 0;
 	} else /* MDOC_TEXT == node->type */
 		word(p, node->data.text.string);
 
 	/* Children. */
 
+	switch (pair.type) {
+	case (TERMPAIR_FLAG):
+		p->flags |= pair.data.flag;
+		break;
+	default:
+		break;
+	}
+
 	if (dochild && node->child)
 		body(p, meta, node->child);
+
+	switch (pair.type) {
+	case (TERMPAIR_FLAG):
+		p->flags &= ~pair.data.flag;
+		break;
+	default:
+		break;
+	}
 
 	/* Post-processing. */
 
 	if (MDOC_TEXT != node->type)
 		if (termacts[node->tok].post)
-			(*termacts[node->tok].post)(p, meta, node);
+			(*termacts[node->tok].post)(p, &pair, meta, node);
 
 	/* Siblings. */
 

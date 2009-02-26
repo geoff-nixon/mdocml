@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.51 2009/02/23 12:45:19 kristaps Exp $ */
+/* $Id: macro.c,v 1.52 2009/02/24 16:16:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -921,11 +921,8 @@ macro_scoped(MACRO_PROT_ARGS)
 
 		if (ARGS_ERROR == c)
 			return(0);
-		if (ARGS_PUNCT == c)
-			break;
 		if (ARGS_EOLN == c)
 			break;
-
 		if (ARGS_PHRASE == c) {
 			/*
 			if ( ! mdoc_phrase(mdoc, line, lastarg, buf))
@@ -952,9 +949,9 @@ macro_scoped(MACRO_PROT_ARGS)
 		break;
 	}
 	
-	if ( ! rewind_subblock(MDOC_HEAD, mdoc, tok, line, ppos))
-		return(0);
 	if (1 == ppos && ! append_delims(mdoc, line, pos, buf))
+		return(0);
+	if ( ! rewind_subblock(MDOC_HEAD, mdoc, tok, line, ppos))
 		return(0);
 
 	if ( ! mdoc_body_alloc(mdoc, line, ppos, tok))

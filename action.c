@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.20 2009/02/26 16:08:11 kristaps Exp $ */
+/* $Id: action.c,v 1.21 2009/02/27 09:39:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -271,7 +271,7 @@ post_os(struct mdoc *mdoc)
 	if ( ! xstrlcats(buf, mdoc->last->child, 64))
 		return(mdoc_err(mdoc, "macro parameters too long")); 
 
-	mdoc->meta.os = xstrdup(buf[0] ? buf : "local");
+	mdoc->meta.os = xstrdup(buf[0] ? buf : "LOCAL");
 	mdoc->lastnamed = SEC_BODY;
 
 	return(post_prologue(mdoc));

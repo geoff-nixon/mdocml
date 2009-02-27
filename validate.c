@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.60 2009/02/25 12:32:50 kristaps Exp $ */
+/* $Id: validate.c,v 1.61 2009/02/26 14:56:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -479,6 +479,8 @@ static int
 check_text(struct mdoc *mdoc, size_t line, size_t pos, const char *p)
 {
 	size_t		 c;
+
+	/* XXX - indicate deprecated escapes \*(xx and \*x. */
 
 	for ( ; *p; p++) {
 		if ( ! isprint((int)*p) && '\t' != *p)

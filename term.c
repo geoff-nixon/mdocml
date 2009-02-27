@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.25 2009/02/26 16:08:11 kristaps Exp $ */
+/* $Id: term.c,v 1.26 2009/02/27 08:20:15 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -277,7 +277,8 @@ const struct termact *termacts = __termacts;
 static size_t
 arg_width(const struct mdoc_arg *arg)
 {
-	size_t		 len, i, v;
+	size_t		 v;
+	int		 i, len;
 
 	assert(*arg->value);
 	if (0 == strcmp(*arg->value, "indent"))
@@ -285,7 +286,7 @@ arg_width(const struct mdoc_arg *arg)
 	if (0 == strcmp(*arg->value, "indent-two"))
 		return(INDENT * 2);
 
-	len = strlen(*arg->value);
+	len = (int)strlen(*arg->value);
 	assert(len > 0);
 
 	for (i = 0; i < len - 1; i++) 

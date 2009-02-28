@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.24 2009/02/28 14:40:07 kristaps Exp $ */
+/* $Id: action.c,v 1.25 2009/02/28 14:43:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -397,7 +397,7 @@ post_bl_width(struct mdoc *mdoc)
 					"%s argument deprecated",
 					mdoc_argnames[MDOC_Width]))
 			return(0);
-		width = 6;
+		width = 8;
 	} else if (MDOC_MAX == (tok = mdoc_find(mdoc, *p)))
 		return(1);
 	else if (0 == (width = mdoc_macro2len(tok))) 

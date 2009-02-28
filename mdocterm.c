@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.17 2009/02/27 09:14:02 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.18 2009/02/27 10:55:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -112,7 +112,7 @@ main(int argc, char *argv[])
 	if (NULL == (mdoc = mmain_mdoc(p)))
 		mmain_exit(p, 1);
 
-	termp.maxrmargin = 80; /* XXX */
+	termp.maxrmargin = 78; /* XXX */
 	termp.rmargin = termp.maxrmargin;
 	termp.maxcols = 1024;
 	termp.offset = termp.col = 0;

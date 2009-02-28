@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.19 2009/02/28 14:43:35 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.20 2009/02/28 20:13:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -465,6 +465,10 @@ pescape(struct termp *p, const char *word, size_t *i, size_t len)
 			/* FALLTHROUGH */
 		case ('.'):
 			chara(p, word[*i]);
+			break;
+		case ('e'):
+			chara(p, '\\');
+			break;
 		default:
 			break;
 		}

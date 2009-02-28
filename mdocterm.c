@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.18 2009/02/27 10:55:16 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.19 2009/02/28 14:43:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -554,7 +554,14 @@ word(struct termp *p, const char *word)
 		if ( ! xisspace(word[i])) {
 			j++;
 			continue;
+		} 
+		
+		/* Escaped spaces don't delimit... */
+		if (i > 0 && xisspace(word[i]) && '\\' == word[i - 1]) {
+			j++;
+			continue;
 		}
+
 		if (0 == j)
 			continue;
 		assert(i >= j);

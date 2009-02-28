@@ -1,4 +1,4 @@
-/* $Id: xstd.c,v 1.4 2009/01/20 13:44:05 kristaps Exp $ */
+/* $Id: xstd.c,v 1.5 2009/01/20 22:55:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -60,6 +60,16 @@ xstrlcpy(char *dst, const char *src, size_t sz)
 {
 
 	return(strlcpy(dst, src, sz) < sz);
+}
+
+void *
+xrealloc(void *ptr, size_t sz)
+{
+	void		*p;
+
+	if (NULL == (p = realloc(ptr, sz)))
+		err(EXIT_FAILURE, "realloc");
+	return(p);
 }
 
 void *

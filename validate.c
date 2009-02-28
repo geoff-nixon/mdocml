@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.63 2009/02/27 09:39:40 kristaps Exp $ */
+/* $Id: validate.c,v 1.64 2009/02/28 13:47:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -491,8 +491,8 @@ check_text(struct mdoc *mdoc, int line, int pos, const char *p)
 			p += (int)c - 1;
 			continue;
 		}
-		return(mdoc_perr(mdoc, line, pos,
-					"invalid escape sequence"));
+		return(mdoc_perr(mdoc, line, pos, 
+				"invalid escape sequence"));
 	}
 
 	return(1);

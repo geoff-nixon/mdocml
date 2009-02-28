@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.22 2009/02/27 10:55:16 kristaps Exp $ */
+/* $Id: action.c,v 1.23 2009/02/28 13:47:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -392,10 +392,11 @@ post_bl_width(struct mdoc *mdoc)
 	 * the macro's width as set in share/tmac/mdoc/doc-common.
 	 */
 
-	if (MDOC_MAX == (tok = mdoc_find(mdoc, *p)))
+	if (xstrcmp(*p, "Ds"))
+		width = 6;
+	else if (MDOC_MAX == (tok = mdoc_find(mdoc, *p)))
 		return(1);
-
-	if (0 == (width = mdoc_macro2len(tok))) 
+	else if (0 == (width = mdoc_macro2len(tok))) 
 		return(mdoc_warn(mdoc, WARN_SYNTAX,
 					"-%s macro has no length", 
 					mdoc_argnames[MDOC_Width]));

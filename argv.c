@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.32 2009/02/26 14:56:27 kristaps Exp $ */
+/* $Id: argv.c,v 1.33 2009/02/27 09:39:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -292,6 +292,10 @@ args(struct mdoc *mdoc, int line,
 	if ((fl & ARGS_DELIM) && mdoc_iscdelim(buf[*pos])) {
 		for (i = *pos; buf[i]; ) {
 			if ( ! mdoc_iscdelim(buf[i]))
+				break;
+			i++;
+			/* There must be at least one space... */
+			if (0 == buf[i] || ! isspace((int)buf[i]))
 				break;
 			i++;
 			while (buf[i] && isspace((int)buf[i]))

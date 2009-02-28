@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.53 2009/02/26 14:56:27 kristaps Exp $ */
+/* $Id: macro.c,v 1.54 2009/02/27 09:39:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -795,6 +795,8 @@ macro_text(MACRO_PROT_ARGS)
 			mdoc_argv_free(argc, argv);
 			return(0);
 		}
+
+		/* FIXME: .Fl and .Ar handling of `|'. */
 
 		if (ARGS_QWORD != w && mdoc_isdelim(p)) {
 			if (0 == lastpunct && ! rewind_elem(mdoc, tok)) {

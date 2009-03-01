@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.31 2009/03/01 13:06:49 kristaps Exp $ */
+/* $Id: term.c,v 1.32 2009/03/01 23:14:15 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1292,6 +1292,7 @@ termp_cd_pre(DECL_ARGS)
 {
 
 	TERMPAIR_SETFLAG(p, pair, ttypes[TTYPE_CONFIG]);
+	newln(p);
 	return(1);
 }
 

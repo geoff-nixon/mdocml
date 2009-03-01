@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.47 2009/02/22 22:58:39 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.48 2009/02/23 12:45:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -191,9 +191,14 @@ mdoc_parseln(struct mdoc *mdoc, int line, char *buf)
 
 	mdoc->linetok = 0;
 
+	/*
+	 * FIXME: should puke on whitespace in non-literal displays.
+	 */
+
 	if ('.' != *buf) {
 		if (SEC_PROLOGUE == mdoc->lastnamed)
-			return(mdoc_perr(mdoc, line, 0, "text disallowed in document prologue"));
+			return(mdoc_perr(mdoc, line, 0, 
+				"no text in document prologue"));
 		if ( ! mdoc_word_alloc(mdoc, line, 0, buf))
 			return(0);
 		mdoc->next = MDOC_NEXT_SIBLING;

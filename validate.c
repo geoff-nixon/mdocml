@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.64 2009/02/28 13:47:36 kristaps Exp $ */
+/* $Id: validate.c,v 1.65 2009/02/28 14:40:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -484,7 +484,7 @@ check_text(struct mdoc *mdoc, int line, int pos, const char *p)
 	for ( ; *p; p++) {
 		if ( ! isprint((int)*p) && '\t' != *p)
 			return(mdoc_perr(mdoc, line, pos,
-					"invalid characters"));
+				"invalid non-printing characters"));
 		if ('\\' != *p)
 			continue;
 		if ((c = mdoc_isescape(p))) {

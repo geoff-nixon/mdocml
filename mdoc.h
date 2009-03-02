@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.34 2009/02/24 12:20:52 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.35 2009/02/24 14:52:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -220,6 +220,7 @@ enum	mdoc_att {
 	ATT_v6,
 	ATT_v7,
 	ATT_32v,
+	ATT_V,
 	ATT_V1,
 	ATT_V2,
 	ATT_V3,

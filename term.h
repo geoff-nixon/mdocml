@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.11 2009/02/25 23:18:50 kristaps Exp $ */
+/* $Id: term.h,v 1.12 2009/03/01 13:06:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -20,6 +20,8 @@
 #define TERM_H
 
 #include "mdoc.h"
+
+#define	INDENT		  6
 
 __BEGIN_DECLS
 

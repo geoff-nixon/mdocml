@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.48 2009/02/23 12:45:19 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.49 2009/03/01 23:14:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -180,6 +180,12 @@ mdoc_endparse(struct mdoc *mdoc)
 }
 
 
+/*
+ * Main line-parsing routine.  If the line is a macro-line (started with
+ * a '.' control character), then pass along to the parser, which parses
+ * subsequent macros until the end of line.  If normal text, simply
+ * append the entire line to the chain.
+ */
 int
 mdoc_parseln(struct mdoc *mdoc, int line, char *buf)
 {
@@ -191,19 +197,23 @@ mdoc_parseln(struct mdoc *mdoc, int line, char *buf)
 
 	mdoc->linetok = 0;
 
-	/*
-	 * FIXME: should puke on whitespace in non-literal displays.
-	 */
-
 	if ('.' != *buf) {
+		/*
+		 * Free-form text.  Not allowed in the prologue.
+		 */
 		if (SEC_PROLOGUE == mdoc->lastnamed)
 			return(mdoc_perr(mdoc, line, 0, 
-				"no text in document prologue"));
+					"no text in prologue"));
+
 		if ( ! mdoc_word_alloc(mdoc, line, 0, buf))
 			return(0);
 		mdoc->next = MDOC_NEXT_SIBLING;
 		return(1);
 	}
+
+	/*
+	 * Control-character detected.  Begin the parsing sequence.
+	 */
 
 	if (buf[1] && '\\' == buf[1])
 		if (buf[2] && '\"' == buf[2])
@@ -238,6 +248,7 @@ mdoc_parseln(struct mdoc *mdoc, int line, char *buf)
 		mdoc->flags |= MDOC_HALT;
 		return(0);
 	}
+
 	return(1);
 }
 

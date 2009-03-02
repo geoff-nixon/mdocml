@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.22 2009/02/27 10:55:16 kristaps Exp $ */
+/* $Id: strings.c,v 1.23 2009/03/02 12:09:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -69,6 +69,11 @@ mdoc_isescape(const char *p)
 			if (0 == *++p || ! isgraph((int)*p))
 				return(0);
 			return(4);
+		case ('['):
+			for (c = 3, p++; *p && ']' != *p; p++, c++)
+				if ( ! isgraph((int)*p))
+					break;
+			return(*p == ']' ? c : 0);
 		default:
 			break;
 		}

@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.33 2009/02/27 09:39:40 kristaps Exp $ */
+/* $Id: argv.c,v 1.34 2009/02/28 12:16:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -251,11 +251,19 @@ mdoc_args(struct mdoc *mdoc, int line,
 
 		/* LINTED */
 		for (i = 0; i < c; i++) {
-			if (MDOC_Column != n->data.block.argv[i].arg)
-				continue;
-			fl |= ARGS_TABSEP;
-			fl &= ~ARGS_DELIM;
-			break;
+			switch (n->data.block.argv[i].arg) {
+			case (MDOC_Column):
+				fl |= ARGS_TABSEP;
+				fl &= ~ARGS_DELIM;
+				i = c;
+				break;
+			case (MDOC_Diag):
+				fl |= ARGS_QUOTED;
+				i = c;
+				break;
+			default:
+				break;
+			}
 		}
 	}
 

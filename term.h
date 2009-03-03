@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.13 2009/03/02 12:09:32 kristaps Exp $ */
+/* $Id: term.h,v 1.14 2009/03/02 17:14:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -54,6 +54,15 @@ enum	tsym {
 	TERMSYM_BAR = 		25,
 	TERMSYM_BULLET = 	26,
 	TERMSYM_AMP = 		27,
+	TERMSYM_EM = 		28,
+	TERMSYM_EN = 		29,
+	TERMSYM_COPY = 		30,
+	TERMSYM_ASTERISK =	31,
+	TERMSYM_SLASH =		32,
+	TERMSYM_HYPHEN =	33,
+	TERMSYM_SPACE =		34,
+	TERMSYM_PERIOD =	35,
+	TERMSYM_BREAK =		36
 };
 
 

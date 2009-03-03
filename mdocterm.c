@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.26 2009/03/02 17:29:16 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.27 2009/03/03 21:07:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -227,9 +227,6 @@ main(int argc, char *argv[])
  *    offset value.  This is useful when doing columnar lists where the
  *    prior column has right-padded.
  *
- *  - TERMP_LITERAL: don't break apart words.  Note that a long literal
- *    word will violate the right margin.
- *
  *  - TERMP_NOBREAK: this is the most important and is used when making
  *    columns.  In short: don't print a newline and instead pad to the
  *    right margin.  Used in conjunction with TERMP_NOLPAD.
@@ -363,10 +360,10 @@ flushln(struct termp *p)
 	 * pad to the right margin and stay off.
 	 */
 
-	if (p->flags & TERMP_NOBREAK) {
+	if (p->flags & TERMP_NOBREAK) 
 		for ( ; vis < maxvis; vis++)
 			putchar(' ');
-	} else
+	else
 		putchar('\n');
 
 	p->col = 0;

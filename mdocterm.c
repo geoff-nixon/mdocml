@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.28 2009/03/03 22:17:19 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.29 2009/03/04 13:57:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -316,7 +316,7 @@ flushln(struct termp *p)
 				putchar('\n');
 				for (j = 0; j < p->rmargin; j++)
 					putchar(' ');
-				vis = p->offset;
+				vis = p->rmargin - p->offset;
 			} else if (vis + vsz > bp) 
 				warnx("word breaks right margin");
 

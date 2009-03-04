@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.30 2009/03/04 14:04:02 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.31 2009/03/04 14:13:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -351,9 +351,11 @@ flushln(struct termp *p)
 	 */
 
 	if ((TERMP_NOBREAK & p->flags) && vis >= maxvis) {
-		putchar('\n');
-		for (i = 0; i < p->rmargin; i++)
-			putchar(' ');
+		if ( ! (TERMP_NONOBREAK & p->flags)) {
+			putchar('\n');
+			for (i = 0; i < p->rmargin; i++)
+				putchar(' ');
+		}
 		p->col = 0;
 		return;
 	}
@@ -363,10 +365,11 @@ flushln(struct termp *p)
 	 * pad to the right margin and stay off.
 	 */
 
-	if (p->flags & TERMP_NOBREAK) 
-		for ( ; vis < maxvis; vis++)
-			putchar(' ');
-	else
+	if (p->flags & TERMP_NOBREAK) {
+		if ( ! (TERMP_NONOBREAK & p->flags))
+			for ( ; vis < maxvis; vis++)
+				putchar(' ');
+	} else
 		putchar('\n');
 
 	p->col = 0;

@@ -1,4 +1,4 @@
-.\" $Id: mdocterm.1,v 1.11 2009/03/03 22:17:19 kristaps Exp $
+.\" $Id: mdocterm.1,v 1.12 2009/03/04 13:57:35 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -118,7 +118,7 @@ Grammatic:
 .It \-
 \\- (hyphen)
 .It \\
-\\ (back-slash)
+\\\\ (back-slash)
 .El
 .\" PARAGRAPH
 .Pp
@@ -127,18 +127,22 @@ Enclosures:
 .Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
 .It Em Output
 .Em Input (Name)
+.It \(ra
+\\(ra (right angle)
+.It \(la
+\\(la (left angle)
 .It \(rB
 \\(rB (right bracket)
 .It \(lB
-\\(rB (left bracket)
+\\(lB (left bracket)
 .It \(lq
 \\(lq (left double-quote)
 .It \(rq
-\\(rq, \\' (right double-quote)
+\\(rq (right double-quote)
 .It \(oq
-\\(lq, \\` (left single-quote)
+\\(oq, \\` (left single-quote)
 .It \(aq
-\\(aq (right single-quote, apostrophe)
+\\(aq, \\' (right single-quote, apostrophe)
 .El
 .\" PARAGRAPH
 .Pp
@@ -168,7 +172,7 @@ Mathematical:
 .It \(>=
 \\(>= (greater-than-equal)
 .It \(==
-\\(== (greater-than-equal)
+\\(== (equal)
 .It \(!=
 \\(!= (not equal)
 .It \(if
@@ -220,7 +224,7 @@ To display this manual page:
 .Pp
 To pipe a manual page to the pager:
 .Pp
-.D1 % mdocterm mdocterm.1 | less -R
+.D1 % mdocterm mdocterm.1 | less \-R
 .\" SECTION
 .Sh SEE ALSO
 .Xr mdoctree 1 ,

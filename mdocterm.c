@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.27 2009/03/03 21:07:01 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.28 2009/03/03 22:17:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -189,8 +189,7 @@ main(int argc, char *argv[])
 	if (NULL == (mdoc = mmain_mdoc(p)))
 		mmain_exit(p, 1);
 
-	termp.maxrmargin = 78; /* XXX */
-	termp.rmargin = termp.maxrmargin;
+	termp.maxrmargin = termp.rmargin = 78; /* XXX */
 	termp.maxcols = 1024;
 	termp.offset = termp.col = 0;
 	termp.flags = TERMP_NOSPACE;
@@ -317,7 +316,7 @@ flushln(struct termp *p)
 				putchar('\n');
 				for (j = 0; j < p->rmargin; j++)
 					putchar(' ');
-				vis = p->rmargin;
+				vis = p->offset;
 			} else if (vis + vsz > bp) 
 				warnx("word breaks right margin");
 

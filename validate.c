@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.65 2009/02/28 14:40:07 kristaps Exp $ */
+/* $Id: validate.c,v 1.66 2009/03/02 17:14:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -21,6 +21,8 @@
 #include <stdlib.h>
 
 #include "private.h"
+
+/* FIXME: .Bl -diag can't have non-text children in HEAD. */
 
 /*
  * Pre- and post-validate macros as they're parsed.  Pre-validation

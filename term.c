@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.38 2009/03/03 22:28:21 kristaps Exp $ */
+/* $Id: term.c,v 1.39 2009/03/04 13:57:35 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1009,7 +1009,7 @@ termp_aq_pre(DECL_ARGS)
 
 	if (MDOC_BODY != node->type)
 		return(1);
-	word(p, "<");
+	word(p, "\\(la");
 	p->flags |= TERMP_NOSPACE;
 	return(1);
 }
@@ -1023,7 +1023,7 @@ termp_aq_post(DECL_ARGS)
 	if (MDOC_BODY != node->type)
 		return;
 	p->flags |= TERMP_NOSPACE;
-	word(p, ">");
+	word(p, "\\(ra");
 }
 
 

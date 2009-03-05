@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.54 2009/02/27 09:39:40 kristaps Exp $ */
+/* $Id: macro.c,v 1.55 2009/02/28 20:13:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -29,6 +29,11 @@
  * This has scanning/parsing routines, each of which extract a macro and
  * its arguments and parameters, then know how to progress to the next
  * macro. 
+ */
+
+/* 
+ * FIXME: don't use static mdoc_argv values, as they require us to do a
+ * complicated copy-over when actually assigning them to dynamic memory.
  */
 
 #include "private.h"

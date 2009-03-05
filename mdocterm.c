@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.31 2009/03/04 14:13:05 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.32 2009/03/04 14:41:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -287,7 +287,7 @@ flushln(struct termp *p)
 
 		/* LINTED */
 		for (j = i, vsz = 0; j < p->col; j++) {
-			if (isspace((int)p->buf[j]))
+			if (isspace((u_char)p->buf[j]))
 				break;
 			else if (27 == p->buf[j]) {
 				assert(j + 4 <= p->col);
@@ -334,7 +334,7 @@ flushln(struct termp *p)
 		 */
 
 		for ( ; i < p->col; i++) {
-			if (isspace((int)p->buf[i]))
+			if (isspace((u_char)p->buf[i]))
 				break;
 			putchar(p->buf[i]);
 		}
@@ -437,13 +437,13 @@ word(struct termp *p, const char *word)
 
 	/* LINTED */
 	for (j = i = 0; i < len; i++) {
-		if ( ! isspace((int)word[i])) {
+		if ( ! isspace((u_char)word[i])) {
 			j++;
 			continue;
 		} 
 		
 		/* Escaped spaces don't delimit... */
-		if (i > 0 && isspace((int)word[i]) && 
+		if (i > 0 && isspace((u_char)word[i]) && 
 				'\\' == word[i - 1]) {
 			j++;
 			continue;
@@ -649,7 +649,7 @@ header(struct termp *p, const struct mdoc_meta *meta)
 			meta->title, pp ? pp : "");
 
 	for (bufp = title; *bufp; bufp++)
-		*bufp = toupper(*bufp);
+		*bufp = toupper((u_char)*bufp);
 	
 	p->offset = 0;
 	p->rmargin = (p->maxrmargin - strlen(buf)) / 2;

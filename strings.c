@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.23 2009/03/02 12:09:32 kristaps Exp $ */
+/* $Id: strings.c,v 1.24 2009/03/02 17:14:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -62,16 +62,16 @@ mdoc_isescape(const char *p)
 	case ('e'):
 		return(2);
 	case ('*'):
-		if (0 == *++p || ! isgraph((int)*p))
+		if (0 == *++p || ! isgraph((u_char)*p))
 			return(0);
 		switch (*p) {
 		case ('('):
-			if (0 == *++p || ! isgraph((int)*p))
+			if (0 == *++p || ! isgraph((u_char)*p))
 				return(0);
 			return(4);
 		case ('['):
 			for (c = 3, p++; *p && ']' != *p; p++, c++)
-				if ( ! isgraph((int)*p))
+				if ( ! isgraph((u_char)*p))
 					break;
 			return(*p == ']' ? c : 0);
 		default:
@@ -79,9 +79,9 @@ mdoc_isescape(const char *p)
 		}
 		return(3);
 	case ('('):
-		if (0 == *++p || ! isgraph((int)*p))
+		if (0 == *++p || ! isgraph((u_char)*p))
 			return(0);
-		if (0 == *++p || ! isgraph((int)*p))
+		if (0 == *++p || ! isgraph((u_char)*p))
 			return(0);
 		return(4);
 	case ('['):
@@ -91,7 +91,7 @@ mdoc_isescape(const char *p)
 	}
 
 	for (c = 3, p++; *p && ']' != *p; p++, c++)
-		if ( ! isgraph((int)*p))
+		if ( ! isgraph((u_char)*p))
 			break;
 
 	return(*p == ']' ? c : 0);

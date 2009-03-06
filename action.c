@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.30 2009/03/05 13:12:12 kristaps Exp $ */
+/* $Id: action.c,v 1.31 2009/03/06 14:13:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -535,11 +535,13 @@ post_ar(struct mdoc *mdoc)
 	n = mdoc->last;
 
 	mdoc->next = MDOC_NEXT_CHILD;
-	mdoc_word_alloc(mdoc, mdoc->last->line,
-			mdoc->last->pos, "file");
+	if ( ! mdoc_word_alloc(mdoc, mdoc->last->line,
+				mdoc->last->pos, "file"))
+		return(0);
 	mdoc->next = MDOC_NEXT_SIBLING;
-	mdoc_word_alloc(mdoc, mdoc->last->line,
-			mdoc->last->pos, "...");
+	if ( ! mdoc_word_alloc(mdoc, mdoc->last->line, 
+				mdoc->last->pos, "..."))
+		return(0);
 
 	mdoc->last = n;
 	mdoc->next = MDOC_NEXT_SIBLING;

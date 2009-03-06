@@ -1,4 +1,4 @@
-/* $Id: xstd.c,v 1.5 2009/01/20 22:55:46 kristaps Exp $ */
+/* $Id: xstd.c,v 1.6 2009/02/28 13:47:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -93,7 +93,7 @@ xstrdup(const char *p)
 }
 
 int
-xstrlcats(char *buf, const struct mdoc_node *n, size_t sz)
+xstrlcpys(char *buf, const struct mdoc_node *n, size_t sz)
 {
 	char		 *p;
 

@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.68 2009/03/05 13:12:12 kristaps Exp $ */
+/* $Id: validate.c,v 1.69 2009/03/06 14:13:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -484,7 +484,8 @@ check_sec(PRE_ARGS, ...)
 	va_start(ap, n);
 
 	for (;;) {
-		if (SEC_CUSTOM == (sec = va_arg(ap, enum mdoc_sed)))
+		sec = (enum mdoc_sec)va_arg(ap, int);
+		if (SEC_CUSTOM == sec)
 			break;
 		if (sec != mdoc->lastsec)
 			continue;

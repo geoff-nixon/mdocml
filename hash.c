@@ -1,4 +1,4 @@
-/* $Id: hash.c,v 1.5 2009/01/20 13:44:05 kristaps Exp $ */
+/* $Id: hash.c,v 1.6 2009/02/23 12:45:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -127,6 +127,11 @@ mdoc_tokhash_find(const void *arg, const char *tmp)
 		(void *)mdoc_macros;
 	assert(0 == (size_t)slot % sizeof(struct mdoc_macro));
 	slot /= sizeof(struct mdoc_macro);
+
+	/* 
+	 * FIXME: is this necessary, or do we only need to check the
+	 * remaining characters (2+)? 
+	 */
 
 	if (0 != strcmp(mdoc_macronames[slot], tmp))
 		return(MDOC_MAX);

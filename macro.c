@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.58 2009/03/08 11:41:22 kristaps Exp $ */
+/* $Id: macro.c,v 1.59 2009/03/08 18:02:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -238,7 +238,7 @@ scopewarn(struct mdoc *mdoc, enum mdoc_type type,
 	n = t = "<root>";
 	tt = "block";
 
-	switch (p->type) {
+	switch (type) {
 	case (MDOC_BODY):
 		tt = "multi-line";
 		break;

@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.43 2009/03/06 14:13:47 kristaps Exp $ */
+/* $Id: term.c,v 1.44 2009/03/08 13:52:29 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1203,9 +1203,9 @@ termp_bd_pre(DECL_ARGS)
 
 	i = arg_getattr(MDOC_Offset, node->parent);
 	if (-1 != i) {
-		if (1 != node->args->argv[i].sz)
+		if (1 != node->parent->args->argv[i].sz)
 			errx(1, "expected single value");
-		p->offset += arg_offset(&node->args->argv[i]);
+		p->offset += arg_offset(&node->parent->args->argv[i]);
 	}
 
 	switch (type) {

@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.44 2009/03/08 13:52:29 kristaps Exp $ */
+/* $Id: term.c,v 1.45 2009/03/08 13:57:07 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -316,7 +316,7 @@ arg_listtype(const struct mdoc_node *n)
 
 	assert(MDOC_BLOCK == n->type);
 
-	len = n->args ? n->args->argc : 0;
+	len = (int)(n->args ? n->args->argc : 0);
 
 	for (i = 0; i < len; i++) 
 		switch (n->args->argv[i].arg) {

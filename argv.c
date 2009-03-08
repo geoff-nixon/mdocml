@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.39 2009/03/08 11:41:22 kristaps Exp $ */
+/* $Id: argv.c,v 1.40 2009/03/08 12:40:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -292,6 +292,9 @@ void
 mdoc_argv_free(struct mdoc_arg *p)
 {
 	int		 i, j;
+
+	if (NULL == p)
+		return;
 
 	if (p->refcnt) {
 		--(p->refcnt);

@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.34 2009/03/06 14:13:47 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.35 2009/03/08 13:52:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -681,24 +681,34 @@ pescape(struct termp *p, const char *word, size_t *i, size_t len)
 {
 	size_t		 j;
 
-	(*i)++;
-	assert(*i < len);
+	if (++(*i) >= len) {
+		warnx("ignoring bad escape sequence");
+		return;
+	}
 
 	if ('(' == word[*i]) {
 		(*i)++;
-		assert(*i + 1 < len);
+		if (*i + 1 >= len) {
+			warnx("ignoring bad escape sequence");
+			return;
+		}
 		nescape(p, &word[*i], 2);
 		(*i)++;
 		return;
 
 	} else if ('*' == word[*i]) { 
-		/* XXX - deprecated! */
 		(*i)++;
-		assert(*i < len);
+		if (*i >= len) {
+			warnx("ignoring bad escape sequence");
+			return;
+		}
 		switch (word[*i]) {
 		case ('('):
 			(*i)++;
-			assert(*i + 1 < len);
+			if (*i + 1 >= len) {
+				warnx("ignoring bad escape sequence");
+				return;
+			}
 			nescape(p, &word[*i], 2);
 			(*i)++;
 			return;
@@ -718,7 +728,10 @@ pescape(struct termp *p, const char *word, size_t *i, size_t len)
 	for (j = 0; word[*i] && ']' != word[*i]; (*i)++, j++)
 		/* Loop... */ ;
 
-	assert(word[*i]);
+	if (0 == word[*i]) {
+		warnx("ignoring bad escape sequence");
+		return;
+	}
 	nescape(p, &word[*i - j], j);
 }
 

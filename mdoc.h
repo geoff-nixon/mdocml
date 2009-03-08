@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.37 2009/03/06 14:13:47 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.38 2009/03/08 11:41:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -28,6 +28,8 @@
  */
 
 /* What follows is a list of ALL possible macros. */
+
+/* TODO: Brq et al. */
 
 #define	MDOC___	 	 0
 #define	MDOC_Dd		 1

@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.33 2009/03/05 13:12:12 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.34 2009/03/06 14:13:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -490,7 +490,7 @@ body(struct termp *p, struct termpair *ppair,
 			if ( ! (*termacts[node->tok].pre)(p, &pair, meta, node))
 				dochild = 0;
 	} else /* MDOC_TEXT == node->type */
-		word(p, node->data.text.string);
+		word(p, node->string);
 
 	/* Children. */
 

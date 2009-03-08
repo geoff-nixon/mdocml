@@ -1,4 +1,4 @@
-/* $Id: xstd.c,v 1.6 2009/02/28 13:47:36 kristaps Exp $ */
+/* $Id: xstd.c,v 1.7 2009/03/06 14:13:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -103,7 +103,7 @@ xstrlcpys(char *buf, const struct mdoc_node *n, size_t sz)
 
 	for ( ; n; n = n->next) {
 		assert(MDOC_TEXT == n->type);
-		p = n->data.text.string;
+		p = n->string;
 		if ( ! xstrlcat(buf, p, sz))
 			return(0);
 		if (n->next && ! xstrlcat(buf, " ", sz))

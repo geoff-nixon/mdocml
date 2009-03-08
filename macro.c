@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.60 2009/03/08 19:32:03 kristaps Exp $ */
+/* $Id: macro.c,v 1.61 2009/03/08 20:50:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -182,6 +182,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ macro_constant, 0 }, /* Ud */
 	{ macro_constant, 0 }, /* Lb */
 	{ macro_constant_delimited, MDOC_CALLABLE | MDOC_PARSED }, /* Ap */
+	{ macro_text, 0 }, /* Lp */ 
 };
 
 const	struct mdoc_macro * const mdoc_macros = __mdoc_macros;

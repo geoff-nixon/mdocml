@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.47 2009/03/08 19:38:08 kristaps Exp $ */
+/* $Id: term.c,v 1.48 2009/03/08 20:50:12 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -276,6 +276,7 @@ const	struct termact __termacts[MDOC_MAX] = {
 	{ termp_ud_pre, NULL }, /* Ud */
 	{ termp_lb_pre, termp_lb_post }, /* Lb */
 	{ termp_ap_pre, NULL }, /* Lb */
+	{ termp_pp_pre, NULL }, /* Pp */ 
 };
 
 const struct termact *termacts = __termacts;

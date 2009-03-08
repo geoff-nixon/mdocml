@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.33 2009/03/08 11:41:22 kristaps Exp $ */
+/* $Id: action.c,v 1.34 2009/03/08 12:40:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -241,10 +241,8 @@ post_ex(struct mdoc *mdoc)
 			mdoc_argnames[MDOC_Std], 
 			mdoc->meta.name);
 
-	assert(1 == mdoc->last->args->argv[0].sz);
-
-	mdoc->last->args->argv[0].sz = 1;
 	mdoc->last->args->argv[0].value = xcalloc(1, sizeof(char *));
+	mdoc->last->args->argv[0].sz = 1;
 	mdoc->last->args->argv[0].value[0] = xstrdup(mdoc->meta.name);
 	return(1);
 }

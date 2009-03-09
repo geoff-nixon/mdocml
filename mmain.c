@@ -1,4 +1,4 @@
-	/* $Id: mmain.c,v 1.9 2009/03/08 19:32:03 kristaps Exp $ */
+	/* $Id: mmain.c,v 1.10 2009/03/09 13:04:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -312,18 +312,19 @@ parse(struct mmain *p)
 			}
 
 			ln[pos] = 0;
-			if ( ! mdoc_parseln(p->mdoc, lnn, ln))
+			if ( ! mdoc_parseln(p->mdoc, lnn, ln)) {
+				free(ln);
 				return(0);
+			}
 			lnn++;
 			pos = 0;
 		}
 	}
 
-	if (pos > 0)
-		warnx("%s: file not eof-terminated", p->in);
-
 	if (ln)
 		free(ln);
+	if (pos > 0)
+		warnx("%s: file not eof-terminated", p->in);
 	return(mdoc_endparse(p->mdoc));
 }
 

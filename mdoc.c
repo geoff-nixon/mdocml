@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.57 2009/03/08 20:57:35 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.58 2009/03/09 13:04:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -501,10 +501,10 @@ macrowarn(struct mdoc *m, int ln, const char *buf)
 {
 	if ( ! (MDOC_IGN_MACRO & m->pflags))
 		return(mdoc_perr(m, ln, 1, "unknown macro: %s%s", 
-				buf, buf[3] ? "..." : ""));
+				buf, strlen(buf) > 3 ? "..." : ""));
 	return(mdoc_pwarn(m, ln, 1, WARN_SYNTAX,
 				"unknown macro: %s%s",
-				buf, buf[3] ? "..." : ""));
+				buf, strlen(buf) > 3 ? "..." : ""));
 }
 
 

@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.58 2009/03/09 13:04:01 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.59 2009/03/09 13:35:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -72,7 +72,7 @@ const	char *const __mdoc_macronames[MDOC_MAX] = {
 	"Fo",		"Fc",		"Oo",		"Oc",
 	"Bk",		"Ek",		"Bt",		"Hf",
 	"Fr",		"Ud",		"Lb",		"Ap",
-	"Lp"
+	"Lp",		"Lk",		"Mt"
 	};
 
 const	char *const __mdoc_argnames[MDOC_ARG_MAX] = {		 

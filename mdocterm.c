@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.35 2009/03/08 13:52:29 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.36 2009/03/08 18:02:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -16,6 +16,8 @@
  * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  * PERFORMANCE OF THIS SOFTWARE.
  */
+#include <sys/types.h>
+
 #include <assert.h>
 #include <ctype.h>
 #include <err.h>
@@ -23,9 +25,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#ifndef __OpenBSD__
-#include <time.h>
-#endif
 
 #include "mmain.h"
 #include "term.h"

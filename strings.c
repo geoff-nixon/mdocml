@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.25 2009/03/05 13:12:12 kristaps Exp $ */
+/* $Id: strings.c,v 1.26 2009/03/06 14:13:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -16,14 +16,13 @@
  * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  * PERFORMANCE OF THIS SOFTWARE.
  */
+#include <sys/types.h>
+
 #include <assert.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#ifndef __OpenBSD__
-#include <time.h>
-#endif
 
 #include "private.h"
 

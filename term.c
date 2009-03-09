@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.48 2009/03/08 20:50:12 kristaps Exp $ */
+/* $Id: term.c,v 1.49 2009/03/08 20:57:35 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -16,6 +16,8 @@
  * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  * PERFORMANCE OF THIS SOFTWARE.
  */
+#include <sys/types.h>
+
 #include <assert.h>
 #include <ctype.h>
 #include <err.h>

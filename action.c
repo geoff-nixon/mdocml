@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.36 2009/03/08 20:50:12 kristaps Exp $ */
+/* $Id: action.c,v 1.37 2009/03/08 20:57:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -23,7 +23,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 
 #include "private.h"
 

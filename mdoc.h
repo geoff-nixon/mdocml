@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.42 2009/03/08 20:57:35 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.43 2009/03/09 13:04:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -18,6 +18,8 @@
  */
 #ifndef MDOC_H
 #define MDOC_H
+
+#include <time.h>
 
 /*
  * This library implements a validating scanner/parser for ``mdoc'' roff

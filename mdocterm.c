@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.37 2009/03/09 13:17:49 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.38 2009/03/10 11:16:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -74,6 +74,8 @@ static	struct termenc	  termenc1[] = {
 };
 
 static	struct termenc	  termenc2[] = {
+	{ "rC", 	  TERMSYM_RBRACE },
+	{ "lC", 	  TERMSYM_LBRACE },
 	{ "rB", 	  TERMSYM_RBRACK },
 	{ "lB", 	  TERMSYM_LBRACK },
 	{ "ra", 	  TERMSYM_RANGLE },
@@ -163,6 +165,8 @@ static	struct termsym	  termsym_ansi[] = {
 	{ "", 0 },		/* TERMSYM_BREAK */
 	{ "<", 1 },		/* TERMSYM_LANGLE */
 	{ ">", 1 },		/* TERMSYM_RANGLE */
+	{ "{", 1 },		/* TERMSYM_LBRACE */
+	{ "}", 1 },		/* TERMSYM_RBRACE */
 };
 
 static	const char	  ansi_clear[]  = { 27, '[', '0', 'm' };

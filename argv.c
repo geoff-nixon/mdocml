@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.46 2009/03/10 15:01:54 kristaps Exp $ */
+/* $Id: argv.c,v 1.47 2009/03/10 21:27:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -213,6 +213,9 @@ static	int mdoc_argflags[MDOC_MAX] = {
 	ARGS_DELIM, /* Lp */
 	ARGS_DELIM | ARGS_QUOTED, /* Lk */
 	ARGS_DELIM | ARGS_QUOTED, /* Mt */
+	ARGS_DELIM, /* Brq */
+	0, /* Bro */
+	ARGS_DELIM, /* Brc */
 };
 
 

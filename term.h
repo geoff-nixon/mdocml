@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.18 2009/03/04 14:13:05 kristaps Exp $ */
+/* $Id: term.h,v 1.19 2009/03/04 14:41:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -64,7 +64,9 @@ enum	tsym {
 	TERMSYM_PERIOD =	35,
 	TERMSYM_BREAK =		36,
 	TERMSYM_LANGLE =	37,
-	TERMSYM_RANGLE =	38
+	TERMSYM_RANGLE =	38,
+	TERMSYM_LBRACE =	39,
+	TERMSYM_RBRACE =	40
 };
 
 

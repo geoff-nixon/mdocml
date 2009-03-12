@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.67 2009/03/12 02:57:36 kristaps Exp $ */
+/* $Id: macro.c,v 1.68 2009/03/12 06:32:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1482,8 +1482,7 @@ macro_phrase(struct mdoc *mdoc, int line, int ppos, char *buf)
 		if (MDOC_MAX != (c = mdoc_tokhash_find(mdoc->htab, &buf[la]))) {
 			if ( ! mdoc_macro(mdoc, c, line, la, &i, buf))
 				return(0);
-
-			return(1);
+			return(append_delims(mdoc, line, &i, buf));
 		}
 
 		if ( ! mdoc_word_alloc(mdoc, line, la, &buf[la]))

@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.60 2009/03/09 14:19:59 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.61 2009/03/11 00:39:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -534,8 +534,6 @@ parsemacro(struct mdoc *m, int ln, char *buf)
 		else if (isspace((unsigned char)buf[i]))
 			break;
 	}
-
-	/* FIXME: be able to skip unknown macro lines! */
 
 	mac[i - 1] = 0;
 

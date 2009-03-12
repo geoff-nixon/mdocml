@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.45 2009/03/09 14:19:59 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.46 2009/03/11 00:39:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -147,7 +147,8 @@
 #define	MDOC_Brq	 111
 #define	MDOC_Bro	 112
 #define	MDOC_Brc	 113
-#define	MDOC_MAX	 114
+#define	MDOC__C	 	 114
+#define	MDOC_MAX	 115
 
 /* What follows is a list of ALL possible macro arguments. */
 
@@ -176,7 +177,8 @@
 #define	MDOC_Words	 22
 #define	MDOC_Emphasis	 23
 #define	MDOC_Symbolic	 24
-#define	MDOC_ARG_MAX	 25
+#define	MDOC_Nested	 25
+#define	MDOC_ARG_MAX	 26
 
 /* Warnings are either syntax or groff-compatibility. */
 enum	mdoc_warn {

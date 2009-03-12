@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.55 2009/03/12 06:32:17 kristaps Exp $ */
+/* $Id: term.c,v 1.56 2009/03/12 15:55:11 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -295,6 +295,7 @@ const	struct termact __termacts[MDOC_MAX] = {
 	{ termp_brq_pre, termp_brq_post }, /* Brq */ 
 	{ termp_brq_pre, termp_brq_post }, /* Bro */ 
 	{ NULL, NULL }, /* Brc */ 
+	{ NULL, NULL }, /* %C */ 
 };
 
 const struct termact *termacts = __termacts;
@@ -838,6 +839,7 @@ termp_rv_pre(DECL_ARGS)
 	p->flags |= ttypes[TTYPE_FUNC_NAME];
 	word(p, *node->args->argv[i].value);
 	p->flags &= ~ttypes[TTYPE_FUNC_NAME];
+	p->flags |= TERMP_NOSPACE;
 
        	word(p, "() function returns the value 0 if successful;");
        	word(p, "otherwise the value -1 is returned and the");

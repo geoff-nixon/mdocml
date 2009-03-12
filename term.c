@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.54 2009/03/12 02:57:36 kristaps Exp $ */
+/* $Id: term.c,v 1.55 2009/03/12 06:32:17 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -508,6 +508,8 @@ termp_it_pre(DECL_ARGS)
 				(&bl->args->argv[vals[2]], i);
 		assert(i < (int)bl->args->argv[vals[2]].sz);
 		width = arg_width(&bl->args->argv[vals[2]], i);
+		if (vals[1] >= 0) 
+			offset += arg_offset(&bl->args->argv[vals[1]]);
 		break;
 	default:
 		if (vals[0] >= 0) 

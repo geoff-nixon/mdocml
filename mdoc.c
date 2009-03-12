@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.61 2009/03/11 00:39:58 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.62 2009/03/12 02:57:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -520,7 +520,19 @@ parsemacro(struct mdoc *m, int ln, char *buf)
 	int		  i, c;
 	char		  mac[5];
 
-	/* Comments are quickly ignored. */
+	/* Comments and empties are quickly ignored. */
+
+	if (0 == buf[1])
+		return(1);
+
+	if (isspace((unsigned char)buf[1])) {
+		i = 2;
+		while (buf[i] && isspace((unsigned char)buf[i]))
+			i++;
+		if (0 == buf[i])
+			return(1);
+		return(mdoc_perr(m, ln, 1, "invalid syntax"));
+	}
 
 	if (buf[1] && '\\' == buf[1])
 		if (buf[2] && '\"' == buf[2])

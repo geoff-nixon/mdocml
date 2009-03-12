@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.78 2009/03/09 14:19:59 kristaps Exp $ */
+/* $Id: validate.c,v 1.79 2009/03/11 00:39:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1187,8 +1187,8 @@ post_it(POST_ARGS)
 		if (mdoc->last->body->child)
 			if ( ! mwarn(mdoc, WNOMULTILINE))
 				return(0);
-		c = mdoc->last->head->child;
-		for (i = 0; c; c = c->next)
+		c = mdoc->last->head;
+		for (i = 0; c && MDOC_HEAD == c->type; c = c->next)
 			i++;
 		if (i == cols)
 			break;

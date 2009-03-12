@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.48 2009/03/11 00:39:58 kristaps Exp $ */
+/* $Id: argv.c,v 1.49 2009/03/12 02:57:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -94,10 +94,11 @@ static	int mdoc_argvflags[MDOC_ARG_MAX] = {
 	ARGV_MULTI,	/* MDOC_Column */
 	ARGV_SINGLE,	/* MDOC_Width */
 	ARGV_NONE,	/* MDOC_Compact */
-	ARGV_SINGLE,	/* MDOC_Std */
+	ARGV_OPT_SINGLE, /* MDOC_Std */
 	ARGV_NONE,	/* MDOC_Filled */
 	ARGV_NONE,	/* MDOC_Words */
 	ARGV_NONE,	/* MDOC_Emphasis */
+	ARGV_NONE,	/* MDOC_Symbolic */
 	ARGV_NONE	/* MDOC_Symbolic */
 };
 
@@ -216,6 +217,7 @@ static	int mdoc_argflags[MDOC_MAX] = {
 	ARGS_DELIM, /* Brq */
 	0, /* Bro */
 	ARGS_DELIM, /* Brc */
+	ARGS_QUOTED, /* %C */
 };
 
 
@@ -735,6 +737,8 @@ argv_a2arg(int tok, const char *argv)
 			return(MDOC_Offset);
 		else if (xstrcmp(argv, "compact"))
 			return(MDOC_Compact);
+		else if (xstrcmp(argv, "nested"))
+			return(MDOC_Nested);
 		break;
 	
 	case (MDOC_Rv):
@@ -840,25 +844,11 @@ static int
 argv(struct mdoc *mdoc, int tok, int line, 
 		struct mdoc_argv *v, int *pos, char *buf)
 {
-	int		 fl;
 
 	v->sz = 0;
 	v->value = NULL;
-	fl = mdoc_argvflags[v->arg];
 
-	/*
-	 * Override the default per-argument value.
-	 */
-
-	switch (tok) {
-	case (MDOC_Ex):
-		fl = ARGV_OPT_SINGLE;
-		break;
-	default:
-		break;
-	}
-
-	switch (fl) {
+	switch (mdoc_argvflags[v->arg]) {
 	case (ARGV_SINGLE):
 		return(argv_single(mdoc, line, v, pos, buf));
 	case (ARGV_MULTI):

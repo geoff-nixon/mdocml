@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.38 2009/03/10 11:16:43 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.39 2009/03/11 00:39:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -430,8 +430,8 @@ word(struct termp *p, const char *word)
 		return;
 	}
 
-	len = strlen(word);
-	assert(len > 0);
+	if (0 == (len = strlen(word)))
+		errx(1, "blank line not in literal context");
 
 	if (mdoc_isdelim(word)) {
 		if ( ! (p->flags & TERMP_IGNDELIM))

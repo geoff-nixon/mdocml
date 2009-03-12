@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.53 2009/03/11 00:39:58 kristaps Exp $ */
+/* $Id: term.c,v 1.54 2009/03/12 02:57:36 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -531,7 +531,7 @@ termp_it_pre(DECL_ARGS)
 	case (MDOC_Enum):
 		/* FALLTHROUGH */
 	case (MDOC_Hyphen):
-		if (width > 4)
+		if (width < 4)
 			width = 4;
 		break;
 	case (MDOC_Tag):

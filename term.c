@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.56 2009/03/12 15:55:11 kristaps Exp $ */
+/* $Id: term.c,v 1.57 2009/03/12 16:30:50 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1469,8 +1469,12 @@ termp_ss_pre(DECL_ARGS)
 {
 
 	switch (node->type) {
+	case (MDOC_BLOCK):
+		newln(p);
+		if (node->prev)
+			vspace(p);
+		break;
 	case (MDOC_HEAD):
-		vspace(p);
 		TERMPAIR_SETFLAG(p, pair, ttypes[TTYPE_SSECTION]);
 		p->offset = INDENT / 2;
 		break;

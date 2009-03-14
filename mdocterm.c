@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.39 2009/03/11 00:39:58 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.40 2009/03/12 06:32:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -70,6 +70,7 @@ static	struct termenc	  termenc1[] = {
 	{ "&",		  TERMSYM_BREAK },
 	{ "e",		  TERMSYM_SLASH },
 	{ "q",		  TERMSYM_DQUOTE },
+	{ "|",		  TERMSYM_BREAK },
 	{ NULL,		  0 }
 };
 
@@ -125,7 +126,7 @@ static	struct termenc	  termenc2[] = {
 	{ NULL,		  0 }
 };
 
-static	struct termsym	  termsym_ansi[] = {
+static	struct termsym	  termsym_ansi[TERMSYM_MAX] = {
 	{ "]", 1 },		/* TERMSYM_RBRACK */
 	{ "[", 1 },		/* TERMSYM_LBRACK */
 	{ "<-", 2 },		/* TERMSYM_LARROW */

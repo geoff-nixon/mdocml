@@ -1,4 +1,4 @@
-.\" $Id: mdoclint.1,v 1.2 2009/03/08 18:02:36 kristaps Exp $
+.\" $Id: mdoclint.1,v 1.3 2009/03/09 13:04:01 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -29,7 +29,7 @@
 .Op Fl vV
 .Op Fl f Ns Ar options...
 .Op Fl W Ns Ar err...
-.Op Ar infile
+.Op Ar infile...
 .\" SECTION
 .Sh DESCRIPTION
 The
@@ -71,7 +71,10 @@ Read input from
 .Ar infile ,
 which may be 
 .Dq \-
-for stdin.
+for stdin.  If multiple 
+.Ar infile
+arguments are specified, each is processed and the system will exit on
+the first failure.
 .El
 .\" PARAGRAPH
 .Pp

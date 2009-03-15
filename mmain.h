@@ -1,4 +1,4 @@
-/* $Id: mmain.h,v 1.3 2009/02/23 12:45:19 kristaps Exp $ */
+/* $Id: mmain.h,v 1.4 2009/02/23 15:34:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -47,10 +47,14 @@ struct	mmain;
 struct	mmain		*mmain_alloc(void);
 dead_pre void	 	 mmain_exit(struct mmain *, int) dead_post;
 int			 mmain_getopt(struct mmain *, int, char *[], 
-				const char *, const char *, void *,
-				int (*)(void *, int, const char *));
-struct mdoc		*mmain_mdoc(struct mmain *);
-void			 mmain_usage(const char *);
+				const char *, const char *,
+				const char *, void *,
+				int (*)(void *, int, char *));
+struct mdoc		*mmain_mdoc(struct mmain *, const char *);
+void			 mmain_reset(struct mmain *);
+void			 mmain_free(struct mmain *);
+void			 mmain_prepare(struct mmain *, const char *);
+struct mdoc		*mmain_process(struct mmain *);
 
 __END_DECLS
 

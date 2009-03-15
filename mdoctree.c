@@ -1,4 +1,4 @@
-	/* $Id: mdoctree.c,v 1.5 2009/03/06 14:13:47 kristaps Exp $ */
+	/* $Id: mdoctree.c,v 1.6 2009/03/08 14:01:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -32,16 +32,22 @@ int
 main(int argc, char *argv[])
 {
 	struct mmain	  *p;
-	int		   c;
 	const struct mdoc *mdoc;
+	int		   c;
+	char		  *in;
 
 	p = mmain_alloc();
 
-	c = mmain_getopt(p, argc, argv, NULL, NULL, NULL, NULL);
-	if (1 != c) 
-		mmain_exit(p, -1 == c ? 1 : 0);
+	c = mmain_getopt(p, argc, argv, NULL, 
+			"[infile]", NULL, NULL, NULL);
 
-	if (NULL == (mdoc = mmain_mdoc(p)))
+	argv += c;
+	if ((argc -= c) > 0)
+		in = *argv++;
+	else
+		in = "-";
+
+	if (NULL == (mdoc = mmain_mdoc(p, in)))
 		mmain_exit(p, 1);
 
 	doprint(mdoc_node(mdoc), 0);

@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.42 2009/03/14 12:35:02 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.43 2009/03/15 07:08:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -254,7 +254,7 @@ optsopt(struct termp *p, char *arg)
 		case (0):
 			p->enc = TERMENC_ANSI;
 			break;
-		case (2):
+		case (1):
 			p->iflags |= TERMP_NOPUNT;
 			break;
 		default:

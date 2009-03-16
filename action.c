@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.40 2009/03/11 00:39:58 kristaps Exp $ */
+/* $Id: action.c,v 1.41 2009/03/12 16:30:50 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -61,6 +61,9 @@ static	int	 post_os(struct mdoc *);
 static	int	 post_sh(struct mdoc *);
 static	int	 post_std(struct mdoc *);
 static	int	 post_prologue(struct mdoc *);
+
+#define	merr(m, t) nerr((m), (m)->last, (t))
+#define	mwarn(m, t) nwarn((m), (m)->last, (t))
 
 const	struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL }, /* \" */
@@ -178,10 +181,11 @@ const	struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL }, /* Bro */
 	{ NULL }, /* Brc */
 	{ NULL }, /* %C */
+	{ NULL }, /* Es */
+	{ NULL }, /* En */
 };
 
 
-#define	merr(m, t) nerr((m), (m)->last, (t))
 static int
 nerr(struct mdoc *m, const struct mdoc_node *n, enum merr type)
 {
@@ -200,7 +204,6 @@ nerr(struct mdoc *m, const struct mdoc_node *n, enum merr type)
 }
 
 
-#define	mwarn(m, t) nwarn((m), (m)->last, (t))
 static int
 nwarn(struct mdoc *m, const struct mdoc_node *n, enum mwarn type)
 {

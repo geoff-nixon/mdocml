@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.47 2009/03/12 16:30:50 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.48 2009/03/16 22:19:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -148,7 +148,8 @@
 #define	MDOC__C	 	 114
 #define	MDOC_Es	 	 115
 #define	MDOC_En	 	 116
-#define	MDOC_MAX	 117
+#define	MDOC_Dx	 	 117
+#define	MDOC_MAX	 118
 
 /* What follows is a list of ALL possible macro arguments. */
 

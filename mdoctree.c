@@ -1,6 +1,6 @@
-	/* $Id: mdoctree.c,v 1.6 2009/03/08 14:01:46 kristaps Exp $ */
+/* $Id: mdoctree.c,v 1.7 2009/03/15 07:08:53 kristaps Exp $ */
 /*
- * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the

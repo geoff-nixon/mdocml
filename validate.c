@@ -1,6 +1,6 @@
-/* $Id: validate.c,v 1.83 2009/03/13 13:56:13 kristaps Exp $ */
+/* $Id: validate.c,v 1.84 2009/03/16 22:19:19 kristaps Exp $ */
 /*
- * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the
@@ -315,6 +315,7 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, posts_text },			/* %C */
 	{ NULL, NULL },				/* Es */
 	{ NULL, NULL },				/* En */
+	{ NULL, NULL },				/* Dx */
 };
 
 

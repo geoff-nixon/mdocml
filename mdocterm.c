@@ -1,6 +1,6 @@
-/* $Id: mdocterm.c,v 1.45 2009/03/15 10:34:11 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.46 2009/03/16 22:19:19 kristaps Exp $ */
 /*
- * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the

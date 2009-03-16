@@ -1,6 +1,6 @@
-/* $Id: hash.c,v 1.9 2009/03/10 10:20:03 kristaps Exp $ */
+/* $Id: hash.c,v 1.10 2009/03/11 00:39:58 kristaps Exp $ */
 /*
- * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the

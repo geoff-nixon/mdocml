@@ -1,6 +1,6 @@
-/* $Id: argv.c,v 1.51 2009/03/14 05:21:58 kristaps Exp $ */
+/* $Id: argv.c,v 1.52 2009/03/16 22:19:19 kristaps Exp $ */
 /*
- * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the
@@ -222,6 +222,7 @@ static	int mdoc_argflags[MDOC_MAX] = {
 	ARGS_QUOTED, /* %C */
 	0, /* Es */
 	0, /* En */
+	0, /* Dx */
 };
 
 

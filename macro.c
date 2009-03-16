@@ -1,6 +1,6 @@
-/* $Id: macro.c,v 1.71 2009/03/12 23:05:21 kristaps Exp $ */
+/* $Id: macro.c,v 1.72 2009/03/16 22:19:19 kristaps Exp $ */
 /*
- * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the
@@ -197,6 +197,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ in_line_eoln, 0 }, /* %C */
 	{ obsolete, 0 }, /* Es */
 	{ obsolete, 0 }, /* En */
+	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED }, /* Dx */
 };
 
 const	struct mdoc_macro * const mdoc_macros = __mdoc_macros;

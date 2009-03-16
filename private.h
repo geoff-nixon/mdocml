@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.87 2009/03/08 19:28:09 kristaps Exp $ */
+/* $Id: private.h,v 1.88 2009/03/08 19:47:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -53,6 +53,8 @@ struct	mdoc_macro {
 #define	MDOC_PARSED	 (1 << 1)
 #define	MDOC_EXPLICIT	 (1 << 2)
 #define	MDOC_PROLOGUE	 (1 << 3)
+#define	MDOC_IGNDELIM	 (1 << 4) 
+	/* Reserved words in arguments treated as text. */
 };
 
 #define	mdoc_nwarn(mdoc, node, type, fmt, ...) \

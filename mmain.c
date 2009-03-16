@@ -1,4 +1,4 @@
-	/* $Id: mmain.c,v 1.11 2009/03/09 13:35:09 kristaps Exp $ */
+	/* $Id: mmain.c,v 1.12 2009/03/15 07:08:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -57,13 +57,6 @@ static	void		  msg_msg(void *, int, int, const char *);
 static	int		  msg_err(void *, int, int, const char *);
 static	int		  msg_warn(void *, int, int, 
 				enum mdoc_warn, const char *);
-
-#ifdef __linux__
-extern	int		  getsubopt(char **, char *const *, char **);
-extern	size_t		  strlcpy(char *, const char *, size_t);
-extern	size_t		  strlcat(char *, const char *, size_t);
-#endif
-
 
 /*
  * Print our and our caller's usage message.
@@ -176,7 +169,7 @@ mmain_free(struct mmain *p)
 }
 
 
-dead_pre void
+__dead void
 mmain_exit(struct mmain *p, int code) 
 {
 

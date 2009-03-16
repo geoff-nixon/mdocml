@@ -1,4 +1,4 @@
-/* $Id: att.in,v 1.2 2009/03/06 14:24:49 kristaps Exp $ */
+/* $Id: argv.c,v 1.51 2009/03/14 05:21:58 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -16,22 +16,19 @@
  * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  * PERFORMANCE OF THIS SOFTWARE.
  */
+#include <stdlib.h>
+#include <string.h>
 
-/*
- * This file defines volume titles for .Dt.
- *
- * Be sure to escape strings.
- */
+#include "private.h"
 
-LINE("USD",		"User\'s Supplementary Documents")
-LINE("PS1",		"Programmer\'s Supplementary Documents")
-LINE("AMD",		"Ancestral Manual Documents")
-LINE("SMM",		"System Manager\'s Manual")
-LINE("URM",		"User\'s Reference Manual")
-LINE("PRM",		"Programmer\'s Manual")
-LINE("KM",		"Kernel Manual")
-LINE("IND",		"Manual Master Index")
-LINE("MMI",		"Manual Master Index")
-LINE("LOCAL",		"Local Manual")
-LINE("LOC",		"Local Manual")
-LINE("CON",		"Contributed Software Manual")
+#define LINE(x, y) \
+	if (0 == strcmp(p, x)) return(y);
+
+const char *
+mdoc_a2vol(const char *p)
+{
+
+#include "vol.in"
+
+	return(NULL);
+}

@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.46 2009/03/16 22:19:19 kristaps Exp $ */
+/* $Id: mdocterm.c,v 1.47 2009/03/16 23:37:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -113,6 +113,7 @@ main(int argc, char *argv[])
 	footer(&termp, mdoc_meta(mdoc));
 
 	free(termp.buf);
+	asciifree(termp.symtab);
 
 	mmain_exit(p, 0);
 	/* NOTREACHED */

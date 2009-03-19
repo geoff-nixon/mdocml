@@ -1,4 +1,4 @@
-.\" $Id: mdocterm.1,v 1.26 2009/03/19 11:49:00 kristaps Exp $
+.\" $Id: mandoc.1,v 1.1 2009/03/19 16:17:27 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
 .\"
@@ -72,7 +72,9 @@ arguments may be comma-separated, such as
 .It Ar infile...
 Read input from zero or more
 .Ar infile .
-If unspecified, reads from stdin.
+If unspecified, reads from stdin.  If multiple files are specified,
+.Nm
+will halt with the first failed parse.
 .El
 .\" PARAGRAPH
 .Pp

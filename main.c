@@ -1,4 +1,4 @@
-/* $Id: main.c,v 1.1 2009/03/19 16:17:27 kristaps Exp $ */
+/* $Id: main.c,v 1.2 2009/03/19 16:18:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -27,6 +27,13 @@
 #include <unistd.h>
 
 #include "mdoc.h"
+
+#ifdef __linux__
+extern	int		  getsubopt(char **, char * const *, char **);
+# ifndef __dead
+#  define __dead __attribute__((__noreturn__))
+# endif
+#endif
 
 #define	WARN_WALL	  0x03		/* All-warnings mask. */
 #define	WARN_WCOMPAT	 (1 << 0)	/* Compatibility warnings. */

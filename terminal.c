@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.48 2009/03/17 13:35:46 kristaps Exp $ */
+/* $Id: terminal.c,v 1.1 2009/03/19 16:17:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -23,6 +23,11 @@
 #include <string.h>
 
 #include "term.h"
+
+#ifdef __linux__
+extern	size_t		  strlcpy(char *, const char *, size_t);
+extern	size_t		  strlcat(char *, const char *, size_t);
+#endif
 
 static	struct termp	 *termp_alloc(enum termenc);
 static	void		  termp_free(struct termp *);

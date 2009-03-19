@@ -1,4 +1,4 @@
-/* $Id: xstd.c,v 1.10 2009/03/16 22:19:19 kristaps Exp $ */
+/* $Id: xstd.c,v 1.11 2009/03/16 23:37:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -22,6 +22,11 @@
 #include <string.h>
 
 #include "private.h"
+
+#ifdef __linux__
+extern	size_t			strlcpy(char *, const char *, size_t);
+extern	size_t			strlcat(char *, const char *, size_t);
+#endif
 
 /*
  * Contains wrappers for common functions to simplify their general

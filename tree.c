@@ -1,4 +1,4 @@
-/* $Id: mdoctree.c,v 1.8 2009/03/16 23:37:28 kristaps Exp $ */
+/* $Id: tree.c,v 1.8 2009/03/19 16:17:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -26,6 +26,7 @@
 static	void	tree_body(const struct mdoc_node *, int);
 
 
+/* ARGSUSED */
 int
 tree_run(void *arg, const struct mdoc *mdoc)
 {

@@ -1,4 +1,4 @@
-/* $Id: mdocterm.c,v 1.49 2009/03/19 11:49:00 kristaps Exp $ */
+/* $Id: main.c,v 1.1 2009/03/19 16:17:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -405,6 +405,7 @@ woptions(int *wflags, char *arg)
 }
 
 
+/* ARGSUSED */
 static int
 merr(void *arg, int line, int col, const char *msg)
 {

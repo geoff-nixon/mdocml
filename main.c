@@ -1,4 +1,4 @@
-/* $Id: main.c,v 1.5 2009/03/20 19:56:25 kristaps Exp $ */
+/* $Id: main.c,v 1.6 2009/03/20 21:29:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -86,7 +86,7 @@ static	int		  fdesc(struct buf *, struct buf *,
 int
 main(int argc, char *argv[])
 {
-	int		 c, rc, fflags, wflags;
+	int		 c, rc, fflags;
 	struct mdoc_cb	 cb;
 	struct mdoc	*mdoc;
 	void		*outdata;
@@ -96,7 +96,7 @@ main(int argc, char *argv[])
 	out_free	 outfree;
 	struct curparse	 curp;
 
-	fflags = wflags = 0;
+	fflags = 0;
 	outtype = OUTT_ASCII;
 
 	bzero(&curp, sizeof(struct curparse));

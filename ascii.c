@@ -1,4 +1,4 @@
-/* $Id: ascii.c,v 1.2 2009/03/17 13:35:46 kristaps Exp $ */
+/* $Id: ascii.c,v 1.3 2009/03/20 15:14:01 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -92,7 +92,6 @@ term_ascii2htab(void)
 	if (NULL == (tab = malloc(sizeof(struct asciitab))))
 		err(1, "malloc");
 
-	assert(0 == sizeof(lines) % sizeof(struct line));
 	len = sizeof(lines) / sizeof(struct line);
 
 	if (NULL == (p = calloc((size_t)len, sizeof(struct linep))))

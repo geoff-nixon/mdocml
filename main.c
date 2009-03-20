@@ -1,4 +1,4 @@
-/* $Id: main.c,v 1.4 2009/03/19 18:30:26 kristaps Exp $ */
+/* $Id: main.c,v 1.5 2009/03/20 19:56:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -271,12 +271,12 @@ fdesc(struct buf *blk, struct buf *ln,
 	 * growable, hence passed in by ptr-ptr.
 	 */
 
-	if (-1 == fstat(fd, &st)) {
+	sz = BUFSIZ;
+
+	if (-1 == fstat(fd, &st))
 		warnx("%s", f);
-		sz = BUFSIZ;
-	} else 
-		sz = (unsigned)BUFSIZ > st.st_blksize ?
-			(size_t)BUFSIZ : st.st_blksize;
+	else if ((size_t)st.st_blksize > sz)
+		sz = st.st_blksize;
 
 	if (sz > blk->sz) {
 		blk->buf = realloc(blk->buf, sz);

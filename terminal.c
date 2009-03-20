@@ -1,4 +1,4 @@
-/* $Id: terminal.c,v 1.2 2009/03/19 16:40:49 kristaps Exp $ */
+/* $Id: terminal.c,v 1.3 2009/03/20 15:14:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -222,21 +222,12 @@ term_flushln(struct termp *p)
 				for (j = 0; j < (int)p->offset; j++)
 					putchar(' ');
 				vis = 0;
-			} else if (vis + vsz > bp)
-				warnx("word breaks right margin");
-
-			/* TODO: hyphenate. */
-
-		} else {
-			if (vis && vis + vsz > bp) {
-				putchar('\n');
-				for (j = 0; j < (int)p->rmargin; j++)
-					putchar(' ');
-				vis = p->rmargin - p->offset;
-			} else if (vis + vsz > bp) 
-				warnx("word breaks right margin");
-
-			/* TODO: hyphenate. */
+			} 
+		} else if (vis && vis + vsz > bp) {
+			putchar('\n');
+			for (j = 0; j < (int)p->rmargin; j++)
+				putchar(' ');
+			vis = p->rmargin - p->offset;
 		}
 
 		/* 

@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.61 2009/03/16 23:37:28 kristaps Exp $ */
+/* $Id: term.c,v 1.62 2009/03/20 15:14:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -1343,6 +1343,7 @@ termp_bd_post(DECL_ARGS)
 	if (MDOC_BODY != node->type) 
 		return;
 
+	term_flushln(p);
 	p->flags &= ~TERMP_LITERAL;
 	p->offset = pair->offset;
 	p->flags |= TERMP_NOSPACE;

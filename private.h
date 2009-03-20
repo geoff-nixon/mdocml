@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.88 2009/03/08 19:47:40 kristaps Exp $ */
+/* $Id: private.h,v 1.89 2009/03/16 22:19:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -33,6 +33,7 @@ struct	mdoc {
 	int		  linetok;
 	int		  flags;
 #define	MDOC_HALT	 (1 << 0)
+#define	MDOC_LITERAL	 (1 << 1)
 	int		  pflags;
 	enum mdoc_next	  next;
 	struct mdoc_node *last;
@@ -126,7 +127,8 @@ const char	 *mdoc_a2msec(const char *);
 int		  mdoc_valid_pre(struct mdoc *, 
 			const struct mdoc_node *);
 int		  mdoc_valid_post(struct mdoc *);
-int		  mdoc_action_pre(struct mdoc *, struct mdoc_node *);
+int		  mdoc_action_pre(struct mdoc *, 
+			const struct mdoc_node *);
 int		  mdoc_action_post(struct mdoc *);
 int		  mdoc_argv(struct mdoc *, int, int,
 			struct mdoc_arg **, int *, char *);

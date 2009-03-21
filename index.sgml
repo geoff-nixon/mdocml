@@ -118,7 +118,7 @@
 
 					<p class="boxed">
 					# pkg_delete mdocml<br>
-					# cd /usr/ports/devel/<br>
+					# cd /usr/ports/textproc/<br>
 					# rm -rf mdocml<br>
 					# ftp -V -o- http://mdocml.bsd.lv/ports-openbsd/mdocml.tar.gz | tar -zvxf -<br>
 					# cd mdocml<br>
@@ -132,7 +132,7 @@
 
 					<p class="boxed">
 					# pkg_delete mdocml<br>
-					# cd /usr/pkgsrc/devel/<br>
+					# cd /usr/pkgsrc/textproc/<br>
 					# rm -rf mdocml<br>
 					# ftp -V -o- http://mdocml.bsd.lv/ports-netbsd/mdocml.tar.gz | tar -zvxf -<br>
 					# cd mdocml<br>
@@ -164,7 +164,7 @@
 			<tr>
 				<td>
 					<div class="foot">
-						Copyright &#169; 2009 Kristaps D&#382;onsons, $Date: 2009/02/27 10:55:16 $
+						Copyright &#169; 2009 Kristaps D&#382;onsons, $Date: 2009/02/28 10:13:45 $
 					</div>
 				</td>
 			</tr>

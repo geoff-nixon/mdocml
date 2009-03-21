@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.90 2009/03/21 13:37:31 kristaps Exp $ */
+/* $Id: validate.c,v 1.91 2009/03/21 13:47:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -839,7 +839,8 @@ pre_bl(PRE_ARGS)
 	case (MDOC_Tag):
 		if (-1 != width)
 			break;
-		return(mdoc_nerr(mdoc, n, "missing %s argument",
+		return(mdoc_nwarn(mdoc, n, WARN_SYNTAX, 
+				"suggest %s argument", 
 				mdoc_argnames[MDOC_Width]));
 	default:
 		break;

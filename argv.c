@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.53 2009/03/16 23:37:28 kristaps Exp $ */
+/* $Id: argv.c,v 1.54 2009/03/21 09:42:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -330,7 +330,7 @@ mdoc_argv_free(struct mdoc_arg *p)
 		if (0 == p->argv[i].sz)
 			continue;
 		/* LINTED */
-		for (j = 0; j < (int)p->argv[i].sz; j++)
+		for (j = 0; j < (int)p->argv[i].sz; j++) 
 			free(p->argv[i].value[j]);
 
 		free(p->argv[i].value);

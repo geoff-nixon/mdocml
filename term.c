@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.64 2009/03/21 09:42:07 kristaps Exp $ */
+/* $Id: term.c,v 1.65 2009/03/21 13:09:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -320,8 +320,8 @@ arg_width(const struct mdoc_argv *arg, int pos)
 	if (0 == strcmp(arg->value[pos], "indent-two"))
 		return(INDENT * 2);
 
-	len = (int)strlen(arg->value[pos]);
-	assert(len > 0);
+	if (0 == (len = (int)strlen(arg->value[pos])))
+		return(0);
 
 	for (i = 0; i < len - 1; i++) 
 		if ( ! isdigit((u_char)arg->value[pos][i]))

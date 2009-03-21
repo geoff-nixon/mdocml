@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.65 2009/03/21 13:09:29 kristaps Exp $ */
+/* $Id: term.c,v 1.66 2009/03/21 13:26:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -1171,9 +1171,9 @@ termp_fn_pre(DECL_ARGS)
 	term_word(p, node->child->string);
 	p->flags &= ~ttypes[TTYPE_FUNC_NAME];
 
+	p->flags |= TERMP_NOSPACE;
 	term_word(p, "(");
 
-	p->flags |= TERMP_NOSPACE;
 	for (n = node->child->next; n; n = n->next) {
 		p->flags |= ttypes[TTYPE_FUNC_ARG];
 		term_word(p, n->string);
@@ -1231,7 +1231,7 @@ termp_fa_pre(DECL_ARGS)
 			term_word(p, ",");
 	}
 
-	if (node->next && node->next->tok == MDOC_Fa)
+	if (node->child && node->next && node->next->tok == MDOC_Fa)
 		term_word(p, ",");
 
 	return(0);

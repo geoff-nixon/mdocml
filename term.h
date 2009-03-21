@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.28 2009/03/19 16:17:27 kristaps Exp $ */
+/* $Id: term.h,v 1.29 2009/03/20 15:14:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -73,7 +73,7 @@ struct	termpair {
 		(termp)->flags |= (fl); \
 		(p)->flag = (fl); \
 		(p)->type |= TERMPAIR_FLAG; \
-	} while (0)
+	} while ( /* CONSTCOND */ 0)
 
 struct	termact {
 	int	(*pre)(struct termp *, struct termpair *,

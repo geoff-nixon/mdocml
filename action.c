@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.45 2009/03/20 16:43:28 kristaps Exp $ */
+/* $Id: action.c,v 1.46 2009/03/20 19:56:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -191,6 +191,7 @@ const	struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL, NULL }, /* Es */
 	{ NULL, NULL }, /* En */
 	{ NULL, NULL }, /* Dx */
+	{ NULL, NULL }, /* %Q */
 };
 
 

@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.52 2009/03/16 22:19:19 kristaps Exp $ */
+/* $Id: argv.c,v 1.53 2009/03/16 23:37:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -223,6 +223,7 @@ static	int mdoc_argflags[MDOC_MAX] = {
 	0, /* Es */
 	0, /* En */
 	0, /* Dx */
+	ARGS_QUOTED, /* %Q */
 };
 
 

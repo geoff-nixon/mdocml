@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.74 2009/03/21 09:20:15 kristaps Exp $ */
+/* $Id: macro.c,v 1.75 2009/03/21 09:30:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -198,6 +198,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ obsolete, 0 }, /* Es */
 	{ obsolete, 0 }, /* En */
 	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED }, /* Dx */
+	{ in_line_eoln, 0 }, /* %Q */
 };
 
 const	struct mdoc_macro * const mdoc_macros = __mdoc_macros;

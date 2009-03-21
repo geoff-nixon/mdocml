@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.88 2009/03/21 09:48:30 kristaps Exp $ */
+/* $Id: validate.c,v 1.89 2009/03/21 13:09:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -216,9 +216,9 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, NULL },				/* Ar */
 	{ pres_cd, posts_text },		/* Cd */ 
 	{ NULL, NULL },				/* Cm */
-	{ NULL, posts_text },			/* Dv */ 
+	{ NULL, NULL },				/* Dv */ 
 	{ pres_er, posts_text },		/* Er */ 
-	{ NULL, posts_text },			/* Ev */ 
+	{ NULL, NULL },				/* Ev */ 
 	{ pres_ex, posts_ex },			/* Ex */ 
 	{ NULL, posts_text },			/* Fa */ 
 	{ pres_fd, posts_wtext },		/* Fd */
@@ -227,7 +227,7 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, posts_wtext },			/* Ft */ 
 	{ NULL, posts_text },			/* Ic */ 
 	{ NULL, posts_in },			/* In */ 
-	{ NULL, posts_text },			/* Li */
+	{ NULL, NULL },				/* Li */
 	{ NULL, posts_wtext },			/* Nd */
 	{ NULL, posts_nm },			/* Nm */
 	{ NULL, posts_wline },			/* Op */
@@ -235,7 +235,7 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, NULL },				/* Pa */
 	{ pres_rv, posts_rv },			/* Rv */
 	{ NULL, posts_st },			/* St */ 
-	{ NULL, posts_text },			/* Va */
+	{ NULL, NULL },				/* Va */
 	{ NULL, posts_text },			/* Vt */ 
 	{ NULL, posts_xr },			/* Xr */ 
 	{ NULL, posts_text },			/* %A */

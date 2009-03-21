@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.50 2009/03/19 11:49:00 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.51 2009/03/21 09:42:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -321,8 +321,6 @@ int		  mdoc_endparse(struct mdoc *);
 const char	 *mdoc_a2att(const char *);
 const char	 *mdoc_a2lib(const char *);
 const char	 *mdoc_a2st(const char *);
-
-int		  mdoc_isdelim(const char *);
 
 __END_DECLS
 

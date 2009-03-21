@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.87 2009/03/21 09:42:07 kristaps Exp $ */
+/* $Id: validate.c,v 1.88 2009/03/21 09:48:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -265,7 +265,7 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, posts_wline },			/* Dq */
 	{ NULL, NULL },				/* Ec */
 	{ NULL, NULL },				/* Ef */ 
-	{ NULL, posts_text },			/* Em */ 
+	{ NULL, NULL },				/* Em */ 
 	{ NULL, NULL },				/* Eo */
 	{ NULL, NULL },				/* Fx */
 	{ NULL, posts_text },			/* Ms */ 

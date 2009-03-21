@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.89 2009/03/16 22:19:19 kristaps Exp $ */
+/* $Id: private.h,v 1.90 2009/03/20 15:14:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -117,6 +117,7 @@ void		 *mdoc_tokhash_alloc(void);
 int		  mdoc_tokhash_find(const void *, const char *);
 void		  mdoc_tokhash_free(void *);
 int		  mdoc_iscdelim(char);
+int		  mdoc_isdelim(const char *);
 size_t		  mdoc_isescape(const char *);
 enum	mdoc_sec  mdoc_atosec(const char *);
 time_t		  mdoc_atotime(const char *);

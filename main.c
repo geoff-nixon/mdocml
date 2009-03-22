@@ -1,4 +1,4 @@
-/* $Id: main.c,v 1.7 2009/03/20 21:58:38 kristaps Exp $ */
+/* $Id: main.c,v 1.8 2009/03/22 19:01:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -401,13 +401,14 @@ fdesc(struct buf *blk, struct buf *ln,
 				lnn++;
 				continue;
 			}
+			macro = 0;
 #endif	/* STRIP_XO */
 
 			ln->buf[pos] = 0;
 			if ( ! mdoc_parseln(mdoc, lnn, ln->buf))
 				return(0);
 			lnn++;
-			macro = pos = 0;
+			pos = 0;
 		}
 	}
 

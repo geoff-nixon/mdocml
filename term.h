@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.30 2009/03/21 09:48:30 kristaps Exp $ */
+/* $Id: term.h,v 1.31 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -20,6 +20,7 @@
 #define TERM_H
 
 #include "mdoc.h"
+#include "man.h"
 
 /* FIXME - clean up tabs. */
 

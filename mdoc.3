@@ -1,4 +1,4 @@
-.\" $Id: mdoc.3,v 1.21 2009/03/21 21:09:00 kristaps Exp $
+.\" $Id: mdoc.3,v 1.22 2009/03/22 08:52:27 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
 .\"
@@ -324,19 +324,22 @@ macro.
 .It
 The 
 .Sq \&Bsx
-macro doesn't yet understand version arguments.
+macro family doesn't yet understand version arguments.
 .\" LIST-ITEM
 .It
 If not given a value, the \-offset argument to
 .Sq \&Bd
 and
 .Sq \&Bl
-should by the width of 
-.Qq <string> .
+should be the width of 
+.Qq <string> ;
+instead, a value of 
+.Li 10n
+is provided.
 .\" LIST-ITEM
 .It
 Columns widths in
-.Sq \&Bl -column
+.Sq \&Bl \-column
 should default to width
 .Qq <stringx>
 if not included.

@@ -1,4 +1,4 @@
-/* $Id: hash.c,v 1.11 2009/03/16 23:37:28 kristaps Exp $ */
+/* $Id: man_hash.c,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -48,6 +48,8 @@ int
 man_hash_find(const void *arg, const char *tmp)
 {
 	int		 i;
+
+	/* TODO */
 
 	for (i = 0; i < MAN_MAX; i++) 
 		if (0 == strcasecmp(tmp, man_macronames[i]))

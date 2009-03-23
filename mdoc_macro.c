@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.77 2009/03/22 19:01:11 kristaps Exp $ */
+/* $Id: mdoc_macro.c,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -305,12 +305,9 @@ swarn(struct mdoc *mdoc, enum mdoc_type type,
  * are errors.
  */
 int
-macro_end(struct mdoc *mdoc)
+mdoc_macroend(struct mdoc *mdoc)
 {
 	struct mdoc_node *n;
-
-	assert(mdoc->first);
-	assert(mdoc->last);
 
 	/* Scan for open explicit scopes. */
 

@@ -1,4 +1,4 @@
-/* $Id: private.h,v 1.91 2009/03/21 13:09:29 kristaps Exp $ */
+/* $Id: libmdoc.h,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -153,7 +153,7 @@ int	  	  xstrlcpy(char *, const char *, size_t);
 int	  	  xstrcmp(const char *, const char *);
 void	 	 *xrealloc(void *, size_t);
 char	 	 *xstrdup(const char *);
-int		  macro_end(struct mdoc *);
+int		  mdoc_macroend(struct mdoc *);
 
 __END_DECLS
 

@@ -1,4 +1,4 @@
-/* $Id: libman.h,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
+/* $Id: libman.h,v 1.2 2009/03/23 15:20:51 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -47,6 +47,7 @@ int		  man_macro(struct man *, int,
 			int, int, int *, char *);
 int		  man_hash_find(const void *, const char *);
 void		  man_hash_free(void *);
+int		  man_macroend(struct man *);
 
 __END_DECLS
 

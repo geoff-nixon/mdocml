@@ -1,4 +1,4 @@
-/* $Id: mdoc.c,v 1.69 2009/03/21 09:42:07 kristaps Exp $ */
+/* $Id: mdoc.c,v 1.70 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -31,16 +31,6 @@
  * handles allocation of data, and so forth.  Most of the "work" is done
  * in macro.c, validate.c and action.c.
  */
-
-/* FIXME: have this accept line/pos/tok. */
-static	struct mdoc_node *mdoc_node_alloc(const struct mdoc *);
-static	int		  mdoc_node_append(struct mdoc *, 
-				struct mdoc_node *);
-
-static	int		  parsetext(struct mdoc *, int, char *);
-static	int		  parsemacro(struct mdoc *, int, char *);
-static	int		  macrowarn(struct mdoc *, int, const char *);
-
 
 const	char *const __mdoc_macronames[MDOC_MAX] = {		 
 	"\\\"",		"Dd",		"Dt",		"Os",
@@ -95,29 +85,33 @@ const	char *const __mdoc_argnames[MDOC_ARG_MAX] = {
 const	char * const *mdoc_macronames = __mdoc_macronames;
 const	char * const *mdoc_argnames = __mdoc_argnames;
 
+/* FIXME: have this accept line/pos/tok. */
+/* FIXME: mdoc_alloc1 and mdoc_free1 like in man.c. */
+static	struct mdoc_node *mdoc_node_alloc(const struct mdoc *);
+static	int		  mdoc_node_append(struct mdoc *, 
+				struct mdoc_node *);
+
+static	int		  parsetext(struct mdoc *, int, char *);
+static	int		  parsemacro(struct mdoc *, int, char *);
+static	int		  macrowarn(struct mdoc *, int, const char *);
+
 
 /*
  * Get the first (root) node of the parse tree.
  */
 const struct mdoc_node *
-mdoc_node(const struct mdoc *mdoc)
+mdoc_node(const struct mdoc *m)
 {
 
-	if (MDOC_HALT & mdoc->flags)
-		return(NULL);
-	if (mdoc->first)
-		assert(MDOC_ROOT == mdoc->first->type);
-	return(mdoc->first);
+	return(MDOC_HALT & m->flags ? NULL : m->first);
 }
 
 
 const struct mdoc_meta *
-mdoc_meta(const struct mdoc *mdoc)
+mdoc_meta(const struct mdoc *m)
 {
 
-	if (MDOC_HALT & mdoc->flags)
-		return(NULL);
-	return(&mdoc->meta);
+	return(MDOC_HALT & m->flags ? NULL : &m->meta);
 }
 
 
@@ -366,6 +360,18 @@ mdoc_node_append(struct mdoc *mdoc, struct mdoc_node *p)
 	}
 
 	mdoc->last = p;
+
+	switch (p->type) {
+	case (MDOC_TEXT):
+		if ( ! mdoc_valid_post(mdoc))
+			return(0);
+		if ( ! mdoc_action_post(mdoc))
+			return(0);
+		break;
+	default:
+		break;
+	}
+
 	return(1);
 }
 

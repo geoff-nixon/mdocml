@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.52 2009/03/21 13:09:29 kristaps Exp $ */
+/* $Id: man.h,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -40,14 +40,12 @@
 #define	MAN_R		 16
 #define	MAN_B		 17
 #define	MAN_I		 18
-#define	MAN_MAX	 	 19
+#define	MAN_IR		 19
+#define	MAN_MAX	 	 20
 
 enum	man_type {
 	MAN_TEXT,
 	MAN_ELEM,
-	MAN_HEAD,
-	MAN_BODY,
-	MAN_BLOCK,
 	MAN_ROOT
 };
 
@@ -71,9 +69,6 @@ struct	man_node {
 #define	MAN_VALID	(1 << 0)
 #define	MAN_ACTED	(1 << 1)
 	enum man_type	 type;
-
-	struct man_node	*head;
-	struct man_node	*body;
 	char		*string;
 };
 

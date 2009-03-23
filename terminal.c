@@ -1,4 +1,4 @@
-/* $Id: terminal.c,v 1.5 2009/03/21 13:09:29 kristaps Exp $ */
+/* $Id: terminal.c,v 1.6 2009/03/22 19:10:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -76,9 +76,13 @@ ascii_alloc(void)
 
 
 int
-terminal_run(void *arg, const struct mdoc *mdoc)
+terminal_run(void *arg, const struct man *man,
+		const struct mdoc *mdoc)
 {
 	struct termp	*p;
+
+	if (NULL == mdoc)
+		return(1);
 
 	p = (struct termp *)arg;
 

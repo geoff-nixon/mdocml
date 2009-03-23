@@ -1,4 +1,4 @@
-/* $Id: main.c,v 1.11 2009/03/23 15:20:51 kristaps Exp $ */
+/* $Id: main.c,v 1.12 2009/03/23 15:41:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -34,7 +34,7 @@ extern	int		  getsubopt(char **, char * const *, char **);
 # ifndef __dead
 #  define __dead __attribute__((__noreturn__))
 # endif
-#elif defined(__FreeBSD__)
+#elif defined(__dead2)
 # ifndef __dead
 #  define __dead __dead2
 # endif

@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.91 2009/03/21 13:47:02 kristaps Exp $ */
+/* $Id: validate.c,v 1.92 2009/03/21 21:09:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -23,7 +23,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
-#include "private.h"
+#include "libmdoc.h"
 
 /* FIXME: .Bl -diag can't have non-text children in HEAD. */
 /* TODO: ignoring Pp (it's superfluous in some invocations). */

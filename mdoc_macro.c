@@ -1,4 +1,4 @@
-/* $Id: macro.c,v 1.76 2009/03/21 09:42:07 kristaps Exp $ */
+/* $Id: macro.c,v 1.77 2009/03/22 19:01:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -22,7 +22,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "private.h"
+#include "libmdoc.h"
 
 /*
  * This has scanning/parsing routines, each of which extract a macro and

@@ -1,4 +1,4 @@
-/* $Id: xstd.c,v 1.11 2009/03/16 23:37:28 kristaps Exp $ */
+/* $Id: xstd.c,v 1.12 2009/03/19 16:40:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -21,7 +21,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "private.h"
+#include "libmdoc.h"
 
 #ifdef __linux__
 extern	size_t			strlcpy(char *, const char *, size_t);
@@ -64,15 +64,6 @@ xrealloc(void *ptr, size_t sz)
 	return(p);
 }
 
-void *
-xcalloc(size_t num, size_t sz)
-{
-	void		*p;
-
-	if (NULL == (p = calloc(num, sz)))
-		err(EXIT_FAILURE, "calloc");
-	return(p);
-}
 
 char *
 xstrdup(const char *p)

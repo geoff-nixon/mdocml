@@ -1,4 +1,4 @@
-/* $Id: argv.c,v 1.51 2009/03/14 05:21:58 kristaps Exp $ */
+/* $Id: arch.c,v 1.1 2009/03/16 22:19:19 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -19,7 +19,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "private.h"
+#include "libmdoc.h"
 
 #define LINE(x, y) \
 	if (0 == strcmp(p, x)) return(y);

@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.48 2009/03/21 09:48:29 kristaps Exp $ */
+/* $Id: action.c,v 1.49 2009/03/21 21:09:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -24,7 +24,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "private.h"
+#include "libmdoc.h"
 
 /*
  * Actions are executed on macros after they've been post-validated: in
@@ -272,7 +272,10 @@ post_std(POST_ARGS)
 
 	assert(m->meta.name);
 
-	m->last->args->argv[0].value = xcalloc(1, sizeof(char *));
+	m->last->args->argv[0].value = calloc(1, sizeof(char *));
+	if (NULL == m->last->args->argv[0].value)
+		err(1, "calloc");
+
 	m->last->args->argv[0].sz = 1;
 	m->last->args->argv[0].value[0] = xstrdup(m->meta.name);
 	return(1);
@@ -493,7 +496,9 @@ post_bl_tagwidth(struct mdoc *m)
 	n->args->argv[n->args->argc - 1].line = m->last->line;
 	n->args->argv[n->args->argc - 1].pos = m->last->pos;
 	n->args->argv[n->args->argc - 1].sz = 1;
-	n->args->argv[n->args->argc - 1].value = xcalloc(1, sizeof(char *));
+	n->args->argv[n->args->argc - 1].value = calloc(1, sizeof(char *));
+	if (NULL == n->args->argv[n->args->argc - 1].value)
+		err(1, "calloc");
 	n->args->argv[n->args->argc - 1].value[0] = xstrdup(buf);
 
 	return(1);

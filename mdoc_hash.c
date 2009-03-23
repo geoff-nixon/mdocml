@@ -1,4 +1,4 @@
-/* $Id: hash.c,v 1.10 2009/03/11 00:39:58 kristaps Exp $ */
+/* $Id: hash.c,v 1.11 2009/03/16 23:37:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -23,7 +23,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "private.h"
+#include "libmdoc.h"
 
 /*
  * Routines for the perfect-hash hashtable used by the parser to look up

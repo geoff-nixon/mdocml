@@ -1,4 +1,4 @@
-/* $Id: main.c,v 1.10 2009/03/23 14:22:11 kristaps Exp $ */
+/* $Id: main.c,v 1.11 2009/03/23 15:20:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -271,7 +271,9 @@ __dead static void
 usage(void)
 {
 
-	(void)fprintf(stderr, "usage: %s\n", __progname);
+	(void)fprintf(stderr, "usage: %s [-V] [-foption...] "
+			"[-mformat] [-Toutput] [-Werr...]\n", 
+			__progname);
 	exit(1);
 	/* NOTREACHED */
 }

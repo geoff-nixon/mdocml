@@ -1,4 +1,4 @@
-/* $Id: man_macro.c,v 1.2 2009/03/23 14:31:58 kristaps Exp $ */
+/* $Id: man_macro.c,v 1.3 2009/03/23 15:20:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -56,8 +56,7 @@ man_macro(struct man *man, int tok, int line,
 		man->next = MAN_NEXT_SIBLING;
 	}
 
-	/* TODO: validate. */
-	/* TODO: validate. */
+	/* TODO: validate & actions. */
 
 	man->last = n;
 	man->next = MAN_NEXT_SIBLING;
@@ -66,8 +65,17 @@ man_macro(struct man *man, int tok, int line,
 }
 
 
-/* ARGSUSED */
 int
+man_macroend(struct man *m)
+{
+
+	/* TODO: validate & actions. */
+	return(1);
+}
+
+
+/* ARGSUSED */
+static int
 man_args(struct man *man, int line, 
 		int *pos, char *buf, char **v)
 {

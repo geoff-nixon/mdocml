@@ -1,4 +1,4 @@
-/* $Id: man.c,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
+/* $Id: man.c,v 1.2 2009/03/23 15:20:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -102,8 +102,12 @@ int
 man_endparse(struct man *m)
 {
 
-	/* FIXME. */
-	return(1);
+	if (MAN_HALT & m->flags)
+		return(0);
+	else if (man_macroend(m))
+		return(1);
+	m->flags |= MAN_HALT;
+	return(0);
 }
 
 
@@ -334,3 +338,4 @@ err:	/* Error out. */
 	m->flags |= MAN_HALT;
 	return(0);
 }
+

@@ -1,4 +1,4 @@
-/* $Id: action.c,v 1.49 2009/03/21 21:09:00 kristaps Exp $ */
+/* $Id: action.c,v 1.50 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -19,6 +19,7 @@
 #include <sys/utsname.h>
 
 #include <assert.h>
+#include <err.h>
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,4 +1,4 @@
-/* $Id: man.c,v 1.4 2009/03/25 15:17:49 kristaps Exp $ */
+/* $Id: man.c,v 1.5 2009/03/25 15:36:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -133,8 +133,8 @@ man_free1(struct man *man)
 		man_node_freelist(man->first);
 	if (man->meta.title)
 		free(man->meta.title);
-	if (man->meta.os)
-		free(man->meta.os);
+	if (man->meta.source)
+		free(man->meta.source);
 	if (man->meta.vol)
 		free(man->meta.vol);
 }

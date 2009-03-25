@@ -1,4 +1,4 @@
-/* $Id: man.h,v 1.2 2009/03/23 15:20:51 kristaps Exp $ */
+/* $Id: man.h,v 1.3 2009/03/25 15:17:49 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -51,10 +51,10 @@ enum	man_type {
 
 struct	man_meta {
 	int		 msec;
-	char		*vol;
 	time_t		 date;
+	char		*vol;
 	char		*title;
-	char		*os;
+	char		*source;
 };
 
 struct	man_node {

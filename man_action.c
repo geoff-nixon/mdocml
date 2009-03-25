@@ -1,4 +1,4 @@
-/* $Id: man_action.c,v 1.1 2009/03/25 15:36:05 kristaps Exp $ */
+/* $Id: man_action.c,v 1.2 2009/03/25 16:07:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -27,6 +27,9 @@
 
 #include "libman.h"
 
+#ifdef __linux__
+extern	char		*strptime(const char *, const char *, struct tm *);
+#endif
 
 struct	actions {
 	int	(*post)(struct man *);

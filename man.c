@@ -1,4 +1,4 @@
-/* $Id: man.c,v 1.6 2009/03/25 16:07:36 kristaps Exp $ */
+/* $Id: man.c,v 1.7 2009/03/25 21:03:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -18,6 +18,7 @@
  */
 #include <assert.h>
 #include <ctype.h>
+#include <err.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>

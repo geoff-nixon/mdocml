@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.93 2009/03/23 14:22:11 kristaps Exp $ */
+/* $Id: man_validate.c,v 1.1 2009/03/25 15:17:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -80,7 +80,6 @@ man_valid_post(struct man *m)
 
 	if (MAN_VALID & m->last->flags)
 		return(1);
-
 	m->last->flags |= MAN_VALID;
 
 	switch (m->last->type) {

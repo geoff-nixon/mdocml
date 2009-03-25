@@ -1,4 +1,4 @@
-/* $Id: man_macro.c,v 1.5 2009/03/25 15:17:49 kristaps Exp $ */
+/* $Id: man_macro.c,v 1.6 2009/03/25 15:36:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -56,8 +56,16 @@ man_macro(struct man *man, int tok, int line,
 		man->next = MAN_NEXT_SIBLING;
 	}
 
-	for ( ; man->last && man->last != n; 
-			man->last = man->last->parent) {
+	/*
+	 * Note that when TH is pruned, we'll be back at the root, so
+	 * make sure that we don't clobber as its sibling.
+	 */
+
+	for ( ; man->last; man->last = man->last->parent) {
+		if (man->last == n)
+			break;
+		if (man->last->type == MAN_ROOT)
+			break;
 		if ( ! man_valid_post(man))
 			return(0);
 		if ( ! man_action_post(man))
@@ -66,12 +74,16 @@ man_macro(struct man *man, int tok, int line,
 
 	assert(man->last);
 
-	if ( ! man_valid_post(man))
-		return(0);
-	if ( ! man_action_post(man))
-		return(0);
+	/*
+	 * Same here regarding whether we're back at the root. 
+	 */
 
-	man->next = MAN_NEXT_SIBLING;
+	if (man->last->type != MAN_ROOT && ! man_valid_post(man))
+		return(0);
+	if (man->last->type != MAN_ROOT && ! man_action_post(man))
+		return(0);
+	if (man->last->type != MAN_ROOT)
+		man->next = MAN_NEXT_SIBLING;
 
 	return(1);
 }
@@ -88,6 +100,7 @@ man_macroend(struct man *m)
 		if ( ! man_action_post(m))
 			return(0);
 	}
+	assert(m->last == m->first);
 
 	if ( ! man_valid_post(m))
 		return(0);

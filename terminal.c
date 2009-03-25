@@ -1,4 +1,4 @@
-/* $Id: terminal.c,v 1.6 2009/03/22 19:10:48 kristaps Exp $ */
+/* $Id: terminal.c,v 1.7 2009/03/23 15:20:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -49,22 +49,6 @@ static	void		  term_stringa(struct termp *,
 static	int		  term_isopendelim(const char *, int);
 static	int		  term_isclosedelim(const char *, int);
 static	void		  sanity(const struct mdoc_node *); /* XXX */
-
-
-void *
-latin1_alloc(void)
-{
-
-	return(term_alloc(TERMENC_LATIN1));
-}
-
-
-void *
-utf8_alloc(void)
-{
-
-	return(term_alloc(TERMENC_UTF8));
-}
 
 
 void *

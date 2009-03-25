@@ -1,4 +1,4 @@
-/* $Id: man.h,v 1.3 2009/03/25 15:17:49 kristaps Exp $ */
+/* $Id: man.h,v 1.4 2009/03/25 16:07:36 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -72,6 +72,8 @@ struct	man_node {
 	char		*string;
 };
 
+#define	MAN_IGN_MACRO	 (1 << 0) /* Ignore unknown macros. */
+
 extern	const char *const *man_macronames;
 
 struct	man_cb {
@@ -84,7 +86,7 @@ __BEGIN_DECLS
 struct	man;
 
 void	 	  man_free(struct man *);
-struct	man	 *man_alloc(void *, const struct man_cb *);
+struct	man	 *man_alloc(void *, int, const struct man_cb *);
 void		  man_reset(struct man *);
 int	 	  man_parseln(struct man *, int, char *buf);
 int		  man_endparse(struct man *);

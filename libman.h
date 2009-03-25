@@ -1,4 +1,4 @@
-/* $Id: libman.h,v 1.4 2009/03/25 15:17:49 kristaps Exp $ */
+/* $Id: libman.h,v 1.5 2009/03/25 15:36:05 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -30,6 +30,7 @@ struct	man {
 	void		*data;
 	struct man_cb	 cb;
 	void		*htab;
+	int		 pflags;
 	int		 flags;
 #define	MAN_HALT	(1 << 0)
 	enum man_next	 next;

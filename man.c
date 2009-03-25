@@ -1,4 +1,4 @@
-/* $Id: man.c,v 1.3 2009/03/23 15:41:09 kristaps Exp $ */
+/* $Id: man.c,v 1.4 2009/03/25 15:17:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -178,21 +178,14 @@ man_node_append(struct man *man, struct man_node *p)
 		/* NOTREACHED */
 	}
 
-#if 0
-	if ( ! man_action_pre(man, p))
-		return(0);
-#endif
-
 	man->last = p;
 
 	switch (p->type) {
 	case (MAN_TEXT):
 		if ( ! man_valid_post(man))
 			return(0);
-#if 0
 		if ( ! man_action_post(man))
 			return(0);
-#endif
 		break;
 	default:
 		break;

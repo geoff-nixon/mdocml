@@ -1,4 +1,4 @@
-/* $Id: validate.c,v 1.92 2009/03/21 21:09:00 kristaps Exp $ */
+/* $Id: validate.c,v 1.93 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *

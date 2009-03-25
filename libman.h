@@ -1,4 +1,4 @@
-/* $Id: libman.h,v 1.2 2009/03/23 15:20:51 kristaps Exp $ */
+/* $Id: libman.h,v 1.3 2009/03/23 15:41:09 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -27,6 +27,8 @@ enum	man_next {
 };
 
 struct	man {
+	void		*data;
+	struct man_cb	 cb;
 	void		*htab;
 	int		 flags;
 #define	MAN_HALT	(1 << 0)
@@ -48,6 +50,8 @@ int		  man_macro(struct man *, int,
 int		  man_hash_find(const void *, const char *);
 void		  man_hash_free(void *);
 int		  man_macroend(struct man *);
+int		  man_vwarn(struct man *, int, int, const char *, ...);
+int		  man_verr(struct man *, int, int, const char *, ...);
 
 __END_DECLS
 

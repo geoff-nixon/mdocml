@@ -1,4 +1,4 @@
-/* $Id: main.c,v 1.15 2009/03/25 21:03:13 kristaps Exp $ */
+/* $Id: main.c,v 1.16 2009/03/25 21:46:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -401,9 +401,9 @@ static int
 moptions(enum intt *tflags, char *arg)
 {
 
-	if (0 == strcmp(arg, "mdoc"))
+	if (0 == strcmp(arg, "doc"))
 		*tflags = INTT_MDOC;
-	else if (0 == strcmp(arg, "man"))
+	else if (0 == strcmp(arg, "an"))
 		*tflags = INTT_MAN;
 	else {
 		warnx("bad argument: -m%s", arg);

@@ -1,4 +1,4 @@
-/* $Id: terminal.c,v 1.8 2009/03/25 21:46:24 kristaps Exp $ */
+/* $Id: terminal.c,v 1.9 2009/03/26 14:38:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -25,11 +25,6 @@
 #include "term.h"
 #include "man.h"
 #include "mdoc.h"
-
-#ifdef __linux__
-extern	size_t		  strlcpy(char *, const char *, size_t);
-extern	size_t		  strlcat(char *, const char *, size_t);
-#endif
 
 extern	int		  man_run(struct termp *, 
 				const struct man *);

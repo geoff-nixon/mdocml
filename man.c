@@ -1,4 +1,4 @@
-/* $Id: man.c,v 1.10 2009/03/26 11:16:21 kristaps Exp $ */
+/* $Id: man.c,v 1.11 2009/03/26 14:38:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -343,7 +343,7 @@ man_pmacro(struct man *m, int ln, char *buf)
 		if ( ! man_vwarn(m, ln, ppos, 
 				"ill-formed macro: %s", mac))
 			goto err;
-		goto out;
+		return(1);
 	}
 	
 	if (MAN_MAX == (c = man_hash_find(m->htab, mac))) {
@@ -355,7 +355,7 @@ man_pmacro(struct man *m, int ln, char *buf)
 		if ( ! man_vwarn(m, ln, ppos, 
 				"unknown macro: %s", mac))
 			goto err;
-		goto out;
+		return(1);
 	}
 
 	/* The macro is sane.  Jump to the next word. */

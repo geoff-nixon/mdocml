@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.69 2009/03/23 09:42:43 kristaps Exp $ */
+/* $Id: mdoc_term.c,v 1.1 2009/03/26 14:38:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -305,6 +305,11 @@ static const struct termact termacts[MDOC_MAX] = {
 	{ termp_dx_pre, NULL }, /* Dx */ 
 	{ NULL, NULL }, /* %Q */ 
 };
+
+#ifdef __linux__
+extern	size_t		  strlcpy(char *, const char *, size_t);
+extern	size_t		  strlcat(char *, const char *, size_t);
+#endif
 
 static	int	  arg_hasattr(int, const struct mdoc_node *);
 static	int	  arg_getattrs(const int *, int *, size_t,

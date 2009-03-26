@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.69 2009/03/23 09:42:43 kristaps Exp $ */
+/* $Id: man_term.c,v 1.1 2009/03/26 14:38:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -24,6 +24,11 @@
 
 #include "term.h"
 #include "man.h"
+
+#ifdef __linux__
+extern	size_t		  strlcpy(char *, const char *, size_t);
+extern	size_t		  strlcat(char *, const char *, size_t);
+#endif
 
 #define	DECL_ARGS 	  struct termp *p, \
 			  const struct man_node *n, \

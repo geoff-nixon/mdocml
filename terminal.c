@@ -1,4 +1,4 @@
-/* $Id: terminal.c,v 1.10 2009/03/26 14:44:41 kristaps Exp $ */
+/* $Id: terminal.c,v 1.11 2009/03/26 16:44:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -456,7 +456,8 @@ term_pescape(struct termp *p, const char *word, int *i, int len)
 		}
 	
 	} else if ('f' == word[*i]) {
-		if (++(*i) >= len)
+		(*i)++;
+		if (*i >= len)
 			return;
 		switch (word[*i]) {
 		case ('B'):

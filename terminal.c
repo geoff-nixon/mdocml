@@ -1,4 +1,4 @@
-/* $Id: terminal.c,v 1.9 2009/03/26 14:38:11 kristaps Exp $ */
+/* $Id: terminal.c,v 1.10 2009/03/26 14:44:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -454,6 +454,26 @@ term_pescape(struct termp *p, const char *word, int *i, int len)
 			term_nescape(p, &word[*i], 1);
 			return;
 		}
+	
+	} else if ('f' == word[*i]) {
+		if (++(*i) >= len)
+			return;
+		switch (word[*i]) {
+		case ('B'):
+			p->flags |= TERMP_BOLD;
+			break;
+		case ('I'):
+			p->flags |= TERMP_UNDER;
+			break;
+		case ('P'):
+			/* FALLTHROUGH */
+		case ('R'):
+			p->flags &= ~TERMP_STYLE;
+			break;
+		default:
+			break;
+		}
+		return;
 
 	} else if ('[' != word[*i]) {
 		term_nescape(p, &word[*i], 1);

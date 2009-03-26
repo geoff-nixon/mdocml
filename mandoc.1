@@ -1,4 +1,4 @@
-.\" $Id: mandoc.1,v 1.9 2009/03/23 16:02:56 kristaps Exp $
+.\" $Id: mandoc.1,v 1.10 2009/03/26 16:23:22 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
 .\"
@@ -160,6 +160,17 @@ format is
 recommended; 
 .Xr man 7
 should only be used for legacy manuals.
+.Pp
+The following escape sequences are recognised, although the per-format
+compiler may not allow certain sequences.
+.Bl -tag -width Ds -offset XXXX
+.It \efX
+sets the font mode to X (B, I, R or P, where P resets the font)
+.It \eX, \e(XX, \e[XN]
+queries the special-character table for a corresponding symbol
+.It \e*X, \e*(XX, \e*[XN]
+deprecated special-character format
+.El
 .\" SUB-SECTION
 .Ss Output Formats
 The

@@ -1,4 +1,4 @@
-/* $Id: man_macro.c,v 1.6 2009/03/25 15:36:05 kristaps Exp $ */
+/* $Id: man_macro.c,v 1.7 2009/03/25 16:07:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -18,7 +18,6 @@
  */
 #include <assert.h>
 #include <ctype.h>
-#include <err.h> /* XXX */
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -113,7 +112,7 @@ man_macroend(struct man *m)
 
 /* ARGSUSED */
 static int
-man_args(struct man *man, int line, 
+man_args(struct man *m, int line, 
 		int *pos, char *buf, char **v)
 {
 
@@ -146,8 +145,10 @@ man_args(struct man *man, int line,
 		if (buf[*pos])
 			return(1);
 
-		warnx("tail whitespace");
-		return(-1);
+		if ( ! man_vwarn(m, line, *pos, "trailing spaces"))
+			return(-1);
+
+		return(1);
 	}
 
 	/*
@@ -162,8 +163,9 @@ man_args(struct man *man, int line,
 		(*pos)++;
 
 	if (0 == buf[*pos]) {
-		warnx("unterminated quotation");
-		return(-1);
+		if ( ! man_vwarn(m, line, *pos, "unterminated quote"))
+			return(-1);
+		return(1);
 	}
 
 	buf[(*pos)++] = 0;
@@ -176,6 +178,7 @@ man_args(struct man *man, int line,
 	if (buf[*pos])
 		return(1);
 
-	warnx("tail whitespace");
-	return(-1);
+	if ( ! man_vwarn(m, line, *pos, "trailing spaces"))
+		return(-1);
+	return(1);
 }

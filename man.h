@@ -1,4 +1,4 @@
-/* $Id: man.h,v 1.5 2009/03/25 21:03:13 kristaps Exp $ */
+/* $Id: man.h,v 1.6 2009/03/26 14:38:11 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -42,7 +42,8 @@
 #define	MAN_I		 18
 #define	MAN_IR		 19
 #define	MAN_RI		 20
-#define	MAN_MAX	 	 21
+#define	MAN_br		 21
+#define	MAN_MAX	 	 22
 
 enum	man_type {
 	MAN_TEXT,

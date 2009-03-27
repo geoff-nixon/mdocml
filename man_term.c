@@ -1,4 +1,4 @@
-/* $Id: man_term.c,v 1.3 2009/03/26 15:19:44 kristaps Exp $ */
+/* $Id: man_term.c,v 1.4 2009/03/26 16:23:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -80,6 +80,7 @@ static const struct termact termacts[MAN_MAX] = {
 	{ pre_I, post_I }, /* I */
 	{ pre_IR, NULL }, /* IR */
 	{ pre_RI, NULL }, /* RI */
+	{ pre_PP, NULL }, /* br */
 };
 
 static	void		  print_head(struct termp *, 

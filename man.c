@@ -1,4 +1,4 @@
-/* $Id: man.c,v 1.11 2009/03/26 14:38:11 kristaps Exp $ */
+/* $Id: man.c,v 1.12 2009/03/26 14:44:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -32,7 +32,7 @@ const	char *const __man_macronames[MAN_MAX] = {
 	"IP",		"HP",		"SM",		"SB",
 	"BI",		"IB",		"BR",		"RB",
 	"R",		"B",		"I",		"IR",
-	"RI"
+	"RI",		"br"
 	};
 
 const	char * const *man_macronames = __man_macronames;

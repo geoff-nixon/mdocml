@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.31 2009/03/21 13:47:02 kristaps Exp $ */
+/* $Id: strings.c,v 1.32 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -88,6 +88,8 @@ mdoc_isescape(const char *p)
 	case ('-'):
 		/* FALLTHROUGH */
 	case ('%'):
+		/* FALLTHROUGH */
+	case ('0'):
 		/* FALLTHROUGH */
 	case (' '):
 		/* FALLTHROUGH */

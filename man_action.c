@@ -1,4 +1,4 @@
-/* $Id: man_action.c,v 1.5 2009/03/26 14:38:11 kristaps Exp $ */
+/* $Id: man_action.c,v 1.6 2009/03/27 14:56:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -19,9 +19,7 @@
 #include <sys/utsname.h>
 
 #include <assert.h>
-#include <err.h>
 #include <errno.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -111,7 +109,8 @@ post_TH(struct man *m)
 	assert(n);
 
 	if (NULL == (m->meta.title = strdup(n->string)))
-		return(man_verr(m, n->line, n->pos, "malloc"));
+		return(man_verr(m, n->line, n->pos, 
+					"memory exhausted"));
 
 	/* TITLE ->MSEC<- DATE SOURCE VOL */
 
@@ -139,13 +138,15 @@ post_TH(struct man *m)
 
 	if (n && (n = n->next))
 		if (NULL == (m->meta.source = strdup(n->string)))
-			return(man_verr(m, n->line, n->pos, "malloc"));
+			return(man_verr(m, n->line, n->pos, 
+						"memory exhausted"));
 
 	/* TITLE MSEC DATE SOURCE ->VOL<- */
 
 	if (n && (n = n->next))
 		if (NULL == (m->meta.vol = strdup(n->string)))
-			return(man_verr(m, n->line, n->pos, "malloc"));
+			return(man_verr(m, n->line, n->pos, 
+						"memory exhausted"));
 
 	/* 
 	 * The end document shouldn't have the prologue macros as part

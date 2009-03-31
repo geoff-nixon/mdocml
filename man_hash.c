@@ -1,4 +1,4 @@
-/* $Id: man_hash.c,v 1.2 2009/03/23 15:41:09 kristaps Exp $ */
+/* $Id: man_hash.c,v 1.3 2009/03/26 09:55:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -16,11 +16,7 @@
  * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  * PERFORMANCE OF THIS SOFTWARE.
  */
-#include <assert.h>
-#include <ctype.h>
-#include <err.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 
 #include "libman.h"

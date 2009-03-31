@@ -1,4 +1,4 @@
-/* $Id: strings.c,v 1.32 2009/03/23 14:22:11 kristaps Exp $ */
+/* $Id: strings.c,v 1.33 2009/03/27 13:44:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -197,7 +197,7 @@ mdoc_atosec(const char *p)
 
 	for (i = 0, n = secnames; n->name; n++, i++)
 		if ( ! (n->flag & MSECNAME_META))
-			if (xstrcmp(p, n->name))
+			if (0 == strcmp(p, n->name))
 				return((enum mdoc_sec)i);
 
 	return(SEC_CUSTOM);
@@ -212,7 +212,7 @@ mdoc_atotime(const char *p)
 
 	(void)memset(&tm, 0, sizeof(struct tm));
 
-	if (xstrcmp(p, "$Mdocdate$"))
+	if (0 == strcmp(p, "$Mdocdate$"))
 		return(time(NULL));
 	if ((pp = strptime(p, "$Mdocdate: %b %d %Y $", &tm)) && 0 == *pp)
 		return(mktime(&tm));

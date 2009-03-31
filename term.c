@@ -1,4 +1,4 @@
-/* $Id: terminal.c,v 1.11 2009/03/26 16:44:22 kristaps Exp $ */
+/* $Id: terminal.c,v 1.12 2009/03/26 16:47:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *

@@ -1,4 +1,4 @@
-/* $Id: man_macro.c,v 1.9 2009/03/26 14:38:11 kristaps Exp $ */
+/* $Id: man_macro.c,v 1.10 2009/03/27 14:56:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -19,7 +19,6 @@
 #include <assert.h>
 #include <ctype.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 
 #include "libman.h"

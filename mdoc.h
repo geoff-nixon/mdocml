@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.52 2009/03/21 13:09:29 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.53 2009/03/23 14:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -302,7 +302,7 @@ void	 	  mdoc_free(struct mdoc *);
 struct	mdoc	 *mdoc_alloc(void *, int, const struct mdoc_cb *);
 
 /* Gets system ready for another parse. */
-void		  mdoc_reset(struct mdoc *);
+int		  mdoc_reset(struct mdoc *);
 
 /* Parse a single line in a stream (boolean retval). */
 int	 	  mdoc_parseln(struct mdoc *, int, char *buf);

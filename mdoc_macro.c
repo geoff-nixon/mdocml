@@ -1,4 +1,4 @@
-/* $Id: mdoc_macro.c,v 1.3 2009/03/27 13:44:24 kristaps Exp $ */
+/* $Id: mdoc_macro.c,v 1.4 2009/03/27 14:56:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -23,12 +23,6 @@
 #include <string.h>
 
 #include "libmdoc.h"
-
-/*
- * This has scanning/parsing routines, each of which extract a macro and
- * its arguments and parameters, then know how to progress to the next
- * macro. 
- */
 
 /* FIXME: .Fl, .Ar, .Cd handling of `|'. */
 

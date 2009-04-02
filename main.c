@@ -1,4 +1,4 @@
-/* $Id: main.c,v 1.19 2009/04/02 16:26:35 kristaps Exp $ */
+/* $Id: main.c,v 1.20 2009/04/02 16:37:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -268,8 +268,6 @@ man_init(struct curparse *curp)
 	/* Set command defaults. */
 	pflags = MAN_IGN_MACRO;
 
-	if (curp->fflags & IGN_MACRO)
-		pflags |= MAN_IGN_MACRO;
 	if (curp->fflags & NO_IGN_MACRO)
 		pflags &= ~MAN_IGN_MACRO;
 

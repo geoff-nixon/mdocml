@@ -1,4 +1,4 @@
-/* $Id: man_macro.c,v 1.10 2009/03/27 14:56:15 kristaps Exp $ */
+/* $Id: man_macro.c,v 1.11 2009/03/31 13:50:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -52,6 +52,7 @@ static	int man_flags[MAN_MAX] = {
 	FL_NLINE, /* IR */
 	FL_NLINE, /* RI */
 	0, /* br */
+	0, /* na */
 };
 
 int

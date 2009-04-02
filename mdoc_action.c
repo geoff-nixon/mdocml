@@ -1,4 +1,4 @@
-/* $Id: mdoc_action.c,v 1.1 2009/03/25 15:36:05 kristaps Exp $ */
+/* $Id: mdoc_action.c,v 1.2 2009/03/31 13:50:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -609,7 +609,7 @@ post_bl_width(struct mdoc *m)
 
 	if (0 == strcmp(p, "Ds"))
 		width = 8;
-	else if (MDOC_MAX == (tok = mdoc_tokhash_find(m->htab, p)))
+	else if (MDOC_MAX == (tok = mdoc_hash_find(m->htab, p)))
 		return(1);
 	else if (0 == (width = mdoc_macro2len(tok))) 
 		return(vwarn(m, WNOWIDTH));

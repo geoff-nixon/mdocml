@@ -1,4 +1,4 @@
-/* $Id: libmdoc.h,v 1.2 2009/03/23 15:41:09 kristaps Exp $ */
+/* $Id: libmdoc.h,v 1.3 2009/03/31 13:50:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -111,9 +111,9 @@ int		  mdoc_tail_alloc(struct mdoc *, int, int, int);
 int		  mdoc_body_alloc(struct mdoc *, int, int, int);
 void		  mdoc_node_free(struct mdoc_node *);
 void		  mdoc_node_freelist(struct mdoc_node *);
-void		 *mdoc_tokhash_alloc(void);
-int		  mdoc_tokhash_find(const void *, const char *);
-void		  mdoc_tokhash_free(void *);
+void		 *mdoc_hash_alloc(void);
+int		  mdoc_hash_find(const void *, const char *);
+void		  mdoc_hash_free(void *);
 int		  mdoc_iscdelim(char);
 int		  mdoc_isdelim(const char *);
 size_t		  mdoc_isescape(const char *);

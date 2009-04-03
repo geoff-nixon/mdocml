@@ -1,4 +1,4 @@
-/* $Id: man.h,v 1.7 2009/03/27 14:56:15 kristaps Exp $ */
+/* $Id: man.h,v 1.8 2009/04/02 06:51:44 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -90,7 +90,7 @@ struct	man;
 
 void	 	  man_free(struct man *);
 struct	man	 *man_alloc(void *, int, const struct man_cb *);
-void		  man_reset(struct man *);
+int		  man_reset(struct man *);
 int	 	  man_parseln(struct man *, int, char *buf);
 int		  man_endparse(struct man *);
 int		  man_valid_post(struct man *);

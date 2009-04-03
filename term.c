@@ -1,4 +1,4 @@
-/* $Id: term.c,v 1.71 2009/03/31 13:50:19 kristaps Exp $ */
+/* $Id: term.c,v 1.72 2009/04/03 11:08:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -59,7 +59,6 @@ terminal_man(void *arg, const struct man *man)
 	struct termp	*p;
 
 	p = (struct termp *)arg;
-
 	if (NULL == p->symtab)
 		p->symtab = term_ascii2htab();
 
@@ -73,7 +72,6 @@ terminal_mdoc(void *arg, const struct mdoc *mdoc)
 	struct termp	*p;
 
 	p = (struct termp *)arg;
-
 	if (NULL == p->symtab)
 		p->symtab = term_ascii2htab();
 

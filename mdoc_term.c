@@ -1,4 +1,4 @@
-/* $Id: mdoc_term.c,v 1.2 2009/03/26 14:44:41 kristaps Exp $ */
+/* $Id: mdoc_term.c,v 1.3 2009/03/26 16:23:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -1427,7 +1427,7 @@ static int
 termp_d1_pre(DECL_ARGS)
 {
 
-	if (MDOC_BODY != node->type)
+	if (MDOC_BLOCK != node->type)
 		return(1);
 	term_newln(p);
 	p->offset += (pair->offset = INDENT);
@@ -1440,7 +1440,7 @@ static void
 termp_d1_post(DECL_ARGS)
 {
 
-	if (MDOC_BODY != node->type) 
+	if (MDOC_BLOCK != node->type) 
 		return;
 	term_newln(p);
 	p->offset -= pair->offset;

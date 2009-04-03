@@ -1,4 +1,4 @@
-/* $Id: man.c,v 1.13 2009/03/27 14:56:15 kristaps Exp $ */
+/* $Id: man.c,v 1.14 2009/04/02 06:51:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -62,12 +62,14 @@ man_meta(const struct man *m)
 }
 
 
-void
+int
 man_reset(struct man *man)
 {
 
 	man_free1(man);
 	man_alloc1(man);
+	/* TODO */
+	return(1);
 }
 
 

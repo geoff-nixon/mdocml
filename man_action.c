@@ -1,4 +1,4 @@
-/* $Id: man_action.c,v 1.7 2009/03/31 13:50:19 kristaps Exp $ */
+/* $Id: man_action.c,v 1.8 2009/04/02 06:51:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -61,6 +61,7 @@ const	struct actions man_actions[MAN_MAX] = {
 	{ NULL }, /* RI */
 	{ NULL }, /* br */
 	{ NULL }, /* na */
+	{ NULL }, /* i */
 };
 
 

@@ -1,4 +1,4 @@
-/* $Id: man_hash.c,v 1.4 2009/03/31 13:50:19 kristaps Exp $ */
+/* $Id: man_hash.c,v 1.5 2009/04/02 06:51:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -39,7 +39,7 @@ man_hash_alloc(void)
 	int		*htab;
 	int		 i, j, x;
 
-	htab = calloc(26 * 4, sizeof(int));
+	htab = calloc(26 * 5, sizeof(int));
 	if (NULL == htab)
 		return(NULL);
 
@@ -50,15 +50,15 @@ man_hash_alloc(void)
 				(x >= 97 && x <= 122));
 
 		x -= (x <= 90) ? 65 : 97;
-		x *= 4;
+		x *= 5;
 
-		for (j = 0; j < 4; j++)
+		for (j = 0; j < 5; j++)
 			if (0 == htab[x + j]) {
 				htab[x + j] = i;
 				break;
 			}
 
-		assert(j < 4);
+		assert(j < 5);
 	}
 
 	return((void *)htab);
@@ -79,9 +79,9 @@ man_hash_find(const void *arg, const char *tmp)
 		return(MAN_MAX);
 
 	x -= (x <= 90) ? 65 : 97;
-	x *= 4;
+	x *= 5;
 
-	for (i = 0; i < 4; i++) {
+	for (i = 0; i < 5; i++) {
 		if (0 == (tok = htab[x + i]))
 			return(MAN_MAX);
 		if (0 == strcmp(tmp, man_macronames[tok]))

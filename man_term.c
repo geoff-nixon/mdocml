@@ -1,4 +1,4 @@
-/* $Id: man_term.c,v 1.5 2009/03/27 14:56:15 kristaps Exp $ */
+/* $Id: man_term.c,v 1.6 2009/04/02 06:51:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -82,6 +82,7 @@ static const struct termact termacts[MAN_MAX] = {
 	{ pre_RI, NULL }, /* RI */
 	{ pre_PP, NULL }, /* br */
 	{ NULL, NULL }, /* na */
+	{ pre_I, post_I }, /* i */
 };
 
 static	void		  print_head(struct termp *, 
@@ -282,15 +283,15 @@ pre_IP(DECL_ARGS)
 
 	if (NULL == (nn = n->child))
 		return(1);
-
-	/* FIXME - ignore the designator. */
-	nn = nn->next;
-
 	if (MAN_TEXT != nn->type)
 		errx(1, "expected text line argument");
 
-	offs = (size_t)atoi(nn->string);
-	nn = nn->next;
+	if (nn->next) {
+		if (MAN_TEXT != nn->next->type)
+			errx(1, "expected text line argument");
+		offs = (size_t)atoi(nn->next->string);
+	} else
+		offs = strlen(nn->string);
 
 	p->flags |= TERMP_NOSPACE;
 	p->offset += offs;

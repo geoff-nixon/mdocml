@@ -1,4 +1,4 @@
-/* $Id: ascii.c,v 1.3 2009/03/20 15:14:01 kristaps Exp $ */
+/* $Id: ascii.c,v 1.4 2009/03/20 21:58:38 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -25,12 +25,6 @@
 
 #define	ASCII_PRINT_HI	 126
 #define	ASCII_PRINT_LO	 32
-
-/*
- * Lookup and hashing routines for constructing the ASCII symbol table,
- * which should contain a significant portion of mdoc(7)'s special
- * symbols.
- */
 
 struct	line {
 	const char	 *code;

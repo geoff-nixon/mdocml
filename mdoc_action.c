@@ -1,4 +1,4 @@
-/* $Id: mdoc_action.c,v 1.4 2009/04/02 16:37:40 kristaps Exp $ */
+/* $Id: mdoc_action.c,v 1.5 2009/04/03 11:08:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -212,9 +212,9 @@ mdoc_action_pre(struct mdoc *m, const struct mdoc_node *n)
 		break;
 	}
 
-	if (NULL == mdoc_actions[m->last->tok].pre)
+	if (NULL == mdoc_actions[n->tok].pre)
 		return(1);
-	return((*mdoc_actions[m->last->tok].pre)(m, n));
+	return((*mdoc_actions[n->tok].pre)(m, n));
 }
 
 
@@ -344,11 +344,18 @@ post_nm(POST_ARGS)
 	if (m->meta.name)
 		return(1);
 
+	printf("bar\n");
+
 	buf[0] = 0;
 	if ( ! concat(m, m->last->child, buf, sizeof(buf)))
 		return(0);
+
+	printf("foo\n");
+
 	if (NULL == (m->meta.name = strdup(buf)))
 		return(verr(m, EMALLOC));
+
+	printf("baz\n");
 
 	return(1);
 }

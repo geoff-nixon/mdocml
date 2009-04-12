@@ -1,4 +1,4 @@
-/* $Id: mdoc_macro.c,v 1.5 2009/03/31 13:50:19 kristaps Exp $ */
+/* $Id: mdoc_macro.c,v 1.6 2009/04/02 06:51:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -871,9 +871,11 @@ in_line(MACRO_PROT_ARGS)
 							tok, arg))
 					return(0);
 				mdoc->next = MDOC_NEXT_SIBLING;
-			} else if ( ! nc && 0 == cnt)
+			} else if ( ! nc && 0 == cnt) {
+				mdoc_argv_free(arg);
 				if ( ! pwarn(mdoc, line, ppos, WIGNE))
 					return(0);
+			}
 			c = mdoc_macro(mdoc, c, line, la, pos, buf);
 			if (0 == c)
 				return(0);
@@ -924,9 +926,11 @@ in_line(MACRO_PROT_ARGS)
 		if (0 == c)
 			return(0);
 		mdoc->next = MDOC_NEXT_SIBLING;
-	} else if ( ! nc && 0 == cnt) 
+	} else if ( ! nc && 0 == cnt) {
+		mdoc_argv_free(arg);
 		if ( ! pwarn(mdoc, line, ppos, WIGNE))
 			return(0);
+	}
 
 	if (ppos > 1)
 		return(1);

@@ -1,4 +1,4 @@
-/* $Id: man.c,v 1.15 2009/04/03 11:08:39 kristaps Exp $ */
+/* $Id: man.c,v 1.16 2009/04/05 16:34:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -379,7 +379,7 @@ out:
 	if (fl) {
 		/*
 		 * A NLINE macro has been immediately followed with
-		 * another.  Close out the preceeding macro's scope, and
+		 * another.  Close out the preceding macro's scope, and
 		 * continue.
 		 */
 		assert(MAN_ROOT != m->last->type);

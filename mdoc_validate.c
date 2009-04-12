@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.4 2009/04/12 19:19:57 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.5 2009/04/12 19:45:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -972,7 +972,7 @@ static int
 pre_er(PRE_ARGS)
 {
 
-	return(check_msec(mdoc, n, 2, 0));
+	return(check_msec(mdoc, n, 2, 3, 9, 0));
 }
 
 

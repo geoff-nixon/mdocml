@@ -1,4 +1,4 @@
-/* $Id: libmdoc.h,v 1.3 2009/03/31 13:50:19 kristaps Exp $ */
+/* $Id: libmdoc.h,v 1.4 2009/04/02 06:51:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -146,10 +146,6 @@ int		  mdoc_args(struct mdoc *, int,
 #define	ARGS_QWORD	(3)
 #define	ARGS_PHRASE	(4)
 
-/* FIXME: get rid of these. */
-int		  xstrlcpys(char *, const struct mdoc_node *, size_t);
-void	 	 *xrealloc(void *, size_t);
-char	 	 *xstrdup(const char *);
 int		  mdoc_macroend(struct mdoc *);
 
 __END_DECLS

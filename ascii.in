@@ -1,4 +1,4 @@
-/* $Id: ascii.in,v 1.6 2009/03/27 13:44:24 kristaps Exp $ */
+/* $Id: ascii.in,v 1.7 2009/04/12 19:24:10 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -100,7 +100,7 @@ LINE("ae", 2,	  "ae", 2)
 LINE("AE", 2,	  "AE", 2)
 LINE("oe", 2,	  "oe", 2)
 LINE("OE", 2,	  "OE", 2)
-LINE("ss", 2,	  "B", 1)
+LINE("ss", 2,	  "ss", 2)
 LINE("\'A", 2,	  "A", 1)
 LINE("\'E", 2,	  "E", 1)
 LINE("\'I", 2,	  "I", 1)

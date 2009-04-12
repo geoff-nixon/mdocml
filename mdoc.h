@@ -1,4 +1,4 @@
-/* $Id: mdoc.h,v 1.53 2009/03/23 14:22:11 kristaps Exp $ */
+/* $Id: mdoc.h,v 1.54 2009/03/31 13:50:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -276,6 +276,7 @@ struct	mdoc_node {
 #define	MDOC_IGN_SCOPE	 (1 << 0) /* Ignore scope violations. */
 #define	MDOC_IGN_ESCAPE	 (1 << 1) /* Ignore bad escape sequences. */
 #define	MDOC_IGN_MACRO	 (1 << 2) /* Ignore unknown macros. */
+#define	MDOC_IGN_CHARS	 (1 << 3) /* Ignore disallowed chars. */
 
 /* Call-backs for parse messages. */
 struct	mdoc_cb {

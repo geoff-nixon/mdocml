@@ -1,4 +1,4 @@
-/* $Id: mdoc_term.c,v 1.3 2009/03/26 16:23:22 kristaps Exp $ */
+/* $Id: mdoc_term.c,v 1.4 2009/04/03 13:17:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -1842,7 +1842,7 @@ termp_ss_pre(DECL_ARGS)
 		break;
 	case (MDOC_HEAD):
 		TERMPAIR_SETFLAG(p, pair, ttypes[TTYPE_SSECTION]);
-		p->offset = INDENT / 2;
+		p->offset = HALFINDENT;
 		break;
 	default:
 		break;

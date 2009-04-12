@@ -1,4 +1,4 @@
-/* $Id: ascii.c,v 1.4 2009/03/20 21:58:38 kristaps Exp $ */
+/* $Id: ascii.c,v 1.5 2009/04/05 16:34:22 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -137,7 +137,10 @@ term_a2ascii(void *arg, const char *p, size_t sz, size_t *rsz)
 
 	assert(p);
 	assert(sz > 0);
-	assert(p[0] >= ASCII_PRINT_LO && p[0] <= ASCII_PRINT_HI);
+
+	if (p[0] < ASCII_PRINT_LO || p[0] > ASCII_PRINT_HI)
+		return(NULL);
+
 
 	/*
 	 * Lookup the symbol in the symbol hash.  See ascii2htab for the

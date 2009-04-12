@@ -1,4 +1,4 @@
-/* $Id: term.h,v 1.33 2009/03/25 21:46:24 kristaps Exp $ */
+/* $Id: term.h,v 1.34 2009/03/26 14:38:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -21,7 +21,8 @@
 
 /* FIXME - clean up tabs. */
 
-#define	INDENT		  6
+#define	INDENT		  5
+#define	HALFINDENT	  3
 
 __BEGIN_DECLS
 

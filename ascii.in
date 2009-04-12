@@ -1,4 +1,4 @@
-/* $Id: ascii.in,v 1.5 2009/03/21 13:47:02 kristaps Exp $ */
+/* $Id: ascii.in,v 1.6 2009/03/27 13:44:24 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
  *
@@ -32,6 +32,8 @@ LINE("`", 1,	  "`", 1)
 LINE("%", 1,	  "%", 1)
 LINE("-", 1,	  "-", 1)
 LINE(" ", 1,	  " ", 1)
+LINE("~", 1,	  " ", 1)
+LINE("^", 1,	  "", 0)
 LINE("0", 1,	  " ", 1)
 LINE(".", 1,	  ".", 1)
 LINE("&", 1,	  "", 0)

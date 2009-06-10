@@ -1,6 +1,6 @@
-/*	$Id: man.h,v 1.10 2009/04/05 16:34:22 kristaps Exp $ */
+/*	$Id: man.h,v 1.11 2009/04/12 19:45:26 kristaps Exp $ */
 /*
- * Copyright (c) 2009 Kristaps Dzonsons <kristaps@openbsd.org>
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

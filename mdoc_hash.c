@@ -1,6 +1,6 @@
-/*	$Id: mdoc_hash.c,v 1.2 2009/04/02 06:51:44 kristaps Exp $ */
+/*	$Id: mdoc_hash.c,v 1.3 2009/04/12 19:45:26 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@openbsd.org>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

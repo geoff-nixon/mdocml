@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.74 2009/04/12 19:45:26 kristaps Exp $ */
+/*	$Id: term.c,v 1.75 2009/06/10 20:18:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -106,7 +106,7 @@ term_alloc(enum termenc enc)
 	if (NULL == (p = malloc(sizeof(struct termp))))
 		err(1, "malloc");
 	bzero(p, sizeof(struct termp));
-	p->maxrmargin = 78;
+	p->maxrmargin = 80;
 	p->enc = enc;
 	return(p);
 }

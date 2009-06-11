@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.76 2009/06/11 07:26:35 kristaps Exp $ */
+/*	$Id: term.c,v 1.77 2009/06/11 07:46:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -272,10 +272,9 @@ term_flushln(struct termp *p)
 			vis = p->rmargin - p->offset;
 		}
 
-		/* 
-		 * Write out the word and a trailing space.  Omit the
-		 * space if we're the last word in the line or beyond
-		 * our breakpoint.
+		/*
+		 * Prepend a space if we're not already at the beginning
+		 * of the line, then the word.
 		 */
 
 		if (0 < vis++)
@@ -294,7 +293,7 @@ term_flushln(struct termp *p)
 	 * cause a newline and offset at the right margin.
 	 */
 
-	if ((TERMP_NOBREAK & p->flags) && vis >= maxvis) {
+	if ((TERMP_NOBREAK & p->flags) && vis > maxvis) {
 		if ( ! (TERMP_NONOBREAK & p->flags)) {
 			putchar('\n');
 			for (i = 0; i < (int)p->rmargin; i++)

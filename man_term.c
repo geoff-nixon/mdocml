@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.9 2009/06/10 20:18:43 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.10 2009/06/11 07:26:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -292,7 +292,9 @@ pre_IP(DECL_ARGS)
 		offs = strlen(nn->string);
 
 	p->flags |= TERMP_NOSPACE;
-	p->offset += offs;
+	/* FIXME */
+	if ((p->offset += offs) > p->rmargin)
+		errx(1, "line too long");
 	return(0);
 }
 

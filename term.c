@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.75 2009/06/10 20:18:44 kristaps Exp $ */
+/*	$Id: term.c,v 1.76 2009/06/11 07:26:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -278,16 +278,15 @@ term_flushln(struct termp *p)
 		 * our breakpoint.
 		 */
 
+		if (0 < vis++)
+			putchar(' ');
+
 		for ( ; i < (int)p->col; i++) {
 			if (' ' == p->buf[i])
 				break;
 			putchar(p->buf[i]);
 		}
 		vis += vsz;
-		if (i < (int)p->col && vis <= bp) {
-			putchar(' ');
-			vis++;
-		}
 	}
 
 	/*
@@ -312,7 +311,7 @@ term_flushln(struct termp *p)
 
 	if (p->flags & TERMP_NOBREAK) {
 		if ( ! (TERMP_NONOBREAK & p->flags))
-			for ( ; vis < maxvis; vis++)
+			for ( ; vis <= maxvis; vis++)
 				putchar(' ');
 	} else
 		putchar('\n');

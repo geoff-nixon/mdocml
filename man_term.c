@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.10 2009/06/11 07:26:35 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.11 2009/06/11 12:07:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -273,12 +273,15 @@ pre_PP(DECL_ARGS)
 static int
 pre_IP(DECL_ARGS)
 {
+#if 0
 	const struct man_node *nn;
 	size_t		 offs;
+#endif
 
 	term_vspace(p);
 	p->offset = INDENT;
 
+#if 0
 	if (NULL == (nn = n->child))
 		return(1);
 	if (MAN_TEXT != nn->type)
@@ -295,6 +298,8 @@ pre_IP(DECL_ARGS)
 	/* FIXME */
 	if ((p->offset += offs) > p->rmargin)
 		errx(1, "line too long");
+#endif
+
 	return(0);
 }
 

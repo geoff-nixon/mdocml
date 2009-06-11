@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.8 2009/04/12 19:45:26 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.9 2009/06/10 20:18:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -89,7 +89,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ blk_exp_close, MDOC_EXPLICIT }, /* El */
 	{ blk_full, MDOC_PARSED }, /* It */
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Ad */ 
-	{ in_line, MDOC_PARSED }, /* An */
+	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* An */
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Ar */
 	{ in_line_eoln, MDOC_CALLABLE }, /* Cd */
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Cm */

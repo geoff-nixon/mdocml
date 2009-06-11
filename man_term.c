@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.8 2009/04/12 19:45:26 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.9 2009/06/10 20:18:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -495,7 +495,7 @@ print_head(struct termp *p, const struct man_meta *meta)
 			meta->title, meta->msec);
 
 	p->offset = 0;
-	p->rmargin = (p->maxrmargin - strlen(buf)) / 2;
+	p->rmargin = (p->maxrmargin - strlen(buf) + 1) / 2;
 	p->flags |= TERMP_NOBREAK | TERMP_NOSPACE;
 
 	term_word(p, title);

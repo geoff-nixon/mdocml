@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.2 2009/04/12 19:24:10 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.3 2009/04/12 19:45:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -147,6 +147,8 @@ mdoc_iscdelim(char p)
 {
 
 	switch (p) {
+	case('|'):
+		/* FALLTHROUGH */
 	case('.'):
 		/* FALLTHROUGH */
 	case(','):

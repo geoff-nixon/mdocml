@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.10 2009/06/11 12:55:30 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.11 2009/06/11 13:13:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -2119,17 +2119,22 @@ termp_lk_pre(DECL_ARGS)
 	assert(node->child);
 	n = node->child;
 
+	if (NULL == n->next) {
+		TERMPAIR_SETFLAG(p, pair, ttypes[TTYPE_LINK_ANCHOR]);
+		return(1);
+	}
+
 	p->flags |= ttypes[TTYPE_LINK_ANCHOR];
 	term_word(p, n->string);
-	p->flags &= ~ttypes[TTYPE_LINK_ANCHOR];
 	p->flags |= TERMP_NOSPACE;
 	term_word(p, ":");
+	p->flags &= ~ttypes[TTYPE_LINK_ANCHOR];
 
 	p->flags |= ttypes[TTYPE_LINK_TEXT];
-	for ( ; n; n = n->next) 
+	for (n = n->next; n; n = n->next) 
 		term_word(p, n->string);
-	p->flags &= ~ttypes[TTYPE_LINK_TEXT];
 
+	p->flags &= ~ttypes[TTYPE_LINK_TEXT];
 	return(0);
 }
 

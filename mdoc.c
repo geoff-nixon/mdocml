@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.75 2009/04/12 19:45:26 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.76 2009/06/10 20:18:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -480,7 +480,8 @@ mdoc_block_alloc(struct mdoc *mdoc, int line, int pos,
 	p = node_alloc(mdoc, line, pos, tok, MDOC_BLOCK);
 	if (NULL == p)
 		return(0);
-	if ((p->args = args))
+	p->args = args;
+	if (p->args)
 		(args->refcnt)++;
 	return(node_append(mdoc, p));
 }
@@ -495,7 +496,8 @@ mdoc_elem_alloc(struct mdoc *mdoc, int line, int pos,
 	p = node_alloc(mdoc, line, pos, tok, MDOC_ELEM);
 	if (NULL == p)
 		return(0);
-	if ((p->args = args))
+	p->args = args;
+	if (p->args)
 		(args->refcnt)++;
 	return(node_append(mdoc, p));
 }

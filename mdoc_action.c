@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.9 2009/06/10 20:18:43 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.10 2009/06/12 09:18:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -538,7 +538,8 @@ post_bl_tagwidth(struct mdoc *m)
 	 * width if a macro.
 	 */
 
-	if ((n = m->last->body->child)) {
+	n = m->last->body->child;
+	if (n) {
 		assert(MDOC_BLOCK == n->type);
 		assert(MDOC_It == n->tok);
 		n = n->head->child;

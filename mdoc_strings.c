@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.3 2009/04/12 19:45:26 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.4 2009/06/12 12:40:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -216,9 +216,9 @@ mdoc_atotime(const char *p)
 
 	(void)memset(&tm, 0, sizeof(struct tm));
 
-	if (0 == strcmp(p, "$Mdocdate$"))
+	if (0 == strcmp(p, "$" "Mdocdate$"))
 		return(time(NULL));
-	if ((pp = strptime(p, "$Mdocdate: %b %d %Y $", &tm)) && 0 == *pp)
+	if ((pp = strptime(p, "$" "Mdocdate: %b %d %Y $", &tm)) && 0 == *pp)
 		return(mktime(&tm));
 	/* XXX - this matches "June 1999", which is wrong. */
 	if ((pp = strptime(p, "%b %d %Y", &tm)) && 0 == *pp)

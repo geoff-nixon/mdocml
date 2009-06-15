@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.26 2009/06/10 20:18:43 kristaps Exp $ */
+/*	$Id: main.c,v 1.27 2009/06/11 12:07:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -259,7 +259,6 @@ mdoc_init(struct curparse *curp)
 	struct mdoc	*mdoc;
 	struct mdoc_cb	 mdoccb;
 
-	mdoccb.mdoc_msg = NULL;
 	mdoccb.mdoc_err = merr;
 	mdoccb.mdoc_warn = mdocwarn;
 

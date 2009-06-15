@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.56 2009/04/12 19:45:26 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.57 2009/06/10 20:18:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -278,7 +278,6 @@ struct	mdoc_node {
 
 /* Call-backs for parse messages. */
 struct	mdoc_cb {
-	void	(*mdoc_msg)(void *, int, int, const char *);
 	int	(*mdoc_err)(void *, int, int, const char *);
 	int	(*mdoc_warn)(void *, int, int, 
 			enum mdoc_warn, const char *);

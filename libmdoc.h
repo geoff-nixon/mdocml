@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.7 2009/06/10 20:18:43 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.8 2009/06/15 09:55:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -69,8 +69,6 @@ void		  mdoc_vmsg(struct mdoc *, int, int,
 			const char *, ...);
 int		  mdoc_verr(struct mdoc *, int, int, 
 			const char *, ...);
-int		  mdoc_nwarn(struct mdoc *, const struct mdoc_node *,
-			enum mdoc_warn, const char *, ...);
 int		  mdoc_nerr(struct mdoc *, const struct mdoc_node *,
 			const char *, ...);
 int		  mdoc_warn(struct mdoc *, enum mdoc_warn, const char *, ...);

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.77 2009/06/12 12:52:51 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.78 2009/06/15 09:55:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -291,23 +291,6 @@ mdoc_vwarn(struct mdoc *mdoc, int ln, int pos,
 	return((*mdoc->cb.mdoc_warn)(mdoc->data, ln, pos, type, buf));
 }
 
-
-int
-mdoc_nwarn(struct mdoc *mdoc, const struct mdoc_node *node, enum mdoc_warn type,
-		const char *fmt, ...)
-{
-	char		 buf[256];
-	va_list		 ap;
-
-	if (NULL == mdoc->cb.mdoc_warn)
-		return(0);
-
-	va_start(ap, fmt);
-	(void)vsnprintf(buf, sizeof(buf) - 1, fmt, ap);
-	va_end(ap);
-	return((*mdoc->cb.mdoc_warn)(mdoc->data, node->line, node->pos, type,
-	    buf));
-}
 
 int
 mdoc_nerr(struct mdoc *mdoc, const struct mdoc_node *node, const char *fmt, ...)

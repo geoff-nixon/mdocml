@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.11 2009/06/11 12:07:49 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.12 2009/06/11 13:18:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -449,11 +449,7 @@ print_foot(struct termp *p, const struct man_meta *meta)
 
 	tm = localtime(&meta->date);
 
-#ifdef __OpenBSD__
-	if (NULL == strftime(buf, p->rmargin, "%B %d, %Y", tm))
-#else
 	if (0 == strftime(buf, p->rmargin, "%B %d, %Y", tm))
-#endif
 		err(1, "strftime");
 
 	term_vspace(p);

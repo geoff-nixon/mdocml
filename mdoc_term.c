@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.11 2009/06/11 13:13:44 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.12 2009/06/12 09:18:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -415,11 +415,7 @@ print_foot(struct termp *p, const struct mdoc_meta *meta)
 
 	tm = localtime(&meta->date);
 
-#ifdef __OpenBSD__
-	if (NULL == strftime(buf, p->rmargin, "%B %d, %Y", tm))
-#else
 	if (0 == strftime(buf, p->rmargin, "%B %d, %Y", tm))
-#endif
 		err(1, "strftime");
 
 	(void)strlcpy(os, meta->os, p->rmargin);

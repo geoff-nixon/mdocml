@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.18 2009/04/12 19:45:26 kristaps Exp $ */
+/*	$Id: man.c,v 1.19 2009/06/10 20:18:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -323,10 +323,6 @@ man_pmacro(struct man *m, int ln, char *buf)
 	}
 
 	ppos = i;
-
-	if (buf[i] && '\\' == buf[i])
-		if (buf[i + 1] && '\"' == buf[i + 1])
-			goto out;
 
 	/* Copy the first word into a nil-terminated buffer. */
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.11 2009/06/11 20:02:37 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.12 2009/06/12 09:18:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -74,7 +74,7 @@ static	int	  swarn(struct mdoc *, enum mdoc_type, int, int,
 /* Central table of library: who gets parsed how. */
 
 const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
-	{ NULL, 0 }, /* \" */
+	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED }, /* Ap */
 	{ in_line_eoln, MDOC_PROLOGUE }, /* Dd */
 	{ in_line_eoln, MDOC_PROLOGUE }, /* Dt */
 	{ in_line_eoln, MDOC_PROLOGUE }, /* Os */
@@ -181,7 +181,6 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ obsolete, 0 }, /* Fr */
 	{ in_line_eoln, 0 }, /* Ud */
 	{ in_line_eoln, 0 }, /* Lb */
-	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED }, /* Ap */
 	{ in_line, 0 }, /* Lp */ 
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Lk */ 
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Mt */ 

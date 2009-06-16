@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.19 2009/06/10 20:18:43 kristaps Exp $ */
+/*	$Id: man.c,v 1.20 2009/06/16 19:13:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -24,12 +24,12 @@
 #include "libman.h"
 
 const	char *const __man_macronames[MAN_MAX] = {		 
-	"\\\"",		"TH",		"SH",		"SS",
+	"br",		"TH",		"SH",		"SS",
 	"TP", 		"LP",		"PP",		"P",
 	"IP",		"HP",		"SM",		"SB",
 	"BI",		"IB",		"BR",		"RB",
 	"R",		"B",		"I",		"IR",
-	"RI",		"br",		"na",		"i"
+	"RI",		"na",		"i"
 	};
 
 const	char * const *man_macronames = __man_macronames;

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.12 2009/06/12 09:18:00 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.13 2009/06/16 19:45:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -21,8 +21,6 @@
 #include <string.h>
 
 #include "libmdoc.h"
-
-/* FIXME: .Fl, .Ar, .Cd handling of `|'. */
 
 enum	mwarn {
 	WIGNE,

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.4 2009/06/12 12:40:44 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.5 2009/06/15 09:38:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -24,15 +24,10 @@
 
 #include "libmdoc.h"
 
-/*
- * Various string-literal operations:  converting scalars to and from
- * strings, etc.
- */
-
 struct mdoc_secname {
-	const char	*name;
+	const char	*name;	/* Name of section. */
 	int		 flag;
-#define	MSECNAME_META	(1 << 0)
+#define	MSECNAME_META	(1 << 0)/* Logical section (not real). */
 };
 
 /* Section names corresponding to mdoc_sec. */

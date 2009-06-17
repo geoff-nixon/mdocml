@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.9 2009/06/15 10:02:52 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.10 2009/06/15 10:36:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -29,8 +29,9 @@ struct	mdoc {
 	struct mdoc_cb	  cb;
 	void		 *htab;
 	int		  flags;
-#define	MDOC_HALT	 (1 << 0)
-#define	MDOC_LITERAL	 (1 << 1)
+#define	MDOC_HALT	 (1 << 0)	/* Error in parse. Halt. */
+#define	MDOC_LITERAL	 (1 << 1)	/* In a literal scope. */
+#define	MDOC_PBODY	 (1 << 2)	/* In the document body. */
 	int		  pflags;
 	enum mdoc_next	  next;
 	struct mdoc_node *last;

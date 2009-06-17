@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.11 2009/06/12 12:52:51 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.12 2009/06/16 19:45:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -515,8 +515,8 @@ post_os(POST_ARGS)
 
 	if (NULL == (m->meta.os = strdup(buf)))
 		return(verr(m, EMALLOC));
-	m->lastnamed = m->lastsec = SEC_BODY;
 
+	m->flags |= MDOC_PBODY;
 	return(post_prol(m));
 }
 

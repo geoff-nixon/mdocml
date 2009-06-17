@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.4 2009/06/10 20:18:43 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.5 2009/06/16 19:45:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -31,6 +31,8 @@
  *
  * There's no limit to the number or arguments that may be allocated.
  */
+
+/* FIXME .Bf Li raises "macro-like parameter". */
 
 #define	ARGS_QUOTED	(1 << 0)
 #define	ARGS_DELIM	(1 << 1)

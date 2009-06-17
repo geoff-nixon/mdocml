@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.6 2009/06/17 11:02:06 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.7 2009/06/17 14:08:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -756,10 +756,8 @@ static int
 argv_multi(struct mdoc *mdoc, int line, 
 		struct mdoc_argv *v, int *pos, char *buf)
 {
-	int		 c, ppos;
+	int		 c;
 	char		*p;
-
-	ppos = *pos;
 
 	for (v->sz = 0; ; v->sz++) {
 		if ('-' == buf[*pos])

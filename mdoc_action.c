@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.14 2009/06/17 14:08:47 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.15 2009/06/17 14:10:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -819,9 +819,8 @@ static int
 pre_dl(PRE_ARGS)
 {
 
-	if (MDOC_BODY != n->type)
-		return(1);
-	m->flags |= MDOC_LITERAL;
+	if (MDOC_BODY == n->type)
+		m->flags |= MDOC_LITERAL;
 	return(1);
 }
 

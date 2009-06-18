@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.20 2009/06/16 19:13:28 kristaps Exp $ */
+/*	$Id: man.c,v 1.21 2009/06/16 19:55:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -182,6 +182,8 @@ man_node_append(struct man *man, struct man_node *p)
 		abort();
 		/* NOTREACHED */
 	}
+	
+	p->parent->nchild++;
 
 	man->last = p;
 

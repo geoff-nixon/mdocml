@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.21 2009/06/16 19:55:28 kristaps Exp $ */
+/*	$Id: man.c,v 1.22 2009/06/18 10:32:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -434,3 +434,40 @@ man_vwarn(struct man *man, int ln, int pos, const char *fmt, ...)
 }
 
 
+int
+man_err(struct man *m, int line, int pos, 
+		int iserr, enum merr type)
+{
+	const char	 *p;
+	
+	p = NULL;
+	switch (type) {
+	case (WNPRINT):
+		p = "invalid character";
+		break;
+	case (WNMEM):
+		p = "memory exhausted";
+		break;
+	case (WMSEC):
+		p = "invalid manual section";
+		break;
+	case (WDATE):
+		p = "invalid date format";
+		break;
+	case (WLNSCOPE):
+		p = "scope of prior line violated";
+		break;
+	case (WTSPACE):
+		p = "trailing whitespace at end of line";
+		break;
+	case (WTQUOTE):
+		p = "unterminated quotation";
+		break;
+	}
+	assert(p);
+
+	if (iserr)
+		return(man_verr(m, line, pos, p));
+
+	return(man_vwarn(m, line, pos, p));
+}

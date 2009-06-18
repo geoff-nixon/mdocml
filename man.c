@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.22 2009/06/18 10:32:00 kristaps Exp $ */
+/*	$Id: man.c,v 1.23 2009/06/18 10:53:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -252,6 +252,8 @@ man_node_free(struct man_node *p)
 
 	if (p->string)
 		free(p->string);
+	if (p->parent)
+		p->parent->nchild--;
 	free(p);
 }
 
@@ -265,6 +267,7 @@ man_node_freelist(struct man_node *p)
 	if (p->next)
 		man_node_freelist(p->next);
 
+	assert(0 == p->nchild);
 	man_node_free(p);
 }
 

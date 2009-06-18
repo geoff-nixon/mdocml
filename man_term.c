@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.14 2009/06/16 19:55:28 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.15 2009/06/18 19:54:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -325,6 +325,7 @@ pre_TP(DECL_ARGS)
 	size_t		 offs;
 
 	term_vspace(p);
+
 	p->offset = INDENT;
 
 	if (NULL == (nn = n->child))

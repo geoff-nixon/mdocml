@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.59 2009/06/16 19:45:51 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.60 2009/06/17 10:53:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -252,6 +252,7 @@ struct	mdoc_node {
 	struct mdoc_node *child;
 	struct mdoc_node *next;
 	struct mdoc_node *prev;
+	int		  nchild;
 	int		  line;
 	int		  pos;
 	int		  tok;

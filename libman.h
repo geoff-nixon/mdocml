@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.9 2009/06/10 20:18:43 kristaps Exp $ */
+/*	$Id: libman.h,v 1.10 2009/06/18 10:53:58 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -45,7 +45,9 @@ enum	merr {
 	WDATE,
 	WLNSCOPE,
 	WTSPACE,
-	WTQUOTE
+	WTQUOTE,
+	WNODATA,
+	WNOTITLE
 };
 
 __BEGIN_DECLS

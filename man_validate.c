@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.11 2009/06/18 10:32:00 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.12 2009/06/18 10:53:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -85,6 +85,7 @@ man_valid_post(struct man *m)
 	case (MAN_TEXT): 
 		return(check_text(m, m->last));
 	case (MAN_ROOT):
+		/* FIXME: validate that TH has been invoked! */
 		return(1);
 	default:
 		break;

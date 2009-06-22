@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.81 2009/06/22 12:04:05 kristaps Exp $ */
+/*	$Id: term.c,v 1.82 2009/06/22 12:38:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -413,7 +413,8 @@ term_nescape(struct termp *p, const char *word, size_t len)
 	size_t		 sz;
 	int		 i;
 
-	if ((rhs = term_a2ascii(p->symtab, word, len, &sz))) 
+	rhs = term_a2ascii(p->symtab, word, len, &sz);
+	if (rhs)
 		for (i = 0; i < (int)sz; i++) 
 			term_encodea(p, rhs[i]);
 }

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.16 2009/06/22 12:04:05 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.17 2009/06/22 12:38:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1309,7 +1309,8 @@ termp_lb_pre(DECL_ARGS)
 	const char	*lb;
 
 	assert(node->child && MDOC_TEXT == node->child->type);
-	if ((lb = mdoc_a2lib(node->child->string))) {
+	lb = mdoc_a2lib(node->child->string);
+	if (lb) {
 		term_word(p, lb);
 		return(0);
 	}

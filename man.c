@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.23 2009/06/18 10:53:58 kristaps Exp $ */
+/*	$Id: man.c,v 1.24 2009/06/18 20:46:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -465,6 +465,12 @@ man_err(struct man *m, int line, int pos,
 		break;
 	case (WTQUOTE):
 		p = "unterminated quotation";
+		break;
+	case (WNODATA):
+		p = "document has no data";
+		break;
+	case (WNOTITLE):
+		p = "document has no title/section";
 		break;
 	}
 	assert(p);

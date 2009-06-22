@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.17 2009/06/18 20:46:19 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.18 2009/06/22 12:04:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -89,7 +89,7 @@ const	struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL, NULL }, /* Ad */ 
 	{ NULL, NULL }, /* An */
 	{ NULL, post_ar }, /* Ar */
-	{ NULL, NULL }, /* Cd */
+	{ NULL, NULL }, /* Cd */ /* FIXME: tabs are accepted! */
 	{ NULL, NULL }, /* Cm */
 	{ NULL, NULL }, /* Dv */ 
 	{ NULL, NULL }, /* Er */ 

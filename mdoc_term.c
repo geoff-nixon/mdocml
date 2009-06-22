@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.15 2009/06/17 18:42:42 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.16 2009/06/22 12:04:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -776,11 +776,13 @@ termp_it_pre(DECL_ARGS)
 		/* FALLTHROUGH */
 	case (MDOC_Dash):
 		/* FALLTHROUGH */
-	case (MDOC_Enum):
-		/* FALLTHROUGH */
 	case (MDOC_Hyphen):
 		if (width < 4)
 			width = 4;
+		break;
+	case (MDOC_Enum):
+		if (width < 5)
+			width = 5;
 		break;
 	case (MDOC_Tag):
 		if (0 == width)
@@ -791,11 +793,13 @@ termp_it_pre(DECL_ARGS)
 	}
 
 	/* 
-	 * Whitespace control.  Inset bodies need an initial space.
+	 * Whitespace control.  Inset bodies need an initial space,
+	 * while diagonal bodies need two.
 	 */
 
 	switch (type) {
 	case (MDOC_Diag):
+		term_word(p, "\\ ");
 		/* FALLTHROUGH */
 	case (MDOC_Inset):
 		if (MDOC_BODY == node->type) 

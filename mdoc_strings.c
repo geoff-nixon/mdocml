@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.6 2009/06/17 09:41:00 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.7 2009/06/17 10:53:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -221,6 +221,7 @@ mdoc_atotime(const char *p)
 }
 
 
+/* FIXME: move this into an editable .in file. */
 size_t
 mdoc_macro2len(int macro)
 {
@@ -255,7 +256,7 @@ mdoc_macro2len(int macro)
 	case(MDOC_Em):
 		return(10);
 	case(MDOC_Er):
-		return(12);
+		return(17);
 	case(MDOC_Ev):
 		return(15);
 	case(MDOC_Fa):

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.80 2009/06/22 10:40:04 kristaps Exp $ */
+/*	$Id: term.c,v 1.81 2009/06/22 12:04:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -200,6 +200,9 @@ term_isopendelim(const char *p, int len)
  *  Otherwise, the line will break at the right margin.  Extremely long
  *  lines will cause the system to emit a warning (TODO: hyphenate, if
  *  possible).
+ *
+ *  FIXME: newline breaks occur (in groff) also occur when a single
+ *  space follows a NOBREAK!
  */
 void
 term_flushln(struct termp *p)

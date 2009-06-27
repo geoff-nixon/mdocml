@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.15 2009/06/17 14:10:09 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.16 2009/06/18 20:46:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -55,7 +55,6 @@ enum	mwarn {
 	WNOWIDTH,
 	WMISSWIDTH,
 	WESCAPE,
-	WDEPESC,
 	WDEPCOL,
 	WWRONGMSEC,
 	WSECOOO,
@@ -486,9 +485,6 @@ pwarn(struct mdoc *m, int line, int pos, enum mwarn type)
 	case (WESCAPE):
 		p = "invalid escape sequence";
 		break;
-	case (WDEPESC):
-		p = "deprecated special-character escape";
-		break;
 	case (WNOLINE):
 		p = "suggested no line arguments";
 		break;
@@ -728,10 +724,6 @@ check_text(struct mdoc *mdoc, int line, int pos, const char *p)
 
 		c = mdoc_isescape(p);
 		if (c) {
-			/* See if form is deprecated. */
-			if ('*' == p[1]) 
-				if ( ! pwarn(mdoc, line, pos, WDEPESC))
-					return(0);
 			p += (int)c - 1;
 			continue;
 		}

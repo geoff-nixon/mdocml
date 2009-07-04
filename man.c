@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.24 2009/06/18 20:46:19 kristaps Exp $ */
+/*	$Id: man.c,v 1.25 2009/06/22 13:09:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -471,6 +471,9 @@ man_err(struct man *m, int line, int pos,
 		break;
 	case (WNOTITLE):
 		p = "document has no title/section";
+		break;
+	case (WESCAPE):
+		p = "invalid escape sequence";
 		break;
 	}
 	assert(p);

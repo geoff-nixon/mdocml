@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.34 2009/06/25 11:35:28 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.35 2009/07/04 09:00:41 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -525,6 +525,12 @@ file re-write
 .Pq somewhere between 1.15 and 1.19 .
 .Pp
 .Bl -dash -compact
+.\" LIST-ITEM
+.It
+The \-width argument to 
+.Sq \&.Bl
+respects indent and indent-two (groff does too, but does not document
+the fact).
 .\" LIST-ITEM
 .It
 Some character sequences in groff are not handled depending on escape

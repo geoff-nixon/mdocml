@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.11 2009/06/22 13:09:17 kristaps Exp $ */
+/*	$Id: libman.h,v 1.12 2009/07/04 09:01:55 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -54,9 +54,9 @@ enum	merr {
 __BEGIN_DECLS
 
 #define		  man_perr(m, l, p, t) \
-		  man_err((m), l, p, 1, (t))
+		  man_err((m), (l), (p), 1, (t))
 #define		  man_pwarn(m, l, p, t) \
-		  man_err((m), l, p, 0, (t))
+		  man_err((m), (l), (p), 0, (t))
 #define		  man_nerr(m, n, t) \
 		  man_err((m), (n)->line, (n)->pos, 1, (t))
 #define		  man_nwarn(m, n, t) \

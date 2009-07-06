@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.20 2009/07/06 09:21:24 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.21 2009/07/06 11:00:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -488,7 +488,7 @@ static int
 warn_print(struct mdoc *m, int ln, int pos)
 {
 
-	return(perr(m, ln, pos, EPRINT, ! (MDOC_IGN_CHARS & m->flags)));
+	return(perr(m, ln, pos, EPRINT, ! (MDOC_IGN_CHARS & m->pflags)));
 }
 
 

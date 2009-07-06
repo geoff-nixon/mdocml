@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.19 2009/06/22 12:38:07 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.20 2009/06/25 08:42:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -289,14 +289,12 @@ static int
 pwarn(struct mdoc *m, int line, int pos, enum mwarn type)
 {
 	char		*p;
-	int		 c;
 
 	p = NULL;
-	c = WARN_SYNTAX;
+
 	switch (type) {
 	case (WBADSEC):
 		p = "inappropriate document section in manual section";
-		c = WARN_COMPAT;
 		break;
 	case (WNOWIDTH):
 		p = "cannot determine default width";
@@ -305,8 +303,9 @@ pwarn(struct mdoc *m, int line, int pos, enum mwarn type)
 		p = "malformed date syntax";
 		break;
 	}
+
 	assert(p);
-	return(mdoc_pwarn(m, line, pos, c, p));
+	return(mdoc_pwarn(m, line, pos, p));
 }
 
 

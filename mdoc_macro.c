@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.13 2009/06/16 19:45:51 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.14 2009/06/17 19:02:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -241,7 +241,7 @@ pwarn(struct mdoc *mdoc, int line, int pos, enum mwarn type)
 		break;
 	}
 	assert(p);
-	return(mdoc_pwarn(mdoc, line, pos, WARN_SYNTAX, p));
+	return(mdoc_pwarn(mdoc, line, pos, p));
 }
 
 
@@ -286,7 +286,7 @@ swarn(struct mdoc *mdoc, enum mdoc_type type,
 		return(mdoc_perr(mdoc, line, pos, 
 				"%s scope breaks %s scope of %s", 
 				tt, t, n));
-	return(mdoc_pwarn(mdoc, line, pos, WARN_SYNTAX,
+	return(mdoc_pwarn(mdoc, line, pos, 
 				"%s scope breaks %s scope of %s", 
 				tt, t, n));
 }

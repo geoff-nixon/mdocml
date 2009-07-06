@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.60 2009/06/17 10:53:32 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.61 2009/06/18 20:46:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -179,12 +179,6 @@
 #define	MDOC_Nested	 25
 #define	MDOC_ARG_MAX	 26
 
-/* Warnings are either syntax or groff-compatibility. */
-enum	mdoc_warn {
-	WARN_SYNTAX,
-	WARN_COMPAT
-};
-
 /* Type of a syntax node. */
 enum	mdoc_type {
 	MDOC_TEXT,
@@ -279,8 +273,7 @@ struct	mdoc_node {
 /* FIXME: unify somehow with man_cb. */
 struct	mdoc_cb {
 	int	(*mdoc_err)(void *, int, int, const char *);
-	int	(*mdoc_warn)(void *, int, int, 
-			enum mdoc_warn, const char *);
+	int	(*mdoc_warn)(void *, int, int, const char *);
 };
 
 /* See mdoc.3 for documentation. */

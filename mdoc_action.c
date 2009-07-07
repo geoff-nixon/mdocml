@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.22 2009/07/06 11:14:03 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.23 2009/07/06 13:04:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -665,7 +665,8 @@ post_lk(POST_ARGS)
 	
 	n = m->last;
 	m->next = MDOC_NEXT_CHILD;
-	/* FIXME: this isn't documented anywhere! */
+
+	/* XXX: this isn't documented anywhere! */
 	if ( ! mdoc_word_alloc(m, m->last->line,
 				m->last->pos, "~"))
 		return(0);

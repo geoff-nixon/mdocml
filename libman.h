@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.12 2009/07/04 09:01:55 kristaps Exp $ */
+/*	$Id: libman.h,v 1.13 2009/07/06 13:04:52 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -39,7 +39,7 @@ struct	man {
 };
 
 enum	merr {
-	WNPRINT,
+	WNPRINT = 0,
 	WNMEM,
 	WMSEC,
 	WDATE,
@@ -48,7 +48,8 @@ enum	merr {
 	WTQUOTE,
 	WNODATA,
 	WNOTITLE,
-	WESCAPE
+	WESCAPE,
+	WERRMAX
 };
 
 __BEGIN_DECLS

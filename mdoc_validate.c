@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.22 2009/07/06 11:05:29 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.23 2009/07/06 13:04:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -853,14 +853,12 @@ post_bf(POST_ARGS)
 	head = mdoc->last->head;
 
 	if (mdoc->last->args && head->child)
-		return(mdoc_verr(mdoc, mdoc->last->line, 
-			mdoc->last->pos, "one argument expected"));
+		return(mdoc_nerr(mdoc, mdoc->last, ELINE));
 	else if (mdoc->last->args)
 		return(1);
 
 	if (NULL == head->child || MDOC_TEXT != head->child->type)
-		return(mdoc_verr(mdoc, mdoc->last->line, 
-			mdoc->last->pos, "text argument expected"));
+		return(mdoc_nerr(mdoc, mdoc->last, ELINE));
 
 	p = head->child->string;
 

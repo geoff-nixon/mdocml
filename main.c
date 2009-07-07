@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.36 2009/07/06 09:34:29 kristaps Exp $ */
+/*	$Id: main.c,v 1.37 2009/07/06 13:08:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -643,7 +643,7 @@ mwarn(void *arg, int line, int col, const char *msg)
 	if ( ! (curp->wflags & WARN_WALL))
 		return(1);
 
-	warnx("%s:%d: syntax warning: %s (column %d)", 
+	warnx("%s:%d: warning: %s (column %d)", 
 			curp->file, line, msg, col);
 
 	if ( ! (curp->wflags & WARN_WERR))

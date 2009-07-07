@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.16 2009/07/06 13:04:52 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.17 2009/07/07 09:29:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -83,7 +83,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Fn */ 
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Ft */ 
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Ic */ 
-	{ in_line_eoln, 0 }, /* In */  /* FIXME: historic usage! */
+	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED }, /* In */
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Li */
 	{ in_line_eoln, 0 }, /* Nd */ 
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Nm */ 

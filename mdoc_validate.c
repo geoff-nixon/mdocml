@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.26 2009/07/12 09:13:21 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.27 2009/07/12 16:34:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1167,6 +1167,8 @@ post_sh_body(POST_ARGS)
 
 	for ( ; n && n->next; n = n->next) {
 		if (MDOC_ELEM == n->type && MDOC_Nm == n->tok)
+			continue;
+		if (MDOC_TEXT == n->type)
 			continue;
 		if ( ! mdoc_nwarn(mdoc, mdoc->last, ENAMESECINC))
 			return(0);

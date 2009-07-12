@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.31 2009/07/12 19:13:12 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.32 2009/07/12 19:28:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1941,13 +1941,12 @@ termp_fo_pre(DECL_ARGS)
 	const struct mdoc_node *n;
 
 	if (MDOC_BODY == node->type) {
+		p->flags |= TERMP_NOSPACE;
 		term_word(p, "(");
 		p->flags |= TERMP_NOSPACE;
 		return(1);
 	} else if (MDOC_HEAD != node->type) 
 		return(1);
-
-	/* XXX - groff shows only first parameter */
 
 	p->flags |= ttypes[TTYPE_FUNC_NAME];
 	for (n = node->child; n; n = n->next) {

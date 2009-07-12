@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.39 2009/07/12 15:32:26 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.40 2009/07/12 16:34:16 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -580,6 +580,11 @@ If an special-character control character is escaped
 .Sq \e\e ,
 it will obviously not render the subsequent sequence.  Even newer
 versions of groff seem to dither on this.
+.\" LIST-ITEM
+.It
+In groff, the 
+.Sq \&.Fo
+macro only produces the first parameter.  This is no longer the case.
 .El
 .\" SECTION
 .Sh SEE ALSO

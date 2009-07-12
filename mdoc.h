@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.63 2009/07/12 20:24:24 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.64 2009/07/12 20:30:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -294,8 +294,6 @@ int	 	  mdoc_parseln(struct mdoc *, int, char *buf);
 const struct mdoc_node *mdoc_node(const struct mdoc *);
 const struct mdoc_meta *mdoc_meta(const struct mdoc *);
 int		  mdoc_endparse(struct mdoc *);
-
-const char	 *mdoc_a2lib(const char *);
 
 __END_DECLS
 

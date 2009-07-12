@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.21 2009/07/05 19:25:10 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.22 2009/07/07 11:47:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1135,7 +1135,11 @@ static int
 termp_nd_pre(DECL_ARGS)
 {
 
+#ifdef __OpenBSD__
 	term_word(p, "\\-");
+#else
+	term_word(p, "\\(em");
+#endif
 	return(1);
 }
 

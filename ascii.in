@@ -1,4 +1,4 @@
-/*	$Id: ascii.in,v 1.9 2009/04/12 19:45:26 kristaps Exp $ */
+/*	$Id: ascii.in,v 1.10 2009/06/10 20:18:43 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -87,6 +87,7 @@ LINE("a~", 2, 	  "~", 1)
 LINE("ga", 2, 	  "`", 1)
 LINE("en", 2, 	  "-", 1)
 LINE("em", 2, 	  "--", 2)
+LINE("hy", 2, 	  "-", 1)
 LINE("Pi", 2, 	  "pi", 2)
 LINE("Fo", 2,	  "<<", 2)
 LINE("Fc", 2,	  ">>", 2)

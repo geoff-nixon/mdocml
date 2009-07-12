@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.14 2009/07/07 09:29:15 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.15 2009/07/12 09:13:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -153,6 +153,7 @@ enum	mdoc_sec  mdoc_atosec(const char *);
 time_t		  mdoc_atotime(const char *);
 
 size_t		  mdoc_macro2len(int);
+const char	 *mdoc_a2att(const char *);
 const char	 *mdoc_a2arch(const char *);
 const char	 *mdoc_a2vol(const char *);
 const char	 *mdoc_a2msec(const char *);

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.27 2009/07/12 16:34:16 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.28 2009/07/12 16:38:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1153,7 +1153,7 @@ post_sh_body(POST_ARGS)
 {
 	struct mdoc_node *n;
 
-	if (SEC_NAME != mdoc->lastnamed)
+	if (SEC_NAME != mdoc->lastsec)
 		return(1);
 
 	/*

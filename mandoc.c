@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.17 2009/06/27 09:03:03 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.1 2009/07/04 09:01:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,6 +14,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#include <sys/types.h>
+
 #include <assert.h>
 #include <ctype.h>
 #include <stdlib.h>

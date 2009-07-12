@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.32 2009/07/12 19:28:46 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.33 2009/07/12 19:34:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1070,12 +1070,9 @@ termp_rv_pre(DECL_ARGS)
 {
 	int		 i;
 
-	/* FIXME: mandated by parser. */
-
-	if (-1 == (i = arg_getattr(MDOC_Std, node)))
-		errx(1, "expected -std argument");
-	if (1 != node->args->argv[i].sz)
-		errx(1, "expected -std argument");
+	i = arg_getattr(MDOC_Std, node);
+	assert(-1 != i);
+	assert(node->args->argv[i].sz);
 
 	term_newln(p);
 	term_word(p, "The");
@@ -1105,12 +1102,9 @@ termp_ex_pre(DECL_ARGS)
 {
 	int		 i;
 
-	/* FIXME: mandated by parser? */
-
-	if (-1 == (i = arg_getattr(MDOC_Std, node)))
-		errx(1, "expected -std argument");
-	if (1 != node->args->argv[i].sz)
-		errx(1, "expected -std argument");
+	i = arg_getattr(MDOC_Std, node);
+	assert(-1 != i);
+	assert(node->args->argv[i].sz);
 
 	term_word(p, "The");
 	p->flags |= ttypes[TTYPE_PROG];

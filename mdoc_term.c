@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.30 2009/07/12 17:49:32 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.31 2009/07/12 19:13:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1204,7 +1204,11 @@ static void
 termp_vt_post(DECL_ARGS)
 {
 
-	if (node->sec == SEC_SYNOPSIS)
+	if (node->sec != SEC_SYNOPSIS)
+		return;
+	if (node->next && MDOC_Vt == node->next->tok)
+		term_newln(p);
+	else if (node->next)
 		term_vspace(p);
 }
 

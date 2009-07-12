@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.23 2009/07/12 08:45:56 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.24 2009/07/12 08:49:50 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1134,6 +1134,9 @@ termp_ex_pre(DECL_ARGS)
 static int
 termp_nd_pre(DECL_ARGS)
 {
+
+	if (MDOC_BODY != node->type)
+		return(1);
 	/* 
 	 * XXX: signed off by jmc@openbsd.org.  This technically
 	 * produces a minus sign after the Nd, which is wrong, but is

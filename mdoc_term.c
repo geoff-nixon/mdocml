@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.25 2009/07/12 16:34:16 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.26 2009/07/12 16:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -908,7 +908,7 @@ termp_it_pre(DECL_ARGS)
 			/* FALLTHROUGH */
 		case (MDOC_Hyphen):
 			p->flags |= TERMP_BOLD;
-			term_word(p, "\\-");
+			term_word(p, "\\(hy");
 			break;
 		case (MDOC_Enum):
 			(pair->ppair->ppair->count)++;
@@ -1137,7 +1137,7 @@ termp_nd_pre(DECL_ARGS)
 	 * produces a minus sign after the Nd, which is wrong, but is
 	 * consistent with the historic OpenBSD tmac file.
 	 */
-#ifdef __OpenBSD__
+#if defined(__OpenBSD__) || defined(__linux__)
 	term_word(p, "\\-");
 #else
 	term_word(p, "\\(em");

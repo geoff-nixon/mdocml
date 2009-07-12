@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.88 2009/07/06 13:04:52 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.89 2009/07/07 09:29:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -79,6 +79,7 @@ const	char *const __mdoc_merrnames[MERRMAX] = {
 	"unterminated quoted phrase", /* EQUOTPHR */
 	"closure macro without prior context", /* ENOCTX */
 	"invalid whitespace after control character", /* ESPACE */
+	"no description found for library" /* ELIB */
 };
 
 const	char *const __mdoc_macronames[MDOC_MAX] = {		 

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.83 2009/06/22 13:13:10 kristaps Exp $ */
+/*	$Id: term.c,v 1.84 2009/07/14 15:16:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -315,7 +315,7 @@ term_flushln(struct termp *p)
 				putchar(' ');
 		}
 		if (TERMP_HANG & p->flags)
-			sv = vis - maxvis;
+			sv = (int)(vis - maxvis);
 		p->col = 0;
 		return;
 	}

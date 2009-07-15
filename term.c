@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.85 2009/07/14 15:49:44 kristaps Exp $ */
+/*	$Id: term.c,v 1.86 2009/07/15 15:37:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -496,7 +496,6 @@ void
 term_word(struct termp *p, const char *word)
 {
 
-	assert(*word);
 	if (term_isclosedelim(word))
 		if ( ! (TERMP_IGNDELIM & p->flags))
 			p->flags |= TERMP_NOSPACE;

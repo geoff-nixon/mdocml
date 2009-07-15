@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.40 2009/07/14 15:49:44 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.41 2009/07/14 16:03:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -407,7 +407,7 @@ print_foot(struct termp *p, const struct mdoc_meta *meta)
 
 	tm = localtime(&meta->date);
 
-	if (0 == strftime(buf, p->rmargin, "%B %d, %Y", tm))
+	if (0 == strftime(buf, p->rmargin, "%B %e, %Y", tm))
 		err(1, "strftime");
 
 	(void)strlcpy(os, meta->os, p->rmargin);

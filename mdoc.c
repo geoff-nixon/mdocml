@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.90 2009/07/12 20:50:08 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.91 2009/07/15 15:36:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -146,6 +146,10 @@ static	int		  parsemacro(struct mdoc *, int, char *);
 static	int		  macrowarn(struct mdoc *, int, const char *);
 static	int		  pstring(struct mdoc *, int, int, 
 				const char *, size_t);
+
+#ifdef __linux__
+extern	size_t	  	  strlcpy(char *, const char *, size_t);
+#endif
 
 
 const struct mdoc_node *

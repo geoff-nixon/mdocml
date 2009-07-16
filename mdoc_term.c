@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.41 2009/07/14 16:03:51 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.42 2009/07/15 08:20:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -797,9 +797,6 @@ termp_it_pre(DECL_ARGS)
 	 */
 
 	switch (type) {
-	case (MDOC_Diag):
-		term_word(p, "\\ ");
-		/* FALLTHROUGH */
 	case (MDOC_Inset):
 		if (MDOC_BODY == node->type) 
 			p->flags &= ~TERMP_NOSPACE;
@@ -988,6 +985,7 @@ termp_it_post(DECL_ARGS)
 
 	switch (type) {
 	case (MDOC_Diag):
+		term_word(p, "\\ ");
 		/* FALLTHROUGH */
 	case (MDOC_Item):
 		/* FALLTHROUGH */

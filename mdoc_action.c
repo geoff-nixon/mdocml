@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.27 2009/07/12 20:50:08 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.28 2009/07/15 15:53:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -298,11 +298,6 @@ post_lb(POST_ARGS)
 	char		*buf;
 	size_t		 sz;
 
-	/* 
-	 * FIXME: this must be broken apart into a series of TEXT nodes,
-	 * each containing a single word. 
-	 */
-
 	assert(MDOC_TEXT == m->last->child->type);
 	p = mdoc_a2lib(m->last->child->string);
 	if (NULL == p) {
@@ -331,11 +326,6 @@ post_st(POST_ARGS)
 {
 	const char	*p;
 
-	/* 
-	 * FIXME: this must be broken apart into a series of TEXT nodes,
-	 * each containing a single word. 
-	 */
-
 	assert(MDOC_TEXT == m->last->child->type);
 	p = mdoc_a2st(m->last->child->string);
 	assert(p);
@@ -352,11 +342,6 @@ post_at(POST_ARGS)
 {
 	struct mdoc_node *n;
 	const char	 *p;
-
-	/* 
-	 * FIXME: this must be broken apart into a series of TEXT nodes,
-	 * each containing a single word. 
-	 */
 
 	if (m->last->child) {
 		assert(MDOC_TEXT == m->last->child->type);

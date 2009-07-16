@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.87 2009/07/15 15:53:57 kristaps Exp $ */
+/*	$Id: term.c,v 1.88 2009/07/16 12:34:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -252,10 +252,10 @@ term_flushln(struct termp *p)
 
 		/* LINTED */
 		for (j = i, vsz = 0; j < (int)p->col; j++) {
-			if (' ' == p->buf[j])
+			if (' ' == p->buf[j]) 
 				break;
 			else if (8 == p->buf[j])
-				j += 1;
+				vsz--;
 			else
 				vsz++;
 		}
@@ -549,8 +549,8 @@ term_chara(struct termp *p, char c)
 static void
 term_encodea(struct termp *p, char c)
 {
-
-	if (TERMP_STYLE & p->flags) {
+	
+	if (' ' != c && TERMP_STYLE & p->flags) {
 		if (TERMP_BOLD & p->flags) {
 			term_chara(p, c);
 			term_chara(p, 8);

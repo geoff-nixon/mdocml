@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.19 2009/07/12 16:34:16 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.20 2009/07/17 10:56:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -60,7 +60,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ in_line_eoln, MDOC_PROLOGUE }, /* Os */
 	{ blk_full, 0 }, /* Sh */
 	{ blk_full, 0 }, /* Ss */ 
-	{ in_line, 0 }, /* Pp */ 
+	{ in_line_eoln, 0 }, /* Pp */ 
 	{ blk_part_imp, MDOC_PARSED }, /* D1 */
 	{ blk_part_imp, MDOC_PARSED }, /* Dl */
 	{ blk_full, MDOC_EXPLICIT }, /* Bd */
@@ -161,7 +161,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ obsolete, 0 }, /* Fr */
 	{ in_line_eoln, 0 }, /* Ud */
 	{ in_line_eoln, 0 }, /* Lb */
-	{ in_line, 0 }, /* Lp */ 
+	{ in_line_eoln, 0 }, /* Lp */ 
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Lk */ 
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Mt */ 
 	{ blk_part_imp, MDOC_CALLABLE | MDOC_PARSED }, /* Brq */
@@ -742,10 +742,6 @@ in_line(MACRO_PROT_ARGS)
 	 * usually because of reserved words) to squeak by.
 	 */
 	switch (tok) {
-	case (MDOC_Lp):
-		/* FALLTHROUGH */
-	case (MDOC_Pp):
-		/* FALLTHROUGH */
 	case (MDOC_Nm):
 		/* FALLTHROUGH */
 	case (MDOC_Fl):

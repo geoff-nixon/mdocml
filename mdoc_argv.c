@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.14 2009/07/17 10:56:57 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.15 2009/07/17 12:27:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -221,7 +221,6 @@ int
 mdoc_argv(struct mdoc *m, int line, int tok,
 		struct mdoc_arg **v, int *pos, char *buf)
 {
-	int		  i;
 	char		 *p, sv;
 	struct mdoc_argv tmp;
 	struct mdoc_arg	 *arg;
@@ -233,7 +232,6 @@ mdoc_argv(struct mdoc *m, int line, int tok,
 
 	/* Parse through to the first unescaped space. */
 
-	i = *pos;
 	p = &buf[++(*pos)];
 
 	assert(*pos > 0);

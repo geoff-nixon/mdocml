@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.18 2009/07/07 11:47:17 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.19 2009/07/12 16:34:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -172,6 +172,8 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ obsolete, 0 }, /* En */
 	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED }, /* Dx */
 	{ in_line_eoln, 0 }, /* %Q */
+	{ in_line_eoln, 0 }, /* br */
+	{ in_line_eoln, 0 }, /* sp */
 };
 
 const	struct mdoc_macro * const mdoc_macros = __mdoc_macros;

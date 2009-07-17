@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.12 2009/07/11 20:47:52 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.13 2009/07/15 15:26:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -208,6 +208,8 @@ static	int mdoc_argflags[MDOC_MAX] = {
 	0, /* En */
 	0, /* Dx */
 	ARGS_QUOTED, /* %Q */
+	0, /* br */
+	0, /* sp */
 };
 
 

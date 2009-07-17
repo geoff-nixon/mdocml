@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.28 2009/07/15 15:53:57 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.29 2009/07/16 13:17:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -172,6 +172,8 @@ const	struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL, NULL }, /* En */
 	{ NULL, NULL }, /* Dx */
 	{ NULL, NULL }, /* %Q */
+	{ NULL, NULL }, /* br */
+	{ NULL, NULL }, /* sp */
 };
 
 static	int	  concat(struct mdoc *, const struct mdoc_node *, 

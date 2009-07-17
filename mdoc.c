@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.91 2009/07/15 15:36:38 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.92 2009/07/16 13:42:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -117,7 +117,7 @@ const	char *const __mdoc_macronames[MDOC_MAX] = {
 	/* LINTED */
 	"Brc",		"\%C",		"Es",		"En",
 	/* LINTED */
-	"Dx",		"\%Q"
+	"Dx",		"\%Q",		"br",		"sp"
 	};
 
 const	char *const __mdoc_argnames[MDOC_ARG_MAX] = {		 

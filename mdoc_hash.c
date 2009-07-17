@@ -1,4 +1,4 @@
-/*	$Id: mdoc_hash.c,v 1.5 2009/06/16 19:55:28 kristaps Exp $ */
+/*	$Id: mdoc_hash.c,v 1.6 2009/07/17 10:56:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -126,6 +126,9 @@ mdoc_hash_find(const void *arg, const char *tmp)
 	ADJUST_MINOR(minor);
 
 	ind = INDEX(major, minor);
+
+	if (ind < 0 || ind >= 26 * 3 * 52)
+		return(MDOC_MAX);
 
 	if (htab[ind]) {
 		slot = htab[ind] - /* LINTED */

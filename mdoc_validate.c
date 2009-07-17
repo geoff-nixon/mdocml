@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.34 2009/07/17 12:08:08 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.35 2009/07/17 12:27:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1138,6 +1138,8 @@ post_sp(POST_ARGS)
 
 	if (NULL == mdoc->last->child)
 		return(1);
+	else if ( ! eerr_eq1(mdoc))
+		return(0);
 
 	assert(MDOC_TEXT == mdoc->last->child->type);
 	buf = mdoc->last->child->string;
@@ -1150,7 +1152,7 @@ post_sp(POST_ARGS)
 		return(mdoc_nerr(mdoc, mdoc->last->child, ENUMFMT));
 
 	if ((errno == ERANGE && (lval == LONG_MAX || lval == LONG_MIN)) ||
-			(lval > INT_MAX || lval < INT_MIN))
+			(lval > INT_MAX || lval < 0))
 		return(mdoc_nerr(mdoc, mdoc->last->child, ENUMFMT));
 
 	return(1);

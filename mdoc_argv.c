@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.16 2009/07/17 12:28:38 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.17 2009/07/18 18:49:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -501,8 +501,9 @@ args(struct mdoc *m, int line, int *pos,
 		}
 
 		if (0 == buf[*pos]) {
-			(void)mdoc_perr(m, line, *pos, EQUOTTERM);
-			return(ARGS_ERROR);
+			if ( ! mdoc_pwarn(m, line, *pos, EQUOTTERM))
+				return(ARGS_ERROR);
+			return(ARGS_QWORD);
 		}
 
 		buf[(*pos)++] = 0;

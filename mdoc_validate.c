@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.35 2009/07/17 12:27:49 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.36 2009/07/17 12:40:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -862,7 +862,7 @@ post_bf(POST_ARGS)
 		return(1);
 	else if (0 == strcmp(p, "Li"))
 		return(1);
-	else if (0 == strcmp(p, "Sm"))
+	else if (0 == strcmp(p, "Sy"))
 		return(1);
 
 	return(mdoc_nerr(mdoc, head, EFONT));

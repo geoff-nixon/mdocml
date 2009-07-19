@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.17 2009/07/18 18:49:19 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.18 2009/07/18 18:59:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -323,6 +323,14 @@ mdoc_argv_free(struct mdoc_arg *p)
 
 	free(p->argv);
 	free(p);
+}
+
+
+int
+mdoc_zargs(struct mdoc *m, int line, int *pos, char *buf, char **v)
+{
+
+	return(args(m, line, pos, buf, 0, v));
 }
 
 

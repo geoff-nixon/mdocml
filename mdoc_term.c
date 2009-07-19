@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.45 2009/07/17 12:40:48 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.46 2009/07/19 08:18:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1569,7 +1569,6 @@ termp_bd_pre(DECL_ARGS)
 	 * Ew.
 	 */
 
-	p->flags |= TERMP_LITERAL;
 	ln = node->child ? node->child->line : 0;
 
 	for (node = node->child; node; node = node->next) {
@@ -1592,10 +1591,7 @@ termp_bd_post(DECL_ARGS)
 
 	if (MDOC_BODY != node->type) 
 		return;
-
 	term_flushln(p);
-	p->flags &= ~TERMP_LITERAL;
-	p->flags |= TERMP_NOSPACE;
 }
 
 

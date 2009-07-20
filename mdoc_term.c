@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.47 2009/07/19 08:24:16 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.48 2009/07/20 15:05:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -798,6 +798,8 @@ termp_it_pre(DECL_ARGS)
 		if (0 == width)
 			width = 8;
 		break;
+	case (MDOC_Column):
+		/* FALLTHROUGH */
 	case (MDOC_Tag):
 		if (0 == width)
 			width = 10;
@@ -916,12 +918,14 @@ termp_it_pre(DECL_ARGS)
 	case (MDOC_Hang):
 		/* FALLTHROUGH */
 	case (MDOC_Tag):
+		assert(width);
 		if (MDOC_HEAD == node->type)
 			p->rmargin = p->offset + width;
 		else 
 			p->offset += width;
 		break;
 	case (MDOC_Column):
+		assert(width);
 		p->rmargin = p->offset + width;
 		break;
 	default:

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_hash.c,v 1.6 2009/07/17 10:56:27 kristaps Exp $ */
+/*	$Id: mdoc_hash.c,v 1.7 2009/07/17 11:00:18 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,6 +14,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#include <sys/types.h>
+
 #include <assert.h>
 #include <ctype.h>
 #include <stdlib.h>

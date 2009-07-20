@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.46 2009/07/19 08:18:28 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.47 2009/07/19 08:24:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -671,6 +671,9 @@ fmt_block_vspace(struct termp *p,
 	term_newln(p);
 
 	if (arg_hasattr(MDOC_Compact, bl))
+		return(1);
+	/* XXX - not documented! */
+	else if (arg_hasattr(MDOC_Column, bl))
 		return(1);
 
 	for (n = node; n; n = n->parent) {

@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.39 2009/07/19 09:10:42 kristaps Exp $ */
+/*	$Id: term.h,v 1.40 2009/07/21 13:34:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -47,7 +47,7 @@ struct	termp {
 #define	TERMP_NONOSPACE	 (1 << 7)	/* No space (no autounset). */
 #define	TERMP_DANGLE	 (1 << 8)	/* See term_flushln(). */
 #define	TERMP_HANG	 (1 << 9)	/* See term_flushln(). */
-#define	TERMP_TWOSPACE	 (1 << 9)	/* See term_flushln(). */
+#define	TERMP_TWOSPACE	 (1 << 10)	/* See term_flushln(). */
 	char		 *buf;		/* Output buffer. */
 	enum termenc	  enc;		/* Type of encoding. */
 	void		 *symtab;	/* Encoded-symbol table. */

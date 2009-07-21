@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.50 2009/07/21 12:47:52 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.51 2009/07/21 13:34:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -65,7 +65,7 @@ const	int ttypes[TTYPE_NMAX] = {
 	TERMP_UNDER, 		/* TTYPE_FUNC_ARG */
 	TERMP_UNDER, 		/* TTYPE_LINK */
 	TERMP_BOLD,	 	/* TTYPE_SSECTION */
-	TERMP_UNDER, 		/* TTYPE_FILE */
+	0, 			/* TTYPE_FILE */
 	TERMP_UNDER, 		/* TTYPE_EMPH */
 	TERMP_BOLD,	 	/* TTYPE_CONFIG */
 	TERMP_BOLD,	 	/* TTYPE_CMD */
@@ -154,7 +154,6 @@ static	int	  termp_nd_pre(DECL_ARGS);
 static	int	  termp_nm_pre(DECL_ARGS);
 static	int	  termp_ns_pre(DECL_ARGS);
 static	int	  termp_op_pre(DECL_ARGS);
-static	int	  termp_pa_pre(DECL_ARGS);
 static	int	  termp_pf_pre(DECL_ARGS);
 static	int	  termp_pp_pre(DECL_ARGS);
 static	int	  termp_pq_pre(DECL_ARGS);
@@ -210,7 +209,7 @@ static const struct termact termacts[MDOC_MAX] = {
 	{ termp_nm_pre, NULL }, /* Nm */ 
 	{ termp_op_pre, termp_op_post }, /* Op */
 	{ NULL, NULL }, /* Ot */
-	{ termp_pa_pre, NULL }, /* Pa */
+	{ NULL, NULL }, /* Pa */
 	{ termp_rv_pre, NULL }, /* Rv */
 	{ NULL, NULL }, /* St */ 
 	{ termp_va_pre, NULL }, /* Va */
@@ -1756,16 +1755,6 @@ termp_ss_post(DECL_ARGS)
 
 	if (MDOC_HEAD == node->type)
 		term_newln(p);
-}
-
-
-/* ARGSUSED */
-static int
-termp_pa_pre(DECL_ARGS)
-{
-
-	pair->flag |= ttypes[TTYPE_FILE];
-	return(1);
 }
 
 

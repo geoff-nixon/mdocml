@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.23 2009/07/19 09:17:42 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.24 2009/07/19 21:26:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -747,6 +747,8 @@ in_line(MACRO_PROT_ARGS)
 	case (MDOC_Fl):
 		/* FALLTHROUGH */
 	case (MDOC_Lk):
+		/* FALLTHROUGH */
+	case (MDOC_Pa):
 		/* FALLTHROUGH */
 	case (MDOC_Ar):
 		nc = 1;

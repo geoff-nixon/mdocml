@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.29 2009/07/16 13:17:51 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.30 2009/07/17 10:56:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -42,13 +42,13 @@ static	int	  post_dd(POST_ARGS);
 static	int	  post_display(POST_ARGS);
 static	int	  post_dt(POST_ARGS);
 static	int	  post_lb(POST_ARGS);
-static	int	  post_lk(POST_ARGS);
 static	int	  post_nm(POST_ARGS);
 static	int	  post_os(POST_ARGS);
 static	int	  post_prol(POST_ARGS);
 static	int	  post_sh(POST_ARGS);
 static	int	  post_st(POST_ARGS);
 static	int	  post_std(POST_ARGS);
+static	int	  post_tilde(POST_ARGS);
 
 static	int	  pre_bd(PRE_ARGS);
 static	int	  pre_dl(PRE_ARGS);
@@ -89,7 +89,7 @@ const	struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL, post_nm }, /* Nm */ 
 	{ NULL, NULL }, /* Op */
 	{ NULL, NULL }, /* Ot */
-	{ NULL, NULL }, /* Pa */
+	{ NULL, post_tilde }, /* Pa */
 	{ NULL, post_std }, /* Rv */
 	{ NULL, post_st }, /* St */
 	{ NULL, NULL }, /* Va */
@@ -162,7 +162,7 @@ const	struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL, NULL }, /* Ud */
 	{ NULL, post_lb }, /* Lb */
 	{ NULL, NULL }, /* Lp */
-	{ NULL, post_lk }, /* Lk */
+	{ NULL, post_tilde }, /* Lk */
 	{ NULL, NULL }, /* Mt */
 	{ NULL, NULL }, /* Brq */
 	{ NULL, NULL }, /* Bro */
@@ -735,7 +735,7 @@ post_bl(POST_ARGS)
 
 
 static int
-post_lk(POST_ARGS)
+post_tilde(POST_ARGS)
 {
 	struct mdoc_node *n;
 
@@ -745,7 +745,7 @@ post_lk(POST_ARGS)
 	n = m->last;
 	m->next = MDOC_NEXT_CHILD;
 
-	/* XXX: this isn't documented anywhere! */
+	/* XXX: not documented for `Lk'. */
 	if ( ! mdoc_word_alloc(m, m->last->line, m->last->pos, "~"))
 		return(0);
 

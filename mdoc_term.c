@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.60 2009/07/24 11:54:54 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.61 2009/07/24 12:47:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -858,7 +858,8 @@ termp_it_pre(DECL_ARGS)
 
 	switch (type) {
 	case (MDOC_Diag):
-		term_word(p, "\\ \\ ");
+		if (MDOC_BODY == node->type)
+			term_word(p, "\\ \\ ");
 		break;
 	case (MDOC_Inset):
 		if (MDOC_BODY == node->type) 

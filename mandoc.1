@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.26 2009/07/20 13:45:11 kristaps Exp $
+.\"	$Id: mandoc.1,v 1.27 2009/07/21 15:52:41 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -227,6 +227,10 @@ Implies
 .Fl f Ns Ar no-ign-macro
 and
 .Fl f Ns Ar no-ign-chars .
+.It Fl f Ns Ar ign-errors
+Don't halt when encountering parse errors.  Useful with
+.Fl T Ns Ar lint
+over a large set of manuals passed on the command line.
 .El
 .\" PARAGRAPH
 .Pp
@@ -245,6 +249,12 @@ To page manuals to the terminal:
 .Pp
 .D1 % mandoc \-Wall,error \-fstrict mandoc.1 2>&1 | less
 .D1 % mandoc mandoc.1 mdoc.3 mdoc.7 | less
+.\" PARAGRAPH
+.Pp
+To check over a large set of manuals:
+.\" PARAGRAPH
+.Pp
+.Dl % mandoc \-Tlint \-fign-errors `find /usr/src -name \e*\e.[1-9]`
 .\" SECTION
 .Sh COMPATIBILITY
 This section summarises

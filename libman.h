@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.13 2009/07/06 13:04:52 kristaps Exp $ */
+/*	$Id: libman.h,v 1.14 2009/07/07 09:35:40 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -49,6 +49,7 @@ enum	merr {
 	WNODATA,
 	WNOTITLE,
 	WESCAPE,
+	WNUMFMT,
 	WERRMAX
 };
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.30 2009/07/17 10:56:57 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.31 2009/07/21 15:53:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -845,7 +845,12 @@ pre_bd(PRE_ARGS)
 	if (MDOC_BODY != n->type)
 		return(1);
 
-	/* Enter literal context if `Bd -literal' or * -unfilled'. */
+	/* Enter literal context if `Bd -literal' or `-unfilled'. */
+
+	/* 
+	 * TODO: `-offset' without an argument should be the width of
+	 * the literal "<string>".
+	 */
 
 	for (n = n->parent, i = 0; i < (int)n->args->argc; i++)
 		if (MDOC_Literal == n->args->argv[i].arg)

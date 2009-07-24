@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.26 2009/07/04 09:01:55 kristaps Exp $ */
+/*	$Id: man.c,v 1.27 2009/07/07 09:35:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -34,6 +34,7 @@ const	char *const __man_merrnames[WERRMAX] = {
 	"document has no body", /* WNODATA */
 	"document has no title/section", /* WNOTITLE */
 	"invalid escape sequence", /* WESCAPE */
+	"invalid number format", /* WNUMFMT */
 };
 
 const	char *const __man_macronames[MAN_MAX] = {		 
@@ -42,7 +43,7 @@ const	char *const __man_macronames[MAN_MAX] = {
 	"IP",		"HP",		"SM",		"SB",
 	"BI",		"IB",		"BR",		"RB",
 	"R",		"B",		"I",		"IR",
-	"RI",		"na",		"i"
+	"RI",		"na",		"i",		"sp"
 	};
 
 const	char * const *man_macronames = __man_macronames;

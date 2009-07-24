@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.38 2009/07/20 15:05:34 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.39 2009/07/23 08:36:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -912,7 +912,7 @@ post_an(POST_ARGS)
 	if (mdoc->last->args) {
 		if (NULL == mdoc->last->child)
 			return(1);
-		return(mdoc_nerr(mdoc, mdoc->last, ELINE));
+		return(mdoc_nerr(mdoc, mdoc->last, ENOLINE));
 	}
 
 	if (mdoc->last->child)

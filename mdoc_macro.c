@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.24 2009/07/19 21:26:27 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.25 2009/07/21 15:53:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -742,15 +742,17 @@ in_line(MACRO_PROT_ARGS)
 	 * usually because of reserved words) to squeak by.
 	 */
 	switch (tok) {
-	case (MDOC_Nm):
+	case (MDOC_An):
+		/* FALLTHROUGH */
+	case (MDOC_Ar):
 		/* FALLTHROUGH */
 	case (MDOC_Fl):
 		/* FALLTHROUGH */
 	case (MDOC_Lk):
 		/* FALLTHROUGH */
-	case (MDOC_Pa):
+	case (MDOC_Nm):
 		/* FALLTHROUGH */
-	case (MDOC_Ar):
+	case (MDOC_Pa):
 		nc = 1;
 		break;
 	default:

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.91 2009/07/21 13:34:13 kristaps Exp $ */
+/*	$Id: term.c,v 1.92 2009/07/23 08:35:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -259,7 +259,7 @@ term_flushln(struct termp *p)
 
 		/* LINTED */
 		for (j = i, vsz = 0; j < (int)p->col; j++) {
-			if (' ' == p->buf[j]) 
+			if (j && ' ' == p->buf[j]) 
 				break;
 			else if (8 == p->buf[j])
 				vsz--;

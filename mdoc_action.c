@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.31 2009/07/21 15:53:31 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.32 2009/07/24 13:18:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -487,7 +487,6 @@ post_dt(POST_ARGS)
 		free(m->meta.vol);
 		if (NULL == (m->meta.vol = strdup(cp)))
 			return(mdoc_nerr(m, m->last, EMALLOC));
-		n = n->next;
 	} else {
 		cp = mdoc_a2arch(n->string);
 		if (NULL == cp) {

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.61 2009/07/24 12:47:35 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.62 2009/07/24 12:52:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -674,6 +674,7 @@ fmt_block_vspace(struct termp *p,
 
 	if (MDOC_Bl == bl->tok && arg_hasattr(MDOC_Compact, bl))
 		return;
+	assert(node);
 
 	/*
 	 * Search through our prior nodes.  If we follow a `Ss' or `Sh',

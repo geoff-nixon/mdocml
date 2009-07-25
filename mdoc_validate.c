@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.39 2009/07/23 08:36:32 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.40 2009/07/24 12:09:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1219,6 +1219,7 @@ post_sh_body(POST_ARGS)
 			return(0);
 	}
 
+	assert(n);
 	if (MDOC_BLOCK == n->type && MDOC_Nd == n->tok)
 		return(1);
 	return(mdoc_nwarn(mdoc, mdoc->last, ENAMESECINC));

@@ -1,4 +1,4 @@
-/*	$Id: ascii.in,v 1.10 2009/06/10 20:18:43 kristaps Exp $ */
+/*	$Id: ascii.in,v 1.11 2009/07/12 08:45:56 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -27,7 +27,7 @@
 LINE("\\", 1,	  "\\", 1)
 LINE("\'", 1,	  "\'", 1)
 LINE("`", 1,	  "`", 1)
-LINE("%", 1,	  "%", 1)
+LINE("%", 1,	  "", 0)
 LINE("-", 1,	  "-", 1)
 LINE(" ", 1,	  " ", 1)
 LINE("~", 1,	  " ", 1)

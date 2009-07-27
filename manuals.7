@@ -1,4 +1,4 @@
-.\"	$Id: manuals.7,v 1.17 2009/07/20 13:45:11 kristaps Exp $
+.\"	$Id: manuals.7,v 1.18 2009/07/27 13:10:08 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -113,8 +113,7 @@ The quick-fix feature of
 is useful for checking over many manuals:
 .Bd -literal -offset indent
 % mandoc \-Wall \-fstrict \-Tlint \-fign-errors \e
-  `find /usr/src \-name \e*\e.[1-9]` 2>&1 | \e 
-  sed 's!^mandoc: !!' > /tmp/mandoc.errs
+  ./path/to/manuals/* 2>&1 > /tmp/mandoc.errs
 % vim -q /tmp/mandoc.errs
 .Ed
 .Pp

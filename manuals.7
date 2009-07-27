@@ -1,4 +1,4 @@
-.\"	$Id: manuals.7,v 1.16 2009/07/16 22:16:44 kristaps Exp $
+.\"	$Id: manuals.7,v 1.17 2009/07/20 13:45:11 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -106,7 +106,17 @@ for this document.  Rename the template file:
 .Ss Development Tools
 While writing, make sure that your manual is correctly structured:
 .Pp
-.Dl % mandoc \-Tlint \-Wall name.1
+.Dl % mandoc \-Tlint \-Wall \-fstrict name.1
+.Pp
+The quick-fix feature of
+.Xr vim 1
+is useful for checking over many manuals:
+.Bd -literal -offset indent
+% mandoc \-Wall \-fstrict \-Tlint \-fign-errors \e
+  `find /usr/src \-name \e*\e.[1-9]` 2>&1 | \e 
+  sed 's!^mandoc: !!' > /tmp/mandoc.errs
+% vim -q /tmp/mandoc.errs
+.Ed
 .Pp
 You may spell-check your work as follows:
 .Pp

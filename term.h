@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.41 2009/07/21 15:33:05 kristaps Exp $ */
+/*	$Id: term.h,v 1.42 2009/07/24 12:47:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -58,6 +58,7 @@ struct	termp {
 
 void		 *term_ascii2htab(void);
 const char	 *term_a2ascii(void *, const char *, size_t, size_t *);
+const char	 *term_a2res(void *, const char *, size_t, size_t *);
 void		  term_asciifree(void *);
 
 void		  term_newln(struct termp *);

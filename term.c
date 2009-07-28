@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.95 2009/07/27 12:35:54 kristaps Exp $ */
+/*	$Id: term.c,v 1.96 2009/07/27 13:10:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -392,7 +392,7 @@ do_special(struct termp *p, const char *word, size_t len)
 	rhs = term_a2ascii(p->symtab, word, len, &sz);
 
 	if (NULL == rhs) {
-#if 1
+#if 0
 		fputs("Unknown special character: ", stderr);
 		for (i = 0; i < (int)len; i++)
 			fputc(word[i], stderr);
@@ -436,10 +436,11 @@ do_reserved(struct termp *p, const char *word, size_t len)
 static void
 do_escaped(struct termp *p, const char **word)
 {
-	int		 j;
+	int		 j, type;
 	const char	*wp;
 
 	wp = *word;
+	type = 1;
 
 	if (0 == *(++wp)) {
 		*word = wp;
@@ -475,6 +476,7 @@ do_escaped(struct termp *p, const char **word)
 			*word = ++wp;
 			return;
 		case ('['):
+			type = 0;
 			break;
 		default:
 			do_reserved(p, wp, 1);
@@ -522,7 +524,10 @@ do_escaped(struct termp *p, const char **word)
 		return;
 	}
 
-	do_special(p, wp - j, (size_t)j);
+	if (type)
+		do_special(p, wp - j, (size_t)j);
+	else
+		do_reserved(p, wp - j, (size_t)j);
 	*word = wp;
 }
 

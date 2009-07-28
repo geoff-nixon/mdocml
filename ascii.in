@@ -1,4 +1,4 @@
-/*	$Id: ascii.in,v 1.13 2009/07/27 12:02:49 kristaps Exp $ */
+/*	$Id: ascii.in,v 1.14 2009/07/27 13:10:08 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -167,7 +167,7 @@ CHAR("aq",			2, 	"\'",		1)
 CHAR("a~",			2, 	"~",		1)
 CHAR("ba",			2, 	"|",		1)
 CHAR("bb",			2, 	"|",		1)
-CHAR("bq",			2, 	",,",		2)
+CHAR("bq",			2, 	",",		1)
 CHAR("bu",			2, 	"o",		1)
 CHAR("c",			1,	"",		0)
 CHAR("ca",			2,	"(^)",		3)

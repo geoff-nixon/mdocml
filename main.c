@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.39 2009/07/24 14:00:59 kristaps Exp $ */
+/*	$Id: main.c,v 1.40 2009/07/27 19:43:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -418,7 +418,8 @@ fdesc(struct buf *blk, struct buf *ln, struct curparse *curp)
 	/* NOTE a parser may not have been assigned, yet. */
 
 	if ( ! (man || mdoc)) {
-		(void)fprintf(stderr, "%s: not a manual", curp->file);
+		(void)fprintf(stderr, "%s: not a manual\n", 
+				curp->file);
 		return(0);
 	}
 

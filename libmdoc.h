@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.20 2009/07/19 21:26:27 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.21 2009/07/20 14:09:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -47,7 +47,6 @@ enum	merr {
 	EQUOTTERM,
 	EMALLOC,
 	EARGVAL,	
-	ENOCALL,
 	EBODYPROL,
 	EPROLBODY,
 	ETEXTPROL,
@@ -88,7 +87,6 @@ enum	merr {
 	ENOWIDTH,
 	EUTSNAME,
 	EOBS,
-	EMACPARM,
 	EIMPBRK,
 	EIGNE,
 	EOPEN,

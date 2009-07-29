@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.95 2009/07/20 14:09:38 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.96 2009/07/27 19:43:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -29,7 +29,6 @@ const	char *const __mdoc_merrnames[MERRMAX] = {
 	"unterminated quoted parameter", /* EQUOTTERM */
 	"system: malloc error", /* EMALLOC */
 	"argument parameter suggested", /* EARGVAL */
-	"macro not callable", /* ENOCALL */
 	"macro disallowed in prologue", /* EBODYPROL */
 	"macro disallowed in body", /* EPROLBODY */
 	"text disallowed in prologue", /* ETEXTPROL */
@@ -70,7 +69,6 @@ const	char *const __mdoc_merrnames[MERRMAX] = {
 	"superfluous width argument", /* ENOWIDTH */
 	"system: utsname error", /* EUTSNAME */
 	"obsolete macro", /* EOBS */
-	"macro-like parameter", /* EMACPARM */
 	"end-of-line scope violation", /* EIMPBRK */
 	"empty macro ignored", /* EIGNE */
 	"unclosed explicit scope", /* EOPEN */
@@ -353,16 +351,16 @@ int
 mdoc_macro(struct mdoc *m, int tok, 
 		int ln, int pp, int *pos, char *buf)
 {
-
+	/*
+	 * If we're in the prologue, deny "body" macros.  Similarly, if
+	 * we're in the body, deny prologue calls.
+	 */
 	if (MDOC_PROLOGUE & mdoc_macros[tok].flags && 
 			MDOC_PBODY & m->flags)
 		return(mdoc_perr(m, ln, pp, EPROLBODY));
 	if ( ! (MDOC_PROLOGUE & mdoc_macros[tok].flags) && 
 			! (MDOC_PBODY & m->flags))
 		return(mdoc_perr(m, ln, pp, EBODYPROL));
-
-	if (1 != pp && ! (MDOC_CALLABLE & mdoc_macros[tok].flags))
-		return(mdoc_perr(m, ln, pp, ENOCALL));
 
 	return((*mdoc_macros[tok].fp)(m, tok, ln, pp, pos, buf));
 }

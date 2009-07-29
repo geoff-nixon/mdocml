@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.62 2009/07/24 12:52:28 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.63 2009/07/25 16:03:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1398,7 +1398,10 @@ termp_fd_post(DECL_ARGS)
 static int
 termp_sh_pre(DECL_ARGS)
 {
-
+	/* 
+	 * FIXME: using two `Sh' macros in sequence has no vspace
+	 * between calls, only a newline.
+	 */
 	switch (node->type) {
 	case (MDOC_HEAD):
 		term_vspace(p);

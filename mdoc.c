@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.96 2009/07/27 19:43:02 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.97 2009/07/29 08:46:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -715,8 +715,10 @@ parsemacro(struct mdoc *m, int ln, char *buf)
 	while (buf[i] && ' ' == buf[i])
 		i++;
 
-	/* Begin recursive parse sequence. */
-
+	/* 
+	 * Begin recursive parse sequence.  Since we're at the start of
+	 * the line, we don't need to do callable/parseable checks.
+	 */
 	if ( ! mdoc_macro(m, c, ln, 1, &i, buf)) 
 		goto err;
 

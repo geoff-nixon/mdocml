@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.42 2009/07/24 12:47:35 kristaps Exp $ */
+/*	$Id: term.h,v 1.43 2009/07/27 12:02:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -16,11 +16,6 @@
  */
 #ifndef TERM_H
 #define TERM_H
-
-/* FIXME - clean up tabs. */
-
-#define	INDENT		  5
-#define	HALFINDENT	  3
 
 __BEGIN_DECLS
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.64 2009/07/29 08:46:06 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.65 2009/07/29 09:02:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -25,6 +25,9 @@
 
 #include "term.h"
 #include "mdoc.h"
+
+#define	INDENT		  5
+#define	HALFINDENT	  3
 
 /* FIXME: macro arguments can be escaped. */
 

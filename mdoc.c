@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.97 2009/07/29 08:46:06 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.98 2009/07/29 08:52:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -674,6 +674,8 @@ parsemacro(struct mdoc *m, int ln, char *buf)
 	char		  mac[5];
 
 	/* Empty lines are ignored. */
+
+	/* FIXME: this can accept `.    xx' like libman! */
 
 	if (0 == buf[1])
 		return(1);

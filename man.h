@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.15 2009/07/04 09:01:55 kristaps Exp $ */
+/*	$Id: man.h,v 1.16 2009/07/24 20:22:24 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -43,12 +43,18 @@
 #define	MAN_na		 21
 #define	MAN_i		 22
 #define	MAN_sp		 23
-#define	MAN_MAX	 	 24
+#define	MAN_nf		 24
+#define	MAN_fi		 25
+#define	MAN_r		 26
+#define	MAN_MAX	 	 27
 
 enum	man_type {
 	MAN_TEXT,
 	MAN_ELEM,
-	MAN_ROOT
+	MAN_ROOT,
+	MAN_BLOCK,
+	MAN_HEAD,
+	MAN_BODY
 };
 
 struct	man_meta {
@@ -73,6 +79,8 @@ struct	man_node {
 #define	MAN_ACTED	(1 << 1)
 	enum man_type	 type;
 	char		*string;
+	struct man_node	*head;
+	struct man_node	*body;
 };
 
 #define	MAN_IGN_MACRO	 (1 << 0)

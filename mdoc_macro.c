@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.28 2009/07/29 08:46:06 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.29 2009/07/29 08:52:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -45,7 +45,7 @@ static	int	  rew_impblock(struct mdoc *, int, int, int);
 static	int	  rew_expblock(struct mdoc *, int, int, int);
 static	int	  rew_subblock(enum mdoc_type, 
 			struct mdoc *, int, int, int);
-static	int	  rew_last(struct mdoc *, struct mdoc_node *);
+static	int	  rew_last(struct mdoc *, struct mdoc_node *); /* FIXME: make const */
 static	int	  append_delims(struct mdoc *, int, int *, char *);
 static	int	  lookup(struct mdoc *, int, const char *);
 static	int	  lookup_raw(struct mdoc *, const char *);
@@ -599,6 +599,7 @@ rew_expblock(struct mdoc *mdoc, int tok, int line, int ppos)
 }
 
 
+/* FIXME: can this be merged with subblock? */
 static int
 rew_impblock(struct mdoc *mdoc, int tok, int line, int ppos)
 {

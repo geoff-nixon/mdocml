@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.16 2009/07/24 20:22:24 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.17 2009/08/13 11:45:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -289,9 +289,9 @@ static int
 check_eline(CHKARGS)
 {
 
-	if ( ! (MAN_ELINE & m->flags))
-		return(1);
-	return(man_nerr(m, n, WLNSCOPE));
+	if (MAN_ELINE & m->flags)
+		return(man_nerr(m, n, WLNSCOPE));
+	return(1);
 }
 
 
@@ -299,8 +299,10 @@ static int
 check_bline(CHKARGS)
 {
 
-	if ( ! (MAN_BLINE & m->flags))
-		return(1);
-	return(man_nerr(m, n, WLNSCOPE));
+	if (MAN_BLINE & m->flags)
+		return(man_nerr(m, n, WLNSCOPE));
+	if (MAN_ELINE & m->flags)
+		return(man_nerr(m, n, WLNSCOPE));
+	return(1);
 }
 

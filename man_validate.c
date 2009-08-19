@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.17 2009/08/13 11:45:29 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.18 2009/08/18 11:46:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -83,6 +83,8 @@ static	const struct man_valid man_valids[MAN_MAX] = {
 	{ pres_bline, posts_eq0 }, /* nf */
 	{ pres_bline, posts_eq0 }, /* fi */
 	{ NULL, NULL }, /* r */
+	{ NULL, NULL }, /* RE */
+	{ NULL, NULL }, /* RS */
 };
 
 
@@ -136,6 +138,8 @@ man_valid_post(struct man *m)
 static int
 check_root(CHKARGS) 
 {
+
+	/* FIXME: closing out explicit scope! */
 
 	/* XXX - make this into a warning? */
 	if (MAN_BLINE & m->flags)

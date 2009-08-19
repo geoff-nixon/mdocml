@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.30 2009/08/19 09:14:50 kristaps Exp $ */
+/*	$Id: man.c,v 1.31 2009/08/19 11:58:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -67,6 +67,10 @@ static	void		 man_free1(struct man *);
 static	int		 man_alloc1(struct man *);
 static	int		 pstring(struct man *, int, int, 
 				const char *, size_t);
+
+#ifdef __linux__
+extern	size_t	  	  strlcpy(char *, const char *, size_t);
+#endif
 
 
 const struct man_node *

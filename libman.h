@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.16 2009/08/13 11:45:29 kristaps Exp $ */
+/*	$Id: libman.h,v 1.17 2009/08/19 09:14:50 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -68,6 +68,7 @@ struct	man_macro {
 	int		(*fp)(MACRO_PROT_ARGS);
 	int		  flags;
 #define	MAN_SCOPED	 (1 << 0)
+#define	MAN_EXPLICIT	 (1 << 1)
 };
 
 extern	const struct man_macro *const man_macros;

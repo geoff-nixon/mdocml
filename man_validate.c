@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.18 2009/08/18 11:46:44 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.19 2009/08/19 09:14:50 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -138,8 +138,6 @@ man_valid_post(struct man *m)
 static int
 check_root(CHKARGS) 
 {
-
-	/* FIXME: closing out explicit scope! */
 
 	/* XXX - make this into a warning? */
 	if (MAN_BLINE & m->flags)

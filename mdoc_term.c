@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.65 2009/07/29 09:02:41 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.66 2009/08/10 10:09:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -28,8 +28,6 @@
 
 #define	INDENT		  5
 #define	HALFINDENT	  3
-
-/* FIXME: macro arguments can be escaped. */
 
 #define	TTYPE_PROG	  0
 #define	TTYPE_CMD_FLAG	  1
@@ -823,7 +821,7 @@ termp_it_pre(DECL_ARGS)
 	/* 
 	 * List-type can override the width in the case of fixed-head
 	 * values (bullet, dash/hyphen, enum).  Tags need a non-zero
-	 * offset.  FIXME: double-check that correct.
+	 * offset.
 	 */
 
 	switch (type) {

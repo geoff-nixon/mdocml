@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.24 2009/08/19 14:09:33 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.25 2009/08/20 08:59:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -172,9 +172,9 @@ int		  mdoc_args(struct mdoc *, int,
 			int *, char *, int, char **);
 int		  mdoc_zargs(struct mdoc *, int, 
 			int *, char *, int, char **);
-#define	ARGS_DELIM	(1 << 1)
-#define	ARGS_TABSEP	(1 << 2)
-#define	ARGS_NOWARN	(1 << 3)
+#define	ARGS_DELIM	(1 << 1)	/* See args(). */
+#define	ARGS_TABSEP	(1 << 2)	/* See args(). */
+#define	ARGS_NOWARN	(1 << 3)	/* See args(). */
 #define	ARGS_ERROR	(-1)
 #define	ARGS_EOLN	(0)
 #define	ARGS_WORD	(1)

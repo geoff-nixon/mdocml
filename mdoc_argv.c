@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.22 2009/08/19 14:44:35 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.23 2009/08/20 08:59:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -374,6 +374,21 @@ args(struct mdoc *m, int line, int *pos,
 {
 	int		  i;
 	char		 *p, *pp;
+
+	/*
+	 * Parse out the terms (like `val' in `.Xx -arg val' or simply
+	 * `.Xx val'), which can have all sorts of properties:
+	 *
+	 *   ARGS_DELIM: use special handling if encountering trailing
+	 *   delimiters in the form of [[::delim::][ ]+]+.
+	 *
+	 *   ARGS_NOWARN: don't post warnings.  This is only used when
+	 *   re-parsing delimiters, as the warnings have already been
+	 *   posted.
+	 *
+	 *   ARGS_TABSEP: use special handling for tab/`Ta' separated
+	 *   phrases like in `Bl -column'.
+	 */
 
 	assert(*pos);
 	assert(' ' != buf[*pos]);

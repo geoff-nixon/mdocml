@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.67 2009/07/24 12:48:18 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.68 2009/08/20 13:22:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -200,7 +200,7 @@ enum	mdoc_sec {
 	SEC_SYNOPSIS,
 	SEC_DESCRIPTION,
 	SEC_IMPLEMENTATION,
-	/* FIXME: EXIT STATUS */
+	SEC_EXIT_STATUS,
 	SEC_RETURN_VALUES,
 	SEC_ENVIRONMENT, 
 	SEC_FILES,
@@ -214,7 +214,7 @@ enum	mdoc_sec {
 	SEC_AUTHORS,
 	SEC_CAVEATS,
 	SEC_BUGS,
-	/* FIXME: SECURITY CONSIDERATIONS */
+	SEC_SECURITY,
 	SEC_CUSTOM		/* User-defined. */
 };
 

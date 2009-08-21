@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.34 2009/08/21 12:12:12 kristaps Exp $ */
+/*	$Id: man.c,v 1.35 2009/08/21 12:32:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -442,8 +442,6 @@ descope:
 	 * first close out the element scope (if applicable), then close
 	 * out the block scope (also if applicable).
 	 */
-
-	/* XXX - this should be in man_action.c. */
 
 	if (MAN_ELINE & m->flags) {
 		m->flags &= ~MAN_ELINE;

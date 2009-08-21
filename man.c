@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.33 2009/08/20 11:51:07 kristaps Exp $ */
+/*	$Id: man.c,v 1.34 2009/08/21 12:12:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -41,7 +41,9 @@ const	char *const __man_merrnames[WERRMAX] = {
 	"unknown macro", /* WMACRO */
 	"ill-formed macro", /* WMACROFORM */
 	"scope open on exit", /* WEXITSCOPE */
-	"no scope context" /* WNOSCOPE */
+	"no scope context", /* WNOSCOPE */
+	"literal context already open", /* WOLITERAL */
+	"no literal context open" /* WNLITERAL */
 };
 
 const	char *const __man_macronames[MAN_MAX] = {		 
@@ -391,6 +393,14 @@ static int
 man_ptext(struct man *m, int line, char *buf)
 {
 	int		 i, j;
+
+	/* Literal free-form text whitespace is preserved. */
+
+	if (MAN_LITERAL & m->flags) {
+		if ( ! man_word_alloc(m, line, 0, buf))
+			return(0);
+		goto descope;
+	}
 
 	/* First de-chunk and allocate words. */
 

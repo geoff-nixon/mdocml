@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.25 2009/08/20 13:55:19 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.26 2009/08/21 12:12:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -40,7 +40,7 @@ const	struct man_macro __man_macros[MAN_MAX] = {
 	{ in_line_eoln, 0 }, /* TH */
 	{ blk_imp, MAN_SCOPED }, /* SH */
 	{ blk_imp, MAN_SCOPED }, /* SS */
-	{ blk_imp, MAN_SCOPED }, /* TP */
+	{ blk_imp, MAN_SCOPED | MAN_FSCOPED }, /* TP */
 	{ blk_imp, 0 }, /* LP */
 	{ blk_imp, 0 }, /* PP */
 	{ blk_imp, 0 }, /* P */
@@ -271,10 +271,18 @@ blk_imp(MACRO_PROT_ARGS)
 
 	/* Close out head and open body (unless MAN_SCOPE). */
 
-	if (n == m->last && MAN_SCOPED & man_macros[tok].flags) {
-		m->flags |= MAN_BLINE;
-		return(1);
-	} else if ( ! rew_scope(MAN_HEAD, m, tok))
+	if (MAN_SCOPED & man_macros[tok].flags) {
+		/* If we're forcing scope (`TP'), keep it open. */
+		if (MAN_FSCOPED & man_macros[tok].flags) {
+			m->flags |= MAN_BLINE;
+			return(1);
+		} else if (n == m->last) {
+			m->flags |= MAN_BLINE;
+			return(1);
+		}
+	}
+
+	if ( ! rew_scope(MAN_HEAD, m, tok))
 		return(0);
 
 	return(man_body_alloc(m, line, ppos, tok));

@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.33 2009/08/20 13:32:09 kristaps Exp $
+.\"	$Id: man.7,v 1.34 2009/08/20 13:51:55 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -205,16 +205,12 @@ foo
 .Pp
 is equivalent to
 .Sq \&.I foo .
-.\" PARAGRAPH
-Consecutive next-line scope invocations are disallowed.
+If next-line macros are invoked consecutively, only the last is used.
+If a next-line macro is proceded by a block macro, it is ignored.
 .Bd -literal -offset indent
 \&.YO \(lBbody...\(rB
 \(lBbody...\(rB
 .Ed
-.
-.Pp
-It is considered an error when next-line scope is open at the end of
-file.
 .
 .Pp
 .Bl -column -compact -offset indent "MacroX" "ArgumentsX" "ScopeXXXXX"
@@ -286,10 +282,6 @@ or paragraph, closed by a section, sub-section, part,
 or
 .Sq TP .
 No closure refers to an explicit block closing macro.
-.
-.Pp
-It is considered an error when part or next-line scope is open at the
-end of file.
 .
 .Pp
 .Bl -column "MacroX" "ArgumentsX" "Head ScopeX" "sub-sectionX" -compact -offset indent

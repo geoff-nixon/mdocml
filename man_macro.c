@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.24 2009/08/20 13:51:55 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.25 2009/08/20 13:55:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -357,7 +357,8 @@ man_macroend(struct man *m)
 			continue;
 		if ( ! (MAN_EXPLICIT & man_macros[n->tok].flags))
 			continue;
-		return(man_nerr(m, n, WEXITSCOPE));
+		if ( ! man_nwarn(m, n, WEXITSCOPE))
+			return(0);
 	}
 
 	return(man_unscope(m, m->first));

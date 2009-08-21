@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.35 2009/08/21 12:32:38 kristaps Exp $ */
+/*	$Id: man.c,v 1.36 2009/08/21 13:18:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -378,14 +378,15 @@ man_node_free(struct man_node *p)
 void
 man_node_freelist(struct man_node *p)
 {
+	struct man_node	*n;
 
 	if (p->child)
 		man_node_freelist(p->child);
-	if (p->next)
-		man_node_freelist(p->next);
-
 	assert(0 == p->nchild);
+	n = p->next;
 	man_node_free(p);
+	if (n)
+		man_node_freelist(n);
 }
 
 
@@ -526,6 +527,7 @@ man_pmacro(struct man *m, int ln, char *buf)
 	if (m->flags & MAN_ELINE) {
 		n = m->last;
 		assert(NULL == n->child);
+		assert(0 == n->nchild);
 		if ( ! man_nwarn(m, n, WLNSCOPE))
 			return(0);
 
@@ -534,10 +536,12 @@ man_pmacro(struct man *m, int ln, char *buf)
 			assert(n == n->prev->next);
 			n->prev->next = NULL;
 			m->last = n->prev;
+			m->next = MAN_NEXT_SIBLING;
 		} else {
 			assert(n == n->parent->child);
 			n->parent->child = NULL;
 			m->last = n->parent;
+			m->next = MAN_NEXT_CHILD;
 		}
 
 		man_node_free(n);

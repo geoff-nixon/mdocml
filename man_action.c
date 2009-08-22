@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.17 2009/08/20 11:51:07 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.18 2009/08/21 12:32:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -62,6 +62,7 @@ const	struct actions man_actions[MAN_MAX] = {
 	{ NULL }, /* RE */
 	{ NULL }, /* RS */
 	{ NULL }, /* DT */
+	{ NULL }, /* UC */
 };
 
 static	time_t	  man_atotime(const char *);

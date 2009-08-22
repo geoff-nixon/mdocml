@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.36 2009/08/21 13:18:32 kristaps Exp $ */
+/*	$Id: man.c,v 1.37 2009/08/21 13:45:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -493,6 +493,12 @@ man_pmacro(struct man *m, int ln, char *buf)
 			break;
 		else if (' ' == buf[i])
 			break;
+
+		/* Check for invalid characters. */
+
+		if (isgraph((u_char)buf[i]))
+			continue;
+		return(man_perr(m, ln, i, WNPRINT));
 	}
 
 	mac[j] = 0;

@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.35 2009/08/21 12:12:12 kristaps Exp $
+.\"	$Id: man.7,v 1.36 2009/08/22 09:10:37 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -467,8 +467,6 @@ buffer to the indentation width.  Subsequent output lines are indented.
 The indentation width may be set as follows:
 .Bd -literal -offset indent
 \&.TP [width]
-.It UC
-Has no effect.  Included for compatibility.
 .Ed
 .
 .Pp
@@ -478,6 +476,8 @@ must be a properly-formed numeric width.  If
 .Va width
 is specified, it's saved for later paragraph left-margins; if
 unspecified, the saved or default width is used.
+.It UC
+Has no effect.  Included for compatibility.
 .It br
 Breaks the current line.  Consecutive invocations have no further effect.
 .It fi

@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.25 2009/08/20 08:59:12 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.26 2009/08/20 09:07:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -27,7 +27,6 @@ enum	mdoc_next {
 struct	mdoc {
 	void		 *data;
 	struct mdoc_cb	  cb;
-	void		 *htab;
 	int		  flags;
 #define	MDOC_HALT	 (1 << 0)	/* Error in parse. Halt. */
 #define	MDOC_LITERAL	 (1 << 1)	/* In a literal scope. */
@@ -139,9 +138,8 @@ int		  mdoc_tail_alloc(struct mdoc *, int, int, int);
 int		  mdoc_body_alloc(struct mdoc *, int, int, int);
 void		  mdoc_node_free(struct mdoc_node *);
 void		  mdoc_node_freelist(struct mdoc_node *);
-void		 *mdoc_hash_alloc(void);
-int		  mdoc_hash_find(const void *, const char *);
-void		  mdoc_hash_free(void *);
+void		  mdoc_hash_init(void);
+int		  mdoc_hash_find(const char *);
 int		  mdoc_iscdelim(char);
 int		  mdoc_isdelim(const char *);
 size_t		  mdoc_isescape(const char *);

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.32 2009/08/19 14:09:33 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.33 2009/08/20 08:59:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -275,7 +275,7 @@ lookup_raw(struct mdoc *mdoc, const char *p)
 {
 	int		 res;
 
-	if (MDOC_MAX == (res = mdoc_hash_find(mdoc->htab, p)))
+	if (MDOC_MAX == (res = mdoc_hash_find(p)))
 		return(MDOC_MAX);
 	if (MDOC_CALLABLE & mdoc_macros[res].flags)
 		return(res);

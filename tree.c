@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.13 2009/06/10 20:18:44 kristaps Exp $ */
+/*	$Id: tree.c,v 1.14 2009/08/13 11:45:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -27,22 +27,20 @@ static	void	print_man(const struct man_node *, int);
 
 
 /* ARGSUSED */
-int
+void
 tree_mdoc(void *arg, const struct mdoc *mdoc)
 {
 
 	print_mdoc(mdoc_node(mdoc), 0);
-	return(1);
 }
 
 
 /* ARGSUSED */
-int
+void
 tree_man(void *arg, const struct man *man)
 {
 
 	print_man(man_node(man), 0);
-	return(1);
 }
 
 

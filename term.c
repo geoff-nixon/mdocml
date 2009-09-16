@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.97 2009/07/28 10:15:12 kristaps Exp $ */
+/*	$Id: term.c,v 1.98 2009/09/15 08:16:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -24,9 +24,9 @@
 #include "man.h"
 #include "mdoc.h"
 
-extern	int		  man_run(struct termp *, 
+extern	void		  man_run(struct termp *, 
 				const struct man *);
-extern	int		  mdoc_run(struct termp *, 
+extern	void		  mdoc_run(struct termp *, 
 				const struct mdoc *);
 
 static	struct termp	 *term_alloc(enum termenc);
@@ -51,7 +51,7 @@ ascii_alloc(void)
 }
 
 
-int
+void
 terminal_man(void *arg, const struct man *man)
 {
 	struct termp	*p;
@@ -60,11 +60,11 @@ terminal_man(void *arg, const struct man *man)
 	if (NULL == p->symtab)
 		p->symtab = term_ascii2htab();
 
-	return(man_run(p, man));
+	man_run(p, man);
 }
 
 
-int
+void
 terminal_mdoc(void *arg, const struct mdoc *mdoc)
 {
 	struct termp	*p;
@@ -73,7 +73,7 @@ terminal_mdoc(void *arg, const struct mdoc *mdoc)
 	if (NULL == p->symtab)
 		p->symtab = term_ascii2htab();
 
-	return(mdoc_run(p, mdoc));
+	mdoc_run(p, mdoc);
 }
 
 

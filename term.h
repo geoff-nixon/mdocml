@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.44 2009/08/10 10:09:51 kristaps Exp $ */
+/*	$Id: term.h,v 1.45 2009/09/15 08:16:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -20,9 +20,7 @@
 __BEGIN_DECLS
 
 enum	termenc {
-	TERMENC_ASCII,
-	TERMENC_LATIN1,		/* Not implemented. */
-	TERMENC_UTF8		/* Not implemented. */
+	TERMENC_ASCII
 };
 
 struct	termp {

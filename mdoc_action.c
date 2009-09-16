@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.35 2009/08/20 13:22:48 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.36 2009/09/16 14:40:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -53,7 +53,7 @@ static	int	  post_tilde(POST_ARGS);
 static	int	  pre_bd(PRE_ARGS);
 static	int	  pre_dl(PRE_ARGS);
 
-const	struct actions mdoc_actions[MDOC_MAX] = {
+static	const struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL, NULL }, /* Ap */
 	{ NULL, post_dd }, /* Dd */ 
 	{ NULL, post_dt }, /* Dt */ 

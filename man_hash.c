@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.11 2009/08/19 09:14:50 kristaps Exp $ */
+/*	$Id: man_hash.c,v 1.12 2009/09/16 14:40:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -22,7 +22,7 @@
 #include "libman.h"
 
 
-static	unsigned char	table[26 * 6];
+static	u_char		table[26 * 6];
 
 
 void
@@ -42,7 +42,7 @@ man_hash_init(void)
 
 		for (j = 0; j < 6; j++)
 			if (UCHAR_MAX == table[x + j]) {
-				table[x + j] = i;
+				table[x + j] = (u_char)i;
 				break;
 			}
 		assert(j < 6);

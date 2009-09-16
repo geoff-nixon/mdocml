@@ -1,4 +1,4 @@
-/*	$Id: mdoc_hash.c,v 1.8 2009/07/20 20:49:22 kristaps Exp $ */
+/*	$Id: mdoc_hash.c,v 1.9 2009/09/16 14:40:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -25,7 +25,7 @@
 
 #include "libmdoc.h"
 
-static	unsigned char	table[27 * 12];
+static	u_char		 table[27 * 12];
 
 
 void
@@ -46,7 +46,7 @@ mdoc_hash_init(void)
 
 		for (j = 0; j < 12; j++)
 			if (UCHAR_MAX == table[major + j]) {
-				table[major + j] = i;
+				table[major + j] = (u_char)i;
 				break;
 			}
 

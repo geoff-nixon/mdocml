@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.69 2009/09/15 08:16:20 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.70 2009/09/16 09:41:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -25,6 +25,41 @@
 
 #include "term.h"
 #include "mdoc.h"
+
+/* FIXME: check HANG lists: they seem to be broken... :
+ * .Bl -hang -width Ds
+ * .It a
+ * b
+ * .It Fl f Ns Ar option...
+ * Override default compiler behaviour.  See
+ * .Sx Compiler Options
+ * for details.
+ * Override default compiler behaviour.  See
+ * .Sx Compiler Options
+ * for details.
+ * Override default compiler behaviour.  See
+ * .Sx Compiler Options
+ * for details.
+ * Override default compiler behaviour.  See
+ * .Sx Compiler Options
+ * for details.
+ * .
+ * .It a sasd fasd as afsd sfad sfds sadfs sd sfd ssfad asfd
+ * Override default compiler behaviour.  See
+ * .Sx Compiler Options
+ * for details.
+ * Override default compiler behaviour.  See
+ * .Sx Compiler Options
+ * for details.
+ * Override default compiler behaviour.  See
+ * .Sx Compiler Options
+ * for details.
+ * Override default compiler behaviour.  See
+ * .Sx Compiler Options
+ * for details.
+ * .El
+ *
+ */
 
 #define	INDENT		  5
 #define	HALFINDENT	  3
@@ -458,6 +493,7 @@ print_head(DECL_ARGS)
 }
 
 
+/* TODO: put into util file. */
 static size_t
 arg_width(const struct mdoc_argv *arg, int pos)
 {

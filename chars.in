@@ -1,4 +1,4 @@
-/*	$Id: ascii.in,v 1.16 2009/07/28 11:53:26 kristaps Exp $ */
+/*	$Id: ascii.in,v 1.17 2009/07/28 11:59:18 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -26,7 +26,8 @@
  * right-hand side is what's produced by the front-end, with the fourth
  * element being its length.
  *
- * Be sure to C-escape strings!
+ * XXX - C-escape strings!
+ * XXX - update LINES_MAX if adding more!
  */
 
 STRING("Am",			2,	"&",		1)

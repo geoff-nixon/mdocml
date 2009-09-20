@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.73 2009/09/20 17:24:57 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.74 2009/09/20 17:48:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -424,6 +424,7 @@ print_foot(DECL_ARGS)
 }
 
 
+/* FIXME: put in utility library. */
 /* ARGSUSED */
 static void
 print_head(DECL_ARGS)

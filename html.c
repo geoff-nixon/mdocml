@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.34 2009/09/17 23:35:41 kristaps Exp $ */
+/*	$Id: html.c,v 1.35 2009/09/20 11:05:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -402,6 +402,9 @@ html_free(void *p)
 		SLIST_REMOVE_HEAD(&h->stack, entry);
 		free(tag);
 	}
+	
+	if (h->symtab)
+		chars_free(h->symtab);
 	free(h);
 }
 

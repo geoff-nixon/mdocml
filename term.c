@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.100 2009/09/16 15:08:31 kristaps Exp $ */
+/*	$Id: term.c,v 1.101 2009/09/17 07:41:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -90,7 +90,7 @@ term_free(struct termp *p)
 
 	if (p->buf)
 		free(p->buf);
-	if (TERMENC_ASCII == p->enc && p->symtab)
+	if (p->symtab)
 		chars_free(p->symtab);
 
 	free(p);

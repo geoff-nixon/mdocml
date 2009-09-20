@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.34 2009/09/16 14:40:56 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.35 2009/09/16 20:49:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -260,6 +260,7 @@ mdoc_macroend(struct mdoc *m)
 static int
 lookup(int from, const char *p)
 {
+	/* FIXME: make -diag lists be un-PARSED. */
 
 	if ( ! (MDOC_PARSED & mdoc_macros[from].flags))
 		return(MDOC_MAX);

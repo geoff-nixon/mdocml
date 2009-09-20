@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.71 2009/09/17 13:17:30 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.72 2009/09/20 11:05:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -520,6 +520,7 @@ arg_width(const struct mdoc_argv *arg, int pos)
 }
 
 
+/* FIXME: put in utility file for front-ends. */
 static int
 arg_listtype(const struct mdoc_node *n)
 {

@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.42 2009/09/21 09:32:30 kristaps Exp $ */
+/*	$Id: html.c,v 1.43 2009/09/21 13:06:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -406,7 +406,7 @@ void *
 html_alloc(char *outopts)
 {
 	struct html	*h;
-	char		*toks[3], *o, *v;
+	char		*toks[3], *v;
 
 	toks[0] = "style";
 	toks[1] = "base";
@@ -423,8 +423,7 @@ html_alloc(char *outopts)
 		return(NULL);
 	}
 
-	while (*outopts) {
-		o = outopts;
+	while (*outopts)
 		switch (getsubopt(&outopts, toks, &v)) {
 		case (0):
 			h->style = v;
@@ -435,7 +434,6 @@ html_alloc(char *outopts)
 		default:
 			break;
 		}
-	}
 
 	return(h);
 }

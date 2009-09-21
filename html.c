@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.40 2009/09/20 19:44:16 kristaps Exp $ */
+/*	$Id: html.c,v 1.41 2009/09/21 00:39:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -415,7 +415,7 @@ html_alloc(void)
 	}
 
 	/* h->base = xxx; */
-	/* h->style = xxx; */
+	h->style = "style.css"; /* XXX */
 	return(h);
 }
 

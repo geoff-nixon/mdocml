@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="resource-type" content="document">
-		<link rel="stylesheet" href="style.css" type="text/css" media="all">
+		<link rel="stylesheet" href="index.css" type="text/css" media="all">
 		<title>mdocml.bsd.lv</title>
 	</head>
 	<body>
@@ -195,7 +195,7 @@
 			<tr>
 				<td>
 					<div class="foot">
-						Copyright &#169; 2008, 2009 Kristaps D&#382;onsons, $Date: 2009/07/17 13:23:26 $
+						Copyright &#169; 2008, 2009 Kristaps D&#382;onsons, $Date: 2009/07/20 20:09:49 $
 					</div>
 				</td>
 			</tr>

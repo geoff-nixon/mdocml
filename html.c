@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.45 2009/09/21 13:43:21 kristaps Exp $ */
+/*	$Id: html.c,v 1.46 2009/09/21 13:44:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -424,7 +424,7 @@ html_alloc(char *outopts)
 		return(NULL);
 	}
 
-	while (*outopts)
+	while (outopts && *outopts)
 		switch (getsubopt(&outopts, toks, &v)) {
 		case (0):
 			h->style = v;

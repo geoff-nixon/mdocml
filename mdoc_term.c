@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.75 2009/09/20 19:25:06 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.76 2009/09/21 14:07:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1866,7 +1866,7 @@ termp_sp_pre(DECL_ARGS)
 {
 	int		 i, len;
 
-	switch (node->type) {
+	switch (node->tok) {
 	case (MDOC_sp):
 		len = node->child ? atoi(node->child->string) : 1;
 		break;

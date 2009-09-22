@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.76 2009/09/21 14:07:07 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.77 2009/09/21 14:08:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -762,13 +762,13 @@ termp_it_pre(DECL_ARGS)
 		 * last column case, set to stretch to the margin).
 		 */
 		for (i = 0, n = node->prev; n && 
-				i < (int)bl->args[vals[2]].argv->sz; 
+				i < (int)bl->args->argv[vals[2]].sz; 
 				n = n->prev, i++)
 			offset += arg_width 
 				(&bl->args->argv[vals[2]], i);
 
 		/* Whether exceeds maximum column. */
-		if (i < (int)bl->args[vals[2]].argv->sz)
+		if (i < (int)bl->args->argv[vals[2]].sz)
 			width = arg_width(&bl->args->argv[vals[2]], i);
 		else
 			width = 0;

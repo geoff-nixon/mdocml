@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.1 2009/09/21 14:56:57 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.2 2009/09/21 23:12:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -892,7 +892,7 @@ mdoc_tbl_head_pre(MDOC_ARGS, int t, int w)
 		print_otag(h, TAG_DIV, 1, &tag);
 		break;
 	default:
-		buffmt("margin-left: -%dem;", w);
+		buffmt("margin-left: -%dem; width: %dem;", w, w);
 		bufcat("clear: left;");
 		if (n->next && n->next->child)
 			bufcat("float: left;");

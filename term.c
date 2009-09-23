@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.101 2009/09/17 07:41:28 kristaps Exp $ */
+/*	$Id: term.c,v 1.102 2009/09/20 13:43:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -24,6 +24,9 @@
 #include "term.h"
 #include "man.h"
 #include "mdoc.h"
+
+/* FIXME: accomodate non-breaking, non-collapsing white-space. */
+/* FIXME: accomodate non-breaking, collapsing white-space. */
 
 extern	void		  man_run(struct termp *, 
 				const struct man *);

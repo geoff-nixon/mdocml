@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.4 2009/09/22 23:15:58 kristaps Exp $ */
+/*	$Id: chars.c,v 1.5 2009/09/22 23:34:14 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -38,7 +38,7 @@ struct	ln {
 #define CHARS_BOTH	 (0x03)
 };
 
-#define	LINES_MAX	  302
+#define	LINES_MAX	  304
 
 #define CHAR(w, x, y, z, a, b) \
 	{ NULL, (w), (y), (a), (x), (z), (b), CHARS_CHAR },

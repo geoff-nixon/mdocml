@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.42 2009/08/20 13:22:48 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.43 2009/09/24 15:01:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -126,7 +126,7 @@ static	v_post	 posts_nd[] = { berr_ge1, NULL };
 static	v_post	 posts_nm[] = { post_nm, NULL };
 static	v_post	 posts_notext[] = { eerr_eq0, NULL };
 static	v_post	 posts_pf[] = { eerr_eq1, NULL };
-static	v_post	 posts_rs[] = { bwarn_ge1, herr_eq0, post_rs, NULL };
+static	v_post	 posts_rs[] = { berr_ge1, herr_eq0, post_rs, NULL };
 static	v_post	 posts_sh[] = { herr_ge1, bwarn_ge1, post_sh, NULL };
 static	v_post	 posts_sp[] = { post_sp, NULL };
 static	v_post	 posts_ss[] = { herr_ge1, NULL };

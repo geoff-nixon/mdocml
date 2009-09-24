@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.38 2009/09/24 13:03:32 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.39 2009/09/24 15:01:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -943,6 +943,7 @@ post_rs(POST_ARGS)
 	if (MDOC_BLOCK != n->type)
 		return(1);
 
+	assert(n->body->child);
 	for (next = NULL, nn = n->body->child->next; nn; nn = next) {
 		o = order_rs(nn->tok);
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.7 2009/09/24 11:55:28 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.8 2009/09/24 13:18:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1596,8 +1596,8 @@ mdoc_fn_pre(MDOC_ARGS)
 	assert(n->child->string);
 	sp = n->child->string;
 	while ((ep = strchr(sp, ' '))) {
-		sz = MIN(ep - sp, BUFSIZ - 1);
-		(void)memcpy(nbuf, sp, sz);
+		sz = MIN((int)(ep - sp), BUFSIZ - 1);
+		(void)memcpy(nbuf, sp, (size_t)sz);
 		nbuf[sz] = '\0';
 		print_text(h, nbuf);
 		sp = ++ep;

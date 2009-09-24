@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.78 2009/09/22 16:10:52 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.79 2009/09/24 09:20:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -218,7 +218,7 @@ static	const struct termact termacts[MDOC_MAX] = {
 	{ termp_under_pre, NULL }, /* Em */ 
 	{ NULL, NULL }, /* Eo */
 	{ termp_xx_pre, NULL }, /* Fx */
-	{ termp_bold_pre, NULL }, /* Ms */
+	{ termp_bold_pre, NULL }, /* Ms */ /* FIXME: convert to symbol? */
 	{ NULL, NULL }, /* No */
 	{ termp_ns_pre, NULL }, /* Ns */
 	{ termp_xx_pre, NULL }, /* Nx */
@@ -1164,6 +1164,8 @@ static int
 termp_rs_pre(DECL_ARGS)
 {
 
+	if (SEC_SEE_ALSO != node->sec)
+		return(1);
 	if (MDOC_BLOCK == node->type && node->prev)
 		term_vspace(p);
 	return(1);

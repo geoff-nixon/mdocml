@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.50 2009/09/21 14:40:31 kristaps Exp $ */
+/*	$Id: html.c,v 1.51 2009/09/21 14:56:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -424,7 +424,8 @@ print_text(struct html *h, const char *p)
 		case(']'):
 			/* FALLTHROUGH */
 		case('}'):
-			h->flags |= HTML_NOSPACE;
+			if ( ! (HTML_IGNDELIM & h->flags))
+				h->flags |= HTML_NOSPACE;
 			break;
 		default:
 			break;

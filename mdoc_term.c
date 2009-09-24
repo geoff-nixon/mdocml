@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.79 2009/09/24 09:20:02 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.80 2009/09/24 09:50:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -261,8 +261,8 @@ static	const struct termact termacts[MDOC_MAX] = {
 	{ termp_brq_pre, termp_brq_post }, /* Bro */ 
 	{ NULL, NULL }, /* Brc */ 
 	{ NULL, NULL }, /* %C */ 
-	{ NULL, NULL }, /* Es */ 
-	{ NULL, NULL }, /* En */ 
+	{ NULL, NULL }, /* Es */ /* TODO */
+	{ NULL, NULL }, /* En */ /* TODO */
 	{ termp_xx_pre, NULL }, /* Dx */ 
 	{ NULL, NULL }, /* %Q */ 
 	{ termp_sp_pre, NULL }, /* br */
@@ -1417,7 +1417,7 @@ termp_bt_pre(DECL_ARGS)
 {
 
 	term_word(p, "is currently in beta test.");
-	return(1);
+	return(0);
 }
 
 
@@ -1426,7 +1426,8 @@ static void
 termp_lb_post(DECL_ARGS)
 {
 
-	term_newln(p);
+	if (SEC_LIBRARY == node->sec)
+		term_newln(p);
 }
 
 

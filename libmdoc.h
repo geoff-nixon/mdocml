@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.26 2009/08/20 09:07:24 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.27 2009/09/16 14:40:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -92,6 +92,7 @@ enum	merr {
 	EQUOTPHR,
 	ENOCTX,
 	ELIB,
+	EBADCHILD,
 	MERRMAX
 };
 

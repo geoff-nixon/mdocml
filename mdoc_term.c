@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.77 2009/09/21 14:08:13 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.78 2009/09/22 16:10:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1842,6 +1842,7 @@ termp_in_post(DECL_ARGS)
 {
 
 	p->bold++;
+	p->flags |= TERMP_NOSPACE;
 	term_word(p, ">");
 	p->bold--;
 

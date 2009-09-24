@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.80 2009/09/24 09:50:31 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.81 2009/09/24 11:05:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1518,10 +1518,6 @@ static int
 termp_fn_pre(DECL_ARGS)
 {
 	const struct mdoc_node *n;
-
-	assert(node->child && MDOC_TEXT == node->child->type);
-
-	/* FIXME: can be "type funcname" "type varname"... */
 
 	p->bold++;
 	term_word(p, node->child->string);

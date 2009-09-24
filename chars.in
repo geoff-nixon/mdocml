@@ -1,4 +1,4 @@
-/*	$Id: chars.in,v 1.16 2009/09/23 09:10:52 kristaps Exp $ */
+/*	$Id: chars.in,v 1.17 2009/09/23 11:02:21 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -32,7 +32,7 @@
 
 /* Spacing. */
 CHAR("c",			1,	"",		0,	"",		0)
-CHAR("0",			1,	" ",		1,	"&#8194;",	6)
+CHAR("0",			1,	" ",		1,	"&#8194;",	7)
 CHAR(" ",			1,	" ",		1,	"&#8194;",	7)
 CHAR("~",			1,	" ",		1,	"&#160;",	6)
 CHAR("%",			1,	"",		0,	"",		0)

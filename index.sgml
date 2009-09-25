@@ -55,7 +55,7 @@
 					Sources correctly build and install on FreeBSD, OpenBSD, NetBSD and Linux operating systems, tested
 					variously on i386, AMD64, alpha, and others.  The most current version is <span
 					class="attn">@VERSION@</span>, dated <span class="attn">@VDATE@</span>.  A full <a
-					href="ChangeLog.html">ChangeLog</a> is written with each release.
+					href="ChangeLog.txt">ChangeLog</a> is written with each release.
 					</p>
 
 					<h2>
@@ -195,7 +195,7 @@
 			<tr>
 				<td>
 					<div class="foot">
-						Copyright &#169; 2008, 2009 Kristaps D&#382;onsons, $Date: 2009/09/21 13:44:56 $
+						Copyright &#169; 2008, 2009 Kristaps D&#382;onsons, $Date: 2009/09/23 11:02:21 $
 					</div>
 				</td>
 			</tr>

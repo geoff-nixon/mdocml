@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.39 2009/09/24 15:01:06 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.40 2009/09/24 15:08:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -934,6 +934,7 @@ order_rs(int t)
 }
 
 
+/* ARGSUSED */
 static int
 post_rs(POST_ARGS)
 {

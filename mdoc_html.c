@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.11 2009/09/25 12:43:05 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.12 2009/09/25 13:00:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1327,7 +1327,7 @@ mdoc_bd_pre(MDOC_ARGS)
 		switch (bl->args->argv[i].arg) {
 		case (MDOC_Offset):
 			assert(bl->args->argv[i].sz);
-			o = a2offs (bl->args->argv[i].value[0]);
+			o = a2offs(bl->args->argv[i].value[0]);
 			break;
 		case (MDOC_Compact):
 			c = 1;

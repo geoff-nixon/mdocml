@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.50 2009/09/21 14:40:31 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.1 2009/09/21 14:56:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -17,6 +17,7 @@
 #include <sys/types.h>
 #include <sys/queue.h>
 
+#include <stdio.h>
 #include <stdlib.h>
 
 #include "html.h"

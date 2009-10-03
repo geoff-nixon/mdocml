@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.7 2009/09/24 09:50:31 kristaps Exp $ */
+/*	$Id: html.h,v 1.8 2009/10/03 15:08:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -56,6 +56,7 @@ enum	htmlattr {
 	ATTR_STYLE,
 	ATTR_WIDTH,
 	ATTR_VALIGN,
+	ATTR_TARGET,
 	ATTR_MAX
 };
 
@@ -88,6 +89,7 @@ struct	html {
 	void		 *symtab;
 	char		 *base;
 	char		 *base_man;
+	char		 *base_includes;
 	char		 *style;
 	char		  buf[BUFSIZ];
 	size_t		  buflen;

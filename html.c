@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.52 2009/09/24 09:50:31 kristaps Exp $ */
+/*	$Id: html.c,v 1.53 2009/10/03 15:08:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -73,6 +73,7 @@ static	const char	 *const htmlattrs[ATTR_MAX] = {
 	"style",
 	"width",
 	"valign",
+	"target",
 };
 
 #ifdef __linux__
@@ -87,7 +88,8 @@ html_alloc(char *outopts)
 
 	toks[0] = "style";
 	toks[1] = "man";
-	toks[2] = NULL;
+	toks[2] = "includes";
+	toks[3] = NULL;
 
 	if (NULL == (h = calloc(1, sizeof(struct html))))
 		return(NULL);
@@ -100,8 +102,6 @@ html_alloc(char *outopts)
 		return(NULL);
 	}
 
-	h->base_man = "%N.%S.html";
-
 	while (outopts && *outopts)
 		switch (getsubopt(&outopts, toks, &v)) {
 		case (0):
@@ -109,6 +109,9 @@ html_alloc(char *outopts)
 			break;
 		case (1):
 			h->base_man = v;
+			break;
+		case (2):
+			h->base_includes = v;
 			break;
 		default:
 			break;

@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.6 2009/09/21 14:56:56 kristaps Exp $ */
+/*	$Id: html.h,v 1.7 2009/09/24 09:50:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -87,7 +87,10 @@ struct	html {
 	struct ordq	  ords;
 	void		 *symtab;
 	char		 *base;
+	char		 *base_man;
 	char		 *style;
+	char		  buf[BUFSIZ];
+	size_t		  buflen;
 };
 
 void		  print_gen_doctype(struct html *);

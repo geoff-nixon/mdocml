@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.31 2009/09/16 09:41:24 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.32 2009/10/03 19:57:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -160,7 +160,6 @@ man_run(struct termp *p, const struct man *m)
 
 
 static void
-
 fmt_block_vspace(struct termp *p, const struct man_node *n)
 {
 	term_newln(p);

@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.59 2009/10/07 14:39:00 kristaps Exp $ */
+/*	$Id: html.c,v 1.60 2009/10/07 15:06:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -549,8 +549,8 @@ buffmt_includes(struct html *h, const char *name)
 	const char	*p, *pp;
 
 	pp = h->base_includes;
-	p = strchr(pp, '%');
-	while (NULL != p) {
+	
+	while (NULL != (p = strchr(pp, '%'))) {
 		bufncat(h, pp, (size_t)(p - pp));
 		switch (*(p + 1)) {
 		case('I'):
@@ -574,8 +574,9 @@ buffmt_man(struct html *h,
 	const char	*p, *pp;
 
 	pp = h->base_man;
-	p = strchr(pp, '%');
-	while (NULL != p) {
+	
+	/* LINTED */
+	while (NULL != (p = strchr(pp, '%'))) {
 		bufncat(h, pp, (size_t)(p - pp));
 		switch (*(p + 1)) {
 		case('S'):

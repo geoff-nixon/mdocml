@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.85 2009/09/26 17:35:49 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.86 2009/10/03 19:02:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1609,10 +1609,13 @@ termp_bd_pre(DECL_ARGS)
 		return(1);
 
 	for (nn = n->child; nn; nn = nn->next) {
+		p->flags |= TERMP_NOSPACE;
 		print_node(p, pair, m, nn);
 		if (NULL == nn->next)
 			continue;
 		if (nn->prev && nn->prev->line < nn->line)
+			term_flushln(p);
+		else if (NULL == nn->prev)
 			term_flushln(p);
 	}
 

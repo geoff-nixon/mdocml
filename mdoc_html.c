@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.24 2009/10/07 14:39:00 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.25 2009/10/07 14:50:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1624,7 +1624,8 @@ mdoc_fn_pre(MDOC_ARGS)
 	assert(n->child->string);
 	sp = n->child->string;
 
-	if ((ep = strchr(sp, ' '))) {
+	ep = strchr(sp, ' ');
+	if (NULL != ep) {
 		PAIR_CLASS_INIT(&tag[0], "ftype");
 		t = print_otag(h, TAG_SPAN, 1, tag);
 	

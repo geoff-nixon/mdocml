@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.57 2009/10/04 09:02:40 kristaps Exp $ */
+/*	$Id: html.c,v 1.58 2009/10/07 12:35:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -614,14 +614,21 @@ bufcat_su(struct html *h, const char *p, const struct roffsu *su)
 	case (SCALE_PT):
 		u = "pt";
 		break;
+	case (SCALE_EM):
+		u = "em";
+		break;
 	case (SCALE_MM):
 		if (0 == (v /= 100))
 			v = 1;
 		u = "em";
 		break;
+	case (SCALE_EN):
+		u = "ex";
+		break;
+	case (SCALE_BU):
+		u = "ex";
+		break;
 	case (SCALE_VS):
-		/* FALLTHROUGH */
-	case (SCALE_EM):
 		u = "em";
 		break;
 	default:

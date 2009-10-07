@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.32 2009/10/03 19:57:53 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.33 2009/10/04 15:24:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -919,15 +919,12 @@ static void
 print_foot(struct termp *p, const struct man_meta *meta)
 {
 	struct tm	*tm;
-	char		*buf;
-
-	if (NULL == (buf = malloc(p->rmargin)))
-		err(EXIT_FAILURE, "malloc");
+	char		 buf[BUFSIZ];
 
 	tm = localtime(&meta->date);
 
 	if (0 == strftime(buf, p->rmargin, "%B %d, %Y", tm))
-		err(EXIT_FAILURE, "strftime");
+		(void)strlcpy(buf, "(invalid date)", BUFSIZ);
 
 	term_vspace(p);
 
@@ -948,8 +945,6 @@ print_foot(struct termp *p, const struct man_meta *meta)
 
 	term_word(p, buf);
 	term_flushln(p);
-
-	free(buf);
 }
 
 

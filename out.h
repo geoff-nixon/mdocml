@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.11 2009/10/04 09:02:40 kristaps Exp $ */
+/*	$Id: out.h,v 1.3 2009/10/07 12:35:24 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -35,17 +35,20 @@ enum	roffscale {
 
 struct	roffsu {
 	enum roffscale	  unit;
-	int		  scale;
+	double		  scale;
+	int		  pt;
 };
 
 #define	SCALE_INVERT(p) \
 	do { (p)->scale = -(p)->scale; } while (/*CONSTCOND*/0)
 #define	SCALE_VS_INIT(p, v) \
 	do { (p)->unit = SCALE_VS; \
-	     (p)->scale = (v); } while (/*CONSTCOND*/0)
+	     (p)->scale = (v); \
+	     (p)->pt = 0; } while (/*CONSTCOND*/0)
 #define	SCALE_HS_INIT(p, v) \
 	do { (p)->unit = SCALE_BU; \
-	     (p)->scale = (v); } while (/*CONSTCOND*/0)
+	     (p)->scale = (v); \
+	     (p)->pt = 0; } while (/*CONSTCOND*/0)
 
 int		  a2roffsu(const char *, struct roffsu *);
 

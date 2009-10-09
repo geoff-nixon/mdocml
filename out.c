@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.57 2009/10/04 09:02:40 kristaps Exp $ */
+/*	$Id: out.c,v 1.3 2009/10/07 12:35:24 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -46,17 +46,39 @@
 int
 a2roffsu(const char *src, struct roffsu *dst)
 {
-	char		 buf[BUFSIZ], *p;
+	char		 buf[BUFSIZ], hasd;
 	int		 i;
 	enum roffscale	 unit;
 
-	for (p = buf, i = 0; i < BUFSIZ && isdigit((u_char)*src); i++)
-		*p++ = *src++;
+	i = hasd = 0;
+
+	switch (*src) {
+	case ('+'):
+		src++;
+		break;
+	case ('-'):
+		buf[i++] = *src++;
+		break;
+	default:
+		break;
+	}
+
+	while (i < BUFSIZ) {
+		if ( ! isdigit((u_char)*src)) {
+			if ('.' != *src)
+				break;
+			else if (hasd)
+				break;
+			else
+				hasd = 1;
+		}
+		buf[i++] = *src++;
+	}
 
 	if (BUFSIZ == i || (*src && *(src + 1)))
 		return(0);
 
-	*p = '\0';
+	buf[i] = '\0';
 
 	switch (*src) {
 	case ('c'):
@@ -95,8 +117,10 @@ a2roffsu(const char *src, struct roffsu *dst)
 		return(0);
 	}
 
-	if ((dst->scale = atoi(buf)) < 0)
+	if ((dst->scale = atof(buf)) < 0)
 		dst->scale = 0;
 	dst->unit = unit;
+	dst->pt = hasd;
+
 	return(1);
 }

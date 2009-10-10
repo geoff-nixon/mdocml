@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.26 2009/10/07 15:06:03 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.27 2009/10/08 23:00:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1455,6 +1455,7 @@ mdoc_cd_pre(MDOC_ARGS)
 {
 	struct htmlpair	tag;
 
+	print_otag(h, TAG_DIV, 0, NULL);
 	PAIR_CLASS_INIT(&tag, "config");
 	print_otag(h, TAG_SPAN, 1, &tag);
 	return(1);

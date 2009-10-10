@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.86 2009/10/03 19:02:45 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.87 2009/10/07 12:20:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -25,41 +25,6 @@
 
 #include "term.h"
 #include "mdoc.h"
-
-/* FIXME: check HANG lists: they seem to be broken... :
- * .Bl -hang -width Ds
- * .It a
- * b
- * .It Fl f Ns Ar option...
- * Override default compiler behaviour.  See
- * .Sx Compiler Options
- * for details.
- * Override default compiler behaviour.  See
- * .Sx Compiler Options
- * for details.
- * Override default compiler behaviour.  See
- * .Sx Compiler Options
- * for details.
- * Override default compiler behaviour.  See
- * .Sx Compiler Options
- * for details.
- * .
- * .It a sasd fasd as afsd sfad sfds sadfs sd sfd ssfad asfd
- * Override default compiler behaviour.  See
- * .Sx Compiler Options
- * for details.
- * Override default compiler behaviour.  See
- * .Sx Compiler Options
- * for details.
- * Override default compiler behaviour.  See
- * .Sx Compiler Options
- * for details.
- * Override default compiler behaviour.  See
- * .Sx Compiler Options
- * for details.
- * .El
- *
- */
 
 #define	INDENT		  5
 #define	HALFINDENT	  3

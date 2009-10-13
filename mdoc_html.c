@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.27 2009/10/08 23:00:15 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.28 2009/10/10 10:05:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -29,6 +29,7 @@
 #include "out.h"
 #include "html.h"
 #include "mdoc.h"
+#include "main.h"
 
 #define	INDENT		 5
 #define	HALFINDENT	 3

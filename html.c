@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.62 2009/10/09 06:54:11 kristaps Exp $ */
+/*	$Id: html.c,v 1.63 2009/10/13 10:21:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -29,6 +29,7 @@
 #include "out.h"
 #include "chars.h"
 #include "html.h"
+#include "main.h"
 
 #define	UNCONST(a)	((void *)(uintptr_t)(const void *)(a))
 

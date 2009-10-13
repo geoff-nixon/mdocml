@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.44 2009/09/21 13:06:13 kristaps Exp $ */
+/*	$Id: main.c,v 1.45 2009/10/13 10:21:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -27,6 +27,7 @@
 
 #include "mdoc.h"
 #include "man.h"
+#include "main.h"
 
 #define	UNCONST(a)	((void *)(uintptr_t)(const void *)(a))
 
@@ -89,17 +90,6 @@ struct	curparse {
 	void		 *outdata;
 	char		 *outopts;
 };
-
-extern	void		 *html_alloc(char *);
-extern	void		  html_mdoc(void *, const struct mdoc *);
-extern	void		  html_man(void *, const struct man *);
-extern	void		  html_free(void *);
-extern	void		 *ascii_alloc(void);
-extern	void		  tree_mdoc(void *, const struct mdoc *);
-extern	void		  tree_man(void *, const struct man *);
-extern	void		  terminal_mdoc(void *, const struct mdoc *);
-extern	void		  terminal_man(void *, const struct man *);
-extern	void		  terminal_free(void *);
 
 static	int		  foptions(int *, char *);
 static	int		  toptions(enum outt *, char *);

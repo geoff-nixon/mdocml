@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.8 2009/10/08 23:00:15 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.9 2009/10/09 07:10:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -27,6 +27,7 @@
 #include "out.h"
 #include "html.h"
 #include "man.h"
+#include "main.h"
 
 /* TODO: preserve ident widths. */
 

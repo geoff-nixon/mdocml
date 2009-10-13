@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.11 2009/10/04 09:02:40 kristaps Exp $ */
+/*	$Id: html.h,v 1.12 2009/10/07 12:35:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -77,7 +77,7 @@ SLIST_HEAD(ordq, ord);
 
 struct	htmlpair {
 	enum htmlattr	  key;
-	char		 *val;
+	const char	 *val;
 };
 
 #define	PAIR_CLASS_INIT(p, v) \

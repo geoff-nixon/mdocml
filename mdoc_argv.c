@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.26 2009/09/24 13:03:32 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.27 2009/10/07 14:52:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -591,6 +591,8 @@ argv_a2arg(int tok, const char *p)
 			return(MDOC_Offset);
 		else if (0 == strcmp(p, "compact"))
 			return(MDOC_Compact);
+		else if (0 == strcmp(p, "centered"))
+			return(MDOC_Centred);
 		break;
 
 	case (MDOC_Bf):

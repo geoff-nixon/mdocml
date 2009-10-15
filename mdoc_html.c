@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.28 2009/10/10 10:05:12 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.29 2009/10/13 10:57:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1357,6 +1357,8 @@ mdoc_bd_pre(MDOC_ARGS)
 		case (MDOC_Compact):
 			comp = 1;
 			break;
+		case (MDOC_Centred):
+			/* FALLTHROUGH */
 		case (MDOC_Ragged):
 			/* FALLTHROUGH */
 		case (MDOC_Filled):
@@ -1365,6 +1367,8 @@ mdoc_bd_pre(MDOC_ARGS)
 			/* FALLTHROUGH */
 		case (MDOC_Literal):
 			type = bl->args->argv[i].arg;
+			break;
+		default:
 			break;
 		}
 

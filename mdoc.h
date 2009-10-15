@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.68 2009/08/20 13:22:48 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.69 2009/08/20 13:32:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -179,7 +179,8 @@
 #define	MDOC_Emphasis	 23
 #define	MDOC_Symbolic	 24
 #define	MDOC_Nested	 25
-#define	MDOC_ARG_MAX	 26
+#define	MDOC_Centred	 26
+#define	MDOC_ARG_MAX	 27
 
 /* Type of a syntax node. */
 enum	mdoc_type {

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.88 2009/10/10 11:05:23 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.89 2009/10/13 10:57:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1559,6 +1559,8 @@ termp_bd_pre(DECL_ARGS)
 
 	for (type = -1, i = 0; i < (int)nn->args->argc; i++) {
 		switch (nn->args->argv[i].arg) {
+		case (MDOC_Centred):
+			/* FALLTHROUGH */
 		case (MDOC_Ragged):
 			/* FALLTHROUGH */
 		case (MDOC_Filled):

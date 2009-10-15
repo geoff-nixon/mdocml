@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.106 2009/09/23 11:53:45 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.107 2009/09/24 15:01:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -127,7 +127,7 @@ const	char *const __mdoc_argnames[MDOC_ARG_MAX] = {
 	"ohang",		"inset",		"column",	 
 	"width",		"compact",		"std",	 
 	"filled",		"words",		"emphasis",
-	"symbolic",		"nested"
+	"symbolic",		"nested",		"centered"
 	};
 
 const	char * const *mdoc_macronames = __mdoc_macronames;

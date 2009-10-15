@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.107 2009/09/24 15:01:06 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.108 2009/10/15 01:33:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -78,6 +78,7 @@ const	char *const __mdoc_merrnames[MERRMAX] = {
 	"closure macro without prior context", /* ENOCTX */
 	"no description found for library", /* ELIB */
 	"bad child for parent context", /* EBADCHILD */
+	"list arguments preceding type", /* ENOTYPE */
 };
 
 const	char *const __mdoc_macronames[MDOC_MAX] = {		 

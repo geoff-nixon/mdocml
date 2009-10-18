@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.47 2009/09/17 07:41:28 kristaps Exp $ */
+/*	$Id: term.h,v 1.48 2009/10/18 13:34:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -53,8 +53,8 @@ void		  term_vspace(struct termp *);
 void		  term_word(struct termp *, const char *);
 void		  term_flushln(struct termp *);
 
-int		  a2width(const char *);
-int		  a2height(const char *);
+size_t		  term_hspan(const struct roffsu *);
+size_t		  term_vspan(const struct roffsu *);
 
 __END_DECLS
 

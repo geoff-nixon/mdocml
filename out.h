@@ -1,4 +1,4 @@
-/*	$Id: out.h,v 1.3 2009/10/07 12:35:24 kristaps Exp $ */
+/*	$Id: out.h,v 1.4 2009/10/09 06:54:11 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -50,7 +50,8 @@ struct	roffsu {
 	     (p)->scale = (v); \
 	     (p)->pt = 0; } while (/*CONSTCOND*/0)
 
-int		  a2roffsu(const char *, struct roffsu *);
+int		  a2roffsu(const char *, 
+			struct roffsu *, enum roffscale);
 
 __END_DECLS
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.29 2009/10/13 10:57:25 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.30 2009/10/15 01:33:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -342,6 +342,8 @@ a2width(const char *p, struct roffsu *su)
 static void
 a2offs(const char *p, struct roffsu *su)
 {
+
+	/* FIXME: "right"? */
 
 	if (0 == strcmp(p, "left"))
 		SCALE_HS_INIT(su, 0);
@@ -1371,6 +1373,8 @@ mdoc_bd_pre(MDOC_ARGS)
 		default:
 			break;
 		}
+
+	/* FIXME: -centered, etc. formatting. */
 
 	if (MDOC_BLOCK == n->type) {
 		bufcat_su(h, "margin-left", &su);

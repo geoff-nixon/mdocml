@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.39 2009/10/18 13:34:16 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.40 2009/10/18 19:03:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -191,7 +191,7 @@ arg2height(const struct man_node *n)
 	if ( ! a2roffsu(n->string, &su, SCALE_VS))
 		SCALE_VS_INIT(&su, strlen(n->string));
 
-	return(term_vspan(&su));
+	return((int)term_vspan(&su));
 }
 
 
@@ -203,9 +203,9 @@ arg2width(const struct man_node *n)
 	assert(MAN_TEXT == n->type);
 	assert(n->string);
 	if ( ! a2roffsu(n->string, &su, SCALE_BU))
-		SCALE_HS_INIT(&su, strlen(n->string) + 2);
+		return(-1);
 
-	return(term_hspan(&su));
+	return((int)term_hspan(&su));
 }
 
 

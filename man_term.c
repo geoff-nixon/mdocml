@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.38 2009/10/18 11:52:18 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.39 2009/10/18 13:34:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -23,6 +23,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "out.h"
 #include "man.h"
 #include "term.h"
 #include "chars.h"
@@ -183,25 +184,28 @@ terminal_man(void *arg, const struct man *man)
 static int
 arg2height(const struct man_node *n)
 {
-	int		r;
+	struct roffsu	 su;
 
 	assert(MAN_TEXT == n->type);
 	assert(n->string);
+	if ( ! a2roffsu(n->string, &su, SCALE_VS))
+		SCALE_VS_INIT(&su, strlen(n->string));
 
-	if ((r = a2height(n->string)) < 0)
-		return(1);
-
-	return(r);
+	return(term_vspan(&su));
 }
 
 
 static int
 arg2width(const struct man_node *n)
 {
+	struct roffsu	 su;
 
 	assert(MAN_TEXT == n->type);
 	assert(n->string);
-	return(a2width(n->string));
+	if ( ! a2roffsu(n->string, &su, SCALE_BU))
+		SCALE_HS_INIT(&su, strlen(n->string) + 2);
+
+	return(term_hspan(&su));
 }
 
 

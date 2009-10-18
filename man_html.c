@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.9 2009/10/09 07:10:37 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.10 2009/10/13 10:57:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -222,7 +222,7 @@ a2width(const struct man_node *n, struct roffsu *su)
 
 	if (MAN_TEXT != n->type)
 		return(0);
-	if (a2roffsu(n->string, su))
+	if (a2roffsu(n->string, su, SCALE_BU))
 		return(1);
 
 	return(0);
@@ -325,11 +325,9 @@ man_br_pre(MAN_ARGS)
 
 	SCALE_VS_INIT(&su, 1);
 
-	if (MAN_sp == n->tok) {
-		su.scale = 1;
-		if (n->child)
-			a2roffsu(n->child->string, &su);
-	} else if (MAN_br == n->tok)
+	if (MAN_sp == n->tok && n->child)
+		a2roffsu(n->child->string, &su, SCALE_VS);
+	else if (MAN_br == n->tok)
 		su.scale = 0;
 
 	bufcat_su(h, "height", &su);

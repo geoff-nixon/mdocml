@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.106 2009/10/18 13:34:17 kristaps Exp $ */
+/*	$Id: term.c,v 1.107 2009/10/18 19:03:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -602,18 +602,21 @@ term_hspan(const struct roffsu *su)
 {
 	double		 r;
 
+	/* XXX: CM, IN, and PT are approximations. */
+
 	switch (su->unit) {
 	case (SCALE_CM):
-		r = (4 * su->scale) + 2; /* FIXME: double-check. */
+		r = 4 * su->scale;
 		break;
 	case (SCALE_IN):
-		r = (10 * su->scale) + 2; /* FIXME: double-check. */
+		/* XXX: this is an approximation. */
+		r = 10 * su->scale;
 		break;
 	case (SCALE_PC):
-		r = (10 * su->scale) / 6; /* FIXME: double-check. */
+		r = (10 * su->scale) / 6;
 		break;
 	case (SCALE_PT):
-		r = (10 * su->scale) / 72; /* FIXME: double-check. */
+		r = (10 * su->scale) / 72;
 		break;
 	case (SCALE_MM):
 		r = su->scale / 1000; /* FIXME: double-check. */

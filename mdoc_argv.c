@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.27 2009/10/07 14:52:35 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.28 2009/10/15 01:33:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -59,7 +59,7 @@ static	int mdoc_argvflags[MDOC_ARG_MAX] = {
 	ARGV_NONE,	/* MDOC_Ragged */
 	ARGV_NONE,	/* MDOC_Unfilled */
 	ARGV_NONE,	/* MDOC_Literal */
-	ARGV_NONE,	/* MDOC_File */
+	ARGV_SINGLE,	/* MDOC_File */
 	ARGV_OPT_SINGLE, /* MDOC_Offset */
 	ARGV_NONE,	/* MDOC_Bullet */
 	ARGV_NONE,	/* MDOC_Dash */

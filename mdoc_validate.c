@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.46 2009/10/18 13:26:16 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.47 2009/10/19 07:34:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -703,8 +703,6 @@ pre_bd(PRE_ARGS)
 		case (MDOC_Filled):
 			/* FALLTHROUGH */
 		case (MDOC_Literal):
-			/* FALLTHROUGH */
-		case (MDOC_File):
 			if (0 == type++) 
 				break;
 			return(mdoc_nerr(mdoc, n, EMULTIDISP));

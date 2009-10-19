@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.31 2009/10/18 11:14:04 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.32 2009/10/18 19:03:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1068,6 +1068,8 @@ mdoc_it_pre(MDOC_ARGS)
 	/* Override width in some cases. */
 
 	switch (type) {
+	case (MDOC_Item):
+		/* FALLTHROUGH */
 	case (MDOC_Inset):
 		/* FALLTHROUGH */
 	case (MDOC_Diag):

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.32 2009/10/18 19:03:37 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.33 2009/10/19 10:18:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1841,6 +1841,8 @@ mdoc_in_pre(MDOC_ARGS)
 		} else
 			print_otag(h, TAG_DIV, 0, NULL);
 	}
+
+	/* FIXME: there's a buffer bug in here somewhere. */
 
 	PAIR_CLASS_INIT(&tag[0], "includes");
 	print_otag(h, TAG_SPAN, 1, tag);

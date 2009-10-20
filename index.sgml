@@ -48,7 +48,7 @@
 			<tr>
 				<td>
 					<h1>
-					DOWNLOADS
+					SOURCES
 					</h1>
 
 					<p>
@@ -71,6 +71,12 @@
 							<td>
 							<a href="/snapshots/mdocml.tar.gz">/snapshots/mdocml.tar.gz</a> 
 							(<a href="/snapshots/mdocml.md5">md5</a>)
+							</td>
+						</tr>
+						<tr>
+							<td>Online source</td>
+							<td>
+							<a class="external" href="http://bsd.lv/cgi-bin/cvsweb.cgi/?cvsroot=mdocml">cvsweb</a>
 							</td>
 						</tr>
 					</tbody>
@@ -195,7 +201,7 @@
 			<tr>
 				<td>
 					<div class="foot">
-						Copyright &#169; 2008, 2009 Kristaps D&#382;onsons, $Date: 2009/09/25 14:07:51 $
+						Copyright &#169; 2008, 2009 Kristaps D&#382;onsons, $Date: 2009/10/18 11:13:39 $
 					</div>
 				</td>
 			</tr>

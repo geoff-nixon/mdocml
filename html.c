@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.63 2009/10/13 10:21:24 kristaps Exp $ */
+/*	$Id: html.c,v 1.64 2009/10/13 10:57:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -650,3 +650,4 @@ bufcat_su(struct html *h, const char *p, const struct roffsu *su)
 		/* LINTED */
 		buffmt(h, "%s: %d%s;", p, (int)v, u);
 }
+

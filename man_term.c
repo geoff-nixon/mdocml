@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.41 2009/10/18 19:17:14 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.42 2009/10/21 03:31:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -909,13 +909,9 @@ print_body(DECL_ARGS)
 static void
 print_foot(struct termp *p, const struct man_meta *meta)
 {
-	struct tm	*tm;
-	char		 buf[BUFSIZ];
+	char		buf[DATESIZ];
 
-	tm = localtime(&meta->date);
-
-	if (0 == strftime(buf, p->rmargin, "%B %e, %Y", tm))
-		(void)strlcpy(buf, "(invalid date)", BUFSIZ);
+	time2a(meta->date, buf, DATESIZ);
 
 	term_vspace(p);
 

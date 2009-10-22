@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.10 2009/10/13 10:57:25 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.11 2009/10/18 19:03:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -281,15 +281,11 @@ man_root_pre(MAN_ARGS)
 static void
 man_root_post(MAN_ARGS)
 {
-	struct tm	 tm;
 	struct htmlpair	 tag[2];
 	struct tag	*t, *tt;
-	char		 b[BUFSIZ];
+	char		 b[DATESIZ];
 
-	(void)localtime_r(&m->date, &tm);
-
-	if (0 == strftime(b, BUFSIZ - 1, "%B %e, %Y", &tm))
-		err(EXIT_FAILURE, "strftime");
+	time2a(m->date, b, DATESIZ);
 
 	PAIR_CLASS_INIT(&tag[0], "footer");
 	bufcat_style(h, "width", "100%");

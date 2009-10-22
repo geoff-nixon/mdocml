@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.5 2009/10/18 19:02:10 kristaps Exp $ */
+/*	$Id: out.c,v 1.6 2009/10/22 18:55:32 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -21,9 +21,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "out.h"
 
+#ifdef __linux__
+extern	size_t	  strlcat(char *, const char *, size_t);
+#endif
 
 /* 
  * Convert a `scaling unit' to a consistent form, or fail.  Scaling

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.47 2009/10/19 07:34:44 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.48 2009/10/19 09:40:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -696,6 +696,8 @@ pre_bd(PRE_ARGS)
 	for (i = 0, err = type = 0; ! err && 
 			i < (int)n->args->argc; i++)
 		switch (n->args->argv[i].arg) {
+		case (MDOC_Centred):
+			/* FALLTHROUGH */
 		case (MDOC_Ragged):
 			/* FALLTHROUGH */
 		case (MDOC_Unfilled):

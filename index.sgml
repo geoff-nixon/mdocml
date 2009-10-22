@@ -100,8 +100,8 @@
 						<tr>
 							<td>NetBSD</td>
 							<td>
-							<a href="http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/textproc/mdocml/"
-								class="external">pkgsrc/textproc/mdocml</a> 
+							<a href="http://cvsweb.netbsd.org/bsdweb.cgi/src/external/bsd/mdocml/"
+								class="external">src/external/bsd/mdocml<a/>
 							</td>
 						</tr>
 						<tr>
@@ -201,7 +201,7 @@
 			<tr>
 				<td>
 					<div class="foot">
-						Copyright &#169; 2008, 2009 Kristaps D&#382;onsons, $Date: 2009/10/20 18:14:31 $
+						Copyright &#169; 2008, 2009 Kristaps D&#382;onsons, $Date: 2009/10/20 18:31:04 $
 					</div>
 				</td>
 			</tr>

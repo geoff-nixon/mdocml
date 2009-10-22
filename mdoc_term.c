@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.92 2009/10/18 19:03:37 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.93 2009/10/19 15:18:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -347,8 +347,8 @@ print_node(DECL_ARGS)
 static void
 print_foot(DECL_ARGS)
 {
-	struct tm	*tm;
-	char		*buf, *os;
+	char		 buf[DATESIZ];
+	char		*os;
 
 	/* 
 	 * Output the footer in new-groff style, that is, three columns
@@ -358,15 +358,10 @@ print_foot(DECL_ARGS)
 	 * SYSTEM                  DATE                    SYSTEM
 	 */
 
-	if (NULL == (buf = malloc(p->rmargin)))
-		err(EXIT_FAILURE, "malloc");
 	if (NULL == (os = malloc(p->rmargin)))
 		err(EXIT_FAILURE, "malloc");
 
-	tm = localtime(&m->date);
-
-	if (0 == strftime(buf, p->rmargin, "%B %e, %Y", tm))
-		err(EXIT_FAILURE, "strftime");
+	time2a(m->date, buf, DATESIZ);
 
 	(void)strlcpy(os, m->os, p->rmargin);
 
@@ -398,7 +393,6 @@ print_foot(DECL_ARGS)
 	p->rmargin = p->maxrmargin;
 	p->flags = 0;
 
-	free(buf);
 	free(os);
 }
 

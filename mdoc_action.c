@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.40 2009/09/24 15:08:41 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.41 2009/09/25 13:03:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -520,7 +520,15 @@ static int
 post_os(POST_ARGS)
 {
 	char		  buf[64];
+#ifndef	OSNAME
 	struct utsname	  utsname;
+#endif
+
+	/*
+	 * Setting OSNAME to be the name of the target operating system,
+	 * e.g., "OpenBSD 4.4", will result in the compile-time constant
+	 * by supplied instead of the value in uname().
+	 */
 
 	if (m->meta.os)
 		free(m->meta.os);
@@ -530,6 +538,10 @@ post_os(POST_ARGS)
 		return(0);
 
 	if (0 == buf[0]) {
+#ifdef	OSNAME
+		if (strlcat(buf, OSNAME, 64) >= 64)
+			return(mdoc_nerr(m, n, EUTSNAME));
+#else
 		if (-1 == uname(&utsname))
 			return(mdoc_nerr(m, n, EUTSNAME));
 		if (strlcat(buf, utsname.sysname, 64) >= 64)
@@ -538,6 +550,7 @@ post_os(POST_ARGS)
 			return(mdoc_nerr(m, n, ETOOLONG));
 		if (strlcat(buf, utsname.release, 64) >= 64)
 			return(mdoc_nerr(m, n, ETOOLONG));
+#endif
 	}
 
 	if (NULL == (m->meta.os = strdup(buf)))

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.107 2009/10/18 19:03:37 kristaps Exp $ */
+/*	$Id: term.c,v 1.108 2009/10/19 15:18:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -548,12 +548,12 @@ encode(struct termp *p, char c)
 {
 	
 	if (' ' != c) {
-		if (p->bold) {
-			buffer(p, c);
-			buffer(p, 8);
-		}
 		if (p->under) {
 			buffer(p, '_');
+			buffer(p, 8);
+		}
+		if (p->bold) {
+			buffer(p, c);
 			buffer(p, 8);
 		}
 	}

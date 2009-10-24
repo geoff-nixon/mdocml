@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.11 2009/10/18 19:03:36 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.12 2009/10/22 18:55:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -30,6 +30,7 @@
 #include "main.h"
 
 /* TODO: preserve ident widths. */
+/* FIXME: have PD set the default vspace width. */
 
 #define	INDENT		  5
 #define	HALFINDENT	  3
@@ -104,6 +105,7 @@ static	const struct htmlman mans[MAN_MAX] = {
 	{ man_RS_pre, NULL }, /* RS */
 	{ man_ign_pre, NULL }, /* DT */
 	{ man_ign_pre, NULL }, /* UC */
+	{ man_ign_pre, NULL }, /* PD */
 };
 
 

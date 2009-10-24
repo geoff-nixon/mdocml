@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.93 2009/10/19 15:18:30 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.94 2009/10/22 18:55:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -236,6 +236,7 @@ static	const struct termact termacts[MDOC_MAX] = {
 	{ NULL, termp____post }, /* %Q */ 
 	{ termp_sp_pre, NULL }, /* br */
 	{ termp_sp_pre, NULL }, /* sp */ 
+	{ NULL, termp____post }, /* %U */ 
 };
 
 #ifdef __linux__
@@ -2005,6 +2006,8 @@ termp_ap_pre(DECL_ARGS)
 static void
 termp____post(DECL_ARGS)
 {
+
+	/* TODO: %U. */
 
 	p->flags |= TERMP_NOSPACE;
 	switch (n->tok) {

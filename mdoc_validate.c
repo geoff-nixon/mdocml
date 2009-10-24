@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.48 2009/10/19 09:40:23 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.49 2009/10/22 10:35:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -273,6 +273,7 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, posts_text },			/* %Q */
 	{ NULL, posts_notext },			/* br */
 	{ NULL, posts_sp },			/* sp */
+	{ NULL, posts_text },			/* %U */
 };
 
 
@@ -1155,6 +1156,8 @@ post_rs(POST_ARGS)
 
 	for (nn = mdoc->last->child; nn; nn = nn->next)
 		switch (nn->tok) {
+		case(MDOC__U):
+			/* FALLTHROUGH */
 		case(MDOC__Q):
 			/* FALLTHROUGH */
 		case(MDOC__C):

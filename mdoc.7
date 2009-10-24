@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.67 2009/10/22 10:33:28 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.68 2009/10/22 10:36:20 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -611,8 +611,10 @@ then the macro accepts an arbitrary number of arguments.
 .It Sx \&%N  Ta    \&No     Ta    \&No     Ta    >0
 .It Sx \&%O  Ta    \&No     Ta    \&No     Ta    >0
 .It Sx \&%P  Ta    \&No     Ta    \&No     Ta    >0
+.It Sx \&%Q  Ta    \&No     Ta    \&No     Ta    >0
 .It Sx \&%R  Ta    \&No     Ta    \&No     Ta    >0
 .It Sx \&%T  Ta    \&No     Ta    \&No     Ta    >0
+.It Sx \&%U  Ta    \&No     Ta    \&No     Ta    >0
 .It Sx \&%V  Ta    \&No     Ta    \&No     Ta    >0
 .It Sx \&Ad  Ta    Yes      Ta    Yes      Ta    n
 .It Sx \&An  Ta    Yes      Ta    Yes      Ta    n
@@ -755,6 +757,9 @@ Article title of an
 .Sx \&Rs
 block.  This macro may also be used in a non-bibliographical context
 when referring to article titles.
+.
+.Ss \&%U
+URI of current document.
 .
 .Ss \&%V
 Volume number of an

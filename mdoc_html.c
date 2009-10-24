@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.35 2009/10/20 05:45:21 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.36 2009/10/22 18:55:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -254,6 +254,7 @@ static	const struct htmlmdoc mdocs[MDOC_MAX] = {
 	{mdoc__x_pre, mdoc__x_post}, /* %Q */ 
 	{mdoc_sp_pre, NULL}, /* br */
 	{mdoc_sp_pre, NULL}, /* sp */ 
+	{mdoc__x_pre, mdoc__x_post}, /* %U */ 
 };
 
 
@@ -2147,6 +2148,8 @@ static int
 mdoc__x_pre(MDOC_ARGS)
 {
 	struct htmlpair	tag;
+
+	/* TODO: %U. */
 
 	switch (n->tok) {
 	case(MDOC__A):

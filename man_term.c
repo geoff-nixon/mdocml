@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.42 2009/10/21 03:31:49 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.43 2009/10/22 18:55:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -31,6 +31,8 @@
 
 #define	INDENT		  7
 #define	HALFINDENT	  3
+
+/* FIXME: have PD set the default vspace width. */
 
 struct	mtermp {
 	int		  fl;
@@ -141,6 +143,7 @@ static	const struct termact termacts[MAN_MAX] = {
 	{ pre_RS, post_RS }, /* RS */
 	{ pre_ign, NULL }, /* DT */
 	{ pre_ign, NULL }, /* UC */
+	{ pre_ign, NULL }, /* PD */
 };
 
 

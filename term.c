@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.109 2009/10/22 18:19:36 kristaps Exp $ */
+/*	$Id: term.c,v 1.110 2009/10/24 06:19:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -222,14 +222,15 @@ term_flushln(struct termp *p)
 		}
 		vis += vsz;
 	}
+
 	p->col = 0;
+	overstep = 0;
 
 	if ( ! (TERMP_NOBREAK & p->flags)) {
 		putchar('\n');
 		return;
 	}
 
-	overstep = 0;
 	if (TERMP_HANG & p->flags) {
 		/* We need one blank after the tag. */
 		overstep = /* LINTED */

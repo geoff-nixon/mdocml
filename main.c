@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.46 2009/10/13 10:57:25 kristaps Exp $ */
+/*	$Id: main.c,v 1.47 2009/10/26 04:15:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -134,7 +134,7 @@ main(int argc, char *argv[])
 			if ( ! moptions(&curp.inttype, optarg))
 				return(EXIT_FAILURE);
 			break;
-		case ('o'):
+		case ('O'):
 			curp.outopts = optarg;
 			break;
 		case ('T'):
@@ -221,8 +221,8 @@ usage(void)
 {
 
 	(void)fprintf(stderr, "usage: %s [-V] [-foption...] "
-			"[-mformat] [-Toutput] [-Werr...]\n", 
-			__progname);
+			"[-mformat] [-Ooption] [-Toutput] "
+			"[-Werr...]\n", __progname);
 	exit(EXIT_FAILURE);
 }
 

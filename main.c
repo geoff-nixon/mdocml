@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.45 2009/10/13 10:21:24 kristaps Exp $ */
+/*	$Id: main.c,v 1.46 2009/10/13 10:57:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -124,7 +124,7 @@ main(int argc, char *argv[])
 	curp.outtype = OUTT_ASCII;
 
 	/* LINTED */
-	while (-1 != (c = getopt(argc, argv, "f:m:o:T:VW:")))
+	while (-1 != (c = getopt(argc, argv, "f:m:O:T:VW:")))
 		switch (c) {
 		case ('f'):
 			if ( ! foptions(&curp.fflags, optarg))

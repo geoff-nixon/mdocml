@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.109 2009/10/15 02:56:51 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.110 2009/10/24 05:52:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -662,7 +662,6 @@ parsetext(struct mdoc *m, int line, char *buf)
 	m->next = MDOC_NEXT_SIBLING;
 	return(1);
 }
-
 
 
 

@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.20 2009/08/21 13:14:07 kristaps Exp $ */
+/*	$Id: libman.h,v 1.21 2009/09/16 14:40:56 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -54,7 +54,6 @@ enum	merr {
 	WHEADARGS,
 	WBODYARGS,
 	WNHEADARGS,
-	WMACRO,
 	WMACROFORM,
 	WEXITSCOPE,
 	WNOSCOPE,

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.43 2009/10/24 05:52:13 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.44 2009/10/26 04:09:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -192,7 +192,7 @@ static	const struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL, NULL }, /* %U */
 };
 
-#define	RSORD_MAX 13
+#define	RSORD_MAX 14
 
 static	const int rsord[RSORD_MAX] = {
 	MDOC__A,
@@ -207,7 +207,8 @@ static	const int rsord[RSORD_MAX] = {
 	MDOC__Q,
 	MDOC__D,
 	MDOC__O,
-	MDOC__C
+	MDOC__C,
+	MDOC__U
 };
 
 

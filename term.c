@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.110 2009/10/24 06:19:34 kristaps Exp $ */
+/*	$Id: term.c,v 1.111 2009/10/26 07:18:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -204,7 +204,8 @@ term_flushln(struct termp *p)
 				vis = 0;
 			}
 			/* Remove the overstep width. */
-			bp += overstep;
+			bp += (int)/* LINTED */
+				overstep;
 			overstep = 0;
 		} else {
 			for (j = 0; j < (int)vbl; j++)

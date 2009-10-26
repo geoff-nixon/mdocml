@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.42 2009/10/22 17:54:24 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.43 2009/10/24 05:52:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,13 +14,16 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#ifndef	OSNAME
 #include <sys/utsname.h>
+#endif
 
 #include <assert.h>
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "libmdoc.h"
 
@@ -174,7 +177,7 @@ static	const struct actions mdoc_actions[MDOC_MAX] = {
 	{ NULL, NULL }, /* Ud */
 	{ NULL, post_lb }, /* Lb */
 	{ NULL, NULL }, /* Lp */
-	{ NULL, post_tilde }, /* Lk */
+	{ NULL, NULL }, /* Lk */
 	{ NULL, NULL }, /* Mt */
 	{ NULL, NULL }, /* Brq */
 	{ NULL, NULL }, /* Bro */
@@ -771,7 +774,6 @@ post_tilde(POST_ARGS)
 	np = n;
 	m->next = MDOC_NEXT_CHILD;
 
-	/* XXX: not documented for `Lk'. */
 	if ( ! mdoc_word_alloc(m, n->line, n->pos, "~"))
 		return(0);
 	m->last = np;

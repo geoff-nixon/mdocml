@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.111 2009/10/26 07:18:23 kristaps Exp $ */
+/*	$Id: term.c,v 1.112 2009/10/26 09:06:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -19,6 +19,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "chars.h"
 #include "out.h"

@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.65 2009/10/20 05:45:21 kristaps Exp $ */
+/*	$Id: html.c,v 1.66 2009/10/26 08:18:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -80,6 +80,7 @@ static	const char	 *const htmlattrs[ATTR_MAX] = {
 	"valign",
 	"target",
 	"id",
+	"summary",
 };
 
 #ifdef __linux__

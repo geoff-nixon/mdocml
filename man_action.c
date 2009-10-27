@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.19 2009/08/22 09:10:38 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.20 2009/10/24 05:45:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -208,7 +208,7 @@ man_atotime(const char *p)
 	struct tm	 tm;
 	char		*pp;
 
-	bzero(&tm, sizeof(struct tm));
+	memset(&tm, 0, sizeof(struct tm));
 
 	if ((pp = strptime(p, "%b %d %Y", &tm)) && 0 == *pp)
 		return(mktime(&tm));

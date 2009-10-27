@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.113 2009/10/26 17:05:44 kristaps Exp $ */
+/*	$Id: term.c,v 1.114 2009/10/27 08:05:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -79,7 +79,7 @@ term_alloc(enum termenc enc)
 
 	if (NULL == (p = malloc(sizeof(struct termp))))
 		return(NULL);
-	bzero(p, sizeof(struct termp));
+	memset(p, 0, sizeof(struct termp));
 	p->maxrmargin = 78;
 	p->enc = enc;
 	return(p);
@@ -139,7 +139,7 @@ term_flushln(struct termp *p)
 	 * First, establish the maximum columns of "visible" content.
 	 * This is usually the difference between the right-margin and
 	 * an indentation, but can be, for tagged lists or columns, a
-	 * small set of values.
+	 * small set of values. 
 	 */
 
 	assert(p->offset < p->rmargin);
@@ -150,6 +150,12 @@ term_flushln(struct termp *p)
 			0 : p->maxrmargin - p->offset - overstep;
 
 	bp = TERMP_NOBREAK & p->flags ? mmax : maxvis;
+
+	/* 
+	 * FIXME: if bp is zero, we still output the first word before
+	 * breaking the line.
+	 */
+
 	vis = 0;
 
 	/*

@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.42 2009/10/24 05:45:04 kristaps Exp $ */
+/*	$Id: man.c,v 1.43 2009/10/26 07:11:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -175,7 +175,7 @@ static int
 man_alloc1(struct man *m)
 {
 
-	bzero(&m->meta, sizeof(struct man_meta));
+	memset(&m->meta, 0, sizeof(struct man_meta));
 	m->flags = 0;
 	m->last = calloc(1, sizeof(struct man_node));
 	if (NULL == m->last)

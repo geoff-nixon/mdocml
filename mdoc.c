@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.110 2009/10/24 05:52:13 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.111 2009/10/26 07:11:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -198,7 +198,7 @@ static int
 mdoc_alloc1(struct mdoc *mdoc)
 {
 
-	bzero(&mdoc->meta, sizeof(struct mdoc_meta));
+	memset(&mdoc->meta, 0, sizeof(struct mdoc_meta));
 	mdoc->flags = 0;
 	mdoc->lastnamed = mdoc->lastsec = SEC_NONE;
 	mdoc->last = calloc(1, sizeof(struct mdoc_node));

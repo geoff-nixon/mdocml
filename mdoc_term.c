@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.95 2009/10/24 05:52:14 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.96 2009/10/26 04:09:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -315,7 +315,7 @@ print_node(DECL_ARGS)
 	bold = p->bold;
 	under = p->under;
 
-	bzero(&npair, sizeof(struct termpair));
+	memset(&npair, 0, sizeof(struct termpair));
 	npair.ppair = pair;
 
 	if (MDOC_TEXT != n->type) {

@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.14 2009/10/26 08:18:16 kristaps Exp $ */
+/*	$Id: html.h,v 1.15 2009/10/27 04:50:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -135,6 +135,9 @@ void		  bufcat_style(struct html *,
 			const char *, const char *);
 void		  bufncat(struct html *, const char *, size_t);
 void		  bufinit(struct html *);
+
+void		  html_idcat(char *, const char *, int);
+void		  html_idcpy(char *, const char *, int);
 
 __END_DECLS
 

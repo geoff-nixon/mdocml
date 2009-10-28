@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.14 2009/10/26 08:18:16 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.15 2009/10/27 04:50:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -334,6 +334,9 @@ man_br_pre(MAN_ARGS)
 	bufcat_su(h, "height", &su);
 	PAIR_STYLE_INIT(&tag, h);
 	print_otag(h, TAG_DIV, 1, &tag);
+	/* So the div isn't empty: */
+	print_text(h, "\\~");
+
 	return(0);
 }
 

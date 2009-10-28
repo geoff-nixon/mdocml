@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.67 2009/10/27 04:50:14 kristaps Exp $ */
+/*	$Id: html.c,v 1.68 2009/10/28 05:08:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -670,26 +670,24 @@ html_idcat(char *dst, const char *src, int sz)
 	for (i = 0; *dst != '\0' && i < sz - 1; dst++, i++)
 		/* Jump to end. */ ;
 
-	for ( ; *src != '\0' && i < sz - 1; src++, i++) {
+	for ( ; *src != '\0' && i < sz - 1; src++, i++, dst++) {
 		if (isalnum((u_char)*src)) {
-			*dst++ = *src;
+			*dst = *src;
 			continue;
 		}
 
 		switch (*src) {
 		case (';'):
-			*dst++ = ';';
+			*dst = ';';
 			break;
 		case ('-'):
-			*dst++ = '-';
+			*dst = '-';
 			break;
 		case (':'):
-			*dst++ = ':';
+			*dst = ':';
 			break;
-		case ('_'):
-			/* FALLTHROUGH */
 		default:
-			*dst++ = '_';
+			*dst = '_';
 			break;
 		}
 	}

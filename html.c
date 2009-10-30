@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.69 2009/10/28 06:54:12 kristaps Exp $ */
+/*	$Id: html.c,v 1.70 2009/10/28 08:00:18 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -391,11 +391,11 @@ print_ctag(struct html *h, enum htmltag tag)
 {
 	
 	printf("</%s>", htmltags[tag].name);
-	if (HTML_CLRLINE & htmltags[tag].flags)
+	if (HTML_CLRLINE & htmltags[tag].flags) {
 		h->flags |= HTML_NOSPACE;
-	if (HTML_CLRLINE & htmltags[tag].flags)
 		h->flags |= HTML_NEWLINE;
-	else
+		printf("\n");
+	} else
 		h->flags &= ~HTML_NEWLINE;
 }
 

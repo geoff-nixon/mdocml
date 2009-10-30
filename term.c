@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.117 2009/10/30 18:43:24 kristaps Exp $ */
+/*	$Id: term.c,v 1.118 2009/10/30 18:50:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -15,7 +15,6 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 #include <assert.h>
-#include <err.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -147,9 +146,11 @@ term_flushln(struct termp *p)
 	assert(p->offset < p->rmargin);
 
 	maxvis = (int)(p->rmargin - p->offset) - overstep < 0 ?
-			0 : p->rmargin - p->offset - overstep;
+		/* LINTED */ 
+		0 : p->rmargin - p->offset - overstep;
 	mmax = (int)(p->maxrmargin - p->offset) - overstep < 0 ?
-			0 : p->maxrmargin - p->offset - overstep;
+		/* LINTED */
+		0 : p->maxrmargin - p->offset - overstep;
 
 	bp = TERMP_NOBREAK & p->flags ? mmax : maxvis;
 

@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.1 2009/07/04 09:01:55 kristaps Exp $ */
+/*	$Id: libmandoc.h,v 1.2 2009/10/28 19:21:59 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -24,7 +24,6 @@ void		*mandoc_calloc(size_t, size_t);
 char		*mandoc_strdup(const char *);
 void		*mandoc_malloc(size_t);
 void		*mandoc_realloc(void *, size_t);
-void		*mandoc_reallocf(void *, size_t);
 
 __END_DECLS
 

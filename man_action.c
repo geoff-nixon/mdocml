@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.20 2009/10/24 05:45:04 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.21 2009/10/27 08:26:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -22,6 +22,7 @@
 #include <string.h>
 
 #include "libman.h"
+#include "libmandoc.h"
 
 struct	actions {
 	int	(*post)(struct man *);
@@ -141,9 +142,7 @@ post_TH(struct man *m)
 
 	n = m->last->child;
 	assert(n);
-
-	if (NULL == (m->meta.title = strdup(n->string)))
-		return(man_nerr(m, n, WNMEM));
+	m->meta.title = mandoc_strdup(n->string);
 
 	/* TITLE ->MSEC<- DATE SOURCE VOL */
 
@@ -170,14 +169,12 @@ post_TH(struct man *m)
 	/* TITLE MSEC DATE ->SOURCE<- VOL */
 
 	if (n && (n = n->next))
-		if (NULL == (m->meta.source = strdup(n->string)))
-			return(man_nerr(m, n, WNMEM));
+		m->meta.source = mandoc_strdup(n->string);
 
 	/* TITLE MSEC DATE SOURCE ->VOL<- */
 
 	if (n && (n = n->next))
-		if (NULL == (m->meta.vol = strdup(n->string)))
-			return(man_nerr(m, n, WNMEM));
+		m->meta.vol = mandoc_strdup(n->string);
 
 	/* 
 	 * The end document shouldn't have the prologue macros as part

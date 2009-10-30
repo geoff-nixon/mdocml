@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.45 2009/10/26 04:09:45 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.46 2009/10/27 08:49:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -18,7 +18,6 @@
 
 #include <assert.h>
 #include <ctype.h>
-#include <err.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

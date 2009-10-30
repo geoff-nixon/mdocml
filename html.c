@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.72 2009/10/30 18:43:24 kristaps Exp $ */
+/*	$Id: html.c,v 1.73 2009/10/30 18:50:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -18,7 +18,6 @@
 
 #include <assert.h>
 #include <ctype.h>
-#include <err.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdint.h>

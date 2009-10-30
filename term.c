@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.116 2009/10/28 06:54:12 kristaps Exp $ */
+/*	$Id: term.c,v 1.117 2009/10/30 18:43:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -543,8 +543,10 @@ buffer(struct termp *p, char c)
 			p->maxcols = 256;
 		s = p->maxcols * 2;
 		p->buf = realloc(p->buf, s);
-		if (NULL == p->buf)
-			err(1, "realloc"); /* FIXME: shouldn't be here! */
+		if (NULL == p->buf) {
+			fprintf(stderr, "memory exhausted\n");
+			exit(EXIT_FAILURE);
+		}
 		p->maxcols = s;
 	}
 	p->buf[(int)(p->col)++] = c;

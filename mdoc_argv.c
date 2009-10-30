@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.30 2009/10/24 05:52:13 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.31 2009/10/28 19:21:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -268,7 +268,7 @@ mdoc_argv(struct mdoc *m, int line, int tok,
 		return(ARGV_ERROR);
 
 	if (NULL == (arg = *v))
-		arg = mandoc_calloc(1, sizeof(struct mdoc_arg));
+		arg = *v = mandoc_calloc(1, sizeof(struct mdoc_arg));
 
 	arg->argc++;
 	arg->argv = mandoc_realloc

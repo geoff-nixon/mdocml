@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.71 2009/10/30 04:57:17 kristaps Exp $ */
+/*	$Id: html.c,v 1.72 2009/10/30 18:43:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -673,7 +673,7 @@ html_idcat(char *dst, const char *src, int sz)
 	sz--;
 
 	for ( ; *src != '\0' && sz > 1; src++) {
-		ssz = snprintf(dst, sz, "%.2x", *src);
+		ssz = snprintf(dst, (size_t)sz, "%.2x", *src);
 		sz -= ssz;
 		dst += ssz;
 	}

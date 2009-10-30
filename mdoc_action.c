@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.45 2009/10/26 10:36:46 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.46 2009/10/29 04:34:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -890,6 +890,7 @@ pre_dl(PRE_ARGS)
 }
 
 
+/* ARGSUSED */
 static int
 pre_offset(PRE_ARGS)
 {

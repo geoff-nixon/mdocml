@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.98 2009/10/27 08:49:44 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.99 2009/10/30 18:53:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1634,7 +1634,7 @@ termp_xx_pre(DECL_ARGS)
 		pp = "BSDI BSD/OS";
 		break;
 	case (MDOC_Dx):
-		pp = "DragonFlyBSD";
+		pp = "DragonFly";
 		break;
 	case (MDOC_Fx):
 		pp = "FreeBSD";

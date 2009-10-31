@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.4 2009/10/28 19:21:59 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.5 2009/10/30 05:58:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -113,7 +113,7 @@ mandoc_calloc(size_t num, size_t size)
 
 	ptr = calloc(num, size);
 	if (NULL == ptr) {
-		fprintf(stderr, "memory exhausted\n");
+		perror(NULL);
 		exit(EXIT_FAILURE);
 	}
 
@@ -128,7 +128,7 @@ mandoc_malloc(size_t size)
 
 	ptr = malloc(size);
 	if (NULL == ptr) {
-		fprintf(stderr, "memory exhausted\n");
+		perror(NULL);
 		exit(EXIT_FAILURE);
 	}
 
@@ -142,7 +142,7 @@ mandoc_realloc(void *ptr, size_t size)
 
 	ptr = realloc(ptr, size);
 	if (NULL == ptr) {
-		fprintf(stderr, "memory exhausted\n");
+		perror(NULL);
 		exit(EXIT_FAILURE);
 	}
 
@@ -157,7 +157,7 @@ mandoc_strdup(const char *ptr)
 
 	p = strdup(ptr);
 	if (NULL == p) {
-		fprintf(stderr, "memory exhausted\n");
+		perror(NULL);
 		exit(EXIT_FAILURE);
 	}
 

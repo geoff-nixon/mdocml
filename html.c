@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.73 2009/10/30 18:50:11 kristaps Exp $ */
+/*	$Id: html.c,v 1.74 2009/10/30 18:53:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -101,7 +101,7 @@ html_alloc(char *outopts)
 
 	h = calloc(1, sizeof(struct html));
 	if (NULL == h) {
-		fprintf(stderr, "memory exhausted\n");
+		perror(NULL);
 		exit(EXIT_FAILURE);
 	}
 
@@ -354,7 +354,7 @@ print_otag(struct html *h, enum htmltag tag,
 	if ( ! (HTML_NOSTACK & htmltags[tag].flags)) {
 		t = malloc(sizeof(struct tag));
 		if (NULL == t) {
-			fprintf(stderr, "memory exhausted\n");
+			perror(NULL);
 			exit(EXIT_FAILURE);
 		}
 		t->tag = tag;

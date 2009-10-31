@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.9 2009/09/23 11:02:21 kristaps Exp $ */
+/*	$Id: chars.c,v 1.10 2009/10/30 18:43:24 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -91,13 +91,13 @@ chars_init(enum chars type)
 
 	tab = malloc(sizeof(struct tbl));
 	if (NULL == tab) {
-		fprintf(stderr, "memory exhausted\n");
+		perror(NULL);
 		exit(EXIT_FAILURE);
 	}
 
 	htab = calloc(PRINT_HI - PRINT_LO + 1, sizeof(struct ln **));
 	if (NULL == htab) {
-		fprintf(stderr, "memory exhausted\n");
+		perror(NULL);
 		exit(EXIT_FAILURE);
 	}
 

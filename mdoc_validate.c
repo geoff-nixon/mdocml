@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.51 2009/10/26 04:09:46 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.52 2009/10/31 06:10:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -664,6 +664,8 @@ pre_bl(PRE_ARGS)
 	case (MDOC_Column):
 		/* FALLTHROUGH */
 	case (MDOC_Diag):
+		/* FALLTHROUGH */
+	case (MDOC_Ohang):
 		/* FALLTHROUGH */
 	case (MDOC_Inset):
 		/* FALLTHROUGH */

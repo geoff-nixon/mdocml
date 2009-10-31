@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.21 2009/10/27 08:26:12 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.22 2009/10/30 05:58:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -17,7 +17,6 @@
 #include <sys/utsname.h>
 
 #include <assert.h>
-#include <errno.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -149,7 +148,6 @@ post_TH(struct man *m)
 	n = n->next;
 	assert(n);
 
-	errno = 0;
 	lval = strtol(n->string, &ep, 10);
 	if (n->string[0] != '\0' && *ep == '\0')
 		m->meta.msec = (int)lval;

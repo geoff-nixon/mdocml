@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.42 2009/10/28 08:00:18 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.43 2009/10/30 18:53:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1115,7 +1115,7 @@ mdoc_bl_pre(MDOC_ARGS)
 
 	ord = malloc(sizeof(struct ord));
 	if (NULL == ord) {
-		fprintf(stderr, "memory exhausted\n");
+		perror(NULL);
 		exit(EXIT_FAILURE);
 	}
 	ord->cookie = n;

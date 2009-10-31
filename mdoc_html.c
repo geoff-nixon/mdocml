@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.43 2009/10/30 18:53:08 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.44 2009/10/31 06:10:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -810,7 +810,7 @@ mdoc_xx_pre(MDOC_ARGS)
 		pp = "BSDI BSD/OS";
 		break;
 	case (MDOC_Dx):
-		pp = "DragonFlyBSD";
+		pp = "DragonFly";
 		break;
 	case (MDOC_Fx):
 		pp = "FreeBSD";

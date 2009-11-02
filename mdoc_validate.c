@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.52 2009/10/31 06:10:58 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.53 2009/10/31 08:34:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -194,7 +194,7 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, posts_xr },			/* Xr */ 
 	{ NULL, posts_text },			/* %A */
 	{ NULL, posts_text },			/* %B */ /* FIXME: can be used outside Rs/Re. */
-	{ NULL, posts_text },			/* %D */
+	{ NULL, posts_text },			/* %D */ /* FIXME: check date with mandoc_a2time(). */
 	{ NULL, posts_text },			/* %I */
 	{ NULL, posts_text },			/* %J */
 	{ NULL, posts_text },			/* %N */
@@ -807,6 +807,8 @@ pre_cd(PRE_ARGS)
 static int
 pre_dt(PRE_ARGS)
 {
+
+	/* FIXME: make sure is capitalised. */
 
 	if (0 == mdoc->meta.date || mdoc->meta.os)
 		if ( ! mdoc_nwarn(mdoc, n, EPROLOOO))

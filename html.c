@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.78 2009/11/01 15:34:15 kristaps Exp $ */
+/*	$Id: html.c,v 1.79 2009/11/01 15:34:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -322,7 +322,8 @@ print_encode(struct html *h, const char *p)
 		sz = strcspn(p, "\\<>&");
 
 		fwrite(p, 1, sz, stdout);
-		p += (int)sz;
+		p += /* LINTED */
+			sz;
 
 		if ('\\' == *p) {
 			print_escape(h, &p);

@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.22 2009/10/30 05:58:37 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.23 2009/10/31 06:10:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -65,11 +65,6 @@ const	struct actions man_actions[MAN_MAX] = {
 	{ NULL }, /* UC */
 	{ NULL }, /* PD */
 };
-
-static	time_t	  man_atotime(const char *);
-#ifdef __linux__
-extern	char	 *strptime(const char *, const char *, struct tm *);
-#endif
 
 
 int
@@ -156,13 +151,18 @@ post_TH(struct man *m)
 
 	/* TITLE MSEC ->DATE<- SOURCE VOL */
 
-	if (NULL == (n = n->next))
+	n = n->next;
+	if (n) {
+		m->meta.date = mandoc_a2time
+			(MTIME_ISO_8601, n->string);
+
+		if (0 == m->meta.date) {
+			if ( ! man_nwarn(m, n, WDATE))
+				return(0);
+			m->meta.date = time(NULL);
+		}
+	} else
 		m->meta.date = time(NULL);
-	else if (0 == (m->meta.date = man_atotime(n->string))) {
-		if ( ! man_nwarn(m, n, WDATE))
-			return(0);
-		m->meta.date = time(NULL);
-	}
 
 	/* TITLE MSEC DATE ->SOURCE<- VOL */
 
@@ -194,25 +194,4 @@ post_TH(struct man *m)
 
 	man_node_freelist(n);
 	return(1);
-}
-
-
-static time_t
-man_atotime(const char *p)
-{
-	struct tm	 tm;
-	char		*pp;
-
-	memset(&tm, 0, sizeof(struct tm));
-
-	if ((pp = strptime(p, "%b %d %Y", &tm)) && 0 == *pp)
-		return(mktime(&tm));
-	if ((pp = strptime(p, "%d %b %Y", &tm)) && 0 == *pp)
-		return(mktime(&tm));
-	if ((pp = strptime(p, "%b %d, %Y", &tm)) && 0 == *pp)
-		return(mktime(&tm));
-	if ((pp = strptime(p, "%b %Y", &tm)) && 0 == *pp)
-		return(mktime(&tm));
-
-	return(0);
 }

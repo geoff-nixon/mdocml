@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.44 2009/10/27 08:26:12 kristaps Exp $ */
+/*	$Id: man.c,v 1.45 2009/10/30 05:58:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -454,8 +454,8 @@ man_pmacro(struct man *m, int ln, char *buf)
 
 	fl = m->flags;
 
-	if (0 == buf[1])
-		goto out;
+	if ('\0' == buf[1])
+		return(1);
 
 	i = 1;
 
@@ -484,7 +484,7 @@ man_pmacro(struct man *m, int ln, char *buf)
 		return(man_perr(m, ln, i, WNPRINT));
 	}
 
-	mac[j] = 0;
+	mac[j] = '\0';
 
 	if (j == 4 || j < 1) {
 		if ( ! (MAN_IGN_MACRO & m->pflags)) {

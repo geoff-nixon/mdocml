@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.54 2009/10/31 06:17:19 kristaps Exp $ */
+/*	$Id: main.c,v 1.55 2009/11/02 08:08:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -33,7 +33,9 @@
 /* FIXME: Intel's compiler?  LLVM?  pcc?  */
 
 #if !defined(__GNUC__) || (__GNUC__ < 2)
-# define __attribute__(x)
+# if !defined(lint)
+#  define __attribute__(x)
+# endif
 #endif /* !defined(__GNUC__) || (__GNUC__ < 2) */
 
 #ifdef __linux__

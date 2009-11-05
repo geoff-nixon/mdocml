@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.120 2009/10/31 06:10:58 kristaps Exp $ */
+/*	$Id: term.c,v 1.121 2009/11/05 07:21:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -15,6 +15,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 #include <assert.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -373,7 +374,7 @@ do_reserved(struct termp *p, const char *word, size_t len)
 static void
 do_escaped(struct termp *p, const char **word)
 {
-	int		 j, type;
+	int		 j, type, sv;
 	const char	*wp;
 
 	wp = *word;
@@ -428,16 +429,29 @@ do_escaped(struct termp *p, const char **word)
 		}
 
 		switch (*wp) {
+		case ('3'):
+			/* FALLTHROUGH */
 		case ('B'):
-			p->bold++;
+			p->metamask = p->metafont;
+			p->metafont |= METAF_BOLD;
 			break;
+		case ('2'):
+			/* FALLTHROUGH */
 		case ('I'):
-			p->under++;
+			p->metamask = p->metafont;
+			p->metafont |= METAF_UNDER;
 			break;
 		case ('P'):
+			sv = p->metamask;
+			p->metamask = p->metafont;
+			p->metafont = sv;
+			break;
+		case ('1'):
 			/* FALLTHROUGH */
 		case ('R'):
-			p->bold = p->under = 0;
+			p->metamask = p->metafont;
+			p->metafont &= ~METAF_UNDER;
+			p->metafont &= ~METAF_BOLD;
 			break;
 		default:
 			break;
@@ -563,12 +577,12 @@ static void
 encode(struct termp *p, char c)
 {
 	
-	if (' ' != c) {
-		if (p->under) {
+	if (isgraph((u_char)c)) {
+		if (p->under || METAF_UNDER & p->metafont) {
 			buffer(p, '_');
 			buffer(p, 8);
 		}
-		if (p->bold) {
+		if (p->bold || METAF_BOLD & p->metafont) {
 			buffer(p, c);
 			buffer(p, 8);
 		}

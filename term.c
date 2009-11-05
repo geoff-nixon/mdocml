@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.119 2009/10/30 18:53:09 kristaps Exp $ */
+/*	$Id: term.c,v 1.120 2009/10/31 06:10:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -229,7 +229,12 @@ term_flushln(struct termp *p)
 		for ( ; i < (int)p->col; i++) {
 			if (' ' == p->buf[i])
 				break;
-			putchar(p->buf[i]);
+
+			/* The unit sep. is a non-breaking space. */
+			if (31 == p->buf[i])
+				putchar(' ');
+			else
+				putchar(p->buf[i]);
 		}
 		vis += vsz;
 	}

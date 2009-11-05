@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.79 2009/11/01 15:34:44 kristaps Exp $ */
+/*	$Id: html.c,v 1.80 2009/11/02 06:22:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -270,21 +270,19 @@ print_escape(struct html *h, const char **p)
 			return;
 		}
 
-		switch (*wp) {
-		case ('B'):
-			/* TODO */
-			break;
-		case ('I'):
-			/* TODO */
-			break;
-		case ('P'):
-			/* FALLTHROUGH */
-		case ('R'):
-			/* TODO */
-			break;
-		default:
-			break;
-		}
+		/* 
+		 * These aren't supported, as they're symmetry-breaking
+		 * constructs that don't play well with hierarchical
+		 * mark-up.  Consider:
+		 *
+		 * \fBHello.
+		 * .PP
+		 * World.
+		 *
+		 * The style started before "Hello" wouldn't be able to
+		 * propogate into the next `PP' because we'd exit the
+		 * current paragraph's scope.
+		 */
 
 		*p = wp;
 		return;

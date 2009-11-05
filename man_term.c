@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.46 2009/10/27 08:49:44 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.47 2009/10/30 18:53:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -352,12 +352,12 @@ pre_RI(DECL_ARGS)
 	int		 i;
 
 	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
-		if ( ! (i % 2))
+		if (i % 2)
 			p->under++;
 		if (i > 0)
 			p->flags |= TERMP_NOSPACE;
 		print_man_node(p, mt, nn, m);
-		if ( ! (i % 2))
+		if (i % 2)
 			p->under--;
 	}
 	return(0);

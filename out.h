@@ -1,4 +1,4 @@
-/*	$Id: out.h,v 1.5 2009/10/18 19:02:11 kristaps Exp $ */
+/*	$Id: out.h,v 1.6 2009/10/22 18:55:33 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -35,6 +35,17 @@ enum	roffscale {
 	SCALE_MAX
 };
 
+enum	roffdeco {
+	DECO_NONE,
+	DECO_SPECIAL,
+	DECO_RESERVED,
+	DECO_BOLD,
+	DECO_ITALIC,
+	DECO_ROMAN,
+	DECO_PREVIOUS,
+	DECO_MAX
+};
+
 struct	roffsu {
 	enum roffscale	  unit;
 	double		  scale;
@@ -54,6 +65,7 @@ struct	roffsu {
 
 int		  a2roffsu(const char *, 
 			struct roffsu *, enum roffscale);
+int		  a2roffdeco(enum roffdeco *, const char **, size_t *);
 void		  time2a(time_t, char *, size_t);
 
 __END_DECLS

@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.7 2009/10/22 18:59:00 kristaps Exp $ */
+/*	$Id: out.c,v 1.8 2009/11/07 08:26:45 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -176,7 +176,6 @@ a2roffdeco(enum roffdeco *d,
 	const char	*wp;
 
 	*d = DECO_NONE;
-
 	wp = *word;
 	type = 1;
 
@@ -223,7 +222,7 @@ a2roffdeco(enum roffdeco *d,
 			*d = DECO_RESERVED;
 			*sz = 1;
 			*word = wp;
-			return(3);
+			return(2);
 		}
 		break;
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.99 2009/10/30 18:53:09 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.100 2009/10/31 06:50:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -348,6 +348,9 @@ static void
 print_foot(DECL_ARGS)
 {
 	char		buf[DATESIZ], os[BUFSIZ];
+
+	/* Disable meta-fonts. */
+	p->metafont = 0;
 
 	/* 
 	 * Output the footer in new-groff style, that is, three columns

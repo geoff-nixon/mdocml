@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.48 2009/11/05 08:37:12 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.49 2009/11/05 08:39:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -897,6 +897,8 @@ static void
 print_man_foot(struct termp *p, const struct man_meta *meta)
 {
 	char		buf[DATESIZ];
+
+	p->metafont = 0;
 
 	time2a(meta->date, buf, DATESIZ);
 

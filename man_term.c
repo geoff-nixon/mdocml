@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.49 2009/11/05 08:39:36 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.50 2009/11/10 11:45:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -876,9 +876,13 @@ print_man_node(DECL_ARGS)
 	if (c && n->child)
 		print_man_body(p, mt, n->child, m);
 
-	if (MAN_TEXT != n->type)
+	if (MAN_TEXT != n->type) {
 		if (termacts[n->tok].post)
 			(*termacts[n->tok].post)(p, mt, n, m);
+
+		/* Reset metafont upon exit from macro. */
+		p->metafont = 0;
+	}
 }
 
 

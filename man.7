@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.47 2009/11/05 08:40:16 kristaps Exp $
+.\"	$Id: man.7,v 1.48 2009/11/09 05:11:46 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -137,6 +137,13 @@ for arbitrary-digit numerals:
 .D1 \es[+10]much bigger\es[-10]
 .D1 \es+(10much bigger\es-(10
 .D1 \es+'100'much much bigger\es-'100'
+.Pp
+Both
+.Sq \es
+and
+.Sq \ef
+attributes are forgotten when exiting a subsequent (or current) macro
+invocation.
 .
 .
 .Ss Whitespace

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.125 2009/11/12 05:50:12 kristaps Exp $ */
+/*	$Id: term.c,v 1.126 2009/11/12 05:58:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -487,7 +487,10 @@ term_word(struct termp *p, const char *word)
 		default:
 			break;
 		}
+
 		word += sz;
+		if (DECO_NOSPACE == deco && '\0' == *word)
+			p->flags |= TERMP_NOSPACE;
 	}
 
 	if (sv[0] && 0 == sv[1])

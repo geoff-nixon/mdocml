@@ -1,4 +1,4 @@
-/*	$Id: out.h,v 1.7 2009/11/07 08:26:45 kristaps Exp $ */
+/*	$Id: out.h,v 1.8 2009/11/08 09:23:35 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -44,6 +44,7 @@ enum	roffdeco {
 	DECO_ROMAN,
 	DECO_PREVIOUS,
 	DECO_SIZE,
+	DECO_NOSPACE,
 	DECO_MAX
 };
 

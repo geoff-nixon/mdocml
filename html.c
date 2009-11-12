@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.82 2009/11/09 05:11:46 kristaps Exp $ */
+/*	$Id: html.c,v 1.83 2009/11/10 16:32:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -262,6 +262,9 @@ print_encode(struct html *h, const char *p)
 		}
 
 		p += len - 1;
+
+		if (DECO_NOSPACE == deco && '\0' == *(p + 1))
+			h->flags |= HTML_NOSPACE;
 	}
 }
 

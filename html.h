@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.17 2009/10/28 08:00:18 kristaps Exp $ */
+/*	$Id: html.h,v 1.18 2009/11/10 16:20:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -112,10 +112,7 @@ struct	html {
 	char		 *style;
 	char		  buf[BUFSIZ];
 	size_t		  buflen;
-	int		  metafont;
-#define	METAF_BOLD	 (1 << 0)
-#define	METAF_UNDER	 (1 << 1)
-	int		  metamask;
+	struct tag	 *metaf;
 };
 
 struct	roffsu;

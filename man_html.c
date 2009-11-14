@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.17 2009/10/30 18:53:08 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.18 2009/11/10 12:03:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -188,7 +188,7 @@ print_man_node(MAN_ARGS)
 		break;
 	case (MAN_TEXT):
 		print_text(h, n->string);
-		break;
+		return;
 	default:
 		if (mans[n->tok].pre)
 			child = (*mans[n->tok].pre)(m, n, h);
@@ -211,9 +211,6 @@ print_man_node(MAN_ARGS)
 	default:
 		if (mans[n->tok].post)
 			(*mans[n->tok].post)(m, n, h);
-
-		/* Reset metafont upon exit from macro. */
-		h->metafont = 0;
 		break;
 	}
 }

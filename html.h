@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.18 2009/11/10 16:20:22 kristaps Exp $ */
+/*	$Id: html.h,v 1.19 2009/11/14 11:58:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -101,7 +101,6 @@ struct	htmlpair {
 struct	html {
 	int		  flags;
 #define	HTML_NOSPACE	 (1 << 0)
-#define	HTML_NEWLINE	 (1 << 1)
 #define	HTML_IGNDELIM	 (1 << 2)
 	struct tagq	  tags;
 	struct ordq	  ords;

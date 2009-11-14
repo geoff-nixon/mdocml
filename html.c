@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.84 2009/11/12 08:21:05 kristaps Exp $ */
+/*	$Id: html.c,v 1.85 2009/11/14 11:58:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -372,11 +372,11 @@ print_text(struct html *h, const char *p)
 	if ( ! (h->flags & HTML_NOSPACE))
 		putchar(' ');
 
-	h->flags &= ~HTML_NOSPACE;
 	h->flags &= ~HTML_NEWLINE;
 
-	if (p)
-		print_encode(h, p);
+	assert(p);
+	if ( ! print_encode(h, p))
+		h->flags &= ~HTML_NOSPACE;
 
 	if (*p && 0 == *(p + 1))
 		switch (*p) {

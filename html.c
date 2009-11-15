@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.87 2009/11/14 12:04:59 kristaps Exp $ */
+/*	$Id: html.c,v 1.88 2009/11/14 19:23:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -247,7 +247,7 @@ print_metaf(struct html *h, enum roffdeco deco)
 		assert(h->metaf == h->tags.head);
 		print_tagq(h, h->metaf);
 	}
-	
+
 	PAIR_CLASS_INIT(&tag, class);
 	h->metaf = print_otag(h, TAG_SPAN, 1, &tag);
 }
@@ -432,6 +432,8 @@ print_tagq(struct html *h, const struct tag *until)
 	struct tag	*tag;
 
 	while ((tag = h->tags.head) != NULL) {
+		if (tag == h->metaf)
+			h->metaf = NULL;
 		print_ctag(h, tag->tag);
 		h->tags.head = tag->next;
 		free(tag);
@@ -449,6 +451,8 @@ print_stagq(struct html *h, const struct tag *suntil)
 	while ((tag = h->tags.head) != NULL) {
 		if (suntil && tag == suntil)
 			return;
+		if (tag == h->metaf)
+			h->metaf = NULL;
 		print_ctag(h, tag->tag);
 		h->tags.head = tag->next;
 		free(tag);

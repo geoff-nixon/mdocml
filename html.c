@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.89 2009/11/15 06:45:31 kristaps Exp $ */
+/*	$Id: html.c,v 1.90 2009/11/16 06:07:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -237,7 +237,7 @@ print_ofont(struct html *h, enum htmlfont font)
 
 	/* FIXME: DECO_ROMAN should just close out preexisting. */
 
-	if (h->metaf)
+	if (h->metaf && h->tags.head == h->metaf)
 		print_tagq(h, h->metaf);
 
 	PAIR_CLASS_INIT(&tag, htmlfonts[font]);

@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.21 2009/11/15 06:45:31 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.22 2009/11/15 06:53:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -395,31 +395,27 @@ man_alt_pre(MAN_ARGS)
 	const struct man_node	*nn;
 	struct tag		*t;
 	int			 i;
-	struct htmlpair		 tagi, tagb, tagr, *tagp;
-
-	PAIR_CLASS_INIT(&tagi, "italic");
-	PAIR_CLASS_INIT(&tagb, "bold");
-	PAIR_CLASS_INIT(&tagr, "roman");
+	enum htmlfont		 fp;
 
 	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
 		switch (n->tok) {
 		case (MAN_BI):
-			tagp = i % 2 ? &tagi : &tagb;
+			fp = i % 2 ? HTMLFONT_ITALIC : HTMLFONT_BOLD;
 			break;
 		case (MAN_IB):
-			tagp = i % 2 ? &tagb : &tagi;
+			fp = i % 2 ? HTMLFONT_BOLD : HTMLFONT_ITALIC;
 			break;
 		case (MAN_RI):
-			tagp = i % 2 ? &tagi : &tagr;
+			fp = i % 2 ? HTMLFONT_ITALIC : HTMLFONT_NONE;
 			break;
 		case (MAN_IR):
-			tagp = i % 2 ? &tagr : &tagi;
+			fp = i % 2 ? HTMLFONT_NONE : HTMLFONT_ITALIC;
 			break;
 		case (MAN_BR):
-			tagp = i % 2 ? &tagr : &tagb;
+			fp = i % 2 ? HTMLFONT_NONE : HTMLFONT_BOLD;
 			break;
 		case (MAN_RB):
-			tagp = i % 2 ? &tagb : &tagr;
+			fp = i % 2 ? HTMLFONT_BOLD : HTMLFONT_NONE;
 			break;
 		default:
 			abort();
@@ -429,7 +425,7 @@ man_alt_pre(MAN_ARGS)
 		if (i)
 			h->flags |= HTML_NOSPACE;
 
-		t = print_otag(h, TAG_SPAN, 1, tagp);
+		t = print_ofont(h, fp);
 		print_man_node(m, nn, h);
 		print_tagq(h, t);
 	}
@@ -444,6 +440,7 @@ man_SB_pre(MAN_ARGS)
 {
 	struct htmlpair	 tag;
 	
+	/* FIXME: print_ofont(). */
 	PAIR_CLASS_INIT(&tag, "small bold");
 	print_otag(h, TAG_SPAN, 1, &tag);
 	return(1);
@@ -657,10 +654,8 @@ man_HP_pre(MAN_ARGS)
 static int
 man_B_pre(MAN_ARGS)
 {
-	struct htmlpair	 tag;
 
-	PAIR_CLASS_INIT(&tag, "bold");
-	print_otag(h, TAG_SPAN, 1, &tag);
+	print_ofont(h, HTMLFONT_BOLD);
 	return(1);
 }
 
@@ -669,10 +664,8 @@ man_B_pre(MAN_ARGS)
 static int
 man_I_pre(MAN_ARGS)
 {
-	struct htmlpair	 tag;
-
-	PAIR_CLASS_INIT(&tag, "italic");
-	print_otag(h, TAG_SPAN, 1, &tag);
+	
+	print_ofont(h, HTMLFONT_ITALIC);
 	return(1);
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.46 2009/10/31 08:34:12 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.47 2009/11/14 12:04:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -424,7 +424,7 @@ print_mdoc_node(MDOC_ARGS)
 		break;
 	case (MDOC_TEXT):
 		print_text(h, n->string);
-		break;
+		return;
 	default:
 		if (mdocs[n->tok].pre)
 			child = (*mdocs[n->tok].pre)(m, n, h);
@@ -440,8 +440,6 @@ print_mdoc_node(MDOC_ARGS)
 	switch (n->type) {
 	case (MDOC_ROOT):
 		mdoc_root_post(m, n, h);
-		break;
-	case (MDOC_TEXT):
 		break;
 	default:
 		if (mdocs[n->tok].post)

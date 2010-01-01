@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.102 2009/11/12 05:50:12 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.103 2010/01/01 13:17:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1019,16 +1019,6 @@ termp_fl_pre(DECL_ARGS)
 {
 
 	term_fontpush(p, TERMFONT_BOLD);
-
-	/* A zero-length child shouldn't get a dash. */
-
-	if (n->child) {
-		assert(MDOC_TEXT == n->child->type);
-		assert(n->child->string);
-		if ('\0' == *n->child->string)
-			return(0);
-	}
-
 	term_word(p, "\\-");
 
 	/* A blank `Fl' should incur a subsequent space. */

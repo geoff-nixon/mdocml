@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.45 2009/10/30 05:58:37 kristaps Exp $ */
+/*	$Id: man.c,v 1.46 2009/11/02 08:40:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,6 +14,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <sys/types.h>
 
 #include <assert.h>
@@ -71,10 +75,6 @@ static	void		 man_alloc1(struct man *);
 static	int		 pstring(struct man *, int, int, 
 				const char *, size_t);
 static	int		 macrowarn(struct man *, int, const char *);
-
-#ifdef __linux__
-extern	size_t	  	  strlcpy(char *, const char *, size_t);
-#endif
 
 
 const struct man_node *

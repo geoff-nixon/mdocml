@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.38 2009/10/26 17:05:44 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.39 2010/01/01 13:17:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,6 +14,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <assert.h>
 #include <ctype.h>
 #include <stdlib.h>

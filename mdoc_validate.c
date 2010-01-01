@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.54 2009/11/02 06:22:46 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.55 2010/01/01 15:14:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,6 +14,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <sys/types.h>
 
 #include <assert.h>
@@ -61,10 +65,6 @@ static	int	 warn_count(struct mdoc *, const char *,
 			int, const char *, int);
 static	int	 err_count(struct mdoc *, const char *, 
 			int, const char *, int);
-
-#ifdef __linux__
-extern	size_t	 strlcat(char *, const char *, size_t);
-#endif
 
 static	int	 berr_ge1(POST_ARGS);
 static	int	 bwarn_ge1(POST_ARGS);

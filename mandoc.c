@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.7 2009/11/02 06:22:45 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.8 2009/11/05 10:16:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,8 +14,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#if defined(__linux__) || defined(__MINT__)
-# define _GNU_SOURCE /* strptime() */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
 #endif
 
 #include <sys/types.h>

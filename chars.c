@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.12 2009/11/01 07:44:32 kristaps Exp $ */
+/*	$Id: chars.c,v 1.13 2009/11/05 07:21:01 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,6 +14,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>

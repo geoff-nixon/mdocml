@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.31 2009/10/28 19:21:59 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.32 2009/10/30 05:58:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -14,6 +14,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <sys/types.h>
 
 #include <assert.h>

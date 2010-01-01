@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.49 2009/12/02 10:16:55 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.50 2010/01/01 13:17:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -659,25 +659,13 @@ mdoc_fl_pre(MDOC_ARGS)
 {
 	struct htmlpair	 tag;
 
-	/* `Cm' has no leading hyphen. */
-
-	if (MDOC_Cm == n->tok) {
-		PAIR_CLASS_INIT(&tag, "flag");
-		print_otag(h, TAG_SPAN, 1, &tag);
-		return(1);
-	}
-
-	/* A zero-length child shouldn't get a dash. */
-
-	if (n->child) {
-		assert(MDOC_TEXT == n->child->type);
-		assert(n->child->string);
-		if ('\0' == *n->child->string)
-			return(0);
-	}
-
 	PAIR_CLASS_INIT(&tag, "flag");
 	print_otag(h, TAG_SPAN, 1, &tag);
+
+	/* `Cm' has no leading hyphen. */
+
+	if (MDOC_Cm == n->tok)
+		return(1);
 
 	print_text(h, "\\-");
 

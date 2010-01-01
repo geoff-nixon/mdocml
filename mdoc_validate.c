@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.53 2009/10/31 08:34:12 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.54 2009/11/02 06:22:46 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1086,11 +1086,18 @@ post_bl(POST_ARGS)
 	if (NULL == mdoc->last->child)
 		return(1);
 
+	/*
+	 * We only allow certain children of `Bl'.  This is usually on
+	 * `It', but apparently `Sm' occurs here and there, so we let
+	 * that one through, too.
+	 */
+
 	/* LINTED */
 	for (n = mdoc->last->child; n; n = n->next) {
-		if (MDOC_BLOCK == n->type) 
-			if (MDOC_It == n->tok)
-				continue;
+		if (MDOC_BLOCK == n->type && MDOC_It == n->tok)
+			continue;
+		if (MDOC_Sm == n->tok)
+			continue;
 		return(mdoc_nerr(mdoc, n, EBADCHILD));
 	}
 

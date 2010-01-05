@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.8 2009/11/05 10:16:01 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.9 2010/01/01 17:14:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -43,8 +43,6 @@ mandoc_special(const char *p)
 		return(0);
 
 	switch (*p) {
-	case ('\\'):
-		/* FALLTHROUGH */
 	case ('\''):
 		/* FALLTHROUGH */
 	case ('`'):

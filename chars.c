@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.14 2010/01/01 17:14:26 kristaps Exp $ */
+/*	$Id: chars.c,v 1.15 2010/01/05 19:51:10 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -165,18 +165,6 @@ find(struct tbl *tab, const char *p, size_t sz, size_t *rsz, int type)
 
 	if (NULL == (pp = htab[hash]))
 		return(NULL);
-
-	if (NULL == pp->next) {
-		if ( ! match(pp, p, sz, type)) 
-			return(NULL);
-
-		if (CHARS_HTML == tab->type) {
-			*rsz = pp->htmlsz;
-			return(pp->html);
-		}
-		*rsz = pp->asciisz;
-		return(pp->ascii);
-	}
 
 	for (prev = NULL; pp; pp = pp->next) {
 		if ( ! match(pp, p, sz, type)) {

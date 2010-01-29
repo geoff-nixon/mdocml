@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.24 2009/11/16 08:46:59 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.25 2010/01/01 17:14:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -114,7 +114,7 @@ html_man(void *arg, const struct man *m)
 
 	h = (struct html *)arg;
 
-	print_gen_doctype(h);
+	print_gen_decls(h);
 
 	t = print_otag(h, TAG_HTML, 0, NULL);
 	print_man(man_meta(m), man_node(m), h);

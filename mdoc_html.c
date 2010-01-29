@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.51 2010/01/01 13:35:30 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.52 2010/01/01 17:14:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -266,7 +266,7 @@ html_mdoc(void *arg, const struct mdoc *m)
 
 	h = (struct html *)arg;
 
-	print_gen_doctype(h);
+	print_gen_decls(h);
 	t = print_otag(h, TAG_HTML, 0, NULL);
 	print_mdoc(mdoc_meta(m), mdoc_node(m), h);
 	print_tagq(h, t);

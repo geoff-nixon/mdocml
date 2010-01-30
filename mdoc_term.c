@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.108 2010/01/01 18:01:40 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.109 2010/01/01 18:33:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -132,6 +132,7 @@ static	int	  termp_sq_pre(DECL_ARGS);
 static	int	  termp_ss_pre(DECL_ARGS);
 static	int	  termp_under_pre(DECL_ARGS);
 static	int	  termp_ud_pre(DECL_ARGS);
+static	int	  termp_vt_pre(DECL_ARGS);
 static	int	  termp_xr_pre(DECL_ARGS);
 static	int	  termp_xx_pre(DECL_ARGS);
 
@@ -175,7 +176,7 @@ static	const struct termact termacts[MDOC_MAX] = {
 	{ termp_rv_pre, NULL }, /* Rv */
 	{ NULL, NULL }, /* St */ 
 	{ termp_under_pre, NULL }, /* Va */
-	{ termp_under_pre, termp_vt_post }, /* Vt */
+	{ termp_vt_pre, termp_vt_post }, /* Vt */
 	{ termp_xr_pre, NULL }, /* Xr */
 	{ NULL, termp____post }, /* %A */
 	{ termp_under_pre, termp____post }, /* %B */
@@ -1290,12 +1291,27 @@ termp_xr_pre(DECL_ARGS)
 }
 
 
+static int
+termp_vt_pre(DECL_ARGS)
+{
+
+	if (MDOC_ELEM == n->type)
+		return(termp_under_pre(p, pair, m, n));
+	else if (MDOC_HEAD == n->type)
+		return(0);
+	else if (MDOC_BLOCK == n->type)
+		return(1);
+
+	return(termp_under_pre(p, pair, m, n));
+}
+
+
 /* ARGSUSED */
 static void
 termp_vt_post(DECL_ARGS)
 {
 
-	if (n->sec != SEC_SYNOPSIS)
+	if (MDOC_BLOCK != n->type)
 		return;
 	if (n->next && MDOC_Vt == n->next->tok)
 		term_newln(p);

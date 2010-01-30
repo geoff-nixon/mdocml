@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.93 2010/01/29 14:39:37 kristaps Exp $ */
+/*	$Id: html.c,v 1.94 2010/01/30 06:55:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -312,7 +312,6 @@ print_encode(struct html *h, const char *p, int norecurse)
 		} else if ('>' == *p) {
 			printf("&gt;");
 			continue;
-		/* FIXME: already escaped? */
 		} else if ('&' == *p) {
 			printf("&amp;");
 			continue;

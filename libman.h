@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.23 2009/10/30 05:58:36 kristaps Exp $ */
+/*	$Id: libman.h,v 1.24 2010/03/22 05:59:32 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -45,6 +45,7 @@ enum	merr {
 	WMSEC,
 	WDATE,
 	WLNSCOPE,
+	WLNSCOPE2,
 	WTSPACE,
 	WTQUOTE,
 	WNODATA,
@@ -94,6 +95,7 @@ int		  man_body_alloc(struct man *, int, int, int);
 int		  man_elem_alloc(struct man *, int, int, int);
 void		  man_node_free(struct man_node *);
 void		  man_node_freelist(struct man_node *);
+void		  man_node_unlink(struct man *, struct man_node *);
 void		  man_hash_init(void);
 int		  man_hash_find(const char *);
 int		  man_macroend(struct man *);

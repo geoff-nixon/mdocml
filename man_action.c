@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.24 2009/11/02 06:22:45 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.25 2010/01/01 17:14:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -178,24 +178,8 @@ post_TH(struct man *m)
 	if (n && (n = n->next))
 		m->meta.vol = mandoc_strdup(n->string);
 
-	/* 
-	 * The end document shouldn't have the prologue macros as part
-	 * of the syntax tree (they encompass only meta-data).  
-	 */
-
-	if (m->last->parent->child == m->last) {
-		m->last->parent->child = NULL;
-		n = m->last;
-		m->last = m->last->parent;
-		m->next = MAN_NEXT_CHILD;
-	} else {
-		assert(m->last->prev);
-		m->last->prev->next = NULL;
-		n = m->last;
-		m->last = m->last->prev;
-		m->next = MAN_NEXT_SIBLING;
-	}
-
+	n = m->last;
+	man_node_unlink(m, n);
 	man_node_freelist(n);
 	return(1);
 }

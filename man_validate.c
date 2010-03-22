@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.27 2009/11/02 06:22:45 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.28 2010/01/01 17:14:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -59,7 +59,7 @@ static	v_check	  posts_sp[] = { check_le1, NULL };
 static	v_check	  pres_bline[] = { check_bline, NULL };
 
 static	const struct man_valid man_valids[MAN_MAX] = {
-	{ pres_bline, posts_eq0 }, /* br */
+	{ NULL, posts_eq0 }, /* br */
 	{ pres_bline, posts_ge2_le5 }, /* TH */ /* FIXME: make sure capitalised. */
 	{ pres_bline, posts_sec }, /* SH */
 	{ pres_bline, posts_sec }, /* SS */
@@ -80,9 +80,9 @@ static	const struct man_valid man_valids[MAN_MAX] = {
 	{ NULL, NULL }, /* I */
 	{ NULL, NULL }, /* IR */
 	{ NULL, NULL }, /* RI */
-	{ pres_bline, posts_eq0 }, /* na */
+	{ NULL, posts_eq0 }, /* na */
 	{ NULL, NULL }, /* i */
-	{ pres_bline, posts_sp }, /* sp */
+	{ NULL, posts_sp }, /* sp */
 	{ pres_bline, posts_eq0 }, /* nf */
 	{ pres_bline, posts_eq0 }, /* fi */
 	{ NULL, NULL }, /* r */

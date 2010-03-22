@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.25 2010/01/01 17:14:28 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.26 2010/01/29 14:39:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -574,8 +574,12 @@ man_IP_pre(MAN_ARGS)
 			width = a2width(nn, &su);
 		}
 
-	if (MAN_TP == n->tok && NULL != nn)
+	if (MAN_TP == n->tok && NULL != nn) {
+		while (nn && MAN_TEXT != nn->type)
+			nn = nn->next;
+		/* FIXME: sync with pre_TP(), man_term.c */
 		width = a2width(nn, &su);
+	}
 
 	if (MAN_BLOCK == n->type) {
 		bufcat_su(h, "margin-left", &su);
@@ -604,6 +608,8 @@ man_IP_pre(MAN_ARGS)
 
 	if ( ! width)
 		return(1);
+
+	/* FIXME: sync with pre_TP(), man_term.c */
 
 	if (MAN_IP == n->tok)
 		for (nn = n->child; nn->next; nn = nn->next)

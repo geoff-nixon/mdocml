@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.22 2009/10/24 05:45:04 kristaps Exp $ */
+/*	$Id: man.h,v 1.23 2009/10/30 05:58:37 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -51,7 +51,10 @@
 #define	MAN_DT		 29
 #define	MAN_UC		 30
 #define	MAN_PD		 31
-#define	MAN_MAX	 	 32
+#define	MAN_Sp		 32
+#define	MAN_Vb		 33
+#define	MAN_Ve		 34
+#define	MAN_MAX	 	 35
 
 enum	man_type {
 	MAN_TEXT,

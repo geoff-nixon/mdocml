@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.30 2010/01/01 17:14:28 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.31 2010/03/22 05:59:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -72,6 +72,9 @@ const	struct man_macro __man_macros[MAN_MAX] = {
 	{ in_line_eoln, 0 }, /* DT */
 	{ in_line_eoln, 0 }, /* UC */
 	{ in_line_eoln, 0 }, /* PD */
+	{ in_line_eoln, MAN_NSCOPED }, /* Sp */
+	{ in_line_eoln, 0 }, /* Vb */
+	{ in_line_eoln, 0 }, /* Ve */
 };
 
 const	struct man_macro * const man_macros = __man_macros;
@@ -315,6 +318,10 @@ in_line_eoln(MACRO_PROT_ARGS)
 			return(0);
 		if (0 == w)
 			break;
+
+		/* XXX ignore Vb arguments for now */
+		if (MAN_Vb == tok)
+			continue;
 
 		if ( ! man_word_alloc(m, line, la, p))
 			return(0);

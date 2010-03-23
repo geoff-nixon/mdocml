@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.109 2010/01/01 18:33:51 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.110 2010/01/30 08:42:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -269,6 +269,9 @@ terminal_mdoc(void *arg, const struct mdoc *mdoc)
 	struct termp		*p;
 
 	p = (struct termp *)arg;
+
+	p->overstep = 0;
+	p->maxrmargin = 78;
 
 	if (NULL == p->symtab)
 		switch (p->enc) {

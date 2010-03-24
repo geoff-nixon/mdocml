@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.28 2010/03/22 14:03:03 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.29 2010/03/23 11:30:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -105,7 +105,13 @@ static	const struct htmlman mans[MAN_MAX] = {
 	{ man_ign_pre, NULL }, /* PD */
 	{ man_br_pre, NULL }, /* Sp */
 	{ man_ign_pre, NULL }, /* Vb */
-	{ NULL, NULL }, /* Vi */
+	{ NULL, NULL }, /* Ve */
+	{ man_ign_pre, NULL }, /* de */
+	{ man_ign_pre, NULL }, /* dei */
+	{ man_ign_pre, NULL }, /* am */
+	{ man_ign_pre, NULL }, /* ami */
+	{ man_ign_pre, NULL }, /* ig */
+	{ NULL, NULL }, /* . */
 };
 
 

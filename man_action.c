@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.26 2010/03/22 14:03:03 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.27 2010/03/23 11:30:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -17,8 +17,6 @@
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
-
-#include <sys/utsname.h>
 
 #include <assert.h>
 #include <stdlib.h>

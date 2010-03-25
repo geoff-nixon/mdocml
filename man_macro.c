@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.35 2010/03/24 20:10:53 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.36 2010/03/25 07:28:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -222,6 +222,7 @@ rew_scope(enum man_type type, struct man *m, enum mant tok)
  * any of these as the parent node, so it needs special handling.
  * Beyond this, it's the same as blk_close().
  */
+/* ARGSUSED */
 int
 blk_dotted(MACRO_PROT_ARGS)
 {
@@ -255,6 +256,7 @@ blk_dotted(MACRO_PROT_ARGS)
 /*
  * Close out a generic explicit macro.
  */
+/* ARGSUSED */
 int
 blk_close(MACRO_PROT_ARGS)
 {

@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.51 2010/03/22 14:03:03 kristaps Exp $
+.\"	$Id: mandoc.1,v 1.52 2010/03/22 20:43:00 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -543,3 +543,10 @@ will confuse
 and
 .Fl T Ns Ar xhtml
 and cause them to forget the formatting of the prior next-line scope.
+.Pp
+The
+.Sq i
+macro in
+.Fl m Ns Ar an
+should italicise all subsequent text if a line argument is not provided.
+This behaviour is not implemented.

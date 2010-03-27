@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.28 2010/03/24 03:46:02 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.29 2010/03/24 20:10:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -124,7 +124,6 @@ post_de(struct man *m)
 	 */
 	if (MAN_BLOCK == m->last->type)
 		man_node_delete(m, m->last);
-
 	return(1);
 }
 

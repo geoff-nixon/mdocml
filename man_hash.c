@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.16 2010/01/01 17:14:28 kristaps Exp $ */
+/*	$Id: man_hash.c,v 1.17 2010/03/23 21:50:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -60,7 +60,8 @@ man_hash_init(void)
 
 	memset(table, UCHAR_MAX, sizeof(table));
 
-	assert(/* CONSTCOND */ MAN_MAX < UCHAR_MAX);
+	assert(/* LINTED */ 
+			MAN_MAX < UCHAR_MAX);
 
 	for (i = 0; i < MAN_MAX; i++) {
 		x = man_macronames[i][0];

@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.38 2010/03/27 10:04:56 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.39 2010/03/27 10:13:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -28,7 +28,7 @@
 enum	rew {
 	REW_REWIND,
 	REW_NOHALT,
-	REW_HALT,
+	REW_HALT
 };
 
 static	int		 blk_close(MACRO_PROT_ARGS);

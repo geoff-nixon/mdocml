@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.55 2010/03/27 10:04:56 kristaps Exp $ */
+/*	$Id: man.c,v 1.56 2010/03/27 10:21:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -496,7 +496,7 @@ man_pmacro(struct man *m, int ln, char *buf)
 	 * Skip whitespace between the control character and initial
 	 * text.  "Whitespace" is both spaces and tabs.
 	 */
-	if (' ' == buf[i]) {
+	if (' ' == buf[i] || '\t' == buf[i]) {
 		i++;
 		while (buf[i] && (' ' == buf[i] || '\t' == buf[i]))
 			i++;

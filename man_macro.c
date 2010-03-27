@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.37 2010/03/25 07:39:25 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.38 2010/03/27 10:04:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -559,10 +559,6 @@ in_line_eoln(MACRO_PROT_ARGS)
 int
 man_macroend(struct man *m)
 {
-	struct man_node	*n;
-
-	n = MAN_VALID & m->last->flags ?
-		m->last->parent : m->last;
 
 	return(man_unscope(m, m->first, WEXITSCOPE));
 }

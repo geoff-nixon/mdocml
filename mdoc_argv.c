@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.32 2009/10/30 05:58:38 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.33 2010/01/01 17:14:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -401,9 +401,9 @@ args(struct mdoc *m, int line, int *pos,
 	 * follows the pattern of [[::delim::][ ]+]+.
 	 */
 
-	if ((fl & ARGS_DELIM) && mdoc_iscdelim(buf[*pos])) {
+	if ((fl & ARGS_DELIM) && mdoc_iscdelim(buf[*pos]) > 1) {
 		for (i = *pos; buf[i]; ) {
-			if ( ! mdoc_iscdelim(buf[i]))
+			if ( mdoc_iscdelim(buf[i]) < 2)
 				break;
 			i++;
 			if (0 == buf[i] || ' ' != buf[i])

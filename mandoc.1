@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.54 2010/03/27 10:10:10 kristaps Exp $
+.\"	$Id: mandoc.1,v 1.55 2010/03/27 14:44:19 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
 .\"
@@ -220,7 +220,8 @@ and
 .Fl f Ns Ar no-ign-chars .
 .
 .It Fl f Ns Ar ign-errors
-Don't halt when encountering parse errors.  Useful with
+When parsing multiple files, don't halt when one errors out.  Useful
+with
 .Fl T Ns Ar lint
 over a large set of manuals passed on the command line.
 .El

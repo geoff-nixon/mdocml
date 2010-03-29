@@ -4,7 +4,7 @@
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 		<META NAME="resource-type" CONTENT="document">
 		<LINK REL="stylesheet" HREF="index.css" TYPE="text/css" MEDIA="all">
-		<TITLE>mdocml.bsd.lv</TITLE>
+		<TITLE>mdocml | mdoc macro compiler</TITLE>
 	</HEAD>
 	<BODY>
 	<TABLE CLASS="frame" SUMMARY="[frame]">
@@ -219,6 +219,16 @@
 						<COL CLASS="date">
 						<TBODY>
 							<TR>
+								<TD VALIGN="top"><SPAN CLASS="date">29-03-2010</SPAN></TD>
+								<TD VALIGN="top">
+								Version <SPAN CLASS="rev">1.9.20</SPAN>: more efforts to get roff instructions
+								in -man documents under control.  This seems to be working for all manuals I can
+								find.  Please let me know if you find ill-formatted -man manuals.  Note that
+								roff instructions embedded in line-scoped, next-line macros (e.g. <Q>B</Q>) are
+								not supported.
+								</TD>
+							</TR>
+							<TR>
 								<TD VALIGN="top"><SPAN CLASS="date">27-03-2010</SPAN></TD>
 								<TD VALIGN="top">
 								Version <SPAN CLASS="rev">1.9.18</SPAN>: many fixes (largely pertaining to
@@ -265,7 +275,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/03/25 07:38:06 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/03/27 10:04:56 $
 					</DIV>
 				</TD>
 			</TR>

@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.28 2010/03/27 10:04:56 kristaps Exp $ */
+/*	$Id: libman.h,v 1.29 2010/03/29 04:52:14 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -37,6 +37,7 @@ struct	man {
 #define	MAN_LITERAL	(1 << 4) /* Literal input. */
 #define	MAN_BPLINE	(1 << 5)
 	enum man_next	 next;
+	enum man_next	 svnext;
 	struct man_node	*last;
 	struct man_node	*first;
 	struct man_meta	 meta;

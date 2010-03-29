@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.42 2010/02/17 19:28:11 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.43 2010/03/29 19:28:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -904,19 +904,16 @@ blk_full(MACRO_PROT_ARGS)
 
 	if ( ! mdoc_block_alloc(m, line, ppos, tok, arg))
 		return(0);
+	if ( ! mdoc_head_alloc(m, line, ppos, tok))
+		return(0);
 
-	if (0 == buf[*pos]) {
-		if ( ! mdoc_head_alloc(m, line, ppos, tok))
-			return(0);
+	if ('\0' == buf[*pos]) {
 		if ( ! rew_sub(MDOC_HEAD, m, tok, line, ppos))
 			return(0);
 		if ( ! mdoc_body_alloc(m, line, ppos, tok))
 			return(0);
 		return(1);
 	}
-
-	if ( ! mdoc_head_alloc(m, line, ppos, tok))
-		return(0);
 
 	/* Immediately close out head and enter body, if applicable. */
 
@@ -1051,10 +1048,11 @@ blk_part_imp(MACRO_PROT_ARGS)
 
 	/* Clean-ups to leave in a consistent state. */
 
-	if (NULL == body && ! mdoc_body_alloc(m, line, ppos, tok))
-		return(0);
-
-	body = m->last;
+	if (NULL == body) {
+		if ( ! mdoc_body_alloc(m, line, ppos, tok))
+			return(0);
+		body = m->last;
+	}
 
 	/* 
 	 * If we can't rewind to our body, then our scope has already

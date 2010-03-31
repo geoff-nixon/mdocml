@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.49 2009/11/02 06:22:45 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.50 2010/01/01 17:14:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -647,7 +647,8 @@ static int
 post_bl_width(POST_ARGS)
 {
 	size_t		  width;
-	int		  i, tok;
+	int		  i;
+	enum mdoct	  tok;
 	char		  buf[NUMSIZ];
 	char		 *p;
 

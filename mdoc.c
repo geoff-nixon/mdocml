@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.116 2010/01/07 10:24:43 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.117 2010/03/31 07:13:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -436,6 +436,7 @@ node_alloc(struct mdoc *m, int line, int pos,
 	p->line = line;
 	p->pos = pos;
 	p->tok = tok;
+	p->type = type;
 
 	return(p);
 }

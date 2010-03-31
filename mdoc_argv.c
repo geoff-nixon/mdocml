@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.34 2010/03/29 19:28:04 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.35 2010/03/31 07:13:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -336,7 +336,6 @@ mdoc_args(struct mdoc *m, int line, int *pos,
 	int		  fl, c, i;
 	struct mdoc_node *n;
 
-	assert(tok && tok < MDOC_MAX);
 	fl = mdoc_argflags[tok];
 
 	if (MDOC_It != tok)

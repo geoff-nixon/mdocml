@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.57 2010/01/30 08:42:21 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.58 2010/02/17 19:28:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -44,7 +44,7 @@ struct	valids {
 	v_post	*post;
 };
 
-static	int	 check_parent(PRE_ARGS, int, enum mdoc_type);
+static	int	 check_parent(PRE_ARGS, enum mdoct, enum mdoc_type);
 static	int	 check_msec(PRE_ARGS, ...);
 static	int	 check_sec(PRE_ARGS, ...);
 static	int	 check_stdarg(PRE_ARGS);
@@ -547,7 +547,7 @@ check_text(struct mdoc *mdoc, int line, int pos, const char *p)
 
 
 static int
-check_parent(PRE_ARGS, int tok, enum mdoc_type t)
+check_parent(PRE_ARGS, enum mdoct tok, enum mdoc_type t)
 {
 
 	assert(n->parent);

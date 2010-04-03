@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.14 2010/01/01 17:14:30 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.15 2010/03/29 19:28:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -61,18 +61,20 @@ static	const struct mdoc_secname secnames[SECNAME_MAX] = {
 };
 
 
+/* 
+ * FIXME: this is repeated in print_text() (html.c) and term_word()
+ * (term.c).
+ */
 int
 mdoc_iscdelim(char p)
 {
 
 	switch (p) {
-	case('|'):
+	case('|'): /* FIXME! */
 		/* FALLTHROUGH */
 	case('('):
 		/* FALLTHROUGH */
 	case('['):
-		/* FALLTHROUGH */
-	case('{'):
 		return(1);
 	case('.'):
 		/* FALLTHROUGH */
@@ -89,8 +91,6 @@ mdoc_iscdelim(char p)
 	case(')'):
 		/* FALLTHROUGH */
 	case(']'):
-		/* FALLTHROUGH */
-	case('}'):
 		return(2);
 	default:
 		break;

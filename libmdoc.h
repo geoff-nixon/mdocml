@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.30 2009/10/30 05:58:37 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.31 2010/03/31 07:13:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -167,6 +167,7 @@ int		  mdoc_argv(struct mdoc *, int, enum mdoct,
 #define	ARGV_ARG	(1)
 #define	ARGV_WORD	(2)
 void		  mdoc_argv_free(struct mdoc_arg *);
+void		  mdoc_argn_free(struct mdoc_arg *, int);
 int		  mdoc_args(struct mdoc *, int,
 			int *, char *, enum mdoct, char **);
 int		  mdoc_zargs(struct mdoc *, int, 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.54 2010/01/30 08:42:20 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.55 2010/03/29 19:28:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -755,6 +755,9 @@ mdoc_xr_pre(MDOC_ARGS)
 {
 	struct htmlpair	 	 tag[2];
 	const struct mdoc_node	*nn;
+
+	if (NULL == n->child)
+		return(0);
 
 	PAIR_CLASS_INIT(&tag[0], "link-man");
 

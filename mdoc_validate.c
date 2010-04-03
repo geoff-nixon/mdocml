@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.60 2010/04/03 13:02:35 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.61 2010/04/03 14:02:10 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -627,6 +627,8 @@ pre_bl(PRE_ARGS)
 			 * over.  If we don't do this, mdoc_action will
 			 * become confused when it scans over multiple
 			 * types whilst setting its bitmasks.
+			 *
+			 * FIXME: this should occur in mdoc_action.c.
 			 */
 			if (type >= 0) {
 				if ( ! mdoc_nwarn(mdoc, n, EMULTILIST))

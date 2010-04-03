@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.58 2010/02/17 19:28:11 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.59 2010/03/31 07:13:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1308,8 +1308,9 @@ post_sh_head(POST_ARGS)
 	 * non-CUSTOM has a conventional order to be followed.
 	 */
 
-	if (SEC_NAME != sec && SEC_NONE == mdoc->lastnamed)
-		return(mdoc_nerr(mdoc, mdoc->last, ESECNAME));
+	if (SEC_NAME != sec && SEC_NONE == mdoc->lastnamed && 
+			! mdoc_nwarn(mdoc, mdoc->last, ESECNAME))
+		return(0);
 	if (SEC_CUSTOM == sec)
 		return(1);
 	if (sec == mdoc->lastnamed)

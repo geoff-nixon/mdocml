@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.50 2010/01/01 17:14:29 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.51 2010/03/31 07:13:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -420,7 +420,11 @@ post_sh(POST_ARGS)
 	if ( ! concat(m, buf, n->child, BUFSIZ))
 		return(0);
 	sec = mdoc_atosec(buf);
-	if (SEC_CUSTOM != sec)
+	/*
+	 * The first section should always make us move into a non-new
+	 * state.
+	 */
+	if (SEC_NONE == m->lastnamed || SEC_CUSTOM != sec)
 		m->lastnamed = sec;
 
 	/* Some sections only live in certain manual sections. */

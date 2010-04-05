@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.118 2010/03/31 07:42:04 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.119 2010/04/03 13:02:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -26,6 +26,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "libmdoc.h"
 #include "libmandoc.h"
@@ -351,8 +352,22 @@ mdoc_macro(struct mdoc *m, enum mdoct tok,
 	 * we're in the body, deny prologue calls.
 	 */
 	if (MDOC_PROLOGUE & mdoc_macros[tok].flags && 
-			MDOC_PBODY & m->flags)
-		return(mdoc_perr(m, ln, pp, EPROLBODY));
+			MDOC_PBODY & m->flags) {
+		if ( ! mdoc_pwarn(m, ln, pp, EBODYPROL))
+			return(0);
+		/*
+		 * FIXME: do this in mdoc_action.c.
+		 */
+		if (NULL == m->meta.title)
+			m->meta.title = mandoc_strdup("unknown");
+		if (NULL == m->meta.vol)
+			m->meta.vol = mandoc_strdup("local");
+		if (NULL == m->meta.os)
+			m->meta.os = mandoc_strdup("local");
+		if (0 == m->meta.date)
+			m->meta.date = time(NULL);
+		m->flags |= MDOC_PBODY;
+	}
 	if ( ! (MDOC_PROLOGUE & mdoc_macros[tok].flags) && 
 			! (MDOC_PBODY & m->flags))
 		return(mdoc_perr(m, ln, pp, EBODYPROL));

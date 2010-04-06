@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.56 2010/04/03 14:25:12 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.57 2010/04/05 08:51:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -666,9 +666,9 @@ mdoc_fl_pre(MDOC_ARGS)
 
 	print_text(h, "\\-");
 
-	/* A blank `Fl' should incur a subsequent space. */
-
 	if (n->child)
+		h->flags |= HTML_NOSPACE;
+	else if (n->next && n->next->line == n->line)
 		h->flags |= HTML_NOSPACE;
 
 	return(1);

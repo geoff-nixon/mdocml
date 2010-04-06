@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.63 2010/04/03 14:25:12 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.64 2010/04/06 11:28:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1095,22 +1095,23 @@ post_bl_head(POST_ARGS)
 {
 	int			i;
 	const struct mdoc_node *n;
+	const struct mdoc_argv *a;
 
 	n = mdoc->last->parent;
 	assert(n->args);
 
-	for (i = 0; i < (int)n->args->argc; i++)
-		if (n->args->argv[i].arg == MDOC_Column)
-			break;
+	for (i = 0; i < (int)n->args->argc; i++) {
+		a = &n->args->argv[i];
+		if (a->arg == MDOC_Column) {
+			if (a->sz && mdoc->last->nchild)
+				return(mdoc_nerr(mdoc, n, ECOLMIS));
+			return(1);
+		}
+	}
 
-	if (i == (int)n->args->argc && n->nchild)
-		return(warn_count(mdoc, "==", 0, 
-				"line arguments", n->nchild));
-
-	if (n->args->argv[i].sz && mdoc->last->child)
-		return(mdoc_nerr(mdoc, n, ECOLMIS));
-
-	return(1);
+	if (0 == (i = mdoc->last->nchild))
+		return(1);
+	return(warn_count(mdoc, "==", 0, "line arguments", i));
 }
 
 

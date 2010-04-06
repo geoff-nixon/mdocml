@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.113 2010/04/03 14:25:12 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.114 2010/04/06 07:27:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -99,6 +99,7 @@ static	int	  termp_ap_pre(DECL_ARGS);
 static	int	  termp_aq_pre(DECL_ARGS);
 static	int	  termp_bd_pre(DECL_ARGS);
 static	int	  termp_bf_pre(DECL_ARGS);
+static	int	  termp_bl_pre(DECL_ARGS);
 static	int	  termp_bold_pre(DECL_ARGS);
 static	int	  termp_bq_pre(DECL_ARGS);
 static	int	  termp_brq_pre(DECL_ARGS);
@@ -148,7 +149,7 @@ static	const struct termact termacts[MDOC_MAX] = {
 	{ termp_d1_pre, termp_d1_post }, /* Dl */
 	{ termp_bd_pre, termp_bd_post }, /* Bd */
 	{ NULL, NULL }, /* Ed */
-	{ NULL, termp_bl_post }, /* Bl */
+	{ termp_bl_pre, termp_bl_post }, /* Bl */
 	{ NULL, NULL }, /* El */
 	{ termp_it_pre, termp_it_post }, /* It */
 	{ NULL, NULL }, /* Ad */ 
@@ -1246,6 +1247,15 @@ termp_nd_pre(DECL_ARGS)
 	term_word(p, "\\(em");
 #endif
 	return(1);
+}
+
+
+/* ARGSUSED */
+static int
+termp_bl_pre(DECL_ARGS)
+{
+
+	return(MDOC_HEAD != n->type);
 }
 
 

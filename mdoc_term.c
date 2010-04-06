@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.114 2010/04/06 07:27:42 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.115 2010/04/06 11:28:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1604,8 +1604,8 @@ termp_bd_pre(DECL_ARGS)
 	if (MDOC_BLOCK == n->type) {
 		print_bvspace(p, n, n);
 		return(1);
-	} else if (MDOC_BODY != n->type)
-		return(1);
+	} else if (MDOC_HEAD == n->type)
+		return(0);
 
 	nn = n->parent;
 

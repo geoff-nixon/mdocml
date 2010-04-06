@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.50 2010/04/05 08:38:37 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.51 2010/04/05 08:45:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -139,7 +139,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED }, /* Nx */
 	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED }, /* Ox */
 	{ blk_exp_close, MDOC_EXPLICIT | MDOC_CALLABLE | MDOC_PARSED }, /* Pc */
-	{ in_line_argn, MDOC_PARSED | MDOC_IGNDELIM }, /* Pf */
+	{ in_line_argn, MDOC_CALLABLE | MDOC_PARSED | MDOC_IGNDELIM }, /* Pf */
 	{ blk_part_exp, MDOC_CALLABLE | MDOC_PARSED | MDOC_EXPLICIT }, /* Po */
 	{ blk_part_imp, MDOC_CALLABLE | MDOC_PARSED }, /* Pq */
 	{ blk_exp_close, MDOC_EXPLICIT | MDOC_CALLABLE | MDOC_PARSED }, /* Qc */

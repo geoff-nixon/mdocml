@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.62 2010/04/03 14:12:48 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.63 2010/04/03 14:25:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1103,8 +1103,9 @@ post_bl_head(POST_ARGS)
 		if (n->args->argv[i].arg == MDOC_Column)
 			break;
 
-	if (i == (int)n->args->argc)
-		return(1);
+	if (i == (int)n->args->argc && n->nchild)
+		return(warn_count(mdoc, "==", 0, 
+				"line arguments", n->nchild));
 
 	if (n->args->argv[i].sz && mdoc->last->child)
 		return(mdoc_nerr(mdoc, n, ECOLMIS));

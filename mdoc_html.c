@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.57 2010/04/05 08:51:56 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.58 2010/04/06 07:27:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1116,6 +1116,8 @@ mdoc_bl_pre(MDOC_ARGS)
 {
 	struct ord	*ord;
 
+	if (MDOC_HEAD == n->type)
+		return(0);
 	if (MDOC_BLOCK != n->type)
 		return(1);
 	if (MDOC_Enum != a2list(n))

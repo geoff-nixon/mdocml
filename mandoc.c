@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.9 2010/01/01 17:14:28 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.10 2010/01/05 19:51:10 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -73,10 +73,6 @@ mandoc_special(const char *p)
 		return(2);
 	case ('e'):
 		return(2);
-	case ('f'):
-		if ('\0' == *++p || ! isgraph((u_char)*p))
-			return(0);
-		return(3);
 	case ('s'):
 		if ('\0' == *++p)
 			return(2);
@@ -152,6 +148,10 @@ mandoc_special(const char *p)
 		}
 
 		return(c);
+	case ('f'):
+		/* FALLTHROUGH */
+	case ('F'):
+		/* FALLTHROUGH */
 	case ('*'):
 		if (0 == *++p || ! isgraph((u_char)*p))
 			return(0);

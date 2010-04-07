@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.58 2010/04/06 07:27:42 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.59 2010/04/06 11:28:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1388,6 +1388,7 @@ mdoc_bd_pre(MDOC_ARGS)
 		}
 
 	/* FIXME: -centered, etc. formatting. */
+	/* FIXME: does not respect -offset ??? */
 
 	if (MDOC_BLOCK == n->type) {
 		bufcat_su(h, "margin-left", &su);

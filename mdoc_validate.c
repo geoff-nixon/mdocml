@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.66 2010/04/06 16:27:53 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.67 2010/04/06 17:01:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -806,7 +806,7 @@ static int
 pre_cd(PRE_ARGS)
 {
 
-	return(check_msec(mdoc, n, 4, 0));
+	return(check_msec(mdoc, n, 4, 9, 0));
 }
 
 

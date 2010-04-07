@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.13 2010/04/07 07:49:38 kristaps Exp $ */
+/*	$Id: out.c,v 1.14 2010/04/07 11:25:38 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -197,13 +197,12 @@ int
 a2roffdeco(enum roffdeco *d,
 		const char **word, size_t *sz)
 {
-	int		 j, offs, term, lim;
+	int		 j, term, lim;
 	char		 set;
 	const char	*wp, *sp;
 
 	*d = DECO_NONE;
 	wp = *word;
-	offs = 0;
 
 	switch ((set = *wp)) {
 	case ('\0'):

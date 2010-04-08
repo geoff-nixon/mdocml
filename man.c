@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.58 2010/03/29 04:52:14 kristaps Exp $ */
+/*	$Id: man.c,v 1.59 2010/03/29 10:10:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -53,6 +53,7 @@ const	char *const __man_merrnames[WERRMAX] = {
 	"invalid nesting of roff declarations", /* WROFFNEST */
 	"scope in roff instructions broken", /* WROFFSCOPE */
 	"document title should be uppercase", /* WTITLECASE */
+	"deprecated comment style", /* WBADCOMMENT */
 };
 
 const	char *const __man_macronames[MAN_MAX] = {		 
@@ -377,6 +378,11 @@ man_ptext(struct man *m, int line, char *buf)
 {
 	int		 i, j;
 	char		 sv;
+
+	/* Ignore bogus comments. */
+
+	if ('\\' == buf[0] && '.' == buf[1] && '\"' == buf[2])
+		return(man_pwarn(m, line, 0, WBADCOMMENT));
 
 	/* Literal free-form text whitespace is preserved. */
 

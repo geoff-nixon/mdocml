@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.29 2010/03/29 04:52:14 kristaps Exp $ */
+/*	$Id: libman.h,v 1.30 2010/03/29 10:10:35 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -66,6 +66,7 @@ enum	merr {
 	WROFFNEST,
 	WROFFSCOPE,
 	WTITLECASE,
+	WBADCOMMENT,
 	WERRMAX
 };
 

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.129 2010/03/23 12:42:22 kristaps Exp $ */
+/*	$Id: term.c,v 1.130 2010/04/03 12:46:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -526,10 +526,12 @@ term_word(struct termp *p, const char *word)
 			p->flags |= TERMP_NOSPACE;
 	}
 
+	/* 
+	 * Note that we don't process the pipe: the parser sees it as
+	 * punctuation, but we don't in terms of typography.
+	 */
 	if (sv[0] && 0 == sv[1])
 		switch (sv[0]) {
-		case('|'):
-			/* FALLTHROUGH */
 		case('('):
 			/* FALLTHROUGH */
 		case('['):

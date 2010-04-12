@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.97 2010/04/03 12:46:35 kristaps Exp $ */
+/*	$Id: html.c,v 1.98 2010/04/08 07:05:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -54,7 +54,7 @@ static	const struct htmldata htmltags[TAG_MAX] = {
 	{"h1",		0}, /* TAG_H1 */
 	{"h2",		0}, /* TAG_H2 */
 	{"span",	0}, /* TAG_SPAN */
-	{"link",	HTML_CLRLINE | HTML_NOSTACK}, /* TAG_LINK */
+	{"link",	HTML_CLRLINE | HTML_NOSTACK | HTML_AUTOCLOSE}, /* TAG_LINK */
 	{"br",		HTML_CLRLINE | HTML_NOSTACK | HTML_AUTOCLOSE}, /* TAG_BR */
 	{"a",		0}, /* TAG_A */
 	{"table",	HTML_CLRLINE}, /* TAG_TABLE */

@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.59 2010/01/29 14:39:38 kristaps Exp $ */
+/*	$Id: main.c,v 1.60 2010/03/22 20:43:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -228,9 +228,9 @@ static void
 usage(void)
 {
 
-	(void)fprintf(stderr, "usage: %s [-V] [-foption...] "
+	(void)fprintf(stderr, "usage: %s [-V] [-foption] "
 			"[-mformat] [-Ooption] [-Toutput] "
-			"[-Werr...]\n", progname);
+			"[-Werr] [file...]\n", progname);
 	exit(EXIT_FAILURE);
 }
 
@@ -380,6 +380,12 @@ fdesc(struct buf *blk, struct buf *ln, struct curparse *curp)
 
 				comment = 1;
 				pos -= 2;
+				for (; pos > 0; --pos) {
+					if (ln->buf[pos] != ' ')
+						break;
+					if (ln->buf[pos - 1] == '\\')
+						break;
+				}
 				continue;
 			} 
 

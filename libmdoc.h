@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.36 2010/05/07 05:48:29 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.37 2010/05/07 05:54:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -117,7 +117,8 @@ enum	margserr {
 	ARGS_WORD,
 	ARGS_PUNCT,
 	ARGS_QWORD,
-	ARGS_PHRASE
+	ARGS_PHRASE,
+	ARGS_PPHRASE
 };
 
 enum	margverr {

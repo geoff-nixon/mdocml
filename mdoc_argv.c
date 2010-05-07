@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.38 2010/05/07 05:34:56 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.39 2010/05/07 05:48:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -217,7 +217,7 @@ static	int mdoc_argflags[MDOC_MAX] = {
  * [value0...], which may either have a single mandatory value, at least
  * one mandatory value, an optional single value, or no value.
  */
-int
+enum margverr
 mdoc_argv(struct mdoc *m, int line, enum mdoct tok,
 		struct mdoc_arg **v, int *pos, char *buf)
 {

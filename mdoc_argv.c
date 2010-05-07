@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.36 2010/03/31 07:42:04 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.37 2010/04/03 14:02:10 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -45,7 +45,7 @@
 #define	MULTI_STEP	 5
 
 static	int		 argv_a2arg(enum mdoct, const char *);
-static	int		 args(struct mdoc *, int, int *, 
+static	enum margerr	 args(struct mdoc *, int, int *, 
 				char *, int, char **);
 static	int		 argv(struct mdoc *, int, 
 				struct mdoc_argv *, int *, char *);
@@ -325,7 +325,7 @@ mdoc_argn_free(struct mdoc_arg *p, int iarg)
 }
 
 
-int
+enum margerr
 mdoc_zargs(struct mdoc *m, int line, int *pos, 
 		char *buf, int flags, char **v)
 {
@@ -334,7 +334,7 @@ mdoc_zargs(struct mdoc *m, int line, int *pos,
 }
 
 
-int
+enum margerr
 mdoc_args(struct mdoc *m, int line, int *pos, 
 		char *buf, enum mdoct tok, char **v)
 {
@@ -372,7 +372,7 @@ mdoc_args(struct mdoc *m, int line, int *pos,
 }
 
 
-static int
+static enum margerr
 args(struct mdoc *m, int line, int *pos, 
 		char *buf, int fl, char **v)
 {

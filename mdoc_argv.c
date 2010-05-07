@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.39 2010/05/07 05:48:29 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.40 2010/05/07 05:54:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -378,6 +378,7 @@ args(struct mdoc *m, int line, int *pos,
 {
 	int		  i;
 	char		 *p, *pp;
+	enum margserr	  rc;
 
 	/*
 	 * Parse out the terms (like `val' in `.Xx -arg val' or simply
@@ -440,6 +441,7 @@ args(struct mdoc *m, int line, int *pos,
 	 */
 
 	if (ARGS_TABSEP & fl) {
+		rc = ARGS_PHRASE;
 		/* Scan ahead to tab (can't be escaped). */
 		p = strchr(*v, '\t');
 
@@ -488,7 +490,7 @@ args(struct mdoc *m, int line, int *pos,
 		for (pp = &buf[*pos]; ' ' == *pp; pp++, (*pos)++)
 			/* Skip ahead. */ ;
 
-		return(ARGS_PHRASE);
+		return(rc);
 	} 
 
 	/* 

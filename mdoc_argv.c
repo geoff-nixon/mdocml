@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.40 2010/05/07 05:54:09 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.41 2010/05/07 06:05:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -398,7 +398,7 @@ args(struct mdoc *m, int line, int *pos,
 	assert(*pos);
 	assert(' ' != buf[*pos]);
 
-	if (0 == buf[*pos])
+	if ('\0' == buf[*pos])
 		return(ARGS_EOLN);
 
 	/* 
@@ -441,7 +441,6 @@ args(struct mdoc *m, int line, int *pos,
 	 */
 
 	if (ARGS_TABSEP & fl) {
-		rc = ARGS_PHRASE;
 		/* Scan ahead to tab (can't be escaped). */
 		p = strchr(*v, '\t');
 
@@ -455,14 +454,19 @@ args(struct mdoc *m, int line, int *pos,
 				break;
 		}
 
+		/* By default, assume a phrase. */
+		rc = ARGS_PHRASE;
+
 		/* 
 		 * Adjust new-buffer position to be beyond delimiter
 		 * mark (e.g., Ta -> end + 2).
 		 */
 		if (p && pp) {
 			*pos += pp < p ? 2 : 1;
+			rc = pp < p ? ARGS_PHRASE : ARGS_PPHRASE;
 			p = pp < p ? pp : p;
 		} else if (p && ! pp) {
+			rc = ARGS_PPHRASE;
 			*pos += 1;
 		} else if (pp && ! p) {
 			p = pp;

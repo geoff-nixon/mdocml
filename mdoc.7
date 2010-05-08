@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.95 2010/05/07 15:49:36 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.96 2010/05/08 08:36:44 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 7 2010 $
+.Dd $Mdocdate: May 8 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -181,9 +181,10 @@ and
 .Sq \e*(Ba
 .Pq vertical bar .
 .Ss Whitespace
+Whitespace consists of the space character.  
 In free-form lines, whitespace is preserved within a line; un-escaped
 trailing spaces are stripped from input (unless in a literal context).
-Blank free-form lines, which may include spaces, are only permitted
+Blank free-form lines, which may include whitespace, are only permitted
 within literal contexts.
 .Pp
 In macro lines, whitespace delimits arguments and is discarded.  If

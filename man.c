@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.62 2010/05/08 07:30:19 kristaps Exp $ */
+/*	$Id: man.c,v 1.63 2010/05/08 08:36:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -404,8 +404,7 @@ man_ptext(struct man *m, int line, char *buf)
 	assert(i);
 
 	if (' ' == buf[i - 1] || '\t' == buf[i - 1]) {
-		assert(i > 1);
-		if ('\\' != buf[i - 2])
+		if (i > 1 && '\\' != buf[i - 2])
 			if ( ! man_pwarn(m, line, i - 1, WTSPACE))
 				return(0);
 
@@ -413,7 +412,6 @@ man_ptext(struct man *m, int line, char *buf)
 			/* Spin back to non-space. */ ;
 
 		/* Jump ahead of escaped whitespace. */
-		assert(i);
 		i += '\\' == buf[i] ? 2 : 1;
 
 		buf[i] = '\0';

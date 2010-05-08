@@ -216,6 +216,13 @@
 									sou<A CLASS="external" TITLE="Reveal this e-mail address"
 									HREF="http://www.google.com/recaptcha/mailhide/d?k=01prQrAZhhl2EbIwVcRfABsQ==&amp;c=KtTW4Yic9xk-8g40KzJoca4fR3MYXv28g8NC6OQV-T8=">...</a>@mdocml.bsd.lv
 								</TD>
+								<TD>announcement of new versions and general discussion</TD>
+							</TR>
+							<TR>
+								<TD>
+									sou<A CLASS="external" TITLE="Reveal this e-mail address"
+									HREF="http://www.google.com/recaptcha/mailhide/d?k=01prQrAZhhl2EbIwVcRfABsQ==&amp;c=KtTW4Yic9xk-8g40KzJoca4fR3MYXv28g8NC6OQV-T8=">...</a>@mdocml.bsd.lv
+								</TD>
 								<TD>mailing out commit messages</TD>
 							</TR>
 						</TBODY>
@@ -322,7 +329,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/08 09:23:04 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/08 22:26:39 $
 					</DIV>
 				</TD>
 			</TR>

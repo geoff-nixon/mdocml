@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.62 2010/04/13 05:26:49 kristaps Exp $
+.\"	$Id: man.7,v 1.63 2010/05/07 15:49:36 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: April 13 2010 $
+.Dd $Mdocdate: May 7 2010 $
 .Dt MAN 7
 .Os
 .Sh NAME
@@ -126,10 +126,13 @@ and
 .Sq \ef
 attributes are forgotten when entering or exiting a macro block.
 .Ss Whitespace
-Unless specifically escaped, consecutive blocks of whitespace are pruned
-from input.  These are later re-added, if applicable, by a front-end
-utility such as
-.Xr mandoc 1 .
+In free-form lines, whitespace is preserved within a line; un-escaped
+trailing spaces are stripped from input (unless in a literal context).
+Blank free-form lines, which may include spaces, are permitted and
+rendered as an empty line.
+.Pp
+In macro lines, whitespace delimits arguments and is discarded.  If
+arguments are quoted, whitespace within the quotes is retained.
 .Ss Dates
 The
 .Sx \&TH

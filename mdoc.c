@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.125 2010/05/08 07:30:19 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.126 2010/05/08 08:36:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -674,8 +674,7 @@ mdoc_ptext(struct mdoc *m, int line, char *buf)
 	assert(i);
 
 	if (' ' == buf[i - 1] || '\t' == buf[i - 1]) {
-		assert(i > 1);
-		if ('\\' != buf[i - 2])
+		if (i > 1 && '\\' != buf[i - 2])
 			if ( ! mdoc_pwarn(m, line, i - 1, ETAILWS))
 				return(0);
 
@@ -683,7 +682,6 @@ mdoc_ptext(struct mdoc *m, int line, char *buf)
 			/* Spin back to non-space. */ ;
 
 		/* Jump ahead of escaped whitespace. */
-		assert(i);
 		i += '\\' == buf[i] ? 2 : 1;
 
 		buf[i] = '\0';

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.68 2010/04/07 18:50:35 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.69 2010/04/07 19:35:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -747,7 +747,7 @@ pre_sh(PRE_ARGS)
 
 	if (MDOC_BLOCK != n->type)
 		return(1);
-	return(check_parent(mdoc, n, -1, MDOC_ROOT));
+	return(check_parent(mdoc, n, MDOC_MAX, MDOC_ROOT));
 }
 
 

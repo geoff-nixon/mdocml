@@ -219,7 +219,7 @@
 						<COL CLASS="date">
 						<TBODY>
 							<TR>
-								<TD VALIGN="top"><SPAN CLASS="date">XX-05-2010</SPAN></TD>
+								<TD VALIGN="top"><SPAN CLASS="date">XX-XX-2010</SPAN></TD>
 								<TD VALIGN="top">
 								Rolled back break-at-hyphen (broken).  <SPAN CLASS="flag">-DUGLY</SPAN> is now
 								the default (I don't like feature splits).  Free-form text is not de-chunked any
@@ -309,7 +309,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/08 07:30:19 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/08 09:22:11 $
 					</DIV>
 				</TD>
 			</TR>

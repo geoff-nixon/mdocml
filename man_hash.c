@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.17 2010/03/23 21:50:43 kristaps Exp $ */
+/*	$Id: man_hash.c,v 1.18 2010/03/27 10:14:32 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -63,7 +63,7 @@ man_hash_init(void)
 	assert(/* LINTED */ 
 			MAN_MAX < UCHAR_MAX);
 
-	for (i = 0; i < MAN_MAX; i++) {
+	for (i = 0; i < (int)MAN_MAX; i++) {
 		x = man_macronames[i][0];
 
 		assert(isalpha((u_char)x) || '.' == x);

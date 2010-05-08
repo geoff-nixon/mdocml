@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.15 2010/03/29 19:28:04 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.16 2010/04/03 12:46:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -127,7 +127,7 @@ mdoc_atosec(const char *p)
 
 /* FIXME: move this into an editable .in file. */
 size_t
-mdoc_macro2len(int macro)
+mdoc_macro2len(enum mdoct macro)
 {
 
 	switch (macro) {

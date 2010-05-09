@@ -204,7 +204,7 @@
 					</P>
 
 					<P>
-					You may also subscribe to several mailing lists (these require subscription):
+					You may also subscribe to several mailing lists (these require subscription, which is moderated):
 					</P>
 
 					<TABLE WIDTH="100%" SUMMARY="Mailing Lists">
@@ -336,7 +336,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/09 06:18:55 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/09 06:27:41 $
 					</DIV>
 				</TD>
 			</TR>

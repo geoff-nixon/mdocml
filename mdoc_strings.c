@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.16 2010/04/03 12:46:35 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.17 2010/05/08 07:30:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -70,7 +70,7 @@ mdoc_iscdelim(char p)
 {
 
 	switch (p) {
-	case('|'): /* FIXME! */
+	case('|'):
 		/* FALLTHROUGH */
 	case('('):
 		/* FALLTHROUGH */
@@ -104,11 +104,17 @@ int
 mdoc_isdelim(const char *p)
 {
 
-	if (0 == *p)
+	if ('\0' == p[0])
 		return(0);
-	if (0 != *(p + 1))
-		return(0);
-	return(mdoc_iscdelim(*p));
+	if ('\0' == p[1])
+		return(mdoc_iscdelim(p[0]));
+
+	/*
+	 * XXX; account for groff bubu where the \*(Ba reserved string
+	 * is treated in exactly the same way as the vertical bar.  This
+	 * is the only function that checks for this.
+	 */
+	return(0 == strcmp(p, "\\*(Ba"));
 }
 
 

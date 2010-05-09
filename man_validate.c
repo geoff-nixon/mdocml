@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.33 2010/03/29 10:10:35 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.34 2010/04/03 14:12:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -229,9 +229,7 @@ check_text(CHKARGS)
 		if ('\t' == *p || isprint((u_char)*p)) 
 			continue;
 
-		if (MAN_IGN_CHARS & m->pflags)
-			return(man_pwarn(m, n->line, pos, WNPRINT));
-		return(man_perr(m, n->line, pos, WNPRINT));
+		return(man_pwarn(m, n->line, pos, WNPRINT));
 	}
 
 	return(1);

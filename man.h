@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.26 2010/03/24 20:10:53 kristaps Exp $ */
+/*	$Id: man.h,v 1.27 2010/03/27 10:13:16 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -100,7 +100,6 @@ struct	man_node {
 };
 
 #define	MAN_IGN_MACRO	 (1 << 0)
-#define	MAN_IGN_CHARS	 (1 << 1)
 #define	MAN_IGN_ESCAPE	 (1 << 2)
 
 extern	const char *const *man_macronames;

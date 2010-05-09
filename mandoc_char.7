@@ -1,4 +1,4 @@
-.\"	$Id: mandoc_char.7,v 1.36 2010/04/13 05:26:49 kristaps Exp $
+.\"	$Id: mandoc_char.7,v 1.37 2010/05/09 15:08:16 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: April 13 2010 $
+.Dd $Mdocdate: May 9 2010 $
 .Dt MANDOC_CHAR 7
 .Os
 .Sh NAME
@@ -546,3 +546,14 @@ The
 .Nm
 manual page was written by
 .An Kristaps Dzonsons Aq kristaps@bsd.lv .
+.Sh CAVEATS
+The
+.Sq \e*(Ba
+escape mimics the behaviour of the
+.Sq \*(Ba
+character in
+.Xr mdoc 7 ;
+thus, if you wish to render a vertical bar with no side effects, use
+the
+.Sq \e(ba
+escape.

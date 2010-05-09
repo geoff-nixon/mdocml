@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.42 2010/05/07 15:49:36 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.43 2010/05/08 07:30:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -471,8 +471,10 @@ args(struct mdoc *m, int line, int *pos,
 		} else if (pp && ! p) {
 			p = pp;
 			*pos += 2;
-		} else
+		} else {
+			rc = ARGS_PEND;
 			p = strchr(*v, 0);
+		}
 
 		/* Whitespace check for eoln case... */
 		if (0 == *p && ' ' == *(p - 1) && ! (ARGS_NOWARN & fl))

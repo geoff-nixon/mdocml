@@ -73,6 +73,7 @@
 					<TBODY>
 						<TR>
 							<TD>Source archive</TD>
+
 							<TD>
 							<A HREF="/snapshots/mdocml.tar.gz">/snapshots/mdocml.tar.gz</A> 
 							(<A HREF="/snapshots/mdocml.md5">md5</A>)
@@ -336,7 +337,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/09 06:27:41 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/09 06:39:38 $
 					</DIV>
 				</TD>
 			</TR>

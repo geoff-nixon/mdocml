@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.58 2010/03/23 12:42:22 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.59 2010/03/24 20:10:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -260,7 +260,6 @@ static int
 pre_fi(DECL_ARGS)
 {
 
-	p->rmargin = p->maxrmargin = 65;
 	mt->fl &= ~MANT_LITERAL;
 	return(1);
 }
@@ -271,10 +270,7 @@ static int
 pre_nf(DECL_ARGS)
 {
 
-	p->rmargin = p->maxrmargin = 78;
-	term_newln(p);
 	mt->fl |= MANT_LITERAL;
-
 	return(MAN_Vb != n->tok);
 }
 
@@ -820,8 +816,10 @@ print_man_node(DECL_ARGS)
 		/* FIXME: this means that macro lines are munged!  */
 
 		if (MANT_LITERAL & mt->fl) {
+			p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
 			p->flags |= TERMP_NOSPACE;
 			term_flushln(p);
+			p->rmargin = p->maxrmargin = 65;
 		}
 		break;
 	default:

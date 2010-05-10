@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.118 2010/05/09 16:05:13 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.119 2010/05/09 16:38:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1659,7 +1659,7 @@ termp_bd_pre(DECL_ARGS)
 
 	rm = p->rmargin;
 	rmax = p->maxrmargin;
-	p->rmargin = p->maxrmargin = 100000; /* FIXME */
+	p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
 
 	for (nn = n->child; nn; nn = nn->next) {
 		p->flags |= TERMP_NOSPACE;
@@ -1695,7 +1695,7 @@ termp_bd_post(DECL_ARGS)
 	rmax = p->maxrmargin;
 
 	if (MDOC_Literal == type || MDOC_Unfilled == type)
-		p->rmargin = p->maxrmargin = 100000; /* FIXME */
+		p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
 
 	p->flags |= TERMP_NOSPACE;
 	term_flushln(p);

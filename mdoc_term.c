@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.119 2010/05/09 16:38:38 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.120 2010/05/10 08:05:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -336,6 +336,9 @@ print_mdoc_node(DECL_ARGS)
 	if (MDOC_TEXT != n->type)
 		if (termacts[n->tok].post)
 			(*termacts[n->tok].post)(p, &npair, m, n);
+
+	if (MDOC_EOS & n->flags)
+		p->flags |= TERMP_SENTENCE;
 
 	p->offset = offset;
 	p->rmargin = rmargin;

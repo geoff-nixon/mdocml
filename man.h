@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.27 2010/03/27 10:13:16 kristaps Exp $ */
+/*	$Id: man.h,v 1.28 2010/05/09 21:19:42 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -93,6 +93,7 @@ struct	man_node {
 	int		 flags;
 #define	MAN_VALID	(1 << 0)
 #define	MAN_ACTED	(1 << 1)
+#define	MAN_EOS		(1 << 2)
 	enum man_type	 type;
 	char		*string;
 	struct man_node	*head;

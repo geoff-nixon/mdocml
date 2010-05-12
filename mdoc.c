@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.127 2010/05/08 10:25:27 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.128 2010/05/12 16:01:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -700,20 +700,8 @@ mdoc_ptext(struct mdoc *m, int line, char *buf)
 
 	assert(i);
 
-	switch (buf[i - 1]) {
-	case ('.'):
-		if (i > 1 && '\\' == buf[i - 2])
-			break;
-		/* FALLTHROUGH */
-	case ('!'):
-		/* FALLTHROUGH */
-	case ('?'):
+	if (mandoc_eos(buf, (size_t)i))
 		m->last->flags |= MDOC_EOS;
-		break;
-	default:
-		break;
-
-	}
 
 	return(1);
 }

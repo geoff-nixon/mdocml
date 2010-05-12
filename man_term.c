@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.61 2010/05/10 08:27:09 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.62 2010/05/10 08:31:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -842,6 +842,9 @@ print_man_node(DECL_ARGS)
 		if ( ! (MAN_NOTEXT & termacts[n->tok].flags))
 			term_fontrepl(p, TERMFONT_NONE);
 	}
+
+	if (MAN_EOS & n->flags)
+		p->flags |= TERMP_SENTENCE;
 }
 
 

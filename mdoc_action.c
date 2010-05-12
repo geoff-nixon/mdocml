@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.53 2010/04/06 11:33:00 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.54 2010/05/08 07:30:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -419,7 +419,7 @@ post_sh(POST_ARGS)
 
 	if ( ! concat(m, buf, n->child, BUFSIZ))
 		return(0);
-	sec = mdoc_atosec(buf);
+	sec = mdoc_str2sec(buf);
 	/*
 	 * The first section should always make us move into a non-new
 	 * state.

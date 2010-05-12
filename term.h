@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.52 2010/03/23 12:42:22 kristaps Exp $ */
+/*	$Id: term.h,v 1.53 2010/05/10 08:05:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -39,6 +39,7 @@ struct	termp {
 	size_t		  col;		/* Bytes in buf. */
 	int		  overstep;	/* See termp_flushln(). */
 	int		  flags;
+#define	TERMP_SENTENCE	 (1 << 1)	/* Space before a sentence. */
 #define	TERMP_NOSPACE	 (1 << 2)	/* No space before words. */
 #define	TERMP_NOLPAD	 (1 << 3)	/* See term_flushln(). */
 #define	TERMP_NOBREAK	 (1 << 4)	/* See term_flushln(). */

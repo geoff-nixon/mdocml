@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.75 2010/05/09 21:19:42 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.76 2010/05/12 08:41:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -260,6 +260,7 @@ struct	mdoc_node {
 	int		  flags;
 #define	MDOC_VALID	 (1 << 0)
 #define	MDOC_ACTED	 (1 << 1)
+#define	MDOC_EOS	 (1 << 2)
 	enum mdoc_type	  type;
 	enum mdoc_sec	  sec;
 

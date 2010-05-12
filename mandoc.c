@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.10 2010/01/05 19:51:10 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.11 2010/04/07 11:25:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -300,3 +300,26 @@ mandoc_a2time(int flags, const char *p)
 	return(0);
 }
 
+
+int
+mandoc_eos(const char *p, size_t sz)
+{
+
+	assert(sz);
+
+	switch (p[(int)sz - 1]) {
+	case ('.'):
+		/* Escaped periods. */
+		if (sz > 1 && '\\' == p[(int)sz - 2])
+			return(0);
+		/* FALLTHROUGH */
+	case ('!'):
+		/* FALLTHROUGH */
+	case ('?'):
+		break;
+	default:
+		return(0);
+	}
+
+	return(1);
+}

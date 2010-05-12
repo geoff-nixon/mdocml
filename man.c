@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.64 2010/05/08 10:25:27 kristaps Exp $ */
+/*	$Id: man.c,v 1.65 2010/05/12 16:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -428,20 +428,8 @@ man_ptext(struct man *m, int line, char *buf)
 
 	assert(i);
 
-	switch (buf[i - 1]) {
-	case ('.'):
-		if (i > 1 && '\\' == buf[i - 2])
-			break;
-		/* FALLTHROUGH */
-	case ('!'):
-		/* FALLTHROUGH */
-	case ('?'):
+	if (mandoc_eos(buf, (size_t)i))
 		m->last->flags |= MAN_EOS;
-		break;
-	default:
-		break;
-
-	}
 
 descope:
 	/*

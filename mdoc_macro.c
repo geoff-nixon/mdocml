@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.59 2010/05/09 10:17:02 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.60 2010/05/13 06:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1291,6 +1291,7 @@ blk_part_exp(MACRO_PROT_ARGS)
 }
 
 
+/* ARGSUSED */
 static int
 in_line_argn(MACRO_PROT_ARGS)
 {

@@ -241,7 +241,12 @@
 						<TBODY>
 							<TR>
 								<TD VALIGN="top"><SPAN CLASS="date">xx-05-2010</SPAN></TD>
-								
+								Day 1 of Rostock hackathon: proper handling of quotations in tab-separated
+								column lists, finished patching of SYNOPSIS breaking (1.9.25), fixed pre-comment
+								white-space stripping, added end-of-sentence spacing to black partial-implicit
+								macros, relaxed column warnings, relaxed acceptence of bad standards arguments,
+								significant documentation of lists in <A HREF="mdoc.7.html">mdoc(7)</A>.
+								Version: <SPAN CLASS="rev">1.9.26</SPAN>.
 								<TD VALIGN="top">
 							</TR>
 							<TR>
@@ -354,7 +359,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/14 12:02:12 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/14 12:31:11 $
 					</DIV>
 				</TD>
 			</TR>

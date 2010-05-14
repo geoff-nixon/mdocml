@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.129 2010/05/12 17:08:03 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.130 2010/05/13 06:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -68,7 +68,6 @@ const	char *const __mdoc_merrnames[MERRMAX] = {
 	"line arguments discouraged", /* ENOLINE */
 	"prologue macro out of conventional order", /* EPROLOOO */
 	"prologue macro repeated", /* EPROLREP */
-	"invalid manual section", /* EBADMSEC */
 	"invalid section", /* EBADSEC */
 	"invalid font mode", /* EFONT */
 	"invalid date syntax", /* EBADDATE */

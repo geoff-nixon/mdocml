@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.100 2010/05/12 16:45:18 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.101 2010/05/12 17:08:03 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -302,6 +302,9 @@ a line.
 By doing so, front-ends will be able to apply the proper amount of
 spacing after the end of sentence (unescaped) period, exclamation mark,
 or question mark.
+.Pp
+The proper spacing is also intelligently preserved if a sentence ends at
+the boundary of a macro line.
 .Sh MANUAL STRUCTURE
 A well-formed
 .Nm

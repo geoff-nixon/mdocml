@@ -240,6 +240,11 @@
 						<COL CLASS="date">
 						<TBODY>
 							<TR>
+								<TD VALIGN="top"><SPAN CLASS="date">xx-05-2010</SPAN></TD>
+								
+								<TD VALIGN="top">
+							</TR>
+							<TR>
 								<TD VALIGN="top"><SPAN CLASS="date">13-05-2010</SPAN></TD>
 								<TD VALIGN="top">
 								Fixed handling of <Q>\*(Ba</Q> escape.  Backed out <SPAN
@@ -349,7 +354,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/14 11:54:01 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/14 12:02:12 $
 					</DIV>
 				</TD>
 			</TR>

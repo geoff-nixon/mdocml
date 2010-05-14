@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.11 2010/04/07 11:25:38 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.12 2010/05/12 17:08:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -305,7 +305,8 @@ int
 mandoc_eos(const char *p, size_t sz)
 {
 
-	assert(sz);
+	if (0 == sz)
+		return(0);
 
 	switch (p[(int)sz - 1]) {
 	case ('.'):

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.72 2010/05/12 08:41:17 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.73 2010/05/14 14:34:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1162,7 +1162,7 @@ post_st(POST_ARGS)
 
 	if (mdoc_a2st(mdoc->last->child->string))
 		return(1);
-	return(mdoc_nerr(mdoc, mdoc->last, EBADSTAND));
+	return(mdoc_nwarn(mdoc, mdoc->last, EBADSTAND));
 }
 
 

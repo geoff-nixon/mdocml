@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.54 2010/05/08 07:30:19 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.55 2010/05/12 08:41:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -366,9 +366,10 @@ post_st(POST_ARGS)
 
 	assert(MDOC_TEXT == n->child->type);
 	p = mdoc_a2st(n->child->string);
-	assert(p);
-	free(n->child->string);
-	n->child->string = mandoc_strdup(p);
+	if (p != NULL) {
+		free(n->child->string);
+		n->child->string = mandoc_strdup(p);
+	}
 	return(1);
 }
 

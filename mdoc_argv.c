@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.45 2010/05/09 21:06:50 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.46 2010/05/14 12:55:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -399,7 +399,7 @@ args(struct mdoc *m, int line, int *pos,
 	assert(' ' != buf[*pos]);
 
 	if ('\0' == buf[*pos]) {
-		if (ARGS_PPHRASED & fl)
+		if (MDOC_PPHRASE & m->flags)
 			return(ARGS_EOLN);
 		/*
 		 * If we're not in a partial phrase and the flag for
@@ -525,7 +525,7 @@ args(struct mdoc *m, int line, int *pos,
 		if ( ! (MDOC_PHRASELIT & m->flags))
 			*v = &buf[++(*pos)];
 
-		if (ARGS_PPHRASED & fl)
+		if (MDOC_PPHRASE & m->flags)
 			m->flags |= MDOC_PHRASELIT;
 
 		for ( ; buf[*pos]; (*pos)++) {
@@ -537,7 +537,7 @@ args(struct mdoc *m, int line, int *pos,
 		}
 
 		if ('\0' == buf[*pos]) {
-			if (ARGS_NOWARN & fl || ARGS_PPHRASED & fl)
+			if (ARGS_NOWARN & fl || MDOC_PPHRASE & m->flags)
 				return(ARGS_QWORD);
 			if ( ! mdoc_pwarn(m, line, *pos, EQUOTTERM))
 				return(ARGS_ERROR);

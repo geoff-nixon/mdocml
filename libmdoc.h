@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.43 2010/05/14 12:55:22 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.44 2010/05/14 17:31:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -32,7 +32,8 @@ struct	mdoc {
 #define	MDOC_LITERAL	 (1 << 1) /* in a literal scope */
 #define	MDOC_PBODY	 (1 << 2) /* in the document body */
 #define	MDOC_NEWLINE	 (1 << 3) /* first macro/text in a line */
-#define	MDOC_PHRASELIT	 (1 << 4) /* in a literal within a phrase */
+#define	MDOC_PHRASELIT	 (1 << 4) /* literal within a partila phrase */
+#define	MDOC_PPHRASE	 (1 << 5) /* within a partial phrase */
 	int		  pflags;
 	enum mdoc_next	  next;
 	struct mdoc_node *last;
@@ -189,7 +190,6 @@ enum margserr	  mdoc_zargs(struct mdoc *, int,
 #define	ARGS_DELIM	(1 << 1)
 #define	ARGS_TABSEP	(1 << 2)
 #define	ARGS_NOWARN	(1 << 3)
-#define ARGS_PPHRASED	(1 << 4)
 
 int		  mdoc_macroend(struct mdoc *);
 

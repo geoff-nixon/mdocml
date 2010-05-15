@@ -1,4 +1,4 @@
-/*	$Id: roff.h,v 1.12 2010/05/15 07:52:11 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.1 2010/05/15 18:35:14 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -24,6 +24,9 @@ enum	mandocerr {
 	MANDOCERR_SCOPEEXIT, /* scope open on exit */
 	MANDOCERR_NOSCOPE, /* request scope close w/none open */
 #define	MANDOCERR_WARNING	MANDOCERR_SCOPEEXIT
+
+	MANDOCERR_ARGSLOST, /* line arguments will be lost */
+#define	MANDOCERR_ERROR		MANDOCERR_ARGSLOST
 
 	MANDOCERR_MEM, /* memory exhausted */
 #define	MANDOCERR_FATAL		MANDOCERR_MEM

@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.28 2010/05/09 21:19:42 kristaps Exp $ */
+/*	$Id: man.h,v 1.29 2010/05/12 16:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -74,7 +74,7 @@ enum	man_type {
 };
 
 struct	man_meta {
-	int		 msec;
+	char		*msec;
 	time_t		 date;
 	char		*vol;
 	char		*title;

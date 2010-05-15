@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.62 2010/05/10 08:31:41 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.63 2010/05/12 16:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -911,7 +911,7 @@ print_man_head(struct termp *p, const struct man_meta *m)
 		strlcpy(buf, m->vol, BUFSIZ);
 	buflen = strlen(buf);
 
-	snprintf(title, BUFSIZ, "%s(%d)", m->title, m->msec);
+	snprintf(title, BUFSIZ, "%s(%s)", m->title, m->msec);
 	titlen = strlen(title);
 
 	p->offset = 0;

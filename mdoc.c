@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.130 2010/05/13 06:22:11 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.131 2010/05/14 17:31:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -700,6 +700,8 @@ mdoc_ptext(struct mdoc *m, int line, char *buf)
 	 * EOS character, then flag the node as being the end of a
 	 * sentence.  The front-end will know how to interpret this.
 	 */
+
+	/* FIXME: chain of close delims. */
 
 	assert(i);
 

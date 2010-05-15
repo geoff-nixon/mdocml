@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.65 2010/05/12 16:46:28 kristaps Exp $ */
+/*	$Id: man.c,v 1.66 2010/05/12 17:08:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -425,6 +425,8 @@ man_ptext(struct man *m, int line, char *buf)
 	 * EOS character, then flag the node as being the end of a
 	 * sentence.  The front-end will know how to interpret this.
 	 */
+
+	/* FIXME: chain of close delims. */
 
 	assert(i);
 

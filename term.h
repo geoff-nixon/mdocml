@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.53 2010/05/10 08:05:17 kristaps Exp $ */
+/*	$Id: term.h,v 1.54 2010/05/12 16:01:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -32,6 +32,7 @@ enum	termfont {
 #define	TERM_MAXMARGIN	  100000 /* FIXME */
 
 struct	termp {
+	size_t		  defrmargin;	/* Right margin of the device.. */
 	size_t		  rmargin;	/* Current right margin. */
 	size_t		  maxrmargin;	/* Max right margin. */
 	size_t		  maxcols;	/* Max size of buf. */

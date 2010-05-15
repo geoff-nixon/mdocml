@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.72 2010/05/15 18:43:59 kristaps Exp $ */
+/*	$Id: main.c,v 1.73 2010/05/15 21:53:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -789,6 +789,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 static int
 mmsg(enum mandocerr t, void *arg, int ln, int col, const char *msg)
 {
+#if 0
 	struct curparse *cp;
 
 	cp = (struct curparse *)arg;
@@ -800,5 +801,6 @@ mmsg(enum mandocerr t, void *arg, int ln, int col, const char *msg)
 		fprintf(stderr, ": %s", msg);
 
 	fputc('\n', stderr);
+#endif
 	return(1);
 }

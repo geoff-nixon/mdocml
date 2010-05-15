@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.106 2010/05/14 17:31:25 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.107 2010/05/15 07:01:51 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 14 2010 $
+.Dd $Mdocdate: May 15 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -347,7 +347,7 @@ file:
 \&.Sh NAME
 \&.Nm foo
 \&.Nd a description goes here
-\&.\e\*q The next is for sections 2 & 3 only.
+\&.\e\*q The next is for sections 2, 3, & 9 only.
 \&.\e\*q .Sh LIBRARY
 \&.
 \&.Sh SYNOPSIS
@@ -409,7 +409,7 @@ and
 .Sx \&Nd .
 .It Em LIBRARY
 The name of the library containing the documented material, which is
-assumed to be a function in a section 2 or 3 manual.
+assumed to be a function in a section 2, 3, or 9 manual.
 The syntax for this is as follows:
 .Bd -literal -offset indent
 \&.Lb libarm

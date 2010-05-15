@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.61 2010/04/08 08:17:55 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.62 2010/05/13 06:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -387,7 +387,7 @@ print_mdoc_head(MDOC_ARGS)
 
 	print_gen_head(h);
 	bufinit(h);
-	buffmt(h, "%s(%d)", m->title, m->msec);
+	buffmt(h, "%s(%s)", m->title, m->msec);
 
 	if (m->arch) {
 		bufcat(h, " (");
@@ -509,7 +509,7 @@ mdoc_root_pre(MDOC_ARGS)
 	}
 
 	(void)snprintf(title, BUFSIZ - 1, 
-			"%s(%d)", m->title, m->msec);
+			"%s(%s)", m->title, m->msec);
 
 	/* XXX: see note in mdoc_root_post() about divs. */
 

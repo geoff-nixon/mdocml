@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.64 2010/05/15 15:54:39 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.65 2010/05/15 16:18:23 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -484,7 +484,6 @@ pre_IP(DECL_ARGS)
 		break;
 	case (MAN_HEAD):
 		p->flags |= TERMP_NOBREAK;
-		p->flags |= TERMP_TWOSPACE;
 		break;
 	case (MAN_BLOCK):
 		print_bvspace(p, n);
@@ -545,7 +544,6 @@ post_IP(DECL_ARGS)
 	case (MAN_HEAD):
 		term_flushln(p);
 		p->flags &= ~TERMP_NOBREAK;
-		p->flags &= ~TERMP_TWOSPACE;
 		p->rmargin = p->maxrmargin;
 		break;
 	case (MAN_BODY):

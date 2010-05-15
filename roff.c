@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.67 2010/05/15 18:35:14 kristaps Exp $ */
+/*	$Id: roff.c,v 1.68 2010/05/15 18:43:59 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -305,7 +305,7 @@ roff_new_close(ROFF_ARGS)
 	if ( ! (*r->msg)(MANDOCERR_NOSCOPE, r->data, ln, ppos, NULL))
 		return(ROFF_ERR);
 	*/
-	return(ROFF_CONT);
+	return(ROFF_IGN);
 }
 
 

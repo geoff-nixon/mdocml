@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.19 2010/05/12 08:41:17 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.20 2010/05/15 08:54:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -97,7 +97,7 @@ mdoc_isdelim(const char *p)
 {
 
 	if ('\0' == p[0])
-		return(0);
+		return(DELIM_NONE);
 	if ('\0' == p[1])
 		return(mdoc_iscdelim(p[0]));
 

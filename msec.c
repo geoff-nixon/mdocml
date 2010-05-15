@@ -1,6 +1,6 @@
-/*	$Id: msec.c,v 1.5 2009/10/26 17:05:44 kristaps Exp $ */
+/*	$Id: msec.c,v 1.6 2010/01/01 17:14:30 kristaps Exp $ */
 /*
- * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -20,7 +20,6 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 
 #include "libmdoc.h"
 

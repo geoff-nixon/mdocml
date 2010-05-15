@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.31 2010/05/15 15:54:39 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.32 2010/05/15 16:27:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -74,7 +74,6 @@ const	struct actions man_actions[MAN_MAX] = {
 	{ post_de }, /* dei */
 	{ post_de }, /* am */
 	{ post_de }, /* ami */
-	{ post_de }, /* ig */
 	{ NULL }, /* . */
 };
 

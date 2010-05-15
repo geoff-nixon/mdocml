@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.65 2010/05/15 16:18:23 joerg Exp $ */
+/*	$Id: man_term.c,v 1.66 2010/05/15 17:25:21 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -146,7 +146,6 @@ static	const struct termact termacts[MAN_MAX] = {
  	{ pre_ign, NULL, MAN_NOTEXT }, /* dei */
  	{ pre_ign, NULL, MAN_NOTEXT }, /* am */
  	{ pre_ign, NULL, MAN_NOTEXT }, /* ami */
- 	{ pre_ign, NULL, MAN_NOTEXT }, /* ig */
  	{ NULL, NULL, 0 }, /* . */
 };
 

@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.29 2010/05/12 16:46:28 kristaps Exp $ */
+/*	$Id: man.h,v 1.30 2010/05/15 15:54:39 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -59,7 +59,6 @@ enum	mant {
 	MAN_dei,
 	MAN_am,
 	MAN_ami,
-	MAN_ig,
 	MAN_dot,
 	MAN_MAX
 };

@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.66 2010/05/15 07:52:11 kristaps Exp $ */
+/*	$Id: roff.c,v 1.67 2010/05/15 18:35:14 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -157,7 +157,7 @@ static void
 roff_alloc1(struct roff *r)
 {
 
-	memset(r, 0, sizeof(struct roff));
+	/* Do nothing for now. */
 }
 
 
@@ -301,9 +301,11 @@ static enum rofferr
 roff_new_close(ROFF_ARGS)
 {
 
+	/*
 	if ( ! (*r->msg)(MANDOCERR_NOSCOPE, r->data, ln, ppos, NULL))
 		return(ROFF_ERR);
-	return(ROFF_IGN);
+	*/
+	return(ROFF_CONT);
 }
 
 

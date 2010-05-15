@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.70 2010/05/15 16:20:12 joerg Exp $ */
+/*	$Id: main.c,v 1.71 2010/05/15 18:35:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -785,7 +785,7 @@ mmsg(enum mandocerr t, void *arg, int ln, int col, const char *msg)
 
 	cp = (struct curparse *)arg;
 
-	fprintf(stderr, "%s:%d:%d: %s\n", cp->file, ln, col + 1, msg);
+	/*fprintf(stderr, "%s:%d:%d: %s\n", cp->file, ln, col + 1, msg);*/
 
 	return(1);
 }

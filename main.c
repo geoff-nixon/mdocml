@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.67 2010/05/15 05:50:19 joerg Exp $ */
+/*	$Id: main.c,v 1.68 2010/05/15 09:46:31 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -484,7 +484,7 @@ fdesc(struct curparse *curp)
 		case (OUTT_LINT):
 			break;
 		default:
-			curp->outdata = ascii_alloc();
+			curp->outdata = ascii_alloc(80);
 			curp->outman = terminal_man;
 			curp->outmdoc = terminal_mdoc;
 			curp->outfree = terminal_free;

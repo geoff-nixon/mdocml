@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.45 2010/05/15 04:47:38 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.46 2010/05/15 08:54:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -80,7 +80,7 @@ enum	merr {
 	ENOLINE,
 	EPROLOOO,
 	EPROLREP,
-	EBADSEC,
+	EBADMSEC,
 	EFONT,
 	EBADDATE,
 	ENUMFMT,

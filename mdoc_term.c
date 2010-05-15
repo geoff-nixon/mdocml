@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.122 2010/05/13 06:22:11 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.123 2010/05/15 16:18:23 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -425,7 +425,7 @@ print_mdoc_head(DECL_ARGS)
 		strlcat(buf, ")", BUFSIZ);
 	}
 
-	snprintf(title, BUFSIZ, "%s(%d)", m->title, m->msec);
+	snprintf(title, BUFSIZ, "%s(%s)", m->title, m->msec);
 
 	p->offset = 0;
 	p->rmargin = (p->maxrmargin - strlen(buf) + 1) / 2;

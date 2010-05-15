@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.77 2010/05/12 16:01:01 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.78 2010/05/13 06:22:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -223,7 +223,7 @@ enum	mdoc_sec {
 
 /* Information from prologue. */
 struct	mdoc_meta {
-	int		  msec;
+	char		 *msec;
 	char		 *vol;
 	char		 *arch;
 	time_t		  date;

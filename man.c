@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.69 2010/05/15 20:51:40 kristaps Exp $ */
+/*	$Id: man.c,v 1.70 2010/05/15 22:44:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -151,7 +151,7 @@ int
 man_parseln(struct man *m, int ln, char *buf)
 {
 
-	return('.' == *buf || '\'' == *buf ? 
+	return(('.' == *buf || '\'' == *buf) ? 
 			man_pmacro(m, ln, buf) : 
 			man_ptext(m, ln, buf));
 }

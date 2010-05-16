@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.132 2010/05/15 06:48:13 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.133 2010/05/15 16:24:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -291,7 +291,7 @@ mdoc_parseln(struct mdoc *m, int ln, char *buf)
 		return(0);
 
 	m->flags |= MDOC_NEWLINE;
-	return('.' == *buf ? 
+	return(('.' == *buf || '\'' == *buf) ? 
 			mdoc_pmacro(m, ln, buf) :
 			mdoc_ptext(m, ln, buf));
 }

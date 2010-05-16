@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.133 2010/05/12 16:01:01 kristaps Exp $ */
+/*	$Id: term.c,v 1.134 2010/05/15 16:18:23 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -233,7 +233,7 @@ term_flushln(struct termp *p)
 		for ( ; i < (int)p->col; i++)
 			if (' ' == p->buf[i])
 				break;
-			else if (31 == p->buf[i])
+			else if (ASCII_NBRSP == p->buf[i])
 				putchar(' ');
 			else
 				putchar(p->buf[i]);

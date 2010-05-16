@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.46 2009/09/16 09:41:24 kristaps Exp $ */
+/*	$Id: chars.h,v 1.1 2009/09/17 07:41:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -16,6 +16,8 @@
  */
 #ifndef CHARS_H
 #define CHARS_H
+
+#define ASCII_NBRSP	 31  /* non-breaking space */
 
 __BEGIN_DECLS
 

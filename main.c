@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.75 2010/05/16 00:04:46 kristaps Exp $ */
+/*	$Id: main.c,v 1.76 2010/05/16 10:59:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -799,6 +799,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"ok",
 	"multi-line scope open on exit",
 	"request for scope closure when no matching scope is open",
+	"macro requires line argument(s)",
 	"line arguments will be lost",
 	"memory exhausted"
 };

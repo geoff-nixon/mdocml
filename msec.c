@@ -1,4 +1,4 @@
-/*	$Id: msec.c,v 1.6 2010/01/01 17:14:30 kristaps Exp $ */
+/*	$Id: msec.c,v 1.7 2010/05/15 16:27:23 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -21,6 +21,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "mandoc.h"
 #include "libmdoc.h"
 
 #define LINE(x, y) \

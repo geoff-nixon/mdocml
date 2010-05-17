@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.69 2010/05/17 10:26:49 joerg Exp $ */
+/*	$Id: man_term.c,v 1.70 2010/05/17 10:50:32 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "mandoc.h"
 #include "out.h"
 #include "man.h"
 #include "term.h"

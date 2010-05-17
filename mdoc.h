@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.79 2010/05/15 16:24:38 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.80 2010/05/16 10:59:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -278,13 +278,6 @@ struct	mdoc_node {
 #define	MDOC_IGN_ESCAPE	 (1 << 1) /* Ignore bad escape sequences. */
 #define	MDOC_IGN_MACRO	 (1 << 2) /* Ignore unknown macros. */
 
-/* Call-backs for parse messages. */
-
-struct	mdoc_cb {
-	int	(*mdoc_err)(void *, int, int, const char *);
-	int	(*mdoc_warn)(void *, int, int, const char *);
-};
-
 /* See mdoc.3 for documentation. */
 
 extern	const char *const *mdoc_macronames;
@@ -297,7 +290,7 @@ struct	mdoc;
 /* See mdoc.3 for documentation. */
 
 void	 	  mdoc_free(struct mdoc *);
-struct	mdoc	 *mdoc_alloc(void *, int, const struct mdoc_cb *);
+struct	mdoc	 *mdoc_alloc(void *, int, mandocmsg);
 void		  mdoc_reset(struct mdoc *);
 int	 	  mdoc_parseln(struct mdoc *, int, char *, int);
 const struct mdoc_node *mdoc_node(const struct mdoc *);

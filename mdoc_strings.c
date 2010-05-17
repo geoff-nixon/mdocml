@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.20 2010/05/15 08:54:04 schwarze Exp $ */
+/*	$Id: mdoc_strings.c,v 1.21 2010/05/15 17:26:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -26,6 +26,7 @@
 #include <string.h>
 #include <time.h>
 
+#include "mandoc.h"
 #include "libmdoc.h"
 
 static	const char * const secnames[SEC__MAX] = {

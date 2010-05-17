@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.34 2010/05/15 22:44:04 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.35 2010/05/17 10:50:32 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -22,6 +22,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "mandoc.h"
 #include "libman.h"
 #include "libmandoc.h"
 
@@ -103,7 +104,7 @@ post_fi(struct man *m)
 {
 
 	if ( ! (MAN_LITERAL & m->flags))
-		if ( ! man_nwarn(m, m->last, WNLITERAL))
+		if ( ! man_nmsg(m, m->last, MANDOCERR_NOSCOPE))
 			return(0);
 	m->flags &= ~MAN_LITERAL;
 	return(1);
@@ -115,7 +116,7 @@ post_nf(struct man *m)
 {
 
 	if (MAN_LITERAL & m->flags)
-		if ( ! man_nwarn(m, m->last, WOLITERAL))
+		if ( ! man_nmsg(m, m->last, MANDOCERR_SCOPEREP))
 			return(0);
 	m->flags |= MAN_LITERAL;
 	return(1);
@@ -159,7 +160,7 @@ post_TH(struct man *m)
 		m->meta.date = mandoc_a2time
 			(MTIME_ISO_8601, n->string);
 		if (0 == m->meta.date) {
-			if ( ! man_nwarn(m, n, WDATE))
+			if ( ! man_nmsg(m, n, MANDOCERR_BADDATE))
 				return(0);
 			m->meta.date = time(NULL);
 		}

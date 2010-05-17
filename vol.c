@@ -1,4 +1,4 @@
-/*	$Id: vol.c,v 1.5 2009/10/26 17:05:45 kristaps Exp $ */
+/*	$Id: vol.c,v 1.6 2010/01/01 17:14:31 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -22,6 +22,7 @@
 #include <string.h>
 #include <time.h>
 
+#include "mandoc.h"
 #include "libmdoc.h"
 
 #define LINE(x, y) \

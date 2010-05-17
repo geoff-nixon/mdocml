@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.19 2010/05/08 07:30:19 kristaps Exp $ */
+/*	$Id: man_hash.c,v 1.20 2010/05/15 22:49:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "mandoc.h"
 #include "libman.h"
 
 #define	HASH_DEPTH	 6

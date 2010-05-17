@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.67 2010/05/15 20:51:40 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.68 2010/05/15 22:44:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -864,6 +864,8 @@ print_man_foot(struct termp *p, const struct man_meta *meta)
 
 	time2a(meta->date, buf, DATESIZ);
 
+	term_vspace(p);
+	term_vspace(p);
 	term_vspace(p);
 
 	p->flags |= TERMP_NOSPACE | TERMP_NOBREAK;

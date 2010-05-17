@@ -186,6 +186,10 @@
 							<TD><A HREF="man.3.html">man(3)</A> (<A HREF="man.3.txt">text</A>)</TD>
 							<TD>man macro compiler library</TD>
 						</TR>
+						<TR>
+							<TD><A HREF="roff.7.html">roff(7)</A> (<A HREF="roff.7.txt">text</A>)</TD>
+							<TD>roff language reference</TD>
+						</TR>
 					</TBODY>
 					</TABLE>
 				</TD>
@@ -359,7 +363,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/14 12:31:11 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/05/14 16:02:29 $
 					</DIV>
 				</TD>
 			</TR>

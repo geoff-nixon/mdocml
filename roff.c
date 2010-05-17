@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.79 2010/05/17 00:06:36 kristaps Exp $ */
+/*	$Id: roff.c,v 1.80 2010/05/17 00:37:26 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -340,7 +340,22 @@ roff_cblock(ROFF_ARGS)
 		return(ROFF_IGN);
 	}
 
-	if (ROFF_ig != r->last->tok) {
+	switch (r->last->tok) {
+	case (ROFF_am):
+		/* FALLTHROUGH */
+	case (ROFF_ami):
+		/* FALLTHROUGH */
+	case (ROFF_am1):
+		/* FALLTHROUGH */
+	case (ROFF_de):
+		/* FALLTHROUGH */
+	case (ROFF_dei):
+		/* FALLTHROUGH */
+	case (ROFF_de1):
+		/* FALLTHROUGH */
+	case (ROFF_ig):
+		break;
+	default:
 		if ( ! (*r->msg)(MANDOCERR_NOSCOPE, r->data, ln, ppos, NULL))
 			return(ROFF_ERR);
 		return(ROFF_IGN);

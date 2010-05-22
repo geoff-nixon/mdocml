@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.125 2010/05/17 22:11:42 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.126 2010/05/17 23:57:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1044,6 +1044,7 @@ termp_nm_pre(DECL_ARGS)
 {
 
 	if (NULL == n->child && NULL == m->name)
+		return(1);
 
 	if (SEC_SYNOPSIS == n->sec && MDOC_LINE & n->flags)
 		term_newln(p);

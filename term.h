@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.54 2010/05/12 16:01:01 kristaps Exp $ */
+/*	$Id: term.h,v 1.55 2010/05/15 16:18:23 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -37,6 +37,7 @@ struct	termp {
 	size_t		  maxrmargin;	/* Max right margin. */
 	size_t		  maxcols;	/* Max size of buf. */
 	size_t		  offset;	/* Margin offest. */
+	size_t		  tabwidth;	/* Distance of tab positions. */
 	size_t		  col;		/* Bytes in buf. */
 	int		  overstep;	/* See termp_flushln(). */
 	int		  flags;

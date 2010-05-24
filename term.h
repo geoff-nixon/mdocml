@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.55 2010/05/15 16:18:23 joerg Exp $ */
+/*	$Id: term.h,v 1.56 2010/05/24 21:34:16 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -39,6 +39,7 @@ struct	termp {
 	size_t		  offset;	/* Margin offest. */
 	size_t		  tabwidth;	/* Distance of tab positions. */
 	size_t		  col;		/* Bytes in buf. */
+	size_t		  viscol;	/* Chars on current line. */
 	int		  overstep;	/* See termp_flushln(). */
 	int		  flags;
 #define	TERMP_SENTENCE	 (1 << 1)	/* Space before a sentence. */

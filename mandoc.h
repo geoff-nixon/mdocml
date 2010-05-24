@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.4 2010/05/16 22:28:33 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.5 2010/05/17 22:11:42 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -72,7 +72,7 @@ enum	mandocerr {
 	MANDOCERR_NOTITLE, /* no title in document */
 	MANDOCERR_ARGSLOST, /* line argument(s) will be lost */
 	MANDOCERR_BODYLOST, /* body argument(s) will be lost */
-#define	MANDOCERR_ERROR		MANDOCERR_ARGSLOST
+#define	MANDOCERR_ERROR		MANDOCERR_BODYLOST
 
 	/* FIXME: this should be a MANDOCERR_ERROR */
 	MANDOCERR_FONTTYPE, /* missing font type */

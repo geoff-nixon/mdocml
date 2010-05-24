@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.48 2010/05/17 22:11:42 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.49 2010/05/17 23:57:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -41,62 +41,6 @@ struct	mdoc {
 	struct mdoc_meta  meta;
 	enum mdoc_sec	  lastnamed;
 	enum mdoc_sec	  lastsec;
-};
-
-enum	merr {
-	ETAILWS = 0,
-	EQUOTPARM,
-	EQUOTTERM,
-	EARGVAL,	
-	EBODYPROL,
-	EPROLBODY,
-	ETEXTPROL,
-	ENOBLANK,
-	ETOOLONG,
-	EESCAPE,
-	EPRINT,
-	ENODAT,
-	ENOPROLOGUE,
-	ELINE,
-	EATT,
-	ENAME,
-	ELISTTYPE,
-	EDISPTYPE,
-	EMULTIDISP,
-	EMULTILIST,
-	ESECNAME,
-	ENAMESECINC,
-	EARGREP,
-	EBOOL,
-	ECOLMIS,
-	ENESTDISP,
-	EMISSWIDTH,
-	EWRONGMSEC,
-	ESECOOO,
-	ESECREP,
-	EBADSTAND,
-	ENOMULTILINE,
-	EMULTILINE,
-	ENOLINE,
-	EPROLOOO,
-	EPROLREP,
-	EBADMSEC,
-	EFONT,
-	EBADDATE,
-	ENUMFMT,
-	ENOWIDTH,
-	EUTSNAME,
-	EOBS,
-	EIMPBRK,
-	EIGNE,
-	EOPEN,
-	EQUOTPHR,
-	ENOCTX,
-	ELIB,
-	EBADCHILD,
-	ENOTYPE,
-	EBADCOMMENT,
-	MERRMAX
 };
 
 #define	MACRO_PROT_ARGS	struct mdoc *m, enum mdoct tok, \

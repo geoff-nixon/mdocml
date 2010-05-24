@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.128 2010/05/24 14:35:59 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.129 2010/05/24 21:34:16 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1014,14 +1014,14 @@ termp_it_post(DECL_ARGS)
 		/* FALLTHROUGH */
 	case (LIST_inset):
 		if (MDOC_BODY == n->type)
-			term_flushln(p);
+			term_newln(p);
 		break;
 	case (LIST_column):
 		if (MDOC_HEAD == n->type)
 			term_flushln(p);
 		break;
 	default:
-		term_flushln(p);
+		term_newln(p);
 		break;
 	}
 
@@ -1633,11 +1633,9 @@ termp_bd_pre(DECL_ARGS)
 	for (nn = n->child; nn; nn = nn->next) {
 		p->flags |= TERMP_NOSPACE;
 		print_mdoc_node(p, pair, m, nn);
-		if (NULL == nn->next)
-			continue;
-		if (nn->prev && nn->prev->line < nn->line)
-			term_flushln(p);
-		else if (NULL == nn->prev)
+		if (NULL == nn->prev ||
+		    nn->prev->line < nn->line ||
+		    NULL == nn->next)
 			term_flushln(p);
 	}
 	p->tabwidth = tabwidth;
@@ -1668,7 +1666,7 @@ termp_bd_post(DECL_ARGS)
 		p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
 
 	p->flags |= TERMP_NOSPACE;
-	term_flushln(p);
+	term_newln(p);
 
 	p->rmargin = rm;
 	p->maxrmargin = rmax;

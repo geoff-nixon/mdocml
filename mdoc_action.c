@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.59 2010/05/17 22:11:42 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.60 2010/05/17 23:57:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -637,11 +637,14 @@ post_bl_tagwidth(POST_ARGS)
 	/* Defaults to ten ens. */
 
 	sz = 10; /* XXX: make this a macro value. */
-	nn = n->body->child;
+
+	for (nn = n->body->child; nn; nn = nn->next) {
+		if (MDOC_It == nn->tok)
+			break;
+	}
 
 	if (nn) {
 		assert(MDOC_BLOCK == nn->type);
-		assert(MDOC_It == nn->tok);
 		nn = nn->head->child;
 		if (MDOC_TEXT != nn->type) {
 			sz = mdoc_macro2len(nn->tok);

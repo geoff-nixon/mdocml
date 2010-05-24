@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.35 2010/05/17 10:50:32 joerg Exp $ */
+/*	$Id: man_action.c,v 1.36 2010/05/17 22:11:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -218,6 +218,9 @@ post_AT(struct man *m)
 		} else
 			p = unix_versions[0];
 	}
+
+	if (m->meta.source)
+		free(m->meta.source);
 
 	m->meta.source = mandoc_strdup(p);
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.126 2010/05/17 23:57:06 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.127 2010/05/22 20:41:48 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -613,7 +613,7 @@ print_bvspace(struct termp *p,
 
 	/* A `-column' does not assert vspace within the list. */
 
-	if (MDOC_Bl == bl->tok && LIST_diag == bl->data.list)
+	if (MDOC_Bl == bl->tok && LIST_column == bl->data.list)
 		if (n->prev && MDOC_It == n->prev->tok)
 			return;
 

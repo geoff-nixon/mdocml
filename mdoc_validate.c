@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.80 2010/05/17 23:57:06 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.81 2010/05/24 12:31:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -463,7 +463,7 @@ check_text(struct mdoc *mdoc, int line, int pos, const char *p)
 			if ( ! (MDOC_LITERAL & mdoc->flags))
 				if ( ! mdoc_pmsg(mdoc, line, pos, MANDOCERR_BADCHAR))
 					return(0);
-		} else if ( ! isprint((u_char)*p))
+		} else if ( ! isprint((u_char)*p) && ASCII_HYPH != *p)
 			if ( ! mdoc_pmsg(mdoc, line, pos, MANDOCERR_BADCHAR))
 				return(0);
 

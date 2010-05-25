@@ -1,4 +1,4 @@
-.\"	$Id: man.3,v 1.16 2010/04/13 05:26:49 kristaps Exp $
+.\"	$Id: man.3,v 1.17 2010/05/25 21:46:48 kristaps Exp $
 .\"
 .\" Copyright (c) 2009-2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: April 13 2010 $
+.Dd $Mdocdate: May 25 2010 $
 .Dt MAN 3
 .Os
 .Sh NAME
@@ -162,9 +162,8 @@ Function descriptions follow:
 Allocates a parsing structure.
 The
 .Fa data
-pointer is passed to callbacks in
-.Fa cb ,
-which are documented further in the header file.
+pointer is passed to
+.Fa msgs .
 The
 .Fa pflags
 arguments are defined in

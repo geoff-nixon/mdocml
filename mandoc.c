@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.14 2010/05/15 06:48:13 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.15 2010/05/15 07:01:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -339,4 +339,32 @@ mandoc_eos(const char *p, size_t sz)
 	}
 
 	return(0);
+}
+
+
+int
+mandoc_hyph(const char *start, const char *c)
+{
+
+	/*
+	 * Choose whether to break at a hyphenated character.  We only
+	 * do this if it's free-standing within a word.
+	 */
+
+	/* Skip first/last character of buffer. */
+	if (c == start || '\0' == *(c + 1))
+		return(0);
+	/* Skip first/last character of word. */
+	if ('\t' == *(c + 1) || '\t' == *(c - 1))
+		return(0);
+	if (' ' == *(c + 1) || ' ' == *(c - 1))
+		return(0);
+	/* Skip double invocations. */
+	if ('-' == *(c + 1) || '-' == *(c - 1))
+		return(0);
+	/* Skip escapes. */
+	if ('\\' == *(c - 1))
+		return(0);
+
+	return(1);
 }

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.136 2010/05/17 22:11:42 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.137 2010/05/24 13:39:47 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -563,6 +563,10 @@ mdoc_ptext(struct mdoc *m, int line, char *buf, int offs)
 	ws = NULL;
 	for (c = end = buf + offs; *c; c++) {
 		switch (*c) {
+		case '-':
+			if (mandoc_hyph(buf + offs, c))
+				*c = ASCII_HYPH;
+			break;
 		case ' ':
 			if (NULL == ws)
 				ws = c;

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.129 2010/05/24 21:34:16 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.130 2010/05/24 21:51:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1192,6 +1192,7 @@ termp_rv_pre(DECL_ARGS)
 	term_fontpop(p);
 
        	term_word(p, "is set to indicate the error.");
+	p->flags |= TERMP_SENTENCE;
 
 	return(0);
 }
@@ -1224,6 +1225,7 @@ termp_ex_pre(DECL_ARGS)
 		term_word(p, "utility exits");
 
        	term_word(p, "0 on success, and >0 if an error occurs.");
+	p->flags |= TERMP_SENTENCE;
 
 	return(0);
 }
@@ -1425,6 +1427,7 @@ termp_bt_pre(DECL_ARGS)
 {
 
 	term_word(p, "is currently in beta test.");
+	p->flags |= TERMP_SENTENCE;
 	return(0);
 }
 
@@ -1445,6 +1448,7 @@ termp_ud_pre(DECL_ARGS)
 {
 
 	term_word(p, "currently under development.");
+	p->flags |= TERMP_SENTENCE;
 	return(0);
 }
 

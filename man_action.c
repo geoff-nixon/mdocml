@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.37 2010/05/24 12:22:43 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.38 2010/05/24 13:36:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -136,8 +136,10 @@ post_TH(struct man *m)
 		free(m->meta.source);
 	if (m->meta.msec)
 		free(m->meta.msec);
+	if (m->meta.rawdate)
+		free(m->meta.rawdate);
 
-	m->meta.title = m->meta.vol = 
+	m->meta.title = m->meta.vol = m->meta.rawdate =
 		m->meta.msec = m->meta.source = NULL;
 	m->meta.date = 0;
 
@@ -155,14 +157,21 @@ post_TH(struct man *m)
 
 	/* TITLE MSEC ->DATE<- SOURCE VOL */
 
+	/*
+	 * Try to parse the date.  If this works, stash the epoch (this
+	 * is optimal because we can reformat it in the canonical form).
+	 * If it doesn't parse, isn't specified at all, or is an empty
+	 * string, then use the current date.
+	 */
+
 	n = n->next;
-	if (n) {
+	if (n && n->string && *n->string) {
 		m->meta.date = mandoc_a2time
 			(MTIME_ISO_8601, n->string);
 		if (0 == m->meta.date) {
 			if ( ! man_nmsg(m, n, MANDOCERR_BADDATE))
 				return(0);
-			m->meta.date = time(NULL);
+			m->meta.rawdate = mandoc_strdup(n->string);
 		}
 	} else
 		m->meta.date = time(NULL);

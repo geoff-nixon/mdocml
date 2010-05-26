@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.73 2010/05/17 10:50:32 joerg Exp $ */
+/*	$Id: man.c,v 1.74 2010/05/17 22:11:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -146,6 +146,8 @@ man_free1(struct man *man)
 		free(man->meta.title);
 	if (man->meta.source)
 		free(man->meta.source);
+	if (man->meta.rawdate)
+		free(man->meta.rawdate);
 	if (man->meta.vol)
 		free(man->meta.vol);
 	if (man->meta.msec)

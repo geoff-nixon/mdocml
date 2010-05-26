@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.34 2010/05/17 10:50:32 joerg Exp $ */
+/*	$Id: man_html.c,v 1.35 2010/05/17 22:11:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -308,7 +308,10 @@ man_root_post(MAN_ARGS)
 	struct tag	*t, *tt;
 	char		 b[DATESIZ];
 
-	time2a(m->date, b, DATESIZ);
+	if (m->rawdate)
+		strlcpy(b, m->rawdate, DATESIZ);
+	else
+		time2a(m->date, b, DATESIZ);
 
 	PAIR_CLASS_INIT(&tag[0], "footer");
 	bufcat_style(h, "width", "100%");

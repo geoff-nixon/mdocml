@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.70 2010/05/17 10:50:32 joerg Exp $ */
+/*	$Id: man_term.c,v 1.71 2010/05/17 22:11:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -864,7 +864,10 @@ print_man_foot(struct termp *p, const struct man_meta *meta)
 
 	term_fontrepl(p, TERMFONT_NONE);
 
-	time2a(meta->date, buf, DATESIZ);
+	if (meta->rawdate)
+		strlcpy(buf, meta->rawdate, DATESIZ);
+	else
+		time2a(meta->date, buf, DATESIZ);
 
 	term_vspace(p);
 	term_vspace(p);

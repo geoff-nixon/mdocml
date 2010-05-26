@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.137 2010/05/24 13:39:47 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.138 2010/05/25 12:37:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -560,6 +560,8 @@ mdoc_ptext(struct mdoc *m, int line, char *buf, int offs)
 	 * Search for the beginning of unescaped trailing whitespace (ws)
 	 * and for the first character not to be output (end).
 	 */
+
+	/* FIXME: replace with strcspn(). */
 	ws = NULL;
 	for (c = end = buf + offs; *c; c++) {
 		switch (*c) {

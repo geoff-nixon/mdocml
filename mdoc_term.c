@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.130 2010/05/24 21:51:20 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.131 2010/05/26 10:39:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -2098,6 +2098,8 @@ termp_li_pre(DECL_ARGS)
 {
 
 	term_fontpush(p, TERMFONT_NONE);
+	if (NULL == n->child)
+		term_word(p, "");
 	return(1);
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.67 2010/05/24 12:17:09 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.68 2010/05/29 18:47:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -2091,8 +2091,6 @@ mdoc_li_pre(MDOC_ARGS)
 
 	PAIR_CLASS_INIT(&tag, "lit");
 	print_otag(h, TAG_SPAN, 1, &tag);
-	if (NULL == n->child)
-		print_text(h, "");
 	return(1);
 }
 

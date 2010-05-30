@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.138 2010/05/25 12:37:20 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.139 2010/05/26 09:35:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -276,11 +276,11 @@ mdoc_macro(struct mdoc *m, enum mdoct tok,
 		if ( ! mdoc_pmsg(m, ln, pp, MANDOCERR_BADPROLOG))
 			return(0);
 		if (NULL == m->meta.title)
-			m->meta.title = mandoc_strdup("unknown");
+			m->meta.title = mandoc_strdup("UNKNOWN");
 		if (NULL == m->meta.vol)
-			m->meta.vol = mandoc_strdup("local");
+			m->meta.vol = mandoc_strdup("LOCAL");
 		if (NULL == m->meta.os)
-			m->meta.os = mandoc_strdup("local");
+			m->meta.os = mandoc_strdup("LOCAL");
 		if (0 == m->meta.date)
 			m->meta.date = time(NULL);
 		m->flags |= MDOC_PBODY;

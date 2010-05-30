@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.70 2010/05/29 18:47:54 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.71 2010/05/30 21:28:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1038,7 +1038,9 @@ blk_full(MACRO_PROT_ARGS)
 			head = m->last;
 		}
 
-		if (ARGS_PHRASE == ac || ARGS_PPHRASE == ac) {
+		if (ARGS_PHRASE == ac || 
+				ARGS_PEND == ac ||
+				ARGS_PPHRASE == ac) {
 			if (ARGS_PPHRASE == ac)
 				m->flags |= MDOC_PPHRASE;
 			if (ARGS_PEND == ac && ARGS_PPHRASE == lac)

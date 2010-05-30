@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.61 2010/05/24 11:59:37 joerg Exp $ */
+/*	$Id: mdoc_action.c,v 1.62 2010/05/29 18:58:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -499,8 +499,8 @@ post_dt(POST_ARGS)
 	if (NULL == (nn = n->child)) {
 		/* XXX: make these macro values. */
 		/* FIXME: warn about missing values. */
-		m->meta.title = mandoc_strdup("unknown");
-		m->meta.vol = mandoc_strdup("local");
+		m->meta.title = mandoc_strdup("UNKNOWN");
+		m->meta.vol = mandoc_strdup("LOCAL");
 		m->meta.msec = mandoc_strdup("1");
 		return(post_prol(m, n));
 	}
@@ -509,12 +509,13 @@ post_dt(POST_ARGS)
 	 *   --> title = TITLE, volume = local, msec = 0, arch = NULL
 	 */
 
-	m->meta.title = mandoc_strdup(nn->string);
+	m->meta.title = mandoc_strdup
+		('\0' == nn->string[0] ? "UNKNOWN" : nn->string);
 
 	if (NULL == (nn = nn->next)) {
 		/* FIXME: warn about missing msec. */
 		/* XXX: make this a macro value. */
-		m->meta.vol = mandoc_strdup("local");
+		m->meta.vol = mandoc_strdup("LOCAL");
 		m->meta.msec = mandoc_strdup("1");
 		return(post_prol(m, n));
 	}

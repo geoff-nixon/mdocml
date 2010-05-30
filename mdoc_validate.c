@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.84 2010/05/26 10:39:35 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.85 2010/05/30 11:00:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -747,9 +747,7 @@ post_dt(POST_ARGS)
 
 	if (NULL != (nn = mdoc->last->child))
 		for (p = nn->string; *p; p++) {
-			if ( ! isalpha((u_char)*p))
-				continue;
-			if (isupper((u_char)*p))
+			if (toupper((u_char)*p) == *p)
 				continue;
 			if ( ! mdoc_nmsg(mdoc, nn, MANDOCERR_UPPERCASE))
 				return(0);

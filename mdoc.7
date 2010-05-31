@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.110 2010/05/26 10:39:35 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.111 2010/05/30 11:00:53 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 26 2010 $
+.Dd $Mdocdate: May 30 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -1143,11 +1143,11 @@ List entry bodies must be left empty.
 Column bodies have the following syntax:
 .Pp
 .D1 .It col1 <TAB> ... coln
-.D1 .It col1 Ta ... coln
-.D1 .It col1 <TAB> col2 Ta coln
+.D1 .It col1 \&Ta ... coln
+.D1 .It col1 <TAB> col2 \&Ta coln
 .Pp
 where columns may be separated by tabs, the literal string
-.Qq Ta ,
+.Qq \&Ta ,
 or a mixture of both.
 These are equivalent except that quoted sections propogate over tabs,
 for example,

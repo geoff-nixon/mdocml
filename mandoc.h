@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.6 2010/05/24 01:41:31 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.7 2010/05/25 12:37:20 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -31,7 +31,6 @@ enum	mandocerr {
 	MANDOCERR_PROLOGOOO, /* out of order prologue */
 	MANDOCERR_PROLOGREP, /* repeated prologue entry */
 	MANDOCERR_LISTFIRST, /* list type must come first */
-	MANDOCERR_COLUMNS, /* column syntax is inconsistent */
 	MANDOCERR_BADSTANDARD, /* bad standard */
 	MANDOCERR_BADLIB, /* bad library */
 	MANDOCERR_BADESCAPE, /* bad escape sequence */
@@ -78,6 +77,7 @@ enum	mandocerr {
 	MANDOCERR_BODYLOST, /* body argument(s) will be lost */
 #define	MANDOCERR_ERROR		MANDOCERR_BODYLOST
 
+	MANDOCERR_COLUMNS, /* column syntax is inconsistent */
 	/* FIXME: this should be a MANDOCERR_ERROR */
 	MANDOCERR_FONTTYPE, /* missing font type */
 	/* FIXME: this should be a MANDOCERR_ERROR */

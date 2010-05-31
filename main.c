@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.78 2010/05/16 22:28:33 kristaps Exp $ */
+/*	$Id: main.c,v 1.79 2010/05/17 22:11:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -102,7 +102,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"out of order prologue",
 	"repeated prologue entry",
 	"list type must come first",
-	"column syntax is inconsistent",
 	"bad standard",
 	"bad library",
 	"bad escape sequence",
@@ -144,6 +143,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"no title in document",
 	"line argument(s) will be lost",
 	"body argument(s) will be lost",
+	"column syntax is inconsistent",
 	"missing font type",
 	"missing display type",
 	"missing list type",

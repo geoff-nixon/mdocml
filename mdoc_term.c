@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.133 2010/05/29 18:58:52 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.134 2010/05/30 22:56:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -260,6 +260,7 @@ static	const struct termact termacts[MDOC_MAX] = {
 	{ termp_sp_pre, NULL }, /* br */
 	{ termp_sp_pre, NULL }, /* sp */ 
 	{ termp_under_pre, termp____post }, /* %U */ 
+	{ NULL, NULL }, /* Ta */ 
 };
 
 

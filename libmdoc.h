@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.49 2010/05/17 23:57:06 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.50 2010/05/24 12:05:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -34,6 +34,7 @@ struct	mdoc {
 #define	MDOC_NEWLINE	 (1 << 3) /* first macro/text in a line */
 #define	MDOC_PHRASELIT	 (1 << 4) /* literal within a partila phrase */
 #define	MDOC_PPHRASE	 (1 << 5) /* within a partial phrase */
+#define	MDOC_FREECOL	 (1 << 6) /* `It' invocation should close */
 	int		  pflags;
 	enum mdoc_next	  next;
 	struct mdoc_node *last;

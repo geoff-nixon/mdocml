@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.140 2010/05/30 11:00:53 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.141 2010/05/31 10:28:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -542,7 +542,8 @@ mdoc_node_delete(struct mdoc *m, struct mdoc_node *p)
 static int
 mdoc_ptext(struct mdoc *m, int line, char *buf, int offs)
 {
-	char		*c, *ws, *end;
+	char		 *c, *ws, *end;
+	struct mdoc_node *n;
 
 	/* Ignore bogus comments. */
 
@@ -555,6 +556,29 @@ mdoc_ptext(struct mdoc *m, int line, char *buf, int offs)
 
 	if (SEC_NONE == m->lastnamed)
 		return(mdoc_pmsg(m, line, offs, MANDOCERR_NOTEXT));
+
+	assert(m->last);
+	n = m->last;
+
+	/*
+	 * Diver directly into list processing if we're encountering a
+	 * columnar MDOC_BLOCK with or without a prior MDOC_BLOCK entry
+	 * (if it's a MDOC_BODY that means it's open, in which case we
+	 * should process within its context).
+	 */
+
+	if (MDOC_Bl == n->tok && LIST_column == n->data.list) {
+		m->flags |= MDOC_FREECOL;
+		return(mdoc_macro(m, MDOC_It, line, offs, &offs, buf));
+	}
+
+	if (MDOC_It == n->tok && MDOC_BLOCK == n->type &&
+			NULL != n->parent &&
+			MDOC_Bl == n->parent->tok &&
+			LIST_column == n->parent->data.list) {
+		m->flags |= MDOC_FREECOL;
+		return(mdoc_macro(m, MDOC_It, line, offs, &offs, buf));
+	}
 
 	/*
 	 * Search for the beginning of unescaped trailing whitespace (ws)

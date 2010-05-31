@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.77 2010/05/31 15:42:09 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.78 2010/05/31 22:39:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1683,13 +1683,13 @@ phrase(struct mdoc *m, int line, int ppos, char *buf)
 }
 
 
+/* ARGSUSED */
 static int
 phrase_ta(MACRO_PROT_ARGS)
 {
 	int		  la;
 	enum mdoct	  ntok;
 	enum margserr	  ac;
-	struct mdoc_node *n;
 	char		 *p;
 
 	/*
@@ -1697,7 +1697,6 @@ phrase_ta(MACRO_PROT_ARGS)
 	 * it should simply error out with ARGSLOST.
 	 */
 
-	n = m->last;
 	if ( ! rew_sub(MDOC_BODY, m, MDOC_It, line, ppos))
 		return(0);
 	if ( ! mdoc_body_alloc(m, line, ppos, MDOC_It))

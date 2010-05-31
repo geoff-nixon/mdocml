@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.74 2010/05/30 22:56:02 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.75 2010/05/31 10:28:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1702,7 +1702,10 @@ phrase_ta(MACRO_PROT_ARGS)
 	 */ 
 	if (NULL == m->last || 
 			MDOC_BODY != m->last->type ||
-			MDOC_It != m->last->tok) {
+			MDOC_It != m->last->tok ||
+			NULL == m->last->parent->parent ||
+			MDOC_Bl != m->last->parent->parent->tok ||
+			LIST_column != m->last->parent->parent->data.list) {
 		swarn(m, tok, line, ppos, n);
 		return(0);
 	}

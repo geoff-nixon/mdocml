@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.69 2010/05/29 18:58:52 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.70 2010/05/30 22:56:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -255,6 +255,7 @@ static	const struct htmlmdoc mdocs[MDOC_MAX] = {
 	{mdoc_sp_pre, NULL}, /* br */
 	{mdoc_sp_pre, NULL}, /* sp */ 
 	{mdoc__x_pre, mdoc__x_post}, /* %U */ 
+	{NULL, NULL}, /* Ta */ 
 };
 
 

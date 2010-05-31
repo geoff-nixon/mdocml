@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.86 2010/05/30 11:47:44 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.87 2010/05/30 22:56:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -268,6 +268,7 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, posts_notext },			/* br */
 	{ NULL, posts_sp },			/* sp */
 	{ NULL, posts_text1 },			/* %U */
+	{ NULL, NULL },				/* Ta */
 };
 
 

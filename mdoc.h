@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.81 2010/05/17 22:11:42 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.82 2010/05/17 23:57:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -149,6 +149,7 @@ enum	mdoct {
 	MDOC_br,
 	MDOC_sp,
 	MDOC__U,
+	MDOC_Ta,
 	MDOC_MAX
 };
 

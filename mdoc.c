@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.141 2010/05/31 10:28:04 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.142 2010/05/31 15:42:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -567,7 +567,8 @@ mdoc_ptext(struct mdoc *m, int line, char *buf, int offs)
 	 * should process within its context).
 	 */
 
-	if (MDOC_Bl == n->tok && LIST_column == n->data.list) {
+	if (MDOC_Bl == n->tok && MDOC_BODY == n->type &&
+			LIST_column == n->data.list) {
 		m->flags |= MDOC_FREECOL;
 		return(mdoc_macro(m, MDOC_It, line, offs, &offs, buf));
 	}

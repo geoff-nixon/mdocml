@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.75 2010/05/31 10:28:04 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.76 2010/05/31 11:52:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1118,7 +1118,7 @@ blk_full(MACRO_PROT_ARGS)
 	/* If we've already opened our body, exit now. */
 
 	if (NULL != body)
-		return(1);
+		goto out;
 
 #ifdef	UGLY
 	/*
@@ -1145,6 +1145,16 @@ blk_full(MACRO_PROT_ARGS)
 	if ( ! mdoc_body_alloc(m, line, ppos, tok))
 		return(0);
 
+out:
+	if ( ! (MDOC_FREECOL & m->flags))
+		return(1);
+
+	if ( ! rew_sub(MDOC_BODY, m, tok, line, ppos))
+		return(0);
+	if ( ! rew_sub(MDOC_BLOCK, m, tok, line, ppos))
+		return(0);
+
+	m->flags &= ~MDOC_FREECOL;
 	return(1);
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.84 2010/05/24 23:54:18 schwarze Exp $ */
+/*	$Id: roff.c,v 1.85 2010/05/29 19:41:47 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -666,10 +666,8 @@ roff_cond_text(ROFF_ARGS)
 		return(ROFFRULE_DENY == rr ? ROFF_IGN : ROFF_CONT);
 	}
 
-	if (ep > st && '\\' != *(ep - 1)) {
-		ep = '\0';
+	if (ep == st || (ep > st && '\\' != *(ep - 1)))
 		roffnode_pop(r);
-	}
 
 	roffnode_cleanscope(r);
 	return(ROFFRULE_DENY == rr ? ROFF_IGN : ROFF_CONT);

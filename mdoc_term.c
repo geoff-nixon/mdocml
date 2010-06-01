@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.134 2010/05/30 22:56:02 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.135 2010/05/31 10:28:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1872,7 +1872,7 @@ termp_in_post(DECL_ARGS)
 	term_word(p, ">");
 	term_fontpop(p);
 
-	if (SEC_SYNOPSIS != n->sec && ! (MDOC_LINE & n->flags))
+	if (SEC_SYNOPSIS != n->sec || ! (MDOC_LINE & n->flags))
 		return;
 
 	term_newln(p);

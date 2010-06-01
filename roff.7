@@ -1,4 +1,4 @@
-.\"	$Id: roff.7,v 1.6 2010/05/24 22:25:58 schwarze Exp $
+.\"	$Id: roff.7,v 1.7 2010/05/24 23:54:18 schwarze Exp $
 .\"
 .\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -207,7 +207,9 @@ macro is discarded.
 Furthermore, if an explicit closing sequence
 .Sq \e}
 is specified in a free-form line, the entire line is accepted within the
-scope of the prior macro, not only the text preceding the close.
+scope of the prior macro, not only the text preceding the close, with the
+.Sq \e}
+collapsing into a zero-width space.
 .Ss \&ig
 Ignore input.
 Accepts the following syntax:

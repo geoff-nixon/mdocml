@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.80 2010/05/31 23:40:25 kristaps Exp $ */
+/*	$Id: main.c,v 1.81 2010/06/01 14:54:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -141,12 +141,12 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"macro requires body argument(s)",
 	"macro requires argument(s)",
 	"no title in document",
+	"missing list type",
 	"line argument(s) will be lost",
 	"body argument(s) will be lost",
 	"column syntax is inconsistent",
 	"missing font type",
 	"missing display type",
-	"missing list type",
 	"displays may not be nested",
 	"no scope to rewind: syntax violated",
 	"scope broken, syntax violated",

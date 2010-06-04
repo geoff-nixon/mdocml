@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.138 2010/06/04 21:49:39 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.139 2010/06/04 22:16:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1538,7 +1538,9 @@ termp_fn_pre(DECL_ARGS)
 
 	/* NB: MDOC_LINE has no effect on this macro! */
 	if (SEC_SYNOPSIS == n->sec) {
-		if (n->prev)
+		if (n->prev && MDOC_Ft == n->prev->tok)
+			term_newln(p);
+		else if (n->prev)
 			term_vspace(p);
 	}
 

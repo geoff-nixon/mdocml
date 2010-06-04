@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.74 2010/06/04 21:49:39 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.75 2010/06/04 22:16:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1590,6 +1590,10 @@ mdoc_fn_pre(MDOC_ARGS)
 		bufcat_su(h, "margin-left", &su);
 		su.scale = -su.scale;
 		bufcat_su(h, "text-indent", &su);
+		if (n->prev && MDOC_Ft != n->prev->tok) {
+			SCALE_VS_INIT(&su, 1);
+			bufcat_su(h, "margin-top", &su);
+		} 
 		if (n->next) {
 			SCALE_VS_INIT(&su, 1);
 			bufcat_su(h, "margin-bottom", &su);

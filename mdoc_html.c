@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.73 2010/06/04 21:05:39 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.74 2010/06/04 21:49:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1584,7 +1584,8 @@ mdoc_fn_pre(MDOC_ARGS)
 	int			 sz, i;
 	struct roffsu		 su;
 
-	if (SEC_SYNOPSIS == n->sec && MDOC_LINE & n->flags) {
+	/* NB: MDOC_LINE has no effect on this macro! */
+	if (SEC_SYNOPSIS == n->sec) {
 		SCALE_HS_INIT(&su, INDENT);
 		bufcat_su(h, "margin-left", &su);
 		su.scale = -su.scale;

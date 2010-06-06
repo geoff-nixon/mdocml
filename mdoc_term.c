@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.140 2010/06/04 22:26:13 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.141 2010/06/06 10:50:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1844,6 +1844,9 @@ termp_cd_pre(DECL_ARGS)
 static int
 termp_in_pre(DECL_ARGS)
 {
+
+	if (SEC_SYNOPSIS == n->sec && n->prev && MDOC_In != n->prev->tok)
+		term_vspace(p);
 
 	if (SEC_SYNOPSIS == n->sec && MDOC_LINE & n->flags) {
 		term_fontpush(p, TERMFONT_BOLD);

@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.81 2010/06/01 14:54:37 kristaps Exp $ */
+/*	$Id: main.c,v 1.82 2010/06/03 13:44:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -395,7 +395,7 @@ read_whole_file(struct curparse *curp, struct buf *fb, int *with_mmap)
 		*with_mmap = 1;
 		fb->sz = (size_t)st.st_size;
 		fb->buf = mmap(NULL, fb->sz, PROT_READ, 
-				MAP_FILE, curp->fd, 0);
+				MAP_FILE|MAP_SHARED, curp->fd, 0);
 		if (fb->buf != MAP_FAILED)
 			return(1);
 	}

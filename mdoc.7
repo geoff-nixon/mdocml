@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.119 2010/06/04 22:16:27 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.120 2010/06/06 10:49:56 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: June 4 2010 $
+.Dd $Mdocdate: June 6 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -1885,7 +1885,7 @@ phrases on an
 .Sx \&It ,
 for example,
 .Pp
-.D1 .It \(dqcol1 ; <TAB> col2 ;\(dq ;
+.D1 .It \(dqcol1 ; <TAB> col2 ;\(dq \&;
 .Pp
 will preserve the semicolon whitespace except for the last.
 .Pp
@@ -2113,7 +2113,7 @@ which is used for function return types.
 .Pp
 Examples:
 .D1 \&.Vt unsigned char
-.D1 \&.Vt extern const char * const sys_signame[] ;
+.D1 \&.Vt extern const char * const sys_signame[] \&;
 .Pp
 See also
 .Sx \&Ft
@@ -2148,7 +2148,7 @@ This behaviour is for compatibility with
 .Pp
 Examples:
 .D1 \&.Xr mandoc 1
-.D1 \&.Xr mandoc 1 ;
+.D1 \&.Xr mandoc 1 \&;
 .D1 \&.Xr mandoc 1 \&Ns s behaviour
 .Ss \&br
 .Ss \&sp

@@ -1,4 +1,4 @@
-/*	$Id: main.h,v 1.3 2010/05/15 16:18:23 joerg Exp $ */
+/*	$Id: main.h,v 1.4 2010/06/07 10:52:44 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -42,6 +42,7 @@ void		  tree_mdoc(void *, const struct mdoc *);
 void		  tree_man(void *, const struct man *);
 
 void		 *ascii_alloc(char *);
+void		 *ps_alloc(void);
 void		  terminal_mdoc(void *, const struct mdoc *);
 void		  terminal_man(void *, const struct man *);
 void		  terminal_free(void *);

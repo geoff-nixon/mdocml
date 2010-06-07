@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.141 2010/06/07 10:52:44 kristaps Exp $ */
+/*	$Id: term.c,v 1.142 2010/06/07 20:57:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -315,7 +315,7 @@ alloc(char *outopts, enum termenc enc, enum termtype type)
 	while (outopts && *outopts)
 		switch (getsubopt(&outopts, UNCONST(toks), &v)) {
 		case (0):
-			width = atoi(v);
+			width = (size_t)atoi(v);
 			break;
 		default:
 			break;

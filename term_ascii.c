@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.145 2010/06/08 13:22:37 kristaps Exp $ */
+/*	$Id: term_ascii.c,v 1.1 2010/06/08 15:00:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -24,6 +24,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 #include "out.h"
 #include "term.h"

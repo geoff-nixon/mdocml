@@ -299,7 +299,6 @@
 					<A NAME="news">NEWS</A>
 					</H1>
 					<DIV CLASS="news">
-					</DIV>
 						<P>
 							<SPAN CLASS="date">07-06-2010</SPAN>:
 							version 1.10.1
@@ -400,7 +399,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/06/07 12:20:07 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/06/07 21:05:59 $
 					</DIV>
 				</TD>
 			</TR>

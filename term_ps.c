@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.1 2010/06/08 13:22:37 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.2 2010/06/08 15:00:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -68,6 +68,7 @@ ps_free(void *arg)
 }
 
 
+/* ARGSUSED */
 static void
 ps_end(struct termp *p)
 {

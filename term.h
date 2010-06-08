@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.58 2010/06/07 20:57:09 kristaps Exp $ */
+/*	$Id: term.h,v 1.59 2010/06/08 13:22:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -40,6 +40,15 @@ enum	termfont {
 
 typedef void	(*term_margin)(struct termp *, const void *);
 
+struct	termp_ps {
+	int		  psstate;	/* -Tps: state of ps output */
+#define	PS_INLINE	 (1 << 0)	
+#define	PS_MARGINS	 (1 << 1)	
+	size_t		  pscol;	/* -Tps: visible column */
+	size_t		  psrow;	/* -Tps: visible row */
+	size_t		  pspage;	/* -Tps: current page */
+};
+
 struct	termp {
 	enum termtype	  type;
 	size_t		  defrmargin;	/* Right margin of the device.. */
@@ -72,13 +81,15 @@ struct	termp {
 	int		  fonti;	/* Index of font stack. */
 	term_margin	  headf;	/* invoked to print head */
 	term_margin	  footf;	/* invoked to print foot */
+	void		(*letter)(struct termp *, char);
+	void		(*begin)(struct termp *);
+	void		(*end)(struct termp *);
+	void		(*endline)(struct termp *);
+	void		(*advance)(struct termp *, size_t);
 	const void	 *argf;		/* arg for headf/footf */
-	int		  psstate;	/* -Tps: state of ps output */
-#define	PS_INLINE	 (1 << 0)	
-#define	PS_MARGINS	 (1 << 1)	
-	size_t		  pscol;	/* -Tps: visible column */
-	size_t		  psrow;	/* -Tps: visible row */
-	size_t		  pspage;	/* -Tps: current page */
+	union {
+		struct termp_ps ps;
+	} engine;
 };
 
 struct termp	 *term_alloc(enum termenc);

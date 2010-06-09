@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.85 2010/05/29 19:41:47 kristaps Exp $ */
+/*	$Id: roff.c,v 1.86 2010/06/01 11:47:28 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -621,11 +621,21 @@ roff_cond_sub(ROFF_ARGS)
 {
 	enum rofft	 t;
 	enum roffrule	 rr;
+	struct roffnode	*l;
 
 	ppos = pos;
 	rr = r->last->rule;
 
-	roff_cond_text(r, tok, bufp, szp, ln, ppos, pos, offs);
+	/* 
+	 * Clean out scope.  If we've closed ourselves, then don't
+	 * continue. 
+	 */
+
+	l = r->last;
+	roffnode_cleanscope(r);
+
+	if (l != r->last)
+		return(ROFFRULE_DENY == rr ? ROFF_IGN : ROFF_CONT);
 
 	if (ROFF_MAX == (t = roff_parse(*bufp, &pos)))
 		return(ROFFRULE_DENY == rr ? ROFF_IGN : ROFF_CONT);

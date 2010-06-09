@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.3 2010/06/08 15:06:01 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.4 2010/06/09 08:07:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -125,6 +125,8 @@ ps_printf(struct termp *p, const char *fmt, ...)
 	pos = (int)p->engine.ps.psmargcur;
 	vsnprintf(&p->engine.ps.psmarg[pos], PS_BUFSLOP, fmt, ap);
 	p->engine.ps.psmargcur = strlen(p->engine.ps.psmarg);
+
+	va_end(ap);
 }
 
 
@@ -143,7 +145,7 @@ ps_putchar(struct termp *p, char c)
 	PS_GROWBUF(p, 2);
 
 	pos = (int)p->engine.ps.psmargcur++;
-	p->engine.ps.psmarg[pos] = c;
+	p->engine.ps.psmarg[pos++] = c;
 	p->engine.ps.psmarg[pos] = '\0';
 }
 

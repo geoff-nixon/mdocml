@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.33 2010/05/15 22:44:04 kristaps Exp $ */
+/*	$Id: libman.h,v 1.34 2010/05/17 22:11:42 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -79,7 +79,7 @@ int		  man_args(struct man *, int, int *, char *, char **);
 int		  man_vmsg(struct man *, enum mandocerr,
 			int, int, const char *, ...);
 int		  man_valid_post(struct man *);
-int		  man_valid_pre(struct man *, const struct man_node *);
+int		  man_valid_pre(struct man *, struct man_node *);
 int		  man_action_post(struct man *);
 int		  man_action_pre(struct man *, struct man_node *);
 int		  man_unscope(struct man *, 

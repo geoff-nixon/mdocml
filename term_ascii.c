@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.1 2010/06/08 15:00:17 kristaps Exp $ */
+/*	$Id: term_ascii.c,v 1.2 2010/06/08 15:06:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -87,7 +87,6 @@ static void
 ascii_letter(struct termp *p, char c)
 {
 	
-	/* Just push onto the screen. */
 	putchar(c);
 }
 

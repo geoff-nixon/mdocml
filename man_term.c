@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.72 2010/05/26 14:03:54 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.73 2010/06/07 20:57:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -73,9 +73,9 @@ struct	termact {
 static	int		  a2width(const struct man_node *);
 static	int		  a2height(const struct man_node *);
 
-static	void		  print_man_head(struct termp *, const void *);
 static	void		  print_man_nodelist(DECL_ARGS);
 static	void		  print_man_node(DECL_ARGS);
+static	void		  print_man_head(struct termp *, const void *);
 static	void		  print_man_foot(struct termp *, const void *);
 static	void		  print_bvspace(struct termp *, 
 				const struct man_node *);

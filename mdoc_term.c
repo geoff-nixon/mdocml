@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.144 2010/06/07 20:57:09 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.145 2010/06/09 08:07:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -276,9 +276,6 @@ terminal_mdoc(void *arg, const struct mdoc *mdoc)
 	p->maxrmargin = p->defrmargin;
 	p->tabwidth = 5;
 
-	term_begin(p, print_mdoc_head, 
-			print_mdoc_foot, mdoc_meta(mdoc));
-
 	if (NULL == p->symtab)
 		switch (p->enc) {
 		case (TERMENC_ASCII):
@@ -291,6 +288,8 @@ terminal_mdoc(void *arg, const struct mdoc *mdoc)
 
 	n = mdoc_node(mdoc);
 	m = mdoc_meta(mdoc);
+
+	term_begin(p, print_mdoc_head, print_mdoc_foot, m);
 
 	if (n->child)
 		print_mdoc_nodelist(p, NULL, m, n->child);

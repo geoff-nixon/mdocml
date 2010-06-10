@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.73 2010/06/07 20:57:09 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.74 2010/06/09 08:07:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -158,8 +158,7 @@ terminal_man(void *arg, const struct man *man)
 
 	p->overstep = 0;
 	p->maxrmargin = p->defrmargin;
-
-	term_begin(p, print_man_head, print_man_foot, man_meta(man));
+	p->tabwidth = 5;
 
 	if (NULL == p->symtab)
 		switch (p->enc) {
@@ -174,6 +173,7 @@ terminal_man(void *arg, const struct man *man)
 	n = man_node(man);
 	m = man_meta(man);
 
+	term_begin(p, print_man_head, print_man_foot, m);
 	p->flags |= TERMP_NOSPACE;
 
 	mt.fl = 0;

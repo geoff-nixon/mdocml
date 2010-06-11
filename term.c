@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.145 2010/06/08 13:22:37 kristaps Exp $ */
+/*	$Id: term.c,v 1.146 2010/06/08 15:00:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -603,10 +603,7 @@ encode(struct termp *p, const char *word, size_t sz)
 	 * character by character.
 	 */
 
-	if (TERMTYPE_PS == p->type) {
-		buffera(p, word, sz);
-		return;
-	} else if (TERMFONT_NONE == (f = term_fonttop(p))) {
+	if (TERMFONT_NONE == (f = term_fonttop(p))) {
 		buffera(p, word, sz);
 		return;
 	}

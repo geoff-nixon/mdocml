@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.80 2010/06/12 11:21:44 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.81 2010/06/12 11:58:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1036,6 +1036,7 @@ mdoc_it_pre(MDOC_ARGS)
 		bl = bl->parent;
 
 	type = bl->data.Bl.type;
+	comp = bl->data.Bl.comp;
 
 	/* Set default width and offset. */
 
@@ -1059,7 +1060,7 @@ mdoc_it_pre(MDOC_ARGS)
 	/* Get width, offset, and compact arguments. */
 
 	wp = -1;
-	for (comp = i = 0; bl->args && i < (int)bl->args->argc; i++) 
+	for (i = 0; bl->args && i < (int)bl->args->argc; i++) 
 		switch (bl->args->argv[i].arg) {
 		case (MDOC_Column):
 			wp = i; /* Save for later. */
@@ -1069,9 +1070,6 @@ mdoc_it_pre(MDOC_ARGS)
 			break;
 		case (MDOC_Offset):
 			a2offs(bl->args->argv[i].value[0], &offs);
-			break;
-		case (MDOC_Compact):
-			comp = 1;
 			break;
 		default:
 			break;

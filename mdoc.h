@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.85 2010/06/12 11:21:44 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.86 2010/06/12 11:58:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -273,13 +273,14 @@ enum	mdoc_disp {
 };
 
 struct	mdoc_bd {
-	const char	 *offs;
-	enum mdoc_disp	  type;
-	int		  comp;
+	const char	 *offs; /* -offset */
+	enum mdoc_disp	  type; /* -ragged, etc. */
+	int		  comp; /* -compact */
 };
 
 struct	mdoc_bl {
-	enum mdoc_list	  type;
+	enum mdoc_list	  type; /* -tag, -enum, etc. */
+	int		  comp; /* -compact */
 };
 
 /* Node in AST. */

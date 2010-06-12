@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.83 2010/05/31 10:28:04 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.84 2010/06/12 10:09:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -272,6 +272,12 @@ enum	mdoc_disp {
 	DISP_literal
 };
 
+struct	mdoc_bd {
+	const char	 *offs;
+	enum mdoc_disp	  type;
+	int		  comp;
+};
+
 /* Node in AST. */
 struct	mdoc_node {
 	struct mdoc_node *parent; /* parent AST node */
@@ -300,7 +306,7 @@ struct	mdoc_node {
 
 	union {
 		enum mdoc_list list; /* `Bl' nodes */
-		enum mdoc_disp disp; /* `Bd' nodes */
+		struct mdoc_bd Bd;
 	} data;
 };
 

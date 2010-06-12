@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.10 2010/06/03 13:44:36 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.11 2010/06/12 10:09:19 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -36,7 +36,9 @@ enum	mandocerr {
 	MANDOCERR_BADESCAPE, /* bad escape sequence */
 	MANDOCERR_BADQUOTE, /* unterminated quoted string */
 	MANDOCERR_NOWIDTHARG, /* argument requires the width argument */
+	/* FIXME: merge with MANDOCERR_IGNARGV. */
 	MANDOCERR_WIDTHARG, /* superfluous width argument */
+	MANDOCERR_IGNARGV, /* macro ignoring argv */
 	MANDOCERR_BADDATE, /* bad date argument */
 	MANDOCERR_BADWIDTH, /* bad width argument */
 	MANDOCERR_BADMSEC, /* unknown manual section */

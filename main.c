@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.86 2010/06/08 13:22:37 kristaps Exp $ */
+/*	$Id: main.c,v 1.87 2010/06/12 10:09:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -109,6 +109,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"unterminated quoted string",
 	"argument requires the width argument",
 	"superfluous width argument",
+	"ignoring argument",
 	"bad date argument",
 	"bad width argument",
 	"unknown manual section",

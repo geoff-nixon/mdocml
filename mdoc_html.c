@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.79 2010/06/12 10:09:19 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.80 2010/06/12 11:21:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1035,7 +1035,7 @@ mdoc_it_pre(MDOC_ARGS)
 	if (MDOC_BLOCK != n->type)
 		bl = bl->parent;
 
-	type = bl->data.list;
+	type = bl->data.Bl.type;
 
 	/* Set default width and offset. */
 
@@ -1123,7 +1123,7 @@ mdoc_bl_pre(MDOC_ARGS)
 		return(0);
 	if (MDOC_BLOCK != n->type)
 		return(1);
-	if (LIST_enum != n->data.list)
+	if (LIST_enum != n->data.Bl.type)
 		return(1);
 
 	ord = malloc(sizeof(struct ord));
@@ -1147,7 +1147,7 @@ mdoc_bl_post(MDOC_ARGS)
 
 	if (MDOC_BLOCK != n->type)
 		return;
-	if (LIST_enum != n->data.list)
+	if (LIST_enum != n->data.Bl.type)
 		return;
 
 	ord = h->ords.head;

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.51 2010/05/31 10:28:04 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.52 2010/05/31 13:39:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -359,7 +359,7 @@ mdoc_args(struct mdoc *m, int line, int *pos,
 		if (MDOC_Bl == n->tok)
 			break;
 
-	if (n && LIST_column == n->data.list) {
+	if (n && LIST_column == n->data.Bl.type) {
 		fl |= ARGS_TABSEP;
 		fl &= ~ARGS_DELIM;
 	}

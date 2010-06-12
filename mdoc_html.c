@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.81 2010/06/12 11:58:22 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.82 2010/06/12 12:10:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1035,12 +1035,13 @@ mdoc_it_pre(MDOC_ARGS)
 	if (MDOC_BLOCK != n->type)
 		bl = bl->parent;
 
+	SCALE_HS_INIT(&offs, 0);
+
 	type = bl->data.Bl.type;
 	comp = bl->data.Bl.comp;
 
-	/* Set default width and offset. */
-
-	SCALE_HS_INIT(&offs, 0);
+	if (bl->data.Bl.offs)
+		a2offs(bl->data.Bl.offs, &offs);
 
 	switch (type) {
 	case (LIST_enum):
@@ -1057,8 +1058,6 @@ mdoc_it_pre(MDOC_ARGS)
 		break;
 	}
 
-	/* Get width, offset, and compact arguments. */
-
 	wp = -1;
 	for (i = 0; bl->args && i < (int)bl->args->argc; i++) 
 		switch (bl->args->argv[i].arg) {
@@ -1067,9 +1066,6 @@ mdoc_it_pre(MDOC_ARGS)
 			break;
 		case (MDOC_Width):
 			a2width(bl->args->argv[i].value[0], &width);
-			break;
-		case (MDOC_Offset):
-			a2offs(bl->args->argv[i].value[0], &offs);
 			break;
 		default:
 			break;

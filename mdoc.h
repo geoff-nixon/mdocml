@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.86 2010/06/12 11:58:22 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.87 2010/06/12 12:10:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -279,6 +279,7 @@ struct	mdoc_bd {
 };
 
 struct	mdoc_bl {
+	const char	 *offs; /* -offset */
 	enum mdoc_list	  type; /* -tag, -enum, etc. */
 	int		  comp; /* -compact */
 };

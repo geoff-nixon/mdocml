@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.123 2010/06/07 11:14:13 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.124 2010/06/07 12:20:07 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -2168,6 +2168,12 @@ Heirloom troff, the other significant troff implementation accepting
 \-mdoc, is similar to historic groff.
 .Pp
 .Bl -dash -compact
+.It
+groff supports a
+.Fl file Ar filename
+argument to
+.Sx \&Bd .
+mandoc does not.
 .It
 groff behaves inconsistently when encountering
 .Pf non- Sx \&Fa

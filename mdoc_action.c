@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.65 2010/06/03 13:44:36 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.66 2010/06/12 10:09:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -979,14 +979,12 @@ static int
 pre_bd(PRE_ARGS)
 {
 
-	if (MDOC_BLOCK == n->type)
-		return(pre_offset(m, n));
 	if (MDOC_BODY != n->type)
 		return(1);
 
-	if (DISP_literal == n->data.disp)
+	if (DISP_literal == n->data.Bd.type)
 		m->flags |= MDOC_LITERAL;
-	if (DISP_unfilled == n->data.disp)
+	if (DISP_unfilled == n->data.Bd.type)
 		m->flags |= MDOC_LITERAL;
 
 	return(1);

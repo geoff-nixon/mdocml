@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.151 2010/06/12 12:21:41 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.152 2010/06/12 12:38:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -731,6 +731,7 @@ termp_it_pre(DECL_ARGS)
 		 * handling for column for how this changes.
 		 */
 		width = a2width(&bl->args->argv[vals[0]], 0) + 2;
+		assert(bl->data.Bl.width);
 		break;
 	}
 

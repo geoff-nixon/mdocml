@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.82 2010/06/12 12:10:55 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.83 2010/06/12 12:38:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -1058,14 +1058,14 @@ mdoc_it_pre(MDOC_ARGS)
 		break;
 	}
 
+	if (bl->data.Bl.width)
+		a2width(bl->data.Bl.width, &width);
+
 	wp = -1;
 	for (i = 0; bl->args && i < (int)bl->args->argc; i++) 
 		switch (bl->args->argv[i].arg) {
 		case (MDOC_Column):
 			wp = i; /* Save for later. */
-			break;
-		case (MDOC_Width):
-			a2width(bl->args->argv[i].value[0], &width);
 			break;
 		default:
 			break;

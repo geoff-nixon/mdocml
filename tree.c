@@ -1,6 +1,6 @@
-/*	$Id: tree.c,v 1.19 2010/01/01 17:14:31 kristaps Exp $ */
+/*	$Id: tree.c,v 1.20 2010/05/17 22:11:42 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

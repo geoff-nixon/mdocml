@@ -1,6 +1,6 @@
-/*	$Id: mdoc_html.c,v 1.83 2010/06/12 12:38:01 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.84 2010/06/13 21:41:58 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

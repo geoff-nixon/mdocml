@@ -1,6 +1,6 @@
-/*	$Id: out.h,v 1.9 2009/11/12 08:21:05 kristaps Exp $ */
+/*	$Id: out.h,v 1.10 2010/04/07 11:25:38 kristaps Exp $ */
 /*
- * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

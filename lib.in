@@ -1,6 +1,6 @@
-/*	$Id: lib.in,v 1.7 2010/05/14 17:10:06 kristaps Exp $ */
+/*	$Id: lib.in,v 1.8 2010/06/11 23:40:33 kristaps Exp $ */
 /*
- * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

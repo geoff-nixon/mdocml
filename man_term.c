@@ -1,6 +1,6 @@
-/*	$Id: man_term.c,v 1.74 2010/06/09 08:07:13 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.75 2010/06/10 23:24:37 schwarze Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

@@ -1,6 +1,6 @@
-/*	$Id: term_ascii.c,v 1.2 2010/06/08 15:06:01 kristaps Exp $ */
+/*	$Id: term_ascii.c,v 1.3 2010/06/09 08:07:13 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

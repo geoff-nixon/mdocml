@@ -1,6 +1,6 @@
-/*	$Id: mdoc_strings.c,v 1.21 2010/05/15 17:26:34 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.22 2010/05/17 22:11:42 kristaps Exp $ */
 /*
- * Copyright (c) 2008 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

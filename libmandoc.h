@@ -1,6 +1,6 @@
-/*	$Id: libmandoc.h,v 1.6 2010/05/25 12:37:20 kristaps Exp $ */
+/*	$Id: libmandoc.h,v 1.7 2010/06/09 19:22:56 kristaps Exp $ */
 /*
- * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

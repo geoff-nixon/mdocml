@@ -1,6 +1,6 @@
-/*	$Id: main.c,v 1.87 2010/06/12 10:09:19 kristaps Exp $ */
+/*	$Id: main.c,v 1.88 2010/06/12 11:41:50 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

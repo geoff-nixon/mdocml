@@ -1,6 +1,6 @@
-/*	$Id: libman.h,v 1.34 2010/05/17 22:11:42 kristaps Exp $ */
+/*	$Id: libman.h,v 1.35 2010/06/09 19:22:56 kristaps Exp $ */
 /*
- * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

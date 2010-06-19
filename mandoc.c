@@ -1,6 +1,6 @@
-/*	$Id: mandoc.c,v 1.17 2010/06/01 11:47:28 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.18 2010/06/09 19:22:56 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

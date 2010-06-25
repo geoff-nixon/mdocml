@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.4 2010/06/19 20:46:28 kristaps Exp $ */
+/*	$Id: term_ascii.c,v 1.5 2010/06/25 18:53:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -79,6 +79,7 @@ ascii_alloc(char *outopts)
 }
 
 
+/* ARGSUSED */
 static size_t
 ascii_width(const struct termp *p, char c)
 {

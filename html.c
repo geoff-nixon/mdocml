@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.101 2010/06/07 10:52:44 kristaps Exp $ */
+/*	$Id: html.c,v 1.102 2010/06/19 20:46:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -718,11 +718,11 @@ bufcat_su(struct html *h, const char *p, const struct roffsu *su)
 		break;
 	}
 
-	if (su->pt)
-		buffmt(h, "%s: %f%s;", p, v, u);
-	else
-		/* LINTED */
-		buffmt(h, "%s: %d%s;", p, (int)v, u);
+	/* 
+	 * XXX: the CSS spec isn't clear as to which types accept
+	 * integer or real numbers, so we just make them all decimals.
+	 */
+	buffmt(h, "%s: %.2f%s;", p, v, u);
 }
 
 

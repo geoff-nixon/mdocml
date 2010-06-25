@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.10 2010/06/19 20:46:28 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.11 2010/06/25 18:53:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -431,6 +431,7 @@ ps_setfont(struct termp *p, enum termfont f)
 }
 
 
+/* ARGSUSED */
 static size_t
 ps_width(const struct termp *p, char c)
 {

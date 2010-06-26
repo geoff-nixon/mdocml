@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.53 2010/06/19 20:46:27 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.54 2010/06/26 15:36:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -45,8 +45,13 @@ struct	mdoc {
 	enum mdoc_sec	  lastsec;
 };
 
-#define	MACRO_PROT_ARGS	struct mdoc *m, enum mdoct tok, \
-			int line, int ppos, int *pos, char *buf
+#define	MACRO_PROT_ARGS	struct mdoc *m, \
+			const struct regset *regs, \
+			enum mdoct tok, \
+			int line, \
+			int ppos, \
+			int *pos, \
+			char *buf
 
 struct	mdoc_macro {
 	int		(*fp)(MACRO_PROT_ARGS);

@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.36 2010/06/19 20:46:27 kristaps Exp $ */
+/*	$Id: libman.h,v 1.37 2010/06/26 15:36:37 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -42,8 +42,13 @@ struct	man {
 	struct man_meta	 meta;
 };
 
-#define	MACRO_PROT_ARGS	  struct man *m, enum mant tok, int line, \
-			  int ppos, int *pos, char *buf
+#define	MACRO_PROT_ARGS	  struct man *m, \
+			  const struct regset *regs, \
+			  enum mant tok, \
+			  int line, \
+			  int ppos, \
+			  int *pos, \
+			  char *buf
 
 struct	man_macro {
 	int		(*fp)(MACRO_PROT_ARGS);

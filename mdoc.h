@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.89 2010/06/13 21:02:48 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.90 2010/06/19 20:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -155,6 +155,7 @@ enum	mdoct {
 
 /* What follows is a list of ALL possible macro arguments. */
 
+/* FIXME: make this into an enum. */
 #define	MDOC_Split	 0
 #define	MDOC_Nosplit	 1
 #define	MDOC_Ragged	 2

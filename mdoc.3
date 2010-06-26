@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.3,v 1.40 2010/05/25 22:16:59 kristaps Exp $
+.\"	$Id: mdoc.3,v 1.41 2010/05/30 22:56:02 kristaps Exp $
 .\"
 .\" Copyright (c) 2009-2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 25 2010 $
+.Dd $Mdocdate: May 30 2010 $
 .Dt MDOC 3
 .Os
 .Sh NAME
@@ -29,6 +29,7 @@
 .Nd mdoc macro compiler library
 .Sh SYNOPSIS
 .In mandoc.h
+.In regs.h
 .In mdoc.h
 .Vt extern const char * const * mdoc_macronames;
 .Vt extern const char * const * mdoc_argnames;
@@ -43,7 +44,12 @@
 .Ft "const struct mdoc_node *"
 .Fn mdoc_node "const struct mdoc *mdoc"
 .Ft int
-.Fn mdoc_parseln "struct mdoc *mdoc" "int line" "char *buf"
+.Fo mdoc_parseln
+.Fa "struct mdoc *mdoc"
+.Fa "const struct regset *regs"
+.Fa "int line"
+.Fa "char *buf"
+.Fc
 .Ft int
 .Fn mdoc_reset "struct mdoc *mdoc"
 .Sh DESCRIPTION

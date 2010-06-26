@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.148 2010/06/19 20:46:28 kristaps Exp $ */
+/*	$Id: term.c,v 1.149 2010/06/25 18:53:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -31,8 +31,6 @@
 #include "chars.h"
 #include "out.h"
 #include "term.h"
-#include "man.h"
-#include "mdoc.h"
 #include "main.h"
 
 static	void		  spec(struct termp *, const char *, size_t);

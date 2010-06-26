@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.75 2010/05/26 14:03:54 kristaps Exp $ */
+/*	$Id: man.c,v 1.76 2010/06/19 20:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -28,6 +28,7 @@
 #include <string.h>
 
 #include "mandoc.h"
+#include "regs.h"
 #include "libman.h"
 #include "libmandoc.h"
 
@@ -124,7 +125,8 @@ man_endparse(struct man *m)
 
 
 int
-man_parseln(struct man *m, int ln, char *buf, int offs)
+man_parseln(struct man *m, const struct regset *regs,
+		int ln, char *buf, int offs)
 {
 
 	if (MAN_HALT & m->flags)

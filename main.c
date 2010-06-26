@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.89 2010/06/19 20:46:27 kristaps Exp $ */
+/*	$Id: main.c,v 1.90 2010/06/26 15:22:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -562,9 +562,9 @@ fdesc(struct curparse *curp)
 
 		/* Lastly, push down into the parsers themselves. */
 
-		if (man && ! man_parseln(man, lnn_start, ln.buf, of))
+		if (man && ! man_parseln(man, &regs, lnn_start, ln.buf, of))
 			goto bailout;
-		if (mdoc && ! mdoc_parseln(mdoc, lnn_start, ln.buf, of))
+		if (mdoc && ! mdoc_parseln(mdoc, &regs, lnn_start, ln.buf, of))
 			goto bailout;
 	}
 

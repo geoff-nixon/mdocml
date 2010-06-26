@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.8 2010/06/19 20:46:27 kristaps Exp $ */
+/*	$Id: regs.h,v 1.1 2010/06/26 15:22:19 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -24,10 +24,6 @@ enum	regs {
 	REG__MAX
 };
 
-/*
- * Registers are passed into libmdoc and libman.  They refer to some
- * sort of external state.
- */
 struct	regset {
 	union {
 		int	 i; /* integer value */

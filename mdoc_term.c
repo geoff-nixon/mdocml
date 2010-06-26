@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.156 2010/06/19 20:46:28 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.157 2010/06/25 18:53:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -30,6 +30,7 @@
 #include "mandoc.h"
 #include "out.h"
 #include "term.h"
+#include "regs.h"
 #include "mdoc.h"
 #include "chars.h"
 #include "main.h"

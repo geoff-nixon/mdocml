@@ -1,4 +1,4 @@
-.\"	$Id: man.3,v 1.17 2010/05/25 21:46:48 kristaps Exp $
+.\"	$Id: man.3,v 1.18 2010/05/25 22:16:59 kristaps Exp $
 .\"
 .\" Copyright (c) 2009-2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -29,6 +29,7 @@
 .Nd man macro compiler library
 .Sh SYNOPSIS
 .In mandoc.h
+.In regs.h
 .In man.h
 .Vt extern const char * const * man_macronames;
 .Ft "struct man *"
@@ -42,7 +43,12 @@
 .Ft "const struct man_node *"
 .Fn man_node "const struct man *man"
 .Ft int
-.Fn man_parseln "struct man *man" "int line" "char *buf"
+.Fo man_parseln
+.Fa "struct man *man"
+.Fa "const struct regset *regs"
+.Fa "int line"
+.Fa "char *buf"
+.Fc
 .Ft void
 .Fn man_reset "struct man *man"
 .Sh DESCRIPTION

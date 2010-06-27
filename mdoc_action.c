@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.70 2010/06/13 21:02:48 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.71 2010/06/19 20:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -31,6 +31,11 @@
 #include "mandoc.h"
 #include "libmdoc.h"
 #include "libmandoc.h"
+
+/* 
+ * FIXME: this file is deprecated.  All future "actions" should be
+ * pushed into mdoc_validate.c.
+ */
 
 #define	POST_ARGS struct mdoc *m, struct mdoc_node *n
 #define	PRE_ARGS  struct mdoc *m, struct mdoc_node *n

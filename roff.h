@@ -1,4 +1,4 @@
-/*	$Id: roff.h,v 1.15 2010/05/17 00:06:36 kristaps Exp $ */
+/*	$Id: roff.h,v 1.16 2010/06/26 15:22:19 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -29,10 +29,10 @@ __BEGIN_DECLS
 struct	roff;
 
 void	 	  roff_free(struct roff *);
-struct	roff	 *roff_alloc(mandocmsg, void *);
+struct	roff	 *roff_alloc(struct regset *, mandocmsg, void *);
 void		  roff_reset(struct roff *);
-enum	rofferr	  roff_parseln(struct roff *, struct regset *,
-			int, char **, size_t *, int, int *);
+enum	rofferr	  roff_parseln(struct roff *, int, 
+			char **, size_t *, int, int *);
 int		  roff_endparse(struct roff *);
 
 __END_DECLS

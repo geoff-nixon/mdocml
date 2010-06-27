@@ -1,4 +1,4 @@
-.\"	$Id: man.3,v 1.18 2010/05/25 22:16:59 kristaps Exp $
+.\"	$Id: man.3,v 1.19 2010/06/26 15:36:37 kristaps Exp $
 .\"
 .\" Copyright (c) 2009-2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 25 2010 $
+.Dd $Mdocdate: June 26 2010 $
 .Dt MAN 3
 .Os
 .Sh NAME
@@ -33,7 +33,12 @@
 .In man.h
 .Vt extern const char * const * man_macronames;
 .Ft "struct man *"
-.Fn man_alloc "void *data" "int pflags" "mandocmsg msgs"
+.Fo man_alloc
+.Fa "const struct regset *regs"
+.Fa "void *data"
+.Fa "int pflags"
+.Fa "mandocmsg msgs"
+.Fc
 .Ft int
 .Fn man_endparse "struct man *man"
 .Ft void
@@ -45,7 +50,6 @@
 .Ft int
 .Fo man_parseln
 .Fa "struct man *man"
-.Fa "const struct regset *regs"
 .Fa "int line"
 .Fa "char *buf"
 .Fc

@@ -1,4 +1,4 @@
-.\"	$Id: man.3,v 1.19 2010/06/26 15:36:37 kristaps Exp $
+.\"	$Id: man.3,v 1.20 2010/06/27 15:52:41 kristaps Exp $
 .\"
 .\" Copyright (c) 2009-2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: June 26 2010 $
+.Dd $Mdocdate: June 27 2010 $
 .Dt MAN 3
 .Os
 .Sh NAME
@@ -34,7 +34,7 @@
 .Vt extern const char * const * man_macronames;
 .Ft "struct man *"
 .Fo man_alloc
-.Fa "const struct regset *regs"
+.Fa "struct regset *regs"
 .Fa "void *data"
 .Fa "int pflags"
 .Fa "mandocmsg msgs"
@@ -291,14 +291,16 @@ on the finished parse tree with
 .Fn parsed .
 This example does not error-check nor free memory upon failure.
 .Bd -literal -offset indent
+struct regset regs;
 struct man *man;
 struct man_node *node;
 char *buf;
 size_t len;
 int line;
 
+bzero(&regs, sizeof(struct regset));
 line = 1;
-man = man_alloc(NULL, 0, NULL);
+man = man_alloc(&regs, NULL, 0, NULL);
 buf = NULL;
 alloc_len = 0;
 

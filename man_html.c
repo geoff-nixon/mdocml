@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.38 2010/06/26 15:36:37 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.39 2010/06/27 15:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -252,6 +252,7 @@ a2width(const struct man_node *n, struct roffsu *su)
 }
 
 
+/* ARGSUSED */
 static int
 man_root_pre(MAN_ARGS)
 {

@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.38 2010/06/26 16:07:08 kristaps Exp $ */
+/*	$Id: libman.h,v 1.39 2010/06/27 15:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -40,7 +40,7 @@ struct	man {
 	struct man_node	*last; /* the last parsed node */
 	struct man_node	*first; /* the first parsed node */
 	struct man_meta	 meta; /* document meta-data */
-	const struct regset *regs; /* readonly registers */
+	struct regset	*regs; /* registers */
 };
 
 #define	MACRO_PROT_ARGS	  struct man *m, \

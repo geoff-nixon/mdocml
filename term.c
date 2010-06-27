@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.149 2010/06/25 18:53:14 kristaps Exp $ */
+/*	$Id: term.c,v 1.150 2010/06/26 15:36:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -480,9 +480,14 @@ term_word(struct termp *p, const char *word)
 		}
 
 	if ( ! (TERMP_NOSPACE & p->flags)) {
-		bufferc(p, ' ');
-		if (TERMP_SENTENCE & p->flags)
+		if ( ! (TERMP_KEEP & p->flags)) {
+			if (TERMP_PREKEEP & p->flags)
+				p->flags |= TERMP_KEEP;
 			bufferc(p, ' ');
+			if (TERMP_SENTENCE & p->flags)
+				bufferc(p, ' ');
+		} else
+			bufferc(p, ASCII_NBRSP);
 	}
 
 	if ( ! (p->flags & TERMP_NONOSPACE))

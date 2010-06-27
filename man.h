@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.38 2010/06/26 15:36:37 kristaps Exp $ */
+/*	$Id: man.h,v 1.39 2010/06/27 15:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -106,7 +106,7 @@ __BEGIN_DECLS
 struct	man;
 
 void	 	  man_free(struct man *);
-struct	man	 *man_alloc(const struct regset *, void *, int, mandocmsg);
+struct	man	 *man_alloc(struct regset *, void *, int, mandocmsg);
 void		  man_reset(struct man *);
 int	 	  man_parseln(struct man *, int, char *, int);
 int		  man_endparse(struct man *);

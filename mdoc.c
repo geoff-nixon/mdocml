@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.148 2010/06/26 16:07:08 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.149 2010/06/27 15:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -192,8 +192,8 @@ mdoc_free(struct mdoc *mdoc)
  * Allocate volatile and non-volatile parse resources.  
  */
 struct mdoc *
-mdoc_alloc(const struct regset *regs, 
-		void *data, int pflags, mandocmsg msg)
+mdoc_alloc(struct regset *regs, void *data, 
+		int pflags, mandocmsg msg)
 {
 	struct mdoc	*p;
 
@@ -368,9 +368,18 @@ node_alloc(struct mdoc *m, int line, int pos,
 	p->pos = pos;
 	p->tok = tok;
 	p->type = type;
+
+	/* Flag analysis. */
+
 	if (MDOC_NEWLINE & m->flags)
 		p->flags |= MDOC_LINE;
 	m->flags &= ~MDOC_NEWLINE;
+
+	/* Section analysis. */
+
+	if (SEC_SYNOPSIS == p->sec)
+		p->flags |= MDOC_SYNPRETTY;
+
 	return(p);
 }
 

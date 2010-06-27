@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.149 2010/06/27 15:52:41 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.150 2010/06/27 16:18:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -379,6 +379,15 @@ node_alloc(struct mdoc *m, int line, int pos,
 
 	if (SEC_SYNOPSIS == p->sec)
 		p->flags |= MDOC_SYNPRETTY;
+
+	/* Register analysis. */
+
+	if (m->regs->regs[(int)REG_nS].set) {
+		if (m->regs->regs[(int)REG_nS].v.u)
+			p->flags |= MDOC_SYNPRETTY;
+		else
+			p->flags &= ~MDOC_SYNPRETTY;
+	}
 
 	return(p);
 }

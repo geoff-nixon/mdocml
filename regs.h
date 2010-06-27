@@ -1,4 +1,4 @@
-/*	$Id: regs.h,v 1.1 2010/06/26 15:22:19 kristaps Exp $ */
+/*	$Id: regs.h,v 1.2 2010/06/26 15:36:37 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -24,10 +24,21 @@ enum	regs {
 	REG__MAX
 };
 
-struct	regset {
+struct	reg {
+	int		 set; /* whether set or not */
 	union {
-		int	 i; /* integer value */
-	} regs[REG__MAX];
+		unsigned u; /* unsigned integer */
+	} v;
+};
+
+/*
+ * Registers are non-scoped state.  These can be manipulated directly in
+ * libroff or indirectly in libman or libmdoc by macros.  These should
+ * be implemented sparingly (we are NOT roffdoc!) and documented fully
+ * in roff.7.
+ */
+struct	regset {
+	struct reg	 regs[REG__MAX];
 };
 
 __END_DECLS

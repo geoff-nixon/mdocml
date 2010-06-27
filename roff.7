@@ -1,4 +1,4 @@
-.\"	$Id: roff.7,v 1.9 2010/06/10 21:42:02 kristaps Exp $
+.\"	$Id: roff.7,v 1.10 2010/06/26 15:22:19 kristaps Exp $
 .\"
 .\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: June 10 2010 $
+.Dd $Mdocdate: June 26 2010 $
 .Dt ROFF 7
 .Os
 .Sh NAME
@@ -289,12 +289,15 @@ requests are recognised:
 .It Cm nS
 If set to a positive integer value, certain
 .Xr mdoc 7
-macros will behave as if they are defined in the
+macros will behave as if they were defined in the
 .Em SYNOPSIS
-section to a manual.
+section.
 Otherwise, this behaviour is unset (even if called within the
 .Em SYNOPSIS
 section itself).
+Note that invoking a new
+.Xr mdoc 7
+section will unset this value.
 .El
 .Ss \&tr
 Output character translation.

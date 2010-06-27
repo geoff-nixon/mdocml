@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.3,v 1.41 2010/05/30 22:56:02 kristaps Exp $
+.\"	$Id: mdoc.3,v 1.42 2010/06/26 15:36:37 kristaps Exp $
 .\"
 .\" Copyright (c) 2009-2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 30 2010 $
+.Dd $Mdocdate: June 26 2010 $
 .Dt MDOC 3
 .Os
 .Sh NAME
@@ -34,7 +34,12 @@
 .Vt extern const char * const * mdoc_macronames;
 .Vt extern const char * const * mdoc_argnames;
 .Ft "struct mdoc *"
-.Fn mdoc_alloc "void *data" "int pflags" "mandocmsg msgs"
+.Fo mdoc_alloc
+.Fa "const struct regset *regs"
+.Fa "void *data"
+.Fa "int pflags"
+.Fa "mandocmsg msgs"
+.Fc
 .Ft int
 .Fn mdoc_endparse "struct mdoc *mdoc"
 .Ft void
@@ -46,7 +51,6 @@
 .Ft int
 .Fo mdoc_parseln
 .Fa "struct mdoc *mdoc"
-.Fa "const struct regset *regs"
 .Fa "int line"
 .Fa "char *buf"
 .Fc

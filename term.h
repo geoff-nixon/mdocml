@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.65 2010/06/25 18:53:14 kristaps Exp $ */
+/*	$Id: term.h,v 1.66 2010/06/27 01:26:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -49,7 +49,6 @@ struct	termp_ps {
 	char		 *psmarg;	/* margin buf */
 	size_t		  psmargsz;	/* margin buf size */
 	size_t		  psmargcur;	/* current pos in margin buf */
-	size_t	 	  pspage;	/* current page */
 	char		  last;		/* character buffer */
 	enum termfont	  lastf;	/* last set font */
 };

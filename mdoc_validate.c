@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.100 2010/06/27 16:36:22 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.101 2010/06/27 17:53:27 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -457,6 +457,11 @@ static int
 check_text(struct mdoc *mdoc, int line, int pos, char *p)
 {
 	int		 c;
+
+	/* 
+	 * FIXME: we absolutely cannot let \b get through or it will
+	 * destroy some assumptions in terms of format.
+	 */
 
 	for ( ; *p; p++, pos++) {
 		if ('\t' == *p) {

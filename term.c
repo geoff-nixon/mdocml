@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.150 2010/06/26 15:36:37 kristaps Exp $ */
+/*	$Id: term.c,v 1.151 2010/06/27 01:26:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -133,9 +133,10 @@ term_flushln(struct termp *p)
 	size_t		 vbl;   /* number of blanks to prepend to output */
 	size_t		 vend;	/* end of word visual position on output */
 	size_t		 bp;    /* visual right border position */
-	int		 j;     /* temporary loop index */
-	int		 jhy;	/* last hyphen before line overflow */
-	size_t		 maxvis, mmax;
+	int		 j;     /* temporary loop index for p->buf */
+	int		 jhy;	/* last hyph before overflow w/r/t j */
+	size_t		 maxvis; /* output position of visible boundary */
+	size_t		 mmax; /* used in calculating bp */
 
 	/*
 	 * First, establish the maximum columns of "visible" content.

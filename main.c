@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.91 2010/06/26 15:36:37 kristaps Exp $ */
+/*	$Id: main.c,v 1.92 2010/06/27 15:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -599,7 +599,7 @@ fdesc(struct curparse *curp)
 			curp->outfree = ascii_free;
 			break;
 		case (OUTT_PS):
-			curp->outdata = ps_alloc();
+			curp->outdata = ps_alloc(curp->outopts);
 			curp->outfree = ps_free;
 			break;
 		default:

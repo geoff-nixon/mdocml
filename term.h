@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.69 2010/06/30 11:45:21 kristaps Exp $ */
+/*	$Id: term.h,v 1.70 2010/06/30 12:27:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -103,7 +103,7 @@ struct	termp {
 	void		(*endline)(struct termp *);
 	void		(*advance)(struct termp *, size_t);
 	size_t		(*width)(const struct termp *, char);
-	size_t		(*hspan)(const struct termp *,
+	double		(*hspan)(const struct termp *,
 				const struct roffsu *);
 	const void	 *argf;		/* arg for headf/footf */
 	union {

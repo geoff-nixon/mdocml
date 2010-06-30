@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.154 2010/06/28 23:26:09 kristaps Exp $ */
+/*	$Id: term.c,v 1.155 2010/06/30 12:27:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -692,6 +692,11 @@ term_vspan(const struct termp *p, const struct roffsu *su)
 size_t
 term_hspan(const struct termp *p, const struct roffsu *su)
 {
+	double		 v;
 
-	return((*p->hspan)(p, su));
+	v = ((*p->hspan)(p, su));
+	if (v < 0.0)
+		v = 0.0;
+	return((size_t) /* LINTED */
+			v);
 }

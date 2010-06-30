@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.6 2010/06/25 19:50:23 kristaps Exp $ */
+/*	$Id: term_ascii.c,v 1.7 2010/06/30 12:27:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -30,7 +30,7 @@
 #include "term.h"
 #include "main.h"
 
-static	size_t		  ascii_hspan(const struct termp *,
+static	double		  ascii_hspan(const struct termp *,
 				const struct roffsu *);
 static	size_t		  ascii_width(const struct termp *, char);
 static	void		  ascii_advance(struct termp *, size_t);
@@ -146,7 +146,7 @@ ascii_advance(struct termp *p, size_t len)
 
 
 /* ARGSUSED */
-static size_t
+static double
 ascii_hspan(const struct termp *p, const struct roffsu *su)
 {
 	double		 r;
@@ -180,12 +180,6 @@ ascii_hspan(const struct termp *p, const struct roffsu *su)
 		break;
 	}
 
-	/* Explicitly disallow negative values. */
-
-	if (r < 0.0)
-		r = 0.0;
-
-	return((size_t)/* LINTED */
-			r);
+	return(r);
 }
 

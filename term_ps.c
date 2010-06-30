@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.21 2010/06/30 13:00:00 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.22 2010/06/30 13:16:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -594,10 +594,9 @@ ps_begin(struct termp *p)
 	printf("%%%%Orientation: Portrait\n");
 	printf("%%%%Pages: (atend)\n");
 	printf("%%%%PageOrder: Ascend\n");
-	printf("%%%%Orientation: Portrait\n");
 	printf("%%%%DocumentMedia: Default %zu %zu 0 () ()\n",
-			p->engine.ps.width,
-			p->engine.ps.height);
+			AFM2PNT(p, p->engine.ps.width),
+			AFM2PNT(p, p->engine.ps.height));
 	printf("%%%%DocumentNeededResources: font");
 	for (i = 0; i < (int)TERMFONT__MAX; i++)
 		printf(" %s", fonts[i].name);
@@ -806,11 +805,11 @@ ps_endline(struct termp *p)
 
 	assert(p->engine.ps.psmarg && p->engine.ps.psmarg[0]);
 	printf("%s", p->engine.ps.psmarg);
+	printf("showpage\n");
+	p->engine.ps.pages++;
 	printf("%%%%Page: %zu %zu\n", 
 			p->engine.ps.pages + 1, 
 			p->engine.ps.pages + 1);
-	printf("showpage\n");
-	p->engine.ps.pages++;
 	p->engine.ps.psrow = p->engine.ps.top;
 }
 

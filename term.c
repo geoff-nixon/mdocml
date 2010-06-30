@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.153 2010/06/28 22:46:21 kristaps Exp $ */
+/*	$Id: term.c,v 1.154 2010/06/28 23:26:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -692,39 +692,6 @@ term_vspan(const struct termp *p, const struct roffsu *su)
 size_t
 term_hspan(const struct termp *p, const struct roffsu *su)
 {
-	double		 r;
 
-	/* XXX: CM, IN, and PT are approximations. */
-
-	switch (su->unit) {
-	case (SCALE_CM):
-		r = 4 * su->scale;
-		break;
-	case (SCALE_IN):
-		/* XXX: this is an approximation. */
-		r = 10 * su->scale;
-		break;
-	case (SCALE_PC):
-		r = (10 * su->scale) / 6;
-		break;
-	case (SCALE_PT):
-		r = (10 * su->scale) / 72;
-		break;
-	case (SCALE_MM):
-		r = su->scale / 1000; /* FIXME: double-check. */
-		break;
-	case (SCALE_VS):
-		r = su->scale * 2 - 1; /* FIXME: double-check. */
-		break;
-	default:
-		r = su->scale;
-		break;
-	}
-
-	if (r < 0.0)
-		r = 0.0;
-	return((size_t)/* LINTED */
-			r);
+	return((*p->hspan)(p, su));
 }
-
-

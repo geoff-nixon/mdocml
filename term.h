@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.67 2010/06/28 23:26:09 kristaps Exp $ */
+/*	$Id: term.h,v 1.68 2010/06/29 14:18:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -45,22 +45,22 @@ struct	termp_ps {
 	int		  psstate;	/* state of ps output */
 #define	PS_INLINE	 (1 << 0)	/* we're in a word */
 #define	PS_MARGINS	 (1 << 1)	/* we're in the margins */
-	size_t		  pscol;	/* visible column (points) */
-	size_t		  psrow;	/* visible row (points) */
+	size_t		  pscol;	/* visible column (AFM units) */
+	size_t		  psrow;	/* visible row (AFM units) */
 	char		 *psmarg;	/* margin buf */
 	size_t		  psmargsz;	/* margin buf size */
 	size_t		  psmargcur;	/* cur index in margin buf */
 	char		  last;		/* character buffer */
 	enum termfont	  lastf;	/* last set font */
 	size_t		  pages;	/* number of pages shown */
-	size_t		  lineheight;	/* each line's height (points) */
-	size_t		  top;		/* body top (points) */
-	size_t		  bottom;	/* body bottom (points) */
-	size_t		  height;	/* total height (points) */
-	size_t		  width;	/* total width (points) */
-	size_t		  left;		/* body left (points) */
-	size_t		  header;	/* header position (points) */
-	size_t		  footer;	/* footer position (points) */
+	size_t		  lineheight;	/* line height (AFM units) */
+	size_t		  top;		/* body top (AFM units) */
+	size_t		  bottom;	/* body bottom (AFM units) */
+	size_t		  height;	/* page height (AFM units */
+	size_t		  width;	/* page width (AFM units) */
+	size_t		  left;		/* body left (AFM units) */
+	size_t		  header;	/* header pos (AFM units) */
+	size_t		  footer;	/* footer pos (AFM units) */
 };
 
 struct	termp {

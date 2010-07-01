@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.94 2010/06/27 16:18:13 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.95 2010/06/29 19:20:38 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -321,8 +321,8 @@ struct	mdoc_node {
 	enum mdoc_endbody end;		/* BODY */
 
 	union {
-		struct mdoc_bl Bl;
-		struct mdoc_bd Bd;
+		struct mdoc_bl *Bl;
+		struct mdoc_bd *Bd;
 	} data;
 };
 

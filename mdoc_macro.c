@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.87 2010/07/01 14:28:12 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.88 2010/07/01 15:38:56 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1024,6 +1024,9 @@ blk_full(MACRO_PROT_ARGS)
 		/* Initialise last-phrase-type with ARGS_PEND. */
 		lac = ARGS_ERROR == ac ? ARGS_PEND : ac;
 		ac = mdoc_args(m, line, pos, buf, tok, &p);
+
+		if (ARGS_PUNCT == ac)
+			break;
 
 		if (ARGS_ERROR == ac)
 			return(0);

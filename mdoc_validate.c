@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.101 2010/06/27 17:53:27 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.102 2010/06/28 14:39:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -543,6 +543,8 @@ pre_bl(PRE_ARGS)
 
 	if (MDOC_BLOCK != n->type) {
 		assert(n->parent);
+		if (ENDBODY_NOT != n->end)
+			return(1);
 		assert(MDOC_BLOCK == n->parent->type);
 		assert(MDOC_Bl == n->parent->tok);
 		assert(LIST__NONE != n->parent->data.Bl.type);

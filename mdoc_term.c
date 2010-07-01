@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.161 2010/06/27 17:53:27 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.162 2010/06/29 19:20:38 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -327,7 +327,7 @@ print_mdoc_node(DECL_ARGS)
 
 	if (MDOC_TEXT == n->type)
 		term_word(p, n->string); 
-	else if (termacts[n->tok].pre && !n->end)
+	else if (termacts[n->tok].pre && ENDBODY_NOT == n->end)
 		chld = (*termacts[n->tok].pre)(p, &npair, m, n);
 
 	if (chld && n->child)

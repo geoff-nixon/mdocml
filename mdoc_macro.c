@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.85 2010/06/29 19:45:06 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.86 2010/06/30 04:05:02 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -411,7 +411,7 @@ rew_dohalt(enum mdoct tok, enum mdoc_type type,
 	 * Default block rewinding rules.
 	 * In particular, always skip block end markers.
 	 */
-	if (p->end || (MDOC_BLOCK == p->type &&
+	if (ENDBODY_NOT != p->end || (MDOC_BLOCK == p->type &&
 	    ! (MDOC_EXPLICIT & mdoc_macros[tok].flags)))
 		return(REWIND_MORE);
 
@@ -648,7 +648,7 @@ blk_exp_close(MACRO_PROT_ARGS)
 
 		/* Remember the start of our own body. */
 		if (MDOC_BODY == n->type && atok == n->tok) {
-			if ( ! n->end)
+			if (ENDBODY_NOT == n->end)
 				body = n;
 			continue;
 		}

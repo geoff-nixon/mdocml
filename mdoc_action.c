@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.71 2010/06/19 20:46:28 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.72 2010/06/27 15:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -456,6 +456,17 @@ post_sh(POST_ARGS)
 	 */
 	if (SEC_NONE == m->lastnamed || SEC_CUSTOM != sec)
 		m->lastnamed = sec;
+
+	/*
+	 * Switch the parser's SYNOPSIS mode, to be copied
+	 * into individual nodes when creating them.
+	 * Note that this mode can also be set and unset
+	 * using the roff nS register.
+	 */
+	if (SEC_SYNOPSIS == sec)
+		m->flags |= MDOC_SYNOPSIS;
+	else
+		m->flags &= ~MDOC_SYNOPSIS;
 
 	/* Some sections only live in certain manual sections. */
 

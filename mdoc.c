@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.153 2010/07/01 22:35:54 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.154 2010/07/01 22:56:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -514,8 +514,7 @@ mdoc_word_alloc(struct mdoc *m, int line, int pos, const char *p)
 }
 
 
-/* FIXME: put in mdoc_node_delete(). */
-void
+static void
 mdoc_node_free(struct mdoc_node *p)
 {
 
@@ -739,7 +738,7 @@ macrowarn(struct mdoc *m, int ln, const char *buf, int offs)
  * Parse a macro line, that is, a line beginning with the control
  * character.
  */
-int
+static int
 mdoc_pmacro(struct mdoc *m, int ln, char *buf, int offs)
 {
 	enum mdoct	  tok;

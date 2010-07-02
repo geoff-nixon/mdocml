@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.97 2010/07/02 10:53:28 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.98 2010/07/02 12:54:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -279,6 +279,12 @@ enum	mdoc_disp {
 	DISP_literal
 };
 
+enum	mdoc_auth {
+	AUTH__NONE = 0,
+	AUTH_split,
+	AUTH_nosplit
+};
+
 enum	mdoc_font {
 	FONT__NONE = 0,
 	FONT_Em,
@@ -301,6 +307,10 @@ struct	mdoc_bl {
 
 struct	mdoc_bf {
 	enum mdoc_font	  font; /* font */
+};
+
+struct	mdoc_an {
+	enum mdoc_auth	  auth; /* -split, etc. */
 };
 
 /* Node in AST. */
@@ -332,6 +342,7 @@ struct	mdoc_node {
 	enum mdoc_endbody end;		/* BODY */
 
 	union {
+		struct mdoc_an  An;
 		struct mdoc_bd *Bd;
 		struct mdoc_bf *Bf;
 		struct mdoc_bl *Bl;

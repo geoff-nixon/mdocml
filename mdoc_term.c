@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.164 2010/07/01 15:38:56 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.165 2010/07/01 22:56:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -2170,15 +2170,18 @@ termp_bk_pre(DECL_ARGS)
 
 	switch (n->type) {
 	case (MDOC_BLOCK):
-		return(1);
+		break;
 	case (MDOC_HEAD):
 		return(0);
 	case (MDOC_BODY):
 		p->flags |= TERMP_PREKEEP;
-		return(1);
+		break;
 	default:
 		abort();
+		/* NOTREACHED */
 	}
+
+	return(1);
 }
 
 

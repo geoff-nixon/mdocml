@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.95 2010/06/29 19:20:38 schwarze Exp $ */
+/*	$Id: mdoc.h,v 1.96 2010/07/01 22:56:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -252,7 +252,7 @@ struct 	mdoc_arg {
 enum	mdoc_endbody {
 	ENDBODY_NOT = 0,
 	ENDBODY_SPACE,
-	ENDBODY_NOSPACE,
+	ENDBODY_NOSPACE
 };
 
 enum	mdoc_list {

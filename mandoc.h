@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.13 2010/06/30 20:32:15 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.14 2010/07/01 15:38:56 schwarze Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -81,14 +81,13 @@ enum	mandocerr {
 	MANDOCERR_NOTITLE, /* no title in document */
 	MANDOCERR_LISTTYPE, /* missing list type */
 	MANDOCERR_DISPTYPE, /* missing display type */
+	MANDOCERR_FONTTYPE, /* missing font type */
 	MANDOCERR_ARGSLOST, /* line argument(s) will be lost */
 	MANDOCERR_BODYLOST, /* body argument(s) will be lost */
 
 	MANDOCERR_FATAL, /* ===== end of fatal errors ===== */
 
 	MANDOCERR_COLUMNS, /* column syntax is inconsistent */
-	/* FIXME: this should be a MANDOCERR_ERROR */
-	MANDOCERR_FONTTYPE, /* missing font type */
 	/* FIXME: this should be a MANDOCERR_ERROR */
 	MANDOCERR_NESTEDDISP, /* displays may not be nested */
 	MANDOCERR_BADDISP, /* unsupported display type */

@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.94 2010/06/30 20:32:15 schwarze Exp $ */
+/*	$Id: main.c,v 1.95 2010/07/01 15:38:56 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -153,13 +153,13 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"no title in document",
 	"missing list type",
 	"missing display type",
+	"missing font type",
 	"line argument(s) will be lost",
 	"body argument(s) will be lost",
 
 	"generic fatal error",
 
 	"column syntax is inconsistent",
-	"missing font type",
 	"displays may not be nested",
 	"unsupported display type",
 	"blocks badly nested",

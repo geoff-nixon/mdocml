@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.155 2010/06/30 12:27:55 kristaps Exp $ */
+/*	$Id: term.c,v 1.156 2010/06/30 12:30:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -653,6 +653,7 @@ term_strlen(const struct termp *p, const char *cp)
 }
 
 
+/* ARGSUSED */
 size_t
 term_vspan(const struct termp *p, const struct roffsu *su)
 {

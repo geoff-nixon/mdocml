@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.24 2010/06/30 20:57:41 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.25 2010/07/01 14:23:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -27,6 +27,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
 
 #include "out.h"
 #include "main.h"

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.89 2010/07/01 21:12:00 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.90 2010/07/01 22:35:54 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -34,7 +34,7 @@ enum	rew {	/* see rew_dohalt() */
 	REWIND_THIS,
 	REWIND_MORE,
 	REWIND_LATER,
-	REWIND_ERROR,
+	REWIND_ERROR
 };
 
 static	int	  	blk_full(MACRO_PROT_ARGS);

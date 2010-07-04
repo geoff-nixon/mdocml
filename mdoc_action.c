@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.73 2010/07/01 22:35:54 schwarze Exp $ */
+/*	$Id: mdoc_action.c,v 1.74 2010/07/01 22:56:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -781,6 +781,9 @@ post_bl_head(POST_ARGS)
 	np->args->argv[c].sz = (size_t)n->nchild;
 	np->args->argv[c].value = mandoc_malloc
 		((size_t)n->nchild * sizeof(char *));
+
+	n->data.Bl->ncols = np->args->argv[c].sz;
+	n->data.Bl->cols = (const char **)np->args->argv[c].value;
 
 	for (i = 0, nn = n->child; nn; i++) {
 		np->args->argv[c].value[i] = nn->string;

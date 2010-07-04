@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.29 2010/07/04 19:42:25 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.30 2010/07/04 19:57:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -32,11 +32,6 @@
 #include "out.h"
 #include "main.h"
 #include "term.h"
-
-#define	MINMARGIN_MM	20	/* Minimum 2cm margins. */
-#define	MINMARGIN_PNT	56.68
-#define	DEFPAGEX_MM	216	/* Default page size is US-letter. */
-#define	DEFPAGEY_MM	279
 
 /* Convert PostScript point "x" to an AFM unit. */
 #define	PNT2AFM(p, x) /* LINTED */ \
@@ -426,8 +421,8 @@ ps_alloc(char *outopts)
 
 	/* Default to US letter (millimetres). */
 
-	pagex = DEFPAGEX_MM;
-	pagey = DEFPAGEY_MM;
+	pagex = 216;
+	pagey = 279;
 
 	/*
 	 * The ISO-269 paper sizes can be calculated automatically, but
@@ -454,16 +449,6 @@ ps_alloc(char *outopts)
 	} else if (NULL == pp)
 		pp = "letter";
 
-	/* Enforce minimum page size >= (2 times) min-margin. */
-
-	if ((2 * MINMARGIN_MM) >= pagex) {
-		fprintf(stderr, "%s: Insufficient page width\n", pp);
-		pagex = DEFPAGEX_MM;
-	} else if ((2 * MINMARGIN_MM >= pagey)) {
-		fprintf(stderr, "%s: Insufficient page length\n", pp);
-		pagey = DEFPAGEY_MM;
-	}
-
 	/* 
 	 * This MUST be defined before any PNT2AFM or AFM2PNT
 	 * calculations occur.
@@ -483,7 +468,9 @@ ps_alloc(char *outopts)
 	marginy = /* LINTED */
 		(size_t)((double)pagey / 9.0);
 
-	lineheight = PNT2AFM(p, 16);
+	/* Line-height is 1.4em. */
+
+	lineheight = PNT2AFM(p, ((double)p->engine.ps.scale * 1.4));
 
 	p->engine.ps.width = pagex;
 	p->engine.ps.height = pagey;

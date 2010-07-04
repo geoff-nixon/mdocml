@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.71 2010/06/30 12:30:36 kristaps Exp $ */
+/*	$Id: term.h,v 1.72 2010/06/30 13:00:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -42,9 +42,10 @@ enum	termfont {
 typedef void	(*term_margin)(struct termp *, const void *);
 
 struct	termp_ps {
-	int		  psstate;	/* state of ps output */
+	int		  flags;
 #define	PS_INLINE	 (1 << 0)	/* we're in a word */
 #define	PS_MARGINS	 (1 << 1)	/* we're in the margins */
+#define	PS_NEWPAGE	 (1 << 2)	/* new page, no words yet */
 	size_t		  pscol;	/* visible column (AFM units) */
 	size_t		  psrow;	/* visible row (AFM units) */
 	char		 *psmarg;	/* margin buf */

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.98 2010/07/02 12:54:33 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.99 2010/07/02 15:03:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -303,6 +303,8 @@ struct	mdoc_bl {
 	const char	 *offs; /* -offset */
 	enum mdoc_list	  type; /* -tag, -enum, etc. */
 	int		  comp; /* -compact */
+	size_t		  ncols; /* -column arg count */
+	const char	**cols; /* -column val ptr */
 };
 
 struct	mdoc_bf {

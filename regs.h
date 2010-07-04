@@ -1,6 +1,7 @@
-/*	$Id: regs.h,v 1.3 2010/06/27 16:36:22 kristaps Exp $ */
+/*	$Id: regs.h,v 1.4 2010/07/03 16:02:12 schwarze Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

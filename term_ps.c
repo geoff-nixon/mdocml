@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.31 2010/07/04 20:06:59 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.32 2010/07/04 20:17:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -642,14 +642,10 @@ ps_begin(struct termp *p)
 		printf(" %s", fonts[i].name);
 	printf("\n%%%%EndComments\n");
 
-	printf("%%%%Page: %zu %zu\n", 
-			p->engine.ps.pages + 1, 
-			p->engine.ps.pages + 1);
-
-	ps_setfont(p, TERMFONT_NONE);
 	p->engine.ps.pscol = p->engine.ps.left;
 	p->engine.ps.psrow = p->engine.ps.top;
 	p->engine.ps.flags |= PS_NEWPAGE;
+	ps_setfont(p, TERMFONT_NONE);
 }
 
 

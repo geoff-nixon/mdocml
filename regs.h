@@ -1,4 +1,4 @@
-/*	$Id: regs.h,v 1.4 2010/07/03 16:02:12 schwarze Exp $ */
+/*	$Id: regs.h,v 1.5 2010/07/04 22:04:04 schwarze Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -19,28 +19,6 @@
 #define REGS_H
 
 __BEGIN_DECLS
-
-enum	regs {
-	REG_nS = 0,	/* nS */
-	REG__MAX
-};
-
-struct	reg {
-	int		 set; /* whether set or not */
-	union {
-		unsigned u; /* unsigned integer */
-	} v;
-};
-
-/*
- * Registers are non-scoped state.  These can be manipulated directly in
- * libroff or indirectly in libman or libmdoc by macros.  These should
- * be implemented sparingly (we are NOT roffdoc!) and documented fully
- * in roff.7.
- */
-struct	regset {
-	struct reg	 regs[REG__MAX];
-};
 
 char		 *roff_setstr(const char *, const char *);
 char		 *roff_getstr(const char *);

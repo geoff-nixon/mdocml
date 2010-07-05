@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.18 2010/06/09 19:22:56 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.19 2010/06/19 20:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *

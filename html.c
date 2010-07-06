@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.103 2010/06/25 19:50:23 kristaps Exp $ */
+/*	$Id: html.c,v 1.104 2010/07/06 11:10:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -393,8 +393,15 @@ print_otag(struct html *h, enum htmltag tag,
 		t = NULL;
 
 	if ( ! (HTML_NOSPACE & h->flags))
-		if ( ! (HTML_CLRLINE & htmltags[tag].flags))
-			putchar(' ');
+		if ( ! (HTML_CLRLINE & htmltags[tag].flags)) {
+			/* Manage keeps! */
+			if ( ! (HTML_KEEP & h->flags)) {
+				if (HTML_PREKEEP & h->flags)
+					h->flags |= HTML_KEEP;
+				putchar(' ');
+			} else
+				printf("&#160;");
+		}
 
 	/* Print out the tag name and attributes. */
 
@@ -511,8 +518,15 @@ print_text(struct html *h, const char *word)
 			break;
 		}
 
-	if ( ! (h->flags & HTML_NOSPACE))
-		putchar(' ');
+	if ( ! (HTML_NOSPACE & h->flags)) {
+		/* Manage keeps! */
+		if ( ! (HTML_KEEP & h->flags)) {
+			if (HTML_PREKEEP & h->flags)
+				h->flags |= HTML_KEEP;
+			putchar(' ');
+		} else
+			printf("&#160;");
+	}
 
 	assert(word);
 	if ( ! print_encode(h, word, 0))

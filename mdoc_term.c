@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.170 2010/07/04 21:59:30 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.171 2010/07/04 22:04:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -329,6 +329,23 @@ print_mdoc_node(DECL_ARGS)
 		term_word(p, n->string); 
 	else if (termacts[n->tok].pre && ENDBODY_NOT == n->end)
 		chld = (*termacts[n->tok].pre)(p, &npair, m, n);
+
+	/*
+	 * Keeps only work until the end of a line.  If a keep was
+	 * invoked in a prior line, revert it to PREKEEP.
+	 */
+
+	if (TERMP_KEEP & p->flags) {
+		if (n->prev && n->prev->line != n->line) {
+			p->flags &= ~TERMP_KEEP;
+			p->flags |= TERMP_PREKEEP;
+		} else if (NULL == n->prev) {
+			if (n->parent && n->parent->line != n->line) {
+				p->flags &= ~TERMP_KEEP;
+				p->flags |= TERMP_PREKEEP;
+			}
+		}
+	}
 
 	if (chld && n->child)
 		print_mdoc_nodelist(p, &npair, m, n->child);

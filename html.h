@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.23 2010/04/05 08:51:56 kristaps Exp $ */
+/*	$Id: html.h,v 1.24 2010/06/19 20:46:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -110,7 +110,9 @@ enum	htmltype {
 struct	html {
 	int		  flags;
 #define	HTML_NOSPACE	 (1 << 0)
-#define	HTML_IGNDELIM	 (1 << 2)
+#define	HTML_IGNDELIM	 (1 << 1)
+#define	HTML_KEEP	 (1 << 2)
+#define	HTML_PREKEEP	 (1 << 3)
 	struct tagq	  tags;
 	struct ordq	  ords;
 	void		 *symtab;

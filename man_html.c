@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.39 2010/06/27 15:52:41 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.40 2010/06/27 16:18:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -29,7 +29,6 @@
 #include "mandoc.h"
 #include "out.h"
 #include "html.h"
-#include "regs.h"
 #include "man.h"
 #include "main.h"
 

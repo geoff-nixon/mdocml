@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.22 2010/06/26 15:36:37 kristaps Exp $ */
+/*	$Id: tree.c,v 1.23 2010/06/29 19:20:38 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -24,7 +24,6 @@
 #include <time.h>
 
 #include "mandoc.h"
-#include "regs.h"
 #include "mdoc.h"
 #include "man.h"
 #include "main.h"

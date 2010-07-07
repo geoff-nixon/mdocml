@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.58 2010/06/29 19:20:38 schwarze Exp $ */
+/*	$Id: libmdoc.h,v 1.59 2010/07/01 22:35:54 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -17,7 +17,6 @@
 #ifndef LIBMDOC_H
 #define LIBMDOC_H
 
-#include "regs.h"
 #include "mdoc.h"
 
 enum	mdoc_next {

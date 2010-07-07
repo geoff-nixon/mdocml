@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.39 2010/06/27 15:52:41 kristaps Exp $ */
+/*	$Id: libman.h,v 1.40 2010/06/27 16:18:13 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -17,7 +17,6 @@
 #ifndef LIBMAN_H
 #define LIBMAN_H
 
-#include "regs.h"
 #include "man.h"
 
 enum	man_next {

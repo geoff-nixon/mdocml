@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.93 2010/07/04 21:59:30 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.94 2010/07/06 12:37:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -30,7 +30,6 @@
 #include "mandoc.h"
 #include "out.h"
 #include "html.h"
-#include "regs.h"
 #include "mdoc.h"
 #include "main.h"
 

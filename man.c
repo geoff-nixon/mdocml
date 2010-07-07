@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.79 2010/06/27 15:52:41 kristaps Exp $ */
+/*	$Id: man.c,v 1.80 2010/06/27 16:18:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -28,7 +28,6 @@
 #include <string.h>
 
 #include "mandoc.h"
-#include "regs.h"
 #include "libman.h"
 #include "libmandoc.h"
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.156 2010/07/02 12:54:33 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.157 2010/07/04 22:04:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -30,7 +30,6 @@
 #include <time.h>
 
 #include "mandoc.h"
-#include "regs.h"
 #include "libmdoc.h"
 #include "libmandoc.h"
 

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.158 2010/07/03 16:02:12 schwarze Exp $ */
+/*	$Id: term.c,v 1.159 2010/07/04 22:04:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -31,7 +31,6 @@
 #include "mandoc.h"
 #include "chars.h"
 #include "out.h"
-#include "regs.h"
 #include "term.h"
 #include "main.h"
 
@@ -379,11 +378,6 @@ res(struct termp *p, const char *word, size_t len)
 	size_t		 sz;
 
 	rhs = chars_a2res(p->symtab, word, len, &sz);
-	if (NULL == rhs) {
-		rhs = roff_getstrn(word, len);
-		if (rhs)
-			sz = strlen(rhs);
-	}
 	if (rhs)
 		encode(p, rhs, sz);
 }

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.171 2010/07/04 22:04:04 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.172 2010/07/06 10:54:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -31,7 +31,6 @@
 #include "mandoc.h"
 #include "out.h"
 #include "term.h"
-#include "regs.h"
 #include "mdoc.h"
 #include "chars.h"
 #include "main.h"

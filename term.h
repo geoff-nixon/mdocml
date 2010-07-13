@@ -1,6 +1,6 @@
-/*	$Id: term.h,v 1.72 2010/06/30 13:00:00 kristaps Exp $ */
+/*	$Id: term.h,v 1.73 2010/07/04 19:42:25 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

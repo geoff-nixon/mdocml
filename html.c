@@ -1,6 +1,6 @@
-/*	$Id: html.c,v 1.104 2010/07/06 11:10:53 kristaps Exp $ */
+/*	$Id: html.c,v 1.105 2010/07/06 12:37:17 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

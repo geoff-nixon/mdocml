@@ -1,6 +1,6 @@
-/*	$Id: mdoc_argv.c,v 1.54 2010/06/19 20:46:28 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.55 2010/07/01 22:56:17 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

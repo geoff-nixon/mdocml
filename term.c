@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.159 2010/07/04 22:04:04 schwarze Exp $ */
+/*	$Id: term.c,v 1.160 2010/07/07 15:04:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -365,7 +365,7 @@ spec(struct termp *p, const char *word, size_t len)
 	const char	*rhs;
 	size_t		 sz;
 
-	rhs = chars_a2ascii(p->symtab, word, len, &sz);
+	rhs = chars_spec2str(p->symtab, word, len, &sz);
 	if (rhs) 
 		encode(p, rhs, sz);
 }
@@ -377,7 +377,7 @@ res(struct termp *p, const char *word, size_t len)
 	const char	*rhs;
 	size_t		 sz;
 
-	rhs = chars_a2res(p->symtab, word, len, &sz);
+	rhs = chars_res2str(p->symtab, word, len, &sz);
 	if (rhs)
 		encode(p, rhs, sz);
 }

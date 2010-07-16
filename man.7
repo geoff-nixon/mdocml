@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.73 2010/05/25 22:48:04 kristaps Exp $
+.\"	$Id: man.7,v 1.74 2010/05/26 14:03:54 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 25 2010 $
+.Dd $Mdocdate: May 26 2010 $
 .Dt MAN 7
 .Os
 .Sh NAME
@@ -61,11 +61,11 @@ Blank lines are acceptable; where found, the output will assert a
 vertical space.
 .Ss Comments
 Text following a
-.Sq \e\*" ,
+.Sq \e\*q ,
 whether in a macro or free-form text line, is ignored to the end of
 line.
 A macro line with only a control character and comment escape,
-.Sq \&.\e" ,
+.Sq \&.\e\*q ,
 is also ignored.
 Macro lines with only a control character and optionally whitespace are
 stripped from input.

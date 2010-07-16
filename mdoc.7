@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.133 2010/07/06 11:07:21 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.134 2010/07/15 23:50:15 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: July 6 2010 $
+.Dd $Mdocdate: July 15 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -52,10 +52,10 @@ manuals must have
 line terminators.
 .Ss Comments
 Text following a
-.Sq \e" ,
+.Sq \e\*q ,
 whether in a macro or free-form text line, is ignored to the end of
 line.  A macro line with only a control character and comment escape,
-.Sq \&.\e" ,
+.Sq \&.\e\*q ,
 is also ignored.  Macro lines with only a control character and optionally
 whitespace are stripped from input.
 .Ss Reserved Characters

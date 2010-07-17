@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.160 2010/07/07 15:04:54 kristaps Exp $ */
+/*	$Id: term.c,v 1.161 2010/07/16 22:33:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -503,14 +503,13 @@ term_word(struct termp *p, const char *word)
 
 	p->flags &= ~TERMP_SENTENCE;
 
-	/* FIXME: use strcspn. */
-
 	while (*word) {
-		if ('\\' != *word) {
-			encode(p, word, 1);
-			word++;
+		if ((ssz = strcspn(word, "\\")) > 0)
+			encode(p, word, ssz);
+
+		word += ssz;
+		if ('\\' != *word)
 			continue;
-		}
 
 		seq = ++word;
 		sz = a2roffdeco(&deco, &seq, &ssz);
@@ -547,7 +546,7 @@ term_word(struct termp *p, const char *word)
 	 * Note that we don't process the pipe: the parser sees it as
 	 * punctuation, but we don't in terms of typography.
 	 */
-	if (sv[0] && 0 == sv[1])
+	if (sv[0] && '\0' == sv[1])
 		switch (sv[0]) {
 		case('('):
 			/* FALLTHROUGH */

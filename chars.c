@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.20 2010/06/19 20:46:27 kristaps Exp $ */
+/*	$Id: chars.c,v 1.21 2010/07/16 22:33:30 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -32,7 +32,6 @@
 struct	ln {
 	struct ln	 *next;
 	const char	 *code;
-	size_t		  codesz;
 	const char	 *ascii;
 	size_t		  asciisz;
 	int		  unicode;
@@ -44,12 +43,12 @@ struct	ln {
 
 #define	LINES_MAX	  370
 
-#define CHAR(in, insz, ch, chsz, code) \
-	{ NULL, (in), (insz), (ch), (chsz), (code), CHARS_CHAR },
-#define STRING(in, insz, ch, chsz, code) \
-	{ NULL, (in), (insz), (ch), (chsz), (code), CHARS_STRING },
-#define BOTH(in, insz, ch, chsz, code) \
-	{ NULL, (in), (insz), (ch), (chsz), (code), CHARS_BOTH },
+#define CHAR(in, ch, chsz, code) \
+	{ NULL, (in), (ch), (chsz), (code), CHARS_CHAR },
+#define STRING(in, ch, chsz, code) \
+	{ NULL, (in), (ch), (chsz), (code), CHARS_STRING },
+#define BOTH(in, ch, chsz, code) \
+	{ NULL, (in), (ch), (chsz), (code), CHARS_BOTH },
 
 #define	CHAR_TBL_START	  static struct ln lines[LINES_MAX] = {
 #define	CHAR_TBL_END	  };
@@ -238,7 +237,7 @@ match(const struct ln *ln, const char *p, size_t sz, int type)
 
 	if ( ! (ln->type & type))
 		return(0);
-	if (ln->codesz != sz)
+	if (strncmp(ln->code, p, sz))
 		return(0);
-	return(0 == strncmp(ln->code, p, sz));
+	return('\0' == ln->code[(int)sz]);
 }

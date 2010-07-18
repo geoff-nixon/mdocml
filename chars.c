@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.21 2010/07/16 22:33:30 kristaps Exp $ */
+/*	$Id: chars.c,v 1.22 2010/07/17 09:21:39 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -195,7 +195,8 @@ find(struct tbl *tab, const char *p, size_t sz, int type)
 	int		  hash;
 
 	assert(p);
-	assert(sz > 0);
+	if (0 == sz)
+		return(NULL);
 
 	if (p[0] < PRINT_LO || p[0] > PRINT_HI)
 		return(NULL);

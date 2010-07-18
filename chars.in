@@ -1,4 +1,4 @@
-/*	$Id: chars.in,v 1.26 2010/07/16 22:33:30 kristaps Exp $ */
+/*	$Id: chars.in,v 1.27 2010/07/17 09:21:39 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -38,7 +38,7 @@ CHAR_TBL_START
 /* Spacing. */
 CHAR("c",			"",		0,	-1)
 CHAR("0",			" ",		1,	8194)
-CHAR(" ",			" ",		1,	8194)
+CHAR(" ",			ascii_nbrsp,	1,	160)
 CHAR("~",			ascii_nbrsp,	1,	160)
 CHAR("%",			"",		0,	-1)
 CHAR("&",			"",		0,	-1)

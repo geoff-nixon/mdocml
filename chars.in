@@ -1,4 +1,4 @@
-/*	$Id: chars.in,v 1.27 2010/07/17 09:21:39 kristaps Exp $ */
+/*	$Id: chars.in,v 1.28 2010/07/18 18:04:25 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -84,8 +84,8 @@ CHAR("lB",			"[",		1,	91)
 CHAR("rB",			"]",		1,	93)
 CHAR("lC",			"{",		1,	123)
 CHAR("rC",			"}",		1,	125)
-CHAR("la",			"<",		1,	10216) /* FIXME: 60 */
-CHAR("ra",			">",		1,	10217) /* FIXME: 62 */
+CHAR("la",			"<",		1,	60)
+CHAR("ra",			">",		1,	62)
 CHAR("bv",			"|",		1,	9130)
 CHAR("braceex",			"|",		1,	9130)
 CHAR("bracketlefttp",		"|",		1,	9121)

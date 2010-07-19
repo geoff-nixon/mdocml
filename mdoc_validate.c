@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.109 2010/07/04 21:59:30 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.110 2010/07/13 23:53:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -32,7 +32,6 @@
 #include "libmandoc.h"
 
 /* FIXME: .Bl -diag can't have non-text children in HEAD. */
-/* TODO: ignoring Pp (it's superfluous in some invocations). */
 
 #define	PRE_ARGS  struct mdoc *mdoc, struct mdoc_node *n
 #define	POST_ARGS struct mdoc *mdoc

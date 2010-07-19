@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.96 2010/07/13 23:53:20 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.97 2010/07/19 11:06:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -209,7 +209,7 @@ static	const struct htmlmdoc mdocs[MDOC_MAX] = {
 	{mdoc_em_pre, NULL}, /* Em */ 
 	{NULL, NULL}, /* Eo */
 	{mdoc_xx_pre, NULL}, /* Fx */
-	{mdoc_ms_pre, NULL}, /* Ms */ /* FIXME: convert to symbol? */
+	{mdoc_ms_pre, NULL}, /* Ms */
 	{NULL, NULL}, /* No */
 	{mdoc_ns_pre, NULL}, /* Ns */
 	{mdoc_xx_pre, NULL}, /* Nx */

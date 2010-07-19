@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.95 2010/07/07 15:04:54 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.96 2010/07/13 23:53:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1737,6 +1737,11 @@ mdoc_sp_pre(MDOC_ARGS)
 		len = 0;
 		break;
 	default:
+		assert(n->parent);
+		if ((NULL == n->next || NULL == n->prev) &&
+				(MDOC_Ss == n->parent->tok ||
+				 MDOC_Sh == n->parent->tok))
+			return(0);
 		len = 1;
 		break;
 	}

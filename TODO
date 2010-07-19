@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.  May not be quite up to date.
-* $Id: TODO,v 1.30 2010/07/18 23:06:18 kristaps Exp $
+* $Id: TODO,v 1.31 2010/07/19 09:21:58 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -73,9 +73,6 @@
 - empty phrases in .Bl column produce too few blanks
   try e.g. .Bl -column It Ta Ta
   reported by millert Fri, 02 Apr 2010 16:13:46 -0400
-
-- .Pp before and after .Sh (and .Ss) produces a spurious blank line;
-  reported by jmc@  Thu, 15 Jul 2010 23:00:28 +0100
 
 ************************************************************************
 * formatting issues: gratuitious differences

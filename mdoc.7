@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.135 2010/07/16 21:09:39 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.136 2010/07/19 09:19:22 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: July 16 2010 $
+.Dd $Mdocdate: July 19 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -2429,6 +2429,9 @@ Heirloom troff, the other significant troff implementation accepting
 .Pp
 .Bl -dash -compact
 .It
+The \es (font size), \em (font colour), and \eM (font filling colour)
+font decoration escapes are all discarded in mandoc.
+.It
 Old groff fails to assert a newline before
 .Sx \&Bd Fl ragged compact .
 .It
@@ -2476,7 +2479,7 @@ pseudo-macro as a line macro.
 mandoc does.
 .It
 The comment syntax
-.Sq \e."
+.Sq \e\."
 is no longer accepted.
 .It
 In groff, the

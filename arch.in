@@ -1,4 +1,4 @@
-/*	$Id: arch.in,v 1.7 2010/03/26 07:07:58 kristaps Exp $ */
+/*	$Id: arch.in,v 1.8 2010/06/19 20:46:27 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -22,6 +22,8 @@
  * formatted output.
  *
  * Be sure to escape strings.
+ *
+ * REMEMBER TO ADD NEW ARCHITECTURES TO MDOC.7!
  */
 
 LINE("alpha",		"Alpha")

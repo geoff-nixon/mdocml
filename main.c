@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.97 2010/07/04 22:04:04 schwarze Exp $ */
+/*	$Id: main.c,v 1.98 2010/07/07 15:04:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -23,6 +23,7 @@
 #include <sys/stat.h>
 
 #include <assert.h>
+#include <ctype.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -110,6 +111,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"list type must come first",
 	"bad standard",
 	"bad library",
+	"tab in non-literal context",
 	"bad escape sequence",
 	"unterminated quoted string",
 	"argument requires the width argument",
@@ -491,6 +493,26 @@ fdesc(struct curparse *curp)
 				++lnn;
 				break;
 			}
+
+			/* 
+			 * Warn about bogus characters.  If you're using
+			 * non-ASCII encoding, you're screwing your
+			 * readers.  Since I'd rather this not happen,
+			 * I'll be helpful and drop these characters so
+			 * we don't display gibberish.  Note to manual
+			 * writers: use special characters.
+			 */
+
+			if ( ! isgraph((u_char)blk.buf[i]) &&
+					! isblank((u_char)blk.buf[i])) {
+				if ( ! mmsg(MANDOCERR_BADCHAR, curp, 
+						lnn_start, pos, 
+						"ignoring byte"))
+					goto bailout;
+				i++;
+				continue;
+			}
+
 			/* Trailing backslash is like a plain character. */
 			if ('\\' != blk.buf[i] || i + 1 == (int)blk.sz) {
 				if (pos >= (int)ln.sz)

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.15 2010/07/02 12:54:33 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.16 2010/07/05 20:10:22 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -39,6 +39,7 @@ enum	mandocerr {
 	MANDOCERR_LISTFIRST, /* list type must come first */
 	MANDOCERR_BADSTANDARD, /* bad standard */
 	MANDOCERR_BADLIB, /* bad library */
+	MANDOCERR_BADTAB, /* tab in non-literal context */
 	MANDOCERR_BADESCAPE, /* bad escape sequence */
 	MANDOCERR_BADQUOTE, /* unterminated quoted string */
 	MANDOCERR_NOWIDTHARG, /* argument requires the width argument */

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.111 2010/07/19 11:11:54 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.112 2010/07/20 14:56:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -624,6 +624,8 @@ pre_bl(PRE_ARGS)
 			if ( ! mdoc_nmsg(mdoc, n, MANDOCERR_IGNARGV))
 				return(0);
 			break;
+		default:
+			continue;
 		}
 
 		/* Check: duplicate auxiliary arguments. */
@@ -946,7 +948,7 @@ static int
 post_bf(POST_ARGS)
 {
 	struct mdoc_node *np;
-	int		  arg;
+	enum mdocargt	  arg;
 
 	/*
 	 * Unlike other data pointers, these are "housed" by the HEAD

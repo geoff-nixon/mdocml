@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.161 2010/07/16 22:33:30 kristaps Exp $ */
+/*	$Id: term.c,v 1.162 2010/07/17 12:01:43 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -34,7 +34,8 @@
 #include "term.h"
 #include "main.h"
 
-static	void		  spec(struct termp *, const char *, size_t);
+static	void		  spec(struct termp *, enum roffdeco,
+				const char *, size_t);
 static	void		  res(struct termp *, const char *, size_t);
 static	void		  buffera(struct termp *, const char *, size_t);
 static	void		  bufferc(struct termp *, char);
@@ -360,7 +361,7 @@ term_vspace(struct termp *p)
 
 
 static void
-spec(struct termp *p, const char *word, size_t len)
+spec(struct termp *p, enum roffdeco d, const char *word, size_t len)
 {
 	const char	*rhs;
 	size_t		 sz;
@@ -368,6 +369,8 @@ spec(struct termp *p, const char *word, size_t len)
 	rhs = chars_spec2str(p->symtab, word, len, &sz);
 	if (rhs) 
 		encode(p, rhs, sz);
+	else if (DECO_SSPECIAL == d)
+		encode(p, word, len);
 }
 
 
@@ -519,7 +522,9 @@ term_word(struct termp *p, const char *word)
 			res(p, seq, ssz);
 			break;
 		case (DECO_SPECIAL):
-			spec(p, seq, ssz);
+			/* FALLTHROUGH */
+		case (DECO_SSPECIAL):
+			spec(p, deco, seq, ssz);
 			break;
 		case (DECO_BOLD):
 			term_fontrepl(p, TERMFONT_BOLD);

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.23 2010/07/18 17:00:26 schwarze Exp $ */
+/*	$Id: mandoc.c,v 1.24 2010/07/18 22:55:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -314,7 +314,7 @@ mandoc_eos(const char *p, size_t sz, int enclosed)
 	 */
 
 	found = 0;
-	for (q = p + sz - 1; q >= p; q--) {
+	for (q = p + (int)sz - 1; q >= p; q--) {
 		switch (*q) {
 		case ('\"'):
 			/* FALLTHROUGH */

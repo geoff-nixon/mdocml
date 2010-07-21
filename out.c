@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.19 2010/07/18 23:06:18 kristaps Exp $ */
+/*	$Id: out.c,v 1.20 2010/07/19 07:53:40 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -278,7 +278,7 @@ a2roffdeco(enum roffdeco *d, const char **word, size_t *sz)
 		*d = DECO_NOSPACE;
 		return(i);
 	default:
-		*d = DECO_SPECIAL;
+		*d = DECO_SSPECIAL;
 		i--;
 		lim = 1;
 		break;

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.175 2010/07/19 11:06:31 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.176 2010/07/19 11:11:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1026,7 +1026,8 @@ termp_nm_pre(DECL_ARGS)
 	if (NULL == n->child && NULL == m->name)
 		return(0);
 
-	synopsis_pre(p, n);
+	if (MDOC_HEAD == n->type)
+		synopsis_pre(p, n->parent);
 
 	if (MDOC_HEAD == n->type && n->next->child) {
 		p->flags |= TERMP_NOSPACE | TERMP_NOBREAK | TERMP_HANG;

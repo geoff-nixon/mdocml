@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.34 2010/07/13 23:53:20 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.35 2010/07/20 10:56:03 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -42,7 +42,7 @@
 	((double)(x) / (1000.0 / (double)(p)->engine.ps.scale))
 
 struct	glyph {
-	size_t		  wx; /* WX in AFM */
+	unsigned short	  wx; /* WX in AFM */
 };
 
 struct	font {
@@ -708,13 +708,13 @@ ps_pletter(struct termp *p, int c)
 
 	if (c <= 32 || (c - 32 > MAXCHAR)) {
 		ps_putchar(p, ' ');
-		p->engine.ps.pscol += fonts[f].gly[0].wx;
+		p->engine.ps.pscol += (size_t)fonts[f].gly[0].wx;
 		return;
 	} 
 
 	ps_putchar(p, (char)c);
 	c -= 32;
-	p->engine.ps.pscol += fonts[f].gly[c].wx;
+	p->engine.ps.pscol += (size_t)fonts[f].gly[c].wx;
 }
 
 
@@ -901,10 +901,10 @@ ps_width(const struct termp *p, char c)
 {
 
 	if (c <= 32 || c - 32 >= MAXCHAR)
-		return(fonts[(int)TERMFONT_NONE].gly[0].wx);
+		return((size_t)fonts[(int)TERMFONT_NONE].gly[0].wx);
 
 	c -= 32;
-	return(fonts[(int)TERMFONT_NONE].gly[(int)c].wx);
+	return((size_t)fonts[(int)TERMFONT_NONE].gly[(int)c].wx);
 }
 
 
@@ -932,14 +932,14 @@ ps_hspan(const struct termp *p, const struct roffsu *su)
 		r = PNT2AFM(p, su->scale * 100);
 		break;
 	case (SCALE_EM):
-		r = su->scale * 
+		r = su->scale *
 			fonts[(int)TERMFONT_NONE].gly[109 - 32].wx;
 		break;
 	case (SCALE_MM):
 		r = PNT2AFM(p, su->scale * 2.834);
 		break;
 	case (SCALE_EN):
-		r = su->scale * 
+		r = su->scale *
 			fonts[(int)TERMFONT_NONE].gly[110 - 32].wx;
 		break;
 	case (SCALE_VS):

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.56 2010/07/13 23:53:20 schwarze Exp $ */
+/*	$Id: mdoc_argv.c,v 1.57 2010/07/21 09:08:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -313,8 +313,10 @@ mdoc_argv_free(struct mdoc_arg *p)
 void
 mdoc_argn_free(struct mdoc_arg *p, int iarg)
 {
-	struct mdoc_argv *arg = &p->argv[iarg]; /* FIXME: decl/assign */
+	struct mdoc_argv *arg;
 	int		  j;
+
+	arg = &p->argv[iarg];
 
 	if (arg->sz && arg->value) {
 		for (j = (int)arg->sz - 1; j >= 0; j--) 

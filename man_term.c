@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.79 2010/07/07 15:04:54 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.80 2010/07/13 23:53:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -252,6 +252,7 @@ static int
 pre_fi(DECL_ARGS)
 {
 
+	term_newln(p);
 	mt->fl &= ~MANT_LITERAL;
 	return(1);
 }
@@ -262,6 +263,7 @@ static int
 pre_nf(DECL_ARGS)
 {
 
+	term_newln(p);
 	mt->fl |= MANT_LITERAL;
 	return(MAN_Vb != n->tok);
 }

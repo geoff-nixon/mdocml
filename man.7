@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.77 2010/07/19 10:48:36 kristaps Exp $
+.\"	$Id: man.7,v 1.78 2010/07/19 23:21:39 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -427,6 +427,7 @@ The syntax is as follows:
 .It Sx \&br  Ta    0         Ta    current   Ta    compat
 .It Sx \&fi  Ta    0         Ta    current   Ta    compat
 .It Sx \&i   Ta    n         Ta    current   Ta    compat
+.It Sx \&in  Ta    1         Ta    current   Ta    compat
 .It Sx \&na  Ta    0         Ta    current   Ta    compat
 .It Sx \&nf  Ta    0         Ta    current   Ta    compat
 .It Sx \&r   Ta    0         Ta    current   Ta    compat
@@ -853,6 +854,16 @@ See also
 .Sx \&b ,
 and
 .Sx \&r .
+.Ss \&in
+Indent relative to the current indentation:
+.Pp
+.D1 Pf \. Sx \&in Op Cm width
+.Pp
+If
+.Cm width
+is signed, the new offset is relative.
+Otherwise, it is absolute.
+This value is reset upon the next paragraph, section, or sub-section.
 .Ss \&na
 Don't align to the right margin.
 .Ss \&nf

@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.21 2010/07/21 20:35:03 kristaps Exp $ */
+/*	$Id: out.c,v 1.22 2010/07/22 14:03:50 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -116,6 +116,7 @@ a2roffsu(const char *src, struct roffsu *dst, enum roffscale def)
 		return(0);
 	}
 
+	/* FIXME: do this in the caller. */
 	if ((dst->scale = atof(buf)) < 0)
 		dst->scale = 0;
 	dst->unit = unit;

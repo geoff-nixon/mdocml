@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.25 2010/07/06 12:37:17 kristaps Exp $ */
+/*	$Id: html.h,v 1.26 2010/07/13 23:53:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -113,6 +113,7 @@ struct	html {
 #define	HTML_IGNDELIM	 (1 << 1)
 #define	HTML_KEEP	 (1 << 2)
 #define	HTML_PREKEEP	 (1 << 3)
+#define	HTML_NONOSPACE	 (1 << 4)
 	struct tagq	  tags;
 	struct ordq	  ords;
 	void		 *symtab;

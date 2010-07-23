@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.107 2010/07/16 22:33:30 kristaps Exp $ */
+/*	$Id: html.c,v 1.108 2010/07/21 20:35:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -417,6 +417,9 @@ print_otag(struct html *h, enum htmltag tag,
 				printf("&#160;");
 		}
 
+	if ( ! (h->flags & HTML_NONOSPACE))
+		h->flags &= ~HTML_NOSPACE;
+
 	/* Print out the tag name and attributes. */
 
 	printf("<%s", htmltags[tag].name);
@@ -544,7 +547,8 @@ print_text(struct html *h, const char *word)
 
 	assert(word);
 	if ( ! print_encode(h, word, 0))
-		h->flags &= ~HTML_NOSPACE;
+		if ( ! (h->flags & HTML_NONOSPACE))
+			h->flags &= ~HTML_NOSPACE;
 
 	/* 
 	 * Note that we don't process the pipe: the parser sees it as

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.25 2010/07/21 20:35:03 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.26 2010/07/22 14:03:50 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -337,7 +337,7 @@ mandoc_eos(const char *p, size_t sz, int enclosed)
 			found = 1;
 			break;
 		default:
-			return(found && (!enclosed || isalnum(*q)));
+			return(found && (!enclosed || isalnum((unsigned char)*q)));
 		}
 	}
 

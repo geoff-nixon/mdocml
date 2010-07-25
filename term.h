@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.74 2010/07/13 23:53:20 schwarze Exp $ */
+/*	$Id: term.h,v 1.75 2010/07/25 11:44:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -64,9 +64,11 @@ struct	termp_ps {
 	size_t		  left;		/* body left (AFM units) */
 	size_t		  header;	/* header pos (AFM units) */
 	size_t		  footer;	/* footer pos (AFM units) */
-	size_t		  pdfbytes;
-	size_t		  pdflastpg;
-	size_t		  pdfbody;
+	size_t		  pdfbytes; 	/* current output byte */
+	size_t		  pdflastpg;	/* byte of last page mark */
+	size_t		  pdfbody;	/* start of body object */
+	size_t		 *pdfobjs;	/* table of object offsets */
+	size_t		  pdfobjsz;	/* size of pdfobjs */
 };
 
 struct	termp {

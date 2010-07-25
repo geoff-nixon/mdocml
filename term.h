@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.73 2010/07/04 19:42:25 kristaps Exp $ */
+/*	$Id: term.h,v 1.74 2010/07/13 23:53:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -27,7 +27,8 @@ enum	termenc {
 
 enum	termtype {
 	TERMTYPE_CHAR,
-	TERMTYPE_PS
+	TERMTYPE_PS,
+	TERMTYPE_PDF
 };
 
 enum	termfont {
@@ -63,6 +64,9 @@ struct	termp_ps {
 	size_t		  left;		/* body left (AFM units) */
 	size_t		  header;	/* header pos (AFM units) */
 	size_t		  footer;	/* footer pos (AFM units) */
+	size_t		  pdfbytes;
+	size_t		  pdflastpg;
+	size_t		  pdfbody;
 };
 
 struct	termp {

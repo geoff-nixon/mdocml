@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.98 2010/07/07 15:04:54 kristaps Exp $ */
+/*	$Id: main.c,v 1.99 2010/07/20 14:56:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -68,7 +68,8 @@ enum	outt {
 	OUTT_HTML,
 	OUTT_XHTML,
 	OUTT_LINT,
-	OUTT_PS
+	OUTT_PS,
+	OUTT_PDF
 };
 
 struct	curparse {
@@ -630,9 +631,13 @@ fdesc(struct curparse *curp)
 			curp->outdata = ascii_alloc(curp->outopts);
 			curp->outfree = ascii_free;
 			break;
+		case (OUTT_PDF):
+			curp->outdata = pdf_alloc(curp->outopts);
+			curp->outfree = pspdf_free;
+			break;
 		case (OUTT_PS):
 			curp->outdata = ps_alloc(curp->outopts);
-			curp->outfree = ps_free;
+			curp->outfree = pspdf_free;
 			break;
 		default:
 			break;
@@ -650,6 +655,8 @@ fdesc(struct curparse *curp)
 			curp->outman = tree_man;
 			curp->outmdoc = tree_mdoc;
 			break;
+		case (OUTT_PDF):
+			/* FALLTHROUGH */
 		case (OUTT_ASCII):
 			/* FALLTHROUGH */
 		case (OUTT_PS):
@@ -784,6 +791,8 @@ toptions(struct curparse *curp, char *arg)
 		curp->outtype = OUTT_XHTML;
 	else if (0 == strcmp(arg, "ps"))
 		curp->outtype = OUTT_PS;
+	else if (0 == strcmp(arg, "pdf"))
+		curp->outtype = OUTT_PDF;
 	else {
 		fprintf(stderr, "%s: Bad argument\n", arg);
 		return(0);

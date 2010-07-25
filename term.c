@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.162 2010/07/17 12:01:43 kristaps Exp $ */
+/*	$Id: term.c,v 1.163 2010/07/21 20:35:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -242,10 +242,10 @@ term_flushln(struct termp *p)
 			if ('\t' == p->buf[i])
 				break;
 			if (' ' == p->buf[i]) {
-				while (' ' == p->buf[i]) {
-					vbl += (*p->width)(p, p->buf[i]);
+				j = i;
+				while (' ' == p->buf[i])
 					i++;
-				}
+				vbl += (i - j) * (*p->width)(p, ' ');
 				break;
 			}
 			if (ASCII_NBRSP == p->buf[i]) {

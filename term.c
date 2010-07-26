@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.163 2010/07/21 20:35:03 kristaps Exp $ */
+/*	$Id: term.c,v 1.164 2010/07/25 22:56:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -37,7 +37,6 @@
 static	void		  spec(struct termp *, enum roffdeco,
 				const char *, size_t);
 static	void		  res(struct termp *, const char *, size_t);
-static	void		  buffera(struct termp *, const char *, size_t);
 static	void		  bufferc(struct termp *, char);
 static	void		  adjbuf(struct termp *p, size_t);
 static	void		  encode(struct termp *, const char *, size_t);
@@ -582,18 +581,6 @@ adjbuf(struct termp *p, size_t sz)
 
 
 static void
-buffera(struct termp *p, const char *word, size_t sz)
-{
-
-	if (p->col + sz >= p->maxcols) 
-		adjbuf(p, p->col + sz);
-
-	memcpy(&p->buf[(int)p->col], word, sz);
-	p->col += sz;
-}
-
-
-static void
 bufferc(struct termp *p, char c)
 {
 
@@ -617,23 +604,31 @@ encode(struct termp *p, const char *word, size_t sz)
 	 */
 
 	if (TERMFONT_NONE == (f = term_fonttop(p))) {
-		buffera(p, word, sz);
+		if (p->col + sz >= p->maxcols) 
+			adjbuf(p, p->col + sz);
+		memcpy(&p->buf[(int)p->col], word, sz);
+		p->col += sz;
 		return;
 	}
 
+	/* Pre-buffer, assuming worst-case. */
+
+	if (p->col + 1 + (sz * 3) >= p->maxcols)
+		adjbuf(p, p->col + 1 + (sz * 3));
+
 	for (i = 0; i < (int)sz; i++) {
 		if ( ! isgraph((u_char)word[i])) {
-			bufferc(p, word[i]);
+			p->buf[(int)p->col++] = word[i];
 			continue;
 		}
 
 		if (TERMFONT_UNDER == f)
-			bufferc(p, '_');
+			p->buf[(int)p->col++] = '_';
 		else
-			bufferc(p, word[i]);
+			p->buf[(int)p->col++] = word[i];
 
-		bufferc(p, 8);
-		bufferc(p, word[i]);
+		p->buf[(int)p->col++] = 8;
+		p->buf[(int)p->col++] = word[i];
 	}
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.164 2010/07/25 22:56:47 kristaps Exp $ */
+/*	$Id: term.c,v 1.165 2010/07/26 21:58:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -502,6 +502,8 @@ term_word(struct termp *p, const char *word)
 
 	if ( ! (p->flags & TERMP_NONOSPACE))
 		p->flags &= ~TERMP_NOSPACE;
+	else
+		p->flags |= TERMP_NOSPACE;
 
 	p->flags &= ~TERMP_SENTENCE;
 

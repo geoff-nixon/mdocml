@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.108 2010/07/21 20:35:03 kristaps Exp $ */
+/*	$Id: html.c,v 1.109 2010/07/23 00:08:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -419,6 +419,8 @@ print_otag(struct html *h, enum htmltag tag,
 
 	if ( ! (h->flags & HTML_NONOSPACE))
 		h->flags &= ~HTML_NOSPACE;
+	else
+		h->flags |= HTML_NOSPACE;
 
 	/* Print out the tag name and attributes. */
 

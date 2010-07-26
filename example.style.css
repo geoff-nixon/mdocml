@@ -1,4 +1,4 @@
-/* $Id: example.style.css,v 1.19 2009/11/16 09:52:47 kristaps Exp $ */
+/* $Id: example.style.css,v 1.20 2010/04/08 08:17:55 kristaps Exp $ */
 
 div.body	{ font-family: monospace; 
 		  min-width: 580px; width: 580px; } /* Top-most div tag. */
@@ -11,7 +11,7 @@ div.ssec-head	{ font-weight: bold; font-style: normal; } /* Sub-sections (Ss). *
 div.ssec-body	{ }
 div.ssec-block	{ }
 
-span.addr	{ } /* Address (Ad). */
+span.addr	{ font-style: italic; font-weight: normal; } /* Address (Ad). */
 span.arg	{ font-style: italic; font-weight: normal; } /* Command argument (Ar). */
 span.author	{ } /* Author name (An). */
 span.bold	{ font-weight: bold; font-style: normal; } /* Generically bold (SB, BI, IB, BR, RB, B). */

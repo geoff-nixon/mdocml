@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.112 2010/07/20 14:56:42 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.113 2010/07/21 09:08:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -145,7 +145,7 @@ static	v_pre	 pres_ss[] = { pre_ss, NULL };
 
 const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, NULL },				/* Ap */
-	{ pres_dd, posts_text },		/* Dd */
+	{ pres_dd, posts_wtext },		/* Dd */
 	{ pres_dt, posts_dt },			/* Dt */
 	{ pres_os, NULL },			/* Os */
 	{ pres_sh, posts_sh },			/* Sh */ 

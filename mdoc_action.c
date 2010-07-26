@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.75 2010/07/04 21:59:30 kristaps Exp $ */
+/*	$Id: mdoc_action.c,v 1.76 2010/07/13 23:53:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -903,6 +903,11 @@ static int
 post_dd(POST_ARGS)
 {
 	char		buf[DATESIZ];
+
+	if (NULL == n->child) {
+		m->meta.date = time(NULL);
+		return(post_prol(m, n));
+	}
 
 	if ( ! concat(m, buf, n->child, DATESIZ))
 		return(0);

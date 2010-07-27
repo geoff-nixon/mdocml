@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.177 2010/07/21 21:55:33 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.178 2010/07/26 22:35:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1621,8 +1621,7 @@ termp_fa_pre(DECL_ARGS)
 static int
 termp_bd_pre(DECL_ARGS)
 {
-	size_t			 tabwidth;
-	size_t			 rm, rmax;
+	size_t			 tabwidth, rm, rmax;
 	const struct mdoc_node	*nn;
 
 	if (MDOC_BLOCK == n->type) {
@@ -1654,12 +1653,9 @@ termp_bd_pre(DECL_ARGS)
 	p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
 
 	for (nn = n->child; nn; nn = nn->next) {
-		p->flags |= TERMP_NOSPACE;
+		if (nn->prev && nn->prev->line < nn->line)
+			term_newln(p);
 		print_mdoc_node(p, pair, m, nn);
-		if (NULL == nn->prev ||
-		    nn->prev->line < nn->line ||
-		    NULL == nn->next)
-			term_flushln(p);
 	}
 
 	p->tabwidth = tabwidth;

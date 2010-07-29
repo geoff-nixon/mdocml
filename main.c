@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.99 2010/07/20 14:56:42 kristaps Exp $ */
+/*	$Id: main.c,v 1.100 2010/07/25 11:44:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -36,6 +36,10 @@
 #include "mdoc.h"
 #include "man.h"
 #include "roff.h"
+
+#ifndef MAP_FILE
+#define	MAP_FILE	0
+#endif
 
 #define	UNCONST(a)	((void *)(uintptr_t)(const void *)(a))
 

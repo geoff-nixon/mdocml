@@ -1,6 +1,6 @@
-/*	$Id: man_action.c,v 1.39 2010/05/26 14:03:54 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.40 2010/07/22 23:03:15 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

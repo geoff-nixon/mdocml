@@ -1,6 +1,6 @@
-/*	$Id: man_validate.c,v 1.46 2010/07/20 14:56:42 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.47 2010/07/22 23:03:15 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

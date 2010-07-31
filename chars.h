@@ -1,6 +1,6 @@
-/*	$Id: chars.h,v 1.4 2010/06/19 20:46:27 kristaps Exp $ */
+/*	$Id: chars.h,v 1.5 2010/07/16 22:33:30 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

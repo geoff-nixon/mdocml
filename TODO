@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.  May not be quite up to date.
-* $Id: TODO,v 1.34 2010/07/27 08:39:36 kristaps Exp $
+* $Id: TODO,v 1.35 2010/07/27 08:46:30 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -63,6 +63,9 @@
 - prohibit `Nm' from having non-text HEAD children
   (e.g., NetBSD mDNSShared/dns-sd.1)
   (mdoc_html.c and mdoc_term.c `Nm' handlers can be slightly simplified)
+
+- allow `Qq', `Dq', `Sq', `Aq', `Bq' to have 0 arguments
+  noted by Alex Kozlov 08/06/10 23:05
   
 ************************************************************************
 * formatting issues: ugly output

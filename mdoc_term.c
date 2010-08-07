@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.178 2010/07/26 22:35:59 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.179 2010/07/27 08:38:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1653,9 +1653,11 @@ termp_bd_pre(DECL_ARGS)
 	p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
 
 	for (nn = n->child; nn; nn = nn->next) {
-		if (nn->prev && nn->prev->line < nn->line)
-			term_newln(p);
 		print_mdoc_node(p, pair, m, nn);
+		if (nn->next && nn->next->line == nn->line)
+			continue;
+		term_flushln(p);
+		p->flags |= TERMP_NOSPACE;
 	}
 
 	p->tabwidth = tabwidth;

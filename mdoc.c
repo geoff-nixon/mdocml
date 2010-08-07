@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.159 2010/07/18 17:00:26 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.160 2010/08/07 20:33:55 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -22,7 +22,6 @@
 #include <sys/types.h>
 
 #include <assert.h>
-#include <ctype.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -781,21 +780,11 @@ mdoc_pmacro(struct mdoc *m, int ln, char *buf, int offs)
 	 * copying when a tab, space, or eoln is encountered.
 	 */
 
-	for (j = 0; j < 4; j++, i++) {
+	for (j = 0; j < 4; j++, i++)
 		if ('\0' == (mac[j] = buf[i]))
 			break;
 		else if (' ' == buf[i] || '\t' == buf[i])
 			break;
-
-		/* Check for invalid characters. */
-		/* TODO: remove me, already done in main.c. */
-
-		if (isgraph((u_char)buf[i]))
-			continue;
-		if ( ! mdoc_pmsg(m, ln, i, MANDOCERR_BADCHAR))
-			return(0);
-		i--;
-	}
 
 	mac[j] = '\0';
 

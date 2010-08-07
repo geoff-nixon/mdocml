@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.144 2010/08/06 17:09:58 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.145 2010/08/07 09:56:12 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 6 2010 $
+.Dd $Mdocdate: August 7 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -418,8 +418,8 @@ generally structured as follows:
 .Pp
 For the second, function calls (sections 2, 3, 9):
 .Bd -literal -offset indent
-\&.Vt extern const char *global;
 \&.In header.h
+\&.Vt extern const char *global;
 \&.Ft "char *"
 \&.Fn foo "const char *src"
 \&.Ft "char *"

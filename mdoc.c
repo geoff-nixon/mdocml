@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.158 2010/07/07 15:04:54 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.159 2010/07/18 17:00:26 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -764,11 +764,11 @@ mdoc_pmacro(struct mdoc *m, int ln, char *buf, int offs)
 
 	i = offs;
 
-	/* Accept whitespace after the initial control char. */
+	/* Accept tabs/whitespace after the initial control char. */
 
-	if (' ' == buf[i]) {
+	if (' ' == buf[i] || '\t' == buf[i]) {
 		i++;
-		while (buf[i] && ' ' == buf[i])
+		while (buf[i] && (' ' == buf[i] || '\t' == buf[i]))
 			i++;
 		if ('\0' == buf[i])
 			return(1);
@@ -776,15 +776,19 @@ mdoc_pmacro(struct mdoc *m, int ln, char *buf, int offs)
 
 	sv = i;
 
-	/* Copy the first word into a nil-terminated buffer. */
+	/* 
+	 * Copy the first word into a nil-terminated buffer.  Stop
+	 * copying when a tab, space, or eoln is encountered.
+	 */
 
 	for (j = 0; j < 4; j++, i++) {
 		if ('\0' == (mac[j] = buf[i]))
 			break;
-		else if (' ' == buf[i])
+		else if (' ' == buf[i] || '\t' == buf[i])
 			break;
 
 		/* Check for invalid characters. */
+		/* TODO: remove me, already done in main.c. */
 
 		if (isgraph((u_char)buf[i]))
 			continue;
@@ -807,7 +811,12 @@ mdoc_pmacro(struct mdoc *m, int ln, char *buf, int offs)
 		return(1);
 	}
 
-	/* The macro is sane.  Jump to the next word. */
+	/* Disregard the first trailing tab, if applicable. */
+
+	if ('\t' == buf[i])
+		i++;
+
+	/* Jump to the next non-whitespace word. */
 
 	while (buf[i] && ' ' == buf[i])
 		i++;

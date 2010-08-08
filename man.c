@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.84 2010/07/22 23:03:15 kristaps Exp $ */
+/*	$Id: man.c,v 1.85 2010/08/07 20:57:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -480,14 +480,14 @@ man_pmacro(struct man *m, int ln, char *buf, int offs)
 
 	ppos = i;
 
-	/* Copy the first word into a nil-terminated buffer. */
+	/*
+	 * Copy the first word into a nil-terminated buffer.
+	 * Stop copying when a tab, space, or eoln is encountered.
+	 */
 
-	for (j = 0; j < 4; j++, i++)
-		if ('\0' == (mac[j] = buf[i]))
-			break;
-		else if (' ' == buf[i])
-			break;
-
+	j = 0;
+	while (j < 4 && '\0' != buf[i] && ' ' != buf[i] && '\t' != buf[i])
+		mac[j++] = buf[i++];
 	mac[j] = '\0';
 
 	if (j == 4 || j < 1) {

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.160 2010/08/07 20:33:55 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.161 2010/08/07 20:57:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -776,16 +776,13 @@ mdoc_pmacro(struct mdoc *m, int ln, char *buf, int offs)
 	sv = i;
 
 	/* 
-	 * Copy the first word into a nil-terminated buffer.  Stop
-	 * copying when a tab, space, or eoln is encountered.
+	 * Copy the first word into a nil-terminated buffer.
+	 * Stop copying when a tab, space, or eoln is encountered.
 	 */
 
-	for (j = 0; j < 4; j++, i++)
-		if ('\0' == (mac[j] = buf[i]))
-			break;
-		else if (' ' == buf[i] || '\t' == buf[i])
-			break;
-
+	j = 0;
+	while (j < 4 && '\0' != buf[i] && ' ' != buf[i] && '\t' != buf[i])
+		mac[j++] = buf[i++];
 	mac[j] = '\0';
 
 	if (j == 4 || j < 2) {

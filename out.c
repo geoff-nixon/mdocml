@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.22 2010/07/22 14:03:50 kristaps Exp $ */
+/*	$Id: out.c,v 1.23 2010/07/22 23:03:15 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -240,11 +240,16 @@ a2roffdeco(enum roffdeco *d, const char **word, size_t *sz)
 			break;
 		}
 		break;
+	case ('h'):
+		/* FALLTHROUGH */
+	case ('v'):
+		/* FALLTHROUGH */
 	case ('s'):
-		if ('+' == wp[i] || '-' == wp[i])
+		j = 0;
+		if ('+' == wp[i] || '-' == wp[i]) {
 			i++;
-
-		j = ('s' != wp[i - 1]);
+			j = 1;
+		}
 
 		switch (wp[i++]) {
 		case ('('):
@@ -257,7 +262,7 @@ a2roffdeco(enum roffdeco *d, const char **word, size_t *sz)
 			term = '\'';
 			break;
 		case ('0'):
-			j++;
+			j = 1;
 			/* FALLTHROUGH */
 		default:
 			i--;
@@ -266,13 +271,11 @@ a2roffdeco(enum roffdeco *d, const char **word, size_t *sz)
 		}
 
 		if ('+' == wp[i] || '-' == wp[i]) {
-			if (j++)
+			if (j)
 				return(i);
 			i++;
 		} 
 		
-		if (0 == j)
-			return(i);
 		break;
 	case ('['):
 		*d = DECO_SPECIAL;

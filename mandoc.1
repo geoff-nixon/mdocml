@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.74 2010/08/07 17:46:39 kristaps Exp $
+.\"	$Id: mandoc.1,v 1.75 2010/08/18 08:40:22 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 7 2010 $
+.Dd $Mdocdate: August 18 2010 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -374,8 +374,7 @@ To produce a series of PostScript manuals for A4 paper:
 .Sh COMPATIBILITY
 This section summarises
 .Nm
-compatibility with
-.Xr groff 1 .
+compatibility with GNU troff.
 Each input and output format is separately noted.
 .Ss ASCII Compatibility
 .Bl -bullet -compact
@@ -390,9 +389,7 @@ in
 .Fl T Ns Cm ascii
 are synonyms, as are \-filled and \-ragged.
 .It
-In
-.Xr groff 1 ,
-the
+In GNU troff, the
 .Sq \&Pa
 .Xr mdoc 7
 macro does not underline when scoped under an

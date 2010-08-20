@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.180 2010/08/07 17:11:17 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.181 2010/08/09 00:00:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -842,6 +842,8 @@ termp_it_pre(DECL_ARGS)
 		if (MDOC_BODY == n->prev->type) 
 			p->flags |= TERMP_NOLPAD;
 
+		p->flags |= TERMP_IGNDELIM;
+
 		break;
 	case (LIST_diag):
 		if (MDOC_HEAD == n->type)
@@ -1000,6 +1002,13 @@ termp_it_post(DECL_ARGS)
 	p->flags &= ~TERMP_TWOSPACE;
 	p->flags &= ~TERMP_NOLPAD;
 	p->flags &= ~TERMP_HANG;
+
+	/*
+	 * TERMP_IGNDELIM is also set by `Pf', but it is safe
+	 * to clear it here because `Pf' cannot contain `It'.
+	 */
+
+	p->flags &= ~TERMP_IGNDELIM;
 }
 
 
@@ -1804,6 +1813,10 @@ static void
 termp_pf_post(DECL_ARGS)
 {
 
+	/*
+	 * XXX Resetting TERMP_IGNDELIM here is not safe
+	 * because `Pf' can be used inside `Bl -column'.
+	 */
 	p->flags &= ~TERMP_IGNDELIM;
 	p->flags |= TERMP_NOSPACE;
 }

@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.40 2010/08/01 15:46:18 joerg Exp $ */
+/*	$Id: term_ps.c,v 1.41 2010/08/06 16:07:35 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -29,6 +29,7 @@
 #include <time.h>
 #include <unistd.h>
 
+#include "mandoc.h"
 #include "out.h"
 #include "main.h"
 #include "term.h"
@@ -371,7 +372,7 @@ ps_growbuf(struct termp *p, size_t sz)
 	
 	if (NULL == p->engine.ps.psmarg) {
 		perror(NULL);
-		exit(EXIT_FAILURE);
+		exit(MANDOCLEVEL_SYSERR);
 	}
 }
 
@@ -608,7 +609,7 @@ pdf_obj(struct termp *p, size_t obj)
 			 p->engine.ps.pdfobjsz * sizeof(size_t));
 		if (NULL == p->engine.ps.pdfobjs) {
 			perror(NULL);
-			exit(EXIT_FAILURE);
+			exit(MANDOCLEVEL_SYSERR);
 		}
 	}
 

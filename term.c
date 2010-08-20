@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.165 2010/07/26 21:58:41 kristaps Exp $ */
+/*	$Id: term.c,v 1.166 2010/07/26 22:26:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -83,7 +83,7 @@ term_alloc(enum termenc enc)
 	p = calloc(1, sizeof(struct termp));
 	if (NULL == p) {
 		perror(NULL);
-		exit(EXIT_FAILURE);
+		exit(MANDOCLEVEL_SYSERR);
 	}
 
 	p->enc = enc;
@@ -577,7 +577,7 @@ adjbuf(struct termp *p, size_t sz)
 	p->buf = realloc(p->buf, p->maxcols);
 	if (NULL == p->buf) {
 		perror(NULL);
-		exit(EXIT_FAILURE);
+		exit(MANDOCLEVEL_SYSERR);
 	}
 }
 

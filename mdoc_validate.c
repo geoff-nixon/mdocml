@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.113 2010/07/21 09:08:26 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.114 2010/07/26 13:45:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -481,12 +481,8 @@ check_text(struct mdoc *m, int ln, int pos, char *p)
 		if (c) {
 			p += c - 1;
 			pos += c - 1;
-			continue;
-		}
-
-		c = mdoc_pmsg(m, ln, pos, MANDOCERR_BADESCAPE);
-		if ( ! (MDOC_IGN_ESCAPE & m->pflags) && ! c)
-			return(c);
+		} else
+			mdoc_pmsg(m, ln, pos, MANDOCERR_BADESCAPE);
 	}
 
 	return(1);

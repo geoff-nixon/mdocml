@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.28 2010/08/16 09:37:58 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.29 2010/08/20 01:02:07 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -170,6 +170,13 @@ mandoc_special(char *p)
 		break;
 	case ('['):
 		term = ']';
+		break;
+	case ('z'):
+		len = 1;
+		if ('\\' == *p) {
+			p += mandoc_special(p);
+			return(*p ? (int)(p - sv) : 0);
+		}
 		break;
 	default:
 		len = 1;

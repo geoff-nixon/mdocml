@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.26 2010/08/24 13:07:01 kristaps Exp $ */
+/*	$Id: out.c,v 1.27 2010/08/24 13:39:37 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -278,6 +278,26 @@ a2roffdeco(enum roffdeco *d, const char **word, size_t *sz)
 				return(i);
 			i++;
 		} 
+
+		/* Handle embedded numerical subexp or escape. */
+
+		if ('(' == wp[i]) {
+			while (wp[i] && ')' != wp[i])
+				if ('\\' == wp[i++]) {
+					/* Handle embedded escape. */
+					*word = &wp[i];
+					i += a2roffdeco(&dd, word, sz);
+				}
+
+			if (')' == wp[i++])
+				break;
+
+			*d = DECO_NONE;
+			return(i - 1);
+		} else if ('\\' == wp[i]) {
+			*word = &wp[++i];
+			i += a2roffdeco(&dd, word, sz);
+		}
 
 		break;
 	case ('['):

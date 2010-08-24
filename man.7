@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.82 2010/08/22 14:54:29 kristaps Exp $
+.\"	$Id: man.7,v 1.83 2010/08/24 12:18:48 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 22 2010 $
+.Dd $Mdocdate: August 24 2010 $
 .Dt MAN 7
 .Os
 .Sh NAME
@@ -938,11 +938,12 @@ The
 .Pq text filling colour ,
 .Sq \ez
 .Pq zero-length character ,
+.Sq \ew
+.Pq string length ,
 and
 .Sq \es
 .Pq text size
-.Sx Text Decoration
-escapes are all discarded in mandoc.
+escape sequences are all discarded in mandoc.
 .It
 The
 .Sq \ef

@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.25 2010/08/24 12:18:49 kristaps Exp $ */
+/*	$Id: out.c,v 1.26 2010/08/24 13:07:01 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -220,6 +220,8 @@ a2roffdeco(enum roffdeco *d, const char **word, size_t *sz)
 			break;
 		}
 		break;
+	case ('k'):
+		/* FALLTHROUGH */
 	case ('M'):
 		/* FALLTHROUGH */
 	case ('m'):

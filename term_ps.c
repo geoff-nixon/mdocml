@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.41 2010/08/06 16:07:35 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.42 2010/08/20 01:02:07 schwarze Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -18,7 +18,7 @@
 #include "config.h"
 #endif
 
-#include <sys/param.h>
+#include <sys/types.h>
 
 #include <assert.h>
 #include <stdarg.h>

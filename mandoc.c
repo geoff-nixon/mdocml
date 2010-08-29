@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.32 2010/08/24 13:39:37 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.33 2010/08/24 13:56:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -58,8 +58,6 @@ mandoc_special(char *p)
 	case ('S'):
 		/* FALLTHROUGH */
 	case ('R'):
-		/* FALLTHROUGH */
-	case ('o'):
 		/* FALLTHROUGH */
 	case ('N'):
 		/* FALLTHROUGH */
@@ -199,6 +197,8 @@ mandoc_special(char *p)
 			return(*p ? (int)(p - sv) : 0);
 		}
 		break;
+	case ('o'):
+		/* FALLTHROUGH */
 	case ('w'):
 		if ('\'' == *p++) {
 			term = '\'';

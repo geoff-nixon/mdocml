@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.100 2010/08/29 11:29:51 kristaps Exp $ */
+/*	$Id: roff.c,v 1.101 2010/09/04 18:31:44 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -749,7 +749,6 @@ roff_cond_sub(ROFF_ARGS)
 {
 	enum rofft	 t;
 	enum roffrule	 rr;
-	struct roffnode	*l;
 
 	ppos = pos;
 	rr = r->last->rule;
@@ -759,7 +758,6 @@ roff_cond_sub(ROFF_ARGS)
 	 * continue. 
 	 */
 
-	l = r->last;
 	roffnode_cleanscope(r);
 
 	if (ROFF_MAX == (t = roff_parse(*bufp, &pos))) {

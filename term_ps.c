@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.42 2010/08/20 01:02:07 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.43 2010/08/26 13:00:59 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -372,7 +372,7 @@ ps_growbuf(struct termp *p, size_t sz)
 	
 	if (NULL == p->engine.ps.psmarg) {
 		perror(NULL);
-		exit(MANDOCLEVEL_SYSERR);
+		exit((int)MANDOCLEVEL_SYSERR);
 	}
 }
 
@@ -583,6 +583,7 @@ ps_putchar(struct termp *p, char c)
 	/* See ps_printf(). */
 
 	if ( ! (PS_MARGINS & p->engine.ps.flags)) {
+		/* LINTED */
 		putchar(c);
 		p->engine.ps.pdfbytes++;
 		return;
@@ -609,7 +610,7 @@ pdf_obj(struct termp *p, size_t obj)
 			 p->engine.ps.pdfobjsz * sizeof(size_t));
 		if (NULL == p->engine.ps.pdfobjs) {
 			perror(NULL);
-			exit(MANDOCLEVEL_SYSERR);
+			exit((int)MANDOCLEVEL_SYSERR);
 		}
 	}
 

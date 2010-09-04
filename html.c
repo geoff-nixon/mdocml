@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.110 2010/07/26 22:26:05 kristaps Exp $ */
+/*	$Id: html.c,v 1.111 2010/08/20 01:02:07 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -116,7 +116,7 @@ ml_alloc(char *outopts, enum htmltype type)
 	h = calloc(1, sizeof(struct html));
 	if (NULL == h) {
 		perror(NULL);
-		exit(MANDOCLEVEL_SYSERR);
+		exit((int)MANDOCLEVEL_SYSERR);
 	}
 
 	h->type = type;
@@ -398,7 +398,7 @@ print_otag(struct html *h, enum htmltag tag,
 		t = malloc(sizeof(struct tag));
 		if (NULL == t) {
 			perror(NULL);
-			exit(MANDOCLEVEL_SYSERR);
+			exit((int)MANDOCLEVEL_SYSERR);
 		}
 		t->tag = tag;
 		t->next = h->tags.head;

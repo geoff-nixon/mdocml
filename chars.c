@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.27 2010/08/20 01:02:07 schwarze Exp $ */
+/*	$Id: chars.c,v 1.28 2010/08/29 11:36:49 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -94,13 +94,13 @@ chars_init(enum chars type)
 	tab = malloc(sizeof(struct tbl));
 	if (NULL == tab) {
 		perror(NULL);
-		exit(MANDOCLEVEL_SYSERR);
+		exit((int)MANDOCLEVEL_SYSERR);
 	}
 
 	htab = calloc(PRINT_HI - PRINT_LO + 1, sizeof(struct ln **));
 	if (NULL == htab) {
 		perror(NULL);
-		exit(MANDOCLEVEL_SYSERR);
+		exit((int)MANDOCLEVEL_SYSERR);
 	}
 
 	for (i = 0; i < LINES_MAX; i++) {

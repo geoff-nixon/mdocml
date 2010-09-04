@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.33 2010/08/24 13:56:51 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.34 2010/08/29 11:28:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -233,7 +233,7 @@ mandoc_calloc(size_t num, size_t size)
 	ptr = calloc(num, size);
 	if (NULL == ptr) {
 		perror(NULL);
-		exit(MANDOCLEVEL_SYSERR);
+		exit((int)MANDOCLEVEL_SYSERR);
 	}
 
 	return(ptr);
@@ -248,7 +248,7 @@ mandoc_malloc(size_t size)
 	ptr = malloc(size);
 	if (NULL == ptr) {
 		perror(NULL);
-		exit(MANDOCLEVEL_SYSERR);
+		exit((int)MANDOCLEVEL_SYSERR);
 	}
 
 	return(ptr);
@@ -262,7 +262,7 @@ mandoc_realloc(void *ptr, size_t size)
 	ptr = realloc(ptr, size);
 	if (NULL == ptr) {
 		perror(NULL);
-		exit(MANDOCLEVEL_SYSERR);
+		exit((int)MANDOCLEVEL_SYSERR);
 	}
 
 	return(ptr);
@@ -277,7 +277,7 @@ mandoc_strdup(const char *ptr)
 	p = strdup(ptr);
 	if (NULL == p) {
 		perror(NULL);
-		exit(MANDOCLEVEL_SYSERR);
+		exit((int)MANDOCLEVEL_SYSERR);
 	}
 
 	return(p);

@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.8 2010/06/30 12:30:36 kristaps Exp $ */
+/*	$Id: term_ascii.c,v 1.9 2010/07/13 23:53:20 schwarze Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -104,6 +104,7 @@ static void
 ascii_letter(struct termp *p, char c)
 {
 	
+	/* LINTED */
 	putchar(c);
 }
 

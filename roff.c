@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.99 2010/08/24 12:48:43 kristaps Exp $ */
+/*	$Id: roff.c,v 1.100 2010/08/29 11:29:51 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -248,6 +248,7 @@ roffnode_pop(struct roff *r)
 		if (r->rstackpos > -1)
 			r->rstackpos--;
 
+	ROFF_DEBUG("roff: popping scope\n");
 	r->last = r->last->parent;
 	if (p->end)
 		free(p->end);
@@ -426,8 +427,8 @@ roff_parseln(struct roff *r, int ln, char **bufp,
 	if (r->last) {
 		t = r->last->tok;
 		assert(roffs[t].sub);
-		ROFF_DEBUG("roff: intercept scoped context: %s\n", 
-				roffs[t].name);
+		ROFF_DEBUG("roff: intercept scoped context: %s, [%s]\n", 
+				roffs[t].name, &(*bufp)[pos]);
 		return((*roffs[t].sub)
 				(r, t, bufp, szp, 
 				 ln, pos, pos, offs));
@@ -760,9 +761,6 @@ roff_cond_sub(ROFF_ARGS)
 
 	l = r->last;
 	roffnode_cleanscope(r);
-
-	if (l != r->last)
-		return(ROFFRULE_DENY == rr ? ROFF_IGN : ROFF_CONT);
 
 	if (ROFF_MAX == (t = roff_parse(*bufp, &pos))) {
 		if ('\\' == (*bufp)[pos] && '}' == (*bufp)[pos + 1])

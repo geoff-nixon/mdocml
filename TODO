@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.43 2010/09/04 18:52:21 kristaps Exp $
+* $Id: TODO,v 1.44 2010/09/04 19:01:52 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -153,6 +153,8 @@
 - Bogus .Pp before .Bl should not cause a double blank line,
   see "The route utility provides the following simple commands:"
   in OpenBSD route(8).
+
+- In -T[x]html, Rs/Re need a div.
 
 ************************************************************************
 * performance issues

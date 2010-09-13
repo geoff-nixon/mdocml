@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.58 2010/07/21 09:36:41 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.59 2010/09/13 12:21:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -196,7 +196,7 @@ static	int mdoc_argflags[MDOC_MAX] = {
 	0, /* Fr */
 	0, /* Ud */
 	0, /* Lb */
-	ARGS_DELIM, /* Lp */
+	0, /* Lp */
 	ARGS_DELIM, /* Lk */
 	ARGS_DELIM, /* Mt */
 	ARGS_DELIM, /* Brq */

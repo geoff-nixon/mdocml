@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.45 2010/09/08 11:57:29 kristaps Exp $
+* $Id: TODO,v 1.46 2010/09/15 13:10:30 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -171,11 +171,6 @@ Several areas can be cleaned up to make mandoc even faster.  These are
 ************************************************************************
 * structural issues
 ************************************************************************
-
-- rendering frontend code can calculate widths only for plain strings,
-  not for strings containing escape sequences.  For example, this
-  hinders calculation of the indent required for .Nm \&[ in text(1).
-  comments from kristaps@  Wed, 21 Jul 2010 23:26:08 +0200
 
 - another example of the same problem:
   .Bl -tag -width "\eD{format}XX" -compact

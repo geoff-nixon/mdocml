@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.46 2010/09/15 13:10:30 kristaps Exp $
+* $Id: TODO,v 1.47 2010/09/15 14:36:16 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -89,6 +89,9 @@
 - empty phrases in .Bl column produce too few blanks
   try e.g. .Bl -column It Ta Ta
   reported by millert Fri, 02 Apr 2010 16:13:46 -0400
+
+- in enclosures, mandoc sometimes fancies a bogus end of sentence
+  reminded by jmc@  Thu, 23 Sep 2010 18:13:39 +0059
 
 ************************************************************************
 * formatting issues: gratuitious differences

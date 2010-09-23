@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.170 2010/09/04 20:18:53 kristaps Exp $ */
+/*	$Id: term.c,v 1.49 2010/08/20 23:34:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -134,6 +134,7 @@ term_flushln(struct termp *p)
 	size_t		 vbl;   /* number of blanks to prepend to output */
 	size_t		 vend;	/* end of word visual position on output */
 	size_t		 bp;    /* visual right border position */
+	size_t		 dv;    /* temporary for visual pos calculations */
 	int		 j;     /* temporary loop index for p->buf */
 	int		 jhy;	/* last hyph before overflow w/r/t j */
 	size_t		 maxvis; /* output position of visible boundary */
@@ -237,7 +238,9 @@ term_flushln(struct termp *p)
 				j = i;
 				while (' ' == p->buf[i])
 					i++;
-				vbl += (i - j) * (*p->width)(p, ' ');
+				dv = (i - j) * (*p->width)(p, ' ');
+				vbl += dv;
+				vend += dv;
 				break;
 			}
 			if (ASCII_NBRSP == p->buf[i]) {
@@ -264,7 +267,6 @@ term_flushln(struct termp *p)
 				p->viscol += (*p->width)(p, p->buf[i]);
 			}
 		}
-		vend += vbl;
 		vis = vend;
 	}
 

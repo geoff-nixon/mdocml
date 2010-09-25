@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.49 2010/09/25 15:29:12 kristaps Exp $
+* $Id: TODO,v 1.50 2010/09/25 15:51:30 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -148,10 +148,6 @@
 - When .%T is used outside an .Rs context and with a trailing comma,
   there is no point in rendering two commata,
   see the first paragraph of the DESCRIPTION in OpenBSD mount_nfs(8).
-
-- When .%T is used outside an .Rs context and without a trailing comma,
-  no comma should be rendered at all,
-  see the first paragraph of the DESCRIPTION in OpenBSD exports(5).
 
 - Bogus .Pp before .Bl should not cause a double blank line,
   see "The route utility provides the following simple commands:"

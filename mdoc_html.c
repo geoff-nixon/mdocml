@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.104 2010/09/04 20:18:53 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.105 2010/09/25 15:51:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -2263,7 +2263,9 @@ mdoc__x_post(MDOC_ARGS)
 
 	/* TODO: %U */
 
-	h->flags |= HTML_NOSPACE;
+	if (NULL == n->parent || MDOC_Rs != n->parent->tok)
+		return;
+
 	print_text(h, n->next ? "," : ".");
 }
 

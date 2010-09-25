@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.185 2010/09/23 20:40:00 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.186 2010/09/25 15:51:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -2130,7 +2130,9 @@ termp____post(DECL_ARGS)
 
 	/* TODO: %U. */
 
-	p->flags |= TERMP_NOSPACE;
+	if (NULL == n->parent || MDOC_Rs != n->parent->tok)
+		return;
+
 	if (NULL == n->next) {
 		term_word(p, ".");
 		p->flags |= TERMP_SENTENCE;

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.103 2010/09/04 19:01:52 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.104 2010/09/04 20:18:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -2108,17 +2108,14 @@ static int
 mdoc_rs_pre(MDOC_ARGS)
 {
 	struct htmlpair	 tag;
-	struct roffsu	 su;
 
 	if (MDOC_BLOCK != n->type)
 		return(1);
 
 	if (n->prev && SEC_SEE_ALSO == n->sec) {
-		SCALE_VS_INIT(&su, 1);
-		bufcat_su(h, "margin-top", &su);
-		PAIR_STYLE_INIT(&tag, h);
-		print_otag(h, TAG_DIV, 1, &tag);
-	}
+		print_otag(h, TAG_BR, 0, NULL);
+		print_otag(h, TAG_BR, 0, NULL);
+	} 
 
 	PAIR_CLASS_INIT(&tag, "ref");
 	print_otag(h, TAG_SPAN, 1, &tag);

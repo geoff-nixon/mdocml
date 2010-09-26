@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.187 2010/09/25 16:41:33 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.188 2010/09/26 09:16:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1796,6 +1796,7 @@ termp_sp_pre(DECL_ARGS)
 }
 
 
+/* ARGSUSED */
 static int
 termp_quote_pre(DECL_ARGS)
 {
@@ -1855,6 +1856,7 @@ termp_quote_pre(DECL_ARGS)
 }
 
 
+/* ARGSUSED */
 static void
 termp_quote_post(DECL_ARGS)
 {

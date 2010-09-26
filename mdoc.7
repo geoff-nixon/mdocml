@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.157 2010/08/29 11:28:09 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.158 2010/09/04 17:22:41 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 29 2010 $
+.Dd $Mdocdate: September 4 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -343,13 +343,14 @@ The
 \&.Nm
 utility processes files ...
 \&.\e\*q .Sh IMPLEMENTATION NOTES
+\&.\e\*q Not used in OpenBSD.
 \&.\e\*q .Sh RETURN VALUES
 \&.\e\*q For sections 2, 3, & 9 only.
 \&.\e\*q .Sh ENVIRONMENT
 \&.\e\*q For sections 1, 6, 7, & 8 only.
 \&.\e\*q .Sh FILES
 \&.\e\*q .Sh EXIT STATUS
-\&.\e\*q For sections 1, 6 & 8 only.
+\&.\e\*q For sections 1, 6, & 8 only.
 \&.\e\*q .Sh EXAMPLES
 \&.\e\*q .Sh DIAGNOSTICS
 \&.\e\*q For sections 1, 4, 6, 7, & 8 only.
@@ -2868,6 +2869,7 @@ standalone double-quote in formatted output.
 This is not supported by mandoc.
 .El
 .Sh SEE ALSO
+.Xr man 1 ,
 .Xr mandoc 1 ,
 .Xr mandoc_char 7
 .Sh HISTORY

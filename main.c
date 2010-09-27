@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.105 2010/09/04 20:18:53 kristaps Exp $ */
+/*	$Id: main.c,v 1.106 2010/09/26 20:22:28 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -174,6 +174,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"missing font type",
 	"line argument(s) will be lost",
 	"body argument(s) will be lost",
+	"paragraph macro ignored",
 
 	"generic fatal error",
 

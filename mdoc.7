@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.159 2010/09/26 19:46:48 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.160 2010/09/27 06:56:44 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: September 26 2010 $
+.Dd $Mdocdate: September 27 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -1076,7 +1076,8 @@ implementations render it poorly.
 Left- and right-justify the block.
 .It Fl literal
 Do not justify the block at all.
-Preserve white space as it appears in the input.
+Preserve white space and newlines as they appear in the input, including
+if it follows a macro.
 .It Fl ragged
 Only left-justify the block.
 .It Fl unfilled

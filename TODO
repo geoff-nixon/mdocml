@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.53 2010/09/27 09:26:27 kristaps Exp $
+* $Id: TODO,v 1.54 2010/09/27 10:47:48 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -133,9 +133,6 @@
   In -literal, tabs are 8 spaces.
   In -unfilled, tabs are 5 spaces, just like in -filled and -ragged.
   See the CCDF_* display in OpenBSD ccdconfig(8).
-
-- In .Bd -unfilled, .Pp should produce one blank line, not two;
-  see the ccd.conf display in OpenBSD ccdconfig(8).
 
 - .Nx 1.0a
   should be "NetBSD 1.0A", not "NetBSD 1.0a",

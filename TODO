@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.51 2010/09/25 16:41:33 kristaps Exp $
+* $Id: TODO,v 1.52 2010/09/25 16:52:15 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -144,10 +144,6 @@
 - In .Bl -tag, if a tag exceeds the right margin and must be continued
   on the next line, it must be indented by -width, not width+1;
   see "rule block|pass" in OpenBSD ifconfig(8).
-
-- Bogus .Pp before .Bl should not cause a double blank line,
-  see "The route utility provides the following simple commands:"
-  in OpenBSD route(8).
 
 ************************************************************************
 * performance issues

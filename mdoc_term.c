@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.189 2010/09/26 10:00:42 kristaps Exp $ */
+/*	$Id$ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -80,7 +80,6 @@ static	void	  termp_it_post(DECL_ARGS);
 static	void	  termp_lb_post(DECL_ARGS);
 static	void	  termp_nm_post(DECL_ARGS);
 static	void	  termp_pf_post(DECL_ARGS);
-static	void	  termp_quote_post(DECL_ARGS);
 static	void	  termp_quote_post(DECL_ARGS);
 static	void	  termp_sh_post(DECL_ARGS);
 static	void	  termp_ss_post(DECL_ARGS);

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.163 2010/08/20 01:02:07 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.164 2010/08/29 11:29:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -691,11 +691,11 @@ mdoc_ptext(struct mdoc *m, int line, char *buf, int offs)
 			return(0);
 
 		/*
-		 * Insert a `Pp' in the case of a blank line.  Technically,
+		 * Insert a `sp' in the case of a blank line.  Technically,
 		 * blank lines aren't allowed, but enough manuals assume this
 		 * behaviour that we want to work around it.
 		 */
-		if ( ! mdoc_elem_alloc(m, line, offs, MDOC_Pp, NULL))
+		if ( ! mdoc_elem_alloc(m, line, offs, MDOC_sp, NULL))
 			return(0);
 
 		m->next = MDOC_NEXT_SIBLING;
@@ -758,14 +758,11 @@ mdoc_pmacro(struct mdoc *m, int ln, char *buf, int offs)
 
 	/* 
 	 * Copy the first word into a nil-terminated buffer.
-	 * Stop copying when a tab, space, backslash, or eoln is encountered.
+	 * Stop copying when a tab, space, or eoln is encountered.
 	 */
 
 	j = 0;
-	while (j < 4 && '\0' != buf[i] && 
-			' ' != buf[i] && 
-			'\t' != buf[i] && 
-			'\\' != buf[i])
+	while (j < 4 && '\0' != buf[i] && ' ' != buf[i] && '\t' != buf[i])
 		mac[j++] = buf[i++];
 	mac[j] = '\0';
 

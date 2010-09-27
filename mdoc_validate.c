@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.116 2010/08/29 10:30:58 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.117 2010/09/27 09:26:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1473,7 +1473,12 @@ static int
 pre_pp(PRE_ARGS)
 {
 
-	if (NULL == mdoc->last || MDOC_Pp != mdoc->last->tok)
+	if (NULL == mdoc->last)
+		return(1);
+
+	/* Don't allow prior `Lp' or `Pp'. */
+
+	if (MDOC_Pp != mdoc->last->tok && MDOC_Lp != mdoc->last->tok)
 		return(1);
 
 	if (MDOC_Bl == n->tok && n->data.Bl->comp)

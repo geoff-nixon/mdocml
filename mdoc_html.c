@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.106 2010/09/25 16:41:33 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.107 2010/09/26 10:32:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1316,6 +1316,26 @@ mdoc_bd_pre(MDOC_ARGS)
 
 	for (nn = n->child; nn; nn = nn->next) {
 		print_mdoc_node(m, nn, h);
+		/*
+		 * If the printed node flushes its own line, then we
+		 * needn't do it here as well.  This is hacky, but the
+		 * notion of selective eoln whitespace is pretty dumb
+		 * anyway, so don't sweat it.
+		 */
+		switch (nn->tok) {
+		case (MDOC_br):
+			/* FALLTHROUGH */
+		case (MDOC_sp):
+			/* FALLTHROUGH */
+		case (MDOC_Bl):
+			/* FALLTHROUGH */
+		case (MDOC_Lp):
+			/* FALLTHROUGH */
+		case (MDOC_Pp):
+			continue;
+		default:
+			break;
+		}
 		if (nn->next && nn->next->line == nn->line)
 			continue;
 		print_text(h, "\n");

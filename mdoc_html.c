@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.107 2010/09/26 10:32:14 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.108 2010/09/27 11:21:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -2157,6 +2157,7 @@ mdoc_quote_pre(MDOC_ARGS)
 		/* FALLTHROUGH */
 	case (MDOC_Op):
 		print_text(h, "\\(lB");
+		h->flags |= HTML_NOSPACE;
 		PAIR_CLASS_INIT(&tag, "opt");
 		print_otag(h, TAG_SPAN, 1, &tag);
 		break;

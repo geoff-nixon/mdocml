@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.109 2010/10/01 12:09:55 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.110 2010/10/01 21:51:13 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1323,6 +1323,8 @@ mdoc_bd_pre(MDOC_ARGS)
 		 * anyway, so don't sweat it.
 		 */
 		switch (nn->tok) {
+		case (MDOC_Sm):
+			/* FALLTHROUGH */
 		case (MDOC_br):
 			/* FALLTHROUGH */
 		case (MDOC_sp):
@@ -1603,7 +1605,16 @@ mdoc_sm_pre(MDOC_ARGS)
 
 	assert(n->child && MDOC_TEXT == n->child->type);
 	if (0 == strcmp("on", n->child->string)) {
-		/* FIXME: no p->col to check... */
+		/* 
+		 * FIXME: no p->col to check.  Thus, if we have
+		 *  .Bd -literal
+		 *  .Sm off
+		 *  1 2
+		 *  .Sm on
+		 *  3
+		 *  .Ed
+		 * the "3" is preceded by a space.
+		 */
 		h->flags &= ~HTML_NOSPACE;
 		h->flags &= ~HTML_NONOSPACE;
 	} else

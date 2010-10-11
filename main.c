@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.106 2010/09/26 20:22:28 schwarze Exp $ */
+/*	$Id: main.c,v 1.107 2010/09/27 09:26:27 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -132,7 +132,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"unterminated quoted string",
 	"argument requires the width argument",
 	"superfluous width argument",
-	"ignoring argument",
 	"bad date argument",
 	"bad width argument",
 	"unknown manual section",
@@ -149,6 +148,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"list type repeated",
 	"display type repeated",
 	"argument repeated",
+	"ignoring argument",
 	"manual name not yet set",
 	"obsolete macro ignored",
 	"empty macro ignored",

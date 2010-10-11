@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.119 2010/09/27 23:03:44 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.120 2010/10/11 13:24:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -893,14 +893,15 @@ pre_it(PRE_ARGS)
 static int
 pre_an(PRE_ARGS)
 {
+	int		 i;
 
 	if (NULL == n->args)
 		return(1);
-	if (n->args->argc > 1)
-		if ( ! mdoc_nmsg(mdoc, n, MANDOCERR_ARGCOUNT))
+	
+	for (i = 1; i < (int)n->args->argc; i++)
+		if ( ! mdoc_pmsg(mdoc, n->args->argv[i].line,
+			n->args->argv[i].pos, MANDOCERR_IGNARGV))
 			return(0);
-
-	/* FIXME: this should use a different error message. */
 
 	if (MDOC_Split == n->args->argv[0].arg)
 		n->data.An.auth = AUTH_split;

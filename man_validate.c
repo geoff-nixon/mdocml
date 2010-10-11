@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.48 2010/07/31 23:52:58 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.49 2010/08/20 01:02:07 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -27,6 +27,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "mandoc.h"
 #include "libman.h"

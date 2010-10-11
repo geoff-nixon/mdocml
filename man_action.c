@@ -1,4 +1,4 @@
-/*	$Id: man_action.c,v 1.40 2010/07/22 23:03:15 kristaps Exp $ */
+/*	$Id: man_action.c,v 1.41 2010/07/31 23:52:58 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -21,6 +21,7 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "mandoc.h"
 #include "libman.h"

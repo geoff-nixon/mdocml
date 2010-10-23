@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.192 2010/10/01 21:51:13 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.193 2010/10/10 09:59:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1657,7 +1657,7 @@ termp_xx_pre(DECL_ARGS)
 	pp = NULL;
 	switch (n->tok) {
 	case (MDOC_Bsx):
-		pp = "BSDI BSD/OS";
+		pp = "BSD/OS";
 		break;
 	case (MDOC_Dx):
 		pp = "DragonFly";

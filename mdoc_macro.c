@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.94 2010/09/26 20:22:28 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.95 2010/10/01 21:51:13 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -790,7 +790,7 @@ in_line(MACRO_PROT_ARGS)
 		/* FALLTHROUGH */
 	case (MDOC_Fl):
 		/* FALLTHROUGH */
-	case (MDOC_Lk):
+	case (MDOC_Mt):
 		/* FALLTHROUGH */
 	case (MDOC_Nm):
 		/* FALLTHROUGH */

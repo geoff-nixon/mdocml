@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.163 2010/10/29 10:38:54 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.164 2010/11/29 13:02:47 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: October 29 2010 $
+.Dd $Mdocdate: November 29 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -2308,6 +2308,9 @@ and
 .Sx \&Ux .
 .Ss \&Pa
 A file-system path.
+If an argument is not provided, the string
+.Dq \(ti
+is used as a default.
 .Pp
 Examples:
 .D1 \&.Pa /usr/bin/mandoc

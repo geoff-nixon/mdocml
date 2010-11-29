@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.107 2010/09/27 09:26:27 kristaps Exp $ */
+/*	$Id: main.c,v 1.108 2010/10/11 15:46:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -125,8 +125,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"out of order prologue",
 	"repeated prologue entry",
 	"list type must come first",
-	"bad standard",
-	"bad library",
 	"tab in non-literal context",
 	"bad escape sequence",
 	"unterminated quoted string",
@@ -145,6 +143,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"bad Boolean value",
 	"child violates parent syntax",
 	"bad AT&T symbol",
+	"bad standard",
 	"list type repeated",
 	"display type repeated",
 	"argument repeated",

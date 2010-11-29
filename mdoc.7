@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.162 2010/10/24 14:49:35 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.163 2010/10/29 10:38:54 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: October 24 2010 $
+.Dd $Mdocdate: October 29 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -2124,6 +2124,9 @@ Examples:
 Format a
 .Dq mailto:
 hyperlink.
+If an argument is not provided, the string
+.Dq \(ti
+is used as a default.
 Its syntax is as follows:
 .Pp
 .D1 Pf \. Sx \&Mt Cm address

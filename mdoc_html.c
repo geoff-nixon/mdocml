@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.111 2010/10/10 09:59:48 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.112 2010/10/23 23:31:10 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1675,7 +1675,7 @@ mdoc_lk_pre(MDOC_ARGS)
 	PAIR_HREF_INIT(&tag[1], nn->string);
 	print_otag(h, TAG_A, 2, tag);
 
-	if (NULL == nn->next) 
+	if (NULL == nn || NULL == nn->next) 
 		return(1);
 
 	for (nn = nn->next; nn; nn = nn->next) 

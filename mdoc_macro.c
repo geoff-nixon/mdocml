@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.95 2010/10/01 21:51:13 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.96 2010/11/29 13:02:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -259,15 +259,11 @@ rew_last(struct mdoc *mdoc, const struct mdoc_node *to)
 	while (mdoc->last != to) {
 		if ( ! mdoc_valid_post(mdoc))
 			return(0);
-		if ( ! mdoc_action_post(mdoc))
-			return(0);
 		mdoc->last = mdoc->last->parent;
 		assert(mdoc->last);
 	}
 
-	if ( ! mdoc_valid_post(mdoc))
-		return(0);
-	return(mdoc_action_post(mdoc));
+	return(mdoc_valid_post(mdoc));
 }
 
 
@@ -696,10 +692,8 @@ blk_exp_close(MACRO_PROT_ARGS)
 		if (later &&
 		    MDOC_EXPLICIT & mdoc_macros[later->tok].flags)
 			continue;
-		if (MDOC_CALLABLE & mdoc_macros[n->tok].flags) {
-			assert( ! (MDOC_ACTED & n->flags));
+		if (MDOC_CALLABLE & mdoc_macros[n->tok].flags)
 			later = n;
-		}
 	}
 
 	if ( ! (MDOC_CALLABLE & mdoc_macros[tok].flags)) {
@@ -1143,7 +1137,6 @@ blk_full(MACRO_PROT_ARGS)
 		if (MDOC_BLOCK == n->type && 
 				MDOC_EXPLICIT & mdoc_macros[n->tok].flags &&
 				! (MDOC_VALID & n->flags)) {
-			assert( ! (MDOC_ACTED & n->flags));
 			n->pending = head;
 			return(1);
 		}
@@ -1281,7 +1274,6 @@ blk_part_imp(MACRO_PROT_ARGS)
 		if (MDOC_BLOCK == n->type &&
 		    MDOC_EXPLICIT & mdoc_macros[n->tok].flags &&
 		    ! (MDOC_VALID & n->flags)) {
-			assert( ! (MDOC_ACTED & n->flags));
 			if ( ! make_pending(n, tok, m, line, ppos))
 				return(0);
 			if ( ! mdoc_endbody_alloc(m, line, ppos,

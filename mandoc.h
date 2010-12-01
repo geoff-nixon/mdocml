@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.23 2010/10/11 15:46:19 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.24 2010/11/29 15:45:15 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -85,6 +85,7 @@ enum	mandocerr {
 	MANDOCERR_NOTEXT, /* no text in this context */
 	MANDOCERR_BADCOMMENT, /* bad comment style */
 	MANDOCERR_MACRO, /* unknown macro will be lost */
+	MANDOCERR_REQUEST, /* NOT IMPLEMENTED: skipping request */
 	MANDOCERR_LINESCOPE, /* line scope broken */
 	MANDOCERR_ARGCOUNT, /* argument count wrong */
 	MANDOCERR_NOSCOPE, /* no such block is open */

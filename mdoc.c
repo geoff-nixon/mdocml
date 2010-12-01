@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.165 2010/09/27 23:03:44 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.166 2010/11/30 13:04:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -286,6 +286,8 @@ mdoc_macro(MACRO_PROT_ARGS)
 			! (MDOC_PBODY & m->flags)) {
 		if ( ! mdoc_pmsg(m, line, ppos, MANDOCERR_BADPROLOG))
 			return(0);
+		if (NULL == m->meta.msec)
+			m->meta.msec = mandoc_strdup("1");
 		if (NULL == m->meta.title)
 			m->meta.title = mandoc_strdup("UNKNOWN");
 		if (NULL == m->meta.vol)

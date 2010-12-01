@@ -1,4 +1,4 @@
-/*	$Id: roff.h,v 1.17 2010/06/27 15:52:41 kristaps Exp $ */
+/*	$Id: roff.h,v 1.18 2010/08/20 01:02:07 schwarze Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -20,6 +20,9 @@
 enum	rofferr {
 	ROFF_CONT, /* continue processing line */
 	ROFF_RERUN, /* re-run roff interpreter with offset */
+	ROFF_APPEND, /* re-run main parser, appending next line */
+	ROFF_REPARSE, /* re-run main parser on the result */
+	ROFF_SO, /* include another file */
 	ROFF_IGN, /* ignore current line */
 	ROFF_ERR /* badness: puke and stop */
 };

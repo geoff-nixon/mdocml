@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.112 2010/12/01 16:28:23 kristaps Exp $ */
+/*	$Id: main.c,v 1.113 2010/12/01 16:54:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -629,6 +629,7 @@ static void
 parsebuf(struct curparse *curp, struct buf blk, int start)
 {
 	struct buf	 ln;
+	enum rofferr	 rr;
 	int		 i, of, rc;
 	int		 pos; /* byte number in the ln buffer */
 	int		 lnn; /* line number in the real file */
@@ -743,11 +744,11 @@ parsebuf(struct curparse *curp, struct buf blk, int start)
 		of = 0;
 
 rerun:
-		rc = roff_parseln
+		rr = roff_parseln
 			(curp->roff, curp->line, 
 			 &ln.buf, &ln.sz, of, &of);
 
-		switch (rc) {
+		switch (rr) {
 		case (ROFF_REPARSE):
 			parsebuf(curp, ln, 0);
 			pos = 0;

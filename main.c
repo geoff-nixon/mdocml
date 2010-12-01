@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.111 2010/12/01 15:09:01 kristaps Exp $ */
+/*	$Id: main.c,v 1.112 2010/12/01 16:28:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -122,6 +122,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 
 	"generic warning",
 
+	".so is fragile, better use ln(1)",
 	"text should be uppercase",
 	"sections out of conventional order",
 	"section name repeats",
@@ -190,6 +191,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"argument count wrong, violates syntax",
 	"child violates parent syntax",
 	"argument count wrong, violates syntax",
+	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
 	"no document body",
 	"no document prologue",
 	"utsname system call failed",

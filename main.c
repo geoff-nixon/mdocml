@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.108 2010/10/11 15:46:19 kristaps Exp $ */
+/*	$Id: main.c,v 1.109 2010/11/29 15:45:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -159,6 +159,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"no text in this context",
 	"bad comment style",
 	"unknown macro will be lost",
+	"NOT IMPLEMENTED: skipping request",
 	"line scope broken",
 	"argument count wrong",
 	"request scope close w/none open",

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.24 2010/11/29 15:45:15 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.25 2010/12/01 10:31:35 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -45,6 +45,7 @@ enum	mandocerr {
 	MANDOCERR_OK,
 
 	MANDOCERR_WARNING, /* ===== start of warnings ===== */
+	MANDOCERR_SO, /* .so is fragile, better use ln(1) */
 	MANDOCERR_UPPERCASE, /* text should be uppercase */
 	MANDOCERR_SECOOO, /* sections out of conventional order */
 	MANDOCERR_SECREP, /* section name repeats */
@@ -114,6 +115,7 @@ enum	mandocerr {
 	MANDOCERR_SYNTARGVCOUNT, /* argument count wrong, violates syntax */
 	MANDOCERR_SYNTCHILD, /* child violates parent syntax */
 	MANDOCERR_SYNTARGCOUNT, /* argument count wrong, violates syntax */
+	MANDOCERR_SOPATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
 	MANDOCERR_NODOCBODY, /* no document body */
 	MANDOCERR_NODOCPROLOG, /* no document prologue */
 	MANDOCERR_UTSNAME, /* utsname system call failed */

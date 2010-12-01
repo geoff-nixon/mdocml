@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.132 2010/11/30 12:59:20 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.133 2010/11/30 14:27:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1158,7 +1158,7 @@ post_literal(POST_ARGS)
 	 */
 
 	if (MDOC_BODY == mdoc->last->type)
-		mdoc->last->flags &= ~MDOC_LITERAL;
+		mdoc->flags &= ~MDOC_LITERAL;
 
 	return(1);
 }

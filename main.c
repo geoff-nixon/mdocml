@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.116 2010/12/05 15:37:30 kristaps Exp $ */
+/*	$Id: main.c,v 1.117 2010/12/05 15:49:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -133,7 +133,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"bad escape sequence",
 	"unterminated quoted string",
 	"argument requires the width argument",
-	"superfluous width argument",
 	"bad date argument",
 	"bad width argument",
 	"unknown manual section",

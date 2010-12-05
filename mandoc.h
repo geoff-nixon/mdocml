@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.26 2010/12/01 16:54:25 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.27 2010/12/05 15:37:30 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -93,6 +93,7 @@ enum	mandocerr {
 	MANDOCERR_NOSCOPE, /* no such block is open */
 	MANDOCERR_SCOPEREP, /* scope already open */
 	MANDOCERR_SCOPEEXIT, /* scope open on exit */
+	MANDOCERR_UNAME, /* uname(3) system call failed */
 	/* FIXME: merge following with MANDOCERR_ARGCOUNT */
 	MANDOCERR_NOARGS, /* macro requires line argument(s) */
 	MANDOCERR_NOBODY, /* macro requires body argument(s) */
@@ -117,7 +118,6 @@ enum	mandocerr {
 	MANDOCERR_SOPATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
 	MANDOCERR_NODOCBODY, /* no document body */
 	MANDOCERR_NODOCPROLOG, /* no document prologue */
-	MANDOCERR_UTSNAME, /* utsname system call failed */
 	MANDOCERR_MEM, /* static buffer exhausted */
 	MANDOCERR_MAX
 };

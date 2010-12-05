@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.115 2010/12/02 20:41:46 schwarze Exp $ */
+/*	$Id: main.c,v 1.116 2010/12/05 15:37:30 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -170,6 +170,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"request scope close w/none open",
 	"scope already open",
 	"scope open on exit",
+	"uname(3) system call failed",
 	"macro requires line argument(s)",
 	"macro requires body argument(s)",
 	"macro requires argument(s)",
@@ -194,7 +195,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
 	"no document body",
 	"no document prologue",
-	"utsname system call failed",
 	"static buffer exhausted",
 };
 

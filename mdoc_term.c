@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.194 2010/10/23 23:31:10 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.195 2010/11/29 13:02:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1591,6 +1591,10 @@ termp_bd_pre(DECL_ARGS)
 		case (MDOC_sp):
 			/* FALLTHROUGH */
 		case (MDOC_Bl):
+			/* FALLTHROUGH */
+		case (MDOC_D1):
+			/* FALLTHROUGH */
+		case (MDOC_Dl):
 			/* FALLTHROUGH */
 		case (MDOC_Lp):
 			/* FALLTHROUGH */

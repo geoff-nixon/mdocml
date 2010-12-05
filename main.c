@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.114 2010/12/01 17:00:05 kristaps Exp $ */
+/*	$Id: main.c,v 1.115 2010/12/02 20:41:46 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -146,6 +146,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"NAME section must come first",
 	"bad Boolean value",
 	"child violates parent syntax",
+	"displays may not be nested",
 	"bad AT&T symbol",
 	"bad standard",
 	"list type repeated",
@@ -183,7 +184,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"generic fatal error",
 
 	"column syntax is inconsistent",
-	"displays may not be nested",
 	"unsupported display type",
 	"blocks badly nested",
 	"no such block is open",

@@ -1,4 +1,4 @@
-.\"	$Id$
+.\"	$Id: mdoc.7,v 1.167 2010/11/30 21:44:59 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -2738,6 +2738,11 @@ The following problematic behaviour is found in groff:
 .ds hist (Historic groff only.)
 .Pp
 .Bl -dash -compact
+.It
+Display macros
+.Pq Sx \&Bd , Sx \&Dl , and Sx \&D1
+may not be nested.
+\*[hist]
 .It
 .Sx \&At
 with unknown arguments produces no output at all.

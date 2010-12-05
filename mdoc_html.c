@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.112 2010/10/23 23:31:10 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.113 2010/11/29 13:02:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1330,6 +1330,10 @@ mdoc_bd_pre(MDOC_ARGS)
 		case (MDOC_sp):
 			/* FALLTHROUGH */
 		case (MDOC_Bl):
+			/* FALLTHROUGH */
+		case (MDOC_D1):
+			/* FALLTHROUGH */
+		case (MDOC_Dl):
 			/* FALLTHROUGH */
 		case (MDOC_Lp):
 			/* FALLTHROUGH */

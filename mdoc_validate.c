@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.136 2010/12/05 15:49:37 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.137 2010/12/05 15:55:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1448,11 +1448,8 @@ post_bl_block_tag(POST_ARGS)
 		assert(MDOC_BLOCK == nn->type);
 		nn = nn->head->child;
 
-		if (nn == NULL) {
-			/* No -width for .Bl and first .It is emtpy */
-			mdoc_nmsg(mdoc, n, MANDOCERR_NOWIDTHARG);
+		if (nn == NULL)
 			break;
-		}
 
 		if (MDOC_TEXT == nn->type) {
 			sz = strlen(nn->string) + 1;
@@ -1461,8 +1458,6 @@ post_bl_block_tag(POST_ARGS)
 
 		if (0 != (ssz = mdoc_macro2len(nn->tok)))
 			sz = ssz;
-		else 
-			mdoc_nmsg(mdoc, n, MANDOCERR_NOWIDTHARG);
 
 		break;
 	} 

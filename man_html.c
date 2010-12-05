@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.44 2010/07/22 23:53:54 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.45 2010/07/23 12:27:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -112,9 +112,6 @@ static	const struct htmlman mans[MAN_MAX] = {
 	{ man_ign_pre, NULL }, /* DT */
 	{ man_ign_pre, NULL }, /* UC */
 	{ man_ign_pre, NULL }, /* PD */
-	{ man_br_pre, NULL }, /* Sp */
-	{ man_literal_pre, NULL }, /* Vb */
-	{ man_literal_pre, NULL }, /* Ve */
 	{ man_ign_pre, NULL }, /* AT */
 	{ man_in_pre, NULL }, /* in */
 };
@@ -366,9 +363,6 @@ man_br_pre(MAN_ARGS)
 	SCALE_VS_INIT(&su, 1);
 
 	switch (n->tok) {
-	case (MAN_Sp):
-		SCALE_VS_INIT(&su, 0.5);
-		break;
 	case (MAN_sp):
 		if (n->child)
 			a2roffsu(n->child->string, &su, SCALE_VS);
@@ -738,11 +732,9 @@ man_literal_pre(MAN_ARGS)
 
 	switch (n->tok) {
 	case (MAN_nf):
-		/* FALLTHROUGH */
-	case (MAN_Vb):
 		print_otag(h, TAG_BR, 0, NULL);
 		mh->fl |= MANH_LITERAL;
-		return(MAN_Vb != n->tok);
+		break;
 	default:
 		mh->fl &= ~MANH_LITERAL;
 		break;

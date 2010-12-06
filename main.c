@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.117 2010/12/05 15:49:37 kristaps Exp $ */
+/*	$Id: main.c,v 1.118 2010/12/05 15:55:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -187,6 +187,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"unsupported display type",
 	"blocks badly nested",
 	"no such block is open",
+	"missing end of block",
 	"line scope broken, syntax violated",
 	"argument count wrong, violates syntax",
 	"child violates parent syntax",

@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.47 2010/12/06 13:53:07 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.48 2010/12/06 14:07:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -362,15 +362,11 @@ man_br_pre(MAN_ARGS)
 
 	SCALE_VS_INIT(&su, 1);
 
-	switch (n->tok) {
-	case (MAN_sp):
+	if (MAN_sp == n->tok) {
 		if (n->child)
 			a2roffsu(n->child->string, &su, SCALE_VS);
-		break;
-	default:
+	} else
 		su.scale = 0;
-		break;
-	}
 
 	bufcat_su(h, "height", &su);
 	PAIR_STYLE_INIT(&tag, h);

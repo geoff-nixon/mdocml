@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.45 2010/10/04 07:01:02 kristaps Exp $ */
+/*	$Id: man.h,v 1.46 2010/12/05 16:14:16 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -55,6 +55,7 @@ enum	mant {
 	MAN_PD,
 	MAN_AT,
 	MAN_in,
+	MAN_ft,
 	MAN_MAX
 };
 

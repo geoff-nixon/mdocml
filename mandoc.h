@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.29 2010/12/05 15:55:01 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.30 2010/12/06 11:01:19 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -66,6 +66,7 @@ enum	mandocerr {
 	MANDOCERR_ERROR, /* ===== start of errors ===== */
 	MANDOCERR_NAMESECFIRST, /* NAME section must come first */
 	MANDOCERR_BADBOOL, /* bad Boolean value */
+	MANDOCERR_BADFONT, /* unknown font */
 	MANDOCERR_CHILD, /* child violates parent syntax */
 	MANDOCERR_NESTEDDISP, /* displays may not be nested */
 	MANDOCERR_BADATT, /* bad AT&T symbol */

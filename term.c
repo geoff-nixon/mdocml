@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.173 2010/10/01 21:51:13 schwarze Exp $ */
+/*	$Id: term.c,v 1.174 2010/10/02 15:15:55 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -146,7 +146,7 @@ term_flushln(struct termp *p)
 	 * an indentation, but can be, for tagged lists or columns, a
 	 * small set of values. 
 	 */
-	assert  (p->rmargin > p->offset);
+	assert  (p->rmargin >= p->offset);
 	dv     = p->rmargin - p->offset;
 	maxvis = (int)dv > p->overstep ? dv - (size_t)p->overstep : 0;
 	dv     = p->maxrmargin - p->offset;

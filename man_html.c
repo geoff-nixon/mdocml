@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.46 2010/12/05 16:14:16 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.47 2010/12/06 13:53:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -733,15 +733,11 @@ static int
 man_literal_pre(MAN_ARGS)
 {
 
-	switch (n->tok) {
-	case (MAN_nf):
+	if (MAN_nf == n->tok) {
 		print_otag(h, TAG_BR, 0, NULL);
 		mh->fl |= MANH_LITERAL;
-		break;
-	default:
+	} else
 		mh->fl &= ~MANH_LITERAL;
-		break;
-	}
 
 	return(1);
 }

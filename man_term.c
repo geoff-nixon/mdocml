@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.85 2010/09/15 14:36:16 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.86 2010/12/05 16:14:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -492,7 +492,7 @@ pre_PP(DECL_ARGS)
 		break;
 	}
 
-	return(1);
+	return(MAN_HEAD != n->type);
 }
 
 

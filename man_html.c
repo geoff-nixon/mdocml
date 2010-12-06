@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.45 2010/07/23 12:27:28 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.46 2010/12/05 16:14:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -547,8 +547,10 @@ man_PP_pre(MAN_ARGS)
 	struct roffsu	 su;
 	int		 i;
 
-	if (MAN_BLOCK != n->type)
+	if (MAN_BODY == n->type)
 		return(1);
+	if (MAN_HEAD == n->type)
+		return(0);
 
 	i = 0;
 
@@ -565,6 +567,7 @@ man_PP_pre(MAN_ARGS)
 
 	PAIR_STYLE_INIT(&tag, h);
 	print_otag(h, TAG_DIV, i, &tag);
+
 	return(1);
 }
 

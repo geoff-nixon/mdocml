@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.167 2010/11/30 21:44:59 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.168 2010/12/05 15:37:30 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: November 30 2010 $
+.Dd $Mdocdate: December 5 2010 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -1077,8 +1077,7 @@ implementations render it poorly.
 Left- and right-justify the block.
 .It Fl literal
 Do not justify the block at all.
-Preserve white space and newlines as they appear in the input, including
-if it follows a macro.
+Preserve white space as it appears in the input.
 .It Fl ragged
 Only left-justify the block.
 .It Fl unfilled
@@ -2666,13 +2665,9 @@ and
 Close a scope opened by
 .Sx \&Xo .
 .Ss \&Xo
-Extend the header of an
-.Sx \&It
-macro or the body of a partial-implicit block macro
-beyond the end of the input line.
-This macro originally existed to work around the 9-argument limit
-of historic
-.Xr roff 7 .
+Open an extension scope.
+This macro originally existed to extend the 9-argument limit of troff;
+since this limit has been lifted, the macro has been deprecated.
 .Ss \&Xr
 Link to another manual
 .Pq Qq cross-reference .

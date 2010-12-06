@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.87 2010/12/06 13:53:07 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.88 2010/12/06 14:04:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -94,6 +94,7 @@ static	int		  pre_ign(DECL_ARGS);
 static	int		  pre_in(DECL_ARGS);
 static	int		  pre_literal(DECL_ARGS);
 static	int		  pre_sp(DECL_ARGS);
+static	int		  pre_ft(DECL_ARGS);
 
 static	void		  post_IP(DECL_ARGS);
 static	void		  post_HP(DECL_ARGS);
@@ -137,6 +138,7 @@ static	const struct termact termacts[MAN_MAX] = {
 	{ pre_ign, NULL, 0 }, /* PD */
 	{ pre_ign, NULL, 0 }, /* AT */
 	{ pre_in, NULL, MAN_NOTEXT }, /* in */
+	{ pre_ft, NULL, MAN_NOTEXT }, /* ft */
 };
 
 
@@ -316,6 +318,47 @@ pre_B(DECL_ARGS)
 
 	term_fontrepl(p, TERMFONT_BOLD);
 	return(1);
+}
+
+/* ARGSUSED */
+static int
+pre_ft(DECL_ARGS)
+{
+	const char	*cp;
+
+	if (NULL == n->child) {
+		term_fontlast(p);
+		return(0);
+	}
+
+	cp = n->child->string;
+	switch (*cp) {
+	case ('4'):
+		/* FALLTHROUGH */
+	case ('3'):
+		/* FALLTHROUGH */
+	case ('B'):
+		term_fontrepl(p, TERMFONT_BOLD);
+		break;
+	case ('2'):
+		/* FALLTHROUGH */
+	case ('I'):
+		term_fontrepl(p, TERMFONT_UNDER);
+		break;
+	case ('P'):
+		term_fontlast(p);
+		break;
+	case ('1'):
+		/* FALLTHROUGH */
+	case ('C'):
+		/* FALLTHROUGH */
+	case ('R'):
+		term_fontrepl(p, TERMFONT_NONE);
+		break;
+	default:
+		break;
+	}
+	return(0);
 }
 
 /* ARGSUSED */

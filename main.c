@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.118 2010/12/05 15:55:01 kristaps Exp $ */
+/*	$Id: main.c,v 1.119 2010/12/06 11:01:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -144,6 +144,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 
 	"NAME section must come first",
 	"bad Boolean value",
+	"unknown font",
 	"child violates parent syntax",
 	"displays may not be nested",
 	"bad AT&T symbol",

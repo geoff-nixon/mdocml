@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.51 2010/11/30 15:24:27 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.52 2010/12/05 16:14:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -321,9 +321,7 @@ check_par(CHKARGS)
 				break;
 			return(man_nmsg(m, n, MANDOCERR_ARGSLOST));
 		default:
-			if (n->nchild)
-				break;
-			return(man_nmsg(m, n, MANDOCERR_NOARGS));
+			break;
 		}
 
 	return(1);

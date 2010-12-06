@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.28 2010/12/05 15:49:37 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.29 2010/12/05 15:55:01 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -89,6 +89,7 @@ enum	mandocerr {
 	MANDOCERR_LINESCOPE, /* line scope broken */
 	MANDOCERR_ARGCOUNT, /* argument count wrong */
 	MANDOCERR_NOSCOPE, /* no such block is open */
+	MANDOCERR_SCOPEBROKEN, /* missing end of block */
 	MANDOCERR_SCOPEREP, /* scope already open */
 	MANDOCERR_SCOPEEXIT, /* scope open on exit */
 	MANDOCERR_UNAME, /* uname(3) system call failed */

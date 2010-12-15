@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.167 2010/12/01 16:38:57 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.168 2010/12/06 11:01:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -552,6 +552,8 @@ mdoc_node_unlink(struct mdoc *m, struct mdoc_node *n)
 		n->parent->nchild--;
 		if (n->parent->child == n)
 			n->parent->child = n->prev ? n->prev : n->next;
+		if (n->parent->last == n)
+			n->parent->last = n->prev ? n->prev : NULL;
 	}
 
 	/* Adjust parse point, if applicable. */

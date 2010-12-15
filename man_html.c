@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.51 2010/12/06 15:31:44 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.52 2010/12/08 10:58:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -141,20 +141,13 @@ static void
 print_man(MAN_ARGS) 
 {
 	struct tag	*t;
-	struct htmlpair	 tag;
 
 	t = print_otag(h, TAG_HEAD, 0, NULL);
-
 	print_man_head(m, n, mh, h);
 	print_tagq(h, t);
+
 	t = print_otag(h, TAG_BODY, 0, NULL);
-
-	tag.key = ATTR_CLASS;
-	tag.val = "body";
-	print_otag(h, TAG_DIV, 1, &tag);
-
 	print_man_nodelist(m, n, mh, h);
-
 	print_tagq(h, t);
 }
 

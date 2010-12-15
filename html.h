@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.27 2010/07/23 00:08:57 kristaps Exp $ */
+/*	$Id: html.h,v 1.28 2010/12/15 14:52:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -43,6 +43,7 @@ enum	htmltag {
 	TAG_DL,
 	TAG_DT,
 	TAG_DD,
+	TAG_BLOCKQUOTE,
 	TAG_MAX
 };
 

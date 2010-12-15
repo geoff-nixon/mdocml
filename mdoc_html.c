@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.119 2010/12/15 16:35:21 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.120 2010/12/15 17:19:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1541,11 +1541,6 @@ mdoc_sm_pre(MDOC_ARGS)
 static int
 mdoc_pp_pre(MDOC_ARGS)
 {
-
-	if ((NULL == n->next || NULL == n->prev) &&
-			(MDOC_Ss == n->parent->tok ||
-			 MDOC_Sh == n->parent->tok))
-		return(0);
 
 	print_otag(h, TAG_P, 0, NULL);
 	return(0);

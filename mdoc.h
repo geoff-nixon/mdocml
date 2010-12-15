@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.105 2010/10/04 07:01:02 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.106 2010/12/15 14:52:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -371,6 +371,7 @@ union mdoc_data {
 struct	mdoc_node {
 	struct mdoc_node *parent; /* parent AST node */
 	struct mdoc_node *child; /* first child AST node */
+	struct mdoc_node *last; /* last child AST node */
 	struct mdoc_node *next; /* sibling AST node */
 	struct mdoc_node *prev; /* prior sibling AST node */
 	int		  nchild; /* number children */

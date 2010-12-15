@@ -1,4 +1,4 @@
-/* $Id: example.style.css,v 1.20 2010/04/08 08:17:55 kristaps Exp $ */
+/* $Id: example.style.css,v 1.21 2010/07/26 22:35:59 kristaps Exp $ */
 
 div.body	{ font-family: monospace; 
 		  min-width: 580px; width: 580px; } /* Top-most div tag. */
@@ -70,3 +70,44 @@ div.symb	{ font-weight: bold; font-style: normal; } /* Symbols (Bl -symbolic). *
 
 table.footer	{ } /* Document footer. */
 table.header	{ } /* Document header. */
+
+/* Formatting for lists. */
+
+dl.list-diag	{ }
+dt.list-diag	{ }
+dd.list-diag	{ }
+
+dl.list-hang	{ }
+dt.list-hang	{ }
+dd.list-hang	{ }
+
+dl.list-inset	{ }
+dt.list-inset	{ }
+dd.list-inset	{ }
+
+dl.list-ohang	{ }
+dt.list-ohang	{ }
+dd.list-ohang	{ }
+
+dl.list-tag	{ }
+dt.list-tag	{ }
+dd.list-tag	{ }
+
+table.list-col	{ }
+tr.list-col	{ }
+td.list-col	{ }
+
+ul.list-bul	{ }
+li.list-bul	{ }
+
+ul.list-dash	{ }
+li.list-dash	{ }
+
+ul.list-hyph	{ }
+li.list-hyph	{ }
+
+ul.list-item	{ }
+li.list-item	{ }
+
+ol.list-enum	{ }
+li.list-enum	{ }

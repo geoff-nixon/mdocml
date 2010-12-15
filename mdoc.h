@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.103 2010/08/20 01:02:07 schwarze Exp $ */
+/*	$Id: mdoc.h,v 1.105 2010/10/04 07:01:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -283,7 +283,8 @@ enum	mdoc_list {
 	LIST_inset,
 	LIST_item,
 	LIST_ohang,
-	LIST_tag
+	LIST_tag,
+	LIST_MAX
 };
 
 /*

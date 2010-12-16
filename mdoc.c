@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.168 2010/12/06 11:01:19 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.169 2010/12/15 23:39:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -526,6 +526,9 @@ mdoc_node_free(struct mdoc_node *p)
 	if (MDOC_Bf == p->tok && MDOC_HEAD == p->type)
 		if (p->data.Bf)
 			free(p->data.Bf);
+	if (MDOC_An == p->tok)
+		if (p->data.An)
+			free(p->data.An);
 
 	if (p->string)
 		free(p->string);

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.106 2010/12/15 14:52:16 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.107 2010/12/15 23:39:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -359,7 +359,7 @@ struct	mdoc_an {
  * provided, etc.
  */
 union mdoc_data {
-	struct mdoc_an 	  An;
+	struct mdoc_an 	 *An;
 	struct mdoc_bd	 *Bd;
 	struct mdoc_bf	 *Bf;
 	struct mdoc_bl	 *Bl;

@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.115 2010/12/15 15:59:23 kristaps Exp $ */
+/*	$Id: html.c,v 1.116 2010/12/15 17:19:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -449,6 +449,10 @@ print_otag(struct html *h, enum htmltag tag,
 	putchar('>');
 
 	h->flags |= HTML_NOSPACE;
+
+	if ((HTML_AUTOCLOSE | HTML_CLRLINE) & htmltags[tag].flags)
+		putchar('\n');
+
 	return(t);
 }
 

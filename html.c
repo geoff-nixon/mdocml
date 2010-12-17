@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.116 2010/12/15 17:19:41 kristaps Exp $ */
+/*	$Id: html.c,v 1.117 2010/12/17 08:17:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -69,6 +69,7 @@ static	const struct htmldata htmltags[TAG_MAX] = {
 	{"dd",		HTML_CLRLINE}, /* TAG_DD */
 	{"blockquote",	HTML_CLRLINE}, /* TAG_BLOCKQUOTE */
 	{"p",		HTML_CLRLINE | HTML_NOSTACK | HTML_AUTOCLOSE}, /* TAG_P */
+	{"pre",		HTML_CLRLINE }, /* TAG_PRE */
 };
 
 static	const char	*const htmlfonts[HTMLFONT_MAX] = {

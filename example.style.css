@@ -1,4 +1,4 @@
-/* $Id: example.style.css,v 1.30 2010/12/17 08:17:40 kristaps Exp $ */
+/* $Id: example.style.css,v 1.31 2010/12/17 08:26:42 kristaps Exp $ */
 
 html		{ min-width: 580px; width: 580px; }
 body		{ font-family: monospace; }
@@ -37,6 +37,10 @@ table		{ margin-top: 0px; margin-bottom: 0px; }
 .symb		{ font-style: normal; font-weight: bold; } /* Symbolic: Sy, Ms, Bf -symbolic. */
 .roman		{ font-style: normal; font-weight: normal; } /* Roman: (implicit). */
 .small		{ font-style: normal; font-weight: normal; font-size: smaller; } /* Small: SB, SM. */
+
+/* Block modes. */
+
+.display	{ }
 
 /* Context-specific modes. */
 

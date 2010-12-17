@@ -319,6 +319,29 @@
 					</H1>
 					<DIV CLASS="news">
 						<P>
+							<SPAN CLASS="date">xx-12-2010</SPAN>:
+							version 1.10.8
+						</P>
+						<P>
+							Significant improvements merged from <A CLASS="external"
+							HREF="http://www.openbsd.org">OpenBSD</A> downstream, including
+						</P>
+						<UL>
+							<LI>many new <A HREF="roff.7.html">roff</A> components,</LI>
+							<LI>in-line implementation of troff's soelim,</LI>
+							<LI>broken-block handling,</LI>
+							<LI>overhauled error classifications, and</LI>
+							<LI>cleaned up handling of error conditions.</LI>
+						</UL>
+						<P>
+							Also overhauled the <SPAN CLASS="flag">-Thtml</SPAN> and <SPAN
+							CLASS="flag">-Txhtml</SPAN> output modes.  It now displays similarly in arbitrary
+							browsers, including lynx!  Internally, <A HREF="mdoc.3.html">libmdoc</A> and <A
+							HREF="man.3.html">libman</A> have been cleaned up and reduced in size and complexity.
+						</P>
+					</DIV>
+					<DIV CLASS="news">
+						<P>
 							<SPAN CLASS="date">27-09-2010</SPAN>:
 							version 1.10.6
 						</P>
@@ -454,7 +477,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/08/19 20:49:34 $
+						Copyright &#169; 2008&#8211;2010 Kristaps Dzonsons, $Date: 2010/09/27 12:34:21 $
 					</DIV>
 				</TD>
 			</TR>

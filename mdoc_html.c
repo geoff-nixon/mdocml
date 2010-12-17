@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.126 2010/12/17 10:37:26 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.127 2010/12/17 10:43:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -945,7 +945,10 @@ mdoc_bl_pre(MDOC_ARGS)
 	PAIR_STYLE_INIT(&tag[0], h);
 
 	assert(lists[n->data.Bl->type]);
-	PAIR_CLASS_INIT(&tag[1], lists[n->data.Bl->type]);
+	bufinit(h);
+	bufcat(h, "list ");
+	bufcat(h, lists[n->data.Bl->type]);
+	PAIR_INIT(&tag[1], ATTR_CLASS, h->buf);
 	i = 2;
 
 	/* Set the block's left-hand margin. */

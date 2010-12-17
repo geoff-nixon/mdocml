@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.128 2010/12/17 11:01:24 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.129 2010/12/17 11:19:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -287,7 +287,7 @@ a2width(const char *p, struct roffsu *su)
 {
 
 	if ( ! a2roffsu(p, su, SCALE_MAX)) {
-		su->unit = SCALE_EM;
+		su->unit = SCALE_BU;
 		su->scale = (int)strlen(p);
 	}
 }
@@ -354,7 +354,7 @@ a2offs(const char *p, struct roffsu *su)
 	else if (0 == strcmp(p, "indent-two"))
 		SCALE_HS_INIT(su, INDENT * 2);
 	else if ( ! a2roffsu(p, su, SCALE_MAX)) {
-		su->unit = SCALE_EM;
+		su->unit = SCALE_BU;
 		su->scale = (int)strlen(p);
 	}
 }

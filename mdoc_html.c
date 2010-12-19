@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.129 2010/12/17 11:19:42 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.130 2010/12/17 12:57:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1948,7 +1948,8 @@ mdoc_bk_pre(MDOC_ARGS)
 	case (MDOC_HEAD):
 		return(0);
 	case (MDOC_BODY):
-		h->flags |= HTML_PREKEEP;
+		if (n->parent->args || 0 == n->prev->nchild)
+			h->flags |= HTML_PREKEEP;
 		break;
 	default:
 		abort();

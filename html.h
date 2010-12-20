@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.30 2010/12/15 17:19:41 kristaps Exp $ */
+/*	$Id: html.h,v 1.31 2010/12/17 10:37:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -46,6 +46,7 @@ enum	htmltag {
 	TAG_BLOCKQUOTE,
 	TAG_P,
 	TAG_PRE,
+	TAG_B,
 	TAG_MAX
 };
 
@@ -60,10 +61,9 @@ enum	htmlattr {
 	ATTR_CLASS,
 	ATTR_STYLE,
 	ATTR_WIDTH,
-	ATTR_VALIGN,
-	ATTR_TARGET,
 	ATTR_ID,
 	ATTR_SUMMARY,
+	ATTR_ALIGN,
 	ATTR_MAX
 };
 

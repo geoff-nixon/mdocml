@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.123 2010/12/15 23:39:40 kristaps Exp $ */
+/*	$Id: main.c,v 1.124 2010/12/21 01:22:03 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -145,6 +145,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 
 	/* related to macros and nesting */
 	"skipping obsolete macro",
+	"skipping paragraph macro",
 	"blocks badly nested",
 	"child violates parent syntax",
 	"nested displays are not portable",
@@ -182,7 +183,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"skipping bad character",
 	"skipping text before the first section header",
 	"skipping unknown macro",
-	"skipping paragraph macro",
 	"NOT IMPLEMENTED: skipping request",
 	"line scope broken",
 	"argument count wrong",

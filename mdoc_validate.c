@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.144 2010/12/16 17:14:48 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.145 2010/12/22 11:15:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1573,12 +1573,14 @@ post_bl(POST_ARGS)
 
 	for (n = mdoc->last->child; n; n = n->next) {
 		switch (n->tok) {
-		case (MDOC_It):
-			continue;
-		case (MDOC_Sm):
+		case (MDOC_Lp):
 			/* FALLTHROUGH */
 		case (MDOC_Pp):
 			mdoc_nmsg(mdoc, n, MANDOCERR_CHILD);
+			/* FALLTHROUGH */
+		case (MDOC_It):
+			/* FALLTHROUGH */
+		case (MDOC_Sm):
 			continue;
 		default:
 			break;

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.134 2010/12/20 13:39:24 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.135 2010/12/22 11:15:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1096,13 +1096,13 @@ mdoc_d1_pre(MDOC_ARGS)
 
 	/* BLOCKQUOTE needs a block body. */
 
+	PAIR_CLASS_INIT(&tag[0], "display");
+	print_otag(h, TAG_DIV, 1, tag);
+
 	if (MDOC_Dl == n->tok) {
-		PAIR_CLASS_INIT(&tag[0], "lit display");
+		PAIR_CLASS_INIT(&tag[0], "lit");
 		print_otag(h, TAG_CODE, 1, tag);
-	} else {
-		PAIR_CLASS_INIT(&tag[0], "display");
-		print_otag(h, TAG_DIV, 1, tag);
-	}
+	} 
 
 	return(1);
 }

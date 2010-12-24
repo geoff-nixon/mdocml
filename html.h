@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.33 2010/12/20 13:07:55 kristaps Exp $ */
+/*	$Id: html.h,v 1.34 2010/12/22 11:15:16 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -50,6 +50,7 @@ enum	htmltag {
 	TAG_I,
 	TAG_U,
 	TAG_CODE,
+	TAG_SMALL,
 	TAG_MAX
 };
 
@@ -123,9 +124,9 @@ struct	html {
 	char		 *style;
 	char		  buf[BUFSIZ];
 	size_t		  buflen;
-	struct tag	 *metaf;
-	enum htmlfont	  metal;
-	enum htmlfont	  metac;
+	struct tag	 *metaf; /* current open font scope */
+	enum htmlfont	  metal; /* last used font */
+	enum htmlfont	  metac; /* current font mode */
 	enum htmltype	  type;
 };
 
@@ -133,7 +134,6 @@ struct	roffsu;
 
 void		  print_gen_decls(struct html *);
 void		  print_gen_head(struct html *);
-struct tag	 *print_ofont(struct html *, enum htmlfont);
 struct tag	 *print_otag(struct html *, enum htmltag, 
 				int, const struct htmlpair *);
 void		  print_tagq(struct html *, const struct tag *);

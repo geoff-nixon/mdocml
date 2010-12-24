@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.137 2010/12/24 14:00:40 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.138 2010/12/24 14:14:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1597,7 +1597,7 @@ mdoc_fo_pre(MDOC_ARGS)
 	assert(n->child->string);
 
 	PAIR_CLASS_INIT(&tag, "fname");
-	t = print_otag(h, TAG_SPAN, 1, &tag);
+	t = print_otag(h, TAG_B, 1, &tag);
 	print_text(h, n->child->string);
 	print_tagq(h, t);
 	return(0);
@@ -1684,7 +1684,7 @@ mdoc_rv_pre(MDOC_ARGS)
 
 	for (nn = n->child; nn; nn = nn->next) {
 		PAIR_CLASS_INIT(&tag, "fname");
-		t = print_otag(h, TAG_SPAN, 1, &tag);
+		t = print_otag(h, TAG_B, 1, &tag);
 		print_text(h, nn->string);
 		print_tagq(h, t);
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.136 2010/12/23 00:45:03 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.137 2010/12/24 14:00:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1933,7 +1933,6 @@ mdoc__x_pre(MDOC_ARGS)
 		break;
 	case(MDOC__T):
 		PAIR_CLASS_INIT(&tag[0], "ref-title");
-		t = TAG_U;
 		break;
 	case(MDOC__U):
 		PAIR_CLASS_INIT(&tag[0], "link-ref");

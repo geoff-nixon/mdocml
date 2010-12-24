@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.121 2010/12/22 11:15:16 kristaps Exp $ */
+/*	$Id: html.c,v 1.122 2010/12/24 00:46:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -72,7 +72,6 @@ static	const struct htmldata htmltags[TAG_MAX] = {
 	{"pre",		HTML_CLRLINE }, /* TAG_PRE */
 	{"b",		0 }, /* TAG_B */
 	{"i",		0 }, /* TAG_I */
-	{"u",		0 }, /* TAG_U */
 	{"code",	0 }, /* TAG_CODE */
 	{"small",	0 }, /* TAG_SMALL */
 };

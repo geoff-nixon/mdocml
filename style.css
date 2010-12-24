@@ -1,8 +1,7 @@
-/* $Id: style.css,v 1.18 2010/12/22 11:58:02 kristaps Exp $ */
+/* $Id: style.css,v 1.19 2010/12/24 14:14:00 kristaps Exp $ */
 
 html		{ max-width: 800px; }
-body		{ font-family: monospace; 
-		  color: #333333;
+body		{ color: #333333;
 		  font-size: 0.93em;
 		  font-family: Times, serif; }
 

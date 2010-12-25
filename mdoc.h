@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.109 2010/12/22 11:15:16 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.110 2010/12/24 14:00:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -353,6 +353,10 @@ struct	mdoc_an {
 	enum mdoc_auth	  auth; /* -split, etc. */
 };
 
+struct	mdoc_rs {
+	int		  titlejournal; /* whether %T and %J */
+};
+
 /*
  * Consists of normalised node arguments.  These should be used instead
  * of iterating through the mdoc_arg pointers of a node: defaults are
@@ -363,6 +367,7 @@ union	mdoc_data {
 	struct mdoc_bd	  Bd;
 	struct mdoc_bf	  Bf;
 	struct mdoc_bl	  Bl;
+	struct mdoc_rs	  Rs;
 };
 
 /* 

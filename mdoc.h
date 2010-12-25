@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.110 2010/12/24 14:00:40 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.111 2010/12/25 13:50:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -354,7 +354,7 @@ struct	mdoc_an {
 };
 
 struct	mdoc_rs {
-	int		  titlejournal; /* whether %T and %J */
+	struct mdoc_node *child_J; /* pointer to %J */
 };
 
 /*

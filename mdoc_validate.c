@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.146 2010/12/22 22:05:38 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.147 2010/12/24 14:00:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1649,8 +1649,19 @@ post_rs(POST_ARGS)
 {
 	struct mdoc_node *nn, *next, *prev;
 	int		  i, j;
+	int		 *tj;
+#define	RS_JOURNAL	 (1 << 0)
+#define	RS_TITLE	 (1 << 1)
 
-	if (MDOC_BODY != mdoc->last->type)
+	/* Mark whether we're carrying both a %T and %J. */
+
+	tj = &mdoc->last->norm->Rs.titlejournal;
+
+	if (MDOC_BLOCK == mdoc->last->type) {
+		if ( ! (RS_JOURNAL & *tj && RS_TITLE & *tj))
+			*tj = 0;
+		return(1);
+	} else if (MDOC_BODY != mdoc->last->type)
 		return(1);
 
 	/*
@@ -1666,6 +1677,10 @@ post_rs(POST_ARGS)
 				break;
 
 		if (i < RSORD_MAX) {
+			if (MDOC__T == rsord[i])
+				*tj |= RS_TITLE;
+			else if (MDOC__J == rsord[i])
+				*tj |= RS_JOURNAL;
 			next = nn->next;
 			continue;
 		}

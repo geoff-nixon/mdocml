@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.14 2009/09/12 16:05:34 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.1 2010/12/28 10:51:03 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -64,7 +64,7 @@ tbl_read(struct tbl *tbl, int ln, const char *p, int offs)
 		if (';' != cp[len - 1])
 			tbl->part = TBL_PART_LAYOUT;
 	
-	return(1);
+	return(ROFF_CONT);
 }
 
 struct tbl *

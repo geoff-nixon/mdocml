@@ -1,4 +1,4 @@
-/*	$Id: roff.h,v 1.18 2010/08/20 01:02:07 schwarze Exp $ */
+/*	$Id: roff.h,v 1.19 2010/12/01 15:09:01 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -24,6 +24,7 @@ enum	rofferr {
 	ROFF_REPARSE, /* re-run main parser on the result */
 	ROFF_SO, /* include another file */
 	ROFF_IGN, /* ignore current line */
+	ROFF_TBL, /* a table row was successfully parsed */
 	ROFF_ERR /* badness: puke and stop */
 };
 

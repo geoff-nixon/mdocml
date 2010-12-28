@@ -1,6 +1,6 @@
-/*	$Id: tbl.c,v 1.2 2010/12/28 10:55:24 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.3 2010/12/28 13:46:07 kristaps Exp $ */
 /*
- * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

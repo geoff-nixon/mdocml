@@ -1,6 +1,6 @@
-/*	$Id: option.c,v 1.5 2009/09/09 12:51:34 kristaps Exp $ */
+/*	$Id: tbl_opts.c,v 1.1 2010/12/28 13:46:07 kristaps Exp $ */
 /*
- * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

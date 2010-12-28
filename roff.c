@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.108 2010/12/21 01:46:44 schwarze Exp $ */
+/*	$Id: roff.c,v 1.109 2010/12/28 10:51:03 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -510,7 +510,8 @@ int
 roff_endparse(struct roff *r)
 {
 
-	if (r->last || r->tbl)
+	/* FIXME: if r->tbl */
+	if (r->last)
 		(*r->msg)(MANDOCERR_SCOPEEXIT, r->data, 
 				r->last->line, r->last->col, NULL);
 	return(1);

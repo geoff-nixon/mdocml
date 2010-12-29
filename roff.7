@@ -1,4 +1,4 @@
-.\"	$Id: roff.7,v 1.16 2010/12/10 20:58:56 schwarze Exp $
+.\"	$Id: roff.7,v 1.17 2010/12/18 19:32:08 schwarze Exp $
 .\"
 .\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: December 10 2010 $
+.Dd $Mdocdate: December 18 2010 $
 .Dt ROFF 7
 .Os
 .Sh NAME
@@ -535,6 +535,52 @@ This request is intended to have one argument,
 consisting of an even number of characters.
 Currently, it is ignored including its arguments,
 and the number of arguments is not checked.
+.\" .Ss \&TE
+.\" End a table context.
+.\" See
+.\" .Sx \&TS .
+.\" .Ss \&TS
+.\" Begin a table, which formats input in aligned rows and columns.
+.\" A table consists of an optional single line of table options terminated
+.\" by a semicolon, followed by one or more lines of layout specification
+.\" terminated by a period, then table data.
+.\" A table block may also include
+.\" .Nm ,
+.\" .Xr mdoc 7 ,
+.\" or
+.\" .Xr man 7
+.\" macros.
+.\" .Pp
+.\" Table data is
+.\" .Em pre-processed ,
+.\" that is, data rows are parsed then inserted into the underlying stream
+.\" of input data.
+.\" This allows data rows to be interspersed by arbitrary macros, such as
+.\" .Bd -literal -offset indent
+.\" \&.TS
+.\" c c c.
+.\" 1 2 3
+.\" \&.Ao
+.\" 3 2 1
+.\" \&.Ac
+.\" \&.TE
+.\" .Ed
+.\" .Pp
+.\" in the case of
+.\" .Xr mdoc 7
+.\" or
+.\" .Bd -literal -offset indent
+.\" \&.TS
+.\" c c c.
+.\" \&.ds ab 2
+.\" 1 \e*(ab 3
+.\" \&.I
+.\" 3 2 1
+.\" \&.TE
+.\" .Ed
+.\" .Pp
+.\" in the case of
+.\" .Xr man 7 .
 .Sh COMPATIBILITY
 This section documents compatibility between mandoc and other other
 .Nm

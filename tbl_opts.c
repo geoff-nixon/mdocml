@@ -1,4 +1,4 @@
-/*	$Id: tbl_opts.c,v 1.2 2010/12/28 13:47:38 kristaps Exp $ */
+/*	$Id: tbl_opts.c,v 1.3 2010/12/29 01:16:57 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -235,9 +235,8 @@ again:	/*
 	if (KEY_MAXKEYS == i)
 		TBL_MSG(tbl, MANDOCERR_TBLOPT, ln, sv);
 
-	/* Try again... */
-
 	goto again;
+	/* NOTREACHED */
 }
 
 int

@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.6 2010/12/29 14:38:14 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.7 2010/12/29 14:53:31 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -63,6 +63,8 @@ tbl_read(struct tbl *tbl, int ln, const char *p, int offs)
 {
 	int		 len;
 	const char	*cp;
+	struct tbl_dat	*dp;
+	struct tbl_span	*sp;
 
 	cp = &p[offs];
 	len = (int)strlen(cp);
@@ -85,8 +87,19 @@ tbl_read(struct tbl *tbl, int ln, const char *p, int offs)
 		return(tbl_option(tbl, ln, p) ? ROFF_IGN : ROFF_ERR);
 	case (TBL_PART_LAYOUT):
 		return(tbl_layout(tbl, ln, p) ? ROFF_IGN : ROFF_ERR);
-	default:
+	case (TBL_PART_DATA):
 		break;
+	}
+
+	/* XXX: throw away data for now. */
+	if (NULL != (sp = tbl_data(tbl, ln, p))) {
+		while (NULL != (dp = sp->first)) {
+			sp->first = sp->first->next;
+			if (dp->string)
+				free(dp->string);
+			free(dp);
+		}
+		free(sp);
 	}
 	
 	return(ROFF_CONT);

@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.109 2010/12/28 10:51:03 kristaps Exp $ */
+/*	$Id: roff.c,v 1.110 2010/12/28 10:59:07 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1130,7 +1130,7 @@ roff_TS(ROFF_ARGS)
 		(*r->msg)(MANDOCERR_SCOPEBROKEN, r->data, ln, ppos, NULL);
 		tbl_reset(r->tbl);
 	} else
-		r->tbl = tbl_alloc();
+		r->tbl = tbl_alloc(r->data, r->msg);
 
 	return(ROFF_IGN);
 }

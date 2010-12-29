@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.4 2010/12/28 13:47:38 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.5 2010/12/29 01:16:57 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -31,7 +31,21 @@ static	void		 tbl_clear(struct tbl *);
 static void
 tbl_clear(struct tbl *tbl)
 {
+	struct tbl_row	*rp;
+	struct tbl_cell	*cp;
 
+	while (tbl->first) {
+		rp = tbl->first;
+		tbl->first = rp->next;
+		while (rp->first) {
+			cp = rp->first;
+			rp->first = cp->next;
+			free(cp);
+		}
+		free(rp);
+	}
+
+	tbl->last = NULL;
 }
 
 static void
@@ -69,6 +83,8 @@ tbl_read(struct tbl *tbl, int ln, const char *p, int offs)
 	switch (tbl->part) {
 	case (TBL_PART_OPTS):
 		return(tbl_option(tbl, ln, p) ? ROFF_IGN : ROFF_ERR);
+	case (TBL_PART_LAYOUT):
+		return(tbl_layout(tbl, ln, p) ? ROFF_IGN : ROFF_ERR);
 	default:
 		break;
 	}
@@ -81,7 +97,7 @@ tbl_alloc(void *data, const mandocmsg msg)
 {
 	struct tbl	*p;
 
-	p = mandoc_malloc(sizeof(struct tbl));
+	p = mandoc_calloc(1, sizeof(struct tbl));
 	p->data = data;
 	p->msg = msg;
 	tbl_init(p);

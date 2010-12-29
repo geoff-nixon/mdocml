@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.5 2010/12/29 01:16:57 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.6 2010/12/29 14:38:14 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -118,5 +118,13 @@ tbl_reset(struct tbl *tbl)
 
 	tbl_clear(tbl);
 	tbl_init(tbl);
+}
+
+void
+tbl_restart(struct tbl *tbl)
+{
+
+	tbl_clear(tbl);
+	tbl->part = TBL_PART_LAYOUT;
 }
 

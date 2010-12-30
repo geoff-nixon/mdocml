@@ -1,4 +1,4 @@
-/*	$Id: libroff.h,v 1.7 2010/12/29 16:44:23 kristaps Exp $ */
+/*	$Id: libroff.h,v 1.8 2010/12/30 09:34:06 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -61,6 +61,7 @@ struct	tbl_row {
 };
 
 struct	tbl_dat {
+	struct tbl_cell	 *layout; /* layout cell: CAN BE NULL */
 	struct tbl_dat	 *next;
 	char		 *string;
 	int		  flags;
@@ -71,6 +72,7 @@ struct	tbl_dat {
 };
 
 struct	tbl_span {
+	struct tbl_row	 *layout; /* layout row: CAN BE NULL */
 	struct tbl_dat	 *first;
 	struct tbl_dat	 *last;
 	int		  flags;

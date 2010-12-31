@@ -1,4 +1,4 @@
-/*	$Id: libroff.h,v 1.8 2010/12/30 09:34:06 kristaps Exp $ */
+/*	$Id: libroff.h,v 1.9 2010/12/30 10:26:00 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -101,6 +101,7 @@ struct	tbl {
 	struct tbl_row	 *last_row;
 	struct tbl_span	 *first_span;
 	struct tbl_span	 *last_span;
+	struct tbl	 *next;
 };
 
 #define	TBL_MSG(tblp, type, line, col) \

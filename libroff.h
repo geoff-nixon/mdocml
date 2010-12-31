@@ -1,4 +1,4 @@
-/*	$Id: libroff.h,v 1.9 2010/12/30 10:26:00 kristaps Exp $ */
+/*	$Id: libroff.h,v 1.10 2010/12/31 14:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -23,62 +23,6 @@ enum	tbl_part {
 	TBL_PART_OPTS, /* in options (first line) */
 	TBL_PART_LAYOUT, /* describing layout */
 	TBL_PART_DATA  /* creating data rows */
-};
-
-enum	tbl_cellt {
-	TBL_CELL_CENTRE, /* c, C */
-	TBL_CELL_RIGHT, /* r, R */
-	TBL_CELL_LEFT, /* l, L */
-	TBL_CELL_NUMBER, /* n, N */
-	TBL_CELL_SPAN, /* s, S */
-	TBL_CELL_LONG, /* a, A */
-	TBL_CELL_DOWN, /* ^ */
-	TBL_CELL_HORIZ, /* _, - */
-	TBL_CELL_DHORIZ, /* = */
-	TBL_CELL_VERT, /* | */
-	TBL_CELL_DVERT, /* || */
-	TBL_CELL_MAX
-};
-
-struct	tbl_cell {
-	struct tbl_cell	 *next;
-	enum tbl_cellt	  pos;
-	int		  spacing;
-	int		  flags;
-#define	TBL_CELL_TALIGN	 (1 << 0) /* t, T */
-#define	TBL_CELL_BALIGN	 (1 << 1) /* d, D */
-#define	TBL_CELL_BOLD	 (1 << 2) /* fB, B, b */
-#define	TBL_CELL_ITALIC	 (1 << 3) /* fI, I, i */
-#define	TBL_CELL_EQUAL	 (1 << 4) /* e, E */
-#define	TBL_CELL_UP	 (1 << 5) /* u, U */
-#define	TBL_CELL_WIGN	 (1 << 6) /* z, Z */
-};
-
-struct	tbl_row {
-	struct tbl_row	 *next;
-	struct tbl_cell	 *first;
-	struct tbl_cell	 *last;
-};
-
-struct	tbl_dat {
-	struct tbl_cell	 *layout; /* layout cell: CAN BE NULL */
-	struct tbl_dat	 *next;
-	char		 *string;
-	int		  flags;
-#define	TBL_DATA_HORIZ	 (1 << 0)
-#define	TBL_DATA_DHORIZ	 (1 << 1)
-#define	TBL_DATA_NHORIZ	 (1 << 2)
-#define	TBL_DATA_NDHORIZ (1 << 3)
-};
-
-struct	tbl_span {
-	struct tbl_row	 *layout; /* layout row: CAN BE NULL */
-	struct tbl_dat	 *first;
-	struct tbl_dat	 *last;
-	int		  flags;
-#define	TBL_SPAN_HORIZ	(1 << 0)
-#define	TBL_SPAN_DHORIZ	(1 << 1)
-	struct tbl_span	 *next;
 };
 
 struct	tbl {
@@ -115,6 +59,7 @@ enum rofferr 	 tbl_read(struct tbl *, int, const char *, int);
 int		 tbl_option(struct tbl *, int, const char *);
 int		 tbl_layout(struct tbl *, int, const char *);
 int		 tbl_data(struct tbl *, int, const char *);
+const struct tbl_span *tbl_span(const struct tbl *);
 
 __END_DECLS
 

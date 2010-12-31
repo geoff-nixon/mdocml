@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.112 2010/12/29 14:53:31 kristaps Exp $ */
+/*	$Id: roff.c,v 1.113 2010/12/31 14:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1374,4 +1374,11 @@ roff_freestr(struct roff *r)
 	}
 
 	r->first_string = NULL;
+}
+
+const struct tbl_span *
+roff_span(const struct roff *r)
+{
+	
+	return(r->tbl ? tbl_span(r->tbl) : NULL);
 }

@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.9 2010/12/30 09:34:07 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.10 2010/12/31 14:52:41 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -120,3 +120,10 @@ tbl_restart(struct tbl *tbl)
 	tbl->part = TBL_PART_LAYOUT;
 }
 
+const struct tbl_span *
+tbl_span(const struct tbl *tbl)
+{
+
+	assert(tbl);
+	return(tbl->last_span);
+}

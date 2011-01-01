@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.27 2011/01/01 14:09:21 kristaps Exp $ */
+/*	$Id: tree.c,v 1.28 2011/01/01 17:10:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -278,7 +278,7 @@ print_span(const struct tbl_span *sp)
 		default:
 			break;
 		}
-		printf("[%s]", dp->string);
+		printf("[%s%s]", dp->string, dp->layout ?  "" : "*");
 		if (dp->next)
 			putchar(' ');
 	}

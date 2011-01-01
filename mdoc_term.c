@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.204 2010/12/25 23:25:53 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.205 2010/12/25 23:27:50 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -312,11 +312,19 @@ print_mdoc_node(DECL_ARGS)
 
 	memset(&npair, 0, sizeof(struct termpair));
 	npair.ppair = pair;
-
-	if (MDOC_TEXT == n->type)
-		term_word(p, n->string); 
-	else if (termacts[n->tok].pre && ENDBODY_NOT == n->end)
-		chld = (*termacts[n->tok].pre)(p, &npair, m, n);
+	
+	switch (n->type) {
+	case (MDOC_TEXT):
+		term_word(p, n->string);
+		break;
+	case (MDOC_TBL):
+		break;
+	default:
+		if (termacts[n->tok].pre && ENDBODY_NOT == n->end)
+			chld = (*termacts[n->tok].pre)
+				(p, &npair, m, n);
+		break;
+	}
 
 	/*
 	 * Keeps only work until the end of a line.  If a keep was
@@ -353,8 +361,14 @@ print_mdoc_node(DECL_ARGS)
 
 	term_fontpopq(p, font);
 
-	if (MDOC_TEXT != n->type && termacts[n->tok].post && 
-			! (MDOC_ENDED & n->flags)) {
+	switch (n->type) {
+	case (MDOC_TEXT):
+		break;
+	case (MDOC_TBL):
+		break;
+	default:
+		if ( ! termacts[n->tok].post || MDOC_ENDED & n->flags)
+			break;
 		(void)(*termacts[n->tok].post)(p, &npair, m, n);
 
 		/*
@@ -372,6 +386,7 @@ print_mdoc_node(DECL_ARGS)
 		 */
 		if (ENDBODY_NOSPACE == n->end)
 			p->flags |= TERMP_NOSPACE;
+		break;
 	}
 
 	if (MDOC_EOS & n->flags)

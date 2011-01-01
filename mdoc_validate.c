@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.148 2010/12/25 13:50:37 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.149 2010/12/25 23:25:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -329,12 +329,19 @@ mdoc_valid_pre(struct mdoc *mdoc, struct mdoc_node *n)
 	int		 line, pos;
 	char		*tp;
 
-	if (MDOC_TEXT == n->type) {
+	switch (n->type) {
+	case (MDOC_TEXT):
 		tp = n->string;
 		line = n->line;
 		pos = n->pos;
 		check_text(mdoc, line, pos, tp);
+		/* FALLTHROUGH */
+	case (MDOC_TBL):
+		/* FALLTHROUGH */
+	case (MDOC_ROOT):
 		return(1);
+	default:
+		break;
 	}
 
 	check_args(mdoc, n);
@@ -357,10 +364,16 @@ mdoc_valid_post(struct mdoc *mdoc)
 		return(1);
 	mdoc->last->flags |= MDOC_VALID;
 
-	if (MDOC_TEXT == mdoc->last->type)
+	switch (mdoc->last->type) {
+	case (MDOC_TEXT):
+		/* FALLTHROUGH */
+	case (MDOC_TBL):
 		return(1);
-	if (MDOC_ROOT == mdoc->last->type)
+	case (MDOC_ROOT):
 		return(post_root(mdoc));
+	default:
+		break;
+	}
 
 	if (NULL == mdoc_valids[mdoc->last->tok].post)
 		return(1);

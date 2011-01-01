@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.113 2010/12/31 14:52:41 kristaps Exp $ */
+/*	$Id: roff.c,v 1.114 2010/12/31 18:19:43 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1123,6 +1123,8 @@ roff_TE(ROFF_ARGS)
 
 	if (NULL == r->tbl)
 		(*r->msg)(MANDOCERR_NOSCOPE, r->data, ln, ppos, NULL);
+	else
+		tbl_end(r->tbl);
 
 	r->tbl = NULL;
 	return(ROFF_IGN);
@@ -1147,10 +1149,12 @@ roff_TS(ROFF_ARGS)
 {
 	struct tbl	*t;
 
-	if (r->tbl)
+	if (r->tbl) {
 		(*r->msg)(MANDOCERR_SCOPEBROKEN, r->data, ln, ppos, NULL);
+		tbl_end(r->tbl);
+	}
 
-	t = tbl_alloc(r->data, r->msg);
+	t = tbl_alloc(ppos, ln, r->data, r->msg);
 
 	if (r->last_tbl)
 		r->last_tbl->next = t;

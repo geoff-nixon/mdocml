@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.115 2011/01/01 15:45:18 kristaps Exp $ */
+/*	$Id: roff.c,v 1.116 2011/01/01 16:10:40 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -515,15 +515,20 @@ roff_parseln(struct roff *r, int ln, char **bufp,
 }
 
 
-int
+void
 roff_endparse(struct roff *r)
 {
 
-	/* FIXME: if r->tbl */
 	if (r->last)
 		(*r->msg)(MANDOCERR_SCOPEEXIT, r->data, 
 				r->last->line, r->last->col, NULL);
-	return(1);
+
+	if (r->tbl) {
+		(*r->msg)(MANDOCERR_SCOPEEXIT, r->data, 
+				r->tbl->line, r->tbl->pos, NULL);
+		tbl_end(r->tbl);
+		r->tbl = NULL;
+	}
 }
 
 

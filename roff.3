@@ -1,4 +1,4 @@
-.\"	$Id: roff.3,v 1.8 2010/08/20 01:02:07 schwarze Exp $
+.\"	$Id: roff.3,v 1.9 2011/01/01 15:45:18 kristaps Exp $
 .\"
 .\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 20 2010 $
+.Dd $Mdocdate: January 1 2011 $
 .Dt ROFF 3
 .Os
 .Sh NAME
@@ -35,7 +35,7 @@
 .Fa "void *data"
 .Fa "mandocmsg msgs"
 .Fc
-.Ft int
+.Ft void
 .Fn roff_endparse "struct roff *roff"
 .Ft void
 .Fn roff_free "struct roff *roff"
@@ -141,7 +141,6 @@ This line should not contain the trailing newline.
 Returns 0 on failure, 1 on success.
 .It Fn roff_endparse
 Signals that the parse is complete.
-Returns 0 on failure, 1 on success.
 .It Fn roff_span
 If
 .Fn roff_parseln

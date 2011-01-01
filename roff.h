@@ -1,4 +1,4 @@
-/*	$Id: roff.h,v 1.20 2010/12/28 10:51:03 kristaps Exp $ */
+/*	$Id: roff.h,v 1.21 2010/12/31 18:19:43 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -37,7 +37,7 @@ struct	roff	 *roff_alloc(struct regset *, void *, mandocmsg);
 void		  roff_reset(struct roff *);
 enum	rofferr	  roff_parseln(struct roff *, int, 
 			char **, size_t *, int, int *);
-int		  roff_endparse(struct roff *);
+void		  roff_endparse(struct roff *);
 const struct tbl_span *roff_span(const struct roff *);
 
 __END_DECLS

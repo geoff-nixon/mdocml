@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.25 2011/01/01 12:56:12 kristaps Exp $ */
+/*	$Id: tree.c,v 1.26 2011/01/01 13:54:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -239,8 +239,9 @@ print_man(const struct man_node *n, int indent)
 
 	if (n->span) {
 		assert(NULL == p);
+		printf("tbl: ");
 		for (dp = n->span->first; dp; dp = dp->next) {
-			printf("tbl: [%s]", dp->string);
+			printf("[%s]", dp->string);
 			if (dp->next)
 				putchar(' ');
 		}

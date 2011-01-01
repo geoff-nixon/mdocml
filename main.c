@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.129 2011/01/01 15:45:18 kristaps Exp $ */
+/*	$Id: main.c,v 1.130 2011/01/01 16:18:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -176,9 +176,13 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"bad comment style",
 	"unknown escape sequence",
 	"unterminated quoted string",
+	
+	/* related to tables */
+	"extra data cells",
 
 	"generic error",
 
+	/* related to tables */
 	"bad table syntax",
 	"bad table option",
 	"bad table layout",

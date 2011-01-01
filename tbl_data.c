@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.5 2011/01/01 17:10:20 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.6 2011/01/01 21:23:01 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -51,6 +51,9 @@ data(struct tbl *tbl, struct tbl_span *dp,
 
 	dat = mandoc_calloc(1, sizeof(struct tbl_dat));
 	dat->layout = cp;
+
+	if (NULL == dat->layout)
+		TBL_MSG(tbl, MANDOCERR_TBLEXTRADAT, ln, *pos);
 
 	if (dp->last) {
 		dp->last->next = dat;

@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.55 2010/12/06 15:31:19 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.56 2010/12/08 10:58:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -117,10 +117,16 @@ man_valid_pre(struct man *m, struct man_node *n)
 {
 	v_check		*cp;
 
-	if (MAN_TEXT == n->type)
+	switch (n->type) {
+	case (MAN_TEXT):
+		/* FALLTHROUGH */
+	case (MAN_ROOT):
+		/* FALLTHROUGH */
+	case (MAN_TBL):
 		return(1);
-	if (MAN_ROOT == n->type)
-		return(1);
+	default:
+		break;
+	}
 
 	if (NULL == (cp = man_valids[n->tok].pres))
 		return(1);
@@ -145,6 +151,8 @@ man_valid_post(struct man *m)
 		return(check_text(m, m->last));
 	case (MAN_ROOT):
 		return(check_root(m, m->last));
+	case (MAN_TBL):
+		return(1);
 	default:
 		break;
 	}

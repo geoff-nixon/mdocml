@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.2 2010/12/30 09:34:07 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.3 2010/12/30 10:26:00 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -91,7 +91,7 @@ tbl_data(struct tbl *tbl, int ln, const char *p)
 
 	if ('\0' == p[pos]) {
 		TBL_MSG(tbl, MANDOCERR_TBL, ln, pos);
-		return(1);
+		return(0);
 	}
 
 	/* 

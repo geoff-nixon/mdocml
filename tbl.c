@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.10 2010/12/31 14:52:41 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.11 2010/12/31 18:19:43 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -56,11 +56,11 @@ tbl_read(struct tbl *tbl, int ln, const char *p, int offs)
 		break;
 	}
 
-	/* 
-	 * FIXME: allow the original string to slip through for the time
-	 * being. 
+	/*
+	 * This only returns zero if the line is empty, so we ignore it
+	 * and continue on.
 	 */
-	return(tbl_data(tbl, ln, p) ? ROFF_CONT : ROFF_ERR);
+	return(tbl_data(tbl, ln, p) ? ROFF_TBL : ROFF_IGN);
 }
 
 struct tbl *

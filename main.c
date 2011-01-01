@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.128 2011/01/01 13:37:40 kristaps Exp $ */
+/*	$Id: main.c,v 1.129 2011/01/01 15:45:18 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -527,10 +527,7 @@ fdesc(struct curparse *curp)
 	}
 
 	assert(curp->roff);
-	if ( ! roff_endparse(curp->roff)) {
-		assert(MANDOCLEVEL_FATAL <= file_status);
-		goto cleanup;
-	}
+	roff_endparse(curp->roff);
 
 	/*
 	 * With -Wstop and warnings or errors of at least

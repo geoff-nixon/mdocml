@@ -1,4 +1,4 @@
-/*	$Id: libroff.h,v 1.11 2010/12/31 18:19:43 kristaps Exp $ */
+/*	$Id: libroff.h,v 1.12 2011/01/01 15:45:18 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -54,7 +54,7 @@ struct	tbl {
 	(*(tblp)->msg)((type), (tblp)->data, (line), (col), NULL)
 
 struct tbl	*tbl_alloc(int, int, void *, mandocmsg);
-void		 tbl_restart(struct tbl *);
+void		 tbl_restart(int, int, struct tbl *);
 void		 tbl_free(struct tbl *);
 void		 tbl_reset(struct tbl *);
 enum rofferr 	 tbl_read(struct tbl *, int, const char *, int);

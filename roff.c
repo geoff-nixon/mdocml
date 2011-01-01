@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.114 2010/12/31 18:19:43 kristaps Exp $ */
+/*	$Id: roff.c,v 1.115 2011/01/01 15:45:18 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1138,7 +1138,7 @@ roff_T_(ROFF_ARGS)
 	if (NULL == r->tbl)
 		(*r->msg)(MANDOCERR_NOSCOPE, r->data, ln, ppos, NULL);
 	else
-		tbl_restart(r->tbl);
+		tbl_restart(ppos, ln, r->tbl);
 
 	return(ROFF_IGN);
 }

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.138 2010/12/24 14:14:00 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.139 2010/12/24 22:47:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -421,6 +421,8 @@ print_mdoc_node(MDOC_ARGS)
 		break;
 	case (MDOC_TEXT):
 		print_text(h, n->string);
+		return;
+	case (MDOC_TBL):
 		return;
 	default:
 		if (mdocs[n->tok].pre && ENDBODY_NOT == n->end)

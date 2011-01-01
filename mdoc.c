@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.174 2011/01/01 10:51:30 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.175 2011/01/01 12:18:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -391,6 +391,8 @@ node_append(struct mdoc *mdoc, struct mdoc_node *p)
 	mdoc->last = p;
 
 	switch (p->type) {
+	case (MDOC_TBL):
+		/* FALLTHROUGH */
 	case (MDOC_TEXT):
 		if ( ! mdoc_valid_post(mdoc))
 			return(0);

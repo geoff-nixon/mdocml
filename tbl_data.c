@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.4 2011/01/01 13:37:40 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.5 2011/01/01 17:10:20 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -18,6 +18,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "mandoc.h"
 #include "libmandoc.h"

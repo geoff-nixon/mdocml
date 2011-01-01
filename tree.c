@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.23 2010/06/29 19:20:38 schwarze Exp $ */
+/*	$Id: tree.c,v 1.24 2010/07/07 15:04:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -88,6 +88,9 @@ print_mdoc(const struct mdoc_node *n, int indent)
 	case (MDOC_TEXT):
 		t = "text";
 		break;
+	case (MDOC_TBL):
+		t = "tbl";
+		break;
 	default:
 		abort();
 		/* NOTREACHED */
@@ -119,6 +122,9 @@ print_mdoc(const struct mdoc_node *n, int indent)
 			argv = n->args->argv;
 			argc = n->args->argc;
 		}
+		break;
+	case (MDOC_TBL):
+		p = "tbl";
 		break;
 	case (MDOC_ROOT):
 		p = "root";
@@ -179,6 +185,9 @@ print_man(const struct man_node *n, int indent)
 	case (MAN_BODY):
 		t = "block-body";
 		break;
+	case (MAN_TBL):
+		t = "tbl";
+		break;
 	default:
 		abort();
 		/* NOTREACHED */
@@ -199,6 +208,9 @@ print_man(const struct man_node *n, int indent)
 		break;
 	case (MAN_ROOT):
 		p = "root";
+		break;
+	case (MAN_TBL):
+		p = "tbl";
 		break;
 	default:
 		abort();

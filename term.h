@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.75 2010/07/25 11:44:31 kristaps Exp $ */
+/*	$Id: term.h,v 1.76 2010/07/25 22:15:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -120,6 +120,7 @@ struct	termp {
 };
 
 struct termp	 *term_alloc(enum termenc);
+void		  term_tbl(struct termp *, const struct tbl_span *);
 void		  term_free(struct termp *);
 void		  term_newln(struct termp *);
 void		  term_vspace(struct termp *);

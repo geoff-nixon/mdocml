@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.9 2010/07/13 23:53:20 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.10 2010/09/04 20:18:53 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include "mandoc.h"
 #include "out.h"
 #include "term.h"
 #include "main.h"

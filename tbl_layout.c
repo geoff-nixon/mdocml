@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.6 2011/01/02 10:10:57 kristaps Exp $ */
+/*	$Id: tbl_layout.c,v 1.7 2011/01/02 12:04:23 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -294,7 +294,7 @@ cell_alloc(struct tbl_node *tbl, struct tbl_row *rp, enum tbl_cellt pos)
 	 * ones.
 	 */
 
-	h = pp ? pp->head->prev : tbl->first_head;
+	h = pp ? pp->head->next : tbl->first_head;
 
 	if (h) {
 		/* Re-use data header. */

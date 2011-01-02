@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.205 2010/12/25 23:27:50 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.206 2011/01/01 12:18:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -318,6 +318,7 @@ print_mdoc_node(DECL_ARGS)
 		term_word(p, n->string);
 		break;
 	case (MDOC_TBL):
+		term_tbl(p, n->span);
 		break;
 	default:
 		if (termacts[n->tok].pre && ENDBODY_NOT == n->end)

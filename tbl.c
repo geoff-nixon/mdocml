@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.17 2011/01/02 10:10:57 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.18 2011/01/02 12:04:23 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -199,9 +199,6 @@ static void
 tbl_calc_data(struct tbl_node *tbl, struct tbl_dat *data)
 {
 
-	/*
-	 * This is the case with overrunning cells... 
-	 */
 	if (NULL == data->layout)
 		return;
 
@@ -313,5 +310,3 @@ tbl_calc_data_literal(struct tbl_dat *data)
 	if (data->layout->head->width < sz)
 		data->layout->head->width = sz;
 }
-
-

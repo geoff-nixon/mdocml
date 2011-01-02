@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.41 2011/01/01 22:19:15 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.42 2011/01/01 22:27:08 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -143,6 +143,21 @@ enum	mandocerr {
 	MANDOCERR_NODOCPROLOG, /* no document prologue */
 	MANDOCERR_MEM, /* static buffer exhausted */
 	MANDOCERR_MAX
+};
+
+struct	tbl {
+	char		  tab; /* cell-separator */
+	char		  decimal; /* decimal point */
+	int		  linesize;
+	char		  delims[2];
+	int		  opts;
+#define	TBL_OPT_CENTRE	 (1 << 0)
+#define	TBL_OPT_EXPAND	 (1 << 1)
+#define	TBL_OPT_BOX	 (1 << 2)
+#define	TBL_OPT_DBOX	 (1 << 3)
+#define	TBL_OPT_ALLBOX	 (1 << 4)
+#define	TBL_OPT_NOKEEP	 (1 << 5)
+#define	TBL_OPT_NOSPACE	 (1 << 6)
 };
 
 enum	tbl_headt {

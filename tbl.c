@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.16 2011/01/01 23:00:46 kristaps Exp $ */
+/*	$Id: tbl.c,v 1.17 2011/01/02 10:10:57 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -153,6 +153,9 @@ tbl_end(struct tbl_node *tbl)
 		TBL_MSG(tbl, MANDOCERR_TBLNODATA, tbl->line, tbl->pos);
 	else
 		tbl_calc(tbl);
+
+	if (tbl->last_span)
+		tbl->last_span->flags |= TBL_SPAN_LAST;
 }
 
 static void

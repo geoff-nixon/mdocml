@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.7 2011/01/01 22:27:08 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.8 2011/01/02 10:10:57 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -114,13 +114,17 @@ tbl_data(struct tbl_node *tbl, int ln, const char *p)
 		rp = tbl->first_row;
 
 	dp = mandoc_calloc(1, sizeof(struct tbl_span));
+	dp->tbl = &tbl->opts;
 	dp->layout = rp;
+	dp->head = tbl->first_head;
 
 	if (tbl->last_span) {
 		tbl->last_span->next = dp;
 		tbl->last_span = dp;
-	} else
+	} else {
 		tbl->last_span = tbl->first_span = dp;
+		dp->flags |= TBL_SPAN_FIRST;
+	}
 
 	if ( ! strcmp(p, "_")) {
 		dp->pos = TBL_SPAN_HORIZ;

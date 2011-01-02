@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.5 2011/01/01 22:19:15 kristaps Exp $ */
+/*	$Id: tbl_layout.c,v 1.6 2011/01/02 10:10:57 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -322,6 +322,8 @@ cell_alloc(struct tbl_node *tbl, struct tbl_row *rp, enum tbl_cellt pos)
 			hp->prev = h->prev;
 			if (h->prev)
 				h->prev->next = hp;
+			if (h == tbl->first_head)
+				tbl->first_head = hp;
 			h->prev = hp;
 			hp->next = h;
 			head_adjust(p, hp);

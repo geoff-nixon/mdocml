@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.118 2011/01/02 10:10:57 kristaps Exp $ */
+/*	$Id: roff.c,v 1.119 2011/01/03 22:42:37 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1209,7 +1209,7 @@ roff_userdef(ROFF_ARGS)
 	 */
 	cp = *bufp + pos;
 	for (i = 0; i < 9; i++)
-		arg[i] = '\0' == *cp ? NULL :
+		arg[i] = '\0' == *cp ? "" :
 		    mandoc_getarg(&cp, r->msg, r->data, ln, &pos);
 
 	/*

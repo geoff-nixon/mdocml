@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.91 2011/01/01 12:59:17 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.92 2011/01/02 12:21:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -866,6 +866,8 @@ print_man_node(DECL_ARGS)
 		}
 		break;
 	case (MAN_TBL):
+		if (TBL_SPAN_FIRST & n->span->flags) 
+			term_newln(p);
 		term_tbl(p, n->span);
 		break;
 	default:

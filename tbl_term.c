@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.4 2011/01/03 14:57:04 kristaps Exp $ */
+/*	$Id: tbl_term.c,v 1.5 2011/01/03 15:07:59 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -274,6 +274,7 @@ tbl_data(struct termp *tp, const struct tbl *tbl,
 	case (TBL_CELL_HORIZ):
 		/* FALLTHROUGH */
 	case (TBL_CELL_DHORIZ):
+		/* FIXME: THIS IS WRONG. */
 		tbl_data_spanner(tp, dp, tbp);
 		break;
 	case (TBL_CELL_LONG):

@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.29 2011/01/01 22:27:08 kristaps Exp $ */
+/*	$Id: tree.c,v 1.30 2011/01/02 20:34:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -249,20 +249,7 @@ static void
 print_span(const struct tbl_span *sp, int indent)
 {
 	const struct tbl_dat *dp;
-	const struct tbl_head *hp;
 	int		 i;
-
-	if (TBL_SPAN_FIRST & sp->flags) {
-		for (i = 0; i < indent; i++)
-			putchar('\t');
-		printf("tbl-head: ");
-		for (hp = sp->head; hp; hp = hp->next) {
-			printf("[%d]", hp->width);
-			if (hp->next)
-				putchar(' ');
-		}
-		putchar('\n');
-	}
 
 	for (i = 0; i < indent; i++)
 		putchar('\t');

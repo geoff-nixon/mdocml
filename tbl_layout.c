@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.7 2011/01/02 12:04:23 kristaps Exp $ */
+/*	$Id: tbl_layout.c,v 1.8 2011/01/02 20:34:05 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -319,6 +319,7 @@ cell_alloc(struct tbl_node *tbl, struct tbl_row *rp, enum tbl_cellt pos)
 				(TBL_CELL_VERT == p->pos ||
 				 TBL_CELL_DVERT == p->pos)) {
 			hp = mandoc_calloc(1, sizeof(struct tbl_head));
+			hp->ident = tbl->opts.cols++;
 			hp->prev = h->prev;
 			if (h->prev)
 				h->prev->next = hp;
@@ -341,6 +342,7 @@ cell_alloc(struct tbl_node *tbl, struct tbl_row *rp, enum tbl_cellt pos)
 	}
 
 	hp = mandoc_calloc(1, sizeof(struct tbl_head));
+	hp->ident = tbl->opts.cols++;
 
 	if (tbl->last_head) {
 		hp->prev = tbl->last_head;

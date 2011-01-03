@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.43 2011/01/02 10:10:57 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.44 2011/01/02 12:04:23 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -149,7 +149,7 @@ struct	tbl {
 	char		  tab; /* cell-separator */
 	char		  decimal; /* decimal point */
 	int		  linesize;
-	char		  delims[2];
+	char		  delims[2]; /* FIXME: deprecate */
 	int		  opts;
 #define	TBL_OPT_CENTRE	 (1 << 0)
 #define	TBL_OPT_EXPAND	 (1 << 1)
@@ -158,6 +158,7 @@ struct	tbl {
 #define	TBL_OPT_ALLBOX	 (1 << 4)
 #define	TBL_OPT_NOKEEP	 (1 << 5)
 #define	TBL_OPT_NOSPACE	 (1 << 6)
+	int		  cols; /* number of columns */
 };
 
 enum	tbl_headt {
@@ -173,8 +174,7 @@ enum	tbl_headt {
  */
 struct	tbl_head {
 	enum tbl_headt	  pos;
-	int		  width; /* width of cell in fixed chars */
-	int		  decimal; /* decimal point position */
+	int		  ident; /* 0 <= unique id < cols */
 	struct tbl_head	 *next;
 	struct tbl_head	 *prev;
 };

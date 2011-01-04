@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.132 2011/01/03 13:54:02 kristaps Exp $ */
+/*	$Id: main.c,v 1.133 2011/01/03 23:53:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -189,6 +189,8 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"bad table layout",
 	"no table layout cells specified",
 	"no table data cells specified",
+	"ignore data in cell",
+
 	"input stack limit exceeded, infinite loop?",
 	"skipping bad character",
 	"skipping text before the first section header",

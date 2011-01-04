@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.6 2011/01/03 16:04:41 kristaps Exp $ */
+/*	$Id: tbl_html.c,v 1.1 2011/01/04 10:29:41 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -63,7 +63,8 @@ print_tbl(struct html *h, const struct tbl_span *sp)
 		}
 		tt = print_otag(h, TAG_TD, 0, NULL);
 		if (dp) {
-			print_text(h, dp->string);
+			if (dp->string)
+				print_text(h, dp->string);
 			dp = dp->next;
 		}
 		print_tagq(h, tt);

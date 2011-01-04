@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.58 2011/01/01 12:59:17 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.59 2011/01/04 01:23:18 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -202,7 +202,8 @@ print_man_node(MAN_ARGS)
 			print_otag(h, TAG_BR, 0, NULL);
 		return;
 	case (MAN_TBL):
-		return;
+		print_tbl(h, n->span);
+		break;
 	default:
 		/* 
 		 * Close out scope of font prior to opening a macro

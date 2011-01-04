@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.35 2010/12/24 00:46:49 kristaps Exp $ */
+/*	$Id: html.h,v 1.36 2010/12/24 14:14:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -138,6 +138,7 @@ struct tag	 *print_otag(struct html *, enum htmltag,
 void		  print_tagq(struct html *, const struct tag *);
 void		  print_stagq(struct html *, const struct tag *);
 void		  print_text(struct html *, const char *);
+void		  print_tbl(struct html *, const struct tbl_span *);
 
 void		  bufcat_su(struct html *, const char *, 
 			const struct roffsu *);

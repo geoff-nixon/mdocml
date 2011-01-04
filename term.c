@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.174 2010/10/02 15:15:55 schwarze Exp $ */
+/*	$Id: term.c,v 1.175 2010/12/06 13:25:25 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -677,6 +677,12 @@ term_strlen(const struct termp *p, const char *cp)
 			if (rhs)
 				for (i = 0; i < rsz; i++)
 					sz += (*p->width)(p, *rhs++);
+		} else if (ASCII_NBRSP == *cp) {
+			sz += (*p->width)(p, ' ');
+			cp++;
+		} else if (ASCII_HYPH == *cp) {
+			sz += (*p->width)(p, '-');
+			cp++;
 		} else
 			sz += (*p->width)(p, *cp++);
 

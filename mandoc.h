@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.45 2011/01/03 13:59:21 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.46 2011/01/03 23:53:51 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -111,6 +111,7 @@ enum	mandocerr {
 	MANDOCERR_TBLLAYOUT, /* bad table layout */
 	MANDOCERR_TBLNOLAYOUT, /* no table layout cells specified */
 	MANDOCERR_TBLNODATA, /* no table data cells specified */
+	MANDOCERR_TBLIGNDATA, /* ignore data in cell */
 
 	MANDOCERR_ROFFLOOP, /* input stack limit exceeded, infinite loop? */
 	MANDOCERR_BADCHAR, /* skipping bad character */

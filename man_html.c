@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.59 2011/01/04 01:23:18 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.60 2011/01/04 10:29:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -227,10 +227,17 @@ print_man_node(MAN_ARGS)
 
 	bufinit(h);
 
-	if (MAN_ROOT == n->type) 
+	switch (n->type) {
+	case (MAN_ROOT):
 		man_root_post(m, n, mh, h);
-	else if (mans[n->tok].post)
-		(*mans[n->tok].post)(m, n, mh, h);
+		break;
+	case (MAN_TBL):
+		break;
+	default:
+		if (mans[n->tok].post)
+			(*mans[n->tok].post)(m, n, mh, h);
+		break;
+	}
 }
 
 

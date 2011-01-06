@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.71 2010/12/30 00:51:32 schwarze Exp $
+* $Id: TODO,v 1.72 2011/01/03 21:53:46 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -151,11 +151,6 @@
   or in DIAGNOSTICS in init(8).
   Also have `It' complain if `Pp' is invoked at certain times (not
   -compact?).
-
-- .Bd -literal and .Bd -unfilled are *not* identical.
-  In -literal, tabs are 8 spaces.
-  In -unfilled, tabs are 5 spaces, just like in -filled and -ragged.
-  See the CCDF_* display in OpenBSD ccdconfig(8).
 
 - .Nx 1.0a
   should be "NetBSD 1.0A", not "NetBSD 1.0a",

@@ -1,4 +1,4 @@
-/*	$Id: tbl_opts.c,v 1.4 2010/12/29 14:38:14 kristaps Exp $ */
+/*	$Id: tbl_opts.c,v 1.5 2011/01/02 10:10:57 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -102,12 +102,12 @@ arg(struct tbl_node *tbl, int ln, const char *p, int *pos, int key)
 
 	switch (key) {
 	case (KEY_DELIM):
-		if ('\0' == (tbl->opts.delims[0] = p[(*pos)++])) {
+		if ('\0' == p[(*pos)++]) {
 			TBL_MSG(tbl, MANDOCERR_TBL, ln, *pos - 1);
 			return(0);
 		} 
 
-		if ('\0' == (tbl->opts.delims[1] = p[(*pos)++])) {
+		if ('\0' == p[(*pos)++]) {
 			TBL_MSG(tbl, MANDOCERR_TBL, ln, *pos - 1);
 			return(0);
 		} 

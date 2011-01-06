@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.206 2011/01/01 12:18:37 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.207 2011/01/02 12:21:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1599,7 +1599,9 @@ termp_bd_pre(DECL_ARGS)
 		return(1);
 
 	tabwidth = p->tabwidth;
-	p->tabwidth = term_len(p, 8);
+	if (DISP_literal == n->norm->Bd.type)
+		p->tabwidth = term_len(p, 8);
+
 	rm = p->rmargin;
 	rmax = p->maxrmargin;
 	p->rmargin = p->maxrmargin = TERM_MAXMARGIN;

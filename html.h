@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.36 2010/12/24 14:14:00 kristaps Exp $ */
+/*	$Id: html.h,v 1.37 2011/01/04 10:29:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -115,21 +115,19 @@ struct	html {
 #define	HTML_KEEP	 (1 << 2)
 #define	HTML_PREKEEP	 (1 << 3)
 #define	HTML_NONOSPACE	 (1 << 4)
-	struct tagq	  tags;
-	void		 *symtab;
-	char		 *base;
-	char		 *base_man;
-	char		 *base_includes;
-	char		 *style;
-	char		  buf[BUFSIZ];
+	struct tagq	  tags; /* stack of open tags */
+	struct rofftbl	  tbl; /* current table */
+	void		 *symtab; /* character-escapes */
+	char		 *base_man; /* base for manpage href */
+	char		 *base_includes; /* base for include href */
+	char		 *style; /* style-sheet URI */
+	char		  buf[BUFSIZ]; /* see bufcat and friends */
 	size_t		  buflen;
 	struct tag	 *metaf; /* current open font scope */
 	enum htmlfont	  metal; /* last used font */
 	enum htmlfont	  metac; /* current font mode */
 	enum htmltype	  type;
 };
-
-struct	roffsu;
 
 void		  print_gen_decls(struct html *);
 void		  print_gen_head(struct html *);

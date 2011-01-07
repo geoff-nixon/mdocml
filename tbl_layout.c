@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.10 2011/01/04 23:48:39 schwarze Exp $ */
+/*	$Id: tbl_layout.c,v 1.11 2011/01/07 13:03:48 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -88,6 +88,20 @@ mod:
 		return(1);
 	default:
 		break;
+	}
+
+	/* Throw away parenthesised expression. */
+
+	if ('(' == p[*pos]) {
+		(*pos)++;
+		while (p[*pos] && ')' != p[*pos])
+			(*pos)++;
+		if (')' == p[*pos]) {
+			(*pos)++;
+			goto mod;
+		}
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+		return(0);
 	}
 
 	/* Parse numerical spacing from modifier string. */

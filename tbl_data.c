@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.11 2011/01/04 15:02:00 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.12 2011/01/07 13:03:48 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -112,6 +112,7 @@ data(struct tbl_node *tbl, struct tbl_span *dp,
 	return(1);
 }
 
+/* ARGSUSED */
 int
 tbl_cdata(struct tbl_node *tbl, int ln, const char *p)
 {

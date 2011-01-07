@@ -1,4 +1,4 @@
-/*	$Id: tbl_opts.c,v 1.5 2011/01/02 10:10:57 kristaps Exp $ */
+/*	$Id: tbl_opts.c,v 1.6 2011/01/06 13:45:47 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -72,12 +72,12 @@ static	const struct tbl_phrase keys[KEY_MAXKEYS] = {
 };
 
 static	int		 arg(struct tbl_node *, int, 
-				const char *, int *, int);
+				const char *, int *, enum tbl_ident);
 static	void		 opt(struct tbl_node *, int, 
 				const char *, int *);
 
 static int
-arg(struct tbl_node *tbl, int ln, const char *p, int *pos, int key)
+arg(struct tbl_node *tbl, int ln, const char *p, int *pos, enum tbl_ident key)
 {
 	int		 i;
 	char		 buf[KEY_MAXNUMSZ];

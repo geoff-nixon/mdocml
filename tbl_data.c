@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.12 2011/01/07 13:03:48 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.13 2011/01/07 13:20:58 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -118,14 +118,26 @@ tbl_cdata(struct tbl_node *tbl, int ln, const char *p)
 {
 	struct tbl_dat	*dat;
 	size_t	 	 sz;
+	int		 pos;
 
-	if (0 == strcmp(p, "T}")) {
-		tbl->part = TBL_PART_DATA;
-		return(1);
-	}
+	pos = 0;
 
 	dat = tbl->last_span->last;
 	dat->pos = TBL_DATA_DATA;
+
+	if (p[pos] == 'T' && p[pos + 1] == '}') {
+		pos += 2;
+		if (p[pos] == tbl->opts.tab) {
+			tbl->part = TBL_PART_DATA;
+			pos++;
+			return(data(tbl, tbl->last_span, ln, p, &pos));
+		} else if ('\0' == p[pos]) {
+			tbl->part = TBL_PART_DATA;
+			return(1);
+		}
+
+		/* Fallthrough: T} is part of a word. */
+	}
 
 	if (dat->string) {
 		sz = strlen(p) + strlen(dat->string) + 2;

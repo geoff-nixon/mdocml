@@ -1,4 +1,4 @@
-.\"	$Id: tbl.7,v 1.2 2011/01/05 09:31:10 kristaps Exp $
+.\"	$Id: tbl.7,v 1.3 2011/01/05 20:02:34 kristaps Exp $
 .\"
 .\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -277,7 +277,10 @@ If the last cell of a line is
 .Cm T{ ,
 all subsequent lines are included as part of the cell until
 .Cm T}
-is specified on its own line.
+is specified as its own data cell.
+It may then be followed by a tab
+.Pq or as designated by Cm tab
+or an end-of-line to terminate the row.
 .Sh COMPATIBILITY
 This section documents compatibility between mandoc and other
 .Nm

@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.10 2011/01/04 12:06:21 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.11 2011/01/04 15:02:00 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -45,10 +45,14 @@ data(struct tbl_node *tbl, struct tbl_span *dp,
 	else if (NULL == dp->last)
 		cp = dp->layout->first;
 
-	/* Skip over spanners to data formats. */
+	/* 
+	 * Skip over spanners and vertical lines to data formats, since
+	 * we want to match data with data layout cells in the header.
+	 */
 
 	while (cp && (TBL_CELL_VERT == cp->pos || 
-				TBL_CELL_DVERT == cp->pos))
+				TBL_CELL_DVERT == cp->pos ||
+				TBL_CELL_SPAN == cp->pos))
 		cp = cp->next;
 
 	dat = mandoc_calloc(1, sizeof(struct tbl_dat));

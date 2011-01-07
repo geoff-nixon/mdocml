@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.9 2011/01/03 13:59:21 kristaps Exp $ */
+/*	$Id: tbl_layout.c,v 1.10 2011/01/04 23:48:39 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -28,6 +28,12 @@ struct	tbl_phrase {
 	char		 name;
 	enum tbl_cellt	 key;
 };
+
+/*
+ * FIXME: we can make this parse a lot nicer by, when an error is
+ * encountered in a layout key, bailing to the next key (i.e. to the
+ * next whitespace then continuing).
+ */
 
 #define	KEYS_MAX	 11
 
@@ -173,8 +179,19 @@ cell(struct tbl_node *tbl, struct tbl_row *rp,
 		return(0);
 	}
 
-	(*pos)++;
 	c = keys[i].key;
+
+	/*
+	 * If a span cell is found first, raise a warning and abort the
+	 * parse.  FIXME: recover from this somehow?
+	 */
+
+	if (NULL == rp->first && TBL_CELL_SPAN == c) {
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+		return(0);
+	}
+
+	(*pos)++;
 
 	/* Extra check for the double-vertical. */
 

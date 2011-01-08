@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.12 2011/01/07 13:20:58 kristaps Exp $ */
+/*	$Id: tbl_term.c,v 1.13 2011/01/07 14:59:52 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -26,9 +26,6 @@
 #include "mandoc.h"
 #include "out.h"
 #include "term.h"
-
-/* FIXME: `n' modifier doesn't always do the right thing. */
-/* FIXME: `n' modifier doesn't use the cell-spacing buffer. */
 
 static	size_t	term_tbl_len(size_t, void *);
 static	size_t	term_tbl_strlen(const char *, void *);

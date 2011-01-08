@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.30 2011/01/05 15:37:23 kristaps Exp $ */
+/*	$Id: out.c,v 1.31 2011/01/08 17:00:27 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -527,7 +527,7 @@ tblcalc_number(struct rofftbl *tbl, struct roffcol *col,
 
 	psz = (*tbl->slen)(buf, tbl->arg);
 
-	if (NULL != (cp = strchr(str, tp->decimal))) {
+	if (NULL != (cp = strrchr(str, tp->decimal))) {
 		buf[1] = '\0';
 		for (ssz = 0, i = 0; cp != &str[i]; i++) {
 			buf[0] = str[i];

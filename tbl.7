@@ -1,4 +1,4 @@
-.\"	$Id: tbl.7,v 1.3 2011/01/05 20:02:34 kristaps Exp $
+.\"	$Id: tbl.7,v 1.4 2011/01/07 14:59:52 kristaps Exp $
 .\"
 .\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: January 5 2011 $
+.Dd $Mdocdate: January 7 2011 $
 .Dt TBL 7
 .Os
 .Sh NAME
@@ -231,16 +231,9 @@ Emit a vertical bar instead of data.
 Emit a double-vertical bar instead of data.
 .El
 .Pp
-For example, the following layout specifies a centre-justified column of
-minimum width 10, followed by vertical bar, followed by a left-justified
-column of minimum width 10, another vertical bar, then a column
-justified about the decimal point in numbers:
-.Pp
-.Dl c10 | l10 | n
-.Pp
 Keys may be followed by a set of modifiers.
 A modifier is either a modifier key or a natural number for specifying
-spacing.
+the minimum width of a column.
 The following case-insensitive modifier keys are available:
 .Cm z ,
 .Cm u ,
@@ -255,6 +248,13 @@ and
 .Cm i .
 All of these are ignored by
 .Xr mandoc 1 .
+.Pp
+For example, the following layout specifies a centre-justified column of
+minimum width 10, followed by vertical bar, followed by a left-justified
+column of minimum width 10, another vertical bar, then a column
+justified about the decimal point in numbers:
+.Pp
+.Dl c10 | l10 | n
 .Ss Data
 The data section follows the last layout row.
 By default, cells in a data section are delimited by a tab.

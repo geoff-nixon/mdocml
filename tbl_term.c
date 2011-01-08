@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.13 2011/01/07 14:59:52 kristaps Exp $ */
+/*	$Id: tbl_term.c,v 1.14 2011/01/08 17:00:27 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -400,7 +400,7 @@ tbl_number(struct termp *tp, const struct tbl *tbl,
 
 	psz = term_strlen(tp, buf);
 
-	if (NULL != (cp = strchr(str, tbl->decimal))) {
+	if (NULL != (cp = strrchr(str, tbl->decimal))) {
 		buf[1] = '\0';
 		for (ssz = 0, i = 0; cp != &str[i]; i++) {
 			buf[0] = str[i];

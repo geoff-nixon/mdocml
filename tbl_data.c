@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.13 2011/01/07 13:20:58 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.14 2011/01/07 14:59:52 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -167,13 +167,19 @@ tbl_data(struct tbl_node *tbl, int ln, const char *p)
 	/* 
 	 * Choose a layout row: take the one following the last parsed
 	 * span's.  If that doesn't exist, use the last parsed span's.
-	 * If there's no last parsed span, use the first row.  This can
-	 * be NULL!
+	 * If there's no last parsed span, use the first row.  Lastly,
+	 * if the last span was a horizontal line, use the same layout
+	 * (it doesn't "consume" the layout).
+	 *
+	 * In the end, this can be NULL!
 	 */
 
 	if (tbl->last_span) {
 		assert(tbl->last_span->layout);
-		rp = tbl->last_span->layout->next;
+		if (tbl->last_span->pos == TBL_SPAN_DATA)
+			rp = tbl->last_span->layout->next;
+		else
+			rp = tbl->last_span->layout;
 		if (NULL == rp)
 			rp = tbl->last_span->layout;
 	} else

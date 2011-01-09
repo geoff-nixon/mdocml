@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.11 2011/01/07 13:03:48 kristaps Exp $ */
+/*	$Id: tbl_layout.c,v 1.12 2011/01/07 14:59:52 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -130,7 +130,7 @@ mod:
 
 	/* TODO: GNU has many more extensions. */
 
-	switch (tolower(p[(*pos)++])) {
+	switch (tolower((unsigned char)p[(*pos)++])) {
 	case ('z'):
 		cp->flags |= TBL_CELL_WIGN;
 		goto mod;
@@ -160,7 +160,7 @@ mod:
 		return(0);
 	}
 
-	switch (tolower(p[(*pos)++])) {
+	switch (tolower((unsigned char)p[(*pos)++])) {
 	case ('b'):
 		cp->flags |= TBL_CELL_BOLD;
 		goto mod;
@@ -185,7 +185,7 @@ cell(struct tbl_node *tbl, struct tbl_row *rp,
 	/* Parse the column position (`r', `R', `|', ...). */
 
 	for (i = 0; i < KEYS_MAX; i++)
-		if (tolower(p[*pos]) == keys[i].name)
+		if (tolower((unsigned char)p[*pos]) == keys[i].name)
 			break;
 
 	if (KEYS_MAX == i) {

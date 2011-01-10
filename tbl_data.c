@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.15 2011/01/09 23:14:41 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.16 2011/01/10 14:40:30 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -140,7 +140,6 @@ tbl_cdata(struct tbl_node *tbl, int ln, const char *p)
 	pos = 0;
 
 	dat = tbl->last_span->last;
-	dat->pos = TBL_DATA_DATA;
 
 	if (p[pos] == 'T' && p[pos + 1] == '}') {
 		pos += 2;
@@ -155,6 +154,8 @@ tbl_cdata(struct tbl_node *tbl, int ln, const char *p)
 
 		/* Fallthrough: T} is part of a word. */
 	}
+
+	dat->pos = TBL_DATA_DATA;
 
 	if (dat->string) {
 		sz = strlen(p) + strlen(dat->string) + 2;

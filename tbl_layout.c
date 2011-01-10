@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.13 2011/01/09 05:38:23 joerg Exp $ */
+/*	$Id: tbl_layout.c,v 1.14 2011/01/10 14:40:30 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -122,7 +122,7 @@ mod:
 		}
 
 		*pos += i;
-		cp->spacing = atoi(buf);
+		cp->spacing = (size_t)atoi(buf);
 
 		goto mod;
 		/* NOTREACHED */

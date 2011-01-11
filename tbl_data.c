@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.17 2011/01/10 14:56:06 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.18 2011/01/10 15:31:00 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -122,7 +122,8 @@ data(struct tbl_node *tbl, struct tbl_span *dp,
 		dat->pos = TBL_DATA_DATA;
 
 	if (TBL_CELL_HORIZ == dat->layout->pos ||
-			TBL_CELL_DHORIZ == dat->layout->pos)
+			TBL_CELL_DHORIZ == dat->layout->pos ||
+			TBL_CELL_DOWN == dat->layout->pos)
 		if (TBL_DATA_DATA == dat->pos && '\0' != *dat->string)
 			TBL_MSG(tbl, MANDOCERR_TBLIGNDATA, ln, sv);
 
@@ -164,6 +165,9 @@ tbl_cdata(struct tbl_node *tbl, int ln, const char *p)
 		strlcat(dat->string, p, sz);
 	} else
 		dat->string = mandoc_strdup(p);
+
+	if (TBL_CELL_DOWN == dat->layout->pos) 
+		TBL_MSG(tbl, MANDOCERR_TBLIGNDATA, ln, pos);
 
 	return(0);
 }

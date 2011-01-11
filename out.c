@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.33 2011/01/10 14:40:30 kristaps Exp $ */
+/*	$Id: out.c,v 1.34 2011/01/10 15:31:00 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -452,6 +452,8 @@ tblcalc_data(struct rofftbl *tbl, struct roffcol *col,
 		break;
 	case (TBL_CELL_NUMBER):
 		tblcalc_number(tbl, col, tp, dp);
+		break;
+	case (TBL_CELL_DOWN):
 		break;
 	default:
 		abort();

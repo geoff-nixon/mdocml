@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.14 2011/01/10 14:40:30 kristaps Exp $ */
+/*	$Id: tbl_layout.c,v 1.15 2011/01/10 15:31:00 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -218,6 +218,16 @@ cell(struct tbl_node *tbl, struct tbl_row *rp,
 			default:
 				break;
 			}
+	}
+
+	/*
+	 * If a vertical spanner is found, we may not be in the first
+	 * row.
+	 */
+
+	if (TBL_CELL_DOWN == c && rp == tbl->first_row) {
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+		return(0);
 	}
 
 	(*pos)++;

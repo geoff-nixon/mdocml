@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.16 2011/01/10 14:40:30 kristaps Exp $ */
+/*	$Id: tbl_term.c,v 1.17 2011/01/10 14:56:06 kristaps Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *
@@ -304,6 +304,9 @@ tbl_data(struct termp *tp, const struct tbl *tbl,
 		break;
 	case (TBL_CELL_NUMBER):
 		tbl_number(tp, tbl, dp, col);
+		break;
+	case (TBL_CELL_DOWN):
+		tbl_char(tp, ASCII_NBRSP, col->width);
 		break;
 	default:
 		abort();

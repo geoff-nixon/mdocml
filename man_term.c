@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.93 2011/01/03 15:30:25 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.94 2011/01/04 01:23:18 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -396,6 +396,11 @@ pre_in(DECL_ARGS)
 		p->offset += v;
 	else 
 		p->offset = v;
+
+	/* Don't let this creep beyond the right margin. */
+
+	if (p->offset > p->rmargin)
+		p->offset = p->rmargin;
 
 	return(0);
 }

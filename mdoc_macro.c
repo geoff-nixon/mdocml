@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.98 2010/12/06 11:01:19 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.99 2010/12/15 23:39:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -252,17 +252,24 @@ lookup_raw(const char *p)
 static int
 rew_last(struct mdoc *mdoc, const struct mdoc_node *to)
 {
-	struct mdoc_node *n;
+	struct mdoc_node *n, *np;
 
 	assert(to);
 	mdoc->next = MDOC_NEXT_SIBLING;
 
 	/* LINTED */
 	while (mdoc->last != to) {
+		/*
+		 * Save the parent here, because we may delete the
+		 * m->last node in the post-validation phase and reset
+		 * it to m->last->parent, causing a step in the closing
+		 * out to be lost.
+		 */
+		np = mdoc->last->parent;
 		if ( ! mdoc_valid_post(mdoc))
 			return(0);
 		n = mdoc->last;
-		mdoc->last = mdoc->last->parent;
+		mdoc->last = np;
 		assert(mdoc->last);
 		mdoc->last->last = n;
 	}

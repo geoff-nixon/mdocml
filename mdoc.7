@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.173 2010/12/29 16:16:50 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.174 2011/01/04 23:32:21 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: December 29 2010 $
+.Dd $Mdocdate: January 4 2011 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -55,6 +55,9 @@ character, and, in certain circumstances, the tab character.
 All manuals must have
 .Ux
 line terminators.
+.Pp
+If the first character of a line is a space, that line is printed
+with a leading newline.
 .Ss Comments
 Text following a
 .Sq \e\*q ,

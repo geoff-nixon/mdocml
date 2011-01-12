@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.93 2010/12/29 16:18:13 kristaps Exp $
+.\"	$Id: man.7,v 1.94 2011/01/04 23:32:21 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: December 29 2010 $
+.Dd $Mdocdate: January 4 2011 $
 .Dt MAN 7
 .Os
 .Sh NAME
@@ -59,6 +59,9 @@ line termination.
 .Pp
 Blank lines are acceptable; where found, the output will assert a
 vertical space.
+.Pp
+If the first character of a line is a space, that line is printed
+with a leading newline.
 .Ss Comments
 Text following a
 .Sq \e\*q ,

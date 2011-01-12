@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.207 2011/01/02 12:21:07 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.208 2011/01/06 14:05:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -315,6 +315,8 @@ print_mdoc_node(DECL_ARGS)
 	
 	switch (n->type) {
 	case (MDOC_TEXT):
+		if (' ' == *n->string && MDOC_LINE & n->flags)
+			term_newln(p);
 		term_word(p, n->string);
 		break;
 	case (MDOC_TBL):

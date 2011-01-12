@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.94 2011/01/04 01:23:18 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.95 2011/01/11 00:39:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -859,10 +859,13 @@ print_man_node(DECL_ARGS)
 
 	switch (n->type) {
 	case(MAN_TEXT):
-		if (0 == *n->string) {
+		if ('\0' == *n->string) {
 			term_vspace(p);
 			break;
-		}
+		} 
+
+		if (' ' == *n->string && MAN_LINE & n->flags)
+			term_newln(p);
 
 		term_word(p, n->string);
 
@@ -878,6 +881,7 @@ print_man_node(DECL_ARGS)
 			p->rmargin = rm;
 			p->maxrmargin = rmax;
 		}
+
 		break;
 	case (MAN_TBL):
 		if (TBL_SPAN_FIRST & n->span->flags) 

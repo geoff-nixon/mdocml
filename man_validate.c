@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.56 2010/12/08 10:58:22 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.57 2011/01/01 12:59:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -489,7 +489,7 @@ post_fi(CHKARGS)
 {
 
 	if ( ! (MAN_LITERAL & m->flags))
-		man_nmsg(m, n, MANDOCERR_NOSCOPE);
+		man_nmsg(m, n, MANDOCERR_WNOSCOPE);
 
 	m->flags &= ~MAN_LITERAL;
 	return(1);

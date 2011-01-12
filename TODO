@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.75 2011/01/10 03:43:47 schwarze Exp $
+* $Id: TODO,v 1.76 2011/01/12 15:31:17 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -171,10 +171,6 @@
 ************************************************************************
 * error reporting issues
 ************************************************************************
-
-- .fi without preceding .nf need not be an ERROR,
-  a warning is sufficient; occurs in all postfix manuals
-  reported by brad@  Sun, Jan 09, 2011 at 09:45:58PM -0500
 
 - downgrade "ERROR: macro requires body argument(s)" to WARNING
   for the typical man(7) cases, it keeps confusing people

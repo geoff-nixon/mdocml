@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.51 2011/01/10 15:31:00 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.52 2011/01/11 00:11:45 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -80,6 +80,7 @@ enum	mandocerr {
 	MANDOCERR_LISTFIRST, /* list type must come first */
 	MANDOCERR_NOWIDTHARG, /* tag lists require a width argument */
 	MANDOCERR_FONTTYPE, /* missing font type */
+	MANDOCERR_WNOSCOPE, /* skipping end of block that is not open */
 
 	/* related to bad macro arguments */
 	MANDOCERR_IGNARGV, /* skipping argument */

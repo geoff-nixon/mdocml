@@ -1,6 +1,6 @@
-/*	$Id: man_term.c,v 1.96 2011/01/12 10:43:22 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.97 2011/01/12 15:23:25 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
@@ -864,7 +864,7 @@ print_man_node(DECL_ARGS)
 		 */
 		if ('\0' == *n->string) {
 			term_vspace(p);
-			break;
+			return;
 		} else if (' ' == *n->string && MAN_LINE & n->flags)
 			term_newln(p);
 

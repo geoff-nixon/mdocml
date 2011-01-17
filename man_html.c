@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.65 2011/01/12 15:41:09 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.66 2011/01/13 14:30:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -100,7 +100,7 @@ static	const struct htmlman mans[MAN_MAX] = {
 	{ man_I_pre, NULL }, /* I */
 	{ man_alt_pre, NULL }, /* IR */
 	{ man_alt_pre, NULL }, /* RI */
-	{ NULL, NULL }, /* na */
+	{ man_ign_pre, NULL }, /* na */
 	{ man_br_pre, NULL }, /* sp */
 	{ man_literal_pre, NULL }, /* nf */
 	{ man_literal_pre, NULL }, /* fi */
@@ -663,7 +663,7 @@ man_literal_pre(MAN_ARGS)
 	} else
 		mh->fl &= ~MANH_LITERAL;
 
-	return(1);
+	return(0);
 }
 
 

@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.97 2011/01/12 15:23:25 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.98 2011/01/16 20:12:45 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -126,7 +126,7 @@ static	const struct termact termacts[MAN_MAX] = {
 	{ pre_I, NULL, 0 }, /* I */
 	{ pre_alternate, NULL, 0 }, /* IR */
 	{ pre_alternate, NULL, 0 }, /* RI */
-	{ NULL, NULL, MAN_NOTEXT }, /* na */
+	{ pre_ign, NULL, MAN_NOTEXT }, /* na */
 	{ pre_sp, NULL, MAN_NOTEXT }, /* sp */
 	{ pre_literal, NULL, 0 }, /* nf */
 	{ pre_literal, NULL, 0 }, /* fi */
@@ -255,7 +255,7 @@ pre_literal(DECL_ARGS)
 	else
 		mt->fl &= ~MANT_LITERAL;
 
-	return(1);
+	return(0);
 }
 
 /* ARGSUSED */

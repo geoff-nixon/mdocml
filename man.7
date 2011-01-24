@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.94 2011/01/04 23:32:21 kristaps Exp $
+.\"	$Id: man.7,v 1.95 2011/01/12 10:43:22 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: January 4 2011 $
+.Dd $Mdocdate: January 12 2011 $
 .Dt MAN 7
 .Os
 .Sh NAME
@@ -372,6 +372,13 @@ Thus, the following are equivalent:
 \&.PP
 \&.\ \ \ PP
 .Ed
+.Pp
+To include space characters in macro arguments, arguments may be quoted;
+see the
+.Sq MACRO SYNTAX
+section in the
+.Xr roff 7
+manual for details.
 .Pp
 The
 .Nm

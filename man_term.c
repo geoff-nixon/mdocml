@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.99 2011/01/17 00:21:29 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.100 2011/01/23 14:54:21 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -211,6 +211,9 @@ static void
 print_bvspace(struct termp *p, const struct man_node *n)
 {
 	term_newln(p);
+
+	if (n->body && n->body->child && MAN_TBL == n->body->child->type)
+		return;
 
 	if (NULL == n->prev)
 		return;

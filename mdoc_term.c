@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.211 2011/01/25 15:17:18 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.212 2011/01/25 15:28:56 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1677,7 +1677,6 @@ termp_bd_post(DECL_ARGS)
 static int
 termp_bx_pre(DECL_ARGS)
 {
-	char		 buf[3];
 
 	if (NULL != (n = n->child)) {
 		term_word(p, n->string);
@@ -1689,14 +1688,10 @@ termp_bx_pre(DECL_ARGS)
 	}
 
 	if (NULL != (n = n->next)) {
-		buf[0] = '-';
-		buf[1] = toupper((unsigned char)*n->string);
-		buf[2] = '\0';
-
 		p->flags |= TERMP_NOSPACE;
-		term_word(p, buf);
+		term_word(p, "-");
 		p->flags |= TERMP_NOSPACE;
-		term_word(p, n->string + 1);
+		term_word(p, n->string);
 	}
 
 	return(0);

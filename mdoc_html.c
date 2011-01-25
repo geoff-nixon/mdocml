@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.146 2011/01/25 15:28:56 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.147 2011/01/25 15:46:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -823,8 +823,14 @@ mdoc_xx_pre(MDOC_ARGS)
 
 	PAIR_CLASS_INIT(&tag, "unix");
 	print_otag(h, TAG_SPAN, 1, &tag);
+
 	print_text(h, pp);
-	return(1);
+	if (n->child) {
+		h->flags |= HTML_KEEP;
+		print_text(h, n->child->string);
+		h->flags &= ~HTML_KEEP;
+	}
+	return(0);
 }
 
 

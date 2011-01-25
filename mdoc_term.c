@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.212 2011/01/25 15:28:56 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.213 2011/01/25 15:46:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1728,9 +1728,13 @@ termp_xx_pre(DECL_ARGS)
 		break;
 	}
 
-	assert(pp);
 	term_word(p, pp);
-	return(1);
+	if (n->child) {
+		p->flags |= TERMP_KEEP;
+		term_word(p, n->child->string);
+		p->flags &= ~TERMP_KEEP;
+	}
+	return(0);
 }
 
 

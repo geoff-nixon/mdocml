@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.122 2011/01/16 04:00:34 schwarze Exp $ */
+/*	$Id: roff.c,v 1.123 2011/01/22 13:16:02 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -55,8 +55,11 @@ enum	rofft {
 	ROFF_ne,
 	ROFF_nh,
 	ROFF_nr,
+	ROFF_ns,
+	ROFF_ps,
 	ROFF_rm,
 	ROFF_so,
+	ROFF_ta,
 	ROFF_tr,
 	ROFF_TS,
 	ROFF_TE,
@@ -177,8 +180,11 @@ static	struct roffmac	 roffs[ROFF_MAX] = {
 	{ "ne", roff_line_ignore, NULL, NULL, 0, NULL },
 	{ "nh", roff_line_ignore, NULL, NULL, 0, NULL },
 	{ "nr", roff_nr, NULL, NULL, 0, NULL },
+	{ "ns", roff_line_ignore, NULL, NULL, 0, NULL },
+	{ "ps", roff_line_ignore, NULL, NULL, 0, NULL },
 	{ "rm", roff_rm, NULL, NULL, 0, NULL },
 	{ "so", roff_so, NULL, NULL, 0, NULL },
+	{ "ta", roff_line_ignore, NULL, NULL, 0, NULL },
 	{ "tr", roff_line_ignore, NULL, NULL, 0, NULL },
 	{ "TS", roff_TS, NULL, NULL, 0, NULL },
 	{ "TE", roff_TE, NULL, NULL, 0, NULL },

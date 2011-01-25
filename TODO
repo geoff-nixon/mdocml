@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.83 2011/01/24 01:34:56 schwarze Exp $
+* $Id: TODO,v 1.84 2011/01/25 10:37:49 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -227,12 +227,6 @@
 
 - The space character joining .Dx .Fx .Nx .Ox (are these all?) to its
   argument is non-breaking.  See the cdio(1) HISTORY and many others.
-
-- .Bx uses a dash before its argument, not a space,
-  see for example the chpass(1) and column(1) HISTORY.
-  Besides, the second argument is capitalized, for example,
-    .Bx 4.3 tahoe .
-  produces 4.3BSD-Tahoe.
 
 - In .Bl -tag, if a tag exceeds the right margin and must be continued
   on the next line, it must be indented by -width, not width+1;

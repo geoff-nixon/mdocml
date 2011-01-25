@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.143 2011/01/12 10:43:22 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.144 2011/01/13 14:30:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -832,19 +832,27 @@ mdoc_xx_pre(MDOC_ARGS)
 static int
 mdoc_bx_pre(MDOC_ARGS)
 {
-	const struct mdoc_node	*nn;
-	struct htmlpair		 tag;
+	struct htmlpair		tag;
 
 	PAIR_CLASS_INIT(&tag, "unix");
 	print_otag(h, TAG_SPAN, 1, &tag);
 
-	for (nn = n->child; nn; nn = nn->next)
-		print_mdoc_node(m, nn, h);
-
-	if (n->child)
+	if (NULL != (n = n->child)) {
+		print_text(h, n->string);
 		h->flags |= HTML_NOSPACE;
+		print_text(h, "BSD");
+	} else {
+		print_text(h, "BSD");
+		return(0);
+	}
 
-	print_text(h, "BSD");
+	if (NULL != (n = n->next)) {
+		h->flags |= HTML_NOSPACE;
+		print_text(h, "-");
+		h->flags |= HTML_NOSPACE;
+		print_text(h, n->string);
+	}
+
 	return(0);
 }
 

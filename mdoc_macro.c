@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.99 2010/12/15 23:39:40 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.100 2011/01/12 17:00:07 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1461,6 +1461,8 @@ in_line_argn(MACRO_PROT_ARGS)
 	case (MDOC_Ux):
 		maxargs = 0;
 		break;
+	case (MDOC_Bx):
+		/* FALLTHROUGH */
 	case (MDOC_Xr):
 		maxargs = 2;
 		break;

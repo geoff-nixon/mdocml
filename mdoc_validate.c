@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.85 2011/01/22 13:55:50 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.152 2011/01/22 14:00:52 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1665,8 +1665,8 @@ post_rs(POST_ARGS)
 				break;
 
 		if (i < RSORD_MAX) {
-			if (MDOC__J == rsord[i])
-				mdoc->last->norm->Rs.child_J = nn;
+			if (MDOC__J == rsord[i] || MDOC__B == rsord[i])
+				mdoc->last->norm->Rs.quote_T++;
 			next = nn->next;
 			continue;
 		}

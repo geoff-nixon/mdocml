@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.113 2010/12/26 14:44:13 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.114 2011/01/01 12:18:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -355,7 +355,7 @@ struct	mdoc_an {
 };
 
 struct	mdoc_rs {
-	struct mdoc_node *child_J; /* pointer to %J */
+	int		  quote_T; /* whether to quote %T */
 };
 
 /*

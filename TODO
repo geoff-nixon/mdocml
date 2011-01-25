@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.82 2011/01/23 15:35:10 schwarze Exp $
+* $Id: TODO,v 1.83 2011/01/24 01:34:56 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -264,11 +264,6 @@
     .Op Cm !\&
     .Xc
     The input text is appended after the specified line.
-
-- When we have both .%T and .%B in .Rs, .%T uses "", not underline, see
-  for example arp(4); admittedly, arp(4) is abusing both .%T and .%B,
-  but when dealing with anthologies, sensible use of of both in the
-  same .Rs can occur.
 
 - Header lines of excessive length:
   Port OpenBSD man_term.c rev. 1.25 to mdoc_term.c

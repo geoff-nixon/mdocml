@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.139 2011/01/22 13:16:02 schwarze Exp $ */
+/*	$Id: main.c,v 1.140 2011/01/24 23:41:55 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -656,6 +656,7 @@ pdesc(struct curparse *curp)
 static void
 parsebuf(struct curparse *curp, struct buf blk, int start)
 {
+	const struct tbl_span	*span;
 	struct buf	 ln;
 	enum rofferr	 rr;
 	int		 i, of, rc;
@@ -855,11 +856,12 @@ rerun:
 
 		if (ROFF_TBL == rr) {
 			assert(curp->man || curp->mdoc);
-			if (curp->man)
-				man_addspan(curp->man, roff_span(curp->roff));
-			else
-				mdoc_addspan(curp->mdoc, roff_span(curp->roff));
-
+			while (NULL != (span = roff_span(curp->roff))) {
+				if (curp->man)
+					man_addspan(curp->man, span);
+				else
+					mdoc_addspan(curp->mdoc, span);
+			}
 		} else if (curp->man || curp->mdoc) {
 			rc = curp->man ?
 				man_parseln(curp->man, 

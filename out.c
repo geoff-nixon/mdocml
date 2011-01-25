@@ -1,6 +1,6 @@
-/*	$Id: out.c,v 1.34 2011/01/10 15:31:00 kristaps Exp $ */
+/*	$Id: out.c,v 1.35 2011/01/11 14:12:01 kristaps Exp $ */
 /*
- * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -485,7 +485,7 @@ tblcalc_literal(struct rofftbl *tbl, struct roffcol *col,
 	case (TBL_CELL_LONG):
 		/* FALLTHROUGH */
 	case (TBL_CELL_CENTRE):
-		bufsz = (*tbl->len)(2, tbl->arg);
+		bufsz = (*tbl->len)(1, tbl->arg);
 		break;
 	default:
 		bufsz = (*tbl->len)(1, tbl->arg);

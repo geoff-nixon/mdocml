@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.38 2011/01/06 11:55:39 kristaps Exp $ */
+/*	$Id: html.h,v 1.39 2011/01/13 14:30:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -111,11 +111,12 @@ enum	htmltype {
 
 struct	html {
 	int		  flags;
-#define	HTML_NOSPACE	 (1 << 0)
+#define	HTML_NOSPACE	 (1 << 0) /* suppress next space */
 #define	HTML_IGNDELIM	 (1 << 1)
 #define	HTML_KEEP	 (1 << 2)
 #define	HTML_PREKEEP	 (1 << 3)
-#define	HTML_NONOSPACE	 (1 << 4)
+#define	HTML_NONOSPACE	 (1 << 4) /* never add spaces */
+#define	HTML_LITERAL	 (1 << 5) /* literal (e.g., <PRE>) context */
 	struct tagq	  tags; /* stack of open tags */
 	struct rofftbl	  tbl; /* current table */
 	struct tag	 *tblt; /* current open table scope */

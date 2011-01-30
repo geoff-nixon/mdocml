@@ -1,6 +1,6 @@
-/*	$Id: out.h,v 1.14 2010/07/21 20:35:03 kristaps Exp $ */
+/*	$Id: out.h,v 1.15 2011/01/05 15:37:23 kristaps Exp $ */
 /*
- * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -52,6 +52,7 @@ enum	roffscale {
 
 enum	roffdeco {
 	DECO_NONE,
+	DECO_NUMBERED, /* numbered character */
 	DECO_SPECIAL, /* special character */
 	DECO_SSPECIAL, /* single-char special */
 	DECO_RESERVED, /* reserved word */

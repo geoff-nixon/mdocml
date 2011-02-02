@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.52 2011/01/11 00:11:45 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.53 2011/01/12 15:50:42 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -68,6 +68,7 @@ enum	mandocerr {
 	/* related to macros and nesting */
 	MANDOCERR_MACROOBS, /* skipping obsolete macro */
 	MANDOCERR_IGNPAR, /* skipping paragraph macro */
+	MANDOCERR_IGNNS, /* skipping no-space macro */
 	MANDOCERR_SCOPENEST, /* blocks badly nested */
 	MANDOCERR_CHILD, /* child violates parent syntax */
 	MANDOCERR_NESTEDDISP, /* nested displays are not portable */

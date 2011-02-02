@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.153 2011/01/25 10:37:49 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.154 2011/01/25 15:46:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -104,6 +104,7 @@ static	int	 post_eoln(POST_ARGS);
 static	int	 post_it(POST_ARGS);
 static	int	 post_lb(POST_ARGS);
 static	int	 post_nm(POST_ARGS);
+static	int	 post_ns(POST_ARGS);
 static	int	 post_os(POST_ARGS);
 static	int	 post_ignpar(POST_ARGS);
 static	int	 post_prol(POST_ARGS);
@@ -148,6 +149,7 @@ static	v_post	 posts_lb[] = { post_lb, NULL };
 static	v_post	 posts_nd[] = { berr_ge1, NULL };
 static	v_post	 posts_nm[] = { post_nm, NULL };
 static	v_post	 posts_notext[] = { ewarn_eq0, NULL };
+static	v_post	 posts_ns[] = { post_ns, NULL };
 static	v_post	 posts_os[] = { post_os, post_prol, NULL };
 static	v_post	 posts_rs[] = { post_rs, NULL };
 static	v_post	 posts_sh[] = { post_ignpar, hwarn_ge1, bwarn_ge1, post_sh, NULL };
@@ -249,7 +251,7 @@ const	struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, NULL },				/* Fx */
 	{ NULL, NULL },				/* Ms */ 
 	{ NULL, posts_notext },			/* No */
-	{ NULL, posts_notext },			/* Ns */
+	{ NULL, posts_ns },			/* Ns */
 	{ NULL, NULL },				/* Nx */
 	{ NULL, NULL },				/* Ox */
 	{ NULL, NULL },				/* Pc */
@@ -1740,6 +1742,15 @@ post_rs(POST_ARGS)
 		}
 	}
 
+	return(1);
+}
+
+static int
+post_ns(POST_ARGS)
+{
+
+	if (MDOC_LINE & mdoc->last->flags)
+		mdoc_nmsg(mdoc, mdoc->last, MANDOCERR_IGNNS);
 	return(1);
 }
 

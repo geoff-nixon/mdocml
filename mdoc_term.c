@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.213 2011/01/25 15:46:05 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.214 2011/01/25 16:20:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1151,7 +1151,8 @@ static int
 termp_ns_pre(DECL_ARGS)
 {
 
-	p->flags |= TERMP_NOSPACE;
+	if ( ! (MDOC_LINE & n->flags))
+		p->flags |= TERMP_NOSPACE;
 	return(1);
 }
 

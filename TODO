@@ -1,11 +1,17 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.87 2011/01/31 12:52:43 kristaps Exp $
+* $Id: TODO,v 1.88 2011/02/02 21:40:45 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
 * parser bugs
 ************************************************************************
+
+- It should be noted that in mandoc, the TBL macros are interpreted as
+  real roff macros (e.g., `.  TS' is ok), while the troff preprocessor
+  only looks for `.TS' (static string).  This should be noted in the
+  COMPATIBILITY section.  The same applies for nascent `.EQ' (as it is
+  now, `.EN' is processed as a static string).
 
 - .TP before .SH is still FATAL in man(7)
   reported by brad@  Sat, 15 Jan 2011 15:54:54 -0500

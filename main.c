@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.141 2011/01/25 12:24:27 schwarze Exp $ */
+/*	$Id: main.c,v 1.142 2011/02/02 21:40:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -863,6 +863,8 @@ rerun:
 				else
 					mdoc_addspan(curp->mdoc, span);
 			}
+		} else if (ROFF_EQN == rr) {
+			assert(curp->man || curp->mdoc);
 		} else if (curp->man || curp->mdoc) {
 			rc = curp->man ?
 				man_parseln(curp->man, 

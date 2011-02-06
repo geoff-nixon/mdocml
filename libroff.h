@@ -1,4 +1,4 @@
-/*	$Id: libroff.h,v 1.16 2011/01/04 15:02:00 kristaps Exp $ */
+/*	$Id: libroff.h,v 1.17 2011/01/25 12:24:27 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -43,6 +43,13 @@ struct	tbl_node {
 	struct tbl_node	 *next;
 };
 
+struct	eqn_node {
+	int		  pos; /* invocation column */
+	int		  line; /* invocation line */
+	struct eqn	  eqn;
+	struct eqn_node	 *next;
+};
+
 #define	TBL_MSG(tblp, type, line, col) \
 	(*(tblp)->msg)((type), (tblp)->data, (line), (col), NULL)
 
@@ -57,6 +64,10 @@ int		 tbl_data(struct tbl_node *, int, const char *);
 int		 tbl_cdata(struct tbl_node *, int, const char *);
 const struct tbl_span	*tbl_span(struct tbl_node *);
 void		 tbl_end(struct tbl_node *);
+struct eqn_node	*eqn_alloc(int, int);
+void		 eqn_end(struct eqn_node *);
+void		 eqn_free(struct eqn_node *);
+enum rofferr 	 eqn_read(struct eqn_node **, int, const char *, int);
 
 __END_DECLS
 

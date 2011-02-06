@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.114 2011/01/01 12:18:37 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.115 2011/01/25 10:37:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -191,6 +191,7 @@ enum	mdoc_type {
 	MDOC_BODY,
 	MDOC_BLOCK,
 	MDOC_TBL,
+	MDOC_EQN,
 	MDOC_ROOT
 };
 

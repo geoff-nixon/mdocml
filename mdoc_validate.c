@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.154 2011/01/25 15:46:05 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.155 2011/02/02 21:40:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -337,6 +337,8 @@ mdoc_valid_pre(struct mdoc *mdoc, struct mdoc_node *n)
 		check_text(mdoc, line, pos, tp);
 		/* FALLTHROUGH */
 	case (MDOC_TBL):
+		/* FALLTHROUGH */
+	case (MDOC_EQN):
 		/* FALLTHROUGH */
 	case (MDOC_ROOT):
 		return(1);

@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.59 2011/01/12 16:55:22 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.60 2011/01/17 00:21:29 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -120,6 +120,8 @@ man_valid_pre(struct man *m, struct man_node *n)
 	case (MAN_TEXT):
 		/* FALLTHROUGH */
 	case (MAN_ROOT):
+		/* FALLTHROUGH */
+	case (MAN_EQN):
 		/* FALLTHROUGH */
 	case (MAN_TBL):
 		return(1);

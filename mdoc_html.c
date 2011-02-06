@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.149 2011/01/29 14:49:44 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.150 2011/02/02 21:40:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -431,6 +431,8 @@ print_mdoc_node(MDOC_ARGS)
 			if ( ! (HTML_LITERAL & h->flags))
 				print_otag(h, TAG_BR, 0, NULL);
 		print_text(h, n->string);
+		return;
+	case (MDOC_EQN):
 		return;
 	case (MDOC_TBL):
 		/*

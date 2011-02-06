@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.50 2011/01/01 12:59:17 kristaps Exp $ */
+/*	$Id: man.h,v 1.51 2011/01/12 10:43:22 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -67,7 +67,8 @@ enum	man_type {
 	MAN_BLOCK,
 	MAN_HEAD,
 	MAN_BODY,
-	MAN_TBL
+	MAN_TBL,
+	MAN_EQN
 };
 
 /* 

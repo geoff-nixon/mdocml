@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.66 2011/01/13 14:30:13 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.67 2011/01/17 00:21:29 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -214,6 +214,8 @@ print_man_node(MAN_ARGS)
 				(NULL == n->next ||
 				 n->next->line > n->line))
 			print_otag(h, TAG_BR, 0, NULL);
+		return;
+	case (MAN_EQN):
 		return;
 	case (MAN_TBL):
 		/*

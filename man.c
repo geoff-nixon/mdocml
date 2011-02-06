@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.96 2011/01/03 11:31:26 kristaps Exp $ */
+/*	$Id: man.c,v 1.97 2011/01/12 10:43:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -305,8 +305,7 @@ man_span_alloc(struct man *m, const struct tbl_span *span)
 {
 	struct man_node	*n;
 
-	/* FIXME: grab from span */
-	n = man_node_alloc(m, 0, 0, MAN_TBL, MAN_MAX);
+	n = man_node_alloc(m, span->line, 0, MAN_TBL, MAN_MAX);
 	n->span = span;
 
 	if ( ! man_node_append(m, n))

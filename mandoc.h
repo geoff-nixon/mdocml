@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.54 2011/02/02 21:40:45 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.55 2011/02/06 20:36:36 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -260,6 +260,7 @@ struct	tbl_span {
 	struct tbl_row	 *layout; /* layout row */
 	struct tbl_dat	 *first;
 	struct tbl_dat	 *last;
+	int		  line; /* parse line */
 	int		  flags;
 #define	TBL_SPAN_FIRST	 (1 << 0)
 #define	TBL_SPAN_LAST	 (1 << 1)

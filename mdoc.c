@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.176 2011/01/01 12:59:17 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.177 2011/01/03 11:27:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -551,8 +551,7 @@ mdoc_span_alloc(struct mdoc *m, const struct tbl_span *sp)
 {
 	struct mdoc_node *n;
 
-	/* FIXME: grab from tbl_span. */
-	n = node_alloc(m, 0, 0, MDOC_MAX, MDOC_TBL);
+	n = node_alloc(m, sp->line, 0, MDOC_MAX, MDOC_TBL);
 	n->span = sp;
 
 	if ( ! node_append(m, n))

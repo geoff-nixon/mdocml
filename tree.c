@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.32 2011/01/10 14:40:30 kristaps Exp $ */
+/*	$Id: tree.c,v 1.33 2011/02/06 21:44:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -266,8 +266,6 @@ print_span(const struct tbl_span *sp, int indent)
 	for (i = 0; i < indent; i++)
 		putchar('\t');
 
-	printf("tbl: ");
-
 	switch (sp->pos) {
 	case (TBL_SPAN_HORIZ):
 		putchar('-');
@@ -300,7 +298,8 @@ print_span(const struct tbl_span *sp, int indent)
 		if (NULL == dp->layout)
 			putchar('*');
 		putchar(']');
-		if (dp->next)
-			putchar(' ');
+		putchar(' ');
 	}
+
+	printf("(tbl) %d:1", sp->line);
 }

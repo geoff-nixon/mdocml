@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.97 2011/01/12 10:43:22 kristaps Exp $ */
+/*	$Id: man.c,v 1.98 2011/02/06 22:02:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -371,7 +371,7 @@ man_addspan(struct man *m, const struct tbl_span *sp)
 	assert( ! (MAN_HALT & m->flags));
 	if ( ! man_span_alloc(m, sp))
 		return(0);
-	return(man_descope(m, 0, 0));
+	return(man_descope(m, sp->line, 0));
 }
 
 static int

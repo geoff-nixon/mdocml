@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.177 2011/01/03 11:27:33 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.178 2011/02/06 22:02:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -233,8 +233,7 @@ mdoc_addspan(struct mdoc *m, const struct tbl_span *sp)
 	/* No text before an initial macro. */
 
 	if (SEC_NONE == m->lastnamed) {
-		/* FIXME: grab from span. */
-		mdoc_pmsg(m, 0, 0, MANDOCERR_NOTEXT);
+		mdoc_pmsg(m, sp->line, 0, MANDOCERR_NOTEXT);
 		return(1);
 	}
 

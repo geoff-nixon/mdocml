@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.178 2011/02/06 22:02:58 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.179 2011/02/06 22:05:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -98,9 +98,6 @@ static	int		  node_append(struct mdoc *,
 				struct mdoc_node *);
 static	int		  mdoc_ptext(struct mdoc *, int, char *, int);
 static	int		  mdoc_pmacro(struct mdoc *, int, char *, int);
-static	int		  mdoc_span_alloc(struct mdoc *, 
-				const struct tbl_span *);
-
 
 const struct mdoc_node *
 mdoc_node(const struct mdoc *m)
@@ -227,6 +224,7 @@ mdoc_endparse(struct mdoc *m)
 int
 mdoc_addspan(struct mdoc *m, const struct tbl_span *sp)
 {
+	struct mdoc_node *n;
 
 	assert( ! (MDOC_HALT & m->flags));
 
@@ -237,7 +235,14 @@ mdoc_addspan(struct mdoc *m, const struct tbl_span *sp)
 		return(1);
 	}
 
-	return(mdoc_span_alloc(m, sp));
+	n = node_alloc(m, sp->line, 0, MDOC_MAX, MDOC_TBL);
+	n->span = sp;
+
+	if ( ! node_append(m, n))
+		return(0);
+
+	m->next = MDOC_NEXT_SIBLING;
+	return(1);
 }
 
 
@@ -544,22 +549,6 @@ mdoc_elem_alloc(struct mdoc *m, int line, int pos,
 	m->next = MDOC_NEXT_CHILD;
 	return(1);
 }
-
-static int
-mdoc_span_alloc(struct mdoc *m, const struct tbl_span *sp)
-{
-	struct mdoc_node *n;
-
-	n = node_alloc(m, sp->line, 0, MDOC_MAX, MDOC_TBL);
-	n->span = sp;
-
-	if ( ! node_append(m, n))
-		return(0);
-
-	m->next = MDOC_NEXT_SIBLING;
-	return(1);
-}
-
 
 int
 mdoc_word_alloc(struct mdoc *m, int line, int pos, const char *p)

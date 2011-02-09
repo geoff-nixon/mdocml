@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.67 2011/01/17 00:21:29 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.68 2011/02/06 21:44:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -180,6 +180,7 @@ print_man_node(MAN_ARGS)
 {
 	int		 child;
 	struct tag	*t;
+	struct htmlpair	 tag;
 
 	child = 1;
 	t = h->tags.head;
@@ -216,7 +217,10 @@ print_man_node(MAN_ARGS)
 			print_otag(h, TAG_BR, 0, NULL);
 		return;
 	case (MAN_EQN):
-		return;
+		PAIR_CLASS_INIT(&tag, "eqn");
+		print_otag(h, TAG_SPAN, 1, &tag);
+		print_text(h, n->eqn->data);
+		break;
 	case (MAN_TBL):
 		/*
 		 * This will take care of initialising all of the table
@@ -260,6 +264,8 @@ print_man_node(MAN_ARGS)
 	switch (n->type) {
 	case (MAN_ROOT):
 		man_root_post(m, n, mh, h);
+		break;
+	case (MAN_EQN):
 		break;
 	default:
 		if (mans[n->tok].post)

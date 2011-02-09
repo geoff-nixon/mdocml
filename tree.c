@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.33 2011/02/06 21:44:36 kristaps Exp $ */
+/*	$Id: tree.c,v 1.34 2011/02/06 22:02:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -132,7 +132,7 @@ print_mdoc(const struct mdoc_node *n, int indent)
 	case (MDOC_TBL):
 		break;
 	case (MDOC_EQN):
-		p = "eqn";
+		p = n->eqn->data;
 		break;
 	case (MDOC_ROOT):
 		p = "root";

@@ -1,4 +1,4 @@
-/*	$Id: libroff.h,v 1.17 2011/01/25 12:24:27 schwarze Exp $ */
+/*	$Id: libroff.h,v 1.18 2011/02/06 20:36:36 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -44,8 +44,6 @@ struct	tbl_node {
 };
 
 struct	eqn_node {
-	int		  pos; /* invocation column */
-	int		  line; /* invocation line */
 	struct eqn	  eqn;
 	struct eqn_node	 *next;
 };

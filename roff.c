@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.124 2011/01/25 01:12:02 schwarze Exp $ */
+/*	$Id: roff.c,v 1.125 2011/02/06 20:36:36 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -560,7 +560,7 @@ roff_endparse(struct roff *r)
 
 	if (r->eqn) {
 		(*r->msg)(MANDOCERR_SCOPEEXIT, r->data, 
-				r->eqn->line, r->eqn->pos, NULL);
+				r->eqn->eqn.line, r->eqn->eqn.pos, NULL);
 		eqn_end(r->eqn);
 		r->eqn = NULL;
 	}

@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.60 2011/01/17 00:21:29 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.61 2011/02/06 21:44:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -152,6 +152,8 @@ man_valid_post(struct man *m)
 		return(check_text(m, m->last));
 	case (MAN_ROOT):
 		return(check_root(m, m->last));
+	case (MAN_EQN):
+		/* FALLTHROUGH */
 	case (MAN_TBL):
 		return(1);
 	default:

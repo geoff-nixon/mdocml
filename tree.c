@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.34 2011/02/06 22:02:58 kristaps Exp $ */
+/*	$Id: tree.c,v 1.35 2011/02/09 09:05:52 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -233,7 +233,7 @@ print_man(const struct man_node *n, int indent)
 	case (MAN_TBL):
 		break;
 	case (MAN_EQN):
-		p = "eqn";
+		p = n->eqn->data;
 		break;
 	default:
 		abort();

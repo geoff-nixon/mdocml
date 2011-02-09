@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.51 2011/01/12 10:43:22 kristaps Exp $ */
+/*	$Id: man.h,v 1.52 2011/02/06 21:44:36 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -104,6 +104,7 @@ struct	man_node {
 	struct man_node	*head; /* BLOCK node HEAD ptr */
 	struct man_node	*body; /* BLOCK node BODY ptr */
 	const struct tbl_span *span; /* TBL */
+	const struct eqn *eqn; /* EQN */
 };
 
 /*
@@ -123,6 +124,7 @@ int	 	  man_parseln(struct man *, int, char *, int);
 int		  man_endparse(struct man *);
 int		  man_addspan(struct man *,
 			const struct tbl_span *);
+int		  man_addeqn(struct man *, const struct eqn *);
 
 const struct man_node *man_node(const struct man *);
 const struct man_meta *man_meta(const struct man *);

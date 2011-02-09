@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.55 2011/02/06 20:36:36 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.56 2011/02/06 22:02:58 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -271,6 +271,8 @@ struct	tbl_span {
 struct	eqn {
 	size_t		  sz;
 	char		 *data;
+	int		  line; /* invocation line */
+	int		  pos; /* invocation position */
 };
 
 /*

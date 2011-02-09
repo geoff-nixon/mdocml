@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.22 2011/01/25 12:24:27 schwarze Exp $ */
+/*	$Id: eqn.c,v 1.1 2011/02/06 20:36:36 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -59,8 +59,8 @@ eqn_alloc(int pos, int line)
 	struct eqn_node	*p;
 
 	p = mandoc_calloc(1, sizeof(struct eqn_node));
-	p->line = line;
-	p->pos = pos;
+	p->eqn.line = line;
+	p->eqn.pos = pos;
 
 	return(p);
 }

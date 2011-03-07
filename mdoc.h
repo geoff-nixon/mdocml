@@ -1,6 +1,6 @@
-/*	$Id: mdoc.h,v 1.116 2011/02/06 21:44:36 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.117 2011/02/09 09:05:52 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -232,7 +232,7 @@ struct	mdoc_meta {
 	char		 *msec; /* `Dt' section (1, 3p, etc.) */
 	char		 *vol; /* `Dt' volume (implied) */
 	char		 *arch; /* `Dt' arch (i386, etc.) */
-	time_t		  date; /* `Dd' normalised date */
+	char		 *date; /* `Dd' normalised date */
 	char		 *title; /* `Dt' title (FOO, etc.) */
 	char		 *os; /* `Os' system (OpenBSD, etc.) */
 	char		 *name; /* leading `Nm' name */

@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.102 2011/02/06 21:44:36 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.103 2011/02/09 09:52:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -946,24 +946,18 @@ print_man_nodelist(DECL_ARGS)
 static void
 print_man_foot(struct termp *p, const void *arg)
 {
-	char		buf[DATESIZ];
 	const struct man_meta *meta;
 
 	meta = (const struct man_meta *)arg;
 
 	term_fontrepl(p, TERMFONT_NONE);
 
-	if (meta->rawdate)
-		strlcpy(buf, meta->rawdate, DATESIZ);
-	else
-		time2a(meta->date, buf, DATESIZ);
-
 	term_vspace(p);
 	term_vspace(p);
 	term_vspace(p);
 
 	p->flags |= TERMP_NOSPACE | TERMP_NOBREAK;
-	p->rmargin = p->maxrmargin - term_strlen(p, buf);
+	p->rmargin = p->maxrmargin - term_strlen(p, meta->date);
 	p->offset = 0;
 
 	/* term_strlen() can return zero. */
@@ -981,7 +975,7 @@ print_man_foot(struct termp *p, const void *arg)
 	p->rmargin = p->maxrmargin;
 	p->flags &= ~TERMP_NOBREAK;
 
-	term_word(p, buf);
+	term_word(p, meta->date);
 	term_flushln(p);
 }
 

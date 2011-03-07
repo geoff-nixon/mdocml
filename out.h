@@ -1,4 +1,4 @@
-/*	$Id: out.h,v 1.15 2011/01/05 15:37:23 kristaps Exp $ */
+/*	$Id: out.h,v 1.16 2011/01/30 16:05:37 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -16,8 +16,6 @@
  */
 #ifndef OUT_H
 #define OUT_H
-
-#define	DATESIZ		24
 
 __BEGIN_DECLS
 

@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.147 2011/03/07 01:35:51 schwarze Exp $ */
+/*	$Id: main.c,v 1.148 2011/03/15 13:24:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -42,7 +42,6 @@
 #endif
 
 #define	REPARSE_LIMIT	1000
-#define	UNCONST(a)	((void *)(uintptr_t)(const void *)(a))
 
 /* FIXME: Intel's compiler?  LLVM?  pcc?  */
 

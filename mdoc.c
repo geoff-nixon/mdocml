@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.181 2011/02/09 09:05:52 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.182 2011/03/07 01:35:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -138,6 +138,8 @@ mdoc_free1(struct mdoc *mdoc)
 		free(mdoc->meta.vol);
 	if (mdoc->meta.msec)
 		free(mdoc->meta.msec);
+	if (mdoc->meta.date)
+		free(mdoc->meta.date);
 }
 
 

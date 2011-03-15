@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.125 2011/01/13 14:30:13 kristaps Exp $ */
+/*	$Id: html.c,v 1.126 2011/01/30 16:05:37 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -214,7 +214,7 @@ print_gen_head(struct html *h)
 	}
 }
 
-
+/* ARGSUSED */
 static void
 print_num(struct html *h, const char *p, size_t len)
 {
@@ -224,7 +224,6 @@ print_num(struct html *h, const char *p, size_t len)
 	if (rhs)
 		putchar((int)*rhs);
 }
-
 
 static void
 print_spec(struct html *h, enum roffdeco d, const char *p, size_t len)

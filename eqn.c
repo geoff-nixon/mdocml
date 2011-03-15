@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.1 2011/02/06 20:36:36 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.2 2011/02/09 09:05:52 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -65,6 +65,7 @@ eqn_alloc(int pos, int line)
 	return(p);
 }
 
+/* ARGSUSED */
 void
 eqn_end(struct eqn_node *e)
 {

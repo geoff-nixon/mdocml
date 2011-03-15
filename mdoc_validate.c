@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.157 2011/02/09 09:18:15 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.158 2011/03/07 01:35:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -2127,7 +2127,8 @@ post_bx(POST_ARGS)
 
 	n = mdoc->last->child;
 	if (n && NULL != (n = n->next))
-		*n->string = toupper((unsigned char)*n->string);
+		*n->string = (char)toupper
+			((unsigned char)*n->string);
 
 	return(1);
 }

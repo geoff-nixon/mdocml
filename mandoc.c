@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.37 2011/03/07 01:35:51 schwarze Exp $ */
+/*	$Id: mandoc.c,v 1.38 2011/03/15 03:03:54 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -354,7 +354,7 @@ mandoc_getarg(char **cpp, mandocmsg msg, void *data, int ln, int *pos)
 		while (' ' == *cp)
 			cp++;
 	}
-	*pos += (cp - start) + (quoted ? 1 : 0);
+	*pos += (int)(cp - start) + (quoted ? 1 : 0);
 	*cpp = cp;
 
 	if ('\0' == *cp && msg && (white || ' ' == cp[-1]))

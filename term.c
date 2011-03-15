@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.176 2011/01/04 13:14:26 kristaps Exp $ */
+/*	$Id: term.c,v 1.177 2011/01/30 16:05:37 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -514,7 +514,7 @@ term_word(struct termp *p, const char *word)
 		if ((ssz = strcspn(word, "\\")) > 0)
 			encode(p, word, ssz);
 
-		word += ssz;
+		word += (int)ssz;
 		if ('\\' != *word)
 			continue;
 

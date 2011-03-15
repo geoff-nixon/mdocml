@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.148 2011/03/15 13:24:42 kristaps Exp $ */
+/*	$Id: main.c,v 1.149 2011/03/15 16:15:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -806,7 +806,7 @@ rerun:
 			pos = 0;
 			continue;
 		case (ROFF_APPEND):
-			pos = strlen(ln.buf);
+			pos = (int)strlen(ln.buf);
 			continue;
 		case (ROFF_RERUN):
 			goto rerun;

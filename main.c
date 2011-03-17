@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.150 2011/03/15 16:23:51 kristaps Exp $ */
+/*	$Id: main.c,v 1.151 2011/03/16 15:28:35 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -405,11 +405,7 @@ resize_buf(struct buf *buf, size_t initial)
 {
 
 	buf->sz = buf->sz > initial/2 ? 2 * buf->sz : initial;
-	buf->buf = realloc(buf->buf, buf->sz);
-	if (NULL == buf->buf) {
-		perror(NULL);
-		exit((int)MANDOCLEVEL_SYSERR);
-	}
+	buf->buf = mandoc_realloc(buf->buf, buf->sz);
 }
 
 

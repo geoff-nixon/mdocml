@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.127 2011/03/15 16:23:51 kristaps Exp $ */
+/*	$Id: html.c,v 1.128 2011/03/17 08:49:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -514,29 +514,9 @@ void
 print_text(struct html *h, const char *word)
 {
 
-	if (word[0] && '\0' == word[1])
-		switch (word[0]) {
-		case('.'):
-			/* FALLTHROUGH */
-		case(','):
-			/* FALLTHROUGH */
-		case(';'):
-			/* FALLTHROUGH */
-		case(':'):
-			/* FALLTHROUGH */
-		case('?'):
-			/* FALLTHROUGH */
-		case('!'):
-			/* FALLTHROUGH */
-		case(')'):
-			/* FALLTHROUGH */
-		case(']'):
-			if ( ! (HTML_IGNDELIM & h->flags))
-				h->flags |= HTML_NOSPACE;
-			break;
-		default:
-			break;
-		}
+	if (DELIM_CLOSE == mandoc_isdelim(word))
+		if ( ! (HTML_IGNDELIM & h->flags))
+			h->flags |= HTML_NOSPACE;
 
 	if ( ! (HTML_NOSPACE & h->flags)) {
 		/* Manage keeps! */
@@ -566,20 +546,8 @@ print_text(struct html *h, const char *word)
 
 	h->flags &= ~HTML_IGNDELIM;
 
-	/* 
-	 * Note that we don't process the pipe: the parser sees it as
-	 * punctuation, but we don't in terms of typography.
-	 */
-	if (word[0] && '\0' == word[1])
-		switch (word[0]) {
-		case('('):
-			/* FALLTHROUGH */
-		case('['):
-			h->flags |= HTML_NOSPACE;
-			break;
-		default:
-			break;
-		}
+	if (DELIM_OPEN == mandoc_isdelim(word))
+		h->flags |= HTML_NOSPACE;
 }
 
 

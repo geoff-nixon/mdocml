@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.24 2010/07/31 23:52:58 schwarze Exp $ */
+/*	$Id: mdoc_strings.c,v 1.25 2011/03/17 01:23:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -53,50 +53,6 @@ static	const char * const secnames[SEC__MAX] = {
 	"SECURITY CONSIDERATIONS",
 	NULL
 };
-
-enum mdelim
-mdoc_isdelim(const char *p)
-{
-
-	if ('\0' == p[0])
-		return(DELIM_NONE);
-
-	if ('\0' == p[1])
-		switch (p[0]) {
-		case('('):
-			/* FALLTHROUGH */
-		case('['):
-			return(DELIM_OPEN);
-		case('|'):
-			return(DELIM_MIDDLE);
-		case('.'):
-			/* FALLTHROUGH */
-		case(','):
-			/* FALLTHROUGH */
-		case(';'):
-			/* FALLTHROUGH */
-		case(':'):
-			/* FALLTHROUGH */
-		case('?'):
-			/* FALLTHROUGH */
-		case('!'):
-			/* FALLTHROUGH */
-		case(')'):
-			/* FALLTHROUGH */
-		case(']'):
-			return(DELIM_CLOSE);
-		default:
-			return(DELIM_NONE);
-		}
-
-	/*
-	 * XXX; account for groff bubu where the \*(Ba reserved string
-	 * is treated in exactly the same way as the vertical bar.  This
-	 * is the only function that checks for this.
-	 */
-	return(strcmp(p, "\\*(Ba") ? DELIM_NONE : DELIM_MIDDLE);
-}
-
 
 enum mdoc_sec 
 mdoc_str2sec(const char *p)

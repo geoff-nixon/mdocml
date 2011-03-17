@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.178 2011/03/15 16:23:51 kristaps Exp $ */
+/*	$Id: term.c,v 1.179 2011/03/17 08:49:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -463,29 +463,9 @@ term_word(struct termp *p, const char *word)
 
 	sv = word;
 
-	if (word[0] && '\0' == word[1])
-		switch (word[0]) {
-		case('.'):
-			/* FALLTHROUGH */
-		case(','):
-			/* FALLTHROUGH */
-		case(';'):
-			/* FALLTHROUGH */
-		case(':'):
-			/* FALLTHROUGH */
-		case('?'):
-			/* FALLTHROUGH */
-		case('!'):
-			/* FALLTHROUGH */
-		case(')'):
-			/* FALLTHROUGH */
-		case(']'):
-			if ( ! (TERMP_IGNDELIM & p->flags))
-				p->flags |= TERMP_NOSPACE;
-			break;
-		default:
-			break;
-		}
+	if (DELIM_CLOSE == mandoc_isdelim(word))
+		if ( ! (TERMP_IGNDELIM & p->flags))
+			p->flags |= TERMP_NOSPACE;
 
 	if ( ! (TERMP_NOSPACE & p->flags)) {
 		if ( ! (TERMP_KEEP & p->flags)) {
@@ -548,20 +528,8 @@ term_word(struct termp *p, const char *word)
 			p->flags |= TERMP_NOSPACE;
 	}
 
-	/* 
-	 * Note that we don't process the pipe: the parser sees it as
-	 * punctuation, but we don't in terms of typography.
-	 */
-	if (sv[0] && '\0' == sv[1])
-		switch (sv[0]) {
-		case('('):
-			/* FALLTHROUGH */
-		case('['):
-			p->flags |= TERMP_NOSPACE;
-			break;
-		default:
-			break;
-		}
+	if (DELIM_OPEN == mandoc_isdelim(sv))
+		p->flags |= TERMP_NOSPACE;
 }
 
 

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.39 2011/03/15 16:23:51 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.40 2011/03/17 09:16:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -549,9 +549,9 @@ mandoc_isdelim(const char *p)
 	if ('\\' != p[0])
 		return(DELIM_NONE);
 
-	if (0 == strcmp(p, "\\."))
+	if (0 == strcmp(p + 1, "."))
 		return(DELIM_CLOSE);
-	if (0 == strcmp(p, "\\*(Ba"))
+	if (0 == strcmp(p + 1, "*(Ba"))
 		return(DELIM_MIDDLE);
 
 	return(DELIM_NONE);

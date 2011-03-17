@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.62 2010/08/20 01:02:07 schwarze Exp $ */
+/*	$Id: libmdoc.h,v 1.63 2010/11/30 13:04:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -114,7 +114,7 @@ int		  mdoc_endbody_alloc(struct mdoc *m, int line, int pos,
 void		  mdoc_node_delete(struct mdoc *, struct mdoc_node *);
 void		  mdoc_hash_init(void);
 enum mdoct	  mdoc_hash_find(const char *);
-enum mdelim	  mdoc_iscdelim(char);
+#define	DELIMSZ	  6 /* maximum size of a delimiter string */
 enum mdelim	  mdoc_isdelim(const char *);
 size_t		  mdoc_isescape(const char *);
 enum	mdoc_sec  mdoc_str2sec(const char *);

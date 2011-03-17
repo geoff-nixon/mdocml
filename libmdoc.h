@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.66 2011/03/17 09:22:39 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.67 2011/03/17 09:28:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -89,7 +89,7 @@ __BEGIN_DECLS
 		  (*(m)->msg)((t), (m)->data, (l), (p), NULL)
 #define		  mdoc_nmsg(m, n, t) \
 		  (*(m)->msg)((t), (m)->data, (n)->line, (n)->pos, NULL)
-int		  mdoc_vmsg(struct mdoc *, enum mandocerr, 
+void		  mdoc_vmsg(struct mdoc *, enum mandocerr, 
 			int, int, const char *, ...);
 int		  mdoc_macro(MACRO_PROT_ARGS);
 int		  mdoc_word_alloc(struct mdoc *, 

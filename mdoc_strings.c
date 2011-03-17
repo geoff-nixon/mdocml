@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.25 2011/03/17 01:23:29 kristaps Exp $ */
+/*	$Id: mdoc_strings.c,v 1.26 2011/03/17 09:16:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -28,44 +28,6 @@
 
 #include "mandoc.h"
 #include "libmdoc.h"
-
-static	const char * const secnames[SEC__MAX] = {
-	NULL,
-	"NAME",
-	"LIBRARY",
-	"SYNOPSIS",
-	"DESCRIPTION",
-	"IMPLEMENTATION NOTES",
-	"RETURN VALUES",
-	"ENVIRONMENT",
-	"FILES",
-	"EXIT STATUS",
-	"EXAMPLES",
-	"DIAGNOSTICS",
-	"COMPATIBILITY",
-	"ERRORS",
-	"SEE ALSO",
-	"STANDARDS",
-	"HISTORY",
-	"AUTHORS",
-	"CAVEATS",
-	"BUGS",
-	"SECURITY CONSIDERATIONS",
-	NULL
-};
-
-enum mdoc_sec 
-mdoc_str2sec(const char *p)
-{
-	int		 i;
-
-	for (i = 0; i < (int)SEC__MAX; i++) 
-		if (secnames[i] && 0 == strcmp(p, secnames[i]))
-			return((enum mdoc_sec)i);
-
-	return(SEC_CUSTOM);
-}
-
 
 /* FIXME: move this into an editable .in file. */
 size_t

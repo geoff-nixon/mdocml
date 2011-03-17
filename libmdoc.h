@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.64 2011/03/17 01:23:28 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.65 2011/03/17 09:16:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -108,7 +108,6 @@ void		  mdoc_node_delete(struct mdoc *, struct mdoc_node *);
 void		  mdoc_hash_init(void);
 enum mdoct	  mdoc_hash_find(const char *);
 size_t		  mdoc_isescape(const char *);
-enum	mdoc_sec  mdoc_str2sec(const char *);
 time_t		  mdoc_atotime(const char *);
 size_t		  mdoc_macro2len(enum mdoct);
 const char	 *mdoc_a2att(const char *);

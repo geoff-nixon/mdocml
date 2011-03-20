@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.153 2011/03/17 12:08:01 kristaps Exp $ */
+/*	$Id: read.c,v 1.1 2011/03/20 11:41:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,8 +15,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include <sys/mman.h>
 #include <sys/stat.h>
+#include <sys/mman.h>
 
 #include <assert.h>
 #include <ctype.h>

@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.154 2011/03/20 11:41:24 kristaps Exp $ */
+/*	$Id: main.c,v 1.155 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -54,7 +54,6 @@ enum	outt {
 
 struct	curparse {
 	struct mparse	 *mp;
-	const char	 *file;		/* current file-name */
 	enum mandoclevel  wlevel;	/* ignore messages below this */
 	int		  wstop;	/* stop after a file with a warning */
 	enum outt	  outtype; 	/* which output to use */
@@ -182,8 +181,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"static buffer exhausted",
 };
 
-static	void		  evt_close(void *, const char *);
-static	int		  evt_open(void *, const char *);
 static	int		  moptions(enum mparset *, char *);
 static	void		  mmsg(enum mandocerr, enum mandoclevel,
 				const char *, int, int, const char *);
@@ -243,7 +240,7 @@ main(int argc, char *argv[])
 			/* NOTREACHED */
 		}
 
-	curp.mp = mparse_alloc(type, evt_open, evt_close, curp.wlevel, mmsg, &curp);
+	curp.mp = mparse_alloc(type, curp.wlevel, mmsg, &curp);
 
 	argc -= optind;
 	argv += optind;
@@ -291,23 +288,6 @@ usage(void)
 			progname);
 
 	exit((int)MANDOCLEVEL_BADARG);
-}
-
-static int
-evt_open(void *arg, const char *file)
-{
-
-	evt_close(arg, file);
-	return(1);
-}
-
-static void
-evt_close(void *arg, const char *file)
-{
-	struct curparse	*p;
-
-	p = (struct curparse *)arg;
-	p->file = file;
 }
 
 static void

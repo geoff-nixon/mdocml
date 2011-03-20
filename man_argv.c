@@ -1,4 +1,4 @@
-/*	$Id: man_argv.c,v 1.4 2010/06/19 20:46:28 kristaps Exp $ */
+/*	$Id: man_argv.c,v 1.5 2011/01/03 22:42:37 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -39,6 +39,6 @@ man_args(struct man *m, int line, int *pos, char *buf, char **v)
 	if ('\0' == *start)
 		return(ARGS_EOLN);
 
-	*v = mandoc_getarg(v, m->msg, m->data, line, pos);
+	*v = mandoc_getarg(m->parse, v, line, pos);
 	return('"' == *start ? ARGS_QWORD : ARGS_WORD);
 }

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.117 2011/02/09 09:05:52 kristaps Exp $ */
+/*	$Id: mdoc.h,v 1.118 2011/03/07 01:35:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -424,7 +424,7 @@ __BEGIN_DECLS
 struct	mdoc;
 
 void	 	  mdoc_free(struct mdoc *);
-struct	mdoc	 *mdoc_alloc(struct regset *, void *, mandocmsg);
+struct	mdoc	 *mdoc_alloc(struct regset *, struct mparse *);
 void		  mdoc_reset(struct mdoc *);
 int	 	  mdoc_parseln(struct mdoc *, int, char *, int);
 const struct mdoc_node *mdoc_node(const struct mdoc *);

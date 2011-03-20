@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.55 2011/01/12 16:55:22 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.56 2011/03/17 11:56:17 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -24,6 +24,7 @@
 #include <string.h>
 
 #include "mandoc.h"
+#include "libmandoc.h"
 #include "libman.h"
 
 enum	rew {

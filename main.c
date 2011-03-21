@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.155 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: main.c,v 1.156 2011/03/20 16:05:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -30,7 +30,6 @@
 #include "main.h"
 #include "mdoc.h"
 #include "man.h"
-#include "roff.h"
 
 #if !defined(__GNUC__) || (__GNUC__ < 2)
 # if !defined(lint)

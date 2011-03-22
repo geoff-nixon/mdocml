@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.68 2011/03/17 10:59:27 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.69 2011/03/17 11:09:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -557,7 +557,7 @@ args_checkpunct(struct mdoc *m, const char *buf, int i, int ln, int fl)
 		return(0);
 
 	dbuf[j] = '\0';
-	if (DELIM_CLOSE != mandoc_isdelim(dbuf))
+	if (DELIM_CLOSE != mdoc_isdelim(dbuf))
 		return(0);
 
 	while (' ' == buf[i])
@@ -574,7 +574,7 @@ args_checkpunct(struct mdoc *m, const char *buf, int i, int ln, int fl)
 			return(0);
 
 		dbuf[j] = '\0';
-		d = mandoc_isdelim(dbuf);
+		d = mdoc_isdelim(dbuf);
 		if (DELIM_NONE == d || DELIM_OPEN == d)
 			return(0);
 

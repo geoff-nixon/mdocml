@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.129 2011/03/17 09:16:38 kristaps Exp $ */
+/*	$Id: html.c,v 1.130 2011/03/22 10:13:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -508,14 +508,9 @@ print_doctype(struct html *h)
 			name, doctype, dtd);
 }
 
-
 void
 print_text(struct html *h, const char *word)
 {
-
-	if (DELIM_CLOSE == mandoc_isdelim(word))
-		if ( ! (HTML_IGNDELIM & h->flags))
-			h->flags |= HTML_NOSPACE;
 
 	if ( ! (HTML_NOSPACE & h->flags)) {
 		/* Manage keeps! */
@@ -544,9 +539,6 @@ print_text(struct html *h, const char *word)
 	}
 
 	h->flags &= ~HTML_IGNDELIM;
-
-	if (DELIM_OPEN == mandoc_isdelim(word))
-		h->flags |= HTML_NOSPACE;
 }
 
 

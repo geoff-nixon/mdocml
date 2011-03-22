@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.41 2011/03/17 09:18:12 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.42 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -506,53 +506,3 @@ mandoc_hyph(const char *start, const char *c)
 	return(1);
 }
 
-/*
- * Check if a string is a punctuation delimiter.  This only applies to
- * mdoc(7) documents, but as it's used in both front-ends and back-ends,
- * it needs to go here (instead of, say, in libmdoc.h).
- */
-enum mdelim
-mandoc_isdelim(const char *p)
-{
-
-	if ('\0' == p[0])
-		return(DELIM_NONE);
-
-	if ('\0' == p[1])
-		switch (p[0]) {
-		case('('):
-			/* FALLTHROUGH */
-		case('['):
-			return(DELIM_OPEN);
-		case('|'):
-			return(DELIM_MIDDLE);
-		case('.'):
-			/* FALLTHROUGH */
-		case(','):
-			/* FALLTHROUGH */
-		case(';'):
-			/* FALLTHROUGH */
-		case(':'):
-			/* FALLTHROUGH */
-		case('?'):
-			/* FALLTHROUGH */
-		case('!'):
-			/* FALLTHROUGH */
-		case(')'):
-			/* FALLTHROUGH */
-		case(']'):
-			return(DELIM_CLOSE);
-		default:
-			return(DELIM_NONE);
-		}
-
-	if ('\\' != p[0])
-		return(DELIM_NONE);
-
-	if (0 == strcmp(p + 1, "."))
-		return(DELIM_CLOSE);
-	if (0 == strcmp(p + 1, "*(Ba"))
-		return(DELIM_MIDDLE);
-
-	return(DELIM_NONE);
-}

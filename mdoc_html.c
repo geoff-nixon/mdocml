@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.153 2011/02/09 09:52:47 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.154 2011/03/07 01:35:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -431,7 +431,11 @@ print_mdoc_node(MDOC_ARGS)
 		if (' ' == *n->string && MDOC_LINE & n->flags)
 			if ( ! (HTML_LITERAL & h->flags))
 				print_otag(h, TAG_BR, 0, NULL);
+		if (MDOC_DELIMC & n->flags)
+			h->flags |= HTML_NOSPACE;
 		print_text(h, n->string);
+		if (MDOC_DELIMO & n->flags)
+			h->flags |= HTML_NOSPACE;
 		return;
 	case (MDOC_EQN):
 		PAIR_CLASS_INIT(&tag, "eqn");
@@ -1381,12 +1385,16 @@ mdoc_fa_pre(MDOC_ARGS)
 		t = print_otag(h, TAG_I, 1, &tag);
 		print_text(h, nn->string);
 		print_tagq(h, t);
-		if (nn->next)
+		if (nn->next) {
+			h->flags |= HTML_NOSPACE;
 			print_text(h, ",");
+		}
 	}
 
-	if (n->child && n->next && n->next->tok == MDOC_Fa)
+	if (n->child && n->next && n->next->tok == MDOC_Fa) {
+		h->flags |= HTML_NOSPACE;
 		print_text(h, ",");
+	}
 
 	return(0);
 }
@@ -1514,13 +1522,19 @@ mdoc_fn_pre(MDOC_ARGS)
 		t = print_otag(h, TAG_I, i, tag);
 		print_text(h, nn->string);
 		print_tagq(h, t);
-		if (nn->next)
+		if (nn->next) {
+			h->flags |= HTML_NOSPACE;
 			print_text(h, ",");
+		}
 	}
 
+	h->flags |= HTML_NOSPACE;
 	print_text(h, ")");
-	if (MDOC_SYNPRETTY & n->flags)
+
+	if (MDOC_SYNPRETTY & n->flags) {
+		h->flags |= HTML_NOSPACE;
 		print_text(h, ";");
+	}
 
 	return(0);
 }
@@ -1671,7 +1685,9 @@ mdoc_fo_post(MDOC_ARGS)
 
 	if (MDOC_BODY != n->type)
 		return;
+	h->flags |= HTML_NOSPACE;
 	print_text(h, ")");
+	h->flags |= HTML_NOSPACE;
 	print_text(h, ";");
 }
 
@@ -2032,6 +2048,7 @@ mdoc__x_post(MDOC_ARGS)
 	if (NULL == n->parent || MDOC_Rs != n->parent->tok)
 		return;
 
+	h->flags |= HTML_NOSPACE;
 	print_text(h, n->next ? "," : ".");
 }
 

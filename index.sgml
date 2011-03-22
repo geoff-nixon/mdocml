@@ -58,8 +58,8 @@
 					</H1>
 
 					<P>
-					<SPAN CLASS="nm">mdocml</SPAN> is architecture- and system-neutral, written in plain-old C.  The most
-					current version is <SPAN CLASS="attn">@VERSION@</SPAN>, dated <SPAN class="attn">@VDATE@</SPAN>.
+					<SPAN CLASS="nm">mdocml</SPAN> is in plain-old ANSI C and should build and run on any UNIX system.
+					The most current version is <SPAN CLASS="attn">@VERSION@</SPAN>, dated <SPAN class="attn">@VDATE@</SPAN>.
 					</P>
 
 					<H2>
@@ -374,7 +374,7 @@
 			<TR>
 				<TD>
 					<DIV CLASS="foot">
-						Copyright &#169; 2008&#8211;2011 Kristaps Dzonsons, $Date: 2011/01/07 15:22:21 $
+						Copyright &#169; 2008&#8211;2011 Kristaps Dzonsons, $Date: 2011/03/22 10:02:50 $
 					</DIV>
 				</TD>
 			</TR>

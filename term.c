@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.180 2011/03/17 09:16:38 kristaps Exp $ */
+/*	$Id: term.c,v 1.181 2011/03/22 10:13:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -462,10 +462,6 @@ term_word(struct termp *p, const char *word)
 
 	sv = word;
 
-	if (DELIM_CLOSE == mandoc_isdelim(word))
-		if ( ! (TERMP_IGNDELIM & p->flags))
-			p->flags |= TERMP_NOSPACE;
-
 	if ( ! (TERMP_NOSPACE & p->flags)) {
 		if ( ! (TERMP_KEEP & p->flags)) {
 			if (TERMP_PREKEEP & p->flags)
@@ -526,9 +522,6 @@ term_word(struct termp *p, const char *word)
 		if (DECO_NOSPACE == deco && '\0' == *word)
 			p->flags |= TERMP_NOSPACE;
 	}
-
-	if (DELIM_OPEN == mandoc_isdelim(sv))
-		p->flags |= TERMP_NOSPACE;
 }
 
 

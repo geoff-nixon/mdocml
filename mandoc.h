@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.63 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.64 2011/03/20 16:05:21 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -274,42 +274,6 @@ struct	eqn {
 	char		 *data;
 	int		  line; /* invocation line */
 	int		  pos; /* invocation position */
-};
-
-/*
- * Available registers (set in libroff, accessed elsewhere).
- */
-enum	regs {
-	REG_nS = 0,
-	REG__MAX
-};
-
-/*
- * A register (struct reg) can consist of many types: this consists of
- * normalised types from the original string form.
- */
-union	regval {
-	unsigned  u; /* unsigned integer */
-};
-
-/*
- * A single register entity.  If "set" is zero, the value of the
- * register should be the default one, which is per-register.  It's
- * assumed that callers know which type in "v" corresponds to which
- * register value.
- */
-struct	reg {
-	int		  set; /* whether set or not */
-	union regval	  v; /* parsed data */
-};
-
-/*
- * The primary interface to setting register values is in libroff,
- * although libmdoc and libman from time to time will manipulate
- * registers (such as `.Sh SYNOPSIS' enabling REG_nS).
- */
-struct	regset {
-	struct reg	  regs[REG__MAX];
 };
 
 /*

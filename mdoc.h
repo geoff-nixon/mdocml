@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.118 2011/03/07 01:35:51 schwarze Exp $ */
+/*	$Id: mdoc.h,v 1.119 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -423,17 +423,8 @@ __BEGIN_DECLS
 
 struct	mdoc;
 
-void	 	  mdoc_free(struct mdoc *);
-struct	mdoc	 *mdoc_alloc(struct regset *, struct mparse *);
-void		  mdoc_reset(struct mdoc *);
-int	 	  mdoc_parseln(struct mdoc *, int, char *, int);
 const struct mdoc_node *mdoc_node(const struct mdoc *);
 const struct mdoc_meta *mdoc_meta(const struct mdoc *);
-int		  mdoc_endparse(struct mdoc *);
-int		  mdoc_addspan(struct mdoc *,
-			const struct tbl_span *);
-int		  mdoc_addeqn(struct mdoc *,
-			const struct eqn *);
 
 __END_DECLS
 

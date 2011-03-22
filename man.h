@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.54 2011/03/07 01:35:51 schwarze Exp $ */
+/*	$Id: man.h,v 1.55 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -115,15 +115,6 @@ extern	const char *const *man_macronames;
 __BEGIN_DECLS
 
 struct	man;
-
-void	 	  man_free(struct man *);
-struct	man	 *man_alloc(struct regset *, struct mparse *);
-void		  man_reset(struct man *);
-int	 	  man_parseln(struct man *, int, char *, int);
-int		  man_endparse(struct man *);
-int		  man_addspan(struct man *,
-			const struct tbl_span *);
-int		  man_addeqn(struct man *, const struct eqn *);
 
 const struct man_node *man_node(const struct man *);
 const struct man_meta *man_meta(const struct man *);

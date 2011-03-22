@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.4 2011/03/20 16:05:21 kristaps Exp $ */
+/*	$Id: read.c,v 1.5 2011/03/22 09:50:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -496,16 +496,11 @@ mparse_end(struct mparse *curp)
 		return;
 	}
 
-#if 0
-	/* FIXME: NOTE a parser may not have been assigned, yet. */
-
 	if ( ! (curp->man || curp->mdoc)) {
-		/* FIXME: make into an mandoc.h error. */
-		fprintf(stderr, "%s: Not a manual\n", curp->file);
+		mandoc_msg(MANDOCERR_NOTMANUAL, curp, 1, 0, NULL);
 		curp->file_status = MANDOCLEVEL_FATAL;
-		goto cleanup;
+		return;
 	}
-#endif
 
 	roff_endparse(curp->roff);
 }

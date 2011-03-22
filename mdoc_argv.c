@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.69 2011/03/17 11:09:36 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.70 2011/03/22 14:05:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -45,6 +45,7 @@ static	int		 argv_opt_single(struct mdoc *, int,
 				struct mdoc_argv *, int *, char *);
 static	int		 argv_multi(struct mdoc *, int, 
 				struct mdoc_argv *, int *, char *);
+static	void		 argn_free(struct mdoc_arg *, int);
 
 enum	argvflag {
 	ARGV_NONE, /* no args to flag (e.g., -split) */
@@ -295,14 +296,14 @@ mdoc_argv_free(struct mdoc_arg *p)
 	assert(p->argc);
 
 	for (i = (int)p->argc - 1; i >= 0; i--)
-		mdoc_argn_free(p, i);
+		argn_free(p, i);
 
 	free(p->argv);
 	free(p);
 }
 
-void
-mdoc_argn_free(struct mdoc_arg *p, int iarg)
+static void
+argn_free(struct mdoc_arg *p, int iarg)
 {
 	struct mdoc_argv *arg;
 	int		  j;

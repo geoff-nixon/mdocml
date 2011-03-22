@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.69 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.70 2011/03/22 14:05:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -132,7 +132,6 @@ int		  mdoc_valid_post(struct mdoc *);
 enum margverr	  mdoc_argv(struct mdoc *, int, enum mdoct,
 			struct mdoc_arg **, int *, char *);
 void		  mdoc_argv_free(struct mdoc_arg *);
-void		  mdoc_argn_free(struct mdoc_arg *, int);
 enum margserr	  mdoc_args(struct mdoc *, int,
 			int *, char *, enum mdoct, char **);
 enum margserr	  mdoc_zargs(struct mdoc *, int, 

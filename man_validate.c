@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.65 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.66 2011/03/22 14:33:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -323,7 +323,8 @@ check_sec(CHKARGS)
 		man_nmsg(m, n, MANDOCERR_SYNTARGCOUNT);
 		return(0);
 	} else if (MAN_BODY == n->type && 0 == n->nchild)
-		man_nmsg(m, n, MANDOCERR_NOBODY);
+		mandoc_msg(MANDOCERR_ARGCWARN, m->parse, n->line, 
+				n->pos, "want children (have none)");
 
 	return(1);
 }
@@ -334,7 +335,8 @@ check_part(CHKARGS)
 {
 
 	if (MAN_BODY == n->type && 0 == n->nchild)
-		man_nmsg(m, n, MANDOCERR_NOBODY);
+		mandoc_msg(MANDOCERR_ARGCWARN, m->parse, n->line, 
+				n->pos, "want children (have none)");
 
 	return(1);
 }

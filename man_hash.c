@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.22 2010/06/19 20:46:28 kristaps Exp $ */
+/*	$Id: man_hash.c,v 1.23 2010/07/31 23:52:58 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "man.h"
 #include "mandoc.h"
 #include "libman.h"
 

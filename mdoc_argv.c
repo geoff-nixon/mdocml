@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.70 2011/03/22 14:05:45 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.71 2011/03/22 14:28:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -26,6 +26,7 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "mdoc.h"
 #include "mandoc.h"
 #include "libmdoc.h"
 #include "libmandoc.h"

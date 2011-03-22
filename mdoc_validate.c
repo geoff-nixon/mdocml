@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.163 2011/03/17 12:14:19 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.164 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -33,6 +33,7 @@
 #include <string.h>
 #include <time.h>
 
+#include "mdoc.h"
 #include "mandoc.h"
 #include "libmdoc.h"
 #include "libmandoc.h"

@@ -1,4 +1,4 @@
-/*	$Id: man_argv.c,v 1.5 2011/01/03 22:42:37 schwarze Exp $ */
+/*	$Id: man_argv.c,v 1.6 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -22,10 +22,10 @@
 
 #include <assert.h>
 
+#include "man.h"
 #include "mandoc.h"
 #include "libman.h"
 #include "libmandoc.h"
-
 
 int
 man_args(struct man *m, int line, int *pos, char *buf, char **v)

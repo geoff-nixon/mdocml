@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.70 2011/03/22 14:05:45 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.71 2011/03/22 14:28:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -16,8 +16,6 @@
  */
 #ifndef LIBMDOC_H
 #define LIBMDOC_H
-
-#include "mdoc.h"
 
 enum	mdoc_next {
 	MDOC_NEXT_SIBLING = 0,

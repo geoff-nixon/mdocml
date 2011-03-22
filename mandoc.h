@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.64 2011/03/20 16:05:21 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.65 2011/03/22 09:48:13 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -137,6 +137,7 @@ enum	mandocerr {
 
 	MANDOCERR_FATAL, /* ===== start of fatal errors ===== */
 
+	MANDOCERR_NOTMANUAL, /* manual isn't really a manual */
 	MANDOCERR_COLUMNS, /* column syntax is inconsistent */
 	MANDOCERR_BADDISP, /* NOT IMPLEMENTED: .Bd -file */
 	MANDOCERR_SYNTLINESCOPE, /* line scope broken, syntax violated */

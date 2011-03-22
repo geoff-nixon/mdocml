@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.156 2011/03/20 16:05:21 kristaps Exp $ */
+/*	$Id: main.c,v 1.157 2011/03/21 12:04:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -168,6 +168,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 
 	"generic fatal error",
 
+	"not a manual",
 	"column syntax is inconsistent",
 	"NOT IMPLEMENTED: .Bd -file",
 	"line scope broken, syntax violated",

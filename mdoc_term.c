@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.219 2011/02/09 09:52:47 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.220 2011/03/07 01:35:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -32,7 +32,6 @@
 #include "out.h"
 #include "term.h"
 #include "mdoc.h"
-#include "chars.h"
 #include "main.h"
 
 #define	INDENT		  5

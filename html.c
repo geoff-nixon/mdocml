@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.128 2011/03/17 08:49:34 kristaps Exp $ */
+/*	$Id: html.c,v 1.129 2011/03/17 09:16:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -32,7 +32,6 @@
 
 #include "mandoc.h"
 #include "out.h"
-#include "chars.h"
 #include "html.h"
 #include "main.h"
 

@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.179 2011/03/17 08:49:34 kristaps Exp $ */
+/*	$Id: term.c,v 1.180 2011/03/17 09:16:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -29,7 +29,6 @@
 #include <string.h>
 
 #include "mandoc.h"
-#include "chars.h"
 #include "out.h"
 #include "term.h"
 #include "main.h"

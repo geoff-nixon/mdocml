@@ -1,4 +1,4 @@
-/*	$Id: mdoc_hash.c,v 1.15 2010/05/17 22:11:42 kristaps Exp $ */
+/*	$Id: mdoc_hash.c,v 1.16 2010/06/19 20:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -27,6 +27,7 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "mdoc.h"
 #include "mandoc.h"
 #include "libmdoc.h"
 

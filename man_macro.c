@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.56 2011/03/17 11:56:17 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.57 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -23,6 +23,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "man.h"
 #include "mandoc.h"
 #include "libmandoc.h"
 #include "libman.h"

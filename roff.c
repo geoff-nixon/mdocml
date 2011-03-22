@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.127 2011/03/15 16:23:51 kristaps Exp $ */
+/*	$Id: roff.c,v 1.128 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -28,7 +28,6 @@
 #include <stdio.h>
 
 #include "mandoc.h"
-#include "roff.h"
 #include "libroff.h"
 #include "libmandoc.h"
 

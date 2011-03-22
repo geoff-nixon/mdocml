@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.3 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: read.c,v 1.4 2011/03/20 16:05:21 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -31,7 +31,6 @@
 #include "libmandoc.h"
 #include "mdoc.h"
 #include "man.h"
-#include "roff.h"
 
 #ifndef MAP_FILE
 #define	MAP_FILE	0

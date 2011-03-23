@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.57 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.58 2011/03/22 14:33:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -296,7 +296,7 @@ blk_close(MACRO_PROT_ARGS)
 int
 blk_exp(MACRO_PROT_ARGS)
 {
-	int		 w, la;
+	int		 la;
 	char		*p;
 
 	/* 
@@ -317,13 +317,8 @@ blk_exp(MACRO_PROT_ARGS)
 
 	for (;;) {
 		la = *pos;
-		w = man_args(m, line, pos, buf, &p);
-
-		if (-1 == w)
-			return(0);
-		if (0 == w)
+		if (ARGS_EOLN == man_args(m, line, pos, buf, &p))
 			break;
-
 		if ( ! man_word_alloc(m, line, la, p))
 			return(0);
 	}
@@ -348,7 +343,7 @@ blk_exp(MACRO_PROT_ARGS)
 int
 blk_imp(MACRO_PROT_ARGS)
 {
-	int		 w, la;
+	int		 la;
 	char		*p;
 	struct man_node	*n;
 
@@ -372,13 +367,8 @@ blk_imp(MACRO_PROT_ARGS)
 
 	for (;;) {
 		la = *pos;
-		w = man_args(m, line, pos, buf, &p);
-
-		if (-1 == w)
-			return(0);
-		if (0 == w)
+		if (ARGS_EOLN == man_args(m, line, pos, buf, &p))
 			break;
-
 		if ( ! man_word_alloc(m, line, la, p))
 			return(0);
 	}
@@ -406,7 +396,7 @@ blk_imp(MACRO_PROT_ARGS)
 int
 in_line_eoln(MACRO_PROT_ARGS)
 {
-	int		 w, la;
+	int		 la;
 	char		*p;
 	struct man_node	*n;
 
@@ -417,11 +407,7 @@ in_line_eoln(MACRO_PROT_ARGS)
 
 	for (;;) {
 		la = *pos;
-		w = man_args(m, line, pos, buf, &p);
-
-		if (-1 == w)
-			return(0);
-		if (0 == w)
+		if (ARGS_EOLN == man_args(m, line, pos, buf, &p))
 			break;
 		if ( ! man_word_alloc(m, line, la, p))
 			return(0);

@@ -1,4 +1,4 @@
-/*	$Id: man_argv.c,v 1.6 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: man_argv.c,v 1.7 2011/03/22 14:33:05 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -18,8 +18,6 @@
 #include "config.h"
 #endif
 
-#include <sys/types.h>
-
 #include <assert.h>
 
 #include "man.h"
@@ -27,7 +25,7 @@
 #include "libman.h"
 #include "libmandoc.h"
 
-int
+enum margserr
 man_args(struct man *m, int line, int *pos, char *buf, char **v)
 {
 	char	 *start;

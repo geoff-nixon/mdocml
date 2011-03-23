@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.47 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: libman.h,v 1.48 2011/03/22 14:33:05 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -67,6 +67,7 @@ __BEGIN_DECLS
 int		  man_word_alloc(struct man *, int, int, const char *);
 int		  man_block_alloc(struct man *, int, int, enum mant);
 int		  man_head_alloc(struct man *, int, int, enum mant);
+int		  man_tail_alloc(struct man *, int, int, enum mant);
 int		  man_body_alloc(struct man *, int, int, enum mant);
 int		  man_elem_alloc(struct man *, int, int, enum mant);
 void		  man_node_delete(struct man *, struct man_node *);

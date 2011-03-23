@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.56 2011/03/22 09:48:13 kristaps Exp $ */
+/*	$Id: man.h,v 1.57 2011/03/22 13:28:22 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -61,6 +61,7 @@ enum	man_type {
 	MAN_BLOCK,
 	MAN_HEAD,
 	MAN_BODY,
+	MAN_TAIL,
 	MAN_TBL,
 	MAN_EQN
 };
@@ -89,6 +90,7 @@ struct	man_node {
 	enum man_type	 type; /* AST node type */
 	char		*string; /* TEXT node argument */
 	struct man_node	*head; /* BLOCK node HEAD ptr */
+	struct man_node *tail; /* BLOCK node TAIL ptr */
 	struct man_node	*body; /* BLOCK node BODY ptr */
 	const struct tbl_span *span; /* TBL */
 	const struct eqn *eqn; /* EQN */

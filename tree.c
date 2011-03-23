@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.35 2011/02/09 09:05:52 kristaps Exp $ */
+/*	$Id: tree.c,v 1.36 2011/02/09 09:18:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -201,6 +201,9 @@ print_man(const struct man_node *n, int indent)
 	case (MAN_BODY):
 		t = "block-body";
 		break;
+	case (MAN_TAIL):
+		t = "block-tail";
+		break;
 	case (MAN_TBL):
 		t = "tbl";
 		break;
@@ -223,6 +226,8 @@ print_man(const struct man_node *n, int indent)
 	case (MAN_BLOCK):
 		/* FALLTHROUGH */
 	case (MAN_HEAD):
+		/* FALLTHROUGH */
+	case (MAN_TAIL):
 		/* FALLTHROUGH */
 	case (MAN_BODY):
 		p = man_macronames[n->tok];

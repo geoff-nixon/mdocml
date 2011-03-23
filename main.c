@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.157 2011/03/21 12:04:26 kristaps Exp $ */
+/*	$Id: main.c,v 1.158 2011/03/22 10:35:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -106,6 +106,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"child violates parent syntax",
 	"nested displays are not portable",
 	"already in literal mode",
+	"line scope broken",
 
 	/* related to missing macro arguments */
 	"skipping empty macro",
@@ -153,7 +154,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"skipping text before the first section header",
 	"skipping unknown macro",
 	"NOT IMPLEMENTED, please use groff: skipping request",
-	"line scope broken",
 	"argument count wrong",
 	"skipping end of block that is not open",
 	"missing end of block",

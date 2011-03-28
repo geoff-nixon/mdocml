@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.42 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.43 2011/03/22 14:05:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -506,3 +506,28 @@ mandoc_hyph(const char *start, const char *c)
 	return(1);
 }
 
+/*
+ * Find out whether a line is a macro line or not.  If it is, adjust the
+ * current position and return one; if it isn't, return zero and don't
+ * change the current position.
+ */
+int
+mandoc_getcontrol(const char *cp, int *ppos)
+{
+	int		pos;
+
+	pos = *ppos;
+
+	if ('\\' == cp[pos] && '.' == cp[pos + 1])
+		pos += 2;
+	else if ('.' == cp[pos] || '\'' == cp[pos])
+		pos++;
+	else
+		return(0);
+
+	while (' ' == cp[pos] || '\t' == cp[pos])
+		pos++;
+
+	*ppos = pos;
+	return(1);
+}

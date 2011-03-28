@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.15 2011/03/22 10:02:50 kristaps Exp $ */
+/*	$Id: libmandoc.h,v 1.16 2011/03/22 14:05:45 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -79,6 +79,7 @@ char		*mandoc_getarg(struct mparse *, char **, int, int *);
 char		*mandoc_normdate(struct mparse *, char *, int, int);
 int		 mandoc_eos(const char *, size_t, int);
 int		 mandoc_hyph(const char *, const char *);
+int		 mandoc_getcontrol(const char *, int *);
 
 void	 	 mdoc_free(struct mdoc *);
 struct	mdoc	*mdoc_alloc(struct regset *, struct mparse *);

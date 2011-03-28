@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.67 2011/03/22 14:05:45 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.68 2011/03/23 09:47:13 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -303,6 +303,8 @@ struct mparse	 *mparse_alloc(enum mparset,
 			enum mandoclevel, mandocmsg, void *);
 enum mandoclevel  mparse_readfd(struct mparse *, int, const char *);
 void		  mparse_result(struct mparse *, struct mdoc **, struct man **);
+const char	 *mparse_strerror(enum mandocerr);
+const char	 *mparse_strlevel(enum mandoclevel);
 
 void		 *mandoc_calloc(size_t, size_t);
 void		 *mandoc_malloc(size_t);

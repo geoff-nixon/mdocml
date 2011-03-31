@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.159 2011/03/23 09:47:13 kristaps Exp $ */
+/*	$Id: main.c,v 1.160 2011/03/28 21:49:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -165,7 +165,7 @@ usage(void)
 			"[-mformat] "
 			"[-Ooption] "
 			"[-Toutput] "
-			"[-Werr] "
+			"[-Wlevel] "
 			"[file...]\n", 
 			progname);
 

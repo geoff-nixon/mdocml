@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.6 2011/03/22 10:35:26 kristaps Exp $ */
+/*	$Id: read.c,v 1.7 2011/03/28 21:49:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -740,7 +740,8 @@ mandoc_msg(enum mandocerr er, struct mparse *m,
 	if (level < m->wlevel)
 		return;
 
-	(*m->mmsg)(er, level, m->file, ln, col, msg);
+	if (m->mmsg)
+		(*m->mmsg)(er, level, m->file, ln, col, msg);
 
 	if (m->file_status < level)
 		m->file_status = level;

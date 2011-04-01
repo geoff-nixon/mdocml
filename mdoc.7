@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.181 2011/03/07 01:35:51 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.182 2011/03/17 14:50:14 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: March 7 2011 $
+.Dd $Mdocdate: March 17 2011 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -1861,8 +1861,8 @@ are delimited by commas.
 If no arguments are specified, blank parenthesis are output.
 .Pp
 Examples:
-.Dl \&.Fn "int funcname" "int arg0" "int arg1"
-.Dl \&.Fn funcname "int arg0"
+.Dl \&.Fn \*qint funcname\*q \*qint arg0\*q \*qint arg1\*q
+.Dl \&.Fn funcname \*qint arg0\*q
 .Dl \&.Fn funcname arg0
 .Bd -literal -offset indent -compact
 \&.Ft functype
@@ -1892,7 +1892,7 @@ Invocations usually occur in the following context:
 .br
 .Pf \. Sx \&Fa Oo Cm argtype Oc Cm argname
 .br
-\.\.\.
+\&.\.\.
 .br
 .Pf \. Sx \&Fc
 .Ed

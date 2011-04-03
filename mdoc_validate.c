@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.164 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.165 2011/03/22 14:33:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -2194,7 +2194,7 @@ post_os(POST_ARGS)
 			return(0);
 		}
 #else /*!OSNAME */
-		if (uname(&utsname)) {
+		if (-1 == uname(&utsname)) {
 			mdoc_nmsg(mdoc, n, MANDOCERR_UNAME);
                         mdoc->meta.os = mandoc_strdup("UNKNOWN");
                         return(post_prol(mdoc));

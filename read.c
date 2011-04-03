@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.8 2011/03/31 10:54:39 kristaps Exp $ */
+/*	$Id: read.c,v 1.9 2011/04/03 10:05:37 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -661,6 +661,8 @@ struct mparse *
 mparse_alloc(enum mparset inttype, enum mandoclevel wlevel, mandocmsg mmsg, void *arg)
 {
 	struct mparse	*curp;
+
+	assert(wlevel <= MANDOCLEVEL_FATAL);
 
 	curp = mandoc_calloc(1, sizeof(struct mparse));
 

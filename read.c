@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.7 2011/03/28 21:49:42 kristaps Exp $ */
+/*	$Id: read.c,v 1.8 2011/03/31 10:54:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -709,8 +709,10 @@ void
 mparse_result(struct mparse *curp, struct mdoc **mdoc, struct man **man)
 {
 
-	*mdoc = curp->mdoc;
-	*man = curp->man;
+	if (mdoc)
+		*mdoc = curp->mdoc;
+	if (man)
+		*man = curp->man;
 }
 
 void

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.156 2011/04/04 15:33:03 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.157 2011/04/04 15:41:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1603,20 +1603,22 @@ mdoc_sp_pre(MDOC_ARGS)
 static int
 mdoc_lk_pre(MDOC_ARGS)
 {
-	const struct mdoc_node	*nn;
-	struct htmlpair		 tag[2];
+	struct htmlpair	 tag[2];
 
-	nn = n->child;
+	if (NULL == (n = n->child))
+		return(0);
+
+	assert(MDOC_TEXT == n->type);
 
 	PAIR_CLASS_INIT(&tag[0], "link-ext");
-	PAIR_HREF_INIT(&tag[1], nn->string);
+	PAIR_HREF_INIT(&tag[1], n->string);
+
 	print_otag(h, TAG_A, 2, tag);
 
-	if (NULL == nn || NULL == nn->next) 
-		return(1);
-
-	for (nn = nn->next; nn; nn = nn->next) 
-		print_text(h, nn->string);
+	for (n = n->next; n; n = n->next) {
+		assert(MDOC_TEXT == n->type);
+		print_text(h, n->string);
+	}
 
 	return(0);
 }

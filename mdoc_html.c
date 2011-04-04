@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.159 2011/04/04 16:01:47 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.160 2011/04/04 16:15:58 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1733,7 +1733,8 @@ mdoc_in_pre(MDOC_ARGS)
 
 		if (h->base_includes) {
 			buffmt_includes(h, n->string);
-			PAIR_HREF_INIT(&tag[i++], h->buf);
+			PAIR_HREF_INIT(&tag[i], h->buf);
+			i++;
 		} 
 
 		t = print_otag(h, TAG_A, i, tag);

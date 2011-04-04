@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.181 2011/03/22 10:13:01 kristaps Exp $ */
+/*	$Id: term.c,v 1.182 2011/03/22 14:05:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -456,11 +456,9 @@ term_fontpop(struct termp *p)
 void
 term_word(struct termp *p, const char *word)
 {
-	const char	*sv, *seq;
+	const char	*seq;
 	size_t		 ssz;
 	enum roffdeco	 deco;
-
-	sv = word;
 
 	if ( ! (TERMP_NOSPACE & p->flags)) {
 		if ( ! (TERMP_KEEP & p->flags)) {

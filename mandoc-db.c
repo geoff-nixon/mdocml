@@ -1,4 +1,4 @@
-/*	$Id: mandoc-db.c,v 1.3 2011/04/03 14:18:29 kristaps Exp $ */
+/*	$Id: mandoc-db.c,v 1.4 2011/04/04 10:53:15 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -458,14 +458,14 @@ pmdoc_Fd(MDOC_ARGS)
 	 */
 
 	start = n->string;
-	if ('<' == *start)
+	if ('<' == *start || '"' == *start)
 		start++;
 
 	if (0 == (sz = strlen(start)))
 		return;
 
 	end = &start[(int)sz - 1];
-	if ('>' == *end)
+	if ('>' == *end || '"' == *end)
 		end--;
 
 	nil = '\0';

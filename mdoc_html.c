@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.161 2011/04/04 16:44:56 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.162 2011/04/04 16:48:18 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1558,6 +1558,7 @@ mdoc_fn_pre(MDOC_ARGS)
 
 	h->flags |= HTML_NOSPACE;
 	print_text(h, "(");
+	h->flags |= HTML_NOSPACE;
 
 	bufinit(h);
 	PAIR_CLASS_INIT(&tag[0], "farg");

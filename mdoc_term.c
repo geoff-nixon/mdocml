@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.224 2011/04/04 16:15:58 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.225 2011/04/04 16:21:51 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1536,24 +1536,31 @@ termp_ft_pre(DECL_ARGS)
 static int
 termp_fn_pre(DECL_ARGS)
 {
-	const struct mdoc_node	*nn;
+	int		 pretty;
+
+	pretty = MDOC_SYNPRETTY & n->flags;
 
 	synopsis_pre(p, n);
 
+	if (NULL == (n = n->child))
+		return(0);
+
+	assert(MDOC_TEXT == n->type);
 	term_fontpush(p, TERMFONT_BOLD);
-	term_word(p, n->child->string);
+	term_word(p, n->string);
 	term_fontpop(p);
 
 	p->flags |= TERMP_NOSPACE;
 	term_word(p, "(");
 	p->flags |= TERMP_NOSPACE;
 
-	for (nn = n->child->next; nn; nn = nn->next) {
+	for (n = n->next; n; n = n->next) {
+		assert(MDOC_TEXT == n->type);
 		term_fontpush(p, TERMFONT_UNDER);
-		term_word(p, nn->string);
+		term_word(p, n->string);
 		term_fontpop(p);
 
-		if (nn->next) {
+		if (n->next) {
 			p->flags |= TERMP_NOSPACE;
 			term_word(p, ",");
 		}
@@ -1562,7 +1569,7 @@ termp_fn_pre(DECL_ARGS)
 	p->flags |= TERMP_NOSPACE;
 	term_word(p, ")");
 
-	if (MDOC_SYNPRETTY & n->flags) {
+	if (pretty) {
 		p->flags |= TERMP_NOSPACE;
 		term_word(p, ";");
 	}

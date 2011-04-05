@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.129 2011/03/22 09:50:11 kristaps Exp $ */
+/*	$Id: roff.c,v 1.130 2011/03/29 09:00:48 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -739,10 +739,10 @@ roff_block(ROFF_ARGS)
 			mandoc_msg(MANDOCERR_REQUEST, r->parse, ln, ppos,
 			    roffs[tok].name);
 
-		while ((*bufp)[pos] && ' ' != (*bufp)[pos])
+		while ((*bufp)[pos] && ! isspace((unsigned char)(*bufp)[pos]))
 			pos++;
 
-		while (' ' == (*bufp)[pos])
+		while (isspace((unsigned char)(*bufp)[pos]))
 			(*bufp)[pos++] = '\0';
 	}
 
@@ -763,9 +763,7 @@ roff_block(ROFF_ARGS)
 	/* If present, process the custom end-of-line marker. */
 
 	sv = pos;
-	while ((*bufp)[pos] &&
-			' ' != (*bufp)[pos] && 
-			'\t' != (*bufp)[pos])
+	while ((*bufp)[pos] && ! isspace((unsigned char)(*bufp)[pos]))
 		pos++;
 
 	/*

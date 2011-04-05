@@ -1,4 +1,4 @@
-/*	$Id: mandoc-db.c,v 1.5 2011/04/04 16:49:03 kristaps Exp $ */
+/*	$Id: mandoc-db.c,v 1.6 2011/04/05 13:09:33 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -546,7 +546,7 @@ pmdoc_Vt(MDOC_ARGS)
 		return;
 	if (MDOC_Vt == n->tok && MDOC_BODY != n->type)
 		return;
-	if (NULL == n->child || MDOC_TEXT != n->child->type)
+	if (NULL == n->last || MDOC_TEXT != n->last->type)
 		return;
 
 	/*

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.44 2011/03/28 23:52:13 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.45 2011/04/09 15:29:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -116,10 +116,9 @@ mandoc_escape(const char **end, const char **start, int *sz)
 	rstart = cp;
 	if (start)
 		*start = rstart;
-	i = 0;
+	i = lim = 0;
 	gly = ESCAPE_ERROR;
-	term = '\0';
-	numeric = 0;
+	term = numeric = '\0';
 
 	switch ((c = cp[i++])) {
 	/*
@@ -379,6 +378,7 @@ out:
 			gly = ESCAPE_FONTROMAN;
 			break;
 		}
+		break;
 	case (ESCAPE_SPECIAL):
 		if (1 != rlim)
 			break;

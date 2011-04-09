@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.3,v 1.1 2011/03/22 10:02:50 kristaps Exp $
+.\"	$Id: mandoc.3,v 1.2 2011/03/28 21:49:42 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,11 +15,12 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: March 22 2011 $
+.Dd $Mdocdate: March 28 2011 $
 .Dt MANDOC 3
 .Os
 .Sh NAME
 .Nm mandoc ,
+.Nm mandoc_escape ,
 .Nm man_meta ,
 .Nm man_node ,
 .Nm mdoc_meta ,
@@ -36,6 +37,12 @@
 .In man.h
 .In mdoc.h
 .In mandoc.h
+.Ft "enum mandoc_esc"
+.Fo mandoc_escape
+.Fa "const char **in"
+.Fa "const char **seq"
+.Fa "int *len"
+.Fc
 .Ft "const struct man_meta *"
 .Fo man_meta
 .Fa "const struct man *man"
@@ -130,6 +137,40 @@ free all allocated memory with
 or invoke
 .Fn mparse_reset
 and parse new files.
+.El
+.Sh REFERENCE
+This section documents the functions, types, and variables available
+via
+.In mandoc.h .
+.Ss Types
+.Bl -ohang
+.It Vt "enum mandoc_esc"
+.It Vt "enum mandocerr"
+.It Vt "enum mandoclevel"
+.It Vt "enum mparset"
+.It Vt "struct mparse"
+.It Vt "mandocmsg"
+.El
+.Ss Functions
+.Bl -ohang
+.It Fn mandoc_escape
+.It Fn man_meta
+.It Fn man_node
+.It Fn mdoc_meta
+.It Fn mdoc_node
+.It Fn mparse_alloc
+.It Fn mparse_free
+.It Fn mparse_readfd
+.It Fn mparse_reset
+.It Fn mparse_result
+.It Fn mparse_strerror
+.It Fn mparse_strlevel
+.El
+.Ss Variables
+.Bl -ohang
+.It Va man_macronames
+.It Va mdoc_argnames
+.It Va mdoc_macronames
 .El
 .Sh IMPLEMENTATION NOTES
 This section consists of structural documentation for

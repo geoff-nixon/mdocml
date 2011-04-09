@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.68 2011/03/23 09:47:13 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.69 2011/03/28 21:49:42 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -288,6 +288,20 @@ enum	mparset {
 	MPARSE_MAN /* assume -man */
 };
 
+enum	mandoc_esc {
+	ESCAPE_ERROR = 0, /* bail! unparsable escape */
+	ESCAPE_IGNORE, /* escape to be ignored */
+	ESCAPE_SPECIAL, /* a regular special character */
+	ESCAPE_PREDEF, /* a predefined special character */
+	ESCAPE_FONT, /* a generic font mode */
+	ESCAPE_FONTBOLD, /* bold font mode */
+	ESCAPE_FONTITALIC, /* italic font mode */
+	ESCAPE_FONTROMAN, /* roman font mode */
+	ESCAPE_FONTPREV, /* previous font mode */
+	ESCAPE_NUMBERED, /* a numbered glyph */
+	ESCAPE_NOSPACE /* suppress space if the last on a line */
+};
+
 typedef	void	(*mandocmsg)(enum mandocerr, enum mandoclevel,
 			const char *, int, int, const char *);
 
@@ -309,6 +323,8 @@ const char	 *mparse_strlevel(enum mandoclevel);
 void		 *mandoc_calloc(size_t, size_t);
 void		 *mandoc_malloc(size_t);
 void		 *mandoc_realloc(void *, size_t);
+
+enum mandoc_esc	  mandoc_escape(const char **, const char **, int *);
 
 __END_DECLS
 

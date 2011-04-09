@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.10 2011/04/03 10:11:25 kristaps Exp $ */
+/*	$Id: read.c,v 1.11 2011/04/04 23:04:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -142,7 +142,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"tab in non-literal context",
 	"end of line whitespace",
 	"bad comment style",
-	"unknown escape sequence",
+	"bad escape sequence",
 	"unterminated quoted string",
 	
 	"generic error",

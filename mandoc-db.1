@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.85 2011/02/09 10:03:02 kristaps Exp $
+.\"	$Id: mandoc-db.1,v 1.1 2011/04/04 10:53:15 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate$
+.Dd $Mdocdate: April 4 2011 $
 .Dt MANDOC-DB 1
 .Os
 .Sh NAME
@@ -59,9 +59,18 @@ The index database,
 .Pa mandoc.index ,
 is a
 .Xr recno 3
-database of nil-terminated filenames (record length is non-zero string
-length plus one) passed to
-.Nm .
+database with record values consisting of
+.Pp
+.Bl -enum -compact
+.It
+a nil-terminated filename,
+.It
+a nil-terminated manual section,
+.It
+and a nil-terminated description.
+.El
+.Pp
+Both the manual section and description may be zero-length.
 Entries are sequentially-numbered, but the filenames are unordered.
 .Ss Keyword Database
 The keyword database,

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.166 2011/04/03 09:53:50 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.167 2011/04/09 15:29:40 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -155,9 +155,9 @@ static	v_post	 posts_notext[] = { ewarn_eq0, NULL };
 static	v_post	 posts_ns[] = { post_ns, NULL };
 static	v_post	 posts_os[] = { post_os, post_prol, NULL };
 static	v_post	 posts_rs[] = { post_rs, NULL };
-static	v_post	 posts_sh[] = { post_ignpar, hwarn_ge1, bwarn_ge1, post_sh, NULL };
+static	v_post	 posts_sh[] = { post_ignpar, hwarn_ge1, post_sh, NULL };
 static	v_post	 posts_sp[] = { ewarn_le1, NULL };
-static	v_post	 posts_ss[] = { post_ignpar, hwarn_ge1, bwarn_ge1, NULL };
+static	v_post	 posts_ss[] = { post_ignpar, hwarn_ge1, NULL };
 static	v_post	 posts_st[] = { post_st, NULL };
 static	v_post	 posts_std[] = { post_std, NULL };
 static	v_post	 posts_text[] = { ewarn_ge1, NULL };

@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.99 2011/04/12 23:54:12 schwarze Exp $
+* $Id: TODO,v 1.100 2011/04/13 09:57:41 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -19,6 +19,11 @@
 ************************************************************************
 * formatter bugs
 ************************************************************************
+
+- tbl(7): Horizontal and vertical lines are formatted badly:
+  With the box option, there is too much white space at the end of cells.
+  Horizontal lines from "=" lines are a bit too long.
+  yuri dot pankov at gmail dot com  Thu, 14 Apr 2011 05:45:26 +0400
 
 ************************************************************************
 * missing features
@@ -107,6 +112,9 @@
   (mdoc_html.c and mdoc_term.c `Nm' handlers can be slightly simplified)
 
 --- missing man features -----------------------------------------------
+
+- .RS/.RE can be nested, see e.g. the x11/fluxbox manuals
+  noticed by dcoppa@  Wed, Apr 13, 2011 at 04:58:14PM +0200:
 
 - groff an-ext.tmac macros (.UR, .UE) occur in xine(5)
   reported by brad@  Sat, 15 Jan 2011 15:45:23 -0500

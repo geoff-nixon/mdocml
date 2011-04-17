@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.73 2011/03/23 15:46:02 kristaps Exp $ */
+/*	$Id: mdoc_argv.c,v 1.74 2011/04/07 01:08:42 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -568,25 +568,9 @@ args(struct mdoc *m, int line, int *pos,
 		return(ARGS_QWORD);
 	}
 
-	/* 
-	 * A non-quoted term progresses until either the end of line or
-	 * a non-escaped whitespace.
-	 */
-
-	for ( ; buf[*pos]; (*pos)++)
-		if (*pos && ' ' == buf[*pos] && '\\' != buf[*pos - 1])
-			break;
-
-	if ('\0' == buf[*pos])
-		return(ARGS_WORD);
-
-	buf[(*pos)++] = '\0';
-
-	while (' ' == buf[*pos])
-		(*pos)++;
-
-	if ('\0' == buf[*pos] && ! (ARGS_NOWARN & fl))
-		mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE);
+	p = &buf[*pos];
+	*v = mandoc_getarg(m->parse, &p, line, 
+			! (ARGS_NOWARN & fl), pos);
 
 	return(ARGS_WORD);
 }

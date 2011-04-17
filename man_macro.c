@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.59 2011/03/23 12:40:04 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.60 2011/03/23 15:33:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -484,6 +484,6 @@ man_args(struct man *m, int line, int *pos, char *buf, char **v)
 	if ('\0' == *start)
 		return(0);
 
-	*v = mandoc_getarg(m->parse, v, line, pos);
+	*v = mandoc_getarg(m->parse, v, line, 1, pos);
 	return(1);
 }

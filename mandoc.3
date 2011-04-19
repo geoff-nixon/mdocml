@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.3,v 1.2 2011/03/28 21:49:42 kristaps Exp $
+.\"	$Id: mandoc.3,v 1.3 2011/04/09 15:53:48 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: March 28 2011 $
+.Dd $Mdocdate: April 9 2011 $
 .Dt MANDOC 3
 .Os
 .Sh NAME
@@ -97,6 +97,8 @@
 .Vt extern const char * const * man_macronames;
 .Vt extern const char * const * mdoc_argnames;
 .Vt extern const char * const * mdoc_macronames;
+.Fd "#define ASCII_NBRSP"
+.Fd "#define ASCII_HYPH"
 .Sh DESCRIPTION
 The
 .Nm mandoc
@@ -154,23 +156,93 @@ via
 .Ss Functions
 .Bl -ohang
 .It Fn mandoc_escape
+Scan an escape sequence, i.e., a character string beginning with
+.Sq \e .
+Pass a pointer to this string as
+.Va end ;
+it will be set to the supremum of the parsed escape sequence unless
+returning ESCAPE_ERROR, in which case the string is bogus and should be
+thrown away.
+If not ESCAPE_ERROR or ESCAPE_IGNORE,
+.Va start
+is set to the first relevant character of the substring (font, glyph,
+whatever) of length
+.Va sz .
+Both
+.Va start
+and
+.Va sz
+may be NULL.
 .It Fn man_meta
+Obtain the meta-data of a successful parse.
+This may only be used on a pointer returned by
+.Fn mparse_result .
 .It Fn man_node
+Obtain the root node of a successful parse.
+This may only be used on a pointer returned by
+.Fn mparse_result .
 .It Fn mdoc_meta
+Obtain the meta-data of a successful parse.
+This may only be used on a pointer returned by
+.Fn mparse_result .
 .It Fn mdoc_node
+Obtain the root node of a successful parse.
+This may only be used on a pointer returned by
+.Fn mparse_result .
 .It Fn mparse_alloc
+Allocate a parser.
+The same parser may be used for multiple files so long as
+.Fn mparse_reset
+is called between parses.
+.Fn mparse_free
+must be called to free the memory allocated by this function.
 .It Fn mparse_free
+Free all memory allocated by
+.Fn mparse_alloc .
 .It Fn mparse_readfd
+Parse a file or file descriptor.
+If
+.Va fd
+is -1,
+.Va fname
+is opened for reading.
+Otherwise,
+.Va fname
+is assumed to be the name associated with
+.Va fd .
+This may be called multiple times with different parameters; however,
+.Fn mparse_reset
+should be invoked between parses.
 .It Fn mparse_reset
+Reset a parser so that
+.Fn mparse_readfd
+may be used again.
 .It Fn mparse_result
+Obtain the result of a parse.
+Only successful parses
+.Po
+i.e., those where
+.Fn mparse_readfd
+returned less than MANDOCLEVEL_FATAL
+.Pc
+should invoke this function, in which case one of the two pointers will
+be filled in.
 .It Fn mparse_strerror
+Return a statically-allocated string representation of an error code.
 .It Fn mparse_strlevel
+Return a statically-allocated string representation of a level code.
 .El
 .Ss Variables
 .Bl -ohang
 .It Va man_macronames
+The string representation of a man macro as indexed by
+.Vt "enum mant" .
 .It Va mdoc_argnames
+The string representation of a mdoc macro argument as indexed by
+.Vt "enum mdocargt" .
 .It Va mdoc_macronames
+The string representation of a mdoc macro as indexed by
+.Vt "enum mdoct" .
 .El
 .Sh IMPLEMENTATION NOTES
 This section consists of structural documentation for

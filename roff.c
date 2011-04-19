@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.134 2011/04/13 16:26:11 kristaps Exp $ */
+/*	$Id: roff.c,v 1.135 2011/04/17 09:08:19 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1238,7 +1238,7 @@ roff_userdef(ROFF_ARGS)
 	cp = *bufp + pos;
 	for (i = 0; i < 9; i++)
 		arg[i] = '\0' == *cp ? "" :
-		    mandoc_getarg(r->parse, &cp, ln, 1, &pos);
+		    mandoc_getarg(r->parse, &cp, ln, &pos);
 
 	/*
 	 * Expand macro arguments.

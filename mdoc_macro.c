@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.105 2011/03/22 14:05:45 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.106 2011/03/22 14:33:05 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -618,7 +618,7 @@ append_delims(struct mdoc *m, int line, int *pos, char *buf)
 
 	for (;;) {
 		la = *pos;
-		ac = mdoc_zargs(m, line, pos, buf, ARGS_NOWARN, &p);
+		ac = mdoc_zargs(m, line, pos, buf, &p);
 
 		if (ARGS_ERROR == ac)
 			return(0);
@@ -1717,7 +1717,7 @@ phrase(struct mdoc *m, int line, int ppos, char *buf)
 	for (pos = ppos; ; ) {
 		la = pos;
 
-		ac = mdoc_zargs(m, line, &pos, buf, 0, &p);
+		ac = mdoc_zargs(m, line, &pos, buf, &p);
 
 		if (ARGS_ERROR == ac)
 			return(0);
@@ -1762,7 +1762,7 @@ phrase_ta(MACRO_PROT_ARGS)
 
 	for (;;) {
 		la = *pos;
-		ac = mdoc_zargs(m, line, pos, buf, 0, &p);
+		ac = mdoc_zargs(m, line, pos, buf, &p);
 
 		if (ARGS_ERROR == ac)
 			return(0);

@@ -1,4 +1,4 @@
-/*	$Id: chars.in,v 1.35 2010/09/15 13:10:30 kristaps Exp $ */
+/*	$Id: chars.in,v 1.36 2011/03/16 22:49:55 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -375,6 +375,8 @@ STRING("right-parenthesis",	")",		41)
 STRING("right-singlequote",	"\'",		8217)
 STRING("rp",			")",		41)
 STRING("Tm",			"(Tm)",		8482)
+STRING("Px",			"POSIX",	0)
+STRING("Ai",			"ANSI",		0)
 
 /* Lines. */
 CHAR("ba",			"|",		124)

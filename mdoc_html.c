@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.162 2011/04/04 16:48:18 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.163 2011/04/04 22:38:26 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -737,7 +737,7 @@ mdoc_nm_pre(MDOC_ARGS)
 		len = strlen(m->name);
 
 	SCALE_HS_INIT(&su, (double)len);
-	bufcat_su(h, "width", &su);
+	bufcat_su(h, "min-width", &su);
 	PAIR_STYLE_INIT(&tag, h);
 	print_otag(h, TAG_COL, 1, &tag);
 	print_otag(h, TAG_COL, 0, NULL);

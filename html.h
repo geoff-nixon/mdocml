@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.39 2011/01/13 14:30:13 kristaps Exp $ */
+/*	$Id: html.h,v 1.40 2011/01/29 14:49:44 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -120,7 +120,7 @@ struct	html {
 	struct tagq	  tags; /* stack of open tags */
 	struct rofftbl	  tbl; /* current table */
 	struct tag	 *tblt; /* current open table scope */
-	void		 *symtab; /* character-escapes */
+	struct mchars	 *symtab; /* character-escapes */
 	char		 *base_man; /* base for manpage href */
 	char		 *base_includes; /* base for include href */
 	char		 *style; /* style-sheet URI */

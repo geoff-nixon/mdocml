@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.78 2011/01/03 13:59:21 kristaps Exp $ */
+/*	$Id: term.h,v 1.79 2011/01/05 15:37:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -105,7 +105,7 @@ struct	termp {
 #define	TERMP_PREKEEP	 (1 << 15)	/* ...starting with the next one. */
 	char		 *buf;		/* Output buffer. */
 	enum termenc	  enc;		/* Type of encoding. */
-	void		 *symtab;	/* Encoded-symbol table. */
+	struct mchars	 *symtab;	/* Encoded-symbol table. */
 	enum termfont	  fontl;	/* Last font set. */
 	enum termfont	  fontq[10];	/* Symmetric fonts. */
 	int		  fonti;	/* Index of font stack. */

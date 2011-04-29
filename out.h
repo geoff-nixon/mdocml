@@ -1,4 +1,4 @@
-/*	$Id: out.h,v 1.18 2011/03/22 10:13:01 kristaps Exp $ */
+/*	$Id: out.h,v 1.19 2011/04/09 15:29:40 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -29,11 +29,6 @@ enum	roffscale {
 	SCALE_VS, /* default vertical (v) */
 	SCALE_FS, /* syn. for u (f) */
 	SCALE_MAX
-};
-
-enum	chars {
-	CHARS_ASCII, /* 7-bit ascii representation */
-	CHARS_HTML /* unicode values */
 };
 
 struct	roffcol {
@@ -71,14 +66,6 @@ __BEGIN_DECLS
 int	  	  a2roffsu(const char *, struct roffsu *, enum roffscale);
 void	  	  time2a(time_t, char *, size_t);
 void	  	  tblcalc(struct rofftbl *tbl, const struct tbl_span *);
-
-void		 *chars_init(enum chars);
-const char	 *chars_num2char(const char *, size_t);
-const char	 *chars_spec2str(void *, const char *, size_t, size_t *);
-int		  chars_spec2cp(void *, const char *, size_t);
-const char	 *chars_res2str(void *, const char *, size_t, size_t *);
-int		  chars_res2cp(void *, const char *, size_t);
-void		  chars_free(void *);
 
 __END_DECLS
 

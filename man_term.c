@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.104 2011/03/07 01:35:51 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.105 2011/03/22 10:13:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -158,7 +158,7 @@ terminal_man(void *arg, const struct man *man)
 	if (NULL == p->symtab)
 		switch (p->enc) {
 		case (TERMENC_ASCII):
-			p->symtab = chars_init(CHARS_ASCII);
+			p->symtab = mchars_init(MCHARS_ASCII);
 			break;
 		default:
 			abort();

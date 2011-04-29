@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.225 2011/04/04 16:21:51 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.226 2011/04/04 16:27:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -266,7 +266,7 @@ terminal_mdoc(void *arg, const struct mdoc *mdoc)
 	if (NULL == p->symtab)
 		switch (p->enc) {
 		case (TERMENC_ASCII):
-			p->symtab = chars_init(CHARS_ASCII);
+			p->symtab = mchars_init(MCHARS_ASCII);
 			break;
 		default:
 			abort();

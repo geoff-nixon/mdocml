@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.47 2011/04/17 09:08:19 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.48 2011/04/19 16:38:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -603,7 +603,7 @@ mandoc_eos(const char *p, size_t sz, int enclosed)
 	/*
 	 * End-of-sentence recognition must include situations where
 	 * some symbols, such as `)', allow prior EOS punctuation to
-	 * propogate outward.
+	 * propagate outward.
 	 */
 
 	found = 0;

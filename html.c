@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.132 2011/04/09 15:29:40 kristaps Exp $ */
+/*	$Id: html.c,v 1.133 2011/04/29 22:18:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -427,7 +427,7 @@ print_otag(struct html *h, enum htmltag tag,
 		print_attr(h, "lang", "en");
 	}
 
-	/* Accomodate for XML "well-formed" singleton escaping. */
+	/* Accommodate for XML "well-formed" singleton escaping. */
 
 	if (HTML_AUTOCLOSE & htmltags[tag].flags)
 		switch (h->type) {

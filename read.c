@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.12 2011/04/09 15:29:40 kristaps Exp $ */
+/*	$Id: read.c,v 1.13 2011/04/11 21:59:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -445,7 +445,7 @@ rerun:
 
 		/*
 		 * If input parsers have not been allocated, do so now.
-		 * We keep these instanced betwen parsers, but set them
+		 * We keep these instanced between parsers, but set them
 		 * locally per parse routine since we can use different
 		 * parsers with each one.
 		 */

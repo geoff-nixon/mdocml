@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.167 2011/04/09 15:29:40 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.168 2011/04/13 09:57:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1535,7 +1535,7 @@ post_bl_head(POST_ARGS)
 	assert(0 == np->args->argv[j].sz);
 
 	/*
-	 * Accomodate for new-style groff column syntax.  Shuffle the
+	 * Accommodate for new-style groff column syntax.  Shuffle the
 	 * child nodes, all of which must be TEXT, as arguments for the
 	 * column field.  Then, delete the head children.
 	 */

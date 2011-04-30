@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.184 2011/04/09 15:29:40 kristaps Exp $ */
+/*	$Id: term.c,v 1.185 2011/04/29 22:18:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -348,11 +348,10 @@ term_vspace(struct termp *p)
 static void
 numbered(struct termp *p, const char *word, size_t len)
 {
-	const char	*rhs;
+	char		 c;
 
-	rhs = mchars_num2char(word, len);
-	if (rhs) 
-		encode(p, rhs, 1);
+	if ('\0' != (c = mchars_num2char(word, len)))
+		encode(p, &c, 1);
 }
 
 

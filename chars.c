@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.36 2011/04/29 22:18:12 kristaps Exp $ */
+/*	$Id: chars.c,v 1.37 2011/04/30 22:14:02 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -71,7 +71,7 @@ mchars_free(struct mchars *arg)
 }
 
 struct mchars *
-mchars_init(void)
+mchars_alloc(void)
 {
 	struct mchars	 *tab;
 	struct ln	**htab;

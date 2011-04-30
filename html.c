@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.133 2011/04/29 22:18:12 kristaps Exp $ */
+/*	$Id: html.c,v 1.134 2011/04/30 10:18:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -122,7 +122,7 @@ ml_alloc(char *outopts, enum htmltype type)
 
 	h->type = type;
 	h->tags.head = NULL;
-	h->symtab = mchars_init(MCHARS_HTML);
+	h->symtab = mchars_init();
 
 	while (outopts && *outopts)
 		switch (getsubopt(&outopts, UNCONST(toks), &v)) {

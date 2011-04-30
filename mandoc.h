@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.70 2011/04/09 15:29:40 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.71 2011/04/29 22:18:12 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -302,11 +302,6 @@ enum	mandoc_esc {
 	ESCAPE_NOSPACE /* suppress space if the last on a line */
 };
 
-enum	mcharst {
-	MCHARS_ASCII, /* 7-bit ascii representation */
-	MCHARS_HTML /* unicode values */
-};
-
 typedef	void	(*mandocmsg)(enum mandocerr, enum mandoclevel,
 			const char *, int, int, const char *);
 
@@ -332,7 +327,7 @@ void		 *mandoc_realloc(void *, size_t);
 
 enum mandoc_esc	  mandoc_escape(const char **, const char **, int *);
 
-struct mchars	 *mchars_init(enum mcharst);
+struct mchars	 *mchars_init(void);
 const char	 *mchars_num2char(const char *, size_t);
 const char	 *mchars_spec2str(struct mchars *, const char *, size_t, size_t *);
 int		  mchars_spec2cp(struct mchars *, const char *, size_t);

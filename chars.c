@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.35 2011/04/20 22:50:22 kristaps Exp $ */
+/*	$Id: chars.c,v 1.36 2011/04/29 22:18:12 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -55,7 +55,6 @@ struct	ln {
 #include "chars.in"
 
 struct	mchars {
-	enum mcharst	  type;
 	struct ln	**htab;
 };
 
@@ -72,7 +71,7 @@ mchars_free(struct mchars *arg)
 }
 
 struct mchars *
-mchars_init(enum mcharst type)
+mchars_init(void)
 {
 	struct mchars	 *tab;
 	struct ln	**htab;
@@ -103,7 +102,6 @@ mchars_init(enum mcharst type)
 	}
 
 	tab->htab = htab;
-	tab->type = type;
 	return(tab);
 }
 

@@ -1,4 +1,4 @@
-.\"	$Id: mandoc_char.7,v 1.42 2011/02/09 22:53:20 schwarze Exp $
+.\"	$Id: mandoc_char.7,v 1.43 2011/04/20 22:50:22 kristaps Exp $
 .\"
 .\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: February 9 2011 $
+.Dd $Mdocdate: April 20 2011 $
 .Dt MANDOC_CHAR 7
 .Os
 .Sh NAME
@@ -541,6 +541,9 @@ troff implementations, at this time limited to GNU troff
 .Pq Qq groff .
 .Pp
 .Bl -dash -compact
+.It
+The \eN\(aq\(aq escape sequence is limited to printable characters; in
+groff, it accepts arbitrary character numbers.
 .It
 In
 .Fl T Ns Cm ascii ,

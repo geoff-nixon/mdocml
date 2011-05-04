@@ -1,4 +1,4 @@
-/*	$Id: mandoc-db.c,v 1.17 2011/05/03 14:39:27 kristaps Exp $ */
+/*	$Id: mandoc-db.c,v 1.18 2011/05/04 08:21:17 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -228,6 +228,7 @@ main(int argc, char *argv[])
 	char		*fn; /* current file being parsed */
 	const char	*msec, /* manual section */
 	      	 	*mtitle, /* manual title */
+			*arch, /* manual architecture */
 	      		*dir; /* result dir (default: cwd) */
 	char		 ibuf[MAXPATHLEN], /* index fname */
 			 ibbuf[MAXPATHLEN], /* index backup fname */
@@ -364,6 +365,7 @@ main(int argc, char *argv[])
 		mtitle = NULL != mdoc ? 
 			mdoc_meta(mdoc)->title :
 			man_meta(man)->title;
+		arch = NULL != mdoc ? mdoc_meta(mdoc)->arch : NULL;
 
 		assert(msec);
 		assert(mtitle);
@@ -380,6 +382,9 @@ main(int argc, char *argv[])
 		dbt_appendb(&rval, &rsz, fn, strlen(fn) + 1);
 		dbt_appendb(&rval, &rsz, msec, strlen(msec) + 1);
 		dbt_appendb(&rval, &rsz, mtitle, strlen(mtitle) + 1);
+		dbt_appendb(&rval, &rsz, arch ? arch : "", 
+				arch ? strlen(arch) + 1 : 1);
+
 		sv = rval.size;
 
 		/* Fix the record number in the btree value. */

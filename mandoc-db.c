@@ -1,4 +1,4 @@
-/*	$Id: mandoc-db.c,v 1.16 2011/05/03 10:08:09 kristaps Exp $ */
+/*	$Id: mandoc-db.c,v 1.17 2011/05/03 14:39:27 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -50,7 +50,8 @@ enum	type {
 	MANDOC_INCLUDES,
 	MANDOC_VARIABLE,
 	MANDOC_STANDARD,
-	MANDOC_AUTHOR
+	MANDOC_AUTHOR,
+	MANDOC_CONFIG
 };
 
 #define	MAN_ARGS	  DB *db, \
@@ -79,6 +80,7 @@ static	void		  pmdoc(DB *, const char *, DBT *, size_t *,
 				DBT *, DBT *, size_t *, struct mdoc *);
 static	void		  pmdoc_node(MDOC_ARGS);
 static	void		  pmdoc_An(MDOC_ARGS);
+static	void		  pmdoc_Cd(MDOC_ARGS);
 static	void		  pmdoc_Fd(MDOC_ARGS);
 static	void		  pmdoc_In(MDOC_ARGS);
 static	void		  pmdoc_Fn(MDOC_ARGS);
@@ -110,7 +112,7 @@ static	const pmdoc_nf	  mdocs[MDOC_MAX] = {
 	NULL, /* Ad */ 
 	pmdoc_An, /* An */ 
 	NULL, /* Ar */
-	NULL, /* Cd */ 
+	pmdoc_Cd, /* Cd */ 
 	NULL, /* Cm */
 	NULL, /* Dv */ 
 	NULL, /* Er */ 
@@ -588,6 +590,23 @@ pmdoc_Fd(MDOC_ARGS)
 	dbt_appendb(key, ksz, "", 1);
 
 	fl = MANDOC_INCLUDES;
+	memcpy(val->data, &fl, 4);
+}
+
+/* ARGSUSED */
+static void
+pmdoc_Cd(MDOC_ARGS)
+{
+	uint32_t	 fl;
+	
+	if (SEC_SYNOPSIS != n->sec)
+		return;
+
+	for (n = n->child; n; n = n->next)
+		if (MDOC_TEXT == n->type)
+			dbt_append(key, ksz, n->string);
+
+	fl = MANDOC_CONFIG;
 	memcpy(val->data, &fl, 4);
 }
 

@@ -314,6 +314,7 @@
 		</P>
 		<P>
 			Corrected some installation issues in version 1.11.1.
+			Further migration to <A HREF="mandoc.3.html">libmandoc</A>.
 			Initial public release (this utility is very much under development) of <A HREF="makewhatis.1.html">makewhatis</A>,
 			initially named mandoc-db.
 			This utility produces keyword databases of manual content
@@ -390,7 +391,7 @@
 		<P CLASS="foot">
 			Copyright &#169; 2008&#8211;2011 
 			<A CLASS="external" HREF="http://kristaps.bsd.lv">Kristaps Dzonsons</A>, 
-			$Date: 2011/05/04 08:21:17 $
+			$Date: 2011/05/13 00:42:26 $
 		</P>
 	</BODY>
 </HTML>

@@ -158,7 +158,7 @@
 					</TD>
 				</TR>
 				<TR>
-					<TD VALIGN="top"><A HREF="mandoc.1.html">makewhatis(1)</A></TD>
+					<TD VALIGN="top"><A HREF="makewhatis.1.html">makewhatis(1)</A></TD>
 					<TD VALIGN="top">
 						index UNIX manuals
 						<SMALL>
@@ -391,7 +391,7 @@
 		<P CLASS="foot">
 			Copyright &#169; 2008&#8211;2011 
 			<A CLASS="external" HREF="http://kristaps.bsd.lv">Kristaps Dzonsons</A>, 
-			$Date: 2011/05/13 00:42:26 $
+			$Date: 2011/05/13 00:51:27 $
 		</P>
 	</BODY>
 </HTML>

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.48 2011/04/19 16:38:48 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.49 2011/04/30 10:18:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -23,6 +23,8 @@
 
 #include <assert.h>
 #include <ctype.h>
+#include <errno.h>
+#include <limits.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -686,3 +688,35 @@ mandoc_getcontrol(const char *cp, int *ppos)
 	*ppos = pos;
 	return(1);
 }
+
+/*
+ * Convert a string to a long that may not be <0.
+ * If the string is invalid, or is less than 0, return -1.
+ */
+int
+mandoc_strntou(const char *p, size_t sz, int base)
+{
+	char		 buf[32];
+	char		*ep;
+	long		 v;
+
+	if (sz > 31)
+		return(-1);
+
+	memcpy(buf, p, sz);
+	buf[sz] = '\0';
+
+	errno = 0;
+	v = strtol(buf, &ep, base);
+
+	if (buf[0] == '\0' || *ep != '\0')
+		return(-1);
+
+	if ((errno == ERANGE && 
+			(v == LONG_MAX || v == LONG_MIN)) ||
+			(v > INT_MAX || v < 0))
+		return(-1);
+
+	return((int)v);
+}
+

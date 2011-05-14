@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.164 2011/04/23 08:56:29 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.165 2011/04/23 09:10:50 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -288,7 +288,7 @@ a2width(const char *p, struct roffsu *su)
 
 	if ( ! a2roffsu(p, su, SCALE_MAX)) {
 		su->unit = SCALE_BU;
-		su->scale = (int)strlen(p);
+		su->scale = html_strlen(p);
 	}
 }
 
@@ -355,7 +355,7 @@ a2offs(const char *p, struct roffsu *su)
 		SCALE_HS_INIT(su, INDENT * 2);
 	else if ( ! a2roffsu(p, su, SCALE_MAX)) {
 		su->unit = SCALE_BU;
-		su->scale = (int)strlen(p);
+		su->scale = html_strlen(p);
 	}
 }
 
@@ -703,7 +703,7 @@ mdoc_nm_pre(MDOC_ARGS)
 {
 	struct htmlpair	 tag;
 	struct roffsu	 su;
-	size_t		 len;
+	int		 len;
 
 	switch (n->type) {
 	case (MDOC_ELEM):
@@ -731,10 +731,10 @@ mdoc_nm_pre(MDOC_ARGS)
 
 	for (len = 0, n = n->child; n; n = n->next)
 		if (MDOC_TEXT == n->type)
-			len += strlen(n->string);
+			len += html_strlen(n->string);
 
 	if (0 == len && m->name)
-		len = strlen(m->name);
+		len = html_strlen(m->name);
 
 	SCALE_HS_INIT(&su, (double)len);
 	bufcat_su(h, "width", &su);

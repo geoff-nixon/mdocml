@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.39 2011/04/30 22:24:31 kristaps Exp $ */
+/*	$Id: chars.c,v 1.40 2011/05/01 08:38:56 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -151,7 +151,8 @@ mchars_num2char(const char *p, size_t sz)
 		return('\0');
 
 	i = atoi(p);
-	return(isprint(i) ? (char)i : '\0');
+	/* LINTED */
+	return(isprint(i) ? i : '\0');
 }
 
 /* 

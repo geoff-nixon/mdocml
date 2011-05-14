@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.49 2011/04/30 10:18:24 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.50 2011/05/14 16:06:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -704,7 +704,7 @@ mandoc_strntou(const char *p, size_t sz, int base)
 		return(-1);
 
 	memcpy(buf, p, sz);
-	buf[sz] = '\0';
+	buf[(int)sz] = '\0';
 
 	errno = 0;
 	v = strtol(buf, &ep, base);

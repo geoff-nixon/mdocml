@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.73 2011/04/30 22:14:42 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.74 2011/04/30 22:24:31 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -299,6 +299,7 @@ enum	mandoc_esc {
 	ESCAPE_FONTROMAN, /* roman font mode */
 	ESCAPE_FONTPREV, /* previous font mode */
 	ESCAPE_NUMBERED, /* a numbered glyph */
+	ESCAPE_UNICODE, /* a unicode codepoint */
 	ESCAPE_NOSPACE /* suppress space if the last on a line */
 };
 

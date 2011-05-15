@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.50 2011/05/14 16:06:09 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.51 2011/05/14 17:54:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -125,6 +125,14 @@ mandoc_escape(const char **end, const char **start, int *sz)
 		break;
 	case ('['):
 		gly = ESCAPE_SPECIAL;
+		/*
+		 * Unicode escapes are defined in groff as \[uXXXX] to
+		 * \[u10FFFF], where the contained value must be a valid
+		 * Unicode codepoint.  Here, however, only check whether
+		 * it's not a zero-width escape.
+		 */
+		if ('u' == cp[i] && ']' != cp[i + 1])
+			gly = ESCAPE_UNICODE;
 		term = ']';
 		break;
 	case ('C'):

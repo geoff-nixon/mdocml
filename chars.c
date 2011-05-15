@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.41 2011/05/14 17:54:42 kristaps Exp $ */
+/*	$Id: chars.c,v 1.42 2011/05/15 15:47:46 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -26,6 +26,7 @@
 #include <string.h>
 
 #include "mandoc.h"
+#include "libmandoc.h"
 
 #define	PRINT_HI	 126
 #define	PRINT_LO	 32
@@ -148,11 +149,9 @@ mchars_num2char(const char *p, size_t sz)
 {
 	int		  i;
 
-	if (sz > 3)
+	if ((i = mandoc_strntou(p, sz, 10)) < 0)
 		return('\0');
 
-	i = atoi(p);
-	/* LINTED */
 	return(isprint(i) ? i : '\0');
 }
 

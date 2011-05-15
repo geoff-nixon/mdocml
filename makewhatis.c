@@ -1,4 +1,4 @@
-/*	$Id: mandoc-db.c,v 1.21 2011/05/12 23:44:51 kristaps Exp $ */
+/*	$Id: makewhatis.c,v 1.1 2011/05/13 00:42:26 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -467,48 +467,6 @@ dbt_appendb(DBT *key, size_t *ksz, const void *cp, size_t sz)
 		*ksz = key->size + sz + MANDOC_BUFSZ;
 		key->data = mandoc_realloc(key->data, *ksz);
 	}
-
-#if 0
-	dstp = key->data + (int)key->size;
-
-	while (NULL != (endp = memchr(cp, '\\', sz))) {
-		ssz = endp - cp;
-		memcpy(dstp, cp, ssz);
-
-		dstp += ssz;
-		key->size += ssz;
-		sz -= ssz;
-
-		cp = endp++;
-		/* FIXME: expects nil-terminated string! */
-		esc = mandoc_escape((const char **)&endp, NULL, NULL);
-
-		switch (esc) {
-		case (ESCAPE_ERROR):
-			/* Nil-terminate this point. */
-			memcpy(dstp, "", 1);
-			key->size++;
-			return;
-		case (ESCAPE_PREDEF):
-			/* FALLTHROUGH */
-		case (ESCAPE_SPECIAL):
-			break;
-		default:
-			sz -= endp - cp;
-			cp = endp;
-			continue;
-		}
-
-		ssz = endp - cp;
-		memcpy(dstp, cp, ssz);
-
-		dstp += ssz;
-		key->size += ssz;
-		sz -= ssz;
-
-		cp = endp;
-	}
-#endif
 
 	memcpy(key->data + (int)key->size, cp, sz);
 	key->size += sz;

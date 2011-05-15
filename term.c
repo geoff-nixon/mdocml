@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.188 2011/05/14 18:15:20 kristaps Exp $ */
+/*	$Id: term.c,v 1.189 2011/05/15 14:50:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -605,7 +605,7 @@ size_t
 term_strlen(const struct termp *p, const char *cp)
 {
 	size_t		 sz, rsz, i;
-	int		 ssz;
+	int		 ssz, c;
 	const char	*seq, *rhs;
 	static const char rej[] = { '\\', ASCII_HYPH, ASCII_NBRSP, '\0' };
 
@@ -624,9 +624,15 @@ term_strlen(const struct termp *p, const char *cp)
 		switch (*cp) {
 		case ('\\'):
 			cp++;
+			rhs = NULL;
 			switch (mandoc_escape(&cp, &seq, &ssz)) {
 			case (ESCAPE_ERROR):
 				return(sz);
+			case (ESCAPE_NUMBERED):
+				c = mchars_num2char(seq, ssz);
+				if ('\0' != c)
+					sz += (*p->width)(p, c);
+				break;
 			case (ESCAPE_PREDEF):
 				rhs = mchars_res2str
 					(p->symtab, seq, ssz, &rsz);
@@ -642,7 +648,6 @@ term_strlen(const struct termp *p, const char *cp)
 				rsz = ssz;
 				break;
 			default:
-				rhs = NULL;
 				break;
 			}
 

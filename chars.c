@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.40 2011/05/01 08:38:56 kristaps Exp $ */
+/*	$Id: chars.c,v 1.41 2011/05/14 17:54:42 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -141,6 +141,7 @@ mchars_res2cp(struct mchars *arg, const char *p, size_t sz)
  * This can only be a printable character (i.e., alnum, punct, space) so
  * prevent the character from ruining our state (backspace, newline, and
  * so on).
+ * If the character is illegal, returns '\0'.
  */
 char
 mchars_num2char(const char *p, size_t sz)

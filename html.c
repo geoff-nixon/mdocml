@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.137 2011/04/30 22:24:31 kristaps Exp $ */
+/*	$Id: html.c,v 1.138 2011/05/14 16:28:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -316,9 +316,10 @@ html_strlen(const char *cp)
 		switch (mandoc_escape(&cp, &seq, &ssz)) {
 		case (ESCAPE_ERROR):
 			return(sz);
+		case (ESCAPE_NUMBERED):
+			/* FALLTHROUGH */
 		case (ESCAPE_PREDEF):
-			sz++;
-			break;
+			/* FALLTHROUGH */
 		case (ESCAPE_SPECIAL):
 			sz++;
 			break;

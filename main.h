@@ -1,4 +1,4 @@
-/*	$Id: main.h,v 1.9 2010/07/25 11:44:31 kristaps Exp $ */
+/*	$Id: main.h,v 1.10 2010/07/31 23:52:58 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -41,6 +41,7 @@ void		  html_free(void *);
 void		  tree_mdoc(void *, const struct mdoc *);
 void		  tree_man(void *, const struct man *);
 
+void		 *locale_alloc(char *);
 void		 *ascii_alloc(char *);
 void		  ascii_free(void *);
 

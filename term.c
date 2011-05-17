@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.191 2011/05/15 22:29:50 kristaps Exp $ */
+/*	$Id: term.c,v 1.192 2011/05/17 11:55:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -68,18 +68,6 @@ term_end(struct termp *p)
 
 	(*p->end)(p);
 }
-
-
-struct termp *
-term_alloc(enum termenc enc)
-{
-	struct termp	*p;
-
-	p = mandoc_calloc(1, sizeof(struct termp));
-	p->enc = enc;
-	return(p);
-}
-
 
 /*
  * Flush a line of text.  A "line" is loosely defined as being something

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.228 2011/04/30 22:14:02 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.229 2011/04/30 22:14:42 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -264,14 +264,7 @@ terminal_mdoc(void *arg, const struct mdoc *mdoc)
 	p->tabwidth = term_len(p, 5);
 
 	if (NULL == p->symtab)
-		switch (p->enc) {
-		case (TERMENC_ASCII):
-			p->symtab = mchars_alloc();
-			break;
-		default:
-			abort();
-			/* NOTREACHED */
-		}
+		p->symtab = mchars_alloc();
 
 	n = mdoc_node(mdoc);
 	m = mdoc_meta(mdoc);

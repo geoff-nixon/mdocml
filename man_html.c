@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.69 2011/02/09 09:52:47 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.70 2011/03/07 01:35:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -158,7 +158,7 @@ print_man_head(MAN_ARGS)
 
 	print_gen_head(h);
 	bufinit(h);
-	buffmt(h, "%s(%s)", m->title, m->msec);
+	bufcat_fmt(h, "%s(%s)", m->title, m->msec);
 
 	print_otag(h, TAG_TITLE, 0, NULL);
 	print_text(h, h->buf);

@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.140 2011/05/17 10:48:06 kristaps Exp $ */
+/*	$Id: html.c,v 1.141 2011/05/17 11:19:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -713,32 +713,13 @@ bufcat_su(struct html *h, const char *p, const struct roffsu *su)
 }
 
 void
-html_idcat(char *dst, const char *src, int sz)
+bufcat_id(struct html *h, const char *src)
 {
-	int		 ssz;
-
-	assert(sz > 2);
 
 	/* Cf. <http://www.w3.org/TR/html4/types.html#h-6.2>. */
 
-	/* We can't start with a number (bah). */
-
-	if ('#' == *dst) {
-		dst++;
-		sz--;
-	}
-	if ('\0' == *dst) {
-		*dst++ = 'x';
-		*dst = '\0';
-		sz--;
-	}
-
-	for ( ; *dst != '\0' && sz; dst++, sz--)
-		/* Jump to end. */ ;
-
-	for ( ; *src != '\0' && sz > 1; src++) {
-		ssz = snprintf(dst, (size_t)sz, "%.2x", *src);
-		sz -= ssz;
-		dst += ssz;
-	}
+	if (0 == h->buflen)
+		bufcat(h, "#x");
+	while ('\0' != *src)
+		bufcat_fmt(h, "%.2x", *src++);
 }

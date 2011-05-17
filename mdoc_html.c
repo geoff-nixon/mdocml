@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.165 2011/04/23 09:10:50 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.166 2011/05/14 16:28:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -382,7 +382,7 @@ print_mdoc_head(MDOC_ARGS)
 
 	print_gen_head(h);
 	bufinit(h);
-	buffmt(h, "%s(%s)", m->title, m->msec);
+	bufcat_fmt(h, "%s(%s)", m->title, m->msec);
 
 	if (m->arch) {
 		bufcat(h, " (");

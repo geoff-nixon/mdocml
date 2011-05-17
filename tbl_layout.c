@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.18 2011/04/04 23:04:38 kristaps Exp $ */
+/*	$Id: tbl_layout.c,v 1.19 2011/04/07 01:08:42 joerg Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -71,6 +71,23 @@ mods(struct tbl_node *tbl, struct tbl_cell *cp,
 {
 	char		 buf[5];
 	int		 i;
+
+	/* Not all types accept modifiers. */
+
+	switch (cp->pos) {
+	case (TBL_CELL_DOWN):
+		/* FALLTHROUGH */
+	case (TBL_CELL_HORIZ):
+		/* FALLTHROUGH */
+	case (TBL_CELL_DHORIZ):
+		/* FALLTHROUGH */
+	case (TBL_CELL_VERT):
+		/* FALLTHROUGH */
+	case (TBL_CELL_DVERT):
+		return(1);
+	default:
+		break;
+	}
 
 mod:
 	/* 

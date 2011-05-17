@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.167 2011/05/17 11:19:45 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.168 2011/05/17 11:34:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1171,6 +1171,7 @@ mdoc_sx_pre(MDOC_ARGS)
 	struct htmlpair	 tag[2];
 
 	bufinit(h);
+	bufcat(h, "#x");
 	for (n = n->child; n; n = n->next) {
 		bufcat_id(h, n->string);
 		if (n->next)

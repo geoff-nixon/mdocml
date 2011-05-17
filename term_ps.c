@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.49 2011/05/14 17:54:42 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.50 2011/05/15 00:58:48 kristaps Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -434,7 +434,8 @@ pspdf_alloc(char *outopts)
 	const char	*pp;
 	char		*v;
 
-	p = term_alloc(TERMENC_ASCII);
+	p = mandoc_calloc(1, sizeof(struct termp));
+	p->enc = TERMENC_ASCII;
 	p->ps = mandoc_calloc(1, sizeof(struct termp_ps));
 
 	p->advance = ps_advance;

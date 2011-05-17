@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.74 2011/04/30 22:24:31 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.75 2011/05/15 15:30:33 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -330,6 +330,7 @@ enum mandoc_esc	  mandoc_escape(const char **, const char **, int *);
 
 struct mchars	 *mchars_alloc(void);
 char	 	  mchars_num2char(const char *, size_t);
+int		  mchars_num2uc(const char *, size_t);
 const char	 *mchars_spec2str(struct mchars *, const char *, size_t, size_t *);
 int		  mchars_spec2cp(struct mchars *, const char *, size_t);
 const char	 *mchars_res2str(struct mchars *, const char *, size_t, size_t *);

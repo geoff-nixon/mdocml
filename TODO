@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.103 2011/04/17 13:32:27 schwarze Exp $
+* $Id: TODO,v 1.104 2011/04/30 10:18:24 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -134,6 +134,10 @@
 - implement basic non-parametric .de to support e.g. sox(1)
   reported by naddy@ Sat, 16 Oct 2010 23:51:57 +0200
   *** sox(1) still doesn't work, tbl(1) errors need investigation
+
+- allow standalone `.' to be interpreted as an end-of-layout
+  delimiter instead of being thrown away as a no-op roff line
+  reported by Yuri Pankov, Wed 18 May 2011 11:34:59 CEST
 
 --- missing misc features ----------------------------------------------
 

@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.143 2011/05/17 11:38:18 kristaps Exp $ */
+/*	$Id: html.c,v 1.144 2011/05/17 11:50:20 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -272,6 +272,8 @@ print_metaf(struct html *h, enum mandoc_esc deco)
 	case (ESCAPE_FONTBOLD):
 		font = HTMLFONT_BOLD;
 		break;
+	case (ESCAPE_FONT):
+		/* FALLTHROUGH */
 	case (ESCAPE_FONTROMAN):
 		font = HTMLFONT_NONE;
 		break;
@@ -392,6 +394,8 @@ print_encode(struct html *h, const char *p, int norecurse)
 		case (ESCAPE_SPECIAL):
 			print_spec(h, seq, len);
 			break;
+		case (ESCAPE_FONT):
+			/* FALLTHROUGH */
 		case (ESCAPE_FONTPREV):
 			/* FALLTHROUGH */
 		case (ESCAPE_FONTBOLD):

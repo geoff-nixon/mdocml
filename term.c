@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.193 2011/05/17 14:38:34 kristaps Exp $ */
+/*	$Id: term.c,v 1.194 2011/05/17 22:32:45 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -471,6 +471,8 @@ term_word(struct termp *p, const char *word)
 		case (ESCAPE_FONTITALIC):
 			term_fontrepl(p, TERMFONT_UNDER);
 			break;
+		case (ESCAPE_FONT):
+			/* FALLTHROUGH */
 		case (ESCAPE_FONTROMAN):
 			term_fontrepl(p, TERMFONT_NONE);
 			break;

@@ -310,6 +310,18 @@
 		</H1>
 
 		<P CLASS="news">
+			19-05-2011: version 1.11.3
+		</P>
+		<P>
+			Introduce locale-encoding of output with the <B>-Tlocale</B> output option and Unicode escaped-character input.
+			See <A HREF="mandoc.1.html">mandoc</A> and <A HREF="mandoc_char.7.html">mandoc_char</A>, respectively, for details.
+			This allows for non-ASCII characters (e.g., <I>\[u5000]</I>) to be rendered in the locale's encoding, if said
+			environment supports wide-character encoding (if it does not, <B>-Tascii</B> is used instead).
+			Locale support can be turned off at compile time by removing <I>-DUSE_WCHAR</I> in the <I>Makefile</I>, in which case
+			<B>-Tlocale</B> is always a synonym for <B>-Tascii</B>.
+		</P>
+
+		<P CLASS="news">
 			12-05-2011: version 1.11.2
 		</P>
 		<P>
@@ -349,7 +361,7 @@
 			<SMALL>
 				Copyright &#169; 2008&#8211;2011 
 				<A CLASS="external" HREF="http://kristaps.bsd.lv">Kristaps Dzonsons</A>, 
-				$Date: 2011/05/13 01:04:07 $
+				$Date: 2011/05/14 23:41:50 $
 			</SMALL>
 		</P>
 	</BODY>

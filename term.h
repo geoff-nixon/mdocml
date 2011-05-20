@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.83 2011/05/15 00:58:48 kristaps Exp $ */
+/*	$Id: term.h,v 1.84 2011/05/17 14:38:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -23,7 +23,8 @@ struct	termp;
 
 enum	termenc {
 	TERMENC_ASCII,
-	TERMENC_LOCALE
+	TERMENC_LOCALE,
+	TERMENC_UTF8
 };
 
 enum	termtype {

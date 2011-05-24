@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.51 2011/05/14 17:54:42 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.52 2011/05/15 15:30:33 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -163,10 +163,6 @@ mandoc_escape(const char **end, const char **start, int *sz)
 	case ('Y'):
 		if (ESCAPE_ERROR == gly)
 			gly = ESCAPE_IGNORE;
-		/* FALLTHROUGH */
-	case ('*'):
-		if (ESCAPE_ERROR == gly)
-			gly = ESCAPE_PREDEF;
 		/* FALLTHROUGH */
 	case ('f'):
 		if (ESCAPE_ERROR == gly)

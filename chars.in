@@ -1,4 +1,4 @@
-/*	$Id: chars.in,v 1.37 2011/04/20 22:50:22 kristaps Exp $ */
+/*	$Id: chars.in,v 1.38 2011/05/24 21:24:16 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -33,15 +33,15 @@ static const char ascii_nbrsp[2] = { ASCII_NBRSP, '\0' };
 CHAR_TBL_START
 
 /* Spacing. */
-CHAR("c",			"",		0)
+CHAR("c",			"",		8203)
 CHAR("0",			" ",		8194)
 CHAR(" ",			ascii_nbrsp,	160)
 CHAR("~",			ascii_nbrsp,	160)
-CHAR("%",			"",		0)
-CHAR("&",			"",		0)
-CHAR("^",			"",		0)
-CHAR("|",			"",		0)
-CHAR("}",			"",		0)
+CHAR("%",			"",		8203)
+CHAR("&",			"",		8203)
+CHAR("^",			"",		8203)
+CHAR("|",			"",		8203)
+CHAR("}",			"",		8203)
 
 /* Accents. */
 CHAR("a\"",			"\"",		779)

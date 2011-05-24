@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.3,v 1.8 2011/05/17 12:22:15 kristaps Exp $
+.\"	$Id: mandoc.3,v 1.9 2011/05/24 21:31:23 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 17 2011 $
+.Dd $Mdocdate: May 24 2011 $
 .Dt MANDOC 3
 .Os
 .Sh NAME
@@ -248,9 +248,7 @@ a Unicode codepoint.
 Returns \e0 (the nil character) if the input sequence is malformed.
 .It Fn mchars_spec2cp
 Convert a special character into a valid Unicode codepoint.
-Returns \-1 on failure and 0 if no code-point exists (if this occurs,
-the caller should fall back to
-.Fn mchars_spec2str ) .
+Returns \-1 on failure or a non-zero Unicode codepoint on success.
 .It Fn mchars_spec2str
 Convert a special character into an ASCII string.
 Returns NULL on failure.

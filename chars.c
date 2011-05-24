@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.44 2011/05/17 11:50:20 kristaps Exp $ */
+/*	$Id: chars.c,v 1.45 2011/05/24 21:24:16 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -113,21 +113,6 @@ mchars_spec2cp(struct mchars *arg, const char *p, size_t sz)
 	return(ln->unicode);
 }
 
-
-/* 
- * Reserved word to Unicode codepoint.
- */
-int
-mchars_res2cp(struct mchars *arg, const char *p, size_t sz)
-{
-	const struct ln	*ln;
-
-	ln = find(arg, p, sz);
-	if (NULL == ln)
-		return(-1);
-	return(ln->unicode);
-}
-
 /*
  * Numbered character string to ASCII codepoint.
  * This can only be a printable character (i.e., alnum, punct, space) so
@@ -165,22 +150,6 @@ mchars_num2uc(const char *p, size_t sz)
  */
 const char *
 mchars_spec2str(struct mchars *arg, const char *p, size_t sz, size_t *rsz)
-{
-	const struct ln	*ln;
-
-	ln = find(arg, p, sz);
-	if (NULL == ln)
-		return(NULL);
-
-	*rsz = strlen(ln->ascii);
-	return(ln->ascii);
-}
-
-/* 
- * Reserved word to string array.
- */
-const char *
-mchars_res2str(struct mchars *arg, const char *p, size_t sz, size_t *rsz)
 {
 	const struct ln	*ln;
 

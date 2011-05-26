@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.13 2011/04/11 21:59:39 kristaps Exp $ */
+/*	$Id: read.c,v 1.14 2011/04/30 10:18:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -19,8 +19,10 @@
 #include "config.h"
 #endif
 
-#include <sys/stat.h>
-#include <sys/mman.h>
+#ifdef HAVE_MMAP
+# include <sys/stat.h>
+# include <sys/mman.h>
+#endif
 
 #include <assert.h>
 #include <ctype.h>
@@ -529,19 +531,22 @@ pdesc(struct mparse *curp, const char *file, int fd)
 
 	mparse_buf_r(curp, blk, 1);
 
+#ifdef	HAVE_MMAP
 	if (with_mmap)
 		munmap(blk.buf, blk.sz);
 	else
+#endif
 		free(blk.buf);
 }
 
 static int
 read_whole_file(const char *file, int fd, struct buf *fb, int *with_mmap)
 {
-	struct stat	 st;
 	size_t		 off;
 	ssize_t		 ssz;
 
+#ifdef	HAVE_MMAP
+	struct stat	 st;
 	if (-1 == fstat(fd, &st)) {
 		perror(file);
 		return(0);
@@ -566,6 +571,7 @@ read_whole_file(const char *file, int fd, struct buf *fb, int *with_mmap)
 		if (fb->buf != MAP_FAILED)
 			return(1);
 	}
+#endif
 
 	/*
 	 * If this isn't a regular file (like, say, stdin), then we must

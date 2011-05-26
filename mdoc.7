@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.186 2011/04/17 11:57:07 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.187 2011/05/21 15:55:42 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: April 17 2011 $
+.Dd $Mdocdate: May 21 2011 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -296,19 +296,20 @@ sections, although this varies between manual sections.
 .Pp
 The following is a well-formed skeleton
 .Nm
-file:
+file for a utility
+.Qq progname :
 .Bd -literal -offset indent
 \&.Dd $\&Mdocdate$
-\&.Dt mdoc 7
+\&.Dt PROGNAME section
 \&.Os
 \&.Sh NAME
-\&.Nm foo
+\&.Nm progname
 \&.Nd a description goes here
 \&.\e\*q .Sh LIBRARY
 \&.\e\*q For sections 2, 3, & 9 only.
 \&.\e\*q Not used in OpenBSD.
 \&.Sh SYNOPSIS
-\&.Nm foo
+\&.Nm progname
 \&.Op Fl options
 \&.Ar
 \&.Sh DESCRIPTION

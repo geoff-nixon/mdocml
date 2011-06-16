@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.168 2011/05/17 11:34:31 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.169 2011/05/17 11:38:18 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1666,10 +1666,11 @@ mdoc_lk_pre(MDOC_ARGS)
 
 	print_otag(h, TAG_A, 2, tag);
 
-	for (n = n->next; n; n = n->next) {
-		assert(MDOC_TEXT == n->type);
+	if (NULL == n->next)
 		print_text(h, n->string);
-	}
+
+	for (n = n->next; n; n = n->next)
+		print_text(h, n->string);
 
 	return(0);
 }

@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.71 2011/05/17 11:19:45 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.72 2011/05/17 11:34:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -134,7 +134,6 @@ html_man(void *arg, const struct man *m)
 
 	printf("\n");
 }
-
 
 static void
 print_man(MAN_ARGS) 

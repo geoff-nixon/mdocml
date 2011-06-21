@@ -1,4 +1,4 @@
-.\"	$Id: makewhatis.1,v 1.2 2011/05/14 23:43:03 kristaps Exp $
+.\"	$Id: makewhatis.1,v 1.3 2011/05/26 23:01:26 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: May 14 2011 $
+.Dd $Mdocdate: May 26 2011 $
 .Dt MAKEWHATIS 1
 .Os
 .Sh NAME
@@ -87,32 +87,29 @@ length plus one) mapping to a 8-byte binary field consisting of the
 keyword type and source
 .Sx Index Database
 record number.
-The type, an unsigned 32-bit integer in host order, is one of the
-following:
+The type, a 32-bit bit-mask in host order, consists of the following
+fields:
 .Pp
 .Bl -tag -width Ds -offset indent -compact
 .It Li 0x01
 The name of a manual page as given in the NAME section.
 .It Li 0x02
 A function prototype name as given in the SYNOPSIS section.
-.It Li 0x03
-A utility name as given in the SYNOPSIS section.
 .It Li 0x04
-An include file as given in the SYNOPSIS section.
-.It Li 0x05
-A variable name as given in the SYNOPSIS section.
-.It Li 0x06
-A standard as given in the STANDARDS section.
-.It Li 0x07
-An author as given in the AUTHORS section.
+A utility name as given in the SYNOPSIS section.
 .It Li 0x08
+An include file as given in the SYNOPSIS section.
+.It Li 0x10
+A variable name as given in the SYNOPSIS section.
+.It Li 0x20
+A standard as given in the STANDARDS section.
+.It Li 0x40
+An author as given in the AUTHORS section.
+.It Li 0x80
 A configuration as given in the SYNOPSIS section.
 .El
 .Pp
-If a value is encountered outside of this range, the database is
-corrupt.
-.Pp
-The latter four bytes are a host-ordered record number within the
+The last four bytes are a host-ordered record number within the
 .Sx Index Database .
 .Pp
 The

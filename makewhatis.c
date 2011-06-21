@@ -1,4 +1,4 @@
-/*	$Id: makewhatis.c,v 1.2 2011/05/15 02:47:17 kristaps Exp $ */
+/*	$Id: makewhatis.c,v 1.3 2011/06/21 13:05:14 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -792,7 +792,8 @@ hash_put(DB *db, const struct buf *buf, int mask)
 	int		 rc;
 
 	key.data = buf->cp;
-	if (0 == (key.size = buf->len))
+
+	if ((key.size = buf->len) < 2)
 		return;
 
 	if ((rc = (*db->get)(db, &key, &val, 0)) < 0) {

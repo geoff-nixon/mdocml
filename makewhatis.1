@@ -1,4 +1,4 @@
-.\"	$Id: makewhatis.1,v 1.5 2011/06/21 14:16:05 kristaps Exp $
+.\"	$Id: makewhatis.1,v 1.6 2011/06/22 10:36:36 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: June 21 2011 $
+.Dd $Mdocdate: June 22 2011 $
 .Dt MAKEWHATIS 1
 .Os
 .Sh NAME
@@ -114,6 +114,10 @@ An author as given in the AUTHORS section.
 A configuration as given in the SYNOPSIS section.
 .It Li 0x100
 Free-form descriptive text as given in the NAME section.
+.It Li 0x200
+Cross-links between manuals.
+Listed as the link name, then a period, then the link section.
+If the link has no section, the period terminates the string.
 .El
 .Pp
 The last four bytes are a host-ordered record number within the

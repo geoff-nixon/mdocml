@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.112 2011/06/18 17:36:52 kristaps Exp $
+* $Id: TODO,v 1.113 2011/06/18 17:58:48 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -305,8 +305,6 @@
     indented text
   should produce one, not three blank lines.
   Reported by naddy@  Mon, 28 Mar 2011 20:45:42 +0200
-
-- At least sometimes, .sp is ignored right after .SH; see named.conf(5).
 
 - trailing whitespace must be ignored even when followed by a font escape,
   see for example 

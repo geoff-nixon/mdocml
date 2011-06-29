@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.169 2011/05/17 11:38:18 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.170 2011/06/16 22:21:28 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1633,8 +1633,9 @@ mdoc_sp_pre(MDOC_ARGS)
 	SCALE_VS_INIT(&su, 1);
 
 	if (MDOC_sp == n->tok) {
-		if (n->child)
-			a2roffsu(n->child->string, &su, SCALE_VS);
+		if (NULL != (n = n->child))
+			if ( ! a2roffsu(n->string, &su, SCALE_VS))
+				SCALE_VS_INIT(&su, atoi(n->string));
 	} else
 		su.scale = 0;
 

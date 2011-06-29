@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.110 2011/06/18 17:36:52 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.111 2011/06/18 17:58:48 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -181,7 +181,7 @@ a2height(const struct termp *p, const char *cp)
 	struct roffsu	 su;
 
 	if ( ! a2roffsu(cp, &su, SCALE_VS))
-		SCALE_VS_INIT(&su, term_strlen(p, cp));
+		SCALE_VS_INIT(&su, atoi(cp));
 
 	return(term_vspan(p, &su));
 }
@@ -410,6 +410,13 @@ static int
 pre_sp(DECL_ARGS)
 {
 	size_t		 i, len;
+
+	if ((NULL == n->prev && n->parent)) {
+		if (MAN_SS == n->parent->tok)
+			return(0);
+		if (MAN_SH == n->parent->tok)
+			return(0);
+	}
 
 	switch (n->tok) {
 	case (MAN_br):

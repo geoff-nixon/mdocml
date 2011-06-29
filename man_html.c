@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.73 2011/06/18 17:58:48 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.74 2011/06/18 20:34:08 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -414,8 +414,9 @@ man_br_pre(MAN_ARGS)
 	SCALE_VS_INIT(&su, 1);
 
 	if (MAN_sp == n->tok) {
-		if (n->child)
-			a2roffsu(n->child->string, &su, SCALE_VS);
+		if (NULL != (n = n->child))
+			if ( ! a2roffsu(n->string, &su, SCALE_VS))
+				SCALE_VS_INIT(&su, atoi(n->string));
 	} else
 		su.scale = 0;
 

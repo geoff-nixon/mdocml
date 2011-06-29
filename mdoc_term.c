@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.229 2011/04/30 22:14:42 kristaps Exp $ */
+/*	$Id: mdoc_term.c,v 1.230 2011/05/17 14:38:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -523,9 +523,10 @@ a2height(const struct termp *p, const char *v)
 {
 	struct roffsu	 su;
 
+
 	assert(v);
 	if ( ! a2roffsu(v, &su, SCALE_VS))
-		SCALE_VS_INIT(&su, term_len(p, 1));
+		SCALE_VS_INIT(&su, atoi(v));
 
 	return(term_vspan(p, &su));
 }

@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.141 2011/05/24 21:18:06 kristaps Exp $ */
+/*	$Id: roff.c,v 1.142 2011/05/26 11:58:25 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -347,8 +347,12 @@ roff_free1(struct roff *r)
 void
 roff_reset(struct roff *r)
 {
+	int		 i;
 
 	roff_free1(r);
+
+	for (i = 0; i < PREDEFS_MAX; i++) 
+		roff_setstr(r, predefs[i].name, predefs[i].str, 0);
 }
 
 

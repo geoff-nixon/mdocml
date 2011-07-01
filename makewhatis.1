@@ -1,4 +1,4 @@
-.\"	$Id: makewhatis.1,v 1.7 2011/06/25 13:19:25 kristaps Exp $
+.\"	$Id: makewhatis.1,v 1.8 2011/07/01 09:11:35 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: June 25 2011 $
+.Dd $Mdocdate: July 1 2011 $
 .Dt MAKEWHATIS 1
 .Os
 .Sh NAME
@@ -120,6 +120,8 @@ Listed as the link name, then a period, then the link section.
 If the link has no section, the period terminates the string.
 .It Li 0x400
 Path reference as given in the FILES section.
+.It Li 0x800
+Environment variable as given in the ENVIRONMENT section.
 .El
 .Pp
 The last four bytes are a host-ordered record number within the

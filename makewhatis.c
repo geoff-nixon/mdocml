@@ -1,4 +1,4 @@
-/*	$Id: makewhatis.c,v 1.10 2011/06/22 10:36:36 kristaps Exp $ */
+/*	$Id: makewhatis.c,v 1.11 2011/06/25 13:19:25 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -55,6 +55,7 @@
 #define TYPE_CONFIG	  0x80
 #define TYPE_DESC	  0x100
 #define TYPE_XREF	  0x200
+#define TYPE_PATH	  0x400
 
 /* Buffer for storing growable data. */
 
@@ -89,6 +90,7 @@ static	void		  pmdoc_Fn(MDOC_ARGS);
 static	void		  pmdoc_Fo(MDOC_ARGS);
 static	void		  pmdoc_Nd(MDOC_ARGS);
 static	void		  pmdoc_Nm(MDOC_ARGS);
+static	void		  pmdoc_Pa(MDOC_ARGS);
 static	void		  pmdoc_St(MDOC_ARGS);
 static	void		  pmdoc_Vt(MDOC_ARGS);
 static	void		  pmdoc_Xr(MDOC_ARGS);
@@ -132,7 +134,7 @@ static	const pmdoc_nf	  mdocs[MDOC_MAX] = {
 	pmdoc_Nm, /* Nm */
 	NULL, /* Op */
 	NULL, /* Ot */
-	NULL, /* Pa */
+	pmdoc_Pa, /* Pa */
 	NULL, /* Rv */
 	pmdoc_St, /* St */ 
 	pmdoc_Vt, /* Va */
@@ -747,6 +749,21 @@ pmdoc_Nd(MDOC_ARGS)
 	}
 
 	hash_put(hash, buf, TYPE_DESC);
+}
+
+/* ARGSUSED */
+static void
+pmdoc_Pa(MDOC_ARGS)
+{
+
+	if (SEC_FILES != n->sec)
+		return;
+	
+	for (n = n->child; n; n = n->next)
+		if (MDOC_TEXT == n->type)
+			buf_append(buf, n->string);
+
+	hash_put(hash, buf, TYPE_PATH);
 }
 
 /* ARGSUSED */

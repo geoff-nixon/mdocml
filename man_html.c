@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.74 2011/06/18 20:34:08 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.75 2011/06/29 15:38:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -439,6 +439,7 @@ man_SH_pre(MAN_ARGS)
 	struct htmlpair	 tag;
 
 	if (MAN_BLOCK == n->type) {
+		mh->fl &= ~MANH_LITERAL;
 		PAIR_CLASS_INIT(&tag, "section");
 		print_otag(h, TAG_DIV, 1, &tag);
 		return(1);
@@ -520,6 +521,7 @@ man_SS_pre(MAN_ARGS)
 	struct htmlpair	 tag;
 
 	if (MAN_BLOCK == n->type) {
+		mh->fl &= ~MANH_LITERAL;
 		PAIR_CLASS_INIT(&tag, "subsection");
 		print_otag(h, TAG_DIV, 1, &tag);
 		return(1);

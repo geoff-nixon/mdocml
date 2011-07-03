@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.111 2011/06/18 17:58:48 kristaps Exp $ */
+/*	$Id: man_term.c,v 1.112 2011/06/29 15:38:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -709,6 +709,7 @@ pre_SS(DECL_ARGS)
 
 	switch (n->type) {
 	case (MAN_BLOCK):
+		mt->fl &= ~MANT_LITERAL;
 		mt->lmargin = term_len(p, INDENT);
 		mt->offset = term_len(p, INDENT);
 		/* If following a prior empty `SS', no vspace. */
@@ -759,6 +760,7 @@ pre_SH(DECL_ARGS)
 
 	switch (n->type) {
 	case (MAN_BLOCK):
+		mt->fl &= ~MANT_LITERAL;
 		mt->lmargin = term_len(p, INDENT);
 		mt->offset = term_len(p, INDENT);
 		/* If following a prior empty `SH', no vspace. */

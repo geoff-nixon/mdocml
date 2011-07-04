@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.146 2011/05/24 21:31:23 kristaps Exp $ */
+/*	$Id: html.c,v 1.147 2011/05/24 21:40:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -595,7 +595,6 @@ bufcat(struct html *h, const char *p)
 
 	h->buflen = strlcat(h->buf, p, BUFSIZ);
 	assert(h->buflen < BUFSIZ);
-	h->buflen--;
 }
 
 void

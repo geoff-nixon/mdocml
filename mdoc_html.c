@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.170 2011/06/16 22:21:28 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.171 2011/06/29 15:38:09 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -610,6 +610,7 @@ mdoc_sh_pre(MDOC_ARGS)
 		return(1);
 
 	bufinit(h);
+	bufcat(h, "x");
 	for (n = n->child; n; n = n->next) {
 		bufcat_id(h, n->string);
 		if (n->next)
@@ -636,6 +637,7 @@ mdoc_ss_pre(MDOC_ARGS)
 		return(1);
 
 	bufinit(h);
+	bufcat(h, "x");
 	for (n = n->child; n; n = n->next) {
 		bufcat_id(h, n->string);
 		if (n->next)

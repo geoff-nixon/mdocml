@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.147 2011/05/24 21:40:14 kristaps Exp $ */
+/*	$Id: html.c,v 1.148 2011/07/04 09:42:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -513,9 +513,11 @@ print_text(struct html *h, const char *word)
 			print_otag(h, TAG_I, 0, NULL);
 
 	assert(word);
-	if ( ! print_encode(h, word, 0))
+	if ( ! print_encode(h, word, 0)) {
 		if ( ! (h->flags & HTML_NONOSPACE))
 			h->flags &= ~HTML_NOSPACE;
+	} else
+		h->flags |= HTML_NOSPACE;
 
 	if (h->metaf) {
 		print_tagq(h, h->metaf);

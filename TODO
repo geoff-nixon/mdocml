@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.117 2011/07/03 22:57:32 kristaps Exp $
+* $Id: TODO,v 1.118 2011/07/07 06:34:13 kristaps Exp $
 ************************************************************************
 
 ************************************************************************
@@ -131,6 +131,8 @@
 
 - groff an-ext.tmac macros (.UR, .UE) occur in xine(5)
   reported by brad@  Sat, 15 Jan 2011 15:45:23 -0500
+
+- -T[x]html doesn't stipulate non-collapsing spaces in literal mode
 
 --- missing tbl features -----------------------------------------------
 

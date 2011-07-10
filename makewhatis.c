@@ -1,4 +1,4 @@
-/*	$Id: makewhatis.c,v 1.15 2011/07/01 12:02:44 kristaps Exp $ */
+/*	$Id: makewhatis.c,v 1.16 2011/07/01 13:46:39 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -961,8 +961,9 @@ pman_node(MAN_ARGS)
 					start++;
 			}
 
+			buf->len = 0;
+
 			if (sv == start) {
-				buf->len = 0;
 				buf_append(buf, start);
 				return(1);
 			}
@@ -985,6 +986,8 @@ pman_node(MAN_ARGS)
 			sz = strlen(start) + 1;
 			buf_appendb(dbuf, start, sz);
 			buf_appendb(buf, start, sz);
+
+			hash_put(hash, buf, TYPE_DESC);
 		}
 	}
 

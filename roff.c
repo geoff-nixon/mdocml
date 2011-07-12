@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.143 2011/06/30 08:05:13 kristaps Exp $ */
+/*	$Id: roff.c,v 1.144 2011/07/08 09:28:33 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1179,7 +1179,7 @@ roff_EQ(ROFF_ARGS)
 	struct eqn_node	*e;
 
 	assert(NULL == r->eqn);
-	e = eqn_alloc(ppos, ln);
+	e = eqn_alloc(ppos, ln, r->parse);
 
 	if (r->last_eqn)
 		r->last_eqn->next = e;

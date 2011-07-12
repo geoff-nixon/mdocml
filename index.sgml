@@ -344,7 +344,7 @@
 			Initial public release (this utility is very much under development) of <A HREF="makewhatis.1.html">makewhatis</A>,
 			initially named mandoc-db.
 			This utility produces keyword databases of manual content
-			<STRIKE>mandoc-cgi</STRIKE>, 
+			<DEL>mandoc-cgi</DEL>, 
 			<A HREF="http://mdocml.bsd.lv/mandoc-tools/index.html">mandoc-tools</A>, 
 			which features semantic querying of manual content.
 		</P>
@@ -356,7 +356,7 @@
 			<SMALL>
 				Copyright &#169; 2008&#8211;2011 
 				<A CLASS="external" HREF="http://kristaps.bsd.lv">Kristaps Dzonsons</A>, 
-				$Date: 2011/07/01 10:20:26 $
+				$Date: 2011/07/12 08:27:45 $
 			</SMALL>
 		</P>
 	</BODY>

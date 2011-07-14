@@ -1,4 +1,4 @@
-/*	$Id: makewhatis.c,v 1.21 2011/07/12 15:26:35 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.1 2011/07/14 10:57:02 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -44,7 +44,7 @@
 #define	MANDOC_FLAGS	  O_CREAT|O_TRUNC|O_RDWR
 #define	MANDOC_SLOP	  1024
 
-/* Bit-fields.  See makewhatis.1. */
+/* Bit-fields.  See mandocdb.8. */
 
 #define TYPE_NAME	  0x01
 #define TYPE_FUNCTION	  0x02

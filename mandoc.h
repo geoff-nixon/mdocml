@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.77 2011/05/24 21:31:23 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.78 2011/07/15 10:14:12 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -103,6 +103,9 @@ enum	mandocerr {
 	MANDOCERR_BADCOMMENT, /* bad comment style */
 	MANDOCERR_BADESCAPE, /* unknown escape sequence */
 	MANDOCERR_BADQUOTE, /* unterminated quoted string */
+
+	/* related to equations */
+	MANDOCERR_EQNQUOTE, /* unexpected literal in equation */
 
 	MANDOCERR_ERROR, /* ===== start of errors ===== */
 

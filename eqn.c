@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.7 2011/07/17 12:52:54 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.8 2011/07/17 14:08:49 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -283,6 +283,7 @@ eqn_do_define(struct eqn_node *ep, int ln, int pos, const char **end)
 			ep->defs = mandoc_realloc
 				(ep->defs, ep->defsz * 
 				 sizeof(struct eqn_def));
+			ep->defs[i].key = ep->defs[i].val = NULL;
 		}
 
 		ep->defs[i].keysz = sz;

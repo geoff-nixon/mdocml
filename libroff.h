@@ -1,4 +1,4 @@
-/*	$Id: libroff.h,v 1.20 2011/03/20 16:02:05 kristaps Exp $ */
+/*	$Id: libroff.h,v 1.21 2011/07/12 21:32:43 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -42,10 +42,19 @@ struct	tbl_node {
 	struct tbl_node	 *next;
 };
 
+struct	eqn_def {
+	char		 *key;
+	size_t		  keysz;
+	char		 *val;
+	size_t		  valsz;
+};
+
 struct	eqn_node {
+	struct eqn_def	 *defs;
+	size_t		  defsz;
 	struct eqn	  eqn;
-	struct eqn_node	 *next;
 	struct mparse	 *parse;
+	struct eqn_node  *next;
 };
 
 struct tbl_node	*tbl_alloc(int, int, struct mparse *);
@@ -62,7 +71,8 @@ void		 tbl_end(struct tbl_node *);
 struct eqn_node	*eqn_alloc(int, int, struct mparse *);
 void		 eqn_end(struct eqn_node *);
 void		 eqn_free(struct eqn_node *);
-enum rofferr 	 eqn_read(struct eqn_node **, int, const char *, int);
+enum rofferr 	 eqn_read(struct eqn_node **, int, 
+			const char *, int, int *);
 
 __END_DECLS
 

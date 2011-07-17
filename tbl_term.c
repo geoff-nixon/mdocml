@@ -1,6 +1,6 @@
-/*	$Id: tbl_term.c,v 1.18 2011/01/11 14:12:01 kristaps Exp $ */
+/*	$Id: tbl_term.c,v 1.19 2011/01/25 12:07:30 schwarze Exp $ */
 /*
- * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@kth.se>
+ * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

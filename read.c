@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.15 2011/05/26 20:36:21 kristaps Exp $ */
+/*	$Id: read.c,v 1.16 2011/07/17 12:52:54 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -151,6 +151,9 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"unexpected literal in equation",
 	
 	"generic error",
+
+	/* related to equations */
+	"bad equation macro syntax",
 
 	/* related to tables */
 	"bad table syntax",

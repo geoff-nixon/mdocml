@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.78 2011/07/15 10:14:12 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.79 2011/07/17 12:52:54 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -108,6 +108,9 @@ enum	mandocerr {
 	MANDOCERR_EQNQUOTE, /* unexpected literal in equation */
 
 	MANDOCERR_ERROR, /* ===== start of errors ===== */
+
+	/* related to equations */
+	MANDOCERR_EQNARGS, /* bad equation macro arguments */
 
 	/* related to tables */
 	MANDOCERR_TBL, /* bad table syntax */

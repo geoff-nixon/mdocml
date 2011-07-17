@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.8 2011/07/17 14:08:49 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.9 2011/07/17 14:11:25 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -292,8 +292,6 @@ eqn_do_define(struct eqn_node *ep, int ln, int pos, const char **end)
 
 		memcpy(ep->defs[i].key, start, sz);
 		ep->defs[i].key[(int)sz] = '\0';
-		ep->defs[i].val = NULL;
-		ep->defs[i].valsz = 0;
 	}
 
 	start = eqn_nexttok(mp, ln, pos, end, &sz);

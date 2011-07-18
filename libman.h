@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.51 2011/03/23 15:33:57 kristaps Exp $ */
+/*	$Id: libman.h,v 1.52 2011/07/18 07:46:41 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -36,7 +36,6 @@ struct	man {
 	struct man_node	*last; /* the last parsed node */
 	struct man_node	*first; /* the first parsed node */
 	struct man_meta	 meta; /* document meta-data */
-	struct regset	*regs; /* registers */
 	struct roff	*roff;
 };
 

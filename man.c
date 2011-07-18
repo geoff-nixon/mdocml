@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.106 2011/03/23 12:33:01 kristaps Exp $ */
+/*	$Id: man.c,v 1.107 2011/03/29 08:30:49 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -96,7 +96,7 @@ man_free(struct man *man)
 
 
 struct man *
-man_alloc(struct regset *regs, struct mparse *parse)
+man_alloc(struct roff *roff, struct mparse *parse)
 {
 	struct man	*p;
 
@@ -104,7 +104,7 @@ man_alloc(struct regset *regs, struct mparse *parse)
 
 	man_hash_init();
 	p->parse = parse;
-	p->regs = regs;
+	p->roff = roff;
 
 	man_alloc1(p);
 	return(p);

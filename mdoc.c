@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.188 2011/03/28 23:52:13 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.189 2011/07/18 07:46:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -233,11 +233,11 @@ mdoc_addeqn(struct mdoc *m, const struct eqn *ep)
 	/* No text before an initial macro. */
 
 	if (SEC_NONE == m->lastnamed) {
-		mdoc_pmsg(m, ep->line, ep->pos, MANDOCERR_NOTEXT);
+		mdoc_pmsg(m, ep->ln, ep->pos, MANDOCERR_NOTEXT);
 		return(1);
 	}
 
-	n = node_alloc(m, ep->line, ep->pos, MDOC_MAX, MDOC_EQN);
+	n = node_alloc(m, ep->ln, ep->pos, MDOC_MAX, MDOC_EQN);
 	n->eqn = ep;
 
 	if ( ! node_append(m, n))

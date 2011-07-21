@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.84 2011/07/21 12:30:44 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.85 2011/07/21 13:18:24 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -298,7 +298,15 @@ enum	eqn_markt {
 	EQNMARK__MAX
 };
 
-/*
+enum	eqn_fontt {
+	EQNFONT_NONE = 0,
+	EQNFONT_ROMAN,
+	EQNFONT_BOLD,
+	EQNFONT_ITALIC,
+	EQNFONT__MAX
+};
+
+ /*
  * A "box" is a parsed mathematical expression as defined by the eqn.7
  * grammar.
  */
@@ -307,7 +315,8 @@ struct	eqn_box {
 	struct eqn_box	 *child; /* child node */
 	struct eqn_box	 *next; /* next in tree */
 	char		 *text; /* text (or NULL) */
-	enum eqn_markt	  mark; /* whether 'marked' */
+	enum eqn_markt	  mark; /* a mark about the box */
+	enum eqn_fontt	  font; /* font of box */
 };
 
 struct	eqn {

@@ -1,4 +1,4 @@
-.\"	$Id: eqn.7,v 1.8 2011/07/21 12:34:09 kristaps Exp $
+.\"	$Id: eqn.7,v 1.9 2011/07/21 13:18:24 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -68,6 +68,7 @@ box     : text
         | SET text text
         | UNDEF text
         | box mark
+        | font box
 text    : TEXT
 mark	: DOT
         | DOTDOT
@@ -77,6 +78,9 @@ mark	: DOT
         | DYAD
         | BAR
         | UNDER
+font    : ROMAN
+        | ITALIC
+        | BOLD
 .Ed
 .Pp
 Data in TEXT form is a non-empty sequence of non-space characters or a

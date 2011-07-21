@@ -1,4 +1,4 @@
-.\"	$Id: eqn.7,v 1.11 2011/07/21 14:13:00 kristaps Exp $
+.\"	$Id: eqn.7,v 1.12 2011/07/21 15:21:13 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -69,9 +69,14 @@ box     : text
         | UNDEF text
         | box pos box
         | box mark
+        | pile { list }
         | font box
         | SIZE text box
+        | LEFT text box [RIGHT text]
 text    : TEXT
+pile    : LPILE
+        | CPILE
+        | RPILE
 pos     : OVER
         | SUP
         | SUB
@@ -88,6 +93,7 @@ mark	: DOT
 font    : ROMAN
         | ITALIC
         | BOLD
+list    : eqn | list ABOVE eqn
 .Ed
 .Pp
 Data in TEXT form is a non-empty sequence of non-space characters or a

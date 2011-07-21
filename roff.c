@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.147 2011/07/18 07:46:41 kristaps Exp $ */
+/*	$Id: roff.c,v 1.148 2011/07/21 10:24:35 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1149,7 +1149,7 @@ roff_nr(ROFF_ARGS)
 
 	if (0 == strcmp(key, "nS")) {
 		r->regs[(int)REG_nS].set = 1;
-		if ((iv = mandoc_strntou(val, strlen(val), 10)) >= 0)
+		if ((iv = mandoc_strntoi(val, strlen(val), 10)) >= 0)
 			r->regs[(int)REG_nS].u = (unsigned)iv;
 		else
 			r->regs[(int)REG_nS].u = 0u;

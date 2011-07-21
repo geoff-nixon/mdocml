@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.86 2011/07/21 13:37:04 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.87 2011/07/21 14:13:00 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -322,6 +322,8 @@ enum	eqn_post {
  * grammar.
  */
 struct	eqn_box {
+	int		  size; /* font size of expression */
+#define	EQN_DEFSIZE	  INT_MIN
 	enum eqn_boxt	  type; /* type of node */
 	struct eqn_box	 *child; /* child node */
 	struct eqn_box	 *next; /* next in tree */

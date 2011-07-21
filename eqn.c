@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.19 2011/07/21 15:21:13 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.20 2011/07/21 23:30:39 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -259,33 +259,30 @@ eqn_box(struct eqn_node *ep, struct eqn_box *last)
 			EQN_MSG(MANDOCERR_EQNSYNT, ep);
 			return(EQN_ERR);
 		}
-		if (EQN_DESCOPE != (c = eqn_eqn(ep, last))) {
+
+		while (EQN_DESCOPE == (c = eqn_eqn(ep, last))) {
+			assert(last->last);
+			last->last->pile = (enum eqn_pilet)i;
+			eqn_rewind(ep);
+			start = eqn_nexttok(ep, &sz);
+			assert(start);
+			if (5 != sz || strncmp("above", start, 5))
+				break;
+			last->last->above = 1;
+		}
+
+		if (EQN_DESCOPE != c) {
 			if (EQN_ERR != c)
 				EQN_MSG(MANDOCERR_EQNSCOPE, ep);
 			return(EQN_ERR);
 		}
-		assert(last->last);
-		last->last->pile = (enum eqn_pilet)i;
+
 		eqn_rewind(ep);
 		start = eqn_nexttok(ep, &sz);
 		assert(start);
 		if (1 == sz && 0 == strncmp("}", start, 1))
 			return(EQN_OK);
-		if (5 != sz || strncmp("above", start, 5)) {
-			EQN_MSG(MANDOCERR_EQNSYNT, ep);
-			return(EQN_ERR);
-		}
-		last->last->above = 1;
-		if (EQN_DESCOPE != (c = eqn_eqn(ep, last))) {
-			if (EQN_ERR != c)
-				EQN_MSG(MANDOCERR_EQNSCOPE, ep);
-			return(EQN_ERR);
-		}
-		eqn_rewind(ep);
-		start = eqn_nexttok(ep, &sz);
-		assert(start);
-		if (1 == sz && 0 == strncmp("}", start, 1))
-			return(EQN_OK);
+
 		EQN_MSG(MANDOCERR_EQNBADSCOPE, ep);
 		return(EQN_ERR);
 	}

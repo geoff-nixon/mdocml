@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.81 2011/07/18 14:30:51 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.82 2011/07/21 10:24:35 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -277,9 +277,20 @@ struct	tbl_span {
 	struct tbl_span	 *next;
 };
 
+enum	eqn_boxt {
+	EQN_ROOT,
+	EQN_TEXT
+};
+
+struct	eqn_box {
+	enum eqn_boxt	  type;
+	struct eqn_box	 *child;
+	struct eqn_box	 *next;
+	char		 *text;
+};
+
 struct	eqn {
-	size_t		  sz;
-	char		 *data;
+	struct eqn_box	 *root;
 	int		  ln; /* invocation line */
 	int		  pos; /* invocation position */
 };

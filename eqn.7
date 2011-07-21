@@ -1,4 +1,4 @@
-.\"	$Id: eqn.7,v 1.4 2011/07/18 13:47:38 kristaps Exp $
+.\"	$Id: eqn.7,v 1.5 2011/07/21 10:24:35 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: July 18 2011 $
+.Dd $Mdocdate: July 21 2011 $
 .Dt EQN 7
 .Os
 .Sh NAME
@@ -73,6 +73,7 @@ Data in TEXT form is a non-empty sequence of non-space characters or a
 non-empty quoted string.
 Unless within a quoted string, white-space (and enclosing literal quote
 pairs) is thrown away.
+Quoted strings are not scanned for replacement definitions.
 .Pp
 The following control statements are available:
 .Bl -tag -width Ds

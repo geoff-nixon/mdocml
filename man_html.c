@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.77 2011/07/07 13:26:25 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.78 2011/07/07 13:54:36 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -230,8 +230,8 @@ print_man_node(MAN_ARGS)
 		return;
 	case (MAN_EQN):
 		PAIR_CLASS_INIT(&tag, "eqn");
-		print_otag(h, TAG_SPAN, 1, &tag);
-		print_text(h, n->eqn->data);
+		/*print_otag(h, TAG_SPAN, 1, &tag);
+		print_text(h, n->eqn->data);*/
 		break;
 	case (MAN_TBL):
 		/*

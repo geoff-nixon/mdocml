@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.171 2011/06/29 15:38:09 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.172 2011/07/04 09:42:38 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -435,8 +435,8 @@ print_mdoc_node(MDOC_ARGS)
 		return;
 	case (MDOC_EQN):
 		PAIR_CLASS_INIT(&tag, "eqn");
-		print_otag(h, TAG_SPAN, 1, &tag);
-		print_text(h, n->eqn->data);
+		/*print_otag(h, TAG_SPAN, 1, &tag);
+		print_text(h, n->eqn->data);*/
 		break;
 	case (MDOC_TBL):
 		/*

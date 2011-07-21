@@ -1,4 +1,4 @@
-.\"	$Id: eqn.7,v 1.9 2011/07/21 13:18:24 kristaps Exp $
+.\"	$Id: eqn.7,v 1.10 2011/07/21 13:37:04 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -67,9 +67,15 @@ box     : text
         | DEFINE text text
         | SET text text
         | UNDEF text
+        | box pos box
         | box mark
         | font box
 text    : TEXT
+pos     : OVER
+        | SUP
+        | SUB
+        | TO
+        | FROM
 mark	: DOT
         | DOTDOT
         | HAT

@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.17 2011/07/21 13:37:04 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.18 2011/07/21 14:13:00 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -19,6 +19,7 @@
 #endif
 
 #include <assert.h>
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -188,7 +189,7 @@ eqn_box(struct eqn_node *ep, struct eqn_box *last, struct eqn_box **sv)
 {
 	size_t		 sz;
 	const char	*start;
-	int		 c, i, nextc;
+	int		 c, i, nextc, size;
 	enum eqn_fontt	 font;
 	struct eqn_box	*bp;
 
@@ -201,6 +202,7 @@ eqn_box(struct eqn_node *ep, struct eqn_box *last, struct eqn_box **sv)
 	*sv = last;
 	nextc = 1;
 	font = EQNFONT_NONE;  
+	size = EQN_DEFSIZE;
 again:
 	if (NULL == (start = eqn_nexttok(ep, &sz)))
 		return(0);
@@ -242,14 +244,22 @@ again:
 		goto again;
 	}
 
-	/* Exit this [hopefully] subexpression. */
+	if (sz == 4 && 0 == strncmp("size", start, 1)) {
+		if (NULL == (start = eqn_nexttok(ep, &sz)))
+			return(0);
+		size = mandoc_strntoi(start, sz, 10);
+		goto again;
+	}
 
 	if (sz == 1 && 0 == strncmp("}", start, 1)) 
 		return(1);
 
 	bp = mandoc_calloc(1, sizeof(struct eqn_box));
 	bp->font = font;
+	bp->size = size;
+
 	font = EQNFONT_NONE;
+	size = EQN_DEFSIZE;
 
 	if (nextc)
 		last->child = bp;

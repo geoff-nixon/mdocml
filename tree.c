@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.42 2011/07/21 14:13:00 kristaps Exp $ */
+/*	$Id: tree.c,v 1.43 2011/07/21 15:21:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -274,13 +274,16 @@ print_box(const struct eqn_box *ep, int indent)
 		printf("eqn-root(%d, %d, %d, %d)\n", 
 			EQN_DEFSIZE == ep->size ? 0 : ep->size,
 			ep->pos, ep->font, ep->mark);
-		print_box(ep->child, indent + 1);
+		print_box(ep->first, indent + 1);
 		break;
 	case (EQN_SUBEXPR):
-		printf("eqn-subxpr(%d, %d, %d, %d)\n", 
+		printf("eqn-subxpr(%d, %d, %d, %d, %d, %d, \"%s\", \"%s\")\n", 
 			EQN_DEFSIZE == ep->size ? 0 : ep->size,
-			ep->pos, ep->font, ep->mark);
-		print_box(ep->child, indent + 1);
+			ep->pos, ep->font, ep->mark,
+			ep->pile, ep->above,
+			ep->left ? ep->left : "",
+			ep->right ? ep->right : "");
+		print_box(ep->first, indent + 1);
 		break;
 	case (EQN_TEXT):
 		printf("eqn-text(%d, %d, %d, %d): [%s]\n", 

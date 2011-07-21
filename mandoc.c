@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.53 2011/05/24 21:31:23 kristaps Exp $ */
+/*	$Id: mandoc.c,v 1.54 2011/07/21 15:21:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -432,6 +432,16 @@ mandoc_realloc(void *ptr, size_t size)
 	return(ptr);
 }
 
+char *
+mandoc_strndup(const char *ptr, size_t sz)
+{
+	char		*p;
+
+	p = mandoc_malloc(sz + 1);
+	memcpy(p, ptr, sz);
+	p[(int)sz] = '\0';
+	return(p);
+}
 
 char *
 mandoc_strdup(const char *ptr)

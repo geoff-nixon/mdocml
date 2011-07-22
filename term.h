@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.84 2011/05/17 14:38:34 kristaps Exp $ */
+/*	$Id: term.h,v 1.85 2011/05/20 15:48:22 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -96,6 +96,7 @@ struct	termp {
 	struct termp_ps	 *ps;
 };
 
+void		  term_eqn(struct termp *, const struct eqn *);
 void		  term_tbl(struct termp *, const struct tbl_span *);
 void		  term_free(struct termp *);
 void		  term_newln(struct termp *);

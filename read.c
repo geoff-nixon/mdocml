@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.20 2011/07/21 12:30:44 kristaps Exp $ */
+/*	$Id: read.c,v 1.21 2011/07/21 23:30:39 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -152,7 +152,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"generic error",
 
 	/* related to equations */
-	"bad equation macro syntax",
 	"too many nested equation defines",
 	"unexpected equation scope closure",
 	"equation scope open on exit",

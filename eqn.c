@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.24 2011/07/22 10:22:47 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.25 2011/07/22 10:36:58 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -309,14 +309,18 @@ eqn_box(struct eqn_node *ep, struct eqn_box *last)
 			return(EQN_ERR);
 		}
 		left = mandoc_strndup(start, sz);
-		if (EQN_DESCOPE != (c = eqn_eqn(ep, last)))
+		c = eqn_eqn(ep, last);
+		if (last->last)
+			last->last->left = left;
+		else
+			free(left);
+		if (EQN_DESCOPE != c)
 			return(c);
 		assert(last->last);
-		last->last->left = left;
 		eqn_rewind(ep);
 		start = eqn_nexttok(ep, &sz);
 		assert(start);
-		if (STRNEQ(start, sz, "right", 5))
+		if ( ! STRNEQ(start, sz, "right", 5))
 			return(EQN_DESCOPE);
 		if (NULL == (start = eqn_nexttok(ep, &sz))) {
 			EQN_MSG(MANDOCERR_EQNEOF, ep);

@@ -1,4 +1,4 @@
-.\"	$Id: eqn.7,v 1.12 2011/07/21 15:21:13 kristaps Exp $
+.\"	$Id: eqn.7,v 1.13 2011/07/21 23:30:39 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -72,7 +72,7 @@ box     : text
         | pile { list }
         | font box
         | SIZE text box
-        | LEFT text box [RIGHT text]
+        | LEFT text eqn [RIGHT text]
 text    : TEXT
 pile    : LPILE
         | CPILE

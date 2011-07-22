@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.89 2011/07/21 23:30:39 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.90 2011/07/22 09:57:04 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -110,7 +110,6 @@ enum	mandocerr {
 	MANDOCERR_ERROR, /* ===== start of errors ===== */
 
 	/* related to equations */
-	MANDOCERR_EQNARGS, /* bad equation macro arguments */
 	MANDOCERR_EQNNEST, /* too many nested equation defines */
 	MANDOCERR_EQNNSCOPE, /* unexpected equation scope closure*/
 	MANDOCERR_EQNSCOPE, /* equation scope open on exit */

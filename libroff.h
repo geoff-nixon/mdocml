@@ -1,4 +1,4 @@
-/*	$Id: libroff.h,v 1.23 2011/07/21 10:24:35 kristaps Exp $ */
+/*	$Id: libroff.h,v 1.24 2011/07/21 23:30:39 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -49,6 +49,7 @@ struct	eqn_node {
 	size_t		  rew;
 	size_t		  cur;
 	size_t		  sz;
+	int		  gsize;
 	struct eqn	  eqn;
 	struct mparse	 *parse;
 	struct eqn_node  *next;

@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.23 2011/07/22 09:57:04 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.24 2011/07/22 10:22:47 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -45,7 +45,7 @@ struct	eqnstr {
 };
 
 #define	STRNEQ(p1, sz1, p2, sz2) \
-	(sz1) == (sz2) && 0 == strncmp((p1), (p2), (sz1))
+	((sz1) == (sz2) && 0 == strncmp((p1), (p2), (sz1)))
 #define	EQNSTREQ(x, p, sz) \
 	STRNEQ((x)->name, (x)->sz, (p), (sz))
 

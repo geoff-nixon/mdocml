@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.88 2011/07/21 15:21:13 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.89 2011/07/21 23:30:39 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -285,7 +285,8 @@ struct	tbl_span {
 enum	eqn_boxt {
 	EQN_ROOT, /* root of parse tree */
 	EQN_TEXT, /* text (number, variable, whatever) */
-	EQN_SUBEXPR /* nested subexpression */
+	EQN_SUBEXPR, /* nested `eqn' subexpression */
+	EQN_LIST /* list of subexpressions */
 };
 
 enum	eqn_markt {

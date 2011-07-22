@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.20 2011/07/21 23:30:39 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.21 2011/07/21 23:42:28 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -453,11 +453,11 @@ eqn_next(struct eqn_node *ep, char quote, size_t *sz, int repl)
 {
 	char		*start, *next;
 	int		 q, diff, lim;
-	size_t		 ssz;
+	size_t		 ssz, dummy;
 	struct eqn_def	*def;
 
 	if (NULL == sz)
-		sz = &ssz;
+		sz = &dummy;
 
 	lim = 0;
 	ep->rew = ep->cur;
@@ -482,14 +482,26 @@ again:
 	}
 
 	start = &ep->data[(int)ep->cur];
-	next = q ? strchr(start, quote) : strchr(start, ' ');
+
+	if ( ! q) {
+		if ('{' == *start || '}' == *start)
+			ssz = 1;
+		else
+			ssz = strcspn(start + 1, " ~\"{}\t") + 1;
+		next = start + (int)ssz;
+		if ('\0' == *next)
+			next = NULL;
+	} else
+		next = strchr(start, quote);
 
 	if (NULL != next) {
 		*sz = (size_t)(next - start);
 		ep->cur += *sz;
 		if (q)
 			ep->cur++;
-		while (' ' == ep->data[(int)ep->cur])
+		while (' ' == ep->data[(int)ep->cur] ||
+				'\t' == ep->data[(int)ep->cur] ||
+				'~' == ep->data[(int)ep->cur])
 			ep->cur++;
 	} else {
 		if (q)

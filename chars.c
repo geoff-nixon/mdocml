@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.47 2011/07/07 06:41:50 kristaps Exp $ */
+/*	$Id: chars.c,v 1.48 2011/07/21 15:21:13 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -37,7 +37,7 @@ struct	ln {
 	int		  unicode;
 };
 
-#define	LINES_MAX	  325
+#define	LINES_MAX	  328
 
 #define CHAR(in, ch, code) \
 	{ NULL, (in), (ch), (code) },

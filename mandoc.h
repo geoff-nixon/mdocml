@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.93 2011/07/23 12:10:16 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.94 2011/07/23 18:41:18 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -322,9 +322,11 @@ enum	eqn_post {
 
 enum	eqn_pilet {
 	EQNPILE_NONE = 0,
+	EQNPILE_PILE,
 	EQNPILE_CPILE,
 	EQNPILE_RPILE,
 	EQNPILE_LPILE,
+	EQNPILE_COL,
 	EQNPILE_CCOL,
 	EQNPILE_RCOL,
 	EQNPILE_LCOL,

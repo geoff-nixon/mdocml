@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.33 2011/07/23 12:08:43 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.34 2011/07/23 12:10:16 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -285,9 +285,15 @@ eqn_read(struct eqn_node **epp, int ln,
 	 * validate the full equation.
 	 */
 
-	if (0 == strcmp(p, ".EN")) {
+	if (0 == strncmp(p, ".EN", 3)) {
 		er = eqn_end(ep);
 		*epp = NULL;
+		p += 3;
+		while (' ' == *p || '\t' == *p)
+			p++;
+		if ('\0' == *p) 
+			return(er);
+		mandoc_msg(MANDOCERR_ARGSLOST, ep->parse, ln, pos, NULL);
 		return(er);
 	}
 

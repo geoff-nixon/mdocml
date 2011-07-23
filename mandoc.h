@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.91 2011/07/22 14:55:07 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.92 2011/07/23 12:01:54 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -306,6 +306,7 @@ enum	eqn_fontt {
 	EQNFONT_NONE = 0,
 	EQNFONT_ROMAN,
 	EQNFONT_BOLD,
+	EQNFONT_FAT,
 	EQNFONT_ITALIC,
 	EQNFONT__MAX
 };

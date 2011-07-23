@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.19 2011/01/25 12:07:30 schwarze Exp $ */
+/*	$Id: eqn_term.c,v 1.1 2011/07/22 10:50:46 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -61,8 +61,6 @@ static void
 eqn_box_pre(struct termp *p, const struct eqn_box *bp)
 {
 
-	if (EQN_LIST == bp->type)
-		term_word(p, "{");
 	if (bp->left)
 		term_word(p, bp->left);
 }
@@ -71,12 +69,8 @@ static void
 eqn_box_post(struct termp *p, const struct eqn_box *bp)
 {
 
-	if (EQN_LIST == bp->type)
-		term_word(p, "}");
 	if (bp->right)
 		term_word(p, bp->right);
-	if (bp->above)
-		term_word(p, "|");
 }
 
 static void

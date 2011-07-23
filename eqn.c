@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.35 2011/07/23 13:31:03 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.36 2011/07/23 18:41:18 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -205,9 +205,11 @@ static	const struct eqnstr eqnposs[EQNPOS__MAX] = {
 
 static	const struct eqnstr eqnpiles[EQNPILE__MAX] = {
 	{ "", 0 }, /* EQNPILE_NONE */
+	{ "pile", 4 }, /* EQNPILE_PILE */
 	{ "cpile", 5 }, /* EQNPILE_CPILE */
 	{ "rpile", 5 }, /* EQNPILE_RPILE */
 	{ "lpile", 5 }, /* EQNPILE_LPILE */
+	{ "col", 3 }, /* EQNPILE_COL */
 	{ "ccol", 4 }, /* EQNPILE_CCOL */
 	{ "rcol", 4 }, /* EQNPILE_RCOL */
 	{ "lcol", 4 }, /* EQNPILE_LCOL */

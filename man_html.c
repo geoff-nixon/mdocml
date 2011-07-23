@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.78 2011/07/07 13:54:36 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.79 2011/07/21 11:34:53 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -201,7 +201,6 @@ print_man_node(MAN_ARGS)
 {
 	int		 child;
 	struct tag	*t;
-	struct htmlpair	 tag;
 
 	child = 1;
 	t = h->tags.head;
@@ -229,9 +228,7 @@ print_man_node(MAN_ARGS)
 		print_text(h, n->string);
 		return;
 	case (MAN_EQN):
-		PAIR_CLASS_INIT(&tag, "eqn");
-		/*print_otag(h, TAG_SPAN, 1, &tag);
-		print_text(h, n->eqn->data);*/
+		print_eqn(h, n->eqn);
 		break;
 	case (MAN_TBL):
 		/*

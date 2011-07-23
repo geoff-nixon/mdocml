@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.43 2011/05/17 11:19:45 kristaps Exp $ */
+/*	$Id: html.h,v 1.44 2011/05/17 11:34:31 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -141,6 +141,7 @@ void		  print_stagq(struct html *, const struct tag *);
 void		  print_text(struct html *, const char *);
 void		  print_tblclose(struct html *);
 void		  print_tbl(struct html *, const struct tbl_span *);
+void		  print_eqn(struct html *, const struct eqn *);
 
 void		  bufcat_fmt(struct html *, const char *, ...);
 void		  bufcat(struct html *, const char *);

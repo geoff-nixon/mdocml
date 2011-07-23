@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.92 2011/07/23 12:01:54 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.93 2011/07/23 12:10:16 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -110,7 +110,6 @@ enum	mandocerr {
 	MANDOCERR_ERROR, /* ===== start of errors ===== */
 
 	/* related to equations */
-	MANDOCERR_EQNNEST, /* too many nested equation defines */
 	MANDOCERR_EQNNSCOPE, /* unexpected equation scope closure*/
 	MANDOCERR_EQNSCOPE, /* equation scope open on exit */
 	MANDOCERR_EQNBADSCOPE, /* overlapping equation scopes */
@@ -358,6 +357,7 @@ struct	eqn_box {
  * line and position. 
  */
 struct	eqn {
+	char		 *name; /* identifier (or NULL) */
 	struct eqn_box	 *root; /* root mathematical expression */
 	int		  ln; /* invocation line */
 	int		  pos; /* invocation position */

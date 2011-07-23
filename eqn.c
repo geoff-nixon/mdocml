@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.32 2011/07/23 12:01:54 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.33 2011/07/23 12:08:43 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -184,6 +184,7 @@ static	const struct eqnstr eqnfonts[EQNFONT__MAX] = {
 	{ "", 0 }, /* EQNFONT_NONE */
 	{ "roman", 5 }, /* EQNFONT_ROMAN */
 	{ "bold", 4 }, /* EQNFONT_BOLD */
+	{ "fat", 3 }, /* EQNFONT_FAT */
 	{ "italic", 6 }, /* EQNFONT_ITALIC */
 };
 

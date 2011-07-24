@@ -82,7 +82,7 @@
 				<TR>
 					<TD>Win32 binary archive</TD>
 					<TD>
-					<A HREF="/binaries/mdocml.zip">/binaries/mdocml-win32.zip</A> 
+					<A HREF="/binaries/mdocml-win32.zip">/binaries/mdocml-win32.zip</A> 
 					</TD>
 				</TR>
 			</TBODY>
@@ -387,7 +387,7 @@
 			<SMALL>
 				Copyright &#169; 2008&#8211;2011 
 				<A CLASS="external" HREF="http://kristaps.bsd.lv">Kristaps Dzonsons</A>, 
-				$Date: 2011/07/24 10:09:03 $
+				$Date: 2011/07/24 19:03:40 $
 			</SMALL>
 		</P>
 	</BODY>

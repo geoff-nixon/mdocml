@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.69 2011/04/13 09:57:08 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.70 2011/07/08 09:34:06 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -412,7 +412,8 @@ post_TH(CHKARGS)
 	if (n && n->string) {
 		for (p = n->string; '\0' != *p; p++) {
 			/* Only warn about this once... */
-			if (isalpha((u_char)*p) && ! isupper((u_char)*p)) {
+			if (isalpha((unsigned char)*p) && 
+					! isupper((unsigned char)*p)) {
 				man_nmsg(m, n, MANDOCERR_UPPERCASE);
 				break;
 			}

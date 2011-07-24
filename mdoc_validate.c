@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.169 2011/04/30 10:18:24 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.170 2011/07/18 07:46:41 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -2046,7 +2046,7 @@ post_dt(POST_ARGS)
 
 	if (NULL != (nn = n->child))
 		for (p = nn->string; *p; p++) {
-			if (toupper((u_char)*p) == *p)
+			if (toupper((unsigned char)*p) == *p)
 				continue;
 
 			/* 

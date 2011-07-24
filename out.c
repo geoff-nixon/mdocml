@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.40 2011/04/09 15:29:40 kristaps Exp $ */
+/*	$Id: out.c,v 1.41 2011/07/17 15:24:25 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -69,7 +69,7 @@ a2roffsu(const char *src, struct roffsu *dst, enum roffscale def)
 		return(0);
 
 	while (i < BUFSIZ) {
-		if ( ! isdigit((u_char)*src)) {
+		if ( ! isdigit((unsigned char)*src)) {
 			if ('.' != *src)
 				break;
 			else if (hasd)

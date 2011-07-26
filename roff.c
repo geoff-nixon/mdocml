@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.150 2011/07/23 18:41:18 kristaps Exp $ */
+/*	$Id: roff.c,v 1.151 2011/07/25 15:37:00 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -404,6 +404,7 @@ roff_alloc(struct mparse *parse)
 static int
 roff_res(struct roff *r, char **bufp, size_t *szp, int ln, int pos)
 {
+	enum mandoc_esc	 esc;
 	const char	*stesc;	/* start of an escape sequence ('\\') */
 	const char	*stnam;	/* start of the name, after "[(*" */
 	const char	*cp;	/* end of the name, e.g. before ']' */
@@ -426,8 +427,19 @@ roff_res(struct roff *r, char **bufp, size_t *szp, int ln, int pos)
 
 		if ('\0' == *cp)
 			return(1);
-		if ('*' != *cp++)
+
+		if ('*' != *cp) {
+			res = cp;
+			esc = mandoc_escape(&cp, NULL, NULL);
+			if (ESCAPE_ERROR != esc)
+				continue;
+			mandoc_msg(MANDOCERR_BADESCAPE, 
+					r->parse, ln, pos, NULL);
+			cp = res;
 			continue;
+		}
+
+		cp++;
 
 		/*
 		 * The third character decides the length

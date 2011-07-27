@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.155 2011/07/27 07:32:26 kristaps Exp $ */
+/*	$Id: roff.c,v 1.156 2011/07/27 12:41:02 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1519,11 +1519,12 @@ roff_getstrn(const struct roff *r, const char *name, size_t len)
 {
 	const struct roffstr *n;
 
-	n = r->first_string;
-	while (n && (strncmp(name, n->name, len) || '\0' != n->name[(int)len]))
-		n = n->next;
+	for (n = r->first_string; n; n = n->next)
+		if (0 == strncmp(name, n->name, len) && 
+				'\0' == n->name[(int)len])
+			return(n->string);
 
-	return(n ? n->string : NULL);
+	return(NULL);
 }
 
 static void

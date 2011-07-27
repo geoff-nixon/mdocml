@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.190 2011/07/21 10:24:35 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.191 2011/07/25 15:37:00 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -755,11 +755,6 @@ mdoc_ptext(struct mdoc *m, int line, char *buf, int offs)
 	ws = NULL;
 	for (c = end = buf + offs; *c; c++) {
 		switch (*c) {
-		case '-':
-			if (mandoc_hyph(buf + offs, c))
-				*c = ASCII_HYPH;
-			ws = NULL;
-			break;
 		case ' ':
 			if (NULL == ws)
 				ws = c;

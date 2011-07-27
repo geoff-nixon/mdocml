@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.159 2011/07/27 14:19:26 kristaps Exp $ */
+/*	$Id: roff.c,v 1.160 2011/07/27 14:23:27 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -496,7 +496,7 @@ again:
 
 		/* Replace the escape sequence by the string. */
 
-		pos += (stesc - *bufp);
+		pos = stesc - *bufp;
 
 		nsz = *szp + strlen(res) + 1;
 		n = mandoc_malloc(nsz);

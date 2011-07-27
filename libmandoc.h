@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.25 2011/07/25 15:37:00 kristaps Exp $ */
+/*	$Id: libmandoc.h,v 1.26 2011/07/27 07:32:26 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -75,10 +75,12 @@ void		 roff_endparse(struct roff *);
 int		 roff_regisset(const struct roff *, enum regs);
 unsigned int	 roff_regget(const struct roff *, enum regs);
 void		 roff_regunset(struct roff *, enum regs);
+#if 0
 char		 roff_eqndelim(const struct roff *);
 void		 roff_openeqn(struct roff *, const char *, 
 			int, int, const char *);
 int		 roff_closeeqn(struct roff *);
+#endif
 
 const struct tbl_span	*roff_span(const struct roff *);
 const struct eqn	*roff_eqn(const struct roff *);

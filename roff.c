@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.156 2011/07/27 12:41:02 kristaps Exp $ */
+/*	$Id: roff.c,v 1.157 2011/07/27 13:42:27 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -538,8 +538,10 @@ roff_parsetext(char *p)
 			if (ESCAPE_ERROR == esc)
 				break;
 			continue;
-		} else if ('-' != *p || p == start)
+		} else if ('-' != *p || p == start) {
+			p++;
 			continue;
+		}
 
 		l = *(p - 1);
 		r = *(p + 1);

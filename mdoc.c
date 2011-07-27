@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.192 2011/07/27 07:09:41 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.193 2011/07/27 12:41:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -568,16 +568,9 @@ int
 mdoc_word_alloc(struct mdoc *m, int line, int pos, const char *p)
 {
 	struct mdoc_node *n;
-	size_t		  sv, len;
-
-	len = strlen(p);
 
 	n = node_alloc(m, line, pos, MDOC_MAX, MDOC_TEXT);
-	n->string = mandoc_malloc(len + 1);
-	sv = strlcpy(n->string, p, len + 1);
-
-	/* Prohibit truncation. */
-	assert(sv < len + 1);
+	n->string = mandoc_strdup(p);
 
 	if ( ! node_append(m, n))
 		return(0);

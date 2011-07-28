@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.109 2011/07/21 10:24:35 kristaps Exp $ */
+/*	$Id: man.c,v 1.110 2011/07/27 12:43:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -322,7 +322,7 @@ man_word_alloc(struct man *m, int line, int pos, const char *word)
 	struct man_node	*n;
 
 	n = man_node_alloc(m, line, pos, MAN_TEXT, MAN_MAX);
-	n->string = mandoc_strdup(word);
+	n->string = roff_strdup(m->roff, word);
 
 	if ( ! man_node_append(m, n))
 		return(0);

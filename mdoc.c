@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.193 2011/07/27 12:41:02 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.194 2011/07/27 12:43:02 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -570,7 +570,7 @@ mdoc_word_alloc(struct mdoc *m, int line, int pos, const char *p)
 	struct mdoc_node *n;
 
 	n = node_alloc(m, line, pos, MDOC_MAX, MDOC_TEXT);
-	n->string = mandoc_strdup(p);
+	n->string = roff_strdup(m->roff, p);
 
 	if ( ! node_append(m, n))
 		return(0);

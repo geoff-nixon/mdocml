@@ -1,4 +1,4 @@
-.\"	$Id: roff.7,v 1.28 2011/04/30 10:18:25 kristaps Exp $
+.\"	$Id: roff.7,v 1.29 2011/05/24 15:22:14 kristaps Exp $
 .\"
 .\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: April 30 2011 $
+.Dd $Mdocdate: May 24 2011 $
 .Dt ROFF 7
 .Os
 .Sh NAME
@@ -584,10 +584,21 @@ This line-scoped request can take an arbitrary number of arguments.
 Currently, it is ignored including its arguments.
 .Ss \&tr
 Output character translation.
-This request is intended to have one argument,
-consisting of an even number of characters.
-Currently, it is ignored including its arguments,
-and the number of arguments is not checked.
+Its syntax is as follows:
+.Pp
+.D1 Pf \. Cm \&tr Ar [ab]+
+.Pp
+Pairs of
+.Ar ab
+characters are replaced
+.Ar ( a
+for
+.Ar b ) .
+Replacement (or origin) characters may also be character escapes; thus,
+.Pp
+.Dl tr \e(xx\e(yy
+.Pp
+replaces all invocations of \e(xx with \e(yy.
 .Ss \&T&
 Re-start a table layout, retaining the options of the prior table
 invocation.

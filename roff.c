@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.163 2011/07/27 20:55:28 kristaps Exp $ */
+/*	$Id: roff.c,v 1.164 2011/07/28 14:17:11 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1383,10 +1383,11 @@ roff_tr(ROFF_ARGS)
 				return(ROFF_IGN);
 			}
 			ssz = (size_t)(p - second);
-		} else if ('\0' == *p) {
+		} else if ('\0' == *second) {
 			mandoc_msg(MANDOCERR_ARGCOUNT, r->parse, 
 					ln, (int)(p - *bufp), NULL);
 			second = " ";
+			p--;
 		}
 
 		roff_setstrn(&r->chrtab, first, fsz, second, ssz, 0);

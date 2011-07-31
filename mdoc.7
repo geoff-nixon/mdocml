@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.190 2011/07/15 20:40:32 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.191 2011/07/18 10:23:02 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: July 15 2011 $
+.Dd $Mdocdate: July 18 2011 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -1038,6 +1038,8 @@ Accepts one optional argument:
 .It Cm v[1-7] | 32v
 A version of
 .At .
+.It Cm III
+.At III .
 .It Cm V[.[1-4]]?
 A version of
 .At V .
@@ -1047,6 +1049,7 @@ Note that these arguments do not begin with a hyphen.
 .Pp
 Examples:
 .Dl \&.At
+.Dl \&.At III
 .Dl \&.At V.1
 .Pp
 See also

@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.48 2011/07/21 15:21:13 kristaps Exp $ */
+/*	$Id: chars.c,v 1.49 2011/07/22 14:15:15 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -113,7 +113,7 @@ mchars_num2char(const char *p, size_t sz)
 
 	if ((i = mandoc_strntoi(p, sz, 10)) < 0)
 		return('\0');
-	return(isprint(i) ? i : '\0');
+	return(i > 0 && i < 256 && isprint(i) ? i : '\0');
 }
 
 int
@@ -133,8 +133,10 @@ mchars_spec2str(struct mchars *arg, const char *p, size_t sz, size_t *rsz)
 	const struct ln	*ln;
 
 	ln = find(arg, p, sz);
-	if (NULL == ln)
+	if (NULL == ln) {
+		*rsz = 1;
 		return(NULL);
+	}
 
 	*rsz = strlen(ln->ascii);
 	return(ln->ascii);

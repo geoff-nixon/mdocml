@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.173 2011/07/21 11:34:53 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.174 2011/07/23 22:57:13 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -608,17 +608,21 @@ mdoc_sh_pre(MDOC_ARGS)
 
 	bufinit(h);
 	bufcat(h, "x");
-	for (n = n->child; n; n = n->next) {
+
+	for (n = n->child; n && MDOC_TEXT == n->type; ) {
 		bufcat_id(h, n->string);
-		if (n->next)
+		if (NULL != (n = n->next))
 			bufcat_id(h, " ");
 	}
 
-	PAIR_ID_INIT(&tag, h->buf);
-	print_otag(h, TAG_H1, 1, &tag);
+	if (NULL == n) {
+		PAIR_ID_INIT(&tag, h->buf);
+		print_otag(h, TAG_H1, 1, &tag);
+	} else
+		print_otag(h, TAG_H1, 0, NULL);
+
 	return(1);
 }
-
 
 /* ARGSUSED */
 static int
@@ -635,14 +639,19 @@ mdoc_ss_pre(MDOC_ARGS)
 
 	bufinit(h);
 	bufcat(h, "x");
-	for (n = n->child; n; n = n->next) {
+
+	for (n = n->child; n && MDOC_TEXT == n->type; ) {
 		bufcat_id(h, n->string);
-		if (n->next)
+		if (NULL != (n = n->next))
 			bufcat_id(h, " ");
 	}
 
-	PAIR_ID_INIT(&tag, h->buf);
-	print_otag(h, TAG_H2, 1, &tag);
+	if (NULL == n) {
+		PAIR_ID_INIT(&tag, h->buf);
+		print_otag(h, TAG_H2, 1, &tag);
+	} else
+		print_otag(h, TAG_H2, 0, NULL);
+
 	return(1);
 }
 
@@ -1171,9 +1180,10 @@ mdoc_sx_pre(MDOC_ARGS)
 
 	bufinit(h);
 	bufcat(h, "#x");
-	for (n = n->child; n; n = n->next) {
+
+	for (n = n->child; n; ) {
 		bufcat_id(h, n->string);
-		if (n->next)
+		if (NULL != (n = n->next))
 			bufcat_id(h, " ");
 	}
 

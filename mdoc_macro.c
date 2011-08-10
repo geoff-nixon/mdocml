@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.108 2011/04/25 00:03:07 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.109 2011/04/30 10:18:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -74,8 +74,8 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ in_line_eoln, MDOC_PROLOGUE }, /* Dd */
 	{ in_line_eoln, MDOC_PROLOGUE }, /* Dt */
 	{ in_line_eoln, MDOC_PROLOGUE }, /* Os */
-	{ blk_full, 0 }, /* Sh */
-	{ blk_full, 0 }, /* Ss */ 
+	{ blk_full, MDOC_PARSED }, /* Sh */
+	{ blk_full, MDOC_PARSED }, /* Ss */ 
 	{ in_line_eoln, 0 }, /* Pp */ 
 	{ blk_part_imp, MDOC_PARSED }, /* D1 */
 	{ blk_part_imp, MDOC_PARSED }, /* Dl */

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.172 2011/07/26 14:09:01 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.173 2011/08/10 14:07:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1395,7 +1395,7 @@ post_bl_block_width(POST_ARGS)
 
 	assert(i < (int)n->args->argc);
 
-	snprintf(buf, NUMSIZ, "%zun", width);
+	snprintf(buf, NUMSIZ, "%un", (unsigned int)width);
 	free(n->args->argv[i].value[0]);
 	n->args->argv[i].value[0] = mandoc_strdup(buf);
 
@@ -1445,7 +1445,7 @@ post_bl_block_tag(POST_ARGS)
 
 	/* Defaults to ten ens. */
 
-	snprintf(buf, NUMSIZ, "%zun", sz);
+	snprintf(buf, NUMSIZ, "%un", (unsigned int)sz);
 
 	/*
 	 * We have to dynamically add this to the macro's argument list.

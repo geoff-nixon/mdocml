@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.166 2011/07/29 09:19:48 kristaps Exp $ */
+/*	$Id: roff.c,v 1.167 2011/07/29 10:16:59 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1665,13 +1665,6 @@ roff_eqn(const struct roff *r)
 {
 	
 	return(r->last_eqn ? &r->last_eqn->eqn : NULL);
-}
-
-char
-roff_eqndelim(const struct roff *r)
-{
-
-	return('\0');
 }
 
 /*

@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.197 2011/08/10 14:07:23 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.198 2011/08/16 23:37:39 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 10 2011 $
+.Dd $Mdocdate: August 16 2011 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -2036,11 +2036,11 @@ If the argument is a macro, a hyphen is prefixed to the subsequent macro
 output.
 .Pp
 Examples:
-.Dl ".Nm cat Fl v No considered harmful"
-.Dl ".Nm cp Fl pR Ar source ... directory"
-.Dl ".Nm find Ar dir Fl type Cm d Fl name Pa CVS"
-.Dl ".Nm kill Fl Ar signal_number pid"
-.Dl ".Nm su Fl"
+.Dl ".Fl R Op Fl H | L | P"
+.Dl ".Op Fl 1AaCcdFfgHhikLlmnopqRrSsTtux"
+.Dl ".Fl type Cm d Fl name Pa CVS"
+.Dl ".Fl Ar signal_number"
+.Dl ".Fl o Fl"
 .Pp
 See also
 .Sx \&Cm .

@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.199 2011/08/16 23:44:58 schwarze Exp $
+.\"	$Id: mdoc.7,v 1.200 2011/08/17 20:34:53 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 16 2011 $
+.Dd $Mdocdate: August 17 2011 $
 .Dt MDOC 7
 .Os
 .Sh NAME
@@ -73,6 +73,14 @@ Furthermore,
 macro lines with only a control character and optional trailing
 whitespace are
 stripped from input.
+.Pp
+Examples:
+.Bd -literal -offset indent -compact
+\&.\e\*q This is a comment line.
+\&.\e\*q The next line is ignored:
+\&.
+\&.Em Emphasis \e\*q This is also a comment.
+.Ed
 .Ss Special Characters
 Special characters are used to encode special glyphs and are rendered
 differently across output media.
@@ -260,9 +268,9 @@ Examples:
 .It \&.Bl -tag -width 2i
 two-inch tagged list indentation
 .Pq see Sx \&Bl
-.It \&.br 2v
+.It \&.sp 2v
 two vertical spaces
-.Pq see Sx \&br
+.Pq see Sx \&sp
 .El
 .Ss Sentence Spacing
 Sentences should terminate at the end of an input line.

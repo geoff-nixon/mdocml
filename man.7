@@ -1,4 +1,4 @@
-.\"	$Id: man.7,v 1.102 2011/07/08 09:35:06 kristaps Exp $
+.\"	$Id: man.7,v 1.103 2011/08/17 22:16:32 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: July 8 2011 $
+.Dd $Mdocdate: August 17 2011 $
 .Dt MAN 7
 .Os
 .Sh NAME
@@ -72,6 +72,14 @@ Furthermore,
 macro lines with only a control character and optional trailing
 whitespace are
 stripped from input.
+.Pp
+Examples:
+.Bd -literal -offset indent -compact
+\&.\e\*q This is a comment line.
+\&.\e\*q The next line is ignored:
+\&.
+\&.Em Emphasis \e\*q This is also a comment.
+.Ed
 .Ss Special Characters
 Special characters are used to encode special glyphs and are rendered
 differently across output media.

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.174 2011/07/23 22:57:13 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.175 2011/08/10 14:07:23 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1994,7 +1994,7 @@ mdoc_li_pre(MDOC_ARGS)
 	struct htmlpair	tag;
 
 	PAIR_CLASS_INIT(&tag, "lit");
-	print_otag(h, TAG_SPAN, 1, &tag);
+	print_otag(h, TAG_CODE, 1, &tag);
 	return(1);
 }
 

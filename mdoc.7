@@ -1,4 +1,4 @@
-.\"	$Id: mdoc.7,v 1.203 2011/08/19 10:19:55 kristaps Exp $
+.\"	$Id: mdoc.7,v 1.204 2011/08/19 12:55:33 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -176,7 +176,7 @@ In the rare case that a blank character is needed at the end of an
 input line, it may be forced by
 .Sq \e\ \e& .
 .Pp
-In general, space characters can be considered as non-whitespace
+In general, space characters can be rendered as literal
 characters by using non-breaking space escapes or
 .Sx Quotation .
 .Pp
@@ -199,7 +199,7 @@ Examples:
 .It Li .Fn strlen \(dqconst char *s\(dq
 Group arguments
 .Qq const char *s
-into one functinon argument.
+into one function argument.
 If unspecified,
 .Qq const ,
 .Qq char ,

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.176 2011/08/18 09:02:22 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.177 2011/08/18 09:16:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -2219,7 +2219,11 @@ mdoc_quote_pre(MDOC_ARGS)
 		print_text(h, "(");
 		break;
 	case (MDOC_Ql):
-		/* FALLTHROUGH */
+		print_text(h, "\\(oq");
+		h->flags |= HTML_NOSPACE;
+		PAIR_CLASS_INIT(&tag, "lit");
+		print_otag(h, TAG_CODE, 1, &tag);
+		break;
 	case (MDOC_So):
 		/* FALLTHROUGH */
 	case (MDOC_Sq):

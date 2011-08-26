@@ -1,4 +1,4 @@
-/* $Id: example.style.css,v 1.44 2011/08/18 09:02:22 kristaps Exp $ */
+/* $Id: example.style.css,v 1.45 2011/08/18 09:16:01 kristaps Exp $ */
 
 /*
  * This is an example style-sheet provided for mandoc(1) and the -Thtml
@@ -38,7 +38,7 @@ i		{ } /* Italic: BI, IB, I, (implicit). */
 b		{ } /* Bold: SB, BI, IB, BR, RB, B, (implicit). */
 .symb		{ font-style: normal; font-weight: bold; } /* Symbolic: Sy, Ms, Bf -symbolic. */
 small		{ } /* Small: SB, SM. */
-.lit		{ font-style: normal; font-weight: normal; font-family: monospace; } /* Literal: Dl, Li, Bf -literal, Bl -literal, Bl -unfilled. */
+.lit		{ font-style: normal; font-weight: normal; font-family: monospace; } /* Literal: Dl, Li, Ql, Bf -literal, Bl -literal, Bl -unfilled. */
 
 /* Block modes. */
 

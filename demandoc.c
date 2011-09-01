@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.1 2011/09/01 10:46:28 kristaps Exp $ */
+/*	$Id: demandoc.c,v 1.2 2011/09/01 10:47:47 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -44,7 +44,6 @@ main(int argc, char *argv[])
 	struct mparse	*mp;
 	int		 ch, i;
 	extern int	 optind;
-	extern char	*optarg;
 
 	progname = strrchr(argv[0], '/');
 	if (progname == NULL)
@@ -76,7 +75,7 @@ main(int argc, char *argv[])
 	}
 
 	mparse_free(mp);
-	return(MANDOCLEVEL_OK);
+	return((int)MANDOCLEVEL_OK);
 }
 
 static void
@@ -132,7 +131,7 @@ pstring(const char *p, int col, int *colp)
 			if (ESCAPE_ERROR == esc)
 				return;
 		} else {
-			putchar(*p++);
+			putchar((unsigned char )*p++);
 			(*colp)++;
 		}
 	}

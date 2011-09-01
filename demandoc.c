@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.5 2011/07/15 17:59:29 kristaps Exp $ */
+/*	$Id: demandoc.c,v 1.1 2011/09/01 10:46:28 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 #include "man.h"
 #include "mdoc.h"

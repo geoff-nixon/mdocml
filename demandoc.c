@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.4 2011/09/01 20:55:50 kristaps Exp $ */
+/*	$Id: demandoc.c,v 1.5 2011/09/01 22:09:50 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -132,7 +132,7 @@ static void
 pstring(const char *p, int col, int *colp, int list)
 {
 	enum mandoc_esc	 esc;
-	const char	*start;
+	const char	*start, *end;
 	int		 emit;
 
 	/*
@@ -161,8 +161,20 @@ again:
 			} else if (isspace((unsigned char)*p))
 				break;
 
-		if (emit && p - start >= 2) {
-			for ( ; start != p; start++)
+		end = p - 1;
+
+		while (end > start)
+			if ('.' == *end || ',' == *end || 
+					'\'' == *end || '"' == *end ||
+					')' == *end || '!' == *end ||
+					'?' == *end || ':' == *end ||
+					';' == *end)
+				end--;
+			else
+				break;
+
+		if (emit && end - start >= 1) {
+			for ( ; start <= end; start++)
 				if (ASCII_HYPH == *start)
 					putchar('-');
 				else

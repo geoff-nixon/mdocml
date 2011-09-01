@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.3 2011/09/01 10:49:13 kristaps Exp $ */
+/*	$Id: demandoc.c,v 1.4 2011/09/01 20:55:50 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -121,7 +121,8 @@ pmandoc(struct mparse *mp, int fd, const char *fn, int list)
 	else
 		return;
 
-	putchar('\n');
+	if ( ! list)
+		putchar('\n');
 }
 
 /*
@@ -131,12 +132,58 @@ static void
 pstring(const char *p, int col, int *colp, int list)
 {
 	enum mandoc_esc	 esc;
+	const char	*start;
+	int		 emit;
+
+	/*
+	 * Print as many column spaces til we achieve parity with the
+	 * input document.
+	 */
+
+again:
+	if (list && '\0' != *p) {
+		while (isspace((unsigned char)*p))
+			p++;
+
+		while ('\'' == *p || '(' == *p || '"' == *p)
+			p++;
+
+		emit = isalpha((unsigned char)p[0]) &&
+			isalpha((unsigned char)p[1]);
+
+		for (start = p; '\0' != *p; p++)
+			if ('\\' == *p) {
+				p++;
+				esc = mandoc_escape(&p, NULL, NULL);
+				if (ESCAPE_ERROR == esc)
+					return;
+				emit = 0;
+			} else if (isspace((unsigned char)*p))
+				break;
+
+		if (emit && p - start >= 2) {
+			for ( ; start != p; start++)
+				if (ASCII_HYPH == *start)
+					putchar('-');
+				else
+					putchar((unsigned char)*start);
+			putchar('\n');
+		}
+
+		if (isspace((unsigned char)*p))
+			goto again;
+
+		return;
+	}
 
 	while (*colp < col) {
 		putchar(' ');
 		(*colp)++;
 	}
 
+	/*
+	 * Print the input word, skipping any special characters.
+	 */
 	while ('\0' != *p) 
 		if ('\\' == *p) {
 			p++;
@@ -152,6 +199,14 @@ pstring(const char *p, int col, int *colp, int list)
 static void
 pline(int line, int *linep, int *col, int list)
 {
+
+	if (list)
+		return;
+
+	/*
+	 * Print out as many lines as needed to reach parity with the
+	 * original input. 
+	 */
 
 	while (*linep < line) {
 		putchar('\n');

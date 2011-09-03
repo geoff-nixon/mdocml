@@ -1,4 +1,4 @@
-.\"	$Id: tbl.7,v 1.14 2011/08/18 08:58:44 kristaps Exp $
+.\"	$Id: tbl.7,v 1.15 2011/09/02 19:37:35 kristaps Exp $
 .\"
 .\" Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 18 2011 $
+.Dd $Mdocdate: September 2 2011 $
 .Dt TBL 7
 .Os
 .Sh NAME
@@ -256,12 +256,21 @@ The following case-insensitive modifier keys are available:
 .Cm e ,
 .Cm t ,
 .Cm d ,
-.Cm f ,
 .Cm b ,
 .Cm i ,
-.Cm b ,
+.Cm r ,
 and
-.Cm i .
+.Cm f
+.Po
+followed by
+.Cm b ,
+.Cm i ,
+.Cm r ,
+.Cm 3 ,
+.Cm 2 ,
+or
+.Cm 1
+.Pc .
 All of these are ignored by
 .Xr mandoc 1 .
 .Pp

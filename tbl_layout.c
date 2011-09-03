@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.19 2011/04/07 01:08:42 joerg Exp $ */
+/*	$Id: tbl_layout.c,v 1.20 2011/05/17 13:11:40 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -173,6 +173,8 @@ mod:
 		goto mod;
 	case ('f'):
 		break;
+	case ('r'):
+		/* FALLTHROUGH */
 	case ('b'):
 		/* FALLTHROUGH */
 	case ('i'):
@@ -185,11 +187,19 @@ mod:
 	}
 
 	switch (tolower((unsigned char)p[(*pos)++])) {
+	case ('3'):
+		/* FALLTHROUGH */
 	case ('b'):
 		cp->flags |= TBL_CELL_BOLD;
 		goto mod;
+	case ('2'):
+		/* FALLTHROUGH */
 	case ('i'):
 		cp->flags |= TBL_CELL_ITALIC;
+		goto mod;
+	case ('1'):
+		/* FALLTHROUGH */
+	case ('r'):
 		goto mod;
 	default:
 		break;

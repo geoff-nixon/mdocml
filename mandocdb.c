@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.4 2011/07/15 10:15:24 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.5 2011/07/15 17:59:29 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1254,7 +1254,7 @@ ofile_dirbuild(const char *dir, int verb, struct of **of)
 		buf[0] = '\0';
 		strlcat(buf, dir, MAXPATHLEN);
 		strlcat(buf, "/", MAXPATHLEN);
-		strlcat(buf, fn, MAXPATHLEN);
+		sz = strlcat(buf, fn, MAXPATHLEN);
 		if (sz >= MAXPATHLEN) {
 			fprintf(stderr, "%s: Path too long\n", dir);
 			return(0);

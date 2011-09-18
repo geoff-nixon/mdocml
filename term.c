@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.197 2011/05/24 21:31:23 kristaps Exp $ */
+/*	$Id: term.c,v 1.198 2011/09/18 14:14:15 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -576,13 +576,16 @@ encode(struct termp *p, const char *word, size_t sz)
 		adjbuf(p, p->col + 1 + (len * 3));
 
 	for (i = 0; i < len; i++) {
-		if ( ! isgraph((unsigned char)word[i])) {
+		if (ASCII_HYPH != word[i] &&
+		    ! isgraph((unsigned char)word[i])) {
 			p->buf[p->col++] = word[i];
 			continue;
 		}
 
 		if (TERMFONT_UNDER == f)
 			p->buf[p->col++] = '_';
+		else if (ASCII_HYPH == word[i])
+			p->buf[p->col++] = '-';
 		else
 			p->buf[p->col++] = word[i];
 

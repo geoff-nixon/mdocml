@@ -1,6 +1,6 @@
-/*	$Id: main.h,v 1.12 2011/05/20 15:48:22 kristaps Exp $ */
+/*	$Id: main.h,v 1.13 2011/09/17 15:00:51 schwarze Exp $ */
 /*
- * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

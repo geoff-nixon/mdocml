@@ -1,6 +1,6 @@
-/*	$Id: term.c,v 1.196 2011/05/20 15:44:55 kristaps Exp $ */
+/*	$Id: term.c,v 1.197 2011/05/24 21:31:23 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

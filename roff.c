@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.167 2011/07/29 10:16:59 kristaps Exp $ */
+/*	$Id: roff.c,v 1.168 2011/08/16 12:30:12 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -179,7 +179,7 @@ static	const char	*roff_getstrn(const struct roff *,
 				const char *, size_t);
 static	enum rofferr	 roff_line_ignore(ROFF_ARGS);
 static	enum rofferr	 roff_nr(ROFF_ARGS);
-static	void		 roff_openeqn(struct roff *, const char *, 
+static	void		 roff_openeqn(struct roff *, const char *,
 				int, int, const char *);
 static	enum rofft	 roff_parse(struct roff *, const char *, int *);
 static	enum rofferr	 roff_parsetext(char *);

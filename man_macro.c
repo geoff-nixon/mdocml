@@ -1,6 +1,6 @@
-/*	$Id: man_macro.c,v 1.63 2011/06/18 17:36:52 kristaps Exp $ */
+/*	$Id: man_macro.c,v 1.64 2011/07/07 05:42:32 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

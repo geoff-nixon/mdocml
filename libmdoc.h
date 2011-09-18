@@ -1,6 +1,6 @@
-/*	$Id: libmdoc.h,v 1.75 2011/07/18 07:46:41 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.76 2011/07/18 07:48:14 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

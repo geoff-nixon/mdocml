@@ -1,6 +1,6 @@
-/*	$Id: tbl_layout.c,v 1.20 2011/05/17 13:11:40 kristaps Exp $ */
+/*	$Id: tbl_layout.c,v 1.21 2011/09/03 00:29:21 kristaps Exp $ */
 /*
- * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

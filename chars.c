@@ -1,6 +1,6 @@
-/*	$Id: chars.c,v 1.49 2011/07/22 14:15:15 kristaps Exp $ */
+/*	$Id: chars.c,v 1.50 2011/07/31 11:24:39 schwarze Exp $ */
 /*
- * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

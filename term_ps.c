@@ -1,6 +1,6 @@
-/*	$Id: term_ps.c,v 1.51 2011/05/17 14:38:34 kristaps Exp $ */
+/*	$Id: term_ps.c,v 1.52 2011/08/16 12:23:51 kristaps Exp $ */
 /*
- * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

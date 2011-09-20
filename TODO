@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.120 2011/07/28 14:37:39 kristaps Exp $
+* $Id: TODO,v 1.121 2011/09/18 16:43:28 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -349,6 +349,10 @@ Several areas can be cleaned up to make mandoc even faster.  These are
 ************************************************************************
 * structural issues
 ************************************************************************
+
+- We use the input line number at several places to distinguish
+  same-line from different-line input.  That plainly doesn't work
+  with user-defined macros, leading to random breakage.
 
 - Find better ways to prevent endless loops
   in roff(7) macro and string expansion.

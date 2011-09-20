@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.117 2011/09/19 22:36:16 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.118 2011/09/20 09:02:23 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -826,7 +826,8 @@ pre_RS(DECL_ARGS)
 			sz = (size_t)ival;
 
 	mt->offset += sz;
-	p->offset = mt->offset;
+	p->rmargin = p->maxrmargin;
+	p->offset = mt->offset < p->rmargin ? mt->offset : p->rmargin;
 
 	if (++mt->lmarginsz < MAXMARGINS)
 		mt->lmargincur = mt->lmarginsz;

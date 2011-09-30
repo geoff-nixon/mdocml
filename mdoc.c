@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.194 2011/07/27 12:43:02 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.195 2011/07/28 14:17:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -160,6 +160,7 @@ mdoc_alloc1(struct mdoc *mdoc)
 	mdoc->last = mandoc_calloc(1, sizeof(struct mdoc_node));
 	mdoc->first = mdoc->last;
 	mdoc->last->type = MDOC_ROOT;
+	mdoc->last->tok = MDOC_MAX;
 	mdoc->next = MDOC_NEXT_CHILD;
 }
 

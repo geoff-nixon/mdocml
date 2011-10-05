@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.148 2011/07/04 09:42:38 kristaps Exp $ */
+/*	$Id: html.c,v 1.149 2011/07/07 14:34:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -118,13 +118,14 @@ static void *
 ml_alloc(char *outopts, enum htmltype type)
 {
 	struct html	*h;
-	const char	*toks[4];
+	const char	*toks[5];
 	char		*v;
 
 	toks[0] = "style";
 	toks[1] = "man";
 	toks[2] = "includes";
-	toks[3] = NULL;
+	toks[3] = "fragment";
+	toks[4] = NULL;
 
 	h = mandoc_calloc(1, sizeof(struct html));
 
@@ -142,6 +143,9 @@ ml_alloc(char *outopts, enum htmltype type)
 			break;
 		case (2):
 			h->base_includes = v;
+			break;
+		case (3):
+			h->oflags |= HTML_FRAGMENT;
 			break;
 		default:
 			break;

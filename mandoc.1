@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.92 2011/09/18 14:14:15 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.93 2011/09/26 20:47:23 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: September 18 2011 $
+.Dd $Mdocdate: September 26 2011 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -259,6 +259,12 @@ The following
 .Fl O
 arguments are accepted:
 .Bl -tag -width Ds
+.It Cm fragment
+Do not emit doctype, html, and body elements.
+The
+.Cm style
+argument shall be unused.
+This is useful when embedding manual content within existing documents.
 .It Cm includes Ns = Ns Ar fmt
 The string
 .Ar fmt ,

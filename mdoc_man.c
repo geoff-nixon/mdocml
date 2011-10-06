@@ -1,4 +1,4 @@
-/*	$Id: mdoc_man.c,v 1.2 2011/09/20 13:47:55 schwarze Exp $ */
+/*	$Id: mdoc_man.c,v 1.3 2011/09/30 00:13:28 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -18,6 +18,7 @@
 #include <string.h>
 
 #include "mandoc.h"
+#include "man.h"
 #include "mdoc.h"
 #include "main.h"
 
@@ -216,6 +217,13 @@ print_word(const char *s)
 			break;
 		}
 	}
+}
+
+void
+man_man(void *arg, const struct man *man)
+{
+
+	fputs(mparse_getkeep(man_mparse(man)), stdout);
 }
 
 void

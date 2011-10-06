@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.163 2011/05/20 15:51:18 kristaps Exp $ */
+/*	$Id: main.c,v 1.164 2011/09/17 15:00:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -127,6 +127,12 @@ main(int argc, char *argv[])
 
 	curp.mp = mparse_alloc(type, curp.wlevel, mmsg, &curp);
 
+	/*
+	 * Conditionally start up the lookaside buffer before parsing.
+	 */
+	if (OUTT_MAN == curp.outtype)
+		mparse_keep(curp.mp);
+
 	argc -= optind;
 	argv += optind;
 
@@ -252,6 +258,7 @@ parse(struct curparse *curp, int fd,
 			break;
 		case (OUTT_MAN):
 			curp->outmdoc = man_mdoc;
+			curp->outman = man_man;
 			break;
 		case (OUTT_PDF):
 			/* FALLTHROUGH */

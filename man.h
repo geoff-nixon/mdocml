@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.57 2011/03/22 13:28:22 kristaps Exp $ */
+/*	$Id: man.h,v 1.58 2011/03/23 12:33:01 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -105,6 +105,7 @@ struct	man;
 
 const struct man_node *man_node(const struct man *);
 const struct man_meta *man_meta(const struct man *);
+const struct mparse   *man_mparse(const struct man *);
 
 __END_DECLS
 

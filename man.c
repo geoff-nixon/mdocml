@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.110 2011/07/27 12:43:02 kristaps Exp $ */
+/*	$Id: man.c,v 1.111 2011/07/28 14:17:11 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -647,4 +647,12 @@ man_node_unlink(struct man *m, struct man_node *n)
 
 	if (m && m->first == n)
 		m->first = NULL;
+}
+
+const struct mparse *
+man_mparse(const struct man *m)
+{
+
+	assert(m && m->parse);
+	return(m->parse);
 }

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_man.c,v 1.5 2011/10/08 09:58:29 kristaps Exp $ */
+/*	$Id: mdoc_man.c,v 1.6 2011/10/08 11:37:27 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -14,6 +14,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <stdio.h>
 #include <string.h>
 

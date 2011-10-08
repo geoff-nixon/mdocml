@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.23 2011/07/23 18:41:18 kristaps Exp $ */
+/*	$Id: read.c,v 1.24 2011/10/06 22:29:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -464,7 +464,8 @@ rerun:
 			 * buffer because we're going to descend into
 			 * the file recursively.
 			 */
-			curp->secondary->sz -= pos + 1;
+			if (curp->secondary) 
+				curp->secondary->sz -= pos + 1;
 			mparse_readfd_r(curp, -1, ln.buf + of, 1);
 			if (MANDOCLEVEL_FATAL <= curp->file_status)
 				break;

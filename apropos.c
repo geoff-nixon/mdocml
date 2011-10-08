@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.2 2011/10/07 13:22:33 kristaps Exp $ */
+/*	$Id: apropos.c,v 1.3 2011/10/07 13:29:03 kristaps Exp $ */
 /*
 * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -491,10 +491,7 @@ buf_alloc(char **buf, size_t *bufsz, size_t sz)
 		return;
 
 	*bufsz = sz + 1024;
-	if (NULL == (*buf = realloc(*buf, *bufsz))) {
-		perror(NULL);
-		exit(EXIT_FAILURE);
-	}
+	*buf = mandoc_realloc(*buf, *bufsz);
 }
 
 /*

@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.75 2011/09/06 17:53:50 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.76 2011/10/16 12:20:34 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -415,10 +415,12 @@ post_TH(CHKARGS)
 
 	if (n)
 		n = n->next;
-	if (n)
+	if (n && n->string && '\0' != n->string[0]) {
 		pos = n->pos;
-	m->meta.date = mandoc_normdate
-		(m->parse, n ? n->string : NULL, line, pos);
+		m->meta.date = mandoc_normdate
+		    (m->parse, n->string, line, pos);
+	} else
+		m->meta.date = mandoc_strdup("");
 
 	/* TITLE MSEC DATE ->SOURCE<- VOL */
 

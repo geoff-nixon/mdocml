@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.59 2011/09/18 14:14:15 schwarze Exp $ */
+/*	$Id: mandoc.c,v 1.60 2011/10/24 20:30:57 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -369,8 +369,15 @@ out:
 
 	switch (gly) {
 	case (ESCAPE_FONT):
-		if (1 != rlim)
+		/*
+		 * Pretend that the constant-width font modes are the
+		 * same as the regular font modes.
+		 */
+		if (2 == rlim && 'C' == *rstart)
+			rstart++;
+		else if (1 != rlim)
 			break;
+
 		switch (*rstart) {
 		case ('3'):
 			/* FALLTHROUGH */

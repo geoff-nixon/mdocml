@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.24 2011/10/06 22:29:12 kristaps Exp $ */
+/*	$Id: read.c,v 1.25 2011/10/08 15:42:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -192,7 +192,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"not a manual",
 	"column syntax is inconsistent",
 	"NOT IMPLEMENTED: .Bd -file",
-	"line scope broken, syntax violated",
 	"argument count wrong, violates syntax",
 	"child violates parent syntax",
 	"argument count wrong, violates syntax",

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.95 2011/07/23 18:44:42 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.96 2011/10/06 22:29:12 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -150,7 +150,6 @@ enum	mandocerr {
 	MANDOCERR_NOTMANUAL, /* manual isn't really a manual */
 	MANDOCERR_COLUMNS, /* column syntax is inconsistent */
 	MANDOCERR_BADDISP, /* NOT IMPLEMENTED: .Bd -file */
-	MANDOCERR_SYNTLINESCOPE, /* line scope broken, syntax violated */
 	MANDOCERR_SYNTARGVCOUNT, /* argument count wrong, violates syntax */
 	MANDOCERR_SYNTCHILD, /* child violates parent syntax */
 	MANDOCERR_SYNTARGCOUNT, /* argument count wrong, violates syntax */

@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.111 2011/07/28 14:17:11 kristaps Exp $ */
+/*	$Id: man.c,v 1.112 2011/10/06 22:29:12 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -543,10 +543,37 @@ man_pmacro(struct man *m, int ln, char *buf, int offs)
 			n = n->parent;
 
 		mandoc_vmsg(MANDOCERR_LINESCOPE, m->parse, n->line, 
-				n->pos, "%s", man_macronames[n->tok]);
+		    n->pos, "%s breaks %s", man_macronames[tok],
+		    man_macronames[n->tok]);
 
 		man_node_delete(m, n);
 		m->flags &= ~MAN_ELINE;
+	}
+
+	/*
+	 * Remove prior BLINE macro that is being clobbered.
+	 */
+	if ((m->flags & MAN_BLINE) &&
+	    (MAN_BSCOPE & man_macros[tok].flags)) {
+		n = m->last;
+		assert(MAN_TEXT != n->type);
+
+		/* Remove element that didn't end BLINE, if any. */
+
+		if ( ! (MAN_BSCOPE & man_macros[n->tok].flags))
+			n = n->parent;
+
+		assert(MAN_HEAD == n->type);
+		n = n->parent;
+		assert(MAN_BLOCK == n->type);
+		assert(MAN_SCOPED & man_macros[n->tok].flags);
+
+		mandoc_vmsg(MANDOCERR_LINESCOPE, m->parse, n->line, 
+		    n->pos, "%s breaks %s", man_macronames[tok],
+		    man_macronames[n->tok]);
+
+		man_node_delete(m, n);
+		m->flags &= ~MAN_BLINE;
 	}
 
 	/*

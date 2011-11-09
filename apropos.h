@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.98 2011/11/08 00:15:23 kristaps Exp $ */
+/*	$Id: apropos.h,v 1.1 2011/11/09 01:24:23 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -53,15 +53,18 @@ struct	rec {
 struct	opts {
 	const char	*arch; /* restrict to architecture */
 	const char	*cat; /* restrict to manual section */
-	int		 types; /* only types in bitmask */
-	int		 flags;
-#define	OPTS_INSENS	(0x01) /* case-insensitive match */
 };
 
 __BEGIN_DECLS
 
-void	 apropos_search(const struct opts *, const char *, 
-		void *, void (*)(struct rec *, size_t, void *));
+struct	expr;
+
+void	 	 apropos_search(const struct opts *, 
+			const struct expr *, void *, 
+			void (*)(struct rec *, size_t, void *));
+
+struct	expr	*exprcomp(int, char *[], int);
+void		 exprfree(struct expr *);
 
 __END_DECLS
 

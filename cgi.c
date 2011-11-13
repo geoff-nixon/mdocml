@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.2 2011/11/09 22:05:56 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.3 2011/11/13 10:12:05 schwarze Exp $ */
 #include <assert.h>
 #include <fcntl.h>
 #include <regex.h>
@@ -7,8 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "apropos_db.h"
 #include "mandoc.h"
+#include "mandocdb.h"
+#include "apropos_db.h"
 
 /*
  * The page a request is trying to make.

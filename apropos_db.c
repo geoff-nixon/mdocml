@@ -1,4 +1,4 @@
-/*	$Id: db.c,v 1.2 2011/11/09 22:05:56 kristaps Exp $ */
+/*	$Id: db.c,v 1.3 2011/11/09 23:31:36 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -27,7 +27,7 @@
 # include <db.h>
 #endif
 
-#include "apropos.h"
+#include "apropos_db.h"
 #include "mandoc.h"
 
 enum	match {

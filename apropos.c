@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.9 2011/11/09 10:53:48 kristaps Exp $ */
+/*	$Id: apropos.c,v 1.10 2011/11/09 22:05:56 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -21,7 +21,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "apropos.h"
+#include "apropos_db.h"
 #include "mandoc.h"
 
 static	int	 cmp(const void *, const void *);

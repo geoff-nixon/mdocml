@@ -1,4 +1,4 @@
-/*	$Id: apropos.h,v 1.1 2011/11/09 01:24:23 kristaps Exp $ */
+/*	$Id: apropos.h,v 1.2 2011/11/09 22:05:56 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *

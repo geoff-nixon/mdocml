@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.5 2011/07/15 17:59:29 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.6 2011/09/17 13:54:27 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -1168,10 +1168,9 @@ pman_node(MAN_ARGS)
 		}
 	}
 
-	if (pman_node(hash, buf, dbuf, n->child))
-		return(1);
-	if (pman_node(hash, buf, dbuf, n->next))
-		return(1);
+	for (n = n->child; n; n = n->next)
+		if (pman_node(hash, buf, dbuf, n))
+			return(1);
 
 	return(0);
 }
@@ -1276,6 +1275,7 @@ ofile_dirbuild(const char *dir, int verb, struct of **of)
 		}
 	}
 
+	closedir(d);
 	return(1);
 }
 

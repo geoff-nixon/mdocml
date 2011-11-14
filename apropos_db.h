@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.h,v 1.2 2011/11/13 10:49:57 schwarze Exp $ */
+/*	$Id: apropos_db.h,v 1.3 2011/11/13 11:10:27 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -49,7 +49,7 @@ void	 	 apropos_search(const struct opts *,
 			const struct expr *, void *, 
 			void (*)(struct rec *, size_t, void *));
 
-struct	expr	*exprcomp(int, char *[]);
+struct	expr	*exprcomp(char *);
 void		 exprfree(struct expr *);
 
 __END_DECLS

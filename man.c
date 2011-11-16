@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.112 2011/10/06 22:29:12 kristaps Exp $ */
+/*	$Id: man.c,v 1.113 2011/11/07 01:24:40 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -556,10 +556,15 @@ man_pmacro(struct man *m, int ln, char *buf, int offs)
 	if ((m->flags & MAN_BLINE) &&
 	    (MAN_BSCOPE & man_macros[tok].flags)) {
 		n = m->last;
-		assert(MAN_TEXT != n->type);
+
+		/* Might be a text node like 8 in
+		 * .TP 8
+		 * .SH foo
+		 */
+		if (MAN_TEXT == n->type)
+			n = n->parent;
 
 		/* Remove element that didn't end BLINE, if any. */
-
 		if ( ! (MAN_BSCOPE & man_macros[n->tok].flags))
 			n = n->parent;
 

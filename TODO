@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.123 2011/11/07 01:24:40 schwarze Exp $
+* $Id: TODO,v 1.124 2011/11/13 10:02:54 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -56,6 +56,9 @@
   reported by brad@  Sat, 15 Jan 2011 15:50:51 -0500
 
 - \c (interrupted text) occurs in chat(8)
+
+- using undefined strings or macros defines them to be empty
+  wl@  Mon, 14 Nov 2011 14:37:01 +0000
 
 --- missing mdoc features ----------------------------------------------
 

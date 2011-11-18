@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.176 2011/09/02 19:40:18 kristaps Exp $ */
+/*	$Id: mdoc_validate.c,v 1.177 2011/10/16 12:20:34 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1692,6 +1692,10 @@ post_rs(POST_ARGS)
 		mdoc_nmsg(mdoc, nn, MANDOCERR_CHILD);
 		mdoc_node_delete(mdoc, nn);
 	}
+
+	/* Bail out early if a plain text node is found inside .Rs. */
+	if (NULL == mdoc->last->child)
+		return(1);
 
 	/*
 	 * The full `Rs' block needs special handling to order the

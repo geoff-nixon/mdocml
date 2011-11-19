@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.177 2011/10/16 12:20:34 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.178 2011/11/18 14:58:24 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1693,7 +1693,11 @@ post_rs(POST_ARGS)
 		mdoc_node_delete(mdoc, nn);
 	}
 
-	/* Bail out early if a plain text node is found inside .Rs. */
+	/*
+	 * Nothing to sort if only invalid nodes were found
+	 * inside the `Rs' body.
+	 */
+
 	if (NULL == mdoc->last->child)
 		return(1);
 

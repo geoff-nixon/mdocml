@@ -1,9 +1,10 @@
-/*	$Id: cgi.c,v 1.3 2011/11/13 10:12:05 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.4 2011/11/13 10:49:57 schwarze Exp $ */
 #include <assert.h>
 #include <fcntl.h>
 #include <regex.h>
 #include <stdio.h>
 #include <stdarg.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
 

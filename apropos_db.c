@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.7 2011/11/20 12:46:53 kristaps Exp $ */
+/*	$Id: apropos_db.c,v 1.8 2011/11/20 15:43:14 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -596,7 +596,7 @@ exprcomp(int argc, char *argv[], size_t *tt)
  * Return the root of the expression sequence if alright.
  */
 static struct expr *
-exprexpr(int argc, char **argv, int *pos, int *lvl, size_t *tt)
+exprexpr(int argc, char *argv[], int *pos, int *lvl, size_t *tt)
 {
 	struct expr	*e, *first, *next;
 	int		 log;

@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.h,v 1.4 2011/11/14 10:07:06 kristaps Exp $ */
+/*	$Id: apropos_db.h,v 1.5 2011/11/18 07:02:19 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -35,7 +35,7 @@ __BEGIN_DECLS
 
 struct	expr;
 
-int	 	 apropos_search(const struct opts *, 
+int	 	 apropos_search(int, char **, const struct opts *, 
 			const struct expr *, size_t, void *, 
 			void (*)(struct res *, size_t, void *));
 struct	expr	*exprcomp(int, char *[], size_t *);

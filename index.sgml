@@ -110,6 +110,12 @@
 						CLASS="external">src/usr.bin/mandoc</A> 
 					</TD>
 				</TR>
+				<TR>
+					<TD>pkgsrc</TD>
+					<TD>
+					<A HREF="http://pkgsrc.se/textproc/mdocml" CLASS="external">textproc/mdocml</A> 
+					</TD>
+				</TR>
 			</TBODY>
 		</TABLE>
 		<H1>
@@ -349,7 +355,7 @@
 			<SMALL>
 				Copyright &#169; 2008&#8211;2011 
 				<A CLASS="external" HREF="http://kristaps.bsd.lv">Kristaps Dzonsons</A>, 
-				$Date: 2011/10/08 12:21:57 $
+				$Date: 2011/10/08 13:01:44 $
 			</SMALL>
 		</P>
 	</BODY>

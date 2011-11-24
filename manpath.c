@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.17 2011/11/20 21:36:00 kristaps Exp $ */
+/*	$Id: manpath.c,v 1.1 2011/11/23 09:47:38 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -92,8 +92,8 @@ manpath_add(struct manpaths *dirs, const char *dir)
 void
 manpath_parseconf(struct manpaths *dirs)
 {
-	FILE		*stream;
 #ifdef	USE_MANPATH
+	FILE		*stream;
 	char		*buf;
 	size_t		 sz, bsz;
 
@@ -123,6 +123,25 @@ manpath_parseconf(struct manpaths *dirs)
 	free(buf);
 	pclose(stream);
 #else
+	manpath_manconf(dirs);
+#endif
+}
+
+void
+manpath_free(struct manpaths *p)
+{
+	int		 i;
+
+	for (i = 0; i < p->sz; i++)
+		free(p->paths[i]);
+
+	free(p->paths);
+}
+
+void
+manpath_manconf(struct manpaths *dirs)
+{
+	FILE		*stream;
 	char		*p, *q;
 	size_t	 	 len, keysz;
 
@@ -152,16 +171,4 @@ manpath_parseconf(struct manpaths *dirs)
 	}
 
 	fclose(stream);
-#endif
-}
-
-void
-manpath_free(struct manpaths *p)
-{
-	int		 i;
-
-	for (i = 0; i < p->sz; i++)
-		free(p->paths[i]);
-
-	free(p->paths);
 }

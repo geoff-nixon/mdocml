@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.1 2011/11/23 09:47:38 kristaps Exp $ */
+/*	$Id: manpath.c,v 1.2 2011/11/24 10:43:55 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -123,7 +123,7 @@ manpath_parseconf(struct manpaths *dirs)
 	free(buf);
 	pclose(stream);
 #else
-	manpath_manconf(dirs);
+	manpath_manconf(MAN_CONF_FILE, dirs);
 #endif
 }
 
@@ -139,7 +139,7 @@ manpath_free(struct manpaths *p)
 }
 
 void
-manpath_manconf(struct manpaths *dirs)
+manpath_manconf(const char *file, struct manpaths *dirs)
 {
 	FILE		*stream;
 	char		*p, *q;
@@ -148,7 +148,7 @@ manpath_manconf(struct manpaths *dirs)
 	keysz = strlen(MAN_CONF_KEY);
 	assert(keysz > 0);
 
-	if (NULL == (stream = fopen(MAN_CONF_FILE, "r")))
+	if (NULL == (stream = fopen(file, "r")))
 		return;
 
 	while (NULL != (p = fgetln(stream, &len))) {

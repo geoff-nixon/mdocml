@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.9 2011/11/20 12:39:08 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.10 2011/11/23 09:52:20 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -386,7 +386,7 @@ main(int argc, char *argv[])
 		for (i = 0; i < argc; i++)
 			dirs.paths[i] = mandoc_strdup(argv[i]);
 	} else
-		manpath_parseconf(&dirs);
+		manpath_parse(&dirs, NULL, NULL);
 
 	for (i = 0; i < dirs.sz; i++) {
 		ibuf[0] = fbuf[0] = '\0';

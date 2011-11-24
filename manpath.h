@@ -1,4 +1,4 @@
-/*	$Id: manpath.h,v 1.1 2011/11/23 09:47:38 kristaps Exp $ */
+/*	$Id: manpath.h,v 1.2 2011/11/24 10:43:55 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -29,7 +29,7 @@ struct	manpaths {
 
 __BEGIN_DECLS
 
-void	 manpath_manconf(struct manpaths *);
+void	 manpath_manconf(const char *, struct manpaths *);
 void	 manpath_parse(struct manpaths *, char *, char *);
 void	 manpath_parseconf(struct manpaths *);
 void	 manpath_parseline(struct manpaths *, char *);

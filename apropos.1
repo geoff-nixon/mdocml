@@ -1,4 +1,4 @@
-.\"	$Id: apropos.1,v 1.7 2011/11/20 21:36:00 kristaps Exp $
+.\"	$Id: apropos.1,v 1.8 2011/11/23 10:09:30 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: November 20 2011 $
+.Dd $Mdocdate: November 23 2011 $
 .Dt APROPOS 1
 .Os
 .Sh NAME
@@ -44,7 +44,7 @@ searched for
 databases.
 Invalid paths, or paths without manual databases, are ignored.
 .It Fl m Ar manpath
-Append the colon-separated paths to the list of paths searched
+Prepend the colon-separated paths to the list of paths searched
 for
 .Xr mandocdb 8
 databases.
@@ -154,10 +154,10 @@ If an architecture is specified in the output, use
 .Sh ENVIRONMENT
 .Bl -tag -width Ds
 .It Ev MANPATH
-Comma-separated paths overriding the default list of paths searched for
+Colon-separated paths overriding the default list of paths searched for
 manual databases.
 Invalid paths, or paths without manual databases, are ignored.
-Takes precedence over
+Overridden by
 .Fl M .
 .El
 .\" .Sh FILES

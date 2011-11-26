@@ -1,4 +1,4 @@
-/*	$Id: manup.c,v 1.1 2011/11/24 10:33:38 kristaps Exp $ */
+/*	$Id: manup.c,v 1.2 2011/11/24 12:22:53 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *

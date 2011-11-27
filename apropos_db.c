@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.12 2011/11/26 22:38:11 schwarze Exp $ */
+/*	$Id: apropos_db.c,v 1.13 2011/11/27 18:54:01 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -366,6 +366,7 @@ index_read(const DBT *key, const DBT *val, int index,
 	rec->res.rec = *(recno_t *)key->data;
 	rec->res.volume = index;
 
+	INDEX_BREAD(rec->res.type);
 	INDEX_BREAD(rec->res.file);
 	INDEX_BREAD(rec->res.cat);
 	INDEX_BREAD(rec->res.title);

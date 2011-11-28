@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.19 2011/11/26 22:38:11 schwarze Exp $ */
+/*	$Id: apropos.c,v 1.20 2011/11/27 18:54:01 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -53,7 +53,7 @@ main(int argc, char *argv[])
 	else
 		++progname;
 
-	whatis = 0 == strcmp(progname, "whatis");
+	whatis = 0 == strncmp(progname, "whatis", 6);
 
 	memset(&paths, 0, sizeof(struct manpaths));
 	memset(&opts, 0, sizeof(struct opts));

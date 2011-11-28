@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.13 2011/11/27 18:54:01 kristaps Exp $ */
+/*	$Id: apropos_db.c,v 1.14 2011/11/27 23:11:37 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -599,10 +599,10 @@ termcomp(int argc, char *argv[], size_t *tt)
 	e = NULL;
 	*tt = 0;
 
-	for (pos = 0; pos < argc; pos++) {
-		sz = strlen(argv[pos]) + 16;
+	for (pos = argc - 1; pos >= 0; pos--) {
+		sz = strlen(argv[pos]) + 18;
 		buf = mandoc_realloc(buf, sz);
-		strlcpy(buf, "~[[:<:]]", sz);
+		strlcpy(buf, "Nm~[[:<:]]", sz);
 		strlcat(buf, argv[pos], sz);
 		strlcat(buf, "[[:>:]]", sz);
 		if (NULL == (next = exprterm(buf, 0))) {
@@ -610,8 +610,7 @@ termcomp(int argc, char *argv[], size_t *tt)
 			exprfree(e);
 			return(NULL);
 		}
-		if (NULL != e)
-			e->next = next;
+		next->next = e;
 		e = next;
 		(*tt)++;
 	}

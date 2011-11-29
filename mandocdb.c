@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.15 2011/11/27 23:11:37 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.16 2011/11/27 23:27:31 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -31,6 +31,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 #ifdef __linux__
 # include <db_185.h>
@@ -383,10 +384,18 @@ main(int argc, char *argv[])
 		index_prune(of, db, fbuf, idx, ibuf,
 				&maxrec, &recs, &recsz);
 
-		if (OP_UPDATE == op)
+		/*
+		 * Go to the root of the respective manual tree
+		 * such that .so links work.  In case of failure,
+		 * just prod on, even though .so links won't work.
+		 */
+
+		if (OP_UPDATE == op) {
+			chdir(dir);
 			index_merge(of, mp, &dbuf, &buf, hash,
 					db, fbuf, idx, ibuf,
 					maxrec, recs, reccur);
+		}
 
 		goto out;
 	}
@@ -455,6 +464,13 @@ main(int argc, char *argv[])
 
 		of = of->first;
 
+		/*
+		 * Go to the root of the respective manual tree
+		 * such that .so links work.  In case of failure,
+		 * just prod on, even though .so links won't work.
+		 */
+
+		chdir(dirs.paths[i]);
 		index_merge(of, mp, &dbuf, &buf, hash, db, fbuf,
 				idx, ibuf, maxrec, recs, reccur);
 	}

@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.17 2011/11/29 00:34:50 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.18 2011/12/01 21:05:49 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -32,6 +32,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+
+#include <arpa/inet.h>
 
 #ifdef __linux__
 # include <db_185.h>
@@ -626,15 +628,13 @@ index_merge(const struct of *of, struct mparse *mp,
 		 * into the database.
 		 */
 
-		vbuf.rec = rec;
+		vbuf.rec = htonl(rec);
 		seq = R_FIRST;
 		while (0 == (ch = (*hash->seq)(hash, &key, &val, seq))) {
 			seq = R_NEXT;
-
 			vbuf.mask = *(uint64_t *)val.data;
 			val.size = sizeof(struct db_val);
 			val.data = &vbuf;
-
 			dbt_put(db, dbf, &key, &val);
 		}
 		if (ch < 0) {
@@ -732,7 +732,7 @@ index_prune(const struct of *ofile, DB *db, const char *dbf,
 				break;
 
 			vbuf = val.data;
-			if (*maxrec != vbuf->rec)
+			if (*maxrec != ntohl(vbuf->rec))
 				continue;
 
 			if ((ch = (*db->del)(db, &key, R_CURSOR)) < 0)

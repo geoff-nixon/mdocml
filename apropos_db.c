@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.16 2011/11/29 10:53:42 kristaps Exp $ */
+/*	$Id: apropos_db.c,v 1.17 2011/12/01 23:46:26 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -23,8 +23,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-
-#include <arpa/inet.h>
 
 #ifdef __linux__
 # include <db_185.h>
@@ -177,8 +175,8 @@ btree_read(const DBT *k, const DBT *v,
 
 	vp = v->data;
 	norm_string((const char *)k->data, mc, buf);
-	dbv->rec = ntohl(vp->rec);
-	dbv->mask = vp->mask;
+	dbv->rec = betoh32(vp->rec);
+	dbv->mask = betoh64(vp->mask);
 	return(1);
 }
 

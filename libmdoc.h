@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.76 2011/07/18 07:48:14 kristaps Exp $ */
+/*	$Id: libmdoc.h,v 1.77 2011/09/18 14:14:15 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -124,7 +124,6 @@ const char	 *mdoc_a2lib(const char *);
 const char	 *mdoc_a2st(const char *);
 const char	 *mdoc_a2arch(const char *);
 const char	 *mdoc_a2vol(const char *);
-const char	 *mdoc_a2msec(const char *);
 int		  mdoc_valid_pre(struct mdoc *, struct mdoc_node *);
 int		  mdoc_valid_post(struct mdoc *);
 enum margverr	  mdoc_argv(struct mdoc *, int, enum mdoct,

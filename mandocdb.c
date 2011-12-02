@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.19 2011/12/01 23:46:26 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.20 2011/12/01 23:55:58 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -33,8 +33,12 @@
 #include <string.h>
 #include <unistd.h>
 
-#ifdef __linux__
+#if defined(__linux__)
+# include <endian.h>
 # include <db_185.h>
+#elif defined(__APPLE__)
+# include <libkern/OSByteOrder.h>
+# include <db.h>
 #else
 # include <db.h>
 #endif

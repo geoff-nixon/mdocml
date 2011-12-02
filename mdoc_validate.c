@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.178 2011/11/18 14:58:24 joerg Exp $ */
+/*	$Id: mdoc_validate.c,v 1.179 2011/11/19 13:29:47 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -2084,7 +2084,7 @@ post_dt(POST_ARGS)
 	 *       arch = NULL
 	 */
 
-	cp = mdoc_a2msec(nn->string);
+	cp = mandoc_a2msec(nn->string);
 	if (cp) {
 		mdoc->meta.vol = mandoc_strdup(cp);
 		mdoc->meta.msec = mandoc_strdup(nn->string);

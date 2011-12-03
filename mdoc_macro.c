@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.111 2011/09/18 14:14:15 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.112 2011/10/16 12:20:34 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -1568,22 +1568,6 @@ in_line_argn(MACRO_PROT_ARGS)
 				return(0);
 			flushed = 1;
 		}
-
-		/* 
-		 * XXX: this is a hack to work around groff's ugliness
-		 * as regards `Xr' and extraneous arguments.  It should
-		 * ideally be deprecated behaviour, but because this is
-		 * code is no here, it's unlikely to be removed.
-		 */
-
-#ifdef __OpenBSD__
-		if (MDOC_Xr == tok && j == maxargs) {
-			if ( ! mdoc_elem_alloc(m, line, la, MDOC_Ns, NULL))
-				return(0);
-			if ( ! rew_elem(m, MDOC_Ns))
-				return(0);
-		}
-#endif
 
 		if ( ! dword(m, line, la, p, DELIM_MAX))
 			return(0);

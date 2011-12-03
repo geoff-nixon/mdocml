@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.18 2011/12/01 23:55:58 kristaps Exp $ */
+/*	$Id: apropos_db.c,v 1.19 2011/12/02 00:21:56 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -153,6 +153,7 @@ btree_open(void)
 	DB		*db;
 
 	memset(&info, 0, sizeof(BTREEINFO));
+	info.lorder = 4321;
 	info.flags = R_DUP;
 
 	db = dbopen(MANDOC_DB, O_RDONLY, 0, DB_BTREE, &info);

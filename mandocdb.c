@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.21 2011/12/02 00:21:56 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.22 2011/12/03 12:09:07 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -333,7 +333,6 @@ main(int argc, char *argv[])
 	argv += optind;
 
 	memset(&info, 0, sizeof(BTREEINFO));
-	info.lorder = 4321;
 	info.flags = R_DUP;
 
 	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL);

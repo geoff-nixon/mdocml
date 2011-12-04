@@ -1,4 +1,4 @@
-.\"	$Id: manup.8,v 1.1 2011/11/24 10:33:38 kristaps Exp $
+.\"	$Id: catman.8,v 1.1 2011/11/26 19:54:13 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: November 24 2011 $
+.Dd $Mdocdate: November 26 2011 $
 .Dt CATMAN 8
 .Os
 .Sh NAME
@@ -29,7 +29,8 @@
 .Sh DESCRIPTION
 The
 .Nm
-utility updates cached manpages for a jailed man.cgi.
+utility updates cached manpages for a jailed
+.Xr man.cgi 7 .
 Its arguments are as follows:
 .Bl -tag -width Ds
 .It Fl f
@@ -73,6 +74,7 @@ is specified, all files are updated.
 .Ex -std
 .Sh SEE ALSO
 .Xr mandoc 1 ,
+.Xr man.cgi 7 ,
 .Xr mandocdb 8
 .Sh AUTHORS
 The

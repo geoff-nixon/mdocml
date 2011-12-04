@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.22 2011/12/03 12:09:07 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.23 2011/12/03 18:47:09 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1417,13 +1417,12 @@ ofile_argbuild(int argc, char *argv[], struct of **of)
 				*p = '\0';
 				continue;
 			}
-			if (strncmp("man", p + 1, 3)) {
+			if (0 == strncmp("man", p + 1, 3))
 				src_form |= MANDOC_SRC;
-				arch = p + 1;
-			} else if (strncmp("cat", p + 1, 3)) {
+			else if (0 == strncmp("cat", p + 1, 3))
 				src_form |= MANDOC_FORM;
+			else
 				arch = p + 1;
-			}
 			break;
 		}
 		if (NULL == title)

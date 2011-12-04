@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.88 2011/09/19 22:36:16 schwarze Exp $ */
+/*	$Id: term.h,v 1.89 2011/11/13 13:15:14 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -52,6 +52,7 @@ struct	termp_tbl {
 struct	termp {
 	enum termtype	  type;
 	struct rofftbl	  tbl;		/* table configuration */
+	int		  mdocstyle;	/* imitate mdoc(7) output */
 	size_t		  defindent;	/* Default indent for text. */
 	size_t		  defrmargin;	/* Right margin of the device. */
 	size_t		  rmargin;	/* Current right margin. */

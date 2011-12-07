@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.14 2011/12/07 15:55:06 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.15 2011/12/07 16:08:55 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -341,6 +341,7 @@ resp_searchform(const struct req *req)
 	html_print(progname);
 	printf("/search.html\" METHOD=\"get\">\n");
 	printf("<FIELDSET>\n"
+	       "<LEGEND>Search Parameters</LEGEND>\n"
 	       "<INPUT TYPE=\"submit\" NAME=\"op\" "
 	        "VALUE=\"Whatis\"> or \n"
 	       "<INPUT TYPE=\"submit\" NAME=\"op\" "
@@ -467,6 +468,8 @@ resp_search(struct res *r, size_t sz, void *arg)
 		html_print(r[i].desc);
 		puts("</TD></TR>");
 	}
+
+	puts("</TABLE>");
 
 	resp_end_html();
 }

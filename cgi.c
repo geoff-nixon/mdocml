@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.9 2011/12/04 22:52:50 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.10 2011/12/07 00:23:04 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -423,7 +423,21 @@ resp_search(struct res *r, size_t sz, void *arg)
 		return;
 	}
 
-	resp_begin_html(200, NULL);
+	resp_begin_http(200, NULL);
+	puts("<!DOCTYPE HTML PUBLIC "				"\n"
+	     " \"-//W3C//DTD HTML 4.01//EN\""			"\n"
+	     " \"http://www.w3.org/TR/html4/strict.dtd\">"	"\n"
+	     "<HTML>"						"\n"
+	     " <HEAD>"						"\n"
+	     "  <META HTTP-EQUIV=\"Content-Type\" "		"\n"
+	     "        CONTENT=\"text/html; charset=utf-8\">"	"\n"
+	     "  <LINK REL=\"stylesheet\" HREF=\"/catman.css\""	"\n"
+	     "        TYPE=\"text/css\" media=\"all\">"		"\n"
+	     "  <TITLE>System Manpage Reference</TITLE>"	"\n"
+	     " </HEAD>"						"\n"
+	     " <BODY>"						"\n"
+	     "<!-- Begin page content. //-->");
+
 	resp_searchform((const struct req *)arg);
 
 	if (0 == sz)
@@ -614,9 +628,9 @@ format(const char *file)
 		return;
 	}
 
-	snprintf(opts, sizeof(opts), "style=/style.css,"
+	snprintf(opts, sizeof(opts), "style=/man.css,"
 			"man=%s/search.html?sec=%%S&expr=%%N,"
-			"includes=/cgi-bin/man.cgi/usr/include/%%I",
+			/*"includes=/cgi-bin/man.cgi/usr/include/%%I"*/,
 			progname);
 
 	mparse_result(mp, &mdoc, &man);

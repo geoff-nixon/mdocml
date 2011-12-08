@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.15 2011/12/07 16:08:55 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.16 2011/12/07 16:18:52 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -730,8 +730,8 @@ pg_show(const struct manpaths *ps, const struct req *req, char *path)
 	else if (NULL == memchr(fn, '\0', val.size - (fn - cp)))
 		resp_baddb();
 	else {
-		strlcpy(file, ps->paths[vol], MAXPATHLEN);
-		strlcat(file, "/", MAXPATHLEN);
+		strlcpy(file, cache, MAXPATHLEN);
+		strlcpy(file, "/", MAXPATHLEN);
 		strlcat(file, fn, MAXPATHLEN);
 		if (0 == strcmp(cp, "cat"))
 			catman(file);

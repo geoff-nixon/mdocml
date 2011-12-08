@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.24 2011/12/04 14:23:29 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.25 2011/12/07 01:57:20 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -272,7 +272,9 @@ main(int argc, char *argv[])
 	struct manpaths	 dirs;
 	enum op		 op; /* current operation */
 	const char	*dir;
-	char		 ibuf[MAXPATHLEN], /* index fname */
+	char		*cp;
+	char		 pbuf[PATH_MAX],
+			 ibuf[MAXPATHLEN], /* index fname */
 			 fbuf[MAXPATHLEN];  /* btree fname */
 	int		 ch, i, flags;
 	DB		*idx, /* index database */
@@ -413,10 +415,15 @@ main(int argc, char *argv[])
 	 */
 
 	if (argc > 0) {
-		dirs.paths = mandoc_malloc(argc * sizeof(char *));
+		dirs.paths = mandoc_calloc(argc, sizeof(char *));
 		dirs.sz = argc;
-		for (i = 0; i < argc; i++)
-			dirs.paths[i] = mandoc_strdup(argv[i]);
+		for (i = 0; i < argc; i++) {
+			if (NULL == (cp = realpath(argv[i], pbuf))) {
+				perror(argv[i]);
+				goto out;
+			}
+			dirs.paths[i] = mandoc_strdup(cp);
+		}
 	} else
 		manpath_parse(&dirs, NULL, NULL);
 

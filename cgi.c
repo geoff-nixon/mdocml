@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.19 2011/12/08 22:47:09 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.20 2011/12/09 11:29:19 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -128,6 +128,7 @@ kval_query(struct query *q, const struct kval *fields, size_t sz)
 	int		 i, legacy;
 
 	memset(q, 0, sizeof(struct query));
+	q->whatis = 1;
 	legacy = -1;
 
 	for (i = 0; i < (int)sz; i++)
@@ -502,8 +503,9 @@ resp_search(struct res *r, size_t sz, void *arg)
 	kval_query(&q, req->fields, req->fieldsz);
 
 	if (0 == sz) {
-		puts("<P>\n"
-		     "No results found.");
+		printf("<P>\n"
+		       "No %s results found.",
+		       q.whatis ? "whatis" : "apropos");
 		if (q.whatis) {
 			printf("(Try <A HREF=\"");
 			html_print(progname);

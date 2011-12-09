@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.29 2011/12/09 00:49:01 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.30 2011/12/09 01:21:10 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1288,29 +1288,30 @@ pformatted(DB *hash, struct buf *buf, struct buf *dbuf,
 	buf_append(buf, of->title);
 	hash_put(hash, buf, TYPE_Nm);
 
-	/* Skip to first blank line. */ 
+	/* Skip to first blank line. */
 
 	while (NULL != (line = fgetln(stream, &len)))
-		if (len && '\n' == *line)
-			break;
-
-	/* 
-	 * Skip to first section header.
-	 * This happens when text is flush-left.
-	 */
-
-	while (NULL != (line = fgetln(stream, &len)))
-		if (len && '\n' != *line && ' ' != *line)
+		if ('\n' == *line)
 			break;
 
 	/*
-	 * If no page content can be found or the input line is
-	 * malformed (zer-length or has no trailing newline), reuse the
-	 * page title as the page description.
+	 * Assume the first line that is not indented
+	 * is the first section header.  Skip to it.
+	 */
+
+	while (NULL != (line = fgetln(stream, &len)))
+		if ('\n' != *line && ' ' != *line)
+			break;
+
+	/*
+	 * If no page content can be found, or the input line
+	 * is already the next section header, or there is no
+	 * trailing newline, reuse the page title as the page
+	 * description.
 	 */
 
 	line = fgetln(stream, &len);
-	if (NULL == line || len == 0 || '\n' != line[(int)len - 1]) {
+	if (NULL == line || ' ' != *line || '\n' != line[(int)len - 1]) {
 		buf_appendb(dbuf, buf->cp, buf->size);
 		hash_put(hash, buf, TYPE_Nd);
 		fclose(stream);
@@ -1319,8 +1320,8 @@ pformatted(DB *hash, struct buf *buf, struct buf *dbuf,
 
 	line[(int)--len] = '\0';
 
-	/* 
-	 * Skip to the last dash.
+	/*
+	 * Skip to the first dash.
 	 * Use the remaining line as the description (no more than 70
 	 * bytes).
 	 */

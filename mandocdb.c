@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.27 2011/12/08 02:24:31 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.28 2011/12/08 09:19:13 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1334,6 +1334,18 @@ pformatted(DB *hash, struct buf *buf, struct buf *dbuf,
 	if ((plen = strlen(p)) > 70) {
 		plen = 70;
 		p[plen] = '\0';
+	}
+
+	/* Strip backspace-encoding from line. */
+
+	while (NULL != (line = memchr(p, '\b', plen))) {
+		len = line - p;
+		if (0 == len) {
+			memmove(line, line + 1, plen--);
+			continue;
+		} 
+		memmove(line - 1, line + 1, plen - len);
+		plen -= 2;
 	}
 
 	buf_appendb(dbuf, p, plen + 1);

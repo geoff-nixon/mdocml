@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.28 2011/12/08 09:19:13 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.29 2011/12/09 00:49:01 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -1325,8 +1325,8 @@ pformatted(DB *hash, struct buf *buf, struct buf *dbuf,
 	 * bytes).
 	 */
 
-	if (NULL != (p = strrchr(line, '-'))) {
-		for (++p; ' ' == *p || '\b' == *p; p++)
+	if (NULL != (p = strstr(line, "- "))) {
+		for (p += 2; ' ' == *p || '\b' == *p; p++)
 			/* Skip to next word. */ ;
 	} else
 		p = line;

@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.21 2011/12/09 23:18:51 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.22 2011/12/10 00:06:34 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -159,10 +159,17 @@ kval_query(struct query *q, const struct kval *fields, size_t sz)
 		q->whatis = 1;
 	}
 
-	/* Section "0" means no section when in legacy mode. */
+	/* 
+	 * Section "0" means no section when in legacy mode.
+	 * For some man.cgi scripts, "default" arch is none.
+	 */
 
-	if (q->legacy && NULL != q->sec && 0 == strcmp(q->sec, "0"))
-		q->sec = NULL;
+	if (q->legacy && NULL != q->sec)
+		if (0 == strcmp(q->sec, "0"))
+			q->sec = NULL;
+	if (q->legacy && NULL != q->arch)
+		if (0 == strcmp(q->arch, "default"))
+			q->arch = NULL;
 }
 
 /*

@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.26 2011/12/10 22:45:47 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.27 2011/12/10 23:04:31 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -853,7 +853,7 @@ pg_search(const struct req *req, char *path)
 	struct opts	  opt;
 	struct expr	 *expr;
 
-	if (req->q.manroot < 0) {
+	if (req->q.manroot < 0 || 0 == req->psz) {
 		resp_search(NULL, 0, (void *)req);
 		return;
 	}

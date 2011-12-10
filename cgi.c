@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.20 2011/12/09 11:29:19 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.21 2011/12/09 23:18:51 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -434,7 +434,7 @@ resp_error400(void)
 	       "<P>\n"
 	       "The query your entered was malformed.\n"
 	       "Try again from the\n"
-	       "<A HREF=\"%s/index.html\">main page</A>\n"
+	       "<A HREF=\"%s/index.html\">main page</A>.\n"
 	       "</P>", progname);
 	resp_end_html();
 }
@@ -452,7 +452,7 @@ resp_error404(const char *page)
 	printf("</B>,\n"
 	       "could not be found.\n"
 	       "Try searching from the\n"
-	       "<A HREF=\"%s/index.html\">main page</A>\n"
+	       "<A HREF=\"%s/index.html\">main page</A>.\n"
 	       "</P>", progname);
 	resp_end_html();
 }

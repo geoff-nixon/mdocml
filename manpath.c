@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.3 2011/11/24 10:44:56 kristaps Exp $ */
+/*	$Id: manpath.c,v 1.4 2011/11/26 22:38:11 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -36,7 +36,8 @@
 static	void	 manpath_add(struct manpaths *, const char *);
 
 void
-manpath_parse(struct manpaths *dirs, char *defp, char *auxp)
+manpath_parse(struct manpaths *dirs, const char *file,
+		char *defp, char *auxp)
 {
 
 	manpath_parseline(dirs, auxp);
@@ -45,7 +46,7 @@ manpath_parse(struct manpaths *dirs, char *defp, char *auxp)
 		defp = getenv("MANPATH");
 
 	if (NULL == defp)
-		manpath_parseconf(dirs);
+		manpath_parseconf(dirs, file);
 	else
 		manpath_parseline(dirs, defp);
 }
@@ -91,7 +92,7 @@ manpath_add(struct manpaths *dirs, const char *dir)
 }
 
 void
-manpath_parseconf(struct manpaths *dirs)
+manpath_parseconf(struct manpaths *dirs, const char *file)
 {
 #ifdef	USE_MANPATH
 	FILE		*stream;
@@ -124,7 +125,7 @@ manpath_parseconf(struct manpaths *dirs)
 	free(buf);
 	pclose(stream);
 #else
-	manpath_manconf(MAN_CONF_FILE, dirs);
+	manpath_manconf(dirs, file ? file : MAN_CONF_FILE);
 #endif
 }
 
@@ -140,7 +141,7 @@ manpath_free(struct manpaths *p)
 }
 
 void
-manpath_manconf(const char *file, struct manpaths *dirs)
+manpath_manconf(struct manpaths *dirs, const char *file)
 {
 	FILE		*stream;
 	char		*p, *q;

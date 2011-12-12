@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.28 2011/12/10 23:09:25 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.29 2011/12/11 00:22:47 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -792,7 +792,7 @@ pg_show(const struct req *req, char *path)
 	}
 
 	memset(&ps, 0, sizeof(struct manpaths));
-	manpath_manconf("etc/catman.conf", &ps);
+	manpath_manconf(&ps, "etc/catman.conf");
 
 	if (vol >= (unsigned int)ps.sz) {
 		resp_error400();
@@ -878,7 +878,7 @@ pg_search(const struct req *req, char *path)
 	}
 
 	memset(&ps, 0, sizeof(struct manpaths));
-	manpath_manconf("etc/catman.conf", &ps);
+	manpath_manconf(&ps, "etc/catman.conf");
 
 	/*
 	 * Poor man's tokenisation: just break apart by spaces.

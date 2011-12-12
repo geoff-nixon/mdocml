@@ -1,4 +1,4 @@
-/*	$Id: catman.c,v 1.3 2011/12/04 22:52:50 kristaps Exp $ */
+/*	$Id: catman.c,v 1.4 2011/12/08 00:20:52 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -112,7 +112,7 @@ main(int argc, char *argv[])
 	}
 
 	memset(&dirs, 0, sizeof(struct manpaths));
-	manpath_parse(&dirs, base, aux);
+	manpath_parse(&dirs, NULL, base, aux);
 	ch = manup(&dirs, buf);
 	manpath_free(&dirs);
 	return(ch ? EXIT_SUCCESS : EXIT_FAILURE);

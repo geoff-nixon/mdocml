@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.5 2011/12/12 02:00:49 schwarze Exp $ */
+/*	$Id: manpath.c,v 1.6 2011/12/13 20:56:46 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -63,7 +63,6 @@ manpath_parse(struct manpaths *dirs, const char *file,
 
 	/* Open manpath(1).  Ignore errors. */
 
-	warnx(cmd);
 	stream = popen(cmd, "r");
 	if (NULL == stream)
 		return;

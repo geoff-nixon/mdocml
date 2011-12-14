@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.29 2011/12/11 00:22:47 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.30 2011/12/12 02:00:49 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -946,7 +946,7 @@ main(void)
 		progname = "";
 
 	if (NULL == (css = getenv("CSS_DIR")))
-		css = "/";
+		css = "";
 
 	if (NULL == (host = getenv("HTTP_HOST")))
 		host = "localhost";

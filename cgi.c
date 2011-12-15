@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.31 2011/12/14 13:36:59 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.32 2011/12/15 12:05:19 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -497,6 +497,8 @@ resp_search(struct res *r, size_t sz, void *arg)
 	resp_begin_html(200, NULL);
 	resp_searchform(req);
 
+	puts("<DIV CLASS=\"results\">");
+
 	if (0 == sz) {
 		printf("<P>\n"
 		       "No %s results found.\n",
@@ -512,12 +514,12 @@ resp_search(struct res *r, size_t sz, void *arg)
 			puts("\">apropos</A>?)");
 		}
 		puts("</P>");
+		puts("</DIV>");
 		resp_end_html();
 		return;
 	}
 
-	puts("<P></P>\n"
-	     "<TABLE>");
+	puts("<TABLE>");
 
 	for (i = 0; i < (int)sz; i++) {
 		printf("<TR>\n"
@@ -540,7 +542,8 @@ resp_search(struct res *r, size_t sz, void *arg)
 		     "</TR>");
 	}
 
-	puts("</TABLE>");
+	puts("</TABLE>\n"
+	     "</DIV>");
 	resp_end_html();
 }
 

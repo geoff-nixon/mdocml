@@ -1,4 +1,4 @@
-/* $Id: example.style.css,v 1.47 2011/10/05 21:35:17 kristaps Exp $ */
+/* $Id: example.style.css,v 1.48 2011/12/15 12:05:19 kristaps Exp $ */
 /*
  * This is an example style-sheet provided for mandoc(1) and the -Thtml
  * or -Txhtml output mode.
@@ -6,8 +6,8 @@
  * See mdoc(7) and man(7) for macro explanations.
  */
 
-div.mandoc			{ min-width: 100ex; 
-				  width: 100ex; 
+div.mandoc			{ min-width: 102ex; 
+				  width: 102ex; 
 				  font-family: monospace; } /* This is the outer node of all mandoc -T[x]html documents. */
 div.mandoc h1			{ margin-bottom: 0ex; font-size: inherit; margin-left: -4ex; } /* Section header (Sh, SH). */
 div.mandoc h2			{ margin-bottom: 0ex; font-size: inherit; margin-left: -2ex; } /* Sub-section header (Ss, SS). */

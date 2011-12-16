@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.35 2011/12/16 12:06:35 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.36 2011/12/16 18:37:12 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -510,7 +510,9 @@ resp_search(struct res *r, size_t sz, void *arg)
 	const struct req *req;
 
 	req = (const struct req *)arg;
-	assert(req->q.manroot >= 0);
+
+	if (sz > 0)
+		assert(req->q.manroot >= 0);
 	
 	if (1 == sz) {
 		/*

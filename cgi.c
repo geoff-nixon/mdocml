@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.36 2011/12/16 18:37:12 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.37 2011/12/16 20:05:31 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -134,7 +134,7 @@ atou(const char *buf, unsigned *v)
 		return(0);
 	if ((errno == ERANGE && (lval == LONG_MAX || 
 					lval == LONG_MIN)) ||
-			(lval > UINT_MAX || lval < 0))
+			(lval > INT_MAX || lval < 0))
 		return(0);
 
 	*v = (unsigned int)lval;

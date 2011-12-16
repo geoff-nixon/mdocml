@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.23 2011/12/10 21:46:59 kristaps Exp $ */
+/*	$Id: apropos_db.c,v 1.24 2011/12/16 12:06:35 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -117,7 +117,7 @@ static	const struct type types[] = {
 	{ TYPE_Va, "Va" },
 	{ TYPE_Va, "Vt" },
 	{ TYPE_Xr, "Xr" },
-	{ INT_MAX, "any" },
+	{ UINT64_MAX, "any" },
 	{ 0, NULL }
 };
 

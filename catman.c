@@ -1,4 +1,4 @@
-/*	$Id: catman.c,v 1.6 2011/12/16 08:04:34 kristaps Exp $ */
+/*	$Id: catman.c,v 1.7 2011/12/16 12:06:35 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -66,7 +66,7 @@ int
 main(int argc, char *argv[])
 {
 	int		 ch;
-	char		*aux, *base;
+	char		*aux, *base, *conf_file;
 	struct manpaths	 dirs;
 	char		 buf[MAXPATHLEN];
 	extern char	*optarg;
@@ -81,8 +81,11 @@ main(int argc, char *argv[])
 	aux = base = NULL;
 	xstrlcpy(buf, "/var/www/cache/man.cgi", MAXPATHLEN);
 
-	while (-1 != (ch = getopt(argc, argv, "fm:M:o:v")))
+	while (-1 != (ch = getopt(argc, argv, "C:fm:M:o:v")))
 		switch (ch) {
+		case ('C'):
+			conf_file = optarg;
+			break;
 		case ('f'):
 			force = 1;
 			break;
@@ -112,7 +115,7 @@ main(int argc, char *argv[])
 	}
 
 	memset(&dirs, 0, sizeof(struct manpaths));
-	manpath_parse(&dirs, NULL, base, aux);
+	manpath_parse(&dirs, conf_file, base, aux);
 	ch = manup(&dirs, buf);
 	manpath_free(&dirs);
 	return(ch ? EXIT_SUCCESS : EXIT_FAILURE);
@@ -124,6 +127,7 @@ usage(void)
 	
 	fprintf(stderr, "usage: %s "
 			"[-fv] "
+			"[-C file] "
 			"[-o path] "
 			"[-m manpath] "
 			"[-M manpath]\n",

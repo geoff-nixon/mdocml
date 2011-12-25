@@ -1,4 +1,4 @@
-.\"	$Id: whatis.1,v 1.5 2011/12/24 22:37:16 kristaps Exp $
+.\"	$Id: whatis.1,v 1.6 2011/12/25 16:53:51 schwarze Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: December 24 2011 $
+.Dd $Mdocdate: December 25 2011 $
 .Dt WHATIS 1
 .Os
 .Sh NAME
@@ -40,6 +40,13 @@ It returns the header lines from all matching pages.
 You can then use the
 .Xr man 1
 command to get more information.
+.Pp
+By default,
+.Nm
+searches for
+.Xr mandocdb 8
+databases in the default paths stipulated by
+.Xr man 1 .
 .Pp
 The options are as follows:
 .Bl -tag -width Ds
@@ -72,12 +79,6 @@ See
 for a listing of manual sections.
 .El
 .Pp
-By default,
-.Nm
-searches for
-.Xr mandocdb 8
-databases in the default paths stipulated by
-.Xr man 1 .
 Results are sorted by manual title, with output formatted as
 .Pp
 .D1 title(sec) \- description

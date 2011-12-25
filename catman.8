@@ -1,4 +1,4 @@
-.\"	$Id: catman.8,v 1.3 2011/12/18 18:51:01 kristaps Exp $
+.\"	$Id: catman.8,v 1.4 2011/12/24 22:37:16 kristaps Exp $
 .\"
 .\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\"
@@ -14,7 +14,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: December 18 2011 $
+.Dd $Mdocdate: December 24 2011 $
 .Dt CATMAN 8
 .Os
 .Sh NAME
@@ -32,6 +32,16 @@ The
 .Nm
 utility updates cached manpages for a jailed
 .Xr man.cgi 7 .
+.Pp
+By default,
+.Nm
+searches for
+.Xr mandocdb 8
+databases in the default paths stipulated by
+.Xr man 1
+and updates the cache in
+.Pa /var/www/cache/man.cgi .
+.Pp
 Its arguments are as follows:
 .Bl -tag -width Ds
 .It Fl f
@@ -61,22 +71,12 @@ Update into the directory tree under
 .Ar path .
 .El
 .Pp
-By default,
-.Nm
-searches for
+Cache updates occur when a
 .Xr mandocdb 8
-databases in the default paths stipulated by
-.Xr man 1
-and updates the cache in
-.Pa /var/www/cache/man.cgi .
-.Pp
-An update occurs when a
-.Xr mandocdb 8
-database is older than the cached copy.
-Cached manual pages are only updated if older than the master copy.
-If
+database is older than the cached copy unless
 .Fl f
-is specified, all files are updated.
+is specified, in which case files are always considered out of date.
+Cached manual pages are only updated if older than the master copy.
 .Sh ENVIRONMENT
 .Bl -tag -width Ds
 .It Ev MANPATH

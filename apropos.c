@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.23 2011/12/07 16:08:55 kristaps Exp $ */
+/*	$Id: apropos.c,v 1.24 2011/12/12 02:00:49 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -127,7 +127,7 @@ list(struct res *res, size_t sz, void *arg)
 	qsort(res, sz, sizeof(struct res), cmp);
 
 	for (i = 0; i < (int)sz; i++)
-		printf("%s(%s%s%s) - %s\n", res[i].title,
+		printf("%s(%s%s%s) - %.70s\n", res[i].title,
 				res[i].cat,
 				*res[i].arch ? "/" : "",
 				*res[i].arch ? res[i].arch : "",

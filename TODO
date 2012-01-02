@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.125 2011/11/17 17:41:07 schwarze Exp $
+* $Id: TODO,v 1.126 2011/12/05 00:41:40 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -11,9 +11,6 @@
   which forces pset() into man(7)
   and then triggers an unknown macro error
   reported by naddy@  Sun, 3 Jul 2011 21:52:24 +0200
-
-- .It is parsed in general, except in .Bl -diag
-  deraadt@  Mon, 07 Nov 2011 11:10:52 -0700
 
 ************************************************************************
 * formatter bugs

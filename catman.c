@@ -1,4 +1,4 @@
-/*	$Id: catman.c,v 1.8 2011/12/18 18:51:01 kristaps Exp $ */
+/*	$Id: catman.c,v 1.9 2011/12/25 17:49:52 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -79,7 +79,7 @@ main(int argc, char *argv[])
 	else
 		++progname;
 
-	aux = base = NULL;
+	aux = base = conf_file = NULL;
 	xstrlcpy(buf, "/var/www/cache/man.cgi", MAXPATHLEN);
 
 	while (-1 != (ch = getopt(argc, argv, "C:fm:M:o:v")))

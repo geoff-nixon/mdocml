@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.113 2011/11/07 01:24:40 schwarze Exp $ */
+/*	$Id: man.c,v 1.114 2011/11/16 22:39:05 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -40,7 +40,7 @@ const	char *const __man_macronames[MAN_MAX] = {
 	"RI",		"na",		"sp",		"nf",
 	"fi",		"RE",		"RS",		"DT",
 	"UC",		"PD",		"AT",		"in",
-	"ft"
+	"ft",		"OP"
 	};
 
 const	char * const *man_macronames = __man_macronames;

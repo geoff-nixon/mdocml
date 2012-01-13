@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.3,v 1.15 2011/10/18 13:25:38 kristaps Exp $
+.\"	$Id: mandoc.3,v 1.16 2011/11/08 00:15:23 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: October 18 2011 $
+.Dd $Mdocdate: November 8 2011 $
 .Dt MANDOC 3
 .Os
 .Sh NAME
@@ -234,7 +234,9 @@ messages emitted by the parser.
 .It Fn mandoc_escape
 Scan an escape sequence, i.e., a character string beginning with
 .Sq \e .
-Pass a pointer to this string as
+Pass a pointer to the character after the
+.Sq \e
+as
 .Va end ;
 it will be set to the supremum of the parsed escape sequence unless
 returning

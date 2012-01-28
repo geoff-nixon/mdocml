@@ -1,4 +1,4 @@
-/*	$Id: arch.in,v 1.10 2010/09/27 06:56:44 kristaps Exp $ */
+/*	$Id: arch.in,v 1.11 2011/10/16 16:25:19 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -105,6 +105,7 @@ LINE("sun3",		"Sun3")
 LINE("tahoe",		"Tahoe")
 LINE("vax",		"VAX")
 LINE("x68k",		"X68k")
+LINE("x86",		"x86")
 LINE("x86_64",		"x86_64")
 LINE("xen",		"Xen")
 LINE("zaurus",		"Zaurus")

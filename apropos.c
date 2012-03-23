@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.24 2011/12/12 02:00:49 schwarze Exp $ */
+/*	$Id: apropos.c,v 1.25 2011/12/31 18:47:52 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -122,12 +122,13 @@ out:
 static void
 list(struct res *res, size_t sz, void *arg)
 {
-	int		 i;
+	size_t		 i;
 
 	qsort(res, sz, sizeof(struct res), cmp);
 
-	for (i = 0; i < (int)sz; i++)
-		printf("%s(%s%s%s) - %.70s\n", res[i].title,
+	for (i = 0; i < sz; i++)
+		printf("%s(%s%s%s) - %.70s\n", 
+				res[i].title,
 				res[i].cat,
 				*res[i].arch ? "/" : "",
 				*res[i].arch ? res[i].arch : "",

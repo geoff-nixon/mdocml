@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.27 2012/03/24 00:31:55 kristaps Exp $ */
+/*	$Id: apropos.c,v 1.28 2012/03/24 01:46:25 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 #include "apropos_db.h"
 #include "mandoc.h"

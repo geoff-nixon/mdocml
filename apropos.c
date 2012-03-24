@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.28 2012/03/24 01:46:25 kristaps Exp $ */
+/*	$Id: apropos.c,v 1.29 2012/03/24 02:07:32 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -143,6 +143,7 @@ main(int argc, char *argv[])
 	}
 
 	if (--terms < ressz && res[terms].matched) {
+		chdir(paths.paths[res[terms].volume]);
 		strlcpy(path, res[terms].file, PATH_MAX);
 		usecat = RESTYPE_CAT == res[terms].type;
 	}

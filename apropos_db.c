@@ -1,6 +1,6 @@
-/*	$Id: apropos_db.c,v 1.29 2012/03/23 05:07:35 kristaps Exp $ */
+/*	$Id: apropos_db.c,v 1.30 2012/03/24 00:31:55 kristaps Exp $ */
 /*
- * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

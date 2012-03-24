@@ -1,6 +1,6 @@
-/*	$Id: cgi.c,v 1.40 2012/03/23 09:03:07 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.41 2012/03/24 00:31:55 kristaps Exp $ */
 /*
- * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

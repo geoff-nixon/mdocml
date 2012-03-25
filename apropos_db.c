@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.30 2012/03/24 00:31:55 kristaps Exp $ */
+/*	$Id: apropos_db.c,v 1.31 2012/03/24 01:46:25 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -18,6 +18,8 @@
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
+
+#include <sys/param.h>
 
 #include <assert.h>
 #include <fcntl.h>
@@ -426,6 +428,7 @@ apropos_search(int pathsz, char **paths, const struct opts *opts,
 	 */
 
 	for (i = 0; i < pathsz; i++) {
+		assert('/' == paths[i][0]);
 		if (chdir(paths[i]))
 			continue;
 		if (single_search(&tree, opts, expr, terms, mc, i))

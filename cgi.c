@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.41 2012/03/24 00:31:55 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.42 2012/03/24 01:46:25 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -743,7 +743,7 @@ format(const struct req *req, const char *file)
 	}
 
 	snprintf(opts, sizeof(opts), "fragment,"
-			"man=%s/search.html?sec=%%S&expr=%%N,"
+			"man=%s/search.html?sec=%%S&expr=Nm~^%%N$,"
 			/*"includes=/cgi-bin/man.cgi/usr/include/%%I"*/,
 			progname);
 

@@ -1,6 +1,6 @@
-/*	$Id: mdoc_macro.c,v 1.114 2012/01/02 15:48:05 kristaps Exp $ */
+/*	$Id: mdoc_macro.c,v 1.115 2012/01/05 00:43:51 schwarze Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

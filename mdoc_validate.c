@@ -1,6 +1,6 @@
-/*	$Id: mdoc_validate.c,v 1.181 2011/12/03 16:58:54 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.182 2012/03/23 05:50:25 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

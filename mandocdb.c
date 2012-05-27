@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.47 2012/04/15 13:30:38 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.48 2012/05/27 17:39:28 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -396,7 +396,7 @@ main(int argc, char *argv[])
 	info.lorder = 4321;
 	info.flags = R_DUP;
 
-	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL);
+	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL, NULL);
 
 	memset(&buf, 0, sizeof(struct buf));
 	memset(&dbuf, 0, sizeof(struct buf));

@@ -1,7 +1,7 @@
-/*	$Id: mandocdb.c,v 1.46 2012/03/23 06:52:17 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.47 2012/04/15 13:30:38 schwarze Exp $ */
 /*
- * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
- * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

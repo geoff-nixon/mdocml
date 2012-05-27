@@ -1,6 +1,6 @@
-/*	$Id: man_term.c,v 1.126 2011/12/04 23:10:52 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.127 2012/01/03 15:16:24 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

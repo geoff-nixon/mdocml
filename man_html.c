@@ -1,6 +1,6 @@
-/*	$Id: man_html.c,v 1.85 2011/12/04 00:44:12 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.86 2012/01/03 15:16:24 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

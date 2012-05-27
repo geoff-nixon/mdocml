@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.23 2011/03/15 16:23:51 kristaps Exp $ */
+/*	$Id: tbl_data.c,v 1.24 2011/03/20 16:02:05 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -49,13 +49,11 @@ data(struct tbl_node *tbl, struct tbl_span *dp,
 		cp = dp->layout->first;
 
 	/* 
-	 * Skip over spanners and vertical lines to data formats, since
+	 * Skip over spanners, since
 	 * we want to match data with data layout cells in the header.
 	 */
 
-	while (cp && (TBL_CELL_VERT == cp->pos || 
-				TBL_CELL_DVERT == cp->pos ||
-				TBL_CELL_SPAN == cp->pos))
+	while (cp && TBL_CELL_SPAN == cp->pos)
 		cp = cp->next;
 
 	/*

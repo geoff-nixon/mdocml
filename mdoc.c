@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.195 2011/07/28 14:17:11 kristaps Exp $ */
+/*	$Id: mdoc.c,v 1.196 2011/09/30 00:13:28 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -197,13 +197,14 @@ mdoc_free(struct mdoc *mdoc)
  * Allocate volatile and non-volatile parse resources.  
  */
 struct mdoc *
-mdoc_alloc(struct roff *roff, struct mparse *parse)
+mdoc_alloc(struct roff *roff, struct mparse *parse, char *defos)
 {
 	struct mdoc	*p;
 
 	p = mandoc_calloc(1, sizeof(struct mdoc));
 
 	p->parse = parse;
+	p->defos = defos;
 	p->roff = roff;
 
 	mdoc_hash_init();

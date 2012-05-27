@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.42 2012/03/24 01:46:25 kristaps Exp $ */
+/*	$Id: cgi.c,v 1.43 2012/03/25 00:46:39 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -733,7 +733,7 @@ format(const struct req *req, const char *file)
 		return;
 	}
 
-	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL);
+	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL, NULL);
 	rc = mparse_readfd(mp, fd, file);
 	close(fd);
 

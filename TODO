@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.131 2012/05/27 15:20:12 schwarze Exp $
+* $Id: TODO,v 1.132 2012/05/28 23:09:22 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -13,10 +13,6 @@
   preamble as true, see for example AUTHORS in MooseX::Getopt.3p
   reported by Andreas Voegele <mail at andreasvoegele dot com>
   Tue, 22 Nov 2011 15:34:47 +0100 on ports@
-
-- .if n \{
-  .br\}
-  should cause an extra space to be raised.
 
 - .ad (adjust margins)
   .ad l -- adjust left margin only (flush left)

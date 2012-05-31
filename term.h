@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.90 2011/12/04 23:10:52 schwarze Exp $ */
+/*	$Id: term.h,v 1.91 2012/05/27 18:02:49 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -78,6 +78,7 @@ struct	termp {
 #define	TERMP_ANPREC	 (1 << 13)	/* See termp_an_pre(). */
 #define	TERMP_KEEP	 (1 << 14)	/* Keep words together. */
 #define	TERMP_PREKEEP	 (1 << 15)	/* ...starting with the next one. */
+#define	TERMP_SKIPCHAR	 (1 << 16)	/* Skip the next character. */
 	int		 *buf;		/* Output buffer. */
 	enum termenc	  enc;		/* Type of encoding. */
 	struct mchars	 *symtab;	/* Encoded-symbol table. */

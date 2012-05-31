@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.5 2011/09/01 22:09:50 kristaps Exp $ */
+/*	$Id: demandoc.c,v 1.6 2011/09/01 22:25:53 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -76,7 +76,7 @@ main(int argc, char *argv[])
 	argc -= optind;
 	argv += optind;
 
-	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL);
+	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL, NULL);
 	assert(mp);
 
 	if (0 == argc)

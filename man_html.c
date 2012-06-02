@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.86 2012/01/03 15:16:24 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.87 2012/05/27 17:39:28 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -113,6 +113,8 @@ static	const struct htmlman mans[MAN_MAX] = {
 	{ man_in_pre, NULL }, /* in */
 	{ man_ign_pre, NULL }, /* ft */
 	{ man_OP_pre, NULL }, /* OP */
+	{ man_literal_pre, NULL }, /* EX */
+	{ man_literal_pre, NULL }, /* EE */
 };
 
 /*
@@ -638,7 +640,7 @@ static int
 man_literal_pre(MAN_ARGS)
 {
 
-	if (MAN_nf != n->tok) {
+	if (MAN_fi == n->tok || MAN_EE == n->tok) {
 		print_otag(h, TAG_BR, 0, NULL);
 		mh->fl &= ~MANH_LITERAL;
 	} else

@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.79 2011/12/02 01:37:14 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.80 2012/01/03 15:16:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -114,6 +114,8 @@ static	const struct man_valid man_valids[MAN_MAX] = {
 	{ NULL, NULL }, /* in */
 	{ NULL, posts_ft }, /* ft */
 	{ NULL, posts_eq2 }, /* OP */
+	{ NULL, posts_nf }, /* EX */
+	{ NULL, posts_fi }, /* EE */
 };
 
 

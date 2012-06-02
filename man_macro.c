@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.70 2011/12/04 00:44:12 schwarze Exp $ */
+/*	$Id: man_macro.c,v 1.71 2012/01/03 15:16:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -85,6 +85,8 @@ const	struct man_macro __man_macros[MAN_MAX] = {
 	{ in_line_eoln, 0 }, /* in */
 	{ in_line_eoln, 0 }, /* ft */
 	{ in_line_eoln, 0 }, /* OP */
+	{ in_line_eoln, MAN_BSCOPE }, /* EX */
+	{ in_line_eoln, MAN_BSCOPE }, /* EE */
 };
 
 const	struct man_macro * const man_macros = __man_macros;

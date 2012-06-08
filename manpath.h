@@ -1,4 +1,4 @@
-/*	$Id: manpath.h,v 1.4 2011/12/12 02:00:49 schwarze Exp $ */
+/*	$Id: manpath.h,v 1.5 2011/12/13 20:56:46 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -23,7 +23,7 @@
  * databases.
  */
 struct	manpaths {
-	int	  sz;
+	size_t	  sz;
 	char	**paths;
 };
 

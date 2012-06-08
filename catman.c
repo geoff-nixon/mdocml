@@ -1,4 +1,4 @@
-/*	$Id: catman.c,v 1.9 2011/12/25 17:49:52 kristaps Exp $ */
+/*	$Id: catman.c,v 1.10 2012/01/03 15:17:20 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -380,7 +380,8 @@ manup(const struct manpaths *dirs, char *base)
 	char		 dst[MAXPATHLEN],
 			 src[MAXPATHLEN];
 	const char	*path;
-	int		 i, c;
+	size_t		 i;
+	int		 c;
 	size_t		 sz;
 	FILE		*f;
 

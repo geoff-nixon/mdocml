@@ -1,4 +1,4 @@
-/*	$Id: mansearch.c,v 1.2 2012/06/08 14:14:30 kristaps Exp $ */
+/*	$Id: mansearch.c,v 1.3 2012/06/08 15:06:28 kristaps Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -30,7 +30,11 @@
 #include <string.h>
 #include <unistd.h>
 
+#ifdef HAVE_OHASH
 #include <ohash.h>
+#else
+#include "compat_ohash.h"
+#endif
 #include <sqlite3.h>
 
 #include "mandoc.h"

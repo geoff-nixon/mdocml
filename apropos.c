@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.31 2012/06/08 10:44:52 kristaps Exp $ */
+/*	$Id: apropos.c,v 1.32 2012/06/09 14:11:15 kristaps Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -21,6 +21,7 @@
 
 #include <assert.h>
 #include <getopt.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

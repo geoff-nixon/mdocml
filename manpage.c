@@ -1,4 +1,4 @@
-/*	$Id: manpage.c,v 1.1 2012/06/08 10:44:52 kristaps Exp $ */
+/*	$Id: manpage.c,v 1.2 2012/06/09 14:11:16 kristaps Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -21,6 +21,7 @@
 
 #include <assert.h>
 #include <getopt.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

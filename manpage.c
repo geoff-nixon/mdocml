@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.46 2012/03/23 06:52:17 kristaps Exp $ */
+/*	$Id: manpage.c,v 1.1 2012/06/08 10:44:52 kristaps Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -36,9 +36,9 @@ main(int argc, char *argv[])
 {
 	int		 ch, term;
 	size_t		 i, sz, len;
+	struct mansearch search;
 	struct manpage	*res;
-	char		*conf_file, *defpaths, *auxpaths, *cp,
-			*arch, *sec;
+	char		*conf_file, *defpaths, *auxpaths, *cp;
 	char		 buf[MAXPATHLEN];
 	const char	*cmd;
 	struct manpaths	 paths;
@@ -54,8 +54,9 @@ main(int argc, char *argv[])
 	else
 		++progname;
 
-	auxpaths = defpaths = conf_file = arch = sec = NULL;
+	auxpaths = defpaths = conf_file = NULL;
 	memset(&paths, 0, sizeof(struct manpaths));
+	memset(&search, 0, sizeof(struct mansearch));
 
 	while (-1 != (ch = getopt(argc, argv, "C:M:m:S:s:")))
 		switch (ch) {
@@ -69,10 +70,10 @@ main(int argc, char *argv[])
 			auxpaths = optarg;
 			break;
 		case ('S'):
-			arch = optarg;
+			search.arch = optarg;
 			break;
 		case ('s'):
-			sec = optarg;
+			search.sec = optarg;
 			break;
 		default:
 			goto usage;
@@ -84,8 +85,10 @@ main(int argc, char *argv[])
 	if (0 == argc)
 		goto usage;
 
+	search.deftype = TYPE_Nm | TYPE_Nd;
+
 	manpath_parse(&paths, conf_file, defpaths, auxpaths);
-	ch = mansearch(&paths, arch, sec, argc, argv, &res, &sz);
+	ch = mansearch(&search, &paths, argc, argv, &res, &sz);
 	manpath_free(&paths);
 
 	if (0 == ch)

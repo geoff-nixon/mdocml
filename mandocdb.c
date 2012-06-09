@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.53 2012/06/09 11:00:13 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.54 2012/06/09 11:21:12 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -44,8 +44,8 @@
 #include "mdoc.h"
 #include "man.h"
 #include "mandoc.h"
-#include "mandocdb.h"
 #include "manpath.h"
+#include "mansearch.h"
 
 /* Post a warning to stderr. */
 #define WARNING(_f, _b, _fmt, _args...) \

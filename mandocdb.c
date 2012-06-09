@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.52 2012/06/08 15:06:28 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.53 2012/06/09 11:00:13 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -509,7 +509,9 @@ main(int argc, char *argv[])
 			 * turn off synchronous mode for much better
 			 * performance.
 			 */
+#ifndef __APPLE__
 			SQL_EXEC("PRAGMA synchronous = OFF");
+#endif
 
 			if (0 == ofmerge(mc, mp, dirs.paths[j]))
 				goto out;

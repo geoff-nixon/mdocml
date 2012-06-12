@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.72 2012/06/02 20:16:23 schwarze Exp $ */
+/*	$Id: man_macro.c,v 1.73 2012/06/03 09:52:07 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -78,7 +78,7 @@ const	struct man_macro __man_macros[MAN_MAX] = {
 	{ in_line_eoln, MAN_BSCOPE }, /* nf */
 	{ in_line_eoln, MAN_BSCOPE }, /* fi */
 	{ blk_close, 0 }, /* RE */
-	{ blk_exp, MAN_EXPLICIT }, /* RS */
+	{ blk_exp, MAN_BSCOPE | MAN_EXPLICIT }, /* RS */
 	{ in_line_eoln, 0 }, /* DT */
 	{ in_line_eoln, 0 }, /* UC */
 	{ in_line_eoln, 0 }, /* PD */

@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.115 2012/01/03 15:16:24 kristaps Exp $ */
+/*	$Id: man.c,v 1.116 2012/06/02 20:16:23 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -131,7 +131,7 @@ man_parseln(struct man *m, int ln, char *buf, int offs)
 
 	assert( ! (MAN_HALT & m->flags));
 
-	return (mandoc_getcontrol(buf, &offs) ?
+	return (roff_getcontrol(m->roff, buf, &offs) ?
 			man_pmacro(m, ln, buf, offs) : 
 			man_ptext(m, ln, buf, offs));
 }

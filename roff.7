@@ -1,4 +1,4 @@
-.\"	$Id: roff.7,v 1.37 2011/12/11 00:38:11 schwarze Exp $
+.\"	$Id: roff.7,v 1.38 2012/06/12 19:50:50 kristaps Exp $
 .\"
 .\" Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: December 11 2011 $
+.Dd $Mdocdate: June 12 2012 $
 .Dt ROFF 7
 .Os
 .Sh NAME
@@ -417,6 +417,18 @@ The syntax of this request is the same as that of
 It is currently ignored by
 .Xr mandoc 1 ,
 as are its children.
+.Ss \&cc
+Changes the control character.
+Its syntax is as follows:
+.Bd -literal -offset indent
+.Pf . Cm \&cc Op Ar c
+.Ed
+.Pp
+If
+.Ar c
+is not specified, the control character is reset to
+.Sq \&. .
+Trailing characters are ignored.
 .Ss \&de
 Define a
 .Nm

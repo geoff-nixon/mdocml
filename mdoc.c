@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.196 2011/09/30 00:13:28 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.197 2012/05/27 17:48:57 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -302,7 +302,7 @@ mdoc_parseln(struct mdoc *m, int ln, char *buf, int offs)
 			m->flags &= ~MDOC_SYNOPSIS;
 	}
 
-	return(mandoc_getcontrol(buf, &offs) ?
+	return(roff_getcontrol(m->roff, buf, &offs) ?
 			mdoc_pmacro(m, ln, buf, offs) :
 			mdoc_ptext(m, ln, buf, offs));
 }

@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.28 2012/02/16 20:51:31 joerg Exp $ */
+/*	$Id: read.c,v 1.29 2012/05/27 17:48:57 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -106,7 +106,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	".so is fragile, better use ln(1)",
 	"NAME section must come first",
 	"bad NAME section contents",
-	"manual name not yet set",
 	"sections out of conventional order",
 	"duplicate section name",
 	"section not in conventional manual section",
@@ -174,6 +173,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"input stack limit exceeded, infinite loop?",
 	"skipping bad character",
 	"escaped character not allowed in a name",
+	"manual name not yet set",
 	"skipping text before the first section header",
 	"skipping unknown macro",
 	"NOT IMPLEMENTED, please use groff: skipping request",

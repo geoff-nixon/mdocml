@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.130 2012/07/10 19:54:11 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.131 2012/07/13 14:19:49 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -445,10 +445,21 @@ pre_sp(DECL_ARGS)
 	int		 neg;
 
 	if ((NULL == n->prev && n->parent)) {
-		if (MAN_SS == n->parent->tok)
+		switch (n->parent->tok) {
+		case (MAN_SH):
+			/* FALLTHROUGH */
+		case (MAN_SS):
+			/* FALLTHROUGH */
+		case (MAN_PP):
+			/* FALLTHROUGH */
+		case (MAN_LP):
+			/* FALLTHROUGH */
+		case (MAN_P):
+			/* FALLTHROUGH */
 			return(0);
-		if (MAN_SH == n->parent->tok)
-			return(0);
+		default:
+			break;
+		}
 	}
 
 	neg = 0;

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_man.c,v 1.39 2012/07/14 09:07:18 schwarze Exp $ */
+/*	$Id: mdoc_man.c,v 1.40 2012/07/16 09:51:54 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -1342,9 +1342,10 @@ static int
 pre_sp(DECL_ARGS)
 {
 
-	if (MMAN_PP & outflags && MDOC_It != n->parent->tok)
+	if (MMAN_PP & outflags) {
+		outflags &= ~MMAN_PP;
 		print_line(".PP", 0);
-	else
+	} else
 		print_line(".sp", 0);
 	return(1);
 }

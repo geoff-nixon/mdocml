@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.203 2012/05/31 22:29:13 schwarze Exp $ */
+/*	$Id: term.c,v 1.204 2012/07/10 15:35:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -106,6 +106,7 @@ void
 term_flushln(struct termp *p)
 {
 	int		 i;     /* current input position in p->buf */
+	int		 ntab;	/* number of tabs to prepend */
 	size_t		 vis;   /* current visual position on output */
 	size_t		 vbl;   /* number of blanks to prepend to output */
 	size_t		 vend;	/* end of word visual position on output */
@@ -144,10 +145,12 @@ term_flushln(struct termp *p)
 		 * Handle literal tab characters: collapse all
 		 * subsequent tabs into a single huge set of spaces.
 		 */
+		ntab = 0;
 		while (i < p->col && '\t' == p->buf[i]) {
 			vend = (vis / p->tabwidth + 1) * p->tabwidth;
 			vbl += vend - vis;
 			vis = vend;
+			ntab++;
 			i++;
 		}
 
@@ -191,6 +194,11 @@ term_flushln(struct termp *p)
 				vend += p->rmargin - p->offset;
 			} else
 				vbl = p->offset;
+
+			/* use pending tabs on the new line */
+
+			if (0 < ntab)
+				vbl += ntab * p->tabwidth;
 
 			/* Remove the p->overstep width. */
 

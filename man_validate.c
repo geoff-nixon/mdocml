@@ -1,7 +1,7 @@
-/*	$Id: man_validate.c,v 1.80 2012/01/03 15:16:24 kristaps Exp $ */
+/*	$Id: man_validate.c,v 1.81 2012/06/02 20:16:23 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
- * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2010, 2012 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -541,12 +541,25 @@ static int
 post_vs(CHKARGS)
 {
 
-	/* 
-	 * Don't warn about this because it occurs in pod2man and would
-	 * cause considerable (unfixable) warnage.
-	 */
-	if (NULL == n->prev && MAN_ROOT == n->parent->type)
+	if (NULL != n->prev)
+		return(1);
+
+	switch (n->parent->tok) {
+	case (MAN_SH):
+		/* FALLTHROUGH */
+	case (MAN_SS):
+		man_nmsg(m, n, MANDOCERR_IGNPAR);
+		/* FALLTHROUGH */
+	case (MAN_MAX):
+		/* 
+		 * Don't warn about this because it occurs in pod2man
+		 * and would cause considerable (unfixable) warnage.
+		 */
 		man_node_delete(m, n);
+		break;
+	default:
+		break;
+	}
 
 	return(1);
 }

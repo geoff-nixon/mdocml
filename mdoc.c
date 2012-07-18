@@ -1,7 +1,7 @@
-/*	$Id: mdoc.c,v 1.199 2012/07/16 09:51:54 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.200 2012/07/18 10:39:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
- * Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2010, 2012 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -646,6 +646,14 @@ mdoc_node_delete(struct mdoc *m, struct mdoc_node *p)
 
 	mdoc_node_unlink(m, p);
 	mdoc_node_free(p);
+}
+
+int
+mdoc_node_relink(struct mdoc *m, struct mdoc_node *p)
+{
+
+	mdoc_node_unlink(m, p);
+	return(node_append(m, p));
 }
 
 #if 0

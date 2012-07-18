@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.137 2012/07/16 21:30:42 schwarze Exp $
+* $Id: TODO,v 1.138 2012/07/18 10:39:19 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -202,13 +202,6 @@
 - In .Bl -bullet, the groff bullet is "+\b+\bo\bo", the mandoc bullet
   is just "o\bo".
   see for example OpenBSD ksh(1)
-
-- A bogus .Pp between two .It must not produce a double blank line,
-  see between -R and -r in OpenBSD rm(1), before "update" in mount(8),
-  or in DIAGNOSTICS in init(8), or before "is always true" in ksh(1).
-  The same happens with .Pp just before .El, see bgpd.conf(5).
-  Also have `It' complain if `Pp' is invoked at certain times (not
-  -compact?).
 
 - .Pp between two .It in .Bl -column should produce one,
   not two blank lines, see e.g. login.conf(5).

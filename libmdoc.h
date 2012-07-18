@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.78 2011/12/02 01:37:14 schwarze Exp $ */
+/*	$Id: libmdoc.h,v 1.79 2012/05/27 17:48:57 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -118,6 +118,7 @@ int		  mdoc_endbody_alloc(struct mdoc *m, int line, int pos,
 			enum mdoct tok, struct mdoc_node *body,
 			enum mdoc_endbody end);
 void		  mdoc_node_delete(struct mdoc *, struct mdoc_node *);
+int		  mdoc_node_relink(struct mdoc *, struct mdoc_node *);
 void		  mdoc_hash_init(void);
 enum mdoct	  mdoc_hash_find(const char *);
 const char	 *mdoc_a2att(const char *);

@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.142 2012/07/18 16:52:03 schwarze Exp $
+* $Id: TODO,v 1.143 2012/10/12 16:45:34 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -115,6 +115,8 @@
 
 - groff an-ext.tmac macros (.UR, .UE) occur in xine(5)
   reported by brad@  Sat, 15 Jan 2011 15:45:23 -0500
+  also occur in freeciv-client(6) freeciv-server(6) freeciv-modpack(6)
+  reported by bentley@  Tue, 30 Oct 2012 01:05:57 -0600
 
 - -T[x]html doesn't stipulate non-collapsing spaces in literal mode
 

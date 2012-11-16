@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.116 2012/05/27 17:39:28 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.117 2012/07/18 16:20:43 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -738,7 +738,7 @@ blk_exp_close(MACRO_PROT_ARGS)
 		if (later &&
 		    MDOC_EXPLICIT & mdoc_macros[later->tok].flags)
 			continue;
-		if (MDOC_CALLABLE & mdoc_macros[n->tok].flags)
+		if (MDOC_It != n->tok)
 			later = n;
 	}
 

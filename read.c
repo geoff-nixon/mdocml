@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.30 2012/07/12 15:11:14 schwarze Exp $ */
+/*	$Id: read.c,v 1.31 2012/07/18 11:11:12 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -95,6 +95,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"no title in document",
 	"document title should be all caps",
 	"unknown manual section",
+	"unknown manual volume or arch",
 	"date missing, using today's date",
 	"cannot parse date, using it verbatim",
 	"prologue macros out of order",

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_man.c,v 1.42 2012/11/17 00:26:33 schwarze Exp $ */
+/*	$Id: mdoc_man.c,v 1.43 2012/11/18 18:02:23 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -253,6 +253,7 @@ static	int		outflags;
 #define	MMAN_Bk		(1 << 7)  /* word keep mode */
 #define	MMAN_An_split	(1 << 8)  /* author mode is "split" */
 #define	MMAN_An_nosplit	(1 << 9)  /* author mode is "nosplit" */
+#define	MMAN_PD		(1 << 10) /* inter-paragraph spacing disabled */
 
 #define	BL_STACK_MAX	32
 
@@ -304,8 +305,15 @@ print_word(const char *s)
 		 * If we need a newline, print it now and start afresh.
 		 */
 		if (MMAN_PP & outflags) {
-			if ( ! (MMAN_sp & outflags))
-				printf("\n.sp -1v");
+			if (MMAN_sp & outflags) {
+				if (MMAN_PD & outflags) {
+					printf("\n.PD");
+					outflags &= ~MMAN_PD;
+				}
+			} else if ( ! (MMAN_PD & outflags)) {
+				printf("\n.PD 0");
+				outflags |= MMAN_PD;
+			}
 			printf("\n.PP\n");
 		} else if (MMAN_sp & outflags)
 			printf("\n.sp\n");
@@ -379,10 +387,16 @@ print_block(const char *s, int newflags)
 {
 
 	outflags &= ~MMAN_PP;
-	if (MMAN_sp & outflags)
+	if (MMAN_sp & outflags) {
 		outflags &= ~(MMAN_sp | MMAN_br);
-	else
-		print_line(".sp -1v", 0);
+		if (MMAN_PD & outflags) {
+			print_line(".PD", 0);
+			outflags &= ~MMAN_PD;
+		}
+	} else if (! (MMAN_PD & outflags)) {
+		print_line(".PD 0", 0);
+		outflags |= MMAN_PD;
+	}
 	outflags |= MMAN_nl;
 	print_word(s);
 	outflags |= newflags;

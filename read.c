@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.31 2012/07/18 11:11:12 schwarze Exp $ */
+/*	$Id: read.c,v 1.32 2012/11/16 22:21:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -740,7 +740,7 @@ mparse_alloc(enum mparset inttype, enum mandoclevel wlevel,
 	curp->inttype = inttype;
 	curp->defos = defos;
 
-	curp->roff = roff_alloc(curp);
+	curp->roff = roff_alloc(inttype, curp);
 	return(curp);
 }
 

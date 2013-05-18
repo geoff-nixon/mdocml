@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.51 2011/09/18 14:14:15 schwarze Exp $ */
+/*	$Id: chars.c,v 1.52 2011/11/08 00:15:23 kristaps Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -77,7 +77,7 @@ mchars_alloc(void)
 	 */
 
 	tab = mandoc_malloc(sizeof(struct mchars));
-	htab = mandoc_calloc(PRINT_HI - PRINT_LO + 1, sizeof(struct ln **));
+	htab = mandoc_calloc(PRINT_HI - PRINT_LO + 1, sizeof(struct ln *));
 
 	for (i = 0; i < LINES_MAX; i++) {
 		hash = (int)lines[i].code[0] - PRINT_LO;

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.105 2012/11/16 22:21:05 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.106 2012/11/19 22:30:58 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -164,7 +164,7 @@ enum	mandocerr {
 	MANDOCERR_MAX
 };
 
-struct	tbl {
+struct	tbl_opts {
 	char		  tab; /* cell-separator */
 	char		  decimal; /* decimal point */
 	int		  linesize;
@@ -263,7 +263,7 @@ enum	tbl_spant {
  * A row of data in a table.
  */
 struct	tbl_span {
-	struct tbl	 *tbl;
+	struct tbl_opts	 *opts;
 	struct tbl_head	 *head;
 	struct tbl_row	 *layout; /* layout row */
 	struct tbl_dat	 *first;

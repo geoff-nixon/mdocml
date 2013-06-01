@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.25 2012/05/27 17:54:54 schwarze Exp $ */
+/*	$Id: tbl_data.c,v 1.26 2013/05/31 21:37:17 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -102,7 +102,7 @@ data(struct tbl_node *tbl, struct tbl_span *dp,
 
 	if (*pos - sv == 2 && 'T' == p[sv] && '{' == p[sv + 1]) {
 		tbl->part = TBL_PART_CDATA;
-		return(0);
+		return(1);
 	}
 
 	assert(*pos - sv >= 0);

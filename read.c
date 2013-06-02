@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.35 2013/05/30 03:52:59 schwarze Exp $ */
+/*	$Id: read.c,v 1.36 2013/06/01 22:57:35 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -40,10 +40,6 @@
 #include "man.h"
 #include "main.h"
 
-#ifndef MAP_FILE
-#define	MAP_FILE	0
-#endif
-
 #define	REPARSE_LIMIT	1000
 
 struct	buf {
@@ -74,6 +70,8 @@ static	void	  mparse_buf_r(struct mparse *, struct buf, int);
 static	void	  pset(const char *, int, struct mparse *);
 static	int	  read_whole_file(const char *, int, struct buf *, int *);
 static	void	  mparse_end(struct mparse *);
+static	void	  mparse_parse_buffer(struct mparse *, struct buf,
+			const char *);
 
 static	const enum mandocerr	mandoclimits[MANDOCLEVEL_MAX] = {
 	MANDOCERR_OK,
@@ -595,8 +593,7 @@ read_whole_file(const char *file, int fd, struct buf *fb, int *with_mmap)
 		}
 		*with_mmap = 1;
 		fb->sz = (size_t)st.st_size;
-		fb->buf = mmap(NULL, fb->sz, PROT_READ, 
-				MAP_FILE|MAP_SHARED, fd, 0);
+		fb->buf = mmap(NULL, fb->sz, PROT_READ, MAP_SHARED, fd, 0);
 		if (fb->buf != MAP_FAILED)
 			return(1);
 	}

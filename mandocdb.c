@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.55 2012/06/09 14:11:16 kristaps Exp $ */
+/*	$Id: mandocdb.c,v 1.56 2013/06/03 19:01:31 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -1933,7 +1933,7 @@ dbopen(const char *base, int real)
 
 	rc = sqlite3_open_v2(file, &db, ofl, NULL);
 	if (SQLITE_OK == rc) 
-		return(1);
+		goto prepare_statements;
 	if (SQLITE_CANTOPEN != rc) {
 		perror(file);
 		return(0);
@@ -1971,6 +1971,8 @@ dbopen(const char *base, int real)
 		return(0);
 	}
 
+prepare_statements:
+	SQL_EXEC("PRAGMA foreign_keys = ON");
 	sql = "DELETE FROM docs where file=?";
 	sqlite3_prepare_v2(db, sql, -1, &stmts[STMT_DELETE], NULL);
 	sql = "INSERT INTO docs "

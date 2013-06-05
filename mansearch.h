@@ -1,4 +1,4 @@
-/*	$Id: mansearch.h,v 1.1 2012/06/08 10:36:23 kristaps Exp $ */
+/*	$Id: mansearch.h,v 1.2 2012/06/09 14:11:16 kristaps Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -61,7 +61,7 @@
 __BEGIN_DECLS
 
 struct	manpage {
-	char		 file[MAXPATHLEN]; /* prefixed by manpath */
+	char		 file[PATH_MAX]; /* prefixed by manpath */
 	char		*desc; /* description of manpage */
 	int		 form; /* 0 == catpage */
 };

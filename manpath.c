@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.9 2012/06/08 10:32:40 kristaps Exp $ */
+/*	$Id: manpath.c,v 1.10 2013/05/29 22:48:10 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -17,10 +17,6 @@
  */
 #ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
-
-#ifdef	USE_MANPATH
-#include <sys/param.h>
 #endif
 
 #include <assert.h>
@@ -44,7 +40,7 @@ manpath_parse(struct manpaths *dirs, const char *file,
 		char *defp, char *auxp)
 {
 #ifdef	USE_MANPATH
-	char		 cmd[(MAXPATHLEN * 3) + 20];
+	char		 cmd[(PATH_MAX * 3) + 20];
 	FILE		*stream;
 	char		*buf;
 	size_t		 sz, bsz;

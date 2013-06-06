@@ -1,4 +1,4 @@
-/*	$Id: mansearch.h,v 1.2 2012/06/09 14:11:16 kristaps Exp $ */
+/*	$Id: mansearch.h,v 1.3 2013/06/05 02:00:26 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -17,7 +17,7 @@
 #ifndef MANSEARCH_H
 #define MANSEARCH_H
 
-#define	MANDOC_DB	 "mandocdb.db"
+#define	MANDOC_DB	 "mandoc.db"
 
 #define	TYPE_An		 0x0000000000000001ULL
 #define	TYPE_Ar		 0x0000000000000002ULL

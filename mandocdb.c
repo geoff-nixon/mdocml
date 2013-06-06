@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.60 2013/06/05 20:27:11 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.61 2013/06/05 21:21:08 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -1101,6 +1101,7 @@ parse_catpage(struct of *of)
 	if (NULL == title || '\0' == *title) {
 		if (warnings)
 			say(of->file, "Cannot find NAME section");
+		putkey(of, of->name, TYPE_Nd);
 		fclose(stream);
 		free(title);
 		return;

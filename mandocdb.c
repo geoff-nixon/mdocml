@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.65 2013/06/06 19:00:28 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.66 2013/06/07 01:01:34 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -1446,12 +1446,23 @@ parse_mdoc_St(struct of *of, const struct mdoc_node *n)
 static int
 parse_mdoc_Xr(struct of *of, const struct mdoc_node *n)
 {
+	char	*cp;
 
 	if (NULL == (n = n->child))
 		return(0);
 
-	putkey(of, n->string, TYPE_Xr);
-	return(1);
+	if (NULL == n->next) {
+		putkey(of, n->string, TYPE_Xr);
+		return(0);
+	}
+
+	if (-1 == asprintf(&cp, "%s(%s)", n->string, n->next->string)) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+	putkey(of, cp, TYPE_Xr);
+	free(cp);
+	return(0);
 }
 
 static int

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.65 2012/05/31 22:38:16 schwarze Exp $ */
+/*	$Id: mandoc.c,v 1.66 2012/06/12 20:21:04 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -432,17 +432,35 @@ mandoc_getarg(struct mparse *parse, char **cpp, int ln, int *pos)
 	pairs = 0;
 	white = 0;
 	for (cp = start; '\0' != *cp; cp++) {
-		/* Move left after quoted quotes and escaped backslashes. */
+
+		/*
+		 * Move the following text left
+		 * after quoted quotes and after "\\" and "\t".
+		 */
 		if (pairs)
 			cp[-pairs] = cp[0];
+
 		if ('\\' == cp[0]) {
-			if ('\\' == cp[1]) {
-				/* Poor man's copy mode. */
+			/*
+			 * In copy mode, translate double to single
+			 * backslashes and backslash-t to literal tabs.
+			 */
+			switch (cp[1]) {
+			case ('t'):
+				cp[0] = '\t';
+				/* FALLTHROUGH */
+			case ('\\'):
 				pairs++;
 				cp++;
-			} else if (0 == quoted && ' ' == cp[1])
+				break;
+			case (' '):
 				/* Skip escaped blanks. */
-				cp++;
+				if (0 == quoted)
+					cp++;
+				break;
+			default:
+				break;
+			}
 		} else if (0 == quoted) {
 			if (' ' == cp[0]) {
 				/* Unescaped blanks end unquoted args. */

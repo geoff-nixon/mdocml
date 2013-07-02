@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.68 2013/06/07 05:27:50 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.69 2013/07/02 11:40:40 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -470,15 +470,6 @@ main(int argc, char *argv[])
 				goto out;
 			if (0 == dbopen(0))
 				goto out;
-
-			/*
-			 * Since we're opening up a new database, we can
-			 * turn off synchronous mode for much better
-			 * performance.
-			 */
-#ifndef __APPLE__
-			SQL_EXEC("PRAGMA synchronous = OFF");
-#endif
 
 			ofmerge(mc, mp, &str_info, warnings && !use_all);
 			dbclose(0);
@@ -1972,6 +1963,17 @@ prepare_statements:
 	sql = "INSERT INTO keys "
 		"(bits,key,docid) VALUES (?,?,?)";
 	sqlite3_prepare_v2(db, sql, -1, &stmts[STMT_INSERT_KEY], NULL);
+
+#ifndef __APPLE__
+	/*
+	 * When opening a new database, we can turn off
+	 * synchronous mode for much better performance.
+	 */
+
+	if (real)
+		SQL_EXEC("PRAGMA synchronous = OFF");
+#endif
+
 	return(1);
 }
 

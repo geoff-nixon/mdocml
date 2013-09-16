@@ -1,4 +1,4 @@
-/*	$Id: arch.in,v 1.12 2012/01/28 14:02:17 joerg Exp $ */
+/*	$Id: arch.in,v 1.13 2013/03/27 00:19:26 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -38,9 +38,9 @@ LINE("arm",		"ARM")
 LINE("arm26",		"ARM26")
 LINE("arm32",		"ARM32")
 LINE("armish",		"ARMISH")
+LINE("armv7",		"ARMv7")
 LINE("aviion",		"AViiON")
 LINE("atari",		"ATARI")
-LINE("beagle",		"Beagle")
 LINE("bebox",		"BeBox")
 LINE("cats",		"cats")
 LINE("cesfic",		"CESFIC")

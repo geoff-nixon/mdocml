@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.191 2012/11/17 00:26:33 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.192 2013/08/05 14:36:01 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -1964,7 +1964,8 @@ post_sh_head(POST_ARGS)
 			break;
 		if (*mdoc->meta.msec == '9')
 			break;
-		mdoc_nmsg(mdoc, mdoc->last, MANDOCERR_SECMSEC);
+		mandoc_msg(MANDOCERR_SECMSEC, mdoc->parse,
+				mdoc->last->line, mdoc->last->pos, buf);
 		break;
 	default:
 		break;

@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.3,v 1.18 2013/06/02 03:48:26 schwarze Exp $
+.\"	$Id: mandoc.3,v 1.19 2013/07/13 19:41:16 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: June 2 2013 $
+.Dd $Mdocdate: July 13 2013 $
 .Dt MANDOC 3
 .Os
 .Sh NAME
@@ -67,7 +67,7 @@
 .Fa "const struct man *man"
 .Fc
 .Ft "struct mchars *"
-.Fn mchars_alloc
+.Fn mchars_alloc "void"
 .Ft void
 .Fn mchars_free "struct mchars *p"
 .Ft char
@@ -86,7 +86,6 @@
 .Fa "const struct mchars *p"
 .Fa "const char *cp"
 .Fa "size_t sz"
-.Ft "const char *"
 .Fc
 .Ft "const struct mdoc_meta *"
 .Fo mdoc_meta

@@ -1,6 +1,6 @@
-/*	$Id: apropos.c,v 1.26 2012/03/23 02:52:33 kristaps Exp $ */
+/*	$Id: apropos.c,v 1.27 2012/03/24 00:31:55 kristaps Exp $ */
 /*
- * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
@@ -32,7 +32,6 @@
 
 static	int	 cmp(const void *, const void *);
 static	void	 list(struct res *, size_t, void *);
-static	void	 usage(void);
 
 static	char	*progname;
 
@@ -47,8 +46,8 @@ main(int argc, char *argv[])
 	struct expr	*e;
 	char		*defpaths, *auxpaths;
 	char		*conf_file;
-	extern int	 optind;
 	extern char	*optarg;
+	extern int	 optind;
 
 	progname = strrchr(argv[0], '/');
 	if (progname == NULL)
@@ -56,7 +55,7 @@ main(int argc, char *argv[])
 	else
 		++progname;
 
-	whatis = 0 == strncmp(progname, "whatis", 6);
+	whatis = (0 == strncmp(progname, "whatis", 6));
 
 	memset(&paths, 0, sizeof(struct manpaths));
 	memset(&opts, 0, sizeof(struct opts));
@@ -85,15 +84,14 @@ main(int argc, char *argv[])
 			opts.cat = optarg;
 			break;
 		default:
-			usage();
-			return(EXIT_FAILURE);
+			goto usage;
 		}
 
 	argc -= optind;
 	argv += optind;
 
-	if (0 == argc) 
-		return(EXIT_SUCCESS);
+	if (0 == argc)
+		goto usage;
 
 	rc = 0;
 
@@ -115,11 +113,18 @@ main(int argc, char *argv[])
 		fprintf(stderr, "%s: Bad database\n", progname);
 		goto out;
 	}
+
 out:
 	manpath_free(&paths);
 	resfree(res, ressz);
 	exprfree(e);
 	return(rc ? EXIT_SUCCESS : EXIT_FAILURE);
+
+usage:
+	fprintf(stderr, "usage: %s [-C file] [-M path] [-m path] "
+			"[-S arch] [-s section]%s ...\n", progname,
+			whatis ? " name" : "\n               expression");
+	return(EXIT_FAILURE);
 }
 
 /* ARGSUSED */
@@ -133,7 +138,7 @@ list(struct res *res, size_t sz, void *arg)
 	for (i = 0; i < sz; i++) {
 		if ( ! res[i].matched)
 			continue;
-		printf("%s(%s%s%s) - %.70s\n", 
+		printf("%s(%s%s%s) - %.70s\n",
 				res[i].title,
 				res[i].cat,
 				*res[i].arch ? "/" : "",
@@ -148,18 +153,4 @@ cmp(const void *p1, const void *p2)
 
 	return(strcasecmp(((const struct res *)p1)->title,
 				((const struct res *)p2)->title));
-}
-
-static void
-usage(void)
-{
-
-	fprintf(stderr, "usage: %s "
-			"[-C file] "
-			"[-M manpath] "
-			"[-m manpath] "
-			"[-S arch] "
-			"[-s section] "
-			"expression ...\n",
-			progname);
 }

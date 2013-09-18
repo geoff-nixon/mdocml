@@ -173,10 +173,6 @@ LIBMAN_OBJS	 = man.o \
 		   man_hash.o \
 		   man_macro.o \
 		   man_validate.o
-LIBMAN_LNS	 = man.ln \
-		   man_hash.ln \
-		   man_macro.ln \
-		   man_validate.ln
 
 LIBMDOC_OBJS	 = arch.o \
 		   att.o \
@@ -188,16 +184,6 @@ LIBMDOC_OBJS	 = arch.o \
 		   mdoc_validate.o \
 		   st.o \
 		   vol.o
-LIBMDOC_LNS	 = arch.ln \
-		   att.ln \
-		   lib.ln \
-		   mdoc.ln \
-		   mdoc_argv.ln \
-		   mdoc_hash.ln \
-		   mdoc_macro.ln \
-		   mdoc_validate.ln \
-		   st.ln \
-		   vol.ln
 
 LIBROFF_OBJS	 = eqn.o \
 		   roff.o \
@@ -205,12 +191,6 @@ LIBROFF_OBJS	 = eqn.o \
 		   tbl_data.o \
 		   tbl_layout.o \
 		   tbl_opts.o
-LIBROFF_LNS	 = eqn.ln \
-		   roff.ln \
-		   tbl.ln \
-		   tbl_data.ln \
-		   tbl_layout.ln \
-		   tbl_opts.ln
 
 LIBMANDOC_OBJS	 = $(LIBMAN_OBJS) \
 		   $(LIBMDOC_OBJS) \
@@ -219,52 +199,35 @@ LIBMANDOC_OBJS	 = $(LIBMAN_OBJS) \
 		   mandoc.o \
 		   msec.o \
 		   read.o
-LIBMANDOC_LNS	 = $(LIBMAN_LNS) \
-		   $(LIBMDOC_LNS) \
-		   $(LIBROFF_LNS) \
-		   chars.ln \
-		   mandoc.ln \
-		   msec.ln \
-		   read.ln
 
 COMPAT_OBJS	 = compat_fgetln.o \
 		   compat_getsubopt.o \
 		   compat_strlcat.o \
 		   compat_strlcpy.o
-COMPAT_LNS	 = compat_fgetln.ln \
-		   compat_getsubopt.ln \
-		   compat_strlcat.ln \
-		   compat_strlcpy.ln
 
-arch.o arch.ln: arch.in
-att.o att.ln: att.in
-chars.o chars.ln: chars.in
-lib.o lib.ln: lib.in
-msec.o msec.ln: msec.in
-roff.o roff.ln: predefs.in
-st.o st.ln: st.in
-vol.o vol.ln: vol.in
+arch.o: arch.in
+att.o: att.in
+chars.o: chars.in
+lib.o: lib.in
+msec.o: msec.in
+roff.o: predefs.in
+st.o: st.in
+vol.o: vol.in
 
-$(LIBMAN_OBJS) $(LIBMAN_LNS): libman.h
-$(LIBMDOC_OBJS) $(LIBMDOC_LNS): libmdoc.h
-$(LIBROFF_OBJS) $(LIBROFF_LNS): libroff.h
-$(LIBMANDOC_OBJS) $(LIBMANDOC_LNS): mandoc.h mdoc.h man.h libmandoc.h config.h
-
-$(COMPAT_OBJS) $(COMPAT_LNS): config.h
+$(LIBMAN_OBJS): libman.h
+$(LIBMDOC_OBJS): libmdoc.h
+$(LIBROFF_OBJS): libroff.h
+$(LIBMANDOC_OBJS): mandoc.h mdoc.h man.h libmandoc.h config.h
+$(COMPAT_OBJS): config.h
 
 MANDOC_HTML_OBJS = eqn_html.o \
 		   html.o \
 		   man_html.o \
 		   mdoc_html.o \
 		   tbl_html.o
-MANDOC_HTML_LNS	 = eqn_html.ln \
-		   html.ln \
-		   man_html.ln \
-		   mdoc_html.ln \
-		   tbl_html.ln
+$(MANDOC_HTML_OBJS): html.h
 
 MANDOC_MAN_OBJS  = mdoc_man.o
-MANDOC_MAN_LNS   = mdoc_man.ln
 
 MANDOC_TERM_OBJS = eqn_term.o \
 		   man_term.o \
@@ -273,13 +236,7 @@ MANDOC_TERM_OBJS = eqn_term.o \
 		   term_ascii.o \
 		   term_ps.o \
 		   tbl_term.o
-MANDOC_TERM_LNS	 = eqn_term.ln \
-		   man_term.ln \
-		   mdoc_term.ln \
-		   term.ln \
-		   term_ascii.ln \
-		   term_ps.ln \
-		   tbl_term.ln
+$(MANDOC_TERM_OBJS): term.h
 
 MANDOC_OBJS	 = $(MANDOC_HTML_OBJS) \
 		   $(MANDOC_MAN_OBJS) \
@@ -287,31 +244,16 @@ MANDOC_OBJS	 = $(MANDOC_HTML_OBJS) \
 		   main.o \
 		   out.o \
 		   tree.o
-MANDOC_LNS	 = $(MANDOC_HTML_LNS) \
-		   $(MANDOC_MAN_LNS) \
-		   $(MANDOC_TERM_LNS) \
-		   main.ln \
-		   out.ln \
-		   tree.ln
-
-$(MANDOC_HTML_OBJS) $(MANDOC_HTML_LNS): html.h
-$(MANDOC_TERM_OBJS) $(MANDOC_TERM_LNS): term.h
-$(MANDOC_OBJS) $(MANDOC_LNS): main.h mandoc.h mdoc.h man.h config.h out.h
+$(MANDOC_OBJS): main.h mandoc.h mdoc.h man.h config.h out.h
 
 MANDOCDB_OBJS	 = mandocdb.o manpath.o
-MANDOCDB_LNS	 = mandocdb.ln manpath.ln
-
-$(MANDOCDB_OBJS) $(MANDOCDB_LNS): mandocdb.h mandoc.h mdoc.h man.h config.h manpath.h
+$(MANDOCDB_OBJS): mandocdb.h mandoc.h mdoc.h man.h config.h manpath.h
 
 PRECONV_OBJS	 = preconv.o
-PRECONV_LNS	 = preconv.ln
-
-$(PRECONV_OBJS) $(PRECONV_LNS): config.h
+$(PRECONV_OBJS): config.h
 
 APROPOS_OBJS	 = apropos.o apropos_db.o manpath.o
-APROPOS_LNS	 = apropos.ln apropos_db.ln manpath.ln
-
-$(APROPOS_OBJS) $(APROPOS_LNS): config.h mandoc.h apropos_db.h manpath.h mandocdb.h
+$(APROPOS_OBJS): config.h mandoc.h apropos_db.h manpath.h mandocdb.h
 
 CGI_OBJS	 = $(MANDOC_HTML_OBJS) \
 		   $(MANDOC_MAN_OBJS) \
@@ -321,27 +263,13 @@ CGI_OBJS	 = $(MANDOC_HTML_OBJS) \
 		   manpath.o \
 		   out.o \
 		   tree.o
-
-CGI_LNS	 	 = $(MANDOC_HTML_LNS) \
-		   $(MANDOC_MAN_LNS) \
-		   $(MANDOC_TERM_LNS) \
-		   cgi.ln \
-		   apropos_db.ln \
-		   manpath.ln \
-		   out.ln \
-		   tree.ln
-
-$(CGI_OBJS) $(CGI_LNS): main.h mdoc.h man.h out.h config.h mandoc.h apropos_db.h manpath.h mandocdb.h
+$(CGI_OBJS): main.h mdoc.h man.h out.h config.h mandoc.h apropos_db.h manpath.h mandocdb.h
 
 CATMAN_OBJS	 = catman.o manpath.o
-CATMAN_LNS 	 = catman.ln manpath.ln
-
-$(CATMAN_OBJS) $(CATMAN_LNS): config.h mandoc.h manpath.h mandocdb.h
+$(CATMAN_OBJS): config.h mandoc.h manpath.h mandocdb.h
 
 DEMANDOC_OBJS	 = demandoc.o
-DEMANDOC_LNS	 = demandoc.ln
-
-$(DEMANDOC_OBJS) $(DEMANDOC_LNS): config.h
+$(DEMANDOC_OBJS): config.h
 
 INDEX_MANS	 = apropos.1.html \
 		   apropos.1.xhtml \
@@ -430,38 +358,19 @@ INDEX_OBJS	 = $(INDEX_MANS) \
 
 www: index.html
 
-lint: llib-lmandoc.ln llib-lpreconv.ln llib-ldemandoc.ln $(DBLN)
-
 clean:
 	rm -f libmandoc.a $(LIBMANDOC_OBJS)
-	rm -f llib-llibmandoc.ln $(LIBMANDOC_LNS)
 	rm -f mandocdb $(MANDOCDB_OBJS)
-	rm -f llib-lmandocdb.ln $(MANDOCDB_LNS)
 	rm -f preconv $(PRECONV_OBJS)
-	rm -f llib-lpreconv.ln $(PRECONV_LNS)
 	rm -f apropos whatis $(APROPOS_OBJS)
-	rm -f llib-lapropos.ln $(APROPOS_LNS)
 	rm -f man.cgi $(CGI_OBJS)
-	rm -f llib-lman.cgi.ln $(CGI_LNS)
 	rm -f catman $(CATMAN_OBJS)
-	rm -f llib-lcatman.ln $(CATMAN_LNS)
 	rm -f demandoc $(DEMANDOC_OBJS)
-	rm -f llib-ldemandoc.ln $(DEMANDOC_LNS)
 	rm -f mandoc $(MANDOC_OBJS)
-	rm -f llib-lmandoc.ln $(MANDOC_LNS)
-	rm -f config.h config.log $(COMPAT_OBJS) $(COMPAT_LNS)
-	rm -f mdocml.tar.gz mdocml-win32.zip mdocml-win64.zip mdocml-macosx.zip
+	rm -f config.h config.log $(COMPAT_OBJS)
+	rm -f mdocml.tar.gz
 	rm -f index.html $(INDEX_OBJS)
-	rm -rf test-fgetln.dSYM
-	rm -rf test-strlcpy.dSYM
-	rm -rf test-strlcat.dSYM 
-	rm -rf test-strptime.dSYM 
-	rm -rf test-mmap.dSYM 
-	rm -rf test-getsubopt.dSYM
-	rm -rf apropos.dSYM
-	rm -rf catman.dSYM
-	rm -rf mandocdb.dSYM
-	rm -rf whatis.dSYM
+	rm -rf *.dSYM
 
 install: all
 	mkdir -p $(DESTDIR)$(BINDIR)
@@ -500,26 +409,14 @@ installwww: www
 libmandoc.a: $(COMPAT_OBJS) $(LIBMANDOC_OBJS)
 	$(AR) rs $@ $(COMPAT_OBJS) $(LIBMANDOC_OBJS)
 
-llib-llibmandoc.ln: $(COMPAT_LNS) $(LIBMANDOC_LNS)
-	$(LINT) $(LINTFLAGS) -Clibmandoc $(COMPAT_LNS) $(LIBMANDOC_LNS)
-
 mandoc: $(MANDOC_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) -o $@ $(MANDOC_OBJS) libmandoc.a
-
-llib-lmandoc.ln: $(MANDOC_LNS) llib-llibmandoc.ln
-	$(LINT) $(LINTFLAGS) -Cmandoc $(MANDOC_LNS) llib-llibmandoc.ln
 
 mandocdb: $(MANDOCDB_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) -o $@ $(MANDOCDB_OBJS) libmandoc.a $(DBLIB)
 
-llib-lmandocdb.ln: $(MANDOCDB_LNS) llib-llibmandoc.ln
-	$(LINT) $(LINTFLAGS) -Cmandocdb $(MANDOCDB_LNS) llib-llibmandoc.ln
-
 preconv: $(PRECONV_OBJS)
 	$(CC) $(LDFLAGS) -o $@ $(PRECONV_OBJS)
-
-llib-lpreconv.ln: $(PRECONV_LNS) llib-llibmandoc.ln
-	$(LINT) $(LINTFLAGS) -Cpreconv $(PRECONV_LNS) llib-llibmandoc.ln
 
 whatis: apropos
 	cp -f apropos whatis
@@ -527,26 +424,14 @@ whatis: apropos
 apropos: $(APROPOS_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) -o $@ $(APROPOS_OBJS) libmandoc.a $(DBLIB)
 
-llib-lapropos.ln: $(APROPOS_LNS) llib-llibmandoc.ln
-	$(LINT) $(LINTFLAGS) -Capropos $(APROPOS_LNS) llib-llibmandoc.ln
-
 catman: $(CATMAN_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) -o $@ $(CATMAN_OBJS) libmandoc.a $(DBLIB)
-
-llib-lcatman.ln: $(CATMAN_LNS) llib-llibmandoc.ln
-	$(LINT) $(LINTFLAGS) -Ccatman $(CATMAN_LNS) llib-llibmandoc.ln
 
 man.cgi: $(CGI_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) $(STATIC) -o $@ $(CGI_OBJS) libmandoc.a $(DBLIB)
 
-llib-lman.cgi.ln: $(CGI_LNS) llib-llibmandoc.ln
-	$(LINT) $(LINTFLAGS) -Cman.cgi $(CGI_LNS) llib-llibmandoc.ln
-
 demandoc: $(DEMANDOC_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) -o $@ $(DEMANDOC_OBJS) libmandoc.a
-
-llib-ldemandoc.ln: $(DEMANDOC_LNS) llib-llibmandoc.ln
-	$(LINT) $(LINTFLAGS) -Cdemandoc $(DEMANDOC_LNS) llib-llibmandoc.ln
 
 mdocml.md5: mdocml.tar.gz
 	md5 mdocml.tar.gz >$@
@@ -556,37 +441,6 @@ mdocml.tar.gz: $(SRCS)
 	$(INSTALL_SOURCE) $(SRCS) .dist/mdocml-$(VERSION)
 	( cd .dist/ && tar zcf ../$@ ./ )
 	rm -rf .dist/
-
-mdocml-win32.zip: $(SRCS)
-	mkdir -p .win32/mdocml-$(VERSION)/
-	$(INSTALL_SOURCE) $(SRCS) .win32
-	cp .win32/Makefile .win32/Makefile.old
-	egrep -v -e DUSE_WCHAR -e ^DBBIN .win32/Makefile.old >.win32/Makefile
-	( cd .win32; \
-		CC=i686-w64-mingw32-gcc AR=i686-w64-mingw32-ar CFLAGS='-DOSNAME=\"Windows\"' make; \
-		make install PREFIX=mdocml-$(VERSION) ; \
-		zip -r ../$@ mdocml-$(VERSION) )
-	rm -rf .win32
-
-mdocml-win64.zip: $(SRCS)
-	mkdir -p .win64/mdocml-$(VERSION)/
-	$(INSTALL_SOURCE) $(SRCS) .win64
-	cp .win64/Makefile .win64/Makefile.old
-	egrep -v -e DUSE_WCHAR -e ^DBBIN .win64/Makefile.old >.win64/Makefile
-	( cd .win64; \
-		CC=x86_64-w64-mingw32-gcc AR=x86_64-w64-mingw32-ar CFLAGS='-DOSNAME=\"Windows\"' make; \
-		make install PREFIX=mdocml-$(VERSION) ; \
-		zip -r ../$@ mdocml-$(VERSION) )
-	rm -rf .win64
-
-mdocml-macosx.zip: $(SRCS)
-	mkdir -p .macosx/mdocml-$(VERSION)/
-	$(INSTALL_SOURCE) $(SRCS) .macosx
-	( cd .macosx; \
-		CFLAGS="-arch i386 -arch x86_64 -arch ppc" LDFLAGS="-arch i386 -arch x86_64 -arch ppc" make; \
-		make install PREFIX=mdocml-$(VERSION) ; \
-		zip -r ../$@ mdocml-$(VERSION) )
-	rm -rf .macosx
 
 index.html: $(INDEX_OBJS)
 

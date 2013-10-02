@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.31 2012/03/24 01:46:25 kristaps Exp $ */
+/*	$Id: apropos_db.c,v 1.32 2012/03/25 00:48:47 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -37,6 +37,7 @@
 # include <libkern/OSByteOrder.h>
 # include <db.h>
 #else
+# include <sys/endian.h>
 # include <db.h>
 #endif
 

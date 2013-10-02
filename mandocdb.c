@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.49.2.5 2013/09/18 00:54:20 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.49.2.6 2013/10/01 00:52:58 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -41,6 +41,7 @@
 # include <libkern/OSByteOrder.h>
 # include <db.h>
 #else
+# include <sys/endian.h>
 # include <db.h>
 #endif
 

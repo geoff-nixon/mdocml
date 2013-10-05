@@ -320,6 +320,9 @@
 			For mandoc developers, we now provide a <A HREF="tbl.3.html">tbl(3)</A> library manual and <CODE>gmdiff</CODE>,
 			a very small, very simplistic groff-versus-mandoc output comparison tool.
 		</P>
+		<P>
+			See <A HREF="NEWS">NEWS</A> for historical notes.
+		</P>
 		<P CLASS="news">
 			23-03-2011: version 1.12.1
 		</P>
@@ -353,7 +356,7 @@
 				Copyright &#169; 2008&#8211;2011 
 				<A CLASS="external" HREF="http://kristaps.bsd.lv">Kristaps Dzonsons</A>, 
 				&#169; 2013 Ingo Schwarze,
-				$Date: 2013/09/28 12:31:53 $
+				$Date: 2013/10/05 13:15:51 $
 			</SMALL>
 		</P>
 	</BODY>

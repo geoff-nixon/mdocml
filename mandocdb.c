@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.49.2.6 2013/10/01 00:52:58 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.49.2.7 2013/10/02 21:03:26 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -620,6 +620,8 @@ index_merge(const struct of *of, struct mparse *mp,
 	uint64_t	 vbuf[2];
 	char		 type;
 
+	static char	 emptystring[] = "";
+
 	if (warnings) {
 		files = NULL;
 		hash_reset(&files);
@@ -738,7 +740,7 @@ index_merge(const struct of *of, struct mparse *mp,
 			val.data = NULL;
 			val.size = 0;
 			if (0 == skip)
-				val.data = "";
+				val.data = emptystring;
 			else {
 				ch = (*files->get)(files, &key, &val, 0);
 				if (ch < 0) {

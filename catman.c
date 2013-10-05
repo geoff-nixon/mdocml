@@ -1,4 +1,4 @@
-/*	$Id: catman.c,v 1.10 2012/01/03 15:17:20 kristaps Exp $ */
+/*	$Id: catman.c,v 1.11 2012/06/08 10:33:48 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -212,9 +212,6 @@ indexhtml(char *src, size_t ssz, char *dst, size_t dsz)
 	const char	*f;
 	char		*d;
 	char		 fname[MAXPATHLEN];
-	pid_t		 pid;
-
-	pid = -1;
 
 	xstrlcpy(fname, dst, MAXPATHLEN);
 	xstrlcat(fname, "/", MAXPATHLEN);

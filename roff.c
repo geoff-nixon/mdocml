@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.180 2013/10/05 22:08:12 schwarze Exp $ */
+/*	$Id: roff.c,v 1.181 2013/10/05 22:15:03 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -712,19 +712,14 @@ roff_parseln(struct roff *r, int ln, char **bufp,
 		assert(ROFF_IGN == e || ROFF_CONT == e);
 		if (ROFF_CONT != e)
 			return(e);
-		if (r->eqn)
-			return(eqn_read(&r->eqn, ln, *bufp, pos, offs));
-		if (r->tbl)
-			return(tbl_read(r->tbl, ln, *bufp, pos));
-		return(roff_parsetext(bufp, szp, pos, offs));
-	} else if ( ! ctl) {
-		if (r->eqn)
-			return(eqn_read(&r->eqn, ln, *bufp, pos, offs));
-		if (r->tbl)
-			return(tbl_read(r->tbl, ln, *bufp, pos));
-		return(roff_parsetext(bufp, szp, pos, offs));
-	} else if (r->eqn)
+	}
+	if (r->eqn)
 		return(eqn_read(&r->eqn, ln, *bufp, ppos, offs));
+	if ( ! ctl) {
+		if (r->tbl)
+			return(tbl_read(r->tbl, ln, *bufp, pos));
+		return(roff_parsetext(bufp, szp, pos, offs));
+	}
 
 	/*
 	 * If a scope is open, go to the child handler for that macro,

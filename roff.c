@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.181 2013/10/05 22:15:03 schwarze Exp $ */
+/*	$Id: roff.c,v 1.182 2013/10/05 22:19:10 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -74,8 +74,8 @@ enum	rofft {
 };
 
 enum	roffrule {
-	ROFFRULE_ALLOW,
-	ROFFRULE_DENY
+	ROFFRULE_DENY,
+	ROFFRULE_ALLOW
 };
 
 /*

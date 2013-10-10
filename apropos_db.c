@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.32.2.1 2013/10/02 21:03:26 schwarze Exp $ */
+/*	$Id: apropos_db.c,v 1.32.2.2 2013/10/05 20:30:05 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -30,14 +30,19 @@
 #include <string.h>
 #include <unistd.h>
 
-#if defined(__linux__)
-# include <endian.h>
-# include <db_185.h>
-#elif defined(__APPLE__)
+#if defined(__APPLE__)
 # include <libkern/OSByteOrder.h>
-# include <db.h>
+#elif defined(__linux__)
+# include <endian.h>
+#elif defined(__sun)
+# include <sys/byteorder.h>
 #else
 # include <sys/endian.h>
+#endif
+
+#if defined(__linux__) || defined(__sun)
+# include <db_185.h>
+#else
 # include <db.h>
 #endif
 

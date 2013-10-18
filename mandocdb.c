@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.71 2013/07/02 13:26:52 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.72 2013/10/18 21:10:07 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -1792,7 +1792,7 @@ dbindex(struct mchars *mc, int form, const struct of *of)
 		return;
 
 	desc = "";
-	if (NULL != of->desc) {
+	if (NULL != of->desc && '\0' != *of->desc) {
 		key = ohash_find(&strings,
 			ohash_qlookup(&strings, of->desc));
 		assert(NULL != key);

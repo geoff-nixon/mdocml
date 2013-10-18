@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.70 2013/07/02 12:58:54 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.71 2013/07/02 13:26:52 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -685,7 +685,7 @@ filescan(const char *file)
 		exitcode = (int)MANDOCLEVEL_BADARG;
 		say(file, NULL);
 		return;
-	} else if (strstr(buf, basedir) != buf) {
+	} else if (OP_TEST != op && strstr(buf, basedir) != buf) {
 		exitcode = (int)MANDOCLEVEL_BADARG;
 		say("", "%s: outside base directory", buf);
 		return;

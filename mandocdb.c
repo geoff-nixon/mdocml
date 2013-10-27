@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.72 2013/10/18 21:10:07 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.73 2013/10/18 23:07:23 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -836,13 +836,13 @@ ofadd(int dform, const char *file, const char *name, const char *dsec,
 	if (NULL == arch)
 		arch = "";
 
-	sform = FORM_NONE;
-	if (NULL != sec && *sec <= '9' && *sec >= '1')
-		sform = FORM_SRC;
-	else if (NULL != sec && *sec == '0') {
+	if ('0' == *sec) {
 		sec = dsec;
 		sform = FORM_CAT;
-	}
+	} else if ('1' <= *sec && '9' >= *sec)
+		sform = FORM_SRC;
+	else
+		sform = FORM_NONE;
 
 	of = mandoc_calloc(1, sizeof(struct of));
 	strlcpy(of->file, file, PATH_MAX);

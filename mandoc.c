@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.68 2013/08/08 20:07:47 schwarze Exp $ */
+/*	$Id: mandoc.c,v 1.69 2013/10/05 20:30:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -93,8 +93,11 @@ mandoc_escape(const char const **end, const char const **start, int *sz)
 	case ('C'):
 		if ('\'' != **start)
 			return(ESCAPE_ERROR);
-		gly = ESCAPE_SPECIAL;
 		*start = ++*end;
+		if ('u' == (*start)[0] && '\'' != (*start)[1])
+			gly = ESCAPE_UNICODE;
+		else
+			gly = ESCAPE_SPECIAL;
 		term = '\'';
 		break;
 

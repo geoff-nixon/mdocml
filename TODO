@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.159 2013/11/10 12:28:02 schwarze Exp $
+* $Id: TODO,v 1.160 2013/12/15 21:30:13 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -202,11 +202,6 @@ None known.
 
 - a column list with blank `Ta' cells triggers a spurrious
   start-with-whitespace printing of a newline
-
-- double quotes inside double quotes are escaped by doubling them
-  implement this in mdoc(7), too
-  so far, we only have it in roff(7) and man(7)
-  reminded by millert@  Thu, 09 Dec 2010 17:29:52 -0500
 
 - In .Bl -column,
   .It Em Authentication<tab>Key Length

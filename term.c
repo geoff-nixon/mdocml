@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.209 2013/08/08 20:07:47 schwarze Exp $ */
+/*	$Id: term.c,v 1.210 2013/08/21 21:20:40 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -83,9 +83,8 @@ term_end(struct termp *p)
  *  - TERMP_NOBREAK: this is the most important and is used when making
  *    columns.  In short: don't print a newline and instead expect the
  *    next call to do the padding up to the start of the next column.
- *
- *  - TERMP_TWOSPACE: make sure there is room for at least two space
- *    characters of padding.  Otherwise, rather break the line.
+ *    p->trailspace may be set to 0, 1, or 2, depending on how many
+ *    space characters are required at the end of the column.
  *
  *  - TERMP_DANGLE: don't newline when TERMP_NOBREAK is specified and
  *    the line is overrun, and don't pad-right if it's underrun.
@@ -269,8 +268,8 @@ term_flushln(struct termp *p)
 	}
 
 	if (TERMP_HANG & p->flags) {
-		/* We need one blank after the tag. */
-		p->overstep = (int)(vis - maxvis + (*p->width)(p, ' '));
+		p->overstep = (int)(vis - maxvis +
+				p->trailspace * (*p->width)(p, ' '));
 
 		/*
 		 * If we have overstepped the margin, temporarily move
@@ -285,8 +284,7 @@ term_flushln(struct termp *p)
 		return;
 
 	/* If the column was overrun, break the line. */
-	if (maxvis <= vis +
-	    ((TERMP_TWOSPACE & p->flags) ? (*p->width)(p, ' ') : 0)) {
+	if (maxvis < vis + p->trailspace * (*p->width)(p, ' ')) {
 		(*p->endline)(p);
 		p->viscol = 0;
 	}

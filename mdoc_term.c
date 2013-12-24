@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.250 2013/12/22 23:34:13 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.251 2013/12/23 02:20:09 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -313,7 +313,7 @@ print_mdoc_node(DECL_ARGS)
 	 */
 
 	if (TERMP_KEEP & p->flags || MDOC_SYNPRETTY & n->flags) {
-		if (n->prev ? (n->prev->line != n->line) :
+		if (n->prev ? (n->prev->lastline != n->line) :
 		    (n->parent && n->parent->line != n->line)) {
 			p->flags &= ~TERMP_KEEP;
 			p->flags |= TERMP_PREKEEP;

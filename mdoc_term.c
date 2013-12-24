@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.251 2013/12/23 02:20:09 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.252 2013/12/24 19:11:46 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -307,28 +307,15 @@ print_mdoc_node(DECL_ARGS)
 	/*
 	 * Keeps only work until the end of a line.  If a keep was
 	 * invoked in a prior line, revert it to PREKEEP.
-	 *
-	 * Also let SYNPRETTY sections behave as if they were wrapped
-	 * in a `Bk' block.
 	 */
 
-	if (TERMP_KEEP & p->flags || MDOC_SYNPRETTY & n->flags) {
+	if (TERMP_KEEP & p->flags) {
 		if (n->prev ? (n->prev->lastline != n->line) :
 		    (n->parent && n->parent->line != n->line)) {
 			p->flags &= ~TERMP_KEEP;
 			p->flags |= TERMP_PREKEEP;
 		}
 	}
-
-	/*
-	 * Since SYNPRETTY sections aren't "turned off" with `Ek',
-	 * we have to intuit whether we should disable formatting.
-	 */
-
-	if ( ! (MDOC_SYNPRETTY & n->flags) &&
-	    ((n->prev   && MDOC_SYNPRETTY & n->prev->flags) ||
-	     (n->parent && MDOC_SYNPRETTY & n->parent->flags)))
-		p->flags &= ~(TERMP_KEEP | TERMP_PREKEEP);
 
 	/*
 	 * After the keep flags have been set up, we may now
@@ -1010,8 +997,10 @@ static int
 termp_nm_pre(DECL_ARGS)
 {
 
-	if (MDOC_BLOCK == n->type)
+	if (MDOC_BLOCK == n->type) {
+		p->flags |= TERMP_PREKEEP;
 		return(1);
+	}
 
 	if (MDOC_BODY == n->type) {
 		if (NULL == n->child)
@@ -1060,7 +1049,9 @@ static void
 termp_nm_post(DECL_ARGS)
 {
 
-	if (MDOC_HEAD == n->type && n->next->child) {
+	if (MDOC_BLOCK == n->type) {
+		p->flags &= ~(TERMP_KEEP | TERMP_PREKEEP);
+	} else if (MDOC_HEAD == n->type && n->next->child) {
 		term_flushln(p);
 		p->flags &= ~(TERMP_NOBREAK | TERMP_HANG);
 		p->trailspace = 0;
@@ -2240,7 +2231,7 @@ static void
 termp_bk_post(DECL_ARGS)
 {
 
-	if (MDOC_BODY == n->type && ! (MDOC_SYNPRETTY & n->flags))
+	if (MDOC_BODY == n->type)
 		p->flags &= ~(TERMP_KEEP | TERMP_PREKEEP);
 }
 

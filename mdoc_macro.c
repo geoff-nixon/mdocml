@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.123 2013/10/21 23:47:58 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.124 2013/12/24 19:11:46 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -713,8 +713,7 @@ blk_exp_close(MACRO_PROT_ARGS)
 		maxargs = 1;
 		break;
 	case (MDOC_Ek):
-		if ( ! (MDOC_SYNOPSIS & mdoc->flags))
-			mdoc->flags &= ~MDOC_KEEP;
+		mdoc->flags &= ~MDOC_KEEP;
 	default:
 		maxargs = 0;
 		break;

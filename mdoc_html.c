@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.183 2012/08/12 10:04:09 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.184 2012/11/17 00:26:33 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -459,15 +459,11 @@ print_mdoc_node(MDOC_ARGS)
 		break;
 	}
 
-	if (HTML_KEEP & h->flags) {
-		if (n->prev && n->prev->line != n->line) {
+	if (HTML_KEEP & h->flags || MDOC_SYNPRETTY & n->flags) {
+		if (n->prev ? (n->prev->lastline != n->line) :
+		    (n->parent && n->parent->line != n->line)) {
 			h->flags &= ~HTML_KEEP;
 			h->flags |= HTML_PREKEEP;
-		} else if (NULL == n->prev) {
-			if (n->parent && n->parent->line != n->line) {
-				h->flags &= ~HTML_KEEP;
-				h->flags |= HTML_PREKEEP;
-			}
 		}
 	}
 

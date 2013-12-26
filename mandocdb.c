@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.75 2013/10/27 16:41:31 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.76 2013/10/27 17:01:18 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -1366,8 +1366,11 @@ parse_man(struct of *of, const struct man_node *n)
 		}
 	}
 
-	for (n = n->child; n; n = n->next)
+	for (n = n->child; n; n = n->next) {
+		if (NULL != of->desc)
+			break;
 		parse_man(of, n);
+	}
 }
 
 static void

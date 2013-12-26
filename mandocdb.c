@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.77 2013/12/26 19:02:04 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.78 2013/12/26 22:12:46 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -88,13 +88,13 @@ struct	str {
 	char		 key[]; /* the string itself */
 };
 
-struct	id {
-	ino_t		 ino;
-	dev_t		 dev;
+struct	inodev {
+	ino_t		 st_ino;
+	dev_t		 st_dev;
 };
 
 struct	mpage {
-	struct id	 id; /* used for hashing routine */
+	struct inodev	 inodev;  /* used for hashing routine */
 	struct mpage	*next; /* next in mpages_list */
 	enum form	 dform; /* path-cued form */
 	enum form	 sform; /* suffix-cued form */
@@ -324,7 +324,7 @@ main(int argc, char *argv[])
 	mpages_info.halloc = filename_info.halloc = hash_halloc;
 	mpages_info.hfree  = filename_info.hfree  = hash_free;
 
-	mpages_info.key_offset = offsetof(struct mpage, id);
+	mpages_info.key_offset = offsetof(struct mpage, inodev);
 	filename_info.key_offset = offsetof(struct mpage, file);
 
 	progname = strrchr(argv[0], '/');
@@ -787,15 +787,15 @@ fileadd(struct mpage *mpage)
 static int
 inocheck(const struct stat *st)
 {
-	struct id	 id;
+	struct inodev	 inodev;
 	uint32_t	 hash;
 
-	memset(&id, 0, sizeof(id));
-	id.ino = hash = st->st_ino;
-	id.dev = st->st_dev;
+	memset(&inodev, 0, sizeof(inodev));
+	inodev.st_ino = hash = st->st_ino;
+	inodev.st_dev = st->st_dev;
 
 	return(NULL != ohash_find(&mpages, ohash_lookup_memory(
-			&mpages, (char *)&id, sizeof(id), hash)));
+			&mpages, (char *)&inodev, sizeof(inodev), hash)));
 }
 
 /*
@@ -809,10 +809,10 @@ inoadd(const struct stat *st, struct mpage *mpage)
 	uint32_t	 hash;
 	unsigned int	 slot;
 
-	mpage->id.ino = hash = st->st_ino;
-	mpage->id.dev = st->st_dev;
-	slot = ohash_lookup_memory
-		(&mpages, (char *)&mpage->id, sizeof(mpage->id), hash);
+	mpage->inodev.st_ino = hash = st->st_ino;
+	mpage->inodev.st_dev = st->st_dev;
+	slot = ohash_lookup_memory(&mpages,
+	    (char *)&mpage->inodev, sizeof(mpage->inodev), hash);
 
 	assert(NULL == ohash_find(&mpages, slot));
 	ohash_insert(&mpages, slot, mpage);

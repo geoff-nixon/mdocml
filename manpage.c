@@ -1,4 +1,4 @@
-/*	$Id: manpage.c,v 1.3 2012/06/09 17:49:13 kristaps Exp $ */
+/*	$Id: manpage.c,v 1.4 2013/06/05 02:00:26 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -106,11 +106,14 @@ main(int argc, char *argv[])
 
 	for (i = 0; i < sz; i++) {
 		printf("%6zu  %s: %s\n", 
-			i + 1, res[i].file, res[i].desc);
+			i + 1, res[i].names, res[i].desc);
+		free(res[i].names);
 		free(res[i].desc);
 	}
 
 	if (0 == term) {
+		for (i = 0; i < sz; i++)
+			free(res[i].file);
 		free(res);
 		return(EXIT_SUCCESS);
 	}
@@ -127,12 +130,16 @@ main(int argc, char *argv[])
 		}
 
 	if (0 == i) {
+		for (i = 0; i < sz; i++)
+			free(res[i].file);
 		free(res);
 		return(EXIT_SUCCESS);
 	}
 show:
 	cmd = res[i - 1].form ? "mandoc" : "cat";
 	strlcpy(buf, res[i - 1].file, PATH_MAX);
+	for (i = 0; i < sz; i++)
+		free(res[i].file);
 	free(res);
 
 	show(cmd, buf);

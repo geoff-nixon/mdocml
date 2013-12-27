@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.33 2012/06/09 17:49:13 kristaps Exp $ */
+/*	$Id: apropos.c,v 1.34 2013/07/05 09:33:02 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -96,7 +96,9 @@ main(int argc, char *argv[])
 		goto usage;
 
 	for (i = 0; i < sz; i++) {
-		printf("%s - %s\n", res[i].file, res[i].desc);
+		printf("%s - %s\n", res[i].names, res[i].desc);
+		free(res[i].file);
+		free(res[i].names);
 		free(res[i].desc);
 	}
 

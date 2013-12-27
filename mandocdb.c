@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.83 2013/12/27 14:29:28 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.84 2013/12/27 15:39:03 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -111,6 +111,7 @@ struct	mlink {
 	char		*arch;    /* architecture from directory */
 	char		*name;    /* name from file name (not empty) */
 	char		*fsec;    /* section from file name suffix */
+	struct mlink	*next;    /* singly linked list */
 };
 
 struct	title {
@@ -826,7 +827,7 @@ mlink_add(struct mlink *mlink, const struct stat *st)
 		mpage->inodev.st_dev = inodev.st_dev;
 		ohash_insert(&mpages, slot, mpage);
 	} else
-		abort();
+		mlink->next = mpage->mlinks;
 	mpage->mlinks = mlink;
 }
 
@@ -851,7 +852,7 @@ mpages_free(void)
 	mpage = ohash_first(&mpages, &slot);
 	while (NULL != mpage) {
 		while (NULL != (mlink = mpage->mlinks)) {
-			mpage->mlinks = NULL;
+			mpage->mlinks = mlink->next;
 			mlink_free(mlink);
 		}
 		free(mpage->sec);

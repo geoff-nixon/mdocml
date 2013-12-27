@@ -1,4 +1,4 @@
-/*	$Id: mansearch.c,v 1.7 2013/10/19 20:43:13 schwarze Exp $ */
+/*	$Id: mansearch.c,v 1.8 2013/10/20 00:03:05 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -363,9 +363,9 @@ sql_statement(const struct expr *e, const char *arch, const char *sec)
 	size_t		 sz;
 
 	sql = mandoc_strdup
-		("SELECT docid,bits,key,file,desc,form,sec,arch "
+		("SELECT pageid,bits,key,file,desc,form,sec,arch "
 		 "FROM keys "
-		 "INNER JOIN docs ON docs.id=keys.docid "
+		 "INNER JOIN mpages ON mpages.id=keys.pageid "
 		 "WHERE ");
 	sz = strlen(sql);
 	substrsz = strlen(substr);

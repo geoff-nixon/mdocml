@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.78 2013/12/22 13:25:17 schwarze Exp $ */
+/*	$Id: man_macro.c,v 1.79 2013/12/25 00:50:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -438,7 +438,7 @@ in_line_eoln(MACRO_PROT_ARGS)
 	 */
 
 	if (n != man->last &&
-	    mandoc_eos(man->last->string, strlen(man->last->string), 0))
+	    mandoc_eos(man->last->string, strlen(man->last->string)))
 		man->last->flags |= MAN_EOS;
 
 	/*

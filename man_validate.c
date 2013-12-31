@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.85 2012/11/17 00:26:33 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.86 2013/10/17 20:54:58 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -395,7 +395,6 @@ static int
 post_TH(CHKARGS)
 {
 	const char	*p;
-	int		 line, pos;
 
 	free(man->meta.title);
 	free(man->meta.vol);
@@ -403,8 +402,6 @@ post_TH(CHKARGS)
 	free(man->meta.msec);
 	free(man->meta.date);
 
-	line = n->line;
-	pos = n->pos;
 	man->meta.title = man->meta.vol = man->meta.date =
 		man->meta.msec = man->meta.source = NULL;
 
@@ -438,9 +435,8 @@ post_TH(CHKARGS)
 	if (n)
 		n = n->next;
 	if (n && n->string && '\0' != n->string[0]) {
-		pos = n->pos;
 		man->meta.date = mandoc_normdate
-		    (man->parse, n->string, line, pos);
+		    (man->parse, n->string, n->line, n->pos);
 	} else
 		man->meta.date = mandoc_strdup("");
 

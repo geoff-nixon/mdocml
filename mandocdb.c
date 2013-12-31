@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.89 2013/12/27 20:35:51 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.90 2013/12/27 23:41:55 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -1734,7 +1734,6 @@ utf8key(struct mchars *mc, struct str *key)
 		/* Read past the slash. */
 
 		val++;
-		u = 0;
 
 		/*
 		 * Parse the escape sequence and see if it's a

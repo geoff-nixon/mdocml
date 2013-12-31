@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.125 2013/12/24 20:45:27 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.126 2013/12/31 22:40:12 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -683,7 +683,7 @@ append_delims(struct mdoc *mdoc, int line, int *pos, char *buf)
 		 * knowing which symbols break this behaviour, for
 		 * example, `.  ;' shouldn't propagate the double-space.
 		 */
-		if (mandoc_eos(p, strlen(p), 0))
+		if (mandoc_eos(p, strlen(p)))
 			mdoc->last->flags |= MDOC_EOS;
 	}
 

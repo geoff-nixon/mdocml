@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.34 2013/10/05 22:15:03 schwarze Exp $ */
+/*	$Id: libmandoc.h,v 1.35 2013/12/15 21:23:52 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -42,7 +42,7 @@ void		 mandoc_vmsg(enum mandocerr, struct mparse *,
 			int, int, const char *, ...);
 char		*mandoc_getarg(struct mparse *, char **, int, int *);
 char		*mandoc_normdate(struct mparse *, char *, int, int);
-int		 mandoc_eos(const char *, size_t, int);
+int		 mandoc_eos(const char *, size_t);
 int		 mandoc_strntoi(const char *, size_t, int);
 const char	*mandoc_a2msec(const char*);
 

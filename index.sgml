@@ -56,11 +56,12 @@
 			<A NAME="sources">Sources</A>
 		</H2>
 		<P>
-			<SPAN CLASS="nm">mdocml</SPAN> is in ISO C99 and should build and run on any modern system; however, you'll need <A
-			HREF="http://www.sqlite.org">sqlite3</A> to build <A HREF="apropos.1.html">apropos</A> (links to whatis), 
-			<A HREF="man.cgi.7.html">man.cgi</A>, and <A HREF="mandocdb.8.html">mandocdb</A>.  
-			To build and install into <I>/usr/local/</I>, just run <CODE>make install</CODE>.  
-			Be careful: the <B>preconv</B>, <B>apropos</B>, and <B>whatis</B> binary names are usually taken by existing utilities.
+			<SPAN CLASS="nm">mdocml</SPAN> should build and run on any modern system with
+			<A HREF="http://www.oracle.com/technetwork/database/berkeleydb/overview/index.html">libdb</A>
+			(this is installed by default on BSD UNIX systems &mdash; see the <I>Makefile</I> if you're running Linux).
+			To build and install into <I>/usr/local/</I>, just run <CODE>make install</CODE>.
+			Be careful: the <B>preconv</B>, <B>apropos</B>, and <B>whatis</B> installed binary names
+			may be taken by existing utilities.
 		</P>
 		<H2>
 			Downstream
@@ -164,6 +165,12 @@
 					</TD>
 				</TR>
 				<TR>
+					<TD VALIGN="top"><A HREF="whatis.1.html">whatis(1)</A></TD>
+					<TD VALIGN="top">
+						search the manual page database
+					</TD>
+				</TR>
+				<TR>
 					<TD VALIGN="top"><A HREF="mandoc.3.html">mandoc(3)</A></TD>
 					<TD VALIGN="top">
 						mandoc macro compiler library
@@ -215,6 +222,12 @@
 					<TD VALIGN="top"><A HREF="tbl.7.html">tbl(7)</A></TD>
 					<TD VALIGN="top">
 						tbl-mandoc language reference
+					</TD>
+				</TR>
+				<TR>
+					<TD VALIGN="top"><A HREF="catman.8.html">catman(8)</A></TD>
+					<TD VALIGN="top">
+						update a man.cgi manpage cache
 					</TD>
 				</TR>
 				<TR>
@@ -290,14 +303,6 @@
 		<H1>
 			<A NAME="news">News</A>
 		</H1>
-		<P CLASS="news">
-			xx-xx-2014: version 1.13.0
-		</P>
-		<P>
-			 The <A HREF="mandocdb.8.html">mandocdb</A> tools (<A HREF="mandocdb.8.html">mandocdb</A>, <A
-			HREF="apropos.1.html">apropos</A> (absorbing whatis), and <A HREF="man.cgi.7.html">man.cgi</A>) have been re-written to
-			use <A CLASS="external" HREF="http://www.sqlite.org">sqlite3</A> as a database.
-		</P>
 		<P CLASS="news">
 			31-12-2013: version 1.12.3
 		</P>
@@ -426,7 +431,7 @@
 				Copyright &#169; 2008&#8211;2011 
 				<A CLASS="external" HREF="http://kristaps.bsd.lv">Kristaps Dzonsons</A>, 
 				&#169; 2013 Ingo Schwarze,
-				$Date: 2013/12/26 14:39:35 $
+				$Date: 2013/12/31 $
 			</SMALL>
 		</P>
 	</BODY>

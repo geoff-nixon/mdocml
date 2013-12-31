@@ -20,8 +20,9 @@ VDATE		 = 31 December 2013
 CFLAGS	 	+= -DUSE_WCHAR
 
 # If your system has manpath(1), uncomment this.  This is most any
-# system that's not OpenBSD or NetBSD.  If uncommented, manpage(1) and
-# mandocdb(8) will use manpath(1) to get the MANPATH variable.
+# system that's not OpenBSD or NetBSD.  If uncommented, apropos(1),
+# mandocdb(8), and man.cgi will popen(3) manpath(1) to get the MANPATH
+# variable.
 #CFLAGS		+= -DUSE_MANPATH
 
 # If your system does not support static binaries, comment this,
@@ -30,7 +31,7 @@ STATIC		 = -static
 # Linux requires -pthread to statically link with libdb.
 #STATIC		+= -pthread
 
-CFLAGS		+= -I/usr/local/include -g -DHAVE_CONFIG_H
+CFLAGS		+= -g -DHAVE_CONFIG_H
 CFLAGS     	+= -W -Wall -Wstrict-prototypes -Wno-unused-parameter -Wwrite-strings
 PREFIX		 = /usr/local
 WWWPREFIX	 = /var/www
@@ -48,8 +49,14 @@ INSTALL_LIB	 = $(INSTALL) -m 0644
 INSTALL_SOURCE	 = $(INSTALL) -m 0644
 INSTALL_MAN	 = $(INSTALL_DATA)
 
-DBLIB		 = -L/usr/local/lib -lsqlite3
-DBBIN		 = mandocdb manpage apropos
+# Non-BSD systems (Linux, etc.) need -ldb to compile mandocdb and
+# apropos.
+# However, if you don't have -ldb at all (or it's not native), then
+# comment out apropos and mandocdb. 
+#
+#DBLIB		 = -ldb
+DBBIN		 = apropos mandocdb man.cgi catman whatis
+DBLN		 = llib-lapropos.ln llib-lmandocdb.ln llib-lman.cgi.ln llib-lcatman.ln
 
 all: mandoc preconv demandoc $(DBBIN)
 
@@ -58,10 +65,14 @@ SRCS		 = Makefile \
 		   TODO \
 		   apropos.1 \
 		   apropos.c \
+		   apropos_db.c \
+		   apropos_db.h \
 		   arch.c \
 		   arch.in \
 		   att.c \
 		   att.in \
+		   catman.8 \
+		   catman.c \
 		   cgi.c \
 		   chars.c \
 		   chars.in \
@@ -94,6 +105,7 @@ SRCS		 = Makefile \
 		   main.h \
 		   man.7 \
 		   man.c \
+		   man.cgi.7 \
 		   man-cgi.css \
 		   man.h \
 		   man_hash.c \
@@ -108,6 +120,7 @@ SRCS		 = Makefile \
 		   mandoc_char.7 \
 		   mandocdb.8 \
 		   mandocdb.c \
+		   mandocdb.h \
 		   manpath.c \
 		   manpath.h \
 		   mdoc.7 \
@@ -145,16 +158,17 @@ SRCS		 = Makefile \
 		   term.h \
 		   term_ascii.c \
 		   term_ps.c \
+		   test-betoh64.c \
 		   test-fgetln.c \
 		   test-getsubopt.c \
 		   test-mmap.c \
-		   test-ohash.c \
 		   test-strlcat.c \
 		   test-strlcpy.c \
 		   test-strptime.c \
 		   tree.c \
 		   vol.c \
-		   vol.in
+		   vol.in \
+		   whatis.1
 
 LIBMAN_OBJS	 = man.o \
 		   man_hash.o \
@@ -189,7 +203,6 @@ LIBMANDOC_OBJS	 = $(LIBMAN_OBJS) \
 
 COMPAT_OBJS	 = compat_fgetln.o \
 		   compat_getsubopt.o \
-		   compat_ohash.o \
 		   compat_strlcat.o \
 		   compat_strlcpy.o
 
@@ -206,7 +219,7 @@ $(LIBMAN_OBJS): libman.h
 $(LIBMDOC_OBJS): libmdoc.h
 $(LIBROFF_OBJS): libroff.h
 $(LIBMANDOC_OBJS): mandoc.h mdoc.h man.h libmandoc.h config.h
-$(COMPAT_OBJS): config.h compat_ohash.h
+$(COMPAT_OBJS): config.h
 
 MANDOC_HTML_OBJS = eqn_html.o \
 		   html.o \
@@ -235,30 +248,43 @@ MANDOC_OBJS	 = $(MANDOC_HTML_OBJS) \
 $(MANDOC_OBJS): main.h mandoc.h mdoc.h man.h config.h out.h
 
 MANDOCDB_OBJS	 = mandocdb.o manpath.o
-$(MANDOCDB_OBJS): mansearch.h mandoc.h mdoc.h man.h config.h manpath.h
+$(MANDOCDB_OBJS): mandocdb.h mandoc.h mdoc.h man.h config.h manpath.h
 
 PRECONV_OBJS	 = preconv.o
 $(PRECONV_OBJS): config.h
 
-APROPOS_OBJS	 = apropos.o mansearch.o manpath.o
-$(APROPOS_OBJS): config.h manpath.h mansearch.h
+APROPOS_OBJS	 = apropos.o apropos_db.o manpath.o
+$(APROPOS_OBJS): config.h mandoc.h apropos_db.h manpath.h mandocdb.h
 
-MANPAGE_OBJS	 = manpage.o mansearch.o manpath.o
-$(MANPAGE_OBJS): config.h manpath.h mansearch.h
+CGI_OBJS	 = $(MANDOC_HTML_OBJS) \
+		   $(MANDOC_MAN_OBJS) \
+		   $(MANDOC_TERM_OBJS) \
+		   cgi.o \
+		   apropos_db.o \
+		   manpath.o \
+		   out.o \
+		   tree.o
+$(CGI_OBJS): main.h mdoc.h man.h out.h config.h mandoc.h apropos_db.h manpath.h mandocdb.h
+
+CATMAN_OBJS	 = catman.o manpath.o
+$(CATMAN_OBJS): config.h mandoc.h manpath.h mandocdb.h
 
 DEMANDOC_OBJS	 = demandoc.o
 $(DEMANDOC_OBJS): config.h
 
 INDEX_MANS	 = apropos.1.html \
+		   catman.8.html \
 		   demandoc.1.html \
 		   mandoc.1.html \
-		   preconv.1.html \
+		   whatis.1.html \
 		   mandoc.3.html \
 		   tbl.3.html \
 		   eqn.7.html \
 		   man.7.html \
+		   man.cgi.7.html \
 		   mandoc_char.7.html \
 		   mdoc.7.html \
+		   preconv.1.html \
 		   roff.7.html \
 		   tbl.7.html \
 		   mandocdb.8.html
@@ -276,10 +302,11 @@ www: index.html
 
 clean:
 	rm -f libmandoc.a $(LIBMANDOC_OBJS)
-	rm -f apropos $(APROPOS_OBJS)
 	rm -f mandocdb $(MANDOCDB_OBJS)
 	rm -f preconv $(PRECONV_OBJS)
-	rm -f manpage $(MANPAGE_OBJS)
+	rm -f apropos whatis $(APROPOS_OBJS)
+	rm -f man.cgi $(CGI_OBJS)
+	rm -f catman $(CATMAN_OBJS)
 	rm -f demandoc $(DEMANDOC_OBJS)
 	rm -f mandoc $(MANDOC_OBJS)
 	rm -f config.h config.log $(COMPAT_OBJS)
@@ -306,7 +333,7 @@ install: all
 installcgi: all
 	mkdir -p $(DESTDIR)$(CGIBINDIR)
 	mkdir -p $(DESTDIR)$(HTDOCDIR)
-	#$(INSTALL_PROGRAM) man.cgi $(DESTDIR)$(CGIBINDIR)
+	$(INSTALL_PROGRAM) man.cgi $(DESTDIR)$(CGIBINDIR)
 	$(INSTALL_DATA) example.style.css $(DESTDIR)$(HTDOCDIR)/man.css
 	$(INSTALL_DATA) man-cgi.css $(DESTDIR)$(HTDOCDIR)
 
@@ -333,11 +360,17 @@ mandocdb: $(MANDOCDB_OBJS) libmandoc.a
 preconv: $(PRECONV_OBJS)
 	$(CC) $(LDFLAGS) -o $@ $(PRECONV_OBJS)
 
-manpage: $(MANPAGE_OBJS) libmandoc.a
-	$(CC) $(LDFLAGS) -o $@ $(MANPAGE_OBJS) libmandoc.a $(DBLIB)
+whatis: apropos
+	cp -f apropos whatis
 
 apropos: $(APROPOS_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) -o $@ $(APROPOS_OBJS) libmandoc.a $(DBLIB)
+
+catman: $(CATMAN_OBJS) libmandoc.a
+	$(CC) $(LDFLAGS) -o $@ $(CATMAN_OBJS) libmandoc.a $(DBLIB)
+
+man.cgi: $(CGI_OBJS) libmandoc.a
+	$(CC) $(LDFLAGS) $(STATIC) -o $@ $(CGI_OBJS) libmandoc.a $(DBLIB)
 
 demandoc: $(DEMANDOC_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) -o $@ $(DEMANDOC_OBJS) libmandoc.a
@@ -358,10 +391,6 @@ config.h: config.h.pre config.h.post
 	( cat config.h.pre; \
 	  echo; \
 	  echo '#define VERSION "$(VERSION)"'; \
-	  if $(CC) $(CFLAGS) -Werror -Wno-unused -o test-ohash test-ohash.c >> config.log 2>&1; then \
-		echo '#define HAVE_OHASH'; \
-		rm test-ohash; \
-	  fi; \
 	  if $(CC) $(CFLAGS) -Werror -Wno-unused -o test-fgetln test-fgetln.c >> config.log 2>&1; then \
 		echo '#define HAVE_FGETLN'; \
 		rm test-fgetln; \
@@ -385,6 +414,10 @@ config.h: config.h.pre config.h.post
 	  if $(CC) $(CFLAGS) -Werror -Wno-unused -o test-strlcpy test-strlcpy.c >> config.log 2>&1; then \
 		echo '#define HAVE_STRLCPY'; \
 		rm test-strlcpy; \
+	  fi; \
+	  if $(CC) $(CFLAGS) -Werror -Wno-unused -o test-betoh64 test-betoh64.c >> config.log 2>&1; then \
+		echo '#define HAVE_BETOH64'; \
+		rm test-betoh64; \
 	  fi; \
 	  echo; \
 	  cat config.h.post \

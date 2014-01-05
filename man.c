@@ -1,6 +1,7 @@
-/*	$Id: man.c,v 1.121 2013/11/10 22:54:40 schwarze Exp $ */
+/*	$Id: man.c,v 1.122 2013/12/31 23:23:10 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -97,7 +98,7 @@ man_free(struct man *man)
 
 
 struct man *
-man_alloc(struct roff *roff, struct mparse *parse)
+man_alloc(struct roff *roff, struct mparse *parse, int quick)
 {
 	struct man	*p;
 
@@ -105,6 +106,7 @@ man_alloc(struct roff *roff, struct mparse *parse)
 
 	man_hash_init();
 	p->parse = parse;
+	p->quick = quick;
 	p->roff = roff;
 
 	man_alloc1(p);
@@ -603,6 +605,12 @@ man_pmacro(struct man *man, int ln, char *buf, int offs)
 	assert(man_macros[tok].fp);
 	if ( ! (*man_macros[tok].fp)(man, tok, ln, ppos, &offs, buf))
 		goto err;
+
+	/* In quick mode (for mandocdb), abort after the NAME section. */
+
+	if (man->quick && MAN_SH == tok &&
+	    strcmp(man->last->prev->child->string, "NAME"))
+		return(2);
 
 	/* 
 	 * We weren't in a block-line scope when entering the

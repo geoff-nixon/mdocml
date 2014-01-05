@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.35 2013/12/15 21:23:52 schwarze Exp $ */
+/*	$Id: libmandoc.h,v 1.36 2013/12/31 23:23:10 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -38,6 +38,9 @@ struct	man;
 
 void		 mandoc_msg(enum mandocerr, struct mparse *, 
 			int, int, const char *);
+#if __GNUC__ - 0 >= 4
+__attribute__((__format__ (__printf__, 5, 6)))
+#endif
 void		 mandoc_vmsg(enum mandocerr, struct mparse *, 
 			int, int, const char *, ...);
 char		*mandoc_getarg(struct mparse *, char **, int, int *);

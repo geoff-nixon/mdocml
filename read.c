@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.39 2013/09/16 00:25:07 schwarze Exp $ */
+/*	$Id: read.c,v 1.40 2014/01/02 16:29:55 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -60,10 +60,10 @@ struct	mparse {
 	struct roff	 *roff; /* roff parser (!NULL) */
 	int		  reparse_count; /* finite interp. stack */
 	mandocmsg	  mmsg; /* warning/error message handler */
-	void		 *arg; /* argument to mmsg */
 	const char	 *file; 
 	struct buf	 *secondary;
 	char		 *defos; /* default operating system */
+	int		  quick; /* abort the parse early */
 };
 
 static	void	  resize_buf(struct buf *, size_t);
@@ -258,13 +258,14 @@ pset(const char *buf, int pos, struct mparse *curp)
 	case (MPARSE_MDOC):
 		if (NULL == curp->pmdoc) 
 			curp->pmdoc = mdoc_alloc(curp->roff, curp,
-					curp->defos);
+					curp->defos, curp->quick);
 		assert(curp->pmdoc);
 		curp->mdoc = curp->pmdoc;
 		return;
 	case (MPARSE_MAN):
 		if (NULL == curp->pman) 
-			curp->pman = man_alloc(curp->roff, curp);
+			curp->pman = man_alloc(curp->roff, curp,
+					curp->quick);
 		assert(curp->pman);
 		curp->man = curp->pman;
 		return;
@@ -275,14 +276,14 @@ pset(const char *buf, int pos, struct mparse *curp)
 	if (pos >= 3 && 0 == memcmp(buf, ".Dd", 3))  {
 		if (NULL == curp->pmdoc) 
 			curp->pmdoc = mdoc_alloc(curp->roff, curp,
-					curp->defos);
+					curp->defos, curp->quick);
 		assert(curp->pmdoc);
 		curp->mdoc = curp->pmdoc;
 		return;
 	} 
 
 	if (NULL == curp->pman) 
-		curp->pman = man_alloc(curp->roff, curp);
+		curp->pman = man_alloc(curp->roff, curp, curp->quick);
 	assert(curp->pman);
 	curp->man = curp->pman;
 }
@@ -560,7 +561,8 @@ rerun:
 		if (0 == rc) {
 			assert(MANDOCLEVEL_FATAL <= curp->file_status);
 			break;
-		}
+		} else if (2 == rc)
+			break;
 
 		/* Temporary buffers typically are not full. */
 
@@ -763,7 +765,7 @@ out:
 
 struct mparse *
 mparse_alloc(enum mparset inttype, enum mandoclevel wlevel,
-		mandocmsg mmsg, void *arg, char *defos)
+		mandocmsg mmsg, char *defos, int quick)
 {
 	struct mparse	*curp;
 
@@ -773,9 +775,9 @@ mparse_alloc(enum mparset inttype, enum mandoclevel wlevel,
 
 	curp->wlevel = wlevel;
 	curp->mmsg = mmsg;
-	curp->arg = arg;
 	curp->inttype = inttype;
 	curp->defos = defos;
+	curp->quick = quick;
 
 	curp->roff = roff_alloc(inttype, curp);
 	return(curp);

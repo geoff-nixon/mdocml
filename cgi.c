@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.45 2013/06/05 02:00:26 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.46 2013/10/11 00:06:48 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -739,7 +739,7 @@ format(const struct req *req, const char *file)
 		return;
 	}
 
-	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL, NULL);
+	mp = mparse_alloc(MPARSE_AUTO, MANDOCLEVEL_FATAL, NULL, NULL, 0);
 	rc = mparse_readfd(mp, fd, file);
 	close(fd);
 

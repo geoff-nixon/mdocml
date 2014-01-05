@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.48 2012/05/31 22:29:13 schwarze Exp $ */
+/*	$Id: html.h,v 1.49 2013/08/08 20:07:47 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -147,6 +147,9 @@ void		  print_tblclose(struct html *);
 void		  print_tbl(struct html *, const struct tbl_span *);
 void		  print_eqn(struct html *, const struct eqn *);
 
+#if __GNUC__ - 0 >= 4
+__attribute__((__format__ (__printf__, 2, 3)))
+#endif
 void		  bufcat_fmt(struct html *, const char *, ...);
 void		  bufcat(struct html *, const char *);
 void		  bufcat_id(struct html *, const char *);

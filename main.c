@@ -1,7 +1,8 @@
-/*	$Id: main.c,v 1.167 2012/11/19 17:22:26 schwarze Exp $ */
+/*	$Id: main.c,v 1.168 2014/01/05 20:26:36 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2010 Joerg Sonnenberger <joerg@netbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

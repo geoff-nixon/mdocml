@@ -1,7 +1,8 @@
-/*	$Id: man.c,v 1.122 2013/12/31 23:23:10 schwarze Exp $ */
+/*	$Id: man.c,v 1.123 2014/01/05 20:26:36 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2011 Joerg Sonnenberger <joerg@netbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

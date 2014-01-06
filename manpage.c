@@ -1,4 +1,4 @@
-/*	$Id: manpage.c,v 1.5 2013/12/27 18:51:25 schwarze Exp $ */
+/*	$Id: manpage.c,v 1.6 2013/12/31 03:41:14 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -90,7 +90,7 @@ main(int argc, char *argv[])
 	search.deftype = TYPE_Nm | TYPE_Nd;
 
 	manpath_parse(&paths, conf_file, defpaths, auxpaths);
-	ch = mansearch(&search, &paths, argc, argv, NULL, &res, &sz);
+	ch = mansearch(&search, &paths, argc, argv, "Nd", &res, &sz);
 	manpath_free(&paths);
 
 	if (0 == ch)
@@ -107,9 +107,8 @@ main(int argc, char *argv[])
 
 	for (i = 0; i < sz; i++) {
 		printf("%6zu  %s: %s\n", 
-			i + 1, res[i].names, res[i].desc);
+			i + 1, res[i].names, res[i].output);
 		free(res[i].names);
-		free(res[i].desc);
 		free(res[i].output);
 	}
 

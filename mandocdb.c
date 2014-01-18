@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.108 2014/01/18 08:19:18 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.109 2014/01/18 08:21:03 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1301,6 +1301,15 @@ parse_man(struct mpage *mpage, const struct man_node *n)
 
 				byte = start[sz];
 				start[sz] = '\0';
+
+				/*
+				 * Assume a stray trailing comma in the
+				 * name list if a name begins with a dash.
+				 */
+
+				if ('-' == start[0] ||
+				    ('\\' == start[0] && '-' == start[1]))
+					break;
 
 				putkey(mpage, start, TYPE_Nm);
 

@@ -1,7 +1,7 @@
-/*	$Id: html.c,v 1.152 2013/08/08 20:07:47 schwarze Exp $ */
+/*	$Id: html.c,v 1.153 2014/01/05 19:10:56 joerg Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
- * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -331,7 +331,8 @@ print_encode(struct html *h, const char *p, int norecurse)
 	int		 c, len, nospace;
 	const char	*seq;
 	enum mandoc_esc	 esc;
-	static const char rejs[6] = { '\\', '<', '>', '&', ASCII_HYPH, '\0' };
+	static const char rejs[8] = { '\\', '<', '>', '&',
+		ASCII_NBRSP, ASCII_HYPH, ASCII_BREAK, '\0' };
 
 	nospace = 0;
 
@@ -360,8 +361,13 @@ print_encode(struct html *h, const char *p, int norecurse)
 		case ('&'):
 			printf("&amp;");
 			continue;
+		case (ASCII_NBRSP):
+			putchar('-');
+			continue;
 		case (ASCII_HYPH):
 			putchar('-');
+			/* FALLTHROUGH */
+		case (ASCII_BREAK):
 			continue;
 		default:
 			break;

@@ -1,7 +1,7 @@
-/*	$Id: man_html.c,v 1.89 2012/11/17 00:26:33 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.90 2013/10/17 20:54:58 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
- * Copyright (c) 2013 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -553,10 +553,15 @@ man_IP_pre(MAN_ARGS)
 
 	/* For TP, only print next-line header elements. */
 
-	if (MAN_TP == n->tok)
-		for (nn = n->child; nn; nn = nn->next)
-			if (nn->line > n->line)
-				print_man_node(man, nn, mh, h);
+	if (MAN_TP == n->tok) {
+		nn = n->child;
+		while (NULL != nn && 0 == (MAN_LINE & nn->flags))
+			nn = nn->next;
+		while (NULL != nn) {
+			print_man_node(man, nn, mh, h);
+			nn = nn->next;
+		}
+	}
 
 	return(0);
 }

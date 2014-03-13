@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.215 2013/12/31 18:07:42 schwarze Exp $ */
+/*	$Id: term.c,v 1.216 2014/01/22 20:58:39 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -183,6 +183,13 @@ term_flushln(struct termp *p)
 			     ASCII_BREAK == p->buf[j]))
 				jhy = j;
 
+			/*
+			 * Hyphenation now decided, put back a real
+			 * hyphen such that we get the correct width.
+			 */
+			if (ASCII_HYPH == p->buf[j])
+				p->buf[j] = '-';
+
 			vend += (*p->width)(p, p->buf[j]);
 		}
 
@@ -246,12 +253,6 @@ term_flushln(struct termp *p)
 				(*p->advance)(p, vbl);
 				p->viscol += vbl;
 				vbl = 0;
-			}
-
-			if (ASCII_HYPH == p->buf[i]) {
-				(*p->letter)(p, '-');
-				p->viscol += (*p->width)(p, '-');
-				continue;
 			}
 
 			(*p->letter)(p, p->buf[i]);

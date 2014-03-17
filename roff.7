@@ -1,4 +1,4 @@
-.\"	$Id: roff.7,v 1.47 2014/02/14 23:50:57 schwarze Exp $
+.\"	$Id: roff.7,v 1.48 2014/03/08 04:43:54 schwarze Exp $
 .\"
 .\" Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010, 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: February 14 2014 $
+.Dd $Mdocdate: March 8 2014 $
 .Dt ROFF 7
 .Os
 .Sh NAME
@@ -659,6 +659,34 @@ This line-scoped request is intended to have one argument specifying
 the font family to be selected.
 It is a groff extension, and currently, it is ignored including its
 arguments, and the number of arguments is not checked.
+.Ss \&ft
+Change the font.
+Its syntax is as follows:
+.Pp
+.D1 Pf . Cm \&ft Op Ar font
+.Pp
+The following
+.Ar font
+arguments are supported:
+.Bl -tag -width 4n -offset indent
+.It Cm B , BI , 3 , 4
+switches to
+.Sy bold
+font
+.It Cm I , 2
+switches to
+.Em underlined
+font
+.It Cm R , CW , 1
+switches to normal font
+.It Cm P No "or no argument"
+switches back to the previous font
+.El
+.Pp
+This request takes effect only locally, may be overridden by macros
+and escape sequences, and is only supported in
+.Xr man 7
+for now.
 .Ss \&hw
 Specify hyphenation points in words.
 This line-scoped request is currently ignored.

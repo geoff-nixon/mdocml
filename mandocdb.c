@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.49.2.11 2014/01/05 21:30:57 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.49.2.12 2014/03/19 22:09:29 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -651,7 +651,7 @@ index_merge(const struct of *of, struct mparse *mp,
 		if ((MANDOC_SRC & of->src_form ||
 		    ! (MANDOC_FORM & of->src_form)) &&
 		    MANDOCLEVEL_FATAL > mparse_readfd(mp, -1, fn))
-			mparse_result(mp, &mdoc, &man);
+			mparse_result(mp, &mdoc, &man, NULL);
 
 		if (NULL != mdoc) {
 			msec = mdoc_meta(mdoc)->msec;

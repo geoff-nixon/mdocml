@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.169 2014/01/06 00:53:33 schwarze Exp $ */
+/*	$Id: main.c,v 1.170 2014/03/19 21:51:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -294,7 +294,7 @@ parse(struct curparse *curp, int fd,
 		}
 	}
 
-	mparse_result(curp->mp, &mdoc, &man);
+	mparse_result(curp->mp, &mdoc, &man, NULL);
 
 	/* Execute the out device, if it exists. */
 

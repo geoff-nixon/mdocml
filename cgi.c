@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.47 2014/01/05 20:41:04 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.48 2014/03/19 22:05:10 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -753,7 +753,7 @@ format(const struct req *req, const char *file)
 			/*"includes=/cgi-bin/man.cgi/usr/include/%%I"*/,
 			progname);
 
-	mparse_result(mp, &mdoc, &man);
+	mparse_result(mp, &mdoc, &man, NULL);
 	if (NULL == man && NULL == mdoc) {
 		resp_baddb();
 		mparse_free(mp);

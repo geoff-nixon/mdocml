@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.8 2014/01/05 20:41:04 schwarze Exp $ */
+/*	$Id: demandoc.c,v 1.9 2014/03/19 22:05:10 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -110,7 +110,7 @@ pmandoc(struct mparse *mp, int fd, const char *fn, int list)
 		return;
 	}
 
-	mparse_result(mp, &mdoc, &man);
+	mparse_result(mp, &mdoc, &man, NULL);
 	line = 1;
 	col = 0;
 

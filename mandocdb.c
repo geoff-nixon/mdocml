@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.115 2014/03/18 16:56:10 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.116 2014/03/19 21:51:20 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -999,7 +999,7 @@ mpages_merge(struct mchars *mc, struct mparse *mp)
 		    FORM_CAT != mpage->mlinks->fform) {
 			lvl = mparse_readfd(mp, -1, mpage->mlinks->file);
 			if (lvl < MANDOCLEVEL_FATAL)
-				mparse_result(mp, &mdoc, &man);
+				mparse_result(mp, &mdoc, &man, NULL);
 		}
 
 		if (NULL != mdoc) {

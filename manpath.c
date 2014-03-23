@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.11 2013/06/05 02:00:26 schwarze Exp $ */
+/*	$Id: manpath.c,v 1.12 2013/11/21 01:49:18 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -26,7 +26,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "mandoc.h"
+#include "mandoc_aux.h"
 #include "manpath.h"
 
 #define MAN_CONF_FILE	"/etc/man.conf"

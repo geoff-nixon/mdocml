@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.88 2013/12/22 14:06:36 schwarze Exp $ */
+/*	$Id: mdoc_argv.c,v 1.89 2013/12/25 00:50:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -28,6 +28,7 @@
 
 #include "mdoc.h"
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "libmdoc.h"
 #include "libmandoc.h"
 

@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.22 2011/09/18 14:14:15 schwarze Exp $ */
+/*	$Id: tbl_layout.c,v 1.23 2012/05/27 17:54:54 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -19,13 +19,13 @@
 #include "config.h"
 #endif
 
-#include <assert.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "libmandoc.h"
 #include "libroff.h"
 

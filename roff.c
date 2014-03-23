@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.199 2014/03/19 21:51:20 schwarze Exp $ */
+/*	$Id: roff.c,v 1.200 2014/03/20 02:57:28 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -26,6 +26,7 @@
 #include <string.h>
 
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "libroff.h"
 #include "libmandoc.h"
 

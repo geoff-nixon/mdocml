@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.87 2013/12/31 18:07:42 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.88 2014/01/06 22:39:25 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -32,6 +32,7 @@
 
 #include "man.h"
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "libman.h"
 #include "libmandoc.h"
 

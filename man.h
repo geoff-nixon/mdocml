@@ -1,6 +1,7 @@
-/*	$Id: man.h,v 1.61 2012/06/02 20:16:23 schwarze Exp $ */
+/*	$Id: man.h,v 1.62 2013/10/17 20:54:58 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -111,6 +112,7 @@ struct	man;
 const struct man_node *man_node(const struct man *);
 const struct man_meta *man_meta(const struct man *);
 const struct mparse   *man_mparse(const struct man *);
+void man_deroff(char **, const struct man_node *);
 
 __END_DECLS
 

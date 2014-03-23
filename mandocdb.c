@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.49.2.12 2014/03/19 22:09:29 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.49.2.13 2014/03/19 22:24:12 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -54,6 +54,7 @@
 #include "man.h"
 #include "mdoc.h"
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "mandocdb.h"
 #include "manpath.h"
 

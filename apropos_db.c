@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.32.2.3 2013/10/10 23:43:04 schwarze Exp $ */
+/*	$Id: apropos_db.c,v 1.32.2.4 2014/01/22 21:02:54 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -49,6 +49,7 @@
 #include "mandocdb.h"
 #include "apropos_db.h"
 #include "mandoc.h"
+#include "mandoc_aux.h"
 
 #define	RESFREE(_x) \
 	do { \

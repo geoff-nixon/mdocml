@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.208 2014/01/05 20:26:36 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.209 2014/03/23 11:25:26 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -594,10 +594,7 @@ mdoc_word_append(struct mdoc *mdoc, const char *p)
 
 	n = mdoc->last;
 	addstr = roff_strdup(mdoc->roff, p);
-	if (-1 == asprintf(&newstr, "%s %s", n->string, addstr)) {
-		perror(NULL);
-		exit((int)MANDOCLEVEL_SYSERR);
-	}
+	mandoc_asprintf(&newstr, "%s %s", n->string, addstr);
 	free(addstr);
 	free(n->string);
 	n->string = newstr;

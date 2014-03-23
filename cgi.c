@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.48 2014/03/19 22:05:10 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.49 2014/03/19 22:20:43 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -43,6 +43,7 @@
 
 #include "apropos_db.h"
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "mdoc.h"
 #include "man.h"
 #include "main.h"

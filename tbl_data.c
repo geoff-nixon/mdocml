@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.27 2013/06/01 04:56:50 schwarze Exp $ */
+/*	$Id: tbl_data.c,v 1.28 2014/01/05 18:37:53 joerg Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -26,6 +26,7 @@
 #include <time.h>
 
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "libmandoc.h"
 #include "libroff.h"
 

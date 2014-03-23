@@ -1,4 +1,4 @@
-/*	$Id: mdoc_man.c,v 1.57 2013/12/25 22:00:45 schwarze Exp $ */
+/*	$Id: mdoc_man.c,v 1.58 2014/01/22 20:58:39 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -23,6 +23,7 @@
 #include <string.h>
 
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "out.h"
 #include "man.h"
 #include "mdoc.h"
@@ -461,7 +462,7 @@ print_offs(const char *v)
 /*
  * Set up the indentation for a list item; used from pre_it().
  */
-void
+static void
 print_width(const char *v, const struct mdoc_node *child, size_t defsz)
 {
 	char		  buf[24];
@@ -513,7 +514,7 @@ print_width(const char *v, const struct mdoc_node *child, size_t defsz)
 	TPremain = remain;
 }
 
-void
+static void
 print_count(int *count)
 {
 	char		  buf[12];

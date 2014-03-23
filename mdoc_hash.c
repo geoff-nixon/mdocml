@@ -1,4 +1,4 @@
-/*	$Id: mdoc_hash.c,v 1.17 2011/03/22 14:33:05 kristaps Exp $ */
+/*	$Id: mdoc_hash.c,v 1.18 2011/07/24 18:15:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -28,7 +28,6 @@
 #include <string.h>
 
 #include "mdoc.h"
-#include "mandoc.h"
 #include "libmdoc.h"
 
 static	unsigned char	 table[27 * 12];

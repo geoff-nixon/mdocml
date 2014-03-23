@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.37 2011/07/23 18:44:42 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.38 2011/07/25 15:37:00 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -26,6 +26,7 @@
 #include <time.h>
 
 #include "mandoc.h"
+#include "mandoc_aux.h"
 #include "libmandoc.h"
 #include "libroff.h"
 

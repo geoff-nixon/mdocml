@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.24 2011/03/22 14:33:05 kristaps Exp $ */
+/*	$Id: man_hash.c,v 1.25 2011/07/24 18:15:14 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -23,7 +23,6 @@
 #include <assert.h>
 #include <ctype.h>
 #include <limits.h>
-#include <stdlib.h>
 #include <string.h>
 
 #include "man.h"

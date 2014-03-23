@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.118 2014/03/19 22:33:09 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.119 2014/03/23 11:25:26 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1536,10 +1536,7 @@ parse_mdoc_Xr(struct mpage *mpage, const struct mdoc_node *n)
 		return(0);
 	}
 
-	if (-1 == asprintf(&cp, "%s(%s)", n->string, n->next->string)) {
-		perror(NULL);
-		exit((int)MANDOCLEVEL_SYSERR);
-	}
+	mandoc_asprintf(&cp, "%s(%s)", n->string, n->next->string);
 	putkey(mpage, cp, TYPE_Xr);
 	free(cp);
 	return(0);

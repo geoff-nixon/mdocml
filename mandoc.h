@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.117 2014/03/19 22:20:43 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.118 2014/03/23 11:25:26 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -240,6 +240,7 @@ struct	tbl_row {
 	struct tbl_row	 *next;
 	struct tbl_cell	 *first;
 	struct tbl_cell	 *last;
+	int		  vert; /* trailing vertical line */
 };
 
 enum	tbl_datt {

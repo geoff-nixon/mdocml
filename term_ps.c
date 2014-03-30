@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.56 2014/03/23 11:25:26 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.57 2014/03/30 19:47:48 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -106,7 +106,7 @@ __attribute__((__format__ (__printf__, 2, 3)))
 static	void		  ps_printf(struct termp *, const char *, ...);
 static	void		  ps_putchar(struct termp *, char);
 static	void		  ps_setfont(struct termp *, enum termfont);
-static	void		  ps_setwidth(struct termp *, size_t);
+static	void		  ps_setwidth(struct termp *, int, size_t);
 static	struct termp	 *pspdf_alloc(char *);
 static	void		  pdf_obj(struct termp *, size_t);
 
@@ -536,12 +536,17 @@ pspdf_alloc(char *outopts)
 
 
 static void
-ps_setwidth(struct termp *p, size_t width)
+ps_setwidth(struct termp *p, int iop, size_t width)
 {
 	size_t	 lastwidth;
 
 	lastwidth = p->ps->width;
-	p->ps->width = width ? width : p->ps->lastwidth;
+	if (0 < iop)
+		p->ps->width += width;
+	else if (0 > iop)
+		p->ps->width -= width;
+	else
+		p->ps->width = width ? width : p->ps->lastwidth;
 	p->ps->lastwidth = lastwidth;
 }
 

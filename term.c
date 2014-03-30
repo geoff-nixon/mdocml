@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.217 2014/03/13 19:23:50 schwarze Exp $ */
+/*	$Id: term.c,v 1.218 2014/03/23 11:25:26 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -621,6 +621,36 @@ encode(struct termp *p, const char *word, size_t sz)
 		else
 			p->buf[p->col++] = word[i];
 	}
+}
+
+void
+term_setwidth(struct termp *p, const char *wstr)
+{
+	struct roffsu	 su;
+	size_t		 width;
+	int		 iop;
+
+	if (NULL != wstr) {
+		switch (*wstr) {
+		case ('+'):
+			iop = 1;
+			wstr++;
+			break;
+		case ('-'):
+			iop = -1;
+			wstr++;
+			break;
+		default:
+			iop = 0;
+			break;
+		}
+		if ( ! a2roffsu(wstr, &su, SCALE_MAX)) {
+			wstr = NULL;
+			iop = 0;
+		}
+	}
+	width = (NULL != wstr) ? term_hspan(p, &su) : 0;
+	(*p->setwidth)(p, iop, width);
 }
 
 size_t

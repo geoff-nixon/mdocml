@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.142 2014/03/08 16:22:04 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.143 2014/03/30 19:47:48 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -242,7 +242,7 @@ static int
 pre_ll(DECL_ARGS)
 {
 
-	(*p->setwidth)(p, n->nchild ? a2width(p, n->child->string) : 0);
+	term_setwidth(p, n->nchild ? n->child->string : NULL);
 	return(0);
 }
 

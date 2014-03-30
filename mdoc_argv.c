@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.89 2013/12/25 00:50:05 schwarze Exp $ */
+/*	$Id: mdoc_argv.c,v 1.90 2014/03/23 11:25:26 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -267,6 +267,7 @@ static	const struct mdocarg mdocargs[MDOC_MAX] = {
 	{ ARGSFL_NONE, NULL }, /* sp */
 	{ ARGSFL_NONE, NULL }, /* %U */
 	{ ARGSFL_NONE, NULL }, /* Ta */
+	{ ARGSFL_NONE, NULL }, /* ll */
 };
 
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.121 2014/02/16 14:26:51 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.207 2014/03/30 23:28:06 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -332,6 +332,7 @@ static	const char * const secnames[SEC__MAX] = {
 	"LIBRARY",
 	"SYNOPSIS",
 	"DESCRIPTION",
+	"CONTEXT",
 	"IMPLEMENTATION NOTES",
 	"RETURN VALUES",
 	"ENVIRONMENT",
@@ -2040,6 +2041,8 @@ post_sh_head(POST_ARGS)
 			break;
 		if (*mdoc->meta.msec == '3')
 			break;
+		/* FALLTHROUGH */
+	case (SEC_CONTEXT):
 		if (*mdoc->meta.msec == '9')
 			break;
 		mandoc_msg(MANDOCERR_SECMSEC, mdoc->parse,

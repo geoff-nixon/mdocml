@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.126 2014/03/23 12:44:56 schwarze Exp $ */
+/*	$Id: mdoc.h,v 1.127 2014/03/30 19:47:48 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -199,6 +199,7 @@ enum	mdoc_sec {
 	SEC_LIBRARY, /* LIBRARY */
 	SEC_SYNOPSIS, /* SYNOPSIS */
 	SEC_DESCRIPTION, /* DESCRIPTION */
+	SEC_CONTEXT, /* CONTEXT */
 	SEC_IMPLEMENTATION, /* IMPLEMENTATION NOTES */
 	SEC_RETURN_VALUES, /* RETURN VALUES */
 	SEC_ENVIRONMENT,  /* ENVIRONMENT */

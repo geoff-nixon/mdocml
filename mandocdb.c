@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.125 2014/04/03 15:37:19 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.126 2014/04/03 16:27:28 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -461,6 +461,11 @@ main(int argc, char *argv[])
 				dirs.paths[i] = mandoc_strdup(argv[i]);
 		} else
 			manpath_parse(&dirs, path_arg, NULL, NULL);
+
+		if (0 == dirs.sz) {
+			exitcode = (int)MANDOCLEVEL_BADARG;
+			say("", "Empty manpath");
+		}
 
 		/*
 		 * First scan the tree rooted at a base directory, then

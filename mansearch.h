@@ -1,4 +1,4 @@
-/*	$Id: mansearch.h,v 1.11 2014/04/09 21:50:08 schwarze Exp $ */
+/*	$Id: mansearch.h,v 1.12 2014/04/10 02:46:21 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -85,6 +85,7 @@ struct	mansearch {
 #define	MANSEARCH_WHATIS 0x01 /* whatis mode: equality, no key */
 };
 
+int	mansearch_setup(int);
 int	mansearch(const struct mansearch *cfg, /* options */
 		const struct manpaths *paths, /* manpaths */
 		int argc, /* size of argv */

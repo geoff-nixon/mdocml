@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.36 2013/12/31 03:41:14 schwarze Exp $ */
+/*	$Id: apropos.c,v 1.37 2014/01/06 03:02:46 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -95,6 +95,7 @@ main(int argc, char *argv[])
 	search.flags = whatis ? MANSEARCH_WHATIS : 0;
 
 	manpath_parse(&paths, conf_file, defpaths, auxpaths);
+	mansearch_setup(1);
 	ch = mansearch(&search, &paths, argc, argv, outkey, &res, &sz);
 	manpath_free(&paths);
 
@@ -110,6 +111,7 @@ main(int argc, char *argv[])
 	}
 
 	free(res);
+	mansearch_setup(0);
 	return(sz ? EXIT_SUCCESS : EXIT_FAILURE);
 usage:
 	fprintf(stderr, "usage: %s [-C file] [-M path] [-m path] "

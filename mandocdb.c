@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.133 2014/04/10 02:46:21 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.134 2014/04/13 20:55:45 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1154,18 +1154,17 @@ mpages_merge(struct mchars *mc, struct mparse *mp)
 			putkey(mpage, mlink->name, NAME_FILE);
 		}
 
+		assert(NULL == mpage->desc);
 		if (NULL != mdoc) {
 			if (NULL != (cp = mdoc_meta(mdoc)->name))
 				putkey(mpage, cp, NAME_HEAD);
-			assert(NULL == mpage->desc);
 			parse_mdoc(mpage, mdoc_node(mdoc));
-			if (NULL == mpage->desc)
-				mpage->desc = mandoc_strdup(
-				    mpage->mlinks->name);
 		} else if (NULL != man)
 			parse_man(mpage, man_node(man));
 		else
 			parse_cat(mpage, fd[0]);
+		if (NULL == mpage->desc)
+			mpage->desc = mandoc_strdup(mpage->mlinks->name);
 
 		if (warnings && !use_all)
 			for (mlink = mpage->mlinks; mlink;
@@ -1302,8 +1301,6 @@ parse_cat(struct mpage *mpage, int fd)
 		if (warnings)
 			say(mpage->mlinks->file,
 			    "Cannot find NAME section");
-		assert(NULL == mpage->desc);
-		mpage->desc = mandoc_strdup(mpage->mlinks->name);
 		fclose(stream);
 		free(title);
 		return;
@@ -1342,7 +1339,6 @@ parse_cat(struct mpage *mpage, int fd)
 		plen -= 2;
 	}
 
-	assert(NULL == mpage->desc);
 	mpage->desc = mandoc_strdup(p);
 	fclose(stream);
 	free(title);
@@ -1482,7 +1478,6 @@ parse_man(struct mpage *mpage, const struct man_node *n)
 			while (' ' == *start)
 				start++;
 
-			assert(NULL == mpage->desc);
 			mpage->desc = mandoc_strdup(start);
 			free(title);
 			return;

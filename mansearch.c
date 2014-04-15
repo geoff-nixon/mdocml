@@ -1,4 +1,4 @@
-/*	$Id: mansearch.c,v 1.27 2014/04/10 02:46:21 schwarze Exp $ */
+/*	$Id: mansearch.c,v 1.28 2014/04/11 15:46:52 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -218,6 +218,7 @@ mansearch(const struct mansearch *search,
 	}
 
 	sql = sql_statement(e);
+	printf("%s\n", sql);
 
 	/*
 	 * Loop over the directories (containing databases) for us to

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.207 2014/03/30 23:28:06 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.208 2014/03/31 01:05:32 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1950,7 +1950,7 @@ static int
 post_sh_head(POST_ARGS)
 {
 	struct mdoc_node *n;
-	const char	*secname;
+	char		*secname;
 	enum mdoc_sec	 sec;
 
 	/*
@@ -1962,15 +1962,8 @@ post_sh_head(POST_ARGS)
 
 	secname = NULL;
 	sec = SEC_CUSTOM;
-	n = mdoc->last;
-	if (n->child) {
-		assert(1 == n->nchild);
-		n = n->child;
-		assert(NULL != n);
-		assert(MDOC_TEXT == n->type);
-		secname = n->string;
-		sec = a2sec(secname);
-	}
+	mdoc_deroff(&secname, mdoc->last);
+	sec = NULL == secname ? SEC_CUSTOM : a2sec(secname);
 
 	/* The NAME should be first. */
 
@@ -2007,8 +2000,10 @@ post_sh_head(POST_ARGS)
 
 	/* We don't care about custom sections after this. */
 
-	if (SEC_CUSTOM == sec)
+	if (SEC_CUSTOM == sec) {
+		free(secname);
 		return(1);
+	}
 
 	/*
 	 * Check whether our non-custom section is being repeated or is
@@ -2052,6 +2047,7 @@ post_sh_head(POST_ARGS)
 		break;
 	}
 
+	free(secname);
 	return(1);
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: mansearch.c,v 1.29 2014/04/15 23:48:51 schwarze Exp $ */
+/*	$Id: mansearch.c,v 1.30 2014/04/15 23:51:39 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -253,10 +253,12 @@ mansearch(const struct mansearch *search,
 		 */
 
 		c = sqlite3_create_function(db, "match", 2,
-		    SQLITE_ANY, NULL, sql_match, NULL, NULL);
+		    SQLITE_UTF8 | SQLITE_DETERMINISTIC,
+		    NULL, sql_match, NULL, NULL);
 		assert(SQLITE_OK == c);
 		c = sqlite3_create_function(db, "regexp", 2,
-		    SQLITE_ANY, NULL, sql_regexp, NULL, NULL);
+		    SQLITE_UTF8 | SQLITE_DETERMINISTIC,
+		    NULL, sql_regexp, NULL, NULL);
 		assert(SQLITE_OK == c);
 
 		j = 1;

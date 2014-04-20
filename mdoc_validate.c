@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.209 2014/04/15 00:41:09 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.210 2014/04/20 16:46:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -44,8 +44,6 @@
 
 #define	PRE_ARGS  struct mdoc *mdoc, struct mdoc_node *n
 #define	POST_ARGS struct mdoc *mdoc
-
-#define	NUMSIZ	  32
 
 enum	check_ineq {
 	CHECK_LT,
@@ -1388,7 +1386,7 @@ post_bl_block_width(POST_ARGS)
 	int		  i;
 	enum mdoct	  tok;
 	struct mdoc_node *n;
-	char		  buf[NUMSIZ];
+	char		  buf[24];
 
 	n = mdoc->last;
 
@@ -1420,7 +1418,7 @@ post_bl_block_width(POST_ARGS)
 
 	assert(i < (int)n->args->argc);
 
-	snprintf(buf, NUMSIZ, "%un", (unsigned int)width);
+	(void)snprintf(buf, sizeof(buf), "%un", (unsigned int)width);
 	free(n->args->argv[i].value[0]);
 	n->args->argv[i].value[0] = mandoc_strdup(buf);
 
@@ -1435,7 +1433,7 @@ post_bl_block_tag(POST_ARGS)
 	struct mdoc_node *n, *nn;
 	size_t		  sz, ssz;
 	int		  i;
-	char		  buf[NUMSIZ];
+	char		  buf[24];
 
 	/*
 	 * Calculate the -width for a `Bl -tag' list if it hasn't been
@@ -1470,7 +1468,7 @@ post_bl_block_tag(POST_ARGS)
 
 	/* Defaults to ten ens. */
 
-	snprintf(buf, NUMSIZ, "%un", (unsigned int)sz);
+	(void)snprintf(buf, sizeof(buf), "%un", (unsigned int)sz);
 
 	/*
 	 * We have to dynamically add this to the macro's argument list.

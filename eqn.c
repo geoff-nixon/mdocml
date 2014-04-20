@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.39 2014/03/23 11:25:26 schwarze Exp $ */
+/*	$Id: eqn.c,v 1.40 2014/04/20 16:46:04 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -628,7 +628,7 @@ eqn_box(struct eqn_node *ep, struct eqn_box *last)
 	for (i = 0; i < (int)EQNSYM__MAX; i++)
 		if (EQNSTREQ(&eqnsyms[i].str, start, sz)) {
 			sym[63] = '\0';
-			snprintf(sym, 62, "\\[%s]", eqnsyms[i].sym);
+			(void)snprintf(sym, 62, "\\[%s]", eqnsyms[i].sym);
 			bp->text = mandoc_strdup(sym);
 			return(EQN_OK);
 		}

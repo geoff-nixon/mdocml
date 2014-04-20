@@ -1,4 +1,4 @@
-/*	$Id: st.in,v 1.22 2013/12/25 14:09:32 schwarze Exp $ */
+/*	$Id: st.in,v 1.23 2013/12/31 23:29:41 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -22,7 +22,7 @@
  * the formatted output string.
  *
  * Be sure to escape strings.
- * The non-breaking blanks prevent ending an output line right before 
+ * The non-breaking blanks prevent ending an output line right before
  * a number.  Groff prevent line breaks at the same places.
  *
  * REMEMBER TO ADD NEW STANDARDS TO MDOC.7!

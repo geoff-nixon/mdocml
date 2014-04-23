@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.58 2014/03/30 21:28:01 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.59 2014/04/20 16:46:05 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -628,12 +628,8 @@ pdf_obj(struct termp *p, size_t obj)
 
 	if ((obj - 1) >= p->ps->pdfobjsz) {
 		p->ps->pdfobjsz = obj + 128;
-		p->ps->pdfobjs = realloc(p->ps->pdfobjs,
-		    p->ps->pdfobjsz * sizeof(size_t));
-		if (NULL == p->ps->pdfobjs) {
-			perror(NULL);
-			exit((int)MANDOCLEVEL_SYSERR);
-		}
+		p->ps->pdfobjs = mandoc_reallocarray(p->ps->pdfobjs,
+		    p->ps->pdfobjsz, sizeof(size_t));
 	}
 
 	p->ps->pdfobjs[(int)obj - 1] = p->ps->pdfbytes;
@@ -1169,7 +1165,5 @@ ps_growbuf(struct termp *p, size_t sz)
 		sz = PS_BUFSLOP;
 
 	p->ps->psmargsz += sz;
-
-	p->ps->psmarg = mandoc_realloc
-		(p->ps->psmarg, p->ps->psmargsz);
+	p->ps->psmarg = mandoc_realloc(p->ps->psmarg, p->ps->psmargsz);
 }

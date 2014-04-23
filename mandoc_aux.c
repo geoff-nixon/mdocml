@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.44 2013/12/30 18:27:15 schwarze Exp $ */
+/*	$Id: mandoc_aux.c,v 1.1 2014/03/23 11:59:17 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -73,6 +73,18 @@ mandoc_realloc(void *ptr, size_t size)
 {
 
 	ptr = realloc(ptr, size);
+	if (NULL == ptr) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+	return(ptr);
+}
+
+void *
+mandoc_reallocarray(void *ptr, size_t num, size_t size)
+{
+
+	ptr = reallocarray(ptr, num, size);
 	if (NULL == ptr) {
 		perror(NULL);
 		exit((int)MANDOCLEVEL_SYSERR);

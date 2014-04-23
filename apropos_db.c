@@ -1,4 +1,4 @@
-/*	$Id: apropos_db.c,v 1.32.2.4 2014/01/22 21:02:54 schwarze Exp $ */
+/*	$Id: apropos_db.c,v 1.32.2.5 2014/03/23 12:04:54 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -555,8 +555,8 @@ single_search(struct rectree *tree, const struct opts *opts,
 			if (strcasecmp(opts->arch, r.arch))
 				continue;
 
-		tree->node = rs = mandoc_realloc
-			(rs, (tree->len + 1) * sizeof(struct res));
+		tree->node = rs = mandoc_reallocarray(rs,
+		    tree->len + 1, sizeof(struct res));
 
 		memcpy(&rs[tree->len], &r, sizeof(struct res));
 		memset(&r, 0, sizeof(struct res));

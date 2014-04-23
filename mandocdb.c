@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.49.2.14 2014/03/23 12:04:54 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.49.2.15 2014/03/23 12:37:58 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -984,8 +984,8 @@ index_prune(const struct of *ofile, struct mdb *mdb, struct recs *recs)
 cont:
 		if (recs->cur >= recs->size) {
 			recs->size += MANDOC_SLOP;
-			recs->stack = mandoc_realloc(recs->stack,
-					recs->size * sizeof(recno_t));
+			recs->stack = mandoc_reallocarray(recs->stack,
+			    recs->size, sizeof(recno_t));
 		}
 
 		recs->stack[(int)recs->cur] = recs->last;

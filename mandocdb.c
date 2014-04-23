@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.140 2014/04/19 02:56:54 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.141 2014/04/20 16:46:04 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1287,7 +1287,8 @@ names_check(void)
 	      "AND mlinks.name == names.name"
 	    ")"
 	  ") JOIN ("
-	    "SELECT * FROM mlinks GROUP BY pageid"
+	    "SELECT sec, arch, name, pageid FROM mlinks "
+	    "GROUP BY pageid"
 	  ") USING (pageid);",
 	  -1, &stmt, NULL);
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.212 2014/03/30 19:47:48 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.213 2014/04/20 16:46:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -865,7 +865,7 @@ mdoc_pmacro(struct mdoc *mdoc, int ln, char *buf, int offs)
 
 	mac[i] = '\0';
 
-	tok = (i > 1 || i < 4) ? mdoc_hash_find(mac) : MDOC_MAX;
+	tok = (i > 1 && i < 4) ? mdoc_hash_find(mac) : MDOC_MAX;
 
 	if (MDOC_MAX == tok) {
 		mandoc_vmsg(MANDOCERR_MACRO, mdoc->parse,

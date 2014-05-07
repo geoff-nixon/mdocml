@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.128 2014/03/30 19:47:48 schwarze Exp $ */
+/*	$Id: man.c,v 1.129 2014/04/20 16:46:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -595,9 +595,12 @@ man_pmacro(struct man *man, int ln, char *buf, int offs)
 
 	/* In quick mode (for mandocdb), abort after the NAME section. */
 
-	if (man->quick && MAN_SH == tok &&
-	    strcmp(man->last->prev->child->string, "NAME"))
-		return(2);
+	if (man->quick && MAN_SH == tok) {
+		n = man->last;
+		if (MAN_BODY == n->type &&
+		    strcmp(n->prev->child->string, "NAME"))
+			return(2);
+	}
 
 	/*
 	 * We weren't in a block-line scope when entering the

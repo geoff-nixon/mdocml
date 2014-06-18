@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.147 2014/05/07 15:10:36 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.148 2014/05/07 16:19:03 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -2230,7 +2230,8 @@ dbopen(int real)
 		rc = sqlite3_open_v2(MANDOC_DB, &db, ofl, NULL);
 		if (SQLITE_OK != rc) {
 			exitcode = (int)MANDOCLEVEL_SYSERR;
-			say(MANDOC_DB, "%s", sqlite3_errstr(rc));
+			if (SQLITE_CANTOPEN != rc)
+				say(MANDOC_DB, "%s", sqlite3_errstr(rc));
 			return(0);
 		}
 		goto prepare_statements;

@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.147 2014/04/20 20:18:12 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.148 2014/04/23 16:08:33 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1061,7 +1061,8 @@ print_man_foot(struct termp *p, const void *arg)
 
 	term_fontrepl(p, TERMFONT_NONE);
 
-	term_vspace(p);
+	if (meta->hasbody)
+		term_vspace(p);
 
 	/*
 	 * Temporary, undocumented option to imitate mdoc(7) output.
@@ -1070,8 +1071,10 @@ print_man_foot(struct termp *p, const void *arg)
 	 */
 
 	if ( ! p->mdocstyle) {
-		term_vspace(p);
-		term_vspace(p);
+		if (meta->hasbody) {
+			term_vspace(p);
+			term_vspace(p);
+		}
 		mandoc_asprintf(&title, "%s(%s)",
 		    meta->title, meta->msec);
 	} else if (meta->source) {

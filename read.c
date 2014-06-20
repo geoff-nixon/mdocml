@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.48 2014/04/20 22:04:04 schwarze Exp $ */
+/*	$Id: read.c,v 1.49 2014/06/20 17:24:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -106,6 +106,8 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 
 	/* related to document structure */
 	".so is fragile, better use ln(1)",
+	"no document body",
+	"content before the first section header",
 	"NAME section must come first",
 	"bad NAME section contents",
 	"sections out of conventional order",
@@ -204,7 +206,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"child violates parent syntax",
 	"argument count wrong, violates syntax",
 	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
-	"no document body",
 	"no document prologue",
 	"static buffer exhausted",
 
@@ -684,7 +685,7 @@ mparse_end(struct mparse *curp)
 	}
 
 	if ( ! (curp->mdoc || curp->man || curp->sodest)) {
-		mandoc_msg(MANDOCERR_NOTMANUAL, curp, 1, 0, NULL);
+		mandoc_msg(MANDOCERR_NOTMANUAL, curp, 0, 0, NULL);
 		curp->file_status = MANDOCLEVEL_FATAL;
 		return;
 	}

@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.172 2014/03/23 11:25:26 schwarze Exp $ */
+/*	$Id: main.c,v 1.173 2014/04/20 16:46:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -408,7 +408,8 @@ mmsg(enum mandocerr t, enum mandoclevel lvl,
 		const char *file, int line, int col, const char *msg)
 {
 
-	fprintf(stderr, "%s:%d:%d: %s: %s", file, line, col + 1,
+	fprintf(stderr, "%s: %s:%d:%d: %s: %s", progname,
+	    file, line, col + 1,
 	    mparse_strlevel(lvl), mparse_strerror(t));
 
 	if (msg)

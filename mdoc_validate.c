@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.214 2014/04/23 21:06:41 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.215 2014/06/20 17:24:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1645,15 +1645,15 @@ ebool(struct mdoc *mdoc)
 static int
 post_root(POST_ARGS)
 {
-	int		  erc;
+	int		  ret;
 	struct mdoc_node *n;
 
-	erc = 0;
+	ret = 1;
 
 	/* Check that we have a finished prologue. */
 
 	if ( ! (MDOC_PBODY & mdoc->flags)) {
-		erc++;
+		ret = 0;
 		mdoc_nmsg(mdoc, mdoc->first, MANDOCERR_NODOCPROLOG);
 	}
 
@@ -1662,17 +1662,13 @@ post_root(POST_ARGS)
 
 	/* Check that we begin with a proper `Sh'. */
 
-	if (NULL == n->child) {
-		erc++;
-		mdoc_nmsg(mdoc, n, MANDOCERR_NODOCBODY);
-	} else if (MDOC_BLOCK != n->child->type ||
-	    MDOC_Sh != n->child->tok) {
-		erc++;
-		/* Can this be lifted?  See rxdebug.1 for example. */
-		mdoc_nmsg(mdoc, n, MANDOCERR_NODOCBODY);
-	}
+	if (NULL == n->child)
+		mdoc_nmsg(mdoc, n, MANDOCERR_DOC_EMPTY);
+	else if (MDOC_BLOCK != n->child->type ||
+	    MDOC_Sh != n->child->tok)
+		mdoc_nmsg(mdoc, n->child, MANDOCERR_SEC_BEFORE);
 
-	return(erc ? 0 : 1);
+	return(ret);
 }
 
 static int

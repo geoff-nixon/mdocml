@@ -1,4 +1,4 @@
-# $Id$
+# $Id: Makefile,v 1.419 2014/04/24 00:29:45 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -65,6 +65,10 @@ INSTALL_MAN	 = $(INSTALL_DATA)
 # the dependency on SQLite3, comment the following two lines.
 DBLIB		 = -L/usr/local/lib -lsqlite3
 DBBIN		 = makewhatis manpage apropos
+
+# OpenBSD has the ohash functions in libutil.
+# Comment the following line if your system doesn't.
+DBLIB		+= -lutil
 
 # === END OF USER SETTINGS =============================================
 

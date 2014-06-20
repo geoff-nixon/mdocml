@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.213 2014/04/20 16:46:05 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.214 2014/04/25 14:11:30 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -305,7 +305,8 @@ mdoc_macro(MACRO_PROT_ARGS)
 
 	if (MDOC_PROLOGUE & mdoc_macros[tok].flags &&
 	    MDOC_PBODY & mdoc->flags) {
-		mdoc_pmsg(mdoc, line, ppos, MANDOCERR_BADBODY);
+		mandoc_vmsg(MANDOCERR_PROLOG_ONLY, mdoc->parse,
+		    line, ppos, "%s", mdoc_macronames[tok]);
 		return(1);
 	}
 
@@ -313,7 +314,8 @@ mdoc_macro(MACRO_PROT_ARGS)
 
 	if ( ! (MDOC_PROLOGUE & mdoc_macros[tok].flags) &&
 	     ! (MDOC_PBODY & mdoc->flags)) {
-		mdoc_pmsg(mdoc, line, ppos, MANDOCERR_BADPROLOG);
+		mandoc_vmsg(MANDOCERR_PROLOG_BAD, mdoc->parse,
+		    line, ppos, "%s", mdoc_macronames[tok]);
 		if (NULL == mdoc->meta.msec)
 			mdoc->meta.msec = mandoc_strdup("1");
 		if (NULL == mdoc->meta.title)

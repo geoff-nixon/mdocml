@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.208 2014/04/20 19:40:13 schwarze Exp $ */
+/*	$Id: roff.c,v 1.209 2014/04/23 16:08:33 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1938,7 +1938,8 @@ roff_so(ROFF_ARGS)
 {
 	char *name;
 
-	mandoc_msg(MANDOCERR_SO, r->parse, ln, ppos, NULL);
+	name = *bufp + pos;
+	mandoc_vmsg(MANDOCERR_SO, r->parse, ln, ppos, ".so %s", name);
 
 	/*
 	 * Handle `so'.  Be EXTREMELY careful, as we shouldn't be
@@ -1947,9 +1948,9 @@ roff_so(ROFF_ARGS)
 	 * or using absolute paths.
 	 */
 
-	name = *bufp + pos;
 	if ('/' == *name || strstr(name, "../") || strstr(name, "/..")) {
-		mandoc_msg(MANDOCERR_SOPATH, r->parse, ln, pos, NULL);
+		mandoc_vmsg(MANDOCERR_SO_PATH, r->parse, ln, ppos,
+		    ".so %s", name);
 		return(ROFF_ERR);
 	}
 

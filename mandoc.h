@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.121 2014/06/20 17:24:00 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.122 2014/06/20 23:02:31 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -162,7 +162,8 @@ enum	mandocerr {
 	MANDOCERR_SYNTARGVCOUNT, /* argument count wrong, violates syntax */
 	MANDOCERR_SYNTCHILD, /* child violates parent syntax */
 	MANDOCERR_SYNTARGCOUNT, /* argument count wrong, violates syntax */
-	MANDOCERR_SOPATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
+	MANDOCERR_SO_PATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
+	MANDOCERR_SO_FAIL, /* .so request failed */
 	MANDOCERR_NODOCPROLOG, /* no document prologue */
 	MANDOCERR_MEM, /* static buffer exhausted */
 

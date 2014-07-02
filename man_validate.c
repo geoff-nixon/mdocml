@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.93 2014/06/20 23:02:31 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.94 2014/07/01 22:37:15 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -357,7 +357,9 @@ check_par(CHKARGS)
 		break;
 	case MAN_BODY:
 		if (0 == n->nchild)
-			man_nmsg(man, n, MANDOCERR_IGNPAR);
+			mandoc_vmsg(MANDOCERR_PAR_SKIP,
+			    man->parse, n->line, n->pos,
+			    "%s empty", man_macronames[n->tok]);
 		break;
 	case MAN_HEAD:
 		if (n->nchild)
@@ -381,7 +383,9 @@ post_IP(CHKARGS)
 		break;
 	case MAN_BODY:
 		if (0 == n->parent->head->nchild && 0 == n->nchild)
-			man_nmsg(man, n, MANDOCERR_IGNPAR);
+			mandoc_vmsg(MANDOCERR_PAR_SKIP,
+			    man->parse, n->line, n->pos,
+			    "%s empty", man_macronames[n->tok]);
 		break;
 	default:
 		break;
@@ -579,7 +583,9 @@ post_vs(CHKARGS)
 	case MAN_SH:
 		/* FALLTHROUGH */
 	case MAN_SS:
-		man_nmsg(man, n, MANDOCERR_IGNPAR);
+		mandoc_vmsg(MANDOCERR_PAR_SKIP, man->parse, n->line, n->pos,
+		    "%s after %s", man_macronames[n->tok],
+		    man_macronames[n->parent->tok]);
 		/* FALLTHROUGH */
 	case MAN_MAX:
 		/*

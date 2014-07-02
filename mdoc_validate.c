@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.218 2014/07/02 03:48:07 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.219 2014/07/02 05:52:25 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -591,7 +591,9 @@ pre_display(PRE_ARGS)
 				break;
 
 	if (node)
-		mdoc_nmsg(mdoc, n, MANDOCERR_NESTEDDISP);
+		mandoc_vmsg(MANDOCERR_BD_NEST,
+		    mdoc->parse, n->line, n->pos,
+		    "%s in Bd", mdoc_macronames[n->tok]);
 
 	return(1);
 }
@@ -1903,7 +1905,7 @@ post_ns(POST_ARGS)
 {
 
 	if (MDOC_LINE & mdoc->last->flags)
-		mdoc_nmsg(mdoc, mdoc->last, MANDOCERR_IGNNS);
+		mdoc_nmsg(mdoc, mdoc->last, MANDOCERR_NS_SKIP);
 	return(1);
 }
 

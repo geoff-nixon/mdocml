@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.215 2014/06/20 17:24:00 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.216 2014/07/01 22:37:15 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -515,6 +515,8 @@ mdoc_block_alloc(struct mdoc *mdoc, int line, int pos,
 	case MDOC_Bf:
 		/* FALLTHROUGH */
 	case MDOC_Bl:
+		/* FALLTHROUGH */
+	case MDOC_En:
 		/* FALLTHROUGH */
 	case MDOC_Rs:
 		p->norm = mandoc_calloc(1, sizeof(union mdoc_data));

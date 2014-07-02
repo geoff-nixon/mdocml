@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.128 2014/03/31 01:05:32 schwarze Exp $ */
+/*	$Id: mdoc.h,v 1.129 2014/04/20 16:46:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -338,6 +338,7 @@ union	mdoc_data {
 	struct mdoc_bd	  Bd;
 	struct mdoc_bf	  Bf;
 	struct mdoc_bl	  Bl;
+	struct mdoc_node *Es;
 	struct mdoc_rs	  Rs;
 };
 

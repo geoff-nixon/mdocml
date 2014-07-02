@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.124 2014/06/30 23:45:07 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.125 2014/07/01 22:37:15 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -71,7 +71,7 @@ enum	mandocerr {
 	MANDOCERR_SEC_MSEC, /* unexpected section: title for ... only */
 
 	/* related to macros and nesting */
-	MANDOCERR_MACROOBS, /* skipping obsolete macro */
+	MANDOCERR_MACRO_OBS, /* obsolete macro: macro */
 	MANDOCERR_IGNPAR, /* skipping paragraph macro */
 	MANDOCERR_MOVEPAR, /* moving paragraph macro out of list */
 	MANDOCERR_IGNNS, /* skipping no-space macro */

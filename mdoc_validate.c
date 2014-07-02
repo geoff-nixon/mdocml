@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.221 2014/07/02 13:10:45 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.222 2014/07/02 19:55:10 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1729,7 +1729,9 @@ post_st(POST_ARGS)
 	const char		 *p;
 
 	if (NULL == (ch = mdoc->last->child)) {
-		mdoc_nmsg(mdoc, mdoc->last, MANDOCERR_MACROEMPTY);
+		mandoc_msg(MANDOCERR_MACRO_EMPTY, mdoc->parse,
+		    mdoc->last->line, mdoc->last->pos,
+		    mdoc_macronames[mdoc->last->tok]);
 		mdoc_node_delete(mdoc, mdoc->last);
 		return(1);
 	}

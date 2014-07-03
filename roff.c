@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.214 2014/06/29 23:26:00 schwarze Exp $ */
+/*	$Id: roff.c,v 1.215 2014/07/01 00:32:29 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -917,7 +917,8 @@ roff_block(ROFF_ARGS)
 
 	if (ROFF_ig != tok) {
 		if ('\0' == *cp) {
-			mandoc_msg(MANDOCERR_NOARGS, r->parse, ln, ppos, NULL);
+			mandoc_msg(MANDOCERR_REQ_EMPTY, r->parse,
+			    ln, ppos, roffs[tok].name);
 			return(ROFF_IGN);
 		}
 
@@ -1285,7 +1286,8 @@ roff_cond(ROFF_ARGS)
 	 */
 
 	if ('\0' == (*bufp)[pos])
-		mandoc_msg(MANDOCERR_NOARGS, r->parse, ln, ppos, NULL);
+		mandoc_msg(MANDOCERR_COND_EMPTY, r->parse,
+		    ln, ppos, roffs[tok].name);
 
 	r->last->endspan = 1;
 

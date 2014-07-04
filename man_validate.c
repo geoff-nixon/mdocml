@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.95 2014/07/02 05:52:24 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.96 2014/07/02 11:43:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -363,7 +363,11 @@ check_par(CHKARGS)
 		break;
 	case MAN_HEAD:
 		if (n->nchild)
-			man_nmsg(man, n, MANDOCERR_ARGSLOST);
+			mandoc_vmsg(MANDOCERR_ARG_SKIP,
+			    man->parse, n->line, n->pos,
+			    "%s %s%s", man_macronames[n->tok],
+			    n->child->string,
+			    n->nchild > 1 ? " ..." : "");
 		break;
 	default:
 		break;

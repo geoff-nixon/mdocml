@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.215 2014/07/01 00:32:29 schwarze Exp $ */
+/*	$Id: roff.c,v 1.216 2014/07/03 21:23:54 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -856,7 +856,8 @@ roff_cblock(ROFF_ARGS)
 	}
 
 	if ((*bufp)[pos])
-		mandoc_msg(MANDOCERR_ARGSLOST, r->parse, ln, pos, NULL);
+		mandoc_vmsg(MANDOCERR_ARG_SKIP, r->parse, ln, pos,
+		    ".. %s", *bufp + pos);
 
 	roffnode_pop(r);
 	roffnode_cleanscope(r);
@@ -960,7 +961,8 @@ roff_block(ROFF_ARGS)
 		r->last->end = mandoc_strndup(name, namesz);
 
 	if ('\0' != *cp)
-		mandoc_msg(MANDOCERR_ARGSLOST, r->parse, ln, pos, NULL);
+		mandoc_vmsg(MANDOCERR_ARG_EXCESS, r->parse,
+		    ln, pos, ".%s ... %s", roffs[tok].name, cp);
 
 	return(ROFF_IGN);
 }

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_argv.c,v 1.93 2014/04/23 21:06:41 schwarze Exp $ */
+/*	$Id: mdoc_argv.c,v 1.94 2014/07/02 03:48:07 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012 Ingo Schwarze <schwarze@openbsd.org>
@@ -461,7 +461,8 @@ args(struct mdoc *mdoc, int line, int *pos,
 		 * is unterminated.
 		 */
 		if (MDOC_PHRASELIT & mdoc->flags)
-			mdoc_pmsg(mdoc, line, *pos, MANDOCERR_BADQUOTE);
+			mandoc_msg(MANDOCERR_ARG_QUOTE,
+			    mdoc->parse, line, *pos, NULL);
 
 		mdoc->flags &= ~MDOC_PHRASELIT;
 		return(ARGS_EOLN);
@@ -520,7 +521,8 @@ args(struct mdoc *mdoc, int line, int *pos,
 
 		/* Whitespace check for eoln case... */
 		if ('\0' == *p && ' ' == *(p - 1))
-			mdoc_pmsg(mdoc, line, *pos, MANDOCERR_EOLNSPACE);
+			mandoc_msg(MANDOCERR_SPACE_EOL, mdoc->parse,
+			    line, *pos, NULL);
 
 		*pos += (int)(p - *v);
 
@@ -575,7 +577,8 @@ args(struct mdoc *mdoc, int line, int *pos,
 		if ('\0' == buf[*pos]) {
 			if (MDOC_PPHRASE & mdoc->flags)
 				return(ARGS_QWORD);
-			mdoc_pmsg(mdoc, line, *pos, MANDOCERR_BADQUOTE);
+			mandoc_msg(MANDOCERR_ARG_QUOTE,
+			    mdoc->parse, line, *pos, NULL);
 			return(ARGS_QWORD);
 		}
 
@@ -589,7 +592,8 @@ args(struct mdoc *mdoc, int line, int *pos,
 			(*pos)++;
 
 		if ('\0' == buf[*pos])
-			mdoc_pmsg(mdoc, line, *pos, MANDOCERR_EOLNSPACE);
+			mandoc_msg(MANDOCERR_SPACE_EOL, mdoc->parse,
+			    line, *pos, NULL);
 
 		return(ARGS_QWORD);
 	}

@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.42 2014/04/23 21:06:41 schwarze Exp $ */
+/*	$Id: eqn.c,v 1.43 2014/07/04 16:12:08 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -768,7 +768,7 @@ again:
 			ep->cur++;
 	} else {
 		if (q)
-			EQN_MSG(MANDOCERR_BADQUOTE, ep);
+			EQN_MSG(MANDOCERR_ARG_QUOTE, ep);
 		next = strchr(start, '\0');
 		*sz = (size_t)(next - start);
 		ep->cur += *sz;

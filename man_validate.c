@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.97 2014/07/04 16:12:08 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.98 2014/07/05 12:34:17 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -230,7 +230,8 @@ check_text(CHKARGS)
 
 	cp = n->string;
 	for (p = cp; NULL != (p = strchr(p, '\t')); p++)
-		man_pmsg(man, n->line, (int)(p - cp), MANDOCERR_BADTAB);
+		mandoc_msg(MANDOCERR_FI_TAB, man->parse,
+		    n->line, n->pos + (p - cp), NULL);
 }
 
 #define	INEQ_DEFINE(x, ineq, name) \

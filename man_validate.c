@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.98 2014/07/05 12:34:17 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.99 2014/07/06 19:09:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -190,10 +190,9 @@ static int
 check_root(CHKARGS)
 {
 
-	if (MAN_BLINE & man->flags)
-		man_nmsg(man, n, MANDOCERR_SCOPEEXIT);
-	else if (MAN_ELINE & man->flags)
-		man_nmsg(man, n, MANDOCERR_SCOPEEXIT);
+	if ((MAN_BLINE | MAN_ELINE) & man->flags)
+		mandoc_msg(MANDOCERR_BLK_LINE, man->parse,
+		    0, 0, "at end of file");
 
 	man->flags &= ~MAN_BLINE;
 	man->flags &= ~MAN_ELINE;

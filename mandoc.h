@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.137 2014/07/06 19:09:00 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.138 2014/07/07 11:35:06 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -139,7 +139,6 @@ enum	mandocerr {
 	MANDOCERR_BADCHAR, /* skipping bad character */
 	MANDOCERR_NAMESC, /* escaped character not allowed in a name */
 	MANDOCERR_NONAME, /* manual name not yet set */
-	MANDOCERR_NOTEXT, /* skipping text before first section header */
 	MANDOCERR_MACRO, /* skipping unknown macro */
 	MANDOCERR_ARGCOUNT, /* argument count wrong */
 	MANDOCERR_RS_SKIP, /* skipping invalid content in .Rs block: macro */

@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.55 2014/07/09 09:27:01 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.56 2014/07/09 11:34:46 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@usta.de>
@@ -27,13 +27,6 @@
 #include <string.h>
 #include <unistd.h>
 
-#if defined(__sun)
-/* for stat() */
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#endif
-
 #include "mandoc.h"
 #include "mandoc_aux.h"
 #include "main.h"
@@ -61,7 +54,7 @@ struct	query {
 struct	req {
 	struct query	 q;
 	char		**p; /* array of available manroots */
-	size_t		 psz;
+	size_t		 psz; /* number of available manroots */
 	enum page	 page;
 };
 
@@ -129,6 +122,7 @@ html_putchar(char c)
 		break;
 	}
 }
+
 static void
 http_printquery(const struct req *req)
 {
@@ -150,7 +144,6 @@ http_printquery(const struct req *req)
 		http_print(req->q.expr ? req->q.expr : "");
 	}
 }
-
 
 static void
 html_printquery(const struct req *req)

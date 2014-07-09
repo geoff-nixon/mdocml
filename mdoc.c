@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.218 2014/07/06 19:09:00 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.219 2014/07/07 15:03:43 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -189,7 +189,7 @@ mdoc_free(struct mdoc *mdoc)
  */
 struct mdoc *
 mdoc_alloc(struct roff *roff, struct mparse *parse,
-	char *defos, int quick)
+	const char *defos, int quick)
 {
 	struct mdoc	*p;
 

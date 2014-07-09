@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.53 2014/07/09 08:53:28 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.54 2014/07/09 09:19:03 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@usta.de>
@@ -940,6 +940,8 @@ pathgen(struct req *req)
 		return;
 
 	while (NULL != (dp = fgetln(fp, &dpsz))) {
+		if ('\n' == dp[dpsz - 1])
+			dpsz--;
 		req->p = mandoc_realloc(req->p,
 		    (req->psz + 1) * sizeof(char *));
 		req->p[req->psz++] = mandoc_strndup(dp, dpsz);

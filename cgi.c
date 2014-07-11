@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.60 2014/07/09 17:03:07 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.61 2014/07/10 00:52:50 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@usta.de>
@@ -314,12 +314,12 @@ resp_begin_http(int code, const char *msg)
 {
 
 	if (200 != code)
-		printf("Status: %d %s\n", code, msg);
+		printf("Status: %d %s\r\n", code, msg);
 
-	puts("Content-Type: text/html; charset=utf-8\n"
-	     "Cache-Control: no-cache\n"
-	     "Pragma: no-cache\n"
-	     "");
+	printf("Content-Type: text/html; charset=utf-8\r\n"
+	     "Cache-Control: no-cache\r\n"
+	     "Pragma: no-cache\r\n"
+	     "\r\n");
 
 	fflush(stdout);
 }
@@ -484,12 +484,13 @@ resp_search(const struct req *req, struct manpage *r, size_t sz)
 		 * If we have just one result, then jump there now
 		 * without any delay.
 		 */
-		puts("Status: 303 See Other");
+		printf("Status: 303 See Other\r\n");
 		printf("Location: http://%s%s/show/%s/%s?",
 		    httphost, scriptname, req->q.manpath, r[0].file);
 		http_printquery(req);
-		puts("\n"
-		     "Content-Type: text/html; charset=utf-8\n");
+		printf("\r\n"
+		     "Content-Type: text/html; charset=utf-8\r\n"
+		     "\r\n");
 		return;
 	}
 

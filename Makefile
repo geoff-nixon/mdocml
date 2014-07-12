@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.421 2014/07/09 07:30:47 schwarze Exp $
+# $Id: Makefile,v 1.422 2014/07/10 00:31:10 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -65,7 +65,10 @@ INSTALL_MAN	 = $(INSTALL_DATA)
 # the dependency on SQLite3, comment the following two lines.
 DBLIB		 = -L/usr/local/lib -lsqlite3
 DBBIN		 = makewhatis manpage apropos
-DBBIN		+= man.cgi
+
+# To build man.cgi, copy cgi.h.example to cgi.h, edit it, and
+# either enable the following line or run "make man.cgi" by hand.
+#DBBIN		+= man.cgi
 
 # OpenBSD has the ohash functions in libutil.
 # Comment the following line if your system doesn't.
@@ -250,6 +253,7 @@ msec.o: msec.in
 roff.o: predefs.in
 st.o: st.in
 vol.o: vol.in
+cgi.o: cgi.h
 
 $(LIBMAN_OBJS): libman.h
 $(LIBMDOC_OBJS): libmdoc.h

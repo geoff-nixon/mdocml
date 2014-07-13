@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.422 2014/07/10 00:31:10 schwarze Exp $
+# $Id: Makefile,v 1.423 2014/07/12 18:32:47 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -376,9 +376,13 @@ install: all
 installcgi: all
 	mkdir -p $(DESTDIR)$(CGIBINDIR)
 	mkdir -p $(DESTDIR)$(HTDOCDIR)
+	mkdir -p $(DESTDIR)$(WWWPREFIX)/man/mandoc/man1
+	mkdir -p $(DESTDIR)$(WWWPREFIX)/man/mandoc/man8
 	$(INSTALL_PROGRAM) man.cgi $(DESTDIR)$(CGIBINDIR)
 	$(INSTALL_DATA) example.style.css $(DESTDIR)$(HTDOCDIR)/man.css
 	$(INSTALL_DATA) man-cgi.css $(DESTDIR)$(HTDOCDIR)
+	$(INSTALL_MAN) apropos.1 $(DESTDIR)$(WWWPREFIX)/man/mandoc/man1/
+	$(INSTALL_MAN) man.cgi.8 $(DESTDIR)$(WWWPREFIX)/man/mandoc/man8/
 
 installwww: www
 	mkdir -p $(DESTDIR)$(HTDOCDIR)/snapshots

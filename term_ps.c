@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.59 2014/04/20 16:46:05 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.60 2014/04/23 21:06:41 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -914,11 +914,8 @@ ps_pletter(struct termp *p, int c)
 
 	f = (int)p->ps->lastf;
 
-	if (c <= 32 || (c - 32 >= MAXCHAR)) {
-		ps_putchar(p, ' ');
-		p->ps->pscol += (size_t)fonts[f].gly[0].wx;
-		return;
-	}
+	if (c <= 32 || c - 32 >= MAXCHAR)
+		c = 32;
 
 	ps_putchar(p, (char)c);
 	c -= 32;
@@ -1104,9 +1101,10 @@ ps_width(const struct termp *p, int c)
 {
 
 	if (c <= 32 || c - 32 >= MAXCHAR)
-		return((size_t)fonts[(int)TERMFONT_NONE].gly[0].wx);
+		c = 0;
+	else
+		c -= 32;
 
-	c -= 32;
 	return((size_t)fonts[(int)TERMFONT_NONE].gly[c].wx);
 }
 

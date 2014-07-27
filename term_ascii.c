@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.24 2014/03/30 21:28:01 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.25 2014/04/20 16:46:05 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -269,7 +269,12 @@ locale_width(const struct termp *p, int c)
 {
 	int		rc;
 
-	return((rc = wcwidth(c)) < 0 ? 0 : rc);
+	if (c == ASCII_NBRSP)
+		c = ' ';
+	rc = wcwidth(c);
+	if (rc < 0)
+		rc = 0;
+	return(rc);
 }
 
 static void

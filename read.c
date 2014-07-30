@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.71 2014/07/30 12:58:21 schwarze Exp $ */
+/*	$Id: read.c,v 1.72 2014/07/30 14:50:08 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -185,6 +185,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"input stack limit exceeded, infinite loop?",
 	"skipping bad character",
 	"skipping unknown macro",
+	"skipping item outside list",
 	"skipping column outside column list",
 	"skipping end of block that is not open",
 	"inserting missing end of block",
@@ -206,7 +207,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"input too large",
 	"column syntax is inconsistent",
 	"NOT IMPLEMENTED: .Bd -file",
-	"child violates parent syntax",
 	"argument count wrong, violates syntax",
 	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
 	".so request failed",

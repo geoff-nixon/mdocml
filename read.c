@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.70 2014/07/30 00:19:16 schwarze Exp $ */
+/*	$Id: read.c,v 1.71 2014/07/30 12:58:21 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -204,14 +204,12 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"generic fatal error",
 
 	"input too large",
-	"not a manual",
 	"column syntax is inconsistent",
 	"NOT IMPLEMENTED: .Bd -file",
 	"child violates parent syntax",
 	"argument count wrong, violates syntax",
 	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
 	".so request failed",
-	"no document prologue",
 	"static buffer exhausted",
 
 	/* system errors */
@@ -264,18 +262,9 @@ pset(const char *buf, int pos, struct mparse *curp)
 	}
 
 	if (MPARSE_MDOC & curp->options) {
-		if (NULL == curp->pmdoc)
-			curp->pmdoc = mdoc_alloc(
-			    curp->roff, curp, curp->defos,
-			    MPARSE_QUICK & curp->options ? 1 : 0);
-		assert(curp->pmdoc);
 		curp->mdoc = curp->pmdoc;
 		return;
 	} else if (MPARSE_MAN & curp->options) {
-		if (NULL == curp->pman)
-			curp->pman = man_alloc(curp->roff, curp,
-			    MPARSE_QUICK & curp->options ? 1 : 0);
-		assert(curp->pman);
 		curp->man = curp->pman;
 		return;
 	}
@@ -683,6 +672,19 @@ mparse_end(struct mparse *curp)
 	if (MANDOCLEVEL_FATAL <= curp->file_status)
 		return;
 
+	if (curp->mdoc == NULL &&
+	    curp->man == NULL &&
+	    curp->sodest == NULL) {
+		if (curp->options & MPARSE_MDOC)
+			curp->mdoc = curp->pmdoc;
+		else {
+			if (curp->pman == NULL)
+				curp->pman = man_alloc(curp->roff, curp,
+				    curp->options & MPARSE_QUICK ? 1 : 0);
+			curp->man = curp->pman;
+		}
+	}
+
 	if (curp->mdoc && ! mdoc_endparse(curp->mdoc)) {
 		assert(MANDOCLEVEL_FATAL <= curp->file_status);
 		return;
@@ -690,12 +692,6 @@ mparse_end(struct mparse *curp)
 
 	if (curp->man && ! man_endparse(curp->man)) {
 		assert(MANDOCLEVEL_FATAL <= curp->file_status);
-		return;
-	}
-
-	if ( ! (curp->mdoc || curp->man || curp->sodest)) {
-		mandoc_msg(MANDOCERR_NOTMANUAL, curp, 0, 0, NULL);
-		curp->file_status = MANDOCLEVEL_FATAL;
 		return;
 	}
 
@@ -796,6 +792,14 @@ mparse_alloc(int options, enum mandoclevel wlevel,
 	curp->defos = defos;
 
 	curp->roff = roff_alloc(curp, options);
+	if (curp->options & MPARSE_MDOC)
+		curp->pmdoc = mdoc_alloc(
+		    curp->roff, curp, curp->defos,
+		    curp->options & MPARSE_QUICK ? 1 : 0);
+	if (curp->options & MPARSE_MAN)
+		curp->pman = man_alloc(curp->roff, curp,
+		    curp->options & MPARSE_QUICK ? 1 : 0);
+
 	return(curp);
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.234 2014/07/30 14:50:08 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.235 2014/07/30 17:06:26 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1210,7 +1210,6 @@ post_it(POST_ARGS)
 	int		  i, cols;
 	enum mdoc_list	  lt;
 	struct mdoc_node *nbl, *nit, *nch;
-	enum mandocerr	  er;
 
 	nit = mdoc->last;
 	if (MDOC_BLOCK != nit->type)
@@ -1261,16 +1260,11 @@ post_it(POST_ARGS)
 			if (MDOC_BODY == nch->type)
 				i++;
 
-		if (i < cols)
-			er = MANDOCERR_ARGCOUNT;
-		else if (i == cols || i == cols + 1)
-			break;
-		else
-			er = MANDOCERR_SYNTARGCOUNT;
-
-		mandoc_vmsg(er, mdoc->parse, nit->line, nit->pos,
-		    "columns == %d (have %d)", cols, i);
-		return(MANDOCERR_ARGCOUNT == er);
+		if (i < cols || i > cols + 1)
+			mandoc_vmsg(MANDOCERR_ARGCOUNT,
+			    mdoc->parse, nit->line, nit->pos,
+			    "columns == %d (have %d)", cols, i);
+		break;
 	default:
 		abort();
 	}

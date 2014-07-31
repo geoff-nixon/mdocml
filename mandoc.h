@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.147 2014/07/30 23:38:52 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.148 2014/07/31 00:41:10 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -100,11 +100,12 @@ enum	mandocerr {
 	MANDOCERR_ARG_STD, /* missing -std argument, adding it: macro */
 
 	/* related to bad arguments */
-	MANDOCERR_IGNARGV, /* skipping argument */
 	MANDOCERR_ARG_QUOTE, /* unterminated quoted argument */
 	MANDOCERR_ARG_REP, /* duplicate argument: macro arg */
+	MANDOCERR_AN_REP, /* skipping duplicate argument: An -arg */
 	MANDOCERR_BD_REP, /* skipping duplicate display type: type */
 	MANDOCERR_BL_REP, /* skipping duplicate list type: type */
+	MANDOCERR_BL_SKIPW, /* skipping -width argument: Bl -type */
 	MANDOCERR_AT_BAD, /* unknown AT&T UNIX version: version */
 	MANDOCERR_RS_BAD, /* invalid content in Rs block: macro */
 	MANDOCERR_SM_BAD, /* invalid Boolean argument: macro arg */

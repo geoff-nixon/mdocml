@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.73 2014/07/30 17:06:26 schwarze Exp $ */
+/*	$Id: read.c,v 1.74 2014/07/30 23:38:52 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -205,7 +205,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"generic fatal error",
 
 	"input too large",
-	"column syntax is inconsistent",
 	"NOT IMPLEMENTED: .Bd -file",
 	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
 	".so request failed",

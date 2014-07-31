@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.74 2014/07/30 23:38:52 schwarze Exp $ */
+/*	$Id: read.c,v 1.75 2014/07/31 00:41:10 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -144,11 +144,12 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"missing -std argument, adding it",
 
 	/* related to bad macro arguments */
-	"skipping argument",
 	"unterminated quoted argument",
 	"duplicate argument",
+	"skipping duplicate argument",
 	"skipping duplicate display type",
 	"skipping duplicate list type",
+	"skipping -width argument",
 	"unknown AT&T UNIX version",
 	"invalid content in Rs block",
 	"invalid Boolean argument",

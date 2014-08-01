@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.101 2014/07/30 23:01:39 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.102 2014/08/01 17:27:44 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -191,12 +191,14 @@ check_root(CHKARGS)
 	assert((man->flags & (MAN_BLINE | MAN_ELINE)) == 0);
 
 	if (NULL == man->first->child)
-		man_nmsg(man, n, MANDOCERR_DOC_EMPTY);
+		mandoc_msg(MANDOCERR_DOC_EMPTY, man->parse,
+		    n->line, n->pos, NULL);
 	else
 		man->meta.hasbody = 1;
 
 	if (NULL == man->meta.title) {
-		man_nmsg(man, n, MANDOCERR_TH_MISSING);
+		mandoc_msg(MANDOCERR_TH_MISSING, man->parse,
+		    n->line, n->pos, NULL);
 
 		/*
 		 * If a title hasn't been set, do so now (by

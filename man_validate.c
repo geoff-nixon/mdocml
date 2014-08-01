@@ -1,4 +1,4 @@
-/*	$Id: man_validate.c,v 1.100 2014/07/07 21:36:20 schwarze Exp $ */
+/*	$Id: man_validate.c,v 1.101 2014/07/30 23:01:39 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -404,10 +404,10 @@ post_TH(CHKARGS)
 			/* Only warn about this once... */
 			if (isalpha((unsigned char)*p) &&
 			    ! isupper((unsigned char)*p)) {
-				mandoc_msg(MANDOCERR_TITLE_CASE,
+				mandoc_vmsg(MANDOCERR_TITLE_CASE,
 				    man->parse, n->line,
 				    n->pos + (p - n->string),
-				    n->string);
+				    "TH %s", n->string);
 				break;
 			}
 		}
@@ -435,7 +435,9 @@ post_TH(CHKARGS)
 			n->line, n->pos);
 	} else {
 		man->meta.date = mandoc_strdup("");
-		man_nmsg(man, n ? n : nb, MANDOCERR_DATE_MISSING);
+		mandoc_msg(MANDOCERR_DATE_MISSING, man->parse,
+		    n ? n->line : nb->line,
+		    n ? n->pos : nb->pos, "TH");
 	}
 
 	/* TITLE MSEC DATE ->SOURCE<- VOL */
@@ -465,7 +467,8 @@ post_nf(CHKARGS)
 {
 
 	if (MAN_LITERAL & man->flags)
-		man_nmsg(man, n, MANDOCERR_NF_SKIP);
+		mandoc_msg(MANDOCERR_NF_SKIP, man->parse,
+		    n->line, n->pos, "nf");
 
 	man->flags |= MAN_LITERAL;
 	return(1);
@@ -476,7 +479,8 @@ post_fi(CHKARGS)
 {
 
 	if ( ! (MAN_LITERAL & man->flags))
-		man_nmsg(man, n, MANDOCERR_FI_SKIP);
+		mandoc_msg(MANDOCERR_FI_SKIP, man->parse,
+		    n->line, n->pos, "fi");
 
 	man->flags &= ~MAN_LITERAL;
 	return(1);

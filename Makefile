@@ -1,4 +1,4 @@
-# $Id$
+# $Id: Makefile,v 1.395.2.18 2014/04/24 00:36:44 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -83,7 +83,6 @@ TESTSRCS	 = test-betoh64.c \
 		   test-reallocarray.c \
 		   test-strlcat.c \
 		   test-strlcpy.c \
-		   test-strnlen.c \
 		   test-strptime.c
 
 SRCS		 = LICENSE \
@@ -109,7 +108,6 @@ SRCS		 = LICENSE \
 		   compat_strcasestr.c \
 		   compat_strlcat.c \
 		   compat_strlcpy.c \
-		   compat_strnlen.c \
 		   compat_strsep.c \
 		   config.h.post \
 		   config.h.pre \
@@ -233,7 +231,6 @@ COMPAT_OBJS	 = compat_fgetln.o \
 		   compat_strcasestr.o \
 		   compat_strlcat.o \
 		   compat_strlcpy.o \
-		   compat_strnlen.o \
 		   compat_strsep.o
 
 # === DEPENDENCY HANDLING ==============================================

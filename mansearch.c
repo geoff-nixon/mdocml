@@ -1,4 +1,4 @@
-/*	$Id: mansearch.c,v 1.38 2014/07/12 14:00:25 schwarze Exp $ */
+/*	$Id: mansearch.c,v 1.39 2014/07/24 20:30:45 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -38,6 +38,9 @@
 #include "compat_ohash.h"
 #endif
 #include <sqlite3.h>
+#ifndef SQLITE_DETERMINISTIC
+#define SQLITE_DETERMINISTIC 0
+#endif
 
 #include "mandoc.h"
 #include "mandoc_aux.h"

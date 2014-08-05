@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.90 2014/07/25 20:09:09 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.91 2014/07/25 21:05:41 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@usta.de>
@@ -23,6 +23,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <limits.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

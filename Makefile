@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.430 2014/08/05 05:48:56 schwarze Exp $
+# $Id: Makefile,v 1.431 2014/08/05 11:19:13 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -121,6 +121,7 @@ TESTSRCS	 = test-fgetln.c \
 		   test-mmap.c \
 		   test-ohash.c \
 		   test-reallocarray.c \
+		   test-sqlite3_errstr.c \
 		   test-strcasestr.c \
 		   test-strlcat.c \
 		   test-strlcpy.c \
@@ -136,6 +137,7 @@ SRCS		 = apropos.c \
 		   compat_getsubopt.c \
 		   compat_ohash.c \
 		   compat_reallocarray.c \
+		   compat_sqlite3_errstr.c \
 		   compat_strcasestr.c \
 		   compat_strlcat.c \
 		   compat_strlcpy.c \
@@ -281,6 +283,7 @@ COMPAT_OBJS	 = compat_fgetln.o \
 		   compat_getsubopt.o \
 		   compat_ohash.o \
 		   compat_reallocarray.o \
+		   compat_sqlite3_errstr.o \
 		   compat_strcasestr.o \
 		   compat_strlcat.o \
 		   compat_strlcpy.o \

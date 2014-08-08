@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.431 2014/08/05 11:19:13 schwarze Exp $
+# $Id: Makefile,v 1.432 2014/08/05 12:50:52 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-VERSION		 = 1.13.0
+VERSION		 = 1.13.1
 
 # === USER SETTINGS ====================================================
 
@@ -189,7 +189,8 @@ SRCS		 = apropos.c \
 		   vol.c \
 		   $(TESTSRCS)
 
-DISTFILES	 = LICENSE \
+DISTFILES	 = INSTALL \
+		   LICENSE \
 		   Makefile \
 		   Makefile.depend \
 		   NEWS \

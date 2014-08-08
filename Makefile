@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.432 2014/08/05 12:50:52 schwarze Exp $
+# $Id: Makefile,v 1.433 2014/08/08 20:34:06 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -488,7 +488,8 @@ mdocml.tar.gz: $(DISTFILES)
 
 config.h: configure config.h.pre config.h.post $(TESTSRCS)
 	rm -f config.log
-	CC="$(CC)" CFLAGS="$(CFLAGS)" VERSION="$(VERSION)" ./configure
+	CC="$(CC)" CFLAGS="$(CFLAGS)" DBLIB="$(DBLIB)" \
+		VERSION="$(VERSION)" ./configure
 
 .PHONY: 	 base-install cgi-install db-install install www-install
 .PHONY: 	 clean depend

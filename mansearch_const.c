@@ -1,4 +1,4 @@
-/*	$Id: mansearch_const.c,v 1.3 2014/04/09 21:50:08 schwarze Exp $ */
+/*	$Id: mansearch_const.c,v 1.4 2014/04/10 02:46:21 schwarze Exp $ */
 /*
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -14,6 +14,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <sys/types.h>
 #include <stdint.h>
 

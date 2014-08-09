@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.174 2014/07/29 15:20:10 schwarze Exp $
+* $Id: TODO,v 1.175 2014/08/08 20:04:36 schwarze Exp $
 ************************************************************************
 
 ************************************************************************
@@ -398,6 +398,10 @@
 ************************************************************************
 * performance issues
 ************************************************************************
+
+- Why are we using MAP_SHARED, not MAP_PRIVATE for mmap(2)?
+  How does SQLITE_CONFIG_PAGECACHE actually work?  Document it!
+  from kristaps@  Sat, 09 Aug 2014 13:51:36 +0200
 
 Several areas can be cleaned up to make mandoc even faster.  These are 
 

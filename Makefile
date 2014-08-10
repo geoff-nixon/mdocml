@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.433 2014/08/08 20:34:06 schwarze Exp $
+# $Id: Makefile,v 1.434 2014/08/08 23:47:21 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -52,9 +52,10 @@ INSTALL_MAN	 = $(INSTALL_DATA)
 
 # --- user settings related to database support ------------------------
 
-# If you want to build without database support, for example to avoid
-# the dependency on SQLite3, comment the following line.
-# However, you won't get apropos(1) and makewhatis(8) in that case.
+# Building apropos(1) and makewhatis(8) requires both SQLite3 and fts(3).
+# To avoid those dependencies, comment the following line.
+# Be careful: the fts(3) implementation in glibc is broken on 32bit
+# machines, see: https://sourceware.org/bugzilla/show_bug.cgi?id=15838
 #
 BUILD_TARGETS	+= db-build
 

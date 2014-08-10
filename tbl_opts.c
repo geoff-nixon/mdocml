@@ -1,4 +1,4 @@
-/*	$Id: tbl_opts.c,v 1.12 2011/09/18 14:14:15 schwarze Exp $ */
+/*	$Id: tbl_opts.c,v 1.13 2014/04/20 16:46:05 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,9 +14,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
+
+#include <sys/types.h>
 
 #include <ctype.h>
 #include <stdio.h>

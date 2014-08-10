@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.9 2014/03/19 22:05:10 schwarze Exp $ */
+/*	$Id: demandoc.c,v 1.10 2014/03/19 22:20:43 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,9 +14,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
+
+#include <sys/types.h>
 
 #include <assert.h>
 #include <ctype.h>

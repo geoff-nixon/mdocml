@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.78 2014/08/01 17:27:44 schwarze Exp $ */
+/*	$Id: read.c,v 1.79 2014/08/06 15:09:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -16,13 +16,12 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
+#include <sys/types.h>
 #ifdef HAVE_MMAP
-# include <sys/stat.h>
-# include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/mman.h>
 #endif
 
 #include <assert.h>

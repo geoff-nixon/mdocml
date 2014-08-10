@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.25 2014/03/28 23:26:25 schwarze Exp $ */
+/*	$Id: tbl_layout.c,v 1.26 2014/04/20 16:46:05 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,9 +15,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
+
+#include <sys/types.h>
 
 #include <ctype.h>
 #include <stdlib.h>

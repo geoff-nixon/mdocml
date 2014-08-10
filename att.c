@@ -1,4 +1,4 @@
-/*	$Id: att.c,v 1.10 2014/03/23 11:25:25 schwarze Exp $ */
+/*	$Id: att.c,v 1.11 2014/04/20 16:46:04 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,9 +14,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
+
+#include <sys/types.h>
 
 #include <string.h>
 

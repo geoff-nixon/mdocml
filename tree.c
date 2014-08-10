@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.52 2014/04/20 16:46:05 schwarze Exp $ */
+/*	$Id: tree.c,v 1.53 2014/07/02 07:10:38 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,9 +15,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
+
+#include <sys/types.h>
 
 #include <assert.h>
 #include <limits.h>

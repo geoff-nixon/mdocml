@@ -1,4 +1,4 @@
-/*	$Id: preconv.c,v 1.5 2011/07/24 18:15:14 kristaps Exp $ */
+/*	$Id: preconv.c,v 1.6 2013/06/02 03:52:21 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,10 +14,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
+#include <sys/types.h>
 #ifdef HAVE_MMAP
 #include <sys/stat.h>
 #include <sys/mman.h>

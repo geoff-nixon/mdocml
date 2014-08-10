@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.138 2014/07/30 17:06:26 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.139 2014/08/01 17:27:44 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,9 +15,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
+
+#include <sys/types.h>
 
 #include <assert.h>
 #include <ctype.h>

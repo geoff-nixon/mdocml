@@ -1,4 +1,4 @@
-/*	$Id: eqn_html.c,v 1.2 2011/07/24 10:09:03 kristaps Exp $ */
+/*	$Id: eqn_html.c,v 1.3 2014/04/20 16:46:04 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,9 +14,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
+
+#include <sys/types.h>
 
 #include <assert.h>
 #include <stdio.h>

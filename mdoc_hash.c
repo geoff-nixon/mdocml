@@ -1,4 +1,4 @@
-/*	$Id: mdoc_hash.c,v 1.19 2014/03/23 11:25:26 schwarze Exp $ */
+/*	$Id: mdoc_hash.c,v 1.20 2014/04/20 16:46:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,9 +14,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <sys/types.h>
 

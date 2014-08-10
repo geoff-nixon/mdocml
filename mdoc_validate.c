@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.242 2014/08/02 00:02:42 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.243 2014/08/06 15:09:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -16,15 +16,12 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
+#include <sys/types.h>
 #ifndef OSNAME
 #include <sys/utsname.h>
 #endif
-
-#include <sys/types.h>
 
 #include <assert.h>
 #include <ctype.h>

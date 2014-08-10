@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.38 2014/04/11 15:46:52 schwarze Exp $ */
+/*	$Id: apropos.c,v 1.39 2014/04/20 16:46:04 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,10 +15,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
+
 #include <sys/param.h>
+#include <sys/types.h>
 
 #include <assert.h>
 #include <getopt.h>

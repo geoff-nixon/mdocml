@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.26 2014/07/27 21:52:16 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.27 2014/08/01 19:25:52 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,21 +15,19 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <sys/types.h>
 
 #ifdef USE_WCHAR
-# include <locale.h>
+#include <locale.h>
 #endif
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #ifdef USE_WCHAR
-# include <wchar.h>
+#include <wchar.h>
 #endif
 
 #include "mandoc.h"

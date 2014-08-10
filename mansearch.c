@@ -1,4 +1,4 @@
-/*	$Id: mansearch.c,v 1.41 2014/08/05 14:43:10 schwarze Exp $ */
+/*	$Id: mansearch.c,v 1.42 2014/08/09 14:24:53 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,11 +15,11 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <sys/mman.h>
+#include <sys/types.h>
+
 #include <assert.h>
 #include <fcntl.h>
 #include <getopt.h>

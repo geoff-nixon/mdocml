@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.155 2014/08/06 15:09:05 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.156 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -25,7 +25,11 @@
 #include <ctype.h>
 #include <errno.h>
 #include <fcntl.h>
+#ifdef HAVE_FTS
 #include <fts.h>
+#else
+#include "compat_fts.h"
+#endif
 #include <getopt.h>
 #include <limits.h>
 #include <stddef.h>

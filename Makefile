@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.436 2014/08/10 23:54:41 schwarze Exp $
+# $Id: Makefile,v 1.437 2014/08/11 01:39:00 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -115,7 +115,9 @@ CGIBIN		 = man.cgi
 
 DBLIB		+= -lsqlite3
 
-TESTSRCS	 = test-fgetln.c \
+TESTSRCS	 = test-dirent-namlen.c \
+		   test-fgetln.c \
+		   test-fts.c \
 		   test-getsubopt.c \
 		   test-mmap.c \
 		   test-ohash.c \

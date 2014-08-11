@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.435 2014/08/10 02:45:04 schwarze Exp $
+# $Id: Makefile,v 1.436 2014/08/10 23:54:41 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -52,10 +52,8 @@ INSTALL_MAN	 = $(INSTALL_DATA)
 
 # --- user settings related to database support ------------------------
 
-# Building apropos(1) and makewhatis(8) requires both SQLite3 and fts(3).
-# To avoid those dependencies, comment the following line.
-# Be careful: the fts(3) implementation in glibc is broken on 32bit
-# machines, see: https://sourceware.org/bugzilla/show_bug.cgi?id=15838
+# Building apropos(1) and makewhatis(8) requires SQLite3.
+# To avoid that dependency, comment the following line.
 #
 BUILD_TARGETS	+= db-build
 
@@ -135,6 +133,7 @@ SRCS		 = apropos.c \
 		   cgi.c \
 		   chars.c \
 		   compat_fgetln.c \
+		   compat_fts.c \
 		   compat_getsubopt.c \
 		   compat_ohash.c \
 		   compat_reallocarray.c \
@@ -201,6 +200,7 @@ DISTFILES	 = INSTALL \
 		   att.in \
 		   cgi.h.example \
 		   chars.in \
+		   compat_fts.h \
 		   compat_ohash.h \
 		   config.h.post \
 		   config.h.pre \
@@ -282,6 +282,7 @@ LIBMANDOC_OBJS	 = $(LIBMAN_OBJS) \
 		   read.o
 
 COMPAT_OBJS	 = compat_fgetln.o \
+		   compat_fts.o \
 		   compat_getsubopt.o \
 		   compat_ohash.o \
 		   compat_reallocarray.o \

@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.395.2.25 2014/08/05 05:51:33 schwarze Exp $
+# $Id: Makefile,v 1.395.2.26 2014/08/05 11:19:46 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -34,8 +34,8 @@ VERSION		 = 1.12.4
 #
 CFLAGS	 	+= -DUSE_WCHAR
 
-CFLAGS		+= -g -DHAVE_CONFIG_H
-CFLAGS     	+= -W -Wall -Wstrict-prototypes -Wno-unused-parameter -Wwrite-strings
+CFLAGS		+= -g -W -Wall -Wstrict-prototypes
+CFLAGS     	+= -Wno-unused-parameter -Wwrite-strings
 PREFIX		 = /usr/local
 BINDIR		 = $(PREFIX)/bin
 INCLUDEDIR	 = $(PREFIX)/include/mandoc

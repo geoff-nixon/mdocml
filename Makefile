@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.437 2014/08/11 01:39:00 schwarze Exp $
+# $Id: Makefile,v 1.438 2014/08/11 03:19:39 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -30,7 +30,7 @@ VERSION		 = 1.13.1
 # putwchar()) AND has __STDC_ISO_10646__ (that is, wchar_t is simply a
 # UCS-4 value) should you define USE_WCHAR.  If you define it and your
 # system DOESN'T support this, -Tlocale will produce garbage.
-# If you don't define it, -Tlocale is a synonym for -Tacsii.
+# If you don't define it, -Tlocale is a synonym for -Tascii.
 #
 CFLAGS	 	+= -DUSE_WCHAR
 

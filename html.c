@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.160 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: html.c,v 1.161 2014/08/13 15:25:22 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -760,6 +760,8 @@ bufcat_su(struct html *h, const char *p, const struct roffsu *su)
 	v = su->scale;
 	if (SCALE_MM == su->unit && 0.0 == (v /= 100.0))
 		v = 1.0;
+	else if (SCALE_BU == su->unit)
+		v /= 24.0;
 
 	bufcat_fmt(h, "%s: %.2f%s;", p, v, roffscales[su->unit]);
 }

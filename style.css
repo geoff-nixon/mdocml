@@ -1,4 +1,4 @@
-/* $Id: style.css,v 1.25 2011/08/26 09:03:17 kristaps Exp $ */
+/* $Id: style.css,v 1.26 2014/08/13 15:25:22 schwarze Exp $ */
 
 /*
  * This is an example style-sheet provided for mandoc(1) and the -Thtml
@@ -34,7 +34,7 @@ td.head-rtitle	{ width: 10%; text-align: right; } /* Document header: right-titl
 /* General font modes. */
 
 i		{ } /* Italic: BI, IB, I, (implicit). */
-em		{ font-style: italic; font-weight: normal; } /* Emphasis: Em, Bl -emphasis. */
+.emph		{ font-style: italic; font-weight: normal; } /* Emphasis: Em, Bl -emphasis. */
 b		{ } /* Bold: SB, BI, IB, BR, RB, B, (implicit). */
 .symb		{ font-style: normal; font-weight: bold; } /* Symbolic: Sy, Ms, Bf -symbolic. */
 small		{ } /* Small: SB, SM. */

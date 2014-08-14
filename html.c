@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.161 2014/08/13 15:25:22 schwarze Exp $ */
+/*	$Id: html.c,v 1.162 2014/08/13 20:34:29 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -74,7 +74,6 @@ static	const struct htmldata htmltags[TAG_MAX] = {
 	{"i",		0 }, /* TAG_I */
 	{"code",	0 }, /* TAG_CODE */
 	{"small",	0 }, /* TAG_SMALL */
-	{"em",		0 }, /* TAG_EM */
 };
 
 static	const char	*const htmlattrs[ATTR_MAX] = {

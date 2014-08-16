@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.79 2014/08/06 15:09:05 schwarze Exp $ */
+/*	$Id: read.c,v 1.80 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -19,7 +19,7 @@
 #include "config.h"
 
 #include <sys/types.h>
-#ifdef HAVE_MMAP
+#if HAVE_MMAP
 #include <sys/stat.h>
 #include <sys/mman.h>
 #endif
@@ -590,7 +590,7 @@ read_whole_file(struct mparse *curp, const char *file, int fd,
 	size_t		 off;
 	ssize_t		 ssz;
 
-#ifdef	HAVE_MMAP
+#if HAVE_MMAP
 	struct stat	 st;
 	if (-1 == fstat(fd, &st)) {
 		curp->file_status = MANDOCLEVEL_SYSERR;
@@ -763,7 +763,7 @@ mparse_readfd(struct mparse *curp, int fd, const char *file)
 
 	mparse_parse_buffer(curp, blk, file);
 
-#ifdef	HAVE_MMAP
+#if HAVE_MMAP
 	if (with_mmap)
 		munmap(blk.buf, blk.sz);
 	else

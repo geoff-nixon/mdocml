@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.15 2014/04/23 21:06:41 schwarze Exp $ */
+/*	$Id: manpath.c,v 1.16 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -39,7 +39,7 @@ void
 manpath_parse(struct manpaths *dirs, const char *file,
 		char *defp, char *auxp)
 {
-#ifdef	USE_MANPATH
+#if HAVE_MANPATH
 	char		 cmd[(PATH_MAX * 3) + 20];
 	FILE		*stream;
 	char		*buf;

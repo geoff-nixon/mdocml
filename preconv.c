@@ -1,4 +1,4 @@
-/*	$Id: preconv.c,v 1.6 2013/06/02 03:52:21 schwarze Exp $ */
+/*	$Id: preconv.c,v 1.7 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -17,7 +17,7 @@
 #include "config.h"
 
 #include <sys/types.h>
-#ifdef HAVE_MMAP
+#if HAVE_MMAP
 #include <sys/stat.h>
 #include <sys/mman.h>
 #endif
@@ -244,7 +244,7 @@ read_whole_file(const char *f, int fd,
 	size_t		 off;
 	ssize_t		 ssz;
 
-#ifdef	HAVE_MMAP
+#if HAVE_MMAP
 	struct stat	 st;
 	if (-1 == fstat(fd, &st)) {
 		perror(f);
@@ -508,7 +508,7 @@ main(int argc, char *argv[])
 
 	rc = EXIT_SUCCESS;
 out:
-#ifdef	HAVE_MMAP
+#if HAVE_MMAP
 	if (map)
 		munmap(b.buf, b.sz);
 	else 

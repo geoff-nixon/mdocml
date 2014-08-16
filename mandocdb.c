@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.156 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.157 2014/08/11 01:39:00 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -25,7 +25,7 @@
 #include <ctype.h>
 #include <errno.h>
 #include <fcntl.h>
-#ifdef HAVE_FTS
+#if HAVE_FTS
 #include <fts.h>
 #else
 #include "compat_fts.h"
@@ -39,7 +39,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#ifdef HAVE_OHASH
+#if HAVE_OHASH
 #include <ohash.h>
 #else
 #include "compat_ohash.h"

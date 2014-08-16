@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.177 2014/06/21 22:24:01 schwarze Exp $ */
+/*	$Id: main.c,v 1.178 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -68,6 +68,10 @@ struct	curparse {
 	char		  outopts[BUFSIZ]; /* buf of output opts */
 };
 
+#if HAVE_SQLITE3
+int			  apropos(int, char**);
+#endif
+
 static	int		  moptions(int *, char *);
 static	void		  mmsg(enum mandocerr, enum mandoclevel,
 				const char *, int, int, const char *);
@@ -95,6 +99,12 @@ main(int argc, char *argv[])
 		progname = argv[0];
 	else
 		++progname;
+
+#if HAVE_SQLITE3
+	if (0 == strncmp(progname, "apropos", 7) ||
+	    0 == strncmp(progname, "whatis", 6))
+		return(apropos(argc, argv));
+#endif
 
 	memset(&curp, 0, sizeof(struct curparse));
 

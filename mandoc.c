@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.83 2014/07/06 19:09:00 schwarze Exp $ */
+/*	$Id: mandoc.c,v 1.84 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -455,7 +455,7 @@ a2time(time_t *t, const char *fmt, const char *p)
 	memset(&tm, 0, sizeof(struct tm));
 
 	pp = NULL;
-#ifdef	HAVE_STRPTIME
+#if HAVE_STRPTIME
 	pp = strptime(p, fmt, &tm);
 #endif
 	if (NULL != pp && '\0' == *pp) {

@@ -1,4 +1,4 @@
-/*	$Id: apropos.c,v 1.39 2014/04/20 16:46:04 schwarze Exp $ */
+/*	$Id: apropos.c,v 1.40 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -33,7 +33,7 @@
 
 
 int
-main(int argc, char *argv[])
+apropos(int argc, char *argv[])
 {
 	int		 ch, whatis;
 	struct mansearch search;

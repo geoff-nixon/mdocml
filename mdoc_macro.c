@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.139 2014/08/01 17:27:44 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.140 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013 Ingo Schwarze <schwarze@openbsd.org>
@@ -1041,7 +1041,8 @@ blk_full(MACRO_PROT_ARGS)
 
 	if (tok == MDOC_It) {
 		for (n = mdoc->last; n; n = n->parent)
-			if (n->tok == MDOC_Bl)
+			if (n->tok == MDOC_Bl &&
+			    ! (n->flags & MDOC_VALID))
 				break;
 		if (n == NULL) {
 			mandoc_vmsg(MANDOCERR_IT_STRAY, mdoc->parse,

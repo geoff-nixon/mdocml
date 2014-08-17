@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.30 2014/08/14 22:33:10 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.31 2014/08/16 19:00:01 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -253,7 +253,7 @@ ascii_hspan(const struct termp *p, const struct roffsu *su)
 	case SCALE_EM:
 		r = su->scale;
 		break;
-	case SCALE_MAX:
+	default:
 		abort();
 		/* NOTREACHED */
 	}

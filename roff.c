@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.224 2014/08/01 17:27:44 schwarze Exp $ */
+/*	$Id: roff.c,v 1.225 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -27,8 +27,8 @@
 
 #include "mandoc.h"
 #include "mandoc_aux.h"
-#include "libroff.h"
 #include "libmandoc.h"
+#include "libroff.h"
 
 /* Maximum number of nested if-else conditionals. */
 #define	RSTACK_MAX	128

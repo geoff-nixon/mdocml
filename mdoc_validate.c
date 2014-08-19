@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.243 2014/08/06 15:09:05 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.244 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -529,7 +529,7 @@ pre_bl(PRE_ARGS)
 	 * ones.  If we find no list type, we default to LIST_item.
 	 */
 
-	wa = n->args->argv;
+	wa = (n->args == NULL) ? NULL : n->args->argv;
 	mdoclt = MDOC_ARG_MAX;
 	for (i = 0; n->args && i < (int)n->args->argc; i++) {
 		argv = n->args->argv + i;

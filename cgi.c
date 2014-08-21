@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.93 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.94 2014/08/17 03:24:47 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@usta.de>
@@ -18,6 +18,7 @@
 #include "config.h"
 
 #include <sys/types.h>
+#include <sys/time.h>
 
 #include <ctype.h>
 #include <errno.h>
@@ -1029,9 +1030,22 @@ int
 main(void)
 {
 	struct req	 req;
+	struct itimerval itimer;
 	const char	*path;
 	const char	*querystring;
 	int		 i;
+
+	/* Poor man's ReDoS mitigation. */
+
+	itimer.it_value.tv_sec = 1;
+	itimer.it_value.tv_usec = 0;
+	itimer.it_interval.tv_sec = 1;
+	itimer.it_interval.tv_usec = 0;
+	if (setitimer(ITIMER_VIRTUAL, &itimer, NULL) == -1) {
+		fprintf(stderr, "setitimer: %s\n", strerror(errno));
+		pg_error_internal();
+		return(EXIT_FAILURE);
+	}
 
 	/* Scan our run-time environment. */
 

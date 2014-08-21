@@ -1,4 +1,4 @@
-$Id: LICENSE,v 1.2 2014/04/23 21:06:41 schwarze Exp $
+$Id: LICENSE,v 1.3 2014/08/11 01:39:00 schwarze Exp $
 
 With the exceptions noted below, all code and documentation
 contained in the mdocml toolkit is protected by the Copyright
@@ -38,7 +38,8 @@ other people's Copyright and are distributed under a 3-clause BSD
 license; see these individual files for details.
 
 compat_fts.c, compat_fts.h,
-compat_getsubopt.c, compat_strcasestr.c, compat_strsep.c:
+compat_getsubopt.c, compat_strcasestr.c, compat_strsep.c,
+man.1:
 Copyright (c) 1989,1990,1993,1994 The Regents of the University of California
 
 compat_fgetln.c:

@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.106 2014/08/08 01:50:59 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.107 2014/08/22 03:42:18 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 8 2014 $
+.Dd $Mdocdate: August 22 2014 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -440,6 +440,21 @@ See
 .Sx HTML Output
 for details; beyond generating XHTML tags instead of HTML tags, these
 output modes are identical.
+.Sh ENVIRONMENT
+.Bl -tag -width MANPAGER
+.It Ev MANPAGER
+Any non-empty value of the environment variable
+.Ev MANPAGER
+will be used instead of the standard pagination program,
+.Xr more 1 .
+.It Ev PAGER
+Specifies the pagination program to use when
+.Ev MANPAGER
+is not defined.
+If neither PAGER nor MANPAGER is defined,
+.Pa /usr/bin/more Fl s
+will be used.
+.El
 .Sh EXIT STATUS
 The
 .Nm

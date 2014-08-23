@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.185 2014/08/22 18:07:15 schwarze Exp $ */
+/*	$Id: main.c,v 1.186 2014/08/23 00:34:59 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -282,6 +282,14 @@ main(int argc, char *argv[])
 			usage(search.argmode);
 		manpath_free(&paths);
 		resp = res;
+
+		if (sz == 0) {
+			if (search.argmode == ARG_NAME)
+				fprintf(stderr, "%s: No entry for %s "
+				    "in the manual.\n", progname, argv[0]);
+			rc = MANDOCLEVEL_BADARG;
+			goto out;
+		}
 
 		/*
 		 * For standard man(1) and -a output mode,

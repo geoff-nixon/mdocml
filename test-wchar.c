@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: test-wchar.c,v 1.1 2014/08/16 19:00:01 schwarze Exp $	*/
 /*
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -14,6 +14,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+
+#if defined(__linux__) || defined(__MINT__)
+#define _GNU_SOURCE /* wcwidth() */
+#endif
 
 #include <locale.h>
 #include <stdio.h>
@@ -50,7 +54,7 @@ main(void)
 
 	dup2(STDERR_FILENO, STDOUT_FILENO);
 	wc = L'*';
-	if (putwchar(wc) != wc) {
+	if (putwchar(wc) != (wint_t)wc) {
 		fputs("bad putwchar return value\n", stderr);
 		return(1);
 	}

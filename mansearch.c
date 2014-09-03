@@ -1,4 +1,4 @@
-/*	$Id: mansearch.c,v 1.46 2014/08/21 20:29:07 schwarze Exp $ */
+/*	$Id: mansearch.c,v 1.47 2014/09/01 22:45:53 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -80,7 +80,7 @@ struct	expr {
 struct	match {
 	uint64_t	 pageid; /* identifier in database */
 	char		*desc; /* manual page description */
-	int		 form; /* 0 == catpage */
+	int		 form; /* bit field: formatted, zipped? */
 };
 
 static	void		 buildnames(struct manpage *, sqlite3 *,
@@ -398,6 +398,7 @@ buildnames(struct manpage *mpage, sqlite3 *db, sqlite3_stmt *s,
 {
 	char		*newnames, *prevsec, *prevarch;
 	const char	*oldnames, *sep1, *name, *sec, *sep2, *arch, *fsec;
+	const char	*gzip;
 	size_t		 i;
 	int		 c;
 
@@ -463,16 +464,20 @@ buildnames(struct manpage *mpage, sqlite3 *db, sqlite3_stmt *s,
 		if (NULL != mpage->file)
 			continue;
 
-		if (form) {
+		if (form & FORM_SRC) {
 			sep1 = "man";
 			fsec = sec;
 		} else {
 			sep1 = "cat";
 			fsec = "0";
 		}
+		if (form & FORM_GZ)
+			gzip = ".gz";
+		else
+			gzip = "";
 		sep2 = '\0' == *arch ? "" : "/";
-		mandoc_asprintf(&mpage->file, "%s/%s%s%s%s/%s.%s",
-		    path, sep1, sec, sep2, arch, name, fsec);
+		mandoc_asprintf(&mpage->file, "%s/%s%s%s%s/%s.%s%s",
+		    path, sep1, sec, sep2, arch, name, fsec, gzip);
 	}
 	if (SQLITE_DONE != c)
 		fprintf(stderr, "%s\n", sqlite3_errmsg(db));

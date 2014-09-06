@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.226 2014/08/19 16:52:32 schwarze Exp $ */
+/*	$Id: roff.c,v 1.227 2014/09/06 22:39:36 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -758,6 +758,15 @@ roff_parseln(struct roff *r, int ln, char **bufp,
 			return(tbl_read(r->tbl, ln, *bufp, pos));
 		return(roff_parsetext(bufp, szp, pos, offs));
 	}
+
+	/* Skip empty request lines. */
+
+	if ((*bufp)[pos] == '"') {
+		mandoc_msg(MANDOCERR_COMMENT_BAD, r->parse,
+		    ln, pos, NULL);
+		return(ROFF_IGN);
+	} else if ((*bufp)[pos] == '\0')
+		return(ROFF_IGN);
 
 	/*
 	 * If a scope is open, go to the child handler for that macro,

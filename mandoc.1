@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.109 2014/08/30 18:08:10 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.110 2014/09/03 05:22:45 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 30 2014 $
+.Dd $Mdocdate: September 3 2014 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -766,6 +766,12 @@ The same standard section title occurs more than once.
 .Pq mdoc
 A standard section header occurs in a section of the manual
 where it normally isn't useful.
+.It Sy "AUTHORS section without An macro"
+.Pq mdoc
+An AUTHORS sections contains no
+.Ic \&An
+macros, or only empty ones.
+Probably, there are author names lacking markup.
 .El
 .Ss "Warnings related to macros and nesting"
 .Bl -ohang

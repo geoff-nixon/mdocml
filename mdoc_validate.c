@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.247 2014/09/07 23:25:01 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.248 2014/09/11 23:53:30 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -100,6 +100,7 @@ static	int	 post_en(POST_ARGS);
 static	int	 post_es(POST_ARGS);
 static	int	 post_eoln(POST_ARGS);
 static	int	 post_ex(POST_ARGS);
+static	int	 post_fa(POST_ARGS);
 static	int	 post_fo(POST_ARGS);
 static	int	 post_hyph(POST_ARGS);
 static	int	 post_hyphtext(POST_ARGS);
@@ -157,10 +158,10 @@ static	const struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, NULL },				/* Er */
 	{ NULL, NULL },				/* Ev */
 	{ pre_std, post_ex },			/* Ex */
-	{ NULL, NULL },				/* Fa */
+	{ NULL, post_fa },			/* Fa */
 	{ NULL, ewarn_ge1 },			/* Fd */
 	{ NULL, NULL },				/* Fl */
-	{ NULL, NULL },				/* Fn */
+	{ NULL, post_fa },			/* Fn */
 	{ NULL, NULL },				/* Ft */
 	{ NULL, NULL },				/* Ic */
 	{ NULL, ewarn_eq1 },			/* In */
@@ -1004,6 +1005,28 @@ post_fo(POST_ARGS)
 
 	hwarn_eq1(mdoc);
 	bwarn_ge1(mdoc);
+	return(1);
+}
+
+static int
+post_fa(POST_ARGS)
+{
+	const struct mdoc_node *n;
+	const char *cp;
+
+	for (n = mdoc->last->child; n != NULL; n = n->next) {
+		for (cp = n->string; *cp != '\0'; cp++) {
+			/* Ignore callbacks and alterations. */
+			if (*cp == '(' || *cp == '{')
+				break;
+			if (*cp != ',')
+				continue;
+			mandoc_msg(MANDOCERR_FA_COMMA, mdoc->parse,
+			    n->line, n->pos + (cp - n->string),
+			    n->string);
+			break;
+		}
+	}
 	return(1);
 }
 

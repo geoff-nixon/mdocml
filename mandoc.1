@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.110 2014/09/03 05:22:45 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.111 2014/09/07 23:25:01 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: September 3 2014 $
+.Dd $Mdocdate: September 7 2014 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -766,6 +766,22 @@ The same standard section title occurs more than once.
 .Pq mdoc
 A standard section header occurs in a section of the manual
 where it normally isn't useful.
+.It Sy "unusual Xr order"
+.Pq mdoc
+In the SEE ALSO section, an
+.Ic \&Xr
+macro with a lower section number follows one with a higher number,
+or two
+.Ic \&Xr
+macros refering to the same section are out of alphabetical order.
+.It Sy "unusual Xr punctuation"
+.Pq mdoc
+In the SEE ALSO section, punctuation between two
+.Ic \&Xr
+macros differs from a single comma, or there is trailing punctuation
+after the last
+.Ic \&Xr
+macro.
 .It Sy "AUTHORS section without An macro"
 .Pq mdoc
 An AUTHORS sections contains no

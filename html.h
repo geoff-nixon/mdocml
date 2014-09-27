@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.58 2014/09/27 09:05:57 kristaps Exp $ */
+/*	$Id: html.h,v 1.59 2014/09/27 09:20:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -62,7 +62,6 @@ enum	htmlattr {
 	ATTR_MEDIA,
 	ATTR_CLASS,
 	ATTR_STYLE,
-	ATTR_WIDTH,
 	ATTR_ID,
 	ATTR_COLSPAN,
 	ATTR_CHARSET,

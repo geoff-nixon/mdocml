@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.203 2014/09/27 09:13:39 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.204 2014/09/27 09:20:03 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -489,9 +489,6 @@ mdoc_root_post(MDOC_ARGS)
 
 	PAIR_CLASS_INIT(&tag, "foot");
 	t = print_otag(h, TAG_TABLE, 1, &tag);
-	PAIR_INIT(&tag, ATTR_WIDTH, "50%");
-	print_otag(h, TAG_COL, 1, &tag);
-	print_otag(h, TAG_COL, 1, &tag);
 
 	print_otag(h, TAG_TBODY, 0, NULL);
 
@@ -529,10 +526,6 @@ mdoc_root_pre(MDOC_ARGS)
 
 	PAIR_CLASS_INIT(&tag, "head");
 	t = print_otag(h, TAG_TABLE, 1, &tag);
-	PAIR_INIT(&tag, ATTR_WIDTH, "30%");
-	print_otag(h, TAG_COL, 1, &tag);
-	print_otag(h, TAG_COL, 1, &tag);
-	print_otag(h, TAG_COL, 1, &tag);
 
 	print_otag(h, TAG_TBODY, 0, NULL);
 

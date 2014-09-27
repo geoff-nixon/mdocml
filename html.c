@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.166 2014/09/27 09:03:24 kristaps Exp $ */
+/*	$Id: html.c,v 1.167 2014/09/27 09:05:57 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -197,8 +197,12 @@ print_gen_head(struct html *h)
 	tag[0].val = "utf-8";
 	print_otag(h, TAG_META, 1, tag);
 
+	/*
+	 * Print a default style-sheet.
+	 */
 	t = print_otag(h, TAG_STYLE, 0, NULL);
-	print_text(h, "table.head, table.foot { width: 100%; }\n");
+	print_text(h, "table.head, table.foot { width: 100%; }\n"
+	      "td.head-rtitle, td.foot-os { text-align: right; }\n");
 	print_tagq(h, t);
 
 	if (h->style) {

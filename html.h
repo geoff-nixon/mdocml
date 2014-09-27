@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.54 2014/09/17 19:55:59 schwarze Exp $ */
+/*	$Id: html.h,v 1.55 2014/09/27 08:54:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -50,6 +50,7 @@ enum	htmltag {
 	TAG_I,
 	TAG_CODE,
 	TAG_SMALL,
+	TAG_STYLE,
 	TAG_MAX
 };
 

@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.163 2014/08/14 00:31:43 schwarze Exp $ */
+/*	$Id: html.c,v 1.164 2014/09/27 08:54:34 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -74,6 +74,7 @@ static	const struct htmldata htmltags[TAG_MAX] = {
 	{"i",		0 }, /* TAG_I */
 	{"code",	0 }, /* TAG_CODE */
 	{"small",	0 }, /* TAG_SMALL */
+	{"style",	HTML_CLRLINE}, /* TAG_STYLE */
 };
 
 static	const char	*const htmlattrs[ATTR_MAX] = {
@@ -193,10 +194,15 @@ void
 print_gen_head(struct html *h)
 {
 	struct htmlpair	 tag[4];
+	struct tag	*t;
 
 	tag[0].key = ATTR_CHARSET;
 	tag[0].val = "utf-8";
 	print_otag(h, TAG_META, 1, tag);
+
+	t = print_otag(h, TAG_STYLE, 0, NULL);
+	print_text(h, "table.head, table.foot { width: 100%; }\n");
+	print_tagq(h, t);
 
 	if (h->style) {
 		tag[0].key = ATTR_REL;

@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.55 2014/09/27 08:54:34 kristaps Exp $ */
+/*	$Id: html.h,v 1.56 2014/09/27 09:02:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -55,8 +55,6 @@ enum	htmltag {
 };
 
 enum	htmlattr {
-	ATTR_HTTPEQUIV,
-	ATTR_CONTENT,
 	ATTR_NAME,
 	ATTR_REL,
 	ATTR_HREF,

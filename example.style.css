@@ -1,4 +1,4 @@
-/* $Id: example.style.css,v 1.51 2014/08/14 00:31:43 schwarze Exp $ */
+/* $Id: example.style.css,v 1.52 2014/09/27 09:20:03 kristaps Exp $ */
 /*
  * This is an example style-sheet provided for mandoc(1) and the -Thtml
  * or -Txhtml output mode.
@@ -108,3 +108,4 @@ div.mandoc ol.list-enum		{ padding-left: 2em; }
 div.mandoc li.list-enum		{ }
 div.mandoc span.eqn		{ } /* Equation modes.  See eqn(7). */
 div.mandoc table.tbl		{ } /* Table modes.  See tbl(7). */
+div.mandoc div.spacer		{ margin: 1em 0; }

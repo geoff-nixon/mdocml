@@ -1,4 +1,4 @@
-/* $Id: style.css,v 1.27 2014/08/14 00:31:43 schwarze Exp $ */
+/* $Id: style.css,v 1.28 2014/09/27 09:13:39 kristaps Exp $ */
 
 /*
  * This is an example style-sheet provided for mandoc(1) and the -Thtml
@@ -28,7 +28,7 @@ td.foot-date	{ width: 50%; } /* Document footer: date. */
 td.foot-os	{ width: 50%; } /* Document footer: OS/source. */
 table.head	{ font-size: smaller; margin-bottom: 1em; border-bottom: 1px dotted #dddddd; } /* Document header. */
 td.head-ltitle	{ width: 10%; } /* Document header: left-title. */
-td.head-vol	{ width: 80%; text-align: center; } /* Document header: volume. */
+td.head-vol	{ width: 80%; } /* Document header: volume. */
 td.head-rtitle	{ width: 10%; } /* Document header: right-title. */
 
 /* General font modes. */

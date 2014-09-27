@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.165 2014/09/27 09:02:19 kristaps Exp $ */
+/*	$Id: html.c,v 1.166 2014/09/27 09:03:24 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -87,7 +87,6 @@ static	const char	*const htmlattrs[ATTR_MAX] = {
 	"style", /* ATTR_STYLE */
 	"width", /* ATTR_WIDTH */
 	"id", /* ATTR_ID */
-	"summary", /* ATTR_SUMMARY */
 	"align", /* ATTR_ALIGN */
 	"colspan", /* ATTR_COLSPAN */
 	"charset", /* ATTR_CHARSET */

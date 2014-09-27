@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.59 2014/09/27 09:20:03 kristaps Exp $ */
+/*	$Id: html.h,v 1.60 2014/09/27 09:26:01 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -44,7 +44,6 @@ enum	htmltag {
 	TAG_DT,
 	TAG_DD,
 	TAG_BLOCKQUOTE,
-	TAG_P,
 	TAG_PRE,
 	TAG_B,
 	TAG_I,
@@ -144,6 +143,7 @@ void		  print_text(struct html *, const char *);
 void		  print_tblclose(struct html *);
 void		  print_tbl(struct html *, const struct tbl_span *);
 void		  print_eqn(struct html *, const struct eqn *);
+void		  print_paragraph(struct html *);
 
 #if __GNUC__ - 0 >= 4
 __attribute__((__format__ (__printf__, 2, 3)))

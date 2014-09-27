@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.53 2014/08/14 00:31:43 schwarze Exp $ */
+/*	$Id: html.h,v 1.54 2014/09/17 19:55:59 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -68,6 +68,7 @@ enum	htmlattr {
 	ATTR_SUMMARY,
 	ATTR_ALIGN,
 	ATTR_COLSPAN,
+	ATTR_CHARSET,
 	ATTR_MAX
 };
 

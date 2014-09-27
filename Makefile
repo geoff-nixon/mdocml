@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.442 2014/08/17 03:24:47 schwarze Exp $
+# $Id: Makefile,v 1.443 2014/08/21 00:42:38 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -288,6 +288,8 @@ cgi-build: $(CGIBIN)
 install: base-install $(INSTALL_TARGETS)
 
 www: $(WWW_OBJS) $(WWW_MANS)
+
+$(WWW_MANS): mandoc
 
 include Makefile.depend
 

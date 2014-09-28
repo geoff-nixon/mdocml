@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.156 2014/09/12 00:54:10 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.157 2014/09/28 11:32:08 kristaps Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -340,6 +340,7 @@ enum	eqn_post {
 	EQNPOS_SUB,
 	EQNPOS_TO,
 	EQNPOS_FROM,
+	EQNPOS_FROMTO,
 	EQNPOS__MAX
 };
 

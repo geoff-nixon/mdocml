@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.62 2014/09/27 11:17:19 kristaps Exp $ */
+/*	$Id: html.h,v 1.63 2014/09/28 11:33:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -63,6 +63,9 @@ enum	htmltag {
 	TAG_MTABLE,
 	TAG_MTR,
 	TAG_MTD,
+	TAG_MUNDEROVER,
+	TAG_MUNDER,
+	TAG_MOVER,
 	TAG_MAX
 };
 

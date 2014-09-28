@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.172 2014/09/27 11:17:19 kristaps Exp $ */
+/*	$Id: html.c,v 1.173 2014/09/28 11:33:15 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -87,6 +87,9 @@ static	const struct htmldata htmltags[TAG_MAX] = {
 	{"mtable",	0}, /* TAG_MTABLE */
 	{"mtr",		0}, /* TAG_MTR */
 	{"mtd",		0}, /* TAG_MTD */
+	{"munderover",	0}, /* TAG_MUNDEROVER */
+	{"munder",	0}, /* TAG_MUNDER*/
+	{"mover",	0}, /* TAG_MOVER*/
 };
 
 static	const char	*const htmlattrs[ATTR_MAX] = {

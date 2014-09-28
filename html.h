@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.61 2014/09/27 10:56:18 kristaps Exp $ */
+/*	$Id: html.h,v 1.62 2014/09/27 11:17:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -50,6 +50,19 @@ enum	htmltag {
 	TAG_CODE,
 	TAG_SMALL,
 	TAG_STYLE,
+	TAG_MATH,
+	TAG_MROW,
+	TAG_MI,
+	TAG_MO,
+	TAG_MSUP,
+	TAG_MSUB,
+	TAG_MSUBSUP,
+	TAG_MFRAC,
+	TAG_MSQRT,
+	TAG_MFENCED,
+	TAG_MTABLE,
+	TAG_MTR,
+	TAG_MTD,
 	TAG_MAX
 };
 
@@ -64,6 +77,8 @@ enum	htmlattr {
 	ATTR_ID,
 	ATTR_COLSPAN,
 	ATTR_CHARSET,
+	ATTR_OPEN,
+	ATTR_CLOSE,
 	ATTR_MAX
 };
 

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.155 2014/09/11 23:53:30 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.156 2014/09/12 00:54:10 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -336,6 +336,7 @@ enum	eqn_post {
 	EQNPOS_NONE = 0,
 	EQNPOS_OVER,
 	EQNPOS_SUP,
+	EQNPOS_SUBSUP,
 	EQNPOS_SUB,
 	EQNPOS_TO,
 	EQNPOS_FROM,
@@ -366,6 +367,7 @@ struct	eqn_box {
 	struct eqn_box	 *first; /* first child node */
 	struct eqn_box	 *last; /* last child node */
 	struct eqn_box	 *next; /* node sibling */
+	struct eqn_box	 *prev; /* node sibling */
 	struct eqn_box	 *parent; /* node sibling */
 	char		 *text; /* text (or NULL) */
 	char		 *left;

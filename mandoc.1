@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.113 2014/09/12 00:54:10 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.114 2014/09/27 11:17:19 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: September 12 2014 $
+.Dd $Mdocdate: September 27 2014 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -1134,11 +1134,16 @@ or
 The invalid argument is moved out of the macro, which leaves the macro
 empty, causing it to toggle the spacing mode.
 .It Sy "unknown font, skipping request"
-.Pq man
+.Pq man , tbl
 A
 .Xr roff 7
 .Ic \&ft
-request has an invalid argument.
+request or a
+.Xr tbl 7
+.Ic \&f
+layout modifier has an unknown
+.Ar font
+argument.
 .El
 .Ss "Warnings related to plain text"
 .Bl -ohang

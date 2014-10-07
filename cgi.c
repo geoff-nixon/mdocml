@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.97 2014/09/14 19:44:28 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.98 2014/09/27 11:17:36 kristaps Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@usta.de>
@@ -1033,9 +1033,9 @@ main(void)
 
 	/* Poor man's ReDoS mitigation. */
 
-	itimer.it_value.tv_sec = 1;
+	itimer.it_value.tv_sec = 2;
 	itimer.it_value.tv_usec = 0;
-	itimer.it_interval.tv_sec = 1;
+	itimer.it_interval.tv_sec = 2;
 	itimer.it_interval.tv_usec = 0;
 	if (setitimer(ITIMER_VIRTUAL, &itimer, NULL) == -1) {
 		fprintf(stderr, "setitimer: %s\n", strerror(errno));

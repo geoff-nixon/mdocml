@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.47 2014/09/28 14:05:11 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.48 2014/10/10 08:44:24 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -687,6 +687,7 @@ again:
 				ep->data[(int)ep->cur], NULL, 0))
 			EQN_MSG(MANDOCERR_EQNEOF, ep);
 		break;
+	case (EQN_TOK_DELIM):
 	case (EQN_TOK_GFONT):
 		if (NULL == eqn_nextrawtok(ep, NULL)) {
 			EQN_MSG(MANDOCERR_EQNSYNT, ep);

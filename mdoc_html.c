@@ -1,6 +1,6 @@
-/*	$Id: mdoc_html.c,v 1.206 2014/09/27 10:56:18 kristaps Exp $ */
+/*	$Id: mdoc_html.c,v 1.207 2014/09/27 11:17:19 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

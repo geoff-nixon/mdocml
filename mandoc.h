@@ -1,6 +1,6 @@
-/*	$Id: mandoc.h,v 1.158 2014/09/28 14:05:11 kristaps Exp $ */
+/*	$Id: mandoc.h,v 1.159 2014/10/10 08:44:24 kristaps Exp $ */
 /*
- * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any

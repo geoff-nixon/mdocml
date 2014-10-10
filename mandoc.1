@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.114 2014/09/27 11:17:19 kristaps Exp $
+.\"	$Id: mandoc.1,v 1.115 2014/10/07 14:07:03 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: September 27 2014 $
+.Dd $Mdocdate: October 7 2014 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -233,7 +233,7 @@ This is the default.
 See
 .Sx ASCII Output .
 .It Fl T Ns Cm html
-Produce CSS1/HTML5 output.
+Produce HTML5, CSS1, and MathML output.
 See
 .Sx HTML Output .
 .It Fl T Ns Cm lint
@@ -320,6 +320,10 @@ which will normalise to \(>=60.
 Output produced by
 .Fl T Ns Cm html
 conforms to HTML5 using optional self-closing tags.
+Default styles use only CSS1.
+Equations rendered from
+.Xr eqn 7
+blocks use MathML.
 .Pp
 The
 .Pa example.style.css

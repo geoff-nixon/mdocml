@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.48 2014/10/10 08:44:24 kristaps Exp $ */
+/*	$Id: eqn.c,v 1.49 2014/10/10 09:12:44 kristaps Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -537,10 +537,7 @@ eqn_box_alloc(struct eqn_node *ep, struct eqn_box *parent)
 	bp->expectargs = UINT_MAX;
 	bp->size = ep->gsize;
 
-	assert(NULL != parent);
-
 	if (NULL != parent->first) {
-		assert(NULL != parent->last);
 		parent->last->next = bp;
 		bp->prev = parent->last;
 	} else

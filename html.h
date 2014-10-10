@@ -1,6 +1,6 @@
-/*	$Id: html.h,v 1.64 2014/09/28 20:14:20 kristaps Exp $ */
+/*	$Id: html.h,v 1.65 2014/10/10 08:44:24 kristaps Exp $ */
 /*
- * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
+ * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above

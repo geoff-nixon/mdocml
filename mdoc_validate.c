@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.248 2014/09/11 23:53:30 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.249 2014/09/12 00:54:10 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -101,6 +101,8 @@ static	int	 post_es(POST_ARGS);
 static	int	 post_eoln(POST_ARGS);
 static	int	 post_ex(POST_ARGS);
 static	int	 post_fa(POST_ARGS);
+static	int	 post_fn(POST_ARGS);
+static	int	 post_fname(POST_ARGS);
 static	int	 post_fo(POST_ARGS);
 static	int	 post_hyph(POST_ARGS);
 static	int	 post_hyphtext(POST_ARGS);
@@ -161,7 +163,7 @@ static	const struct valids mdoc_valids[MDOC_MAX] = {
 	{ NULL, post_fa },			/* Fa */
 	{ NULL, ewarn_ge1 },			/* Fd */
 	{ NULL, NULL },				/* Fl */
-	{ NULL, post_fa },			/* Fn */
+	{ NULL, post_fn },			/* Fn */
 	{ NULL, NULL },				/* Ft */
 	{ NULL, NULL },				/* Ic */
 	{ NULL, ewarn_eq1 },			/* In */
@@ -1000,11 +1002,36 @@ post_eoln(POST_ARGS)
 }
 
 static int
+post_fname(POST_ARGS)
+{
+	const struct mdoc_node *n;
+	size_t pos;
+
+	n = mdoc->last->child;
+	pos = strcspn(n->string, "()");
+	if (n->string[pos] != '\0')
+		mandoc_msg(MANDOCERR_FN_PAREN, mdoc->parse,
+		    n->line, n->pos + pos, n->string);
+	return(1);
+}
+
+static int
+post_fn(POST_ARGS)
+{
+
+	post_fname(mdoc);
+	post_fa(mdoc);
+	return(1);
+}
+
+static int
 post_fo(POST_ARGS)
 {
 
 	hwarn_eq1(mdoc);
 	bwarn_ge1(mdoc);
+	if (mdoc->last->type == MDOC_HEAD)
+		post_fname(mdoc);
 	return(1);
 }
 

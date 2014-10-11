@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.115 2014/10/07 14:07:03 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.116 2014/10/10 08:44:24 kristaps Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: October 7 2014 $
+.Dd $Mdocdate: October 10 2014 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -1120,6 +1120,14 @@ An argument of an
 or
 .Ic \&Fn
 macro contains a comma; it should probably be split into two arguments.
+.It Sy "parenthesis in function name"
+.Pq mdoc
+The first argument of an
+.Ic \&Fc
+or
+.Ic \&Fn
+macro contains an opening or closing parenthesis; that's probably wrong,
+parentheses are added automatically.
 .It Sy "invalid content in Rs block"
 .Pq mdoc
 An

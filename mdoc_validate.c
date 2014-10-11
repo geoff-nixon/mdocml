@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.249 2014/09/12 00:54:10 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.250 2014/10/11 21:14:16 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1030,7 +1030,7 @@ post_fo(POST_ARGS)
 
 	hwarn_eq1(mdoc);
 	bwarn_ge1(mdoc);
-	if (mdoc->last->type == MDOC_HEAD)
+	if (mdoc->last->type == MDOC_HEAD && mdoc->last->nchild)
 		post_fname(mdoc);
 	return(1);
 }

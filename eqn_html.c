@@ -1,4 +1,4 @@
-/*	$Id: eqn_html.c,v 1.8 2014/10/10 08:44:24 kristaps Exp $ */
+/*	$Id: eqn_html.c,v 1.9 2014/10/10 14:27:46 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -47,10 +47,12 @@ eqn_box(struct html *p, const struct eqn_box *bp)
 	if (EQN_MATRIX == bp->type) {
 		if (NULL == bp->first)
 			goto out;
-		assert(EQN_LIST == bp->first->type);
+		if (EQN_LIST != bp->first->type) {
+			eqn_box(p, bp->first);
+			goto out;
+		}
 		if (NULL == (parent = bp->first->first))
 			goto out;
-		assert(EQN_PILE == parent->type);
 		/* Estimate the number of rows, first. */
 		if (NULL == (child = parent->first))
 			goto out;
@@ -126,8 +128,10 @@ eqn_box(struct html *p, const struct eqn_box *bp)
 
 	if (EQN_PILE == bp->type) {
 		assert(NULL == post);
-		post = print_otag(p, TAG_MTABLE, 0, NULL);
-	} else if (bp->parent && EQN_PILE == bp->parent->type) {
+		if (bp->first != NULL && bp->first->type == EQN_LIST)
+			post = print_otag(p, TAG_MTABLE, 0, NULL);
+	} else if (bp->type == EQN_LIST &&
+	    bp->parent && bp->parent->type == EQN_PILE) {
 		assert(NULL == post);
 		post = print_otag(p, TAG_MTR, 0, NULL);
 		print_otag(p, TAG_MTD, 0, NULL);

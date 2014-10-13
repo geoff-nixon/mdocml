@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.251 2014/10/11 21:34:04 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.252 2014/10/13 14:01:21 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1989,7 +1989,8 @@ post_sh_see_also(POST_ARGS)
 				    mdoc->parse, n->line, n->pos,
 				    "%s(%s) after %s(%s)", name,
 				    sec, lastname, lastsec);
-			else if (cmp == 0 && strcmp(lastname, name) > 0)
+			else if (cmp == 0 &&
+			    strcasecmp(lastname, name) > 0)
 				mandoc_vmsg(MANDOCERR_XR_ORDER,
 				    mdoc->parse, n->line, n->pos,
 				    "%s after %s", name, lastname);

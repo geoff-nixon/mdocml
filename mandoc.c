@@ -1,4 +1,4 @@
-/*	$Id: mandoc.c,v 1.85 2014/08/16 19:00:01 schwarze Exp $ */
+/*	$Id: mandoc.c,v 1.86 2014/08/18 09:11:47 kristaps Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -79,24 +79,13 @@ mandoc_escape(const char **end, const char **start, int *sz)
 		break;
 	case '[':
 		gly = ESCAPE_SPECIAL;
-		/*
-		 * Unicode escapes are defined in groff as \[uXXXX] to
-		 * \[u10FFFF], where the contained value must be a valid
-		 * Unicode codepoint.  Here, however, only check whether
-		 * it's not a zero-width escape.
-		 */
-		if ('u' == (*start)[0] && ']' != (*start)[1])
-			gly = ESCAPE_UNICODE;
 		term = ']';
 		break;
 	case 'C':
 		if ('\'' != **start)
 			return(ESCAPE_ERROR);
 		*start = ++*end;
-		if ('u' == (*start)[0] && '\'' != (*start)[1])
-			gly = ESCAPE_UNICODE;
-		else
-			gly = ESCAPE_SPECIAL;
+		gly = ESCAPE_SPECIAL;
 		term = '\'';
 		break;
 
@@ -344,6 +333,16 @@ mandoc_escape(const char **end, const char **start, int *sz)
 	case ESCAPE_SPECIAL:
 		if (1 == *sz && 'c' == **start)
 			gly = ESCAPE_NOSPACE;
+		/*
+		 * Unicode escapes are defined in groff as \[uXXXX]
+		 * to \[u10FFFF], where the contained value must be
+		 * a valid Unicode codepoint.  Here, however, only
+		 * check the length and the validity of all digits.
+		 */
+		else if (*sz > 4 && *sz < 8 && **start == 'u' &&
+		    (int)strspn(*start + 1, "0123456789ABCDEFabcdef")
+		    + 1 == *sz)
+			gly = ESCAPE_UNICODE;
 		break;
 	default:
 		break;

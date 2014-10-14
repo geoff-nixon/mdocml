@@ -1,4 +1,4 @@
-/*	$Id: tbl_html.c,v 1.11 2014/04/20 16:46:05 schwarze Exp $ */
+/*	$Id: tbl_html.c,v 1.12 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -57,7 +57,7 @@ html_tblopen(struct html *h, const struct tbl_span *sp)
 	if (TBL_SPAN_FIRST & sp->flags) {
 		h->tbl.len = html_tbl_len;
 		h->tbl.slen = html_tbl_strlen;
-		tblcalc(&h->tbl, sp);
+		tblcalc(&h->tbl, sp, 0);
 	}
 
 	assert(NULL == h->tblt);

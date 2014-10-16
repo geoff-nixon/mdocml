@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.183 2014/10/14 13:53:33 schwarze Exp $
+* $Id: TODO,v 1.184 2014/10/14 15:47:40 schwarze Exp $
 ************************************************************************
 
 Many issues are annotated for difficulty as follows:
@@ -223,9 +223,6 @@ are mere guesses, and some may be wrong.
   loc **  exist **  algo **  size *  imp **
 
 --- missing eqn features -----------------------------------------------
-
-- delim
-  loc **  exist **  algo **  size *  imp ***
 
 - The "size" keyword is parsed, but ignored by the formatter.
   loc *  exist *  algo *  size *  imp *
@@ -514,6 +511,9 @@ are mere guesses, and some may be wrong.
   is this useful?
 
 - mention /usr/share/misc/mdoc.template in mdoc(7)?
+
+- Is all the content from http://www.std.com/obi/BSD/doc/usd/28.tbl/tbl
+  covered in tbl(7)?
 
 ************************************************************************
 * performance issues

@@ -1,4 +1,4 @@
-/*	$Id: eqn.c,v 1.52 2014/10/12 19:31:41 schwarze Exp $ */
+/*	$Id: eqn.c,v 1.53 2014/10/12 20:08:58 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -588,6 +588,30 @@ eqn_box_makebinary(struct eqn_node *ep,
 }
 
 /*
+ * Parse the "delim" control statement.
+ */
+static void
+eqn_delim(struct eqn_node *ep)
+{
+	const char	*start;
+	size_t		 sz;
+
+	if ((start = eqn_nextrawtok(ep, &sz)) == NULL)
+		mandoc_msg(MANDOCERR_REQ_EMPTY, ep->parse,
+		    ep->eqn.ln, ep->eqn.pos, "delim");
+	else if (strncmp(start, "off", 3) == 0)
+		ep->delim = 0;
+	else if (strncmp(start, "on", 2) == 0) {
+		if (ep->odelim && ep->cdelim)
+			ep->delim = 1;
+	} else if (start[1] != '\0') {
+		ep->odelim = start[0];
+		ep->cdelim = start[1];
+		ep->delim = 1;
+	}
+}
+
+/*
  * Undefine a previously-defined string.
  */
 static int
@@ -698,6 +722,8 @@ this_tok:
 			EQN_MSG(MANDOCERR_EQNEOF, ep);
 		break;
 	case (EQN_TOK_DELIM):
+		eqn_delim(ep);
+		break;
 	case (EQN_TOK_GFONT):
 		if (eqn_nextrawtok(ep, NULL) == NULL)
 			mandoc_msg(MANDOCERR_REQ_EMPTY, ep->parse,

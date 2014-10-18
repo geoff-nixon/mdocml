@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.89 2014/10/11 21:14:16 schwarze Exp $ */
+/*	$Id: read.c,v 1.90 2014/10/12 19:31:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -768,7 +768,7 @@ mparse_readfd(struct mparse *curp, int fd, const char *file)
 			(*curp->mmsg)(MANDOCERR_SYSOPEN,
 			    curp->file_status,
 			    file, 0, 0, strerror(errno));
-		goto out;
+		return(curp->file_status);
 	}
 
 	/*
@@ -778,21 +778,19 @@ mparse_readfd(struct mparse *curp, int fd, const char *file)
 	 * the parse phase for the file.
 	 */
 
-	if ( ! read_whole_file(curp, file, fd, &blk, &with_mmap))
-		goto out;
-
-	mparse_parse_buffer(curp, blk, file);
-
+	if (read_whole_file(curp, file, fd, &blk, &with_mmap)) {
+		mparse_parse_buffer(curp, blk, file);
 #if HAVE_MMAP
-	if (with_mmap)
-		munmap(blk.buf, blk.sz);
-	else
+		if (with_mmap)
+			munmap(blk.buf, blk.sz);
+		else
 #endif
-		free(blk.buf);
+			free(blk.buf);
+	}
 
 	if (STDIN_FILENO != fd && -1 == close(fd))
 		perror(file);
-out:
+
 	return(curp->file_status);
 }
 

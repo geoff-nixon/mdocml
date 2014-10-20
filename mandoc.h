@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.162 2014/10/12 19:31:41 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.163 2014/10/14 02:16:06 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -166,6 +166,7 @@ enum	mandocerr {
 	MANDOCERR_IT_NONUM, /* skipping request without numeric argument */
 	MANDOCERR_ARG_SKIP, /* skipping all arguments: macro args */
 	MANDOCERR_ARG_EXCESS, /* skipping excess arguments: macro ... args */
+	MANDOCERR_DIVZERO, /* divide by zero */
 
 	MANDOCERR_FATAL, /* ===== start of fatal errors ===== */
 

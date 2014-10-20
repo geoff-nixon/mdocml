@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.283 2014/10/13 22:00:47 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.284 2014/10/20 02:33:06 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -347,6 +347,8 @@ print_mdoc_node(DECL_ARGS)
 		if ( ! (n->flags & MDOC_LINE))
 			p->flags |= TERMP_NOSPACE;
 		term_eqn(p, n->eqn);
+		if ( ! (n->flags & MDOC_LINE))
+			p->flags |= TERMP_NOSPACE;
 		break;
 	case MDOC_TBL:
 		term_tbl(p, n->span);

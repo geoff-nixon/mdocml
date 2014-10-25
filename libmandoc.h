@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.43 2014/09/06 22:39:36 schwarze Exp $ */
+/*	$Id: libmandoc.h,v 1.44 2014/10/16 01:11:20 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -28,6 +28,12 @@ enum	rofferr {
 	ROFF_TBL, /* a table row was successfully parsed */
 	ROFF_EQN, /* an equation was successfully parsed */
 	ROFF_ERR /* badness: puke and stop */
+};
+
+struct	buf {
+	char	*buf;
+	size_t	 sz;
+	size_t	 offs;
 };
 
 __BEGIN_DECLS
@@ -65,6 +71,9 @@ int		 man_parseln(struct man *, int, char *, int);
 int		 man_endparse(struct man *);
 int		 man_addspan(struct man *, const struct tbl_span *);
 int		 man_addeqn(struct man *, const struct eqn *);
+
+int		 preconv_cue(const struct buf *);
+int		 preconv_encode(struct buf *, struct buf *, int *);
 
 void		 roff_free(struct roff *);
 struct roff	*roff_alloc(struct mparse *, int);

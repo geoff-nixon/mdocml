@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.59 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: chars.c,v 1.60 2014/10/26 17:12:03 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -147,6 +147,17 @@ mchars_spec2str(const struct mchars *arg,
 
 	*rsz = strlen(ln->ascii);
 	return(ln->ascii);
+}
+
+const char *
+mchars_uc2str(int uc)
+{
+	int	 i;
+
+	for (i = 0; i < LINES_MAX; i++)
+		if (uc == lines[i].unicode)
+			return(lines[i].ascii);
+	return("<?>");
 }
 
 static const struct ln *

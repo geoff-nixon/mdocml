@@ -1,4 +1,4 @@
-/*	$Id: preconv.c,v 1.8 2014/08/16 19:00:01 schwarze Exp $ */
+/*	$Id: preconv.c,v 1.9 2014/10/25 01:03:52 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -27,11 +27,11 @@
 int
 preconv_encode(struct buf *ib, struct buf *ob, int *filenc)
 {
+	size_t		 i;
+	const long	 one = 1L;
 	int		 state, be;
 	unsigned int	 accum;
-	size_t		 i;
 	unsigned char	 cu;
-	const long	 one = 1L;
 
 	if ( ! (*filenc & MPARSE_UTF8))
 		goto latin;
@@ -158,8 +158,7 @@ preconv_cue(const struct buf *b)
 	/* Check if we have the correct header/trailer. */
 
 	if ((sz = (size_t)(eoln - ln)) < 10 || 
-			memcmp(ln, ".\\\" -*-", 7) ||
-			memcmp(eoln - 3, "-*-", 3))
+	    memcmp(ln, ".\\\" -*-", 7) || memcmp(eoln - 3, "-*-", 3))
 		return(MPARSE_UTF8 | MPARSE_LATIN1);
 
 	/* Move after the header and adjust for the trailer. */

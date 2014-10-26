@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.175 2014/10/10 08:44:24 kristaps Exp $ */
+/*	$Id: html.c,v 1.176 2014/10/10 15:26:29 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -437,8 +437,18 @@ print_encode(struct html *h, const char *p, int norecurse)
 		case ESCAPE_UNICODE:
 			/* Skip past "u" header. */
 			c = mchars_num2uc(seq + 1, len - 1);
-			if ('\0' != c)
-				printf("&#x%x;", c);
+
+			/*
+			 * XXX Security warning:
+			 * For now, forbid Unicode obfuscation of ASCII
+			 * characters.  An audit of the callers is
+			 * required before this can be removed.
+			 */
+
+			if (c < 0x80)
+				c = 0xFFFD;
+
+			printf("&#x%x;", c);
 			break;
 		case ESCAPE_NUMBERED:
 			c = mchars_num2char(seq, len);

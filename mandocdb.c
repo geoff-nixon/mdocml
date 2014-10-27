@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.165 2014/09/09 19:35:25 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.166 2014/10/12 20:32:39 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1903,7 +1903,7 @@ render_key(struct mchars *mc, struct str *key)
 		 */
 
 		if (write_utf8) {
-			if (0 == (u = mchars_spec2cp(mc, seq, len)))
+			if ((u = mchars_spec2cp(mc, seq, len)) <= 0)
 				continue;
 			cpp = utfbuf;
 			if (0 == (sz = utf8(u, utfbuf)))

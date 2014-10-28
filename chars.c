@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.61 2014/10/26 18:07:28 schwarze Exp $ */
+/*	$Id: chars.c,v 1.62 2014/10/27 13:31:04 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -123,14 +123,9 @@ mchars_num2uc(const char *p, size_t sz)
 {
 	int	 i;
 
-	if ((i = mandoc_strntoi(p, sz, 16)) < 0)
-		return(0xFFFD);
-
-	/*
-	 * XXX Code is missing here to exclude bogus ranges.
-	 */
-
-	return(i <= 0x10FFFF ? i : 0xFFFD);
+	i = mandoc_strntoi(p, sz, 16);
+	assert(i >= 0 && i <= 0x10FFFF);
+	return(i);
 }
 
 const char *

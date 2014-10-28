@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.229 2014/10/26 17:12:03 schwarze Exp $ */
+/*	$Id: term.c,v 1.230 2014/10/27 13:31:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -42,11 +42,7 @@ void
 term_free(struct termp *p)
 {
 
-	if (p->buf)
-		free(p->buf);
-	if (p->symtab)
-		mchars_free(p->symtab);
-
+	free(p->buf);
 	free(p);
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.165 2014/10/25 01:03:52 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.166 2014/10/26 18:07:28 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -433,7 +433,7 @@ int		  mchars_spec2cp(const struct mchars *,
 const char	 *mchars_spec2str(const struct mchars *,
 			const char *, size_t, size_t *);
 struct mparse	 *mparse_alloc(int, enum mandoclevel, mandocmsg,
-			const char *);
+			const struct mchars *, const char *);
 void		  mparse_free(struct mparse *);
 void		  mparse_keep(struct mparse *);
 enum mandoclevel  mparse_open(struct mparse *, int *, const char *,

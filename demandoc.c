@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.10 2014/03/19 22:20:43 schwarze Exp $ */
+/*	$Id: demandoc.c,v 1.11 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -43,6 +43,7 @@ int
 main(int argc, char *argv[])
 {
 	struct mparse	*mp;
+	struct mchars	*mchars;
 	int		 ch, i, list;
 	extern int	 optind;
 
@@ -76,7 +77,8 @@ main(int argc, char *argv[])
 	argc -= optind;
 	argv += optind;
 
-	mp = mparse_alloc(MPARSE_SO, MANDOCLEVEL_FATAL, NULL, NULL);
+	mchars = mchars_alloc();
+	mp = mparse_alloc(MPARSE_SO, MANDOCLEVEL_FATAL, NULL, mchars, NULL);
 	assert(mp);
 
 	if (0 == argc)
@@ -88,6 +90,7 @@ main(int argc, char *argv[])
 	}
 
 	mparse_free(mp);
+	mchars_free(mchars);
 	return((int)MANDOCLEVEL_OK);
 }
 

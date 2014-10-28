@@ -1,4 +1,4 @@
-/*	$Id: chars.c,v 1.62 2014/10/27 13:31:04 schwarze Exp $ */
+/*	$Id: chars.c,v 1.63 2014/10/28 13:24:44 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -104,7 +104,7 @@ mchars_spec2cp(const struct mchars *arg, const char *p, size_t sz)
 	const struct ln	*ln;
 
 	ln = find(arg, p, sz);
-	return(ln != NULL ? ln->unicode : sz == 1 ? *p : 0xFFFD);
+	return(ln != NULL ? ln->unicode : sz == 1 ? (unsigned char)*p : -1);
 }
 
 char

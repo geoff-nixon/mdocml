@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.285 2014/10/20 02:47:09 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.286 2014/10/20 15:50:24 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -260,9 +260,6 @@ terminal_mdoc(void *arg, const struct mdoc *mdoc)
 	p->overstep = 0;
 	p->rmargin = p->maxrmargin = p->defrmargin;
 	p->tabwidth = term_len(p, 5);
-
-	if (NULL == p->symtab)
-		p->symtab = mchars_alloc();
 
 	n = mdoc_node(mdoc)->child;
 	meta = mdoc_meta(mdoc);

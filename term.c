@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.230 2014/10/27 13:31:04 schwarze Exp $ */
+/*	$Id: term.c,v 1.231 2014/10/28 17:36:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -458,9 +458,7 @@ term_word(struct termp *p, const char *word)
 			if (p->enc == TERMENC_ASCII) {
 				cp = mchars_spec2str(p->symtab,
 				    seq, sz, &ssz);
-				if (cp == NULL)
-					encode(p, "<?>", 3);
-				else
+				if (cp != NULL)
 					encode(p, cp, ssz);
 			} else {
 				uc = mchars_spec2cp(p->symtab, seq, sz);
@@ -690,14 +688,10 @@ term_strlen(const struct termp *p, const char *cp)
 					sz += cond_width(p, c, &skip);
 				break;
 			case ESCAPE_SPECIAL:
-				if (p->enc == TERMENC_ASCII) {
+				if (p->enc == TERMENC_ASCII)
 					rhs = mchars_spec2str(p->symtab,
 					    seq, ssz, &rsz);
-					if (rhs == NULL) {
-						rhs = "<?>";
-						rsz = 3;
-					}
-				} else {
+				else {
 					c = mchars_spec2cp(p->symtab,
 					    seq, ssz);
 					if (c > 0)

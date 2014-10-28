@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.37 2014/10/28 02:43:59 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.38 2014/10/28 17:36:19 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -19,6 +19,7 @@
 
 #include <sys/types.h>
 
+#include <assert.h>
 #if HAVE_WCHAR
 #include <locale.h>
 #endif
@@ -337,8 +338,7 @@ ascii_uc2str(int uc)
 	"j",	"DZ",	"Dz",	"dz",	"'\bG",	"'\bg",	"HV",	"W",
 	"`\bN",	"`\bn",	"A",	"a",	"'\bAE","'\bae","O",	"o"};
 
-	if (uc < 0)
-		return("<?>");
+	assert(uc >= 0);
 	if ((size_t)uc < sizeof(tab)/sizeof(tab[0]))
 		return(tab[uc]);
 	return(mchars_uc2str(uc));

@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.194 2014/10/25 01:03:52 schwarze Exp $ */
+/*	$Id: main.c,v 1.195 2014/10/28 17:36:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -443,8 +443,8 @@ usage(enum argmode argmode)
 	switch (argmode) {
 	case ARG_FILE:
 		fputs("usage: mandoc [-acfhklV] [-Ios=name] "
-		    "[-mformat] [-Ooption] [-Toutput] [-Wlevel]\n"
-		    "\t      [file ...]\n", stderr);
+		    "[-Kencoding] [-mformat] [-Ooption]\n"
+		    "\t      [-Toutput] [-Wlevel] [file ...]\n", stderr);
 		break;
 	case ARG_NAME:
 		fputs("usage: man [-acfhklVw] [-C file] "

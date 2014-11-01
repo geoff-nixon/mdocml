@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.94 2014/10/28 17:36:19 schwarze Exp $ */
+/*	$Id: read.c,v 1.95 2014/11/01 04:08:43 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -493,8 +493,7 @@ mparse_buf_r(struct mparse *curp, struct buf blk, size_t i, int start)
 				[curp->secondary->sz] = '\0';
 		}
 rerun:
-		rr = roff_parseln(curp->roff, curp->line,
-		    &ln.buf, &ln.sz, of, &of);
+		rr = roff_parseln(curp->roff, curp->line, &ln, &of);
 
 		switch (rr) {
 		case ROFF_REPARSE:

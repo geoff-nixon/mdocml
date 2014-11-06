@@ -1,4 +1,4 @@
-/*	$Id: mdoc_man.c,v 1.70 2014/08/21 12:57:17 schwarze Exp $ */
+/*	$Id: mdoc_man.c,v 1.71 2014/10/30 20:10:02 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -1340,7 +1340,7 @@ pre_it(DECL_ARGS)
 			outflags |= MMAN_nl;
 			font_push('B');
 			if (LIST_bullet == bln->norm->Bl.type)
-				print_word("o");
+				print_word("\\(bu");
 			else
 				print_word("-");
 			font_pop();

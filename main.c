@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.197 2014/11/11 02:10:04 schwarze Exp $ */
+/*	$Id: main.c,v 1.198 2014/11/11 02:43:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -293,6 +293,10 @@ main(int argc, char *argv[])
 #if HAVE_SQLITE3
 		if (argc == 0)
 			usage(search.argmode);
+
+		if (search.argmode == ARG_NAME &&
+		    outmode == OUTMODE_ONE)
+			search.firstmatch = 1;
 
 		/* Access the mandoc database. */
 

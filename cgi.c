@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.99 2014/10/07 18:20:06 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.100 2014/10/28 17:36:19 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@usta.de>
@@ -977,6 +977,7 @@ pg_search(const struct req *req)
 	search.sec = req->q.sec;
 	search.outkey = "Nd";
 	search.argmode = req->q.equal ? ARG_NAME : ARG_EXPR;
+	search.firstmatch = 1;
 
 	paths.sz = 1;
 	paths.paths = mandoc_malloc(sizeof(char *));

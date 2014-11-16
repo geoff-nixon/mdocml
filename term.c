@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.233 2014/10/29 00:17:43 schwarze Exp $ */
+/*	$Id: term.c,v 1.234 2014/11/01 04:03:49 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -254,8 +254,10 @@ term_flushln(struct termp *p)
 	 * If there was trailing white space, it was not printed;
 	 * so reset the cursor position accordingly.
 	 */
-	if (vis)
+	if (vis > vbl)
 		vis -= vbl;
+	else
+		vis = 0;
 
 	p->col = 0;
 	p->overstep = 0;

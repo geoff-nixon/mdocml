@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.288 2014/10/30 20:10:02 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.289 2014/11/10 21:56:43 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -193,7 +193,7 @@ static	const struct termact termacts[MDOC_MAX] = {
 	{ termp_quote_pre, termp_quote_post }, /* Eo */
 	{ termp_xx_pre, NULL }, /* Fx */
 	{ termp_bold_pre, NULL }, /* Ms */
-	{ NULL, NULL }, /* No */
+	{ termp_li_pre, NULL }, /* No */
 	{ termp_ns_pre, NULL }, /* Ns */
 	{ termp_xx_pre, NULL }, /* Nx */
 	{ termp_xx_pre, NULL }, /* Ox */

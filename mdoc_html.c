@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.209 2014/10/30 20:10:02 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.210 2014/11/17 06:44:58 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -2075,7 +2075,8 @@ mdoc_quote_pre(MDOC_ARGS)
 	case MDOC_Ao:
 		/* FALLTHROUGH */
 	case MDOC_Aq:
-		print_text(h, "\\(la");
+		print_text(h, n->parent->prev != NULL &&
+		    n->parent->prev->tok == MDOC_An ?  "<" : "\\(la");
 		break;
 	case MDOC_Bro:
 		/* FALLTHROUGH */
@@ -2151,7 +2152,8 @@ mdoc_quote_post(MDOC_ARGS)
 	case MDOC_Ao:
 		/* FALLTHROUGH */
 	case MDOC_Aq:
-		print_text(h, "\\(ra");
+		print_text(h, n->parent->prev != NULL &&
+		    n->parent->prev->tok == MDOC_An ?  ">" : "\\(ra");
 		break;
 	case MDOC_Bro:
 		/* FALLTHROUGH */

@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.237 2014/10/28 17:36:19 schwarze Exp $ */
+/*	$Id: roff.c,v 1.238 2014/11/01 06:03:13 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1272,6 +1272,8 @@ roff_evalcond(struct roff *r, int ln, const char *v, int *pos)
 	case 'r':
 		/* FALLTHROUGH */
 	case 't':
+		/* FALLTHROUGH */
+	case 'v':
 		(*pos)++;
 		return(!wanttrue);
 	default:

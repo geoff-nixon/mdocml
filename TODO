@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.186 2014/10/25 01:01:12 schwarze Exp $
+* $Id: TODO,v 1.187 2014/11/09 00:54:58 schwarze Exp $
 ************************************************************************
 
 Many issues are annotated for difficulty as follows:
@@ -492,6 +492,14 @@ are mere guesses, and some may be wrong.
   See the mail from Werner LEMBERG on the groff list,
   Fri, 14 Feb 2014 18:54:42 +0100 (CET)
   loc *  exist **  algo **  size *  imp **
+
+- warn about attempts to call non-callable macros
+  Steffen Nurpmeso  Tue, 11 Nov 2014 22:55:16 +0100
+  Note that formatting is inconsistent in groff.
+  .Fn Po prints "Po()", .Ar Sh prints "file ..." and no "Sh".
+  Relatively hard because the relevant code is scattered
+  all over mdoc_macro.c and all subtly different.
+  loc **  exist **  algo **  size **  imp **
 
 - warn about "new sentence, new line"
   loc **  exist **  algo ***  size *  imp **

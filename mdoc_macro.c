@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.143 2014/09/07 00:05:28 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.144 2014/11/17 06:44:58 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -926,7 +926,8 @@ in_line(MACRO_PROT_ARGS)
 			break;
 		}
 
-		ntok = ARGS_QWORD == ac ? MDOC_MAX : lookup(tok, p);
+		ntok = (ac == ARGS_QWORD || (tok == MDOC_Fn && !cnt)) ?
+		    MDOC_MAX : lookup(tok, p);
 
 		/*
 		 * In this case, we've located a submacro and must
@@ -991,6 +992,8 @@ in_line(MACRO_PROT_ARGS)
 			if (scope && ! rew_elem(mdoc, tok))
 				return(0);
 			scope = 0;
+			if (tok == MDOC_Fn)
+				mayopen = 0;
 		} else if (mayopen && !scope) {
 			if ( ! mdoc_elem_alloc(mdoc, line, ppos, tok, arg))
 				return(0);

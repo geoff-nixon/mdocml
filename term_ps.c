@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.67 2014/10/27 20:41:58 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.68 2014/10/28 17:36:19 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -635,12 +635,14 @@ ps_setwidth(struct termp *p, int iop, size_t width)
 	size_t	 lastwidth;
 
 	lastwidth = p->ps->width;
-	if (0 < iop)
+	if (iop > 0)
 		p->ps->width += width;
-	else if (0 > iop)
+	else if (iop == 0)
+		p->ps->width = width ? width : p->ps->lastwidth;
+	else if (p->ps->width > width)
 		p->ps->width -= width;
 	else
-		p->ps->width = width ? width : p->ps->lastwidth;
+		p->ps->width = 0;
 	p->ps->lastwidth = lastwidth;
 }
 

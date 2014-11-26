@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.145 2014/11/20 00:31:28 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.146 2014/11/25 20:00:01 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -171,7 +171,7 @@ const	struct mdoc_macro __mdoc_macros[MDOC_MAX] = {
 	{ blk_part_exp, MDOC_CALLABLE | MDOC_PARSED |
 			MDOC_EXPLICIT | MDOC_JOIN }, /* So */
 	{ blk_part_imp, MDOC_CALLABLE | MDOC_PARSED | MDOC_JOIN }, /* Sq */
-	{ in_line_eoln, 0 }, /* Sm */
+	{ in_line_argn, 0 }, /* Sm */
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED | MDOC_JOIN }, /* Sx */
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED | MDOC_JOIN }, /* Sy */
 	{ in_line, MDOC_CALLABLE | MDOC_PARSED }, /* Tn */

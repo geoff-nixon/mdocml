@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.3,v 1.27 2014/10/28 17:36:19 schwarze Exp $
+.\"	$Id: mandoc.3,v 1.28 2014/11/26 21:40:17 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: October 28 2014 $
+.Dd $Mdocdate: November 26 2014 $
 .Dt MANDOC 3
 .Os
 .Sh NAME
@@ -396,6 +396,12 @@ open with
 .Xr gunzip 1 ;
 otherwise, with
 .Xr open 2 .
+If
+.Xr open 2
+fails, append
+.Pa .gz
+and try with
+.Xr gunzip 1 .
 Return a file descriptor open for reading in
 .Fa fd ,
 or -1 on failure.
@@ -410,14 +416,18 @@ implemented in
 Parse a file or file descriptor.
 If
 .Va fd
-is -1,
+is -1, open
 .Va fname
-is opened for reading.
+with
+.Fn mparse_open .
 Otherwise,
 .Va fname
 is assumed to be the name associated with
 .Va fd .
-This may be called multiple times with different parameters; however,
+Calls
+.Fn mparse_wait
+before returning.
+This function may be called multiple times with different parameters; however,
 .Fn mparse_reset
 should be invoked between parses.
 Declared in
@@ -461,11 +471,12 @@ implemented in
 .It Fn mparse_wait
 Bury a
 .Xr gunzip 1
-child process
-.Fa child_pid
-that was spawned with
+child process that was spawned with
 .Fn mparse_open .
 To be called after the parse sequence is complete.
+Not needed after
+.Fn mparse_readfd ,
+but does no harm in that case, either.
 Returns
 .Dv MANDOCLEVEL_OK
 on success and

@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.168 2014/10/28 17:36:19 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.169 2014/11/19 20:40:51 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1084,7 +1084,6 @@ mpages_merge(struct mchars *mc, struct mparse *mp)
 	struct man		*man;
 	char			*sodest;
 	char			*cp;
-	pid_t			 child_pid;
 	int			 fd;
 	unsigned int		 pslot;
 	enum mandoclevel	 lvl;
@@ -1112,9 +1111,8 @@ mpages_merge(struct mchars *mc, struct mparse *mp)
 		mdoc = NULL;
 		man = NULL;
 		sodest = NULL;
-		child_pid = 0;
 
-		mparse_open(mp, &fd, mpage->mlinks->file, &child_pid);
+		mparse_open(mp, &fd, mpage->mlinks->file);
 		if (fd == -1) {
 			say(mpage->mlinks->file, "&open");
 			goto nextpage;
@@ -1231,8 +1229,7 @@ mpages_merge(struct mchars *mc, struct mparse *mp)
 		dbadd(mpage, mc);
 
 nextpage:
-		if (child_pid &&
-		    mparse_wait(mp, child_pid) != MANDOCLEVEL_OK) {
+		if (mparse_wait(mp) != MANDOCLEVEL_OK) {
 			exitcode = (int)MANDOCLEVEL_SYSERR;
 			say(mpage->mlinks->file, "&wait gunzip");
 		}

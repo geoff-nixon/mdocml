@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.3,v 1.26 2014/09/03 23:21:47 schwarze Exp $
+.\"	$Id: mandoc.3,v 1.27 2014/10/28 17:36:19 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2010 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: September 3 2014 $
+.Dd $Mdocdate: October 28 2014 $
 .Dt MANDOC 3
 .Os
 .Sh NAME
@@ -81,7 +81,6 @@
 .Fa "struct mparse *parse"
 .Fa "int *fd"
 .Fa "const char *fname"
-.Fa "pid_t *child_pid"
 .Fc
 .Ft "enum mandoclevel"
 .Fo mparse_readfd
@@ -111,7 +110,6 @@
 .Ft "enum mandoclevel"
 .Fo mparse_wait
 .Fa "struct mparse *parse"
-.Fa "pid_t child_pid"
 .Fc
 .In sys/types.h
 .In mandoc.h
@@ -404,14 +402,6 @@ or -1 on failure.
 It can be passed to
 .Fn mparse_readfd
 or used directly.
-If applicable, return the
-.Xr gunzip 1
-child process ID in
-.Fa child_pid ,
-or otherwise 0.
-If non-zero, it should be passed to
-.Fn mparse_wait
-after completing the parse sequence.
 Declared in
 .In mandoc.h ,
 implemented in

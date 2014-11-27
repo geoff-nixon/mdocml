@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.210 2014/11/17 06:44:58 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.211 2014/11/19 22:00:37 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -183,7 +183,7 @@ static	const struct htmlmdoc mdocs[MDOC_MAX] = {
 	{mdoc_quote_pre, mdoc_quote_post}, /* Bq */
 	{mdoc_xx_pre, NULL}, /* Bsx */
 	{mdoc_bx_pre, NULL}, /* Bx */
-	{NULL, NULL}, /* Db */
+	{mdoc_skip_pre, NULL}, /* Db */
 	{NULL, NULL}, /* Dc */
 	{mdoc_quote_pre, mdoc_quote_post}, /* Do */
 	{mdoc_quote_pre, mdoc_quote_post}, /* Dq */

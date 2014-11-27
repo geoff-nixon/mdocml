@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.293 2014/11/25 20:00:01 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.294 2014/11/27 16:20:31 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -350,7 +350,8 @@ print_mdoc_node(DECL_ARGS)
 		term_tbl(p, n->span);
 		break;
 	default:
-		if (termacts[n->tok].pre && ENDBODY_NOT == n->end)
+		if (termacts[n->tok].pre &&
+		    (n->end == ENDBODY_NOT || n->nchild))
 			chld = (*termacts[n->tok].pre)
 				(p, &npair, meta, n);
 		break;
@@ -1917,10 +1918,11 @@ static void
 termp_quote_post(DECL_ARGS)
 {
 
-	if (MDOC_BODY != n->type && MDOC_ELEM != n->type)
+	if (n->type != MDOC_BODY && n->type != MDOC_ELEM)
 		return;
 
-	if (MDOC_En != n->tok)
+	if ( ! (n->tok == MDOC_En ||
+	    (n->tok == MDOC_Eo && n->end == ENDBODY_SPACE)))
 		p->flags |= TERMP_NOSPACE;
 
 	switch (n->tok) {

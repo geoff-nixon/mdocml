@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.256 2014/11/26 19:24:03 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.257 2014/11/27 16:20:31 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -761,7 +761,7 @@ pre_bd(PRE_ARGS)
 		case MDOC_File:
 			mandoc_msg(MANDOCERR_BD_FILE, mdoc->parse,
 			    n->line, n->pos, NULL);
-			return(0);
+			break;
 		case MDOC_Offset:
 			if (0 == argv->sz) {
 				mandoc_msg(MANDOCERR_ARG_EMPTY,

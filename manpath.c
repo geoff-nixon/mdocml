@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.17 2014/08/16 19:00:01 schwarze Exp $ */
+/*	$Id: manpath.c,v 1.18 2014/11/18 19:41:47 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -80,7 +80,7 @@ manpath_parse(struct manpaths *dirs, const char *file,
 	if ( ! ferror(stream) && feof(stream) &&
 			bsz && '\n' == buf[bsz - 1]) {
 		buf[bsz - 1] = '\0';
-		manpath_parseline(dirs, buf);
+		manpath_parseline(dirs, buf, 1);
 	}
 
 	free(buf);

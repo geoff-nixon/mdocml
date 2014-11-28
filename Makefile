@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.444 2014/09/27 11:20:39 kristaps Exp $
+# $Id: Makefile,v 1.445 2014/10/25 01:03:52 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -35,8 +35,7 @@ TESTSRCS	 = test-dirent-namlen.c \
 		   test-strsep.c \
 		   test-wchar.c
 
-SRCS		 = arch.c \
-		   att.c \
+SRCS		 = att.c \
 		   cgi.c \
 		   chars.c \
 		   compat_fgetln.c \
@@ -103,7 +102,6 @@ DISTFILES	 = INSTALL \
 		   NEWS \
 		   TODO \
 		   apropos.1 \
-		   arch.in \
 		   att.in \
 		   cgi.h.example \
 		   chars.in \
@@ -160,8 +158,7 @@ LIBMAN_OBJS	 = man.o \
 		   man_macro.o \
 		   man_validate.o
 
-LIBMDOC_OBJS	 = arch.o \
-		   att.o \
+LIBMDOC_OBJS	 = att.o \
 		   lib.o \
 		   mdoc.o \
 		   mdoc_argv.o \

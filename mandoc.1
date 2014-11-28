@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.123 2014/11/25 20:18:15 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.124 2014/11/27 23:40:19 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: November 25 2014 $
+.Dd $Mdocdate: November 27 2014 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -665,12 +665,6 @@ macro lacks the mandatory section argument.
 The section number in a
 .Ic \&Dt
 line is invalid, but still used.
-.It Sy "unknown manual volume or arch"
-.Pq mdoc
-The volume name in a
-.Ic \&Dt
-line is invalid, but still used.
-The manual is assumed to be architecture-independent.
 .It Sy "missing date, using today's date"
 .Pq mdoc, man
 The document was parsed as

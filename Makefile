@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.446 2014/11/28 18:09:01 schwarze Exp $
+# $Id: Makefile,v 1.447 2014/11/28 18:36:35 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -101,7 +101,6 @@ DISTFILES	 = INSTALL \
 		   NEWS \
 		   TODO \
 		   apropos.1 \
-		   att.in \
 		   cgi.h.example \
 		   chars.in \
 		   compat_fts.h \

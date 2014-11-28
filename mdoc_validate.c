@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.258 2014/11/27 23:40:19 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.259 2014/11/28 01:05:43 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -942,10 +942,7 @@ post_lb(POST_ARGS)
 	char			*libname;
 
 	check_count(mdoc, MDOC_ELEM, CHECK_WARN, CHECK_EQ, 1);
-
 	n = mdoc->last->child;
-
-	assert(n);
 	assert(MDOC_TEXT == n->type);
 
 	if (NULL == (stdlibname = mdoc_a2lib(n->string)))

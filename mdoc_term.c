@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.294 2014/11/27 16:20:31 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.295 2014/11/27 22:27:56 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -995,6 +995,7 @@ termp_it_post(DECL_ARGS)
 static int
 termp_nm_pre(DECL_ARGS)
 {
+	const char	*cp;
 
 	if (MDOC_BLOCK == n->type) {
 		p->flags |= TERMP_PREKEEP;
@@ -1005,12 +1006,15 @@ termp_nm_pre(DECL_ARGS)
 		if (NULL == n->child)
 			return(0);
 		p->flags |= TERMP_NOSPACE;
-		p->offset += term_len(p, 1) +
-		    (NULL == n->prev->child ?
-		     term_strlen(p, meta->name) :
-		     MDOC_TEXT == n->prev->child->type ?
-		     term_strlen(p, n->prev->child->string) :
-		     term_len(p, 5));
+		cp = NULL;
+		if (n->prev->child != NULL)
+		    cp = n->prev->child->string;
+		if (cp == NULL)
+			cp = meta->name;
+		if (cp == NULL)
+			p->offset += term_len(p, 6);
+		else
+			p->offset += term_len(p, 1) + term_strlen(p, cp);
 		return(1);
 	}
 

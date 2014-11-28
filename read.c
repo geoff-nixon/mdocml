@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.99 2014/11/27 23:40:19 schwarze Exp $ */
+/*	$Id: read.c,v 1.100 2014/11/28 06:27:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -97,7 +97,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"lower case character in document title",
 	"missing manual section, using \"\"",
 	"unknown manual section",
-	"unknown manual volume or arch",
 	"missing date, using today's date",
 	"cannot parse date, using it verbatim",
 	"missing Os macro, using \"\"",

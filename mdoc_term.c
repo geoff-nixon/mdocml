@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.295 2014/11/27 22:27:56 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.296 2014/11/28 16:02:52 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1227,14 +1227,8 @@ static int
 termp_nd_pre(DECL_ARGS)
 {
 
-	if (MDOC_BODY != n->type)
-		return(1);
-
-#if defined(__OpenBSD__) || defined(__linux__)
-	term_word(p, "\\(en");
-#else
-	term_word(p, "\\(em");
-#endif
+	if (n->type == MDOC_BODY)
+		term_word(p, "\\(en");
 	return(1);
 }
 

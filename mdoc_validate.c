@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.260 2014/11/28 17:24:41 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.261 2014/11/28 18:09:01 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -2280,19 +2280,9 @@ post_dt(POST_ARGS)
 		mdoc->meta.msec = mandoc_strdup(nn->string);
 	}
 
-	if (NULL == (nn = nn->next))
-		goto out;
+	/* Handle an optional architecture */
 
-	/*
-	 * If the third argument is a volume name, format is,
-	 * otherwise assume it's an architecture.
-	 */
-
-	cp = mdoc_a2vol(nn->string);
-	if (cp) {
-		free(mdoc->meta.vol);
-		mdoc->meta.vol = mandoc_strdup(cp);
-	} else {
+	if ((nn = nn->next) != NULL) {
 		for (p = nn->string; *p; p++)
 			*p = tolower((unsigned char)*p);
 		mdoc->meta.arch = mandoc_strdup(nn->string);

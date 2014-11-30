@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.212 2014/11/27 16:20:31 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.213 2014/11/27 22:27:56 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1869,7 +1869,8 @@ static void
 mdoc_pf_post(MDOC_ARGS)
 {
 
-	h->flags |= HTML_NOSPACE;
+	if ( ! (n->next == NULL || n->next->flags & MDOC_LINE))
+		h->flags |= HTML_NOSPACE;
 }
 
 static int

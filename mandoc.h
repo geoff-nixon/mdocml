@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.171 2014/11/28 18:09:01 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.172 2014/11/30 02:36:38 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -103,6 +103,7 @@ enum	mandocerr {
 	MANDOCERR_IT_NOBODY, /* empty list item: Bl -type It */
 	MANDOCERR_BF_NOFONT, /* missing font type, using \fR: Bf */
 	MANDOCERR_BF_BADFONT, /* unknown font type, using \fR: Bf font */
+	MANDOCERR_PF_SKIP, /* nothing follows prefix: Pf arg */
 	MANDOCERR_ARG_STD, /* missing -std argument, adding it: macro */
 	MANDOCERR_EQN_NOBOX, /* missing eqn box, using "": op */
 

@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.124 2014/11/27 23:40:19 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.125 2014/11/28 18:09:01 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: November 27 2014 $
+.Dd $Mdocdate: November 28 2014 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -803,6 +803,13 @@ Probably, there are author names lacking markup.
 See the
 .Xr mdoc 7
 manual for replacements.
+.It Sy "macro neither callable nor escaped"
+.Pq mdoc
+The name of a macro that is not callable appears on a macro line.
+It is printed verbatim.
+If the intention is to call it, move it to its own line;
+otherwise, escape it by prepending
+.Sq \e& .
 .It Sy "skipping paragraph macro"
 In
 .Xr mdoc 7

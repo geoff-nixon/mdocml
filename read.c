@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.100 2014/11/28 06:27:05 schwarze Exp $ */
+/*	$Id: read.c,v 1.101 2014/11/28 18:09:01 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -120,6 +120,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 
 	/* related to macros and nesting */
 	"obsolete macro",
+	"macro neither callable nor escaped",
 	"skipping paragraph macro",
 	"moving paragraph macro out of list",
 	"skipping no-space macro",

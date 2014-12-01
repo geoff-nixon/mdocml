@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.104 2014/10/26 17:12:03 schwarze Exp $ */
+/*	$Id: term.h,v 1.105 2014/10/28 17:36:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,8 +15,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifndef TERM_H
-#define TERM_H
 
 __BEGIN_DECLS
 
@@ -134,5 +132,3 @@ void		  term_fontrepl(struct termp *, enum termfont);
 void		  term_fontlast(struct termp *);
 
 __END_DECLS
-
-#endif /*!TERM_H*/

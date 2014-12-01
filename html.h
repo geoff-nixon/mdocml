@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.66 2014/10/10 15:26:29 schwarze Exp $ */
+/*	$Id: html.h,v 1.67 2014/10/28 17:36:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,8 +14,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifndef HTML_H
-#define HTML_H
 
 __BEGIN_DECLS
 
@@ -176,5 +174,3 @@ void		  buffmt_includes(struct html *, const char *);
 int		  html_strlen(const char *);
 
 __END_DECLS
-
-#endif /*!HTML_H*/

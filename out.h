@@ -1,4 +1,4 @@
-/*	$Id: out.h,v 1.23 2014/08/12 19:28:03 schwarze Exp $ */
+/*	$Id: out.h,v 1.24 2014/10/14 02:16:06 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,8 +14,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#ifndef OUT_H
-#define OUT_H
 
 enum	roffscale {
 	SCALE_CM, /* centimeters (c) */
@@ -69,5 +67,3 @@ void		  tblcalc(struct rofftbl *tbl,
 			const struct tbl_span *, size_t);
 
 __END_DECLS
-
-#endif /*!OUT_H*/

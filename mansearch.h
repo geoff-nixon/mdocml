@@ -1,4 +1,4 @@
-/*	$Id: mansearch.h,v 1.21 2014/11/27 01:58:21 schwarze Exp $ */
+/*	$Id: mansearch.h,v 1.22 2014/12/01 04:05:32 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -96,6 +96,8 @@ struct	mansearch {
 };
 
 __BEGIN_DECLS
+
+struct	manpaths;
 
 int	mansearch_setup(int);
 int	mansearch(const struct mansearch *cfg, /* options */

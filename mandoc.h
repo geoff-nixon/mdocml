@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.174 2014/12/01 04:05:32 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.175 2014/12/01 04:14:14 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -414,12 +414,12 @@ enum	mandoc_esc {
 typedef	void	(*mandocmsg)(enum mandocerr, enum mandoclevel,
 			const char *, int, int, const char *);
 
+__BEGIN_DECLS
+
 struct	mparse;
 struct	mchars;
 struct	mdoc;
 struct	man;
-
-__BEGIN_DECLS
 
 enum mandoc_esc	  mandoc_escape(const char **, const char **, int *);
 struct mchars	 *mchars_alloc(void);

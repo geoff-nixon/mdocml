@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.67 2014/10/28 17:36:19 schwarze Exp $ */
+/*	$Id: html.h,v 1.68 2014/12/01 04:05:31 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -14,8 +14,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-
-__BEGIN_DECLS
 
 enum	htmltag {
 	TAG_HTML,
@@ -143,6 +141,11 @@ struct	html {
 	int		  oflags; /* output options */
 #define	HTML_FRAGMENT	 (1 << 0) /* don't emit HTML/HEAD/BODY */
 };
+
+__BEGIN_DECLS
+
+struct	tbl_span;
+struct	eqn;
 
 void		  print_gen_decls(struct html *);
 void		  print_gen_head(struct html *);

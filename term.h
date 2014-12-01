@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.105 2014/10/28 17:36:19 schwarze Exp $ */
+/*	$Id: term.h,v 1.106 2014/12/01 04:05:32 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,10 +15,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-
-__BEGIN_DECLS
-
-struct	termp;
 
 enum	termenc {
 	TERMENC_ASCII,
@@ -41,6 +37,8 @@ enum	termfont {
 };
 
 #define	TERM_MAXMARGIN	  100000 /* FIXME */
+
+struct	termp;
 
 typedef void	(*term_margin)(struct termp *, const void *);
 
@@ -101,6 +99,11 @@ struct	termp {
 	const void	 *argf;		/* arg for headf/footf */
 	struct termp_ps	 *ps;
 };
+
+__BEGIN_DECLS
+
+struct	tbl_span;
+struct	eqn;
 
 const char	 *ascii_uc2str(int);
 

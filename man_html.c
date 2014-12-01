@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.103 2014/09/27 10:56:18 kristaps Exp $ */
+/*	$Id: man_html.c,v 1.104 2014/09/27 11:17:19 kristaps Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -25,11 +25,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "mandoc.h"
 #include "mandoc_aux.h"
+#include "man.h"
 #include "out.h"
 #include "html.h"
-#include "man.h"
 #include "main.h"
 
 /* TODO: preserve ident widths. */

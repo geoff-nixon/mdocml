@@ -1,4 +1,4 @@
-/*	$Id: out.h,v 1.24 2014/10/14 02:16:06 schwarze Exp $ */
+/*	$Id: out.h,v 1.25 2014/12/01 04:05:32 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -50,8 +50,6 @@ struct	rofftbl {
 	void		*arg; /* passed to slen and len */
 };
 
-__BEGIN_DECLS
-
 #define	SCALE_VS_INIT(p, v) \
 	do { (p)->unit = SCALE_VS; \
 	     (p)->scale = (v); } \
@@ -61,6 +59,10 @@ __BEGIN_DECLS
 	do { (p)->unit = SCALE_EN; \
 	     (p)->scale = (v); } \
 	while (/* CONSTCOND */ 0)
+
+__BEGIN_DECLS
+
+struct	tbl_span;
 
 int		  a2roffsu(const char *, struct roffsu *, enum roffscale);
 void		  tblcalc(struct rofftbl *tbl,

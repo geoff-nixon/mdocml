@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.213 2014/11/27 22:27:56 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.214 2014/11/30 05:29:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -26,11 +26,10 @@
 #include <string.h>
 #include <unistd.h>
 
-#include "mandoc.h"
 #include "mandoc_aux.h"
+#include "mdoc.h"
 #include "out.h"
 #include "html.h"
-#include "mdoc.h"
 #include "main.h"
 
 #define	INDENT		 5

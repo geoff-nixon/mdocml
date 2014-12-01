@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.102 2014/11/30 02:36:38 schwarze Exp $ */
+/*	$Id: read.c,v 1.103 2014/11/30 05:29:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -41,7 +41,6 @@
 #include "libmandoc.h"
 #include "mdoc.h"
 #include "man.h"
-#include "main.h"
 
 #define	REPARSE_LIMIT	1000
 
@@ -756,12 +755,12 @@ mparse_parse_buffer(struct mparse *curp, struct buf blk, const char *file)
 }
 
 enum mandoclevel
-mparse_readmem(struct mparse *curp, const void *buf, size_t len,
+mparse_readmem(struct mparse *curp, void *buf, size_t len,
 		const char *file)
 {
 	struct buf blk;
 
-	blk.buf = UNCONST(buf);
+	blk.buf = buf;
 	blk.sz = len;
 
 	mparse_parse_buffer(curp, blk, file);

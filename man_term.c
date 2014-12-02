@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.155 2014/10/28 17:36:19 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.156 2014/11/21 01:52:53 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1018,13 +1018,14 @@ out:
 	 * -man doesn't have nested macros, we don't need to be
 	 * more specific than this.
 	 */
-	if (MANT_LITERAL & mt->fl && ! (TERMP_NOBREAK & p->flags) &&
-	    (NULL == n->next || MAN_LINE & n->next->flags)) {
+	if (mt->fl & MANT_LITERAL &&
+	    ! (p->flags & (TERMP_NOBREAK | TERMP_NONEWLINE)) &&
+	    (n->next == NULL || n->next->flags & MAN_LINE)) {
 		rm = p->rmargin;
 		rmax = p->maxrmargin;
 		p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
 		p->flags |= TERMP_NOSPACE;
-		if (NULL != n->string && '\0' != *n->string)
+		if (n->string != NULL && *n->string != '\0')
 			term_flushln(p);
 		else
 			term_newln(p);

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.214 2014/11/30 05:29:00 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.215 2014/12/01 08:05:52 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1201,7 +1201,8 @@ mdoc_bd_pre(MDOC_ARGS)
 		default:
 			break;
 		}
-		if (nn->next && nn->next->line == nn->line)
+		if (h->flags & HTML_NONEWLINE ||
+		    (nn->next && ! (nn->next->flags & MDOC_LINE)))
 			continue;
 		else if (nn->next)
 			print_text(h, "\n");

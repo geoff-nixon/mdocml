@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.188 2014/11/20 02:21:27 schwarze Exp $
+* $Id: TODO,v 1.189 2014/11/26 21:40:17 schwarze Exp $
 ************************************************************************
 
 Many issues are annotated for difficulty as follows:
@@ -82,11 +82,6 @@ are mere guesses, and some may be wrong.
 - .while and .shift 
   found by jca@ in ratpoison(1)  Sun, 30 Jun 2013 12:01:09 +0200
   loc *  exist **  algo **  size **  imp **
-
-- \c (interrupted text) should prevent the line break
-  even inside .Bd literal; that occurs in chat(8)
-  also found in cclive(1) - DocBook output
-  loc **  exist ***  algo **  size *  imp *
 
 - \h horizontal move
   found in cclive(1) DocBook output

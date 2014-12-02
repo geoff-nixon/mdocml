@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.297 2014/11/28 16:54:23 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.298 2014/11/30 05:29:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1632,7 +1632,8 @@ termp_bd_pre(DECL_ARGS)
 		default:
 			break;
 		}
-		if (nn->next && nn->next->line == nn->line)
+		if (p->flags & TERMP_NONEWLINE ||
+		    (nn->next && ! (nn->next->flags & MDOC_LINE)))
 			continue;
 		term_flushln(p);
 		p->flags |= TERMP_NOSPACE;

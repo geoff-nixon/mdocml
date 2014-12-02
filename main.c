@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.199 2014/11/11 19:04:55 schwarze Exp $ */
+/*	$Id: main.c,v 1.200 2014/11/26 21:40:17 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -148,7 +148,7 @@ main(int argc, char *argv[])
 	/* Parser and formatter options. */
 
 	memset(&curp, 0, sizeof(struct curparse));
-	curp.outtype = OUTT_ASCII;
+	curp.outtype = OUTT_LOCALE;
 	curp.wlevel  = MANDOCLEVEL_FATAL;
 	options = MPARSE_SO | MPARSE_UTF8 | MPARSE_LATIN1;
 	defos = NULL;

@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.156 2014/11/21 01:52:53 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.157 2014/12/02 10:08:06 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -123,7 +123,7 @@ static	const struct termact termacts[MAN_MAX] = {
 	{ NULL, NULL, 0 }, /* RE */
 	{ pre_RS, post_RS, 0 }, /* RS */
 	{ pre_ign, NULL, 0 }, /* DT */
-	{ pre_ign, NULL, 0 }, /* UC */
+	{ pre_ign, NULL, MAN_NOTEXT }, /* UC */
 	{ pre_PD, NULL, MAN_NOTEXT }, /* PD */
 	{ pre_ign, NULL, 0 }, /* AT */
 	{ pre_in, NULL, MAN_NOTEXT }, /* in */
@@ -778,12 +778,18 @@ pre_SS(DECL_ARGS)
 		mt->fl &= ~MANT_LITERAL;
 		mt->lmargin[mt->lmargincur] = term_len(p, p->defindent);
 		mt->offset = term_len(p, p->defindent);
-		/* If following a prior empty `SS', no vspace. */
-		if (n->prev && MAN_SS == n->prev->tok)
-			if (NULL == n->prev->body->child)
-				break;
-		if (NULL == n->prev)
+
+		/*
+		 * No vertical space before the first subsection
+		 * and after an empty subsection.
+		 */
+
+		do {
+			n = n->prev;
+		} while (n != NULL && termacts[n->tok].flags & MAN_NOTEXT);
+		if (n == NULL || (n->tok == MAN_SS && n->body->child == NULL))
 			break;
+
 		for (i = 0; i < mt->pardist; i++)
 			term_vspace(p);
 		break;
@@ -827,13 +833,18 @@ pre_SH(DECL_ARGS)
 		mt->fl &= ~MANT_LITERAL;
 		mt->lmargin[mt->lmargincur] = term_len(p, p->defindent);
 		mt->offset = term_len(p, p->defindent);
-		/* If following a prior empty `SH', no vspace. */
-		if (n->prev && MAN_SH == n->prev->tok)
-			if (NULL == n->prev->body->child)
-				break;
-		/* If the first macro, no vspae. */
-		if (NULL == n->prev)
+
+		/*
+		 * No vertical space before the first section
+		 * and after an empty section.
+		 */
+
+		do {
+			n = n->prev;
+		} while (n != NULL && termacts[n->tok].flags & MAN_NOTEXT);
+		if (n == NULL || (n->tok == MAN_SH && n->body->child == NULL))
 			break;
+
 		for (i = 0; i < mt->pardist; i++)
 			term_vspace(p);
 		break;

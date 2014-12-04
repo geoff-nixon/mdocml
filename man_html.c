@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.105 2014/12/01 08:05:52 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.106 2014/12/02 10:08:06 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -282,7 +282,7 @@ a2width(const struct man_node *n, struct roffsu *su)
 
 	if (MAN_TEXT != n->type)
 		return(0);
-	if (a2roffsu(n->string, su, SCALE_BU))
+	if (a2roffsu(n->string, su, SCALE_EN))
 		return(1);
 
 	return(0);

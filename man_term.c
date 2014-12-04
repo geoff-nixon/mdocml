@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.157 2014/12/02 10:08:06 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.158 2014/12/04 01:33:42 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -201,7 +201,7 @@ a2width(const struct termp *p, const char *cp)
 {
 	struct roffsu	 su;
 
-	if ( ! a2roffsu(cp, &su, SCALE_BU))
+	if ( ! a2roffsu(cp, &su, SCALE_EN))
 		return(-1);
 
 	return((int)term_hspan(p, &su));

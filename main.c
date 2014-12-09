@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.202 2014/12/05 21:55:04 schwarze Exp $ */
+/*	$Id: main.c,v 1.203 2014/12/09 07:29:42 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -134,8 +134,7 @@ main(int argc, char *argv[])
 		++progname;
 
 #if HAVE_SQLITE3
-	if (0 == strncmp(progname, "mandocdb", 8) ||
-	    0 == strncmp(progname, "makewhatis", 10))
+	if (strcmp(progname, BINM_MAKEWHATIS) == 0)
 		return(mandocdb(argc, argv));
 #endif
 
@@ -147,11 +146,11 @@ main(int argc, char *argv[])
 	memset(&search, 0, sizeof(struct mansearch));
 	search.outkey = "Nd";
 
-	if (strcmp(progname, "man") == 0)
+	if (strcmp(progname, BINM_MAN) == 0)
 		search.argmode = ARG_NAME;
-	else if (strncmp(progname, "apropos", 7) == 0)
+	else if (strcmp(progname, BINM_APROPOS) == 0)
 		search.argmode = ARG_EXPR;
-	else if (strncmp(progname, "whatis", 6) == 0)
+	else if (strcmp(progname, BINM_WHATIS) == 0)
 		search.argmode = ARG_WORD;
 	else if (strncmp(progname, "help", 4) == 0)
 		search.argmode = ARG_NAME;

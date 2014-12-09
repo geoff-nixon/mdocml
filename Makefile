@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.449 2014/12/01 08:09:26 schwarze Exp $
+# $Id: Makefile,v 1.450 2014/12/09 06:11:35 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -14,6 +14,8 @@
 # WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+# === LIST OF FILES ====================================================
 
 TESTSRCS	 = test-dirent-namlen.c \
 		   test-fgetln.c \
@@ -259,6 +261,8 @@ WWW_MANS	 = apropos.1.html \
 WWW_OBJS	 = mdocml.tar.gz \
 		   mdocml.sha256
 
+# === USER CONFIGURATION ===============================================
+
 include Makefile.local
 
 INSTALL_TARGETS	 = $(BUILD_TARGETS:-build=-install)
@@ -278,6 +282,9 @@ install: base-install $(INSTALL_TARGETS)
 www: $(WWW_OBJS) $(WWW_MANS)
 
 $(WWW_MANS): mandoc
+
+.PHONY: base-install cgi-install db-install install www-install
+.PHONY: clean distclean depend
 
 include Makefile.depend
 
@@ -344,25 +351,9 @@ cgi-install: cgi-build
 	$(INSTALL_MAN) apropos.1 $(DESTDIR)$(WWWPREFIX)/man/mandoc/man1/
 	$(INSTALL_MAN) man.cgi.8 $(DESTDIR)$(WWWPREFIX)/man/mandoc/man8/
 
-www-install: www
-	mkdir -p $(DESTDIR)$(HTDOCDIR)/snapshots
-	$(INSTALL_DATA) $(WWW_MANS) style.css $(DESTDIR)$(HTDOCDIR)
-	$(INSTALL_DATA) $(WWW_OBJS) $(DESTDIR)$(HTDOCDIR)/snapshots
-	$(INSTALL_DATA) mdocml.tar.gz \
-		$(DESTDIR)$(HTDOCDIR)/snapshots/mdocml-$(VERSION).tar.gz
-	$(INSTALL_DATA) mdocml.sha256 \
-		$(DESTDIR)$(HTDOCDIR)/snapshots/mdocml-$(VERSION).sha256
-
 Makefile.local config.h: configure ${TESTSRCS}
 	@echo "$@ is out of date; please run ./configure"
 	@exit 1
-
-depend: config.h
-	mkdep -f Makefile.depend $(CFLAGS) $(SRCS)
-	perl -e 'undef $$/; $$_ = <>; s|/usr/include/\S+||g; \
-		s|\\\n||g; s|  +| |g; s| $$||mg; print;' \
-		Makefile.depend > Makefile.tmp
-	mv Makefile.tmp Makefile.depend
 
 libmandoc.a: $(COMPAT_OBJS) $(LIBMANDOC_OBJS)
 	$(AR) rs $@ $(COMPAT_OBJS) $(LIBMANDOC_OBJS)
@@ -382,6 +373,24 @@ man.cgi: $(CGI_OBJS) libmandoc.a
 demandoc: $(DEMANDOC_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) -o $@ $(DEMANDOC_OBJS) libmandoc.a
 
+# --- maintainer targets ---
+
+www-install: www
+	mkdir -p $(HTDOCDIR)/snapshots
+	$(INSTALL_DATA) $(WWW_MANS) style.css $(HTDOCDIR)
+	$(INSTALL_DATA) $(WWW_OBJS) $(HTDOCDIR)/snapshots
+	$(INSTALL_DATA) mdocml.tar.gz \
+		$(HTDOCDIR)/snapshots/mdocml-$(VERSION).tar.gz
+	$(INSTALL_DATA) mdocml.sha256 \
+		$(HTDOCDIR)/snapshots/mdocml-$(VERSION).sha256
+
+depend: config.h
+	mkdep -f Makefile.depend $(CFLAGS) $(SRCS)
+	perl -e 'undef $$/; $$_ = <>; s|/usr/include/\S+||g; \
+		s|\\\n||g; s|  +| |g; s| $$||mg; print;' \
+		Makefile.depend > Makefile.tmp
+	mv Makefile.tmp Makefile.depend
+
 mdocml.sha256: mdocml.tar.gz
 	sha256 mdocml.tar.gz > $@
 
@@ -392,8 +401,8 @@ mdocml.tar.gz: $(DISTFILES)
 	( cd .dist/ && tar zcf ../$@ mdocml-$(VERSION) )
 	rm -rf .dist/
 
-.PHONY: 	 base-install cgi-install db-install install www-install
-.PHONY: 	 clean distclean depend
+# === SUFFIX RULES =====================================================
+
 .SUFFIXES:	 .1       .3       .5       .7       .8       .h
 .SUFFIXES:	 .1.html  .3.html  .5.html  .7.html  .8.html  .h.html
 

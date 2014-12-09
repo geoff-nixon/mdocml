@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.177 2014/12/05 15:16:54 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.178 2014/12/05 16:18:14 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -336,7 +336,7 @@ static	const struct mdoc_handler mdocs[MDOC_MAX] = {
 
 
 int
-main(int argc, char *argv[])
+mandocdb(int argc, char *argv[])
 {
 	int		  ch, i;
 	size_t		  j, sz;

@@ -1,8 +1,8 @@
-$Id: NEWS,v 1.6 2014/08/11 01:39:00 schwarze Exp $
+$Id: NEWS,v 1.7 2014/12/09 12:05:44 schwarze Exp $
 
 This file lists the most important changes in the mdocml.bsd.lv distribution.
 
-Changes in version 1.13.2, released on December XXX, 2014
+Changes in version 1.13.2, released on December 13, 2014
 
     --- MAJOR NEW FEATURES ---
  * Include an implementation of man(1), the manual page viewer.

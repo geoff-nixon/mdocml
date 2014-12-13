@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.155 2014/11/30 02:36:38 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.156 2014/11/30 05:29:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -672,11 +672,9 @@ macro_or_word(MACRO_PROT_ARGS, int parsed)
 
 	p = buf + ppos;
 	ntok = MDOC_MAX;
-	if (mdoc->flags & MDOC_PHRASELIT)
-		/* nothing */;
-	else if (*p == '"')
+	if (*p == '"')
 		p++;
-	else if (parsed)
+	else if (parsed && ! (mdoc->flags & MDOC_PHRASELIT))
 		ntok = lookup(mdoc, tok, line, ppos, p);
 
 	if (ntok == MDOC_MAX) {

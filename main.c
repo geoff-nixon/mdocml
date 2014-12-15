@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.204 2014/12/09 09:14:33 schwarze Exp $ */
+/*	$Id: main.c,v 1.205 2014/12/11 19:19:35 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -309,9 +309,10 @@ main(int argc, char *argv[])
 				argv = help_argv;
 				argc = 1;
 			}
-		} else if (argv[0] != NULL &&
-		    isdigit((unsigned char)argv[0][0]) &&
-		    (argv[0][1] == '\0' || !strcmp(argv[0], "3p"))) {
+		} else if (argv[0] != NULL && (
+		    (isdigit((unsigned char)argv[0][0]) &&
+		     (argv[0][1] == '\0' || !strcmp(argv[0], "3p"))) ||
+		    (argv[0][0] == 'n' && argv[0][1] == '\0'))) {
 			search.sec = argv[0];
 			argv++;
 			argc--;

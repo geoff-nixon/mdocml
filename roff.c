@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.242 2014/12/16 03:53:43 schwarze Exp $ */
+/*	$Id: roff.c,v 1.243 2014/12/16 23:44:41 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -1576,7 +1576,7 @@ roff_evalnum(struct roff *r, int ln, const char *v,
 			*res *= operand2;
 			break;
 		case '/':
-			if (0 == operand2) {
+			if (operand2 == 0) {
 				mandoc_msg(MANDOCERR_DIVZERO,
 					r->parse, ln, *pos, v);
 				*res = 0;
@@ -1585,6 +1585,12 @@ roff_evalnum(struct roff *r, int ln, const char *v,
 			*res /= operand2;
 			break;
 		case '%':
+			if (operand2 == 0) {
+				mandoc_msg(MANDOCERR_DIVZERO,
+					r->parse, ln, *pos, v);
+				*res = 0;
+				break;
+			}
 			*res %= operand2;
 			break;
 		case '<':

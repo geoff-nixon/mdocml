@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.69 2014/11/20 13:56:20 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.70 2014/12/01 08:05:52 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -540,6 +540,9 @@ pspdf_alloc(const struct mchars *mchars, char *outopts)
 	p = mandoc_calloc(1, sizeof(struct termp));
 	p->symtab = mchars;
 	p->enc = TERMENC_ASCII;
+	p->fontq = mandoc_reallocarray(NULL,
+	    (p->fontsz = 8), sizeof(enum termfont));
+	p->fontq[0] = p->fontl = TERMFONT_NONE;
 	p->ps = mandoc_calloc(1, sizeof(struct termp_ps));
 
 	p->advance = ps_advance;

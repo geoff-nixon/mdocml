@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.182 2014/12/01 04:34:06 schwarze Exp $ */
+/*	$Id: html.c,v 1.183 2014/12/02 10:08:06 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -121,7 +121,7 @@ static	const char	*const roffscales[SCALE_MAX] = {
 };
 
 static	void	 bufncat(struct html *, const char *, size_t);
-static	void	 print_ctag(struct html *, enum htmltag);
+static	void	 print_ctag(struct html *, struct tag *);
 static	int	 print_escape(char);
 static	int	 print_encode(struct html *, const char *, int);
 static	void	 print_metaf(struct html *, enum mandoc_esc);
@@ -511,14 +511,26 @@ print_otag(struct html *h, enum htmltag tag,
 }
 
 static void
-print_ctag(struct html *h, enum htmltag tag)
+print_ctag(struct html *h, struct tag *tag)
 {
 
-	printf("</%s>", htmltags[tag].name);
-	if (HTML_CLRLINE & htmltags[tag].flags) {
+	/*
+	 * Remember to close out and nullify the current
+	 * meta-font and table, if applicable.
+	 */
+	if (tag == h->metaf)
+		h->metaf = NULL;
+	if (tag == h->tblt)
+		h->tblt = NULL;
+
+	printf("</%s>", htmltags[tag->tag].name);
+	if (HTML_CLRLINE & htmltags[tag->tag].flags) {
 		h->flags |= HTML_NOSPACE;
 		putchar('\n');
 	}
+
+	h->tags.head = tag->next;
+	free(tag);
 }
 
 void
@@ -580,17 +592,7 @@ print_tagq(struct html *h, const struct tag *until)
 	struct tag	*tag;
 
 	while ((tag = h->tags.head) != NULL) {
-		/*
-		 * Remember to close out and nullify the current
-		 * meta-font and table, if applicable.
-		 */
-		if (tag == h->metaf)
-			h->metaf = NULL;
-		if (tag == h->tblt)
-			h->tblt = NULL;
-		print_ctag(h, tag->tag);
-		h->tags.head = tag->next;
-		free(tag);
+		print_ctag(h, tag);
 		if (until && tag == until)
 			return;
 	}
@@ -604,17 +606,7 @@ print_stagq(struct html *h, const struct tag *suntil)
 	while ((tag = h->tags.head) != NULL) {
 		if (suntil && tag == suntil)
 			return;
-		/*
-		 * Remember to close out and nullify the current
-		 * meta-font and table, if applicable.
-		 */
-		if (tag == h->metaf)
-			h->metaf = NULL;
-		if (tag == h->tblt)
-			h->tblt = NULL;
-		print_ctag(h, tag->tag);
-		h->tags.head = tag->next;
-		free(tag);
+		print_ctag(h, tag);
 	}
 }
 

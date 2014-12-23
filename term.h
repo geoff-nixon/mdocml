@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.108 2014/12/02 10:08:06 schwarze Exp $ */
+/*	$Id: term.h,v 1.109 2014/12/19 17:12:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -121,10 +121,8 @@ void		  term_begin(struct termp *, term_margin,
 void		  term_end(struct termp *);
 
 void		  term_setwidth(struct termp *, const char *);
-size_t		  term_hspan(const struct termp *,
-			const struct roffsu *);
-size_t		  term_vspan(const struct termp *,
-			const struct roffsu *);
+int		  term_hspan(const struct termp *, const struct roffsu *);
+int		  term_vspan(const struct termp *, const struct roffsu *);
 size_t		  term_strlen(const struct termp *, const char *);
 size_t		  term_len(const struct termp *, size_t);
 

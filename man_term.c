@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.159 2014/12/04 02:05:42 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.160 2014/12/23 01:57:35 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -633,11 +633,10 @@ pre_IP(DECL_ARGS)
 
 		p->offset = mt->offset;
 		p->rmargin = mt->offset + len;
-		if (ival < 0)
-			break;
 
 		/* Set the saved left-margin. */
-		mt->lmargin[mt->lmargincur] = (size_t)ival;
+		if (ival >= 0)
+			mt->lmargin[mt->lmargincur] = (size_t)ival;
 
 		savelit = MANT_LITERAL & mt->fl;
 		mt->fl &= ~MANT_LITERAL;

@@ -1,4 +1,4 @@
-/*	$Id: out.c,v 1.55 2014/12/23 03:28:01 schwarze Exp $ */
+/*	$Id: out.c,v 1.56 2014/12/23 09:31:46 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -94,9 +94,6 @@ a2roffsu(const char *src, struct roffsu *dst, enum roffscale def)
 		break;
 	}
 
-	/* FIXME: do this in the caller. */
-	if (dst->scale < 0.0)
-		dst->scale = 0.0;
 	return(*endptr == '\0' ? 2 : 1);
 }
 

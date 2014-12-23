@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.299 2014/12/02 10:08:06 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.300 2014/12/23 09:31:46 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -533,7 +533,8 @@ a2width(const struct termp *p, const char *v)
 	if (a2roffsu(v, &su, SCALE_MAX) < 2) {
 		SCALE_HS_INIT(&su, term_strlen(p, v));
 		su.scale /= term_strlen(p, "0");
-	}
+	} else if (su.scale < 0.0)
+		su.scale = 0.0;
 
 	return(term_hspan(p, &su));
 }

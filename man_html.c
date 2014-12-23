@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.106 2014/12/02 10:08:06 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.107 2014/12/04 02:05:42 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -362,7 +362,7 @@ man_br_pre(MAN_ARGS)
 	if (MAN_sp == n->tok) {
 		if (NULL != (n = n->child))
 			if ( ! a2roffsu(n->string, &su, SCALE_VS))
-				SCALE_VS_INIT(&su, atoi(n->string));
+				su.scale = 1.0;
 	} else
 		su.scale = 0.0;
 

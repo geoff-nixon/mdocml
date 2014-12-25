@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.243 2014/12/16 23:44:41 schwarze Exp $ */
+/*	$Id: roff.c,v 1.244 2014/12/18 17:43:41 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -21,6 +21,7 @@
 
 #include <assert.h>
 #include <ctype.h>
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -657,6 +658,12 @@ roff_res(struct roff *r, struct buf *buf, int ln, int pos)
 		*stesc = '\0';
 		buf->sz = mandoc_asprintf(&nbuf, "%s%s%s",
 		    buf->buf, res, cp) + 1;
+
+		if (buf->sz > SHRT_MAX) {
+			mandoc_msg(MANDOCERR_ROFFLOOP, r->parse,
+			    ln, (int)(stesc - buf->buf), NULL);
+			return(ROFF_IGN);
+		}
 
 		/* Prepare for the next replacement. */
 

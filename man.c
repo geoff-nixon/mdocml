@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.144 2014/11/28 05:51:32 schwarze Exp $ */
+/*	$Id: man.c,v 1.145 2014/11/28 06:27:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -92,7 +92,8 @@ man_free(struct man *man)
 }
 
 struct man *
-man_alloc(struct roff *roff, struct mparse *parse, int quick)
+man_alloc(struct roff *roff, struct mparse *parse,
+	const char *defos, int quick)
 {
 	struct man	*p;
 
@@ -100,6 +101,7 @@ man_alloc(struct roff *roff, struct mparse *parse, int quick)
 
 	man_hash_init();
 	p->parse = parse;
+	p->defos = defos;
 	p->quick = quick;
 	p->roff = roff;
 

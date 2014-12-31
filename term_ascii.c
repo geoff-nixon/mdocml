@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.40 2014/11/20 13:56:20 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.41 2014/12/19 17:12:04 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -172,6 +172,20 @@ ascii_setwidth(struct termp *p, int iop, size_t width)
 		p->defrmargin = 0;
 	p->lastrmargin = p->rmargin;
 	p->rmargin = p->maxrmargin = p->defrmargin;
+}
+
+void
+ascii_sepline(void *arg)
+{
+	struct termp	*p;
+	size_t		 i;
+
+	p = (struct termp *)arg;
+	putchar('\n');
+	for (i = 0; i < p->defrmargin; i++)
+		putchar('-');
+	putchar('\n');
+	putchar('\n');
 }
 
 static size_t

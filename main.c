@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.208 2014/12/18 21:11:46 schwarze Exp $ */
+/*	$Id: main.c,v 1.209 2014/12/21 14:49:28 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -447,7 +447,9 @@ main(int argc, char *argv[])
 
 		if (MANDOCLEVEL_OK != rc && curp.wstop)
 			break;
-		argc--;
+
+		if (--argc && curp.outtype <= OUTT_UTF8)
+			ascii_sepline(curp.outdata);
 	}
 
 	if (curp.outfree)
@@ -634,6 +636,8 @@ passthrough(const char *file, int fd, int synopsis_only)
 	size_t		 len, off;
 	ssize_t		 nw;
 	int		 print;
+
+	fflush(stdout);
 
 	if ((stream = fdopen(fd, "r")) == NULL) {
 		close(fd);

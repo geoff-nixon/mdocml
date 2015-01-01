@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.209 2014/12/21 14:49:28 schwarze Exp $ */
+/*	$Id: main.c,v 1.210 2014/12/31 16:52:39 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2011, 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -310,7 +310,8 @@ main(int argc, char *argv[])
 				argv = help_argv;
 				argc = 1;
 			}
-		} else if (((uc = argv[0]) != NULL) &&
+		} else if (argc > 1 &&
+		    ((uc = argv[0]) != NULL) &&
 		    ((isdigit(uc[0]) && (uc[1] == '\0' ||
 		      (isalpha(uc[1]) && uc[2] == '\0'))) ||
 		     (uc[0] == 'n' && uc[1] == '\0'))) {

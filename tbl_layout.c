@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.29 2014/10/14 02:16:06 schwarze Exp $ */
+/*	$Id: tbl_layout.c,v 1.30 2014/11/25 21:41:47 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -299,7 +299,7 @@ cell(struct tbl_node *tbl, struct tbl_row *rp,
 	return(mods(tbl, cell_alloc(tbl, rp, c, vert), ln, p, pos));
 }
 
-int
+void
 tbl_layout(struct tbl_node *tbl, int ln, const char *p)
 {
 	struct tbl_row	*rp;
@@ -320,18 +320,18 @@ tbl_layout(struct tbl_node *tbl, int ln, const char *p)
 			rp = NULL;
 			continue;
 		case '\0':  /* Next row on next input line. */
-			return(1);
+			return;
 		case '.':  /* End of layout. */
 			pos++;
 			tbl->part = TBL_PART_DATA;
 			if (tbl->first_row != NULL)
-				return(1);
+				return;
 			mandoc_msg(MANDOCERR_TBLNOLAYOUT,
 			    tbl->parse, ln, pos, NULL);
 			rp = mandoc_calloc(1, sizeof(*rp));
 			cell_alloc(tbl, rp, TBL_CELL_LEFT, 0);
 			tbl->first_row = tbl->last_row = rp;
-			return(1);
+			return;
 		default:  /* Cell. */
 			break;
 		}
@@ -345,7 +345,7 @@ tbl_layout(struct tbl_node *tbl, int ln, const char *p)
 			tbl->last_row = rp;
 		}
 		if ( ! cell(tbl, rp, ln, p, &pos))
-			return(1);
+			return;
 	}
 }
 

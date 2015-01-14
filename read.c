@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.107 2015/01/14 17:49:15 schwarze Exp $ */
+/*	$Id: read.c,v 1.108 2015/01/14 22:02:50 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -210,6 +210,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"uname(3) system call failed, using UNKNOWN",
 	"unknown standard specifier",
 	"skipping request without numeric argument",
+	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
 	"skipping all arguments",
 	"skipping excess arguments",
 	"divide by zero",
@@ -217,7 +218,6 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"generic fatal error",
 
 	"input too large",
-	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
 	".so request failed",
 };
 
@@ -504,9 +504,6 @@ rerun:
 		case ROFF_IGN:
 			pos = 0;
 			continue;
-		case ROFF_ERR:
-			assert(MANDOCLEVEL_FATAL <= curp->file_status);
-			break;
 		case ROFF_SO:
 			if ( ! (curp->options & MPARSE_SO) &&
 			    (i >= blk.sz || blk.buf[i] == '\0')) {

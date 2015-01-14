@@ -1,4 +1,4 @@
-/*	$Id: tbl.c,v 1.29 2014/04/20 16:46:05 schwarze Exp $ */
+/*	$Id: tbl.c,v 1.30 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
@@ -55,9 +55,11 @@ tbl_read(struct tbl_node *tbl, int ln, const char *p, int offs)
 
 	switch (tbl->part) {
 	case TBL_PART_OPTS:
-		return(tbl_option(tbl, ln, p) ? ROFF_IGN : ROFF_ERR);
+		tbl_option(tbl, ln, p);
+		return(ROFF_IGN);
 	case TBL_PART_LAYOUT:
-		return(tbl_layout(tbl, ln, p) ? ROFF_IGN : ROFF_ERR);
+		tbl_layout(tbl, ln, p);
+		return(ROFF_IGN);
 	case TBL_PART_CDATA:
 		return(tbl_cdata(tbl, ln, p) ? ROFF_TBL : ROFF_IGN);
 	default:

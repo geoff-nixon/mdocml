@@ -1,4 +1,4 @@
-/*	$Id: tbl_opts.c,v 1.14 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: tbl_opts.c,v 1.15 2014/11/26 17:51:55 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -252,7 +252,7 @@ again:	/*
 	/* NOTREACHED */
 }
 
-int
+void
 tbl_option(struct tbl_node *tbl, int ln, const char *p)
 {
 	int		 pos;
@@ -265,7 +265,4 @@ tbl_option(struct tbl_node *tbl, int ln, const char *p)
 
 	pos = 0;
 	opt(tbl, ln, p, &pos);
-
-	/* Always succeed. */
-	return(1);
 }

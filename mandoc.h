@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.178 2015/01/14 17:49:15 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.179 2015/01/14 22:02:50 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -166,6 +166,7 @@ enum	mandocerr {
 	MANDOCERR_OS_UNAME, /* uname(3) system call failed, using UNKNOWN */
 	MANDOCERR_ST_BAD, /* unknown standard specifier: St standard */
 	MANDOCERR_IT_NONUM, /* skipping request without numeric argument */
+	MANDOCERR_SO_PATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
 	MANDOCERR_ARG_SKIP, /* skipping all arguments: macro args */
 	MANDOCERR_ARG_EXCESS, /* skipping excess arguments: macro ... args */
 	MANDOCERR_DIVZERO, /* divide by zero */
@@ -173,7 +174,6 @@ enum	mandocerr {
 	MANDOCERR_FATAL, /* ===== start of fatal errors ===== */
 
 	MANDOCERR_TOOLARGE, /* input too large */
-	MANDOCERR_SO_PATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
 	MANDOCERR_SO_FAIL, /* .so request failed */
 
 	MANDOCERR_MAX

@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.53 2014/12/28 14:42:27 schwarze Exp $ */
+/*	$Id: libmandoc.h,v 1.54 2015/01/14 22:58:16 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -60,7 +60,7 @@ struct	mdoc	*mdoc_alloc(struct roff *, struct mparse *,
 			const char *, int);
 void		 mdoc_reset(struct mdoc *);
 int		 mdoc_parseln(struct mdoc *, int, char *, int);
-int		 mdoc_endparse(struct mdoc *);
+void		 mdoc_endparse(struct mdoc *);
 void		 mdoc_addspan(struct mdoc *, const struct tbl_span *);
 void		 mdoc_addeqn(struct mdoc *, const struct eqn *);
 
@@ -69,7 +69,7 @@ struct	man	*man_alloc(struct roff *, struct mparse *,
 			const char *, int);
 void		 man_reset(struct man *);
 int		 man_parseln(struct man *, int, char *, int);
-int		 man_endparse(struct man *);
+void		 man_endparse(struct man *);
 void		 man_addspan(struct man *, const struct tbl_span *);
 void		 man_addeqn(struct man *, const struct eqn *);
 

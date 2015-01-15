@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.232 2014/11/28 04:47:03 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.233 2014/11/28 06:27:05 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -190,12 +190,11 @@ mdoc_alloc(struct roff *roff, struct mparse *parse,
 	return(p);
 }
 
-int
+void
 mdoc_endparse(struct mdoc *mdoc)
 {
 
 	mdoc_macroend(mdoc);
-	return(1);
 }
 
 void

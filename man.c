@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.145 2014/11/28 06:27:05 schwarze Exp $ */
+/*	$Id: man.c,v 1.146 2014/12/28 14:42:27 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -109,12 +109,11 @@ man_alloc(struct roff *roff, struct mparse *parse,
 	return(p);
 }
 
-int
+void
 man_endparse(struct man *man)
 {
 
 	man_macroend(man);
-	return(1);
 }
 
 int

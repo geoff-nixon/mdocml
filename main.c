@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.214 2015/01/14 21:27:17 schwarze Exp $ */
+/*	$Id: main.c,v 1.215 2015/01/15 04:26:39 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -19,6 +19,7 @@
 #include "config.h"
 
 #include <sys/types.h>
+#include <sys/param.h>	/* MACHINE */
 
 #include <assert.h>
 #include <ctype.h>
@@ -328,6 +329,10 @@ main(int argc, char *argv[])
 			argv++;
 			argc--;
 		}
+		if (search.arch == NULL)
+			search.arch = getenv("MACHINE");
+		if (search.arch == NULL)
+			search.arch = MACHINE;
 	}
 
 	rc = MANDOCLEVEL_OK;

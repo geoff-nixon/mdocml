@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.182 2015/01/03 12:55:25 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.183 2015/01/15 04:26:40 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -613,7 +613,11 @@ treescan(void)
 					say(path, "&realpath");
 				continue;
 			}
-			if (strstr(buf, basedir) != buf) {
+			if (strstr(buf, basedir) != buf
+#ifdef HOMEBREWDIR
+			    && strstr(buf, HOMEBREWDIR) != buf
+#endif
+			) {
 				if (warnings) say("",
 				    "%s: outside base directory", buf);
 				continue;
@@ -818,6 +822,10 @@ filescan(const char *file)
 		start = buf;
 	else if (strstr(buf, basedir) == buf)
 		start = buf + strlen(basedir);
+#ifdef HOMEBREWDIR
+	else if (strstr(buf, HOMEBREWDIR) == buf)
+		start = buf;
+#endif
 	else {
 		exitcode = (int)MANDOCLEVEL_BADARG;
 		say("", "%s: outside base directory", buf);

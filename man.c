@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.146 2014/12/28 14:42:27 schwarze Exp $ */
+/*	$Id: man.c,v 1.147 2015/01/15 04:26:40 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -39,7 +39,7 @@ const	char *const __man_macronames[MAN_MAX] = {
 	"IP",		"HP",		"SM",		"SB",
 	"BI",		"IB",		"BR",		"RB",
 	"R",		"B",		"I",		"IR",
-	"RI",		"na",		"sp",		"nf",
+	"RI",		"sp",		"nf",
 	"fi",		"RE",		"RS",		"DT",
 	"UC",		"PD",		"AT",		"in",
 	"ft",		"OP",		"EX",		"EE",

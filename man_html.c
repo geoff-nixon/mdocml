@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.107 2014/12/04 02:05:42 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.108 2014/12/23 09:31:46 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -100,7 +100,6 @@ static	const struct htmlman mans[MAN_MAX] = {
 	{ man_I_pre, NULL }, /* I */
 	{ man_alt_pre, NULL }, /* IR */
 	{ man_alt_pre, NULL }, /* RI */
-	{ man_ign_pre, NULL }, /* na */
 	{ man_br_pre, NULL }, /* sp */
 	{ man_literal_pre, NULL }, /* nf */
 	{ man_literal_pre, NULL }, /* fi */

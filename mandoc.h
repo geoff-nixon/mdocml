@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.184 2015/01/21 20:33:25 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.185 2015/01/22 21:38:16 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -151,6 +151,7 @@ enum	mandocerr {
 	MANDOCERR_IT_STRAY, /* skipping item outside list: It ... */
 	MANDOCERR_TA_STRAY, /* skipping column outside column list: Ta */
 	MANDOCERR_BLK_NOTOPEN, /* skipping end of block that is not open */
+	MANDOCERR_RE_NOTOPEN, /* fewer RS blocks open, skipping: RE arg */
 	MANDOCERR_BLK_BROKEN, /* inserting missing end of block: macro ... */
 	MANDOCERR_BLK_NOEND, /* appending missing end of block: macro */
 

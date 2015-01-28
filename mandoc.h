@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.190 2015/01/27 05:21:44 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.191 2015/01/28 17:32:07 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -133,12 +133,6 @@ enum	mandocerr {
 	MANDOCERR_TBLLAYOUT_VERT, /* skipping vertical bar in tbl layout */
 
 	MANDOCERR_ERROR, /* ===== start of errors ===== */
-
-	/* related to equations */
-	MANDOCERR_EQNNSCOPE, /* unexpected equation scope closure*/
-	MANDOCERR_EQNSCOPE, /* equation scope open on exit */
-	MANDOCERR_EQNBADSCOPE, /* overlapping equation scopes */
-	MANDOCERR_EQNEOF, /* unexpected end of equation */
 
 	/* related to tables */
 	MANDOCERR_TBLOPT_ALPHA, /* non-alphabetic character in tbl options */

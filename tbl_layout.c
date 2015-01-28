@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.32 2015/01/26 18:42:30 schwarze Exp $ */
+/*	$Id: tbl_layout.c,v 1.33 2015/01/27 05:21:45 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -234,14 +234,11 @@ again:
 }
 
 void
-tbl_layout(struct tbl_node *tbl, int ln, const char *p)
+tbl_layout(struct tbl_node *tbl, int ln, const char *p, int pos)
 {
 	struct tbl_row	*rp;
-	int		 pos;
 
-	pos = 0;
 	rp = NULL;
-
 	for (;;) {
 		/* Skip whitespace before and after each cell. */
 

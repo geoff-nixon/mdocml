@@ -1,4 +1,4 @@
-/*	$Id: tbl_data.c,v 1.34 2015/01/27 05:21:45 schwarze Exp $ */
+/*	$Id: tbl_data.c,v 1.35 2015/01/28 15:03:45 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -64,8 +64,8 @@ getdata(struct tbl_node *tbl, struct tbl_span *dp,
 	 */
 
 	if (NULL == cp) {
-		mandoc_msg(MANDOCERR_TBLEXTRADAT, tbl->parse,
-		    ln, *pos, NULL);
+		mandoc_msg(MANDOCERR_TBLDATA_EXTRA, tbl->parse,
+		    ln, *pos, p + *pos);
 		/* Skip to the end... */
 		while (p[*pos])
 			(*pos)++;
@@ -131,8 +131,8 @@ getdata(struct tbl_node *tbl, struct tbl_span *dp,
 	    TBL_CELL_DHORIZ == dat->layout->pos ||
 	    TBL_CELL_DOWN == dat->layout->pos)
 		if (TBL_DATA_DATA == dat->pos && '\0' != *dat->string)
-			mandoc_msg(MANDOCERR_TBLIGNDATA,
-			    tbl->parse, ln, sv, NULL);
+			mandoc_msg(MANDOCERR_TBLDATA_SPAN,
+			    tbl->parse, ln, sv, dat->string);
 
 	return;
 }
@@ -163,16 +163,16 @@ tbl_cdata(struct tbl_node *tbl, int ln, const char *p, int pos)
 	dat->pos = TBL_DATA_DATA;
 
 	if (dat->string) {
-		sz = strlen(p) + strlen(dat->string) + 2;
+		sz = strlen(p + pos) + strlen(dat->string) + 2;
 		dat->string = mandoc_realloc(dat->string, sz);
 		(void)strlcat(dat->string, " ", sz);
-		(void)strlcat(dat->string, p, sz);
+		(void)strlcat(dat->string, p + pos, sz);
 	} else
-		dat->string = mandoc_strdup(p);
+		dat->string = mandoc_strdup(p + pos);
 
 	if (TBL_CELL_DOWN == dat->layout->pos)
-		mandoc_msg(MANDOCERR_TBLIGNDATA, tbl->parse,
-		    ln, pos, NULL);
+		mandoc_msg(MANDOCERR_TBLDATA_SPAN, tbl->parse,
+		    ln, pos, dat->string);
 
 	return(0);
 }

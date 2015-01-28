@@ -1,4 +1,4 @@
-/*	$Id: tbl_opts.c,v 1.18 2015/01/26 13:03:48 schwarze Exp $ */
+/*	$Id: tbl_opts.c,v 1.19 2015/01/28 15:03:45 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -80,7 +80,8 @@ arg(struct tbl_node *tbl, int ln, const char *p, int *pos, int key)
 
 	switch (key) {
 	case KEY_DELIM:
-		mandoc_msg(MANDOCERR_TBLEQN, tbl->parse, ln, *pos, NULL);
+		mandoc_vmsg(MANDOCERR_TBLOPT_EQN, tbl->parse,
+		    ln, *pos, "%.*s", len, p + *pos);
 		want = 2;
 		break;
 	case KEY_TAB:

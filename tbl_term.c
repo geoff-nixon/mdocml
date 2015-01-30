@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.35 2015/01/30 02:09:04 schwarze Exp $ */
+/*	$Id: tbl_term.c,v 1.36 2015/01/30 04:11:50 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -81,7 +81,7 @@ term_tbl(struct termp *tp, const struct tbl_span *sp)
 	 * calculate the table widths and decimal positions.
 	 */
 
-	if (sp->flags & TBL_SPAN_FIRST) {
+	if (tp->tbl.cols == NULL) {
 		term_flushln(tp);
 
 		tp->tbl.len = term_tbl_len;
@@ -189,7 +189,7 @@ term_tbl(struct termp *tp, const struct tbl_span *sp)
 	 * existing table configuration and set it to NULL.
 	 */
 
-	if (sp->flags & TBL_SPAN_LAST) {
+	if (sp->next == NULL) {
 		if (sp->opts->opts & (TBL_OPT_DBOX | TBL_OPT_BOX)) {
 			tbl_hrule(tp, sp, 1);
 			tp->skipvsp = 1;

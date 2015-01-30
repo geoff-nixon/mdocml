@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.192 2015/01/28 21:11:53 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.193 2015/01/30 04:11:50 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -285,9 +285,6 @@ struct	tbl_span {
 	struct tbl_span	 *prev;
 	struct tbl_span	 *next;
 	int		  line; /* parse line */
-	int		  flags;
-#define	TBL_SPAN_FIRST	 (1 << 0)
-#define	TBL_SPAN_LAST	 (1 << 1)
 	enum tbl_spant	  pos;
 };
 

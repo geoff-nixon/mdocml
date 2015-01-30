@@ -1,7 +1,7 @@
-/*	$Id: man_term.c,v 1.166 2015/01/24 02:41:49 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.167 2015/01/30 17:32:16 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
- * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -1007,10 +1007,10 @@ static void
 print_man_nodelist(DECL_ARGS)
 {
 
-	print_man_node(p, mt, n, meta);
-	if ( ! n->next)
-		return;
-	print_man_nodelist(p, mt, n->next, meta);
+	while (n != NULL) {
+		print_man_node(p, mt, n, meta);
+		n = n->next;
+	}
 }
 
 static void

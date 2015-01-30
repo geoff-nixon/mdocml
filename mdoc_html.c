@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.218 2014/12/23 13:48:57 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.219 2015/01/23 14:21:01 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -371,9 +371,10 @@ static void
 print_mdoc_nodelist(MDOC_ARGS)
 {
 
-	print_mdoc_node(meta, n, h);
-	if (n->next)
-		print_mdoc_nodelist(meta, n->next, h);
+	while (n != NULL) {
+		print_mdoc_node(meta, n, h);
+		n = n->next;
+	}
 }
 
 static void

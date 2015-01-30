@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.165 2014/12/24 18:04:10 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.166 2015/01/24 02:41:49 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -949,7 +949,7 @@ print_man_node(DECL_ARGS)
 		 * Tables are preceded by a newline.  Then process a
 		 * table line, which will cause line termination,
 		 */
-		if (TBL_SPAN_FIRST & n->span->flags)
+		if (n->span->prev == NULL)
 			term_newln(p);
 		term_tbl(p, n->span);
 		return;

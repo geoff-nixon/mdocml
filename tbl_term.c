@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.36 2015/01/30 04:11:50 schwarze Exp $ */
+/*	$Id: tbl_term.c,v 1.37 2015/01/30 17:32:16 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -414,9 +414,9 @@ tbl_number(struct termp *tp, const struct tbl_opts *opts,
 static void
 tbl_word(struct termp *tp, const struct tbl_dat *dp)
 {
-	const void	*prev_font;
+	int		 prev_font;
 
-	prev_font = term_fontq(tp);
+	prev_font = tp->fonti;
 	if (dp->layout->flags & TBL_CELL_BOLD)
 		term_fontpush(tp, TERMFONT_BOLD);
 	else if (dp->layout->flags & TBL_CELL_ITALIC)

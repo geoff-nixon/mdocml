@@ -1,7 +1,7 @@
-/*	$Id: mdoc_macro.c,v 1.160 2014/12/20 02:26:57 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.161 2014/12/22 23:27:32 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
- * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
+ * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -1137,7 +1137,7 @@ blk_full(MACRO_PROT_ARGS)
 
 	if (tok == MDOC_Nd) {
 		head = mdoc_head_alloc(mdoc, line, ppos, tok);
-		rew_sub(MDOC_HEAD, mdoc, tok, line, ppos);
+		rew_last(mdoc, head);
 		body = mdoc_body_alloc(mdoc, line, ppos, tok);
 	}
 
@@ -1274,8 +1274,7 @@ blk_part_imp(MACRO_PROT_ARGS)
 	 */
 
 	blk = mdoc_block_alloc(mdoc, line, ppos, tok, NULL);
-	mdoc_head_alloc(mdoc, line, ppos, tok);
-	rew_sub(MDOC_HEAD, mdoc, tok, line, ppos);
+	rew_last(mdoc, mdoc_head_alloc(mdoc, line, ppos, tok));
 
 	/*
 	 * Open the body scope "on-demand", that is, after we've

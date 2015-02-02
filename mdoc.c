@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.233 2014/11/28 06:27:05 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.234 2015/01/15 04:26:40 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -414,7 +414,7 @@ mdoc_body_alloc(struct mdoc *mdoc, int line, int pos, enum mdoct tok)
 	return(p);
 }
 
-void
+struct mdoc_node *
 mdoc_endbody_alloc(struct mdoc *mdoc, int line, int pos, enum mdoct tok,
 		struct mdoc_node *body, enum mdoc_endbody end)
 {
@@ -426,6 +426,7 @@ mdoc_endbody_alloc(struct mdoc *mdoc, int line, int pos, enum mdoct tok,
 	p->end = end;
 	node_append(mdoc, p);
 	mdoc->next = MDOC_NEXT_SIBLING;
+	return(p);
 }
 
 struct mdoc_node *

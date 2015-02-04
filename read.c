@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.120 2015/01/28 21:11:54 schwarze Exp $ */
+/*	$Id: read.c,v 1.121 2015/02/04 16:38:56 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -147,6 +147,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"missing font type, using \\fR",
 	"unknown font type, using \\fR",
 	"nothing follows prefix",
+	"empty reference block",
 	"missing -std argument, adding it",
 	"missing eqn box, using \"\"",
 

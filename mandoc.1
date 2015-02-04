@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.140 2015/01/28 21:11:53 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.141 2015/01/29 00:33:57 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -15,7 +15,7 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: January 28 2015 $
+.Dd $Mdocdate: January 29 2015 $
 .Dt MANDOC 1
 .Os
 .Sh NAME
@@ -784,6 +784,12 @@ This may confuse
 .Xr makewhatis 8
 and
 .Xr apropos 1 .
+.It Sy "missing description line, using \(dq\(dq"
+.Pq mdoc
+The
+.Ic \&Nd
+macro lacks the required argument.
+The title line of the manual will end after the dash.
 .It Sy "sections out of conventional order"
 .Pq mdoc
 A standard section occurs after another section it usually precedes.

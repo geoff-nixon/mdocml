@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.306 2015/02/01 23:10:35 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.307 2015/02/05 00:14:13 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1090,9 +1090,6 @@ termp_an_pre(DECL_ARGS)
 		p->flags |= TERMP_NOSPLIT;
 		return(0);
 	}
-
-	if (n->child == NULL)
-		return(0);
 
 	if (p->flags & TERMP_SPLIT)
 		term_newln(p);

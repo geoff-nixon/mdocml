@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.269 2015/02/04 19:20:12 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.270 2015/02/04 22:30:10 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1168,10 +1168,12 @@ post_an(POST_ARGS)
 	struct mdoc_node *np, *nch;
 
 	np = mdoc->last;
-	if (AUTH__NONE == np->norm->An.auth) {
-		if (0 == np->child)
-			check_count(mdoc, MDOC_ELEM, CHECK_GT, 0);
-	} else if ((nch = np->child) != NULL)
+	nch = np->child;
+	if (np->norm->An.auth == AUTH__NONE) {
+		if (nch == NULL)
+			mandoc_msg(MANDOCERR_MACRO_EMPTY, mdoc->parse,
+			    np->line, np->pos, "An");
+	} else if (nch != NULL)
 		mandoc_vmsg(MANDOCERR_ARG_EXCESS, mdoc->parse,
 		    nch->line, nch->pos, "An ... %s", nch->string);
 }

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.220 2015/01/30 22:04:44 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.221 2015/02/01 23:10:35 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -436,12 +436,9 @@ print_mdoc_node(MDOC_ARGS)
 		break;
 	}
 
-	if (HTML_KEEP & h->flags) {
-		if (n->prev ? (n->prev->lastline != n->line) :
-		    (n->parent && n->parent->line != n->line)) {
-			h->flags &= ~HTML_KEEP;
-			h->flags |= HTML_PREKEEP;
-		}
+	if (h->flags & HTML_KEEP && n->flags & MDOC_LINE) {
+		h->flags &= ~HTML_KEEP;
+		h->flags |= HTML_PREKEEP;
 	}
 
 	if (child && n->child)

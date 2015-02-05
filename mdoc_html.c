@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.221 2015/02/01 23:10:35 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.222 2015/02/05 00:14:13 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1252,9 +1252,6 @@ mdoc_an_pre(MDOC_ARGS)
 		h->flags |= HTML_NOSPLIT;
 		return(0);
 	}
-
-	if (n->child == NULL)
-		return(0);
 
 	if (h->flags & HTML_SPLIT)
 		print_otag(h, TAG_BR, 0, NULL);

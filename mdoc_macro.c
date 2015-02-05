@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.174 2015/02/04 22:30:10 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.175 2015/02/05 00:14:13 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -772,7 +772,7 @@ in_line(MACRO_PROT_ARGS)
 		 */
 
 		if (ac == ARGS_PUNCT) {
-			if (cnt == 0 && nc == 0)
+			if (cnt == 0 && (nc == 0 || tok == MDOC_An))
 				mdoc->flags |= MDOC_NODELIMC;
 			break;
 		}

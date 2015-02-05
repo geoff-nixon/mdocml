@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.133 2014/12/18 03:10:11 schwarze Exp $ */
+/*	$Id: mdoc.h,v 1.134 2015/01/31 00:12:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -352,7 +352,6 @@ struct	mdoc_node {
 	int		  nchild; /* number children */
 	int		  line; /* parse line */
 	int		  pos; /* parse column */
-	int		  lastline; /* the node ends on this line */
 	enum mdoct	  tok; /* tok or MDOC__MAX if none */
 	int		  flags;
 #define	MDOC_VALID	 (1 << 0) /* has been validated */

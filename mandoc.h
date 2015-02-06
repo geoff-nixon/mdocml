@@ -1,4 +1,4 @@
-/*	$Id: mandoc.h,v 1.197 2015/02/06 03:38:45 schwarze Exp $ */
+/*	$Id: mandoc.h,v 1.198 2015/02/06 07:13:14 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -106,6 +106,8 @@ enum	mandocerr {
 	MANDOCERR_PF_SKIP, /* nothing follows prefix: Pf arg */
 	MANDOCERR_RS_EMPTY, /* empty reference block: Rs */
 	MANDOCERR_ARG_STD, /* missing -std argument, adding it: macro */
+	MANDOCERR_OP_EMPTY, /* missing option string, using "": OP */
+	MANDOCERR_UR_NOHEAD, /* missing resource identifier, using "": UR */
 	MANDOCERR_EQN_NOBOX, /* missing eqn box, using "": op */
 
 	/* related to bad arguments */

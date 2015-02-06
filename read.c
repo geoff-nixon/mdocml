@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.123 2015/02/06 03:38:45 schwarze Exp $ */
+/*	$Id: read.c,v 1.124 2015/02/06 07:13:14 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -150,6 +150,8 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"nothing follows prefix",
 	"empty reference block",
 	"missing -std argument, adding it",
+	"missing option string, using \"\"",
+	"missing resource identifier, using \"\"",
 	"missing eqn box, using \"\"",
 
 	/* related to bad macro arguments */

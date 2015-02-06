@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.177 2015/02/06 01:07:22 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.178 2015/02/06 03:38:45 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1403,9 +1403,10 @@ in_line_eoln(MACRO_PROT_ARGS)
 			rew_last(mdoc, mdoc->last->parent);
 	}
 
-	if (buf[*pos] == '\0' && tok == MDOC_Fd) {
+	if (buf[*pos] == '\0' &&
+	    (tok == MDOC_Fd || mdoc_macronames[tok][0] == '%')) {
 		mandoc_msg(MANDOCERR_MACRO_EMPTY, mdoc->parse,
-		    line, ppos, "Fd");
+		    line, ppos, mdoc_macronames[tok]);
 		return;
 	}
 

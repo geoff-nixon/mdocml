@@ -1,4 +1,4 @@
-.\"	$Id: mandoc.1,v 1.146 2015/02/06 03:38:45 schwarze Exp $
+.\"	$Id: mandoc.1,v 1.147 2015/02/06 07:13:14 schwarze Exp $
 .\"
 .\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
 .\" Copyright (c) 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1635,7 +1635,10 @@ or
 .Ic \&EN
 macro, or a
 .Xr roff 7
-.Ic \&br
+.Ic \&br ,
+.Ic \&fi ,
+or
+.Ic \&nf
 request or
 .Sq \&..
 block closing request is invoked with at least one argument.

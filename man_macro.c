@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.94 2015/01/24 02:41:49 schwarze Exp $ */
+/*	$Id: man_macro.c,v 1.95 2015/01/24 10:08:53 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -420,6 +420,13 @@ in_line_eoln(MACRO_PROT_ARGS)
 	n = man->last;
 
 	for (;;) {
+		if (buf[*pos] != '\0' && (tok == MAN_br ||
+		    tok == MAN_fi || tok == MAN_nf)) {
+			mandoc_vmsg(MANDOCERR_ARG_SKIP,
+			    man->parse, line, *pos, "%s %s",
+			    man_macronames[tok], buf + *pos);
+			break;
+		}
 		la = *pos;
 		if ( ! man_args(man, line, pos, buf, &p))
 			break;

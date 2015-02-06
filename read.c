@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.121 2015/02/04 16:38:56 schwarze Exp $ */
+/*	$Id: read.c,v 1.122 2015/02/04 18:03:48 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -142,6 +142,7 @@ static	const char * const	mandocerrs[MANDOCERR_MAX] = {
 	"list type is not the first argument",
 	"missing -width in -tag list, using 8n",
 	"missing utility name, using \"\"",
+	"missing function name, using \"\"",
 	"empty head in list item",
 	"empty list item",
 	"missing font type, using \\fR",

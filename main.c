@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.217 2015/01/20 21:16:51 schwarze Exp $ */
+/*	$Id: main.c,v 1.218 2015/02/03 21:16:02 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -134,8 +134,9 @@ main(int argc, char *argv[])
 	int		 options;
 	int		 c;
 
-	progname = strrchr(argv[0], '/');
-	if (progname == NULL)
+	if (argc < 1)
+		progname = "mandoc";
+	else if ((progname = strrchr(argv[0], '/')) == NULL)
 		progname = argv[0];
 	else
 		++progname;
@@ -287,8 +288,10 @@ main(int argc, char *argv[])
 
 	/* Parse arguments. */
 
-	argc -= optind;
-	argv += optind;
+	if (argc > 0) {
+		argc -= optind;
+		argv += optind;
+	}
 	resp = NULL;
 
 	/*
@@ -414,13 +417,13 @@ main(int argc, char *argv[])
 	if (OUTT_MAN == curp.outtype)
 		mparse_keep(curp.mp);
 
-	if (argc == 0) {
+	if (argc < 1) {
 		if (use_pager && isatty(STDOUT_FILENO))
 			spawn_pager();
 		parse(&curp, STDIN_FILENO, "<stdin>", &rc);
 	}
 
-	while (argc) {
+	while (argc > 0) {
 		rctmp = mparse_open(curp.mp, &fd,
 		    resp != NULL ? resp->file : *argv);
 		if (rc < rctmp)

@@ -6,7 +6,7 @@ int dummy;
 
 #else
 
-/*	$Id: compat_fts.c,v 1.6 2014/12/11 18:20:07 schwarze Exp $	*/
+/*	$Id: compat_fts.c,v 1.7 2015/02/07 07:42:56 schwarze Exp $	*/
 /*	$OpenBSD: fts.c,v 1.50 2015/01/16 16:48:51 deraadt Exp $	*/
 
 /*-
@@ -65,6 +65,9 @@ static int	 fts_safe_changedir(FTS *, FTSENT *, int, const char *);
 #define	ISDOT(a)	(a[0] == '.' && (!a[1] || (a[1] == '.' && !a[2])))
 #ifndef	O_DIRECTORY
 #define	O_DIRECTORY	0
+#endif
+#ifndef	O_CLOEXEC
+#define	O_CLOEXEC	0
 #endif
 
 #define	CLR(opt)	(sp->fts_options &= ~(opt))

@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.109 2015/01/24 02:41:49 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.110 2015/01/30 22:04:44 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -216,7 +216,7 @@ print_man_node(MAN_ARGS)
 			print_paragraph(h);
 			return;
 		}
-		if (n->flags & MAN_LINE && (*n->string == ' ' || 
+		if (n->flags & MAN_LINE && (*n->string == ' ' ||
 		    (n->prev != NULL && mh->fl & MANH_LITERAL &&
 		     ! (h->flags & HTML_NONEWLINE))))
 			print_otag(h, TAG_BR, 0, NULL);

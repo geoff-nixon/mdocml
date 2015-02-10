@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.218 2015/02/03 21:16:02 schwarze Exp $ */
+/*	$Id: main.c,v 1.219 2015/02/07 06:28:08 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -566,7 +566,7 @@ found:
 	    "     consider running  # makewhatis %s\n",
 	    progname, name, sec, paths->paths[ipath]);
 #endif
-	
+
 	*res = mandoc_reallocarray(*res, ++*ressz, sizeof(struct manpage));
 	page = *res + (*ressz - 1);
 	page->file = file;

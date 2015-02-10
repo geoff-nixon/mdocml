@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.275 2015/02/06 07:13:14 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.276 2015/02/06 16:06:25 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1815,7 +1815,7 @@ static void
 post_sh_see_also(POST_ARGS)
 {
 	const struct mdoc_node	*n;
-	const char 		*name, *sec;
+	const char		*name, *sec;
 	const char		*lastname, *lastsec, *lastpunct;
 	int			 cmp;
 

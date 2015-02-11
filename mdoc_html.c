@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.222 2015/02/05 00:14:13 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.223 2015/02/05 01:46:56 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -2220,9 +2220,8 @@ mdoc_eo_pre(MDOC_ARGS)
 	    n->child->end != ENDBODY_NOT)
 		print_text(h, "\\&");
 	else if (n->end != ENDBODY_NOT ? n->child != NULL :
-	    n->parent->head->child != NULL &&
-	    (n->parent->body->child != NULL ||
-	     n->parent->tail->child != NULL))
+	    n->parent->head->child != NULL && (n->child != NULL ||
+	    (n->parent->tail != NULL && n->parent->tail->child != NULL)))
 		h->flags |= HTML_NOSPACE;
 	return(1);
 }

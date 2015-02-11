@@ -1,4 +1,4 @@
-/*	$Id: mdoc_man.c,v 1.84 2015/02/01 23:10:35 schwarze Exp $ */
+/*	$Id: mdoc_man.c,v 1.85 2015/02/06 03:38:45 schwarze Exp $ */
 /*
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -1140,9 +1140,8 @@ pre_eo(DECL_ARGS)
 	    n->child->end != ENDBODY_NOT)
 		print_word("\\&");
 	else if (n->end != ENDBODY_NOT ? n->child != NULL :
-	    n->parent->head->child != NULL &&
-	    (n->parent->body->child != NULL ||
-	     n->parent->tail->child != NULL))
+	    n->parent->head->child != NULL && (n->child != NULL ||
+	    (n->parent->tail != NULL && n->parent->tail->child != NULL)))
 		outflags &= ~(MMAN_spc | MMAN_nl);
 	return(1);
 }

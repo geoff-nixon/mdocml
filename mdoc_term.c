@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.308 2015/02/05 01:46:56 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.309 2015/02/11 14:15:12 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -309,6 +309,7 @@ print_mdoc_node(DECL_ARGS)
 	chld = 1;
 	offset = p->offset;
 	rmargin = p->rmargin;
+	n->flags &= ~MDOC_ENDED;
 	n->prev_font = p->fonti;
 
 	memset(&npair, 0, sizeof(struct termpair));
@@ -361,7 +362,7 @@ print_mdoc_node(DECL_ARGS)
 		print_mdoc_nodelist(p, &npair, meta, n->child);
 
 	term_fontpopq(p,
-	    (ENDBODY_NOT == n->end ? n : n->pending)->prev_font);
+	    (ENDBODY_NOT == n->end ? n : n->body)->prev_font);
 
 	switch (n->type) {
 	case MDOC_TEXT:
@@ -381,7 +382,7 @@ print_mdoc_node(DECL_ARGS)
 		 * that it must not call the post handler again.
 		 */
 		if (ENDBODY_NOT != n->end)
-			n->pending->flags |= MDOC_ENDED;
+			n->body->flags |= MDOC_ENDED;
 
 		/*
 		 * End of line terminating an implicit block

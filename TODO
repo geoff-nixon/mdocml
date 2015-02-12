@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.197 2015/01/24 01:45:21 schwarze Exp $
+* $Id: TODO,v 1.198 2015/02/10 08:05:30 schwarze Exp $
 ************************************************************************
 
 Many issues are annotated for difficulty as follows:
@@ -104,10 +104,6 @@ are mere guesses, and some may be wrong.
   loc *  exist *  algo *  size *  imp *
 
 --- missing mdoc features ----------------------------------------------
-
-- fix bad block nesting involving multiple identical explicit blocks
-  see the OpenBSD mdoc_macro.c 1.47 commit message
-  loc *  exist ***  algo ***  size *  imp **
 
 - .Bl -column .Xo support is missing
   ultimate goal:

@@ -1,4 +1,4 @@
-# $Id: configure.local.example,v 1.4 2015/01/23 21:59:31 schwarze Exp $
+# $Id: configure.local.example,v 1.5 2015/02/03 21:16:02 schwarze Exp $
 #
 # Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
 #
@@ -226,6 +226,7 @@ HAVE_STRLCAT=0
 HAVE_STRLCPY=0
 HAVE_STRPTIME=0
 HAVE_STRSEP=0
+HAVE_STRTONUM=0
 
 HAVE_SQLITE3=0
 HAVE_SQLITE3_ERRSTR=0

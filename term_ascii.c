@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.41 2014/12/19 17:12:04 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.42 2014/12/31 16:52:40 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -63,6 +63,8 @@ ascii_init(enum termenc enc, const struct mchars *mchars, char *outopts)
 	const char	*toks[5];
 	char		*v;
 	struct termp	*p;
+	const char	*errstr;
+	int		num;
 
 	p = mandoc_calloc(1, sizeof(struct termp));
 
@@ -109,10 +111,14 @@ ascii_init(enum termenc enc, const struct mchars *mchars, char *outopts)
 	while (outopts && *outopts)
 		switch (getsubopt(&outopts, UNCONST(toks), &v)) {
 		case 0:
-			p->defindent = (size_t)atoi(v);
+			num = strtonum(v, 0, 1000, &errstr);
+			if (!errstr)
+				p->defindent = num;
 			break;
 		case 1:
-			p->defrmargin = (size_t)atoi(v);
+			num = strtonum(v, 0, 1000, &errstr);
+			if (!errstr)
+				p->defrmargin = num;
 			break;
 		case 2:
 			/*

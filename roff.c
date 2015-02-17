@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.260 2015/02/06 16:06:25 schwarze Exp $ */
+/*	$Id: roff.c,v 1.261 2015/02/17 17:16:52 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -2337,10 +2337,19 @@ roff_it(ROFF_ARGS)
 		return(ROFF_IGN);
 	}
 
-	/* Arm the input line trap. */
+	while (isspace((unsigned char)buf->buf[pos]))
+		pos++;
+
+	/*
+	 * Arm the input line trap.
+	 * Special-casing "an-trap" is an ugly workaround to cope
+	 * with DocBook stupidly fiddling with man(7) internals.
+	 */
 
 	roffit_lines = iv;
-	roffit_macro = mandoc_strdup(buf->buf + pos);
+	roffit_macro = mandoc_strdup(iv != 1 ||
+	    strcmp(buf->buf + pos, "an-trap") ?
+	    buf->buf + pos : "br");
 	return(ROFF_IGN);
 }
 

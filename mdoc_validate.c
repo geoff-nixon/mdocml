@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.279 2015/02/14 13:23:57 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.280 2015/02/16 19:02:48 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -839,7 +839,7 @@ post_lb(POST_ARGS)
 
 	if (NULL == (stdlibname = mdoc_a2lib(n->string)))
 		mandoc_asprintf(&libname,
-		    "library \\(lq%s\\(rq", n->string);
+		    "library \\(Lq%s\\(Rq", n->string);
 	else
 		libname = mandoc_strdup(stdlibname);
 

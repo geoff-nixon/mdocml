@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.199 2015/02/12 13:54:50 schwarze Exp $
+* $Id: TODO,v 1.200 2015/02/17 20:41:50 schwarze Exp $
 ************************************************************************
 
 Many issues are annotated for difficulty as follows:
@@ -95,6 +95,10 @@ are mere guesses, and some may be wrong.
 - \n+ and \n- numerical register increment and decrement
   found by bentley@ in sbcl(1)  Mon, 9 Dec 2013 18:36:57 -0700
   loc *  exist *  algo *  size *  imp **
+
+- \n(.$ macro argument count number register; ocserv(8) by autogen
+  found by sthen@  Thu, 19 Feb 2015 22:03:01 +0000
+  loc *  exist **  algo *  size *  imp **
 
 - \w'' improve width measurements
   would not be very useful without an expression parser, see below

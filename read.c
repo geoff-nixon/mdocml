@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.125 2015/02/06 11:54:36 schwarze Exp $ */
+/*	$Id: read.c,v 1.126 2015/02/06 16:06:25 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -399,7 +399,8 @@ mparse_buf_r(struct mparse *curp, struct buf blk, size_t i, int start)
 				    MANDOCERR_CHAR_UNSUPP,
 				    curp, curp->line, pos, "0x%x", c);
 				i++;
-				ln.buf[pos++] = '?';
+				if (c != '\r')
+					ln.buf[pos++] = '?';
 				continue;
 			}
 

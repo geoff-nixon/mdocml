@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.281 2015/02/17 20:37:17 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.282 2015/02/23 13:31:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1763,6 +1763,10 @@ post_sh_name(POST_ARGS)
 				mandoc_msg(MANDOCERR_NAMESEC_ND,
 				    mdoc->parse, n->line, n->pos, NULL);
 			break;
+		case MDOC_MAX:
+			if (hasnm)
+				break;
+			/* FALLTHROUGH */
 		default:
 			mandoc_msg(MANDOCERR_NAMESEC_BAD, mdoc->parse,
 			    n->line, n->pos, mdoc_macronames[n->tok]);

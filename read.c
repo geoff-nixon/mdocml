@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.127 2015/02/20 22:40:38 schwarze Exp $ */
+/*	$Id: read.c,v 1.128 2015/02/23 13:31:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -868,6 +868,7 @@ mparse_wait(struct mparse *curp)
 		perror("wait");
 		exit((int)MANDOCLEVEL_SYSERR);
 	}
+	curp->child = 0;
 	if (WIFSIGNALED(status)) {
 		mandoc_vmsg(MANDOCERR_FILE, curp, 0, 0,
 		    "gunzip died from signal %d", WTERMSIG(status));

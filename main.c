@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.222 2015/02/27 16:02:10 schwarze Exp $ */
+/*	$Id: main.c,v 1.223 2015/03/06 09:24:59 kristaps Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -20,6 +20,7 @@
 
 #include <sys/types.h>
 #include <sys/param.h>	/* MACHINE */
+#include <sys/wait.h>
 
 #include <assert.h>
 #include <ctype.h>
@@ -480,6 +481,21 @@ out:
 	}
 
 	free(defos);
+
+	/*
+	 * Flush the output and signal end of file.
+	 * If a pager is attached, it allows browsing to the end.
+	 * Otherwise, it does no harm, we are about to exit anyway.
+	 */
+
+	fclose(stdout);
+
+	/*
+	 * If we spawned a pager, wait for the user to close it.
+	 * Otherwise, this call fails with no adverse effect.
+	 */
+
+	wait(NULL);
 
 	return((int)rc);
 }
@@ -951,18 +967,19 @@ spawn_pager(void)
 		    progname, strerror(errno));
 		exit((int)MANDOCLEVEL_SYSERR);
 	case 0:
+		break;
+	default:
 		close(fildes[0]);
 		if (dup2(fildes[1], STDOUT_FILENO) == -1) {
 			fprintf(stderr, "%s: dup output: %s\n",
 			    progname, strerror(errno));
 			exit((int)MANDOCLEVEL_SYSERR);
 		}
+		close(fildes[1]);
 		return;
-	default:
-		break;
 	}
 
-	/* The original process becomes the pager. */
+	/* The child process becomes the pager. */
 
 	close(fildes[1]);
 	if (dup2(fildes[0], STDIN_FILENO) == -1) {
@@ -970,6 +987,7 @@ spawn_pager(void)
 		    progname, strerror(errno));
 		exit((int)MANDOCLEVEL_SYSERR);
 	}
+	close(fildes[0]);
 
 	pager = getenv("MANPAGER");
 	if (pager == NULL || *pager == '\0')

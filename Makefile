@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.456 2015/02/16 16:23:54 schwarze Exp $
+# $Id: Makefile,v 1.457 2015/03/13 12:35:32 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -23,6 +23,8 @@ TESTSRCS	 = test-dirent-namlen.c \
 		   test-fgetln.c \
 		   test-fts.c \
 		   test-getsubopt.c \
+		   test-isblank.c \
+		   test-mkdtemp.c \
 		   test-mmap.c \
 		   test-ohash.c \
 		   test-reallocarray.c \
@@ -34,6 +36,7 @@ TESTSRCS	 = test-dirent-namlen.c \
 		   test-strptime.c \
 		   test-strsep.c \
 		   test-strtonum.c \
+		   test-vasprintf.c \
 		   test-wchar.c
 
 SRCS		 = att.c \
@@ -42,6 +45,8 @@ SRCS		 = att.c \
 		   compat_fgetln.c \
 		   compat_fts.c \
 		   compat_getsubopt.c \
+		   compat_isblank.c \
+		   compat_mkdtemp.c \
 		   compat_ohash.c \
 		   compat_reallocarray.c \
 		   compat_sqlite3_errstr.c \
@@ -50,6 +55,7 @@ SRCS		 = att.c \
 		   compat_strlcpy.c \
 		   compat_strsep.c \
 		   compat_strtonum.c \
+		   compat_vasprintf.c \
 		   demandoc.c \
 		   eqn.c \
 		   eqn_html.c \
@@ -187,6 +193,8 @@ LIBMANDOC_OBJS	 = $(LIBMAN_OBJS) \
 COMPAT_OBJS	 = compat_fgetln.o \
 		   compat_fts.o \
 		   compat_getsubopt.o \
+		   compat_isblank.o \
+		   compat_mkdtemp.o \
 		   compat_ohash.o \
 		   compat_reallocarray.o \
 		   compat_sqlite3_errstr.o \
@@ -194,7 +202,8 @@ COMPAT_OBJS	 = compat_fgetln.o \
 		   compat_strlcat.o \
 		   compat_strlcpy.o \
 		   compat_strsep.o \
-		   compat_strtonum.o
+		   compat_strtonum.o \
+		   compat_vasprintf.o
 
 MANDOC_HTML_OBJS = eqn_html.o \
 		   html.o \

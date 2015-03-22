@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.19 2014/11/27 00:30:40 schwarze Exp $ */
+/*	$Id: manpath.c,v 1.20 2015/03/21 17:19:36 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -32,7 +32,6 @@
 
 #define MAN_CONF_FILE	"/etc/man.conf"
 #define MAN_CONF_KEY	"_whatdb"
-#define MANPATH_DEFAULT	"/usr/share/man:/usr/X11R6/man:/usr/local/man"
 
 static	void	 manpath_add(struct manpaths *, const char *, int);
 static	void	 manpath_parseline(struct manpaths *, char *, int);

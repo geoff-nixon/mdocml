@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.458 2015/03/19 14:57:29 schwarze Exp $
+# $Id: Makefile,v 1.459 2015/03/27 00:18:14 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -133,6 +133,7 @@ DISTFILES	 = INSTALL \
 		   man.cgi.8 \
 		   man.conf.5 \
 		   man.h \
+		   manconf.h \
 		   mandoc.1 \
 		   mandoc.3 \
 		   mandoc.db.5 \
@@ -143,7 +144,6 @@ DISTFILES	 = INSTALL \
 		   mandoc_headers.3 \
 		   mandoc_html.3 \
 		   mandoc_malloc.3 \
-		   manpath.h \
 		   mansearch.3 \
 		   mansearch.h \
 		   mchars_alloc.3 \
@@ -269,9 +269,9 @@ WWW_MANS	 = apropos.1.html \
 		   makewhatis.8.html \
 		   man.cgi.8.html \
 		   man.h.html \
+		   manconf.h.html \
 		   mandoc.h.html \
 		   mandoc_aux.h.html \
-		   manpath.h.html \
 		   mansearch.h.html \
 		   mdoc.h.html
 

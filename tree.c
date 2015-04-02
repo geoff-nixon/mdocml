@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.62 2015/02/05 00:14:13 schwarze Exp $ */
+/*	$Id: tree.c,v 1.63 2015/04/02 21:36:51 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -32,8 +32,8 @@
 #include "main.h"
 
 static	void	print_box(const struct eqn_box *, int);
-static	void	print_man(const struct man_node *, int);
-static	void	print_mdoc(const struct mdoc_node *, int);
+static	void	print_man(const struct roff_node *, int);
+static	void	print_mdoc(const struct roff_node *, int);
 static	void	print_span(const struct tbl_span *, int);
 
 
@@ -52,7 +52,7 @@ tree_man(void *arg, const struct man *man)
 }
 
 static void
-print_mdoc(const struct mdoc_node *n, int indent)
+print_mdoc(const struct roff_node *n, int indent)
 {
 	const char	 *p, *t;
 	int		  i, j;
@@ -176,7 +176,7 @@ print_mdoc(const struct mdoc_node *n, int indent)
 }
 
 static void
-print_man(const struct man_node *n, int indent)
+print_man(const struct roff_node *n, int indent)
 {
 	const char	 *p, *t;
 	int		  i;

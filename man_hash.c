@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.29 2014/12/01 08:05:52 schwarze Exp $ */
+/*	$Id: man_hash.c,v 1.30 2015/04/02 21:36:49 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -77,11 +77,11 @@ man_hash_init(void)
 	}
 }
 
-enum mant
+int
 man_hash_find(const char *tmp)
 {
 	int		 x, y, i;
-	enum mant	 tok;
+	int		 tok;
 
 	if ('\0' == (x = tmp[0]))
 		return(MAN_MAX);
@@ -94,7 +94,7 @@ man_hash_find(const char *tmp)
 		if (UCHAR_MAX == (y = table[x + i]))
 			return(MAN_MAX);
 
-		tok = (enum mant)y;
+		tok = y;
 		if (0 == strcmp(tmp, man_macronames[tok]))
 			return(tok);
 	}

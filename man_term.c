@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.170 2015/03/15 16:53:41 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.171 2015/04/02 21:36:50 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -48,7 +48,7 @@ struct	mtermp {
 
 #define	DECL_ARGS	  struct termp *p, \
 			  struct mtermp *mt, \
-			  struct man_node *n, \
+			  struct roff_node *n, \
 			  const struct man_meta *meta
 
 struct	termact {
@@ -63,7 +63,7 @@ static	void		  print_man_node(DECL_ARGS);
 static	void		  print_man_head(struct termp *, const void *);
 static	void		  print_man_foot(struct termp *, const void *);
 static	void		  print_bvspace(struct termp *,
-				const struct man_node *, int);
+				const struct roff_node *, int);
 
 static	int		  pre_B(DECL_ARGS);
 static	int		  pre_HP(DECL_ARGS);
@@ -140,7 +140,7 @@ terminal_man(void *arg, const struct man *man)
 {
 	struct termp		*p;
 	const struct man_meta	*meta;
-	struct man_node		*n;
+	struct roff_node	*n;
 	struct mtermp		 mt;
 
 	p = (struct termp *)arg;
@@ -191,7 +191,7 @@ terminal_man(void *arg, const struct man *man)
  * first, print it.
  */
 static void
-print_bvspace(struct termp *p, const struct man_node *n, int pardist)
+print_bvspace(struct termp *p, const struct roff_node *n, int pardist)
 {
 	int	 i;
 
@@ -280,7 +280,7 @@ static int
 pre_alternate(DECL_ARGS)
 {
 	enum termfont		 font[2];
-	struct man_node		*nn;
+	struct roff_node	*nn;
 	int			 savelit, i;
 
 	switch (n->tok) {
@@ -488,7 +488,7 @@ static int
 pre_HP(DECL_ARGS)
 {
 	struct roffsu		 su;
-	const struct man_node	*nn;
+	const struct roff_node	*nn;
 	int			 len;
 
 	switch (n->type) {
@@ -562,7 +562,7 @@ static int
 pre_IP(DECL_ARGS)
 {
 	struct roffsu		 su;
-	const struct man_node	*nn;
+	const struct roff_node	*nn;
 	int			 len, savelit;
 
 	switch (n->type) {
@@ -643,7 +643,7 @@ static int
 pre_TP(DECL_ARGS)
 {
 	struct roffsu		 su;
-	struct man_node		*nn;
+	struct roff_node	*nn;
 	int			 len, savelit;
 
 	switch (n->type) {

@@ -1,4 +1,4 @@
-/*	$Id: att.c,v 1.12 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: att.c,v 1.13 2014/11/28 18:57:31 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -19,6 +19,7 @@
 #include <sys/types.h>
 #include <string.h>
 
+#include "roff.h"
 #include "mdoc.h"
 #include "libmdoc.h"
 

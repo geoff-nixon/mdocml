@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.229 2015/03/27 17:37:25 schwarze Exp $ */
+/*	$Id: main.c,v 1.230 2015/03/27 21:33:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -34,11 +34,12 @@
 #include <string.h>
 #include <unistd.h>
 
-#include "mandoc.h"
 #include "mandoc_aux.h"
-#include "main.h"
+#include "mandoc.h"
+#include "roff.h"
 #include "mdoc.h"
 #include "man.h"
+#include "main.h"
 #include "manconf.h"
 #include "mansearch.h"
 

@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.28 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: man_hash.c,v 1.29 2014/12/01 08:05:52 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -23,6 +23,7 @@
 #include <limits.h>
 #include <string.h>
 
+#include "roff.h"
 #include "man.h"
 #include "libman.h"
 

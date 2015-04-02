@@ -1,4 +1,4 @@
-/*	$Id: mdoc_hash.c,v 1.20 2014/04/20 16:46:05 schwarze Exp $ */
+/*	$Id: mdoc_hash.c,v 1.21 2014/08/10 23:54:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "roff.h"
 #include "mdoc.h"
 #include "libmdoc.h"
 

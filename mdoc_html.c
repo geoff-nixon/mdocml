@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.227 2015/04/02 21:36:50 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.228 2015/04/02 22:48:17 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -35,7 +35,7 @@
 
 #define	INDENT		 5
 
-#define	MDOC_ARGS	  const struct mdoc_meta *meta, \
+#define	MDOC_ARGS	  const struct roff_meta *meta, \
 			  struct roff_node *n, \
 			  struct html *h
 

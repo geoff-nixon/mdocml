@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.150 2015/04/02 21:36:49 schwarze Exp $ */
+/*	$Id: man.c,v 1.151 2015/04/02 22:48:17 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -69,7 +69,7 @@ man_node(const struct man *man)
 	return(man->first);
 }
 
-const struct man_meta *
+const struct roff_meta *
 man_meta(const struct man *man)
 {
 
@@ -136,7 +136,7 @@ man_free1(struct man *man)
 	if (man->first)
 		man_node_delete(man, man->first);
 	free(man->meta.title);
-	free(man->meta.source);
+	free(man->meta.os);
 	free(man->meta.date);
 	free(man->meta.vol);
 	free(man->meta.msec);
@@ -146,7 +146,7 @@ static void
 man_alloc1(struct man *man)
 {
 
-	memset(&man->meta, 0, sizeof(struct man_meta));
+	memset(&man->meta, 0, sizeof(man->meta));
 	man->flags = 0;
 	man->last = mandoc_calloc(1, sizeof(*man->last));
 	man->first = man->last;

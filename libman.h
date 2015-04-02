@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.68 2015/03/20 12:54:22 schwarze Exp $ */
+/*	$Id: libman.h,v 1.69 2015/04/02 22:48:17 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -33,7 +33,7 @@ struct	man {
 	enum man_next	 next; /* where to put the next node */
 	struct roff_node *last; /* the last parsed node */
 	struct roff_node *first; /* the first parsed node */
-	struct man_meta	 meta; /* document meta-data */
+	struct roff_meta meta; /* document meta-data */
 	struct roff	*roff;
 };
 

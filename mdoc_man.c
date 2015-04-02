@@ -1,4 +1,4 @@
-/*	$Id: mdoc_man.c,v 1.89 2015/04/02 21:36:50 schwarze Exp $ */
+/*	$Id: mdoc_man.c,v 1.90 2015/04/02 22:48:17 schwarze Exp $ */
 /*
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -30,7 +30,7 @@
 #include "out.h"
 #include "main.h"
 
-#define	DECL_ARGS const struct mdoc_meta *meta, struct roff_node *n
+#define	DECL_ARGS const struct roff_meta *meta, struct roff_node *n
 
 struct	manact {
 	int		(*cond)(DECL_ARGS); /* DON'T run actions */
@@ -547,7 +547,7 @@ man_man(void *arg, const struct man *man)
 void
 man_mdoc(void *arg, const struct mdoc *mdoc)
 {
-	const struct mdoc_meta *meta;
+	const struct roff_meta *meta;
 	struct roff_node *n;
 
 	meta = mdoc_meta(mdoc);

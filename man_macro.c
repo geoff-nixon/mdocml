@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.101 2015/04/02 21:36:50 schwarze Exp $ */
+/*	$Id: man_macro.c,v 1.102 2015/04/02 22:48:17 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -401,7 +401,7 @@ blk_imp(MACRO_PROT_ARGS)
 
 	/* Close out the head and open the body. */
 
-	rew_scope(ROFFT_HEAD, man, tok);
+	man_unscope(man, n);
 	man_body_alloc(man, line, ppos, tok);
 }
 

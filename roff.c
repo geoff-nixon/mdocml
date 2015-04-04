@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.262 2015/02/17 18:09:14 schwarze Exp $ */
+/*	$Id: roff.c,v 1.263 2015/02/21 14:46:58 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011, 2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1128,6 +1128,8 @@ roff_parsetext(struct buf *buf, int pos, int *offs)
 			esc = mandoc_escape((const char **)&p, NULL, NULL);
 			if (esc == ESCAPE_ERROR)
 				break;
+			while (*p == '-')
+				p++;
 			continue;
 		} else if (p == start) {
 			p++;

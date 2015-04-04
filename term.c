@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.245 2015/03/06 13:02:43 schwarze Exp $ */
+/*	$Id: term.c,v 1.246 2015/04/02 23:48:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -619,8 +619,7 @@ void
 term_setwidth(struct termp *p, const char *wstr)
 {
 	struct roffsu	 su;
-	size_t		 width;
-	int		 iop;
+	int		 iop, width;
 
 	iop = 0;
 	width = 0;
@@ -831,11 +830,12 @@ term_vspan(const struct termp *p, const struct roffsu *su)
 	return(ri < 66 ? ri : 1);
 }
 
+/*
+ * Convert a scaling width to basic units, rounding down.
+ */
 int
 term_hspan(const struct termp *p, const struct roffsu *su)
 {
-	double		 v;
 
-	v = (*p->hspan)(p, su);
-	return(v > 0.0 ? v + 0.0005 : v - 0.0005);
+	return((*p->hspan)(p, su));
 }

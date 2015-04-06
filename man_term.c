@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.177 2015/04/06 13:35:08 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.178 2015/04/06 14:59:21 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -321,7 +321,10 @@ pre_alternate(DECL_ARGS)
 		term_fontrepl(p, font[i]);
 		if (savelit && NULL == nn->next)
 			mt->fl |= MANT_LITERAL;
-		print_man_node(p, mt, nn, meta);
+		assert(nn->type == ROFFT_TEXT);
+		term_word(p, nn->string);
+		if (nn->flags & MAN_EOS)
+                	p->flags |= TERMP_SENTENCE;
 		if (nn->next)
 			p->flags |= TERMP_NOSPACE;
 	}

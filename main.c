@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.231 2015/04/02 21:36:49 schwarze Exp $ */
+/*	$Id: main.c,v 1.232 2015/04/03 08:46:17 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -576,11 +576,9 @@ fs_lookup(const struct manpaths *paths, size_t ipath,
 
 found:
 #if HAVE_SQLITE3
-	fprintf(stderr, "%s: outdated mandoc.db lacks %s(%s) entry,\n"
-	    "     consider running  # makewhatis %s\n",
-	    progname, name, sec, paths->paths[ipath]);
+	fprintf(stderr, "%s: outdated mandoc.db lacks %s(%s) entry, run "
+	    "makewhatis %s\n", progname, name, sec, paths->paths[ipath]);
 #endif
-
 	*res = mandoc_reallocarray(*res, ++*ressz, sizeof(struct manpage));
 	page = *res + (*ressz - 1);
 	page->file = file;

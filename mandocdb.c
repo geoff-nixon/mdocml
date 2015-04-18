@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.189 2015/04/02 22:48:17 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.190 2015/04/02 23:48:19 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1107,8 +1107,8 @@ mpages_merge(struct mparse *mp)
 	struct ohash_info	 str_info;
 	struct mpage		*mpage, *mpage_dest;
 	struct mlink		*mlink, *mlink_dest;
-	struct mdoc		*mdoc;
-	struct man		*man;
+	struct roff_man		*mdoc;
+	struct roff_man		*man;
 	char			*sodest;
 	char			*cp;
 	int			 fd;

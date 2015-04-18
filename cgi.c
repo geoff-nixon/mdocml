@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.105 2015/03/27 17:37:25 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.106 2015/03/27 21:33:20 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@usta.de>
@@ -819,8 +819,8 @@ format(const struct req *req, const char *file)
 	struct manoutput conf;
 	struct mparse	*mp;
 	struct mchars	*mchars;
-	struct mdoc	*mdoc;
-	struct man	*man;
+	struct roff_man	*mdoc;
+	struct roff_man	*man;
 	void		*vp;
 	int		 fd;
 	int		 usepath;

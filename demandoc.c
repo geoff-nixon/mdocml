@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.16 2015/04/02 21:36:49 schwarze Exp $ */
+/*	$Id: demandoc.c,v 1.17 2015/04/02 22:48:17 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -110,8 +110,8 @@ usage(void)
 static void
 pmandoc(struct mparse *mp, int fd, const char *fn, int list)
 {
-	struct mdoc	*mdoc;
-	struct man	*man;
+	struct roff_man	*mdoc;
+	struct roff_man	*man;
 	int		 line, col;
 
 	mparse_readfd(mp, fd, fn);

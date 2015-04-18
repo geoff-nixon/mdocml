@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.132 2015/03/17 07:33:07 schwarze Exp $ */
+/*	$Id: read.c,v 1.133 2015/04/02 21:36:50 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -47,10 +47,10 @@
 #define	REPARSE_LIMIT	1000
 
 struct	mparse {
-	struct man	 *pman; /* persistent man parser */
-	struct mdoc	 *pmdoc; /* persistent mdoc parser */
-	struct man	 *man; /* man parser */
-	struct mdoc	 *mdoc; /* mdoc parser */
+	struct roff_man	 *pman; /* persistent man parser */
+	struct roff_man	 *pmdoc; /* persistent mdoc parser */
+	struct roff_man	 *man; /* man parser */
+	struct roff_man	 *mdoc; /* mdoc parser */
 	struct roff	 *roff; /* roff parser (!NULL) */
 	const struct mchars *mchars; /* character table */
 	char		 *sodest; /* filename pointed to by .so */
@@ -952,8 +952,8 @@ mparse_free(struct mparse *curp)
 }
 
 void
-mparse_result(struct mparse *curp,
-	struct mdoc **mdoc, struct man **man, char **sodest)
+mparse_result(struct mparse *curp, struct roff_man **mdoc,
+	struct roff_man **man, char **sodest)
 {
 
 	if (sodest && NULL != (*sodest = curp->sodest)) {

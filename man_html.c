@@ -1,4 +1,4 @@
-/*	$Id: man_html.c,v 1.114 2015/04/02 22:48:17 schwarze Exp $ */
+/*	$Id: man_html.c,v 1.115 2015/04/02 23:48:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -145,7 +145,7 @@ print_bvspace(struct html *h, const struct roff_node *n)
 }
 
 void
-html_man(void *arg, const struct man *man)
+html_man(void *arg, const struct roff_man *man)
 {
 	struct mhtml	 mh;
 

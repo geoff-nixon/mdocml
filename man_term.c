@@ -1,4 +1,4 @@
-/*	$Id: man_term.c,v 1.178 2015/04/06 14:59:21 schwarze Exp $ */
+/*	$Id: man_term.c,v 1.179 2015/04/06 22:06:23 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -138,7 +138,7 @@ static	const struct termact termacts[MAN_MAX] = {
 
 
 void
-terminal_man(void *arg, const struct man *man)
+terminal_man(void *arg, const struct roff_man *man)
 {
 	struct termp		*p;
 	const struct roff_meta	*meta;

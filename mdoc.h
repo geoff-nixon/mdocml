@@ -1,4 +1,4 @@
-/*	$Id: mdoc.h,v 1.138 2015/04/02 22:48:17 schwarze Exp $ */
+/*	$Id: mdoc.h,v 1.139 2015/04/02 23:48:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -282,10 +282,10 @@ extern	const char *const *mdoc_argnames;
 
 __BEGIN_DECLS
 
-struct	mdoc;
+struct	roff_man;
 
-const struct roff_node *mdoc_node(const struct mdoc *);
-const struct roff_meta *mdoc_meta(const struct mdoc *);
+const struct roff_node *mdoc_node(const struct roff_man *);
+const struct roff_meta *mdoc_meta(const struct roff_man *);
 void mdoc_deroff(char **, const struct roff_node *);
 
 __END_DECLS

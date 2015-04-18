@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.229 2015/04/02 23:48:20 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.230 2015/04/16 20:22:27 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -265,7 +265,7 @@ static	const char * const lists[LIST_MAX] = {
 
 
 void
-html_mdoc(void *arg, const struct mdoc *mdoc)
+html_mdoc(void *arg, const struct roff_man *mdoc)
 {
 
 	print_mdoc(mdoc_meta(mdoc), mdoc_node(mdoc)->child,

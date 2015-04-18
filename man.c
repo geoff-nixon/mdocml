@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.155 2015/04/18 17:01:58 schwarze Exp $ */
+/*	$Id: man.c,v 1.156 2015/04/18 17:28:36 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -61,20 +61,6 @@ static	void		 man_node_unlink(struct roff_man *,
 static	int		 man_ptext(struct roff_man *, int, char *, int);
 static	int		 man_pmacro(struct roff_man *, int, char *, int);
 
-
-const struct roff_node *
-man_node(const struct roff_man *man)
-{
-
-	return(man->first);
-}
-
-const struct roff_meta *
-man_meta(const struct roff_man *man)
-{
-
-	return(&man->meta);
-}
 
 void
 man_endparse(struct roff_man *man)

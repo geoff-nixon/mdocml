@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.18 2015/04/18 16:06:39 schwarze Exp $ */
+/*	$Id: demandoc.c,v 1.19 2015/04/18 16:34:25 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -121,9 +121,9 @@ pmandoc(struct mparse *mp, int fd, const char *fn, int list)
 	if (man == NULL)
 		return;
 	if (man->macroset == MACROSET_MDOC)
-		pmdoc(mdoc_node(man), &line, &col, list);
+		pmdoc(man->first->child, &line, &col, list);
 	else
-		pman(man_node(man), &line, &col, list);
+		pman(man->first->child, &line, &col, list);
 
 	if ( ! list)
 		putchar('\n');

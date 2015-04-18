@@ -1,4 +1,4 @@
-/*	$Id: tree.c,v 1.64 2015/04/02 22:48:18 schwarze Exp $ */
+/*	$Id: tree.c,v 1.65 2015/04/18 16:06:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -41,14 +41,14 @@ void
 tree_mdoc(void *arg, const struct roff_man *mdoc)
 {
 
-	print_mdoc(mdoc_node(mdoc)->child, 0);
+	print_mdoc(mdoc->first->child, 0);
 }
 
 void
 tree_man(void *arg, const struct roff_man *man)
 {
 
-	print_man(man_node(man)->child, 0);
+	print_man(man->first->child, 0);
 }
 
 static void

@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.233 2015/04/16 16:36:21 schwarze Exp $ */
+/*	$Id: main.c,v 1.234 2015/04/18 16:06:40 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -632,7 +632,6 @@ static void
 parse(struct curparse *curp, int fd, const char *file)
 {
 	enum mandoclevel  rctmp;
-	struct roff_man	 *mdoc;
 	struct roff_man	 *man;
 
 	/* Begin by parsing the file itself. */
@@ -720,14 +719,16 @@ parse(struct curparse *curp, int fd, const char *file)
 		}
 	}
 
-	mparse_result(curp->mp, &mdoc, &man, NULL);
+	mparse_result(curp->mp, &man, NULL);
 
 	/* Execute the out device, if it exists. */
 
-	if (man && curp->outman)
+	if (man == NULL)
+		return;
+	if (curp->outmdoc != NULL && man->macroset == MACROSET_MDOC)
+		(*curp->outmdoc)(curp->outdata, man);
+	if (curp->outman != NULL && man->macroset == MACROSET_MAN)
 		(*curp->outman)(curp->outdata, man);
-	if (mdoc && curp->outmdoc)
-		(*curp->outmdoc)(curp->outdata, mdoc);
 }
 
 static void

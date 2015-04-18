@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.17 2015/04/02 22:48:17 schwarze Exp $ */
+/*	$Id: demandoc.c,v 1.18 2015/04/18 16:06:39 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -110,21 +110,20 @@ usage(void)
 static void
 pmandoc(struct mparse *mp, int fd, const char *fn, int list)
 {
-	struct roff_man	*mdoc;
 	struct roff_man	*man;
 	int		 line, col;
 
 	mparse_readfd(mp, fd, fn);
-	mparse_result(mp, &mdoc, &man, NULL);
+	mparse_result(mp, &man, NULL);
 	line = 1;
 	col = 0;
 
-	if (mdoc)
-		pmdoc(mdoc_node(mdoc), &line, &col, list);
-	else if (man)
-		pman(man_node(man), &line, &col, list);
-	else
+	if (man == NULL)
 		return;
+	if (man->macroset == MACROSET_MDOC)
+		pmdoc(mdoc_node(man), &line, &col, list);
+	else
+		pman(man_node(man), &line, &col, list);
 
 	if ( ! list)
 		putchar('\n');

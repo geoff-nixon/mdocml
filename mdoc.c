@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.241 2015/04/02 23:48:19 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.242 2015/04/18 16:06:40 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -135,6 +135,7 @@ mdoc_alloc1(struct roff_man *mdoc)
 {
 
 	memset(&mdoc->meta, 0, sizeof(mdoc->meta));
+	mdoc->macroset = MACROSET_MDOC;
 	mdoc->flags = 0;
 	mdoc->lastnamed = mdoc->lastsec = SEC_NONE;
 	mdoc->last = mandoc_calloc(1, sizeof(*mdoc->last));

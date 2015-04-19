@@ -1,4 +1,4 @@
-/*	$Id: libman.h,v 1.72 2015/04/18 17:01:58 schwarze Exp $ */
+/*	$Id: libman.h,v 1.73 2015/04/18 17:28:36 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -39,8 +39,6 @@ __BEGIN_DECLS
 void		  man_word_alloc(struct roff_man *, int, int, const char *);
 void		  man_word_append(struct roff_man *, const char *);
 void		  man_block_alloc(struct roff_man *, int, int, int);
-void		  man_head_alloc(struct roff_man *, int, int, int);
-void		  man_body_alloc(struct roff_man *, int, int, int);
 void		  man_elem_alloc(struct roff_man *, int, int, int);
 int		  man_hash_find(const char *);
 void		  man_macroend(struct roff_man *);

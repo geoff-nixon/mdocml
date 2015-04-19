@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.234 2015/04/18 16:06:40 schwarze Exp $ */
+/*	$Id: main.c,v 1.235 2015/04/18 16:34:25 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -357,6 +357,8 @@ main(int argc, char *argv[])
 			    argc, argv, &res, &sz);
 
 		if (sz == 0) {
+			fprintf(stderr, "%s: nothing appropriate\n",
+			    progname);
 			rc = MANDOCLEVEL_BADARG;
 			goto out;
 		}

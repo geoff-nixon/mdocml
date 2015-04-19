@@ -1,4 +1,4 @@
-/*	$Id: man_hash.c,v 1.31 2015/04/02 22:48:17 schwarze Exp $ */
+/*	$Id: man_hash.c,v 1.32 2015/04/18 17:01:58 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -57,8 +57,6 @@ man_hash_init(void)
 
 	memset(table, UCHAR_MAX, sizeof(table));
 
-	assert(MAN_MAX < UCHAR_MAX);
-
 	for (i = 0; i < (int)MAN_MAX; i++) {
 		x = man_macronames[i][0];
 
@@ -83,20 +81,20 @@ man_hash_find(const char *tmp)
 	int		 tok;
 
 	if ('\0' == (x = tmp[0]))
-		return(MAN_MAX);
+		return(TOKEN_NONE);
 	if ( ! (isalpha((unsigned char)x)))
-		return(MAN_MAX);
+		return(TOKEN_NONE);
 
 	HASH_ROW(x);
 
 	for (i = 0; i < HASH_DEPTH; i++) {
 		if (UCHAR_MAX == (y = table[x + i]))
-			return(MAN_MAX);
+			return(TOKEN_NONE);
 
 		tok = y;
 		if (0 == strcmp(tmp, man_macronames[tok]))
 			return(tok);
 	}
 
-	return(MAN_MAX);
+	return(TOKEN_NONE);
 }

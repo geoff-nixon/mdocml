@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.191 2015/04/19 14:00:19 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.192 2015/04/19 14:25:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -646,7 +646,7 @@ blk_exp_close(MACRO_PROT_ARGS)
 			 * Stray .Ec without previous .Eo:
 			 * Break the output line, keep the arguments.
 			 */
-			mdoc_elem_alloc(mdoc, line, ppos, MDOC_br, NULL);
+			roff_elem_alloc(mdoc, line, ppos, MDOC_br);
 			rew_elem(mdoc, MDOC_br);
 		}
 	} else if (endbody == NULL) {
@@ -990,7 +990,7 @@ blk_full(MACRO_PROT_ARGS)
 		if (tok == MDOC_It && (n == NULL || n->tok != MDOC_Bl)) {
 			mandoc_vmsg(MANDOCERR_IT_STRAY, mdoc->parse,
 			    line, ppos, "It %s", buf + *pos);
-			mdoc_elem_alloc(mdoc, line, ppos, MDOC_br, NULL);
+			roff_elem_alloc(mdoc, line, ppos, MDOC_br);
 			rew_elem(mdoc, MDOC_br);
 			return;
 		}
@@ -1223,7 +1223,7 @@ blk_part_exp(MACRO_PROT_ARGS)
 	 * case of `Eo'); and a body that may be empty.
 	 */
 
-	mdoc_block_alloc(mdoc, line, ppos, tok, NULL);
+	roff_block_alloc(mdoc, line, ppos, tok);
 	head = NULL;
 	for (;;) {
 		la = *pos;

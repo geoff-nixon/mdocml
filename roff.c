@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.266 2015/04/19 13:50:26 schwarze Exp $ */
+/*	$Id: roff.c,v 1.267 2015/04/19 14:25:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1094,6 +1094,27 @@ roff_word_append(struct roff_man *man, const char *word)
 	free(n->string);
 	n->string = newstr;
 	man->next = ROFF_NEXT_SIBLING;
+}
+
+void
+roff_elem_alloc(struct roff_man *man, int line, int pos, int tok)
+{
+	struct roff_node	*n;
+
+	n = roff_node_alloc(man, line, pos, ROFFT_ELEM, tok);
+	roff_node_append(man, n);
+	man->next = ROFF_NEXT_CHILD;
+}
+
+struct roff_node *
+roff_block_alloc(struct roff_man *man, int line, int pos, int tok)
+{
+	struct roff_node	*n;
+
+	n = roff_node_alloc(man, line, pos, ROFFT_BLOCK, tok);
+	roff_node_append(man, n);
+	man->next = ROFF_NEXT_CHILD;
+	return(n);
 }
 
 struct roff_node *

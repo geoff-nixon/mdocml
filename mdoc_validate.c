@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.287 2015/04/19 13:50:26 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.288 2015/04/19 14:00:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1051,13 +1051,13 @@ post_defaults(POST_ARGS)
 
 	switch (nn->tok) {
 	case MDOC_Ar:
-		mdoc_word_alloc(mdoc, nn->line, nn->pos, "file");
-		mdoc_word_alloc(mdoc, nn->line, nn->pos, "...");
+		roff_word_alloc(mdoc, nn->line, nn->pos, "file");
+		roff_word_alloc(mdoc, nn->line, nn->pos, "...");
 		break;
 	case MDOC_Pa:
 		/* FALLTHROUGH */
 	case MDOC_Mt:
-		mdoc_word_alloc(mdoc, nn->line, nn->pos, "~");
+		roff_word_alloc(mdoc, nn->line, nn->pos, "~");
 		break;
 	default:
 		abort();
@@ -1076,7 +1076,7 @@ post_at(POST_ARGS)
 	n = mdoc->last;
 	if (n->child == NULL) {
 		mdoc->next = ROFF_NEXT_CHILD;
-		mdoc_word_alloc(mdoc, n->line, n->pos, "AT&T UNIX");
+		roff_word_alloc(mdoc, n->line, n->pos, "AT&T UNIX");
 		mdoc->last = n;
 		return;
 	}
@@ -2315,7 +2315,7 @@ post_ex(POST_ARGS)
 	}
 
 	mdoc->next = ROFF_NEXT_CHILD;
-	mdoc_word_alloc(mdoc, n->line, n->pos, mdoc->meta.name);
+	roff_word_alloc(mdoc, n->line, n->pos, mdoc->meta.name);
 	mdoc->last = n;
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.190 2015/04/19 13:50:26 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.191 2015/04/19 14:00:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -432,11 +432,11 @@ dword(struct roff_man *mdoc, int line, int col, const char *p,
 	    ! (mdoc->flags & (MDOC_SYNOPSIS | MDOC_KEEP | MDOC_SMOFF)) &&
 	    d == DELIM_NONE && mdoc->last->type == ROFFT_TEXT &&
 	    mdoc_isdelim(mdoc->last->string) == DELIM_NONE) {
-		mdoc_word_append(mdoc, p);
+		roff_word_append(mdoc, p);
 		return;
 	}
 
-	mdoc_word_alloc(mdoc, line, col, p);
+	roff_word_alloc(mdoc, line, col, p);
 
 	/*
 	 * If the word consists of a bare delimiter,

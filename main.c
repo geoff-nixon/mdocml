@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.235 2015/04/18 16:34:25 schwarze Exp $ */
+/*	$Id: main.c,v 1.236 2015/04/19 15:10:46 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -352,13 +352,17 @@ main(int argc, char *argv[])
 		sz = 0;
 #endif
 
-		if (sz == 0 && search.argmode == ARG_NAME)
-			fs_search(&search, &conf.manpath,
-			    argc, argv, &res, &sz);
+		if (sz == 0) {
+			if (search.argmode == ARG_NAME)
+				fs_search(&search, &conf.manpath,
+				    argc, argv, &res, &sz);
+			else
+				fprintf(stderr,
+				    "%s: nothing appropriate\n",
+				    progname);
+		}
 
 		if (sz == 0) {
-			fprintf(stderr, "%s: nothing appropriate\n",
-			    progname);
 			rc = MANDOCLEVEL_BADARG;
 			goto out;
 		}

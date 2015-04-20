@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.288 2015/04/19 14:00:20 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.289 2015/04/19 14:25:41 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1562,7 +1562,8 @@ post_root(POST_ARGS)
 	/* Check that we begin with a proper `Sh'. */
 
 	n = mdoc->first->child;
-	while (n != NULL && mdoc_macros[n->tok].flags & MDOC_PROLOGUE)
+	while (n != NULL && n->tok != TOKEN_NONE &&
+	    mdoc_macros[n->tok].flags & MDOC_PROLOGUE)
 		n = n->next;
 
 	if (n == NULL)

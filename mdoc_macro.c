@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.193 2015/04/19 14:57:38 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.194 2015/04/21 16:14:25 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -210,7 +210,7 @@ const	struct mdoc_macro * const mdoc_macros = __mdoc_macros;
  * are errors.
  */
 void
-mdoc_macroend(struct roff_man *mdoc)
+mdoc_endparse(struct roff_man *mdoc)
 {
 	struct roff_node *n;
 

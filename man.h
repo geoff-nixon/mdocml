@@ -1,4 +1,4 @@
-/*	$Id: man.h,v 1.73 2015/04/18 16:06:40 schwarze Exp $ */
+/*	$Id: man.h,v 1.74 2015/04/18 17:53:21 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -64,6 +64,5 @@ __BEGIN_DECLS
 struct	roff_man;
 
 const struct mparse   *man_mparse(const struct roff_man *);
-void man_deroff(char **, const struct roff_node *);
 
 __END_DECLS

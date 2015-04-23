@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.289 2015/04/19 14:25:41 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.290 2015/04/20 09:48:53 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -969,7 +969,7 @@ post_nm(POST_ARGS)
 	if (NULL != mdoc->meta.name)
 		return;
 
-	mdoc_deroff(&mdoc->meta.name, n);
+	deroff(&mdoc->meta.name, n);
 
 	if (NULL == mdoc->meta.name)
 		mandoc_msg(MANDOCERR_NM_NONAME, mdoc->parse,
@@ -1883,7 +1883,7 @@ post_sh_head(POST_ARGS)
 
 	secname = NULL;
 	sec = SEC_CUSTOM;
-	mdoc_deroff(&secname, mdoc->last);
+	deroff(&secname, mdoc->last);
 	sec = NULL == secname ? SEC_CUSTOM : a2sec(secname);
 
 	/* The NAME should be first. */
@@ -2132,7 +2132,7 @@ post_dd(POST_ARGS)
 	}
 
 	datestr = NULL;
-	mdoc_deroff(&datestr, n);
+	deroff(&datestr, n);
 	if (mdoc->quick)
 		mdoc->meta.date = datestr;
 	else {
@@ -2267,7 +2267,7 @@ post_os(POST_ARGS)
 
 	free(mdoc->meta.os);
 	mdoc->meta.os = NULL;
-	mdoc_deroff(&mdoc->meta.os, n);
+	deroff(&mdoc->meta.os, n);
 	if (mdoc->meta.os)
 		goto out;
 

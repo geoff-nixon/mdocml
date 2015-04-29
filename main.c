@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.236 2015/04/19 15:10:46 schwarze Exp $ */
+/*	$Id: main.c,v 1.237 2015/04/20 09:54:48 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1027,7 +1027,7 @@ spawn_pager(void)
 	/* Hand over to the pager. */
 
 	execvp(argv[0], argv);
-	fprintf(stderr, "%s: exec: %s\n",
-	    progname, strerror(errno));
+	fprintf(stderr, "%s: exec %s: %s\n",
+	    progname, argv[0], strerror(errno));
 	exit((int)MANDOCLEVEL_SYSERR);
 }

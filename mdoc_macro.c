@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.194 2015/04/21 16:14:25 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.195 2015/04/23 15:35:59 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -644,6 +644,8 @@ blk_exp_close(MACRO_PROT_ARGS)
 	if (body == NULL) {
 		mandoc_msg(MANDOCERR_BLK_NOTOPEN, mdoc->parse,
 		    line, ppos, mdoc_macronames[tok]);
+		if (later != NULL)
+			later->flags &= ~MDOC_BROKEN;
 		if (maxargs && endbody == NULL) {
 			/*
 			 * Stray .Ec without previous .Eo:

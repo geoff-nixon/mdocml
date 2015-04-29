@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.37 2015/01/30 04:11:50 schwarze Exp $ */
+/*	$Id: tbl_layout.c,v 1.38 2015/02/10 11:03:13 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -308,6 +308,7 @@ tbl_layout(struct tbl_node *tbl, int ln, const char *p, int pos)
 				    rp->next->first == NULL) {
 					free(rp->next);
 					rp->next = NULL;
+					tbl->last_row = rp;
 				}
 			}
 			return;

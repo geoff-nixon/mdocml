@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.197 2015/04/29 21:58:32 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.198 2015/05/01 15:27:54 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -258,7 +258,7 @@ lookup(struct roff_man *mdoc, int from, int line, int ppos, const char *p)
 static void
 rew_last(struct roff_man *mdoc, const struct roff_node *to)
 {
-	struct roff_node *n, *np;
+	struct roff_node	*np;
 
 	if (to->flags & MDOC_VALID)
 		return;
@@ -273,10 +273,8 @@ rew_last(struct roff_man *mdoc, const struct roff_node *to)
 		 */
 		np = mdoc->last->parent;
 		mdoc_valid_post(mdoc);
-		n = mdoc->last;
 		mdoc->last = np;
 		assert(mdoc->last);
-		mdoc->last->last = n;
 	}
 	mdoc_valid_post(mdoc);
 }

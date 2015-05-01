@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.196 2015/04/29 14:48:53 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.197 2015/04/29 21:58:32 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1399,7 +1399,7 @@ in_line_eoln(MACRO_PROT_ARGS)
 		if (mdoc->next == ROFF_NEXT_SIBLING)
 			n = n->parent;
 		if (n->tok == MDOC_Nm)
-			rew_last(mdoc, mdoc->last->parent);
+			rew_last(mdoc, n->parent);
 	}
 
 	if (buf[*pos] == '\0' &&

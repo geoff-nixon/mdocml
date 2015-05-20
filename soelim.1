@@ -1,4 +1,4 @@
-.\"	$Id$
+.\"	$Id: soelim.1,v 1.2 2015/05/20 22:22:59 schwarze Exp $
 .\"
 .\" Copyright (c) 2014 Baptiste Daroussin <bapt@FreeBSD.org>
 .\" All rights reserved.
@@ -24,12 +24,12 @@
 .\" OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 .\" SUCH DAMAGE.
 .\"
-.Dd $Mdocdate$
+.Dd $Mdocdate: May 20 2015 $
 .Dt SOELIM 1
 .Os
 .Sh NAME
 .Nm soelim
-.Nd interpret .so directive in manpages
+.Nd interpret .so requests in manpages
 .Sh SYNOPSIS
 .Nm
 .Op Fl Crtv
@@ -78,5 +78,9 @@ The files are always searched first in the current directory.
 A file specified with an absolute path will be opened directly without
 performing a search.
 .Sh SEE ALSO
-.Xr mandoc 1 ,
-.Xr soelim 1
+.Xr mandoc 1
+.Sh AUTHORS
+This version of the
+.Nm
+utility was written by
+.An Baptiste Daroussin Aq Mt bapt@freebsd.org .

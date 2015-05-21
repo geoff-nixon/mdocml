@@ -1,4 +1,12 @@
-/*	$Id: compat_stringlist.c,v 1.3 2015/05/20 23:00:43 schwarze Exp $	*/
+#include "config.h"
+
+#if HAVE_STRINGLIST
+
+int dummy;
+
+#else
+
+/*	$Id: compat_stringlist.c,v 1.4 2015/05/20 23:43:03 schwarze Exp $	*/
 /*
  * Copyright (c) 1994 Christos Zoulas <christos@netbsd.org>
  * All rights reserved.
@@ -105,3 +113,5 @@ sl_find(StringList *sl, const char *name)
 
 	return NULL;
 }
+
+#endif

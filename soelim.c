@@ -1,4 +1,4 @@
-/*	$Id: soelim.c,v 1.2 2015/05/20 22:22:59 schwarze Exp $	*/
+/*	$Id: soelim.c,v 1.3 2015/05/20 22:57:22 schwarze Exp $	*/
 /*
  * Copyright (c) 2014 Baptiste Daroussin <bapt@FreeBSD.org>
  * All rights reserved.
@@ -24,6 +24,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+#include "config.h"
 
 #include <sys/types.h>
 

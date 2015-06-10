@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.44 2015/03/27 21:33:20 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.45 2015/04/04 17:47:18 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -62,7 +62,9 @@ static struct termp *
 ascii_init(enum termenc enc, const struct mchars *mchars,
 	const struct manoutput *outopts)
 {
+#if HAVE_WCHAR
 	char		*v;
+#endif
 	struct termp	*p;
 
 	p = mandoc_calloc(1, sizeof(struct termp));

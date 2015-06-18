@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.207 2015/04/18 16:05:45 schwarze Exp $
+* $Id: TODO,v 1.208 2015/06/10 22:26:19 schwarze Exp $
 ************************************************************************
 
 Many issues are annotated for difficulty as follows:
@@ -229,6 +229,11 @@ are mere guesses, and some may be wrong.
   loc **  exist **  algo **  size *  imp **
 
 --- missing eqn features -----------------------------------------------
+
+- In a matrix, break the output line after each matrix line.
+  Found in the discussion at CDBUG 2015.
+  Suggested by Avi Weinstock.
+  loc *  exist *  algo *  size *  imp **
 
 - The "size" keyword is parsed, but ignored by the formatter.
   loc *  exist *  algo *  size *  imp *

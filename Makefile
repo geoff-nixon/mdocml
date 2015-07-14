@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.462 2015/05/20 22:22:59 schwarze Exp $
+# $Id: Makefile,v 1.463 2015/05/21 00:04:38 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -102,8 +102,7 @@ SRCS		 = att.c \
 		   term.c \
 		   term_ascii.c \
 		   term_ps.c \
-		   tree.c \
-		   $(TESTSRCS)
+		   tree.c
 
 DISTFILES	 = INSTALL \
 		   LICENSE \
@@ -164,7 +163,8 @@ DISTFILES	 = INSTALL \
 		   tbl.3 \
 		   tbl.7 \
 		   term.h \
-		   $(SRCS)
+		   $(SRCS) \
+		   $(TESTSRCS)
 
 LIBMAN_OBJS	 = man.o \
 		   man_hash.o \

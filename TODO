@@ -1,6 +1,6 @@
 ************************************************************************
 * Official mandoc TODO.
-* $Id: TODO,v 1.209 2015/06/18 01:02:16 schwarze Exp $
+* $Id: TODO,v 1.210 2015/06/26 16:56:18 schwarze Exp $
 ************************************************************************
 
 Many issues are annotated for difficulty as follows:
@@ -517,6 +517,10 @@ are mere guesses, and some may be wrong.
 ************************************************************************
 
 - Report errors in -O suboption parsing.
+  loc *  exist *  algo *  size *  imp **
+
+- warn when .Sh or .Ss contain other macros
+  Steffen Nurpmeso, savannah.gnu.org/bugs/index.php?45034
   loc *  exist *  algo *  size *  imp **
 
 - check that MANDOCERR_BADTAB is thrown in the right cases,

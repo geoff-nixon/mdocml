@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.463 2015/05/21 00:04:38 schwarze Exp $
+# $Id: Makefile,v 1.464 2015/07/14 23:16:29 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -93,6 +93,7 @@ SRCS		 = att.c \
 		   roff.c \
 		   soelim.c \
 		   st.c \
+		   tag.c \
 		   tbl.c \
 		   tbl_data.c \
 		   tbl_html.c \
@@ -160,6 +161,7 @@ DISTFILES	 = INSTALL \
 		   soelim.1 \
 		   st.in \
 		   style.css \
+		   tag.h \
 		   tbl.3 \
 		   tbl.7 \
 		   term.h \
@@ -234,6 +236,7 @@ BASE_OBJS	 = $(MANDOC_HTML_OBJS) \
 		   main.o \
 		   manpath.o \
 		   out.o \
+		   tag.o \
 		   tree.o
 
 MAIN_OBJS	 = $(BASE_OBJS)

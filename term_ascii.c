@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.45 2015/04/04 17:47:18 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.46 2015/06/10 19:17:15 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -70,6 +70,7 @@ ascii_init(enum termenc enc, const struct mchars *mchars,
 	p = mandoc_calloc(1, sizeof(struct termp));
 
 	p->symtab = mchars;
+	p->line = 1;
 	p->tabwidth = 5;
 	p->defrmargin = p->lastrmargin = 78;
 	p->fontq = mandoc_reallocarray(NULL,
@@ -163,6 +164,7 @@ ascii_sepline(void *arg)
 	size_t		 i;
 
 	p = (struct termp *)arg;
+	p->line += 3;
 	putchar('\n');
 	for (i = 0; i < p->defrmargin; i++)
 		putchar('-');
@@ -209,6 +211,7 @@ static void
 ascii_endline(struct termp *p)
 {
 
+	p->line++;
 	putchar('\n');
 }
 
@@ -365,6 +368,7 @@ static void
 locale_endline(struct termp *p)
 {
 
+	p->line++;
 	putwchar(L'\n');
 }
 

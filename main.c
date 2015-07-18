@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.238 2015/04/29 11:04:17 schwarze Exp $ */
+/*	$Id: main.c,v 1.239 2015/07/17 22:38:29 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -570,7 +570,7 @@ fs_lookup(const struct manpaths *paths, size_t ipath,
 		free(file);
 	}
 
-	mandoc_asprintf(&file, "%s/man%s/%s.*",
+	mandoc_asprintf(&file, "%s/man%s/%s.[01-9]*",
 	    paths->paths[ipath], sec, name);
 	globres = glob(file, 0, NULL, &globinfo);
 	if (globres != 0 && globres != GLOB_NOMATCH)

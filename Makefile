@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.464 2015/07/14 23:16:29 schwarze Exp $
+# $Id: Makefile,v 1.465 2015/07/17 22:38:29 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -403,7 +403,7 @@ man.cgi: $(CGI_OBJS) libmandoc.a
 	$(CC) $(LDFLAGS) $(STATIC) -o $@ $(CGI_OBJS) libmandoc.a $(DBLIB)
 
 demandoc: $(DEMANDOC_OBJS) libmandoc.a
-	$(CC) $(LDFLAGS) -o $@ $(DEMANDOC_OBJS) libmandoc.a
+	$(CC) $(LDFLAGS) -o $@ $(DEMANDOC_OBJS) libmandoc.a -lz
 
 soelim: $(SOELIM_OBJS) compat_reallocarray.o
 	$(CC) $(LDFLAGS) -o $@ $(SOELIM_OBJS) compat_reallocarray.o

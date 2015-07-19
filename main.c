@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.240 2015/07/18 05:47:32 schwarze Exp $ */
+/*	$Id: main.c,v 1.241 2015/07/19 00:07:42 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -457,10 +457,6 @@ main(int argc, char *argv[])
 			} else
 				passthrough(resp->file, fd,
 				    conf.output.synopsisonly);
-
-			rctmp = mparse_wait(curp.mp);
-			if (rc < rctmp)
-				rc = rctmp;
 
 			if (argc > 1 && curp.outtype <= OUTT_UTF8)
 				ascii_sepline(curp.outdata);

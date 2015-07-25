@@ -1,4 +1,4 @@
-/*	$Id: mdoc_term.c,v 1.319 2015/04/18 17:53:21 schwarze Exp $ */
+/*	$Id: mdoc_term.c,v 1.320 2015/07/17 22:38:29 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -2268,7 +2268,7 @@ termp_tag_pre(DECL_ARGS)
 	     (n->parent->tok == MDOC_Xo &&
 	      n->parent->parent->prev == NULL &&
 	      n->parent->parent->parent->tok == MDOC_It)) &&
-	    ! tag_get(n->child->string, 0))
-		tag_put(n->child->string, 0, p->line);
+	    ! tag_get(n->child->string, 0, 1))
+		tag_put(n->child->string, 0, 1, p->line);
 	return(1);
 }

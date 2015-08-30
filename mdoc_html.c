@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.231 2015/04/18 16:06:40 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.232 2015/04/18 17:53:21 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1642,11 +1642,10 @@ mdoc_fo_pre(MDOC_ARGS)
 		return(1);
 	}
 
-	/* XXX: we drop non-initial arguments as per groff. */
+	if (n->child == NULL)
+		return(0);
 
-	assert(n->child);
 	assert(n->child->string);
-
 	PAIR_CLASS_INIT(&tag, "fname");
 	t = print_otag(h, TAG_B, 1, &tag);
 	print_text(h, n->child->string);

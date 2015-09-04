@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.162 2015/04/23 15:35:59 schwarze Exp $ */
+/*	$Id: man.c,v 1.163 2015/04/23 16:17:44 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -280,6 +280,20 @@ man_breakscope(struct roff_man *man, int tok)
 
 		roff_node_delete(man, n);
 		man->flags &= ~MAN_ELINE;
+	}
+
+	/*
+	 * Weird special case:
+	 * Switching fill mode closes section headers.
+	 */
+
+	if (man->flags & MAN_BLINE &&
+	    (tok == MAN_nf || tok == MAN_fi) &&
+	    (man->last->tok == MAN_SH || man->last->tok == MAN_SS)) {
+		n = man->last;
+		man_unscope(man, n);
+		roff_body_alloc(man, n->line, n->pos, n->tok);
+		man->flags &= ~MAN_BLINE;
 	}
 
 	/*

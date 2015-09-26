@@ -1,4 +1,4 @@
-/*	$Id: mdoc_macro.c,v 1.199 2015/05/01 16:02:47 schwarze Exp $ */
+/*	$Id: mdoc_macro.c,v 1.200 2015/05/01 16:58:33 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -363,7 +363,6 @@ rew_alt(int tok)
 	default:
 		return(tok);
 	}
-	/* NOTREACHED */
 }
 
 static void

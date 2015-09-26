@@ -1,4 +1,4 @@
-/*	$Id: tbl_opts.c,v 1.19 2015/01/28 15:03:45 schwarze Exp $ */
+/*	$Id: tbl_opts.c,v 1.20 2015/01/28 17:32:07 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -99,7 +99,6 @@ arg(struct tbl_node *tbl, int ln, const char *p, int *pos, int key)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 
 	if (len == 0)

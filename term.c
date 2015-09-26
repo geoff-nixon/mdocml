@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.249 2015/08/30 21:10:56 schwarze Exp $ */
+/*	$Id: term.c,v 1.250 2015/09/21 13:25:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -820,7 +820,6 @@ term_vspan(const struct termp *p, const struct roffsu *su)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 	ri = r > 0.0 ? r + 0.4995 : r - 0.4995;
 	return(ri < 66 ? ri : 1);

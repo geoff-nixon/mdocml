@@ -1,4 +1,4 @@
-/*	$Id: html.c,v 1.185 2015/01/21 20:33:25 schwarze Exp $ */
+/*	$Id: html.c,v 1.186 2015/03/27 21:33:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -224,7 +224,6 @@ print_metaf(struct html *h, enum mandoc_esc deco)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 
 	if (h->metaf) {

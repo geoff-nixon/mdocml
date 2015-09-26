@@ -1,4 +1,4 @@
-/*	$Id: mdoc_html.c,v 1.234 2015/09/26 00:22:07 schwarze Exp $ */
+/*	$Id: mdoc_html.c,v 1.235 2015/09/26 00:32:35 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1000,7 +1000,6 @@ mdoc_bl_pre(MDOC_ARGS)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 
 	return(1);
@@ -1997,7 +1996,6 @@ mdoc__x_pre(MDOC_ARGS)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 
 	if (MDOC__U != n->tok) {
@@ -2044,7 +2042,6 @@ mdoc_bk_pre(MDOC_ARGS)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 
 	return(1);
@@ -2124,7 +2121,6 @@ mdoc_quote_pre(MDOC_ARGS)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 
 	h->flags |= HTML_NOSPACE;
@@ -2192,7 +2188,6 @@ mdoc_quote_post(MDOC_ARGS)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 }
 

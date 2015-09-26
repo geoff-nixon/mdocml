@@ -1,4 +1,4 @@
-/*	$Id: term_ascii.c,v 1.46 2015/06/10 19:17:15 schwarze Exp $ */
+/*	$Id: term_ascii.c,v 1.47 2015/07/17 22:38:29 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -260,7 +260,6 @@ ascii_hspan(const struct termp *p, const struct roffsu *su)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 	return(r > 0.0 ? r + 0.01 : r - 0.01);
 }

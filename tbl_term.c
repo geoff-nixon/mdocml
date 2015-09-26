@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.39 2015/03/06 11:03:03 schwarze Exp $ */
+/*	$Id: tbl_term.c,v 1.40 2015/03/06 15:48:53 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -303,7 +303,6 @@ tbl_data(struct termp *tp, const struct tbl_opts *opts,
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 }
 

@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.109 2015/04/23 15:35:59 schwarze Exp $ */
+/*	$Id: man_macro.c,v 1.110 2015/09/04 21:25:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -225,7 +225,6 @@ blk_close(MACRO_PROT_ARGS)
 		break;
 	default:
 		abort();
-		/* NOTREACHED */
 	}
 
 	for (nn = man->last->parent; nn; nn = nn->parent)

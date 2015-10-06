@@ -1,4 +1,4 @@
-/*	$Id: lib.c,v 1.11 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: lib.c,v 1.12 2015/04/02 21:36:49 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -33,5 +33,5 @@ mdoc_a2lib(const char *p)
 
 #include "lib.in"
 
-	return(NULL);
+	return NULL;
 }

@@ -1,4 +1,4 @@
-/*	$Id: tbl_layout.c,v 1.38 2015/02/10 11:03:13 schwarze Exp $ */
+/*	$Id: tbl_layout.c,v 1.39 2015/04/29 12:44:58 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -355,5 +355,5 @@ cell_alloc(struct tbl_node *tbl, struct tbl_row *rp, enum tbl_cellt pos)
 	if (tbl->opts.cols <= p->col)
 		tbl->opts.cols = p->col + 1;
 
-	return(p);
+	return p;
 }

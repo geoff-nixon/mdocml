@@ -1,4 +1,4 @@
-/*	$Id: st.c,v 1.11 2014/08/10 23:54:41 schwarze Exp $ */
+/*	$Id: st.c,v 1.12 2015/04/02 21:36:51 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -33,5 +33,5 @@ mdoc_a2st(const char *p)
 
 #include "st.in"
 
-	return(NULL);
+	return NULL;
 }

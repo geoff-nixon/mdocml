@@ -6,7 +6,7 @@ int dummy;
 
 #else
 
-/*	$Id: compat_vasprintf.c,v 1.1 2015/03/19 14:57:29 schwarze Exp $	*/
+/*	$Id: compat_vasprintf.c,v 1.2 2015/03/20 15:25:12 schwarze Exp $	*/
 /*
  * Copyright (c) 2015 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -46,11 +46,11 @@ vasprintf(char **ret, const char *format, va_list ap)
 
 	if (sz != -1 && (*ret = malloc(sz + 1)) != NULL) {
 		if (vsnprintf(*ret, sz + 1, format, ap) == sz)
-			return(sz);
+			return sz;
 		free(*ret);
 	}
 	*ret = NULL;
-	return(-1);
+	return -1;
 }
 
 #endif

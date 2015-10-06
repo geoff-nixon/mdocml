@@ -6,7 +6,7 @@ int dummy;
 
 #else
 
-/*	$Id$	*/
+/*	$Id: compat_mkdtemp.c,v 1.1 2015/03/19 14:57:29 schwarze Exp $	*/
 /*
  * Copyright (c) 2015 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -45,17 +45,17 @@ mkdtemp(char *path)
 	for (tries = INT_MAX; tries; tries--) {
 		if (mktemp(path) == NULL) {
 			errno = EEXIST;
-			return(NULL);
+			return NULL;
 		}
 		if (mkdir(path, S_IRUSR | S_IWUSR | S_IXUSR) == 0)
-			return(path);
+			return path;
 		if (errno != EEXIST)
-			return(NULL);
+			return NULL;
 		for (cp = start; *cp != '\0'; cp++)
 			*cp = 'X';
 	}
 	errno = EEXIST;
-	return(NULL);
+	return NULL;
 }
 
 #endif

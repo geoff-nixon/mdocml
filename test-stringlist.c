@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: test-stringlist.c,v 1.1 2015/05/20 22:22:59 schwarze Exp $	*/
 /*
  * Copyright (c) 2015 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -24,14 +24,14 @@ main(void)
 	char		 teststr[] = "test";
 
 	if ((sl = sl_init()) == NULL)
-		return(1);
+		return 1;
 	if (sl_add(sl, teststr))
-		return(2);
+		return 2;
 	if (sl->sl_cur != 1)
-		return(3);
+		return 3;
 	if (sl->sl_str[0] != teststr)
-		return(4);
+		return 4;
 
 	sl_free(sl, 0);
-	return(0);
+	return 0;
 }

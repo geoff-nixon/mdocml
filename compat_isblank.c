@@ -6,7 +6,7 @@ int dummy;
 
 #else
 
-/*	$Id$	*/
+/*	$Id: compat_isblank.c,v 1.1 2015/03/19 14:57:29 schwarze Exp $	*/
 /*
  * Copyright (c) 2015 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -27,7 +27,7 @@ int
 isblank(int c)
 {
 
-	return(c == ' ' || c == '\t');
+	return c == ' ' || c == '\t';
 }
 
 #endif

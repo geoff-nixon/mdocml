@@ -1,4 +1,4 @@
-/*	$Id: demandoc.c,v 1.19 2015/04/18 16:34:25 schwarze Exp $ */
+/*	$Id: demandoc.c,v 1.20 2015/04/18 17:53:21 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -73,7 +73,7 @@ main(int argc, char *argv[])
 			break;
 		default:
 			usage();
-			return((int)MANDOCLEVEL_BADARG);
+			return (int)MANDOCLEVEL_BADARG;
 		}
 
 	argc -= optind;
@@ -97,7 +97,7 @@ main(int argc, char *argv[])
 
 	mparse_free(mp);
 	mchars_free(mchars);
-	return((int)MANDOCLEVEL_OK);
+	return (int)MANDOCLEVEL_OK;
 }
 
 static void

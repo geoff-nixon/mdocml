@@ -1,4 +1,4 @@
-/*	$Id: man_macro.c,v 1.110 2015/09/04 21:25:00 schwarze Exp $ */
+/*	$Id: man_macro.c,v 1.111 2015/09/26 00:54:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2012, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -420,8 +420,8 @@ man_args(struct roff_man *man, int line, int *pos, char *buf, char **v)
 	assert(' ' != *start);
 
 	if ('\0' == *start)
-		return(0);
+		return 0;
 
 	*v = mandoc_getarg(man->parse, v, line, pos);
-	return(1);
+	return 1;
 }

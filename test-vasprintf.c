@@ -1,4 +1,4 @@
-/*	$Id: test-vasprintf.c,v 1.1 2015/03/19 14:57:29 schwarze Exp $	*/
+/*	$Id: test-vasprintf.c,v 1.2 2015/03/20 15:32:02 schwarze Exp $	*/
 /*
  * Copyright (c) 2015 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -33,7 +33,7 @@ testfunc(char **ret, const char *format, ...)
 	irc = vasprintf(ret, format, ap);
 	va_end(ap);
 
-	return(irc);
+	return irc;
 }
 
 int
@@ -42,8 +42,8 @@ main(void)
 	char	*ret;
 
 	if (testfunc(&ret, "%s.", "Text") != 5)
-		return(1);
+		return 1;
 	if (strcmp(ret, "Text."))
-		return(2);
-	return(0);
+		return 2;
+	return 0;
 }

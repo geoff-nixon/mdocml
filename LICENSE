@@ -1,4 +1,4 @@
-$Id: LICENSE,v 1.8 2015/05/20 22:22:59 schwarze Exp $
+$Id: LICENSE,v 1.9 2015/05/20 23:43:03 schwarze Exp $
 
 With the exceptions noted below, all code and documentation
 contained in the mdocml toolkit is protected by the Copyright
@@ -43,7 +43,7 @@ and 3-clause BSD licenses; see these individual files for details.
 soelim.c, soelim.1:
 Copyright (c) 2014 Baptiste Daroussin <bapt@FreeBSD.org>
 
-compat_fts.c, compat_fts.h,
+compat_err.c, compat_fts.c, compat_fts.h,
 compat_getsubopt.c, compat_strcasestr.c, compat_strsep.c,
 man.1:
 Copyright (c) 1989,1990,1993,1994 The Regents of the University of California

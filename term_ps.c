@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.74 2015/04/04 17:47:18 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.75 2015/10/06 18:32:20 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -20,6 +20,7 @@
 #include <sys/types.h>
 
 #include <assert.h>
+#include <err.h>
 #include <stdarg.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -582,7 +583,7 @@ pspdf_alloc(const struct mchars *mchars, const struct manoutput *outopts)
 			pagex = 216;
 			pagey = 356;
 		} else if (2 != sscanf(pp, "%ux%u", &pagex, &pagey))
-			fprintf(stderr, "%s: Unknown paper\n", pp);
+			warnx("%s: Unknown paper", pp);
 	}
 
 	/*

@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.465 2015/07/17 22:38:29 schwarze Exp $
+# $Id: Makefile,v 1.466 2015/07/19 06:05:16 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -20,6 +20,7 @@ VERSION = 1.13.3
 # === LIST OF FILES ====================================================
 
 TESTSRCS	 = test-dirent-namlen.c \
+		   test-err.c \
 		   test-fgetln.c \
 		   test-fts.c \
 		   test-getsubopt.c \
@@ -27,6 +28,7 @@ TESTSRCS	 = test-dirent-namlen.c \
 		   test-mkdtemp.c \
 		   test-mmap.c \
 		   test-ohash.c \
+		   test-progname.c \
 		   test-reallocarray.c \
 		   test-sqlite3.c \
 		   test-sqlite3_errstr.c \
@@ -43,6 +45,7 @@ TESTSRCS	 = test-dirent-namlen.c \
 SRCS		 = att.c \
 		   cgi.c \
 		   chars.c \
+		   compat_err.c \
 		   compat_fgetln.c \
 		   compat_fts.c \
 		   compat_getsubopt.c \
@@ -199,7 +202,8 @@ LIBMANDOC_OBJS	 = $(LIBMAN_OBJS) \
 		   preconv.o \
 		   read.o
 
-COMPAT_OBJS	 = compat_fgetln.o \
+COMPAT_OBJS	 = compat_err.o \
+		   compat_fgetln.o \
 		   compat_fts.o \
 		   compat_getsubopt.o \
 		   compat_isblank.o \

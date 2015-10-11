@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.25 2015/05/07 12:08:13 schwarze Exp $	*/
+/*	$Id: manpath.c,v 1.26 2015/06/10 19:26:13 schwarze Exp $	*/
 /*
  * Copyright (c) 2011, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -21,6 +21,7 @@
 #include <sys/stat.h>
 
 #include <ctype.h>
+#include <err.h>
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -165,10 +166,8 @@ manpath_add(struct manpaths *dirs, const char *dir, int complain)
 	size_t		 i;
 
 	if (NULL == (cp = realpath(dir, buf))) {
-		if (complain) {
-			fputs("manpath: ", stderr);
-			perror(dir);
-		}
+		if (complain)
+			warn("manpath: %s", dir);
 		return;
 	}
 
@@ -177,10 +176,8 @@ manpath_add(struct manpaths *dirs, const char *dir, int complain)
 			return;
 
 	if (stat(cp, &sb) == -1) {
-		if (complain) {
-			fputs("manpath: ", stderr);
-			perror(dir);
-		}
+		if (complain)
+			warn("manpath: %s", dir);
 		return;
 	}
 

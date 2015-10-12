@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.246 2015/10/10 13:21:18 schwarze Exp $ */
+/*	$Id: main.c,v 1.247 2015/10/11 21:12:54 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -709,13 +709,9 @@ parse(struct curparse *curp, int fd, const char *file)
 			curp->outman = man_man;
 			break;
 		case OUTT_PDF:
-			/* FALLTHROUGH */
 		case OUTT_ASCII:
-			/* FALLTHROUGH */
 		case OUTT_UTF8:
-			/* FALLTHROUGH */
 		case OUTT_LOCALE:
-			/* FALLTHROUGH */
 		case OUTT_PS:
 			curp->outman = terminal_man;
 			curp->outmdoc = terminal_mdoc;
@@ -896,7 +892,6 @@ woptions(struct curparse *curp, char *arg)
 			curp->wstop = 1;
 			break;
 		case 1:
-			/* FALLTHROUGH */
 		case 2:
 			curp->wlevel = MANDOCLEVEL_WARNING;
 			break;

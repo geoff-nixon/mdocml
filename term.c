@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.251 2015/09/26 00:54:04 schwarze Exp $ */
+/*	$Id: term.c,v 1.252 2015/10/06 18:32:20 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -474,7 +474,6 @@ term_word(struct termp *p, const char *word)
 			term_fontrepl(p, TERMFONT_BI);
 			continue;
 		case ESCAPE_FONT:
-			/* FALLTHROUGH */
 		case ESCAPE_FONTROMAN:
 			term_fontrepl(p, TERMFONT_NONE);
 			continue;
@@ -771,8 +770,6 @@ term_strlen(const struct termp *p, const char *cp)
 		case ASCII_HYPH:
 			sz += cond_width(p, '-', &skip);
 			cp++;
-			/* FALLTHROUGH */
-		case ASCII_BREAK:
 			break;
 		default:
 			break;
@@ -811,7 +808,6 @@ term_vspan(const struct termp *p, const struct roffsu *su)
 		r = su->scale / 12.0;
 		break;
 	case SCALE_EN:
-		/* FALLTHROUGH */
 	case SCALE_EM:
 		r = su->scale * 0.6;
 		break;

@@ -1,4 +1,4 @@
-/*	$Id: tbl_term.c,v 1.41 2015/09/26 00:54:04 schwarze Exp $ */
+/*	$Id: tbl_term.c,v 1.42 2015/10/06 18:32:20 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011, 2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -266,12 +266,10 @@ tbl_data(struct termp *tp, const struct tbl_opts *opts,
 		tbl_char(tp, ASCII_NBRSP, col->width);
 		return;
 	case TBL_DATA_HORIZ:
-		/* FALLTHROUGH */
 	case TBL_DATA_NHORIZ:
 		tbl_char(tp, '-', col->width);
 		return;
 	case TBL_DATA_NDHORIZ:
-		/* FALLTHROUGH */
 	case TBL_DATA_DHORIZ:
 		tbl_char(tp, '=', col->width);
 		return;
@@ -287,11 +285,8 @@ tbl_data(struct termp *tp, const struct tbl_opts *opts,
 		tbl_char(tp, '=', col->width);
 		break;
 	case TBL_CELL_LONG:
-		/* FALLTHROUGH */
 	case TBL_CELL_CENTRE:
-		/* FALLTHROUGH */
 	case TBL_CELL_LEFT:
-		/* FALLTHROUGH */
 	case TBL_CELL_RIGHT:
 		tbl_literal(tp, dp, col);
 		break;

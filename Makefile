@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.467 2015/10/11 21:12:54 schwarze Exp $
+# $Id: Makefile,v 1.468 2015/10/13 15:53:05 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -117,7 +117,6 @@ DISTFILES	 = INSTALL \
 		   TODO \
 		   apropos.1 \
 		   cgi.h.example \
-		   chars.in \
 		   compat_fts.h \
 		   compat_ohash.h \
 		   compat_stringlist.h \

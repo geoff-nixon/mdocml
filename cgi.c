@@ -1,4 +1,4 @@
-/*	$Id: cgi.c,v 1.108 2015/04/18 16:34:25 schwarze Exp $ */
+/*	$Id: cgi.c,v 1.109 2015/10/06 18:32:19 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@usta.de>
@@ -819,7 +819,6 @@ format(const struct req *req, const char *file)
 {
 	struct manoutput conf;
 	struct mparse	*mp;
-	struct mchars	*mchars;
 	struct roff_man	*man;
 	void		*vp;
 	int		 fd;
@@ -830,9 +829,8 @@ format(const struct req *req, const char *file)
 		return;
 	}
 
-	mchars = mchars_alloc();
-	mp = mparse_alloc(MPARSE_SO, MANDOCLEVEL_BADARG, NULL,
-	    mchars, req->q.manpath);
+	mchars_alloc();
+	mp = mparse_alloc(MPARSE_SO, MANDOCLEVEL_BADARG, NULL, req->q.manpath);
 	mparse_readfd(mp, fd, file);
 	close(fd);
 
@@ -852,11 +850,11 @@ format(const struct req *req, const char *file)
 		    req->q.manpath, file);
 		pg_error_internal();
 		mparse_free(mp);
-		mchars_free(mchars);
+		mchars_free();
 		return;
 	}
 
-	vp = html_alloc(mchars, &conf);
+	vp = html_alloc(&conf);
 
 	if (man->macroset == MACROSET_MDOC)
 		html_mdoc(vp, man);
@@ -865,7 +863,7 @@ format(const struct req *req, const char *file)
 
 	html_free(vp);
 	mparse_free(mp);
-	mchars_free(mchars);
+	mchars_free();
 	free(conf.man);
 }
 

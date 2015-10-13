@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.76 2015/10/11 21:12:55 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.77 2015/10/12 00:08:16 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -108,8 +108,7 @@ static	void		  ps_printf(struct termp *, const char *, ...);
 static	void		  ps_putchar(struct termp *, char);
 static	void		  ps_setfont(struct termp *, enum termfont);
 static	void		  ps_setwidth(struct termp *, int, int);
-static	struct termp	 *pspdf_alloc(const struct mchars *,
-				const struct manoutput *);
+static	struct termp	 *pspdf_alloc(const struct manoutput *);
 static	void		  pdf_obj(struct termp *, size_t);
 
 /*
@@ -510,29 +509,29 @@ static	const struct font fonts[TERMFONT__MAX] = {
 };
 
 void *
-pdf_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+pdf_alloc(const struct manoutput *outopts)
 {
 	struct termp	*p;
 
-	if (NULL != (p = pspdf_alloc(mchars, outopts)))
+	if (NULL != (p = pspdf_alloc(outopts)))
 		p->type = TERMTYPE_PDF;
 
 	return p;
 }
 
 void *
-ps_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+ps_alloc(const struct manoutput *outopts)
 {
 	struct termp	*p;
 
-	if (NULL != (p = pspdf_alloc(mchars, outopts)))
+	if (NULL != (p = pspdf_alloc(outopts)))
 		p->type = TERMTYPE_PS;
 
 	return p;
 }
 
 static struct termp *
-pspdf_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+pspdf_alloc(const struct manoutput *outopts)
 {
 	struct termp	*p;
 	unsigned int	 pagex, pagey;
@@ -540,7 +539,6 @@ pspdf_alloc(const struct mchars *mchars, const struct manoutput *outopts)
 	const char	*pp;
 
 	p = mandoc_calloc(1, sizeof(struct termp));
-	p->symtab = mchars;
 	p->enc = TERMENC_ASCII;
 	p->fontq = mandoc_reallocarray(NULL,
 	    (p->fontsz = 8), sizeof(enum termfont));

@@ -1,4 +1,4 @@
-/*	$Id: term.h,v 1.115 2015/07/17 22:38:29 schwarze Exp $ */
+/*	$Id: term.h,v 1.116 2015/09/21 13:25:00 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -86,7 +86,6 @@ struct	termp {
 #define	TERMP_NONEWLINE	 (1 << 15)	/* No line break in nofill mode. */
 	int		 *buf;		/* Output buffer. */
 	enum termenc	  enc;		/* Type of encoding. */
-	const struct mchars *symtab;	/* Character table. */
 	enum termfont	  fontl;	/* Last font set. */
 	enum termfont	 *fontq;	/* Symmetric fonts. */
 	int		  fontsz;	/* Allocated size of font stack */

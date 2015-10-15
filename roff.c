@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.278 2015/10/12 00:08:16 schwarze Exp $ */
+/*	$Id: roff.c,v 1.279 2015/10/13 22:59:54 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -32,9 +32,6 @@
 #include "libmandoc.h"
 #include "roff_int.h"
 #include "libroff.h"
-
-/* Maximum number of nested if-else conditionals. */
-#define	RSTACK_MAX	128
 
 /* Maximum number of string expansions per line, to break infinite loops. */
 #define	EXPAND_LIMIT	1000

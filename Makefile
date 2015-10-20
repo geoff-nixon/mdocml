@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.468 2015/10/13 15:53:05 schwarze Exp $
+# $Id: Makefile,v 1.469 2015/10/13 22:59:54 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -88,6 +88,7 @@ SRCS		 = att.c \
 		   mdoc_html.c \
 		   mdoc_macro.c \
 		   mdoc_man.c \
+		   mdoc_state.c \
 		   mdoc_term.c \
 		   mdoc_validate.c \
 		   msec.c \
@@ -183,6 +184,7 @@ LIBMDOC_OBJS	 = att.o \
 		   mdoc_argv.o \
 		   mdoc_hash.o \
 		   mdoc_macro.o \
+		   mdoc_state.o \
 		   mdoc_validate.o \
 		   st.o
 

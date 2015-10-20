@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.249 2015/10/13 22:59:54 schwarze Exp $ */
+/*	$Id: main.c,v 1.250 2015/10/19 19:51:22 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -696,6 +696,7 @@ parse(struct curparse *curp, int fd, const char *file)
 	if (man == NULL)
 		return;
 	if (man->macroset == MACROSET_MDOC) {
+		mdoc_validate(man);
 		switch (curp->outtype) {
 		case OUTT_HTML:
 			html_mdoc(curp->outdata, man);

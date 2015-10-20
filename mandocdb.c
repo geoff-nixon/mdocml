@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.202 2015/10/13 15:53:05 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.203 2015/10/13 22:59:54 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1166,6 +1166,7 @@ mpages_merge(struct mparse *mp)
 			}
 			goto nextpage;
 		} else if (man != NULL && man->macroset == MACROSET_MDOC) {
+			mdoc_validate(man);
 			mpage->form = FORM_SRC;
 			mpage->sec = man->meta.msec;
 			mpage->sec = mandoc_strdup(

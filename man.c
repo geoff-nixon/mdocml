@@ -1,4 +1,4 @@
-/*	$Id: man.c,v 1.164 2015/09/04 21:25:00 schwarze Exp $ */
+/*	$Id: man.c,v 1.165 2015/10/06 18:32:19 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -331,4 +331,39 @@ man_mparse(const struct roff_man *man)
 
 	assert(man && man->parse);
 	return man->parse;
+}
+
+void
+man_state(struct roff_man *man, struct roff_node *n)
+{
+
+	switch(n->tok) {
+	case MAN_nf:
+	case MAN_EX:
+		if (man->flags & MAN_LITERAL && ! (n->flags & MAN_VALID))
+			mandoc_msg(MANDOCERR_NF_SKIP, man->parse,
+			    n->line, n->pos, "nf");
+		man->flags |= MAN_LITERAL;
+		break;
+	case MAN_fi:
+	case MAN_EE:
+		if ( ! (man->flags & MAN_LITERAL) &&
+		     ! (n->flags & MAN_VALID))
+			mandoc_msg(MANDOCERR_FI_SKIP, man->parse,
+			    n->line, n->pos, "fi");
+		man->flags &= ~MAN_LITERAL;
+		break;
+	default:
+		break;
+	}
+	man->last->flags |= MAN_VALID;
+}
+
+void
+man_validate(struct roff_man *man)
+{
+
+	man->last = man->first;
+	man_node_validate(man);
+	man->flags &= ~MAN_LITERAL;
 }

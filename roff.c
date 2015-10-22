@@ -1,4 +1,4 @@
-/*	$Id: roff.c,v 1.281 2015/10/20 02:01:32 schwarze Exp $ */
+/*	$Id: roff.c,v 1.282 2015/10/21 23:51:11 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -1063,7 +1063,7 @@ roff_word_alloc(struct roff_man *man, int line, int pos, const char *word)
 	if (man->macroset == MACROSET_MDOC)
 		n->flags |= MDOC_VALID | MDOC_ENDED;
 	else
-		man_valid_post(man);
+		n->flags |= MAN_VALID;
 	man->next = ROFF_NEXT_SIBLING;
 }
 
@@ -1151,7 +1151,7 @@ roff_addtbl(struct roff_man *man, const struct tbl_span *tbl)
 	if (man->macroset == MACROSET_MDOC)
 		n->flags |= MDOC_VALID | MDOC_ENDED;
 	else
-		man_valid_post(man);
+		n->flags |= MAN_VALID;
 	man->next = ROFF_NEXT_SIBLING;
 }
 

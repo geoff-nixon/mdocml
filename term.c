@@ -1,4 +1,4 @@
-/*	$Id: term.c,v 1.253 2015/10/12 00:08:16 schwarze Exp $ */
+/*	$Id: term.c,v 1.254 2015/10/13 22:59:54 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -564,7 +564,7 @@ encode1(struct termp *p, int c)
 	if (p->col + 7 >= p->maxcols)
 		adjbuf(p, p->col + 7);
 
-	f = (c == ASCII_HYPH || isgraph(c)) ?
+	f = (c == ASCII_HYPH || c > 127 || isgraph(c)) ?
 	    p->fontq[p->fonti] : TERMFONT_NONE;
 
 	if (p->flags & TERMP_BACKBEFORE) {

@@ -1,4 +1,4 @@
-/*	$Id: mdoc.c,v 1.254 2015/10/12 00:08:15 schwarze Exp $ */
+/*	$Id: mdoc.c,v 1.255 2015/10/20 02:01:31 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -205,6 +205,7 @@ mdoc_node_relink(struct roff_man *mdoc, struct roff_node *p)
 {
 
 	roff_node_unlink(mdoc, p);
+	p->prev = p->next = NULL;
 	roff_node_append(mdoc, p);
 }
 

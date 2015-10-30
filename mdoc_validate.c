@@ -1,4 +1,4 @@
-/*	$Id: mdoc_validate.c,v 1.298 2015/10/20 02:01:32 schwarze Exp $ */
+/*	$Id: mdoc_validate.c,v 1.299 2015/10/21 23:51:11 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -895,6 +895,16 @@ post_display(POST_ARGS)
 		break;
 	case ROFFT_BLOCK:
 		if (n->tok == MDOC_Bd) {
+			if (n->args == NULL) {
+				mandoc_msg(MANDOCERR_BD_NOARG,
+				    mdoc->parse, n->line, n->pos, "Bd");
+				mdoc->next = ROFF_NEXT_SIBLING;
+				while (n->body->child != NULL)
+					mdoc_node_relink(mdoc,
+					    n->body->child);
+				roff_node_delete(mdoc, n);
+				break;
+			}
 			post_bd(mdoc);
 			post_prevpar(mdoc);
 		}

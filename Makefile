@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.471 2015/11/05 17:16:34 schwarze Exp $
+# $Id: Makefile,v 1.472 2015/11/05 17:47:51 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -52,6 +52,7 @@ SRCS		 = att.c \
 		   compat_isblank.c \
 		   compat_mkdtemp.c \
 		   compat_ohash.c \
+		   compat_progname.c \
 		   compat_reallocarray.c \
 		   compat_sqlite3_errstr.c \
 		   compat_strcasestr.c \
@@ -211,6 +212,7 @@ COMPAT_OBJS	 = compat_err.o \
 		   compat_isblank.o \
 		   compat_mkdtemp.o \
 		   compat_ohash.o \
+		   compat_progname.o \
 		   compat_reallocarray.o \
 		   compat_sqlite3_errstr.o \
 		   compat_strcasestr.o \

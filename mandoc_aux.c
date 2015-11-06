@@ -1,4 +1,4 @@
-/*	$Id: mandoc_aux.c,v 1.6 2015/10/11 21:12:54 schwarze Exp $ */
+/*	$Id: mandoc_aux.c,v 1.7 2015/10/12 21:09:54 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -28,9 +28,6 @@
 #include "mandoc.h"
 #include "mandoc_aux.h"
 
-#if !HAVE_PROGNAME
-const char *mandoc_progname;
-#endif
 
 int
 mandoc_asprintf(char **dest, const char *fmt, ...)

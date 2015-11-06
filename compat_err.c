@@ -6,7 +6,7 @@ int dummy;
 
 #else
 
-/* $Id$ */
+/* $Id: compat_err.c,v 1.1 2015/10/11 21:12:54 schwarze Exp $ */
 /*
  * Copyright (c) 1993
  *      The Regents of the University of California.  All rights reserved.
@@ -43,15 +43,13 @@ int dummy;
 #include <stdlib.h>
 #include <string.h>
 
-extern char *__progname;
-
 static void vwarni(const char *, va_list);
 static void vwarnxi(const char *, va_list);
 
 static void
 vwarnxi(const char *fmt, va_list ap)
 {
-	fprintf(stderr, "%s: ", __progname);
+	fprintf(stderr, "%s: ", getprogname());
 	if (fmt != NULL)
 		vfprintf(stderr, fmt, ap);
 }

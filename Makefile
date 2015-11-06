@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.472 2015/11/05 17:47:51 schwarze Exp $
+# $Id: Makefile,v 1.473 2015/11/06 16:30:33 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -28,6 +28,7 @@ TESTSRCS	 = test-dirent-namlen.c \
 		   test-mkdtemp.c \
 		   test-mmap.c \
 		   test-ohash.c \
+		   test-pledge.c \
 		   test-progname.c \
 		   test-reallocarray.c \
 		   test-sqlite3.c \

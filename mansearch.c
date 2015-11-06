@@ -1,4 +1,4 @@
-/*	$Id: mansearch.c,v 1.59 2015/10/11 21:12:55 schwarze Exp $ */
+/*	$Id: mansearch.c,v 1.60 2015/10/13 15:53:05 schwarze Exp $ */
 /*
  * Copyright (c) 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -766,7 +766,14 @@ exprterm(const struct mansearch *search, char *buf, int cs)
 	if (search->argmode == ARG_WORD) {
 		e->bits = TYPE_Nm;
 		e->substr = NULL;
+#if HAVE_REWB_BSD
 		mandoc_asprintf(&val, "[[:<:]]%s[[:>:]]", buf);
+#elif HAVE_REWB_SYSV
+		mandoc_asprintf(&val, "\\<%s\\>", buf);
+#else
+		mandoc_asprintf(&val,
+		    "(^|[^a-zA-Z01-9_])%s([^a-zA-Z01-9_]|$)", buf);
+#endif
 		cs = 0;
 	} else if ((val = strpbrk(buf, "=~")) == NULL) {
 		e->bits = TYPE_Nm | TYPE_Nd;

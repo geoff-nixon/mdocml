@@ -1,4 +1,4 @@
-# $Id: configure.local.example,v 1.8 2015/03/27 00:18:14 schwarze Exp $
+# $Id: configure.local.example,v 1.9 2015/05/20 22:22:59 schwarze Exp $
 #
 # Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
 #
@@ -79,7 +79,6 @@ SBINDIR="${PREFIX}/sbin"
 INCLUDEDIR="${PREFIX}/include/mandoc"
 LIBDIR="${PREFIX}/lib/mandoc"
 MANDIR="${PREFIX}/man"
-EXAMPLEDIR="${PREFIX}/share/examples/mandoc"
 
 # The man(1) utility needs to know where the manuals reside.
 # We know of two ways to tell it: via manpath(1) or man.conf(5).

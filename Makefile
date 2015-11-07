@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.474 2015/11/06 17:33:34 schwarze Exp $
+# $Id: Makefile,v 1.475 2015/11/07 13:05:14 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -340,7 +340,6 @@ clean:
 
 base-install: base-build
 	mkdir -p $(DESTDIR)$(BINDIR)
-	mkdir -p $(DESTDIR)$(EXAMPLEDIR)
 	mkdir -p $(DESTDIR)$(LIBDIR)
 	mkdir -p $(DESTDIR)$(INCLUDEDIR)
 	mkdir -p $(DESTDIR)$(MANDIR)/man1

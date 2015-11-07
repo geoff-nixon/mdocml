@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.26 2015/06/10 19:26:13 schwarze Exp $	*/
+/*	$Id: manpath.c,v 1.27 2015/10/11 21:12:55 schwarze Exp $	*/
 /*
  * Copyright (c) 2011, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -21,7 +21,9 @@
 #include <sys/stat.h>
 
 #include <ctype.h>
+#if HAVE_ERR
 #include <err.h>
+#endif
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>

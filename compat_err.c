@@ -6,7 +6,7 @@ int dummy;
 
 #else
 
-/* $Id: compat_err.c,v 1.1 2015/10/11 21:12:54 schwarze Exp $ */
+/* $Id: compat_err.c,v 1.2 2015/11/06 16:30:33 schwarze Exp $ */
 /*
  * Copyright (c) 1993
  *      The Regents of the University of California.  All rights reserved.
@@ -36,7 +36,6 @@ int dummy;
  * SUCH DAMAGE.
  */
 
-#include <err.h>
 #include <errno.h>
 #include <stdarg.h>
 #include <stdio.h>

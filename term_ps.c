@@ -1,4 +1,4 @@
-/*	$Id: term_ps.c,v 1.77 2015/10/12 00:08:16 schwarze Exp $ */
+/*	$Id: term_ps.c,v 1.78 2015/10/13 22:59:54 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -20,7 +20,9 @@
 #include <sys/types.h>
 
 #include <assert.h>
+#if HAVE_ERR
 #include <err.h>
+#endif
 #include <stdarg.h>
 #include <stdint.h>
 #include <stdio.h>

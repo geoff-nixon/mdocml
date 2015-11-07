@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.206 2015/11/06 16:30:33 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.207 2015/11/06 17:33:34 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -23,7 +23,9 @@
 
 #include <assert.h>
 #include <ctype.h>
+#if HAVE_ERR
 #include <err.h>
+#endif
 #include <errno.h>
 #include <fcntl.h>
 #if HAVE_FTS

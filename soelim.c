@@ -1,4 +1,4 @@
-/*	$Id: soelim.c,v 1.3 2015/05/20 22:57:22 schwarze Exp $	*/
+/*	$Id: soelim.c,v 1.4 2015/05/21 00:18:52 schwarze Exp $	*/
 /*
  * Copyright (c) 2014 Baptiste Daroussin <bapt@FreeBSD.org>
  * All rights reserved.
@@ -29,7 +29,9 @@
 #include <sys/types.h>
 
 #include <ctype.h>
+#if HAVE_ERR
 #include <err.h>
+#endif
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>

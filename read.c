@@ -1,4 +1,4 @@
-/*	$Id: read.c,v 1.144 2015/10/13 22:59:54 schwarze Exp $ */
+/*	$Id: read.c,v 1.145 2015/10/30 19:04:16 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -26,7 +26,9 @@
 
 #include <assert.h>
 #include <ctype.h>
+#if HAVE_ERR
 #include <err.h>
+#endif
 #include <errno.h>
 #include <fcntl.h>
 #include <stdarg.h>

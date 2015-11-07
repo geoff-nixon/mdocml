@@ -1,4 +1,4 @@
-/*	$Id: mandoc_aux.c,v 1.7 2015/10/12 21:09:54 schwarze Exp $ */
+/*	$Id: mandoc_aux.c,v 1.8 2015/11/06 16:30:33 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2014 Ingo Schwarze <schwarze@openbsd.org>
@@ -19,7 +19,9 @@
 
 #include <sys/types.h>
 
+#if HAVE_ERR
 #include <err.h>
+#endif
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>

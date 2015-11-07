@@ -1,4 +1,4 @@
-/*	$Id: main.c,v 1.254 2015/11/06 16:30:33 schwarze Exp $ */
+/*	$Id: main.c,v 1.255 2015/11/06 17:33:34 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2010-2012, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -24,7 +24,9 @@
 
 #include <assert.h>
 #include <ctype.h>
+#if HAVE_ERR
 #include <err.h>
+#endif
 #include <fcntl.h>
 #include <glob.h>
 #include <signal.h>

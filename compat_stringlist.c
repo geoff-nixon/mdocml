@@ -6,7 +6,7 @@ int dummy;
 
 #else
 
-/*	$Id: compat_stringlist.c,v 1.4 2015/05/20 23:43:03 schwarze Exp $	*/
+/*	$Id: compat_stringlist.c,v 1.5 2015/05/21 00:13:43 schwarze Exp $	*/
 /*
  * Copyright (c) 1994 Christos Zoulas <christos@netbsd.org>
  * All rights reserved.
@@ -33,7 +33,9 @@ int dummy;
  * SUCH DAMAGE.
  */
 
+#if HAVE_ERR
 #include <err.h>
+#endif
 #include <stdlib.h>
 #include <string.h>
 #include "compat_stringlist.h"

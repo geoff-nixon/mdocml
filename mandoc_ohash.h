@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: mandoc_ohash.h,v 1.1 2015/10/13 15:53:05 schwarze Exp $	*/
 /*
  * Copyright (c) 2015 Ingo Schwarze <schwarze@openbsd.org>
  *
@@ -20,8 +20,4 @@
 #include "compat_ohash.h"
 #endif
 
-__BEGIN_DECLS
-
 void		  mandoc_ohash_init(struct ohash *, unsigned int, ptrdiff_t);
-
-__END_DECLS

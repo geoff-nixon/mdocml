@@ -1,4 +1,4 @@
-/*	$Id: compat_stringlist.h,v 1.2 2015/05/20 22:22:59 schwarze Exp $	*/
+/*	$Id: compat_stringlist.h,v 1.3 2015/05/20 23:43:03 schwarze Exp $	*/
 /*	$NetBSD: stringlist.h,v 1.2 1997/01/17 06:11:36 lukem Exp $	*/
 
 /*
@@ -38,9 +38,8 @@ typedef struct _stringlist {
 	size_t	  sl_cur;
 } StringList;
 
-__BEGIN_DECLS
+
 StringList *sl_init(void);
 int	 sl_add(StringList *, char *);
 void	 sl_free(StringList *, int);
 char	*sl_find(StringList *, const char *);
-__END_DECLS

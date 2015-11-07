@@ -1,4 +1,4 @@
-/*	$Id: libmdoc.h,v 1.106 2015/10/17 00:21:07 schwarze Exp $ */
+/*	$Id: libmdoc.h,v 1.107 2015/10/20 02:01:31 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -62,7 +62,6 @@ enum	mdelim {
 
 extern	const struct mdoc_macro *const mdoc_macros;
 
-__BEGIN_DECLS
 
 void		  mdoc_macro(MACRO_PROT_ARGS);
 void		  mdoc_elem_alloc(struct roff_man *, int, int,
@@ -87,5 +86,3 @@ void		  mdoc_argv(struct roff_man *, int, int,
 enum margserr	  mdoc_args(struct roff_man *, int,
 			int *, char *, int, char **);
 enum mdelim	  mdoc_isdelim(const char *);
-
-__END_DECLS

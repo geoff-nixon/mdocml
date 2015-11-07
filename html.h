@@ -1,4 +1,4 @@
-/*	$Id: html.h,v 1.70 2014/12/02 10:08:06 schwarze Exp $ */
+/*	$Id: html.h,v 1.71 2015/10/13 22:59:54 schwarze Exp $ */
 /*
  * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@bsd.lv>
  *
@@ -142,7 +142,6 @@ struct	html {
 #define	HTML_FRAGMENT	 (1 << 0) /* don't emit HTML/HEAD/BODY */
 };
 
-__BEGIN_DECLS
 
 struct	tbl_span;
 struct	eqn;
@@ -175,5 +174,3 @@ void		  buffmt_man(struct html *,
 void		  buffmt_includes(struct html *, const char *);
 
 int		  html_strlen(const char *);
-
-__END_DECLS

@@ -1,4 +1,4 @@
-/*	$Id: libmandoc.h,v 1.60 2015/04/19 14:25:41 schwarze Exp $ */
+/*	$Id: libmandoc.h,v 1.61 2015/10/13 22:59:54 schwarze Exp $ */
 /*
  * Copyright (c) 2009, 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -32,7 +32,6 @@ struct	buf {
 	size_t	 sz;
 };
 
-__BEGIN_DECLS
 
 struct	mparse;
 struct	tbl_span;
@@ -84,5 +83,3 @@ int		 roff_getformat(const struct roff *);
 
 const struct tbl_span	*roff_span(const struct roff *);
 const struct eqn	*roff_eqn(const struct roff *);
-
-__END_DECLS

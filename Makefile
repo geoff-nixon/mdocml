@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.477 2015/11/07 17:58:55 schwarze Exp $
+# $Id: Makefile,v 1.478 2015/11/07 20:52:52 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -264,7 +264,11 @@ MANPAGE_OBJS	 = manpage.o mansearch.o mansearch_const.o manpath.o
 
 DEMANDOC_OBJS	 = demandoc.o
 
-SOELIM_OBJS	 = soelim.o compat_stringlist.o
+SOELIM_OBJS	 = soelim.o \
+		   compat_err.o \
+		   compat_getline.o \
+		   compat_progname.o \
+		   compat_stringlist.o
 
 WWW_MANS	 = apropos.1.html \
 		   demandoc.1.html \

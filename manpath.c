@@ -1,4 +1,4 @@
-/*	$Id: manpath.c,v 1.27 2015/10/11 21:12:55 schwarze Exp $	*/
+/*	$Id: manpath.c,v 1.28 2015/11/07 14:22:29 schwarze Exp $	*/
 /*
  * Copyright (c) 2011, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
  * Copyright (c) 2011 Kristaps Dzonsons <kristaps@bsd.lv>
@@ -212,14 +212,19 @@ manconf_file(struct manconf *conf, const char *file)
 	char manpath_default[] = MANPATH_DEFAULT;
 
 	FILE		*stream;
-	char		*cp, *ep;
-	size_t		 len, tok;
+	char		*line, *cp, *ep;
+	size_t		 linesz, tok, toklen;
+	ssize_t		 linelen;
 
 	if ((stream = fopen(file, "r")) == NULL)
 		goto out;
 
-	while ((cp = fgetln(stream, &len)) != NULL) {
-		ep = cp + len;
+	line = NULL;
+	linesz = 0;
+
+	while ((linelen = getline(&line, &linesz, stream)) != -1) {
+		cp = line;
+		ep = cp + linelen;
 		if (ep[-1] != '\n')
 			break;
 		*--ep = '\0';
@@ -229,11 +234,11 @@ manconf_file(struct manconf *conf, const char *file)
 			continue;
 
 		for (tok = 0; tok < sizeof(toks)/sizeof(toks[0]); tok++) {
-			len = strlen(toks[tok]);
-			if (cp + len < ep &&
-			    isspace((unsigned char)cp[len]) &&
-			    !strncmp(cp, toks[tok], len)) {
-				cp += len;
+			toklen = strlen(toks[tok]);
+			if (cp + toklen < ep &&
+			    isspace((unsigned char)cp[toklen]) &&
+			    strncmp(cp, toks[tok], toklen) == 0) {
+				cp += toklen;
 				while (isspace((unsigned char)*cp))
 					cp++;
 				break;
@@ -259,6 +264,7 @@ manconf_file(struct manconf *conf, const char *file)
 			break;
 		}
 	}
+	free(line);
 	fclose(stream);
 
 out:

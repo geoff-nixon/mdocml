@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.475 2015/11/07 13:05:14 schwarze Exp $
+# $Id: Makefile,v 1.476 2015/11/07 13:14:21 schwarze Exp $
 #
 # Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
 # Copyright (c) 2011, 2013, 2014, 2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -21,7 +21,6 @@ VERSION = 1.13.3
 
 TESTSRCS	 = test-dirent-namlen.c \
 		   test-err.c \
-		   test-fgetln.c \
 		   test-fts.c \
 		   test-getsubopt.c \
 		   test-isblank.c \
@@ -47,7 +46,6 @@ SRCS		 = att.c \
 		   cgi.c \
 		   chars.c \
 		   compat_err.c \
-		   compat_fgetln.c \
 		   compat_fts.c \
 		   compat_getsubopt.c \
 		   compat_isblank.c \
@@ -207,7 +205,6 @@ LIBMANDOC_OBJS	 = $(LIBMAN_OBJS) \
 		   read.o
 
 COMPAT_OBJS	 = compat_err.o \
-		   compat_fgetln.o \
 		   compat_fts.o \
 		   compat_getsubopt.o \
 		   compat_isblank.o \

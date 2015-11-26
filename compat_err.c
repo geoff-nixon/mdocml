@@ -6,7 +6,7 @@ int dummy;
 
 #else
 
-/* $Id: compat_err.c,v 1.2 2015/11/06 16:30:33 schwarze Exp $ */
+/* $Id: compat_err.c,v 1.3 2015/11/07 14:22:29 schwarze Exp $ */
 /*
  * Copyright (c) 1993
  *      The Regents of the University of California.  All rights reserved.
@@ -73,6 +73,18 @@ err(int eval, const char *fmt, ...)
 	va_start(ap, fmt);
 	vwarni(fmt, ap);
 	va_end(ap);
+	exit(eval);
+}
+
+void
+errx(int eval, const char *fmt, ...)
+{
+	va_list ap;
+
+	va_start(ap, fmt);
+	vwarnxi(fmt, ap);
+	va_end(ap);
+	fputc('\n', stderr);
 	exit(eval);
 }
 

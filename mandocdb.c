@@ -1,4 +1,4 @@
-/*	$Id: mandocdb.c,v 1.208 2015/11/07 14:22:29 schwarze Exp $ */
+/*	$Id: mandocdb.c,v 1.209 2015/11/07 17:58:55 schwarze Exp $ */
 /*
  * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@openbsd.org>
@@ -420,9 +420,11 @@ mandocdb(int argc, char *argv[])
 	argv += optind;
 
 #if HAVE_PLEDGE
-	if (nodb && pledge("stdio rpath", NULL) == -1) {
-		perror("pledge");
-		return (int)MANDOCLEVEL_SYSERR;
+	if (nodb) {
+		if (pledge("stdio rpath", NULL) == -1) {
+			perror("pledge");
+			return (int)MANDOCLEVEL_SYSERR;
+		}
 	}
 #endif
 
@@ -452,11 +454,12 @@ mandocdb(int argc, char *argv[])
 			 * all files specified on the command-line.
 			 */
 #if HAVE_PLEDGE
-			if (!nodb && pledge("stdio rpath wpath cpath fattr flock",
-			    NULL) == -1) {
-				perror("pledge");
-				exitcode = (int)MANDOCLEVEL_SYSERR;
-				goto out;
+			if (!nodb) {
+				if (pledge("stdio rpath wpath cpath fattr flock", NULL) == -1) {
+					perror("pledge");
+					exitcode = (int)MANDOCLEVEL_SYSERR;
+					goto out;
+				}
 			}
 #endif
 			use_all = 1;

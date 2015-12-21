@@ -1,0 +1,866 @@
+head	1.24;
+access;
+symbols
+	VERSION_1_13_3:1.23
+	VERSION_1_13_2:1.23
+	VERSION_1_13_1:1.15;
+locks; strict;
+comment	@ * @;
+
+
+1.24
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2014.12.01.04.05.32;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2014.11.27.01.58.21;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2014.11.18.01.15.21;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2014.11.11.19.04.55;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2014.09.03.18.09.14;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2014.09.01.22.45.53;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2014.08.17.03.24.47;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2014.07.24.20.30.45;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2014.07.12.14.00.25;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2014.04.11.15.46.52;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2014.04.10.02.46.21;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2014.04.09.21.50.08;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2014.04.04.15.55.19;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2014.01.18.08.23.55;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2014.01.06.03.02.46;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2014.01.05.00.29.54;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2013.12.31.03.41.14;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2013.12.27.18.51.25;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2013.06.06.14.27.02;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2013.06.05.02.00.26;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2012.06.09.14.11.16;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2012.06.08.10.36.23;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.24
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: mansearch.h,v 1.23 2014/12/01 08:05:52 schwarze Exp $ */
+/*
+ * Copyright (c) 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+#define	MANDOC_DB	 "mandoc.db"
+
+#define	TYPE_arch	 0x0000000000000001ULL
+#define	TYPE_sec	 0x0000000000000002ULL
+#define	TYPE_Xr		 0x0000000000000004ULL
+#define	TYPE_Ar		 0x0000000000000008ULL
+#define	TYPE_Fa		 0x0000000000000010ULL
+#define	TYPE_Fl		 0x0000000000000020ULL
+#define	TYPE_Dv		 0x0000000000000040ULL
+#define	TYPE_Fn		 0x0000000000000080ULL
+#define	TYPE_Ic		 0x0000000000000100ULL
+#define	TYPE_Pa		 0x0000000000000200ULL
+#define	TYPE_Cm		 0x0000000000000400ULL
+#define	TYPE_Li		 0x0000000000000800ULL
+#define	TYPE_Em		 0x0000000000001000ULL
+#define	TYPE_Cd		 0x0000000000002000ULL
+#define	TYPE_Va		 0x0000000000004000ULL
+#define	TYPE_Ft		 0x0000000000008000ULL
+#define	TYPE_Tn		 0x0000000000010000ULL
+#define	TYPE_Er		 0x0000000000020000ULL
+#define	TYPE_Ev		 0x0000000000040000ULL
+#define	TYPE_Sy		 0x0000000000080000ULL
+#define	TYPE_Sh		 0x0000000000100000ULL
+#define	TYPE_In		 0x0000000000200000ULL
+#define	TYPE_Ss		 0x0000000000400000ULL
+#define	TYPE_Ox		 0x0000000000800000ULL
+#define	TYPE_An		 0x0000000001000000ULL
+#define	TYPE_Mt		 0x0000000002000000ULL
+#define	TYPE_St		 0x0000000004000000ULL
+#define	TYPE_Bx		 0x0000000008000000ULL
+#define	TYPE_At		 0x0000000010000000ULL
+#define	TYPE_Nx		 0x0000000020000000ULL
+#define	TYPE_Fx		 0x0000000040000000ULL
+#define	TYPE_Lk		 0x0000000080000000ULL
+#define	TYPE_Ms		 0x0000000100000000ULL
+#define	TYPE_Bsx	 0x0000000200000000ULL
+#define	TYPE_Dx		 0x0000000400000000ULL
+#define	TYPE_Rs		 0x0000000800000000ULL
+#define	TYPE_Vt		 0x0000001000000000ULL
+#define	TYPE_Lb		 0x0000002000000000ULL
+#define	TYPE_Nm		 0x0000004000000000ULL
+#define	TYPE_Nd		 0x0000008000000000ULL
+
+#define	NAME_SYN	 0x0000004000000001ULL
+#define	NAME_FIRST	 0x0000004000000004ULL
+#define	NAME_TITLE	 0x0000004000000006ULL
+#define	NAME_HEAD	 0x0000004000000008ULL
+#define	NAME_FILE	 0x0000004000000010ULL
+#define	NAME_MASK	 0x000000000000001fULL
+
+#define	FORM_CAT	 0  /* manual page is preformatted */
+#define	FORM_SRC	 1  /* format is mdoc(7) or man(7) */
+#define	FORM_NONE	 4  /* format is unknown */
+
+enum	argmode {
+	ARG_FILE = 0,
+	ARG_NAME,
+	ARG_WORD,
+	ARG_EXPR
+};
+
+struct	manpage {
+	char		*file; /* to be prefixed by manpath */
+	char		*names; /* a list of names with sections */
+	char		*output; /* user-defined additional output */
+	size_t		 ipath; /* number of the manpath */
+	uint64_t	 bits; /* name type mask */
+	int		 sec; /* section number, 10 means invalid */
+	int		 form; /* 0 == catpage */
+};
+
+struct	mansearch {
+	const char	*arch; /* architecture/NULL */
+	const char	*sec; /* mansection/NULL */
+	const char	*outkey; /* show content of this macro */
+	enum argmode	 argmode; /* interpretation of arguments */
+	int		 firstmatch; /* first matching database only */
+};
+
+
+struct	manpaths;
+
+int	mansearch_setup(int);
+int	mansearch(const struct mansearch *cfg, /* options */
+		const struct manpaths *paths, /* manpaths */
+		int argc, /* size of argv */
+		char *argv[],  /* search terms */
+		struct manpage **res, /* results */
+		size_t *ressz); /* results returned */
+void	mansearch_free(struct manpage *, size_t);
+@
+
+
+1.23
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.22 2014/12/01 04:05:32 schwarze Exp $ */
+a97 1
+__BEGIN_DECLS
+a108 2
+
+__END_DECLS
+@
+
+
+1.22
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.21 2014/11/27 01:58:21 schwarze Exp $ */
+d100 2
+@
+
+
+1.21
+log
+@Make makewhatis(8) understand .so links to .gz pages.
+Drop the FORM_GZ annotation in the mpages table; it is conceptually wrong
+because it ought to be in the mlinks table: An uncompressed .so link file
+can point to a compressed manual page file and vice versa.
+Besides, it is no longer needed because mparse_open() handles it all.
+Sprinkle some KNF while here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.20 2014/11/18 01:15:21 schwarze Exp $ */
+a17 2
+#ifndef MANSEARCH_H
+#define MANSEARCH_H
+a109 2
+
+#endif /* MANSEARCH_H */
+@
+
+
+1.20
+log
+@In man(1) mode, prefer file name matches over .Dt name matches over
+first .Nm entries over other NAME .Nm entries over SYNOPSIS .Nm entries.
+For example, this makes sure "man ypbind" does not return yp(8).
+Re-run "makewhatis" to profit from this change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.19 2014/11/11 19:04:55 schwarze Exp $ */
+a72 1
+#define	FORM_GZ		 2  /* compressed with gzip(1) */
+@
+
+
+1.19
+log
+@In man(1) mode without -a, stop searching after the first manual tree
+that contained at least one match in order to not prefer mdoc(1) from
+ports over mdoc(7).  As a bonus, this results in a speedup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.18 2014/09/03 18:09:14 schwarze Exp $ */
+d65 4
+a68 4
+#define	NAME_FILE	 0x0000004000000002ULL
+#define	NAME_TITLE	 0x000000400000000cULL
+#define	NAME_FIRST	 0x0000004000000008ULL
+#define	NAME_HEAD	 0x0000004000000010ULL
+d88 1
+@
+
+
+1.18
+log
+@If a manual page is installed gzip(1)ed, let makewhatis(8) take
+note in mandoc.db(5), such that man(1) -w and apropos(1) -w can
+report the correct filename.
+This is a prerequisite for letting apropos -a and man support
+gzip'ed manuals in the future, which doesn't work yet.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.17 2014/09/01 22:45:53 schwarze Exp $ */
+d97 1
+@
+
+
+1.17
+log
+@In man(1) mode, change to the right directory before starting the parser,
+just like traditional man(1) does, such that .so links have a chance to
+work.  After this point, we don't need the current directory for anything
+else before exit, so we don't need to worry about getting back and we can
+safely ignore failure.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.16 2014/08/17 03:24:47 schwarze Exp $ */
+d71 5
+@
+
+
+1.16
+log
+@Fully integrate apropos(1) into mandoc(1).
+Switch the argmode on the progname, including man(1).
+Provide -f and -k options to switch the argmode.
+Store the argmode inside struct search, generalizing the flags.
+Derive the deftype from the argmode when needed instead of storing it.
+Store the outkey inside struct search instead of passing it alone.
+While here, get rid of the trailing blanks in Makefile.depend.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.15 2014/07/24 20:30:45 schwarze Exp $ */
+d82 1
+@
+
+
+1.15
+log
+@Sort result pages first by section number, then by name.
+By moving the sort from cgi.c to mansearch.c, we get two advantages:
+Easier access to the data needed for sorting, in particular the section
+number, and the apropos(1) command line utility profits as well.
+
+Feature requested by deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.14 2014/07/12 14:00:25 schwarze Exp $ */
+d71 6
+a76 1
+__BEGIN_DECLS
+d89 2
+a90 4
+	uint64_t	 deftype; /* type if no key  */
+	int		 flags;
+#define	MANSEARCH_WHATIS 0x01 /* whatis(1) mode: whole words, no keys */
+#define	MANSEARCH_MAN    0x02 /* man(1) mode: string equality, no keys */
+d93 2
+a99 1
+		const char *outkey, /* name of additional output key */
+d102 1
+d106 1
+a106 1
+#endif /*!MANSEARCH_H*/
+@
+
+
+1.14
+log
+@Fix whatis(1) to correctly match words instead of any substrings.
+While here, also provide an internal mode (MANSEARCH_MAN) to match
+complete names, to be used by man.cgi(8).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.13 2014/04/11 15:46:52 schwarze Exp $ */
+d77 1
+@
+
+
+1.13
+log
+@Further apropos(1) speed optimization was trickier than anticipated.
+Contrary to what i initially thought, almost all time is now spent
+inside sqlite3(3) routines, and i found no easy way calling less of them.
+However, sqlite(3) spends substantial time in malloc(3), and even more
+(twice that) in its immediate malloc wrapper, sqlite3MemMalloc(),
+keeping track of all individual malloc chunk sizes.  Typically about
+90% of the malloced memory is used for purposes of the pagecache.
+
+By providing an mmap(3) MAP_ANON SQLITE_CONFIG_PAGECACHE, execution
+time decreases by 20-25% for simple (Nd and/or Nm) queries, 10-20% for
+non-NAME queries, and even apropos(1) resident memory size as reported
+by top(1) decreases by 20% for simple and by 60% for non-NAME queries.
+The new function, mansearch_setup(), spends no measurable time.
+
+The pagesize chosen is optimal:
+* Substantially smaller pages yield no gain at all.
+* Larger pages provide no additional benefit and just waste memory.
+
+The chosen number of pages in the cache is a compromise:
+* For simple queries, a handful of pages would suffice to get the full
+speed effect, at an apropos(1) resident memory size of about 2.0 MB.
+* For non-NAME queries, a large pagecache with 2k pages (2.5 MB) might
+gain a few more percent in speed, but at the expense of doubling the
+apropos(1) resident memory size for *all* queries.
+* The chosen number of 256 pages (330 kB) allows nearly full speed gain
+for all queries at the price of a 15% resident memory size increase.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.12 2014/04/10 02:46:21 schwarze Exp $ */
+d85 2
+a86 1
+#define	MANSEARCH_WHATIS 0x01 /* whatis mode: equality, no key */
+@
+
+
+1.12
+log
+@Next speed optimization step for the new apropos(1).
+Split manual names out of the common "keys" table into their
+own "names" table.  This reduces standard apropos(1) search
+times (i.e. searching for names and descriptions only) by
+typically about 70% for the full /usr/share/man database.
+(Yes, that multiplies with the previous optimization step,
+so both together have reduced search times by a factor of
+more than six.  I'm not done yet, expect more to come.)
+
+Even with the minimal databases built with makewhatis(8) -Q,
+this step still reduces search times by 15-20%.  For both cases,
+database sizes and build times hardly change (+/-2%).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.11 2014/04/09 21:50:08 schwarze Exp $ */
+d88 1
+@
+
+
+1.11
+log
+@After careful gprof(1)ing of the new apropos(1), move the descriptions
+back from the keys table to the mpages table:  I found a good way
+to still use them in searches, without complication of the code.
+
+On my notebook, this reduces typical apropos(1) search times by about 40%,
+it reduces /usr/share/man database size by 6% in makewhatis(8) -Q mode
+and by 2% in standard mode (less overhead storing pointers to mpages),
+and it doesn't measurably change database build times (may even be
+going down by a percent or so because less data is being copied
+around in ohashes).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.10 2014/04/04 15:55:19 schwarze Exp $ */
+d23 47
+a69 41
+#define	TYPE_NAME	 0x0000000000000001ULL
+#define	TYPE_Nm		 0x0000000000000002ULL
+#define	TYPE_arch	 0x0000000000000004ULL
+#define	TYPE_sec	 0x0000000000000008ULL
+#define	TYPE_Xr		 0x0000000000000010ULL
+#define	TYPE_Ar		 0x0000000000000020ULL
+#define	TYPE_Fa		 0x0000000000000040ULL
+#define	TYPE_Fl		 0x0000000000000080ULL
+#define	TYPE_Dv		 0x0000000000000100ULL
+#define	TYPE_Fn		 0x0000000000000200ULL
+#define	TYPE_Ic		 0x0000000000000400ULL
+#define	TYPE_Pa		 0x0000000000000800ULL
+#define	TYPE_Cm		 0x0000000000001000ULL
+#define	TYPE_Li		 0x0000000000002000ULL
+#define	TYPE_Em		 0x0000000000004000ULL
+#define	TYPE_Cd		 0x0000000000008000ULL
+#define	TYPE_Va		 0x0000000000010000ULL
+#define	TYPE_Ft		 0x0000000000020000ULL
+#define	TYPE_Tn		 0x0000000000040000ULL
+#define	TYPE_Er		 0x0000000000080000ULL
+#define	TYPE_Ev		 0x0000000000100000ULL
+#define	TYPE_Sy		 0x0000000000200000ULL
+#define	TYPE_Sh		 0x0000000000400000ULL
+#define	TYPE_In		 0x0000000000800000ULL
+#define	TYPE_Ss		 0x0000000001000000ULL
+#define	TYPE_Ox		 0x0000000002000000ULL
+#define	TYPE_An		 0x0000000004000000ULL
+#define	TYPE_Mt		 0x0000000008000000ULL
+#define	TYPE_St		 0x0000000010000000ULL
+#define	TYPE_Bx		 0x0000000020000000ULL
+#define	TYPE_At		 0x0000000040000000ULL
+#define	TYPE_Nx		 0x0000000080000000ULL
+#define	TYPE_Fx		 0x0000000100000000ULL
+#define	TYPE_Lk		 0x0000000200000000ULL
+#define	TYPE_Ms		 0x0000000400000000ULL
+#define	TYPE_Bsx	 0x0000000800000000ULL
+#define	TYPE_Dx		 0x0000001000000000ULL
+#define	TYPE_Rs		 0x0000002000000000ULL
+#define	TYPE_Vt		 0x0000004000000000ULL
+#define	TYPE_Lb		 0x0000008000000000ULL
+#define	TYPE_Nd		 0x0000010000000000ULL
+@
+
+
+1.10
+log
+@Remember which names are in the NAME section.
+This helps to find missing MLINKS.
+Database build times do not change and database growth is minimal
+(1.2% with -Q, 0.7% without -Q in /usr/share/man),
+so making this optional would be pointless.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.9 2014/01/18 08:23:55 schwarze Exp $ */
+d25 39
+a63 39
+#define	TYPE_Nd		 0x0000000000000004ULL
+#define	TYPE_arch	 0x0000000000000008ULL
+#define	TYPE_sec	 0x0000000000000010ULL
+#define	TYPE_Xr		 0x0000000000000020ULL
+#define	TYPE_Ar		 0x0000000000000040ULL
+#define	TYPE_Fa		 0x0000000000000080ULL
+#define	TYPE_Fl		 0x0000000000000100ULL
+#define	TYPE_Dv		 0x0000000000000200ULL
+#define	TYPE_Fn		 0x0000000000000400ULL
+#define	TYPE_Ic		 0x0000000000000800ULL
+#define	TYPE_Pa		 0x0000000000001000ULL
+#define	TYPE_Cm		 0x0000000000002000ULL
+#define	TYPE_Li		 0x0000000000004000ULL
+#define	TYPE_Em		 0x0000000000008000ULL
+#define	TYPE_Cd		 0x0000000000010000ULL
+#define	TYPE_Va		 0x0000000000020000ULL
+#define	TYPE_Ft		 0x0000000000040000ULL
+#define	TYPE_Tn		 0x0000000000080000ULL
+#define	TYPE_Er		 0x0000000000100000ULL
+#define	TYPE_Ev		 0x0000000000200000ULL
+#define	TYPE_Sy		 0x0000000000400000ULL
+#define	TYPE_Sh		 0x0000000000800000ULL
+#define	TYPE_In		 0x0000000001000000ULL
+#define	TYPE_Ss		 0x0000000002000000ULL
+#define	TYPE_Ox		 0x0000000004000000ULL
+#define	TYPE_An		 0x0000000008000000ULL
+#define	TYPE_Mt		 0x0000000010000000ULL
+#define	TYPE_St		 0x0000000020000000ULL
+#define	TYPE_Bx		 0x0000000040000000ULL
+#define	TYPE_At		 0x0000000080000000ULL
+#define	TYPE_Nx		 0x0000000100000000ULL
+#define	TYPE_Fx		 0x0000000200000000ULL
+#define	TYPE_Lk		 0x0000000400000000ULL
+#define	TYPE_Ms		 0x0000000800000000ULL
+#define	TYPE_Bsx	 0x0000001000000000ULL
+#define	TYPE_Dx		 0x0000002000000000ULL
+#define	TYPE_Rs		 0x0000004000000000ULL
+#define	TYPE_Vt		 0x0000008000000000ULL
+#define	TYPE_Lb		 0x0000010000000000ULL
+@
+
+
+1.9
+log
+@Sort the macro keys by their real-world frequency to reduce the average
+mask size.  No functional change.
+
+This shrinks the standard /usr/share/man database by 7%, now at 10.3x
+the size of whatis.db, and with -Q even by 11%, now at 3.0x of whatis.db.
+Now i'm out of ideas to easily shrink the size of the database.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.8 2014/01/06 03:02:46 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d23 41
+a63 40
+#define	TYPE_Nm		 0x0000000000000001ULL
+#define	TYPE_Nd		 0x0000000000000002ULL
+#define	TYPE_arch	 0x0000000000000004ULL
+#define	TYPE_sec	 0x0000000000000008ULL
+#define	TYPE_Xr		 0x0000000000000010ULL
+#define	TYPE_Ar		 0x0000000000000020ULL
+#define	TYPE_Fa		 0x0000000000000040ULL
+#define	TYPE_Fl		 0x0000000000000080ULL
+#define	TYPE_Dv		 0x0000000000000100ULL
+#define	TYPE_Fn		 0x0000000000000200ULL
+#define	TYPE_Ic		 0x0000000000000400ULL
+#define	TYPE_Pa		 0x0000000000000800ULL
+#define	TYPE_Cm		 0x0000000000001000ULL
+#define	TYPE_Li		 0x0000000000002000ULL
+#define	TYPE_Em		 0x0000000000004000ULL
+#define	TYPE_Cd		 0x0000000000008000ULL
+#define	TYPE_Va		 0x0000000000010000ULL
+#define	TYPE_Ft		 0x0000000000020000ULL
+#define	TYPE_Tn		 0x0000000000040000ULL
+#define	TYPE_Er		 0x0000000000080000ULL
+#define	TYPE_Ev		 0x0000000000100000ULL
+#define	TYPE_Sy		 0x0000000000200000ULL
+#define	TYPE_Sh		 0x0000000000400000ULL
+#define	TYPE_In		 0x0000000000800000ULL
+#define	TYPE_Ss		 0x0000000001000000ULL
+#define	TYPE_Ox		 0x0000000002000000ULL
+#define	TYPE_An		 0x0000000004000000ULL
+#define	TYPE_Mt		 0x0000000008000000ULL
+#define	TYPE_St		 0x0000000010000000ULL
+#define	TYPE_Bx          0x0000000020000000ULL
+#define	TYPE_At		 0x0000000040000000ULL
+#define	TYPE_Nx		 0x0000000080000000ULL
+#define	TYPE_Fx		 0x0000000100000000ULL
+#define	TYPE_Lk		 0x0000000200000000ULL
+#define	TYPE_Ms		 0x0000000400000000ULL
+#define	TYPE_Bsx	 0x0000000800000000ULL
+#define	TYPE_Dx		 0x0000001000000000ULL
+#define	TYPE_Rs		 0x0000002000000000ULL
+#define	TYPE_Vt		 0x0000004000000000ULL
+#define	TYPE_Lb		 0x0000008000000000ULL
+@
+
+
+1.8
+log
+@Drop Nd from the mpages table, it is still in the keys table.
+This shrinks the database in standard mode by 3%, in -Q mode by 9%,
+without loss of functionality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.7 2014/01/05 00:29:54 schwarze Exp $ */
+d23 40
+a62 40
+#define	TYPE_An		 0x0000000000000001ULL
+#define	TYPE_Ar		 0x0000000000000002ULL
+#define	TYPE_At		 0x0000000000000004ULL
+#define	TYPE_Bsx	 0x0000000000000008ULL
+#define	TYPE_Bx          0x0000000000000010ULL
+#define	TYPE_Cd		 0x0000000000000020ULL
+#define	TYPE_Cm		 0x0000000000000040ULL
+#define	TYPE_Dv		 0x0000000000000080ULL
+#define	TYPE_Dx		 0x0000000000000100ULL
+#define	TYPE_Em		 0x0000000000000200ULL
+#define	TYPE_Er		 0x0000000000000400ULL
+#define	TYPE_Ev		 0x0000000000000800ULL
+#define	TYPE_Fa		 0x0000000000001000ULL
+#define	TYPE_Fl		 0x0000000000002000ULL
+#define	TYPE_Fn		 0x0000000000004000ULL
+#define	TYPE_Ft		 0x0000000000008000ULL
+#define	TYPE_Fx		 0x0000000000010000ULL
+#define	TYPE_Ic		 0x0000000000020000ULL
+#define	TYPE_In		 0x0000000000040000ULL
+#define	TYPE_Lb		 0x0000000000080000ULL
+#define	TYPE_Li		 0x0000000000100000ULL
+#define	TYPE_Lk		 0x0000000000200000ULL
+#define	TYPE_Ms		 0x0000000000400000ULL
+#define	TYPE_Mt		 0x0000000000800000ULL
+#define	TYPE_Nd		 0x0000000001000000ULL
+#define	TYPE_Nm		 0x0000000002000000ULL
+#define	TYPE_Nx		 0x0000000004000000ULL
+#define	TYPE_Ox		 0x0000000008000000ULL
+#define	TYPE_Pa		 0x0000000010000000ULL
+#define	TYPE_Rs		 0x0000000020000000ULL
+#define	TYPE_Sh		 0x0000000040000000ULL
+#define	TYPE_Ss		 0x0000000080000000ULL
+#define	TYPE_St		 0x0000000100000000ULL
+#define	TYPE_Sy		 0x0000000200000000ULL
+#define	TYPE_Tn		 0x0000000400000000ULL
+#define	TYPE_Va		 0x0000000800000000ULL
+#define	TYPE_Vt		 0x0000001000000000ULL
+#define	TYPE_Xr		 0x0000002000000000ULL
+#define	TYPE_sec	 0x0000004000000000ULL
+#define	TYPE_arch	 0x0000008000000000ULL
+@
+
+
+1.7
+log
+@Put section and architecture info into the keys table,
+in preparation for removing them from the mpages table,
+aiming for cleaner and more uniform interfaces.
+Database growth is below 4%, part of which will be reclaimed.
+
+As a bonus, this allows searches like:
+./obj/apropos An=kettenis -a arch=ppc
+./obj/apropos An=kettenis -a sec~[^4]
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.6 2013/12/31 03:41:14 schwarze Exp $ */
+a68 1
+	char		*desc; /* description of manpage */
+@
+
+
+1.6
+log
+@Experimental feature to let apropos(1) show different keys than .Nd.
+This really takes us beyond what grep -R /usr/*/man/ can do
+because now you can search for pages by *one* criterion and then
+display the contents of *another* macro from those pages, like in
+$ apropos -O Ox Fa~wchar
+to get an impression how long wide character handling is available.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.5 2013/12/27 18:51:25 schwarze Exp $ */
+d61 2
+@
+
+
+1.5
+log
+@Change the mansearch() interface to use the mlinks table in the database
+and return a list of names with sections, used by apropos(1) for display.
+While here, improve uniformity of the interface by allocating the file
+name dynamically, just like the names list and the description.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.4 2013/06/06 14:27:02 schwarze Exp $ */
+d4 1
+d68 1
+d84 1
+@
+
+
+1.4
+log
+@No point in inventing yet another file name for the database.
+We are not going back to Berkeley DB and don't care about
+overwriting any obsolete files that may be lying around.
+So, go back from "mandocdb.db" to "mandoc.db".
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.3 2013/06/05 02:00:26 schwarze Exp $ */
+d64 2
+a65 1
+	char		 file[PATH_MAX]; /* prefixed by manpath */
+@
+
+
+1.3
+log
+@Some places used PATH_MAX from <limits.h>, some MAXPATHLEN from <sys/param.h>.
+Consistently use the PATH_MAX since it is specified by POSIX,
+while MAXPATHLEN is not.
+In preparation for using this at a few more places.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.2 2012/06/09 14:11:16 kristaps Exp $ */
+d20 1
+a20 1
+#define	MANDOC_DB	 "mandocdb.db"
+@
+
+
+1.2
+log
+@Merge whatis.1 into apropos.1 (and remove), add whatis bits to apropos
+(via mansearch), and merge mandocdb.h into mansearch.h (and remove).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch.h,v 1.1 2012/06/08 10:36:23 kristaps Exp $ */
+d64 1
+a64 1
+	char		 file[MAXPATHLEN]; /* prefixed by manpath */
+@
+
+
+1.1
+log
+@Add a new mansearch.h interface, which replaces apropos_db.c
+This is a much more minimal interface that stuffs all operations into
+a single function.
+It uses sqlite3 and ohash.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.h,v 1.5 2011/12/13 20:56:46 kristaps Exp $ */
+d20 43
+d69 7
+a75 1
+__BEGIN_DECLS
+d77 2
+a78 3
+int	mansearch(const struct manpaths *paths, /* manpaths */
+		const char *arch, /* architecture */
+		const char *sec,  /* manual section */
+@

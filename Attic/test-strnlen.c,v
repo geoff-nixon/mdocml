@@ -1,0 +1,64 @@
+head	1.2;
+access;
+symbols
+	VERSION_1_12:1.1.0.2;
+locks; strict;
+comment	@ * @;
+
+
+1.2
+date	2014.08.04.23.44.29;	author schwarze;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2014.01.04.13.40.01;	author schwarze;	state Exp;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2014.08.04.23.45.37;	author schwarze;	state dead;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@remove strnlen(3) compat, we no longer use it
+@
+text
+@@
+
+
+1.1
+log
+@Even though strnlen(3) is required by POSIX 2008,
+Matthias Scheler reports than Solaris 10 lacks it.
+While here, sort the declarations in config.h
+and move the headers to the top.
+@
+text
+@a0 8
+#include <string.h>
+
+int
+main(void)
+{
+	const char s[1] = { 'a' };
+	return(1 != strnlen(s, 1));
+}
+@
+
+
+1.1.2.1
+log
+@remove strnlen(3) compat, we no longer use it
+@
+text
+@d1 8
+@

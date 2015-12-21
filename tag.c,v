@@ -1,0 +1,601 @@
+head	1.11;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.11
+date	2015.11.20.21.59.54;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.10.13.15.53.05;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.10.11.22.00.52;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.08.29.15.28.13;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.07.28.18.38.55;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.07.25.14.28.59;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.07.25.14.02.06;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.07.21.03.26.22;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.07.18.03.41.37;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.07.17.22.38.29;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.11
+log
+@Fix multiple issues regarding process group and signal mask handling
+found by tb@@ and millert@@; parts of the code, in particular in tag.c,
+by millert@@; OK millert@@.
+@
+text
+@/*      $Id: tag.c,v 1.10 2015/10/13 15:53:05 schwarze Exp $    */
+/*
+ * Copyright (c) 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <signal.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+#include "mandoc_aux.h"
+#include "mandoc_ohash.h"
+#include "tag.h"
+
+struct tag_entry {
+	size_t	 line;
+	int	 prio;
+	char	 s[];
+};
+
+static	void	 tag_signal(int);
+
+static struct ohash	 tag_data;
+static struct tag_files	 tag_files;
+
+
+/*
+ * Prepare for using a pager.
+ * Not all pagers are capable of using a tag file,
+ * but for simplicity, create it anyway.
+ */
+struct tag_files *
+tag_init(void)
+{
+	struct sigaction	 sa;
+	int			 ofd;
+
+	ofd = -1;
+	tag_files.tfd = -1;
+	tag_files.tcpgid = -1;
+
+	/* Save the original standard output for use by the pager. */
+
+	if ((tag_files.ofd = dup(STDOUT_FILENO)) == -1)
+		goto fail;
+
+	/* Create both temporary output files. */
+
+	(void)strlcpy(tag_files.ofn, "/tmp/man.XXXXXXXXXX",
+	    sizeof(tag_files.ofn));
+	(void)strlcpy(tag_files.tfn, "/tmp/man.XXXXXXXXXX",
+	    sizeof(tag_files.tfn));
+	memset(&sa, 0, sizeof(sa));
+	sigfillset(&sa.sa_mask);
+	sa.sa_handler = tag_signal;
+	sigaction(SIGHUP, &sa, NULL);
+	sigaction(SIGINT, &sa, NULL);
+	sigaction(SIGTERM, &sa, NULL);
+	if ((ofd = mkstemp(tag_files.ofn)) == -1)
+		goto fail;
+	if ((tag_files.tfd = mkstemp(tag_files.tfn)) == -1)
+		goto fail;
+	if (dup2(ofd, STDOUT_FILENO) == -1)
+		goto fail;
+	close(ofd);
+
+	/*
+	 * Set up the ohash table to collect output line numbers
+	 * where various marked-up terms are documented.
+	 */
+
+	mandoc_ohash_init(&tag_data, 4, offsetof(struct tag_entry, s));
+	return &tag_files;
+
+fail:
+	tag_unlink();
+	if (ofd != -1)
+		close(ofd);
+	if (tag_files.ofd != -1)
+		close(tag_files.ofd);
+	if (tag_files.tfd != -1)
+		close(tag_files.tfd);
+	*tag_files.ofn = '\0';
+	*tag_files.tfn = '\0';
+	tag_files.ofd = -1;
+	tag_files.tfd = -1;
+	return NULL;
+}
+
+/*
+ * Set the line number where a term is defined,
+ * unless it is already defined at a higher priority.
+ */
+void
+tag_put(const char *s, int prio, size_t line)
+{
+	struct tag_entry	*entry;
+	size_t			 len;
+	unsigned int		 slot;
+
+	if (tag_files.tfd <= 0 || strchr(s, ' ') != NULL)
+		return;
+	slot = ohash_qlookup(&tag_data, s);
+	entry = ohash_find(&tag_data, slot);
+	if (entry == NULL) {
+		len = strlen(s) + 1;
+		entry = mandoc_malloc(sizeof(*entry) + len);
+		memcpy(entry->s, s, len);
+		ohash_insert(&tag_data, slot, entry);
+	} else if (entry->prio <= prio)
+		return;
+	entry->line = line;
+	entry->prio = prio;
+}
+
+/*
+ * Write out the tags file using the previously collected
+ * information and clear the ohash table while going along.
+ */
+void
+tag_write(void)
+{
+	FILE			*stream;
+	struct tag_entry	*entry;
+	unsigned int		 slot;
+
+	if (tag_files.tfd <= 0)
+		return;
+	stream = fdopen(tag_files.tfd, "w");
+	entry = ohash_first(&tag_data, &slot);
+	while (entry != NULL) {
+		if (stream != NULL)
+			fprintf(stream, "%s %s %zu\n",
+			    entry->s, tag_files.ofn, entry->line);
+		free(entry);
+		entry = ohash_next(&tag_data, &slot);
+	}
+	ohash_delete(&tag_data);
+	if (stream != NULL)
+		fclose(stream);
+}
+
+void
+tag_unlink(void)
+{
+	pid_t	 tc_pgid;
+
+	if (tag_files.tcpgid != -1) {
+		tc_pgid = tcgetpgrp(STDIN_FILENO);
+		if (tc_pgid == tag_files.pager_pid ||
+		    tc_pgid == getpgid(0) ||
+		    getpgid(tc_pgid) == -1)
+			(void)tcsetpgrp(STDIN_FILENO, tag_files.tcpgid);
+	}
+	if (*tag_files.ofn != '\0')
+		unlink(tag_files.ofn);
+	if (*tag_files.tfn != '\0')
+		unlink(tag_files.tfn);
+}
+
+static void
+tag_signal(int signum)
+{
+	struct sigaction	 sa;
+
+	tag_unlink();
+	memset(&sa, 0, sizeof(sa));
+	sigemptyset(&sa.sa_mask);
+	sa.sa_handler = SIG_DFL;
+	sigaction(signum, &sa, NULL);
+	kill(getpid(), signum);
+	/* NOTREACHED */
+	_exit(1);
+}
+@
+
+
+1.10
+log
+@Reduce the amount of code by moving the three copies of the ohash
+callback functions into one common place, preparing for the use of
+ohash for some additional purposes.  No functional change.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.9 2015/10/11 22:00:52 schwarze Exp $    */
+d53 1
+d58 1
+d71 6
+a76 3
+	signal(SIGHUP, tag_signal);
+	signal(SIGINT, tag_signal);
+	signal(SIGTERM, tag_signal);
+d164 1
+d166 7
+d182 1
+d185 4
+a188 1
+	signal(signum, SIG_DFL);
+@
+
+
+1.9
+log
+@Drop tags containing a blank character:
+They don't work, they break other tags in weird ways, and even
+if they could be made to work, they would be mostly useless.
+Issue reported by naddy@@, thanks.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.8 2015/10/06 18:32:20 schwarze Exp $    */
+a28 6
+#if HAVE_OHASH
+#include <ohash.h>
+#else
+#include "compat_ohash.h"
+#endif
+
+d30 1
+a39 3
+static	void	*tag_alloc(size_t, void *);
+static	void	 tag_free(void *, void *);
+static	void	*tag_calloc(size_t, size_t, void *);
+a52 1
+	struct ohash_info	 tag_info;
+d85 1
+a85 6
+	tag_info.alloc = tag_alloc;
+	tag_info.calloc = tag_calloc;
+	tag_info.free = tag_free;
+	tag_info.key_offset = offsetof(struct tag_entry, s);
+	tag_info.data = NULL;
+	ohash_init(&tag_data, 4, &tag_info);
+a175 24
+
+/*
+ * Memory management callback functions for ohash.
+ */
+static void *
+tag_alloc(size_t sz, void *arg)
+{
+
+	return mandoc_malloc(sz);
+}
+
+static void *
+tag_calloc(size_t nmemb, size_t sz, void *arg)
+{
+
+	return mandoc_calloc(nmemb, sz);
+}
+
+static void
+tag_free(void *p, void *arg)
+{
+
+	free(p);
+}
+@
+
+
+1.8
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.7 2015/08/29 15:28:13 schwarze Exp $    */
+d128 1
+a128 1
+	if (tag_files.tfd <= 0)
+@
+
+
+1.7
+log
+@Including <ohash.h> requires including <stdint.h> before,
+and "config.h" was missing as well.
+Patch from Svyatoslav Mishyn <juef and openmailbox dot org>, Crux Linux.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.6 2015/07/28 18:38:55 schwarze Exp $    */
+d100 1
+a100 1
+	return(&tag_files);
+d114 1
+a114 1
+	return(NULL);
+d198 1
+a198 1
+	return(mandoc_malloc(sz));
+d205 1
+a205 1
+	return(mandoc_calloc(nmemb, sz));
+@
+
+
+1.6
+log
+@Remove the hack of scrolling forward and backward with +G1G that
+many (jmc@@, millert@@, espie@@, deraadt@@) considered revolting.
+Instead, when using a pager, since we are using a temporary file
+for tags anyway, use another temporary file for the formatted
+page(s), as suggested by millert@@ and similar to what the traditional
+BSD man(1) did, except that we use only one single temporary output
+file rather than one for each formatted manual page, such that
+searching (both with / and :t) works across all the displayed files.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.5 2015/07/25 14:28:59 schwarze Exp $    */
+d17 2
+d23 1
+@
+
+
+1.5
+log
+@Simplify and make tag_put() more efficient by integrating tag_get()
+into it and by only handling NUL-terminated strings.
+Minus 25 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.4 2015/07/25 14:02:06 schwarze Exp $    */
+d47 1
+a47 2
+static char		*tag_fn = NULL;
+static int		 tag_fd = -1;
+d51 3
+a53 3
+ * Set up the ohash table to collect output line numbers
+ * where various marked-up terms are documented and create
+ * the temporary tags file, saving the name for the pager.
+d55 1
+a55 1
+char *
+d59 1
+d61 14
+a74 1
+	tag_fn = mandoc_strdup("/tmp/man.XXXXXXXXXX");
+d78 12
+a89 5
+	if ((tag_fd = mkstemp(tag_fn)) == -1) {
+		free(tag_fn);
+		tag_fn = NULL;
+		return(NULL);
+	}
+d97 15
+a111 1
+	return(tag_fn);
+d125 1
+a125 1
+	if (tag_fd == -1)
+d151 1
+a151 1
+	if (tag_fd == -1)
+d153 1
+a153 1
+	stream = fdopen(tag_fd, "w");
+d157 2
+a158 1
+			fprintf(stream, "%s - %zu\n", entry->s, entry->line);
+d171 4
+a174 2
+	if (tag_fn != NULL)
+		unlink(tag_fn);
+@
+
+
+1.4
+log
+@basic support for tag priorities; written at YYC
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.3 2015/07/21 03:26:22 schwarze Exp $    */
+d81 2
+a82 22
+ * Return the line number where a term is defined,
+ * or 0 if the term is unknown.
+ */
+size_t
+tag_get(const char *s, size_t len, int prio)
+{
+	struct tag_entry	*entry;
+	const char		*end;
+	unsigned int		 slot;
+
+	if (tag_fd == -1)
+		return(0);
+	if (len == 0)
+		len = strlen(s);
+	end = s + len;
+	slot = ohash_qlookupi(&tag_data, s, &end);
+	entry = ohash_find(&tag_data, slot);
+	return((entry == NULL || prio < entry->prio) ? 0 : entry->line);
+}
+
+/*
+ * Set the line number where a term is defined.
+d85 1
+a85 1
+tag_put(const char *s, size_t len, int prio, size_t line)
+d88 1
+a88 1
+	const char		*end;
+d93 1
+a93 4
+	if (len == 0)
+		len = strlen(s);
+	end = s + len;
+	slot = ohash_qlookupi(&tag_data, s, &end);
+d96 2
+a97 1
+		entry = mandoc_malloc(sizeof(*entry) + len + 1);
+a98 1
+		entry->s[len] = '\0';
+d100 2
+a101 1
+	}
+@
+
+
+1.3
+log
+@When creation of the temporary tags file fails, call the pager
+without the -T option, because otherwise the pager won't even start.
+Fixing a bug reported by jca@@.
+
+While here, shorten the code by two lines
+and delete one internal interface function.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.2 2015/07/18 03:41:37 schwarze Exp $    */
+d37 1
+d85 1
+a85 1
+tag_get(const char *s, size_t len)
+d98 1
+a98 1
+	return(entry == NULL ? 0 : entry->line);
+d105 1
+a105 1
+tag_put(const char *s, size_t len, size_t line)
+d125 1
+@
+
+
+1.2
+log
+@clean up the temporary file when the process dies from a signal
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.c,v 1.1 2015/07/17 22:38:29 schwarze Exp $    */
+d55 1
+a55 1
+void
+d67 1
+a67 1
+		return;
+a75 6
+}
+
+char *
+tag_filename(void)
+{
+
+@
+
+
+1.1
+log
+@Initial, still somewhat experimental implementation to leverage
+less(1) -T and :t ctags(1)-like functionality to jump to the
+definitions of various terms inside manual pages.
+To be polished in the tree, so bear with me and report issues.
+
+Technically, if less(1) is used as a pager, information is collected
+by the mdoc(7) terminal formatter, first stored using the ohash
+library, then ultimately written to a temporary file which is passed
+to less via -T.  No change intended for other output formatters or
+when running without a pager.
+
+Based on an idea from Kristaps using feedback from many, in particular
+phessler@@ nicm@@ millert@@ halex@@ doug@@ kspillner@@ deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*      $Id$    */
+d19 1
+d40 1
+d61 3
+d166 11
+@

@@ -1,0 +1,109 @@
+head	1.4;
+access;
+symbols
+	VERSION_1_13_3:1.3
+	VERSION_1_13_2:1.3
+	VERSION_1_13_1:1.3;
+locks; strict;
+comment	@ * @;
+
+
+1.4
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.06.20.02.55.49;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2012.06.09.11.02.55;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2012.06.09.11.00.13;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@modernize style: "return" is not a function
+@
+text
+@#include <stdint.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <ohash.h>
+
+void *xmalloc(size_t sz, void *arg) { return calloc(1,sz); }
+void *xcalloc(size_t nmemb, size_t sz, void *arg) { return calloc(nmemb,sz); }
+void xfree(void *p, void *arg) { free(p); }
+
+int
+main(void)
+{
+	struct ohash h;
+	struct ohash_info i;
+	i.alloc = xmalloc;
+	i.calloc = xcalloc;
+	i.free = xfree;
+	ohash_init(&h, 2, &i);
+	ohash_delete(&h);
+	return 0;
+}
+@
+
+
+1.3
+log
+@let the build system cope with the recent ohash changes
+@
+text
+@d6 2
+a7 2
+void *xmalloc(size_t sz, void *arg) { return(calloc(1,sz)); }
+void *xcalloc(size_t nmemb, size_t sz, void *arg) { return(calloc(nmemb,sz)); }
+@
+
+
+1.2
+log
+@Make test-ohash.c work on OpenBSD (it now works on have/havenots of OpenBSD
+and OSX).
+@
+text
+@d6 3
+a8 2
+void *xalloc(size_t sz, void *arg) { return(calloc(sz,1)); }
+void xfree(void *p, size_t sz, void *arg) { free(p); }
+d15 3
+a17 2
+	i.halloc = i.alloc = xalloc;
+	i.hfree = xfree;
+@
+
+
+1.1
+log
+@Add a compatibility interface for ohash.
+This include's espie@@'s wholesale src/lib/libc/ohash directory from OpenBSD
+into compat_ohash.c (with a single copyright/license notice at the top)
+and src/include/ohash.h as compat_ohash.h.
+The ohash_int.h part of compat_ohash.c has been changed only in that ohash.h
+points to compat_ohash.h.
+Added HAVE_OHASH test (test-ohash.c) to Makefile.
+In mandocdb.c and mansearch.c, check HAVE_OHASH test for inclusion.
+@
+text
+@d15 1
+a15 1
+	i.free = free;
+@

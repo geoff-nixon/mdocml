@@ -1,0 +1,1131 @@
+head	1.29;
+access;
+symbols
+	VERSION_1_10_9:1.24
+	VERSION_1_10_8:1.24
+	VERSION_1_10_7:1.24
+	VERSION_1_10_6:1.24
+	VERSION_1_10_5:1.23
+	VERSION_1_10_5_PREPDF:1.23
+	VERSION_1_10_4:1.23
+	VERSION_1_10_3:1.23
+	VERSION_1_10_2:1.23
+	VERSION_1_10_1:1.22
+	VERSION_1_9_24:1.17
+	VERSION_1_9_25:1.19
+	VERSION_1_9_23:1.16
+	VERSION_1_9_22:1.15
+	VERSION_1_9_21:1.15
+	VERSION_1_9_20:1.15
+	VERSION_1_9_19:1.14
+	VERSION_1_9_18:1.14
+	VERSION_1_9_17:1.14
+	VERSION_1_9_16:1.14
+	VERSION_1_9_15:1.14
+	VERSION_1_9_15-pre2:1.14
+	VERSION_1_9_15-pre1:1.13
+	VERSION_1_9_14:1.13
+	VERSION_1_9_13:1.13
+	VERSION_1_9_12:1.12
+	VERSION_1_9_11:1.11
+	VERSION_1_9_10:1.11
+	VERSION_1_9_9:1.10
+	VERSION_1_9_8:1.10
+	VERSION_1_9_7:1.10
+	VERSION_1_9_6:1.10
+	VERSION_1_9_5:1.10
+	VERSION_1_9_2:1.10
+	VERSION_1_9_1:1.10
+	VERSION_1_9_0:1.9
+	VERSION_1_8_5:1.9
+	VERSION_1_8_4:1.9
+	VERSION_1_8_3:1.9
+	VERSION_1_8_2:1.9
+	VERSION_1_8_1:1.9
+	VERSION_1_8_0:1.9
+	VERSION_1_7_24:1.9
+	VERSION_1_7_23:1.9
+	VERSION_1_7_22:1.9
+	VERSION_1_7_21:1.9
+	VERSION_1_7_20:1.8
+	VERSION_1_7_19:1.7
+	VERSION_1_7_17:1.5
+	VERSION_1_7_16:1.4
+	VERSION_1_7_15:1.4
+	VERSION_1_7_14:1.3
+	VERSION_1_7_13:1.3
+	VERSION_1_7_12:1.1
+	OPENBSD_CHECKIN:1.1
+	VERSION_1_7_10:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.29
+date	2011.03.17.09.25.54;	author kristaps;	state dead;
+branches;
+next	1.28;
+
+1.28
+date	2011.03.17.09.24.51;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2011.03.17.09.22.39;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2011.03.17.09.16.38;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.03.17.01.23.29;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.07.31.23.52.58;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.05.15.17.26.34;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.05.15.08.54.04;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.05.12.08.41.17;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.05.09.21.06.50;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.05.08.07.30.19;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.04.03.12.46.35;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.03.29.19.28.04;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.01.01.17.14.30;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.11.02.06.22.46;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.10.27.08.26.12;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.10.26.04.09.46;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.08.20.13.32.09;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.07.04.09.01.55;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.06.22.12.22.35;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.06.17.10.53.32;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.06.17.09.41.00;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.06.15.09.38.37;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.06.12.12.40.44;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.04.12.19.24.10;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.31.13.50.19;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.29
+log
+@Kill off mdoc_strings.c, which is now empty.  Byeeeeeeeee!
+@
+text
+@@
+
+
+1.28
+log
+@Move mdoc_macro2len() into mdoc_validate.c as macro2len(), as that's the
+only place that it's being used.
+@
+text
+@a0 32
+/*	$Id: mdoc_strings.c,v 1.27 2011/03/17 09:22:39 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+#include "mandoc.h"
+#include "libmdoc.h"
+
+/* FIXME: move this into an editable .in file. */
+@
+
+
+1.27
+log
+@Move mdoc_str2sec() into mdoc_validate.c as a2sec(), as that's the only
+place that it's being used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.26 2011/03/17 09:16:38 kristaps Exp $ */
+a32 92
+size_t
+mdoc_macro2len(enum mdoct macro)
+{
+
+	switch (macro) {
+	case(MDOC_Ad):
+		return(12);
+	case(MDOC_Ao):
+		return(12);
+	case(MDOC_An):
+		return(12);
+	case(MDOC_Aq):
+		return(12);
+	case(MDOC_Ar):
+		return(12);
+	case(MDOC_Bo):
+		return(12);
+	case(MDOC_Bq):
+		return(12);
+	case(MDOC_Cd):
+		return(12);
+	case(MDOC_Cm):
+		return(10);
+	case(MDOC_Do):
+		return(10);
+	case(MDOC_Dq):
+		return(12);
+	case(MDOC_Dv):
+		return(12);
+	case(MDOC_Eo):
+		return(12);
+	case(MDOC_Em):
+		return(10);
+	case(MDOC_Er):
+		return(17);
+	case(MDOC_Ev):
+		return(15);
+	case(MDOC_Fa):
+		return(12);
+	case(MDOC_Fl):
+		return(10);
+	case(MDOC_Fo):
+		return(16);
+	case(MDOC_Fn):
+		return(16);
+	case(MDOC_Ic):
+		return(10);
+	case(MDOC_Li):
+		return(16);
+	case(MDOC_Ms):
+		return(6);
+	case(MDOC_Nm):
+		return(10);
+	case(MDOC_No):
+		return(12);
+	case(MDOC_Oo):
+		return(10);
+	case(MDOC_Op):
+		return(14);
+	case(MDOC_Pa):
+		return(32);
+	case(MDOC_Pf):
+		return(12);
+	case(MDOC_Po):
+		return(12);
+	case(MDOC_Pq):
+		return(12);
+	case(MDOC_Ql):
+		return(16);
+	case(MDOC_Qo):
+		return(12);
+	case(MDOC_So):
+		return(12);
+	case(MDOC_Sq):
+		return(12);
+	case(MDOC_Sy):
+		return(6);
+	case(MDOC_Sx):
+		return(16);
+	case(MDOC_Tn):
+		return(10);
+	case(MDOC_Va):
+		return(12);
+	case(MDOC_Vt):
+		return(12);
+	case(MDOC_Xr):
+		return(10);
+	default:
+		break;
+	};
+	return(0);
+}
+@
+
+
+1.26
+log
+@Move mdoc_isdelim() into mandoc.h as mandoc_isdelim().  This allows the
+removal of manual delimiter checks in html.c and term.c.  Finally, add
+the escaped period as a closing delimiter, removing a TODO to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.25 2011/03/17 01:23:29 kristaps Exp $ */
+a31 38
+static	const char * const secnames[SEC__MAX] = {
+	NULL,
+	"NAME",
+	"LIBRARY",
+	"SYNOPSIS",
+	"DESCRIPTION",
+	"IMPLEMENTATION NOTES",
+	"RETURN VALUES",
+	"ENVIRONMENT",
+	"FILES",
+	"EXIT STATUS",
+	"EXAMPLES",
+	"DIAGNOSTICS",
+	"COMPATIBILITY",
+	"ERRORS",
+	"SEE ALSO",
+	"STANDARDS",
+	"HISTORY",
+	"AUTHORS",
+	"CAVEATS",
+	"BUGS",
+	"SECURITY CONSIDERATIONS",
+	NULL
+};
+
+enum mdoc_sec 
+mdoc_str2sec(const char *p)
+{
+	int		 i;
+
+	for (i = 0; i < (int)SEC__MAX; i++) 
+		if (secnames[i] && 0 == strcmp(p, secnames[i]))
+			return((enum mdoc_sec)i);
+
+	return(SEC_CUSTOM);
+}
+
+
+@
+
+
+1.25
+log
+@Make args_checkpunct() use mdoc_isdelim() instead of mdoc_iscdelim(),
+which is wrong.  Then remove mdoc_iscdelim() alltogether.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.24 2010/07/31 23:52:58 schwarze Exp $ */
+a56 44
+enum mdelim
+mdoc_isdelim(const char *p)
+{
+
+	if ('\0' == p[0])
+		return(DELIM_NONE);
+
+	if ('\0' == p[1])
+		switch (p[0]) {
+		case('('):
+			/* FALLTHROUGH */
+		case('['):
+			return(DELIM_OPEN);
+		case('|'):
+			return(DELIM_MIDDLE);
+		case('.'):
+			/* FALLTHROUGH */
+		case(','):
+			/* FALLTHROUGH */
+		case(';'):
+			/* FALLTHROUGH */
+		case(':'):
+			/* FALLTHROUGH */
+		case('?'):
+			/* FALLTHROUGH */
+		case('!'):
+			/* FALLTHROUGH */
+		case(')'):
+			/* FALLTHROUGH */
+		case(']'):
+			return(DELIM_CLOSE);
+		default:
+			return(DELIM_NONE);
+		}
+
+	/*
+	 * XXX; account for groff bubu where the \*(Ba reserved string
+	 * is treated in exactly the same way as the vertical bar.  This
+	 * is the only function that checks for this.
+	 */
+	return(strcmp(p, "\\*(Ba") ? DELIM_NONE : DELIM_MIDDLE);
+}
+
+
+@
+
+
+1.24
+log
+@Sync to OpenBSD: add missing Copyright years.
+I checked that substantial changes were committed
+to these files during these years.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.23 2010/06/19 20:46:28 kristaps Exp $ */
+a56 39
+/* 
+ * FIXME: this is repeated in print_text() (html.c) and term_word()
+ * (term.c).
+ */
+enum mdelim
+mdoc_iscdelim(char p)
+{
+
+	switch (p) {
+	case('('):
+		/* FALLTHROUGH */
+	case('['):
+		return(DELIM_OPEN);
+	case('|'):
+		return(DELIM_MIDDLE);
+	case('.'):
+		/* FALLTHROUGH */
+	case(','):
+		/* FALLTHROUGH */
+	case(';'):
+		/* FALLTHROUGH */
+	case(':'):
+		/* FALLTHROUGH */
+	case('?'):
+		/* FALLTHROUGH */
+	case('!'):
+		/* FALLTHROUGH */
+	case(')'):
+		/* FALLTHROUGH */
+	case(']'):
+		return(DELIM_CLOSE);
+	default:
+		break;
+	}
+
+	return(DELIM_NONE);
+}
+
+
+d63 1
+d65 26
+a90 1
+		return(mdoc_iscdelim(p[0]));
+@
+
+
+1.23
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.22 2010/05/17 22:11:42 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.22
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.21 2010/05/15 17:26:34 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.21
+log
+@Lint-fix for enum return (ok schwarze@@).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.20 2010/05/15 08:54:04 schwarze Exp $ */
+d29 1
+@
+
+
+1.20
+log
+@Distinguish OPEN, MIDDLE and CLOSE delimiters (using an enum).
+Only OPEN are drawn before the beginning of a macro;
+this is new, before this, MIDDLE ('|') were drawn in front, too.
+Only CLOSE are pushed after the end of a macro (as before).
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.19 2010/05/12 08:41:17 kristaps Exp $ */
+d100 1
+a100 1
+		return(0);
+@
+
+
+1.19
+log
+@mdoc_atosec -> mdoc_str2sec (consistent with str2 being different from a2).
+Changed ordering of sections (EXIT STATUS moved around), argued for by Ulrich Sporlein.
+Fixed mdoc_str2sec not to use weird structure.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.18 2010/05/09 21:06:50 kristaps Exp $ */
+d60 1
+a60 1
+int
+a64 2
+	case('|'):
+		/* FALLTHROUGH */
+d68 3
+a70 1
+		return(1);
+d86 1
+a86 1
+		return(2);
+d91 1
+a91 1
+	return(0);
+d95 1
+a95 1
+int
+d109 1
+a109 1
+	return(0 == strcmp(p, "\\*(Ba"));
+@
+
+
+1.18
+log
+@Explicitly account for \*(Ba when checking for delims.  Noted by Jason McIntyre via Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.17 2010/05/08 07:30:19 kristaps Exp $ */
+d31 23
+a53 5
+/* FIXME: this file is poorly named. */
+
+struct mdoc_secname {
+	const char	*name;	/* Name of section. */
+	enum mdoc_sec	 sec;	/* Corresponding section. */
+a55 26
+#define	SECNAME_MAX	(20)
+
+static	const struct mdoc_secname secnames[SECNAME_MAX] = {
+	{ "NAME", SEC_NAME },
+	{ "LIBRARY", SEC_LIBRARY },
+	{ "SYNOPSIS", SEC_SYNOPSIS },
+	{ "DESCRIPTION", SEC_DESCRIPTION },
+	{ "IMPLEMENTATION NOTES", SEC_IMPLEMENTATION },
+	{ "EXIT STATUS", SEC_EXIT_STATUS },
+	{ "RETURN VALUES", SEC_RETURN_VALUES },
+	{ "ENVIRONMENT", SEC_ENVIRONMENT },
+	{ "FILES", SEC_FILES },
+	{ "EXAMPLES", SEC_EXAMPLES },
+	{ "DIAGNOSTICS", SEC_DIAGNOSTICS },
+	{ "COMPATIBILITY", SEC_COMPATIBILITY },
+	{ "ERRORS", SEC_ERRORS },
+	{ "SEE ALSO", SEC_SEE_ALSO },
+	{ "STANDARDS", SEC_STANDARDS },
+	{ "HISTORY", SEC_HISTORY },
+	{ "AUTHORS", SEC_AUTHORS },
+	{ "CAVEATS", SEC_CAVEATS },
+	{ "BUGS", SEC_BUGS },
+	{ "SECURITY CONSIDERATIONS", SEC_SECURITY }
+};
+
+
+d114 1
+a114 1
+mdoc_atosec(const char *p)
+d118 3
+a120 3
+	for (i = 0; i < SECNAME_MAX; i++) 
+		if (0 == strcmp(p, secnames[i].name))
+			return(secnames[i].sec);
+@
+
+
+1.17
+log
+@Lint fixes (type-safety for enums via -cefuh).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.16 2010/04/03 12:46:35 kristaps Exp $ */
+d73 1
+a73 1
+	case('|'): /* FIXME! */
+d107 1
+a107 1
+	if (0 == *p)
+d109 9
+a117 3
+	if (0 != *(p + 1))
+		return(0);
+	return(mdoc_iscdelim(*p));
+@
+
+
+1.16
+log
+@Removed erroneous `{' and `}' as punctuation (see mdoc.samples "General Syntax" for why this mistake was made).  Noted by Ingo Schwarze.
+Lines of text now break at a hyphen, unless the hyphen is the first or second subsequent in a word.  Inspired by a Ingo Schwarze's patch.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.15 2010/03/29 19:28:04 kristaps Exp $ */
+d130 1
+a130 1
+mdoc_macro2len(int macro)
+@
+
+
+1.15
+log
+@Integrate Ingo Schwarze's patch for mdoc_iscdelim() (tri-state for opening and closing macro punctuation).
+Modify blk_part_exp() to correctly handle leading punctuation before HEAD.
+Significantly clean up and document blk_part_exp().
+Modify blk_part_imp() for to correctly handle leading punctuation before HEAD.
+Significantly clean up and document blk_part_imp().
+Integrate Ingo Schwarze's patch for args() (using new mdoc_iscdelim() format).
+Documented bad `Ec' handling for later work in mdoc_term.c/mdoc_html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.14 2010/01/01 17:14:30 kristaps Exp $ */
+d64 4
+d73 1
+a73 1
+	case('|'):
+a77 2
+		/* FALLTHROUGH */
+	case('{'):
+a93 2
+		/* FALLTHROUGH */
+	case('}'):
+@
+
+
+1.14
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.13 2009/11/02 06:22:46 kristaps Exp $ */
+d71 6
+a88 2
+	case('('):
+		/* FALLTHROUGH */
+a90 2
+	case('['):
+		/* FALLTHROUGH */
+a92 2
+	case('{'):
+		/* FALLTHROUGH */
+d94 1
+a94 1
+		return(1);
+@
+
+
+1.13
+log
+@Added mandoc_a2time() for proper date conversion.
+Fitted TH and Dd handlers to use mandoc_a2time().
+Documented date syntax for -man, fixed documentation for -mdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.12 2009/10/27 08:26:12 kristaps Exp $ */
+d17 4
+@
+
+
+1.12
+log
+@bzero() -> memset() (noted by Joerg Sonnenberger).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.11 2009/10/26 04:09:46 kristaps Exp $ */
+a58 4
+#ifdef __linux__
+extern	char		*strptime(const char *, const char *, struct tm *);
+#endif
+
+a123 22
+time_t
+mdoc_atotime(const char *p)
+{
+	struct tm	 tm;
+	char		*pp;
+
+	memset(&tm, 0, sizeof(struct tm));
+
+	if (0 == strcmp(p, "$" "Mdocdate$"))
+		return(time(NULL));
+	if ((pp = strptime(p, "$" "Mdocdate: %b %d %Y $", &tm)) && 0 == *pp)
+		return(mktime(&tm));
+	/* XXX - this matches "June 1999", which is wrong. */
+	if ((pp = strptime(p, "%b %d %Y", &tm)) && 0 == *pp)
+		return(mktime(&tm));
+	if ((pp = strptime(p, "%b %d, %Y", &tm)) && 0 == *pp)
+		return(mktime(&tm));
+
+	return(0);
+}
+
+
+@
+
+
+1.11
+log
+@Full `%U' support.
+`Lk' display fixed.
+Renamed arg2xxxx as a2xxxx for consistency.
+Renamed print_foot to print_man_foot for consistency.
+Removed default printing of `~' when `Lk' not provided (not sure where I got that from).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.10 2009/08/20 13:32:09 kristaps Exp $ */
+d134 1
+a134 1
+	bzero(&tm, sizeof(struct tm));
+@
+
+
+1.10
+log
+@Synchronised man.7, mdoc.7, mdoc.template manual structure.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.9 2009/07/04 09:01:55 kristaps Exp $ */
+d23 1
+@
+
+
+1.9
+log
+@Moved escape validation into libmandoc.h/mandoc.c (common between libman/libmdoc1).
+libman supports MAN_IGN_ESCAPE (like MDOC_IGN_ESCAPE).
+All popular escapes now handled consistently.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.8 2009/06/22 12:22:35 kristaps Exp $ */
+d33 1
+a33 1
+#define	SECNAME_MAX	(18)
+d41 1
+d55 1
+@
+
+
+1.8
+log
+@Added -split and -nosplit "I-Don't-Like" note to mdoc.7 (there really must be another way to do this).
+Fixed .Er -width conversion.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.7 2009/06/17 10:53:32 kristaps Exp $ */
+a19 1
+#include <ctype.h>
+a60 76
+size_t
+mdoc_isescape(const char *p)
+{
+	size_t		 c;
+	
+	if ('\\' != *p++)
+		return(0);
+
+	switch (*p) {
+	case ('\\'):
+		/* FALLTHROUGH */
+	case ('\''):
+		/* FALLTHROUGH */
+	case ('`'):
+		/* FALLTHROUGH */
+	case ('q'):
+		/* FALLTHROUGH */
+	case ('-'):
+		/* FALLTHROUGH */
+	case ('~'):
+		/* FALLTHROUGH */
+	case ('^'):
+		/* FALLTHROUGH */
+	case ('%'):
+		/* FALLTHROUGH */
+	case ('0'):
+		/* FALLTHROUGH */
+	case (' '):
+		/* FALLTHROUGH */
+	case ('|'):
+		/* FALLTHROUGH */
+	case ('&'):
+		/* FALLTHROUGH */
+	case ('.'):
+		/* FALLTHROUGH */
+	case (':'):
+		/* FALLTHROUGH */
+	case ('e'):
+		return(2);
+	case ('*'):
+		if (0 == *++p || ! isgraph((u_char)*p))
+			return(0);
+		switch (*p) {
+		case ('('):
+			if (0 == *++p || ! isgraph((u_char)*p))
+				return(0);
+			return(4);
+		case ('['):
+			for (c = 3, p++; *p && ']' != *p; p++, c++)
+				if ( ! isgraph((u_char)*p))
+					break;
+			return(*p == ']' ? c : 0);
+		default:
+			break;
+		}
+		return(3);
+	case ('('):
+		if (0 == *++p || ! isgraph((u_char)*p))
+			return(0);
+		if (0 == *++p || ! isgraph((u_char)*p))
+			return(0);
+		return(4);
+	case ('['):
+		break;
+	default:
+		return(0);
+	}
+
+	for (c = 3, p++; *p && ']' != *p; p++, c++)
+		if ( ! isgraph((u_char)*p))
+			break;
+
+	return(*p == ']' ? c : 0);
+}
+
+
+@
+
+
+1.7
+log
+@Section orders are more elegantly handled (MDOC_PBODY is a flag).
+Cleaned up string->enum conversion for section lookup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.6 2009/06/17 09:41:00 kristaps Exp $ */
+d224 1
+d259 1
+a259 1
+		return(12);
+@
+
+
+1.6
+log
+@Noted deprecation of \*( and \* special-character escapes.
+Minor clean-ups.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.5 2009/06/15 09:38:37 kristaps Exp $ */
+d27 2
+d31 1
+a31 2
+	int		 flag;
+#define	MSECNAME_META	(1 << 0)/* Logical section (not real). */
+d34 1
+a34 1
+/* Section names corresponding to mdoc_sec. */
+d36 19
+a54 22
+static	const struct mdoc_secname secnames[] = {
+	{ "PROLOGUE", MSECNAME_META },
+	{ "BODY", MSECNAME_META },
+	{ "NAME", 0 },
+	{ "LIBRARY", 0 },
+	{ "SYNOPSIS", 0 },
+	{ "DESCRIPTION", 0 },
+	{ "IMPLEMENTATION NOTES", 0 },
+	{ "RETURN VALUES", 0 },
+	{ "ENVIRONMENT", 0 },
+	{ "FILES", 0 },
+	{ "EXAMPLES", 0 },
+	{ "DIAGNOSTICS", 0 },
+	{ "COMPATIBILITY", 0 },
+	{ "ERRORS", 0 },
+	{ "SEE ALSO", 0 },
+	{ "STANDARDS", 0 },
+	{ "HISTORY", 0 },
+	{ "AUTHORS", 0 },
+	{ "CAVEATS", 0 },
+	{ "BUGS", 0 },
+	{ NULL, 0 }
+d192 1
+a192 2
+	const struct mdoc_secname *n;
+	int			   i;
+d194 3
+a196 4
+	for (i = 0, n = secnames; n->name; n++, i++)
+		if ( ! (n->flag & MSECNAME_META))
+			if (0 == strcmp(p, n->name))
+				return((enum mdoc_sec)i);
+d208 1
+a208 1
+	(void)memset(&tm, 0, sizeof(struct tm));
+@
+
+
+1.5
+log
+@Mdocdate fix (literals being replaced) ({cnst,schwarze}@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.4 2009/06/12 12:40:44 kristaps Exp $ */
+a26 5
+/*
+ * Various string-literal operations:  converting scalars to and from
+ * strings, etc.
+ */
+
+d28 1
+a28 1
+	const char	*name;
+d30 1
+a30 1
+#define	MSECNAME_META	(1 << 0)
+@
+
+
+1.4
+log
+@Made per-macro "now callable" COMPATIBILITY claims into a single "most macros callable".
+Added COMPATIBILITY note on escaped special-character sequences.
+Vertical bar now correctly delimits (like in new groff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.3 2009/04/12 19:45:26 kristaps Exp $ */
+d219 1
+a219 1
+	if (0 == strcmp(p, "$Mdocdate$"))
+d221 1
+a221 1
+	if ((pp = strptime(p, "$Mdocdate: %b %d %Y $", &tm)) && 0 == *pp)
+@
+
+
+1.3
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_strings.c,v 1.2 2009/04/12 19:24:10 kristaps Exp $ */
+d150 2
+@
+
+
+1.2
+log
+@Added \^ and \~ escapes (Joerg).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdoc_strings.c,v 1.1 2009/03/31 13:50:19 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.1
+log
+@General clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: strings.c,v 1.33 2009/03/27 13:44:24 kristaps Exp $ */
+d90 4
+@

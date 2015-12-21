@@ -1,0 +1,65 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.2
+date	2015.11.06.16.30.33;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.10.11.21.12.55;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Use getprogname(3) rather than __progname.
+Suggested by Joerg@@ Sonnenberger (NetBSD).
+Last year, deraadt@@ confirmed on tech@@ that this "has the potential
+to be more portable", and micro-optimizing for speed is not relevant
+here.  Also gets rid of one global variable.
+@
+text
+@#include <stdlib.h>
+
+int
+main(void)
+{
+	const char * progname;
+
+	progname = getprogname();
+	return progname == NULL;
+}
+@
+
+
+1.1
+log
+@Finally use __progname, err(3) and warn(3).
+That's more readable and less error-prone than fumbling around
+with argv[0], fprintf(3), strerror(3), perror(3), and exit(3).
+
+It's a bad idea to boycott good interfaces merely because standards
+committees ignore them.  Instead, let's provide compatibility modules
+for archaic systems (like commercial Solaris) that still don't have
+them.  The compat module has an UCB Copyright (c) 1993...
+@
+text
+@d1 1
+a1 3
+#include <string.h>
+
+extern char *__progname;
+d6 4
+a9 1
+	return !!strcmp(__progname, "test-progname");
+@

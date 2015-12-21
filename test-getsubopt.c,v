@@ -1,0 +1,162 @@
+head	1.4;
+access;
+symbols
+	VERSION_1_13_3:1.3
+	VERSION_1_13_2:1.3
+	VERSION_1_12_4:1.2
+	VERSION_1_13_1:1.2
+	VERSION_1_12_3:1.1
+	VERSION_1_12_2:1.1
+	VERSION_1_12:1.2.0.2
+	VERSION_1_12_1:1.1
+	VERSION_1_12_0:1.1
+	VERSION_1_11_7:1.1
+	VERSION_1_11_6:1.1
+	VERSION_1_11_5:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.4
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.08.17.20.53.50;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.01.04.01.11.00;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.07.24.18.15.14;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@modernize style: "return" is not a function
+@
+text
+@/*	$Id: test-getsubopt.c,v 1.3 2014/08/17 20:53:50 schwarze Exp $	*/
+/*
+ * Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+#if defined(__linux__) || defined(__MINT__)
+#define _GNU_SOURCE /* getsubopt() */
+#endif
+
+#include <stdlib.h>
+
+int
+main(void)
+{
+	char buf[] = "k=v";
+	char *options = buf;
+	char token0[] = "k";
+	char *const tokens[] = { token0, NULL };
+	char *value = NULL;
+	return ! (getsubopt(&options, tokens, &value) == 0
+	    && value == buf+2 && options == buf+3);
+}
+@
+
+
+1.3
+log
+@Do not require getsubopt() to provide extern char *suboptarg.
+We don't use it anyway in mandoc.  Like this, fewer systems need
+the compat implementation.  In particular, we can now use the stock
+getsubopt() on glibc and musl.
+
+Besides, the comment in the BSD getsubopt.c that error messages are
+tricky without *suboptarg is massively overblown.  If you simply
+save a copy of the pointer you pass into getsubopt(), that's quite
+usable for an error message.
+
+People start campaigning for the addition of *suboptarg to C libraries
+on the grounds that mandoc wants it, but actually, i consider library
+functions manipulating global data quite ugly, so stop pushing people
+into that questionable direction.
+
+While here, add an explicit Copyright header to the test file.
+While it's obviously to me what Kristaps intended, others might
+consider this file copyrightable and wonder what's up.
+@
+text
+@d1 1
+a1 1
+/*	$Id$	*/
+d32 2
+a33 2
+	return( ! (0 == getsubopt(&options, tokens, &value)
+	    && value == buf+2 && options == buf+3));
+@
+
+
+1.2
+log
+@Clean up feature tests:
+* Split the configure steering script out of the Makefile.
+* Let the configure step depend on the test sources.
+* Clean up the test programs such that they can be run.
+@
+text
+@d1 17
+d19 1
+a19 1
+# define _GNU_SOURCE /* getsubopt() */
+a23 2
+extern char *suboptarg;
+
+d33 1
+a33 1
+	    && suboptarg == buf && value == buf+2 && options == buf+3));
+@
+
+
+1.1
+log
+@Scary-looking but otherwise harmless changes allow me to build for Windows.
+That is to say, with mingw32.  This amounts to the following:
+
+ (1) break compat.c into compat_strlcpy.c and compat_strlcat.c
+ (2) add compat_getsubopt.c (from OpenBSD) and test-getsubopt.c
+ (3) add test-strptime.c for HAVE_STRPTIME
+ (4) add ifdef bits here and there, where necessary
+ (5) remove some harmless unportable stuff (u_char, localtime_r)
+
+I've added the appropriate mdocml.zip target to the Makefile, too.
+@
+text
+@d7 2
+d10 1
+a10 1
+main(int argc, char **argv)
+d12 7
+a18 2
+	getsubopt(argv, argv, argv);
+	return 0;
+@

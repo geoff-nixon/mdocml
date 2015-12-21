@@ -1,0 +1,96 @@
+head	1.1;
+access;
+symbols
+	VERSION_1_12_4:1.1.2.3
+	VERSION_1_12_3:1.1.2.2
+	VERSION_1_12_2:1.1.2.2
+	VERSION_1_12:1.1.0.2;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2013.09.29.23.28.48;	author schwarze;	state dead;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2013.09.29.23.28.48;	author schwarze;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2013.10.02.21.03.26;	author schwarze;	state Exp;
+branches;
+next	1.1.2.3;
+
+1.1.2.3
+date	2014.08.14.04.13.30;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@file test-betoh64.c was initially added on branch VERSION_1_12.
+@
+text
+@@
+
+
+1.1.2.1
+log
+@Final tweaks for the release candidate:
+* Test for betoh64(), otherwise use be64toh().
+* In the Makefile, improve the explanation of STATIC.
+* Update VERSION and VDATE.
+@
+text
+@a0 16
+#include <sys/types.h>
+
+#if defined(__linux__)
+# include <endian.h>
+#elif defined(__APPLE__)
+# include <libkern/OSByteOrder.h>
+#endif
+
+int
+main(int argc, char **argv)
+{
+	u_int64_t hostorder;
+	u_int64_t bigendian = 1;
+	hostorder = betoh64(bigendian);
+	return 0;
+}
+@
+
+
+1.1.2.2
+log
+@DragonFly needs explicit #include <sys/endian.h> to use be64toh(),
+while most other systems include that indirectly via <sys/types.h>.
+Reported by Franco Fichtner <franco at lastsummer dot de>.
+@
+text
+@a6 2
+#else
+# include <sys/endian.h>
+@
+
+
+1.1.2.3
+log
+@Cygwin support; from Yaakov Selkowitz,
+https://sourceforge.net/p/cygwin-ports/mdocml/ci/master/tree/
+@
+text
+@d3 1
+a3 1
+#if defined(__linux__) || defined(__CYGWIN__)
+@

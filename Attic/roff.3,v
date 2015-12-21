@@ -1,0 +1,536 @@
+head	1.11;
+access;
+symbols
+	VERSION_1_10_10:1.10
+	VERSION_1_10_9:1.10
+	VERSION_1_10_8:1.8
+	VERSION_1_10_7:1.8
+	VERSION_1_10_6:1.8
+	VERSION_1_10_5:1.7
+	VERSION_1_10_5_PREPDF:1.7
+	VERSION_1_10_4:1.6
+	VERSION_1_10_3:1.3
+	VERSION_1_10_2:1.1
+	VERSION_1_10_1:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.11
+date	2011.03.22.10.02.50;	author kristaps;	state dead;
+branches;
+next	1.10;
+
+1.10
+date	2011.01.01.16.18.39;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.01.01.15.45.18;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.07.07.15.04.54;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.07.04.22.04.04;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.07.03.16.02.12;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.06.27.15.52.41;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.06.26.15.22.19;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.05.25.22.16.59;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.11
+log
+@Step 3: consolidate manuals.  The parse functions in mdoc.h, roff.h, and
+man.h are now part of libmandoc.h, so remove these from their respective
+manuals (they're no longer public-facing and we don't need a libmandoc.3
+(yet?)).  Before that, move the juicy data (parse tree syntax) into
+new-born mandoc.3.  Peck around in Makefile and index.sgml to reflect
+reality.
+@
+text
+@@
+
+
+1.10
+log
+@More checks for proper table exit.
+@
+text
+@a0 177
+.\"	$Id: roff.3,v 1.9 2011/01/01 15:45:18 kristaps Exp $
+.\"
+.\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: January 1 2011 $
+.Dt ROFF 3
+.Os
+.Sh NAME
+.Nm roff ,
+.Nm roff_alloc ,
+.Nm roff_endparse ,
+.Nm roff_free ,
+.Nm roff_parseln ,
+.Nm roff_reset ,
+.Nm roff_span
+.Nd roff macro compiler library
+.Sh SYNOPSIS
+.In mandoc.h
+.In roff.h
+.Ft "struct roff *"
+.Fo roff_alloc
+.Fa "struct regset *regs"
+.Fa "void *data"
+.Fa "mandocmsg msgs"
+.Fc
+.Ft void
+.Fn roff_endparse "struct roff *roff"
+.Ft void
+.Fn roff_free "struct roff *roff"
+.Ft "enum rofferr"
+.Fo roff_parseln
+.Fa "struct roff *roff"
+.Fa "int line"
+.Fa "char **bufp"
+.Fa "size_t *bufsz"
+.Fa "int pos"
+.Fa "int *offs"
+.Fc
+.Ft void
+.Fn roff_reset "struct roff *roff"
+.Ft "const struct tbl_span *"
+.Fn roff_span "const struct roff *roff"
+.Sh DESCRIPTION
+The
+.Nm
+library processes lines of
+.Xr roff 7
+input.
+.Pp
+In general, applications initiate a parsing sequence with
+.Fn roff_alloc ,
+parse each line in a document with
+.Fn roff_parseln ,
+close the parsing session with
+.Fn roff_endparse ,
+and finally free all allocated memory with
+.Fn roff_free .
+The
+.Fn roff_reset
+function may be used in order to reset the parser for another input
+sequence.
+.Pp
+The
+.Fn roff_parseln
+function should be invoked before passing a line into the
+.Xr mdoc 3
+or
+.Xr man 3
+libraries.
+.Pp
+See the
+.Sx EXAMPLES
+section for a full example.
+.Sh REFERENCE
+This section further defines the
+.Sx Types
+and
+.Sx Functions
+available to programmers.
+.Ss Types
+Functions (see
+.Sx Functions )
+may use the following types:
+.Bl -ohang
+.It Vt "enum rofferr"
+Instructions for further processing to the caller of
+.Fn roff_parseln .
+.It Vt struct roff
+An opaque type defined in
+.Pa roff.c .
+Its values are only used privately within the library.
+.It Vt mandocmsg
+A function callback type defined in
+.Pa mandoc.h .
+.El
+.Ss Functions
+Function descriptions follow:
+.Bl -ohang
+.It Fn roff_alloc
+Allocates a parsing structure.
+The
+.Fa data
+pointer is passed to
+.Fa msgs .
+Returns NULL on failure.
+If non-NULL, the pointer must be freed with
+.Fn roff_free .
+.It Fn roff_reset
+Reset the parser for another parse routine.
+After its use,
+.Fn roff_parseln
+behaves as if invoked for the first time.
+.It Fn roff_free
+Free all resources of a parser.
+The pointer is no longer valid after invocation.
+.It Fn roff_parseln
+Parse a nil-terminated line of input.
+The character array
+.Fa bufp
+may be modified or reallocated within this function.
+In the latter case,
+.Fa bufsz
+will be modified accordingly.
+The
+.Fa offs
+pointer will be modified if the line start during subsequent processing
+of the line is not at the zeroth index.
+This line should not contain the trailing newline.
+Returns 0 on failure, 1 on success.
+.It Fn roff_endparse
+Signals that the parse is complete.
+.It Fn roff_span
+If
+.Fn roff_parseln
+returned
+.Va ROFF_TBL ,
+return the last parsed table row.
+Returns NULL otherwise.
+.El
+.Sh EXAMPLES
+See
+.Pa main.c
+in the source distribution for an example of usage.
+.Sh SEE ALSO
+.Xr mandoc 1 ,
+.Xr man 3 ,
+.Xr mdoc 3 ,
+.Xr roff 7
+.Sh AUTHORS
+The
+.Nm
+library was written by
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+.Sh BUGS
+The implementation of user-defined strings needs improvement:
+.Bl -dash
+.It
+String values are taken literally and are not interpreted.
+.It
+Parsing of quoted strings is incomplete.
+.It
+The stings are stored internally using a singly linked list,
+which is fine for small numbers of strings,
+but ineffient when handling many strings.
+.El
+@
+
+
+1.9
+log
+@Add documentation bits for libroff's new roff_span().
+
+Add bits to remember tbl's invocation point.
+
+Add ERROR class message if no data's in the table.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.3,v 1.8 2010/08/20 01:02:07 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 20 2010 $
+d38 1
+a38 1
+.Ft int
+a143 1
+Returns 0 on failure, 1 on success.
+@
+
+
+1.8
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.3,v 1.7 2010/07/13 23:53:20 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 13 2010 $
+d26 2
+a27 1
+.Nm roff_reset
+d53 2
+d145 7
+@
+
+
+1.7
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.3,v 1.6 2010/07/07 15:04:54 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 7 2010 $
+d34 1
+a35 1
+.Fa "void *data"
+a113 4
+The
+.Fa pflags
+arguments are defined in
+.Pa roff.h .
+@
+
+
+1.6
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.3,v 1.5 2010/07/04 22:04:04 schwarze Exp $
+a3 1
+.\" Copyright (c) 2010 Ingo Schwarze <schwarze@@openbsd.org>
+d17 1
+a17 1
+.Dd $Mdocdate: July 4 2010 $
+@
+
+
+1.5
+log
+@Assert my copyright, making it explicit that i'm granting the same license
+on those parts of the code and text that i have written as Kristaps is.
+"fine with me" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.3,v 1.4 2010/07/03 16:02:12 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 3 2010 $
+a30 1
+.In regs.h
+a52 9
+.In regs.h
+.Ft "char *"
+.Fn roff_setstr "const char *name" "const char *string"
+.Ft "char *"
+.Fn roff_getstr "const char *name"
+.Ft "char *"
+.Fn roff_getstrn "const char *name" "size_t len"
+.Ft void
+.Fn roff_freestr void
+a147 46
+.Sh USER-DEFINED STRINGS
+Strings defined by the
+.Xr roff 7
+.Sx \&ds
+instruction are saved using the
+.Fn roff_setstr
+function and retrieved using the
+.Fn roff_getstr
+and
+.Fn roff_getstrn
+functions.
+.Pp
+These functions take the name of the string to be accessed
+as their first argument.
+While
+.Fn roff_getstr
+requires the name to be null-terminated,
+.Fn roff_getstrn
+accepts non-terminated strings, but requires the length of the name
+to be specified.
+.Pp
+The second argument to
+.Fn roff_setstr
+is the new value of the string.
+It will be copied to internal storage, so both pointers to constant
+strings and pointers to volatile storage are acceptable.
+.Pp
+All of these functions return a pointer to the new value of the string
+in internal storage, which should be considered read-only, so use
+.Xr strdup 3
+on it as appropriate.
+The read functions return NULL when a string of the specified name
+is not available or empty, and
+.Fn roff_setstr
+returns NULL when memory allocation fails.
+In the latter case, the string will remain unset.
+.Pp
+The function
+.Fn roff_freestr
+clears all user-defined strings.
+It always succeeds.
+Both
+.Fn roff_reset
+and
+.Fn roff_free
+call it.
+@
+
+
+1.4
+log
+@Rudimentary implementation of user-defined strings;
+no time for more refinement right now.
+In particular, fixes terminfo(3) and mdoc.samples(7).
+ok kristaps@@, who will add the HTML frontend bits
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.3,v 1.3 2010/06/27 15:52:41 kristaps Exp $
+d4 1
+d18 1
+a18 1
+.Dd $Mdocdate: June 27 2010 $
+@
+
+
+1.3
+log
+@Downstream maintainers: this removes UGLY!  I don't want diverging
+functionality and UGLY works quite well thanks to schwarze@@'s careful
+attention.
+
+This also backs out function-prototype changes for struct regset,
+instead stuffing a pointer to the regset directly into struct
+mdoc/man/roff.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.3,v 1.2 2010/06/26 15:22:19 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 26 2010 $
+d53 9
+d157 46
+d217 12
+@
+
+
+1.2
+log
+@First step of adding register support.  This is inspired by a significant
+patch by schwarze@@.  This commit adds support to libroff parsing `nr'
+into register set defined in regs.h.  This will propogate into libmdoc
+and libman in later commits.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.3,v 1.1 2010/05/25 22:16:59 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 25 2010 $
+d33 5
+a37 1
+.Fn roff_alloc "mandocmsg msgs" "void *data"
+@
+
+
+1.1
+log
+@Added roff.3, which documents the roff parser interface.
+
+Small fix in mdoc.3 and man.3 pointing to old mdoc_cb and man_cb.
+
+Fix in Makefile adding mandoc.h to HEADS.
+
+Collapsed all HTML files into HTMLS variable (too confusing otherwise).
+
+Removed "htmls" command from Makefile (only I used it and it's just
+taking up space).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.3,v 1.17 2010/05/25 21:46:48 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate$
+d30 1
+@

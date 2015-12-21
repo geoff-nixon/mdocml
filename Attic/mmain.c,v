@@ -1,0 +1,1013 @@
+head	1.16;
+access;
+symbols
+	VERSION_1_9_5:1.16
+	VERSION_1_8_5:1.16
+	VERSION_1_8_1:1.16
+	VERSION_1_7_16:1.16
+	VERSION_1_7_15:1.16
+	OPENBSD_CHECKIN:1.16
+	VERSION_1_6_5:1.16
+	VERSION_1_5_3:1.14
+	VERSION_1_5_1:1.12
+	VERSION_1_4_6:1.11
+	VERSION_1_4_5:1.10
+	VERSION_1_4_4:1.10
+	VERSION_1_4_2:1.9
+	VERSION_1_3_15:1.4
+	VERSION_1_3_13:1.4
+	VERSION_1_3_11:1.4
+	VERSION_1_3_10:1.4
+	VERSION_1_3_9:1.4
+	VERSION_1_3_8:1.4
+	VERSION_1_3_6:1.4
+	VERSION_1_3_5:1.4;
+locks; strict;
+comment	@ * @;
+
+
+1.16
+date	2009.03.19.16.23.22;	author kristaps;	state dead;
+branches;
+next	1.15;
+
+1.15
+date	2009.03.19.11.49.00;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.03.15.07.08.53;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.03.09.13.35.09;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.03.09.13.04.01;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.03.08.19.32.03;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.03.08.18.50.40;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.08.18.02.36;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.08.11.41.22;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.02.23.15.38.20;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.02.23.12.45.19;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.23.07.09.13;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.22.22.58.39;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.16
+log
+@Pruned mmain.
+@
+text
+@@
+
+
+1.15
+log
+@Many more ASCII escapes added.
+Stripped nroff punt from mdocterm.c.
+Fixed multiple-file handling for mdocterm.c.
+Cleared up mdoc.h API.
+@
+text
+@a0 360
+/* $Id: mmain.c,v 1.14 2009/03/16 23:37:28 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <sys/stat.h>
+#include <sys/param.h>
+
+#include <assert.h>
+#include <fcntl.h>
+#include <err.h>
+#include <getopt.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+#include "mmain.h"
+
+#define	MD_LINE_SZ	(256)		/* Input line step-size. */
+
+struct	mmain {
+	int		  warn;		/* Warning flags. */
+#define	MD_WARN_SYNTAX	 (1 << 0)	/* Show syntax warnings. */
+#define	MD_WARN_COMPAT	 (1 << 1)	/* Show compat warnings. */
+#define	MD_WARN_ALL	 (0x03)		/* Show all warnings. */
+#define	MD_WARN_ERR	 (1 << 2)	/* Make warnings->errors. */
+	int		  dbg;		/* Debug level. */
+	struct mdoc	 *mdoc;		/* Active parser. */
+	char		 *buf;		/* Input buffer. */
+	size_t		  bufsz;	/* Input buffer size. */
+	const char	 *in; 		/* Input file name. */
+	int		  fdin;		/* Input file desc. */
+	int		  pflags;	/* Parse flags. */
+};
+
+extern	char	 	 *__progname;
+
+static	void		  usage(const char *, const char *);
+static	int		  optswarn(struct mmain *, char *);
+static	int		  optsopt(struct mmain *, char *);
+static	int		  parse(struct mmain *);
+static	void		  msg_msg(void *, int, int, const char *);
+static	int		  msg_err(void *, int, int, const char *);
+static	int		  msg_warn(void *, int, int, 
+				enum mdoc_warn, const char *);
+
+/*
+ * Print our and our caller's usage message.
+ */
+void
+usage(const char *help, const char *args)
+{
+
+	warnx("usage: %s %s%s[-v] [-foption...] [-Wwarn...]%s%s", 
+			__progname, 
+			help ? help : "", help ? " " : "",
+			args ? " " : "", args ? args : "");
+}
+
+
+/*
+ * Allocate the convenience library and initialise some values.
+ */ 
+struct mmain *
+mmain_alloc(void)
+{
+	struct mmain	*p;
+
+	if (NULL == (p = calloc(1, sizeof(struct mmain))))
+		err(1, "malloc");
+
+	return(p);
+}
+
+
+/*
+ * Parse command-line options.  Accepts a small (<28 char) opstring "u"
+ * parameter (e.g. "ho:") or NULL, a corresponding "help" string (e.g.
+ * "[-h] [-o output]" or NULL, a callback function for parsed arguments
+ * and an opaque pointer argument for that function.
+ */
+int
+mmain_getopt(struct mmain *p, int argc, char *argv[], 
+		const char *help, const char *args,
+		const char *u, void *arg,
+		int (*getopt_cb)(void *, int, char *))
+{
+	int		 c;
+	char		 opts[32]; /* XXX */
+	size_t		 sz;
+
+	extern int	 optind;
+
+	sz = strlcpy(opts, "VvW:f:", 32);
+	assert(sz < 32);
+
+	if (u) {
+		sz = strlcat(opts, u, 32);
+		assert(sz < 32);
+	}
+
+	optind = 1;
+
+	/* LINTED */
+	while (-1 != (c = getopt(argc, argv, opts)))
+		switch (c) {
+		case ('f'):
+			if ( ! optsopt(p, optarg))
+				mmain_exit(p, 1);
+			break;
+		case ('v'):
+			p->dbg++;
+			break;
+		case ('V'):
+			(void)printf("%s %s\n", __progname, VERSION);
+			mmain_exit(p, 0);
+			/* NOTREACHED */
+		case ('W'):
+			if ( ! optswarn(p, optarg))
+				mmain_exit(p, 1);
+			break;
+		case ('?'):
+			usage(help, args);
+			mmain_exit(p, 1);
+			/* NOTREACHED */
+		default:
+			assert(getopt_cb);
+			if ((*getopt_cb)(arg, c, optarg))
+				break;
+			mmain_exit(p, 1);
+			/* NOTREACHED */
+		}
+
+	return(optind);
+}
+
+
+void
+mmain_reset(struct mmain *p)
+{
+
+	if (p->mdoc)
+		mdoc_free(p->mdoc);
+	p->mdoc = NULL;
+}
+
+
+void
+mmain_free(struct mmain *p)
+{
+
+	if (p->mdoc)
+		mdoc_free(p->mdoc);
+	free(p);
+}
+
+
+__dead void
+mmain_exit(struct mmain *p, int code) 
+{
+
+	mmain_free(p);
+	exit(code);
+}
+
+
+void
+mmain_prepare(struct mmain *p, const char *in)
+{
+	struct stat	 st;
+
+	if ((p->in = in)) {
+		if (-1 == (p->fdin = open(p->in, O_RDONLY, 0))) {
+			warn("%s", p->in);
+			mmain_exit(p, 1);
+		}
+	} else {
+		p->fdin = STDIN_FILENO;
+		p->in = "-";
+	}
+
+	if (-1 == fstat(p->fdin, &st)) {
+		warn("%s", p->in);
+		p->bufsz = BUFSIZ;
+	} else 
+		p->bufsz = (unsigned)BUFSIZ > st.st_blksize ?
+			(size_t)BUFSIZ : st.st_blksize;
+
+	if (NULL == (p->buf = realloc(p->buf, p->bufsz)))
+		err(1, "realloc");
+}
+
+
+struct mdoc *
+mmain_process(struct mmain *p)
+{
+	int		 c;
+	struct mdoc_cb	 cb;
+
+	/* XXX - in mmain_alloc.*/
+	cb.mdoc_err = msg_err;
+	cb.mdoc_warn = msg_warn;
+	cb.mdoc_msg = msg_msg;
+
+	/* Allocate the parser. */
+
+	p->mdoc = mdoc_alloc(p, p->pflags, &cb);
+
+	/* Parse the input file. */
+
+	c = parse(p);
+	free(p->buf);
+
+	if (STDIN_FILENO != p->fdin)
+		if (-1 == close(p->fdin))
+			warn("%s", p->in);
+
+	return(c ? p->mdoc : NULL);
+}
+
+
+struct mdoc *
+mmain_mdoc(struct mmain *p, const char *in)
+{
+
+	mmain_prepare(p, in);
+	return(mmain_process(p));
+}
+
+
+static int
+optsopt(struct mmain *p, char *arg)
+{
+	char		*v;
+	char		*toks[] = { "ign-scope", "ign-escape", 
+				    "ign-macro", NULL };
+
+	while (*arg) 
+		switch (getsubopt(&arg, toks, &v)) {
+		case (0):
+			p->pflags |= MDOC_IGN_SCOPE;
+			break;
+		case (1):
+			p->pflags |= MDOC_IGN_ESCAPE;
+			break;
+		case (2):
+			p->pflags |= MDOC_IGN_MACRO;
+			break;
+		default:
+			warnx("unknown -f argument");
+			return(0);
+		}
+
+	return(1);
+}
+
+
+static int
+optswarn(struct mmain *p, char *arg)
+{
+	char		*v;
+	char		*toks[] = { "all", "compat", 
+				"syntax", "error", NULL };
+
+	while (*arg) 
+		switch (getsubopt(&arg, toks, &v)) {
+		case (0):
+			p->warn |= MD_WARN_ALL;
+			break;
+		case (1):
+			p->warn |= MD_WARN_COMPAT;
+			break;
+		case (2):
+			p->warn |= MD_WARN_SYNTAX;
+			break;
+		case (3):
+			p->warn |= MD_WARN_ERR;
+			break;
+		default:
+			warnx("unknown -W argument");
+			return(0);
+		}
+
+	return(1);
+}
+
+
+static int
+parse(struct mmain *p)
+{
+	ssize_t		 sz;
+	int		 j, i, pos, len, lnn;
+	char		*ln;
+
+	for (ln = NULL, lnn = 1, len = pos = 0; ; ) {
+		if (-1 == (sz = read(p->fdin, p->buf, p->bufsz))) {
+			warn("%s", p->in);
+			return(0);
+		} else if (0 == sz) 
+			break;
+
+		for (i = 0; i < (int)sz; i++) {
+			if (pos >= len) {
+				len += MD_LINE_SZ;
+				ln = realloc(ln, (size_t)len);
+				if (NULL == ln)
+					err(1, "realloc");
+			}
+
+			if ('\n' != p->buf[i]) {
+				ln[pos++] = p->buf[i];
+				continue;
+			}
+
+			/* Check for escaped newline.  */
+
+			if (pos > 0 && '\\' == ln[pos - 1]) {
+				for (j = pos - 1; j >= 0; j--)
+					if ('\\' != ln[j])
+						break;
+
+				if ( ! ((pos - j) % 2)) {
+					pos--;
+					lnn++;
+					continue;
+				}
+			}
+
+			ln[pos] = 0;
+			if ( ! mdoc_parseln(p->mdoc, lnn, ln)) {
+				free(ln);
+				return(0);
+			}
+			lnn++;
+			pos = 0;
+		}
+	}
+
+	if (ln)
+		free(ln);
+	if (pos > 0)
+		warnx("%s: file not eof-terminated", p->in);
+	return(mdoc_endparse(p->mdoc));
+}
+
+
+@
+
+
+1.14
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: mmain.c,v 1.13 2009/03/16 22:19:19 kristaps Exp $ */
+d186 1
+a186 4
+	p->in = in;
+	p->fdin = STDIN_FILENO;
+
+	if (0 != strcmp(p->in, "-"))
+d191 4
+a194 2
+
+	/* Allocate a buffer to be BUFSIZ/block size. */
+d200 2
+a201 1
+		p->bufsz = (size_t)MAX(st.st_blksize, BUFSIZ);
+d203 2
+a204 3
+	p->buf = malloc(p->bufsz);
+	if (NULL == p->buf)
+		err(1, "malloc");
+a360 56
+static int
+msg_err(void *arg, int line, int col, const char *msg)
+{
+	struct mmain	 *p;
+
+	p = (struct mmain *)arg;
+
+	warnx("%s:%d: error: %s (column %d)", 
+			p->in, line, msg, col);
+	return(0);
+}
+
+
+static void
+msg_msg(void *arg, int line, int col, const char *msg)
+{
+	struct mmain	 *p;
+
+	p = (struct mmain *)arg;
+
+	if (0 == p->dbg)
+		return;
+
+	warnx("%s:%d: debug: %s (column %d)", 
+			p->in, line, msg, col);
+}
+
+
+static int
+msg_warn(void *arg, int line, int col, 
+		enum mdoc_warn type, const char *msg)
+{
+	struct mmain	 *p;
+
+	p = (struct mmain *)arg;
+
+	switch (type) {
+	case (WARN_COMPAT):
+		if (p->warn & MD_WARN_COMPAT)
+			break;
+		return(1);
+	case (WARN_SYNTAX):
+		if (p->warn & MD_WARN_SYNTAX)
+			break;
+		return(1);
+	}
+
+	warnx("%s:%d: warning: %s (column %d)", 
+			p->in, line, msg, col);
+
+	if ( ! (p->warn & MD_WARN_ERR))
+		return(1);
+
+	warnx("%s: considering warnings as errors", __progname);
+	return(0);
+}
+@
+
+
+1.13
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.12 2009/03/15 07:08:53 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.12
+log
+@mdoclint accepts multiple files
+mdocterm punts to nroff if it fails parsing
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.11 2009/03/09 13:35:09 kristaps Exp $ */
+a60 7
+#ifdef __linux__
+extern	int		  getsubopt(char **, char *const *, char **);
+extern	size_t		  strlcpy(char *, const char *, size_t);
+extern	size_t		  strlcat(char *, const char *, size_t);
+#endif
+
+
+d172 1
+a172 1
+dead_pre void
+@
+
+
+1.11
+log
+@Fixed valgrind issues.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.10 2009/03/09 13:04:01 kristaps Exp $ */
+d45 1
+a45 1
+	char		 *in; 		/* Input file name. */
+d52 1
+d72 1
+a72 1
+mmain_usage(const char *help)
+d75 4
+a78 2
+	warnx("usage: %s %s%s[-v] [-foption...] [-Wwarn...] [infile]", __progname, 
+			help ? help : "", help ? " " : "");
+a92 3
+	p->in = "-";
+	p->fdin = STDIN_FILENO;
+
+d105 3
+a107 2
+		const char *help, const char *u, void *arg,
+		int (*getopt_cb)(void *, int, const char *))
+d130 1
+a130 1
+				return(-1);
+d137 2
+a138 1
+			return(0);
+d141 1
+a141 1
+				return(-1);
+d144 3
+a146 2
+			mmain_usage(help);
+			return(-1);
+d151 2
+a152 1
+			return(-1);
+d155 7
+a161 3
+	argv += optind;
+	if ((argc -= optind) > 0)
+		p->in = *argv++;
+d163 3
+a165 1
+	return(1);
+d169 2
+a170 2
+dead_pre void
+mmain_exit(struct mmain *p, int code) 
+d176 8
+d188 2
+a189 2
+struct mdoc *
+mmain_mdoc(struct mmain *p)
+a191 2
+	int		 c;
+	struct mdoc_cb	 cb;
+d193 2
+a194 3
+	cb.mdoc_err = msg_err;
+	cb.mdoc_warn = msg_warn;
+	cb.mdoc_msg = msg_msg;
+d199 1
+a199 1
+			return(0);
+d213 13
+d244 9
+@
+
+
+1.10
+log
+@Added "Input Encoding" section to mdoc*.1.
+Newline-escaped lines are concatenated.
+Added -fign-macro option.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.9 2009/03/08 19:32:03 kristaps Exp $ */
+d315 2
+a316 1
+			if ( ! mdoc_parseln(p->mdoc, lnn, ln))
+d318 1
+d324 2
+a327 3
+
+	if (ln)
+		free(ln);
+@
+
+
+1.9
+log
+@Fixed strings.sh to work with NetBSD.
+Fixed various lint warnings.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.8 2009/03/08 18:50:40 kristaps Exp $ */
+d220 2
+a221 1
+	char		*toks[] = { "ign-scope", "ign-escape", NULL };
+d231 3
+d235 1
+a235 1
+			/* FIXME: report? */
+d265 1
+a265 1
+			/* FIXME: report? */
+d277 2
+a278 2
+	int		 i, pos, len, lnn;
+	char		*line;
+d280 1
+a280 1
+	for (line = NULL, lnn = 1, len = pos = 0; ; ) {
+d290 2
+a291 2
+				line = realloc(line, (size_t)len);
+				if (NULL == line)
+d296 1
+a296 1
+				line[pos++] = p->buf[i];
+d300 16
+a315 2
+			line[pos] = 0;
+			if ( ! mdoc_parseln(p->mdoc, lnn, line))
+a316 1
+
+d322 5
+a326 2
+	if (line)
+		free(line);
+@
+
+
+1.8
+log
+@Removed static limitation of buffer size.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.7 2009/03/08 18:02:36 kristaps Exp $ */
+d44 1
+a44 1
+	u_long		  bufsz;	/* Input buffer size. */
+d193 1
+a193 1
+		p->bufsz = MAX(st.st_blksize, BUFSIZ);
+d286 1
+a286 1
+				line = realloc(line, len);
+@
+
+
+1.7
+log
+@Updated manuals.
+Added -fign-scope and -fign-escape.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.6 2009/03/08 11:41:22 kristaps Exp $ */
+d33 1
+a33 1
+#define	MD_LINE_SZ	(256)		/* Max input line size. */
+d272 3
+a274 14
+	ssize_t		 sz, i;
+	size_t		 pos;
+	char		 line[MD_LINE_SZ];
+	int		 lnn;
+
+	/*
+	 * This is a little more complicated than fgets.  TODO: have
+	 * some benchmarks that show it's faster (note that I want to
+	 * check many, many manuals simultaneously, so speed is
+	 * important).  Fill a buffer (sized to the block size) with a
+	 * single read, then parse \n-terminated lines into a line
+	 * buffer, which is passed to the parser.  Hard-code the line
+	 * buffer to a particular size -- a reasonable assumption.
+	 */
+d276 1
+a276 1
+	for (lnn = 1, pos = 0; ; ) {
+d283 8
+a290 1
+		for (i = 0; i < sz; i++) {
+d292 2
+a293 6
+				if (pos < sizeof(line)) {
+					line[(int)pos++] = p->buf[(int)i];
+					continue;
+				}
+				warnx("%s: line %d too long", p->in, lnn);
+				return(0);
+d295 2
+a296 2
+	
+			line[(int)pos] = 0;
+d305 2
+@
+
+
+1.6
+log
+@BROKEN CHECK-IN.  Wide-ranging updates.
+Removed libmdoc internal argv limit (all dynamic).
+Removed "data" union in mdoc_node (to be selectively re-added).
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.5 2009/03/06 14:13:47 kristaps Exp $ */
+d74 1
+a74 1
+	warnx("usage: %s %s%s[-v] [-Wwarn...] [infile]", __progname, 
+d201 1
+a201 1
+	p->mdoc = mdoc_alloc(p, &cb);
+d220 1
+a220 1
+	char		*toks[] = { "ignore-scope", NULL };
+d227 3
+d231 1
+d261 1
+@
+
+
+1.5
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.4 2009/02/23 15:38:20 kristaps Exp $ */
+d47 1
+d52 2
+a53 1
+static	int		  getsopts(struct mmain *, char *);
+d114 1
+a114 1
+	sz = strlcpy(opts, "VvW:", 32);
+d127 4
+d138 1
+a138 1
+			if ( ! getsopts(p, optarg))
+d217 20
+a236 1
+getsopts(struct mmain *p, char *arg)
+@
+
+
+1.4
+log
+@Cross-checked NetBSD compile changes to Linux.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.3 2009/02/23 12:45:19 kristaps Exp $ */
+d112 1
+a112 1
+	sz = strlcpy(opts, "vW:", 32);
+d128 3
+d133 1
+a133 1
+				return(0);
+d137 1
+a137 1
+			return(0);
+d142 1
+a142 1
+			return(0);
+@
+
+
+1.3
+log
+@More in-file documentation and Linux-isation.
+Moved mdoc_macros table definition into macro.c, where it belongs.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.2 2009/02/23 07:09:13 kristaps Exp $ */
+d150 2
+a151 2
+__dead void
+mmain_exit(struct mmain *p, int code)
+@
+
+
+1.2
+log
+@termact.c -> term.c
+term.c -> mdocterm.c
+tree.c -> mdoctree.c
+Fixed/finished mmain.h.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mmain.c,v 1.1 2009/02/22 22:58:39 kristaps Exp $ */
+d60 2
+a110 1
+	extern int	 optreset;
+d120 2
+@
+
+
+1.1
+log
+@BROKEN BUILD: migrating to mmain stuff.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.1 2009/02/21 21:00:06 kristaps Exp $ */
+d45 1
+a45 1
+	char		  in[MAXPATHLEN]; /* Input file name. */
+d63 3
+d75 3
+d86 1
+a86 1
+	(void)strlcpy(p->in, "-", MAXPATHLEN);
+d93 6
+d100 3
+a102 1
+mmain_isopt(int c)
+d104 6
+a109 11
+	
+	switch (c) {
+	case ('v'):
+		/* FALLTHROUGH */
+	case ('W'):
+		return(1);
+	default:
+		break;
+	}
+	return(0);
+}
+d111 2
+d114 4
+a117 5
+int
+mmain_getopt(struct mmain *p, int argc,
+		char *argv[], const char *help)
+{
+	int		 c;
+d119 2
+a120 1
+	while (-1 != (c = getopt(argc, argv, ":vW:")))
+d130 2
+a131 1
+			break;
+d133 3
+a135 1
+			mmain_usage(help);
+d140 2
+a141 1
+	argc -= optind;
+d143 1
+a143 8
+	if (0 == argc)
+		return(1);
+
+	if (strlcpy(p->in, *argv++, MAXPATHLEN) < MAXPATHLEN)
+		return(1);
+
+	warnx("filename too long");
+	return(0);
+@

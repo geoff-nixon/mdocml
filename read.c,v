@@ -1,0 +1,5608 @@
+head	1.146;
+access;
+symbols
+	VERSION_1_13_3:1.131
+	VERSION_1_13_2:1.104
+	VERSION_1_12_4:1.80
+	VERSION_1_13_1:1.79
+	VERSION_1_14:1.75.0.2
+	VERSION_1_12_3:1.39
+	VERSION_1_12_2:1.39
+	VERSION_1_12:1.80.0.2
+	VERSION_1_12_1:1.28
+	VERSION_1_12_0:1.25
+	VERSION_1_11_7:1.23
+	VERSION_1_11_6:1.23
+	VERSION_1_11_5:1.23
+	VERSION_1_11_4:1.15
+	VERSION_1_11_3:1.15
+	VERSION_1_11_2:1.14
+	VERSION_1_11_1:1.10;
+locks; strict;
+comment	@ * @;
+
+
+1.146
+date	2015.11.07.14.22.29;	author schwarze;	state Exp;
+branches;
+next	1.145;
+
+1.145
+date	2015.10.30.19.04.16;	author schwarze;	state Exp;
+branches;
+next	1.144;
+
+1.144
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.143;
+
+1.143
+date	2015.10.11.21.12.55;	author schwarze;	state Exp;
+branches;
+next	1.142;
+
+1.142
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.141;
+
+1.141
+date	2015.09.14.15.36.14;	author schwarze;	state Exp;
+branches;
+next	1.140;
+
+1.140
+date	2015.07.19.06.05.16;	author schwarze;	state Exp;
+branches;
+next	1.139;
+
+1.139
+date	2015.04.19.14.25.41;	author schwarze;	state Exp;
+branches;
+next	1.138;
+
+1.138
+date	2015.04.19.14.00.20;	author schwarze;	state Exp;
+branches;
+next	1.137;
+
+1.137
+date	2015.04.18.17.28.36;	author schwarze;	state Exp;
+branches;
+next	1.136;
+
+1.136
+date	2015.04.18.17.01.58;	author schwarze;	state Exp;
+branches;
+next	1.135;
+
+1.135
+date	2015.04.18.16.34.25;	author schwarze;	state Exp;
+branches;
+next	1.134;
+
+1.134
+date	2015.04.18.16.06.41;	author schwarze;	state Exp;
+branches;
+next	1.133;
+
+1.133
+date	2015.04.02.21.36.50;	author schwarze;	state Exp;
+branches;
+next	1.132;
+
+1.132
+date	2015.03.17.07.33.07;	author schwarze;	state Exp;
+branches;
+next	1.131;
+
+1.131
+date	2015.03.11.13.05.20;	author schwarze;	state Exp;
+branches;
+next	1.130;
+
+1.130
+date	2015.03.10.14.17.52;	author schwarze;	state Exp;
+branches;
+next	1.129;
+
+1.129
+date	2015.03.02.14.50.17;	author schwarze;	state Exp;
+branches;
+next	1.128;
+
+1.128
+date	2015.02.23.13.31.04;	author schwarze;	state Exp;
+branches;
+next	1.127;
+
+1.127
+date	2015.02.20.22.40.38;	author schwarze;	state Exp;
+branches;
+next	1.126;
+
+1.126
+date	2015.02.06.16.06.25;	author schwarze;	state Exp;
+branches;
+next	1.125;
+
+1.125
+date	2015.02.06.11.54.36;	author schwarze;	state Exp;
+branches;
+next	1.124;
+
+1.124
+date	2015.02.06.07.13.14;	author schwarze;	state Exp;
+branches;
+next	1.123;
+
+1.123
+date	2015.02.06.03.38.45;	author schwarze;	state Exp;
+branches;
+next	1.122;
+
+1.122
+date	2015.02.04.18.03.48;	author schwarze;	state Exp;
+branches;
+next	1.121;
+
+1.121
+date	2015.02.04.16.38.56;	author schwarze;	state Exp;
+branches;
+next	1.120;
+
+1.120
+date	2015.01.28.21.11.54;	author schwarze;	state Exp;
+branches;
+next	1.119;
+
+1.119
+date	2015.01.28.17.32.07;	author schwarze;	state Exp;
+branches;
+next	1.118;
+
+1.118
+date	2015.01.26.18.42.30;	author schwarze;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2015.01.26.13.03.48;	author schwarze;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2015.01.26.00.57.22;	author schwarze;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2015.01.24.01.58.33;	author schwarze;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2015.01.22.21.38.16;	author schwarze;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2015.01.22.19.26.50;	author schwarze;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2015.01.20.21.16.51;	author schwarze;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2015.01.15.04.26.40;	author schwarze;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2015.01.15.02.29.26;	author schwarze;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2015.01.14.22.58.16;	author schwarze;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2015.01.14.22.02.50;	author schwarze;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2015.01.14.17.49.15;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2014.12.28.14.42.27;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2014.12.16.23.44.41;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2014.12.01.04.14.14;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2014.11.30.05.29.00;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2014.11.30.02.36.38;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2014.11.28.18.09.01;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2014.11.28.06.27.05;	author schwarze;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2014.11.27.23.40.19;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2014.11.26.23.42.14;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2014.11.26.21.40.17;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2014.11.01.06.03.13;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2014.11.01.04.08.43;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2014.10.25.01.03.52;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2014.10.20.19.04.45;	author kristaps;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2014.10.18.15.57.34;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2014.10.12.19.31.41;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2014.10.11.21.14.16;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2014.09.12.00.54.10;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2014.09.11.23.53.30;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2014.09.07.23.25.01;	author schwarze;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2014.09.07.02.17.40;	author schwarze;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2014.09.06.23.24.32;	author schwarze;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2014.09.06.22.39.36;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2014.09.03.23.21.47;	author schwarze;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2014.08.06.15.09.05;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2014.08.01.17.27.44;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2014.08.01.15.08.46;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2014.07.31.09.22.21;	author schwarze;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2014.07.31.00.41.10;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2014.07.30.23.38.52;	author schwarze;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2014.07.30.17.06.26;	author schwarze;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2014.07.30.14.50.08;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2014.07.30.12.58.21;	author schwarze;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2014.07.30.00.19.16;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2014.07.09.11.31.43;	author schwarze;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2014.07.07.21.36.20;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2014.07.07.16.12.20;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2014.07.07.15.03.43;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2014.07.07.11.35.06;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2014.07.06.19.09.00;	author schwarze;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2014.07.05.12.34.17;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2014.07.05.01.12.20;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2014.07.04.16.12.08;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2014.07.04.01.50.07;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2014.07.03.23.24.56;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2014.07.03.21.23.54;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2014.07.02.13.10.45;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2014.07.02.11.43.20;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2014.07.02.03.48.07;	author schwarze;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2014.07.01.22.37.15;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2014.06.30.23.45.08;	author schwarze;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2014.06.25.00.20.19;	author schwarze;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2014.06.21.22.24.01;	author schwarze;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2014.06.20.23.02.31;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2014.06.20.17.24.00;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2014.04.20.22.04.04;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2014.03.19.22.20.43;	author schwarze;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2014.03.19.21.51.20;	author schwarze;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2014.01.06.21.34.31;	author schwarze;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2014.01.06.00.53.33;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2014.01.05.20.26.36;	author schwarze;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2014.01.02.16.29.55;	author schwarze;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2013.09.16.00.25.07;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2013.07.13.12.52.07;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2013.06.02.03.52.21;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2013.06.01.22.57.35;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2013.05.30.03.52.59;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2012.11.19.22.30.58;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2012.11.19.17.57.23;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2012.11.16.22.21.05;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2012.07.18.11.11.12;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2012.07.12.15.11.14;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2012.05.27.17.48.57;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2012.02.16.20.51.31;	author joerg;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2012.02.05.16.46.15;	author joerg;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2011.11.07.01.24.40;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.10.08.15.42.29;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.10.06.22.29.12;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.07.23.18.41.18;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.07.22.14.55.07;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.07.21.23.30.39;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.07.21.12.30.44;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.07.18.14.30.51;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.07.18.07.46.41;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.07.17.14.08.49;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.07.17.12.52.54;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.05.26.20.36.21;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.04.30.10.18.24;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.04.11.21.59.39;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.04.09.15.29.40;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.04.04.23.04.38;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.04.03.10.11.25;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.04.03.10.05.37;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.03.31.10.54.39;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.03.28.21.49.42;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.03.22.10.35.26;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.03.22.09.50.11;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.03.20.16.05.21;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.03.20.11.43.06;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.03.20.11.41.24;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.146
+log
+@Without HAVE_ERR, don't try to include <err.h>, it probably isn't there.
+In that case, the required prototypes are in "config.h".
+Patch from Peter Bray <pdb_ml at yahoo dot com dot au>.
+@
+text
+@/*	$Id: read.c,v 1.145 2015/10/30 19:04:16 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@@openbsd.org>
+ * Copyright (c) 2010, 2012 Joerg Sonnenberger <joerg@@netbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+#if HAVE_MMAP
+#include <sys/mman.h>
+#include <sys/stat.h>
+#endif
+
+#include <assert.h>
+#include <ctype.h>
+#if HAVE_ERR
+#include <err.h>
+#endif
+#include <errno.h>
+#include <fcntl.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <zlib.h>
+
+#include "mandoc_aux.h"
+#include "mandoc.h"
+#include "roff.h"
+#include "mdoc.h"
+#include "man.h"
+#include "libmandoc.h"
+#include "roff_int.h"
+
+#define	REPARSE_LIMIT	1000
+
+struct	mparse {
+	struct roff_man	 *man; /* man parser */
+	struct roff	 *roff; /* roff parser (!NULL) */
+	char		 *sodest; /* filename pointed to by .so */
+	const char	 *file; /* filename of current input file */
+	struct buf	 *primary; /* buffer currently being parsed */
+	struct buf	 *secondary; /* preprocessed copy of input */
+	const char	 *defos; /* default operating system */
+	mandocmsg	  mmsg; /* warning/error message handler */
+	enum mandoclevel  file_status; /* status of current parse */
+	enum mandoclevel  wlevel; /* ignore messages below this */
+	int		  options; /* parser options */
+	int		  gzip; /* current input file is gzipped */
+	int		  filenc; /* encoding of the current file */
+	int		  reparse_count; /* finite interp. stack */
+	int		  line; /* line number in the file */
+};
+
+static	void	  choose_parser(struct mparse *);
+static	void	  resize_buf(struct buf *, size_t);
+static	void	  mparse_buf_r(struct mparse *, struct buf, size_t, int);
+static	int	  read_whole_file(struct mparse *, const char *, int,
+				struct buf *, int *);
+static	void	  mparse_end(struct mparse *);
+static	void	  mparse_parse_buffer(struct mparse *, struct buf,
+			const char *);
+
+static	const enum mandocerr	mandoclimits[MANDOCLEVEL_MAX] = {
+	MANDOCERR_OK,
+	MANDOCERR_WARNING,
+	MANDOCERR_WARNING,
+	MANDOCERR_ERROR,
+	MANDOCERR_UNSUPP,
+	MANDOCERR_MAX,
+	MANDOCERR_MAX
+};
+
+static	const char * const	mandocerrs[MANDOCERR_MAX] = {
+	"ok",
+
+	"generic warning",
+
+	/* related to the prologue */
+	"missing manual title, using UNTITLED",
+	"missing manual title, using \"\"",
+	"lower case character in document title",
+	"missing manual section, using \"\"",
+	"unknown manual section",
+	"missing date, using today's date",
+	"cannot parse date, using it verbatim",
+	"missing Os macro, using \"\"",
+	"duplicate prologue macro",
+	"late prologue macro",
+	"skipping late title macro",
+	"prologue macros out of order",
+
+	/* related to document structure */
+	".so is fragile, better use ln(1)",
+	"no document body",
+	"content before first section header",
+	"first section is not \"NAME\"",
+	"NAME section without name",
+	"NAME section without description",
+	"description not at the end of NAME",
+	"bad NAME section content",
+	"missing description line, using \"\"",
+	"sections out of conventional order",
+	"duplicate section title",
+	"unexpected section",
+	"unusual Xr order",
+	"unusual Xr punctuation",
+	"AUTHORS section without An macro",
+
+	/* related to macros and nesting */
+	"obsolete macro",
+	"macro neither callable nor escaped",
+	"skipping paragraph macro",
+	"moving paragraph macro out of list",
+	"skipping no-space macro",
+	"blocks badly nested",
+	"nested displays are not portable",
+	"moving content out of list",
+	"fill mode already enabled, skipping",
+	"fill mode already disabled, skipping",
+	"line scope broken",
+
+	/* related to missing macro arguments */
+	"skipping empty request",
+	"conditional request controls empty scope",
+	"skipping empty macro",
+	"empty block",
+	"empty argument, using 0n",
+	"missing display type, using -ragged",
+	"list type is not the first argument",
+	"missing -width in -tag list, using 8n",
+	"missing utility name, using \"\"",
+	"missing function name, using \"\"",
+	"empty head in list item",
+	"empty list item",
+	"missing font type, using \\fR",
+	"unknown font type, using \\fR",
+	"nothing follows prefix",
+	"empty reference block",
+	"missing -std argument, adding it",
+	"missing option string, using \"\"",
+	"missing resource identifier, using \"\"",
+	"missing eqn box, using \"\"",
+
+	/* related to bad macro arguments */
+	"unterminated quoted argument",
+	"duplicate argument",
+	"skipping duplicate argument",
+	"skipping duplicate display type",
+	"skipping duplicate list type",
+	"skipping -width argument",
+	"wrong number of cells",
+	"unknown AT&T UNIX version",
+	"comma in function argument",
+	"parenthesis in function name",
+	"invalid content in Rs block",
+	"invalid Boolean argument",
+	"unknown font, skipping request",
+	"odd number of characters in request",
+
+	/* related to plain text */
+	"blank line in fill mode, using .sp",
+	"tab in filled text",
+	"whitespace at end of input line",
+	"bad comment style",
+	"invalid escape sequence",
+	"undefined string, using \"\"",
+
+	/* related to tables */
+	"tbl line starts with span",
+	"tbl column starts with span",
+	"skipping vertical bar in tbl layout",
+
+	"generic error",
+
+	/* related to tables */
+	"non-alphabetic character in tbl options",
+	"skipping unknown tbl option",
+	"missing tbl option argument",
+	"wrong tbl option argument size",
+	"empty tbl layout",
+	"invalid character in tbl layout",
+	"unmatched parenthesis in tbl layout",
+	"tbl without any data cells",
+	"ignoring data in spanned tbl cell",
+	"ignoring extra tbl data cells",
+	"data block open at end of tbl",
+
+	/* related to document structure and macros */
+	NULL,
+	"input stack limit exceeded, infinite loop?",
+	"skipping bad character",
+	"skipping unknown macro",
+	"skipping insecure request",
+	"skipping item outside list",
+	"skipping column outside column list",
+	"skipping end of block that is not open",
+	"fewer RS blocks open, skipping",
+	"inserting missing end of block",
+	"appending missing end of block",
+
+	/* related to request and macro arguments */
+	"escaped character not allowed in a name",
+	"NOT IMPLEMENTED: Bd -file",
+	"skipping display without arguments",
+	"missing list type, using -item",
+	"missing manual name, using \"\"",
+	"uname(3) system call failed, using UNKNOWN",
+	"unknown standard specifier",
+	"skipping request without numeric argument",
+	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
+	".so request failed",
+	"skipping all arguments",
+	"skipping excess arguments",
+	"divide by zero",
+
+	"unsupported feature",
+	"input too large",
+	"unsupported control character",
+	"unsupported roff request",
+	"eqn delim option in tbl",
+	"unsupported tbl layout modifier",
+	"ignoring macro in table",
+};
+
+static	const char * const	mandoclevels[MANDOCLEVEL_MAX] = {
+	"SUCCESS",
+	"RESERVED",
+	"WARNING",
+	"ERROR",
+	"UNSUPP",
+	"BADARG",
+	"SYSERR"
+};
+
+
+static void
+resize_buf(struct buf *buf, size_t initial)
+{
+
+	buf->sz = buf->sz > initial/2 ? 2 * buf->sz : initial;
+	buf->buf = mandoc_realloc(buf->buf, buf->sz);
+}
+
+static void
+choose_parser(struct mparse *curp)
+{
+	char		*cp, *ep;
+	int		 format;
+
+	/*
+	 * If neither command line arguments -mdoc or -man select
+	 * a parser nor the roff parser found a .Dd or .TH macro
+	 * yet, look ahead in the main input buffer.
+	 */
+
+	if ((format = roff_getformat(curp->roff)) == 0) {
+		cp = curp->primary->buf;
+		ep = cp + curp->primary->sz;
+		while (cp < ep) {
+			if (*cp == '.' || *cp == '\'') {
+				cp++;
+				if (cp[0] == 'D' && cp[1] == 'd') {
+					format = MPARSE_MDOC;
+					break;
+				}
+				if (cp[0] == 'T' && cp[1] == 'H') {
+					format = MPARSE_MAN;
+					break;
+				}
+			}
+			cp = memchr(cp, '\n', ep - cp);
+			if (cp == NULL)
+				break;
+			cp++;
+		}
+	}
+
+	if (curp->man == NULL) {
+		curp->man = roff_man_alloc(curp->roff, curp, curp->defos,
+		    curp->options & MPARSE_QUICK ? 1 : 0);
+		curp->man->macroset = MACROSET_MAN;
+		curp->man->first->tok = TOKEN_NONE;
+	}
+
+	if (format == MPARSE_MDOC) {
+		mdoc_hash_init();
+		curp->man->macroset = MACROSET_MDOC;
+		curp->man->first->tok = TOKEN_NONE;
+	} else {
+		man_hash_init();
+		curp->man->macroset = MACROSET_MAN;
+		curp->man->first->tok = TOKEN_NONE;
+	}
+}
+
+/*
+ * Main parse routine for a buffer.
+ * It assumes encoding and line numbering are already set up.
+ * It can recurse directly (for invocations of user-defined
+ * macros, inline equations, and input line traps)
+ * and indirectly (for .so file inclusion).
+ */
+static void
+mparse_buf_r(struct mparse *curp, struct buf blk, size_t i, int start)
+{
+	const struct tbl_span	*span;
+	struct buf	 ln;
+	const char	*save_file;
+	char		*cp;
+	size_t		 pos; /* byte number in the ln buffer */
+	enum rofferr	 rr;
+	int		 of;
+	int		 lnn; /* line number in the real file */
+	int		 fd;
+	unsigned char	 c;
+
+	memset(&ln, 0, sizeof(ln));
+
+	lnn = curp->line;
+	pos = 0;
+
+	while (i < blk.sz) {
+		if (0 == pos && '\0' == blk.buf[i])
+			break;
+
+		if (start) {
+			curp->line = lnn;
+			curp->reparse_count = 0;
+
+			if (lnn < 3 &&
+			    curp->filenc & MPARSE_UTF8 &&
+			    curp->filenc & MPARSE_LATIN1)
+				curp->filenc = preconv_cue(&blk, i);
+		}
+
+		while (i < blk.sz && (start || blk.buf[i] != '\0')) {
+
+			/*
+			 * When finding an unescaped newline character,
+			 * leave the character loop to process the line.
+			 * Skip a preceding carriage return, if any.
+			 */
+
+			if ('\r' == blk.buf[i] && i + 1 < blk.sz &&
+			    '\n' == blk.buf[i + 1])
+				++i;
+			if ('\n' == blk.buf[i]) {
+				++i;
+				++lnn;
+				break;
+			}
+
+			/*
+			 * Make sure we have space for the worst
+			 * case of 11 bytes: "\\[u10ffff]\0"
+			 */
+
+			if (pos + 11 > ln.sz)
+				resize_buf(&ln, 256);
+
+			/*
+			 * Encode 8-bit input.
+			 */
+
+			c = blk.buf[i];
+			if (c & 0x80) {
+				if ( ! (curp->filenc && preconv_encode(
+				    &blk, &i, &ln, &pos, &curp->filenc))) {
+					mandoc_vmsg(MANDOCERR_CHAR_BAD, curp,
+					    curp->line, pos, "0x%x", c);
+					ln.buf[pos++] = '?';
+					i++;
+				}
+				continue;
+			}
+
+			/*
+			 * Exclude control characters.
+			 */
+
+			if (c == 0x7f || (c < 0x20 && c != 0x09)) {
+				mandoc_vmsg(c == 0x00 || c == 0x04 ||
+				    c > 0x0a ? MANDOCERR_CHAR_BAD :
+				    MANDOCERR_CHAR_UNSUPP,
+				    curp, curp->line, pos, "0x%x", c);
+				i++;
+				if (c != '\r')
+					ln.buf[pos++] = '?';
+				continue;
+			}
+
+			/* Trailing backslash = a plain char. */
+
+			if (blk.buf[i] != '\\' || i + 1 == blk.sz) {
+				ln.buf[pos++] = blk.buf[i++];
+				continue;
+			}
+
+			/*
+			 * Found escape and at least one other character.
+			 * When it's a newline character, skip it.
+			 * When there is a carriage return in between,
+			 * skip that one as well.
+			 */
+
+			if ('\r' == blk.buf[i + 1] && i + 2 < blk.sz &&
+			    '\n' == blk.buf[i + 2])
+				++i;
+			if ('\n' == blk.buf[i + 1]) {
+				i += 2;
+				++lnn;
+				continue;
+			}
+
+			if ('"' == blk.buf[i + 1] || '#' == blk.buf[i + 1]) {
+				i += 2;
+				/* Comment, skip to end of line */
+				for (; i < blk.sz; ++i) {
+					if ('\n' == blk.buf[i]) {
+						++i;
+						++lnn;
+						break;
+					}
+				}
+
+				/* Backout trailing whitespaces */
+				for (; pos > 0; --pos) {
+					if (ln.buf[pos - 1] != ' ')
+						break;
+					if (pos > 2 && ln.buf[pos - 2] == '\\')
+						break;
+				}
+				break;
+			}
+
+			/* Catch escaped bogus characters. */
+
+			c = (unsigned char) blk.buf[i+1];
+
+			if ( ! (isascii(c) &&
+			    (isgraph(c) || isblank(c)))) {
+				mandoc_vmsg(MANDOCERR_CHAR_BAD, curp,
+				    curp->line, pos, "0x%x", c);
+				i += 2;
+				ln.buf[pos++] = '?';
+				continue;
+			}
+
+			/* Some other escape sequence, copy & cont. */
+
+			ln.buf[pos++] = blk.buf[i++];
+			ln.buf[pos++] = blk.buf[i++];
+		}
+
+		if (pos >= ln.sz)
+			resize_buf(&ln, 256);
+
+		ln.buf[pos] = '\0';
+
+		/*
+		 * A significant amount of complexity is contained by
+		 * the roff preprocessor.  It's line-oriented but can be
+		 * expressed on one line, so we need at times to
+		 * readjust our starting point and re-run it.  The roff
+		 * preprocessor can also readjust the buffers with new
+		 * data, so we pass them in wholesale.
+		 */
+
+		of = 0;
+
+		/*
+		 * Maintain a lookaside buffer of all parsed lines.  We
+		 * only do this if mparse_keep() has been invoked (the
+		 * buffer may be accessed with mparse_getkeep()).
+		 */
+
+		if (curp->secondary) {
+			curp->secondary->buf = mandoc_realloc(
+			    curp->secondary->buf,
+			    curp->secondary->sz + pos + 2);
+			memcpy(curp->secondary->buf +
+			    curp->secondary->sz,
+			    ln.buf, pos);
+			curp->secondary->sz += pos;
+			curp->secondary->buf
+				[curp->secondary->sz] = '\n';
+			curp->secondary->sz++;
+			curp->secondary->buf
+				[curp->secondary->sz] = '\0';
+		}
+rerun:
+		rr = roff_parseln(curp->roff, curp->line, &ln, &of);
+
+		switch (rr) {
+		case ROFF_REPARSE:
+			if (REPARSE_LIMIT >= ++curp->reparse_count)
+				mparse_buf_r(curp, ln, of, 0);
+			else
+				mandoc_msg(MANDOCERR_ROFFLOOP, curp,
+				    curp->line, pos, NULL);
+			pos = 0;
+			continue;
+		case ROFF_APPEND:
+			pos = strlen(ln.buf);
+			continue;
+		case ROFF_RERUN:
+			goto rerun;
+		case ROFF_IGN:
+			pos = 0;
+			continue;
+		case ROFF_SO:
+			if ( ! (curp->options & MPARSE_SO) &&
+			    (i >= blk.sz || blk.buf[i] == '\0')) {
+				curp->sodest = mandoc_strdup(ln.buf + of);
+				free(ln.buf);
+				return;
+			}
+			/*
+			 * We remove `so' clauses from our lookaside
+			 * buffer because we're going to descend into
+			 * the file recursively.
+			 */
+			if (curp->secondary)
+				curp->secondary->sz -= pos + 1;
+			save_file = curp->file;
+			if (mparse_open(curp, &fd, ln.buf + of) ==
+			    MANDOCLEVEL_OK) {
+				mparse_readfd(curp, fd, ln.buf + of);
+				curp->file = save_file;
+			} else {
+				curp->file = save_file;
+				mandoc_vmsg(MANDOCERR_SO_FAIL,
+				    curp, curp->line, pos,
+				    ".so %s", ln.buf + of);
+				ln.sz = mandoc_asprintf(&cp,
+				    ".sp\nSee the file %s.\n.sp",
+				    ln.buf + of);
+				free(ln.buf);
+				ln.buf = cp;
+				of = 0;
+				mparse_buf_r(curp, ln, of, 0);
+			}
+			pos = 0;
+			continue;
+		default:
+			break;
+		}
+
+		/*
+		 * If input parsers have not been allocated, do so now.
+		 * We keep these instanced between parsers, but set them
+		 * locally per parse routine since we can use different
+		 * parsers with each one.
+		 */
+
+		if (curp->man == NULL ||
+		    curp->man->macroset == MACROSET_NONE)
+			choose_parser(curp);
+
+		/*
+		 * Lastly, push down into the parsers themselves.
+		 * If libroff returns ROFF_TBL, then add it to the
+		 * currently open parse.  Since we only get here if
+		 * there does exist data (see tbl_data.c), we're
+		 * guaranteed that something's been allocated.
+		 * Do the same for ROFF_EQN.
+		 */
+
+		if (rr == ROFF_TBL)
+			while ((span = roff_span(curp->roff)) != NULL)
+				roff_addtbl(curp->man, span);
+		else if (rr == ROFF_EQN)
+			roff_addeqn(curp->man, roff_eqn(curp->roff));
+		else if ((curp->man->macroset == MACROSET_MDOC ?
+		    mdoc_parseln(curp->man, curp->line, ln.buf, of) :
+		    man_parseln(curp->man, curp->line, ln.buf, of)) == 2)
+				break;
+
+		/* Temporary buffers typically are not full. */
+
+		if (0 == start && '\0' == blk.buf[i])
+			break;
+
+		/* Start the next input line. */
+
+		pos = 0;
+	}
+
+	free(ln.buf);
+}
+
+static int
+read_whole_file(struct mparse *curp, const char *file, int fd,
+		struct buf *fb, int *with_mmap)
+{
+	gzFile		 gz;
+	size_t		 off;
+	ssize_t		 ssz;
+
+#if HAVE_MMAP
+	struct stat	 st;
+
+	if (fstat(fd, &st) == -1)
+		err((int)MANDOCLEVEL_SYSERR, "%s", file);
+
+	/*
+	 * If we're a regular file, try just reading in the whole entry
+	 * via mmap().  This is faster than reading it into blocks, and
+	 * since each file is only a few bytes to begin with, I'm not
+	 * concerned that this is going to tank any machines.
+	 */
+
+	if (curp->gzip == 0 && S_ISREG(st.st_mode)) {
+		if (st.st_size > 0x7fffffff) {
+			mandoc_msg(MANDOCERR_TOOLARGE, curp, 0, 0, NULL);
+			return 0;
+		}
+		*with_mmap = 1;
+		fb->sz = (size_t)st.st_size;
+		fb->buf = mmap(NULL, fb->sz, PROT_READ, MAP_SHARED, fd, 0);
+		if (fb->buf != MAP_FAILED)
+			return 1;
+	}
+#endif
+
+	if (curp->gzip) {
+		if ((gz = gzdopen(fd, "rb")) == NULL)
+			err((int)MANDOCLEVEL_SYSERR, "%s", file);
+	} else
+		gz = NULL;
+
+	/*
+	 * If this isn't a regular file (like, say, stdin), then we must
+	 * go the old way and just read things in bit by bit.
+	 */
+
+	*with_mmap = 0;
+	off = 0;
+	fb->sz = 0;
+	fb->buf = NULL;
+	for (;;) {
+		if (off == fb->sz) {
+			if (fb->sz == (1U << 31)) {
+				mandoc_msg(MANDOCERR_TOOLARGE, curp,
+				    0, 0, NULL);
+				break;
+			}
+			resize_buf(fb, 65536);
+		}
+		ssz = curp->gzip ?
+		    gzread(gz, fb->buf + (int)off, fb->sz - off) :
+		    read(fd, fb->buf + (int)off, fb->sz - off);
+		if (ssz == 0) {
+			fb->sz = off;
+			return 1;
+		}
+		if (ssz == -1)
+			err((int)MANDOCLEVEL_SYSERR, "%s", file);
+		off += (size_t)ssz;
+	}
+
+	free(fb->buf);
+	fb->buf = NULL;
+	return 0;
+}
+
+static void
+mparse_end(struct mparse *curp)
+{
+
+	if (curp->man == NULL && curp->sodest == NULL)
+		curp->man = roff_man_alloc(curp->roff, curp, curp->defos,
+		    curp->options & MPARSE_QUICK ? 1 : 0);
+	if (curp->man->macroset == MACROSET_NONE)
+		curp->man->macroset = MACROSET_MAN;
+	if (curp->man->macroset == MACROSET_MDOC)
+		mdoc_endparse(curp->man);
+	else
+		man_endparse(curp->man);
+	roff_endparse(curp->roff);
+}
+
+static void
+mparse_parse_buffer(struct mparse *curp, struct buf blk, const char *file)
+{
+	struct buf	*svprimary;
+	const char	*svfile;
+	size_t		 offset;
+	static int	 recursion_depth;
+
+	if (64 < recursion_depth) {
+		mandoc_msg(MANDOCERR_ROFFLOOP, curp, curp->line, 0, NULL);
+		return;
+	}
+
+	/* Line number is per-file. */
+	svfile = curp->file;
+	curp->file = file;
+	svprimary = curp->primary;
+	curp->primary = &blk;
+	curp->line = 1;
+	recursion_depth++;
+
+	/* Skip an UTF-8 byte order mark. */
+	if (curp->filenc & MPARSE_UTF8 && blk.sz > 2 &&
+	    (unsigned char)blk.buf[0] == 0xef &&
+	    (unsigned char)blk.buf[1] == 0xbb &&
+	    (unsigned char)blk.buf[2] == 0xbf) {
+		offset = 3;
+		curp->filenc &= ~MPARSE_LATIN1;
+	} else
+		offset = 0;
+
+	mparse_buf_r(curp, blk, offset, 1);
+
+	if (--recursion_depth == 0)
+		mparse_end(curp);
+
+	curp->primary = svprimary;
+	curp->file = svfile;
+}
+
+enum mandoclevel
+mparse_readmem(struct mparse *curp, void *buf, size_t len,
+		const char *file)
+{
+	struct buf blk;
+
+	blk.buf = buf;
+	blk.sz = len;
+
+	mparse_parse_buffer(curp, blk, file);
+	return curp->file_status;
+}
+
+/*
+ * Read the whole file into memory and call the parsers.
+ * Called recursively when an .so request is encountered.
+ */
+enum mandoclevel
+mparse_readfd(struct mparse *curp, int fd, const char *file)
+{
+	struct buf	 blk;
+	int		 with_mmap;
+	int		 save_filenc;
+
+	if (read_whole_file(curp, file, fd, &blk, &with_mmap)) {
+		save_filenc = curp->filenc;
+		curp->filenc = curp->options &
+		    (MPARSE_UTF8 | MPARSE_LATIN1);
+		mparse_parse_buffer(curp, blk, file);
+		curp->filenc = save_filenc;
+#if HAVE_MMAP
+		if (with_mmap)
+			munmap(blk.buf, blk.sz);
+		else
+#endif
+			free(blk.buf);
+	}
+
+	if (fd != STDIN_FILENO && close(fd) == -1)
+		perror(file);
+
+	return curp->file_status;
+}
+
+enum mandoclevel
+mparse_open(struct mparse *curp, int *fd, const char *file)
+{
+	char		 *cp;
+
+	curp->file = file;
+	cp = strrchr(file, '.');
+	curp->gzip = (cp != NULL && ! strcmp(cp + 1, "gz"));
+
+	/* First try to use the filename as it is. */
+
+	if ((*fd = open(file, O_RDONLY)) != -1)
+		return MANDOCLEVEL_OK;
+
+	/*
+	 * If that doesn't work and the filename doesn't
+	 * already  end in .gz, try appending .gz.
+	 */
+
+	if ( ! curp->gzip) {
+		mandoc_asprintf(&cp, "%s.gz", file);
+		*fd = open(file, O_RDONLY);
+		free(cp);
+		if (*fd != -1) {
+			curp->gzip = 1;
+			return MANDOCLEVEL_OK;
+		}
+	}
+
+	/* Neither worked, give up. */
+
+	mandoc_msg(MANDOCERR_FILE, curp, 0, 0, strerror(errno));
+	return MANDOCLEVEL_ERROR;
+}
+
+struct mparse *
+mparse_alloc(int options, enum mandoclevel wlevel, mandocmsg mmsg,
+    const char *defos)
+{
+	struct mparse	*curp;
+
+	curp = mandoc_calloc(1, sizeof(struct mparse));
+
+	curp->options = options;
+	curp->wlevel = wlevel;
+	curp->mmsg = mmsg;
+	curp->defos = defos;
+
+	curp->roff = roff_alloc(curp, options);
+	curp->man = roff_man_alloc( curp->roff, curp, curp->defos,
+		curp->options & MPARSE_QUICK ? 1 : 0);
+	if (curp->options & MPARSE_MDOC) {
+		mdoc_hash_init();
+		curp->man->macroset = MACROSET_MDOC;
+	} else if (curp->options & MPARSE_MAN) {
+		man_hash_init();
+		curp->man->macroset = MACROSET_MAN;
+	}
+	curp->man->first->tok = TOKEN_NONE;
+	return curp;
+}
+
+void
+mparse_reset(struct mparse *curp)
+{
+
+	roff_reset(curp->roff);
+
+	if (curp->man != NULL)
+		roff_man_reset(curp->man);
+	if (curp->secondary)
+		curp->secondary->sz = 0;
+
+	curp->file_status = MANDOCLEVEL_OK;
+
+	free(curp->sodest);
+	curp->sodest = NULL;
+}
+
+void
+mparse_free(struct mparse *curp)
+{
+
+	roff_man_free(curp->man);
+	if (curp->roff)
+		roff_free(curp->roff);
+	if (curp->secondary)
+		free(curp->secondary->buf);
+
+	free(curp->secondary);
+	free(curp->sodest);
+	free(curp);
+}
+
+void
+mparse_result(struct mparse *curp, struct roff_man **man,
+	char **sodest)
+{
+
+	if (sodest && NULL != (*sodest = curp->sodest)) {
+		*man = NULL;
+		return;
+	}
+	if (man)
+		*man = curp->man;
+}
+
+void
+mandoc_vmsg(enum mandocerr t, struct mparse *m,
+		int ln, int pos, const char *fmt, ...)
+{
+	char		 buf[256];
+	va_list		 ap;
+
+	va_start(ap, fmt);
+	(void)vsnprintf(buf, sizeof(buf), fmt, ap);
+	va_end(ap);
+
+	mandoc_msg(t, m, ln, pos, buf);
+}
+
+void
+mandoc_msg(enum mandocerr er, struct mparse *m,
+		int ln, int col, const char *msg)
+{
+	enum mandoclevel level;
+
+	level = MANDOCLEVEL_UNSUPP;
+	while (er < mandoclimits[level])
+		level--;
+
+	if (level < m->wlevel && er != MANDOCERR_FILE)
+		return;
+
+	if (m->mmsg)
+		(*m->mmsg)(er, level, m->file, ln, col, msg);
+
+	if (m->file_status < level)
+		m->file_status = level;
+}
+
+const char *
+mparse_strerror(enum mandocerr er)
+{
+
+	return mandocerrs[er];
+}
+
+const char *
+mparse_strlevel(enum mandoclevel lvl)
+{
+	return mandoclevels[lvl];
+}
+
+void
+mparse_keep(struct mparse *p)
+{
+
+	assert(NULL == p->secondary);
+	p->secondary = mandoc_calloc(1, sizeof(struct buf));
+}
+
+const char *
+mparse_getkeep(const struct mparse *p)
+{
+
+	assert(p->secondary);
+	return p->secondary->sz ? p->secondary->buf : NULL;
+}
+@
+
+
+1.145
+log
+@If a .Bd block has no arguments at all, drop the block and only keep
+its contents.  Removing a gratuitious difference to groff output
+found after a related bug report from krw@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.144 2015/10/13 22:59:54 schwarze Exp $ */
+d29 1
+d31 1
+@
+
+
+1.144
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.143 2015/10/11 21:12:55 schwarze Exp $ */
+d218 1
+@
+
+
+1.143
+log
+@Finally use __progname, err(3) and warn(3).
+That's more readable and less error-prone than fumbling around
+with argv[0], fprintf(3), strerror(3), perror(3), and exit(3).
+
+It's a bad idea to boycott good interfaces merely because standards
+committees ignore them.  Instead, let's provide compatibility modules
+for archaic systems (like commercial Solaris) that still don't have
+them.  The compat module has an UCB Copyright (c) 1993...
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.142 2015/10/06 18:32:19 schwarze Exp $ */
+a52 1
+	const struct mchars *mchars; /* character table */
+d817 1
+a817 1
+    const struct mchars *mchars, const char *defos)
+d828 1
+a828 2
+	curp->mchars = mchars;
+	curp->roff = roff_alloc(curp, curp->mchars, options);
+@
+
+
+1.142
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.141 2015/09/14 15:36:14 schwarze Exp $ */
+d29 1
+d616 3
+a618 4
+	if (-1 == fstat(fd, &st)) {
+		perror(file);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+d641 2
+a642 4
+		if ((gz = gzdopen(fd, "rb")) == NULL) {
+			perror(file);
+			exit((int)MANDOCLEVEL_SYSERR);
+		}
+d671 2
+a672 4
+		if (ssz == -1) {
+			perror(file);
+			exit((int)MANDOCLEVEL_SYSERR);
+		}
+@
+
+
+1.141
+log
+@Remove the warning about children of .Vt blocks because actually,
+.Vt type global_variable No = Dv defined_constant ;
+is the best way to specify in the SYNOPSIS how a global variable
+is initialized in the rare case where that matters.
+Issue noticed by jmc@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.140 2015/07/19 06:05:16 schwarze Exp $ */
+d630 1
+a630 1
+			return(0);
+d636 1
+a636 1
+			return(1);
+d671 1
+a671 1
+			return(1);
+d682 1
+a682 1
+	return(0);
+d751 1
+a751 1
+	return(curp->file_status);
+d782 1
+a782 1
+	return(curp->file_status);
+d797 1
+a797 1
+		return(MANDOCLEVEL_OK);
+d810 1
+a810 1
+			return(MANDOCLEVEL_OK);
+d817 1
+a817 1
+	return(MANDOCLEVEL_ERROR);
+d845 1
+a845 1
+	return(curp);
+d931 1
+a931 1
+	return(mandocerrs[er]);
+d937 1
+a937 1
+	return(mandoclevels[lvl]);
+d953 1
+a953 1
+	return(p->secondary->sz ? p->secondary->buf : NULL);
+@
+
+
+1.140
+log
+@Do not fork and exec gunzip(1), just link with libz instead.
+As discussed with deraadt@@, that's cleaner and will help tame(2).
+Something like this was also suggested earlier by bapt at FreeBSD.
+Minus 50 lines of code, deleting one interface function (mparse_wait),
+no functional change intended.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.139 2015/04/19 14:25:41 schwarze Exp $ */
+a131 1
+	".Vt block has child macro",
+@
+
+
+1.139
+log
+@Unify some node handling functions that use TOKEN_NONE.
+* mdoc_word_alloc(), man_word_alloc() -> roff_word_alloc()
+* mdoc_word_append(), man_word_append() -> roff_word_append()
+* mdoc_addspan(), man_addspan() -> roff_addtbl()
+* mdoc_addeqn(), man_addeqn() -> roff_addeqn()
+Minus 50 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.138 2015/04/19 14:00:20 schwarze Exp $ */
+a25 1
+#include <sys/wait.h>
+a30 1
+#include <signal.h>
+d37 1
+d62 1
+a65 1
+	pid_t		  child; /* the gunzip(1) process */
+a328 1
+	pid_t		 save_child;
+a539 1
+			save_child = curp->child;
+a556 1
+			curp->child = save_child;
+d610 1
+d628 1
+a628 1
+	if (S_ISREG(st.st_mode)) {
+d641 8
+d667 3
+a669 1
+		ssz = read(fd, fb->buf + (int)off, fb->sz - off);
+a782 1
+	mparse_wait(curp);
+a788 2
+	int		  pfd[2];
+	int		  save_errno;
+d792 2
+d795 1
+a795 1
+	/* Unless zipped, try to just open the file. */
+d797 2
+a798 5
+	if ((cp = strrchr(file, '.')) == NULL ||
+	    strcmp(cp + 1, "gz")) {
+		curp->child = 0;
+		if ((*fd = open(file, O_RDONLY)) != -1)
+			return(MANDOCLEVEL_OK);
+d800 4
+a803 1
+		/* Open failed; try to append ".gz". */
+d805 1
+d807 1
+a807 10
+		file = cp;
+	} else
+		cp = NULL;
+
+	/* Before forking, make sure the file can be read. */
+
+	save_errno = errno;
+	if (access(file, R_OK) == -1) {
+		if (cp != NULL)
+			errno = save_errno;
+d809 3
+a811 22
+		*fd = -1;
+		curp->child = 0;
+		mandoc_msg(MANDOCERR_FILE, curp, 0, 0, strerror(errno));
+		return(MANDOCLEVEL_ERROR);
+	}
+
+	/* Run gunzip(1). */
+
+	if (pipe(pfd) == -1) {
+		perror("pipe");
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+
+	switch (curp->child = fork()) {
+	case -1:
+		perror("fork");
+		exit((int)MANDOCLEVEL_SYSERR);
+	case 0:
+		close(pfd[0]);
+		if (dup2(pfd[1], STDOUT_FILENO) == -1) {
+			perror("dup");
+			exit((int)MANDOCLEVEL_SYSERR);
+a812 8
+		signal(SIGPIPE, SIG_DFL);
+		execlp("gunzip", "gunzip", "-c", file, NULL);
+		perror("exec");
+		exit((int)MANDOCLEVEL_SYSERR);
+	default:
+		close(pfd[1]);
+		*fd = pfd[0];
+		return(MANDOCLEVEL_OK);
+a813 1
+}
+d815 1
+a815 7
+enum mandoclevel
+mparse_wait(struct mparse *curp)
+{
+	int	  status;
+
+	if (curp->child == 0)
+		return(MANDOCLEVEL_OK);
+d817 2
+a818 16
+	if (waitpid(curp->child, &status, 0) == -1) {
+		perror("wait");
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+	curp->child = 0;
+	if (WIFSIGNALED(status)) {
+		mandoc_vmsg(MANDOCERR_FILE, curp, 0, 0,
+		    "gunzip died from signal %d", WTERMSIG(status));
+		return(MANDOCLEVEL_ERROR);
+	}
+	if (WEXITSTATUS(status)) {
+		mandoc_vmsg(MANDOCERR_FILE, curp, 0, 0,
+		    "gunzip failed with code %d", WEXITSTATUS(status));
+		return(MANDOCLEVEL_ERROR);
+	}
+	return(MANDOCLEVEL_OK);
+@
+
+
+1.138
+log
+@Decouple the token code for "no request or macro" from the individual
+high-level parsers to allow further unification of functions that
+only need to recognize this code, but that don't care about different
+high-level macrosets beyond that.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.137 2015/04/18 17:28:36 schwarze Exp $ */
+d46 1
+d587 1
+a587 1
+		if (rr == ROFF_TBL) {
+d589 4
+a592 10
+				if (curp->man->macroset == MACROSET_MDOC)
+					mdoc_addspan(curp->man, span);
+				else
+					man_addspan(curp->man, span);
+		} else if (rr == ROFF_EQN) {
+			if (curp->man->macroset == MACROSET_MDOC)
+				mdoc_addeqn(curp->man, roff_eqn(curp->roff));
+			else
+				man_addeqn(curp->man, roff_eqn(curp->roff));
+		} else if ((curp->man->macroset == MACROSET_MDOC ?
+@
+
+
+1.137
+log
+@Unify {mdoc,man}_{alloc,reset,free}() into roff_man_{alloc,reset,free}().
+Minus 80 lines of code, no functional change.
+Written on the train from Koeln to Wolfsburg returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.136 2015/04/18 17:01:58 schwarze Exp $ */
+d296 1
+a296 1
+		curp->man->first->tok = MDOC_MAX;
+d302 1
+a302 1
+		curp->man->first->tok = MDOC_MAX;
+d306 1
+a306 1
+		curp->man->first->tok = MAN_MAX;
+a895 1
+		curp->man->first->tok = MDOC_MAX;
+a898 1
+		curp->man->first->tok = MAN_MAX;
+d900 1
+@
+
+
+1.136
+log
+@Move mdoc_hash_init() and man_hash_init() to libmandoc.h
+and call them from mparse_alloc() and choose_parser(),
+preparing unified allocation of struct roff_man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.135 2015/04/18 16:34:25 schwarze Exp $ */
+d292 7
+a299 6
+		if (curp->man == NULL)
+			curp->man = mdoc_alloc(
+			    curp->roff, curp, curp->defos,
+			    MPARSE_QUICK & curp->options ? 1 : 0);
+		else
+			curp->man->macroset = MACROSET_MDOC;
+d301 6
+a306 1
+		return;
+a307 10
+
+	/* Fall back to man(7) as a last resort. */
+
+	if (curp->man == NULL)
+		curp->man = man_alloc(
+		    curp->roff, curp, curp->defos,
+		    MPARSE_QUICK & curp->options ? 1 : 0);
+	else
+		curp->man->macroset = MACROSET_MAN;
+	man_hash_init();
+d689 1
+a689 1
+		curp->man = man_alloc(curp->roff, curp, curp->defos,
+d891 2
+a893 3
+		curp->man = mdoc_alloc(
+		    curp->roff, curp, curp->defos,
+		    curp->options & MPARSE_QUICK ? 1 : 0);
+d895 3
+a897 5
+	}
+	if (curp->options & MPARSE_MAN) {
+		curp->man = man_alloc(
+		    curp->roff, curp, curp->defos,
+		    curp->options & MPARSE_QUICK ? 1 : 0);
+d899 2
+a901 1
+
+d911 2
+a912 7
+	if (curp->man != NULL) {
+		if (curp->man->macroset == MACROSET_MDOC)
+			mdoc_reset(curp->man);
+		else
+			man_reset(curp->man);
+		curp->man->macroset = MACROSET_NONE;
+	}
+d926 1
+a926 4
+	if (curp->man->macroset == MACROSET_MDOC)
+		mdoc_free(curp->man);
+	if (curp->man->macroset == MACROSET_MAN)
+		man_free(curp->man);
+@
+
+
+1.135
+log
+@Profit from the unified struct roff_man and reduce the number of
+arguments of mparse_result() by one.  No functional change.
+Written on the ICE Bruxelles-Koeln on the way back from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.134 2015/04/18 16:06:41 schwarze Exp $ */
+d299 1
+d311 1
+d895 1
+a895 1
+	if (curp->options & MPARSE_MDOC)
+d899 3
+a901 1
+	if (curp->options & MPARSE_MAN)
+d905 2
+@
+
+
+1.134
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.133 2015/04/02 21:36:50 schwarze Exp $ */
+a49 2
+	struct roff_man	 *pman; /* persistent man parser */
+	struct roff_man	 *pmdoc; /* persistent mdoc parser */
+a50 1
+	struct roff_man	 *mdoc; /* mdoc parser */
+d293 2
+a294 2
+		if (NULL == curp->pmdoc)
+			curp->pmdoc = mdoc_alloc(
+d297 2
+a298 2
+		assert(curp->pmdoc);
+		curp->mdoc = curp->pmdoc;
+d304 2
+a305 2
+	if (NULL == curp->pman)
+		curp->pman = man_alloc(
+d308 2
+a309 2
+	assert(curp->pman);
+	curp->man = curp->pman;
+d575 2
+a576 1
+		if ( ! (curp->man || curp->mdoc))
+d590 2
+a591 2
+				if (curp->man == NULL)
+					mdoc_addspan(curp->mdoc, span);
+d595 2
+a596 2
+			if (curp->man == NULL)
+				mdoc_addeqn(curp->mdoc, roff_eqn(curp->roff));
+d599 2
+a600 2
+		} else if ((curp->man == NULL ?
+		    mdoc_parseln(curp->mdoc, curp->line, ln.buf, of) :
+d690 8
+a697 16
+	if (curp->mdoc == NULL &&
+	    curp->man == NULL &&
+	    curp->sodest == NULL) {
+		if (curp->options & MPARSE_MDOC)
+			curp->mdoc = curp->pmdoc;
+		else {
+			if (curp->pman == NULL)
+				curp->pman = man_alloc(
+				    curp->roff, curp, curp->defos,
+				    curp->options & MPARSE_QUICK ? 1 : 0);
+			curp->man = curp->pman;
+		}
+	}
+	if (curp->mdoc)
+		mdoc_endparse(curp->mdoc);
+	if (curp->man)
+d894 1
+a894 1
+		curp->pmdoc = mdoc_alloc(
+d898 1
+a898 1
+		curp->pman = man_alloc(
+d911 7
+a917 4
+	if (curp->mdoc)
+		mdoc_reset(curp->mdoc);
+	if (curp->man)
+		man_reset(curp->man);
+a921 2
+	curp->mdoc = NULL;
+	curp->man = NULL;
+d931 4
+a934 4
+	if (curp->pmdoc)
+		mdoc_free(curp->pmdoc);
+	if (curp->pman)
+		man_free(curp->pman);
+d946 2
+a947 2
+mparse_result(struct mparse *curp, struct roff_man **mdoc,
+	struct roff_man **man, char **sodest)
+a950 1
+		*mdoc = NULL;
+a953 2
+	if (mdoc)
+		*mdoc = curp->mdoc;
+@
+
+
+1.133
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.132 2015/03/17 07:33:07 schwarze Exp $ */
+d50 4
+a53 4
+	struct man	 *pman; /* persistent man parser */
+	struct mdoc	 *pmdoc; /* persistent mdoc parser */
+	struct man	 *man; /* man parser */
+	struct mdoc	 *mdoc; /* mdoc parser */
+d955 2
+a956 2
+mparse_result(struct mparse *curp,
+	struct mdoc **mdoc, struct man **man, char **sodest)
+@
+
+
+1.132
+log
+@When the user exits the pager before the pager has drained all input
+from man(1), man(1) dies from SIGPIPE.  Exiting man(1) is fine in this
+case, generating more output would be pointless, but without handling
+SIGPIPE, the exit code from man(1) was wrong and csh(1) printed an
+ugly message "Broken pipe".  Fix this by handling SIGPIPE explicitly.
+Issue noticed by deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.131 2015/03/11 13:05:20 schwarze Exp $ */
+d11 1
+a11 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d13 1
+a13 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d40 1
+d42 1
+a42 2
+#include "mandoc_aux.h"
+#include "libmandoc.h"
+d45 1
+@
+
+
+1.131
+log
+@Fix previous: size_t is often narrower than off_t.
+Cluestick applied by joerg at NetBSD.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.130 2015/03/10 14:17:52 schwarze Exp $ */
+d32 1
+d850 1
+@
+
+
+1.130
+log
+@The st_size member of struct stat is off_t, which is signed,
+all required by POSIX.  So don't compare it against against
+an unsigned constant.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.129 2015/03/02 14:50:17 schwarze Exp $ */
+d639 1
+a639 1
+		if ((size_t)st.st_size >= (1U << 31)) {
+@
+
+
+1.129
+log
+@If a non-gz manual is read after a gzipped manual, refrain
+from throwing a bogus error "wait: No child processes".
+As reported by Baptiste Daroussin <bapt at FreeBSD dot org>,
+clearing the state variable curp->child after use was forgotten.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.128 2015/02/23 13:31:04 schwarze Exp $ */
+d639 1
+a639 1
+		if (st.st_size >= (1U << 31)) {
+@
+
+
+1.128
+log
+@improve NAME section diagnostics;
+confusing messages reported by Jan Stary <hans at stare dot cz>
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.127 2015/02/20 22:40:38 schwarze Exp $ */
+d871 1
+@
+
+
+1.127
+log
+@Completely delete all carriage return characters from the input.
+No change to messages about them (ignore them right before line feeds,
+report errors elsewhere).
+naddy@@ found a manual in the wild containing lots of these (ysm(1)),
+and i can't imagine a situation where dropping them could be problematic.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.126 2015/02/06 16:06:25 schwarze Exp $ */
+d112 4
+a115 1
+	"bad NAME section contents",
+@
+
+
+1.126
+log
+@replace the last legacy generic message type, "argument count wrong",
+by more specific messages, improving diagnostics for .cc .tr .Bl -column
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.125 2015/02/06 11:54:36 schwarze Exp $ */
+d402 2
+a403 1
+				ln.buf[pos++] = '?';
+@
+
+
+1.125
+log
+@better error reporting regarding .OP .RS .UR .TH arguments
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.124 2015/02/06 07:13:14 schwarze Exp $ */
+d164 1
+d171 1
+a215 1
+	"argument count wrong",
+@
+
+
+1.124
+log
+@Delete the legacy generic warning type MANDOCERR_ARGCWARN,
+replacing the last instances by more specific warnings.
+Improved functionality, minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.123 2015/02/06 03:38:45 schwarze Exp $ */
+d153 2
+@
+
+
+1.123
+log
+@better handle .Fo and .Fd without argument
+better handle .Fo with more than one argument
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.122 2015/02/04 18:03:48 schwarze Exp $ */
+d139 1
+a140 1
+	"argument count wrong",
+@
+
+
+1.122
+log
+@discard .Rs head arguments and improve .Rs diagnostics
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.121 2015/02/04 16:38:56 schwarze Exp $ */
+d145 1
+@
+
+
+1.121
+log
+@more specific .Nd diagnostics, allowing to get rid of enum check_lvl
+and the respective argument of check_count()
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.120 2015/01/28 21:11:54 schwarze Exp $ */
+d150 1
+@
+
+
+1.120
+log
+@Clean up eqn(7) error handling:
+* When "define" fails, do not drop the whole equation.
+* Free memory after "undef".
+* Use standard mandoc error types instead of rolling our own.
+* Delete obfuscating EQN_MSG() macro.
+* Add function prototypes while here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.119 2015/01/28 17:32:07 schwarze Exp $ */
+d113 1
+@
+
+
+1.119
+log
+@* Polish tbl(7) error reporting.
+* Do not print out macro names in tbl(7) data blocks.
+* Like with GNU tbl, let empty tables cause a blank line.
+* Avoid producing empty tables in -Tman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.118 2015/01/26 18:42:30 schwarze Exp $ */
+a180 6
+	/* related to equations */
+	"unexpected equation scope closure",
+	"equation scope open on exit",
+	"overlapping equation scopes",
+	"unexpected end of equation",
+
+@
+
+
+1.118
+log
+@Rework tbl(7) layout parsing:
+* Continue parsing even if part of the input is invalid.
+* Do not require whitespace between cell specifications.
+* Allow tabs as well as blanks between modifiers.
+* Mark the 'm' modifier as unsupported.
+* Parse and ignore the 'p' and 'v' modifiers.
+* Better warning and error messages.
+* Get rid of a static buffer.
+Improved functionality but minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.117 2015/01/26 13:03:48 schwarze Exp $ */
+d195 4
+a198 4
+	"no table data cells specified",
+	"ignore data in cell",
+	"data block still open",
+	"ignoring extra data cells",
+d232 1
+a234 1
+	"eqn in tbl",
+@
+
+
+1.117
+log
+@More improvements regarding tbl(7) options.
+* Treat "allbox" as an alias for "box" for now.
+* Parse and ignore the GNU tbl "nowarn" option.
+* For separation, allow spaces, tabs, and commas only.
+* Mark eqn(7) within tbl(7) as unsupported.
+* Simplify the option table.
+* Improve and sort documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.116 2015/01/26 00:57:22 schwarze Exp $ */
+d174 5
+d192 3
+a194 1
+	"no table layout cells specified",
+d232 1
+a232 1
+	"unsupported table layout",
+@
+
+
+1.116
+log
+@Improve (or rather, rewrite) tbl(7) option parsing.
+* Allow the layout to start after the semicolon on the options line.
+* Ignore leading commas.
+* Option arguments cannot contain closing parentheses.
+* Avoid needless UNSUPP messages.
+* Better ERROR reporting.
+* Delete unused "linesize" field in struct tbl_opts.
+* No need for static buffers.
+* Garbage collect one almost empty wrapper function.
+Improved functionality, but minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.115 2015/01/24 01:58:33 schwarze Exp $ */
+d227 1
+@
+
+
+1.115
+log
+@Support .RE with an argument; needed for audio/pms(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.114 2015/01/22 21:38:16 schwarze Exp $ */
+d183 4
+a224 2
+	"unsupported table syntax",
+	"unsupported table option",
+@
+
+
+1.114
+log
+@Traditional roff(7) explicitly allows certain control characters
+in the input stream (SOH, STX, ETX, ENQ, ACK, BEL, BS) for specific
+purposes (leaders, backspace, delimiters, .tr), but making sure
+these don't leak through to the output is tricky, so mark them as
+unsupported for now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.113 2015/01/22 19:26:50 schwarze Exp $ */
+d198 1
+@
+
+
+1.113
+log
+@Don't let a failing mparse_open() clobber the filename pointer;
+fixes error message content and a use after free
+for .so with non-existent target when -Wall or -Tlint is given.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.112 2015/01/20 21:16:51 schwarze Exp $ */
+d218 1
+d373 2
+a374 3
+					mandoc_vmsg(MANDOCERR_BADCHAR,
+					    curp, curp->line, pos,
+					    "0x%x", c);
+d386 4
+a389 2
+				mandoc_vmsg(MANDOCERR_BADCHAR, curp,
+				    curp->line, pos, "0x%x", c);
+d445 1
+a445 1
+				mandoc_vmsg(MANDOCERR_BADCHAR, curp,
+@
+
+
+1.112
+log
+@Split the -Werror message level into -Werror (broken manual, probably
+using mandoc is better than using groff) and -Wunsupp (manual using
+unsupported low-level roff(7) feature, probably using groff is better
+than using mandoc).  Once this feature is complete, it is intended
+to help porting, making the decision whether to USE_GROFF easier.
+
+As a first step, distinguish four classes of roff(7) requests:
+1. Supported (currently 24 requests)
+2. Currently ignored because unimportant (120)  ->  no message
+3. Ignored for good because insecure (14)  ->  -Werror
+4. Currently unsupported (68)  ->  these trigger the new -Wunsupp messages
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.111 2015/01/15 04:26:40 schwarze Exp $ */
+d310 1
+d526 1
+d529 1
+a529 1
+			    MANDOCLEVEL_OK)
+d531 3
+a533 1
+			else {
+@
+
+
+1.111
+log
+@Fatal errors no longer exist.
+If a file can be opened, mandoc will produce some output;
+at worst, the output may be almost empty.
+Simplifies error handling and frees a message type for future use.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.110 2015/01/15 02:29:26 schwarze Exp $ */
+d83 1
+a83 1
+	MANDOCERR_MAX,
+a182 3
+	"bad table syntax",
+	"bad table option",
+	"bad table layout",
+a187 1
+	"ignoring macro in table",
+a190 1
+	"input too large",
+d194 1
+d215 8
+d230 1
+a230 1
+	"FATAL",
+d965 1
+a965 1
+	level = MANDOCLEVEL_ERROR;
+@
+
+
+1.110
+log
+@downgrade .so failure from FATAL to ERROR
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.109 2015/01/14 22:58:16 schwarze Exp $ */
+d83 1
+a83 1
+	MANDOCERR_FATAL,
+d195 1
+a218 4
+
+	"generic fatal error",
+
+	"input too large",
+a544 8
+		 * If we encounter errors in the recursive parse, make
+		 * sure we don't continue parsing.
+		 */
+
+		if (MANDOCLEVEL_FATAL <= curp->file_status)
+			break;
+
+		/*
+d615 1
+a615 4
+			curp->file_status = MANDOCLEVEL_FATAL;
+			if (curp->mmsg)
+				(*curp->mmsg)(MANDOCERR_TOOLARGE,
+				    curp->file_status, file, 0, 0, NULL);
+d638 2
+a639 5
+				curp->file_status = MANDOCLEVEL_FATAL;
+				if (curp->mmsg)
+					(*curp->mmsg)(MANDOCERR_TOOLARGE,
+					    curp->file_status,
+					    file, 0, 0, NULL);
+a664 3
+	if (MANDOCLEVEL_FATAL <= curp->file_status)
+		return;
+
+d678 4
+a681 11
+
+	if (curp->mdoc && ! mdoc_endparse(curp->mdoc)) {
+		assert(MANDOCLEVEL_FATAL <= curp->file_status);
+		return;
+	}
+
+	if (curp->man && ! man_endparse(curp->man)) {
+		assert(MANDOCLEVEL_FATAL <= curp->file_status);
+		return;
+	}
+
+d718 1
+a718 1
+	if (0 == --recursion_depth && MANDOCLEVEL_FATAL > curp->file_status)
+a864 2
+	assert(wlevel <= MANDOCLEVEL_FATAL);
+
+d961 1
+a961 1
+	level = MANDOCLEVEL_FATAL;
+@
+
+
+1.109
+log
+@downgrade ".so with absolute path" from FATAL to ERROR;
+allows to get rid of ROFF_ERR
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.108 2015/01/14 22:02:50 schwarze Exp $ */
+d214 1
+a221 1
+	".so request failed",
+d309 1
+d314 2
+d524 5
+a528 2
+			mparse_readfd(curp, -1, ln.buf + of);
+			if (MANDOCLEVEL_FATAL <= curp->file_status) {
+d532 7
+a538 1
+				break;
+d540 1
+a765 2
+ * If a file descriptor is given, use it and assume it points
+ * to the named file.  Otherwise, open the named file.
+a774 7
+	pid_t		 save_child;
+
+	save_child = curp->child;
+	if (fd != -1)
+		curp->child = 0;
+	else if (mparse_open(curp, &fd, file) != MANDOCLEVEL_OK)
+		goto out;
+a793 2
+out:
+	curp->child = save_child;
+@
+
+
+1.108
+log
+@To get rid of SYSERR entries in enum mandocerr, downgrade problems with
+missing and unreadable files from SYSERR to ERROR.
+Needed for upcoming work.
+As a bonus, this minimally simplifies code and documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.107 2015/01/14 17:49:15 schwarze Exp $ */
+d213 1
+a220 1
+	"NOT IMPLEMENTED: .so with absolute path or \"..\"",
+a506 3
+		case ROFF_ERR:
+			assert(MANDOCLEVEL_FATAL <= curp->file_status);
+			break;
+@
+
+
+1.107
+log
+@Simplify handling of system errors: just exit(3).
+We already do the same for malloc(3) failure.
+The is no virtue in trying to survive failure of fork(2) and the like.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.106 2014/12/28 14:42:27 schwarze Exp $ */
+d194 1
+a221 5
+
+	/* system errors */
+	"gunzip failed with code",
+	NULL,
+	"gunzip died from signal",
+d772 1
+a772 1
+	else if (mparse_open(curp, &fd, file) >= MANDOCLEVEL_SYSERR)
+a803 1
+	enum mandocerr	  err;
+a804 1
+	pfd[1] = -1;
+d828 5
+a832 2
+		err = MANDOCERR_SYSOPEN;
+		goto out;
+a859 12
+
+out:
+	free(cp);
+	*fd = -1;
+	curp->child = 0;
+	curp->file_status = MANDOCLEVEL_SYSERR;
+	if (curp->mmsg)
+		(*curp->mmsg)(err, curp->file_status, curp->file,
+		    0, 0, strerror(errno));
+	if (pfd[1] != -1)
+		exit(1);
+	return(curp->file_status);
+d875 3
+a877 4
+		mandoc_vmsg(MANDOCERR_SYSSIG, curp, 0, 0,
+		    "%d", WTERMSIG(status));
+		curp->file_status = MANDOCLEVEL_SYSERR;
+		return(curp->file_status);
+d880 3
+a882 4
+		mandoc_vmsg(MANDOCERR_SYSEXIT, curp, 0, 0,
+		    "%d", WEXITSTATUS(status));
+		curp->file_status = MANDOCLEVEL_SYSERR;
+		return(curp->file_status);
+d995 1
+a995 1
+	if (level < m->wlevel)
+@
+
+
+1.106
+log
+@mdoc(7) already uses the mandoc(1) -Ios argument in the footer line
+when .Os has no argument, so do the same for man(7) when .TH has less
+than four arguments; there is no reason to treat both differently.
+Issue found following a question from Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.105 2014/12/16 23:44:41 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@@openbsd.org>
+a222 2
+	"cannot dup file descriptor",
+	"cannot exec",
+a223 1
+	"cannot fork",
+a224 2
+	"cannot open pipe",
+	"cannot read file",
+a225 2
+	"cannot stat file",
+	"wait failed",
+d607 2
+a608 5
+		curp->file_status = MANDOCLEVEL_SYSERR;
+		if (curp->mmsg)
+			(*curp->mmsg)(MANDOCERR_SYSSTAT, curp->file_status,
+			    file, 0, 0, strerror(errno));
+		return(0);
+d661 2
+a662 6
+			curp->file_status = MANDOCLEVEL_SYSERR;
+			if (curp->mmsg)
+				(*curp->mmsg)(MANDOCERR_SYSREAD,
+				    curp->file_status, file, 0, 0,
+				    strerror(errno));
+			break;
+d841 2
+a842 2
+		err = MANDOCERR_SYSPIPE;
+		goto out;
+d847 2
+a848 5
+		err = MANDOCERR_SYSFORK;
+		close(pfd[0]);
+		close(pfd[1]);
+		pfd[1] = -1;
+		break;
+d852 2
+a853 2
+			err = MANDOCERR_SYSDUP;
+			break;
+d856 2
+a857 2
+		err = MANDOCERR_SYSEXEC;
+		break;
+d886 2
+a887 4
+		mandoc_msg(MANDOCERR_SYSWAIT, curp, 0, 0,
+		    strerror(errno));
+		curp->file_status = MANDOCLEVEL_SYSERR;
+		return(curp->file_status);
+@
+
+
+1.105
+log
+@Ignore mdoc(7) and man(7) macros inside tbl(7) code because they
+would abort the table in an unclean way, causing assertion failures
+found by jsg@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.104 2014/12/01 04:14:14 schwarze Exp $ */
+d301 2
+a302 1
+		curp->pman = man_alloc(curp->roff, curp,
+d700 2
+a701 1
+				curp->pman = man_alloc(curp->roff, curp,
+d945 2
+a946 1
+		curp->pman = man_alloc(curp->roff, curp,
+@
+
+
+1.104
+log
+@The file read.c is part of the parser, so it cannot include main.h,
+which is not part of the parser.  Besides, the parser *does* modify
+the input buffer, so marking it "const" in the mparse_readmem()
+interface is an outright lie.  Fix all this by killing the const,
+the UNCONST, and the bogus inclusion.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.103 2014/11/30 05:29:00 schwarze Exp $ */
+d191 1
+@
+
+
+1.103
+log
+@Multiple fixes with respect to .Pf:
+* The first argument of .Pf is not parsed.
+* Normal delimiter handling does not apply to the first argument of .Pf.
+* Warn if nothing follows a prefix (inspired by groff_mdoc(7)).
+* In that case, do not suppress spacing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.102 2014/11/30 02:36:38 schwarze Exp $ */
+a43 1
+#include "main.h"
+d758 1
+a758 1
+mparse_readmem(struct mparse *curp, const void *buf, size_t len,
+d763 1
+a763 1
+	blk.buf = UNCONST(buf);
+@
+
+
+1.102
+log
+@warn about attempts to call non-callable macros;
+inspired by a similar warning in the groff_mdoc(7) macros
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.101 2014/11/28 18:09:01 schwarze Exp $ */
+d149 1
+@
+
+
+1.101
+log
+@Drop useless architecture table.  Validating architecture names
+is a job for makewhatis(8)/mandoc.db(5), not for the parser.
+Removes 150 lines from source files and 4k (1%) from the binary.
+Bloat found by deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.100 2014/11/28 06:27:05 schwarze Exp $ */
+d123 1
+@
+
+
+1.100
+log
+@Simplify by making the eqn and tbl steering functions void;
+no functional change, minus 15 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.99 2014/11/27 23:40:19 schwarze Exp $ */
+a99 1
+	"unknown manual volume or arch",
+@
+
+
+1.99
+log
+@Downgrade .Bd -file from FATAL to ERROR.
+Since this was the last remaining FATAL error in this area,
+this change will allow major simplifications in the mdoc(7) parser.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.98 2014/11/26 23:42:14 schwarze Exp $ */
+d320 1
+a320 1
+	int		 of, rc;
+d573 15
+a587 28
+		rc = -1;
+
+		if (ROFF_TBL == rr)
+			while (NULL != (span = roff_span(curp->roff))) {
+				rc = curp->man ?
+				    man_addspan(curp->man, span) :
+				    mdoc_addspan(curp->mdoc, span);
+				if (0 == rc)
+					break;
+			}
+		else if (ROFF_EQN == rr)
+			rc = curp->mdoc ?
+			    mdoc_addeqn(curp->mdoc,
+				roff_eqn(curp->roff)) :
+			    man_addeqn(curp->man,
+				roff_eqn(curp->roff));
+		else if (curp->man || curp->mdoc)
+			rc = curp->man ?
+			    man_parseln(curp->man,
+				curp->line, ln.buf, of) :
+			    mdoc_parseln(curp->mdoc,
+				curp->line, ln.buf, of);
+
+		if (0 == rc) {
+			assert(MANDOCLEVEL_FATAL <= curp->file_status);
+			break;
+		} else if (2 == rc)
+			break;
+@
+
+
+1.98
+log
+@Let mparse_readfd() use mparse_open() and mparse_wait()
+and let mparse_open() fall back to .gz files
+such that .so works even when the target is zipped,
+requested by and in part using ideas from <bapt at FreeBSD>.
+While here, make sure files are readable before forking,
+both for efficiency and for better error reporting.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.97 2014/11/26 21:40:17 schwarze Exp $ */
+d205 1
+a217 1
+	"NOT IMPLEMENTED: Bd -file",
+@
+
+
+1.97
+log
+@Simplify the mparse_open()/mparse_wait() interface.
+Don't bother the user with the PID of the child process,
+store it inside the opaque mparse handle.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.96 2014/11/01 06:03:13 schwarze Exp $ */
+d783 6
+d795 1
+d797 5
+a801 15
+	if (-1 == fd && -1 == (fd = open(file, O_RDONLY, 0))) {
+		curp->file_status = MANDOCLEVEL_SYSERR;
+		if (curp->mmsg)
+			(*curp->mmsg)(MANDOCERR_SYSOPEN,
+			    curp->file_status,
+			    file, 0, 0, strerror(errno));
+		return(curp->file_status);
+	}
+
+	/*
+	 * Run for each opened file; may be called more than once for
+	 * each full parse sequence if the opened file is nested (i.e.,
+	 * from `so').  Simply sucks in the whole file and moves into
+	 * the parse phase for the file.
+	 */
+d817 1
+a817 1
+	if (STDIN_FILENO != fd && -1 == close(fd))
+d820 3
+d830 1
+d836 3
+d842 18
+a859 5
+		if ((*fd = open(file, O_RDONLY)) == -1) {
+			err = MANDOCERR_SYSOPEN;
+			goto out;
+		}
+		return(MANDOCLEVEL_OK);
+d862 2
+d892 1
+d897 1
+a897 1
+		(*curp->mmsg)(err, curp->file_status, file,
+@
+
+
+1.96
+log
+@Use struct buf in libroff, it is very natural there
+and reduces the number of arguments of many functions.
+While here, sprinkle some KNF.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.95 2014/11/01 04:08:43 schwarze Exp $ */
+d67 1
+d827 1
+a827 2
+mparse_open(struct mparse *curp, int *fd, const char *file,
+	pid_t *child_pid)
+d837 1
+a837 1
+		*child_pid = 0;
+d850 1
+a850 1
+	switch (*child_pid = fork()) {
+d874 1
+a874 1
+	*child_pid = 0;
+d885 1
+a885 1
+mparse_wait(struct mparse *curp, pid_t child_pid)
+d889 4
+a892 1
+	if (waitpid(child_pid, &status, 0) == -1) {
+@
+
+
+1.95
+log
+@Refactor, no functional change: Remove the parse point from struct buf.
+Some functions need multiple parse points, some none at all,
+and it varies whether any of them need to be passed around.
+So better pass them as a separate argument, and only when needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.94 2014/10/28 17:36:19 schwarze Exp $ */
+d496 1
+a496 2
+		rr = roff_parseln(curp->roff, curp->line,
+		    &ln.buf, &ln.sz, of, &of);
+@
+
+
+1.94
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.93 2014/10/25 01:03:52 schwarze Exp $ */
+d71 1
+a71 1
+static	void	  mparse_buf_r(struct mparse *, struct buf, int);
+d306 5
+a310 3
+ * Main parse routine for an opened file.  This is called for each
+ * opened file and simply loops around the full input file, possibly
+ * nesting (i.e., with `so').
+d313 1
+a313 1
+mparse_buf_r(struct mparse *curp, struct buf blk, int start)
+d317 1
+d319 1
+a319 2
+	int		 i, of, rc;
+	int		 pos; /* byte number in the ln buffer */
+d323 1
+a323 1
+	memset(&ln, 0, sizeof(struct buf));
+d328 1
+a328 1
+	for (i = blk.offs; i < (int)blk.sz; ) {
+d338 2
+a339 4
+			    curp->filenc & MPARSE_LATIN1) {
+				blk.offs = i;
+				curp->filenc = preconv_cue(&blk);
+			}
+d342 1
+a342 1
+		while (i < (int)blk.sz && (start || '\0' != blk.buf[i])) {
+d350 1
+a350 1
+			if ('\r' == blk.buf[i] && i + 1 < (int)blk.sz &&
+d364 1
+a364 1
+			if (pos + 11 > (int)ln.sz)
+d373 2
+a374 7
+				blk.offs = i;
+				ln.offs = pos;
+				if (curp->filenc && preconv_encode(
+				    &blk, &ln, &curp->filenc)) {
+					pos = ln.offs;
+					i = blk.offs;
+				} else {
+d398 1
+a398 1
+			if ('\\' != blk.buf[i] || i + 1 == (int)blk.sz) {
+d410 1
+a410 1
+			if ('\r' == blk.buf[i + 1] && i + 2 < (int)blk.sz &&
+d422 1
+a422 1
+				for (; i < (int)blk.sz; ++i) {
+d459 1
+a459 1
+		if (pos >= (int)ln.sz)
+d502 1
+a502 1
+				mparse_buf_r(curp, ln, 0);
+d509 1
+a509 1
+			pos = (int)strlen(ln.buf);
+d520 2
+a521 2
+			if (0 == (MPARSE_SO & curp->options) &&
+			    (i >= (int)blk.sz || '\0' == blk.buf[i])) {
+a647 1
+		fb->offs = 0;
+a678 1
+			fb->offs = 0;
+d735 1
+d756 1
+a756 1
+		blk.offs = 3;
+d758 2
+a759 1
+	}
+d761 1
+a761 1
+	mparse_buf_r(curp, blk, 1);
+a777 1
+	blk.offs = 0;
+@
+
+
+1.93
+log
+@integrate preconv(1) into mandoc(1);
+enhances functionality and reduces code and docs by more than 300 lines
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.92 2014/10/20 19:04:45 kristaps Exp $ */
+d54 1
+d918 2
+a919 2
+mparse_alloc(int options, enum mandoclevel wlevel,
+		mandocmsg mmsg, const char *defos)
+d932 2
+a933 1
+	curp->roff = roff_alloc(curp, options);
+@
+
+
+1.92
+log
+@Protect the roff parser from dividing by zero.  ok schwarze@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.91 2014/10/18 15:57:34 schwarze Exp $ */
+a47 5
+struct	buf {
+	char		 *buf; /* binary input buffer */
+	size_t		  sz; /* size of binary buffer */
+};
+
+d63 1
+d325 1
+a325 1
+	for (i = 0; i < (int)blk.sz; ) {
+d332 7
+d359 2
+a360 3
+			 * Make sure we have space for at least
+			 * one backslash and one other character
+			 * and the trailing NUL byte.
+d363 1
+a363 1
+			if (pos + 2 >= (int)ln.sz)
+d367 1
+a367 6
+			 * Warn about bogus characters.  If you're using
+			 * non-ASCII encoding, you're screwing your
+			 * readers.  Since I'd rather this not happen,
+			 * I'll be helpful and replace these characters
+			 * with "?", so we don't display gibberish.
+			 * Note to manual writers: use special characters.
+d370 21
+a390 1
+			c = (unsigned char) blk.buf[i];
+d392 1
+a392 2
+			if ( ! (isascii(c) &&
+			    (isgraph(c) || isblank(c)))) {
+d652 1
+d684 1
+d756 9
+d782 1
+d793 1
+d812 3
+d816 1
+@
+
+
+1.91
+log
+@plug file descriptor leaks on read or write failure;
+hinted at by Steffen Nurpmeso <sdaoden at yandex dot com>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.90 2014/10/12 19:31:41 schwarze Exp $ */
+d214 1
+@
+
+
+1.90
+log
+@Improve error handling in the eqn(7) parser.
+Get rid of the first fatal error, MANDOCERR_EQNSYNT.
+In eqn(7), there is no need to be bug-compatible with groff, so there
+is no need to abondon the whole equation in case of a syntax error.
+
+In particular:
+* Skip "back", "delim", "down", "fwd", "gfont", "gsize", "left",
+  "right", "size", and "up" without arguments.
+* Skip "gsize" and "size" with a non-numeric argument.
+* Skip closing delimiters that are not open.
+* Skip "above" outside piles.
+* For diacritic marks and binary operators without a left operand,
+  default to an empty box.
+* Let piles and matrices take one argument rather than insisting
+  on a braced list.  Let HTML output handle that, too.
+* When rewinding, if the root box is guaranteed to match
+  the termination condition, no error handling is needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.89 2014/10/11 21:14:16 schwarze Exp $ */
+d771 1
+a771 1
+		goto out;
+d781 2
+a782 5
+	if ( ! read_whole_file(curp, file, fd, &blk, &with_mmap))
+		goto out;
+
+	mparse_parse_buffer(curp, blk, file);
+
+d784 3
+a786 3
+	if (with_mmap)
+		munmap(blk.buf, blk.sz);
+	else
+d788 2
+a789 1
+		free(blk.buf);
+d793 1
+a793 1
+out:
+@
+
+
+1.89
+log
+@warn about parentheses in function names after .Fn and .Fo;
+particularly useful when converting from other languages to mdoc(7);
+feature suggested by bentley@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.88 2014/09/12 00:54:10 schwarze Exp $ */
+d152 1
+a182 1
+	"equation syntax error",
+@
+
+
+1.88
+log
+@warn about commas in function arguments; inspired by mdoclint(1)
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.87 2014/09/11 23:53:30 schwarze Exp $ */
+d162 1
+@
+
+
+1.87
+log
+@warn about botched .Xr ordering and punctuation below SEE ALSO;
+inspired by mdoclint(1)
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.86 2014/09/07 23:25:01 schwarze Exp $ */
+d161 1
+@
+
+
+1.86
+log
+@warn about AUTHORS sections without .An macros, inspired by mdoclint(1)
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.85 2014/09/07 02:17:40 schwarze Exp $ */
+d120 2
+@
+
+
+1.85
+log
+@always use the right buffer, and fix one evil typo
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.84 2014/09/06 23:24:32 schwarze Exp $ */
+d120 1
+@
+
+
+1.84
+log
+@Simplify by handling empty request lines at the one logical place
+in the roff parser instead of in three other places in other parsers.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.83 2014/09/06 22:39:36 schwarze Exp $ */
+d265 1
+a265 1
+			if (*cp == '.' || *cp != '\'') {
+d715 1
+d727 1
+d737 1
+@
+
+
+1.83
+log
+@Move main format autodetection from the parser dispatcher to the
+roff parser where .Dd and .TH are already detected, anyway.  This
+improves robustness because it correctly handles whitespace or an
+alternate control character before Dd.  In the parser dispatcher,
+provide a fallback looking ahead in the input buffer instead of
+always assuming man(7).  This corrects autodetection when Dd is
+preceded by other macros or macro-like handled requests like .ll.
+
+Triggered by reports from Daniel Levai about issues on Slackware Linux.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.82 2014/09/03 23:21:47 schwarze Exp $ */
+d72 1
+a74 1
+static	void	  pset(const char *, int, struct mparse *);
+d250 1
+a250 1
+pset(const char *buf, int pos, struct mparse *curp)
+a253 9
+	int		 i;
+
+	if ('.' == buf[0] || '\'' == buf[0]) {
+		for (i = 1; buf[i]; i++)
+			if (' ' != buf[i] && '\t' != buf[i])
+				break;
+		if ('\0' == buf[i])
+			return;
+	}
+d544 1
+a544 1
+			pset(ln.buf + of, pos - of, curp);
+d547 1
+a547 3
+		 * Lastly, push down into the parsers themselves.  One
+		 * of these will have already been set in the pset()
+		 * routine.
+@
+
+
+1.82
+log
+@Add *.gz support to apropos(1) -a, man(1), and even mandoc(1).
+Implemented by moving the zip code from makewhatis(8) to the parser lib.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.81 2014/08/16 19:00:01 schwarze Exp $ */
+a53 4
+	enum mandoclevel  file_status; /* status of current parse */
+	enum mandoclevel  wlevel; /* ignore messages below this */
+	int		  line; /* line number in the file */
+	int		  options; /* parser options */
+d60 8
+d69 1
+a69 4
+	mandocmsg	  mmsg; /* warning/error message handler */
+	const char	 *file;
+	struct buf	 *secondary;
+	const char	 *defos; /* default operating system */
+d252 2
+a255 11
+	/*
+	 * Try to intuit which kind of manual parser should be used.  If
+	 * passed in by command-line (-man, -mdoc), then use that
+	 * explicitly.  If passed as -mandoc, then try to guess from the
+	 * line: either skip dot-lines, use -mdoc when finding `.Dt', or
+	 * default to -man, which is more lenient.
+	 *
+	 * Separate out pmdoc/pman from mdoc/man: the first persists
+	 * through all parsers, while the latter is used per-parse.
+	 */
+
+d264 26
+a289 6
+	if (MPARSE_MDOC & curp->options) {
+		curp->mdoc = curp->pmdoc;
+		return;
+	} else if (MPARSE_MAN & curp->options) {
+		curp->man = curp->pman;
+		return;
+d292 1
+a292 1
+	if (pos >= 3 && 0 == memcmp(buf, ".Dd", 3))  {
+d302 2
+d737 1
+@
+
+
+1.81
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.80 2014/08/10 23:54:41 schwarze Exp $ */
+d23 1
+a24 1
+#include <sys/mman.h>
+d26 1
+d217 4
+d222 3
+d226 1
+a226 1
+	"cannot read file",
+d787 85
+@
+
+
+1.80
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.79 2014/08/06 15:09:05 schwarze Exp $ */
+d22 1
+a22 1
+#ifdef HAVE_MMAP
+d593 1
+a593 1
+#ifdef	HAVE_MMAP
+d766 1
+a766 1
+#ifdef	HAVE_MMAP
+@
+
+
+1.79
+log
+@Bring the handling of defective prologues even closer to groff,
+in particular relaxing the distinction between prologue and body
+and further improving messages.
+* The last .Dd wins and the last .Os wins, even in the body.
+* The last .Dt before the first body macro wins.
+* Missing title in .Dt defaults to UNTITLED.  Warn about it.
+* Missing section in .Dt does not default to 1.  But warn about it.
+* Do not warn multiple times about the same mdoc(7) prologue macro.
+* Warn about missing .Os.
+* Incomplete .TH defaults to empty strings.  Warn about it.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.78 2014/08/01 17:27:44 schwarze Exp $ */
+a18 1
+#ifdef HAVE_CONFIG_H
+a19 1
+#endif
+d21 1
+d23 2
+a24 2
+# include <sys/stat.h>
+# include <sys/mman.h>
+@
+
+
+1.78
+log
+@mention requests and macros in more messages
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.77 2014/08/01 15:08:46 schwarze Exp $ */
+d96 2
+a97 1
+	"missing .TH macro, using \"unknown 1\"",
+d99 1
+d104 4
+a108 3
+	"duplicate prologue macro",
+	"incomplete prologue, terminated by",
+	"skipping prologue macro in body",
+@
+
+
+1.77
+log
+@Dynamically allocate the stack of roff(7) .ie condition values
+and thus get rid of the last useless fatal error.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.76 2014/07/31 09:22:21 schwarze Exp $ */
+d126 2
+a127 2
+	"fill mode already enabled, skipping .fi",
+	"fill mode already disabled, skipping .nf",
+d139 1
+a139 1
+	"missing name for .Ex, using \"\"",
+d209 1
+a209 1
+	"NOT IMPLEMENTED: .Bd -file",
+d356 2
+a357 2
+				mandoc_msg(MANDOCERR_BADCHAR, curp,
+				    curp->line, pos, NULL);
+d413 2
+a414 2
+				mandoc_msg(MANDOCERR_BADCHAR, curp,
+				    curp->line, pos, NULL);
+@
+
+
+1.76
+log
+@Split MANDOCERR_IGNARGV into one message for .An and one for .Bl
+and report the macro name and argument.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.75 2014/07/31 00:41:10 schwarze Exp $ */
+a211 1
+	"static buffer exhausted",
+@
+
+
+1.75
+log
+@In .Bl -column, if some of the column width declarations are given
+right after the -column argument and some at the very end of the
+argument list, after some other arguments like -compact, concatenate
+the column lists.
+This gets rid of one of the last useless FATAL errors
+and actually shortens the code by a few lines.
+
+This fixes an issue introduced more than five years ago, at first
+causing an assert() since mdoc_action.c rev. 1.14 (June 17, 2009),
+then later a FATAL error since mdoc_validate rev. 1.130 (Nov. 30, 2010),
+and marked as "TODO" ever since.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.74 2014/07/30 23:38:52 schwarze Exp $ */
+a146 1
+	"skipping argument",
+d149 1
+d152 1
+@
+
+
+1.74
+log
+@Remove the useless FATAL error "argument count wrong, violates syntax".
+The last remaining instance was .It in .Bl -column with more than one
+excessive .Ta.  However, simply downgrading from FATAL to ERROR, it just
+works fine, almost the same way as in groff, without any other changes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.73 2014/07/30 17:06:26 schwarze Exp $ */
+a207 1
+	"column syntax is inconsistent",
+@
+
+
+1.73
+log
+@Get rid of the useless FATAL error "child violates parent syntax".
+When finding items outside lists, simply skip them and throw an ERROR.
+Handle subsections before the first section instead of bailing out.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.72 2014/07/30 14:50:08 schwarze Exp $ */
+a209 1
+	"argument count wrong, violates syntax",
+@
+
+
+1.72
+log
+@Remove two useless FATAL errors.
+When a file contains neither text nor macros, treat it as an empty document.
+When the mdoc(7) document prologue is incomplete, use some default values.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.71 2014/07/30 12:58:21 schwarze Exp $ */
+d188 1
+a209 1
+	"child violates parent syntax",
+@
+
+
+1.71
+log
+@better name and wording for the last two non-generic errors
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.70 2014/07/30 00:19:16 schwarze Exp $ */
+a206 1
+	"not a manual",
+a212 1
+	"no document prologue",
+a264 5
+		if (NULL == curp->pmdoc)
+			curp->pmdoc = mdoc_alloc(
+			    curp->roff, curp, curp->defos,
+			    MPARSE_QUICK & curp->options ? 1 : 0);
+		assert(curp->pmdoc);
+a267 4
+		if (NULL == curp->pman)
+			curp->pman = man_alloc(curp->roff, curp,
+			    MPARSE_QUICK & curp->options ? 1 : 0);
+		assert(curp->pman);
+d675 13
+a697 6
+	if ( ! (curp->mdoc || curp->man || curp->sodest)) {
+		mandoc_msg(MANDOCERR_NOTMANUAL, curp, 0, 0, NULL);
+		curp->file_status = MANDOCLEVEL_FATAL;
+		return;
+	}
+
+d795 8
+@
+
+
+1.70
+log
+@Various improvements related to .Ex and .Rv:
+* let .Nm fall back to the empty string, not to UNKNOWN
+* never let .Rv copy an argument from .Nm
+* avoid spurious \fR after empty .Nm in -Tman
+* correct handling of .Ex and .Rv in -Tman
+* correct the wording of the output for .Rv without arguments
+* use non-breaking spaces in .Ex and .Rv output where required
+* split MANDOCERR_NONAME into a warning for .Ex and an error for .Nm
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.69 2014/07/09 11:31:43 schwarze Exp $ */
+d196 1
+d198 1
+d200 1
+a200 3
+	"uname(3) system call failed",
+	"request requires a numeric argument",
+	"missing list type, using -item",
+@
+
+
+1.69
+log
+@mark defos as const; nobody needs to change it,
+and it is occasionally useful to be able to pass literal strings
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.68 2014/07/07 21:36:20 schwarze Exp $ */
+d139 1
+a194 1
+	"manual name not yet set",
+d196 1
+@
+
+
+1.68
+log
+@Clean up ERROR messages related to document structure and macros:
+Hierarchical naming and mention macro names in messages.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.67 2014/07/07 16:12:20 schwarze Exp $ */
+d68 1
+a68 1
+	char		 *defos; /* default operating system */
+d784 1
+a784 1
+		mandocmsg mmsg, char *defos)
+@
+
+
+1.67
+log
+@no need to delete any content from .Rs blocks,
+and downgrade the related message from ERROR to WARNING
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.66 2014/07/07 15:03:43 schwarze Exp $ */
+d183 1
+d186 7
+a194 1
+	"skipping unknown macro",
+a196 4
+	"skipping column outside column list",
+	"skipping end of block that is not open",
+	"missing end of block",
+	"scope open on exit",
+@
+
+
+1.66
+log
+@no need to skip content before first section header
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.65 2014/07/07 11:35:06 schwarze Exp $ */
+d152 1
+a188 1
+	"skipping invalid content in .Rs block",
+@
+
+
+1.65
+log
+@implement .dei and .ami
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.64 2014/07/06 19:09:00 schwarze Exp $ */
+a185 1
+	"skipping text before first section header",
+@
+
+
+1.64
+log
+@Clean up messages related to plain text and to escape sequences.
+* Mention invalid escape sequences and string names, and fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.63 2014/07/05 12:34:17 schwarze Exp $ */
+a187 1
+	"NOT IMPLEMENTED, please use groff: skipping request",
+@
+
+
+1.63
+log
+@Cleanup with respect to bad macro arguments.
+* Fix .Sm with invalid arg: move arg out and toggle mode.
+* Promote "unknown standard" from WARNING to ERROR, it loses information.
+* Delete MANDOCERR_BADWIDTH, it would only indicate a mandoc(1) bug.
+* Do not report MANDOCERR_BL_LATETYPE when there is no type at all.
+* Mention macro names, arguments and fallbacks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.62 2014/07/05 01:12:20 schwarze Exp $ */
+d147 1
+d156 3
+a158 3
+	"blank line in non-literal context",
+	"tab in non-literal context",
+	"end of line whitespace",
+d160 2
+a161 2
+	"bad escape sequence",
+	"unterminated quoted string",
+@
+
+
+1.62
+log
+@Cleanup regarding -offset and -width:
+* Bugfix: Last one wins, not first one.
+* Fix .Bl -width without argument: it means 0n, so do not ignore it.
+* Report macro names, argument names and fallbacks in related messages.
+* Simplify: Garbage collect auxiliary variables in pre_bd() and pre_bl().
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.61 2014/07/04 16:12:08 schwarze Exp $ */
+d148 2
+a149 2
+	"duplicate display type",
+	"duplicate list type",
+d151 2
+a152 4
+	"bad Boolean value",
+	"unknown font",
+	"unknown standard specifier",
+	"bad width argument",
+d190 1
+@
+
+
+1.61
+log
+@Clean up messages regarding excess arguments:
+* Downgrade ".Bf -emphasis Em" from FATAL to WARNING.
+* Mention the macros, the arguments, and the fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.60 2014/07/04 01:50:07 schwarze Exp $ */
+d134 1
+@
+
+
+1.60
+log
+@Clean up messages related to missing arguments.
+* Do not warn about empty -column cells, they seem valid to me.
+* Downgrade empty item and missing -std from ERROR to WARNING.
+* Hierarchical naming.
+* Descriptive, not imperative style.
+* Mention macro names, argument names, and fallbacks.
+* Garbage collect some unreachable code in post_it().
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.59 2014/07/03 23:24:56 schwarze Exp $ */
+d140 2
+a141 1
+	"missing font type",
+d198 2
+a199 1
+	"line argument(s) will be lost",
+a206 1
+	"argument count wrong, violates syntax",
+@
+
+
+1.59
+log
+@Fix formatting of empty .Bl -inset item heads.
+Downgrade empty item heads from ERROR to WARNING.
+Show the list type in the error message.
+Choose better variable names for nodes in post_it().
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.58 2014/07/03 21:23:54 schwarze Exp $ */
+d135 5
+a139 4
+	"missing display type",
+	"list type must come first",
+	"tag lists require a width argument",
+	"missing head in list item",
+d141 1
+a194 2
+	"macro requires body argument(s)",
+	"macro requires argument(s)",
+d196 1
+a196 1
+	"missing list type",
+@
+
+
+1.58
+log
+@MANDOCERR_NOARGS reported three completely unrelated classes of problems.
+Split the roff(7) parts out of it and report the request names for these cases.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.57 2014/07/02 13:10:45 schwarze Exp $ */
+d138 1
+a192 1
+	"macro requires line argument(s)",
+@
+
+
+1.57
+log
+@Disentangle the MANDOCERR_CHILD message, which reported three
+completely different things, into three distinct messages.
+Also mention the macro names we are talking about.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.56 2014/07/02 11:43:20 schwarze Exp $ */
+d131 2
+@
+
+
+1.56
+log
+@Clean up warnings related to macros and nesting.
+* Hierarchical naming of enum mandocerr items.
+* Improve the wording to make it comprehensible.
+* Mention the offending macro.
+* Garbage collect one chunk of ancient, long unreachable code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.55 2014/07/02 03:48:07 schwarze Exp $ */
+a122 1
+	"child violates parent syntax",
+d124 2
+d184 1
+@
+
+
+1.55
+log
+@Implement the obsolete macros .En .Es .Fr .Ot for backward compatibility,
+since this is hardly more complicated than explicitly ignoring them
+as we did in the past.  Of course, do not use them!
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.54 2014/07/01 22:37:15 schwarze Exp $ */
+d125 2
+a126 1
+	"already in literal mode",
+a135 1
+	"skipping end of block that is not open",
+@
+
+
+1.54
+log
+@Clean up the warnings related to document structure.
+* Hierarchical naming of the related enum mandocerr items.
+* Mention the offending macro, section title, or string.
+While here, improve some wordings:
+* Descriptive instead of imperative style.
+* Uniform style for "missing" and "skipping".
+* Where applicable, mention the fallback used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.53 2014/06/30 23:45:08 schwarze Exp $ */
+d118 1
+a118 1
+	"skipping obsolete macro",
+@
+
+
+1.53
+log
+@garbage collect two unused enum mandocerr items
+and fix a couple of comments while here
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.52 2014/06/25 00:20:19 schwarze Exp $ */
+d96 2
+a97 2
+	"no TH macro in document",
+	"document title should be all caps",
+d100 1
+a100 1
+	"date missing, using today's date",
+d104 2
+a105 2
+	"macro not allowed in prologue",
+	"macro not allowed in body",
+d110 2
+a111 2
+	"content before the first section header",
+	"NAME section must come first",
+d114 2
+a115 2
+	"duplicate section name",
+	"section header suited to sections 2, 3, and 9 only",
+d179 1
+a179 1
+	"skipping text before the first section header",
+@
+
+
+1.52
+log
+@Improve messages related to the roff(7) .so request.
+
+In all these messages, show the filename argument that was passed
+to the .so request.
+
+In case of failure, show an additional message reporting the file
+and the line number where the failing request was found.
+The existing message reporting the reason for the failure -
+for example, "Permission denied" - is left in place, unchanged.
+
+Inspired by a question asked by Nick@@ after he saw the
+confusing old messages that used to be emitted in this area.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.51 2014/06/21 22:24:01 schwarze Exp $ */
+a155 3
+	/* related to equations */
+	"unexpected literal in equation",
+
+a193 1
+	"body argument(s) will be lost",
+@
+
+
+1.51
+log
+@Reduce the verbosity of error messages caused by open(2) failures.
+Suggested by and ok jmc@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.50 2014/06/20 23:02:31 schwarze Exp $ */
+d209 1
+d510 4
+a513 1
+			if (MANDOCLEVEL_FATAL <= curp->file_status)
+d515 1
+@
+
+
+1.50
+log
+@As suggested by jmc@@, only include line and column numbers into messages
+when they are meaningful, to avoid confusing stuff like this:
+$ mandoc /dev/null
+mandoc: /dev/null:0:1: FATAL: not a manual
+Instead, just say:
+mandoc: /dev/null: FATAL: not a manual
+
+Another example this applies to is documents having a prologue,
+but lacking a body.  Do not throw a FATAL error for these; instead,
+issue a WARNING and show the empty document, in the man(7) case with
+the same amount of blank lines as groff does.  Also downgrade mdoc(7)
+documents having content before the first .Sh from FATAL to WARNING.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.49 2014/06/20 17:24:00 schwarze Exp $ */
+d213 1
+a213 1
+	"cannot open file",
+@
+
+
+1.49
+log
+@Start systematic improvements of error reporting.
+So far, this covers all WARNINGs related to the prologue.
+
+1) hierarchical naming of MANDOCERR_* constants
+2) mention the macro name in messages where that adds clarity
+3) add one missing MANDOCERR_DATE_MISSING msg
+4) fix the wording of one message related to the man(7) prologue
+
+Started on the plane back from Ottawa.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.48 2014/04/20 22:04:04 schwarze Exp $ */
+d109 2
+a208 1
+	"no document body",
+d688 1
+a688 1
+		mandoc_msg(MANDOCERR_NOTMANUAL, curp, 1, 0, NULL);
+@
+
+
+1.48
+log
+@in debug messages, truncating strings of excessive lengths is actually
+a good thing, so cast the return value from sprintf to (void);
+this concludes the mandoc sprintf audit
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.47 2014/04/20 16:46:05 schwarze Exp $ */
+d96 1
+a96 1
+	"no title in document",
+@
+
+
+1.47
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.46 2014/03/23 11:25:26 schwarze Exp $ */
+d855 1
+a855 1
+	vsnprintf(buf, sizeof(buf) - 1, fmt, ap);
+@
+
+
+1.46
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.45 2014/03/19 22:20:43 schwarze Exp $ */
+d49 1
+a49 1
+	char	 	 *buf; /* binary input buffer */
+d66 1
+a66 1
+	const char	 *file; 
+d156 1
+a156 1
+	
+d227 1
+d261 1
+a261 1
+		if (NULL == curp->pmdoc) 
+d269 1
+a269 1
+		if (NULL == curp->pman) 
+d278 1
+a278 1
+		if (NULL == curp->pmdoc) 
+d285 1
+a285 1
+	} 
+d287 1
+a287 1
+	if (NULL == curp->pman) 
+d312 2
+a313 2
+	lnn = curp->line; 
+	pos = 0; 
+d350 1
+a350 1
+			/* 
+d361 2
+a362 2
+			if ( ! (isascii(c) && 
+					(isgraph(c) || isblank(c)))) {
+d364 1
+a364 1
+						curp->line, pos, NULL);
+d418 2
+a419 2
+			if ( ! (isascii(c) && 
+					(isgraph(c) || isblank(c)))) {
+d421 1
+a421 1
+						curp->line, pos, NULL);
+d433 1
+a433 1
+ 		if (pos >= (int)ln.sz)
+d456 6
+a461 7
+			curp->secondary->buf = 
+				mandoc_realloc
+				(curp->secondary->buf, 
+				 curp->secondary->sz + pos + 2);
+			memcpy(curp->secondary->buf + 
+					curp->secondary->sz, 
+					ln.buf, pos);
+d470 2
+a471 3
+		rr = roff_parseln
+			(curp->roff, curp->line, 
+			 &ln.buf, &ln.sz, of, &of);
+d474 1
+a474 1
+		case (ROFF_REPARSE):
+d479 1
+a479 1
+					curp->line, pos, NULL);
+d482 1
+a482 1
+		case (ROFF_APPEND):
+d485 1
+a485 1
+		case (ROFF_RERUN):
+d487 1
+a487 1
+		case (ROFF_IGN):
+d490 1
+a490 1
+		case (ROFF_ERR):
+d493 1
+a493 1
+		case (ROFF_SO):
+d505 1
+a505 1
+			if (curp->secondary) 
+d534 1
+a534 1
+		/* 
+d550 2
+a551 2
+					man_addspan(curp->man, span) :
+					mdoc_addspan(curp->mdoc, span);
+d556 5
+a560 5
+			rc = curp->mdoc ? 
+				mdoc_addeqn(curp->mdoc, 
+					roff_eqn(curp->roff)) :
+				man_addeqn(curp->man,
+					roff_eqn(curp->roff));
+d563 4
+a566 4
+				man_parseln(curp->man, 
+					curp->line, ln.buf, of) :
+				mdoc_parseln(curp->mdoc, 
+					curp->line, ln.buf, of);
+d862 1
+a862 1
+mandoc_msg(enum mandocerr er, struct mparse *m, 
+@
+
+
+1.45
+log
+@Without the MPARSE_SO option, if the file contains nothing but a
+single .so request, do not read the file pointed to, but instead
+let mparse_result() provide the file name pointed to as a return
+value.  To be used by makewhatis(8) in the future.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.44 2014/03/19 21:51:20 schwarze Exp $ */
+d40 1
+@
+
+
+1.44
+log
+@Generalize the mparse_alloc() and roff_alloc() functions by giving
+them an "options" argument, replacing the existing "inttype" and
+"quick" arguments, preparing for a future MPARSE_SO option.
+Store this argument in struct mparse and struct roff, replacing the
+existing "inttype", "parsetype", and "quick" members.
+No functional change except one tiny cosmetic fix in roff_TH().
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.43 2014/01/06 21:34:31 schwarze Exp $ */
+d62 1
+d494 6
+d686 1
+a686 1
+	if ( ! (curp->man || curp->mdoc)) {
+d808 3
+d827 1
+d832 2
+a833 1
+mparse_result(struct mparse *curp, struct mdoc **mdoc, struct man **man)
+d836 5
+@
+
+
+1.43
+log
+@Another 25% speedup for mandocdb(8) -Q mode, found with gprof(1).
+For /usr/share/man, we only need 56% of the time of makewhatis(8) now.
+
+In groff, user-defined macros clashing with mdoc(7) or man(7)
+standard macros are cleared when parsing the .Dd or .TH macro,
+respectively.  Of course, we continue doing that in standard mode
+to assure full groff bug compatibility.
+
+However, in -Q mode, full groff bug compatibility makes no sense
+when it's unreasonably expensive, so skip this step in -Q mode.
+Real-world manuals hardly ever redefine standard macros,
+that's terrible style, and if they do, it's pointless to do so
+before .Dd or .TH because it has no effect.  Even if someone does,
+it's extremely unlikely to break mandocdb(8) -Q parsing because we
+abort the parse sequence after the NAME section, anyway.
+
+So if you manually redefine .Sh, .Nm, .Nd, or .SH in a way that doesn't
+work at all and rely on .Dd or .TH to fix it up for you, your broken
+manual will no longer get a perfect apropos(1) entry until you re-run
+mandocdb(8) without -Q.  It think that consequence is acceptable
+in order to get a 25% speedup for everyone else.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.42 2014/01/06 00:53:33 schwarze Exp $ */
+d56 1
+a56 1
+	enum mparset	  inttype; /* which parser to use */
+a66 1
+	int		  quick; /* abort the parse early */
+d257 1
+a257 2
+	switch (curp->inttype) {
+	case (MPARSE_MDOC):
+d259 3
+a261 2
+			curp->pmdoc = mdoc_alloc(curp->roff, curp,
+					curp->defos, curp->quick);
+d265 1
+a265 1
+	case (MPARSE_MAN):
+d268 1
+a268 1
+					curp->quick);
+a271 2
+	default:
+		break;
+d276 3
+a278 2
+			curp->pmdoc = mdoc_alloc(curp->roff, curp,
+					curp->defos, curp->quick);
+d285 2
+a286 1
+		curp->pman = man_alloc(curp->roff, curp, curp->quick);
+d767 2
+a768 2
+mparse_alloc(enum mparset inttype, enum mandoclevel wlevel,
+		mandocmsg mmsg, char *defos, int quick)
+d776 1
+a778 1
+	curp->inttype = inttype;
+a779 1
+	curp->quick = quick;
+d781 1
+a781 1
+	curp->roff = roff_alloc(inttype, curp, curp->quick);
+@
+
+
+1.42
+log
+@Joerg Sonnenberger contributed copyrightable amounts of text to
+some files.  To make it clear that he also put his contributions
+under the ISC license, with his explicit permission, add his
+Copyright notice to the relevant files.  No code change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.41 2014/01/05 20:26:36 schwarze Exp $ */
+d783 1
+a783 1
+	curp->roff = roff_alloc(inttype, curp);
+@
+
+
+1.41
+log
+@Add an option -Q (quick) to mandocdb(8)
+for accelerated generation of reduced-size databases.
+
+Implement this by allowing the parsers to optionally
+abort the parse sequence after the NAME section.
+
+While here, garbage collect the unused void *arg attribute of
+struct mparse and mparse_alloc() and fix some errors in mandoc(3).
+
+This reduces the processing time of mandocdb(8) on /usr/share/man
+by a factor of 2 and the database size by a factor of 4.
+However, it still takes 5 times the time and 6 times the space
+of makewhatis(8), so more work is clearly needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.40 2014/01/02 16:29:55 schwarze Exp $ */
+d5 1
+@
+
+
+1.40
+log
+@Since the functions in read.c are part of the mandoc(3) library,
+do not print to stderr.  Instead, properly use the mmsg callback.
+Issue noticed by Abhinav Upadhyay <er dot abhinav dot upadhyay
+at gmail dot com> and Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.39 2013/09/16 00:25:07 schwarze Exp $ */
+a62 1
+	void		 *arg; /* argument to mmsg */
+d66 1
+d261 1
+a261 1
+					curp->defos);
+d267 2
+a268 1
+			curp->pman = man_alloc(curp->roff, curp);
+d279 1
+a279 1
+					curp->defos);
+d286 1
+a286 1
+		curp->pman = man_alloc(curp->roff, curp);
+d564 2
+a565 1
+		}
+d768 1
+a768 1
+		mandocmsg mmsg, void *arg, char *defos)
+a777 1
+	curp->arg = arg;
+d780 1
+@
+
+
+1.39
+log
+@One of the WARNING messages has to use the word "section" twice in two
+different meanings, that cannot be helped.  But we can make this less
+confusing by stating that the second instance refers to stuff like (2),
+(3), and (9), and by adding the sections header the first instance
+refers to, for example ERRORS or RETURN VALUES.
+
+Source for confusion noticed by Jan Stary <hans at stare dot cz>,
+better wording suggested by jmc@@, tweaked by me.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.38 2013/07/13 12:52:07 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010, 2011, 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d29 1
+d72 2
+a73 1
+static	int	  read_whole_file(const char *, int, struct buf *, int *);
+d197 1
+d208 5
+d579 2
+a580 1
+read_whole_file(const char *file, int fd, struct buf *fb, int *with_mmap)
+d588 4
+a591 1
+		perror(file);
+d604 4
+a607 1
+			fprintf(stderr, "%s: input too large\n", file);
+d630 5
+a634 1
+				fprintf(stderr, "%s: input too large\n", file);
+d645 5
+a649 1
+			perror(file);
+d730 9
+a738 6
+	if (-1 == fd)
+		if (-1 == (fd = open(file, O_RDONLY, 0))) {
+			perror(file);
+			curp->file_status = MANDOCLEVEL_SYSERR;
+			goto out;
+		}
+d746 1
+a746 2
+	if ( ! read_whole_file(file, fd, &blk, &with_mmap)) {
+		curp->file_status = MANDOCLEVEL_SYSERR;
+a747 1
+	}
+@
+
+
+1.38
+log
+@Rudimentary implementation of the .it request (input line trap).
+As with any low-level roff request involving subtle interactions
+with macro internals, this implementation is not exact, but it
+does handle the simplest cases.
+
+This request occurs in man(7) code generated from DocBook,
+for example mysql(1) and yasm_arch(7).
+Thanks to brad@@ for reporting the issue back in January 2011.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.37 2013/06/02 03:52:21 schwarze Exp $ */
+d109 1
+a109 1
+	"section not in conventional manual section",
+@
+
+
+1.37
+log
+@Sync to OpenBSD, no functional change:
+* Add the missing mparse_parse_buffer prototype.
+* Drop the useless MAP_FILE constant: It's not specified in POSIX,
+  so it's not required, it's the default anyway, and it's 0 anyway.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.36 2013/06/01 22:57:35 schwarze Exp $ */
+d188 1
+@
+
+
+1.36
+log
+@This file contains too much complexity.
+Remove one layer of indirection by deleting mparse_readfd_r()
+and doing its work in the public mparse_readfd().
+As a bonus, catch recursive .so.
+This is part of the preparations to resync to openbsd.org.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.35 2013/05/30 03:52:59 schwarze Exp $ */
+a42 4
+#ifndef MAP_FILE
+#define	MAP_FILE	0
+#endif
+
+d73 2
+d596 1
+a596 2
+		fb->buf = mmap(NULL, fb->sz, PROT_READ, 
+				MAP_FILE|MAP_SHARED, fd, 0);
+@
+
+
+1.35
+log
+@Reject non-printable characters found in the input stream even when
+preceded by a backslash; otherwise, the escape sequence would later
+be identified as invalid and the non-printable character would be
+passed through to the output backends, sometimes triggering assertions.
+
+Reported by Mike Small <smallm at panix dot com> on the mdocml discuss list.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.34 2012/11/19 22:30:58 schwarze Exp $ */
+a73 1
+static	void	  mparse_readfd_r(struct mparse *, int, const char *, int);
+d492 1
+a492 1
+			mparse_readfd_r(curp, -1, ln.buf + of, 1);
+d666 1
+a666 2
+mparse_parse_buffer(struct mparse *curp, struct buf blk, const char *file,
+		int re)
+d669 6
+d680 1
+d684 1
+a684 1
+	if (0 == re && MANDOCLEVEL_FATAL > curp->file_status)
+d699 1
+a699 1
+	mparse_parse_buffer(curp, blk, file, 0);
+d703 2
+a704 2
+static void
+mparse_readfd_r(struct mparse *curp, int fd, const char *file, int re)
+d713 1
+a713 1
+			return;
+d724 1
+a724 1
+		return;
+d727 1
+a727 1
+	mparse_parse_buffer(curp, blk, file, re);
+d738 1
+a738 7
+}
+
+enum mandoclevel
+mparse_readfd(struct mparse *curp, int fd, const char *file)
+{
+
+	mparse_readfd_r(curp, fd, file, 0);
+@
+
+
+1.34
+log
+@Do not crash on stray .Ta macros found outside column lists.
+Problem reported by jmc@@, thanks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.33 2012/11/19 17:57:23 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010, 2011, 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d331 9
+a355 2
+				if (pos >= (int)ln.sz)
+					resize_buf(&ln, 256);
+a362 2
+				if (pos >= (int)ln.sz)
+					resize_buf(&ln, 256);
+d404 13
+a418 3
+			if (pos + 1 >= (int)ln.sz)
+				resize_buf(&ln, 256);
+
+@
+
+
+1.33
+log
+@In groff, trying to redefine standard man(7) macros before .TH has no effect;
+after .TH, it works.  Trying to redefine standard mdoc(7) macros before .Dd
+works when calling groff with the -mdoc command line option, but does not
+when calling groff with -mandoc; after .Dd, it always works.
+
+Arguably, one might call that buggy behaviour in groff, but it is very
+unlikely that anybody will change groff in this respect (certainly, i'm
+not volunteering).  So let's be bug-compatible.
+
+This fixes the vertical spacing in sox(1).
+
+Merging from OpenBSD libmandoc.h 1.18, read.c 1.8, roff.c 1.47, June 2, 2012.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.32 2012/11/16 22:21:05 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@@openbsd.org>
+d183 1
+@
+
+
+1.32
+log
+@Warn about unknown volume or arch in Dt macro arguments;
+patch written by Nicolas Joly <njoly at pasteur dot fr>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.31 2012/07/18 11:11:12 schwarze Exp $ */
+d743 1
+a743 1
+	curp->roff = roff_alloc(curp);
+@
+
+
+1.31
+log
+@Fix handling of paragraph macros inside lists:
+* When they are trailing the last item, move them outside the list.
+* When they are trailing any other none-compact item, drop them.
+
+OpenBSD rev. mdoc_validate.c 1.107, mdoc.c 1.91
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.30 2012/07/12 15:11:14 schwarze Exp $ */
+d98 1
+@
+
+
+1.30
+log
+@The post_nm() validation function crashed when the first .Nm child node
+was a non-text node.  Fix this by rewriting post_nm() to always set
+the meta name to UNKNOWN when the name is missing or unusable.
+While here, make MANDOCERR_NONAME an ERROR, as it usually renders
+the page content unintelligible.
+
+Bug reported by Maxim <Belooussov at gmail dot com>, thanks.
+OpenBSD rev. 1.105
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.29 2012/05/27 17:48:57 schwarze Exp $ */
+d116 1
+@
+
+
+1.29
+log
+@Support -Ios='OpenBSD 5.1' to override uname(3) as the source of the
+default value for the mdoc(7) .Os macro.
+Needed for man.cgi on the OpenBSD website.
+
+Problem with man.cgi first noticed by deraadt@@;
+beck@@ and deraadt@@ agree with the way to solve the issue.
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.28 2012/02/16 20:51:31 joerg Exp $ */
+a108 1
+	"manual name not yet set",
+d176 1
+@
+
+
+1.28
+log
+@Add mparse_readmem, which allows application to run the parser directly
+from memory, e.g. after de-compressing a document.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.27 2012/02/05 16:46:15 joerg Exp $ */
+d69 1
+d251 2
+a252 1
+			curp->pmdoc = mdoc_alloc(curp->roff, curp);
+d268 2
+a269 1
+			curp->pmdoc = mdoc_alloc(curp->roff, curp);
+d726 2
+a727 1
+mparse_alloc(enum mparset inttype, enum mandoclevel wlevel, mandocmsg mmsg, void *arg)
+d739 1
+@
+
+
+1.27
+log
+@Don't silently skip non-ASCII characters, but replace them with ``?''.
+This is less likely to break the syntax of macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.26 2011/11/07 01:24:40 schwarze Exp $ */
+d31 1
+d41 1
+a74 1
+static	void	  pdesc(struct mparse *, const char *, int);
+a550 32
+static void
+pdesc(struct mparse *curp, const char *file, int fd)
+{
+	struct buf	 blk;
+	int		 with_mmap;
+
+	/*
+	 * Run for each opened file; may be called more than once for
+	 * each full parse sequence if the opened file is nested (i.e.,
+	 * from `so').  Simply sucks in the whole file and moves into
+	 * the parse phase for the file.
+	 */
+
+	if ( ! read_whole_file(file, fd, &blk, &with_mmap)) {
+		curp->file_status = MANDOCLEVEL_SYSERR;
+		return;
+	}
+
+	/* Line number is per-file. */
+
+	curp->line = 1;
+
+	mparse_buf_r(curp, blk, 1);
+
+#ifdef	HAVE_MMAP
+	if (with_mmap)
+		munmap(blk.buf, blk.sz);
+	else
+#endif
+		free(blk.buf);
+}
+
+d646 32
+d680 2
+a681 1
+	const char	*svfile;
+d689 6
+d696 4
+a699 2
+	svfile = curp->file;
+	curp->file = file;
+d701 1
+a701 1
+	pdesc(curp, file, fd);
+d703 6
+a708 2
+	if (0 == re && MANDOCLEVEL_FATAL > curp->file_status)
+		mparse_end(curp);
+a711 2
+
+	curp->file = svfile;
+@
+
+
+1.26
+log
+@When the HEAD scope of .TP is broken by another block macro,
+do not abort with a FATAL error, but report a report a WARNING,
+remove the broken .TP from the syntax tree, and prod on.
+Reported repeatedly by ports people, at least by brad@@ and jeremy@@.
+Also fixes rendition(4) in Xenocara.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.25 2011/10/08 15:42:29 kristaps Exp $ */
+d328 3
+a330 3
+			 * I'll be helpful and drop these characters so
+			 * we don't display gibberish.  Note to manual
+			 * writers: use special characters.
+d338 1
+a338 1
+						curp->line, pos, "ignoring byte");
+d340 3
+@
+
+
+1.25
+log
+@Critical fix in the new -Tman lookaside buffer code. Gah..
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.24 2011/10/06 22:29:12 kristaps Exp $ */
+a194 1
+	"line scope broken, syntax violated",
+@
+
+
+1.24
+log
+@If -Tman is specified and input is -man, echo the preprocessed (`so'
+replaced by file) input.  This replaces earlier behaviour of doing
+nothing, which I found unexpected (mandoc should always output).
+
+This requires a buffer in read.c that saves the input lines before being
+parsed, with a special hook if `so' is invoked.  This buffer is just
+flushed to output if -mman is the input.
+
+While mucking around doing this, I also alpha-ordered the mandoc.h
+functions.
+
+Ok schwarze@@, with no screaming when the polished patch was published.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.23 2011/07/23 18:41:18 kristaps Exp $ */
+d467 2
+a468 1
+			curp->secondary->sz -= pos + 1;
+@
+
+
+1.23
+log
+@Add support for tdefine and ndefine.  Consolidate some error messages.  Add
+somem more version notes (getting there).  Have the equation nanme be captured.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.22 2011/07/22 14:55:07 kristaps Exp $ */
+d66 1
+d415 21
+d462 6
+d735 2
+d753 2
+d756 1
+d816 16
+@
+
+
+1.22
+log
+@Add support for `gsize' eqn token (introduced in second-edition troff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.21 2011/07/21 23:30:39 kristaps Exp $ */
+a154 1
+	"too many nested equation defines",
+@
+
+
+1.21
+log
+@Complete eqn.7 parsing.  Features all productions from the original 1975
+CACM paper in an LR(1) parse (1 -> eqn_rewind()).  Right now the code is
+a little jungly, but will clear up as I consolidate parse components.
+The AST structure will also be cleaned up, as right now it's pretty ad
+hoc (this won't change the parse itself).  I added the mandoc_strndup()
+function will here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.20 2011/07/21 12:30:44 kristaps Exp $ */
+a154 1
+	"bad equation macro syntax",
+@
+
+
+1.20
+log
+@Support nested `{, }' subexpressions in eqn.  Document in code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.19 2011/07/18 14:30:51 kristaps Exp $ */
+d159 3
+@
+
+
+1.19
+log
+@Forgot to add these bits to the last commit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.18 2011/07/18 07:46:41 kristaps Exp $ */
+d157 2
+@
+
+
+1.18
+log
+@Make `struct roff' be passed into libmdoc and libman upon creation.
+This is required for supporting in-line equations.  While here, push
+registers properly into roff and add an set/get/mod interface.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.17 2011/07/17 14:08:49 kristaps Exp $ */
+d156 1
+@
+
+
+1.17
+log
+@Provide implementations of `define', `set', and `unset'.
+Tie them into the stream of data.
+Document these appropriate, bringing in the grammar as defined by the
+original eqn manual (Kernighan/Richie).
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.16 2011/07/17 12:52:54 kristaps Exp $ */
+a61 1
+	struct regset	  regs; /* roff registers */
+d245 1
+a245 1
+			curp->pmdoc = mdoc_alloc(&curp->regs, curp);
+d251 1
+a251 1
+			curp->pman = man_alloc(&curp->regs, curp);
+d261 1
+a261 1
+			curp->pmdoc = mdoc_alloc(&curp->regs, curp);
+d268 1
+a268 1
+		curp->pman = man_alloc(&curp->regs, curp);
+d689 1
+a689 1
+	curp->roff = roff_alloc(&curp->regs, curp);
+a696 2
+	memset(&curp->regs, 0, sizeof(struct regset));
+
+@
+
+
+1.16
+log
+@Warn if equation `define' key is quoted (groff-ism).
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.15 2011/05/26 20:36:21 kristaps Exp $ */
+d155 3
+@
+
+
+1.15
+log
+@At least in theory, this patch lets us compile on Windows (which does
+not have mmap(), from what I can tell).
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.14 2011/04/30 10:18:24 kristaps Exp $ */
+d149 3
+@
+
+
+1.14
+log
+@No code change: fixing spelling errors.  From a patch by uqs@@.  Thanks!
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.13 2011/04/11 21:59:39 kristaps Exp $ */
+d22 4
+a25 2
+#include <sys/stat.h>
+#include <sys/mman.h>
+d534 1
+d538 1
+a544 1
+	struct stat	 st;
+d548 2
+d574 1
+@
+
+
+1.13
+log
+@Ignore \# lines alongside \".  From groff(7):
+
+\#     Everything  up  to  and  including  the  next  newline is
+       ignored.  This is interpreted in copy mode.  This is like \"
+       except that the terminating newline is ignored as well.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.12 2011/04/09 15:29:40 kristaps Exp $ */
+d448 1
+a448 1
+		 * We keep these instanced betwen parsers, but set them
+@
+
+
+1.12
+log
+@Remove a2roffdeco() and mandoc_special() functions and replace them with
+a public (mandoc.h) function mandoc_escape(), which merges the
+functionality of both prior functions.
+
+Reason: code duplication.  The a2roffdeco() and mandoc_special()
+functions were pretty much the same thing and both quite complex.  This
+allows one function to receive improvements in (e.g.) subexpression
+handling and performance, instead of having to replicate functionality.
+
+As such, the mandoc_escape() function already handles a superset of the
+escapes handled in previous versions and has improvements in performance
+(using strcspn(), for example) and reliable handling of subexpressions.
+
+This code Works For Me, but may need work to catch any regressions.
+Since the benefits are great (leaner code, simpler API), I'd rather have
+it in-tree than floating as a patch.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.11 2011/04/04 23:04:38 kristaps Exp $ */
+d357 1
+a357 1
+			if ('"' == blk.buf[i + 1]) {
+@
+
+
+1.11
+log
+@Add config.h Glue for OpenIndiana (and older OpenSolaris) to build.
+From a patch by Yuri Pankov, thanks!
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.10 2011/04/03 10:11:25 kristaps Exp $ */
+d145 1
+a145 1
+	"unknown escape sequence",
+@
+
+
+1.10
+log
+@If wlevel in mparse_alloc() is greater than MANDOCLEVEL_FATAL, we'll
+throw assertions due to per-file-error not being properly set in mmsg().
+This is reasonable behaviour (we shouldn't be able to ignore FATAL after
+all).  Thus, make sure wlevel is sanitised.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.9 2011/04/03 10:05:37 kristaps Exp $ */
+d18 4
+@
+
+
+1.9
+log
+@Allow mparse_result() pointers to be NULL.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.8 2011/03/31 10:54:39 kristaps Exp $ */
+d665 2
+@
+
+
+1.8
+log
+@Allow a NULL mmsg passed to libmandoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.7 2011/03/28 21:49:42 kristaps Exp $ */
+d712 4
+a715 2
+	*mdoc = curp->mdoc;
+	*man = curp->man;
+@
+
+
+1.7
+log
+@Put mandocerrs and mandoclevels arrays into libmandoc with accessors
+mparse_strerror() and mparse_strlevel().
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.6 2011/03/22 10:35:26 kristaps Exp $ */
+d743 2
+a744 1
+	(*m->mmsg)(er, level, m->file, ln, col, msg);
+@
+
+
+1.6
+log
+@Add a FATAL error for when no manual type was assigned (you can repeat
+this for yourself by having a file consisting only of comments).
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.5 2011/03/22 09:50:11 kristaps Exp $ */
+d81 118
+d748 13
+@
+
+
+1.5
+log
+@Step 2: blow away roff.h, as all of its functions have been moved into
+libmandoc.h and there's nothing left.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.4 2011/03/20 16:05:21 kristaps Exp $ */
+a498 3
+#if 0
+	/* FIXME: NOTE a parser may not have been assigned, yet. */
+
+d500 1
+a500 2
+		/* FIXME: make into an mandoc.h error. */
+		fprintf(stderr, "%s: Not a manual\n", curp->file);
+d502 1
+a502 1
+		goto cleanup;
+a503 1
+#endif
+@
+
+
+1.4
+log
+@Let read.c worry about the currently-open file instead of having this
+information duplicated in main.c.  For the time being, remove evt_close
+and evt_open, as the only known mparse interface (main.c) doesn't need
+them.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.3 2011/03/20 16:02:05 kristaps Exp $ */
+a33 1
+#include "roff.h"
+@
+
+
+1.3
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.2 2011/03/20 11:43:06 kristaps Exp $ */
+a60 2
+	mevt_open	  evt_open; /* file-open event */
+	mevt_close	  evt_close; /* file-close event */
+a518 5
+	if ( ! (*curp->evt_open)(curp->arg, file)) {
+		curp->file_status = MANDOCLEVEL_SYSERR;
+		return;
+	}
+
+a536 1
+	(*curp->evt_close)(curp->arg, file);
+d549 1
+a549 2
+mparse_alloc(enum mparset inttype, mevt_open eopen, 
+		mevt_close eclose, enum mandoclevel wlevel, mandocmsg mmsg, void *arg)
+a558 2
+	curp->evt_open = eopen;
+	curp->evt_close = eclose;
+@
+
+
+1.2
+log
+@Change around include ordering for compilation on OpenBSD.
+@
+text
+@d1 1
+a1 1
+/*	$Id: read.c,v 1.1 2011/03/20 11:41:24 kristaps Exp $ */
+d24 1
+d31 1
+d49 1
+d63 1
+a63 1
+	const char	 *svfile; 
+d74 10
+d119 1
+a119 2
+			curp->pmdoc = mdoc_alloc
+				(&curp->regs, curp->arg, curp->mmsg);
+d125 1
+a125 2
+			curp->pman = man_alloc
+				(&curp->regs, curp->arg, curp->mmsg);
+d135 1
+a135 2
+			curp->pmdoc = mdoc_alloc
+				(&curp->regs, curp->arg, curp->mmsg);
+d142 1
+a142 2
+		curp->pman = man_alloc
+			(&curp->regs, curp->arg, curp->mmsg);
+d207 1
+a207 1
+				curp->mmsg(MANDOCERR_BADCHAR, curp->arg, 
+d294 1
+a294 1
+				curp->mmsg(MANDOCERR_ROFFLOOP, curp->arg, 
+d503 1
+a503 1
+	/* NOTE a parser may not have been assigned, yet. */
+d533 2
+a534 2
+	svfile = curp->svfile;
+	curp->svfile = file;
+d544 2
+a545 2
+	(*curp->evt_close)(curp->arg, svfile);
+	curp->svfile = svfile;
+a555 8
+void
+mparse_setstatus(struct mparse *curp, enum mandoclevel lvl)
+{
+
+	if (curp->file_status < lvl)
+		curp->file_status = lvl;
+}
+
+d558 1
+a558 1
+		mevt_close eclose, mandocmsg mmsg, void *arg)
+d564 1
+d571 1
+a571 1
+	curp->roff = roff_alloc(&curp->regs, arg, mmsg);
+d614 33
+@
+
+
+1.1
+log
+@Split the document parsing sequence out of main.c and into read.c,
+putting the interface into mandoc.h.  This effectively makes the
+function of main.c be command-line handling, invoking the parser, and
+sending its output to the output handler.  The sequence of parsing
+(pfile(), pdesc(), etc.) has changed very little but for clean-up of
+some state variables (curp->fd, etc.).
+@
+text
+@d1 1
+a1 1
+/*	$Id: main.c,v 1.153 2011/03/17 12:08:01 kristaps Exp $ */
+d18 1
+a19 1
+#include <sys/stat.h>
+@

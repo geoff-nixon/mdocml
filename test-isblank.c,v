@@ -1,0 +1,51 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.2
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.03.19.14.57.29;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@modernize style: "return" is not a function
+@
+text
+@#include <ctype.h>
+
+int
+main(void)
+{
+	return !isblank(' ') || !isblank('\t') || isblank('_');
+}
+@
+
+
+1.1
+log
+@Compat glue needed for Solaris 9 and 10.
+
+Thanks to Sevan Janiyan <venture37 at geeklan dot co dot uk> for
+reporting the Solaris 10 issues, to Jan Holzhueter <jh at opencsw
+dot org> for some additional insight, and to OpenCSW in general for
+providing me with a Solaris 9/10/11 testing environment.
+@
+text
+@d6 1
+a6 1
+	return(!isblank(' ') || !isblank('\t') || isblank('_'));
+@

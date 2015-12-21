@@ -1,0 +1,1521 @@
+head	1.36;
+access;
+symbols
+	VERSION_1_10_10:1.24
+	VERSION_1_10_9:1.22
+	VERSION_1_10_8:1.19
+	VERSION_1_10_7:1.19
+	VERSION_1_10_6:1.18
+	VERSION_1_10_5:1.17
+	VERSION_1_10_5_PREPDF:1.17
+	VERSION_1_10_4:1.17
+	VERSION_1_10_3:1.17
+	VERSION_1_10_2:1.15
+	VERSION_1_10_1:1.15
+	VERSION_1_9_5:1.11
+	VERSION_1_8_5:1.11
+	VERSION_1_8_1:1.11
+	VERSION_1_7_16:1.11
+	VERSION_1_7_15:1.11
+	OPENBSD_CHECKIN:1.11
+	VERSION_1_6_5:1.11
+	VERSION_1_5_1:1.11
+	VERSION_1_3_15:1.11
+	VERSION_1_3_6:1.11
+	VERSION_1_2_0:1.11
+	VERSION_1_0_2:1.9
+	VERSION_1_0_1:1.9;
+locks; strict;
+comment	@ * @;
+
+
+1.36
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.10.17.00.21.07;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.04.23.16.17.44;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.04.19.14.00.20;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.04.18.16.34.25;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.04.18.16.06.41;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2015.04.02.23.48.20;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2015.04.02.22.48.18;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2015.04.02.21.36.51;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2011.03.22.09.50.11;	author kristaps;	state dead;
+branches;
+next	1.26;
+
+1.26
+date	2011.03.22.09.48.13;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.02.09.09.05.52;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.02.06.20.36.36;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.01.01.16.18.39;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.12.31.18.19.43;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.12.28.10.51.03;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.12.01.15.09.01;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.06.27.15.52.41;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.06.26.15.22.19;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.05.17.00.06.36;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.05.16.10.59.36;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.05.15.18.35.14;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.05.15.07.52.11;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2008.12.15.02.29.44;	author kristaps;	state dead;
+branches;
+next	1.10;
+
+1.10
+date	2008.12.10.17.31.57;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2008.12.08.12.46.28;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.12.07.22.40.18;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.12.07.16.41.04;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.12.07.14.38.57;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.12.06.21.10.31;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.12.06.19.41.41;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.12.06.16.50.18;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.06.13.18.44;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.05.22.54.44;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.36
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$OpenBSD$	*/
+/*
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+struct	mdoc_arg;
+union	mdoc_data;
+
+enum	roff_macroset {
+	MACROSET_NONE = 0,
+	MACROSET_MDOC,
+	MACROSET_MAN
+};
+
+enum	roff_sec {
+	SEC_NONE = 0,
+	SEC_NAME,
+	SEC_LIBRARY,
+	SEC_SYNOPSIS,
+	SEC_DESCRIPTION,
+	SEC_CONTEXT,
+	SEC_IMPLEMENTATION,	/* IMPLEMENTATION NOTES */
+	SEC_RETURN_VALUES,
+	SEC_ENVIRONMENT,
+	SEC_FILES,
+	SEC_EXIT_STATUS,
+	SEC_EXAMPLES,
+	SEC_DIAGNOSTICS,
+	SEC_COMPATIBILITY,
+	SEC_ERRORS,
+	SEC_SEE_ALSO,
+	SEC_STANDARDS,
+	SEC_HISTORY,
+	SEC_AUTHORS,
+	SEC_CAVEATS,
+	SEC_BUGS,
+	SEC_SECURITY,
+	SEC_CUSTOM,
+	SEC__MAX
+};
+
+enum	roff_type {
+	ROFFT_ROOT,
+	ROFFT_BLOCK,
+	ROFFT_HEAD,
+	ROFFT_BODY,
+	ROFFT_TAIL,
+	ROFFT_ELEM,
+	ROFFT_TEXT,
+	ROFFT_TBL,
+	ROFFT_EQN
+};
+
+enum	roff_next {
+	ROFF_NEXT_SIBLING = 0,
+	ROFF_NEXT_CHILD
+};
+
+/*
+ * Indicates that a BODY's formatting has ended, but
+ * the scope is still open.  Used for badly nested blocks.
+ */
+enum	mdoc_endbody {
+	ENDBODY_NOT = 0,
+	ENDBODY_SPACE,	/* Is broken: append a space. */
+	ENDBODY_NOSPACE	/* Is broken: don't append a space. */
+};
+
+struct	roff_node {
+	struct roff_node *parent;  /* Parent AST node. */
+	struct roff_node *child;   /* First child AST node. */
+	struct roff_node *last;    /* Last child AST node. */
+	struct roff_node *next;    /* Sibling AST node. */
+	struct roff_node *prev;    /* Prior sibling AST node. */
+	struct roff_node *head;    /* BLOCK */
+	struct roff_node *body;    /* BLOCK/ENDBODY */
+	struct roff_node *tail;    /* BLOCK */
+	struct mdoc_arg	 *args;    /* BLOCK/ELEM */
+	union mdoc_data	 *norm;    /* Normalized arguments. */
+	char		 *string;  /* TEXT */
+	const struct tbl_span *span; /* TBL */
+	const struct eqn *eqn;	   /* EQN */
+	int		  nchild;  /* Number of child nodes. */
+	int		  line;    /* Input file line number. */
+	int		  pos;     /* Input file column number. */
+	int		  tok;     /* Request or macro ID. */
+#define	TOKEN_NONE	 (-1)	   /* No request or macro. */
+	int		  flags;
+#define	MDOC_VALID	 (1 << 0)  /* Has been validated. */
+#define	MDOC_ENDED	 (1 << 1)  /* Gone past body end mark. */
+#define MDOC_EOS	 (1 << 2)  /* At sentence boundary. */
+#define	MDOC_LINE	 (1 << 3)  /* First macro/text on line. */
+#define MDOC_SYNPRETTY	 (1 << 4)  /* SYNOPSIS-style formatting. */
+#define MDOC_BROKEN	 (1 << 5)  /* Must validate parent when ending. */
+#define	MDOC_DELIMO	 (1 << 6)
+#define	MDOC_DELIMC	 (1 << 7)
+#define	MAN_VALID	  MDOC_VALID
+#define	MAN_EOS		  MDOC_EOS
+#define	MAN_LINE	  MDOC_LINE
+	int		  prev_font; /* Before entering this node. */
+	int		  aux;     /* Decoded node data, type-dependent. */
+	enum roff_type	  type;    /* AST node type. */
+	enum roff_sec	  sec;     /* Current named section. */
+	enum mdoc_endbody end;     /* BODY */
+};
+
+struct	roff_meta {
+	char		 *msec;    /* Manual section, usually a digit. */
+	char		 *vol;     /* Manual volume title. */
+	char		 *os;      /* Operating system. */
+	char		 *arch;    /* Machine architecture. */
+	char		 *title;   /* Manual title, usually CAPS. */
+	char		 *name;    /* Leading manual name. */
+	char		 *date;    /* Normalized date. */
+	int		  hasbody; /* Document is not empty. */
+};
+
+struct	roff_man {
+	struct roff_meta  meta;    /* Document meta-data. */
+	struct mparse	 *parse;   /* Parse pointer. */
+	struct roff	 *roff;    /* Roff parser state data. */
+	const char	 *defos;   /* Default operating system. */
+	struct roff_node *first;   /* The first node parsed. */
+	struct roff_node *last;    /* The last node parsed. */
+	struct roff_node *last_es; /* The most recent Es node. */
+	int		  quick;   /* Abort parse early. */
+	int		  flags;   /* Parse flags. */
+#define	MDOC_LITERAL	 (1 << 1)  /* In a literal scope. */
+#define	MDOC_PBODY	 (1 << 2)  /* In the document body. */
+#define	MDOC_NEWLINE	 (1 << 3)  /* First macro/text in a line. */
+#define	MDOC_PHRASE	 (1 << 4)  /* In a Bl -column phrase. */
+#define	MDOC_PHRASELIT	 (1 << 5)  /* Literal within a phrase. */
+#define	MDOC_FREECOL	 (1 << 6)  /* `It' invocation should close. */
+#define	MDOC_SYNOPSIS	 (1 << 7)  /* SYNOPSIS-style formatting. */
+#define	MDOC_KEEP	 (1 << 8)  /* In a word keep. */
+#define	MDOC_SMOFF	 (1 << 9)  /* Spacing is off. */
+#define	MDOC_NODELIMC	 (1 << 10) /* Disable closing delimiter handling. */
+#define	MAN_ELINE	 (1 << 11) /* Next-line element scope. */
+#define	MAN_BLINE	 (1 << 12) /* Next-line block scope. */
+#define	MDOC_PHRASEQF	 (1 << 13) /* Quote first word encountered. */
+#define	MDOC_PHRASEQL	 (1 << 14) /* Quote last word of this phrase. */
+#define	MDOC_PHRASEQN	 (1 << 15) /* Quote first word of the next phrase. */
+#define	MAN_LITERAL	  MDOC_LITERAL
+#define	MAN_NEWLINE	  MDOC_NEWLINE
+	enum roff_macroset macroset; /* Kind of high-level macros used. */
+	enum roff_sec	  lastsec; /* Last section seen. */
+	enum roff_sec	  lastnamed; /* Last standard section seen. */
+	enum roff_next	  next;    /* Where to put the next node. */
+};
+
+
+void		 deroff(char **, const struct roff_node *);
+@
+
+
+1.35
+log
+@Very tricky diff to fix macro interpretation and spacing around tabs
+in .Bl -column; it took me more than a day to get this right.
+Triggered by a loosely related bug report from tim@@.
+
+The lesson for you is:  Use .Ta macros in .Bl -column, avoid tabs,
+or you are in for surprises:  The last word before a tab is not
+interpreted as a macro (unless there is a blank in between), the
+first word after a tab isn't either (unless there is a blank in
+between), and a blank after a tab causes a leading blank in the
+respective output cell.  Yes, "blank", "tab", "blank tab" and "tab
+blank" all have different semantics; if you write code relying on
+that, good luck maintaining it afterwards...
+@
+text
+@a163 1
+__BEGIN_DECLS
+a165 2
+
+__END_DECLS
+@
+
+
+1.34
+log
+@Unify mdoc_deroff() and man_deroff() into a common function deroff().
+No functional change except that for mdoc(7), it now skips leading
+escape sequences just like it already did for man(7).
+Escape sequences rarely occur in mdoc(7) code and if they do,
+skipping them is an improvement in this context.
+Minus 30 lines of code.
+@
+text
+@d144 2
+a145 2
+#define	MDOC_PHRASELIT	 (1 << 4)  /* Literal within a partial phrase. */
+#define	MDOC_PPHRASE	 (1 << 5)  /* Within a partial phrase. */
+d153 3
+@
+
+
+1.33
+log
+@Decouple the token code for "no request or macro" from the individual
+high-level parsers to allow further unification of functions that
+only need to recognize this code, but that don't care about different
+high-level macrosets beyond that.
+@
+text
+@d160 6
+@
+
+
+1.32
+log
+@Profit from the unified struct roff_man and reduce the number of
+arguments of mparse_result() by one.  No functional change.
+Written on the ICE Bruxelles-Koeln on the way back from p2k15.
+@
+text
+@d100 1
+@
+
+
+1.31
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d22 6
+d154 1
+@
+
+
+1.30
+log
+@Third step towards parser unification:
+Replace struct mdoc_meta and struct man_meta by a unified struct roff_meta.
+Written of the train from London to Exeter on the way to p2k15.
+@
+text
+@d4 1
+a4 1
+ * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+d61 5
+d123 29
+@
+
+
+1.29
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d107 11
+@
+
+
+1.28
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d19 30
+d60 47
+@
+
+
+1.27
+log
+@Step 2: blow away roff.h, as all of its functions have been moved into
+libmandoc.h and there's nothing left.
+@
+text
+@d1 29
+@
+
+
+1.26
+log
+@Step 1 of restructuring: libmandoc.h.  Move all compiler-set-specific
+stuff into libmandoc.h, including old mdoc.h/man.h/roff.h functions now
+used by read.c.  The motivation behind this is to tighten the
+relationship between the underlying compilers while keeping parse data
+hidden from general callers (e.g., main.c).
+
+While here, also move register values from mandoc.h into libmandoc.h as
+noted by schwarze@@.  See above for explanation.
+@
+text
+@a0 24
+/*	$Id: roff.h,v 1.25 2011/03/20 16:02:05 kristaps Exp $ */
+/*
+ * Copyright (c) 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef ROFF_H
+#define ROFF_H
+
+__BEGIN_DECLS
+
+__END_DECLS
+
+#endif /*!ROFF_H*/
+@
+
+
+1.25
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.24 2011/02/09 09:05:52 kristaps Exp $ */
+a19 12
+enum	rofferr {
+	ROFF_CONT, /* continue processing line */
+	ROFF_RERUN, /* re-run roff interpreter with offset */
+	ROFF_APPEND, /* re-run main parser, appending next line */
+	ROFF_REPARSE, /* re-run main parser on the result */
+	ROFF_SO, /* include another file */
+	ROFF_IGN, /* ignore current line */
+	ROFF_TBL, /* a table row was successfully parsed */
+	ROFF_EQN, /* an equation was successfully parsed */
+	ROFF_ERR /* badness: puke and stop */
+};
+
+a21 11
+struct	roff;
+
+void	 	  roff_free(struct roff *);
+struct	roff	 *roff_alloc(struct regset *, struct mparse *);
+void		  roff_reset(struct roff *);
+enum	rofferr	  roff_parseln(struct roff *, int, 
+			char **, size_t *, int, int *);
+void		  roff_endparse(struct roff *);
+const struct tbl_span *roff_span(const struct roff *);
+const struct eqn *roff_eqn(const struct roff *);
+
+@
+
+
+1.24
+log
+@Allow EQN data to be pushed down into libmdoc via mdoc_addeqn().  Only
+the adding itself is implemented; equation data is not yet shown.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.23 2011/02/06 20:36:36 kristaps Exp $ */
+d37 1
+a37 1
+struct	roff	 *roff_alloc(struct regset *, void *, mandocmsg);
+@
+
+
+1.23
+log
+@Add initial EQN support to mandoc.  This parses, then throws away, data
+between EQ and EN roff blocks.  EQN is different from TBL in that data
+after .EQ is unilaterally considered an equation until an .EN.  Thus,
+there's no need to jump through hoops in having table spans and so on.
+This is ONLY the parse code framework in libroff.  EQN is not yet passed
+into the backends.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.22 2011/01/01 16:18:39 kristaps Exp $ */
+d43 1
+@
+
+
+1.22
+log
+@More checks for proper table exit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.21 2010/12/31 18:19:43 kristaps Exp $ */
+d28 1
+@
+
+
+1.21
+log
+@Expose the parsed table API to the world and add accessors through the
+roff.h interface.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.20 2010/12/28 10:51:03 kristaps Exp $ */
+d40 1
+a40 1
+int		  roff_endparse(struct roff *);
+@
+
+
+1.20
+log
+@Initial tbl framework.  Parse point is in libroff, which keeps a
+reference to a current tbl parse and routes ALL text into the tbl parse
+after stripping reserved words and making block-level pre-processing
+(e.g., `ig').  This is consistent with an analysis of embedded `TS/TE'
+in manuals with sprinkled -mdoc, roff, and -man macros.
+
+Fact of a parse is exposed to main.c by a return value (ROFF_TBL), which
+will trigger main.c to add a foreign parsed body to the -mdoc or -man
+parse stream.  This interface isn't in yet, but will follow the
+parse-text functions in both libraries.  I put this login in main.c
+because I don't want libroff calling directly into libmdoc or libman.
+
+As a consequence, a parsed row can be pushed directly into any -mdoc or
+-man context (put a `Bd -literal -offset indent' into a `TE/TS' block to
+see why this is necessary).  It will then absorb formatting cues in the
+front-ends.
+
+A note on naming.  I decided on libroff.h instead of tbl.h because this
+is purely within the roff layer.  Separate tbl implementations will
+need, then, to interface with libroff.  This is "how it should be"
+because tbl is tightly linked with roff in terms of `ds' and other
+formatting macros, as well as, of course, special characters and other
+roffisms.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.19 2010/12/01 15:09:01 kristaps Exp $ */
+d41 1
+@
+
+
+1.19
+log
+@Merge restructuring of main.c code.  This provided by schwarze@@ and inspected
+carefully by joerg@@.  Merge roff.h header for compilation's sake (this is not
+yet implemented in roff.c.).
+
+THIS IS A BUGGY CHECK-IN.  The manual type is erroneously kept between runs
+of the compiler.  This is a known bug.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.18 2010/08/20 01:02:07 schwarze Exp $ */
+d27 1
+@
+
+
+1.18
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.17 2010/06/27 15:52:41 kristaps Exp $ */
+d23 3
+@
+
+
+1.17
+log
+@Downstream maintainers: this removes UGLY!  I don't want diverging
+functionality and UGLY works quite well thanks to schwarze@@'s careful
+attention.
+
+This also backs out function-prototype changes for struct regset,
+instead stuffing a pointer to the regset directly into struct
+mdoc/man/roff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.16 2010/06/26 15:22:19 kristaps Exp $ */
+d32 1
+a32 1
+struct	roff	 *roff_alloc(struct regset *, mandocmsg, void *);
+@
+
+
+1.16
+log
+@First step of adding register support.  This is inspired by a significant
+patch by schwarze@@.  This commit adds support to libroff parsing `nr'
+into register set defined in regs.h.  This will propogate into libmdoc
+and libman in later commits.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.15 2010/05/17 00:06:36 kristaps Exp $ */
+d32 1
+a32 1
+struct	roff	 *roff_alloc(mandocmsg, void *);
+d34 2
+a35 2
+enum	rofferr	  roff_parseln(struct roff *, struct regset *,
+			int, char **, size_t *, int, int *);
+@
+
+
+1.15
+log
+@libroff now is aware of which sub-nodes should be interpreted even in a
+conditional-negative context so as to preserve structural integrity.
+Initial "rules" (deny/allow) are now inherited for future work in
+evaluating conditionals.
+
+Lint-fix noted by Joerg.
+
+Added regression tests for zany constructs.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.14 2010/05/16 10:59:36 kristaps Exp $ */
+d34 2
+a35 2
+enum	rofferr	  roff_parseln(struct roff *, int, 
+			char **, size_t *, int, int *);
+@
+
+
+1.14
+log
+@Allow roff_parseln() to be re-run.
+Allow roff_parseln() to manipulate the line buffer offset.  This is used
+in situations like `.ie n .TH FOO 1' or `.ie n .ie n', where the line
+buffer offset is recalculated then the roff parser re-run.
+Fix mdoc_parseln() and man_parseln() to accept the initial line offset.
+WARNING: backed-out ALL roff macros whilst accomodating for how roff
+handles multi-line conditionals (in short, re-running the parser).
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.13 2010/05/15 18:35:14 kristaps Exp $ */
+d24 1
+a24 1
+	ROFF_ERR, /* badness: puke and stop */
+@
+
+
+1.13
+log
+@Add mandoc.h, which will eventually replace compilers' inner enum errors with unified ones.
+Add initial roff pre-processor shim, a compiler sitting outside of the other compilers that processes pure roff instructions.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.12 2010/05/15 07:52:11 kristaps Exp $ */
+d21 4
+a24 3
+	ROFF_CONT, /* re-process line with libmdoc or libman */
+	ROFF_IGN, /* ignore line */
+	ROFF_ERR, /* badness */
+d34 2
+a35 1
+enum	rofferr	  roff_parseln(struct roff *, int, char **, size_t *);
+@
+
+
+1.12
+log
+@Initial roff shim skeleton in place.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc.h,v 1.78 2010/05/13 06:22:11 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+d21 3
+a23 3
+	ROFF_CONT,
+	ROFF_IGN,
+	ROFF_ERROR
+d31 1
+a31 1
+struct	roff	 *roff_alloc(void *);
+@
+
+
+1.11
+log
+@More file pruning.
+@
+text
+@d1 38
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@a0 302
+/* $Id: roff.h,v 1.9 2008/12/08 12:46:28 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef ROFF_H
+#define ROFF_H
+
+enum	roffd { 
+	ROFF_ENTER = 0, 
+	ROFF_EXIT 
+};
+
+enum	rofftype { 
+	ROFF_COMMENT, 
+	ROFF_TEXT, 
+	ROFF_LAYOUT,
+	ROFF_SPECIAL
+};
+
+struct	rofftree;
+
+#define	ROFFCALL_ARGS \
+	int tok, struct rofftree *tree, \
+	char *argv[], enum roffd type
+
+struct	rofftok {
+	int		(*cb)(ROFFCALL_ARGS);	/* Callback. */
+	const enum roffmsec *sections;
+	const int	 *args;			/* Args (or NULL). */
+	const int	 *parents;		/* Limit to parents. */
+	const int	 *children;		/* Limit to kids. */
+	int		  ctx;			/* Blk-close node. */
+	enum rofftype	  type;			/* Type of macro. */
+	int	  	  flags;
+#define	ROFF_PARSED	 (1 << 0)		/* "Parsed". */
+#define	ROFF_CALLABLE	 (1 << 1)		/* "Callable". */
+#define	ROFF_SHALLOW	 (1 << 2)		/* Nesting block. */
+#define	ROFF_LSCOPE	 (1 << 3)		/* Line scope. */
+};
+
+__BEGIN_DECLS
+
+static	int		  roff_Dd(ROFFCALL_ARGS); /* FIXME: deprecate. */
+static	int		  roff_Dt(ROFFCALL_ARGS); /* FIXME: deprecate. */
+static	int		  roff_Os(ROFFCALL_ARGS); /* FIXME: deprecate. */
+static	int		  roff_Ns(ROFFCALL_ARGS); /* FIXME: deprecate. */
+static	int		  roff_layout(ROFFCALL_ARGS);
+static	int		  roff_text(ROFFCALL_ARGS);
+static	int		  roff_noop(ROFFCALL_ARGS);
+static	int		  roff_depr(ROFFCALL_ARGS);
+static	int		  roff_ordered(ROFFCALL_ARGS);
+
+static	const int roffarg_An[] = { ROFF_Split, ROFF_Nosplit, 
+	ROFF_ARGMAX };
+static	const int roffarg_Bd[] = { ROFF_Ragged, ROFF_Unfilled,
+	ROFF_Literal, ROFF_File, ROFF_Offset, ROFF_Filled, ROFF_Compact,
+	ROFF_ARGMAX };
+static	const int roffarg_Bk[] = { ROFF_Words, ROFF_ARGMAX };
+static	const int roffarg_Ex[] = { ROFF_Std, ROFF_ARGMAX };
+static	const int roffarg_Rv[] = { ROFF_Std, ROFF_ARGMAX };
+static 	const int roffarg_Bl[] = { ROFF_Bullet, ROFF_Dash, ROFF_Hyphen,
+	ROFF_Item, ROFF_Enum, ROFF_Tag, ROFF_Diag, ROFF_Hang,
+	ROFF_Ohang, ROFF_Inset, ROFF_Column, ROFF_Offset, ROFF_Width,
+	ROFF_Compact, ROFF_ARGMAX };
+static 	const int roffarg_St[] = { ROFF_p1003_1_88, ROFF_p1003_1_90,
+	ROFF_p1003_1_96, ROFF_p1003_1_2001, ROFF_p1003_1_2004,
+	ROFF_p1003_1, ROFF_p1003_1b, ROFF_p1003_1b_93, ROFF_p1003_1c_95,
+	ROFF_p1003_1g_2000, ROFF_p1003_2_92, ROFF_p1387_2_95,
+	ROFF_p1003_2, ROFF_p1387_2, ROFF_isoC_90, ROFF_isoC_amd1,
+	ROFF_isoC_tcor1, ROFF_isoC_tcor2, ROFF_isoC_99, ROFF_ansiC,
+	ROFF_ansiC_89, ROFF_ansiC_99, ROFF_ieee754, ROFF_iso8802_3,
+	ROFF_xpg3, ROFF_xpg4, ROFF_xpg4_2, ROFF_xpg4_3, ROFF_xbd5,
+	ROFF_xcu5, ROFF_xsh5, ROFF_xns5, ROFF_xns5_2d2_0,
+	ROFF_xcurses4_2, ROFF_susv2, ROFF_susv3, ROFF_svid4, 
+	ROFF_ARGMAX };
+
+static	const int roffchild_Bl[] = { ROFF_It, ROFF_El, ROFF_MAX };
+static	const int roffchild_Fo[] = { ROFF_Fa, ROFF_Fc, ROFF_MAX };
+static	const int roffchild_Rs[] = { ROFF_Re, ROFF__A, ROFF__B, ROFF__D,
+	ROFF__I, ROFF__J, ROFF__N, ROFF__O, ROFF__P, ROFF__R, ROFF__T,
+	ROFF__V, ROFF_MAX };
+
+static	const enum roffmsec roffmsec_Cd[] = { ROFF_MSEC_4, 
+	ROFF_MSEC_MAX };
+static	const enum roffmsec roffmsec_Er[] = { ROFF_MSEC_2, 
+	ROFF_MSEC_MAX };
+static	const enum roffmsec roffmsec_Ex[] = { ROFF_MSEC_1, 
+	ROFF_MSEC_6, ROFF_MSEC_8, ROFF_MSEC_MAX };
+static	const enum roffmsec roffmsec_Rv[] = { ROFF_MSEC_2, 
+	ROFF_MSEC_3, ROFF_MSEC_MAX };
+
+static	const int roffparent_El[] = { ROFF_Bl, ROFF_It, ROFF_MAX };
+static	const int roffparent_Fc[] = { ROFF_Fo, ROFF_Fa, ROFF_MAX };
+static	const int roffparent_Oc[] = { ROFF_Oo, ROFF_MAX };
+static	const int roffparent_It[] = { ROFF_Bl, ROFF_It, ROFF_MAX };
+static	const int roffparent_Re[] = { ROFF_Rs, ROFF_MAX };
+
+static	const struct rofftok tokens[ROFF_MAX] = {
+	{   roff_noop, NULL, NULL, NULL, NULL, 0, ROFF_COMMENT, 0 }, /* \" */
+	{     roff_Dd, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Dd */
+	{     roff_Dt, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Dt */
+	{     roff_Os, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Os */
+	{ roff_layout, NULL, NULL, NULL, NULL, ROFF_Sh, ROFF_LAYOUT, 0 }, /* Sh */
+	{ roff_layout, NULL, NULL, NULL, NULL, ROFF_Ss, ROFF_LAYOUT, 0 }, /* Ss */ 
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Pp */ /* XXX 0 args */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_LSCOPE }, /* D1 */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_LSCOPE }, /* Dl */
+	{ roff_layout, NULL, roffarg_Bd, NULL, NULL, 0, ROFF_LAYOUT, 0 }, 	/* Bd */
+	{   roff_noop, NULL, NULL, NULL, NULL, ROFF_Bd, ROFF_LAYOUT, 0 }, /* Ed */
+	{ roff_layout, NULL, roffarg_Bl, NULL, roffchild_Bl, 0, ROFF_LAYOUT, 0 }, /* Bl */
+	{   roff_noop, NULL, NULL, roffparent_El, NULL, ROFF_Bl, ROFF_LAYOUT, 0 }, /* El */
+	{ roff_layout, NULL, NULL, roffparent_It, NULL, ROFF_It, ROFF_LAYOUT, ROFF_PARSED | ROFF_SHALLOW }, /* It */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ad */ /* FIXME */
+	{   roff_text, NULL, roffarg_An, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* An */ /* FIXME: args/no-args, yech. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ar */
+/*Ok*/	{   roff_text, roffmsec_Cd, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Cd */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Cm */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Dv */ /* XXX needs arg */
+/*Ok*/	{   roff_text, roffmsec_Er, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Er */ /* XXX needs arg */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ev */ /* XXX needs arg */
+/*Ok*/	{roff_ordered, roffmsec_Ex, roffarg_Ex, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ex */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fa */ /* XXX needs arg */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Fd */ /* FIXME: section/linebreak. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fl */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fn */ /* FIXME: section/linebreak. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ft */ /* FIXME: section/linebreak. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ic */ /* FIXME: needs arg */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* In */ /* FIXME: section/linebreak. */
+/*OK*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Li */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Nd */ /* FIXME: section. */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Nm */ /* FIXME: sections. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Op */
+/*Ok*/	{   roff_depr, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ot */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Pa */
+/*Ok*/	{roff_ordered, roffmsec_Rv, roffarg_Rv, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Rv */
+/*Ok*/	{roff_ordered, NULL, roffarg_St, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* St */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Va */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Vt */ /* FIXME: section/linebreak. */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Xr */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* %A */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE}, /* %B */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %D */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE}, /* %I */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE}, /* %J */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %N */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %O */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %P */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %R */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* %T */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %V */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ac */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ao */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Aq */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* At */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Bc */
+	{ roff_layout, NULL, NULL, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Bf */ /* FIXME */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Bo */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Bq */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Bsx */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Bx */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_SPECIAL, 0 },	/* Db */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Dc */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Do */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Dq */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ec */
+	{   roff_noop, NULL, NULL, NULL, NULL, ROFF_Bf, ROFF_LAYOUT, 0 }, /* Ef */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Em */ /* XXX needs arg */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Eo */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Fx */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ms */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* No */
+/*Ok*/	{     roff_Ns, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ns */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Nx */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ox */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Pc */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Pf */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Po */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Pq */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Qc */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ql */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Qo */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Qq */
+	{   roff_noop, NULL, NULL, roffparent_Re, NULL, ROFF_Rs, ROFF_LAYOUT, 0 }, /* Re */
+	{ roff_layout, NULL, NULL, NULL, roffchild_Rs, 0, ROFF_LAYOUT, 0 },	/* Rs */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Sc */
+	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* So */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Sq */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Sm */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Sx */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Sy */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Tn */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ux */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Xc */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Xo */
+/*Ok*/	{ roff_layout, NULL, NULL, NULL, roffchild_Fo, 0, ROFF_LAYOUT, 0 }, /* Fo */ /* FIXME: section/linebreak. */
+/*Ok*/	{   roff_noop, NULL, NULL, roffparent_Fc, NULL, ROFF_Fo, ROFF_LAYOUT, 0 }, /* Fc */ /* FIXME: section/linebreak. */
+/*Ok*/	{ roff_layout, NULL, NULL, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Oo */
+/*Ok*/	{   roff_noop, NULL, NULL, roffparent_Oc, NULL, ROFF_Oo, ROFF_LAYOUT, 0 }, /* Oc */
+	{        NULL, NULL, roffarg_Bk, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Bk */
+	{        NULL, NULL, NULL, NULL, NULL, ROFF_Bk, ROFF_LAYOUT, 0 }, /* Ek */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Bt */
+	{        NULL, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Hf */
+/*Ok*/	{   roff_depr, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Fr */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ud */
+	};
+
+#define	ROFF_VALUE	(1 << 0)
+
+static	const int tokenargs[ROFF_ARGMAX] = {
+	0,		0,		0,		0,
+	0,		ROFF_VALUE,	ROFF_VALUE,	0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	0,		0,		ROFF_VALUE,	0,
+	0,		ROFF_VALUE,	0,		0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	0,		0,		0,		0,
+	};
+
+const	char *const toknamesp[ROFF_MAX] = {		 
+	"\\\"",		"Dd",		"Dt",		"Os",
+	"Sh",		"Ss",		"Pp",		"D1",
+	"Dl",		"Bd",		"Ed",		"Bl",
+	"El",		"It",		"Ad",		"An",
+	"Ar",		"Cd",		"Cm",		"Dv",
+	"Er",		"Ev",		"Ex",		"Fa",
+	"Fd",		"Fl",		"Fn",		"Ft",
+	"Ic",		"In",		"Li",		"Nd",
+	"Nm",		"Op",		"Ot",		"Pa",
+	"Rv",		"St",		"Va",		"Vt",
+	/* LINTED */
+	"Xr",		"\%A",		"\%B",		"\%D",
+	/* LINTED */
+	"\%I",		"\%J",		"\%N",		"\%O",
+	/* LINTED */
+	"\%P",		"\%R",		"\%T",		"\%V",
+	"Ac",		"Ao",		"Aq",		"At",
+	"Bc",		"Bf",		"Bo",		"Bq",
+	"Bsx",		"Bx",		"Db",		"Dc",
+	"Do",		"Dq",		"Ec",		"Ef",
+	"Em",		"Eo",		"Fx",		"Ms",
+	"No",		"Ns",		"Nx",		"Ox",
+	"Pc",		"Pf",		"Po",		"Pq",
+	"Qc",		"Ql",		"Qo",		"Qq",
+	"Re",		"Rs",		"Sc",		"So",
+	"Sq",		"Sm",		"Sx",		"Sy",
+	"Tn",		"Ux",		"Xc",		"Xo",
+	"Fo",		"Fc",		"Oo",		"Oc",
+	"Bk",		"Ek",		"Bt",		"Hf",
+	"Fr",		"Ud",
+	};
+
+const	char *const tokargnamesp[ROFF_ARGMAX] = {		 
+	"split",		"nosplit",		"ragged",
+	"unfilled",		"literal",		"file",		 
+	"offset",		"bullet",		"dash",		 
+	"hyphen",		"item",			"enum",		 
+	"tag",			"diag",			"hang",		 
+	"ohang",		"inset",		"column",	 
+	"width",		"compact",		"std",	 
+	"p1003.1-88",		"p1003.1-90",		"p1003.1-96",
+	"p1003.1-2001",		"p1003.1-2004",		"p1003.1",
+	"p1003.1b",		"p1003.1b-93",		"p1003.1c-95",
+	"p1003.1g-2000",	"p1003.2-92",		"p1387.2-95",
+	"p1003.2",		"p1387.2",		"isoC-90",
+	"isoC-amd1",		"isoC-tcor1",		"isoC-tcor2",
+	"isoC-99",		"ansiC",		"ansiC-89",
+	"ansiC-99",		"ieee754",		"iso8802-3",
+	"xpg3",			"xpg4",			"xpg4.2",
+	"xpg4.3",		"xbd5",			"xcu5",
+	"xsh5",			"xns5",			"xns5.2d2.0",
+	"xcurses4.2",		"susv2",		"susv3",
+	"svid4",		"filled",		"words",
+	};
+
+const	char *const *toknames = toknamesp;
+const	char *const *tokargnames = tokargnamesp;
+
+__END_DECLS
+
+#endif /*!ROFF_H*/
+@
+
+
+1.9
+log
+@Added warnings for using macros in the wrong sections.
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.8 2008/12/07 22:40:18 kristaps Exp $ */
+d128 1
+a128 1
+	{   roff_text, NULL, roffarg_An, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* An */ /* FIXME: no-args? */
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.7 2008/12/07 16:41:04 kristaps Exp $ */
+d42 1
+d67 5
+a71 3
+static	const int roffarg_An[] = { ROFF_Split, ROFF_Nosplit, ROFF_ARGMAX };
+static	const int roffarg_Bd[] = { ROFF_Ragged, ROFF_Unfilled, ROFF_Literal,
+	ROFF_File, ROFF_Offset, ROFF_Filled, ROFF_Compact, ROFF_ARGMAX };
+d76 13
+a88 2
+	ROFF_Item, ROFF_Enum, ROFF_Tag, ROFF_Diag, ROFF_Hang, ROFF_Ohang,
+	ROFF_Inset, ROFF_Column, ROFF_Offset, ROFF_Width, ROFF_Compact,
+a89 9
+static 	const int roffarg_St[] = { ROFF_p1003_1_88, ROFF_p1003_1_90,
+	ROFF_p1003_1_96, ROFF_p1003_1_2001, ROFF_p1003_1_2004, ROFF_p1003_1,
+	ROFF_p1003_1b, ROFF_p1003_1b_93, ROFF_p1003_1c_95, ROFF_p1003_1g_2000,
+	ROFF_p1003_2_92, ROFF_p1387_2_95, ROFF_p1003_2, ROFF_p1387_2,
+	ROFF_isoC_90, ROFF_isoC_amd1, ROFF_isoC_tcor1, ROFF_isoC_tcor2,
+	ROFF_isoC_99, ROFF_ansiC, ROFF_ansiC_89, ROFF_ansiC_99, ROFF_ieee754,
+	ROFF_iso8802_3, ROFF_xpg3, ROFF_xpg4, ROFF_xpg4_2, ROFF_xpg4_3,
+	ROFF_xbd5, ROFF_xcu5, ROFF_xsh5, ROFF_xns5, ROFF_xns5_2d2_0,
+	ROFF_xcurses4_2, ROFF_susv2, ROFF_susv3, ROFF_svid4, ROFF_ARGMAX };
+d94 11
+a104 2
+	ROFF__I, ROFF__J, ROFF__N, ROFF__O, ROFF__P, ROFF__R, ROFF__T, ROFF__V,
+	ROFF_MAX };
+d113 106
+a218 106
+	{   roff_noop, NULL, NULL, NULL, 0, ROFF_COMMENT, 0 }, /* \" */
+	{     roff_Dd, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Dd */
+	{     roff_Dt, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Dt */
+	{     roff_Os, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Os */
+	{ roff_layout, NULL, NULL, NULL, ROFF_Sh, ROFF_LAYOUT, 0 }, /* Sh */
+	{ roff_layout, NULL, NULL, NULL, ROFF_Ss, ROFF_LAYOUT, 0 }, /* Ss */ 
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Pp */ /* XXX 0 args */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_LSCOPE }, /* D1 */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_LSCOPE }, /* Dl */
+	{ roff_layout, roffarg_Bd, NULL, NULL, 0, ROFF_LAYOUT, 0 }, 	/* Bd */
+	{   roff_noop, NULL, NULL, NULL, ROFF_Bd, ROFF_LAYOUT, 0 }, /* Ed */
+	{ roff_layout, roffarg_Bl, NULL, roffchild_Bl, 0, ROFF_LAYOUT, 0 }, /* Bl */
+	{   roff_noop, NULL, roffparent_El, NULL, ROFF_Bl, ROFF_LAYOUT, 0 }, /* El */
+	{ roff_layout, NULL, roffparent_It, NULL, ROFF_It, ROFF_LAYOUT, ROFF_PARSED | ROFF_SHALLOW }, /* It */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ad */ /* FIXME */
+	{   roff_text, roffarg_An, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* An */ /* FIXME: no-args? */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ar */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Cd */ /* FIXME: section. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Cm */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Dv */ /* XXX needs arg */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Er */ /* XXX needs arg */ /* FIXME: section. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ev */ /* XXX needs arg */
+/*Ok*/	{roff_ordered, roffarg_Ex, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ex */ /* FIXME: sections. */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fa */ /* XXX needs arg */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Fd */ /* FIXME: section/linebreak. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fl */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fn */ /* FIXME: section/linebreak. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ft */ /* FIXME: section/linebreak. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ic */ /* FIXME: needs arg */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* In */ /* FIXME: section/linebreak. */
+/*OK*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Li */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Nd */ /* FIXME: section. */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Nm */ /* FIXME: sections. */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Op */
+/*Ok*/	{   roff_depr, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ot */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Pa */
+/*Ok*/	{roff_ordered, roffarg_Rv, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Rv */
+/*Ok*/	{roff_ordered, roffarg_St, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* St */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Va */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Vt */ /* FIXME: section/linebreak. */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Xr */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* %A */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE}, /* %B */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %D */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE}, /* %I */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE}, /* %J */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %N */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %O */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %P */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %R */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* %T */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* %V */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ac */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ao */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Aq */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* At */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Bc */
+	{ roff_layout, NULL, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Bf */ /* FIXME */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Bo */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Bq */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Bsx */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Bx */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_SPECIAL, 0 },	/* Db */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Dc */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Do */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Dq */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ec */
+	{   roff_noop, NULL, NULL, NULL, ROFF_Bf, ROFF_LAYOUT, 0 }, /* Ef */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Em */ /* XXX needs arg */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Eo */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Fx */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ms */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* No */
+/*Ok*/	{     roff_Ns, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ns */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Nx */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ox */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Pc */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Pf */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Po */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Pq */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Qc */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ql */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Qo */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Qq */
+	{   roff_noop, NULL, roffparent_Re, NULL, ROFF_Rs, ROFF_LAYOUT, 0 }, /* Re */
+	{ roff_layout, NULL, NULL, roffchild_Rs, 0, ROFF_LAYOUT, 0 },	/* Rs */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Sc */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* So */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Sq */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Sm */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Sx */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Sy */
+/*Ok*/	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Tn */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ux */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Xc */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Xo */
+/*Ok*/	{ roff_layout, NULL, NULL, roffchild_Fo, 0, ROFF_LAYOUT, 0 }, /* Fo */ /* FIXME: section/linebreak. */
+/*Ok*/	{   roff_noop, NULL, roffparent_Fc, NULL, ROFF_Fo, ROFF_LAYOUT, 0 }, /* Fc */ /* FIXME: section/linebreak. */
+/*Ok*/	{ roff_layout, NULL, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Oo */
+/*Ok*/	{   roff_noop, NULL, roffparent_Oc, NULL, ROFF_Oo, ROFF_LAYOUT, 0 }, /* Oc */
+	{        NULL, roffarg_Bk, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Bk */
+	{        NULL, NULL, NULL, NULL, ROFF_Bk, ROFF_LAYOUT, 0 }, /* Ek */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Bt */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Hf */
+/*Ok*/	{   roff_depr, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Fr */
+/*Ok*/	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ud */
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.6 2008/12/07 14:38:57 kristaps Exp $ */
+d122 1
+a122 1
+	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fa */ /* XXX needs arg */
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.5 2008/12/06 21:10:31 kristaps Exp $ */
+d114 21
+a134 21
+	{   roff_text, roffarg_An, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* An */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ar */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Cd */ /* XXX man.4 only */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Cm */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Dv */ /* XXX needs arg */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Er */ /* XXX needs arg */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ev */ /* XXX needs arg */
+	{roff_ordered, roffarg_Ex, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ex */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fa */ /* XXX needs arg */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Fd */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Fl */
+	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, /*XXX*/ -1 }, /* Fn */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ft */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ic */ /* XXX needs arg */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* In */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Li */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Nd */
+	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Nm */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Op */
+	{   roff_depr, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ot */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Pa */
+@
+
+
+1.5
+log
+@.St macros in place.
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.4 2008/12/06 19:41:41 kristaps Exp $ */
+d135 1
+a135 1
+	{   roff_text, roffarg_Rv, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Rv */
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.3 2008/12/06 16:50:18 kristaps Exp $ */
+d136 4
+a139 4
+	{   roff_text, roffarg_St, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* St */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Va */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Vt */ /* XXX needs arg */
+	{roff_ordered, NULL, NULL, NULL, 0, ROFF_TEXT, /*XXX*/ -1 }, /* Xr */
+d153 1
+a153 1
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Aq */
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.2 2008/12/06 13:18:44 kristaps Exp $ */
+a59 1
+static	int		  roff_Sm(ROFFCALL_ARGS); /* FIXME: deprecate. */
+d154 1
+a154 1
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* At */ /* XXX at most 2 args */
+d158 3
+a160 3
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Bq */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Bsx */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Bx */
+d164 2
+a165 2
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Dq */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ec */
+d167 4
+a170 4
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Em */ /* XXX needs arg */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Eo */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Fx */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ms */
+d172 3
+a174 3
+	{     roff_Ns, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ns */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Nx */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ox */
+d178 1
+a178 1
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Pq */
+d180 1
+a180 1
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Ql */
+d182 1
+a182 1
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Qq */
+d187 6
+a192 6
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE | ROFF_LSCOPE }, /* Sq */
+	{     roff_Sm, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Sm */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Sx */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Sy */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED | ROFF_CALLABLE }, /* Tn */
+	{   roff_text, NULL, NULL, NULL, 0, ROFF_TEXT, ROFF_PARSED }, /* Ux */
+d195 6
+a200 6
+	{ roff_layout, NULL, NULL, roffchild_Fo, 0, ROFF_LAYOUT, 0 }, /* Fo */
+	{   roff_noop, NULL, roffparent_Fc, NULL, ROFF_Fo, ROFF_LAYOUT, 0 }, /* Fc */
+	{ roff_layout, NULL, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Oo */
+	{   roff_noop, NULL, roffparent_Oc, NULL, ROFF_Oo, ROFF_LAYOUT, 0 }, /* Oc */
+	{ roff_layout, roffarg_Bk, NULL, NULL, 0, ROFF_LAYOUT, 0 }, /* Bk */
+	{   roff_noop, NULL, NULL, NULL, ROFF_Bk, ROFF_LAYOUT, 0 }, /* Ek */
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.1 2008/12/05 22:54:44 kristaps Exp $ */
+d202 1
+a202 1
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Bt */
+d204 2
+a205 2
+	{   roff_depr, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Fr */
+	{        NULL, NULL, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ud */
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.c,v 1.42 2008/12/05 22:34:30 kristaps Exp $ */
+d122 1
+a122 1
+	{   roff_text, roffarg_Ex, NULL, NULL, 0, ROFF_TEXT, 0 }, /* Ex */
+@

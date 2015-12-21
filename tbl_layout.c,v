@@ -1,0 +1,2124 @@
+head	1.41;
+access;
+symbols
+	VERSION_1_13_3:1.38
+	VERSION_1_13_2:1.30
+	VERSION_1_12_4:1.27
+	VERSION_1_13_1:1.26
+	VERSION_1_12_3:1.23
+	VERSION_1_12_2:1.23
+	VERSION_1_12:1.27.0.2
+	VERSION_1_12_1:1.22
+	VERSION_1_12_0:1.22
+	VERSION_1_11_7:1.20
+	VERSION_1_11_6:1.20
+	VERSION_1_11_5:1.20
+	VERSION_1_11_4:1.20
+	VERSION_1_11_3:1.20
+	VERSION_1_11_2:1.19
+	VERSION_1_11_1:1.17
+	VERSION_1_10_10:1.16
+	VERSION_1_10_9:1.12;
+locks; strict;
+comment	@ * @;
+
+
+1.41
+date	2015.10.12.00.08.16;	author schwarze;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2015.04.29.12.44.58;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2015.02.10.11.03.13;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2015.01.30.04.11.50;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2015.01.30.02.09.04;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.01.30.00.29.30;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.01.28.15.03.45;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.01.27.05.21.45;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.01.26.18.42.30;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.01.14.22.44.55;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2014.11.25.21.41.47;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2014.10.14.02.16.06;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2014.10.07.14.07.03;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2014.03.28.23.26.25;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2012.05.27.17.54.54;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.09.03.00.29.21;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.05.17.13.11.40;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.04.07.01.08.42;	author joerg;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.04.04.23.04.38;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.01.11.14.12.01;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.01.10.15.31.00;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.01.10.14.40.30;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.01.09.05.38.23;	author joerg;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.01.07.14.59.52;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.01.07.13.03.48;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.01.04.23.48.39;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.01.03.13.59.21;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.01.02.20.34.05;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.01.02.12.04.23;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.01.02.10.10.57;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.01.01.22.19.15;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.01.01.21.23.01;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.12.30.09.34.07;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.12.29.15.21.34;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.12.29.14.38.14;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.41
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@/*	$Id: tbl_layout.c,v 1.40 2015/10/06 18:32:20 schwarze Exp $ */
+/*
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2012, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+#include "mandoc.h"
+#include "mandoc_aux.h"
+#include "libmandoc.h"
+#include "libroff.h"
+
+struct	tbl_phrase {
+	char		 name;
+	enum tbl_cellt	 key;
+};
+
+static	const struct tbl_phrase keys[] = {
+	{ 'c',		 TBL_CELL_CENTRE },
+	{ 'r',		 TBL_CELL_RIGHT },
+	{ 'l',		 TBL_CELL_LEFT },
+	{ 'n',		 TBL_CELL_NUMBER },
+	{ 's',		 TBL_CELL_SPAN },
+	{ 'a',		 TBL_CELL_LONG },
+	{ '^',		 TBL_CELL_DOWN },
+	{ '-',		 TBL_CELL_HORIZ },
+	{ '_',		 TBL_CELL_HORIZ },
+	{ '=',		 TBL_CELL_DHORIZ }
+};
+
+#define KEYS_MAX ((int)(sizeof(keys)/sizeof(keys[0])))
+
+static	void		 mods(struct tbl_node *, struct tbl_cell *,
+				int, const char *, int *);
+static	void		 cell(struct tbl_node *, struct tbl_row *,
+				int, const char *, int *);
+static	struct tbl_cell *cell_alloc(struct tbl_node *, struct tbl_row *,
+				enum tbl_cellt);
+
+
+static void
+mods(struct tbl_node *tbl, struct tbl_cell *cp,
+		int ln, const char *p, int *pos)
+{
+	char		*endptr;
+
+mod:
+	while (p[*pos] == ' ' || p[*pos] == '\t')
+		(*pos)++;
+
+	/* Row delimiters and cell specifiers end modifier lists. */
+
+	if (strchr(".,-=^_ACLNRSaclnrs", p[*pos]) != NULL)
+		return;
+
+	/* Throw away parenthesised expression. */
+
+	if ('(' == p[*pos]) {
+		(*pos)++;
+		while (p[*pos] && ')' != p[*pos])
+			(*pos)++;
+		if (')' == p[*pos]) {
+			(*pos)++;
+			goto mod;
+		}
+		mandoc_msg(MANDOCERR_TBLLAYOUT_PAR, tbl->parse,
+		    ln, *pos, NULL);
+		return;
+	}
+
+	/* Parse numerical spacing from modifier string. */
+
+	if (isdigit((unsigned char)p[*pos])) {
+		cp->spacing = strtoull(p + *pos, &endptr, 10);
+		*pos = endptr - p;
+		goto mod;
+	}
+
+	switch (tolower((unsigned char)p[(*pos)++])) {
+	case 'b':
+		cp->flags |= TBL_CELL_BOLD;
+		goto mod;
+	case 'd':
+		cp->flags |= TBL_CELL_BALIGN;
+		goto mod;
+	case 'e':
+		cp->flags |= TBL_CELL_EQUAL;
+		goto mod;
+	case 'f':
+		break;
+	case 'i':
+		cp->flags |= TBL_CELL_ITALIC;
+		goto mod;
+	case 'm':
+		mandoc_msg(MANDOCERR_TBLLAYOUT_MOD, tbl->parse,
+		    ln, *pos, "m");
+		goto mod;
+	case 'p':
+	case 'v':
+		if (p[*pos] == '-' || p[*pos] == '+')
+			(*pos)++;
+		while (isdigit((unsigned char)p[*pos]))
+			(*pos)++;
+		goto mod;
+	case 't':
+		cp->flags |= TBL_CELL_TALIGN;
+		goto mod;
+	case 'u':
+		cp->flags |= TBL_CELL_UP;
+		goto mod;
+	case 'w':  /* XXX for now, ignore minimal column width */
+		goto mod;
+	case 'x':
+		cp->flags |= TBL_CELL_WMAX;
+		goto mod;
+	case 'z':
+		cp->flags |= TBL_CELL_WIGN;
+		goto mod;
+	case '|':
+		if (cp->vert < 2)
+			cp->vert++;
+		else
+			mandoc_msg(MANDOCERR_TBLLAYOUT_VERT,
+			    tbl->parse, ln, *pos - 1, NULL);
+		goto mod;
+	default:
+		mandoc_vmsg(MANDOCERR_TBLLAYOUT_CHAR, tbl->parse,
+		    ln, *pos - 1, "%c", p[*pos - 1]);
+		goto mod;
+	}
+
+	/* Ignore parenthised font names for now. */
+
+	if (p[*pos] == '(')
+		goto mod;
+
+	/* Support only one-character font-names for now. */
+
+	if (p[*pos] == '\0' || (p[*pos + 1] != ' ' && p[*pos + 1] != '.')) {
+		mandoc_vmsg(MANDOCERR_FT_BAD, tbl->parse,
+		    ln, *pos, "TS %s", p + *pos - 1);
+		if (p[*pos] != '\0')
+			(*pos)++;
+		if (p[*pos] != '\0')
+			(*pos)++;
+		goto mod;
+	}
+
+	switch (p[(*pos)++]) {
+	case '3':
+	case 'B':
+		cp->flags |= TBL_CELL_BOLD;
+		goto mod;
+	case '2':
+	case 'I':
+		cp->flags |= TBL_CELL_ITALIC;
+		goto mod;
+	case '1':
+	case 'R':
+		goto mod;
+	default:
+		mandoc_vmsg(MANDOCERR_FT_BAD, tbl->parse,
+		    ln, *pos - 1, "TS f%c", p[*pos - 1]);
+		goto mod;
+	}
+}
+
+static void
+cell(struct tbl_node *tbl, struct tbl_row *rp,
+		int ln, const char *p, int *pos)
+{
+	int		 i;
+	enum tbl_cellt	 c;
+
+	/* Handle leading vertical lines */
+
+	while (p[*pos] == ' ' || p[*pos] == '\t' || p[*pos] == '|') {
+		if (p[*pos] == '|') {
+			if (rp->vert < 2)
+				rp->vert++;
+			else
+				mandoc_msg(MANDOCERR_TBLLAYOUT_VERT,
+				    tbl->parse, ln, *pos, NULL);
+		}
+		(*pos)++;
+	}
+
+again:
+	while (p[*pos] == ' ' || p[*pos] == '\t')
+		(*pos)++;
+
+	if (p[*pos] == '.' || p[*pos] == '\0')
+		return;
+
+	/* Parse the column position (`c', `l', `r', ...). */
+
+	for (i = 0; i < KEYS_MAX; i++)
+		if (tolower((unsigned char)p[*pos]) == keys[i].name)
+			break;
+
+	if (i == KEYS_MAX) {
+		mandoc_vmsg(MANDOCERR_TBLLAYOUT_CHAR, tbl->parse,
+		    ln, *pos, "%c", p[*pos]);
+		(*pos)++;
+		goto again;
+	}
+	c = keys[i].key;
+
+	/* Special cases of spanners. */
+
+	if (c == TBL_CELL_SPAN) {
+		if (rp->last == NULL)
+			mandoc_msg(MANDOCERR_TBLLAYOUT_SPAN,
+			    tbl->parse, ln, *pos, NULL);
+		else if (rp->last->pos == TBL_CELL_HORIZ ||
+		    rp->last->pos == TBL_CELL_DHORIZ)
+			c = rp->last->pos;
+	} else if (c == TBL_CELL_DOWN && rp == tbl->first_row)
+		mandoc_msg(MANDOCERR_TBLLAYOUT_DOWN,
+		    tbl->parse, ln, *pos, NULL);
+
+	(*pos)++;
+
+	/* Allocate cell then parse its modifiers. */
+
+	mods(tbl, cell_alloc(tbl, rp, c), ln, p, pos);
+}
+
+void
+tbl_layout(struct tbl_node *tbl, int ln, const char *p, int pos)
+{
+	struct tbl_row	*rp;
+
+	rp = NULL;
+	for (;;) {
+		/* Skip whitespace before and after each cell. */
+
+		while (p[pos] == ' ' || p[pos] == '\t')
+			pos++;
+
+		switch (p[pos]) {
+		case ',':  /* Next row on this input line. */
+			pos++;
+			rp = NULL;
+			continue;
+		case '\0':  /* Next row on next input line. */
+			return;
+		case '.':  /* End of layout. */
+			pos++;
+			tbl->part = TBL_PART_DATA;
+
+			/*
+			 * When the layout is completely empty,
+			 * default to one left-justified column.
+			 */
+
+			if (tbl->first_row == NULL) {
+				tbl->first_row = tbl->last_row =
+				    mandoc_calloc(1, sizeof(*rp));
+			}
+			if (tbl->first_row->first == NULL) {
+				mandoc_msg(MANDOCERR_TBLLAYOUT_NONE,
+				    tbl->parse, ln, pos, NULL);
+				cell_alloc(tbl, tbl->first_row,
+				    TBL_CELL_LEFT);
+				return;
+			}
+
+			/*
+			 * Search for the widest line
+			 * along the left and right margins.
+			 */
+
+			for (rp = tbl->first_row; rp; rp = rp->next) {
+				if (tbl->opts.lvert < rp->vert)
+					tbl->opts.lvert = rp->vert;
+				if (rp->last != NULL &&
+				    rp->last->col + 1 == tbl->opts.cols &&
+				    tbl->opts.rvert < rp->last->vert)
+					tbl->opts.rvert = rp->last->vert;
+
+				/* If the last line is empty, drop it. */
+
+				if (rp->next != NULL &&
+				    rp->next->first == NULL) {
+					free(rp->next);
+					rp->next = NULL;
+					tbl->last_row = rp;
+				}
+			}
+			return;
+		default:  /* Cell. */
+			break;
+		}
+
+		/*
+		 * If the last line had at least one cell,
+		 * start a new one; otherwise, continue it.
+		 */
+
+		if (rp == NULL) {
+			if (tbl->last_row == NULL ||
+			    tbl->last_row->first != NULL) {
+				rp = mandoc_calloc(1, sizeof(*rp));
+				if (tbl->last_row)
+					tbl->last_row->next = rp;
+				else
+					tbl->first_row = rp;
+				tbl->last_row = rp;
+			} else
+				rp = tbl->last_row;
+		}
+		cell(tbl, rp, ln, p, &pos);
+	}
+}
+
+static struct tbl_cell *
+cell_alloc(struct tbl_node *tbl, struct tbl_row *rp, enum tbl_cellt pos)
+{
+	struct tbl_cell	*p, *pp;
+
+	p = mandoc_calloc(1, sizeof(*p));
+	p->pos = pos;
+
+	if ((pp = rp->last) != NULL) {
+		pp->next = p;
+		p->col = pp->col + 1;
+	} else
+		rp->first = p;
+	rp->last = p;
+
+	if (tbl->opts.cols <= p->col)
+		tbl->opts.cols = p->col + 1;
+
+	return p;
+}
+@
+
+
+1.40
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.39 2015/04/29 12:44:58 schwarze Exp $ */
+a117 1
+		/* FALLTHROUGH */
+a169 1
+		/* FALLTHROUGH */
+a173 1
+		/* FALLTHROUGH */
+a177 1
+		/* FALLTHROUGH */
+@
+
+
+1.39
+log
+@When the last line of a table layout turns out to be empty, it is deleted.
+Do not just free the struct tbl_row but also make sure that no pointer
+to it remains.  Fixing a use after free found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.38 2015/02/10 11:03:13 schwarze Exp $ */
+d358 1
+a358 1
+	return(p);
+@
+
+
+1.38
+log
+@Do not read past the end of the buffer if an "f" layout font modifier
+is followed by the end of the input line instead of a font specifier.
+Found by jsg@@ with afl, test case #591.
+
+While here, improve functionality as well:
+* There is no "r" font modifier.
+* Font specifiers (as opposed to font modifiers) are case sensitive.
+* One-character font specifiers require trailing whitespace.
+* Ignore parenthised and two-letter font specifiers.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.37 2015/01/30 04:11:50 schwarze Exp $ */
+d311 1
+@
+
+
+1.37
+log
+@Abolish struct tbl_head and replace it by an "int col" member in
+struct tbl_cell.  No functional change, minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.36 2015/01/30 02:09:04 schwarze Exp $ */
+d100 2
+a101 6
+		/* FALLTHROUGH */
+	case 'i':
+		/* FALLTHROUGH */
+	case 'r':
+		(*pos)--;
+		break;
+d110 3
+d152 18
+a169 1
+	switch (tolower((unsigned char)p[(*pos)++])) {
+d172 1
+a172 1
+	case 'b':
+d177 1
+a177 1
+	case 'i':
+d182 1
+a182 1
+	case 'r':
+@
+
+
+1.36
+log
+@Auditing the tbl(7) code for more NULL pointer accesses, i came out
+empty-handed; so this is just KNF and some code simplifications,
+no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.35 2015/01/30 00:29:30 schwarze Exp $ */
+d285 1
+a285 1
+				    rp->last->head == tbl->last_head &&
+a326 1
+	struct tbl_head	*h, *hp;
+d329 1
+d333 2
+a334 2
+		h = pp->head->next;
+	} else {
+a335 2
+		h = tbl->first_head;
+	}
+d338 2
+a339 18
+	p->pos = pos;
+
+	/* Re-use header. */
+
+	if (h != NULL) {
+		p->head = h;
+		return(p);
+	}
+
+	hp = mandoc_calloc(1, sizeof(*hp));
+	hp->ident = tbl->opts.cols++;
+
+	if (tbl->last_head != NULL) {
+		hp->prev = tbl->last_head;
+		tbl->last_head->next = hp;
+	} else
+		tbl->first_head = hp;
+	tbl->last_head = hp;
+a340 1
+	p->head = hp;
+@
+
+
+1.35
+log
+@Make sure every layout line contains at least one cell;
+fixing a NULL pointer access in term_tbl() that jsg@@ found with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.34 2015/01/28 15:03:45 schwarze Exp $ */
+d329 1
+a329 1
+	p = mandoc_calloc(1, sizeof(struct tbl_cell));
+d331 1
+a331 1
+	if (NULL != (pp = rp->last)) {
+d344 1
+a344 1
+	if (h) {
+d349 1
+a349 1
+	hp = mandoc_calloc(1, sizeof(struct tbl_head));
+d352 1
+a352 1
+	if (tbl->last_head) {
+@
+
+
+1.34
+log
+@For now, it can't be helped that mandoc tbl(7) ignores high-level macros,
+but stop throwing away their arguments.  This fixes information loss in a
+handful of Xenocara manuals, at the price of a small amount of formatting
+noise creeping through.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.33 2015/01/27 05:21:45 schwarze Exp $ */
+d265 4
+d271 2
+a272 3
+				rp = mandoc_calloc(1, sizeof(*rp));
+				cell_alloc(tbl, rp, TBL_CELL_LEFT);
+				tbl->first_row = tbl->last_row = rp;
+d288 8
+d302 16
+a317 7
+		if (rp == NULL) {  /* First cell on this line. */
+			rp = mandoc_calloc(1, sizeof(*rp));
+			if (tbl->last_row)
+				tbl->last_row->next = rp;
+			else
+				tbl->first_row = rp;
+			tbl->last_row = rp;
+@
+
+
+1.33
+log
+@Multiple parser and formatter fixes for line drawing in tbl(7).
+* Allow mixing vertical line bars with the layout options
+of the preceding layout cell.
+* Correctly combine box options with layout lines.
+* Correctly print vertical lines in data rows, with the right spacing.
+* Correctly print cross markers and left and right ends of
+horizontal lines even if vertical lines differ above and below.
+* Avoid the bogus error message "no table data cells"
+when a table data section starts with a horizontal line.
+No increase in code size.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.32 2015/01/26 18:42:30 schwarze Exp $ */
+d237 1
+a237 1
+tbl_layout(struct tbl_node *tbl, int ln, const char *p)
+a239 1
+	int		 pos;
+a240 1
+	pos = 0;
+a241 1
+
+@
+
+
+1.32
+log
+@Rework tbl(7) layout parsing:
+* Continue parsing even if part of the input is invalid.
+* Do not require whitespace between cell specifications.
+* Allow tabs as well as blanks between modifiers.
+* Mark the 'm' modifier as unsupported.
+* Parse and ignore the 'p' and 'v' modifiers.
+* Better warning and error messages.
+* Get rid of a static buffer.
+Improved functionality but minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.31 2015/01/14 22:44:55 schwarze Exp $ */
+d57 1
+a57 1
+				enum tbl_cellt, int vert);
+d72 1
+a72 1
+	if (strchr(".,-=^_ACLNRSaclnrs|", p[*pos]) != NULL)
+d140 7
+d179 1
+a179 1
+	int		 vert, i;
+d182 1
+a182 1
+	/* Handle vertical lines. */
+a183 2
+	vert = 0;
+again:
+d186 2
+a187 2
+			if (vert < 2)
+				vert++;
+d195 3
+a197 1
+	/* Handle trailing vertical lines */
+d199 1
+a199 2
+	if ('.' == p[*pos] || '\0' == p[*pos]) {
+		rp->vert = vert;
+a200 1
+	}
+d233 1
+a233 1
+	mods(tbl, cell_alloc(tbl, rp, c, vert), ln, p, pos);
+d261 12
+a272 1
+			if (tbl->first_row != NULL)
+d274 15
+a288 5
+			mandoc_msg(MANDOCERR_TBLLAYOUT_NONE,
+			    tbl->parse, ln, pos, NULL);
+			rp = mandoc_calloc(1, sizeof(*rp));
+			cell_alloc(tbl, rp, TBL_CELL_LEFT, 0);
+			tbl->first_row = tbl->last_row = rp;
+d307 1
+a307 2
+cell_alloc(struct tbl_node *tbl, struct tbl_row *rp, enum tbl_cellt pos,
+		int vert)
+a323 1
+	p->vert = vert;
+a333 1
+	hp->vert = vert;
+@
+
+
+1.31
+log
+@simplify by getting rid of ROFF_ERR in tbl(7) parsing; no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.30 2014/11/25 21:41:47 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d37 1
+a37 9
+/*
+ * FIXME: we can make this parse a lot nicer by, when an error is
+ * encountered in a layout key, bailing to the next key (i.e. to the
+ * next whitespace then continuing).
+ */
+
+#define	KEYS_MAX	 11
+
+static	const struct tbl_phrase keys[KEYS_MAX] = {
+d50 3
+a52 1
+static	int		 mods(struct tbl_node *, struct tbl_cell *,
+d54 1
+a54 1
+static	int		 cell(struct tbl_node *, struct tbl_row *,
+d60 1
+a60 1
+static int
+d64 1
+a64 2
+	char		 buf[5];
+	int		 i;
+d66 3
+a68 1
+	/* Not all types accept modifiers. */
+d70 1
+a70 10
+	switch (cp->pos) {
+	case TBL_CELL_DOWN:
+		/* FALLTHROUGH */
+	case TBL_CELL_HORIZ:
+		/* FALLTHROUGH */
+	case TBL_CELL_DHORIZ:
+		return(1);
+	default:
+		break;
+	}
+d72 2
+a73 23
+mod:
+	/*
+	 * XXX: since, at least for now, modifiers are non-conflicting
+	 * (are separable by value, regardless of position), we let
+	 * modifiers come in any order.  The existing tbl doesn't let
+	 * this happen.
+	 */
+	switch (p[*pos]) {
+	case '\0':
+		/* FALLTHROUGH */
+	case ' ':
+		/* FALLTHROUGH */
+	case '\t':
+		/* FALLTHROUGH */
+	case ',':
+		/* FALLTHROUGH */
+	case '.':
+		/* FALLTHROUGH */
+	case '|':
+		return(1);
+	default:
+		break;
+	}
+d85 1
+a85 1
+		mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse,
+d87 1
+a87 1
+		return(0);
+d93 2
+a94 18
+		for (i = 0; i < 4; i++) {
+			if ( ! isdigit((unsigned char)p[*pos + i]))
+				break;
+			buf[i] = p[*pos + i];
+		}
+		buf[i] = '\0';
+
+		/* No greater than 4 digits. */
+
+		if (4 == i) {
+			mandoc_msg(MANDOCERR_TBLLAYOUT,
+			    tbl->parse, ln, *pos, NULL);
+			return(0);
+		}
+
+		*pos += i;
+		cp->spacing = (size_t)atoi(buf);
+
+a95 1
+		/* NOTREACHED */
+a97 2
+	/* TODO: GNU has many more extensions. */
+
+d99 9
+a107 5
+	case 'z':
+		cp->flags |= TBL_CELL_WIGN;
+		goto mod;
+	case 'u':
+		cp->flags |= TBL_CELL_UP;
+d112 14
+d129 2
+a130 2
+	case 'd':
+		cp->flags |= TBL_CELL_BALIGN;
+d137 3
+a139 9
+	case 'f':
+		break;
+	case 'r':
+		/* FALLTHROUGH */
+	case 'b':
+		/* FALLTHROUGH */
+	case 'i':
+		(*pos)--;
+		break;
+d141 3
+a143 3
+		mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse,
+		    ln, *pos - 1, NULL);
+		return(0);
+a161 3
+		break;
+	}
+	if (isalnum((unsigned char)p[*pos - 1])) {
+a165 4
+
+	mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse,
+	    ln, *pos - 1, NULL);
+	return(0);
+d168 1
+a168 1
+static int
+d177 10
+a186 3
+	for (vert = 0; '|' == p[*pos]; ++*pos)
+		vert++;
+	while (' ' == p[*pos])
+d188 1
+d194 1
+a194 1
+		return(1);
+d203 5
+a207 4
+	if (KEYS_MAX == i) {
+		mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse,
+		    ln, *pos, NULL);
+		return(0);
+a208 1
+
+d211 1
+a211 25
+	/*
+	 * If a span cell is found first, raise a warning and abort the
+	 * parse.  If a span cell is found and the last layout element
+	 * isn't a "normal" layout, bail.
+	 *
+	 * FIXME: recover from this somehow?
+	 */
+
+	if (TBL_CELL_SPAN == c) {
+		if (NULL == rp->first) {
+			mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse,
+			    ln, *pos, NULL);
+			return(0);
+		} else if (rp->last)
+			switch (rp->last->pos) {
+			case TBL_CELL_HORIZ:
+				/* FALLTHROUGH */
+			case TBL_CELL_DHORIZ:
+				mandoc_msg(MANDOCERR_TBLLAYOUT,
+				    tbl->parse, ln, *pos, NULL);
+				return(0);
+			default:
+				break;
+			}
+	}
+d213 10
+a222 9
+	/*
+	 * If a vertical spanner is found, we may not be in the first
+	 * row.
+	 */
+
+	if (TBL_CELL_DOWN == c && rp == tbl->first_row) {
+		mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse, ln, *pos, NULL);
+		return(0);
+	}
+a225 7
+	/* Disallow adjacent spacers. */
+
+	if (vert > 2) {
+		mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse, ln, *pos - 1, NULL);
+		return(0);
+	}
+
+d228 1
+a228 1
+	return(mods(tbl, cell_alloc(tbl, rp, c, vert), ln, p, pos));
+d243 1
+a243 1
+		while (isspace((unsigned char)p[pos]))
+d258 1
+a258 1
+			mandoc_msg(MANDOCERR_TBLNOLAYOUT,
+d276 1
+a276 2
+		if ( ! cell(tbl, rp, ln, p, &pos))
+			return;
+@
+
+
+1.30
+log
+@Completely rewrite the top level of the layout parser.
+* Do not allocate lines unless there are cells.
+* Make the MANDOCERR_TBLNOLAYOUT message actually work.
+Also get rid of one static function and two goto statements.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.29 2014/10/14 02:16:06 schwarze Exp $ */
+d302 1
+a302 1
+int
+d323 1
+a323 1
+			return(1);
+d328 1
+a328 1
+				return(1);
+d334 1
+a334 1
+			return(1);
+d348 1
+a348 1
+			return(1);
+@
+
+
+1.29
+log
+@Rudimentary implementation of the e, x, and z table layout modifiers
+to equalize, maximize, and ignore the width of columns.
+Does not yet take vertical rulers into account,
+and does not do line breaks within table cells.
+Considerably improves the lftp(1) manual; issue noticed by sthen@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.28 2014/10/07 14:07:03 schwarze Exp $ */
+a61 1
+static	void		 row(struct tbl_node *, int, const char *, int *);
+d302 2
+a303 2
+static void
+row(struct tbl_node *tbl, int ln, const char *p, int *pos)
+d306 1
+d308 2
+a309 16
+row:	/*
+	 * EBNF describing this section:
+	 *
+	 * row		::= row_list [:space:]* [.]?[\n]
+	 * row_list	::= [:space:]* row_elem row_tail
+	 * row_tail	::= [:space:]*[,] row_list |
+	 *                  epsilon
+	 * row_elem	::= [\t\ ]*[:alpha:]+
+	 */
+
+	rp = mandoc_calloc(1, sizeof(struct tbl_row));
+	if (tbl->last_row)
+		tbl->last_row->next = rp;
+	else
+		tbl->first_row = rp;
+	tbl->last_row = rp;
+d311 2
+a312 3
+cell:
+	while (isspace((unsigned char)p[*pos]))
+		(*pos)++;
+d314 2
+a315 1
+	/* Safely exit layout context. */
+d317 12
+a328 3
+	if ('.' == p[*pos]) {
+		tbl->part = TBL_PART_DATA;
+		if (NULL == tbl->first_row)
+d330 19
+a348 3
+			    tbl->parse, ln, *pos, NULL);
+		(*pos)++;
+		return;
+a349 26
+
+	/* End (and possibly restart) a row. */
+
+	if (',' == p[*pos]) {
+		(*pos)++;
+		goto row;
+	} else if ('\0' == p[*pos])
+		return;
+
+	if ( ! cell(tbl, rp, ln, p, pos))
+		return;
+
+	goto cell;
+	/* NOTREACHED */
+}
+
+int
+tbl_layout(struct tbl_node *tbl, int ln, const char *p)
+{
+	int		 pos;
+
+	pos = 0;
+	row(tbl, ln, p, &pos);
+
+	/* Always succeed. */
+	return(1);
+@
+
+
+1.28
+log
+@If a tbl(7) layout contains unknown font modifiers, fall back to the
+default font rather than failing the whole table.
+Needed by some pages in books/man-pages-posix.
+Written on the plane back from EuroBSDCon in Sofia.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.27 2014/08/10 23:54:41 schwarze Exp $ */
+d171 3
+@
+
+
+1.27
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.26 2014/04/20 16:46:05 schwarze Exp $ */
+d204 5
+@
+
+
+1.26
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.25 2014/03/28 23:26:25 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+d19 2
+a20 1
+#endif
+@
+
+
+1.25
+log
+@Allow leading and trailing vertical lines,
+and format them in the same way as groff.
+While here, do not require whitespace before vertical lines
+in layout specifications.
+Issues found by bentley@@ in mpv(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.24 2014/03/23 11:25:26 schwarze Exp $ */
+d58 1
+a58 1
+static	int		 mods(struct tbl_node *, struct tbl_cell *, 
+d60 1
+a60 1
+static	int		 cell(struct tbl_node *, struct tbl_row *, 
+d66 1
+d68 1
+a68 1
+mods(struct tbl_node *tbl, struct tbl_cell *cp, 
+d77 1
+a77 1
+	case (TBL_CELL_DOWN):
+d79 1
+a79 1
+	case (TBL_CELL_HORIZ):
+d81 1
+a81 1
+	case (TBL_CELL_DHORIZ):
+d88 1
+a88 1
+	/* 
+d95 1
+a95 1
+	case ('\0'):
+d97 1
+a97 1
+	case (' '):
+d99 1
+a99 1
+	case ('\t'):
+d101 1
+a101 1
+	case (','):
+d103 1
+a103 1
+	case ('.'):
+d105 1
+a105 1
+	case ('|'):
+d121 2
+a122 2
+		mandoc_msg(MANDOCERR_TBLLAYOUT, 
+				tbl->parse, ln, *pos, NULL);
+d139 2
+a140 2
+			mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse,
+					ln, *pos, NULL);
+d149 1
+a149 1
+	} 
+d154 1
+a154 1
+	case ('z'):
+d157 1
+a157 1
+	case ('u'):
+d160 1
+a160 1
+	case ('e'):
+d163 1
+a163 1
+	case ('t'):
+d166 1
+a166 1
+	case ('d'):
+d169 1
+a169 1
+	case ('w'):  /* XXX for now, ignore minimal column width */
+d171 1
+a171 1
+	case ('f'):
+d173 1
+a173 1
+	case ('r'):
+d175 1
+a175 1
+	case ('b'):
+d177 1
+a177 1
+	case ('i'):
+d182 1
+a182 1
+				ln, *pos - 1, NULL);
+d187 1
+a187 1
+	case ('3'):
+d189 1
+a189 1
+	case ('b'):
+d192 1
+a192 1
+	case ('2'):
+d194 1
+a194 1
+	case ('i'):
+d197 1
+a197 1
+	case ('1'):
+d199 1
+a199 1
+	case ('r'):
+d206 1
+a206 1
+			ln, *pos - 1, NULL);
+d211 1
+a211 1
+cell(struct tbl_node *tbl, struct tbl_row *rp, 
+d238 2
+a239 2
+		mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse, 
+				ln, *pos, NULL);
+d256 1
+a256 1
+					ln, *pos, NULL);
+d260 5
+a264 4
+			case (TBL_CELL_HORIZ):
+			case (TBL_CELL_DHORIZ):
+				mandoc_msg(MANDOCERR_TBLLAYOUT, tbl->parse,
+						ln, *pos, NULL);
+a294 1
+
+d325 3
+a327 3
+		if (NULL == tbl->first_row) 
+			mandoc_msg(MANDOCERR_TBLNOLAYOUT, tbl->parse, 
+					ln, *pos, NULL);
+@
+
+
+1.24
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.23 2012/05/27 17:54:54 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d103 2
+d223 7
+@
+
+
+1.23
+log
+@Do not handle vertical lines as additional tbl(7) columns,
+instead save their properties with the following column.
+This simplifies layout parsing and saves a lot of code
+related to column handling.
+
+At output time, print all white space and vertical lines
+separating columns before printing the following column,
+and none after printing the preceding column, considerably
+simplifying white space handling and width calculations.
+
+No functional change, but it saves 150 lines of code,
+and it allows the next patch to tbl_term.c, tbl_literal().
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.22 2011/09/18 14:14:15 schwarze Exp $ */
+a21 1
+#include <assert.h>
+d28 1
+@
+
+
+1.22
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.21 2011/09/03 00:29:21 kristaps Exp $ */
+d4 1
+d55 1
+a55 2
+	{ '=',		 TBL_CELL_DHORIZ },
+	{ '|',		 TBL_CELL_VERT }
+d63 2
+a64 4
+static	struct tbl_cell *cell_alloc(struct tbl_node *, 
+				struct tbl_row *, enum tbl_cellt);
+static	void		 head_adjust(const struct tbl_cell *, 
+				struct tbl_head *);
+a80 4
+		/* FALLTHROUGH */
+	case (TBL_CELL_VERT):
+		/* FALLTHROUGH */
+	case (TBL_CELL_DVERT):
+d211 1
+a211 1
+	int		 i;
+d214 8
+a221 1
+	/* Parse the column position (`r', `R', `|', ...). */
+a249 2
+			case (TBL_CELL_VERT):
+			case (TBL_CELL_DVERT):
+a271 7
+	/* Extra check for the double-vertical. */
+
+	if (TBL_CELL_VERT == c && '|' == p[*pos]) {
+		(*pos)++;
+		c = TBL_CELL_DVERT;
+	} 
+	
+d274 1
+a274 3
+	if (rp->last && (TBL_CELL_VERT == c || TBL_CELL_DVERT == c) &&
+			(TBL_CELL_VERT == rp->last->pos || 
+			 TBL_CELL_DVERT == rp->last->pos)) {
+d281 1
+a281 1
+	return(mods(tbl, cell_alloc(tbl, rp, c), ln, p, pos));
+d301 1
+a301 1
+	if (tbl->last_row) {
+d303 3
+a305 3
+		tbl->last_row = rp;
+	} else
+		tbl->last_row = tbl->first_row = rp;
+d350 2
+a351 1
+cell_alloc(struct tbl_node *tbl, struct tbl_row *rp, enum tbl_cellt pos)
+d359 7
+a365 4
+		rp->last->next = p;
+		rp->last = p;
+	} else
+		rp->last = rp->first = p;
+d368 1
+d370 1
+a370 20
+	/*
+	 * This is a little bit complicated.  Here we determine the
+	 * header the corresponds to a cell.  We add headers dynamically
+	 * when need be or re-use them, otherwise.  As an example, given
+	 * the following:
+	 *
+	 * 	1  c || l 
+	 * 	2  | c | l
+	 * 	3  l l
+	 * 	3  || c | l |.
+	 *
+	 * We first add the new headers (as there are none) in (1); then
+	 * in (2) we insert the first spanner (as it doesn't match up
+	 * with the header); then we re-use the prior data headers,
+	 * skipping over the spanners; then we re-use everything and add
+	 * a last spanner.  Note that VERT headers are made into DVERT
+	 * ones.
+	 */
+
+	h = pp ? pp->head->next : tbl->first_head;
+d373 2
+a374 42
+		/* Re-use data header. */
+		if (TBL_HEAD_DATA == h->pos && 
+				(TBL_CELL_VERT != p->pos &&
+				 TBL_CELL_DVERT != p->pos)) {
+			p->head = h;
+			return(p);
+		}
+
+		/* Re-use spanner header. */
+		if (TBL_HEAD_DATA != h->pos && 
+				(TBL_CELL_VERT == p->pos ||
+				 TBL_CELL_DVERT == p->pos)) {
+			head_adjust(p, h);
+			p->head = h;
+			return(p);
+		}
+
+		/* Right-shift headers with a new spanner. */
+		if (TBL_HEAD_DATA == h->pos && 
+				(TBL_CELL_VERT == p->pos ||
+				 TBL_CELL_DVERT == p->pos)) {
+			hp = mandoc_calloc(1, sizeof(struct tbl_head));
+			hp->ident = tbl->opts.cols++;
+			hp->prev = h->prev;
+			if (h->prev)
+				h->prev->next = hp;
+			if (h == tbl->first_head)
+				tbl->first_head = hp;
+			h->prev = hp;
+			hp->next = h;
+			head_adjust(p, hp);
+			p->head = hp;
+			return(p);
+		}
+
+		if (NULL != (h = h->next)) {
+			head_adjust(p, h);
+			p->head = h;
+			return(p);
+		}
+
+		/* Fall through to default case... */
+d379 1
+a383 1
+		tbl->last_head = hp;
+d385 2
+a386 1
+		tbl->last_head = tbl->first_head = hp;
+a387 1
+	head_adjust(p, hp);
+a390 18
+
+static void
+head_adjust(const struct tbl_cell *cellp, struct tbl_head *head)
+{
+	if (TBL_CELL_VERT != cellp->pos &&
+			TBL_CELL_DVERT != cellp->pos) {
+		head->pos = TBL_HEAD_DATA;
+		return;
+	}
+
+	if (TBL_CELL_VERT == cellp->pos)
+		if (TBL_HEAD_DVERT != head->pos)
+			head->pos = TBL_HEAD_VERT;
+
+	if (TBL_CELL_DVERT == cellp->pos)
+		head->pos = TBL_HEAD_DVERT;
+}
+
+@
+
+
+1.21
+log
+@Fix handling of font modifiers in tables.  Noted by Brad Smith.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.20 2011/05/17 13:11:40 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.20
+log
+@In tbl layouts, we puked if a space didn't followed a vertical bar
+(found by Yuri Pankov).  This was due to looking for modifiers for the
+vertical bar.  This has been fixed, along with other special-key layout
+types.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.19 2011/04/07 01:08:42 joerg Exp $ */
+d176 2
+d190 2
+d195 2
+d200 4
+@
+
+
+1.19
+log
+@Don't shadow global identifiers.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.18 2011/04/04 23:04:38 kristaps Exp $ */
+d75 17
+@
+
+
+1.18
+log
+@Add config.h Glue for OpenIndiana (and older OpenSolaris) to build.
+From a patch by Yuri Pankov, thanks!
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.17 2011/03/20 16:02:05 kristaps Exp $ */
+d430 1
+a430 1
+head_adjust(const struct tbl_cell *cell, struct tbl_head *head)
+d432 2
+a433 2
+	if (TBL_CELL_VERT != cell->pos &&
+			TBL_CELL_DVERT != cell->pos) {
+d438 1
+a438 1
+	if (TBL_CELL_VERT == cell->pos)
+d442 1
+a442 1
+	if (TBL_CELL_DVERT == cell->pos)
+@
+
+
+1.17
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.16 2011/01/11 14:12:01 kristaps Exp $ */
+d17 4
+@
+
+
+1.16
+log
+@Add support for "^" vertical spanners.  Unlike GNU tbl, raise
+error-class messages when data is being ignored by specifying it in "^"
+cells (either as-is or in blocks).
+
+Also note again that horizontal spanners aren't really supported...
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.15 2011/01/10 15:31:00 kristaps Exp $ */
+d103 2
+a104 1
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+d121 2
+a122 1
+			TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+d161 2
+a162 1
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos - 1);
+d177 2
+a178 1
+	TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos - 1);
+d196 2
+a197 1
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+d213 2
+a214 1
+			TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+d222 2
+a223 1
+				TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+d236 1
+a236 1
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+d254 1
+a254 1
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos - 1);
+d295 2
+a296 1
+			TBL_MSG(tbl, MANDOCERR_TBLNOLAYOUT, ln, *pos);
+@
+
+
+1.15
+log
+@Clarify what members may be NULL or not in calculating widths.  Make
+sure signedness is correct.  Verify that layouts MUST exit for data
+cells.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.14 2011/01/10 14:40:30 kristaps Exp $ */
+d223 10
+@
+
+
+1.14
+log
+@First, make extra data cells be thrown away.  This makes "dp->layout"
+always hold, which cleans up the table stuff a bit.
+
+Second, set a "spans" value per data cell consisting of the number of
+skipped TBL_CELL_SPAN layout cells.
+
+Third, make tbl_term.c understand how to skip over spanned sections when
+iterating over the header queue.
+
+What remains is to calculate the widths of spanned cells.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.13 2011/01/09 05:38:23 joerg Exp $ */
+d125 1
+a125 1
+		cp->spacing = atoi(buf);
+@
+
+
+1.13
+log
+@Add some unsigned char casts for tolower() usage
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.12 2011/01/07 14:59:52 kristaps Exp $ */
+d200 4
+a203 1
+	 * parse.  FIXME: recover from this somehow?
+d206 15
+a220 3
+	if (NULL == rp->first && TBL_CELL_SPAN == c) {
+		TBL_MSG(tbl, MANDOCERR_TBLLAYOUT, ln, *pos);
+		return(0);
+@
+
+
+1.12
+log
+@Fixes: T} can be followed by a delimiter then more data.  Make this
+work and add documentation for it.
+
+Also make tbl_term() not puke if the number of data cells is less than
+the number of layout cells (which happens from time to time).  This
+still needs work because we should pad out empty cells so that the
+borders all work out.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.11 2011/01/07 13:03:48 kristaps Exp $ */
+d133 1
+a133 1
+	switch (tolower(p[(*pos)++])) {
+d163 1
+a163 1
+	switch (tolower(p[(*pos)++])) {
+d188 1
+a188 1
+		if (tolower(p[*pos]) == keys[i].name)
+@
+
+
+1.11
+log
+@Tiny bits in place for tbl horizontal spans.  This will wait for the next
+release to be implemented in full.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.10 2011/01/04 23:48:39 schwarze Exp $ */
+d93 14
+@
+
+
+1.10
+log
+@Merge from OpenBSD (similar to my original fix committed on Oct 15, 2010):
+For now, parse and ignore minimal column width specifications.
+First step to get terminfo(5) to build.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.9 2011/01/03 13:59:21 kristaps Exp $ */
+d32 6
+d182 12
+a194 1
+	c = keys[i].key;
+@
+
+
+1.9
+log
+@Make width calculations occur within tbl_term.c, not tbl.c.  This allows
+for front-ends to make decisions about widths, not the back-end.
+
+To pull this off, first make each tbl_head contain a unique index value
+(0 <= index < total tbl_head elements) and remove the tbl_calc() routine
+from the back-end.
+
+Then, when encountering the first tbl_span in the front-end, dynamically
+create an array of configurations (termp_tbl) keyed on each tbl_head's
+unique index value.  Construct the decimals and widths at this time,
+then continue parsing as before.
+
+The termp_tbl and indexes are required because we pass a const tbl AST
+into the front-end.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.8 2011/01/02 20:34:05 kristaps Exp $ */
+d129 2
+@
+
+
+1.8
+log
+@Fix table to print nicely (merging error).  Also have -Ttree push out some
+header stuff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.7 2011/01/02 12:04:23 kristaps Exp $ */
+d322 1
+d345 1
+@
+
+
+1.7
+log
+@Add some final bits necessary in the upcoming -Tascii tbl stuff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.6 2011/01/02 10:10:57 kristaps Exp $ */
+d297 1
+a297 1
+	h = pp ? pp->head->prev : tbl->first_head;
+@
+
+
+1.6
+log
+@Churn to get parts of 'struct tbl' visible from mandoc.h: rename the
+existing 'struct tbl' as 'struct tbl_node', then move all option stuff
+into a 'struct tbl' in mandoc.h.
+
+This conflicted with a structure in chars.c, which was renamed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.5 2011/01/01 22:19:15 kristaps Exp $ */
+d325 2
+@
+
+
+1.5
+log
+@Plug in the "head" concept for tables.  A tbl_head specifies the full
+layout for each row, including vertical spacers.  One grabs the tbl_head
+for a row and iterates through each entry, plugging data from the
+tbl_span into the header as appropriate.
+
+This is pulled in more or less verbatim from tbl.bsd.lv.  In fact, this
+is verbatim except that lists macros are made into hard-coded lists (for
+compatibility, as long-ago noted by joerg@@).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.4 2011/01/01 21:23:01 kristaps Exp $ */
+d48 1
+a48 1
+static	int		 mods(struct tbl *, struct tbl_cell *, 
+d50 1
+a50 1
+static	int		 cell(struct tbl *, struct tbl_row *, 
+d52 2
+a53 2
+static	void		 row(struct tbl *, int, const char *, int *);
+static	struct tbl_cell *cell_alloc(struct tbl *, 
+d59 1
+a59 1
+mods(struct tbl *tbl, struct tbl_cell *cp, 
+d157 1
+a157 1
+cell(struct tbl *tbl, struct tbl_row *rp, 
+d200 1
+a200 1
+row(struct tbl *tbl, int ln, const char *p, int *pos)
+d251 1
+a251 1
+tbl_layout(struct tbl *tbl, int ln, const char *p)
+d263 1
+a263 1
+cell_alloc(struct tbl *tbl, struct tbl_row *rp, enum tbl_cellt pos)
+@
+
+
+1.4
+log
+@Add bits for compilation on Mac.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.3 2010/12/30 09:34:07 kristaps Exp $ */
+d48 9
+a56 5
+static	int	 mods(struct tbl *, struct tbl_cell *, 
+			int, const char *, int *);
+static	int	 cell(struct tbl *, struct tbl_row *, 
+			int, const char *, int *);
+static	void	 row(struct tbl *, int, const char *, int *);
+a159 1
+	struct tbl_cell	*cp;
+d195 1
+a195 10
+	cp = mandoc_calloc(1, sizeof(struct tbl_cell));
+	cp->pos = c;
+
+	if (rp->last) {
+		rp->last->next = cp;
+		rp->last = cp;
+	} else
+		rp->last = rp->first = cp;
+
+	return(mods(tbl, cp, ln, p, pos));
+a249 1
+
+d261 111
+@
+
+
+1.3
+log
+@Move clean-up of parsed tbl nodes into the tbl_clear() function, called
+once per invocation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.2 2010/12/29 15:21:34 kristaps Exp $ */
+d21 1
+@
+
+
+1.2
+log
+@Update (still-commented) manual bits for tbl.
+
+Also removed lots of superfluous switch cases by using tolower() and
+handling only the lowercase keys.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_layout.c,v 1.1 2010/12/29 14:38:14 kristaps Exp $ */
+d220 3
+a222 3
+	if (tbl->last) {
+		tbl->last->next = rp;
+		tbl->last = rp;
+d224 1
+a224 1
+		tbl->last = tbl->first = rp;
+d234 1
+a234 1
+		if (NULL == tbl->first) 
+@
+
+
+1.1
+log
+@Merge, with considerable changes, tbl.bsd.lv's layout-handling code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: layout.c,v 1.7 2009/09/11 13:24:04 kristaps Exp $ */
+d31 1
+a31 1
+#define	KEYS_MAX	 17
+a34 1
+	{ 'C',		 TBL_CELL_CENTRE },
+a35 1
+	{ 'R',		 TBL_CELL_RIGHT },
+a36 1
+	{ 'L',		 TBL_CELL_LEFT },
+a37 1
+	{ 'N',		 TBL_CELL_NUMBER },
+a38 1
+	{ 'S',		 TBL_CELL_SPAN },
+a39 1
+	{ 'A',		 TBL_CELL_LONG },
+d108 1
+a108 1
+	switch (p[(*pos)++]) {
+a109 2
+		/* FALLTHROUGH */
+	case ('Z'):
+a112 2
+		/* FALLTHROUGH */
+	case ('U'):
+a115 2
+		/* FALLTHROUGH */
+	case ('E'):
+a118 2
+		/* FALLTHROUGH */
+	case ('T'):
+a121 2
+		/* FALLTHROUGH */
+	case ('D'):
+d125 1
+a125 5
+		/* FALLTHROUGH */
+	case ('B'):
+		/* FALLTHROUGH */
+	case ('I'):
+		/* FALLTHROUGH */
+d129 1
+d136 1
+a136 1
+	switch (p[(*pos)++]) {
+a137 2
+		/* FALLTHROUGH */
+	case ('B'):
+a140 2
+		/* FALLTHROUGH */
+	case ('I'):
+d162 1
+a162 1
+		if (p[*pos] == keys[i].name)
+@

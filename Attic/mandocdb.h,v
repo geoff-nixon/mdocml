@@ -1,0 +1,277 @@
+head	1.8;
+access;
+symbols
+	VERSION_1_12_4:1.6.2.1
+	VERSION_1_12_3:1.6.2.1
+	VERSION_1_12_2:1.6.2.1
+	VERSION_1_12:1.6.0.2
+	VERSION_1_12_1:1.6;
+locks; strict;
+comment	@ * @;
+
+
+1.8
+date	2012.06.09.14.11.16;	author kristaps;	state dead;
+branches;
+next	1.7;
+
+1.7
+date	2012.06.08.10.43.01;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2012.03.23.02.52.33;	author kristaps;	state Exp;
+branches
+	1.6.2.1;
+next	1.5;
+
+1.5
+date	2011.12.25.16.53.51;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.12.25.14.58.39;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.11.20.12.39.08;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.11.17.14.57.13;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.13.10.49.57;	author schwarze;	state Exp;
+branches;
+next	;
+
+1.6.2.1
+date	2013.09.18.00.54.20;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@Merge whatis.1 into apropos.1 (and remove), add whatis bits to apropos
+(via mansearch), and merge mandocdb.h into mansearch.h (and remove).
+@
+text
+@@
+
+
+1.7
+log
+@Re-tooled mandocdb using sqlite3 and ohash.
+See the tech@@ mailing list entries in June 2012 for details, as well as the
+discuss@@ mailing list entries from March 2012.
+Among other changes, this utility now:
+ 1.  uses a single sqlite3 database instead of several berkeley dbs
+ 2.  stores utf-8 encoded strings
+ 3.  using ohash to aggressively hash its contents
+ 4.  using fts() instead of manually walking directories
+@
+text
+@a0 61
+/*      $Id: mandocdb.h,v 1.6 2012/03/23 02:52:33 kristaps Exp $ */
+/*
+ * Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef MANDOCDB_H
+#define MANDOCDB_H
+
+#define	MANDOC_DB	"mandocdb.db"
+
+#define	TYPE_An		0x0000000000000001ULL
+#define	TYPE_Ar		0x0000000000000002ULL
+#define	TYPE_At		0x0000000000000004ULL
+#define	TYPE_Bsx	0x0000000000000008ULL
+#define	TYPE_Bx         0x0000000000000010ULL
+#define	TYPE_Cd		0x0000000000000020ULL
+#define	TYPE_Cm		0x0000000000000040ULL
+#define	TYPE_Dv		0x0000000000000080ULL
+#define	TYPE_Dx		0x0000000000000100ULL
+#define	TYPE_Em		0x0000000000000200ULL
+#define	TYPE_Er		0x0000000000000400ULL
+#define	TYPE_Ev		0x0000000000000800ULL
+#define	TYPE_Fa		0x0000000000001000ULL
+#define	TYPE_Fl		0x0000000000002000ULL
+#define	TYPE_Fn		0x0000000000004000ULL
+#define	TYPE_Ft		0x0000000000008000ULL
+#define	TYPE_Fx		0x0000000000010000ULL
+#define	TYPE_Ic		0x0000000000020000ULL
+#define	TYPE_In		0x0000000000040000ULL
+#define	TYPE_Lb		0x0000000000080000ULL
+#define	TYPE_Li		0x0000000000100000ULL
+#define	TYPE_Lk		0x0000000000200000ULL
+#define	TYPE_Ms		0x0000000000400000ULL
+#define	TYPE_Mt		0x0000000000800000ULL
+#define	TYPE_Nd		0x0000000001000000ULL
+#define	TYPE_Nm		0x0000000002000000ULL
+#define	TYPE_Nx		0x0000000004000000ULL
+#define	TYPE_Ox		0x0000000008000000ULL
+#define	TYPE_Pa		0x0000000010000000ULL
+#define	TYPE_Rs		0x0000000020000000ULL
+#define	TYPE_Sh		0x0000000040000000ULL
+#define	TYPE_Ss		0x0000000080000000ULL
+#define	TYPE_St		0x0000000100000000ULL
+#define	TYPE_Sy		0x0000000200000000ULL
+#define	TYPE_Tn		0x0000000400000000ULL
+#define	TYPE_Va		0x0000000800000000ULL
+#define	TYPE_Vt		0x0000001000000000ULL
+#define	TYPE_Xr		0x0000002000000000ULL
+
+#endif /*!MANDOCDB_H */
+@
+
+
+1.6
+log
+@Revert to mandocdb.{index,db} for database files.
+@
+text
+@d1 1
+a1 1
+/*      $Id: mandocdb.h,v 1.5 2011/12/25 16:53:51 schwarze Exp $ */
+a20 1
+#define	MANDOC_IDX	"mandocdb.index"
+@
+
+
+1.6.2.1
+log
+@Fix typo in filenames: mandocdb.{db,index} -> mandoc.{db,index}
+@
+text
+@d1 1
+a1 1
+/*      $Id: mandocdb.h,v 1.6 2012/03/23 02:52:33 kristaps Exp $ */
+d20 2
+a21 2
+#define	MANDOC_DB	"mandoc.db"
+#define	MANDOC_IDX	"mandoc.index"
+@
+
+
+1.5
+log
+@Use the traditional name "whatis.db" for the mandocdb(8) databases.
+Requested by deraadt@@, ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*      $Id: mandocdb.h,v 1.4 2011/12/25 14:58:39 schwarze Exp $ */
+d20 2
+a21 2
+#define	MANDOC_DB	"whatis.db"
+#define	MANDOC_IDX	"whatis.index"
+@
+
+
+1.4
+log
+@For binary compatability of the databases across architectures,
+use pointers to arrays, not pointers to structs.  It is now possible
+to create databases on sparc64 and use them on i386 and vice versa.
+Kristaps@@ can't think of anything else that might be required, either.
+Put this in now such that we can move on.
+@
+text
+@d1 1
+a1 1
+/*      $Id: mandocdb.h,v 1.3 2011/11/20 12:39:08 kristaps Exp $ */
+d20 2
+a21 2
+#define	MANDOC_DB	"mandoc.db"
+#define	MANDOC_IDX	"mandoc.index"
+@
+
+
+1.3
+log
+@Merge schwarze@@'s work for 64-bit types.  This is based on a tweaked patch
+submitted to tech@@ on 16/11/2011, 01:39.  It has been updated to account
+for the logical-operator functions and to avoid keeping a live pointer into
+the DBT value, which is not guaranteed to be consistent across calls into
+the bdb library.
+@
+text
+@d1 1
+a1 1
+/*      $Id: mandocdb.h,v 1.2 2011/11/17 14:57:13 kristaps Exp $ */
+a19 5
+struct db_val {
+	uint64_t	mask;
+	uint32_t	rec;
+};
+
+@
+
+
+1.2
+log
+@Guard mandocdb.h inclusion.
+@
+text
+@d1 1
+a1 1
+/*      $Id: mandocdb.h,v 1.1 2011/11/13 10:49:57 schwarze Exp $ */
+d20 5
+d28 38
+a65 12
+#define	TYPE_An		0x01
+#define	TYPE_Cd		0x02
+#define	TYPE_Er		0x04
+#define	TYPE_Ev		0x08
+#define	TYPE_Fn		0x10
+#define	TYPE_In		0x20
+#define	TYPE_Nd		0x40
+#define	TYPE_Nm		0x100
+#define	TYPE_Pa		0x200
+#define	TYPE_St		0x400
+#define	TYPE_Va		0x1000
+#define	TYPE_Xr		0x2000
+@
+
+
+1.1
+log
+@Inventing new keywords for mostly the same thing when a well-established
+set of keywords already exists is a bad idea, so reuse the mdoc(7)
+macro names as apropos(1) search types.  This is a gain in brevity
+as well.  Some time ago, kristaps@@ agreed in principle.
+
+The search type bit field constants are used by both mandocdb(8) and
+apropos(1) and should better stay in sync, so give them their own
+header file.
+@
+text
+@d1 1
+a1 1
+/*      $Id$ */
+d17 2
+d35 2
+@

@@ -1,0 +1,6423 @@
+head	1.95;
+access;
+symbols
+	VERSION_1_13_3:1.88
+	VERSION_1_13_2:1.77
+	VERSION_1_12_4:1.69
+	VERSION_1_13_1:1.68
+	VERSION_1_12_3:1.57
+	VERSION_1_12_2:1.52
+	VERSION_1_12:1.69.0.2
+	VERSION_1_12_1:1.9
+	VERSION_1_12_0:1.7;
+locks; strict;
+comment	@ * @;
+
+
+1.95
+date	2015.10.12.00.08.15;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2015.04.18.17.53.21;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2015.04.18.16.06.40;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2015.04.02.23.48.20;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2015.04.02.21.36.50;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2015.02.17.20.37.17;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2015.02.12.12.24.33;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2015.02.11.14.15.12;	author schwarze;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2015.02.06.03.38.45;	author schwarze;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2015.02.01.23.10.35;	author schwarze;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2015.01.28.17.32.07;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2015.01.23.14.21.01;	author schwarze;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2014.12.24.23.32.42;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2014.12.23.13.48.57;	author schwarze;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2014.12.23.10.09.44;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2014.12.23.09.31.46;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2014.11.30.05.29.00;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2014.11.27.22.27.56;	author schwarze;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2014.11.27.16.20.31;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2014.11.19.22.00.37;	author schwarze;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2014.11.17.06.44.58;	author schwarze;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2014.11.06.22.28.36;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2014.10.30.20.10.02;	author schwarze;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2014.08.21.12.57.17;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2014.08.06.15.09.05;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2014.07.30.00.19.16;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2014.07.04.16.12.08;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2014.07.02.19.55.10;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2014.07.02.03.48.07;	author schwarze;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2014.04.20.19.40.13;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2014.03.30.23.34.32;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2014.01.22.20.58.39;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2013.12.25.22.00.45;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2013.12.25.00.39.31;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2013.12.24.22.08.50;	author schwarze;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2013.12.24.20.45.27;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2013.10.07.22.22.10;	author schwarze;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2013.09.15.18.48.31;	author schwarze;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2013.06.02.18.16.57;	author schwarze;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2013.05.29.15.40.22;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2013.05.19.21.40.24;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2013.05.19.21.07.51;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2012.12.31.22.34.48;	author schwarze;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2012.11.19.02.14.45;	author schwarze;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2012.11.19.02.08.33;	author schwarze;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2012.11.18.19.34.19;	author schwarze;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2012.11.18.18.02.23;	author schwarze;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2012.11.17.00.26.33;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2012.07.16.10.45.41;	author schwarze;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2012.07.16.09.51.54;	author schwarze;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2012.07.14.09.07.18;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2012.07.13.23.57.58;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2012.07.13.20.43.40;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2012.07.13.14.19.49;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2012.07.12.08.55.48;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2012.07.11.23.46.37;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2012.07.11.16.19.08;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2012.07.10.20.37.02;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2012.07.10.19.54.11;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2012.07.10.14.38.51;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2012.07.09.23.53.36;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2012.07.09.22.36.34;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2012.07.09.18.56.12;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2012.07.09.17.53.01;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2012.07.09.09.31.48;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2012.07.08.22.49.29;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2012.07.08.18.39.47;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2012.07.08.16.52.20;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2012.07.08.15.48.13;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2012.07.08.15.01.57;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2012.07.08.13.57.53;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2012.07.08.11.10.13;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2012.07.08.10.19.37;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2012.07.07.21.16.35;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2012.07.07.20.36.18;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2012.07.07.14.05.40;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2012.07.07.13.57.19;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2012.07.07.13.53.14;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2012.07.07.13.46.59;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2012.07.07.13.37.42;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.10.24.21.47.59;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.10.20.20.27.21;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.10.08.12.47.40;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.10.08.11.37.27;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.10.08.09.58.29;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.10.06.22.29.12;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.09.30.00.13.28;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.09.20.13.47.55;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.09.17.15.00.51;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.95
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@/*	$Id: mdoc_man.c,v 1.94 2015/10/06 18:32:19 schwarze Exp $ */
+/*
+ * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "mandoc_aux.h"
+#include "mandoc.h"
+#include "roff.h"
+#include "mdoc.h"
+#include "man.h"
+#include "out.h"
+#include "main.h"
+
+#define	DECL_ARGS const struct roff_meta *meta, struct roff_node *n
+
+struct	manact {
+	int		(*cond)(DECL_ARGS); /* DON'T run actions */
+	int		(*pre)(DECL_ARGS); /* pre-node action */
+	void		(*post)(DECL_ARGS); /* post-node action */
+	const char	 *prefix; /* pre-node string constant */
+	const char	 *suffix; /* post-node string constant */
+};
+
+static	int	  cond_body(DECL_ARGS);
+static	int	  cond_head(DECL_ARGS);
+static  void	  font_push(char);
+static	void	  font_pop(void);
+static	void	  mid_it(void);
+static	void	  post__t(DECL_ARGS);
+static	void	  post_aq(DECL_ARGS);
+static	void	  post_bd(DECL_ARGS);
+static	void	  post_bf(DECL_ARGS);
+static	void	  post_bk(DECL_ARGS);
+static	void	  post_bl(DECL_ARGS);
+static	void	  post_dl(DECL_ARGS);
+static	void	  post_en(DECL_ARGS);
+static	void	  post_enc(DECL_ARGS);
+static	void	  post_eo(DECL_ARGS);
+static	void	  post_fa(DECL_ARGS);
+static	void	  post_fd(DECL_ARGS);
+static	void	  post_fl(DECL_ARGS);
+static	void	  post_fn(DECL_ARGS);
+static	void	  post_fo(DECL_ARGS);
+static	void	  post_font(DECL_ARGS);
+static	void	  post_in(DECL_ARGS);
+static	void	  post_it(DECL_ARGS);
+static	void	  post_lb(DECL_ARGS);
+static	void	  post_nm(DECL_ARGS);
+static	void	  post_percent(DECL_ARGS);
+static	void	  post_pf(DECL_ARGS);
+static	void	  post_sect(DECL_ARGS);
+static	void	  post_sp(DECL_ARGS);
+static	void	  post_vt(DECL_ARGS);
+static	int	  pre__t(DECL_ARGS);
+static	int	  pre_an(DECL_ARGS);
+static	int	  pre_ap(DECL_ARGS);
+static	int	  pre_aq(DECL_ARGS);
+static	int	  pre_bd(DECL_ARGS);
+static	int	  pre_bf(DECL_ARGS);
+static	int	  pre_bk(DECL_ARGS);
+static	int	  pre_bl(DECL_ARGS);
+static	int	  pre_br(DECL_ARGS);
+static	int	  pre_bx(DECL_ARGS);
+static	int	  pre_dl(DECL_ARGS);
+static	int	  pre_en(DECL_ARGS);
+static	int	  pre_enc(DECL_ARGS);
+static	int	  pre_em(DECL_ARGS);
+static	int	  pre_skip(DECL_ARGS);
+static	int	  pre_eo(DECL_ARGS);
+static	int	  pre_ex(DECL_ARGS);
+static	int	  pre_fa(DECL_ARGS);
+static	int	  pre_fd(DECL_ARGS);
+static	int	  pre_fl(DECL_ARGS);
+static	int	  pre_fn(DECL_ARGS);
+static	int	  pre_fo(DECL_ARGS);
+static	int	  pre_ft(DECL_ARGS);
+static	int	  pre_in(DECL_ARGS);
+static	int	  pre_it(DECL_ARGS);
+static	int	  pre_lk(DECL_ARGS);
+static	int	  pre_li(DECL_ARGS);
+static	int	  pre_ll(DECL_ARGS);
+static	int	  pre_nm(DECL_ARGS);
+static	int	  pre_no(DECL_ARGS);
+static	int	  pre_ns(DECL_ARGS);
+static	int	  pre_pp(DECL_ARGS);
+static	int	  pre_rs(DECL_ARGS);
+static	int	  pre_rv(DECL_ARGS);
+static	int	  pre_sm(DECL_ARGS);
+static	int	  pre_sp(DECL_ARGS);
+static	int	  pre_sect(DECL_ARGS);
+static	int	  pre_sy(DECL_ARGS);
+static	void	  pre_syn(const struct roff_node *);
+static	int	  pre_vt(DECL_ARGS);
+static	int	  pre_ux(DECL_ARGS);
+static	int	  pre_xr(DECL_ARGS);
+static	void	  print_word(const char *);
+static	void	  print_line(const char *, int);
+static	void	  print_block(const char *, int);
+static	void	  print_offs(const char *, int);
+static	void	  print_width(const struct mdoc_bl *,
+			const struct roff_node *);
+static	void	  print_count(int *);
+static	void	  print_node(DECL_ARGS);
+
+static	const struct manact manacts[MDOC_MAX + 1] = {
+	{ NULL, pre_ap, NULL, NULL, NULL }, /* Ap */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Dd */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Dt */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Os */
+	{ NULL, pre_sect, post_sect, ".SH", NULL }, /* Sh */
+	{ NULL, pre_sect, post_sect, ".SS", NULL }, /* Ss */
+	{ NULL, pre_pp, NULL, NULL, NULL }, /* Pp */
+	{ cond_body, pre_dl, post_dl, NULL, NULL }, /* D1 */
+	{ cond_body, pre_dl, post_dl, NULL, NULL }, /* Dl */
+	{ cond_body, pre_bd, post_bd, NULL, NULL }, /* Bd */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Ed */
+	{ cond_body, pre_bl, post_bl, NULL, NULL }, /* Bl */
+	{ NULL, NULL, NULL, NULL, NULL }, /* El */
+	{ NULL, pre_it, post_it, NULL, NULL }, /* It */
+	{ NULL, pre_em, post_font, NULL, NULL }, /* Ad */
+	{ NULL, pre_an, NULL, NULL, NULL }, /* An */
+	{ NULL, pre_em, post_font, NULL, NULL }, /* Ar */
+	{ NULL, pre_sy, post_font, NULL, NULL }, /* Cd */
+	{ NULL, pre_sy, post_font, NULL, NULL }, /* Cm */
+	{ NULL, pre_li, post_font, NULL, NULL }, /* Dv */
+	{ NULL, pre_li, post_font, NULL, NULL }, /* Er */
+	{ NULL, pre_li, post_font, NULL, NULL }, /* Ev */
+	{ NULL, pre_ex, NULL, NULL, NULL }, /* Ex */
+	{ NULL, pre_fa, post_fa, NULL, NULL }, /* Fa */
+	{ NULL, pre_fd, post_fd, NULL, NULL }, /* Fd */
+	{ NULL, pre_fl, post_fl, NULL, NULL }, /* Fl */
+	{ NULL, pre_fn, post_fn, NULL, NULL }, /* Fn */
+	{ NULL, pre_ft, post_font, NULL, NULL }, /* Ft */
+	{ NULL, pre_sy, post_font, NULL, NULL }, /* Ic */
+	{ NULL, pre_in, post_in, NULL, NULL }, /* In */
+	{ NULL, pre_li, post_font, NULL, NULL }, /* Li */
+	{ cond_head, pre_enc, NULL, "\\- ", NULL }, /* Nd */
+	{ NULL, pre_nm, post_nm, NULL, NULL }, /* Nm */
+	{ cond_body, pre_enc, post_enc, "[", "]" }, /* Op */
+	{ NULL, pre_ft, post_font, NULL, NULL }, /* Ot */
+	{ NULL, pre_em, post_font, NULL, NULL }, /* Pa */
+	{ NULL, pre_rv, NULL, NULL, NULL }, /* Rv */
+	{ NULL, NULL, NULL, NULL, NULL }, /* St */
+	{ NULL, pre_em, post_font, NULL, NULL }, /* Va */
+	{ NULL, pre_vt, post_vt, NULL, NULL }, /* Vt */
+	{ NULL, pre_xr, NULL, NULL, NULL }, /* Xr */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %A */
+	{ NULL, pre_em, post_percent, NULL, NULL }, /* %B */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %D */
+	{ NULL, pre_em, post_percent, NULL, NULL }, /* %I */
+	{ NULL, pre_em, post_percent, NULL, NULL }, /* %J */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %N */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %O */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %P */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %R */
+	{ NULL, pre__t, post__t, NULL, NULL }, /* %T */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %V */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Ac */
+	{ cond_body, pre_aq, post_aq, NULL, NULL }, /* Ao */
+	{ cond_body, pre_aq, post_aq, NULL, NULL }, /* Aq */
+	{ NULL, NULL, NULL, NULL, NULL }, /* At */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Bc */
+	{ NULL, pre_bf, post_bf, NULL, NULL }, /* Bf */
+	{ cond_body, pre_enc, post_enc, "[", "]" }, /* Bo */
+	{ cond_body, pre_enc, post_enc, "[", "]" }, /* Bq */
+	{ NULL, pre_ux, NULL, "BSD/OS", NULL }, /* Bsx */
+	{ NULL, pre_bx, NULL, NULL, NULL }, /* Bx */
+	{ NULL, pre_skip, NULL, NULL, NULL }, /* Db */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Dc */
+	{ cond_body, pre_enc, post_enc, "\\(Lq", "\\(Rq" }, /* Do */
+	{ cond_body, pre_enc, post_enc, "\\(Lq", "\\(Rq" }, /* Dq */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Ec */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Ef */
+	{ NULL, pre_em, post_font, NULL, NULL }, /* Em */
+	{ cond_body, pre_eo, post_eo, NULL, NULL }, /* Eo */
+	{ NULL, pre_ux, NULL, "FreeBSD", NULL }, /* Fx */
+	{ NULL, pre_sy, post_font, NULL, NULL }, /* Ms */
+	{ NULL, pre_no, NULL, NULL, NULL }, /* No */
+	{ NULL, pre_ns, NULL, NULL, NULL }, /* Ns */
+	{ NULL, pre_ux, NULL, "NetBSD", NULL }, /* Nx */
+	{ NULL, pre_ux, NULL, "OpenBSD", NULL }, /* Ox */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Pc */
+	{ NULL, NULL, post_pf, NULL, NULL }, /* Pf */
+	{ cond_body, pre_enc, post_enc, "(", ")" }, /* Po */
+	{ cond_body, pre_enc, post_enc, "(", ")" }, /* Pq */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Qc */
+	{ cond_body, pre_enc, post_enc, "\\(oq", "\\(cq" }, /* Ql */
+	{ cond_body, pre_enc, post_enc, "\"", "\"" }, /* Qo */
+	{ cond_body, pre_enc, post_enc, "\"", "\"" }, /* Qq */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Re */
+	{ cond_body, pre_rs, NULL, NULL, NULL }, /* Rs */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Sc */
+	{ cond_body, pre_enc, post_enc, "\\(oq", "\\(cq" }, /* So */
+	{ cond_body, pre_enc, post_enc, "\\(oq", "\\(cq" }, /* Sq */
+	{ NULL, pre_sm, NULL, NULL, NULL }, /* Sm */
+	{ NULL, pre_em, post_font, NULL, NULL }, /* Sx */
+	{ NULL, pre_sy, post_font, NULL, NULL }, /* Sy */
+	{ NULL, pre_li, post_font, NULL, NULL }, /* Tn */
+	{ NULL, pre_ux, NULL, "UNIX", NULL }, /* Ux */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Xc */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Xo */
+	{ NULL, pre_fo, post_fo, NULL, NULL }, /* Fo */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Fc */
+	{ cond_body, pre_enc, post_enc, "[", "]" }, /* Oo */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Oc */
+	{ NULL, pre_bk, post_bk, NULL, NULL }, /* Bk */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Ek */
+	{ NULL, pre_ux, NULL, "is currently in beta test.", NULL }, /* Bt */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Hf */
+	{ NULL, pre_em, post_font, NULL, NULL }, /* Fr */
+	{ NULL, pre_ux, NULL, "currently under development.", NULL }, /* Ud */
+	{ NULL, NULL, post_lb, NULL, NULL }, /* Lb */
+	{ NULL, pre_pp, NULL, NULL, NULL }, /* Lp */
+	{ NULL, pre_lk, NULL, NULL, NULL }, /* Lk */
+	{ NULL, pre_em, post_font, NULL, NULL }, /* Mt */
+	{ cond_body, pre_enc, post_enc, "{", "}" }, /* Brq */
+	{ cond_body, pre_enc, post_enc, "{", "}" }, /* Bro */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Brc */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %C */
+	{ NULL, pre_skip, NULL, NULL, NULL }, /* Es */
+	{ cond_body, pre_en, post_en, NULL, NULL }, /* En */
+	{ NULL, pre_ux, NULL, "DragonFly", NULL }, /* Dx */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %Q */
+	{ NULL, pre_br, NULL, NULL, NULL }, /* br */
+	{ NULL, pre_sp, post_sp, NULL, NULL }, /* sp */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* %U */
+	{ NULL, NULL, NULL, NULL, NULL }, /* Ta */
+	{ NULL, pre_ll, post_sp, NULL, NULL }, /* ll */
+	{ NULL, NULL, NULL, NULL, NULL }, /* ROOT */
+};
+
+static	int		outflags;
+#define	MMAN_spc	(1 << 0)  /* blank character before next word */
+#define	MMAN_spc_force	(1 << 1)  /* even before trailing punctuation */
+#define	MMAN_nl		(1 << 2)  /* break man(7) code line */
+#define	MMAN_br		(1 << 3)  /* break output line */
+#define	MMAN_sp		(1 << 4)  /* insert a blank output line */
+#define	MMAN_PP		(1 << 5)  /* reset indentation etc. */
+#define	MMAN_Sm		(1 << 6)  /* horizontal spacing mode */
+#define	MMAN_Bk		(1 << 7)  /* word keep mode */
+#define	MMAN_Bk_susp	(1 << 8)  /* suspend this (after a macro) */
+#define	MMAN_An_split	(1 << 9)  /* author mode is "split" */
+#define	MMAN_An_nosplit	(1 << 10) /* author mode is "nosplit" */
+#define	MMAN_PD		(1 << 11) /* inter-paragraph spacing disabled */
+#define	MMAN_nbrword	(1 << 12) /* do not break the next word */
+
+#define	BL_STACK_MAX	32
+
+static	int		Bl_stack[BL_STACK_MAX];  /* offsets [chars] */
+static	int		Bl_stack_post[BL_STACK_MAX];  /* add final .RE */
+static	int		Bl_stack_len;  /* number of nested Bl blocks */
+static	int		TPremain;  /* characters before tag is full */
+
+static	struct {
+	char	*head;
+	char	*tail;
+	size_t	 size;
+}	fontqueue;
+
+
+static void
+font_push(char newfont)
+{
+
+	if (fontqueue.head + fontqueue.size <= ++fontqueue.tail) {
+		fontqueue.size += 8;
+		fontqueue.head = mandoc_realloc(fontqueue.head,
+		    fontqueue.size);
+	}
+	*fontqueue.tail = newfont;
+	print_word("");
+	printf("\\f");
+	putchar(newfont);
+	outflags &= ~MMAN_spc;
+}
+
+static void
+font_pop(void)
+{
+
+	if (fontqueue.tail > fontqueue.head)
+		fontqueue.tail--;
+	outflags &= ~MMAN_spc;
+	print_word("");
+	printf("\\f");
+	putchar(*fontqueue.tail);
+}
+
+static void
+print_word(const char *s)
+{
+
+	if ((MMAN_PP | MMAN_sp | MMAN_br | MMAN_nl) & outflags) {
+		/*
+		 * If we need a newline, print it now and start afresh.
+		 */
+		if (MMAN_PP & outflags) {
+			if (MMAN_sp & outflags) {
+				if (MMAN_PD & outflags) {
+					printf("\n.PD");
+					outflags &= ~MMAN_PD;
+				}
+			} else if ( ! (MMAN_PD & outflags)) {
+				printf("\n.PD 0");
+				outflags |= MMAN_PD;
+			}
+			printf("\n.PP\n");
+		} else if (MMAN_sp & outflags)
+			printf("\n.sp\n");
+		else if (MMAN_br & outflags)
+			printf("\n.br\n");
+		else if (MMAN_nl & outflags)
+			putchar('\n');
+		outflags &= ~(MMAN_PP|MMAN_sp|MMAN_br|MMAN_nl|MMAN_spc);
+		if (1 == TPremain)
+			printf(".br\n");
+		TPremain = 0;
+	} else if (MMAN_spc & outflags) {
+		/*
+		 * If we need a space, only print it if
+		 * (1) it is forced by `No' or
+		 * (2) what follows is not terminating punctuation or
+		 * (3) what follows is longer than one character.
+		 */
+		if (MMAN_spc_force & outflags || '\0' == s[0] ||
+		    NULL == strchr(".,:;)]?!", s[0]) || '\0' != s[1]) {
+			if (MMAN_Bk & outflags &&
+			    ! (MMAN_Bk_susp & outflags))
+				putchar('\\');
+			putchar(' ');
+			if (TPremain)
+				TPremain--;
+		}
+	}
+
+	/*
+	 * Reassign needing space if we're not following opening
+	 * punctuation.
+	 */
+	if (MMAN_Sm & outflags && ('\0' == s[0] ||
+	    (('(' != s[0] && '[' != s[0]) || '\0' != s[1])))
+		outflags |= MMAN_spc;
+	else
+		outflags &= ~MMAN_spc;
+	outflags &= ~(MMAN_spc_force | MMAN_Bk_susp);
+
+	for ( ; *s; s++) {
+		switch (*s) {
+		case ASCII_NBRSP:
+			printf("\\ ");
+			break;
+		case ASCII_HYPH:
+			putchar('-');
+			break;
+		case ASCII_BREAK:
+			printf("\\:");
+			break;
+		case ' ':
+			if (MMAN_nbrword & outflags) {
+				printf("\\ ");
+				break;
+			}
+			/* FALLTHROUGH */
+		default:
+			putchar((unsigned char)*s);
+			break;
+		}
+		if (TPremain)
+			TPremain--;
+	}
+	outflags &= ~MMAN_nbrword;
+}
+
+static void
+print_line(const char *s, int newflags)
+{
+
+	outflags &= ~MMAN_br;
+	outflags |= MMAN_nl;
+	print_word(s);
+	outflags |= newflags;
+}
+
+static void
+print_block(const char *s, int newflags)
+{
+
+	outflags &= ~MMAN_PP;
+	if (MMAN_sp & outflags) {
+		outflags &= ~(MMAN_sp | MMAN_br);
+		if (MMAN_PD & outflags) {
+			print_line(".PD", 0);
+			outflags &= ~MMAN_PD;
+		}
+	} else if (! (MMAN_PD & outflags))
+		print_line(".PD 0", MMAN_PD);
+	outflags |= MMAN_nl;
+	print_word(s);
+	outflags |= MMAN_Bk_susp | newflags;
+}
+
+static void
+print_offs(const char *v, int keywords)
+{
+	char		  buf[24];
+	struct roffsu	  su;
+	int		  sz;
+
+	print_line(".RS", MMAN_Bk_susp);
+
+	/* Convert v into a number (of characters). */
+	if (NULL == v || '\0' == *v || (keywords && !strcmp(v, "left")))
+		sz = 0;
+	else if (keywords && !strcmp(v, "indent"))
+		sz = 6;
+	else if (keywords && !strcmp(v, "indent-two"))
+		sz = 12;
+	else if (a2roffsu(v, &su, SCALE_EN) > 1) {
+		if (SCALE_EN == su.unit)
+			sz = su.scale;
+		else {
+			/*
+			 * XXX
+			 * If we are inside an enclosing list,
+			 * there is no easy way to add the two
+			 * indentations because they are provided
+			 * in terms of different units.
+			 */
+			print_word(v);
+			outflags |= MMAN_nl;
+			return;
+		}
+	} else
+		sz = strlen(v);
+
+	/*
+	 * We are inside an enclosing list.
+	 * Add the two indentations.
+	 */
+	if (Bl_stack_len)
+		sz += Bl_stack[Bl_stack_len - 1];
+
+	(void)snprintf(buf, sizeof(buf), "%dn", sz);
+	print_word(buf);
+	outflags |= MMAN_nl;
+}
+
+/*
+ * Set up the indentation for a list item; used from pre_it().
+ */
+static void
+print_width(const struct mdoc_bl *bl, const struct roff_node *child)
+{
+	char		  buf[24];
+	struct roffsu	  su;
+	int		  numeric, remain, sz, chsz;
+
+	numeric = 1;
+	remain = 0;
+
+	/* Convert the width into a number (of characters). */
+	if (bl->width == NULL)
+		sz = (bl->type == LIST_hang) ? 6 : 0;
+	else if (a2roffsu(bl->width, &su, SCALE_MAX) > 1) {
+		if (SCALE_EN == su.unit)
+			sz = su.scale;
+		else {
+			sz = 0;
+			numeric = 0;
+		}
+	} else
+		sz = strlen(bl->width);
+
+	/* XXX Rough estimation, might have multiple parts. */
+	if (bl->type == LIST_enum)
+		chsz = (bl->count > 8) + 1;
+	else if (child != NULL && child->type == ROFFT_TEXT)
+		chsz = strlen(child->string);
+	else
+		chsz = 0;
+
+	/* Maybe we are inside an enclosing list? */
+	mid_it();
+
+	/*
+	 * Save our own indentation,
+	 * such that child lists can use it.
+	 */
+	Bl_stack[Bl_stack_len++] = sz + 2;
+
+	/* Set up the current list. */
+	if (chsz > sz && bl->type != LIST_tag)
+		print_block(".HP", 0);
+	else {
+		print_block(".TP", 0);
+		remain = sz + 2;
+	}
+	if (numeric) {
+		(void)snprintf(buf, sizeof(buf), "%dn", sz + 2);
+		print_word(buf);
+	} else
+		print_word(bl->width);
+	TPremain = remain;
+}
+
+static void
+print_count(int *count)
+{
+	char		  buf[24];
+
+	(void)snprintf(buf, sizeof(buf), "%d.\\&", ++*count);
+	print_word(buf);
+}
+
+void
+man_man(void *arg, const struct roff_man *man)
+{
+
+	/*
+	 * Dump the keep buffer.
+	 * We're guaranteed by now that this exists (is non-NULL).
+	 * Flush stdout afterward, just in case.
+	 */
+	fputs(mparse_getkeep(man_mparse(man)), stdout);
+	fflush(stdout);
+}
+
+void
+man_mdoc(void *arg, const struct roff_man *mdoc)
+{
+	struct roff_node *n;
+
+	printf(".TH \"%s\" \"%s\" \"%s\" \"%s\" \"%s\"\n",
+	    mdoc->meta.title,
+	    (mdoc->meta.msec == NULL ? "" : mdoc->meta.msec),
+	    mdoc->meta.date, mdoc->meta.os, mdoc->meta.vol);
+
+	/* Disable hyphenation and if nroff, disable justification. */
+	printf(".nh\n.if n .ad l");
+
+	outflags = MMAN_nl | MMAN_Sm;
+	if (0 == fontqueue.size) {
+		fontqueue.size = 8;
+		fontqueue.head = fontqueue.tail = mandoc_malloc(8);
+		*fontqueue.tail = 'R';
+	}
+	for (n = mdoc->first->child; n != NULL; n = n->next)
+		print_node(&mdoc->meta, n);
+	putchar('\n');
+}
+
+static void
+print_node(DECL_ARGS)
+{
+	const struct manact	*act;
+	struct roff_node	*sub;
+	int			 cond, do_sub;
+
+	/*
+	 * Break the line if we were parsed subsequent the current node.
+	 * This makes the page structure be more consistent.
+	 */
+	if (MMAN_spc & outflags && MDOC_LINE & n->flags)
+		outflags |= MMAN_nl;
+
+	act = NULL;
+	cond = 0;
+	do_sub = 1;
+	n->flags &= ~MDOC_ENDED;
+
+	if (n->type == ROFFT_TEXT) {
+		/*
+		 * Make sure that we don't happen to start with a
+		 * control character at the start of a line.
+		 */
+		if (MMAN_nl & outflags &&
+		    ('.' == *n->string || '\'' == *n->string)) {
+			print_word("");
+			printf("\\&");
+			outflags &= ~MMAN_spc;
+		}
+		if (outflags & MMAN_Sm && ! (n->flags & MDOC_DELIMC))
+			outflags |= MMAN_spc_force;
+		print_word(n->string);
+		if (outflags & MMAN_Sm && ! (n->flags & MDOC_DELIMO))
+			outflags |= MMAN_spc;
+	} else {
+		/*
+		 * Conditionally run the pre-node action handler for a
+		 * node.
+		 */
+		act = manacts + n->tok;
+		cond = act->cond == NULL || (*act->cond)(meta, n);
+		if (cond && act->pre && (n->end == ENDBODY_NOT || n->nchild))
+			do_sub = (*act->pre)(meta, n);
+	}
+
+	/*
+	 * Conditionally run all child nodes.
+	 * Note that this iterates over children instead of using
+	 * recursion.  This prevents unnecessary depth in the stack.
+	 */
+	if (do_sub)
+		for (sub = n->child; sub; sub = sub->next)
+			print_node(meta, sub);
+
+	/*
+	 * Lastly, conditionally run the post-node handler.
+	 */
+	if (MDOC_ENDED & n->flags)
+		return;
+
+	if (cond && act->post)
+		(*act->post)(meta, n);
+
+	if (ENDBODY_NOT != n->end)
+		n->body->flags |= MDOC_ENDED;
+
+	if (ENDBODY_NOSPACE == n->end)
+		outflags &= ~(MMAN_spc | MMAN_nl);
+}
+
+static int
+cond_head(DECL_ARGS)
+{
+
+	return n->type == ROFFT_HEAD;
+}
+
+static int
+cond_body(DECL_ARGS)
+{
+
+	return n->type == ROFFT_BODY;
+}
+
+static int
+pre_enc(DECL_ARGS)
+{
+	const char	*prefix;
+
+	prefix = manacts[n->tok].prefix;
+	if (NULL == prefix)
+		return 1;
+	print_word(prefix);
+	outflags &= ~MMAN_spc;
+	return 1;
+}
+
+static void
+post_enc(DECL_ARGS)
+{
+	const char *suffix;
+
+	suffix = manacts[n->tok].suffix;
+	if (NULL == suffix)
+		return;
+	outflags &= ~(MMAN_spc | MMAN_nl);
+	print_word(suffix);
+}
+
+static int
+pre_ex(DECL_ARGS)
+{
+	int	 nchild;
+
+	outflags |= MMAN_br | MMAN_nl;
+
+	print_word("The");
+
+	nchild = n->nchild;
+	for (n = n->child; n; n = n->next) {
+		font_push('B');
+		print_word(n->string);
+		font_pop();
+
+		if (n->next == NULL)
+			continue;
+
+		if (nchild > 2) {
+			outflags &= ~MMAN_spc;
+			print_word(",");
+		}
+		if (n->next->next == NULL)
+			print_word("and");
+	}
+
+	if (nchild > 1)
+		print_word("utilities exit\\~0");
+	else
+		print_word("utility exits\\~0");
+
+	print_word("on success, and\\~>0 if an error occurs.");
+	outflags |= MMAN_nl;
+	return 0;
+}
+
+static void
+post_font(DECL_ARGS)
+{
+
+	font_pop();
+}
+
+static void
+post_percent(DECL_ARGS)
+{
+
+	if (pre_em == manacts[n->tok].pre)
+		font_pop();
+	if (n->next) {
+		print_word(",");
+		if (n->prev &&	n->prev->tok == n->tok &&
+				n->next->tok == n->tok)
+			print_word("and");
+	} else {
+		print_word(".");
+		outflags |= MMAN_nl;
+	}
+}
+
+static int
+pre__t(DECL_ARGS)
+{
+
+	if (n->parent && MDOC_Rs == n->parent->tok &&
+	    n->parent->norm->Rs.quote_T) {
+		print_word("");
+		putchar('\"');
+		outflags &= ~MMAN_spc;
+	} else
+		font_push('I');
+	return 1;
+}
+
+static void
+post__t(DECL_ARGS)
+{
+
+	if (n->parent && MDOC_Rs == n->parent->tok &&
+	    n->parent->norm->Rs.quote_T) {
+		outflags &= ~MMAN_spc;
+		print_word("");
+		putchar('\"');
+	} else
+		font_pop();
+	post_percent(meta, n);
+}
+
+/*
+ * Print before a section header.
+ */
+static int
+pre_sect(DECL_ARGS)
+{
+
+	if (n->type == ROFFT_HEAD) {
+		outflags |= MMAN_sp;
+		print_block(manacts[n->tok].prefix, 0);
+		print_word("");
+		putchar('\"');
+		outflags &= ~MMAN_spc;
+	}
+	return 1;
+}
+
+/*
+ * Print subsequent a section header.
+ */
+static void
+post_sect(DECL_ARGS)
+{
+
+	if (n->type != ROFFT_HEAD)
+		return;
+	outflags &= ~MMAN_spc;
+	print_word("");
+	putchar('\"');
+	outflags |= MMAN_nl;
+	if (MDOC_Sh == n->tok && SEC_AUTHORS == n->sec)
+		outflags &= ~(MMAN_An_split | MMAN_An_nosplit);
+}
+
+/* See mdoc_term.c, synopsis_pre() for comments. */
+static void
+pre_syn(const struct roff_node *n)
+{
+
+	if (NULL == n->prev || ! (MDOC_SYNPRETTY & n->flags))
+		return;
+
+	if (n->prev->tok == n->tok &&
+	    MDOC_Ft != n->tok &&
+	    MDOC_Fo != n->tok &&
+	    MDOC_Fn != n->tok) {
+		outflags |= MMAN_br;
+		return;
+	}
+
+	switch (n->prev->tok) {
+	case MDOC_Fd:
+	case MDOC_Fn:
+	case MDOC_Fo:
+	case MDOC_In:
+	case MDOC_Vt:
+		outflags |= MMAN_sp;
+		break;
+	case MDOC_Ft:
+		if (MDOC_Fn != n->tok && MDOC_Fo != n->tok) {
+			outflags |= MMAN_sp;
+			break;
+		}
+		/* FALLTHROUGH */
+	default:
+		outflags |= MMAN_br;
+		break;
+	}
+}
+
+static int
+pre_an(DECL_ARGS)
+{
+
+	switch (n->norm->An.auth) {
+	case AUTH_split:
+		outflags &= ~MMAN_An_nosplit;
+		outflags |= MMAN_An_split;
+		return 0;
+	case AUTH_nosplit:
+		outflags &= ~MMAN_An_split;
+		outflags |= MMAN_An_nosplit;
+		return 0;
+	default:
+		if (MMAN_An_split & outflags)
+			outflags |= MMAN_br;
+		else if (SEC_AUTHORS == n->sec &&
+		    ! (MMAN_An_nosplit & outflags))
+			outflags |= MMAN_An_split;
+		return 1;
+	}
+}
+
+static int
+pre_ap(DECL_ARGS)
+{
+
+	outflags &= ~MMAN_spc;
+	print_word("'");
+	outflags &= ~MMAN_spc;
+	return 0;
+}
+
+static int
+pre_aq(DECL_ARGS)
+{
+
+	print_word(n->nchild == 1 &&
+	    n->child->tok == MDOC_Mt ?  "<" : "\\(la");
+	outflags &= ~MMAN_spc;
+	return 1;
+}
+
+static void
+post_aq(DECL_ARGS)
+{
+
+	outflags &= ~(MMAN_spc | MMAN_nl);
+	print_word(n->nchild == 1 &&
+	    n->child->tok == MDOC_Mt ?  ">" : "\\(ra");
+}
+
+static int
+pre_bd(DECL_ARGS)
+{
+
+	outflags &= ~(MMAN_PP | MMAN_sp | MMAN_br);
+
+	if (DISP_unfilled == n->norm->Bd.type ||
+	    DISP_literal  == n->norm->Bd.type)
+		print_line(".nf", 0);
+	if (0 == n->norm->Bd.comp && NULL != n->parent->prev)
+		outflags |= MMAN_sp;
+	print_offs(n->norm->Bd.offs, 1);
+	return 1;
+}
+
+static void
+post_bd(DECL_ARGS)
+{
+
+	/* Close out this display. */
+	print_line(".RE", MMAN_nl);
+	if (DISP_unfilled == n->norm->Bd.type ||
+	    DISP_literal  == n->norm->Bd.type)
+		print_line(".fi", MMAN_nl);
+
+	/* Maybe we are inside an enclosing list? */
+	if (NULL != n->parent->next)
+		mid_it();
+}
+
+static int
+pre_bf(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		return 1;
+	case ROFFT_BODY:
+		break;
+	default:
+		return 0;
+	}
+	switch (n->norm->Bf.font) {
+	case FONT_Em:
+		font_push('I');
+		break;
+	case FONT_Sy:
+		font_push('B');
+		break;
+	default:
+		font_push('R');
+		break;
+	}
+	return 1;
+}
+
+static void
+post_bf(DECL_ARGS)
+{
+
+	if (n->type == ROFFT_BODY)
+		font_pop();
+}
+
+static int
+pre_bk(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		return 1;
+	case ROFFT_BODY:
+		outflags |= MMAN_Bk;
+		return 1;
+	default:
+		return 0;
+	}
+}
+
+static void
+post_bk(DECL_ARGS)
+{
+
+	if (n->type == ROFFT_BODY)
+		outflags &= ~MMAN_Bk;
+}
+
+static int
+pre_bl(DECL_ARGS)
+{
+	size_t		 icol;
+
+	/*
+	 * print_offs() will increase the -offset to account for
+	 * a possible enclosing .It, but any enclosed .It blocks
+	 * just nest and do not add up their indentation.
+	 */
+	if (n->norm->Bl.offs) {
+		print_offs(n->norm->Bl.offs, 0);
+		Bl_stack[Bl_stack_len++] = 0;
+	}
+
+	switch (n->norm->Bl.type) {
+	case LIST_enum:
+		n->norm->Bl.count = 0;
+		return 1;
+	case LIST_column:
+		break;
+	default:
+		return 1;
+	}
+
+	if (n->nchild) {
+		print_line(".TS", MMAN_nl);
+		for (icol = 0; icol < n->norm->Bl.ncols; icol++)
+			print_word("l");
+		print_word(".");
+	}
+	outflags |= MMAN_nl;
+	return 1;
+}
+
+static void
+post_bl(DECL_ARGS)
+{
+
+	switch (n->norm->Bl.type) {
+	case LIST_column:
+		if (n->nchild)
+			print_line(".TE", 0);
+		break;
+	case LIST_enum:
+		n->norm->Bl.count = 0;
+		break;
+	default:
+		break;
+	}
+
+	if (n->norm->Bl.offs) {
+		print_line(".RE", MMAN_nl);
+		assert(Bl_stack_len);
+		Bl_stack_len--;
+		assert(0 == Bl_stack[Bl_stack_len]);
+	} else {
+		outflags |= MMAN_PP | MMAN_nl;
+		outflags &= ~(MMAN_sp | MMAN_br);
+	}
+
+	/* Maybe we are inside an enclosing list? */
+	if (NULL != n->parent->next)
+		mid_it();
+
+}
+
+static int
+pre_br(DECL_ARGS)
+{
+
+	outflags |= MMAN_br;
+	return 0;
+}
+
+static int
+pre_bx(DECL_ARGS)
+{
+
+	n = n->child;
+	if (n) {
+		print_word(n->string);
+		outflags &= ~MMAN_spc;
+		n = n->next;
+	}
+	print_word("BSD");
+	if (NULL == n)
+		return 0;
+	outflags &= ~MMAN_spc;
+	print_word("-");
+	outflags &= ~MMAN_spc;
+	print_word(n->string);
+	return 0;
+}
+
+static int
+pre_dl(DECL_ARGS)
+{
+
+	print_offs("6n", 0);
+	return 1;
+}
+
+static void
+post_dl(DECL_ARGS)
+{
+
+	print_line(".RE", MMAN_nl);
+
+	/* Maybe we are inside an enclosing list? */
+	if (NULL != n->parent->next)
+		mid_it();
+}
+
+static int
+pre_em(DECL_ARGS)
+{
+
+	font_push('I');
+	return 1;
+}
+
+static int
+pre_en(DECL_ARGS)
+{
+
+	if (NULL == n->norm->Es ||
+	    NULL == n->norm->Es->child)
+		return 1;
+
+	print_word(n->norm->Es->child->string);
+	outflags &= ~MMAN_spc;
+	return 1;
+}
+
+static void
+post_en(DECL_ARGS)
+{
+
+	if (NULL == n->norm->Es ||
+	    NULL == n->norm->Es->child ||
+	    NULL == n->norm->Es->child->next)
+		return;
+
+	outflags &= ~MMAN_spc;
+	print_word(n->norm->Es->child->next->string);
+	return;
+}
+
+static int
+pre_eo(DECL_ARGS)
+{
+
+	if (n->end == ENDBODY_NOT &&
+	    n->parent->head->child == NULL &&
+	    n->child != NULL &&
+	    n->child->end != ENDBODY_NOT)
+		print_word("\\&");
+	else if (n->end != ENDBODY_NOT ? n->child != NULL :
+	    n->parent->head->child != NULL && (n->child != NULL ||
+	    (n->parent->tail != NULL && n->parent->tail->child != NULL)))
+		outflags &= ~(MMAN_spc | MMAN_nl);
+	return 1;
+}
+
+static void
+post_eo(DECL_ARGS)
+{
+	int	 body, tail;
+
+	if (n->end != ENDBODY_NOT) {
+		outflags |= MMAN_spc;
+		return;
+	}
+
+	body = n->child != NULL || n->parent->head->child != NULL;
+	tail = n->parent->tail != NULL && n->parent->tail->child != NULL;
+
+	if (body && tail)
+		outflags &= ~MMAN_spc;
+	else if ( ! (body || tail))
+		print_word("\\&");
+	else if ( ! tail)
+		outflags |= MMAN_spc;
+}
+
+static int
+pre_fa(DECL_ARGS)
+{
+	int	 am_Fa;
+
+	am_Fa = MDOC_Fa == n->tok;
+
+	if (am_Fa)
+		n = n->child;
+
+	while (NULL != n) {
+		font_push('I');
+		if (am_Fa || MDOC_SYNPRETTY & n->flags)
+			outflags |= MMAN_nbrword;
+		print_node(meta, n);
+		font_pop();
+		if (NULL != (n = n->next))
+			print_word(",");
+	}
+	return 0;
+}
+
+static void
+post_fa(DECL_ARGS)
+{
+
+	if (NULL != n->next && MDOC_Fa == n->next->tok)
+		print_word(",");
+}
+
+static int
+pre_fd(DECL_ARGS)
+{
+
+	pre_syn(n);
+	font_push('B');
+	return 1;
+}
+
+static void
+post_fd(DECL_ARGS)
+{
+
+	font_pop();
+	outflags |= MMAN_br;
+}
+
+static int
+pre_fl(DECL_ARGS)
+{
+
+	font_push('B');
+	print_word("\\-");
+	if (n->nchild)
+		outflags &= ~MMAN_spc;
+	return 1;
+}
+
+static void
+post_fl(DECL_ARGS)
+{
+
+	font_pop();
+	if ( ! (n->nchild ||
+	    n->next == NULL ||
+	    n->next->type == ROFFT_TEXT ||
+	    n->next->flags & MDOC_LINE))
+		outflags &= ~MMAN_spc;
+}
+
+static int
+pre_fn(DECL_ARGS)
+{
+
+	pre_syn(n);
+
+	n = n->child;
+	if (NULL == n)
+		return 0;
+
+	if (MDOC_SYNPRETTY & n->flags)
+		print_block(".HP 4n", MMAN_nl);
+
+	font_push('B');
+	print_node(meta, n);
+	font_pop();
+	outflags &= ~MMAN_spc;
+	print_word("(");
+	outflags &= ~MMAN_spc;
+
+	n = n->next;
+	if (NULL != n)
+		pre_fa(meta, n);
+	return 0;
+}
+
+static void
+post_fn(DECL_ARGS)
+{
+
+	print_word(")");
+	if (MDOC_SYNPRETTY & n->flags) {
+		print_word(";");
+		outflags |= MMAN_PP;
+	}
+}
+
+static int
+pre_fo(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		pre_syn(n);
+		break;
+	case ROFFT_HEAD:
+		if (n->child == NULL)
+			return 0;
+		if (MDOC_SYNPRETTY & n->flags)
+			print_block(".HP 4n", MMAN_nl);
+		font_push('B');
+		break;
+	case ROFFT_BODY:
+		outflags &= ~(MMAN_spc | MMAN_nl);
+		print_word("(");
+		outflags &= ~MMAN_spc;
+		break;
+	default:
+		break;
+	}
+	return 1;
+}
+
+static void
+post_fo(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		if (n->child != NULL)
+			font_pop();
+		break;
+	case ROFFT_BODY:
+		post_fn(meta, n);
+		break;
+	default:
+		break;
+	}
+}
+
+static int
+pre_ft(DECL_ARGS)
+{
+
+	pre_syn(n);
+	font_push('I');
+	return 1;
+}
+
+static int
+pre_in(DECL_ARGS)
+{
+
+	if (MDOC_SYNPRETTY & n->flags) {
+		pre_syn(n);
+		font_push('B');
+		print_word("#include <");
+		outflags &= ~MMAN_spc;
+	} else {
+		print_word("<");
+		outflags &= ~MMAN_spc;
+		font_push('I');
+	}
+	return 1;
+}
+
+static void
+post_in(DECL_ARGS)
+{
+
+	if (MDOC_SYNPRETTY & n->flags) {
+		outflags &= ~MMAN_spc;
+		print_word(">");
+		font_pop();
+		outflags |= MMAN_br;
+	} else {
+		font_pop();
+		outflags &= ~MMAN_spc;
+		print_word(">");
+	}
+}
+
+static int
+pre_it(DECL_ARGS)
+{
+	const struct roff_node *bln;
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		outflags |= MMAN_PP | MMAN_nl;
+		bln = n->parent->parent;
+		if (0 == bln->norm->Bl.comp ||
+		    (NULL == n->parent->prev &&
+		     NULL == bln->parent->prev))
+			outflags |= MMAN_sp;
+		outflags &= ~MMAN_br;
+		switch (bln->norm->Bl.type) {
+		case LIST_item:
+			return 0;
+		case LIST_inset:
+		case LIST_diag:
+		case LIST_ohang:
+			if (bln->norm->Bl.type == LIST_diag)
+				print_line(".B \"", 0);
+			else
+				print_line(".R \"", 0);
+			outflags &= ~MMAN_spc;
+			return 1;
+		case LIST_bullet:
+		case LIST_dash:
+		case LIST_hyphen:
+			print_width(&bln->norm->Bl, NULL);
+			TPremain = 0;
+			outflags |= MMAN_nl;
+			font_push('B');
+			if (LIST_bullet == bln->norm->Bl.type)
+				print_word("\\(bu");
+			else
+				print_word("-");
+			font_pop();
+			outflags |= MMAN_nl;
+			return 0;
+		case LIST_enum:
+			print_width(&bln->norm->Bl, NULL);
+			TPremain = 0;
+			outflags |= MMAN_nl;
+			print_count(&bln->norm->Bl.count);
+			outflags |= MMAN_nl;
+			return 0;
+		case LIST_hang:
+			print_width(&bln->norm->Bl, n->child);
+			TPremain = 0;
+			outflags |= MMAN_nl;
+			return 1;
+		case LIST_tag:
+			print_width(&bln->norm->Bl, n->child);
+			putchar('\n');
+			outflags &= ~MMAN_spc;
+			return 1;
+		default:
+			return 1;
+		}
+	default:
+		break;
+	}
+	return 1;
+}
+
+/*
+ * This function is called after closing out an indented block.
+ * If we are inside an enclosing list, restore its indentation.
+ */
+static void
+mid_it(void)
+{
+	char		 buf[24];
+
+	/* Nothing to do outside a list. */
+	if (0 == Bl_stack_len || 0 == Bl_stack[Bl_stack_len - 1])
+		return;
+
+	/* The indentation has already been set up. */
+	if (Bl_stack_post[Bl_stack_len - 1])
+		return;
+
+	/* Restore the indentation of the enclosing list. */
+	print_line(".RS", MMAN_Bk_susp);
+	(void)snprintf(buf, sizeof(buf), "%dn",
+	    Bl_stack[Bl_stack_len - 1]);
+	print_word(buf);
+
+	/* Remeber to close out this .RS block later. */
+	Bl_stack_post[Bl_stack_len - 1] = 1;
+}
+
+static void
+post_it(DECL_ARGS)
+{
+	const struct roff_node *bln;
+
+	bln = n->parent->parent;
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		switch (bln->norm->Bl.type) {
+		case LIST_diag:
+			outflags &= ~MMAN_spc;
+			print_word("\\ ");
+			break;
+		case LIST_ohang:
+			outflags |= MMAN_br;
+			break;
+		default:
+			break;
+		}
+		break;
+	case ROFFT_BODY:
+		switch (bln->norm->Bl.type) {
+		case LIST_bullet:
+		case LIST_dash:
+		case LIST_hyphen:
+		case LIST_enum:
+		case LIST_hang:
+		case LIST_tag:
+			assert(Bl_stack_len);
+			Bl_stack[--Bl_stack_len] = 0;
+
+			/*
+			 * Our indentation had to be restored
+			 * after a child display or child list.
+			 * Close out that indentation block now.
+			 */
+			if (Bl_stack_post[Bl_stack_len]) {
+				print_line(".RE", MMAN_nl);
+				Bl_stack_post[Bl_stack_len] = 0;
+			}
+			break;
+		case LIST_column:
+			if (NULL != n->next) {
+				putchar('\t');
+				outflags &= ~MMAN_spc;
+			}
+			break;
+		default:
+			break;
+		}
+		break;
+	default:
+		break;
+	}
+}
+
+static void
+post_lb(DECL_ARGS)
+{
+
+	if (SEC_LIBRARY == n->sec)
+		outflags |= MMAN_br;
+}
+
+static int
+pre_lk(DECL_ARGS)
+{
+	const struct roff_node *link, *descr;
+
+	if (NULL == (link = n->child))
+		return 0;
+
+	if (NULL != (descr = link->next)) {
+		font_push('I');
+		while (NULL != descr) {
+			print_word(descr->string);
+			descr = descr->next;
+		}
+		print_word(":");
+		font_pop();
+	}
+
+	font_push('B');
+	print_word(link->string);
+	font_pop();
+	return 0;
+}
+
+static int
+pre_ll(DECL_ARGS)
+{
+
+	print_line(".ll", 0);
+	return 1;
+}
+
+static int
+pre_li(DECL_ARGS)
+{
+
+	font_push('R');
+	return 1;
+}
+
+static int
+pre_nm(DECL_ARGS)
+{
+	char	*name;
+
+	if (n->type == ROFFT_BLOCK) {
+		outflags |= MMAN_Bk;
+		pre_syn(n);
+	}
+	if (n->type != ROFFT_ELEM && n->type != ROFFT_HEAD)
+		return 1;
+	name = n->child ? n->child->string : meta->name;
+	if (NULL == name)
+		return 0;
+	if (n->type == ROFFT_HEAD) {
+		if (NULL == n->parent->prev)
+			outflags |= MMAN_sp;
+		print_block(".HP", 0);
+		printf(" %zun", strlen(name) + 1);
+		outflags |= MMAN_nl;
+	}
+	font_push('B');
+	if (NULL == n->child)
+		print_word(meta->name);
+	return 1;
+}
+
+static void
+post_nm(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		outflags &= ~MMAN_Bk;
+		break;
+	case ROFFT_HEAD:
+	case ROFFT_ELEM:
+		if (n->child != NULL || meta->name != NULL)
+			font_pop();
+		break;
+	default:
+		break;
+	}
+}
+
+static int
+pre_no(DECL_ARGS)
+{
+
+	outflags |= MMAN_spc_force;
+	return 1;
+}
+
+static int
+pre_ns(DECL_ARGS)
+{
+
+	outflags &= ~MMAN_spc;
+	return 0;
+}
+
+static void
+post_pf(DECL_ARGS)
+{
+
+	if ( ! (n->next == NULL || n->next->flags & MDOC_LINE))
+		outflags &= ~MMAN_spc;
+}
+
+static int
+pre_pp(DECL_ARGS)
+{
+
+	if (MDOC_It != n->parent->tok)
+		outflags |= MMAN_PP;
+	outflags |= MMAN_sp | MMAN_nl;
+	outflags &= ~MMAN_br;
+	return 0;
+}
+
+static int
+pre_rs(DECL_ARGS)
+{
+
+	if (SEC_SEE_ALSO == n->sec) {
+		outflags |= MMAN_PP | MMAN_sp | MMAN_nl;
+		outflags &= ~MMAN_br;
+	}
+	return 1;
+}
+
+static int
+pre_rv(DECL_ARGS)
+{
+	int	 nchild;
+
+	outflags |= MMAN_br | MMAN_nl;
+
+	nchild = n->nchild;
+	if (nchild > 0) {
+		print_word("The");
+
+		for (n = n->child; n; n = n->next) {
+			font_push('B');
+			print_word(n->string);
+			font_pop();
+
+			outflags &= ~MMAN_spc;
+			print_word("()");
+
+			if (n->next == NULL)
+				continue;
+
+			if (nchild > 2) {
+				outflags &= ~MMAN_spc;
+				print_word(",");
+			}
+			if (n->next->next == NULL)
+				print_word("and");
+		}
+
+		if (nchild > 1)
+			print_word("functions return");
+		else
+			print_word("function returns");
+
+		print_word("the value\\~0 if successful;");
+	} else
+		print_word("Upon successful completion, "
+		    "the value\\~0 is returned;");
+
+	print_word("otherwise the value\\~\\-1 is returned"
+	    " and the global variable");
+
+	font_push('I');
+	print_word("errno");
+	font_pop();
+
+	print_word("is set to indicate the error.");
+	outflags |= MMAN_nl;
+	return 0;
+}
+
+static int
+pre_skip(DECL_ARGS)
+{
+
+	return 0;
+}
+
+static int
+pre_sm(DECL_ARGS)
+{
+
+	if (NULL == n->child)
+		outflags ^= MMAN_Sm;
+	else if (0 == strcmp("on", n->child->string))
+		outflags |= MMAN_Sm;
+	else
+		outflags &= ~MMAN_Sm;
+
+	if (MMAN_Sm & outflags)
+		outflags |= MMAN_spc;
+
+	return 0;
+}
+
+static int
+pre_sp(DECL_ARGS)
+{
+
+	if (MMAN_PP & outflags) {
+		outflags &= ~MMAN_PP;
+		print_line(".PP", 0);
+	} else
+		print_line(".sp", 0);
+	return 1;
+}
+
+static void
+post_sp(DECL_ARGS)
+{
+
+	outflags |= MMAN_nl;
+}
+
+static int
+pre_sy(DECL_ARGS)
+{
+
+	font_push('B');
+	return 1;
+}
+
+static int
+pre_vt(DECL_ARGS)
+{
+
+	if (MDOC_SYNPRETTY & n->flags) {
+		switch (n->type) {
+		case ROFFT_BLOCK:
+			pre_syn(n);
+			return 1;
+		case ROFFT_BODY:
+			break;
+		default:
+			return 0;
+		}
+	}
+	font_push('I');
+	return 1;
+}
+
+static void
+post_vt(DECL_ARGS)
+{
+
+	if (n->flags & MDOC_SYNPRETTY && n->type != ROFFT_BODY)
+		return;
+	font_pop();
+}
+
+static int
+pre_xr(DECL_ARGS)
+{
+
+	n = n->child;
+	if (NULL == n)
+		return 0;
+	print_node(meta, n);
+	n = n->next;
+	if (NULL == n)
+		return 0;
+	outflags &= ~MMAN_spc;
+	print_word("(");
+	print_node(meta, n);
+	print_word(")");
+	return 0;
+}
+
+static int
+pre_ux(DECL_ARGS)
+{
+
+	print_word(manacts[n->tok].prefix);
+	if (NULL == n->child)
+		return 0;
+	outflags &= ~MMAN_spc;
+	print_word("\\ ");
+	outflags &= ~MMAN_spc;
+	return 1;
+}
+@
+
+
+1.94
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.93 2015/04/18 17:53:21 schwarze Exp $ */
+a820 1
+		/* FALLTHROUGH */
+a821 1
+		/* FALLTHROUGH */
+a822 1
+		/* FALLTHROUGH */
+a823 1
+		/* FALLTHROUGH */
+a1373 1
+			/* FALLTHROUGH */
+a1374 1
+			/* FALLTHROUGH */
+a1382 1
+			/* FALLTHROUGH */
+a1383 1
+			/* FALLTHROUGH */
+a1472 1
+			/* FALLTHROUGH */
+a1473 1
+			/* FALLTHROUGH */
+a1474 1
+			/* FALLTHROUGH */
+a1475 1
+			/* FALLTHROUGH */
+a1476 1
+			/* FALLTHROUGH */
+a1589 1
+		/* FALLTHROUGH */
+@
+
+
+1.93
+log
+@Delete the wrapper functions mdoc_meta(), man_meta(), mdoc_node(),
+man_node() from the mandoc(3) semi-public interface and the internal
+wrapper functions print_mdoc() and print_man() from the HTML formatters.
+Minus 60 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.92 2015/04/18 16:06:40 schwarze Exp $ */
+d646 1
+a646 1
+	return(n->type == ROFFT_HEAD);
+d653 1
+a653 1
+	return(n->type == ROFFT_BODY);
+d663 1
+a663 1
+		return(1);
+d666 1
+a666 1
+	return(1);
+d714 1
+a714 1
+	return(0);
+d752 1
+a752 1
+	return(1);
+d783 1
+a783 1
+	return(1);
+d851 1
+a851 1
+		return(0);
+d855 1
+a855 1
+		return(0);
+d862 1
+a862 1
+		return(1);
+d873 1
+a873 1
+	return(0);
+d883 1
+a883 1
+	return(1);
+d907 1
+a907 1
+	return(1);
+d931 1
+a931 1
+		return(1);
+d935 1
+a935 1
+		return(0);
+d948 1
+a948 1
+	return(1);
+d965 1
+a965 1
+		return(1);
+d968 1
+a968 1
+		return(1);
+d970 1
+a970 1
+		return(0);
+d1000 1
+a1000 1
+		return(1);
+d1004 1
+a1004 1
+		return(1);
+d1014 1
+a1014 1
+	return(1);
+d1054 1
+a1054 1
+	return(0);
+d1069 1
+a1069 1
+		return(0);
+d1074 1
+a1074 1
+	return(0);
+d1082 1
+a1082 1
+	return(1);
+d1101 1
+a1101 1
+	return(1);
+d1110 1
+a1110 1
+		return(1);
+d1114 1
+a1114 1
+	return(1);
+d1144 1
+a1144 1
+	return(1);
+d1187 1
+a1187 1
+	return(0);
+d1204 1
+a1204 1
+	return(1);
+d1223 1
+a1223 1
+	return(1);
+d1246 1
+a1246 1
+		return(0);
+d1261 1
+a1261 1
+	return(0);
+d1285 1
+a1285 1
+			return(0);
+d1298 1
+a1298 1
+	return(1);
+d1324 1
+a1324 1
+	return(1);
+d1341 1
+a1341 1
+	return(1);
+d1376 1
+a1376 1
+			return(0);
+d1387 1
+a1387 1
+			return(1);
+d1403 1
+a1403 1
+			return(0);
+d1410 1
+a1410 1
+			return(0);
+d1415 1
+a1415 1
+			return(1);
+d1420 1
+a1420 1
+			return(1);
+d1422 1
+a1422 1
+			return(1);
+d1427 1
+a1427 1
+	return(1);
+d1533 1
+a1533 1
+		return(0);
+d1548 1
+a1548 1
+	return(0);
+d1556 1
+a1556 1
+	return(1);
+d1564 1
+a1564 1
+	return(1);
+d1577 1
+a1577 1
+		return(1);
+d1580 1
+a1580 1
+		return(0);
+d1591 1
+a1591 1
+	return(1);
+d1618 1
+a1618 1
+	return(1);
+d1626 1
+a1626 1
+	return(0);
+d1645 1
+a1645 1
+	return(0);
+d1656 1
+a1656 1
+	return(1);
+d1708 1
+a1708 1
+	return(0);
+d1715 1
+a1715 1
+	return(0);
+d1732 1
+a1732 1
+	return(0);
+d1744 1
+a1744 1
+	return(1);
+d1759 1
+a1759 1
+	return(1);
+d1770 1
+a1770 1
+			return(1);
+d1774 1
+a1774 1
+			return(0);
+d1778 1
+a1778 1
+	return(1);
+d1796 1
+a1796 1
+		return(0);
+d1800 1
+a1800 1
+		return(0);
+d1805 1
+a1805 1
+	return(0);
+d1814 1
+a1814 1
+		return(0);
+d1818 1
+a1818 1
+	return(1);
+@
+
+
+1.92
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.91 2015/04/02 23:48:20 schwarze Exp $ */
+a549 1
+	const struct roff_meta *meta;
+a551 3
+	meta = mdoc_meta(mdoc);
+	n = mdoc_node(mdoc)->child;
+
+d553 3
+a555 3
+	    meta->title,
+	    (meta->msec == NULL ? "" : meta->msec),
+	    meta->date, meta->os, meta->vol);
+d566 2
+a567 4
+	while (n != NULL) {
+		print_node(meta, n);
+		n = n->next;
+	}
+@
+
+
+1.91
+log
+@Third step towards parser unification:
+Replace struct mdoc_meta and struct man_meta by a unified struct roff_meta.
+Written of the train from London to Exeter on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.90 2015/04/02 22:48:17 schwarze Exp $ */
+d535 1
+a535 1
+man_man(void *arg, const struct man *man)
+d548 1
+a548 1
+man_mdoc(void *arg, const struct mdoc *mdoc)
+@
+
+
+1.90
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.89 2015/04/02 21:36:50 schwarze Exp $ */
+d33 1
+a33 1
+#define	DECL_ARGS const struct mdoc_meta *meta, struct roff_node *n
+d550 1
+a550 1
+	const struct mdoc_meta *meta;
+@
+
+
+1.89
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.88 2015/02/17 20:37:17 schwarze Exp $ */
+d33 1
+a33 1
+#define	DECL_ARGS const struct mdoc_meta *meta, struct mdoc_node *n
+d111 1
+a111 1
+static	void	  pre_syn(const struct mdoc_node *);
+d120 1
+a120 1
+			const struct mdoc_node *);
+d471 1
+a471 1
+print_width(const struct mdoc_bl *bl, const struct mdoc_node *child)
+d551 1
+a551 1
+	struct mdoc_node *n;
+d581 1
+a581 1
+	struct mdoc_node	*sub;
+d811 1
+a811 1
+pre_syn(const struct mdoc_node *n)
+d1369 1
+a1369 1
+	const struct mdoc_node *bln;
+d1466 1
+a1466 1
+	const struct mdoc_node *bln;
+d1536 1
+a1536 1
+	const struct mdoc_node *link, *descr;
+@
+
+
+1.88
+log
+@Render \(lq and \(rq as '"' in -Tascii mode but leave the rendering
+of .Do/.Dc, .Dq, .Lb, and .St untouched.
+Reduces groff-mandoc differences in OpenBSD base by about 7%.
+Reminded of the issue by naddy@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.87 2015/02/12 12:24:33 schwarze Exp $ */
+d25 1
+d27 3
+a29 1
+#include "mandoc_aux.h"
+a30 2
+#include "man.h"
+#include "mdoc.h"
+d496 1
+a496 1
+	else if (child != NULL && child->type == MDOC_TEXT)
+d596 1
+a596 1
+	if (MDOC_TEXT == n->type) {
+d652 1
+a652 1
+	return(MDOC_HEAD == n->type);
+d659 1
+a659 1
+	return(MDOC_BODY == n->type);
+d782 1
+a782 1
+	if (MDOC_HEAD == n->type) {
+d799 1
+a799 1
+	if (MDOC_HEAD != n->type)
+d936 1
+a936 1
+	case MDOC_BLOCK:
+d938 1
+a938 1
+	case MDOC_BODY:
+d961 1
+a961 1
+	if (MDOC_BODY == n->type)
+d970 1
+a970 1
+	case MDOC_BLOCK:
+d972 1
+a972 1
+	case MDOC_BODY:
+d984 1
+a984 1
+	if (MDOC_BODY == n->type)
+d1239 1
+a1239 1
+	    n->next->type == MDOC_TEXT ||
+d1286 1
+a1286 1
+	case MDOC_BLOCK:
+d1289 1
+a1289 1
+	case MDOC_HEAD:
+d1296 1
+a1296 1
+	case MDOC_BODY:
+d1312 1
+a1312 1
+	case MDOC_HEAD:
+d1316 1
+a1316 1
+	case MDOC_BODY:
+d1372 1
+a1372 1
+	case MDOC_HEAD:
+d1471 1
+a1471 1
+	case MDOC_HEAD:
+d1484 1
+a1484 1
+	case MDOC_BODY:
+d1578 1
+a1578 1
+	if (MDOC_BLOCK == n->type) {
+d1582 1
+a1582 1
+	if (MDOC_ELEM != n->type && MDOC_HEAD != n->type)
+d1587 1
+a1587 1
+	if (MDOC_HEAD == n->type) {
+d1605 1
+a1605 1
+	case MDOC_BLOCK:
+d1608 1
+a1608 1
+	case MDOC_HEAD:
+d1610 1
+a1610 1
+	case MDOC_ELEM:
+d1774 1
+a1774 1
+		case MDOC_BLOCK:
+d1777 1
+a1777 1
+		case MDOC_BODY:
+d1791 1
+a1791 1
+	if (MDOC_SYNPRETTY & n->flags && MDOC_BODY != n->type)
+@
+
+
+1.87
+log
+@Delete the mdoc_node.pending pointer and the function calculating
+it, make_pending(), which was the most difficult function of the
+whole mdoc(7) parser.  After almost five years of maintaining this
+hellhole, i just noticed the pointer isn't needed after all.
+
+Blocks are always rewound in the reverse order they were opened;
+that even holds for broken blocks.  Consequently, it is sufficient
+to just mark broken blogs with the flag MDOC_BROKEN and breaking
+blocks with the flag MDOC_ENDED.  When rewinding, instead of iterating
+the pending pointers, just iterate from each broken block to its
+parents, rewinding all that are MDOC_ENDED and stopping after
+processing the first ancestor that it not MDOC_BROKEN.  For ENDBODY
+markers, use the mdoc_node.body pointer in place of the former
+mdoc_node.pending.
+
+This also fixes an assertion failure found by jsg@@ with afl,
+test case #467 (Bo Bl It Bd Bc It), where (surprise surprise)
+the pending pointer got corrupted.
+
+Improved functionality, minus one function, minus one struct field,
+minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.86 2015/02/11 14:15:12 schwarze Exp $ */
+d188 2
+a189 2
+	{ cond_body, pre_enc, post_enc, "\\(lq", "\\(rq" }, /* Do */
+	{ cond_body, pre_enc, post_enc, "\\(lq", "\\(rq" }, /* Dq */
+@
+
+
+1.86
+log
+@do not access a NULL pointer if an .Eo block lacks a tail;
+found by jsg@@ with afl, test case #16
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.85 2015/02/06 03:38:45 schwarze Exp $ */
+d32 1
+a32 2
+#define	DECL_ARGS const struct mdoc_meta *meta, \
+		  const struct mdoc_node *n
+d550 1
+a550 1
+	const struct mdoc_node *n;
+d553 1
+a553 1
+	n = mdoc_node(mdoc);
+d569 4
+a572 1
+	print_node(meta, n);
+a578 1
+	const struct mdoc_node	*sub;
+d580 1
+d593 1
+d641 1
+a641 1
+		n->pending->flags |= MDOC_ENDED;
+@
+
+
+1.85
+log
+@better handle .Fo and .Fd without argument
+better handle .Fo with more than one argument
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.84 2015/02/01 23:10:35 schwarze Exp $ */
+d1143 2
+a1144 3
+	    n->parent->head->child != NULL &&
+	    (n->parent->body->child != NULL ||
+	     n->parent->tail->child != NULL))
+@
+
+
+1.84
+log
+@fix .Eo/.Ec spacing
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.83 2015/01/28 17:32:07 schwarze Exp $ */
+d1287 2
+d1294 1
+a1294 1
+		outflags &= ~MMAN_spc;
+d1310 2
+a1311 1
+		font_pop();
+@
+
+
+1.83
+log
+@* Polish tbl(7) error reporting.
+* Do not print out macro names in tbl(7) data blocks.
+* Like with GNU tbl, let empty tables cause a blank line.
+* Avoid producing empty tables in -Tman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.82 2015/01/23 14:21:01 schwarze Exp $ */
+d1137 10
+a1146 1
+	outflags &= ~(MMAN_spc | MMAN_nl);
+d1153 6
+d1160 4
+a1163 1
+	if (n->end != ENDBODY_SPACE)
+d1165 4
+@
+
+
+1.82
+log
+@Let .Aq/.Ao/.Ac print "<>" instead of the normal "\(la\(ra"
+when the only child is .Mt, not when the preceding node is .An,
+to improve robustness.  Triggered by a question from Svyatoslav
+Mishyn <juef at openmailbox dot org> (Crux Linux).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.81 2014/12/24 23:32:42 schwarze Exp $ */
+d1009 6
+a1014 4
+	print_line(".TS", MMAN_nl);
+	for (icol = 0; icol < n->norm->Bl.ncols; icol++)
+		print_word("l");
+	print_word(".");
+d1025 2
+a1026 1
+		print_line(".TE", 0);
+@
+
+
+1.81
+log
+@Support negative indentations for mdoc(7) displays and lists.
+Not exactly recommended for use, rather for groff compatibility.
+While here, introduce similar SHRT_MAX limits as in man(7),
+fixing a few cases of infinite output found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.80 2014/12/23 13:48:57 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d882 2
+a883 2
+	print_word(n->parent->prev != NULL &&
+	    n->parent->prev->tok == MDOC_An ?  "<" : "\\(la");
+d893 2
+a894 2
+	print_word(n->parent->prev != NULL &&
+	    n->parent->prev->tok == MDOC_An ?  ">" : "\\(ra");
+@
+
+
+1.80
+log
+@support negative horizontal widths in man(7);
+minus twenty lines of code in spite of enhanced functionality
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.79 2014/12/23 10:09:44 schwarze Exp $ */
+d119 2
+a120 2
+static	void	  print_width(const char *,
+				const struct mdoc_node *, size_t);
+d268 1
+a268 1
+static	size_t		Bl_stack[BL_STACK_MAX];  /* offsets [chars] */
+d426 1
+a426 1
+	size_t		  sz;
+a437 2
+		if (su.scale < 0.0)
+			su.scale = 0.0;
+d462 1
+a462 1
+	(void)snprintf(buf, sizeof(buf), "%zun", sz);
+d471 1
+a471 1
+print_width(const char *v, const struct mdoc_node *child, size_t defsz)
+d475 1
+a475 2
+	size_t		  sz, chsz;
+	int		  numeric, remain;
+d480 4
+a483 6
+	/* Convert v into a number (of characters). */
+	if (NULL == v)
+		sz = defsz;
+	else if (a2roffsu(v, &su, SCALE_MAX) > 1) {
+		if (su.scale < 0.0)
+			su.scale = 0.0;
+d491 1
+a491 1
+		sz = strlen(v);
+d494 6
+a499 2
+	chsz = (NULL != child && MDOC_TEXT == child->type) ?
+	    strlen(child->string) : 0;
+d511 1
+a511 1
+	if (defsz && chsz > sz)
+d518 1
+a518 1
+		(void)snprintf(buf, sizeof(buf), "%zun", sz + 2);
+d521 1
+a521 1
+		print_word(v);
+d530 1
+a530 1
+	(void)snprintf(buf, sizeof(buf), "%d.", ++*count);
+d1368 1
+a1368 1
+			print_width(bln->norm->Bl.width, NULL, 0);
+d1380 1
+a1380 1
+			print_width(bln->norm->Bl.width, NULL, 0);
+d1387 1
+a1387 1
+			print_width(bln->norm->Bl.width, n->child, 6);
+d1392 1
+a1392 1
+			print_width(bln->norm->Bl.width, n->child, 0);
+d1424 1
+a1424 1
+	(void)snprintf(buf, sizeof(buf), "%zun",
+@
+
+
+1.79
+log
+@fix typo in previous
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.78 2014/12/23 09:31:46 schwarze Exp $ */
+d438 2
+d487 2
+@
+
+
+1.78
+log
+@some scaling unit fixes:
+- .sp with an invalid argument is .sp 1v, not .sp 0v
+- in man(1), trailing garbage doesn't make scaling units invalid
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.77 2014/11/30 05:29:00 schwarze Exp $ */
+d437 1
+a437 1
+	else if (a2roffsu(v, &su, SCALE_EN) < 2) {
+d484 1
+a484 1
+	else if (a2roffsu(v, &su, SCALE_MAX) < 2) {
+@
+
+
+1.77
+log
+@Multiple fixes with respect to .Pf:
+* The first argument of .Pf is not parsed.
+* Normal delimiter handling does not apply to the first argument of .Pf.
+* Warn if nothing follows a prefix (inspired by groff_mdoc(7)).
+* In that case, do not suppress spacing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.76 2014/11/27 22:27:56 schwarze Exp $ */
+d437 1
+a437 1
+	else if (a2roffsu(v, &su, SCALE_MAX)) {
+d484 1
+a484 1
+	else if (a2roffsu(v, &su, SCALE_MAX)) {
+@
+
+
+1.76
+log
+@Multiple fixes with respect to .Eo:
+1. Correctly parse stray .Ec without preceding .Eo,
+avoiding an assertion violation found by jsg@@ with afl.
+2. Correctly parse .Ec arguments when breaking another block.
+3. Correct spacing around closing delimiter when breaking another block.
+4. Sync some related formatting control from -Tascii to -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.75 2014/11/27 16:20:31 schwarze Exp $ */
+d1605 2
+a1606 1
+	outflags &= ~MMAN_spc;
+@
+
+
+1.75
+log
+@Fix the obsolete .Db (toggle debug mode) macro to ignore its arguments
+and not trigger an assertion when there is more than one argument;
+the latter found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.74 2014/11/19 22:00:37 schwarze Exp $ */
+d88 1
+d194 1
+a194 1
+	{ NULL, NULL, post_eo, NULL, NULL }, /* Eo */
+d611 2
+a612 2
+		cond = NULL == act->cond || (*act->cond)(meta, n);
+		if (cond && act->pre && ENDBODY_NOT == n->end)
+d1127 8
+d1139 1
+a1139 1
+	if (MDOC_HEAD == n->type || MDOC_BODY == n->type)
+@
+
+
+1.74
+log
+@Let .Ao and .Aq render as "<>" after .An and as "\(la\(ra" elsewhere,
+just like groff; minibug noticed by bentley@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.73 2014/11/17 06:44:58 schwarze Exp $ */
+d87 1
+a87 1
+static	int	  pre_es(DECL_ARGS);
+d186 1
+a186 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* Db */
+d238 1
+a238 1
+	{ NULL, pre_es, NULL, NULL, NULL }, /* Es */
+a1134 7
+pre_es(DECL_ARGS)
+{
+
+	return(0);
+}
+
+static int
+d1674 7
+@
+
+
+1.73
+log
+@Multiple fixes with respect to in-line macros:
+* .No selects the default font; relevant e.g. in .Bf blocks
+* no need to force empty .Li elements
+* closing delimiters as leading macro arguments do not suppress space
+* opening delimiters at the end of a macro line do not suppress space
+* correctly handle delimiter spacing in -Tman
+As a side effect, these fixes let mandoc warn about empty .No macros
+as requested by bentley@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.72 2014/11/06 22:28:36 schwarze Exp $ */
+d49 1
+d76 1
+d177 2
+a178 2
+	{ cond_body, pre_enc, post_enc, "<", ">" }, /* Ao */
+	{ cond_body, pre_enc, post_enc, "<", ">" }, /* Aq */
+d875 19
+@
+
+
+1.72
+log
+@Let -Tascii \(bu (bullet) output agree with groff;
+this is now possible because -Tps now handles backspace overstriking.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.71 2014/10/30 20:10:02 schwarze Exp $ */
+d597 2
+d600 2
+@
+
+
+1.71
+log
+@Major bugsquashing with respect to -offset and -width:
+1. Support specifying the .Bd and .Bl -offset as a macro default width;
+while here, simplify the code handling the same for .Bl -width.
+2. Correct handling of .Bl -offset arguments:  unlike .Bd -offset, the
+arguments "left", "indent", and "indent-two" have no special meaning.
+3. Fix the scaling of string length -offset and -width arguments in -Thtml.
+Triggered by an incomplete documentation patch from bentley@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.70 2014/08/21 12:57:17 schwarze Exp $ */
+d1343 1
+a1343 1
+				print_word("o");
+@
+
+
+1.70
+log
+@Right after .Fl, a middle delimiter triggers an empty scope,
+just like a closing delimiter.  This didn't work in groff-1.15,
+but it now works in groff-1.22.
+
+After being closed by delimiters, .Nm scopes do not reopen.
+
+Do not suppress white space after .Fl if the next node is a text node
+on the same input line; that can happen for middle delimiters.
+
+Fixing an issue reported by jmc@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.69 2014/08/10 23:54:41 schwarze Exp $ */
+d115 1
+a115 1
+static	void	  print_offs(const char *);
+d419 1
+a419 1
+print_offs(const char *v)
+d428 1
+a428 1
+	if (NULL == v || '\0' == *v || 0 == strcmp(v, "left"))
+d430 1
+a430 1
+	else if (0 == strcmp(v, "indent"))
+d432 1
+a432 1
+	else if (0 == strcmp(v, "indent-two"))
+d879 1
+a879 1
+	print_offs(n->norm->Bd.offs);
+d966 1
+a966 1
+		print_offs(n->norm->Bl.offs);
+d1051 1
+a1051 1
+	print_offs("6n");
+@
+
+
+1.69
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.68 2014/08/06 15:09:05 schwarze Exp $ */
+d1169 2
+a1170 1
+	outflags &= ~MMAN_spc;
+d1179 4
+a1182 2
+	if (0 == n->nchild && NULL != n->next &&
+			n->next->line == n->line)
+@
+
+
+1.68
+log
+@Bring the handling of defective prologues even closer to groff,
+in particular relaxing the distinction between prologue and body
+and further improving messages.
+* The last .Dd wins and the last .Os wins, even in the body.
+* The last .Dt before the first body macro wins.
+* Missing title in .Dt defaults to UNTITLED.  Warn about it.
+* Missing section in .Dt does not default to 1.  But warn about it.
+* Do not warn multiple times about the same mdoc(7) prologue macro.
+* Warn about missing .Os.
+* Incomplete .TH defaults to empty strings.  Warn about it.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.67 2014/07/30 00:19:16 schwarze Exp $ */
+a16 1
+#ifdef HAVE_CONFIG_H
+d18 2
+a19 1
+#endif
+@
+
+
+1.67
+log
+@Various improvements related to .Ex and .Rv:
+* let .Nm fall back to the empty string, not to UNKNOWN
+* never let .Rv copy an argument from .Nm
+* avoid spurious \fR after empty .Nm in -Tman
+* correct handling of .Ex and .Rv in -Tman
+* correct the wording of the output for .Rv without arguments
+* use non-breaking spaces in .Ex and .Rv output where required
+* split MANDOCERR_NONAME into a warning for .Ex and an error for .Nm
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.66 2014/07/04 16:12:08 schwarze Exp $ */
+d551 3
+a553 2
+	    meta->title, meta->msec, meta->date,
+	    meta->os, meta->vol);
+@
+
+
+1.66
+log
+@Clean up messages regarding excess arguments:
+* Downgrade ".Bf -emphasis Em" from FATAL to WARNING.
+* Mention the macros, the arguments, and the fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.65 2014/07/02 19:55:10 schwarze Exp $ */
+d86 1
+d103 1
+d144 1
+a144 3
+	{ NULL, pre_enc, post_enc, "The \\fB",
+	    "\\fP\nutility exits 0 on success, and >0 if an error occurs."
+	    }, /* Ex */
+d158 1
+a158 5
+	{ NULL, pre_enc, post_enc, "The \\fB",
+		"\\fP\nfunction returns the value 0 if successful;\n"
+		"otherwise the value -1 is returned and the global\n"
+		"variable \\fIerrno\\fP is set to indicate the error."
+		}, /* Rv */
+d672 36
+d1546 2
+a1547 1
+		font_pop();
+d1600 52
+@
+
+
+1.65
+log
+@When .Sm is called without an argument, groff toggles the spacing mode,
+so let us do the same for compatibility.  Using this feature is of
+course not recommended except in manual page obfuscation contests.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.64 2014/07/02 03:48:07 schwarze Exp $ */
+d1311 2
+a1312 1
+			break;
+d1318 2
+a1319 1
+			break;
+d1323 2
+a1324 1
+			break;
+a1332 1
+		outflags |= MMAN_nl;
+@
+
+
+1.64
+log
+@Implement the obsolete macros .En .Es .Fr .Ot for backward compatibility,
+since this is hardly more complicated than explicitly ignoring them
+as we did in the past.  Of course, do not use them!
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.63 2014/04/20 19:40:13 schwarze Exp $ */
+d1568 4
+a1571 3
+	assert(n->child && MDOC_TEXT == n->child->type);
+	if (0 == strcmp("on", n->child->string))
+		outflags |= MMAN_Sm | MMAN_spc;
+d1574 4
+@
+
+
+1.63
+log
+@make sure static buffers for snprintf(3) are large enough
+and cast snprintf return value to (void) where they are
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.62 2014/04/20 16:46:05 schwarze Exp $ */
+d54 1
+d82 1
+d85 1
+d156 1
+a156 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* Ot */
+d230 1
+a230 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* Fr */
+d240 2
+a241 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* Es */
+	{ NULL, NULL, NULL, NULL, NULL }, /* En */
+d1041 27
+d1077 7
+@
+
+
+1.62
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.61 2014/03/30 23:34:32 schwarze Exp $ */
+d460 1
+a460 1
+	snprintf(buf, sizeof(buf), "%zun", sz);
+d513 1
+a513 1
+		snprintf(buf, sizeof(buf), "%zun", sz + 2);
+d523 1
+a523 1
+	char		  buf[12];
+d525 1
+a525 1
+	snprintf(buf, sizeof(buf), "%d.", ++*count);
+d1319 2
+a1320 1
+	snprintf(buf, sizeof(buf), "%zun", Bl_stack[Bl_stack_len - 1]);
+@
+
+
+1.61
+log
+@Improve formatting of broken blocks in -Tman,
+somewhat similar to what mdoc_term.c already does for -Tascii.
+OpenBSD rev. 1.58.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.60 2014/03/30 19:47:48 schwarze Exp $ */
+d277 1
+d285 1
+a285 1
+				fontqueue.size);
+d311 1
+a311 1
+		/* 
+d366 1
+a366 1
+		case (ASCII_NBRSP):
+d369 1
+a369 1
+		case (ASCII_HYPH):
+d372 1
+a372 1
+		case (ASCII_BREAK):
+d375 1
+a375 1
+		case (' '):
+d494 1
+a494 1
+			strlen(child->string) : 0;
+d552 2
+a553 2
+			meta->title, meta->msec, meta->date,
+			meta->os, meta->vol);
+d591 2
+a592 2
+		if (MMAN_nl & outflags && ('.' == *n->string || 
+					'\'' == *n->string)) {
+d609 1
+a609 1
+	/* 
+d701 2
+a702 2
+        if (n->parent && MDOC_Rs == n->parent->tok &&
+                        n->parent->norm->Rs.quote_T) {
+d715 2
+a716 2
+        if (n->parent && MDOC_Rs == n->parent->tok &&
+                        n->parent->norm->Rs.quote_T) {
+d768 3
+a770 3
+			MDOC_Ft != n->tok &&
+			MDOC_Fo != n->tok &&
+			MDOC_Fn != n->tok) {
+d776 1
+a776 1
+	case (MDOC_Fd):
+d778 1
+a778 1
+	case (MDOC_Fn):
+d780 1
+a780 1
+	case (MDOC_Fo):
+d782 1
+a782 1
+	case (MDOC_In):
+d784 1
+a784 1
+	case (MDOC_Vt):
+d787 1
+a787 1
+	case (MDOC_Ft):
+d804 1
+a804 1
+	case (AUTH_split):
+d808 1
+a808 1
+	case (AUTH_nosplit):
+d867 1
+a867 1
+	case (MDOC_BLOCK):
+d869 1
+a869 1
+	case (MDOC_BODY):
+d875 1
+a875 1
+	case (FONT_Em):
+d878 1
+a878 1
+	case (FONT_Sy):
+d901 1
+a901 1
+	case (MDOC_BLOCK):
+d903 1
+a903 1
+	case (MDOC_BODY):
+d935 1
+a935 1
+	case (LIST_enum):
+d938 1
+a938 1
+	case (LIST_column):
+d957 1
+a957 1
+	case (LIST_column):
+d960 1
+a960 1
+	case (LIST_enum):
+d1155 1
+a1155 1
+	case (MDOC_BLOCK):
+d1158 1
+a1158 1
+	case (MDOC_HEAD):
+d1163 1
+a1163 1
+	case (MDOC_BODY):
+d1179 1
+a1179 1
+	case (MDOC_HEAD):
+d1182 1
+a1182 1
+	case (MDOC_BODY):
+d1238 1
+a1238 1
+	case (MDOC_HEAD):
+d1247 1
+a1247 1
+		case (LIST_item):
+d1249 1
+a1249 1
+		case (LIST_inset):
+d1251 1
+a1251 1
+		case (LIST_diag):
+d1253 1
+a1253 1
+		case (LIST_ohang):
+d1260 1
+a1260 1
+		case (LIST_bullet):
+d1262 1
+a1262 1
+		case (LIST_dash):
+d1264 1
+a1264 1
+		case (LIST_hyphen):
+d1275 1
+a1275 1
+		case (LIST_enum):
+d1281 1
+a1281 1
+		case (LIST_hang):
+d1285 1
+a1285 1
+		case (LIST_tag):
+d1334 1
+a1334 1
+	case (MDOC_HEAD):
+d1336 1
+a1336 1
+		case (LIST_diag):
+d1340 1
+a1340 1
+		case (LIST_ohang):
+d1347 1
+a1347 1
+	case (MDOC_BODY):
+d1349 1
+a1349 1
+		case (LIST_bullet):
+d1351 1
+a1351 1
+		case (LIST_dash):
+d1353 1
+a1353 1
+		case (LIST_hyphen):
+d1355 1
+a1355 1
+		case (LIST_enum):
+d1357 1
+a1357 1
+		case (LIST_hang):
+d1359 1
+a1359 1
+		case (LIST_tag):
+d1373 1
+a1373 1
+		case (LIST_column):
+d1468 1
+a1468 1
+	case (MDOC_BLOCK):
+d1471 1
+a1471 1
+	case (MDOC_HEAD):
+d1473 1
+a1473 1
+	case (MDOC_ELEM):
+d1571 1
+a1571 1
+		case (MDOC_BLOCK):
+d1574 1
+a1574 1
+		case (MDOC_BODY):
+@
+
+
+1.60
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.59 2014/03/23 11:25:26 schwarze Exp $ */
+d604 1
+a604 1
+		if (cond && act->pre)
+d620 3
+d625 6
+d668 1
+a668 1
+	outflags &= ~MMAN_spc;
+@
+
+
+1.59
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.58 2014/01/22 20:58:39 schwarze Exp $ */
+d93 1
+d245 1
+d1411 8
+@
+
+
+1.58
+log
+@Implement the \: (optional line break) escape sequence,
+documented in the Ossanna-Kernighan-Ritter troff manual
+and also supported by groff.
+
+Missing feature reported by Steffen Nurpmeso <sdaoden at gmail dot com>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.57 2013/12/25 22:00:45 schwarze Exp $ */
+d26 1
+d465 1
+a465 1
+void
+d517 1
+a517 1
+void
+@
+
+
+1.57
+log
+@Implement .Fo/.Fa/.Fc indentation and break handling for -Tman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.56 2013/12/25 00:39:31 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d368 3
+@
+
+
+1.56
+log
+@Do not break output lines in .Fn function arguments in SYNOPSIS mode.
+Following an idea from Franco Fichtner, but implemented more cleanly.
+This reduces groff-mandoc-differences in OpenBSD base by a fantastic 7.5%.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.55 2013/12/24 22:08:50 schwarze Exp $ */
+d1033 1
+d1035 3
+a1037 1
+	if (MDOC_Fa == n->tok)
+d1042 1
+a1042 1
+		if (MDOC_SYNPRETTY & n->flags)
+d1143 2
+d1157 1
+a1157 1
+		
+@
+
+
+1.55
+log
+@Implement SYNOPSIS .Fn indentation for -Tman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.54 2013/12/24 20:45:27 schwarze Exp $ */
+d259 1
+d368 6
+d381 1
+d1039 2
+@
+
+
+1.54
+log
+@It turns out SYNOPSIS mode does not imply .Bk in general,
+but only within .Nm blocks.  Simplify the code accordingly.
+
+Triggered by research done by Franco Fichtner.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.53 2013/10/07 22:22:10 schwarze Exp $ */
+d1094 3
+d1117 1
+a1117 1
+		outflags |= MMAN_br;
+@
+
+
+1.53
+log
+@Printf size_t vars with %zu, not %ld;
+from Antonio Huete Jimenez <tuxillo at quantumachine dot net>
+via Franco Fichtner (both DragonFly).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.52 2013/09/15 18:48:31 schwarze Exp $ */
+d708 1
+a708 2
+	switch (n->type) {
+	case (MDOC_HEAD):
+a713 11
+		break;
+	case (MDOC_BODY):
+		if (MDOC_Sh == n->tok) {
+			if (MDOC_SYNPRETTY & n->flags)
+				outflags |= MMAN_Bk;
+			else
+				outflags &= ~MMAN_Bk;
+		}
+		break;
+	default:
+		break;
+d891 1
+a891 1
+	if (MDOC_BODY == n->type && ! (MDOC_SYNPRETTY & n->flags))
+d1399 2
+a1400 1
+	if (MDOC_BLOCK == n->type)
+d1402 1
+d1425 12
+a1436 3
+	if (MDOC_ELEM != n->type && MDOC_HEAD != n->type)
+		return;
+	font_pop();
+@
+
+
+1.52
+log
+@Use normal line macro recognition, do not attempt to roll your own.
+This fixes horizontal spacing when an Ns macro follows a block-closing
+macro and the corresponding block-opening macro is not on the same line.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.51 2013/06/02 18:16:57 schwarze Exp $ */
+d445 1
+a445 1
+	snprintf(buf, sizeof(buf), "%ldn", sz);
+d498 1
+a498 1
+		snprintf(buf, sizeof(buf), "%ldn", sz + 2);
+d1297 1
+a1297 1
+	snprintf(buf, sizeof(buf), "%ldn", Bl_stack[Bl_stack_len - 1]);
+d1422 1
+a1422 1
+		printf(" %ldn", strlen(name) + 1);
+@
+
+
+1.51
+log
+@Let .Do .Dq .Ql .So .Sq generate the correct roff(7) character escape
+sequences such that output modes like -Tutf8 have a chance to select
+nice glyphs.  This doesn't change anything for -Tascii, and, for now,
+it doesn't affect -Tps and -Tpdf either.
+OK matthew@@ bentley@@; like the idea tedu@@; no opinion jmc@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.50 2013/05/29 15:40:22 schwarze Exp $ */
+d556 1
+a556 1
+	const struct mdoc_node	*prev, *sub;
+d564 1
+a564 2
+	prev = n->prev ? n->prev : n->parent;
+	if (MMAN_spc & outflags && prev && prev->line < n->line)
+@
+
+
+1.50
+log
+@In SYNOPSIS mode, .Ek doesn't end a keep.
+Found and fixed on the plane to the OpenBSD t2k13 hackathon in Toronto.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.49 2013/05/19 21:40:24 schwarze Exp $ */
+d185 2
+a186 2
+	{ cond_body, pre_enc, post_enc, "``", "''" }, /* Do */
+	{ cond_body, pre_enc, post_enc, "``", "''" }, /* Dq */
+d202 1
+a202 1
+	{ cond_body, pre_enc, post_enc, "`", "'" }, /* Ql */
+d208 2
+a209 2
+	{ cond_body, pre_enc, post_enc, "`", "'" }, /* So */
+	{ cond_body, pre_enc, post_enc, "`", "'" }, /* Sq */
+@
+
+
+1.49
+log
+@Support .Bl -offset in -mdoc -Tman.
+Issue found when Thomas Klausner <wiz at NetBSD dot org> made me
+look at the manuals of his http://www.nih.at/libzip library.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.48 2013/05/19 21:07:51 schwarze Exp $ */
+d904 1
+a904 1
+	if (MDOC_BODY == n->type)
+@
+
+
+1.48
+log
+@Move printing of the .RS macro into print_offs() such that print_offs()
+takes care of printing the whole line.  This reduces code duplication -
+in particular after the upcoming commit to repair .Bl -offset -
+and makes print_offs() more similar to what print_width() does.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.47 2012/12/31 22:34:48 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d913 10
+d955 10
+a964 2
+	outflags |= MMAN_PP | MMAN_nl;
+	outflags &= ~(MMAN_sp | MMAN_br);
+@
+
+
+1.47
+log
+@Rewrite indentation handling for nested lists in a more systematic way
+to fix multiple issues reported by Todd Miller; thanks!
+
+Specifically,
+ - avoid double indentation after .Bd inside .Bl
+ - set up correct indentation after .Bl inside .Bl
+ - set up correct indentation after .Dl and .D1 inside .Bl
+
+While here, also
+ - set up correct indentation *inside* .Dl and .D1 inside .Bl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.46 2012/11/19 02:14:45 schwarze Exp $ */
+d411 2
+d432 1
+d447 1
+a831 1
+	print_line(".RS", MMAN_Bk_susp);
+a832 1
+	outflags |= MMAN_nl;
+a985 1
+	print_line(".RS", MMAN_Bk_susp);
+a986 1
+	outflags |= MMAN_nl;
+@
+
+
+1.46
+log
+@In -Tman mode, support automatic word keeps in the SYNOPSIS
+just like in -Tascii mode; requested by millert@@.
+
+While here, do not escape the blank characters terminating man(7)
+macros; this is becoming more important as we use more keeps now.
+
+Note that -Tman still does not support .nr nS.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.45 2012/11/19 02:08:33 schwarze Exp $ */
+d46 1
+d446 3
+d477 2
+a478 10
+	/*
+	 * If we are inside an enclosing list,
+	 * preserve its indentation.
+	 */
+	if (Bl_stack_len && Bl_stack[Bl_stack_len - 1]) {
+		print_line(".RS", MMAN_Bk_susp);
+		snprintf(buf, sizeof(buf), "%ldn",
+				Bl_stack[Bl_stack_len - 1]);
+		print_word(buf);
+	}
+a836 1
+	char		 buf[24];
+d844 3
+a846 14
+	/*
+	 * If we are inside an enclosing list and the current
+	 * list item is not yet finished, restore the correct
+	 * indentation for what remains of that item.
+	 */
+	if (NULL != n->parent->next &&
+	    Bl_stack_len && Bl_stack[Bl_stack_len - 1]) {
+		print_line(".RS", MMAN_Bk_susp);
+		snprintf(buf, sizeof(buf), "%ldn",
+				Bl_stack[Bl_stack_len - 1]);
+		print_word(buf);
+		/* Remeber to close out this .RS block later. */
+		Bl_stack_post[Bl_stack_len - 1] = 1;
+	}
+d945 5
+d984 3
+a986 1
+	print_line(".RS 6n", MMAN_nl);
+d995 4
+d1261 26
+d1326 1
+a1326 1
+			 * after a child display.
+a1332 7
+
+			/*
+			 * We are inside an enclosing list.
+			 * Restore the indentation of that list.
+			 */
+			if (Bl_stack_len && Bl_stack[Bl_stack_len - 1])
+				print_line(".RE", MMAN_nl);
+@
+
+
+1.45
+log
+@Three portability improvements by millert@@:
+* Use "\\ " not "\\~" as the non-breaking space as historic nroff
+doesn't support the latter.
+* The '-' before the flags needs to be quoted to prevent nroff
+from putting a line break between the '-' and the flag character.
+* Disable hyphenation and, for nroff, disable justification which is
+consistent with how mdoc behaves (and produces more readable manuals).
+
+(OpenBSD rev. 1.39, 1.40 and 1.41)
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.44 2012/11/18 19:34:19 schwarze Exp $ */
+d254 4
+a257 3
+#define	MMAN_An_split	(1 << 8)  /* author mode is "split" */
+#define	MMAN_An_nosplit	(1 << 9)  /* author mode is "nosplit" */
+#define	MMAN_PD		(1 << 10) /* inter-paragraph spacing disabled */
+d338 2
+a339 1
+			if (MMAN_Bk & outflags)
+d356 1
+a356 1
+	outflags &= ~MMAN_spc_force;
+d396 2
+a397 4
+	} else if (! (MMAN_PD & outflags)) {
+		print_line(".PD 0", 0);
+		outflags |= MMAN_PD;
+	}
+d400 1
+a400 1
+	outflags |= newflags;
+d478 1
+a478 1
+		print_line(".RS", 0);
+d559 1
+a559 1
+	
+d709 19
+a727 7
+	if (MDOC_HEAD != n->type)
+		return(1);
+	outflags |= MMAN_sp;
+	print_block(manacts[n->tok].prefix, 0);
+	print_word("");
+	putchar('\"');
+	outflags &= ~MMAN_spc;
+d832 1
+a832 1
+	print_line(".RS", 0);
+d856 1
+a856 1
+		print_line(".RS", 0);
+@
+
+
+1.44
+log
+@Make the generated man(7) code more portable by using .PD
+instead of .sp -1v, which for example Solaris nroff handles poorly.
+
+Problem report and patch by millert@@,
+with the print_word chunk tweaked by me.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.43 2012/11/18 18:02:23 schwarze Exp $ */
+d337 1
+a337 1
+			if (MMAN_Bk & outflags) {
+d339 1
+a339 3
+				putchar('~');
+			} else 
+				putchar(' ');
+d359 1
+a359 1
+			printf("\\~");
+d536 1
+a536 1
+	printf(".TH \"%s\" \"%s\" \"%s\" \"%s\" \"%s\"",
+d540 3
+d1057 1
+a1057 1
+	print_word("-");
+d1535 1
+a1535 1
+	print_word("\\~");
+@
+
+
+1.43
+log
+@Correct indentation for lists and displays inside lists.
+
+Inspired by a diff from millert@@, but implemented rather
+differently and with slightly better functionality.
+In particular, this one respects -offset and -width
+arguments found in the input file.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.42 2012/11/17 00:26:33 schwarze Exp $ */
+d256 1
+d308 9
+a316 2
+			if ( ! (MMAN_sp & outflags))
+				printf("\n.sp -1v");
+d390 1
+a390 1
+	if (MMAN_sp & outflags)
+d392 8
+a399 2
+	else
+		print_line(".sp -1v", 0);
+@
+
+
+1.42
+log
+@Cleanup naming of local variables to make the code easier on the eye:
+Settle for "struct man *man", "struct mdoc *mdoc", "struct meta *meta"
+and avoid the confusing "*m" which was sometimes this, sometimes that.
+No functional change.
+
+ok kristaps@@ some time ago
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.41 2012/07/16 10:45:41 schwarze Exp $ */
+d257 5
+d398 1
+d406 13
+a418 2
+		print_word(v);
+		return;
+d422 7
+d443 2
+d461 18
+d814 1
+d816 1
+d821 15
+d1261 40
+a1300 4
+		if (LIST_column == bln->norm->Bl.type &&
+		    NULL != n->next) {
+			putchar('\t');
+			outflags &= ~MMAN_spc;
+@
+
+
+1.41
+log
+@For .El .sp, avoid the weird .sp -1v .PP .PP output sequence.
+Synching to OpenBSD rev. 1.38.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.40 2012/07/16 09:51:54 schwarze Exp $ */
+d31 1
+a31 1
+#define	DECL_ARGS const struct mdoc_meta *m, \
+d474 1
+a474 1
+	const struct mdoc_meta *m;
+d477 1
+a477 1
+	m = mdoc_meta(mdoc);
+d481 2
+a482 1
+			m->title, m->msec, m->date, m->os, m->vol);
+d490 1
+a490 1
+	print_node(m, n);
+d531 1
+a531 1
+		cond = NULL == act->cond || (*act->cond)(m, n);
+d533 1
+a533 1
+			do_sub = (*act->pre)(m, n);
+d543 1
+a543 1
+			print_node(m, sub);
+d549 1
+a549 1
+		(*act->post)(m, n);
+d640 1
+a640 1
+	post_percent(m, n);
+d943 1
+a943 1
+		print_node(m, n);
+d1007 1
+a1007 1
+	print_node(m, n);
+d1015 1
+a1015 1
+		pre_fa(m, n);
+d1061 1
+a1061 1
+		post_fn(m, n);
+d1260 1
+a1260 1
+	name = n->child ? n->child->string : m->name;
+d1272 1
+a1272 1
+		print_word(m->name);
+d1404 1
+a1404 1
+	print_node(m, n);
+d1410 1
+a1410 1
+	print_node(m, n);
+@
+
+
+1.40
+log
+@Several -mdoc parser improvements related to vertical spacing:
+* So far, .Pp and .Lp were removed before paragraph type blocks.
+* Now also remove .br before paragraph type blocks.
+* Treat .Lp as a paragraph like .Pp, so remove .Pp, .Lp, .br before it.
+* Do not treat .sp as a paragraph, don't remove anything before it.
+* After .Sh, .Ss, .Pp, and .Lp, remove .Pp, .Lp, .sp, .br, and blank lines.
+* After .sp and .br, remove .br.
+OpenBSD rev. mdoc.c 1.89 and mdoc_validate.c 1.106
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.39 2012/07/14 09:07:18 schwarze Exp $ */
+d1345 2
+a1346 1
+	if (MMAN_PP & outflags && MDOC_It != n->parent->tok)
+d1348 1
+a1348 1
+	else
+@
+
+
+1.39
+log
+@In -Tman .Bl -compact, skip the blank line only before the first item
+of the first list in a section, not before every item of the first list.
+OpenBSD rev. 1.37
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.38 2012/07/13 23:57:58 schwarze Exp $ */
+d1345 4
+a1348 1
+	print_line(".sp", MMAN_nl);
+@
+
+
+1.38
+log
+@Adjust -Tman SYNOPSIS .Nm indentation using .HP; requested by millert@@.
+There are still lots of ugly line breaks, to be fixed later.
+OpenBSD rev. 1.36
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.37 2012/07/13 20:43:40 schwarze Exp $ */
+d1119 2
+a1120 1
+		    NULL == bln->parent->prev)
+@
+
+
+1.37
+log
+@If the tag in .Bl -tag .It would leave exactly one blank before the
+body of the item, mdoc(7) breaks the line, whereas the .TP used to
+translate this to man(7) does not.  Thus, insert an explicit roff(7)
+line break in this place.
+To be able to correctly count the characters, do not pass font escapes
+an the like through print_word().
+OpenBSD rev. 1.35
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.36 2012/07/13 14:19:49 schwarze Exp $ */
+d1252 1
+d1258 2
+a1259 1
+	if (NULL == n->child && NULL == m->name)
+d1261 7
+@
+
+
+1.36
+log
+@In -man -Tascii, support .sp with negative argument.
+In -mdoc -Tman, improve the framework to control vertical spacing.
+Use both to support .Bl -compact (surprisingly hard to get right).
+OpenBSD rev. 1.85 and 1.34, respectively.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.35 2012/07/12 08:55:48 schwarze Exp $ */
+d257 2
+d275 2
+a276 1
+	print_word("\\f");
+d288 2
+a289 1
+	print_word("\\f");
+d312 4
+a315 1
+	} else if (MMAN_spc & outflags && '\0' != s[0])
+d322 1
+a322 1
+		if (MMAN_spc_force & outflags ||
+d329 2
+d332 1
+d338 2
+a339 2
+	if (MMAN_Sm & outflags &&
+	    (('(' != s[0] && '[' != s[0]) || '\0' != s[1]))
+d357 2
+d415 1
+d417 2
+a418 4
+	/* XXX Rough estimation, might have multiple parts. */
+	chsz = (NULL != child && MDOC_TEXT == child->type) ?
+			strlen(child->string) : 0;
+
+d425 2
+a426 6
+			if (chsz)
+				print_block(".HP", 0);
+			else
+				print_block(".TP", 0);
+			print_word(v);
+			return;
+d431 5
+a435 1
+	if (chsz > sz)
+d437 1
+a437 1
+	else
+d439 8
+a446 2
+	snprintf(buf, sizeof(buf), "%ldn", sz + 2);
+	print_word(buf);
+d519 2
+a520 1
+			print_word("\\&");
+d620 2
+a621 1
+		print_word("\"");
+d635 2
+a636 1
+		print_word("\"");
+d653 2
+a654 1
+	print_word("\"");
+d669 2
+a670 1
+	print_word("\"");
+d1142 1
+d1153 1
+d1159 1
+d1162 4
+a1165 2
+			print_width(bln->norm->Bl.width, NULL, 8);
+			break;
+@
+
+
+1.35
+log
+@Do not crash in -Tman on:
+* .Fn with exactly one argument
+* .Bl -hang without a -width
+Now all 3776 OpenBSD base manuals build without crashing.
+OpenBSD rev. 1.33
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.34 2012/07/11 23:46:37 schwarze Exp $ */
+d105 2
+d246 10
+a255 9
+#define	MMAN_spc	(1 << 0)
+#define	MMAN_spc_force	(1 << 1)
+#define	MMAN_nl		(1 << 2)
+#define	MMAN_br		(1 << 3)
+#define	MMAN_sp		(1 << 4)
+#define	MMAN_Sm		(1 << 5)
+#define	MMAN_Bk		(1 << 6)
+#define	MMAN_An_split	(1 << 7)
+#define	MMAN_An_nosplit	(1 << 8)
+d293 1
+a293 1
+	if ((MMAN_sp | MMAN_br | MMAN_nl) & outflags) {
+d297 5
+a301 1
+		if (MMAN_sp & outflags)
+d307 1
+a307 1
+		outflags &= ~(MMAN_sp|MMAN_br|MMAN_nl|MMAN_spc);
+d351 24
+d415 1
+a415 1
+				print_word(".HP");
+d417 1
+a417 1
+				print_word(".TP");
+d425 1
+a425 1
+		print_word(".HP");
+d427 1
+a427 1
+		print_word(".TP");
+d631 2
+a632 2
+	outflags |= MMAN_nl;
+	print_word(manacts[n->tok].prefix);
+d731 6
+a736 1
+	if (0 == n->norm->Bd.comp)
+d738 1
+a738 7
+	if (DISP_unfilled == n->norm->Bd.type ||
+	    DISP_literal  == n->norm->Bd.type) {
+		outflags |= MMAN_nl;
+		print_word(".nf");
+	}
+	outflags |= MMAN_nl;
+	print_word(".RS");
+d748 1
+a748 2
+	outflags |= MMAN_nl;
+	print_word(".RE");
+d750 2
+a751 5
+	    DISP_literal  == n->norm->Bd.type) {
+		outflags |= MMAN_nl;
+		print_word(".fi");
+	}
+	outflags |= MMAN_nl;
+d826 1
+a826 3
+	outflags |= MMAN_nl;
+	print_word(".TS");
+	outflags |= MMAN_nl;
+d830 1
+d839 3
+a844 4
+	case (LIST_column):
+		outflags |= MMAN_nl;
+		print_word(".TE");
+		break;
+d848 2
+a849 1
+	outflags |= MMAN_br;
+d884 1
+a884 3
+	outflags |= MMAN_nl;
+	print_word(".RS 6n");
+	outflags |= MMAN_nl;
+d892 1
+a892 3
+	outflags |= MMAN_nl;
+	print_word(".RE");
+	outflags |= MMAN_nl;
+d1094 1
+a1094 1
+		outflags |= MMAN_nl;
+d1096 4
+a1101 4
+			if (bln->norm->Bl.comp)
+				outflags |= MMAN_br;
+			else
+				outflags |= MMAN_sp;
+a1107 4
+			if (bln->norm->Bl.comp)
+				outflags |= MMAN_br;
+			else
+				outflags |= MMAN_sp;
+d1109 1
+a1109 1
+				print_word(".B \"");
+d1111 1
+a1111 1
+				print_word(".R \"");
+d1274 4
+a1277 6
+	outflags |= MMAN_nl;
+	if (MDOC_It == n->parent->tok)
+		print_word(".sp");
+	else
+		print_word(".PP");
+	outflags |= MMAN_nl;
+d1286 2
+a1287 3
+		outflags |= MMAN_nl;
+		print_word(".PP");
+		outflags |= MMAN_nl;
+d1308 1
+a1308 2
+	outflags |= MMAN_nl;
+	print_word(".sp");
+@
+
+
+1.34
+log
+@Polish -Tman .Rs support.
+All mdoc(7) macros are now supported by -Tman.
+OpenBSD rev. 1.32
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.33 2012/07/11 16:19:08 schwarze Exp $ */
+d106 2
+a107 1
+static	void	  print_width(const char *, const struct mdoc_node *);
+d367 1
+a367 1
+print_width(const char *v, const struct mdoc_node *child)
+d377 3
+a379 1
+	if (a2roffsu(v, &su, SCALE_MAX)) {
+d968 5
+a972 1
+	return(pre_fa(m, n->next));
+d1102 1
+a1102 1
+			print_width(bln->norm->Bl.width, NULL);
+d1112 1
+a1112 1
+			print_width(bln->norm->Bl.width, NULL);
+d1117 1
+a1117 1
+			print_width(bln->norm->Bl.width, n->child);
+d1120 1
+a1120 1
+			print_width(bln->norm->Bl.width, NULL);
+@
+
+
+1.33
+log
+@basic implementation of -Tman .Bl -column using tbl(7); OpenBSD rev. 1.31
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.32 2012/07/10 20:37:02 schwarze Exp $ */
+d46 1
+d69 1
+d95 1
+d158 11
+a168 11
+	{ NULL, NULL, post_percent, NULL, NULL }, /* _%A */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%B */
+	{ NULL, NULL, post_percent, NULL, NULL }, /* _%D */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%I */
+	{ NULL, pre_enc, post_percent, "\\fI", "\\fP" }, /* %J */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%N */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%O */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%P */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%R */
+	{ NULL, pre_enc, post_percent, "\"", "\"" }, /* %T */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%V */
+d202 1
+a202 1
+	{ cond_body, pre_pp, NULL, NULL, NULL }, /* Rs */
+d211 2
+a212 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Xc */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Xo */
+d230 1
+a230 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%C */
+d234 1
+a234 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%Q */
+d237 2
+a238 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _%U */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ta */
+a544 5
+/*
+ * Used in listings (percent = %A, e.g.).
+ * FIXME: this is incomplete. 
+ * It doesn't print a nice ", and" for lists.
+ */
+d549 3
+a551 2
+	post_enc(m, n);
+	if (n->next)
+d553 4
+a556 1
+	else {
+d562 26
+d1256 13
+a1268 1
+	return(MDOC_Rs == n->tok);
+@
+
+
+1.32
+log
+@basic implementation of -Tman .Bl -tag
+while here, do some minor outflags cleanup
+OpenBSD rev. 1.30
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.31 2012/07/10 19:54:11 schwarze Exp $ */
+d757 1
+d759 2
+a760 1
+	if (LIST_enum == n->norm->Bl.type)
+d762 13
+d782 11
+a793 2
+	if (LIST_enum == n->norm->Bl.type)
+		n->norm->Bl.count = 0;
+d1102 4
+a1105 2
+	if (MDOC_HEAD == n->type) {
+		bln = n->parent->parent;
+d1117 10
+@
+
+
+1.31
+log
+@multiple fixes to -Tascii .HP rendering:
+* do not add an excessive blank line before the block
+* in literal mode, start a new line after the tag
+
+getting this to work requires some general (print_man_node) fixes:
+* in literal mode, break the output line at the end of each
+input line, not just after those input lines ending in text
+* but don't break it when there was no output on the line
+* and adjust the margins after the .HP tag
+
+these general fixes require an adjustment to -Tascii .TP rendering:
+* set up NOBREAK mode before the body, not after the head
+
+finally, based on all this, implement -Tman .Bl -hang in terms of .HP
+
+OpenBSD rev. 1.84 and 1.29, respectively
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.30 2012/07/10 14:38:51 schwarze Exp $ */
+d767 1
+a1055 1
+			outflags |= MMAN_nl;
+d1059 3
+a1061 1
+			outflags |= MMAN_nl;
+d1064 1
+a1064 3
+			if (bln->norm->Bl.width)
+				print_width(bln->norm->Bl.width, n->child);
+			break;
+@
+
+
+1.30
+log
+@* implement -Tman .Bl -item -inset -diag -ohang -dash -hyphen -enum .It
+* fix -Tman .Bl -bullet .It
+* adjust the -Tascii .Bl -bullet -dash -hyphen .It
+default and minimum width to new groff standards,
+it changed from 4n (in groff 1.15) to 2n (in groff 1.21)
+* same for -Tascii -enum, it changed from 5n to 2n
+* use -hang formatting for -Tascii -enum -width 2n
+* for -Tascii -enum, the default is -width 3n
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.29 2012/07/09 23:53:36 schwarze Exp $ */
+d103 1
+a103 1
+static	void	  print_width(const char *);
+d363 1
+a363 1
+print_width(const char *v)
+d367 5
+a371 1
+	size_t		  sz;
+d377 4
+d387 4
+d1042 1
+a1042 2
+			print_word(".TP");
+			print_width(bln->norm->Bl.width);
+d1052 1
+a1052 2
+			print_word(".TP");
+			print_width(bln->norm->Bl.width);
+d1057 4
+d1063 1
+a1063 1
+				print_width(bln->norm->Bl.width);
+@
+
+
+1.29
+log
+@fix -Tascii .Fd line breaking
+and implement -Tman .Fd
+OpenBSD rev. 1.27 and 1.143, respectively
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.28 2012/07/09 22:36:34 schwarze Exp $ */
+d49 1
+d60 1
+d73 1
+d103 2
+d119 1
+a119 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* Bl */
+d121 1
+a121 1
+	{ NULL, pre_it, NULL, NULL, NULL }, /* _It */
+d363 30
+d743 17
+d999 2
+a1000 1
+	if (MDOC_HEAD == n->type) {
+d1002 1
+a1002 2
+		print_word(".TP");
+		bln = n->parent->parent->prev;
+d1004 21
+d1026 19
+a1044 1
+			print_word("4n");
+a1045 1
+			print_word("\\fBo\\fP");
+d1049 1
+a1049 1
+				print_word(bln->norm->Bl.width);
+d1053 2
+d1060 21
+@
+
+
+1.28
+log
+@implement -Tman .Eo and .Ec; OpenBSD rev. 1.26
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.27 2012/07/09 18:56:12 schwarze Exp $ */
+d53 1
+d77 1
+d129 1
+a129 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Fd */
+d223 2
+a224 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Es */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _En */
+d796 17
+@
+
+
+1.27
+log
+@Implement -Tman .Bf.
+To get the spacing right,
+* avoid man(7) code line breaks at places where no spacing is allowed
+* allow spacing right after .Sm on
+* allow spacing after empty .Fl at the end of an input line
+OpenBSD rev. 1.25
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.26 2012/07/09 17:53:01 schwarze Exp $ */
+d51 1
+d173 2
+a174 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ec */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ef */
+d176 1
+a176 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Eo */
+d760 8
+@
+
+
+1.26
+log
+@fix -Tman font handling for:
+.Ad .Ar .Cd .Cm .Dv .Em .Er .Ev .Fa .Fl .Fn .Fo .Ft
+.Ic .In .Lk .Li .Ms .Mt .Nm .Pa .Sx .Sy .Tn .Va .Vt
+OpenBSD rev. 1.24
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.25 2012/07/09 09:31:48 schwarze Exp $ */
+d47 1
+d67 1
+d163 1
+a163 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bf */
+d401 1
+a401 2
+	if (prev && prev->line < n->line &&
+	    MDOC_Fo != prev->tok && MDOC_Ns != prev->tok)
+d648 34
+d799 2
+a800 1
+	if (0 == n->nchild)
+d1046 1
+a1046 1
+		outflags |= MMAN_Sm;
+@
+
+
+1.25
+log
+@implement -Tman .No and .Mt; OpenBSD rev. 1.23
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.24 2012/07/08 22:49:29 schwarze Exp $ */
+d44 2
+d51 1
+d54 1
+d71 1
+d73 1
+d80 1
+d88 1
+d112 1
+a112 1
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* Ad */
+d114 6
+a119 6
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* Ar */
+	{ NULL, pre_enc, post_enc, "\\fB", "\\fP" }, /* Cd */
+	{ NULL, pre_enc, post_enc, "\\fB", "\\fP" }, /* Cm */
+	{ NULL, pre_enc, post_enc, "\\fR", "\\fP" }, /* Dv */
+	{ NULL, pre_enc, post_enc, "\\fR", "\\fP" }, /* Er */
+	{ NULL, pre_enc, post_enc, "\\fR", "\\fP" }, /* Ev */
+d125 1
+a125 1
+	{ NULL, pre_enc, post_enc, "\\fB-", "\\fP" }, /* Fl */
+d127 2
+a128 2
+	{ NULL, pre_ft, post_enc, NULL, "\\fP" }, /* Ft */
+	{ NULL, pre_enc, post_enc, "\\fB", "\\fP" }, /* Ic */
+d130 1
+a130 1
+	{ NULL, pre_enc, post_enc, "\\fR", "\\fP" }, /* Li */
+d135 1
+a135 1
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* Pa */
+d142 1
+a142 1
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* Va */
+d172 1
+a172 1
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* Em */
+d175 1
+a175 1
+	{ NULL, pre_enc, post_enc, "\\fB", "\\fP" }, /* Ms */
+d194 3
+a196 3
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* Sx */
+	{ NULL, pre_enc, post_enc, "\\fB", "\\fP" }, /* Sy */
+	{ NULL, pre_enc, post_enc, "\\fR", "\\fP" }, /* Tn */
+d213 1
+a213 1
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* Mt */
+d240 32
+d378 5
+a458 4
+/*
+ * Output a font encoding before a node, e.g., \fR.
+ * This obviously has no trailing space.
+ */
+a471 3
+/*
+ * Output a font encoding subsequent a node, e.g., \fP.
+ */
+d482 7
+a488 2
+	if (MDOC_Fl == n->tok && 0 == n->nchild)
+		outflags &= ~MMAN_spc;
+d717 8
+d732 1
+a732 2
+		print_word("\\fI");
+		outflags &= ~MMAN_spc;
+d734 1
+a734 2
+		outflags &= ~MMAN_spc;
+		print_word("\\fP");
+d750 19
+d778 1
+a778 2
+	print_word("\\fB");
+	outflags &= ~MMAN_spc;
+d780 1
+d782 1
+a782 1
+	print_word("\\fP(");
+d807 1
+a807 2
+		print_word("\\fB");
+		outflags &= ~MMAN_spc;
+d826 1
+a826 2
+		outflags &= ~MMAN_spc;
+		print_word("\\fP");
+d841 1
+a841 2
+	print_word("\\fI");
+	outflags &= ~MMAN_spc;
+d851 8
+a858 4
+		print_word("\\fB#include <");
+	} else
+		print_word("<\\fI");
+	outflags &= ~MMAN_spc;
+a865 1
+	outflags &= ~MMAN_spc;
+d867 3
+a869 1
+		print_word(">\\fP");
+d871 5
+a875 2
+	} else
+		print_word("\\fP>");
+d920 1
+a920 2
+		print_word("\\fI");
+		outflags &= ~MMAN_spc;
+d926 1
+a926 2
+		outflags &= ~MMAN_spc;
+		print_word("\\fP");
+d929 1
+a929 2
+	print_word("\\fB");
+	outflags &= ~MMAN_spc;
+d931 1
+a931 2
+	outflags &= ~MMAN_spc;
+	print_word("\\fP");
+d936 8
+d953 1
+a953 2
+	print_word("\\fB");
+	outflags &= ~MMAN_spc;
+d965 1
+a965 2
+	outflags &= ~MMAN_spc;
+	print_word("\\fP");
+d1033 8
+d1055 1
+a1055 2
+	print_word("\\fI");
+	outflags &= ~MMAN_spc;
+d1065 1
+a1065 3
+
+	outflags &= ~MMAN_spc;
+	print_word("\\fP");
+@
+
+
+1.24
+log
+@fix .Lk for -Tascii and implement it for -Tman
+OpenBSD rev. 1.22 and 1.142, respectively
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.23 2012/07/08 18:39:47 schwarze Exp $ */
+d75 1
+d168 1
+a168 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* No */
+d205 1
+a205 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Mt */
+d223 8
+a230 7
+#define	MMAN_nl		(1 << 1)
+#define	MMAN_br		(1 << 2)
+#define	MMAN_sp		(1 << 3)
+#define	MMAN_Sm		(1 << 4)
+#define	MMAN_Bk		(1 << 5)
+#define	MMAN_An_split	(1 << 6)
+#define	MMAN_An_nosplit	(1 << 7)
+d249 4
+a252 4
+		 * If we need a space, only print it before
+		 * (1) a nonzero length word;
+		 * (2) a word that is non-punctuation; and
+		 * (3) if punctuation, non-terminating puncutation.
+d254 2
+a255 1
+		if (NULL == strchr(".,:;)]?!", s[0]) || '\0' != s[1]) {
+d272 1
+d894 8
+@
+
+
+1.23
+log
+@fix vertical spacing for -Tman SYNOPSIS .Fn .Fo .Ft .In .Nm .Va .Vt
+OpenBSD rev. 1.21
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.22 2012/07/08 16:52:20 schwarze Exp $ */
+d73 1
+d203 1
+a203 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Lk */
+d835 28
+@
+
+
+1.22
+log
+@implement -Tman .An
+also reset -[no]split mode at .Sh AUTHORS in -Tascii
+OpenBSD rev. 1.20 and 1.141, respectively
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.21 2012/07/08 15:48:13 schwarze Exp $ */
+d70 1
+d79 1
+d117 1
+a117 1
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* Ft */
+d493 40
+d699 2
+a704 2
+	if (MDOC_SYNPRETTY & n->flags)
+		outflags |= MMAN_br;
+d730 3
+a733 2
+		if (MDOC_SYNPRETTY & n->flags)
+			outflags |= MMAN_br;
+d766 10
+d780 1
+a780 1
+		outflags |= MMAN_br;
+d837 2
+d841 2
+a842 2
+	if (MDOC_SYNPRETTY & n->flags)
+		outflags |= MMAN_br;
+d923 1
+a929 1
+		outflags |= MMAN_br;
+a944 2
+	if (MDOC_SYNPRETTY & n->flags)
+		outflags |= MMAN_br;
+@
+
+
+1.21
+log
+@Add flags to insert a .sp or .br request before the next output,
+shortening some frequent idioms and preparing for better vertical
+spacing in the SYNOPSIS; no functional change intended.
+OpenBSD rev. 1.19
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.20 2012/07/08 15:01:57 schwarze Exp $ */
+d59 1
+d101 1
+a101 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _An */
+d224 2
+d487 25
+@
+
+
+1.20
+log
+@Instead of adding one integer variable for each global boolean output flag
+and passing around a structure containing them into each and every function,
+just use a single static bitfield.
+In preparation for adding more output flags to support more features.
+OpenBSD rev. 1.18
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.19 2012/07/08 13:57:53 schwarze Exp $ */
+d219 4
+a222 2
+#define	MMAN_Sm		(1 << 2)
+#define	MMAN_Bk		(1 << 3)
+d228 1
+a228 1
+	if (MMAN_nl & outflags) {
+d232 7
+a238 2
+		putchar('\n');
+		outflags &= ~(MMAN_nl|MMAN_spc);
+d500 2
+a501 4
+	if (0 == n->norm->Bd.comp) {
+		outflags |= MMAN_nl;
+		print_word(".sp");
+	}
+d555 1
+a555 3
+	outflags |= MMAN_nl;
+	print_word(".br");
+	outflags |= MMAN_nl;
+d633 2
+a634 5
+	if (MDOC_SYNPRETTY & n->flags) {
+		outflags |= MMAN_nl;
+		print_word(".br");
+		outflags |= MMAN_nl;
+	}
+d651 1
+a651 3
+		outflags |= MMAN_nl;
+		print_word(".br");
+		outflags |= MMAN_nl;
+d661 2
+a662 5
+		if (MDOC_SYNPRETTY & n->flags) {
+			outflags |= MMAN_nl;
+			print_word(".br");
+			outflags |= MMAN_nl;
+		}
+d699 1
+a699 3
+		outflags |= MMAN_nl;
+		print_word(".br");
+		outflags |= MMAN_nl;
+d714 1
+a714 3
+		outflags |= MMAN_nl;
+		print_word(".br");
+		outflags |= MMAN_nl;
+d748 2
+a749 5
+	if (SEC_LIBRARY == n->sec) {
+		outflags |= MMAN_nl;
+		print_word(".br");
+		outflags |= MMAN_nl;
+	}
+d758 2
+a759 5
+	if (MDOC_SYNPRETTY & n->flags) {
+		outflags |= MMAN_nl;
+		print_word(".br");
+		outflags |= MMAN_nl;
+	}
+d846 1
+a846 3
+		outflags |= MMAN_nl;
+		print_word(".br");
+		outflags |= MMAN_nl;
+d862 2
+a863 5
+	if (MDOC_SYNPRETTY & n->flags) {
+		outflags |= MMAN_nl;
+		print_word(".br");
+		outflags |= MMAN_nl;
+	}
+@
+
+
+1.19
+log
+@implement -Tman .Va
+and fix -Tman .Vt for the non-SYNOPSIS case
+OpenBSD rev. 1.17
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.18 2012/07/08 11:10:13 schwarze Exp $ */
+d32 1
+a32 9
+		  const struct mdoc_node *n, \
+		  struct mman *mm
+
+struct	mman {
+	int		  mode_space; /* spacing mode: 1 = on */
+	int		  need_space; /* next word needs prior ws */
+	int		  mode_keep; /* currently inside a keep */
+	int		  need_nl; /* next word needs prior nl */
+};
+d80 2
+a81 2
+static	void	  print_word(struct mman *, const char *);
+static	void	  print_offs(struct mman *, const char *);
+d216 6
+d223 1
+a223 1
+print_word(struct mman *mm, const char *s)
+d226 1
+a226 1
+	if (mm->need_nl) {
+d231 2
+a232 3
+		mm->need_space = 0;
+		mm->need_nl = 0;
+	} else if (mm->need_space && '\0' != s[0])
+d240 1
+a240 1
+			if (mm->mode_keep) {
+d251 5
+a255 2
+	mm->need_space = mm->mode_space &&
+		(('(' != s[0] && '[' != s[0]) || '\0' != s[1]);
+d273 1
+a273 1
+print_offs(struct mman *mm, const char *v)
+d286 1
+a286 1
+		print_word(mm, v);
+d292 1
+a292 1
+	print_word(mm, buf);
+a312 1
+	struct mman	        mm;
+d320 2
+a321 5
+	memset(&mm, 0, sizeof(struct mman));
+
+	mm.mode_space = 1;
+	mm.need_nl = 1;
+	print_node(m, n, &mm);
+d339 1
+a339 1
+		mm->need_nl = 1;
+d350 1
+a350 1
+		if (mm->need_nl && ('.' == *n->string || 
+d352 2
+a353 2
+			print_word(mm, "\\&");
+			mm->need_space = 0;
+d355 1
+a355 1
+		print_word(mm, n->string);
+d362 1
+a362 1
+		cond = NULL == act->cond || (*act->cond)(m, n, mm);
+d364 1
+a364 1
+			do_sub = (*act->pre)(m, n, mm);
+d374 1
+a374 1
+			print_node(m, sub, mm);
+d380 1
+a380 1
+		(*act->post)(m, n, mm);
+d409 2
+a410 2
+	print_word(mm, prefix);
+	mm->need_space = 0;
+d425 2
+a426 2
+	mm->need_space = 0;
+	print_word(mm, suffix);
+d428 1
+a428 1
+		mm->need_space = 0;
+d440 1
+a440 1
+	post_enc(m, n, mm);
+d442 1
+a442 1
+		print_word(mm, ",");
+d444 2
+a445 2
+		print_word(mm, ".");
+		mm->need_nl = 1;
+d458 4
+a461 4
+	mm->need_nl = 1;
+	print_word(mm, manacts[n->tok].prefix);
+	print_word(mm, "\"");
+	mm->need_space = 0;
+d474 3
+a476 3
+	mm->need_space = 0;
+	print_word(mm, "\"");
+	mm->need_nl = 1;
+d483 3
+a485 3
+	mm->need_space = 0;
+	print_word(mm, "'");
+	mm->need_space = 0;
+d494 2
+a495 2
+		mm->need_nl = 1;
+		print_word(mm, ".sp");
+d499 2
+a500 2
+		mm->need_nl = 1;
+		print_word(mm, ".nf");
+d502 4
+a505 4
+	mm->need_nl = 1;
+	print_word(mm, ".RS");
+	print_offs(mm, n->norm->Bd.offs);
+	mm->need_nl = 1;
+d513 2
+a514 2
+	mm->need_nl = 1;
+	print_word(mm, ".RE");
+d517 2
+a518 2
+		mm->need_nl = 1;
+		print_word(mm, ".fi");
+d520 1
+a520 1
+	mm->need_nl = 1;
+d531 1
+a531 1
+		mm->mode_keep = 1;
+d543 1
+a543 1
+		mm->mode_keep = 0;
+d550 3
+a552 3
+	mm->need_nl = 1;
+	print_word(mm, ".br");
+	mm->need_nl = 1;
+d562 2
+a563 2
+		print_word(mm, n->string);
+		mm->need_space = 0;
+d566 1
+a566 1
+	print_word(mm, "BSD");
+d569 4
+a572 4
+	mm->need_space = 0;
+	print_word(mm, "-");
+	mm->need_space = 0;
+	print_word(mm, n->string);
+d580 3
+a582 3
+	mm->need_nl = 1;
+	print_word(mm, ".RS 6n");
+	mm->need_nl = 1;
+d590 3
+a592 3
+	mm->need_nl = 1;
+	print_word(mm, ".RE");
+	mm->need_nl = 1;
+d603 5
+a607 5
+		print_word(mm, "\\fI");
+		mm->need_space = 0;
+		print_node(m, n, mm);
+		mm->need_space = 0;
+		print_word(mm, "\\fP");
+d609 1
+a609 1
+			print_word(mm, ",");
+d619 1
+a619 1
+		print_word(mm, ",");
+d631 11
+a641 11
+		mm->need_nl = 1;
+		print_word(mm, ".br");
+		mm->need_nl = 1;
+	}
+	print_word(mm, "\\fB");
+	mm->need_space = 0;
+	print_node(m, n, mm);
+	mm->need_space = 0;
+	print_word(mm, "\\fP(");
+	mm->need_space = 0;
+	return(pre_fa(m, n->next, mm));
+d648 1
+a648 1
+	print_word(mm, ")");
+d650 4
+a653 4
+		print_word(mm, ";");
+		mm->need_nl = 1;
+		print_word(mm, ".br");
+		mm->need_nl = 1;
+d664 3
+a666 3
+			mm->need_nl = 1;
+			print_word(mm, ".br");
+			mm->need_nl = 1;
+d668 2
+a669 2
+		print_word(mm, "\\fB");
+		mm->need_space = 0;
+d672 3
+a674 3
+		mm->need_space = 0;
+		print_word(mm, "(");
+		mm->need_space = 0;
+d688 2
+a689 2
+		mm->need_space = 0;
+		print_word(mm, "\\fP");
+d692 1
+a692 1
+		post_fn(m, n, mm);
+d704 4
+a707 4
+		mm->need_nl = 1;
+		print_word(mm, ".br");
+		mm->need_nl = 1;
+		print_word(mm, "\\fB#include <");
+d709 2
+a710 2
+		print_word(mm, "<\\fI");
+	mm->need_space = 0;
+d718 1
+a718 1
+	mm->need_space = 0;
+d720 4
+a723 4
+		print_word(mm, ">\\fP");
+		mm->need_nl = 1;
+		print_word(mm, ".br");
+		mm->need_nl = 1;
+d725 1
+a725 1
+		print_word(mm, "\\fP>");
+d734 2
+a735 2
+		mm->need_nl = 1;
+		print_word(mm, ".TP");
+d739 3
+a741 3
+			print_word(mm, "4n");
+			mm->need_nl = 1;
+			print_word(mm, "\\fBo\\fP");
+d745 1
+a745 1
+				print_word(mm, bln->norm->Bl.width);
+d748 1
+a748 1
+		mm->need_nl = 1;
+d758 3
+a760 3
+		mm->need_nl = 1;
+		print_word(mm, ".br");
+		mm->need_nl = 1;
+d771 3
+a773 3
+		mm->need_nl = 1;
+		print_word(mm, ".br");
+		mm->need_nl = 1;
+d775 2
+a776 2
+	print_word(mm, "\\fB");
+	mm->need_space = 0;
+d778 1
+a778 1
+		print_word(mm, m->name);
+d788 2
+a789 2
+	mm->need_space = 0;
+	print_word(mm, "\\fP");
+d796 1
+a796 1
+	mm->need_space = 0;
+d804 1
+a804 1
+	mm->need_space = 0;
+d811 1
+a811 1
+	mm->need_nl = 1;
+d813 1
+a813 1
+		print_word(mm, ".sp");
+d815 2
+a816 2
+		print_word(mm, ".PP");
+	mm->need_nl = 1;
+d826 1
+a826 1
+		mm->mode_space = 1;
+d828 1
+a828 1
+		mm->mode_space = 0;
+d836 2
+a837 2
+	mm->need_nl = 1;
+	print_word(mm, ".sp");
+d845 1
+a845 1
+	mm->need_nl = 1;
+d861 3
+a863 3
+		mm->need_nl = 1;
+		print_word(mm, ".br");
+		mm->need_nl = 1;
+d865 2
+a866 2
+	print_word(mm, "\\fI");
+	mm->need_space = 0;
+d877 2
+a878 2
+	mm->need_space = 0;
+	print_word(mm, "\\fP");
+d880 3
+a882 3
+		mm->need_nl = 1;
+		print_word(mm, ".br");
+		mm->need_nl = 1;
+d893 1
+a893 1
+	print_node(m, n, mm);
+d897 4
+a900 4
+	mm->need_space = 0;
+	print_word(mm, "(");
+	print_node(m, n, mm);
+	print_word(mm, ")");
+d908 1
+a908 1
+	print_word(mm, manacts[n->tok].prefix);
+d911 3
+a913 3
+	mm->need_space = 0;
+	print_word(mm, "\\~");
+	mm->need_space = 0;
+@
+
+
+1.18
+log
+@implement -Tman .Vt; OpenBSD rev. 1.15 and 1.16
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.17 2012/07/08 10:19:37 schwarze Exp $ */
+d137 1
+a137 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Va */
+d878 1
+a878 1
+	if (MDOC_BODY != n->type)
+@
+
+
+1.17
+log
+@Basic implementation of -Tman .Fo and .Fa;
+again, some blank lines still missing from the output.
+While here, remove the trailing semicolon
+from .Fn when outside .Sh SYNOPSIS.
+OpenBSD rev. 1.14
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.16 2012/07/07 21:16:35 schwarze Exp $ */
+d66 1
+d85 1
+d138 1
+a138 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Vt */
+d853 38
+@
+
+
+1.16
+log
+@rudimentary support for -Tman .Ft and .Fn;
+some blank lines are still missing from the output
+OpenBSD rev. 1.13
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.15 2012/07/07 20:36:18 schwarze Exp $ */
+d56 1
+d58 1
+d73 1
+d75 1
+d116 1
+a116 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Fa */
+d193 2
+a194 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Fo */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Fc */
+d339 2
+a340 1
+	if (prev && prev->line < n->line && MDOC_Ns != prev->tok)
+d598 27
+d643 1
+a643 10
+	for (n = n->next; n; n = n->next) {
+		print_word(mm, "\\fI");
+		mm->need_space = 0;
+		print_node(m, n, mm);
+		mm->need_space = 0;
+		print_word(mm, "\\fP");
+		if (NULL != n->next)
+			print_word(mm, ",");
+	}
+	return(0);
+d650 1
+a650 2
+	mm->need_space = 0;
+	print_word(mm, ");");
+d652 1
+d660 42
+@
+
+
+1.15
+log
+@basic support for -Tman .In; OpenBSD rev. 1.12
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.14 2012/07/07 14:05:40 schwarze Exp $ */
+d56 1
+d71 1
+d115 2
+a116 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Fn */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ft */
+d593 44
+@
+
+
+1.14
+log
+@after .Lb in library section, break the line in the final output
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.13 2012/07/07 13:57:19 schwarze Exp $ */
+d56 1
+d70 1
+d116 1
+a116 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _In */
+d591 29
+@
+
+
+1.13
+log
+@implement -Tman .Bk; OpenBSD rev. 1.10
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.12 2012/07/07 13:53:14 schwarze Exp $ */
+d56 1
+d195 1
+a195 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Lb */
+d613 11
+@
+
+
+1.12
+log
+@implement -Tman .Sm; OpenBSD rev. 1.9
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.11 2012/07/07 13:46:59 schwarze Exp $ */
+d38 1
+d53 1
+d63 1
+d188 2
+a189 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bk */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ek */
+d231 7
+a237 2
+		if (NULL == strchr(".,:;)]?!", s[0]) || '\0' != s[1])
+			putchar(' ');
+d516 23
+@
+
+
+1.11
+log
+@implement -Tman .Bd -offset and -compact; OpenBSD rev. 1.8
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.10 2012/07/07 13:37:42 schwarze Exp $ */
+d21 1
+d36 1
+d69 1
+d174 1
+a174 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Sm */
+d235 2
+a236 2
+	mm->need_space = 
+		('(' != s[0] && '[' != s[0]) || '\0' != s[1];
+d304 1
+d638 12
+@
+
+
+1.10
+log
+@minor -mdoc -Tman fixes
+* right after .Ns, avoid breaking the line in man code
+* after .Fl without arguments, do not insert a blank into man code
+* before each .Nm in .Sh SYNOPSIS, insert a .br into man code
+* skip .Pp arguments, don't copy them to man code
+
+OpenBSD rev. 1.7
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.9 2011/10/24 21:47:59 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+d25 1
+d72 1
+d250 23
+d473 4
+d483 3
+d493 2
+@
+
+
+1.9
+log
+@Implement missing enclosures (Ao Do Qo Qq So Bro Brq)
+and enclosure-like in-line macros (Ad Cd Dv Er Ev Li Ms Tn).
+The .No macro works without explicit implementation.
+
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.8 2011/10/20 20:27:21 schwarze Exp $ */
+d293 1
+a293 1
+	if (prev && prev->line < n->line)
+d382 2
+d549 5
+d596 1
+a596 1
+	return(1);
+@
+
+
+1.8
+log
+@Implement the missing text production macros (Bsx Bx Dx Fx Nx Ox Ux Bt Ud).
+Some macros work without explicit implementation (At Db Os St).
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.7 2011/10/08 12:47:40 kristaps Exp $ */
+d88 1
+a88 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ad */
+d91 1
+a91 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Cd */
+d93 3
+a95 3
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Dv */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Er */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ev */
+d106 1
+a106 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Li */
+d132 2
+a133 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ac */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ao */
+d143 2
+a144 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Dc */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Do */
+d151 2
+a152 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ms */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _No */
+d160 1
+a160 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Qc */
+d162 3
+a164 3
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Qo */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Qq */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Re */
+d166 2
+a167 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Sc */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _So */
+d172 1
+a172 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Tn */
+d179 1
+a179 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Oc */
+d190 3
+a192 3
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Brq */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bro */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Brc */
+@
+
+
+1.7
+log
+@Tweak Makefile and add config.h to -Tman to allow cross-compiling on
+Windows (via MingW).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.6 2011/10/08 11:37:27 kristaps Exp $ */
+d59 1
+d68 1
+d77 1
+a77 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Os */
+d110 2
+a111 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ot */
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* _Pa */
+d117 1
+a117 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _St */
+d120 1
+a120 1
+	{ NULL, pre_xr, NULL, NULL, NULL }, /* _Xr */
+d135 1
+a135 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _At */
+d140 3
+a142 3
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bsx */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bx */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Db */
+d150 1
+a150 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Fx */
+d154 2
+a155 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Nx */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ox */
+d173 1
+a173 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ux */
+d182 4
+a185 4
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bt */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Hf */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Fr */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ud */
+d196 1
+a196 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Dx */
+d478 20
+d625 13
+@
+
+
+1.6
+log
+@Implement a basic -Tman `Rv', like `Ex'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.5 2011/10/08 09:58:29 kristaps Exp $ */
+d17 4
+@
+
+
+1.5
+log
+@Tidy up -Tman output.  This has NO functional change: (1) introduced a
+state struct instead of using global statics; (2) documented throughout
+the file; (3) fixed a situation of reaching past the end of our buffer
+for zero-length strings; (4) alpha-ordered the functions.  (1) and (3)
+ok schwarze@@.  (2) and (4) are purely style and documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.4 2011/10/06 22:29:12 kristaps Exp $ */
+d106 5
+a110 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Rv */
+		/* FIXME: low-hanging `Rv' fruit. */
+@
+
+
+1.4
+log
+@If -Tman is specified and input is -man, echo the preprocessed (`so'
+replaced by file) input.  This replaces earlier behaviour of doing
+nothing, which I found unexpected (mandoc should always output).
+
+This requires a buffer in read.c that saves the input lines before being
+parsed, with a special hook if `so' is invoked.  This buffer is just
+flushed to output if -mman is the input.
+
+While mucking around doing this, I also alpha-ordered the mandoc.h
+functions.
+
+Ok schwarze@@, with no screaming when the polished patch was published.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.3 2011/09/30 00:13:28 schwarze Exp $ */
+d25 3
+a27 2
+static	int	  need_space = 0;
+static	int	  need_nl = 0;
+d29 4
+a32 2
+#define	DECL_ARGS const struct mdoc_meta *m, \
+		  const struct mdoc_node *n
+d35 5
+a39 5
+	int		(*cond)(DECL_ARGS);
+	int		(*pre)(DECL_ARGS);
+	void		(*post)(DECL_ARGS);
+	const char	 *prefix;
+	const char	 *suffix;
+d42 1
+a42 3
+static	void	  print_word(const char *);
+static	void	  print_node(DECL_ARGS);
+
+d44 2
+a45 2
+static	int	  cond_body(DECL_ARGS);
+static	int	  pre_enc(DECL_ARGS);
+d47 1
+d49 1
+a49 1
+static	int	  pre_sect(DECL_ARGS);
+d51 1
+a51 1
+
+a53 1
+static	void	  post_bd(DECL_ARGS);
+d56 1
+a56 1
+static	void	  post_dl(DECL_ARGS);
+a58 1
+static	void	  post_nm(DECL_ARGS);
+a59 1
+static	void	  post_pf(DECL_ARGS);
+d62 1
+a62 1
+static	void	  post_sp(DECL_ARGS);
+d64 2
+a65 1
+
+d107 1
+a195 1
+
+d197 1
+a197 1
+print_word(const char *s)
+d199 5
+a203 1
+	if (need_nl) {
+d205 19
+a223 6
+		need_space = 0;
+		need_nl = 0;
+	} else if (need_space &&
+	    (NULL == strchr(".,:;)]?!", s[0]) || '\0' != s[1]))
+		putchar(' ');
+	need_space = ('(' != s[0] && '[' != s[0]) || '\0' != s[1];
+d233 1
+a233 1
+			putchar(*s);
+d243 5
+d249 1
+d257 1
+d263 1
+a263 3
+	    m->title, m->msec, m->date, m->os, m->vol);
+	need_nl = 1;
+	need_space = 0;
+d265 4
+a268 1
+	print_node(m, n);
+d276 1
+a276 1
+	const struct manact	*act = NULL;
+d278 5
+a282 1
+
+d285 1
+a285 1
+		need_nl = 1;
+d287 1
+d290 1
+d292 8
+a299 3
+		if (need_nl && ('.' == *n->string || '\'' == *n->string)) {
+			print_word("\\&");
+			need_space = 0;
+d301 1
+a301 1
+		print_word(n->string);
+d303 4
+d308 1
+a308 1
+		cond = NULL == act->cond || (*act->cond)(m, n);
+d310 1
+a310 1
+			do_sub = (*act->pre)(m, n);
+d313 5
+d320 1
+a320 1
+			print_node(m, sub);
+d322 3
+d326 1
+a326 1
+		(*act->post)(m, n);
+d332 1
+d339 1
+d343 4
+d350 1
+a350 1
+	const char *prefix;
+d355 2
+a356 2
+	print_word(prefix);
+	need_space = 0;
+d360 3
+d371 2
+a372 2
+	need_space = 0;
+	print_word(suffix);
+d375 5
+d384 1
+a384 1
+	post_enc(m, n);
+d386 1
+a386 1
+		print_word(",");
+d388 2
+a389 2
+		print_word(".");
+		need_nl = 1;
+d393 3
+d402 4
+a405 4
+	need_nl = 1;
+	print_word(manacts[n->tok].prefix);
+	print_word("\"");
+	need_space = 0;
+d409 3
+d418 3
+a420 3
+	need_space = 0;
+	print_word("\"");
+	need_nl = 1;
+d427 3
+a429 3
+	need_space = 0;
+	print_word("'");
+	need_space = 0;
+d439 2
+a440 2
+		need_nl = 1;
+		print_word(".nf");
+d442 1
+a442 1
+	need_nl = 1;
+d452 2
+a453 2
+		need_nl = 1;
+		print_word(".fi");
+d455 1
+a455 1
+	need_nl = 1;
+d462 3
+a464 3
+	need_nl = 1;
+	print_word(".br");
+	need_nl = 1;
+d472 3
+a474 3
+	need_nl = 1;
+	print_word(".RS 6n");
+	need_nl = 1;
+d482 3
+a484 3
+	need_nl = 1;
+	print_word(".RE");
+	need_nl = 1;
+d493 2
+a494 2
+		need_nl = 1;
+		print_word(".TP");
+d498 3
+a500 3
+			print_word("4n");
+			need_nl = 1;
+			print_word("\\fBo\\fP");
+d504 1
+a504 1
+				print_word(bln->norm->Bl.width);
+d507 1
+a507 1
+		need_nl = 1;
+d518 2
+a519 2
+	print_word("\\fB");
+	need_space = 0;
+d521 1
+a521 1
+		print_word(m->name);
+d531 2
+a532 2
+	need_space = 0;
+	print_word("\\fP");
+d539 1
+a539 1
+	need_space = 0;
+d547 1
+a547 1
+	need_space = 0;
+d554 1
+a554 1
+	need_nl = 1;
+d556 1
+a556 1
+		print_word(".sp");
+d558 2
+a559 2
+		print_word(".PP");
+	need_nl = 1;
+d567 2
+a568 2
+	need_nl = 1;
+	print_word(".sp");
+d576 1
+a576 1
+	need_nl = 1;
+d586 1
+a586 1
+	print_node(m, n);
+d590 4
+a593 4
+	need_space = 0;
+	print_word("(");
+	print_node(m, n);
+	print_word(")");
+@
+
+
+1.3
+log
+@implement .Ap .Bd .Bo .Bq .D1 .Ic .Lp .Oo .Pf .Po .Ss .Sx .Sy .br .sp
+implement .Bl -bullet
+add more information to the .TH line
+escape dots at the beginnings of lines
+add trailing newline character at the end of the file
+do not misinterpret the ROOT block as .Ap
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.2 2011/09/20 13:47:55 schwarze Exp $ */
+d21 1
+d223 7
+@
+
+
+1.2
+log
+@do not assign pointers to literal strings
+to variables that might be changed;
+from kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_man.c,v 1.1 2011/09/17 15:00:51 schwarze Exp $ */
+d46 2
+d49 4
+d59 1
+d61 2
+a62 2
+static	int	  pre_sh(DECL_ARGS);
+static	void	  post_sh(DECL_ARGS);
+d66 4
+a69 4
+static	const struct manact manacts[MDOC_MAX] = {
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ap */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Dd */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Dt */
+d71 2
+a72 2
+	{ NULL, pre_sh, post_sh, NULL, NULL }, /* Sh */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ss */
+d74 1
+a74 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _D1 */
+d76 4
+a79 4
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bd */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ed */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bl */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _El */
+d97 1
+a97 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Ic */
+d125 1
+a125 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bc */
+d127 2
+a128 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bo */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Bq */
+d137 1
+a137 1
+	{ NULL, pre_enc, post_enc, "\\fI", "\\fP" }, /* _Em */
+d145 4
+a148 4
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Pc */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Pf */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Po */
+	{ cond_body, pre_enc, post_enc, "(", ")" }, /* _Pq */
+d159 2
+a160 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Sx */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Sy */
+d167 1
+a167 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Oo */
+d176 1
+a176 1
+	{ NULL, NULL, NULL, NULL, NULL }, /* _Lp */
+d187 2
+a188 2
+	{ NULL, NULL, NULL, NULL, NULL }, /* _br */
+	{ NULL, NULL, NULL, NULL, NULL }, /* _sp */
+d191 1
+d230 2
+a231 1
+	printf(".TH \"%s\" \"%s\" \"%s\"", m->title, m->msec, m->date);
+d236 1
+d253 4
+d324 69
+d420 11
+a430 1
+		print_word(bln->norm->Bl.width);
+d467 7
+d488 1
+a488 1
+pre_sh(DECL_ARGS)
+a490 2
+	if (MDOC_HEAD != n->type)
+		return(1);
+d492 1
+a492 2
+	print_word(".SH \"");
+	need_space = 0;
+d497 1
+a497 1
+post_sh(DECL_ARGS)
+a499 4
+	if (MDOC_HEAD != n->type)
+		return;
+	need_space = 0;
+	print_word("\"");
+@
+
+
+1.1
+log
+@Initial, incomplete support for -Tman
+to convert mdoc(7) documents to the man(7) language.
+This is work in progress and will be developed in tree.
+It does already handle the cat(1) manual,
+but will hardly handle all your fancy manuals yet.
+go ahead  kristaps@@ jmc@@ millert@@ deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id$ */
+d34 2
+a35 2
+	char		 *prefix;
+	char		 *suffix;
+@

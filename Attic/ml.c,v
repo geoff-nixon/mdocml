@@ -1,0 +1,661 @@
+head	1.10;
+access;
+symbols
+	VERSION_1_9_5:1.10
+	VERSION_1_8_5:1.10
+	VERSION_1_8_1:1.10
+	VERSION_1_7_16:1.10
+	VERSION_1_7_15:1.10
+	OPENBSD_CHECKIN:1.10
+	VERSION_1_6_5:1.10
+	VERSION_1_5_1:1.10
+	VERSION_1_3_15:1.10
+	VERSION_1_3_6:1.10
+	VERSION_1_2_0:1.10
+	VERSION_1_0_2:1.9
+	VERSION_1_0_1:1.7;
+locks; strict;
+comment	@ * @;
+
+
+1.10
+date	2008.12.15.01.54.58;	author kristaps;	state dead;
+branches;
+next	1.9;
+
+1.9
+date	2008.12.10.00.58.15;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.12.09.17.09.12;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.12.05.19.45.15;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.12.05.11.28.17;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.12.04.19.31.57;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.12.04.16.19.52;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.12.03.19.21.58;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.03.14.39.59;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.02.18.26.57;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@Purged all old files in favour of new design.  Selective reintegration.
+@
+text
+@@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@a0 261
+/* $Id: ml.c,v 1.8 2008/12/09 17:09:12 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <assert.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "ml.h"
+
+#ifdef __linux__
+extern	size_t		  strlcat(char *, const char *, size_t);
+extern	size_t		  strlcpy(char *, const char *, size_t);
+#endif
+
+
+int
+ml_putstring(struct md_mbuf *p, const char *buf, size_t *pos)
+{
+
+	return(ml_nputstring(p, buf, strlen(buf), pos));
+}
+
+
+int
+ml_nputstring(struct md_mbuf *p, 
+		const char *buf, size_t sz, size_t *pos)
+{
+	int		 i, v;
+	const char	*seq;
+	size_t		 ssz;
+
+	for (i = 0; i < (int)sz; i++) {
+		switch (buf[i]) {
+
+		/* Escaped value. */
+		case ('\\'):
+			if (-1 == (v = rofftok_scan(buf, &i)))
+				return(0);
+
+			switch (v) {
+			case (ROFFTok_Sp_A):
+				seq = "\\a";
+				ssz = 2;
+				break;
+			case (ROFFTok_Sp_B):
+				seq = "\\b";
+				ssz = 2;
+				break;
+			case (ROFFTok_Sp_F):
+				seq = "\\f";
+				ssz = 2;
+				break;
+			case (ROFFTok_Sp_N):
+				seq = "\\n";
+				ssz = 2;
+				break;
+			case (ROFFTok_Sp_R):
+				seq = "\\r";
+				ssz = 2;
+				break;
+			case (ROFFTok_Sp_T):
+				seq = "\\t";
+				ssz = 2;
+				break;
+			case (ROFFTok_Sp_V):
+				seq = "\\v";
+				ssz = 2;
+				break;
+			case (ROFFTok_Sp_0):
+				seq = "\\0";
+				ssz = 2;
+				break;
+			case (ROFFTok_Space):
+				seq = "&nbsp;";
+				ssz = 6;
+				break;
+			case (ROFFTok_Hyphen):
+				seq = "&#8208;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Em):
+				seq = "&#8212;";
+				ssz = 7;
+				break;
+			case (ROFFTok_En):
+				seq = "&#8211;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Ge):
+				seq = "&#8805;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Le):
+				seq = "&#8804;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Rquote):
+				seq = "&#8221;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Lquote):
+				seq = "&#8220;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Uparrow):
+				seq = "&#8593;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Acute):
+				seq = "&#180;";
+				ssz = 6;
+				break;
+			case (ROFFTok_Grave):
+				seq = "&#96;";
+				ssz = 5;
+				break;
+			case (ROFFTok_Pi):
+				seq = "&#960;";
+				ssz = 6;
+				break;
+			case (ROFFTok_Ne):
+				seq = "&#8800;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Lt):
+				seq = "&lt;";
+				ssz = 4;
+				break;
+			case (ROFFTok_Gt):
+				seq = "&gt;";
+				ssz = 4;
+				break;
+			case (ROFFTok_Plusmin):
+				seq = "&#177;";
+				ssz = 6;
+				break;
+			case (ROFFTok_Infty):
+				seq = "&#8734;";
+				ssz = 7;
+				break;
+			case (ROFFTok_Bar):
+				seq = "&#124;";
+				ssz = 6;
+				break;
+			case (ROFFTok_Nan):
+				seq = "Nan";
+				ssz = 3;
+				break;
+			case (ROFFTok_Quote):
+				seq = "&quot;";
+				ssz = 6;
+				break;
+			case (ROFFTok_Slash):
+				seq = "\\";
+				ssz = 1;
+				break;
+			case (ROFFTok_Null):
+				seq = "";
+				ssz = 0;
+				break;
+			default:
+				return(0);
+			}
+			break;
+
+		/* Ampersand ml-escape. */
+		case ('&'):
+			seq = "&amp;";
+			ssz = 5;
+			break;
+
+		/* Quotation ml-escape. */
+		case ('"'):
+			seq = "&quot;";
+			ssz = 6;
+			break;
+
+		/* Lt ml-escape. */
+		case ('<'):
+			seq = "&lt;";
+			ssz = 4;
+			break;
+
+		/* Gt ml-escape. */
+		case ('>'):
+			seq = "&gt;";
+			ssz = 4;
+			break;
+
+		default:
+			seq = &buf[i];
+			ssz = 1;
+			break;
+		}
+
+		if (ssz > 0 && ! ml_nputs(p, seq, ssz, pos))
+			return(-1);
+	}
+	return(1);
+}
+
+
+int
+ml_nputs(struct md_mbuf *p, const char *buf, size_t sz, size_t *pos)
+{
+
+	if (0 == sz)
+		return(1);
+
+	if ( ! md_buf_puts(p, buf, sz))
+		return(0);
+
+	if (pos)
+		*pos += sz;
+	return(1);
+}
+
+
+int
+ml_puts(struct md_mbuf *p, const char *buf, size_t *pos)
+{
+	size_t		 sz;
+
+	if (0 == (sz = strlen(buf)))
+		return(1);
+
+	if ( ! md_buf_puts(p, buf, sz))
+		return(0);
+
+	if (pos)
+		*pos += sz;
+	return(1);
+}
+
+
+int
+ml_putchars(struct md_mbuf *p, char buf, size_t count, size_t *pos)
+{
+	size_t		 i;
+
+	for (i = 0; i < count; i++)
+		if ( ! ml_nputs(p, &buf, 1, pos))
+			return(0);
+
+	return(1);
+}
+@
+
+
+1.8
+log
+@Considerable clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: ml.c,v 1.7 2008/12/05 19:45:15 kristaps Exp $ */
+a22 1
+#include "private.h"
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: ml.c,v 1.6 2008/12/05 11:28:17 kristaps Exp $ */
+a22 1
+#include "libmdocml.h"
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: ml.c,v 1.5 2008/12/04 19:31:57 kristaps Exp $ */
+d54 1
+a54 2
+			if (-1 == (v = rofftok_scan(buf, &i))) {
+				/* TODO: error. */
+a55 1
+			}
+d179 1
+a179 2
+				/* TODO: print error. */
+				return(-1);
+d230 2
+a231 1
+	*pos += sz;
+d246 3
+a248 1
+	*pos += sz;
+@
+
+
+1.5
+log
+@Moved charset recognition into the filter.
+@
+text
+@d1 1
+a1 1
+/* $Id: ml.c,v 1.4 2008/12/04 16:19:52 kristaps Exp $ */
+d34 8
+@
+
+
+1.4
+log
+@Character-encoding tests.
+@
+text
+@d1 1
+a1 1
+/* $Id: ml.c,v 1.3 2008/12/03 19:21:58 kristaps Exp $ */
+d19 1
+d37 1
+a37 1
+	int		 i;
+d44 134
+d208 1
+a208 1
+		if ( ! ml_nputs(p, seq, ssz, pos))
+@
+
+
+1.3
+log
+@Major update.
+@
+text
+@d1 1
+a1 1
+/* $Id: ml.c,v 1.2 2008/12/03 14:39:59 kristaps Exp $ */
+d37 2
+d42 2
+d45 2
+a46 2
+			if ( ! ml_nputs(p, "&amp;", 5, pos))
+				return(0);
+d48 2
+d51 2
+a52 2
+			if ( ! ml_nputs(p, "&quot;", 6, pos))
+				return(0);
+d54 2
+d57 2
+a58 2
+			if ( ! ml_nputs(p, "&lt;", 4, pos))
+				return(0);
+d60 2
+d63 2
+a64 2
+			if ( ! ml_nputs(p, "&gt;", 4, pos))
+				return(0);
+d66 1
+d68 2
+a69 2
+			if ( ! ml_nputs(p, &buf[i], 1, pos))
+				return(0);
+d72 3
+d84 3
+d100 3
+a102 1
+	sz = strlen(buf);
+@
+
+
+1.2
+log
+@Abstract ml/mlg/html/xml.
+@
+text
+@d1 1
+a1 1
+/* $Id: ml.c,v 1.1 2008/12/02 18:26:57 kristaps Exp $ */
+d79 13
+@
+
+
+1.1
+log
+@Transition to splitting xml/ml.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.8 2008/12/02 13:20:24 kristaps Exp $ */
+d24 1
+d26 4
+a30 1
+#define	MAXINDENT	 8
+d32 3
+a34 100
+static ssize_t		 ml_puts(struct md_mbuf *, const char *);
+static ssize_t		 ml_putchar(struct md_mbuf *, char);
+static ssize_t		 ml_putstring(struct md_mbuf *, const char *);
+
+
+static ssize_t
+ml_puts(struct md_mbuf *p, const char *buf)
+{
+
+	return(ml_nputs(p, buf, strlen(buf)));
+}
+
+
+static ssize_t
+ml_putchar(struct md_mbuf *p, char buf)
+{
+
+	return(ml_nputs(p, &buf, 1));
+}
+
+
+static ssize_t
+ml_putstring(struct md_mbuf *p, const char *buf)
+{
+	
+	return(ml_nputstring(p, buf, strlen(buf)));
+}
+
+
+ssize_t
+ml_begintag(struct md_mbuf *p, const char *name, 
+		int *argc, char **argv)
+{
+	int		 i;
+	ssize_t		 res, sz;
+
+	res = 0;
+
+	if (-1 == (sz = ml_nputs(p, "<", 1)))
+		return(-1);
+	res += sz;
+
+	if (-1 == (sz = ml_puts(p, name)))
+		return(-1);
+	res += sz;
+
+	for (i = 0; ROFF_ARGMAX != argc[i]; i++) {
+		if (-1 == (sz = ml_nputs(p, " ", 1)))
+			return(-1);
+		res += sz;
+
+		if (-1 == (sz = ml_puts(p, tokargnames[argc[i]])))
+			return(-1);
+		res += sz;
+
+		if (-1 == (sz = ml_nputs(p, "=\"", 2)))
+			return(-1);
+		res += sz;
+
+		if (-1 == (sz = ml_putstring(p, argv[i] ? 
+						argv[i] : "true")))
+			return(-1);
+		res += sz;
+
+		if (-1 == (sz = ml_nputs(p, "\"", 1)))
+			return(-1);
+		res += sz;
+	}
+	
+	if (-1 == (sz = ml_nputs(p, ">", 1)))
+		return(-1);
+
+	return(res + sz);
+}
+
+
+ssize_t
+ml_endtag(struct md_mbuf *p, const char *tag)
+{
+	ssize_t		 res, sz;
+
+	res = 0;
+
+	if (-1 == (sz = ml_nputs(p, "</", 2)))
+		return(-1);
+	res += sz;
+
+	if (-1 == (sz = ml_puts(p, tag)))
+		return(-1);
+	res += sz;
+
+	if (-1 == (sz = ml_nputs(p, ">", 1)))
+		return(-1);
+
+	return(res + sz);
+}
+
+
+ssize_t
+ml_nputstring(struct md_mbuf *p, const char *buf, size_t bufsz)
+a36 1
+	ssize_t		 res, sz;
+d38 1
+a38 3
+	res = 0;
+
+	for (i = 0; i < (int)bufsz; i++) {
+d41 2
+a42 2
+			if (-1 == (sz = ml_nputs(p, "&amp;", 5)))
+				return(-1);
+d45 2
+a46 2
+			if (-1 == (sz = ml_nputs(p, "&quot;", 6)))
+				return(-1);
+d49 2
+a50 2
+			if (-1 == (sz = ml_nputs(p, "&lt;", 4)))
+				return(-1);
+d53 2
+a54 2
+			if (-1 == (sz = ml_nputs(p, "&gt;", 4)))
+				return(-1);
+d57 2
+a58 2
+			if (-1 == (sz = ml_putchar(p, buf[i])))
+				return(-1);
+a60 1
+		res += sz;
+d62 1
+a62 1
+	return(res);
+d66 2
+a67 2
+ssize_t
+ml_nputs(struct md_mbuf *p, const char *buf, size_t sz)
+d70 5
+a74 1
+	return(0 == md_buf_puts(p, buf, sz) ? -1 : (ssize_t)sz);
+d78 2
+a79 2
+ssize_t
+ml_indent(struct md_mbuf *p, int indent)
+a81 1
+	ssize_t		 res, sz;
+d83 3
+a85 1
+	res = sz  0;
+d87 1
+a87 5
+	/* LINTED */
+	for (i = 0; i < MIN(indent, MAXINDENT); i++, res += sz)
+		if (-1 == (sz = ml_nputs(p, "    ", 4)))
+			return(-1);
+	return(res);
+@

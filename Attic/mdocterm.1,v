@@ -1,0 +1,1091 @@
+head	1.27;
+access;
+symbols
+	VERSION_1_9_5:1.27
+	VERSION_1_8_5:1.27
+	VERSION_1_8_1:1.27
+	VERSION_1_7_16:1.27
+	VERSION_1_7_15:1.27
+	OPENBSD_CHECKIN:1.27
+	VERSION_1_6_5:1.27
+	VERSION_1_5_3:1.25
+	VERSION_1_5_1:1.22
+	VERSION_1_4_6:1.16
+	VERSION_1_4_5:1.16
+	VERSION_1_4_4:1.16
+	VERSION_1_4_2:1.15
+	VERSION_1_3_15:1.8
+	VERSION_1_3_13:1.8
+	VERSION_1_3_11:1.8
+	VERSION_1_3_10:1.8
+	VERSION_1_3_9:1.8
+	VERSION_1_3_8:1.8
+	VERSION_1_3_6:1.8
+	VERSION_1_3_5:1.3;
+locks; strict;
+comment	@# @;
+
+
+1.27
+date	2009.03.19.16.17.27;	author kristaps;	state dead;
+branches;
+next	1.26;
+
+1.26
+date	2009.03.19.11.49.00;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.03.17.00.40.17;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.03.15.10.34.11;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.03.15.07.08.52;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.03.14.12.35.02;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.03.13.07.46.10;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.03.12.02.57.36;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.03.11.00.39.58;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.03.09.13.04.01;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.03.08.18.02.36;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.03.04.14.13.05;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.03.04.13.57.35;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.03.03.22.17.19;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.03.03.21.07.01;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.03.02.17.29.16;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.02.27.10.55.16;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.02.27.09.14.02;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.02.27.08.20.15;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.02.25.15.12.26;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.02.25.13.30.53;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.02.23.13.05.06;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.22.11.23.19;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.21.21.00.06;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.27
+log
+@Split mdocterm.c -> main.c terminal.c.
+Abstracted output with -T selector (default ascii).
+Name change: mdocterm -> mandoc.
+Re-imported tree with -Ttree.
+@
+text
+@@
+
+
+1.26
+log
+@Many more ASCII escapes added.
+Stripped nroff punt from mdocterm.c.
+Fixed multiple-file handling for mdocterm.c.
+Cleared up mdoc.h API.
+@
+text
+@a0 182
+.\" $Id: mdocterm.1,v 1.25 2009/03/17 00:40:17 kristaps Exp $
+.\"
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the
+.\" above copyright notice and this permission notice appear in all
+.\" copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+.\" WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+.\" WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+.\" AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+.\" DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+.\" PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+.\" TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+.\" PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate$
+.Dt mdocterm 1
+.Os
+.\" SECTION
+.Sh NAME
+.Nm mdocterm
+.Nd mdoc macro compiler
+.\" SECTION
+.Sh SYNOPSIS
+.Nm mdocterm
+.Op Fl V
+.Op Fl f Ns Ar option...
+.Op Fl W Ns Ar err...
+.Op Ar infile...
+.\" SECTION
+.Sh DESCRIPTION
+The
+.Nm
+utility formats a BSD 
+.Dq mdoc 
+manual page for display on the terminal.  The arguments are as follows:
+.Bl -tag -width XXXXXXXXXXXX
+.\" ITEM
+.It Fl V
+Print version and exit.
+.\" ITEM
+.It Fl f Ns Ar option...
+Override default compiler behaviour.  See 
+.Sx Compiler Options
+for details.
+.\" ITEM
+.It Fl W Ns Ar err...
+Print warning messages.  May be set to 
+.Fl W Ns Ar all
+for all warnings, 
+.Ar compat
+for groff/troff-compatibility warnings, or
+.Ar syntax
+for syntax warnings.  If
+.Fl W Ns Ar error 
+is specified, warnings are considered errors and cause utility
+termination.  Multiple 
+.Fl W
+arguments may be comma-separated, such as
+.Fl W Ns Ar error,all .
+.\" ITEM
+.It Ar infile...
+Read input from zero or more
+.Ar infile .
+If unspecified, reads from stdin.
+.El
+.\" PARAGRAPH
+.Pp
+The
+.Nm
+utility is a formatting front-end for
+.Xr mdoc 3 ,
+which parses the 
+.Dq mdoc
+input, documented at
+.Xr mdoc 7
+and
+.Xr mdoc.samples 7 ,
+into an abstract syntax tree.  
+.\" PARAGRAPH
+.Pp
+By default, 
+.Nm 
+reads from stdin and prints nroff 
+.Qq backspace
+terminal-encoded output to stdout, at this time to a fixed column with
+of 78 characters. 
+.\" PARAGRAPH
+.Pp
+.Ex -std mdocterm
+.\" SUB-SECTION
+.Ss Compiler Options
+Default compiler behaviour may be overriden with the
+.Fl f
+flag.  The available options are as follows:
+.Bl -tag -width XXXXXXXXXXXX -offset XXXX
+.It Fl f Ns Ar ign-scope
+When rewinding the scope of a block macro, forces the compiler to ignore
+scope violations.  This can seriously mangle the resulting tree.
+.It Fl f Ns Ar ign-escape
+Ignore invalid escape sequences.
+.It Fl f Ns Ar ign-macro
+Ignore unknown macros at the start of input lines.
+.El
+.\" PARAGRAPH
+.Pp
+As with the
+.Fl W
+flag, multiple
+.Fl f
+options may be grouped and delimited with a comma.  Using
+.Fl f Ns Ar ign-scope,ign-escape ,
+for example, will try to ignore scope and character-escape errors.
+.\" SUB-SECTION
+.Ss Character Escapes
+The
+.Nm
+utility correctly renders all 
+.Sx Special Characters
+in
+.Xr mdoc 7
+in 7-bit ASCII.
+.Pp
+In the general sense, 
+.Nm
+will make a 
+.Pq best-effort
+to render complex characters; however, if a manual is using considerable
+special characters, some meaning may be lost in translation.
+.\" SECTION
+.Sh EXAMPLES
+To display this manual page:
+.\" PARAGRAPH
+.Pp
+.D1 % mdocterm \-Wall,error mdocterm.1 
+.\" PARAGRAPH
+.Pp
+To pipe a manual page to the pager:
+.Pp
+.D1 % mdocterm mdocterm.1 | less
+.\" SECTION
+.Sh SEE ALSO
+.Xr mdoc 7 ,
+.Xr mdoc 3
+.\" 
+.Sh AUTHORS
+The
+.Nm
+utility was written by 
+.An Kristaps Dzonsons Aq kristaps@@openbsd.org .
+.\" SECTION
+.Sh CAVEATS
+See
+.Xr mdoc 3
+for a list of bugs, caveats, and incomplete macros regarding the
+document parse.
+.Pp
+The 
+.Nm
+utility doesn't yet know how to display the following:
+.Pp
+.Bl -bullet -compact
+.It
+The \-hang 
+.Sq \&Bl
+list is not yet supported.
+.It
+The \-literal and \-unfilled 
+.Sq \&Bd
+displays only accept text contents.
+.It
+The
+.Sq \&Xo/Xc
+pair isn't supported (and never will be).
+.It
+The
+.Sq \&Sm
+macro has no effect, yet.
+.El
+@
+
+
+1.25
+log
+@Mandoc fix.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.24 2009/03/16 23:37:28 kristaps Exp $
+d29 1
+a29 1
+.Op Fl vV
+a30 1
+.Op Fl O Ns Ar option...
+d32 1
+a32 9
+.Op Ar infile
+.Nm mdocterm
+.Op Fl hi
+.Op Fl m Ns Ar name
+.Op Fl n Ns Ar num
+.Op Fl o Ns Ar list
+.Op Fl r Ns Ar cn
+.Op Fl T Ns Ar name
+.Op Ar infile
+d42 1
+a42 4
+.It Fl v
+Print verbose parsing output.
+.\" ITEM
+.It Fl v
+a49 5
+.It Fl O Ns Ar option...
+Front-end options.  See
+.Sx Front-end Options
+for details.
+.\" ITEM
+d65 4
+a68 6
+.It Ar infile
+Read input from
+.Ar infile ,
+which may be 
+.Dq \-
+for stdin.
+a71 9
+If
+.Xr nroff 1
+arguments are supplied on the command line
+.Pq Fl himnorT ,
+these are ignored unless 
+.Xr nroff 1
+is invoked on parse failure.
+.\" PARAGRAPH
+.Pp
+d90 1
+a90 9
+of 78 characters.  If
+.Ar infile
+can't be parsed (isn't valid mdoc, doesn't contain valid syntax, etc.),
+.Xr nroff 1
+is invoked.  If no 
+.Xr nroff 1
+command-line argumnets aren't provided,
+.Fl m Ns Ar andoc
+is implied.
+a94 13
+.Ss Front-end Options
+The default behaviour may be overriden with the
+.Fl O
+flag.  The available options are as follows:
+.Bl -tag -width XXXXXXXXXXXX -offset XXXX
+.It Fl O Ns Ar nopunt
+Don't punt to 
+.Xr nroff 1
+if 
+.Ar infile
+may not be parsed.
+.El
+.\" SUB-SECTION
+a113 2
+and
+.Fl O
+a145 2
+.Xr mdoctree 1 ,
+.Xr mdoclint 1 ,
+@
+
+
+1.24
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.23 2009/03/16 22:19:19 kristaps Exp $
+d125 1
+a125 1
+.Fl m Ar Ns andoc
+@
+
+
+1.23
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.22 2009/03/15 10:34:11 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+d206 1
+a206 1
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+@
+
+
+1.22
+log
+@Backed out all ANSI code.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.21 2009/03/15 07:08:52 kristaps Exp $
+d170 5
+a174 1
+The following table shows all 
+d176 1
+a176 8
+character escapes rendered by
+.Nm .
+Note that the
+.Em Output
+column will render differently whether executed with
+.Xr mdocterm 1 
+or another output filter.
+.\" PARAGRAPH
+d178 6
+a183 114
+Grammatic:
+.Pp
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+.It Em Output
+.Em Input (Name)
+.It \(em
+\\(em (em-dash)
+.It \(en
+\\(en (en-dash)
+.It \-
+\\- (hyphen)
+.It \\
+\\\\ (back-slash)
+.El
+.\" PARAGRAPH
+.Pp
+Enclosures:
+.Pp
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+.It Em Output
+.Em Input (Name)
+.It \(rC
+\\(rC (right brace)
+.It \(lC
+\\(lC (left brace)
+.It \(ra
+\\(ra (right angle)
+.It \(la
+\\(la (left angle)
+.It \(rB
+\\(rB (right bracket)
+.It \(lB
+\\(lB (left bracket)
+.It \q
+\\q (double-quote)
+.It \(lq
+\\(lq (left double-quote)
+.It \(rq
+\\(rq (right double-quote)
+.It \(oq
+\\(oq, \\` (left single-quote)
+.It \(aq
+\\(aq, \\' (right single-quote, apostrophe)
+.El
+.\" PARAGRAPH
+.Pp
+Indicatives:
+.Pp
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+.It Em Output
+.Em Input (Name)
+.It \(<-
+\\(<- (left arrow)
+.It \(->
+\\(-> (right arrow)
+.It \(ua
+\\(ua (up arrow)
+.It \(da
+\\(da (down arrow)
+.El
+.\" PARAGRAPH
+.Pp
+Mathematical:
+.Pp
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+.It Em Output
+.Em Input (Name)
+.It \(<=
+\\(<= (less-than-equal)
+.It \(>=
+\\(>= (greater-than-equal)
+.It \(==
+\\(== (equal)
+.It \(!=
+\\(!= (not equal)
+.It \(if
+\\(if (infinity)
+.It \(na
+\\(na (NaN)*
+.It \(+-
+\\(+- (plus-minus)
+.It \(**
+\\(** (asterisk)
+.El
+.\" PARAGRAPH
+.Pp
+Diacritics:
+.Pp
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+.It Em Output
+.Em Input (Name)
+.It \(ga
+\\(ga (accent grave)
+.It \(aa
+\\(aa (accent accute)
+.El
+.\" PARAGRAPH
+.Pp
+Special symbols:
+.Pp
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+.It Em Output
+.Em Input (Name)
+.It \(bu
+\\(bu (bullet)
+.It \(ba
+\\(ba (bar)
+.It \(co
+\\(co (copyright)
+.El 
+.Pp
+*This is a deviation from the standard, as NaN is usually rendered as
+\\*(Na, which is a deprecated form.  We introduce \\(na, which follows
+the more general syntax.
+@
+
+
+1.21
+log
+@mdoclint accepts multiple files
+mdocterm punts to nroff if it fails parsing
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.20 2009/03/14 12:35:02 kristaps Exp $
+d63 1
+a63 1
+Terminal-encoding options.  See
+a141 2
+.It Fl O Ns Ar ansi
+Use ANSI/VT100 output encoding instead of backspaces.
+d297 1
+a297 1
+To display this manual page on ANSI-capable terminal:
+@
+
+
+1.20
+log
+@Added colour styles (not being used) to struct termp.
+Added nroff style-escape encoding.
+Removed ANSI schema string tables (there's only ANSI and nroff/backspace).
+Pushed styling directly into pword (simpler).
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.19 2009/03/13 07:46:10 kristaps Exp $
+d24 1
+a24 1
+.Nm mdocmterm
+d28 1
+a28 1
+.Nm mdocmterm
+d34 8
+d63 3
+a65 7
+Terminal-encoding options.  May be set to 
+.Fl O Ns Ar ansi
+for ANSI/VT100-encoded output (the default) or
+.Fl O Ns Ar nroff
+for nroff-encoded 
+.Qq backspace
+output.
+d91 9
+d111 1
+d115 2
+a116 2
+reads from stdin and prints ANSI 
+.Qq raw
+d118 9
+a126 1
+of 78 characters.
+d129 16
+a144 1
+.Ex -std mdocmterm
+d165 2
+d302 1
+a302 1
+.D1 % mdocmterm \-Wall,error mdocmterm.1 
+d307 1
+a307 1
+.D1 % mdocterm -Onroff mdocterm.1 | less
+a311 1
+.Xr mdoc.samples 7 ,
+@
+
+
+1.19
+log
+@Added canonical mdoc.7.
+Added \q macro.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.18 2009/03/12 02:57:36 kristaps Exp $
+d31 1
+d54 9
+a131 15
+.Ss Input Encoding
+The
+.Nm
+utility expects its input to be 7-bit ASCII as defined in
+.Xr ascii 7 .
+The only non-graphing characters accepted are spaces,
+.Sq \  ,
+and tabs,
+.Sq \et .
+Tabs are only accepted in literal block-displays and as column
+delimiters.
+.Pp
+Only Unix-style newlines (\en) are accepted; if the newline is escaped,
+the line is concatenated with the next.
+.\" SUB-SECTION
+d133 4
+a136 8
+This section documents the character-escapes accepted by
+.Xr mdocterm 1 .
+Note that the \\x, \\(xx and \\[n] forms are described here; the \\*(xx,
+\\*[n] and \\*x forms described in
+.Xr mdoc.samples 7
+are deprecated, but still rendered.  All one- and two-character
+sequences may be used in the n-character sequence \\[n].
+.Pp
+d260 1
+a260 1
+To display this manual page:
+d268 1
+a268 1
+.D1 % mdocterm mdocterm.1 2>&1 | less \-R
+@
+
+
+1.18
+log
+@Brq/Bro/Brc fixed up and pretty.
+Cleaned up Aq/Sq use of escapes in term.c.
+Added initial -column support.
+Fixed argv returning ARGV_WORD and tokenising anyway.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.17 2009/03/11 00:39:58 kristaps Exp $
+d186 2
+@
+
+
+1.17
+log
+@Expanded perfect htab to use 27 * 26 * 3 space.
+Added Brq, Bro and Brc macros.
+Added lbrace and rbrace to special characters.
+Fixed spacing in braces.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.16 2009/03/09 13:04:01 kristaps Exp $
+d302 1
+a302 1
+The \-hang and \-column
+d304 1
+a304 1
+lists are not yet supported.
+@
+
+
+1.16
+log
+@Added "Input Encoding" section to mdoc*.1.
+Newline-escaped lines are concatenated.
+Added -fign-macro option.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.15 2009/03/08 18:02:36 kristaps Exp $
+d174 4
+@
+
+
+1.15
+log
+@Updated manuals.
+Added -fign-scope and -fign-escape.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.14 2009/03/06 14:13:47 kristaps Exp $
+d109 2
+d122 15
+@
+
+
+1.14
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.13 2009/03/04 14:13:05 kristaps Exp $
+d29 2
+a30 1
+.Op Fl v
+d40 1
+a40 1
+.Bl -tag -width "\-Werr... "
+d45 8
+d87 1
+a87 2
+into an abstract syntax tree.
+.\" PARAGRAPH
+d89 6
+a94 3
+By default,
+.Nm
+reads from stdin and prints terminal-encoded output to stdout.
+d98 12
+d112 7
+a118 3
+.Nm
+is
+.Ud
+d254 1
+a254 1
+.D1 % mdocterm mdocterm.1 | less \-R
+@
+
+
+1.13
+log
+@Fixed some character-escapes.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.12 2009/03/04 13:57:35 kristaps Exp $
+d20 1
+a20 1
+.Dt mdocmterm 1
+@
+
+
+1.12
+log
+@Considerably cleaned up list handling.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.11 2009/03/03 22:17:19 kristaps Exp $
+d121 1
+a121 1
+\\ (back-slash)
+d130 4
+d137 1
+a137 1
+\\(rB (left bracket)
+d141 1
+a141 1
+\\(rq, \\' (right double-quote)
+d143 1
+a143 1
+\\(lq, \\` (left single-quote)
+d145 1
+a145 1
+\\(aq (right single-quote, apostrophe)
+d175 1
+a175 1
+\\(== (greater-than-equal)
+d227 1
+a227 1
+.D1 % mdocterm mdocterm.1 | less -R
+@
+
+
+1.11
+log
+@-inset and -diag lists now supported.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.10 2009/03/03 21:07:01 kristaps Exp $
+d261 4
+@
+
+
+1.10
+log
+@Character-escape addition simplified (see README.addescape, also added).
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.9 2009/03/02 17:29:16 kristaps Exp $
+d250 1
+a250 1
+Only \-bullet , \-dash , \-enum , \-hyphen , \-tag and \-ohang
+d252 1
+a252 1
+lists are supported.
+@
+
+
+1.9
+log
+@Noted lacking areas in mdocterm.1.
+Put styles into symtab (for real this time).
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.8 2009/02/27 10:55:16 kristaps Exp $
+d96 2
+a97 2
+Note that the \\x, \\(xx and \\[n] forms are described here; the \\*(xx
+and \\*x forms described in
+d99 2
+a100 2
+are deprecated, but still correctly rendered.  For all two-character
+sequences, \\(xx is equivalent to the n-character \\[xx].
+d109 16
+d137 1
+a137 1
+\\(rq (right double-quote)
+d139 1
+a139 1
+\\(lq (left single-quote)
+d180 2
+a184 4
+*This is a deviation from the standard, as NaN is usually rendered as
+\\*(Na, which is a deprecated form.  We introduce \\(na, which follows
+the more general syntax.
+.Pp
+d206 2
+d209 4
+@
+
+
+1.8
+log
+@Slowly decoupling mdoc(3) from being OpenBSD-only.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.7 2009/02/27 09:14:02 kristaps Exp $
+d223 19
+@
+
+
+1.7
+log
+@Character-encoding stuff documented, expanded.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.6 2009/02/27 08:20:15 kristaps Exp $
+a113 2
+.El 
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+a133 2
+.El 
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+a149 2
+.El 
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+a175 2
+.El 
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+a187 2
+.El 
+.Bl -tag -width "OutputXXXX" -offset "XXXX" -compact
+@
+
+
+1.6
+log
+@More character-encoding.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.5 2009/02/25 15:12:26 kristaps Exp $
+d92 111
+@
+
+
+1.5
+log
+@Added [almost] all list types.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.4 2009/02/25 13:30:53 kristaps Exp $
+a121 7
+.Pp
+For front-end formatting, the
+.Sq -hang ,
+.Sq -inset
+and
+.Sq -column
+list types aren't yet supported.
+@
+
+
+1.4
+log
+@Support for nested lists added.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.3 2009/02/23 13:05:06 kristaps Exp $
+d122 7
+@
+
+
+1.3
+log
+@Added mdoclint.
+`make regress' uses mdoclint
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.2 2009/02/22 11:23:19 kristaps Exp $
+d120 2
+a121 1
+for a list of bugs, caveats, and incomplete macros.
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.1 2009/02/21 21:00:06 kristaps Exp $
+d106 1
+@
+
+
+1.1
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.c,v 1.45 2009/02/20 07:43:15 kristaps Exp $
+d67 1
+d98 5
+@

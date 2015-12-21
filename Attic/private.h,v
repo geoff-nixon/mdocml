@@ -1,0 +1,2850 @@
+head	1.92;
+access;
+symbols
+	VERSION_1_9_5:1.92
+	VERSION_1_8_5:1.92
+	VERSION_1_8_1:1.92
+	VERSION_1_7_16:1.92
+	VERSION_1_7_15:1.92
+	OPENBSD_CHECKIN:1.92
+	VERSION_1_6_5:1.90
+	VERSION_1_6_2:1.90
+	VERSION_1_5_3:1.89
+	VERSION_1_5_1:1.88
+	VERSION_1_4_6:1.88
+	VERSION_1_4_5:1.88
+	VERSION_1_4_4:1.88
+	VERSION_1_4_2:1.88
+	VERSION_1_3_15:1.84
+	VERSION_1_3_13:1.84
+	VERSION_1_3_11:1.84
+	VERSION_1_3_10:1.84
+	VERSION_1_3_9:1.83
+	VERSION_1_3_8:1.83
+	VERSION_1_3_6:1.83
+	VERSION_1_3_5:1.82
+	VERSION_1_2_0:1.71
+	VERSION_1_1_0:1.63
+	VERSION_1_0_2:1.38
+	VERSION_1_0_1:1.33;
+locks; strict;
+comment	@ * @;
+
+
+1.92
+date	2009.03.23.14.22.11;	author kristaps;	state dead;
+branches;
+next	1.91;
+
+1.91
+date	2009.03.21.13.09.29;	author kristaps;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2009.03.20.15.14.01;	author kristaps;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2009.03.08.19.47.40;	author kristaps;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2009.03.08.19.28.09;	author kristaps;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2009.03.08.11.41.22;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2009.02.28.13.47.36;	author kristaps;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2009.02.26.16.08.11;	author kristaps;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2009.02.24.14.52.55;	author kristaps;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2009.02.24.12.20.52;	author kristaps;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2009.02.24.11.43.13;	author kristaps;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2009.02.23.12.45.19;	author kristaps;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2009.02.22.14.31.08;	author kristaps;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2009.02.21.21.00.06;	author kristaps;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2009.02.20.23.35.36;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2009.01.22.14.56.21;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2009.01.21.11.35.26;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2009.01.20.22.55.46;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2009.01.20.20.56.21;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2009.01.20.13.05.28;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2009.01.20.12.51.28;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2009.01.19.17.51.33;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2009.01.17.20.10.36;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2009.01.17.16.15.27;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2009.01.17.14.04.25;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2009.01.16.12.23.25;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2009.01.15.17.38.58;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2009.01.14.11.58.24;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2009.01.12.16.39.57;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2009.01.09.14.45.44;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2009.01.08.14.55.59;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2009.01.07.16.11.40;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2009.01.07.15.57.14;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2009.01.07.15.53.00;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2009.01.06.15.49.44;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2009.01.05.16.11.14;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2009.01.05.14.14.04;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2009.01.03.22.10.22;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2009.01.01.20.40.16;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2008.12.30.19.06.03;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2008.12.30.18.15.26;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2008.12.30.13.43.53;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2008.12.29.18.08.44;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2008.12.29.12.19.41;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2008.12.28.21.25.09;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2008.12.28.00.34.20;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2008.12.23.05.30.49;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2008.12.17.17.18.38;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2008.12.15.03.13.01;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2008.12.15.01.54.58;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2008.12.10.14.42.46;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2008.12.10.13.15.55;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2008.12.10.12.09.47;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2008.12.10.12.05.33;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2008.12.10.10.43.57;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2008.12.09.17.09.12;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2008.12.08.16.29.57;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2008.12.08.12.46.28;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2008.12.07.22.40.18;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2008.12.06.21.10.31;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2008.12.04.23.10.51;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2008.12.04.19.31.57;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2008.12.04.16.34.59;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2008.12.04.16.19.52;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2008.12.04.11.25.29;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2008.12.03.19.21.58;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2008.12.03.14.39.59;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2008.12.02.18.26.57;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2008.12.02.13.20.24;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2008.12.01.15.32.36;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2008.11.30.21.41.35;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2008.11.30.20.53.34;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2008.11.30.18.50.44;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2008.11.29.16.11.42;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2008.11.29.14.14.21;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2008.11.28.15.25.49;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2008.11.28.11.21.12;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2008.11.27.17.27.50;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2008.11.27.16.54.58;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2008.11.27.14.02.41;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2008.11.27.11.23.51;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2008.11.26.21.42.59;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.11.26.16.50.34;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.11.25.16.49.57;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.11.25.12.14.02;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.11.24.18.32.39;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.11.24.14.24.55;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.11.24.08.50.33;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.11.23.22.30.53;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.11.23.16.53.18;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.92
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@@
+
+
+1.91
+log
+@`Em' accepts empty tokens.
+Punctuation fully fixed (per-reserved-word).
+Sm enabled.
+@
+text
+@a0 160
+/* $Id: private.h,v 1.90 2009/03/20 15:14:01 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef PRIVATE_H
+#define PRIVATE_H
+
+#include "mdoc.h"
+
+enum	mdoc_next {
+	MDOC_NEXT_SIBLING = 0,
+	MDOC_NEXT_CHILD
+};
+
+struct	mdoc {
+	void		 *data;
+	struct mdoc_cb	  cb;
+	void		 *htab;
+	int		  linetok;
+	int		  flags;
+#define	MDOC_HALT	 (1 << 0)
+#define	MDOC_LITERAL	 (1 << 1)
+	int		  pflags;
+	enum mdoc_next	  next;
+	struct mdoc_node *last;
+	struct mdoc_node *first;
+	struct mdoc_meta  meta;
+	enum mdoc_sec	  lastnamed;
+	enum mdoc_sec	  lastsec;
+};
+
+
+#define	MACRO_PROT_ARGS	struct mdoc *mdoc, int tok, int line, \
+			int ppos, int *pos, char *buf
+
+struct	mdoc_macro {
+	int		(*fp)(MACRO_PROT_ARGS);
+	int		  flags;
+#define	MDOC_CALLABLE	 (1 << 0)
+#define	MDOC_PARSED	 (1 << 1)
+#define	MDOC_EXPLICIT	 (1 << 2)
+#define	MDOC_PROLOGUE	 (1 << 3)
+#define	MDOC_IGNDELIM	 (1 << 4) 
+	/* Reserved words in arguments treated as text. */
+};
+
+#define	mdoc_nwarn(mdoc, node, type, fmt, ...) \
+		  mdoc_vwarn((mdoc), (node)->line, \
+		  (node)->pos, (type), (fmt), ##__VA_ARGS__)
+
+#define	mdoc_nerr(mdoc, node, fmt, ...) \
+		  mdoc_verr((mdoc), (node)->line, \
+		  (node)->pos, (fmt), ##__VA_ARGS__)
+
+#define	mdoc_warn(mdoc, type, fmt, ...) \
+		  mdoc_vwarn((mdoc), (mdoc)->last->line, \
+		  (mdoc)->last->pos, (type), (fmt), ##__VA_ARGS__)
+
+#define	mdoc_err(mdoc, fmt, ...) \
+		  mdoc_verr((mdoc), (mdoc)->last->line, \
+		  (mdoc)->last->pos, (fmt), ##__VA_ARGS__)
+
+#define	mdoc_msg(mdoc, fmt, ...) \
+		  mdoc_vmsg((mdoc), (mdoc)->last->line, \
+		  (mdoc)->last->pos, (fmt), ##__VA_ARGS__)
+
+#define	mdoc_pmsg(mdoc, line, pos, fmt, ...) \
+		  mdoc_vmsg((mdoc), (line), \
+	  	  (pos), (fmt), ##__VA_ARGS__)
+
+#define	mdoc_pwarn(mdoc, line, pos, type, fmt, ...) \
+		  mdoc_vwarn((mdoc), (line), \
+	  	  (pos), (type), (fmt), ##__VA_ARGS__)
+
+#define	mdoc_perr(mdoc, line, pos, fmt, ...) \
+		  mdoc_verr((mdoc), (line), \
+	  	  (pos), (fmt), ##__VA_ARGS__)
+
+extern	const struct mdoc_macro *const mdoc_macros;
+
+__BEGIN_DECLS
+
+int		  mdoc_vwarn(struct mdoc *, int, int, 
+			enum mdoc_warn, const char *, ...);
+void		  mdoc_vmsg(struct mdoc *, int, int, 
+			const char *, ...);
+int		  mdoc_verr(struct mdoc *, int, int, 
+			const char *, ...);
+int		  mdoc_macro(MACRO_PROT_ARGS);
+int		  mdoc_word_alloc(struct mdoc *, 
+			int, int, const char *);
+int		  mdoc_elem_alloc(struct mdoc *, int, int, 
+			int, struct mdoc_arg *);
+int		  mdoc_block_alloc(struct mdoc *, int, int, 
+			int, struct mdoc_arg *);
+int		  mdoc_root_alloc(struct mdoc *);
+int		  mdoc_head_alloc(struct mdoc *, int, int, int);
+int		  mdoc_tail_alloc(struct mdoc *, int, int, int);
+int		  mdoc_body_alloc(struct mdoc *, int, int, int);
+void		  mdoc_node_free(struct mdoc_node *);
+void		  mdoc_node_freelist(struct mdoc_node *);
+void		 *mdoc_tokhash_alloc(void);
+int		  mdoc_tokhash_find(const void *, const char *);
+void		  mdoc_tokhash_free(void *);
+int		  mdoc_iscdelim(char);
+int		  mdoc_isdelim(const char *);
+size_t		  mdoc_isescape(const char *);
+enum	mdoc_sec  mdoc_atosec(const char *);
+time_t		  mdoc_atotime(const char *);
+size_t		  mdoc_macro2len(int);
+const char	 *mdoc_a2arch(const char *);
+const char	 *mdoc_a2vol(const char *);
+const char	 *mdoc_a2msec(const char *);
+int		  mdoc_valid_pre(struct mdoc *, 
+			const struct mdoc_node *);
+int		  mdoc_valid_post(struct mdoc *);
+int		  mdoc_action_pre(struct mdoc *, 
+			const struct mdoc_node *);
+int		  mdoc_action_post(struct mdoc *);
+int		  mdoc_argv(struct mdoc *, int, int,
+			struct mdoc_arg **, int *, char *);
+#define	ARGV_ERROR	(-1)
+#define	ARGV_EOLN	(0)
+#define	ARGV_ARG	(1)
+#define	ARGV_WORD	(2)
+void		  mdoc_argv_free(struct mdoc_arg *);
+int		  mdoc_args(struct mdoc *, int,
+			int *, char *, int, char **);
+#define	ARGS_ERROR	(-1)
+#define	ARGS_EOLN	(0)
+#define	ARGS_WORD	(1)
+#define	ARGS_PUNCT	(2)
+#define	ARGS_QWORD	(3)
+#define	ARGS_PHRASE	(4)
+int		  xstrlcpys(char *, const struct mdoc_node *, size_t);
+int	  	  xstrlcat(char *, const char *, size_t);
+int	  	  xstrlcpy(char *, const char *, size_t);
+int	  	  xstrcmp(const char *, const char *);
+void	 	 *xcalloc(size_t, size_t);
+void	 	 *xrealloc(void *, size_t);
+char	 	 *xstrdup(const char *);
+int		  macro_end(struct mdoc *);
+
+__END_DECLS
+
+#endif /*!PRIVATE_H*/
+@
+
+
+1.90
+log
+@Support for `Bd' of all types (see mdoc.7 for newline/tab rules).
+Renamed term.c and terminal.c functions to be term_.
+Some bugfixes to lists.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.89 2009/03/16 22:19:19 kristaps Exp $ */
+d120 1
+@
+
+
+1.89
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.88 2009/03/08 19:47:40 kristaps Exp $ */
+d36 1
+d130 2
+a131 1
+int		  mdoc_action_pre(struct mdoc *, struct mdoc_node *);
+@
+
+
+1.88
+log
+@Removed some unnecesary functions.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.87 2009/03/08 19:28:09 kristaps Exp $ */
+d56 2
+@
+
+
+1.87
+log
+@Fix left-over prototype.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.86 2009/03/08 11:41:22 kristaps Exp $ */
+a99 1
+
+a112 2
+void		  mdoc_sibling(struct mdoc *, int, struct mdoc_node **,
+			struct mdoc_node **, struct mdoc_node *);
+a118 1
+
+a120 1
+
+a123 1
+
+a128 1
+
+a143 1
+
+a147 1
+int	  	  xstrncmp(const char *, const char *, size_t);
+a150 1
+
+@
+
+
+1.86
+log
+@BROKEN CHECK-IN.  Wide-ranging updates.
+Removed libmdoc internal argv limit (all dynamic).
+Removed "data" union in mdoc_node (to be selectively re-added).
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.85 2009/03/06 14:13:47 kristaps Exp $ */
+d122 1
+a122 1
+enum	mdoc_msec mdoc_atomsec(const char *);
+@
+
+
+1.85
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.84 2009/02/28 13:47:36 kristaps Exp $ */
+d36 1
+a45 8
+/* Hard-limit of macro arguments. */
+
+#define	MDOC_LINEARG_MAX 9
+
+/* Suggested limit of macro arguments. */
+
+#define	MDOC_LINEARG_SOFTMAX 9
+
+a101 1
+int		  mdoc_find(const struct mdoc *, const char *);
+d105 1
+a105 1
+			int, size_t, const struct mdoc_arg *);
+d107 1
+a107 1
+			int, size_t, const struct mdoc_arg *);
+d136 2
+a137 2
+int		  mdoc_argv(struct mdoc *, int, int, 
+			struct mdoc_arg *, int *, char *);
+d142 1
+a142 1
+void		  mdoc_argv_free(int, struct mdoc_arg *);
+@
+
+
+1.84
+log
+@Added support for dynamic -width detection for -tag lists.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.83 2009/02/26 16:08:11 kristaps Exp $ */
+a130 2
+enum	mdoc_vol  mdoc_atovol(const char *);
+enum	mdoc_arch mdoc_atoarch(const char *);
+d134 3
+a136 2
+char		 *mdoc_type2a(enum mdoc_type);
+char		 *mdoc_node2a(struct mdoc_node *);
+d160 1
+a160 1
+int		  xstrlcats(char *, const struct mdoc_node *, size_t);
+@
+
+
+1.83
+log
+@Support for macro widths (/usr/share/tmac/mdoc/doc-common).
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.82 2009/02/24 14:52:55 kristaps Exp $ */
+d167 1
+@
+
+
+1.82
+log
+@Added several more mdocterm outputs.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.81 2009/02/24 12:20:52 kristaps Exp $ */
+d134 1
+@
+
+
+1.81
+log
+@Added character-encoding checks.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.80 2009/02/24 11:43:13 kristaps Exp $ */
+a132 1
+enum	mdoc_att  mdoc_atoatt(const char *);
+@
+
+
+1.80
+log
+@Escape-sequence validation in place (for nodes).
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.79 2009/02/23 12:45:19 kristaps Exp $ */
+d139 2
+a140 1
+int		  mdoc_valid_pre(struct mdoc *, struct mdoc_node *);
+@
+
+
+1.79
+log
+@More in-file documentation and Linux-isation.
+Moved mdoc_macros table definition into macro.c, where it belongs.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.78 2009/02/22 14:31:08 kristaps Exp $ */
+d128 1
+@
+
+
+1.78
+log
+@Cleaned up validation source a bit.
+Fixed `Nm' and `Nd' detection.
+Added a few more terminal outputs.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.77 2009/02/21 21:00:06 kristaps Exp $ */
+a166 9
+int		  macro_obsolete(MACRO_PROT_ARGS);
+int		  macro_constant(MACRO_PROT_ARGS);
+int		  macro_constant_scoped(MACRO_PROT_ARGS);
+int		  macro_constant_delimited(MACRO_PROT_ARGS);
+int		  macro_text(MACRO_PROT_ARGS);
+int		  macro_scoped(MACRO_PROT_ARGS);
+int		  macro_scoped_close(MACRO_PROT_ARGS);
+int		  macro_scoped_line(MACRO_PROT_ARGS);
+int		  macro_prologue(MACRO_PROT_ARGS);
+@
+
+
+1.77
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.76 2009/02/20 23:35:36 kristaps Exp $ */
+d41 1
+@
+
+
+1.76
+log
+@More flesh in terminal-encoder.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.75 2009/01/22 14:56:21 kristaps Exp $ */
+a125 1
+int		  mdoc_isdelim(const char *);
+a133 5
+/* FIXME: these three are only for output channels. */
+char 		 *mdoc_arch2a(enum mdoc_arch);
+char 		 *mdoc_vol2a(enum mdoc_vol);
+char 		 *mdoc_msec2a(enum mdoc_msec);
+
+@
+
+
+1.75
+log
+@Fix-ups to macro.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.74 2009/01/21 11:35:26 kristaps Exp $ */
+d135 5
+@
+
+
+1.74
+log
+@More validation on prologue/first NAME section.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.73 2009/01/20 22:55:46 kristaps Exp $ */
+d157 1
+@
+
+
+1.73
+log
+@Added regression tests (just for prologue, for now).
+Minor fixes in parsing prologue.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.72 2009/01/20 20:56:21 kristaps Exp $ */
+a35 1
+#define	MDOC_BODYPARSE	 (1 << 1)
+d40 1
+a40 2
+	enum mdoc_sec	  sec_lastn;
+	enum mdoc_sec	  sec_last;
+@
+
+
+1.72
+log
+@In-progress migration to ARGV separation.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.71 2009/01/20 13:05:28 kristaps Exp $ */
+d164 1
+@
+
+
+1.71
+log
+@Quoted-literals handled correctly.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.70 2009/01/20 12:51:28 kristaps Exp $ */
+d63 1
+a63 3
+#define	MDOC_QUOTABLE	 (1 << 3)
+#define	MDOC_PROLOGUE	 (1 << 4)
+#define	MDOC_TABSEP	 (1 << 5)
+a159 4
+#define	ARGS_QUOTED	(1 << 0)
+#define	ARGS_DELIM	(1 << 1)
+#define	ARGS_TABSEP	(1 << 2)
+
+@
+
+
+1.70
+log
+@Moved prologue-pruning into action.c.
+Added line-arg softmax.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.69 2009/01/19 17:51:33 kristaps Exp $ */
+d160 1
+@
+
+
+1.69
+log
+@More correct validation.
+Elision of prologue macros from main tree.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.68 2009/01/17 20:10:36 kristaps Exp $ */
+d33 1
+d36 1
+d46 1
+a46 1
+/* FIXME: it's 9 (this isn't used properly). */
+d48 5
+a52 1
+#define	MDOC_LINEARG_MAX 12
+a65 1
+#define	MDOC_NOKEEP	 (1 << 6)
+@
+
+
+1.68
+log
+@Lint checks.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.67 2009/01/17 16:15:27 kristaps Exp $ */
+d60 1
+d119 1
+@
+
+
+1.67
+log
+@Documentation, more validations, cleaned up actions, added Nm action.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.66 2009/01/17 14:04:25 kristaps Exp $ */
+d133 1
+@
+
+
+1.66
+log
+@Separating output filters.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.65 2009/01/16 12:23:25 kristaps Exp $ */
+d125 1
+a125 1
+enum	mdoc_sec  mdoc_atosec(size_t, const char **);
+d157 1
+@
+
+
+1.65
+log
+@Clean-ups & documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.64 2009/01/15 17:38:58 kristaps Exp $ */
+d132 2
+@
+
+
+1.64
+log
+@Broken build (changing err/warn/msg function prototypes for clarity).
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.63 2009/01/14 11:58:24 kristaps Exp $ */
+d44 4
+@
+
+
+1.63
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.62 2009/01/12 16:39:57 kristaps Exp $ */
+d48 8
+a55 8
+	int	(*fp)(MACRO_PROT_ARGS);
+	int	  flags;
+#define	MDOC_CALLABLE	(1 << 0)
+#define	MDOC_PARSED	(1 << 1)
+#define	MDOC_EXPLICIT	(1 << 2)
+#define	MDOC_QUOTABLE	(1 << 3)
+#define	MDOC_PROLOGUE	(1 << 4)
+#define	MDOC_TABSEP	(1 << 5)
+d58 32
+d94 7
+a100 11
+#define	mdoc_vwarn(m, n, t) \
+		  mdoc_pwarn((m), (n)->line, (n)->pos, (t))
+#define	mdoc_verr(m, n, t) \
+		  mdoc_perr((m), (n)->line, (n)->pos, (t))
+#define	mdoc_warn(m, t) \
+		  mdoc_pwarn((m), (m)->last->line, (m)->last->pos, (t))
+#define	mdoc_err(m, t) \
+		  mdoc_perr((m), (m)->last->line, (m)->last->pos, (t))
+int		  mdoc_pwarn(struct mdoc *, int, int, enum mdoc_warn);
+int		  mdoc_perr(struct mdoc *, int, int, enum mdoc_err);
+void		  mdoc_msg(struct mdoc *, const char *, ...);
+@
+
+
+1.62
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.61 2009/01/09 14:45:44 kristaps Exp $ */
+d55 1
+a55 2
+#define	MDOC_NESTED	(1 << 5)
+#define	MDOC_TABSEP	(1 << 6)
+d135 1
+a135 1
+int		  macro_close_explicit(MACRO_PROT_ARGS);
+@
+
+
+1.61
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.60 2009/01/08 14:55:59 kristaps Exp $ */
+d56 1
+d122 1
+@
+
+
+1.60
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.59 2009/01/07 16:11:40 kristaps Exp $ */
+d81 1
+@
+
+
+1.59
+log
+@All macros have lines/positions.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.58 2009/01/07 15:57:14 kristaps Exp $ */
+d62 11
+a72 3
+int		  mdoc_err(struct mdoc *, int, int, enum mdoc_err);
+int		  mdoc_warn(struct mdoc *, int, int, enum mdoc_warn);
+void		  mdoc_msg(struct mdoc *, int, const char *, ...);
+d75 1
+a75 1
+void		  mdoc_word_alloc(struct mdoc *, 
+d77 1
+a77 1
+void		  mdoc_elem_alloc(struct mdoc *, int, int, 
+d79 1
+a79 1
+void		  mdoc_block_alloc(struct mdoc *, int, int, 
+d81 3
+a83 3
+void		  mdoc_head_alloc(struct mdoc *, int, int, int);
+void		  mdoc_tail_alloc(struct mdoc *, int, int, int);
+void		  mdoc_body_alloc(struct mdoc *, int, int, int);
+d99 4
+a102 4
+int		  mdoc_valid_pre(struct mdoc *, int, int,
+			int, const struct mdoc_arg *);
+int		  mdoc_valid_post(struct mdoc *, int);
+int		  mdoc_action(struct mdoc *, int);
+d104 1
+a104 1
+int		  mdoc_argv(struct mdoc *, int, 
+@
+
+
+1.58
+log
+@Added line numbering.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.57 2009/01/07 15:53:00 kristaps Exp $ */
+d67 2
+a68 1
+void		  mdoc_word_alloc(struct mdoc *, int, const char *);
+d70 1
+a70 1
+			size_t, const struct mdoc_arg *);
+d72 4
+a75 4
+			size_t, const struct mdoc_arg *);
+void		  mdoc_head_alloc(struct mdoc *, int, int);
+void		  mdoc_tail_alloc(struct mdoc *, int, int);
+void		  mdoc_body_alloc(struct mdoc *, int, int);
+@
+
+
+1.57
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.56 2009/01/06 15:49:44 kristaps Exp $ */
+d43 4
+d48 1
+a48 1
+	int	(*fp)(struct mdoc *, int, int, int *, char *);
+a59 3
+#define	MACRO_PROT_ARGS	struct mdoc *mdoc, int tok, \
+			int ppos, int *pos, char *buf
+
+d65 1
+a65 1
+int		  mdoc_macro(struct mdoc *, int, int, int *, char *);
+@
+
+
+1.56
+log
+@Memory leak, some mdoc(7) conformities.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.55 2009/01/05 16:11:14 kristaps Exp $ */
+d34 1
+d91 2
+a92 2
+int		  mdoc_valid_post(struct mdoc *, int, int);
+int		  mdoc_action(struct mdoc *, int, int);
+d126 1
+@
+
+
+1.55
+log
+@Finished initial parse sequence.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.54 2009/01/05 14:14:04 kristaps Exp $ */
+d46 5
+a50 4
+#define	MDOC_EXPLICIT	(1 << 1)
+#define	MDOC_QUOTABLE	(1 << 2)
+#define	MDOC_PROLOGUE	(1 << 3)
+#define	MDOC_NESTED	(1 << 4)
+@
+
+
+1.54
+log
+@Actions and validations properly added.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.53 2009/01/03 22:10:22 kristaps Exp $ */
+d49 1
+d70 1
+a115 3
+int		  macro_constant_quoted(MACRO_PROT_ARGS);
+int		  macro_constant_obsolete(MACRO_PROT_ARGS);
+int		  macro_constant_argv(MACRO_PROT_ARGS);
+d117 1
+a122 1
+int		  macro_scoped_pline(MACRO_PROT_ARGS);
+@
+
+
+1.53
+log
+@Huge changes.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.52 2009/01/01 20:40:16 kristaps Exp $ */
+d88 1
+@
+
+
+1.52
+log
+@Broke apart macro_prologuexxx into prologue.
+Fixed validation for line-scoped.
+Merged const_arg and const.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.51 2008/12/30 19:06:03 kristaps Exp $ */
+d65 1
+a65 2
+			size_t, const struct mdoc_arg *, 
+			size_t, const char **);
+a84 1
+int		  mdoc_valid_post(struct mdoc *, int, int);
+a85 1
+			int, const char *[],
+d87 1
+@
+
+
+1.51
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.50 2008/12/30 18:15:26 kristaps Exp $ */
+d24 5
+d33 2
+d48 1
+d69 1
+a69 2
+void		  mdoc_head_alloc(struct mdoc *, 
+			int, int, size_t, const char **);
+d86 2
+a87 1
+int		  mdoc_valid(struct mdoc *, int, int,
+d93 4
+d121 2
+a122 2
+int		  macro_scoped_implicit(MACRO_PROT_ARGS);
+int		  macro_scoped_explicit(MACRO_PROT_ARGS);
+d125 1
+a125 3
+int		  macro_prologue_ddate(MACRO_PROT_ARGS);
+int		  macro_prologue_dtitle(MACRO_PROT_ARGS);
+int		  macro_prologue_os(MACRO_PROT_ARGS);
+@
+
+
+1.50
+log
+@Validation fully works.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.49 2008/12/30 13:43:53 kristaps Exp $ */
+d40 1
+a40 1
+#define	MDOC_PPOST	(1 << 2) /* Linescope: punctuation post-line. */
+d102 3
+@
+
+
+1.49
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.48 2008/12/29 18:08:44 kristaps Exp $ */
+d79 4
+@
+
+
+1.48
+log
+@More macros.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.47 2008/12/29 12:19:41 kristaps Exp $ */
+d98 1
+@
+
+
+1.47
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.46 2008/12/28 21:25:09 kristaps Exp $ */
+d76 1
+d98 1
+@
+
+
+1.46
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.45 2008/12/28 00:34:20 kristaps Exp $ */
+d97 1
+@
+
+
+1.45
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.44 2008/12/23 05:30:49 kristaps Exp $ */
+d40 1
+d100 2
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.43 2008/12/17 17:18:38 kristaps Exp $ */
+d70 1
+d77 2
+a78 3
+int		  mdoc_argv_lookup(int, const char *);
+int		  mdoc_argv_parse(struct mdoc *, int, 
+			int, struct mdoc_arg *, int *, char *);
+d80 9
+@
+
+
+1.43
+log
+@Prologue Dd and Dt macros.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.42 2008/12/15 03:13:01 kristaps Exp $ */
+d66 3
+a68 3
+void		 *mdoc_hash_alloc(void);
+int		  mdoc_hash_find(const void *, const char *);
+void		  mdoc_hash_free(void *);
+d76 11
+d89 1
+d92 1
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.41 2008/12/15 01:54:58 kristaps Exp $ */
+d30 1
+a30 1
+
+d44 3
+d70 10
+@
+
+
+1.41
+log
+@Purged all old files in favour of new design.  Selective reintegration.
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.h,v 1.10 2008/12/10 17:31:57 kristaps Exp $ */
+d30 3
+a48 1
+
+a50 1
+
+a59 1
+
+a60 1
+
+a62 1
+
+d66 1
+@
+
+
+1.40
+log
+@Made noop the default filter.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.39 2008/12/10 13:15:55 kristaps Exp $ */
+d22 1
+a22 2
+#include <stdio.h>
+#include <time.h>
+d24 6
+a29 259
+#include "libmdocml.h"
+
+struct	md_rbuf {
+	int		 fd;		/* Open descriptor. */
+	char		*name;		/* Name of file. */
+	char		*buf;		/* Buffer. */
+	size_t		 bufsz;		/* Size of buffer. */
+	size_t		 line;		/* Current line number. */
+#define	MD_LINE	 	(BUFSIZ)
+	char		 linebuf[MD_LINE];
+};
+
+struct	md_mbuf {
+	int		 fd;		/* Open descriptor. */
+	char		*name;		/* Name of file. */
+	char		*buf;		/* Buffer. */
+	size_t		 bufsz;		/* Size of buffer. */
+	size_t		 pos;		/* Position in buffer. */
+};
+
+#define	ROFFTok_Sp_A	 0
+#define	ROFFTok_Sp_B	 1
+#define	ROFFTok_Sp_F	 2
+#define	ROFFTok_Sp_N	 3
+#define	ROFFTok_Sp_R	 4
+#define	ROFFTok_Sp_T	 5
+#define	ROFFTok_Sp_V	 6
+#define	ROFFTok_Space	 7
+#define	ROFFTok_Null	 8
+#define	ROFFTok_Hyphen	 9
+#define	ROFFTok_Em	 10
+#define	ROFFTok_En	 11
+#define	ROFFTok_Ge	 12
+#define	ROFFTok_Le	 13
+#define	ROFFTok_Rquote	 14
+#define	ROFFTok_Lquote	 15
+#define	ROFFTok_Uparrow	 16
+#define	ROFFTok_Acute	 17
+#define	ROFFTok_Grave	 18
+#define	ROFFTok_Pi	 19
+#define	ROFFTok_Ne	 20
+#define	ROFFTok_Lt	 21
+#define	ROFFTok_Gt	 22
+#define	ROFFTok_Plusmin	 23
+#define	ROFFTok_Infty	 24
+#define	ROFFTok_Bar	 25
+#define	ROFFTok_Nan	 26
+#define	ROFFTok_Quote	 27
+#define	ROFFTok_Sp_0	 28
+#define	ROFFTok_Slash	 29
+#define	ROFFTok_MAX	 30
+
+#define	ROFF___	 	 0
+#define	ROFF_Dd		 1
+#define	ROFF_Dt		 2
+#define	ROFF_Os		 3
+#define	ROFF_Sh		 4
+#define	ROFF_Ss		 5
+#define	ROFF_Pp		 6
+#define	ROFF_D1		 7
+#define	ROFF_Dl		 8
+#define	ROFF_Bd		 9
+#define	ROFF_Ed		 10
+#define	ROFF_Bl		 11
+#define	ROFF_El		 12
+#define	ROFF_It		 13
+#define	ROFF_Ad		 14
+#define	ROFF_An		 15
+#define	ROFF_Ar		 16
+#define	ROFF_Cd		 17
+#define	ROFF_Cm		 18
+#define	ROFF_Dv		 19
+#define	ROFF_Er		 20
+#define	ROFF_Ev		 21
+#define	ROFF_Ex		 22
+#define	ROFF_Fa		 23
+#define	ROFF_Fd		 24
+#define	ROFF_Fl		 25
+#define	ROFF_Fn		 26
+#define	ROFF_Ft		 27
+#define	ROFF_Ic		 28
+#define	ROFF_In		 29
+#define	ROFF_Li		 30
+#define	ROFF_Nd		 31
+#define	ROFF_Nm		 32
+#define	ROFF_Op		 33
+#define	ROFF_Ot		 34
+#define	ROFF_Pa		 35
+#define	ROFF_Rv		 36
+#define	ROFF_St		 37
+#define	ROFF_Va		 38
+#define	ROFF_Vt		 39
+#define	ROFF_Xr		 40
+#define	ROFF__A		 41
+#define	ROFF__B		 42
+#define	ROFF__D		 43
+#define	ROFF__I		 44
+#define	ROFF__J		 45
+#define	ROFF__N		 46
+#define	ROFF__O		 47
+#define	ROFF__P		 48
+#define	ROFF__R		 49
+#define	ROFF__T		 50
+#define	ROFF__V		 51
+#define ROFF_Ac		 52
+#define ROFF_Ao		 53
+#define ROFF_Aq		 54
+#define ROFF_At		 55
+#define ROFF_Bc		 56
+#define ROFF_Bf		 57
+#define ROFF_Bo		 58
+#define ROFF_Bq		 59
+#define ROFF_Bsx	 60
+#define ROFF_Bx		 61
+#define ROFF_Db		 62
+#define ROFF_Dc		 63
+#define ROFF_Do		 64
+#define ROFF_Dq		 65
+#define ROFF_Ec		 66
+#define ROFF_Ef		 67
+#define ROFF_Em		 68
+#define ROFF_Eo		 69
+#define ROFF_Fx		 70
+#define ROFF_Ms		 71
+#define ROFF_No		 72
+#define ROFF_Ns		 73
+#define ROFF_Nx		 74
+#define ROFF_Ox		 75
+#define ROFF_Pc		 76
+#define ROFF_Pf		 77
+#define ROFF_Po		 78
+#define ROFF_Pq		 79
+#define ROFF_Qc		 80
+#define ROFF_Ql		 81
+#define ROFF_Qo		 82
+#define ROFF_Qq		 83
+#define ROFF_Re		 84
+#define ROFF_Rs		 85
+#define ROFF_Sc		 86
+#define ROFF_So		 87
+#define ROFF_Sq		 88
+#define ROFF_Sm		 89
+#define ROFF_Sx		 90
+#define ROFF_Sy		 91
+#define ROFF_Tn		 92
+#define ROFF_Ux		 93
+#define ROFF_Xc		 94
+#define ROFF_Xo		 95
+#define	ROFF_Fo		 96
+#define	ROFF_Fc		 97
+#define	ROFF_Oo		 98
+#define	ROFF_Oc		 99
+#define	ROFF_Bk		 100
+#define	ROFF_Ek		 101
+#define	ROFF_Bt		 102
+#define	ROFF_Hf		 103
+#define	ROFF_Fr		 104
+#define	ROFF_Ud		 105
+#define	ROFF_MAX	 106
+
+#define	ROFF_Split	 0
+#define	ROFF_Nosplit	 1
+#define	ROFF_Ragged	 2
+#define	ROFF_Unfilled	 3
+#define	ROFF_Literal	 4
+#define	ROFF_File	 5
+#define	ROFF_Offset	 6
+#define	ROFF_Bullet	 7
+#define	ROFF_Dash	 8
+#define	ROFF_Hyphen	 9
+#define	ROFF_Item	 10
+#define	ROFF_Enum	 11
+#define	ROFF_Tag	 12
+#define	ROFF_Diag	 13
+#define	ROFF_Hang	 14
+#define	ROFF_Ohang	 15
+#define	ROFF_Inset	 16
+#define	ROFF_Column	 17
+#define	ROFF_Width	 18
+#define	ROFF_Compact	 19
+#define	ROFF_Std	 20
+#define ROFF_p1003_1_88	 21
+#define ROFF_p1003_1_90	 22
+#define ROFF_p1003_1_96	 23
+#define ROFF_p1003_1_2001 24
+#define ROFF_p1003_1_2004 25
+#define ROFF_p1003_1	 26
+#define ROFF_p1003_1b	 27
+#define ROFF_p1003_1b_93 28
+#define ROFF_p1003_1c_95 29
+#define ROFF_p1003_1g_2000 30
+#define ROFF_p1003_2_92	 31
+#define ROFF_p1387_2_95	 32
+#define ROFF_p1003_2	 33
+#define ROFF_p1387_2	 34
+#define ROFF_isoC_90	 35
+#define ROFF_isoC_amd1	 36
+#define ROFF_isoC_tcor1	 37
+#define ROFF_isoC_tcor2	 38
+#define ROFF_isoC_99	 39
+#define ROFF_ansiC	 40
+#define ROFF_ansiC_89	 41
+#define ROFF_ansiC_99	 42
+#define ROFF_ieee754	 43
+#define ROFF_iso8802_3	 44
+#define ROFF_xpg3	 45
+#define ROFF_xpg4	 46
+#define ROFF_xpg4_2	 47
+#define ROFF_xpg4_3	 48
+#define ROFF_xbd5	 49
+#define ROFF_xcu5	 50
+#define ROFF_xsh5	 51
+#define ROFF_xns5	 52
+#define ROFF_xns5_2d2_0	 53
+#define ROFF_xcurses4_2	 54
+#define ROFF_susv2	 55
+#define ROFF_susv3	 56
+#define ROFF_svid4	 57
+#define	ROFF_Filled	 58
+#define	ROFF_Words	 59
+#define	ROFF_ARGMAX	 60
+
+#define	ROFF_MAXLINEARG	 32
+
+extern	const char *const *toknames;
+extern	const char *const *tokargnames;
+
+enum	roffmsg { 
+	ROFF_WARN, 
+	ROFF_ERROR
+};
+
+enum	roffmsec {
+	ROFF_MSEC_1,
+	ROFF_MSEC_2,
+	ROFF_MSEC_3,
+	ROFF_MSEC_3p,
+	ROFF_MSEC_4,
+	ROFF_MSEC_5,
+	ROFF_MSEC_6,
+	ROFF_MSEC_7,
+	ROFF_MSEC_8,
+	ROFF_MSEC_9,
+	ROFF_MSEC_UNASS,
+	ROFF_MSEC_DRAFT,
+	ROFF_MSEC_PAPER,
+	ROFF_MSEC_MAX
+};
+
+enum	roffatt {
+	ROFF_ATT_V1,
+	ROFF_ATT_V2,
+	ROFF_ATT_V3,
+	ROFF_ATT_V6,
+	ROFF_ATT_V7,
+	ROFF_ATT_32V,
+	ROFF_ATT_V_1,
+	ROFF_ATT_V_4,
+	ROFF_ATT_MAX
+d32 5
+a36 79
+enum	roffvol {
+	ROFF_VOL_NONE,
+	ROFF_VOL_AMD,
+	ROFF_VOL_IND,
+	ROFF_VOL_KM,
+	ROFF_VOL_LOCAL,
+	ROFF_VOL_PRM,
+	ROFF_VOL_PS1,
+	ROFF_VOL_SMM,
+	ROFF_VOL_URM,
+	ROFF_VOL_USD,
+#define	ROFF_ARCH_START	ROFF_ARCH_ALPHA
+	ROFF_ARCH_ALPHA,
+	ROFF_ARCH_AMD64,
+	ROFF_ARCH_AMIGA,
+	ROFF_ARCH_ARC,
+	ROFF_ARCH_ARMISH,
+	ROFF_ARCH_AVIION,
+	ROFF_ARCH_HP300,
+	ROFF_ARCH_HPPA,
+	ROFF_ARCH_HPPA64,
+	ROFF_ARCH_I386,
+	ROFF_ARCH_LANDISK,
+	ROFF_ARCH_LUNA88K,
+	ROFF_ARCH_MAC68K,
+	ROFF_ARCH_MACPPC,
+	ROFF_ARCH_MVME68K,
+	ROFF_ARCH_MVME88K,
+	ROFF_ARCH_MVMEPPC,
+	ROFF_ARCH_PMAX,
+	ROFF_ARCH_SGI,
+	ROFF_ARCH_SPARC,
+	ROFF_ARCH_SPARC64,
+	ROFF_ARCH_SUN3,
+	ROFF_ARCH_VAX,
+	ROFF_ARCH_ZAURUS,
+	ROFF_VOL_MAX
+};
+
+#define	ROFFSec_NMASK	(0x07)
+
+#define	ROFFSec_PR_Os	(1 << 1)
+#define	ROFFSec_PR_Dt	(1 << 2)
+#define	ROFFSec_PR_Dd	(1 << 3)
+#define	ROFFSec_NAME	(1 << 4)
+#define	ROFFSec_SYNOP	(1 << 5)
+#define	ROFFSec_DESC	(1 << 6)
+#define	ROFFSec_RETVAL	(1 << 7)
+#define	ROFFSec_ENV	(1 << 8)
+#define	ROFFSec_FILES	(1 << 9)
+#define	ROFFSec_EX	(1 << 10)
+#define	ROFFSec_DIAG	(1 << 11)
+#define	ROFFSec_ERRS	(1 << 12)
+#define	ROFFSec_SEEALSO	(1 << 13)
+#define	ROFFSec_STAND	(1 << 14)
+#define	ROFFSec_HIST	(1 << 15)
+#define	ROFFSec_AUTH	(1 << 16)
+#define	ROFFSec_CAVEATS	(1 << 17)
+#define	ROFFSec_BUGS	(1 << 18)
+#define	ROFFSec_OTHER	(1 << 19)
+
+struct	roffcb {
+	int	(*roffmsg)(void *, enum roffmsg, 
+			const char *, const char *, const char *);
+	int	(*roffhead)(void *, const struct tm *, const char *, 
+			const char *, enum roffmsec, enum roffvol);
+	int	(*rofftail)(void *, const struct tm *, const char *, 
+			const char *, enum roffmsec, enum roffvol);
+	int	(*roffdata)(void *, int, const char *, const char *);
+	int	(*roffin)(void *, int, int *, const char **);
+	int	(*roffout)(void *, int);
+	int	(*roffblkin)(void *, int, int *, const char **);
+	int	(*roffblkout)(void *, int);
+	int	(*roffblkheadin)(void *, int, int *, const char **);
+	int	(*roffblkheadout)(void *, int);
+	int	(*roffblkbodyin)(void *, int, int *, const char **);
+	int	(*roffblkbodyout)(void *, int);
+	int	(*roffspecial)(void *, int, const char *, 
+			const int *, const char **, const char **);
+d39 1
+a39 1
+struct	rofftree;
+d43 25
+a67 32
+typedef	void  (*(*md_init)(const struct md_args *, 
+			struct md_mbuf *, const struct md_rbuf *));
+typedef	int	(*md_line)(void *, char *);
+typedef	int	(*md_exit)(void *, int);
+void		 *md_init_html(const struct md_args *,
+			struct md_mbuf *, const struct md_rbuf *);
+int		  md_line_html(void *, char *);
+int		  md_exit_html(void *, int);
+void		 *md_init_noop(const struct md_args *,
+			struct md_mbuf *, const struct md_rbuf *);
+int		  md_line_noop(void *, char *);
+int		  md_exit_noop(void *, int);
+void		 *md_init_xml(const struct md_args *,
+			struct md_mbuf *, const struct md_rbuf *);
+int		  md_line_xml(void *, char *);
+int		  md_exit_xml(void *, int);
+int	 	  md_buf_puts(struct md_mbuf *, const char *, size_t);
+int	 	  md_buf_putchar(struct md_mbuf *, char);
+int	 	  md_buf_putstring(struct md_mbuf *, const char *);
+struct	rofftree *roff_alloc(const struct roffcb *, void *);
+int		  roff_engine(struct rofftree *, char *);
+int		  roff_free(struct rofftree *, int);
+int		  rofftok_scan(const char *, int *);
+char		 *roff_literal(int, const int *,
+			const char **, const char **);
+char		 *roff_fmtstring(int);
+char		 *roff_msecname(enum roffmsec);
+enum roffmsec	  roff_msec(const char *);
+int		  roff_sec(const char **);
+enum roffatt	  roff_att(const char *);
+enum roffvol	  roff_vol(const char *);
+char		 *roff_volname(enum roffvol);
+@
+
+
+1.39
+log
+@Put prelude checking into asec.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.38 2008/12/10 12:09:47 kristaps Exp $ */
+d379 4
+@
+
+
+1.38
+log
+@Linted on NetBSD side.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.37 2008/12/10 12:05:33 kristaps Exp $ */
+d327 19
+a345 16
+#define	ROFFSec_NAME	(1 << 0)
+#define	ROFFSec_SYNOP	(1 << 1)
+#define	ROFFSec_DESC	(1 << 2)
+#define	ROFFSec_RETVAL	(1 << 3)
+#define	ROFFSec_ENV	(1 << 4)
+#define	ROFFSec_FILES	(1 << 5)
+#define	ROFFSec_EX	(1 << 6)
+#define	ROFFSec_DIAG	(1 << 7)
+#define	ROFFSec_ERRS	(1 << 8)
+#define	ROFFSec_SEEALSO	(1 << 9)
+#define	ROFFSec_STAND	(1 << 10)
+#define	ROFFSec_HIST	(1 << 11)
+#define	ROFFSec_AUTH	(1 << 12)
+#define	ROFFSec_CAVEATS	(1 << 13)
+#define	ROFFSec_BUGS	(1 << 14)
+#define	ROFFSec_OTHER	(1 << 15)
+@
+
+
+1.37
+log
+@Versioning up.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.36 2008/12/10 10:43:57 kristaps Exp $ */
+d254 1
+a254 1
+	ROFF_ERROR,
+d271 1
+a271 1
+	ROFF_MSEC_MAX,
+d283 1
+a283 1
+	ROFF_ATT_MAX,
+d322 1
+a322 1
+	ROFF_VOL_MAX,
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.35 2008/12/09 17:09:12 kristaps Exp $ */
+d349 2
+a350 1
+	int	(*rofftail)(void *);
+d395 1
+@
+
+
+1.35
+log
+@Considerable clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.34 2008/12/08 16:29:57 kristaps Exp $ */
+d254 1
+a254 1
+	ROFF_ERROR 
+d271 1
+a271 1
+	ROFF_MSEC_MAX
+d283 40
+a322 1
+	ROFF_ATT_MAX
+d348 1
+a348 1
+			const char *, enum roffmsec, const char *);
+a370 1
+
+a374 1
+
+a378 1
+
+a381 1
+
+a384 1
+
+a385 1
+
+d393 1
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.33 2008/12/08 12:46:28 kristaps Exp $ */
+d25 2
+d274 12
+d306 1
+a306 1
+	void	(*roffmsg)(void *, enum roffmsg, 
+d353 8
+@
+
+
+1.33
+log
+@Added warnings for using macros in the wrong sections.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.32 2008/12/07 22:40:18 kristaps Exp $ */
+d22 1
+d31 2
+d272 19
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.31 2008/12/06 21:10:31 kristaps Exp $ */
+d247 21
+a267 1
+enum	roffmsg { ROFF_WARN, ROFF_ERROR };
+d273 1
+a273 1
+			const char *, const char *, const char *);
+@
+
+
+1.31
+log
+@.St macros in place.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.30 2008/12/04 23:10:51 kristaps Exp $ */
+d251 1
+a251 1
+			const char *, const char *, char *);
+d255 2
+a256 2
+	int	(*roffdata)(void *, int, const char *, char *);
+	int	(*roffin)(void *, int, int *, char **);
+d258 1
+a258 1
+	int	(*roffblkin)(void *, int, int *, char **);
+d260 1
+a260 1
+	int	(*roffblkheadin)(void *, int, int *, char **);
+d262 1
+a262 1
+	int	(*roffblkbodyin)(void *, int, int *, char **);
+d265 1
+a265 1
+			const int *, const char **, char **);
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.29 2008/12/04 19:31:57 kristaps Exp $ */
+d264 2
+a265 1
+	int	(*roffspecial)(void *, int, const char *, char **);
+@
+
+
+1.29
+log
+@Moved charset recognition into the filter.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.28 2008/12/04 16:34:59 kristaps Exp $ */
+d264 1
+a264 1
+	int	(*roffspecial)(void *, int, int *, char **, char **);
+@
+
+
+1.28
+log
+@Character-set validation fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.27 2008/12/04 16:19:52 kristaps Exp $ */
+d68 3
+a70 1
+#define	ROFFTok_MAX	 28
+a255 1
+	int	(*rofftoken)(void *, int, int);
+d294 1
+a294 1
+int		  rofftok_scan(const char *);
+@
+
+
+1.27
+log
+@Character-encoding tests.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.26 2008/12/04 11:25:29 kristaps Exp $ */
+d67 2
+a68 1
+#define	ROFFTok_MAX	 27
+@
+
+
+1.26
+log
+@More html-css.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.25 2008/12/03 19:21:58 kristaps Exp $ */
+d22 2
+d40 29
+d239 2
+d252 2
+a253 1
+	int	(*roffdata)(void *, int, char *);
+d292 2
+@
+
+
+1.25
+log
+@Major update.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.24 2008/12/03 14:39:59 kristaps Exp $ */
+d216 2
+a217 1
+	int	(*roffhead)(void *);
+@
+
+
+1.24
+log
+@Abstract ml/mlg/html/xml.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.23 2008/12/02 18:26:57 kristaps Exp $ */
+d218 1
+a219 1
+	int	(*roffdata)(void *, int, char *);
+d223 4
+@
+
+
+1.23
+log
+@Transition to splitting xml/ml.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.22 2008/12/02 13:20:24 kristaps Exp $ */
+a21 1
+/* Input buffer (input read into buffer, then filled when empty). */
+a29 1
+/* Output buffer (output buffered until full, then flushed). */
+d226 2
+d235 1
+a235 1
+void		 *md_init_html4_strict(const struct md_args *,
+d237 2
+a238 2
+int		  md_line_html4_strict(void *, char *);
+int		  md_exit_html4_strict(void *, int);
+a248 2
+struct	rofftree;
+
+a252 7
+ssize_t		  ml_begintag(struct md_mbuf *, const char *, 
+			int *, char **);
+ssize_t		  ml_endtag(struct md_mbuf *, const char *);
+ssize_t		  ml_nputstring(struct md_mbuf *, const char *, size_t);
+ssize_t		  ml_nputs(struct md_mbuf *, const char *, size_t);
+ssize_t		  ml_indent(struct md_mbuf *, int);
+
+@
+
+
+1.22
+log
+@Added `Sm' functionality.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.21 2008/12/01 15:32:36 kristaps Exp $ */
+d255 7
+@
+
+
+1.21
+log
+@Considerably improved roff_text parser.
+Consolidated noop roff macros.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.20 2008/11/30 21:41:35 kristaps Exp $ */
+d225 1
+a225 1
+	int	(*roffspecial)(void *, int);
+@
+
+
+1.20
+log
+@Preliminary xml output filter (validate-renamed) done.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.19 2008/11/30 20:53:34 kristaps Exp $ */
+d142 5
+a146 1
+#define	ROFF_MAX	 102
+@
+
+
+1.19
+log
+@Cleaned up presentation with mbuf_putstring & al.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.18 2008/11/30 18:50:44 kristaps Exp $ */
+d216 1
+a216 1
+	int	(*roffin)(void *, int, int, int *, char **);
+d236 1
+a236 1
+void		 *md_init_valid(const struct md_args *,
+d238 2
+a239 2
+int		  md_line_valid(void *, char *);
+int		  md_exit_valid(void *, int);
+@
+
+
+1.18
+log
+@Fixed spacing (almost there).
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.17 2008/11/29 16:11:42 kristaps Exp $ */
+d216 1
+a216 1
+	int	(*roffin)(void *, int, int *, char **);
+@
+
+
+1.17
+log
+@Validation presentation (html-like).
+Fixed newlining for data.
+Moved roffhead/rofftail to roff_Os.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.16 2008/11/29 14:14:21 kristaps Exp $ */
+d217 1
+a217 1
+	int	(*roffdata)(void *, char *);
+@
+
+
+1.16
+log
+@Inclusion of "real" validation code.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.15 2008/11/28 15:25:49 kristaps Exp $ */
+d219 1
+a219 1
+	int	(*roffblkin)(void *, int);
+@
+
+
+1.15
+log
+@Removed superfluous structures from rofftree.
+Added roffdata for generalised text processing.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.14 2008/11/28 11:21:12 kristaps Exp $ */
+d217 1
+a217 1
+	int	(*roffdata)(void *, const char *);
+d228 1
+a228 1
+typedef	int	(*md_line)(void *, char *, size_t);
+d233 1
+a233 1
+int		  md_line_html4_strict(void *, char *, size_t);
+d238 1
+a238 1
+int		  md_line_valid(void *, char *, size_t);
+d248 1
+a248 1
+int		  roff_engine(struct rofftree *, char *, size_t);
+@
+
+
+1.14
+log
+@Initial pushing to mbuf.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.13 2008/11/27 17:27:50 kristaps Exp $ */
+d212 10
+a221 10
+	void	(*roffmsg)(const struct md_args *, enum roffmsg, 
+			const char *, const char *, const char *, 
+			int, char *);
+	int	(*roffhead)(const struct md_args *);
+	int	(*rofftail)(const struct md_args *);
+	int	(*roffin)(const struct md_args *, int, int *, char **);
+	int	(*roffout)(const struct md_args *, int);
+	int	(*roffblkin)(const struct md_args *, int);
+	int	(*roffblkout)(const struct md_args *, int);
+	int	(*roffspecial)(const struct md_args *, int);
+d247 1
+a247 3
+struct	rofftree *roff_alloc(const struct md_args *, 
+			struct md_mbuf *, const struct md_rbuf *,
+			const struct roffcb *);
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.12 2008/11/27 16:54:58 kristaps Exp $ */
+d215 2
+a216 2
+	int	(*roffhead)(void);
+	int	(*rofftail)(void);
+d221 1
+a221 1
+	int	(*roffspecial)(int);
+d236 1
+a236 1
+void		 *md_init_dummy(const struct md_args *,
+d238 2
+a239 2
+int		  md_line_dummy(void *, char *, size_t);
+int		  md_exit_dummy(void *, int);
+@
+
+
+1.12
+log
+@Considerable fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.11 2008/11/27 14:02:41 kristaps Exp $ */
+d217 4
+a220 4
+	int	(*roffin)(int, int *, char **);
+	int	(*roffout)(int);
+	int	(*roffblkin)(int);
+	int	(*roffblkout)(int);
+@
+
+
+1.11
+log
+@Added "special" macros.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.10 2008/11/27 11:23:51 kristaps Exp $ */
+d202 3
+a204 1
+#define	ROFF_ARGMAX	 58
+d209 1
+a209 3
+/* FIXME: have a md_roff with all necessary parameters. */
+
+/* FIXME: have roffbegin and roffend for doc head/foot. */
+d212 3
+@
+
+
+1.10
+log
+@Mainly quotes.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.9 2008/11/26 21:42:59 kristaps Exp $ */
+d218 1
+@
+
+
+1.9
+log
+@Considerable fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.8 2008/11/26 16:50:34 kristaps Exp $ */
+d140 3
+a142 1
+#define	ROFF_MAX	 100
+@
+
+
+1.8
+log
+@Added regression tests.
+Considerable fixes... blah blah blah...
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.7 2008/11/25 16:49:57 kristaps Exp $ */
+d54 87
+a140 83
+#define	ROFF_Ad		 15
+#define	ROFF_An		 16
+#define	ROFF_Ar		 17
+#define	ROFF_Cd		 18
+#define	ROFF_Cm		 19
+#define	ROFF_Dv		 20
+#define	ROFF_Er		 21
+#define	ROFF_Ev		 22
+#define	ROFF_Ex		 23
+#define	ROFF_Fa		 24
+#define	ROFF_Fd		 25
+#define	ROFF_Fl		 26
+#define	ROFF_Fn		 27
+#define	ROFF_Ft		 28
+#define	ROFF_Ic		 29
+#define	ROFF_In		 30
+#define	ROFF_Li		 31
+#define	ROFF_Nd		 32
+#define	ROFF_Nm		 33
+#define	ROFF_Op		 34
+#define	ROFF_Ot		 35
+#define	ROFF_Pa		 36
+#define	ROFF_Rv		 37
+#define	ROFF_St		 38
+#define	ROFF_Va		 39
+#define	ROFF_Vt		 40
+#define	ROFF_Xr		 41
+#define	ROFF__A		 42
+#define	ROFF__B		 43
+#define	ROFF__D		 44
+#define	ROFF__I		 45
+#define	ROFF__J		 46
+#define	ROFF__N		 47
+#define	ROFF__O		 48
+#define	ROFF__P		 49
+#define	ROFF__R		 50
+#define	ROFF__T		 51
+#define	ROFF__V		 52
+#define ROFF_Ac		 53
+#define ROFF_Ao		 54
+#define ROFF_Aq		 55
+#define ROFF_At		 56
+#define ROFF_Bc		 57
+#define ROFF_Bf		 58
+#define ROFF_Bo		 59
+#define ROFF_Bq		 60
+#define ROFF_Bsx	 61
+#define ROFF_Bx		 62
+#define ROFF_Db		 63
+#define ROFF_Dc		 64
+#define ROFF_Do		 65
+#define ROFF_Dq		 66
+#define ROFF_Ec		 67
+#define ROFF_Ef		 68
+#define ROFF_Em		 60
+#define ROFF_Eo		 70
+#define ROFF_Fx		 71
+#define ROFF_Ms		 72
+#define ROFF_No		 73
+#define ROFF_Ns		 74
+#define ROFF_Nx		 75
+#define ROFF_Ox		 76
+#define ROFF_Pc		 77
+#define ROFF_Pf		 78
+#define ROFF_Po		 79
+#define ROFF_Pq		 80
+#define ROFF_Qc		 81
+#define ROFF_Ql		 82
+#define ROFF_Qo		 83
+#define ROFF_Qq		 84
+#define ROFF_Re		 85
+#define ROFF_Rs		 86
+#define ROFF_Sc		 87
+#define ROFF_So		 88
+#define ROFF_Sq		 89
+#define ROFF_Sm		 90
+#define ROFF_Sx		 91
+#define ROFF_Sy		 92
+#define ROFF_Tn		 93
+#define ROFF_Ux		 94
+#define ROFF_Xc		 95
+#define ROFF_Xo		 96
+#define	ROFF_MAX	 97
+d162 39
+a200 1
+#define	ROFF_ARGMAX	 20
+@
+
+
+1.7
+log
+@Imported all macros from mdoc(7).
+Put all names into roff.c with extern access from private.h.
+Annotated list of changes that must occur for end-game (scope, nests, etc.).
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.6 2008/11/25 12:14:02 kristaps Exp $ */
+d165 10
+a174 4
+typedef	int	(*roffin)(int, int *, char **);
+typedef	int	(*roffout)(int);
+typedef	int	(*roffblkin)(int);
+typedef	int	(*roffblkout)(int);
+d201 1
+a201 1
+			roffin, roffout, roffblkin, roffblkout);
+@
+
+
+1.6
+log
+@Single call-back for filters.
+Removed verbose flag.
+Added more macros and arguments.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.5 2008/11/24 18:32:39 kristaps Exp $ */
+d22 1
+d24 5
+a28 5
+	int		 fd;
+	char		*name;
+	char		*buf;
+	size_t		 bufsz;
+	size_t		 line;
+d31 1
+d33 5
+a37 5
+	int		 fd;
+	char		*name;
+	char		*buf;
+	size_t		 bufsz;
+	size_t		 pos;
+d54 83
+a136 23
+#define	ROFF_An		 14
+#define	ROFF_Li		 15
+#define	ROFF_MAX	 16
+
+#define	ROFF_NAMES			\
+	{				\
+	"\\\"",				\
+	"Dd",				\
+	"Dt",				\
+	"Os",				\
+	"Sh",				\
+	"Ss",				\
+	"Pp",				\
+	"D1",				\
+	"Dl",				\
+	"Bd",				\
+	"Ed",				\
+	"Bl",				\
+	"El",				\
+	"It",				\
+	"An",				\
+	"Li",				\
+	}
+d156 3
+a158 1
+#define	ROFF_ARGMAX	 18
+d160 2
+a161 21
+#define	ROFF_ARGNAMES 			\
+	{ 				\
+	"split",			\
+	"nosplit",			\
+	"ragged",			\
+	"unfilled",			\
+	"literal",			\
+	"file",				\
+	"offset",			\
+	"bullet",			\
+	"dash",				\
+	"hyphen",			\
+	"item",				\
+	"enum",				\
+	"tag",				\
+	"diag",				\
+	"hang",				\
+	"ohang",			\
+	"inset",			\
+	"column",			\
+	}
+@
+
+
+1.5
+log
+@Generic roff_layout for layout tokens.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.4 2008/11/24 14:24:55 kristaps Exp $ */
+d43 32
+a74 3
+#define	ROFF_An		 5
+#define	ROFF_Li		 6
+#define	ROFF_MAX	 7
+d78 39
+a116 1
+#define	ROFF_ARGMAX	 2
+d150 1
+a150 2
+			const roffin *, const roffout *,
+			const roffblkin *, const roffblkout *);
+@
+
+
+1.4
+log
+@Split roff engine into roff.c.
+Re-worked calling convention for md_*.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.3 2008/11/24 08:50:33 kristaps Exp $ */
+d38 20
+d82 3
+a84 1
+			struct md_mbuf *, const struct md_rbuf *);
+@
+
+
+1.3
+log
+@Roff-line tokens parsed into char**.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.2 2008/11/23 22:30:53 kristaps Exp $ */
+d40 14
+a53 21
+typedef	int	(*md_init)(const struct md_args *, struct md_mbuf *,
+			const struct md_rbuf *, void **);
+typedef	int	(*md_exit)(const struct md_args *, struct md_mbuf *, 
+			const struct md_rbuf *, int, void *);
+typedef	int	(*md_line)(const struct md_args *, 
+			struct md_mbuf *, const struct md_rbuf *, 
+			char *, size_t, void *);
+
+int		  md_line_html4_strict(const struct md_args *,
+			struct md_mbuf *, const struct md_rbuf *,
+			char *, size_t, void *);
+int		  md_init_html4_strict(const struct md_args *, 
+			struct md_mbuf *, const struct md_rbuf *,
+			void **);
+int		  md_exit_html4_strict(const struct md_args *,
+			struct md_mbuf *, const struct md_rbuf *, 
+			int, void *);
+
+int		  md_line_dummy(const struct md_args *,
+			struct md_mbuf *, const struct md_rbuf *, 
+			char *, size_t, void *);
+d59 7
+@
+
+
+1.2
+log
+@Considerable improvements across the board.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.1 2008/11/23 16:53:18 kristaps Exp $ */
+d46 1
+a46 1
+			const char *, size_t, void *);
+d50 1
+a50 1
+			const char *, size_t, void *);
+d60 1
+a60 1
+			const char *, size_t, void *);
+@
+
+
+1.1
+log
+@Segmentation into html and dummy parsers.
+Initial recursive-descent parser in place for html/ml parser.
+Parsing of title tags more-or-less in place.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.h,v 1.3 2008/11/22 20:15:34 kristaps Exp $ */
+d43 1
+a43 1
+			const struct md_rbuf *, void *);
+d56 1
+a56 1
+			void *);
+@

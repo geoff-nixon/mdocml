@@ -1,0 +1,200 @@
+head	1.7;
+access;
+symbols
+	VERSION_1_10_3:1.3;
+locks; strict;
+comment	@ * @;
+
+
+1.7
+date	2010.07.07.15.04.54;	author kristaps;	state dead;
+branches;
+next	1.6;
+
+1.6
+date	2010.07.05.20.10.22;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.07.04.22.04.04;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.07.03.16.02.12;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.06.27.16.36.22;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.06.26.15.36.37;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.06.26.15.22.19;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@@
+
+
+1.6
+log
+@Move register information into mandoc.h, which is where it should have
+been in the first place (mandoc.h contains system-wide declarations).
+@
+text
+@a0 30
+/*	$Id: regs.h,v 1.5 2010/07/04 22:04:04 schwarze Exp $ */
+/*
+ * Copyright (c) 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2010 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef REGS_H
+#define REGS_H
+
+__BEGIN_DECLS
+
+char		 *roff_setstr(const char *, const char *);
+char		 *roff_getstr(const char *);
+char		 *roff_getstrn(const char *, size_t);
+void		  roff_freestr(void);
+
+__END_DECLS
+
+#endif /*!REGS_H*/
+@
+
+
+1.5
+log
+@Assert my copyright, making it explicit that i'm granting the same license
+on those parts of the code and text that i have written as Kristaps is.
+"fine with me" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: regs.h,v 1.4 2010/07/03 16:02:12 schwarze Exp $ */
+a22 22
+enum	regs {
+	REG_nS = 0,	/* nS */
+	REG__MAX
+};
+
+struct	reg {
+	int		 set; /* whether set or not */
+	union {
+		unsigned u; /* unsigned integer */
+	} v;
+};
+
+/*
+ * Registers are non-scoped state.  These can be manipulated directly in
+ * libroff or indirectly in libman or libmdoc by macros.  These should
+ * be implemented sparingly (we are NOT roffdoc!) and documented fully
+ * in roff.7.
+ */
+struct	regset {
+	struct reg	 regs[REG__MAX];
+};
+
+@
+
+
+1.4
+log
+@Rudimentary implementation of user-defined strings;
+no time for more refinement right now.
+In particular, fixes terminfo(3) and mdoc.samples(7).
+ok kristaps@@, who will add the HTML frontend bits
+@
+text
+@d1 1
+a1 1
+/*	$Id: regs.h,v 1.3 2010/06/27 16:36:22 kristaps Exp $ */
+d4 1
+@
+
+
+1.3
+log
+@Allow registers to be unset.  Implement and document the `.nr nS val'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: regs.h,v 1.2 2010/06/26 15:36:37 kristaps Exp $ */
+d44 5
+@
+
+
+1.2
+log
+@Churn-ish check-in getting mdoc_parseln() and man_parseln() to accept a
+const struct regset pointer.  No functionality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: regs.h,v 1.1 2010/06/26 15:22:19 kristaps Exp $ */
+d27 13
+d41 1
+a41 3
+	union {
+		int	 i; /* integer value */
+	} regs[REG__MAX];
+@
+
+
+1.1
+log
+@First step of adding register support.  This is inspired by a significant
+patch by schwarze@@.  This commit adds support to libroff parsing `nr'
+into register set defined in regs.h.  This will propogate into libmdoc
+and libman in later commits.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.8 2010/06/19 20:46:27 kristaps Exp $ */
+a26 4
+/*
+ * Registers are passed into libmdoc and libman.  They refer to some
+ * sort of external state.
+ */
+@

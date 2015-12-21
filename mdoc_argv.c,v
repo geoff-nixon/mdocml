@@ -1,0 +1,5614 @@
+head	1.107;
+access;
+symbols
+	VERSION_1_13_3:1.100
+	VERSION_1_13_2:1.99
+	VERSION_1_12_4:1.96
+	VERSION_1_13_1:1.95
+	VERSION_1_12_3:1.89
+	VERSION_1_12_2:1.86
+	VERSION_1_12:1.96.0.2
+	VERSION_1_12_1:1.82
+	VERSION_1_12_0:1.81
+	VERSION_1_11_7:1.80
+	VERSION_1_11_6:1.80
+	VERSION_1_11_5:1.80
+	VERSION_1_11_4:1.80
+	VERSION_1_11_3:1.77
+	VERSION_1_11_2:1.77
+	VERSION_1_11_1:1.73
+	VERSION_1_10_10:1.69
+	VERSION_1_10_9:1.62
+	VERSION_1_10_8:1.62
+	VERSION_1_10_7:1.60
+	VERSION_1_10_6:1.60
+	VERSION_1_10_5:1.58
+	VERSION_1_10_5_PREPDF:1.58
+	VERSION_1_10_4:1.55
+	VERSION_1_10_3:1.54
+	VERSION_1_10_2:1.54
+	VERSION_1_10_1:1.52
+	VERSION_1_9_24:1.43
+	VERSION_1_9_25:1.45
+	VERSION_1_9_23:1.37
+	VERSION_1_9_22:1.36
+	VERSION_1_9_21:1.34
+	VERSION_1_9_20:1.34
+	VERSION_1_9_19:1.33
+	VERSION_1_9_18:1.33
+	VERSION_1_9_17:1.33
+	VERSION_1_9_16:1.33
+	VERSION_1_9_15:1.33
+	VERSION_1_9_15-pre2:1.33
+	VERSION_1_9_15-pre1:1.32
+	VERSION_1_9_14:1.32
+	VERSION_1_9_13:1.32
+	VERSION_1_9_12:1.32
+	VERSION_1_9_11:1.30
+	VERSION_1_9_10:1.30
+	VERSION_1_9_9:1.29
+	VERSION_1_9_8:1.27
+	VERSION_1_9_7:1.27
+	VERSION_1_9_6:1.26
+	VERSION_1_9_5:1.25
+	VERSION_1_9_2:1.25
+	VERSION_1_9_1:1.25
+	VERSION_1_9_0:1.21
+	VERSION_1_8_5:1.21
+	VERSION_1_8_4:1.21
+	VERSION_1_8_3:1.21
+	VERSION_1_8_2:1.21
+	VERSION_1_8_1:1.18
+	VERSION_1_8_0:1.12
+	VERSION_1_7_24:1.12
+	VERSION_1_7_23:1.11
+	VERSION_1_7_22:1.8
+	VERSION_1_7_21:1.8
+	VERSION_1_7_20:1.8
+	VERSION_1_7_19:1.8
+	VERSION_1_7_17:1.4
+	VERSION_1_7_16:1.4
+	VERSION_1_7_15:1.4
+	VERSION_1_7_14:1.4
+	VERSION_1_7_13:1.3
+	VERSION_1_7_12:1.2
+	OPENBSD_CHECKIN:1.2
+	VERSION_1_7_10:1.2;
+locks; strict;
+comment	@ * @;
+
+
+1.107
+date	2015.10.17.00.21.07;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2015.10.15.22.45.43;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2015.04.19.14.00.19;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2015.04.18.16.06.40;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2015.04.02.21.36.50;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2015.02.04.18.59.45;	author schwarze;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2014.11.29.03.37.44;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2014.11.28.23.21.32;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2014.11.28.03.14.18;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2014.07.06.19.09.00;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2014.07.02.03.48.07;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2014.04.23.21.06.41;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2013.12.25.00.50.05;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2013.12.22.14.06.36;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2013.12.15.23.56.42;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2012.11.18.00.05.35;	author schwarze;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2012.11.17.00.26.33;	author schwarze;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2012.11.16.18.41.18;	author schwarze;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2012.04.15.15.26.49;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2012.03.23.05.50.24;	author kristaps;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2011.06.18.16.53.27;	author kristaps;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2011.06.18.16.29.38;	author kristaps;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2011.06.18.16.18.04;	author kristaps;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2011.05.12.23.44.01;	author kristaps;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2011.04.19.16.38.48;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2011.04.17.09.13.01;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2011.04.07.01.08.42;	author joerg;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2011.03.23.15.46.02;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2011.03.22.14.33.05;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2011.03.22.14.28.48;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2011.03.22.14.05.45;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2011.03.17.11.09.36;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2011.03.17.10.59.27;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2011.03.17.10.41.18;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2011.03.17.09.16.38;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2011.03.17.01.23.28;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2011.03.17.00.58.14;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2011.03.16.17.55.39;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2010.12.24.14.00.40;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2010.12.22.11.15.16;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2010.09.13.20.15.43;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2010.09.13.12.21.34;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2010.07.21.09.36.41;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2010.07.21.09.08.26;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.07.01.22.56.17;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2010.06.12.11.58.22;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2010.05.31.13.39.13;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2010.05.31.10.28.04;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2010.05.30.23.59.59;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2010.05.15.08.54.04;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2010.05.15.04.47.38;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2010.05.14.12.55.22;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2010.05.09.21.06.50;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.05.09.10.17.02;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.05.08.07.30.19;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.05.07.15.49.36;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.05.07.06.05.38;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.05.07.05.54.09;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.05.07.05.48.29;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.05.07.05.34.56;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.04.03.14.02.10;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.03.31.07.42.04;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.03.31.07.13.53;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.03.29.19.28.04;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.01.01.17.14.29;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.10.30.05.58.38;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.10.28.19.21.59;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.10.24.05.52.13;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.10.19.09.40.23;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.10.15.01.33.12;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.10.07.14.52.35;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.09.24.13.03.32;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.08.20.13.22.48;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.08.20.09.07.24;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.08.20.08.59.12;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.08.19.14.44.35;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.07.20.14.12.27;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.07.20.14.09.38;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.07.19.21.26.27;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.07.18.18.59.33;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.07.18.18.49.19;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.07.17.12.28.38;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.07.17.12.27.49;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.07.17.10.56.57;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.07.15.15.26.19;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.07.11.20.47.52;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.07.06.13.04.52;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.07.06.11.21.34;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.07.06.09.21.24;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.06.17.14.10.09;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.06.17.14.08.47;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.06.17.11.02.06;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.06.16.19.45.51;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.31.13.50.19;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.27.15.00.15;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.107
+log
+@Very tricky diff to fix macro interpretation and spacing around tabs
+in .Bl -column; it took me more than a day to get this right.
+Triggered by a loosely related bug report from tim@@.
+
+The lesson for you is:  Use .Ta macros in .Bl -column, avoid tabs,
+or you are in for surprises:  The last word before a tab is not
+interpreted as a macro (unless there is a blank in between), the
+first word after a tab isn't either (unless there is a blank in
+between), and a blank after a tab causes a leading blank in the
+respective output cell.  Yes, "blank", "tab", "blank tab" and "tab
+blank" all have different semantics; if you write code relying on
+that, good luck maintaining it afterwards...
+@
+text
+@/*	$Id: mdoc_argv.c,v 1.106 2015/10/15 22:45:43 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2012, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "mandoc_aux.h"
+#include "mandoc.h"
+#include "roff.h"
+#include "mdoc.h"
+#include "libmandoc.h"
+#include "libmdoc.h"
+
+#define	MULTI_STEP	 5 /* pre-allocate argument values */
+#define	DELIMSZ		 6 /* max possible size of a delimiter */
+
+enum	argsflag {
+	ARGSFL_NONE = 0,
+	ARGSFL_DELIM, /* handle delimiters of [[::delim::][ ]+]+ */
+	ARGSFL_TABSEP /* handle tab/`Ta' separated phrases */
+};
+
+enum	argvflag {
+	ARGV_NONE, /* no args to flag (e.g., -split) */
+	ARGV_SINGLE, /* one arg to flag (e.g., -file xxx)  */
+	ARGV_MULTI /* multiple args (e.g., -column xxx yyy) */
+};
+
+struct	mdocarg {
+	enum argsflag	 flags;
+	const enum mdocargt *argvs;
+};
+
+static	void		 argn_free(struct mdoc_arg *, int);
+static	enum margserr	 args(struct roff_man *, int, int *,
+				char *, enum argsflag, char **);
+static	int		 args_checkpunct(const char *, int);
+static	void		 argv_multi(struct roff_man *, int,
+				struct mdoc_argv *, int *, char *);
+static	void		 argv_single(struct roff_man *, int,
+				struct mdoc_argv *, int *, char *);
+
+static	const enum argvflag argvflags[MDOC_ARG_MAX] = {
+	ARGV_NONE,	/* MDOC_Split */
+	ARGV_NONE,	/* MDOC_Nosplit */
+	ARGV_NONE,	/* MDOC_Ragged */
+	ARGV_NONE,	/* MDOC_Unfilled */
+	ARGV_NONE,	/* MDOC_Literal */
+	ARGV_SINGLE,	/* MDOC_File */
+	ARGV_SINGLE,	/* MDOC_Offset */
+	ARGV_NONE,	/* MDOC_Bullet */
+	ARGV_NONE,	/* MDOC_Dash */
+	ARGV_NONE,	/* MDOC_Hyphen */
+	ARGV_NONE,	/* MDOC_Item */
+	ARGV_NONE,	/* MDOC_Enum */
+	ARGV_NONE,	/* MDOC_Tag */
+	ARGV_NONE,	/* MDOC_Diag */
+	ARGV_NONE,	/* MDOC_Hang */
+	ARGV_NONE,	/* MDOC_Ohang */
+	ARGV_NONE,	/* MDOC_Inset */
+	ARGV_MULTI,	/* MDOC_Column */
+	ARGV_SINGLE,	/* MDOC_Width */
+	ARGV_NONE,	/* MDOC_Compact */
+	ARGV_NONE,	/* MDOC_Std */
+	ARGV_NONE,	/* MDOC_Filled */
+	ARGV_NONE,	/* MDOC_Words */
+	ARGV_NONE,	/* MDOC_Emphasis */
+	ARGV_NONE,	/* MDOC_Symbolic */
+	ARGV_NONE	/* MDOC_Symbolic */
+};
+
+static	const enum mdocargt args_Ex[] = {
+	MDOC_Std,
+	MDOC_ARG_MAX
+};
+
+static	const enum mdocargt args_An[] = {
+	MDOC_Split,
+	MDOC_Nosplit,
+	MDOC_ARG_MAX
+};
+
+static	const enum mdocargt args_Bd[] = {
+	MDOC_Ragged,
+	MDOC_Unfilled,
+	MDOC_Filled,
+	MDOC_Literal,
+	MDOC_File,
+	MDOC_Offset,
+	MDOC_Compact,
+	MDOC_Centred,
+	MDOC_ARG_MAX
+};
+
+static	const enum mdocargt args_Bf[] = {
+	MDOC_Emphasis,
+	MDOC_Literal,
+	MDOC_Symbolic,
+	MDOC_ARG_MAX
+};
+
+static	const enum mdocargt args_Bk[] = {
+	MDOC_Words,
+	MDOC_ARG_MAX
+};
+
+static	const enum mdocargt args_Bl[] = {
+	MDOC_Bullet,
+	MDOC_Dash,
+	MDOC_Hyphen,
+	MDOC_Item,
+	MDOC_Enum,
+	MDOC_Tag,
+	MDOC_Diag,
+	MDOC_Hang,
+	MDOC_Ohang,
+	MDOC_Inset,
+	MDOC_Column,
+	MDOC_Width,
+	MDOC_Offset,
+	MDOC_Compact,
+	MDOC_Nested,
+	MDOC_ARG_MAX
+};
+
+static	const struct mdocarg mdocargs[MDOC_MAX] = {
+	{ ARGSFL_DELIM, NULL }, /* Ap */
+	{ ARGSFL_NONE, NULL }, /* Dd */
+	{ ARGSFL_NONE, NULL }, /* Dt */
+	{ ARGSFL_NONE, NULL }, /* Os */
+	{ ARGSFL_NONE, NULL }, /* Sh */
+	{ ARGSFL_NONE, NULL }, /* Ss */
+	{ ARGSFL_NONE, NULL }, /* Pp */
+	{ ARGSFL_DELIM, NULL }, /* D1 */
+	{ ARGSFL_DELIM, NULL }, /* Dl */
+	{ ARGSFL_NONE, args_Bd }, /* Bd */
+	{ ARGSFL_NONE, NULL }, /* Ed */
+	{ ARGSFL_NONE, args_Bl }, /* Bl */
+	{ ARGSFL_NONE, NULL }, /* El */
+	{ ARGSFL_NONE, NULL }, /* It */
+	{ ARGSFL_DELIM, NULL }, /* Ad */
+	{ ARGSFL_DELIM, args_An }, /* An */
+	{ ARGSFL_DELIM, NULL }, /* Ar */
+	{ ARGSFL_DELIM, NULL }, /* Cd */
+	{ ARGSFL_DELIM, NULL }, /* Cm */
+	{ ARGSFL_DELIM, NULL }, /* Dv */
+	{ ARGSFL_DELIM, NULL }, /* Er */
+	{ ARGSFL_DELIM, NULL }, /* Ev */
+	{ ARGSFL_NONE, args_Ex }, /* Ex */
+	{ ARGSFL_DELIM, NULL }, /* Fa */
+	{ ARGSFL_NONE, NULL }, /* Fd */
+	{ ARGSFL_DELIM, NULL }, /* Fl */
+	{ ARGSFL_DELIM, NULL }, /* Fn */
+	{ ARGSFL_DELIM, NULL }, /* Ft */
+	{ ARGSFL_DELIM, NULL }, /* Ic */
+	{ ARGSFL_DELIM, NULL }, /* In */
+	{ ARGSFL_DELIM, NULL }, /* Li */
+	{ ARGSFL_NONE, NULL }, /* Nd */
+	{ ARGSFL_DELIM, NULL }, /* Nm */
+	{ ARGSFL_DELIM, NULL }, /* Op */
+	{ ARGSFL_DELIM, NULL }, /* Ot */
+	{ ARGSFL_DELIM, NULL }, /* Pa */
+	{ ARGSFL_NONE, args_Ex }, /* Rv */
+	{ ARGSFL_DELIM, NULL }, /* St */
+	{ ARGSFL_DELIM, NULL }, /* Va */
+	{ ARGSFL_DELIM, NULL }, /* Vt */
+	{ ARGSFL_DELIM, NULL }, /* Xr */
+	{ ARGSFL_NONE, NULL }, /* %A */
+	{ ARGSFL_NONE, NULL }, /* %B */
+	{ ARGSFL_NONE, NULL }, /* %D */
+	{ ARGSFL_NONE, NULL }, /* %I */
+	{ ARGSFL_NONE, NULL }, /* %J */
+	{ ARGSFL_NONE, NULL }, /* %N */
+	{ ARGSFL_NONE, NULL }, /* %O */
+	{ ARGSFL_NONE, NULL }, /* %P */
+	{ ARGSFL_NONE, NULL }, /* %R */
+	{ ARGSFL_NONE, NULL }, /* %T */
+	{ ARGSFL_NONE, NULL }, /* %V */
+	{ ARGSFL_DELIM, NULL }, /* Ac */
+	{ ARGSFL_NONE, NULL }, /* Ao */
+	{ ARGSFL_DELIM, NULL }, /* Aq */
+	{ ARGSFL_DELIM, NULL }, /* At */
+	{ ARGSFL_DELIM, NULL }, /* Bc */
+	{ ARGSFL_NONE, args_Bf }, /* Bf */
+	{ ARGSFL_NONE, NULL }, /* Bo */
+	{ ARGSFL_DELIM, NULL }, /* Bq */
+	{ ARGSFL_DELIM, NULL }, /* Bsx */
+	{ ARGSFL_DELIM, NULL }, /* Bx */
+	{ ARGSFL_NONE, NULL }, /* Db */
+	{ ARGSFL_DELIM, NULL }, /* Dc */
+	{ ARGSFL_NONE, NULL }, /* Do */
+	{ ARGSFL_DELIM, NULL }, /* Dq */
+	{ ARGSFL_DELIM, NULL }, /* Ec */
+	{ ARGSFL_NONE, NULL }, /* Ef */
+	{ ARGSFL_DELIM, NULL }, /* Em */
+	{ ARGSFL_NONE, NULL }, /* Eo */
+	{ ARGSFL_DELIM, NULL }, /* Fx */
+	{ ARGSFL_DELIM, NULL }, /* Ms */
+	{ ARGSFL_DELIM, NULL }, /* No */
+	{ ARGSFL_DELIM, NULL }, /* Ns */
+	{ ARGSFL_DELIM, NULL }, /* Nx */
+	{ ARGSFL_DELIM, NULL }, /* Ox */
+	{ ARGSFL_DELIM, NULL }, /* Pc */
+	{ ARGSFL_DELIM, NULL }, /* Pf */
+	{ ARGSFL_NONE, NULL }, /* Po */
+	{ ARGSFL_DELIM, NULL }, /* Pq */
+	{ ARGSFL_DELIM, NULL }, /* Qc */
+	{ ARGSFL_DELIM, NULL }, /* Ql */
+	{ ARGSFL_NONE, NULL }, /* Qo */
+	{ ARGSFL_DELIM, NULL }, /* Qq */
+	{ ARGSFL_NONE, NULL }, /* Re */
+	{ ARGSFL_NONE, NULL }, /* Rs */
+	{ ARGSFL_DELIM, NULL }, /* Sc */
+	{ ARGSFL_NONE, NULL }, /* So */
+	{ ARGSFL_DELIM, NULL }, /* Sq */
+	{ ARGSFL_NONE, NULL }, /* Sm */
+	{ ARGSFL_DELIM, NULL }, /* Sx */
+	{ ARGSFL_DELIM, NULL }, /* Sy */
+	{ ARGSFL_DELIM, NULL }, /* Tn */
+	{ ARGSFL_DELIM, NULL }, /* Ux */
+	{ ARGSFL_DELIM, NULL }, /* Xc */
+	{ ARGSFL_NONE, NULL }, /* Xo */
+	{ ARGSFL_NONE, NULL }, /* Fo */
+	{ ARGSFL_DELIM, NULL }, /* Fc */
+	{ ARGSFL_NONE, NULL }, /* Oo */
+	{ ARGSFL_DELIM, NULL }, /* Oc */
+	{ ARGSFL_NONE, args_Bk }, /* Bk */
+	{ ARGSFL_NONE, NULL }, /* Ek */
+	{ ARGSFL_NONE, NULL }, /* Bt */
+	{ ARGSFL_NONE, NULL }, /* Hf */
+	{ ARGSFL_DELIM, NULL }, /* Fr */
+	{ ARGSFL_NONE, NULL }, /* Ud */
+	{ ARGSFL_DELIM, NULL }, /* Lb */
+	{ ARGSFL_NONE, NULL }, /* Lp */
+	{ ARGSFL_DELIM, NULL }, /* Lk */
+	{ ARGSFL_DELIM, NULL }, /* Mt */
+	{ ARGSFL_DELIM, NULL }, /* Brq */
+	{ ARGSFL_NONE, NULL }, /* Bro */
+	{ ARGSFL_DELIM, NULL }, /* Brc */
+	{ ARGSFL_NONE, NULL }, /* %C */
+	{ ARGSFL_NONE, NULL }, /* Es */
+	{ ARGSFL_DELIM, NULL }, /* En */
+	{ ARGSFL_DELIM, NULL }, /* Dx */
+	{ ARGSFL_NONE, NULL }, /* %Q */
+	{ ARGSFL_NONE, NULL }, /* br */
+	{ ARGSFL_NONE, NULL }, /* sp */
+	{ ARGSFL_NONE, NULL }, /* %U */
+	{ ARGSFL_NONE, NULL }, /* Ta */
+	{ ARGSFL_NONE, NULL }, /* ll */
+};
+
+
+/*
+ * Parse flags and their arguments from the input line.
+ * These come in the form -flag [argument ...].
+ * Some flags take no argument, some one, some multiple.
+ */
+void
+mdoc_argv(struct roff_man *mdoc, int line, int tok,
+	struct mdoc_arg **reta, int *pos, char *buf)
+{
+	struct mdoc_argv	  tmpv;
+	struct mdoc_argv	**retv;
+	const enum mdocargt	 *argtable;
+	char			 *argname;
+	int			  ipos, retc;
+	char			  savechar;
+
+	*reta = NULL;
+
+	/* Which flags does this macro support? */
+
+	argtable = mdocargs[tok].argvs;
+	if (argtable == NULL)
+		return;
+
+	/* Loop over the flags on the input line. */
+
+	ipos = *pos;
+	while (buf[ipos] == '-') {
+
+		/* Seek to the first unescaped space. */
+
+		for (argname = buf + ++ipos; buf[ipos] != '\0'; ipos++)
+			if (buf[ipos] == ' ' && buf[ipos - 1] != '\\')
+				break;
+
+		/*
+		 * We want to nil-terminate the word to look it up.
+		 * But we may not have a flag, in which case we need
+		 * to restore the line as-is.  So keep around the
+		 * stray byte, which we'll reset upon exiting.
+		 */
+
+		if ((savechar = buf[ipos]) != '\0')
+			buf[ipos++] = '\0';
+
+		/*
+		 * Now look up the word as a flag.  Use temporary
+		 * storage that we'll copy into the node's flags.
+		 */
+
+		while ((tmpv.arg = *argtable++) != MDOC_ARG_MAX)
+			if ( ! strcmp(argname, mdoc_argnames[tmpv.arg]))
+				break;
+
+		/* If it isn't a flag, restore the saved byte. */
+
+		if (tmpv.arg == MDOC_ARG_MAX) {
+			if (savechar != '\0')
+				buf[ipos - 1] = savechar;
+			break;
+		}
+
+		/* Read to the next word (the first argument). */
+
+		while (buf[ipos] == ' ')
+			ipos++;
+
+		/* Parse the arguments of the flag. */
+
+		tmpv.line  = line;
+		tmpv.pos   = *pos;
+		tmpv.sz    = 0;
+		tmpv.value = NULL;
+
+		switch (argvflags[tmpv.arg]) {
+		case ARGV_SINGLE:
+			argv_single(mdoc, line, &tmpv, &ipos, buf);
+			break;
+		case ARGV_MULTI:
+			argv_multi(mdoc, line, &tmpv, &ipos, buf);
+			break;
+		case ARGV_NONE:
+			break;
+		}
+
+		/* Append to the return values. */
+
+		if (*reta == NULL)
+			*reta = mandoc_calloc(1, sizeof(**reta));
+
+		retc = ++(*reta)->argc;
+		retv = &(*reta)->argv;
+		*retv = mandoc_reallocarray(*retv, retc, sizeof(**retv));
+		memcpy(*retv + retc - 1, &tmpv, sizeof(**retv));
+
+		/* Prepare for parsing the next flag. */
+
+		*pos = ipos;
+		argtable = mdocargs[tok].argvs;
+	}
+}
+
+void
+mdoc_argv_free(struct mdoc_arg *p)
+{
+	int		 i;
+
+	if (NULL == p)
+		return;
+
+	if (p->refcnt) {
+		--(p->refcnt);
+		if (p->refcnt)
+			return;
+	}
+	assert(p->argc);
+
+	for (i = (int)p->argc - 1; i >= 0; i--)
+		argn_free(p, i);
+
+	free(p->argv);
+	free(p);
+}
+
+static void
+argn_free(struct mdoc_arg *p, int iarg)
+{
+	struct mdoc_argv *arg;
+	int		  j;
+
+	arg = &p->argv[iarg];
+
+	if (arg->sz && arg->value) {
+		for (j = (int)arg->sz - 1; j >= 0; j--)
+			free(arg->value[j]);
+		free(arg->value);
+	}
+
+	for (--p->argc; iarg < (int)p->argc; iarg++)
+		p->argv[iarg] = p->argv[iarg+1];
+}
+
+enum margserr
+mdoc_args(struct roff_man *mdoc, int line, int *pos,
+	char *buf, int tok, char **v)
+{
+	struct roff_node *n;
+	char		 *v_local;
+	enum argsflag	  fl;
+
+	if (v == NULL)
+		v = &v_local;
+	fl = tok == TOKEN_NONE ? ARGSFL_NONE : mdocargs[tok].flags;
+	if (tok != MDOC_It)
+		return args(mdoc, line, pos, buf, fl, v);
+
+	/*
+	 * We know that we're in an `It', so it's reasonable to expect
+	 * us to be sitting in a `Bl'.  Someday this may not be the case
+	 * (if we allow random `It's sitting out there), so provide a
+	 * safe fall-back into the default behaviour.
+	 */
+
+	for (n = mdoc->last; n; n = n->parent)
+		if (MDOC_Bl == n->tok)
+			if (LIST_column == n->norm->Bl.type) {
+				fl = ARGSFL_TABSEP;
+				break;
+			}
+
+	return args(mdoc, line, pos, buf, fl, v);
+}
+
+static enum margserr
+args(struct roff_man *mdoc, int line, int *pos,
+		char *buf, enum argsflag fl, char **v)
+{
+	char		*p;
+	int		 pairs;
+
+	if (buf[*pos] == '\0') {
+		if (mdoc->flags & MDOC_PHRASELIT &&
+		    ! (mdoc->flags & MDOC_PHRASE)) {
+			mandoc_msg(MANDOCERR_ARG_QUOTE,
+			    mdoc->parse, line, *pos, NULL);
+			mdoc->flags &= ~MDOC_PHRASELIT;
+		}
+		return ARGS_EOLN;
+	}
+
+	*v = buf + *pos;
+
+	if (fl == ARGSFL_DELIM && args_checkpunct(buf, *pos))
+		return ARGS_PUNCT;
+
+	/*
+	 * Tabs in `It' lines in `Bl -column' can't be escaped.
+	 * Phrases are reparsed for `Ta' and other macros later.
+	 */
+
+	if (fl == ARGSFL_TABSEP) {
+		if ((p = strchr(*v, '\t')) != NULL) {
+
+			/*
+			 * Words right before and right after
+			 * tab characters are not parsed,
+			 * unless there is a blank in between.
+			 */
+
+			if (p[-1] != ' ')
+				mdoc->flags |= MDOC_PHRASEQL;
+			if (p[1] != ' ')
+				mdoc->flags |= MDOC_PHRASEQN;
+
+			/*
+			 * One or more blanks after a tab cause
+			 * one leading blank in the next column.
+			 * So skip all but one of them.
+			 */
+
+			*pos += (int)(p - *v) + 1;
+			while (buf[*pos] == ' ' && buf[*pos + 1] == ' ')
+				(*pos)++;
+
+			/*
+			 * A tab at the end of an input line
+			 * switches to the next column.
+			 */
+
+			if (buf[*pos] == '\0' || buf[*pos + 1] == '\0')
+				mdoc->flags |= MDOC_PHRASEQN;
+		} else {
+			p = strchr(*v, '\0');
+			if (p[-1] == ' ')
+				mandoc_msg(MANDOCERR_SPACE_EOL,
+				    mdoc->parse, line, *pos, NULL);
+			*pos += (int)(p - *v);
+		}
+
+		/* Skip any trailing blank characters. */
+		while (p > *v && p[-1] == ' ' &&
+		    (p - 1 == *v || p[-2] != '\\'))
+			p--;
+		*p = '\0';
+
+		return ARGS_PHRASE;
+	}
+
+	/*
+	 * Process a quoted literal.  A quote begins with a double-quote
+	 * and ends with a double-quote NOT preceded by a double-quote.
+	 * NUL-terminate the literal in place.
+	 * Collapse pairs of quotes inside quoted literals.
+	 * Whitespace is NOT involved in literal termination.
+	 */
+
+	if (mdoc->flags & MDOC_PHRASELIT || buf[*pos] == '\"') {
+		if ( ! (mdoc->flags & MDOC_PHRASELIT))
+			*v = &buf[++(*pos)];
+
+		if (mdoc->flags & MDOC_PHRASE)
+			mdoc->flags |= MDOC_PHRASELIT;
+
+		pairs = 0;
+		for ( ; buf[*pos]; (*pos)++) {
+			/* Move following text left after quoted quotes. */
+			if (pairs)
+				buf[*pos - pairs] = buf[*pos];
+			if ('\"' != buf[*pos])
+				continue;
+			/* Unquoted quotes end quoted args. */
+			if ('\"' != buf[*pos + 1])
+				break;
+			/* Quoted quotes collapse. */
+			pairs++;
+			(*pos)++;
+		}
+		if (pairs)
+			buf[*pos - pairs] = '\0';
+
+		if (buf[*pos] == '\0') {
+			if ( ! (mdoc->flags & MDOC_PHRASE))
+				mandoc_msg(MANDOCERR_ARG_QUOTE,
+				    mdoc->parse, line, *pos, NULL);
+			return ARGS_QWORD;
+		}
+
+		mdoc->flags &= ~MDOC_PHRASELIT;
+		buf[(*pos)++] = '\0';
+
+		if ('\0' == buf[*pos])
+			return ARGS_QWORD;
+
+		while (' ' == buf[*pos])
+			(*pos)++;
+
+		if ('\0' == buf[*pos])
+			mandoc_msg(MANDOCERR_SPACE_EOL, mdoc->parse,
+			    line, *pos, NULL);
+
+		return ARGS_QWORD;
+	}
+
+	p = &buf[*pos];
+	*v = mandoc_getarg(mdoc->parse, &p, line, pos);
+
+	/*
+	 * After parsing the last word in this phrase,
+	 * tell lookup() whether or not to interpret it.
+	 */
+
+	if (*p == '\0' && mdoc->flags & MDOC_PHRASEQL) {
+		mdoc->flags &= ~MDOC_PHRASEQL;
+		mdoc->flags |= MDOC_PHRASEQF;
+	}
+	return ARGS_WORD;
+}
+
+/*
+ * Check if the string consists only of space-separated closing
+ * delimiters.  This is a bit of a dance: the first must be a close
+ * delimiter, but it may be followed by middle delimiters.  Arbitrary
+ * whitespace may separate these tokens.
+ */
+static int
+args_checkpunct(const char *buf, int i)
+{
+	int		 j;
+	char		 dbuf[DELIMSZ];
+	enum mdelim	 d;
+
+	/* First token must be a close-delimiter. */
+
+	for (j = 0; buf[i] && ' ' != buf[i] && j < DELIMSZ; j++, i++)
+		dbuf[j] = buf[i];
+
+	if (DELIMSZ == j)
+		return 0;
+
+	dbuf[j] = '\0';
+	if (DELIM_CLOSE != mdoc_isdelim(dbuf))
+		return 0;
+
+	while (' ' == buf[i])
+		i++;
+
+	/* Remaining must NOT be open/none. */
+
+	while (buf[i]) {
+		j = 0;
+		while (buf[i] && ' ' != buf[i] && j < DELIMSZ)
+			dbuf[j++] = buf[i++];
+
+		if (DELIMSZ == j)
+			return 0;
+
+		dbuf[j] = '\0';
+		d = mdoc_isdelim(dbuf);
+		if (DELIM_NONE == d || DELIM_OPEN == d)
+			return 0;
+
+		while (' ' == buf[i])
+			i++;
+	}
+
+	return '\0' == buf[i];
+}
+
+static void
+argv_multi(struct roff_man *mdoc, int line,
+		struct mdoc_argv *v, int *pos, char *buf)
+{
+	enum margserr	 ac;
+	char		*p;
+
+	for (v->sz = 0; ; v->sz++) {
+		if (buf[*pos] == '-')
+			break;
+		ac = args(mdoc, line, pos, buf, ARGSFL_NONE, &p);
+		if (ac == ARGS_EOLN)
+			break;
+
+		if (v->sz % MULTI_STEP == 0)
+			v->value = mandoc_reallocarray(v->value,
+			    v->sz + MULTI_STEP, sizeof(char *));
+
+		v->value[(int)v->sz] = mandoc_strdup(p);
+	}
+}
+
+static void
+argv_single(struct roff_man *mdoc, int line,
+		struct mdoc_argv *v, int *pos, char *buf)
+{
+	enum margserr	 ac;
+	char		*p;
+
+	ac = args(mdoc, line, pos, buf, ARGSFL_NONE, &p);
+	if (ac == ARGS_EOLN)
+		return;
+
+	v->sz = 1;
+	v->value = mandoc_malloc(sizeof(char *));
+	v->value[0] = mandoc_strdup(p);
+}
+@
+
+
+1.106
+log
+@Simplify the part of args() that is handling .Bl -column phrases:
+Delete manual "Ta" handling because macro handling should
+not be done in an argument parser but should be left to the
+macro parsers, which exist anyway and work well.
+No functional change, minus 40 lines of code.
+
+Confusing and redundant code found while investigating
+an old bug report from tim@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.105 2015/10/06 18:32:19 schwarze Exp $ */
+a451 1
+	enum margserr	 rc;
+d455 1
+a455 1
+		    ! (mdoc->flags & MDOC_PPHRASE)) {
+d475 18
+a492 1
+			/* Skip any blank characters after the tab. */
+d494 1
+a494 1
+			while (buf[*pos] == ' ')
+d496 8
+a503 1
+			rc = ARGS_PPHRASE;
+a509 1
+			rc = ARGS_PEND;
+d518 1
+a518 1
+		return rc;
+d529 2
+a530 2
+	if (MDOC_PHRASELIT & mdoc->flags || '\"' == buf[*pos]) {
+		if ( ! (MDOC_PHRASELIT & mdoc->flags))
+d533 1
+a533 1
+		if (MDOC_PPHRASE & mdoc->flags)
+d553 4
+a556 5
+		if ('\0' == buf[*pos]) {
+			if (MDOC_PPHRASE & mdoc->flags)
+				return ARGS_QWORD;
+			mandoc_msg(MANDOCERR_ARG_QUOTE,
+			    mdoc->parse, line, *pos, NULL);
+d579 9
+@
+
+
+1.105
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.104 2015/04/19 14:00:19 schwarze Exp $ */
+d450 1
+a450 1
+	char		*p, *pp;
+d454 3
+a456 9
+	if ('\0' == buf[*pos]) {
+		if (MDOC_PPHRASE & mdoc->flags)
+			return ARGS_EOLN;
+		/*
+		 * If we're not in a partial phrase and the flag for
+		 * being a phrase literal is still set, the punctuation
+		 * is unterminated.
+		 */
+		if (MDOC_PHRASELIT & mdoc->flags)
+d459 2
+a460 2
+
+		mdoc->flags &= ~MDOC_PHRASELIT;
+d464 1
+a464 1
+	*v = &buf[*pos];
+d466 2
+a467 3
+	if (ARGSFL_DELIM == fl)
+		if (args_checkpunct(buf, *pos))
+			return ARGS_PUNCT;
+d470 2
+a471 4
+	 * First handle TABSEP items, restricted to `Bl -column'.  This
+	 * ignores conventional token parsing and instead uses tabs or
+	 * `Ta' macros to separate phrases.  Phrases are parsed again
+	 * for arguments at a later phase.
+d474 6
+a479 28
+	if (ARGSFL_TABSEP == fl) {
+		/* Scan ahead to tab (can't be escaped). */
+		p = strchr(*v, '\t');
+		pp = NULL;
+
+		/* Scan ahead to unescaped `Ta'. */
+		if ( ! (MDOC_PHRASELIT & mdoc->flags))
+			for (pp = *v; ; pp++) {
+				if (NULL == (pp = strstr(pp, "Ta")))
+					break;
+				if (pp > *v && ' ' != *(pp - 1))
+					continue;
+				if (' ' == *(pp + 2) || '\0' == *(pp + 2))
+					break;
+			}
+
+		/* By default, assume a phrase. */
+		rc = ARGS_PHRASE;
+
+		/*
+		 * Adjust new-buffer position to be beyond delimiter
+		 * mark (e.g., Ta -> end + 2).
+		 */
+		if (p && pp) {
+			*pos += pp < p ? 2 : 1;
+			rc = pp < p ? ARGS_PHRASE : ARGS_PPHRASE;
+			p = pp < p ? pp : p;
+		} else if (p && ! pp) {
+a480 4
+			*pos += 1;
+		} else if (pp && ! p) {
+			p = pp;
+			*pos += 2;
+d482 5
+a487 16
+			p = strchr(*v, 0);
+		}
+
+		/* Whitespace check for eoln case... */
+		if ('\0' == *p && ' ' == *(p - 1))
+			mandoc_msg(MANDOCERR_SPACE_EOL, mdoc->parse,
+			    line, *pos, NULL);
+
+		*pos += (int)(p - *v);
+
+		/* Strip delimiter's preceding whitespace. */
+		pp = p - 1;
+		while (pp > *v && ' ' == *pp) {
+			if (pp > *v && '\\' == *(pp - 1))
+				break;
+			pp--;
+a488 1
+		*(pp + 1) = 0;
+d490 5
+a494 3
+		/* Strip delimiter's proceeding whitespace. */
+		for (pp = &buf[*pos]; ' ' == *pp; pp++, (*pos)++)
+			/* Skip ahead. */ ;
+@
+
+
+1.104
+log
+@Decouple the token code for "no request or macro" from the individual
+high-level parsers to allow further unification of functions that
+only need to recognize this code, but that don't care about different
+high-level macrosets beyond that.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.103 2015/04/18 16:06:40 schwarze Exp $ */
+d427 1
+a427 1
+		return(args(mdoc, line, pos, buf, fl, v));
+d443 1
+a443 1
+	return(args(mdoc, line, pos, buf, fl, v));
+d456 1
+a456 1
+			return(ARGS_EOLN);
+d467 1
+a467 1
+		return(ARGS_EOLN);
+d474 1
+a474 1
+			return(ARGS_PUNCT);
+d541 1
+a541 1
+		return(rc);
+d578 1
+a578 1
+				return(ARGS_QWORD);
+d581 1
+a581 1
+			return(ARGS_QWORD);
+d588 1
+a588 1
+			return(ARGS_QWORD);
+d597 1
+a597 1
+		return(ARGS_QWORD);
+d603 1
+a603 1
+	return(ARGS_WORD);
+d625 1
+a625 1
+		return(0);
+d629 1
+a629 1
+		return(0);
+d642 1
+a642 1
+			return(0);
+d647 1
+a647 1
+			return(0);
+d653 1
+a653 1
+	return('\0' == buf[i]);
+@
+
+
+1.103
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.102 2015/04/02 22:48:17 schwarze Exp $ */
+d425 1
+a425 1
+	fl = tok == MDOC_MAX ? ARGSFL_NONE : mdocargs[tok].flags;
+@
+
+
+1.102
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.101 2015/04/02 21:36:50 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d55 1
+a55 1
+static	enum margserr	 args(struct mdoc *, int, int *,
+d58 1
+a58 1
+static	void		 argv_multi(struct mdoc *, int,
+d60 1
+a60 1
+static	void		 argv_single(struct mdoc *, int,
+d279 1
+a279 1
+mdoc_argv(struct mdoc *mdoc, int line, int tok,
+d416 1
+a416 1
+mdoc_args(struct mdoc *mdoc, int line, int *pos,
+d447 1
+a447 1
+args(struct mdoc *mdoc, int line, int *pos,
+d657 1
+a657 1
+argv_multi(struct mdoc *mdoc, int line,
+d679 1
+a679 1
+argv_single(struct mdoc *mdoc, int line,
+@
+
+
+1.101
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.100 2015/02/04 18:59:45 schwarze Exp $ */
+d279 1
+a279 1
+mdoc_argv(struct mdoc *mdoc, int line, enum mdoct tok,
+d417 1
+a417 1
+		char *buf, enum mdoct tok, char **v)
+d419 1
+a419 1
+	struct mdoc_node *n;
+@
+
+
+1.100
+log
+@fix column numbers of macro arguments in messages
+@
+text
+@d1 1
+a1 1
+/*	$Id$ */
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d27 3
+d31 1
+a31 2
+#include "mandoc.h"
+#include "mandoc_aux.h"
+a32 1
+#include "libmandoc.h"
+@
+
+
+1.99
+log
+@Provide a helper function macro_or_word() and use it to prune the
+same chunk of argument parsing code out of five of the eight callback
+functions.  The other three have too much special handling to
+participate.
+As a bonus, let lookup() and mdoc_args() deal with line macros and
+retire the lookup_raw() helper and the mdoc_zargs() internal interface
+function.
+No functional change, minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$OpenBSD$ */
+d342 1
+a342 1
+		tmpv.pos   = ipos;
+@
+
+
+1.98
+log
+@Fold the loop around mdoc_argv() into the function itself,
+it was the same in all four cases.  As a bonus, get rid
+of one enum type that was used for internal communication.
+No functional change, minus 40 lines of code.
+@
+text
+@a414 7
+mdoc_zargs(struct mdoc *mdoc, int line, int *pos, char *buf, char **v)
+{
+
+	return(args(mdoc, line, pos, buf, ARGSFL_NONE, v));
+}
+
+enum margserr
+d418 2
+a420 3
+	struct mdoc_node *n;
+
+	fl = mdocargs[tok].flags;
+d422 4
+a425 1
+	if (MDOC_It != tok)
+@
+
+
+1.97
+log
+@Simplify the code by making various mdoc parser helper functions void.
+No functional change, minus 130 lines of code.
+@
+text
+@d4 1
+a4 1
+ * Copyright (c) 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d273 3
+a275 3
+ * Parse an argument from line text.  This comes in the form of -key
+ * [value0...], which may either have a single mandatory value, at least
+ * one mandatory value, an optional single value, or no value.
+d277 1
+a277 1
+enum margverr
+d279 1
+a279 1
+		struct mdoc_arg **v, int *pos, char *buf)
+d281 14
+a294 11
+	char		 *p, sv;
+	struct mdoc_argv tmp;
+	struct mdoc_arg	 *arg;
+	const enum mdocargt *ap;
+
+	if ('\0' == buf[*pos])
+		return(ARGV_EOLN);
+	else if (NULL == (ap = mdocargs[tok].argvs))
+		return(ARGV_WORD);
+	else if ('-' != buf[*pos])
+		return(ARGV_WORD);
+d296 1
+a296 1
+	/* Seek to the first unescaped space. */
+d298 2
+a299 1
+	p = &buf[++(*pos)];
+d301 1
+a301 1
+	assert(*pos > 0);
+d303 3
+a305 3
+	for ( ; buf[*pos] ; (*pos)++)
+		if (' ' == buf[*pos] && '\\' != buf[*pos - 1])
+			break;
+d307 6
+a312 6
+	/*
+	 * We want to nil-terminate the word to look it up (it's easier
+	 * that way).  But we may not have a flag, in which case we need
+	 * to restore the line as-is.  So keep around the stray byte,
+	 * which we'll reset upon exiting (if necessary).
+	 */
+d314 2
+a315 2
+	if ('\0' != (sv = buf[*pos]))
+		buf[(*pos)++] = '\0';
+d317 4
+a320 4
+	/*
+	 * Now look up the word as a flag.  Use temporary storage that
+	 * we'll copy into the node's flags, if necessary.
+	 */
+d322 3
+a324 1
+	memset(&tmp, 0, sizeof(struct mdoc_argv));
+d326 1
+a326 3
+	tmp.line = line;
+	tmp.pos = *pos;
+	tmp.arg = MDOC_ARG_MAX;
+d328 3
+a330 2
+	while (MDOC_ARG_MAX != (tmp.arg = *ap++))
+		if (0 == strcmp(p, mdoc_argnames[tmp.arg]))
+d332 3
+d336 4
+a339 9
+	if (MDOC_ARG_MAX == tmp.arg) {
+		/*
+		 * The flag was not found.
+		 * Restore saved zeroed byte and return as a word.
+		 */
+		if (sv)
+			buf[*pos - 1] = sv;
+		return(ARGV_WORD);
+	}
+d341 4
+a344 1
+	/* Read to the next word (the argument). */
+d346 10
+a355 2
+	while (buf[*pos] && ' ' == buf[*pos])
+		(*pos)++;
+d357 1
+a357 10
+	switch (argvflags[tmp.arg]) {
+	case ARGV_SINGLE:
+		argv_single(mdoc, line, &tmp, pos, buf);
+		break;
+	case ARGV_MULTI:
+		argv_multi(mdoc, line, &tmp, pos, buf);
+		break;
+	case ARGV_NONE:
+		break;
+	}
+d359 2
+a360 2
+	if (NULL == (arg = *v))
+		arg = *v = mandoc_calloc(1, sizeof(struct mdoc_arg));
+d362 4
+a365 3
+	arg->argc++;
+	arg->argv = mandoc_reallocarray(arg->argv,
+	    arg->argc, sizeof(struct mdoc_argv));
+d367 1
+a367 2
+	memcpy(&arg->argv[(int)arg->argc - 1], &tmp,
+	    sizeof(struct mdoc_argv));
+d369 3
+a371 1
+	return(ARGV_ARG);
+@
+
+
+1.96
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.95 2014/07/06 19:09:00 schwarze Exp $ */
+d57 1
+a57 1
+static	int		 argv_multi(struct mdoc *, int,
+d59 1
+a59 1
+static	int		 argv_single(struct mdoc *, int,
+d345 1
+a345 2
+		if ( ! argv_single(mdoc, line, &tmp, pos, buf))
+			return(ARGV_ERROR);
+d348 1
+a348 2
+		if ( ! argv_multi(mdoc, line, &tmp, pos, buf))
+			return(ARGV_ERROR);
+d653 1
+a653 1
+static int
+d661 1
+a661 1
+		if ('-' == buf[*pos])
+d664 1
+a664 3
+		if (ARGS_ERROR == ac)
+			return(0);
+		else if (ARGS_EOLN == ac)
+d667 1
+a667 1
+		if (0 == v->sz % MULTI_STEP)
+a672 2
+
+	return(1);
+d675 1
+a675 1
+static int
+d683 2
+a684 4
+	if (ARGS_ERROR == ac)
+		return(0);
+	if (ARGS_EOLN == ac)
+		return(1);
+a688 2
+
+	return(1);
+@
+
+
+1.95
+log
+@Clean up messages related to plain text and to escape sequences.
+* Mention invalid escape sequences and string names, and fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.94 2014/07/02 03:48:07 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+a18 1
+#endif
+@
+
+
+1.94
+log
+@Implement the obsolete macros .En .Es .Fr .Ot for backward compatibility,
+since this is hardly more complicated than explicitly ignoring them
+as we did in the past.  Of course, do not use them!
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.93 2014/04/23 21:06:41 schwarze Exp $ */
+d464 2
+a465 1
+			mdoc_pmsg(mdoc, line, *pos, MANDOCERR_BADQUOTE);
+d524 2
+a525 1
+			mdoc_pmsg(mdoc, line, *pos, MANDOCERR_EOLNSPACE);
+d580 2
+a581 1
+			mdoc_pmsg(mdoc, line, *pos, MANDOCERR_BADQUOTE);
+d595 2
+a596 1
+			mdoc_pmsg(mdoc, line, *pos, MANDOCERR_EOLNSPACE);
+@
+
+
+1.93
+log
+@Audit malloc(3)/calloc(3)/realloc(3) usage.
+* Change eight reallocs to reallocarray to be safe from overflows.
+* Change one malloc to reallocarray to be safe from overflows.
+* Change one calloc to reallocarray, no zeroing needed.
+* Change the order of arguments of three callocs (aesthetical).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.92 2014/04/20 16:46:05 schwarze Exp $ */
+d182 1
+a182 1
+	{ ARGSFL_NONE, NULL }, /* Ot */
+d252 1
+a252 1
+	{ ARGSFL_NONE, NULL }, /* Fr */
+d263 1
+a263 1
+	{ ARGSFL_NONE, NULL }, /* En */
+@
+
+
+1.92
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.91 2014/03/30 19:47:48 schwarze Exp $ */
+d362 2
+a363 2
+	arg->argv = mandoc_realloc(arg->argv,
+	    arg->argc * sizeof(struct mdoc_argv));
+d670 2
+a671 2
+			v->value = mandoc_realloc(v->value,
+			    (v->sz + MULTI_STEP) * sizeof(char *));
+@
+
+
+1.91
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.90 2014/03/23 11:25:26 schwarze Exp $ */
+d36 1
+a36 1
+#define	DELIMSZ	  	 6 /* max possible size of a delimiter */
+d56 1
+a56 1
+static	enum margserr	 args(struct mdoc *, int, int *, 
+d59 1
+a59 1
+static	int		 argv_multi(struct mdoc *, int, 
+d61 1
+a61 1
+static	int		 argv_single(struct mdoc *, int, 
+d153 2
+a154 2
+	{ ARGSFL_NONE, NULL }, /* Ss */ 
+	{ ARGSFL_NONE, NULL }, /* Pp */ 
+d162 1
+a162 1
+	{ ARGSFL_DELIM, NULL }, /* Ad */ 
+d167 3
+a169 3
+	{ ARGSFL_DELIM, NULL }, /* Dv */ 
+	{ ARGSFL_DELIM, NULL }, /* Er */ 
+	{ ARGSFL_DELIM, NULL }, /* Ev */ 
+d171 2
+a172 2
+	{ ARGSFL_DELIM, NULL }, /* Fa */ 
+	{ ARGSFL_NONE, NULL }, /* Fd */ 
+d174 4
+a177 4
+	{ ARGSFL_DELIM, NULL }, /* Fn */ 
+	{ ARGSFL_DELIM, NULL }, /* Ft */ 
+	{ ARGSFL_DELIM, NULL }, /* Ic */ 
+	{ ARGSFL_DELIM, NULL }, /* In */ 
+d179 2
+a180 2
+	{ ARGSFL_NONE, NULL }, /* Nd */ 
+	{ ARGSFL_DELIM, NULL }, /* Nm */ 
+d185 1
+a185 1
+	{ ARGSFL_DELIM, NULL }, /* St */ 
+d187 1
+a187 1
+	{ ARGSFL_DELIM, NULL }, /* Vt */ 
+d205 1
+a205 1
+	{ ARGSFL_NONE, args_Bf }, /* Bf */ 
+d216 1
+a216 1
+	{ ARGSFL_DELIM, NULL }, /* Em */ 
+d244 2
+a245 2
+	{ ARGSFL_NONE, NULL }, /* Fo */ 
+	{ ARGSFL_DELIM, NULL }, /* Fc */ 
+d305 1
+a305 1
+	/* 
+d312 1
+a312 1
+	if ('\0' != (sv = buf[*pos])) 
+d331 1
+a331 1
+		/* 
+d346 1
+a346 1
+	case (ARGV_SINGLE):
+d350 1
+a350 1
+	case (ARGV_MULTI):
+d354 1
+a354 1
+	case (ARGV_NONE):
+d362 2
+a363 2
+	arg->argv = mandoc_realloc
+		(arg->argv, arg->argc * sizeof(struct mdoc_argv));
+d365 2
+a366 2
+	memcpy(&arg->argv[(int)arg->argc - 1], 
+			&tmp, sizeof(struct mdoc_argv));
+d402 1
+a402 1
+		for (j = (int)arg->sz - 1; j >= 0; j--) 
+d419 1
+a419 1
+mdoc_args(struct mdoc *mdoc, int line, int *pos, 
+d448 1
+a448 1
+args(struct mdoc *mdoc, int line, int *pos, 
+d489 1
+a489 1
+		if ( ! (MDOC_PHRASELIT & mdoc->flags)) 
+d502 1
+a502 1
+		/* 
+d603 1
+a603 1
+/* 
+d632 1
+a632 1
+	
+d654 1
+a654 1
+argv_multi(struct mdoc *mdoc, int line, 
+d670 2
+a671 2
+			v->value = mandoc_realloc(v->value, 
+				(v->sz + MULTI_STEP) * sizeof(char *));
+d680 1
+a680 1
+argv_single(struct mdoc *mdoc, int line, 
+@
+
+
+1.90
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.89 2013/12/25 00:50:05 schwarze Exp $ */
+d270 1
+@
+
+
+1.89
+log
+@s/[Nn]ull/NUL/ in comments where appropriate;
+suggested by Thomas Klausner <wiz @@ NetBSD dot org>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.88 2013/12/22 14:06:36 schwarze Exp $ */
+d31 1
+@
+
+
+1.88
+log
+@Fix end-of-sentence spacing after the DragonFly text production macro.
+Patch from Franco Fichtner <franco at lastsummer dot de>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.87 2013/12/15 23:56:42 schwarze Exp $ */
+d539 1
+a539 1
+	} 
+d541 1
+a541 1
+	/* 
+d544 1
+a544 1
+	 * Null-terminate the literal in place.
+@
+
+
+1.87
+log
+@In quoted macro arguments, double quotes can be quoted by doubling them.
+For a long time, we handle this in roff(7) and man(7) macros.
+Now add correct handling for the mdoc(7) case, too.
+
+Closely based on a patch by Tsugutomo dot ENAMI at jp dot sony dot com,
+see http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48438
+received via Thomas Klausner (wiz@@), slightly tweaked by me.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.86 2012/11/18 00:05:35 schwarze Exp $ */
+d263 1
+a263 1
+	{ ARGSFL_NONE, NULL }, /* Dx */
+@
+
+
+1.86
+log
+@Fix four small whitespace issues related to trailing punctuation
+reported by Nicolas Joly <njoly at pasteur dot fr>:
+
+- add EOS spacing after trailing punctuation after .Cd, .Fc, and .Lb
+- suppress spacing before trailing punctuation after .Fd
+
+Add the remaining issues from the same report to the TODO file.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.85 2012/11/17 00:26:33 schwarze Exp $ */
+d450 1
+d544 2
+d556 1
+d558 3
+d563 1
+d566 2
+d570 2
+@
+
+
+1.85
+log
+@Cleanup naming of local variables to make the code easier on the eye:
+Settle for "struct man *man", "struct mdoc *mdoc", "struct meta *meta"
+and avoid the confusing "*m" which was sometimes this, sometimes that.
+No functional change.
+
+ok kristaps@@ some time ago
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.84 2012/11/16 18:41:18 schwarze Exp $ */
+d164 1
+a164 1
+	{ ARGSFL_NONE, NULL }, /* Cd */
+d244 1
+a244 1
+	{ ARGSFL_NONE, NULL }, /* Fc */ 
+d253 1
+a253 1
+	{ ARGSFL_NONE, NULL }, /* Lb */
+@
+
+
+1.84
+log
+@Two more macros (.Ap and .In) do trailing delimiter handling.
+This fixes the end of sentence spacing in OpenBSD open(2)
+and in about 150 pages in the NetBSD base system.
+
+Reported by Nicolas Joly <njoly a pasteur point fr>, merci!
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.83 2012/04/15 15:26:49 schwarze Exp $ */
+d278 1
+a278 1
+mdoc_argv(struct mdoc *m, int line, enum mdoct tok,
+d345 1
+a345 1
+		if ( ! argv_single(m, line, &tmp, pos, buf))
+d349 1
+a349 1
+		if ( ! argv_multi(m, line, &tmp, pos, buf))
+d410 1
+a410 1
+mdoc_zargs(struct mdoc *m, int line, int *pos, char *buf, char **v)
+d413 1
+a413 1
+	return(args(m, line, pos, buf, ARGSFL_NONE, v));
+d417 1
+a417 1
+mdoc_args(struct mdoc *m, int line, int *pos, 
+d426 1
+a426 1
+		return(args(m, line, pos, buf, fl, v));
+d435 1
+a435 1
+	for (n = m->last; n; n = n->parent)
+d442 1
+a442 1
+	return(args(m, line, pos, buf, fl, v));
+d446 1
+a446 1
+args(struct mdoc *m, int line, int *pos, 
+d453 1
+a453 1
+		if (MDOC_PPHRASE & m->flags)
+d460 2
+a461 2
+		if (MDOC_PHRASELIT & m->flags)
+			mdoc_pmsg(m, line, *pos, MANDOCERR_BADQUOTE);
+d463 1
+a463 1
+		m->flags &= ~MDOC_PHRASELIT;
+d486 1
+a486 1
+		if ( ! (MDOC_PHRASELIT & m->flags)) 
+d520 1
+a520 1
+			mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE);
+d546 2
+a547 2
+	if (MDOC_PHRASELIT & m->flags || '\"' == buf[*pos]) {
+		if ( ! (MDOC_PHRASELIT & m->flags))
+d550 2
+a551 2
+		if (MDOC_PPHRASE & m->flags)
+			m->flags |= MDOC_PHRASELIT;
+d562 1
+a562 1
+			if (MDOC_PPHRASE & m->flags)
+d564 1
+a564 1
+			mdoc_pmsg(m, line, *pos, MANDOCERR_BADQUOTE);
+d568 1
+a568 1
+		m->flags &= ~MDOC_PHRASELIT;
+d578 1
+a578 1
+			mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE);
+d584 1
+a584 1
+	*v = mandoc_getarg(m->parse, &p, line, pos);
+d640 1
+a640 1
+argv_multi(struct mdoc *m, int line, 
+d649 1
+a649 1
+		ac = args(m, line, pos, buf, ARGSFL_NONE, &p);
+d666 1
+a666 1
+argv_single(struct mdoc *m, int line, 
+d672 1
+a672 1
+	ac = args(m, line, pos, buf, ARGSFL_NONE, &p);
+@
+
+
+1.83
+log
+@The -width and -offset macro arguments consume the next argument
+even if it starts with a dash.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.82 2012/03/23 05:50:24 kristaps Exp $ */
+d4 1
+d147 1
+a147 1
+	{ ARGSFL_NONE, NULL }, /* Ap */
+d176 1
+a176 1
+	{ ARGSFL_NONE, NULL }, /* In */ 
+@
+
+
+1.82
+log
+@Make the `-width' field to `Bl' not puke if it doesn't have an argument.
+This makes mandoc work much, much nicer with Mac OSX manpages.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.81 2011/09/18 14:14:15 schwarze Exp $ */
+d45 1
+a45 2
+	ARGV_MULTI, /* multiple args (e.g., -column xxx yyy) */
+	ARGV_OPT_SINGLE /* optional arg (e.g., -offset [xxx]) */
+a58 2
+static	int		 argv_opt_single(struct mdoc *, int, 
+				struct mdoc_argv *, int *, char *);
+d69 1
+a69 1
+	ARGV_OPT_SINGLE, /* MDOC_Offset */
+d81 1
+a81 1
+	ARGV_OPT_SINGLE, /* MDOC_Width */
+a350 4
+	case (ARGV_OPT_SINGLE):
+		if ( ! argv_opt_single(m, line, &tmp, pos, buf))
+			return(ARGV_ERROR);
+		break;
+d665 1
+a665 1
+argv_opt_single(struct mdoc *m, int line, 
+a670 3
+	if ('-' == buf[*pos])
+		return(1);
+
+a682 24
+
+static int
+argv_single(struct mdoc *m, int line, 
+		struct mdoc_argv *v, int *pos, char *buf)
+{
+	int		 ppos;
+	enum margserr	 ac;
+	char		*p;
+
+	ppos = *pos;
+
+	ac = args(m, line, pos, buf, ARGSFL_NONE, &p);
+	if (ARGS_EOLN == ac) {
+		mdoc_pmsg(m, line, ppos, MANDOCERR_SYNTARGVCOUNT);
+		return(0);
+	} else if (ARGS_ERROR == ac)
+		return(0);
+
+	v->sz = 1;
+	v->value = mandoc_malloc(sizeof(char *));
+	v->value[0] = mandoc_strdup(p);
+
+	return(1);
+}
+@
+
+
+1.81
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.80 2011/06/18 16:53:27 kristaps Exp $ */
+d84 1
+a84 1
+	ARGV_SINGLE,	/* MDOC_Width */
+@
+
+
+1.80
+log
+@Add back in a check that the leading `-' exists for arguments.  This
+mysteriously disappeared in 1.14.  No idea why.  While here, remove an
+unnecessary header and order the function prototypes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.79 2011/06/18 16:29:38 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.79
+log
+@Clean-up: remove a function only called once.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.78 2011/06/18 16:18:04 kristaps Exp $ */
+a23 1
+#include <ctype.h>
+d54 1
+d58 1
+a58 1
+static	int		 argv_single(struct mdoc *, int, 
+d62 1
+a62 1
+static	int		 argv_multi(struct mdoc *, int, 
+a63 1
+static	void		 argn_free(struct mdoc_arg *, int);
+d292 2
+a293 2
+
+	assert(' ' != buf[*pos]);
+@
+
+
+1.78
+log
+@Fix an assertion failure raised by the following interesting scenario: a
+auto-opened `It' (i.e., a column list with a free-text first line) with
+leading spaces in the line triggering assertion when searching for
+arguments.
+
+This led to a fix giving a nice performance speed-ups (a few percent,
+with some quick trials): the search for flags immediately exits if the
+macro has no flags, instead of having to first parse the leading word
+then look it up.  I also cleaned up the argv parsing stuff a little bit
+and added more documentation.
+
+This comes from a TODO by joerg@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.77 2011/05/12 23:44:01 kristaps Exp $ */
+a57 2
+static	int		 argv(struct mdoc *, int, 
+				struct mdoc_argv *, int *, char *);
+d346 16
+a361 2
+	if ( ! argv(m, line, &tmp, pos, buf))
+		return(ARGV_ERROR);
+a694 3
+/*
+ * Parse a single, mandatory value from the stream.
+ */
+a717 30
+
+/*
+ * Determine rules for parsing arguments.  Arguments can either accept
+ * no parameters, an optional single parameter, one parameter, or
+ * multiple parameters.
+ */
+static int
+argv(struct mdoc *mdoc, int line, 
+		struct mdoc_argv *v, int *pos, char *buf)
+{
+
+	v->sz = 0;
+	v->value = NULL;
+
+	switch (argvflags[v->arg]) {
+	case (ARGV_SINGLE):
+		return(argv_single(mdoc, line, v, pos, buf));
+	case (ARGV_MULTI):
+		return(argv_multi(mdoc, line, v, pos, buf));
+	case (ARGV_OPT_SINGLE):
+		return(argv_opt_single(mdoc, line, v, pos, buf));
+	case (ARGV_NONE):
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+
+	return(1);
+}
+@
+
+
+1.77
+log
+@Lint fixes: remove unused function variables and pass in proper enum
+values instead of ints.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.76 2011/04/19 16:38:48 kristaps Exp $ */
+d50 5
+a54 1
+static	enum mdocargt	 argv_a2arg(enum mdoct, const char *);
+a96 125
+static	const enum argsflag argflags[MDOC_MAX] = {
+	ARGSFL_NONE, /* Ap */
+	ARGSFL_NONE, /* Dd */
+	ARGSFL_NONE, /* Dt */
+	ARGSFL_NONE, /* Os */
+	ARGSFL_NONE, /* Sh */
+	ARGSFL_NONE, /* Ss */ 
+	ARGSFL_NONE, /* Pp */ 
+	ARGSFL_DELIM, /* D1 */
+	ARGSFL_DELIM, /* Dl */
+	ARGSFL_NONE, /* Bd */
+	ARGSFL_NONE, /* Ed */
+	ARGSFL_NONE, /* Bl */
+	ARGSFL_NONE, /* El */
+	ARGSFL_NONE, /* It */
+	ARGSFL_DELIM, /* Ad */ 
+	ARGSFL_DELIM, /* An */
+	ARGSFL_DELIM, /* Ar */
+	ARGSFL_NONE, /* Cd */
+	ARGSFL_DELIM, /* Cm */
+	ARGSFL_DELIM, /* Dv */ 
+	ARGSFL_DELIM, /* Er */ 
+	ARGSFL_DELIM, /* Ev */ 
+	ARGSFL_NONE, /* Ex */
+	ARGSFL_DELIM, /* Fa */ 
+	ARGSFL_NONE, /* Fd */ 
+	ARGSFL_DELIM, /* Fl */
+	ARGSFL_DELIM, /* Fn */ 
+	ARGSFL_DELIM, /* Ft */ 
+	ARGSFL_DELIM, /* Ic */ 
+	ARGSFL_NONE, /* In */ 
+	ARGSFL_DELIM, /* Li */
+	ARGSFL_NONE, /* Nd */ 
+	ARGSFL_DELIM, /* Nm */ 
+	ARGSFL_DELIM, /* Op */
+	ARGSFL_NONE, /* Ot */
+	ARGSFL_DELIM, /* Pa */
+	ARGSFL_NONE, /* Rv */
+	ARGSFL_DELIM, /* St */ 
+	ARGSFL_DELIM, /* Va */
+	ARGSFL_DELIM, /* Vt */ 
+	ARGSFL_DELIM, /* Xr */
+	ARGSFL_NONE, /* %A */
+	ARGSFL_NONE, /* %B */
+	ARGSFL_NONE, /* %D */
+	ARGSFL_NONE, /* %I */
+	ARGSFL_NONE, /* %J */
+	ARGSFL_NONE, /* %N */
+	ARGSFL_NONE, /* %O */
+	ARGSFL_NONE, /* %P */
+	ARGSFL_NONE, /* %R */
+	ARGSFL_NONE, /* %T */
+	ARGSFL_NONE, /* %V */
+	ARGSFL_DELIM, /* Ac */
+	ARGSFL_NONE, /* Ao */
+	ARGSFL_DELIM, /* Aq */
+	ARGSFL_DELIM, /* At */
+	ARGSFL_DELIM, /* Bc */
+	ARGSFL_NONE, /* Bf */ 
+	ARGSFL_NONE, /* Bo */
+	ARGSFL_DELIM, /* Bq */
+	ARGSFL_DELIM, /* Bsx */
+	ARGSFL_DELIM, /* Bx */
+	ARGSFL_NONE, /* Db */
+	ARGSFL_DELIM, /* Dc */
+	ARGSFL_NONE, /* Do */
+	ARGSFL_DELIM, /* Dq */
+	ARGSFL_DELIM, /* Ec */
+	ARGSFL_NONE, /* Ef */
+	ARGSFL_DELIM, /* Em */ 
+	ARGSFL_NONE, /* Eo */
+	ARGSFL_DELIM, /* Fx */
+	ARGSFL_DELIM, /* Ms */
+	ARGSFL_DELIM, /* No */
+	ARGSFL_DELIM, /* Ns */
+	ARGSFL_DELIM, /* Nx */
+	ARGSFL_DELIM, /* Ox */
+	ARGSFL_DELIM, /* Pc */
+	ARGSFL_DELIM, /* Pf */
+	ARGSFL_NONE, /* Po */
+	ARGSFL_DELIM, /* Pq */
+	ARGSFL_DELIM, /* Qc */
+	ARGSFL_DELIM, /* Ql */
+	ARGSFL_NONE, /* Qo */
+	ARGSFL_DELIM, /* Qq */
+	ARGSFL_NONE, /* Re */
+	ARGSFL_NONE, /* Rs */
+	ARGSFL_DELIM, /* Sc */
+	ARGSFL_NONE, /* So */
+	ARGSFL_DELIM, /* Sq */
+	ARGSFL_NONE, /* Sm */
+	ARGSFL_DELIM, /* Sx */
+	ARGSFL_DELIM, /* Sy */
+	ARGSFL_DELIM, /* Tn */
+	ARGSFL_DELIM, /* Ux */
+	ARGSFL_DELIM, /* Xc */
+	ARGSFL_NONE, /* Xo */
+	ARGSFL_NONE, /* Fo */ 
+	ARGSFL_NONE, /* Fc */ 
+	ARGSFL_NONE, /* Oo */
+	ARGSFL_DELIM, /* Oc */
+	ARGSFL_NONE, /* Bk */
+	ARGSFL_NONE, /* Ek */
+	ARGSFL_NONE, /* Bt */
+	ARGSFL_NONE, /* Hf */
+	ARGSFL_NONE, /* Fr */
+	ARGSFL_NONE, /* Ud */
+	ARGSFL_NONE, /* Lb */
+	ARGSFL_NONE, /* Lp */
+	ARGSFL_DELIM, /* Lk */
+	ARGSFL_DELIM, /* Mt */
+	ARGSFL_DELIM, /* Brq */
+	ARGSFL_NONE, /* Bro */
+	ARGSFL_DELIM, /* Brc */
+	ARGSFL_NONE, /* %C */
+	ARGSFL_NONE, /* Es */
+	ARGSFL_NONE, /* En */
+	ARGSFL_NONE, /* Dx */
+	ARGSFL_NONE, /* %Q */
+	ARGSFL_NONE, /* br */
+	ARGSFL_NONE, /* sp */
+	ARGSFL_NONE, /* %U */
+	ARGSFL_NONE, /* Ta */
+};
+
+d151 126
+d289 1
+d293 2
+d298 1
+a298 1
+	/* Parse through to the first unescaped space. */
+d304 3
+a306 7
+	/* LINTED */
+	while (buf[*pos]) {
+		if (' ' == buf[*pos])
+			if ('\\' != buf[*pos - 1])
+				break;
+		(*pos)++;
+	}
+d308 6
+a313 1
+	/* XXX - save zeroed byte, if not an argument. */
+d315 1
+a315 3
+	sv = '\0';
+	if (buf[*pos]) {
+		sv = buf[*pos];
+d317 5
+a321 1
+	}
+d324 1
+d327 1
+d329 3
+a331 1
+	/* See if our token accepts the argument. */
+d333 5
+a337 2
+	if (MDOC_ARG_MAX == (tmp.arg = argv_a2arg(tok, p))) {
+		/* XXX - restore saved zeroed byte. */
+d343 2
+d418 1
+a418 1
+	fl = argflags[tok];
+a446 2
+	assert(' ' != buf[*pos]);
+
+a633 46
+/*
+ * Match up an argument string (e.g., `-foo bar' having "foo") with the
+ * correrct identifier.  It must apply to the given macro.  If none was
+ * found (including bad matches), return MDOC_ARG_MAX.
+ */
+static enum mdocargt
+argv_a2arg(enum mdoct tok, const char *p)
+{
+	const enum mdocargt *argsp;
+
+	argsp = NULL;
+
+	switch (tok) {
+	case (MDOC_An):
+		argsp = args_An;
+		break;
+	case (MDOC_Bd):
+		argsp = args_Bd;
+		break;
+	case (MDOC_Bf):
+		argsp = args_Bf;
+		break;
+	case (MDOC_Bk):
+		argsp = args_Bk;
+		break;
+	case (MDOC_Bl):
+		argsp = args_Bl;
+		break;
+	case (MDOC_Rv):
+		/* FALLTHROUGH */
+	case (MDOC_Ex):
+		argsp = args_Ex;
+		break;
+	default:
+		return(MDOC_ARG_MAX);
+	}
+
+	assert(argsp);
+
+	for ( ; MDOC_ARG_MAX != *argsp ; argsp++)
+		if (0 == strcmp(p, mdoc_argnames[*argsp]))
+			return(*argsp);
+
+	return(MDOC_ARG_MAX);
+}
+
+@
+
+
+1.76
+log
+@Clean up parsing of delimiters in -mdoc.  First, remove the "dowarn"
+variable from mandoc_getarg() so that it prints the warning every time.
+Then, remove the warning from args_checkpunct().  This way, warnings
+are being posted at the correct time.  This makes the flag argument to
+mdoc_zargs() superfluous, so make it be zero when it's invoked.  Finally,
+move the args() flags into mdoc_argv.c and make them enums.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.75 2011/04/17 09:13:01 kristaps Exp $ */
+d53 1
+a53 2
+static	int		 args_checkpunct(struct mdoc *,
+				const char *, int, int);
+d447 1
+a447 1
+		if (args_checkpunct(m, buf, *pos, line))
+d573 1
+a573 1
+args_checkpunct(struct mdoc *m, const char *buf, int i, int ln)
+d672 1
+a672 1
+		ac = args(m, line, pos, buf, 0, &p);
+d698 1
+a698 1
+	ac = args(m, line, pos, buf, 0, &p);
+d724 1
+a724 1
+	ac = args(m, line, pos, buf, 0, &p);
+@
+
+
+1.75
+log
+@Use mandoc_getarg() for the regular case of processing unquoted
+arguments in -mdoc documents.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.74 2011/04/07 01:08:42 joerg Exp $ */
+d35 14
+d52 1
+a52 1
+				char *, int, char **);
+d54 1
+a54 1
+				const char *, int, int, int);
+a64 7
+enum	argvflag {
+	ARGV_NONE, /* no args to flag (e.g., -split) */
+	ARGV_SINGLE, /* one arg to flag (e.g., -file xxx)  */
+	ARGV_MULTI, /* multiple args (e.g., -column xxx yyy) */
+	ARGV_OPT_SINGLE /* optional arg (e.g., -offset [xxx]) */
+};
+
+d94 123
+a216 123
+static	const int argflags[MDOC_MAX] = {
+	0, /* Ap */
+	0, /* Dd */
+	0, /* Dt */
+	0, /* Os */
+	0, /* Sh */
+	0, /* Ss */ 
+	0, /* Pp */ 
+	ARGS_DELIM, /* D1 */
+	ARGS_DELIM, /* Dl */
+	0, /* Bd */
+	0, /* Ed */
+	0, /* Bl */
+	0, /* El */
+	0, /* It */
+	ARGS_DELIM, /* Ad */ 
+	ARGS_DELIM, /* An */
+	ARGS_DELIM, /* Ar */
+	0, /* Cd */
+	ARGS_DELIM, /* Cm */
+	ARGS_DELIM, /* Dv */ 
+	ARGS_DELIM, /* Er */ 
+	ARGS_DELIM, /* Ev */ 
+	0, /* Ex */
+	ARGS_DELIM, /* Fa */ 
+	0, /* Fd */ 
+	ARGS_DELIM, /* Fl */
+	ARGS_DELIM, /* Fn */ 
+	ARGS_DELIM, /* Ft */ 
+	ARGS_DELIM, /* Ic */ 
+	0, /* In */ 
+	ARGS_DELIM, /* Li */
+	0, /* Nd */ 
+	ARGS_DELIM, /* Nm */ 
+	ARGS_DELIM, /* Op */
+	0, /* Ot */
+	ARGS_DELIM, /* Pa */
+	0, /* Rv */
+	ARGS_DELIM, /* St */ 
+	ARGS_DELIM, /* Va */
+	ARGS_DELIM, /* Vt */ 
+	ARGS_DELIM, /* Xr */
+	0, /* %A */
+	0, /* %B */
+	0, /* %D */
+	0, /* %I */
+	0, /* %J */
+	0, /* %N */
+	0, /* %O */
+	0, /* %P */
+	0, /* %R */
+	0, /* %T */
+	0, /* %V */
+	ARGS_DELIM, /* Ac */
+	0, /* Ao */
+	ARGS_DELIM, /* Aq */
+	ARGS_DELIM, /* At */
+	ARGS_DELIM, /* Bc */
+	0, /* Bf */ 
+	0, /* Bo */
+	ARGS_DELIM, /* Bq */
+	ARGS_DELIM, /* Bsx */
+	ARGS_DELIM, /* Bx */
+	0, /* Db */
+	ARGS_DELIM, /* Dc */
+	0, /* Do */
+	ARGS_DELIM, /* Dq */
+	ARGS_DELIM, /* Ec */
+	0, /* Ef */
+	ARGS_DELIM, /* Em */ 
+	0, /* Eo */
+	ARGS_DELIM, /* Fx */
+	ARGS_DELIM, /* Ms */
+	ARGS_DELIM, /* No */
+	ARGS_DELIM, /* Ns */
+	ARGS_DELIM, /* Nx */
+	ARGS_DELIM, /* Ox */
+	ARGS_DELIM, /* Pc */
+	ARGS_DELIM, /* Pf */
+	0, /* Po */
+	ARGS_DELIM, /* Pq */
+	ARGS_DELIM, /* Qc */
+	ARGS_DELIM, /* Ql */
+	0, /* Qo */
+	ARGS_DELIM, /* Qq */
+	0, /* Re */
+	0, /* Rs */
+	ARGS_DELIM, /* Sc */
+	0, /* So */
+	ARGS_DELIM, /* Sq */
+	0, /* Sm */
+	ARGS_DELIM, /* Sx */
+	ARGS_DELIM, /* Sy */
+	ARGS_DELIM, /* Tn */
+	ARGS_DELIM, /* Ux */
+	ARGS_DELIM, /* Xc */
+	0, /* Xo */
+	0, /* Fo */ 
+	0, /* Fc */ 
+	0, /* Oo */
+	ARGS_DELIM, /* Oc */
+	0, /* Bk */
+	0, /* Ek */
+	0, /* Bt */
+	0, /* Hf */
+	0, /* Fr */
+	0, /* Ud */
+	0, /* Lb */
+	0, /* Lp */
+	ARGS_DELIM, /* Lk */
+	ARGS_DELIM, /* Mt */
+	ARGS_DELIM, /* Brq */
+	0, /* Bro */
+	ARGS_DELIM, /* Brc */
+	0, /* %C */
+	0, /* Es */
+	0, /* En */
+	0, /* Dx */
+	0, /* %Q */
+	0, /* br */
+	0, /* sp */
+	0, /* %U */
+	0, /* Ta */
+d386 1
+a386 2
+mdoc_zargs(struct mdoc *m, int line, int *pos, 
+		char *buf, int flags, char **v)
+d389 1
+a389 1
+	return(args(m, line, pos, buf, flags, v));
+d396 1
+a396 1
+	int		  fl;
+d413 4
+a416 6
+			break;
+
+	if (n && LIST_column == n->norm->Bl.type) {
+		fl |= ARGS_TABSEP;
+		fl &= ~ARGS_DELIM;
+	}
+d423 1
+a423 1
+		char *buf, int fl, char **v)
+a427 15
+	/*
+	 * Parse out the terms (like `val' in `.Xx -arg val' or simply
+	 * `.Xx val'), which can have all sorts of properties:
+	 *
+	 *   ARGS_DELIM: use special handling if encountering trailing
+	 *   delimiters in the form of [[::delim::][ ]+]+.
+	 *
+	 *   ARGS_NOWARN: don't post warnings.  This is only used when
+	 *   re-parsing delimiters, as the warnings have already been
+	 *   posted.
+	 *
+	 *   ARGS_TABSEP: use special handling for tab/`Ta' separated
+	 *   phrases like in `Bl -column'.
+	 */
+
+d447 3
+a449 2
+	if (ARGS_DELIM & fl && args_checkpunct(m, buf, *pos, line, fl))
+		return(ARGS_PUNCT);
+d458 1
+a458 1
+	if (ARGS_TABSEP & fl) {
+d497 1
+a497 1
+		if ('\0' == *p && ' ' == *(p - 1) && ! (ARGS_NOWARN & fl))
+d540 1
+a540 1
+			if (ARGS_NOWARN & fl || MDOC_PPHRASE & m->flags)
+d555 1
+a555 1
+		if (0 == buf[*pos] && ! (ARGS_NOWARN & fl))
+d562 1
+a562 2
+	*v = mandoc_getarg(m->parse, &p, line, 
+			! (ARGS_NOWARN & fl), pos);
+d574 1
+a574 1
+args_checkpunct(struct mdoc *m, const char *buf, int i, int ln, int fl)
+a613 3
+	if ( ! (ARGS_NOWARN & fl) && i && ' ' == buf[i - 1])
+		mdoc_pmsg(m, ln, i - 1, MANDOCERR_EOLNSPACE);
+
+@
+
+
+1.74
+log
+@Don't shadow global identifiers.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.73 2011/03/23 15:46:02 kristaps Exp $ */
+d571 3
+a573 19
+	/* 
+	 * A non-quoted term progresses until either the end of line or
+	 * a non-escaped whitespace.
+	 */
+
+	for ( ; buf[*pos]; (*pos)++)
+		if (*pos && ' ' == buf[*pos] && '\\' != buf[*pos - 1])
+			break;
+
+	if ('\0' == buf[*pos])
+		return(ARGS_WORD);
+
+	buf[(*pos)++] = '\0';
+
+	while (' ' == buf[*pos])
+		(*pos)++;
+
+	if ('\0' == buf[*pos] && ! (ARGS_NOWARN & fl))
+		mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE);
+@
+
+
+1.73
+log
+@As per joerg@@'s suggestion, use const arrays when looking up mdoc argvs.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.72 2011/03/22 14:33:05 kristaps Exp $ */
+d655 1
+a655 1
+	const enum mdocargt *args;
+d657 1
+a657 1
+	args = NULL;
+d661 1
+a661 1
+		args = args_An;
+d664 1
+a664 1
+		args = args_Bd;
+d667 1
+a667 1
+		args = args_Bf;
+d670 1
+a670 1
+		args = args_Bk;
+d673 1
+a673 1
+		args = args_Bl;
+d678 1
+a678 1
+		args = args_Ex;
+d684 1
+a684 1
+	assert(args);
+d686 3
+a688 3
+	for ( ; MDOC_ARG_MAX != *args ; args++)
+		if (0 == strcmp(p, mdoc_argnames[*args]))
+			return(*args);
+@
+
+
+1.72
+log
+@libmdoc.h and libman.h were including mdoc.h and man.h, respectively.
+Don't have them do that (includes in header files = faugh), and have
+individual files directly include these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.71 2011/03/22 14:28:48 kristaps Exp $ */
+d212 54
+d655 1
+a655 2
+	enum mdocargt	 args[MDOC_ARG_MAX];
+	int		 i, len;
+d657 1
+a657 1
+	len = 0;
+d661 1
+a661 2
+		args[len++] = MDOC_Split;
+		args[len++] = MDOC_Nosplit;
+d664 1
+a664 8
+		args[len++] = MDOC_Ragged;
+		args[len++] = MDOC_Unfilled;
+		args[len++] = MDOC_Filled;
+		args[len++] = MDOC_Literal;
+		args[len++] = MDOC_File;
+		args[len++] = MDOC_Offset;
+		args[len++] = MDOC_Compact;
+		args[len++] = MDOC_Centred;
+d667 1
+a667 3
+		args[len++] = MDOC_Emphasis;
+		args[len++] = MDOC_Literal;
+		args[len++] = MDOC_Symbolic;
+d670 1
+a670 1
+		args[len++] = MDOC_Words;
+d673 1
+a673 15
+		args[len++] = MDOC_Bullet;
+		args[len++] = MDOC_Dash;
+		args[len++] = MDOC_Hyphen;
+		args[len++] = MDOC_Item;
+		args[len++] = MDOC_Enum;
+		args[len++] = MDOC_Tag;
+		args[len++] = MDOC_Diag;
+		args[len++] = MDOC_Hang;
+		args[len++] = MDOC_Ohang;
+		args[len++] = MDOC_Inset;
+		args[len++] = MDOC_Column;
+		args[len++] = MDOC_Width;
+		args[len++] = MDOC_Offset;
+		args[len++] = MDOC_Compact;
+		args[len++] = MDOC_Nested;
+d678 1
+a678 1
+		args[len++] = MDOC_Std;
+d681 1
+a681 1
+		break;
+d684 5
+a688 3
+	for (i = 0; i < len; i++)
+		if (0 == strcmp(p, mdoc_argnames[args[i]]))
+			return(args[i]);
+@
+
+
+1.71
+log
+@mdoc_argn_free is only used local to mdoc_argv.c, so make it static.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.70 2011/03/22 14:05:45 kristaps Exp $ */
+d29 1
+@
+
+
+1.70
+log
+@Move mandoc_isdelim() back into libmdoc.h.  This fixes an unreported
+error where (1) -man pages were punctuating delimiters (e.g., `.B a ;')
+and where (2) standalone punctuation in -mdoc or -man (e.g., ";" on its
+own line) would also be punctuated.  This introduces a small amount of
+complexity of mdoc_{html,term}.c must manage their own spacing with
+running print_word() or print_text().  The check for delimiting now
+happens in mdoc_macro.c's dword().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.69 2011/03/17 11:09:36 kristaps Exp $ */
+d48 1
+d299 1
+a299 1
+		mdoc_argn_free(p, i);
+d305 2
+a306 2
+void
+mdoc_argn_free(struct mdoc_arg *p, int iarg)
+@
+
+
+1.69
+log
+@Clean-up in mdoc_argv.c args_checkpunct().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.68 2011/03/17 10:59:27 kristaps Exp $ */
+d560 1
+a560 1
+	if (DELIM_CLOSE != mandoc_isdelim(dbuf))
+d577 1
+a577 1
+		d = mandoc_isdelim(dbuf);
+@
+
+
+1.68
+log
+@Clean-up in mdoc_argv.c: make CPP-defines into an enum, document, make
+static arrays const, properly abort() for bogus switch cases, and be
+obsessive about spacing and (void)-casting.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.67 2011/03/17 10:41:18 kristaps Exp $ */
+d38 2
+a39 1
+static	int		 args_checkpunct(const char *);
+a364 1
+	int		 i;
+d402 1
+a402 7
+	if (ARGS_DELIM & fl && args_checkpunct(&buf[*pos])) {
+		i = strlen(&buf[*pos]) + *pos;
+		if (i && ' ' != buf[i - 1])
+			return(ARGS_PUNCT);
+		if (ARGS_NOWARN & fl)
+			return(ARGS_PUNCT);
+		mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE);
+a403 1
+	}
+d545 1
+a545 1
+args_checkpunct(const char *p)
+d547 2
+a548 2
+	int		 i, j;
+	char		 buf[DELIMSZ];
+a550 2
+	i = 0;
+
+d553 2
+a554 2
+	for (j = 0; p[i] && ' ' != p[i] && j < DELIMSZ; j++, i++)
+		buf[j] = p[i];
+d559 2
+a560 2
+	buf[j] = '\0';
+	if (DELIM_CLOSE != mandoc_isdelim(buf))
+d563 1
+a563 1
+	while (' ' == p[i])
+d568 1
+a568 1
+	while (p[i]) {
+d570 2
+a571 2
+		while (p[i] && ' ' != p[i] && j < DELIMSZ)
+			buf[j++] = p[i++];
+d576 2
+a577 2
+		buf[j] = '\0';
+		d = mandoc_isdelim(buf);
+d581 1
+a581 1
+		while (' ' == p[i])
+d585 4
+a588 1
+	return('\0' == p[i]);
+@
+
+
+1.67
+log
+@Clean up mdoc_pmsg invocations to make them not check the return value.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.66 2011/03/17 09:16:38 kristaps Exp $ */
+d33 1
+a33 14
+/*
+ * Routines to parse arguments of macros.  Arguments follow the syntax
+ * of `-arg [val [valN...]]'.  Arguments come in all types:  quoted
+ * arguments, multiple arguments per value, no-value arguments, etc.
+ *
+ * There's no limit to the number or arguments that may be allocated.
+ */
+
+#define	ARGV_NONE	(1 << 0)
+#define	ARGV_SINGLE	(1 << 1)
+#define	ARGV_MULTI	(1 << 2)
+#define	ARGV_OPT_SINGLE	(1 << 3)
+
+#define	MULTI_STEP	 5
+d48 6
+a53 1
+/* Per-argument flags. */
+d55 1
+a55 1
+static	int mdoc_argvflags[MDOC_ARG_MAX] = {
+d84 1
+a84 1
+static	int mdoc_argflags[MDOC_MAX] = {
+a208 1
+
+d249 1
+a249 1
+	(void)memset(&tmp, 0, sizeof(struct mdoc_argv));
+d275 1
+a275 1
+	(void)memcpy(&arg->argv[(int)arg->argc - 1], 
+a280 1
+
+a302 1
+
+a320 1
+
+a328 1
+
+d336 1
+a336 1
+	fl = mdoc_argflags[tok];
+a359 1
+
+a665 1
+
+a691 1
+
+a714 1
+
+a741 1
+
+d755 1
+a755 1
+	switch (mdoc_argvflags[v->arg]) {
+d762 2
+d765 2
+a766 2
+		/* ARGV_NONE */
+		break;
+@
+
+
+1.66
+log
+@Move mdoc_isdelim() into mandoc.h as mandoc_isdelim().  This allows the
+removal of manual delimiter checks in html.c and term.c.  Finally, add
+the escaped period as a closing delimiter, removing a TODO to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.65 2011/03/17 01:23:28 kristaps Exp $ */
+d408 1
+a408 2
+			if ( ! mdoc_pmsg(m, line, *pos, MANDOCERR_BADQUOTE))
+				return(ARGS_ERROR);
+d422 1
+a422 3
+		/* FIXME: remove conditional messages... */
+		if ( ! mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE))
+			return(ARGS_ERROR);
+d473 1
+a473 2
+			if ( ! mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE))
+				return(ARGS_ERROR);
+d517 1
+a517 2
+			if ( ! mdoc_pmsg(m, line, *pos, MANDOCERR_BADQUOTE))
+				return(ARGS_ERROR);
+d531 1
+a531 2
+			if ( ! mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE))
+				return(ARGS_ERROR);
+d554 1
+a554 2
+		if ( ! mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE))
+			return(ARGS_ERROR);
+@
+
+
+1.65
+log
+@Make args_checkpunct() use mdoc_isdelim() instead of mdoc_iscdelim(),
+which is wrong.  Then remove mdoc_iscdelim() alltogether.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.64 2011/03/17 00:58:14 kristaps Exp $ */
+d590 1
+a590 1
+	if (DELIM_CLOSE != mdoc_isdelim(buf))
+d607 1
+a607 1
+		d = mdoc_isdelim(buf);
+@
+
+
+1.64
+log
+@Move check for closing punctuation into its own function.  This will
+later be modified to remove the need for iscdelim(), which will be used
+to unify delimiter checks, which will then allow for the simple removal
+of a TODO regarding escaped periods.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.63 2011/03/16 17:55:39 kristaps Exp $ */
+a414 7
+	/* 
+	 * If the first character is a closing delimiter and we're to
+	 * look for delimited strings, then pass down the buffer seeing
+	 * if it follows the pattern of [[::delim::][ ]+]+.  Note that
+	 * we ONLY care about closing delimiters.
+	 */
+
+d568 3
+a570 1
+ * delimiters.
+d575 2
+a576 1
+	int		 i;
+d581 10
+a590 1
+	if (DELIM_CLOSE != mdoc_iscdelim(p[i]))
+d593 15
+a607 2
+	while ('\0' != p[i]) {
+		d = mdoc_iscdelim(p[i]);
+d609 3
+a611 6
+			break;
+		i++;
+		if ('\0' == p[i] || ' ' != p[i])
+			break;
+		i++;
+		while (p[i] && ' ' == p[i])
+@
+
+
+1.63
+log
+@Instead of a series of hard-coded strcmps, make argv_a2arg() iterate
+over an array of possible argument types, hooking in to mdoc_argnames[].
+This knocks off bytes for the duplicated strings and cleans up code
+readability.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.62 2010/12/24 14:00:40 kristaps Exp $ */
+d51 1
+a380 1
+	enum mdelim	 d;
+d422 1
+a422 12
+	if ((fl & ARGS_DELIM) && DELIM_CLOSE == mdoc_iscdelim(buf[*pos])) {
+		for (i = *pos; buf[i]; ) {
+			d = mdoc_iscdelim(buf[i]);
+			if (DELIM_NONE == d || DELIM_OPEN == d)
+				break;
+			i++;
+			if ('\0' == buf[i] || ' ' != buf[i])
+				break;
+			i++;
+			while (buf[i] && ' ' == buf[i])
+				i++;
+		}
+d424 5
+a428 8
+		if ('\0' == buf[i]) {
+			*v = &buf[*pos];
+			if (i && ' ' != buf[i - 1])
+				return(ARGS_PUNCT);
+			if (ARGS_NOWARN & fl)
+				return(ARGS_PUNCT);
+			if ( ! mdoc_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE))
+				return(ARGS_ERROR);
+d430 4
+a433 1
+		}
+a435 2
+	*v = &buf[*pos];
+
+d573 30
+@
+
+
+1.62
+log
+@As per schwarze@@'s suggestions, roll back the refcount structure in
+favour of a simpler shim for normalised data in the node allocation and
+free routines.  This removes the need to bump and copy references within
+validator handlers, removes a pointer redirect, and also kills the
+refcount structure itself.  Data is assumed to "live" either in a
+MDOC_BLOCK or MDOC_ELEM and is copied accordingly.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.61 2010/12/22 11:15:16 kristaps Exp $ */
+d586 5
+a590 1
+
+d594 2
+d597 1
+a597 7
+	/*
+	 * Parse an argument identifier from its text.  XXX - this
+	 * should really be table-driven to clarify the code.
+	 *
+	 * If you add an argument to the list, make sure that you
+	 * register it here with its one or more macros!
+	 */
+d601 2
+a602 4
+		if (0 == strcmp(p, "split"))
+			return(MDOC_Split);
+		else if (0 == strcmp(p, "nosplit"))
+			return(MDOC_Nosplit);
+a603 1
+
+d605 8
+a612 16
+		if (0 == strcmp(p, "ragged"))
+			return(MDOC_Ragged);
+		else if (0 == strcmp(p, "unfilled"))
+			return(MDOC_Unfilled);
+		else if (0 == strcmp(p, "filled"))
+			return(MDOC_Filled);
+		else if (0 == strcmp(p, "literal"))
+			return(MDOC_Literal);
+		else if (0 == strcmp(p, "file"))
+			return(MDOC_File);
+		else if (0 == strcmp(p, "offset"))
+			return(MDOC_Offset);
+		else if (0 == strcmp(p, "compact"))
+			return(MDOC_Compact);
+		else if (0 == strcmp(p, "centered"))
+			return(MDOC_Centred);
+a613 1
+
+d615 3
+a617 6
+		if (0 == strcmp(p, "emphasis"))
+			return(MDOC_Emphasis);
+		else if (0 == strcmp(p, "literal"))
+			return(MDOC_Literal);
+		else if (0 == strcmp(p, "symbolic"))
+			return(MDOC_Symbolic);
+a618 1
+
+d620 1
+a620 2
+		if (0 == strcmp(p, "words"))
+			return(MDOC_Words);
+a621 1
+
+d623 15
+a637 30
+		if (0 == strcmp(p, "bullet"))
+			return(MDOC_Bullet);
+		else if (0 == strcmp(p, "dash"))
+			return(MDOC_Dash);
+		else if (0 == strcmp(p, "hyphen"))
+			return(MDOC_Hyphen);
+		else if (0 == strcmp(p, "item"))
+			return(MDOC_Item);
+		else if (0 == strcmp(p, "enum"))
+			return(MDOC_Enum);
+		else if (0 == strcmp(p, "tag"))
+			return(MDOC_Tag);
+		else if (0 == strcmp(p, "diag"))
+			return(MDOC_Diag);
+		else if (0 == strcmp(p, "hang"))
+			return(MDOC_Hang);
+		else if (0 == strcmp(p, "ohang"))
+			return(MDOC_Ohang);
+		else if (0 == strcmp(p, "inset"))
+			return(MDOC_Inset);
+		else if (0 == strcmp(p, "column"))
+			return(MDOC_Column);
+		else if (0 == strcmp(p, "width"))
+			return(MDOC_Width);
+		else if (0 == strcmp(p, "offset"))
+			return(MDOC_Offset);
+		else if (0 == strcmp(p, "compact"))
+			return(MDOC_Compact);
+		else if (0 == strcmp(p, "nested"))
+			return(MDOC_Nested);
+a638 1
+	
+d642 1
+a642 2
+		if (0 == strcmp(p, "std"))
+			return(MDOC_Std);
+d648 4
+@
+
+
+1.61
+log
+@Implement reference-counted version of original union mdoc_data.  This
+simplifies clean-up and allows for more types without extra hassle.
+
+Also made in-line literal types in -T[x]html use CODE instead of SPAN to
+match how literal blocks use PRE.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.60 2010/09/13 20:15:43 schwarze Exp $ */
+d364 1
+a364 1
+	if (n && LIST_column == n->norm->d.Bl.type) {
+@
+
+
+1.60
+log
+@Prevent .Lp from looping endlessly on punctuation.
+Same fix as the previous one.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.59 2010/09/13 12:21:34 kristaps Exp $ */
+d364 1
+a364 2
+	assert(n->data.Bl);
+	if (n && LIST_column == n->data.Bl->type) {
+@
+
+
+1.59
+log
+@Prevent `Pp' from looping endlessly on punctuation.  Bug reported by
+Marc Espie.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.58 2010/07/21 09:36:41 kristaps Exp $ */
+d199 1
+a199 1
+	ARGS_DELIM, /* Lp */
+@
+
+
+1.58
+log
+@Nit-picking assign in decl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.57 2010/07/21 09:08:26 kristaps Exp $ */
+d98 1
+a98 1
+	ARGS_DELIM, /* Pp */ 
+@
+
+
+1.57
+log
+@Finally make mdoc argv CPP-defines into a proper enum.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.56 2010/07/13 23:53:20 schwarze Exp $ */
+d316 1
+a316 1
+	struct mdoc_argv *arg = &p->argv[iarg]; /* FIXME: decl/assign */
+d319 2
+@
+
+
+1.56
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.55 2010/07/01 22:56:17 kristaps Exp $ */
+d48 1
+a48 1
+static	int		 argv_a2arg(enum mdoct, const char *);
+d316 1
+a316 1
+	struct mdoc_argv *arg = &p->argv[iarg];
+d586 1
+a586 1
+static int
+@
+
+
+1.55
+log
+@Make struct_bl and struct_bd into pointers.  This removes the need to do
+copying on internals after modification.  Even more importantly, if an
+ENDBODY token is provided, it would have been impossible for post-change
+copying of the data to take place in the BLOCK.  This allows it to
+happen by dint of pointers.
+
+Also did some bikeshedding in mdoc_term.c: checking against enum type
+and explicitly casting to the "post" function to void.  This is for my
+own readability.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.54 2010/06/19 20:46:28 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.54
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.53 2010/06/12 11:58:22 kristaps Exp $ */
+d362 2
+a363 1
+	if (n && LIST_column == n->data.Bl.type) {
+@
+
+
+1.53
+log
+@`Bl' is now using a struct instead of a single enum mdoc_list for its
+cached values.  You can probably guess where this is going.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.52 2010/05/31 13:39:13 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.52
+log
+@Getting args() function ready to handle no-context (*pos can == 0)
+processing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.51 2010/05/31 10:28:04 kristaps Exp $ */
+d362 1
+a362 1
+	if (n && LIST_column == n->data.list) {
+@
+
+
+1.51
+log
+@Remove enum mdocargerr from phrase() (unused).
+
+Add `Ta' macro, which is basically a NULL case everywhere but in
+mdoc_macro.c, where it closes out an existing `It' body scope and opens
+a new one, then continues parsing as in phrase() (TODO: merge these
+two?).
+
+Fix where scope-breaking was silently just dying instead of printing an
+error.
+
+Fix where trailing `Ta' or tab weren't creating a new MDOC_BODY context.
+
+We now support arbitrarily complex `It' contents for `Bl -column'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.50 2010/05/30 23:59:59 kristaps Exp $ */
+d230 1
+a230 1
+	if (0 == buf[*pos])
+d251 1
+a251 1
+	sv = 0;
+d254 1
+a254 1
+		buf[(*pos)++] = 0;
+d375 4
+a378 3
+	int		  i;
+	char		 *p, *pp;
+	enum margserr	  rc;
+a394 1
+	assert(*pos);
+d422 1
+a422 1
+			enum mdelim d = mdoc_iscdelim(buf[i]);
+d435 1
+a435 1
+			if (' ' != buf[i - 1])
+d493 1
+a493 1
+		if (0 == *p && ' ' == *(p - 1) && ! (ARGS_NOWARN & fl))
+d566 1
+a566 1
+		if (' ' == buf[*pos] && '\\' != buf[*pos - 1])
+@
+
+
+1.50
+log
+@Have mdoc_args() use enum mdoc_list instead of scanning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.49 2010/05/17 22:11:42 kristaps Exp $ */
+d213 1
+d351 7
+d466 1
+a466 1
+				if (' ' == *(pp + 2) || 0 == *(pp + 2))
+@
+
+
+1.49
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.48 2010/05/15 08:54:04 schwarze Exp $ */
+d342 1
+a342 1
+	int		  fl, c, i;
+a349 5
+	/* 
+	 * The `It' macro is a special case, as it acquires parameters from its
+	 * parent `Bl' context, specifically, we're concerned with -column.
+	 */
+
+d351 1
+a351 1
+		if (MDOC_BLOCK == n->type && MDOC_Bl == n->tok)
+d354 1
+a354 8
+	assert(n);
+	c = (int)(n->args ? n->args->argc : 0);
+	assert(c > 0);
+
+	/* LINTED */
+	for (i = 0; i < c; i++) {
+		if (MDOC_Column != n->args->argv[i].arg) 
+			continue;
+a356 1
+		break;
+@
+
+
+1.48
+log
+@Distinguish OPEN, MIDDLE and CLOSE delimiters (using an enum).
+Only OPEN are drawn before the beginning of a macro;
+this is new, before this, MIDDLE ('|') were drawn in front, too.
+Only CLOSE are pushed after the end of a macro (as before).
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.47 2010/05/15 04:47:38 kristaps Exp $ */
+d29 1
+d411 1
+a411 1
+			if ( ! mdoc_pwarn(m, line, *pos, EQUOTTERM))
+d444 1
+a444 1
+			if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+d499 1
+a499 1
+			if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+d544 1
+a544 1
+			if ( ! mdoc_pwarn(m, line, *pos, EQUOTTERM))
+d559 1
+a559 1
+			if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+d583 1
+a583 1
+		if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+d755 4
+a758 1
+	if (ARGS_ERROR == ac)
+a759 2
+	if (ARGS_EOLN == ac)
+		return(mdoc_perr(m, line, ppos, EARGVAL));
+@
+
+
+1.47
+log
+@More `Bl -column' dancing: It children also inherit in-phrase flags (noted by Ingo Schwarze).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.46 2010/05/14 12:55:22 kristaps Exp $ */
+d424 1
+a424 1
+	if ((fl & ARGS_DELIM) && mdoc_iscdelim(buf[*pos]) > 1) {
+d426 2
+a427 1
+			if (mdoc_iscdelim(buf[i]) < 2)
+@
+
+
+1.46
+log
+@Proper handling of quoted tab-separated column lists.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.45 2010/05/09 21:06:50 kristaps Exp $ */
+d402 1
+a402 1
+		if (ARGS_PPHRASED & fl)
+d528 1
+a528 1
+		if (ARGS_PPHRASED & fl)
+d540 1
+a540 1
+			if (ARGS_NOWARN & fl || ARGS_PPHRASED & fl)
+@
+
+
+1.45
+log
+@Explicitly account for \*(Ba when checking for delims.  Noted by Jason McIntyre via Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.44 2010/05/09 10:17:02 kristaps Exp $ */
+d401 13
+a413 1
+	if ('\0' == buf[*pos])
+d415 1
+d426 1
+a426 1
+			if ( mdoc_iscdelim(buf[i]) < 2)
+d460 1
+d463 9
+a471 8
+		for (pp = *v; ; pp++) {
+			if (NULL == (pp = strstr(pp, "Ta")))
+				break;
+			if (pp > *v && ' ' != *(pp - 1))
+				continue;
+			if (' ' == *(pp + 2) || 0 == *(pp + 2))
+				break;
+		}
+d524 6
+a529 2
+	if ('\"' == buf[*pos]) {
+		*v = &buf[++(*pos)];
+d539 2
+a540 2
+		if (0 == buf[*pos]) {
+			if (ARGS_NOWARN & fl)
+d547 2
+a548 1
+		buf[(*pos)++] = 0;
+d550 1
+a550 1
+		if (0 == buf[*pos])
+d572 1
+a572 1
+	if (0 == buf[*pos])
+d575 1
+a575 1
+	buf[(*pos)++] = 0;
+d580 1
+a580 1
+	if (0 == buf[*pos] && ! (ARGS_NOWARN & fl))
+@
+
+
+1.44
+log
+@Introduce ARGS_PEND for `It -column' end-of-line special casing.
+Initial rules for insane `It -column' tabsep handling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.43 2010/05/08 07:30:19 kristaps Exp $ */
+d405 4
+a408 3
+	 * If the first character is a delimiter and we're to look for
+	 * delimited strings, then pass down the buffer seeing if it
+	 * follows the pattern of [[::delim::][ ]+]+.
+d416 1
+a416 1
+			if (0 == buf[i] || ' ' != buf[i])
+d423 1
+a423 1
+		if (0 == buf[i]) {
+@
+
+
+1.43
+log
+@Lint fixes (type-safety for enums via -cefuh).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.42 2010/05/07 15:49:36 kristaps Exp $ */
+d474 2
+a475 1
+		} else
+d477 1
+@
+
+
+1.42
+log
+@De-chunking of text removed from parsers.  This is a significant change (and I don't really like it), but it's what groff does.
+Distinction of ARGS_PHRASE and ARGS_PPHRASE in backend (not yet used).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.41 2010/05/07 06:05:38 kristaps Exp $ */
+d669 1
+a669 1
+	int		 c;
+d675 2
+a676 2
+		c = args(m, line, pos, buf, 0, &p);
+		if (ARGS_ERROR == c)
+d678 1
+a678 1
+		else if (ARGS_EOLN == c)
+d696 1
+a696 1
+	int		 c;
+d702 2
+a703 2
+	c = args(m, line, pos, buf, 0, &p);
+	if (ARGS_ERROR == c)
+d705 1
+a705 1
+	if (ARGS_EOLN == c)
+d723 2
+a724 1
+	int		 c, ppos;
+d729 2
+a730 2
+	c = args(m, line, pos, buf, 0, &p);
+	if (ARGS_ERROR == c)
+d732 1
+a732 1
+	if (ARGS_EOLN == c)
+@
+
+
+1.41
+log
+@Initial ARGS_PPHRASE (partial phrase) framework.
+Running tally of changes in index.sgml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.40 2010/05/07 05:54:09 kristaps Exp $ */
+d401 1
+a401 1
+	if (0 == buf[*pos])
+a443 1
+		rc = ARGS_PHRASE;
+d457 3
+d466 1
+d469 1
+@
+
+
+1.40
+log
+@enum-ised mdoc_argv() return (better return-value safety).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.39 2010/05/07 05:48:29 kristaps Exp $ */
+d381 1
+d444 1
+d493 1
+a493 1
+		return(ARGS_PHRASE);
+@
+
+
+1.39
+log
+@margerr -> margserr (getting ready for margverr).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.38 2010/05/07 05:34:56 kristaps Exp $ */
+d220 1
+a220 1
+int
+@
+
+
+1.38
+log
+@Wrangle mdoc_args() and mdoc_zargs() to use enum return type.
+Fixed lookup() and lookup_raw() to correctly use enum type.
+Quashed in_line_argn() bug (not reported, but there) where mixing return values.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.37 2010/04/03 14:02:10 kristaps Exp $ */
+d48 1
+a48 1
+static	enum margerr	 args(struct mdoc *, int, int *, 
+d328 1
+a328 1
+enum margerr
+d337 1
+a337 1
+enum margerr
+d375 1
+a375 1
+static enum margerr
+@
+
+
+1.37
+log
+@Merged Ingo Schwarze's patch (plus documentation) for removing extraneous list types, which happens fairly often.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.36 2010/03/31 07:42:04 kristaps Exp $ */
+d48 1
+a48 1
+static	int		 args(struct mdoc *, int, int *, 
+d328 1
+a328 1
+int
+d337 1
+a337 1
+int
+d375 1
+a375 1
+static int
+@
+
+
+1.36
+log
+@Re-adjusting UGLY tags.
+Fixed removed assignment of type.
+Removed superfluous checks of mdoc_argflags (from days when comments were a macro tag).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.35 2010/03/31 07:13:53 kristaps Exp $ */
+d291 1
+a291 1
+	int		 i, j;
+d303 7
+a309 6
+	/* LINTED */
+	for (i = 0; i < (int)p->argc; i++) {
+		if (0 == p->argv[i].sz)
+			continue;
+		if (NULL == p->argv[i].value)
+			continue;
+d311 5
+a315 4
+		/* LINTED */
+		for (j = 0; j < (int)p->argv[i].sz; j++) 
+			if (p->argv[i].value[j])
+				free(p->argv[i].value[j]);
+d317 4
+a320 1
+		free(p->argv[i].value);
+d323 2
+a324 2
+	free(p->argv);
+	free(p);
+@
+
+
+1.35
+log
+@Macro types enum-ated (enum mdoct) (for easier debugging in gdb of "tok" values).
+Initial check-in of Ingo Schwarze's patch for Xo/Xc handling (in blocks ifdef'd "UGLY").
+Put Oc-close-Op parts into UGLY ifdef blocks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.34 2010/03/29 19:28:04 kristaps Exp $ */
+a338 1
+	assert(tok && tok < MDOC_MAX);
+@
+
+
+1.34
+log
+@Integrate Ingo Schwarze's patch for mdoc_iscdelim() (tri-state for opening and closing macro punctuation).
+Modify blk_part_exp() to correctly handle leading punctuation before HEAD.
+Significantly clean up and document blk_part_exp().
+Modify blk_part_imp() for to correctly handle leading punctuation before HEAD.
+Significantly clean up and document blk_part_imp().
+Integrate Ingo Schwarze's patch for args() (using new mdoc_iscdelim() format).
+Documented bad `Ec' handling for later work in mdoc_term.c/mdoc_html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.33 2010/01/01 17:14:29 kristaps Exp $ */
+d47 1
+a47 1
+static	int		 argv_a2arg(int, const char *);
+d221 1
+a221 1
+mdoc_argv(struct mdoc *m, int line, int tok,
+d333 2
+a334 2
+mdoc_args(struct mdoc *m, int line, 
+		int *pos, char *buf, int tok, char **v)
+d339 2
+a340 1
+	fl = (0 == tok) ? 0 : mdoc_argflags[tok];
+d556 1
+a556 1
+argv_a2arg(int tok, const char *p)
+@
+
+
+1.33
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.32 2009/10/30 05:58:38 kristaps Exp $ */
+d404 1
+a404 1
+	if ((fl & ARGS_DELIM) && mdoc_iscdelim(buf[*pos])) {
+d406 1
+a406 1
+			if ( ! mdoc_iscdelim(buf[i]))
+@
+
+
+1.32
+log
+@libmdoc and libman now using non-recoverable allocations (simpler code).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.31 2009/10/28 19:21:59 kristaps Exp $ */
+d17 4
+@
+
+
+1.31
+log
+@Slow movement of internal allocations to fail completely.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.30 2009/10/24 05:52:13 kristaps Exp $ */
+d271 1
+a271 1
+		arg = mandoc_calloc(1, sizeof(struct mdoc_arg));
+@
+
+
+1.30
+log
+@Added `%U' to -mdoc (doesn't render in a nice way yet).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.29 2009/10/19 09:40:23 kristaps Exp $ */
+d26 1
+d270 2
+a271 8
+	if (NULL == (arg = *v)) {
+		*v = calloc(1, sizeof(struct mdoc_arg));
+		if (NULL == *v) {
+			(void)mdoc_nerr(m, m->last, EMALLOC);
+			return(ARGV_ERROR);
+		}
+		arg = *v;
+	} 
+d274 2
+a275 7
+	arg->argv = realloc(arg->argv, arg->argc * 
+			sizeof(struct mdoc_argv));
+
+	if (NULL == arg->argv) {
+		(void)mdoc_nerr(m, m->last, EMALLOC);
+		return(ARGV_ERROR);
+	}
+d666 2
+a667 2
+		if (0 == v->sz % MULTI_STEP) {
+			v->value = realloc(v->value, 
+d669 2
+a670 7
+			if (NULL == v->value) {
+				(void)mdoc_nerr(m, m->last, EMALLOC);
+				return(ARGV_ERROR);
+			}
+		}
+		if (NULL == (v->value[(int)v->sz] = strdup(p)))
+			return(mdoc_nerr(m, m->last, EMALLOC));
+d694 2
+a695 4
+	if (NULL == (v->value = calloc(1, sizeof(char *))))
+		return(mdoc_nerr(m, m->last, EMALLOC));
+	if (NULL == (v->value[0] = strdup(p)))
+		return(mdoc_nerr(m, m->last, EMALLOC));
+d720 2
+a721 4
+	if (NULL == (v->value = calloc(1, sizeof(char *))))
+		return(mdoc_nerr(m, m->last, EMALLOC));
+	if (NULL == (v->value[0] = strdup(p)))
+		return(mdoc_nerr(m, m->last, EMALLOC));
+@
+
+
+1.29
+log
+@Fixed `-file' argument to `Bd', which is NOT a type, but instead just an argument.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.28 2009/10/15 01:33:12 kristaps Exp $ */
+d206 1
+@
+
+
+1.28
+log
+@Added support for `Bd -centered', which appears in newer groffs (not yet implemented in centre-capable front-ends, i.e., -Thtml).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.27 2009/10/07 14:52:35 kristaps Exp $ */
+d62 1
+a62 1
+	ARGV_NONE,	/* MDOC_File */
+@
+
+
+1.27
+log
+@Fix operator overloading (submitted by Ulrich Sporlein, uqs@@spoerlein.net).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.26 2009/09/24 13:03:32 kristaps Exp $ */
+d594 2
+@
+
+
+1.26
+log
+@-offset string can now be blank (supplied with 6n as stipulated by mdoc.samples).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.25 2009/08/20 13:22:48 kristaps Exp $ */
+d560 1
+a560 1
+argv_a2arg(int tok, const char *argv)
+d573 1
+a573 1
+		if (0 == strcmp(argv, "split"))
+d575 1
+a575 1
+		else if (0 == strcmp(argv, "nosplit"))
+d580 1
+a580 1
+		if (0 == strcmp(argv, "ragged"))
+d582 1
+a582 1
+		else if (0 == strcmp(argv, "unfilled"))
+d584 1
+a584 1
+		else if (0 == strcmp(argv, "filled"))
+d586 1
+a586 1
+		else if (0 == strcmp(argv, "literal"))
+d588 1
+a588 1
+		else if (0 == strcmp(argv, "file"))
+d590 1
+a590 1
+		else if (0 == strcmp(argv, "offset"))
+d592 1
+a592 1
+		else if (0 == strcmp(argv, "compact"))
+d597 1
+a597 1
+		if (0 == strcmp(argv, "emphasis"))
+d599 1
+a599 1
+		else if (0 == strcmp(argv, "literal"))
+d601 1
+a601 1
+		else if (0 == strcmp(argv, "symbolic"))
+d606 1
+a606 1
+		if (0 == strcmp(argv, "words"))
+d611 1
+a611 1
+		if (0 == strcmp(argv, "bullet"))
+d613 1
+a613 1
+		else if (0 == strcmp(argv, "dash"))
+d615 1
+a615 1
+		else if (0 == strcmp(argv, "hyphen"))
+d617 1
+a617 1
+		else if (0 == strcmp(argv, "item"))
+d619 1
+a619 1
+		else if (0 == strcmp(argv, "enum"))
+d621 1
+a621 1
+		else if (0 == strcmp(argv, "tag"))
+d623 1
+a623 1
+		else if (0 == strcmp(argv, "diag"))
+d625 1
+a625 1
+		else if (0 == strcmp(argv, "hang"))
+d627 1
+a627 1
+		else if (0 == strcmp(argv, "ohang"))
+d629 1
+a629 1
+		else if (0 == strcmp(argv, "inset"))
+d631 1
+a631 1
+		else if (0 == strcmp(argv, "column"))
+d633 1
+a633 1
+		else if (0 == strcmp(argv, "width"))
+d635 1
+a635 1
+		else if (0 == strcmp(argv, "offset"))
+d637 1
+a637 1
+		else if (0 == strcmp(argv, "compact"))
+d639 1
+a639 1
+		else if (0 == strcmp(argv, "nested"))
+d646 1
+a646 1
+		if (0 == strcmp(argv, "std"))
+@
+
+
+1.25
+log
+@Updated manual structure in mdoc.7.
+Synchronised mdoc.template and mdoc.7 manual structure.
+`Rv' and `Ex' now accept multiple arguments (-std made standalone, terms as children).
+`Rv' and `Ex' format correctly in -Tascii (plurals, commas, etc.).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.24 2009/08/20 09:07:24 kristaps Exp $ */
+d63 1
+a63 1
+	ARGV_SINGLE,	/* MDOC_Offset */
+d312 3
+d317 2
+a318 1
+			free(p->argv[i].value[j]);
+@
+
+
+1.24
+log
+@Documented ARGS_ handling in args().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.23 2009/08/20 08:59:12 kristaps Exp $ */
+d77 1
+a77 1
+	ARGV_OPT_SINGLE, /* MDOC_Std */
+@
+
+
+1.23
+log
+@Delimiter whitespace is correctly flagged (required some special handling).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.22 2009/08/19 14:44:35 kristaps Exp $ */
+d378 15
+@
+
+
+1.22
+log
+@Removed already-fixed FIXME.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.21 2009/07/20 14:12:27 kristaps Exp $ */
+a34 3
+#define	ARGS_DELIM	(1 << 1)
+#define	ARGS_TABSEP	(1 << 2)
+
+d325 2
+a326 1
+mdoc_zargs(struct mdoc *m, int line, int *pos, char *buf, char **v)
+d329 1
+a329 1
+	return(args(m, line, pos, buf, 0, v));
+a401 2
+		/* FIXME: warn about trailing whitespace. */
+
+d404 6
+d453 1
+a453 1
+		if (0 == *p && ' ' == *(p - 1))
+d493 2
+d508 1
+a508 1
+		if (0 == buf[*pos])
+d532 1
+a532 1
+	if (0 == buf[*pos])
+@
+
+
+1.21
+log
+@More cleanups for TABSEP handling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.20 2009/07/20 14:09:38 kristaps Exp $ */
+a34 2
+/* FIXME .Bf Li raises "macro-like parameter". */
+
+@
+
+
+1.20
+log
+@Replaced ugly TABSEP handling with simpler routine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.19 2009/07/19 21:26:27 kristaps Exp $ */
+d379 1
+a379 1
+	int		  i, psv;
+a423 2
+		psv = *pos;
+
+d437 4
+d452 1
+a456 1
+		*p = 0;
+a459 1
+
+a468 1
+
+@
+
+
+1.19
+log
+@Fixed and cleaned up "phrase" handling (`Bl -column' columns).
+Found strange newline bug in -diag handling (and others?).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.18 2009/07/18 18:59:33 kristaps Exp $ */
+d379 1
+a379 1
+	int		  i;
+d424 3
+a426 1
+		/* Scan ahead to unescaped tab. */
+d439 6
+a444 4
+		/* Choose delimiter tab/Ta. */
+		if (p && pp)
+			p = (p < pp ? p : pp);
+		else if ( ! p && pp)
+d446 10
+d458 6
+a463 9
+		/* FIXME: escaped whitespace? */
+		if (p && p > *v) {
+			pp = p - 1;
+			while (pp > *v && ' ' == *pp)
+				pp--;
+			if (pp == *v && ' ' == *pp) 
+				*pp = 0;
+			else if (' ' == *pp)
+				*(pp + 1) = 0;
+d465 1
+d467 1
+a467 30
+		/* ...in- and proceding whitespace. */
+		if (p && ('\t' != *p)) {
+			*p++ = 0;
+			*p++ = 0;
+		} else if (p)
+			*p++ = 0;
+
+		if (p) {
+			while (' ' == *p)
+				p++;
+			if (0 != *p)
+				*(p - 1) = 0;
+			*pos += (int)(p - *v);
+		} 
+
+		/* Some warnings, if applicable. */
+		if (p && 0 == *p)
+			if ( ! mdoc_pwarn(m, line, *pos, ECOLEMPTY))
+				return(ARGS_ERROR);
+		if (p && 0 == *p && p > *v && ' ' == *(p - 1))
+			if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+				return(ARGS_ERROR);
+
+		/* Non-eoln case returns now. */
+		if (p)
+			return(ARGS_PHRASE);
+
+		/* Configure the eoln case, too. */
+		p = strchr(*v, 0);
+		assert(p);
+d469 2
+a470 4
+		if (p > *v && ' ' == *(p - 1))
+			if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+				return(ARGS_ERROR);
+		*pos += (int)(p - *v);
+@
+
+
+1.18
+log
+@Made unterminated quoted literals be a warning, like groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.17 2009/07/18 18:49:19 kristaps Exp $ */
+d330 8
+@
+
+
+1.17
+log
+@Considerably revamped argument-parsing for correct quoted-literal handling.
+Deprecated ARGS_QUOTED (all arguments are quotable).
+Documented quotation and whitespace rules in mdoc.7.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.16 2009/07/17 12:28:38 kristaps Exp $ */
+d504 3
+a506 2
+			(void)mdoc_perr(m, line, *pos, EQUOTTERM);
+			return(ARGS_ERROR);
+@
+
+
+1.16
+log
+@Lint-check (removed unused variable).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.15 2009/07/17 12:27:49 kristaps Exp $ */
+a36 1
+#define	ARGS_QUOTED	(1 << 0)
+d95 2
+a96 2
+	ARGS_QUOTED, /* Sh */
+	ARGS_QUOTED, /* Ss */ 
+d99 1
+a99 1
+	ARGS_DELIM | ARGS_QUOTED, /* Dl */
+d102 1
+a102 1
+	ARGS_QUOTED, /* Bl */
+d107 2
+a108 2
+	ARGS_DELIM | ARGS_QUOTED, /* Ar */
+	ARGS_QUOTED, /* Cd */
+d114 1
+a114 1
+	ARGS_DELIM | ARGS_QUOTED, /* Fa */ 
+d117 2
+a118 2
+	ARGS_DELIM | ARGS_QUOTED, /* Fn */ 
+	ARGS_DELIM | ARGS_QUOTED, /* Ft */ 
+d121 2
+a122 2
+	ARGS_DELIM | ARGS_QUOTED, /* Li */
+	ARGS_QUOTED, /* Nd */ 
+d132 11
+a142 11
+	ARGS_QUOTED, /* %A */
+	ARGS_QUOTED, /* %B */
+	ARGS_QUOTED, /* %D */
+	ARGS_QUOTED, /* %I */
+	ARGS_QUOTED, /* %J */
+	ARGS_QUOTED, /* %N */
+	ARGS_QUOTED, /* %O */
+	ARGS_QUOTED, /* %P */
+	ARGS_QUOTED, /* %R */
+	ARGS_QUOTED, /* %T */
+	ARGS_QUOTED, /* %V */
+d182 1
+a182 1
+	ARGS_DELIM | ARGS_QUOTED, /* Sy */
+d187 1
+a187 1
+	ARGS_QUOTED, /* Fo */ 
+d199 2
+a200 2
+	ARGS_DELIM | ARGS_QUOTED, /* Lk */
+	ARGS_DELIM | ARGS_QUOTED, /* Mt */
+d204 1
+a204 1
+	ARGS_QUOTED, /* %C */
+d208 1
+a208 1
+	ARGS_QUOTED, /* %Q */
+d338 3
+d342 2
+a343 3
+	 * Override per-macro argument flags with context-specific ones.
+	 * As of now, this is only valid for `It' depending on its list
+	 * context.
+d346 3
+a348 5
+	switch (tok) {
+	case (MDOC_It):
+		for (n = m->last; n; n = n->parent)
+			if (MDOC_BLOCK == n->type && MDOC_Bl == n->tok)
+				break;
+d350 3
+a352 9
+		assert(n);
+		c = (int)(n->args ? n->args->argc : 0);
+		assert(c > 0);
+
+		/*
+		 * Using `Bl -column' adds ARGS_TABSEP to the arguments
+		 * and invalidates ARGS_DELIM.  Using `Bl -diag' allows
+		 * for quoted arguments.
+		 */
+d354 6
+a359 18
+		/* LINTED */
+		for (i = 0; i < c; i++) {
+			switch (n->args->argv[i].arg) {
+			case (MDOC_Column):
+				fl |= ARGS_TABSEP;
+				fl &= ~ARGS_DELIM;
+				i = c;
+				break;
+			case (MDOC_Diag):
+				fl |= ARGS_QUOTED;
+				i = c;
+				break;
+			default:
+				break;
+			}
+		}
+		break;
+	default:
+d374 2
+a375 1
+	assert(*pos > 0);
+a379 4
+	if ('\"' == buf[*pos] && ! (fl & ARGS_QUOTED))
+		if ( ! mdoc_pwarn(m, line, *pos, EQUOTPARM))
+			return(ARGS_ERROR);
+
+a390 1
+			/* There must be at least one space... */
+d397 3
+d406 1
+a406 1
+	/* First parse non-quoted strings. */
+d408 6
+a413 2
+	if ('\"' != buf[*pos] || ! (ARGS_QUOTED & fl)) {
+		*v = &buf[*pos];
+d415 58
+a472 23
+		/* 
+		 * Thar be dragons here!  If we're tab-separated, search
+		 * ahead for either a tab or the `Ta' macro.  
+		 * If a `Ta' is detected, it must be space-buffered before and
+		 * after.  If either of these hold true, then prune out the
+		 * extra spaces and call it an argument.
+		 */
+
+		if (ARGS_TABSEP & fl) {
+			/* Scan ahead to unescaped tab. */
+
+			p = strchr(*v, '\t');
+
+			/* Scan ahead to unescaped `Ta'. */
+
+			for (pp = *v; ; pp++) {
+				if (NULL == (pp = strstr(pp, "Ta")))
+					break;
+				if (pp > *v && ' ' != *(pp - 1))
+					continue;
+				if (' ' == *(pp + 2) || 0 == *(pp + 2))
+					break;
+			}
+d474 8
+a481 1
+			/* Choose delimiter tab/Ta. */
+d483 2
+a484 16
+			if (p && pp)
+				p = (p < pp ? p : pp);
+			else if ( ! p && pp)
+				p = pp;
+
+			/* Strip delimiter's preceding whitespace. */
+
+			if (p && p > *v) {
+				pp = p - 1;
+				while (pp > *v && ' ' == *pp)
+					pp--;
+				if (pp == *v && ' ' == *pp) 
+					*pp = 0;
+				else if (' ' == *pp)
+					*(pp + 1) = 0;
+			}
+d486 5
+a490 1
+			/* ...in- and proceding whitespace. */
+d492 2
+a493 33
+			if (p && ('\t' != *p)) {
+				*p++ = 0;
+				*p++ = 0;
+			} else if (p)
+				*p++ = 0;
+
+			if (p) {
+				while (' ' == *p)
+					p++;
+				if (0 != *p)
+					*(p - 1) = 0;
+				*pos += (int)(p - *v);
+			} 
+
+			if (p && 0 == *p)
+				if ( ! mdoc_pwarn(m, line, *pos, ECOLEMPTY))
+					return(ARGS_ERROR);
+			if (p && 0 == *p && p > *v && ' ' == *(p - 1))
+				if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+					return(ARGS_ERROR);
+
+			if (p)
+				return(ARGS_PHRASE);
+
+			/* Configure the eoln case, too. */
+
+			p = strchr(*v, 0);
+			assert(p);
+
+			if (p > *v && ' ' == *(p - 1))
+				if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+					return(ARGS_ERROR);
+			*pos += (int)(p - *v);
+d495 7
+a501 12
+			return(ARGS_PHRASE);
+		} 
+		
+		/* Do non-tabsep look-ahead here. */
+		
+		if ( ! (ARGS_TABSEP & fl))
+			while (buf[*pos]) {
+				if (' ' == buf[*pos])
+					if ('\\' != buf[*pos - 1])
+						break;
+				(*pos)++;
+			}
+d503 4
+a506 2
+		if (0 == buf[*pos])
+			return(ARGS_WORD);
+d511 1
+a511 1
+			return(ARGS_WORD);
+d513 2
+a514 3
+		if ( ! (ARGS_TABSEP & fl))
+			while (buf[*pos] && ' ' == buf[*pos])
+				(*pos)++;
+d516 3
+a518 2
+		if (buf[*pos])
+			return(ARGS_WORD);
+d520 1
+a520 4
+		if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+			return(ARGS_ERROR);
+
+		return(ARGS_WORD);
+d523 3
+a525 4
+	/*
+	 * If we're a quoted string (and quoted strings are allowed),
+	 * then parse ahead to the next quote.  If none's found, it's an
+	 * error.  After, parse to the next word.  
+d528 3
+a530 1
+	*v = &buf[++(*pos)];
+d532 2
+a533 7
+	while (buf[*pos] && '\"' != buf[*pos])
+		(*pos)++;
+
+	if (0 == buf[*pos]) {
+		(void)mdoc_perr(m, line, *pos, EQUOTTERM);
+		return(ARGS_ERROR);
+	}
+a535 2
+	if (0 == buf[*pos])
+		return(ARGS_QWORD);
+d537 1
+a537 1
+	while (buf[*pos] && ' ' == buf[*pos])
+d540 3
+a542 5
+	if (buf[*pos])
+		return(ARGS_QWORD);
+
+	if ( ! mdoc_pwarn(m, line, *pos, ETAILWS))
+		return(ARGS_ERROR);
+d544 1
+a544 1
+	return(ARGS_QWORD);
+d656 1
+a656 1
+		c = args(m, line, pos, buf, ARGS_QUOTED, &p);
+d688 1
+a688 1
+	c = args(m, line, pos, buf, ARGS_QUOTED, &p);
+d716 1
+a716 1
+	c = args(m, line, pos, buf, ARGS_QUOTED, &p);
+@
+
+
+1.15
+log
+@Removed EARGVPARM (superfluous, overly error-generating).
+Added `sp' handler.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.14 2009/07/17 10:56:57 kristaps Exp $ */
+a223 1
+	int		  i;
+a234 1
+	i = *pos;
+@
+
+
+1.14
+log
+@Added `br' and `sp' macros (requested by joerg@@netbsd.org, jmc@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.13 2009/07/15 15:26:19 kristaps Exp $ */
+a39 1
+#define	ARGS_ARGVLIKE	(1 << 3)
+d129 1
+a129 1
+	ARGS_DELIM | ARGS_ARGVLIKE, /* St */ 
+a233 3
+	if ('-' != buf[*pos] || ARGS_ARGVLIKE & mdoc_argflags[tok])
+		return(ARGV_WORD);
+
+a266 2
+		if ( ! mdoc_pwarn(m, line, i, EARGVPARM))
+			return(ARGV_ERROR);
+a403 4
+	if ( ! (fl & ARGS_ARGVLIKE) && '-' == buf[*pos]) 
+		if ( ! mdoc_pwarn(m, line, *pos, EARGVPARM))
+			return(ARGS_ERROR);
+
+@
+
+
+1.13
+log
+@args() should return ARGS_ERROR, not 0.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.12 2009/07/11 20:47:52 kristaps Exp $ */
+d211 2
+@
+
+
+1.12
+log
+@Removed long-fixed FIXME note.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.11 2009/07/06 13:04:52 kristaps Exp $ */
+d393 2
+a394 2
+args(struct mdoc *m, int line, 
+		int *pos, char *buf, int fl, char **v)
+d502 1
+a502 1
+					return(0);
+d505 1
+a505 1
+					return(0);
+d517 1
+a517 1
+					return(0);
+@
+
+
+1.11
+log
+@Consolidated all err/warnings into mdoc.c via libmdoc.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.10 2009/07/06 11:21:34 kristaps Exp $ */
+a35 1
+/* FIXME .Bl -column should deprecate old-groff syntax. */
+@
+
+
+1.10
+log
+@Consolidated pwarn->perr in mdoc_argv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.9 2009/07/06 09:21:24 kristaps Exp $ */
+a49 10
+enum	merr {
+	ETAILWS,
+	ECOLEMPTY,
+	EARGVPARM,
+	EQUOTPARM,
+	EQUOTTERM,
+	EMALLOC,
+	EARGVAL	
+};
+
+a60 4
+static	int		 perr(struct mdoc *, int, int, enum merr, int);
+
+#define	pwarn(m, l, p, t) perr((m), (l), (p), (t), 0)
+#define verr(m, t) perr((m), (m)->last->line, (m)->last->pos, (t), 1)
+d221 1
+a221 1
+mdoc_argv(struct mdoc *mdoc, int line, int tok,
+d270 1
+a270 1
+		if ( ! pwarn(mdoc, line, i, EARGVPARM))
+d278 1
+a278 1
+	if ( ! argv(mdoc, line, &tmp, pos, buf))
+d284 1
+a284 1
+			(void)verr(mdoc, EMALLOC);
+d295 1
+a295 1
+		(void)verr(mdoc, EMALLOC);
+a336 40
+
+static int
+perr(struct mdoc *mdoc, int line, int pos, enum merr code, int iserr)
+{
+	char		*p;
+
+	p = NULL;
+
+	switch (code) {
+	case (EMALLOC):
+		p = "memory exhausted";
+		break;
+	case (EQUOTTERM):
+		p = "unterminated quoted parameter";
+		break;
+	case (EARGVAL):
+		p = "argument requires a value";
+		break;
+	case (EQUOTPARM):
+		p = "unexpected quoted parameter";
+		break;
+	case (EARGVPARM):
+		p = "argument-like parameter";
+		break;
+	case (ECOLEMPTY):
+		p = "last list column is empty";
+		break;
+	case (ETAILWS):
+		p = "trailing whitespace";
+		break;
+	}
+
+	assert(p);
+	if (iserr)
+		return(mdoc_perr(mdoc, line, pos, p));
+
+	return(mdoc_pwarn(mdoc, line, pos, p));
+}
+
+
+d338 1
+a338 1
+mdoc_args(struct mdoc *mdoc, int line, 
+d354 1
+a354 1
+		for (n = mdoc->last; n; n = n->parent)
+d389 1
+a389 1
+	return(args(mdoc, line, pos, buf, fl, v));
+d394 1
+a394 1
+args(struct mdoc *mdoc, int line, 
+d406 1
+a406 1
+		if ( ! pwarn(mdoc, line, *pos, EQUOTPARM))
+d410 1
+a410 1
+		if ( ! pwarn(mdoc, line, *pos, EARGVPARM))
+d502 1
+a502 1
+				if ( ! pwarn(mdoc, line, *pos, ECOLEMPTY))
+d505 1
+a505 1
+				if ( ! pwarn(mdoc, line, *pos, ETAILWS))
+d517 1
+a517 1
+				if ( ! pwarn(mdoc, line, *pos, ETAILWS))
+d549 1
+a549 1
+		if ( ! pwarn(mdoc, line, *pos, ETAILWS))
+d567 1
+a567 1
+		(void)perr(mdoc, line, *pos, EQUOTTERM, 1);
+d581 1
+a581 1
+	if ( ! pwarn(mdoc, line, *pos, ETAILWS))
+d687 1
+a687 1
+argv_multi(struct mdoc *mdoc, int line, 
+d696 1
+a696 1
+		c = args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+d706 1
+a706 1
+				(void)verr(mdoc, EMALLOC);
+d711 1
+a711 1
+			return(verr(mdoc, EMALLOC));
+d719 1
+a719 1
+argv_opt_single(struct mdoc *mdoc, int line, 
+d728 1
+a728 1
+	c = args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+d736 1
+a736 1
+		return(verr(mdoc, EMALLOC));
+d738 1
+a738 1
+		return(verr(mdoc, EMALLOC));
+d748 1
+a748 1
+argv_single(struct mdoc *mdoc, int line, 
+d756 1
+a756 1
+	c = args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+d760 1
+a760 1
+		return(perr(mdoc, line, ppos, EARGVAL, 1));
+d764 1
+a764 1
+		return(verr(mdoc, EMALLOC));
+d766 1
+a766 1
+		return(verr(mdoc, EMALLOC));
+@
+
+
+1.9
+log
+@Initial removal of enum mdoc_warn from mdoc warnings (unnecessary complication).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.8 2009/06/17 14:10:09 kristaps Exp $ */
+a49 7
+enum 	mwarn {
+	WQUOTPARM,
+	WARGVPARM,
+	WCOLEMPTY,
+	WTAILWS	
+};
+
+d51 4
+d71 1
+a71 2
+static	int		 pwarn(struct mdoc *, int, int, enum mwarn);
+static	int		 perr(struct mdoc *, int, int, enum merr);
+d73 2
+a74 1
+#define verr(m, t) perr((m), (m)->last->line, (m)->last->pos, (t))
+d284 1
+a284 1
+		if ( ! pwarn(mdoc, line, i, WARGVPARM))
+d353 1
+a353 1
+perr(struct mdoc *mdoc, int line, int pos, enum merr code)
+d358 1
+d369 1
+a369 16
+	}
+
+	assert(p);
+	return(mdoc_perr(mdoc, line, pos, p));
+}
+
+
+static int
+pwarn(struct mdoc *mdoc, int line, int pos, enum mwarn code)
+{
+	char		*p;
+
+	p = NULL;
+
+	switch (code) {
+	case (WQUOTPARM):
+d372 1
+a372 1
+	case (WARGVPARM):
+d375 1
+a375 1
+	case (WCOLEMPTY):
+d378 1
+a378 1
+	case (WTAILWS):
+d384 3
+d460 1
+a460 1
+		if ( ! pwarn(mdoc, line, *pos, WQUOTPARM))
+d464 1
+a464 1
+		if ( ! pwarn(mdoc, line, *pos, WARGVPARM))
+d556 1
+a556 1
+				if ( ! pwarn(mdoc, line, *pos, WCOLEMPTY))
+d559 1
+a559 1
+				if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+d571 1
+a571 1
+				if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+d603 1
+a603 1
+		if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+d621 1
+a621 1
+		(void)perr(mdoc, line, *pos, EQUOTTERM);
+d635 1
+a635 1
+	if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+d814 1
+a814 1
+		return(perr(mdoc, line, ppos, EARGVAL));
+@
+
+
+1.8
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.7 2009/06/17 14:08:47 kristaps Exp $ */
+d372 1
+a381 1
+	int		 c;
+d384 1
+a384 1
+	c = WARN_SYNTAX;
+a393 1
+		c = WARN_COMPAT;
+a396 1
+		c = WARN_COMPAT;
+d399 1
+d401 1
+a401 1
+	return(mdoc_pwarn(mdoc, line, pos, c, p));
+@
+
+
+1.7
+log
+@`Bl -column' now correctly handles tail entries (Bl -column -more... arg0...).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.6 2009/06/17 11:02:06 kristaps Exp $ */
+d759 1
+a759 1
+	int		 c, ppos;
+a761 2
+	ppos = *pos;
+
+@
+
+
+1.6
+log
+@Cleaned up .Bf validator.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.5 2009/06/16 19:45:51 kristaps Exp $ */
+d36 1
+d122 1
+a122 1
+	0, /* Bl */
+d785 1
+a785 4
+	if (v->sz)
+		return(1);
+
+	return(perr(mdoc, line, ppos, EARGVAL));
+@
+
+
+1.5
+log
+@Removed MDOC___: moved MDOC_Ap to its index (comments not passed into mdoc parser).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.4 2009/06/10 20:18:43 kristaps Exp $ */
+d35 2
+@
+
+
+1.4
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.3 2009/04/12 19:45:26 kristaps Exp $ */
+d108 1
+a108 1
+	0, /* \" */
+a214 1
+	0, /* Ap */
+@
+
+
+1.3
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.2 2009/03/31 13:50:19 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.2
+log
+@General clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdoc_argv.c,v 1.1 2009/03/27 15:00:15 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.1
+log
+@Version.  Added forgotten file.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.57 2009/03/23 14:31:58 kristaps Exp $ */
+a22 1
+#include <err.h>
+d58 1
+d76 2
+d299 5
+a303 2
+		if (NULL == (*v = calloc(1, sizeof(struct mdoc_arg))))
+			err(1, "calloc");
+d308 1
+a308 1
+	arg->argv = xrealloc(arg->argv, arg->argc * 
+d311 5
+a335 1
+
+a360 1
+
+d362 3
+a371 1
+
+a384 1
+
+a400 1
+
+d671 1
+a671 1
+		if (xstrcmp(argv, "split"))
+d673 1
+a673 1
+		else if (xstrcmp(argv, "nosplit"))
+d678 1
+a678 1
+		if (xstrcmp(argv, "ragged"))
+d680 1
+a680 1
+		else if (xstrcmp(argv, "unfilled"))
+d682 1
+a682 1
+		else if (xstrcmp(argv, "filled"))
+d684 1
+a684 1
+		else if (xstrcmp(argv, "literal"))
+d686 1
+a686 1
+		else if (xstrcmp(argv, "file"))
+d688 1
+a688 1
+		else if (xstrcmp(argv, "offset"))
+d690 1
+a690 1
+		else if (xstrcmp(argv, "compact"))
+d695 1
+a695 1
+		if (xstrcmp(argv, "emphasis"))
+d697 1
+a697 1
+		else if (xstrcmp(argv, "literal"))
+d699 1
+a699 1
+		else if (xstrcmp(argv, "symbolic"))
+d704 1
+a704 1
+		if (xstrcmp(argv, "words"))
+d709 1
+a709 1
+		if (xstrcmp(argv, "bullet"))
+d711 1
+a711 1
+		else if (xstrcmp(argv, "dash"))
+d713 1
+a713 1
+		else if (xstrcmp(argv, "hyphen"))
+d715 1
+a715 1
+		else if (xstrcmp(argv, "item"))
+d717 1
+a717 1
+		else if (xstrcmp(argv, "enum"))
+d719 1
+a719 1
+		else if (xstrcmp(argv, "tag"))
+d721 1
+a721 1
+		else if (xstrcmp(argv, "diag"))
+d723 1
+a723 1
+		else if (xstrcmp(argv, "hang"))
+d725 1
+a725 1
+		else if (xstrcmp(argv, "ohang"))
+d727 1
+a727 1
+		else if (xstrcmp(argv, "inset"))
+d729 1
+a729 1
+		else if (xstrcmp(argv, "column"))
+d731 1
+a731 1
+		else if (xstrcmp(argv, "width"))
+d733 1
+a733 1
+		else if (xstrcmp(argv, "offset"))
+d735 1
+a735 1
+		else if (xstrcmp(argv, "compact"))
+d737 1
+a737 1
+		else if (xstrcmp(argv, "nested"))
+d744 1
+a744 1
+		if (xstrcmp(argv, "std"))
+d773 2
+a774 2
+		if (0 == v->sz % MULTI_STEP)
+			v->value = xrealloc(v->value, 
+d776 5
+d782 1
+a782 1
+			err(1, "strdup");
+d810 1
+a810 1
+		err(1, "calloc");
+d812 2
+a813 1
+		err(1, "strdup");
+d838 1
+a838 1
+		err(1, "calloc");
+d840 2
+a841 1
+		err(1, "strdup");
+@

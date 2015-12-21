@@ -1,0 +1,868 @@
+head	1.28;
+access;
+symbols
+	VERSION_1_13_3:1.28
+	VERSION_1_13_2:1.27
+	VERSION_1_12_4:1.24
+	VERSION_1_13_1:1.24
+	VERSION_1_12_3:1.22
+	VERSION_1_12_2:1.20
+	VERSION_1_12:1.24.0.2
+	VERSION_1_12_1:1.19
+	VERSION_1_12_0:1.17
+	VERSION_1_11_7:1.16
+	VERSION_1_11_6:1.16
+	VERSION_1_11_5:1.16
+	VERSION_1_11_4:1.16
+	VERSION_1_11_3:1.16
+	VERSION_1_11_2:1.16
+	VERSION_1_11_1:1.15
+	VERSION_1_10_10:1.15
+	VERSION_1_10_9:1.15
+	VERSION_1_10_8:1.15
+	VERSION_1_10_7:1.15
+	VERSION_1_10_6:1.15
+	VERSION_1_10_5:1.14
+	VERSION_1_10_5_PREPDF:1.14
+	VERSION_1_10_4:1.13
+	VERSION_1_10_3:1.13
+	VERSION_1_10_2:1.13
+	VERSION_1_10_1:1.12
+	VERSION_1_9_24:1.12
+	VERSION_1_9_25:1.12
+	VERSION_1_9_23:1.11
+	VERSION_1_9_22:1.11
+	VERSION_1_9_21:1.11
+	VERSION_1_9_20:1.11
+	VERSION_1_9_19:1.11
+	VERSION_1_9_18:1.11
+	VERSION_1_9_17:1.11
+	VERSION_1_9_16:1.11
+	VERSION_1_9_15:1.11
+	VERSION_1_9_15-pre2:1.11
+	VERSION_1_9_15-pre1:1.11
+	VERSION_1_9_14:1.11
+	VERSION_1_9_13:1.11
+	VERSION_1_9_12:1.11
+	VERSION_1_9_11:1.11
+	VERSION_1_9_10:1.11
+	VERSION_1_9_9:1.11
+	VERSION_1_9_8:1.11
+	VERSION_1_9_7:1.11
+	VERSION_1_9_6:1.10
+	VERSION_1_9_5:1.10
+	VERSION_1_9_2:1.10
+	VERSION_1_9_1:1.10
+	VERSION_1_9_0:1.10
+	VERSION_1_8_5:1.10
+	VERSION_1_8_4:1.9
+	VERSION_1_8_3:1.6
+	VERSION_1_8_2:1.6
+	VERSION_1_8_1:1.6
+	VERSION_1_8_0:1.6
+	VERSION_1_7_24:1.6
+	VERSION_1_7_23:1.5
+	VERSION_1_7_22:1.5
+	VERSION_1_7_21:1.5
+	VERSION_1_7_20:1.5
+	VERSION_1_7_19:1.5
+	VERSION_1_7_17:1.5
+	VERSION_1_7_16:1.5
+	VERSION_1_7_15:1.5
+	VERSION_1_7_14:1.5
+	VERSION_1_7_13:1.5
+	VERSION_1_7_12:1.4
+	OPENBSD_CHECKIN:1.4
+	VERSION_1_7_10:1.4
+	VERSION_1_7_5:1.3
+	VERSION_1_6_5:1.3
+	VERSION_1_6_2:1.3
+	VERSION_1_5_3:1.3
+	VERSION_1_5_1:1.2
+	VERSION_1_4_6:1.2
+	VERSION_1_4_5:1.2
+	VERSION_1_4_4:1.2
+	VERSION_1_4_2:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.28
+date	2015.02.17.20.37.17;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2014.11.30.21.56.18;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2014.11.16.20.46.21;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2014.08.28.03.51.56;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2013.12.31.23.29.41;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2013.12.25.14.09.32;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2013.10.13.03.07.34;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2013.06.19.21.20.27;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2012.02.26.21.47.09;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2012.01.03.10.18.05;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.09.16.20.44.57;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.04.24.17.56.44;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.07.31.23.52.58;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.07.19.15.43.10;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.04.08.07.18.44;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.09.27.17.11.48;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.07.26.18.59.31;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.07.24.13.18.15;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.07.24.13.09.45;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.07.24.13.06.11;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.07.11.18.55.37;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.04.02.16.37.40;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.06.14.24.49;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.28
+log
+@Render \(lq and \(rq as '"' in -Tascii mode but leave the rendering
+of .Do/.Dc, .Dq, .Lb, and .St untouched.
+Reduces groff-mandoc differences in OpenBSD base by about 7%.
+Reminded of the issue by naddy@@.
+@
+text
+@/*	$Id: st.in,v 1.27 2014/11/30 21:56:18 schwarze Exp $ */
+/*
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+/*
+ * This file defines the .St macro arguments.  If you add a new
+ * standard, make sure that the left-and side corresponds to the .St
+ * argument (like .St -p1003.1) and the right-hand side corresponds to
+ * the formatted output string.
+ *
+ * Be sure to escape strings.
+ * The non-breaking blanks prevent ending an output line right before
+ * a number.  Groff prevent line breaks at the same places.
+ *
+ * REMEMBER TO ADD NEW STANDARDS TO MDOC.7!
+ */
+
+LINE("-p1003.1-88",	"IEEE Std 1003.1-1988 (\\(LqPOSIX.1\\(Rq)")
+LINE("-p1003.1-90",	"IEEE Std 1003.1-1990 (\\(LqPOSIX.1\\(Rq)")
+LINE("-p1003.1-96",	"ISO/IEC 9945-1:1996 (\\(LqPOSIX.1\\(Rq)")
+LINE("-p1003.1-2001",	"IEEE Std 1003.1-2001 (\\(LqPOSIX.1\\(Rq)")
+LINE("-p1003.1-2004",	"IEEE Std 1003.1-2004 (\\(LqPOSIX.1\\(Rq)")
+LINE("-p1003.1-2008",	"IEEE Std 1003.1-2008 (\\(LqPOSIX.1\\(Rq)")
+LINE("-p1003.1-2013",	"IEEE Std 1003.1-2008/Cor 1-2013 (\\(LqPOSIX.1\\(Rq)")
+LINE("-p1003.1",	"IEEE Std 1003.1 (\\(LqPOSIX.1\\(Rq)")
+LINE("-p1003.1b",	"IEEE Std 1003.1b (\\(LqPOSIX.1b\\(Rq)")
+LINE("-p1003.1b-93",	"IEEE Std 1003.1b-1993 (\\(LqPOSIX.1b\\(Rq)")
+LINE("-p1003.1c-95",	"IEEE Std 1003.1c-1995 (\\(LqPOSIX.1c\\(Rq)")
+LINE("-p1003.1g-2000",	"IEEE Std 1003.1g-2000 (\\(LqPOSIX.1g\\(Rq)")
+LINE("-p1003.1i-95",	"IEEE Std 1003.1i-1995 (\\(LqPOSIX.1i\\(Rq)")
+LINE("-p1003.2",	"IEEE Std 1003.2 (\\(LqPOSIX.2\\(Rq)")
+LINE("-p1003.2-92",	"IEEE Std 1003.2-1992 (\\(LqPOSIX.2\\(Rq)")
+LINE("-p1003.2a-92",	"IEEE Std 1003.2a-1992 (\\(LqPOSIX.2\\(Rq)")
+LINE("-isoC",		"ISO/IEC 9899:1990 (\\(LqISO\\~C90\\(Rq)")
+LINE("-isoC-90",	"ISO/IEC 9899:1990 (\\(LqISO\\~C90\\(Rq)")
+LINE("-isoC-amd1",	"ISO/IEC 9899/AMD1:1995 (\\(LqISO\\~C90, Amendment 1\\(Rq)")
+LINE("-isoC-tcor1",	"ISO/IEC 9899/TCOR1:1994 (\\(LqISO\\~C90, Technical Corrigendum 1\\(Rq)")
+LINE("-isoC-tcor2",	"ISO/IEC 9899/TCOR2:1995 (\\(LqISO\\~C90, Technical Corrigendum 2\\(Rq)")
+LINE("-isoC-99",	"ISO/IEC 9899:1999 (\\(LqISO\\~C99\\(Rq)")
+LINE("-isoC-2011",	"ISO/IEC 9899:2011 (\\(LqISO\\~C11\\(Rq)")
+LINE("-iso9945-1-90",	"ISO/IEC 9945-1:1990 (\\(LqPOSIX.1\\(Rq)")
+LINE("-iso9945-1-96",	"ISO/IEC 9945-1:1996 (\\(LqPOSIX.1\\(Rq)")
+LINE("-iso9945-2-93",	"ISO/IEC 9945-2:1993 (\\(LqPOSIX.2\\(Rq)")
+LINE("-ansiC",		"ANSI X3.159-1989 (\\(LqANSI\\~C89\\(Rq)")
+LINE("-ansiC-89",	"ANSI X3.159-1989 (\\(LqANSI\\~C89\\(Rq)")
+LINE("-ieee754",	"IEEE Std 754-1985")
+LINE("-iso8802-3",	"ISO 8802-3: 1989")
+LINE("-iso8601",	"ISO 8601")
+LINE("-ieee1275-94",	"IEEE Std 1275-1994 (\\(LqOpen Firmware\\(Rq)")
+LINE("-xpg3",		"X/Open Portability Guide Issue\\~3 (\\(LqXPG3\\(Rq)")
+LINE("-xpg4",		"X/Open Portability Guide Issue\\~4 (\\(LqXPG4\\(Rq)")
+LINE("-xpg4.2",		"X/Open Portability Guide Issue\\~4, Version\\~2 (\\(LqXPG4.2\\(Rq)")
+LINE("-xbd5",		"X/Open Base Definitions Issue\\~5 (\\(LqXBD5\\(Rq)")
+LINE("-xcu5",		"X/Open Commands and Utilities Issue\\~5 (\\(LqXCU5\\(Rq)")
+LINE("-xsh4.2",		"X/Open System Interfaces and Headers Issue\\~4, Version\\~2 (\\(LqXSH4.2\\(Rq)")
+LINE("-xsh5",		"X/Open System Interfaces and Headers Issue\\~5 (\\(LqXSH5\\(Rq)")
+LINE("-xns5",		"X/Open Networking Services Issue\\~5 (\\(LqXNS5\\(Rq)")
+LINE("-xns5.2",		"X/Open Networking Services Issue\\~5.2 (\\(LqXNS5.2\\(Rq)")
+LINE("-xcurses4.2",	"X/Open Curses Issue\\~4, Version\\~2 (\\(LqXCURSES4.2\\(Rq)")
+LINE("-susv1",		"Version\\~1 of the Single UNIX Specification (\\(LqSUSv1\\(Rq)")
+LINE("-susv2",		"Version\\~2 of the Single UNIX Specification (\\(LqSUSv2\\(Rq)")
+LINE("-susv3",		"Version\\~3 of the Single UNIX Specification (\\(LqSUSv3\\(Rq)")
+LINE("-susv4",		"Version\\~4 of the Single UNIX Specification (\\(LqSUSv4\\(Rq)")
+LINE("-svid4",		"System\\~V Interface Definition, Fourth Edition (\\(LqSVID4\\(Rq)")
+@
+
+
+1.27
+log
+@delete three standard abbreviations that are
+* no longer used in OpenBSD
+* not used in any of NetBSD, FreeBSD, or DragonFly
+* not supported by groff
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.26 2014/11/16 20:46:21 schwarze Exp $ */
+d31 28
+a58 28
+LINE("-p1003.1-88",	"IEEE Std 1003.1-1988 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1-90",	"IEEE Std 1003.1-1990 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1-96",	"ISO/IEC 9945-1:1996 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1-2001",	"IEEE Std 1003.1-2001 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1-2004",	"IEEE Std 1003.1-2004 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1-2008",	"IEEE Std 1003.1-2008 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1-2013",	"IEEE Std 1003.1-2008/Cor 1-2013 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1",	"IEEE Std 1003.1 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1b",	"IEEE Std 1003.1b (\\(lqPOSIX.1b\\(rq)")
+LINE("-p1003.1b-93",	"IEEE Std 1003.1b-1993 (\\(lqPOSIX.1b\\(rq)")
+LINE("-p1003.1c-95",	"IEEE Std 1003.1c-1995 (\\(lqPOSIX.1c\\(rq)")
+LINE("-p1003.1g-2000",	"IEEE Std 1003.1g-2000 (\\(lqPOSIX.1g\\(rq)")
+LINE("-p1003.1i-95",	"IEEE Std 1003.1i-1995 (\\(lqPOSIX.1i\\(rq)")
+LINE("-p1003.2",	"IEEE Std 1003.2 (\\(lqPOSIX.2\\(rq)")
+LINE("-p1003.2-92",	"IEEE Std 1003.2-1992 (\\(lqPOSIX.2\\(rq)")
+LINE("-p1003.2a-92",	"IEEE Std 1003.2a-1992 (\\(lqPOSIX.2\\(rq)")
+LINE("-isoC",		"ISO/IEC 9899:1990 (\\(lqISO\\~C90\\(rq)")
+LINE("-isoC-90",	"ISO/IEC 9899:1990 (\\(lqISO\\~C90\\(rq)")
+LINE("-isoC-amd1",	"ISO/IEC 9899/AMD1:1995 (\\(lqISO\\~C90, Amendment 1\\(rq)")
+LINE("-isoC-tcor1",	"ISO/IEC 9899/TCOR1:1994 (\\(lqISO\\~C90, Technical Corrigendum 1\\(rq)")
+LINE("-isoC-tcor2",	"ISO/IEC 9899/TCOR2:1995 (\\(lqISO\\~C90, Technical Corrigendum 2\\(rq)")
+LINE("-isoC-99",	"ISO/IEC 9899:1999 (\\(lqISO\\~C99\\(rq)")
+LINE("-isoC-2011",	"ISO/IEC 9899:2011 (\\(lqISO\\~C11\\(rq)")
+LINE("-iso9945-1-90",	"ISO/IEC 9945-1:1990 (\\(lqPOSIX.1\\(rq)")
+LINE("-iso9945-1-96",	"ISO/IEC 9945-1:1996 (\\(lqPOSIX.1\\(rq)")
+LINE("-iso9945-2-93",	"ISO/IEC 9945-2:1993 (\\(lqPOSIX.2\\(rq)")
+LINE("-ansiC",		"ANSI X3.159-1989 (\\(lqANSI\\~C89\\(rq)")
+LINE("-ansiC-89",	"ANSI X3.159-1989 (\\(lqANSI\\~C89\\(rq)")
+d62 16
+a77 16
+LINE("-ieee1275-94",	"IEEE Std 1275-1994 (\\(lqOpen Firmware\\(rq)")
+LINE("-xpg3",		"X/Open Portability Guide Issue\\~3 (\\(lqXPG3\\(rq)")
+LINE("-xpg4",		"X/Open Portability Guide Issue\\~4 (\\(lqXPG4\\(rq)")
+LINE("-xpg4.2",		"X/Open Portability Guide Issue\\~4, Version\\~2 (\\(lqXPG4.2\\(rq)")
+LINE("-xbd5",		"X/Open Base Definitions Issue\\~5 (\\(lqXBD5\\(rq)")
+LINE("-xcu5",		"X/Open Commands and Utilities Issue\\~5 (\\(lqXCU5\\(rq)")
+LINE("-xsh4.2",		"X/Open System Interfaces and Headers Issue\\~4, Version\\~2 (\\(lqXSH4.2\\(rq)")
+LINE("-xsh5",		"X/Open System Interfaces and Headers Issue\\~5 (\\(lqXSH5\\(rq)")
+LINE("-xns5",		"X/Open Networking Services Issue\\~5 (\\(lqXNS5\\(rq)")
+LINE("-xns5.2",		"X/Open Networking Services Issue\\~5.2 (\\(lqXNS5.2\\(rq)")
+LINE("-xcurses4.2",	"X/Open Curses Issue\\~4, Version\\~2 (\\(lqXCURSES4.2\\(rq)")
+LINE("-susv1",		"Version\\~1 of the Single UNIX Specification (\\(lqSUSv1\\(rq)")
+LINE("-susv2",		"Version\\~2 of the Single UNIX Specification (\\(lqSUSv2\\(rq)")
+LINE("-susv3",		"Version\\~3 of the Single UNIX Specification (\\(lqSUSv3\\(rq)")
+LINE("-susv4",		"Version\\~4 of the Single UNIX Specification (\\(lqSUSv4\\(rq)")
+LINE("-svid4",		"System\\~V Interface Definition, Fourth Edition (\\(lqSVID4\\(rq)")
+@
+
+
+1.26
+log
+@Delete five standards that are:
+* not supported by groff
+* not used in any OpenBSD, NetBSD, DragonFly or FreeBSD base manual
+* superseded or retracted
+* and more than ten years old
+Triggered by a question from Carsten Kunze (Heirloom troff).
+OK guenther@@ jmc@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.25 2014/08/28 03:51:56 schwarze Exp $ */
+a41 1
+LINE("-p1003.1d-99",	"IEEE Std 1003.1d-1999 (\\(lqPOSIX.1d\\(rq)")
+a58 1
+LINE("-ansiC-99",	"ANSI/ISO/IEC 9899-1999 (\\(lqANSI\\~C99\\(rq)")
+a65 1
+LINE("-xpg4.3",		"X/Open Portability Guide Issue\\~4, Version\\~3 (\\(lqXPG4.3\\(rq)")
+@
+
+
+1.25
+log
+@Support .St -susv1 and .St -susv4.  Illumos wants to use this,
+and it's illogical anyway to have -susv2 and -susv3 but not -susv4.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.24 2014/04/20 16:46:05 schwarze Exp $ */
+a44 2
+LINE("-p1003.1j-2000",	"IEEE Std 1003.1j-2000 (\\(lqPOSIX.1j\\(rq)")
+LINE("-p1003.1q-2000",	"IEEE Std 1003.1q-2000 (\\(lqPOSIX.1q\\(rq)")
+a47 2
+LINE("-p1387.2",	"IEEE Std 1387.2 (\\(lqPOSIX.7.2\\(rq)")
+LINE("-p1387.2-95",	"IEEE Std 1387.2-1995 (\\(lqPOSIX.7.2\\(rq)")
+a74 1
+LINE("-xns5.2d2.0",	"X/Open Networking Services Issue\\~5.2 Draft\\~2.0 (\\(lqXNS5.2D2.0\\(rq)")
+@
+
+
+1.24
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.23 2013/12/31 23:29:41 schwarze Exp $ */
+d81 1
+d84 1
+@
+
+
+1.23
+log
+@Support .St -p1003.1-2013, "IEEE Std 1003.1-2008/Cor 1-2013".
+
+Note that the POSIX-2008 standard remains in force, so please refrain
+from wholesale 2008 -> 2013 replacements.  Make sure to only use the
+new -p1003.1-2013 argument for cases where "IEEE Std 1003.1(TM)-2008/
+Cor 1-2013, IEEE Standard for Information Technology--Portable
+Operating System Interface (POSIX(R)), Technical Corrigendum 1"
+actually changes something in the standard with respect to the
+specific function documented in the manual you touch.  Otherwise,
+please continue using .St -p1003.1-2008.
+
+Triggered by a similar, but slightly incorrect patch from jmc@@;
+ok guenther@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.22 2013/12/25 14:09:32 schwarze Exp $ */
+d25 1
+a25 1
+ * The non-breaking blanks prevent ending an output line right before 
+@
+
+
+1.22
+log
+@Support .St -xsh4.2, the System Interfaces part of the original Single
+UNIX Specification.  As this one appears to be used in the wild and we
+already have -xpg4.2 and even -xsh5, it makes sense to add this one.
+Note that calling the original SUS XPG4.2 appears to be more common
+than calling it SUSv1, so it's ok that we don't have .St -susv1.
+From Sascha Wildner <saw at online dot de> (DragonFly) via Franco Fichtner.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.21 2013/10/13 03:07:34 schwarze Exp $ */
+d37 1
+@
+
+
+1.21
+log
+@sync SUSv2/SUSv3 entries with groff
+reduces groff-mandoc-differences for several pthread_*(3) manuals
+noticed by Franco Fichtner <franco at lastsummer dot de>
+dragonfly.git/commitdiff/370c546b87777b40b5fc862491555ef71b4ee130
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.20 2013/06/19 21:20:27 schwarze Exp $ */
+d74 1
+@
+
+
+1.20
+log
+@Add .St values for POSIX 1003.1d, 1003.1j, and 1003.1q.
+Tweak descriptions of the other POSIX 1003.1<letter> standards.
+Sort a few others into their proper places.
+
+From Philip Guenther@@ during t2k13.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.14 2013/06/17 17:39:48 guenther Exp $ */
+d79 2
+a80 2
+LINE("-susv2",		"Version\\~2 of the Single UNIX Specification")
+LINE("-susv3",		"Version\\~3 of the Single UNIX Specification")
+@
+
+
+1.19
+log
+@Correct the expansion of -xbd5;
+from Philip Guenther <guenther at openbsd dot org>.
+OK Werner Lemberg <wl at gnu dot org>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.18 2012/01/03 10:18:05 kristaps Exp $ */
+d38 9
+a46 5
+LINE("-p1003.1b",	"IEEE Std 1003.1b (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1b-93",	"IEEE Std 1003.1b-1993 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1c-95",	"IEEE Std 1003.1c-1995 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1g-2000",	"IEEE Std 1003.1g-2000 (\\(lqPOSIX.1\\(rq)")
+LINE("-p1003.1i-95",	"IEEE Std 1003.1i-1995 (\\(lqPOSIX.1\\(rq)")
+d49 1
+a50 2
+LINE("-p1003.2",	"IEEE Std 1003.2 (\\(lqPOSIX.2\\(rq)")
+LINE("-p1387.2",	"IEEE Std 1387.2 (\\(lqPOSIX.7.2\\(rq)")
+@
+
+
+1.18
+log
+@Accommodate for ISO C11.  groff applied the same `St' argument on
+03/01/2012.  From a tweaked patch (isoC-11 -> isoC-2011) by Ulrich
+Sporlein: thanks!
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.17 2011/09/16 20:44:57 schwarze Exp $ */
+d69 1
+a69 1
+LINE("-xbd5",		"X/Open System Interface Definitions Issue\\~5 (\\(lqXBD5\\(rq)")
+@
+
+
+1.17
+log
+@support ".St -iso8601"; committing on behalf of jmc@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.16 2011/04/24 17:56:44 schwarze Exp $ */
+d54 1
+@
+
+
+1.16
+log
+@Prevent line breaks right before numbers.  Groff does the same.
+OK kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.15 2010/07/31 23:52:58 schwarze Exp $ */
+d62 1
+@
+
+
+1.15
+log
+@Sync to OpenBSD: add missing Copyright years.
+I checked that substantial changes were committed
+to these files during these years.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.14 2010/07/19 15:43:10 kristaps Exp $ */
+d25 2
+d48 6
+a53 6
+LINE("-isoC",		"ISO/IEC 9899:1990 (\\(lqISO C90\\(rq)")
+LINE("-isoC-90",	"ISO/IEC 9899:1990 (\\(lqISO C90\\(rq)")
+LINE("-isoC-amd1",	"ISO/IEC 9899/AMD1:1995 (\\(lqISO C90\\(rq)")
+LINE("-isoC-tcor1",	"ISO/IEC 9899/TCOR1:1994 (\\(lqISO C90\\(rq)")
+LINE("-isoC-tcor2",	"ISO/IEC 9899/TCOR2:1995 (\\(lqISO C90\\(rq)")
+LINE("-isoC-99",	"ISO/IEC 9899:1999 (\\(lqISO C99\\(rq)")
+d57 3
+a59 3
+LINE("-ansiC",		"ANSI X3.159-1989 (\\(lqANSI C\\(rq)")
+LINE("-ansiC-89",	"ANSI X3.159-1989 (\\(lqANSI C\\(rq)")
+LINE("-ansiC-99",	"ANSI/ISO/IEC 9899-1999 (\\(lqANSI C99\\(rq)")
+d63 14
+a76 14
+LINE("-xpg3",		"X/Open Portability Guide Issue 3 (\\(lqXPG3\\(rq)")
+LINE("-xpg4",		"X/Open Portability Guide Issue 4 (\\(lqXPG4\\(rq)")
+LINE("-xpg4.2",		"X/Open Portability Guide Issue 4.2 (\\(lqXPG4.2\\(rq)")
+LINE("-xpg4.3",		"X/Open Portability Guide Issue 4.3 (\\(lqXPG4.3\\(rq)")
+LINE("-xbd5",		"X/Open System Interface Definitions Issue 5 (\\(lqXBD5\\(rq)")
+LINE("-xcu5",		"X/Open Commands and Utilities Issue 5 (\\(lqXCU5\\(rq)")
+LINE("-xsh5",		"X/Open System Interfaces and Headers Issue 5 (\\(lqXSH5\\(rq)")
+LINE("-xns5",		"X/Open Networking Services Issue 5 (\\(lqXNS5\\(rq)")
+LINE("-xns5.2",		"X/Open Networking Services Issue 5.2 (\\(lqXNS5.2\\(rq)")
+LINE("-xns5.2d2.0",	"X/Open Networking Services Issue 5.2 Draft 2.0 (\\(lqXNS5.2D2.0\\(rq)")
+LINE("-xcurses4.2",	"X/Open Curses Issue 4 Version 2 (\\(lqXCURSES4.2\\(rq)")
+LINE("-susv2",		"Version 2 of the Single UNIX Specification")
+LINE("-susv3",		"Version 3 of the Single UNIX Specification")
+LINE("-svid4",		"System V Interface Definition, Fourth Edition (\\(lqSVID4\\(rq)")
+@
+
+
+1.14
+log
+@Finished document -mdoc macros.  Note `br' and `sp' remain.
+
+Noted in arch.in and st.in that mdoc.7 must be updated if entries are
+added.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.13 2010/06/19 20:46:28 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.13
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.12 2010/04/08 07:18:44 kristaps Exp $ */
+d25 2
+@
+
+
+1.12
+log
+@Added some standards found in NetBSD's manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.11 2009/09/27 17:11:48 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.11
+log
+@Fix typo in st.in (Alan Bueno, alan.bsd@@gmail.com)
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.10 2009/07/26 18:59:31 kristaps Exp $ */
+d40 1
+d50 3
+@
+
+
+1.10
+log
+@POSIX -> POSIX.1 change (submitted by uqs@@sporlein.net, ok jmc@@openbsd.org, ingo@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.9 2009/07/24 13:18:15 kristaps Exp $ */
+d38 1
+a38 1
+LINE("-p1003.1i-95",	"IEEE Std 1003.1i-1995 (\\(lqPOSIX.1\\rq)")
+@
+
+
+1.9
+log
+@Added `St -ieee1275-94'.
+Documented a future `Bd' fixme.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.8 2009/07/24 13:09:45 kristaps Exp $ */
+d27 11
+a37 11
+LINE("-p1003.1-88",	"IEEE Std 1003.1-1988 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1-90",	"IEEE Std 1003.1-1990 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1-96",	"ISO/IEC 9945-1:1996 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1-2001",	"IEEE Std 1003.1-2001 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1-2004",	"IEEE Std 1003.1-2004 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1-2008",	"IEEE Std 1003.1-2008 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1",	"IEEE Std 1003.1 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1b",	"IEEE Std 1003.1b (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1b-93",	"IEEE Std 1003.1b-1993 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1c-95",	"IEEE Std 1003.1c-1995 (\\(lqPOSIX\\(rq)")
+LINE("-p1003.1g-2000",	"IEEE Std 1003.1g-2000 (\\(lqPOSIX\\(rq)")
+@
+
+
+1.8
+log
+@Added `St -isoC'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.7 2009/07/24 13:06:11 kristaps Exp $ */
+d54 1
+@
+
+
+1.7
+log
+@Added `St -xns5.2'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.6 2009/07/11 18:55:37 kristaps Exp $ */
+d43 1
+@
+
+
+1.6
+log
+@Added `.St -p1003.1i-95' (joerg@@netbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.5 2009/04/12 19:45:26 kristaps Exp $ */
+d61 1
+@
+
+
+1.5
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: st.in,v 1.4 2009/04/02 16:37:40 kristaps Exp $ */
+d38 1
+@
+
+
+1.4
+log
+@Added -p1003.1-2008 specification.
+Fixed invalid memory accesses (concat()).
+Made -fign-macro be the default for libman.
+@
+text
+@d1 16
+a16 1
+/* $Id: st.in,v 1.3 2009/03/16 22:19:19 kristaps Exp $ */
+@
+
+
+1.3
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: st.in,v 1.2 2009/03/06 14:24:49 kristaps Exp $ */
+d17 1
+@
+
+
+1.2
+log
+@Documented the strings script.
+@
+text
+@d1 1
+a1 7
+# $Id$
+#
+# This file defines the `.St' macro arguments.  Lines are composed of
+# tab-delimited fields -- multiple tabs may delimit fields.  Comment
+# lines begin with '#'; blank lines are also ok.
+#
+# These were last grok'd from OpenBSD-4.4's mdoc.samples(7).
+d3 46
+a48 37
+-p1003.1-88		IEEE Std 1003.1-1988 (\\\\(lqPOSIX\\\\(rq)
+-p1003.1-90		IEEE Std 1003.1-1990 (\\\\(lqPOSIX\\\\(rq)
+-p1003.1-96		ISO/IEC 9945-1:1996 (\\\\(lqPOSIX\\\\(rq)
+-p1003.1-2001		IEEE Std 1003.1-2001 (\\\\(lqPOSIX\\\\(rq)
+-p1003.1-2004		IEEE Std 1003.1-2004 (\\\\(lqPOSIX\\\\(rq)
+-p1003.1		IEEE Std 1003.1 (\\\\(lqPOSIX\\\\(rq)
+-p1003.1b		IEEE Std 1003.1b (\\\\(lqPOSIX\\\\(rq)
+-p1003.1b-93		IEEE Std 1003.1b-1993 (\\\\(lqPOSIX\\\\(rq)
+-p1003.1c-95		IEEE Std 1003.1c-1995 (\\\\(lqPOSIX\\\\(rq)
+-p1003.1g-2000		IEEE Std 1003.1g-2000 (\\\\(lqPOSIX\\\\(rq)
+-p1003.2-92		IEEE Std 1003.2-1992 (\\\\(lqPOSIX.2\\\\(rq)
+-p1387.2-95		IEEE Std 1387.2-1995 (\\\\(lqPOSIX.7.2\\\\(rq)
+-p1003.2		IEEE Std 1003.2 (\\\\(lqPOSIX.2\\\\(rq)
+-p1387.2		IEEE Std 1387.2 (\\\\(lqPOSIX.7.2\\\\(rq)
+-isoC-90		ISO/IEC 9899:1990 (\\\\(lqISO C90\\\\(rq)
+-isoC-amd1		ISO/IEC 9899/AMD1:1995 (\\\\(lqISO C90\\\\(rq)
+-isoC-tcor1		ISO/IEC 9899/TCOR1:1994 (\\\\(lqISO C90\\\\(rq)
+-isoC-tcor2		ISO/IEC 9899/TCOR2:1995 (\\\\(lqISO C90\\\\(rq)
+-isoC-99		ISO/IEC 9899:1999 (\\\\(lqISO C99\\\\(rq)
+-ansiC			ANSI X3.159-1989 (\\\\(lqANSI C\\\\(rq)
+-ansiC-89		ANSI X3.159-1989 (\\\\(lqANSI C\\\\(rq)
+-ansiC-99		ANSI/ISO/IEC 9899-1999 (\\\\(lqANSI C99\\\\(rq)
+-ieee754		IEEE Std 754-1985
+-iso8802-3		ISO 8802-3: 1989
+-xpg3			X/Open Portability Guide Issue 3 (\\\\(lqXPG3\\\\(rq)
+-xpg4			X/Open Portability Guide Issue 4 (\\\\(lqXPG4\\\\(rq)
+-xpg4.2			X/Open Portability Guide Issue 4.2 (\\\\(lqXPG4.2\\\\(rq)
+-xpg4.3			X/Open Portability Guide Issue 4.3 (\\\\(lqXPG4.3\\\\(rq)
+-xbd5			X/Open System Interface Definitions Issue 5 (\\\\(lqXBD5\\\\(rq)
+-xcu5			X/Open Commands and Utilities Issue 5 (\\\\(lqXCU5\\\\(rq)
+-xsh5			X/Open System Interfaces and Headers Issue 5 (\\\\(lqXSH5\\\\(rq)
+-xns5			X/Open Networking Services Issue 5 (\\\\(lqXNS5\\\\(rq)
+-xns5.2d2.0		X/Open Networking Services Issue 5.2 Draft 2.0 (\\\\(lqXNS5.2D2.0\\\\(rq)
+-xcurses4.2		X/Open Curses Issue 4 Version 2 (\\\\(lqXCURSES4.2\\\\(rq)
+-susv2			Version 2 of the Single UNIX Specification
+-susv3			Version 3 of the Single UNIX Specification
+-svid4			System V Interface Definition, Fourth Edition (\\\\(lqSVID4\\\\(rq)
+@
+
+
+1.1
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 8
+@

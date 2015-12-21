@@ -1,0 +1,51 @@
+head	1.2;
+access;
+symbols
+	VERSION_1_9_5:1.2
+	VERSION_1_8_5:1.2
+	VERSION_1_8_1:1.2
+	VERSION_1_7_16:1.2
+	VERSION_1_7_15:1.2
+	OPENBSD_CHECKIN:1.2
+	VERSION_1_6_5:1.2
+	VERSION_1_5_1:1.2
+	VERSION_1_3_15:1.2
+	VERSION_1_3_6:1.2
+	VERSION_1_2_0:1.2
+	VERSION_1_1_0:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2009.01.16.14.04.26;	author kristaps;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2009.01.08.15.05.50;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Added more validation (parents/msecs).
+Initial function documentation for mdoc.3.
+@
+text
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@a0 1
+TODO.
+@

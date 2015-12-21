@@ -1,0 +1,56 @@
+head	1.2;
+access;
+symbols
+	VERSION_1_13_3:1.1
+	VERSION_1_13_2:1.1
+	VERSION_1_13_1:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.2
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.08.05.12.50.52;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@modernize style: "return" is not a function
+@
+text
+@#include <string.h>
+#include <sqlite3.h>
+
+int
+main(void)
+{
+	return strcmp(sqlite3_errstr(SQLITE_OK), "not an error");
+}
+@
+
+
+1.1
+log
+@Since old SQLite versions do not have sqlite3_errstr(),
+provide a dummy fallback implementation.
+Do not bother to decode the error, SQLite error codes
+are not useful enough for that to be worthwhile.
+Note that using sqlite3_errmsg(db) would be a bad idea:
+On malloc() failure, db is NULL, which would cause a segfault.
+Issue noticed by kristaps@@.
+@
+text
+@d7 1
+a7 1
+	return(strcmp(sqlite3_errstr(SQLITE_OK), "not an error"));
+@

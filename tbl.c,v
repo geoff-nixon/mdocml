@@ -1,0 +1,1701 @@
+head	1.40;
+access;
+symbols
+	VERSION_1_13_3:1.39
+	VERSION_1_13_2:1.30
+	VERSION_1_12_4:1.30
+	VERSION_1_13_1:1.29
+	VERSION_1_12_3:1.27
+	VERSION_1_12_2:1.27
+	VERSION_1_12:1.30.0.2
+	VERSION_1_12_1:1.26
+	VERSION_1_12_0:1.26
+	VERSION_1_11_7:1.26
+	VERSION_1_11_6:1.26
+	VERSION_1_11_5:1.25
+	VERSION_1_11_4:1.25
+	VERSION_1_11_3:1.25
+	VERSION_1_11_2:1.25
+	VERSION_1_11_1:1.24
+	VERSION_1_10_10:1.22
+	VERSION_1_10_9:1.21;
+locks; strict;
+comment	@ * @;
+
+
+1.40
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2015.01.30.17.32.16;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2015.01.30.04.11.50;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2015.01.30.02.09.04;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2015.01.28.17.32.07;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.01.28.15.03.45;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.01.27.05.21.45;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.01.26.00.57.22;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.01.21.00.47.04;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.01.14.22.44.55;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2013.05.31.22.08.09;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2011.07.25.15.37.00;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.04.04.23.04.38;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.03.22.09.48.13;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.01.25.12.24.27;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.01.04.15.02.00;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.01.03.13.59.21;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.01.02.20.34.05;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.01.02.12.04.23;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.01.02.10.10.57;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.01.01.23.00.46;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.01.01.22.19.15;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.01.01.16.10.40;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.01.01.15.45.18;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.01.01.13.37.40;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2010.12.31.18.19.43;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.12.31.14.52.41;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.12.30.09.34.07;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.12.29.16.44.23;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.12.29.14.53.31;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.12.29.14.38.14;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.12.29.01.16.57;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.12.28.13.47.38;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.12.28.13.46.07;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.12.28.10.55.24;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.12.28.10.51.03;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.40
+log
+@modernize style: "return" is not a function
+@
+text
+@/*	$Id: tbl.c,v 1.39 2015/01/30 17:32:16 schwarze Exp $ */
+/*
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2011, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+#include "mandoc.h"
+#include "mandoc_aux.h"
+#include "libmandoc.h"
+#include "libroff.h"
+
+
+enum rofferr
+tbl_read(struct tbl_node *tbl, int ln, const char *p, int pos)
+{
+	const char	*cp;
+	int		 active;
+
+	/*
+	 * In the options section, proceed to the layout section
+	 * after a semicolon, or right away if there is no semicolon.
+	 * Ignore semicolons in arguments.
+	 */
+
+	if (tbl->part == TBL_PART_OPTS) {
+		tbl->part = TBL_PART_LAYOUT;
+		active = 1;
+		for (cp = p + pos; *cp != '\0'; cp++) {
+			switch (*cp) {
+			case '(':
+				active = 0;
+				continue;
+			case ')':
+				active = 1;
+				continue;
+			case ';':
+				if (active)
+					break;
+				continue;
+			default:
+				continue;
+			}
+			break;
+		}
+		if (*cp == ';') {
+			tbl_option(tbl, ln, p, &pos);
+			if (p[pos] == '\0')
+				return ROFF_IGN;
+		}
+	}
+
+	/* Process the other section types.  */
+
+	switch (tbl->part) {
+	case TBL_PART_LAYOUT:
+		tbl_layout(tbl, ln, p, pos);
+		return ROFF_IGN;
+	case TBL_PART_CDATA:
+		return tbl_cdata(tbl, ln, p, pos) ? ROFF_TBL : ROFF_IGN;
+	default:
+		break;
+	}
+
+	tbl_data(tbl, ln, p, pos);
+	return ROFF_TBL;
+}
+
+struct tbl_node *
+tbl_alloc(int pos, int line, struct mparse *parse)
+{
+	struct tbl_node	*tbl;
+
+	tbl = mandoc_calloc(1, sizeof(*tbl));
+	tbl->line = line;
+	tbl->pos = pos;
+	tbl->parse = parse;
+	tbl->part = TBL_PART_OPTS;
+	tbl->opts.tab = '\t';
+	tbl->opts.decimal = '.';
+	return tbl;
+}
+
+void
+tbl_free(struct tbl_node *tbl)
+{
+	struct tbl_row	*rp;
+	struct tbl_cell	*cp;
+	struct tbl_span	*sp;
+	struct tbl_dat	*dp;
+
+	while ((rp = tbl->first_row) != NULL) {
+		tbl->first_row = rp->next;
+		while (rp->first != NULL) {
+			cp = rp->first;
+			rp->first = cp->next;
+			free(cp);
+		}
+		free(rp);
+	}
+
+	while ((sp = tbl->first_span) != NULL) {
+		tbl->first_span = sp->next;
+		while (sp->first != NULL) {
+			dp = sp->first;
+			sp->first = dp->next;
+			free(dp->string);
+			free(dp);
+		}
+		free(sp);
+	}
+
+	free(tbl);
+}
+
+void
+tbl_restart(int line, int pos, struct tbl_node *tbl)
+{
+	if (tbl->part == TBL_PART_CDATA)
+		mandoc_msg(MANDOCERR_TBLDATA_BLK, tbl->parse,
+		    line, pos, "T&");
+
+	tbl->part = TBL_PART_LAYOUT;
+	tbl->line = line;
+	tbl->pos = pos;
+}
+
+const struct tbl_span *
+tbl_span(struct tbl_node *tbl)
+{
+	struct tbl_span	 *span;
+
+	assert(tbl);
+	span = tbl->current_span ? tbl->current_span->next
+				 : tbl->first_span;
+	if (span)
+		tbl->current_span = span;
+	return span;
+}
+
+int
+tbl_end(struct tbl_node **tblp)
+{
+	struct tbl_node	*tbl;
+	struct tbl_span *sp;
+
+	tbl = *tblp;
+	*tblp = NULL;
+
+	if (tbl->part == TBL_PART_CDATA)
+		mandoc_msg(MANDOCERR_TBLDATA_BLK, tbl->parse,
+		    tbl->line, tbl->pos, "TE");
+
+	sp = tbl->first_span;
+	while (sp != NULL && sp->first == NULL)
+		sp = sp->next;
+	if (sp == NULL) {
+		mandoc_msg(MANDOCERR_TBLDATA_NONE, tbl->parse,
+		    tbl->line, tbl->pos, NULL);
+		return 0;
+	}
+	return 1;
+}
+@
+
+
+1.39
+log
+@Delete the redundant tbl span flags, just inspect the actual data
+where needed, which is less fragile.
+This fixes a subtle NULL pointer access to tp->tbl.cols:
+Due to a bug in the man(7) parser, the first span of a table can
+end up in a .TP head, in which case tblcalc() was never called.
+Found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.38 2015/01/30 04:11:50 schwarze Exp $ */
+d69 1
+a69 1
+				return(ROFF_IGN);
+d78 1
+a78 1
+		return(ROFF_IGN);
+d80 1
+a80 1
+		return(tbl_cdata(tbl, ln, p, pos) ? ROFF_TBL : ROFF_IGN);
+d86 1
+a86 1
+	return(ROFF_TBL);
+d101 1
+a101 1
+	return(tbl);
+d158 1
+a158 1
+	return(span);
+d180 1
+a180 1
+		return(0);
+d182 1
+a182 1
+	return(1);
+@
+
+
+1.38
+log
+@Abolish struct tbl_head and replace it by an "int col" member in
+struct tbl_cell.  No functional change, minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.37 2015/01/30 02:09:04 schwarze Exp $ */
+a181 4
+
+	if (tbl->last_span != NULL)
+		tbl->last_span->flags |= TBL_SPAN_LAST;
+
+@
+
+
+1.37
+log
+@Auditing the tbl(7) code for more NULL pointer accesses, i came out
+empty-handed; so this is just KNF and some code simplifications,
+no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.36 2015/01/28 17:32:07 schwarze Exp $ */
+a110 1
+	struct tbl_head	*hp;
+a132 5
+	while ((hp = tbl->first_head) != NULL) {
+		tbl->first_head = hp->next;
+		free(hp);
+	}
+
+@
+
+
+1.36
+log
+@* Polish tbl(7) error reporting.
+* Do not print out macro names in tbl(7) data blocks.
+* Like with GNU tbl, let empty tables cause a blank line.
+* Avoid producing empty tables in -Tman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.35 2015/01/28 15:03:45 schwarze Exp $ */
+d94 1
+a94 1
+	tbl = mandoc_calloc(1, sizeof(struct tbl_node));
+d113 1
+a113 1
+	while (NULL != (rp = tbl->first_row)) {
+d115 1
+a115 1
+		while (rp->first) {
+d123 1
+a123 1
+	while (NULL != (sp = tbl->first_span)) {
+d125 1
+a125 1
+		while (sp->first) {
+d128 1
+a128 2
+			if (dp->string)
+				free(dp->string);
+d134 1
+a134 1
+	while (NULL != (hp = tbl->first_head)) {
+@
+
+
+1.35
+log
+@For now, it can't be helped that mandoc tbl(7) ignores high-level macros,
+but stop throwing away their arguments.  This fixes information loss in a
+handful of Xenocara manuals, at the price of a small amount of formatting
+noise creeping through.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.34 2015/01/27 05:21:45 schwarze Exp $ */
+d146 3
+a148 3
+	if (TBL_PART_CDATA == tbl->part)
+		mandoc_msg(MANDOCERR_TBLBLOCK, tbl->parse,
+		    tbl->line, tbl->pos, NULL);
+a152 4
+
+	if (NULL == tbl->first_span || NULL == tbl->first_span->first)
+		mandoc_msg(MANDOCERR_TBLNODATA, tbl->parse,
+		    tbl->line, tbl->pos, NULL);
+d168 1
+a168 1
+void
+d177 4
+d184 2
+a185 2
+	if (sp == NULL)
+		mandoc_msg(MANDOCERR_TBLNODATA, tbl->parse,
+d187 2
+d190 1
+a190 1
+	if (tbl->last_span)
+d193 1
+a193 3
+	if (TBL_PART_CDATA == tbl->part)
+		mandoc_msg(MANDOCERR_TBLBLOCK, tbl->parse,
+		    tbl->line, tbl->pos, NULL);
+@
+
+
+1.34
+log
+@Multiple parser and formatter fixes for line drawing in tbl(7).
+* Allow mixing vertical line bars with the layout options
+of the preceding layout cell.
+* Correctly combine box options with layout lines.
+* Correctly print vertical lines in data rows, with the right spacing.
+* Correctly print cross markers and left and right ends of
+horizontal lines even if vertical lines differ above and below.
+* Avoid the bogus error message "no table data cells"
+when a table data section starts with a horizontal line.
+No increase in code size.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.33 2015/01/26 00:57:22 schwarze Exp $ */
+d35 1
+a35 1
+tbl_read(struct tbl_node *tbl, int ln, const char *p, int offs)
+d49 1
+a49 1
+		for (cp = p; *cp != '\0'; cp++) {
+d67 2
+a68 2
+			tbl_option(tbl, ln, p);
+			if (*(p = cp + 1) == '\0')
+d77 1
+a77 1
+		tbl_layout(tbl, ln, p);
+d80 1
+a80 1
+		return(tbl_cdata(tbl, ln, p) ? ROFF_TBL : ROFF_IGN);
+d85 1
+a85 1
+	tbl_data(tbl, ln, p);
+@
+
+
+1.33
+log
+@Improve (or rather, rewrite) tbl(7) option parsing.
+* Allow the layout to start after the semicolon on the options line.
+* Ignore leading commas.
+* Option arguments cannot contain closing parentheses.
+* Avoid needless UNSUPP messages.
+* Better ERROR reporting.
+* Delete unused "linesize" field in struct tbl_opts.
+* No need for static buffers.
+* Garbage collect one almost empty wrapper function.
+Improved functionality, but minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.32 2015/01/21 00:47:04 schwarze Exp $ */
+d176 1
+d181 4
+a184 1
+	if (NULL == tbl->first_span || NULL == tbl->first_span->first)
+@
+
+
+1.32
+log
+@blank lines in tables do not need special handling; simplifies code
+and reduces groff/mandoc differences in OpenBSD base by about 1%
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.31 2015/01/14 22:44:55 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+a36 1
+	int		 len;
+d38 1
+a38 3
+
+	cp = &p[offs];
+	len = (int)strlen(cp);
+d41 3
+a43 4
+	 * If we're in the options section and we don't have a
+	 * terminating semicolon, assume we've moved directly into the
+	 * layout section.  No need to report a warning: this is,
+	 * apparently, standard behaviour.
+d46 26
+a71 3
+	if (TBL_PART_OPTS == tbl->part && len)
+		if (';' != cp[len - 1])
+			tbl->part = TBL_PART_LAYOUT;
+d73 1
+a73 1
+	/* Now process each logical section of the table.  */
+a75 3
+	case TBL_PART_OPTS:
+		tbl_option(tbl, ln, p);
+		return(ROFF_IGN);
+a99 1
+	tbl->opts.linesize = 12;
+@
+
+
+1.31
+log
+@simplify by getting rid of ROFF_ERR in tbl(7) parsing; no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.30 2014/08/10 23:54:41 schwarze Exp $ */
+d69 2
+a70 5
+	/*
+	 * This only returns zero if the line is empty, so we ignore it
+	 * and continue on.
+	 */
+	return(tbl_data(tbl, ln, p) ? ROFF_TBL : ROFF_IGN);
+@
+
+
+1.30
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.29 2014/04/20 16:46:05 schwarze Exp $ */
+d58 2
+a59 1
+		return(tbl_option(tbl, ln, p) ? ROFF_IGN : ROFF_ERR);
+d61 2
+a62 1
+		return(tbl_layout(tbl, ln, p) ? ROFF_IGN : ROFF_ERR);
+@
+
+
+1.29
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.28 2014/03/23 11:25:26 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+d19 2
+a20 1
+#endif
+@
+
+
+1.28
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.27 2013/05/31 22:08:09 schwarze Exp $ */
+d33 1
+d57 1
+a57 1
+	case (TBL_PART_OPTS):
+d59 1
+a59 1
+	case (TBL_PART_LAYOUT):
+d61 1
+a61 1
+	case (TBL_PART_CDATA):
+d133 2
+a134 2
+		mandoc_msg(MANDOCERR_TBLBLOCK, tbl->parse, 
+				tbl->line, tbl->pos, NULL);
+d142 1
+a142 1
+				tbl->line, tbl->pos, NULL);
+d167 2
+a168 2
+		mandoc_msg(MANDOCERR_TBLNODATA, tbl->parse, 
+				tbl->line, tbl->pos, NULL);
+d174 2
+a175 2
+		mandoc_msg(MANDOCERR_TBLBLOCK, tbl->parse, 
+				tbl->line, tbl->pos, NULL);
+a176 1
+
+@
+
+
+1.27
+log
+@More cleanup: Consistently use the name "struct tbl_node *tbl"
+that is already used almost everywhere instead of gratuitiously
+inventing different names at four places.  No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.26 2011/07/25 15:37:00 kristaps Exp $ */
+d29 1
+@
+
+
+1.26
+log
+@Implement the first steps of equation parsing from within libmdoc.
+This consists of a shim around the text parser that calls out to libroff
+if equation components exist on the line.  Right now this will do
+nothing, as the equation delimiter always returns nil.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.25 2011/04/04 23:04:38 kristaps Exp $ */
+d75 1
+a75 1
+	struct tbl_node	*p;
+d77 9
+a85 9
+	p = mandoc_calloc(1, sizeof(struct tbl_node));
+	p->line = line;
+	p->pos = pos;
+	p->parse = parse;
+	p->part = TBL_PART_OPTS;
+	p->opts.tab = '\t';
+	p->opts.linesize = 12;
+	p->opts.decimal = '.';
+	return(p);
+d89 1
+a89 1
+tbl_free(struct tbl_node *p)
+d97 2
+a98 2
+	while (NULL != (rp = p->first_row)) {
+		p->first_row = rp->next;
+d107 2
+a108 2
+	while (NULL != (sp = p->first_span)) {
+		p->first_span = sp->next;
+d119 2
+a120 2
+	while (NULL != (hp = p->first_head)) {
+		p->first_head = hp->next;
+d124 1
+a124 1
+	free(p);
+@
+
+
+1.25
+log
+@Add config.h Glue for OpenIndiana (and older OpenSolaris) to build.
+From a patch by Yuri Pankov, thanks!
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.24 2011/03/22 09:48:13 kristaps Exp $ */
+d157 1
+a157 1
+tbl_end(struct tbl_node *tbl)
+d159 4
+@
+
+
+1.24
+log
+@Step 1 of restructuring: libmandoc.h.  Move all compiler-set-specific
+stuff into libmandoc.h, including old mdoc.h/man.h/roff.h functions now
+used by read.c.  The motivation behind this is to tighten the
+relationship between the underlying compilers while keeping parse data
+hidden from general callers (e.g., main.c).
+
+While here, also move register values from mandoc.h into libmandoc.h as
+noted by schwarze@@.  See above for explanation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.23 2011/03/20 16:02:05 kristaps Exp $ */
+d18 4
+@
+
+
+1.23
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.22 2011/01/25 12:24:27 schwarze Exp $ */
+a24 1
+#include "roff.h"
+@
+
+
+1.22
+log
+@Since tbl_data() can now produce multiple spans, let parsebuf()
+generate man(7) or mdoc(7) nodes for all these spans,
+not only for the last one.
+Restores the horizontal lines in the cpu(4/hppa) tables.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.21 2011/01/04 15:02:00 kristaps Exp $ */
+d70 1
+a70 1
+tbl_alloc(int pos, int line, void *data, const mandocmsg msg)
+d77 1
+a77 2
+	p->data = data;
+	p->msg = msg;
+d128 2
+a129 1
+		TBL_MSG(tbl, MANDOCERR_TBLBLOCK, tbl->line, tbl->pos);
+d136 2
+a137 1
+		TBL_MSG(tbl, MANDOCERR_TBLNODATA, tbl->line, tbl->pos);
+d158 2
+a159 1
+		TBL_MSG(tbl, MANDOCERR_TBLNODATA, tbl->line, tbl->pos);
+d165 2
+a166 1
+		TBL_MSG(tbl, MANDOCERR_TBLBLOCK, tbl->line, tbl->pos);
+@
+
+
+1.21
+log
+@Support `T{' and `T}' data blocks.  When a standalone `T{' is
+encountered as a line's last data cell, move into TBL_PART_CDATA mode
+whilst leaving the cell's designation as TBL_DATA_NONE.  When new data
+arrives that's not a standalone `T}', append it to the cell contends.
+Close out and warn appropriately.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.20 2011/01/03 13:59:21 kristaps Exp $ */
+d3 2
+a4 1
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+d140 1
+a140 1
+tbl_span(const struct tbl_node *tbl)
+d142 1
+d145 5
+a149 1
+	return(tbl->last_span);
+@
+
+
+1.20
+log
+@Make width calculations occur within tbl_term.c, not tbl.c.  This allows
+for front-ends to make decisions about widths, not the back-end.
+
+To pull this off, first make each tbl_head contain a unique index value
+(0 <= index < total tbl_head elements) and remove the tbl_calc() routine
+from the back-end.
+
+Then, when encountering the first tbl_span in the front-end, dynamically
+create an array of configurations (termp_tbl) keyed on each tbl_head's
+unique index value.  Construct the decimals and widths at this time,
+then continue parsing as before.
+
+The termp_tbl and indexes are required because we pass a const tbl AST
+into the front-end.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.19 2011/01/02 20:34:05 kristaps Exp $ */
+d55 3
+a57 1
+	case (TBL_PART_DATA):
+d127 2
+d155 3
+@
+
+
+1.19
+log
+@Fix table to print nicely (merging error).  Also have -Ttree push out some
+header stuff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.18 2011/01/02 12:04:23 kristaps Exp $ */
+a27 6
+static	void	 tbl_calc(struct tbl_node *);
+static	void	 tbl_calc_data(struct tbl_node *, struct tbl_dat *);
+static	void	 tbl_calc_data_literal(struct tbl_dat *);
+static	void	 tbl_calc_data_number(struct tbl_node *, struct tbl_dat *);
+static	void	 tbl_calc_data_spanner(struct tbl_dat *);
+
+a147 2
+	else
+		tbl_calc(tbl);
+a152 152
+static void
+tbl_calc(struct tbl_node *tbl)
+{
+	struct tbl_span	*sp;
+	struct tbl_dat	*dp;
+	struct tbl_head	*hp;
+
+	/* Calculate width as the max of column cells' widths. */
+
+	for (sp = tbl->first_span; sp; sp = sp->next) {
+		switch (sp->pos) {
+		case (TBL_DATA_HORIZ):
+			/* FALLTHROUGH */
+		case (TBL_DATA_DHORIZ):
+			continue;
+		default:
+			break;
+		}
+		for (dp = sp->first; dp; dp = dp->next)
+			tbl_calc_data(tbl, dp);
+	}
+
+	/* Calculate width as the simple spanner value. */
+
+	for (hp = tbl->first_head; hp; hp = hp->next) 
+		switch (hp->pos) {
+		case (TBL_HEAD_VERT):
+			hp->width = 1;
+			break;
+		case (TBL_HEAD_DVERT):
+			hp->width = 2;
+			break;
+		default:
+			break;
+		}
+}
+
+static void
+tbl_calc_data(struct tbl_node *tbl, struct tbl_dat *data)
+{
+
+	if (NULL == data->layout)
+		return;
+
+	/* Branch down into data sub-types. */
+
+	switch (data->layout->pos) {
+	case (TBL_CELL_HORIZ):
+		/* FALLTHROUGH */
+	case (TBL_CELL_DHORIZ):
+		tbl_calc_data_spanner(data);
+		break;
+	case (TBL_CELL_LONG):
+		/* FALLTHROUGH */
+	case (TBL_CELL_CENTRE):
+		/* FALLTHROUGH */
+	case (TBL_CELL_LEFT):
+		/* FALLTHROUGH */
+	case (TBL_CELL_RIGHT):
+		tbl_calc_data_literal(data);
+		break;
+	case (TBL_CELL_NUMBER):
+		tbl_calc_data_number(tbl, data);
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+}
+
+static void
+tbl_calc_data_spanner(struct tbl_dat *data)
+{
+
+	/* N.B., these are horiz spanners (not vert) so always 1. */
+	data->layout->head->width = 1;
+}
+
+static void
+tbl_calc_data_number(struct tbl_node *tbl, struct tbl_dat *data)
+{
+	int 		 sz, d;
+	char		*dp, pnt;
+
+	/*
+	 * First calculate number width and decimal place (last + 1 for
+	 * no-decimal numbers).  If the stored decimal is subsequent
+	 * ours, make our size longer by that difference
+	 * (right-"shifting"); similarly, if ours is subsequent the
+	 * stored, then extend the stored size by the difference.
+	 * Finally, re-assign the stored values.
+	 */
+
+	/* TODO: use spacing modifier. */
+
+	assert(data->string);
+	sz = (int)strlen(data->string);
+	pnt = tbl->opts.decimal;
+
+	if (NULL == (dp = strchr(data->string, pnt)))
+		d = sz + 1;
+	else
+		d = (int)(dp - data->string) + 1;
+
+	sz += 2;
+
+	if (data->layout->head->decimal > d) {
+		sz += data->layout->head->decimal - d;
+		d = data->layout->head->decimal;
+	} else
+		data->layout->head->width += 
+			d - data->layout->head->decimal;
+
+	if (sz > data->layout->head->width)
+		data->layout->head->width = sz;
+	if (d > data->layout->head->decimal)
+		data->layout->head->decimal = d;
+}
+
+static void
+tbl_calc_data_literal(struct tbl_dat *data)
+{
+	int		 sz, bufsz;
+
+	/* 
+	 * Calculate our width and use the spacing, with a minimum
+	 * spacing dictated by position (centre, e.g,. gets a space on
+	 * either side, while right/left get a single adjacent space).
+	 */
+
+	assert(data->string);
+	sz = (int)strlen(data->string);
+
+	switch (data->layout->pos) {
+	case (TBL_CELL_LONG):
+		/* FALLTHROUGH */
+	case (TBL_CELL_CENTRE):
+		bufsz = 2;
+		break;
+	default:
+		bufsz = 1;
+		break;
+	}
+
+	if (data->layout->spacing)
+		bufsz = bufsz > data->layout->spacing ? 
+			bufsz : data->layout->spacing;
+
+	sz += bufsz;
+	if (data->layout->head->width < sz)
+		data->layout->head->width = sz;
+}
+@
+
+
+1.18
+log
+@Add some final bits necessary in the upcoming -Tascii tbl stuff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.17 2011/01/02 10:10:57 kristaps Exp $ */
+a201 3
+	/*
+	 * This is the case with overrunning cells... 
+	 */
+a312 2
+
+
+@
+
+
+1.17
+log
+@Churn to get parts of 'struct tbl' visible from mandoc.h: rename the
+existing 'struct tbl' as 'struct tbl_node', then move all option stuff
+into a 'struct tbl' in mandoc.h.
+
+This conflicted with a structure in chars.c, which was renamed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.16 2011/01/01 23:00:46 kristaps Exp $ */
+d156 3
+@
+
+
+1.16
+log
+@Merge in the width, decimal, and positioning code for individual data rows
+from tbl.bsd.lv.  This is more or less verbatim, less queue macros and also
+a check for NULL layout.
+
+This concludes the back-end parsing for a little while, as the front-end
+display may now be configured.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.15 2011/01/01 22:19:15 kristaps Exp $ */
+d28 2
+a29 2
+static	void	 tbl_calc(struct tbl *);
+static	void	 tbl_calc_data(struct tbl *, struct tbl_dat *);
+d31 1
+a31 1
+static	void	 tbl_calc_data_number(struct tbl *, struct tbl_dat *);
+d35 1
+a35 1
+tbl_read(struct tbl *tbl, int ln, const char *p, int offs)
+d72 1
+a72 1
+struct tbl *
+d75 1
+a75 1
+	struct tbl	*p;
+d77 1
+a77 1
+	p = mandoc_calloc(1, sizeof(struct tbl));
+d83 3
+a85 3
+	p->tab = '\t';
+	p->linesize = 12;
+	p->decimal = '.';
+d90 1
+a90 1
+tbl_free(struct tbl *p)
+d129 1
+a129 1
+tbl_restart(int line, int pos, struct tbl *tbl)
+d141 1
+a141 1
+tbl_span(const struct tbl *tbl)
+d149 1
+a149 1
+tbl_end(struct tbl *tbl)
+d159 1
+a159 1
+tbl_calc(struct tbl *tbl)
+d196 1
+a196 1
+tbl_calc_data(struct tbl *tbl, struct tbl_dat *data)
+d240 1
+a240 1
+tbl_calc_data_number(struct tbl *tbl, struct tbl_dat *data)
+d258 1
+a258 1
+	pnt = tbl->decimal;
+@
+
+
+1.15
+log
+@Plug in the "head" concept for tables.  A tbl_head specifies the full
+layout for each row, including vertical spacers.  One grabs the tbl_head
+for a row and iterates through each entry, plugging data from the
+tbl_span into the header as appropriate.
+
+This is pulled in more or less verbatim from tbl.bsd.lv.  In fact, this
+is verbatim except that lists macros are made into hard-coded lists (for
+compatibility, as long-ago noted by joerg@@).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.14 2011/01/01 16:10:40 kristaps Exp $ */
+d28 6
+d154 124
+d280 35
+@
+
+
+1.14
+log
+@Raise an error if a table is closed without data.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.13 2011/01/01 15:45:18 kristaps Exp $ */
+d90 1
+d92 1
+a92 2
+	while (p->first_row) {
+		rp = p->first_row;
+d102 1
+a102 2
+	while (p->first_span) {
+		sp = p->first_span;
+d114 5
+@
+
+
+1.13
+log
+@Add documentation bits for libroff's new roff_span().
+
+Add bits to remember tbl's invocation point.
+
+Add ERROR class message if no data's in the table.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.12 2011/01/01 13:37:40 kristaps Exp $ */
+d119 1
+a119 1
+tbl_restart(struct tbl *tbl)
+d123 5
+d145 1
+@
+
+
+1.12
+log
+@Switch on tbl rows being added to the parse stream.  Here we go!
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.11 2010/12/31 18:19:43 kristaps Exp $ */
+d67 1
+a67 1
+tbl_alloc(void *data, const mandocmsg msg)
+d72 2
+d132 8
+@
+
+
+1.11
+log
+@Expose the parsed table API to the world and add accessors through the
+roff.h interface.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.10 2010/12/31 14:52:41 kristaps Exp $ */
+d59 3
+a61 3
+	/* 
+	 * FIXME: allow the original string to slip through for the time
+	 * being. 
+d63 1
+a63 1
+	return(tbl_data(tbl, ln, p) ? ROFF_CONT : ROFF_ERR);
+@
+
+
+1.10
+log
+@Put parsed tables into a queue that's cleared at the end of parsing.
+This completes the parsing phase of the new tbl implementation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.9 2010/12/30 09:34:07 kristaps Exp $ */
+d123 7
+@
+
+
+1.9
+log
+@Move clean-up of parsed tbl nodes into the tbl_clear() function, called
+once per invocation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.8 2010/12/29 16:44:23 kristaps Exp $ */
+a27 50
+static	void		 tbl_init(struct tbl *);
+static	void		 tbl_clear(struct tbl *);
+
+static void
+tbl_clear(struct tbl *tbl)
+{
+	struct tbl_row	*rp;
+	struct tbl_cell	*cp;
+	struct tbl_span	*sp;
+	struct tbl_dat	*dp;
+
+	while (tbl->first_row) {
+		rp = tbl->first_row;
+		tbl->first_row = rp->next;
+		while (rp->first) {
+			cp = rp->first;
+			rp->first = cp->next;
+			free(cp);
+		}
+		free(rp);
+	}
+
+	tbl->last_row = NULL;
+
+	while (tbl->first_span) {
+		sp = tbl->first_span;
+		tbl->first_span = sp->next;
+		while (sp->first) {
+			dp = sp->first;
+			sp->first = dp->next;
+			if (dp->string)
+				free(dp->string);
+			free(dp);
+		}
+		free(sp);
+	}
+
+	tbl->last_span = NULL;
+}
+
+static void
+tbl_init(struct tbl *tbl)
+{
+
+	tbl->part = TBL_PART_OPTS;
+	tbl->tab = '\t';
+	tbl->linesize = 12;
+	tbl->decimal = '.';
+}
+
+d74 4
+a77 1
+	tbl_init(p);
+d84 4
+d89 10
+a98 3
+	tbl_clear(p);
+	free(p);
+}
+d100 12
+a111 3
+void
+tbl_reset(struct tbl *tbl)
+{
+d113 1
+a113 2
+	tbl_clear(tbl);
+	tbl_init(tbl);
+@
+
+
+1.8
+log
+@Initial check-in of table data-row processing.  For the time being, this
+parses table data then throws it away immediately.  It does not yet try
+to cross-check data rows against layout or anything.  This copied more
+or less completely from tbl.bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.7 2010/12/29 14:53:31 kristaps Exp $ */
+d36 2
+d39 3
+a41 3
+	while (tbl->first) {
+		rp = tbl->first;
+		tbl->first = rp->next;
+d50 16
+a65 1
+	tbl->last = NULL;
+a82 2
+	struct tbl_dat	*dp;
+	struct tbl_span	*sp;
+d109 5
+a113 12
+	/* XXX: throw away data for now. */
+	if (NULL != (sp = tbl_data(tbl, ln, p))) {
+		while (NULL != (dp = sp->first)) {
+			sp->first = sp->first->next;
+			if (dp->string)
+				free(dp->string);
+			free(dp);
+		}
+		free(sp);
+	}
+	
+	return(ROFF_CONT);
+a147 1
+	tbl_clear(tbl);
+@
+
+
+1.7
+log
+@Add handling for `T&', which restarts a table except for its options.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.6 2010/12/29 14:38:14 kristaps Exp $ */
+d66 2
+d90 1
+a90 1
+	default:
+d93 11
+@
+
+
+1.6
+log
+@Merge, with considerable changes, tbl.bsd.lv's layout-handling code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.5 2010/12/29 01:16:57 kristaps Exp $ */
+d123 8
+@
+
+
+1.5
+log
+@Significant update to options handling, which now departs almost
+completely with the BSD.lv code due to performance issues and flat-out
+errors.
+
+Performance issues: functions called per character.  Ugly.
+
+Flat-out errors: disallowing "reserved" tokens as arguments to those
+options accepting arguments.
+
+Also added are two mandoc.h error codes for general tbl syntax errors
+and for bad options.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.4 2010/12/28 13:47:38 kristaps Exp $ */
+d34 2
+d37 12
+d86 2
+d100 1
+a100 1
+	p = mandoc_malloc(sizeof(struct tbl));
+@
+
+
+1.4
+log
+@Fix copyright email.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.3 2010/12/28 13:46:07 kristaps Exp $ */
+a27 5
+static	const char	 tbl_toks[TBL_TOK__MAX] = {
+	'(',	')',	',',	';',	'.',
+	' ',	'\t',	'\0'
+};
+
+a29 1
+static	enum tbl_tok	 tbl_next_char(char);
+d42 3
+d56 8
+a63 1
+	if (len && TBL_PART_OPTS == tbl->part)
+d66 9
+d80 1
+a80 1
+tbl_alloc(void)
+d85 2
+a106 54
+static enum tbl_tok
+tbl_next_char(char c)
+{
+	int		 i;
+
+	/*
+	 * These are delimiting tokens.  They separate out words in the
+	 * token stream.
+	 *
+	 * FIXME: make this into a hashtable for faster lookup.
+	 */
+	for (i = 0; i < TBL_TOK__MAX; i++)
+		if (c == tbl_toks[i])
+			return((enum tbl_tok)i);
+
+	return(TBL_TOK__MAX);
+}
+
+enum tbl_tok
+tbl_next(struct tbl *tbl, const char *p, int *pos)
+{
+	int		 i;
+	enum tbl_tok	 c;
+
+	tbl->buf[0] = '\0';
+
+	if (TBL_TOK__MAX != (c = tbl_next_char(p[*pos]))) {
+		if (TBL_TOK_NIL != c) {
+			tbl->buf[0] = p[*pos];
+			tbl->buf[1] = '\0';
+			(*pos)++;
+		}
+		return(c);
+	}
+
+	/*
+	 * Copy words into a nil-terminated buffer.  For now, we use a
+	 * static buffer.  FIXME: eventually this should be made into a
+	 * dynamic one living in struct tbl.
+	 */
+
+	for (i = 0; i < BUFSIZ; i++, (*pos)++)
+		if (TBL_TOK__MAX == tbl_next_char(p[*pos]))
+			tbl->buf[i] = p[*pos];
+		else
+			break;
+
+	assert(i < BUFSIZ);
+	tbl->buf[i] = '\0';
+
+	return(TBL_TOK__MAX);
+}
+
+
+@
+
+
+1.3
+log
+@Adding initial options processing (not hooked into parse yet).  This is
+more or less copied from tbl.bsd.lv and still needs integration with the
+general mandoc framework, e.g., with error messages.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.2 2010/12/28 10:55:24 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.2
+log
+@Fixed enum rofferr return value in tbl_read() (oops).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.1 2010/12/28 10:51:03 kristaps Exp $ */
+d18 1
+d28 3
+a30 9
+enum	tbl_part {
+	TBL_PART_OPTS, /* in options (first line) */
+	TBL_PART_LAYOUT, /* describing layout */
+	TBL_PART_DATA  /* creating data rows */
+};
+
+
+struct	tbl {
+	enum tbl_part	 part;
+d35 1
+d91 55
+@
+
+
+1.1
+log
+@Initial tbl framework.  Parse point is in libroff, which keeps a
+reference to a current tbl parse and routes ALL text into the tbl parse
+after stripping reserved words and making block-level pre-processing
+(e.g., `ig').  This is consistent with an analysis of embedded `TS/TE'
+in manuals with sprinkled -mdoc, roff, and -man macros.
+
+Fact of a parse is exposed to main.c by a return value (ROFF_TBL), which
+will trigger main.c to add a foreign parsed body to the -mdoc or -man
+parse stream.  This interface isn't in yet, but will follow the
+parse-text functions in both libraries.  I put this login in main.c
+because I don't want libroff calling directly into libmdoc or libman.
+
+As a consequence, a parsed row can be pushed directly into any -mdoc or
+-man context (put a `Bd -literal -offset indent' into a `TE/TS' block to
+see why this is necessary).  It will then absorb formatting cues in the
+front-ends.
+
+A note on naming.  I decided on libroff.h instead of tbl.h because this
+is purely within the roff layer.  Separate tbl implementations will
+need, then, to interface with libroff.  This is "how it should be"
+because tbl is tightly linked with roff in terms of `ds' and other
+formatting macros, as well as, of course, special characters and other
+roffisms.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.c,v 1.14 2009/09/12 16:05:34 kristaps Exp $ */
+d67 1
+a67 1
+	return(1);
+@

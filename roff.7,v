@@ -1,0 +1,5102 @@
+head	1.75;
+access;
+symbols
+	VERSION_1_13_3:1.70
+	VERSION_1_13_2:1.60
+	VERSION_1_12_4:1.57
+	VERSION_1_13_1:1.55
+	VERSION_1_12_3:1.46
+	VERSION_1_12_2:1.42
+	VERSION_1_12:1.57.0.2
+	VERSION_1_12_1:1.37
+	VERSION_1_12_0:1.33
+	VERSION_1_11_7:1.32
+	VERSION_1_11_6:1.30
+	VERSION_1_11_5:1.29
+	VERSION_1_11_4:1.29
+	VERSION_1_11_3:1.29
+	VERSION_1_11_2:1.28
+	VERSION_1_11_1:1.27
+	VERSION_1_10_10:1.27
+	VERSION_1_10_9:1.23
+	VERSION_1_10_8:1.17
+	VERSION_1_10_7:1.15
+	VERSION_1_10_6:1.14
+	VERSION_1_10_5:1.14
+	VERSION_1_10_5_PREPDF:1.13
+	VERSION_1_10_4:1.13
+	VERSION_1_10_3:1.11
+	VERSION_1_10_2:1.9
+	VERSION_1_10_1:1.8;
+locks; strict;
+comment	@# @;
+
+
+1.75
+date	2015.09.24.18.41.22;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2015.08.29.22.40.05;	author schwarze;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2015.08.29.21.37.20;	author schwarze;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2015.05.31.23.13.22;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2015.04.29.18.35.00;	author schwarze;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2015.02.17.17.16.52;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2015.01.29.00.33.57;	author schwarze;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2015.01.23.20.18.40;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2015.01.23.00.42.00;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2015.01.22.00.09.03;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2015.01.21.20.33.25;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2015.01.20.22.45.07;	author schwarze;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2015.01.20.21.16.51;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2015.01.20.19.39.34;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2014.12.25.17.23.32;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2014.12.02.10.08.06;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2014.11.19.01.20.25;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2014.09.07.00.21.53;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2014.08.14.20.27.45;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2014.08.13.20.34.29;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2014.07.07.11.35.06;	author schwarze;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2014.04.08.01.37.27;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2014.04.07.15.07.13;	author schwarze;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2014.04.05.20.34.57;	author schwarze;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2014.03.30.21.28.01;	author schwarze;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2014.03.17.06.57.48;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2014.03.08.04.43.54;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2014.02.14.23.50.57;	author schwarze;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2013.12.26.02.43.18;	author schwarze;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2013.12.15.21.23.52;	author schwarze;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2013.10.22.20.38.00;	author schwarze;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2013.10.14.01.43.14;	author schwarze;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2013.08.08.20.07.47;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2013.04.28.07.54.01;	author schwarze;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2012.06.12.20.21.04;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2012.06.12.19.50.50;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2011.12.11.00.38.11;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2011.11.23.02.12.24;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2011.11.21.22.19.23;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2011.11.06.14.43.14;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2011.09.26.23.07.31;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2011.09.02.19.37.35;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2011.08.18.08.58.44;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2011.07.28.14.17.11;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2011.05.24.15.22.14;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2011.04.30.10.18.25;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2011.02.09.10.03.02;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2011.01.25.01.12.02;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.01.25.00.40.14;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.01.24.23.17.19;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.01.04.23.32.21;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.01.04.15.02.00;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.01.04.12.06.21;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.01.03.16.04.41;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.12.29.15.21.34;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.12.29.10.19.55;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.12.18.19.32.08;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.12.10.20.58.56;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.12.06.16.37.32;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.07.27.13.16.00;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.07.07.15.04.54;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.07.04.22.04.04;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2010.06.27.16.36.22;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.06.26.15.22.19;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.06.10.21.42.02;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.06.01.11.54.23;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.05.24.23.54.18;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.05.24.22.25.58;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.05.17.02.38.13;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.05.17.02.01.05;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.05.17.00.37.26;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.05.16.22.28.33;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.05.16.19.08.11;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.75
+log
+@typos; found and fixed by sobrado@@
+@
+text
+@.\"	$Id: roff.7,v 1.74 2015/08/29 22:40:05 schwarze Exp $
+.\"
+.\" Copyright (c) 2010, 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2010, 2011, 2013-2015 Ingo Schwarze <schwarze@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: August 29 2015 $
+.Dt ROFF 7
+.Os
+.Sh NAME
+.Nm roff
+.Nd roff language reference for mandoc
+.Sh DESCRIPTION
+The
+.Nm roff
+language is a general purpose text formatting language.
+Since traditional implementations of the
+.Xr mdoc 7
+and
+.Xr man 7
+manual formatting languages are based on it,
+many real-world manuals use small numbers of
+.Nm
+requests and escape sequences intermixed with their
+.Xr mdoc 7
+or
+.Xr man 7
+code.
+To properly format such manuals, the
+.Xr mandoc 1
+utility supports a tiny subset of
+.Nm
+requests and escapes.
+Only these requests and escapes supported by
+.Xr mandoc 1
+are documented in the present manual,
+together with the basic language syntax shared by
+.Nm ,
+.Xr mdoc 7 ,
+and
+.Xr man 7 .
+For complete
+.Nm
+manuals, consult the
+.Sx SEE ALSO
+section.
+.Pp
+Input lines beginning with the control character
+.Sq \&.
+are parsed for requests and macros.
+Such lines are called
+.Dq request lines
+or
+.Dq macro lines ,
+respectively.
+Requests change the processing state and manipulate the formatting;
+some macros also define the document structure and produce formatted
+output.
+The single quote
+.Pq Qq \(aq
+is accepted as an alternative control character,
+treated by
+.Xr mandoc 1
+just like
+.Ql \&.
+.Pp
+Lines not beginning with control characters are called
+.Dq text lines .
+They provide free-form text to be printed; the formatting of the text
+depends on the respective processing context.
+.Sh LANGUAGE SYNTAX
+.Nm
+documents may contain only graphable 7-bit ASCII characters, the space
+character, and, in certain circumstances, the tab character.
+The backslash character
+.Sq \e
+indicates the start of an escape sequence, used for example for
+.Sx Comments ,
+.Sx Special Characters ,
+.Sx Predefined Strings ,
+and
+user-defined strings defined using the
+.Sx ds
+request.
+For a listing of escape sequences, consult the
+.Sx ESCAPE SEQUENCE REFERENCE
+below.
+.Ss Comments
+Text following an escaped double-quote
+.Sq \e\(dq ,
+whether in a request, macro, or text line, is ignored to the end of the line.
+A request line beginning with a control character and comment escape
+.Sq \&.\e\(dq
+is also ignored.
+Furthermore, request lines with only a control character and optional
+trailing whitespace are stripped from input.
+.Pp
+Examples:
+.Bd -literal -offset indent -compact
+\&.\e\(dq This is a comment line.
+\&.\e\(dq The next line is ignored:
+\&.
+\&.Sh EXAMPLES \e\(dq This is a comment, too.
+\&example text \e\(dq And so is this.
+.Ed
+.Ss Special Characters
+Special characters are used to encode special glyphs and are rendered
+differently across output media.
+They may occur in request, macro, and text lines.
+Sequences begin with the escape character
+.Sq \e
+followed by either an open-parenthesis
+.Sq \&(
+for two-character sequences; an open-bracket
+.Sq \&[
+for n-character sequences (terminated at a close-bracket
+.Sq \&] ) ;
+or a single one character sequence.
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It Li \e(em
+Two-letter em dash escape.
+.It Li \ee
+One-letter backslash escape.
+.El
+.Pp
+See
+.Xr mandoc_char 7
+for a complete list.
+.Ss Text Decoration
+Terms may be text-decorated using the
+.Sq \ef
+escape followed by an indicator: B (bold), I (italic), R (regular), or P
+(revert to previous mode).
+A numerical representation 3, 2, or 1 (bold, italic, and regular,
+respectively) may be used instead.
+The indicator or numerical representative may be preceded by C
+(constant-width), which is ignored.
+.Pp
+The two-character indicator
+.Sq BI
+requests a font that is both bold and italic.
+It may not be portable to old roff implementations.
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It Li \efBbold\efR
+Write in \fBbold\fP, then switch to regular font mode.
+.It Li \efIitalic\efP
+Write in \fIitalic\fP, then return to previous font mode.
+.It Li \ef(BIbold italic\efP
+Write in \f(BIbold italic\fP, then return to previous font mode.
+.El
+.Pp
+Text decoration is
+.Em not
+recommended for
+.Xr mdoc 7 ,
+which encourages semantic annotation.
+.Ss Predefined Strings
+Predefined strings, like
+.Sx Special Characters ,
+mark special output glyphs.
+Predefined strings are escaped with the slash-asterisk,
+.Sq \e* :
+single-character
+.Sq \e*X ,
+two-character
+.Sq \e*(XX ,
+and N-character
+.Sq \e*[N] .
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It Li \e*(Am
+Two-letter ampersand predefined string.
+.It Li \e*q
+One-letter double-quote predefined string.
+.El
+.Pp
+Predefined strings are not recommended for use,
+as they differ across implementations.
+Those supported by
+.Xr mandoc 1
+are listed in
+.Xr mandoc_char 7 .
+Manuals using these predefined strings are almost certainly not portable.
+.Ss Whitespace
+Whitespace consists of the space character.
+In text lines, whitespace is preserved within a line.
+In request and macro lines, whitespace delimits arguments and is discarded.
+.Pp
+Unescaped trailing spaces are stripped from text line input unless in a
+literal context.
+In general, trailing whitespace on any input line is discouraged for
+reasons of portability.
+In the rare case that a blank character is needed at the end of an
+input line, it may be forced by
+.Sq \e\ \e& .
+.Pp
+Literal space characters can be produced in the output
+using escape sequences.
+In macro lines, they can also be included in arguments using quotation; see
+.Sx MACRO SYNTAX
+for details.
+.Pp
+Blank text lines, which may include whitespace, are only permitted
+within literal contexts.
+If the first character of a text line is a space, that line is printed
+with a leading newline.
+.Ss Scaling Widths
+Many requests and macros support scaled widths for their arguments.
+The syntax for a scaled width is
+.Sq Li [+-]?[0-9]*.[0-9]*[:unit:] ,
+where a decimal must be preceded or followed by at least one digit.
+Negative numbers, while accepted, are truncated to zero.
+.Pp
+The following scaling units are accepted:
+.Pp
+.Bl -tag -width Ds -offset indent -compact
+.It c
+centimetre
+.It i
+inch
+.It P
+pica (~1/6 inch)
+.It p
+point (~1/72 inch)
+.It f
+scale
+.Sq u
+by 65536
+.It v
+default vertical span
+.It m
+width of rendered
+.Sq m
+.Pq em
+character
+.It n
+width of rendered
+.Sq n
+.Pq en
+character
+.It u
+default horizontal span for the terminal
+.It M
+mini-em (~1/100 em)
+.El
+.Pp
+Using anything other than
+.Sq m ,
+.Sq n ,
+or
+.Sq v
+is necessarily non-portable across output media.
+See
+.Sx COMPATIBILITY .
+.Pp
+If a scaling unit is not provided, the numerical value is interpreted
+under the default rules of
+.Sq v
+for vertical spaces and
+.Sq u
+for horizontal ones.
+.Pp
+Examples:
+.Bl -tag -width ".Bl -tag -width 2i" -offset indent -compact
+.It Li \&.Bl -tag -width 2i
+two-inch tagged list indentation in
+.Xr mdoc 7
+.It Li \&.HP 2i
+two-inch tagged list indentation in
+.Xr man 7
+.It Li \&.sp 2v
+two vertical spaces
+.El
+.Ss Sentence Spacing
+Each sentence should terminate at the end of an input line.
+By doing this, a formatter will be able to apply the proper amount of
+spacing after the end of sentence (unescaped) period, exclamation mark,
+or question mark followed by zero or more non-sentence closing
+delimiters
+.Po
+.Sq \&) ,
+.Sq \&] ,
+.Sq \&' ,
+.Sq \&"
+.Pc .
+.Pp
+The proper spacing is also intelligently preserved if a sentence ends at
+the boundary of a macro line.
+.Pp
+Examples:
+.Bd -literal -offset indent -compact
+Do not end sentences mid-line like this.  Instead,
+end a sentence like this.
+A macro would end like this:
+\&.Xr mandoc 1 \&.
+.Ed
+.Sh REQUEST SYNTAX
+A request or macro line consists of:
+.Pp
+.Bl -enum -compact
+.It
+the control character
+.Sq \&.
+or
+.Sq \(aq
+at the beginning of the line,
+.It
+optionally an arbitrary amount of whitespace,
+.It
+the name of the request or the macro, which is one word of arbitrary
+length, terminated by whitespace,
+.It
+and zero or more arguments delimited by whitespace.
+.El
+.Pp
+Thus, the following request lines are all equivalent:
+.Bd -literal -offset indent
+\&.ig end
+\&.ig    end
+\&.   ig end
+.Ed
+.Sh MACRO SYNTAX
+Macros are provided by the
+.Xr mdoc 7
+and
+.Xr man 7
+languages and can be defined by the
+.Sx \&de
+request.
+When called, they follow the same syntax as requests, except that
+macro arguments may optionally be quoted by enclosing them
+in double quote characters
+.Pq Sq \(dq .
+Quoted text, even if it contains whitespace or would cause
+a macro invocation when unquoted, is always considered literal text.
+Inside quoted text, pairs of double quote characters
+.Pq Sq Qq
+resolve to single double quote characters.
+.Pp
+To be recognised as the beginning of a quoted argument, the opening
+quote character must be preceded by a space character.
+A quoted argument extends to the next double quote character that is not
+part of a pair, or to the end of the input line, whichever comes earlier.
+Leaving out the terminating double quote character at the end of the line
+is discouraged.
+For clarity, if more arguments follow on the same input line,
+it is recommended to follow the terminating double quote character
+by a space character; in case the next character after the terminating
+double quote character is anything else, it is regarded as the beginning
+of the next, unquoted argument.
+.Pp
+Both in quoted and unquoted arguments, pairs of backslashes
+.Pq Sq \e\e
+resolve to single backslashes.
+In unquoted arguments, space characters can alternatively be included
+by preceding them with a backslash
+.Pq Sq \e\~ ,
+but quoting is usually better for clarity.
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It Li .Fn strlen \(dqconst char *s\(dq
+Group arguments
+.Qq const char *s
+into one function argument.
+If unspecified,
+.Qq const ,
+.Qq char ,
+and
+.Qq *s
+would be considered separate arguments.
+.It Li .Op \(dqFl a\(dq
+Consider
+.Qq \&Fl a
+as literal text instead of a flag macro.
+.El
+.Sh REQUEST REFERENCE
+The
+.Xr mandoc 1
+.Nm
+parser recognises the following requests.
+For requests marked as "ignored" or "unsupported", any arguments are
+ignored, and the number of arguments is not checked.
+.Ss \&ab
+Abort processing.
+Currently unsupported.
+.Ss \&ad
+Set line adjustment mode.
+It takes one argument to select normal, left, right,
+or center adjustment for subsequent text.
+Currently ignored.
+.Ss \&af
+Assign an output format to a number register.
+Currently ignored.
+.Ss \&aln
+Create an alias for a number register.
+Currently unsupported.
+.Ss \&als
+Create an alias for a request, string, macro, or diversion.
+Currently unsupported.
+.Ss \&am
+Append to a macro definition.
+The syntax of this request is the same as that of
+.Sx \&de .
+.Ss \&am1
+Append to a macro definition, switching roff compatibility mode off
+during macro execution (groff extension).
+The syntax of this request is the same as that of
+.Sx \&de1 .
+Since
+.Xr mandoc 1
+does not implement
+.Nm
+compatibility mode at all, it handles this request as an alias for
+.Sx \&am .
+.Ss \&ami
+Append to a macro definition, specifying the macro name indirectly
+(groff extension).
+The syntax of this request is the same as that of
+.Sx \&dei .
+.Ss \&ami1
+Append to a macro definition, specifying the macro name indirectly
+and switching roff compatibility mode off during macro execution
+(groff extension).
+The syntax of this request is the same as that of
+.Sx \&dei1 .
+Since
+.Xr mandoc 1
+does not implement
+.Nm
+compatibility mode at all, it handles this request as an alias for
+.Sx \&ami .
+.Ss \&as
+Append to a user-defined string.
+The syntax of this request is the same as that of
+.Sx \&ds .
+If a user-defined string with the specified name does not yet exist,
+it is set to the empty string before appending.
+.Ss \&as1
+Append to a user-defined string, switching roff compatibility mode off
+during macro execution (groff extension).
+The syntax of this request is the same as that of
+.Sx \&ds1 .
+Since
+.Xr mandoc 1
+does not implement
+.Nm
+compatibility mode at all, it handles this request as an alias for
+.Sx \&as .
+.Ss \&asciify
+Fully unformat a diversion.
+Currently unsupported.
+.Ss \&backtrace
+Print a backtrace of the input stack.
+This is a groff extension and currently ignored.
+.Ss \&bd
+Artificially embolden by repeated printing with small shifts.
+Currently ignored.
+.Ss \&bleedat
+Set the BleedBox page parameter for PDF generation.
+This is a Heirloom extension and currently ignored.
+.Ss \&blm
+Set a blank line trap.
+Currently unsupported.
+.Ss \&box
+Begin a diversion without including a partially filled line.
+Currently unsupported.
+.Ss \&boxa
+Add to a diversion without including a partially filled line.
+Currently unsupported.
+.Ss \&bp
+Begin new page.
+Currently ignored.
+.Ss \&BP
+Define a frame and place a picture in it.
+This is a Heirloom extension and currently unsupported.
+.Ss \&br
+Break the output line.
+See
+.Xr man 7
+and
+.Xr mdoc 7 .
+.Ss \&break
+Break out of a
+.Sx \&while
+loop.
+Currently unsupported.
+.Ss \&breakchar
+Optional line break characters.
+This is a Heirloom extension and currently ignored.
+.Ss \&brnl
+Break output line after next N input lines.
+This is a Heirloom extension and currently ignored.
+.Ss \&brp
+Break and spread output line.
+Currently, this is implemented as an alias for
+.Sx \&br .
+.Ss \&brpnl
+Break and spread output line after next N input lines.
+This is a Heirloom extension and currently ignored.
+.Ss \&c2
+Change the no-break control character.
+Currently unsupported.
+.Ss \&cc
+Change the control character.
+Its syntax is as follows:
+.Bd -literal -offset indent
+.Pf . Cm \&cc Op Ar c
+.Ed
+.Pp
+If
+.Ar c
+is not specified, the control character is reset to
+.Sq \&. .
+Trailing characters are ignored.
+.Ss \&ce
+Center some lines.
+It takes one integer argument, specifying how many lines to center.
+Currently ignored.
+.Ss \&cf
+Output the contents of a file.
+Ignored because insecure.
+.Ss \&cflags
+Set character flags.
+This is a groff extension and currently ignored.
+.Ss \&ch
+Change a trap location.
+Currently ignored.
+.Ss \&char
+Define a new glyph.
+Currently unsupported.
+.Ss \&chop
+Remove the last character from a macro, string, or diversion.
+Currently unsupported.
+.Ss \&class
+Define a character class.
+This is a groff extension and currently ignored.
+.Ss \&close
+Close an open file.
+Ignored because insecure.
+.Ss \&CL
+Print text in color.
+This is a Heirloom extension and currently unsupported.
+.Ss \&color
+Activate or deactivate colors.
+This is a groff extension and currently ignored.
+.Ss \&composite
+Define a name component for composite glyph names.
+This is a groff extension and currently unsupported.
+.Ss \&continue
+Immediately start the next iteration of a
+.Sx \&while
+loop.
+Currently unsupported.
+.Ss \&cp
+Switch
+.Nm
+compatibility mode on or off.
+Currently ignored.
+.Ss \&cropat
+Set the CropBox page parameter for PDF generation.
+This is a Heirloom extension and currently ignored.
+.Ss \&cs
+Constant character spacing mode.
+Currently ignored.
+.Ss \&cu
+Underline including whitespace.
+Currently ignored.
+.Ss \&da
+Append to a diversion.
+Currently unsupported.
+.Ss \&dch
+Change a trap location in the current diversion.
+This is a Heirloom extension and currently unsupported.
+.Ss \&de
+Define a
+.Nm
+macro.
+Its syntax can be either
+.Bd -literal -offset indent
+.Pf . Cm \&de Ar name
+.Ar macro definition
+\&..
+.Ed
+.Pp
+or
+.Bd -literal -offset indent
+.Pf . Cm \&de Ar name Ar end
+.Ar macro definition
+.Pf . Ar end
+.Ed
+.Pp
+Both forms define or redefine the macro
+.Ar name
+to represent the
+.Ar macro definition ,
+which may consist of one or more input lines, including the newline
+characters terminating each line, optionally containing calls to
+.Nm
+requests,
+.Nm
+macros or high-level macros like
+.Xr man 7
+or
+.Xr mdoc 7
+macros, whichever applies to the document in question.
+.Pp
+Specifying a custom
+.Ar end
+macro works in the same way as for
+.Sx \&ig ;
+namely, the call to
+.Sq Pf . Ar end
+first ends the
+.Ar macro definition ,
+and after that, it is also evaluated as a
+.Nm
+request or
+.Nm
+macro, but not as a high-level macro.
+.Pp
+The macro can be invoked later using the syntax
+.Pp
+.D1 Pf . Ar name Op Ar argument Op Ar argument ...
+.Pp
+Regarding argument parsing, see
+.Sx MACRO SYNTAX
+above.
+.Pp
+The line invoking the macro will be replaced
+in the input stream by the
+.Ar macro definition ,
+replacing all occurrences of
+.No \e\e$ Ns Ar N ,
+where
+.Ar N
+is a digit, by the
+.Ar N Ns th Ar argument .
+For example,
+.Bd -literal -offset indent
+\&.de ZN
+\efI\e^\e\e$1\e^\efP\e\e$2
+\&..
+\&.ZN XtFree .
+.Ed
+.Pp
+produces
+.Pp
+.D1 \efI\e^XtFree\e^\efP.
+.Pp
+in the input stream, and thus in the output: \fI\^XtFree\^\fP.
+Each occurrence of \e\e$* is replaced with all the arguments,
+joined together with single blank characters.
+.Pp
+Since macros and user-defined strings share a common string table,
+defining a macro
+.Ar name
+clobbers the user-defined string
+.Ar name ,
+and the
+.Ar macro definition
+can also be printed using the
+.Sq \e*
+string interpolation syntax described below
+.Sx ds ,
+but this is rarely useful because every macro definition contains at least
+one explicit newline character.
+.Pp
+In order to prevent endless recursion, both groff and
+.Xr mandoc 1
+limit the stack depth for expanding macros and strings
+to a large, but finite number, and
+.Xr mandoc 1
+also limits the length of the expanded input line.
+Do not rely on the exact values of these limits.
+.Ss \&de1
+Define a
+.Nm
+macro that will be executed with
+.Nm
+compatibility mode switched off during macro execution.
+This is a groff extension.
+Since
+.Xr mandoc 1
+does not implement
+.Nm
+compatibility mode at all, it handles this request as an alias for
+.Sx \&de .
+.Ss \&defcolor
+Define a color name.
+This is a groff extension and currently ignored.
+.Ss \&dei
+Define a
+.Nm
+macro, specifying the macro name indirectly (groff extension).
+The syntax of this request is the same as that of
+.Sx \&de .
+The request
+.Pp
+.D1 Pf . Cm \&dei Ar name Op Ar end
+.Pp
+has the same effect as:
+.Pp
+.D1 Pf . Cm \&de No \e* Ns Bo Ar name Bc Op \e* Ns Bq Ar end
+.Ss \&dei1
+Define a
+.Nm
+macro that will be executed with
+.Nm
+compatibility mode switched off during macro execution,
+specifying the macro name indirectly (groff extension).
+Since
+.Xr mandoc 1
+does not implement
+.Nm
+compatibility mode at all, it handles this request as an alias for
+.Sx \&dei .
+.Ss \&device
+This request only makes sense with the groff-specific intermediate
+output format and is unsupported.
+.Ss \&devicem
+This request only makes sense with the groff-specific intermediate
+output format and is unsupported.
+.Ss \&di
+Begin a diversion.
+Currently unsupported.
+.Ss \&do
+Execute
+.Nm
+request or macro line with compatibility mode disabled.
+Currently unsupported.
+.Ss \&ds
+Define a user-defined string.
+Its syntax is as follows:
+.Pp
+.D1 Pf . Cm \&ds Ar name Oo \(dq Oc Ns Ar string
+.Pp
+The
+.Ar name
+and
+.Ar string
+arguments are space-separated.
+If the
+.Ar string
+begins with a double-quote character, that character will not be part
+of the string.
+All remaining characters on the input line form the
+.Ar string ,
+including whitespace and double-quote characters, even trailing ones.
+.Pp
+The
+.Ar string
+can be interpolated into subsequent text by using
+.No \e* Ns Bq Ar name
+for a
+.Ar name
+of arbitrary length, or \e*(NN or \e*N if the length of
+.Ar name
+is two or one characters, respectively.
+Interpolation can be prevented by escaping the leading backslash;
+that is, an asterisk preceded by an even number of backslashes
+does not trigger string interpolation.
+.Pp
+Since user-defined strings and macros share a common string table,
+defining a string
+.Ar name
+clobbers the macro
+.Ar name ,
+and the
+.Ar name
+used for defining a string can also be invoked as a macro,
+in which case the following input line will be appended to the
+.Ar string ,
+forming a new input line passed to the
+.Nm
+parser.
+For example,
+.Bd -literal -offset indent
+\&.ds badidea .S
+\&.badidea
+H SYNOPSIS
+.Ed
+.Pp
+invokes the
+.Cm SH
+macro when used in a
+.Xr man 7
+document.
+Such abuse is of course strongly discouraged.
+.Ss \&ds1
+Define a user-defined string that will be expanded with
+.Nm
+compatibility mode switched off during string expansion.
+This is a groff extension.
+Since
+.Xr mandoc 1
+does not implement
+.Nm
+compatibility mode at all, it handles this request as an alias for
+.Sx \&ds .
+.Ss \&dwh
+Set a location trap in the current diversion.
+This is a Heirloom extension and currently unsupported.
+.Ss \&dt
+Set a trap within a diversion.
+Currently unsupported.
+.Ss \&ec
+Change the escape character.
+Currently unsupported.
+.Ss \&ecs
+Restore the escape character.
+Currently unsupported.
+.Ss \&ecr
+Save the escape character.
+Currently unsupported.
+.Ss \&el
+The
+.Qq else
+half of an if/else conditional.
+Pops a result off the stack of conditional evaluations pushed by
+.Sx \&ie
+and uses it as its conditional.
+If no stack entries are present (e.g., due to no prior
+.Sx \&ie
+calls)
+then false is assumed.
+The syntax of this request is similar to
+.Sx \&if
+except that the conditional is missing.
+.Ss \&em
+Set a trap at the end of input.
+Currently unsupported.
+.Ss \&EN
+End an equation block.
+See
+.Sx \&EQ .
+.Ss \&eo
+Disable the escape mechanism completely.
+Currently unsupported.
+.Ss \&EP
+End a picture started by
+.Sx \&BP .
+This is a Heirloom extension and currently unsupported.
+.Ss \&EQ
+Begin an equation block.
+See
+.Xr eqn 7
+for a description of the equation language.
+.Ss \&errprint
+Print a string like an error message.
+This is a Heirloom extension and currently ignored.
+.Ss \&ev
+Switch to another environment.
+Currently unsupported.
+.Ss \&evc
+Copy an environment into the current environment.
+Currently unsupported.
+.Ss \&ex
+Abort processing and exit.
+Currently unsupported.
+.Ss \&fallback
+Select the fallback sequence for a font.
+This is a Heirloom extension and currently ignored.
+.Ss \&fam
+Change the font family.
+Takes one argument specifying the font family to be selected.
+It is a groff extension and currently ignored.
+.Ss \&fc
+Define a delimiting and a padding character for fields.
+Currently unsupported.
+.Ss \&fchar
+Define a fallback glyph.
+Currently unsupported.
+.Ss \&fcolor
+Set the fill color for \eD objects.
+This is a groff extension and currently ignored.
+.Ss \&fdeferlig
+Defer ligature building.
+This is a Heirloom extension and currently ignored.
+.Ss \&feature
+Enable or disable an OpenType feature.
+This is a Heirloom extension and currently ignored.
+.Ss \&fi
+Switch to fill mode.
+See
+.Xr man 7 .
+Ignored in
+.Xr mdoc 7 .
+.Ss \&fkern
+Control the use of kerning tables for a font.
+This is a Heirloom extension and currently ignored.
+.Ss \&fl
+Flush output.
+Currently ignored.
+.Ss \&flig
+Define ligatures.
+This is a Heirloom extension and currently ignored.
+.Ss \&fp
+Assign font position.
+Currently ignored.
+.Ss \&fps
+Mount a font with a special character map.
+This is a Heirloom extension and currently ignored.
+.Ss \&fschar
+Define a font-specific fallback glyph.
+This is a groff extension and currently unsupported.
+.Ss \&fspacewidth
+Set a font-specific width for the space character.
+This is a Heirloom extension and currently ignored.
+.Ss \&fspecial
+Conditionally define a special font.
+This is a groff extension and currently ignored.
+.Ss \&ft
+Change the font.
+Its syntax is as follows:
+.Pp
+.D1 Pf . Cm \&ft Op Ar font
+.Pp
+The following
+.Ar font
+arguments are supported:
+.Bl -tag -width 4n -offset indent
+.It Cm B , BI , 3 , 4
+switches to
+.Sy bold
+font
+.It Cm I , 2
+switches to
+.Em underlined
+font
+.It Cm R , CW , 1
+switches to normal font
+.It Cm P No "or no argument"
+switches back to the previous font
+.El
+.Pp
+This request takes effect only locally, may be overridden by macros
+and escape sequences, and is only supported in
+.Xr man 7
+for now.
+.Ss \&ftr
+Translate font name.
+This is a groff extension and currently ignored.
+.Ss \&fzoom
+Zoom font size.
+Currently ignored.
+.Ss \&gcolor
+Set glyph color.
+This is a groff extension and currently ignored.
+.Ss \&hc
+Set the hyphenation character.
+Currently ignored.
+.Ss \&hcode
+Set hyphenation codes of characters.
+Currently ignored.
+.Ss \&hidechar
+Hide characters in a font.
+This is a Heirloom extension and currently ignored.
+.Ss \&hla
+Set hyphenation language.
+This is a groff extension and currently ignored.
+.Ss \&hlm
+Set maximum number of consecutive hyphenated lines.
+Currently ignored.
+.Ss \&hpf
+Load hyphenation pattern file.
+This is a groff extension and currently ignored.
+.Ss \&hpfa
+Load hyphenation pattern file, appending to the current patterns.
+This is a groff extension and currently ignored.
+.Ss \&hpfcode
+Define mapping values for character codes in hyphenation patterns.
+This is a groff extension and currently ignored.
+.Ss \&hw
+Specify hyphenation points in words.
+Currently ignored.
+.Ss \&hy
+Set automatic hyphenation mode.
+Currently ignored.
+.Ss \&hylang
+Set hyphenation language.
+This is a Heirloom extension and currently ignored.
+.Ss \&hylen
+Minimum word length for hyphenation.
+This is a Heirloom extension and currently ignored.
+.Ss \&hym
+Set hyphenation margin.
+This is a groff extension and currently ignored.
+.Ss \&hypp
+Define hyphenation penalties.
+This is a Heirloom extension and currently ignored.
+.Ss \&hys
+Set hyphenation space.
+This is a groff extension and currently ignored.
+.Ss \&ie
+The
+.Qq if
+half of an if/else conditional.
+The result of the conditional is pushed into a stack used by subsequent
+invocations of
+.Sx \&el ,
+which may be separated by any intervening input (or not exist at all).
+Its syntax is equivalent to
+.Sx \&if .
+.Ss \&if
+Begins a conditional.
+This request has the following syntax:
+.Bd -literal -offset indent
+\&.if COND BODY
+.Ed
+.Bd -literal -offset indent
+\&.if COND \e{BODY
+BODY...\e}
+.Ed
+.Bd -literal -offset indent
+\&.if COND \e{\e
+BODY...
+\&.\e}
+.Ed
+.Pp
+COND is a conditional statement.
+Currently,
+.Xr mandoc 1
+supports the following subset of roff conditionals:
+.Bl -bullet
+.It
+If
+.Sq \&!
+is prefixed to COND, the condition is logically inverted.
+.It
+If the first character of COND is
+.Sq n
+.Pq nroff mode
+or
+.Sq o
+.Pq odd page ,
+COND evaluates to true.
+.It
+If the first character of COND is
+.Sq c
+.Pq character available ,
+.Sq d
+.Pq string defined ,
+.Sq e
+.Pq even page ,
+.Sq t
+.Pq troff mode ,
+or
+.Sq v
+.Pq vroff mode ,
+COND evaluates to false.
+.It
+If the first character of COND is
+.Sq r ,
+it evaluates to true if the rest of COND is the name of an existing
+number register; otherwise, it evaluates to false.
+.It
+If COND starts with a parenthesis or with an optionally signed
+integer number, it is evaluated according to the rules of
+.Sx Numerical expressions
+explained below.
+It evaluates to true if the result is positive,
+or to false if the result is zero or negative.
+.It
+Otherwise, the first character of COND is regarded as a delimiter
+and COND evaluates to true if the string extending from its first
+to its second occurrence is equal to the string extending from its
+second to its third occurrence.
+.It
+If COND cannot be parsed, it evaluates to false.
+.El
+.Pp
+If a conditional is false, its children are not processed, but are
+syntactically interpreted to preserve the integrity of the input
+document.
+Thus,
+.Pp
+.D1 \&.if t .ig
+.Pp
+will discard the
+.Sq \&.ig ,
+which may lead to interesting results, but
+.Pp
+.D1 \&.if t .if t \e{\e
+.Pp
+will continue to syntactically interpret to the block close of the final
+conditional.
+Sub-conditionals, in this case, obviously inherit the truth value of
+the parent.
+.Pp
+If the BODY section is begun by an escaped brace
+.Sq \e{ ,
+scope continues until the end of the input line containing the
+matching closing-brace escape sequence
+.Sq \e} .
+If the BODY is not enclosed in braces, scope continues until
+the end of the line.
+If the COND is followed by a BODY on the same line, whether after a
+brace or not, then requests and macros
+.Em must
+begin with a control character.
+It is generally more intuitive, in this case, to write
+.Bd -literal -offset indent
+\&.if COND \e{\e
+\&.foo
+bar
+\&.\e}
+.Ed
+.Pp
+than having the request or macro follow as
+.Pp
+.D1 \&.if COND \e{ .foo
+.Pp
+The scope of a conditional is always parsed, but only executed if the
+conditional evaluates to true.
+.Pp
+Note that the
+.Sq \e}
+is converted into a zero-width escape sequence if not passed as a
+standalone macro
+.Sq \&.\e} .
+For example,
+.Pp
+.D1 \&.Fl a \e} b
+.Pp
+will result in
+.Sq \e}
+being considered an argument of the
+.Sq \&Fl
+macro.
+.Ss \&ig
+Ignore input.
+Its syntax can be either
+.Bd -literal -offset indent
+.Pf . Cm \&ig
+.Ar ignored text
+\&..
+.Ed
+.Pp
+or
+.Bd -literal -offset indent
+.Pf . Cm \&ig Ar end
+.Ar ignored text
+.Pf . Ar end
+.Ed
+.Pp
+In the first case, input is ignored until a
+.Sq \&..
+request is encountered on its own line.
+In the second case, input is ignored until the specified
+.Sq Pf . Ar end
+macro is encountered.
+Do not use the escape character
+.Sq \e
+anywhere in the definition of
+.Ar end ;
+it would cause very strange behaviour.
+.Pp
+When the
+.Ar end
+macro is a roff request or a roff macro, like in
+.Pp
+.D1 \&.ig if
+.Pp
+the subsequent invocation of
+.Sx \&if
+will first terminate the
+.Ar ignored text ,
+then be invoked as usual.
+Otherwise, it only terminates the
+.Ar ignored text ,
+and arguments following it or the
+.Sq \&..
+request are discarded.
+.Ss \&in
+Change indentation.
+See
+.Xr man 7 .
+Ignored in
+.Xr mdoc 7 .
+.Ss \&index
+Find a substring in a string.
+This is a Heirloom extension and currently unsupported.
+.Ss \&it
+Set an input line trap.
+Its syntax is as follows:
+.Pp
+.D1 Pf . Cm it Ar expression macro
+.Pp
+The named
+.Ar macro
+will be invoked after processing the number of input text lines
+specified by the numerical
+.Ar expression .
+While evaluating the
+.Ar expression ,
+the unit suffixes described below
+.Sx Scaling Widths
+are ignored.
+.Ss \&itc
+Set an input line trap, not counting lines ending with \ec.
+Currently unsupported.
+.Ss \&IX
+To support the generation of a table of contents,
+.Xr pod2man 1
+emits this user-defined macro, usually without defining it.
+To avoid reporting large numbers of spurious errors,
+.Xr mandoc 1
+ignores it.
+.Ss \&kern
+Switch kerning on or off.
+Currently ignored.
+.Ss \&kernafter
+Increase kerning after some characters.
+This is a Heirloom extension and currently ignored.
+.Ss \&kernbefore
+Increase kerning before some characters.
+This is a Heirloom extension and currently ignored.
+.Ss \&kernpair
+Add a kerning pair to the kerning table.
+This is a Heirloom extension and currently ignored.
+.Ss \&lc
+Define a leader repetition character.
+Currently unsupported.
+.Ss \&lc_ctype
+Set the
+.Dv LC_CTYPE
+locale.
+This is a Heirloom extension and currently unsupported.
+.Ss \&lds
+Define a local string.
+This is a Heirloom extension and currently unsupported.
+.Ss \&length
+Count the number of input characters in a user-defined string.
+Currently unsupported.
+.Ss \&letadj
+Dynamic letter spacing and reshaping.
+This is a Heirloom extension and currently ignored.
+.Ss \&lf
+Change the line number for error messages.
+Ignored because insecure.
+.Ss \&lg
+Switch the ligature mechanism on or off.
+Currently ignored.
+.Ss \&lhang
+Hang characters at left margin.
+This is a Heirloom extension and currently ignored.
+.Ss \&linetabs
+Enable or disable line-tabs mode.
+This is a groff extension and currently unsupported.
+.Ss \&ll
+Change the output line length.
+Its syntax is as follows:
+.Pp
+.D1 Pf . Cm \&ll Op Oo +|- Oc Ns Ar width
+.Pp
+If the
+.Ar width
+argument is omitted, the line length is reset to its previous value.
+The default setting for terminal output is 78n.
+If a sign is given, the line length is added to or subtracted from;
+otherwise, it is set to the provided value.
+Using this request in new manuals is discouraged for several reasons,
+among others because it overrides the
+.Xr mandoc 1
+.Fl O Cm width
+command line option.
+.Ss \&lnr
+Set local number register.
+This is a Heirloom extension and currently unsupported.
+.Ss \&lnrf
+Set local floating-point register.
+This is a Heirloom extension and currently unsupported.
+.Ss \&lpfx
+Set a line prefix.
+This is a Heirloom extension and currently unsupported.
+.Ss \&ls
+Set line spacing.
+It takes one integer argument specifying the vertical distance of
+subsequent output text lines measured in v units.
+Currently ignored.
+.Ss \&lsm
+Set a leading spaces trap.
+This is a groff extension and currently unsupported.
+.Ss \&lt
+Set title line length.
+Currently ignored.
+.Ss \&mc
+Print margin character in the right margin.
+Currently ignored.
+.Ss \&mediasize
+Set the device media size.
+This is a Heirloom extension and currently ignored.
+.Ss \&minss
+Set minimum word space.
+This is a Heirloom extension and currently ignored.
+.Ss \&mk
+Mark vertical position.
+Currently ignored.
+.Ss \&mso
+Load a macro file.
+Ignored because insecure.
+.Ss \&na
+Disable adjusting without changing the adjustment mode.
+Currently ignored.
+.Ss \&ne
+Declare the need for the specified minimum vertical space
+before the next trap or the bottom of the page.
+Currently ignored.
+.Ss \&nf
+Switch to no-fill mode.
+See
+.Xr man 7 .
+Ignored by
+.Xr mdoc 7 .
+.Ss \&nh
+Turn off automatic hyphenation mode.
+Currently ignored.
+.Ss \&nhychar
+Define hyphenation-inhibiting characters.
+This is a Heirloom extension and currently ignored.
+.Ss \&nm
+Print line numbers.
+Currently unsupported.
+.Ss \&nn
+Temporarily turn off line numbering.
+Currently unsupported.
+.Ss \&nop
+Execute the rest of the input line as a request or macro line.
+Currently unsupported.
+.Ss \&nr
+Define or change a register.
+A register is an arbitrary string value that defines some sort of state,
+which influences parsing and/or formatting.
+Its syntax is as follows:
+.Pp
+.D1 Pf \. Cm \&nr Ar name Oo +|- Oc Ns Ar expression
+.Pp
+For the syntax of
+.Ar expression ,
+see
+.Sx Numerical expressions
+below.
+If it is prefixed by a sign, the register will be
+incremented or decremented instead of assigned to.
+.Pp
+The following register
+.Ar name
+is handled specially:
+.Bl -tag -width Ds
+.It Cm nS
+If set to a positive integer value, certain
+.Xr mdoc 7
+macros will behave in the same way as in the
+.Em SYNOPSIS
+section.
+If set to 0, these macros will behave in the same way as outside the
+.Em SYNOPSIS
+section, even when called within the
+.Em SYNOPSIS
+section itself.
+Note that starting a new
+.Xr mdoc 7
+section with the
+.Cm \&Sh
+macro will reset this register.
+.El
+.Ss \&nrf
+Define or change a floating-point register.
+This is a Heirloom extension and currently unsupported.
+.Ss \&nroff
+Force nroff mode.
+This is a groff extension and currently ignored.
+.Ss \&ns
+Turn on no-space mode.
+Currently ignored.
+.Ss \&nx
+Abort processing of the current input file and process another one.
+Ignored because insecure.
+.Ss \&open
+Open a file for writing.
+Ignored because insecure.
+.Ss \&opena
+Open a file for appending.
+Ignored because insecure.
+.Ss \&os
+Output saved vertical space.
+Currently ignored.
+.Ss \&output
+Output directly to intermediate output.
+Not supported.
+.Ss \&padj
+Globally control paragraph-at-once adjustment.
+This is a Heirloom extension and currently ignored.
+.Ss \&papersize
+Set the paper size.
+This is a Heirloom extension and currently ignored.
+.Ss \&pc
+Change the page number character.
+Currently ignored.
+.Ss \&pev
+Print environments.
+This is a groff extension and currently ignored.
+.Ss \&pi
+Pipe output to a shell command.
+Ignored because insecure.
+.Ss \&PI
+Low-level request used by
+.Sx \&BP .
+This is a Heirloom extension and currently unsupported.
+.Ss \&pl
+Change page length.
+Takes one height argument.
+Currently ignored.
+.Ss \&pm
+Print names and sizes of macros, strings, and diversions.
+Currently ignored.
+.Ss \&pn
+Change page number of the next page.
+Currently ignored.
+.Ss \&pnr
+Print all number registers.
+Currently ignored.
+.Ss \&po
+Set horizontal page offset.
+Currently ignored.
+.Ss \&ps
+Change point size.
+Takes one numerical argument.
+Currently ignored.
+.Ss \&psbb
+Retrieve the bounding box of a PostScript file.
+Currently unsupported.
+.Ss \&pshape
+Set a special shape for the current paragraph.
+This is a Heirloom extension and currently unsupported.
+.Ss \&pso
+Include output of a shell command.
+Ignored because insecure.
+.Ss \&ptr
+Print the names and positions of all traps.
+This is a groff extension and currently ignored.
+.Ss \&pvs
+Change post-vertical spacing.
+This is a groff extension and currently ignored.
+.Ss \&rchar
+Remove glyph definitions.
+Currently unsupported.
+.Ss \&rd
+Read from standard input.
+Currently ignored.
+.Ss \&recursionlimit
+Set the maximum stack depth for recursive macros.
+This is a Heirloom extension and currently ignored.
+.Ss \&return
+Exit a macro and return to the caller.
+Currently unsupported.
+.Ss \&rfschar
+Remove font-specific fallback glyph definitions.
+Currently unsupported.
+.Ss \&rhang
+Hang characters at right margin.
+This is a Heirloom extension and currently ignored.
+.Ss \&rj
+Justify unfilled text to the right margin.
+Currently ignored.
+.Ss \&rm
+Remove a request, macro or string.
+Its syntax is as follows:
+.Pp
+.D1 Pf \. Cm \&rm Ar name
+.Ss \&rn
+Rename a request, macro, diversion, or string.
+Currently unsupported.
+.Ss \&rnn
+Rename a number register.
+Currently unsupported.
+.Ss \&rr
+Remove a register.
+Its syntax is as follows:
+.Pp
+.D1 Pf \. Cm \&rr Ar name
+.Ss \&rs
+End no-space mode.
+Currently ignored.
+.Ss \&rt
+Return to marked vertical position.
+Currently ignored.
+.Ss \&schar
+Define global fallback glyph.
+This is a groff extension and currently unsupported.
+.Ss \&sentchar
+Define sentence-ending characters.
+This is a Heirloom extension and currently ignored.
+.Ss \&shc
+Change the soft hyphen character.
+Currently ignored.
+.Ss \&shift
+Shift macro arguments.
+Currently unsupported.
+.Ss \&sizes
+Define permissible point sizes.
+This is a groff extension and currently ignored.
+.Ss \&so
+Include a source file.
+Its syntax is as follows:
+.Pp
+.D1 Pf \. Cm \&so Ar file
+.Pp
+The
+.Ar file
+will be read and its contents processed as input in place of the
+.Sq \&.so
+request line.
+To avoid inadvertent inclusion of unrelated files,
+.Xr mandoc 1
+only accepts relative paths not containing the strings
+.Qq ../
+and
+.Qq /.. .
+.Pp
+This request requires
+.Xr man 1
+to change to the right directory before calling
+.Xr mandoc 1 ,
+per convention to the root of the manual tree.
+Typical usage looks like:
+.Pp
+.Dl \&.so man3/Xcursor.3
+.Pp
+As the whole concept is rather fragile, the use of
+.Sx \&so
+is discouraged.
+Use
+.Xr ln 1
+instead.
+.Ss \&spacewidth
+Set the space width from the font metrics file.
+This is a Heirloom extension and currently ignored.
+.Ss \&special
+Define a special font.
+This is a groff extension and currently ignored.
+.Ss \&spreadwarn
+Warn about wide spacing between words.
+Currently ignored.
+.Ss \&ss
+Set space character size.
+Currently ignored.
+.Ss \&sty
+Associate style with a font position.
+This is a groff extension and currently ignored.
+.Ss \&substring
+Replace a user-defined string with a substring.
+Currently unsupported.
+.Ss \&sv
+Save vertical space.
+Currently ignored.
+.Ss \&sy
+Execute shell command.
+Ignored because insecure.
+.Ss \&T&
+Re-start a table layout, retaining the options of the prior table
+invocation.
+See
+.Sx \&TS .
+.Ss \&ta
+Set tab stops.
+Takes an arbitrary number of arguments.
+Currently unsupported.
+.Ss \&tc
+Change tab repetition character.
+Currently unsupported.
+.Ss \&TE
+End a table context.
+See
+.Sx \&TS .
+.Ss \&ti
+Temporary indent.
+Currently unsupported.
+.Ss \&tkf
+Enable track kerning for a font.
+Currently ignored.
+.Ss \&tl
+Print a title line.
+Currently unsupported.
+.Ss \&tm
+Print to standard error output.
+Currently ignored.
+.Ss \&tm1
+Print to standard error output, allowing leading blanks.
+This is a groff extension and currently ignored.
+.Ss \&tmc
+Print to standard error output without a trailing newline.
+This is a groff extension and currently ignored.
+.Ss \&tr
+Output character translation.
+Its syntax is as follows:
+.Pp
+.D1 Pf \. Cm \&tr Ar [ab]+
+.Pp
+Pairs of
+.Ar ab
+characters are replaced
+.Ar ( a
+for
+.Ar b ) .
+Replacement (or origin) characters may also be character escapes; thus,
+.Pp
+.Dl tr \e(xx\e(yy
+.Pp
+replaces all invocations of \e(xx with \e(yy.
+.Ss \&track
+Static letter space tracking.
+This is a Heirloom extension and currently ignored.
+.Ss \&transchar
+Define transparent characters for sentence-ending.
+This is a Heirloom extension and currently ignored.
+.Ss \&trf
+Output the contents of a file, disallowing invalid characters.
+This is a groff extension and ignored because insecure.
+.Ss \&trimat
+Set the TrimBox page parameter for PDF generation.
+This is a Heirloom extension and currently ignored.
+.Ss \&trin
+Output character translation, ignored by
+.Cm \&asciify .
+Currently unsupported.
+.Ss \&trnt
+Output character translation, ignored by \e!.
+Currently unsupported.
+.Ss \&troff
+Force troff mode.
+This is a groff extension and currently ignored.
+.Ss \&TS
+Begin a table, which formats input in aligned rows and columns.
+See
+.Xr tbl 7
+for a description of the tbl language.
+.Ss \&uf
+Globally set the underline font.
+Currently ignored.
+.Ss \&ul
+Underline.
+Currently ignored.
+.Ss \&unformat
+Unformat spaces and tabs in a diversion.
+Currently unsupported.
+.Ss \&unwatch
+Disable notification for string or macro.
+This is a Heirloom extension and currently ignored.
+.Ss \&unwatchn
+Disable notification for register.
+This is a Heirloom extension and currently ignored.
+.Ss \&vpt
+Enable or disable vertical position traps.
+This is a groff extension and currently ignored.
+.Ss \&vs
+Change vertical spacing.
+Currently ignored.
+.Ss \&warn
+Set warning level.
+Currently ignored.
+.Ss \&warnscale
+Set the scaling indicator used in warnings.
+This is a groff extension and currently ignored.
+.Ss \&watch
+Notify on change of string or macro.
+This is a Heirloom extension and currently ignored.
+.Ss \&watchlength
+On change, report the contents of macros and strings
+up to the specified length.
+This is a Heirloom extension and currently ignored.
+.Ss \&watchn
+Notify on change of register.
+This is a Heirloom extension and currently ignored.
+.Ss \&wh
+Set a page location trap.
+Currently unsupported.
+.Ss \&while
+Repeated execution while a condition is true.
+Currently unsupported.
+.Ss \&write
+Write to an open file.
+Ignored because insecure.
+.Ss \&writec
+Write to an open file without appending a newline.
+Ignored because insecure.
+.Ss \&writem
+Write macro or string to an open file.
+Ignored because insecure.
+.Ss \&xflag
+Set the extension level.
+This is a Heirloom extension and currently ignored.
+.Ss Numerical expressions
+The
+.Sx \&nr ,
+.Sx \&if ,
+and
+.Sx \&ie
+requests accept integer numerical expressions as arguments.
+These are always evaluated using the C
+.Vt int
+type; integer overflow works the same way as in the C language.
+Numbers consist of an arbitrary number of digits
+.Sq 0
+to
+.Sq 9
+prefixed by an optional sign
+.Sq +
+or
+.Sq - .
+Each number may be followed by one optional scaling unit described below
+.Sx Scaling Widths .
+The following equations hold:
+.Bd -literal -offset indent
+1i = 6v = 6P = 10m = 10n = 72p = 1000M = 240u = 240
+254c = 100i = 24000u = 24000
+1f = 65536u = 65536
+.Ed
+.Pp
+The following binary operators are implemented.
+Unless otherwise stated, they behave as in the C language:
+.Pp
+.Bl -tag -width 2n -compact
+.It Ic +
+addition
+.It Ic -
+subtraction
+.It Ic *
+multiplication
+.It Ic /
+division
+.It Ic %
+remainder of division
+.It Ic <
+less than
+.It Ic >
+greater than
+.It Ic ==
+equal to
+.It Ic =
+equal to, same effect as
+.Ic ==
+(this differs from C)
+.It Ic <=
+less than or equal to
+.It Ic >=
+greater than or equal to
+.It Ic <>
+not equal to (corresponds to C
+.Ic != ;
+this one is of limited portability, it is supported by Heirloom roff,
+but not by groff)
+.It Ic &
+logical and (corresponds to C
+.Ic && )
+.It Ic \&:
+logical or (corresponds to C
+.Ic \&|| )
+.It Ic <?
+minimum (not available in C)
+.It Ic >?
+maximum (not available in C)
+.El
+.Pp
+There is no concept of precedence; evaluation proceeds from left to right,
+except when subexpressions are enclosed in parantheses.
+Inside parentheses, whitespace is ignored.
+.Sh ESCAPE SEQUENCE REFERENCE
+The
+.Xr mandoc 1
+.Nm
+parser recognises the following escape sequences.
+Note that the
+.Nm
+language defines more escape sequences not implemented in
+.Xr mandoc 1 .
+In
+.Xr mdoc 7
+and
+.Xr man 7
+documents, using escape sequences is discouraged except for those
+described in the
+.Sx LANGUAGE SYNTAX
+section above.
+.Pp
+A backslash followed by any character not listed here
+simply prints that character itself.
+.Ss \e<newline>
+A backslash at the end of an input line can be used to continue the
+logical input line on the next physical input line, joining the text
+on both lines together as if it were on a single input line.
+.Ss \e<space>
+The escape sequence backslash-space
+.Pq Sq \e\ \&
+is an unpaddable space-sized non-breaking space character; see
+.Sx Whitespace .
+.Ss \e\(dq
+The rest of the input line is treated as
+.Sx Comments .
+.Ss \e%
+Hyphenation allowed at this point of the word; ignored by
+.Xr mandoc 1 .
+.Ss \e&
+Non-printing zero-width character; see
+.Sx Whitespace .
+.Ss \e\(aq
+Acute accent special character; use
+.Sq \e(aa
+instead.
+.Ss \e( Ns Ar cc
+.Sx Special Characters
+with two-letter names, see
+.Xr mandoc_char 7 .
+.Ss \e*[ Ns Ar name ]
+Interpolate the string with the
+.Ar name ;
+see
+.Sx Predefined Strings
+and
+.Sx ds .
+For short names, there are variants
+.No \e* Ns Ar c
+and
+.No \e*( Ns Ar cc .
+.Ss \e,
+Left italic correction (groff extension); ignored by
+.Xr mandoc 1 .
+.Ss \e-
+Special character
+.Dq mathematical minus sign .
+.Ss \e/
+Right italic correction (groff extension); ignored by
+.Xr mandoc 1 .
+.Ss \e[ Ns Ar name ]
+.Sx Special Characters
+with names of arbitrary length, see
+.Xr mandoc_char 7 .
+.Ss \e^
+One-twelfth em half-narrow space character, effectively zero-width in
+.Xr mandoc 1 .
+.Ss \e`
+Grave accent special character; use
+.Sq \e(ga
+instead.
+.Ss \e{
+Begin conditional input; see
+.Sx if .
+.Ss \e\(ba
+One-sixth em narrow space character, effectively zero-width in
+.Xr mandoc 1 .
+.Ss \e}
+End conditional input; see
+.Sx if .
+.Ss \e~
+Paddable non-breaking space character.
+.Ss \e0
+Digit width space character.
+.Ss \eA\(aq Ns Ar string Ns \(aq
+Anchor definition; ignored by
+.Xr mandoc 1 .
+.Ss \eB\(aq Ns Ar string Ns \(aq
+Interpolate
+.Sq 1
+if
+.Ar string
+conforms to the syntax of
+.Sx Numerical expressions
+explained above and
+.Sq 0
+otherwise.
+.Ss \eb\(aq Ns Ar string Ns \(aq
+Bracket building function; ignored by
+.Xr mandoc 1 .
+.Ss \eC\(aq Ns Ar name Ns \(aq
+.Sx Special Characters
+with names of arbitrary length.
+.Ss \ec
+When encountered at the end of an input text line,
+the next input text line is considered to continue that line,
+even if there are request or macro lines in between.
+No whitespace is inserted.
+.Ss \eD\(aq Ns Ar string Ns \(aq
+Draw graphics function; ignored by
+.Xr mandoc 1 .
+.Ss \ed
+Move down by half a line; ignored by
+.Xr mandoc 1 .
+.Ss \ee
+Backslash special character.
+.Ss \eF[ Ns Ar name ]
+Switch font family (groff extension); ignored by
+.Xr mandoc 1 .
+For short names, there are variants
+.No \eF Ns Ar c
+and
+.No \eF( Ns Ar cc .
+.Ss \ef[ Ns Ar name ]
+Switch to the font
+.Ar name ,
+see
+.Sx Text Decoration .
+For short names, there are variants
+.No \ef Ns Ar c
+and
+.No \ef( Ns Ar cc .
+.Ss \eg[ Ns Ar name ]
+Interpolate the format of a number register; ignored by
+.Xr mandoc 1 .
+For short names, there are variants
+.No \eg Ns Ar c
+and
+.No \eg( Ns Ar cc .
+.Ss \eH\(aq Ns Oo +|- Oc Ns Ar number Ns \(aq
+Set the height of the current font; ignored by
+.Xr mandoc 1 .
+.Ss \eh\(aq Ns Ar number Ns \(aq
+Horizontal motion; ignored by
+.Xr mandoc 1 .
+.Ss \ek[ Ns Ar name ]
+Mark horizontal input place in register; ignored by
+.Xr mandoc 1 .
+For short names, there are variants
+.No \ek Ns Ar c
+and
+.No \ek( Ns Ar cc .
+.Ss \eL\(aq Ns Ar number Ns Oo Ar c Oc Ns \(aq
+Vertical line drawing function; ignored by
+.Xr mandoc 1 .
+.Ss \el\(aq Ns Ar number Ns Oo Ar c Oc Ns \(aq
+Horizontal line drawing function; ignored by
+.Xr mandoc 1 .
+.Ss \eM[ Ns Ar name ]
+Set fill (background) color (groff extension); ignored by
+.Xr mandoc 1 .
+For short names, there are variants
+.No \eM Ns Ar c
+and
+.No \eM( Ns Ar cc .
+.Ss \em[ Ns Ar name ]
+Set glyph drawing color (groff extension); ignored by
+.Xr mandoc 1 .
+For short names, there are variants
+.No \em Ns Ar c
+and
+.No \em( Ns Ar cc .
+.Ss \eN\(aq Ns Ar number Ns \(aq
+Character
+.Ar number
+on the current font.
+.Ss \en[ Ns Ar name ]
+Interpolate the number register
+.Ar name .
+For short names, there are variants
+.No \en Ns Ar c
+and
+.No \en( Ns Ar cc .
+.Ss \eo\(aq Ns Ar string Ns \(aq
+Overstrike, writing all the characters contained in the
+.Ar string
+to the same output position.
+In terminal and HTML output modes,
+only the last one of the characters is visible.
+.Ss \eR\(aq Ns Ar name Oo +|- Oc Ns Ar number Ns \(aq
+Set number register; ignored by
+.Xr mandoc 1 .
+.Ss \eS\(aq Ns Ar number Ns \(aq
+Slant output; ignored by
+.Xr mandoc 1 .
+.Ss \es\(aq Ns Oo +|- Oc Ns Ar number Ns \(aq
+Change point size; ignored by
+.Xr mandoc 1 .
+Alternative forms
+.No \es Ns Oo +|- Oc Ns Ar n ,
+.No \es Ns Oo +|- Oc Ns \(aq Ns Ar number Ns \(aq ,
+.No \es Ns [ Oo +|- Oc Ns Ar number ] ,
+and
+.No \es Ns Oo +|- Oc Ns [ Ar number Ns ]
+are also parsed and ignored.
+.Ss \et
+Horizontal tab; ignored by
+.Xr mandoc 1 .
+.Ss \eu
+Move up by half a line; ignored by
+.Xr mandoc 1 .
+.Ss \eV[ Ns Ar name ]
+Interpolate an environment variable; ignored by
+.Xr mandoc 1 .
+For short names, there are variants
+.No \eV Ns Ar c
+and
+.No \eV( Ns Ar cc .
+.Ss \ev\(aq Ns Ar number Ns \(aq
+Vertical motion; ignored by
+.Xr mandoc 1 .
+.Ss \ew\(aq Ns Ar string Ns \(aq
+Interpolate the width of the
+.Ar string .
+The
+.Xr mandoc 1
+implementation assumes that after expansion of user-defined strings, the
+.Ar string
+only contains normal characters, no escape sequences, and that each
+character has a width of 24 basic units.
+.Ss \eX\(aq Ns Ar string Ns \(aq
+Output
+.Ar string
+as device control function; ignored in nroff mode and by
+.Xr mandoc 1 .
+.Ss \ex\(aq Ns Ar number Ns \(aq
+Extra line space function; ignored by
+.Xr mandoc 1 .
+.Ss \eY[ Ns Ar name ]
+Output a string as a device control function; ignored in nroff mode and by
+.Xr mandoc 1 .
+For short names, there are variants
+.No \eY Ns Ar c
+and
+.No \eY( Ns Ar cc .
+.Ss \eZ\(aq Ns Ar string Ns \(aq
+Print
+.Ar string
+with zero width and height; ignored by
+.Xr mandoc 1 .
+.Ss \ez
+Output the next character without advancing the cursor position.
+.Sh COMPATIBILITY
+The
+.Xr mandoc 1
+implementation of the
+.Nm
+language is intentionally incomplete.
+Unimplemented features include:
+.Pp
+.Bl -dash -compact
+.It
+For security reasons,
+.Xr mandoc 1
+never reads or writes external files except via
+.Sx \&so
+requests with safe relative paths.
+.It
+There is no automatic hyphenation, no adjustment to the right margin,
+and no centering; the output is always set flush-left.
+.It
+Support for setting tabulator positions
+and tabulator and leader characters is missing,
+and support for manually changing indentation is limited.
+.It
+The
+.Sq u
+scaling unit is the default terminal unit.
+In traditional troff systems, this unit changes depending on the
+output media.
+.It
+Width measurements are implemented in a crude way
+and often yield wrong results.
+Explicit movement requests and escapes are ignored.
+.It
+There is no concept of output pages, no support for floats,
+graphics drawing, and picture inclusion;
+terminal output is always continuous.
+.It
+Requests regarding color, font families, and glyph manipulation
+are ignored.
+Font support is very limited.
+Kerning is not implemented, and no ligatures are produced.
+.It
+The
+.Qq \(aq
+macro control character does not suppress output line breaks.
+.It
+Diversions are not implemented,
+and support for traps is very incomplete.
+.It
+While recursion is supported,
+.Sx \&while
+loops are not.
+.El
+.Pp
+The special semantics of the
+.Cm nS
+number register is an idiosyncracy of
+.Ox
+manuals and not supported by other
+.Xr mdoc 7
+implementations.
+.Sh SEE ALSO
+.Xr mandoc 1 ,
+.Xr eqn 7 ,
+.Xr man 7 ,
+.Xr mandoc_char 7 ,
+.Xr mdoc 7 ,
+.Xr tbl 7
+.Rs
+.%A Joseph F. Ossanna
+.%A Brian W. Kernighan
+.%I AT&T Bell Laboratories
+.%T Troff User's Manual
+.%R Computing Science Technical Report
+.%N 54
+.%C Murray Hill, New Jersey
+.%D 1976 and 1992
+.%U http://www.kohala.com/start/troff/cstr54.ps
+.Re
+.Rs
+.%A Joseph F. Ossanna
+.%A Brian W. Kernighan
+.%A Gunnar Ritter
+.%T Heirloom Documentation Tools Nroff/Troff User's Manual
+.%D September 17, 2007
+.%U http://heirloom.sourceforge.net/doctools/troff.pdf
+.Re
+.Sh HISTORY
+The RUNOFF typesetting system, whose input forms the basis for
+.Nm ,
+was written in MAD and FAP for the CTSS operating system by Jerome E.
+Saltzer in 1964.
+Doug McIlroy rewrote it in BCPL in 1969, renaming it
+.Nm .
+Dennis M. Ritchie rewrote McIlroy's
+.Nm
+in PDP-11 assembly for
+.At v1 ,
+Joseph F. Ossanna improved roff and renamed it nroff
+for
+.At v2 ,
+then ported nroff to C as troff, which Brian W. Kernighan released with
+.At v7 .
+In 1989, James Clarke re-implemented troff in C++, naming it groff.
+.Sh AUTHORS
+.An -nosplit
+This
+.Nm
+reference was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv
+and
+.An Ingo Schwarze Aq Mt schwarze@@openbsd.org .
+@
+
+
+1.74
+log
+@Parse and ignore the escape sequences \, and \/ (italic corrections).
+Actually using these is very stupid because they are groff extensions
+and other roff(7) implementations typically print unintended characters
+at the places where they are used.
+Nevertheless, some manuals contain them, for example ocserv(8).
+Problem reported by Kurt Jaeger <pi at FreeBSD>.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.73 2015/08/29 21:37:20 schwarze Exp $
+d1071 1
+a1071 1
+it evalutes to true if the rest of COND is the name of an existing
+d1345 1
+a1345 1
+Exexute the rest of the input line as a request or macro line.
+d1587 1
+a1587 1
+Change tab repetion character.
+d1687 1
+a1687 1
+up to the sepcified length.
+d1782 1
+a1782 1
+There is no concept of precendence; evaluation proceeds from left to right,
+@
+
+
+1.73
+log
+@Implement the escape sequence \\$*, expanding to all arguments
+of the current user-defined macro.
+This is another missing feature required for ocserv(8).
+Problem reported by Kurt Jaeger <pi at FreeBSD>.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.72 2015/05/31 23:13:22 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2010, 2011, 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: May 31 2015 $
+d1842 3
+d1848 3
+@
+
+
+1.72
+log
+@Implement the roff(7) `r' (register exists) conditional.
+Missing feature found by Markus <Waldeck at gmx dot de>
+in Debian's bash(1) manual page.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.71 2015/04/29 18:35:00 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 29 2015 $
+d668 2
+@
+
+
+1.71
+log
+@Replace the kludge for the \z escape sequence by an actual
+implementation.  As a side effect, minus ten lines of code.
+
+As another side effect, this also fixes the assertion failure that
+used to be triggered by "\z\o'ab'c" at the beginning of an output
+line, found by jsg@@ with afl (test case 022/Apr27).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.70 2015/02/17 17:16:52 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 17 2015 $
+a1059 2
+.Sq r
+.Pq register accessed ,
+d1067 5
+@
+
+
+1.70
+log
+@Let .it accept numerical expressions, not just numerical constants.
+For .it, ignore scaling units in roff_getnum().
+Inside parentheses, skip whitespace after a sign in roff_getnum().
+Parse and ignore unary plus in roff_getnum().
+As a bonus, get rid of the only call to mandoc_strntoi() in roff.c.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.69 2015/01/29 00:33:57 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 29 2015 $
+d2031 1
+a2031 4
+Output the next character without advancing the cursor position;
+approximated in
+.Xr mandoc 1
+by simply skipping the next character.
+@
+
+
+1.69
+log
+@Radical cleanup of COMPATIBILITY sections:
+Remove lots of lies, dozens of irrelevant implementation details,
+and all references to groff versions older than 1.17.  Move relevant
+information to the pages where it belongs, and out of mandoc(1) in
+particular.  Add some missing general remarks to roff(7), where it
+fits the character and purpose of the page much better.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.68 2015/01/23 20:18:40 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 23 2015 $
+d1199 1
+a1199 1
+.D1 Pf . Cm it Ar number macro
+d1203 8
+a1210 3
+will be invoked after processing the specified
+.Ar number
+of input text lines.
+@
+
+
+1.68
+log
+@While ignoring the .ta (set tab stops) and .ti (temp indent) requests
+is sometimes harmless, it often causes seriously ugly output,
+so flag these requests as unsupported rather than ignoring them.
+Discussed with naddy@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.67 2015/01/23 00:42:00 schwarze Exp $
+d2031 3
+a2033 1
+This section documents compatibility between mandoc and other
+d2035 2
+a2036 5
+implementations, at this time limited to GNU troff
+.Pq Qq groff .
+The term
+.Qq historic groff
+refers to groff version 1.15.
+d2040 13
+d2056 1
+a2056 1
+In traditional troff systems, this unit would change depending on the
+d2059 12
+a2070 12
+In mandoc, the
+.Sx \&EQ ,
+.Sx \&TE ,
+.Sx \&TS ,
+and
+.Sx \&T& ,
+macros are considered regular macros.
+In all other
+.Nm
+implementations, these are special macros that must be specified without
+spacing between the control character (which must be a period) and the
+macro name.
+d2073 2
+a2074 2
+.Cm nS
+register is only compatible with OpenBSD's groff-1.15.
+d2076 2
+a2077 5
+Historic groff did not accept white-space before a custom
+.Ar end
+macro for the
+.Sx \&ig
+request.
+d2079 3
+a2081 4
+The
+.Sx \&if
+and family would print funny white-spaces with historic groff when
+using the next-line syntax.
+d2083 8
+@
+
+
+1.67
+log
+@Wonders of roff(7): Integer numbers in numerical expressions can carry
+scaling units, and some manuals (e.g. in devel/grcs) actually use that,
+so let's support it.  Missing feature reported by naddy@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.66 2015/01/22 00:09:03 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 22 2015 $
+d1442 1
+a1442 1
+This is a Heirloom extension and currently ignored.
+d1575 1
+a1575 1
+Currently ignored.
+d1585 1
+a1585 1
+Currently ignored.
+d1723 1
+a1723 1
+254c = 100i = 24000u = 24000 
+@
+
+
+1.66
+log
+@improve wording; patch from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.65 2015/01/21 20:33:25 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 21 2015 $
+d1718 8
+@
+
+
+1.65
+log
+@Rudimentary implementation of the roff(7) \o escape sequence (overstrike).
+This is of some relevance because the pod2man(1) preamble abuses it
+for the icelandic letter Thorn, instead of simply using \(TP and \(Tp.
+Missing feature found by sthen@@ in DateTime::Locale::is_IS(3p).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.64 2015/01/20 22:45:07 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 20 2015 $
+d1951 1
+a1951 1
+Overstrike, that is, write all the characters contained in the
+@
+
+
+1.64
+log
+@typo fixes from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.63 2015/01/20 21:16:51 schwarze Exp $
+d1951 5
+a1955 4
+Overstrike
+.Ar string ;
+ignored by
+.Xr mandoc 1 .
+@
+
+
+1.63
+log
+@Split the -Werror message level into -Werror (broken manual, probably
+using mandoc is better than using groff) and -Wunsupp (manual using
+unsupported low-level roff(7) feature, probably using groff is better
+than using mandoc).  Once this feature is complete, it is intended
+to help porting, making the decision whether to USE_GROFF easier.
+
+As a first step, distinguish four classes of roff(7) requests:
+1. Supported (currently 24 requests)
+2. Currently ignored because unimportant (120)  ->  no message
+3. Ignored for good because insecure (14)  ->  -Werror
+4. Currently unsupported (68)  ->  these trigger the new -Wunsupp messages
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.62 2015/01/20 19:39:34 schwarze Exp $
+d1006 1
+a1006 1
+.Ss \&hys
+d1321 1
+a1321 1
+.Xr mdoc 7.
+d1555 1
+a1555 1
+.Ss \&sty
+@
+
+
+1.62
+log
+@change spelling of centre to center: consistent with other man pages
+and the name of the syntax elements being described; from tedu@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.61 2014/12/25 17:23:32 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 25 2014 $
+d398 5
+a402 4
+Note that the
+.Nm
+language defines many more requests not implemented in
+.Xr mandoc 1 .
+d405 12
+a416 4
+This line-scoped request is intended to have one argument to select
+normal, left, right, or center adjustment for subsequent text.
+Currently, it is ignored including its arguments,
+and the number of arguments is not checked.
+a420 4
+.Ss \&ami
+Append to a macro definition, specifying the macro name indirectly.
+The syntax of this request is the same as that of
+.Sx \&dei .
+d423 1
+a423 1
+during macro execution.
+d432 17
+d455 65
+d521 1
+a521 1
+Changes the control character.
+d534 57
+a590 4
+This line-scoped request is intended to take one integer argument,
+specifying how many lines to center.
+Currently, it is ignored including its arguments, and the number
+of arguments is not checked.
+d690 16
+d709 1
+a709 1
+macro, specifying the macro name indirectly.
+d719 1
+a719 1
+.Ss \&de1
+d724 2
+a725 4
+compatibility mode switched off during macro execution.
+This is a GNU extension not available in traditional
+.Nm
+implementations and not even in older versions of groff.
+d731 15
+a745 1
+.Sx \&de .
+d804 26
+d844 3
+d851 7
+d863 15
+d880 47
+a926 4
+This line-scoped request is intended to have one argument specifying
+the font family to be selected.
+It is a groff extension, and currently, it is ignored including its
+arguments, and the number of arguments is not checked.
+d955 33
+d990 1
+a990 1
+This line-scoped request is currently ignored.
+d993 16
+a1008 1
+This line-scoped request is currently ignored.
+d1186 71
+d1274 38
+d1315 7
+a1321 1
+This line-scoped request is currently ignored.
+d1324 13
+a1336 1
+This line-scoped request is currently ignored.
+d1374 6
+d1382 35
+a1416 3
+This line-scoped request is intended to take no arguments.
+Currently, it is ignored including its arguments,
+and the number of arguments is not checked.
+d1419 14
+a1432 3
+This line-scoped request is intended to take one height argument.
+Currently, it is ignored including its arguments,
+and the number of arguments is not checked.
+d1435 38
+a1472 3
+This line-scoped request is intended to take one numerical argument.
+Currently, it is ignored including its arguments,
+and the number of arguments is not checked.
+d1478 6
+d1489 21
+d1543 29
+d1574 27
+a1600 2
+This line-scoped request can take an arbitrary number of arguments.
+Currently, it is ignored including its arguments.
+d1618 22
+a1639 9
+.Ss \&T&
+Re-start a table layout, retaining the options of the prior table
+invocation.
+See
+.Sx \&TS .
+.Ss \&TE
+End a table context.
+See
+.Sx \&TS .
+d1645 55
+@
+
+
+1.61
+log
+@Reduce memory and time consumption on certain malformed input files
+by limiting the length of expanded input lines during the
+(usually recursive) expansion of user defined strings.
+Resource hogging found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.60 2014/12/02 10:08:06 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 2 2014 $
+d405 1
+a405 1
+normal, left, right, or centre adjustment for subsequent text.
+@
+
+
+1.60
+log
+@Fix the implementation and documentation of \c (continue text input line).
+In particular, make it work in no-fill mode, too.
+Reminded by Carsten dot Kunze at arcor dot de (Heirloom roff).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.59 2014/11/19 01:20:25 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 19 2014 $
+d546 4
+a549 2
+to a large, but finite number.
+Do not rely on the exact value of this limit.
+@
+
+
+1.59
+log
+@Support the ".if v" conditional operator (vroff mode, always false)
+for groff compatibility because pod2man(1) uses it that way.
+Weirdly, groff documents it as "for compatibility with other
+troff versions" but neither Heirloom nor Plan 9 have it.
+Issue reported by giovanni@@ via sthen@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.58 2014/09/07 00:21:53 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 7 2014 $
+d1199 4
+a1202 2
+Interrupt text processing to insert requests or macros; ignored by
+.Xr mandoc 1 .
+@
+
+
+1.58
+log
+@Parse and ignore the .pl (page length) request;
+Daniel Levai reports that Slackware Linux uses this.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.57 2014/08/14 20:27:45 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 14 2014 $
+a749 1
+or
+d752 3
+@
+
+
+1.57
+log
+@remove double word; from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.56 2014/08/13 20:34:29 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 13 2014 $
+d938 5
+@
+
+
+1.56
+log
+@Begin cleaning up scaling units.
+Start with the horizontal terminal specifiers, making sure that they match
+up with troff.
+Then move on to PS, PDF, and HTML, noting that we stick to the terminal
+default width for "u".
+Lastly, fix some completely-wrong documentation and note that we diverge
+from troff w/r/t "u".
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.55 2014/07/07 11:35:06 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 7 2014 $
+d759 1
+a759 1
+It evaluates to true if the the result is positive,
+@
+
+
+1.55
+log
+@implement .dei and .ami
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.54 2014/04/08 01:37:27 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 8 2014 $
+d242 1
+a242 1
+synonym for
+d244 1
+d258 1
+a258 1
+default horizontal span
+a265 1
+.Sq u ,
+d1351 6
+@
+
+
+1.54
+log
+@Fully implement the \B (validate numerical expression) and
+partially implement the \w (measure text width) escape sequence
+in a way that makes them usable in numerical expressions and in
+conditional requests, similar to how \n (interpolate number register)
+and \* (expand user-defined string) are implemented.
+
+This lets mandoc(1) handle the baroque low-level roff code
+found at the beginning of the ggrep(1) manual.
+Thanks to pascal@@ for the report.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.53 2014/04/07 15:07:13 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 7 2014 $
+a411 3
+It is currently ignored by
+.Xr mandoc 1 ,
+as are its children.
+a415 3
+It is currently ignored by
+.Xr mandoc 1 ,
+as are its children.
+d421 6
+a426 3
+It is currently ignored by
+.Xr mandoc 1 ,
+as are its children.
+d554 7
+a560 3
+It is currently ignored by
+.Xr mandoc 1 ,
+as are its children.
+@
+
+
+1.53
+log
+@Almost complete implementation of roff(7) numerical expressions.
+Support all binary operators except ';' (scale conversion).
+Fully support chained operations and nested parentheses.
+Use this for the .nr, .if, and .ie requests.
+While here, fix parsing of integer numbers in roff_getnum().
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.52 2014/04/05 20:34:57 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 5 2014 $
+d1175 3
+a1177 1
+Test whether
+d1179 5
+a1183 2
+is a numerical expession; ignored by
+.Xr mandoc 1 .
+d1307 7
+a1313 3
+.Ar string ;
+ignored by
+.Xr mandoc 1 .
+@
+
+
+1.52
+log
+@Implement the roff(7) .rr (remove register) request.
+As reported by sthen@@, the perl-5.18 pod2man(1) preamble
+thinks cool kids use that in manuals.  I hope *you* know better.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.51 2014/03/30 21:28:01 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 30 2014 $
+d754 6
+a759 12
+If COND starts with a digit, optionally prefixed by a minus sign,
+it is evaluated as a numerical expression of the form
+.Ar number operator number ,
+where
+.Ar operator
+is one of
+.Sq < ,
+.Sq <= ,
+.Sq = ,
+.Sq >= ,
+or
+.Sq > .
+d901 1
+a901 1
+.D1 Pf \. Cm \&nr Ar name Oo +|- Oc Ns Ar value
+d903 5
+a907 3
+The
+.Ar value
+may, at the moment, only be an integer.
+d1020 67
+@
+
+
+1.51
+log
+@Support relative arguments to .ll (increase or decrease line length).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.50 2014/03/30 19:47:48 schwarze Exp $
+a900 6
+.Ss \&rm
+Remove a request, macro or string.
+This request is intended to have one argument,
+the name of the request, macro or string to be undefined.
+Currently, it is ignored including its arguments,
+and the number of arguments is not checked.
+d946 10
+@
+
+
+1.50
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.49 2014/03/17 06:57:48 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 17 2014 $
+d881 1
+a881 1
+.D1 Pf . Cm \&ll Op Ar width
+d887 2
+@
+
+
+1.49
+log
+@sync to OpenBSD: .ft is a roff(7) request, not a man(7) macro,
+and it is not even used frequently in man(7)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.48 2014/03/08 04:43:54 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 8 2014 $
+d877 15
+@
+
+
+1.48
+log
+@Improve .if/.ie condition handling.
+* Support string comparisons.
+* Support negation not only for numerical, but for all conditions.
+* Switch the `o' condition from false to true.
+* Handle the `c', `d', and `r' conditions as false for now.
+* Use int for boolean data instead of rolling our own "enum roffrule";
+needed such that we can use the standard ! and == operators.
+
+Havard Eidnes reported via the NetBSD bug tracking system that some
+Tcl*(3) manuals need this, and Thomas Klausner <wiz at NetBSD>
+forwarded the report to me.  This doesn't make the crazy Tcl*(3)
+macrology maze happy yet, but brings us a bit closer.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.47 2014/02/14 23:50:57 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 14 2014 $
+d662 28
+@
+
+
+1.47
+log
+@document .as and .ce
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.46 2013/12/26 02:43:18 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 26 2013 $
+d680 67
+a746 4
+Right now, the conditional evaluates to true
+if and only if it starts with the letter
+.Sy n ,
+indicating processing in nroff style as opposed to troff style.
+a763 33
+This request has the following syntax:
+.Bd -literal -offset indent
+\&.if COND \e{\e
+BODY...
+\&.\e}
+.Ed
+.Bd -literal -offset indent
+\&.if COND \e{ BODY
+BODY... \e}
+.Ed
+.Bd -literal -offset indent
+\&.if COND \e{ BODY
+BODY...
+\&.\e}
+.Ed
+.Bd -literal -offset indent
+\&.if COND \e
+BODY
+.Ed
+.Pp
+COND is a conditional statement.
+roff allows for complicated conditionals; mandoc is much simpler.
+At this time, mandoc supports only
+.Sq n ,
+evaluating to true;
+and
+.Sq t ,
+.Sq e ,
+and
+.Sq o ,
+evaluating to false.
+All other invocations are read up to the next end of line or space and
+evaluate as false.
+d767 3
+a769 2
+scope continues until a closing-brace escape sequence
+.Sq \.\e} .
+@
+
+
+1.46
+log
+@The roff language really has two groups of basic building blocks:
+Requests and escape sequences.  Consequently, supplement the
+REQUEST REFERENCE by an ESCAPE SEQUENCE REFERENCE, such that people
+no longer need to guess or experiment what mandoc(1) implements,
+what it parses and ignores, and what it doesn't handle at all.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.45 2013/12/15 21:23:52 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2010, 2011, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: December 15 2013 $
+d430 6
+d448 6
+@
+
+
+1.45
+log
+@The "value" argument to the roff(7) .nr requests ends right before
+the first non-digit character.  While here, implement and document
+an optional sign, requesting increment or decrement, as documented
+in the Ossanna/Kernighan/Ritter troff manual and supported by groff.
+
+Reported by bentley@@ on discuss@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.44 2013/10/22 20:38:00 schwarze Exp $
+d3 2
+a4 2
+.\" Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: October 22 2013 $
+d35 1
+a35 1
+requests intermixed with their
+d44 2
+a45 2
+requests.
+Only these requests supported by
+d88 1
+a88 1
+indicates the start of an escape sequence for
+d96 3
+d830 1
+a830 1
+If it is prefixed by a sign, the register will be 
+d932 243
+@
+
+
+1.44
+log
+@Parse and ignore .hw (hyphenation points in words); this is safe because
+we don't do hyphenation anyway, so there is no point in throwing an ERROR
+when encountering .hw.
+Real-world usage of the request found by naddy@@ in sysutils/dwdiff(1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.43 2013/10/14 01:43:14 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 14 2013 $
+d817 1
+a817 1
+Define a register.
+d822 1
+a822 1
+.D1 Pf \. Cm \&nr Ar name Ar value
+d827 4
+a830 1
+So far, only the following register
+d832 1
+a832 1
+is recognised:
+@
+
+
+1.43
+log
+@Parse and ignore the .fam (font family) request.
+Fixes irunner(1) in devel/ipython and uim-xim(1) in inputmethods/uim.
+Thanks to naddy@@ for bringing these to my attention.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.42 2013/08/08 20:07:47 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 8 2013 $
+d647 3
+@
+
+
+1.42
+log
+@Implement the roff(7) font-escape sequence \f(BI "bold+italic".
+This improves the formatting of about 40 base manuals
+and reduces groff-mandoc formatting differences in base by about 5%.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.41 2013/07/13 19:41:16 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 13 2013 $
+d641 6
+@
+
+
+1.41
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.40 2013/04/28 07:54:01 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 28 2013 $
+d149 5
+d157 1
+a157 1
+Write in bold, then switch to regular font mode.
+d159 3
+a161 1
+Write in italic, then return to previous font mode.
+@
+
+
+1.40
+log
+@- (mdoc.7) fix Xr to self
+- double word fix
+from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.39 2012/06/12 20:21:04 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: June 12 2012 $
+d997 1
+a997 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv ;
+d999 1
+a999 2
+.An Ingo Schwarze ,
+.Mt schwarze@@openbsd.org .
+@
+
+
+1.39
+log
+@Add `cc' support.
+This was reported by espie@@ and in the TODO.
+Caveat: `cc' has buggy behaviour when invoked in groff(1) and followed
+by a line-breaking control character macro, e.g., in a -man doc,
+
+  .cc |
+  .B foo
+  'B foo
+  |cc
+  'B foo
+
+will cause groff(1) to behave properly for `.B' but inline the macro
+definition for `B' when invoked with the line-breaking macro.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.38 2012/06/12 19:50:50 kristaps Exp $
+d911 1
+a911 1
+This section documents compatibility between mandoc and other other
+@
+
+
+1.38
+log
+@Fix typo (back-space -> backslash).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.37 2011/12/11 00:38:11 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 11 2011 $
+d420 12
+@
+
+
+1.37
+log
+@Explain where .so paths are rooted, and why, and discourage its use;
+feedback and ok jmc@@, suggested by and ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.36 2011/11/23 02:12:24 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 23 2011 $
+d86 1
+a86 1
+The back-space character
+@
+
+
+1.36
+log
+@typo reported by Steffen Daode Nurpmeso <sdaoden at googlemail dot com>
+and remove a trailing blank noticed by jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.35 2011/11/21 22:19:23 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 21 2011 $
+d847 16
+@
+
+
+1.35
+log
+@Update historical record to be historical and not made-up.  Data from
+<manpages.bsd.lv/history.html>.  Ok schwarze@@ (with modifications) and
+Jason McIntyre.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.34 2011/11/06 14:43:14 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 6 2011 $
+d955 2
+a956 2
+.Nm 
+in PDP-11 assmebly for
+@
+
+
+1.34
+log
+@Accomodate for \f(Cx formatting.  Noted by Andreas Vogele, thanks!
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.33 2011/09/26 23:07:31 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 26 2011 $
+d948 1
+a948 4
+The RUNOFF typesetting system was written in PL/1 for the CTSS
+operating system by Jerome ("Jerry") E. Saltzer in 1961.
+It was first used as the main documentation tool by Multics since 1963.
+Robert ("Bob") H. Morris ported it to the GE-635 and called it
+d950 14
+a963 3
+Doug McIlroy rewrote it in BCPL in 1969,
+Joseph F. Ossanna rewrote it in PDP-11 assembly in 1973,
+and Brian W. Kernighan rewrote it in C in 1975.
+@
+
+
+1.33
+log
+@Reorganize part of the content:
+
+1) Move the LANGUAGE SYNTAX from mdoc(7) and man(7) to roff(7),
+it's common to both and it's actually roff syntax.
+2) Move the MACRO SYNTAX down to the bottom, such that the less
+technical parts MANUAL STRUCTURE and MACRO OVERVIEW get to the top.
+
+Getting everything to again fit together after the reshuffling
+required various adjustments; also adjust and improve
+the DESCRIPTIONS while there.
+
+feedback and "go ahead"  jmc@@ kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.32 2011/09/02 19:37:35 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 2 2011 $
+d146 2
+@
+
+
+1.32
+log
+@Fix typos and spelling errors found by demandoc -w | spell -b.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.31 2011/08/18 08:58:44 kristaps Exp $
+d3 2
+a4 2
+.\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2010 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: August 18 2011 $
+d28 1
+a28 1
+In particular, it serves as the basis for the
+d32 2
+a33 2
+manual formatting macro languages.
+This manual describes the subset of the
+d35 6
+a40 1
+language accepted by the
+d42 16
+a57 1
+utility.
+d59 1
+a59 1
+Input lines beginning with the control characters
+d61 3
+d65 17
+a81 10
+.Sq \(aq
+are parsed for requests and macros.
+These define the document structure, change the processing state
+and manipulate the formatting.
+Some requests and macros also produce formatted output,
+while others do not.
+.Pp
+All other input lines provide free-form text to be printed;
+the formatting of free-form text depends on the respective
+processing context.
+d86 51
+a136 2
+To produce other characters in the output, use the escape sequences
+documented in the
+d138 163
+a300 1
+manual.
+d327 5
+a331 1
+Macros can be defined by the
+d338 6
+a345 5
+.Pp
+A quoted argument may contain whitespace, and pairs of double quote
+characters
+.Pq Sq Qq
+resolve to single double quote characters.
+d363 18
+@
+
+
+1.31
+log
+@Replace the old `An'/`Aq' AUTHORS note with `An'/`Mt'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.30 2011/07/28 14:17:11 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 28 2011 $
+d93 1
+a93 1
+To be recognized as the beginning of a quoted argument, the opening
+d121 1
+a121 1
+parser recognizes the following requests.
+d129 1
+a129 1
+normal, left, right, or center adjustment for subsequent text.
+@
+
+
+1.30
+log
+@An implementation of `tr'.  This routes allocations of TEXT nodes
+through libroff, which does the appropriate translations of `tr'.  This
+is SLOW: it uses the backend of `ds' and `de', which is a simple linear
+list.  However, unlike `ds' and `de', it iterates over EACH CHARACTER of
+the entire file looking for replacements.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.29 2011/05/24 15:22:14 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: May 24 2011 $
+d692 1
+a692 1
+This partial
+d695 2
+a696 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv
+d698 2
+a699 1
+.An Ingo Schwarze Aq schwarze@@openbsd.org .
+@
+
+
+1.29
+log
+@Have conditional closure for both text and macro lines call through to
+ccond().  Fix the text handler to behave like the macro handler
+regarding escaped \}.  Make \} actually become a zero-width space, too,
+and clean up the documentation in this regard.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.28 2011/04/30 10:18:25 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 30 2011 $
+d587 15
+a601 4
+This request is intended to have one argument,
+consisting of an even number of characters.
+Currently, it is ignored including its arguments,
+and the number of arguments is not checked.
+@
+
+
+1.28
+log
+@No code change: fixing spelling errors.  From a patch by uqs@@.  Thanks!
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.27 2011/02/09 10:03:02 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 9 2011 $
+d451 1
+a451 4
+Note that text following an
+.Sq \&.\e}
+escape sequence is discarded.
+Furthermore, if an explicit closing sequence
+d453 8
+a460 2
+is specified in a free-form line, the entire line is accepted within the
+scope of the prior request, not only the text preceding the close, with the
+d462 3
+a464 1
+collapsing into a zero-width space.
+@
+
+
+1.27
+log
+@Add stub for eqn.7 manual and flip it on.  Also note COMPATIBILITY issue
+of how we considered .TS (etc.) macros and how the preprocessors do.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.26 2011/01/25 01:12:02 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 25 2011 $
+d570 1
+a570 1
+To avoid inadvertant inclusion of unrelated files,
+@
+
+
+1.26
+log
+@Ignore .ns (no-space mode), .ps (change point size), .ta (tab control)
+for now.  All of these just cause a bit too much or too little
+whitespace, but no serious formatting problems.
+Triggered by reports from brad@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.25 2011/01/25 00:40:14 schwarze Exp $
+d347 9
+d611 13
+d641 1
+@
+
+
+1.25
+log
+@As noticed by deraadt@@, it goes without saying that text files
+on a UNIX system use UNIX conventions, and UNIX tools working
+on them expect that.
+ok jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.24 2011/01/24 23:17:19 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 24 2011 $
+d540 10
+d567 4
+@
+
+
+1.24
+log
+@Better explain roff(7) macro argument quoting;
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.23 2011/01/04 23:32:21 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 4 2011 $
+a59 4
+.Pp
+All manuals must have
+.Ux
+line terminators.
+@
+
+
+1.23
+log
+@Moved table stuff from roff.7 into the new tbl.7 (suggested by Jason McIntyre).
+
+Added cross-links to tbl.7 from other manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.22 2011/01/04 15:02:00 kristaps Exp $
+d89 32
+d209 3
+a211 6
+Arguments are separated by blank characters and can be quoted
+using double-quotes
+.Pq Sq \(dq
+to allow inclusion of blank characters into arguments.
+To include the double-quote character into a quoted argument,
+escape it from ending the argument by doubling it.
+@
+
+
+1.22
+log
+@Support `T{' and `T}' data blocks.  When a standalone `T{' is
+encountered as a line's last data cell, move into TBL_PART_CDATA mode
+whilst leaving the cell's designation as TBL_DATA_NONE.  When new data
+arrives that's not a standalone `T}', append it to the cell contends.
+Close out and warn appropriately.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.21 2011/01/04 12:06:21 kristaps Exp $
+d549 3
+a551 195
+A table consists of an optional single line of table options terminated
+by a semicolon, followed by one or more lines of layout specification
+terminated by a period, then table data.
+A table block may also include
+.Nm ,
+.Xr mdoc 7 ,
+or
+.Xr man 7
+macros.
+Example:
+.Bd -literal -offset indent
+\&.TS
+box tab(:);   \e" Table-wide options.
+c | c         \e" Layout for first line.
+| c | c.      \e" Layout for all subsequent lines.
+1:2           \e" Data...
+3:4
+\&.TE
+.Ed
+.Pp
+Table data is
+.Em pre-processed ,
+that is, data rows are parsed then inserted into the underlying stream
+of input data.
+This allows data rows to be interspersed by arbitrary macros, such as
+.Bd -literal -offset indent
+\&.TS
+tab(:);
+c c c.
+1:2:3
+\&.Ao
+3:2:1
+\&.Ac
+\&.TE
+.Ed
+.Pp
+in the case of
+.Xr mdoc 7
+or
+.Bd -literal -offset indent
+\&.TS
+tab(:);
+c c c.
+\&.ds ab 2
+1:\e*(ab:3
+\&.I
+3:2:1
+\&.TE
+.Ed
+.Pp
+in the case of
+.Xr man 7 .
+.Pp
+The first line of a table consists of its options, which consists of
+space-separated keys and modifiers terminated by a semicolon.
+If the first line does not have a terminating semicolon, it is assumed
+that no options are specified and instead a layout is processed.
+Some options accept arguments enclosed by paranthesis.
+The following case-insensitive options are available:
+.Bl -tag -width Ds
+.It Cm center
+This option is not supported by
+.Xr mandoc 1 .
+This may also be invoked with
+.Cm centre .
+.It Cm delim
+Accepts a two-character argument.
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm expand
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm box
+Draw a single-line box around the table.
+This may also be invoked with
+.Cm frame .
+.It Cm doublebox
+Draw a double-line box around the table.
+This may also be invoked with
+.Cm doubleframe .
+.It Cm allbox
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm tab
+Accepts a single-character argument.
+This character is used a delimiter between data cells, which otherwise
+defaults to the tab character.
+.It Cm linesize
+Accepts a natural number (all digits).
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm nokeep
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm decimalpoint
+Accepts a single-character argument.
+This character will be used as the decimal point with the
+.Cm n
+layout key.
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm nospaces
+This option is not supported by
+.Xr mandoc 1 .
+.El
+.Pp
+The table layout follows table options, except in the case of
+.Sx \&T& ,
+where it immediately procedes invocation.
+Layout specifies how data rows are displayed on output.
+Each layout line corresponds to a line of data; the last layout line
+applies to all remaining data lines.
+Layout lines may also be separated by a comma.
+Each layout cell consists of one of the following case-insensitive keys:
+.Bl -tag -width Ds
+.It Cm c
+Centre a literal string within its column.
+.It Cm r
+Right-justify a literal string within its column.
+.It Cm l
+Left-justify a literal string within its column.
+.It Cm n
+Justify a number around its decimal point.
+If the decimal point is not found on the number, it's assumed to trail
+the number.
+.It Cm s
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm a
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm ^
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm \-
+Replace the data cell (its contents will be lost) with a single
+horizontal line.
+This may also be invoked with
+.Cm _ .
+.It Cm =
+Replace the data cell (its contents will be lost) with a double
+horizontal line.
+.It Cm \(ba
+Emit a vertical bar instead of data.
+.It Cm \(ba\(ba
+Emit a double-vertical bar instead of data.
+.El
+.Pp
+For example, following layout specifies a centre-justified column of
+minimum width 10, followed by vertical bar, followed by a left-justified
+column of minimum width 10, another vertical bar, then a column
+justified about the decimal point in numbers:
+.Pp
+.Dl c10 | l10 | n
+.Pp
+Keys may be followed by a set of modifiers.
+A modifier is either a modifier key or a natural number for specifying
+spacing.
+The following case-insensitive modifier keys are available:
+.Cm z ,
+.Cm u ,
+.Cm e ,
+.Cm t ,
+.Cm d ,
+.Cm f ,
+.Cm b ,
+.Cm i ,
+.Cm b ,
+and
+.Cm i .
+All of these are ignored by
+.Xr mandoc 1 .
+.Pp
+The data section follows the last layout row.
+By default, cells in a data section are delimited by a tab.
+This behaviour may be changed with the
+.Cm tab
+option.
+If
+.Cm _
+or
+.Cm =
+is specified, a single or double line, respectively, is drawn across the
+data field.
+If
+.Cm \e-
+or
+.Cm \e=
+is specified, a line is drawn within the data field (i.e., terminating
+within the cell and not draw to the border).
+If the last cell of a line is
+.Cm T{ ,
+all subsequent lines are included as part of the cell until
+.Cm T}
+is specified on its own line.
+d582 2
+a583 7
+.Xr mdoc 7
+.Rs
+.%A M. E. Lesk
+.%T Tbl\(emA Program to Format Tables
+.%D June 11, 1976
+.%U http://www.kohala.com/start/troff/v7/man/tbl/tbl.ps
+.Re
+@
+
+
+1.21
+log
+@Fix to make horizontal spanners in the layout be properly printed.
+mandoc also now warns (so does tbl(1)) if a horizontal spanner is
+specified along with data.
+
+While here, fix up some documentation and uncomment the tbl reference.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.20 2011/01/03 16:04:41 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 3 2011 $
+d739 5
+@
+
+
+1.20
+log
+@Switch on the `TS' documentation in roff.7.  As per off-line discussion,
+this may be moved to tbl.7, but for the time being, keep it in the
+document as it's developed.
+
+Also note that my handling of horizontal rules in layouts needs some
+work.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.19 2010/12/29 15:21:34 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 29 2010 $
+d684 2
+d689 2
+d697 7
+d708 31
+a738 15
+.Bl -tag -width Ds
+.It Cm z
+.It Cm u
+.It Cm e
+.It Cm t
+.It Cm d
+.It Cm f
+Must be followed by a case-insensitive font style:
+.Cm b
+for bold or
+.Cm i
+for italic.
+.It Cm b
+.It Cm i
+.El
+d770 6
+a775 6
+.\" .Rs
+.\" .%A M. E. Lesk
+.\" .%T Tbl\(emA Program to Format Tables
+.\" .%D June 11, 1976
+.\" .%U http://www.kohala.com/start/troff/v7/man/tbl/tbl.ps
+.\" .Re
+@
+
+
+1.19
+log
+@Update (still-commented) manual bits for tbl.
+
+Also removed lots of superfluous switch cases by using tolower() and
+handling only the lowercase keys.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.18 2010/12/29 10:19:55 kristaps Exp $
+d538 174
+a711 126
+.\" .Ss \&T&
+.\" Re-start a table layout, retaining the options of the prior table
+.\" invocation.
+.\" See
+.\" .Sx \&TS .
+.\" .Ss \&TE
+.\" End a table context.
+.\" See
+.\" .Sx \&TS .
+.\" .Ss \&TS
+.\" Begin a table, which formats input in aligned rows and columns.
+.\" A table consists of an optional single line of table options terminated
+.\" by a semicolon, followed by one or more lines of layout specification
+.\" terminated by a period, then table data.
+.\" A table block may also include
+.\" .Nm ,
+.\" .Xr mdoc 7 ,
+.\" or
+.\" .Xr man 7
+.\" macros.
+.\" .Pp
+.\" Table data is
+.\" .Em pre-processed ,
+.\" that is, data rows are parsed then inserted into the underlying stream
+.\" of input data.
+.\" This allows data rows to be interspersed by arbitrary macros, such as
+.\" .Bd -literal -offset indent
+.\" \&.TS
+.\" c c c.
+.\" 1 2 3
+.\" \&.Ao
+.\" 3 2 1
+.\" \&.Ac
+.\" \&.TE
+.\" .Ed
+.\" .Pp
+.\" in the case of
+.\" .Xr mdoc 7
+.\" or
+.\" .Bd -literal -offset indent
+.\" \&.TS
+.\" c c c.
+.\" \&.ds ab 2
+.\" 1 \e*(ab 3
+.\" \&.I
+.\" 3 2 1
+.\" \&.TE
+.\" .Ed
+.\" .Pp
+.\" in the case of
+.\" .Xr man 7 .
+.\" .Pp
+.\" The first line of a table consists of its options, which consists of
+.\" space-separated keys and modifiers terminated by a semicolon.
+.\" If the first line does not have a terminating semicolon, it is assumed
+.\" that no options are specified and instead a layout is processed.
+.\" Some options accept arguments enclosed by paranthesis.
+.\" The following case-insensitive options are available:
+.\" .Bl -tag -width Ds
+.\" .It Cm center
+.\" This may also be invoked with
+.\" .Cm centre .
+.\" .It Cm delim
+.\" Accepts a two-character argument.
+.\" This option is ignored.
+.\" .It Cm expand
+.\" .It Cm box
+.\" This may also be invoked with
+.\" .Cm frame .
+.\" .It Cm doublebox
+.\" This may also be invoked with
+.\" .Cm doubleframe .
+.\" .It Cm allbox
+.\" .It Cm tab
+.\" Accepts a single character argument used as the delimiter for cells in
+.\" data rows.
+.\" .It Cm linesize
+.\" Accepts a natural number (all digits) used as the line width for drawing
+.\" boxes.
+.\" .It Cm nokeep
+.\" .It Cm decimalpoint
+.\" .It Cm nospaces
+.\" .El
+.\" .Pp
+.\" The table layout follows table options, except in the case of
+.\" .Sx \&T& ,
+.\" where it immediately procedes invocation.
+.\" Layout specifies how data rows are displayed on output.
+.\" Each layout line corresponds to a line of data; the last layout line
+.\" applies to all remaining data lines.
+.\" Layout lines may also be separated by a comma.
+.\" Each layout cell consists of one of the following case-insensitive keys:
+.\" .Bl -tag -width Ds
+.\" .It Cm c
+.\" .It Cm r
+.\" .It Cm l
+.\" .It Cm n
+.\" .It Cm s
+.\" .It Cm a
+.\" .It Cm ^
+.\" .It Cm \-
+.\" This may also be invoked with
+.\" .Cm _ .
+.\" .It Cm =
+.\" .It Cm \(ba
+.\" .It Cm \(ba\(ba
+.\" .El
+.\" Keys may be followed by a set of modifiers.
+.\" A modifier is either a modifier key or a natural number for specifying
+.\" spacing.
+.\" The following case-insensitive modifier keys are available:
+.\" .Bl -tag -width Ds
+.\" .It Cm z
+.\" .It Cm u
+.\" .It Cm e
+.\" .It Cm t
+.\" .It Cm d
+.\" .It Cm f
+.\" Must be followed by a case-insensitive font style:
+.\" .Cm b
+.\" for bold or
+.\" .Cm i
+.\" for italic.
+.\" .It Cm b
+.\" .It Cm i
+.\" .El
+@
+
+
+1.18
+log
+@Initial documentation for TBL, which for the time being is commented-out.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.17 2010/12/18 19:32:08 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 18 2010 $
+d538 5
+d589 75
+d695 6
+@
+
+
+1.17
+log
+@Sync to the installed version in OpenBSD, excluding .ft documentation:
+Be more careful to not confuse requests, macros and escape sequences.
+Add more info at various places, including new SEE ALSO and HISTORY sections.
+OK jmc@@ kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.16 2010/12/10 20:58:56 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 10 2010 $
+d538 46
+@
+
+
+1.16
+log
+@Abort endless loops during roff macro and string expansion.
+For now, use the simplest conceivable approach, like groff does:
+Just a fixed, ugly input stack limit.
+"check it in" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.15 2010/12/06 16:37:32 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 6 2010 $
+d23 1
+a23 1
+.Nd roff language reference
+d27 9
+a35 3
+language is a general-purpose text-formatting language.  The purpose of
+this document is to consistently describe those language constructs
+accepted by the
+d37 1
+a37 1
+utility.  It is a work in progress.
+d39 2
+a40 5
+An
+.Nm
+document follows simple rules:  lines beginning with the control
+characters
+.Sq \.
+d44 8
+a51 6
+Other lines are interpreted within the scope of
+prior macros:
+.Bd -literal -offset indent
+\&.xx Macro lines change control state.
+Other lines are interpreted within the current state.
+.Ed
+d55 7
+a61 2
+character, and, in certain circumstances, the tab character.  All
+manuals must have
+d64 7
+a70 4
+.Sh MACRO SYNTAX
+Requests and macros are arbitrary in length and begin with a control
+character,
+.Sq \.
+d72 12
+a83 5
+.Sq \(aq ,
+at the beginning of the line.
+An arbitrary amount of whitespace may sit between the control character
+and the request or macro name.
+Thus, the following are equivalent:
+d85 3
+a87 2
+\&.if
+\&.\ \ \ \&if
+d90 1
+a90 1
+This section is a canonical reference of all requests recognized by the
+d93 2
+a94 2
+parser.
+The
+d96 1
+a96 1
+language defines many more requests and macros not implemented in
+d127 1
+a127 1
+Define a user-defined
+d173 1
+a173 1
+A user-defined macro can be invoked later using the syntax
+d184 1
+a184 1
+The line invoking the user-defined macro will be replaced
+d189 1
+a189 1
+where 
+d207 1
+a207 1
+Since user-defined macros and strings share a common string table,
+d227 1
+a227 1
+Define a user-defined
+d230 1
+a230 1
+The syntax of this macro is the same as that of
+d236 1
+a236 1
+Define a user-defined
+d248 1
+a248 1
+compatibility mode at all, it handles this macro as an alias for
+d278 3
+d285 1
+a285 1
+clobbers the user-defined macro
+d319 1
+a319 1
+The syntax of this macro is similar to
+d340 1
+a340 5
+indicating processing in
+.Xr nroff 1
+style as opposed to
+.Xr troff 1
+style.
+d346 1
+a346 1
+.D1 \&.if t \e .ig
+d352 1
+a352 1
+.D1 \&.if t \e .if t \e{\e
+d358 2
+a359 3
+This macro has the following syntax:
+.Pp
+.Bd -literal -offset indent -compact
+d364 1
+a364 1
+.Bd -literal -offset indent -compact
+d368 1
+a368 1
+.Bd -literal -offset indent -compact
+d373 1
+a373 1
+.Bd -literal -offset indent -compact
+d394 1
+a394 1
+scope continues until a closing-brace macro
+d396 2
+a397 2
+If the BODY is not enclosed in braces, scope continues until the next
+macro or word.
+d399 1
+a399 1
+brace or not, then macros
+d410 1
+a410 1
+than having the macro follow as
+d417 1
+a417 1
+Note that text subsequent a
+d419 1
+a419 1
+macro is discarded.
+d423 1
+a423 1
+scope of the prior macro, not only the text preceding the close, with the
+d444 1
+a444 1
+macro is encountered on its own line.
+d469 1
+a469 1
+macro are discarded.
+a493 3
+The
+.Ar name
+is defined up to the next whitespace.
+d501 1
+a501 1
+macros will behave as if they were defined in the
+d504 3
+a506 1
+Otherwise, this behaviour is unset (even if called within the
+d508 2
+a509 2
+section itself).
+Note that invoking a new
+d511 3
+a513 1
+section will unset this value.
+d534 1
+a534 1
+This macro is intended to have one argument,
+d540 2
+a541 1
+troff implementations, at this time limited to GNU troff
+d545 1
+a545 4
+refers to groff versions before the
+.Pa doc.tmac
+file re-write
+.Pq somewhere between 1.15 and 1.19 .
+d551 1
+a551 3
+request to
+.Sx \&nr
+is only compatible with OpenBSD's groff.
+d553 3
+a555 2
+Historic groff did not accept white-space buffering the custom END tag
+for the
+d557 1
+a557 1
+macro.
+d562 1
+a562 1
+depending on next-line syntax.
+d564 33
+@
+
+
+1.15
+log
+@Import changes by schwarze@@ and Jason McIntyre into manuals.  These are
+for the new libroff macros, the new libman macros, and for the sake of
+general clarity.
+
+Note that `ft' documentation is NOT included, as I've kept it in -man:
+it's highly confusing to have it in roff.7 when it's not implemented for
+both -man and -mdoc, as at least in theory, roff.7 should include only
+macros recognised by BOTH formats.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.14 2010/07/27 13:16:00 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 27 2010 $
+d199 6
+@
+
+
+1.14
+log
+@Fix `ds' handling.  This was stripping characters from "val", when the
+syntax of `ds' is such that ALL text following the first
+non-space/non-double-quote is part of the value.  This also fixes the
+warning of *(string++) = NULL report by kristaps@@ and joerg@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.13 2010/07/07 15:04:54 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 7 2010 $
+d40 2
+a41 1
+are parsed for macros.  Other lines are interpreted within the scope of
+d55 2
+a56 1
+Macros are arbitrary in length and begin with a control character ,
+d62 1
+a62 1
+and the macro name.
+d68 15
+a82 3
+.Sh REFERENCE
+This section is a canonical reference of all macros, arranged
+alphabetically.
+d84 6
+a89 4
+The syntax of this macro is the same as that of
+.Sx \&ig ,
+except that a leading argument must be specified.
+It is ignored, as are its children.
+d91 6
+a96 4
+The syntax of this macro is the same as that of
+.Sx \&ig ,
+except that a leading argument must be specified.
+It is ignored, as are its children.
+d98 7
+a104 4
+The syntax of this macro is the same as that of
+.Sx \&ig ,
+except that a leading argument must be specified.
+It is ignored, as are its children.
+d106 93
+a198 4
+The syntax of this macro is the same as that of
+.Sx \&ig ,
+except that a leading argument must be specified.
+It is ignored, as are its children.
+d200 3
+d204 19
+a222 3
+.Sx \&ig ,
+except that a leading argument must be specified.
+It is ignored, as are its children.
+d224 1
+a224 1
+Define a reserved word.
+d227 1
+a227 1
+.D1 Pf \. Sx \&ds No Cm key val
+d230 1
+a230 1
+.Cm key
+d232 10
+a241 2
+.Cm val
+strings are space-separated.
+d243 35
+a277 17
+.Cm key
+values may be invoked in subsequent text by using \e*(NN for two-letter
+pairs, \e*N for one-letter, and \e*[NNN] for arbitrary-length values.
+.Pp
+If
+.Cm val
+is begun with a double-quote mark, the mark is passed over.
+.Cm val
+consists of
+.Em all
+text following this point, including whitespace and trailing
+double-quotes.
+.Ss \&de1
+The syntax of this macro is the same as that of
+.Sx \&ig ,
+except that a leading argument must be specified.
+It is ignored, as are its children.
+d292 3
+d403 4
+a406 5
+Accepts the following syntax:
+.Pp
+.Bd -literal -offset indent -compact
+\&.ig
+BODY...
+d409 6
+a414 4
+.Bd -literal -offset indent -compact
+\&.ig END
+BODY...
+\&.END
+d420 4
+a423 10
+In the second case, input is ignored until a
+.Sq \&.END
+is encountered.
+Text subsequent the
+.Sq \&.END
+or
+.Sq \&..
+is discarded.
+.Pp
+Do not use the escape
+d425 7
+a431 5
+anywhere in the definition of END.
+It causes very strange behaviour.
+Furthermore, if you redefine a
+.Nm
+macro, such as
+d437 15
+a451 2
+will first signify the end of comment, then be invoked as a macro.
+This behaviour really shouldn't be counted upon.
+d454 1
+a454 1
+This macro is intended to have one argument,
+d464 1
+a464 1
+.D1 Pf \. Sx \&nr Cm name value
+d467 1
+a467 1
+.Cm value
+d470 1
+a470 1
+.Cm name
+d472 3
+a474 3
+The following register
+.Cm name
+requests are recognised:
+d489 17
+d542 2
+a543 1
+The
+d546 3
+a548 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.13
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.12 2010/07/04 22:04:04 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 4 2010 $
+d109 9
+@
+
+
+1.12
+log
+@Assert my copyright, making it explicit that i'm granting the same license
+on those parts of the code and text that i have written as Kristaps is.
+"fine with me" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.11 2010/06/27 16:36:22 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: June 27 2010 $
+d95 14
+a108 5
+Define a string.
+This macro is intended to have two arguments,
+the name of the string to define and its content.
+Currently, it is ignored including its arguments,
+and the number of arguments is not checked.
+@
+
+
+1.11
+log
+@Allow registers to be unset.  Implement and document the `.nr nS val'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.10 2010/06/26 15:22:19 kristaps Exp $
+d4 1
+d18 1
+a18 1
+.Dd $Mdocdate: June 26 2010 $
+@
+
+
+1.10
+log
+@First step of adding register support.  This is inspired by a significant
+patch by schwarze@@.  This commit adds support to libroff parsing `nr'
+into register set defined in regs.h.  This will propogate into libmdoc
+and libman in later commits.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.9 2010/06/10 21:42:02 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 10 2010 $
+d292 1
+a292 1
+macros will behave as if they are defined in the
+d294 1
+a294 1
+section to a manual.
+d298 3
+@
+
+
+1.9
+log
+@Fix adding some minimal intelligence to conditional parser.  See roff.7
+for what's supported.  This simplified the roff_cond() function quite
+nicely.  From a bug report by uqs@@.
+
+Added regression test based on bug-report example by uqs@@.
+
+Also added ROFF_DEBUG to see what the hell the parser is actually doing.
+Obviously turned off by default.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.8 2010/06/01 11:54:23 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 1 2010 $
+d271 28
+d318 6
+@
+
+
+1.8
+log
+@Noted that \} collapses into a zero-width space on the front-end.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.7 2010/05/24 23:54:18 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 24 2010 $
+d176 13
+a188 2
+COND is a conditional (for the time being, this always evaluates to
+false).
+@
+
+
+1.7
+log
+@recognize ".if n" as true;
+nothing fancy yet, no negation, no grammer, just that one letter;
+from OpenBSD;
+"looks fine" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.6 2010/05/24 22:25:58 schwarze Exp $
+d210 3
+a212 1
+scope of the prior macro, not only the text preceding the close.
+@
+
+
+1.6
+log
+@provide stubs to ignore .ds, .rm and .tr,
+which occur in the standard pod2man preamble;
+from OpenBSD;
+"sounds good" joerg@@, "can be checked in" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.5 2010/05/17 02:38:13 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 17 2010 $
+d129 9
+a137 1
+Begins a conditional that always evaluates to false.
+d260 1
+a260 1
+This macro is intended to have one argument, 
+@
+
+
+1.5
+log
+@Documented ie/el.
+Installing roff.7 and added it to index.sgml.
+Small fix for `D1' and `Bd' in -Thtml.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.4 2010/05/17 02:01:05 kristaps Exp $
+d93 6
+d244 12
+@
+
+
+1.4
+log
+@Full support for ie/el.  This completes the initial roff support.
+Added test files for ie/el.
+Using `if 0' as a baseline for "false" roff instructions instead of `if t'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.3 2010/05/17 00:37:26 kristaps Exp $
+d98 24
+@
+
+
+1.3
+log
+@libroff now intelligently throws away `am', `ami', `am1', `de', `dei',
+and `de1'.  This is also documented in roff.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.2 2010/05/16 22:28:33 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 16 2010 $
+d231 5
+@
+
+
+1.2
+log
+@`ig' support in all its glory.  Try
+
+  .ig ig
+  asdf
+  .ig
+  fdsa
+  ..
+
+or
+
+  .ig if
+  asdf
+  .if n \
+  foo
+
+for a laugh.  It all works.  Lots of regression tests supporting this
+and documentation for the same.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.1 2010/05/16 19:08:11 kristaps Exp $
+d68 30
+d99 19
+a117 2
+Begins a conditional.
+Has the following syntax:
+d138 2
+a139 1
+COND is a conditional (TODO: document).
+@
+
+
+1.1
+log
+@Regression tests in place for `.if' in libroff.
+Check against some strange `.if' constructs I missed.
+Added initial roff.7 manual.
+@
+text
+@d1 1
+a1 1
+.\"	$Id$
+d17 1
+a17 1
+.Dd $Mdocdate$
+d79 4
+d119 3
+d123 2
+a124 1
+is discarded.
+d126 16
+a141 2
+Ignore input until a
+.Sq \.\.
+d143 7
+a149 2
+Note that text subsequent the
+.Sq \.\.
+d151 33
+@

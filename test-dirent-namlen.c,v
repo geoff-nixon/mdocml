@@ -1,0 +1,51 @@
+head	1.2;
+access;
+symbols
+	VERSION_1_13_3:1.1
+	VERSION_1_13_2:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.2
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.08.11.03.19.39;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@modernize style: "return" is not a function
+@
+text
+@#include <sys/types.h>
+#include <dirent.h>
+
+int
+main(void)
+{
+	struct dirent	 entry;
+
+	return sizeof(entry.d_namlen) == 0;
+}
+@
+
+
+1.1
+log
+@work around lack of d_namlen and ALIGN/ALIGNBYTES on Linux
+@
+text
+@d9 1
+a9 1
+	return (sizeof(entry.d_namlen) == 0);
+@

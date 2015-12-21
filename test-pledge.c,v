@@ -1,0 +1,30 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2015.11.06.17.33.34;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@merge pledge(2) support from OpenBSD
+@
+text
+@#include <unistd.h>
+
+int
+main(void)
+{
+	return !!pledge("stdio", NULL);
+}
+@

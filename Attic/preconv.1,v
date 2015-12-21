@@ -1,0 +1,401 @@
+head	1.8;
+access;
+symbols
+	VERSION_1_12_4:1.7
+	VERSION_1_13_1:1.7
+	VERSION_1_12_3:1.7
+	VERSION_1_12_2:1.7
+	VERSION_1_12:1.7.0.2
+	VERSION_1_12_1:1.6
+	VERSION_1_12_0:1.5
+	VERSION_1_11_7:1.5
+	VERSION_1_11_6:1.4
+	VERSION_1_11_5:1.4
+	VERSION_1_11_4:1.4
+	VERSION_1_11_3:1.4;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2014.10.25.01.03.52;	author schwarze;	state dead;
+branches;
+next	1.7;
+
+1.7
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.12.25.19.35.44;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.08.18.08.58.44;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.05.26.14.45.04;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.05.26.14.43.07;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.05.26.12.14.46;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.05.26.12.01.14;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@integrate preconv(1) into mandoc(1);
+enhances functionality and reduces code and docs by more than 300 lines
+@
+text
+@@
+
+
+1.7
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@a0 157
+.\"	$Id: preconv.1,v 1.6 2011/12/25 19:35:44 kristaps Exp $
+.\"
+.\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: December 25 2011 $
+.Dt PRECONV 1
+.Os
+.Sh NAME
+.Nm preconv
+.Nd recode multibyte UNIX manuals
+.Sh SYNOPSIS
+.Nm preconv
+.Op Fl D Ar enc
+.Op Fl e Ar enc
+.Op Ar file
+.Sh DESCRIPTION
+The
+.Nm
+utility recodes multibyte
+.Ux
+manual files into
+.Xr mandoc 1
+.Po
+or other troff system supporting the
+.Sq \e[uNNNN]
+escape sequence
+.Pc
+input.
+.Pp
+By default, it parses from standard output, determining encoding as
+described in
+.Sx Algorithm .
+.Pp
+Its arguments are as follows:
+.Bl -tag -width Ds
+.It Fl D Ar enc
+The default encoding.
+.It Fl e Ar enc
+The document's encoding.
+.It Ar file
+The input file.
+.El
+.Pp
+The recoded input is written to standard output: Unicode characters in
+the ASCII range are printed as regular ASCII characters, while those
+above this range are printed using the
+.Sq \e[uNNNN]
+format documented in
+.Xr mandoc_char 7 .
+.Pp
+If input bytes are improperly formed in the current encoding, they're
+passed unmodified to standard output.
+For some encodings, such as UTF-8, unrecoverable input sequences will
+cause
+.Nm
+to stop processing and exit.
+.Ss Algorithm
+An encoding is chosen according to the following steps:
+.Bl -enum
+.It
+From the argument passed to
+.Fl e Ar enc .
+.It
+If a BOM exists, UTF\-8 encoding is selected.
+.It
+From the coding tags parsed from
+.Qq File Variables
+on the first two lines of input.
+A file variable is an input line of the form
+.Pp
+.Dl \%.\e\(dq -*- key: val [; key: val ]* -*-
+.Pp
+A coding tag variable is where
+.Cm key
+is
+.Qq coding
+and
+.Cm val
+is the name of the encoding.
+A typical file variable with a coding tag is
+.Pp
+.Dl \%.\e\(dq -*- mode: troff; coding: utf-8 -*-
+.It
+From the argument passed to
+.Fl D Ar enc .
+.It
+If all else fails, Latin\-1 is used.
+.El
+.Pp
+The
+.Nm
+utility recognises the UTF\-8, us\-ascii, and latin\-1 encodings as
+passed to the
+.Fl e
+and
+.Fl D
+arguments, or as coding tags.
+Encodings are matched case-insensitively.
+.\" .Sh IMPLEMENTATION NOTES
+.\" Not used in OpenBSD.
+.\" .Sh RETURN VALUES
+.\" For sections 2, 3, & 9 only.
+.\" .Sh ENVIRONMENT
+.\" For sections 1, 6, 7, & 8 only.
+.\" .Sh FILES
+.Sh EXIT STATUS
+.Ex -std
+.Sh EXAMPLES
+Explicitly page a UTF\-8 manual
+.Pa foo.1
+in the current locale:
+.Pp
+.Dl $ preconv \-e utf\-8 foo.1 | mandoc -Tlocale | less
+.\" .Sh DIAGNOSTICS
+.\" For sections 1, 4, 6, 7, & 8 only.
+.\" .Sh ERRORS
+.\" For sections 2, 3, & 9 only.
+.Sh SEE ALSO
+.Xr mandoc 1 ,
+.Xr mandoc_char 7
+.Sh STANDARDS
+The
+.Nm
+utility references the US-ASCII character set standard, ANSI_X3.4\-1968;
+the Latin\-1 character set standard, ISO/IEC 8859\-1:1998; the UTF\-8
+character set standard; and UCS (Unicode), ISO/IEC 10646.
+.Sh HISTORY
+The
+.Nm
+utility first appeared in the GNU troff
+.Pq Dq groff
+system in December 2005, authored by Tomohiro Kubota and Werner
+Lemberg.
+The implementation that is part of the
+.Xr mandoc 1
+utility appeared in May 2011.
+.Sh AUTHORS
+The
+.Nm
+utility was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+.\" .Sh CAVEATS
+.\" .Sh BUGS
+.\" .Sh SECURITY CONSIDERATIONS
+.\" Not used in OpenBSD.
+@
+
+
+1.6
+log
+@State default usage before listing arguments of a utility.  Inspired by a
+patch to mandocdb.8 by schwarze@@ some time ago.  Ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: preconv.1,v 1.5 2011/08/18 08:58:44 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 18 2011 $
+d153 1
+a153 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.5
+log
+@Replace the old `An'/`Aq' AUTHORS note with `An'/`Mt'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: preconv.1,v 1.4 2011/05/26 14:45:04 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 26 2011 $
+d41 5
+a55 9
+If
+.Ar file
+is not provided,
+.Nm
+accepts standard input.
+See
+.Sx Algorithm
+for encoding choice.
+.Pp
+@
+
+
+1.4
+log
+@Slightly clean up verbiage in coding tags.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: preconv.1,v 1.3 2011/05/26 14:43:07 kristaps Exp $
+d157 2
+a158 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.3
+log
+@preconv is now on encoding-recognition parity with groff.  This last
+commit adds parsing of "File Variables" in the first two lines in order
+to grok the encoding.  This completes groff's recognition sequence (-e,
+BOM, File variables, -D, default).  I've also cleaned up the manual to
+indicate this and for some general readability.
+
+preconv is now compiled by default in the Makefile.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: preconv.1,v 1.2 2011/05/26 12:14:46 kristaps Exp $
+d89 1
+a89 1
+where
+d96 1
+a96 1
+A typical usage may be
+@
+
+
+1.2
+log
+@Add notes about preconv.1 in the www and change some wording in the
+manual regarding its output and `Nd' sentence.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: preconv.1,v 1.1 2011/05/26 12:01:14 kristaps Exp $
+a44 5
+This is case-insensitive.
+See
+.Sx Algorithm
+and
+.Sx Encodings .
+a46 5
+This is case-insensitive.
+See
+.Sx Algorithm
+and
+.Sx Encodings .
+d56 7
+a62 3
+Output is written to standard output.
+Unicode characters in the ASCII range are printed as regular ASCII
+characters; those above this range are printed using the
+d69 2
+a70 2
+.Ss Encodings
+The
+d72 1
+a72 9
+utility accepts the
+.Ar utf\-8 ,
+.Ar us\-ascii ,
+and
+.Ar latin\-1
+encodings as arguments to
+.Fl D Ar enc
+or
+.Fl e Ar enc .
+d80 19
+a98 1
+If a BOM exists, utf\-8 encoding is selected.
+d105 10
+d124 6
+a129 1
+.\" .Sh EXAMPLES
+@
+
+
+1.1
+log
+@Significantly improve preconv.  Allow it to recode UTF-8 characters into
+the \[uNNNN] strings (taking into account big-endian archs).  Also allow
+it to determine from the BOM whether it's a UTF-8 file.  Also add the
+initial manual.  This has been tested over a random selection of UTF-8
+documents, as
+
+ % preconv -e utf-8 foo.1 | ./mandoc -Tlocale
+
+where -Tlocale is allowed (-DUSE_WCHAR).
+
+Note that we're still missing the "type" indicator that preconv accepts.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.88 2011/05/20 15:51:18 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate$
+d22 1
+a22 1
+.Nd recodes multibyte UNIX manuals as mandoc input
+d35 5
+@

@@ -1,0 +1,209 @@
+head	1.7;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.7
+date	2015.11.20.21.59.54;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.07.28.18.38.55;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.07.25.14.28.59;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.07.25.14.02.06;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.07.21.03.26.22;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.07.17.22.38.29;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@Fix multiple issues regarding process group and signal mask handling
+found by tb@@ and millert@@; parts of the code, in particular in tag.c,
+by millert@@; OK millert@@.
+@
+text
+@/*      $Id: tag.h,v 1.6 2015/11/07 14:01:16 schwarze Exp $    */
+/*
+ * Copyright (c) 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+struct	tag_files {
+	char	 ofn[20];
+	char	 tfn[20];
+	int	 ofd;
+	int	 tfd;
+	pid_t	 tcpgid;
+	pid_t	 pager_pid;
+};
+
+
+struct tag_files *tag_init(void);
+void	 tag_put(const char *, int, size_t);
+void	 tag_write(void);
+void	 tag_unlink(void);
+@
+
+
+1.6
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.h,v 1.5 2015/07/28 18:38:55 schwarze Exp $    */
+d23 2
+@
+
+
+1.5
+log
+@Remove the hack of scrolling forward and backward with +G1G that
+many (jmc@@, millert@@, espie@@, deraadt@@) considered revolting.
+Instead, when using a pager, since we are using a temporary file
+for tags anyway, use another temporary file for the formatted
+page(s), as suggested by millert@@ and similar to what the traditional
+BSD man(1) did, except that we use only one single temporary output
+file rather than one for each formatted manual page, such that
+searching (both with / and :t) works across all the displayed files.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.h,v 1.4 2015/07/25 14:28:59 schwarze Exp $    */
+a24 1
+__BEGIN_DECLS
+a29 2
+
+__END_DECLS
+@
+
+
+1.4
+log
+@Simplify and make tag_put() more efficient by integrating tag_get()
+into it and by only handling NUL-terminated strings.
+Minus 25 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.h,v 1.3 2015/07/25 14:02:06 schwarze Exp $    */
+d18 7
+d27 1
+a27 1
+char	*tag_init(void);
+@
+
+
+1.3
+log
+@basic support for tag priorities; written at YYC
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.h,v 1.2 2015/07/21 03:26:22 schwarze Exp $    */
+d21 1
+a21 2
+size_t	 tag_get(const char *, size_t, int);
+void	 tag_put(const char *, size_t, int, size_t);
+@
+
+
+1.2
+log
+@When creation of the temporary tags file fails, call the pager
+without the -T option, because otherwise the pager won't even start.
+Fixing a bug reported by jca@@.
+
+While here, shorten the code by two lines
+and delete one internal interface function.
+@
+text
+@d1 1
+a1 1
+/*      $Id: tag.h,v 1.1 2015/07/17 22:38:29 schwarze Exp $    */
+d21 2
+a22 2
+size_t	 tag_get(const char *, size_t);
+void	 tag_put(const char *, size_t, size_t);
+@
+
+
+1.1
+log
+@Initial, still somewhat experimental implementation to leverage
+less(1) -T and :t ctags(1)-like functionality to jump to the
+definitions of various terms inside manual pages.
+To be polished in the tree, so bear with me and report issues.
+
+Technically, if less(1) is used as a pager, information is collected
+by the mdoc(7) terminal formatter, first stored using the ohash
+library, then ultimately written to a temporary file which is passed
+to less via -T.  No change intended for other output formatters or
+when running without a pager.
+
+Based on an idea from Kristaps using feedback from many, in particular
+phessler@@ nicm@@ millert@@ halex@@ doug@@ kspillner@@ deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*      $Id$    */
+d20 1
+a20 2
+void	 tag_init(void);
+char	*tag_filename(void);
+@

@@ -1,0 +1,334 @@
+head	1.10;
+access;
+symbols
+	VERSION_1_9_5:1.10
+	VERSION_1_8_5:1.10
+	VERSION_1_8_1:1.10
+	VERSION_1_7_16:1.10
+	VERSION_1_7_15:1.10
+	OPENBSD_CHECKIN:1.10
+	VERSION_1_6_5:1.10
+	VERSION_1_5_1:1.10
+	VERSION_1_3_15:1.10
+	VERSION_1_3_6:1.10
+	VERSION_1_2_0:1.10
+	VERSION_1_0_2:1.8
+	VERSION_1_0_1:1.7;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2008.12.15.01.54.58;	author kristaps;	state dead;
+branches;
+next	1.9;
+
+1.9
+date	2008.12.12.10.11.10;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.12.10.12.05.33;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.12.07.21.30.49;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.12.07.16.41.04;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.12.06.21.10.31;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.12.06.19.41.41;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.12.05.22.34.30;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.04.16.19.52;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.04.11.25.29;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@Purged all old files in favour of new design.  Selective reintegration.
+@
+text
+@@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@a0 58
+	body			{ margin: 10px;
+			 	  font-family: Tahoma, sans-serif;
+				  font-size: small; }
+	h1			{ font-size: small; }
+	h2			{ font-size: small; }
+	div.mdoc		{ width: 600px; }
+	div.block-Sh		{ margin-bottom: 20px; }
+	div.head-Ss		{ font-weight: bold;	
+				  margin-top: 10px;
+				  text-align: justify; }
+	div.body-Sh		{ margin-left: 20px;
+				  margin-top: 10px; 
+				  text-align: justify; }
+	table.header-table	{ margin-bottom: 10px; }
+	td.header-section	{ text-transform: uppercase; }
+	span.inline-Nd:before	{ content: ' \2014 '; }
+	span.inline-Fl:before	{ content: '-'; }
+	span.inline-Fl		{ font-weight: bolder; }
+	span.inline-Cm		{ font-weight: bolder; }
+	span.inline-Cd		{ font-weight: bolder; }
+	span.inline-Nm		{ font-weight: bolder; }
+	span.inline-An		{ text-decoration: underline; }
+	span.inline-Ar		{ text-decoration: underline; }
+	span.inline-Pa		{ text-decoration: underline; }
+	div.block-Bl		{ margin-top: 10px;
+				  margin-left: 20px; }
+	div.inline-Pp		{ margin-bottom: 10px; }
+	span.inline-Sy		{ font-weight: bolder; }
+	span.inline-Tn		{ font-variant: small-caps; }
+	div.inline-D1		{ margin-left: 20px; }
+	div.inline-Dl		{ margin-left: 20px; }
+	span.head-Fo		{ font-weight: bolder; }
+	span.body-Fo:before	{ content: '('; }
+	span.body-Fo:after	{ content: ')'; }
+	span.body-Oo:before	{ content: '['; }
+	span.body-Oo:after	{ content: ']'; }
+	span.inline-Va		{ text-decoration: underline; }
+	span.inline-Vt		{ text-decoration: underline; }
+	span.inline-Em		{ font-style: italic; }
+	span.inline-Ft		{ text-decoration: underline; }
+	span.inline-Fd		{ font-weight: bolder; }
+	span.inline-Ic		{ font-weight: bolder; }
+	span.inline-Op:before	{ content: '['; }
+	span.inline-Op:after	{ content: ']'; }
+	span.inline-Qq:before	{ content: '\"'; }
+	span.inline-Qq:after	{ content: '\"'; }
+	span.inline-Aq:before	{ content: '\3c'; }
+	span.inline-Aq:after	{ content: '\3e'; }
+	span.inline-Bq:before	{ content: '['; }
+	span.inline-Bq:after	{ content: ']'; }
+	span.inline-Dq:before	{ content: '\201c'; }
+	span.inline-Dq:after	{ content: '\201d'; }
+	span.inline-Pq:before	{ content: '('; }
+	span.inline-Pq:after	{ content: ')'; }
+	span.inline-Ql:before	{ content: '\2018'; }
+	span.inline-Ql:after	{ content: '\2019'; }
+	span.inline-Sq:before	{ content: '\2018'; }
+	span.inline-Sq:after	{ content: '\2019'; }
+@
+
+
+1.8
+log
+@Versioning up.
+@
+text
+@d30 2
+a31 1
+	span.inline-D1		{ margin-left: 20px; }
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d4 1
+a4 1
+	h1			{ font-size: medium; }
+d14 2
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d4 2
+a7 1
+	div.head-Sh		{ font-weight: bold; }
+d20 1
+@
+
+
+1.5
+log
+@.St macros in place.
+@
+text
+@d16 2
+d35 3
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d30 2
+d37 2
+@
+
+
+1.3
+log
+@Nm works properly, many other changes, etc.
+@
+text
+@d6 1
+a6 2
+	div.head-Sh		{ font-weight: bold;
+				  font-size: larger; }
+a18 2
+	span.inline-Op:before	{ content: '['; }
+	span.inline-Op:after	{ content: ']'; }
+d22 2
+d25 18
+a42 2
+	span.inline-Qq:before	{ content: '\201c'; }
+	span.inline-Qq:after	{ content: '\201d'; }
+@
+
+
+1.2
+log
+@Character-encoding tests.
+@
+text
+@d17 1
+@
+
+
+1.1
+log
+@More html-css.
+@
+text
+@d1 28
+a28 92
+	body 
+	{
+		margin: 0px;
+		font-family: Tahoma, sans-serif;
+		font-size: small;
+	}
+
+	div.mdoc
+	{
+		width: 600px;
+	}
+
+	div.block-Sh
+	{
+		margin-bottom: 20px;
+	}
+	
+	div.head-Sh
+	{
+		font-weight: bold;
+		font-size: larger;
+	}
+	
+	div.head-Ss
+	{
+		font-weight: bold;
+		margin-top: 10px;
+		text-align: justify;
+	}
+	
+	div.body-Sh
+	{
+		margin-left: 20px;
+		margin-top: 10px;
+		text-align: justify;
+	}
+	
+	span.inline-Nd:before
+	{
+		content: ' - ';
+	}
+	
+	span.inline-Fl:before
+	{
+		content: '-';
+	}
+
+	span.inline-Fl
+	{
+		font-weight: bolder;
+	}
+
+	span.inline-Ar
+	{
+		text-decoration: underline;
+	}
+
+	span.inline-Pa
+	{
+		text-decoration: underline;
+	}
+
+	span.inline-Op:before
+	{
+		content: '[';
+	}
+
+	span.inline-Op:after
+	{
+		content: ']';
+	}
+
+	div.block-Bl
+	{
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+
+	div.inline-Pp
+	{
+		margin-bottom: 10px;
+	}
+
+	span.inline-D1
+	{
+		margin-left: 20px;
+	}
+
+	span.inline-Qq:before	{ content: '``'; }
+	span.inline-Qq:after	{ content: '\'\''; }
+	span.inline-Sq:before	{ content: '`'; }
+	span.inline-Sq:after	{ content: '\''; }
+@

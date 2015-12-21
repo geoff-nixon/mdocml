@@ -1,0 +1,2100 @@
+head	1.26;
+access;
+symbols
+	VERSION_1_9_5:1.26
+	VERSION_1_8_5:1.26
+	VERSION_1_8_1:1.26
+	VERSION_1_7_16:1.26
+	VERSION_1_7_15:1.26
+	OPENBSD_CHECKIN:1.26
+	VERSION_1_6_5:1.26
+	VERSION_1_5_1:1.26
+	VERSION_1_3_15:1.26
+	VERSION_1_3_6:1.26
+	VERSION_1_2_0:1.26
+	VERSION_1_0_2:1.24
+	VERSION_1_0_1:1.20;
+locks; strict;
+comment	@ * @;
+
+
+1.26
+date	2008.12.15.01.54.58;	author kristaps;	state dead;
+branches;
+next	1.25;
+
+1.25
+date	2008.12.10.17.31.58;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2008.12.10.12.05.33;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2008.12.10.10.43.57;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2008.12.10.00.53.40;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2008.12.09.17.09.12;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2008.12.08.12.46.28;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2008.12.07.23.44.19;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2008.12.07.21.30.49;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2008.12.06.21.10.31;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2008.12.05.19.45.15;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2008.12.05.17.43.14;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2008.12.04.23.10.51;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2008.12.04.11.25.29;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2008.12.03.21.27.56;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2008.12.03.19.21.58;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2008.12.03.14.39.59;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2008.12.02.18.26.57;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.12.02.13.20.24;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.12.02.00.15.41;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.12.02.00.10.37;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.12.01.16.01.28;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.12.01.15.32.36;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.12.01.09.25.18;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.11.30.23.05.57;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.11.30.21.41.35;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.26
+log
+@Purged all old files in favour of new design.  Selective reintegration.
+@
+text
+@@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@a0 235
+/* $Id: xml.c,v 1.24 2008/12/10 12:05:33 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <assert.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "private.h"
+#include "ml.h"
+
+
+static	int		xml_alloc(void **);
+static	void		xml_free(void *);
+static	ssize_t		xml_beginstring(struct ml_args *,
+				const char *, size_t);
+static	ssize_t		xml_endstring(struct ml_args *,
+				const char *, size_t);
+static	int		xml_begin(struct ml_args *, const struct tm *, 
+				const char *, const char *, 
+				enum roffmsec, enum roffvol);
+static	int		xml_end(struct ml_args *, const struct tm *, 
+				const char *, const char *, 
+				enum roffmsec, enum roffvol);
+static	ssize_t 	xml_printtagname(struct ml_args *, 
+				enum md_ns, int);
+static	ssize_t 	xml_printtagargs(struct ml_args *, 
+				const int *, const char **);
+static	ssize_t		xml_endtag(struct ml_args *, enum md_ns, int);
+static	ssize_t		xml_begintag(struct ml_args *, enum md_ns, int,
+				const int *, const char **);
+
+
+static ssize_t 
+xml_printtagargs(struct ml_args *p, const int *argc, const char **argv)
+{
+	int		 i, c;
+	size_t		 res;
+
+	if (NULL == argc || NULL == argv)
+		return(0);
+	assert(argc && argv);
+
+	/* LINTED */
+	for (res = 0, i = 0; ROFF_ARGMAX != (c = argc[i]); i++) {
+		if ( ! ml_nputs(p->mbuf, " ", 1, &res))
+			return(-1);
+
+		/* FIXME: should puke on some, no? */
+
+		if ( ! ml_puts(p->mbuf, tokargnames[c], &res))
+			return(-1);
+		if ( ! ml_nputs(p->mbuf, "=\"", 2, &res))
+			return(-1);
+		if (argv[i]) {
+			if ( ! ml_putstring(p->mbuf, argv[i], &res))
+				return(-1);
+		} else if ( ! ml_nputs(p->mbuf, "true", 4, &res))
+			return(-1);
+		if ( ! ml_nputs(p->mbuf, "\"", 1, &res))
+			return(-1);
+	}
+
+	return((ssize_t)res);
+}
+
+
+static ssize_t 
+xml_printtagname(struct ml_args *p, enum md_ns ns, int tok)
+{
+	size_t		 res;
+
+	res = 0;
+	switch (ns) {
+	case (MD_NS_BLOCK):
+		if ( ! ml_nputs(p->mbuf, "block:", 6, &res))
+			return(-1);
+		break;
+	case (MD_NS_INLINE):
+		if ( ! ml_nputs(p->mbuf, "inline:", 7, &res))
+			return(-1);
+		break;
+	case (MD_NS_BODY):
+		if ( ! ml_nputs(p->mbuf, "body:", 5, &res))
+			return(-1);
+		break;
+	case (MD_NS_HEAD):
+		if ( ! ml_nputs(p->mbuf, "head:", 5, &res))
+			return(-1);
+		break;
+	default:
+		break;
+	}
+
+	if ( ! ml_puts(p->mbuf, toknames[tok], &res))
+		return(-1);
+	return((ssize_t)res);
+}
+
+
+/* ARGSUSED */
+static int 
+xml_begin(struct ml_args *p, const struct tm *tm, const char *os, 
+		const char *title, enum roffmsec sec, enum roffvol vol)
+{
+
+	if ( ! ml_puts(p->mbuf, "<?xml version=\"1.0\" "
+				"encoding=\"UTF-8\"?>\n", NULL))
+		return(0);
+	return(ml_puts(p->mbuf, "<mdoc xmlns:block=\"block\" "
+				"xmlns:body=\"body\" "
+				"xmlns:head=\"head\" "
+				"xmlns:inline=\"inline\">", NULL));
+}
+
+
+/* ARGSUSED */
+static int 
+xml_end(struct ml_args *p, const struct tm *tm, const char *os, 
+		const char *title, enum roffmsec sec, enum roffvol vol)
+{
+
+	return(ml_puts(p->mbuf, "</mdoc>", NULL));
+}
+
+
+/* ARGSUSED */
+static ssize_t 
+xml_beginstring(struct ml_args *p, const char *buf, size_t sz)
+{
+
+	return(0);
+}
+
+
+/* ARGSUSED */
+static ssize_t 
+xml_endstring(struct ml_args *p, const char *buf, size_t sz)
+{
+
+	return(0);
+}
+
+
+/* ARGSUSED */
+static ssize_t 
+xml_begintag(struct ml_args *p, enum md_ns ns, 
+		int tok, const int *argc, const char **argv)
+{
+	ssize_t		 res, sz;
+
+	if (-1 == (res = xml_printtagname(p, ns, tok)))
+		return(-1);
+	if (-1 == (sz = xml_printtagargs(p, argc, argv)))
+		return(-1);
+	return(res + sz);
+}
+
+
+/* ARGSUSED */
+static ssize_t 
+xml_endtag(struct ml_args *p, enum md_ns ns, int tok)
+{
+
+	return(xml_printtagname(p, ns, tok));
+}
+
+
+/* ARGSUSED */
+int
+xml_alloc(void **p)
+{
+
+	*p = NULL;
+	return(1);
+}
+
+
+/* ARGSUSED */
+void
+xml_free(void *p)
+{
+
+	/* Do nothing. */
+}
+
+
+int
+md_line_xml(void *data, char *buf)
+{
+
+	return(mlg_line((struct md_mlg *)data, buf));
+}
+
+
+int
+md_exit_xml(void *data, int flush)
+{
+
+	return(mlg_exit((struct md_mlg *)data, flush));
+}
+
+
+void *
+md_init_xml(const struct md_args *args,
+		struct md_mbuf *mbuf, const struct md_rbuf *rbuf)
+{
+	struct ml_cbs	 cbs;
+
+	cbs.ml_alloc = xml_alloc;
+	cbs.ml_free = xml_free;
+	cbs.ml_begintag = xml_begintag;
+	cbs.ml_endtag = xml_endtag;
+	cbs.ml_begin = xml_begin;
+	cbs.ml_end = xml_end;
+	cbs.ml_beginstring = xml_beginstring;
+	cbs.ml_endstring = xml_endstring;
+
+	return(mlg_alloc(args, rbuf, mbuf, &cbs));
+}
+
+@
+
+
+1.24
+log
+@Versioning up.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.23 2008/12/10 10:43:57 kristaps Exp $ */
+d29 1
+a29 9
+static	ssize_t		xml_endtag(struct md_mbuf *, void *,
+				const struct md_args *, 
+				enum md_ns, int);
+static	ssize_t		xml_begintag(struct md_mbuf *, void *,
+				const struct md_args *, 
+				enum md_ns, int, 
+				const int *, const char **);
+static	ssize_t		xml_beginstring(struct md_mbuf *, 
+				const struct md_args *, 
+d31 1
+a31 2
+static	ssize_t		xml_endstring(struct md_mbuf *, 
+				const struct md_args *, 
+d33 1
+a33 3
+static	int		xml_begin(struct md_mbuf *,
+	       			const struct md_args *, 
+				const struct tm *, 
+d36 1
+a36 3
+static	int		xml_end(struct md_mbuf *,
+	       			const struct md_args *, 
+				const struct tm *, 
+d39 1
+a39 1
+static	ssize_t 	xml_printtagname(struct md_mbuf *, 
+d41 4
+a44 1
+static	ssize_t 	xml_printtagargs(struct md_mbuf *, 
+d49 1
+a49 2
+xml_printtagargs(struct md_mbuf *mbuf, const int *argc,
+		const char **argv)
+d60 1
+a60 1
+		if ( ! ml_nputs(mbuf, " ", 1, &res))
+d65 1
+a65 1
+		if ( ! ml_puts(mbuf, tokargnames[c], &res))
+d67 1
+a67 1
+		if ( ! ml_nputs(mbuf, "=\"", 2, &res))
+d70 1
+a70 1
+			if ( ! ml_putstring(mbuf, argv[i], &res))
+d72 1
+a72 1
+		} else if ( ! ml_nputs(mbuf, "true", 4, &res))
+d74 1
+a74 1
+		if ( ! ml_nputs(mbuf, "\"", 1, &res))
+d83 1
+a83 1
+xml_printtagname(struct md_mbuf *mbuf, enum md_ns ns, int tok)
+d90 1
+a90 1
+		if ( ! ml_nputs(mbuf, "block:", 6, &res))
+d94 1
+a94 1
+		if ( ! ml_nputs(mbuf, "inline:", 7, &res))
+d98 1
+a98 1
+		if ( ! ml_nputs(mbuf, "body:", 5, &res))
+d102 1
+a102 1
+		if ( ! ml_nputs(mbuf, "head:", 5, &res))
+d109 1
+a109 1
+	if ( ! ml_puts(mbuf, toknames[tok], &res))
+d117 1
+a117 2
+xml_begin(struct md_mbuf *mbuf, const struct md_args *args,
+		const struct tm *tm, const char *os, 
+d121 1
+a121 1
+	if ( ! ml_puts(mbuf, "<?xml version=\"1.0\" "
+d124 1
+a124 1
+	return(ml_puts(mbuf, "<mdoc xmlns:block=\"block\" "
+d133 1
+a133 2
+xml_end(struct md_mbuf *mbuf, const struct md_args *args,
+		const struct tm *tm, const char *os, 
+d137 1
+a137 1
+	return(ml_puts(mbuf, "</mdoc>", NULL));
+d143 1
+a143 3
+xml_beginstring(struct md_mbuf *mbuf, 
+		const struct md_args *args, 
+		const char *buf, size_t sz)
+d152 1
+a152 3
+xml_endstring(struct md_mbuf *mbuf, 
+		const struct md_args *args, 
+		const char *buf, size_t sz)
+d161 1
+a161 2
+xml_begintag(struct md_mbuf *mbuf, void *data,
+		const struct md_args *args, enum md_ns ns, 
+d166 1
+a166 1
+	if (-1 == (res = xml_printtagname(mbuf, ns, tok)))
+d168 1
+a168 1
+	if (-1 == (sz = xml_printtagargs(mbuf, argc, argv)))
+d176 1
+a176 2
+xml_endtag(struct md_mbuf *mbuf, void *data,
+		const struct md_args *args, enum md_ns ns, int tok)
+d179 1
+a179 1
+	return(xml_printtagname(mbuf, ns, tok));
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.22 2008/12/10 00:53:40 kristaps Exp $ */
+d47 5
+a51 2
+static	int		xml_end(struct md_mbuf *, 
+				const struct md_args *);
+d145 3
+a147 1
+xml_end(struct md_mbuf *mbuf, const struct md_args *args)
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.21 2008/12/09 17:09:12 kristaps Exp $ */
+d46 1
+a46 1
+				enum roffmsec, const char *);
+d127 1
+a127 2
+		const char *title, enum roffmsec section, 
+		const char *vol)
+@
+
+
+1.21
+log
+@Considerable clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.20 2008/12/08 12:46:28 kristaps Exp $ */
+d71 2
+@
+
+
+1.20
+log
+@Added warnings for using macros in the wrong sections.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.19 2008/12/07 23:44:19 kristaps Exp $ */
+a22 1
+#include "libmdocml.h"
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.18 2008/12/07 21:30:49 kristaps Exp $ */
+d47 1
+a47 1
+				const char *, const char *);
+d126 1
+a126 1
+		const char *title, const char *section, 
+d202 1
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.17 2008/12/06 21:10:31 kristaps Exp $ */
+d134 2
+a135 1
+				"xmlns:special=\"special\" "
+@
+
+
+1.17
+log
+@.St macros in place.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.16 2008/12/05 19:45:15 kristaps Exp $ */
+d37 6
+d150 22
+d242 2
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.15 2008/12/05 17:43:14 kristaps Exp $ */
+d61 1
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.14 2008/12/04 23:10:51 kristaps Exp $ */
+d19 1
+d28 2
+d44 4
+d50 3
+a52 6
+/* ARGSUSED */
+static int 
+xml_begin(struct md_mbuf *mbuf, const struct md_args *args,
+		const struct tm *tm, const char *os, 
+		const char *title, const char *section, 
+		const char *vol)
+d54 1
+d57 1
+a57 6
+	if ( ! ml_puts(mbuf, "<?xml version=\"1.0\" "
+				"encoding=\"UTF-8\"?>\n", &res))
+		return(0);
+	if ( ! ml_puts(mbuf, "<mdoc xmlns:block=\"block\" "
+				"xmlns:special=\"special\" "
+				"xmlns:inline=\"inline\">", &res))
+d59 1
+d61 3
+a63 2
+	return(1);
+}
+d65 12
+d78 1
+a78 11
+/* ARGSUSED */
+static int 
+xml_end(struct md_mbuf *mbuf, const struct md_args *args)
+{
+	size_t		 res;
+
+	res = 0;
+	if ( ! ml_puts(mbuf, "</mdoc>", &res))
+		return(0);
+
+	return(1);
+a81 1
+/* ARGSUSED */
+d83 1
+a83 3
+xml_begintag(struct md_mbuf *mbuf, void *data,
+		const struct md_args *args, enum md_ns ns, 
+		int tok, const int *argc, const char **argv)
+a86 2
+	/* FIXME: doesn't print arguments! */
+
+a87 1
+
+d93 4
+a104 4
+	case (MD_NS_INLINE):
+		if ( ! ml_nputs(mbuf, "inline:", 7, &res))
+			return(-1);
+		break;
+d111 11
+d123 31
+a153 1
+	return((ssize_t)res);
+a161 1
+	size_t		 res;
+d163 11
+a173 1
+	res = 0;
+a174 20
+	switch (ns) {
+	case (MD_NS_BLOCK):
+		if ( ! ml_nputs(mbuf, "block:", 6, &res))
+			return(-1);
+		break;
+	case (MD_NS_INLINE):
+		if ( ! ml_nputs(mbuf, "inline:", 7, &res))
+			return(-1);
+		break;
+	case (MD_NS_BODY):
+		if ( ! ml_nputs(mbuf, "body:", 5, &res))
+			return(-1);
+		break;
+	case (MD_NS_HEAD):
+		if ( ! ml_nputs(mbuf, "head:", 5, &res))
+			return(-1);
+		break;
+	default:
+		break;
+	}
+d176 4
+a179 2
+	if ( ! ml_puts(mbuf, toknames[tok], &res))
+		return(-1);
+d181 1
+a181 1
+	return((ssize_t)res);
+d205 8
+d214 1
+a214 2
+	return(mlg_alloc(args, NULL, rbuf, mbuf, xml_begintag, 
+				xml_endtag, xml_begin, xml_end));
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.13 2008/12/04 11:25:29 kristaps Exp $ */
+d27 1
+a27 1
+static	ssize_t		xml_endtag(struct md_mbuf *, 
+d30 1
+a30 1
+static	ssize_t		xml_begintag(struct md_mbuf *, 
+d80 3
+a82 3
+xml_begintag(struct md_mbuf *mbuf, const struct md_args *args, 
+		enum md_ns ns, int tok, 
+		const int *argc, const char **argv)
+d120 2
+a121 2
+xml_endtag(struct md_mbuf *mbuf, const struct md_args *args, 
+		enum md_ns ns, int tok)
+d176 1
+a176 1
+	return(mlg_alloc(args, rbuf, mbuf, xml_begintag, 
+@
+
+
+1.13
+log
+@More html-css.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.12 2008/12/03 21:27:56 kristaps Exp $ */
+d86 2
+@
+
+
+1.12
+log
+@Initial html outputs working.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.11 2008/12/03 19:21:58 kristaps Exp $ */
+d34 5
+a38 2
+static	int		xml_begin(struct md_mbuf *, 
+				const struct md_args *);
+d45 4
+a48 1
+xml_begin(struct md_mbuf *mbuf, const struct md_args *args)
+@
+
+
+1.11
+log
+@Major update.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.10 2008/12/03 14:39:59 kristaps Exp $ */
+d40 1
+d58 1
+d72 1
+d103 1
+a103 2
+	if ( ! ml_nputs(mbuf, toknames[tok], 
+				strlen(toknames[tok]), &res))
+d110 1
+d140 1
+a140 2
+	if ( ! ml_nputs(mbuf, toknames[tok], 
+				strlen(toknames[tok]), &res))
+@
+
+
+1.10
+log
+@Abstract ml/mlg/html/xml.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.9 2008/12/02 18:26:57 kristaps Exp $ */
+d34 35
+d84 8
+d97 1
+a97 3
+		if ( ! ml_nputs(mbuf, "mbuf", 4, &res))
+			return(-1);
+		return((ssize_t)res);
+d125 8
+d134 1
+a134 3
+		if ( ! ml_nputs(mbuf, "mbuf", 4, &res))
+			return(-1);
+		return((ssize_t)res);
+d166 2
+a167 1
+	return(mlg_alloc(args, rbuf, mbuf, xml_begintag, xml_endtag));
+@
+
+
+1.9
+log
+@Transition to splitting xml/ml.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.8 2008/12/02 13:20:24 kristaps Exp $ */
+a18 6
+#include <sys/param.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <err.h>
+#include <stdio.h>
+d24 1
+a24 61
+
+#define	COLUMNS		 72
+
+enum	md_ns {
+	MD_NS_BLOCK,
+	MD_NS_INLINE,
+	MD_NS_DEFAULT
+};
+
+enum	md_tok {
+	MD_BLKIN,		/* Controls spacing. */
+	MD_BLKOUT,
+	MD_IN,
+	MD_OUT,
+	MD_TEXT
+};
+
+struct	md_xml {
+	const struct md_args	*args;
+	const struct md_rbuf	*rbuf;
+
+	struct md_mbuf	*mbuf;
+	struct rofftree	*tree;
+	size_t		 indent;
+	size_t		 pos;
+	enum md_tok	 last;
+	int		 flags;
+#define	MD_LITERAL	(1 << 0) /* TODO */
+#define	MD_OVERRIDE_ONE	(1 << 1)
+#define	MD_OVERRIDE_ALL	(1 << 2)
+};
+
+static	void		 roffmsg(void *arg, enum roffmsg, 
+				const char *, const char *, char *);
+static	int		 roffhead(void *);
+static	int		 rofftail(void *);
+static	int		 roffin(void *, int, int *, char **);
+static	int		 roffdata(void *, int, char *);
+static	int		 roffout(void *, int);
+static	int		 roffblkin(void *, int, int *, char **);
+static	int		 roffblkout(void *, int);
+static	int		 roffspecial(void *, int, int *, char **, char **);
+
+static	void		 mbuf_mode(struct md_xml *, enum md_ns);
+static	int		 mbuf_newline(struct md_xml *);
+static	int		 xml_indent(struct md_xml *);
+static	int		 mbuf_data(struct md_xml *, int, char *);
+static	int		 xml_nputstring(struct md_xml *, 
+				const char *, size_t);
+static	int		 xml_puts(struct md_xml *, const char *);
+static	int		 xml_nputs(struct md_xml *, 
+				const char *, size_t);
+static	int		 xml_begintag(struct md_xml *, const char *, 
+				enum md_ns, int *, char **);
+static	int		 xml_endtag(struct md_xml *, 
+				const char *, enum md_ns);
+
+#ifdef __linux__ /* FIXME: remove */
+static	size_t		  strlcat(char *, const char *, size_t);
+static	size_t		  strlcpy(char *, const char *, size_t);
+#endif
+d27 12
+a38 2
+static void
+mbuf_mode(struct md_xml *p, enum md_ns ns)
+d40 1
+a40 3
+	p->flags &= ~MD_OVERRIDE_ONE;
+	p->last = ns;
+}
+d42 1
+a42 8
+
+static int
+xml_begintag(struct md_xml *p, const char *name, enum md_ns ns, 
+		int *argc, char **argv)
+{
+	char		 buf[64];
+	ssize_t		 sz;
+	size_t		 res;
+d46 2
+a47 2
+		res = strlcpy(buf, "block:", sizeof(buf));
+		assert(res < sizeof(buf));
+d50 2
+a51 2
+		res = strlcpy(buf, "inline:", sizeof(buf));
+		assert(res < sizeof(buf));
+d54 3
+a56 2
+		*buf = 0;
+		break;
+d59 3
+a61 5
+	res = strlcat(buf, name, sizeof(buf));
+	assert(res < sizeof(buf));
+
+	if (-1 == (sz = ml_begintag(p->mbuf, buf, argc, argv)))
+		return(0);
+d63 1
+a63 2
+	p->pos += sz;
+	return(1);
+d67 3
+a69 2
+static int
+xml_endtag(struct md_xml *p, const char *name, enum md_ns ns)
+a70 2
+	char		 buf[64];
+	ssize_t		 sz;
+d73 2
+d77 2
+a78 2
+		res = strlcpy(buf, "block:", sizeof(buf));
+		assert(res < sizeof(buf));
+d81 2
+a82 2
+		res = strlcpy(buf, "inline:", sizeof(buf));
+		assert(res < sizeof(buf));
+d85 3
+a87 2
+		*buf = 0;
+		break;
+d90 3
+a92 61
+	res = strlcat(buf, name, sizeof(buf));
+	assert(res < sizeof(buf));
+
+	if (-1 == (sz = ml_endtag(p->mbuf, buf)))
+		return(0);
+
+	p->pos += sz;
+	return(1);
+}
+
+
+static int
+xml_nputstring(struct md_xml *p, const char *buf, size_t sz)
+{
+	ssize_t		 res;
+
+	if (-1 == (res = ml_nputstring(p->mbuf, buf, sz)))
+		return(0);
+	p->pos += res;
+	return(1);
+}
+
+
+static int
+xml_nputs(struct md_xml *p, const char *buf, size_t sz)
+{
+	ssize_t		 res;
+
+	if (-1 == (res = ml_nputs(p->mbuf, buf, sz)))
+		return(0);
+	p->pos += res;
+	return(1);
+}
+
+
+static int
+xml_puts(struct md_xml *p, const char *buf)
+{
+
+	return(xml_nputs(p, buf, strlen(buf)));
+}
+
+
+static int
+xml_indent(struct md_xml *p)
+{
+	ssize_t		 res;
+
+	if (-1 == (res = ml_indent(p->mbuf, p->indent)))
+		return(0);
+	p->pos += res;
+	return(1);
+}
+
+
+static int
+mbuf_newline(struct md_xml *p)
+{
+
+	if ( ! md_buf_putchar(p->mbuf, '\n'))
+		return(0);
+d94 1
+a94 67
+	p->pos = 0;
+	return(1);
+}
+
+
+static int
+mbuf_data(struct md_xml *p, int space, char *buf)
+{
+	size_t		 sz;
+	char		*bufp;
+
+	assert(p->mbuf);
+	assert(0 != p->indent);
+
+	if (MD_OVERRIDE_ONE & p->flags || MD_OVERRIDE_ALL & p->flags)
+		space = 0;
+
+	if (MD_LITERAL & p->flags)
+		return(xml_nputstring(p, buf, sizeof(buf)));
+
+	while (*buf) {
+		while (*buf && isspace(*buf))
+			buf++;
+
+		if (0 == *buf)
+			break;
+
+		bufp = buf;
+		while (*buf && ! isspace(*buf))
+			buf++;
+
+		if (0 != *buf)
+			*buf++ = 0;
+
+		sz = strlen(bufp);
+
+		if (0 == p->pos) {
+			if ( ! xml_indent(p))
+				return(0);
+			if ( ! xml_nputstring(p, bufp, sz))
+				return(0);
+			if (p->indent * MAXINDENT + sz >= COLUMNS)
+				if ( ! mbuf_newline(p))
+					return(0);
+			if ( ! (MD_OVERRIDE_ALL & p->flags))
+				space = 1;
+			continue;
+		}
+
+		if (space && sz + p->pos >= COLUMNS) {
+			if ( ! mbuf_newline(p))
+				return(0);
+			if ( ! xml_indent(p))
+				return(0);
+		} else if (space) {
+			if ( ! xml_nputs(p, " ", 1))
+				return(0);
+		}
+
+		if ( ! xml_nputstring(p, bufp, sz))
+			return(0);
+
+		if ( ! (MD_OVERRIDE_ALL & p->flags))
+			space = 1;
+	}
+
+	return(1);
+d99 1
+a99 1
+md_line_xml(void *arg, char *buf)
+a100 1
+	struct md_xml	*p;
+d102 1
+a102 2
+	p = (struct md_xml *)arg;
+	return(roff_engine(p->tree, buf));
+a108 6
+	int		 c;
+	struct md_xml	*p;
+
+	p = (struct md_xml *)data;
+	c = roff_free(p->tree, flush);
+	free(p);
+d110 1
+a110 1
+	return(c);
+a117 294
+	struct roffcb	 cb;
+	struct md_xml	*p;
+
+	cb.roffhead = roffhead;
+	cb.rofftail = rofftail;
+	cb.roffin = roffin;
+	cb.roffout = roffout;
+	cb.roffblkin = roffblkin;
+	cb.roffblkout = roffblkout;
+	cb.roffspecial = roffspecial;
+	cb.roffmsg = roffmsg;
+	cb.roffdata = roffdata;
+
+	if (NULL == (p = calloc(1, sizeof(struct md_xml))))
+		err(1, "malloc");
+
+	p->args = args;
+	p->mbuf = mbuf;
+	p->rbuf = rbuf;
+
+	assert(mbuf);
+
+	if (NULL == (p->tree = roff_alloc(&cb, p))) {
+		free(p);
+		return(NULL);
+	}
+
+	return(p);
+}
+
+
+/* ARGSUSED */
+static int
+roffhead(void *arg)
+{
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	if (-1 == xml_puts(p, "<?xml version=\"1.0\" "
+				"encoding=\"UTF-8\"?>\n"))
+		return(0);
+	if (-1 == xml_puts(p, "<mdoc xmlns:block=\"block\" "
+				"xmlns:special=\"special\" "
+				"xmlns:inline=\"inline\">"))
+		return(0);
+
+	p->indent++;
+	mbuf_mode(p, MD_BLKIN);
+	return(mbuf_newline(p));
+}
+
+
+static int
+rofftail(void *arg)
+{
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	if (0 != p->pos && ! mbuf_newline(p))
+		return(0);
+
+	mbuf_mode(p, MD_BLKOUT);
+	if ( ! xml_endtag(p, "mdoc", MD_NS_DEFAULT))
+		return(0);
+	return(mbuf_newline(p));
+}
+
+
+/* ARGSUSED */
+static int
+roffspecial(void *arg, int tok, int *argc, char **argv, char **more)
+{
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	/* FIXME: this is completely ad hoc. */
+
+	switch (tok) {
+	case (ROFF_Ns):
+		p->flags |= MD_OVERRIDE_ONE;
+		break;
+	case (ROFF_Sm):
+		assert(*more);
+		if (0 == strcmp(*more, "on"))
+			p->flags |= MD_OVERRIDE_ALL;
+		else
+			p->flags &= ~MD_OVERRIDE_ALL;
+		break;
+	default:
+		break;
+	}
+
+	return(1);
+}
+
+
+static int
+roffblkin(void *arg, int tok, int *argc, char **argv)
+{
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	if (0 != p->pos) {
+		if ( ! mbuf_newline(p))
+			return(0);
+		if ( ! xml_indent(p))
+			return(0);
+	} else if ( ! xml_indent(p))
+		return(0);
+
+	/* FIXME: xml won't like standards args (e.g., p1003.1-90). */
+
+	p->indent++;
+	mbuf_mode(p, MD_BLKIN);
+
+	if ( ! xml_begintag(p, toknames[tok], MD_NS_BLOCK,
+				argc, argv))
+		return(0);
+	return(mbuf_newline(p));
+}
+
+
+static int
+roffblkout(void *arg, int tok)
+{
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	p->indent--;
+
+	if (0 != p->pos) {
+		if ( ! mbuf_newline(p))
+			return(0);
+		if ( ! xml_indent(p))
+			return(0);
+	} else if ( ! xml_indent(p))
+		return(0);
+
+	mbuf_mode(p, MD_BLKOUT);
+	if ( ! xml_endtag(p, toknames[tok], MD_NS_BLOCK))
+		return(0);
+	return(mbuf_newline(p));
+}
+
+
+static int
+roffin(void *arg, int tok, int *argc, char **argv)
+{
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	if ( ! (MD_OVERRIDE_ONE & p->flags) && 
+			! (MD_OVERRIDE_ALL & p->flags) && 
+			p->pos + 11 > COLUMNS) 
+		if ( ! mbuf_newline(p))
+			return(0);
+
+	if (0 != p->pos && (MD_TEXT == p->last || MD_OUT == p->last)
+			&& ! (MD_OVERRIDE_ONE & p->flags)
+			&& ! (MD_OVERRIDE_ALL & p->flags))
+		if ( ! xml_nputs(p, " ", 1))
+			return(0);
+
+	if (0 == p->pos && ! xml_indent(p))
+		return(0);
+
+	mbuf_mode(p, MD_IN);
+	return(xml_begintag(p, toknames[tok], 
+				MD_NS_INLINE, argc, argv));
+}
+
+
+static int
+roffout(void *arg, int tok)
+{
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	if (0 == p->pos && ! xml_indent(p))
+		return(0);
+
+	mbuf_mode(p, MD_OUT);
+	return(xml_endtag(p, toknames[tok], MD_NS_INLINE));
+}
+
+
+static void
+roffmsg(void *arg, enum roffmsg lvl, 
+		const char *buf, const char *pos, char *msg)
+{
+	char		*level;
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+
+	switch (lvl) {
+	case (ROFF_WARN):
+		if ( ! (MD_WARN_ALL & p->args->warnings))
+			return;
+		level = "warning";
+		break;
+	case (ROFF_ERROR):
+		level = "error";
+		break;
+	default:
+		abort();
+	}
+	
+	if (pos)
+		(void)fprintf(stderr, "%s:%zu: %s: %s (column %zu)\n", 
+				p->rbuf->name, p->rbuf->line, level, 
+				msg, pos - buf);
+	else
+		(void)fprintf(stderr, "%s: %s: %s\n", 
+				p->rbuf->name, level, msg);
+
+}
+
+
+static int
+roffdata(void *arg, int space, char *buf)
+{
+	struct md_xml	*p;
+
+	assert(arg);
+	p = (struct md_xml *)arg;
+	if ( ! mbuf_data(p, space, buf))
+		return(0);
+
+	mbuf_mode(p, MD_TEXT);
+	return(1);
+}
+
+
+#ifdef __linux /* FIXME: remove. */
+/*	$OpenBSD: strlcat.c,v 1.13 2005/08/08 08:05:37 espie Exp $	*/
+
+/*
+ * Copyright (c) 1998 Todd C. Miller <Todd.Miller@@courtesan.com>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+static size_t
+strlcat(char *dst, const char *src, size_t siz)
+{
+	char *d = dst;
+	const char *s = src;
+	size_t n = siz;
+	size_t dlen;
+
+	/* Find the end of dst and adjust bytes left but don't go past
+	 * end */
+	while (n-- != 0 && *d != '\0')
+		d++;
+	dlen = d - dst;
+	n = siz - dlen;
+
+	if (n == 0)
+		return(dlen + strlen(s));
+	while (*s != '\0') {
+		if (n != 1) {
+			*d++ = *s;
+			n--;
+		}
+		s++;
+	}
+	*d = '\0';
+d119 1
+a119 1
+	return(dlen + (s - src));	/* count does not include NUL */
+a121 27
+
+static size_t
+strlcpy(char *dst, const char *src, size_t siz)
+{
+	char *d = dst;
+	const char *s = src;
+	size_t n = siz;
+
+	/* Copy as many bytes as will fit */
+	if (n != 0) {
+		while (--n != 0) {
+			if ((*d++ = *s++) == '\0')
+				break;
+		}
+	}
+
+	/* Not enough room in dst, add NUL and traverse rest of src */
+	if (n == 0) {
+		if (siz != 0)
+			*d = '\0';		/* NUL-terminate dst */
+		while (*s++)
+			;
+	}
+
+	return(s - src - 1);	/* count does not include NUL */
+}
+#endif /*__linux__*/
+@
+
+
+1.8
+log
+@Added `Sm' functionality.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.7 2008/12/02 00:15:41 kristaps Exp $ */
+a30 1
+#define	MAXINDENT	 8
+d75 1
+a75 1
+static	int		 mbuf_indent(struct md_xml *);
+d77 1
+a77 3
+static	int		 mbuf_putstring(struct md_xml *, 
+				const char *);
+static	int		 mbuf_nputstring(struct md_xml *, 
+d79 2
+a80 2
+static	int		 mbuf_puts(struct md_xml *, const char *);
+static	int		 mbuf_nputs(struct md_xml *, 
+d82 1
+a82 1
+static	int		 mbuf_begintag(struct md_xml *, const char *, 
+d84 1
+a84 1
+static	int		 mbuf_endtag(struct md_xml *, 
+d87 5
+d102 1
+a102 1
+mbuf_begintag(struct md_xml *p, const char *name, enum md_ns ns, 
+d105 3
+a107 4
+	int		 i;
+
+	if ( ! mbuf_nputs(p, "<", 1))
+		return(0);
+d110 11
+a120 10
+		case (MD_NS_BLOCK):
+			if ( ! mbuf_nputs(p, "block:", 6))
+				return(0);
+			break;
+		case (MD_NS_INLINE):
+			if ( ! mbuf_nputs(p, "inline:", 7))
+				return(0);
+			break;
+		default:
+			break;
+d123 4
+a126 1
+	if ( ! mbuf_puts(p, name))
+d129 2
+a130 13
+	for (i = 0; ROFF_ARGMAX != argc[i]; i++) {
+		if ( ! mbuf_nputs(p, " ", 1))
+			return(0);
+		if ( ! mbuf_puts(p, tokargnames[argc[i]]))
+			return(0);
+		if ( ! mbuf_nputs(p, "=\"", 2))
+			return(0);
+		if ( ! mbuf_putstring(p, argv[i] ? argv[i] : "true"))
+			return(0);
+		if ( ! mbuf_nputs(p, "\"", 1))
+			return(0);
+	}
+	return(mbuf_nputs(p, ">", 1));
+d135 1
+a135 1
+mbuf_endtag(struct md_xml *p, const char *tag, enum md_ns ns)
+d137 3
+a139 2
+	if ( ! mbuf_nputs(p, "</", 2))
+		return(0);
+d142 11
+a152 10
+		case (MD_NS_BLOCK):
+			if ( ! mbuf_nputs(p, "block:", 6))
+				return(0);
+			break;
+		case (MD_NS_INLINE):
+			if ( ! mbuf_nputs(p, "inline:", 7))
+				return(0);
+			break;
+		default:
+			break;
+d155 4
+a158 1
+	if ( ! mbuf_puts(p, tag))
+a159 2
+	return(mbuf_nputs(p, ">", 1));
+}
+d161 2
+a162 6
+
+static int
+mbuf_putstring(struct md_xml *p, const char *buf)
+{
+
+	return(mbuf_nputstring(p, buf, strlen(buf)));
+d167 1
+a167 1
+mbuf_nputstring(struct md_xml *p, const char *buf, size_t sz)
+d169 1
+a169 1
+	int		 i;
+d171 3
+a173 29
+	for (i = 0; i < (int)sz; i++) {
+		switch (buf[i]) {
+		case ('&'):
+			if ( ! md_buf_puts(p->mbuf, "&amp;", 5))
+				return(0);
+			p->pos += 5;
+			break;
+		case ('"'):
+			if ( ! md_buf_puts(p->mbuf, "&quot;", 6))
+				return(0);
+			p->pos += 6;
+			break;
+		case ('<'):
+			if ( ! md_buf_puts(p->mbuf, "&lt;", 4))
+				return(0);
+			p->pos += 4;
+			break;
+		case ('>'):
+			if ( ! md_buf_puts(p->mbuf, "&gt;", 4))
+				return(0);
+			p->pos += 4;
+			break;
+		default:
+			if ( ! md_buf_putchar(p->mbuf, buf[i]))
+				return(0);
+			p->pos++;
+			break;
+		}
+	}
+d179 1
+a179 1
+mbuf_nputs(struct md_xml *p, const char *buf, size_t sz)
+d181 1
+d183 4
+a186 2
+	p->pos += sz;
+	return(md_buf_puts(p->mbuf, buf, sz));
+d191 1
+a191 1
+mbuf_puts(struct md_xml *p, const char *buf)
+d194 1
+a194 1
+	return(mbuf_nputs(p, buf, strlen(buf)));
+d199 1
+a199 1
+mbuf_indent(struct md_xml *p)
+d201 1
+a201 1
+	size_t		 i;
+d203 3
+a205 8
+	assert(p->pos == 0);
+
+	/* LINTED */
+	for (i = 0; i < MIN(p->indent, MAXINDENT); i++)
+		if ( ! md_buf_putstring(p->mbuf, "    "))
+			return(0);
+
+	p->pos += i * 4;
+d235 1
+a235 1
+		return(mbuf_putstring(p, buf));
+d254 1
+a254 1
+			if ( ! mbuf_indent(p))
+d256 1
+a256 1
+			if ( ! mbuf_nputstring(p, bufp, sz))
+d269 1
+a269 1
+			if ( ! mbuf_indent(p))
+d272 1
+a272 1
+			if ( ! mbuf_nputs(p, " ", 1))
+d276 1
+a276 1
+		if ( ! mbuf_nputstring(p, bufp, sz))
+d355 1
+a355 1
+	if ( ! mbuf_puts(p, "<?xml version=\"1.0\" "
+d358 1
+a358 1
+	if ( ! mbuf_puts(p, "<mdoc xmlns:block=\"block\" "
+d381 1
+a381 1
+	if ( ! mbuf_endtag(p, "mdoc", MD_NS_DEFAULT))
+d428 1
+a428 1
+		if ( ! mbuf_indent(p))
+d430 1
+a430 1
+	} else if ( ! mbuf_indent(p))
+d438 1
+a438 1
+	if ( ! mbuf_begintag(p, toknames[tok], MD_NS_BLOCK,
+d458 1
+a458 1
+		if ( ! mbuf_indent(p))
+d460 1
+a460 1
+	} else if ( ! mbuf_indent(p))
+d464 1
+a464 1
+	if ( ! mbuf_endtag(p, toknames[tok], MD_NS_BLOCK))
+d487 1
+a487 1
+		if ( ! mbuf_nputs(p, " ", 1))
+d490 1
+a490 1
+	if (0 == p->pos && ! mbuf_indent(p))
+d494 1
+a494 1
+	return(mbuf_begintag(p, toknames[tok], 
+d507 1
+a507 1
+	if (0 == p->pos && ! mbuf_indent(p))
+d511 1
+a511 1
+	return(mbuf_endtag(p, toknames[tok], MD_NS_INLINE));
+d563 77
+@
+
+
+1.7
+log
+@Lint fixes and prettiness.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.6 2008/12/02 00:10:37 kristaps Exp $ */
+a33 4
+#ifdef	__linux__ /* FIXME */
+#define	strlcat		 strncat
+#endif
+
+d41 1
+a41 1
+	MD_BLKIN,
+d45 1
+a45 2
+	MD_TEXT,
+	MD_OVERRIDE
+d58 3
+a60 1
+#define	MD_LITERAL	(1 << 0) /* FIXME */
+d72 1
+a72 1
+static	int		 roffspecial(void *, int);
+d74 1
+d91 8
+d266 3
+d293 1
+a293 1
+			if (p->indent * MAXINDENT + sz >= COLUMNS) {
+d296 2
+a297 2
+				continue;
+			}
+d314 2
+a315 3
+		if ( ! space && p->pos >= COLUMNS)
+			if ( ! mbuf_newline(p))
+				return(0);
+d399 1
+a399 1
+	p->last = MD_BLKIN;
+d415 1
+a415 1
+	p->last = MD_BLKOUT;
+a417 1
+
+d422 1
+d424 1
+a424 1
+roffspecial(void *arg, int tok)
+d435 8
+a442 1
+		p->last = MD_OVERRIDE;
+a469 1
+	p->last = MD_BLKIN;
+d471 1
+d498 1
+a498 2
+	p->last = MD_BLKOUT;
+
+d513 5
+a517 5
+	/* 
+	 * FIXME: put all of this in a buffer, then check the buffer
+	 * length versus the column width for nicer output.  This is a
+	 * bit hacky.
+	 */
+d519 4
+a522 2
+	if (p->pos + 11 > COLUMNS) 
+		if ( ! mbuf_newline(p))
+d525 1
+a525 12
+	if (0 != p->pos) {
+		switch (p->last) {
+		case (MD_TEXT):
+			/* FALLTHROUGH */
+		case (MD_OUT):
+			if ( ! mbuf_nputs(p, " ", 1))
+				return(0);
+			break;
+		default:
+			break;
+		}
+	} else if ( ! mbuf_indent(p))
+d528 1
+a528 1
+	p->last = MD_IN;
+d545 1
+a545 1
+	p->last = MD_OUT;
+d594 1
+a594 1
+	p->last = MD_TEXT;
+@
+
+
+1.6
+log
+@Improvements to the xml part.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.5 2008/12/01 16:01:28 kristaps Exp $ */
+d170 1
+a170 1
+	size_t		 i;
+d172 1
+a172 1
+	for (i = 0; i < sz; i++) {
+@
+
+
+1.5
+log
+@Considerable scoping fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.4 2008/12/01 15:32:36 kristaps Exp $ */
+d32 1
+a32 1
+#define	COLUMNS		 60
+d38 6
+d87 70
+d184 10
+d407 2
+a408 1
+	if ( ! mbuf_puts(p, "</mdoc>"))
+a410 1
+	p->last = MD_BLKOUT;
+a414 1
+/* ARGSUSED */
+d423 2
+a440 1
+	int		 i;
+a452 7
+	if ( ! mbuf_nputs(p, "<", 1))
+		return(0);
+	if ( ! mbuf_nputs(p, "block:", 6))
+		return(0);
+	if ( ! mbuf_puts(p, toknames[tok]))
+		return(0);
+
+d455 2
+a456 12
+	for (i = 0; ROFF_ARGMAX != argc[i]; i++) {
+		if ( ! mbuf_nputs(p, " ", 1))
+			return(0);
+		if ( ! mbuf_puts(p, tokargnames[argc[i]]))
+			return(0);
+		if ( ! mbuf_nputs(p, "=\"", 2))
+			return(0);
+		if ( ! mbuf_putstring(p, argv[i] ? argv[i] : "true"))
+			return(0);
+		if ( ! mbuf_nputs(p, "\"", 1))
+			return(0);
+	}
+d458 2
+a459 1
+	if ( ! mbuf_nputs(p, ">", 1))
+a460 3
+
+	p->last = MD_BLKIN;
+	p->indent++;
+d483 3
+a485 7
+	if ( ! mbuf_nputs(p, "</", 2))
+		return(0);
+	if ( ! mbuf_nputs(p, "block:", 6))
+		return(0);
+	if ( ! mbuf_puts(p, toknames[tok]))
+		return(0);
+	if ( ! mbuf_nputs(p, ">", 1))
+a486 2
+
+	p->last = MD_BLKOUT;
+a494 1
+	int		 i;
+d524 2
+a525 21
+
+	if ( ! mbuf_nputs(p, "<", 1))
+		return(0);
+	if ( ! mbuf_nputs(p, "inline:", 7))
+		return(0);
+	if ( ! mbuf_puts(p, toknames[tok]))
+		return(0);
+
+	for (i = 0; ROFF_ARGMAX != argc[i]; i++) {
+		if ( ! mbuf_nputs(p, " ", 1))
+			return(0);
+		if ( ! mbuf_puts(p, tokargnames[argc[i]]))
+			return(0);
+		if ( ! mbuf_nputs(p, "=\"", 2))
+			return(0);
+		if ( ! mbuf_putstring(p, argv[i] ? argv[i] : "true"))
+			return(0);
+		if ( ! mbuf_nputs(p, "\"", 1))
+			return(0);
+	}
+	return(mbuf_nputs(p, ">", 1));
+a536 2
+	/* Continue with a regular out token. */
+
+d541 1
+a541 8
+
+	if ( ! mbuf_nputs(p, "</", 2))
+		return(0);
+	if ( ! mbuf_nputs(p, "inline:", 7))
+		return(0);
+	if ( ! mbuf_puts(p, toknames[tok]))
+		return(0);
+	return(mbuf_nputs(p, ">", 1));
+@
+
+
+1.4
+log
+@Considerably improved roff_text parser.
+Consolidated noop roff macros.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.3 2008/12/01 09:25:18 kristaps Exp $ */
+d31 1
+a31 1
+#define	INDENT		 4
+d144 1
+a144 1
+	for (i = 0; i < MIN(p->indent, INDENT); i++)
+d148 1
+a148 1
+	p->pos += i * INDENT;
+d198 1
+a198 1
+			if (p->indent * INDENT + sz >= COLUMNS) {
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.2 2008/11/30 23:05:57 kristaps Exp $ */
+d560 1
+@
+
+
+1.2
+log
+@Small fixes to output.
+@
+text
+@d1 1
+a1 1
+/* $Id: xml.c,v 1.1 2008/11/30 21:41:35 kristaps Exp $ */
+d43 2
+a44 1
+	MD_TEXT
+d333 12
+a345 1
+	/* FIXME */
+d496 2
+@
+
+
+1.1
+log
+@Preliminary xml output filter (validate-renamed) done.
+@
+text
+@d1 1
+a1 1
+/* $Id: validate.c,v 1.6 2008/11/30 20:53:34 kristaps Exp $ */
+d77 3
+d93 28
+d128 8
+d211 1
+a211 1
+			if ( ! mbuf_nputstring(p, " ", 1))
+d295 1
+a295 1
+	if ( ! mbuf_putstring(p, "<?xml version=\"1.0\" "
+d298 3
+a300 1
+	if ( ! mbuf_nputstring(p, "<block:mdoc>", 12))
+d320 1
+a320 1
+	if ( ! mbuf_nputstring(p, "</block:mdoc>", 13))
+d355 1
+a355 1
+	if ( ! mbuf_nputstring(p, "<", 1))
+d357 1
+a357 1
+	if ( ! mbuf_nputstring(p, "block:", 6))
+d359 1
+a359 1
+	if ( ! mbuf_putstring(p, toknames[tok]))
+d362 2
+d365 1
+a365 1
+		if ( ! mbuf_nputstring(p, " ", 1))
+d367 1
+a367 1
+		if ( ! mbuf_putstring(p, tokargnames[argc[i]]))
+d369 1
+a369 1
+		if ( ! mbuf_nputstring(p, "=\"", 2))
+d373 1
+a373 1
+		if ( ! mbuf_nputstring(p, "\"", 1))
+d377 1
+a377 1
+	if ( ! mbuf_nputstring(p, ">", 1))
+d404 1
+a404 1
+	if ( ! mbuf_nputstring(p, "</", 2))
+d406 1
+a406 1
+	if ( ! mbuf_nputstring(p, "block:", 6))
+d408 1
+a408 1
+	if ( ! mbuf_putstring(p, toknames[tok]))
+d410 1
+a410 1
+	if ( ! mbuf_nputstring(p, ">", 1))
+d442 1
+a442 1
+			if ( ! mbuf_nputstring(p, " ", 1))
+d453 1
+a453 1
+	if ( ! mbuf_nputstring(p, "<", 1))
+d455 1
+a455 1
+	if ( ! mbuf_nputstring(p, "inline:", 7))
+d457 1
+a457 1
+	if ( ! mbuf_putstring(p, toknames[tok]))
+d461 1
+a461 1
+		if ( ! mbuf_nputstring(p, " ", 1))
+d463 1
+a463 1
+		if ( ! mbuf_putstring(p, tokargnames[argc[i]]))
+d465 1
+a465 1
+		if ( ! mbuf_nputstring(p, "=\"", 2))
+d469 1
+a469 1
+		if ( ! mbuf_nputstring(p, "\"", 1))
+d472 1
+a472 1
+	return(mbuf_nputstring(p, ">", 1));
+d489 1
+a489 1
+	if ( ! mbuf_nputstring(p, "</", 2))
+d491 1
+a491 1
+	if ( ! mbuf_nputstring(p, "inline:", 7))
+d493 1
+a493 1
+	if ( ! mbuf_putstring(p, toknames[tok]))
+d495 1
+a495 1
+	return(mbuf_nputstring(p, ">", 1));
+@

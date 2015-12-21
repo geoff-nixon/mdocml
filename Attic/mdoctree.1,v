@@ -1,0 +1,360 @@
+head	1.8;
+access;
+symbols
+	VERSION_1_9_5:1.8
+	VERSION_1_8_5:1.8
+	VERSION_1_8_1:1.8
+	VERSION_1_7_16:1.8
+	VERSION_1_7_15:1.8
+	OPENBSD_CHECKIN:1.8
+	VERSION_1_6_5:1.8
+	VERSION_1_5_3:1.7
+	VERSION_1_5_1:1.6
+	VERSION_1_4_6:1.6
+	VERSION_1_4_5:1.6
+	VERSION_1_4_4:1.6
+	VERSION_1_4_2:1.5
+	VERSION_1_3_15:1.4
+	VERSION_1_3_13:1.4
+	VERSION_1_3_11:1.4
+	VERSION_1_3_10:1.4
+	VERSION_1_3_9:1.4
+	VERSION_1_3_8:1.4
+	VERSION_1_3_6:1.4
+	VERSION_1_3_5:1.4;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2009.03.19.16.17.27;	author kristaps;	state dead;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.09.13.04.01;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.08.18.02.36;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.02.23.13.05.06;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.02.22.19.23.48;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.22.11.23.19;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.21.21.00.06;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@Split mdocterm.c -> main.c terminal.c.
+Abstracted output with -T selector (default ascii).
+Name change: mdocterm -> mandoc.
+Re-imported tree with -Ttree.
+@
+text
+@@
+
+
+1.7
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@a0 162
+.\" $Id: mdoctree.1,v 1.6 2009/03/09 13:04:01 kristaps Exp $
+.\"
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the
+.\" above copyright notice and this permission notice appear in all
+.\" copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+.\" WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+.\" WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+.\" AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+.\" DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+.\" PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+.\" TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+.\" PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate$
+.Dt mdoctree 1
+.Os
+.\" SECTION
+.Sh NAME
+.Nm mdoctree
+.Nd mdoc macro compiler
+.\" SECTION
+.Sh SYNOPSIS
+.Nm mdoctree
+.Op Fl vV
+.Op Fl f Ns Ar options...
+.Op Fl W Ns Ar err...
+.Op Ar infile
+.\" SECTION
+.Sh DESCRIPTION
+The
+.Nm
+utility parses a BSD 
+.Dq mdoc 
+manual pages and prints its syntax tree.  It's commonly used to see the
+syntax tree of a document when building new 
+.Xr mdoc 3
+utilities.  The arguments are as follows:
+.Bl -tag -width XXXXXXXXXXXX
+.\" ITEM
+.It Fl v
+Print verbose parsing output.
+.\" ITEM
+.It Fl V
+Print version and exit.
+.\" ITEM
+.It Fl f Ns Ar option...
+Override default compiler behaviour.  See 
+.Sx Compiler Options
+for details.
+.\" ITEM
+.It Fl W Ns Ar err...
+Print warning messages.  May be set to 
+.Fl W Ns Ar all
+for all warnings, 
+.Ar compat
+for groff/troff-compatibility warnings, or
+.Ar syntax
+for syntax warnings.  If
+.Fl W Ns Ar error 
+is specified, warnings are considered errors and cause utility
+termination.  Multiple 
+.Fl W
+arguments may be comma-separated, such as
+.Fl W Ns Ar error,all .
+.\" ITEM
+.It Ar infile
+Read input from
+.Ar infile ,
+which may be 
+.Dq \-
+for stdin.
+.El
+.\" PARAGRAPH
+.Pp
+The
+.Nm
+utility is a formatting front-end for
+.Xr mdoc 3 ,
+which parses the 
+.Dq mdoc
+input, documented at
+.Xr mdoc 7
+and
+.Xr mdoc.samples 7 ,
+into an abstract syntax tree.  By default, it reads from stdin and
+prints the syntax tree to stdout.
+.\" PARAGRAPH
+.Pp
+.Ex -std mdoctree
+.\" SUB-SECTION
+.Ss Compiler Options
+Default compiler behaviour may be overriden with the
+.Fl f
+flag.  The available options are as follows:
+.Bl -tag -width XXXXXXXXXXXX -offset XXXX
+.It Fl f Ns Ar ign-scope
+When rewinding the scope of a block macro, forces the compiler to ignore
+scope violations.  This can seriously mangle the resulting tree.
+.It Fl f Ns Ar ign-escape
+Ignore invalid escape sequences.
+.It Fl f Ns Ar ign-macro
+Ignore unknown macros at the start of input lines.
+.El
+.\" PARAGRAPH
+.Pp
+As with the
+.Fl W
+flag, multiple
+.Fl f
+options may be grouped and delimited with a comma.  Using
+.Fl f Ns Ar ign-scope,ign-escape ,
+for example, will try to ignore scope and character-escape errors.
+.\" SUB-SECTION
+.Ss Input Encoding
+The
+.Nm
+utility expects its input to be 7-bit ASCII as defined in
+.Xr ascii 7 .
+The only non-graphing characters accepted are spaces,
+.Sq \  ,
+and tabs,
+.Sq \et .
+Tabs are only accepted in literal block-displays and as column
+delimiters.
+.Pp
+Only Unix-style newlines (\en) are accepted; if the newline is escaped,
+the line is concatenated with the next.
+.\" SUB-SECTION
+.Ss Character Escapes
+Since
+.Nm
+doesn't format its output, character escapes are displayed as passed
+into the compiler. 
+.\" SECTION
+.Sh EXAMPLES
+To validate this manual page:
+.\" PARAGRAPH
+.Pp
+.D1 % mdoctree \-Wall,error mdoctree.1 
+.\" SECTION
+.Sh SEE ALSO
+.Xr mdocterm 1 ,
+.Xr mdoclint 1 ,
+.Xr mdoc.samples 7 ,
+.Xr mdoc 7 ,
+.Xr mdoc 3
+.\" 
+.Sh AUTHORS
+The
+.Nm
+utility was written by 
+.An Kristaps Dzonsons Aq kristaps@@openbsd.org .
+.\" SECTION
+.Sh CAVEATS
+See
+.Xr mdoc 3
+for a list of bugs, caveats, and incomplete macros.
+@
+
+
+1.6
+log
+@Added "Input Encoding" section to mdoc*.1.
+Newline-escaped lines are concatenated.
+Added -fign-macro option.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoctree.1,v 1.5 2009/03/08 18:02:36 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+d157 1
+a157 1
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+@
+
+
+1.5
+log
+@Updated manuals.
+Added -fign-scope and -fign-escape.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoctree.1,v 1.4 2009/02/23 13:05:06 kristaps Exp $
+d106 2
+d118 21
+@
+
+
+1.4
+log
+@Added mdoclint.
+`make regress' uses mdoclint
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoctree.1,v 1.3 2009/02/22 19:23:48 kristaps Exp $
+d29 2
+a30 1
+.Op Fl v
+d43 1
+a43 1
+.Bl -tag -width "\-Werr... "
+d48 8
+d90 2
+a91 6
+into an abstract syntax tree.
+.\" PARAGRAPH
+.Pp
+By default,
+.Nm
+reads from stdin and prints the syntax tree to stdout.
+d95 12
+d109 7
+a115 3
+.Nm
+is
+.Ud
+@
+
+
+1.3
+log
+@Fixed `.Pf' handling.
+System now supports all mdocml manual pages.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoctree.1,v 1.2 2009/02/22 11:23:19 kristaps Exp $
+d104 1
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoctree.1,v 1.1 2009/02/21 21:00:06 kristaps Exp $
+d38 4
+a41 1
+manual pages and prints its syntax tree.  The arguments are as follows:
+@
+
+
+1.1
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.c,v 1.45 2009/02/20 07:43:15 kristaps Exp $
+d67 1
+@

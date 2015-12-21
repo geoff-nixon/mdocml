@@ -1,0 +1,4146 @@
+head	1.50;
+access;
+symbols
+	VERSION_1_9_5:1.50
+	VERSION_1_8_5:1.50
+	VERSION_1_8_1:1.50
+	VERSION_1_7_16:1.50
+	VERSION_1_7_15:1.50
+	OPENBSD_CHECKIN:1.50
+	VERSION_1_6_5:1.50
+	VERSION_1_5_3:1.47
+	VERSION_1_5_1:1.45
+	VERSION_1_4_6:1.37
+	VERSION_1_4_5:1.37
+	VERSION_1_4_4:1.36
+	VERSION_1_4_2:1.36
+	VERSION_1_3_15:1.23
+	VERSION_1_3_13:1.22
+	VERSION_1_3_11:1.19
+	VERSION_1_3_10:1.18
+	VERSION_1_3_9:1.18
+	VERSION_1_3_8:1.18
+	VERSION_1_3_6:1.18
+	VERSION_1_3_5:1.10;
+locks; strict;
+comment	@ * @;
+
+
+1.50
+date	2009.03.19.16.17.27;	author kristaps;	state dead;
+branches;
+next	1.49;
+
+1.49
+date	2009.03.19.11.49.00;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2009.03.17.13.35.46;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2009.03.15.10.34.11;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2009.03.15.07.18.10;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2009.03.15.07.08.53;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2009.03.14.12.35.02;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2009.03.14.05.36.07;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2009.03.12.06.32.17;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2009.03.11.00.39.58;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2009.03.10.11.16.43;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2009.03.09.13.17.49;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2009.03.08.18.02.36;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.03.08.13.52.29;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.03.05.13.12.12;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.03.04.14.41.40;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.03.04.14.13.05;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.03.04.14.04.02;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.03.04.13.57.35;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.03.03.22.17.19;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.03.03.21.07.01;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.03.02.17.29.16;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.03.02.17.14.46;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.03.02.12.09.32;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.03.01.23.23.55;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.03.01.13.06.49;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.02.28.21.31.13;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.02.28.20.13.06;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.02.28.14.43.35;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.02.27.10.55.16;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.02.27.09.14.02;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.02.27.08.20.15;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.02.26.17.11.38;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.02.25.23.18.50;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.02.25.17.02.47;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.02.25.15.12.26;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.02.25.13.30.53;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.02.25.12.27.37;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.02.25.12.09.20;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.02.24.14.52.55;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.02.23.15.34.53;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.02.23.15.19.47;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.02.23.12.45.19;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.02.23.09.33.34;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.02.23.07.09.13;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.22.22.58.39;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.21.21.00.06;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.50
+log
+@Split mdocterm.c -> main.c terminal.c.
+Abstracted output with -T selector (default ascii).
+Name change: mdocterm -> mandoc.
+Re-imported tree with -Ttree.
+@
+text
+@@
+
+
+1.49
+log
+@Many more ASCII escapes added.
+Stripped nroff punt from mdocterm.c.
+Fixed multiple-file handling for mdocterm.c.
+Cleared up mdoc.h API.
+@
+text
+@a0 1132
+/* $Id: mdocterm.c,v 1.48 2009/03/17 13:35:46 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <sys/types.h>
+#include <sys/stat.h>
+
+#include <assert.h>
+#include <err.h>
+#include <fcntl.h>
+#include <getopt.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+#include "term.h"
+
+#define	WARN_WALL	  0x03		/* All-warnings mask. */
+#define	WARN_WCOMPAT	 (1 << 0)	/* Compatibility warnings. */
+#define	WARN_WSYNTAX	 (1 << 1)	/* Syntax warnings. */
+#define	WARN_WERR	 (1 << 2)	/* Warnings->errors. */
+
+enum	termt {
+	TERMT_ASCII,
+	TERMT_LINT,
+	TERMT_TREE
+};
+
+extern	char		 *__progname;
+
+__dead	static void	  version(void);
+__dead	static void	  usage(void);
+#if 0
+__dead	static void	  punt(struct cmdargs *, char **);
+#endif
+static	int		  foptions(int *, char *);
+static	int		  toptions(enum termt *, char *);
+static	int		  woptions(int *, char *);
+static	int		  merr(void *, int, int, const char *);
+static	int		  mwarn(void *, int, int, 
+				enum mdoc_warn, const char *);
+static	void		  body(struct termp *, struct termpair *,
+				const struct mdoc_meta *,
+				const struct mdoc_node *);
+static	void		  header(struct termp *,
+				const struct mdoc_meta *);
+static	void		  footer(struct termp *,
+				const struct mdoc_meta *);
+static	int		  file(char **, size_t *, char **, size_t *, 
+				const char *, struct mdoc *);
+static	int		  fdesc(char **, size_t *, char **, size_t *, 
+				const char *, int, struct mdoc *);
+static	void		  pword(struct termp *, const char *, int);
+static	void		  pescape(struct termp *, 
+				const char *, int *, int);
+static	void		  nescape(struct termp *,
+				const char *, size_t);
+static	void		  chara(struct termp *, char);
+static	void		  stringa(struct termp *, 
+				const char *, size_t);
+static	void		  sanity(const struct mdoc_node *);
+
+
+int
+main(int argc, char *argv[])
+{
+	struct termp	 termp;
+	int		 c, fflags, wflags;
+	struct mdoc_cb	 cb;
+	struct mdoc	*mdoc;
+	char		*buf, *line;
+	size_t		 bufsz, linesz;
+	enum termt	 termt;
+
+	bzero(&termp, sizeof(struct termp));
+	bzero(&cb, sizeof(struct mdoc_cb));
+
+	termt = TERMT_ASCII;
+	fflags = wflags = 0;
+
+	/* LINTED */
+	while (-1 != (c = getopt(argc, argv, "f:VW:T:")))
+		switch (c) {
+		case ('f'):
+			if ( ! foptions(&fflags, optarg))
+				return(0);
+			break;
+		case ('T'):
+			if ( ! toptions(&termt, optarg))
+				return(0);
+			break;
+		case ('W'):
+			if ( ! woptions(&wflags, optarg))
+				return(0);
+			break;
+		case ('V'):
+			version();
+			/* NOTREACHED */
+		default:
+			usage();
+			/* NOTREACHED */
+		}
+
+	argc -= optind;
+	argv += optind;
+
+	termp.maxrmargin = 78;			/* FIXME */
+
+	cb.mdoc_err = merr;
+	cb.mdoc_warn = mwarn;
+
+	/* Line and block buffers persist between parses. */
+
+	buf = line = NULL;
+	bufsz = linesz = 0;
+
+	/* Overall mdoc persists between parses. */
+
+	mdoc = mdoc_alloc(&wflags, fflags, &cb);
+
+	while (*argv) {
+		if ( ! file(&line, &linesz, &buf, &bufsz, *argv, mdoc))
+			break;
+
+		switch (termt) {
+		case (TERMT_ASCII):
+			if (NULL == termp.symtab)
+				termp.symtab = ascii2htab();
+			header(&termp, mdoc_meta(mdoc));
+			body(&termp, NULL, mdoc_meta(mdoc), 
+					mdoc_node(mdoc));
+			footer(&termp, mdoc_meta(mdoc));
+			break;
+		default:
+			break;
+		}
+
+		mdoc_reset(mdoc);
+		argv++;
+	}
+
+	if (buf)
+		free(buf);
+	if (line)
+		free(line);
+	if (termp.buf)
+		free(termp.buf);
+	if (termp.symtab)
+		asciifree(termp.symtab);
+
+	mdoc_free(mdoc);
+
+	return(0);
+}
+
+
+__dead static void
+version(void)
+{
+
+	(void)printf("%s %s\n", __progname, VERSION);
+	exit(0);
+	/* NOTREACHED */
+}
+
+
+__dead static void
+usage(void)
+{
+
+	(void)fprintf(stderr, "usage: %s\n", __progname);
+	exit(1);
+	/* NOTREACHED */
+}
+
+
+static int
+file(char **ln, size_t *lnsz, char **buf, size_t *bufsz, 
+		const char *file, struct mdoc *mdoc)
+{
+	int		 fd, c;
+
+	if (-1 == (fd = open(file, O_RDONLY, 0))) {
+		warn("%s", file);
+		return(0);
+	}
+
+	c = fdesc(ln, lnsz, buf, bufsz, file, fd, mdoc);
+
+	if (-1 == close(fd))
+		warn("%s", file);
+
+	return(c);
+}
+
+
+static int
+fdesc(char **lnp, size_t *lnsz, char **bufp, size_t *bufsz, 
+		const char *f, int fd, struct mdoc *mdoc)
+{
+	size_t		 sz;
+	ssize_t		 ssz;
+	struct stat	 st;
+	int		 j, i, pos, lnn;
+	char		*ln, *buf;
+
+	buf = *bufp;
+	ln = *lnp;
+
+	/*
+	 * Two buffers: ln and buf.  buf is the input buffer, optimised
+	 * for each file's block size.  ln is a line buffer.  Both
+	 * growable, hence passed in by ptr-ptr.
+	 */
+
+	if (-1 == fstat(fd, &st)) {
+		warnx("%s", f);
+		sz = BUFSIZ;
+	} else 
+		sz = (unsigned)BUFSIZ > st.st_blksize ?
+			(size_t)BUFSIZ : st.st_blksize;
+
+	if (sz > *bufsz) {
+		if (NULL == (buf = realloc(buf, sz)))
+			err(1, "realloc");
+		*bufp = buf;
+		*bufsz = sz;
+	}
+
+	/*
+	 * Fill buf with file blocksize and parse newlines into ln.
+	 */
+
+	for (lnn = 1, pos = 0; ; ) {
+		if (-1 == (ssz = read(fd, buf, sz))) {
+			warn("%s", f);
+			return(0);
+		} else if (0 == ssz) 
+			break;
+
+		for (i = 0; i < (int)ssz; i++) {
+			if (pos >= (int)*lnsz) {
+				*lnsz += 256; /* Step-size. */
+				ln = realloc(ln, *lnsz);
+				if (NULL == ln)
+					err(1, "realloc");
+				*lnp = ln;
+			}
+
+			if ('\n' != buf[i]) {
+				ln[pos++] = buf[i];
+				continue;
+			}
+
+			/* Check for CPP-escaped newline.  */
+
+			if (pos > 0 && '\\' == ln[pos - 1]) {
+				for (j = pos - 1; j >= 0; j--)
+					if ('\\' != ln[j])
+						break;
+
+				if ( ! ((pos - j) % 2)) {
+					pos--;
+					lnn++;
+					continue;
+				}
+			}
+
+			ln[pos] = 0;
+			if ( ! mdoc_parseln(mdoc, lnn, ln))
+				return(0);
+			lnn++;
+			pos = 0;
+		}
+	}
+
+	return(mdoc_endparse(mdoc));
+}
+
+
+static int
+toptions(enum termt *tflags, char *arg)
+{
+
+	if (0 == strcmp(arg, "ascii"))
+		*tflags = TERMT_ASCII;
+	else if (0 == strcmp(arg, "lint"))
+		*tflags = TERMT_LINT;
+	else if (0 == strcmp(arg, "tree"))
+		*tflags = TERMT_TREE;
+	else {
+		warnx("bad argument: -T%s", arg);
+		return(0);
+	}
+
+	return(1);
+}
+
+
+/*
+ * Parse out the options for [-fopt...] setting compiler options.  These
+ * can be comma-delimited or called again.
+ */
+static int
+foptions(int *fflags, char *arg)
+{
+	char		*v;
+	char		*toks[] = { "ign-scope", "ign-escape", 
+				    "ign-macro", NULL };
+
+	while (*arg) 
+		switch (getsubopt(&arg, toks, &v)) {
+		case (0):
+			*fflags |= MDOC_IGN_SCOPE;
+			break;
+		case (1):
+			*fflags |= MDOC_IGN_ESCAPE;
+			break;
+		case (2):
+			*fflags |= MDOC_IGN_MACRO;
+			break;
+		default:
+			warnx("bad argument: -f%s", arg);
+			return(0);
+		}
+
+	return(1);
+}
+
+
+/* 
+ * Parse out the options for [-Werr...], which sets warning modes.
+ * These can be comma-delimited or called again.  XXX - should this be
+ * using -w like troff?
+ */
+static int
+woptions(int *wflags, char *arg)
+{
+	char		*v;
+	char		*toks[] = { "all", "compat", 
+			"syntax", "error", NULL };
+
+	while (*arg) 
+		switch (getsubopt(&arg, toks, &v)) {
+		case (0):
+			*wflags |= WARN_WALL;
+			break;
+		case (1):
+			*wflags |= WARN_WCOMPAT;
+			break;
+		case (2):
+			*wflags |= WARN_WSYNTAX;
+			break;
+		case (3):
+			*wflags |= WARN_WERR;
+			break;
+		default:
+			warnx("bad argument: -W%s", arg);
+			return(0);
+		}
+
+	return(1);
+}
+
+
+/*
+ * Flush a line of text.  A "line" is loosely defined as being something
+ * that should be followed by a newline, regardless of whether it's
+ * broken apart by newlines getting there.  A line can also be a
+ * fragment of a columnar list.
+ *
+ * Specifically, a line is whatever's in p->buf of length p->col, which
+ * is zeroed after this function returns.
+ *
+ * The variables TERMP_NOLPAD, TERMP_LITERAL and TERMP_NOBREAK are of
+ * critical importance here.  Their behaviour follows:
+ *
+ *  - TERMP_NOLPAD: when beginning to write the line, don't left-pad the
+ *    offset value.  This is useful when doing columnar lists where the
+ *    prior column has right-padded.
+ *
+ *  - TERMP_NOBREAK: this is the most important and is used when making
+ *    columns.  In short: don't print a newline and instead pad to the
+ *    right margin.  Used in conjunction with TERMP_NOLPAD.
+ *
+ *  - TERMP_NONOBREAK: don't newline when TERMP_NOBREAK is specified.
+ *
+ *  In-line line breaking:
+ *
+ *  If TERMP_NOBREAK is specified and the line overruns the right
+ *  margin, it will break and pad-right to the right margin after
+ *  writing.  If maxrmargin is violated, it will break and continue
+ *  writing from the right-margin, which will lead to the above
+ *  scenario upon exit.
+ *
+ *  Otherwise, the line will break at the right margin.  Extremely long
+ *  lines will cause the system to emit a warning (TODO: hyphenate, if
+ *  possible).
+ */
+void
+flushln(struct termp *p)
+{
+	int		 i, j;
+	size_t		 vsz, vis, maxvis, mmax, bp;
+
+	/*
+	 * First, establish the maximum columns of "visible" content.
+	 * This is usually the difference between the right-margin and
+	 * an indentation, but can be, for tagged lists or columns, a
+	 * small set of values.
+	 */
+
+	assert(p->offset < p->rmargin);
+	maxvis = p->rmargin - p->offset;
+	mmax = p->maxrmargin - p->offset;
+	bp = TERMP_NOBREAK & p->flags ? mmax : maxvis;
+	vis = 0;
+
+	/*
+	 * If in the standard case (left-justified), then begin with our
+	 * indentation, otherwise (columns, etc.) just start spitting
+	 * out text.
+	 */
+
+	if ( ! (p->flags & TERMP_NOLPAD))
+		/* LINTED */
+		for (j = 0; j < (int)p->offset; j++)
+			putchar(' ');
+
+	for (i = 0; i < (int)p->col; i++) {
+		/*
+		 * Count up visible word characters.  Control sequences
+		 * (starting with the CSI) aren't counted.  A space
+		 * generates a non-printing word, which is valid (the
+		 * space is printed according to regular spacing rules).
+		 */
+
+		/* LINTED */
+		for (j = i, vsz = 0; j < (int)p->col; j++) {
+			if (' ' == p->buf[j])
+				break;
+			else if (8 == p->buf[j])
+				j += 1;
+			else
+				vsz++;
+		}
+
+		/*
+		 * Do line-breaking.  If we're greater than our
+		 * break-point and already in-line, break to the next
+		 * line and start writing.  If we're at the line start,
+		 * then write out the word (TODO: hyphenate) and break
+		 * in a subsequent loop invocation.
+		 */
+
+		if ( ! (TERMP_NOBREAK & p->flags)) {
+			if (vis && vis + vsz > bp) {
+				putchar('\n');
+				for (j = 0; j < (int)p->offset; j++)
+					putchar(' ');
+				vis = 0;
+			} else if (vis + vsz > bp)
+				warnx("word breaks right margin");
+
+			/* TODO: hyphenate. */
+
+		} else {
+			if (vis && vis + vsz > bp) {
+				putchar('\n');
+				for (j = 0; j < (int)p->rmargin; j++)
+					putchar(' ');
+				vis = p->rmargin - p->offset;
+			} else if (vis + vsz > bp) 
+				warnx("word breaks right margin");
+
+			/* TODO: hyphenate. */
+		}
+
+		/* 
+		 * Write out the word and a trailing space.  Omit the
+		 * space if we're the last word in the line or beyond
+		 * our breakpoint.
+		 */
+
+		for ( ; i < (int)p->col; i++) {
+			if (' ' == p->buf[i])
+				break;
+			putchar(p->buf[i]);
+		}
+		vis += vsz;
+		if (i < (int)p->col && vis <= bp) {
+			putchar(' ');
+			vis++;
+		}
+	}
+
+	/*
+	 * If we've overstepped our maximum visible no-break space, then
+	 * cause a newline and offset at the right margin.
+	 */
+
+	if ((TERMP_NOBREAK & p->flags) && vis >= maxvis) {
+		if ( ! (TERMP_NONOBREAK & p->flags)) {
+			putchar('\n');
+			for (i = 0; i < (int)p->rmargin; i++)
+				putchar(' ');
+		}
+		p->col = 0;
+		return;
+	}
+
+	/*
+	 * If we're not to right-marginalise it (newline), then instead
+	 * pad to the right margin and stay off.
+	 */
+
+	if (p->flags & TERMP_NOBREAK) {
+		if ( ! (TERMP_NONOBREAK & p->flags))
+			for ( ; vis < maxvis; vis++)
+				putchar(' ');
+	} else
+		putchar('\n');
+
+	p->col = 0;
+}
+
+
+/* 
+ * A newline only breaks an existing line; it won't assert vertical
+ * space.  All data in the output buffer is flushed prior to the newline
+ * assertion.
+ */
+void
+newln(struct termp *p)
+{
+
+	p->flags |= TERMP_NOSPACE;
+	if (0 == p->col) {
+		p->flags &= ~TERMP_NOLPAD;
+		return;
+	}
+	flushln(p);
+	p->flags &= ~TERMP_NOLPAD;
+}
+
+
+/*
+ * Asserts a vertical space (a full, empty line-break between lines).
+ * Note that if used twice, this will cause two blank spaces and so on.
+ * All data in the output buffer is flushed prior to the newline
+ * assertion.
+ */
+void
+vspace(struct termp *p)
+{
+
+	newln(p);
+	putchar('\n');
+}
+
+
+/*
+ * Break apart a word into "pwords" (partial-words, usually from
+ * breaking up a phrase into individual words) and, eventually, put them
+ * into the output buffer.  If we're a literal word, then don't break up
+ * the word and put it verbatim into the output buffer.
+ */
+void
+word(struct termp *p, const char *word)
+{
+	int 		 i, j, len;
+
+	if (p->flags & TERMP_LITERAL) {
+		pword(p, word, (int)strlen(word));
+		return;
+	}
+
+	if (0 == (len = (int)strlen(word)))
+		errx(1, "blank line not in literal context");
+
+	if (mdoc_isdelim(word)) {
+		if ( ! (p->flags & TERMP_IGNDELIM))
+			p->flags |= TERMP_NOSPACE;
+		p->flags &= ~TERMP_IGNDELIM;
+	}
+
+	/* LINTED */
+	for (j = i = 0; i < len; i++) {
+		if (' ' != word[i]) {
+			j++;
+			continue;
+		} 
+		
+		/* Escaped spaces don't delimit... */
+		if (i && ' ' == word[i] && '\\' == word[i - 1]) {
+			j++;
+			continue;
+		}
+
+		if (0 == j)
+			continue;
+		assert(i >= j);
+		pword(p, &word[i - j], j);
+		j = 0;
+	}
+	if (j > 0) {
+		assert(i >= j);
+		pword(p, &word[i - j], j);
+	}
+}
+
+
+/*
+ * This is the main function for printing out nodes.  It's constituted
+ * of PRE and POST functions, which correspond to prefix and infix
+ * processing.  The termpair structure allows data to persist between
+ * prefix and postfix invocations.
+ */
+static void
+body(struct termp *p, struct termpair *ppair,
+		const struct mdoc_meta *meta,
+		const struct mdoc_node *node)
+{
+	int		 dochild;
+	struct termpair	 pair;
+
+	/* Some quick sanity-checking. */
+
+	sanity(node);
+
+	/* Pre-processing. */
+
+	dochild = 1;
+	pair.ppair = ppair;
+	pair.type = 0;
+	pair.offset = pair.rmargin = 0;
+	pair.flag = 0;
+	pair.count = 0;
+
+	if (MDOC_TEXT != node->type) {
+		if (termacts[node->tok].pre)
+			if ( ! (*termacts[node->tok].pre)(p, &pair, meta, node))
+				dochild = 0;
+	} else /* MDOC_TEXT == node->type */
+		word(p, node->string);
+
+	/* Children. */
+
+	if (TERMPAIR_FLAG & pair.type)
+		p->flags |= pair.flag;
+
+	if (dochild && node->child)
+		body(p, &pair, meta, node->child);
+
+	if (TERMPAIR_FLAG & pair.type)
+		p->flags &= ~pair.flag;
+
+	/* Post-processing. */
+
+	if (MDOC_TEXT != node->type)
+		if (termacts[node->tok].post)
+			(*termacts[node->tok].post)(p, &pair, meta, node);
+
+	/* Siblings. */
+
+	if (node->next)
+		body(p, ppair, meta, node->next);
+}
+
+
+static void
+footer(struct termp *p, const struct mdoc_meta *meta)
+{
+	struct tm	*tm;
+	char		*buf, *os;
+
+	if (NULL == (buf = malloc(p->rmargin)))
+		err(1, "malloc");
+	if (NULL == (os = malloc(p->rmargin)))
+		err(1, "malloc");
+
+	tm = localtime(&meta->date);
+
+#ifdef __OpenBSD__
+	if (NULL == strftime(buf, p->rmargin, "%B %d, %Y", tm))
+#else
+	if (0 == strftime(buf, p->rmargin, "%B %d, %Y", tm))
+#endif
+		err(1, "strftime");
+
+	(void)strlcpy(os, meta->os, p->rmargin);
+
+	/*
+	 * This is /slightly/ different from regular groff output
+	 * because we don't have page numbers.  Print the following:
+	 *
+	 * OS                                            MDOCDATE
+	 */
+
+	vspace(p);
+
+	p->flags |= TERMP_NOSPACE | TERMP_NOBREAK;
+	p->rmargin = p->maxrmargin - strlen(buf);
+	p->offset = 0;
+
+	word(p, os);
+	flushln(p);
+
+	p->flags |= TERMP_NOLPAD | TERMP_NOSPACE;
+	p->offset = p->rmargin;
+	p->rmargin = p->maxrmargin;
+	p->flags &= ~TERMP_NOBREAK;
+
+	word(p, buf);
+	flushln(p);
+
+	free(buf);
+	free(os);
+}
+
+
+static void
+header(struct termp *p, const struct mdoc_meta *meta)
+{
+	char		*buf, *title;
+
+	p->rmargin = p->maxrmargin;
+	p->offset = 0;
+
+	if (NULL == (buf = malloc(p->rmargin)))
+		err(1, "malloc");
+	if (NULL == (title = malloc(p->rmargin)))
+		err(1, "malloc");
+
+	/*
+	 * The header is strange.  It has three components, which are
+	 * really two with the first duplicated.  It goes like this:
+	 *
+	 * IDENTIFIER              TITLE                   IDENTIFIER
+	 *
+	 * The IDENTIFIER is NAME(SECTION), which is the command-name
+	 * (if given, or "unknown" if not) followed by the manual page
+	 * section.  These are given in `Dt'.  The TITLE is a free-form
+	 * string depending on the manual volume.  If not specified, it
+	 * switches on the manual section.
+	 */
+
+	assert(meta->vol);
+	(void)strlcpy(buf, meta->vol, p->rmargin);
+
+	if (meta->arch) {
+		(void)strlcat(buf, " (", p->rmargin);
+		(void)strlcat(buf, meta->arch, p->rmargin);
+		(void)strlcat(buf, ")", p->rmargin);
+	}
+
+	(void)snprintf(title, p->rmargin, "%s(%d)", 
+			meta->title, meta->msec);
+
+	p->offset = 0;
+	p->rmargin = (p->maxrmargin - strlen(buf)) / 2;
+	p->flags |= TERMP_NOBREAK | TERMP_NOSPACE;
+
+	word(p, title);
+	flushln(p);
+
+	p->flags |= TERMP_NOLPAD | TERMP_NOSPACE;
+	p->offset = p->rmargin;
+	p->rmargin = p->maxrmargin - strlen(title);
+
+	word(p, buf);
+	flushln(p);
+
+	p->offset = p->rmargin;
+	p->rmargin = p->maxrmargin;
+	p->flags &= ~TERMP_NOBREAK;
+	p->flags |= TERMP_NOLPAD | TERMP_NOSPACE;
+
+	word(p, title);
+	flushln(p);
+
+	p->rmargin = p->maxrmargin;
+	p->offset = 0;
+	p->flags &= ~TERMP_NOSPACE;
+
+	free(title);
+	free(buf);
+}
+
+
+/*
+ * Determine the symbol indicated by an escape sequences, that is, one
+ * starting with a backslash.  Once done, we pass this value into the
+ * output buffer by way of the symbol table.
+ */
+static void
+nescape(struct termp *p, const char *word, size_t len)
+{
+	const char	*rhs;
+	size_t		 sz;
+
+	if (NULL == (rhs = a2ascii(p->symtab, word, len, &sz))) 
+		return;
+	stringa(p, rhs, sz);
+}
+
+
+/*
+ * Handle an escape sequence: determine its length and pass it to the
+ * escape-symbol look table.  Note that we assume mdoc(3) has validated
+ * the escape sequence (we assert upon badly-formed escape sequences).
+ */
+static void
+pescape(struct termp *p, const char *word, int *i, int len)
+{
+	int		 j;
+
+	if (++(*i) >= len)
+		return;
+
+	if ('(' == word[*i]) {
+		(*i)++;
+		if (*i + 1 >= len)
+			return;
+
+		nescape(p, &word[*i], 2);
+		(*i)++;
+		return;
+
+	} else if ('*' == word[*i]) { 
+		(*i)++;
+		if (*i >= len)
+			return;
+
+		switch (word[*i]) {
+		case ('('):
+			(*i)++;
+			if (*i + 1 >= len)
+				return;
+
+			nescape(p, &word[*i], 2);
+			(*i)++;
+			return;
+		case ('['):
+			break;
+		default:
+			nescape(p, &word[*i], 1);
+			return;
+		}
+
+	} else if ('[' != word[*i]) {
+		nescape(p, &word[*i], 1);
+		return;
+	}
+
+	(*i)++;
+	for (j = 0; word[*i] && ']' != word[*i]; (*i)++, j++)
+		/* Loop... */ ;
+
+	if (0 == word[*i])
+		return;
+
+	nescape(p, &word[*i - j], (size_t)j);
+}
+
+
+/*
+ * Handle pwords, partial words, which may be either a single word or a
+ * phrase that cannot be broken down (such as a literal string).  This
+ * handles word styling.
+ */
+static void
+pword(struct termp *p, const char *word, int len)
+{
+	int		 i;
+
+	if ( ! (TERMP_NOSPACE & p->flags) && 
+			! (TERMP_LITERAL & p->flags))
+		chara(p, ' ');
+
+	if ( ! (p->flags & TERMP_NONOSPACE))
+		p->flags &= ~TERMP_NOSPACE;
+
+	/* 
+	 * If ANSI (word-length styling), then apply our style now,
+	 * before the word.
+	 */
+
+	for (i = 0; i < len; i++) {
+		if ('\\' == word[i]) {
+			pescape(p, word, &i, len);
+			continue;
+		}
+
+		if (TERMP_STYLE & p->flags) {
+			if (TERMP_BOLD & p->flags) {
+				chara(p, word[i]);
+				chara(p, 8);
+			}
+			if (TERMP_UNDER & p->flags) {
+				chara(p, '_');
+				chara(p, 8);
+			}
+		}
+
+		chara(p, word[i]);
+	}
+}
+
+
+/*
+ * Like chara() but for arbitrary-length buffers.  Resize the buffer by
+ * a factor of two (if the buffer is less than that) or the buffer's
+ * size.
+ */
+static void
+stringa(struct termp *p, const char *c, size_t sz)
+{
+	size_t		 s;
+
+	if (0 == sz)
+		return;
+
+	assert(c);
+	if (p->col + sz >= p->maxcols) {
+		if (0 == p->maxcols)
+			p->maxcols = 256;
+		s = sz > p->maxcols * 2 ? sz : p->maxcols * 2;
+		p->buf = realloc(p->buf, s);
+		if (NULL == p->buf)
+			err(1, "realloc");
+		p->maxcols = s;
+	}
+
+	(void)memcpy(&p->buf[(int)p->col], c, sz);
+	p->col += sz;
+}
+
+
+/*
+ * Insert a single character into the line-buffer.  If the buffer's
+ * space is exceeded, then allocate more space by doubling the buffer
+ * size.
+ */
+static void
+chara(struct termp *p, char c)
+{
+	size_t		 s;
+
+	if (p->col + 1 >= p->maxcols) {
+		if (0 == p->maxcols)
+			p->maxcols = 256;
+		s = p->maxcols * 2;
+		p->buf = realloc(p->buf, s);
+		if (NULL == p->buf)
+			err(1, "realloc");
+		p->maxcols = s;
+	}
+	p->buf[(int)(p->col)++] = c;
+}
+
+
+static void
+sanity(const struct mdoc_node *n)
+{
+
+	switch (n->type) {
+	case (MDOC_TEXT):
+		if (n->child) 
+			errx(1, "regular form violated (1)");
+		if (NULL == n->parent) 
+			errx(1, "regular form violated (2)");
+		if (NULL == n->string)
+			errx(1, "regular form violated (3)");
+		switch (n->parent->type) {
+		case (MDOC_TEXT):
+			/* FALLTHROUGH */
+		case (MDOC_ROOT):
+			errx(1, "regular form violated (4)");
+			/* NOTREACHED */
+		default:
+			break;
+		}
+		break;
+	case (MDOC_ELEM):
+		if (NULL == n->parent)
+			errx(1, "regular form violated (5)");
+		switch (n->parent->type) {
+		case (MDOC_TAIL):
+			/* FALLTHROUGH */
+		case (MDOC_BODY):
+			/* FALLTHROUGH */
+		case (MDOC_HEAD):
+			break;
+		default:
+			errx(1, "regular form violated (6)");
+			/* NOTREACHED */
+		}
+		if (n->child) switch (n->child->type) {
+		case (MDOC_TEXT):
+			break;
+		default:
+			errx(1, "regular form violated (7(");
+			/* NOTREACHED */
+		}
+		break;
+	case (MDOC_HEAD):
+		/* FALLTHROUGH */
+	case (MDOC_BODY):
+		/* FALLTHROUGH */
+	case (MDOC_TAIL):
+		if (NULL == n->parent)
+			errx(1, "regular form violated (8)");
+		if (MDOC_BLOCK != n->parent->type)
+			errx(1, "regular form violated (9)");
+		if (n->child) switch (n->child->type) {
+		case (MDOC_BLOCK):
+			/* FALLTHROUGH */
+		case (MDOC_ELEM):
+			/* FALLTHROUGH */
+		case (MDOC_TEXT):
+			break;
+		default:
+			errx(1, "regular form violated (a)");
+			/* NOTREACHED */
+		}
+		break;
+	case (MDOC_BLOCK):
+		if (NULL == n->parent)
+			errx(1, "regular form violated (b)");
+		if (NULL == n->child)
+			errx(1, "regular form violated (c)");
+		switch (n->parent->type) {
+		case (MDOC_ROOT):
+			/* FALLTHROUGH */
+		case (MDOC_HEAD):
+			/* FALLTHROUGH */
+		case (MDOC_BODY):
+			/* FALLTHROUGH */
+		case (MDOC_TAIL):
+			break;
+		default:
+			errx(1, "regular form violated (d)");
+			/* NOTREACHED */
+		}
+		switch (n->child->type) {
+		case (MDOC_ROOT):
+			/* FALLTHROUGH */
+		case (MDOC_ELEM):
+			errx(1, "regular form violated (e)");
+			/* NOTREACHED */
+		default:
+			break;
+		}
+		break;
+	case (MDOC_ROOT):
+		if (n->parent)
+			errx(1, "regular form violated (f)");
+		if (NULL == n->child)
+			errx(1, "regular form violated (10)");
+		switch (n->child->type) {
+		case (MDOC_BLOCK):
+			break;
+		default:
+			errx(1, "regular form violated (11)");
+			/* NOTREACHED */
+		}
+		break;
+	}
+}
+
+
+static int
+merr(void *arg, int line, int col, const char *msg)
+{
+
+	warnx("error: %s (line %d, column %d)", msg, line, col);
+	return(0);
+}
+
+
+static int
+mwarn(void *arg, int line, int col, 
+		enum mdoc_warn type, const char *msg)
+{
+	int		 flags;
+	char		*wtype;
+
+	flags = *(int *)arg;
+	wtype = NULL;
+
+	switch (type) {
+	case (WARN_COMPAT):
+		wtype = "compat";
+		if (flags & WARN_WCOMPAT)
+			break;
+		return(1);
+	case (WARN_SYNTAX):
+		wtype = "syntax";
+		if (flags & WARN_WSYNTAX)
+			break;
+		return(1);
+	}
+
+	assert(wtype);
+	warnx("%s warning: %s (line %d, column %d)", 
+			wtype, msg, line, col);
+
+	if ( ! (flags & WARN_WERR))
+		return(1);
+
+	warnx("%s: considering warnings as errors", 
+			__progname);
+	return(0);
+}
+
+
+@
+
+
+1.48
+log
+@Clean up ASCII table's memory.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.47 2009/03/16 23:37:28 kristaps Exp $ */
+d20 1
+a22 1
+#include <ctype.h>
+d24 1
+a30 1
+#include "mmain.h"
+d33 9
+a41 9
+struct	nroffopt {
+	int		  fl_h;
+	int		  fl_i;
+	char		 *arg_m;
+	char		 *arg_n;
+	char		 *arg_o;
+	char		 *arg_r;
+	char		 *arg_T;
+	struct termp	 *termp; /* Ephemeral. */
+d44 14
+a57 5
+__dead void		  punt(struct nroffopt *, char *);
+static	int		  option(void *, int, char *);
+static	int		  optsopt(struct termp *, char *);
+static	void		  body(struct termp *,
+				struct termpair *,
+d64 7
+a70 4
+
+static	void		  pword(struct termp *, const char *, size_t);
+static	void		  pescape(struct termp *, const char *, 
+				size_t *, size_t);
+d78 1
+d82 73
+a154 37
+	struct mmain	  *p;
+	const struct mdoc *mdoc;
+	struct nroffopt	   nroff;
+	struct termp	   termp;
+	int		   c;
+	char		  *in;
+
+	(void)memset(&termp, 0, sizeof(struct termp));
+	(void)memset(&nroff, 0, sizeof(struct nroffopt));
+
+	termp.maxrmargin = termp.rmargin = 78; /* FIXME */
+	termp.maxcols = 1024; /* FIXME */
+	termp.flags = TERMP_NOSPACE;
+	termp.symtab = ascii2htab();
+
+	nroff.termp = &termp;
+
+	p = mmain_alloc();
+
+	c = mmain_getopt(p, argc, argv, "[-Ooption...]", 
+			"[infile]", "him:n:o:r:T:O:", &nroff, option);
+
+	/* FIXME: this needs to accept multiple outputs. */
+	argv += c;
+	if ((argc -= c) > 0)
+		in = *argv++;
+	else
+		in = "-";
+
+	mmain_prepare(p, in);
+
+	if (NULL == (mdoc = mmain_process(p))) {
+		if (TERMP_NOPUNT & termp.iflags)
+			mmain_exit(p, 1);
+		mmain_free(p);
+		punt(&nroff, in);
+		/* NOTREACHED */
+d157 23
+a179 2
+	if (NULL == (termp.buf = malloc(termp.maxcols)))
+		err(1, "malloc");
+a180 3
+	header(&termp, mdoc_meta(mdoc));
+	body(&termp, NULL, mdoc_meta(mdoc), mdoc_node(mdoc));
+	footer(&termp, mdoc_meta(mdoc));
+d182 3
+a184 2
+	free(termp.buf);
+	asciifree(termp.symtab);
+d186 2
+a187 1
+	mmain_exit(p, 0);
+d193 128
+a320 1
+optsopt(struct termp *p, char *arg)
+d323 2
+a324 1
+	char		*toks[] = { "nopunt", NULL };
+d329 7
+a335 1
+			p->iflags |= TERMP_NOPUNT;
+d338 1
+a338 1
+			warnx("unknown -O argument");
+d346 5
+d352 1
+a352 1
+option(void *ptr, int c, char *arg)
+d354 3
+a356 2
+	struct termp	*termp;
+	struct nroffopt *nroff;
+d358 18
+a375 30
+	nroff = (struct nroffopt *)ptr;
+	termp = nroff->termp;
+
+	switch (c) {
+	case ('h'):
+		nroff->fl_h = 1;
+		break;
+	case ('i'):
+		nroff->fl_i = 1;
+		break;
+	case ('m'):
+		nroff->arg_m = arg;
+		break;
+	case ('n'):
+		nroff->arg_n = arg;
+		break;
+	case ('o'):
+		nroff->arg_o = arg;
+		break;
+	case ('r'):
+		nroff->arg_r = arg;
+		break;
+	case ('T'):
+		nroff->arg_T = arg;
+		break;
+	case ('O'):
+		return(optsopt(termp, arg));
+	default:
+		break;
+	}
+d401 2
+d418 2
+a419 1
+	size_t		 i, j, vsz, vis, maxvis, mmax, bp;
+d442 1
+a442 1
+		for (j = 0; j < p->offset; j++)
+d445 1
+a445 1
+	for (i = 0; i < p->col; i++) {
+d454 1
+a454 1
+		for (j = i, vsz = 0; j < p->col; j++) {
+d474 1
+a474 1
+				for (j = 0; j < p->offset; j++)
+d485 1
+a485 1
+				for (j = 0; j < p->rmargin; j++)
+d500 1
+a500 1
+		for ( ; i < p->col; i++) {
+d506 1
+a506 1
+		if (i < p->col && vis <= bp) {
+d520 1
+a520 1
+			for (i = 0; i < p->rmargin; i++)
+d586 1
+a586 1
+	size_t 		 i, j, len;
+d589 1
+a589 1
+		pword(p, word, strlen(word));
+d593 1
+a593 1
+	if (0 == (len = strlen(word)))
+d740 1
+a740 1
+	char		*buf, *title, *bufp;
+a774 3
+	for (bufp = title; *bufp; bufp++)
+		*bufp = toupper((u_char)*bufp);
+	
+d817 1
+a817 2
+	if (NULL == (rhs = a2ascii(p->symtab, word, len, &sz))) {
+		warnx("unsupported %zu-byte escape sequence", len);
+a818 2
+	}
+
+d829 1
+a829 1
+pescape(struct termp *p, const char *word, size_t *i, size_t len)
+d831 1
+a831 1
+	size_t		 j;
+d833 1
+a833 2
+	if (++(*i) >= len) {
+		warnx("ignoring bad escape sequence");
+a834 1
+	}
+d838 1
+a838 2
+		if (*i + 1 >= len) {
+			warnx("ignoring bad escape sequence");
+d840 1
+a840 1
+		}
+d847 1
+a847 2
+		if (*i >= len) {
+			warnx("ignoring bad escape sequence");
+d849 1
+a849 1
+		}
+d853 1
+a853 2
+			if (*i + 1 >= len) {
+				warnx("ignoring bad escape sequence");
+d855 1
+a855 1
+			}
+d875 1
+a875 2
+	if (0 == word[*i]) {
+		warnx("ignoring bad escape sequence");
+d877 2
+a878 2
+	}
+	nescape(p, &word[*i - j], j);
+d888 1
+a888 1
+pword(struct termp *p, const char *word, size_t len)
+d890 1
+a890 1
+	size_t		 i;
+a938 2
+	s = sz > p->maxcols * 2 ? sz : p->maxcols * 2;
+	
+d941 3
+d950 1
+a950 1
+	(void)memcpy(&p->buf[p->col], c, sz);
+d963 1
+d966 4
+a969 1
+		p->buf = realloc(p->buf, p->maxcols * 2);
+d971 2
+a972 2
+			err(1, "malloc");
+		p->maxcols *= 2;
+d974 1
+a974 1
+	p->buf[(p->col)++] = c;
+d1088 2
+a1089 2
+__dead void
+punt(struct nroffopt *nroff, char *in)
+a1090 3
+	char		*args[32];
+	char		 arg0[32], argm[32];
+	int		 i;
+d1092 3
+a1094 1
+	warnx("punting to nroff!");
+a1095 1
+	i = 0;
+d1097 6
+a1102 2
+	(void)strlcpy(arg0, "nroff", 32);
+	args[i++] = arg0;
+d1104 2
+a1105 11
+	if (nroff->fl_h)
+		args[i++] = "-h";
+	if (nroff->fl_i)
+		args[i++] = "-i";
+
+	if (nroff->arg_m) {
+		(void)strlcpy(argm, "-m", 32);
+		(void)strlcat(argm, nroff->arg_m, 32);
+		args[i++] = argm;
+	} else
+		args[i++] = "-mandoc";
+d1107 12
+a1118 2
+	args[i++] = in;
+	args[i++] = (char *)NULL;
+d1120 10
+a1129 3
+	(void)execvp("nroff", args);
+	errx(1, "exec");
+	/* NOTREACHED */
+d1132 1
+@
+
+
+1.47
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.46 2009/03/16 22:19:19 kristaps Exp $ */
+d116 1
+@
+
+
+1.46
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.45 2009/03/15 10:34:11 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.45
+log
+@Backed out all ANSI code.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.44 2009/03/15 07:18:10 kristaps Exp $ */
+d44 1
+a44 6
+struct	termseq {
+	const char	 *enc;
+	int		  sym;
+};
+
+dead_pre void		  punt(struct nroffopt *, char *) dead_post;
+a63 1
+static	void		  symbola(struct termp *, enum tsym);
+a65 116
+#ifdef __linux__
+extern	size_t		  strlcat(char *, const char *, size_t);
+extern	size_t		  strlcpy(char *, const char *, size_t);
+#endif
+
+static	struct termseq	  termenc1[] = {
+	{ "\\",		  TERMSYM_SLASH },
+	{ "\'",		  TERMSYM_RSQUOTE },
+	{ "`",		  TERMSYM_LSQUOTE },
+	{ "-",		  TERMSYM_HYPHEN },
+	{ " ",		  TERMSYM_SPACE },
+	{ ".",		  TERMSYM_PERIOD },
+	{ "&",		  TERMSYM_BREAK },
+	{ "e",		  TERMSYM_SLASH },
+	{ "q",		  TERMSYM_DQUOTE },
+	{ "|",		  TERMSYM_BREAK },
+	{ NULL,		  0 }
+};
+
+static	struct termseq	  termenc2[] = {
+	{ "rC", 	  TERMSYM_RBRACE },
+	{ "lC", 	  TERMSYM_LBRACE },
+	{ "rB", 	  TERMSYM_RBRACK },
+	{ "lB", 	  TERMSYM_LBRACK },
+	{ "ra", 	  TERMSYM_RANGLE },
+	{ "la", 	  TERMSYM_LANGLE },
+	{ "Lq", 	  TERMSYM_LDQUOTE },
+	{ "lq", 	  TERMSYM_LDQUOTE },
+	{ "Rq", 	  TERMSYM_RDQUOTE },
+	{ "rq", 	  TERMSYM_RDQUOTE },
+	{ "oq", 	  TERMSYM_LSQUOTE },
+	{ "aq", 	  TERMSYM_RSQUOTE },
+
+	{ "<-", 	  TERMSYM_LARROW },
+	{ "->", 	  TERMSYM_RARROW },
+	{ "ua", 	  TERMSYM_UARROW },
+	{ "da", 	  TERMSYM_DARROW },
+
+	{ "bu", 	  TERMSYM_BULLET },
+	{ "Ba", 	  TERMSYM_BAR },
+	{ "ba", 	  TERMSYM_BAR },
+	{ "co", 	  TERMSYM_COPY },
+	{ "Am", 	  TERMSYM_AMP },
+
+	{ "Le", 	  TERMSYM_LE },
+	{ "<=", 	  TERMSYM_LE },
+	{ "Ge", 	  TERMSYM_GE },
+	{ ">=", 	  TERMSYM_GE },
+	{ "==", 	  TERMSYM_EQ },
+	{ "Ne", 	  TERMSYM_NEQ },
+	{ "!=", 	  TERMSYM_NEQ },
+	{ "Pm", 	  TERMSYM_PLUSMINUS },
+	{ "+-", 	  TERMSYM_PLUSMINUS },
+	{ "If", 	  TERMSYM_INF2 },
+	{ "if", 	  TERMSYM_INF },
+	{ "Na", 	  TERMSYM_NAN },
+	{ "na", 	  TERMSYM_NAN },
+	{ "**", 	  TERMSYM_ASTERISK },
+	{ "Gt", 	  TERMSYM_GT },
+	{ "Lt", 	  TERMSYM_LT },
+
+	{ "aa", 	  TERMSYM_ACUTE },
+	{ "ga", 	  TERMSYM_GRAVE },
+
+	{ "en", 	  TERMSYM_EN },
+	{ "em", 	  TERMSYM_EM },
+
+	{ "Pi", 	  TERMSYM_PI },
+	{ NULL,		  0 }
+};
+
+/* FIXME: abstract to dynamically-compiled table. */
+static	struct termsym	  termsym_ascii[TERMSYM_MAX] = {
+	{ "]", 1 },		/* TERMSYM_RBRACK */
+	{ "[", 1 },		/* TERMSYM_LBRACK */
+	{ "<-", 2 },		/* TERMSYM_LARROW */
+	{ "->", 2 },		/* TERMSYM_RARROW */
+	{ "^", 1 },		/* TERMSYM_UARROW */
+	{ "v", 1 },		/* TERMSYM_DARROW */
+	{ "`", 1 },		/* TERMSYM_LSQUOTE */
+	{ "\'", 1 },		/* TERMSYM_RSQUOTE */
+	{ "\'", 1 },		/* TERMSYM_SQUOTE */
+	{ "``", 2 },		/* TERMSYM_LDQUOTE */
+	{ "\'\'", 2 },		/* TERMSYM_RDQUOTE */
+	{ "\"", 1 },		/* TERMSYM_DQUOTE */
+	{ "<", 1 },		/* TERMSYM_LT */
+	{ ">", 1 },		/* TERMSYM_GT */
+	{ "<=", 2 },		/* TERMSYM_LE */
+	{ ">=", 2 },		/* TERMSYM_GE */
+	{ "==", 2 },		/* TERMSYM_EQ */
+	{ "!=", 2 },		/* TERMSYM_NEQ */
+	{ "\'", 1 },		/* TERMSYM_ACUTE */
+	{ "`", 1 },		/* TERMSYM_GRAVE */
+	{ "pi", 2 },		/* TERMSYM_PI */
+	{ "+=", 2 },		/* TERMSYM_PLUSMINUS */
+	{ "oo", 2 },		/* TERMSYM_INF */
+	{ "infinity", 8 },	/* TERMSYM_INF2 */
+	{ "NaN", 3 },		/* TERMSYM_NAN */
+	{ "|", 1 },		/* TERMSYM_BAR */
+	{ "o", 1 },		/* TERMSYM_BULLET */
+	{ "&", 1 },		/* TERMSYM_AMP */
+	{ "--", 2 },		/* TERMSYM_EM */
+	{ "-", 1 },		/* TERMSYM_EN */
+	{ "(C)", 3 },		/* TERMSYM_COPY */
+	{ "*", 1 },		/* TERMSYM_ASTERISK */
+	{ "\\", 1 },		/* TERMSYM_SLASH */
+	{ "-", 1 },		/* TERMSYM_HYPHEN */
+	{ " ", 1 },		/* TERMSYM_SPACE */
+	{ ".", 1 },		/* TERMSYM_PERIOD */
+	{ "", 0 },		/* TERMSYM_BREAK */
+	{ "<", 1 },		/* TERMSYM_LANGLE */
+	{ ">", 1 },		/* TERMSYM_RANGLE */
+	{ "{", 1 },		/* TERMSYM_LBRACE */
+	{ "}", 1 },		/* TERMSYM_RBRACE */
+};
+
+a80 1
+	termp.offset = termp.col = 0;
+d82 1
+a82 1
+	termp.symtab = termsym_ascii;
+d254 1
+a254 1
+			if (isspace((u_char)p->buf[j]))
+d300 1
+a300 1
+			if (isspace((u_char)p->buf[i]))
+d403 1
+a403 1
+		if ( ! isspace((u_char)word[i])) {
+d409 1
+a409 2
+		if (i > 0 && isspace((u_char)word[i]) && 
+				'\\' == word[i - 1]) {
+d616 2
+a617 1
+	struct termseq	*enc;
+d619 1
+a619 8
+	switch (len) {
+	case (1):
+		enc = termenc1;
+		break;
+	case (2):
+		enc = termenc2;
+		break;
+	default:
+d624 1
+a624 7
+	for ( ; enc->enc; enc++) 
+		if (0 == memcmp(enc->enc, word, len)) {
+			symbola(p, enc->sym);
+			return;
+		}
+
+	warnx("unsupported %zu-byte escape sequence", len);
+a737 12
+ * Add a symbol to the output line buffer.
+ */
+static void
+symbola(struct termp *p, enum tsym sym)
+{
+
+	assert(p->symtab[sym].sym);
+	stringa(p, p->symtab[sym].sym, p->symtab[sym].sz);
+}
+
+
+/*
+d894 1
+a894 1
+dead_pre void
+@
+
+
+1.44
+log
+@getsubopt index fix.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.43 2009/03/15 07:08:53 kristaps Exp $ */
+a205 1
+	termp.enc = TERMENC_NROFF;
+d249 1
+a249 1
+	char		*toks[] = { "ansi", "nopunt", NULL };
+a253 3
+			p->enc = TERMENC_ANSI;
+			break;
+		case (1):
+d377 1
+a377 1
+			if (isspace((u_char)p->buf[j])) {
+d379 1
+a379 7
+			} else if (27 == p->buf[j]) {
+				assert(TERMENC_ANSI == p->enc);
+				assert(j + 5 <= p->col);
+				j += 4;
+			} else if (8 == p->buf[j]) {
+				assert(TERMENC_NROFF == p->enc);
+				assert(j + 2 <= p->col);
+d381 1
+a381 1
+			} else
+a850 35
+	if (TERMENC_ANSI == p->enc && TERMP_STYLE & p->flags) {
+		if (TERMP_BOLD & p->flags) {
+			chara(p, 27);
+			stringa(p, "[01m", 4);
+		}
+		if (TERMP_UNDER & p->flags) {
+			chara(p, 27);
+			stringa(p, "[04m", 4);
+		}
+		if (TERMP_RED & p->flags) {
+			chara(p, 27);
+			stringa(p, "[31m", 4);
+		}
+		if (TERMP_GREEN & p->flags) {
+			chara(p, 27);
+			stringa(p, "[32m", 4);
+		}
+		if (TERMP_YELLOW & p->flags) {
+			chara(p, 27);
+			stringa(p, "[33m", 4);
+		}
+		if (TERMP_BLUE & p->flags) {
+			chara(p, 27);
+			stringa(p, "[34m", 4);
+		}
+		if (TERMP_MAGENTA & p->flags) {
+			chara(p, 27);
+			stringa(p, "[35m", 4);
+		}
+		if (TERMP_CYAN & p->flags) {
+			chara(p, 27);
+			stringa(p, "[36m", 4);
+		}
+	}
+
+d857 1
+a857 2
+		if (TERMENC_NROFF == p->enc && 
+				TERMP_STYLE & p->flags) {
+a869 5
+
+	if (TERMENC_ANSI == p->enc && TERMP_STYLE & p->flags) {
+		chara(p, 27);
+		stringa(p, "[00m", 4);
+	}
+@
+
+
+1.43
+log
+@mdoclint accepts multiple files
+mdocterm punts to nroff if it fails parsing
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.42 2009/03/14 12:35:02 kristaps Exp $ */
+d257 1
+a257 1
+		case (2):
+@
+
+
+1.42
+log
+@Added colour styles (not being used) to struct termp.
+Added nroff style-escape encoding.
+Removed ANSI schema string tables (there's only ANSI and nroff/backspace).
+Pushed styling directly into pword (simpler).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.41 2009/03/14 05:36:07 kristaps Exp $ */
+d28 1
+d33 11
+d49 3
+a51 1
+static	int		  option(void *, int, const char *);
+d143 1
+a187 1
+
+a191 1
+	int		   c;
+d193 1
+d195 2
+d199 1
+d201 2
+a202 2
+	termp.maxrmargin = termp.rmargin = 78; /* XXX */
+	termp.maxcols = 1024;
+d206 3
+a208 1
+	termp.enc = TERMENC_ANSI;
+d211 1
+d213 1
+a213 1
+			"O:", &termp, option);
+d215 16
+a230 5
+	if (1 != c)
+		mmain_exit(p, -1 == c ? 1 : 0);
+
+	if (NULL == (mdoc = mmain_mdoc(p)))
+		mmain_exit(p, 1);
+d246 25
+a270 2
+int
+option(void *ptr, int c, const char *arg)
+d272 2
+a273 1
+	struct termp	*p;
+d275 2
+a276 1
+	p = (struct termp *)ptr;
+d278 26
+a303 6
+	if (0 == strcmp(arg, "nroff")) {
+		p->enc = TERMENC_NROFF;
+		return(1);
+	} else if (0 == strcmp(arg, "ansi")) {
+		p->enc = TERMENC_ANSI;
+		return(1);
+d306 1
+a306 2
+	warnx("unknown option: -O%s", arg);
+	return(0);
+d1092 35
+@
+
+
+1.41
+log
+@Bumped version.
+Added \| (non-breaking space, like \&).
+Fixed termsym (TERMSYM_ALL).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.40 2009/03/12 06:32:17 kristaps Exp $ */
+d32 1
+a32 1
+struct	termenc {
+d37 1
+a56 1
+static	void		  stylea(struct termp *, enum tstyle);
+d63 1
+a63 1
+static	struct termenc	  termenc1[] = {
+d77 1
+a77 1
+static	struct termenc	  termenc2[] = {
+d129 1
+a129 1
+static	struct termsym	  termsym_ansi[TERMSYM_MAX] = {
+a172 10
+static	const char	  ansi_clear[]  = { 27, '[', '0', 'm' };
+static	const char	  ansi_bold[]  = { 27, '[', '1', 'm' };
+static	const char	  ansi_under[]  = { 27, '[', '4', 'm' };
+
+static	struct termsym	  termstyle_ansi[] = {
+	{ ansi_clear, 4 },
+	{ ansi_bold, 4 },
+	{ ansi_under, 4 }
+};
+
+d182 9
+d192 2
+a194 1
+	c = mmain_getopt(p, argc, argv, NULL, NULL, NULL, NULL);
+a200 7
+	termp.maxrmargin = termp.rmargin = 78; /* XXX */
+	termp.maxcols = 1024;
+	termp.offset = termp.col = 0;
+	termp.flags = TERMP_NOSPACE;
+	termp.symtab = termsym_ansi;
+	termp.styletab = termstyle_ansi;
+
+d215 20
+a303 2
+		/* FIXME: make non-ANSI friendly. */
+
+d306 1
+a306 1
+			if (isspace((u_char)p->buf[j]))
+d308 8
+a315 3
+			else if (27 == p->buf[j]) {
+				assert(j + 4 <= p->col);
+				j += 3;
+d675 1
+a675 1
+	struct termenc	*enc;
+d782 2
+a783 2
+	 * XXX - if literal and underlining, this will underline the
+	 * spaces between literal words. 
+d786 34
+a819 4
+	if (p->flags & TERMP_BOLD)
+		stylea(p, TERMSTYLE_BOLD);
+	if (p->flags & TERMP_UNDERLINE)
+		stylea(p, TERMSTYLE_UNDER);
+d826 13
+d842 4
+a845 3
+	if (p->flags & TERMP_BOLD ||
+			p->flags & TERMP_UNDERLINE)
+		stylea(p, TERMSTYLE_CLEAR);
+a861 12
+ * Add a style to the output line buffer.
+ */
+static void
+stylea(struct termp *p, enum tstyle style)
+{
+
+	assert(p->styletab[style].sym);
+	stringa(p, p->styletab[style].sym, p->styletab[style].sz);
+}
+
+
+/*
+@
+
+
+1.40
+log
+@Removed segfault with empty word.
+Initial "full" -column support.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.39 2009/03/11 00:39:58 kristaps Exp $ */
+d73 1
+d129 1
+a129 1
+static	struct termsym	  termsym_ansi[] = {
+@
+
+
+1.39
+log
+@Expanded perfect htab to use 27 * 26 * 3 space.
+Added Brq, Bro and Brc macros.
+Added lbrace and rbrace to special characters.
+Fixed spacing in braces.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.38 2009/03/10 11:16:43 kristaps Exp $ */
+d433 2
+a434 2
+	len = strlen(word);
+	assert(len > 0);
+@
+
+
+1.38
+log
+@Added regular-form sanity check in mdocterm.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.37 2009/03/09 13:17:49 kristaps Exp $ */
+d77 2
+d168 2
+@
+
+
+1.37
+log
+@Easier integration into FreeBSD (sys/types.h, time.h, etc.).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.36 2009/03/08 18:02:36 kristaps Exp $ */
+d55 1
+d479 4
+d853 111
+@
+
+
+1.36
+log
+@Updated manuals.
+Added -fign-scope and -fign-escape.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.35 2009/03/08 13:52:29 kristaps Exp $ */
+d19 2
+a27 3
+#ifndef __OpenBSD__
+#include <time.h>
+#endif
+@
+
+
+1.35
+log
+@mdocterm now using new API.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.34 2009/03/06 14:13:47 kristaps Exp $ */
+d684 4
+a687 2
+	(*i)++;
+	assert(*i < len);
+d691 4
+a694 1
+		assert(*i + 1 < len);
+a699 1
+		/* XXX - deprecated! */
+d701 4
+a704 1
+		assert(*i < len);
+d708 4
+a711 1
+			assert(*i + 1 < len);
+d731 4
+a734 1
+	assert(word[*i]);
+@
+
+
+1.34
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.33 2009/03/05 13:12:12 kristaps Exp $ */
+d493 1
+a493 1
+		word(p, node->data.text.string);
+@
+
+
+1.33
+log
+@Cleaned up ctype functions (netbsd).
+Fixed .Ex/.Rv -std usage.
+Made Ar provide default value.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.32 2009/03/04 14:41:40 kristaps Exp $ */
+a18 2
+#include <sys/utsname.h>
+
+d182 2
+a183 1
+	struct mmain	*p;
+d185 1
+a185 1
+	struct termp	 termp;
+d189 3
+a191 2
+	if ( ! mmain_getopt(p, argc, argv, NULL, NULL, NULL, NULL))
+		mmain_exit(p, 1);
+d573 1
+a573 3
+	char		*buf, *title, *bufp, *vbuf;
+	const char	*pp;
+	struct utsname	 uts;
+a581 42
+	if (NULL == (vbuf = malloc(p->rmargin)))
+		err(1, "malloc");
+
+	if (NULL == (pp = mdoc_vol2a(meta->vol))) {
+		switch (meta->msec) {
+		case (MSEC_1):
+			/* FALLTHROUGH */
+		case (MSEC_6):
+			/* FALLTHROUGH */
+		case (MSEC_7):
+			pp = mdoc_vol2a(VOL_URM);
+			break;
+		case (MSEC_8):
+			pp = mdoc_vol2a(VOL_SMM);
+			break;
+		case (MSEC_2):
+			/* FALLTHROUGH */
+		case (MSEC_3):
+			/* FALLTHROUGH */
+		case (MSEC_4):
+			/* FALLTHROUGH */
+		case (MSEC_5):
+			pp = mdoc_vol2a(VOL_PRM);
+			break;
+		case (MSEC_9):
+			pp = mdoc_vol2a(VOL_KM);
+			break;
+		default:
+			break;
+		}
+	}
+	vbuf[0] = 0;
+
+	if (pp) {
+		if (-1 == uname(&uts)) 
+			err(1, "uname");
+		(void)strlcat(vbuf, uts.sysname, p->rmargin);
+		(void)strlcat(vbuf, " ", p->rmargin);
+	} else if (NULL == (pp = mdoc_msec2a(meta->msec)))
+		pp = mdoc_msec2a(MSEC_local);
+
+	(void)strlcat(vbuf, pp, p->rmargin);
+d596 2
+a597 5
+	if (mdoc_arch2a(meta->arch))
+		(void)snprintf(buf, p->rmargin, "%s (%s)",
+				vbuf, mdoc_arch2a(meta->arch));
+	else
+		(void)strlcpy(buf, vbuf, p->rmargin);
+d599 5
+a603 1
+	pp = mdoc_msec2a(meta->msec);
+d605 2
+a606 2
+	(void)snprintf(title, p->rmargin, "%s(%s)",
+			meta->title, pp ? pp : "");
+a637 1
+	free(vbuf);
+@
+
+
+1.32
+log
+@-tag, if followed by empty body, doesn't newline.
+Versioning up.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.31 2009/03/04 14:13:05 kristaps Exp $ */
+d290 1
+a290 1
+			if (isspace((int)p->buf[j]))
+d337 1
+a337 1
+			if (isspace((int)p->buf[i]))
+d440 1
+a440 1
+		if ( ! isspace((int)word[i])) {
+d446 1
+a446 1
+		if (i > 0 && isspace((int)word[i]) && 
+d652 1
+a652 1
+		*bufp = toupper(*bufp);
+@
+
+
+1.31
+log
+@Fixed some character-escapes.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.30 2009/03/04 14:04:02 kristaps Exp $ */
+d354 5
+a358 3
+		putchar('\n');
+		for (i = 0; i < p->rmargin; i++)
+			putchar(' ');
+d368 5
+a372 4
+	if (p->flags & TERMP_NOBREAK) 
+		for ( ; vis < maxvis; vis++)
+			putchar(' ');
+	else
+@
+
+
+1.30
+log
+@Proper fix to NOBREAK margins (oops).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.29 2009/03/04 13:57:35 kristaps Exp $ */
+d81 2
+d104 1
+a104 1
+	{ "=>", 	  TERMSYM_GE },
+d166 2
+@
+
+
+1.29
+log
+@Considerably cleaned up list handling.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.28 2009/03/03 22:17:19 kristaps Exp $ */
+d319 1
+a319 1
+				vis = p->offset;
+@
+
+
+1.28
+log
+@-inset and -diag lists now supported.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.27 2009/03/03 21:07:01 kristaps Exp $ */
+d192 1
+a192 2
+	termp.maxrmargin = 78; /* XXX */
+	termp.rmargin = termp.maxrmargin;
+d319 1
+a319 1
+				vis = p->rmargin;
+@
+
+
+1.27
+log
+@Character-escape addition simplified (see README.addescape, also added).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.26 2009/03/02 17:29:16 kristaps Exp $ */
+a229 3
+ *  - TERMP_LITERAL: don't break apart words.  Note that a long literal
+ *    word will violate the right margin.
+ *
+d363 1
+a363 1
+	if (p->flags & TERMP_NOBREAK) {
+d366 1
+a366 1
+	} else
+@
+
+
+1.26
+log
+@Noted lacking areas in mdocterm.1.
+Put styles into symtab (for real this time).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.25 2009/03/02 17:14:46 kristaps Exp $ */
+d35 5
+d65 61
+d154 10
+a163 2
+	{ "&", 1 },		/* TERMSYM_AND */
+	{ "|", 1 },		/* TERMSYM_OR */
+d691 1
+d695 1
+a695 27
+		switch (word[0]) {
+		case ('\\'):
+			/* FALLTHROUGH */
+		case ('\''):
+			/* FALLTHROUGH */
+		case ('`'):
+			/* FALLTHROUGH */
+		case ('-'):
+			/* FALLTHROUGH */
+		case (' '):
+			/* FALLTHROUGH */
+		case ('.'):
+			chara(p, word[0]); /* FIXME */
+			break;
+		case ('&'):
+			break;
+		case ('e'):
+			chara(p, '\\'); /* FIXME */
+			break;
+		case ('q'):
+			symbola(p, TERMSYM_DQUOTE);
+			break;
+		default:
+			warnx("escape sequence not supported: %c",
+					word[0]);
+			break;
+		}
+a696 1
+
+d698 1
+a698 73
+		if ('r' == word[0] && 'B' == word[1])
+			symbola(p, TERMSYM_RBRACK);
+		else if ('l' == word[0] && 'B' == word[1])
+			symbola(p, TERMSYM_LBRACK);
+		else if ('l' == word[0] && 'q' == word[1])
+			symbola(p, TERMSYM_LDQUOTE);
+		else if ('r' == word[0] && 'q' == word[1])
+			symbola(p, TERMSYM_RDQUOTE);
+		else if ('o' == word[0] && 'q' == word[1])
+			symbola(p, TERMSYM_LSQUOTE);
+		else if ('a' == word[0] && 'q' == word[1])
+			symbola(p, TERMSYM_RSQUOTE);
+		else if ('<' == word[0] && '-' == word[1])
+			symbola(p, TERMSYM_LARROW);
+		else if ('-' == word[0] && '>' == word[1])
+			symbola(p, TERMSYM_RARROW);
+		else if ('b' == word[0] && 'u' == word[1])
+			symbola(p, TERMSYM_BULLET);
+		else if ('<' == word[0] && '=' == word[1])
+			symbola(p, TERMSYM_LE);
+		else if ('>' == word[0] && '=' == word[1])
+			symbola(p, TERMSYM_GE);
+		else if ('=' == word[0] && '=' == word[1])
+			symbola(p, TERMSYM_EQ);
+		else if ('+' == word[0] && '-' == word[1])
+			symbola(p, TERMSYM_PLUSMINUS);
+		else if ('u' == word[0] && 'a' == word[1])
+			symbola(p, TERMSYM_UARROW);
+		else if ('d' == word[0] && 'a' == word[1])
+			symbola(p, TERMSYM_DARROW);
+		else if ('a' == word[0] && 'a' == word[1])
+			symbola(p, TERMSYM_ACUTE);
+		else if ('g' == word[0] && 'a' == word[1])
+			symbola(p, TERMSYM_GRAVE);
+		else if ('!' == word[0] && '=' == word[1])
+			symbola(p, TERMSYM_NEQ);
+		else if ('i' == word[0] && 'f' == word[1])
+			symbola(p, TERMSYM_INF);
+		else if ('n' == word[0] && 'a' == word[1])
+			symbola(p, TERMSYM_NAN);
+		else if ('b' == word[0] && 'a' == word[1])
+			symbola(p, TERMSYM_BAR);
+
+		/* Deprecated forms. */
+		else if ('A' == word[0] && 'm' == word[1])
+			symbola(p, TERMSYM_AMP);
+		else if ('B' == word[0] && 'a' == word[1])
+			symbola(p, TERMSYM_BAR);
+		else if ('I' == word[0] && 'f' == word[1])
+			symbola(p, TERMSYM_INF2);
+		else if ('G' == word[0] && 'e' == word[1])
+			symbola(p, TERMSYM_GE);
+		else if ('G' == word[0] && 't' == word[1])
+			symbola(p, TERMSYM_GT);
+		else if ('L' == word[0] && 'e' == word[1])
+			symbola(p, TERMSYM_LE);
+		else if ('L' == word[0] && 'q' == word[1])
+			symbola(p, TERMSYM_LDQUOTE);
+		else if ('L' == word[0] && 't' == word[1])
+			symbola(p, TERMSYM_LT);
+		else if ('N' == word[0] && 'a' == word[1])
+			symbola(p, TERMSYM_NAN);
+		else if ('N' == word[0] && 'e' == word[1])
+			symbola(p, TERMSYM_NEQ);
+		else if ('P' == word[0] && 'i' == word[1])
+			symbola(p, TERMSYM_PI);
+		else if ('P' == word[0] && 'm' == word[1])
+			symbola(p, TERMSYM_PLUSMINUS);
+		else if ('R' == word[0] && 'q' == word[1])
+			symbola(p, TERMSYM_RDQUOTE);
+		else
+			warnx("escape sequence not supported: %c%c",
+					word[0], word[1]);
+a699 1
+
+d701 2
+a702 2
+		warnx("escape sequence not supported");
+		break;
+d704 8
+d842 3
+@
+
+
+1.25
+log
+@Added new old escape sequence \*[nn].
+Initial correct .Bd support (still only text in literal displays).
+Symbols put into tables (character-encoding).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.24 2009/03/02 12:09:32 kristaps Exp $ */
+a46 1
+static	void		  style(struct termp *, enum tstyle);
+d53 1
+a732 31
+ * Apply a style to the output buffer.  This is looked up by means of
+ * the styletab.
+ */
+static void
+style(struct termp *p, enum tstyle esc)
+{
+
+	if (p->col + 4 >= p->maxcols)
+		errx(1, "line overrun");
+
+	p->buf[(p->col)++] = 27;
+	p->buf[(p->col)++] = '[';
+	switch (esc) {
+	case (TERMSTYLE_CLEAR):
+		p->buf[(p->col)++] = '0';
+		break;
+	case (TERMSTYLE_BOLD):
+		p->buf[(p->col)++] = '1';
+		break;
+	case (TERMSTYLE_UNDER):
+		p->buf[(p->col)++] = '4';
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+	p->buf[(p->col)++] = 'm';
+}
+
+
+/*
+d807 1
+a807 1
+		style(p, TERMSTYLE_BOLD);
+d809 1
+a809 1
+		style(p, TERMSTYLE_UNDER);
+d821 1
+a821 1
+		style(p, TERMSTYLE_CLEAR);
+d838 12
+@
+
+
+1.24
+log
+@Support for maxrmargin-breaking with TERMP_NOBREAK.
+Tabs auto-converted to spaces.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.23 2009/03/01 23:23:55 kristaps Exp $ */
+a27 1
+
+a34 40
+#define	TERMSYM_RBRACK		"]"
+#define	TERMSYM_LBRACK		"["
+#define	TERMSYM_LARROW		"<-"
+#define	TERMSYM_RARROW		"->"
+#define	TERMSYM_UARROW		"^"
+#define	TERMSYM_DARROW		"v"
+#define	TERMSYM_LSQUOTE		"`"
+#define	TERMSYM_RSQUOTE		"\'"
+#define	TERMSYM_SQUOTE		"\'"
+#define	TERMSYM_LDQUOTE		"``"
+#define	TERMSYM_RDQUOTE		"\'\'"
+#define	TERMSYM_DQUOTE		"\""
+#define	TERMSYM_LT		"<"
+#define	TERMSYM_GT		">"
+#define	TERMSYM_LE		"<="
+#define	TERMSYM_GE		">="
+#define	TERMSYM_EQ		"=="
+#define	TERMSYM_NEQ		"!="
+#define	TERMSYM_ACUTE		"\'"
+#define	TERMSYM_GRAVE		"`"
+#define	TERMSYM_PI		"pi"
+#define	TERMSYM_PLUSMINUS	"+="
+#define	TERMSYM_INF		"oo"
+#define	TERMSYM_INF2		"infinity"
+#define	TERMSYM_NAN		"NaN"
+#define	TERMSYM_BAR		"|"
+#define	TERMSYM_BULLET		"o"
+
+#ifdef __NetBSD__
+#define xisspace(x) isspace((int)(x))
+#else
+#define	xisspace(x) isspace((x))
+#endif
+
+enum	termstyle {
+	STYLE_CLEAR,
+	STYLE_BOLD,
+	STYLE_UNDERLINE
+};
+
+d45 4
+a48 4
+static	void		  pescape(struct termp *, 
+				const char *, size_t *, size_t);
+static	void		  pgraph(struct termp *, char);
+static	void		  nescape(struct termp *, 
+d51 3
+a53 2
+static	void		  stringa(struct termp *, const char *);
+static	void		  style(struct termp *, enum termstyle);
+d60 42
+d123 2
+d140 35
+d178 1
+a178 1
+	size_t		 i, j, vsz, vis, maxvis;
+d189 2
+a203 11
+	/*
+	 * If we're literal, print out verbatim.
+	 */
+	if (p->flags & TERMP_LITERAL) {
+		for (i = 0; i < p->col; i++)
+			putchar(p->buf[i]);
+		putchar('\n');
+		p->col = 0;
+		return;
+	}
+
+d212 2
+d216 1
+a216 1
+			if (xisspace(p->buf[j]))
+d226 5
+a230 11
+		 * If we're breaking normally...
+		 *
+		 * If a word is too long and we're within a line, put it
+		 * on the next line.  Puke if we're being asked to write
+		 * something that will exceed the right margin (i.e.,
+		 * from a fresh line).
+		 *
+		 * If we're not breaking...
+		 *
+		 * Don't let the visible size exceed the full right
+		 * margin.
+d234 1
+a234 1
+			if (vis && vis + vsz > maxvis) {
+d239 15
+a253 7
+			} else if (vis + vsz > maxvis)
+				errx(1, "word breaks right margin");
+		} else if (vis + vsz > p->maxrmargin - p->offset) {
+			putchar('\n');
+			for (j = 0; j < p->rmargin; j++)
+				putchar(' ');
+			vis = p->rmargin;
+d258 2
+a259 1
+		 * space if we're the last word in the line.
+d263 1
+a263 1
+			if (xisspace(p->buf[i]))
+d268 1
+a268 1
+		if (i < p->col) {
+d274 5
+d302 5
+a310 4
+	/* 
+	 * A newline only breaks an existing line; it won't assert
+	 * vertical space.
+	 */
+d321 6
+a330 4
+	/*
+	 * Asserts a vertical space (a full, empty line-break between
+	 * lines).
+	 */
+d336 6
+a341 276
+static void
+stringa(struct termp *p, const char *s)
+{
+
+	/* XXX - speed up if not passing to chara. */
+	for ( ; *s; s++)
+		chara(p, *s);
+}
+
+
+static void
+chara(struct termp *p, char c)
+{
+
+	/*
+	 * Insert a single character into the line-buffer.  If the
+	 * buffer's space is exceeded, then allocate more space.
+	 */
+	if (p->col + 1 >= p->maxcols) {
+		p->buf = realloc(p->buf, p->maxcols * 2);
+		if (NULL == p->buf)
+			err(1, "malloc");
+		p->maxcols *= 2;
+	}
+	p->buf[(p->col)++] = c;
+}
+
+
+static void
+style(struct termp *p, enum termstyle esc)
+{
+
+	if (p->col + 4 >= p->maxcols)
+		errx(1, "line overrun");
+
+	p->buf[(p->col)++] = 27;
+	p->buf[(p->col)++] = '[';
+	switch (esc) {
+	case (STYLE_CLEAR):
+		p->buf[(p->col)++] = '0';
+		break;
+	case (STYLE_BOLD):
+		p->buf[(p->col)++] = '1';
+		break;
+	case (STYLE_UNDERLINE):
+		p->buf[(p->col)++] = '4';
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+	p->buf[(p->col)++] = 'm';
+}
+
+
+static void
+nescape(struct termp *p, const char *word, size_t len)
+{
+
+	switch (len) {
+	case (1):
+		if ('q' == word[0])
+			stringa(p, TERMSYM_DQUOTE);
+		break;
+	case (2):
+		if ('r' == word[0] && 'B' == word[1])
+			stringa(p, TERMSYM_RBRACK);
+		else if ('l' == word[0] && 'B' == word[1])
+			stringa(p, TERMSYM_LBRACK);
+		else if ('l' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_LDQUOTE);
+		else if ('r' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_RDQUOTE);
+		else if ('o' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_LSQUOTE);
+		else if ('a' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_RSQUOTE);
+		else if ('<' == word[0] && '-' == word[1])
+			stringa(p, TERMSYM_LARROW);
+		else if ('-' == word[0] && '>' == word[1])
+			stringa(p, TERMSYM_RARROW);
+		else if ('b' == word[0] && 'u' == word[1])
+			stringa(p, TERMSYM_BULLET);
+		else if ('<' == word[0] && '=' == word[1])
+			stringa(p, TERMSYM_LE);
+		else if ('>' == word[0] && '=' == word[1])
+			stringa(p, TERMSYM_GE);
+		else if ('=' == word[0] && '=' == word[1])
+			stringa(p, TERMSYM_EQ);
+		else if ('+' == word[0] && '-' == word[1])
+			stringa(p, TERMSYM_PLUSMINUS);
+		else if ('u' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_UARROW);
+		else if ('d' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_DARROW);
+		else if ('a' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_ACUTE);
+		else if ('g' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_GRAVE);
+		else if ('!' == word[0] && '=' == word[1])
+			stringa(p, TERMSYM_NEQ);
+		else if ('i' == word[0] && 'f' == word[1])
+			stringa(p, TERMSYM_INF);
+		else if ('n' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_NAN);
+		else if ('b' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_BAR);
+
+		/* Deprecated forms. */
+		else if ('B' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_BAR);
+		else if ('I' == word[0] && 'f' == word[1])
+			stringa(p, TERMSYM_INF2);
+		else if ('G' == word[0] && 'e' == word[1])
+			stringa(p, TERMSYM_GE);
+		else if ('G' == word[0] && 't' == word[1])
+			stringa(p, TERMSYM_GT);
+		else if ('L' == word[0] && 'e' == word[1])
+			stringa(p, TERMSYM_LE);
+		else if ('L' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_LDQUOTE);
+		else if ('L' == word[0] && 't' == word[1])
+			stringa(p, TERMSYM_LT);
+		else if ('N' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_NAN);
+		else if ('N' == word[0] && 'e' == word[1])
+			stringa(p, TERMSYM_NEQ);
+		else if ('P' == word[0] && 'i' == word[1])
+			stringa(p, TERMSYM_PI);
+		else if ('P' == word[0] && 'm' == word[1])
+			stringa(p, TERMSYM_PLUSMINUS);
+		else if ('R' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_RDQUOTE);
+		break;
+	default:
+		break;
+	}
+}
+
+
+static void
+pgraph(struct termp *p, char byte)
+{
+	int		 i;
+
+	switch (byte) {
+	case (' '):
+		chara(p, ' ');
+		break;
+	case ('\t'):
+		for (i = 0; i < INDENT; i++)
+			chara(p, ' ');
+		break;
+	default:
+		warnx("unknown non-graphing character");
+		break;
+	}
+}
+
+
+static void
+pescape(struct termp *p, const char *word, size_t *i, size_t len)
+{
+	size_t		 j;
+
+	(*i)++;
+	assert(*i < len);
+
+	/*
+	 * Handle an escape sequence.  This must manage both groff-style
+	 * escapes and mdoc-style escapes.
+	 */
+
+	if ('(' == word[*i]) {
+		/* Two-character escapes. */
+		(*i)++;
+		assert(*i + 1 < len);
+		nescape(p, &word[*i], 2);
+		(*i)++;
+		return;
+
+	} else if ('*' == word[*i]) { 
+		(*i)++;
+		assert(*i < len);
+		switch (word[*i]) {
+		case ('('):
+			(*i)++;
+			assert(*i + 1 < len);
+			nescape(p, &word[*i], 2);
+			(*i)++;
+			return;
+		default:
+			break;
+		}
+		nescape(p, &word[*i], 1);
+		return;
+
+	} else if ('[' != word[*i]) {
+		/* One-character escapes. */
+		switch (word[*i]) {
+		case ('\\'):
+			/* FALLTHROUGH */
+		case ('\''):
+			/* FALLTHROUGH */
+		case ('`'):
+			/* FALLTHROUGH */
+		case ('-'):
+			/* FALLTHROUGH */
+		case (' '):
+			/* FALLTHROUGH */
+		case ('.'):
+			chara(p, word[*i]);
+			break;
+		case ('e'):
+			chara(p, '\\');
+			break;
+		default:
+			break;
+		}
+		return;
+	}
+
+	(*i)++;
+	for (j = 0; word[*i] && ']' != word[*i]; (*i)++, j++)
+		/* Loop... */ ;
+
+	nescape(p, &word[*i - j], j);
+}
+
+
+static void
+pword(struct termp *p, const char *word, size_t len)
+{
+	size_t		 i;
+
+	/*
+	 * Handle pwords, partial words, which may be either a single
+	 * word or a phrase that cannot be broken down (such as a
+	 * literal string).  This handles word styling.
+	 */
+
+	if ( ! (p->flags & TERMP_NOSPACE) && 
+			! (p->flags & TERMP_LITERAL))
+		chara(p, ' ');
+
+	if ( ! (p->flags & TERMP_NONOSPACE))
+		p->flags &= ~TERMP_NOSPACE;
+
+	/* 
+	 * XXX - if literal and underlining, this will underline the
+	 * spaces between literal words. 
+	 */
+
+	if (p->flags & TERMP_BOLD)
+		style(p, STYLE_BOLD);
+	if (p->flags & TERMP_UNDERLINE)
+		style(p, STYLE_UNDERLINE);
+
+	for (i = 0; i < len; i++) {
+		if ('\\' == word[i]) {
+			pescape(p, word, &i, len);
+			continue;
+		}
+		if ( ! isgraph((int)word[i])) {
+			pgraph(p, word[i]);
+			continue;
+		}
+		chara(p, word[i]);
+	}
+
+	if (p->flags & TERMP_BOLD ||
+			p->flags & TERMP_UNDERLINE)
+		style(p, STYLE_CLEAR);
+}
+
+
+a346 7
+	/*
+	 * Break apart a word into tokens.  If we're a literal word,
+	 * then don't.  This doesn't handle zero-length words (there
+	 * should be none) and makes sure that pword doesn't get spaces
+	 * or nil words unless literal.
+	 */
+
+d363 1
+a363 1
+		if ( ! xisspace(word[i])) {
+d369 2
+a370 1
+		if (i > 0 && xisspace(word[i]) && '\\' == word[i - 1]) {
+d388 6
+a401 6
+	/*
+	 * This is the main function for printing out nodes.  It's
+	 * constituted of PRE and POST functions, which correspond to
+	 * prefix and infix processing.
+	 */
+
+d607 303
+@
+
+
+1.23
+log
+@Removed isspace assertion (is handled by pad).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.22 2009/03/01 13:06:49 kristaps Exp $ */
+d88 1
+d203 2
+a204 1
+		 * Don't let the visible size exceed the full margin.
+d215 6
+a220 2
+		} else if (vis + vsz > p->maxrmargin)
+			errx(1, "word breaks right margin");
+d434 20
+d556 4
+@
+
+
+1.22
+log
+@Fixed TERMP_NOBREAK and line overruns.
+Fixed TERMP_SETFLAGS and current-flag omission.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.21 2009/02/28 21:31:13 kristaps Exp $ */
+d176 3
+a178 1
+		 * (starting with the CSI) aren't counted. 
+a179 1
+		assert( ! xisspace(p->buf[i]));
+a190 1
+		assert(vsz > 0);
+a501 2
+	/*assert(len > 0);*/ /* Can be, if literal. */
+
+@
+
+
+1.21
+log
+@Many more changes and fixes (`In', `Fd', etc.).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.20 2009/02/28 20:13:06 kristaps Exp $ */
+d193 2
+d198 5
+a202 2
+		 * from a fresh line or when we're not allowed to break
+		 * the line with TERMP_NOBREAK).
+d205 7
+a211 4
+		/* FIXME: allow selective right-margin breaking. */
+
+		if (vis && vis + vsz > maxvis) {
+			if (p->flags & TERMP_NOBREAK)
+d213 1
+a213 5
+			putchar('\n');
+			for (j = 0; j < p->offset; j++)
+				putchar(' ');
+			vis = 0;
+		} else if (vis + vsz > maxvis)
+d233 8
+d247 2
+a248 3
+		if ( ! (p->flags & TERMP_NORPAD))
+			for ( ; vis < maxvis; vis++)
+				putchar(' ');
+@
+
+
+1.20
+log
+@More fixes (hard-escapes, etc.).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.19 2009/02/28 14:43:35 kristaps Exp $ */
+d468 4
+@
+
+
+1.19
+log
+@Made `Ds' emit a warning.
+Default width is 78.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.18 2009/02/27 10:55:16 kristaps Exp $ */
+d557 6
+d564 1
+@
+
+
+1.18
+log
+@Slowly decoupling mdoc(3) from being OpenBSD-only.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.17 2009/02/27 09:14:02 kristaps Exp $ */
+d115 1
+a115 1
+	termp.maxrmargin = 80; /* XXX */
+@
+
+
+1.17
+log
+@Character-encoding stuff documented, expanded.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.16 2009/02/27 08:20:15 kristaps Exp $ */
+d19 2
+d679 1
+a679 1
+	char		*buf, *title, *bufp;
+d681 4
+d690 2
+d693 1
+a693 1
+	if (NULL == (pp = mdoc_vol2a(meta->vol)))
+a717 3
+			/* FIXME: capitalise. */
+			if (NULL == (pp = mdoc_msec2a(meta->msec)))
+				pp = mdoc_msec2a(MSEC_local);
+d720 12
+d748 1
+a748 1
+				pp, mdoc_arch2a(meta->arch));
+d750 1
+a750 1
+		(void)strlcpy(buf, pp, p->rmargin);
+d787 1
+@
+
+
+1.16
+log
+@More character-encoding.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.15 2009/02/26 17:11:38 kristaps Exp $ */
+d39 1
+d56 2
+a57 1
+#define	TERMSYM_INFINITY	"infinity"
+d343 8
+a354 4
+		else if ('l' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_DQUOTE);
+		else if ('r' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_DQUOTE);
+a356 2
+		else if ('L' == word[0] && 'e' == word[1])
+			stringa(p, TERMSYM_LE);
+a358 2
+		else if ('G' == word[0] && 'e' == word[1])
+			stringa(p, TERMSYM_GE);
+d361 4
+a364 4
+		else if ('R' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_RDQUOTE);
+		else if ('L' == word[0] && 'q' == word[1])
+			stringa(p, TERMSYM_LDQUOTE);
+d367 2
+d373 1
+a373 3
+		else if ('P' == word[0] && 'i' == word[1])
+			stringa(p, TERMSYM_PI);
+		else if ('N' == word[0] && 'e' == word[1])
+d375 20
+d397 6
+a402 2
+		else if ('G' == word[0] && 't' == word[1])
+			stringa(p, TERMSYM_GT);
+d405 2
+a406 6
+		else if ('I' == word[0] && 'f' == word[1])
+			stringa(p, TERMSYM_INFINITY);
+		else if ('N' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_NAN);
+		else if ('B' == word[0] && 'a' == word[1])
+			stringa(p, TERMSYM_BAR);
+@
+
+
+1.15
+log
+@Header and footer now use term API.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.14 2009/02/25 23:18:50 kristaps Exp $ */
+d34 26
+a161 1
+		/* FIXME: count non-printing chars. */
+d196 2
+a198 1
+			/* FIXME */
+a205 1
+			/* FIXME */
+d286 10
+a295 3
+	/* TODO: dynamically expand the buffer. */
+	if (p->col + 1 >= p->maxcols)
+		errx(1, "line overrun");
+d332 4
+d338 1
+a338 1
+			chara(p, ']');
+d340 1
+a340 1
+			chara(p, '[');
+d342 1
+a342 1
+			stringa(p, "<-");
+d344 1
+a344 1
+			stringa(p, "->");
+d346 1
+a346 1
+			chara(p, '\"');
+d348 1
+a348 1
+			chara(p, '\"');
+d350 35
+a384 1
+			chara(p, 'o');
+d400 5
+d413 16
+d465 6
+d478 5
+d507 7
+d555 6
+d623 7
+d655 1
+a655 1
+	char		*buf, *title;
+d694 13
+d708 1
+a708 1
+		(void)snprintf(buf, p->rmargin, "%s(%s)",
+d718 3
+@
+
+
+1.14
+log
+@More list work.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.13 2009/02/25 17:02:47 kristaps Exp $ */
+d94 1
+a94 1
+	/*header(&termp, mdoc_meta(mdoc));*/
+a490 1
+	size_t		 sz, osz, ssz, i;
+d506 1
+a506 1
+	osz = strlcpy(os, meta->os, p->rmargin);
+d508 1
+a508 2
+	sz = strlen(buf);
+	ssz = sz + osz + 1;
+d510 3
+a512 7
+	if (ssz > p->rmargin) {
+		ssz -= p->rmargin;
+		assert(ssz <= osz);
+		os[osz - ssz] = 0;
+		ssz = 1;
+	} else
+		ssz = p->rmargin - ssz + 1;
+d514 2
+a515 4
+	printf("\n");
+	printf("%s", os);
+	for (i = 0; i < ssz; i++)
+		printf(" ");
+d517 7
+a523 2
+	printf("%s\n", buf);
+	fflush(stdout);
+d585 1
+a585 2
+	p->flags |= TERMP_NOBREAK;
+	p->flags |= TERMP_NOSPACE;
+d590 1
+d592 1
+a592 1
+	p->rmargin += strlen(buf);
+a596 2
+	exit(1);
+
+d600 1
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.12 2009/02/25 15:12:26 kristaps Exp $ */
+d94 1
+a94 1
+	header(&termp, mdoc_meta(mdoc));
+d171 1
+a171 1
+		if (vis && vis + vsz >= maxvis) {
+d179 1
+a179 1
+		} else if (vis + vsz >= maxvis)
+d206 3
+a208 2
+		for ( ; vis < maxvis; vis++)
+			putchar(' ');
+@
+
+
+1.12
+log
+@Added [almost] all list types.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.11 2009/02/25 13:30:53 kristaps Exp $ */
+d348 2
+d377 2
+a378 1
+	p->flags &= ~TERMP_NOSPACE;
+d536 1
+a536 2
+	const char	*pp, *msec;
+	size_t		 ssz, tsz, ttsz, i;;
+a572 1
+	assert(pp);
+d574 15
+a588 2
+	tsz = strlcpy(buf, pp, p->rmargin);
+	assert(tsz < p->rmargin);
+d590 2
+a591 8
+	if ((pp = mdoc_arch2a(meta->arch))) {
+		tsz = strlcat(buf, " (", p->rmargin);
+		assert(tsz < p->rmargin);
+		tsz = strlcat(buf, pp, p->rmargin);
+		assert(tsz < p->rmargin);
+		tsz = strlcat(buf, ")", p->rmargin);
+		assert(tsz < p->rmargin);
+	}
+d593 2
+a594 1
+	ttsz = strlcpy(title, meta->title, p->rmargin);
+d596 2
+a597 2
+	if (NULL == (msec = mdoc_msec2a(meta->msec)))
+		msec = "";
+d599 1
+a599 1
+	ssz = (2 * (ttsz + 2 + strlen(msec))) + tsz + 2;
+d601 3
+a603 10
+	if (ssz > p->rmargin) {
+		if ((ssz -= p->rmargin) % 2)
+			ssz++;
+		ssz /= 2;
+	
+		assert(ssz <= ttsz);
+		title[ttsz - ssz] = 0;
+		ssz = 1;
+	} else
+		ssz = ((p->rmargin - ssz) / 2) + 1;
+d605 2
+a606 1
+	printf("%s(%s)", title, msec);
+d608 3
+a610 10
+	for (i = 0; i < ssz; i++)
+		printf(" ");
+
+	printf("%s", buf);
+
+	for (i = 0; i < ssz; i++)
+		printf(" ");
+
+	printf("%s(%s)\n", title, msec);
+	fflush(stdout);
+@
+
+
+1.11
+log
+@Support for nested lists added.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocterm.c,v 1.10 2009/02/25 12:27:37 kristaps Exp $ */
+d47 1
+d58 2
+d95 1
+a95 1
+	body(&termp, mdoc_meta(mdoc), mdoc_node(mdoc));
+d224 2
+a225 1
+	if (0 == p->col) 
+d227 1
+d295 27
+d324 1
+d333 1
+a333 14
+
+		if ('r' == word[*i] && 'B' == word[*i + 1])
+			chara(p, ']');
+		else if ('l' == word[*i] && 'B' == word[*i + 1])
+			chara(p, '[');
+		else if ('<' == word[*i] && '-' == word[*i + 1])
+			stringa(p, "<-");
+		else if ('-' == word[*i] && '>' == word[*i + 1])
+			stringa(p, "->");
+		else if ('l' == word[*i] && 'q' == word[*i + 1])
+			chara(p, '\"');
+		else if ('r' == word[*i] && 'q' == word[*i + 1])
+			chara(p, '\"');
+
+d355 6
+a360 1
+	/* n-character escapes. */
+d435 2
+a436 1
+body(struct termp *p, const struct mdoc_meta *meta,
+d445 1
+d449 1
+d464 1
+a464 1
+		body(p, meta, node->child);
+d478 1
+a478 1
+		body(p, meta, node->next);
+@
+
+
+1.10
+log
+@Some offsets built into termpair.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.9 2009/02/25 12:09:20 kristaps Exp $ */
+d203 1
+a203 1
+		for ( ; vis <= maxvis; vis++)
+d224 1
+d420 1
+a420 1
+	pair.offset = 0;
+@
+
+
+1.9
+log
+@Added "termpair" for symmetric flag-setting.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.8 2009/02/24 14:52:55 kristaps Exp $ */
+d419 2
+d431 2
+a432 7
+	switch (pair.type) {
+	case (TERMPAIR_FLAG):
+		p->flags |= pair.data.flag;
+		break;
+	default:
+		break;
+	}
+d437 2
+a438 7
+	switch (pair.type) {
+	case (TERMPAIR_FLAG):
+		p->flags &= ~pair.data.flag;
+		break;
+	default:
+		break;
+	}
+@
+
+
+1.8
+log
+@Added several more mdocterm outputs.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.7 2009/02/23 15:34:53 kristaps Exp $ */
+d413 1
+d418 1
+d422 1
+a422 1
+			if ( ! (*termacts[node->tok].pre)(p, meta, node))
+d429 8
+d440 8
+d452 1
+a452 1
+			(*termacts[node->tok].post)(p, meta, node);
+@
+
+
+1.7
+log
+@Compiles fine on NetBSD now, too.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.6 2009/02/23 15:19:47 kristaps Exp $ */
+d308 4
+@
+
+
+1.6
+log
+@Adding revamped webpage.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.5 2009/02/23 12:45:19 kristaps Exp $ */
+d27 1
+a27 1
+#ifdef __linux__
+d34 6
+d146 1
+a146 1
+		assert( ! isspace(p->buf[i]));
+d150 1
+a150 1
+			if (isspace(p->buf[j]))
+d186 1
+a186 1
+			if (isspace(p->buf[i]))
+d387 1
+a387 1
+		if ( ! isspace(word[i])) {
+d453 3
+a455 1
+#ifdef __linux__
+a456 2
+#else
+	if (NULL == strftime(buf, p->rmargin, "%B %d, %Y", tm))
+@
+
+
+1.5
+log
+@More in-file documentation and Linux-isation.
+Moved mdoc_macros table definition into macro.c, where it belongs.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.4 2009/02/23 09:33:34 kristaps Exp $ */
+d170 1
+a170 1
+		} else if (vis + vsz >= maxvis) {
+a172 1
+		}
+@
+
+
+1.4
+log
+@Considerable mdoc.3 documentation.
+Added a few more escapes and macros.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.3 2009/02/23 07:09:13 kristaps Exp $ */
+d27 4
+a67 3
+	extern int	 optreset;
+	extern int	 optind;
+
+@
+
+
+1.3
+log
+@termact.c -> term.c
+term.c -> mdocterm.c
+tree.c -> mdoctree.c
+Fixed/finished mmain.h.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.2 2009/02/22 22:58:39 kristaps Exp $ */
+d48 1
+d235 10
+d298 4
+@
+
+
+1.2
+log
+@BROKEN BUILD: migrating to mmain stuff.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.1 2009/02/21 21:00:06 kristaps Exp $ */
+d20 1
+d23 1
+d25 1
+d30 26
+d61 1
+a61 1
+	int		 c;
+d68 1
+a68 1
+	if ( ! mmain_getopt(p, argc, argv, ""))
+d71 137
+a207 1
+	optreset = optind = 1;
+d209 95
+a303 2
+	while (-1 != (c = getopt(argc, argv, "")))
+		switch (c) {
+d305 64
+a368 3
+			mmain_usage("");
+			mmain_exit(p, 1);
+			/* NOTREACHED */
+d370 42
+d413 46
+a458 2
+	if (NULL == (mdoc = mmain_mdoc(p)))
+		mmain_exit(p, 1);
+d460 2
+a461 3
+	termprint(mdoc_node(mdoc), mdoc_meta(mdoc));
+	mmain_exit(p, 0);
+	/* NOTREACHED */
+d465 90
+@
+
+
+1.1
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocml.c,v 1.54 2009/02/21 15:34:46 kristaps Exp $ */
+a18 3
+#include <sys/stat.h>
+#include <sys/param.h>
+
+a19 1
+#include <fcntl.h>
+a21 1
+#include <stdio.h>
+a22 2
+#include <string.h>
+#include <unistd.h>
+d24 1
+a24 1
+#include "mdoc.h"
+a26 30
+#define	MD_LINE_SZ	(256)		/* Max input line size. */
+
+struct	md_parse {
+	int		  warn;		/* Warning flags. */
+#define	MD_WARN_SYNTAX	 (1 << 0)	/* Show syntax warnings. */
+#define	MD_WARN_COMPAT	 (1 << 1)	/* Show compat warnings. */
+#define	MD_WARN_ALL	 (0x03)		/* Show all warnings. */
+#define	MD_WARN_ERR	 (1 << 2)	/* Make warnings->errors. */
+	int		  dbg;		/* Debug level. */
+	struct mdoc	 *mdoc;		/* Active parser. */
+	char		 *buf;		/* Input buffer. */
+	u_long		  bufsz;	/* Input buffer size. */
+	char		 *in;		/* Input file name. */
+	int		  fdin;		/* Input file desc. */
+};
+
+extern	char	 	 *__progname;
+
+static	void		  usage(void);
+static	int		  getsopts(struct md_parse *, char *);
+static	int		  parse(struct md_parse *);
+static	void		  msg_msg(void *, int, int, const char *);
+static	int		  msg_err(void *, int, int, const char *);
+static	int		  msg_warn(void *, int, int, 
+				enum mdoc_warn, const char *);
+
+#ifdef __linux__
+extern	int		  getsubopt(char **, char *const *, char **);
+#endif
+
+d30 2
+a31 3
+	struct md_parse	 p;
+	struct mdoc_cb	 cb;
+	struct stat	 st;
+d33 2
+a34 1
+	extern char	*optarg;
+d37 1
+a37 1
+	(void)memset(&p, 0, sizeof(struct md_parse));
+d39 2
+a40 13
+	while (-1 != (c = getopt(argc, argv, "vW:")))
+		switch (c) {
+		case ('v'):
+			p.dbg++;
+			break;
+		case ('W'):
+			if ( ! getsopts(&p, optarg))
+				return(0);
+			break;
+		default:
+			usage();
+			return(0);
+		}
+d42 1
+a42 2
+	argv += optind;
+	argc -= optind;
+d44 2
+a45 75
+	/* Initialise the input file. */
+
+	p.in = "-";
+	p.fdin = STDIN_FILENO;
+
+	if (argc > 0) {
+		p.in = *argv++;
+		p.fdin = open(p.in, O_RDONLY, 0);
+		if (-1 == p.fdin)
+			err(1, "%s", p.in);
+	}
+
+	/* Allocate a buffer to be BUFSIZ/block size. */
+
+	if (-1 == fstat(p.fdin, &st)) {
+		warn("%s", p.in);
+		p.bufsz = BUFSIZ;
+	} else 
+		p.bufsz = MAX(st.st_blksize, BUFSIZ);
+
+	p.buf = malloc(p.bufsz);
+	if (NULL == p.buf)
+		err(1, "malloc");
+
+	/* Allocate the parser. */
+
+	cb.mdoc_err = msg_err;
+	cb.mdoc_warn = msg_warn;
+	cb.mdoc_msg = msg_msg;
+
+	p.mdoc = mdoc_alloc(&p, &cb);
+
+	/* Parse the input file. */
+
+	c = parse(&p);
+	free(p.buf);
+
+	if (STDIN_FILENO != p.fdin && -1 == close(p.fdin))
+		warn("%s", p.in);
+
+	if (0 == c) {
+		mdoc_free(p.mdoc);
+		return(EXIT_FAILURE);
+	}
+
+	/* If the parse succeeded, print it out. */
+
+	termprint(mdoc_node(p.mdoc), mdoc_meta(p.mdoc));
+	mdoc_free(p.mdoc);
+
+	return(EXIT_SUCCESS);
+}
+
+
+static int
+getsopts(struct md_parse *p, char *arg)
+{
+	char		*v;
+	char		*toks[] = { "all", "compat", 
+				"syntax", "error", NULL };
+
+	while (*arg) 
+		switch (getsubopt(&arg, toks, &v)) {
+		case (0):
+			p->warn |= MD_WARN_ALL;
+			break;
+		case (1):
+			p->warn |= MD_WARN_COMPAT;
+			break;
+		case (2):
+			p->warn |= MD_WARN_SYNTAX;
+			break;
+		case (3):
+			p->warn |= MD_WARN_ERR;
+			break;
+d47 3
+a49 2
+			usage();
+			return(0);
+d52 2
+a53 3
+	return(1);
+}
+
+d55 3
+a57 45
+static int
+parse(struct md_parse *p)
+{
+	ssize_t		 sz, i;
+	size_t		 pos;
+	char		 line[MD_LINE_SZ];
+	int		 lnn;
+
+	/*
+	 * This is a little more complicated than fgets.  TODO: have
+	 * some benchmarks that show it's faster (note that I want to
+	 * check many, many manuals simultaneously, so speed is
+	 * important).  Fill a buffer (sized to the block size) with a
+	 * single read, then parse \n-terminated lines into a line
+	 * buffer, which is passed to the parser.  Hard-code the line
+	 * buffer to a particular size -- a reasonable assumption.
+	 */
+
+	for (lnn = 1, pos = 0; ; ) {
+		if (-1 == (sz = read(p->fdin, p->buf, p->bufsz))) {
+			warn("%s", p->in);
+			return(0);
+		} else if (0 == sz) 
+			break;
+
+		for (i = 0; i < sz; i++) {
+			if ('\n' != p->buf[i]) {
+				if (pos < sizeof(line)) {
+					line[(int)pos++] = p->buf[(int)i];
+					continue;
+				}
+				warnx("%s: line %d too long", p->in, lnn);
+				return(0);
+			}
+	
+			line[(int)pos] = 0;
+			if ( ! mdoc_parseln(p->mdoc, lnn, line))
+				return(0);
+
+			lnn++;
+			pos = 0;
+		}
+	}
+
+	return(mdoc_endparse(p->mdoc));
+a60 65
+static int
+msg_err(void *arg, int line, int col, const char *msg)
+{
+	struct md_parse	 *p;
+
+	p = (struct md_parse *)arg;
+
+	warnx("%s:%d: error: %s (column %d)", 
+			p->in, line, msg, col);
+	return(0);
+}
+
+
+static void
+msg_msg(void *arg, int line, int col, const char *msg)
+{
+	struct md_parse	 *p;
+
+	p = (struct md_parse *)arg;
+
+	if (0 == p->dbg)
+		return;
+
+	warnx("%s:%d: debug: %s (column %d)", 
+			p->in, line, msg, col);
+}
+
+
+static int
+msg_warn(void *arg, int line, int col, 
+		enum mdoc_warn type, const char *msg)
+{
+	struct md_parse	 *p;
+
+	p = (struct md_parse *)arg;
+
+	switch (type) {
+	case (WARN_COMPAT):
+		if (p->warn & MD_WARN_COMPAT)
+			break;
+		return(1);
+	case (WARN_SYNTAX):
+		if (p->warn & MD_WARN_SYNTAX)
+			break;
+		return(1);
+	}
+
+	warnx("%s:%d: warning: %s (column %d)", 
+			p->in, line, msg, col);
+
+	if ( ! (p->warn & MD_WARN_ERR))
+		return(1);
+
+	warnx("%s: considering warnings as errors", __progname);
+	return(0);
+}
+
+
+static void
+usage(void)
+{
+
+	warnx("usage: %s [-v] [-Wwarn...] [infile]", __progname);
+}
+
+@

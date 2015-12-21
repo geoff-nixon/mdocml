@@ -1,0 +1,1179 @@
+head	1.26;
+access;
+symbols
+	VERSION_1_13_3:1.26
+	VERSION_1_13_2:1.21
+	VERSION_1_12_4:1.18
+	VERSION_1_13_1:1.18
+	VERSION_1_12_3:1.18
+	VERSION_1_12_2:1.18
+	VERSION_1_12:1.18.0.2
+	VERSION_1_12_1:1.16
+	VERSION_1_12_0:1.16
+	VERSION_1_11_7:1.15
+	VERSION_1_11_6:1.13
+	VERSION_1_11_5:1.13
+	VERSION_1_11_4:1.13
+	VERSION_1_11_3:1.13
+	VERSION_1_11_2:1.13
+	VERSION_1_11_1:1.13
+	VERSION_1_10_10:1.13
+	VERSION_1_10_9:1.4;
+locks; strict;
+comment	@# @;
+
+
+1.26
+date	2015.01.29.00.33.57;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2015.01.28.04.19.35;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2015.01.26.18.42.30;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2015.01.26.13.03.48;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2015.01.20.19.39.34;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2014.11.26.17.51.55;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2014.10.14.02.16.06;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2014.10.13.23.31.46;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2013.09.16.22.39.19;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.09.03.00.29.21;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.09.02.19.37.35;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.08.18.08.58.44;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.03.17.15.12.42;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.02.07.00.05.40;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.01.17.21.29.04;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.01.11.14.15.56;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.01.11.14.12.01;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.01.10.14.40.30;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.01.08.17.30.03;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.01.08.17.16.48;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.01.08.17.00.27;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.01.07.14.59.52;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.01.05.20.02.34;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.01.05.09.31.10;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.01.04.23.32.21;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.26
+log
+@Radical cleanup of COMPATIBILITY sections:
+Remove lots of lies, dozens of irrelevant implementation details,
+and all references to groff versions older than 1.17.  Move relevant
+information to the pages where it belongs, and out of mandoc(1) in
+particular.  Add some missing general remarks to roff(7), where it
+fits the character and purpose of the page much better.
+@
+text
+@.\"	$Id: tbl.7,v 1.25 2015/01/28 04:19:35 schwarze Exp $
+.\"
+.\" Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: January 28 2015 $
+.Dt TBL 7
+.Os
+.Sh NAME
+.Nm tbl
+.Nd tbl language reference for mandoc
+.Sh DESCRIPTION
+The
+.Nm tbl
+language is a table-formatting language.
+It is used within
+.Xr mdoc 7
+and
+.Xr man 7
+.Ux
+manual pages.
+This manual describes the subset of the
+.Nm
+language accepted by the
+.Xr mandoc 1
+utility.
+.Pp
+Tables within
+.Xr mdoc 7
+or
+.Xr man 7
+are enclosed by the
+.Sq TS
+and
+.Sq TE
+macro tags, whose precise syntax is documented in
+.Xr roff 7 .
+Tables consist of a series of options on a single line, followed by the
+table layout, followed by data.
+.Pp
+For example, the following creates a boxed table with digits centered in
+the cells.
+.Bd -literal -offset indent
+\&.TS
+tab(:) box;
+c5 c5 c5.
+1:2:3
+4:5:6
+\&.TE
+.Ed
+.Pp
+When formatted, the following output is produced:
+.Bd -filled -offset indent -compact
+.TS
+tab(:) box;
+c5 c5 c5.
+1:2:3
+4:5:6
+.TE
+.Ed
+.Sh TABLE STRUCTURE
+Tables are enclosed by the
+.Sq TS
+and
+.Sq TE
+.Xr roff 7
+macros.
+A table consists of an optional single line of table
+.Sx Options
+terminated by a semicolon, followed by one or more lines of
+.Sx Layout
+specifications terminated by a period, then
+.Sx Data .
+All input must be 7-bit ASCII.
+Example:
+.Bd -literal -offset indent
+\&.TS
+box tab(:);
+c | c
+| c | c.
+1:2
+3:4
+\&.TE
+.Ed
+.Pp
+Table data is
+.Em pre-processed ,
+that is, data rows are parsed then inserted into the underlying stream
+of input data.
+This allows data rows to be interspersed by arbitrary
+.Xr roff 7 ,
+.Xr mdoc 7 ,
+and
+.Xr man 7
+macros such as
+.Bd -literal -offset indent
+\&.TS
+tab(:);
+c c c.
+1:2:3
+\&.Ao
+3:2:1
+\&.Ac
+\&.TE
+.Ed
+.Pp
+in the case of
+.Xr mdoc 7
+or
+.Bd -literal -offset indent
+\&.TS
+tab(:);
+c c c.
+\&.ds ab 2
+1:\e*(ab:3
+\&.I
+3:2:1
+\&.TE
+.Ed
+.Pp
+in the case of
+.Xr man 7 .
+.Ss Options
+The first line of a table may contain options separated by spaces, tabs,
+or commas and terminated by a semicolon.
+If the first line does not have a terminating semicolon, it is assumed
+that no options are specified and instead a
+.Sx Layout
+is processed.
+Some options require arguments enclosed by parentheses.
+The following case-insensitive options are available:
+.Bl -tag -width Ds
+.It Cm allbox
+Draw a single-line box around each table cell.
+Currently treated as a synonym for
+.Cm box .
+.It Cm box
+Draw a single-line box around the table.
+For GNU compatibility, this may also be invoked with
+.Cm frame .
+.It Cm center
+Center the table instead of left-adjusting it.
+For GNU compatibility, this may also be invoked with
+.Cm centre .
+.It Cm decimalpoint
+Use the single-character argument as the decimal point with the
+.Cm n
+layout key.
+This is a GNU extension.
+.It Cm delim
+Use the two characters of the argument as
+.Xr eqn 7
+delimiters.
+Currently unsupported.
+.It Cm doublebox
+Draw a double-line box around the table.
+For GNU compatibility, this may also be invoked with
+.Cm doubleframe .
+.It Cm expand
+Increase the width of the table to the current line length.
+Currently ignored.
+.It Cm linesize
+Draw lines with the point size given by the unsigned integer argument.
+Currently ignored.
+.It Cm nokeep
+Allow page breaks within the table.
+This is a GNU extension and currently ignored.
+.It Cm nospaces
+Ignore leading and trailing spaces in data cells.
+This is a GNU extension and currently ignored.
+.It Cm nowarn
+Suppress warnings about tables exceeding the current line length.
+This is a GNU extension and currently ignored.
+.It Cm tab
+Use the single-character argument as a delimiter between data cells.
+By default, the tab character is used.
+.El
+.Ss Layout
+The table layout follows
+.Sx Options
+or a
+.Sq \&T&
+macro invocation.
+Layout specifies how data rows are displayed on output.
+Each layout line corresponds to a line of data; the last layout line
+applies to all remaining data lines.
+Layout lines may also be separated by a comma.
+Each layout cell consists of one of the following case-insensitive keys:
+.Bl -tag -width 2n
+.It Cm c
+Center a literal string within its column.
+.It Cm r
+Right-justify a literal string within its column.
+.It Cm l
+Left-justify a literal string within its column.
+.It Cm n
+Justify a number around its last decimal point.
+If the decimal point is not found on the number, it's assumed to trail
+the number.
+.It Cm s
+Horizontally span columns from the last
+.No non- Ns Cm s
+data cell.
+It is an error if spanning columns follow a
+.Cm \-
+or
+.Cm \(ba
+cell, or come first.
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm a
+Left-justify a literal string and pad with one space.
+.It Cm ^
+Vertically span rows from the last
+.No non- Ns Cm ^
+data cell.
+It is an error to invoke a vertical span on the first layout row.
+Unlike a horizontal spanner, you must specify an empty cell (if it not
+empty, the data is discarded) in the corresponding data cell.
+.It Cm \-
+Replace the data cell (its contents will be lost) with a single
+horizontal line.
+This may also be invoked with
+.Cm _ .
+.It Cm =
+Replace the data cell (its contents will be lost) with a double
+horizontal line.
+.It Cm \(ba
+Emit a vertical bar instead of data.
+.It Cm \(ba\(ba
+Emit a double-vertical bar instead of data.
+.El
+.Pp
+Keys may be followed by a set of modifiers.
+A modifier is either a modifier key or a natural number for specifying
+the minimum width of a column.
+The following case-insensitive modifier keys are available:
+.Bl -tag -width 2n
+.It Cm b
+Use a bold font for the contents of this column.
+.It Cm d
+Move cell content down to the last cell of a vertical span.
+Currently ignored.
+.It Cm e
+Make this column wider to match the maximum width
+of any other column also having the
+.Cm e
+modifier.
+.It Cm f
+The next character selects the font to use for this column.
+See the
+.Xr roff 7
+manual for supported one-character font names.
+.It Cm i
+Use an italic font for the contents of this column.
+.It Cm m
+Specify a cell start macro.
+This is a GNU extension and currently unsupported.
+.It Cm p
+Set the point size to the following unsigned argument,
+or change it by the following signed argument.
+Currently ignored.
+.It Cm v
+Set the vertical line spacing to the following unsigned argument,
+or change it by the following signed argument.
+Currently ignored.
+.It Cm t
+Do not vertically center cell content in the vertical span,
+leave it at the top.
+Currently ignored.
+.It Cm u
+Move cell content up by half a table line.
+Currently ignored.
+.It Cm w
+Specify minimum column width.
+Currently ignored.
+.It Cm x
+After determining the width of all other columns, distribute the
+rest of the line length among all columns having the
+.Cm x
+modifier.
+.It Cm z
+Do not use this cell for determining the width of this column.
+.El
+.Pp
+For example, the following layout specifies a center-justified column of
+minimum width 10, followed by vertical bar, followed by a left-justified
+column of minimum width 10, another vertical bar, then a column using
+bold font justified about the decimal point in numbers:
+.Pp
+.Dl c10 | l10 | nfB
+.Ss Data
+The data section follows the last layout row.
+By default, cells in a data section are delimited by a tab.
+This behaviour may be changed with the
+.Cm tab
+option.
+If
+.Cm _
+or
+.Cm =
+is specified, a single or double line, respectively, is drawn across the
+data field.
+If
+.Cm \e-
+or
+.Cm \e=
+is specified, a line is drawn within the data field (i.e. terminating
+within the cell and not draw to the border).
+If the last cell of a line is
+.Cm T{ ,
+all subsequent lines are included as part of the cell until
+.Cm T}
+is specified as its own data cell.
+It may then be followed by a tab
+.Pq or as designated by Cm tab
+or an end-of-line to terminate the row.
+.Sh COMPATIBILITY
+The
+.Xr mandoc 1
+implementation of
+.Nm
+doesn't support
+.Xr mdoc 7
+and
+.Xr man 7
+macros and
+.Xr eqn 7
+equations inside tables.
+.Sh SEE ALSO
+.Xr mandoc 1 ,
+.Xr man 7 ,
+.Xr mandoc_char 7 ,
+.Xr mdoc 7 ,
+.Xr roff 7
+.Rs
+.%A M. E. Lesk
+.%T Tbl\(emA Program to Format Tables
+.%D June 11, 1976
+.Re
+.Sh HISTORY
+The tbl utility, a preprocessor for troff, was originally written by M.
+E. Lesk at Bell Labs in 1975.
+The GNU reimplementation of tbl, part of the groff package, was released
+in 1990 by James Clark.
+A standalone tbl implementation was written by Kristaps Dzonsons in
+2010.
+This formed the basis of the implementation that is part of the
+.Xr mandoc 1
+utility.
+.Sh AUTHORS
+This
+.Nm
+reference was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+@
+
+
+1.25
+log
+@implement the tbl(7) "center" layout option
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.24 2015/01/26 18:42:30 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 26 2015 $
+a330 8
+This section documents compatibility between mandoc and other
+.Nm
+implementations, at this time limited to GNU tbl.
+.Pp
+.Bl -dash -compact
+.It
+In GNU tbl, comments and macros are disallowed prior to the data block
+of a table.
+d333 9
+a341 2
+implementation allows them.
+.El
+@
+
+
+1.24
+log
+@Rework tbl(7) layout parsing:
+* Continue parsing even if part of the input is invalid.
+* Do not require whitespace between cell specifications.
+* Allow tabs as well as blanks between modifiers.
+* Mark the 'm' modifier as unsupported.
+* Parse and ignore the 'p' and 'v' modifiers.
+* Better warning and error messages.
+* Get rid of a static buffer.
+Improved functionality but minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.23 2015/01/26 13:03:48 schwarze Exp $
+a154 1
+Currently ignored.
+@
+
+
+1.23
+log
+@More improvements regarding tbl(7) options.
+* Treat "allbox" as an alias for "box" for now.
+* Parse and ignore the GNU tbl "nowarn" option.
+* For separation, allow spaces, tabs, and commas only.
+* Mark eqn(7) within tbl(7) as unsupported.
+* Simplify the option table.
+* Improve and sort documentation.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.22 2015/01/20 19:39:34 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 20 2015 $
+d254 3
+d269 21
+a298 9
+The modifiers
+.Cm d ,
+.Cm t ,
+.Cm u ,
+and
+.Cm w
+are ignored by
+.Xr mandoc 1 .
+.Pp
+@
+
+
+1.22
+log
+@change spelling of centre to center: consistent with other man pages
+and the name of the syntax elements being described; from tedu@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.21 2014/11/26 17:51:55 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: November 26 2014 $
+d136 2
+a137 3
+The first line of a table consists of space-separated option keys and
+modifiers terminated by a semicolon.
+For GNU compatibility, option keys can also be separated by commas.
+d142 1
+a142 1
+Some options accept arguments enclosed by parenthesis.
+d145 8
+d154 3
+a156 3
+This option is not supported by
+.Xr mandoc 1 .
+This may also be invoked with
+d158 5
+d164 4
+a167 10
+Accepts a two-character argument.
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm expand
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm box
+Draw a single-line box around the table.
+This may also be invoked with
+.Cm frame .
+d170 1
+a170 1
+This may also be invoked with
+d172 3
+a174 7
+.It Cm allbox
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm tab
+Accepts a single-character argument.
+This character is used as a delimiter between data cells, which otherwise
+defaults to the tab character.
+d176 2
+a177 3
+Accepts a natural number (all digits).
+This option is not supported by
+.Xr mandoc 1 .
+d179 2
+a180 7
+This option is not supported by
+.Xr mandoc 1 .
+.It Cm decimalpoint
+Accepts a single-character argument.
+This character will be used as the decimal point with the
+.Cm n
+layout key.
+d182 8
+a189 2
+This option is not supported by
+.Xr mandoc 1 .
+@
+
+
+1.21
+log
+@Allow comma-separated options in tbl(7) tables.
+Provides better groff compatibility.
+From bentley@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.20 2014/10/14 02:16:06 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 14 2014 $
+d53 1
+a53 1
+For example, the following creates a boxed table with digits centred in
+d202 1
+a202 1
+Centre a literal string within its column.
+d282 1
+a282 1
+For example, the following layout specifies a centre-justified column of
+@
+
+
+1.20
+log
+@Rudimentary implementation of the e, x, and z table layout modifiers
+to equalize, maximize, and ignore the width of columns.
+Does not yet take vertical rulers into account,
+and does not do line breaks within table cells.
+Considerably improves the lftp(1) manual; issue noticed by sthen@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.19 2014/10/13 23:31:46 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 13 2014 $
+d138 1
+@
+
+
+1.19
+log
+@implement font modifiers in table layouts
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.18 2013/09/16 22:39:19 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 16 2013 $
+d251 5
+d263 7
+a273 2
+.Cm e ,
+.Cm r ,
+d277 1
+a277 1
+.Cm z
+@
+
+
+1.18
+log
+@Drop .Ud remark, it has started to slowly turn into a lie.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.17 2013/07/13 19:41:16 schwarze Exp $
+d4 1
+d18 1
+a18 1
+.Dd $Mdocdate: July 13 2013 $
+d199 1
+a199 1
+.Bl -tag -width Ds
+d248 14
+a261 2
+.Cm z ,
+.Cm u ,
+d263 1
+d265 1
+a265 4
+.Cm d ,
+.Cm b ,
+.Cm i ,
+.Cm r ,
+d267 2
+a268 12
+.Cm f
+.Po
+followed by
+.Cm b ,
+.Cm i ,
+.Cm r ,
+.Cm 3 ,
+.Cm 2 ,
+or
+.Cm 1
+.Pc .
+All of these are ignored by
+d273 2
+a274 2
+column of minimum width 10, another vertical bar, then a column
+justified about the decimal point in numbers:
+d276 1
+a276 1
+.Dl c10 | l10 | n
+@
+
+
+1.17
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.16 2011/09/03 00:29:21 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 3 2011 $
+a71 7
+.Pp
+The
+.Nm
+implementation in
+.Xr mandoc 1
+is
+.Ud
+@
+
+
+1.16
+log
+@Fix handling of font modifiers in tables.  Noted by Brad Smith.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.15 2011/09/02 19:37:35 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 2 2011 $
+d347 1
+a347 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.15
+log
+@Fix typos and spelling errors found by demandoc -w | spell -b.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.14 2011/08/18 08:58:44 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 18 2011 $
+a258 1
+.Cm f ,
+d261 5
+d267 7
+a273 2
+and
+.Cm i .
+@
+
+
+1.14
+log
+@Replace the old `An'/`Aq' AUTHORS note with `An'/`Mt'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.13 2011/03/17 15:12:42 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 17 2011 $
+d52 1
+a52 1
+For example, the following creates a boxed table with digits centered in
+@
+
+
+1.13
+log
+@Note the development status of eqn.7 and tbl.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.12 2011/02/07 00:05:40 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: February 7 2011 $
+d335 1
+a335 1
+This partial
+d338 2
+a339 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.12
+log
+@The macro .Ns has no effect at the beginning of an input line;
+ok kristaps@@ jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.11 2011/01/17 21:29:04 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 17 2011 $
+d72 7
+@
+
+
+1.11
+log
+@"decimalpoint" is in fact supported.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.10 2011/01/11 14:15:56 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+d17 1
+a17 1
+.Dd $Mdocdate: January 11 2011 $
+d210 2
+a211 2
+Horizontally span columns from the last non-
+.Ns Cm s
+d223 2
+a224 2
+Vertically span rows from the last non-
+.Ns Cm ^
+@
+
+
+1.10
+log
+@Note that "^" needs an empty cell, while "s" does not.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.9 2011/01/11 14:12:01 kristaps Exp $
+a182 2
+This option is not supported by
+.Xr mandoc 1 .
+@
+
+
+1.9
+log
+@Add support for "^" vertical spanners.  Unlike GNU tbl, raise
+error-class messages when data is being ignored by specifying it in "^"
+cells (either as-is or in blocks).
+
+Also note again that horizontal spanners aren't really supported...
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.8 2011/01/10 14:40:30 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 10 2011 $
+d229 2
+@
+
+
+1.8
+log
+@First, make extra data cells be thrown away.  This makes "dp->layout"
+always hold, which cleans up the table stuff a bit.
+
+Second, set a "spans" value per data cell consisting of the number of
+skipped TBL_CELL_SPAN layout cells.
+
+Third, make tbl_term.c understand how to skip over spanned sections when
+iterating over the header queue.
+
+What remains is to calculate the widths of spanned cells.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.7 2011/01/08 17:30:03 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 8 2011 $
+d212 3
+a214 1
+Span columns from the last non-span data cell.
+d220 2
+d225 4
+a228 2
+This option is not supported by
+.Xr mandoc 1 .
+@
+
+
+1.7
+log
+@Note that we support the "a" key.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.6 2011/01/08 17:16:48 kristaps Exp $
+d212 6
+a217 2
+This option is not supported by
+.Xr mandoc 1 .
+@
+
+
+1.6
+log
+@The numerical column type centres on the *last* decimal point.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.5 2011/01/08 17:00:27 kristaps Exp $
+d215 1
+a215 2
+This option is not supported by
+.Xr mandoc 1 .
+@
+
+
+1.5
+log
+@Give the "n" cell type knowledge of its spacing.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.4 2011/01/07 14:59:52 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 7 2011 $
+d208 1
+a208 1
+Justify a number around its decimal point.
+@
+
+
+1.4
+log
+@Fixes: T} can be followed by a delimiter then more data.  Make this
+work and add documentation for it.
+
+Also make tbl_term() not puke if the number of data cells is less than
+the number of layout cells (which happens from time to time).  This
+still needs work because we should pad out empty cells so that the
+borders all work out.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.3 2011/01/05 20:02:34 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 5 2011 $
+a233 7
+For example, the following layout specifies a centre-justified column of
+minimum width 10, followed by vertical bar, followed by a left-justified
+column of minimum width 10, another vertical bar, then a column
+justified about the decimal point in numbers:
+.Pp
+.Dl c10 | l10 | n
+.Pp
+d236 1
+a236 1
+spacing.
+d251 7
+@
+
+
+1.3
+log
+@Tweaks to tbl.7 from Jason McIntyre.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.2 2011/01/05 09:31:10 kristaps Exp $
+d280 4
+a283 1
+is specified on its own line.
+@
+
+
+1.2
+log
+@Tweak some language in tbl.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: tbl.7,v 1.1 2011/01/04 23:32:21 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 4 2011 $
+d101 1
+a101 1
+This allows data rows to be interspersed by arbitrary 
+d141 1
+a141 1
+Some options accept arguments enclosed by paranthesis.
+d169 1
+a169 1
+This character is used a delimiter between data cells, which otherwise
+d234 1
+a234 1
+For example, following layout specifies a centre-justified column of
+d274 1
+a274 1
+is specified, a line is drawn within the data field (i.e., terminating
+d296 1
+d298 2
+a299 3
+.Xr roff 7 ,
+.Xr man 7 ,
+.Xr mdoc 7
+@
+
+
+1.1
+log
+@Moved table stuff from roff.7 into the new tbl.7 (suggested by Jason McIntyre).
+
+Added cross-links to tbl.7 from other manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: roff.7,v 1.22 2011/01/04 15:02:00 kristaps Exp $
+d79 6
+a84 3
+A table consists of an optional single line of table options terminated
+by a semicolon, followed by one or more lines of layout specification
+terminated by a period, then table data.
+d134 3
+a136 3
+.Ss Table Options
+The first line of a table consists of its options, which consists of
+space-separated keys and modifiers terminated by a semicolon.
+d138 3
+a140 1
+that no options are specified and instead a layout is processed.
+d189 6
+a194 4
+.Ss Table Layout
+The table layout follows table options, except in the case of
+.Sx \&T& ,
+where it immediately procedes invocation.
+d258 1
+a258 1
+.Ss Table Data
+@

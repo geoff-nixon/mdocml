@@ -1,0 +1,1202 @@
+head	1.32;
+access;
+symbols
+	VERSION_1_13_3:1.31
+	VERSION_1_13_2:1.30
+	VERSION_1_12_4:1.27
+	VERSION_1_13_1:1.25
+	VERSION_1_12_3:1.25
+	VERSION_1_12_2:1.25
+	VERSION_1_12:1.27.0.2
+	VERSION_1_12_1:1.25
+	VERSION_1_12_0:1.25
+	VERSION_1_11_7:1.25
+	VERSION_1_11_6:1.22
+	VERSION_1_11_5:1.22
+	VERSION_1_11_4:1.22
+	VERSION_1_11_3:1.22
+	VERSION_1_11_2:1.21
+	VERSION_1_11_1:1.21
+	VERSION_1_10_10:1.21
+	VERSION_1_10_9:1.20
+	VERSION_1_10_8:1.19
+	VERSION_1_10_7:1.14
+	VERSION_1_10_6:1.14
+	VERSION_1_10_5:1.14
+	VERSION_1_10_5_PREPDF:1.14
+	VERSION_1_10_4:1.14
+	VERSION_1_10_3:1.14
+	VERSION_1_10_2:1.14
+	VERSION_1_10_1:1.14
+	VERSION_1_9_24:1.14
+	VERSION_1_9_25:1.14
+	VERSION_1_9_23:1.14
+	VERSION_1_9_22:1.13
+	VERSION_1_9_21:1.13
+	VERSION_1_9_20:1.13
+	VERSION_1_9_19:1.13
+	VERSION_1_9_18:1.13
+	VERSION_1_9_17:1.13
+	VERSION_1_9_16:1.13
+	VERSION_1_9_15:1.13
+	VERSION_1_9_15-pre2:1.13
+	VERSION_1_9_15-pre1:1.13
+	VERSION_1_9_14:1.13
+	VERSION_1_9_13:1.12
+	VERSION_1_9_12:1.12
+	VERSION_1_9_11:1.12
+	VERSION_1_9_10:1.12
+	VERSION_1_9_9:1.12
+	VERSION_1_9_8:1.12
+	VERSION_1_9_7:1.12
+	VERSION_1_9_6:1.11
+	VERSION_1_9_5:1.8
+	VERSION_1_9_2:1.6
+	VERSION_1_9_1:1.6
+	VERSION_1_9_0:1.6
+	VERSION_1_8_5:1.6
+	VERSION_1_8_4:1.6
+	VERSION_1_8_3:1.6
+	VERSION_1_8_2:1.6
+	VERSION_1_8_1:1.6
+	VERSION_1_8_0:1.5
+	VERSION_1_7_24:1.5
+	VERSION_1_7_23:1.5
+	VERSION_1_7_22:1.5
+	VERSION_1_7_21:1.5
+	VERSION_1_7_20:1.3
+	VERSION_1_7_19:1.3
+	VERSION_1_7_17:1.3
+	VERSION_1_7_16:1.3
+	VERSION_1_7_15:1.3
+	VERSION_1_7_14:1.3
+	VERSION_1_7_13:1.3
+	VERSION_1_7_12:1.3
+	OPENBSD_CHECKIN:1.3
+	VERSION_1_7_10:1.3
+	VERSION_1_7_5:1.2
+	VERSION_1_6_5:1.1
+	VERSION_1_6_2:1.1
+	VERSION_1_5_3:1.1
+	VERSION_1_5_1:1.1
+	VERSION_1_4_6:1.1
+	VERSION_1_4_5:1.1
+	VERSION_1_4_4:1.1
+	VERSION_1_4_2:1.1
+	VERSION_1_3_15:1.1
+	VERSION_1_3_13:1.1
+	VERSION_1_3_11:1.1
+	VERSION_1_3_10:1.1
+	VERSION_1_3_9:1.1
+	VERSION_1_3_8:1.1
+	VERSION_1_3_6:1.1
+	VERSION_1_3_5:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.32
+date	2015.11.05.17.47.51;	author schwarze;	state dead;
+branches;
+next	1.31;
+
+1.31
+date	2015.02.10.08.05.30;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2014.09.27.11.16.24;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2014.09.27.09.20.03;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2014.09.27.09.13.39;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2014.08.14.00.31.43;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2014.08.13.15.25.22;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.08.26.09.03.17;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.08.18.09.16.01;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.08.18.09.02.22;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.05.14.23.40.49;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.02.09.09.52.47;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.12.24.22.51.13;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.12.24.14.14.00;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.12.22.11.58.02;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.12.20.13.39.24;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.12.17.13.03.32;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.12.17.11.42.14;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.04.06.11.51.44;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.11.04.08.07.31;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.10.07.14.39.00;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.09.25.14.13.16;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.09.24.09.20.02;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.09.21.23.12.08;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.09.21.13.44.56;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.09.21.13.06.13;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.07.16.14.07.23;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.07.04.08.06.42;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.06.25.08.42.06;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.24.10.28.06;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.23.15.19.47;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.32
+log
+@Unify the three stylesheets into a single CSS file.
+Many thanks to bentley@@ for doing this work.
+@
+text
+@@
+
+
+1.31
+log
+@trim trailing white space, no code change;
+from Svyatoslav Mishyn <juef at openmailboxd dot org>, Crux Linux
+@
+text
+@a0 145
+/* $Id: style.css,v 1.30 2014/09/27 11:16:24 kristaps Exp $ */
+
+/*
+ * This is an example style-sheet provided for mandoc(1) and the -Thtml
+ * or -Txhtml output mode.
+ *
+ * It mimics the appearance of the traditional cvsweb output.
+ *
+ * See mdoc(7) and man(7) for macro explanations.
+ */
+
+html		{ max-width: 880px; margin-left: 1em; }
+body		{ font-size: smaller; font-family: Helvetica,Arial,sans-serif; }
+h1		{ margin-bottom: 1ex; font-size: 110%; margin-left: -4ex; } /* Section header (Sh, SH). */
+h2		{ margin-bottom: 1ex; font-size: 105%; margin-left: -2ex; } /* Sub-section header (Ss, SS). */
+table		{ width: 100%; margin-top: 0ex; margin-bottom: 0ex; } /* All tables. */
+td		{ vertical-align: top; } /* All table cells. */
+p		{ } /* Paragraph: Pp, Lp. */
+blockquote	{ margin-left: 5ex; margin-top: 0ex; margin-bottom: 0ex; } /* D1. */
+div.section	{ margin-bottom: 2ex; margin-left: 5ex; } /* Sections (Sh, SH). */
+div.subsection	{ } /* Sub-sections (Ss, SS). */
+table.synopsis	{ } /* SYNOPSIS section table. */
+div.spacer	{ margin: 1em 0; }
+
+/* Preamble structure. */
+
+table.foot	{ font-size: smaller; margin-top: 1em; border-top: 1px dotted #dddddd; } /* Document footer. */
+td.foot-date	{ width: 50%; } /* Document footer: date. */
+td.foot-os	{ width: 50%; } /* Document footer: OS/source. */
+table.head	{ font-size: smaller; margin-bottom: 1em; border-bottom: 1px dotted #dddddd; } /* Document header. */
+td.head-ltitle	{ width: 10%; } /* Document header: left-title. */
+td.head-vol	{ width: 80%; } /* Document header: volume. */
+td.head-rtitle	{ width: 10%; } /* Document header: right-title. */
+
+/* General font modes. */
+
+i		{ } /* Italic: BI, IB, I, (implicit). */
+.emph		{ font-style: italic; font-weight: normal; } /* Emphasis: Em, Bl -emphasis. */
+b		{ } /* Bold: SB, BI, IB, BR, RB, B, (implicit). */
+.symb		{ font-style: normal; font-weight: bold; } /* Symbolic: Sy, Ms, Bf -symbolic. */
+small		{ } /* Small: SB, SM. */
+.lit		{ font-style: normal; font-weight: normal; font-family: monospace; } /* Literal: Dl, Li, Ql, Bf -literal, Bl -literal, Bl -unfilled. */
+
+/* Block modes. */
+
+.display	{ } /* Top of all Bd, D1, Dl. */
+.list		{ } /* Top of all Bl. */
+
+/* Context-specific modes. */
+
+i.addr		{ font-weight: normal; } /* Address (Ad). */
+i.arg		{ font-weight: normal; } /* Command argument (Ar). */
+span.author	{ } /* Author name (An). */
+b.cmd		{ font-style: normal; } /* Command (Cm). */
+b.config	{ font-style: normal; } /* Config statement (Cd). */
+span.define	{ } /* Defines (Dv). */
+span.desc	{ } /* Nd.  After em-dash. */
+b.diag		{ font-style: normal; } /* Diagnostic (Bl -diag). */
+span.env	{ } /* Environment variables (Ev). */
+span.errno	{ } /* Error string (Er). */
+i.farg		{ font-weight: normal; } /* Function argument (Fa, Fn). */
+i.file		{ font-weight: normal; } /* File (Pa). */
+b.flag		{ font-style: normal; } /* Flag (Fl, Cm). */
+b.fname		{ font-style: normal; } /* Function name (Fa, Fn, Rv). */
+i.ftype		{ font-weight: normal; } /* Function types (Ft, Fn). */
+b.includes	{ font-style: normal; } /* Header includes (In). */
+span.lib	{ } /* Library (Lb). */
+i.link-sec	{ font-weight: normal; } /* Section links (Sx). */
+b.macro		{ font-style: normal; } /* Macro-ish thing (Fd). */
+b.name		{ font-style: normal; } /* Name of utility (Nm). */
+span.opt	{ } /* Options (Op, Oo/Oc). */
+span.ref	{ } /* Citations (Rs). */
+span.ref-auth	{ } /* Reference author (%A). */
+i.ref-book	{ font-weight: normal; } /* Reference book (%B). */
+span.ref-city	{ } /* Reference city (%C). */
+span.ref-date	{ } /* Reference date (%D). */
+i.ref-issue	{ font-weight: normal; } /* Reference issuer/publisher (%I). */
+i.ref-jrnl	{ font-weight: normal; } /* Reference journal (%J). */
+span.ref-num	{ } /* Reference number (%N). */
+span.ref-opt	{ } /* Reference optionals (%O). */
+span.ref-page	{ } /* Reference page (%P). */
+span.ref-corp	{ } /* Reference corporate/foreign author (%Q). */
+span.ref-rep	{ } /* Reference report (%R). */
+span.ref-title	{ text-decoration: underline; } /* Reference title (%T). */
+span.ref-vol	{ } /* Reference volume (%V). */
+span.type	{ font-style: italic; font-weight: normal; } /* Variable types (Vt). */
+span.unix	{ } /* Unices (Ux, Ox, Nx, Fx, Bx, Bsx, Dx). */
+b.utility	{ font-style: normal; } /* Name of utility (Ex). */
+b.var		{ font-style: normal; } /* Variables (Rv). */
+
+a.link-ext	{ } /* Off-site link (Lk). */
+a.link-includes	{ } /* Include-file link (In). */
+a.link-mail	{ } /* Mailto links (Mt). */
+a.link-man	{ } /* Manual links (Xr). */
+a.link-ref	{ } /* Reference section links (%Q). */
+a.link-sec	{ } /* Section links (Sx). */
+
+/* Formatting for lists.  See mdoc(7). */
+
+dl.list-diag	{ }
+dt.list-diag	{ }
+dd.list-diag	{ }
+
+dl.list-hang	{ }
+dt.list-hang	{ }
+dd.list-hang	{ }
+
+dl.list-inset	{ }
+dt.list-inset	{ }
+dd.list-inset	{ }
+
+dl.list-ohang	{ }
+dt.list-ohang	{ }
+dd.list-ohang	{ margin-left: 0ex; }
+
+dl.list-tag	{ }
+dt.list-tag	{ }
+dd.list-tag	{ }
+
+table.list-col	{ }
+tr.list-col	{ }
+td.list-col	{ }
+
+ul.list-bul	{ list-style-type: disc; padding-left: 1em; }
+li.list-bul	{ }
+
+ul.list-dash	{ list-style-type: none; padding-left: 0em; }
+li.list-dash:before { content: "\2014  "; }
+
+ul.list-hyph	{ list-style-type: none; padding-left: 0em; }
+li.list-hyph:before { content: "\2013  "; }
+
+ul.list-item	{ list-style-type: none; padding-left: 0em; }
+li.list-item	{ }
+
+ol.list-enum	{ padding-left: 2em; }
+li.list-enum	{ }
+
+/* Equation modes.  See eqn(7). */
+
+span.eqn	{ }
+
+/* Table modes.  See tbl(7). */
+
+table.tbl	{ }
+@
+
+
+1.30
+log
+@Specify the spacer in the overridable CSS.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.29 2014/09/27 09:20:03 kristaps Exp $ */
+d54 1
+a54 1
+b.cmd		{ font-style: normal; } /* Command (Cm). */ 
+@
+
+
+1.29
+log
+@HTML5-isation: remove more alignments.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.28 2014/09/27 09:13:39 kristaps Exp $ */
+d23 1
+@
+
+
+1.28
+log
+@Continue in HTML5-ing by kicking out some hard-coded alignments.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.27 2014/08/14 00:31:43 schwarze Exp $ */
+d31 1
+a31 1
+td.head-vol	{ width: 80%; text-align: center; } /* Document header: volume. */
+@
+
+
+1.27
+log
+@Revert previous, as requested by kristaps@@.
+The .Bf block can contain subblocks, so it has to render as an
+element that can contain flow content.  But <em> cannot contain
+flow content, only phrasing content.  Rendering .Em and .Bf differently
+would by unfortunate, and closing out .Bf before subblocks and
+re-opening it afterwards would merely complicate both the C code
+of the program and the generated HTML code.  Besides, converting
+.Em to semantic HTML markup would require some content to be put
+into <em> and some into <i>, but we cannot automatically distinguish
+which is which, so strictly speaking, we can't use semantic HTML
+here but have to fall back to physical markup.  Wonders of HTML...
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.26 2014/08/13 15:25:22 schwarze Exp $ */
+d28 1
+a28 1
+td.foot-os	{ width: 50%; text-align: right; } /* Document footer: OS/source. */
+d32 1
+a32 1
+td.head-rtitle	{ width: 10%; text-align: right; } /* Document header: right-title. */
+@
+
+
+1.26
+log
+@Use <em> for .Em and .Bf -emphasis.
+
+The vast majority of .Em in real-world manuals is stress emphasis,
+for which <em> is the correct markup.  Admittedly, there are some
+instances of .Em usage for alternate quality, for which <i> would
+be a better match.  Most of these are technical terms that neither
+allow semantic markup nor are keywords - for the latter, .Sy would
+be preferable.  A typical example is that the shell breaks input into
+.Em words .
+Alternate voice or mood, which would also require <i>, is almost
+absent from manuals.
+We cannot satisfy both stress emphasis and alternate quality, so
+pick the one that fits more often and looks less wrong when off.
+
+Patch from Guy Harris <guy at alum dot mit dot edu>.
+ok joerg@@ bentley@@
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.25 2011/08/26 09:03:17 kristaps Exp $ */
+d37 1
+a37 1
+em		{ font-style: italic; font-weight: normal; } /* Emphasis: Em, Bl -emphasis. */
+@
+
+
+1.25
+log
+@Make sure that `Ql' literalises its arguments in -T[x]html.  Found when
+doing manpages.bsd.lv stuff.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.24 2011/08/18 09:16:01 kristaps Exp $ */
+d37 1
+a37 1
+.emph		{ font-style: italic; font-weight: normal; } /* Emphasis: Em, Bl -emphasis. */
+@
+
+
+1.24
+log
+@Align `-offset indent' and `D1' by forcing BLOCKQUOTE to have a 5ex
+margin.  This is dubious: the HTML4 spec specifically says that
+BLOCKQUOTE shouldn't be abused for indentation, which is exactly what we
+do.  However, `D1' needs indentation and it's the only way to force text
+browsers to do so.  Alternatives?
+
+Also remove the unused HALFINDENT defines while here.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.23 2011/08/18 09:02:22 kristaps Exp $ */
+d41 1
+a41 1
+.lit		{ font-style: normal; font-weight: normal; font-family: monospace; } /* Literal: Dl, Li, Bf -literal, Bl -literal, Bl -unfilled. */
+@
+
+
+1.23
+log
+@Have `Li' be correctly monospaced in -T[x]html.  Also make sure that
+`Li' prints as a CODE tag and the style-sheet has the `lit' class apply
+to multiple tag types.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.22 2011/05/14 23:40:49 kristaps Exp $ */
+d19 1
+a19 1
+blockquote	{ margin-top: 0ex; margin-bottom: 0ex; } /* D1. */
+@
+
+
+1.22
+log
+@Make www style.css link up to example.style.css much nicer.
+@
+text
+@d1 1
+a1 1
+/* $Id: manual.css,v 1.4 2011/05/04 09:11:23 kristaps Exp $ */
+d12 1
+a12 1
+html		{ max-width: 880px; }
+d41 1
+a67 1
+code.lit	{ font-style: normal; font-weight: normal; } /* Literal: Dl, Li, Bf -literal, Bl -literal, Bl -unfilled. */
+@
+
+
+1.21
+log
+@EQN blocks are now printed in all modes.  This is simply a printing of
+the concatenated string (in -T[x]html, it gets a SPAN, too).
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.20 2010/12/24 22:51:13 kristaps Exp $ */
+d3 20
+a22 4
+html		{ max-width: 800px; }
+body		{ color: #333333;
+		  font-size: 0.93em;
+		  font-family: Times, serif; }
+d26 1
+a26 5
+table.foot	{ width: 100%; 
+		  font-size: 0.8em;
+		  margin-top: 1em;
+		  border-top: 1px dotted #dddddd; 
+		  color: #999999; } /* Document footer. */
+d29 1
+a29 5
+table.head	{ width: 100%; 
+		  font-size: 0.8em;
+		  margin-bottom: 1em;
+		  border-bottom: 1px dotted #dddddd; 
+		  color: #999999; } /* Document header. */
+a33 15
+/* Sections. */
+
+h1		{ margin-bottom: 0px; color: #000000; font-size: 0.93em; margin-left: -4ex; } /* Section header (Sh, SH). */
+h2		{ margin-bottom: 0px; color: #000000; font-size: 0.93em; margin-left: -2ex; } /* Sub-section header (Ss, SS). */
+div.section	{ margin-bottom: 2ex; margin-left: 4ex; } /* Sections (Sh, SH). */
+div.subsection	{ } /* Sub-sections (Ss, SS). */
+table.synopsis	{ } /* SYNOPSIS section table. */
+
+/* Vertical spacing. */
+
+p		{ } /* Paragraph: Pp, Lp. */
+blockquote	{ margin-top: 0px; margin-bottom: 0px; }
+table		{ margin-top: 0px; margin-bottom: 0px; }
+td 		{ vertical-align: top; } /* SYNOPSIS section table. */
+
+d36 1
+d38 1
+d40 1
+d44 1
+a44 4
+.display	{ background-color: #EEEEEE; 
+		  margin: 3px;
+		  padding: 3px;
+		  border: 1px solid #339999; } /* Top of all Bd, D1, Dl. */
+d69 1
+a69 1
+b.name		{ color: blue; font-style: normal; } /* Name of utility (Nm). */
+d90 1
+a90 1
+a.link-ext	{ background: transparent url(external.png) center right no-repeat; padding-right: 12px; }/* Off-site link (Lk). */
+d92 1
+a92 1
+a.link-mail 	{ background: transparent url(external.png) center right no-repeat; padding-right: 12px; }/* Mailto links (Mt). */
+d95 1
+a95 1
+a.link-sec	{ text-decoration: none; border-bottom: 1px dotted #339999; } /* Section links (Sx). */
+d97 1
+a97 1
+/* Formatting for lists. */
+d113 1
+a113 1
+dd.list-ohang	{ margin-left: 0em; }
+@
+
+
+1.20
+log
+@Whack superfluous font-family in mdocml's www style.css.  Noted by
+Anthony J. Bentley.  Thanks!
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.19 2010/12/24 14:14:00 kristaps Exp $ */
+a32 1
+table.synopsis td { vertical-align: top; } /* SYNOPSIS section table. */
+d39 1
+a42 2
+.lit		{ font-family: monospace; font-style: normal; font-weight: normal; } /* Literal: Dl, Li, Bf -literal, Bl -literal, Bl -unfilled. */
+.italic		{ font-style: italic; font-weight: normal; } /* Italic: BI, IB, I, (implicit). */
+a43 1
+.bold		{ font-style: normal; font-weight: bold; } /* Bold: SB, BI, IB, BR, RB, B, (implicit). */
+a44 2
+.roman		{ font-style: normal; font-weight: normal; } /* Roman: (implicit). */
+.small		{ font-style: normal; font-weight: normal; font-size: smaller; } /* Small: SB, SM. */
+d73 2
+d144 8
+@
+
+
+1.19
+log
+@Apparently the U tag is deprecated, so use a SPAN instead (blah).  Bump
+version date for release.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.18 2010/12/22 11:58:02 kristaps Exp $ */
+d4 1
+a4 2
+body		{ font-family: monospace; 
+		  color: #333333;
+@
+
+
+1.18
+log
+@Build xhtml files for www site exemplaria.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.17 2010/12/20 13:39:24 kristaps Exp $ */
+d94 1
+a94 1
+u.ref-title	{ } /* Reference title (%T). */
+@
+
+
+1.17
+log
+@Fix list-type being clobbered by margins.  Last default styles in place.
+Added `Sx' to be default-italic (as in OpenBSD's cvsweb).  Added `diag'
+formatting, which had been lost.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.16 2010/12/17 13:03:32 kristaps Exp $ */
+d13 1
+d20 1
+@
+
+
+1.16
+log
+@Tweak default styles.
+@
+text
+@d1 1
+a1 1
+/* $Id: style.css,v 1.15 2010/12/17 11:42:14 kristaps Exp $ */
+d60 2
+a61 2
+span.addr	{ font-style: italic; font-weight: normal; } /* Address (Ad). */
+span.arg	{ font-style: italic; font-weight: normal; } /* Command argument (Ar). */
+d63 2
+a64 2
+span.cmd	{ font-style: normal; font-weight: bold; } /* Command (Cm). */ 
+span.config	{ font-style: normal; font-weight: bold; } /* Config statement (Cd). */
+d67 1
+a67 1
+span.diag	{ font-style: normal; font-weight: bold; } /* Diagnostic (Bl -diag). */
+d70 6
+a75 6
+span.farg	{ font-style: italic; font-weight: normal; } /* Function argument (Fa, Fn). */
+span.file	{ font-style: italic; font-weight: normal; } /* File (Pa). */
+span.flag	{ font-style: normal; font-weight: bold; } /* Flag (Fl, Cm). */
+span.fname	{ font-style: normal; font-weight: bold; } /* Function name (Fa, Fn, Rv). */
+span.ftype	{ font-style: italic; font-weight: normal; } /* Function types (Ft, Fn). */
+span.includes	{ font-style: normal; font-weight: bold; } /* Header includes (In). */
+d77 2
+a78 2
+span.macro	{ font-style: normal; font-weight: bold; } /* Macro-ish thing (Fd). */
+span.name	{ color: blue; font-style: normal; font-weight: bold; } /* Name of utility (Nm). */
+d82 1
+a82 1
+span.ref-book	{ font-style: italic; font-weight: normal; } /* Reference book (%B). */
+d85 2
+a86 2
+span.ref-issue	{ font-style: italic; font-weight: normal; } /* Reference issuer/publisher (%I). */
+span.ref-jrnl	{ font-style: italic; font-weight: normal; } /* Reference journal (%J). */
+d92 1
+a92 1
+span.ref-title	{ text-decoration: underline; } /* Reference title (%T). */
+d96 2
+a97 2
+span.utility	{ font-style: normal; font-weight: bold; } /* Name of utility (Ex). */
+span.var	{ font-style: normal; font-weight: bold; } /* Variables (Rv). */
+@
+
+
+1.15
+log
+@Merged example.style.css into style.css.  Adding version stuff.
+@
+text
+@d1 1
+a1 1
+/* $Id: example.style.css,v 1.33 2010/12/17 11:01:24 kristaps Exp $ */
+d13 1
+a13 1
+		  border-bottom: 1px dotted #dddddd; 
+d27 3
+a29 3
+h1		{ color: #000000; font-size: 0.93em; margin-left: -4ex; } /* Section header (Sh, SH). */
+h2		{ color: #000000; font-size: 0.93em; margin-left: -2ex; } /* Sub-section header (Ss, SS). */
+div.section	{ margin-bottom: 3ex; margin-left: 4ex; } /* Sections (Sh, SH). */
+@
+
+
+1.14
+log
+@Prettyfied the stylesheet for mdocml.bsd.lv's online manuals.
+@
+text
+@d1 1
+a1 14
+div.body	{ color: #333333; 
+		  max-width: 800px;
+		  padding-left: 10px;
+		  font-size: smaller; 
+		  font-family: Verdana, Tahoma, Arial, sans-serif; }
+
+div.sec-head	{ color: #000000; 
+		  font-weight: bold; } 
+div.sec-body	{ }
+div.sec-block	{ padding-bottom: 1em; }
+div.ssec-head	{ color: #000000;
+		  font-weight: bold; }
+div.ssec-body	{ }
+div.ssec-block	{ }
+d3 59
+a61 2
+span.addr	{ } /* Address (Ad). */
+span.arg	{ font-style: italic; } /* Command argument (Ar). */
+d63 2
+a64 2
+span.cmd	{ font-weight: bold; } /* Command (Cm). */
+span.config	{ font-weight: bold; } /* Config statement (Cd). */
+d67 1
+a67 2
+span.diag	{ font-weight: bold; } /* Diagnostic (Bl -diag). */
+span.emph	{ font-style: italic; } /* Emphasis (Em). */
+d70 6
+a75 6
+span.farg	{ font-style: italic; } /* Function argument (Fa, Fn). */
+span.file	{ font-style: italic; } /* File (Pa). */
+span.flag	{ font-weight: bold; } /* Flag (Fl, Cm). */
+span.fname	{ font-weight: bold; } /* Function name (Fa, Fn, Rv). */
+span.ftype	{ font-style: italic; } /* Function types (Ft, Fn). */
+span.includes	{ font-weight: bold; } /* Header includes (In). */
+d77 2
+a78 3
+span.lit	{ font-family: monospace; } /* Literals (Bf -literal). */
+span.macro	{ font-weight: bold; } /* Macro-ish thing (Fd). */
+span.name	{ color: #003333; font-weight: bold; } /* Name of utility (Nm). */
+d82 1
+a82 1
+span.ref-book	{ font-style: italic; } /* Reference book (%B). */
+d85 2
+a86 2
+span.ref-issue	{ font-style: italic; } /* Reference issuer/publisher (%I). */
+span.ref-jrnl	{ font-style: italic; } /* Reference journal (%J). */
+d92 1
+a92 1
+span.ref-title	{ } /* Reference title (%T). */
+d94 1
+a94 2
+span.symb	{ font-weight: bold; } /* Symbols. */
+span.type	{ font-style: italic; } /* Variable types (Vt). */
+d96 2
+a97 2
+span.utility	{ font-weight: bold; } /* Name of utility (Ex). */
+span.var	{ font-weight: bold; } /* Variables (Rv). */
+d103 1
+d106 37
+a142 13
+div.emph	{ font-style: italic; } /* Emphasis (Bl -emphasis). */
+div.lit		{ margin: 3px; 
+		  padding: 3px;
+		  background-color: #EEEEEE; 
+		  border: 1px solid #339999; 
+		  color: #000000;
+		  font-family: monospace; }
+div.symb	{ font-weight: bold; } /* Symbols (Bl -symbolic). */
+
+table.header	{ border-bottom: 1px dotted #dddddd; 
+		  color: #999999; }
+table.footer	{ border-top: 1px dotted #dddddd; 
+		  color: #999999; }
+d144 2
+@
+
+
+1.13
+log
+@Fixed `Bf Li' default style (monospace).
+@
+text
+@d7 2
+a8 1
+div.sec-head	{ font-weight: bold; color: blue; } /* Sections (Sh). */
+d10 3
+a12 2
+div.sec-block	{ }
+div.ssec-head	{ font-weight: bold; color: blue; } /* Sub-sections (Ss). */
+d36 1
+a36 1
+span.name	{ font-weight: bold; } /* Name of utility (Nm). */
+d62 1
+a62 1
+a.link-sec	{ } /* Section links (Sx). */
+d65 6
+a70 1
+div.lit		{ font-family: monospace; } /* Literal (D1, Bd -literal, Dl, Bd -literal). */
+d73 4
+a76 2
+table.header	{ border-bottom: 1px dotted #cccccc; }/* Document footer. */
+table.footer	{ border-top: 1px dotted #cccccc; }/* Document header. */
+@
+
+
+1.12
+log
+@Made default string units (-Thtml -mdoc) to use `m' and not `n' scaling (better more than less).
+Fixed -column widths for -Thtml -mdoc.
+Fixed left-hand margin padding for -Thtml -mdoc.
+@
+text
+@d63 1
+a63 1
+div.lit		{ } /* Literal (D1, Bd -literal, Dl, Bd -literal). */
+@
+
+
+1.11
+log
+@Changed stylesheet used for local documents.
+@
+text
+@d7 1
+a7 2
+span.sec-head	{ font-weight: bold; color: blue; } /* Sections (Sh). */
+div.sec-head	{ }		
+d10 1
+a10 2
+span.ssec-head	{ font-weight: bold; color: blue; } /* Sub-sections (Ss). */
+div.ssec-head	{ }
+d13 1
+d57 1
+@
+
+
+1.10
+log
+@Many more macros added to -Thtml.
+Minor space issues fixed in -Tascii.
+@
+text
+@a5 17
+span.sec-head	{ font-weight: bold; color: blue; } 
+span.ssec-head	{ font-weight: bold; color: blue; }
+span.addr	{ text-decoration: underline; }
+span.arg	{ font-style: italic; }
+span.cmd	{ font-weight: bold; }
+span.config	{ font-weight: bold; }
+span.diag	{ font-weight: bold; }
+span.emph	{ font-style: italic; }
+span.farg	{ text-decoration: underline; }
+span.fname	{ font-style: italic; }
+span.file	{ font-style: italic; }
+span.flag	{ font-weight: bold; }
+span.includes	{ font-weight: bold; }
+span.name	{ font-weight: bold; } 
+span.type	{ font-style: italic; }
+span.utility	{ font-weight: bold; }
+span.var	{ font-weight: bold; }
+d7 61
+a67 2
+table.header	{ border-bottom: 1px dotted #cccccc; }
+table.footer	{ border-top: 1px dotted #cccccc; }
+@
+
+
+1.9
+log
+@A few more macros in -Thtml.
+@
+text
+@d10 1
+d15 1
+d18 1
+d22 2
+@
+
+
+1.8
+log
+@Fixed body/divbody structure of html pages.
+Added example style.css (example.style.css).
+Enabled using -Thtml to generate manuals in Makefile.
+Stopped making text manuals for webpage.
+@
+text
+@d13 1
+a13 1
+span.farg	{ font-style: underline; }
+d17 1
+a17 1
+span.type	{ font-weight: italic; }
+@
+
+
+1.7
+log
+@Removed new-born out.{h,c} (not a good idea).
+Removed if 0 for HTML-mode output (why not).
+Added option -oxxxx for passing options to output devices.
+@
+text
+@d1 20
+a20 39
+div.body	{ } /* Wraps entire body file. */
+
+span.sec-head	{ font-weight: bold; } /* Sections (Sh). */
+div.sec-head	{ }		
+div.sec-body	{ }
+div.sec-block	{ }
+
+span.ssec-head	{ font-weight: bold; } /* Sub-sections (Ss). */
+div.ssec-head	{ }
+div.ssec-body	{ }
+div.ssec-block	{ }
+
+span.addr	{ text-decoration: underline; } /* Address (Ad). */
+span.arg	{ font-style: italic; } /* Command argument (Ar). */
+span.author	{ } /* Author name (An). */
+span.config	{ font-weight: bold; } /* Config statement (Cd). */
+span.define	{ } /* Defines (Dv). */
+span.desc	{ } /* Nd.  After em-dash. */
+span.diag	{ font-weight: bold; } /* Diagnostic (Bl -diag). */
+span.emph	{ font-style: italic; } /* Emphasis (Em). */
+span.env	{ } /* Environment variables (Ev). */
+span.errno	{ } /* Error string (Er). */
+span.farg	{ font-style: underline; } /* Function argument (Fa, Fn). */
+span.file	{ font-style: italic; } /* File (Pa). */
+span.flag	{ font-weight: bold; } /* Flag (Fl, Cm). */
+span.macro	{ } /* Macro-ish thing (Fd). */
+span.name	{ font-weight: bold; } /* Name of utility (Nm). */
+span.opt	{ } /* Options (Op, Oo/Oc). */
+span.type	{ font-weight: italic; } /* Variable types (Vt, Ft, Fn). */
+span.unix	{ } /* Unices (Ux, Ox, Nx, Fx, Bx, Bsx, Dx). */
+span.utility	{ font-weight: bold; } /* Name of utility (Ex). */
+
+a.link-man	{ } /* Manual links (Xr). */
+a.link-sec	{ } /* Section links (Sx). */
+
+div.lit-block	{ font-family: monospace; } /* Literal block (D1, Bd -literal, Dl). */
+
+table.header	{ } /* Document header. */
+table.footer	{ } /* Document footer. */
+@
+
+
+1.6
+log
+@Proper html showing of ChangeLog.
+@
+text
+@d1 1
+a1 3
+body		{ color: #333333;
+		  font-size: smaller;
+		  font-family: Verdana, Tahoma, Arial, sans-serif; }
+d3 29
+a31 2
+table.frame	{ max-width: 800px; 
+		  padding-left: 10px; }
+d33 2
+a34 1
+table		{ padding-left: 40px; }
+d36 1
+a36 2
+p		{ padding-left: 40px;
+		  text-align: justify; }
+d38 2
+a39 3
+h1		{ font-weight: bold;
+		  font-size: small;
+		  font-family: Verdana, Tahoma, Arial, sans-serif; }
+a40 28
+h2		{ font-weight: bold;
+		  font-size: small;
+		  padding-left: 20px;
+		  margin-bottom: 0px; 
+		  font-family: Verdana, Tahoma, Arial, sans-serif; }
+
+div.clhead	{ background-color: #E6E6FA; color: #000000; padding: 2px; font-weight: bold; }
+
+div.clbody	{ margin-left: 2px; }
+
+ul.clbody	{ margin-top: 4px; }
+
+span.rev	{ color: #808080; }
+
+span.nm		{ color: #000000; font-weight: bold; }
+
+span.attn	{ color: #000000; font-weight: bold; }
+
+div.head	{ border-bottom: 1px dotted #cccccc; 
+		  padding-bottom: 5px;
+		  text-align: right; }
+
+div.foot	{ border-top: 1px dotted #cccccc; 
+		  padding-top: 5px;
+		  font-size: smaller;
+		  text-align: right; }
+
+a.external 	{ background: transparent url(external.png) center right no-repeat; padding-right: 12px; }
+@
+
+
+1.5
+log
+@Minor www fixes.
+@
+text
+@d23 8
+@
+
+
+1.4
+log
+@Updating web-page to be a bit more compact.
+@
+text
+@d5 2
+a6 2
+p		{ margin-left: 40px;
+		  text-align: justify; }
+d8 1
+a8 1
+table		{ margin-left: 40px; }
+d10 2
+a11 7
+ul		{ margin-left: 40px; }
+
+p.boxed		{ border: 1px solid #cccccc; 
+		  margin-left: 40px;
+		  text-align: justify;
+		  padding: 2px;
+		  color: black; }
+d19 1
+a19 7
+		  margin-left: 20px;
+		  margin-bottom: 0px; 
+		  font-family: Verdana, Tahoma, Arial, sans-serif; }
+
+h3		{ font-size: small;
+		  font-weight: normal;
+		  margin-left: 20px;
+a22 5
+a.man		{ text-decoration: none; 
+	 	  border-bottom: 1px dotted #999999; }
+
+span.path	{ color: #000000; }
+
+a26 4
+span.fl		{ font-weight: bold; }
+
+span.ar		{ text-decoration: underline; }
+
+a36 2
+
+td.zebra	{ background-color: #eeeeee; }
+@
+
+
+1.3
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d58 1
+@
+
+
+1.2
+log
+@Fixing web-site (had old references).
+@
+text
+@d34 2
+a35 1
+span.man	{ color: #000000; border-bottom: 1px dotted #999999; }
+@
+
+
+1.1
+log
+@Adding revamped webpage.
+@
+text
+@d42 4
+@

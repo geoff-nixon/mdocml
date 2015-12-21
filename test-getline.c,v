@@ -1,0 +1,37 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2015.11.07.20.52.52;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@provide a simple stand-alone implementation of getline(3)
+for systems lacking it
+@
+text
+@#include <sys/types.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int
+main(void)
+{
+	char	*line = NULL;
+	size_t	 linesz = 0;
+
+	fclose(stdin);
+	return getline(&line, &linesz, stdin) != -1;
+}
+@

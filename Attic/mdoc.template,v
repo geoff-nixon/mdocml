@@ -1,0 +1,318 @@
+head	1.10;
+access;
+symbols
+	VERSION_1_11_1:1.9
+	VERSION_1_10_10:1.9
+	VERSION_1_10_9:1.9
+	VERSION_1_10_8:1.9
+	VERSION_1_10_7:1.9
+	VERSION_1_10_6:1.9
+	VERSION_1_10_5:1.7
+	VERSION_1_10_5_PREPDF:1.7
+	VERSION_1_10_4:1.7
+	VERSION_1_10_3:1.7
+	VERSION_1_10_2:1.7
+	VERSION_1_10_1:1.7
+	VERSION_1_9_24:1.4
+	VERSION_1_9_25:1.5
+	VERSION_1_9_23:1.4
+	VERSION_1_9_22:1.4
+	VERSION_1_9_21:1.4
+	VERSION_1_9_20:1.4
+	VERSION_1_9_19:1.4
+	VERSION_1_9_18:1.4
+	VERSION_1_9_17:1.4
+	VERSION_1_9_16:1.4
+	VERSION_1_9_15:1.4
+	VERSION_1_9_15-pre2:1.4
+	VERSION_1_9_15-pre1:1.4
+	VERSION_1_9_14:1.4
+	VERSION_1_9_13:1.4
+	VERSION_1_9_12:1.4
+	VERSION_1_9_11:1.4
+	VERSION_1_9_10:1.4
+	VERSION_1_9_9:1.4
+	VERSION_1_9_8:1.4
+	VERSION_1_9_7:1.4
+	VERSION_1_9_6:1.4
+	VERSION_1_9_5:1.4
+	VERSION_1_9_2:1.4
+	VERSION_1_9_1:1.4
+	VERSION_1_9_0:1.2
+	VERSION_1_8_5:1.2
+	VERSION_1_8_4:1.2
+	VERSION_1_8_3:1.2
+	VERSION_1_8_2:1.2
+	VERSION_1_8_1:1.2
+	VERSION_1_8_0:1.2
+	VERSION_1_7_24:1.2
+	VERSION_1_7_23:1.2
+	VERSION_1_7_22:1.2
+	VERSION_1_7_21:1.2
+	VERSION_1_7_20:1.1
+	VERSION_1_7_19:1.1
+	VERSION_1_7_17:1.1
+	VERSION_1_7_16:1.1
+	VERSION_1_7_15:1.1
+	VERSION_1_7_14:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2011.05.01.08.48.14;	author kristaps;	state dead;
+branches;
+next	1.9;
+
+1.9
+date	2010.09.04.17.22.41;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.08.28.22.08.38;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.06.02.12.01.00;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.05.15.16.24.38;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.05.12.08.41.17;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.08.20.13.32.09;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.08.20.13.22.48;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.06.25.08.42.06;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.06.11.13.13.44;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@Remove mdoc.template.  It's already embedded in man(7) and mdoc(7); no
+need to have it floating around separately.
+@
+text
+@@
+
+
+1.9
+log
+@Clarified EXIT STATUS sections.  Discussed among schwarze@@, Thomas, and
+Jason.  Patch by Jason.
+@
+text
+@a0 42
+.\"	$\&Id$
+.\"
+.\" Copyright notice goes here.
+.\"
+.\" The uncommented requests are required for all manual pages.
+.\" The commented requests should be uncommented and used where appropriate.
+.\"
+.\" See mdoc(7) for further reference.
+.\"
+.Dd $\&Mdocdate$
+.Dt title section
+.Os
+.Sh NAME
+.Nm name
+.Nd short description
+.\" .Sh LIBRARY
+.\" For sections 2, 3, & 9 only.
+.\" Not used in OpenBSD.
+.Sh SYNOPSIS
+.Sh DESCRIPTION
+.\" .Sh IMPLEMENTATION NOTES
+.\" .Sh RETURN VALUES
+.\" For sections 2, 3, & 9 only.
+.\" .Sh ENVIRONMENT
+.\" For sections 1, 6, 7 & 8 only.
+.\" .Sh FILES
+.\" .Sh EXIT STATUS
+.\" For sections 1, 6 & 8 only.
+.\" .Sh EXAMPLES
+.\" .Sh DIAGNOSTICS
+.\" For sections 1, 4, 6, 7, & 8 only
+.\" .Sh ERRORS
+.\" For sections 2, 3, & 9 only.
+.\" .Sh SEE ALSO
+.\" .Xr foobar 1
+.\" .Sh STANDARDS
+.\" .Sh HISTORY
+.\" .Sh AUTHORS
+.\" .Sh CAVEATS
+.\" .Sh BUGS
+.\" .Sh SECURITY CONSIDERATIONS
+.\" Not used in OpenBSD.
+@
+
+
+1.8
+log
+@Move mdoc/man template "The next is for" into the section itself.  Added
+OpenBSD compatibility notes.  Based on a patch by Jason McIntyre.
+@
+text
+@d28 1
+a28 1
+.\" For sections 1 & 8 only.
+@
+
+
+1.7
+log
+@Strip empty-line markers from mdoc.template and its mdoc.7 embedded form
+(as per Jason McIntyre's suggestion for manuals in general).
+@
+text
+@a15 1
+.\" The next is for sections 2, 3, & 9 only.
+d17 2
+a21 1
+.\" The next is for sections 2, 3, & 9 only.
+d23 1
+a23 1
+.\" The next is for sections 1, 6, 7 & 8 only.
+d25 1
+a26 1
+.\" The next is for sections 1 & 8 only.
+d28 1
+a29 1
+.\" The next is for sections 1, 4, 6, 7, & 8 only
+d31 1
+a31 1
+.\" The next is for sections 2, 3, & 9 only.
+d33 1
+d42 1
+@
+
+
+1.6
+log
+@LIBRARY can also occur in section 9.
+All manual sections (unknown, 3p, 3f, etc.) correctly handled by -mdoc.
+Useful warning printed if unknown manual section.
+Checking for manual sections (e.g., LIBRARY) checks only first character, so 3p, 3f, etc. are free.
+@
+text
+@a12 1
+.
+@
+
+
+1.5
+log
+@mdoc_atosec -> mdoc_str2sec (consistent with str2 being different from a2).
+Changed ordering of sections (EXIT STATUS moved around), argued for by Ulrich Sporlein.
+Fixed mdoc_str2sec not to use weird structure.
+@
+text
+@d17 1
+a17 1
+.\" The next is for sections 2 & 3 only.
+@
+
+
+1.4
+log
+@Synchronised man.7, mdoc.7, mdoc.template manual structure.
+@
+text
+@a21 2
+.\" The next is for sections 1 & 8 only.
+.\" .Sh EXIT STATUS
+d27 2
+@
+
+
+1.3
+log
+@Updated manual structure in mdoc.7.
+Synchronised mdoc.template and mdoc.7 manual structure.
+`Rv' and `Ex' now accept multiple arguments (-std made standalone, terms as children).
+`Rv' and `Ex' format correctly in -Tascii (plurals, commas, etc.).
+@
+text
+@d21 1
+@
+
+
+1.2
+log
+@Updating web-page to be a bit more compact.
+@
+text
+@d5 1
+a5 1
+.\" The uncommented requests are required for all man pages.
+d11 1
+a11 1
+.Dt <document_title> <section>
+d13 1
+d15 3
+a17 3
+.Nm <name>
+.Nd <description>
+.\" The next request should be used for sections 2 and 3 only.
+d21 1
+a21 1
+.\" This next request is for sections 1 and 8 exit statuses only.
+d23 1
+a23 1
+.\" This next request is for sections 2 and 3 function return values only.
+d25 1
+a25 1
+.\" This next request is for sections 1, 6, 7 & 8 only.
+d29 1
+a29 1
+.\" This next request is for sections 1, 6, 7 & 8 only
+d31 1
+a31 1
+.\" The next request is for sections 2 and 3 error and signal handling only.
+d34 1
+a34 2
+.\" Cross-references should be ordered by section (low to high), then in
+.\"     alphabetical order.
+@
+
+
+1.1
+log
+@Added mdoc.template (from NetBSD -- unlicensed??).
+Moved MDOC_TEXT type checks into assertions (should be caught by parser).
+Added some FIXME notes in mdoc output (largely that things should be asserted, not caught).
+@
+text
+@d11 1
+a11 1
+.Dt DOCUMENT_TITLE SECTION
+d14 2
+@

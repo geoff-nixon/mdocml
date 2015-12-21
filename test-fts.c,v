@@ -1,0 +1,114 @@
+head	1.3;
+access;
+symbols
+	VERSION_1_13_3:1.2
+	VERSION_1_13_2:1.2;
+locks; strict;
+comment	@ * @;
+
+
+1.3
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.08.11.02.05.54;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.08.11.01.39.00;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@modernize style: "return" is not a function
+@
+text
+@#include <sys/types.h>
+#include <sys/stat.h>
+#include <fts.h>
+#include <stdio.h>
+
+int
+main(void)
+{
+	const char	*argv[2];
+	FTS		*ftsp;
+	FTSENT		*entry;
+
+	argv[0] = ".";
+	argv[1] = (char *)NULL;
+
+	ftsp = fts_open((char * const *)argv,
+	    FTS_PHYSICAL | FTS_NOCHDIR, NULL);
+
+	if (ftsp == NULL) {
+		perror("fts_open");
+		return 1;
+	}
+
+	entry = fts_read(ftsp);
+
+	if (entry == NULL) {
+		perror("fts_read");
+		return 1;
+	}
+
+	if (fts_set(ftsp, entry, FTS_SKIP) != 0) {
+		perror("fts_set");
+		return 1;
+	}
+
+	if (fts_close(ftsp) != 0) {
+		perror("fts_close");
+		return 1;
+	}
+
+	return 0;
+}
+@
+
+
+1.2
+log
+@typo
+@
+text
+@d21 1
+a21 1
+		return(1);
+d28 1
+a28 1
+		return(1);
+d33 1
+a33 1
+		return(1);
+d38 1
+a38 1
+		return(1);
+d41 1
+a41 1
+	return(0);
+@
+
+
+1.1
+log
+@Provide a fallback version of fts(3) for systems lacking it.
+I chose the OpenBSD version because it apparently contains various
+bugfixes that never made it into libnbcompat.  To reduce size and
+complexity, i stripped out the features we don't need.
+@
+text
+@d36 1
+a36 1
+	if (fts_close(NULL) != 0) {
+@

@@ -1,0 +1,228 @@
+head	1.7;
+access;
+symbols
+	VERSION_1_13_3:1.7
+	VERSION_1_13_2:1.7
+	VERSION_1_13_1:1.5;
+locks; strict;
+comment	@ * @;
+
+
+1.7
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2014.08.09.14.05.21;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2014.04.10.02.46.21;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.04.09.21.50.08;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.04.04.15.55.19;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.01.19.00.09.38;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@/*	$Id: mansearch_const.c,v 1.6 2014/08/10 23:54:41 schwarze Exp $ */
+/*
+ * Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <stdint.h>
+
+#include "mansearch.h"
+
+const int mansearch_keymax = 40;
+
+const char *const mansearch_keynames[40] = {
+	"arch", "sec",	"Xr",	"Ar",	"Fa",	"Fl",	"Dv",	"Fn",
+	"Ic",	"Pa",	"Cm",	"Li",	"Em",	"Cd",	"Va",	"Ft",
+	"Tn",	"Er",	"Ev",	"Sy",	"Sh",	"In",	"Ss",	"Ox",
+	"An",	"Mt",	"St",	"Bx",	"At",	"Nx",	"Fx",	"Lk",
+	"Ms",	"Bsx",	"Dx",	"Rs",	"Vt",	"Lb",	"Nm",	"Nd"
+};
+@
+
+
+1.6
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch_const.c,v 1.5 2014/08/09 14:05:21 schwarze Exp $ */
+a22 1
+#include "manpath.h"
+@
+
+
+1.5
+log
+@missing #include "config.h",
+hence missing definition of __BEGIN_DECLS;
+found by Thomas Klausner <wiz at NetBSD> on SunOS 5.11
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch_const.c,v 1.4 2014/04/10 02:46:21 schwarze Exp $ */
+a16 1
+#ifdef HAVE_CONFIG_H
+a17 1
+#endif
+d20 1
+@
+
+
+1.4
+log
+@Next speed optimization step for the new apropos(1).
+Split manual names out of the common "keys" table into their
+own "names" table.  This reduces standard apropos(1) search
+times (i.e. searching for names and descriptions only) by
+typically about 70% for the full /usr/share/man database.
+(Yes, that multiplies with the previous optimization step,
+so both together have reduced search times by a factor of
+more than six.  I'm not done yet, expect more to come.)
+
+Even with the minimal databases built with makewhatis(8) -Q,
+this step still reduces search times by 15-20%.  For both cases,
+database sizes and build times hardly change (+/-2%).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch_const.c,v 1.3 2014/04/09 21:50:08 schwarze Exp $ */
+d17 4
+@
+
+
+1.3
+log
+@After careful gprof(1)ing of the new apropos(1), move the descriptions
+back from the keys table to the mpages table:  I found a good way
+to still use them in searches, without complication of the code.
+
+On my notebook, this reduces typical apropos(1) search times by about 40%,
+it reduces /usr/share/man database size by 6% in makewhatis(8) -Q mode
+and by 2% in standard mode (less overhead storing pointers to mpages),
+and it doesn't measurably change database build times (may even be
+going down by a percent or so because less data is being copied
+around in ohashes).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch_const.c,v 1.2 2014/04/04 15:55:19 schwarze Exp $ */
+d23 1
+a23 1
+const int mansearch_keymax = 41;
+d25 6
+a30 7
+const char *const mansearch_keynames[41] = {
+	"NAME",	"Nm",	"arch", "sec",	"Xr",	"Ar",	"Fa",	"Fl",
+	"Dv",	"Fn",	"Ic",	"Pa",	"Cm",	"Li",	"Em",	"Cd",
+	"Va",	"Ft",	"Tn",	"Er",	"Ev",	"Sy",	"Sh",	"In",
+	"Ss",	"Ox",	"An",	"Mt",	"St",	"Bx",	"At",	"Nx",
+	"Fx",	"Lk",	"Ms",	"Bsx",	"Dx",	"Rs",	"Vt",	"Lb",
+	"Nd"
+@
+
+
+1.2
+log
+@Remember which names are in the NAME section.
+This helps to find missing MLINKS.
+Database build times do not change and database growth is minimal
+(1.2% with -Q, 0.7% without -Q in /usr/share/man),
+so making this optional would be pointless.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mansearch_const.c,v 1.1 2014/01/19 00:09:38 schwarze Exp $ */
+d26 6
+a31 6
+	"NAME",	"Nm",	"Nd",	"arch", "sec",	"Xr",	"Ar",	"Fa",
+	"Fl",	"Dv",	"Fn",	"Ic",	"Pa",	"Cm",	"Li",	"Em",
+	"Cd",	"Va",	"Ft",	"Tn",	"Er",	"Ev",	"Sy",	"Sh",
+	"In",	"Ss",	"Ox",	"An",	"Mt",	"St",	"Bx",	"At",
+	"Nx",	"Fx",	"Lk",	"Ms",	"Bsx",	"Dx",	"Rs",	"Vt",
+	"Lb"
+@
+
+
+1.1
+log
+@Support a second -v on mandocdb(8) to show keys while they are being added;
+i need that for debugging, in particular to be used with -t.
+To be able to do so, provide a global table of key names, for reuse.
+@
+text
+@d1 1
+a1 1
+/*	$Id$ */
+d23 1
+a23 1
+const int mansearch_keymax = 40;
+d25 7
+a31 6
+const char *const mansearch_keynames[40] = {
+	"Nm",	"Nd",	"arch", "sec",	"Xr",	"Ar",	"Fa",	"Fl",
+	"Dv",	"Fn",	"Ic",	"Pa",	"Cm",	"Li",	"Em",	"Cd",
+	"Va",	"Ft",	"Tn",	"Er",	"Ev",	"Sy",	"Sh",	"In",
+	"Ss",	"Ox",	"An",	"Mt",	"St",	"Bx",	"At",	"Nx",
+	"Fx",	"Lk",	"Ms",	"Bsx",	"Dx",	"Rs",	"Vt",	"Lb"
+@

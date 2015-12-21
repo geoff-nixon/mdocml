@@ -1,0 +1,55 @@
+head	1.2;
+access;
+symbols
+	VERSION_1_13_3:1.1
+	VERSION_1_13_2:1.1
+	VERSION_1_12_4:1.1
+	VERSION_1_13_1:1.1
+	VERSION_1_12:1.1.0.2;
+locks; strict;
+comment	@ * @;
+
+
+1.2
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.04.23.21.06.41;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@modernize style: "return" is not a function
+@
+text
+@#include <stdlib.h>
+
+int
+main(void)
+{
+	return !reallocarray(NULL, 2, 2);
+}
+@
+
+
+1.1
+log
+@Audit malloc(3)/calloc(3)/realloc(3) usage.
+* Change eight reallocs to reallocarray to be safe from overflows.
+* Change one malloc to reallocarray to be safe from overflows.
+* Change one calloc to reallocarray, no zeroing needed.
+* Change the order of arguments of three callocs (aesthetical).
+@
+text
+@d6 1
+a6 1
+	return( ! reallocarray(NULL, 2, 2));
+@

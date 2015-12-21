@@ -1,0 +1,2608 @@
+head	1.58;
+access;
+symbols
+	VERSION_1_10_10:1.57
+	VERSION_1_10_9:1.55
+	VERSION_1_10_8:1.51
+	VERSION_1_10_7:1.50
+	VERSION_1_10_6:1.49
+	VERSION_1_10_5:1.48
+	VERSION_1_10_5_PREPDF:1.48
+	VERSION_1_10_4:1.48
+	VERSION_1_10_3:1.44
+	VERSION_1_10_2:1.41
+	VERSION_1_10_1:1.41
+	VERSION_1_9_24:1.37
+	VERSION_1_9_25:1.37
+	VERSION_1_9_23:1.37
+	VERSION_1_9_22:1.37
+	VERSION_1_9_21:1.37
+	VERSION_1_9_20:1.37
+	VERSION_1_9_19:1.37
+	VERSION_1_9_18:1.37
+	VERSION_1_9_17:1.37
+	VERSION_1_9_16:1.37
+	VERSION_1_9_15:1.37
+	VERSION_1_9_15-pre2:1.35
+	VERSION_1_9_15-pre1:1.35
+	VERSION_1_9_14:1.35
+	VERSION_1_9_13:1.35
+	VERSION_1_9_12:1.35
+	VERSION_1_9_11:1.35
+	VERSION_1_9_10:1.35
+	VERSION_1_9_9:1.35
+	VERSION_1_9_8:1.35
+	VERSION_1_9_7:1.35
+	VERSION_1_9_6:1.34
+	VERSION_1_9_5:1.34
+	VERSION_1_9_2:1.33
+	VERSION_1_9_1:1.33
+	VERSION_1_9_0:1.33
+	VERSION_1_8_5:1.33
+	VERSION_1_8_4:1.33
+	VERSION_1_8_3:1.33
+	VERSION_1_8_2:1.33
+	VERSION_1_8_1:1.32
+	VERSION_1_8_0:1.31
+	VERSION_1_7_24:1.31
+	VERSION_1_7_23:1.31
+	VERSION_1_7_22:1.30
+	VERSION_1_7_21:1.30
+	VERSION_1_7_20:1.30
+	VERSION_1_7_19:1.30
+	VERSION_1_7_17:1.30
+	VERSION_1_7_16:1.30
+	VERSION_1_7_15:1.30
+	VERSION_1_7_14:1.30
+	VERSION_1_7_13:1.28
+	VERSION_1_7_12:1.26
+	OPENBSD_CHECKIN:1.26
+	VERSION_1_7_10:1.26
+	VERSION_1_7_5:1.23
+	VERSION_1_6_5:1.20
+	VERSION_1_6_2:1.20
+	VERSION_1_5_3:1.19
+	VERSION_1_5_1:1.17
+	VERSION_1_4_6:1.13
+	VERSION_1_4_5:1.13
+	VERSION_1_4_4:1.13
+	VERSION_1_4_2:1.13
+	VERSION_1_3_15:1.13
+	VERSION_1_3_13:1.13
+	VERSION_1_3_11:1.13
+	VERSION_1_3_10:1.13
+	VERSION_1_3_9:1.13
+	VERSION_1_3_8:1.13
+	VERSION_1_3_6:1.13
+	VERSION_1_3_5:1.10
+	VERSION_1_2_0:1.5;
+locks; strict;
+comment	@# @;
+
+
+1.58
+date	2011.03.22.10.02.50;	author kristaps;	state dead;
+branches;
+next	1.57;
+
+1.57
+date	2011.02.09.09.18.15;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2011.02.09.09.05.52;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2011.01.07.15.07.21;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2011.01.03.13.55.26;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2011.01.03.11.27.32;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2011.01.01.12.18.37;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2010.12.17.11.41.45;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2010.10.10.09.47.05;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2010.07.07.15.04.54;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2010.07.04.22.04.04;	author schwarze;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2010.07.01.09.33.39;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2010.06.29.19.20.38;	author schwarze;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.06.27.16.18.13;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.06.27.15.52.41;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.06.26.15.36.37;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.05.30.22.56.02;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.05.25.22.16.59;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.05.25.21.46.48;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.05.25.21.38.05;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.02.17.19.22.01;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.01.07.19.10.09;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.10.03.16.36.06;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.09.16.09.41.24;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.07.20.13.45.11;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.07.19.08.34.59;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.07.05.19.30.49;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.06.11.07.26.35;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.04.12.19.19.57;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.03.31.13.50.19;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.03.27.14.56.15;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.03.26.16.23.22;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.03.23.09.42.43;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.03.22.08.52.27;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.03.21.21.09.00;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.03.20.15.14.01;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.03.14.05.21.58;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.03.12.23.05.21;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.03.12.16.30.50;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.03.12.15.55.11;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.02.27.09.14.02;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.02.27.08.20.15;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.02.25.17.02.47;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.02.24.13.46.54;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.02.23.15.19.47;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.02.23.12.45.19;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.02.23.09.46.59;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.02.23.09.33.34;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.01.20.15.05.01;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.01.19.17.51.33;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.01.17.16.15.27;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.01.16.15.58.50;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.01.16.14.04.26;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.58
+log
+@Step 3: consolidate manuals.  The parse functions in mdoc.h, roff.h, and
+man.h are now part of libmandoc.h, so remove these from their respective
+manuals (they're no longer public-facing and we don't need a libmandoc.3
+(yet?)).  Before that, move the juicy data (parse tree syntax) into
+new-born mandoc.3.  Peck around in Makefile and index.sgml to reflect
+reality.
+@
+text
+@@
+
+
+1.57
+log
+@Allow -man to process EQN as well.  Also fix a segfault in missing case
+statements in the post-handler for EQN in -mdoc and -man.
+@
+text
+@a0 359
+.\"	$Id: mdoc.3,v 1.56 2011/02/09 09:05:52 kristaps Exp $
+.\"
+.\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2010 Ingo Schwarze <schwarze@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: February 9 2011 $
+.Dt MDOC 3
+.Os
+.Sh NAME
+.Nm mdoc ,
+.Nm mdoc_addeqn ,
+.Nm mdoc_addspan ,
+.Nm mdoc_alloc ,
+.Nm mdoc_endparse ,
+.Nm mdoc_free ,
+.Nm mdoc_meta ,
+.Nm mdoc_node ,
+.Nm mdoc_parseln ,
+.Nm mdoc_reset
+.Nd mdoc macro compiler library
+.Sh SYNOPSIS
+.In mandoc.h
+.In mdoc.h
+.Vt extern const char * const * mdoc_macronames;
+.Vt extern const char * const * mdoc_argnames;
+.Ft int
+.Fo mdoc_addeqn
+.Fa "struct mdoc *mdoc"
+.Fa "const struct eqn *eqn"
+.Fc
+.Ft int
+.Fo mdoc_addspan
+.Fa "struct mdoc *mdoc"
+.Fa "const struct tbl_span *span"
+.Fc
+.Ft "struct mdoc *"
+.Fo mdoc_alloc
+.Fa "struct regset *regs"
+.Fa "void *data"
+.Fa "mandocmsg msgs"
+.Fc
+.Ft int
+.Fn mdoc_endparse "struct mdoc *mdoc"
+.Ft void
+.Fn mdoc_free "struct mdoc *mdoc"
+.Ft "const struct mdoc_meta *"
+.Fn mdoc_meta "const struct mdoc *mdoc"
+.Ft "const struct mdoc_node *"
+.Fn mdoc_node "const struct mdoc *mdoc"
+.Ft int
+.Fo mdoc_parseln
+.Fa "struct mdoc *mdoc"
+.Fa "int line"
+.Fa "char *buf"
+.Fc
+.Ft int
+.Fn mdoc_reset "struct mdoc *mdoc"
+.Sh DESCRIPTION
+The
+.Nm mdoc
+library parses lines of
+.Xr mdoc 7
+input
+into an abstract syntax tree (AST).
+.Pp
+In general, applications initiate a parsing sequence with
+.Fn mdoc_alloc ,
+parse each line in a document with
+.Fn mdoc_parseln ,
+close the parsing session with
+.Fn mdoc_endparse ,
+operate over the syntax tree returned by
+.Fn mdoc_node
+and
+.Fn mdoc_meta ,
+then free all allocated memory with
+.Fn mdoc_free .
+The
+.Fn mdoc_reset
+function may be used in order to reset the parser for another input
+sequence.
+.Ss Types
+.Bl -ohang
+.It Vt struct mdoc
+An opaque type.
+Its values are only used privately within the library.
+.It Vt struct mdoc_node
+A parsed node.
+See
+.Sx Abstract Syntax Tree
+for details.
+.El
+.Ss Functions
+If
+.Fn mdoc_addeqn ,
+.Fn mdoc_addspan ,
+.Fn mdoc_parseln ,
+or
+.Fn mdoc_endparse
+return 0, calls to any function but
+.Fn mdoc_reset
+or
+.Fn mdoc_free
+will raise an assertion.
+.Bl -ohang
+.It Fn mdoc_addeqn
+Add an equation to the parsing stream.
+Returns 0 on failure, 1 on success.
+.It Fn mdoc_addspan
+Add a table span to the parsing stream.
+Returns 0 on failure, 1 on success.
+.It Fn mdoc_alloc
+Allocates a parsing structure.
+The
+.Fa data
+pointer is passed to
+.Fa msgs .
+Always returns a valid pointer.
+The pointer must be freed with
+.Fn mdoc_free .
+.It Fn mdoc_reset
+Reset the parser for another parse routine.
+After its use,
+.Fn mdoc_parseln
+behaves as if invoked for the first time.
+If it returns 0, memory could not be allocated.
+.It Fn mdoc_free
+Free all resources of a parser.
+The pointer is no longer valid after invocation.
+.It Fn mdoc_parseln
+Parse a nil-terminated line of input.
+This line should not contain the trailing newline.
+Returns 0 on failure, 1 on success.
+The input buffer
+.Fa buf
+is modified by this function.
+.It Fn mdoc_endparse
+Signals that the parse is complete.
+Returns 0 on failure, 1 on success.
+.It Fn mdoc_node
+Returns the first node of the parse.
+.It Fn mdoc_meta
+Returns the document's parsed meta-data.
+.El
+.Ss Variables
+.Bl -ohang
+.It Va mdoc_macronames
+An array of string-ified token names.
+.It Va mdoc_argnames
+An array of string-ified token argument names.
+.El
+.Ss Abstract Syntax Tree
+The
+.Nm
+functions produce an abstract syntax tree (AST) describing input in a
+regular form.
+It may be reviewed at any time with
+.Fn mdoc_nodes ;
+however, if called before
+.Fn mdoc_endparse ,
+or after
+.Fn mdoc_endparse
+or
+.Fn mdoc_parseln
+fail, it may be incomplete.
+.Pp
+This AST is governed by the ontological
+rules dictated in
+.Xr mdoc 7
+and derives its terminology accordingly.
+.Qq In-line
+elements described in
+.Xr mdoc 7
+are described simply as
+.Qq elements .
+.Pp
+The AST is composed of
+.Vt struct mdoc_node
+nodes with block, head, body, element, root and text types as declared
+by the
+.Va type
+field.
+Each node also provides its parse point (the
+.Va line ,
+.Va sec ,
+and
+.Va pos
+fields), its position in the tree (the
+.Va parent ,
+.Va child ,
+.Va nchild ,
+.Va next
+and
+.Va prev
+fields) and some type-specific data, in particular, for nodes generated
+from macros, the generating macro in the
+.Va tok
+field.
+.Pp
+The tree itself is arranged according to the following normal form,
+where capitalised non-terminals represent nodes.
+.Pp
+.Bl -tag -width "ELEMENTXX" -compact
+.It ROOT
+\(<- mnode+
+.It mnode
+\(<- BLOCK | ELEMENT | TEXT
+.It BLOCK
+\(<- HEAD [TEXT] (BODY [TEXT])+ [TAIL [TEXT]]
+.It ELEMENT
+\(<- TEXT*
+.It HEAD
+\(<- mnode*
+.It BODY
+\(<- mnode* [ENDBODY mnode*]
+.It TAIL
+\(<- mnode*
+.It TEXT
+\(<- [[:printable:],0x1e]*
+.El
+.Pp
+Of note are the TEXT nodes following the HEAD, BODY and TAIL nodes of
+the BLOCK production: these refer to punctuation marks.
+Furthermore, although a TEXT node will generally have a non-zero-length
+string, in the specific case of
+.Sq \&.Bd \-literal ,
+an empty line will produce a zero-length string.
+Multiple body parts are only found in invocations of
+.Sq \&Bl \-column ,
+where a new body introduces a new phrase.
+.Ss Badly-nested Blocks
+The ENDBODY node is available to end the formatting associated
+with a given block before the physical end of that block.
+It has a non-null
+.Va end
+field, is of the BODY
+.Va type ,
+has the same
+.Va tok
+as the BLOCK it is ending, and has a
+.Va pending
+field pointing to that BLOCK's BODY node.
+It is an indirect child of that BODY node
+and has no children of its own.
+.Pp
+An ENDBODY node is generated when a block ends while one of its child
+blocks is still open, like in the following example:
+.Bd -literal -offset indent
+\&.Ao ao
+\&.Bo bo ac
+\&.Ac bc
+\&.Bc end
+.Ed
+.Pp
+This example results in the following block structure:
+.Bd -literal -offset indent
+BLOCK Ao
+	HEAD Ao
+	BODY Ao
+		TEXT ao
+		BLOCK Bo, pending -> Ao
+			HEAD Bo
+			BODY Bo
+				TEXT bo
+				TEXT ac
+				ENDBODY Ao, pending -> Ao
+				TEXT bc
+TEXT end
+.Ed
+.Pp
+Here, the formatting of the
+.Sq \&Ao
+block extends from TEXT ao to TEXT ac,
+while the formatting of the
+.Sq \&Bo
+block extends from TEXT bo to TEXT bc.
+It renders as follows in
+.Fl T Ns Cm ascii
+mode:
+.Pp
+.Dl <ao [bo ac> bc] end
+.Pp
+Support for badly-nested blocks is only provided for backward
+compatibility with some older
+.Xr mdoc 7
+implementations.
+Using badly-nested blocks is
+.Em strongly discouraged :
+the
+.Fl T Ns Cm html
+and
+.Fl T Ns Cm xhtml
+front-ends are unable to render them in any meaningful way.
+Furthermore, behaviour when encountering badly-nested blocks is not
+consistent across troff implementations, especially when using  multiple
+levels of badly-nested blocks.
+.Sh EXAMPLES
+The following example reads lines from stdin and parses them, operating
+on the finished parse tree with
+.Fn parsed .
+This example does not error-check nor free memory upon failure.
+.Bd -literal -offset indent
+struct regset regs;
+struct mdoc *mdoc;
+const struct mdoc_node *node;
+char *buf;
+size_t len;
+int line;
+
+bzero(&regs, sizeof(struct regset));
+line = 1;
+mdoc = mdoc_alloc(&regs, NULL, NULL);
+buf = NULL;
+alloc_len = 0;
+
+while ((len = getline(&buf, &alloc_len, stdin)) >= 0) {
+    if (len && buflen[len - 1] = '\en')
+        buf[len - 1] = '\e0';
+    if ( ! mdoc_parseln(mdoc, line, buf))
+        errx(1, "mdoc_parseln");
+    line++;
+}
+
+if ( ! mdoc_endparse(mdoc))
+    errx(1, "mdoc_endparse");
+if (NULL == (node = mdoc_node(mdoc)))
+    errx(1, "mdoc_node");
+
+parsed(mdoc, node);
+mdoc_free(mdoc);
+.Ed
+.Pp
+To compile this, execute
+.Pp
+.Dl % cc main.c libmdoc.a libmandoc.a
+.Pp
+where
+.Pa main.c
+is the example file.
+.Sh SEE ALSO
+.Xr mandoc 1 ,
+.Xr mdoc 7
+.Sh AUTHORS
+The
+.Nm
+library was written by
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.56
+log
+@Allow EQN data to be pushed down into libmdoc via mdoc_addeqn().  Only
+the adding itself is implemented; equation data is not yet shown.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.55 2011/01/07 15:07:21 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 7 2011 $
+d23 2
+@
+
+
+1.55
+log
+@Oops: get rid of stray whitespace.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.54 2011/01/03 13:55:26 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 3 2011 $
+d37 5
+d105 1
+d116 3
+@
+
+
+1.54
+log
+@Tiny edit required after MDOC_HALT change.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.53 2011/01/03 11:27:32 kristaps Exp $
+d37 1
+a37 1
+.Fo mdoc_addspan 
+@
+
+
+1.53
+log
+@Clarified the role of MDOC_HALT in libmdoc functions by having accessor
+functions assert() if they're called after MDOC_HALT is set.
+
+This makes more sense than returning 0 because this return value is used
+for parse errors, not programme-flow errors, and it's inconsistent to
+use the same value for both.  Plus, prior to this, I'd return 0 without
+printing an error message, which would cause failure to go unreported to
+the operator.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.52 2011/01/01 12:18:37 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 1 2011 $
+a139 5
+Note that if
+.Fn mdoc_endparse
+is called subsequent to
+.Fn mdoc_node ,
+the resulting tree is incomplete.
+@
+
+
+1.52
+log
+@Add table processing structures to -mdoc.  This consists of an
+external-facing function mdoc_addspan(), then various bits to prohibit
+printing and scanning (this requires some if's to be converted into
+switch's).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.51 2010/12/17 11:41:45 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 17 2010 $
+d99 10
+d119 2
+a120 2
+Returns NULL on failure.
+If non-NULL, the pointer must be freed with
+a147 5
+Note that if
+.Fn mdoc_parseln
+or
+.Fn mdoc_endparse
+return 0, the tree will be incomplete.
+a149 5
+If this information has not yet been supplied or
+.Fn mdoc_parseln
+or
+.Fn mdoc_endparse
+return 0, the data will be incomplete.
+@
+
+
+1.51
+log
+@Correctly labelled command-line as `Dl'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.50 2010/10/10 09:47:05 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 10 2010 $
+d36 5
+d100 3
+@
+
+
+1.50
+log
+@Cleaned up library manuals: removed old escapes, added EXAMPLES, stripped
+out some superfluous stuff.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.49 2010/08/20 01:02:07 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 20 2010 $
+d333 1
+a333 1
+.D1 % cc main.c libmdoc.a libmandoc.a
+@
+
+
+1.49
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.48 2010/07/07 15:04:54 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 7 2010 $
+a81 13
+See the
+.Sx EXAMPLES
+section for a simple example.
+.Pp
+This section further defines the
+.Sx Types ,
+.Sx Functions
+and
+.Sx Variables
+available to programmers.
+Following that, the
+.Sx Abstract Syntax Tree
+section documents the output tree.
+a82 5
+Both functions (see
+.Sx Functions )
+and variables (see
+.Sx Variables )
+may use the following types:
+d85 1
+a85 2
+An opaque type defined in
+.Pa mdoc.c .
+a88 2
+Defined in
+.Pa mdoc.h .
+a91 3
+.It Vt mandocmsg
+A function callback type defined in
+.Pa mandoc.h .
+a93 1
+Function descriptions follow:
+a143 1
+The following variables are also defined:
+d331 5
+a335 1
+Please see
+d337 1
+a337 1
+in the source archive for a rigorous reference.
+@
+
+
+1.48
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.47 2010/07/04 22:04:04 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 4 2010 $
+a39 1
+.Fa "int pflags"
+a125 4
+The
+.Fa pflags
+arguments are defined in
+.Pa mdoc.h .
+d336 1
+a336 1
+mdoc = mdoc_alloc(&regs, NULL, 0, NULL);
+@
+
+
+1.47
+log
+@Assert my copyright, making it explicit that i'm granting the same license
+on those parts of the code and text that i have written as Kristaps is.
+"fine with me" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.46 2010/07/01 09:33:39 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 1 2010 $
+a32 1
+.In regs.h
+@
+
+
+1.46
+log
+@"Tweak previous": "badly nested" becomes badly-nested, some typos
+corrected, and a bit of clarity for my own sake.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.45 2010/06/29 19:20:38 schwarze Exp $
+d3 2
+a4 1
+.\" Copyright (c) 2009-2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+d18 1
+a18 1
+.Dd $Mdocdate: June 29 2010 $
+@
+
+
+1.45
+log
+@Support for badly nested blocks, written around the time of
+the Rostock mandoc hackathon and tested and polished since,
+supporting constructs like:
+
+.Ao Bo    Ac    Bc        (exp breaking exp)
+.Aq Bo    eol   Bc        (imp breaking exp)
+.Ao Bq    Ac    eol       (exp breaking imp)
+.Ao Bo So Bc    Ac  Sc    (double break, inner before outer)
+.Ao Bo So Ac    Bc  Sc    (double break, outer before inner)
+.Ao Bo    Ac So Bc  Sc    (broken breaker)
+.Ao Bo So Bc Do Ac  Sc Dc (broken double breaker)
+
+There are still two known issues which are tricky:
+
+1) Breaking two identical explicit blocks (Ao Bo Bo Ac or Aq Bo Bo eol)
+fails outright, triggering a bogus syntax error.
+2) Breaking a block by two identical explicit blocks (Ao Ao Bo Ac Ac Bc
+or Ao Ao Bq Ac Ac eol) still has a minor rendering error left:
+"<ao1 <ao2 [bo ac2> ac1> bc]>" should not have the final ">".
+
+We can fix these later in the tree, let's not grow this diff too large.
+
+"get it in" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.44 2010/06/27 16:18:13 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 27 2010 $
+d260 4
+a263 4
+.Ss Badly nested blocks
+A special kind of node is available to end the formatting
+associated with a given block before the physical end of that block.
+Such an ENDBODY node has a non-null
+d300 7
+a306 3
+Here, the formatting of the Ao block extends from TEXT ao to TEXT ac,
+while the formatting of the Bo block extends from TEXT bo to TEXT bc,
+rendering like this in
+d309 1
+d311 2
+a312 1
+Support for badly nested blocks is only provided for backward
+d316 10
+a325 9
+Using them in new code is stronly discouraged:
+Some frontends, in particular
+.Fl T Ns Cm html ,
+are unable to render them in any meaningful way,
+many other
+.Xr mdoc 7
+implementations do not support them, and even for those that do,
+the behaviour is not well-defined, in particular when using multiple
+levels of badly nested blocks.
+@
+
+
+1.44
+log
+@Following clue-stick applied by schwarze@@, back out const-ness of regset
+passed in to libmdoc and libman.
+
+Fix mdoc.3 and man.3 EXAMPLE sections to include regset.
+
+Add MDOC_SYNPRETTY flag cueing front-end to nicely format certain values
+as if SEC_SYNOPSIS were the current section.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.43 2010/06/27 15:52:41 kristaps Exp $
+d220 1
+d224 4
+a227 1
+fields) and some type-specific data.
+d242 1
+a242 1
+\(<- mnode+
+d244 1
+a244 1
+\(<- mnode+
+d246 1
+a246 1
+\(<- mnode+
+d260 59
+@
+
+
+1.43
+log
+@Downstream maintainers: this removes UGLY!  I don't want diverging
+functionality and UGLY works quite well thanks to schwarze@@'s careful
+attention.
+
+This also backs out function-prototype changes for struct regset,
+instead stuffing a pointer to the regset directly into struct
+mdoc/man/roff.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.42 2010/06/26 15:36:37 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 26 2010 $
+d38 1
+a38 1
+.Fa "const struct regset *regs"
+d262 1
+d269 1
+d271 1
+a271 1
+mdoc = mdoc_alloc(NULL, 0, NULL);
+@
+
+
+1.42
+log
+@Churn-ish check-in getting mdoc_parseln() and man_parseln() to accept a
+const struct regset pointer.  No functionality.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.41 2010/05/30 22:56:02 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 30 2010 $
+d37 6
+a42 1
+.Fn mdoc_alloc "void *data" "int pflags" "mandocmsg msgs"
+a53 1
+.Fa "const struct regset *regs"
+@
+
+
+1.41
+log
+@Migrate `Bl -column' phrases to be MDOC_BODY instead of MDOC_HEAD.  This
+will make it easy for re-entrant parsing of `Ta' macros to fit in with
+standard closure rules.
+
+Added some more regressions for `Bl -column'.  Note that one should
+fail, as documented in the TODO file.
+
+Recorded change of AST BNF in mdoc.3.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.40 2010/05/25 22:16:59 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 25 2010 $
+d32 1
+d47 6
+a52 1
+.Fn mdoc_parseln "struct mdoc *mdoc" "int line" "char *buf"
+@
+
+
+1.40
+log
+@Added roff.3, which documents the roff parser interface.
+
+Small fix in mdoc.3 and man.3 pointing to old mdoc_cb and man_cb.
+
+Fix in Makefile adding mandoc.h to HEADS.
+
+Collapsed all HTML files into HTMLS variable (too confusing otherwise).
+
+Removed "htmls" command from Makefile (only I used it and it's just
+taking up space).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.39 2010/05/25 21:46:48 kristaps Exp $
+d224 1
+a224 3
+\(<- (HEAD [TEXT])+ [BODY [TEXT]] [TAIL [TEXT]]
+.It BLOCK
+\(<- BODY [TEXT] [TAIL [TEXT]]
+d238 1
+a238 2
+the BLOCK production.
+These refer to punctuation marks.
+d243 3
+@
+
+
+1.39
+log
+@Clean-up: added `Nm mdoc' to mdoc.3.
+
+Clean-up: new-sentence, new-line for man.3.
+
+Clean-up: alpha-ordered man.3 `Nm' sections and prototypes.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.38 2010/05/25 21:38:05 kristaps Exp $
+d115 2
+a116 3
+pointer is passed to callbacks in
+.Fa cb ,
+which are documented further in the header file.
+@
+
+
+1.38
+log
+@Clean-up: new-sentence, new-line for mdoc.3.
+
+Clean-up: removed CAVEATS section (this should be either in the TODO
+file or in mdoc.7 documenting mandoc incompatibilities).
+
+Clean-up: alpha-ordered `Nm' and section headers.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.37 2010/02/17 19:22:01 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: February 17 2010 $
+d21 1
+@
+
+
+1.37
+log
+@Removed offsets from most parts (no reason for indentation).
+Using POSIX2008 idioms for examples (thanks Joerg Sonnenberger).
+Removed references to fgetln().
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.36 2010/01/07 19:10:09 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 7 2010 $
+a19 1
+.\" SECTION
+a21 1
+.Nm mdoc_parseln ,
+d23 2
+d26 1
+a26 2
+.Nm mdoc_meta ,
+.Nm mdoc_free ,
+a28 1
+.\" SECTION
+d30 1
+d35 1
+a35 1
+.Fn mdoc_alloc "void *data" "int pflags" "const struct mdoc_cb *cb"
+d37 1
+a37 1
+.Fn mdoc_reset "struct mdoc *mdoc"
+d40 4
+a45 4
+.Ft "const struct mdoc_node *"
+.Fn mdoc_node "const struct mdoc *mdoc"
+.Ft "const struct mdoc_meta *"
+.Fn mdoc_meta "const struct mdoc *mdoc"
+d47 1
+a47 2
+.Fn mdoc_endparse "struct mdoc *mdoc"
+.\" SECTION
+d53 2
+a54 4
+input (and
+.Em only
+mdoc) into an abstract syntax tree (AST).
+.\" PARAGRAPH
+d71 2
+a72 1
+sequence.  See the
+d74 1
+a74 2
+section for a full example.
+.\" PARAGRAPH
+d81 2
+a82 1
+available to programmers.  Following that, the
+a84 1
+.\" SUBSECTION
+a91 1
+.\" LIST-ITEM
+a95 5
+.\" LIST-ITEM
+.It Vt struct mdoc_cb
+A set of message callbacks defined in
+.Pa mdoc.h .
+.\" LIST-ITEM
+d97 2
+a98 1
+A parsed node.  Defined in
+d103 3
+a106 1
+.\" SUBSECTION
+a109 1
+.\" LIST-ITEM
+d111 2
+a112 1
+Allocates a parsing structure.  The
+d121 2
+a122 1
+Returns NULL on failure.  If non-NULL, the pointer must be freed with
+a123 1
+.\" LIST-ITEM
+d125 2
+a126 1
+Reset the parser for another parse routine.  After its use,
+d128 2
+a129 3
+behaves as if invoked for the first time.  If it returns 0, memory could
+not be allocated.
+.\" LIST-ITEM
+d131 2
+a132 3
+Free all resources of a parser.  The pointer is no longer valid after
+invocation.
+.\" LIST-ITEM
+d134 4
+a137 2
+Parse a nil-terminated line of input.  This line should not contain the
+trailing newline.  Returns 0 on failure, 1 on success.  The input buffer
+a139 1
+.\" LIST-ITEM
+d141 2
+a142 1
+Signals that the parse is complete.  Note that if
+d146 2
+a147 2
+the resulting tree is incomplete.  Returns 0 on failure, 1 on success.
+.\" LIST-ITEM
+d149 2
+a150 1
+Returns the first node of the parse.  Note that if
+d156 2
+a157 2
+Returns the document's parsed meta-data.  If this information has not
+yet been supplied or
+a162 1
+.\" SUBSECTION
+a165 1
+.\" LIST-ITEM
+a167 1
+.\" LIST-ITEM
+a170 1
+.\" SUBSECTION
+d175 2
+a176 1
+regular form.  It may be reviewed at any time with
+a184 1
+.\" PARAGRAPH
+a194 1
+.\" PARAGRAPH
+d201 2
+a202 1
+field.  Each node also provides its parse point (the
+a213 1
+.\" PARAGRAPH
+a218 1
+.\" LIST-ITEM
+d236 1
+a236 1
+\(<- [[:alpha:]]*
+a237 1
+.\" PARAGRAPH
+d240 4
+a243 3
+the BLOCK production.  These refer to punctuation marks.  Furthermore,
+although a TEXT node will generally have a non-zero-length string, in
+the specific case of
+a245 1
+.\" SECTION
+d279 4
+a282 1
+.\" SECTION
+a285 1
+.\" SECTION
+d289 1
+a289 1
+utility was written by
+a290 36
+.\" SECTION
+.Sh CAVEATS
+.Bl -dash -compact
+.\" LIST-ITEM
+.It
+The
+.Sq \&.Xc
+and
+.Sq \&.Xo
+macros aren't handled when used to span lines for the
+.Sq \&.It
+macro.
+.\" LIST-ITEM
+.It
+The
+.Sq \&.Bsx
+macro family doesn't yet understand version arguments.
+.\" LIST-ITEM
+.It
+If not given a value, the \-offset argument to
+.Sq \&.Bd
+and
+.Sq \&.Bl
+should be the width of
+.Qq <string> ;
+instead, a value of
+.Li 10n
+is provided.
+.\" LIST-ITEM
+.It
+Columns widths in
+.Sq \&.Bl \-column
+should default to width
+.Qq <stringx>
+if not included.
+.El
+@
+
+
+1.36
+log
+@Fix white-space issues found by mandoc's better white-space finder.
+Fixed bogus `\\' escapes in some manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.35 2009/10/03 16:36:06 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+d17 1
+a17 1
+.Dd $Mdocdate$
+d95 1
+a95 1
+.Bl -ohang -offset "XXXX"
+d116 1
+a116 1
+.Bl -ohang -offset "XXXX"
+d171 1
+a171 1
+.Bl -ohang -offset "XXXX"
+d228 1
+a228 1
+.Bl -tag -width "ELEMENTXX" -compact -offset "XXXX"
+d262 2
+a263 5
+Note that, if the last line of the file isn't newline-terminated, this
+will truncate the file's last character (see
+.Xr fgetln 3 ) .
+Further, this example does not error-check nor free memory upon failure.
+.Bd -literal -offset "XXXX"
+d272 2
+d275 6
+a280 5
+while ((buf = fgetln(fp, &len))) {
+	buf[len - 1] = '\e0';
+	if ( ! mdoc_parseln(mdoc, line, buf))
+		errx(1, "mdoc_parseln");
+	line++;
+d284 1
+a284 1
+	errx(1, "mdoc_endparse");
+d286 1
+a286 1
+	errx(1, "mdoc_node");
+d300 1
+a300 1
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+@
+
+
+1.35
+log
+@Fixed mandoc.1 examples (new -Thtml options).
+Fixed manuals to use `In', not `Fd'.
+Moved buf* functions into html.c.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.34 2009/09/16 09:41:24 kristaps Exp $
+d277 1
+a277 1
+	buf[len - 1] = '\\0';
+@
+
+
+1.34
+log
+@Made tree/term/out() functions return void.
+Put err() functions back into front-ends (no use making it needlessly complex).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.33 2009/07/20 13:45:11 kristaps Exp $
+d32 1
+a32 1
+.Fd #include "mdoc.h"
+@
+
+
+1.33
+log
+@Removed trailing whitespace in manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.32 2009/07/19 08:34:59 kristaps Exp $
+d32 1
+a32 1
+.Fd #include <mdoc.h>
+@
+
+
+1.32
+log
+@Removed some finished FIXMEs in mdoc.3.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.31 2009/07/05 19:30:49 kristaps Exp $
+d16 1
+a16 1
+.\" 
+d53 1
+a53 1
+library parses lines of 
+d62 1
+a62 1
+parse each line in a document with 
+d67 1
+a67 1
+.Fn mdoc_node 
+d80 1
+a80 1
+This section further defines the 
+d82 1
+a82 1
+.Sx Functions 
+d86 1
+a86 1
+.Sx Abstract Syntax Tree 
+d109 1
+a109 1
+See 
+d122 2
+a123 2
+.Fa cb , 
+which are documented further in the header file.  
+d132 1
+a132 1
+Reset the parser for another parse routine.  After its use, 
+d143 1
+a143 1
+trailing newline.  Returns 0 on failure, 1 on success.  The input buffer 
+d148 1
+a148 1
+Signals that the parse is complete.  Note that if 
+d155 1
+a155 1
+Returns the first node of the parse.  Note that if 
+d162 1
+a162 1
+yet been supplied or 
+d181 1
+a181 1
+The 
+d189 1
+a189 1
+.Fn mdoc_endparse 
+d192 1
+a192 1
+fail, it may be incomplete.  
+d198 1
+a198 1
+and derives its terminology accordingly.  
+d202 1
+a202 1
+are described simply as 
+d206 1
+a206 1
+The AST is composed of 
+d219 1
+a219 1
+.Va next 
+d221 1
+a221 1
+.Va prev 
+d254 1
+a254 1
+the specific case of 
+d260 1
+a260 1
+on the finished parse tree with 
+d263 1
+a263 1
+will truncate the file's last character (see 
+d299 1
+a299 1
+utility was written by 
+d306 1
+a306 1
+The 
+d312 1
+a312 1
+macro. 
+d315 1
+a315 1
+The 
+d324 1
+a324 1
+should be the width of 
+d326 1
+a326 1
+instead, a value of 
+@
+
+
+1.31
+log
+@Fixed man.3 mdoc.3 const-nesses.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.30 2009/06/11 07:26:35 kristaps Exp $
+a335 8
+.\" LIST-ITEM
+.It
+List-width suffix
+.Qq m
+isn't handled.
+.\" LIST-ITEM
+.It
+Contents of the SYNOPSIS section aren't checked.
+@
+
+
+1.30
+log
+@Fixed email address in manual AUTHOR reference.
+Set max right margin to 80 columns (schwarze@@openbsd.org).
+Fixed centre-field heading position (schwarze@@openbsd.org).
+Also fixed -Tman centre-field.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.29 2009/06/10 20:18:43 kristaps Exp $
+d44 1
+a44 1
+.Fn mdoc_node "struct mdoc *mdoc"
+d46 1
+a46 1
+.Fn mdoc_meta "struct mdoc *mdoc"
+d268 1
+a268 1
+struct mdoc_node *node;
+@
+
+
+1.29
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.28 2009/04/12 19:45:26 kristaps Exp $
+d300 1
+a300 1
+.An Kristaps Dzonsons Aq kristaps@@openbsd.org .
+@
+
+
+1.28
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.27 2009/04/12 19:19:57 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.27
+log
+@Manual .Dt fields CAPITALISED.
+Indent set to 5 chars (nroff compat).
+Half-indent set to 3 chars (nroff compat).
+Default behaviour is loose-y (ignore macro/char/escape).
+Added -fstrict.
+Added unknown-character ignoring.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.26 2009/03/31 13:50:19 kristaps Exp $
+d6 2
+a7 3
+.\" purpose with or without fee is hereby granted, provided that the
+.\" above copyright notice and this permission notice appear in all
+.\" copies.
+d9 7
+a15 8
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+.\" WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+.\" WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+.\" AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+.\" DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+.\" PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+.\" TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+.\" PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.26
+log
+@General clean-ups.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.25 2009/03/27 14:56:15 kristaps Exp $
+d20 1
+a20 1
+.Dt mdoc 3
+@
+
+
+1.25
+log
+@Added some new manuals (mdoc.3 mandoc_char.7).
+Support for .br in libman.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.24 2009/03/26 16:23:22 kristaps Exp $
+d39 1
+a39 1
+.Ft void
+d136 2
+a137 1
+behaves as if invoked for the first time.
+@
+
+
+1.24
+log
+@All macro-invocations, for consistency, begin with `.' in documentation.
+Fixed \\ -> \e in manual documentation.
+All preliminary -man macros in place.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.23 2009/03/23 09:42:43 kristaps Exp $
+d59 1
+a59 8
+mdoc) into an abstract syntax tree that generalises the semantic
+annotation of its input.  Common front-ends for 
+.Nm
+are
+.Xr mdocterm 1 ,
+.Xr mdoclint 1 
+and
+.Xr mdoctree 1 .
+d223 1
+a223 3
+fields) and type-specific data (the
+.Va data
+field).
+d275 1
+a275 1
+mdoc = mdoc_alloc(NULL, NULL);
+@
+
+
+1.23
+log
+@More manual documentation fixed/improved.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.22 2009/03/22 08:52:27 kristaps Exp $
+d317 1
+a317 1
+.Sq \&Xc
+d319 1
+a319 1
+.Sq \&Xo
+d321 1
+a321 1
+.Sq \&It
+d326 1
+a326 1
+.Sq \&Bsx
+d331 1
+a331 1
+.Sq \&Bd
+d333 1
+a333 1
+.Sq \&Bl
+d342 1
+a342 1
+.Sq \&Bl \-column
+@
+
+
+1.22
+log
+@More documentation clarification.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.21 2009/03/21 21:09:00 kristaps Exp $
+d327 1
+a327 1
+macro doesn't yet understand version arguments.
+d334 5
+a338 2
+should by the width of 
+.Qq <string> .
+d342 1
+a342 1
+.Sq \&Bl -column
+@
+
+
+1.21
+log
+@Fixes to dynamic addition of Bl width.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.20 2009/03/20 15:14:01 kristaps Exp $
+d348 3
+@
+
+
+1.20
+log
+@Support for `Bd' of all types (see mdoc.7 for newline/tab rules).
+Renamed term.c and terminal.c functions to be term_.
+Some bugfixes to lists.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.19 2009/03/16 23:37:28 kristaps Exp $
+d328 20
+@
+
+
+1.19
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.18 2009/03/16 22:19:19 kristaps Exp $
+d29 2
+a30 1
+.Nm mdoc_free
+d38 3
+a40 1
+.Fn mdoc_alloc "void *data" "const struct mdoc_cb *cb"
+d81 4
+a84 1
+See the
+d132 6
+a137 2
+which are documented further in the header file.  Returns NULL on
+failure.  If non-NULL, the pointer must be freed with
+d140 5
+d303 1
+a303 3
+.Xr mdocterm 1 ,
+.Xr mdoclint 1 ,
+.Xr mdoctree 1 ,
+@
+
+
+1.18
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.17 2009/03/14 05:21:58 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+d297 1
+a297 1
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+@
+
+
+1.17
+log
+@mdoc.3 refers to local mdoc.7.
+mdoc.7 includes its compatibility with system-dependent roff installations.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.16 2009/03/12 23:05:21 kristaps Exp $
+d185 4
+a188 1
+fail, it may be incomplete.  This AST is governed by the ontological
+@
+
+
+1.16
+log
+@Made syste-name macros callable (At, Bsx, etc.).
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.15 2009/03/12 16:30:50 kristaps Exp $
+d52 6
+a57 5
+library parses lines of mdoc input into an abstract syntax tree.  
+.Dq mdoc ,
+which is used to format BSD manual pages, is a macro package of the
+.Dq roff
+language.  The
+d59 3
+a61 2
+library implements only those macros documented in the
+.Xr mdoc 7
+d63 1
+a63 10
+.Xr mdoc.samples 7
+manuals.  Documents with 
+.Xr refer 1 ,
+.Xr eqn 1
+and other pre-processor sections aren't accomodated.
+.\" PARAGRAPH
+.Pp
+.Nm
+is
+.Ud
+d88 3
+a90 5
+available to programmers.  Following that,
+.Sx Character Encoding
+describes input format.  Lastly, 
+.Sx Abstract Syntax Tree ,
+documents the output tree.
+a172 57
+.Ss Character Encoding
+The
+.Xr mdoc 3
+library accepts only printable ASCII characters as defined by
+.Xr isprint 3 .
+Non-ASCII character sequences are delimited in various ways.  All are
+preceeded by an escape character
+.Sq \\
+and followed by either an open-parenthesis 
+.Sq \&(
+for two-character sequences; an open-bracket
+.Sq \&[
+for n-character sequences (terminated at a close-bracket
+.Sq \&] ) ;
+an asterisk and open-parenthesis
+.Sq \&*(
+for two-character sequences;
+an asterisk and non-open-parenthesis 
+.Sq \&*
+for single-character sequences; or one of a small set of standalone
+single characters for other escapes.
+.\" PARAGRAPH
+.Pp
+Examples:
+.Pp
+.Bl -tag -width "XXXXXXXX" -offset "XXXX" -compact
+.\" LIST-ITEM
+.It \\*(<=
+prints 
+.Dq \*(<=
+.Pq greater-equal
+.\" LIST-ITEM
+.It \\(<-
+prints
+.Dq \(<-
+.Pq left-arrow
+.\" LIST-ITEM
+.It \\[<-]
+also prints
+.Dq \(<-
+.Pq left-arrow
+.\" LIST-ITEM
+.It \\*(Ba
+prints
+.Dq \*(Ba
+.Pq bar
+.\" LIST-ITEM
+.It \\*q
+prints
+.Dq \*q
+.Pq double-quote
+.El
+.\" PARAGRAPH
+.Pp
+All escaped sequences are syntax-checked, but it's up to the front-end
+system to correctly render them to the output device.
+.\" SUBSECTION
+d176 2
+a177 2
+functions produce an abstract syntax tree (AST) describing the input
+lines in a regular form.  It may be reviewed at any time with
+d185 9
+a193 1
+fail, it may be incomplete.
+a248 21
+.\" PARAGRAPH
+.Pp
+The rule-of-thumb for mapping node types to macros follows. In-line
+elements, such as 
+.Sq \&.Em foo ,
+are classified as ELEMENT nodes, which can only contain text.
+Multi-line elements, such as
+.Sq \&.Sh ,
+are BLOCK elements, where the HEAD constitutes line contents and the
+BODY constitutes subsequent lines.  In-line elements with matching
+pairs, such as
+.Sq \&.So
+and
+.Sq \&.Sc ,
+are BLOCK elements with no HEAD tag.  The only exception to this is
+.Sq \&.Eo 
+and
+.Sq \&.Ec ,
+which has a HEAD and TAIL node corresponding to the enclosure string.
+TEXT nodes, obviously, constitute text, and the ROOT node is the
+document's root.
+d284 4
+a287 4
+.Sh COMPATIBILITY
+In general, only those macros specified by
+.Xr mdoc.samples 7
+and
+a288 56
+for
+.Ox
+and
+.Nx
+are supported; support for other 
+.Bx
+systems is in progress.
+.Bl -bullet
+.\" LIST-ITEM
+.It
+.Sq \&Cd
+isn't labelled as callable but is.
+.\" LIST-ITEM
+.It
+NetBSD
+.Sq \&It \-nested
+is assumed for all lists: any list may be nested and
+.Sq \-enum
+lists will restart the sequence only for the sub-list.
+.\" LIST-ITEM
+.It
+Newer NetBSD-style
+.Sq \&It \-column
+syntax, where column widths may be preceeded by other arguments (instead
+of proceeded), is not supported.
+.\" LIST-ITEM
+.It
+The 
+.Sq \&At
+macro only accepts a single parameter.
+.\" LIST-ITEM
+.It
+Some manuals use
+.Sq \&Li
+incorrectly by following it with a delimeter (see
+.Xr mdoc.samples 7 )
+and expecting the delimiter to render.  This is not supported.
+.\" LIST-ITEM
+.It
+The system-name macros (
+.Ns Sq \&At ,
+.Sq \&Bsx ,
+.Sq \&Bx ,
+.Sq \&Fx ,
+.Sq \&Nx ,
+.Sq \&Ox ,
+and
+.Sq \&Ux )
+are callable.
+.El
+.\" SECTION
+.Sh SEE ALSO
+.Xr mdoc 7 ,
+.Xr mdoc.samples 7 ,
+.Xr groff 1 ,
+.Xr mdocml 1
+d297 1
+a297 1
+.Bl -bullet
+d306 1
+a306 2
+macro.  Such usage is specifically discouraged in
+.Xr mdoc.samples 7 .
+d311 1
+a311 2
+macro doesn't understand yet the arguments as dictated for 
+.Nx .
+@
+
+
+1.15
+log
+@Added -nested (doesn't do anything).
+Added .%C.
+.Cd is now callable.
+Added .Rv -std.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.14 2009/03/12 15:55:11 kristaps Exp $
+d407 10
+a416 6
+The 
+.Sq Bx
+family of macros (
+.Sq Ux ,
+.Sq Nx
+and so on) are not callable as they are in NetBSD.
+d443 6
+@
+
+
+1.14
+log
+@NetBSD '.[[:whitespace:]]*' properly handled.
+mdoc.3 indicates compatibilities and bugs.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.13 2009/02/27 09:14:02 kristaps Exp $
+d378 4
+d398 15
+@
+
+
+1.13
+log
+@Character-encoding stuff documented, expanded.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.12 2009/02/27 08:20:15 kristaps Exp $
+d363 33
+d408 5
+a412 11
+.Sh BUGS
+Bugs, un-implemented macros and incompabilities are documented in this
+section.  The baseline for determining whether macro parsing is 
+.Qq incompatible
+is the default
+.Xr groff 1
+system bundled with 
+.Ox .
+.\" PARAGRAPH
+.Pp
+Un-implemented: the 
+d420 1
+a420 33
+.\" PARAGRAPH
+.Pp
+Bugs: when 
+.Sq \&It \-column
+is invoked, whitespace is not stripped around
+.Sq \&Ta
+or tab-character separators.
+.\" PARAGRAPH
+.Pp
+Bugs: elements within columns for
+.Sq \&It \-column
+are not yet supported.
+.\" PARAGRAPH
+.Pp
+Incompatible: the 
+.Sq \&At
+macro only accepts a single parameter.  Furthermore, several macros 
+.Pf ( Sq \&Pp ,
+.Sq \&It ,
+and possibly others) accept multiple arguments with a warning.
+.\" PARAGRAPH
+.Pp
+Incompatible: only those macros specified by
+.Xr mdoc.samples 7
+and
+.Xr mdoc 7
+for
+.Ox
+are supported; support for
+.Nx
+and other 
+.Bx
+systems is in progress.
+@
+
+
+1.12
+log
+@More character-encoding.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.11 2009/02/25 17:02:47 kristaps Exp $
+d203 1
+d234 4
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.10 2009/02/24 13:46:54 kristaps Exp $
+d187 2
+a188 1
+Non-ASCII character sequences are escaped with an escape character 
+d196 37
+a232 1
+or one of a small set of single characters for other escapes.
+@
+
+
+1.10
+log
+@Character-encoding checked for all text (arguments/values).
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.9 2009/02/23 15:19:47 kristaps Exp $
+d62 4
+a65 1
+manuals.
+@
+
+
+1.9
+log
+@Adding revamped webpage.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.8 2009/02/23 12:45:19 kristaps Exp $
+d92 3
+a94 1
+available to programmers.  The last sub-section,
+d179 15
+@
+
+
+1.8
+log
+@More in-file documentation and Linux-isation.
+Moved mdoc_macros table definition into macro.c, where it belongs.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.7 2009/02/23 09:46:59 kristaps Exp $
+d102 1
+a102 1
+.Bl -ohang
+d123 1
+a123 1
+.Bl -ohang 
+d168 1
+a168 1
+.Bl -ohang
+d216 1
+a216 1
+.Bl -tag -width "ELEMENTXX" -compact
+d275 1
+a275 1
+.Bd -literal
+d321 1
+d331 1
+d338 6
+d351 1
+@
+
+
+1.7
+log
+@More documentation in place.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.3,v 1.6 2009/02/23 09:33:34 kristaps Exp $
+d241 3
+a243 3
+although a TEXT node will generally have a non-zero-length string, it
+certain cases, such as 
+.Dq \&.Bd \-literal ,
+d247 1
+a247 1
+The rule-of-thumb for mapping node types to macros follows: in-line
+d249 1
+a249 1
+.Dq \&.Em foo ,
+d251 2
+a252 2
+Multi-line elements such as
+.Dq \&.Sh
+d256 1
+a256 1
+.Dq \&.So
+d258 1
+a258 1
+.Dq \&.Sc ,
+d260 1
+a260 1
+.Dq \&.Eo 
+d262 1
+a262 1
+.Dq \&.Ec ,
+d264 2
+a265 2
+TEXT nodes, obviously, constitute text; the ROOT node is the document's
+root.
+@
+
+
+1.6
+log
+@Considerable mdoc.3 documentation.
+Added a few more escapes and macros.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.2 2009/02/22 11:23:19 kristaps Exp $
+d53 2
+a54 2
+.Dq mdoc
+is a macro package of the
+d56 1
+a56 1
+language, which is used to format BSD manual pages.  The 
+@
+
+
+1.5
+log
+@More documentation/installation fixes.
+@
+text
+@d1 17
+d22 1
+a22 1
+.\"
+d31 1
+a31 1
+.\"
+d48 1
+a48 1
+.\"
+d52 18
+a69 1
+library parses lines of mdoc-macro text into an abstract syntax tree.
+d85 1
+d87 35
+a121 1
+.\" Function descriptions.
+d123 2
+a124 1
+.Bl -ohang -offset indent
+d133 1
+d137 1
+d143 1
+d150 1
+d165 2
+a166 2
+.Pp
+.\" Variable descriptions.
+d168 2
+a169 1
+.Bl -ohang -offset indent
+d172 1
+d176 62
+d239 28
+a266 4
+.Nm
+is
+.Ud
+.\" 
+d300 1
+a300 1
+.\"
+d306 1
+a306 2
+.\"
+.\"
+d312 1
+a312 2
+.\"
+.\"
+d352 3
+a354 1
+and other BSD systems is in progress.
+@
+
+
+1.4
+log
+@More correct validation.
+Elision of prologue macros from main tree.
+@
+text
+@d183 10
+@
+
+
+1.3
+log
+@Documentation, more validations, cleaned up actions, added Nm action.
+@
+text
+@d10 2
+a11 1
+.Nm mdoc_result ,
+d16 3
+a18 1
+.In mdoc.h
+d26 3
+a28 1
+.Fn mdoc_result "struct mdoc *mdoc"
+d43 3
+a45 1
+.Fn mdoc_result ,
+d52 1
+d75 1
+a75 1
+.Fn mdoc_result ,
+d77 2
+a78 2
+.It Fn mdoc_result
+Returns the result of the parse or NULL on failure.  Note that if 
+d83 16
+d132 2
+a133 2
+if (NULL == (node = mdoc_result(mdoc)))
+	errx(1, "mdoc_result");
+d154 4
+a157 2
+Both bugs and incompabilities are documented in this section.  An
+incompatible macro or behaviour is relative to the default
+d162 1
+a162 1
+The 
+d171 1
+a171 1
+When 
+d177 1
+a177 1
+The 
+d179 4
+a182 1
+macro only accepts a single parameter.
+@
+
+
+1.2
+log
+@Initial separation of tree/mdocml.1.
+Finished mdoc.3.
+Broken build: mdocml.c.
+@
+text
+@d130 6
+d150 4
+@
+
+
+1.1
+log
+@Added more validation (parents/msecs).
+Initial function documentation for mdoc.3.
+@
+text
+@d12 1
+a12 1
+.Nd mdoc macro compiler
+d19 1
+a19 1
+.Fn mdoc_free "struct mdoc *"
+d21 1
+a21 1
+.Fn mdoc_parseln "struct mdoc *" "int" "char *buf"
+d23 1
+a23 1
+.Fn mdoc_result "struct mdoc *"
+d25 1
+a25 1
+.Fn mdoc_endparse "struct mdoc *"
+d44 100
+a143 13
+.\" The following requests should be uncommented and used where appropriate.
+.\" This next request is for sections 2, 3, and 9 function return values only.
+.\" .Sh RETURN VALUES
+.\" .Sh EXAMPLES
+.\" The next request is for sections 2, 3, and 9 error and signal handling only.
+.\" .Sh ERRORS
+.\" .Sh SEE ALSO
+.\" .Xr foobar 1
+.\" .Sh STANDARDS
+.\" .Sh HISTORY
+.\" .Sh AUTHORS
+.\" .Sh CAVEATS
+.\" .Sh BUGS
+@

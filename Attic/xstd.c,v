@@ -1,0 +1,509 @@
+head	1.14;
+access;
+symbols
+	VERSION_1_9_5:1.14
+	VERSION_1_8_5:1.14
+	VERSION_1_8_1:1.14
+	VERSION_1_7_16:1.14
+	VERSION_1_7_15:1.14
+	OPENBSD_CHECKIN:1.14
+	VERSION_1_7_5:1.13
+	VERSION_1_6_5:1.12
+	VERSION_1_6_2:1.12
+	VERSION_1_5_3:1.11
+	VERSION_1_5_1:1.9
+	VERSION_1_4_6:1.9
+	VERSION_1_4_5:1.9
+	VERSION_1_4_4:1.9
+	VERSION_1_4_2:1.9
+	VERSION_1_3_15:1.6
+	VERSION_1_3_13:1.6
+	VERSION_1_3_11:1.6
+	VERSION_1_3_10:1.6
+	VERSION_1_3_9:1.5
+	VERSION_1_3_8:1.5
+	VERSION_1_3_6:1.5
+	VERSION_1_3_5:1.5
+	VERSION_1_2_0:1.4
+	VERSION_1_1_0:1.2;
+locks; strict;
+comment	@ * @;
+
+
+1.14
+date	2009.03.31.13.50.19;	author kristaps;	state dead;
+branches;
+next	1.13;
+
+1.13
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.03.19.16.40.49;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.03.08.19.47.41;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.03.08.11.41.22;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.02.28.13.47.36;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.01.20.22.55.46;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.01.20.13.44.05;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.01.17.16.15.27;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.29.18.08.44;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.23.05.30.49;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.14
+log
+@General clean-ups.
+@
+text
+@@
+
+
+1.13
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@a0 97
+/* $Id: xstd.c,v 1.12 2009/03/19 16:40:49 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <assert.h>
+#include <err.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "libmdoc.h"
+
+#ifdef __linux__
+extern	size_t			strlcpy(char *, const char *, size_t);
+extern	size_t			strlcat(char *, const char *, size_t);
+#endif
+
+/*
+ * Contains wrappers for common functions to simplify their general
+ * usage throughout this codebase.
+ */
+
+int
+xstrcmp(const char *p1, const char *p2)
+{
+
+	return(0 == strcmp(p1, p2));
+}
+
+int
+xstrlcat(char *dst, const char *src, size_t sz)
+{
+
+	return(strlcat(dst, src, sz) < sz);
+}
+
+int
+xstrlcpy(char *dst, const char *src, size_t sz)
+{
+
+	return(strlcpy(dst, src, sz) < sz);
+}
+
+void *
+xrealloc(void *ptr, size_t sz)
+{
+	void		*p;
+
+	if (NULL == (p = realloc(ptr, sz)))
+		err(EXIT_FAILURE, "realloc");
+	return(p);
+}
+
+
+char *
+xstrdup(const char *p)
+{
+	char		*pp;
+
+	if (NULL == (pp = strdup(p)))
+		err(EXIT_FAILURE, "strdup");
+	return(pp);
+}
+
+int
+xstrlcpys(char *buf, const struct mdoc_node *n, size_t sz)
+{
+	char		 *p;
+
+	assert(sz > 0);
+	assert(buf);
+	*buf = 0;
+
+	for ( ; n; n = n->next) {
+		assert(MDOC_TEXT == n->type);
+		p = n->string;
+		if ( ! xstrlcat(buf, p, sz))
+			return(0);
+		if (n->next && ! xstrlcat(buf, " ", sz))
+			return(0);
+	}
+
+	return(1);
+}
+@
+
+
+1.12
+log
+@Some Linux-isms.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.11 2009/03/16 23:37:28 kristaps Exp $ */
+d24 1
+a24 1
+#include "private.h"
+a66 9
+void *
+xcalloc(size_t num, size_t sz)
+{
+	void		*p;
+
+	if (NULL == (p = calloc(num, sz)))
+		err(EXIT_FAILURE, "calloc");
+	return(p);
+}
+@
+
+
+1.11
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.10 2009/03/16 22:19:19 kristaps Exp $ */
+d26 5
+@
+
+
+1.10
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.9 2009/03/08 19:47:41 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.9
+log
+@Removed some unnecesary functions.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.8 2009/03/08 11:41:22 kristaps Exp $ */
+a30 6
+#ifdef __linux__
+extern	size_t		 strlcat(char *, const char *, size_t);
+extern	size_t		 strlcpy(char *, const char *, size_t);
+#endif
+
+
+a101 78
+
+#ifdef __linux__
+/*	$OpenBSD: strlcat.c,v 1.13 2005/08/08 08:05:37 espie Exp $	*/
+
+/*
+ * Copyright (c) 1998 Todd C. Miller <Todd.Miller@@courtesan.com>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+#include <sys/types.h>
+#include <string.h>
+
+
+size_t
+strlcat(char *dst, const char *src, size_t siz)
+{
+	char *d = dst;
+	const char *s = src;
+	size_t n = siz;
+	size_t dlen;
+
+	/* Find the end of dst and adjust bytes left but don't go past end */
+	while (n-- != 0 && *d != '\0')
+		d++;
+	dlen = d - dst;
+	n = siz - dlen;
+
+	if (n == 0)
+		return(dlen + strlen(s));
+	while (*s != '\0') {
+		if (n != 1) {
+			*d++ = *s;
+			n--;
+		}
+		s++;
+	}
+	*d = '\0';
+
+	return(dlen + (s - src));	/* count does not include NUL */
+}
+
+size_t
+strlcpy(char *dst, const char *src, size_t siz)
+{
+	char *d = dst;
+	const char *s = src;
+	size_t n = siz;
+
+	/* Copy as many bytes as will fit */
+	if (n != 0) {
+		while (--n != 0) {
+			if ((*d++ = *s++) == '\0')
+				break;
+		}
+	}
+
+	/* Not enough room in dst, add NUL and traverse rest of src */
+	if (n == 0) {
+		if (siz != 0)
+			*d = '\0';		/* NUL-terminate dst */
+		while (*s++)
+			;
+	}
+
+	return(s - src - 1);	/* count does not include NUL */
+}
+#endif
+@
+
+
+1.8
+log
+@BROKEN CHECK-IN.  Wide-ranging updates.
+Removed libmdoc internal argv limit (all dynamic).
+Removed "data" union in mdoc_node (to be selectively re-added).
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.7 2009/03/06 14:13:47 kristaps Exp $ */
+a37 7
+xstrncmp(const char *p1, const char *p2, size_t sz)
+{
+
+	return(0 == strncmp(p1, p2, sz));
+}
+
+int
+@
+
+
+1.7
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.6 2009/02/28 13:47:36 kristaps Exp $ */
+d106 1
+a106 1
+		p = n->data.text.string;
+@
+
+
+1.6
+log
+@Added support for dynamic -width detection for -tag lists.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.5 2009/01/20 22:55:46 kristaps Exp $ */
+d96 1
+a96 1
+xstrlcats(char *buf, const struct mdoc_node *n, size_t sz)
+@
+
+
+1.5
+log
+@Added regression tests (just for prologue, for now).
+Minor fixes in parsing prologue.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.4 2009/01/20 13:44:05 kristaps Exp $ */
+d66 10
+@
+
+
+1.4
+log
+@Re-merged old port-building routines.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.3 2009/01/17 16:15:27 kristaps Exp $ */
+d36 8
+@
+
+
+1.3
+log
+@Documentation, more validations, cleaned up actions, added Nm action.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.2 2008/12/29 18:08:44 kristaps Exp $ */
+d26 5
+a35 1
+
+a42 1
+
+a49 1
+
+a56 2
+
+
+a66 1
+
+a76 1
+
+a97 3
+
+
+
+a148 1
+
+@
+
+
+1.2
+log
+@More macros.
+@
+text
+@d1 1
+a1 1
+/* $Id: xstd.c,v 1.1 2008/12/23 05:30:49 kristaps Exp $ */
+d19 1
+d79 24
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: macro.c,v 1.5 2008/12/17 17:18:38 kristaps Exp $ */
+d25 5
+d77 79
+@

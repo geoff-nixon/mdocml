@@ -1,0 +1,1155 @@
+head	1.21;
+access;
+symbols
+	VERSION_1_9_24:1.20
+	VERSION_1_9_25:1.20
+	VERSION_1_9_23:1.19
+	VERSION_1_9_22:1.19
+	VERSION_1_9_21:1.19
+	VERSION_1_9_20:1.19
+	VERSION_1_9_19:1.19
+	VERSION_1_9_18:1.19
+	VERSION_1_9_17:1.19
+	VERSION_1_9_16:1.19
+	VERSION_1_9_15:1.19
+	VERSION_1_9_15-pre2:1.19
+	VERSION_1_9_15-pre1:1.19
+	VERSION_1_9_14:1.19
+	VERSION_1_9_13:1.19
+	VERSION_1_9_12:1.19
+	VERSION_1_9_11:1.19
+	VERSION_1_9_10:1.19
+	VERSION_1_9_9:1.19
+	VERSION_1_9_8:1.19
+	VERSION_1_9_7:1.19
+	VERSION_1_9_6:1.19
+	VERSION_1_9_5:1.19
+	VERSION_1_9_2:1.19
+	VERSION_1_9_1:1.19
+	VERSION_1_9_0:1.19
+	VERSION_1_8_5:1.19
+	VERSION_1_8_4:1.17
+	VERSION_1_8_3:1.17
+	VERSION_1_8_2:1.17
+	VERSION_1_8_1:1.16
+	VERSION_1_8_0:1.15
+	VERSION_1_7_24:1.15
+	VERSION_1_7_23:1.15
+	VERSION_1_7_22:1.15
+	VERSION_1_7_21:1.15
+	VERSION_1_7_20:1.14
+	VERSION_1_7_19:1.14
+	VERSION_1_7_17:1.14
+	VERSION_1_7_16:1.14
+	VERSION_1_7_15:1.14
+	VERSION_1_7_14:1.14
+	VERSION_1_7_13:1.13
+	VERSION_1_7_12:1.11
+	OPENBSD_CHECKIN:1.11
+	VERSION_1_7_10:1.11
+	VERSION_1_7_5:1.9;
+locks; strict;
+comment	@# @;
+
+
+1.21
+date	2010.06.03.15.39.56;	author kristaps;	state dead;
+branches;
+next	1.20;
+
+1.20
+date	2010.04.13.05.26.49;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.07.27.19.43.02;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.07.27.13.10.08;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.07.20.13.45.11;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.07.16.22.16.44;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.06.25.10.55.40;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.04.12.19.19.57;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.04.03.13.17.26;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.03.26.23.01.26;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.03.24.10.59.50;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.03.23.09.42.43;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.22.21.19.34;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.22.20.55.18;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.22.19.01.11;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.22.14.35.16;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.22.14.28.08;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.22.14.09.38;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.22.08.52.27;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.21
+log
+@Remove manuals.7 (see http://manpages.bsd.lv).
+@
+text
+@@
+
+
+1.20
+log
+@As per Jason McIntyre's heartful urgings, do away with '.' separators between logical sections.
+Change email address to BSD.lv one (this is not an academic project...)
+@
+text
+@a0 236
+.\"	$Id: manuals.7,v 1.19 2009/07/27 19:43:02 kristaps Exp $
+.\"
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: July 27 2009 $
+.Dt MANUALS 7
+.Os
+.\" SECTION
+.Sh NAME
+.Nm Writing UNIX Documentation
+.Nd a guide to writing UNIX manuals
+.\" SECTION
+.Sh DESCRIPTION
+.Em A utility without good documentation is of no utility at all .
+.\" PARAGRAPH
+.Pp
+A system component's documentation describes the utility of that
+component, whether it's a device driver, an executable or, most
+importantly, a game.
+.Pp
+This document serves as a tutorial to writing
+.Ux
+documentation
+.Pq Dq manuals .
+.\" SECTION
+.Sh ENVIRONMENT
+First, copy over the manual template from
+.Pa /usr/share/misc/mdoc.template
+into your source directory.
+.Pp
+.Dl % cp /usr/share/misc/mdoc.template \.
+.Pp
+.Em \&Do not
+start afresh or by copying another manual unless you know exactly what
+you're doing!  If the template doesn't exist, bug your administrator.
+.\" SUBSECTION
+.Ss Section Numbering
+Find an appropriate section for your manual.  There may exist multiple
+manual names per section, so be specific:
+.Pp
+.\" LIST
+.Bl -tag -width "XXXXXXXXXXXX" -offset indent -compact
+.It Em Section
+.Em Description
+.It 1
+operator utilities
+.It 2
+system calls
+.It 3, 3p, 3f
+programming libraries (C, Perl, Fortran)
+.It 5
+file and wire protocol formats
+.It 6
+games
+.It 7
+tutorials, documents and papers
+.It 8
+administrator utilities
+.It 9
+in-kernel routines
+.El
+.Pp
+If your manual falls into multiple categories, choose the most
+widely-used or, better, re-consider the topic of your manual to be more
+specific.  You can list all manuals per section by invoking
+.Xr apropos 1 ,
+then provide the
+.Fl s
+flag to
+.Xr man 1
+to see the specific section manual (section 1, in this example):
+.\" DISPLAY
+.Bd -literal -offset indent
+% apropos myname
+myname (1) - utility description
+myname (3) - library description
+% man \-s 1 myname
+.Ed
+.\" SUBSECTION
+.Ss Naming
+Name your component.  Be terse, erring on the side of clarity.  Look for
+other manuals by that same name before committing:
+.Pp
+.Dl % apropos myname
+.Pp
+Manual files are named
+.Pa myname.mysection ,
+such as
+.Pa manuals.7
+for this document.  Rename the template file:
+.Pp
+.Dl % mv mdoc.template myname.mysection
+.\" SUBSECTION
+.Ss Development Tools
+While writing, make sure that your manual is correctly structured:
+.Pp
+.Dl % mandoc \-Tlint \-Wall \-fstrict name.1
+.Pp
+The quick-fix feature of
+.Xr vim 1
+is useful for checking over many manuals:
+.Bd -literal -offset indent
+% mandoc \-Wall \-fstrict \-Tlint \-fign-errors \e
+  ./path/to/manuals/* 2>&1 > /tmp/mandoc.errs
+% vim -q /tmp/mandoc.errs
+.Ed
+.Pp
+You may spell-check your work as follows:
+.Pp
+.Dl % deroff name.1 | spell
+.Pp
+If
+.Xr ispell 1
+is installed, it has a special mode for manuals:
+.Pp
+.Dl % ispell \-n name.1
+.Pp
+Use
+.Xr cvs 1
+or
+.Xr rcs 1
+to version-control your work.  If you wish the last check-in to effect
+your document's date, use the following RCS tag for the date macro:
+.Pp
+.Dl \&.Dd $Mdocdate: July 27 2009 $
+.\" SUBSECTION
+.Ss Viewing
+mdoc documents may be paged to your terminal with
+.Xr mandoc 1 .
+If you plan on distributing your work to systems without this tool,
+check it against
+.Xr groff 1 :
+.Bd -literal -offset indent
+% mandoc \-Wall name.1 2>&1 | less
+% groff -mandoc name.1 2>&1 | less
+.Ed
+.\" SUBSECTION
+.Ss Automation
+Consider adding your mdoc documents to
+.Xr make 1
+Makefiles in order to automatically check your input:
+.Bd -literal -offset indent
+\&.SUFFIXES: .1 .in
+
+\&.in.1:
+	mandoc -Wall,error -Tlint $<
+	cp -f $< $@@
+.Ed
+.\" SUBSECTION
+.Ss Licensing
+Your manual must have a license.  It should be listed at the start of
+your document, just as in source code.
+.\" SECTION
+.Sh COMPOSITION
+Manuals should
+.Em always
+be written in the
+.Xr mdoc 7
+formatting language.
+.\" PARAGRAPH
+.Pp
+Open the template you've copied into
+.Pa myname.mysection
+and begin editing.
+.\" SUBSECTION
+.Ss Language
+.Bl -enum
+.It
+Use clear, concise language.  Favour simplicity.
+.It
+Write your manual in non-idiomatic English.  Don't worry about
+Commonwealth or American spellings \(em just correct ones.
+.It
+Spell-check your manual, keeping in mind short-letter terms (
+.Xr iwi 4
+vs.
+.Xr iwn 4 ) .
+.It
+If you absolutely must use special characters (diacritics, mathematical
+symbols and so on), use the escapes dictated in
+.Xr mdoc 7 .
+.El
+.\" SUBSECTION
+.Ss Style
+The structure of the mdoc language makes it very hard to have any
+particular format style.  Keep your lines under 72 characters in length.
+If you must have long option lines, use
+.Sq \&Oo/Oc .
+The same goes for function prototypes.
+.Em \&Do not
+use
+.Sq \&Xo/Xc .
+Find another way to structure your line.
+.\" SUBSECTION
+.Ss References
+Other components may be referenced with the
+.Sq \&Xr
+and
+.Sq \&Sx
+macros.  Make sure that these exist.  If you intend to distribute your
+manual, make sure
+.Sq \&Xr
+references are valid across systems (within reason).  If you cross-link with
+.Sq \&Sx ,
+make sure that the section reference exists.
+.\" SUBSECTION
+.Ss Citations
+Cite your work.  If your system references standards documents or other
+publications, please use the
+.Sq \&Rs/Re
+block macros.
+.\" SUBSECTION
+.Ss Formatting
+.Em Don't style your manual .
+Give it meaningful content.  The front-end will worry about formatting
+and style.
+.\" SECTION
+.Sh MAINTENANCE
+As your component changes and bugs are fixed, your manual may become out
+of date.  You may be tempted to use tools like Doxygen to automate the
+development of your manuals.  Don't.
+.Pp
+.Em Manuals are part of a system component :
+if you modify your code or specifications, modify the documentation.
+@
+
+
+1.19
+log
+@main.c using fprintf instead of warnx for parse errors (like cc).
+Error string is now file:line:col: message.
+Removed sed from vim -q example in manuals.7.
+Fixed column reporting (off by one).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: manuals.7,v 1.18 2009/07/27 13:10:08 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+d17 1
+a17 1
+.Dd $Mdocdate$
+d137 1
+a137 1
+.Dl \&.Dd $Mdocdate$
+@
+
+
+1.18
+log
+@Re-ordered ascii.in looking for dupes.
+Added `vim -q' tip to manuals.7 (thanks uqs@@sporlein.net).
+ifdef'd production of missing specials/predefines.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: manuals.7,v 1.17 2009/07/20 13:45:11 kristaps Exp $
+d116 1
+a116 2
+  `find /usr/src \-name \e*\e.[1-9]` 2>&1 | \e 
+  sed 's!^mandoc: !!' > /tmp/mandoc.errs
+@
+
+
+1.17
+log
+@Removed trailing whitespace in manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: manuals.7,v 1.16 2009/07/16 22:16:44 kristaps Exp $
+d109 11
+a119 1
+.Dl % mandoc \-Tlint \-Wall name.1
+@
+
+
+1.16
+log
+@Small clarity updates (section names, contents).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: manuals.7,v 1.15 2009/06/25 10:55:40 kristaps Exp $
+d16 1
+a16 1
+.\" 
+d31 1
+a31 1
+importantly, a game.  
+d33 2
+a34 2
+This document serves as a tutorial to writing 
+.Ux 
+d39 1
+a39 1
+First, copy over the manual template from 
+d69 1
+a69 1
+.It 8 
+d98 1
+a98 1
+Manual files are named 
+d115 1
+a115 1
+If 
+d121 1
+a121 1
+Use 
+d131 1
+a131 1
+mdoc documents may be paged to your terminal with 
+d142 1
+a142 1
+Consider adding your mdoc documents to 
+d158 2
+a159 2
+Manuals should 
+.Em always 
+d170 1
+a170 1
+.Bl -enum 
+d190 1
+a190 1
+If you must have long option lines, use 
+d194 1
+a194 1
+use 
+d198 1
+a198 1
+.Ss References 
+@
+
+
+1.15
+log
+@Spell-checks in manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: manuals.7,v 1.14 2009/06/10 20:18:43 kristaps Exp $
+d38 1
+a38 1
+.Sh COMPOSITION
+a105 30
+.Ss Input Language
+Manuals should 
+.Em always 
+be written in the
+.Xr mdoc 7
+formatting language.
+.Pp
+There exist other documentation-specific languages, such as the
+historical
+.Xr man 7
+package of 
+.Xr roff 7 ;
+newer languages such as DocBook or texinfo; or even ad-hoc conventions
+such as README files.  
+.Em Avoid these formats .
+.Pp
+There are two canonical references for writing mdoc.  Read them.
+.Pp
+.\" LIST
+.Bl -tag -width XXXXXXXXXXXXXXXX -offset indent -compact
+.It Xr mdoc 7
+formal language reference
+.It Xr mdoc.samples 7
+macro reference
+.El
+.Pp
+Open the template you've copied into
+.Pa myname.mysection
+and begin editing.
+.\" SUBSECTION
+d157 4
+a160 2
+.Sh BEST PRACTICES
+The
+d162 6
+a167 6
+and 
+.Xr mdoc.samples 7
+files are indispensable in guiding composition.  In this section, we
+introduce some 
+.Ux
+manual best practises:
+@
+
+
+1.14
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: manuals.7,v 1.13 2009/04/12 19:45:26 kristaps Exp $
+d195 1
+a195 1
+manual best practices:
+@
+
+
+1.13
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: manuals.7,v 1.12 2009/04/12 19:19:57 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.12
+log
+@Manual .Dt fields CAPITALISED.
+Indent set to 5 chars (nroff compat).
+Half-indent set to 3 chars (nroff compat).
+Default behaviour is loose-y (ignore macro/char/escape).
+Added -fstrict.
+Added unknown-character ignoring.
+@
+text
+@d1 1
+a1 1
+.\" $Id: manuals.7,v 1.11 2009/04/03 13:17:26 kristaps Exp $
+d6 2
+a7 3
+.\" purpose with or without fee is hereby granted, provided that the
+.\" above copyright notice and this permission notice appear in all
+.\" copies.
+d9 7
+a15 8
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+.\" WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+.\" WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+.\" AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+.\" DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+.\" PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+.\" TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+.\" PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.11
+log
+@Updated manuals.7.
+Fixed .Dl display.
+@
+text
+@d1 1
+a1 1
+.\" $Id: manuals.7,v 1.10 2009/03/26 23:01:26 kristaps Exp $
+d20 1
+a20 1
+.Dt manuals 7
+@
+
+
+1.10
+log
+@Clean-ups to documentation.
+@
+text
+@d1 1
+a1 1
+.\" $Id: manuals.7,v 1.9 2009/03/24 10:59:50 kristaps Exp $
+d41 5
+a45 3
+Prepare your composition environment by copying over the manual template
+from 
+.Pa /usr/share/misc/mdoc.template .
+a46 1
+If this file doesn't exist, bug your administrator.
+d49 1
+a49 1
+you're doing!
+d104 3
+a106 1
+for this document.
+d135 1
+a135 1
+.Pa name.section
+d146 5
+d253 5
+a257 3
+of date.  You may be tempted to use automation tools like Doxygen to
+smooth the development of your manuals.  Don't.  Source documentation is
+different from a component manual. 
+@
+
+
+1.9
+log
+@Updating web-site.
+@
+text
+@d1 1
+a1 1
+.\" $Id: manuals.7,v 1.8 2009/03/23 09:42:43 kristaps Exp $
+d33 1
+a33 5
+importantly, a game.  Although there are plenty of documents available
+on how to read 
+.Ux 
+documents, or where to find them, few focus on composition.
+.\" PARAGRAPH
+a38 2
+If you add something to your operating system, whether it's a new file
+format or directory structure or device driver, it needs documentation.
+d52 1
+a52 2
+manual names per section, so be specific.  A table of all available
+manual sections follows:
+d94 2
+a95 2
+Name your component.  Be terse, erring on the side of clarity.  You may
+want to look for other manuals by that same name before committing:
+d117 2
+a118 2
+newer languages such as DocBook, texinfo or schema-driven XML; or even
+ad-hoc conventions such as README files.  
+a119 4
+Historical formats fail to capture a manual's semantic content, instead
+only modelling its style.  Newer methods requires special,
+system-specific tools and may change or become obsolete over the
+life-time of your component.
+d147 1
+a147 1
+or, if not available,
+a152 5
+.Pp
+If using version control, the first line in your manual should be a
+comment with the 
+.Li $Id: manuals.7,v 1.8 2009/03/23 09:42:43 kristaps Exp $
+rcs tag.
+d155 5
+a159 15
+mdoc documents may be paged to your terminal with traditional 
+tools such as
+.Xr nroff 1 ,
+.Xr groff 1 ,
+or with newer, more powerful tools such as
+.Xr mandoc 1 :
+.\" DISPLAY
+.Bd -literal -offset indent
+% nroff \-mandoc name.1 | less
+% groff \-Tascii \-mandoc name.1 | less
+% mandoc name.1 | less
+.Ed
+.Pp
+Other output formats are also supported:
+.\" DISPLAY
+d161 2
+a162 2
+% groff \-Tps \-mandoc name.1 | less
+% mandoc \-Thtml name.1 | less
+d168 1
+a168 2
+Makefiles in order to automatically check your input and generate
+output:
+d170 1
+a170 1
+\&.SUFFIXES: .html .txt .1 .in
+a174 4
+\&.1.html:
+	mandoc -Thtml $< >$@@
+\&.1.txt:
+	mandoc -Tascii $< | col -b >$@@
+d214 1
+d217 2
+a218 3
+.Sq \&Xo/Xc ;
+instead, either fine another way to write long lines, or, at the
+absolute worst, use CPP-style newline escapes.
+d239 1
+a239 1
+.Em Don't style your manual.
+@
+
+
+1.8
+log
+@More manual documentation fixed/improved.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.7,v 1.13 2009/03/22 08:52:27 kristaps Exp $
+a120 3
+.Xr me 7 ,
+.Xr ms 7
+and
+d122 1
+a122 1
+packages of 
+d167 1
+a167 1
+.Li $Id$
+@
+
+
+1.7
+log
+@Fixed Bd -compact.
+Fixed vspace before Bd and Bl.
+@
+text
+@d1 18
+d50 2
+d167 5
+d210 4
+d243 11
+@
+
+
+1.6
+log
+@More manuals.7.
+@
+text
+@d75 2
+a76 1
+myname (1) - some description here
+d233 1
+a233 1
+.Em Don't style your manual.  
+@
+
+
+1.5
+log
+@Stripping of Xo/Xc macros in main.c (ifdef STRIP_XO).
+@
+text
+@d232 3
+a234 11
+Let the front-ends worry about formatting for you, but if you must think
+about formatting (at times necessary, especially for tagged and columnar
+lists), assume that your output device is a fixed-width terminal window:
+.Bd -literal -offset indent
+\&.Bl \-tag \-width "-o outfile"
+\&.It \&Fl \&Ar outfile
+.Ed
+.Pp
+You may assume that the width calculated by the string literal 
+.Qq Fl o Ar outfile
+will be covered by the \-width argument.
+d240 1
+a240 1
+different from a component manual.
+@
+
+
+1.4
+log
+@More updates.
+@
+text
+@d28 12
+a39 15
+.Sh CLASSIFICATION
+Classify your system component.  In
+.Ux ,
+each component has a manual section , which categorises the component's
+function.  The section of a manual is usually listed in parenthesis next
+to the component name, such as
+.Xr ps 1 ,
+section 1.  You can query a manual explicitly by its section:
+.Bd -literal -offset XXXX
+% man \-s 1 ps
+% apropos ps
+.Ed
+.Pp
+The following table lists classifications and the applicable manual
+sections:
+d41 1
+d63 15
+a77 35
+Some examples in regular name/section form:
+.Pp
+.\" LIST
+.Bl -tag -width "File-formatX" -offset indent -compact
+.It Em Manual
+.Em Description
+.It Xr dc 4
+DEC/Intel 10/100 Ethernet device
+.It Xr usermod 8
+modify user login information
+.It Xr cc 1
+the C compiler
+.It Xr fortune 6
+print a random adage
+.It Xr open 2
+open or create a file for reading or writing
+.It Xr isspace 3
+whitespace character test
+.It Xr Pod::Man 3p
+convert POD data to formatted roff
+.It Xr tsleep 9
+process context sleep
+.It Xr passwd 5
+format of the password file
+.It Xr symlink 7
+symbolic link handling
+.El
+.\" SECTION
+.Sh COMPOSITION
+Prepare your composition environment by copying over the manual template
+from 
+.Pa /usr/share/misc/mdoc.template .
+.Em \&Do not
+start afresh or by copying another manual unless you know exactly what
+you're doing!
+d80 2
+a81 4
+Your component will need a name by which to query its contents via
+.Xr man 1 .
+Keep it simple.  You may want to look for other manuals by that same
+name before committing:
+d85 2
+a86 2
+Conventionally, manual files are named 
+.Pa myname.section ,
+d108 1
+a108 1
+.Em Stay away from these methods!
+d114 1
+a114 1
+There are two canonical references for writing mdoc manuals:
+a178 1
+
+a180 1
+
+d215 1
+a215 1
+.Sq \&Xr ,
+d243 6
+@
+
+
+1.3
+log
+@More manuals.7 updates.
+@
+text
+@d31 3
+a33 4
+each component has a 
+.Dq manual section ,
+which categorises the component's function.  The section of a manual is
+usually listed in parenthesis next to the component name, such as
+d36 4
+a39 2
+.Pp
+.Dl % man \-s 1 ps
+d94 6
+a99 1
+Prepare your composition environment.  
+d148 3
+a150 3
+Don't merely copy existing manuals!  Most systems distribute an mdoc
+template to help you get started in
+.Pa /usr/share/misc/mdoc.template .
+a169 1
+.Pp
+d216 1
+a216 1
+files will be indispensable in guiding composition.  In this section, we
+d268 1
+a268 1
+will 
+@
+
+
+1.2
+log
+@Draft of manuals.7 for inspection.
+@
+text
+@d40 2
+a41 2
+The following table lists broad classifications and the applicable
+manual sections:
+a42 37
+.\" LIST
+.Bl -tag -width "XXXXXXXXXXXX" -offset indent -compact
+.It Em Category
+.Em Section(s)
+.It Device
+4
+.It Executable
+1, 6, 8
+.It Function
+2, 3, 9
+.It File-format
+5
+.It Other
+7
+.El
+.\" SUBSECTION
+.Ss Devices
+Consists of hardware (and pseudo-) device driver documentation.  Drivers
+are unilaterally classified in section 4.
+.Em Note :
+these manuals are necessarily system- and architecture-specific.
+.Pp
+Example:
+.Pp
+.\" LIST
+.Bl -tag -width "File-formatX" -offset indent -compact
+.It Em Manual
+.Em Description
+.It Xr dc 4
+DEC/Intel 10/100 Ethernet device
+.El
+.\" SUBSECTION
+.Ss Executables
+Executables consist of runnable binaries.  They're further classified by
+operator utility:
+.Pp
+.\" LIST
+d48 10
+d60 2
+a61 2
+.It 6
+games
+d64 1
+a64 1
+Examples:
+d67 1
+a67 1
+.Bl -tag -width "XXXXXXXXXXXX" -offset indent -compact
+d70 2
+a77 27
+.El
+.\" SUBSECTION
+.Ss Functions
+Function documentation describes programme source code, whether in the
+form of libraries, modules or standalone sources.  They're further
+classified by context: 
+.Pp
+.\" LIST
+.Bl -tag -width "XXXXXXXXXXXX" -offset indent -compact
+.It Em Section
+.Em Description
+.It 2
+system calls
+.It 3, 3p, 3f
+programming libraries (C, Perl, Fortran)
+.It 9
+in-kernel routines
+.El
+.Pp
+.Em Note :
+section 2 and 9 manuals are necessarily system- and often
+architecture-specific.  Examples:
+.Pp
+.\" LIST
+.Bl -tag -width "XXXXXXXXXXXX" -offset indent -compact
+.It Em Manual
+.Em Description
+a85 14
+.El
+.\" SUBSECTION
+.Ss File-formats
+A file format usually describes the format of on-disc binary or text
+data, although it can also be used to describe wire protocols (this is
+usually best left to RFC).  These manuals are unilaterally classified in
+section 5.
+.Pp
+Example:
+.Pp
+.\" LIST
+.Bl -tag -width "XXXXXXXXXXXX" -offset indent -compact
+.It Em Manual
+.Em Description
+a87 15
+.El
+.\" SUBSECTION
+.Ss Other
+Documents with no other classification are relegated to section 7.  This
+constitutes reference tutorials (such as this document) and other
+miscellaneous information.
+.Pp
+Examples:
+.Pp
+.\" LIST
+.Bl -tag -width "XXXXXXXXXXXX" -offset indent -compact
+.It Em Manual
+.Em Description
+.It Xr ascii 7
+ASCII character sets
+d252 12
+a263 4
+.Ss Types and Prototypes
+If writing section 3 manuals, make sure that you correctly annotate your
+variables and functions.  This guarantees that cross-referncing between
+function names and their prototypes works properly.
+@
+
+
+1.1
+log
+@More documentation clarification.
+@
+text
+@d2 1
+a2 1
+.Dt "Writing Unix Documentation" paper
+d4 1
+d6 3
+a8 2
+.Nm Writing Unix Documentation
+.Nd a guide to writing Unix manuals
+d10 265
+a274 3
+					<h1>
+					Writing Unix Documentation
+					</h1>
+d276 3
+a278 3
+					<p>
+					<span class="attn">A utility without documentation is of no utility at all.</span>
+					</p>
+d280 2
+a281 5
+					<p>
+					A system component's documentation describes the utility of that component, whether it's a device
+					driver, an executable or, most importantly, a game.  Although there are plenty of documents available on
+					how to <i>read</i> Unix documents, or where to find them, few focus on how to <i>write</i> them.
+					</p>
+d283 54
+a336 18
+					<p>
+					This document serves as a reference guide to writing Unix documentation.  If you add something to your
+					operating system, whether it's a new file format or directory structure or device driver, it needs
+					documentation.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="foot">
+						Copyright &#169; 2009 Kristaps D&#382;onsons, $Date: 2009/03/21 09:50:07 $
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</body>
+</html>
+@

@@ -1,0 +1,151 @@
+head	1.3;
+access;
+symbols
+	VERSION_1_13_3:1.2
+	VERSION_1_13_2:1.2;
+locks; strict;
+comment	@ * @;
+
+
+1.3
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.08.28.10.38.06;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@modernize style: "return" is not a function
+@
+text
+@/*	$Id: test-wchar.c,v 1.2 2014/08/28 10:38:06 schwarze Exp $	*/
+/*
+ * Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+#if defined(__linux__) || defined(__MINT__)
+#define _GNU_SOURCE /* wcwidth() */
+#endif
+
+#include <locale.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <unistd.h>
+
+int
+main(void)
+{
+	wchar_t	 wc;
+	int	 width;
+
+	if (setlocale(LC_ALL, "") == NULL) {
+		fputs("setlocale(LC_ALL, \"\") failed\n", stderr);
+		return 1;
+	}
+
+	if (setlocale(LC_CTYPE, "en_US.UTF-8") == NULL) {
+		fputs("setlocale(LC_CTYPE, \"en_US.UTF-8\") failed\n",
+		    stderr);
+		return 1;
+	}
+
+	if (sizeof(wchar_t) < 4) {
+		fprintf(stderr, "wchar_t is only %zu bytes\n",
+		    sizeof(wchar_t));
+		return 1;
+	}
+
+	if ((width = wcwidth(L' ')) != 1) {
+		fprintf(stderr, "wcwidth(L' ') returned %d\n", width);
+		return 1;
+	}
+
+	dup2(STDERR_FILENO, STDOUT_FILENO);
+	wc = L'*';
+	if (putwchar(wc) != (wint_t)wc) {
+		fputs("bad putwchar return value\n", stderr);
+		return 1;
+	}
+
+	return 0;
+}
+@
+
+
+1.2
+log
+@On Linux, wcwidth() needs _XOPEN_SOURCE, or just _GNU_SOURCE for simplicity.
+Besides, signedness of wchar_t and wint_t may differ, it i only
+guaranteed that each wchar_t can be represented as a wint_t.
+A problem report by Daniel Levai reminded me to fix this.
+@
+text
+@d1 1
+a1 1
+/*	$Id: test-wchar.c,v 1.1 2014/08/16 19:00:01 schwarze Exp $	*/
+d35 1
+a35 1
+		return(1);
+d41 1
+a41 1
+		return(1);
+d47 1
+a47 1
+		return(1);
+d52 1
+a52 1
+		return(1);
+d59 1
+a59 1
+		return(1);
+d62 1
+a62 1
+	return(0);
+@
+
+
+1.1
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@d1 1
+a1 1
+/*	$Id$	*/
+d18 4
+d57 1
+a57 1
+	if (putwchar(wc) != wc) {
+@

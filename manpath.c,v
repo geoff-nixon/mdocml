@@ -1,0 +1,1286 @@
+head	1.29;
+access;
+symbols
+	VERSION_1_13_3:1.19
+	VERSION_1_13_2:1.19
+	VERSION_1_12_4:1.16
+	VERSION_1_13_1:1.15
+	VERSION_1_12_3:1.12
+	VERSION_1_12_2:1.11
+	VERSION_1_12:1.16.0.2
+	VERSION_1_12_1:1.8;
+locks; strict;
+comment	@ * @;
+
+
+1.29
+date	2015.11.07.17.58.55;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2015.11.07.14.22.29;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2015.10.11.21.12.55;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2015.06.10.19.26.13;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2015.05.07.12.08.13;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2015.04.28.16.13.45;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2015.03.27.17.37.25;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2015.03.26.22.42.32;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2015.03.22.18.14.30;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2015.03.21.17.19.36;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2014.11.27.00.30.40;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2014.11.18.19.41.47;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2014.04.23.21.06.41;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2013.11.21.01.49.18;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2013.06.05.02.00.26;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2013.05.29.22.48.10;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2012.06.08.10.32.40;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.12.24.22.37.16;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.12.13.21.09.01;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.12.13.20.56.46;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.12.12.02.00.49;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.11.26.22.38.11;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.11.24.10.44.56;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.11.24.10.43.55;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.23.09.47.38;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.29
+log
+@Modernization, no functional change intended:
+Use the POSIX function getline(3) rather than the slightly
+dangerous BSD function fgetln(3).
+Remove the related compatibility code.
+@
+text
+@/*	$Id: manpath.c,v 1.28 2015/11/07 14:22:29 schwarze Exp $	*/
+/*
+ * Copyright (c) 2011, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ * Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+#include <ctype.h>
+#if HAVE_ERR
+#include <err.h>
+#endif
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "mandoc_aux.h"
+#include "manconf.h"
+
+#if !HAVE_MANPATH
+static	void	 manconf_file(struct manconf *, const char *);
+#endif
+static	void	 manpath_add(struct manpaths *, const char *, int);
+static	void	 manpath_parseline(struct manpaths *, char *, int);
+
+
+void
+manconf_parse(struct manconf *conf, const char *file,
+		char *defp, char *auxp)
+{
+#if HAVE_MANPATH
+	char		 cmd[(PATH_MAX * 3) + 20];
+	FILE		*stream;
+	char		*buf;
+	size_t		 sz, bsz;
+
+	strlcpy(cmd, "manpath", sizeof(cmd));
+	if (file) {
+		strlcat(cmd, " -C ", sizeof(cmd));
+		strlcat(cmd, file, sizeof(cmd));
+	}
+	if (auxp) {
+		strlcat(cmd, " -m ", sizeof(cmd));
+		strlcat(cmd, auxp, sizeof(cmd));
+	}
+	if (defp) {
+		strlcat(cmd, " -M ", sizeof(cmd));
+		strlcat(cmd, defp, sizeof(cmd));
+	}
+
+	/* Open manpath(1).  Ignore errors. */
+
+	stream = popen(cmd, "r");
+	if (NULL == stream)
+		return;
+
+	buf = NULL;
+	bsz = 0;
+
+	/* Read in as much output as we can. */
+
+	do {
+		buf = mandoc_realloc(buf, bsz + 1024);
+		sz = fread(buf + bsz, 1, 1024, stream);
+		bsz += sz;
+	} while (sz > 0);
+
+	if ( ! ferror(stream) && feof(stream) &&
+			bsz && '\n' == buf[bsz - 1]) {
+		buf[bsz - 1] = '\0';
+		manpath_parseline(&conf->manpath, buf, 1);
+	}
+
+	free(buf);
+	pclose(stream);
+#else
+	char		*insert;
+
+	/* Always prepend -m. */
+	manpath_parseline(&conf->manpath, auxp, 1);
+
+	/* If -M is given, it overrides everything else. */
+	if (NULL != defp) {
+		manpath_parseline(&conf->manpath, defp, 1);
+		return;
+	}
+
+	/* MANPATH and man.conf(5) cooperate. */
+	defp = getenv("MANPATH");
+	if (NULL == file)
+		file = MAN_CONF_FILE;
+
+	/* No MANPATH; use man.conf(5) only. */
+	if (NULL == defp || '\0' == defp[0]) {
+		manconf_file(conf, file);
+		return;
+	}
+
+	/* Prepend man.conf(5) to MANPATH. */
+	if (':' == defp[0]) {
+		manconf_file(conf, file);
+		manpath_parseline(&conf->manpath, defp, 0);
+		return;
+	}
+
+	/* Append man.conf(5) to MANPATH. */
+	if (':' == defp[strlen(defp) - 1]) {
+		manpath_parseline(&conf->manpath, defp, 0);
+		manconf_file(conf, file);
+		return;
+	}
+
+	/* Insert man.conf(5) into MANPATH. */
+	insert = strstr(defp, "::");
+	if (NULL != insert) {
+		*insert++ = '\0';
+		manpath_parseline(&conf->manpath, defp, 0);
+		manconf_file(conf, file);
+		manpath_parseline(&conf->manpath, insert + 1, 0);
+		return;
+	}
+
+	/* MANPATH overrides man.conf(5) completely. */
+	manpath_parseline(&conf->manpath, defp, 0);
+#endif
+}
+
+/*
+ * Parse a FULL pathname from a colon-separated list of arrays.
+ */
+static void
+manpath_parseline(struct manpaths *dirs, char *path, int complain)
+{
+	char	*dir;
+
+	if (NULL == path)
+		return;
+
+	for (dir = strtok(path, ":"); dir; dir = strtok(NULL, ":"))
+		manpath_add(dirs, dir, complain);
+}
+
+/*
+ * Add a directory to the array, ignoring bad directories.
+ * Grow the array one-by-one for simplicity's sake.
+ */
+static void
+manpath_add(struct manpaths *dirs, const char *dir, int complain)
+{
+	char		 buf[PATH_MAX];
+	struct stat	 sb;
+	char		*cp;
+	size_t		 i;
+
+	if (NULL == (cp = realpath(dir, buf))) {
+		if (complain)
+			warn("manpath: %s", dir);
+		return;
+	}
+
+	for (i = 0; i < dirs->sz; i++)
+		if (0 == strcmp(dirs->paths[i], dir))
+			return;
+
+	if (stat(cp, &sb) == -1) {
+		if (complain)
+			warn("manpath: %s", dir);
+		return;
+	}
+
+	dirs->paths = mandoc_reallocarray(dirs->paths,
+	    dirs->sz + 1, sizeof(char *));
+
+	dirs->paths[dirs->sz++] = mandoc_strdup(cp);
+}
+
+void
+manconf_free(struct manconf *conf)
+{
+	size_t		 i;
+
+	for (i = 0; i < conf->manpath.sz; i++)
+		free(conf->manpath.paths[i]);
+
+	free(conf->manpath.paths);
+	free(conf->output.includes);
+	free(conf->output.man);
+	free(conf->output.paper);
+	free(conf->output.style);
+}
+
+#if !HAVE_MANPATH
+static void
+manconf_file(struct manconf *conf, const char *file)
+{
+	const char *const toks[] = { "manpath", "output", "_whatdb" };
+	char manpath_default[] = MANPATH_DEFAULT;
+
+	FILE		*stream;
+	char		*line, *cp, *ep;
+	size_t		 linesz, tok, toklen;
+	ssize_t		 linelen;
+
+	if ((stream = fopen(file, "r")) == NULL)
+		goto out;
+
+	line = NULL;
+	linesz = 0;
+
+	while ((linelen = getline(&line, &linesz, stream)) != -1) {
+		cp = line;
+		ep = cp + linelen;
+		if (ep[-1] != '\n')
+			break;
+		*--ep = '\0';
+		while (isspace((unsigned char)*cp))
+			cp++;
+		if (*cp == '#')
+			continue;
+
+		for (tok = 0; tok < sizeof(toks)/sizeof(toks[0]); tok++) {
+			toklen = strlen(toks[tok]);
+			if (cp + toklen < ep &&
+			    isspace((unsigned char)cp[toklen]) &&
+			    strncmp(cp, toks[tok], toklen) == 0) {
+				cp += toklen;
+				while (isspace((unsigned char)*cp))
+					cp++;
+				break;
+			}
+		}
+
+		switch (tok) {
+		case 2:  /* _whatdb */
+			while (ep > cp && ep[-1] != '/')
+				ep--;
+			if (ep == cp)
+				continue;
+			*ep = '\0';
+			/* FALLTHROUGH */
+		case 0:  /* manpath */
+			manpath_add(&conf->manpath, cp, 0);
+			*manpath_default = '\0';
+			break;
+		case 1:  /* output */
+			manconf_output(&conf->output, cp);
+			break;
+		default:
+			break;
+		}
+	}
+	free(line);
+	fclose(stream);
+
+out:
+	if (*manpath_default != '\0')
+		manpath_parseline(&conf->manpath, manpath_default, 0);
+}
+#endif
+
+void
+manconf_output(struct manoutput *conf, const char *cp)
+{
+	const char *const toks[] = {
+	    "includes", "man", "paper", "style",
+	    "indent", "width", "fragment", "mdoc"
+	};
+
+	size_t	 len, tok;
+
+	for (tok = 0; tok < sizeof(toks)/sizeof(toks[0]); tok++) {
+		len = strlen(toks[tok]);
+		if ( ! strncmp(cp, toks[tok], len) &&
+		    strchr(" =	", cp[len]) != NULL) {
+			cp += len;
+			if (*cp == '=')
+				cp++;
+			while (isspace((unsigned char)*cp))
+				cp++;
+			break;
+		}
+	}
+
+	if (tok < 6 && *cp == '\0')
+		return;
+
+	switch (tok) {
+	case 0:
+		if (conf->includes == NULL)
+			conf->includes = mandoc_strdup(cp);
+		break;
+	case 1:
+		if (conf->man == NULL)
+			conf->man = mandoc_strdup(cp);
+		break;
+	case 2:
+		if (conf->paper == NULL)
+			conf->paper = mandoc_strdup(cp);
+		break;
+	case 3:
+		if (conf->style == NULL)
+			conf->style = mandoc_strdup(cp);
+		break;
+	case 4:
+		if (conf->indent == 0)
+			conf->indent = strtonum(cp, 0, 1000, NULL);
+		break;
+	case 5:
+		if (conf->width == 0)
+			conf->width = strtonum(cp, 58, 1000, NULL);
+		break;
+	case 6:
+		conf->fragment = 1;
+		break;
+	case 7:
+		conf->mdoc = 1;
+		break;
+	default:
+		break;
+	}
+}
+@
+
+
+1.28
+log
+@Without HAVE_ERR, don't try to include <err.h>, it probably isn't there.
+In that case, the required prototypes are in "config.h".
+Patch from Peter Bray <pdb_ml at yahoo dot com dot au>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.27 2015/10/11 21:12:55 schwarze Exp $	*/
+d215 3
+a217 2
+	char		*cp, *ep;
+	size_t		 len, tok;
+d222 6
+a227 2
+	while ((cp = fgetln(stream, &len)) != NULL) {
+		ep = cp + len;
+d237 5
+a241 5
+			len = strlen(toks[tok]);
+			if (cp + len < ep &&
+			    isspace((unsigned char)cp[len]) &&
+			    !strncmp(cp, toks[tok], len)) {
+				cp += len;
+d267 1
+@
+
+
+1.27
+log
+@Finally use __progname, err(3) and warn(3).
+That's more readable and less error-prone than fumbling around
+with argv[0], fprintf(3), strerror(3), perror(3), and exit(3).
+
+It's a bad idea to boycott good interfaces merely because standards
+committees ignore them.  Instead, let's provide compatibility modules
+for archaic systems (like commercial Solaris) that still don't have
+them.  The compat module has an UCB Copyright (c) 1993...
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.26 2015/06/10 19:26:13 schwarze Exp $	*/
+d24 1
+d26 1
+@
+
+
+1.26
+log
+@Avoid warning "defined but not used" when compiling with HAVE_MANPATH.
+Issue found on Debian by Markus <Waldeck at gmx dot de>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.25 2015/05/07 12:08:13 schwarze Exp $	*/
+d24 1
+d169 2
+a170 4
+		if (complain) {
+			fputs("manpath: ", stderr);
+			perror(dir);
+		}
+d179 2
+a180 4
+		if (complain) {
+			fputs("manpath: ", stderr);
+			perror(dir);
+		}
+@
+
+
+1.25
+log
+@Do not let the -m option or MANPATH with leading, trailing, or double
+colon override the default manpath, let them add to the default manpath.
+Only override the default manpath by the -M option, by MANPATH without
+leading, trailing, or double colon, or by "manpath" in man.conf(5).
+
+Problem reported by Jan Stary <hans at stare dot cz>.
+Patch OK'ed by millert@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.24 2015/04/28 16:13:45 schwarze Exp $	*/
+d32 1
+d34 1
+d208 1
+d269 1
+@
+
+
+1.24
+log
+@Fix the HAVE_MANPATH case, got broken in rev. 1.23.
+Patch from Steffen Nurpmeso <sdaoden at yandex dot com>, thanks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.23 2015/03/27 17:37:25 schwarze Exp $	*/
+a86 1
+	char		 manpath_default[] = MANPATH_DEFAULT;
+a105 2
+		if (conf->manpath.sz == 0)
+			manpath_parseline(&conf->manpath, manpath_default, 0);
+d210 1
+d217 1
+a217 1
+		return;
+d251 1
+d260 1
+d262 3
+a264 1
+	fclose(stream);
+@
+
+
+1.23
+log
+@Parse the new man.conf(5) "output" directive.
+The next step will be to actually use the parsed data.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.22 2015/03/26 22:42:32 schwarze Exp $	*/
+d81 1
+a81 1
+		manpath_parseline(dirs, buf, 1);
+@
+
+
+1.22
+log
+@Add a new directive "manpath path"
+to replace the legacy "_whatdb path/whatis.db".
+Keep _whatdb support for backward compat, for now.
+Discussed with many, jmc@@ and ajacoutot@@ agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.21 2015/03/22 18:14:30 schwarze Exp $	*/
+d30 1
+a30 3
+#include "manpath.h"
+
+#define MAN_CONF_FILE	"/etc/man.conf"
+d32 1
+d36 1
+d38 1
+a38 1
+manpath_parse(struct manpaths *dirs, const char *file,
+d91 1
+a91 1
+	manpath_parseline(dirs, auxp, 1);
+d95 1
+a95 1
+		manpath_parseline(dirs, defp, 1);
+d106 3
+a108 3
+		manpath_manconf(dirs, file);
+		if (dirs->sz == 0)
+			manpath_parseline(dirs, manpath_default, 0);
+d114 2
+a115 2
+		manpath_manconf(dirs, file);
+		manpath_parseline(dirs, defp, 0);
+d121 2
+a122 2
+		manpath_parseline(dirs, defp, 0);
+		manpath_manconf(dirs, file);
+d130 3
+a132 3
+		manpath_parseline(dirs, defp, 0);
+		manpath_manconf(dirs, file);
+		manpath_parseline(dirs, insert + 1, 0);
+d137 1
+a137 1
+	manpath_parseline(dirs, defp, 0);
+d195 1
+a195 1
+manpath_free(struct manpaths *p)
+d199 2
+a200 2
+	for (i = 0; i < p->sz; i++)
+		free(p->paths[i]);
+d202 5
+a206 1
+	free(p->paths);
+d209 2
+a210 2
+void
+manpath_manconf(struct manpaths *dirs, const char *file)
+d212 1
+a212 1
+	const char *const toks[] = { "manpath", "_whatdb" };
+d244 1
+a244 1
+		case 1:  /* _whatdb */
+d252 4
+a255 1
+			manpath_add(dirs, cp, 0);
+d264 62
+@
+
+
+1.21
+log
+@make MANPATH_DEFAULT compile-time configurable
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.20 2015/03/21 17:19:36 schwarze Exp $ */
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+a22 1
+#include <assert.h>
+a32 1
+#define MAN_CONF_KEY	"_whatdb"
+d208 2
+d211 2
+a212 5
+	char		*p, *q;
+	size_t		 len, keysz;
+
+	keysz = strlen(MAN_CONF_KEY);
+	assert(keysz > 0);
+d214 1
+a214 1
+	if (NULL == (stream = fopen(file, "r")))
+d217 3
+a219 2
+	while (NULL != (p = fgetln(stream, &len))) {
+		if (0 == len || '\n' != p[--len])
+d221 4
+a224 4
+		p[len] = '\0';
+		while (isspace((unsigned char)*p))
+			p++;
+		if (strncmp(MAN_CONF_KEY, p, keysz))
+d226 27
+a252 9
+		p += keysz;
+		while (isspace((unsigned char)*p))
+			p++;
+		if ('\0' == *p)
+			continue;
+		if (NULL == (q = strrchr(p, '/')))
+			continue;
+		*q = '\0';
+		manpath_add(dirs, p, 0);
+@
+
+
+1.20
+log
+@when there is no -m, no -M, no MANPATH and no /etc/man.conf,
+fall back to /usr/share/man:/usr/X11R6/man:/usr/local/man
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.19 2014/11/27 00:30:40 schwarze Exp $ */
+a34 1
+#define MANPATH_DEFAULT	"/usr/share/man:/usr/X11R6/man:/usr/local/man"
+@
+
+
+1.19
+log
+@fix build when HAVE_MANPATH is set; patch from <bapt at FreeBSD>
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.18 2014/11/18 19:41:47 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d35 1
+d90 1
+d110 2
+@
+
+
+1.18
+log
+@Ignore invalid directories in man.conf(5) and MANPATH, even if their
+parent directories exist, but complain about invalid directories
+given on the command line.
+Intended to fix an oddity reported by sthen@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.17 2014/08/16 19:00:01 schwarze Exp $ */
+d83 1
+a83 1
+		manpath_parseline(dirs, buf);
+@
+
+
+1.17
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.16 2014/08/10 23:54:41 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+d21 1
+d36 2
+a37 2
+static	void	 manpath_add(struct manpaths *, const char *);
+static	void	 manpath_parseline(struct manpaths *, char *);
+d92 1
+a92 1
+	manpath_parseline(dirs, auxp);
+d96 1
+a96 1
+		manpath_parseline(dirs, defp);
+d114 1
+a114 1
+		manpath_parseline(dirs, defp);
+d120 1
+a120 1
+		manpath_parseline(dirs, defp);
+d129 1
+a129 1
+		manpath_parseline(dirs, defp);
+d131 1
+a131 1
+		manpath_parseline(dirs, insert + 1);
+d136 1
+a136 1
+	manpath_parseline(dirs, defp);
+d144 1
+a144 1
+manpath_parseline(struct manpaths *dirs, char *path)
+d152 1
+a152 1
+		manpath_add(dirs, dir);
+d160 1
+a160 1
+manpath_add(struct manpaths *dirs, const char *dir)
+d163 1
+d167 5
+a171 1
+	if (NULL == (cp = realpath(dir, buf)))
+d173 1
+d179 8
+d233 1
+a233 1
+		manpath_add(dirs, p);
+@
+
+
+1.16
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.15 2014/04/23 21:06:41 schwarze Exp $ */
+d42 1
+a42 1
+#ifdef	USE_MANPATH
+@
+
+
+1.15
+log
+@Audit malloc(3)/calloc(3)/realloc(3) usage.
+* Change eight reallocs to reallocarray to be safe from overflows.
+* Change one malloc to reallocarray to be safe from overflows.
+* Change one calloc to reallocarray, no zeroing needed.
+* Change the order of arguments of three callocs (aesthetical).
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.14 2014/04/20 16:46:05 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+d19 2
+a20 1
+#endif
+@
+
+
+1.14
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.13 2014/03/23 11:25:26 schwarze Exp $ */
+d172 2
+a173 2
+	dirs->paths = mandoc_realloc(dirs->paths,
+	    (dirs->sz + 1) * sizeof(char *));
+@
+
+
+1.13
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.12 2013/11/21 01:49:18 schwarze Exp $ */
+d172 2
+a173 3
+	dirs->paths = mandoc_realloc
+		(dirs->paths,
+		 (dirs->sz + 1) * sizeof(char *));
+@
+
+
+1.12
+log
+@My audit of mandoc revealed one missing (unsigned char) cast
+in an isspace() argument containing arbitrary char data.
+Thanks to deraadt@@ for triggering the audit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.11 2013/06/05 02:00:26 schwarze Exp $ */
+d29 1
+a29 1
+#include "mandoc.h"
+@
+
+
+1.11
+log
+@Some places used PATH_MAX from <limits.h>, some MAXPATHLEN from <sys/param.h>.
+Consistently use the PATH_MAX since it is specified by POSIX,
+while MAXPATHLEN is not.
+In preparation for using this at a few more places.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.10 2013/05/29 22:48:10 schwarze Exp $ */
+d212 1
+a212 1
+		while (isspace(*p))
+@
+
+
+1.10
+log
+@Sync to OpenBSD:
+* Guard <sys/param.h> inclusion by #ifdef USE_MANPATH
+  to make it more obvious why this isn't needed on OpenBSD.
+  Noticed by deraadt@@.
+* Resolve gratuitious whitespace differences:
+  Blanks before tabs and on empty lines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.9 2012/06/08 10:32:40 kristaps Exp $ */
+a21 4
+#ifdef	USE_MANPATH
+#include <sys/param.h>
+#endif
+
+d43 1
+a43 1
+	char		 cmd[(MAXPATHLEN * 3) + 20];
+@
+
+
+1.9
+log
+@Use size_t in manpath instead of int.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.8 2011/12/24 22:37:16 kristaps Exp $ */
+d22 1
+d24 1
+d95 2
+a96 2
+ 	manpath_parseline(dirs, auxp);
+ 
+@
+
+
+1.8
+log
+@Support leading, trailing and double colons in MANPATH to prepend,
+append or insert the man.conf(5) default path; compatible with GNU
+manpath(1), implementation by kristaps@@, heavily tweaked by schwarze@@.
+
+Updates to MANPATH documentation applied to whatis.1, apropos.1, and
+catman.8 also.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.7 2011/12/13 21:09:01 kristaps Exp $ */
+d77 1
+a77 1
+		sz = fread(buf + (int)bsz, 1, 1024, stream);
+d120 1
+a120 1
+	if (':' == defp[(int)strlen(defp) - 1]) {
+d165 1
+a165 1
+	int		 i;
+d176 1
+a176 1
+		 ((size_t)dirs->sz + 1) * sizeof(char *));
+d184 1
+a184 1
+	int		 i;
+@
+
+
+1.7
+log
+@Remove stray warnx() left in the manpath.c code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.6 2011/12/13 20:56:46 kristaps Exp $ */
+d90 1
+a90 1
+	manpath_parseline(dirs, auxp);
+d92 8
+a99 2
+	if (NULL == defp)
+		defp = getenv("MANPATH");
+d101 14
+a114 3
+	if (NULL == defp)
+		manpath_manconf(dirs, file ? file : MAN_CONF_FILE);
+	else
+d116 22
+@
+
+
+1.6
+log
+@Have manpath.c properly use manpath(1), that is, using -C and -m and so on.
+This also cleans up the code a little bit.  While here, make some functions
+static that are only used within manpath.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.5 2011/12/12 02:00:49 schwarze Exp $ */
+a65 1
+	warnx(cmd);
+@
+
+
+1.5
+log
+@implement -C (alternative config file) for apropos(1) and mandocdb(8),
+including various tweaks to the whatis(8) manual;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.4 2011/11/26 22:38:11 schwarze Exp $ */
+d22 2
+a23 1
+#include <sys/types.h>
+d38 1
+d44 43
+d88 3
+d97 1
+a97 1
+		manpath_parseconf(dirs, file);
+d100 1
+d106 1
+a106 1
+void
+a143 38
+manpath_parseconf(struct manpaths *dirs, const char *file)
+{
+#ifdef	USE_MANPATH
+	FILE		*stream;
+	char		*buf;
+	size_t		 sz, bsz;
+
+	/* Open manpath(1).  Ignore errors. */
+
+	stream = popen("manpath", "r");
+	if (NULL == stream)
+		return;
+
+	buf = NULL;
+	bsz = 0;
+
+	/* Read in as much output as we can. */
+
+	do {
+		buf = mandoc_realloc(buf, bsz + 1024);
+		sz = fread(buf + (int)bsz, 1, 1024, stream);
+		bsz += sz;
+	} while (sz > 0);
+
+	if ( ! ferror(stream) && feof(stream) &&
+			bsz && '\n' == buf[bsz - 1]) {
+		buf[bsz - 1] = '\0';
+		manpath_parseline(dirs, buf);
+	}
+
+	free(buf);
+	pclose(stream);
+#else
+	manpath_manconf(dirs, file ? file : MAN_CONF_FILE);
+#endif
+}
+
+void
+@
+
+
+1.4
+log
+@Sync to OpenBSD, mostly gratuitous and whitespace differences,
+but a few serious things as well:
+* -M overrides MANPATH
+* -m prepends to the path
+* put back database close calls that got lost in mandocdb
+* missing sys/types.h in manpath.c, needed for size_t
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.3 2011/11/24 10:44:56 kristaps Exp $ */
+d39 2
+a40 1
+manpath_parse(struct manpaths *dirs, char *defp, char *auxp)
+d49 1
+a49 1
+		manpath_parseconf(dirs);
+d95 1
+a95 1
+manpath_parseconf(struct manpaths *dirs)
+d128 1
+a128 1
+	manpath_manconf(MAN_CONF_FILE, dirs);
+d144 1
+a144 1
+manpath_manconf(const char *file, struct manpaths *dirs)
+@
+
+
+1.3
+log
+@Allow man.conf file to be assignable.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.2 2011/11/24 10:43:55 kristaps Exp $ */
+d22 1
+d39 1
+a39 1
+manpath_parse(struct manpaths *dirs, char *defp, char *auxp) 
+d42 3
+a44 1
+	if (NULL != getenv("MANPATH"))
+a50 2
+
+	manpath_parseline(dirs, auxp);
+d57 1
+a57 1
+manpath_parseline(struct manpaths *dirs, char *path) 
+d73 1
+a73 1
+manpath_add(struct manpaths *dirs, const char *dir) 
+d87 1
+a87 1
+		(dirs->paths, 
+d147 1
+a147 1
+	size_t	 	 len, keysz;
+@
+
+
+1.2
+log
+@Export the manpath_manconf() function, slightly reorderng manpath.c while
+doing so.  This will be used by a jailed man.cgi, as the cache built by
+manup(8) creates a man.conf for it to use.
+@
+text
+@d1 1
+a1 1
+/*	$Id: manpath.c,v 1.1 2011/11/23 09:47:38 kristaps Exp $ */
+d126 1
+a126 1
+	manpath_manconf(dirs);
+d142 1
+a142 1
+manpath_manconf(struct manpaths *dirs)
+d151 1
+a151 1
+	if (NULL == (stream = fopen(MAN_CONF_FILE, "r")))
+@
+
+
+1.1
+log
+@Support for Open/NetBSD's /etc/man.conf and others' manpath(1).
+Most of this code (except the manpath part) written by schwarze@@.
+This isn't hooked into anything yet.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.17 2011/11/20 21:36:00 kristaps Exp $ */
+d95 1
+a96 1
+#ifdef	USE_MANPATH
+d126 19
+a173 12
+#endif
+}
+
+void
+manpath_free(struct manpaths *p)
+{
+	int		 i;
+
+	for (i = 0; i < p->sz; i++)
+		free(p->paths[i]);
+
+	free(p->paths);
+@

@@ -1,0 +1,2160 @@
+head	1.52;
+access;
+symbols
+	VERSION_1_13_3:1.43
+	VERSION_1_13_2:1.40
+	VERSION_1_12_4:1.30.2.1
+	VERSION_1_13_1:1.27
+	VERSION_1_12_3:1.21
+	VERSION_1_12_2:1.21
+	VERSION_1_12:1.30.0.2
+	VERSION_1_12_1:1.20
+	VERSION_1_12_0:1.18
+	VERSION_1_11_7:1.17
+	VERSION_1_11_6:1.17
+	VERSION_1_11_5:1.17
+	VERSION_1_11_4:1.17
+	VERSION_1_11_3:1.17
+	VERSION_1_11_2:1.12
+	VERSION_1_11_1:1.12
+	VERSION_1_10_10:1.12
+	VERSION_1_10_9:1.11
+	VERSION_1_10_8:1.10
+	VERSION_1_10_7:1.10
+	VERSION_1_10_6:1.10
+	VERSION_1_10_5:1.9
+	VERSION_1_10_5_PREPDF:1.9
+	VERSION_1_10_4:1.8
+	VERSION_1_10_3:1.6
+	VERSION_1_10_2:1.4;
+locks; strict;
+comment	@ * @;
+
+
+1.52
+date	2015.11.12.21.50.03;	author schwarze;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2015.10.12.00.08.16;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2015.09.26.00.54.04;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2015.07.17.22.38.29;	author schwarze;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2015.06.10.19.17.15;	author schwarze;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2015.04.04.17.47.18;	author schwarze;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2015.03.27.21.33.20;	author schwarze;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2015.02.16.14.11.41;	author schwarze;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2014.12.31.16.52.40;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2014.12.19.17.12.04;	author schwarze;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2014.11.20.13.56.20;	author schwarze;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2014.10.28.18.49.33;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2014.10.28.02.43.59;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2014.10.26.18.12.28;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2014.10.26.18.07.28;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2014.10.26.17.12.03;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2014.09.03.05.22.45;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2014.08.17.22.10.29;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2014.08.14.22.33.10;	author schwarze;	state Exp;
+branches
+	1.30.2.1;
+next	1.29;
+
+1.29
+date	2014.08.13.20.34.29;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2014.08.01.19.25.52;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2014.07.27.21.52.16;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2014.03.30.21.28.01;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2013.06.01.14.27.20;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.12.04.23.10.52;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.11.13.13.15.14;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.05.20.15.48.22;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.05.19.15.48.58;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.05.17.22.32.45;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.05.17.14.38.34;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.05.14.17.54.42;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.01.25.17.32.04;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.01.02.12.21.07;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.09.04.20.18.53;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.06.30.12.30.36;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.06.30.12.27.55;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.06.25.19.50.23;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.06.25.18.53.14;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.06.09.08.07.13;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.06.08.15.06.01;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.06.08.15.00.17;	author kristaps;	state Exp;
+branches;
+next	;
+
+1.30.2.1
+date	2014.08.17.22.14.28;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.52
+log
+@Never use LC_ALL.  On the one hand, it can cause misformatting.
+On the other hand, it is a security risk because it might cause
+buffer overflows.  Use LC_CTYPE only, that's all we need.
+@
+text
+@/*	$Id: term_ascii.c,v 1.51 2015/10/13 22:59:54 schwarze Exp $ */
+/*
+ * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#if HAVE_WCHAR
+#include <locale.h>
+#endif
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#if HAVE_WCHAR
+#include <wchar.h>
+#endif
+
+#include "mandoc.h"
+#include "mandoc_aux.h"
+#include "out.h"
+#include "term.h"
+#include "manconf.h"
+#include "main.h"
+
+static	struct termp	 *ascii_init(enum termenc, const struct manoutput *);
+static	int		  ascii_hspan(const struct termp *,
+				const struct roffsu *);
+static	size_t		  ascii_width(const struct termp *, int);
+static	void		  ascii_advance(struct termp *, size_t);
+static	void		  ascii_begin(struct termp *);
+static	void		  ascii_end(struct termp *);
+static	void		  ascii_endline(struct termp *);
+static	void		  ascii_letter(struct termp *, int);
+static	void		  ascii_setwidth(struct termp *, int, int);
+
+#if HAVE_WCHAR
+static	void		  locale_advance(struct termp *, size_t);
+static	void		  locale_endline(struct termp *);
+static	void		  locale_letter(struct termp *, int);
+static	size_t		  locale_width(const struct termp *, int);
+#endif
+
+
+static struct termp *
+ascii_init(enum termenc enc, const struct manoutput *outopts)
+{
+#if HAVE_WCHAR
+	char		*v;
+#endif
+	struct termp	*p;
+
+	p = mandoc_calloc(1, sizeof(struct termp));
+
+	p->line = 1;
+	p->tabwidth = 5;
+	p->defrmargin = p->lastrmargin = 78;
+	p->fontq = mandoc_reallocarray(NULL,
+	     (p->fontsz = 8), sizeof(enum termfont));
+	p->fontq[0] = p->fontl = TERMFONT_NONE;
+
+	p->begin = ascii_begin;
+	p->end = ascii_end;
+	p->hspan = ascii_hspan;
+	p->type = TERMTYPE_CHAR;
+
+	p->enc = TERMENC_ASCII;
+	p->advance = ascii_advance;
+	p->endline = ascii_endline;
+	p->letter = ascii_letter;
+	p->setwidth = ascii_setwidth;
+	p->width = ascii_width;
+
+#if HAVE_WCHAR
+	if (TERMENC_ASCII != enc) {
+
+		/*
+		 * Do not change any of this to LC_ALL.  It might break
+		 * the formatting by subtly changing the behaviour of
+		 * various functions, for example strftime(3).  As a
+		 * worst case, it might even cause buffer overflows.
+		 */
+
+		v = TERMENC_LOCALE == enc ?
+		    setlocale(LC_CTYPE, "") :
+		    setlocale(LC_CTYPE, "en_US.UTF-8");
+		if (NULL != v && MB_CUR_MAX > 1) {
+			p->enc = enc;
+			p->advance = locale_advance;
+			p->endline = locale_endline;
+			p->letter = locale_letter;
+			p->width = locale_width;
+		}
+	}
+#endif
+
+	if (outopts->mdoc) {
+		p->mdocstyle = 1;
+		p->defindent = 5;
+	}
+	if (outopts->indent)
+		p->defindent = outopts->indent;
+	if (outopts->width)
+		p->defrmargin = outopts->width;
+	if (outopts->synopsisonly)
+		p->synopsisonly = 1;
+
+	return p;
+}
+
+void *
+ascii_alloc(const struct manoutput *outopts)
+{
+
+	return ascii_init(TERMENC_ASCII, outopts);
+}
+
+void *
+utf8_alloc(const struct manoutput *outopts)
+{
+
+	return ascii_init(TERMENC_UTF8, outopts);
+}
+
+void *
+locale_alloc(const struct manoutput *outopts)
+{
+
+	return ascii_init(TERMENC_LOCALE, outopts);
+}
+
+static void
+ascii_setwidth(struct termp *p, int iop, int width)
+{
+
+	width /= 24;
+	p->rmargin = p->defrmargin;
+	if (iop > 0)
+		p->defrmargin += width;
+	else if (iop == 0)
+		p->defrmargin = width ? (size_t)width : p->lastrmargin;
+	else if (p->defrmargin > (size_t)width)
+		p->defrmargin -= width;
+	else
+		p->defrmargin = 0;
+	p->lastrmargin = p->rmargin;
+	p->rmargin = p->maxrmargin = p->defrmargin;
+}
+
+void
+ascii_sepline(void *arg)
+{
+	struct termp	*p;
+	size_t		 i;
+
+	p = (struct termp *)arg;
+	p->line += 3;
+	putchar('\n');
+	for (i = 0; i < p->defrmargin; i++)
+		putchar('-');
+	putchar('\n');
+	putchar('\n');
+}
+
+static size_t
+ascii_width(const struct termp *p, int c)
+{
+
+	return 1;
+}
+
+void
+ascii_free(void *arg)
+{
+
+	term_free((struct termp *)arg);
+}
+
+static void
+ascii_letter(struct termp *p, int c)
+{
+
+	putchar(c);
+}
+
+static void
+ascii_begin(struct termp *p)
+{
+
+	(*p->headf)(p, p->argf);
+}
+
+static void
+ascii_end(struct termp *p)
+{
+
+	(*p->footf)(p, p->argf);
+}
+
+static void
+ascii_endline(struct termp *p)
+{
+
+	p->line++;
+	putchar('\n');
+}
+
+static void
+ascii_advance(struct termp *p, size_t len)
+{
+	size_t		i;
+
+	for (i = 0; i < len; i++)
+		putchar(' ');
+}
+
+static int
+ascii_hspan(const struct termp *p, const struct roffsu *su)
+{
+	double		 r;
+
+	switch (su->unit) {
+	case SCALE_BU:
+		r = su->scale;
+		break;
+	case SCALE_CM:
+		r = su->scale * 240.0 / 2.54;
+		break;
+	case SCALE_FS:
+		r = su->scale * 65536.0;
+		break;
+	case SCALE_IN:
+		r = su->scale * 240.0;
+		break;
+	case SCALE_MM:
+		r = su->scale * 0.24;
+		break;
+	case SCALE_VS:
+	case SCALE_PC:
+		r = su->scale * 40.0;
+		break;
+	case SCALE_PT:
+		r = su->scale * 10.0 / 3.0;
+		break;
+	case SCALE_EN:
+	case SCALE_EM:
+		r = su->scale * 24.0;
+		break;
+	default:
+		abort();
+	}
+	return r > 0.0 ? r + 0.01 : r - 0.01;
+}
+
+const char *
+ascii_uc2str(int uc)
+{
+	static const char nbrsp[2] = { ASCII_NBRSP, '\0' };
+	static const char *tab[] = {
+	"<NUL>","<SOH>","<STX>","<ETX>","<EOT>","<ENQ>","<ACK>","<BEL>",
+	"<BS>",	"\t",	"<LF>",	"<VT>",	"<FF>",	"<CR>",	"<SO>",	"<SI>",
+	"<DLE>","<DC1>","<DC2>","<DC3>","<DC4>","<NAK>","<SYN>","<ETB>",
+	"<CAN>","<EM>",	"<SUB>","<ESC>","<FS>",	"<GS>",	"<RS>",	"<US>",
+	" ",	"!",	"\"",	"#",	"$",	"%",	"&",	"'",
+	"(",	")",	"*",	"+",	",",	"-",	".",	"/",
+	"0",	"1",	"2",	"3",	"4",	"5",	"6",	"7",
+	"8",	"9",	":",	";",	"<",	"=",	">",	"?",
+	"@@",	"A",	"B",	"C",	"D",	"E",	"F",	"G",
+	"H",	"I",	"J",	"K",	"L",	"M",	"N",	"O",
+	"P",	"Q",	"R",	"S",	"T",	"U",	"V",	"W",
+	"X",	"Y",	"Z",	"[",	"\\",	"]",	"^",	"_",
+	"`",	"a",	"b",	"c",	"d",	"e",	"f",	"g",
+	"h",	"i",	"j",	"k",	"l",	"m",	"n",	"o",
+	"p",	"q",	"r",	"s",	"t",	"u",	"v",	"w",
+	"x",	"y",	"z",	"{",	"|",	"}",	"~",	"<DEL>",
+	"<80>",	"<81>",	"<82>",	"<83>",	"<84>",	"<85>",	"<86>",	"<87>",
+	"<88>",	"<89>",	"<8A>",	"<8B>",	"<8C>",	"<8D>",	"<8E>",	"<8F>",
+	"<90>",	"<91>",	"<92>",	"<93>",	"<94>",	"<95>",	"<96>",	"<97>",
+	"<99>",	"<99>",	"<9A>",	"<9B>",	"<9C>",	"<9D>",	"<9E>",	"<9F>",
+	nbrsp,	"!",	"/\bc",	"GBP",	"o\bx",	"=\bY",	"|",	"<sec>",
+	"\"",	"(C)",	"_\ba",	"<<",	"~",	"",	"(R)",	"-",
+	"<deg>","+-",	"2",	"3",	"'",	",\bu",	"<par>",".",
+	",",	"1",	"_\bo",	">>",	"1/4",	"1/2",	"3/4",	"?",
+	"`\bA",	"'\bA",	"^\bA",	"~\bA",	"\"\bA","o\bA",	"AE",	",\bC",
+	"`\bE",	"'\bE",	"^\bE",	"\"\bE","`\bI",	"'\bI",	"^\bI",	"\"\bI",
+	"-\bD",	"~\bN",	"`\bO",	"'\bO",	"^\bO",	"~\bO",	"\"\bO","x",
+	"/\bO",	"`\bU",	"'\bU",	"^\bU",	"\"\bU","'\bY",	"Th",	"ss",
+	"`\ba",	"'\ba",	"^\ba",	"~\ba",	"\"\ba","o\ba",	"ae",	",\bc",
+	"`\be",	"'\be",	"^\be",	"\"\be","`\bi",	"'\bi",	"^\bi",	"\"\bi",
+	"d",	"~\bn",	"`\bo",	"'\bo",	"^\bo",	"~\bo",	"\"\bo","-:-",
+	"/\bo",	"`\bu",	"'\bu",	"^\bu",	"\"\bu","'\by",	"th",	"\"\by",
+	"A",	"a",	"A",	"a",	"A",	"a",	"'\bC",	"'\bc",
+	"^\bC",	"^\bc",	"C",	"c",	"C",	"c",	"D",	"d",
+	"/\bD",	"/\bd",	"E",	"e",	"E",	"e",	"E",	"e",
+	"E",	"e",	"E",	"e",	"^\bG",	"^\bg",	"G",	"g",
+	"G",	"g",	",\bG",	",\bg",	"^\bH",	"^\bh",	"/\bH",	"/\bh",
+	"~\bI",	"~\bi",	"I",	"i",	"I",	"i",	"I",	"i",
+	"I",	"i",	"IJ",	"ij",	"^\bJ",	"^\bj",	",\bK",	",\bk",
+	"q",	"'\bL",	"'\bl",	",\bL",	",\bl",	"L",	"l",	"L",
+	"l",	"/\bL",	"/\bl",	"'\bN",	"'\bn",	",\bN",	",\bn",	"N",
+	"n",	"'n",	"Ng",	"ng",	"O",	"o",	"O",	"o",
+	"O",	"o",	"OE",	"oe",	"'\bR",	"'\br",	",\bR",	",\br",
+	"R",	"r",	"'\bS",	"'\bs",	"^\bS",	"^\bs",	",\bS",	",\bs",
+	"S",	"s",	",\bT",	",\bt",	"T",	"t",	"/\bT",	"/\bt",
+	"~\bU",	"~\bu",	"U",	"u",	"U",	"u",	"U",	"u",
+	"U",	"u",	"U",	"u",	"^\bW",	"^\bw",	"^\bY",	"^\by",
+	"\"\bY","'\bZ",	"'\bz",	"Z",	"z",	"Z",	"z",	"s",
+	"b",	"B",	"B",	"b",	"6",	"6",	"O",	"C",
+	"c",	"D",	"D",	"D",	"d",	"d",	"3",	"@@",
+	"E",	"F",	",\bf",	"G",	"G",	"hv",	"I",	"/\bI",
+	"K",	"k",	"/\bl",	"l",	"W",	"N",	"n",	"~\bO",
+	"O",	"o",	"OI",	"oi",	"P",	"p",	"YR",	"2",
+	"2",	"SH",	"sh",	"t",	"T",	"t",	"T",	"U",
+	"u",	"Y",	"V",	"Y",	"y",	"/\bZ",	"/\bz",	"ZH",
+	"ZH",	"zh",	"zh",	"/\b2",	"5",	"5",	"ts",	"w",
+	"|",	"||",	"|=",	"!",	"DZ",	"Dz",	"dz",	"LJ",
+	"Lj",	"lj",	"NJ",	"Nj",	"nj",	"A",	"a",	"I",
+	"i",	"O",	"o",	"U",	"u",	"U",	"u",	"U",
+	"u",	"U",	"u",	"U",	"u",	"@@",	"A",	"a",
+	"A",	"a",	"AE",	"ae",	"/\bG",	"/\bg",	"G",	"g",
+	"K",	"k",	"O",	"o",	"O",	"o",	"ZH",	"zh",
+	"j",	"DZ",	"Dz",	"dz",	"'\bG",	"'\bg",	"HV",	"W",
+	"`\bN",	"`\bn",	"A",	"a",	"'\bAE","'\bae","O",	"o"};
+
+	assert(uc >= 0);
+	if ((size_t)uc < sizeof(tab)/sizeof(tab[0]))
+		return tab[uc];
+	return mchars_uc2str(uc);
+}
+
+#if HAVE_WCHAR
+static size_t
+locale_width(const struct termp *p, int c)
+{
+	int		rc;
+
+	if (c == ASCII_NBRSP)
+		c = ' ';
+	rc = wcwidth(c);
+	if (rc < 0)
+		rc = 0;
+	return rc;
+}
+
+static void
+locale_advance(struct termp *p, size_t len)
+{
+	size_t		i;
+
+	for (i = 0; i < len; i++)
+		putwchar(L' ');
+}
+
+static void
+locale_endline(struct termp *p)
+{
+
+	p->line++;
+	putwchar(L'\n');
+}
+
+static void
+locale_letter(struct termp *p, int c)
+{
+
+	putwchar(c);
+}
+#endif
+@
+
+
+1.51
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.50 2015/10/12 00:08:16 schwarze Exp $ */
+d91 8
+d100 1
+a100 1
+		    setlocale(LC_ALL, "") :
+@
+
+
+1.50
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.49 2015/10/06 18:32:20 schwarze Exp $ */
+d41 1
+a41 2
+static	struct termp	 *ascii_init(enum termenc, const struct mchars *,
+				const struct manoutput *);
+d61 1
+a61 2
+ascii_init(enum termenc enc, const struct mchars *mchars,
+	const struct manoutput *outopts)
+a69 1
+	p->symtab = mchars;
+d119 1
+a119 1
+ascii_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+d122 1
+a122 1
+	return ascii_init(TERMENC_ASCII, mchars, outopts);
+d126 1
+a126 1
+utf8_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+d129 1
+a129 1
+	return ascii_init(TERMENC_UTF8, mchars, outopts);
+d133 1
+a133 1
+locale_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+d136 1
+a136 1
+	return ascii_init(TERMENC_LOCALE, mchars, outopts);
+@
+
+
+1.49
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.48 2015/09/26 00:54:04 schwarze Exp $ */
+a248 1
+		/* FALLTHROUGH */
+a255 1
+		/* FALLTHROUGH */
+@
+
+
+1.48
+log
+@/* NOTREACHED */ after abort() is silly, delete it
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.47 2015/07/17 22:38:29 schwarze Exp $ */
+d118 1
+a118 1
+	return(p);
+d125 1
+a125 1
+	return(ascii_init(TERMENC_ASCII, mchars, outopts));
+d132 1
+a132 1
+	return(ascii_init(TERMENC_UTF8, mchars, outopts));
+d139 1
+a139 1
+	return(ascii_init(TERMENC_LOCALE, mchars, outopts));
+d179 1
+a179 1
+	return(1);
+d264 1
+a264 1
+	return(r > 0.0 ? r + 0.01 : r - 0.01);
+d339 2
+a340 2
+		return(tab[uc]);
+	return(mchars_uc2str(uc));
+d354 1
+a354 1
+	return(rc);
+@
+
+
+1.47
+log
+@Initial, still somewhat experimental implementation to leverage
+less(1) -T and :t ctags(1)-like functionality to jump to the
+definitions of various terms inside manual pages.
+To be polished in the tree, so bear with me and report issues.
+
+Technically, if less(1) is used as a pager, information is collected
+by the mdoc(7) terminal formatter, first stored using the ohash
+library, then ultimately written to a temporary file which is passed
+to less via -T.  No change intended for other output formatters or
+when running without a pager.
+
+Based on an idea from Kristaps using feedback from many, in particular
+phessler@@ nicm@@ millert@@ halex@@ doug@@ kspillner@@ deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.46 2015/06/10 19:17:15 schwarze Exp $ */
+a262 1
+		/* NOTREACHED */
+@
+
+
+1.46
+log
+@Avoid warning "unused variable" when compiling without HAVE_WCHAR.
+Issue found on Debian by Markus <Waldeck at gmx dot de>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.45 2015/04/04 17:47:18 schwarze Exp $ */
+d73 1
+d167 1
+d214 1
+d371 1
+@
+
+
+1.45
+log
+@Rounding rules for horizontal scaling widths are more complicated.
+There is a first rounding to basic units on the input side.
+After that, rounding rules differ between requests and macros.
+Requests round to the nearest possible character position.
+Macros round to the next character position to the left.
+
+Implement that by changing the return value of term_hspan()
+to basic units and leaving the second scaling and rounding stage
+to the formatters instead of doing it in the terminal handler.
+
+Improves for example argtable2(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.44 2015/03/27 21:33:20 schwarze Exp $ */
+d65 1
+d67 1
+@
+
+
+1.44
+log
+@Actually use the new man.conf(5) "output" directive.
+Additional functionality, yet minus 45 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.43 2015/02/16 14:11:41 schwarze Exp $ */
+d43 1
+a43 1
+static	double		  ascii_hspan(const struct termp *,
+d51 1
+a51 1
+static	void		  ascii_setwidth(struct termp *, int, size_t);
+d140 1
+a140 1
+ascii_setwidth(struct termp *p, int iop, size_t width)
+d143 1
+d148 2
+a149 2
+		p->defrmargin = width ? width : p->lastrmargin;
+	else if (p->defrmargin > width)
+d222 1
+a222 1
+static double
+a226 5
+	/*
+	 * Approximate based on character width.
+	 * None of these will be actually correct given that an inch on
+	 * the screen depends on character size, terminal, etc., etc.
+	 */
+d229 1
+a229 1
+		r = su->scale * 10.0 / 240.0;
+d232 1
+a232 1
+		r = su->scale * 10.0 / 2.54;
+d235 1
+a235 1
+		r = su->scale * 2730.666;
+d238 1
+a238 1
+		r = su->scale * 10.0;
+d241 1
+a241 1
+		r = su->scale / 100.0;
+d243 2
+d246 1
+a246 1
+		r = su->scale * 10.0 / 6.0;
+d249 1
+a249 4
+		r = su->scale * 10.0 / 72.0;
+		break;
+	case SCALE_VS:
+		r = su->scale * 2.0 - 1.0;
+d254 1
+a254 1
+		r = su->scale;
+d260 1
+a260 2
+
+	return(r);
+@
+
+
+1.43
+log
+@Clamp width and indent settings to sensible values.
+Ignore errors for now.
+Patch from tedu@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.42 2014/12/31 16:52:40 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d38 1
+d41 2
+a42 2
+static	struct termp	 *ascii_init(enum termenc,
+				const struct mchars *, char *);
+d62 2
+a63 1
+ascii_init(enum termenc enc, const struct mchars *mchars, char *outopts)
+a64 1
+	const char	*toks[5];
+a66 2
+	const char	*errstr;
+	int		num;
+d104 10
+a113 36
+	toks[0] = "indent";
+	toks[1] = "width";
+	toks[2] = "mdoc";
+	toks[3] = "synopsis";
+	toks[4] = NULL;
+
+	while (outopts && *outopts)
+		switch (getsubopt(&outopts, UNCONST(toks), &v)) {
+		case 0:
+			num = strtonum(v, 0, 1000, &errstr);
+			if (!errstr)
+				p->defindent = num;
+			break;
+		case 1:
+			num = strtonum(v, 0, 1000, &errstr);
+			if (!errstr)
+				p->defrmargin = num;
+			break;
+		case 2:
+			/*
+			 * Temporary, undocumented mode
+			 * to imitate mdoc(7) output style.
+			 */
+			p->mdocstyle = 1;
+			p->defindent = 5;
+			break;
+		case 3:
+			p->synopsisonly = 1;
+			break;
+		default:
+			break;
+		}
+
+	/* Enforce a lower boundary. */
+	if (p->defrmargin < 58)
+		p->defrmargin = 58;
+d119 1
+a119 1
+ascii_alloc(const struct mchars *mchars, char *outopts)
+d126 1
+a126 1
+utf8_alloc(const struct mchars *mchars, char *outopts)
+d133 1
+a133 1
+locale_alloc(const struct mchars *mchars, char *outopts)
+@
+
+
+1.42
+log
+@When showing more than one formatted manual page, insert horizontal lines
+between pages.  Suggested by Theo Buehler <theo at math dot ethz dot ch>.
+Even in UTF-8 output mode, do not use fancy line drawing characters such
+that you can easily use /^--- to skip to the next manual in your pager.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.41 2014/12/19 17:12:04 schwarze Exp $ */
+d66 2
+d114 3
+a116 1
+			p->defindent = (size_t)atoi(v);
+d119 3
+a121 1
+			p->defrmargin = (size_t)atoi(v);
+@
+
+
+1.41
+log
+@Enforcing an arbitrary, implementation dependent, undocumented limit
+by calling assert() when valid user input exceeds it is a bad idea.
+Allocate the terminal font stack dynamically instead of crashing
+above 10 entries.  Issue found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.40 2014/11/20 13:56:20 schwarze Exp $ */
+d177 14
+@
+
+
+1.40
+log
+@Prevent negative arguments to the .ll request from causing integer
+underflow.  Found while preparing an audit of termp.rmargin.
+
+Overflow can also happen, but i see no sane way to deal with it,
+so just let it happen.  It doesn't happen for any sane input anyway,
+groff behaviour is undefined, and the resulting values are legal,
+even though they are useless.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.39 2014/10/28 18:49:33 schwarze Exp $ */
+d72 3
+@
+
+
+1.39
+log
+@In -Tascii mode, print "<?>" only for Unicode escapes of unknown
+representation, not for character escapes with unknown names.
+According to groff, the latter produce no output, and we now warn
+about them.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.38 2014/10/28 17:36:19 schwarze Exp $ */
+d162 1
+a162 1
+	if (0 < iop)
+d164 3
+a166 1
+	else if (0 > iop)
+d169 1
+a169 1
+		p->defrmargin = width ? width : p->lastrmargin;
+@
+
+
+1.38
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.37 2014/10/28 02:43:59 schwarze Exp $ */
+d22 1
+d341 1
+a341 2
+	if (uc < 0)
+		return("<?>");
+@
+
+
+1.37
+log
+@Refine -Tascii rendering of Unicode characters, mostly to better agree
+with groff, in particular in cases where groff uses backspace overstrike.
+In two cases, agreement is impossible because groff clobbers the
+previous line: \(*G \(*S
+In a number of cases, groff rendering is so misleading that i chose
+to render differently: \(Sd \(TP \(Tp \(Po \(ps \(sc \(r! \(r? \(de
+While here, also correct the \(la and \(ra Unicode code points.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.36 2014/10/26 18:12:28 schwarze Exp $ */
+d39 2
+a40 1
+static	struct termp	 *ascii_init(enum termenc, char *);
+d60 1
+a60 1
+ascii_init(enum termenc enc, char *outopts)
+d68 1
+d136 1
+a136 1
+ascii_alloc(char *outopts)
+d139 1
+a139 1
+	return(ascii_init(TERMENC_ASCII, outopts));
+d143 1
+a143 1
+utf8_alloc(char *outopts)
+d146 1
+a146 1
+	return(ascii_init(TERMENC_UTF8, outopts));
+d150 1
+a150 1
+locale_alloc(char *outopts)
+d153 1
+a153 1
+	return(ascii_init(TERMENC_LOCALE, outopts));
+@
+
+
+1.36
+log
+@Grrr, patch(1) merged the new function to the wrong place in this file.
+Resync with OpenBSD.  No code change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.35 2014/10/26 18:07:28 schwarze Exp $ */
+d293 21
+a313 21
+	nbrsp,	"!",	"c",	"GBP",	"$?",	"Y=",	"|",	"<sec>",
+	"\"",	"(C)",	"a.",	"<<",	"<not>","",	"(R)",	"-",
+	"<deg>","+-",	"^2",	"^3",	"'",	"<my>",	"<par>","*",
+	",",	"^1",	"o.",	">>",	"1/4",	"1/2",	"3/4",	"?",
+	"A",	"A",	"A",	"A",	"Ae",	"Aa",	"AE",	"C",
+	"E",	"E",	"E",	"E",	"I",	"I",	"I",	"I",
+	"D",	"N",	"O",	"O",	"O",	"O",	"Oe",	"*",
+	"Oe",	"U",	"U",	"U",	"Ue",	"Y",	"Th",	"ss",
+	"a",	"a",	"a",	"a",	"ae",	"aa",	"ae",	"c",
+	"e",	"e",	"e",	"e",	"i",	"i",	"i",	"i",
+	"d",	"n",	"o",	"o",	"o",	"o",	"oe",	"/",
+	"oe",	"u",	"u",	"u",	"ue",	"y",	"th",	"y",
+	"A",	"a",	"A",	"a",	"A",	"a",	"C",	"c",
+	"C",	"c",	"C",	"c",	"C",	"c",	"D",	"d",
+	"D",	"d",	"E",	"e",	"E",	"e",	"E",	"e",
+	"E",	"e",	"E",	"e",	"G",	"g",	"G",	"g",
+	"G",	"g",	"G",	"g",	"H",	"h",	"H",	"h",
+	"I",	"i",	"I",	"i",	"I",	"i",	"I",	"i",
+	"I",	"i",	"IJ",	"ij",	"J",	"j",	"K",	"k",
+	"q",	"L",	"l",	"L",	"l",	"L",	"l",	"L",
+	"l",	"L",	"l",	"N",	"n",	"N",	"n",	"N",
+d315 6
+a320 6
+	"O",	"o",	"OE",	"oe",	"R",	"r",	"R",	"r",
+	"R",	"r",	"S",	"s",	"S",	"s",	"S",	"s",
+	"S",	"s",	"T",	"t",	"T",	"t",	"T",	"t",
+	"U",	"u",	"U",	"u",	"U",	"u",	"U",	"u",
+	"U",	"u",	"U",	"u",	"W",	"w",	"Y",	"y",
+	"Y",	"Z",	"z",	"Z",	"z",	"Z",	"z",	"s",
+d323 2
+a324 2
+	"E",	"F",	"f",	"G",	"G",	"hv",	"I",	"I",
+	"K",	"k",	"l",	"l",	"W",	"N",	"n",	"O",
+d327 2
+a328 2
+	"u",	"Y",	"V",	"Y",	"y",	"Z",	"z",	"ZH",
+	"ZH",	"zh",	"zh",	"2",	"5",	"5",	"ts",	"w",
+d333 1
+a333 1
+	"A",	"a",	"AE",	"ae",	"G",	"g",	"G",	"g",
+d335 2
+a336 2
+	"j",	"DZ",	"D",	"dz",	"G",	"g",	"HV",	"W",
+	"N",	"n",	"A",	"a",	"AE",	"ae",	"O",	"o"};
+@
+
+
+1.35
+log
+@In -Tascii mode, provide approximations even for some Unicode escape
+sequences above codepoint 512 by doing a reverse lookup in the
+existing mandoc_char(7) character table.
+
+Again, groff isn't smart enough to do this and silently discards such
+escape sequences without printing anything.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.34 2014/10/26 17:12:03 schwarze Exp $ */
+a168 77
+const char *
+ascii_uc2str(int uc)
+{
+	static const char nbrsp[2] = { ASCII_NBRSP, '\0' };
+	static const char *tab[] = {
+	"<NUL>","<SOH>","<STX>","<ETX>","<EOT>","<ENQ>","<ACK>","<BEL>",
+	"<BS>",	"\t",	"<LF>",	"<VT>",	"<FF>",	"<CR>",	"<SO>",	"<SI>",
+	"<DLE>","<DC1>","<DC2>","<DC3>","<DC4>","<NAK>","<SYN>","<ETB>",
+	"<CAN>","<EM>",	"<SUB>","<ESC>","<FS>",	"<GS>",	"<RS>",	"<US>",
+	" ",	"!",	"\"",	"#",	"$",	"%",	"&",	"'",
+	"(",	")",	"*",	"+",	",",	"-",	".",	"/",
+	"0",	"1",	"2",	"3",	"4",	"5",	"6",	"7",
+	"8",	"9",	":",	";",	"<",	"=",	">",	"?",
+	"@@",	"A",	"B",	"C",	"D",	"E",	"F",	"G",
+	"H",	"I",	"J",	"K",	"L",	"M",	"N",	"O",
+	"P",	"Q",	"R",	"S",	"T",	"U",	"V",	"W",
+	"X",	"Y",	"Z",	"[",	"\\",	"]",	"^",	"_",
+	"`",	"a",	"b",	"c",	"d",	"e",	"f",	"g",
+	"h",	"i",	"j",	"k",	"l",	"m",	"n",	"o",
+	"p",	"q",	"r",	"s",	"t",	"u",	"v",	"w",
+	"x",	"y",	"z",	"{",	"|",	"}",	"~",	"<DEL>",
+	"<80>",	"<81>",	"<82>",	"<83>",	"<84>",	"<85>",	"<86>",	"<87>",
+	"<88>",	"<89>",	"<8A>",	"<8B>",	"<8C>",	"<8D>",	"<8E>",	"<8F>",
+	"<90>",	"<91>",	"<92>",	"<93>",	"<94>",	"<95>",	"<96>",	"<97>",
+	"<99>",	"<99>",	"<9A>",	"<9B>",	"<9C>",	"<9D>",	"<9E>",	"<9F>",
+	nbrsp,	"!",	"c",	"GBP",	"$?",	"Y=",	"|",	"<sec>",
+	"\"",	"(C)",	"a.",	"<<",	"<not>","",	"(R)",	"-",
+	"<deg>","+-",	"^2",	"^3",	"'",	"<my>",	"<par>","*",
+	",",	"^1",	"o.",	">>",	"1/4",	"1/2",	"3/4",	"?",
+	"A",	"A",	"A",	"A",	"Ae",	"Aa",	"AE",	"C",
+	"E",	"E",	"E",	"E",	"I",	"I",	"I",	"I",
+	"D",	"N",	"O",	"O",	"O",	"O",	"Oe",	"*",
+	"Oe",	"U",	"U",	"U",	"Ue",	"Y",	"Th",	"ss",
+	"a",	"a",	"a",	"a",	"ae",	"aa",	"ae",	"c",
+	"e",	"e",	"e",	"e",	"i",	"i",	"i",	"i",
+	"d",	"n",	"o",	"o",	"o",	"o",	"oe",	"/",
+	"oe",	"u",	"u",	"u",	"ue",	"y",	"th",	"y",
+	"A",	"a",	"A",	"a",	"A",	"a",	"C",	"c",
+	"C",	"c",	"C",	"c",	"C",	"c",	"D",	"d",
+	"D",	"d",	"E",	"e",	"E",	"e",	"E",	"e",
+	"E",	"e",	"E",	"e",	"G",	"g",	"G",	"g",
+	"G",	"g",	"G",	"g",	"H",	"h",	"H",	"h",
+	"I",	"i",	"I",	"i",	"I",	"i",	"I",	"i",
+	"I",	"i",	"IJ",	"ij",	"J",	"j",	"K",	"k",
+	"q",	"L",	"l",	"L",	"l",	"L",	"l",	"L",
+	"l",	"L",	"l",	"N",	"n",	"N",	"n",	"N",
+	"n",	"'n",	"Ng",	"ng",	"O",	"o",	"O",	"o",
+	"O",	"o",	"OE",	"oe",	"R",	"r",	"R",	"r",
+	"R",	"r",	"S",	"s",	"S",	"s",	"S",	"s",
+	"S",	"s",	"T",	"t",	"T",	"t",	"T",	"t",
+	"U",	"u",	"U",	"u",	"U",	"u",	"U",	"u",
+	"U",	"u",	"U",	"u",	"W",	"w",	"Y",	"y",
+	"Y",	"Z",	"z",	"Z",	"z",	"Z",	"z",	"s",
+	"b",	"B",	"B",	"b",	"6",	"6",	"O",	"C",
+	"c",	"D",	"D",	"D",	"d",	"d",	"3",	"@@",
+	"E",	"F",	"f",	"G",	"G",	"hv",	"I",	"I",
+	"K",	"k",	"l",	"l",	"W",	"N",	"n",	"O",
+	"O",	"o",	"OI",	"oi",	"P",	"p",	"YR",	"2",
+	"2",	"SH",	"sh",	"t",	"T",	"t",	"T",	"U",
+	"u",	"Y",	"V",	"Y",	"y",	"Z",	"z",	"ZH",
+	"ZH",	"zh",	"zh",	"2",	"5",	"5",	"ts",	"w",
+	"|",	"||",	"|=",	"!",	"DZ",	"Dz",	"dz",	"LJ",
+	"Lj",	"lj",	"NJ",	"Nj",	"nj",	"A",	"a",	"I",
+	"i",	"O",	"o",	"U",	"u",	"U",	"u",	"U",
+	"u",	"U",	"u",	"U",	"u",	"@@",	"A",	"a",
+	"A",	"a",	"AE",	"ae",	"G",	"g",	"G",	"g",
+	"K",	"k",	"O",	"o",	"O",	"o",	"ZH",	"zh",
+	"j",	"DZ",	"D",	"dz",	"G",	"g",	"HV",	"W",
+	"N",	"n",	"A",	"a",	"AE",	"ae",	"O",	"o"};
+
+	if (uc < 0)
+		return("<?>");
+	if ((size_t)uc < sizeof(tab)/sizeof(tab[0]))
+		return(tab[uc]);
+	return(mchars_uc2str(uc));
+}
+
+d268 77
+@
+
+
+1.34
+log
+@Improve -Tascii output for Unicode escape sequences: For the first 512
+code points, provide ASCII approximations.  This is already much better
+than what groff does, which prints nothing for most code points.
+
+A few minor fixes while here:
+* Handle Unicode escape sequences in the ASCII range.
+* In case of errors, use the REPLACEMENT CHARACTER U+FFFD for -Tutf8
+and the string "<?>" for -Tascii output.
+* Handle all one-character escape sequences in mchars_spec2{cp,str}()
+and remove the workarounds on the higher level.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.33 2014/09/03 05:22:45 schwarze Exp $ */
+d239 1
+a239 1
+	if (uc < 0 || (size_t)uc >= sizeof(tab)/sizeof(tab[0]))
+d241 3
+a243 1
+	return(tab[uc]);
+@
+
+
+1.33
+log
+@Implement the traditional -h option for man(1): show the SYNOPSIS only.
+As usual, we get mandoc -h and apropos -h for free.
+Try stuff like "apropos -h In=dirent" or "apropos -h Fa=timespec".
+
+Only useful for terminal output, so -Tps, -Tpdf, -Thtml ignore -h for now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.32 2014/08/17 22:10:29 schwarze Exp $ */
+d169 75
+@
+
+
+1.32
+log
+@While all current callers pass valid data to ascii_hspan() only,
+it's safer to assume incoming enum data might be invalid
+and catch it instead of happily returning an unitialized int.
+No functional change right now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.31 2014/08/16 19:00:01 schwarze Exp $ */
+d61 1
+a61 1
+	const char	*toks[4];
+d100 2
+a101 1
+	toks[3] = NULL;
+d119 3
+@
+
+
+1.31
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.30 2014/08/14 22:33:10 schwarze Exp $ */
+d256 1
+a256 1
+	case SCALE_MAX:
+@
+
+
+1.30
+log
+@Some compilers apparently worry that abort() might return
+and then throw a "may be used uninitialized" warning, so
+sprinkle some /* NOTREACHED */.  No functional change.
+Noticed by Thomas Klausner <wiz at NetBSD dot org>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.29 2014/08/13 20:34:29 kristaps Exp $ */
+d22 1
+a22 1
+#ifdef USE_WCHAR
+d29 1
+a29 1
+#ifdef USE_WCHAR
+a38 11
+/* 
+ * Sadly, this doesn't seem to be defined on systems even when they
+ * support it.  For the time being, remove it and let those compiling
+ * the software decide for themselves what to use.
+ */
+#if 0
+#if ! defined(__STDC_ISO_10646__)
+# undef USE_WCHAR
+#endif
+#endif
+
+d50 1
+a50 1
+#ifdef	USE_WCHAR
+d82 1
+a82 1
+#ifdef	USE_WCHAR
+d264 1
+a264 1
+#ifdef USE_WCHAR
+@
+
+
+1.30.2.1
+log
+@While all current callers pass valid data to ascii_hspan() only,
+it's safer to assume incoming enum data might be invalid
+and catch it instead of happily returning an unitialized int.
+No functional change right now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.30 2014/08/14 22:33:10 schwarze Exp $ */
+d267 1
+a267 1
+	default:
+@
+
+
+1.29
+log
+@Begin cleaning up scaling units.
+Start with the horizontal terminal specifiers, making sure that they match
+up with troff.
+Then move on to PS, PDF, and HTML, noting that we stick to the terminal
+default width for "u".
+Lastly, fix some completely-wrong documentation and note that we diverge
+from troff w/r/t "u".
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.28 2014/08/10 23:54:41 schwarze Exp $ */
+d263 1
+d269 1
+a269 1
+		break;
+@
+
+
+1.28
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.27 2014/08/01 19:25:52 schwarze Exp $ */
+d233 3
+a235 2
+	 * Approximate based on character width.  These are generated
+	 * entirely by eyeballing the screen, but appear to be correct.
+a236 1
+
+d238 3
+d242 4
+a245 1
+		r = su->scale * 4.0;
+d250 3
+d254 1
+a254 1
+		r = (su->scale * 10.0) / 6.0;
+d257 1
+a257 4
+		r = (su->scale * 10.0) / 72.0;
+		break;
+	case SCALE_MM:
+		r = su->scale / 1000.0;
+d262 2
+a263 1
+	default:
+d266 3
+@
+
+
+1.27
+log
+@Clarity with respect to floating point handling:
+Write double constants as double rather than integer literals.
+Remove useless explicit (double) cast done at one place and nowhere else.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.26 2014/07/27 21:52:16 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+a18 1
+#endif
+d23 1
+a23 1
+# include <locale.h>
+d30 1
+a30 1
+# include <wchar.h>
+@
+
+
+1.26
+log
+@Even for UTF-8 output, a non-breaking space character has the same width
+as a normal space character, and not width 0.  Bug reported by bentley@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.25 2014/04/20 16:46:05 schwarze Exp $ */
+d241 1
+a241 1
+		r = 4 * su->scale;
+d244 1
+a244 1
+		r = 10 * su->scale;
+d247 1
+a247 1
+		r = (10 * su->scale) / 6;
+d250 1
+a250 1
+		r = (10 * su->scale) / 72;
+d253 1
+a253 1
+		r = su->scale / 1000;
+d256 1
+a256 1
+		r = su->scale * 2 - 1;
+@
+
+
+1.25
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.24 2014/03/30 21:28:01 schwarze Exp $ */
+d272 6
+a277 1
+	return((rc = wcwidth(c)) < 0 ? 0 : rc);
+@
+
+
+1.24
+log
+@Support relative arguments to .ll (increase or decrease line length).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.23 2014/03/30 19:47:48 schwarze Exp $ */
+d70 1
+d98 2
+a99 2
+			setlocale(LC_ALL, "") :
+			setlocale(LC_CTYPE, "en_US.UTF-8");
+d117 1
+a117 1
+		case (0):
+d120 1
+a120 1
+		case (1):
+d123 1
+a123 1
+		case (2):
+a155 1
+
+a177 1
+/* ARGSUSED */
+a191 1
+/* ARGSUSED */
+d195 1
+a195 1
+	
+a212 1
+/* ARGSUSED */
+a219 1
+/* ARGSUSED */
+d223 1
+a223 1
+	size_t	 	i;
+a228 1
+/* ARGSUSED */
+d240 1
+a240 1
+	case (SCALE_CM):
+d243 1
+a243 1
+	case (SCALE_IN):
+d246 1
+a246 1
+	case (SCALE_PC):
+d249 1
+a249 1
+	case (SCALE_PT):
+d252 1
+a252 1
+	case (SCALE_MM):
+d255 1
+a255 1
+	case (SCALE_VS):
+a266 1
+/* ARGSUSED */
+a274 1
+/* ARGSUSED */
+d278 1
+a278 1
+	size_t	 	i;
+a283 1
+/* ARGSUSED */
+a290 1
+/* ARGSUSED */
+d294 1
+a294 1
+	
+@
+
+
+1.23
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.22 2014/03/23 11:25:26 schwarze Exp $ */
+d61 1
+a61 1
+static	void		  ascii_setwidth(struct termp *, size_t);
+d164 1
+a164 1
+ascii_setwidth(struct termp *p, size_t width)
+a165 1
+	size_t	 lastwidth;
+d167 9
+a175 4
+	lastwidth = p->defrmargin;
+	p->rmargin = p->maxrmargin = p->defrmargin =
+	    width ? width : p->lastrmargin;
+	p->lastrmargin = lastwidth;
+@
+
+
+1.22
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.21 2013/06/01 14:27:20 schwarze Exp $ */
+d4 1
+d61 1
+d80 1
+a80 1
+	p->defrmargin = 78;
+d91 1
+d163 11
+@
+
+
+1.21
+log
+@Use a standard locale name, "UTF-8" is an ugly non-standard alias
+that doesn't work on OpenBSD.
+OK tedu@@ naddy@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.20 2011/12/04 23:10:52 schwarze Exp $ */
+a22 1
+#include <assert.h>
+d35 1
+@
+
+
+1.20
+log
+@Implement mdoc(7)-like output style variant for man(7) documents:
+* one instead of three blank lines after the page header;
+* one instead of three blank lines before the page footer;
+* source instead of title(section) in the lower right corner.
+Select this style variant with the undocumented command line option -Omdoc.
+In the long run, we hope to unify the ouput of both languages and
+to pull this out again, but that requires coordination with groff.
+
+Grudgingly ok and, (as usual,-) more comments requested by  kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.19 2011/11/13 13:15:14 schwarze Exp $ */
+a75 1
+	p->enc = enc;
+d95 1
+a95 1
+			setlocale(LC_CTYPE, "UTF-8");
+@
+
+
+1.19
+log
+@Make the default left text margin configurable from the command line,
+just like the default right margin already is.  This may be useful for
+people with expensive screen real estate.  Besides, it helps automated
+man(7) to mdoc(7) output comparisons to validate -Tman output.
+ok kristaps@@ on an earlier version
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.18 2011/09/18 14:14:15 schwarze Exp $ */
+d71 1
+a71 1
+	const char	*toks[3];
+d109 2
+a110 1
+	toks[2] = NULL;
+d120 8
+@
+
+
+1.18
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.17 2011/05/20 15:48:22 kristaps Exp $ */
+d71 1
+a71 1
+	const char	*toks[2];
+d107 3
+a109 2
+	toks[0] = "width";
+	toks[1] = NULL;
+d114 3
+@
+
+
+1.17
+log
+@Flip on -Tutf8 backend support.  This forces the UTF-8 LC_CTYPE and does
+little else.  Also remove the check for __STDC_ISO_10646__.  It turns
+out that very few systems---even those that support it---actually
+declare this and it's just causing problems instead of being useful.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.16 2011/05/19 15:48:58 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.16
+log
+@It seems that __STDC_ISO_10646__ isn't defined even where it can be
+defined, so remove the check for it and leave it up to people compiling
+the software (DOWNSTREAM) to take care of this.  This will eventually
+need to be fixed up with a proper non-10646 converter and so on, but
+this is a simple start.  While here, strengthen then language in the
+Makefile to this effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.15 2011/05/17 22:32:45 kristaps Exp $ */
+d92 6
+a97 3
+#if defined (USE_WCHAR)
+	if (TERMENC_LOCALE == enc)
+		if (setlocale(LC_ALL, "") && MB_CUR_MAX > 1) {
+d104 1
+d134 8
+@
+
+
+1.15
+log
+@Locale support.  I'm checking this in to clean up fall-out in-tree, but
+it looks pretty good.  Basically, the -Tlocale option propogates into
+term_ascii.c, where we set locale-specific console call-backs IFF (1)
+setlocale() works; (2) locale support is compiled in (see Makefile for
+-DUSE_WCHAR); (3) the internal structure of wchar_t maps directly to
+Unicode codepoints as defined by __STDC_ISO_10646__; and (4) the console
+supports multi-byte characters.
+
+To date, this configuration only supports GNU/Linux.  OpenBSD doesn't
+export __STDC_ISO_10646__ although I'm told by stsp@@openbsd.org that it
+should (it has the correct map).  Apparently FreeBSD is the same way.
+NetBSD?  Don't know.  Apple also supports this, but doesn't define the
+macro.  Special-casing!
+
+Benchmark: -Tlocale incurs less than 0.2 factor overhead when run
+through several thousand manuals when UTF8 output is enabled.  Native
+mode (whether directly -Tascii or through no locale or whatever) is
+UNCHANGED: the function callbacks are the same as before.
+
+Note.  If the underlying system does NOT support STDC_ISO_10646, there
+is a "slow" version possible with iconv or other means of flipping from
+a Unicode codepoint to a wchar_t.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.14 2011/05/17 14:38:34 kristaps Exp $ */
+d40 6
+d49 1
+@
+
+
+1.14
+log
+@Add mode for -Tlocale.  This mode, with this commit, behaves exactly
+like -Tascii.  While adding this, inline term_alloc() (was a one-liner),
+remove some switches around the terminal encoding for the symbol table
+(unnecessary), and split out ascii_alloc() into ascii_init(), which is
+also called from locale_init().
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.13 2011/05/14 17:54:42 kristaps Exp $ */
+d24 3
+d31 3
+d40 4
+d54 7
+a73 1
+	p->advance = ascii_advance;
+d76 5
+a81 1
+	p->hspan = ascii_hspan;
+a82 1
+	p->type = TERMTYPE_CHAR;
+d85 11
+a136 1
+
+a143 1
+
+a148 1
+	/* LINTED */
+a151 1
+
+a158 1
+
+a165 1
+
+a173 1
+
+a179 1
+	/* Just print whitespace on the terminal. */
+a183 1
+
+d222 36
+@
+
+
+1.13
+log
+@Make character engine (-Tascii, -Tpdf, -Tps) ready for Unicode: make buffer
+consist of type "int".  This will take more work (especially in encode and
+friends), but this is a strong start.  This commit also consists of some
+harmless lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.12 2011/01/25 17:32:04 kristaps Exp $ */
+d34 1
+d44 2
+a45 3
+
+void *
+ascii_alloc(char *outopts)
+a46 1
+	struct termp	*p;
+d49 1
+d51 2
+a52 1
+	p = term_alloc(TERMENC_ASCII);
+d85 13
+@
+
+
+1.12
+log
+@Remove unnecessary conditional...
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.11 2011/01/02 12:21:07 kristaps Exp $ */
+d36 1
+a36 1
+static	size_t		  ascii_width(const struct termp *, char);
+d41 1
+a41 1
+static	void		  ascii_letter(struct termp *, char);
+d87 1
+a87 1
+ascii_width(const struct termp *p, char c)
+d104 1
+a104 1
+ascii_letter(struct termp *p, char c)
+@
+
+
+1.11
+log
+@Turn on -Tascii tbl printing.  The output still has some issues---I'm
+not sure whether it's in the header calculation or term.c squashing
+spaces or whatever, but let's get this in for general testing as soon as
+possible.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.10 2010/09/04 20:18:53 kristaps Exp $ */
+d51 1
+a51 2
+	if (NULL == (p = term_alloc(TERMENC_ASCII)))
+		return(NULL);
+@
+
+
+1.10
+log
+@Churny commit to quiet lint.  No functional changes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.9 2010/07/13 23:53:20 schwarze Exp $ */
+d29 1
+@
+
+
+1.9
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.8 2010/06/30 12:30:36 kristaps Exp $ */
+d107 1
+@
+
+
+1.8
+log
+@Pushed normalisation of scaling units into term_hspan().
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.7 2010/06/30 12:27:55 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.7
+log
+@Move term_hspan() calculation into the output devices, where it belongs.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.6 2010/06/25 19:50:23 kristaps Exp $ */
+d33 1
+a33 1
+static	size_t		  ascii_hspan(const struct termp *,
+d149 1
+a149 1
+static size_t
+d183 1
+a183 7
+	/* Explicitly disallow negative values. */
+
+	if (r < 0.0)
+		r = 0.0;
+
+	return((size_t)/* LINTED */
+			r);
+@
+
+
+1.6
+log
+@Remove "pt" from struct roffsu, as CSS (the only reason it was there) is
+unclear about which units accept floats/integers, which leads me to
+assume that it handles either and rounds as appropriate.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.5 2010/06/25 18:53:14 kristaps Exp $ */
+d33 6
+a40 4
+static	void		  ascii_begin(struct termp *);
+static	void		  ascii_advance(struct termp *, size_t);
+static	void		  ascii_end(struct termp *);
+static	size_t		  ascii_width(const struct termp *, char);
+d56 1
+a56 2
+	p->type = TERMTYPE_CHAR;
+	p->letter = ascii_letter;
+d60 3
+a62 1
+	p->advance = ascii_advance;
+d146 46
+@
+
+
+1.5
+log
+@Initial chunks for variable-width fonts.  Pushes all width calculations
+in mdoc_term.c and man_term.c down into term.c.  This is still not
+implemented in term.c, although stubs for width calculations are in
+place.  From now on, offset, rmargin, and other layout variables are
+abstract screen widths.  They will resolve to the the familiar values
+for -Tascii but -Tps will eventually use points instead of chars.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.4 2010/06/19 20:46:28 kristaps Exp $ */
+d82 1
+@
+
+
+1.4
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.3 2010/06/09 08:07:13 kristaps Exp $ */
+d38 1
+d51 3
+d60 1
+d82 8
+@
+
+
+1.3
+log
+@Have the standard manpage header and footer print on every page of -Tps
+output.  This is more tricky than you may think:  we can't just call the
+header function out-of-state (i.e., before a flushln has occured)
+because we'd clobber our current state.  Thus, we call at the beginning
+and dump the output into an auxiliary buffer.
+
+For the record, I don't think there's any other clean way to do this.
+The only other Way That Works is to copy-aside *all* termp state, zero
+it, and do the necessary headf/footf.  This is just as complex, as
+memory needs to be alloc'd and free'd per margin.
+
+Unfortunately, this prohibits page numbering (the margin is only printed
+once), so I'll probably end up re-writing this down the line.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.2 2010/06/08 15:06:01 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.2
+log
+@Lint noops.  Also fixed getsubopt() to be in unistd.h (noted by joerg@@).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ascii.c,v 1.1 2010/06/08 15:00:17 kristaps Exp $ */
+a89 1
+	/* Just push onto the screen. */
+@
+
+
+1.1
+log
+@Broke ascii_*() functions into term_ascii.c
+
+Made low-level engine functions into function pointers.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.c,v 1.145 2010/06/08 13:22:37 kristaps Exp $ */
+d27 1
+@

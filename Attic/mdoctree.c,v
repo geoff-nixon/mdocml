@@ -1,0 +1,693 @@
+head	1.9;
+access;
+symbols
+	VERSION_1_9_5:1.9
+	VERSION_1_8_5:1.9
+	VERSION_1_8_1:1.9
+	VERSION_1_7_16:1.9
+	VERSION_1_7_15:1.9
+	OPENBSD_CHECKIN:1.9
+	VERSION_1_6_5:1.9
+	VERSION_1_5_3:1.8
+	VERSION_1_5_1:1.7
+	VERSION_1_4_6:1.6
+	VERSION_1_4_5:1.6
+	VERSION_1_4_4:1.6
+	VERSION_1_4_2:1.6
+	VERSION_1_3_15:1.4
+	VERSION_1_3_13:1.4
+	VERSION_1_3_11:1.4
+	VERSION_1_3_10:1.4
+	VERSION_1_3_9:1.4
+	VERSION_1_3_8:1.4
+	VERSION_1_3_6:1.4
+	VERSION_1_3_5:1.4;
+locks; strict;
+comment	@ * @;
+
+
+1.9
+date	2009.03.19.16.17.27;	author kristaps;	state dead;
+branches;
+next	1.8;
+
+1.8
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.15.07.08.53;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.08.14.01.46;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.02.23.12.45.19;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.02.23.07.09.13;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.22.22.58.39;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.21.21.00.06;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@Split mdocterm.c -> main.c terminal.c.
+Abstracted output with -T selector (default ascii).
+Name change: mdocterm -> mandoc.
+Re-imported tree with -Ttree.
+@
+text
+@@
+
+
+1.8
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@a0 157
+/* $Id: mdoctree.c,v 1.7 2009/03/15 07:08:53 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <assert.h>
+#include <err.h>
+#include <getopt.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "mmain.h"
+
+#define	xprintf (void)printf
+
+static	void	doprint(const struct mdoc_node *, int);
+
+int
+main(int argc, char *argv[])
+{
+	struct mmain	  *p;
+	const struct mdoc *mdoc;
+	int		   c;
+	char		  *in;
+
+	p = mmain_alloc();
+
+	c = mmain_getopt(p, argc, argv, NULL, 
+			"[infile]", NULL, NULL, NULL);
+
+	argv += c;
+	if ((argc -= c) > 0)
+		in = *argv++;
+	else
+		in = "-";
+
+	if (NULL == (mdoc = mmain_mdoc(p, in)))
+		mmain_exit(p, 1);
+
+	doprint(mdoc_node(mdoc), 0);
+	mmain_exit(p, 0);
+	/* NOTREACHED */
+}
+
+
+static void
+doprint(const struct mdoc_node *n, int indent)
+{
+	const char	 *p, *t;
+	int		  i, j;
+	size_t		  argc, sz;
+	char		**params;
+	struct mdoc_argv *argv;
+
+	argv = NULL;
+	argc = sz = 0;
+	params = NULL;
+
+	switch (n->type) {
+	case (MDOC_ROOT):
+		t = "root";
+		break;
+	case (MDOC_BLOCK):
+		t = "block";
+		break;
+	case (MDOC_HEAD):
+		t = "block-head";
+		break;
+	case (MDOC_BODY):
+		t = "block-body";
+		break;
+	case (MDOC_TAIL):
+		t = "block-tail";
+		break;
+	case (MDOC_ELEM):
+		t = "elem";
+		break;
+	case (MDOC_TEXT):
+		t = "text";
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+
+	switch (n->type) {
+	case (MDOC_TEXT):
+		p = n->string;
+		break;
+	case (MDOC_BODY):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_HEAD):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_TAIL):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_ELEM):
+		p = mdoc_macronames[n->tok];
+		if (n->args) {
+			argv = n->args->argv;
+			argc = n->args->argc;
+		}
+		break;
+	case (MDOC_BLOCK):
+		p = mdoc_macronames[n->tok];
+		if (n->args) {
+			argv = n->args->argv;
+			argc = n->args->argc;
+		}
+		break;
+	case (MDOC_ROOT):
+		p = "root";
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+
+	for (i = 0; i < indent; i++)
+		xprintf("    ");
+	xprintf("%s (%s)", p, t);
+
+	for (i = 0; i < (int)argc; i++) {
+		xprintf(" -%s", mdoc_argnames[argv[i].arg]);
+		if (argv[i].sz > 0)
+			xprintf(" [");
+		for (j = 0; j < (int)argv[i].sz; j++)
+			xprintf(" [%s]", argv[i].value[j]);
+		if (argv[i].sz > 0)
+			xprintf(" ]");
+	}
+
+	for (i = 0; i < (int)sz; i++)
+		xprintf(" [%s]", params[i]);
+
+	xprintf(" %d:%d\n", n->line, n->pos);
+
+	if (n->child)
+		doprint(n->child, indent + 1);
+	if (n->next)
+		doprint(n->next, indent);
+}
+@
+
+
+1.7
+log
+@mdoclint accepts multiple files
+mdocterm punts to nroff if it fails parsing
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdoctree.c,v 1.6 2009/03/08 14:01:46 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.6
+log
+@Bumped minor-number.
+All sources converted to new schema.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdoctree.c,v 1.5 2009/03/06 14:13:47 kristaps Exp $ */
+d35 1
+d37 1
+a37 1
+	const struct mdoc *mdoc;
+d41 8
+a48 3
+	c = mmain_getopt(p, argc, argv, NULL, NULL, NULL, NULL);
+	if (1 != c) 
+		mmain_exit(p, -1 == c ? 1 : 0);
+d50 1
+a50 1
+	if (NULL == (mdoc = mmain_mdoc(p)))
+@
+
+
+1.5
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdoctree.c,v 1.4 2009/02/23 12:45:19 kristaps Exp $ */
+d60 1
+a60 1
+	struct mdoc_arg	 *argv;
+d95 1
+a95 1
+		p = n->data.text.string;
+d108 4
+a111 2
+		argv = n->data.elem.argv;
+		argc = n->data.elem.argc;
+d115 4
+a118 2
+		argv = n->data.block.argv;
+		argc = n->data.block.argc;
+@
+
+
+1.4
+log
+@More in-file documentation and Linux-isation.
+Moved mdoc_macros table definition into macro.c, where it belongs.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdoctree.c,v 1.3 2009/02/23 07:09:13 kristaps Exp $ */
+d34 2
+a35 1
+	struct mmain	*p;
+d40 3
+a42 2
+	if ( ! mmain_getopt(p, argc, argv, NULL, NULL, NULL, NULL))
+		mmain_exit(p, 1);
+@
+
+
+1.3
+log
+@termact.c -> term.c
+term.c -> mdocterm.c
+tree.c -> mdoctree.c
+Fixed/finished mmain.h.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdoctree.c,v 1.2 2009/02/22 22:58:39 kristaps Exp $ */
+a36 3
+	extern int	 optreset;
+	extern int	 optind;
+
+@
+
+
+1.2
+log
+@BROKEN BUILD: migrating to mmain stuff.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocterm.c,v 1.1 2009/02/21 21:00:06 kristaps Exp $ */
+d22 1
+d27 3
+a29 2
+extern	void	treeprint(const struct mdoc_node *,
+			const struct mdoc_meta *);
+a35 1
+	int		 c;
+d42 1
+a42 1
+	if ( ! mmain_getopt(p, argc, argv, NULL))
+a44 21
+	optreset = optind = 1;
+	printf("here\n");
+
+	while (-1 != (c = getopt(argc, argv, "f:")))
+		switch (c) {
+		case ('f'):
+			printf("%s\n", optarg);
+			break;
+		case ('?'):
+			if (mmain_isopt(optopt)) {
+				printf("ok: %d\n", optopt);
+				break;
+			}
+			printf("bad: %d\n", optopt);
+			/* FALLTHROUGH */
+		default:
+			mmain_usage(NULL);
+			mmain_exit(p, 1);
+			/* NOTREACHED */
+		}
+
+d48 1
+a48 1
+	treeprint(mdoc_node(mdoc), mdoc_meta(mdoc));
+d54 95
+@
+
+
+1.1
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@d1 1
+a1 1
+	/* $Id: mdocml.c,v 1.54 2009/02/21 15:34:46 kristaps Exp $ */
+a18 3
+#include <sys/stat.h>
+#include <sys/param.h>
+
+a19 1
+#include <fcntl.h>
+a21 1
+#include <stdio.h>
+a22 4
+#include <string.h>
+#include <unistd.h>
+
+#include "mdoc.h"
+d24 1
+a24 1
+#define	MD_LINE_SZ	(256)		/* Max input line size. */
+d26 2
+a27 30
+struct	md_parse {
+	int		  warn;		/* Warning flags. */
+#define	MD_WARN_SYNTAX	 (1 << 0)	/* Show syntax warnings. */
+#define	MD_WARN_COMPAT	 (1 << 1)	/* Show compat warnings. */
+#define	MD_WARN_ALL	 (0x03)		/* Show all warnings. */
+#define	MD_WARN_ERR	 (1 << 2)	/* Make warnings->errors. */
+	int		  dbg;		/* Debug level. */
+	struct mdoc	 *mdoc;		/* Active parser. */
+	char		 *buf;		/* Input buffer. */
+	u_long		  bufsz;	/* Input buffer size. */
+	char		 *in;		/* Input file name. */
+	int		  fdin;		/* Input file desc. */
+};
+
+extern	char	 	 *__progname;
+
+static	void		  usage(void);
+static	int		  getsopts(struct md_parse *, char *);
+static	int		  parse(struct md_parse *);
+static	void		  msg_msg(void *, int, int, const char *);
+static	int		  msg_err(void *, int, int, const char *);
+static	int		  msg_warn(void *, int, int, 
+				enum mdoc_warn, const char *);
+
+extern	void		  treeprint(const struct mdoc_node *,
+				const struct mdoc_meta *);
+
+#ifdef __linux__
+extern	int		  getsubopt(char **, char *const *, char **);
+#endif
+d32 2
+a33 3
+	struct md_parse	 p;
+	struct mdoc_cb	 cb;
+	struct stat	 st;
+d35 2
+a36 1
+	extern char	*optarg;
+d39 1
+a39 1
+	(void)memset(&p, 0, sizeof(struct md_parse));
+d41 2
+a42 13
+	while (-1 != (c = getopt(argc, argv, "vW:")))
+		switch (c) {
+		case ('v'):
+			p.dbg++;
+			break;
+		case ('W'):
+			if ( ! getsopts(&p, optarg))
+				return(0);
+			break;
+		default:
+			usage();
+			return(0);
+		}
+d44 2
+a45 2
+	argv += optind;
+	argc -= optind;
+d47 4
+a50 74
+	/* Initialise the input file. */
+
+	p.in = "-";
+	p.fdin = STDIN_FILENO;
+
+	if (argc > 0) {
+		p.in = *argv++;
+		p.fdin = open(p.in, O_RDONLY, 0);
+		if (-1 == p.fdin)
+			err(1, "%s", p.in);
+	}
+
+	/* Allocate a buffer to be BUFSIZ/block size. */
+
+	if (-1 == fstat(p.fdin, &st)) {
+		warn("%s", p.in);
+		p.bufsz = BUFSIZ;
+	} else 
+		p.bufsz = MAX(st.st_blksize, BUFSIZ);
+
+	p.buf = malloc(p.bufsz);
+	if (NULL == p.buf)
+		err(1, "malloc");
+
+	/* Allocate the parser. */
+
+	cb.mdoc_err = msg_err;
+	cb.mdoc_warn = msg_warn;
+	cb.mdoc_msg = msg_msg;
+
+	p.mdoc = mdoc_alloc(&p, &cb);
+
+	/* Parse the input file. */
+
+	c = parse(&p);
+	free(p.buf);
+
+	if (STDIN_FILENO != p.fdin && -1 == close(p.fdin))
+		warn("%s", p.in);
+
+	if (0 == c) {
+		mdoc_free(p.mdoc);
+		return(EXIT_FAILURE);
+	}
+
+	/* If the parse succeeded, print it out. */
+
+	treeprint(mdoc_node(p.mdoc), mdoc_meta(p.mdoc));
+	mdoc_free(p.mdoc);
+
+	return(EXIT_SUCCESS);
+}
+
+
+static int
+getsopts(struct md_parse *p, char *arg)
+{
+	char		*v;
+	char		*toks[] = { "all", "compat", 
+				"syntax", "error", NULL };
+
+	while (*arg) 
+		switch (getsubopt(&arg, toks, &v)) {
+		case (0):
+			p->warn |= MD_WARN_ALL;
+			break;
+		case (1):
+			p->warn |= MD_WARN_COMPAT;
+			break;
+		case (2):
+			p->warn |= MD_WARN_SYNTAX;
+			break;
+		case (3):
+			p->warn |= MD_WARN_ERR;
+d52 7
+d60 3
+a62 2
+			usage();
+			return(0);
+d65 2
+a66 3
+	return(1);
+}
+
+d68 3
+a70 73
+static int
+parse(struct md_parse *p)
+{
+	ssize_t		 sz, i;
+	size_t		 pos;
+	char		 line[MD_LINE_SZ];
+	int		 lnn;
+
+	/*
+	 * This is a little more complicated than fgets.  TODO: have
+	 * some benchmarks that show it's faster (note that I want to
+	 * check many, many manuals simultaneously, so speed is
+	 * important).  Fill a buffer (sized to the block size) with a
+	 * single read, then parse \n-terminated lines into a line
+	 * buffer, which is passed to the parser.  Hard-code the line
+	 * buffer to a particular size -- a reasonable assumption.
+	 */
+
+	for (lnn = 1, pos = 0; ; ) {
+		if (-1 == (sz = read(p->fdin, p->buf, p->bufsz))) {
+			warn("%s", p->in);
+			return(0);
+		} else if (0 == sz) 
+			break;
+
+		for (i = 0; i < sz; i++) {
+			if ('\n' != p->buf[i]) {
+				if (pos < sizeof(line)) {
+					line[(int)pos++] = p->buf[(int)i];
+					continue;
+				}
+				warnx("%s: line %d too long", p->in, lnn);
+				return(0);
+			}
+	
+			line[(int)pos] = 0;
+			if ( ! mdoc_parseln(p->mdoc, lnn, line))
+				return(0);
+
+			lnn++;
+			pos = 0;
+		}
+	}
+
+	return(mdoc_endparse(p->mdoc));
+}
+
+
+static int
+msg_err(void *arg, int line, int col, const char *msg)
+{
+	struct md_parse	 *p;
+
+	p = (struct md_parse *)arg;
+
+	warnx("%s:%d: error: %s (column %d)", 
+			p->in, line, msg, col);
+	return(0);
+}
+
+
+static void
+msg_msg(void *arg, int line, int col, const char *msg)
+{
+	struct md_parse	 *p;
+
+	p = (struct md_parse *)arg;
+
+	if (0 == p->dbg)
+		return;
+
+	warnx("%s:%d: debug: %s (column %d)", 
+			p->in, line, msg, col);
+a73 37
+static int
+msg_warn(void *arg, int line, int col, 
+		enum mdoc_warn type, const char *msg)
+{
+	struct md_parse	 *p;
+
+	p = (struct md_parse *)arg;
+
+	switch (type) {
+	case (WARN_COMPAT):
+		if (p->warn & MD_WARN_COMPAT)
+			break;
+		return(1);
+	case (WARN_SYNTAX):
+		if (p->warn & MD_WARN_SYNTAX)
+			break;
+		return(1);
+	}
+
+	warnx("%s:%d: warning: %s (column %d)", 
+			p->in, line, msg, col);
+
+	if ( ! (p->warn & MD_WARN_ERR))
+		return(1);
+
+	warnx("%s: considering warnings as errors", __progname);
+	return(0);
+}
+
+
+static void
+usage(void)
+{
+
+	warnx("usage: %s [-v] [-Wwarn...] [infile]", __progname);
+}
+
+@

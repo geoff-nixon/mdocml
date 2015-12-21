@@ -1,0 +1,5373 @@
+head	1.79;
+access;
+symbols
+	VERSION_1_13_3:1.72
+	VERSION_1_13_2:1.70
+	VERSION_1_12_4:1.64
+	VERSION_1_13_1:1.62
+	VERSION_1_12_3:1.54
+	VERSION_1_12_2:1.54
+	VERSION_1_12:1.64.0.2
+	VERSION_1_12_1:1.54
+	VERSION_1_12_0:1.53
+	VERSION_1_11_7:1.52
+	VERSION_1_11_6:1.52
+	VERSION_1_11_5:1.51
+	VERSION_1_11_4:1.51
+	VERSION_1_11_3:1.51
+	VERSION_1_11_2:1.48
+	VERSION_1_11_1:1.48
+	VERSION_1_10_10:1.48
+	VERSION_1_10_9:1.45
+	VERSION_1_10_8:1.45
+	VERSION_1_10_7:1.45
+	VERSION_1_10_6:1.44
+	VERSION_1_10_5:1.39
+	VERSION_1_10_5_PREPDF:1.36
+	VERSION_1_10_4:1.33
+	VERSION_1_10_3:1.17
+	VERSION_1_10_2:1.10;
+locks; strict;
+comment	@ * @;
+
+
+1.79
+date	2015.11.07.14.22.29;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2015.10.12.00.08.16;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2015.10.11.21.12.55;	author schwarze;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2015.04.04.17.47.18;	author schwarze;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2015.03.27.21.33.20;	author schwarze;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2015.01.21.19.40.54;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2014.12.19.17.12.04;	author schwarze;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2014.11.20.13.56.20;	author schwarze;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2014.10.27.20.41.58;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2014.08.28.01.37.12;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2014.08.24.23.43.13;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2014.08.13.20.34.29;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2014.08.01.19.25.52;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2014.07.27.21.53.17;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2014.04.23.21.06.41;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2014.03.30.21.28.01;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2014.01.05.19.10.56;	author joerg;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2011.10.16.12.20.34;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2011.08.16.12.23.51;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2011.05.17.14.38.34;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2011.05.15.00.58.48;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2011.05.14.17.54.42;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2011.03.17.08.49.34;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2011.03.07.01.58.24;	author schwarze;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2011.01.25.17.32.04;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2010.09.27.23.03.44;	author schwarze;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.09.04.20.18.53;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.08.26.13.00.59;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.08.06.16.07.35;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.08.01.15.46.18;	author joerg;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.07.25.22.15.07;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.07.25.19.37.38;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.07.25.11.44.31;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.07.21.08.24.39;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.07.20.10.56.03;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.07.05.08.46.09;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.07.04.20.17.42;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.07.04.20.06.59;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.07.04.19.57.26;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.07.04.19.42.25;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.07.04.19.24.00;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.07.04.10.53.04;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.07.02.10.53.28;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.07.01.14.23.45;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.06.30.20.57.41;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.06.30.15.05.02;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.06.30.13.16.25;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.06.30.13.00.00;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.06.30.12.30.36;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.06.30.12.27.55;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.06.30.11.45.21;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.06.29.14.53.14;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.06.29.14.18.05;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.06.28.23.26.09;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.06.28.22.46.21;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.06.28.13.45.28;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.06.25.19.50.23;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2010.06.25.18.53.14;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.06.11.16.58.20;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.06.11.15.26.39;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.06.11.07.23.04;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.06.10.23.56.33;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.06.09.08.31.18;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.06.09.08.07.13;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.06.08.15.06.01;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.06.08.15.00.17;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.06.08.13.22.37;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.79
+log
+@Without HAVE_ERR, don't try to include <err.h>, it probably isn't there.
+In that case, the required prototypes are in "config.h".
+Patch from Peter Bray <pdb_ml at yahoo dot com dot au>.
+@
+text
+@/*	$Id: term_ps.c,v 1.78 2015/10/13 22:59:54 schwarze Exp $ */
+/*
+ * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#if HAVE_ERR
+#include <err.h>
+#endif
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+#include "mandoc_aux.h"
+#include "out.h"
+#include "term.h"
+#include "manconf.h"
+#include "main.h"
+
+/* These work the buffer used by the header and footer. */
+#define	PS_BUFSLOP	  128
+
+/* Convert PostScript point "x" to an AFM unit. */
+#define	PNT2AFM(p, x) \
+	(size_t)((double)(x) * (1000.0 / (double)(p)->ps->scale))
+
+/* Convert an AFM unit "x" to a PostScript points */
+#define	AFM2PNT(p, x) \
+	((double)(x) / (1000.0 / (double)(p)->ps->scale))
+
+struct	glyph {
+	unsigned short	  wx; /* WX in AFM */
+};
+
+struct	font {
+	const char	 *name; /* FontName in AFM */
+#define	MAXCHAR		  95 /* total characters we can handle */
+	struct glyph	  gly[MAXCHAR]; /* glyph metrics */
+};
+
+struct	termp_ps {
+	int		  flags;
+#define	PS_INLINE	 (1 << 0)	/* we're in a word */
+#define	PS_MARGINS	 (1 << 1)	/* we're in the margins */
+#define	PS_NEWPAGE	 (1 << 2)	/* new page, no words yet */
+#define	PS_BACKSP	 (1 << 3)	/* last character was backspace */
+	size_t		  pscol;	/* visible column (AFM units) */
+	size_t		  pscolnext;	/* used for overstrike */
+	size_t		  psrow;	/* visible row (AFM units) */
+	char		 *psmarg;	/* margin buf */
+	size_t		  psmargsz;	/* margin buf size */
+	size_t		  psmargcur;	/* cur index in margin buf */
+	char		  last;		/* last non-backspace seen */
+	enum termfont	  lastf;	/* last set font */
+	enum termfont	  nextf;	/* building next font here */
+	size_t		  scale;	/* font scaling factor */
+	size_t		  pages;	/* number of pages shown */
+	size_t		  lineheight;	/* line height (AFM units) */
+	size_t		  top;		/* body top (AFM units) */
+	size_t		  bottom;	/* body bottom (AFM units) */
+	size_t		  height;	/* page height (AFM units */
+	size_t		  width;	/* page width (AFM units) */
+	size_t		  lastwidth;	/* page width before last ll */
+	size_t		  left;		/* body left (AFM units) */
+	size_t		  header;	/* header pos (AFM units) */
+	size_t		  footer;	/* footer pos (AFM units) */
+	size_t		  pdfbytes;	/* current output byte */
+	size_t		  pdflastpg;	/* byte of last page mark */
+	size_t		  pdfbody;	/* start of body object */
+	size_t		 *pdfobjs;	/* table of object offsets */
+	size_t		  pdfobjsz;	/* size of pdfobjs */
+};
+
+static	int		  ps_hspan(const struct termp *,
+				const struct roffsu *);
+static	size_t		  ps_width(const struct termp *, int);
+static	void		  ps_advance(struct termp *, size_t);
+static	void		  ps_begin(struct termp *);
+static	void		  ps_closepage(struct termp *);
+static	void		  ps_end(struct termp *);
+static	void		  ps_endline(struct termp *);
+static	void		  ps_fclose(struct termp *);
+static	void		  ps_growbuf(struct termp *, size_t);
+static	void		  ps_letter(struct termp *, int);
+static	void		  ps_pclose(struct termp *);
+static	void		  ps_pletter(struct termp *, int);
+#if __GNUC__ - 0 >= 4
+__attribute__((__format__ (__printf__, 2, 3)))
+#endif
+static	void		  ps_printf(struct termp *, const char *, ...);
+static	void		  ps_putchar(struct termp *, char);
+static	void		  ps_setfont(struct termp *, enum termfont);
+static	void		  ps_setwidth(struct termp *, int, int);
+static	struct termp	 *pspdf_alloc(const struct manoutput *);
+static	void		  pdf_obj(struct termp *, size_t);
+
+/*
+ * We define, for the time being, three fonts: bold, oblique/italic, and
+ * normal (roman).  The following table hard-codes the font metrics for
+ * ASCII, i.e., 32--127.
+ */
+
+static	const struct font fonts[TERMFONT__MAX] = {
+	{ "Times-Roman", {
+		{ 250 },
+		{ 333 },
+		{ 408 },
+		{ 500 },
+		{ 500 },
+		{ 833 },
+		{ 778 },
+		{ 333 },
+		{ 333 },
+		{ 333 },
+		{ 500 },
+		{ 564 },
+		{ 250 },
+		{ 333 },
+		{ 250 },
+		{ 278 },
+		{ 500 },
+		{ 500 },
+		{ 500 },
+		{ 500 },
+		{ 500 },
+		{ 500 },
+		{ 500 },
+		{ 500 },
+		{ 500 },
+		{ 500 },
+		{ 278 },
+		{ 278 },
+		{ 564 },
+		{ 564 },
+		{ 564 },
+		{ 444 },
+		{ 921 },
+		{ 722 },
+		{ 667 },
+		{ 667 },
+		{ 722 },
+		{ 611 },
+		{ 556 },
+		{ 722 },
+		{ 722 },
+		{ 333 },
+		{ 389 },
+		{ 722 },
+		{ 611 },
+		{ 889 },
+		{ 722 },
+		{ 722 },
+		{ 556 },
+		{ 722 },
+		{ 667 },
+		{ 556 },
+		{ 611 },
+		{ 722 },
+		{ 722 },
+		{ 944 },
+		{ 722 },
+		{ 722 },
+		{ 611 },
+		{ 333 },
+		{ 278 },
+		{ 333 },
+		{ 469 },
+		{ 500 },
+		{ 333 },
+		{ 444 },
+		{ 500 },
+		{ 444 },
+		{  500},
+		{  444},
+		{  333},
+		{  500},
+		{  500},
+		{  278},
+		{  278},
+		{  500},
+		{  278},
+		{  778},
+		{  500},
+		{  500},
+		{  500},
+		{  500},
+		{  333},
+		{  389},
+		{  278},
+		{  500},
+		{  500},
+		{  722},
+		{  500},
+		{  500},
+		{  444},
+		{  480},
+		{  200},
+		{  480},
+		{  541},
+	} },
+	{ "Times-Bold", {
+		{ 250  },
+		{ 333  },
+		{ 555  },
+		{ 500  },
+		{ 500  },
+		{ 1000 },
+		{ 833  },
+		{ 333  },
+		{ 333  },
+		{ 333  },
+		{ 500  },
+		{ 570  },
+		{ 250  },
+		{ 333  },
+		{ 250  },
+		{ 278  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 333  },
+		{ 333  },
+		{ 570  },
+		{ 570  },
+		{ 570  },
+		{ 500  },
+		{ 930  },
+		{ 722  },
+		{ 667  },
+		{ 722  },
+		{ 722  },
+		{ 667  },
+		{ 611  },
+		{ 778  },
+		{ 778  },
+		{ 389  },
+		{ 500  },
+		{ 778  },
+		{ 667  },
+		{ 944  },
+		{ 722  },
+		{ 778  },
+		{ 611  },
+		{ 778  },
+		{ 722  },
+		{ 556  },
+		{ 667  },
+		{ 722  },
+		{ 722  },
+		{ 1000 },
+		{ 722  },
+		{ 722  },
+		{ 667  },
+		{ 333  },
+		{ 278  },
+		{ 333  },
+		{ 581  },
+		{ 500  },
+		{ 333  },
+		{ 500  },
+		{ 556  },
+		{ 444  },
+		{  556 },
+		{  444 },
+		{  333 },
+		{  500 },
+		{  556 },
+		{  278 },
+		{  333 },
+		{  556 },
+		{  278 },
+		{  833 },
+		{  556 },
+		{  500 },
+		{  556 },
+		{  556 },
+		{  444 },
+		{  389 },
+		{  333 },
+		{  556 },
+		{  500 },
+		{  722 },
+		{  500 },
+		{  500 },
+		{  444 },
+		{  394 },
+		{  220 },
+		{  394 },
+		{  520 },
+	} },
+	{ "Times-Italic", {
+		{ 250  },
+		{ 333  },
+		{ 420  },
+		{ 500  },
+		{ 500  },
+		{ 833  },
+		{ 778  },
+		{ 333  },
+		{ 333  },
+		{ 333  },
+		{ 500  },
+		{ 675  },
+		{ 250  },
+		{ 333  },
+		{ 250  },
+		{ 278  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 500  },
+		{ 333  },
+		{ 333  },
+		{ 675  },
+		{ 675  },
+		{ 675  },
+		{ 500  },
+		{ 920  },
+		{ 611  },
+		{ 611  },
+		{ 667  },
+		{ 722  },
+		{ 611  },
+		{ 611  },
+		{ 722  },
+		{ 722  },
+		{ 333  },
+		{ 444  },
+		{ 667  },
+		{ 556  },
+		{ 833  },
+		{ 667  },
+		{ 722  },
+		{ 611  },
+		{ 722  },
+		{ 611  },
+		{ 500  },
+		{ 556  },
+		{ 722  },
+		{ 611  },
+		{ 833  },
+		{ 611  },
+		{ 556  },
+		{ 556  },
+		{ 389  },
+		{ 278  },
+		{ 389  },
+		{ 422  },
+		{ 500  },
+		{ 333  },
+		{ 500  },
+		{ 500  },
+		{ 444  },
+		{  500 },
+		{  444 },
+		{  278 },
+		{  500 },
+		{  500 },
+		{  278 },
+		{  278 },
+		{  444 },
+		{  278 },
+		{  722 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  389 },
+		{  389 },
+		{  278 },
+		{  500 },
+		{  444 },
+		{  667 },
+		{  444 },
+		{  444 },
+		{  389 },
+		{  400 },
+		{  275 },
+		{  400 },
+		{  541 },
+	} },
+	{ "Times-BoldItalic", {
+		{  250 },
+		{  389 },
+		{  555 },
+		{  500 },
+		{  500 },
+		{  833 },
+		{  778 },
+		{  333 },
+		{  333 },
+		{  333 },
+		{  500 },
+		{  570 },
+		{  250 },
+		{  333 },
+		{  250 },
+		{  278 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  333 },
+		{  333 },
+		{  570 },
+		{  570 },
+		{  570 },
+		{  500 },
+		{  832 },
+		{  667 },
+		{  667 },
+		{  667 },
+		{  722 },
+		{  667 },
+		{  667 },
+		{  722 },
+		{  778 },
+		{  389 },
+		{  500 },
+		{  667 },
+		{  611 },
+		{  889 },
+		{  722 },
+		{  722 },
+		{  611 },
+		{  722 },
+		{  667 },
+		{  556 },
+		{  611 },
+		{  722 },
+		{  667 },
+		{  889 },
+		{  667 },
+		{  611 },
+		{  611 },
+		{  333 },
+		{  278 },
+		{  333 },
+		{  570 },
+		{  500 },
+		{  333 },
+		{  500 },
+		{  500 },
+		{  444 },
+		{  500 },
+		{  444 },
+		{  333 },
+		{  500 },
+		{  556 },
+		{  278 },
+		{  278 },
+		{  500 },
+		{  278 },
+		{  778 },
+		{  556 },
+		{  500 },
+		{  500 },
+		{  500 },
+		{  389 },
+		{  389 },
+		{  278 },
+		{  556 },
+		{  444 },
+		{  667 },
+		{  500 },
+		{  444 },
+		{  389 },
+		{  348 },
+		{  220 },
+		{  348 },
+		{  570 },
+	} },
+};
+
+void *
+pdf_alloc(const struct manoutput *outopts)
+{
+	struct termp	*p;
+
+	if (NULL != (p = pspdf_alloc(outopts)))
+		p->type = TERMTYPE_PDF;
+
+	return p;
+}
+
+void *
+ps_alloc(const struct manoutput *outopts)
+{
+	struct termp	*p;
+
+	if (NULL != (p = pspdf_alloc(outopts)))
+		p->type = TERMTYPE_PS;
+
+	return p;
+}
+
+static struct termp *
+pspdf_alloc(const struct manoutput *outopts)
+{
+	struct termp	*p;
+	unsigned int	 pagex, pagey;
+	size_t		 marginx, marginy, lineheight;
+	const char	*pp;
+
+	p = mandoc_calloc(1, sizeof(struct termp));
+	p->enc = TERMENC_ASCII;
+	p->fontq = mandoc_reallocarray(NULL,
+	    (p->fontsz = 8), sizeof(enum termfont));
+	p->fontq[0] = p->fontl = TERMFONT_NONE;
+	p->ps = mandoc_calloc(1, sizeof(struct termp_ps));
+
+	p->advance = ps_advance;
+	p->begin = ps_begin;
+	p->end = ps_end;
+	p->endline = ps_endline;
+	p->hspan = ps_hspan;
+	p->letter = ps_letter;
+	p->setwidth = ps_setwidth;
+	p->width = ps_width;
+
+	/* Default to US letter (millimetres). */
+
+	pagex = 216;
+	pagey = 279;
+
+	/*
+	 * The ISO-269 paper sizes can be calculated automatically, but
+	 * it would require bringing in -lm for pow() and I'd rather not
+	 * do that.  So just do it the easy way for now.  Since this
+	 * only happens once, I'm not terribly concerned.
+	 */
+
+	pp = outopts->paper;
+	if (pp && strcasecmp(pp, "letter")) {
+		if (0 == strcasecmp(pp, "a3")) {
+			pagex = 297;
+			pagey = 420;
+		} else if (0 == strcasecmp(pp, "a4")) {
+			pagex = 210;
+			pagey = 297;
+		} else if (0 == strcasecmp(pp, "a5")) {
+			pagex = 148;
+			pagey = 210;
+		} else if (0 == strcasecmp(pp, "legal")) {
+			pagex = 216;
+			pagey = 356;
+		} else if (2 != sscanf(pp, "%ux%u", &pagex, &pagey))
+			warnx("%s: Unknown paper", pp);
+	}
+
+	/*
+	 * This MUST be defined before any PNT2AFM or AFM2PNT
+	 * calculations occur.
+	 */
+
+	p->ps->scale = 11;
+
+	/* Remember millimetres -> AFM units. */
+
+	pagex = PNT2AFM(p, ((double)pagex * 2.834));
+	pagey = PNT2AFM(p, ((double)pagey * 2.834));
+
+	/* Margins are 1/9 the page x and y. */
+
+	marginx = (size_t)((double)pagex / 9.0);
+	marginy = (size_t)((double)pagey / 9.0);
+
+	/* Line-height is 1.4em. */
+
+	lineheight = PNT2AFM(p, ((double)p->ps->scale * 1.4));
+
+	p->ps->width = p->ps->lastwidth = (size_t)pagex;
+	p->ps->height = (size_t)pagey;
+	p->ps->header = pagey - (marginy / 2) - (lineheight / 2);
+	p->ps->top = pagey - marginy;
+	p->ps->footer = (marginy / 2) - (lineheight / 2);
+	p->ps->bottom = marginy;
+	p->ps->left = marginx;
+	p->ps->lineheight = lineheight;
+
+	p->defrmargin = pagex - (marginx * 2);
+	return p;
+}
+
+static void
+ps_setwidth(struct termp *p, int iop, int width)
+{
+	size_t	 lastwidth;
+
+	lastwidth = p->ps->width;
+	if (iop > 0)
+		p->ps->width += width;
+	else if (iop == 0)
+		p->ps->width = width ? (size_t)width : p->ps->lastwidth;
+	else if (p->ps->width > (size_t)width)
+		p->ps->width -= width;
+	else
+		p->ps->width = 0;
+	p->ps->lastwidth = lastwidth;
+}
+
+void
+pspdf_free(void *arg)
+{
+	struct termp	*p;
+
+	p = (struct termp *)arg;
+
+	if (p->ps->psmarg)
+		free(p->ps->psmarg);
+	if (p->ps->pdfobjs)
+		free(p->ps->pdfobjs);
+
+	free(p->ps);
+	term_free(p);
+}
+
+static void
+ps_printf(struct termp *p, const char *fmt, ...)
+{
+	va_list		 ap;
+	int		 pos, len;
+
+	va_start(ap, fmt);
+
+	/*
+	 * If we're running in regular mode, then pipe directly into
+	 * vprintf().  If we're processing margins, then push the data
+	 * into our growable margin buffer.
+	 */
+
+	if ( ! (PS_MARGINS & p->ps->flags)) {
+		len = vprintf(fmt, ap);
+		va_end(ap);
+		p->ps->pdfbytes += len < 0 ? 0 : (size_t)len;
+		return;
+	}
+
+	/*
+	 * XXX: I assume that the in-margin print won't exceed
+	 * PS_BUFSLOP (128 bytes), which is reasonable but still an
+	 * assumption that will cause pukeage if it's not the case.
+	 */
+
+	ps_growbuf(p, PS_BUFSLOP);
+
+	pos = (int)p->ps->psmargcur;
+	vsnprintf(&p->ps->psmarg[pos], PS_BUFSLOP, fmt, ap);
+
+	va_end(ap);
+
+	p->ps->psmargcur = strlen(p->ps->psmarg);
+}
+
+static void
+ps_putchar(struct termp *p, char c)
+{
+	int		 pos;
+
+	/* See ps_printf(). */
+
+	if ( ! (PS_MARGINS & p->ps->flags)) {
+		putchar(c);
+		p->ps->pdfbytes++;
+		return;
+	}
+
+	ps_growbuf(p, 2);
+
+	pos = (int)p->ps->psmargcur++;
+	p->ps->psmarg[pos++] = c;
+	p->ps->psmarg[pos] = '\0';
+}
+
+static void
+pdf_obj(struct termp *p, size_t obj)
+{
+
+	assert(obj > 0);
+
+	if ((obj - 1) >= p->ps->pdfobjsz) {
+		p->ps->pdfobjsz = obj + 128;
+		p->ps->pdfobjs = mandoc_reallocarray(p->ps->pdfobjs,
+		    p->ps->pdfobjsz, sizeof(size_t));
+	}
+
+	p->ps->pdfobjs[(int)obj - 1] = p->ps->pdfbytes;
+	ps_printf(p, "%zu 0 obj\n", obj);
+}
+
+static void
+ps_closepage(struct termp *p)
+{
+	int		 i;
+	size_t		 len, base;
+
+	/*
+	 * Close out a page that we've already flushed to output.  In
+	 * PostScript, we simply note that the page must be showed.  In
+	 * PDF, we must now create the Length, Resource, and Page node
+	 * for the page contents.
+	 */
+
+	assert(p->ps->psmarg && p->ps->psmarg[0]);
+	ps_printf(p, "%s", p->ps->psmarg);
+
+	if (TERMTYPE_PS != p->type) {
+		ps_printf(p, "ET\n");
+
+		len = p->ps->pdfbytes - p->ps->pdflastpg;
+		base = p->ps->pages * 4 + p->ps->pdfbody;
+
+		ps_printf(p, "endstream\nendobj\n");
+
+		/* Length of content. */
+		pdf_obj(p, base + 1);
+		ps_printf(p, "%zu\nendobj\n", len);
+
+		/* Resource for content. */
+		pdf_obj(p, base + 2);
+		ps_printf(p, "<<\n/ProcSet [/PDF /Text]\n");
+		ps_printf(p, "/Font <<\n");
+		for (i = 0; i < (int)TERMFONT__MAX; i++)
+			ps_printf(p, "/F%d %d 0 R\n", i, 3 + i);
+		ps_printf(p, ">>\n>>\n");
+
+		/* Page node. */
+		pdf_obj(p, base + 3);
+		ps_printf(p, "<<\n");
+		ps_printf(p, "/Type /Page\n");
+		ps_printf(p, "/Parent 2 0 R\n");
+		ps_printf(p, "/Resources %zu 0 R\n", base + 2);
+		ps_printf(p, "/Contents %zu 0 R\n", base);
+		ps_printf(p, ">>\nendobj\n");
+	} else
+		ps_printf(p, "showpage\n");
+
+	p->ps->pages++;
+	p->ps->psrow = p->ps->top;
+	assert( ! (PS_NEWPAGE & p->ps->flags));
+	p->ps->flags |= PS_NEWPAGE;
+}
+
+static void
+ps_end(struct termp *p)
+{
+	size_t		 i, xref, base;
+
+	/*
+	 * At the end of the file, do one last showpage.  This is the
+	 * same behaviour as groff(1) and works for multiple pages as
+	 * well as just one.
+	 */
+
+	if ( ! (PS_NEWPAGE & p->ps->flags)) {
+		assert(0 == p->ps->flags);
+		assert('\0' == p->ps->last);
+		ps_closepage(p);
+	}
+
+	if (TERMTYPE_PS == p->type) {
+		ps_printf(p, "%%%%Trailer\n");
+		ps_printf(p, "%%%%Pages: %zu\n", p->ps->pages);
+		ps_printf(p, "%%%%EOF\n");
+		return;
+	}
+
+	pdf_obj(p, 2);
+	ps_printf(p, "<<\n/Type /Pages\n");
+	ps_printf(p, "/MediaBox [0 0 %zu %zu]\n",
+			(size_t)AFM2PNT(p, p->ps->width),
+			(size_t)AFM2PNT(p, p->ps->height));
+
+	ps_printf(p, "/Count %zu\n", p->ps->pages);
+	ps_printf(p, "/Kids [");
+
+	for (i = 0; i < p->ps->pages; i++)
+		ps_printf(p, " %zu 0 R", i * 4 + p->ps->pdfbody + 3);
+
+	base = (p->ps->pages - 1) * 4 + p->ps->pdfbody + 4;
+
+	ps_printf(p, "]\n>>\nendobj\n");
+	pdf_obj(p, base);
+	ps_printf(p, "<<\n");
+	ps_printf(p, "/Type /Catalog\n");
+	ps_printf(p, "/Pages 2 0 R\n");
+	ps_printf(p, ">>\n");
+	xref = p->ps->pdfbytes;
+	ps_printf(p, "xref\n");
+	ps_printf(p, "0 %zu\n", base + 1);
+	ps_printf(p, "0000000000 65535 f \n");
+
+	for (i = 0; i < base; i++)
+		ps_printf(p, "%.10zu 00000 n \n",
+		    p->ps->pdfobjs[(int)i]);
+
+	ps_printf(p, "trailer\n");
+	ps_printf(p, "<<\n");
+	ps_printf(p, "/Size %zu\n", base + 1);
+	ps_printf(p, "/Root %zu 0 R\n", base);
+	ps_printf(p, "/Info 1 0 R\n");
+	ps_printf(p, ">>\n");
+	ps_printf(p, "startxref\n");
+	ps_printf(p, "%zu\n", xref);
+	ps_printf(p, "%%%%EOF\n");
+}
+
+static void
+ps_begin(struct termp *p)
+{
+	int		 i;
+
+	/*
+	 * Print margins into margin buffer.  Nothing gets output to the
+	 * screen yet, so we don't need to initialise the primary state.
+	 */
+
+	if (p->ps->psmarg) {
+		assert(p->ps->psmargsz);
+		p->ps->psmarg[0] = '\0';
+	}
+
+	/*p->ps->pdfbytes = 0;*/
+	p->ps->psmargcur = 0;
+	p->ps->flags = PS_MARGINS;
+	p->ps->pscol = p->ps->left;
+	p->ps->psrow = p->ps->header;
+
+	ps_setfont(p, TERMFONT_NONE);
+
+	(*p->headf)(p, p->argf);
+	(*p->endline)(p);
+
+	p->ps->pscol = p->ps->left;
+	p->ps->psrow = p->ps->footer;
+
+	(*p->footf)(p, p->argf);
+	(*p->endline)(p);
+
+	p->ps->flags &= ~PS_MARGINS;
+
+	assert(0 == p->ps->flags);
+	assert(p->ps->psmarg);
+	assert('\0' != p->ps->psmarg[0]);
+
+	/*
+	 * Print header and initialise page state.  Following this,
+	 * stuff gets printed to the screen, so make sure we're sane.
+	 */
+
+	if (TERMTYPE_PS == p->type) {
+		ps_printf(p, "%%!PS-Adobe-3.0\n");
+		ps_printf(p, "%%%%DocumentData: Clean7Bit\n");
+		ps_printf(p, "%%%%Orientation: Portrait\n");
+		ps_printf(p, "%%%%Pages: (atend)\n");
+		ps_printf(p, "%%%%PageOrder: Ascend\n");
+		ps_printf(p, "%%%%DocumentMedia: "
+		    "Default %zu %zu 0 () ()\n",
+		    (size_t)AFM2PNT(p, p->ps->width),
+		    (size_t)AFM2PNT(p, p->ps->height));
+		ps_printf(p, "%%%%DocumentNeededResources: font");
+
+		for (i = 0; i < (int)TERMFONT__MAX; i++)
+			ps_printf(p, " %s", fonts[i].name);
+
+		ps_printf(p, "\n%%%%EndComments\n");
+	} else {
+		ps_printf(p, "%%PDF-1.1\n");
+		pdf_obj(p, 1);
+		ps_printf(p, "<<\n");
+		ps_printf(p, ">>\n");
+		ps_printf(p, "endobj\n");
+
+		for (i = 0; i < (int)TERMFONT__MAX; i++) {
+			pdf_obj(p, (size_t)i + 3);
+			ps_printf(p, "<<\n");
+			ps_printf(p, "/Type /Font\n");
+			ps_printf(p, "/Subtype /Type1\n");
+			ps_printf(p, "/Name /F%d\n", i);
+			ps_printf(p, "/BaseFont /%s\n", fonts[i].name);
+			ps_printf(p, ">>\n");
+		}
+	}
+
+	p->ps->pdfbody = (size_t)TERMFONT__MAX + 3;
+	p->ps->pscol = p->ps->left;
+	p->ps->psrow = p->ps->top;
+	p->ps->flags |= PS_NEWPAGE;
+	ps_setfont(p, TERMFONT_NONE);
+}
+
+static void
+ps_pletter(struct termp *p, int c)
+{
+	int		 f;
+
+	/*
+	 * If we haven't opened a page context, then output that we're
+	 * in a new page and make sure the font is correctly set.
+	 */
+
+	if (PS_NEWPAGE & p->ps->flags) {
+		if (TERMTYPE_PS == p->type) {
+			ps_printf(p, "%%%%Page: %zu %zu\n",
+			    p->ps->pages + 1, p->ps->pages + 1);
+			ps_printf(p, "/%s %zu selectfont\n",
+			    fonts[(int)p->ps->lastf].name,
+			    p->ps->scale);
+		} else {
+			pdf_obj(p, p->ps->pdfbody +
+			    p->ps->pages * 4);
+			ps_printf(p, "<<\n");
+			ps_printf(p, "/Length %zu 0 R\n",
+			    p->ps->pdfbody + 1 + p->ps->pages * 4);
+			ps_printf(p, ">>\nstream\n");
+		}
+		p->ps->pdflastpg = p->ps->pdfbytes;
+		p->ps->flags &= ~PS_NEWPAGE;
+	}
+
+	/*
+	 * If we're not in a PostScript "word" context, then open one
+	 * now at the current cursor.
+	 */
+
+	if ( ! (PS_INLINE & p->ps->flags)) {
+		if (TERMTYPE_PS != p->type) {
+			ps_printf(p, "BT\n/F%d %zu Tf\n",
+			    (int)p->ps->lastf, p->ps->scale);
+			ps_printf(p, "%.3f %.3f Td\n(",
+			    AFM2PNT(p, p->ps->pscol),
+			    AFM2PNT(p, p->ps->psrow));
+		} else
+			ps_printf(p, "%.3f %.3f moveto\n(",
+			    AFM2PNT(p, p->ps->pscol),
+			    AFM2PNT(p, p->ps->psrow));
+		p->ps->flags |= PS_INLINE;
+	}
+
+	assert( ! (PS_NEWPAGE & p->ps->flags));
+
+	/*
+	 * We need to escape these characters as per the PostScript
+	 * specification.  We would also escape non-graphable characters
+	 * (like tabs), but none of them would get to this point and
+	 * it's superfluous to abort() on them.
+	 */
+
+	switch (c) {
+	case '(':
+	case ')':
+	case '\\':
+		ps_putchar(p, '\\');
+		break;
+	default:
+		break;
+	}
+
+	/* Write the character and adjust where we are on the page. */
+
+	f = (int)p->ps->lastf;
+
+	if (c <= 32 || c - 32 >= MAXCHAR)
+		c = 32;
+
+	ps_putchar(p, (char)c);
+	c -= 32;
+	p->ps->pscol += (size_t)fonts[f].gly[c].wx;
+}
+
+static void
+ps_pclose(struct termp *p)
+{
+
+	/*
+	 * Spit out that we're exiting a word context (this is a
+	 * "partial close" because we don't check the last-char buffer
+	 * or anything).
+	 */
+
+	if ( ! (PS_INLINE & p->ps->flags))
+		return;
+
+	if (TERMTYPE_PS != p->type) {
+		ps_printf(p, ") Tj\nET\n");
+	} else
+		ps_printf(p, ") show\n");
+
+	p->ps->flags &= ~PS_INLINE;
+}
+
+static void
+ps_fclose(struct termp *p)
+{
+
+	/*
+	 * Strong closure: if we have a last-char, spit it out after
+	 * checking that we're in the right font mode.  This will of
+	 * course open a new scope, if applicable.
+	 *
+	 * Following this, close out any scope that's open.
+	 */
+
+	if (p->ps->last != '\0') {
+		assert( ! (p->ps->flags & PS_BACKSP));
+		if (p->ps->nextf != p->ps->lastf) {
+			ps_pclose(p);
+			ps_setfont(p, p->ps->nextf);
+		}
+		p->ps->nextf = TERMFONT_NONE;
+		ps_pletter(p, p->ps->last);
+		p->ps->last = '\0';
+	}
+
+	if ( ! (PS_INLINE & p->ps->flags))
+		return;
+
+	ps_pclose(p);
+}
+
+static void
+ps_letter(struct termp *p, int arg)
+{
+	size_t		savecol, wx;
+	char		c;
+
+	c = arg >= 128 || arg <= 0 ? '?' : arg;
+
+	/*
+	 * When receiving a backspace, merely flag it.
+	 * We don't know yet whether it is
+	 * a font instruction or an overstrike.
+	 */
+
+	if (c == '\b') {
+		assert(p->ps->last != '\0');
+		assert( ! (p->ps->flags & PS_BACKSP));
+		p->ps->flags |= PS_BACKSP;
+		return;
+	}
+
+	/*
+	 * Decode font instructions.
+	 */
+
+	if (p->ps->flags & PS_BACKSP) {
+		if (p->ps->last == '_') {
+			switch (p->ps->nextf) {
+			case TERMFONT_BI:
+				break;
+			case TERMFONT_BOLD:
+				p->ps->nextf = TERMFONT_BI;
+				break;
+			default:
+				p->ps->nextf = TERMFONT_UNDER;
+			}
+			p->ps->last = c;
+			p->ps->flags &= ~PS_BACKSP;
+			return;
+		}
+		if (p->ps->last == c) {
+			switch (p->ps->nextf) {
+			case TERMFONT_BI:
+				break;
+			case TERMFONT_UNDER:
+				p->ps->nextf = TERMFONT_BI;
+				break;
+			default:
+				p->ps->nextf = TERMFONT_BOLD;
+			}
+			p->ps->flags &= ~PS_BACKSP;
+			return;
+		}
+
+		/*
+		 * This is not a font instruction, but rather
+		 * the next character.  Prepare for overstrike.
+		 */
+
+		savecol = p->ps->pscol;
+	} else
+		savecol = SIZE_MAX;
+
+	/*
+	 * We found the next character, so the font instructions
+	 * for the previous one are complete.
+	 * Use them and print it.
+	 */
+
+	if (p->ps->last != '\0') {
+		if (p->ps->nextf != p->ps->lastf) {
+			ps_pclose(p);
+			ps_setfont(p, p->ps->nextf);
+		}
+		p->ps->nextf = TERMFONT_NONE;
+
+		/*
+		 * For an overstrike, if a previous character
+		 * was wider, advance to center the new one.
+		 */
+
+		if (p->ps->pscolnext) {
+			wx = fonts[p->ps->lastf].gly[(int)p->ps->last-32].wx;
+			if (p->ps->pscol + wx < p->ps->pscolnext)
+				p->ps->pscol = (p->ps->pscol +
+				    p->ps->pscolnext - wx) / 2;
+		}
+
+		ps_pletter(p, p->ps->last);
+
+		/*
+		 * For an overstrike, if a previous character
+		 * was wider, advance to the end of the old one.
+		 */
+
+		if (p->ps->pscol < p->ps->pscolnext) {
+			ps_pclose(p);
+			p->ps->pscol = p->ps->pscolnext;
+		}
+	}
+
+	/*
+	 * Do not print the current character yet because font
+	 * instructions might follow; only remember it.
+	 * For the first character, nothing else is done.
+	 * The final character will get printed from ps_fclose().
+	 */
+
+	p->ps->last = c;
+
+	/*
+	 * For an overstrike, back up to the previous position.
+	 * If the previous character is wider than any it overstrikes,
+	 * remember the current position, because it might also be
+	 * wider than all that will overstrike it.
+	 */
+
+	if (savecol != SIZE_MAX) {
+		if (p->ps->pscolnext < p->ps->pscol)
+			p->ps->pscolnext = p->ps->pscol;
+		ps_pclose(p);
+		p->ps->pscol = savecol;
+		p->ps->flags &= ~PS_BACKSP;
+	} else
+		p->ps->pscolnext = 0;
+}
+
+static void
+ps_advance(struct termp *p, size_t len)
+{
+
+	/*
+	 * Advance some spaces.  This can probably be made smarter,
+	 * i.e., to have multiple space-separated words in the same
+	 * scope, but this is easier:  just close out the current scope
+	 * and readjust our column settings.
+	 */
+
+	ps_fclose(p);
+	p->ps->pscol += len;
+}
+
+static void
+ps_endline(struct termp *p)
+{
+
+	/* Close out any scopes we have open: we're at eoln. */
+
+	ps_fclose(p);
+
+	/*
+	 * If we're in the margin, don't try to recalculate our current
+	 * row.  XXX: if the column tries to be fancy with multiple
+	 * lines, we'll do nasty stuff.
+	 */
+
+	if (PS_MARGINS & p->ps->flags)
+		return;
+
+	/* Left-justify. */
+
+	p->ps->pscol = p->ps->left;
+
+	/* If we haven't printed anything, return. */
+
+	if (PS_NEWPAGE & p->ps->flags)
+		return;
+
+	/*
+	 * Put us down a line.  If we're at the page bottom, spit out a
+	 * showpage and restart our row.
+	 */
+
+	if (p->ps->psrow >= p->ps->lineheight + p->ps->bottom) {
+		p->ps->psrow -= p->ps->lineheight;
+		return;
+	}
+
+	ps_closepage(p);
+}
+
+static void
+ps_setfont(struct termp *p, enum termfont f)
+{
+
+	assert(f < TERMFONT__MAX);
+	p->ps->lastf = f;
+
+	/*
+	 * If we're still at the top of the page, let the font-setting
+	 * be delayed until we actually have stuff to print.
+	 */
+
+	if (PS_NEWPAGE & p->ps->flags)
+		return;
+
+	if (TERMTYPE_PS == p->type)
+		ps_printf(p, "/%s %zu selectfont\n",
+		    fonts[(int)f].name, p->ps->scale);
+	else
+		ps_printf(p, "/F%d %zu Tf\n",
+		    (int)f, p->ps->scale);
+}
+
+static size_t
+ps_width(const struct termp *p, int c)
+{
+
+	if (c <= 32 || c - 32 >= MAXCHAR)
+		c = 0;
+	else
+		c -= 32;
+
+	return (size_t)fonts[(int)TERMFONT_NONE].gly[c].wx;
+}
+
+static int
+ps_hspan(const struct termp *p, const struct roffsu *su)
+{
+	double		 r;
+
+	/*
+	 * All of these measurements are derived by converting from the
+	 * native measurement to AFM units.
+	 */
+	switch (su->unit) {
+	case SCALE_BU:
+		/*
+		 * Traditionally, the default unit is fixed to the
+		 * output media.  So this would refer to the point.  In
+		 * mandoc(1), however, we stick to the default terminal
+		 * scaling unit so that output is the same regardless
+		 * the media.
+		 */
+		r = PNT2AFM(p, su->scale * 72.0 / 240.0);
+		break;
+	case SCALE_CM:
+		r = PNT2AFM(p, su->scale * 72.0 / 2.54);
+		break;
+	case SCALE_EM:
+		r = su->scale *
+		    fonts[(int)TERMFONT_NONE].gly[109 - 32].wx;
+		break;
+	case SCALE_EN:
+		r = su->scale *
+		    fonts[(int)TERMFONT_NONE].gly[110 - 32].wx;
+		break;
+	case SCALE_IN:
+		r = PNT2AFM(p, su->scale * 72.0);
+		break;
+	case SCALE_MM:
+		r = su->scale *
+		    fonts[(int)TERMFONT_NONE].gly[109 - 32].wx / 100.0;
+		break;
+	case SCALE_PC:
+		r = PNT2AFM(p, su->scale * 12.0);
+		break;
+	case SCALE_PT:
+		r = PNT2AFM(p, su->scale * 1.0);
+		break;
+	case SCALE_VS:
+		r = su->scale * p->ps->lineheight;
+		break;
+	default:
+		r = su->scale;
+		break;
+	}
+
+	return r * 24.0;
+}
+
+static void
+ps_growbuf(struct termp *p, size_t sz)
+{
+	if (p->ps->psmargcur + sz <= p->ps->psmargsz)
+		return;
+
+	if (sz < PS_BUFSLOP)
+		sz = PS_BUFSLOP;
+
+	p->ps->psmargsz += sz;
+	p->ps->psmarg = mandoc_realloc(p->ps->psmarg, p->ps->psmargsz);
+}
+@
+
+
+1.78
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.77 2015/10/12 00:08:16 schwarze Exp $ */
+d23 1
+d25 1
+@
+
+
+1.77
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.76 2015/10/11 21:12:55 schwarze Exp $ */
+d111 1
+a111 2
+static	struct termp	 *pspdf_alloc(const struct mchars *,
+				const struct manoutput *);
+d512 1
+a512 1
+pdf_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+d516 1
+a516 1
+	if (NULL != (p = pspdf_alloc(mchars, outopts)))
+d523 1
+a523 1
+ps_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+d527 1
+a527 1
+	if (NULL != (p = pspdf_alloc(mchars, outopts)))
+d534 1
+a534 1
+pspdf_alloc(const struct mchars *mchars, const struct manoutput *outopts)
+a541 1
+	p->symtab = mchars;
+@
+
+
+1.76
+log
+@Finally use __progname, err(3) and warn(3).
+That's more readable and less error-prone than fumbling around
+with argv[0], fprintf(3), strerror(3), perror(3), and exit(3).
+
+It's a bad idea to boycott good interfaces merely because standards
+committees ignore them.  Instead, let's provide compatibility modules
+for archaic systems (like commercial Solaris) that still don't have
+them.  The compat module has an UCB Copyright (c) 1993...
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.75 2015/10/06 18:32:20 schwarze Exp $ */
+a988 1
+		/* FALLTHROUGH */
+a989 1
+		/* FALLTHROUGH */
+@
+
+
+1.75
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.74 2015/04/04 17:47:18 schwarze Exp $ */
+d23 1
+d586 1
+a586 1
+			fprintf(stderr, "%s: Unknown paper\n", pp);
+@
+
+
+1.74
+log
+@Rounding rules for horizontal scaling widths are more complicated.
+There is a first rounding to basic units on the input side.
+After that, rounding rules differ between requests and macros.
+Requests round to the nearest possible character position.
+Macros round to the next character position to the left.
+
+Implement that by changing the return value of term_hspan()
+to basic units and leaving the second scaling and rounding stage
+to the formatters instead of doing it in the terminal handler.
+
+Improves for example argtable2(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.73 2015/03/27 21:33:20 schwarze Exp $ */
+d519 1
+a519 1
+	return(p);
+d530 1
+a530 1
+	return(p);
+d619 1
+a619 1
+	return(p);
+d1273 1
+a1273 1
+	return((size_t)fonts[(int)TERMFONT_NONE].gly[c].wx);
+d1328 1
+a1328 1
+	return(r * 24.0);
+@
+
+
+1.73
+log
+@Actually use the new man.conf(5) "output" directive.
+Additional functionality, yet minus 45 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.72 2015/01/21 19:40:54 schwarze Exp $ */
+d90 1
+a90 1
+static	double		  ps_hspan(const struct termp *,
+d109 1
+a109 1
+static	void		  ps_setwidth(struct termp *, int, size_t);
+d623 1
+a623 1
+ps_setwidth(struct termp *p, int iop, size_t width)
+d631 2
+a632 2
+		p->ps->width = width ? width : p->ps->lastwidth;
+	else if (p->ps->width > width)
+d1276 1
+a1276 1
+static double
+d1328 1
+a1328 1
+	return(r);
+@
+
+
+1.72
+log
+@Improve overstriking.  When overstriking a wider character with a
+narrower one, center the latter horizontally.  After a group of
+characters printed in the same position, advance by the width of
+the widest one among them.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.71 2014/12/19 17:12:04 schwarze Exp $ */
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d33 1
+d110 2
+a111 1
+static	struct termp	 *pspdf_alloc(const struct mchars *, char *);
+d512 1
+a512 1
+pdf_alloc(const struct mchars *mchars, char *outopts)
+d523 1
+a523 1
+ps_alloc(const struct mchars *mchars, char *outopts)
+d534 1
+a534 1
+pspdf_alloc(const struct mchars *mchars, char *outopts)
+a538 1
+	const char	*toks[2];
+a539 1
+	char		*v;
+a557 14
+	toks[0] = "paper";
+	toks[1] = NULL;
+
+	pp = NULL;
+
+	while (outopts && *outopts)
+		switch (getsubopt(&outopts, UNCONST(toks), &v)) {
+		case 0:
+			pp = v;
+			break;
+		default:
+			break;
+		}
+
+d570 1
+@
+
+
+1.71
+log
+@Enforcing an arbitrary, implementation dependent, undocumented limit
+by calling assert() when valid user input exceeds it is a bad idea.
+Allocate the terminal font stack dynamically instead of crashing
+above 10 entries.  Issue found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.70 2014/12/01 08:05:52 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d63 1
+d1076 1
+a1076 1
+	size_t		savecol;
+d1148 13
+d1162 10
+d1185 3
+d1191 2
+d1196 2
+a1197 1
+	}
+@
+
+
+1.70
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.69 2014/11/20 13:56:20 schwarze Exp $ */
+d543 3
+@
+
+
+1.69
+log
+@Prevent negative arguments to the .ll request from causing integer
+underflow.  Found while preparing an audit of termp.rmargin.
+
+Overflow can also happen, but i see no sane way to deal with it,
+so just let it happen.  It doesn't happen for any sane input anyway,
+groff behaviour is undefined, and the resulting values are legal,
+even though they are useless.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.68 2014/10/28 17:36:19 schwarze Exp $ */
+a29 1
+#include "mandoc.h"
+d32 1
+a33 1
+#include "term.h"
+@
+
+
+1.68
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.67 2014/10/27 20:41:58 schwarze Exp $ */
+d638 1
+a638 1
+	if (0 < iop)
+d640 3
+a642 1
+	else if (0 > iop)
+d645 1
+a645 1
+		p->ps->width = width ? width : p->ps->lastwidth;
+@
+
+
+1.67
+log
+@Support overstriking by backspace in PostScript and PDF output.
+Of course, this is only a minor improvement; it would be much better
+to support non-ASCII characters in these output modes, but that
+would require major changes that i'm not going to work on right now.
+
+The main reason for doing this is that it allows to get ASCII output
+closer to groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.66 2014/08/28 01:37:12 schwarze Exp $ */
+d109 1
+a109 1
+static	struct termp	 *pspdf_alloc(char *);
+d510 1
+a510 1
+pdf_alloc(char *outopts)
+d514 1
+a514 1
+	if (NULL != (p = pspdf_alloc(outopts)))
+d521 1
+a521 1
+ps_alloc(char *outopts)
+d525 1
+a525 1
+	if (NULL != (p = pspdf_alloc(outopts)))
+d532 1
+a532 1
+pspdf_alloc(char *outopts)
+d542 1
+@
+
+
+1.66
+log
+@I just noticed that -Tps writes "%%CreationDate:" headers.
+That's an unwelcome leak of potentially private information.
+Kill it with fire.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.65 2014/08/24 23:43:13 schwarze Exp $ */
+d62 1
+d68 1
+a68 1
+	char		  last;		/* character buffer */
+d1051 1
+a1051 1
+		assert(p->ps->last != 8);
+d1070 1
+d1076 3
+a1078 8
+	 * When receiving an initial character, merely buffer it,
+	 * because a backspace might follow to specify formatting.
+	 * When receiving a backspace, use the buffered character
+	 * to build the font instruction and clear the buffer.
+	 * Only when there are two non-backspace characters in a row,
+	 * activate the font built so far and print the first of them;
+	 * the second, again, merely gets buffered.
+	 * The final character will get printed from ps_fclose().
+d1081 1
+a1081 1
+	if (c == 8) {
+d1083 11
+a1093 2
+		assert(p->ps->last != 8);
+		if ('_' == p->ps->last) {
+d1103 5
+a1107 1
+		} else {
+d1117 2
+d1120 17
+a1136 1
+	} else if (p->ps->last != '\0' && p->ps->last != 8) {
+d1144 8
+d1153 10
+@
+
+
+1.65
+log
+@When support for bold italic font was added to the parsers and to the
+generic parts of the formatters some time ago, the PostScript- and
+PDF-specific part of the formatters was neglected.
+
+Now pascal@@ reports that mandoc -Tps throws an assertion on perl(1),
+apparently because that manual actually uses bold italic font.
+
+So here is an overdue implementation of bold italic font support for
+PostScript and PDF output.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.64 2014/08/13 20:34:29 kristaps Exp $ */
+a27 1
+#include <time.h>
+a853 1
+	time_t		 t;
+a893 2
+	t = time(NULL);
+
+a895 1
+		ps_printf(p, "%%%%CreationDate: %s", ctime(&t));
+@
+
+
+1.64
+log
+@Begin cleaning up scaling units.
+Start with the horizontal terminal specifiers, making sure that they match
+up with troff.
+Then move on to PS, PDF, and HTML, noting that we stick to the terminal
+default width for "u".
+Lastly, fix some completely-wrong documentation and note that we diverge
+from troff w/r/t "u".
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.63 2014/08/10 23:54:41 schwarze Exp $ */
+d70 1
+d410 97
+d1054 3
+a1056 2
+	if ('\0' != p->ps->last) {
+		if (p->ps->lastf != TERMFONT_NONE) {
+d1058 1
+a1058 1
+			ps_setfont(p, TERMFONT_NONE);
+d1060 1
+d1074 1
+a1074 1
+	char		cc, c;
+d1079 8
+a1086 6
+	 * State machine dictates whether to buffer the last character
+	 * or not.  Basically, encoded words are detected by checking if
+	 * we're an "8" and switching on the buffer.  Then we put "8" in
+	 * our buffer, and on the next charater, flush both character
+	 * and buffer.  Thus, "regular" words are detected by having a
+	 * regular character and a regular buffer character.
+d1089 3
+a1091 9
+	if ('\0' == p->ps->last) {
+		assert(8 != c);
+		p->ps->last = c;
+		return;
+	} else if (8 == p->ps->last) {
+		assert(8 != c);
+		p->ps->last = '\0';
+	} else if (8 == c) {
+		assert(8 != p->ps->last);
+d1093 18
+a1110 3
+			if (p->ps->lastf != TERMFONT_UNDER) {
+				ps_pclose(p);
+				ps_setfont(p, TERMFONT_UNDER);
+a1111 3
+		} else if (p->ps->lastf != TERMFONT_BOLD) {
+			ps_pclose(p);
+			ps_setfont(p, TERMFONT_BOLD);
+d1113 2
+a1114 4
+		p->ps->last = c;
+		return;
+	} else {
+		if (p->ps->lastf != TERMFONT_NONE) {
+d1116 1
+a1116 1
+			ps_setfont(p, TERMFONT_NONE);
+d1118 2
+a1119 3
+		cc = p->ps->last;
+		p->ps->last = c;
+		c = cc;
+d1121 1
+a1121 2
+
+	ps_pletter(p, c);
+@
+
+
+1.63
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.62 2014/08/01 19:25:52 schwarze Exp $ */
+a1117 1
+
+d1119 10
+d1130 9
+a1138 1
+		r = PNT2AFM(p, su->scale * 28.34);
+d1143 4
+d1151 1
+a1151 12
+		r = PNT2AFM(p, su->scale * 100.0);
+		break;
+	case SCALE_EM:
+		r = su->scale *
+		    fonts[(int)TERMFONT_NONE].gly[109 - 32].wx;
+		break;
+	case SCALE_MM:
+		r = PNT2AFM(p, su->scale * 2.834);
+		break;
+	case SCALE_EN:
+		r = su->scale *
+		    fonts[(int)TERMFONT_NONE].gly[110 - 32].wx;
+@
+
+
+1.62
+log
+@Clarity with respect to floating point handling:
+Write double constants as double rather than integer literals.
+Remove useless explicit (double) cast done at one place and nowhere else.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.61 2014/07/27 21:53:17 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+a18 1
+#endif
+@
+
+
+1.61
+log
+@code readability; no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.60 2014/04/23 21:06:41 schwarze Exp $ */
+d1126 1
+a1126 1
+		r = PNT2AFM(p, su->scale * 72);
+d1129 1
+a1129 1
+		r = PNT2AFM(p, su->scale * 12);
+d1132 1
+a1132 1
+		r = PNT2AFM(p, su->scale * 100);
+@
+
+
+1.60
+log
+@Audit malloc(3)/calloc(3)/realloc(3) usage.
+* Change eight reallocs to reallocarray to be safe from overflows.
+* Change one malloc to reallocarray to be safe from overflows.
+* Change one calloc to reallocarray, no zeroing needed.
+* Change the order of arguments of three callocs (aesthetical).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.59 2014/04/20 16:46:05 schwarze Exp $ */
+d917 2
+a918 5
+	if (c <= 32 || (c - 32 >= MAXCHAR)) {
+		ps_putchar(p, ' ');
+		p->ps->pscol += (size_t)fonts[f].gly[0].wx;
+		return;
+	}
+d1104 3
+a1106 1
+		return((size_t)fonts[(int)TERMFONT_NONE].gly[0].wx);
+a1107 1
+	c -= 32;
+@
+
+
+1.59
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.58 2014/03/30 21:28:01 schwarze Exp $ */
+d631 2
+a632 6
+		p->ps->pdfobjs = realloc(p->ps->pdfobjs,
+		    p->ps->pdfobjsz * sizeof(size_t));
+		if (NULL == p->ps->pdfobjs) {
+			perror(NULL);
+			exit((int)MANDOCLEVEL_SYSERR);
+		}
+d1168 1
+a1168 3
+
+	p->ps->psmarg = mandoc_realloc
+		(p->ps->psmarg, p->ps->psmargsz);
+@
+
+
+1.58
+log
+@Support relative arguments to .ll (increase or decrease line length).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.57 2014/03/30 19:47:48 schwarze Exp $ */
+d43 1
+a43 1
+#define	PNT2AFM(p, x) /* LINTED */ \
+d47 1
+a47 1
+#define	AFM2PNT(p, x) /* LINTED */ \
+d83 1
+a83 1
+	size_t		  pdfbytes; 	/* current output byte */
+d457 1
+a457 1
+	
+d465 1
+a465 1
+		case (0):
+d501 1
+a501 1
+	/* 
+d515 2
+a516 4
+	marginx = /* LINTED */
+		(size_t)((double)pagex / 9.0);
+	marginy = /* LINTED */
+		(size_t)((double)pagey / 9.0);
+a534 1
+
+a549 1
+
+a565 1
+
+d583 1
+a583 2
+		p->ps->pdfbytes += /* LINTED */
+			len < 0 ? 0 : (size_t)len;
+d587 1
+a587 1
+	/* 
+a602 1
+
+a610 1
+		/* LINTED */
+a622 1
+
+d631 2
+a632 3
+		p->ps->pdfobjs = realloc
+			(p->ps->pdfobjs, 
+			 p->ps->pdfobjsz * sizeof(size_t));
+a642 1
+
+d675 1
+a675 1
+		for (i = 0; i < (int)TERMFONT__MAX; i++) 
+a695 2
+
+/* ARGSUSED */
+d718 1
+a718 1
+	} 
+d730 1
+a730 2
+		ps_printf(p, " %zu 0 R", i * 4 +
+				p->ps->pdfbody + 3);
+d732 1
+a732 2
+	base = (p->ps->pages - 1) * 4 + 
+		p->ps->pdfbody + 4;
+d746 2
+a747 2
+		ps_printf(p, "%.10zu 00000 n \n", 
+				p->ps->pdfobjs[(int)i]);
+a759 1
+
+d766 1
+a766 1
+	/* 
+d799 1
+a799 1
+	/* 
+d814 3
+a816 3
+				"Default %zu %zu 0 () ()\n",
+				(size_t)AFM2PNT(p, p->ps->width),
+				(size_t)AFM2PNT(p, p->ps->height));
+a847 1
+
+d860 5
+a864 6
+			ps_printf(p, "%%%%Page: %zu %zu\n", 
+					p->ps->pages + 1, 
+					p->ps->pages + 1);
+			ps_printf(p, "/%s %zu selectfont\n", 
+					fonts[(int)p->ps->lastf].name, 
+					p->ps->scale);
+d866 2
+a867 2
+			pdf_obj(p, p->ps->pdfbody + 
+					p->ps->pages * 4);
+d869 2
+a870 3
+			ps_printf(p, "/Length %zu 0 R\n", 
+					p->ps->pdfbody + 1 +
+					p->ps->pages * 4);
+d876 1
+a876 1
+	
+d884 2
+a885 3
+			ps_printf(p, "BT\n/F%d %zu Tf\n", 
+					(int)p->ps->lastf,
+					p->ps->scale);
+d887 2
+a888 2
+					AFM2PNT(p, p->ps->pscol),
+					AFM2PNT(p, p->ps->psrow));
+d890 3
+a892 3
+			ps_printf(p, "%.3f %.3f moveto\n(", 
+					AFM2PNT(p, p->ps->pscol),
+					AFM2PNT(p, p->ps->psrow));
+d906 1
+a906 1
+	case ('('):
+d908 1
+a908 1
+	case (')'):
+d910 1
+a910 1
+	case ('\\'):
+d925 1
+a925 1
+	} 
+a931 1
+
+d936 1
+a936 1
+	/* 
+d944 1
+a944 1
+	
+a952 1
+
+a979 1
+
+a984 1
+	/* LINTED */
+a1028 1
+
+a1043 1
+
+d1055 1
+a1055 1
+	 * lines, we'll do nasty stuff. 
+d1075 1
+a1075 2
+	if (p->ps->psrow >= p->ps->lineheight + 
+			p->ps->bottom) {
+a1082 1
+
+d1089 1
+a1089 1
+	
+d1099 2
+a1100 3
+		ps_printf(p, "/%s %zu selectfont\n", 
+				fonts[(int)f].name, 
+				p->ps->scale);
+d1102 2
+a1103 3
+		ps_printf(p, "/F%d %zu Tf\n", 
+				(int)f, 
+				p->ps->scale);
+a1105 2
+
+/* ARGSUSED */
+a1116 1
+
+d1121 1
+a1121 1
+	
+d1128 1
+a1128 1
+	case (SCALE_CM):
+d1131 1
+a1131 1
+	case (SCALE_IN):
+d1134 1
+a1134 1
+	case (SCALE_PC):
+d1137 1
+a1137 1
+	case (SCALE_PT):
+d1140 1
+a1140 1
+	case (SCALE_EM):
+d1142 1
+a1142 1
+			fonts[(int)TERMFONT_NONE].gly[109 - 32].wx;
+d1144 1
+a1144 1
+	case (SCALE_MM):
+d1147 1
+a1147 1
+	case (SCALE_EN):
+d1149 1
+a1149 1
+			fonts[(int)TERMFONT_NONE].gly[110 - 32].wx;
+d1151 1
+a1151 1
+	case (SCALE_VS):
+a1175 1
+
+@
+
+
+1.57
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.56 2014/03/23 11:25:26 schwarze Exp $ */
+d109 1
+a109 1
+static	void		  ps_setwidth(struct termp *, size_t);
+d539 1
+a539 1
+ps_setwidth(struct termp *p, size_t width)
+d544 6
+a549 1
+	p->ps->width = width ? width : p->ps->lastwidth;
+@
+
+
+1.56
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.55 2014/01/05 19:10:56 joerg Exp $ */
+d4 1
+d79 1
+d109 1
+d455 1
+d524 1
+a524 1
+	p->ps->width = (size_t)pagex;
+d538 11
+@
+
+
+1.55
+log
+@Tag functions with format strings as arguments as printf-like.
+Fix one case where a non-literal is used as format string.
+Fix another case where a variable is formatted using the wrong type.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.54 2011/10/16 12:20:34 schwarze Exp $ */
+d33 1
+@
+
+
+1.54
+log
+@Remove a bunch of useless assignments,
+and assert that print_bvspace cannot be called on NULL pointers.
+No change in behaviour, none of these were bugs,
+but the code becomes easier to understand.
+Based on a clang report posted by joerg@@; ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.53 2011/09/18 14:14:15 schwarze Exp $ */
+d100 3
+d830 1
+a830 1
+			ps_printf(p, "/Name /F%zu\n", i);
+@
+
+
+1.53
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.52 2011/08/16 12:23:51 kristaps Exp $ */
+d491 1
+a491 2
+	} else if (NULL == pp)
+		pp = "letter";
+d578 1
+a578 1
+	len = vsnprintf(&p->ps->psmarg[pos], PS_BUFSLOP, fmt, ap);
+@
+
+
+1.52
+log
+@Fixed mingw compatibility where the "z" printf() modifier isn't
+recognised.  It's easier to make these u_int than to jump through hoops
+for a special formatter.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.51 2011/05/17 14:38:34 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.51
+log
+@Add mode for -Tlocale.  This mode, with this commit, behaves exactly
+like -Tascii.  While adding this, inline term_alloc() (was a one-liner),
+remove some switches around the terminal encoding for the symbol table
+(unnecessary), and split out ascii_alloc() into ascii_init(), which is
+also called from locale_init().
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.50 2011/05/15 00:58:48 kristaps Exp $ */
+d432 2
+a433 1
+	size_t		 pagex, pagey, marginx, marginy, lineheight;
+d489 1
+a489 1
+		} else if (2 != sscanf(pp, "%zux%zu", &pagex, &pagey))
+d517 2
+a518 2
+	p->ps->width = pagex;
+	p->ps->height = pagey;
+@
+
+
+1.50
+log
+@Move struct termp_ps into term_ps.c; remove the engine union in struct termp,
+which only held one entry; finally (as per the first), make "ps" member into a
+pointer managed by term_ps.c.  This frees up a nice chunk of memory during
+run-time and in the binary.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.49 2011/05/14 17:54:42 kristaps Exp $ */
+d437 2
+a438 1
+	p = term_alloc(TERMENC_ASCII);
+@
+
+
+1.49
+log
+@Make character engine (-Tascii, -Tpdf, -Tps) ready for Unicode: make buffer
+consist of type "int".  This will take more work (especially in encode and
+friends), but this is a strong start.  This commit also consists of some
+harmless lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.48 2011/03/17 08:49:34 kristaps Exp $ */
+d37 3
+d42 1
+a42 1
+	(size_t)((double)(x) * (1000.0 / (double)(p)->engine.ps.scale))
+d46 1
+a46 1
+	((double)(x) / (1000.0 / (double)(p)->engine.ps.scale))
+d58 48
+a405 38
+/* These work the buffer used by the header and footer. */
+#define	PS_BUFSLOP	  128
+
+static void
+ps_growbuf(struct termp *p, size_t sz)
+{
+	if (p->engine.ps.psmargcur + sz <= p->engine.ps.psmargsz)
+		return;
+
+	if (sz < PS_BUFSLOP)
+		sz = PS_BUFSLOP;
+
+	p->engine.ps.psmargsz += sz;
+
+	p->engine.ps.psmarg = mandoc_realloc
+		(p->engine.ps.psmarg,
+		 p->engine.ps.psmargsz);
+}
+
+static	double		  ps_hspan(const struct termp *,
+				const struct roffsu *);
+static	size_t		  ps_width(const struct termp *, int);
+static	void		  ps_advance(struct termp *, size_t);
+static	void		  ps_begin(struct termp *);
+static	void		  ps_closepage(struct termp *);
+static	void		  ps_end(struct termp *);
+static	void		  ps_endline(struct termp *);
+static	void		  ps_fclose(struct termp *);
+static	void		  ps_letter(struct termp *, int);
+static	void		  ps_pclose(struct termp *);
+static	void		  ps_pletter(struct termp *, int);
+static	void		  ps_printf(struct termp *, const char *, ...);
+static	void		  ps_putchar(struct termp *, char);
+static	void		  ps_setfont(struct termp *, enum termfont);
+static	struct termp	 *pspdf_alloc(char *);
+static	void		  pdf_obj(struct termp *, size_t);
+
+
+a416 1
+
+a427 1
+
+d438 1
+d497 1
+a497 1
+	p->engine.ps.scale = 11;
+d513 1
+a513 1
+	lineheight = PNT2AFM(p, ((double)p->engine.ps.scale * 1.4));
+d515 8
+a522 8
+	p->engine.ps.width = pagex;
+	p->engine.ps.height = pagey;
+	p->engine.ps.header = pagey - (marginy / 2) - (lineheight / 2);
+	p->engine.ps.top = pagey - marginy;
+	p->engine.ps.footer = (marginy / 2) - (lineheight / 2);
+	p->engine.ps.bottom = marginy;
+	p->engine.ps.left = marginx;
+	p->engine.ps.lineheight = lineheight;
+d536 4
+a539 4
+	if (p->engine.ps.psmarg)
+		free(p->engine.ps.psmarg);
+	if (p->engine.ps.pdfobjs)
+		free(p->engine.ps.pdfobjs);
+d541 1
+d560 1
+a560 1
+	if ( ! (PS_MARGINS & p->engine.ps.flags)) {
+d563 1
+a563 1
+		p->engine.ps.pdfbytes += /* LINTED */
+d576 2
+a577 2
+	pos = (int)p->engine.ps.psmargcur;
+	len = vsnprintf(&p->engine.ps.psmarg[pos], PS_BUFSLOP, fmt, ap);
+d581 1
+a581 1
+	p->engine.ps.psmargcur = strlen(p->engine.ps.psmarg);
+d592 1
+a592 1
+	if ( ! (PS_MARGINS & p->engine.ps.flags)) {
+d595 1
+a595 1
+		p->engine.ps.pdfbytes++;
+d601 3
+a603 3
+	pos = (int)p->engine.ps.psmargcur++;
+	p->engine.ps.psmarg[pos++] = c;
+	p->engine.ps.psmarg[pos] = '\0';
+d613 6
+a618 6
+	if ((obj - 1) >= p->engine.ps.pdfobjsz) {
+		p->engine.ps.pdfobjsz = obj + 128;
+		p->engine.ps.pdfobjs = realloc
+			(p->engine.ps.pdfobjs, 
+			 p->engine.ps.pdfobjsz * sizeof(size_t));
+		if (NULL == p->engine.ps.pdfobjs) {
+d624 1
+a624 1
+	p->engine.ps.pdfobjs[(int)obj - 1] = p->engine.ps.pdfbytes;
+d642 2
+a643 2
+	assert(p->engine.ps.psmarg && p->engine.ps.psmarg[0]);
+	ps_printf(p, "%s", p->engine.ps.psmarg);
+d648 2
+a649 2
+		len = p->engine.ps.pdfbytes - p->engine.ps.pdflastpg;
+		base = p->engine.ps.pages * 4 + p->engine.ps.pdfbody;
+d676 4
+a679 4
+	p->engine.ps.pages++;
+	p->engine.ps.psrow = p->engine.ps.top;
+	assert( ! (PS_NEWPAGE & p->engine.ps.flags));
+	p->engine.ps.flags |= PS_NEWPAGE;
+d695 3
+a697 3
+	if ( ! (PS_NEWPAGE & p->engine.ps.flags)) {
+		assert(0 == p->engine.ps.flags);
+		assert('\0' == p->engine.ps.last);
+d703 1
+a703 1
+		ps_printf(p, "%%%%Pages: %zu\n", p->engine.ps.pages);
+d711 2
+a712 2
+			(size_t)AFM2PNT(p, p->engine.ps.width),
+			(size_t)AFM2PNT(p, p->engine.ps.height));
+d714 1
+a714 1
+	ps_printf(p, "/Count %zu\n", p->engine.ps.pages);
+d717 1
+a717 1
+	for (i = 0; i < p->engine.ps.pages; i++)
+d719 1
+a719 1
+				p->engine.ps.pdfbody + 3);
+d721 2
+a722 2
+	base = (p->engine.ps.pages - 1) * 4 + 
+		p->engine.ps.pdfbody + 4;
+d730 1
+a730 1
+	xref = p->engine.ps.pdfbytes;
+d737 1
+a737 1
+				p->engine.ps.pdfobjs[(int)i]);
+d762 3
+a764 3
+	if (p->engine.ps.psmarg) {
+		assert(p->engine.ps.psmargsz);
+		p->engine.ps.psmarg[0] = '\0';
+d767 5
+a771 5
+	/*p->engine.ps.pdfbytes = 0;*/
+	p->engine.ps.psmargcur = 0;
+	p->engine.ps.flags = PS_MARGINS;
+	p->engine.ps.pscol = p->engine.ps.left;
+	p->engine.ps.psrow = p->engine.ps.header;
+d778 2
+a779 2
+	p->engine.ps.pscol = p->engine.ps.left;
+	p->engine.ps.psrow = p->engine.ps.footer;
+d784 1
+a784 1
+	p->engine.ps.flags &= ~PS_MARGINS;
+d786 3
+a788 3
+	assert(0 == p->engine.ps.flags);
+	assert(p->engine.ps.psmarg);
+	assert('\0' != p->engine.ps.psmarg[0]);
+d806 2
+a807 2
+				(size_t)AFM2PNT(p, p->engine.ps.width),
+				(size_t)AFM2PNT(p, p->engine.ps.height));
+d832 4
+a835 4
+	p->engine.ps.pdfbody = (size_t)TERMFONT__MAX + 3;
+	p->engine.ps.pscol = p->engine.ps.left;
+	p->engine.ps.psrow = p->engine.ps.top;
+	p->engine.ps.flags |= PS_NEWPAGE;
+d850 1
+a850 1
+	if (PS_NEWPAGE & p->engine.ps.flags) {
+d853 2
+a854 2
+					p->engine.ps.pages + 1, 
+					p->engine.ps.pages + 1);
+d856 2
+a857 2
+					fonts[(int)p->engine.ps.lastf].name, 
+					p->engine.ps.scale);
+d859 2
+a860 2
+			pdf_obj(p, p->engine.ps.pdfbody + 
+					p->engine.ps.pages * 4);
+d863 2
+a864 2
+					p->engine.ps.pdfbody + 1 +
+					p->engine.ps.pages * 4);
+d867 2
+a868 2
+		p->engine.ps.pdflastpg = p->engine.ps.pdfbytes;
+		p->engine.ps.flags &= ~PS_NEWPAGE;
+d876 1
+a876 1
+	if ( ! (PS_INLINE & p->engine.ps.flags)) {
+d879 2
+a880 2
+					(int)p->engine.ps.lastf,
+					p->engine.ps.scale);
+d882 2
+a883 2
+					AFM2PNT(p, p->engine.ps.pscol),
+					AFM2PNT(p, p->engine.ps.psrow));
+d886 3
+a888 3
+					AFM2PNT(p, p->engine.ps.pscol),
+					AFM2PNT(p, p->engine.ps.psrow));
+		p->engine.ps.flags |= PS_INLINE;
+d891 1
+a891 1
+	assert( ! (PS_NEWPAGE & p->engine.ps.flags));
+d914 1
+a914 1
+	f = (int)p->engine.ps.lastf;
+d918 1
+a918 1
+		p->engine.ps.pscol += (size_t)fonts[f].gly[0].wx;
+d924 1
+a924 1
+	p->engine.ps.pscol += (size_t)fonts[f].gly[c].wx;
+d938 1
+a938 1
+	if ( ! (PS_INLINE & p->engine.ps.flags))
+d946 1
+a946 1
+	p->engine.ps.flags &= ~PS_INLINE;
+d962 2
+a963 2
+	if ('\0' != p->engine.ps.last) {
+		if (p->engine.ps.lastf != TERMFONT_NONE) {
+d967 2
+a968 2
+		ps_pletter(p, p->engine.ps.last);
+		p->engine.ps.last = '\0';
+d971 1
+a971 1
+	if ( ! (PS_INLINE & p->engine.ps.flags))
+d995 1
+a995 1
+	if ('\0' == p->engine.ps.last) {
+d997 1
+a997 1
+		p->engine.ps.last = c;
+d999 1
+a999 1
+	} else if (8 == p->engine.ps.last) {
+d1001 1
+a1001 1
+		p->engine.ps.last = '\0';
+d1003 3
+a1005 3
+		assert(8 != p->engine.ps.last);
+		if ('_' == p->engine.ps.last) {
+			if (p->engine.ps.lastf != TERMFONT_UNDER) {
+d1009 1
+a1009 1
+		} else if (p->engine.ps.lastf != TERMFONT_BOLD) {
+d1013 1
+a1013 1
+		p->engine.ps.last = c;
+d1016 1
+a1016 1
+		if (p->engine.ps.lastf != TERMFONT_NONE) {
+d1020 2
+a1021 2
+		cc = p->engine.ps.last;
+		p->engine.ps.last = c;
+d1041 1
+a1041 1
+	p->engine.ps.pscol += len;
+d1059 1
+a1059 1
+	if (PS_MARGINS & p->engine.ps.flags)
+d1064 1
+a1064 1
+	p->engine.ps.pscol = p->engine.ps.left;
+d1068 1
+a1068 1
+	if (PS_NEWPAGE & p->engine.ps.flags)
+d1076 3
+a1078 3
+	if (p->engine.ps.psrow >= p->engine.ps.lineheight + 
+			p->engine.ps.bottom) {
+		p->engine.ps.psrow -= p->engine.ps.lineheight;
+d1091 1
+a1091 1
+	p->engine.ps.lastf = f;
+d1098 1
+a1098 1
+	if (PS_NEWPAGE & p->engine.ps.flags)
+d1104 1
+a1104 1
+				p->engine.ps.scale);
+d1108 1
+a1108 1
+				p->engine.ps.scale);
+d1160 1
+a1160 1
+		r = su->scale * p->engine.ps.lineheight;
+d1170 15
+@
+
+
+1.48
+log
+@Move mandoc_{realloc,malloc,calloc} out of libmandoc.h and into mandoc.h
+so that everybody can use them.  This follows the convention of
+libXXXX.h being internal to a library and XXXX.h being the external
+interface.  Not only does this allow the removal of lots of redundant
+NULL-checking code, it also sets the tone for adding new mandoc-global
+routines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.47 2011/03/07 01:58:24 schwarze Exp $ */
+d376 1
+a376 1
+static	size_t		  ps_width(const struct termp *, char);
+d383 1
+a383 1
+static	void		  ps_letter(struct termp *, char);
+d966 1
+a966 1
+ps_letter(struct termp *p, char c)
+d968 4
+a971 1
+	char		cc;
+d1101 1
+a1101 1
+ps_width(const struct termp *p, char c)
+d1108 1
+a1108 1
+	return((size_t)fonts[(int)TERMFONT_NONE].gly[(int)c].wx);
+@
+
+
+1.47
+log
+@Do not leak information about the software used
+into PostScript and PDF documents behind the user's back.
+Joerg Sonnenberger pointed out that almost all software
+creating PostScript and PDF documents does so, even on OpenBSD,
+but that doesn't make the leakage much better in my book.
+According to all standards i could find, this information is optional.
+Issue originally reported by deraadt@@; "commit!" kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.46 2011/01/25 17:32:04 kristaps Exp $ */
+d369 1
+a369 1
+	p->engine.ps.psmarg = realloc
+a371 5
+	
+	if (NULL == p->engine.ps.psmarg) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+@
+
+
+1.46
+log
+@Remove unnecessary conditional...
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.45 2010/09/27 23:03:44 schwarze Exp $ */
+a790 1
+		ps_printf(p, "%%%%Creator: mandoc-%s\n", VERSION);
+a809 1
+		ps_printf(p, "/Creator mandoc-%s\n", VERSION);
+@
+
+
+1.45
+log
+@Merge from OpenBSD right after 1.10.6; now back to full sync.
+* mdoc.c: blank lines outside literal mode are more similar to .sp than .Pp
+* backslashes do not terminate macros; partial revert of mdoc.c 1.164;
+  the intention of that commit is fully achieved in roff.c
+* mdoc_term.c: no need to list the same prototype twice
+* mdoc_validate.c: drop .Pp before .sp just like .Pp before .Pp
+* fix off-by-one found by jsg@@ with parfait, OpenBSD term_ps.c 1.12
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.44 2010/09/04 20:18:53 kristaps Exp $ */
+d431 1
+a431 2
+	if (NULL == (p = term_alloc(TERMENC_ASCII)))
+		return(NULL);
+@
+
+
+1.44
+log
+@Churny commit to quiet lint.  No functional changes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.43 2010/08/26 13:00:59 kristaps Exp $ */
+d911 1
+a911 1
+	if (c <= 32 || (c - 32 > MAXCHAR)) {
+@
+
+
+1.43
+log
+@"sys/param.h is for kernel interface programs.
+sys/types.h is the file you want to include."
+
+From a downstream fix by deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.42 2010/08/20 01:02:07 schwarze Exp $ */
+d375 1
+a375 1
+		exit(MANDOCLEVEL_SYSERR);
+d586 1
+d613 1
+a613 1
+			exit(MANDOCLEVEL_SYSERR);
+@
+
+
+1.42
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.41 2010/08/06 16:07:35 kristaps Exp $ */
+d21 1
+a21 1
+#include <sys/param.h>
+@
+
+
+1.41
+log
+@IMPORTANT FIX: add missing braces around alloc failure conditional in
+fuction-isation of PS_GROWBUF.  Obviously the original commit was never
+actually tested, as -Tps and -Tpdf errored out immediately.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.40 2010/08/01 15:46:18 joerg Exp $ */
+d32 1
+d375 1
+a375 1
+		exit(EXIT_FAILURE);
+d612 1
+a612 1
+			exit(EXIT_FAILURE);
+@
+
+
+1.40
+log
+@Turn the non-trivial PS_GROWBUF macro into a function. Don't use MAX, it
+doesn't exist in the default namespace on Solaris.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.39 2010/07/25 22:15:07 kristaps Exp $ */
+d365 1
+d368 5
+a372 3
+	p->engine.ps.psmarg = realloc(p->engine.ps.psmarg,
+	    p->engine.ps.psmargsz);
+	if (NULL == p->engine.ps.psmarg)
+d375 1
+@
+
+
+1.39
+log
+@Fully-working -Tpdf: xref table is now generated.  This works for both
+single and multiple-manual mode (e.g., mandoc -Tpdf foo.1 bar.1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.38 2010/07/25 19:37:38 kristaps Exp $ */
+a355 13
+#define	PS_GROWBUF(p, sz) \
+	do if ((p)->engine.ps.psmargcur + (sz) > \
+			(p)->engine.ps.psmargsz) { \
+		(p)->engine.ps.psmargsz += /* CONSTCOND */ \
+			MAX(PS_BUFSLOP, (sz)); \
+		(p)->engine.ps.psmarg = realloc \
+			((p)->engine.ps.psmarg,  \
+			 (p)->engine.ps.psmargsz); \
+		if (NULL == (p)->engine.ps.psmarg) { \
+			perror(NULL); \
+			exit(EXIT_FAILURE); \
+		} \
+	} while (/* CONSTCOND */ 0)
+d357 16
+d562 1
+a562 1
+	PS_GROWBUF(p, PS_BUFSLOP);
+d586 1
+a586 1
+	PS_GROWBUF(p, 2);
+@
+
+
+1.38
+log
+@Make PDF sections contiguous.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.37 2010/07/25 11:44:31 kristaps Exp $ */
+d387 1
+d524 2
+a566 2
+	p->engine.ps.pdfbytes += /* LINTED */
+		len < 0 ? 0 : (size_t)len;
+d592 22
+d638 1
+a638 1
+		ps_printf(p, "%zu 0 obj\n", base + 1);
+d642 1
+a642 1
+		ps_printf(p, "%zu 0 obj\n", base + 2);
+d645 1
+a645 1
+		for (i = 0; i < TERMFONT__MAX; i++) 
+d650 2
+a651 1
+		ps_printf(p, "%zu 0 obj\n<<\n", base + 3);
+d692 2
+a693 1
+	ps_printf(p, "2 0 obj\n<<\n/Type /Pages\n");
+d709 1
+a709 1
+	ps_printf(p, "%zu 0 obj\n", base);
+d717 6
+a722 1
+	ps_printf(p, "0000000000 65535 f\n");
+d751 1
+a751 1
+	p->engine.ps.pdfbytes = 0;
+d801 1
+a801 1
+		ps_printf(p, "1 0 obj\n");
+d808 1
+a808 1
+			ps_printf(p, "%d 0 obj\n", i + 3);
+d845 1
+a845 2
+			ps_printf(p, "%zu 0 obj\n", 
+					p->engine.ps.pdfbody +
+@
+
+
+1.37
+log
+@Initial PDF shim over PS.  This produces working PDF output with -Tpdf.
+It's currently missing the xref table, so you'll get a warning in most
+PDF viewers).  It also produces lots of redundant output, which will go
+away once I get a better handle on the PDF spec.  The code doesn't
+really touch any existing functionality; it's a bunch of conditionals
+atop the -Tps (term_ps.c) implementation.  I'm checking it in now to
+have it exist and be auditable.  It needs clean-up, polish, and general
+care (and xref!).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.36 2010/07/21 08:24:39 kristaps Exp $ */
+d394 2
+a395 2
+	if (NULL == (p = pspdf_alloc(outopts)))
+		return(p);
+a396 1
+	p->type = TERMTYPE_PDF;
+d406 2
+a407 2
+	if (NULL == (p = pspdf_alloc(outopts)))
+		return(p);
+a408 1
+	p->type = TERMTYPE_PS;
+d594 8
+a601 1
+	size_t		 len;
+d606 1
+a606 3
+	if (TERMTYPE_PS == p->type) {
+		ps_printf(p, "showpage\n");
+	} else {
+d608 1
+d610 11
+a620 12
+		ps_printf(p, "endstream\n");
+		ps_printf(p, "endobj\n");
+		ps_printf(p, "%zu 0 obj\n", 
+				p->engine.ps.pdfbody +
+				(p->engine.ps.pages + 1) * 4 + 1);
+		ps_printf(p, "%zu\n", len);
+		ps_printf(p, "endobj\n");
+		ps_printf(p, "%zu 0 obj\n", 
+				p->engine.ps.pdfbody +
+				(p->engine.ps.pages + 1) * 4 + 2);
+		ps_printf(p, "<<\n");
+		ps_printf(p, "/ProcSet [/PDF /Text]\n");
+d622 1
+a622 1
+		for (i = 0; i < (int)TERMFONT__MAX; i++) 
+d624 4
+a627 6
+		ps_printf(p, ">>\n");
+		ps_printf(p, ">>\n");
+		ps_printf(p, "%zu 0 obj\n", 
+				p->engine.ps.pdfbody +
+				(p->engine.ps.pages + 1) * 4 + 3);
+		ps_printf(p, "<<\n");
+d630 5
+a634 9
+		ps_printf(p, "/Resources %zu 0 R\n",
+				p->engine.ps.pdfbody +
+				(p->engine.ps.pages + 1) * 4 + 2);
+		ps_printf(p, "/Contents %zu 0 R\n",
+				p->engine.ps.pdfbody +
+				(p->engine.ps.pages + 1) * 4);
+		ps_printf(p, ">>\n");
+		ps_printf(p, "endobj\n");
+	}
+d647 1
+a647 1
+	size_t		 i, xref;
+d668 1
+a668 3
+	ps_printf(p, "2 0 obj\n");
+	ps_printf(p, "<<\n");
+	ps_printf(p, "/Type /Pages\n");
+d677 8
+a684 9
+		ps_printf(p, " %zu 0 R", 
+				p->engine.ps.pdfbody +
+				(i + 1) * 4 + 3);
+	ps_printf(p, "]\n");
+	ps_printf(p, ">>\n");
+	ps_printf(p, "endobj\n");
+	ps_printf(p, "%zu 0 obj\n",
+			p->engine.ps.pdfbody +
+			(p->engine.ps.pages * 4) + 4);
+d691 1
+a691 3
+	ps_printf(p, "0 %zu\n",
+			p->engine.ps.pdfbody +
+			(p->engine.ps.pages * 4) + 5);
+d695 2
+a696 6
+	ps_printf(p, "/Size %zu\n", 
+			p->engine.ps.pdfbody +
+			(p->engine.ps.pages * 4) + 5);
+	ps_printf(p, "/Root %zu 0 R\n", 
+			p->engine.ps.pdfbody +
+			(p->engine.ps.pages * 4) + 4);
+d817 1
+a817 1
+					(p->engine.ps.pages + 1) * 4);
+d820 2
+a821 2
+					p->engine.ps.pdfbody +
+					(p->engine.ps.pages + 1) * 4 + 1);
+@
+
+
+1.36
+log
+@The "wx" value is quite small, so use a u_short instead of a size_t.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.35 2010/07/20 10:56:03 kristaps Exp $ */
+d376 1
+d386 14
+d406 13
+a432 1
+	p->type = TERMTYPE_PS;
+d517 1
+a517 1
+ps_free(void *arg)
+d534 1
+a534 1
+	int		 pos;
+d545 1
+a545 1
+		vprintf(fmt, ap);
+d547 2
+d561 1
+a561 2
+	vsnprintf(&p->engine.ps.psmarg[pos], PS_BUFSLOP, fmt, ap);
+	p->engine.ps.psmargcur = strlen(p->engine.ps.psmarg);
+d564 4
+d580 1
+d592 54
+d650 1
+d661 1
+a661 4
+		assert(p->engine.ps.psmarg && p->engine.ps.psmarg[0]);
+		printf("%s", p->engine.ps.psmarg);
+		p->engine.ps.pages++;
+		printf("showpage\n");
+d664 50
+a713 3
+	printf("%%%%Trailer\n");
+	printf("%%%%Pages: %zu\n", p->engine.ps.pages);
+	printf("%%%%EOF\n");
+d733 1
+d763 36
+a798 14
+	printf("%%!PS-Adobe-3.0\n");
+	printf("%%%%Creator: mandoc-%s\n", VERSION);
+	printf("%%%%CreationDate: %s", ctime(&t));
+	printf("%%%%DocumentData: Clean7Bit\n");
+	printf("%%%%Orientation: Portrait\n");
+	printf("%%%%Pages: (atend)\n");
+	printf("%%%%PageOrder: Ascend\n");
+	printf("%%%%DocumentMedia: Default %zu %zu 0 () ()\n",
+			(size_t)AFM2PNT(p, p->engine.ps.width),
+			(size_t)AFM2PNT(p, p->engine.ps.height));
+	printf("%%%%DocumentNeededResources: font");
+	for (i = 0; i < (int)TERMFONT__MAX; i++)
+		printf(" %s", fonts[i].name);
+	printf("\n%%%%EndComments\n");
+d800 1
+d819 18
+a836 6
+		printf("%%%%Page: %zu %zu\n", 
+				p->engine.ps.pages + 1, 
+				p->engine.ps.pages + 1);
+		ps_printf(p, "/%s %zu selectfont\n", 
+				fonts[(int)p->engine.ps.lastf].name, 
+				p->engine.ps.scale);
+d846 11
+a856 3
+		ps_printf(p, "%.3f %.3f moveto\n(", 
+				AFM2PNT(p, p->engine.ps.pscol),
+				AFM2PNT(p, p->engine.ps.psrow));
+d910 5
+a914 1
+	ps_printf(p, ") show\n");
+d1048 1
+a1048 7
+	assert(p->engine.ps.psmarg && p->engine.ps.psmarg[0]);
+	printf("%s", p->engine.ps.psmarg);
+	printf("showpage\n");
+	p->engine.ps.pages++;
+	p->engine.ps.psrow = p->engine.ps.top;
+	assert( ! (PS_NEWPAGE & p->engine.ps.flags));
+	p->engine.ps.flags |= PS_NEWPAGE;
+d1067 8
+a1074 2
+	ps_printf(p, "/%s %zu selectfont\n", 
+			fonts[(int)f].name, p->engine.ps.scale);
+@
+
+
+1.35
+log
+@Use floating-point -Tps "moveto" arguments to smooth out column and row
+misalignments.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.34 2010/07/13 23:53:20 schwarze Exp $ */
+d45 1
+a45 1
+	size_t		  wx; /* WX in AFM */
+d711 1
+a711 1
+		p->engine.ps.pscol += fonts[f].gly[0].wx;
+d717 1
+a717 1
+	p->engine.ps.pscol += fonts[f].gly[c].wx;
+d904 1
+a904 1
+		return(fonts[(int)TERMFONT_NONE].gly[0].wx);
+d907 1
+a907 1
+	return(fonts[(int)TERMFONT_NONE].gly[(int)c].wx);
+d935 1
+a935 1
+		r = su->scale * 
+d942 1
+a942 1
+		r = su->scale * 
+@
+
+
+1.34
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.33 2010/07/05 08:46:09 kristaps Exp $ */
+d42 1
+a42 1
+	(size_t)((double)(x) / (1000.0 / (double)(p)->engine.ps.scale))
+d638 2
+a639 2
+			AFM2PNT(p, p->engine.ps.width),
+			AFM2PNT(p, p->engine.ps.height));
+d678 1
+a678 1
+		ps_printf(p, "%zu %zu moveto\n(", 
+@
+
+
+1.33
+log
+@Suppress duplicate "Page: 1 1" -Tps printing and instead relay on
+PS_NEWPAGE to do the job for us.  Noted by Dillo.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.32 2010/07/04 20:17:42 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.32
+log
+@gv(1) doesn't remember the last set font when displaying new pages, so
+print it out for each new page.  This also prevents superfluous
+printings of the font before the %%Page: comment has been displayed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.31 2010/07/04 20:06:59 kristaps Exp $ */
+a644 5
+	printf("%%%%Page: %zu %zu\n", 
+			p->engine.ps.pages + 1, 
+			p->engine.ps.pages + 1);
+
+	ps_setfont(p, TERMFONT_NONE);
+d648 1
+@
+
+
+1.31
+log
+@Set line-height to be 1.4em.  Removed check for minimum margins that are no
+longer important.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.30 2010/07/04 19:57:26 kristaps Exp $ */
+d660 1
+a660 1
+	
+d662 2
+a663 2
+	 * If we're not in a PostScript "word" context, then open one
+	 * now at the current cursor.
+d666 1
+a666 1
+	if (PS_NEWPAGE & p->engine.ps.flags)
+d670 10
+a685 1
+		p->engine.ps.flags &= ~PS_NEWPAGE;
+d887 10
+a898 1
+	p->engine.ps.lastf = f;
+@
+
+
+1.30
+log
+@Suppress printing blank eof pages in -Tps.  Delay printing of Page:
+until actual text is ready to be displayed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.29 2010/07/04 19:42:25 kristaps Exp $ */
+a35 5
+#define	MINMARGIN_MM	20	/* Minimum 2cm margins. */
+#define	MINMARGIN_PNT	56.68
+#define	DEFPAGEX_MM	216	/* Default page size is US-letter. */
+#define	DEFPAGEY_MM	279
+
+d424 2
+a425 2
+	pagex = DEFPAGEX_MM;
+	pagey = DEFPAGEY_MM;
+a451 10
+	/* Enforce minimum page size >= (2 times) min-margin. */
+
+	if ((2 * MINMARGIN_MM) >= pagex) {
+		fprintf(stderr, "%s: Insufficient page width\n", pp);
+		pagex = DEFPAGEX_MM;
+	} else if ((2 * MINMARGIN_MM >= pagey)) {
+		fprintf(stderr, "%s: Insufficient page length\n", pp);
+		pagey = DEFPAGEY_MM;
+	}
+
+d471 3
+a473 1
+	lineheight = PNT2AFM(p, 16);
+@
+
+
+1.29
+log
+@Suppress printing of newlines/space at start of new -Tps page.
+
+Also renamed "psstate" -> "flags" (was wrongly implying some sort of
+state machine).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.28 2010/07/04 19:24:00 kristaps Exp $ */
+d583 8
+a590 6
+	assert(0 == p->engine.ps.flags);
+	assert('\0' == p->engine.ps.last);
+	assert(p->engine.ps.psmarg && p->engine.ps.psmarg[0]);
+	printf("%s", p->engine.ps.psmarg);
+	p->engine.ps.pages++;
+	printf("showpage\n");
+d679 5
+a879 3
+	printf("%%%%Page: %zu %zu\n", 
+			p->engine.ps.pages + 1, 
+			p->engine.ps.pages + 1);
+@
+
+
+1.28
+log
+@Backed out margin calculations in favour of much simpler rule of thumb:
+margins are 1/9 the length/width.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.27 2010/07/04 10:53:04 kristaps Exp $ */
+d481 4
+a484 2
+	marginx = (size_t)((double)pagex / 9.0);
+	marginy = (size_t)((double)pagey / 9.0);
+d530 1
+a530 1
+	if ( ! (PS_MARGINS & p->engine.ps.psstate)) {
+d559 1
+a559 1
+	if ( ! (PS_MARGINS & p->engine.ps.psstate)) {
+d583 1
+a583 1
+	assert(0 == p->engine.ps.psstate);
+d613 1
+a613 1
+	p->engine.ps.psstate = PS_MARGINS;
+d628 1
+a628 1
+	p->engine.ps.psstate &= ~PS_MARGINS;
+d630 1
+a630 1
+	assert(0 == p->engine.ps.psstate);
+d663 1
+d677 1
+a677 1
+	if ( ! (PS_INLINE & p->engine.ps.psstate)) {
+d681 2
+a682 1
+		p->engine.ps.psstate |= PS_INLINE;
+d685 2
+d732 1
+a732 1
+	if ( ! (PS_INLINE & p->engine.ps.psstate))
+d736 1
+a736 1
+	p->engine.ps.psstate &= ~PS_INLINE;
+d761 1
+a761 1
+	if ( ! (PS_INLINE & p->engine.ps.psstate))
+d846 10
+a855 1
+	if (PS_MARGINS & p->engine.ps.psstate)
+a862 1
+	p->engine.ps.pscol = p->engine.ps.left;
+d877 2
+@
+
+
+1.27
+log
+@Auto-margins.  Documented in mandoc.1.  Also bumped line-height and made
+sure header and footer accomodate for said line-height.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.26 2010/07/02 10:53:28 kristaps Exp $ */
+d396 1
+a396 1
+	size_t		 pagex, pagey, margin, lineheight, m1, m2;
+d479 1
+a479 5
+	/* 
+	 * Calculate margins.  First get the minimum text width: either
+	 * page minus margins or width of 65 'm' characters.  Set total
+	 * margins to page size minus text width.
+	 */
+d481 2
+a482 3
+	m1 = ps_width(p, 'm') * 65;
+	m2 = pagex - (2 * PNT2AFM(p, MINMARGIN_PNT));
+	margin = (pagex - (m1 < m2 ? m1 : m2)) / 2;
+d488 5
+a492 5
+	p->engine.ps.header = pagey - (margin / 2) - (lineheight / 2);
+	p->engine.ps.top = pagey - margin;
+	p->engine.ps.footer = (margin / 2) - (lineheight / 2);
+	p->engine.ps.bottom = margin;
+	p->engine.ps.left = margin;
+d495 1
+a495 1
+	p->defrmargin = pagex - (margin * 2);
+@
+
+
+1.26
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.25 2010/07/01 14:23:45 kristaps Exp $ */
+d36 5
+d396 1
+a396 1
+	size_t		 pagex, pagey, margin, lineheight;
+a412 2
+	p->engine.ps.scale = 11;
+
+a426 3
+	margin = PNT2AFM(p, 72);
+	lineheight = PNT2AFM(p, 12);
+
+d429 2
+a430 2
+	pagex = 216;
+	pagey = 279;
+d454 11
+d467 7
+d479 11
+a489 2
+	assert(margin * 2 < pagex);
+	assert(margin * 2 < pagey);
+d493 1
+a493 1
+	p->engine.ps.header = pagey - (margin / 2);
+d495 1
+a495 1
+	p->engine.ps.footer = (margin / 2);
+@
+
+
+1.25
+log
+@First, I'm defaulting to 11-point font, which renders much nicer (the
+"Internet" vaguely suggests using 11- or 9-Point for serifed fonts).
+This verified on GNU/Linux, Mac OSX, Windows, and OpenBSD.  Noted in
+mandoc.1.
+
+Then added a3, a4, a5, letter, legal, and custom page dimensions.  These
+seem to be the main players.  Noted in mandoc.1.
+
+Lintified the casting.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.24 2010/06/30 20:57:41 kristaps Exp $ */
+d30 1
+@
+
+
+1.24
+log
+@Now using Times AFM provided by Dillo.  Verified on OpenBSD by me and Mac OSX
+by M. Deksters.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.23 2010/06/30 15:05:02 kristaps Exp $ */
+d36 1
+a36 1
+#define	PNT2AFM(p, x) \
+d40 1
+a40 1
+#define	AFM2PNT(p, x) \
+d44 1
+a44 1
+	int		  wx; /* WX in AFM */
+d392 1
+a392 1
+	const char	*paper;
+d407 1
+a407 1
+	p->engine.ps.scale = 10;
+d412 1
+a412 1
+	paper = "letter";
+d417 1
+a417 1
+			paper = v;
+d426 27
+a452 6
+	if (0 == strcasecmp(paper, "a4")) {
+		pagex = PNT2AFM(p, 595);
+		pagey = PNT2AFM(p, 842);
+	} else {
+		pagex = PNT2AFM(p, 612);
+		pagey = PNT2AFM(p, 792);
+d455 5
+d687 1
+a687 1
+	ps_putchar(p, c);
+@
+
+
+1.23
+log
+@Correct dimensions for DocumentMedia.  Noted by schwarze@@, as gv(1) was
+puking on input.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.22 2010/06/30 13:16:25 kristaps Exp $ */
+d60 166
+a225 5
+	{ "CharterBT-Roman", {
+		{  278 },
+		{  338 },
+		{  331 },
+		{  745 },
+d227 2
+a228 5
+		{  852 },
+		{  704 },
+		{  201 },
+		{  417 },
+		{  417 },
+d230 1
+a230 1
+		{  833 },
+d232 2
+a233 1
+		{  319 },
+d235 1
+a235 8
+		{  481 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+d237 1
+a239 16
+		{  319 },
+		{  319 },
+		{  833 },
+		{  833 },
+		{  833 },
+		{  486 },
+		{  942 },
+		{  639 },
+		{  604 },
+		{  632 },
+		{  693 },
+		{  576 },
+		{  537 },
+		{  694 },
+		{  738 },
+		{  324 },
+d241 2
+a242 8
+		{  611 },
+		{  520 },
+		{  866 },
+		{  713 },
+		{  731 },
+		{  558 },
+		{  731 },
+		{  646 },
+a243 11
+		{  597 },
+		{  694 },
+		{  618 },
+		{  928 },
+		{  600 },
+		{  586 },
+		{  586 },
+		{  421 },
+		{  481 },
+		{  421 },
+		{ 1000 },
+d245 2
+a246 28
+		{  201 },
+		{  507 },
+		{  539 },
+		{  446 },
+		{  565 },
+		{  491 },
+		{  321 },
+		{  523 },
+		{  564 },
+		{  280 },
+		{  266 },
+		{  517 },
+		{  282 },
+		{  843 },
+		{  568 },
+		{  539 },
+		{  551 },
+		{  531 },
+		{  382 },
+		{  400 },
+		{  334 },
+		{  569 },
+		{  494 },
+		{  771 },
+		{  503 },
+		{  495 },
+		{  468 },
+		{  486 },
+d248 5
+a252 2
+		{  486 },
+		{  833 },
+d254 69
+a322 11
+	{ "CharterBT-Bold", {
+		{  291 },
+		{  340 },
+		{  339 },
+		{  736 },
+		{  581 },
+		{  888 },
+		{  741 },
+		{  255 },
+		{  428 },
+		{  428 },
+d324 2
+a325 52
+		{  833 },
+		{  289 },
+		{  326 },
+		{  289 },
+		{  491 },
+		{  581 },
+		{  581 },
+		{  581 },
+		{  581 },
+		{  581 },
+		{  581 },
+		{  581 },
+		{  581 },
+		{  581 },
+		{  581 },
+		{  340 },
+		{  340 },
+		{  833 },
+		{  833 },
+		{  833 },
+		{  487 },
+		{  917 },
+		{  651 },
+		{  628 },
+		{  638 },
+		{  716 },
+		{  596 },
+		{  552 },
+		{  710 },
+		{  760 },
+		{  354 },
+		{  465 },
+		{  650 },
+		{  543 },
+		{  883 },
+		{  727 },
+		{  752 },
+		{  587 },
+		{  752 },
+		{  671 },
+		{  568 },
+		{  603 },
+		{  705 },
+		{  635 },
+		{  946 },
+		{  637 },
+		{  610 },
+		{  592 },
+		{  443 },
+		{  491 },
+		{  443 },
+		{ 1000 },
+a326 28
+		{  255 },
+		{  544 },
+		{  577 },
+		{  476 },
+		{  596 },
+		{  524 },
+		{  341 },
+		{  551 },
+		{  597 },
+		{  305 },
+		{  297 },
+		{  553 },
+		{  304 },
+		{  892 },
+		{  605 },
+		{  577 },
+		{  591 },
+		{  575 },
+		{  421 },
+		{  447 },
+		{  358 },
+		{  600 },
+		{  513 },
+		{  799 },
+		{  531 },
+		{  515 },
+		{  495 },
+		{  493 },
+a327 4
+		{  493 },
+		{  833 },
+	} },
+	{ "CharterBT-Italic", {
+d329 7
+a335 9
+		{  338 },
+		{  331 },
+		{  745 },
+		{  556 },
+		{  852 },
+		{  704 },
+		{  201 },
+		{  419 },
+		{  419 },
+d337 2
+a338 3
+		{  833 },
+		{  278 },
+		{  319 },
+a339 48
+		{  481 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  556 },
+		{  319 },
+		{  319 },
+		{  833 },
+		{  833 },
+		{  833 },
+		{  486 },
+		{  942 },
+		{  606 },
+		{  588 },
+		{  604 },
+		{  671 },
+		{  546 },
+		{  509 },
+		{  664 },
+		{  712 },
+		{  312 },
+		{  447 },
+		{  625 },
+		{  498 },
+		{  839 },
+		{  683 },
+		{  708 },
+		{  542 },
+		{  708 },
+		{  602 },
+		{  537 },
+		{  565 },
+		{  664 },
+		{  590 },
+		{  898 },
+		{  569 },
+		{  562 },
+		{  556 },
+		{  421 },
+		{  481 },
+		{  421 },
+		{ 1000 },
+d341 6
+a346 12
+		{  201 },
+		{  525 },
+		{  507 },
+		{  394 },
+		{  523 },
+		{  424 },
+		{  292 },
+		{  481 },
+		{  551 },
+		{  287 },
+		{  269 },
+		{  514 },
+d348 2
+a349 18
+		{  815 },
+		{  556 },
+		{  502 },
+		{  516 },
+		{  512 },
+		{  398 },
+		{  370 },
+		{  333 },
+		{  553 },
+		{  454 },
+		{  713 },
+		{  477 },
+		{  475 },
+		{  440 },
+		{  486 },
+		{  500 },
+		{  486 },
+		{  833 },
+@
+
+
+1.22
+log
+@Embedding Charter proportional-width glyphs.  Nice-looking output.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.21 2010/06/30 13:00:00 kristaps Exp $ */
+a596 1
+	printf("%%%%Orientation: Portrait\n");
+d598 2
+a599 2
+			p->engine.ps.width,
+			p->engine.ps.height);
+d808 2
+a812 2
+	printf("showpage\n");
+	p->engine.ps.pages++;
+@
+
+
+1.21
+log
+@PostScript can now handle scaled glyph sizes (see "scale" in struct
+termp_ps) to arbitrarily scale font.  Tested with 10 (default), 12, 14.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.20 2010/06/30 12:30:36 kristaps Exp $ */
+d60 96
+a155 96
+	{ "Courier", {
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+d157 96
+a252 96
+	{ "Courier-Bold", {
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+d254 96
+a349 96
+	{ "Courier-Oblique", {
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+		{ 600 },
+@
+
+
+1.20
+log
+@Pushed normalisation of scaling units into term_hspan().
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.19 2010/06/30 12:27:55 kristaps Exp $ */
+d35 8
+d406 2
+d423 3
+d427 2
+a428 2
+		pagex = 595 * 100;
+		pagey = 842 * 100;
+d430 2
+a431 2
+		pagex = 612 * 100;
+		pagey = 792 * 100;
+a433 3
+	margin = 72 * 100;
+	lineheight = 12 * 100;
+
+d628 2
+a629 2
+				(size_t)(p->engine.ps.pscol / 100), 
+				(size_t)(p->engine.ps.psrow / 100));
+d823 2
+a824 1
+	ps_printf(p, "/%s 10 selectfont\n", fonts[(int)f].name);
+d849 1
+a849 2
+	 * native measurement to AFM units, which are (scalesize/1000).
+	 * Since scalesize is 10 for us, we can just skip to (x/100).
+d854 1
+a854 1
+		r = su->scale * 28.34 * 100;
+d857 1
+a857 1
+		r = su->scale * 72 * 100;
+d860 1
+a860 1
+		r = su->scale * 12 * 100;
+d863 1
+a863 1
+		r = su->scale * 100;
+d870 1
+a870 1
+		r = su->scale * 2.834 * 100;
+@
+
+
+1.19
+log
+@Move term_hspan() calculation into the output devices, where it belongs.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.18 2010/06/30 11:45:21 kristaps Exp $ */
+d362 1
+a362 1
+static	size_t		  ps_hspan(const struct termp *,
+d831 1
+a831 1
+static size_t
+d874 1
+a874 7
+	/* Explicitly disallow negative values. */
+
+	if (r < 0.0)
+		r = 0.0;
+
+	return((size_t)/* LINTED */
+			r);
+@
+
+
+1.18
+log
+@Push paper calculation out of getsubopt() loop.  Make all points be AFM
+glyph units to make positioning more precise.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.17 2010/06/29 14:53:14 kristaps Exp $ */
+d362 4
+a365 1
+static	void		  ps_letter(struct termp *, char);
+a367 1
+static	void		  ps_advance(struct termp *, size_t);
+d370 1
+a370 1
+static	size_t		  ps_width(const struct termp *, char);
+d390 1
+a390 2
+	p->type = TERMTYPE_PS;
+	p->letter = ps_letter;
+a392 1
+	p->advance = ps_advance;
+d394 3
+d402 2
+d829 54
+@
+
+
+1.17
+log
+@Add in -Opaper=xxx support for -Tps postscript.  This doesn't have any
+functional changes beyond the getsubopt() parse in term_ps.c.  If you
+want to test this (it only does -Opaper=a4 and -Opaper=letter; adding
+more is trivial), make sure you specify (e.g.) -sPAPERSIZE=a4 to gs(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.16 2010/06/29 14:18:05 kristaps Exp $ */
+d380 1
+a380 1
+	size_t		 pagex, pagey, margin;
+d382 1
+a387 5
+	/* Default is USA letter. */
+	pagex = 612;
+	pagey = 792;
+	margin = 72;
+
+d402 1
+a402 7
+			if (0 == strcasecmp(v, "a4")) {
+				pagex = 595;
+				pagey = 842;
+			} else if (0 == strcasecmp(v, "letter")) {
+				pagex = 612;
+				pagey = 792;
+			}
+d408 11
+d429 1
+a429 1
+	p->engine.ps.lineheight = 12;
+d613 2
+a614 2
+				p->engine.ps.pscol, 
+				p->engine.ps.psrow);
+d643 1
+a643 1
+		p->engine.ps.pscol += (fonts[f].gly[0].wx / 100);
+d649 1
+a649 1
+	p->engine.ps.pscol += (fonts[f].gly[c].wx / 100);
+d819 1
+a819 1
+		return(fonts[(int)TERMFONT_NONE].gly[0].wx / 100);
+d822 1
+a822 1
+	return(fonts[(int)TERMFONT_NONE].gly[(int)c].wx / 100);
+@
+
+
+1.16
+log
+@Give -Tps better PostScript hinting.  Note that we're using Adobe-3.0
+constructs.  Push the stupid CPP defines for page boundaries and margins
+into proper variables.  Give enum termfont a proper TERMFONT__MAX.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.15 2010/06/28 23:26:09 kristaps Exp $ */
+d25 1
+d377 1
+a377 1
+ps_alloc(void)
+d381 2
+d387 1
+d400 18
+@
+
+
+1.15
+log
+@Clean-up of variable-width glyph support.  Adds no new code; only
+restructured to make a bit more readable.  Also removed an unused entry
+in the PS engine structure.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.14 2010/06/28 22:46:21 kristaps Exp $ */
+a33 8
+/* TODO: all this will go away with different paper sizes. */
+#define	PS_CHAR_HEIGHT	  12
+#define	PS_CHAR_TOPMARG	 (792 - 24)
+#define	PS_CHAR_TOP	 (PS_CHAR_TOPMARG - 36)
+#define	PS_CHAR_LEFT	  36
+#define	PS_CHAR_BOTMARG	  24
+#define	PS_CHAR_BOT	 (PS_CHAR_BOTMARG + 36)
+
+d50 1
+a50 1
+static	const struct font fonts[3] = {
+d379 1
+d384 3
+a386 1
+	p->defrmargin = 612 - (PS_CHAR_LEFT * 2);
+d395 14
+d498 1
+d500 4
+a503 1
+	printf("%s\n", "%%EOF");
+d511 1
+d525 2
+a526 2
+	p->engine.ps.pscol = PS_CHAR_LEFT;
+	p->engine.ps.psrow = PS_CHAR_TOPMARG;
+d533 2
+a534 2
+	p->engine.ps.pscol = PS_CHAR_LEFT;
+	p->engine.ps.psrow = PS_CHAR_BOTMARG;
+d552 1
+a552 1
+	printf("%%!PS\n");
+d555 3
+d560 11
+a570 1
+	printf("%%%%EndComments\n");
+d573 2
+a574 2
+	p->engine.ps.pscol = PS_CHAR_LEFT;
+	p->engine.ps.psrow = PS_CHAR_TOP;
+d762 4
+a765 3
+	p->engine.ps.pscol = PS_CHAR_LEFT;
+	if (p->engine.ps.psrow >= PS_CHAR_HEIGHT + PS_CHAR_BOT) {
+		p->engine.ps.psrow -= PS_CHAR_HEIGHT;
+d771 3
+d775 2
+a776 1
+	p->engine.ps.psrow = PS_CHAR_TOP;
+d784 1
+@
+
+
+1.14
+log
+@This enables variable glyph-width output.  The checkin will be followed
+by a [functionless] clean-up in term_ps.c, but this makes the
+appropriate changes to "enable" initial proportional-width functionality
+in term.c and fixes some areas of term_ps.c that were causing errors.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.13 2010/06/28 13:45:28 kristaps Exp $ */
+d34 8
+a45 2
+#define	MAXCHAR		  95
+
+d48 1
+d352 1
+a352 7
+#define	PS_CHAR_HEIGHT	  12
+#define	PS_CHAR_TOPMARG	 (792 - 24)
+#define	PS_CHAR_TOP	 (PS_CHAR_TOPMARG - 36)
+#define	PS_CHAR_LEFT	  36
+#define	PS_CHAR_BOTMARG	  24
+#define	PS_CHAR_BOT	 (PS_CHAR_BOTMARG + 36)
+
+d392 1
+@
+
+
+1.13
+log
+@Initial encoding of glyph widths.  From /usr/X11R6/lib/X11/fonts/Type1.
+These continues proportional-width glyph encoding.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.12 2010/06/25 19:50:23 kristaps Exp $ */
+d390 1
+a390 3
+	p->defrmargin = 78;
+	p->tabwidth = 5;
+
+d552 1
+d587 1
+a587 4
+	/* 
+	 * FIXME: at this time we emit only blacnks on non-ASCII
+	 * letters.
+	 */
+d589 1
+a589 1
+	if (c < 32 || (c - 32 > MAXCHAR)) {
+d591 1
+a591 2
+		p->engine.ps.pscol += 
+			(fonts[p->engine.ps.lastf].gly[32].wx / 100);
+d596 2
+a597 2
+	p->engine.ps.pscol += 
+		(fonts[p->engine.ps.lastf].gly[(int)c - 32].wx / 100);
+d707 1
+a707 2
+	p->engine.ps.pscol += 0 == len ? 0 :
+		len * (fonts[p->engine.ps.lastf].gly[0].wx / 100);
+d760 5
+a764 1
+	return(1);
+@
+
+
+1.12
+log
+@Remove "pt" from struct roffsu, as CSS (the only reason it was there) is
+unclear about which units accept floats/integers, which leads me to
+assume that it handles either and rounds as appropriate.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.11 2010/06/25 18:53:14 kristaps Exp $ */
+d28 1
+d34 311
+a344 1
+#define	PS_CHAR_WIDTH	  6
+d376 1
+a376 1
+static	void		  ps_pletter(struct termp *, char);
+d497 1
+d536 9
+a544 1
+	printf("%s\n", "%!PS");
+d552 1
+a552 1
+ps_pletter(struct termp *p, char c)
+d588 12
+d601 2
+a602 1
+	p->engine.ps.pscol += PS_CHAR_WIDTH;
+d712 2
+a713 1
+	p->engine.ps.pscol += len ? len * PS_CHAR_WIDTH : 0;
+d756 1
+a756 8
+	if (TERMFONT_BOLD == f) 
+		ps_printf(p, "/Courier-Bold\n");
+	else if (TERMFONT_UNDER == f)
+		ps_printf(p, "/Courier-Oblique\n");
+	else
+		ps_printf(p, "/Courier\n");
+
+	ps_printf(p, "10 selectfont\n");
+@
+
+
+1.11
+log
+@Initial chunks for variable-width fonts.  Pushes all width calculations
+in mdoc_term.c and man_term.c down into term.c.  This is still not
+implemented in term.c, although stubs for width calculations are in
+place.  From now on, offset, rmargin, and other layout variables are
+abstract screen widths.  They will resolve to the the familiar values
+for -Tascii but -Tps will eventually use points instead of chars.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.10 2010/06/19 20:46:28 kristaps Exp $ */
+d434 1
+@
+
+
+1.10
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.9 2010/06/11 16:58:20 kristaps Exp $ */
+d63 1
+d79 3
+d88 1
+d433 7
+@
+
+
+1.9
+log
+@Implement font-switching for PostScript.  -Tps now supports
+TERMFONT_BOLD (Courier-Bold) and TERMFONT_UNDER (Courier-Oblique).  It
+doesn't look half bad.  This accomplished through tricksy juggling of
+the one-char back-buffer.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.8 2010/06/11 15:26:39 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.8
+log
+@Delay opening a word state until a character is ready to be output.
+This paves the way for closing/reopening scope in the event that a font
+changes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.7 2010/06/11 07:23:04 kristaps Exp $ */
+d56 1
+d62 2
+d67 1
+d182 3
+a184 3
+	/*
+	 * Emit the standard PostScript prologue, set our initial page
+	 * position, then run pageopen() on the initial page.
+a186 6
+	printf("%s\n", "%!PS");
+	printf("%s\n", "/Courier");
+	printf("%s\n", "10 selectfont");
+
+	p->engine.ps.psstate = 0;
+
+d193 1
+a193 7
+
+	/*
+	 * Now dump the margins into our margin buffer.  If we don't do
+	 * this, we'd break any current state to run the header and
+	 * footer with each and evern new page.
+	 */
+
+d197 1
+a197 1
+	p->engine.ps.psstate |= PS_MARGINS;
+a201 3
+	p->engine.ps.psstate &= ~PS_MARGINS;
+	assert(0 == p->engine.ps.psstate);
+
+a203 1
+	p->engine.ps.psstate |= PS_MARGINS;
+d209 1
+d211 7
+d219 2
+a222 3
+
+	assert(p->engine.ps.psmarg);
+	assert('\0' != p->engine.ps.psmarg[0]);
+d230 5
+a235 4
+		/*
+		 * If we're not in a PostScript "word" context, then
+		 * open one now at the current cursor.
+		 */
+d262 1
+d269 46
+d318 10
+a327 1
+	
+d334 1
+a334 2
+		p->engine.ps.last = c;
+		return;
+d337 9
+d349 4
+d358 1
+a358 1
+	return(ps_pletter(p, c));
+a364 1
+	size_t		 i;
+d366 6
+a371 4
+	if ('\0' != p->engine.ps.last) {
+		ps_pletter(p, p->engine.ps.last);
+		p->engine.ps.last = '\0';
+	}
+d373 1
+a373 11
+	if (PS_INLINE & p->engine.ps.psstate) {
+		assert(8 != p->engine.ps.last);
+		if (p->engine.ps.last)
+			ps_letter(p, p->engine.ps.last);
+		p->engine.ps.last = '\0';
+		for (i = 0; i < len; i++) 
+			ps_letter(p, ' ');
+		return;
+	}
+
+	assert('\0' == p->engine.ps.last);
+d382 3
+a384 4
+	if ('\0' != p->engine.ps.last) {
+		ps_pletter(p, p->engine.ps.last);
+		p->engine.ps.last = '\0';
+	}
+d386 5
+a390 9
+	if (PS_INLINE & p->engine.ps.psstate) {
+		assert(8 != p->engine.ps.last);
+		if (p->engine.ps.last)
+			ps_letter(p, p->engine.ps.last);
+		p->engine.ps.last = '\0';
+		ps_printf(p, ") show\n");
+		p->engine.ps.psstate &= ~PS_INLINE;
+	} else
+		assert('\0' == p->engine.ps.last);
+d395 5
+d411 17
+@
+
+
+1.7
+log
+@Teach -Tps to ignore backspace-encoding by using a one-char buffer and a
+simple state machine.  This paves the way for decorated text.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.6 2010/06/10 23:56:33 kristaps Exp $ */
+d61 1
+d165 2
+d232 1
+a232 1
+ps_letter(struct termp *p, char c)
+a233 1
+	char		cc;
+a245 18
+	if ('\0' == p->engine.ps.last) {
+		assert(8 != c);
+		p->engine.ps.last = c;
+		return;
+	} else if (8 == p->engine.ps.last) {
+		assert(8 != c);
+		p->engine.ps.last = c;
+		return;
+	} else if (8 == c) {
+		assert(8 != p->engine.ps.last);
+		p->engine.ps.last = c;
+		return;
+	} else {
+		cc = p->engine.ps.last;
+		p->engine.ps.last = c;
+		c = cc;
+	}
+
+d272 27
+d303 5
+d327 5
+@
+
+
+1.6
+log
+@Allow open word contexts in -Tps to preserve whitespace, as whitespace
+apparently doesn't collapse in PostScript (surprise!).  Makes output
+files much more compact.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.5 2010/06/09 08:31:18 kristaps Exp $ */
+d231 1
+d244 18
+d293 4
+d302 1
+d312 4
+d318 2
+a319 1
+	} 
+@
+
+
+1.5
+log
+@Forgot to increment into the nil terminator.  And call va_end() while
+we're at it.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.4 2010/06/09 08:07:13 kristaps Exp $ */
+d271 1
+d274 3
+a276 3
+		/* Dump out any existing line scope. */
+		ps_printf(p, ") show\n");
+		p->engine.ps.psstate &= ~PS_INLINE;
+@
+
+
+1.4
+log
+@Have the standard manpage header and footer print on every page of -Tps
+output.  This is more tricky than you may think:  we can't just call the
+header function out-of-state (i.e., before a flushln has occured)
+because we'd clobber our current state.  Thus, we call at the beginning
+and dump the output into an auxiliary buffer.
+
+For the record, I don't think there's any other clean way to do this.
+The only other Way That Works is to copy-aside *all* termp state, zero
+it, and do the necessary headf/footf.  This is just as complex, as
+memory needs to be alloc'd and free'd per margin.
+
+Unfortunately, this prohibits page numbering (the margin is only printed
+once), so I'll probably end up re-writing this down the line.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.3 2010/06/08 15:06:01 kristaps Exp $ */
+d128 2
+d148 1
+a148 1
+	p->engine.ps.psmarg[pos] = c;
+@
+
+
+1.3
+log
+@Lint noops.  Also fixed getsubopt() to be in unistd.h (noted by joerg@@).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.2 2010/06/08 15:00:17 kristaps Exp $ */
+d21 2
+d24 1
+d27 1
+d41 15
+a58 1
+static	void		  ps_pageopen(struct termp *);
+d61 2
+d86 58
+d145 3
+a147 1
+	term_free((struct termp *)arg);
+d156 9
+a181 1
+	p->engine.ps.pspage = 1;
+d183 40
+a222 1
+	ps_pageopen(p);
+d235 1
+a235 1
+		printf("%zu %zu moveto\n", 
+a237 1
+		putchar('(');
+d254 1
+a254 1
+		putchar('\\');
+d261 1
+a261 1
+	putchar(c);
+a265 39
+/*
+ * Open a page.  This is only used for -Tps at the moment.  It opens a
+ * page context, printing the header and the footer.  THE OUTPUT BUFFER
+ * MUST BE EMPTY.  If it is not, output will ghost on the next line and
+ * we'll be all gross and out of state.
+ */
+static void
+ps_pageopen(struct termp *p)
+{
+	
+	assert(TERMTYPE_PS == p->type);
+	assert(0 == p->engine.ps.psstate);
+
+	p->engine.ps.pscol = PS_CHAR_LEFT;
+	p->engine.ps.psrow = PS_CHAR_TOPMARG;
+	p->engine.ps.psstate |= PS_MARGINS;
+
+	(*p->headf)(p, p->argf);
+	(*p->endline)(p);
+
+	p->engine.ps.psstate &= ~PS_MARGINS;
+	assert(0 == p->engine.ps.psstate);
+
+	p->engine.ps.pscol = PS_CHAR_LEFT;
+	p->engine.ps.psrow = PS_CHAR_BOTMARG;
+	p->engine.ps.psstate |= PS_MARGINS;
+
+	(*p->footf)(p, p->argf);
+	(*p->endline)(p);
+
+	p->engine.ps.psstate &= ~PS_MARGINS;
+	assert(0 == p->engine.ps.psstate);
+
+	p->engine.ps.pscol = PS_CHAR_LEFT;
+	p->engine.ps.psrow = PS_CHAR_TOP;
+
+}
+
+
+d272 1
+a272 1
+		printf(") show\n");
+d285 1
+a285 1
+		printf(") show\n");
+d298 2
+a299 5
+	/* 
+	 * XXX: can't run pageopen() until we're certain a flushln() has
+	 * occured, else the buf will reopen in an awkward state on the
+	 * next line.
+	 */
+@
+
+
+1.2
+log
+@Broke ascii_*() functions into term_ascii.c
+
+Made low-level engine functions into function pointers.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term_ps.c,v 1.1 2010/06/08 13:22:37 kristaps Exp $ */
+d71 1
+@
+
+
+1.1
+log
+@No functionality changes: just restructuring.  Deprecated
+terminal_free() in favour of ps_free() and ascii_free().  Moved ps_*()
+functions into term_ps.c so that they don't clutter up term.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.c,v 1.144 2010/06/08 09:20:08 kristaps Exp $ */
+d21 2
+d29 16
+d54 5
+d69 149
+@

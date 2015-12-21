@@ -1,0 +1,853 @@
+head	1.27;
+access;
+symbols
+	VERSION_1_13_3:1.26
+	VERSION_1_13_2:1.26
+	VERSION_1_12_4:1.23
+	VERSION_1_13_1:1.22
+	VERSION_1_12_3:1.21
+	VERSION_1_12_2:1.21
+	VERSION_1_12:1.23.0.2
+	VERSION_1_12_1:1.21
+	VERSION_1_12_0:1.21
+	VERSION_1_11_7:1.21
+	VERSION_1_11_6:1.21
+	VERSION_1_11_5:1.21
+	VERSION_1_11_4:1.20
+	VERSION_1_11_3:1.20
+	VERSION_1_11_2:1.20
+	VERSION_1_11_1:1.18
+	VERSION_1_10_10:1.17
+	VERSION_1_10_9:1.15
+	VERSION_1_10_8:1.14
+	VERSION_1_10_7:1.14
+	VERSION_1_10_6:1.14
+	VERSION_1_10_5:1.14
+	VERSION_1_10_5_PREPDF:1.14
+	VERSION_1_10_4:1.12
+	VERSION_1_10_3:1.12
+	VERSION_1_10_2:1.11
+	VERSION_1_10_1:1.10
+	VERSION_1_9_24:1.10
+	VERSION_1_9_25:1.10
+	VERSION_1_9_23:1.10
+	VERSION_1_9_22:1.9
+	VERSION_1_9_21:1.9
+	VERSION_1_9_20:1.9
+	VERSION_1_9_19:1.9
+	VERSION_1_9_18:1.9
+	VERSION_1_9_17:1.9
+	VERSION_1_9_16:1.9
+	VERSION_1_9_15:1.9
+	VERSION_1_9_15-pre2:1.9
+	VERSION_1_9_15-pre1:1.9
+	VERSION_1_9_14:1.9
+	VERSION_1_9_13:1.6
+	VERSION_1_9_12:1.6
+	VERSION_1_9_11:1.6
+	VERSION_1_9_10:1.6
+	VERSION_1_9_9:1.5
+	VERSION_1_9_8:1.4
+	VERSION_1_9_7:1.4
+	VERSION_1_9_5:1.2;
+locks; strict;
+comment	@ * @;
+
+
+1.27
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2014.12.01.04.05.32;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2014.10.14.02.16.06;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2014.08.12.19.28.03;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.07.17.15.24.25;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.04.29.22.18.12;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.04.09.15.29.40;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.03.22.10.13.01;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.03.07.01.35.51;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.01.30.16.05.37;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.01.05.15.37.23;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.07.21.20.35.03;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.07.18.22.55.06;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.06.25.19.50.23;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.04.07.11.25.38;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.11.12.08.21.05;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.11.08.09.23.35;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.11.07.08.26.45;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.10.22.18.55.33;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.10.18.19.02.11;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.10.09.06.54.11;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.10.07.12.35.24;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.09.21.13.06.13;	author kristaps;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2009.09.21.00.39.02;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.27
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: out.h,v 1.26 2014/12/01 08:05:52 schwarze Exp $ */
+/*
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+enum	roffscale {
+	SCALE_CM, /* centimeters (c) */
+	SCALE_IN, /* inches (i) */
+	SCALE_PC, /* pica (P) */
+	SCALE_PT, /* points (p) */
+	SCALE_EM, /* ems (m) */
+	SCALE_MM, /* mini-ems (M) */
+	SCALE_EN, /* ens (n) */
+	SCALE_BU, /* default horizontal (u) */
+	SCALE_VS, /* default vertical (v) */
+	SCALE_FS, /* syn. for u (f) */
+	SCALE_MAX
+};
+
+struct	roffcol {
+	size_t		 width; /* width of cell */
+	size_t		 decimal; /* decimal position in cell */
+	int		 flags; /* layout flags, see tbl_cell */
+};
+
+struct	roffsu {
+	enum roffscale	  unit;
+	double		  scale;
+};
+
+typedef	size_t	(*tbl_strlen)(const char *, void *);
+typedef	size_t	(*tbl_len)(size_t, void *);
+
+struct	rofftbl {
+	tbl_strlen	 slen; /* calculate string length */
+	tbl_len		 len; /* produce width of empty space */
+	struct roffcol	*cols; /* master column specifiers */
+	void		*arg; /* passed to slen and len */
+};
+
+#define	SCALE_VS_INIT(p, v) \
+	do { (p)->unit = SCALE_VS; \
+	     (p)->scale = (v); } \
+	while (/* CONSTCOND */ 0)
+
+#define	SCALE_HS_INIT(p, v) \
+	do { (p)->unit = SCALE_EN; \
+	     (p)->scale = (v); } \
+	while (/* CONSTCOND */ 0)
+
+
+struct	tbl_span;
+
+int		  a2roffsu(const char *, struct roffsu *, enum roffscale);
+void		  tblcalc(struct rofftbl *tbl,
+			const struct tbl_span *, size_t);
+@
+
+
+1.26
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.25 2014/12/01 04:05:32 schwarze Exp $ */
+a62 1
+__BEGIN_DECLS
+a68 2
+
+__END_DECLS
+@
+
+
+1.25
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.24 2014/10/14 02:16:06 schwarze Exp $ */
+a52 2
+__BEGIN_DECLS
+
+d63 4
+@
+
+
+1.24
+log
+@Rudimentary implementation of the e, x, and z table layout modifiers
+to equalize, maximize, and ignore the width of columns.
+Does not yet take vertical rulers into account,
+and does not do line breaks within table cells.
+Considerably improves the lftp(1) manual; issue noticed by sthen@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.23 2014/08/12 19:28:03 schwarze Exp $ */
+a16 2
+#ifndef OUT_H
+#define OUT_H
+a69 2
+
+#endif /*!OUT_H*/
+@
+
+
+1.23
+log
+@The macro SCALE_HS_INIT() is always passed the result of strlen() or
+an equivalent number as its argument, and strlen() measures the width
+of a string in characters, not in basic units.  No functional change
+right now, but important for the upcoming scaling unit fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.22 2014/04/20 16:46:05 schwarze Exp $ */
+d37 1
+d68 2
+a69 1
+void		  tblcalc(struct rofftbl *tbl, const struct tbl_span *);
+@
+
+
+1.22
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.21 2011/07/17 15:24:25 kristaps Exp $ */
+d62 1
+a62 1
+	do { (p)->unit = SCALE_BU; \
+@
+
+
+1.21
+log
+@Remove unused function.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.20 2011/04/29 22:18:12 kristaps Exp $ */
+d66 2
+a67 2
+int	  	  a2roffsu(const char *, struct roffsu *, enum roffscale);
+void	  	  tblcalc(struct rofftbl *tbl, const struct tbl_span *);
+@
+
+
+1.20
+log
+@Move "chars" interface out of out.h and into mandoc.h.  This doesn't
+change any code but for renaming functions and types to be consistent
+with other mandoc.h stuff.  The reason for moving into libmandoc is that
+the rendering of special characters is part of mandoc itself---not an
+external part.  From mandoc(1)'s perspective, this changes nothing, but
+for other utilities, it's important to have these part of libmandoc.
+Note this isn't documented [yet] in mandoc.3 because there are some
+parts I'd like to change around beforehand.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.19 2011/04/09 15:29:40 kristaps Exp $ */
+a66 1
+void	  	  time2a(time_t, char *, size_t);
+@
+
+
+1.19
+log
+@Remove a2roffdeco() and mandoc_special() functions and replace them with
+a public (mandoc.h) function mandoc_escape(), which merges the
+functionality of both prior functions.
+
+Reason: code duplication.  The a2roffdeco() and mandoc_special()
+functions were pretty much the same thing and both quite complex.  This
+allows one function to receive improvements in (e.g.) subexpression
+handling and performance, instead of having to replicate functionality.
+
+As such, the mandoc_escape() function already handles a superset of the
+escapes handled in previous versions and has improvements in performance
+(using strcspn(), for example) and reliable handling of subexpressions.
+
+This code Works For Me, but may need work to catch any regressions.
+Since the benefits are great (leaner code, simpler API), I'd rather have
+it in-tree than floating as a patch.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.18 2011/03/22 10:13:01 kristaps Exp $ */
+a33 5
+enum	chars {
+	CHARS_ASCII, /* 7-bit ascii representation */
+	CHARS_HTML /* unicode values */
+};
+
+a69 8
+void		 *chars_init(enum chars);
+const char	 *chars_num2char(const char *, size_t);
+const char	 *chars_spec2str(void *, const char *, size_t, size_t *);
+int		  chars_spec2cp(void *, const char *, size_t);
+const char	 *chars_res2str(void *, const char *, size_t, size_t *);
+int		  chars_res2cp(void *, const char *, size_t);
+void		  chars_free(void *);
+
+@
+
+
+1.18
+log
+@Step 4: merge chars.h into out.h.  The functions in this file are
+necessary to all [real] front-ends, so stop pretending it's special.
+While here, add some documentation to the variable types.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.17 2011/03/07 01:35:51 schwarze Exp $ */
+a33 16
+enum	roffdeco {
+	DECO_NONE,
+	DECO_NUMBERED, /* numbered character */
+	DECO_SPECIAL, /* special character */
+	DECO_SSPECIAL, /* single-char special */
+	DECO_RESERVED, /* reserved word */
+	DECO_BOLD, /* bold font */
+	DECO_ITALIC, /* italic font */
+	DECO_ROMAN, /* "normal" undecorated font */
+	DECO_PREVIOUS, /* revert to previous font */
+	DECO_NOSPACE, /* suppress spacing */
+	DECO_FONT, /* font */
+	DECO_FFONT, /* font family */
+	DECO_MAX
+};
+
+a71 1
+int	  	  a2roffdeco(enum roffdeco *, const char **, size_t *);
+@
+
+
+1.17
+log
+@Clean up date handling,
+as a first step to get rid of the frequent petty warnings in this area:
+ - always store dates as strings, not as seconds since the Epoch
+ - for input, try the three most common formats everywhere
+ - for unrecognized format, just pass the date though verbatim
+ - when there is no date at all, still use the current date
+Originally triggered by a one-line patch from Tim van der Molen,
+<tbvdm at xs4all dot nl>, which is included here.
+Feedback and OK on manual parts from jmc@@.
+"please check this in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.16 2011/01/30 16:05:37 schwarze Exp $ */
+a19 17
+__BEGIN_DECLS
+
+struct	roffcol {
+	size_t		 width; /* width of cell */
+	size_t		 decimal; /* decimal position in cell */
+};
+
+typedef	size_t (*tbl_strlen)(const char *, void *);
+typedef	size_t (*tbl_len)(size_t, void *);
+
+struct	rofftbl {
+	tbl_strlen	 slen; /* calculate string length */
+	tbl_len		 len; /* produce width of empty space */
+	struct roffcol	*cols; /* master column specifiers */
+	void		*arg; /* passed to slen and len */
+};
+
+d21 10
+a30 10
+	SCALE_CM,
+	SCALE_IN,
+	SCALE_PC,
+	SCALE_PT,
+	SCALE_EM,
+	SCALE_MM,
+	SCALE_EN,
+	SCALE_BU,
+	SCALE_VS,
+	SCALE_FS,
+d50 10
+d65 12
+d87 12
+a98 4
+int	  a2roffsu(const char *, struct roffsu *, enum roffscale);
+int	  a2roffdeco(enum roffdeco *, const char **, size_t *);
+void	  time2a(time_t, char *, size_t);
+void	  tblcalc(struct rofftbl *tbl, const struct tbl_span *);
+@
+
+
+1.16
+log
+@Implement the \N'number' (numbered character) roff escape sequence.
+Don't use it in new manuals, it is inherently non-portable, but we
+need it for backward-compatibility with existing manuals, for example
+in Xenocara driver pages.
+ok kristaps@@ jmc@@ and tested by Matthieu Herrb (matthieu at openbsd dot org)
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.15 2011/01/05 15:37:23 kristaps Exp $ */
+a19 2
+#define	DATESIZ		24
+
+@
+
+
+1.15
+log
+@Stuff tbl_calc() into out.c so that it can be shared by all output modes
+(isn't now, but will need to be, used by -T[x]html also).  Necessitated
+a lot of churn in getting tbl_calc* code out of tbl_term.c and into
+out.c, including renaming some structures and so on.  The abstraction is
+in having a pointer to a wrapper function for calculating string widths.
+The char devices use term_strlen and term_len; the others will probably
+just use strlen().
+
+While at it, remove some superfluous assertions in the tbl code.  This
+allows all tbl manuals to clear.
+
+Lastly, set the right-margin to be the maximum margin for each table
+span.  This allows big, complicated tbl-pages like terminfo to be
+displayed.  They're ugly, but they work.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.14 2010/07/21 20:35:03 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+d55 1
+@
+
+
+1.14
+log
+@Accomodate for groff's crappy behaviour wherein an unrecognised
+single-character escape (and ONLY this type of escape) will map back
+into itself:
+
+       "If a backslash is followed by a character that does not
+	constitute a defined escape sequence the backslash is silently
+        ignored and the  character maps to itself."
+
+(From groff.7.)
+
+Found by Jason McIntyre.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.13 2010/07/18 22:55:06 kristaps Exp $ */
+d24 15
+d58 5
+a62 5
+	DECO_BOLD,
+	DECO_ITALIC,
+	DECO_ROMAN,
+	DECO_PREVIOUS,
+	DECO_NOSPACE,
+a72 4
+#define	SCALE_INVERT(p) \
+	do { (p)->scale = -(p)->scale; } \
+	while (/* CONSTCOND */ 0)
+
+d83 4
+a86 4
+int		  a2roffsu(const char *, 
+			struct roffsu *, enum roffscale);
+int		  a2roffdeco(enum roffdeco *, const char **, size_t *);
+void		  time2a(time_t, char *, size_t);
+d90 1
+a90 1
+#endif /*!HTML_H*/
+@
+
+
+1.13
+log
+@Throw out a2roffdeco() in out.c for a readable version.  The prior one
+was completely unmaintainable.  The new one is both readable and quite
+similar to mandoc_special(), which in future versions will easily allow
+throwing-away of unsupported escapes (such as \m).  It's also a fair bit
+smaller.
+
+DECO_SIZE has been removed: this crap, like colours, will not be
+supported.
+
+mandoc_special() also has #if 0'd switch branches for ALL groff.7
+escapes and some lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.12 2010/06/25 19:50:23 kristaps Exp $ */
+d40 3
+a42 2
+	DECO_SPECIAL,
+	DECO_RESERVED,
+@
+
+
+1.12
+log
+@Remove "pt" from struct roffsu, as CSS (the only reason it was there) is
+unclear about which units accept floats/integers, which leads me to
+assume that it handles either and rounds as appropriate.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.11 2010/06/19 20:46:28 kristaps Exp $ */
+a45 1
+	DECO_SIZE,
+@
+
+
+1.11
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.10 2010/04/07 11:25:38 kristaps Exp $ */
+a55 1
+	int		  pt;
+d64 1
+a64 2
+	     (p)->scale = (v); \
+	     (p)->pt = 0; } \
+d69 1
+a69 2
+	     (p)->scale = (v); \
+	     (p)->pt = 0; } \
+@
+
+
+1.10
+log
+@Add support/ignoring of \f(xy, \f[X...], \F(xy, \FX, \F[X...] roff-style font escapes (noted by Frantisek Holop).
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.9 2009/11/12 08:21:05 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.9
+log
+@Fixed \c support for all input and output modes (documented in mandoc_char.7).
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.8 2009/11/08 09:23:35 kristaps Exp $ */
+d48 2
+@
+
+
+1.8
+log
+@a2roffdeco() now supports \s escapes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.7 2009/11/07 08:26:45 kristaps Exp $ */
+d47 1
+@
+
+
+1.7
+log
+@Initial abstraction of front-end decoration events (special characters, text decorations, etc.).
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.6 2009/10/22 18:55:33 kristaps Exp $ */
+d46 1
+d57 3
+a59 1
+	do { (p)->scale = -(p)->scale; } while (/*CONSTCOND*/0)
+d63 3
+a65 1
+	     (p)->pt = 0; } while (/*CONSTCOND*/0)
+d69 2
+a70 1
+	     (p)->pt = 0; } while (/*CONSTCOND*/0)
+@
+
+
+1.6
+log
+@Fixed maddening mismatch between groff and strftime mismatch of day ("%e").  Noted by Ulrich Sporlein.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.5 2009/10/18 19:02:11 kristaps Exp $ */
+d38 11
+d68 1
+@
+
+
+1.5
+log
+@Had out.h roff-scale converters accept default unit scale (because -mdoc and -man differ).
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.4 2009/10/09 06:54:11 kristaps Exp $ */
+d20 2
+d57 1
+@
+
+
+1.4
+log
+@Scaling factor made floating point (as per groff.7) and, e.g., gnu/usr.bin/cvs/man/cvs.1.
+@
+text
+@d1 1
+a1 1
+/*	$Id: out.h,v 1.3 2009/10/07 12:35:24 kristaps Exp $ */
+d53 2
+a54 1
+int		  a2roffsu(const char *, struct roffsu *);
+@
+
+
+1.3
+log
+@Additions to -Tman -Thtml: all structural components tested & in place.
+Fitted both -Thtml with handling of arbitrary vertical and horizontal scaling units (see groff(7)).  Undocumented until fitted into -Tascii (next release).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.11 2009/10/04 09:02:40 kristaps Exp $ */
+d38 2
+a39 1
+	int		  scale;
+d46 2
+a47 1
+	     (p)->scale = (v); } while (/*CONSTCOND*/0)
+d50 2
+a51 1
+	     (p)->scale = (v); } while (/*CONSTCOND*/0)
+@
+
+
+1.2
+log
+@Removed new-born out.{h,c} (not a good idea).
+Removed if 0 for HTML-mode output (why not).
+Added option -oxxxx for passing options to output devices.
+@
+text
+@d1 54
+@
+
+
+1.1
+log
+@Tentative addition of front-end utility functions (out.h) (not sure if it's necessary).
+More -Thtml installments.
+@
+text
+@a0 28
+/*	$Id: term.h,v 1.47 2009/09/17 07:41:28 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef OUT_H
+#define OUT_H
+
+__BEGIN_DECLS
+
+int		 	 out_a2width(const char *);
+int		 	 out_a2offs(const char *, int);
+int			 out_a2list(const struct mdoc_node *);
+
+__END_DECLS
+
+#endif /*!OUT_H*/
+@

@@ -1,0 +1,2874 @@
+head	1.69;
+access;
+symbols
+	VERSION_1_13_3:1.62
+	VERSION_1_13_2:1.60
+	VERSION_1_12_4:1.54
+	VERSION_1_13_1:1.53
+	VERSION_1_12_3:1.50
+	VERSION_1_12_2:1.49
+	VERSION_1_12:1.54.0.2
+	VERSION_1_12_1:1.47
+	VERSION_1_12_0:1.47
+	VERSION_1_11_7:1.46
+	VERSION_1_11_6:1.46
+	VERSION_1_11_5:1.46
+	VERSION_1_11_4:1.37
+	VERSION_1_11_3:1.37
+	VERSION_1_11_2:1.37
+	VERSION_1_11_1:1.37
+	VERSION_1_10_10:1.36
+	VERSION_1_10_9:1.31
+	VERSION_1_10_8:1.24
+	VERSION_1_10_7:1.24
+	VERSION_1_10_6:1.24
+	VERSION_1_10_5:1.24
+	VERSION_1_10_5_PREPDF:1.24
+	VERSION_1_10_4:1.24
+	VERSION_1_10_3:1.22
+	VERSION_1_10_2:1.21
+	VERSION_1_10_1:1.20
+	VERSION_1_9_24:1.19
+	VERSION_1_9_25:1.19
+	VERSION_1_9_23:1.19
+	VERSION_1_9_22:1.19
+	VERSION_1_9_21:1.19
+	VERSION_1_9_20:1.19
+	VERSION_1_9_19:1.19
+	VERSION_1_9_18:1.19
+	VERSION_1_9_17:1.19
+	VERSION_1_9_16:1.19
+	VERSION_1_9_15:1.19
+	VERSION_1_9_15-pre2:1.19
+	VERSION_1_9_15-pre1:1.18
+	VERSION_1_9_14:1.18
+	VERSION_1_9_13:1.18
+	VERSION_1_9_12:1.18
+	VERSION_1_9_11:1.16
+	VERSION_1_9_10:1.16
+	VERSION_1_9_9:1.16
+	VERSION_1_9_8:1.15
+	VERSION_1_9_7:1.15
+	VERSION_1_9_6:1.15
+	VERSION_1_9_5:1.15
+	VERSION_1_9_2:1.14
+	VERSION_1_9_1:1.14
+	VERSION_1_9_0:1.14
+	VERSION_1_8_5:1.13
+	VERSION_1_8_4:1.13
+	VERSION_1_8_3:1.13
+	VERSION_1_8_2:1.13
+	VERSION_1_8_1:1.13
+	VERSION_1_8_0:1.13
+	VERSION_1_7_24:1.13
+	VERSION_1_7_23:1.13
+	VERSION_1_7_22:1.13
+	VERSION_1_7_21:1.13
+	VERSION_1_7_20:1.13
+	VERSION_1_7_19:1.13
+	VERSION_1_7_17:1.13
+	VERSION_1_7_16:1.13
+	VERSION_1_7_15:1.13
+	VERSION_1_7_14:1.13
+	VERSION_1_7_13:1.12
+	VERSION_1_7_12:1.11
+	OPENBSD_CHECKIN:1.11
+	VERSION_1_7_10:1.11
+	VERSION_1_7_5:1.10
+	VERSION_1_6_5:1.9
+	VERSION_1_6_2:1.9
+	VERSION_1_5_1:1.7
+	VERSION_1_3_15:1.7
+	VERSION_1_3_6:1.7
+	VERSION_1_2_0:1.2;
+locks; strict;
+comment	@ * @;
+
+
+1.69
+date	2015.10.12.00.08.16;	author schwarze;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2015.09.26.12.55.16;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2015.09.26.00.54.04;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2015.04.18.17.53.21;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2015.04.18.16.06.41;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2015.04.02.22.48.18;	author schwarze;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2015.04.02.21.36.51;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2015.02.05.00.14.13;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2015.02.03.18.37.59;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2014.11.28.05.51.32;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2014.10.20.01.43.48;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2014.10.10.15.26.29;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2014.10.10.12.19.25;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2014.10.10.08.44.24;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2014.09.28.11.32.33;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2014.07.02.07.10.38;	author schwarze;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2014.03.08.15.50.41;	author schwarze;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2013.12.24.19.11.46;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2013.09.15.17.33.57;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2013.05.18.17.08.43;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2011.07.23.12.01.54;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2011.07.22.09.57.04;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2011.07.21.23.30.39;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2011.07.21.15.21.13;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2011.07.21.14.13.00;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2011.07.21.13.37.04;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2011.07.21.13.18.24;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2011.07.21.12.30.44;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2011.07.21.11.34.53;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2011.03.23.12.33.01;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2011.02.09.09.18.15;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2011.02.09.09.05.52;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2011.02.06.22.02.58;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2011.02.06.21.44.36;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2011.01.10.14.40.30;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2011.01.03.13.59.21;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2011.01.02.20.34.05;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2011.01.01.22.27.08;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2011.01.01.17.10.20;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2011.01.01.14.09.21;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2011.01.01.13.54.58;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.01.01.12.56.12;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.07.07.15.04.54;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.06.29.19.20.38;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.06.26.15.36.37;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.01.01.17.14.31;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.10.30.18.53.09;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.10.26.17.05.44;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.10.13.10.57.25;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.09.16.09.41.24;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.08.13.11.45.29;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.06.10.20.18.44;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.04.03.11.08.39;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.03.23.15.20.51;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.03.19.16.20.37;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.03.19.16.17.27;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.02.23.07.09.13;	author kristaps;	state dead;
+branches;
+next	1.6;
+
+1.6
+date	2009.02.21.21.00.06;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.02.20.23.35.36;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.02.20.11.04.23;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.02.20.07.45.41;	author kristaps;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2009.01.17.14.04.25;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.01.16.15.58.50;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.69
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@/*	$Id: tree.c,v 1.68 2015/09/26 12:55:16 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2011, 2014 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#include "mandoc.h"
+#include "roff.h"
+#include "mdoc.h"
+#include "man.h"
+#include "main.h"
+
+static	void	print_box(const struct eqn_box *, int);
+static	void	print_man(const struct roff_node *, int);
+static	void	print_mdoc(const struct roff_node *, int);
+static	void	print_span(const struct tbl_span *, int);
+
+
+void
+tree_mdoc(void *arg, const struct roff_man *mdoc)
+{
+
+	print_mdoc(mdoc->first->child, 0);
+}
+
+void
+tree_man(void *arg, const struct roff_man *man)
+{
+
+	print_man(man->first->child, 0);
+}
+
+static void
+print_mdoc(const struct roff_node *n, int indent)
+{
+	const char	 *p, *t;
+	int		  i, j;
+	size_t		  argc;
+	struct mdoc_argv *argv;
+
+	if (n == NULL)
+		return;
+
+	argv = NULL;
+	argc = 0;
+	t = p = NULL;
+
+	switch (n->type) {
+	case ROFFT_ROOT:
+		t = "root";
+		break;
+	case ROFFT_BLOCK:
+		t = "block";
+		break;
+	case ROFFT_HEAD:
+		t = "head";
+		break;
+	case ROFFT_BODY:
+		if (n->end)
+			t = "body-end";
+		else
+			t = "body";
+		break;
+	case ROFFT_TAIL:
+		t = "tail";
+		break;
+	case ROFFT_ELEM:
+		t = "elem";
+		break;
+	case ROFFT_TEXT:
+		t = "text";
+		break;
+	case ROFFT_TBL:
+		break;
+	case ROFFT_EQN:
+		t = "eqn";
+		break;
+	default:
+		abort();
+	}
+
+	switch (n->type) {
+	case ROFFT_TEXT:
+		p = n->string;
+		break;
+	case ROFFT_BODY:
+		p = mdoc_macronames[n->tok];
+		break;
+	case ROFFT_HEAD:
+		p = mdoc_macronames[n->tok];
+		break;
+	case ROFFT_TAIL:
+		p = mdoc_macronames[n->tok];
+		break;
+	case ROFFT_ELEM:
+		p = mdoc_macronames[n->tok];
+		if (n->args) {
+			argv = n->args->argv;
+			argc = n->args->argc;
+		}
+		break;
+	case ROFFT_BLOCK:
+		p = mdoc_macronames[n->tok];
+		if (n->args) {
+			argv = n->args->argv;
+			argc = n->args->argc;
+		}
+		break;
+	case ROFFT_TBL:
+		break;
+	case ROFFT_EQN:
+		p = "EQ";
+		break;
+	case ROFFT_ROOT:
+		p = "root";
+		break;
+	default:
+		abort();
+	}
+
+	if (n->span) {
+		assert(NULL == p && NULL == t);
+		print_span(n->span, indent);
+	} else {
+		for (i = 0; i < indent; i++)
+			putchar(' ');
+
+		printf("%s (%s)", p, t);
+
+		for (i = 0; i < (int)argc; i++) {
+			printf(" -%s", mdoc_argnames[argv[i].arg]);
+			if (argv[i].sz > 0)
+				printf(" [");
+			for (j = 0; j < (int)argv[i].sz; j++)
+				printf(" [%s]", argv[i].value[j]);
+			if (argv[i].sz > 0)
+				printf(" ]");
+		}
+
+		putchar(' ');
+		if (MDOC_DELIMO & n->flags)
+			putchar('(');
+		if (MDOC_LINE & n->flags)
+			putchar('*');
+		printf("%d:%d", n->line, n->pos + 1);
+		if (MDOC_DELIMC & n->flags)
+			putchar(')');
+		if (MDOC_EOS & n->flags)
+			putchar('.');
+		putchar('\n');
+	}
+
+	if (n->eqn)
+		print_box(n->eqn->root->first, indent + 4);
+	if (n->child)
+		print_mdoc(n->child, indent +
+		    (n->type == ROFFT_BLOCK ? 2 : 4));
+	if (n->next)
+		print_mdoc(n->next, indent);
+}
+
+static void
+print_man(const struct roff_node *n, int indent)
+{
+	const char	 *p, *t;
+	int		  i;
+
+	if (n == NULL)
+		return;
+
+	t = p = NULL;
+
+	switch (n->type) {
+	case ROFFT_ROOT:
+		t = "root";
+		break;
+	case ROFFT_ELEM:
+		t = "elem";
+		break;
+	case ROFFT_TEXT:
+		t = "text";
+		break;
+	case ROFFT_BLOCK:
+		t = "block";
+		break;
+	case ROFFT_HEAD:
+		t = "head";
+		break;
+	case ROFFT_BODY:
+		t = "body";
+		break;
+	case ROFFT_TBL:
+		break;
+	case ROFFT_EQN:
+		t = "eqn";
+		break;
+	default:
+		abort();
+	}
+
+	switch (n->type) {
+	case ROFFT_TEXT:
+		p = n->string;
+		break;
+	case ROFFT_ELEM:
+	case ROFFT_BLOCK:
+	case ROFFT_HEAD:
+	case ROFFT_BODY:
+		p = man_macronames[n->tok];
+		break;
+	case ROFFT_ROOT:
+		p = "root";
+		break;
+	case ROFFT_TBL:
+		break;
+	case ROFFT_EQN:
+		p = "EQ";
+		break;
+	default:
+		abort();
+	}
+
+	if (n->span) {
+		assert(NULL == p && NULL == t);
+		print_span(n->span, indent);
+	} else {
+		for (i = 0; i < indent; i++)
+			putchar(' ');
+		printf("%s (%s) ", p, t);
+		if (MAN_LINE & n->flags)
+			putchar('*');
+		printf("%d:%d", n->line, n->pos + 1);
+		if (MAN_EOS & n->flags)
+			putchar('.');
+		putchar('\n');
+	}
+
+	if (n->eqn)
+		print_box(n->eqn->root->first, indent + 4);
+	if (n->child)
+		print_man(n->child, indent +
+		    (n->type == ROFFT_BLOCK ? 2 : 4));
+	if (n->next)
+		print_man(n->next, indent);
+}
+
+static void
+print_box(const struct eqn_box *ep, int indent)
+{
+	int		 i;
+	const char	*t;
+
+	static const char *posnames[] = {
+	    NULL, "sup", "subsup", "sub",
+	    "to", "from", "fromto",
+	    "over", "sqrt", NULL };
+
+	if (NULL == ep)
+		return;
+	for (i = 0; i < indent; i++)
+		putchar(' ');
+
+	t = NULL;
+	switch (ep->type) {
+	case EQN_ROOT:
+		t = "eqn-root";
+		break;
+	case EQN_LISTONE:
+	case EQN_LIST:
+		t = "eqn-list";
+		break;
+	case EQN_SUBEXPR:
+		t = "eqn-expr";
+		break;
+	case EQN_TEXT:
+		t = "eqn-text";
+		break;
+	case EQN_PILE:
+		t = "eqn-pile";
+		break;
+	case EQN_MATRIX:
+		t = "eqn-matrix";
+		break;
+	}
+
+	fputs(t, stdout);
+	if (ep->pos)
+		printf(" pos=%s", posnames[ep->pos]);
+	if (ep->left)
+		printf(" left=\"%s\"", ep->left);
+	if (ep->right)
+		printf(" right=\"%s\"", ep->right);
+	if (ep->top)
+		printf(" top=\"%s\"", ep->top);
+	if (ep->bottom)
+		printf(" bottom=\"%s\"", ep->bottom);
+	if (ep->text)
+		printf(" text=\"%s\"", ep->text);
+	if (ep->font)
+		printf(" font=%d", ep->font);
+	if (ep->size != EQN_DEFSIZE)
+		printf(" size=%d", ep->size);
+	if (ep->expectargs != UINT_MAX && ep->expectargs != ep->args)
+		printf(" badargs=%zu(%zu)", ep->args, ep->expectargs);
+	else if (ep->args)
+		printf(" args=%zu", ep->args);
+	putchar('\n');
+
+	print_box(ep->first, indent + 4);
+	print_box(ep->next, indent);
+}
+
+static void
+print_span(const struct tbl_span *sp, int indent)
+{
+	const struct tbl_dat *dp;
+	int		 i;
+
+	for (i = 0; i < indent; i++)
+		putchar(' ');
+
+	switch (sp->pos) {
+	case TBL_SPAN_HORIZ:
+		putchar('-');
+		return;
+	case TBL_SPAN_DHORIZ:
+		putchar('=');
+		return;
+	default:
+		break;
+	}
+
+	for (dp = sp->first; dp; dp = dp->next) {
+		switch (dp->pos) {
+		case TBL_DATA_HORIZ:
+		case TBL_DATA_NHORIZ:
+			putchar('-');
+			continue;
+		case TBL_DATA_DHORIZ:
+		case TBL_DATA_NDHORIZ:
+			putchar('=');
+			continue;
+		default:
+			break;
+		}
+		printf("[\"%s\"", dp->string ? dp->string : "");
+		if (dp->spans)
+			printf("(%d)", dp->spans);
+		if (NULL == dp->layout)
+			putchar('*');
+		putchar(']');
+		putchar(' ');
+	}
+
+	printf("(tbl) %d:1\n", sp->line);
+}
+@
+
+
+1.68
+log
+@Show the flags MDOC_DELIMO, MDOC_DELIMC, MDOC_EOS, and MAN_EOS.
+Drop the "block-" prefixes from the node type names.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.67 2015/09/26 00:54:04 schwarze Exp $ */
+a226 1
+		/* FALLTHROUGH */
+a227 1
+		/* FALLTHROUGH */
+a228 1
+		/* FALLTHROUGH */
+a356 1
+			/* FALLTHROUGH */
+a360 1
+			/* FALLTHROUGH */
+@
+
+
+1.67
+log
+@/* NOTREACHED */ after abort() is silly, delete it
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.66 2015/04/18 17:53:21 schwarze Exp $ */
+d77 1
+a77 1
+		t = "block-head";
+d83 1
+a83 1
+			t = "block-body";
+d86 1
+a86 1
+		t = "block-tail";
+d162 2
+d166 6
+a171 1
+		printf("%d:%d\n", n->line, n->pos + 1);
+d208 1
+a208 1
+		t = "block-head";
+d211 1
+a211 1
+		t = "block-body";
+d256 4
+a259 1
+		printf("%d:%d\n", n->line, n->pos + 1);
+@
+
+
+1.66
+log
+@Delete the wrapper functions mdoc_meta(), man_meta(), mdoc_node(),
+man_node() from the mandoc(3) semi-public interface and the internal
+wrapper functions print_mdoc() and print_man() from the HTML formatters.
+Minus 60 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.65 2015/04/18 16:06:41 schwarze Exp $ */
+a100 1
+		/* NOTREACHED */
+a139 1
+		/* NOTREACHED */
+a212 1
+		/* NOTREACHED */
+a237 1
+		/* NOTREACHED */
+@
+
+
+1.65
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.64 2015/04/02 22:48:18 schwarze Exp $ */
+d44 1
+a44 1
+	print_mdoc(mdoc_node(mdoc)->child, 0);
+d51 1
+a51 1
+	print_man(man_node(man)->child, 0);
+@
+
+
+1.64
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.63 2015/04/02 21:36:51 schwarze Exp $ */
+d41 1
+a41 1
+tree_mdoc(void *arg, const struct mdoc *mdoc)
+d48 1
+a48 1
+tree_man(void *arg, const struct man *man)
+@
+
+
+1.63
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.62 2015/02/05 00:14:13 schwarze Exp $ */
+d35 2
+a36 2
+static	void	print_man(const struct man_node *, int);
+static	void	print_mdoc(const struct mdoc_node *, int);
+d55 1
+a55 1
+print_mdoc(const struct mdoc_node *n, int indent)
+d179 1
+a179 1
+print_man(const struct man_node *n, int indent)
+@
+
+
+1.62
+log
+@Simplify by deleting the "lastline" member of struct mdoc_node.
+Minus one struct member, minus 17 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.61 2015/02/03 18:37:59 schwarze Exp $ */
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d29 1
+d70 1
+a70 1
+	case MDOC_ROOT:
+d73 1
+a73 1
+	case MDOC_BLOCK:
+d76 1
+a76 1
+	case MDOC_HEAD:
+d79 1
+a79 1
+	case MDOC_BODY:
+d85 1
+a85 1
+	case MDOC_TAIL:
+d88 1
+a88 1
+	case MDOC_ELEM:
+d91 1
+a91 1
+	case MDOC_TEXT:
+d94 1
+a94 1
+	case MDOC_TBL:
+d96 1
+a96 1
+	case MDOC_EQN:
+d105 1
+a105 1
+	case MDOC_TEXT:
+d108 1
+a108 1
+	case MDOC_BODY:
+d111 1
+a111 1
+	case MDOC_HEAD:
+d114 1
+a114 1
+	case MDOC_TAIL:
+d117 1
+a117 1
+	case MDOC_ELEM:
+d124 1
+a124 1
+	case MDOC_BLOCK:
+d131 1
+a131 1
+	case MDOC_TBL:
+d133 1
+a133 1
+	case MDOC_EQN:
+d136 1
+a136 1
+	case MDOC_ROOT:
+d173 1
+a173 1
+		    (n->type == MDOC_BLOCK ? 2 : 4));
+d190 1
+a190 1
+	case MAN_ROOT:
+d193 1
+a193 1
+	case MAN_ELEM:
+d196 1
+a196 1
+	case MAN_TEXT:
+d199 1
+a199 1
+	case MAN_BLOCK:
+d202 1
+a202 1
+	case MAN_HEAD:
+d205 1
+a205 1
+	case MAN_BODY:
+d208 1
+a208 1
+	case MAN_TBL:
+d210 1
+a210 1
+	case MAN_EQN:
+d219 1
+a219 1
+	case MAN_TEXT:
+d222 1
+a222 1
+	case MAN_ELEM:
+d224 1
+a224 1
+	case MAN_BLOCK:
+d226 1
+a226 1
+	case MAN_HEAD:
+d228 1
+a228 1
+	case MAN_BODY:
+d231 1
+a231 1
+	case MAN_ROOT:
+d234 1
+a234 1
+	case MAN_TBL:
+d236 1
+a236 1
+	case MAN_EQN:
+d260 1
+a260 1
+		    (n->type == MAN_BLOCK ? 2 : 4));
+@
+
+
+1.61
+log
+@reduce indentation for better readability
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.60 2014/11/28 05:51:32 schwarze Exp $ */
+d165 1
+a165 4
+		printf("%d:%d", n->line, n->pos + 1);
+		if (n->lastline != n->line)
+			printf("-%d", n->lastline);
+		putchar('\n');
+@
+
+
+1.60
+log
+@Simplify by making many functions in the man(7) parser void,
+and some cleanup; no functional change, minus 70 lines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.59 2014/10/20 01:43:48 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d43 1
+a43 1
+	print_mdoc(mdoc_node(mdoc), 0);
+d50 1
+a50 1
+	print_man(man_node(man), 0);
+d61 3
+d148 1
+a148 1
+			putchar('\t');
+d172 1
+a172 1
+		print_box(n->eqn->root->first, indent + 1);
+d174 2
+a175 1
+		print_mdoc(n->child, indent + 1);
+d186 3
+d251 1
+a251 1
+			putchar('\t');
+d259 1
+a259 1
+		print_box(n->eqn->root->first, indent + 1);
+d261 2
+a262 1
+		print_man(n->child, indent + 1);
+d281 1
+a281 1
+		putchar('\t');
+d329 1
+a329 1
+	print_box(ep->first, indent + 1);
+d340 1
+a340 1
+		putchar('\t');
+@
+
+
+1.59
+log
+@show the {MDOC,MAN}_EQN node, it contains interesting information,
+in particular line and column numbers and flags;
+but hide the uninteresting EQN_ROOT box
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.58 2014/10/10 15:26:29 schwarze Exp $ */
+a202 3
+	case MAN_TAIL:
+		t = "block-tail";
+		break;
+a222 2
+	case MAN_TAIL:
+		/* FALLTHROUGH */
+@
+
+
+1.58
+log
+@sync Copyright years after merge to OpenBSD; no code change
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.57 2014/10/10 12:19:25 schwarze Exp $ */
+d91 1
+a91 1
+		/* FALLTHROUGH */
+d93 1
+d128 1
+a128 1
+		/* FALLTHROUGH */
+d130 1
+a142 3
+	} else if (n->eqn) {
+		assert(NULL == p && NULL == t);
+		print_box(n->eqn->root, indent);
+d168 2
+d207 1
+a207 1
+		/* FALLTHROUGH */
+d209 1
+d235 1
+a235 1
+		/* FALLTHROUGH */
+d237 1
+a246 3
+	} else if (n->eqn) {
+		assert(NULL == p && NULL == t);
+		print_box(n->eqn->root, indent);
+d256 2
+@
+
+
+1.57
+log
+@Make eqn(7) -Ttree output more useful:
+* Reduce noise by not printing default attributes.
+* Print missing "top" and "bottom" attributes.
+* Print mnemonics, not code numbers for expression positions.
+* Do not print unused "pile" attribute.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.56 2014/10/10 08:44:24 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.56
+log
+@Re-write of eqn(7) parser and MathML output.
+This adds parser-level support for the grammar described by the eqn
+second-edition technical paper, "Typesetting Mathematics — User's Guide"
+(Kernighan, Cherry).
+The reason for this re-write is the grouping rules, which were not
+possible given the existing implementation.
+The re-write has also considerably simplified the HTML (and, if it ever
+is completed, terminal) front-end.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.55 2014/09/28 11:32:33 kristaps Exp $ */
+d268 5
+d301 22
+a322 8
+	assert(t);
+	printf("%s(size=%d, args=%zu(%zu), pos=%d, font=%d, pile=%d, l=\"%s\", r=\"%s\") %s\n",
+	    t, EQN_DEFSIZE == ep->size ? 0 : ep->size,
+	    ep->args, ep->expectargs,
+	    ep->pos, ep->font, ep->pile,
+	    ep->left ? ep->left : "",
+	    ep->right ? ep->right : "",
+	    ep->text ? ep->text : "");
+@
+
+
+1.55
+log
+@Make eqn tree output a bit more useful.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.54 2014/08/10 23:54:41 schwarze Exp $ */
+d278 1
+d288 3
+d297 1
+a297 1
+	printf("%s(size=%d, pos=%d, font=%d, mark=%d, pile=%d, l=\"%s\", r=\"%s\") %s\n",
+d299 2
+a300 1
+	    ep->pos, ep->font, ep->mark, ep->pile,
+@
+
+
+1.54
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.53 2014/07/02 07:10:38 schwarze Exp $ */
+d293 1
+a293 1
+	printf("%s(%d, %d, %d, %d, %d, \"%s\", \"%s\") %s\n",
+d295 1
+a295 1
+	    ep->pos + 1, ep->font, ep->mark, ep->pile,
+@
+
+
+1.53
+log
+@Change column display in -Ttree to be 1-based instead of 0-based
+such that column numbers agree between messages and -Ttree.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.52 2014/04/20 16:46:05 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+d19 2
+a20 1
+#endif
+@
+
+
+1.52
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.51 2014/03/08 15:50:41 schwarze Exp $ */
+d163 1
+a163 1
+		printf("%d:%d", n->line, n->pos);
+d253 1
+a253 1
+		printf("%d:%d\n", n->line, n->pos);
+d295 1
+a295 1
+	    ep->pos, ep->font, ep->mark, ep->pile,
+@
+
+
+1.51
+log
+@To find out whether .TP head arguments are same-line or next-line arguments,
+use the MAN_LINE flag instead of the man_node line member.
+This is required such that user-defined macros wrapping .TP work correctly.
+
+Issue found by Havard Eidnes in Tcl_NewStringObj(3), reported via
+the NetBSD bug tracking system and Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.50 2013/12/24 19:11:46 schwarze Exp $ */
+a38 1
+/* ARGSUSED */
+a45 2
+
+/* ARGSUSED */
+a52 1
+
+d66 1
+a66 1
+	case (MDOC_ROOT):
+d69 1
+a69 1
+	case (MDOC_BLOCK):
+d72 1
+a72 1
+	case (MDOC_HEAD):
+d75 1
+a75 1
+	case (MDOC_BODY):
+d81 1
+a81 1
+	case (MDOC_TAIL):
+d84 1
+a84 1
+	case (MDOC_ELEM):
+d87 1
+a87 1
+	case (MDOC_TEXT):
+d90 1
+a90 1
+	case (MDOC_TBL):
+d92 1
+a92 1
+	case (MDOC_EQN):
+d100 1
+a100 1
+	case (MDOC_TEXT):
+d103 1
+a103 1
+	case (MDOC_BODY):
+d106 1
+a106 1
+	case (MDOC_HEAD):
+d109 1
+a109 1
+	case (MDOC_TAIL):
+d112 1
+a112 1
+	case (MDOC_ELEM):
+d119 1
+a119 1
+	case (MDOC_BLOCK):
+d126 1
+a126 1
+	case (MDOC_TBL):
+d128 1
+a128 1
+	case (MDOC_EQN):
+d130 1
+a130 1
+	case (MDOC_ROOT):
+a174 1
+
+d184 1
+a184 1
+	case (MAN_ROOT):
+d187 1
+a187 1
+	case (MAN_ELEM):
+d190 1
+a190 1
+	case (MAN_TEXT):
+d193 1
+a193 1
+	case (MAN_BLOCK):
+d196 1
+a196 1
+	case (MAN_HEAD):
+d199 1
+a199 1
+	case (MAN_BODY):
+d202 1
+a202 1
+	case (MAN_TAIL):
+d205 1
+a205 1
+	case (MAN_TBL):
+d207 1
+a207 1
+	case (MAN_EQN):
+d215 1
+a215 1
+	case (MAN_TEXT):
+d218 1
+a218 1
+	case (MAN_ELEM):
+d220 1
+a220 1
+	case (MAN_BLOCK):
+d222 1
+a222 1
+	case (MAN_HEAD):
+d224 1
+a224 1
+	case (MAN_TAIL):
+d226 1
+a226 1
+	case (MAN_BODY):
+d229 1
+a229 1
+	case (MAN_ROOT):
+d232 1
+a232 1
+	case (MAN_TBL):
+d234 1
+a234 1
+	case (MAN_EQN):
+d275 1
+a275 1
+	case (EQN_ROOT):
+d278 1
+a278 1
+	case (EQN_LIST):
+d281 1
+a281 1
+	case (EQN_SUBEXPR):
+d284 1
+a284 1
+	case (EQN_TEXT):
+d287 1
+a287 1
+	case (EQN_MATRIX):
+d293 6
+a298 6
+	printf("%s(%d, %d, %d, %d, %d, \"%s\", \"%s\") %s\n", 
+		t, EQN_DEFSIZE == ep->size ? 0 : ep->size,
+		ep->pos, ep->font, ep->mark, ep->pile, 
+		ep->left ? ep->left : "",
+		ep->right ? ep->right : "",
+		ep->text ? ep->text : "");
+d314 1
+a314 1
+	case (TBL_SPAN_HORIZ):
+d317 1
+a317 1
+	case (TBL_SPAN_DHORIZ):
+d326 1
+a326 1
+		case (TBL_DATA_HORIZ):
+d328 1
+a328 1
+		case (TBL_DATA_NHORIZ):
+d331 1
+a331 1
+		case (TBL_DATA_DHORIZ):
+d333 1
+a333 1
+		case (TBL_DATA_NDHORIZ):
+@
+
+
+1.50
+log
+@When deciding whether two consecutive macros are on the same input line,
+we have to compare the line where the first one *ends* (not where it begins)
+to the line where the second one starts.
+This fixes the bug that .Bk allowed output line breaks right after block
+macros spanning more than one input line, even when the next macro follows
+on the same line.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.49 2013/09/15 17:33:57 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d255 4
+a258 1
+		printf("%s (%s) %d:%d\n", p, t, n->line, n->pos);
+@
+
+
+1.49
+log
+@For some mdoc(7) macros, it is (unfortunately) semantically significant
+whether they are the first macro on the line or called by another macro.
+To help debugging, indicate this property "first macro on a new input line"
+by prefixing an asterisk to the line number in -Ttree output.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.48 2013/05/18 17:08:43 schwarze Exp $ */
+d4 1
+d167 4
+a170 1
+		printf("%d:%d\n", n->line, n->pos);
+@
+
+
+1.48
+log
+@Remove the variable sz because it's invariantly == 0,
+along with the dead code testing whether it's positive.
+Reported by Ulrich Spoerlein <uqs@@spoerlein.net>,
+found by Coverity Scan CID 975717.
+
+While here, remove the now unused **params array as well,
+which Coverity apparently missed, at least it wasn't reported...
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.47 2011/09/18 14:14:15 schwarze Exp $ */
+d162 5
+a166 2
+		
+		printf(" %d:%d\n", n->line, n->pos);
+@
+
+
+1.47
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.46 2011/07/23 12:01:54 kristaps Exp $ */
+d61 1
+a61 2
+	size_t		  argc, sz;
+	char		**params;
+d65 1
+a65 2
+	argc = sz = 0;
+	params = NULL;
+a162 3
+		for (i = 0; i < (int)sz; i++)
+			printf(" [%s]", params[i]);
+
+@
+
+
+1.46
+log
+@Add matrix support.  Also remove "above" notion, as all elements in a
+list are delimited by their "aboveness" and it's superfluous.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.45 2011/07/22 09:57:04 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.45
+log
+@Give lists their own eqn function.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.44 2011/07/21 23:30:39 kristaps Exp $ */
+d266 1
+d273 1
+d276 1
+a276 4
+		printf("eqn-root(%d, %d, %d, %d)\n", 
+			EQN_DEFSIZE == ep->size ? 0 : ep->size,
+			ep->pos, ep->font, ep->mark);
+		print_box(ep->first, indent + 1);
+d279 1
+a279 7
+		printf("eqn-list(%d, %d, %d, %d, %d, %d, \"%s\", \"%s\")\n", 
+			EQN_DEFSIZE == ep->size ? 0 : ep->size,
+			ep->pos, ep->font, ep->mark,
+			ep->pile, ep->above,
+			ep->left ? ep->left : "",
+			ep->right ? ep->right : "");
+		print_box(ep->first, indent + 1);
+d282 1
+a282 7
+		printf("eqn-subxpr(%d, %d, %d, %d, %d, %d, \"%s\", \"%s\")\n", 
+			EQN_DEFSIZE == ep->size ? 0 : ep->size,
+			ep->pos, ep->font, ep->mark,
+			ep->pile, ep->above,
+			ep->left ? ep->left : "",
+			ep->right ? ep->right : "");
+		print_box(ep->first, indent + 1);
+d285 1
+a285 3
+		printf("eqn-text(%d, %d, %d, %d): [%s]\n", 
+			EQN_DEFSIZE == ep->size ? 0 : ep->size,
+			ep->pos, ep->font, ep->mark, ep->text);
+d287 2
+a288 1
+	default:
+d292 9
+@
+
+
+1.44
+log
+@Complete eqn.7 parsing.  Features all productions from the original 1975
+CACM paper in an LR(1) parse (1 -> eqn_rewind()).  Right now the code is
+a little jungly, but will clear up as I consolidate parse components.
+The AST structure will also be cleaned up, as right now it's pretty ad
+hoc (this won't change the parse itself).  I added the mandoc_strndup()
+function will here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.43 2011/07/21 15:21:13 kristaps Exp $ */
+d279 9
+@
+
+
+1.43
+log
+@Support `size' constructs in eqn.7.  Generalise mandoc_strontou to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.42 2011/07/21 14:13:00 kristaps Exp $ */
+d277 1
+a277 1
+		print_box(ep->child, indent + 1);
+d280 1
+a280 1
+		printf("eqn-subxpr(%d, %d, %d, %d)\n", 
+d282 5
+a286 2
+			ep->pos, ep->font, ep->mark);
+		print_box(ep->child, indent + 1);
+@
+
+
+1.42
+log
+@Full support for eqn positionals (above, over, sup, sub, etc.).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.41 2011/07/21 13:37:04 kristaps Exp $ */
+d22 1
+d274 2
+a275 1
+		printf("eqn-root(%d, %d, %d)\n", 
+d280 2
+a281 1
+		printf("eqn-subxpr(%d, %d, %d)\n", 
+d286 2
+a287 1
+		printf("eqn-text(%d, %d, %d): [%s]\n", 
+@
+
+
+1.41
+log
+@Add eqn subexpression fonts.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.40 2011/07/21 13:18:24 kristaps Exp $ */
+d273 2
+a274 2
+		printf("eqn-root(%d, %d)\n", 
+				ep->font, ep->mark);
+d278 2
+a279 2
+		printf("eqn-subxpr(%d, %d)\n", 
+				ep->font, ep->mark);
+d283 2
+a284 2
+		printf("eqn-text(%d, %d): [%s]\n", 
+				ep->font, ep->mark, ep->text);
+@
+
+
+1.40
+log
+@Add support for markers.  These decorate the last box: see eqn.7.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.39 2011/07/21 12:30:44 kristaps Exp $ */
+d273 2
+a274 1
+		printf("eqn-root(%d)\n", ep->mark);
+d278 2
+a279 1
+		printf("eqn-subxpr(%d)\n", ep->mark);
+d283 2
+a284 1
+		printf("eqn-text(%d): [%s]\n", ep->mark, ep->text);
+@
+
+
+1.39
+log
+@Support nested `{, }' subexpressions in eqn.  Document in code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.38 2011/07/21 11:34:53 kristaps Exp $ */
+d273 1
+a273 1
+		puts("eqn-root");
+d277 1
+a277 1
+		puts("eqn-subxpr");
+d281 1
+a281 1
+		printf("eqn-text: [%s]\n", ep->text);
+@
+
+
+1.38
+log
+@Flip eqn into using parsed nodes.  I've temporarily disabled printing
+these in the front-ends except for -Ttree, which will display the parsed
+tree.
+
+While here, fix that quoted strings aren't scanned for replacement parts.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.37 2011/03/23 12:33:01 kristaps Exp $ */
+d275 5
+a279 1
+		return;
+d282 1
+a282 2
+		print_box(ep->next, indent);
+		return;
+d286 2
+@
+
+
+1.37
+log
+@Add MAN_TAIL, which will be used by `UE' (forthcoming) and needs to be
+used for `RE'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.36 2011/02/09 09:18:15 kristaps Exp $ */
+d31 2
+a33 1
+static	void	print_man(const struct man_node *, int);
+d67 1
+d95 1
+a95 2
+		t = "tbl";
+		break;
+a96 1
+		t = "eqn";
+a102 2
+	p = NULL;
+
+d131 1
+a131 1
+		break;
+a132 1
+		p = n->eqn->data;
+d143 1
+a143 1
+		assert(NULL == p);
+d145 3
+d167 1
+a167 1
+		printf(" %d:%d", n->line, n->pos);
+a169 2
+	putchar('\n');
+
+d183 2
+d208 1
+a208 2
+		t = "tbl";
+		break;
+a209 1
+		t = "eqn";
+a215 2
+	p = NULL;
+
+d235 1
+a235 1
+		break;
+a236 1
+		p = n->eqn->data;
+d244 1
+a244 1
+		assert(NULL == p);
+d246 3
+d252 1
+a252 1
+		printf("%s (%s) %d:%d", p, t, n->line, n->pos);
+a254 2
+	putchar('\n');
+
+d262 24
+d329 1
+a329 1
+	printf("(tbl) %d:1", sp->line);
+@
+
+
+1.36
+log
+@Allow -man to process EQN as well.  Also fix a segfault in missing case
+statements in the post-handler for EQN in -mdoc and -man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.35 2011/02/09 09:05:52 kristaps Exp $ */
+d204 3
+d230 2
+@
+
+
+1.35
+log
+@Allow EQN data to be pushed down into libmdoc via mdoc_addeqn().  Only
+the adding itself is implemented; equation data is not yet shown.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.34 2011/02/06 22:02:58 kristaps Exp $ */
+d236 1
+a236 1
+		p = "eqn";
+@
+
+
+1.34
+log
+@Let the line-number of a tbl_span be remembered.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.33 2011/02/06 21:44:36 kristaps Exp $ */
+d135 1
+a135 1
+		p = "eqn";
+@
+
+
+1.33
+log
+@Add initial libmdoc and libman top-most machinery for accepting TBL
+directives.  For now this will just ignore them (except for -Ttree,
+which just notes that an EQN's been accepted).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.32 2011/01/10 14:40:30 kristaps Exp $ */
+a268 2
+	printf("tbl: ");
+
+d301 1
+a301 2
+		if (dp->next)
+			putchar(' ');
+d303 2
+@
+
+
+1.32
+log
+@First, make extra data cells be thrown away.  This makes "dp->layout"
+always hold, which cleans up the table stuff a bit.
+
+Second, set a "spans" value per data cell consisting of the number of
+skipped TBL_CELL_SPAN layout cells.
+
+Third, make tbl_term.c understand how to skip over spanned sections when
+iterating over the header queue.
+
+What remains is to calculate the widths of spanned cells.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.31 2011/01/03 13:59:21 kristaps Exp $ */
+d95 3
+d134 3
+d207 3
+d235 3
+@
+
+
+1.31
+log
+@Make width calculations occur within tbl_term.c, not tbl.c.  This allows
+for front-ends to make decisions about widths, not the back-end.
+
+To pull this off, first make each tbl_head contain a unique index value
+(0 <= index < total tbl_head elements) and remove the tbl_calc() routine
+from the back-end.
+
+Then, when encountering the first tbl_span in the front-end, dynamically
+create an array of configurations (termp_tbl) keyed on each tbl_head's
+unique index value.  Construct the decimals and widths at this time,
+then continue parsing as before.
+
+The termp_tbl and indexes are required because we pass a const tbl AST
+into the front-end.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.30 2011/01/02 20:34:05 kristaps Exp $ */
+d285 6
+a290 1
+		printf("[%s%s]", dp->string, dp->layout ?  "" : "*");
+@
+
+
+1.30
+log
+@Fix table to print nicely (merging error).  Also have -Ttree push out some
+header stuff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.29 2011/01/01 22:27:08 kristaps Exp $ */
+a251 1
+	const struct tbl_head *hp;
+a253 12
+	if (TBL_SPAN_FIRST & sp->flags) {
+		for (i = 0; i < indent; i++)
+			putchar('\t');
+		printf("tbl-head: ");
+		for (hp = sp->head; hp; hp = hp->next) {
+			printf("[%d]", hp->width);
+			if (hp->next)
+				putchar(' ');
+		}
+		putchar('\n');
+	}
+
+@
+
+
+1.29
+log
+@Add a warning if a data cell has no layout.  Also make -Ttree show this
+with a little star next to the entry (yeah, this is mostly for testing).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.28 2011/01/01 17:10:20 kristaps Exp $ */
+d33 1
+a33 1
+static	void	print_span(const struct tbl_span *);
+a138 3
+	for (i = 0; i < indent; i++)
+		putchar('\t');
+
+d141 1
+a141 1
+		print_span(n->span);
+d143 3
+a230 3
+	for (i = 0; i < indent; i++)
+		putchar('\t');
+
+d233 4
+a236 2
+		print_span(n->span);
+	} else
+d238 1
+d249 1
+a249 1
+print_span(const struct tbl_span *sp)
+d252 17
+@
+
+
+1.28
+log
+@Make some bit-flags into enums as they should be.  Make printing of -Ttree
+tables a little bit smarter.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.27 2011/01/01 14:09:21 kristaps Exp $ */
+d281 1
+a281 1
+		printf("[%s]", dp->string);
+@
+
+
+1.27
+log
+@Make -Ttree a bit more readable.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.26 2011/01/01 13:54:58 kristaps Exp $ */
+d33 1
+a61 1
+	const struct tbl_dat *dp;
+d144 1
+a144 6
+		printf("tbl: ");
+		for (dp = n->span->first; dp; dp = dp->next) {
+			printf("[%s]", dp->string);
+			if (dp->next)
+				putchar(' ');
+		}
+a177 1
+	const struct tbl_dat *dp;
+d236 2
+a237 7
+		printf("tbl: ");
+		for (dp = n->span->first; dp; dp = dp->next) {
+			printf("[%s]", dp->string);
+			if (dp->next)
+				putchar(' ');
+		}
+	} else 
+d247 39
+@
+
+
+1.26
+log
+@Make -Ttree spit out table columns.
+
+Add forgotten assignment of span to -man's TBL nodes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.25 2011/01/01 12:56:12 kristaps Exp $ */
+d242 1
+d244 1
+a244 1
+			printf("tbl: [%s]", dp->string);
+@
+
+
+1.25
+log
+@Add basic -Ttree support for tables.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.24 2010/07/07 15:04:54 kristaps Exp $ */
+d61 1
+d100 2
+a129 1
+		p = "tbl";
+d140 25
+a164 2
+		(void)printf("    ");
+	(void)printf("%s (%s)", p, t);
+d166 1
+a166 8
+	for (i = 0; i < (int)argc; i++) {
+		(void)printf(" -%s", mdoc_argnames[argv[i].arg]);
+		if (argv[i].sz > 0)
+			(void)printf(" [");
+		for (j = 0; j < (int)argv[i].sz; j++)
+			(void)printf(" [%s]", argv[i].value[j]);
+		if (argv[i].sz > 0)
+			(void)printf(" ]");
+d169 1
+a169 4
+	for (i = 0; i < (int)sz; i++)
+		(void)printf(" [%s]", params[i]);
+
+	(void)printf(" %d:%d\n", n->line, n->pos);
+d183 1
+d212 2
+a230 1
+		p = "tbl";
+d238 13
+a250 2
+		(void)printf("    ");
+	(void)printf("%s (%s) %d:%d\n", p, t, n->line, n->pos);
+@
+
+
+1.24
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.23 2010/06/29 19:20:38 schwarze Exp $ */
+d91 3
+d126 3
+d188 3
+d212 3
+@
+
+
+1.23
+log
+@Support for badly nested blocks, written around the time of
+the Rostock mandoc hackathon and tested and polished since,
+supporting constructs like:
+
+.Ao Bo    Ac    Bc        (exp breaking exp)
+.Aq Bo    eol   Bc        (imp breaking exp)
+.Ao Bq    Ac    eol       (exp breaking imp)
+.Ao Bo So Bc    Ac  Sc    (double break, inner before outer)
+.Ao Bo So Ac    Bc  Sc    (double break, outer before inner)
+.Ao Bo    Ac So Bc  Sc    (broken breaker)
+.Ao Bo So Bc Do Ac  Sc Dc (broken double breaker)
+
+There are still two known issues which are tricky:
+
+1) Breaking two identical explicit blocks (Ao Bo Bo Ac or Aq Bo Bo eol)
+fails outright, triggering a bogus syntax error.
+2) Breaking a block by two identical explicit blocks (Ao Ao Bo Ac Ac Bc
+or Ao Ao Bq Ac Ac eol) still has a minor rendering error left:
+"<ao1 <ao2 [bo ac2> ac1> bc]>" should not have the final ">".
+
+We can fix these later in the tree, let's not grow this diff too large.
+
+"get it in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.22 2010/06/26 15:36:37 kristaps Exp $ */
+a26 1
+#include "regs.h"
+@
+
+
+1.22
+log
+@Churn-ish check-in getting mdoc_parseln() and man_parseln() to accept a
+const struct regset pointer.  No functionality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.21 2010/06/19 20:46:28 kristaps Exp $ */
+d78 4
+a81 1
+		t = "block-body";
+@
+
+
+1.21
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.20 2010/05/17 22:11:42 kristaps Exp $ */
+d27 1
+@
+
+
+1.20
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.19 2010/01/01 17:14:31 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.19
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.18 2009/10/30 18:53:09 kristaps Exp $ */
+d26 1
+@
+
+
+1.18
+log
+@More lint fixes.
+Removed err.h from inclusions (less main.c--still in progress).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.17 2009/10/26 17:05:44 kristaps Exp $ */
+d17 4
+@
+
+
+1.17
+log
+@Added time.h to various files for FreeBSD compilation (thanks Ulrich Sporlein).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.16 2009/10/13 10:57:25 kristaps Exp $ */
+a17 1
+#include <err.h>
+@
+
+
+1.16
+log
+@Moved output definitions into main.h.
+Pushed terminal_{mdoc,man} into {mdoc,man}_term.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.15 2009/09/16 09:41:24 kristaps Exp $ */
+d21 1
+@
+
+
+1.15
+log
+@Made tree/term/out() functions return void.
+Put err() functions back into front-ends (no use making it needlessly complex).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.14 2009/08/13 11:45:29 kristaps Exp $ */
+d24 1
+@
+
+
+1.14
+log
+@Significant overhaul in libman.  Macros are now block- and line-scoped (with
+next-line scope extensions possible).  man.7 reflects block and line scoping,
+and also includes a REFERENCE section that will be used as a template for the
+big mdoc reference.  Many fixes in next-line behaviour for both inline and
+block macros.  Added some macros for compatibility (from me.7).  Corrected
+quoted-literal handling for libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.13 2009/06/10 20:18:44 kristaps Exp $ */
+d30 1
+a30 1
+int
+a34 1
+	return(1);
+d39 1
+a39 1
+int
+a43 1
+	return(1);
+@
+
+
+1.13
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.12 2009/04/12 19:45:26 kristaps Exp $ */
+d166 9
+d185 6
+@
+
+
+1.12
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: tree.c,v 1.11 2009/04/03 11:08:39 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.11
+log
+@Proper resetting of memory.
+Array boundary fixed (-W).
+@
+text
+@d1 1
+a1 1
+/* $Id: tree.c,v 1.10 2009/03/23 15:20:51 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.10
+log
+@-man printing linked to -Ttree.
+@
+text
+@d1 1
+a1 1
+/* $Id: tree.c,v 1.9 2009/03/19 16:20:37 kristaps Exp $ */
+d27 2
+a28 2
+static	void	tree_mdoc(const struct mdoc_node *, int);
+static	void	tree_man(const struct man_node *, int);
+d33 1
+a33 2
+tree_run(void *arg, const struct man *man,
+		const struct mdoc *mdoc)
+d36 11
+a46 4
+	if (man)
+		tree_man(man_node(man), 0);
+	if (mdoc)
+		tree_mdoc(mdoc_node(mdoc), 0);
+d52 1
+a52 1
+tree_mdoc(const struct mdoc_node *n, int indent)
+d146 1
+a146 1
+		tree_mdoc(n->child, indent + 1);
+d148 1
+a148 1
+		tree_mdoc(n->next, indent);
+d153 1
+a153 1
+tree_man(const struct man_node *n, int indent)
+d193 1
+a193 1
+		tree_man(n->child, indent + 1);
+d195 1
+a195 1
+		tree_man(n->next, indent);
+@
+
+
+1.9
+log
+@NetBSD lintified.
+@
+text
+@d1 1
+a1 1
+/* $Id: tree.c,v 1.8 2009/03/19 16:17:27 kristaps Exp $ */
+d25 1
+d27 2
+a28 1
+static	void	tree_body(const struct mdoc_node *, int);
+d33 2
+a34 1
+tree_run(void *arg, const struct mdoc *mdoc)
+d37 4
+a40 1
+	tree_body(mdoc_node(mdoc), 0);
+d46 1
+a46 1
+tree_body(const struct mdoc_node *n, int indent)
+d140 1
+a140 1
+		tree_body(n->child, indent + 1);
+d142 1
+a142 1
+		tree_body(n->next, indent);
+d145 46
+@
+
+
+1.8
+log
+@Split mdocterm.c -> main.c terminal.c.
+Abstracted output with -T selector (default ascii).
+Name change: mdocterm -> mandoc.
+Re-imported tree with -Ttree.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdoctree.c,v 1.8 2009/03/16 23:37:28 kristaps Exp $ */
+d29 1
+@
+
+
+1.7
+log
+@termact.c -> term.c
+term.c -> mdocterm.c
+tree.c -> mdoctree.c
+Fixed/finished mmain.h.
+@
+text
+@d1 137
+@
+
+
+1.6
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@a0 132
+/* $Id: tree.c,v 1.5 2009/02/20 23:35:36 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "mdoc.h"
+
+#define	xprintf		(void)printf
+
+static	void	 treeprint_r(const struct mdoc_node *, int);
+
+static void
+treeprint_r(const struct mdoc_node *n, int indent)
+{
+	const char	 *p, *t;
+	int		  i, j;
+	size_t		  argc, sz;
+	char		**params;
+	struct mdoc_arg	 *argv;
+
+	argv = NULL;
+	argc = sz = 0;
+	params = NULL;
+
+	switch (n->type) {
+	case (MDOC_ROOT):
+		t = "root";
+		break;
+	case (MDOC_BLOCK):
+		t = "block";
+		break;
+	case (MDOC_HEAD):
+		t = "block-head";
+		break;
+	case (MDOC_BODY):
+		t = "block-body";
+		break;
+	case (MDOC_TAIL):
+		t = "block-tail";
+		break;
+	case (MDOC_ELEM):
+		t = "elem";
+		break;
+	case (MDOC_TEXT):
+		t = "text";
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+
+	switch (n->type) {
+	case (MDOC_TEXT):
+		p = n->data.text.string;
+		break;
+	case (MDOC_BODY):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_HEAD):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_TAIL):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_ELEM):
+		p = mdoc_macronames[n->tok];
+		argv = n->data.elem.argv;
+		argc = n->data.elem.argc;
+		break;
+	case (MDOC_BLOCK):
+		p = mdoc_macronames[n->tok];
+		argv = n->data.block.argv;
+		argc = n->data.block.argc;
+		break;
+	case (MDOC_ROOT):
+		p = "root";
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+
+	for (i = 0; i < indent; i++)
+		xprintf("    ");
+	xprintf("%s (%s)", p, t);
+
+	for (i = 0; i < (int)argc; i++) {
+		xprintf(" -%s", mdoc_argnames[argv[i].arg]);
+		if (argv[i].sz > 0)
+			xprintf(" [");
+		for (j = 0; j < (int)argv[i].sz; j++)
+			xprintf(" [%s]", argv[i].value[j]);
+		if (argv[i].sz > 0)
+			xprintf(" ]");
+	}
+
+	for (i = 0; i < (int)sz; i++)
+		xprintf(" [%s]", params[i]);
+
+	xprintf(" %d:%d\n", n->line, n->pos);
+
+	if (n->child)
+		treeprint_r(n->child, indent + 1);
+	if (n->next)
+		treeprint_r(n->next, indent);
+}
+
+
+/* ARGSUSED */
+void
+treeprint(const struct mdoc_node *node,
+		const struct mdoc_meta *meta)
+{
+
+	treeprint_r(node, 0);
+}
+@
+
+
+1.5
+log
+@More flesh in terminal-encoder.
+@
+text
+@d1 1
+a1 1
+/* $Id: tree.c,v 1.4 2009/02/20 11:04:23 kristaps Exp $ */
+d126 1
+a126 1
+int
+a131 1
+	return(1);
+@
+
+
+1.4
+log
+@Re-added tree.c (for now).
+Added initial terminal-output filter (term.c).
+@
+text
+@d1 1
+a1 1
+/* $Id: tree.c,v 1.2 2009/01/17 14:04:25 kristaps Exp $ */
+d125 1
+d127 2
+a128 1
+treeprint(const struct mdoc_node *node)
+@
+
+
+1.3
+log
+@Removed (moving) tree.c.
+@
+text
+@d1 131
+@
+
+
+1.2
+log
+@Separating output filters.
+@
+text
+@a0 131
+/* $Id: tree.c,v 1.1 2009/01/16 15:58:50 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "mdoc.h"
+
+#define	xprintf		(void)printf
+
+static	void	 treeprint_r(const struct mdoc_node *, int);
+
+static void
+treeprint_r(const struct mdoc_node *n, int indent)
+{
+	const char	 *p, *t;
+	int		  i, j;
+	size_t		  argc, sz;
+	char		**params;
+	struct mdoc_arg	 *argv;
+
+	argv = NULL;
+	argc = sz = 0;
+	params = NULL;
+
+	switch (n->type) {
+	case (MDOC_ROOT):
+		t = "root";
+		break;
+	case (MDOC_BLOCK):
+		t = "block";
+		break;
+	case (MDOC_HEAD):
+		t = "block-head";
+		break;
+	case (MDOC_BODY):
+		t = "block-body";
+		break;
+	case (MDOC_TAIL):
+		t = "block-tail";
+		break;
+	case (MDOC_ELEM):
+		t = "elem";
+		break;
+	case (MDOC_TEXT):
+		t = "text";
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+
+	switch (n->type) {
+	case (MDOC_TEXT):
+		p = n->data.text.string;
+		break;
+	case (MDOC_BODY):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_HEAD):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_TAIL):
+		p = mdoc_macronames[n->tok];
+		break;
+	case (MDOC_ELEM):
+		p = mdoc_macronames[n->tok];
+		argv = n->data.elem.argv;
+		argc = n->data.elem.argc;
+		break;
+	case (MDOC_BLOCK):
+		p = mdoc_macronames[n->tok];
+		argv = n->data.block.argv;
+		argc = n->data.block.argc;
+		break;
+	case (MDOC_ROOT):
+		p = "root";
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+	}
+
+	for (i = 0; i < indent; i++)
+		xprintf("    ");
+	xprintf("%s (%s)", p, t);
+
+	for (i = 0; i < (int)argc; i++) {
+		xprintf(" -%s", mdoc_argnames[argv[i].arg]);
+		if (argv[i].sz > 0)
+			xprintf(" [");
+		for (j = 0; j < (int)argv[i].sz; j++)
+			xprintf(" [%s]", argv[i].value[j]);
+		if (argv[i].sz > 0)
+			xprintf(" ]");
+	}
+
+	for (i = 0; i < (int)sz; i++)
+		xprintf(" [%s]", params[i]);
+
+	xprintf(" %d:%d\n", n->line, n->pos);
+
+	if (n->child)
+		treeprint_r(n->child, indent + 1);
+	if (n->next)
+		treeprint_r(n->next, indent);
+}
+
+
+int
+treeprint(const struct mdoc_node *node)
+{
+
+	treeprint_r(node, 0);
+	return(1);
+}
+@
+
+
+1.1
+log
+@Initial separation of tree/mdocml.1.
+Finished mdoc.3.
+Broken build: mdocml.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: mdocml.c,v 1.46 2009/01/16 14:15:12 kristaps Exp $ */
+d20 1
+d24 3
+a27 2
+#if 0
+/* TODO: remove this to a print-tree output filter. */
+d29 1
+a29 1
+print_node(const struct mdoc_node *n, int indent)
+d41 26
+a66 1
+	t = mdoc_type2a(n->type);
+d119 1
+a119 1
+		print_node(n->child, indent + 1);
+d121 1
+a121 1
+		print_node(n->next, indent);
+d123 1
+a123 1
+#endif
+d126 1
+a126 1
+treeprint(const struct mdoc_node *node, const char *out)
+d128 3
+@

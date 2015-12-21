@@ -1,0 +1,736 @@
+head	1.18;
+access;
+symbols
+	VERSION_1_13_3:1.16
+	VERSION_1_13_2:1.13
+	VERSION_1_12_4:1.12
+	VERSION_1_13_1:1.11
+	VERSION_1_12_3:1.10
+	VERSION_1_12_2:1.10
+	VERSION_1_12:1.12.0.2
+	VERSION_1_12_1:1.9
+	VERSION_1_12_0:1.9
+	VERSION_1_11_7:1.8
+	VERSION_1_11_6:1.8
+	VERSION_1_11_5:1.8
+	VERSION_1_11_4:1.7
+	VERSION_1_11_3:1.7
+	VERSION_1_11_2:1.7
+	VERSION_1_11_1:1.7
+	VERSION_1_10_10:1.7
+	VERSION_1_10_9:1.5;
+locks; strict;
+comment	@ * @;
+
+
+1.18
+date	2015.10.12.00.08.16;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2015.10.06.18.32.20;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2015.01.30.17.32.16;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2015.01.30.04.11.50;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.01.30.02.09.04;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2014.10.14.02.16.06;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2012.05.27.17.54.54;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.07.17.15.43.00;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.01.13.14.30.13;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.01.11.14.12.01;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.01.06.12.31.39;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.01.06.11.55.39;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.01.05.13.00.11;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.01.04.15.02.00;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.01.04.10.29.41;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.18
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@/*	$Id: tbl_html.c,v 1.17 2015/10/06 18:32:20 schwarze Exp $ */
+/*
+ * Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "mandoc.h"
+#include "out.h"
+#include "html.h"
+
+static	void	 html_tblopen(struct html *, const struct tbl_span *);
+static	size_t	 html_tbl_len(size_t, void *);
+static	size_t	 html_tbl_strlen(const char *, void *);
+
+
+static size_t
+html_tbl_len(size_t sz, void *arg)
+{
+
+	return sz;
+}
+
+static size_t
+html_tbl_strlen(const char *p, void *arg)
+{
+
+	return strlen(p);
+}
+
+static void
+html_tblopen(struct html *h, const struct tbl_span *sp)
+{
+	struct htmlpair	 tag;
+	struct roffsu	 su;
+	struct roffcol	*col;
+	int		 ic;
+
+	if (h->tbl.cols == NULL) {
+		h->tbl.len = html_tbl_len;
+		h->tbl.slen = html_tbl_strlen;
+		tblcalc(&h->tbl, sp, 0);
+	}
+
+	assert(NULL == h->tblt);
+	PAIR_CLASS_INIT(&tag, "tbl");
+	h->tblt = print_otag(h, TAG_TABLE, 1, &tag);
+
+	for (ic = 0; ic < sp->opts->cols; ic++) {
+		bufinit(h);
+		col = h->tbl.cols + ic;
+		SCALE_HS_INIT(&su, col->width);
+		bufcat_su(h, "width", &su);
+		PAIR_STYLE_INIT(&tag, h);
+		print_otag(h, TAG_COL, 1, &tag);
+	}
+
+	print_otag(h, TAG_TBODY, 0, NULL);
+}
+
+void
+print_tblclose(struct html *h)
+{
+
+	assert(h->tblt);
+	print_tagq(h, h->tblt);
+	h->tblt = NULL;
+}
+
+void
+print_tbl(struct html *h, const struct tbl_span *sp)
+{
+	const struct tbl_dat *dp;
+	struct htmlpair	 tag;
+	struct tag	*tt;
+	int		 ic;
+
+	/* Inhibit printing of spaces: we do padding ourselves. */
+
+	if (h->tblt == NULL)
+		html_tblopen(h, sp);
+
+	assert(h->tblt);
+
+	h->flags |= HTML_NONOSPACE;
+	h->flags |= HTML_NOSPACE;
+
+	tt = print_otag(h, TAG_TR, 0, NULL);
+
+	switch (sp->pos) {
+	case TBL_SPAN_HORIZ:
+	case TBL_SPAN_DHORIZ:
+		PAIR_INIT(&tag, ATTR_COLSPAN, "0");
+		print_otag(h, TAG_TD, 1, &tag);
+		break;
+	default:
+		dp = sp->first;
+		for (ic = 0; ic < sp->opts->cols; ic++) {
+			print_stagq(h, tt);
+			print_otag(h, TAG_TD, 0, NULL);
+
+			if (dp == NULL || dp->layout->col > ic)
+				continue;
+			if (dp->layout->pos != TBL_CELL_DOWN)
+				if (dp->string != NULL)
+					print_text(h, dp->string);
+			dp = dp->next;
+		}
+		break;
+	}
+
+	print_tagq(h, tt);
+
+	h->flags &= ~HTML_NONOSPACE;
+
+	if (sp->next == NULL) {
+		assert(h->tbl.cols);
+		free(h->tbl.cols);
+		h->tbl.cols = NULL;
+		print_tblclose(h);
+	}
+
+}
+@
+
+
+1.17
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.16 2015/01/30 17:32:16 schwarze Exp $ */
+a110 1
+		/* FALLTHROUGH */
+@
+
+
+1.16
+log
+@Delete the redundant tbl span flags, just inspect the actual data
+where needed, which is less fragile.
+This fixes a subtle NULL pointer access to tp->tbl.cols:
+Due to a bug in the man(7) parser, the first span of a table can
+end up in a .TP head, in which case tblcalc() was never called.
+Found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.15 2015/01/30 04:11:50 schwarze Exp $ */
+d4 1
+d40 1
+a40 1
+	return(sz);
+d47 1
+a47 1
+	return(strlen(p));
+@
+
+
+1.15
+log
+@Abolish struct tbl_head and replace it by an "int col" member in
+struct tbl_cell.  No functional change, minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.14 2015/01/30 02:09:04 schwarze Exp $ */
+d57 1
+a57 1
+	if (sp->flags & TBL_SPAN_FIRST) {
+d135 1
+a135 1
+	if (sp->flags & TBL_SPAN_LAST) {
+@
+
+
+1.14
+log
+@Auditing the tbl(7) code for more NULL pointer accesses, i came out
+empty-handed; so this is just KNF and some code simplifications,
+no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.13 2014/10/14 02:16:06 schwarze Exp $ */
+a51 1
+	const struct tbl_head *hp;
+d55 1
+d67 1
+a67 1
+	for (hp = sp->head; hp; hp = hp->next) {
+d69 1
+a69 1
+		col = &h->tbl.cols[hp->ident];
+a90 1
+	const struct tbl_head *hp;
+d94 1
+d117 1
+a117 1
+		for (hp = sp->head; hp; hp = hp->next) {
+d121 2
+a122 2
+			if (dp == NULL)
+				break;
+@
+
+
+1.13
+log
+@Rudimentary implementation of the e, x, and z table layout modifiers
+to equalize, maximize, and ignore the width of columns.
+Does not yet take vertical rulers into account,
+and does not do line breaks within table cells.
+Considerably improves the lftp(1) manual; issue noticed by sthen@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.12 2014/08/10 23:54:41 schwarze Exp $ */
+d57 1
+a57 1
+	if (TBL_SPAN_FIRST & sp->flags) {
+d98 1
+a98 1
+	if (NULL == h->tblt)
+d121 1
+a121 1
+			if (NULL == dp)
+d123 2
+a124 2
+			if (TBL_CELL_DOWN != dp->layout->pos)
+				if (dp->string)
+d135 1
+a135 1
+	if (TBL_SPAN_LAST & sp->flags) {
+@
+
+
+1.12
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.11 2014/04/20 16:46:05 schwarze Exp $ */
+d60 1
+a60 1
+		tblcalc(&h->tbl, sp);
+@
+
+
+1.11
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.10 2012/05/27 17:54:54 schwarze Exp $ */
+a16 1
+#ifdef HAVE_CONFIG_H
+d18 2
+a19 1
+#endif
+@
+
+
+1.10
+log
+@Do not handle vertical lines as additional tbl(7) columns,
+instead save their properties with the following column.
+This simplifies layout parsing and saves a lot of code
+related to column handling.
+
+At output time, print all white space and vertical lines
+separating columns before printing the following column,
+and none after printing the preceding column, considerably
+simplifying white space handling and width calculations.
+
+No functional change, but it saves 150 lines of code,
+and it allows the next patch to tbl_term.c, tbl_literal().
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.9 2011/09/18 14:14:15 schwarze Exp $ */
+d34 1
+a34 1
+/* ARGSUSED */
+d38 1
+a38 1
+	
+a41 1
+/* ARGSUSED */
+d109 1
+a109 1
+	case (TBL_SPAN_HORIZ):
+d111 1
+a111 1
+	case (TBL_SPAN_DHORIZ):
+@
+
+
+1.9
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.8 2011/07/17 15:43:00 kristaps Exp $ */
+d122 1
+a122 12
+			switch (hp->pos) {
+			case (TBL_HEAD_VERT):
+				/* FALLTHROUGH */
+			case (TBL_HEAD_DVERT):
+				continue;
+			case (TBL_HEAD_DATA):
+				if (NULL == dp)
+					break;
+				if (TBL_CELL_DOWN != dp->layout->pos)
+					if (dp->string)
+						print_text(h, dp->string);
+				dp = dp->next;
+d124 4
+a127 1
+			}
+@
+
+
+1.8
+log
+@Fix copyright email.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.7 2011/01/13 14:30:13 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.7
+log
+@Change how -Thtml behaves with tables: use multiple rows, with widths
+set by COL, until an external macro is encountered.  At this point in
+time, close out the table and process the macro.  When the first table
+row is again re-encountered, re-start the table.  This requires a bit of
+tracking added to "struct html", but the change is very small and
+follows the logic of meta-fonts.  This all follows a bug-report by
+joerg@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.6 2011/01/11 14:12:01 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.6
+log
+@Add support for "^" vertical spanners.  Unlike GNU tbl, raise
+error-class messages when data is being ignored by specifying it in "^"
+cells (either as-is or in blocks).
+
+Also note again that horizontal spanners aren't really supported...
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.5 2011/01/06 12:31:39 kristaps Exp $ */
+d30 1
+d50 39
+d94 1
+a95 3
+	struct htmlpair	 tag;
+	struct roffsu	 su;
+	struct roffcol	*col;
+d99 5
+d107 1
+a107 7
+	/* First pass: calculate widths. */
+
+	if (TBL_SPAN_FIRST & sp->flags) {
+		h->tbl.len = html_tbl_len;
+		h->tbl.slen = html_tbl_strlen;
+		tblcalc(&h->tbl, sp);
+	}
+d113 2
+a116 6
+		PAIR_CLASS_INIT(&tag, "tbl");
+		print_otag(h, TAG_TABLE, 1, &tag);
+		print_otag(h, TAG_TR, 0, NULL);
+
+		/* Iterate over template headers. */
+
+d119 3
+d128 1
+a128 23
+				break;
+			}
+
+			/*
+			 * For the time being, use the simplest possible
+			 * table styling: setting the widths of data
+			 * columns.
+			 */
+
+			col = &h->tbl.cols[hp->ident];
+			SCALE_HS_INIT(&su, col->width);
+			bufcat_su(h, "width", &su);
+			PAIR_STYLE_INIT(&tag, h);
+			tt = print_otag(h, TAG_TD, 1, &tag);
+
+			if (dp) {
+				switch (dp->layout->pos) {
+				case (TBL_CELL_DOWN):
+					break;
+				default:
+					if (NULL == dp->string)
+						break;
+					print_text(h, dp->string);
+d130 3
+a132 1
+				}
+d134 1
+a135 2
+
+			print_tagq(h, tt);
+d140 2
+a143 2
+	/* Close out column specifiers on the last span. */
+
+d148 1
+d150 1
+@
+
+
+1.5
+log
+@Restructured tbl_html() function so that we always clean up our columns.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.4 2011/01/06 11:55:39 kristaps Exp $ */
+d107 10
+a116 3
+			if (dp && dp->string) 
+				print_text(h, dp->string);
+			if (dp)
+d118 1
+@
+
+
+1.4
+log
+@Make -T[x]html for tables structure cells with a width.  I don't
+anticipate doing much more than this for the coming release.
+
+Also, remove "base" part of struct html (not used anywhere) and put some
+comments in struct html.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.3 2011/01/05 13:00:11 kristaps Exp $ */
+a58 9
+	switch (sp->pos) {
+	case (TBL_SPAN_HORIZ):
+		/* FALLTHROUGH */
+	case (TBL_SPAN_DHORIZ):
+		return;
+	default:
+		break;
+	}
+
+d72 34
+a105 1
+	PAIR_CLASS_INIT(&tag, "tbl");
+d107 4
+a110 2
+	print_otag(h, TAG_TABLE, 1, &tag);
+	print_otag(h, TAG_TR, 0, NULL);
+d112 1
+a112 9
+	dp = sp->first;
+	for (hp = sp->head; hp; hp = hp->next) {
+		switch (hp->pos) {
+		case (TBL_HEAD_VERT):
+			/* FALLTHROUGH */
+		case (TBL_HEAD_DVERT):
+			continue;
+		case (TBL_HEAD_DATA):
+			break;
+d114 2
+a116 17
+		/*
+		 * For the time being, use the simplest possible table
+		 * styling: setting the widths of data columns.
+		 */
+
+		col = &h->tbl.cols[hp->ident];
+		SCALE_HS_INIT(&su, col->width);
+		bufcat_su(h, "width", &su);
+		PAIR_STYLE_INIT(&tag, h);
+		tt = print_otag(h, TAG_TD, 1, &tag);
+		if (dp) {
+			if (dp->string)
+				print_text(h, dp->string);
+			dp = dp->next;
+		}
+		print_tagq(h, tt);
+	}
+@
+
+
+1.3
+log
+@Give tables an HTML class.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.2 2011/01/04 15:02:00 kristaps Exp $ */
+d30 19
+d56 2
+d73 8
+d96 11
+a106 1
+		tt = print_otag(h, TAG_TD, 0, NULL);
+d115 8
+@
+
+
+1.2
+log
+@Support `T{' and `T}' data blocks.  When a standalone `T{' is
+encountered as a line's last data cell, move into TBL_PART_CDATA mode
+whilst leaving the cell's designation as TBL_DATA_NONE.  When new data
+arrives that's not a standalone `T}', append it to the cell contends.
+Close out and warn appropriately.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_html.c,v 1.1 2011/01/04 10:29:41 kristaps Exp $ */
+d35 2
+a36 1
+	struct tag	 *tt;
+d52 3
+a54 1
+	print_otag(h, TAG_TABLE, 0, NULL);
+@
+
+
+1.1
+log
+@Add skeleton for -T[x]html tbl stuff.  Also start to put in some bits about
+the up-coming version, although we're not quite there yet.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl_term.c,v 1.6 2011/01/03 16:04:41 kristaps Exp $ */
+d66 2
+a67 1
+			print_text(h, dp->string);
+@

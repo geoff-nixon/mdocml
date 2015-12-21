@@ -1,0 +1,1111 @@
+head	1.34;
+access;
+symbols
+	VERSION_1_9_5:1.34
+	VERSION_1_8_5:1.34
+	VERSION_1_8_1:1.34
+	VERSION_1_7_16:1.34
+	VERSION_1_7_15:1.34
+	OPENBSD_CHECKIN:1.34
+	VERSION_1_6_5:1.34
+	VERSION_1_5_1:1.34
+	VERSION_1_3_15:1.34
+	VERSION_1_3_6:1.34
+	VERSION_1_2_0:1.30
+	VERSION_1_1_0:1.26
+	VERSION_1_0_2:1.25
+	VERSION_1_0_1:1.22
+	version_0_0:1.1.1.1
+	version_0:1.1.1;
+locks; strict;
+comment	@# @;
+
+
+1.34
+date	2009.02.21.21.00.06;	author kristaps;	state dead;
+branches;
+next	1.33;
+
+1.33
+date	2009.02.21.15.34.46;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.02.21.14.56.57;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.02.20.23.35.36;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.01.20.15.05.01;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.01.20.13.44.05;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.01.16.15.58.50;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.01.16.14.04.26;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2008.12.10.14.42.46;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2008.12.10.12.05.33;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2008.12.09.17.09.12;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2008.12.08.16.29.57;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2008.12.07.23.08.23;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2008.12.06.19.41.41;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2008.12.06.13.18.44;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2008.12.05.22.34.30;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2008.12.05.11.28.17;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2008.12.04.11.25.29;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2008.12.03.19.21.58;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2008.12.02.13.20.24;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2008.12.02.00.10.37;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2008.12.01.15.32.36;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2008.12.01.09.25.18;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2008.11.30.23.05.57;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2008.11.30.21.41.35;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2008.11.30.18.50.44;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.11.30.12.41.45;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.11.28.11.21.12;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.11.27.17.27.50;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.11.27.13.29.44;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.11.25.16.49.57;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.11.25.12.14.02;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.11.22.18.34.06;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.11.22.14.53.29;	author kristaps;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2008.11.22.14.53.29;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.34
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@@
+
+
+1.33
+log
+@A few more macros in place.
+@
+text
+@a0 100
+.\"
+.Dd $Mdocdate$
+.Dt mdocml 1
+.Os
+.\" SECTION
+.Sh NAME
+.Nm mdocml
+.Nd mdoc macro compiler
+.\" SECTION
+.Sh SYNOPSIS
+.Nm mdocml
+.Op Fl f Ns Ar filter
+.Op Fl v
+.Op Fl W Ns Ar err...
+.Op Ar infile
+.\" SECTION
+.Sh DESCRIPTION
+The
+.Nm
+utility interfaces the
+.Xr mdoc 3
+library to scan, parse, validate and output mdoc-macro documents.
+Arguments follow:
+.Bl -tag -width "\-Werr... "
+.\" ITEM
+.It Fl f Ns Ar filter
+Pipe the parsed syntax tree into an output filter.  May be either
+.Ar tree
+for the parse tree or
+.Ar term
+for a terminal-encoded, formatted manual page.
+.\" ITEM
+.It Fl v
+Print verbose parsing output.
+.\" ITEM
+.It Fl W Ns Ar err...
+Print warning messages.  May be set to 
+.Fl W Ns Ar all
+for all warnings, 
+.Ar compat
+for groff/troff-compatibility warnings, or
+.Ar syntax
+for syntax warnings.  If
+.Fl W Ns Ar error 
+is specified, warnings are considered errors and cause utility
+termination.  Multiple 
+.Fl W
+arguments may be comma-separated, such as
+.Fl W Ns Ar error,all .
+.\" ITEM
+.It Ar infile
+Read input from
+.Ar infile ,
+which may be 
+.Dq \-
+for stdin.
+.El
+.\" PARAGRAPH
+.Pp
+Parsing and validation rules are drawn entirely from the 
+.Xr mdoc 7
+and
+.Xr mdoc.samples 7 
+manuals.
+.\" PARAGRAPH
+.Pp
+By default,
+.Nm
+reads from stdin and only validates its input.
+.\" PARAGRAPH
+.Pp
+.Ex -std mdocml
+.\" PARAGRAPH
+.Pp
+.Nm
+is
+.Ud
+.\" SECTION
+.Sh EXAMPLES
+To validate this manual page:
+.\" PARAGRAPH
+.Pp
+.D1 % mdocml \-Wall,error mdocml.1 
+.\" SECTION
+.Sh SEE ALSO
+.Xr groff 1 ,
+.Xr mdoc.samples 7 ,
+.Xr mdoc 7 ,
+.Xr mdoc 3
+.\" 
+.Sh AUTHORS
+The
+.Nm
+utility was written by 
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+.\" SECTION
+.Sh CAVEATS
+See
+.Xr mdoc 3
+for a list of bugs, caveats, and incomplete macros.
+@
+
+
+1.32
+log
+@Initial list support (not nested, yet).
+@
+text
+@d12 1
+d22 2
+a23 2
+library to scan, parse and validate mdoc-macro documents.  Arguments
+follow:
+d26 10
+a50 3
+.It Fl v
+Print verbose parsing output.
+.\" ITEM
+d69 1
+a69 2
+reads from stdin, writes messages to stdout, and writes errors and
+warnings to stderr.
+@
+
+
+1.31
+log
+@More flesh in terminal-encoder.
+@
+text
+@d24 1
+d39 1
+d42 1
+@
+
+
+1.30
+log
+@More documentation/installation fixes.
+@
+text
+@d5 1
+a5 1
+.\"
+d9 1
+a9 1
+.\"
+d15 1
+a15 1
+.\"
+d47 1
+d54 1
+d60 1
+d63 1
+d68 1
+a68 1
+.\" 
+d71 1
+d74 1
+a74 1
+.\"
+d80 1
+a80 2
+.\" .Sh STANDARDS
+.\" .Sh HISTORY
+d86 1
+a86 1
+.\"
+a90 1
+.\" .Sh BUGS
+@
+
+
+1.29
+log
+@Re-merged old port-building routines.
+@
+text
+@d84 3
+a86 12
+The most glaring short-coming of 
+.Nm
+is that it doesn't yet support the 
+.Sq \&Xc
+and
+.Sq \&Xo
+macros when used to extend the line arguments to
+.Sq \&It ;
+in effect, trampling the body section.  We note that this is explicitly
+discouraged in
+.Xr mdoc.samples 7 ,
+but in practice used quite often.
+@
+
+
+1.28
+log
+@Initial separation of tree/mdocml.1.
+Finished mdoc.3.
+Broken build: mdocml.c.
+@
+text
+@d21 2
+a22 1
+library to validate and parse mdoc-macro documents.  Arguments follow:
+@
+
+
+1.27
+log
+@Added more validation (parents/msecs).
+Initial function documentation for mdoc.3.
+@
+text
+@d59 4
+@
+
+
+1.26
+log
+@Made noop the default filter.
+@
+text
+@d8 1
+a8 1
+.Nd compile manpage source into mark-up language
+a13 2
+.Op Fl f Ar filter
+.Op Fl o Ar outfile
+d19 4
+a22 20
+utility parses mdoc formatted manual source and passes results into an
+output filter.  The current output filters are
+.Fl f Ar html
+and
+.Fl f Ar xml .
+By default, 
+.Nm
+only validates its input. This may be explicitly directed with
+.Fl f Ar noop .  
+Arguments common to all filters follow:
+.Bl -tag -width "\-o outfile"
+.It Fl f Ar filter
+The output filter name.  
+.It Fl o Ar outfile
+Write output to 
+.Ar outfile ,
+which may be
+.Dq \-
+for stdout.  This is meaningless for
+.Fl f Ar noop .
+d24 10
+a33 5
+Print warning messages.  If set to 
+.Fl W Ns Ar all ,
+all warnings are printed; if
+.Fl W Ns Ar error ,
+warnings are considered errors and cause utility termination.  Multiple 
+d38 1
+a38 1
+Make warning and error messages verbose.
+d47 6
+d55 2
+a56 1
+reads from stdin and writes to stdout.
+a58 52
+.\"
+.Ss Noop Filter
+The default noop 
+.Dq validating
+filter simply validates its input; it produces no output beyond error
+and warning messages.
+.\"
+.Ss XML Filter
+The XML filter, specified by
+.Fl f Ar xml ,
+produces correctly-formatted XML output.  This filter has no additional
+arguments.
+.Pp
+The XML filter creates an XML document where element names are their respective
+roff macro names.  Each element name has an associated
+namespace, which is one of 
+.Dq block ,
+.Dq head ,
+.Dq body ,
+or
+.Dq inline ,
+corresponding to the display mode of a node.  The document root is
+always the
+.Dq mdoc
+element, in the default namespace; the 
+.Dq head
+namespace is for block headers (such as 
+.Sq .Ss
+and
+.Sq .Sh ) ;
+the
+.Dq body
+namespace is for block bodies; and the
+.Dq inline
+namespace is for in-line elements (such as
+.Sq .Em ) .
+.\"
+.Ss HTML Filter
+The HTML filter, specified by
+.Fl f Ar html ,
+accepts the following filter-specific arguments:
+.Bl -tag -width "\-c css"
+.It Fl c Ar css
+The CSS file location, which defaults to 
+.Ar mdocml.css .
+.It Fl e
+Whether to embed the CSS file into the HTML prologue.
+.El
+.Pp
+By default, the HTML filter produces HTML-4.01 strict mark-up.  The
+default CSS document styles the page as it would appear in a terminal
+window.
+d61 1
+a61 18
+To produce an HTML4-strict document 
+.Pa mdocml.html
+for
+.Pa mdocml.1 
+with the default, embedded style-sheet:
+.Pp
+.D1 % mdocml -fhtml -e -o mdocml.html mdocml.1 
+.Pp
+To create an XML document on standard output from
+.Pa mdocml.1
+with the default namespace identifiers
+.Li head ,
+.Li body ,
+.Li block 
+and
+.Li inline :
+.Pp
+.D1 % mdocml -Wall,error -fxml mdocml.1 
+d63 1
+a63 1
+The previous example will also halt on input document warnings.
+d68 2
+a69 1
+.Xr mdoc 7
+d79 1
+a79 1
+Most caveats of
+d81 2
+a82 10
+stem from ambiguities in 
+.Xr mdoc 7
+or the necessary limitations of converting an ad hoc language into
+structured ones:
+.Bl -enum -compact -offset indent
+.It 
+The engine doesn't understand the
+.Sq \&No ,
+.Sq \&Db ,
+.Sq \&Xc ,
+d85 6
+a90 16
+mdoc macros.
+.It 
+All macro arguments may be quoted, instead of only some.
+.It 
+Blank lines raise errors.
+.It 
+If terminating punctuation is found, then 
+.Em all
+remaining tokens are flushed after line scope is closed, not just the
+last one.
+.El
+.Pp
+The roff engine in 
+.Nm
+produces text in-line; thus, output may already be partially written by
+the time an error is encountered.
+@
+
+
+1.25
+log
+@Versioning up.
+@
+text
+@d23 1
+a23 1
+.Ar html
+d25 6
+a30 2
+.Ar xml ,
+the default.  Arguments common to all filters follow:
+d33 1
+a33 3
+The output filter name.  This
+.Em must
+be declared before any other options.
+d39 2
+a40 1
+for stdout.
+d62 1
+a62 1
+reads from stdin and writes to stdout using the xml filter.
+d66 6
+d75 2
+a76 1
+is the default filter.  This filter has no additional arguments.
+d101 1
+d113 4
+d136 3
+a138 1
+.D1 % mdocml mdocml.1 
+@
+
+
+1.24
+log
+@Considerable clean-ups.
+@
+text
+@d3 1
+a3 1
+.Dt mdocml 1 alpha
+d29 3
+a31 1
+The output filter name.
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d12 2
+a13 1
+.Op Fl vW
+d36 9
+a44 2
+.It Fl W
+Print warnings to stderr.
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d37 2
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d121 1
+a121 1
+.An Em Kristaps Dzonsons Aq kristaps@@kth.se .
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d33 1
+a33 1
+.Qq \-
+d41 1
+a41 1
+.Qq \-
+d59 3
+a61 3
+.Qq block ,
+.Qq head ,
+.Qq body ,
+d63 1
+a63 1
+.Qq inline ,
+d66 1
+a66 1
+.Qq mdoc
+d68 1
+a68 1
+.Qq head
+d74 1
+a74 1
+.Qq body
+d76 1
+a76 1
+.Qq inline
+@
+
+
+1.19
+log
+@Nm works properly, many other changes, etc.
+@
+text
+@d48 2
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@a130 2
+.Sq \&Xo ,
+.Sq \&Xc ,
+@
+
+
+1.17
+log
+@More html-css.
+@
+text
+@d88 1
+a88 2
+.\" This next request is for sections 1, 6, 7 & 8 only.
+.\" .Sh ENVIRONMENT
+d96 1
+a96 1
+.D1 % mdocml -fhtml -e mdocml.1 -o mdocml.html
+@
+
+
+1.16
+log
+@Major update.
+@
+text
+@d3 1
+a3 1
+.Dt mdocml 1
+d12 1
+a12 1
+.Op Fl W
+d21 3
+a23 1
+output filter.  The only current output filter is
+d25 1
+a25 1
+the default.  The arguments are as follows:
+d52 4
+a55 2
+is the default filter.  It creates an XML document where element names are
+their respective roff macro names.  Each element name has an associated
+d65 23
+a87 1
+element, in the default namespace.
+d90 19
+@
+
+
+1.15
+log
+@Added `Sm' functionality.
+@
+text
+@d53 3
+a55 1
+.Qq block 
+@
+
+
+1.14
+log
+@Improvements to the xml part.
+@
+text
+@a88 1
+.Sq \&Sm ,
+@
+
+
+1.13
+log
+@Considerably improved roff_text parser.
+Consolidated noop roff macros.
+@
+text
+@a86 1
+.Sq \&Ns ,
+d104 5
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d20 2
+a21 4
+utility parses
+.Xr mdoc
+formatted manual source and passes results into an output filter.  The
+only current output filter is
+@
+
+
+1.11
+log
+@Small fixes to output.
+@
+text
+@a0 1
+.\"	$OpenBSD: mdoc.template,v 1.10 2007/05/31 22:10:19 jmc Exp $
+a1 3
+.\" The following requests are required for all man pages.
+.\"
+.\" Remove `\&' from the line below.
+d22 2
+a23 4
+formatted manual source and passes results into the output filter
+dictated by 
+.Fl f Ar filter .
+The only current output filter is
+d28 1
+a28 2
+The output filter name, which defaults to
+.Ar xml .
+d30 1
+a30 1
+Place output in 
+d34 1
+a34 1
+for stdout.  The default is stdout.
+d36 1
+a36 1
+Print compiler warnings to stderr.
+d42 1
+a42 1
+for stdin.  The default is stdin.
+d44 5
+d55 2
+a56 1
+.Qq block ,
+d58 4
+a61 6
+or
+.Qq special ,
+corresponding to the display mode of a node.
+.\" The following requests should be uncommented and used where appropriate.
+.\" This next request is for sections 2, 3, and 9 function return values only.
+.\" .Sh RETURN VALUES
+d64 1
+a64 6
+.\" .Sh FILES
+.\" .Sh EXAMPLES
+.\" This next request is for sections 1, 4, 6, and 8 only.
+.\" .Sh DIAGNOSTICS
+.\" The next request is for sections 2, 3, and 9 error and signal handling only.
+.\" .Sh ERRORS
+d86 9
+a94 1
+The engine doesn't understand
+d96 1
+a96 3
+and
+.Sq \&Xc
+troff macros.
+d100 1
+a100 1
+Blank lines raise warnings.
+@
+
+
+1.10
+log
+@Preliminary xml output filter (validate-renamed) done.
+@
+text
+@a61 11
+.Pp
+Sample output follows:
+.Bd -literal
+<?xml version="1.0" encoding="UTF-8"?>
+<block:mdoc>
+  <block:Sh>
+    <inline:Sh>NAME</inline:Sh> <inline:Nm>example</inline:Nm>
+    <inline:Nd>example text</inline:Nd>
+  </block:Sh>
+</block:mdoc>
+.Ed
+@
+
+
+1.9
+log
+@Fixed spacing (almost there).
+@
+text
+@d16 1
+a16 1
+.Op Fl vW
+d30 1
+a30 1
+.Ar validate ,
+d32 5
+a36 2
+.Bl -tag -width "\-o outfile,"
+.It Sq Fl o Ar outfile ,
+d41 3
+a43 1
+for standard output.  The default is standard output.
+d49 1
+a49 5
+for standard input.  The default is standard input.
+.It Fl v 
+Print messages (output depends on filter).
+.It Fl W
+Print warnings (output depends on filter).
+d51 22
+a72 6
+.Ss Validate Filter
+The validate filter, specified by
+.Fl f Ar validate ,
+is the default filter.  It produces no output, so specifying
+.Fl o Ar outfile
+results in an empty file.
+@
+
+
+1.8
+log
+@Backed out PUNCT changes (again).
+@
+text
+@a55 4
+.Qq Op Op Fl a ) , Fl b ,
+.Bf Em
+.Qq Op Op Fl a ) , Fl b ,
+.Ef
+d77 1
+a77 1
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+d98 4
+a101 1
+Non-ascii characters may cause issues.
+@
+
+
+1.7
+log
+@Initial pushing to mbuf.
+@
+text
+@d32 2
+a33 2
+.Bl -tag -width "\-o outfile"
+.It Fl o Ar outfile
+d45 1
+a45 1
+.It Fl v
+d56 4
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@a9 1
+.Op foo
+d16 2
+a17 1
+.Op Fl W
+d24 8
+a31 2
+utility compiles manpage source into a mark-up language.  Its arguments
+are as follows:
+d45 2
+d48 1
+a48 1
+Print warnings.
+d50 6
+d80 1
+a80 1
+The
+d82 7
+a88 1
+engine doesn't understand
+d93 7
+a99 3
+.Pp
+.Em All
+macro arguments may be quoted, instead of only some.
+@
+
+
+1.5
+log
+@More fixes and work-ness.
+@
+text
+@d17 1
+d26 1
+a26 1
+.Bl -tag -width "-o outfile"
+d31 1
+a31 1
+.Qq -
+d37 1
+a37 1
+.Qq -
+d39 2
+@
+
+
+1.4
+log
+@Imported all macros from mdoc(7).
+Put all names into roff.c with extern access from private.h.
+Annotated list of changes that must occur for end-game (scope, nests, etc.).
+@
+text
+@d70 3
+@
+
+
+1.3
+log
+@Single call-back for filters.
+Removed verbose flag.
+Added more macros and arguments.
+@
+text
+@d10 1
+@
+
+
+1.2
+log
+@Putting md_run and friends into libmdocml (needs work to be useful).
+@
+text
+@d9 1
+d13 1
+d18 1
+d49 4
+a52 2
+.\" .Sh SEE ALSO
+.\" .Xr foobar 1
+d55 14
+a68 2
+.\" .Sh AUTHORS
+.\" .Sh CAVEATS
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d6 2
+a7 2
+.Dd $\&Mdocdate$
+.Dt NAME SECTION#
+d10 2
+a11 2
+.Nm program
+.Nd one line about what it does
+d13 3
+a15 4
+.\" For a program:  program [-abc] file ...
+.Nm program
+.Op Fl abc
+.Ar
+d19 16
+a34 3
+utility processes files ...
+something
+something.
+@
+
+
+1.1.1.1
+log
+@Initial check-in of mdocml.
+@
+text
+@@

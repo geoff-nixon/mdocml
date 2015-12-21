@@ -1,0 +1,1008 @@
+head	1.26;
+access;
+symbols
+	VERSION_1_13_3:1.21
+	VERSION_1_13_2:1.21
+	VERSION_1_12_4:1.21
+	VERSION_1_13_1:1.20
+	VERSION_1_12_3:1.18
+	VERSION_1_12_2:1.18
+	VERSION_1_12:1.21.0.2
+	VERSION_1_12_1:1.18
+	VERSION_1_12_0:1.18
+	VERSION_1_11_7:1.18
+	VERSION_1_11_6:1.18
+	VERSION_1_11_5:1.18
+	VERSION_1_11_4:1.17
+	VERSION_1_11_3:1.17
+	VERSION_1_11_2:1.17
+	VERSION_1_11_1:1.17
+	VERSION_1_10_10:1.16
+	VERSION_1_10_9:1.16
+	VERSION_1_10_8:1.16
+	VERSION_1_10_7:1.16
+	VERSION_1_10_6:1.16
+	VERSION_1_10_5:1.16
+	VERSION_1_10_5_PREPDF:1.16
+	VERSION_1_10_4:1.16
+	VERSION_1_10_3:1.16
+	VERSION_1_10_2:1.16
+	VERSION_1_10_1:1.15
+	VERSION_1_9_24:1.14
+	VERSION_1_9_25:1.14
+	VERSION_1_9_23:1.13
+	VERSION_1_9_22:1.13
+	VERSION_1_9_21:1.12
+	VERSION_1_9_20:1.12
+	VERSION_1_9_19:1.12
+	VERSION_1_9_18:1.12
+	VERSION_1_9_17:1.12
+	VERSION_1_9_16:1.12
+	VERSION_1_9_15:1.12
+	VERSION_1_9_15-pre2:1.12
+	VERSION_1_9_15-pre1:1.11
+	VERSION_1_9_14:1.11
+	VERSION_1_9_13:1.11
+	VERSION_1_9_12:1.11
+	VERSION_1_9_11:1.11
+	VERSION_1_9_10:1.11
+	VERSION_1_9_9:1.11
+	VERSION_1_9_8:1.11
+	VERSION_1_9_7:1.11
+	VERSION_1_9_6:1.11
+	VERSION_1_9_5:1.11
+	VERSION_1_9_2:1.8
+	VERSION_1_9_1:1.8
+	VERSION_1_9_0:1.8
+	VERSION_1_8_5:1.8
+	VERSION_1_8_4:1.8
+	VERSION_1_8_3:1.8
+	VERSION_1_8_2:1.7
+	VERSION_1_8_1:1.7
+	VERSION_1_8_0:1.5
+	VERSION_1_7_24:1.5
+	VERSION_1_7_23:1.5
+	VERSION_1_7_22:1.5
+	VERSION_1_7_21:1.5
+	VERSION_1_7_20:1.5
+	VERSION_1_7_19:1.5
+	VERSION_1_7_17:1.4
+	VERSION_1_7_16:1.4
+	VERSION_1_7_15:1.4
+	VERSION_1_7_14:1.4
+	VERSION_1_7_13:1.3
+	VERSION_1_7_12:1.2
+	OPENBSD_CHECKIN:1.2
+	VERSION_1_7_10:1.2
+	VERSION_1_7_5:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.26
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2015.04.19.14.00.19;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2015.04.18.17.01.58;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2015.04.02.21.36.50;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.07.24.18.15.14;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.03.22.14.33.05;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.05.08.07.30.19;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.03.31.07.13.53;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.01.01.17.14.29;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.09.17.07.41.28;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.09.16.20.49.06;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.09.16.14.40.56;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.07.20.20.49.22;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.07.17.11.00.18;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.07.17.10.56.27;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.06.16.19.55.28;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.04.02.06.51.44;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.26
+log
+@modernize style: "return" is not a function
+@
+text
+@/*	$Id: mdoc_hash.c,v 1.25 2015/04/19 14:00:19 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "roff.h"
+#include "mdoc.h"
+#include "libmdoc.h"
+
+static	unsigned char	 table[27 * 12];
+
+
+void
+mdoc_hash_init(void)
+{
+	int		 i, j, major;
+	const char	*p;
+
+	if (*table != '\0')
+		return;
+
+	memset(table, UCHAR_MAX, sizeof(table));
+
+	for (i = 0; i < (int)MDOC_MAX; i++) {
+		p = mdoc_macronames[i];
+
+		if (isalpha((unsigned char)p[1]))
+			major = 12 * (tolower((unsigned char)p[1]) - 97);
+		else
+			major = 12 * 26;
+
+		for (j = 0; j < 12; j++)
+			if (UCHAR_MAX == table[major + j]) {
+				table[major + j] = (unsigned char)i;
+				break;
+			}
+
+		assert(j < 12);
+	}
+}
+
+int
+mdoc_hash_find(const char *p)
+{
+	int		  major, i, j;
+
+	if (0 == p[0])
+		return TOKEN_NONE;
+	if ( ! isalpha((unsigned char)p[0]) && '%' != p[0])
+		return TOKEN_NONE;
+
+	if (isalpha((unsigned char)p[1]))
+		major = 12 * (tolower((unsigned char)p[1]) - 97);
+	else if ('1' == p[1])
+		major = 12 * 26;
+	else
+		return TOKEN_NONE;
+
+	if (p[2] && p[3])
+		return TOKEN_NONE;
+
+	for (j = 0; j < 12; j++) {
+		if (UCHAR_MAX == (i = table[major + j]))
+			break;
+		if (0 == strcmp(p, mdoc_macronames[i]))
+			return i;
+	}
+
+	return TOKEN_NONE;
+}
+@
+
+
+1.25
+log
+@Decouple the token code for "no request or macro" from the individual
+high-level parsers to allow further unification of functions that
+only need to recognize this code, but that don't care about different
+high-level macrosets beyond that.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.24 2015/04/18 17:01:58 schwarze Exp $ */
+d4 1
+d71 1
+a71 1
+		return(TOKEN_NONE);
+d73 1
+a73 1
+		return(TOKEN_NONE);
+d80 1
+a80 1
+		return(TOKEN_NONE);
+d83 1
+a83 1
+		return(TOKEN_NONE);
+d89 1
+a89 1
+			return(i);
+d92 1
+a92 1
+	return(TOKEN_NONE);
+@
+
+
+1.24
+log
+@Move mdoc_hash_init() and man_hash_init() to libmandoc.h
+and call them from mparse_alloc() and choose_parser(),
+preparing unified allocation of struct roff_man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.23 2015/04/02 22:48:17 schwarze Exp $ */
+d70 1
+a70 1
+		return(MDOC_MAX);
+d72 1
+a72 1
+		return(MDOC_MAX);
+d79 1
+a79 1
+		return(MDOC_MAX);
+d82 1
+a82 1
+		return(MDOC_MAX);
+d91 1
+a91 1
+	return(MDOC_MAX);
+@
+
+
+1.23
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.22 2015/04/02 21:36:50 schwarze Exp $ */
+a34 4
+/*
+ * XXX - this hash has global scope, so if intended for use as a library
+ * with multiple callers, it will need re-invocation protection.
+ */
+d41 3
+@
+
+
+1.22
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.21 2014/08/10 23:54:41 schwarze Exp $ */
+d65 1
+a65 1
+enum mdoct
+d89 1
+a89 1
+			return((enum mdoct)i);
+@
+
+
+1.21
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.20 2014/04/20 16:46:05 schwarze Exp $ */
+d28 1
+@
+
+
+1.20
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.19 2014/03/23 11:25:26 schwarze Exp $ */
+a16 1
+#ifdef HAVE_CONFIG_H
+a17 1
+#endif
+@
+
+
+1.19
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.18 2011/07/24 18:15:14 kristaps Exp $ */
+d35 1
+d80 1
+a80 1
+	else 
+@
+
+
+1.18
+log
+@Scary-looking but otherwise harmless changes allow me to build for Windows.
+That is to say, with mingw32.  This amounts to the following:
+
+ (1) break compat.c into compat_strlcpy.c and compat_strlcat.c
+ (2) add compat_getsubopt.c (from OpenBSD) and test-getsubopt.c
+ (3) add test-strptime.c for HAVE_STRPTIME
+ (4) add ifdef bits here and there, where necessary
+ (5) remove some harmless unportable stuff (u_char, localtime_r)
+
+I've added the appropriate mdocml.zip target to the Makefile, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.17 2011/03/22 14:33:05 kristaps Exp $ */
+a30 1
+#include "mandoc.h"
+@
+
+
+1.17
+log
+@libmdoc.h and libman.h were including mdoc.h and man.h, respectively.
+Don't have them do that (includes in header files = faugh), and have
+individual files directly include these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.16 2010/06/19 20:46:28 kristaps Exp $ */
+d34 1
+a34 1
+static	u_char		 table[27 * 12];
+d51 2
+a52 2
+		if (isalpha((u_char)p[1]))
+			major = 12 * (tolower((u_char)p[1]) - 97);
+d58 1
+a58 1
+				table[major + j] = (u_char)i;
+d73 1
+a73 1
+	if ( ! isalpha((u_char)p[0]) && '%' != p[0])
+d76 2
+a77 2
+	if (isalpha((u_char)p[1]))
+		major = 12 * (tolower((u_char)p[1]) - 97);
+@
+
+
+1.16
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.15 2010/05/17 22:11:42 kristaps Exp $ */
+d30 1
+@
+
+
+1.15
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.14 2010/05/08 07:30:19 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.14
+log
+@Lint fixes (type-safety for enums via -cefuh).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.13 2010/03/31 07:13:53 kristaps Exp $ */
+d30 1
+@
+
+
+1.13
+log
+@Macro types enum-ated (enum mdoct) (for easier debugging in gdb of "tok" values).
+Initial check-in of Ingo Schwarze's patch for Xo/Xc handling (in blocks ifdef'd "UGLY").
+Put Oc-close-Op parts into UGLY ifdef blocks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.12 2010/01/01 17:14:29 kristaps Exp $ */
+d46 1
+a46 1
+	for (i = 0; i < MDOC_MAX; i++) {
+@
+
+
+1.12
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.11 2009/09/17 07:41:28 kristaps Exp $ */
+d64 1
+a64 1
+int
+d88 1
+a88 1
+			return(i);
+@
+
+
+1.11
+log
+@ascii_xxx -> chars_xxx (intended to hold more than just ascii encoding).
+More html work.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.10 2009/09/16 20:49:06 kristaps Exp $ */
+d17 4
+@
+
+
+1.10
+log
+@Lintifications.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.9 2009/09/16 14:40:56 kristaps Exp $ */
+d30 4
+a33 1
+
+a59 1
+
+a88 1
+
+@
+
+
+1.9
+log
+@Lookup hashes are now static tables, ordered first-level by second character, then randomly along a chain.  Improves performance by a small fraction and considerably cleans up hash sources.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.8 2009/07/20 20:49:22 kristaps Exp $ */
+d28 1
+a28 1
+static	unsigned char	table[27 * 12];
+d49 1
+a49 1
+				table[major + j] = i;
+@
+
+
+1.8
+log
+@FreeBSD includes fix (uqs@@sporlein.net).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.7 2009/07/17 11:00:18 kristaps Exp $ */
+d21 1
+d28 1
+a28 26
+#define	ADJUST_MAJOR(x) 					\
+	do if (37 == (x))					\
+		(x) = 0; 		/* %   -> 00 */		\
+	else if (91 > (x)) 					\
+		(x) -= 64; 		/* A-Z -> 01 - 26 */	\
+	else 							\
+		(x) -= 70;		/* a-z -> 27 - 52 */	\
+	while (/*CONSTCOND*/0)
+
+#define ADJUST_MINOR(y)						\
+	do if (49 == (y))					\
+		(y) = 0;		/* 1   -> 00 */		\
+	else if (91 > (y))					\
+		(y) -= 65;		/* A-Z -> 00 - 25 */	\
+	else 							\
+		(y) -= 97;		/* a-z -> 00 - 25 */	\
+	while (/*CONSTCOND*/0)
+
+#define INDEX(maj, min) 					\
+	((maj) * 26 * 3) + ((min) * 3)
+
+#define	SLOTCMP(slot, val)					\
+	(mdoc_macronames[(slot)][0] == (val)[0] && 		\
+	 mdoc_macronames[(slot)][1] == (val)[1] && 		\
+	 (0 == (val)[2] || 					\
+	  mdoc_macronames[(slot)][2] == (val)[2]))
+d32 1
+a32 1
+mdoc_hash_free(void *htab)
+d34 2
+d37 1
+a37 14
+	free(htab);
+}
+
+
+
+void *
+mdoc_hash_alloc(void)
+{
+	int		  i, major, minor, ind;
+	const void	**htab;
+
+	htab = calloc(26 * 3 * 52, sizeof(struct mdoc_macro *));
+	if (NULL == htab) 
+		return(NULL);
+d40 1
+a40 16
+		major = mdoc_macronames[i][0];
+		assert(isalpha((u_char)major) || 37 == major);
+
+		ADJUST_MAJOR(major);
+
+		minor = mdoc_macronames[i][1];
+		assert(isalpha((u_char)minor) || 49 == minor);
+
+		ADJUST_MINOR(minor);
+
+		ind = INDEX(major, minor);
+
+		if (NULL == htab[ind]) {
+			htab[ind] = &mdoc_macros[i];
+			continue;
+		}
+d42 10
+a51 4
+		if (NULL == htab[++ind]) {
+			htab[ind] = &mdoc_macros[i];
+			continue;
+		}
+d53 1
+a53 2
+		assert(NULL == htab[++ind]);
+		htab[ind] = &mdoc_macros[i];
+a54 2
+
+	return((void *)htab);
+d59 1
+a59 1
+mdoc_hash_find(const void *arg, const char *tmp)
+d61 1
+a61 5
+	int		  major, minor, ind, slot;
+	const void	**htab;
+
+	htab = /* LINTED */
+		(const void **)arg;
+d63 1
+a63 1
+	if (0 == (major = tmp[0]))
+d65 1
+a65 1
+	if (0 == (minor = tmp[1]))
+d68 5
+a72 1
+	if (tmp[2] && tmp[3])
+d75 1
+a75 3
+	if (37 != major && ! isalpha((u_char)major))
+		return(MDOC_MAX);
+	if (49 != minor && ! isalpha((u_char)minor))
+d78 5
+a82 26
+	ADJUST_MAJOR(major);
+	ADJUST_MINOR(minor);
+
+	ind = INDEX(major, minor);
+
+	if (ind < 0 || ind >= 26 * 3 * 52)
+		return(MDOC_MAX);
+
+	if (htab[ind]) {
+		slot = htab[ind] - /* LINTED */
+			(void *)mdoc_macros;
+		assert(0 == (size_t)slot % sizeof(struct mdoc_macro));
+		slot /= sizeof(struct mdoc_macro);
+		if (SLOTCMP(slot, tmp))
+			return(slot);
+		ind++;
+	}
+
+	if (htab[ind]) {
+		slot = htab[ind] - /* LINTED */
+			(void *)mdoc_macros;
+		assert(0 == (size_t)slot % sizeof(struct mdoc_macro));
+		slot /= sizeof(struct mdoc_macro);
+		if (SLOTCMP(slot, tmp))
+			return(slot);
+		ind++;
+a84 9
+	if (NULL == htab[ind]) 
+		return(MDOC_MAX);
+	slot = htab[ind] - /* LINTED */
+		(void *)mdoc_macros;
+	assert(0 == (size_t)slot % sizeof(struct mdoc_macro));
+	slot /= sizeof(struct mdoc_macro);
+	if (SLOTCMP(slot, tmp))
+		return(slot);
+
+@
+
+
+1.7
+log
+@Fixed hash assertion.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.6 2009/07/17 10:56:27 kristaps Exp $ */
+d17 2
+@
+
+
+1.6
+log
+@Hash now accepts `br'.  This needs work (way to sparse).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.5 2009/06/16 19:55:28 kristaps Exp $ */
+d130 3
+@
+
+
+1.5
+log
+@Removed MAN___: moved MAN_br to its index (comments not passed into parser).
+Fix: hashtable not fully formed after removal of MDOC___.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.4 2009/06/10 20:18:43 kristaps Exp $ */
+d25 27
+a51 5
+/*
+ * Routines for the perfect-hash hashtable used by the parser to look up
+ * tokens by their string-ified names (`.Fl' -> MDOC_Fl).  The
+ * allocation penalty for this is 27 * 26 * sizeof(ptr). 
+ */
+d61 1
+d68 1
+a68 1
+	htab = calloc(27 * 26 * 3, sizeof(struct mdoc_macro *));
+d74 1
+a74 2
+		assert((major >= 65 && major <= 90) ||
+				major == 37);
+d76 1
+a76 4
+		if (major == 37) 
+			major = 0;
+		else
+			major -= 64;
+d79 1
+a79 10
+		assert((minor >= 65 && minor <= 90) ||
+				(minor == 49) ||
+				(minor >= 97 && minor <= 122));
+
+		if (minor == 49)
+			minor = 0;
+		else if (minor <= 90)
+			minor -= 65;
+		else 
+			minor -= 97;
+d81 1
+a81 2
+		assert(major >= 0 && major < 27);
+		assert(minor >= 0 && minor < 26);
+d83 1
+a83 1
+		ind = (major * 27 * 3) + (minor * 3);
+d112 3
+a114 1
+	if (0 == tmp[0] || 0 == tmp[1])
+d116 1
+d120 1
+a120 1
+	if ( ! (tmp[0] == 37 || (tmp[0] >= 65 && tmp[0] <= 90)))
+d122 1
+a122 4
+
+	if ( ! ((tmp[1] >= 65 && tmp[1] <= 90) ||
+				(tmp[1] == 49) ||
+				(tmp[1] >= 97 && tmp[1] <= 122)))
+d125 2
+a126 4
+	if (tmp[0] == 37)
+		major = 0;
+	else
+		major = tmp[0] - 64;
+d128 1
+a128 10
+	if (tmp[1] == 49)
+		minor = 0;
+	else if (tmp[1] <= 90)
+		minor = tmp[1] - 65;
+	else
+		minor = tmp[1] - 97;
+
+	ind = (major * 27 * 3) + (minor * 3);
+	if (ind < 0 || ind >= (27 * 26 * 3))
+		return(MDOC_MAX);
+d135 1
+a135 4
+		if (mdoc_macronames[slot][0] == tmp[0] && 
+				mdoc_macronames[slot][1] == tmp[1] && 
+				(0 == tmp[2] ||
+				 mdoc_macronames[slot][2] == tmp[2]))
+d145 1
+a145 4
+		if (mdoc_macronames[slot][0] == tmp[0] && 
+				mdoc_macronames[slot][1] == tmp[1] && 
+				(0 == tmp[2] ||
+				 mdoc_macronames[slot][2] == tmp[2]))
+d156 1
+a156 4
+	if (mdoc_macronames[slot][0] == tmp[0] && 
+			mdoc_macronames[slot][1] == tmp[1] && 
+			(0 == tmp[2] ||
+			 mdoc_macronames[slot][2] == tmp[2]))
+@
+
+
+1.4
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.3 2009/04/12 19:45:26 kristaps Exp $ */
+d49 1
+a49 1
+	for (i = 1; i < MDOC_MAX; i++) {
+@
+
+
+1.3
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_hash.c,v 1.2 2009/04/02 06:51:44 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.2
+log
+@mdoc_tokhash -> hash
+Initial man hashtab (BROKEN).
+@
+text
+@d1 1
+a1 1
+/* $Id: mdoc_hash.c,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.1
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.11 2009/03/16 23:37:28 kristaps Exp $ */
+a20 1
+#include <err.h>
+d34 1
+a34 1
+mdoc_tokhash_free(void *htab)
+d42 1
+a42 1
+mdoc_tokhash_alloc(void)
+d49 1
+a49 1
+		err(1, "calloc");
+d97 1
+a97 1
+mdoc_tokhash_find(const void *arg, const char *tmp)
+@

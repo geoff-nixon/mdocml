@@ -1,0 +1,3108 @@
+head	1.118;
+access;
+symbols
+	VERSION_1_13_3:1.111
+	VERSION_1_13_2:1.108
+	VERSION_1_12_4:1.101
+	VERSION_1_13_1:1.101
+	VERSION_1_12_3:1.97
+	VERSION_1_12_2:1.94
+	VERSION_1_12:1.101.0.2
+	VERSION_1_12_1:1.90
+	VERSION_1_12_0:1.88
+	VERSION_1_11_7:1.86
+	VERSION_1_11_6:1.86
+	VERSION_1_11_5:1.86
+	VERSION_1_11_4:1.85
+	VERSION_1_11_3:1.85
+	VERSION_1_11_2:1.80
+	VERSION_1_11_1:1.79
+	VERSION_1_10_10:1.79
+	VERSION_1_10_9:1.79
+	VERSION_1_10_8:1.76
+	VERSION_1_10_7:1.76
+	VERSION_1_10_6:1.76
+	VERSION_1_10_5:1.76
+	VERSION_1_10_5_PREPDF:1.74
+	VERSION_1_10_4:1.73
+	VERSION_1_10_3:1.68
+	VERSION_1_10_2:1.64
+	VERSION_1_10_1:1.58
+	VERSION_1_9_24:1.52
+	VERSION_1_9_25:1.54
+	VERSION_1_9_23:1.52
+	VERSION_1_9_22:1.52
+	VERSION_1_9_21:1.52
+	VERSION_1_9_20:1.52
+	VERSION_1_9_19:1.52
+	VERSION_1_9_18:1.52
+	VERSION_1_9_17:1.52
+	VERSION_1_9_16:1.51
+	VERSION_1_9_15:1.51
+	VERSION_1_9_15-pre2:1.51
+	VERSION_1_9_15-pre1:1.51
+	VERSION_1_9_14:1.51
+	VERSION_1_9_13:1.49
+	VERSION_1_9_12:1.49
+	VERSION_1_9_11:1.49
+	VERSION_1_9_10:1.49
+	VERSION_1_9_9:1.49
+	VERSION_1_9_8:1.47
+	VERSION_1_9_7:1.47
+	VERSION_1_9_6:1.47
+	VERSION_1_9_5:1.47
+	VERSION_1_9_2:1.44
+	VERSION_1_9_1:1.44
+	VERSION_1_9_0:1.44
+	VERSION_1_8_5:1.43
+	VERSION_1_8_4:1.42
+	VERSION_1_8_3:1.41
+	VERSION_1_8_2:1.39
+	VERSION_1_8_1:1.39
+	VERSION_1_8_0:1.38
+	VERSION_1_7_24:1.37
+	VERSION_1_7_23:1.37
+	VERSION_1_7_22:1.37
+	VERSION_1_7_21:1.37
+	VERSION_1_7_20:1.37
+	VERSION_1_7_19:1.37
+	VERSION_1_7_17:1.37
+	VERSION_1_7_16:1.37
+	VERSION_1_7_15:1.37
+	VERSION_1_7_14:1.37
+	VERSION_1_7_13:1.36
+	VERSION_1_7_12:1.34
+	OPENBSD_CHECKIN:1.34
+	VERSION_1_7_10:1.34
+	VERSION_1_7_5:1.34
+	VERSION_1_6_5:1.30
+	VERSION_1_6_2:1.29
+	VERSION_1_5_3:1.25
+	VERSION_1_5_1:1.24
+	VERSION_1_4_6:1.19
+	VERSION_1_4_5:1.19
+	VERSION_1_4_4:1.19
+	VERSION_1_4_2:1.19
+	VERSION_1_3_15:1.12
+	VERSION_1_3_13:1.12
+	VERSION_1_3_11:1.11
+	VERSION_1_3_10:1.11
+	VERSION_1_3_9:1.11
+	VERSION_1_3_8:1.11
+	VERSION_1_3_6:1.11
+	VERSION_1_3_5:1.7;
+locks; strict;
+comment	@ * @;
+
+
+1.118
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2015.09.21.13.25.00;	author schwarze;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2015.07.17.22.38.29;	author schwarze;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2015.04.29.18.35.00;	author schwarze;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2015.04.04.17.47.18;	author schwarze;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2015.04.02.23.48.20;	author schwarze;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2015.01.31.00.12.41;	author schwarze;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2014.12.23.13.48.57;	author schwarze;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2014.12.19.17.12.04;	author schwarze;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2014.12.02.10.08.06;	author schwarze;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2014.12.01.04.05.32;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2014.10.26.17.12.03;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2014.09.17.20.18.58;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2014.09.03.05.22.45;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2014.04.20.16.46.05;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2014.04.08.07.13.12;	author schwarze;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2014.03.30.21.28.01;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2013.12.25.00.39.31;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2013.12.24.23.04.36;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2013.12.22.23.34.13;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2013.08.21.21.20.40;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2013.08.08.20.07.47;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2012.05.31.22.29.13;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2012.05.27.18.02.49;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2011.12.04.23.10.52;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2011.11.13.13.15.14;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2011.09.19.22.36.16;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2011.07.22.10.50.46;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2011.05.20.15.48.22;	author kristaps;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2011.05.17.14.38.34;	author kristaps;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2011.05.15.00.58.48;	author kristaps;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2011.05.14.18.15.20;	author kristaps;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2011.05.14.17.54.42;	author kristaps;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2011.04.29.22.18.12;	author kristaps;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2011.01.05.15.37.23;	author kristaps;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2011.01.03.13.59.21;	author kristaps;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2011.01.02.12.21.07;	author kristaps;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2010.07.25.22.15.07;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2010.07.25.11.44.31;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2010.07.04.19.42.25;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2010.06.30.13.00.00;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2010.06.30.12.30.36;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2010.06.30.12.27.55;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2010.06.30.11.45.21;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2010.06.29.14.18.05;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2010.06.28.23.26.09;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2010.06.27.01.26.20;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2010.06.25.18.53.14;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2010.06.11.16.58.20;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2010.06.11.07.23.04;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2010.06.09.08.07.13;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2010.06.08.15.00.17;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2010.06.08.13.22.37;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2010.06.07.20.57.09;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2010.05.24.21.51.20;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.05.24.21.34.16;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.05.15.16.18.23;	author joerg;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2010.05.12.16.01.01;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2010.05.10.08.05.17;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2010.03.23.12.42.22;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2009.11.12.05.50.13;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2009.11.05.08.40.16;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2009.10.18.19.03.37;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2009.10.18.13.34.17;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2009.09.17.07.41.28;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2009.09.16.09.41.24;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2009.09.15.08.16.20;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2009.08.10.10.09.51;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2009.07.27.12.02.49;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2009.07.24.12.47.35;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2009.07.21.15.33.05;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2009.07.21.13.34.13;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2009.07.19.09.10.42;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2009.07.14.15.16.03;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2009.06.10.20.18.44;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.04.12.19.19.57;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.03.26.14.38.11;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.03.25.21.46.24;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.03.23.15.20.51;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.03.21.09.48.30;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.03.20.15.14.01;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.03.19.16.17.27;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.03.19.11.49.00;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.03.17.13.35.46;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.03.15.10.34.11;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.03.15.07.08.53;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.03.14.12.35.02;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.03.14.05.36.07;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.03.11.00.39.58;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.03.04.14.41.40;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.03.04.14.13.05;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.03.04.13.57.35;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.03.03.22.17.19;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.03.03.21.07.01;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.03.02.17.14.46;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.03.02.12.09.32;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.03.01.13.06.49;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.02.25.23.18.50;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.02.25.17.02.47;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.02.25.15.12.26;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.02.25.13.30.53;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.02.25.12.27.37;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.02.25.12.09.20;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.02.24.16.16.45;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.02.22.19.23.48;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.02.22.15.50.45;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.21.21.00.06;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.21.19.05.28;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.118
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: term.h,v 1.117 2015/10/13 22:59:54 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+enum	termenc {
+	TERMENC_ASCII,
+	TERMENC_LOCALE,
+	TERMENC_UTF8
+};
+
+enum	termtype {
+	TERMTYPE_CHAR,
+	TERMTYPE_PS,
+	TERMTYPE_PDF
+};
+
+enum	termfont {
+	TERMFONT_NONE = 0,
+	TERMFONT_BOLD,
+	TERMFONT_UNDER,
+	TERMFONT_BI,
+	TERMFONT__MAX
+};
+
+#define	TERM_MAXMARGIN	  100000 /* FIXME */
+
+struct	roff_meta;
+struct	termp;
+
+typedef void	(*term_margin)(struct termp *, const struct roff_meta *);
+
+struct	termp_tbl {
+	int		  width;	/* width in fixed chars */
+	int		  decimal;	/* decimal point position */
+};
+
+struct	termp {
+	enum termtype	  type;
+	struct rofftbl	  tbl;		/* table configuration */
+	int		  synopsisonly; /* print the synopsis only */
+	int		  mdocstyle;	/* imitate mdoc(7) output */
+	size_t		  line;		/* Current output line number. */
+	size_t		  defindent;	/* Default indent for text. */
+	size_t		  defrmargin;	/* Right margin of the device. */
+	size_t		  lastrmargin;	/* Right margin before the last ll. */
+	size_t		  rmargin;	/* Current right margin. */
+	size_t		  maxrmargin;	/* Max right margin. */
+	size_t		  maxcols;	/* Max size of buf. */
+	size_t		  offset;	/* Margin offest. */
+	size_t		  tabwidth;	/* Distance of tab positions. */
+	size_t		  col;		/* Bytes in buf. */
+	size_t		  viscol;	/* Chars on current line. */
+	size_t		  trailspace;	/* See termp_flushln(). */
+	int		  overstep;	/* See termp_flushln(). */
+	int		  skipvsp;	/* Vertical space to skip. */
+	int		  flags;
+#define	TERMP_SENTENCE	 (1 << 0)	/* Space before a sentence. */
+#define	TERMP_NOSPACE	 (1 << 1)	/* No space before words. */
+#define	TERMP_NONOSPACE	 (1 << 2)	/* No space (no autounset). */
+#define	TERMP_NBRWORD	 (1 << 3)	/* Make next word nonbreaking. */
+#define	TERMP_KEEP	 (1 << 4)	/* Keep words together. */
+#define	TERMP_PREKEEP	 (1 << 5)	/* ...starting with the next one. */
+#define	TERMP_BACKAFTER	 (1 << 6)	/* Back up after next character. */
+#define	TERMP_BACKBEFORE (1 << 7)	/* Back up before next character. */
+#define	TERMP_NOBREAK	 (1 << 8)	/* See term_flushln(). */
+#define	TERMP_BRTRSP	 (1 << 9)	/* See term_flushln(). */
+#define	TERMP_BRIND	 (1 << 10)	/* See term_flushln(). */
+#define	TERMP_DANGLE	 (1 << 11)	/* See term_flushln(). */
+#define	TERMP_HANG	 (1 << 12)	/* See term_flushln(). */
+#define	TERMP_NOSPLIT	 (1 << 13)	/* Do not break line before .An. */
+#define	TERMP_SPLIT	 (1 << 14)	/* Break line before .An. */
+#define	TERMP_NONEWLINE	 (1 << 15)	/* No line break in nofill mode. */
+	int		 *buf;		/* Output buffer. */
+	enum termenc	  enc;		/* Type of encoding. */
+	enum termfont	  fontl;	/* Last font set. */
+	enum termfont	 *fontq;	/* Symmetric fonts. */
+	int		  fontsz;	/* Allocated size of font stack */
+	int		  fonti;	/* Index of font stack. */
+	term_margin	  headf;	/* invoked to print head */
+	term_margin	  footf;	/* invoked to print foot */
+	void		(*letter)(struct termp *, int);
+	void		(*begin)(struct termp *);
+	void		(*end)(struct termp *);
+	void		(*endline)(struct termp *);
+	void		(*advance)(struct termp *, size_t);
+	void		(*setwidth)(struct termp *, int, int);
+	size_t		(*width)(const struct termp *, int);
+	int		(*hspan)(const struct termp *,
+				const struct roffsu *);
+	const void	 *argf;		/* arg for headf/footf */
+	struct termp_ps	 *ps;
+};
+
+
+struct	tbl_span;
+struct	eqn;
+
+const char	 *ascii_uc2str(int);
+
+void		  term_eqn(struct termp *, const struct eqn *);
+void		  term_tbl(struct termp *, const struct tbl_span *);
+void		  term_free(struct termp *);
+void		  term_newln(struct termp *);
+void		  term_vspace(struct termp *);
+void		  term_word(struct termp *, const char *);
+void		  term_flushln(struct termp *);
+void		  term_begin(struct termp *, term_margin,
+			term_margin, const struct roff_meta *);
+void		  term_end(struct termp *);
+
+void		  term_setwidth(struct termp *, const char *);
+int		  term_hspan(const struct termp *, const struct roffsu *);
+int		  term_vspan(const struct termp *, const struct roffsu *);
+size_t		  term_strlen(const struct termp *, const char *);
+size_t		  term_len(const struct termp *, size_t);
+
+void		  term_fontpush(struct termp *, enum termfont);
+void		  term_fontpop(struct termp *);
+void		  term_fontpopq(struct termp *, int);
+void		  term_fontrepl(struct termp *, enum termfont);
+void		  term_fontlast(struct termp *);
+@
+
+
+1.117
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.116 2015/09/21 13:25:00 schwarze Exp $ */
+a107 1
+__BEGIN_DECLS
+a135 2
+
+__END_DECLS
+@
+
+
+1.116
+log
+@Trailing whitespace is significant when determining the width of a tag
+in mdoc(7) .Bl -tag and man(7) .TP, but not in man(7) .IP.
+Quirk reported by Jan Stary <hans at stare dot cz> on ports@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.115 2015/07/17 22:38:29 schwarze Exp $ */
+a88 1
+	const struct mchars *symtab;	/* Character table. */
+@
+
+
+1.115
+log
+@Initial, still somewhat experimental implementation to leverage
+less(1) -T and :t ctags(1)-like functionality to jump to the
+definitions of various terms inside manual pages.
+To be polished in the tree, so bear with me and report issues.
+
+Technically, if less(1) is used as a pager, information is collected
+by the mdoc(7) terminal formatter, first stored using the ohash
+library, then ultimately written to a temporary file which is passed
+to less via -T.  No change intended for other output formatters or
+when running without a pager.
+
+Based on an idea from Kristaps using feedback from many, in particular
+phessler@@ nicm@@ millert@@ halex@@ doug@@ kspillner@@ deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.114 2015/04/29 18:35:00 schwarze Exp $ */
+d80 7
+a86 6
+#define	TERMP_BRIND	 (1 << 9)	/* See term_flushln(). */
+#define	TERMP_DANGLE	 (1 << 10)	/* See term_flushln(). */
+#define	TERMP_HANG	 (1 << 11)	/* See term_flushln(). */
+#define	TERMP_NOSPLIT	 (1 << 12)	/* Do not break line before .An. */
+#define	TERMP_SPLIT	 (1 << 13)	/* Break line before .An. */
+#define	TERMP_NONEWLINE	 (1 << 14)	/* No line break in nofill mode. */
+@
+
+
+1.114
+log
+@Replace the kludge for the \z escape sequence by an actual
+implementation.  As a side effect, minus ten lines of code.
+
+As another side effect, this also fixes the assertion failure that
+used to be triggered by "\z\o'ab'c" at the beginning of an output
+line, found by jsg@@ with afl (test case 022/Apr27).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.113 2015/04/04 17:47:18 schwarze Exp $ */
+d56 1
+@
+
+
+1.113
+log
+@Rounding rules for horizontal scaling widths are more complicated.
+There is a first rounding to basic units on the input side.
+After that, rounding rules differ between requests and macros.
+Requests round to the nearest possible character position.
+Macros round to the next character position to the left.
+
+Implement that by changing the return value of term_hspan()
+to basic units and leaving the second scaling and rounding stage
+to the formatters instead of doing it in the terminal handler.
+
+Improves for example argtable2(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.112 2015/04/02 23:48:20 schwarze Exp $ */
+d70 8
+a77 7
+#define	TERMP_SENTENCE	 (1 << 1)	/* Space before a sentence. */
+#define	TERMP_NOSPACE	 (1 << 2)	/* No space before words. */
+#define	TERMP_NONOSPACE	 (1 << 3)	/* No space (no autounset). */
+#define	TERMP_NBRWORD	 (1 << 4)	/* Make next word nonbreaking. */
+#define	TERMP_KEEP	 (1 << 5)	/* Keep words together. */
+#define	TERMP_PREKEEP	 (1 << 6)	/* ...starting with the next one. */
+#define	TERMP_SKIPCHAR	 (1 << 7)	/* Skip the next character. */
+@
+
+
+1.112
+log
+@Third step towards parser unification:
+Replace struct mdoc_meta and struct man_meta by a unified struct roff_meta.
+Written of the train from London to Exeter on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.111 2015/01/31 00:12:41 schwarze Exp $ */
+d98 1
+a98 1
+	void		(*setwidth)(struct termp *, int, size_t);
+d100 1
+a100 1
+	double		(*hspan)(const struct termp *,
+@
+
+
+1.111
+log
+@Use relative offsets instead of absolute pointers for the terminal
+font stack.  The latter fail after the stack is grown with realloc().
+Fixing an assertion failure found by jsg@@ with afl some time ago
+(test case number 51).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.110 2014/12/23 13:48:57 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d41 1
+d44 1
+a44 1
+typedef void	(*term_margin)(struct termp *, const void *);
+d121 1
+a121 1
+			term_margin, const void *);
+@
+
+
+1.110
+log
+@support negative horizontal widths in man(7);
+minus twenty lines of code in spite of enhanced functionality
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.109 2014/12/19 17:12:04 schwarze Exp $ */
+a128 1
+const enum termfont *term_fontq(struct termp *);
+d131 1
+a131 1
+void		  term_fontpopq(struct termp *, const enum termfont *);
+@
+
+
+1.109
+log
+@Enforcing an arbitrary, implementation dependent, undocumented limit
+by calling assert() when valid user input exceeds it is a bad idea.
+Allocate the terminal font stack dynamically instead of crashing
+above 10 entries.  Issue found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.108 2014/12/02 10:08:06 schwarze Exp $ */
+d124 2
+a125 4
+size_t		  term_hspan(const struct termp *,
+			const struct roffsu *);
+size_t		  term_vspan(const struct termp *,
+			const struct roffsu *);
+@
+
+
+1.108
+log
+@Fix the implementation and documentation of \c (continue text input line).
+In particular, make it work in no-fill mode, too.
+Reminded by Carsten dot Kunze at arcor dot de (Heirloom roff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.107 2014/12/01 08:05:52 schwarze Exp $ */
+d87 2
+a88 1
+	enum termfont	  fontq[10];	/* Symmetric fonts. */
+d131 1
+a131 2
+enum termfont	  term_fonttop(struct termp *);
+const void	 *term_fontq(struct termp *);
+d134 1
+a134 1
+void		  term_fontpopq(struct termp *, const void *);
+@
+
+
+1.107
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.106 2014/12/01 04:05:32 schwarze Exp $ */
+d82 1
+@
+
+
+1.106
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.105 2014/10/28 17:36:19 schwarze Exp $ */
+a18 4
+__BEGIN_DECLS
+
+struct	termp;
+
+d41 2
+d103 5
+@
+
+
+1.105
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.104 2014/10/26 17:12:03 schwarze Exp $ */
+a17 2
+#ifndef TERM_H
+#define TERM_H
+a134 2
+
+#endif /*!TERM_H*/
+@
+
+
+1.104
+log
+@Improve -Tascii output for Unicode escape sequences: For the first 512
+code points, provide ASCII approximations.  This is already much better
+than what groff does, which prints nothing for most code points.
+
+A few minor fixes while here:
+* Handle Unicode escape sequences in the ASCII range.
+* In case of errors, use the REPLACEMENT CHARACTER U+FFFD for -Tutf8
+and the string "<?>" for -Tascii output.
+* Handle all one-character escape sequences in mchars_spec2{cp,str}()
+and remove the workarounds on the higher level.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.103 2014/09/17 20:18:58 schwarze Exp $ */
+d88 1
+a88 1
+	struct mchars	 *symtab;	/* Encoded-symbol table. */
+@
+
+
+1.103
+log
+@simplify handling of .An -[no]split for terminal output:
+delete one static function, one flag #define, and 25 lines of code;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.102 2014/09/03 05:22:45 schwarze Exp $ */
+d107 2
+@
+
+
+1.102
+log
+@Implement the traditional -h option for man(1): show the SYNOPSIS only.
+As usual, we get mandoc -h and apropos -h for free.
+Try stuff like "apropos -h In=dirent" or "apropos -h Fa=timespec".
+
+Only useful for terminal output, so -Tps, -Tpdf, -Thtml ignore -h for now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.101 2014/04/20 16:46:05 schwarze Exp $ */
+d84 2
+a85 3
+#define	TERMP_NOSPLIT	 (1 << 12)	/* See termp_an_pre/post(). */
+#define	TERMP_SPLIT	 (1 << 13)	/* See termp_an_pre/post(). */
+#define	TERMP_ANPREC	 (1 << 14)	/* See termp_an_pre(). */
+@
+
+
+1.101
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.100 2014/04/08 07:13:12 schwarze Exp $ */
+d57 1
+@
+
+
+1.100
+log
+@Add a new term_flushln() flag TERMP_BRIND (if break, then indent)
+to control indentation of continuation lines in TERMP_NOBREAK mode.
+In the past, this was always on; continue using it
+for .Bl, .Nm, .Fn, .Fo, and .HP, but no longer for .IP and .TP.
+
+I looked at this because sthen@@ reported the issue in a manual
+of a Perl module from ports, but it affects base, too: This patch
+reduces groff-mandoc differences in base by more than 15%.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.99 2014/03/30 21:28:01 schwarze Exp $ */
+d114 1
+a114 1
+void		  term_begin(struct termp *, term_margin, 
+d119 1
+a119 1
+size_t		  term_hspan(const struct termp *, 
+@
+
+
+1.99
+log
+@Support relative arguments to .ll (increase or decrease line length).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.98 2014/03/30 19:47:48 schwarze Exp $ */
+d80 6
+a85 5
+#define	TERMP_DANGLE	 (1 << 9)	/* See term_flushln(). */
+#define	TERMP_HANG	 (1 << 10)	/* See term_flushln(). */
+#define	TERMP_NOSPLIT	 (1 << 11)	/* See termp_an_pre/post(). */
+#define	TERMP_SPLIT	 (1 << 12)	/* See termp_an_pre/post(). */
+#define	TERMP_ANPREC	 (1 << 13)	/* See termp_an_pre(). */
+@
+
+
+1.98
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.97 2013/12/25 00:39:31 schwarze Exp $ */
+d98 1
+a98 1
+	void		(*setwidth)(struct termp *, size_t);
+d117 1
+a117 1
+void		  term_setwidth(struct termp *, size_t);
+@
+
+
+1.97
+log
+@Do not break output lines in .Fn function arguments in SYNOPSIS mode.
+Following an idea from Franco Fichtner, but implemented more cleanly.
+This reduces groff-mandoc-differences in OpenBSD base by a fantastic 7.5%.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.96 2013/12/24 23:04:36 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d60 1
+d98 1
+d117 1
+@
+
+
+1.96
+log
+@Delete the unused flag TERMP_IGNDELIM
+and the empty callback termp_igndelim_pre().
+Sort the remaining termp flags.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.95 2013/12/22 23:34:13 schwarze Exp $ */
+d74 1
+@
+
+
+1.95
+log
+@Polishing the worms in my favourite can, term_flushln().
+
+The TERMP_TWOSPACE flag i introduced in August 2009 was idiosyncratic
+and served only a very narrow purpose.  Replace it by a more intuitive
+and more general termp attribute "trailspace", to be used together
+with TERMP_NOBREAK, to request a minimum amount of whitespace at
+the end of the current column.  Adapt all code to the new interface.
+
+No functional change intended;
+code reviews to confirm that are welcome *eg*.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.94 2013/08/21 21:20:40 schwarze Exp $ */
+d73 7
+a79 5
+#define	TERMP_NOBREAK	 (1 << 4)	/* See term_flushln(). */
+#define	TERMP_IGNDELIM	 (1 << 6)	/* Delims like regulars. */
+#define	TERMP_NONOSPACE	 (1 << 7)	/* No space (no autounset). */
+#define	TERMP_DANGLE	 (1 << 8)	/* See term_flushln(). */
+#define	TERMP_HANG	 (1 << 9)	/* See term_flushln(). */
+a82 3
+#define	TERMP_KEEP	 (1 << 14)	/* Keep words together. */
+#define	TERMP_PREKEEP	 (1 << 15)	/* ...starting with the next one. */
+#define	TERMP_SKIPCHAR	 (1 << 16)	/* Skip the next character. */
+@
+
+
+1.94
+log
+@Move the last column-counting members of struct termp (col and maxcols)
+from int to size_t, to match some existing ones (offset, *rmargin, viscol).
+Move some related local variables from int to size_t as well.
+
+Needed as a preparation to make a generalized adjbuf() function available
+beyond the file term.c, i.e. in mandoc.c.
+Also saves a couple of ugly casts.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.93 2013/08/08 20:07:47 schwarze Exp $ */
+d4 1
+d67 1
+a77 1
+#define	TERMP_TWOSPACE	 (1 << 10)	/* See term_flushln(). */
+@
+
+
+1.93
+log
+@Implement the roff(7) font-escape sequence \f(BI "bold+italic".
+This improves the formatting of about 40 base manuals
+and reduces groff-mandoc formatting differences in base by about 5%.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.92 2012/05/31 22:29:13 schwarze Exp $ */
+d61 1
+a61 1
+	int		  maxcols;	/* Max size of buf. */
+d64 1
+a64 1
+	int		  col;		/* Bytes in buf. */
+@
+
+
+1.92
+log
+@Implement the roff \z escape sequence, intended to output the next
+character without advancing the cursor position; implement it to
+simply skip the next character, as it will usually be overwritten.
+
+With this change, the pod2man(1) preamble user-defined string \*:,
+intended to render as a diaeresis or umlaut diacritic above the
+preceding character, is rendered in a slightly less ugly way,
+though still not correctly.  It was rendered as "z.." and is now
+rendered as ".".
+
+Given that the definition of \*: uses elaborate manual \h positioning,
+there is little chance for mandoc(1) to ever render it correctly,
+but at least we can refrain from printing out a spurious "z", and
+we can make the \z do something semi-reasonable for easier cases.
+
+"just commit" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.91 2012/05/27 18:02:49 schwarze Exp $ */
+d40 1
+@
+
+
+1.91
+log
+@Fix the vertical spacing around tbl(7) instances in man(7).
+
+Groff forces the document author to manually request sufficient spacing
+after .TE - that is, at least .sp 1v after a table with the "box" option
+and at least .sp 2v after a table with the "doublebox" option - or else
+it clobbers the box.  I consider that insane, so i'm not imitating groff
+in that respect.  Instead, i add at least as much vertical space as groff,
+or more where required to avoid clobbering the box.
+
+Consequently, output will be identical for input that looks sane with
+groff, and mandoc will make output look better for input that looks bad
+with groff.
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.90 2011/12/04 23:10:52 schwarze Exp $ */
+d81 1
+@
+
+
+1.90
+log
+@Implement mdoc(7)-like output style variant for man(7) documents:
+* one instead of three blank lines after the page header;
+* one instead of three blank lines before the page footer;
+* source instead of title(section) in the lower right corner.
+Select this style variant with the undocumented command line option -Omdoc.
+In the long run, we hope to unify the ouput of both languages and
+to pull this out again, but that requires coordination with groff.
+
+Grudgingly ok and, (as usual,-) more comments requested by  kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.89 2011/11/13 13:15:14 schwarze Exp $ */
+d66 1
+@
+
+
+1.89
+log
+@Make the default left text margin configurable from the command line,
+just like the default right margin already is.  This may be useful for
+people with expensive screen real estate.  Besides, it helps automated
+man(7) to mdoc(7) output comparisons to validate -Tman output.
+ok kristaps@@ on an earlier version
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.88 2011/09/19 22:36:16 schwarze Exp $ */
+d55 1
+@
+
+
+1.88
+log
+@Remove the terminal frontend flag TERMP_NOLPAD.
+
+In columnated contexts (.Bl -column, .Bl -tag, .IP, .TP, .HP etc.), do not
+pad after writing a column.  Instead, always pad before writing content.
+
+In itself, this change avoids:
+ - writing trailing whitespace in some situations
+ - with .fi/.nf in .HP, breaking lines that were already padded
+
+It allows several bugfixes included in this patch:
+ - Do not count backspace as a character with positive width.
+ - Set up proper indentation when encountering .fi/.nf in .HP.
+ - Adjust the .HP indentation width to what groff does.
+ - Never unlimit the right margin unless in the final column.
+
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.87 2011/09/18 14:14:15 schwarze Exp $ */
+d55 1
+@
+
+
+1.87
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.86 2011/07/22 10:50:46 kristaps Exp $ */
+a66 1
+#define	TERMP_NOLPAD	 (1 << 3)	/* See term_flushln(). */
+@
+
+
+1.86
+log
+@Add character output (-Tpdf, -Tps, -Tascii) for equations.  This is the
+minimum: unseparated terms.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.85 2011/05/20 15:48:22 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.85
+log
+@Flip on -Tutf8 backend support.  This forces the UTF-8 LC_CTYPE and does
+little else.  Also remove the check for __STDC_ISO_10646__.  It turns
+out that very few systems---even those that support it---actually
+declare this and it's just causing problems instead of being useful.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.84 2011/05/17 14:38:34 kristaps Exp $ */
+d99 1
+@
+
+
+1.84
+log
+@Add mode for -Tlocale.  This mode, with this commit, behaves exactly
+like -Tascii.  While adding this, inline term_alloc() (was a one-liner),
+remove some switches around the terminal encoding for the symbol table
+(unnecessary), and split out ascii_alloc() into ascii_init(), which is
+also called from locale_init().
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.83 2011/05/15 00:58:48 kristaps Exp $ */
+d26 2
+a27 1
+	TERMENC_LOCALE
+@
+
+
+1.83
+log
+@Move struct termp_ps into term_ps.c; remove the engine union in struct termp,
+which only held one entry; finally (as per the first), make "ps" member into a
+pointer managed by term_ps.c.  This frees up a nice chunk of memory during
+run-time and in the binary.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.82 2011/05/14 18:15:20 kristaps Exp $ */
+d25 2
+a26 1
+	TERMENC_ASCII
+a97 1
+struct termp	 *term_alloc(enum termenc);
+@
+
+
+1.82
+log
+@Make some values "int" that were "size_t".  These are primarily used for
+indexing into arrays, so this removes lots of casts from size_t to int.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.81 2011/05/14 17:54:42 kristaps Exp $ */
+a44 29
+struct	termp_ps {
+	int		  flags;
+#define	PS_INLINE	 (1 << 0)	/* we're in a word */
+#define	PS_MARGINS	 (1 << 1)	/* we're in the margins */
+#define	PS_NEWPAGE	 (1 << 2)	/* new page, no words yet */
+	size_t		  pscol;	/* visible column (AFM units) */
+	size_t		  psrow;	/* visible row (AFM units) */
+	char		 *psmarg;	/* margin buf */
+	size_t		  psmargsz;	/* margin buf size */
+	size_t		  psmargcur;	/* cur index in margin buf */
+	char		  last;		/* character buffer */
+	enum termfont	  lastf;	/* last set font */
+	size_t		  scale;	/* font scaling factor */
+	size_t		  pages;	/* number of pages shown */
+	size_t		  lineheight;	/* line height (AFM units) */
+	size_t		  top;		/* body top (AFM units) */
+	size_t		  bottom;	/* body bottom (AFM units) */
+	size_t		  height;	/* page height (AFM units */
+	size_t		  width;	/* page width (AFM units) */
+	size_t		  left;		/* body left (AFM units) */
+	size_t		  header;	/* header pos (AFM units) */
+	size_t		  footer;	/* footer pos (AFM units) */
+	size_t		  pdfbytes; 	/* current output byte */
+	size_t		  pdflastpg;	/* byte of last page mark */
+	size_t		  pdfbody;	/* start of body object */
+	size_t		 *pdfobjs;	/* table of object offsets */
+	size_t		  pdfobjsz;	/* size of pdfobjs */
+};
+
+d94 1
+a94 3
+	union {
+		struct termp_ps ps;
+	} engine;
+@
+
+
+1.81
+log
+@Make character engine (-Tascii, -Tpdf, -Tps) ready for Unicode: make buffer
+consist of type "int".  This will take more work (especially in encode and
+friends), but this is a strong start.  This commit also consists of some
+harmless lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.80 2011/04/29 22:18:12 kristaps Exp $ */
+d85 1
+a85 1
+	size_t		  maxcols;	/* Max size of buf. */
+d88 1
+a88 1
+	size_t		  col;		/* Bytes in buf. */
+@
+
+
+1.80
+log
+@Move "chars" interface out of out.h and into mandoc.h.  This doesn't
+change any code but for renaming functions and types to be consistent
+with other mandoc.h stuff.  The reason for moving into libmandoc is that
+the rendering of special characters is part of mandoc itself---not an
+external part.  From mandoc(1)'s perspective, this changes nothing, but
+for other utilities, it's important to have these part of libmandoc.
+Note this isn't documented [yet] in mandoc.3 because there are some
+parts I'd like to change around beforehand.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.79 2011/01/05 15:37:23 kristaps Exp $ */
+d106 1
+a106 1
+	char		 *buf;		/* Output buffer. */
+d114 1
+a114 1
+	void		(*letter)(struct termp *, char);
+d119 1
+a119 1
+	size_t		(*width)(const struct termp *, char);
+@
+
+
+1.79
+log
+@Stuff tbl_calc() into out.c so that it can be shared by all output modes
+(isn't now, but will need to be, used by -T[x]html also).  Necessitated
+a lot of churn in getting tbl_calc* code out of tbl_term.c and into
+out.c, including renaming some structures and so on.  The abstraction is
+in having a pointer to a wrapper function for calculating string widths.
+The char devices use term_strlen and term_len; the others will probably
+just use strlen().
+
+While at it, remove some superfluous assertions in the tbl code.  This
+allows all tbl manuals to clear.
+
+Lastly, set the right-margin to be the maximum margin for each table
+span.  This allows big, complicated tbl-pages like terminfo to be
+displayed.  They're ugly, but they work.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.78 2011/01/03 13:59:21 kristaps Exp $ */
+d108 1
+a108 1
+	void		 *symtab;	/* Encoded-symbol table. */
+@
+
+
+1.78
+log
+@Make width calculations occur within tbl_term.c, not tbl.c.  This allows
+for front-ends to make decisions about widths, not the back-end.
+
+To pull this off, first make each tbl_head contain a unique index value
+(0 <= index < total tbl_head elements) and remove the tbl_calc() routine
+from the back-end.
+
+Then, when encountering the first tbl_span in the front-end, dynamically
+create an array of configurations (termp_tbl) keyed on each tbl_head's
+unique index value.  Construct the decimals and widths at this time,
+then continue parsing as before.
+
+The termp_tbl and indexes are required because we pass a const tbl AST
+into the front-end.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.77 2011/01/02 12:21:07 kristaps Exp $ */
+d81 1
+a81 1
+	struct termp_tbl *tbl;		/* table configuration */
+@
+
+
+1.77
+log
+@Turn on -Tascii tbl printing.  The output still has some issues---I'm
+not sure whether it's in the header calculation or term.c squashing
+spaces or whatever, but let's get this in for general testing as soon as
+possible.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.76 2010/07/25 22:15:07 kristaps Exp $ */
+d74 5
+d81 2
+a82 1
+	size_t		  defrmargin;	/* Right margin of the device.. */
+@
+
+
+1.76
+log
+@Fully-working -Tpdf: xref table is now generated.  This works for both
+single and multiple-manual mode (e.g., mandoc -Tpdf foo.1 bar.1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.75 2010/07/25 11:44:31 kristaps Exp $ */
+d123 1
+@
+
+
+1.75
+log
+@Initial PDF shim over PS.  This produces working PDF output with -Tpdf.
+It's currently missing the xref table, so you'll get a warning in most
+PDF viewers).  It also produces lots of redundant output, which will go
+away once I get a better handle on the PDF spec.  The code doesn't
+really touch any existing functionality; it's a bunch of conditionals
+atop the -Tps (term_ps.c) implementation.  I'm checking it in now to
+have it exist and be auditable.  It needs clean-up, polish, and general
+care (and xref!).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.74 2010/07/13 23:53:20 schwarze Exp $ */
+d67 5
+a71 3
+	size_t		  pdfbytes;
+	size_t		  pdflastpg;
+	size_t		  pdfbody;
+@
+
+
+1.74
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.73 2010/07/04 19:42:25 kristaps Exp $ */
+d30 2
+a31 1
+	TERMTYPE_PS
+d67 3
+@
+
+
+1.73
+log
+@Suppress printing of newlines/space at start of new -Tps page.
+
+Also renamed "psstate" -> "flags" (was wrongly implying some sort of
+state machine).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.72 2010/06/30 13:00:00 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.72
+log
+@PostScript can now handle scaled glyph sizes (see "scale" in struct
+termp_ps) to arbitrarily scale font.  Tested with 10 (default), 12, 14.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.71 2010/06/30 12:30:36 kristaps Exp $ */
+d45 1
+a45 1
+	int		  psstate;	/* state of ps output */
+d48 1
+@
+
+
+1.71
+log
+@Pushed normalisation of scaling units into term_hspan().
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.70 2010/06/30 12:27:55 kristaps Exp $ */
+d55 1
+@
+
+
+1.70
+log
+@Move term_hspan() calculation into the output devices, where it belongs.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.69 2010/06/30 11:45:21 kristaps Exp $ */
+d106 1
+a106 1
+	size_t		(*hspan)(const struct termp *,
+@
+
+
+1.69
+log
+@Push paper calculation out of getsubopt() loop.  Make all points be AFM
+glyph units to make positioning more precise.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.68 2010/06/29 14:18:05 kristaps Exp $ */
+d106 2
+@
+
+
+1.68
+log
+@Give -Tps better PostScript hinting.  Note that we're using Adobe-3.0
+constructs.  Push the stupid CPP defines for page boundaries and margins
+into proper variables.  Give enum termfont a proper TERMFONT__MAX.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.67 2010/06/28 23:26:09 kristaps Exp $ */
+d48 2
+a49 2
+	size_t		  pscol;	/* visible column (points) */
+	size_t		  psrow;	/* visible row (points) */
+d56 8
+a63 8
+	size_t		  lineheight;	/* each line's height (points) */
+	size_t		  top;		/* body top (points) */
+	size_t		  bottom;	/* body bottom (points) */
+	size_t		  height;	/* total height (points) */
+	size_t		  width;	/* total width (points) */
+	size_t		  left;		/* body left (points) */
+	size_t		  header;	/* header position (points) */
+	size_t		  footer;	/* footer position (points) */
+@
+
+
+1.67
+log
+@Clean-up of variable-width glyph support.  Adds no new code; only
+restructured to make a bit more readable.  Also removed an unused entry
+in the PS engine structure.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.66 2010/06/27 01:26:20 schwarze Exp $ */
+d36 2
+a37 1
+	TERMFONT_UNDER
+d48 2
+a49 2
+	size_t		  pscol;	/* visible column */
+	size_t		  psrow;	/* visible row */
+d52 1
+a52 1
+	size_t		  psmargcur;	/* current pos in margin buf */
+d55 9
+@
+
+
+1.66
+log
+@Basic implementation of .Bk/.Ek; from OpenBSD.
+OK and one stylistic tweak by kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.65 2010/06/25 18:53:14 kristaps Exp $ */
+a51 1
+	size_t	 	  pspage;	/* current page */
+@
+
+
+1.65
+log
+@Initial chunks for variable-width fonts.  Pushes all width calculations
+in mdoc_term.c and man_term.c down into term.c.  This is still not
+implemented in term.c, although stubs for width calculations are in
+place.  From now on, offset, rmargin, and other layout variables are
+abstract screen widths.  They will resolve to the the familiar values
+for -Tascii but -Tps will eventually use points instead of chars.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.64 2010/06/19 20:46:28 kristaps Exp $ */
+d81 2
+@
+
+
+1.64
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.63 2010/06/11 16:58:20 kristaps Exp $ */
+d94 1
+d111 6
+a116 2
+size_t		  term_hspan(const struct roffsu *);
+size_t		  term_vspan(const struct roffsu *);
+@
+
+
+1.63
+log
+@Implement font-switching for PostScript.  -Tps now supports
+TERMFONT_BOLD (Courier-Bold) and TERMFONT_UNDER (Courier-Oblique).  It
+doesn't look half bad.  This accomplished through tricksy juggling of
+the one-char back-buffer.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.62 2010/06/11 07:23:04 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.62
+log
+@Teach -Tps to ignore backspace-encoding by using a one-char buffer and a
+simple state machine.  This paves the way for decorated text.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.61 2010/06/09 08:07:13 kristaps Exp $ */
+d54 1
+@
+
+
+1.61
+log
+@Have the standard manpage header and footer print on every page of -Tps
+output.  This is more tricky than you may think:  we can't just call the
+header function out-of-state (i.e., before a flushln has occured)
+because we'd clobber our current state.  Thus, we call at the beginning
+and dump the output into an auxiliary buffer.
+
+For the record, I don't think there's any other clean way to do this.
+The only other Way That Works is to copy-aside *all* termp state, zero
+it, and do the necessary headf/footf.  This is just as complex, as
+memory needs to be alloc'd and free'd per margin.
+
+Unfortunately, this prohibits page numbering (the margin is only printed
+once), so I'll probably end up re-writing this down the line.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.60 2010/06/08 15:00:17 kristaps Exp $ */
+d53 1
+@
+
+
+1.60
+log
+@Broke ascii_*() functions into term_ascii.c
+
+Made low-level engine functions into function pointers.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.59 2010/06/08 13:22:37 kristaps Exp $ */
+d44 9
+a52 6
+	int		  psstate;	/* -Tps: state of ps output */
+#define	PS_INLINE	 (1 << 0)	
+#define	PS_MARGINS	 (1 << 1)	
+	size_t		  pscol;	/* -Tps: visible column */
+	size_t		  psrow;	/* -Tps: visible row */
+	size_t		  pspage;	/* -Tps: current page */
+@
+
+
+1.59
+log
+@No functionality changes: just restructuring.  Deprecated
+terminal_free() in favour of ps_free() and ascii_free().  Moved ps_*()
+functions into term_ps.c so that they don't clutter up term.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.58 2010/06/07 20:57:09 kristaps Exp $ */
+d43 9
+d84 5
+d90 3
+a92 6
+	int		  psstate;	/* -Tps: state of ps output */
+#define	PS_INLINE	 (1 << 0)	
+#define	PS_MARGINS	 (1 << 1)	
+	size_t		  pscol;	/* -Tps: visible column */
+	size_t		  psrow;	/* -Tps: visible row */
+	size_t		  pspage;	/* -Tps: current page */
+@
+
+
+1.58
+log
+@First check-in of PostScript output.  This does not change any logic
+within term.c, but does add a small shim over putchar() that switches on
+the output engine.  Prints, for this initial version, only monospace and
+without font decorations.  It's a start.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.57 2010/05/24 21:51:20 schwarze Exp $ */
+d84 2
+@
+
+
+1.57
+log
+@sync to OpenBSD:
+save the visual cursor position in term_flushln()
+and use that to avoid multiple blank lines in nested lists while
+still putting subsequent empty list tags each on their own line;
+"go ahead" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.56 2010/05/24 21:34:16 schwarze Exp $ */
+d22 2
+d28 5
+d41 2
+d44 1
+d73 9
+d88 3
+@
+
+
+1.56
+log
+@Handle literal tab characters both in literal context (.Bd -literal)
+and outside.  In literal context, tab stops are at each eigth column;
+outside, they are at each fifth column.
+
+from OpenBSD mdoc_term.c rev. 1.75;
+"commit" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.55 2010/05/15 16:18:23 joerg Exp $ */
+d42 1
+@
+
+
+1.55
+log
+@Make the output width an option for ascii_alloc and use that to compute
+the default margin. Hard-code 80 chars/line for now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.54 2010/05/12 16:01:01 kristaps Exp $ */
+d40 1
+@
+
+
+1.54
+log
+@Tiny EOS patch.  Back-end cues front-end through flag.  Front-end cues output engine with flag.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.53 2010/05/10 08:05:17 kristaps Exp $ */
+d35 1
+@
+
+
+1.53
+log
+@-man also now has unbound margins for literal context.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.52 2010/03/23 12:42:22 kristaps Exp $ */
+d42 1
+@
+
+
+1.52
+log
+@Fixed two very subtle bugs in retaining overstep and maxrmargin widths between parse sequences.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.51 2009/11/12 05:50:13 kristaps Exp $ */
+d32 2
+@
+
+
+1.51
+log
+@Basically re-wrote -Tascii font handling: instead of incrementers for
+bold and underline, we use a stack (no cascading, no double-font-mode).
+Font modes with \f only affect the current stack point, as documented in
+mdoc.7 and man.7.  While -mdoc stacks fonts with embedded macros, -man
+replaces them (the stack is always size 1).  This works for all
+invocations in supported systems' manual corpora to date.  It doesn't
+support groff's insanity with line-scoped \f as documented in mdoc.7.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.50 2009/11/05 08:40:16 kristaps Exp $ */
+d38 1
+@
+
+
+1.50
+log
+@Correct support for `\fX' font modes in -Tascii.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.49 2009/10/18 19:03:37 kristaps Exp $ */
+d26 6
+a49 6
+	int		  bold;
+	int		  under;
+	int		  metafont;	/* See do_escaped(). */
+#define	METAF_BOLD	 (1 << 0)
+#define	METAF_UNDER	 (1 << 1)
+	int		  metamask;	/* See do_escaped(). */
+d53 3
+d66 8
+@
+
+
+1.49
+log
+@Made sure devices and formats recognise that -man and -mdoc have different syntax for scaling widths: -mdoc assumes no unit means that the value is a string literal while -man instead uses the default vertical/horizontal scale.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.48 2009/10/18 13:34:17 kristaps Exp $ */
+d46 4
+@
+
+
+1.48
+log
+@Arbitrary horizontal and vertical scaling widths now handled by -mdoc -Tascii.
+Terminal scaling backend pushed into term.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.47 2009/09/17 07:41:28 kristaps Exp $ */
+d56 2
+a57 2
+int		  a2width(const char *);
+int		  a2height(const char *);
+@
+
+
+1.47
+log
+@ascii_xxx -> chars_xxx (intended to hold more than just ascii encoding).
+More html work.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.46 2009/09/16 09:41:24 kristaps Exp $ */
+d56 3
+@
+
+
+1.46
+log
+@Made tree/term/out() functions return void.
+Put err() functions back into front-ends (no use making it needlessly complex).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.45 2009/09/15 08:16:20 kristaps Exp $ */
+a50 5
+void		 *term_ascii2htab(void);
+const char	 *term_a2ascii(void *, const char *, size_t, size_t *);
+const char	 *term_a2res(void *, const char *, size_t, size_t *);
+void		  term_asciifree(void *);
+
+@
+
+
+1.45
+log
+@Removed TERMP_BOLD, TERMP_UNDER, TERMP_STYLE in favour of recursive-friendly increments.
+Cleaned up confusing behaviour of p->flags.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.44 2009/08/10 10:09:51 kristaps Exp $ */
+d23 1
+a23 3
+	TERMENC_ASCII,
+	TERMENC_LATIN1,		/* Not implemented. */
+	TERMENC_UTF8		/* Not implemented. */
+@
+
+
+1.44
+log
+@Moved indentation size into *term.c files.
+Improved handling of libman `IP' macro (still needs work).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.43 2009/07/27 12:02:49 kristaps Exp $ */
+a34 3
+#define	TERMP_STYLE	  0x3		/* Style mask. */
+#define	TERMP_BOLD	 (1 << 0)	/* Styles... */
+#define	TERMP_UNDER	 (1 << 1)
+d46 2
+@
+
+
+1.43
+log
+@Correct handling of \*(xx, \*[xxx], \*x versus \x, \(xx, \([xxx]: predefined strings and escape characters, respectively.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.42 2009/07/24 12:47:35 kristaps Exp $ */
+a19 5
+/* FIXME - clean up tabs. */
+
+#define	INDENT		  5
+#define	HALFINDENT	  3
+
+@
+
+
+1.42
+log
+@Full support for `An -split/-nosplit'.  Compat documented.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.41 2009/07/21 15:33:05 kristaps Exp $ */
+d61 1
+@
+
+
+1.41
+log
+@Fixed transcription error of define values (bah).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.40 2009/07/21 13:34:13 kristaps Exp $ */
+d51 3
+@
+
+
+1.40
+log
+@Bringing spacing more in line with groff, patches from schwarze@@openbsd.org.  Pre-testing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.39 2009/07/19 09:10:42 kristaps Exp $ */
+d50 1
+a50 1
+#define	TERMP_TWOSPACE	 (1 << 9)	/* See term_flushln(). */
+@
+
+
+1.39
+log
+@Removed unused TERMP_LITERAL.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.38 2009/07/14 15:16:03 kristaps Exp $ */
+d50 1
+@
+
+
+1.38
+log
+@Renamed TERMP_NONOSPACE -> TERMP_DANGLE.
+Added TERMP_HANG.
+Reordered TERMP flags to be a little easier on my old eyes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.37 2009/06/10 20:18:44 kristaps Exp $ */
+d44 2
+a45 3
+#define	TERMP_NOLPAD	 (1 << 3)	/* See termp_newline(). */
+#define	TERMP_NOBREAK	 (1 << 4)	/* See termp_newline(). */
+#define	TERMP_LITERAL	 (1 << 5)	/* Literal words. */
+d48 2
+a49 2
+#define	TERMP_DANGLE	 (1 << 8)	/* See termp_newline(). */
+#define	TERMP_HANG	 (1 << 9)	/* See termp_newline(). */
+@
+
+
+1.37
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.36 2009/04/12 19:45:26 kristaps Exp $ */
+d40 11
+a50 10
+#define	TERMP_NOSPACE	 (1 << 0)	/* No space before words. */
+#define	TERMP_NOLPAD	 (1 << 1)	/* No leftpad before flush. */
+#define	TERMP_NOBREAK	 (1 << 2)	/* No break after flush. */
+#define	TERMP_LITERAL	 (1 << 3)	/* Literal words. */
+#define	TERMP_IGNDELIM	 (1 << 4)	/* Delims like regulars. */
+#define	TERMP_NONOSPACE	 (1 << 5)	/* No space (no autounset). */
+#define	TERMP_NONOBREAK	 (1 << 7)	/* Don't newln NOBREAK. */
+#define	TERMP_STYLE	  0x0300	/* Style mask. */
+#define	TERMP_BOLD	 (1 << 8)	/* Styles... */
+#define	TERMP_UNDER	 (1 << 9)
+@
+
+
+1.36
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.35 2009/04/12 19:19:57 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.35
+log
+@Manual .Dt fields CAPITALISED.
+Indent set to 5 chars (nroff compat).
+Half-indent set to 3 chars (nroff compat).
+Default behaviour is loose-y (ignore macro/char/escape).
+Added -fstrict.
+Added unknown-character ignoring.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.34 2009/03/26 14:38:11 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.34
+log
+@Initial front-end formatting for -man pages.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.33 2009/03/25 21:46:24 kristaps Exp $ */
+d24 2
+a25 1
+#define	INDENT		  6
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.32 2009/03/23 15:20:51 kristaps Exp $ */
+a21 3
+#include "mdoc.h"
+#include "man.h"
+
+a55 29
+/* XXX - clean this up. */
+
+struct	termpair {
+	struct termpair	 *ppair;
+	int		  type;
+#define	TERMPAIR_FLAG	 (1 << 0)
+	int	  	  flag;
+	size_t	  	  offset;
+	size_t	  	  rmargin;
+	int		  count;
+};
+
+#define	TERMPAIR_SETFLAG(termp, p, fl) \
+	do { \
+		assert(! (TERMPAIR_FLAG & (p)->type)); \
+		(termp)->flags |= (fl); \
+		(p)->flag = (fl); \
+		(p)->type |= TERMPAIR_FLAG; \
+	} while ( /* CONSTCOND */ 0)
+
+struct	termact {
+	int	(*pre)(struct termp *, struct termpair *,
+			const struct mdoc_meta *,
+			const struct mdoc_node *);
+	void	(*post)(struct termp *, struct termpair *,
+			const struct mdoc_meta *,
+			const struct mdoc_node *);
+};
+
+a63 5
+void	  	  term_node(struct termp *, struct termpair *,
+			const struct mdoc_meta *,
+			const struct mdoc_node *);
+
+const	struct termact 	 *termacts;
+@
+
+
+1.32
+log
+@-man printing linked to -Ttree.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.31 2009/03/23 14:22:11 kristaps Exp $ */
+d33 2
+a34 2
+	TERMENC_LATIN1,
+	TERMENC_UTF8
+@
+
+
+1.31
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.30 2009/03/21 09:48:30 kristaps Exp $ */
+d23 1
+@
+
+
+1.30
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.29 2009/03/20 15:14:01 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.29
+log
+@Support for `Bd' of all types (see mdoc.7 for newline/tab rules).
+Renamed term.c and terminal.c functions to be term_.
+Some bugfixes to lists.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.28 2009/03/19 16:17:27 kristaps Exp $ */
+d76 1
+a76 1
+	} while (0)
+@
+
+
+1.28
+log
+@Split mdocterm.c -> main.c terminal.c.
+Abstracted output with -T selector (default ascii).
+Name change: mdocterm -> mandoc.
+Re-imported tree with -Ttree.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.27 2009/03/19 11:49:00 kristaps Exp $ */
+d87 11
+a97 11
+void		 *ascii2htab(void);
+const char	 *a2ascii(void *, const char *, size_t, size_t *);
+void		  asciifree(void *);
+
+void		  newln(struct termp *);
+void		  vspace(struct termp *);
+void		  word(struct termp *, const char *);
+void		  flushln(struct termp *);
+void		  transcode(struct termp *, const char *, size_t);
+void		  subtree(struct termp *, const struct mdoc_meta *, 
+			const struct mdoc_node *); 
+@
+
+
+1.27
+log
+@Many more ASCII escapes added.
+Stripped nroff punt from mdocterm.c.
+Fixed multiple-file handling for mdocterm.c.
+Cleared up mdoc.h API.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.26 2009/03/17 13:35:46 kristaps Exp $ */
+d30 6
+d54 1
+@
+
+
+1.26
+log
+@Clean up ASCII table's memory.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.25 2009/03/16 22:19:19 kristaps Exp $ */
+d24 1
+a24 1
+/* XXX - clean up tabs. */
+d31 5
+a35 7
+	size_t		  rmargin;
+	size_t		  maxrmargin;
+	size_t		  maxcols;
+	size_t		  offset;
+	size_t		  col;
+	int		  iflags;
+#define	TERMP_NOPUNT	 (1 << 0)
+d44 1
+a44 1
+#define	TERMP_STYLE	 0x0300		/* Style mask. */
+d47 2
+a48 2
+	char		 *buf;
+	void		 *symtab;
+@
+
+
+1.25
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.24 2009/03/15 10:34:11 kristaps Exp $ */
+d84 1
+@
+
+
+1.24
+log
+@Backed out all ANSI code.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.23 2009/03/15 07:08:53 kristaps Exp $ */
+d24 2
+a29 50
+enum	tsym {
+	TERMSYM_RBRACK = 	0,
+	TERMSYM_LBRACK = 	1,
+	TERMSYM_LARROW = 	2,
+	TERMSYM_RARROW = 	3,
+	TERMSYM_UARROW = 	4,
+	TERMSYM_DARROW = 	5,
+	TERMSYM_LSQUOTE = 	6,
+	TERMSYM_RSQUOTE = 	7,
+	TERMSYM_SQUOTE = 	8,
+	TERMSYM_LDQUOTE = 	9,
+	TERMSYM_RDQUOTE = 	10,
+	TERMSYM_DQUOTE = 	11,
+	TERMSYM_LT = 		12,
+	TERMSYM_GT = 		13,
+	TERMSYM_LE = 		14,
+	TERMSYM_GE = 		15,
+	TERMSYM_EQ = 		16,
+	TERMSYM_NEQ = 		17,
+	TERMSYM_ACUTE = 	18,
+	TERMSYM_GRAVE = 	19,
+	TERMSYM_PI = 		20,
+	TERMSYM_PLUSMINUS = 	21,
+	TERMSYM_INF = 		22,
+	TERMSYM_INF2 = 		23,
+	TERMSYM_NAN = 		24,
+	TERMSYM_BAR = 		25,
+	TERMSYM_BULLET = 	26,
+	TERMSYM_AMP = 		27,
+	TERMSYM_EM = 		28,
+	TERMSYM_EN = 		29,
+	TERMSYM_COPY = 		30,
+	TERMSYM_ASTERISK =	31,
+	TERMSYM_SLASH =		32,
+	TERMSYM_HYPHEN =	33,
+	TERMSYM_SPACE =		34,
+	TERMSYM_PERIOD =	35,
+	TERMSYM_BREAK =		36,
+	TERMSYM_LANGLE =	37,
+	TERMSYM_RANGLE =	38,
+	TERMSYM_LBRACE =	39,
+	TERMSYM_RBRACE =	40,
+	TERMSYM_MAX = 		41
+};
+
+struct	termsym {
+	const char	 *sym;
+	size_t		  sz;
+};
+
+d50 1
+a50 1
+	struct termsym	 *symtab;	/* Special-symbol table. */
+d53 2
+d74 6
+a79 8
+	int		(*pre)(struct termp *,
+				struct termpair *,
+				const struct mdoc_meta *,
+				const struct mdoc_node *);
+	void		(*post)(struct termp *,
+				struct termpair *,
+				const struct mdoc_meta *,
+				const struct mdoc_node *);
+d82 2
+a83 9
+void			  newln(struct termp *);
+void			  vspace(struct termp *);
+void			  word(struct termp *, const char *);
+void			  flushln(struct termp *);
+void			  transcode(struct termp *, 
+				const char *, size_t);
+void			  subtree(struct termp *,
+				const struct mdoc_meta *,
+				const struct mdoc_node *);
+d85 7
+@
+
+
+1.23
+log
+@mdoclint accepts multiple files
+mdocterm punts to nroff if it fails parsing
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.22 2009/03/14 12:35:02 kristaps Exp $ */
+a72 5
+enum	termenc {
+	TERMENC_ANSI,
+	TERMENC_NROFF
+};
+
+d94 1
+a94 1
+#define	TERMP_STYLE	 0xff00		/* Style mask. */
+a96 6
+#define	TERMP_BLUE	 (1 << 10)
+#define	TERMP_RED	 (1 << 11)
+#define	TERMP_YELLOW	 (1 << 12)
+#define	TERMP_MAGENTA	 (1 << 13)
+#define	TERMP_CYAN	 (1 << 14)
+#define	TERMP_GREEN	 (1 << 15)
+a98 1
+	enum termenc	  enc;		/* Encoding. */
+@
+
+
+1.22
+log
+@Added colour styles (not being used) to struct termp.
+Added nroff style-escape encoding.
+Removed ANSI schema string tables (there's only ANSI and nroff/backspace).
+Pushed styling directly into pword (simpler).
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.21 2009/03/14 05:36:07 kristaps Exp $ */
+d89 2
+a98 1
+
+@
+
+
+1.21
+log
+@Bumped version.
+Added \| (non-breaking space, like \&).
+Fixed termsym (TERMSYM_ALL).
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.20 2009/03/11 00:39:58 kristaps Exp $ */
+d73 3
+a75 6
+
+enum	tstyle {
+	TERMSTYLE_CLEAR	=	0,
+	TERMSTYLE_BOLD =	1,
+	TERMSTYLE_UNDER =	2,
+	TERMSTYLE_MAX =		3
+d90 17
+a106 9
+#define	TERMP_BOLD	 (1 << 0)	/* Embolden words. */
+#define	TERMP_UNDERLINE	 (1 << 1)	/* Underline words. */
+#define	TERMP_NOSPACE	 (1 << 2)	/* No space before words. */
+#define	TERMP_NOLPAD	 (1 << 3)	/* No leftpad before flush. */
+#define	TERMP_NOBREAK	 (1 << 4)	/* No break after flush. */
+#define	TERMP_LITERAL	 (1 << 5)	/* Literal words. */
+#define	TERMP_IGNDELIM	 (1 << 6)	/* Delims like regulars. */
+#define	TERMP_NONOSPACE	 (1 << 7)	/* No space (no autounset). */
+#define	TERMP_NONOBREAK	 (1 << 8)
+d109 1
+a109 1
+	struct termsym	 *styletab;	/* Style table. */
+@
+
+
+1.20
+log
+@Expanded perfect htab to use 27 * 26 * 3 space.
+Added Brq, Bro and Brc macros.
+Added lbrace and rbrace to special characters.
+Fixed spacing in braces.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.19 2009/03/04 14:41:40 kristaps Exp $ */
+d69 2
+a70 1
+	TERMSYM_RBRACE =	40
+@
+
+
+1.19
+log
+@-tag, if followed by empty body, doesn't newline.
+Versioning up.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.18 2009/03/04 14:13:05 kristaps Exp $ */
+d67 3
+a69 1
+	TERMSYM_RANGLE =	38
+@
+
+
+1.18
+log
+@Fixed some character-escapes.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.17 2009/03/04 13:57:35 kristaps Exp $ */
+d98 1
+@
+
+
+1.17
+log
+@Considerably cleaned up list handling.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.16 2009/03/03 22:17:19 kristaps Exp $ */
+d65 3
+a67 1
+	TERMSYM_BREAK =		36
+@
+
+
+1.16
+log
+@-inset and -diag lists now supported.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.15 2009/03/03 21:07:01 kristaps Exp $ */
+a95 2
+#define	TERMP_NORPAD	 (1 << 8)	/* No rightpad. */
+#define	TERMP_NOINSET	 (1 << 9)	/* If NOBREAK, no inset. */
+@
+
+
+1.15
+log
+@Character-escape addition simplified (see README.addescape, also added).
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.14 2009/03/02 17:14:46 kristaps Exp $ */
+d96 2
+@
+
+
+1.14
+log
+@Added new old escape sequence \*[nn].
+Initial correct .Bd support (still only text in literal displays).
+Symbols put into tables (character-encoding).
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.13 2009/03/02 12:09:32 kristaps Exp $ */
+d57 9
+@
+
+
+1.13
+log
+@Support for maxrmargin-breaking with TERMP_NOBREAK.
+Tabs auto-converted to spaces.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.12 2009/03/01 13:06:49 kristaps Exp $ */
+d28 44
+d88 2
+a126 1
+
+d131 1
+@
+
+
+1.12
+log
+@Fixed TERMP_NOBREAK and line overruns.
+Fixed TERMP_SETFLAGS and current-flag omission.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.11 2009/02/25 23:18:50 kristaps Exp $ */
+d24 2
+@
+
+
+1.11
+log
+@More list work.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.10 2009/02/25 17:02:47 kristaps Exp $ */
+a40 1
+#define	TERMP_NORPAD	 (1 << 8)	/* No rightpad. */
+d54 1
+a54 1
+#define	TERMPAIR_SETFLAG(p, fl) \
+d57 1
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.9 2009/02/25 15:12:26 kristaps Exp $ */
+d41 1
+@
+
+
+1.9
+log
+@Added [almost] all list types.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.8 2009/02/25 13:30:53 kristaps Exp $ */
+d40 1
+@
+
+
+1.8
+log
+@Support for nested lists added.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.7 2009/02/25 12:27:37 kristaps Exp $ */
+d44 1
+d50 1
+@
+
+
+1.7
+log
+@Some offsets built into termpair.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.6 2009/02/25 12:09:20 kristaps Exp $ */
+d48 1
+@
+
+
+1.6
+log
+@Added "termpair" for symmetric flag-setting.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.5 2009/02/24 16:16:45 kristaps Exp $ */
+d46 2
+a47 3
+	union {
+		int	  flag;
+	} data;
+d52 3
+a54 2
+		(p)->data.flag = (fl); \
+		(p)->type = TERMPAIR_FLAG; \
+@
+
+
+1.5
+log
+@Raft of mdocterm callbacks in place.
+Fixed Fo/Fc handling in validate/mdocterm.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.4 2009/02/22 19:23:48 kristaps Exp $ */
+d43 14
+d59 1
+d63 1
+@
+
+
+1.4
+log
+@Fixed `.Pf' handling.
+System now supports all mdocml manual pages.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.3 2009/02/22 15:50:45 kristaps Exp $ */
+a51 3
+void			  termprint(const struct mdoc_node *,
+				const struct mdoc_meta *);
+
+d59 4
+@
+
+
+1.3
+log
+@Initial block-display support.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.2 2009/02/21 21:00:06 kristaps Exp $ */
+d39 1
+@
+
+
+1.2
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.h,v 1.1 2009/02/21 19:05:28 kristaps Exp $ */
+d38 1
+@
+
+
+1.1
+log
+@Split down term.c into term.h, termact.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.c,v 1.4 2009/02/21 15:34:46 kristaps Exp $ */
+d45 1
+a45 1
+	int		(*post)(struct termp *,
+d50 3
+d57 2
+@

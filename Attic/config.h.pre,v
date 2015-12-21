@@ -1,0 +1,178 @@
+head	1.7;
+access;
+symbols
+	VERSION_1_12_4:1.6
+	VERSION_1_13_1:1.4
+	VERSION_1_12_3:1.2
+	VERSION_1_12_2:1.2
+	VERSION_1_12:1.6.0.2
+	VERSION_1_12_1:1.2
+	VERSION_1_12_0:1.1
+	VERSION_1_11_7:1.1
+	VERSION_1_11_6:1.1
+	VERSION_1_11_5:1.1
+	VERSION_1_11_4:1.1
+	VERSION_1_11_3:1.1
+	VERSION_1_11_2:1.1
+	VERSION_1_11_1:1.1
+	VERSION_1_10_10:1.1
+	VERSION_1_10_9:1.1
+	VERSION_1_10_8:1.1
+	VERSION_1_10_7:1.1
+	VERSION_1_10_6:1.1
+	VERSION_1_10_5:1.1
+	VERSION_1_10_5_PREPDF:1.1
+	VERSION_1_10_4:1.1
+	VERSION_1_10_3:1.1
+	VERSION_1_10_2:1.1
+	VERSION_1_10_1:1.1
+	VERSION_1_9_24:1.1
+	VERSION_1_9_25:1.1
+	VERSION_1_9_23:1.1
+	VERSION_1_9_22:1.1
+	VERSION_1_9_21:1.1
+	VERSION_1_9_20:1.1
+	VERSION_1_9_19:1.1
+	VERSION_1_9_18:1.1
+	VERSION_1_9_17:1.1
+	VERSION_1_9_16:1.1
+	VERSION_1_9_15:1.1
+	VERSION_1_9_15-pre2:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.7
+date	2014.08.16.19.00.01;	author schwarze;	state dead;
+branches;
+next	1.6;
+
+1.6
+date	2014.08.11.02.21.27;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2014.08.05.16.03.03;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.01.04.13.40.01;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.12.13.11.26.12;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.01.01.17.14.27;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@@
+
+
+1.6
+log
+@revert previous; i missed that config.h needs sys/types.h and stdio.h
+for itself because it uses size_t and FILE...
+@
+text
+@a0 9
+#ifndef	MANDOC_CONFIG_H
+#define	MANDOC_CONFIG_H
+
+#if defined(__linux__) || defined(__MINT__)
+# define _GNU_SOURCE /* getsubopt(), strcasestr(), strptime() */
+#endif
+
+#include <sys/types.h>
+#include <stdio.h>
+@
+
+
+1.5
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d7 3
+@
+
+
+1.4
+log
+@strcasestr() wants _GNU_SOURCE on Linux
+@
+text
+@a6 3
+
+#include <sys/types.h>
+#include <stdio.h>
+@
+
+
+1.3
+log
+@Even though strnlen(3) is required by POSIX 2008,
+Matthias Scheler reports than Solaris 10 lacks it.
+While here, sort the declarations in config.h
+and move the headers to the top.
+@
+text
+@d5 1
+a5 1
+# define _GNU_SOURCE /* strptime(), getsubopt() */
+@
+
+
+1.2
+log
+@Compatibility support fgetln() on Linux.  This uses the BSD-licensed
+implementation from NetBSD tnftpd, Christos Zoulas (copyright message
+retained in the compat_fgetln.c file).  Patch verified by schwarze@@.  He
+notes that you'll need -pthread for -static binaries (due to libdb), so
+I've noted that -static should really only be used for BSD UNIX.
+
+While here, add some forgotten goop to the Makefile, building and
+cleaning extra manpages.
+@
+text
+@d8 1
+@
+
+
+1.1
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d7 2
+@

@@ -1,0 +1,2662 @@
+head	1.68;
+access;
+symbols
+	VERSION_1_13_3:1.66
+	VERSION_1_13_2:1.65
+	VERSION_1_12_4:1.59
+	VERSION_1_13_1:1.58
+	VERSION_1_12_3:1.54
+	VERSION_1_12_2:1.54
+	VERSION_1_12:1.59.0.2
+	VERSION_1_12_1:1.52
+	VERSION_1_12_0:1.51
+	VERSION_1_11_7:1.50
+	VERSION_1_11_6:1.50
+	VERSION_1_11_5:1.49
+	VERSION_1_11_4:1.47
+	VERSION_1_11_3:1.46
+	VERSION_1_11_2:1.40
+	VERSION_1_11_1:1.34
+	VERSION_1_10_10:1.33
+	VERSION_1_10_9:1.31
+	VERSION_1_10_8:1.30
+	VERSION_1_10_7:1.30
+	VERSION_1_10_6:1.30
+	VERSION_1_10_5:1.24
+	VERSION_1_10_5_PREPDF:1.23
+	VERSION_1_10_4:1.20
+	VERSION_1_10_3:1.20
+	VERSION_1_10_2:1.20
+	VERSION_1_10_1:1.19
+	VERSION_1_9_24:1.17
+	VERSION_1_9_25:1.17
+	VERSION_1_9_23:1.17
+	VERSION_1_9_22:1.17
+	VERSION_1_9_21:1.17
+	VERSION_1_9_20:1.17
+	VERSION_1_9_19:1.17
+	VERSION_1_9_18:1.17
+	VERSION_1_9_17:1.17
+	VERSION_1_9_16:1.16
+	VERSION_1_9_15:1.16
+	VERSION_1_9_15-pre2:1.14
+	VERSION_1_9_15-pre1:1.13
+	VERSION_1_9_14:1.13
+	VERSION_1_9_13:1.12
+	VERSION_1_9_12:1.11
+	VERSION_1_9_11:1.9
+	VERSION_1_9_10:1.9
+	VERSION_1_9_9:1.9
+	VERSION_1_9_8:1.9
+	VERSION_1_9_7:1.9
+	VERSION_1_9_6:1.9
+	VERSION_1_9_5:1.2;
+locks; strict;
+comment	@ * @;
+
+
+1.68
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2015.02.17.20.37.16;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2014.10.29.00.17.43;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2014.10.28.13.24.44;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2014.10.27.13.31.04;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2014.10.26.18.07.28;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2014.10.26.17.12.03;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2014.07.23.15.00.08;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2014.03.23.11.25.25;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2014.01.22.20.58.39;	author schwarze;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2013.06.20.22.39.30;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2013.05.18.16.40.15;	author schwarze;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2011.11.08.00.15.23;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2011.07.31.11.24.39;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2011.07.22.14.15.15;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2011.07.21.15.21.13;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2011.07.07.06.41.50;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2011.05.24.21.31.23;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2011.05.24.21.24.16;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2011.05.17.11.50.20;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2011.05.15.22.29.50;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2011.05.15.15.47.46;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2011.05.14.17.54.42;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2011.05.01.08.38.56;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2011.04.30.22.24.31;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2011.04.30.22.14.42;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2011.04.30.22.14.02;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2011.04.29.22.18.12;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2011.04.20.22.50.22;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2011.03.22.10.13.01;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2011.03.17.08.49.34;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2011.01.30.16.05.37;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2011.01.02.10.10.57;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.09.15.13.10.30;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.09.04.20.18.53;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.08.29.11.36.49;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.08.16.09.51.17;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.07.31.23.52.58;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.07.26.13.59.00;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.07.18.12.10.08;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.07.17.09.21.39;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.07.16.22.33.30;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.06.19.20.46.27;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.06.01.11.47.28;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.05.25.12.37.20;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.03.23.13.25.01;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.01.28.06.04.59;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.01.05.19.51.10;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.01.01.17.14.26;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.11.05.07.21.01;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.11.01.07.44.32;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.10.31.06.10.57;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.10.30.18.43.24;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.09.23.11.02.21;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.09.23.09.06.44;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.09.23.01.04.11;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.09.23.00.03.45;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.09.22.23.34.14;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.09.22.23.15.58;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.09.22.10.07.01;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.09.17.08.21.42;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.09.17.07.41.28;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.68
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@/*	$Id: chars.c,v 1.67 2015/10/06 18:32:19 schwarze Exp $ */
+/*
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2011, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "mandoc.h"
+#include "mandoc_aux.h"
+#include "mandoc_ohash.h"
+#include "libmandoc.h"
+
+struct	ln {
+	const char	  roffcode[16];
+	const char	 *ascii;
+	int		  unicode;
+};
+
+/* Special break control characters. */
+static const char ascii_nbrsp[2] = { ASCII_NBRSP, '\0' };
+static const char ascii_break[2] = { ASCII_BREAK, '\0' };
+
+static struct ln lines[] = {
+
+	/* Spacing. */
+	{ " ",			ascii_nbrsp,	0x00a0	},
+	{ "~",			ascii_nbrsp,	0x00a0	},
+	{ "0",			" ",		0x2002	},
+	{ "|",			"",		0	},
+	{ "^",			"",		0	},
+	{ "&",			"",		0	},
+	{ "%",			"",		0	},
+	{ ":",			ascii_break,	0	},
+	/* XXX The following three do not really belong here. */
+	{ "t",			"",		0	},
+	{ "c",			"",		0	},
+	{ "}",			"",		0	},
+
+	/* Lines. */
+	{ "ba",			"|",		0x007c	},
+	{ "br",			"|",		0x2502	},
+	{ "ul",			"_",		0x005f	},
+	{ "rn",			"-",		0x203e	},
+	{ "bb",			"|",		0x00a6	},
+	{ "sl",			"/",		0x002f	},
+	{ "rs",			"\\",		0x005c	},
+
+	/* Text markers. */
+	{ "ci",			"O",		0x25cb	},
+	{ "bu",			"+\bo",		0x2022	},
+	{ "dd",			"|\b=",		0x2021	},
+	{ "dg",			"|\b-",		0x2020	},
+	{ "lz",			"<>",		0x25ca	},
+	{ "sq",			"[]",		0x25a1	},
+	{ "ps",			"<par>",	0x00b6	},
+	{ "sc",			"<sec>",	0x00a7	},
+	{ "lh",			"<=",		0x261c	},
+	{ "rh",			"=>",		0x261e	},
+	{ "at",			"@@",		0x0040	},
+	{ "sh",			"#",		0x0023	},
+	{ "CR",			"_|",		0x21b5	},
+	{ "OK",			"\\/",		0x2713	},
+
+	/* Legal symbols. */
+	{ "co",			"(C)",		0x00a9	},
+	{ "rg",			"(R)",		0x00ae	},
+	{ "tm",			"tm",		0x2122	},
+
+	/* Punctuation. */
+	{ "em",			"--",		0x2014	},
+	{ "en",			"-",		0x2013	},
+	{ "hy",			"-",		0x2010	},
+	{ "e",			"\\",		0x005c	},
+	{ ".",			".",		0x002e	},
+	{ "r!",			"!",		0x00a1	},
+	{ "r?",			"?",		0x00bf	},
+
+	/* Quotes. */
+	{ "Bq",			",,",		0x201e	},
+	{ "bq",			",",		0x201a	},
+	{ "lq",			"\"",		0x201c	},
+	{ "rq",			"\"",		0x201d	},
+	{ "Lq",			"``",		0x201c	},
+	{ "Rq",			"''",		0x201d	},
+	{ "oq",			"`",		0x2018	},
+	{ "cq",			"\'",		0x2019	},
+	{ "aq",			"\'",		0x0027	},
+	{ "dq",			"\"",		0x0022	},
+	{ "Fo",			"<<",		0x00ab	},
+	{ "Fc",			">>",		0x00bb	},
+	{ "fo",			"<",		0x2039	},
+	{ "fc",			">",		0x203a	},
+
+	/* Brackets. */
+	{ "lB",			"[",		0x005b	},
+	{ "rB",			"]",		0x005d	},
+	{ "lC",			"{",		0x007b	},
+	{ "rC",			"}",		0x007d	},
+	{ "la",			"<",		0x27e8	},
+	{ "ra",			">",		0x27e9	},
+	{ "bv",			"|",		0x23aa	},
+	{ "braceex",		"|",		0x23aa	},
+	{ "bracketlefttp",	"|",		0x23a1	},
+	{ "bracketleftbt",	"|",		0x23a3	},
+	{ "bracketleftex",	"|",		0x23a2	},
+	{ "bracketrighttp",	"|",		0x23a4	},
+	{ "bracketrightbt",	"|",		0x23a6	},
+	{ "bracketrightex",	"|",		0x23a5	},
+	{ "lt",			",-",		0x23a7	},
+	{ "bracelefttp",	",-",		0x23a7	},
+	{ "lk",			"{",		0x23a8	},
+	{ "braceleftmid",	"{",		0x23a8	},
+	{ "lb",			"`-",		0x23a9	},
+	{ "braceleftbt",	"`-",		0x23a9	},
+	{ "braceleftex",	"|",		0x23aa	},
+	{ "rt",			"-.",		0x23ab	},
+	{ "bracerighttp",	"-.",		0x23ab	},
+	{ "rk",			"}",		0x23ac	},
+	{ "bracerightmid",	"}",		0x23ac	},
+	{ "rb",			"-\'",		0x23ad	},
+	{ "bracerightbt",	"-\'",		0x23ad	},
+	{ "bracerightex",	"|",		0x23aa	},
+	{ "parenlefttp",	"/",		0x239b	},
+	{ "parenleftbt",	"\\",		0x239d	},
+	{ "parenleftex",	"|",		0x239c	},
+	{ "parenrighttp",	"\\",		0x239e	},
+	{ "parenrightbt",	"/",		0x23a0	},
+	{ "parenrightex",	"|",		0x239f	},
+
+	/* Arrows and lines. */
+	{ "<-",			"<-",		0x2190	},
+	{ "->",			"->",		0x2192	},
+	{ "<>",			"<->",		0x2194	},
+	{ "da",			"|\bv",		0x2193	},
+	{ "ua",			"|\b^",		0x2191	},
+	{ "va",			"^v",		0x2195	},
+	{ "lA",			"<=",		0x21d0	},
+	{ "rA",			"=>",		0x21d2	},
+	{ "hA",			"<=>",		0x21d4	},
+	{ "uA",			"=\b^",		0x21d1	},
+	{ "dA",			"=\bv",		0x21d3	},
+	{ "vA",			"^=v",		0x21d5	},
+
+	/* Logic. */
+	{ "AN",			"^",		0x2227	},
+	{ "OR",			"v",		0x2228	},
+	{ "no",			"~",		0x00ac	},
+	{ "tno",		"~",		0x00ac	},
+	{ "te",			"3",		0x2203	},
+	{ "fa",			"-\bV",		0x2200	},
+	{ "st",			"-)",		0x220b	},
+	{ "tf",			".:.",		0x2234	},
+	{ "3d",			".:.",		0x2234	},
+	{ "or",			"|",		0x007c	},
+
+	/* Mathematicals. */
+	{ "pl",			"+",		0x002b	},
+	{ "mi",			"-",		0x2212	},
+	{ "-",			"-",		0x002d	},
+	{ "-+",			"-+",		0x2213	},
+	{ "+-",			"+-",		0x00b1	},
+	{ "t+-",		"+-",		0x00b1	},
+	{ "pc",			".",		0x00b7	},
+	{ "md",			".",		0x22c5	},
+	{ "mu",			"x",		0x00d7	},
+	{ "tmu",		"x",		0x00d7	},
+	{ "c*",			"O\bx",		0x2297	},
+	{ "c+",			"O\b+",		0x2295	},
+	{ "di",			"-:-",		0x00f7	},
+	{ "tdi",		"-:-",		0x00f7	},
+	{ "f/",			"/",		0x2044	},
+	{ "**",			"*",		0x2217	},
+	{ "<=",			"<=",		0x2264	},
+	{ ">=",			">=",		0x2265	},
+	{ "<<",			"<<",		0x226a	},
+	{ ">>",			">>",		0x226b	},
+	{ "eq",			"=",		0x003d	},
+	{ "!=",			"!=",		0x2260	},
+	{ "==",			"==",		0x2261	},
+	{ "ne",			"!==",		0x2262	},
+	{ "ap",			"~",		0x223c	},
+	{ "|=",			"-~",		0x2243	},
+	{ "=~",			"=~",		0x2245	},
+	{ "~~",			"~~",		0x2248	},
+	{ "~=",			"~=",		0x2248	},
+	{ "pt",			"oc",		0x221d	},
+	{ "es",			"{}",		0x2205	},
+	{ "mo",			"E",		0x2208	},
+	{ "nm",			"!E",		0x2209	},
+	{ "sb",			"(=",		0x2282	},
+	{ "nb",			"(!=",		0x2284	},
+	{ "sp",			"=)",		0x2283	},
+	{ "nc",			"!=)",		0x2285	},
+	{ "ib",			"(=\b_",	0x2286	},
+	{ "ip",			"=\b_)",	0x2287	},
+	{ "ca",			"(^)",		0x2229	},
+	{ "cu",			"U",		0x222a	},
+	{ "/_",			"_\b/",		0x2220	},
+	{ "pp",			"_\b|",		0x22a5	},
+	{ "is",			"'\b,\bI",	0x222b	},
+	{ "integral",		"'\b,\bI",	0x222b	},
+	{ "sum",		"E",		0x2211	},
+	{ "product",		"TT",		0x220f	},
+	{ "coproduct",		"U",		0x2210	},
+	{ "gr",			"V",		0x2207	},
+	{ "sr",			"\\/",		0x221a	},
+	{ "sqrt",		"\\/",		0x221a	},
+	{ "lc",			"|~",		0x2308	},
+	{ "rc",			"~|",		0x2309	},
+	{ "lf",			"|_",		0x230a	},
+	{ "rf",			"_|",		0x230b	},
+	{ "if",			"oo",		0x221e	},
+	{ "Ah",			"N",		0x2135	},
+	{ "Im",			"I",		0x2111	},
+	{ "Re",			"R",		0x211c	},
+	{ "pd",			"a",		0x2202	},
+	{ "-h",			"/h",		0x210f	},
+	{ "12",			"1/2",		0x00bd	},
+	{ "14",			"1/4",		0x00bc	},
+	{ "34",			"3/4",		0x00be	},
+
+	/* Ligatures. */
+	{ "ff",			"ff",		0xfb00	},
+	{ "fi",			"fi",		0xfb01	},
+	{ "fl",			"fl",		0xfb02	},
+	{ "Fi",			"ffi",		0xfb03	},
+	{ "Fl",			"ffl",		0xfb04	},
+	{ "AE",			"AE",		0x00c6	},
+	{ "ae",			"ae",		0x00e6	},
+	{ "OE",			"OE",		0x0152	},
+	{ "oe",			"oe",		0x0153	},
+	{ "ss",			"ss",		0x00df	},
+	{ "IJ",			"IJ",		0x0132	},
+	{ "ij",			"ij",		0x0133	},
+
+	/* Accents. */
+	{ "a\"",		"\"",		0x02dd	},
+	{ "a-",			"-",		0x00af	},
+	{ "a.",			".",		0x02d9	},
+	{ "a^",			"^",		0x005e	},
+	{ "aa",			"\'",		0x00b4	},
+	{ "\'",			"\'",		0x00b4	},
+	{ "ga",			"`",		0x0060	},
+	{ "`",			"`",		0x0060	},
+	{ "ab",			"'\b`",		0x02d8	},
+	{ "ac",			",",		0x00b8	},
+	{ "ad",			"\"",		0x00a8	},
+	{ "ah",			"v",		0x02c7	},
+	{ "ao",			"o",		0x02da	},
+	{ "a~",			"~",		0x007e	},
+	{ "ho",			",",		0x02db	},
+	{ "ha",			"^",		0x005e	},
+	{ "ti",			"~",		0x007e	},
+
+	/* Accented letters. */
+	{ "'A",			"'\bA",		0x00c1	},
+	{ "'E",			"'\bE",		0x00c9	},
+	{ "'I",			"'\bI",		0x00cd	},
+	{ "'O",			"'\bO",		0x00d3	},
+	{ "'U",			"'\bU",		0x00da	},
+	{ "'a",			"'\ba",		0x00e1	},
+	{ "'e",			"'\be",		0x00e9	},
+	{ "'i",			"'\bi",		0x00ed	},
+	{ "'o",			"'\bo",		0x00f3	},
+	{ "'u",			"'\bu",		0x00fa	},
+	{ "`A",			"`\bA",		0x00c0	},
+	{ "`E",			"`\bE",		0x00c8	},
+	{ "`I",			"`\bI",		0x00cc	},
+	{ "`O",			"`\bO",		0x00d2	},
+	{ "`U",			"`\bU",		0x00d9	},
+	{ "`a",			"`\ba",		0x00e0	},
+	{ "`e",			"`\be",		0x00e8	},
+	{ "`i",			"`\bi",		0x00ec	},
+	{ "`o",			"`\bo",		0x00f2	},
+	{ "`u",			"`\bu",		0x00f9	},
+	{ "~A",			"~\bA",		0x00c3	},
+	{ "~N",			"~\bN",		0x00d1	},
+	{ "~O",			"~\bO",		0x00d5	},
+	{ "~a",			"~\ba",		0x00e3	},
+	{ "~n",			"~\bn",		0x00f1	},
+	{ "~o",			"~\bo",		0x00f5	},
+	{ ":A",			"\"\bA",	0x00c4	},
+	{ ":E",			"\"\bE",	0x00cb	},
+	{ ":I",			"\"\bI",	0x00cf	},
+	{ ":O",			"\"\bO",	0x00d6	},
+	{ ":U",			"\"\bU",	0x00dc	},
+	{ ":a",			"\"\ba",	0x00e4	},
+	{ ":e",			"\"\be",	0x00eb	},
+	{ ":i",			"\"\bi",	0x00ef	},
+	{ ":o",			"\"\bo",	0x00f6	},
+	{ ":u",			"\"\bu",	0x00fc	},
+	{ ":y",			"\"\by",	0x00ff	},
+	{ "^A",			"^\bA",		0x00c2	},
+	{ "^E",			"^\bE",		0x00ca	},
+	{ "^I",			"^\bI",		0x00ce	},
+	{ "^O",			"^\bO",		0x00d4	},
+	{ "^U",			"^\bU",		0x00db	},
+	{ "^a",			"^\ba",		0x00e2	},
+	{ "^e",			"^\be",		0x00ea	},
+	{ "^i",			"^\bi",		0x00ee	},
+	{ "^o",			"^\bo",		0x00f4	},
+	{ "^u",			"^\bu",		0x00fb	},
+	{ ",C",			",\bC",		0x00c7	},
+	{ ",c",			",\bc",		0x00e7	},
+	{ "/L",			"/\bL",		0x0141	},
+	{ "/l",			"/\bl",		0x0142	},
+	{ "/O",			"/\bO",		0x00d8	},
+	{ "/o",			"/\bo",		0x00f8	},
+	{ "oA",			"o\bA",		0x00c5	},
+	{ "oa",			"o\ba",		0x00e5	},
+
+	/* Special letters. */
+	{ "-D",			"-\bD",		0x00d0	},
+	{ "Sd",			"d",		0x00f0	},
+	{ "TP",			"Th",		0x00de	},
+	{ "Tp",			"th",		0x00fe	},
+	{ ".i",			"i",		0x0131	},
+	{ ".j",			"j",		0x0237	},
+
+	/* Currency. */
+	{ "Do",			"$",		0x0024	},
+	{ "ct",			"/\bc",		0x00a2	},
+	{ "Eu",			"EUR",		0x20ac	},
+	{ "eu",			"EUR",		0x20ac	},
+	{ "Ye",			"=\bY",		0x00a5	},
+	{ "Po",			"GBP",		0x00a3	},
+	{ "Cs",			"o\bx",		0x00a4	},
+	{ "Fn",			",\bf",		0x0192	},
+
+	/* Units. */
+	{ "de",			"<deg>",	0x00b0	},
+	{ "%0",			"%o",		0x2030	},
+	{ "fm",			"\'",		0x2032	},
+	{ "sd",			"''",		0x2033	},
+	{ "mc",			",\bu",		0x00b5	},
+
+	/* Greek characters. */
+	{ "*A",			"A",		0x0391	},
+	{ "*B",			"B",		0x0392	},
+	{ "*G",			"G",		0x0393	},
+	{ "*D",			"_\b/_\b\\",	0x0394	},
+	{ "*E",			"E",		0x0395	},
+	{ "*Z",			"Z",		0x0396	},
+	{ "*Y",			"H",		0x0397	},
+	{ "*H",			"-\bO",		0x0398	},
+	{ "*I",			"I",		0x0399	},
+	{ "*K",			"K",		0x039a	},
+	{ "*L",			"/\\",		0x039b	},
+	{ "*M",			"M",		0x039c	},
+	{ "*N",			"N",		0x039d	},
+	{ "*C",			"_\bH",		0x039e	},
+	{ "*O",			"O",		0x039f	},
+	{ "*P",			"TT",		0x03a0	},
+	{ "*R",			"P",		0x03a1	},
+	{ "*S",			"S",		0x03a3	},
+	{ "*T",			"T",		0x03a4	},
+	{ "*U",			"Y",		0x03a5	},
+	{ "*F",			"I\bO",		0x03a6	},
+	{ "*X",			"X",		0x03a7	},
+	{ "*Q",			"I\bY",		0x03a8	},
+	{ "*W",			"_\bO",		0x03a9	},
+	{ "*a",			"a",		0x03b1	},
+	{ "*b",			"B",		0x03b2	},
+	{ "*g",			"y",		0x03b3	},
+	{ "*d",			"d",		0x03b4	},
+	{ "*e",			"e",		0x03b5	},
+	{ "*z",			",\bC",		0x03b6	},
+	{ "*y",			"n",		0x03b7	},
+	{ "*h",			"-\b0",		0x03b8	},
+	{ "*i",			"i",		0x03b9	},
+	{ "*k",			"k",		0x03ba	},
+	{ "*l",			">\b\\",	0x03bb	},
+	{ "*m",			",\bu",		0x03bc	},
+	{ "*n",			"v",		0x03bd	},
+	{ "*c",			",\bE",		0x03be	},
+	{ "*o",			"o",		0x03bf	},
+	{ "*p",			"-\bn",		0x03c0	},
+	{ "*r",			"p",		0x03c1	},
+	{ "*s",			"-\bo",		0x03c3	},
+	{ "*t",			"~\bt",		0x03c4	},
+	{ "*u",			"u",		0x03c5	},
+	{ "*f",			"|\bo",		0x03d5	},
+	{ "*x",			"x",		0x03c7	},
+	{ "*q",			"|\bu",		0x03c8	},
+	{ "*w",			"w",		0x03c9	},
+	{ "+h",			"-\b0",		0x03d1	},
+	{ "+f",			"|\bo",		0x03c6	},
+	{ "+p",			"-\bw",		0x03d6	},
+	{ "+e",			"e",		0x03f5	},
+	{ "ts",			"s",		0x03c2	},
+};
+
+static	struct ohash	  mchars;
+
+
+void
+mchars_free(void)
+{
+
+	ohash_delete(&mchars);
+}
+
+void
+mchars_alloc(void)
+{
+	size_t		  i;
+	unsigned int	  slot;
+
+	mandoc_ohash_init(&mchars, 9, offsetof(struct ln, roffcode));
+	for (i = 0; i < sizeof(lines)/sizeof(lines[0]); i++) {
+		slot = ohash_qlookup(&mchars, lines[i].roffcode);
+		assert(ohash_find(&mchars, slot) == NULL);
+		ohash_insert(&mchars, slot, lines + i);
+	}
+}
+
+int
+mchars_spec2cp(const char *p, size_t sz)
+{
+	const struct ln	*ln;
+	const char	*end;
+
+	end = p + sz;
+	ln = ohash_find(&mchars, ohash_qlookupi(&mchars, p, &end));
+	return ln != NULL ? ln->unicode : sz == 1 ? (unsigned char)*p : -1;
+}
+
+int
+mchars_num2char(const char *p, size_t sz)
+{
+	int	  i;
+
+	i = mandoc_strntoi(p, sz, 10);
+	return i >= 0 && i < 256 ? i : -1;
+}
+
+int
+mchars_num2uc(const char *p, size_t sz)
+{
+	int	 i;
+
+	i = mandoc_strntoi(p, sz, 16);
+	assert(i >= 0 && i <= 0x10FFFF);
+	return i;
+}
+
+const char *
+mchars_spec2str(const char *p, size_t sz, size_t *rsz)
+{
+	const struct ln	*ln;
+	const char	*end;
+
+	end = p + sz;
+	ln = ohash_find(&mchars, ohash_qlookupi(&mchars, p, &end));
+	if (ln == NULL) {
+		*rsz = 1;
+		return sz == 1 ? p : NULL;
+	}
+
+	*rsz = strlen(ln->ascii);
+	return ln->ascii;
+}
+
+const char *
+mchars_uc2str(int uc)
+{
+	size_t	  i;
+
+	for (i = 0; i < sizeof(lines)/sizeof(lines[0]); i++)
+		if (uc == lines[i].unicode)
+			return lines[i].ascii;
+	return "<?>";
+}
+@
+
+
+1.67
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.66 2015/02/17 20:37:16 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d24 2
+d31 1
+a33 3
+#define	PRINT_HI	 126
+#define	PRINT_LO	 32
+
+d35 1
+a35 2
+	struct ln	 *next;
+	const char	 *code;
+d40 372
+a411 12
+#define	LINES_MAX	  332
+
+#define CHAR(in, ch, code) \
+	{ NULL, (in), (ch), (code) },
+
+#define	CHAR_TBL_START	  static struct ln lines[LINES_MAX] = {
+#define	CHAR_TBL_END	  };
+
+#include "chars.in"
+
+struct	mchars {
+	struct ln	**htab;
+d414 1
+a414 2
+static	const struct ln	 *find(const struct mchars *,
+				const char *, size_t);
+d418 1
+a418 1
+mchars_free(struct mchars *arg)
+d421 1
+a421 2
+	free(arg->htab);
+	free(arg);
+d424 1
+a424 1
+struct mchars *
+d427 8
+a434 25
+	struct mchars	 *tab;
+	struct ln	**htab;
+	struct ln	 *pp;
+	int		  i, hash;
+
+	/*
+	 * Constructs a very basic chaining hashtable.  The hash routine
+	 * is simply the integral value of the first character.
+	 * Subsequent entries are chained in the order they're processed.
+	 */
+
+	tab = mandoc_malloc(sizeof(struct mchars));
+	htab = mandoc_calloc(PRINT_HI - PRINT_LO + 1, sizeof(struct ln *));
+
+	for (i = 0; i < LINES_MAX; i++) {
+		hash = (int)lines[i].code[0] - PRINT_LO;
+
+		if (NULL == (pp = htab[hash])) {
+			htab[hash] = &lines[i];
+			continue;
+		}
+
+		for ( ; pp->next; pp = pp->next)
+			/* Scan ahead. */ ;
+		pp->next = &lines[i];
+a435 3
+
+	tab->htab = htab;
+	return tab;
+d439 1
+a439 1
+mchars_spec2cp(const struct mchars *arg, const char *p, size_t sz)
+d442 1
+d444 2
+a445 1
+	ln = find(arg, p, sz);
+d469 1
+a469 2
+mchars_spec2str(const struct mchars *arg,
+		const char *p, size_t sz, size_t *rsz)
+d472 1
+d474 2
+a475 1
+	ln = find(arg, p, sz);
+d488 1
+a488 1
+	int	 i;
+d490 1
+a490 1
+	for (i = 0; i < LINES_MAX; i++)
+a494 21
+
+static const struct ln *
+find(const struct mchars *tab, const char *p, size_t sz)
+{
+	const struct ln	 *pp;
+	int		  hash;
+
+	assert(p);
+
+	if (0 == sz || p[0] < PRINT_LO || p[0] > PRINT_HI)
+		return NULL;
+
+	hash = (int)p[0] - PRINT_LO;
+
+	for (pp = tab->htab[hash]; pp; pp = pp->next)
+		if (0 == strncmp(pp->code, p, sz) &&
+		    '\0' == pp->code[(int)sz])
+			return pp;
+
+	return NULL;
+}
+@
+
+
+1.66
+log
+@Render \(lq and \(rq as '"' in -Tascii mode but leave the rendering
+of .Do/.Dc, .Dq, .Lb, and .St untouched.
+Reduces groff-mandoc differences in OpenBSD base by about 7%.
+Reminded of the issue by naddy@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.65 2014/10/29 00:17:43 schwarze Exp $ */
+d98 1
+a98 1
+	return(tab);
+d107 1
+a107 1
+	return(ln != NULL ? ln->unicode : sz == 1 ? (unsigned char)*p : -1);
+d116 1
+a116 1
+	return(i >= 0 && i < 256 ? i : -1);
+d126 1
+a126 1
+	return(i);
+d138 1
+a138 1
+		return(sz == 1 ? p : NULL);
+d142 1
+a142 1
+	return(ln->ascii);
+d152 2
+a153 2
+			return(lines[i].ascii);
+	return("<?>");
+d165 1
+a165 1
+		return(NULL);
+d172 1
+a172 1
+			return(pp);
+d174 1
+a174 1
+	return(NULL);
+@
+
+
+1.65
+log
+@In terminal output, unify handling of Unicode and numbered character
+escape sequences just like it was earlier implemented for -Thtml.
+Do not let control characters other than ASCII 9 (horizontal tab)
+propagate to the output, even though groff allows them; but that
+really doesn't look like a great idea.
+
+Let mchars_num2char() return int such that we can distinguish invalid \N
+syntax from \N'0'.  This also reduces the danger of signed char issues
+popping up.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.64 2014/10/28 17:36:19 schwarze Exp $ */
+d41 1
+a41 1
+#define	LINES_MAX	  330
+@
+
+
+1.64
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.63 2014/10/28 13:24:44 schwarze Exp $ */
+d110 1
+a110 1
+char
+d115 2
+a116 4
+	if ((i = mandoc_strntoi(p, sz, 10)) < 0)
+		return('\0');
+
+	return(i > 0 && i < 256 && isprint(i) ? i : '\0');
+@
+
+
+1.63
+log
+@Tighten Unicode escape name parsing.
+Accept only 0xXXXX, 0xYXXXX, 0x10XXXX with Y != 0.
+This simplifies mchars_num2uc().
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.62 2014/10/27 13:31:04 schwarze Exp $ */
+d107 1
+a107 1
+	return(ln != NULL ? ln->unicode : sz == 1 ? *p : 0xFFFD);
+@
+
+
+1.62
+log
+@Fix a regression in term.c rev. 1.229 reported by bentley@@:
+In UTF-8 output, do not print anything if mchars_spec2cp() returns 0.
+In particular, this repairs handling of zero-width spaces (\&).
+
+While here, let mchars_spec2cp() return 0xFFFD instead of -1
+if the character is not found, simplifying the using code.
+In HTML output, do not print obfuscated ASCII characters and
+do not test for one-char escapes, mchars_spec2cp() already does that.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.61 2014/10/26 18:07:28 schwarze Exp $ */
+d126 3
+a128 8
+	if ((i = mandoc_strntoi(p, sz, 16)) < 0)
+		return(0xFFFD);
+
+	/*
+	 * XXX Code is missing here to exclude bogus ranges.
+	 */
+
+	return(i <= 0x10FFFF ? i : 0xFFFD);
+@
+
+
+1.61
+log
+@In -Tascii mode, provide approximations even for some Unicode escape
+sequences above codepoint 512 by doing a reverse lookup in the
+existing mandoc_char(7) character table.
+
+Again, groff isn't smart enough to do this and silently discards such
+escape sequences without printing anything.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.60 2014/10/26 17:12:03 schwarze Exp $ */
+d107 1
+a107 1
+	return(ln != NULL ? ln->unicode : sz == 1 ? *p : -1);
+@
+
+
+1.60
+log
+@Improve -Tascii output for Unicode escape sequences: For the first 512
+code points, provide ASCII approximations.  This is already much better
+than what groff does, which prints nothing for most code points.
+
+A few minor fixes while here:
+* Handle Unicode escape sequences in the ASCII range.
+* In case of errors, use the REPLACEMENT CHARACTER U+FFFD for -Tutf8
+and the string "<?>" for -Tascii output.
+* Handle all one-character escape sequences in mchars_spec2{cp,str}()
+and remove the workarounds on the higher level.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.59 2014/08/10 23:54:41 schwarze Exp $ */
+d152 11
+@
+
+
+1.59
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.58 2014/07/23 15:00:08 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+d107 1
+a107 3
+	if (NULL == ln)
+		return(-1);
+	return(ln->unicode);
+d127 1
+a127 1
+		return('\0');
+a129 7
+	 * Security warning:
+	 * Never extend the range of accepted characters
+	 * to overlap with the ASCII range, 0x00-0x7F
+	 * without re-auditing the callers of this function.
+	 * Some callers might relay on the fact that we never
+	 * return ASCII characters for their escaping decisions.
+	 *
+d133 1
+a133 1
+	return(i > 0x80 && i <= 0x10FFFF ? i : '\0');
+d143 1
+a143 1
+	if (NULL == ln) {
+d145 1
+a145 1
+		return(NULL);
+@
+
+
+1.58
+log
+@Security fix:
+After decoding numeric (\N) and one-character (\<, \> etc.)
+character escape sequences, do not forget to HTML-encode the
+resulting ASCII character.  Malicious manuals were able to smuggle
+XSS content by roff-escaping the HTML-special characters they need.
+That's a classic bug type in many web applications, actually...  :-(
+
+Found myself while auditing the HTML formatter for safe output handling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.57 2014/04/20 16:46:04 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+d19 2
+a20 1
+#endif
+@
+
+
+1.57
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.56 2014/03/23 11:25:25 schwarze Exp $ */
+d130 12
+a141 1
+	/* FIXME: make sure we're not in a bogus range. */
+@
+
+
+1.56
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.55 2014/01/22 20:58:39 schwarze Exp $ */
+d55 1
+a55 1
+static	const struct ln	 *find(const struct mchars *, 
+d58 1
+d115 1
+a115 1
+	int		  i;
+d119 2
+a120 2
+	return(i > 0 && i < 256 && isprint(i) ? 
+			/* LINTED */ i : '\0');
+d126 1
+a126 1
+	int               i;
+d135 1
+a135 1
+mchars_spec2str(const struct mchars *arg, 
+d164 2
+a165 2
+		if (0 == strncmp(pp->code, p, sz) && 
+				'\0' == pp->code[(int)sz])
+@
+
+
+1.55
+log
+@Implement the \: (optional line break) escape sequence,
+documented in the Ossanna-Kernighan-Ritter troff manual
+and also supported by groff.
+
+Missing feature reported by Steffen Nurpmeso <sdaoden at gmail dot com>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.54 2013/06/20 22:39:30 schwarze Exp $ */
+d28 1
+@
+
+
+1.54
+log
+@Improve handling of the roff(7) "\t" escape sequence:
+* Parsing macro arguments has to be done in copy mode,
+  which implies replacing "\t" by a literal tab character.
+* Otherwise, render "\t" as the empty string, not as a 't' character.
+
+This fixes formatting of the distfile example in the oldrdist(1) manual.
+This also shows up in the unzip(1) manual as one of several issues
+preventing the removal of USE_GROFF from the archivers/unzip port.
+Thanks to espie@@ for attracting my attention to the unzip(1) manual.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.53 2013/05/18 16:40:15 schwarze Exp $ */
+d40 1
+a40 1
+#define	LINES_MAX	  329
+@
+
+
+1.53
+log
+@Even though the size of a pointer should not depend on the type of the
+data pointed to, pass the size of the right pointer type to calloc;
+cosmetic issue reported by Ulrich Spoerlein <uqs@@spoerlein.net>
+found in Coverity Scan CID 978734.
+No binary change - ok cmp(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.52 2011/11/08 00:15:23 kristaps Exp $ */
+d40 1
+a40 1
+#define	LINES_MAX	  328
+@
+
+
+1.52
+log
+@Const-ify some mchars arguments.  I think these are non-const for historical
+dumbness on my part.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.51 2011/09/18 14:14:15 schwarze Exp $ */
+d80 1
+a80 1
+	htab = mandoc_calloc(PRINT_HI - PRINT_LO + 1, sizeof(struct ln **));
+@
+
+
+1.51
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.50 2011/07/31 11:24:39 schwarze Exp $ */
+d54 2
+a55 1
+static	const struct ln	 *find(struct mchars *, const char *, size_t);
+d100 1
+a100 1
+mchars_spec2cp(struct mchars *arg, const char *p, size_t sz)
+d117 2
+a118 1
+	return(i > 0 && i < 256 && isprint(i) ? i : '\0');
+d133 2
+a134 1
+mchars_spec2str(struct mchars *arg, const char *p, size_t sz, size_t *rsz)
+d149 1
+a149 1
+find(struct mchars *tab, const char *p, size_t sz)
+d151 1
+a151 1
+	struct ln	 *pp;
+@
+
+
+1.50
+log
+@Regression fixes after merging 1.11.3 to OpenBSD (rev. 1.20):
+* Do not pass integers outside the ASCII range to isprint().
+* Make sure escaped characters are really printed verbatim
+  when the escape sequence has no special meaning.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.49 2011/07/22 14:15:15 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.49
+log
+@Add support for 1/2, 1/4, and 3/4 (needed by eqn).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.48 2011/07/21 15:21:13 kristaps Exp $ */
+d116 1
+a116 1
+	return(isprint(i) ? i : '\0');
+d136 2
+a137 1
+	if (NULL == ln)
+d139 1
+@
+
+
+1.48
+log
+@Support `size' constructs in eqn.7.  Generalise mandoc_strontou to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.47 2011/07/07 06:41:50 kristaps Exp $ */
+d40 1
+a40 1
+#define	LINES_MAX	  325
+@
+
+
+1.47
+log
+@Simplify chars.c---there's really no need for extra code to reorder the
+hash chain or an extra function for checking matches.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.46 2011/05/24 21:31:23 kristaps Exp $ */
+d114 1
+a114 1
+	if ((i = mandoc_strntou(p, sz, 10)) < 0)
+d124 1
+a124 1
+	if ((i = mandoc_strntou(p, sz, 16)) < 0)
+@
+
+
+1.46
+log
+@Remove all references to ESCAPE_PREDEF, which is now not exposed passed
+the libroff point.  This clears up a nice chunk of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.45 2011/05/24 21:24:16 kristaps Exp $ */
+a23 1
+#include <stdio.h>
+a53 1
+static	inline int	  match(const struct ln *, const char *, size_t);
+d75 1
+a75 2
+	 * Subsequent entries are chained in the order they're processed
+	 * (they're in-line re-ordered during lookup).
+a97 4
+
+/* 
+ * Special character to Unicode codepoint.
+ */
+a108 7
+/*
+ * Numbered character string to ASCII codepoint.
+ * This can only be a printable character (i.e., alnum, punct, space) so
+ * prevent the character from ruining our state (backspace, newline, and
+ * so on).
+ * If the character is illegal, returns '\0'.
+ */
+a118 4
+/*
+ * Hex character string to Unicode codepoint.
+ * If the character is illegal, returns '\0'.
+ */
+a129 3
+/* 
+ * Special character to string array.
+ */
+d146 1
+a146 2
+	struct ln	 *pp, *prev;
+	struct ln	**htab;
+a149 2
+	if (0 == sz)
+		return(NULL);
+d151 1
+a151 1
+	if (p[0] < PRINT_LO || p[0] > PRINT_HI)
+a153 6
+	/*
+	 * Lookup the symbol in the symbol hash.  See ascii2htab for the
+	 * hashtable specs.  This dynamically re-orders the hash chain
+	 * to optimise for repeat hits.
+	 */
+
+a154 1
+	htab = tab->htab;
+d156 4
+a159 17
+	if (NULL == (pp = htab[hash]))
+		return(NULL);
+
+	for (prev = NULL; pp; pp = pp->next) {
+		if ( ! match(pp, p, sz)) {
+			prev = pp;
+			continue;
+		}
+
+		if (prev) {
+			prev->next = pp->next;
+			pp->next = htab[hash];
+			htab[hash] = pp;
+		}
+
+		return(pp);
+	}
+a162 9
+
+static inline int
+match(const struct ln *ln, const char *p, size_t sz)
+{
+
+	if (strncmp(ln->code, p, sz))
+		return(0);
+	return('\0' == ln->code[(int)sz]);
+}
+@
+
+
+1.45
+log
+@Remove predefined strings from the chars.in file, as they're now local
+to predefs.in.  This also makes "BOTH" entries directly into CHAR.  The
+res2str and spec2str are now effectively the same function.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.44 2011/05/17 11:50:20 kristaps Exp $ */
+a115 15
+
+/* 
+ * Reserved word to Unicode codepoint.
+ */
+int
+mchars_res2cp(struct mchars *arg, const char *p, size_t sz)
+{
+	const struct ln	*ln;
+
+	ln = find(arg, p, sz);
+	if (NULL == ln)
+		return(-1);
+	return(ln->unicode);
+}
+
+a163 16
+/* 
+ * Reserved word to string array.
+ */
+const char *
+mchars_res2str(struct mchars *arg, const char *p, size_t sz, size_t *rsz)
+{
+	const struct ln	*ln;
+
+	ln = find(arg, p, sz);
+	if (NULL == ln)
+		return(NULL);
+
+	*rsz = strlen(ln->ascii);
+	return(ln->ascii);
+}
+
+@
+
+
+1.44
+log
+@Flip on unicode output (via \[uNNNN]) in -T[x]html.  Here we go!
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.43 2011/05/15 22:29:50 kristaps Exp $ */
+a38 4
+	int		  type;
+#define	CHARS_CHAR	 (1 << 0)
+#define	CHARS_STRING	 (1 << 1)
+#define CHARS_BOTH	 (CHARS_CHAR | CHARS_STRING)
+d41 1
+a41 1
+#define	LINES_MAX	  353
+d44 1
+a44 5
+	{ NULL, (in), (ch), (code), CHARS_CHAR },
+#define STRING(in, ch, code) \
+	{ NULL, (in), (ch), (code), CHARS_STRING },
+#define BOTH(in, ch, code) \
+	{ NULL, (in), (ch), (code), CHARS_BOTH },
+d55 2
+a56 3
+static	inline int	  match(const struct ln *,
+				const char *, size_t, int);
+static	const struct ln	 *find(struct mchars *, const char *, size_t, int);
+d110 1
+a110 1
+	ln = find(arg, p, sz, CHARS_CHAR);
+d125 1
+a125 1
+	ln = find(arg, p, sz, CHARS_STRING);
+d171 1
+a171 1
+	ln = find(arg, p, sz, CHARS_CHAR);
+d187 1
+a187 1
+	ln = find(arg, p, sz, CHARS_STRING);
+d196 1
+a196 1
+find(struct mchars *tab, const char *p, size_t sz, int type)
+d222 1
+a222 1
+		if ( ! match(pp, p, sz, type)) {
+d240 1
+a240 1
+match(const struct ln *ln, const char *p, size_t sz, int type)
+a242 2
+	if ( ! (ln->type & type))
+		return(0);
+@
+
+
+1.43
+log
+@Remove function calls to res() and so forth in term_word().  These were
+only used once and simply bloated the binary.  Also fix mchars_num2char
+to correctly render the character instead of using atoi().  This makes
+the conversation more strict, but it's more correct.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.42 2011/05/15 15:47:46 kristaps Exp $ */
+d141 1
+a141 1
+ * Numbered character to literal character.
+d154 11
+d166 4
+a169 1
+	return(isprint(i) ? i : '\0');
+@
+
+
+1.42
+log
+@Fix missing support for \N'n' when calculating string widths in -Tascii
+(oops).  Do the same for -Thtml (oops^2).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.41 2011/05/14 17:54:42 kristaps Exp $ */
+d29 1
+d152 1
+a152 1
+	if (sz > 3)
+a154 2
+	i = atoi(p);
+	/* LINTED */
+@
+
+
+1.41
+log
+@Make character engine (-Tascii, -Tpdf, -Tps) ready for Unicode: make buffer
+consist of type "int".  This will take more work (especially in encode and
+friends), but this is a strong start.  This commit also consists of some
+harmless lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.40 2011/05/01 08:38:56 kristaps Exp $ */
+d144 1
+@
+
+
+1.40
+log
+@Filter all \N'' values with isprint().  Ok schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.39 2011/04/30 22:24:31 kristaps Exp $ */
+d154 2
+a155 1
+	return(isprint(i) ? (char)i : '\0');
+@
+
+
+1.39
+log
+@Make mchars_num2char() return a char like it says.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.38 2011/04/30 22:14:42 kristaps Exp $ */
+d23 1
+a138 1
+
+d141 3
+d154 1
+a154 6
+	/* 
+	 * FIXME:
+	 * This is wrong.  Anything could be written here!
+	 * This should be carefully screened for possible characters.
+	 */
+	return(i <= 0 || i > 255 ? '\0' : (char)i);
+a156 1
+
+a172 1
+
+@
+
+
+1.38
+log
+@Rename mchars_init() -> mchars_alloc() for consistency.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.37 2011/04/30 22:14:02 kristaps Exp $ */
+d140 1
+a140 2
+ * Numbered character to literal character,
+ * represented as a null-terminated string for additional safety.
+d142 1
+a142 1
+const char *
+a145 1
+	static char	  c[2];
+d148 2
+a149 1
+		return(NULL);
+d151 6
+a156 5
+	if (i < 0 || i > 255)
+		return(NULL);
+	c[0] = (char)i;
+	c[1] = '\0';
+	return(c);
+@
+
+
+1.37
+log
+@Remove enum mcharst, which hasn't been used in quite some time.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.36 2011/04/29 22:18:12 kristaps Exp $ */
+d74 1
+a74 1
+mchars_init(void)
+@
+
+
+1.36
+log
+@Move "chars" interface out of out.h and into mandoc.h.  This doesn't
+change any code but for renaming functions and types to be consistent
+with other mandoc.h stuff.  The reason for moving into libmandoc is that
+the rendering of special characters is part of mandoc itself---not an
+external part.  From mandoc(1)'s perspective, this changes nothing, but
+for other utilities, it's important to have these part of libmandoc.
+Note this isn't documented [yet] in mandoc.3 because there are some
+parts I'd like to change around beforehand.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.35 2011/04/20 22:50:22 kristaps Exp $ */
+a57 1
+	enum mcharst	  type;
+d74 1
+a74 1
+mchars_init(enum mcharst type)
+a104 1
+	tab->type = type;
+@
+
+
+1.35
+log
+@Add \*(Ai (ANSI) and \*(Px (POSIX) predefined strings, which are part of
+groff's tmac.doc package.  Originally noted by Matthew Dempsky.
+Feedback by Jason McIntyre, joerg@@, and schwarze@@.  Also add some
+documentation about predefined strings, tweaked by schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.34 2011/03/22 10:13:01 kristaps Exp $ */
+a27 1
+#include "out.h"
+d57 2
+a58 2
+struct	ctab {
+	enum chars	  type;
+d64 1
+a64 2
+static	const struct ln	 *find(struct ctab *, const char *, size_t, int);
+
+d67 1
+a67 1
+chars_free(void *arg)
+a68 3
+	struct ctab	*tab;
+
+	tab = (struct ctab *)arg;
+d70 2
+a71 2
+	free(tab->htab);
+	free(tab);
+d74 2
+a75 3
+
+void *
+chars_init(enum chars type)
+d77 1
+a77 1
+	struct ctab	 *tab;
+d89 1
+a89 1
+	tab = mandoc_malloc(sizeof(struct ctab));
+d115 1
+a115 1
+chars_spec2cp(void *arg, const char *p, size_t sz)
+d119 1
+a119 1
+	ln = find((struct ctab *)arg, p, sz, CHARS_CHAR);
+d130 1
+a130 1
+chars_res2cp(void *arg, const char *p, size_t sz)
+d134 1
+a134 1
+	ln = find((struct ctab *)arg, p, sz, CHARS_STRING);
+d146 1
+a146 1
+chars_num2char(const char *p, size_t sz)
+d166 1
+a166 1
+chars_spec2str(void *arg, const char *p, size_t sz, size_t *rsz)
+d170 1
+a170 1
+	ln = find((struct ctab *)arg, p, sz, CHARS_CHAR);
+d183 1
+a183 1
+chars_res2str(void *arg, const char *p, size_t sz, size_t *rsz)
+d187 1
+a187 1
+	ln = find((struct ctab *)arg, p, sz, CHARS_STRING);
+a194 1
+
+d196 1
+a196 1
+find(struct ctab *tab, const char *p, size_t sz, int type)
+a238 1
+
+@
+
+
+1.34
+log
+@Step 4: merge chars.h into out.h.  The functions in this file are
+necessary to all [real] front-ends, so stop pretending it's special.
+While here, add some documentation to the variable types.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.33 2011/03/17 08:49:34 kristaps Exp $ */
+d44 1
+a44 1
+#define	LINES_MAX	  351
+@
+
+
+1.33
+log
+@Move mandoc_{realloc,malloc,calloc} out of libmandoc.h and into mandoc.h
+so that everybody can use them.  This follows the convention of
+libXXXX.h being internal to a library and XXXX.h being the external
+interface.  Not only does this allow the removal of lots of redundant
+NULL-checking code, it also sets the tone for adding new mandoc-global
+routines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.32 2011/01/30 16:05:37 schwarze Exp $ */
+d28 1
+a28 1
+#include "chars.h"
+@
+
+
+1.32
+log
+@Implement the \N'number' (numbered character) roff escape sequence.
+Don't use it in new manuals, it is inherently non-portable, but we
+need it for backward-compatibility with existing manuals, for example
+in Xenocara driver pages.
+ok kristaps@@ jmc@@ and tested by Matthieu Herrb (matthieu at openbsd dot org)
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.31 2011/01/02 10:10:57 kristaps Exp $ */
+d95 2
+a96 11
+	tab = malloc(sizeof(struct ctab));
+	if (NULL == tab) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+
+	htab = calloc(PRINT_HI - PRINT_LO + 1, sizeof(struct ln **));
+	if (NULL == htab) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+@
+
+
+1.31
+log
+@Churn to get parts of 'struct tbl' visible from mandoc.h: rename the
+existing 'struct tbl' as 'struct tbl_node', then move all option stuff
+into a 'struct tbl' in mandoc.h.
+
+This conflicted with a structure in chars.c, which was renamed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.30 2010/09/15 13:10:30 kristaps Exp $ */
+d4 1
+d156 21
+@
+
+
+1.30
+log
+@Remove last pod2man escapes.  These render ok, although \*(-- renders as
+O- because the underlying macro depends on \(*W, which a prior pod2man
+preamble `tr' macro rewrites as "-".  This is an error in groff as this
+tramples on the real \(*W, or Greek omega.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.29 2010/09/04 20:18:53 kristaps Exp $ */
+d57 1
+a57 1
+struct	tbl {
+d64 1
+a64 1
+static	const struct ln	 *find(struct tbl *, const char *, size_t, int);
+d70 1
+a70 1
+	struct tbl	*tab;
+d72 1
+a72 1
+	tab = (struct tbl *)arg;
+d82 1
+a82 1
+	struct tbl	 *tab;
+d94 1
+a94 1
+	tab = malloc(sizeof(struct tbl));
+d133 1
+a133 1
+	ln = find((struct tbl *)arg, p, sz, CHARS_CHAR);
+d148 1
+a148 1
+	ln = find((struct tbl *)arg, p, sz, CHARS_STRING);
+d163 1
+a163 1
+	ln = find((struct tbl *)arg, p, sz, CHARS_CHAR);
+d180 1
+a180 1
+	ln = find((struct tbl *)arg, p, sz, CHARS_STRING);
+d190 1
+a190 1
+find(struct tbl *tab, const char *p, size_t sz, int type)
+@
+
+
+1.29
+log
+@Churny commit to quiet lint.  No functional changes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.28 2010/08/29 11:36:49 kristaps Exp $ */
+d43 1
+a43 1
+#define	LINES_MAX	  362
+@
+
+
+1.28
+log
+@Remove the pod2man table entries.  They can now be properly read and
+assigned within the pod2man preamble.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.27 2010/08/20 01:02:07 schwarze Exp $ */
+d97 1
+a97 1
+		exit(MANDOCLEVEL_SYSERR);
+d103 1
+a103 1
+		exit(MANDOCLEVEL_SYSERR);
+@
+
+
+1.27
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.26 2010/08/16 09:51:17 kristaps Exp $ */
+d43 1
+a43 1
+#define	LINES_MAX	  369
+@
+
+
+1.26
+log
+@Remove \*(C+ from the pre-predefined strings.  It is always `ds'-defined
+when being used in manuals.  Since we now support `ds', it's no longer
+necessary to account for it.  From a bug report originally by Thomas
+Jeunet.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.25 2010/07/31 23:52:58 schwarze Exp $ */
+d97 1
+a97 1
+		exit(EXIT_FAILURE);
+d103 1
+a103 1
+		exit(EXIT_FAILURE);
+@
+
+
+1.25
+log
+@Sync to OpenBSD: add missing Copyright years.
+I checked that substantial changes were committed
+to these files during these years.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.24 2010/07/26 13:59:00 kristaps Exp $ */
+d43 1
+a43 1
+#define	LINES_MAX	  370
+@
+
+
+1.24
+log
+@Remove asciisz from chars.in.  It frees up a nice chunk of memory and at
+the overhead of running strlen() for ASCII strings (yes, I benchmarked
+this running mandoc_char(7) as input again and again with
+hundredth-second penalties... on my slow-ass alpha).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.23 2010/07/18 12:10:08 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.23
+log
+@Clean up mandoc_special() (in order later to catch \m).  It also flags
+several syntactic errors that weren't caught before.
+
+Also un-puke chars.c on zero-length \[].
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.22 2010/07/17 09:21:39 kristaps Exp $ */
+a35 1
+	size_t		  asciisz;
+d45 6
+a50 6
+#define CHAR(in, ch, chsz, code) \
+	{ NULL, (in), (ch), (chsz), (code), CHARS_CHAR },
+#define STRING(in, ch, chsz, code) \
+	{ NULL, (in), (ch), (chsz), (code), CHARS_STRING },
+#define BOTH(in, ch, chsz, code) \
+	{ NULL, (in), (ch), (chsz), (code), CHARS_BOTH },
+d167 1
+a167 1
+	*rsz = ln->asciisz;
+d184 1
+a184 1
+	*rsz = ln->asciisz;
+@
+
+
+1.22
+log
+@By letting strncmp() do its job and not helping it with a prior length
+check, we can remove the hard-coded length of all escape patterns.  This
+frees up a nice chunk of memory.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.21 2010/07/16 22:33:30 kristaps Exp $ */
+d198 2
+a199 1
+	assert(sz > 0);
+@
+
+
+1.21
+log
+@Change chars.in HTML encoding to be a Unicode codepoint (int), which is
+later formatted in html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.20 2010/06/19 20:46:27 kristaps Exp $ */
+a34 1
+	size_t		  codesz;
+d46 6
+a51 6
+#define CHAR(in, insz, ch, chsz, code) \
+	{ NULL, (in), (insz), (ch), (chsz), (code), CHARS_CHAR },
+#define STRING(in, insz, ch, chsz, code) \
+	{ NULL, (in), (insz), (ch), (chsz), (code), CHARS_STRING },
+#define BOTH(in, insz, ch, chsz, code) \
+	{ NULL, (in), (insz), (ch), (chsz), (code), CHARS_BOTH },
+d240 1
+a240 1
+	if (ln->codesz != sz)
+d242 1
+a242 1
+	return(0 == strncmp(ln->code, p, sz));
+@
+
+
+1.20
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.19 2010/06/01 11:47:28 kristaps Exp $ */
+d35 1
+a36 2
+	const char	 *html;
+	size_t		  codesz;
+d38 1
+a38 1
+	size_t		  htmlsz;
+d47 6
+a52 6
+#define CHAR(w, x, y, z, a, b) \
+	{ NULL, (w), (y), (a), (x), (z), (b), CHARS_CHAR },
+#define STRING(w, x, y, z, a, b) \
+	{ NULL, (w), (y), (a), (x), (z), (b), CHARS_STRING },
+#define BOTH(w, x, y, z, a, b) \
+	{ NULL, (w), (y), (a), (x), (z), (b), CHARS_BOTH },
+d66 1
+a66 2
+static	const char	 *find(struct tbl *, const char *, 
+				size_t, size_t *, int);
+d127 33
+d161 1
+a161 1
+chars_a2ascii(void *arg, const char *p, size_t sz, size_t *rsz)
+d163 5
+d169 2
+a170 1
+	return(find((struct tbl *)arg, p, sz, rsz, CHARS_CHAR));
+d174 3
+d178 1
+a178 1
+chars_a2res(void *arg, const char *p, size_t sz, size_t *rsz)
+d180 1
+d182 6
+a187 1
+	return(find((struct tbl *)arg, p, sz, rsz, CHARS_STRING));
+d191 2
+a192 2
+static const char *
+find(struct tbl *tab, const char *p, size_t sz, size_t *rsz, int type)
+d228 1
+a228 6
+		if (CHARS_HTML == tab->type) {
+			*rsz = pp->htmlsz;
+			return(pp->html);
+		}
+		*rsz = pp->asciisz;
+		return(pp->ascii);
+@
+
+
+1.19
+log
+@Fixed condition of `\}' closing a conditional at the start of the line.
+
+Fixed flushed-out condition of \} causing subsequent arguments to be
+truncated, when in fact the whole line should be passed through (if the
+conditional succeeds) to the front-end and the \} ignored there.
+
+Added regression test of this behaviour.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.18 2010/05/25 12:37:20 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.18
+log
+@Modified version of Ingo Schwarze's patch for hyphen-breaking.
+Breakable hyphens are cued in the back-ends (with ASCII_HYPH) and acted
+upon in term.c or ignored in html.c.
+
+Also cleaned up XML decl printing (no need for extra vars).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.17 2010/03/23 13:25:01 kristaps Exp $ */
+d46 1
+a46 1
+#define	LINES_MAX	  369
+@
+
+
+1.17
+log
+@Added stupid pod2man reserved strings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.16 2010/01/28 06:04:59 kristaps Exp $ */
+d26 1
+@
+
+
+1.16
+log
+@Removed superfluous lookahead block in chars.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.15 2010/01/05 19:51:10 kristaps Exp $ */
+d45 1
+a45 1
+#define	LINES_MAX	  350
+@
+
+
+1.15
+log
+@Removed references to `\\' escape (noted by Jason McIntyre, Ingo Schwarze).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.14 2010/01/01 17:14:26 kristaps Exp $ */
+a168 12
+	if (NULL == pp->next) {
+		if ( ! match(pp, p, sz, type)) 
+			return(NULL);
+
+		if (CHARS_HTML == tab->type) {
+			*rsz = pp->htmlsz;
+			return(pp->html);
+		}
+		*rsz = pp->asciisz;
+		return(pp->ascii);
+	}
+
+@
+
+
+1.14
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.13 2009/11/05 07:21:01 kristaps Exp $ */
+d45 1
+a45 1
+#define	LINES_MAX	  351
+@
+
+
+1.13
+log
+@Added functionality of -Tascii non-breaking `\~' space.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.12 2009/11/01 07:44:32 kristaps Exp $ */
+d17 4
+@
+
+
+1.12
+log
+@Replaced putchar() loop with fwrite() (noted by Joerg Sonnenberger).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.11 2009/10/31 06:10:57 kristaps Exp $ */
+d50 3
+a52 1
+static	struct ln lines[LINES_MAX] = {
+a53 1
+};
+@
+
+
+1.11
+log
+@Using perror() instead of fprintf for failure from library functions.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.10 2009/10/30 18:43:24 kristaps Exp $ */
+d38 1
+a38 1
+#define CHARS_BOTH	 (0x03)
+@
+
+
+1.10
+log
+@Continued safe handling of allocations.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.9 2009/09/23 11:02:21 kristaps Exp $ */
+d94 1
+a94 1
+		fprintf(stderr, "memory exhausted\n");
+d100 1
+a100 1
+		fprintf(stderr, "memory exhausted\n");
+@
+
+
+1.9
+log
+@All special characters sync'd with groff, both -Thtml and -Tascii.
+Re-added text links to index.sgml (just for show).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.8 2009/09/23 09:06:44 kristaps Exp $ */
+d18 1
+a18 1
+#include <err.h>
+d92 5
+a96 3
+	if (NULL == (tab = malloc(sizeof(struct tbl))))
+		err(1, "malloc");
+	tab->type = type;
+d99 4
+a102 2
+	if (NULL == htab)
+		err(1, "malloc");
+d118 1
+@
+
+
+1.8
+log
+@Sync'd special letters and ligatures with newest groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.7 2009/09/23 01:04:11 kristaps Exp $ */
+d41 1
+a41 1
+#define	LINES_MAX	  337
+@
+
+
+1.7
+log
+@Arrows & brackets sync'd with newest groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.6 2009/09/23 00:03:45 kristaps Exp $ */
+d41 1
+a41 1
+#define	LINES_MAX	  333
+@
+
+
+1.6
+log
+@Quotes sync'd with newest groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.5 2009/09/22 23:34:14 kristaps Exp $ */
+d41 1
+a41 1
+#define	LINES_MAX	  304
+@
+
+
+1.5
+log
+@Accent marks sync'd with current groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.4 2009/09/22 23:15:58 kristaps Exp $ */
+d41 1
+a41 1
+#define	LINES_MAX	  302
+@
+
+
+1.4
+log
+@Many more UTF-8 symbols in place.
+Started partitioning chars.in into sections corresponding to mandoc_char.7.
+Correctly ordered Greek letters.
+Sync'd all mathematical and logical symbols with current groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.3 2009/09/22 10:07:01 kristaps Exp $ */
+d41 1
+a41 1
+#define	LINES_MAX	  300
+@
+
+
+1.3
+log
+@Many more characters for HMTL (mostly Greek).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.2 2009/09/17 08:21:42 kristaps Exp $ */
+d41 1
+a41 1
+#define	LINES_MAX	  267
+@
+
+
+1.2
+log
+@More html.
+Initial html encodings in chars.in.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.c,v 1.1 2009/09/17 07:41:28 kristaps Exp $ */
+d41 1
+a41 1
+#define	LINES_MAX	  266
+@
+
+
+1.1
+log
+@ascii_xxx -> chars_xxx (intended to hold more than just ascii encoding).
+More html work.
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.c,v 1.9 2009/07/27 12:02:49 kristaps Exp $ */
+d24 2
+a25 2
+#define	ASCII_PRINT_HI	 126
+#define	ASCII_PRINT_LO	 32
+d30 2
+a31 1
+	const char	 *out;
+d33 2
+a34 1
+	size_t		  outsz;
+d43 6
+a48 6
+#define CHAR(w, x, y, z) \
+	{ NULL, (w), (y), (x), (z), CHARS_CHAR },
+#define STRING(w, x, y, z) \
+	{ NULL, (w), (y), (x), (z), CHARS_STRING },
+#define BOTH(w, x, y, z) \
+	{ NULL, (w), (y), (x), (z), CHARS_BOTH },
+d55 1
+a76 1
+/* ARGSUSED */
+d94 1
+d96 1
+a96 3
+	htab = calloc(ASCII_PRINT_HI - ASCII_PRINT_LO + 1, 
+			sizeof(struct ln **));
+
+d101 1
+a101 5
+		assert(lines[i].codesz > 0);
+		assert(lines[i].code);
+		assert(lines[i].out);
+
+		hash = (int)lines[i].code[0] - ASCII_PRINT_LO;
+a109 1
+
+d144 1
+a144 1
+	if (p[0] < ASCII_PRINT_LO || p[0] > ASCII_PRINT_HI)
+d153 1
+a153 1
+	hash = (int)p[0] - ASCII_PRINT_LO;
+d162 7
+a168 2
+		*rsz = pp->outsz;
+		return(pp->out);
+a176 2
+		/* Re-order the hash chain. */
+
+d183 6
+a188 2
+		*rsz = pp->outsz;
+		return(pp->out);
+@

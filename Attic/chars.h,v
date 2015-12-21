@@ -1,0 +1,238 @@
+head	1.8;
+access;
+symbols
+	VERSION_1_10_10:1.7
+	VERSION_1_10_9:1.6
+	VERSION_1_10_8:1.6
+	VERSION_1_10_7:1.6
+	VERSION_1_10_6:1.6
+	VERSION_1_10_5:1.5
+	VERSION_1_10_5_PREPDF:1.5
+	VERSION_1_10_4:1.4
+	VERSION_1_10_3:1.4
+	VERSION_1_10_2:1.4
+	VERSION_1_10_1:1.3
+	VERSION_1_9_24:1.1
+	VERSION_1_9_25:1.1
+	VERSION_1_9_23:1.1
+	VERSION_1_9_22:1.1
+	VERSION_1_9_21:1.1
+	VERSION_1_9_20:1.1
+	VERSION_1_9_19:1.1
+	VERSION_1_9_18:1.1
+	VERSION_1_9_17:1.1
+	VERSION_1_9_16:1.1
+	VERSION_1_9_15:1.1
+	VERSION_1_9_15-pre2:1.1
+	VERSION_1_9_15-pre1:1.1
+	VERSION_1_9_14:1.1
+	VERSION_1_9_13:1.1
+	VERSION_1_9_12:1.1
+	VERSION_1_9_11:1.1
+	VERSION_1_9_10:1.1
+	VERSION_1_9_9:1.1
+	VERSION_1_9_8:1.1
+	VERSION_1_9_7:1.1
+	VERSION_1_9_6:1.1
+	VERSION_1_9_5:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.8
+date	2011.03.22.10.13.01;	author kristaps;	state dead;
+branches;
+next	1.7;
+
+1.7
+date	2011.01.30.16.05.37;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.07.31.23.52.58;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.07.16.22.33.30;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.06.19.20.46.27;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.05.25.12.37.20;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.05.16.01.35.37;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.09.17.07.41.28;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@Step 4: merge chars.h into out.h.  The functions in this file are
+necessary to all [real] front-ends, so stop pretending it's special.
+While here, add some documentation to the variable types.
+@
+text
+@@
+
+
+1.7
+log
+@Implement the \N'number' (numbered character) roff escape sequence.
+Don't use it in new manuals, it is inherently non-portable, but we
+need it for backward-compatibility with existing manuals, for example
+in Xenocara driver pages.
+ok kristaps@@ jmc@@ and tested by Matthieu Herrb (matthieu at openbsd dot org)
+@
+text
+@a0 38
+/*	$Id: chars.h,v 1.6 2010/07/31 23:52:58 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef CHARS_H
+#define CHARS_H
+
+__BEGIN_DECLS
+
+enum	chars {
+	CHARS_ASCII,
+	CHARS_HTML
+};
+
+void		 *chars_init(enum chars);
+const char	 *chars_num2char(const char *, size_t);
+const char	 *chars_spec2str(void *, const char *, size_t, size_t *);
+int		  chars_spec2cp(void *, const char *, size_t);
+const char	 *chars_res2str(void *, const char *, size_t, size_t *);
+int		  chars_res2cp(void *, const char *, size_t);
+void		  chars_free(void *);
+
+__END_DECLS
+
+#endif /*!CHARS_H*/
+@
+
+
+1.6
+log
+@Sync to OpenBSD: add missing Copyright years.
+I checked that substantial changes were committed
+to these files during these years.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.h,v 1.5 2010/07/16 22:33:30 kristaps Exp $ */
+d4 1
+d29 1
+@
+
+
+1.5
+log
+@Change chars.in HTML encoding to be a Unicode codepoint (int), which is
+later formatted in html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.h,v 1.4 2010/06/19 20:46:27 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.4
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.h,v 1.3 2010/05/25 12:37:20 kristaps Exp $ */
+d28 4
+a31 2
+const char	 *chars_a2ascii(void *, const char *, size_t, size_t *);
+const char	 *chars_a2res(void *, const char *, size_t, size_t *);
+@
+
+
+1.3
+log
+@Modified version of Ingo Schwarze's patch for hyphen-breaking.
+Breakable hyphens are cued in the back-ends (with ASCII_HYPH) and acted
+upon in term.c or ignored in html.c.
+
+Also cleaned up XML decl printing (no need for extra vars).
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.h,v 1.2 2010/05/16 01:35:37 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.2
+log
+@sync to OpenBSD:
+introduce a #define to get rid of the magic number
+describing the ASCII character used to represent non-breaking space;
+ok kristaps
+@
+text
+@d1 1
+a1 1
+/*	$Id: chars.h,v 1.1 2009/09/17 07:41:28 kristaps Exp $ */
+a19 2
+#define ASCII_NBRSP	 31  /* non-breaking space */
+
+@
+
+
+1.1
+log
+@ascii_xxx -> chars_xxx (intended to hold more than just ascii encoding).
+More html work.
+@
+text
+@d1 1
+a1 1
+/*	$Id: term.h,v 1.46 2009/09/16 09:41:24 kristaps Exp $ */
+d20 2
+@

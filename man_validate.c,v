@@ -1,0 +1,4829 @@
+head	1.121;
+access;
+symbols
+	VERSION_1_13_3:1.113
+	VERSION_1_13_2:1.107
+	VERSION_1_12_4:1.106
+	VERSION_1_13_1:1.105
+	VERSION_1_12_3:1.86
+	VERSION_1_12_2:1.85
+	VERSION_1_12:1.106.0.2
+	VERSION_1_12_1:1.80
+	VERSION_1_12_0:1.75
+	VERSION_1_11_7:1.72
+	VERSION_1_11_6:1.72
+	VERSION_1_11_5:1.71
+	VERSION_1_11_4:1.70
+	VERSION_1_11_3:1.69
+	VERSION_1_11_2:1.69
+	VERSION_1_11_1:1.67
+	VERSION_1_10_10:1.64
+	VERSION_1_10_9:1.57
+	VERSION_1_10_8:1.56
+	VERSION_1_10_7:1.55
+	VERSION_1_10_6:1.49
+	VERSION_1_10_5:1.47
+	VERSION_1_10_5_PREPDF:1.47
+	VERSION_1_10_4:1.45
+	VERSION_1_10_3:1.45
+	VERSION_1_10_2:1.44
+	VERSION_1_10_1:1.42
+	VERSION_1_9_24:1.34
+	VERSION_1_9_25:1.35
+	VERSION_1_9_23:1.34
+	VERSION_1_9_22:1.33
+	VERSION_1_9_21:1.33
+	VERSION_1_9_20:1.33
+	VERSION_1_9_19:1.32
+	VERSION_1_9_18:1.32
+	VERSION_1_9_17:1.31
+	VERSION_1_9_16:1.29
+	VERSION_1_9_15:1.28
+	VERSION_1_9_15-pre2:1.28
+	VERSION_1_9_15-pre1:1.27
+	VERSION_1_9_14:1.27
+	VERSION_1_9_13:1.27
+	VERSION_1_9_12:1.26
+	VERSION_1_9_11:1.26
+	VERSION_1_9_10:1.26
+	VERSION_1_9_9:1.25
+	VERSION_1_9_8:1.24
+	VERSION_1_9_7:1.24
+	VERSION_1_9_6:1.24
+	VERSION_1_9_5:1.24
+	VERSION_1_9_2:1.24
+	VERSION_1_9_1:1.23
+	VERSION_1_9_0:1.18
+	VERSION_1_8_5:1.16
+	VERSION_1_8_4:1.16
+	VERSION_1_8_3:1.15
+	VERSION_1_8_2:1.15
+	VERSION_1_8_1:1.15
+	VERSION_1_8_0:1.15
+	VERSION_1_7_24:1.15
+	VERSION_1_7_23:1.15
+	VERSION_1_7_22:1.15
+	VERSION_1_7_21:1.15
+	VERSION_1_7_20:1.14
+	VERSION_1_7_19:1.10
+	VERSION_1_7_17:1.9
+	VERSION_1_7_16:1.9
+	VERSION_1_7_15:1.9
+	VERSION_1_7_14:1.9
+	VERSION_1_7_13:1.8
+	VERSION_1_7_12:1.7
+	OPENBSD_CHECKIN:1.7
+	VERSION_1_7_10:1.7
+	VERSION_1_7_5:1.4;
+locks; strict;
+comment	@ * @;
+
+
+1.121
+date	2015.10.22.21.54.23;	author schwarze;	state Exp;
+branches;
+next	1.120;
+
+1.120
+date	2015.10.12.00.08.15;	author schwarze;	state Exp;
+branches;
+next	1.119;
+
+1.119
+date	2015.04.19.14.00.19;	author schwarze;	state Exp;
+branches;
+next	1.118;
+
+1.118
+date	2015.04.19.13.50.26;	author schwarze;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2015.04.18.16.06.40;	author schwarze;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2015.04.02.23.48.19;	author schwarze;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2015.04.02.21.36.50;	author schwarze;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2015.02.06.11.54.36;	author schwarze;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2015.02.06.09.38.43;	author schwarze;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2015.02.06.08.28.35;	author schwarze;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2015.02.06.07.13.14;	author schwarze;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2015.01.24.02.41.49;	author schwarze;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2014.12.28.14.42.27;	author schwarze;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2014.11.28.05.51.32;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2014.08.06.15.09.05;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2014.08.01.21.24.17;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2014.08.01.17.40.34;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2014.08.01.17.27.44;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2014.07.30.23.01.39;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2014.07.07.21.36.20;	author schwarze;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2014.07.06.19.09.00;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2014.07.05.12.34.17;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2014.07.04.16.12.08;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2014.07.02.11.43.20;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2014.07.02.05.52.24;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2014.07.01.22.37.15;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2014.06.20.23.02.31;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2014.06.20.17.24.00;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2014.01.06.22.39.25;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2013.12.31.18.07.42;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2013.10.17.20.54.58;	author schwarze;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2012.11.17.00.26.33;	author schwarze;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2012.07.29.12.35.42;	author schwarze;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2012.07.18.16.52.03;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2012.07.18.16.41.09;	author schwarze;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2012.06.02.20.16.23;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2012.01.03.15.16.24;	author kristaps;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2011.12.02.01.37.14;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2011.11.07.01.24.40;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2011.11.03.20.48.52;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2011.10.16.12.20.34;	author schwarze;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2011.09.06.17.53.50;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2011.09.04.09.58.40;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2011.09.04.09.49.46;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2011.07.26.14.09.01;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2011.07.24.18.15.14;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2011.07.08.09.34.06;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2011.04.13.09.57.08;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2011.04.09.15.29.40;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2011.03.22.15.30.30;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2011.03.22.14.33.05;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2011.03.17.11.56.17;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2011.03.07.01.35.51;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2011.02.09.09.18.15;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2011.02.06.21.44.36;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2011.01.17.00.21.29;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2011.01.12.16.55.22;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2011.01.12.15.50.42;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2011.01.01.12.59.17;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.12.08.10.58.22;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.12.06.15.31.19;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2010.12.06.13.56.56;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2010.12.06.13.50.41;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2010.12.05.16.14.16;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2010.11.30.15.24.27;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2010.10.11.15.45.36;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2010.07.31.23.52.58;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2010.07.22.23.03.15;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2010.07.20.14.56.42;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2010.06.28.14.39.17;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.06.09.19.22.56;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.05.25.12.44.53;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.05.17.10.50.32;	author joerg;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.05.15.22.44.04;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.05.15.20.51.40;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.05.15.15.54.39;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.05.14.16.19.26;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.05.09.21.19.42;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.04.03.14.12.48;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.03.29.10.10.35;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.03.27.10.04.56;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.03.24.20.10.53;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.03.23.11.30.48;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.03.22.05.59.32;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.01.01.17.14.28;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.11.02.06.22.45;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.10.24.05.45.05;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.10.18.11.36.37;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.08.22.09.10.38;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.08.21.13.16.16;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.08.21.12.12.12;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.08.20.11.51.07;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.08.19.12.15.58;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.08.19.09.14.50;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.08.18.11.46.44;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.08.13.11.45.29;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.07.24.20.22.24;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.07.04.09.01.55;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.06.22.13.09.17;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.06.22.10.40.04;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.06.18.10.53.58;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.06.18.10.32.00;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.06.16.19.55.28;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.04.02.06.51.44;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.27.14.56.15;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.26.14.38.11;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.26.09.55.39;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.25.21.46.24;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.25.15.17.49;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.121
+log
+@move man(7) validation into the dedicated validation phase, too
+@
+text
+@/*	$OpenBSD$ */
+/*
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2010, 2012-2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <errno.h>
+#include <limits.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+#include "mandoc_aux.h"
+#include "mandoc.h"
+#include "roff.h"
+#include "man.h"
+#include "libmandoc.h"
+#include "roff_int.h"
+#include "libman.h"
+
+#define	CHKARGS	  struct roff_man *man, struct roff_node *n
+
+typedef	void	(*v_check)(CHKARGS);
+
+static	void	  check_par(CHKARGS);
+static	void	  check_part(CHKARGS);
+static	void	  check_root(CHKARGS);
+static	void	  check_text(CHKARGS);
+
+static	void	  post_AT(CHKARGS);
+static	void	  post_IP(CHKARGS);
+static	void	  post_vs(CHKARGS);
+static	void	  post_ft(CHKARGS);
+static	void	  post_OP(CHKARGS);
+static	void	  post_TH(CHKARGS);
+static	void	  post_UC(CHKARGS);
+static	void	  post_UR(CHKARGS);
+
+static	v_check man_valids[MAN_MAX] = {
+	post_vs,    /* br */
+	post_TH,    /* TH */
+	NULL,       /* SH */
+	NULL,       /* SS */
+	NULL,       /* TP */
+	check_par,  /* LP */
+	check_par,  /* PP */
+	check_par,  /* P */
+	post_IP,    /* IP */
+	NULL,       /* HP */
+	NULL,       /* SM */
+	NULL,       /* SB */
+	NULL,       /* BI */
+	NULL,       /* IB */
+	NULL,       /* BR */
+	NULL,       /* RB */
+	NULL,       /* R */
+	NULL,       /* B */
+	NULL,       /* I */
+	NULL,       /* IR */
+	NULL,       /* RI */
+	post_vs,    /* sp */
+	NULL,       /* nf */
+	NULL,       /* fi */
+	NULL,       /* RE */
+	check_part, /* RS */
+	NULL,       /* DT */
+	post_UC,    /* UC */
+	NULL,       /* PD */
+	post_AT,    /* AT */
+	NULL,       /* in */
+	post_ft,    /* ft */
+	post_OP,    /* OP */
+	NULL,       /* EX */
+	NULL,       /* EE */
+	post_UR,    /* UR */
+	NULL,       /* UE */
+	NULL,       /* ll */
+};
+
+
+void
+man_node_validate(struct roff_man *man)
+{
+	struct roff_node *n;
+	v_check		*cp;
+
+	n = man->last;
+	man->last = man->last->child;
+	while (man->last != NULL) {
+		man_node_validate(man);
+		if (man->last == n)
+			man->last = man->last->child;
+		else
+			man->last = man->last->next;
+	}
+
+	man->last = n;
+	man->next = ROFF_NEXT_SIBLING;
+	switch (n->type) {
+	case ROFFT_TEXT:
+		check_text(man, n);
+		break;
+	case ROFFT_ROOT:
+		check_root(man, n);
+		break;
+	case ROFFT_EQN:
+	case ROFFT_TBL:
+		break;
+	default:
+		cp = man_valids + n->tok;
+		if (*cp)
+			(*cp)(man, n);
+		if (man->last == n)
+			man_state(man, n);
+		break;
+	}
+}
+
+static void
+check_root(CHKARGS)
+{
+
+	assert((man->flags & (MAN_BLINE | MAN_ELINE)) == 0);
+
+	if (NULL == man->first->child)
+		mandoc_msg(MANDOCERR_DOC_EMPTY, man->parse,
+		    n->line, n->pos, NULL);
+	else
+		man->meta.hasbody = 1;
+
+	if (NULL == man->meta.title) {
+		mandoc_msg(MANDOCERR_TH_NOTITLE, man->parse,
+		    n->line, n->pos, NULL);
+
+		/*
+		 * If a title hasn't been set, do so now (by
+		 * implication, date and section also aren't set).
+		 */
+
+		man->meta.title = mandoc_strdup("");
+		man->meta.msec = mandoc_strdup("");
+		man->meta.date = man->quick ? mandoc_strdup("") :
+		    mandoc_normdate(man->parse, NULL, n->line, n->pos);
+	}
+}
+
+static void
+check_text(CHKARGS)
+{
+	char		*cp, *p;
+
+	if (MAN_LITERAL & man->flags)
+		return;
+
+	cp = n->string;
+	for (p = cp; NULL != (p = strchr(p, '\t')); p++)
+		mandoc_msg(MANDOCERR_FI_TAB, man->parse,
+		    n->line, n->pos + (p - cp), NULL);
+}
+
+static void
+post_OP(CHKARGS)
+{
+
+	if (n->nchild == 0)
+		mandoc_msg(MANDOCERR_OP_EMPTY, man->parse,
+		    n->line, n->pos, "OP");
+	else if (n->nchild > 2) {
+		n = n->child->next->next;
+		mandoc_vmsg(MANDOCERR_ARG_EXCESS, man->parse,
+		    n->line, n->pos, "OP ... %s", n->string);
+	}
+}
+
+static void
+post_UR(CHKARGS)
+{
+
+	if (n->type == ROFFT_HEAD && n->child == NULL)
+		mandoc_vmsg(MANDOCERR_UR_NOHEAD, man->parse,
+		    n->line, n->pos, "UR");
+	check_part(man, n);
+}
+
+static void
+post_ft(CHKARGS)
+{
+	char	*cp;
+	int	 ok;
+
+	if (0 == n->nchild)
+		return;
+
+	ok = 0;
+	cp = n->child->string;
+	switch (*cp) {
+	case '1':
+	case '2':
+	case '3':
+	case '4':
+	case 'I':
+	case 'P':
+	case 'R':
+		if ('\0' == cp[1])
+			ok = 1;
+		break;
+	case 'B':
+		if ('\0' == cp[1] || ('I' == cp[1] && '\0' == cp[2]))
+			ok = 1;
+		break;
+	case 'C':
+		if ('W' == cp[1] && '\0' == cp[2])
+			ok = 1;
+		break;
+	default:
+		break;
+	}
+
+	if (0 == ok) {
+		mandoc_vmsg(MANDOCERR_FT_BAD, man->parse,
+		    n->line, n->pos, "ft %s", cp);
+		*cp = '\0';
+	}
+}
+
+static void
+check_part(CHKARGS)
+{
+
+	if (n->type == ROFFT_BODY && n->child == NULL)
+		mandoc_msg(MANDOCERR_BLK_EMPTY, man->parse,
+		    n->line, n->pos, man_macronames[n->tok]);
+}
+
+static void
+check_par(CHKARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		if (0 == n->body->nchild)
+			roff_node_delete(man, n);
+		break;
+	case ROFFT_BODY:
+		if (0 == n->nchild)
+			mandoc_vmsg(MANDOCERR_PAR_SKIP,
+			    man->parse, n->line, n->pos,
+			    "%s empty", man_macronames[n->tok]);
+		break;
+	case ROFFT_HEAD:
+		if (n->nchild)
+			mandoc_vmsg(MANDOCERR_ARG_SKIP,
+			    man->parse, n->line, n->pos,
+			    "%s %s%s", man_macronames[n->tok],
+			    n->child->string,
+			    n->nchild > 1 ? " ..." : "");
+		break;
+	default:
+		break;
+	}
+}
+
+static void
+post_IP(CHKARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		if (0 == n->head->nchild && 0 == n->body->nchild)
+			roff_node_delete(man, n);
+		break;
+	case ROFFT_BODY:
+		if (0 == n->parent->head->nchild && 0 == n->nchild)
+			mandoc_vmsg(MANDOCERR_PAR_SKIP,
+			    man->parse, n->line, n->pos,
+			    "%s empty", man_macronames[n->tok]);
+		break;
+	default:
+		break;
+	}
+}
+
+static void
+post_TH(CHKARGS)
+{
+	struct roff_node *nb;
+	const char	*p;
+
+	free(man->meta.title);
+	free(man->meta.vol);
+	free(man->meta.os);
+	free(man->meta.msec);
+	free(man->meta.date);
+
+	man->meta.title = man->meta.vol = man->meta.date =
+	    man->meta.msec = man->meta.os = NULL;
+
+	nb = n;
+
+	/* ->TITLE<- MSEC DATE OS VOL */
+
+	n = n->child;
+	if (n && n->string) {
+		for (p = n->string; '\0' != *p; p++) {
+			/* Only warn about this once... */
+			if (isalpha((unsigned char)*p) &&
+			    ! isupper((unsigned char)*p)) {
+				mandoc_vmsg(MANDOCERR_TITLE_CASE,
+				    man->parse, n->line,
+				    n->pos + (p - n->string),
+				    "TH %s", n->string);
+				break;
+			}
+		}
+		man->meta.title = mandoc_strdup(n->string);
+	} else {
+		man->meta.title = mandoc_strdup("");
+		mandoc_msg(MANDOCERR_TH_NOTITLE, man->parse,
+		    nb->line, nb->pos, "TH");
+	}
+
+	/* TITLE ->MSEC<- DATE OS VOL */
+
+	if (n)
+		n = n->next;
+	if (n && n->string)
+		man->meta.msec = mandoc_strdup(n->string);
+	else {
+		man->meta.msec = mandoc_strdup("");
+		mandoc_vmsg(MANDOCERR_MSEC_MISSING, man->parse,
+		    nb->line, nb->pos, "TH %s", man->meta.title);
+	}
+
+	/* TITLE MSEC ->DATE<- OS VOL */
+
+	if (n)
+		n = n->next;
+	if (n && n->string && '\0' != n->string[0]) {
+		man->meta.date = man->quick ?
+		    mandoc_strdup(n->string) :
+		    mandoc_normdate(man->parse, n->string,
+			n->line, n->pos);
+	} else {
+		man->meta.date = mandoc_strdup("");
+		mandoc_msg(MANDOCERR_DATE_MISSING, man->parse,
+		    n ? n->line : nb->line,
+		    n ? n->pos : nb->pos, "TH");
+	}
+
+	/* TITLE MSEC DATE ->OS<- VOL */
+
+	if (n && (n = n->next))
+		man->meta.os = mandoc_strdup(n->string);
+	else if (man->defos != NULL)
+		man->meta.os = mandoc_strdup(man->defos);
+
+	/* TITLE MSEC DATE OS ->VOL<- */
+	/* If missing, use the default VOL name for MSEC. */
+
+	if (n && (n = n->next))
+		man->meta.vol = mandoc_strdup(n->string);
+	else if ('\0' != man->meta.msec[0] &&
+	    (NULL != (p = mandoc_a2msec(man->meta.msec))))
+		man->meta.vol = mandoc_strdup(p);
+
+	if (n != NULL && (n = n->next) != NULL)
+		mandoc_vmsg(MANDOCERR_ARG_EXCESS, man->parse,
+		    n->line, n->pos, "TH ... %s", n->string);
+
+	/*
+	 * Remove the `TH' node after we've processed it for our
+	 * meta-data.
+	 */
+	roff_node_delete(man, man->last);
+}
+
+static void
+post_UC(CHKARGS)
+{
+	static const char * const bsd_versions[] = {
+	    "3rd Berkeley Distribution",
+	    "4th Berkeley Distribution",
+	    "4.2 Berkeley Distribution",
+	    "4.3 Berkeley Distribution",
+	    "4.4 Berkeley Distribution",
+	};
+
+	const char	*p, *s;
+
+	n = n->child;
+
+	if (n == NULL || n->type != ROFFT_TEXT)
+		p = bsd_versions[0];
+	else {
+		s = n->string;
+		if (0 == strcmp(s, "3"))
+			p = bsd_versions[0];
+		else if (0 == strcmp(s, "4"))
+			p = bsd_versions[1];
+		else if (0 == strcmp(s, "5"))
+			p = bsd_versions[2];
+		else if (0 == strcmp(s, "6"))
+			p = bsd_versions[3];
+		else if (0 == strcmp(s, "7"))
+			p = bsd_versions[4];
+		else
+			p = bsd_versions[0];
+	}
+
+	free(man->meta.os);
+	man->meta.os = mandoc_strdup(p);
+}
+
+static void
+post_AT(CHKARGS)
+{
+	static const char * const unix_versions[] = {
+	    "7th Edition",
+	    "System III",
+	    "System V",
+	    "System V Release 2",
+	};
+
+	struct roff_node *nn;
+	const char	*p, *s;
+
+	n = n->child;
+
+	if (n == NULL || n->type != ROFFT_TEXT)
+		p = unix_versions[0];
+	else {
+		s = n->string;
+		if (0 == strcmp(s, "3"))
+			p = unix_versions[0];
+		else if (0 == strcmp(s, "4"))
+			p = unix_versions[1];
+		else if (0 == strcmp(s, "5")) {
+			nn = n->next;
+			if (nn != NULL &&
+			    nn->type == ROFFT_TEXT &&
+			    nn->string[0] != '\0')
+				p = unix_versions[3];
+			else
+				p = unix_versions[2];
+		} else
+			p = unix_versions[0];
+	}
+
+	free(man->meta.os);
+	man->meta.os = mandoc_strdup(p);
+}
+
+static void
+post_vs(CHKARGS)
+{
+
+	if (NULL != n->prev)
+		return;
+
+	switch (n->parent->tok) {
+	case MAN_SH:
+	case MAN_SS:
+		mandoc_vmsg(MANDOCERR_PAR_SKIP, man->parse, n->line, n->pos,
+		    "%s after %s", man_macronames[n->tok],
+		    man_macronames[n->parent->tok]);
+		/* FALLTHROUGH */
+	case TOKEN_NONE:
+		/*
+		 * Don't warn about this because it occurs in pod2man
+		 * and would cause considerable (unfixable) warnage.
+		 */
+		roff_node_delete(man, n);
+		break;
+	default:
+		break;
+	}
+}
+@
+
+
+1.120
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@a50 1
+static	void	  post_fi(CHKARGS);
+a51 1
+static	void	  post_nf(CHKARGS);
+d80 2
+a81 2
+	post_nf,    /* nf */
+	post_fi,    /* fi */
+d91 2
+a92 2
+	post_nf,    /* EX */
+	post_fi,    /* EE */
+d100 1
+a100 1
+man_valid_post(struct roff_man *man)
+d106 8
+a113 3
+	if (n->flags & MAN_VALID)
+		return;
+	n->flags |= MAN_VALID;
+d115 2
+d131 2
+a395 22
+post_nf(CHKARGS)
+{
+
+	if (man->flags & MAN_LITERAL)
+		mandoc_msg(MANDOCERR_NF_SKIP, man->parse,
+		    n->line, n->pos, "nf");
+
+	man->flags |= MAN_LITERAL;
+}
+
+static void
+post_fi(CHKARGS)
+{
+
+	if ( ! (MAN_LITERAL & man->flags))
+		mandoc_msg(MANDOCERR_FI_SKIP, man->parse,
+		    n->line, n->pos, "fi");
+
+	man->flags &= ~MAN_LITERAL;
+}
+
+static void
+@
+
+
+1.119
+log
+@Decouple the token code for "no request or macro" from the individual
+high-level parsers to allow further unification of functions that
+only need to recognize this code, but that don't care about different
+high-level macrosets beyond that.
+@
+text
+@a119 1
+		/* FALLTHROUGH */
+a208 1
+		/* FALLTHROUGH */
+a209 1
+		/* FALLTHROUGH */
+a210 1
+		/* FALLTHROUGH */
+a211 1
+		/* FALLTHROUGH */
+a212 1
+		/* FALLTHROUGH */
+a213 1
+		/* FALLTHROUGH */
+a494 1
+		/* FALLTHROUGH */
+@
+
+
+1.118
+log
+@Unify node handling functions:
+* node_alloc() for mdoc and man_node_alloc() -> roff_node_alloc()
+* node_append() for mdoc and man_node_append() -> roff_node_append()
+* mdoc_head_alloc() and man_head_alloc() -> roff_head_alloc()
+* mdoc_body_alloc() and man_body_alloc() -> roff_body_alloc()
+* mdoc_node_unlink() and man_node_unlink() -> roff_node_unlink()
+* mdoc_node_free() and man_node_free() -> roff_node_free()
+* mdoc_node_delete() and man_node_delete() -> roff_node_delete()
+Minus 130 lines of code, no functional change.
+@
+text
+@d508 1
+a508 1
+	case MAN_MAX:
+@
+
+
+1.117
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d36 1
+d260 1
+a260 1
+			man_node_delete(man, n);
+d288 1
+a288 1
+			man_node_delete(man, n);
+d392 1
+a392 1
+	man_node_delete(man, man->last);
+d513 1
+a513 1
+		man_node_delete(man, n);
+@
+
+
+1.116
+log
+@Third step towards parser unification:
+Replace struct mdoc_meta and struct man_meta by a unified struct roff_meta.
+Written of the train from London to Exeter on the way to p2k15.
+@
+text
+@d38 1
+a38 1
+#define	CHKARGS	  struct man *man, struct roff_node *n
+d101 1
+a101 1
+man_valid_post(struct man *man)
+@
+
+
+1.115
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d308 1
+a308 1
+	free(man->meta.source);
+d313 1
+a313 1
+	    man->meta.msec = man->meta.source = NULL;
+d317 1
+a317 1
+	/* ->TITLE<- MSEC DATE SOURCE VOL */
+d339 1
+a339 1
+	/* TITLE ->MSEC<- DATE SOURCE VOL */
+d351 1
+a351 1
+	/* TITLE MSEC ->DATE<- SOURCE VOL */
+d367 1
+a367 1
+	/* TITLE MSEC DATE ->SOURCE<- VOL */
+d370 1
+a370 1
+		man->meta.source = mandoc_strdup(n->string);
+d372 1
+a372 1
+		man->meta.source = mandoc_strdup(man->defos);
+d374 1
+a374 1
+	/* TITLE MSEC DATE SOURCE ->VOL<- */
+d449 2
+a450 2
+	free(man->meta.source);
+	man->meta.source = mandoc_strdup(p);
+d488 2
+a489 2
+	free(man->meta.source);
+	man->meta.source = mandoc_strdup(p);
+@
+
+
+1.114
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d38 1
+a38 1
+#define	CHKARGS	  struct man *man, struct man_node *n
+d103 1
+a103 1
+	struct man_node	*n;
+d303 1
+a303 1
+	struct man_node	*nb;
+d463 1
+a464 1
+	struct man_node	*nn;
+@
+
+
+1.113
+log
+@better error reporting regarding .OP .RS .UR .TH arguments
+@
+text
+@d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d31 3
+d35 1
+a35 2
+#include "mandoc.h"
+#include "mandoc_aux.h"
+a36 1
+#include "libmandoc.h"
+d112 1
+a112 1
+	case MAN_TEXT:
+d115 1
+a115 1
+	case MAN_ROOT:
+d118 1
+a118 1
+	case MAN_EQN:
+d120 1
+a120 1
+	case MAN_TBL:
+d190 1
+a190 1
+	if (n->type == MAN_HEAD && n->child == NULL)
+d247 1
+a247 1
+	if (n->type == MAN_BODY && n->child == NULL)
+d257 1
+a257 1
+	case MAN_BLOCK:
+d261 1
+a261 1
+	case MAN_BODY:
+d267 1
+a267 1
+	case MAN_HEAD:
+d285 1
+a285 1
+	case MAN_BLOCK:
+d289 1
+a289 1
+	case MAN_BODY:
+d431 1
+a431 1
+	if (NULL == n || MAN_TEXT != n->type)
+d468 1
+a468 1
+	if (NULL == n || MAN_TEXT != n->type)
+d478 3
+a480 1
+			if (nn && MAN_TEXT == nn->type && nn->string[0])
+@
+
+
+1.112
+log
+@better diagnostics about excess arguments to .PD .ft .sp
+@
+text
+@d4 1
+a4 1
+ * Copyright (c) 2010, 2012, 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+a40 2
+static	void	  check_eq2(CHKARGS);
+static	void	  check_le5(CHKARGS);
+d52 1
+d90 1
+a90 1
+	check_eq2,  /* OP */
+d171 12
+a182 9
+#define	INEQ_DEFINE(x, ineq, name) \
+static void \
+check_##name(CHKARGS) \
+{ \
+	if (n->nchild ineq (x)) \
+		return; \
+	mandoc_vmsg(MANDOCERR_ARGCOUNT, man->parse, n->line, n->pos, \
+	    "line arguments %s %d (have %d)", \
+	    #ineq, (x), n->nchild); \
+a184 3
+INEQ_DEFINE(2, ==, eq2)
+INEQ_DEFINE(5, <=, le5)
+
+d189 3
+a191 3
+	if (MAN_HEAD == n->type && 1 != n->nchild)
+		mandoc_vmsg(MANDOCERR_ARGCOUNT, man->parse, n->line,
+		    n->pos, "line arguments eq 1 (have %d)", n->nchild);
+a304 2
+	check_le5(man, n);
+
+d382 4
+@
+
+
+1.111
+log
+@better error reporting for .br .fi .nf with arguments
+@
+text
+@a41 1
+static	void	  check_le1(CHKARGS);
+d87 1
+a87 1
+	check_le1,  /* PD */
+a183 1
+INEQ_DEFINE(1, <=, le1)
+a240 4
+
+	if (1 < n->nchild)
+		mandoc_vmsg(MANDOCERR_ARGCOUNT, man->parse, n->line,
+		    n->pos, "want one child (have %d)", n->nchild);
+a491 3
+	if (n->tok == MAN_sp)
+		check_le1(man, n);
+
+@
+
+
+1.110
+log
+@Delete the legacy generic warning type MANDOCERR_ARGCWARN,
+replacing the last instances by more specific warnings.
+Improved functionality, minus 50 lines of code.
+@
+text
+@a40 1
+static	void	  check_eq0(CHKARGS);
+a183 1
+INEQ_DEFINE(0, ==, eq0)
+d402 1
+a402 3
+	check_eq0(man, n);
+
+	if (MAN_LITERAL & man->flags)
+a412 2
+	check_eq0(man, n);
+
+d498 1
+a498 3
+	if (n->tok == MAN_br)
+		check_eq0(man, n);
+	else
+@
+
+
+1.109
+log
+@Strangely, ignoring the roff(7) .na request was implemented in the man(7)
+parser.  Simplify the code by moving it into the roff(7) parser, also
+making it work for mdoc(7).
+@
+text
+@d255 3
+a257 3
+	if (MAN_BODY == n->type && 0 == n->nchild)
+		mandoc_msg(MANDOCERR_ARGCWARN, man->parse, n->line,
+		    n->pos, "want children (have none)");
+@
+
+
+1.108
+log
+@mdoc(7) already uses the mandoc(1) -Ios argument in the footer line
+when .Os has no argument, so do the same for man(7) when .TH has less
+than four arguments; there is no reason to treat both differently.
+Issue found following a question from Thomas Klausner <wiz at NetBSD>.
+@
+text
+@a81 1
+	check_eq0,  /* na */
+@
+
+
+1.107
+log
+@Simplify by making many functions in the man(7) parser void,
+and some cleanup; no functional change, minus 70 lines.
+@
+text
+@d382 2
+@
+
+
+1.106
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.105 2014/08/06 15:09:05 schwarze Exp $ */
+d39 1
+a39 1
+typedef	int	(*v_check)(CHKARGS);
+d41 18
+a58 18
+static	int	  check_eq0(CHKARGS);
+static	int	  check_eq2(CHKARGS);
+static	int	  check_le1(CHKARGS);
+static	int	  check_le5(CHKARGS);
+static	int	  check_par(CHKARGS);
+static	int	  check_part(CHKARGS);
+static	int	  check_root(CHKARGS);
+static	int	  check_text(CHKARGS);
+
+static	int	  post_AT(CHKARGS);
+static	int	  post_IP(CHKARGS);
+static	int	  post_vs(CHKARGS);
+static	int	  post_fi(CHKARGS);
+static	int	  post_ft(CHKARGS);
+static	int	  post_nf(CHKARGS);
+static	int	  post_TH(CHKARGS);
+static	int	  post_UC(CHKARGS);
+static	int	  post_UR(CHKARGS);
+d103 1
+a103 1
+int
+d111 1
+a111 1
+		return(1);
+d116 2
+a117 1
+		return(check_text(man, n));
+d119 2
+a120 1
+		return(check_root(man, n));
+d124 1
+a124 1
+		return(1);
+d127 3
+a129 1
+		return(*cp ? (*cp)(man, n) : 1);
+d133 1
+a133 1
+static int
+a158 2
+
+	return(1);
+d161 1
+a161 1
+static int
+d167 1
+a167 1
+		return(1);
+a172 1
+	return(1);
+d176 1
+a176 1
+static int \
+d180 1
+a180 1
+		return(1); \
+a183 1
+	return(1); \
+d191 1
+a191 1
+static int
+d198 1
+a198 2
+
+	return(check_part(man, n));
+d201 1
+a201 1
+static int
+d208 1
+a208 1
+		return(1);
+a249 2
+
+	return(1);
+d252 1
+a252 1
+static int
+a258 2
+
+	return(1);
+d261 1
+a261 1
+static int
+a286 2
+
+	return(1);
+d289 1
+a289 1
+static int
+a306 1
+	return(1);
+d309 1
+a309 1
+static int
+a396 1
+	return(1);
+d399 1
+a399 1
+static int
+a409 1
+	return(1);
+d412 1
+a412 1
+static int
+a422 1
+	return(1);
+d425 1
+a425 1
+static int
+a459 1
+	return(1);
+d462 1
+a462 1
+static int
+a496 1
+	return(1);
+d499 1
+a499 1
+static int
+d509 1
+a509 1
+		return(1);
+a528 2
+
+	return(1);
+@
+
+
+1.105
+log
+@Bring the handling of defective prologues even closer to groff,
+in particular relaxing the distinction between prologue and body
+and further improving messages.
+* The last .Dd wins and the last .Os wins, even in the body.
+* The last .Dt before the first body macro wins.
+* Missing title in .Dt defaults to UNTITLED.  Warn about it.
+* Missing section in .Dt does not default to 1.  But warn about it.
+* Do not warn multiple times about the same mdoc(7) prologue macro.
+* Warn about missing .Os.
+* Incomplete .TH defaults to empty strings.  Warn about it.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.104 2014/08/01 21:24:17 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+a18 1
+#endif
+@
+
+
+1.104
+log
+@Simplify man(7) validation:
+Drop pre-handlers, they were almost unused.
+Drop the needless complexity of allowing more than one post-handler.
+
+This saves one internal interface function, one static function, one
+private struct definition, sixteen static arrays, and 45 lines of code.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.103 2014/08/01 17:40:34 schwarze Exp $ */
+a45 1
+static	int	  check_ge2(CHKARGS);
+d144 1
+a144 1
+		mandoc_msg(MANDOCERR_TH_MISSING, man->parse,
+d152 2
+a153 2
+		man->meta.title = mandoc_strdup("unknown");
+		man->meta.msec = mandoc_strdup("1");
+a190 1
+INEQ_DEFINE(2, >=, ge2)
+a324 1
+	check_ge2(man, n);
+d354 1
+a354 1
+	} else
+d356 3
+d366 1
+a366 1
+	else
+d368 3
+@
+
+
+1.103
+log
+@demacrify: get rid of man_nmsg(), man_pmsg(), mdoc_nmsg(), mdoc_pmsg()
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.102 2014/08/01 17:27:44 schwarze Exp $ */
+a42 5
+struct	man_valid {
+	v_check	 *pres;
+	v_check	 *posts;
+};
+
+a47 1
+static	int	  check_head1(CHKARGS);
+d51 1
+a51 1
+static	void	  check_text(CHKARGS);
+d61 1
+a61 1
+static	int	  pre_sec(CHKARGS);
+d63 40
+a102 57
+static	v_check	  posts_at[] = { post_AT, NULL };
+static	v_check	  posts_br[] = { post_vs, check_eq0, NULL };
+static	v_check	  posts_eq0[] = { check_eq0, NULL };
+static	v_check	  posts_eq2[] = { check_eq2, NULL };
+static	v_check	  posts_fi[] = { check_eq0, post_fi, NULL };
+static	v_check	  posts_ft[] = { post_ft, NULL };
+static	v_check	  posts_ip[] = { post_IP, NULL };
+static	v_check	  posts_le1[] = { check_le1, NULL };
+static	v_check	  posts_nf[] = { check_eq0, post_nf, NULL };
+static	v_check	  posts_par[] = { check_par, NULL };
+static	v_check	  posts_part[] = { check_part, NULL };
+static	v_check	  posts_sp[] = { post_vs, check_le1, NULL };
+static	v_check	  posts_th[] = { check_ge2, check_le5, post_TH, NULL };
+static	v_check	  posts_uc[] = { post_UC, NULL };
+static	v_check	  posts_ur[] = { check_head1, check_part, NULL };
+static	v_check	  pres_sec[] = { pre_sec, NULL };
+
+static	const struct man_valid man_valids[MAN_MAX] = {
+	{ NULL, posts_br }, /* br */
+	{ NULL, posts_th }, /* TH */
+	{ pres_sec, NULL }, /* SH */
+	{ pres_sec, NULL }, /* SS */
+	{ NULL, NULL }, /* TP */
+	{ NULL, posts_par }, /* LP */
+	{ NULL, posts_par }, /* PP */
+	{ NULL, posts_par }, /* P */
+	{ NULL, posts_ip }, /* IP */
+	{ NULL, NULL }, /* HP */
+	{ NULL, NULL }, /* SM */
+	{ NULL, NULL }, /* SB */
+	{ NULL, NULL }, /* BI */
+	{ NULL, NULL }, /* IB */
+	{ NULL, NULL }, /* BR */
+	{ NULL, NULL }, /* RB */
+	{ NULL, NULL }, /* R */
+	{ NULL, NULL }, /* B */
+	{ NULL, NULL }, /* I */
+	{ NULL, NULL }, /* IR */
+	{ NULL, NULL }, /* RI */
+	{ NULL, posts_eq0 }, /* na */
+	{ NULL, posts_sp }, /* sp */
+	{ NULL, posts_nf }, /* nf */
+	{ NULL, posts_fi }, /* fi */
+	{ NULL, NULL }, /* RE */
+	{ NULL, posts_part }, /* RS */
+	{ NULL, NULL }, /* DT */
+	{ NULL, posts_uc }, /* UC */
+	{ NULL, posts_le1 }, /* PD */
+	{ NULL, posts_at }, /* AT */
+	{ NULL, NULL }, /* in */
+	{ NULL, posts_ft }, /* ft */
+	{ NULL, posts_eq2 }, /* OP */
+	{ NULL, posts_nf }, /* EX */
+	{ NULL, posts_fi }, /* EE */
+	{ NULL, posts_ur }, /* UR */
+	{ NULL, NULL }, /* UE */
+	{ NULL, NULL }, /* ll */
+a106 26
+man_valid_pre(struct man *man, struct man_node *n)
+{
+	v_check		*cp;
+
+	switch (n->type) {
+	case MAN_TEXT:
+		/* FALLTHROUGH */
+	case MAN_ROOT:
+		/* FALLTHROUGH */
+	case MAN_EQN:
+		/* FALLTHROUGH */
+	case MAN_TBL:
+		return(1);
+	default:
+		break;
+	}
+
+	if (NULL == (cp = man_valids[n->tok].pres))
+		return(1);
+	for ( ; *cp; cp++)
+		if ( ! (*cp)(man, n))
+			return(0);
+	return(1);
+}
+
+int
+d109 1
+d112 2
+a113 1
+	if (MAN_VALID & man->last->flags)
+d115 1
+a115 1
+	man->last->flags |= MAN_VALID;
+d117 1
+a117 1
+	switch (man->last->type) {
+d119 1
+a119 2
+		check_text(man, man->last);
+		return(1);
+d121 1
+a121 1
+		return(check_root(man, man->last));
+d127 2
+a128 1
+		break;
+a129 8
+
+	if (NULL == (cp = man_valids[man->last->tok].posts))
+		return(1);
+	for ( ; *cp; cp++)
+		if ( ! (*cp)(man, man->last))
+			return(0);
+
+	return(1);
+d162 1
+a162 1
+static void
+d168 1
+a168 1
+		return;
+d174 1
+d196 1
+a196 1
+check_head1(CHKARGS)
+d203 1
+a203 1
+	return(1);
+a259 9
+pre_sec(CHKARGS)
+{
+
+	if (MAN_BLOCK == n->type)
+		man->flags &= ~MAN_LITERAL;
+	return(1);
+}
+
+static int
+d327 3
+d411 2
+d425 2
+d515 5
+@
+
+
+1.102
+log
+@mention requests and macros in more messages
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.101 2014/07/30 23:01:39 schwarze Exp $ */
+d194 2
+a195 1
+		man_nmsg(man, n, MANDOCERR_DOC_EMPTY);
+d200 2
+a201 1
+		man_nmsg(man, n, MANDOCERR_TH_MISSING);
+@
+
+
+1.101
+log
+@Improve handling of next-line scope broken by end of file.
+Detect the condition earlier, report in the error message
+which block is broken, and delete the broken block.
+Consequently, empty section headers can no longer happen.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.100 2014/07/07 21:36:20 schwarze Exp $ */
+d407 1
+a407 1
+				mandoc_msg(MANDOCERR_TITLE_CASE,
+d410 1
+a410 1
+				    n->string);
+d438 3
+a440 1
+		man_nmsg(man, n ? n : nb, MANDOCERR_DATE_MISSING);
+d470 2
+a471 1
+		man_nmsg(man, n, MANDOCERR_NF_SKIP);
+d482 2
+a483 1
+		man_nmsg(man, n, MANDOCERR_FI_SKIP);
+@
+
+
+1.100
+log
+@Clean up ERROR messages related to document structure and macros:
+Hierarchical naming and mention macro names in messages.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.99 2014/07/06 19:09:00 schwarze Exp $ */
+a64 1
+static	int	  post_sec(CHKARGS);
+a79 1
+static	v_check	  posts_sec[] = { post_sec, NULL };
+d89 2
+a90 2
+	{ pres_sec, posts_sec }, /* SH */
+	{ pres_sec, posts_sec }, /* SS */
+d191 1
+a191 6
+	if ((MAN_BLINE | MAN_ELINE) & man->flags)
+		mandoc_msg(MANDOCERR_BLK_LINE, man->parse,
+		    0, 0, "at end of file");
+
+	man->flags &= ~MAN_BLINE;
+	man->flags &= ~MAN_ELINE;
+a320 11
+post_sec(CHKARGS)
+{
+
+	if ( ! (MAN_HEAD == n->type && 0 == n->nchild))
+		return(1);
+
+	man_nmsg(man, n, MANDOCERR_SYNTARGCOUNT);
+	return(0);
+}
+
+static int
+@
+
+
+1.99
+log
+@Clean up messages related to plain text and to escape sequences.
+* Mention invalid escape sequences and string names, and fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.98 2014/07/05 12:34:17 schwarze Exp $ */
+d193 3
+a195 4
+	if (MAN_BLINE & man->flags)
+		man_nmsg(man, n, MANDOCERR_SCOPEEXIT);
+	else if (MAN_ELINE & man->flags)
+		man_nmsg(man, n, MANDOCERR_SCOPEEXIT);
+@
+
+
+1.98
+log
+@Cleanup with respect to bad macro arguments.
+* Fix .Sm with invalid arg: move arg out and toggle mode.
+* Promote "unknown standard" from WARNING to ERROR, it loses information.
+* Delete MANDOCERR_BADWIDTH, it would only indicate a mandoc(1) bug.
+* Do not report MANDOCERR_BL_LATETYPE when there is no type at all.
+* Mention macro names, arguments and fallbacks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.97 2014/07/04 16:12:08 schwarze Exp $ */
+d233 2
+a234 1
+		man_pmsg(man, n->line, (int)(p - cp), MANDOCERR_BADTAB);
+@
+
+
+1.97
+log
+@Clean up messages regarding excess arguments:
+* Downgrade ".Bf -emphasis Em" from FATAL to WARNING.
+* Mention the macros, the arguments, and the fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.96 2014/07/02 11:43:20 schwarze Exp $ */
+d306 2
+a307 2
+		mandoc_vmsg(MANDOCERR_BADFONT, man->parse, n->line,
+		    n->pos, "%s", cp);
+@
+
+
+1.96
+log
+@Clean up warnings related to macros and nesting.
+* Hierarchical naming of enum mandocerr items.
+* Improve the wording to make it comprehensible.
+* Mention the offending macro.
+* Garbage collect one chunk of ancient, long unreachable code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.95 2014/07/02 05:52:24 schwarze Exp $ */
+d366 5
+a370 1
+			man_nmsg(man, n, MANDOCERR_ARGSLOST);
+@
+
+
+1.95
+log
+@Improve "skipping paragraph macro" messages,
+showing which macro was skipped and before or after what.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.94 2014/07/01 22:37:15 schwarze Exp $ */
+d482 1
+a482 1
+		man_nmsg(man, n, MANDOCERR_SCOPEREP);
+d493 1
+a493 1
+		man_nmsg(man, n, MANDOCERR_WNOSCOPE);
+@
+
+
+1.94
+log
+@Clean up the warnings related to document structure.
+* Hierarchical naming of the related enum mandocerr items.
+* Mention the offending macro, section title, or string.
+While here, improve some wordings:
+* Descriptive instead of imperative style.
+* Uniform style for "missing" and "skipping".
+* Where applicable, mention the fallback used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.93 2014/06/20 23:02:31 schwarze Exp $ */
+d360 3
+a362 1
+			man_nmsg(man, n, MANDOCERR_IGNPAR);
+d386 3
+a388 1
+			man_nmsg(man, n, MANDOCERR_IGNPAR);
+d586 3
+a588 1
+		man_nmsg(man, n, MANDOCERR_IGNPAR);
+@
+
+
+1.93
+log
+@As suggested by jmc@@, only include line and column numbers into messages
+when they are meaningful, to avoid confusing stuff like this:
+$ mandoc /dev/null
+mandoc: /dev/null:0:1: FATAL: not a manual
+Instead, just say:
+mandoc: /dev/null: FATAL: not a manual
+
+Another example this applies to is documents having a prologue,
+but lacking a body.  Do not throw a FATAL error for these; instead,
+issue a WARNING and show the empty document, in the man(7) case with
+the same amount of blank lines as groff does.  Also downgrade mdoc(7)
+documents having content before the first .Sh from FATAL to WARNING.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.92 2014/06/20 17:24:00 schwarze Exp $ */
+d417 4
+a420 1
+				man_nmsg(man, n, MANDOCERR_TITLE_CASE);
+@
+
+
+1.92
+log
+@Start systematic improvements of error reporting.
+So far, this covers all WARNINGs related to the prologue.
+
+1) hierarchical naming of MANDOCERR_* constants
+2) mention the macro name in messages where that adds clarity
+3) add one missing MANDOCERR_DATE_MISSING msg
+4) fix the wording of one message related to the man(7) prologue
+
+Started on the plane back from Ottawa.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.91 2014/04/20 16:46:04 schwarze Exp $ */
+d201 6
+a206 4
+	if (NULL == man->first->child) {
+		man_nmsg(man, n, MANDOCERR_NODOCBODY);
+		return(0);
+	} else if (NULL == man->meta.title) {
+@
+
+
+1.91
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.90 2014/03/30 19:47:48 schwarze Exp $ */
+d205 1
+a205 1
+		man_nmsg(man, n, MANDOCERR_NOTITLE);
+d393 1
+d405 2
+d415 1
+a415 1
+				man_nmsg(man, n, MANDOCERR_UPPERCASE);
+d441 1
+a441 1
+	} else
+d443 2
+@
+
+
+1.90
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.89 2014/03/23 11:25:26 schwarze Exp $ */
+d137 1
+a137 1
+	case (MAN_TEXT):
+d139 1
+a139 1
+	case (MAN_ROOT):
+d141 1
+a141 1
+	case (MAN_EQN):
+d143 1
+a143 1
+	case (MAN_TBL):
+d152 1
+a152 1
+		if ( ! (*cp)(man, n)) 
+a156 1
+
+d167 1
+a167 1
+	case (MAN_TEXT): 
+d170 1
+a170 1
+	case (MAN_ROOT):
+d172 1
+a172 1
+	case (MAN_EQN):
+d174 1
+a174 1
+	case (MAN_TBL):
+a188 1
+
+d190 1
+a190 1
+check_root(CHKARGS) 
+d212 1
+a212 1
+	        man->meta.title = mandoc_strdup("unknown");
+d241 2
+a242 2
+			"line arguments %s %d (have %d)", \
+			#ineq, (x), n->nchild); \
+d275 1
+a275 1
+	case ('1'):
+d277 1
+a277 1
+	case ('2'):
+d279 1
+a279 1
+	case ('3'):
+d281 1
+a281 1
+	case ('4'):
+d283 1
+a283 1
+	case ('I'):
+d285 1
+a285 1
+	case ('P'):
+d287 1
+a287 1
+	case ('R'):
+d291 1
+a291 1
+	case ('B'):
+d295 1
+a295 1
+	case ('C'):
+d304 2
+a305 3
+		mandoc_vmsg
+			(MANDOCERR_BADFONT, man->parse,
+			 n->line, n->pos, "%s", cp);
+d310 2
+a311 4
+		mandoc_vmsg
+			(MANDOCERR_ARGCOUNT, man->parse, n->line, 
+			 n->pos, "want one child (have %d)", 
+			 n->nchild);
+d329 1
+a329 1
+	if ( ! (MAN_HEAD == n->type && 0 == n->nchild)) 
+d341 2
+a342 2
+		mandoc_msg(MANDOCERR_ARGCWARN, man->parse, n->line, 
+				n->pos, "want children (have none)");
+a346 1
+
+d352 1
+a352 1
+	case (MAN_BLOCK):
+d356 1
+a356 1
+	case (MAN_BODY):
+d360 1
+a360 1
+	case (MAN_HEAD):
+d376 1
+a376 1
+	case (MAN_BLOCK):
+d380 1
+a380 1
+	case (MAN_BODY):
+d402 1
+a402 1
+		man->meta.msec = man->meta.source = NULL;
+d410 2
+a411 2
+			if (isalpha((unsigned char)*p) && 
+					! isupper((unsigned char)*p)) {
+d569 1
+a569 1
+	case (MAN_SH):
+d571 1
+a571 1
+	case (MAN_SS):
+d574 2
+a575 2
+	case (MAN_MAX):
+		/* 
+@
+
+
+1.89
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.88 2014/01/06 22:39:25 schwarze Exp $ */
+d127 1
+@
+
+
+1.88
+log
+@Another 18% speedup for mandocdb(8) -Q, found by gprof(1).
+In -Q mode, refrain form validating and normalizing the format
+of the date given in .Dd or .TH, as it won't be used anyway.
+
+For /usr/share/man, mandocdb -Q now takes 45% of the time of makewhatis(8).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.87 2013/12/31 18:07:42 schwarze Exp $ */
+d35 1
+@
+
+
+1.87
+log
+@remove assignments that will be overwritten right afterwards,
+and remove pointless local variables;
+found in a clang output from Ulrich Spoerlein <uqs at FreeBSD>
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.86 2013/10/17 20:54:58 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010, 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d214 2
+a215 2
+		man->meta.date = mandoc_normdate
+			(man->parse, NULL, n->line, n->pos);
+d438 4
+a441 2
+		man->meta.date = mandoc_normdate
+		    (man->parse, n->string, n->line, n->pos);
+@
+
+
+1.86
+log
+@Implement the .UR/.UE block (uniform resource identifier) introduced in the
+man-ext macros by Eric S. Raymond, enabled by default in groff_man(7).
+Usual disclaimer: You don't write new man(7) code, so you are not going
+to use these, either.
+Improves e.g. the bzr(1) and etherape(1) manuals.
+Thanks to naddy@@ for bringing these to my attention.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.85 2012/11/17 00:26:33 schwarze Exp $ */
+a397 1
+	int		 line, pos;
+a404 2
+	line = n->line;
+	pos = n->pos;
+a437 1
+		pos = n->pos;
+d439 1
+a439 1
+		    (man->parse, n->string, line, pos);
+@
+
+
+1.85
+log
+@Cleanup naming of local variables to make the code easier on the eye:
+Settle for "struct man *man", "struct mdoc *mdoc", "struct meta *meta"
+and avoid the confusing "*m" which was sometimes this, sometimes that.
+No functional change.
+
+ok kristaps@@ some time ago
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.84 2012/07/29 12:35:42 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010, 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d52 1
+d84 1
+d124 2
+d253 11
+@
+
+
+1.84
+log
+@Implement .PD for -Tascii.
+Reminded about the missing feature by millert@@.
+This reduces mandoc/groff differences in OpenBSD base by 25%.
+ok millert@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.83 2012/07/18 16:52:03 schwarze Exp $ */
+d38 1
+a38 1
+#define	CHKARGS	  struct man *m, struct man_node *n
+d126 1
+a126 1
+man_valid_pre(struct man *m, struct man_node *n)
+d146 1
+a146 1
+		if ( ! (*cp)(m, n)) 
+d153 1
+a153 1
+man_valid_post(struct man *m)
+d157 1
+a157 1
+	if (MAN_VALID & m->last->flags)
+d159 1
+a159 1
+	m->last->flags |= MAN_VALID;
+d161 1
+a161 1
+	switch (m->last->type) {
+d163 1
+a163 1
+		check_text(m, m->last);
+d166 1
+a166 1
+		return(check_root(m, m->last));
+d175 1
+a175 1
+	if (NULL == (cp = man_valids[m->last->tok].posts))
+d178 1
+a178 1
+		if ( ! (*cp)(m, m->last))
+d189 4
+a192 4
+	if (MAN_BLINE & m->flags)
+		man_nmsg(m, n, MANDOCERR_SCOPEEXIT);
+	else if (MAN_ELINE & m->flags)
+		man_nmsg(m, n, MANDOCERR_SCOPEEXIT);
+d194 2
+a195 2
+	m->flags &= ~MAN_BLINE;
+	m->flags &= ~MAN_ELINE;
+d197 2
+a198 2
+	if (NULL == m->first->child) {
+		man_nmsg(m, n, MANDOCERR_NODOCBODY);
+d200 2
+a201 2
+	} else if (NULL == m->meta.title) {
+		man_nmsg(m, n, MANDOCERR_NOTITLE);
+d208 4
+a211 4
+	        m->meta.title = mandoc_strdup("unknown");
+		m->meta.msec = mandoc_strdup("1");
+		m->meta.date = mandoc_normdate
+			(m->parse, NULL, n->line, n->pos);
+d222 1
+a222 1
+	if (MAN_LITERAL & m->flags)
+d227 1
+a227 1
+		man_pmsg(m, n->line, (int)(p - cp), MANDOCERR_BADTAB);
+d236 1
+a236 1
+	mandoc_vmsg(MANDOCERR_ARGCOUNT, m->parse, n->line, n->pos, \
+d290 1
+a290 1
+			(MANDOCERR_BADFONT, m->parse,
+d297 1
+a297 1
+			(MANDOCERR_ARGCOUNT, m->parse, n->line, 
+d309 1
+a309 1
+		m->flags &= ~MAN_LITERAL;
+d320 1
+a320 1
+	man_nmsg(m, n, MANDOCERR_SYNTARGCOUNT);
+d329 1
+a329 1
+		mandoc_msg(MANDOCERR_ARGCWARN, m->parse, n->line, 
+d343 1
+a343 1
+			man_node_delete(m, n);
+d347 1
+a347 1
+			man_nmsg(m, n, MANDOCERR_IGNPAR);
+d351 1
+a351 1
+			man_nmsg(m, n, MANDOCERR_ARGSLOST);
+d367 1
+a367 1
+			man_node_delete(m, n);
+d371 1
+a371 1
+			man_nmsg(m, n, MANDOCERR_IGNPAR);
+d385 5
+a389 10
+	if (m->meta.title)
+		free(m->meta.title);
+	if (m->meta.vol)
+		free(m->meta.vol);
+	if (m->meta.source)
+		free(m->meta.source);
+	if (m->meta.msec)
+		free(m->meta.msec);
+	if (m->meta.date)
+		free(m->meta.date);
+d393 2
+a394 2
+	m->meta.title = m->meta.vol = m->meta.date =
+		m->meta.msec = m->meta.source = NULL;
+d404 1
+a404 1
+				man_nmsg(m, n, MANDOCERR_UPPERCASE);
+d408 1
+a408 1
+		m->meta.title = mandoc_strdup(n->string);
+d410 1
+a410 1
+		m->meta.title = mandoc_strdup("");
+d417 1
+a417 1
+		m->meta.msec = mandoc_strdup(n->string);
+d419 1
+a419 1
+		m->meta.msec = mandoc_strdup("");
+d427 2
+a428 2
+		m->meta.date = mandoc_normdate
+		    (m->parse, n->string, line, pos);
+d430 1
+a430 1
+		m->meta.date = mandoc_strdup("");
+d435 1
+a435 1
+		m->meta.source = mandoc_strdup(n->string);
+d441 4
+a444 4
+		m->meta.vol = mandoc_strdup(n->string);
+	else if ('\0' != m->meta.msec[0] &&
+	    (NULL != (p = mandoc_a2msec(m->meta.msec))))
+		m->meta.vol = mandoc_strdup(p);
+d450 1
+a450 1
+	man_node_delete(m, m->last);
+d458 2
+a459 2
+	if (MAN_LITERAL & m->flags)
+		man_nmsg(m, n, MANDOCERR_SCOPEREP);
+d461 1
+a461 1
+	m->flags |= MAN_LITERAL;
+d469 2
+a470 2
+	if ( ! (MAN_LITERAL & m->flags))
+		man_nmsg(m, n, MANDOCERR_WNOSCOPE);
+d472 1
+a472 1
+	m->flags &= ~MAN_LITERAL;
+d509 2
+a510 4
+	if (m->meta.source)
+		free(m->meta.source);
+
+	m->meta.source = mandoc_strdup(p);
+d547 2
+a548 4
+	if (m->meta.source)
+		free(m->meta.source);
+
+	m->meta.source = mandoc_strdup(p);
+d563 1
+a563 1
+		man_nmsg(m, n, MANDOCERR_IGNPAR);
+d570 1
+a570 1
+		man_node_delete(m, n);
+@
+
+
+1.83
+log
+@Drop empty .IP such that is does not cause additional vertical spacing.
+Issue first reported by naddy@@ in rsync(1).
+OpenBSD rev. 1.55.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.82 2012/07/18 16:41:09 schwarze Exp $ */
+d75 1
+d115 1
+a115 1
+	{ NULL, NULL }, /* PD */
+@
+
+
+1.82
+log
+@Drop .sp and .br right after .SH and .SS.
+
+Fixes vertical spacing after "OPTIONS" in gcc(1).
+Issue first reported by naddy@@ in rsync(1).
+
+OpenBSD rev. 1.54.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.81 2012/06/02 20:16:23 schwarze Exp $ */
+d58 1
+d74 1
+d93 1
+a93 1
+	{ NULL, NULL }, /* IP */
+d359 18
+@
+
+
+1.81
+log
+@Minimal implementation of .EX and .EE for GNU compatibility.
+Do not use this, it is not portable and only defined in esr's man-ext.
+For example, sox(1) wants these macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.80 2012/01/03 15:16:24 kristaps Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010 Ingo Schwarze <schwarze@@openbsd.org>
+d544 14
+a557 5
+	/* 
+	 * Don't warn about this because it occurs in pod2man and would
+	 * cause considerable (unfixable) warnage.
+	 */
+	if (NULL == n->prev && MAN_ROOT == n->parent->type)
+d559 4
+@
+
+
+1.80
+log
+@Add support for `OP', one of the extended man macros.  This also requires
+some man(7) changes to accomodate for the an-ext compatibility.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.79 2011/12/02 01:37:14 schwarze Exp $ */
+d117 2
+@
+
+
+1.79
+log
+@In man(7), when no explicit volume name is given, use the default
+volume name for the respective manual section, just like in mdoc(7).
+This gives us nicer page headers for cvs(1), lynx(1), tic(1),
+mkhybrid(8), and many curses(3) manuals.
+
+ok kristaps@@
+
+To not break compatibility, i wrote a corresponding patch for GNU troff
+which Werner Lemberg accepted upstream at rev. 1.65 of:
+http://cvs.savannah.gnu.org/viewvc/groff/tmac/an-old.tmac?root=groff
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.78 2011/11/07 01:24:40 schwarze Exp $ */
+d48 1
+d70 1
+d104 2
+a105 2
+	{ NULL, posts_eq0 }, /* na */ /* FIXME: should warn only. */
+	{ NULL, posts_sp }, /* sp */ /* FIXME: should warn only. */
+d116 1
+d238 1
+@
+
+
+1.78
+log
+@When the HEAD scope of .TP is broken by another block macro,
+do not abort with a FATAL error, but report a report a WARNING,
+remove the broken .TP from the syntax tree, and prod on.
+Reported repeatedly by ports people, at least by brad@@ and jeremy@@.
+Also fixes rendition(4) in Xenocara.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.77 2011/11/03 20:48:52 schwarze Exp $ */
+d416 1
+d420 3
+@
+
+
+1.77
+log
+@When .TH sets no data, leave the date field in the page footer blank,
+do not use the current date.  This removes a gratuitous output difference
+with respect to groff.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.76 2011/10/16 12:20:34 schwarze Exp $ */
+a46 1
+static	int	  check_bline(CHKARGS);
+d78 1
+a78 2
+static	v_check	  pres_bline[] = { check_bline, NULL };
+static	v_check	  pres_sec[] = { check_bline, pre_sec, NULL};
+d82 1
+a82 1
+	{ pres_bline, posts_th }, /* TH */
+d85 6
+a90 6
+	{ pres_bline, NULL }, /* TP */
+	{ pres_bline, posts_par }, /* LP */
+	{ pres_bline, posts_par }, /* PP */
+	{ pres_bline, posts_par }, /* P */
+	{ pres_bline, NULL }, /* IP */
+	{ pres_bline, NULL }, /* HP */
+d104 2
+a105 2
+	{ pres_bline, posts_nf }, /* nf */
+	{ pres_bline, posts_fi }, /* fi */
+a352 13
+check_bline(CHKARGS)
+{
+
+	assert( ! (MAN_ELINE & m->flags));
+	if (MAN_BLINE & m->flags) {
+		man_nmsg(m, n, MANDOCERR_SYNTLINESCOPE);
+		return(0);
+	}
+
+	return(1);
+}
+
+static int
+@
+
+
+1.76
+log
+@Remove a bunch of useless assignments,
+and assert that print_bvspace cannot be called on NULL pointers.
+No change in behaviour, none of these were bugs,
+but the code becomes easier to understand.
+Based on a clang report posted by joerg@@; ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.75 2011/09/06 17:53:50 kristaps Exp $ */
+d418 1
+a418 1
+	if (n)
+d420 4
+a423 2
+	m->meta.date = mandoc_normdate
+		(m->parse, n ? n->string : NULL, line, pos);
+@
+
+
+1.75
+log
+@Revert removal of tab warning, suggested by schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.73 2011/09/04 09:49:46 kristaps Exp $ */
+d216 5
+a220 4
+	cp = p = n->string;
+	for (cp = p; NULL != (p = strchr(p, '\t')); p++) {
+		if (MAN_LITERAL & m->flags)
+			continue;
+a221 1
+	}
+a476 1
+	n = m->last->child;
+@
+
+
+1.74
+log
+@Remove check for tab.  man(7) says tab is Ok.
+@
+text
+@d55 1
+d156 3
+a160 2
+	case (MAN_TEXT): 
+		/* FALLTHROUGH */
+d211 13
+@
+
+
+1.73
+log
+@Teach -man that a literal context should be closed by SS/SH in the
+backend (the front-end already accomodated for this).  Found indirectly
+from a question by Brad Smith.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.72 2011/07/26 14:09:01 kristaps Exp $ */
+a54 1
+static	void	  check_text(CHKARGS);
+a154 3
+	case (MAN_TEXT): 
+		check_text(m, m->last);
+		return(1);
+d157 2
+a208 13
+static void
+check_text(CHKARGS)
+{
+	char		*cp, *p;
+
+	cp = p = n->string;
+	for (cp = p; NULL != (p = strchr(p, '\t')); p++) {
+		if (MAN_LITERAL & m->flags)
+			continue;
+		man_pmsg(m, n->line, (int)(p - cp), MANDOCERR_BADTAB);
+	}
+}
+
+@
+
+
+1.72
+log
+@Move checking of escapes into roff.c, where we're already stepping
+through looking for user-defined escapes.  This clears up a nice bit of
+validation code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.71 2011/07/24 18:15:14 kristaps Exp $ */
+a48 1
+static	int	  check_ft(CHKARGS);
+a54 1
+static	int	  check_sec(CHKARGS);
+d60 1
+d62 1
+d65 1
+d71 1
+a71 1
+static	v_check	  posts_ft[] = { check_ft, NULL };
+d75 1
+a75 1
+static	v_check	  posts_sec[] = { check_sec, NULL };
+d80 1
+d85 2
+a86 2
+	{ pres_bline, posts_sec }, /* SH */
+	{ pres_bline, posts_sec }, /* SS */
+d242 1
+a242 1
+check_ft(CHKARGS)
+d298 10
+a307 1
+check_sec(CHKARGS)
+a316 1
+
+@
+
+
+1.71
+log
+@Scary-looking but otherwise harmless changes allow me to build for Windows.
+That is to say, with mingw32.  This amounts to the following:
+
+ (1) break compat.c into compat_strlcpy.c and compat_strlcat.c
+ (2) add compat_getsubopt.c (from OpenBSD) and test-getsubopt.c
+ (3) add test-strptime.c for HAVE_STRPTIME
+ (4) add ifdef bits here and there, where necessary
+ (5) remove some harmless unportable stuff (u_char, localtime_r)
+
+I've added the appropriate mdocml.zip target to the Makefile, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.70 2011/07/08 09:34:06 kristaps Exp $ */
+d210 1
+a210 1
+check_text(CHKARGS) 
+d212 5
+a216 18
+	char		*p, *pp, *cpp;
+	int		 pos;
+	size_t		 sz;
+
+	p = n->string;
+	pos = n->pos + 1;
+
+	while ('\0' != *p) {
+		sz = strcspn(p, "\t\\");
+
+		p += (int)sz;
+		pos += (int)sz;
+
+		if ('\t' == *p) {
+			if ( ! (MAN_LITERAL & m->flags))
+				man_pmsg(m, n->line, pos, MANDOCERR_BADTAB);
+			p++;
+			pos++;
+d218 1
+a218 18
+		} else if ('\0' == *p)
+			break;
+
+		pos++;
+		pp = ++p;
+
+		if (ESCAPE_ERROR == mandoc_escape
+				((const char **)&pp, NULL, NULL)) {
+			man_pmsg(m, n->line, pos, MANDOCERR_BADESCAPE);
+			break;
+		}
+
+		cpp = p;
+		while (NULL != (cpp = memchr(cpp, ASCII_HYPH, pp - cpp)))
+			*cpp = '-';
+
+		pos += pp - p;
+		p = pp;
+@
+
+
+1.70
+log
+@Make sure that `br' and `sp' don't emit space before the initial `SH' in
+-man.  This actually seems to be what groff does.  Sort-of.  Anyway,
+it's required to get perlpod pages rendered nicely, so until perlpod
+stops producing shit, do it.  Ok schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.69 2011/04/13 09:57:08 kristaps Exp $ */
+d415 2
+a416 1
+			if (isalpha((u_char)*p) && ! isupper((u_char)*p)) {
+@
+
+
+1.69
+log
+@Remove the warning for empty bodies of `Sh', `Ss', `SH', and `SS'.  This
+prompted by a TODO by schwarze@@, originally from Gleydson Soares, that
+an empty `SS' was raising an error (it hasn't for some time).  It makes
+sense these shouldn't warn, as omitting their contents doesn't change
+anything in the structure of the document (groff and mandoc specifically
+account for the whitespace between empty sections).
+
+This doesn't change any manuals, which only refer to the line arguments
+(or possibly next-line, in the case of man(7) syntax).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.68 2011/04/09 15:29:40 kristaps Exp $ */
+d60 1
+d67 1
+a69 1
+static	v_check	  posts_le1[] = { check_le1, NULL };
+d75 1
+a79 1
+
+d81 1
+a81 1
+	{ NULL, posts_eq0 }, /* br */
+d103 1
+a103 1
+	{ NULL, posts_le1 }, /* sp */ /* FIXME: should warn only. */
+d562 14
+@
+
+
+1.68
+log
+@Remove a2roffdeco() and mandoc_special() functions and replace them with
+a public (mandoc.h) function mandoc_escape(), which merges the
+functionality of both prior functions.
+
+Reason: code duplication.  The a2roffdeco() and mandoc_special()
+functions were pretty much the same thing and both quite complex.  This
+allows one function to receive improvements in (e.g.) subexpression
+handling and performance, instead of having to replicate functionality.
+
+As such, the mandoc_escape() function already handles a superset of the
+escapes handled in previous versions and has improvements in performance
+(using strcspn(), for example) and reliable handling of subexpressions.
+
+This code Works For Me, but may need work to catch any regressions.
+Since the benefits are great (leaner code, simpler API), I'd rather have
+it in-tree than floating as a patch.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.67 2011/03/22 15:30:30 kristaps Exp $ */
+d328 2
+a329 6
+	if (MAN_HEAD == n->type && 0 == n->nchild) {
+		man_nmsg(m, n, MANDOCERR_SYNTARGCOUNT);
+		return(0);
+	} else if (MAN_BODY == n->type && 0 == n->nchild)
+		mandoc_msg(MANDOCERR_ARGCWARN, m->parse, n->line, 
+				n->pos, "want children (have none)");
+d331 2
+a332 1
+	return(1);
+@
+
+
+1.67
+log
+@Make empty sections and parts (SH, SS, RS) only produce a warning if it
+has no children.  Noted by Brad, added to TODO by schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.66 2011/03/22 14:33:05 kristaps Exp $ */
+d57 1
+a57 1
+static	int	  check_text(CHKARGS);
+d154 2
+a155 1
+		return(check_text(m, m->last));
+d208 1
+a208 2
+
+static int
+d211 2
+a212 2
+	char		*p;
+	int		 pos, c;
+d215 4
+a218 1
+	for (p = n->string, pos = n->pos + 1; *p; p++, pos++) {
+d220 1
+d222 1
+d224 7
+a230 1
+		if ('\0' == *p)
+d233 2
+a234 1
+		pos += (int)sz;
+d236 4
+a239 5
+		if ('\t' == *p) {
+			if (MAN_LITERAL & m->flags)
+				continue;
+			man_pmsg(m, n->line, pos, MANDOCERR_BADTAB);
+			continue;
+d242 3
+a244 1
+		/* Check the special character. */
+d246 2
+a247 6
+		c = mandoc_special(p);
+		if (c) {
+			p += c - 1;
+			pos += c - 1;
+		} else
+			man_pmsg(m, n->line, pos, MANDOCERR_BADESCAPE);
+a248 2
+
+	return(1);
+a250 1
+
+@
+
+
+1.66
+log
+@libmdoc.h and libman.h were including mdoc.h and man.h, respectively.
+Don't have them do that (includes in header files = faugh), and have
+individual files directly include these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.65 2011/03/20 16:02:05 kristaps Exp $ */
+d326 2
+a327 1
+		man_nmsg(m, n, MANDOCERR_NOBODY);
+d338 2
+a339 1
+		man_nmsg(m, n, MANDOCERR_NOBODY);
+@
+
+
+1.65
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.64 2011/03/17 11:56:17 kristaps Exp $ */
+d33 1
+@
+
+
+1.64
+log
+@Clean-up in libman: make all calls to man_*msg not check return value.
+Also convert man_vmsg to return void.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.63 2011/03/07 01:35:51 schwarze Exp $ */
+d199 2
+a200 2
+		m->meta.date = mandoc_normdate(NULL,
+		    m->msg, m->data, n->line, n->pos);
+d250 1
+a250 1
+	man_vmsg(m, MANDOCERR_ARGCOUNT, n->line, n->pos, \
+d302 3
+a304 2
+		man_vmsg(m, MANDOCERR_BADFONT,
+				n->line, n->pos, "%s", cp);
+d309 4
+a312 2
+		man_vmsg(m, MANDOCERR_ARGCOUNT, n->line, n->pos,
+				"want one child (have %d)", n->nchild);
+d432 2
+a433 2
+	m->meta.date = mandoc_normdate(n ? n->string : NULL,
+	    m->msg, m->data, line, pos);
+@
+
+
+1.63
+log
+@Clean up date handling,
+as a first step to get rid of the frequent petty warnings in this area:
+ - always store dates as strings, not as seconds since the Epoch
+ - for input, try the three most common formats everywhere
+ - for unrecognized format, just pass the date though verbatim
+ - when there is no date at all, still use the current date
+Originally triggered by a one-line patch from Tim van der Molen,
+<tbvdm at xs4all dot nl>, which is included here.
+Feedback and OK on manual parts from jmc@@.
+"please check this in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.62 2011/02/09 09:18:15 kristaps Exp $ */
+d226 2
+a227 3
+			if (man_pmsg(m, n->line, pos, MANDOCERR_BADTAB))
+				continue;
+			return(0);
+@
+
+
+1.62
+log
+@Allow -man to process EQN as well.  Also fix a segfault in missing case
+statements in the post-handler for EQN in -mdoc and -man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.61 2011/02/06 21:44:36 kristaps Exp $ */
+d3 2
+a4 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+a197 1
+		m->meta.date = time(NULL);
+d199 2
+d303 1
+a303 1
+		man_vmsg(m, MANDOCERR_BADFONT, 
+d382 1
+d392 2
+a393 2
+	if (m->meta.rawdate)
+		free(m->meta.rawdate);
+d395 3
+a397 1
+	m->meta.title = m->meta.vol = m->meta.rawdate =
+a398 1
+	m->meta.date = 0;
+a425 7
+	/*
+	 * Try to parse the date.  If this works, stash the epoch (this
+	 * is optimal because we can reformat it in the canonical form).
+	 * If it doesn't parse, isn't specified at all, or is an empty
+	 * string, then use the current date.
+	 */
+
+d428 4
+a431 9
+	if (n && n->string && *n->string) {
+		m->meta.date = mandoc_a2time
+			(MTIME_ISO_8601, n->string);
+		if (0 == m->meta.date) {
+			man_nmsg(m, n, MANDOCERR_BADDATE);
+			m->meta.rawdate = mandoc_strdup(n->string);
+		}
+	} else
+		m->meta.date = time(NULL);
+@
+
+
+1.61
+log
+@Add initial libmdoc and libman top-most machinery for accepting TBL
+directives.  For now this will just ignore them (except for -Ttree,
+which just notes that an EQN's been accepted).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.60 2011/01/17 00:21:29 schwarze Exp $ */
+d155 2
+@
+
+
+1.60
+log
+@Refrain from throwing fatal errors for
+* .br .sp .nf .fi .na with arguments - just skip the arguments
+* .TH lacking arguments - use empty strings instead like groff
+* .TH with excessive arguments - skip those
+Reminded by joerg@@, ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.59 2011/01/12 16:55:22 kristaps Exp $ */
+d124 2
+@
+
+
+1.59
+log
+@Downgrade -man message of ignored empty paragraph to MANDOC_IGNPAR.  The
+change in man_macro.c was from an assertion caused by a subtle problem:
+(1) macro is removed, causing m->last to be m->last->parent; (2) by jumping
+to the m->last->parent after post-validation, the original
+m->last->parent is skipped; (3) the rewinder climbs to the root of the
+tree and aborts.
+
+The original issue recorded in the TODO by schwarze@@, reminded by Brad
+Smith.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.58 2011/01/12 15:50:42 kristaps Exp $ */
+a55 1
+static	int	  check_title(CHKARGS);
+d72 1
+a72 1
+static	v_check	  posts_th[] = { check_ge2, check_le5, check_title, post_TH, NULL };
+a201 23
+check_title(CHKARGS) 
+{
+	const char	*p;
+
+	assert(n->child);
+	/* FIXME: is this sufficient? */
+	if ('\0' == *n->child->string) {
+		man_nmsg(m, n, MANDOCERR_SYNTARGCOUNT);
+		return(0);
+	}
+
+	for (p = n->child->string; '\0' != *p; p++)
+		/* Only warn about this once... */
+		if (isalpha((u_char)*p) && ! isupper((u_char)*p)) {
+			man_nmsg(m, n, MANDOCERR_UPPERCASE);
+			break;
+		}
+
+	return(1);
+}
+
+
+static int
+d245 1
+a245 1
+	man_vmsg(m, MANDOCERR_SYNTARGCOUNT, n->line, n->pos, \
+d248 1
+a248 1
+	return(0); \
+d375 1
+d395 11
+a405 2
+	assert(n);
+	m->meta.title = mandoc_strdup(n->string);
+d409 6
+a414 3
+	n = n->next;
+	assert(n);
+	m->meta.msec = mandoc_strdup(n->string);
+d425 2
+a426 1
+	n = n->next;
+@
+
+
+1.58
+log
+@Make out-of-context `fi' invocations not cause an error, but just a
+warning.  From a TODO by schwarze@@, originally noted by Brad Smith.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.57 2011/01/01 12:59:17 kristaps Exp $ */
+d83 1
+a83 1
+	{ pres_bline, posts_par }, /* TP */
+d87 2
+a88 2
+	{ pres_bline, posts_par }, /* IP */
+	{ pres_bline, posts_par }, /* HP */
+d362 16
+a377 27
+	if (MAN_BODY == n->type) 
+		switch (n->tok) {
+		case (MAN_IP):
+			/* FALLTHROUGH */
+		case (MAN_HP):
+			/* FALLTHROUGH */
+		case (MAN_TP):
+			/* Body-less lists are ok. */
+			break;
+		default:
+			if (0 == n->nchild)
+				man_nmsg(m, n, MANDOCERR_NOBODY);
+			break;
+		}
+	if (MAN_HEAD == n->type)
+		switch (n->tok) {
+		case (MAN_PP):
+			/* FALLTHROUGH */
+		case (MAN_P):
+			/* FALLTHROUGH */
+		case (MAN_LP):
+			if (n->nchild)
+				man_nmsg(m, n, MANDOCERR_ARGSLOST);
+			break;
+		default:
+			break;
+		}
+@
+
+
+1.57
+log
+@Add -man support for tables.  Like -mdoc, this consists of an
+external-facing function man_addspan() (this required shuffling around
+the descope routine) and hooks elsewhere.
+
+Also fixed mdoc.c's post-validation of tables.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.56 2010/12/08 10:58:22 kristaps Exp $ */
+d492 1
+a492 1
+		man_nmsg(m, n, MANDOCERR_NOSCOPE);
+@
+
+
+1.56
+log
+@Remove `i' and `r' macro handlers.  These macros, originally part of the
+me package, aren't recognised by "groff -mandoc" so we don't need to do
+so either.  Discussed on tech@@ with schwarze@@.
+
+While at it, remove references to `b' in man.7.  As far as I know, this
+was never supported anyway.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.55 2010/12/06 15:31:19 kristaps Exp $ */
+d120 6
+a125 3
+	if (MAN_TEXT == n->type)
+		return(1);
+	if (MAN_ROOT == n->type)
+d127 3
+d154 2
+@
+
+
+1.55
+log
+@Add support for `ft' macro found in groff(7).  Based on a patch by
+schwarze@@, but without the -T[x]html handling, which structurally does
+not work.  Also add man.7 documentation (not in original patch).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.54 2010/12/06 13:56:56 kristaps Exp $ */
+a100 1
+	{ NULL, NULL }, /* i */
+a103 1
+	{ NULL, NULL }, /* r */
+@
+
+
+1.54
+log
+@Make return(man_nmsg(...)) by a simple declaration.
+
+Make non-uppercase warning only occur once.
+
+Make scope-open-on-error warning only occur once.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.53 2010/12/06 13:50:41 kristaps Exp $ */
+d47 1
+d68 1
+d113 1
+d274 52
+@
+
+
+1.53
+log
+@Allow HP/IP/etc. to have no arguments, as they're optional.  From a field-
+tested patch by schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.52 2010/12/05 16:14:16 kristaps Exp $ */
+d166 3
+a168 3
+		return(man_nmsg(m, n, MANDOCERR_SCOPEEXIT));
+	if (MAN_ELINE & m->flags)
+		return(man_nmsg(m, n, MANDOCERR_SCOPEEXIT));
+d177 2
+a178 2
+		if ( ! man_nmsg(m, n, MANDOCERR_NOTITLE))
+			return(0);
+a181 2
+		 * 
+		 * FIXME: this should be in man_action.c.
+d183 1
+d206 5
+a210 3
+		if (isalpha((u_char)*p) && ! isupper((u_char)*p))
+			if ( ! man_nmsg(m, n, MANDOCERR_UPPERCASE))
+				return(0);
+d280 1
+a280 1
+		return(man_nmsg(m, n, MANDOCERR_NOBODY));
+d291 2
+a292 1
+		return(man_nmsg(m, n, MANDOCERR_NOBODY));
+d311 3
+a313 3
+			if (n->nchild)
+				break;
+			return(man_nmsg(m, n, MANDOCERR_NOBODY));
+d322 3
+a324 3
+			if (0 == n->nchild)
+				break;
+			return(man_nmsg(m, n, MANDOCERR_ARGSLOST));
+@
+
+
+1.52
+log
+@Remove `Sp', `Vb', and `Ve' (as per schwarze@@'s changes in OpenBSD),
+which are now accomodated for the new libroff modifications.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.51 2010/11/30 15:24:27 kristaps Exp $ */
+d324 1
+a324 3
+			if (n->nchild)
+				break;
+			return(man_nmsg(m, n, MANDOCERR_NOARGS));
+@
+
+
+1.51
+log
+@Move all man_action.c routines into man_validate.c
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.50 2010/10/11 15:45:36 kristaps Exp $ */
+a72 1
+static	v_check	  posts_vb[] = { check_le1, post_nf, NULL };
+a108 3
+	{ NULL, posts_le1 }, /* Sp */ /* FIXME: should warn only. */
+	{ pres_bline, posts_vb }, /* Vb */ /* FIXME: should warn only. */
+	{ pres_bline, posts_fi }, /* Ve */
+@
+
+
+1.50
+log
+@Quiesce Linux header-inclusion warnings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.49 2010/08/20 01:02:07 schwarze Exp $ */
+d57 7
+d65 3
+a67 1
+static	v_check	  posts_th[] = { check_ge2, check_le5, check_title, NULL };
+d71 3
+a73 1
+static	v_check	  posts_le1[] = { check_le1, NULL };
+d76 1
+d102 2
+a103 2
+	{ pres_bline, posts_eq0 }, /* nf */
+	{ pres_bline, posts_eq0 }, /* fi */
+d108 1
+a108 1
+	{ NULL, NULL }, /* UC */
+d111 3
+a113 3
+	{ pres_bline, posts_le1 }, /* Vb */ /* FIXME: should warn only. */
+	{ pres_bline, posts_eq0 }, /* Ve */
+	{ NULL, NULL }, /* AT */
+d350 171
+@
+
+
+1.49
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.48 2010/07/31 23:52:58 schwarze Exp $ */
+d30 1
+@
+
+
+1.48
+log
+@Sync to OpenBSD: add missing Copyright years.
+I checked that substantial changes were committed
+to these files during these years.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.47 2010/07/22 23:03:15 kristaps Exp $ */
+d236 2
+a237 6
+			continue;
+		}
+
+		c = man_pmsg(m, n->line, pos, MANDOCERR_BADESCAPE);
+		if ( ! (MAN_IGN_ESCAPE & m->pflags) && ! c)
+			return(c);
+@
+
+
+1.47
+log
+@Added `in' macro support for -man -Tascii.  This is not yet supported in
+-Thtml (I'm surprised to note that neither is LITERAL mode).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.46 2010/07/20 14:56:42 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.46
+log
+@Strip non-graphable input characters from input.  The manuals
+specifically say that this is not allowed, and were it allowed, output
+would be inconsistent across output media (-Tps will puke,
+non-your-charset terminals will puke, etc.).
+
+With this done, simplify check_text() to only check escapes and for
+tabs.  Add in a new tab warning, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.45 2010/06/28 14:39:17 kristaps Exp $ */
+d86 1
+a86 1
+	{ NULL, posts_eq0 }, /* na */
+d88 1
+a88 1
+	{ NULL, posts_le1 }, /* sp */
+d97 2
+a98 2
+	{ NULL, posts_le1 }, /* Sp */
+	{ pres_bline, posts_le1 }, /* Vb */
+d101 1
+@
+
+
+1.45
+log
+@Notes: this must be done later.  \b in the input will cause havoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.44 2010/06/19 20:46:28 kristaps Exp $ */
+d29 1
+d210 1
+d212 6
+a217 1
+	assert(n->string);
+d219 6
+a224 6
+	for (p = n->string, pos = n->pos + 1; *p; p++, pos++) {
+		if ('\\' == *p) {
+			c = mandoc_special(p);
+			if (c) {
+				p += c - 1;
+				pos += c - 1;
+d226 1
+a226 5
+			}
+
+			c = man_pmsg(m, n->line, pos, MANDOCERR_BADESCAPE);
+			if ( ! (MAN_IGN_ESCAPE & m->pflags) && ! c)
+				return(c);
+d229 1
+a229 4
+		/* 
+		 * FIXME: we absolutely cannot let \b get through or it
+		 * will destroy some assumptions in terms of format.
+	 	 */
+d231 4
+a234 1
+		if ('\t' == *p || isprint((u_char)*p) || ASCII_HYPH == *p) 
+d236 5
+a240 2
+		if ( ! man_pmsg(m, n->line, pos, MANDOCERR_BADCHAR))
+			return(0);
+@
+
+
+1.44
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.43 2010/06/09 19:22:56 kristaps Exp $ */
+d226 5
+@
+
+
+1.43
+log
+@Squash bug noted by Ulrich Spoerlein where "-" were being converted to
+ASCII_HYPH, as per normal, but were screwing up mandoc_special().  Fixed
+by making mandoc_special() first check isspace() instead of ! isgraph(),
+then normalise its string as it passes out.  This require de-constifying
+some validation routines not already de-constified (those in libman),
+but that's ok, because I'd like to be pushing actions into validation
+routines to save on space and redundant calculations.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.42 2010/05/25 12:44:53 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.42
+log
+@Smarten BADCHAR check to allow ASCII_HYPH.
+Fix index.sgml not to puke (the relevant section will be re-written for the release anyway, but I hate seeing errors).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.41 2010/05/17 22:11:42 kristaps Exp $ */
+d34 1
+a34 1
+#define	CHKARGS	  struct man *m, const struct man_node *n
+d104 1
+a104 1
+man_valid_pre(struct man *m, const struct man_node *n)
+d207 1
+a207 1
+	const char	*p;
+@
+
+
+1.41
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.40 2010/05/17 10:50:32 joerg Exp $ */
+d226 1
+a226 1
+		if ('\t' == *p || isprint((u_char)*p)) 
+@
+
+
+1.40
+log
+@Add support for .AT. Properly implement .UC. Add regress tests.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.39 2010/05/15 22:44:04 kristaps Exp $ */
+d30 1
+d155 1
+a155 1
+		return(man_nwarn(m, n, WEXITSCOPE));
+d157 1
+a157 1
+		return(man_nwarn(m, n, WEXITSCOPE));
+d162 5
+a166 4
+	if (NULL == m->first->child)
+		return(man_nerr(m, n, WNODATA));
+	if (NULL == m->meta.title) {
+		if ( ! man_nwarn(m, n, WNOTITLE))
+d189 5
+a193 2
+	if ('\0' == *n->child->string)
+		return(man_nerr(m, n, WNOTITLE));
+d197 1
+a197 1
+			if ( ! man_nwarn(m, n, WTITLECASE))
+d220 4
+a223 5
+			if ( ! (MAN_IGN_ESCAPE & m->pflags))
+				return(man_perr(m, n->line, pos, WESCAPE));
+			if ( ! man_pwarn(m, n->line, pos, WESCAPE))
+				return(0);
+			continue;
+d228 2
+a229 2
+
+		return(man_pwarn(m, n->line, pos, WNPRINT));
+d242 4
+a245 3
+	return(man_verr(m, n->line, n->pos, \
+			"expected line arguments %s %d, have %d", \
+			#ineq, (x), n->nchild)); \
+d258 6
+a263 4
+	if (MAN_BODY == n->type && 0 == n->nchild)
+		return(man_nwarn(m, n, WBODYARGS));
+	if (MAN_HEAD == n->type && 0 == n->nchild)
+		return(man_nerr(m, n, WHEADARGS));
+d273 1
+a273 1
+		return(man_nwarn(m, n, WBODYARGS));
+d294 1
+a294 1
+			return(man_nwarn(m, n, WBODYARGS));
+d305 1
+a305 1
+			return(man_nwarn(m, n, WNHEADARGS));
+d309 1
+a309 1
+			return(man_nwarn(m, n, WHEADARGS));
+d321 4
+a324 2
+	if (MAN_BLINE & m->flags)
+		return(man_nerr(m, n, WLNSCOPE));
+@
+
+
+1.39
+log
+@Remove `am', `ami', `de', `dei', and `.' from -man, as they're now in the roff preprocessor.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.38 2010/05/15 20:51:40 kristaps Exp $ */
+d98 1
+@
+
+
+1.38
+log
+@Pull `ig' out of -man and leave it the roff preparser.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.37 2010/05/15 15:54:39 kristaps Exp $ */
+a48 1
+static	int	  check_roff(CHKARGS);
+a60 1
+static	v_check	  pres_roff[] = { check_roff, NULL };
+a97 5
+	{ pres_roff, NULL }, /* de */
+	{ pres_roff, NULL }, /* dei */
+	{ pres_roff, NULL }, /* am */
+	{ pres_roff, NULL }, /* ami */
+	{ NULL, NULL }, /* . */
+a318 16
+
+static int
+check_roff(CHKARGS)
+{
+
+	if (MAN_BLOCK != n->type)
+		return(1);
+
+	for (n = n->parent; n; n = n->parent)
+		if (MAN_de == n->tok || MAN_dei == n->tok ||
+				MAN_am == n->tok || 
+				MAN_ami == n->tok)
+			return(man_nerr(m, n, WROFFNEST));
+
+	return(1);
+}
+@
+
+
+1.37
+log
+@Removed restriction on integer manual sections in -man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.36 2010/05/14 16:19:26 kristaps Exp $ */
+a103 1
+	{ pres_roff, NULL }, /* ig */
+d337 1
+a337 2
+				MAN_ami == n->tok ||
+				MAN_ig == n->tok)
+@
+
+
+1.36
+log
+@Pulled back in mysterious lost le1 <-> eq0 for Sp macro.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.35 2010/05/09 21:19:42 kristaps Exp $ */
+d181 1
+a181 1
+		m->meta.msec = 1;
+@
+
+
+1.35
+log
+@Remove -fno-ign-chars as well-argued by Ingo Schwarze.  Patch by Ingo Schwarze, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.34 2010/04/03 14:12:48 kristaps Exp $ */
+d97 1
+a97 1
+	{ NULL, posts_eq0 }, /* Sp */
+@
+
+
+1.34
+log
+@Modified version of Ingo Schwarze's patch so that -man doesn't puke when a TH isn't specified.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.33 2010/03/29 10:10:35 kristaps Exp $ */
+d232 1
+a232 3
+		if (MAN_IGN_CHARS & m->pflags)
+			return(man_pwarn(m, n->line, pos, WNPRINT));
+		return(man_perr(m, n->line, pos, WNPRINT));
+@
+
+
+1.33
+log
+@Final (?) fix to issue pointed out by Sascha Wildner: roff instructions clobbering prior scope rules and line modes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.32 2010/03/27 10:04:56 kristaps Exp $ */
+d170 13
+a182 2
+	if (NULL == m->meta.title)
+		return(man_nerr(m, n, WNOTITLE));
+@
+
+
+1.32
+log
+@Fixed re-adjustment of scope in exiting roff instructions (libman).
+Added title-case check for (libman).
+Fixed premature closure of roff instruction scope (libman).
+Added documentation of ignored roff macros to man(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.31 2010/03/24 20:10:53 kristaps Exp $ */
+d62 1
+a62 1
+static	v_check	  pres_roff[] = { check_bline, check_roff, NULL };
+@
+
+
+1.31
+log
+@Using man_node_delete() instead of man_node_free()/man_node_freelist() and friends (much simpler).
+Split blk_imp() into blk_exp() (explicit macros), blk_dotted() (roff macros), and the original.
+Added de, dei, am, ami, and ig roff macros (for now, these are discarded within the parse).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.30 2010/03/23 11:30:48 kristaps Exp $ */
+d53 1
+d56 1
+a56 1
+static	v_check	  posts_ge2_le5[] = { check_ge2, check_le5, NULL };
+d66 1
+a66 1
+	{ pres_bline, posts_ge2_le5 }, /* TH */ /* FIXME: make sure capitalised. */
+d178 18
+@
+
+
+1.30
+log
+@Support for pod2man standard header macros (Vb, Ve, Sp).  Based largely on a set of patches by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.29 2010/03/22 05:59:32 kristaps Exp $ */
+d49 1
+d61 1
+d99 6
+d295 1
+d299 17
+@
+
+
+1.29
+log
+@Accomodate (libman) for next-line macros followed by non-text macros `na', `sp', and `br'.
+Based on a patch by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.28 2010/01/01 17:14:28 kristaps Exp $ */
+d58 1
+a58 1
+static	v_check	  posts_sp[] = { check_le1, NULL };
+d85 1
+a85 1
+	{ NULL, posts_sp }, /* sp */
+d94 3
+@
+
+
+1.28
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.27 2009/11/02 06:22:45 kristaps Exp $ */
+d62 1
+a62 1
+	{ pres_bline, posts_eq0 }, /* br */
+d83 1
+a83 1
+	{ pres_bline, posts_eq0 }, /* na */
+d85 1
+a85 1
+	{ pres_bline, posts_sp }, /* sp */
+@
+
+
+1.27
+log
+@Added mandoc_a2time() for proper date conversion.
+Fitted TH and Dd handlers to use mandoc_a2time().
+Documented date syntax for -man, fixed documentation for -mdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.26 2009/10/24 05:45:05 kristaps Exp $ */
+d17 4
+@
+
+
+1.26
+log
+@Added `PD' to -man (doesn't do anything, yet).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.25 2009/10/18 11:36:37 kristaps Exp $ */
+d59 1
+a59 1
+	{ pres_bline, posts_ge2_le5 }, /* TH */
+@
+
+
+1.25
+log
+@Removed number-check for `sp' in -Tman, as nroff accepts non-numerics as a single vspace.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.24 2009/08/22 09:10:38 kristaps Exp $ */
+d89 1
+@
+
+
+1.24
+log
+@Added `UC' libman macro (has no effect).
+Corrected `UC' and `DT' not to print their arguments.
+Noted that `UC' and `DT' shouldn't be used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.23 2009/08/21 13:16:16 kristaps Exp $ */
+d40 1
+a40 1
+static	int	  check_eq1(CHKARGS);
+a46 1
+static	int	  check_sp(CHKARGS);
+d54 1
+a54 1
+static	v_check	  posts_sp[] = { check_sp, NULL };
+d207 1
+a207 1
+INEQ_DEFINE(1, ==, eq1)
+a212 30
+check_sp(CHKARGS)
+{
+	long		 lval;
+	char		*ep, *buf;
+
+	if (NULL == n->child)
+		return(1);
+	else if ( ! check_eq1(m, n))
+		return(0);
+
+	assert(MAN_TEXT == n->child->type);
+	buf = n->child->string;
+	assert(buf);
+	
+	/* From OpenBSD's strtol(3). */
+
+	errno = 0;
+	lval = strtol(buf, &ep, 10);
+	if (buf[0] == '\0' || *ep != '\0')
+		return(man_nerr(m, n->child, WNUMFMT));
+
+	if ((errno == ERANGE && (lval == LONG_MAX || lval == LONG_MIN)) ||
+			(lval > INT_MAX || lval < 0))
+		return(man_nerr(m, n->child, WNUMFMT));
+
+	return(1);
+}
+
+
+static int
+@
+
+
+1.23
+log
+@`RS' warns if empty body.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.22 2009/08/21 12:12:12 kristaps Exp $ */
+d89 1
+@
+
+
+1.22
+log
+@Open explicit scope on libman exit now only generates warning.
+Consecutive ELINE scopes are now pruned (with a warning).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.21 2009/08/20 11:51:07 kristaps Exp $ */
+d44 1
+d53 1
+d87 1
+a87 1
+	{ NULL, NULL }, /* RS */ /* FIXME: warn if empty body. */
+d255 10
+@
+
+
+1.21
+log
+@Added `DT' macro (pointed out by joerg@@netbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.20 2009/08/19 12:15:58 kristaps Exp $ */
+a38 1
+static	int	  check_eline(CHKARGS);
+a53 1
+static	v_check	  pres_eline[] = { check_eline, NULL };
+d67 2
+a68 2
+	{ pres_eline, NULL }, /* SM */
+	{ pres_eline, NULL }, /* SB */
+d73 3
+a75 3
+	{ pres_eline, NULL }, /* R */
+	{ pres_eline, NULL }, /* B */
+	{ pres_eline, NULL }, /* I */
+a140 1
+	/* XXX - make this into a warning? */
+d142 1
+a142 2
+		return(man_nerr(m, n, WEXITSCOPE));
+	/* XXX - make this into a warning? */
+d144 4
+a147 1
+		return(man_nerr(m, n, WEXITSCOPE));
+a290 10
+check_eline(CHKARGS)
+{
+
+	if (MAN_ELINE & m->flags)
+		return(man_nerr(m, n, WLNSCOPE));
+	return(1);
+}
+
+
+static int
+d294 1
+a296 2
+	if (MAN_ELINE & m->flags)
+		return(man_nerr(m, n, WLNSCOPE));
+@
+
+
+1.20
+log
+@libman checks for open explicit scopes on exit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.19 2009/08/19 09:14:50 kristaps Exp $ */
+d87 2
+a88 1
+	{ NULL, NULL }, /* RS */
+@
+
+
+1.19
+log
+@Added RS/RE macro pair (had to adjust closing rules, sec/ssec/rs/par).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.18 2009/08/18 11:46:44 kristaps Exp $ */
+a141 2
+	/* FIXME: closing out explicit scope! */
+
+@
+
+
+1.18
+log
+@Fixed missing check for open ELINE scope in BLINE macro.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.17 2009/08/13 11:45:29 kristaps Exp $ */
+d86 2
+d142 2
+@
+
+
+1.17
+log
+@Significant overhaul in libman.  Macros are now block- and line-scoped (with
+next-line scope extensions possible).  man.7 reflects block and line scoping,
+and also includes a REFERENCE section that will be used as a template for the
+big mdoc reference.  Many fixes in next-line behaviour for both inline and
+block macros.  Added some macros for compatibility (from me.7).  Corrected
+quoted-literal handling for libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.16 2009/07/24 20:22:24 kristaps Exp $ */
+d292 3
+a294 3
+	if ( ! (MAN_ELINE & m->flags))
+		return(1);
+	return(man_nerr(m, n, WLNSCOPE));
+d302 5
+a306 3
+	if ( ! (MAN_BLINE & m->flags))
+		return(1);
+	return(man_nerr(m, n, WLNSCOPE));
+@
+
+
+1.16
+log
+@Added `sp' support to libman.
+Added `\c' to known escapes (only used in man, but still).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.15 2009/07/04 09:01:55 kristaps Exp $ */
+d29 1
+a29 1
+#define	POSTARGS  struct man *m, const struct man_node *n
+d31 1
+a31 1
+typedef	int	(*v_post)(POSTARGS);
+d34 2
+a35 1
+	v_post	 *posts;
+d38 19
+a56 17
+static	int	  check_eq0(POSTARGS);
+static	int	  check_eq1(POSTARGS);
+static	int	  check_ge1(POSTARGS);
+static	int	  check_ge2(POSTARGS);
+static	int	  check_le1(POSTARGS);
+static	int	  check_le2(POSTARGS);
+static	int	  check_le5(POSTARGS);
+static	int	  check_root(POSTARGS);
+static	int	  check_sp(POSTARGS);
+static	int	  check_text(POSTARGS);
+
+static	v_post	  posts_eq0[] = { check_eq0, NULL };
+static	v_post	  posts_ge1[] = { check_ge1, NULL };
+static	v_post	  posts_ge2_le5[] = { check_ge2, check_le5, NULL };
+static	v_post	  posts_le1[] = { check_le1, NULL };
+static	v_post	  posts_le2[] = { check_le2, NULL };
+static	v_post	  posts_sp[] = { check_sp, NULL };
+d59 27
+a85 24
+	{ posts_eq0 }, /* br */
+	{ posts_ge2_le5 }, /* TH */
+	{ posts_ge1 }, /* SH */
+	{ posts_ge1 }, /* SS */
+	{ NULL }, /* TP */
+	{ posts_eq0 }, /* LP */
+	{ posts_eq0 }, /* PP */
+	{ posts_eq0 }, /* P */
+	{ posts_le2 }, /* IP */
+	{ posts_le1 }, /* HP */
+	{ NULL }, /* SM */
+	{ NULL }, /* SB */
+	{ NULL }, /* BI */
+	{ NULL }, /* IB */
+	{ NULL }, /* BR */
+	{ NULL }, /* RB */
+	{ NULL }, /* R */
+	{ NULL }, /* B */
+	{ NULL }, /* I */
+	{ NULL }, /* IR */
+	{ NULL }, /* RI */
+	{ posts_eq0 }, /* na */
+	{ NULL }, /* i */
+	{ posts_sp }, /* sp */
+d90 19
+d111 1
+a111 1
+	v_post		*cp;
+d137 1
+a137 1
+check_root(POSTARGS) 
+d139 8
+a146 1
+	
+d157 1
+a157 1
+check_text(POSTARGS) 
+d193 1
+a193 1
+check_##name(POSTARGS) \
+a203 1
+INEQ_DEFINE(1, >=, ge1)
+a204 2
+INEQ_DEFINE(1, <=, le1)
+INEQ_DEFINE(2, <=, le2)
+d209 1
+a209 1
+check_sp(POSTARGS)
+d214 1
+a214 1
+	if (NULL == m->last->child)
+d219 2
+a220 2
+	assert(MAN_TEXT == m->last->child->type);
+	buf = m->last->child->string;
+d224 1
+d228 1
+a228 1
+		return(man_nerr(m, m->last->child, WNUMFMT));
+d232 9
+a240 1
+		return(man_nerr(m, m->last->child, WNUMFMT));
+d242 4
+d248 59
+@
+
+
+1.15
+log
+@Moved escape validation into libmandoc.h/mandoc.c (common between libman/libmdoc1).
+libman supports MAN_IGN_ESCAPE (like MDOC_IGN_ESCAPE).
+All popular escapes now handled consistently.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.14 2009/06/22 13:09:17 kristaps Exp $ */
+d21 2
+d38 1
+d44 2
+a46 1
+static	int	  check_root(POSTARGS);
+d48 3
+d53 1
+a53 3
+static	v_post	  posts_ge1[] = { check_ge1, NULL };
+static	v_post	  posts_eq0[] = { check_eq0, NULL };
+static	v_post	  posts_ge2_le5[] = { check_ge2, check_le5, NULL };
+d79 1
+d171 1
+d178 28
+@
+
+
+1.14
+log
+@libman documents require `TH' and at least one node.
+libman requirements documented in man.7 STRUCTURE section.
+Added STRUCTURE section to mdoc.7, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.13 2009/06/22 10:40:04 kristaps Exp $ */
+d25 1
+d122 1
+a122 1
+	int		 pos;
+d127 15
+a141 1
+		if ('\t' == *p || isprint((u_char)*p))
+@
+
+
+1.13
+log
+@Reverted max column width 80 -> 78 (schwarze@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.12 2009/06/18 10:53:58 kristaps Exp $ */
+d41 1
+d89 1
+a89 2
+		/* FIXME: validate that TH has been invoked! */
+		return(1);
+d105 13
+@
+
+
+1.12
+log
+@Moved all formatted libman warn/error into man.c/libman.h.
+Converted all formatted warn/errors into regular syntax.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.11 2009/06/18 10:32:00 kristaps Exp $ */
+d88 1
+@
+
+
+1.11
+log
+@Added -fno-ign-chars support to libman.
+man_validate.c checks for non-tab/isprint words.
+libman hashtable fixed (was ignoring .br).
+Added ncount field to man_node, deprecating count() functions.
+Documented use of tabs in man.7.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.10 2009/06/16 19:55:28 kristaps Exp $ */
+a27 4
+enum	merr {
+	WPRINT
+};
+
+a40 1
+static	int	  perr(struct man *, int, int, int, enum merr);
+a103 21
+perr(struct man *m, int line, int pos, 
+		int iserr, enum merr type)
+{
+	const char	 *p;
+	
+	p = NULL;
+	switch (type) {
+	case (WPRINT):
+		p = "invalid character";
+		break;
+	}
+	assert(p);
+
+	if (iserr)
+		return(man_verr(m, line, pos, p));
+
+	return(man_vwarn(m, line, pos, p));
+}
+
+
+static int
+d116 2
+a117 2
+			return(perr(m, n->line, pos, 0, WPRINT));
+		return(perr(m, n->line, pos, 1, WPRINT));
+@
+
+
+1.10
+log
+@Removed MAN___: moved MAN_br to its index (comments not passed into parser).
+Fix: hashtable not fully formed after removal of MDOC___.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.9 2009/06/10 20:18:43 kristaps Exp $ */
+d26 1
+a26 1
+/* FIXME: validate text. */
+d28 3
+a30 1
+#define	POSTARGS  struct man *m, const struct man_node *n
+a37 1
+static	int	  count(const struct man_node *);
+d44 2
+d91 1
+a91 1
+		/* FALLTHROUGH */
+d108 39
+a146 8
+static inline int
+count(const struct man_node *n)
+{ 
+	int		 i;
+
+	for (i = 0; n; n = n->next, i++) 
+		/* Loop. */ ;
+	return(i);
+d154 1
+a154 2
+	int		 c; \
+	if ((c = count(n->child)) ineq (x)) \
+d158 1
+a158 1
+			#ineq, (x), c)); \
+@
+
+
+1.9
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.8 2009/04/12 19:45:26 kristaps Exp $ */
+d51 1
+a51 1
+	{ NULL }, /* __ */
+a71 1
+	{ posts_eq0 }, /* br */
+@
+
+
+1.8
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_validate.c,v 1.7 2009/04/05 16:34:22 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.7
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_validate.c,v 1.6 2009/04/02 06:51:44 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.6
+log
+@mdoc_tokhash -> hash
+Initial man hashtab (BROKEN).
+@
+text
+@d1 1
+a1 1
+/* $Id: man_validate.c,v 1.5 2009/03/27 14:56:15 kristaps Exp $ */
+d76 1
+@
+
+
+1.5
+log
+@Added some new manuals (mdoc.3 mandoc_char.7).
+Support for .br in libman.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_validate.c,v 1.4 2009/03/26 14:38:11 kristaps Exp $ */
+d75 1
+@
+
+
+1.4
+log
+@Initial front-end formatting for -man pages.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_validate.c,v 1.3 2009/03/26 09:55:39 kristaps Exp $ */
+d74 1
+@
+
+
+1.3
+log
+@Fixed reading whitespace for man.7 `.    TH'.
+Documented this.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_validate.c,v 1.2 2009/03/25 21:46:24 kristaps Exp $ */
+d57 1
+a57 1
+	{ posts_le1 }, /* TP */
+d73 1
+d123 1
+a123 1
+	return(man_vwarn(m, n->line, n->pos, \
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: man_validate.c,v 1.1 2009/03/25 15:17:49 kristaps Exp $ */
+d38 1
+a38 1
+static	int	  count(POSTARGS);
+d105 1
+a105 1
+count(POSTARGS)
+d120 1
+a120 1
+	if ((c = count(m, n->child)) ineq (x)) \
+@
+
+
+1.1
+log
+@Added man validator, renamed mdoc validator.
+@
+text
+@d1 1
+a1 1
+/* $Id: validate.c,v 1.93 2009/03/23 14:22:11 kristaps Exp $ */
+a82 1
+
+@

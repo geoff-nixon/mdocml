@@ -1,0 +1,2911 @@
+head	1.108;
+access;
+symbols
+	VERSION_1_13_3:1.97
+	VERSION_1_13_2:1.96
+	VERSION_1_12_4:1.88
+	VERSION_1_13_1:1.88
+	VERSION_1_12_3:1.82
+	VERSION_1_12_2:1.81
+	VERSION_1_12:1.88.0.2
+	VERSION_1_12_1:1.78
+	VERSION_1_12_0:1.77
+	VERSION_1_11_7:1.76
+	VERSION_1_11_6:1.76
+	VERSION_1_11_5:1.76
+	VERSION_1_11_4:1.74
+	VERSION_1_11_3:1.74
+	VERSION_1_11_2:1.74
+	VERSION_1_11_1:1.72
+	VERSION_1_10_10:1.68
+	VERSION_1_10_9:1.63
+	VERSION_1_10_8:1.63
+	VERSION_1_10_7:1.63
+	VERSION_1_10_6:1.62
+	VERSION_1_10_5:1.61
+	VERSION_1_10_5_PREPDF:1.61
+	VERSION_1_10_4:1.60
+	VERSION_1_10_3:1.57
+	VERSION_1_10_2:1.53
+	VERSION_1_10_1:1.52
+	VERSION_1_9_24:1.39
+	VERSION_1_9_25:1.42
+	VERSION_1_9_23:1.33
+	VERSION_1_9_22:1.31
+	VERSION_1_9_21:1.30
+	VERSION_1_9_20:1.30
+	VERSION_1_9_19:1.30
+	VERSION_1_9_18:1.30
+	VERSION_1_9_17:1.30
+	VERSION_1_9_16:1.30
+	VERSION_1_9_15:1.30
+	VERSION_1_9_15-pre2:1.30
+	VERSION_1_9_15-pre1:1.30
+	VERSION_1_9_14:1.30
+	VERSION_1_9_13:1.30
+	VERSION_1_9_12:1.30
+	VERSION_1_9_11:1.29
+	VERSION_1_9_10:1.29
+	VERSION_1_9_9:1.29
+	VERSION_1_9_8:1.28
+	VERSION_1_9_7:1.28
+	VERSION_1_9_6:1.28
+	VERSION_1_9_5:1.27
+	VERSION_1_9_2:1.26
+	VERSION_1_9_1:1.26
+	VERSION_1_9_0:1.23
+	VERSION_1_8_5:1.21
+	VERSION_1_8_4:1.21
+	VERSION_1_8_3:1.21
+	VERSION_1_8_2:1.21
+	VERSION_1_8_1:1.19
+	VERSION_1_8_0:1.18
+	VERSION_1_7_24:1.15
+	VERSION_1_7_23:1.14
+	VERSION_1_7_22:1.11
+	VERSION_1_7_21:1.11
+	VERSION_1_7_20:1.11
+	VERSION_1_7_19:1.11
+	VERSION_1_7_17:1.10
+	VERSION_1_7_16:1.7
+	VERSION_1_7_15:1.7
+	VERSION_1_7_14:1.7
+	VERSION_1_7_13:1.6
+	VERSION_1_7_12:1.4
+	OPENBSD_CHECKIN:1.4
+	VERSION_1_7_10:1.4
+	VERSION_1_7_5:1.2;
+locks; strict;
+comment	@ * @;
+
+
+1.108
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2015.10.20.02.01.31;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2015.10.17.00.21.07;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2015.04.23.15.35.59;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2015.04.19.14.25.41;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2015.04.19.13.50.25;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2015.04.18.17.28.36;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2015.04.18.17.01.58;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2015.04.18.16.06.39;	author schwarze;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2015.04.02.23.48.19;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2015.02.02.04.26.44;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2014.12.01.04.05.32;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2014.11.29.03.37.44;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2014.11.28.23.21.32;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2014.11.28.18.36.35;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2014.11.28.04.47.03;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2014.11.28.03.14.18;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2014.11.28.01.05.43;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2014.11.17.06.44.58;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2014.08.01.17.40.34;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2014.07.30.21.18.24;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2014.07.09.11.31.43;	author schwarze;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2014.07.02.03.48.07;	author schwarze;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2014.01.05.20.26.36;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2013.10.21.23.47.58;	author schwarze;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2012.11.17.00.26.33;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2012.07.18.11.11.12;	author schwarze;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2012.05.27.17.48.57;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2011.12.02.01.37.14;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2011.07.18.07.48.14;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2011.07.18.07.46.41;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2011.04.19.16.38.48;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2011.04.17.09.08.19;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2011.03.22.14.33.05;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2011.03.22.14.28.48;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2011.03.22.14.05.45;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2011.03.17.11.30.23;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2011.03.17.09.28.00;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2011.03.17.09.22.39;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2011.03.17.09.16.38;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2011.03.17.01.23.28;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2010.11.30.13.04.14;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2010.07.07.15.04.54;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2010.07.01.22.35.54;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2010.06.29.19.20.38;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2010.06.27.16.18.13;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.06.27.15.52.41;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.06.26.16.07.08;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2010.06.26.15.36.37;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2010.06.19.20.46.27;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2010.06.03.13.44.36;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2010.05.31.15.42.09;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2010.05.24.12.05.04;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2010.05.17.23.57.06;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2010.05.15.16.24.37;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2010.05.15.08.54.04;	author schwarze;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2010.05.15.04.47.38;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.05.14.17.31.25;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.05.14.12.55.22;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.05.13.06.22.11;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.05.12.08.41.17;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.05.09.10.17.02;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.05.08.07.30.19;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.05.07.06.05.38;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.05.07.05.54.09;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.05.07.05.48.29;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.05.07.05.34.56;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.04.08.07.53.01;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.04.06.11.33.00;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.04.03.14.02.10;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.03.31.07.13.53;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.10.30.05.58.37;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.10.15.02.56.51;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.09.24.15.01.06;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.09.16.14.40.56;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.08.20.09.07.24;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.08.20.08.59.12;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.08.19.14.09.33;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.08.18.14.27.16;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.07.29.08.46.06;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.07.20.14.09.38;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.07.19.21.26.27;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.07.17.12.27.49;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.07.12.20.50.08;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.07.12.20.30.35;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.07.12.20.24.24;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.07.12.09.13.21;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.07.07.09.29.15;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.07.06.13.04.52;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.07.06.09.21.24;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.06.17.10.53.32;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.06.15.10.36.01;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.06.15.10.02.52;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.06.15.09.55.43;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.04.12.19.29.53;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.04.02.06.51.44;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.31.13.50.19;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.23.15.41.09;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.108
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: libmdoc.h,v 1.107 2015/10/20 02:01:31 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+#define	MACRO_PROT_ARGS	struct roff_man *mdoc, \
+			int tok, \
+			int line, \
+			int ppos, \
+			int *pos, \
+			char *buf
+
+struct	mdoc_macro {
+	void		(*fp)(MACRO_PROT_ARGS);
+	int		  flags;
+#define	MDOC_CALLABLE	 (1 << 0)
+#define	MDOC_PARSED	 (1 << 1)
+#define	MDOC_EXPLICIT	 (1 << 2)
+#define	MDOC_PROLOGUE	 (1 << 3)
+#define	MDOC_IGNDELIM	 (1 << 4)
+#define	MDOC_JOIN	 (1 << 5)
+};
+
+enum	margserr {
+	ARGS_ERROR,
+	ARGS_EOLN, /* end-of-line */
+	ARGS_WORD, /* normal word */
+	ARGS_PUNCT, /* series of punctuation */
+	ARGS_QWORD, /* quoted word */
+	ARGS_PHRASE /* Bl -column phrase */
+};
+
+/*
+ * A punctuation delimiter is opening, closing, or "middle mark"
+ * punctuation.  These govern spacing.
+ * Opening punctuation (e.g., the opening parenthesis) suppresses the
+ * following space; closing punctuation (e.g., the closing parenthesis)
+ * suppresses the leading space; middle punctuation (e.g., the vertical
+ * bar) can do either.  The middle punctuation delimiter bends the rules
+ * depending on usage.
+ */
+enum	mdelim {
+	DELIM_NONE = 0,
+	DELIM_OPEN,
+	DELIM_MIDDLE,
+	DELIM_CLOSE,
+	DELIM_MAX
+};
+
+extern	const struct mdoc_macro *const mdoc_macros;
+
+
+void		  mdoc_macro(MACRO_PROT_ARGS);
+void		  mdoc_elem_alloc(struct roff_man *, int, int,
+			int, struct mdoc_arg *);
+struct roff_node *mdoc_block_alloc(struct roff_man *, int, int,
+			int, struct mdoc_arg *);
+void		  mdoc_tail_alloc(struct roff_man *, int, int, int);
+struct roff_node *mdoc_endbody_alloc(struct roff_man *, int, int, int,
+			struct roff_node *, enum mdoc_endbody);
+void		  mdoc_node_relink(struct roff_man *, struct roff_node *);
+void		  mdoc_node_validate(struct roff_man *);
+void		  mdoc_state(struct roff_man *, struct roff_node *);
+void		  mdoc_state_reset(struct roff_man *);
+int		  mdoc_hash_find(const char *);
+const char	 *mdoc_a2arch(const char *);
+const char	 *mdoc_a2att(const char *);
+const char	 *mdoc_a2lib(const char *);
+enum roff_sec	  mdoc_a2sec(const char *);
+const char	 *mdoc_a2st(const char *);
+void		  mdoc_argv(struct roff_man *, int, int,
+			struct mdoc_arg **, int *, char *);
+enum margserr	  mdoc_args(struct roff_man *, int,
+			int *, char *, int, char **);
+enum mdelim	  mdoc_isdelim(const char *);
+@
+
+
+1.107
+log
+@In order to become able to generate syntax tree nodes on the roff(7)
+level, validation must be separated from parsing and rewinding.
+This first big step moves calling of the mdoc(7) post_*() functions
+out of the parser loop into their own mdoc_validate() pass, while
+using a new mdoc_state() module to make syntax tree state handling
+available to both the parser loop and the validation pass.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.106 2015/10/17 00:21:07 schwarze Exp $ */
+a64 1
+__BEGIN_DECLS
+a88 2
+
+__END_DECLS
+@
+
+
+1.106
+log
+@Very tricky diff to fix macro interpretation and spacing around tabs
+in .Bl -column; it took me more than a day to get this right.
+Triggered by a loosely related bug report from tim@@.
+
+The lesson for you is:  Use .Ta macros in .Bl -column, avoid tabs,
+or you are in for surprises:  The last word before a tab is not
+interpreted as a macro (unless there is a blank in between), the
+first word after a tab isn't either (unless there is a blank in
+between), and a blank after a tab causes a leading blank in the
+respective output cell.  Yes, "blank", "tab", "blank tab" and "tab
+blank" all have different semantics; if you write code relying on
+that, good luck maintaining it afterwards...
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.105 2015/04/23 15:35:59 schwarze Exp $ */
+d76 3
+d80 1
+d83 1
+a84 1
+const char	 *mdoc_a2arch(const char *);
+@
+
+
+1.105
+log
+@Get rid of two empty wrapper functions.  No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.104 2015/04/19 14:25:41 schwarze Exp $ */
+d43 1
+a43 3
+	ARGS_PHRASE, /* Ta'd phrase (-column) */
+	ARGS_PPHRASE, /* tabbed phrase (-column) */
+	ARGS_PEND /* last phrase (-column) */
+@
+
+
+1.104
+log
+@Unify some node handling functions that use TOKEN_NONE.
+* mdoc_word_alloc(), man_word_alloc() -> roff_word_alloc()
+* mdoc_word_append(), man_word_append() -> roff_word_append()
+* mdoc_addspan(), man_addspan() -> roff_addtbl()
+* mdoc_addeqn(), man_addeqn() -> roff_addeqn()
+Minus 50 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.103 2015/04/19 13:50:25 schwarze Exp $ */
+a86 1
+void		  mdoc_macroend(struct roff_man *);
+@
+
+
+1.103
+log
+@Unify node handling functions:
+* node_alloc() for mdoc and man_node_alloc() -> roff_node_alloc()
+* node_append() for mdoc and man_node_append() -> roff_node_append()
+* mdoc_head_alloc() and man_head_alloc() -> roff_head_alloc()
+* mdoc_body_alloc() and man_body_alloc() -> roff_body_alloc()
+* mdoc_node_unlink() and man_node_unlink() -> roff_node_unlink()
+* mdoc_node_free() and man_node_free() -> roff_node_free()
+* mdoc_node_delete() and man_node_delete() -> roff_node_delete()
+Minus 130 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.102 2015/04/18 17:28:36 schwarze Exp $ */
+a69 2
+void		  mdoc_word_alloc(struct roff_man *, int, int, const char *);
+void		  mdoc_word_append(struct roff_man *, const char *);
+a82 2
+void		  mdoc_valid_pre(struct roff_man *, struct roff_node *);
+void		  mdoc_valid_post(struct roff_man *);
+a84 1
+void		  mdoc_argv_free(struct mdoc_arg *);
+@
+
+
+1.102
+log
+@Unify {mdoc,man}_{alloc,reset,free}() into roff_man_{alloc,reset,free}().
+Minus 80 lines of code, no functional change.
+Written on the train from Koeln to Wolfsburg returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.101 2015/04/18 17:01:58 schwarze Exp $ */
+a75 1
+struct roff_node *mdoc_head_alloc(struct roff_man *, int, int, int);
+a76 1
+struct roff_node *mdoc_body_alloc(struct roff_man *, int, int, int);
+@
+
+
+1.101
+log
+@Move mdoc_hash_init() and man_hash_init() to libmandoc.h
+and call them from mparse_alloc() and choose_parser(),
+preparing unified allocation of struct roff_man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.100 2015/04/18 16:06:39 schwarze Exp $ */
+a80 1
+void		  mdoc_node_delete(struct roff_man *, struct roff_node *);
+@
+
+
+1.100
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.99 2015/04/02 23:48:19 schwarze Exp $ */
+a82 1
+void		  mdoc_hash_init(void);
+@
+
+
+1.99
+log
+@Third step towards parser unification:
+Replace struct mdoc_meta and struct man_meta by a unified struct roff_meta.
+Written of the train from London to Exeter on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.98 2015/04/02 22:48:17 schwarze Exp $ */
+d19 1
+a19 31
+enum	mdoc_next {
+	MDOC_NEXT_SIBLING = 0,
+	MDOC_NEXT_CHILD
+};
+
+struct	mdoc {
+	struct mparse	 *parse; /* parse pointer */
+	const char	 *defos; /* default argument for .Os */
+	int		  quick; /* abort parse early */
+	int		  flags; /* parse flags */
+#define	MDOC_LITERAL	 (1 << 1) /* in a literal scope */
+#define	MDOC_PBODY	 (1 << 2) /* in the document body */
+#define	MDOC_NEWLINE	 (1 << 3) /* first macro/text in a line */
+#define	MDOC_PHRASELIT	 (1 << 4) /* literal within a partila phrase */
+#define	MDOC_PPHRASE	 (1 << 5) /* within a partial phrase */
+#define	MDOC_FREECOL	 (1 << 6) /* `It' invocation should close */
+#define	MDOC_SYNOPSIS	 (1 << 7) /* SYNOPSIS-style formatting */
+#define	MDOC_KEEP	 (1 << 8) /* in a word keep */
+#define	MDOC_SMOFF	 (1 << 9) /* spacing is off */
+#define	MDOC_NODELIMC	 (1 << 10) /* disable closing delimiter handling */
+	enum mdoc_next	  next; /* where to put the next node */
+	struct roff_node *last; /* the last node parsed */
+	struct roff_node *first; /* the first node parsed */
+	struct roff_node *last_es; /* the most recent Es node */
+	struct roff_meta  meta; /* document meta-data */
+	enum roff_sec	  lastnamed;
+	enum roff_sec	  lastsec;
+	struct roff	 *roff;
+};
+
+#define	MACRO_PROT_ARGS	struct mdoc *mdoc, \
+d70 3
+a72 3
+void		  mdoc_word_alloc(struct mdoc *, int, int, const char *);
+void		  mdoc_word_append(struct mdoc *, const char *);
+void		  mdoc_elem_alloc(struct mdoc *, int, int,
+d74 1
+a74 1
+struct roff_node *mdoc_block_alloc(struct mdoc *, int, int,
+d76 4
+a79 4
+struct roff_node *mdoc_head_alloc(struct mdoc *, int, int, int);
+void		  mdoc_tail_alloc(struct mdoc *, int, int, int);
+struct roff_node *mdoc_body_alloc(struct mdoc *, int, int, int);
+struct roff_node *mdoc_endbody_alloc(struct mdoc *, int, int, int,
+d81 2
+a82 2
+void		  mdoc_node_delete(struct mdoc *, struct roff_node *);
+void		  mdoc_node_relink(struct mdoc *, struct roff_node *);
+d89 3
+a91 3
+void		  mdoc_valid_pre(struct mdoc *, struct roff_node *);
+void		  mdoc_valid_post(struct mdoc *);
+void		  mdoc_argv(struct mdoc *, int, int,
+d94 1
+a94 1
+enum margserr	  mdoc_args(struct mdoc *, int,
+d96 1
+a96 1
+void		  mdoc_macroend(struct mdoc *);
+@
+
+
+1.98
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.97 2015/02/02 04:26:44 schwarze Exp $ */
+d43 1
+a43 1
+	struct mdoc_meta  meta; /* document meta-data */
+@
+
+
+1.97
+log
+@Get rid of all calls to rew_sub() in blk_exp_close(); only ten calls
+remain in other functions.  As a bonus, this fixes an assertion failure
+jsg@@ found some time ago with afl (test case 982) and improves minor
+details in error reporting.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.96 2014/12/01 04:05:32 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d40 3
+a42 3
+	struct mdoc_node *last; /* the last node parsed */
+	struct mdoc_node *first; /* the first node parsed */
+	struct mdoc_node *last_es; /* the most recent Es node */
+d44 2
+a45 2
+	enum mdoc_sec	  lastnamed;
+	enum mdoc_sec	  lastsec;
+d50 1
+a50 1
+			enum mdoct tok, \
+d103 10
+a112 10
+			enum mdoct, struct mdoc_arg *);
+struct mdoc_node *mdoc_block_alloc(struct mdoc *, int, int,
+			enum mdoct, struct mdoc_arg *);
+struct mdoc_node *mdoc_head_alloc(struct mdoc *, int, int, enum mdoct);
+void		  mdoc_tail_alloc(struct mdoc *, int, int, enum mdoct);
+struct mdoc_node *mdoc_body_alloc(struct mdoc *, int, int, enum mdoct);
+struct mdoc_node *mdoc_endbody_alloc(struct mdoc *, int, int, enum mdoct,
+			struct mdoc_node *, enum mdoc_endbody);
+void		  mdoc_node_delete(struct mdoc *, struct mdoc_node *);
+void		  mdoc_node_relink(struct mdoc *, struct mdoc_node *);
+d114 1
+a114 1
+enum mdoct	  mdoc_hash_find(const char *);
+d119 1
+a119 1
+void		  mdoc_valid_pre(struct mdoc *, struct mdoc_node *);
+d121 1
+a121 1
+void		  mdoc_argv(struct mdoc *, int, enum mdoct,
+d125 1
+a125 1
+			int *, char *, enum mdoct, char **);
+@
+
+
+1.96
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.95 2014/11/29 03:37:44 schwarze Exp $ */
+d109 1
+a109 1
+void		  mdoc_endbody_alloc(struct mdoc *, int, int, enum mdoct,
+@
+
+
+1.95
+log
+@Provide a helper function macro_or_word() and use it to prune the
+same chunk of argument parsing code out of five of the eight callback
+functions.  The other three have too much special handling to
+participate.
+As a bonus, let lookup() and mdoc_args() deal with line macros and
+retire the lookup_raw() helper and the mdoc_zargs() internal interface
+function.
+No functional change, minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.94 2014/11/28 23:21:32 schwarze Exp $ */
+a17 2
+#ifndef LIBMDOC_H
+#define LIBMDOC_H
+a129 2
+
+#endif /*!LIBMDOC_H*/
+@
+
+
+1.94
+log
+@Fold the loop around mdoc_argv() into the function itself,
+it was the same in all four cases.  As a bonus, get rid
+of one enum type that was used for internal communication.
+No functional change, minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.93 2014/11/28 18:36:35 schwarze Exp $ */
+a127 2
+enum margserr	  mdoc_zargs(struct mdoc *, int,
+			int *, char *, char **);
+@
+
+
+1.93
+log
+@Retire support for CSRG supplementary document titles.  These are
+long obsolete and were never written in mdoc(7) in the first place.
+Removes 100 lines from source files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.92 2014/11/28 04:47:03 schwarze Exp $ */
+a79 7
+enum	margverr {
+	ARGV_ERROR,
+	ARGV_EOLN, /* end of line */
+	ARGV_ARG, /* valid argument */
+	ARGV_WORD /* normal word (or bad argument---same thing) */
+};
+
+d123 1
+a123 1
+enum margverr	  mdoc_argv(struct mdoc *, int, enum mdoct,
+@
+
+
+1.92
+log
+@Simplify by making the mdoc parser callbacks void, and some cleanup;
+no functional change, minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.91 2014/11/28 03:14:18 schwarze Exp $ */
+a127 1
+const char	 *mdoc_a2vol(const char *);
+@
+
+
+1.91
+log
+@Simplify the code by making various mdoc parser helper functions void.
+No functional change, minus 130 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.90 2014/11/28 01:05:43 schwarze Exp $ */
+d59 1
+a59 1
+	int		(*fp)(MACRO_PROT_ARGS);
+d108 1
+a108 1
+int		  mdoc_macro(MACRO_PROT_ARGS);
+d138 1
+a138 1
+int		  mdoc_macroend(struct mdoc *);
+@
+
+
+1.90
+log
+@Simplify code by making mdoc validation handlers void.
+No functional change, minus 90 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.89 2014/11/17 06:44:58 schwarze Exp $ */
+d109 1
+a109 2
+int		  mdoc_word_alloc(struct mdoc *,
+			int, int, const char *);
+d111 1
+a111 1
+int		  mdoc_elem_alloc(struct mdoc *, int, int,
+d113 1
+a113 1
+int		  mdoc_block_alloc(struct mdoc *, int, int,
+d115 4
+a118 4
+int		  mdoc_head_alloc(struct mdoc *, int, int, enum mdoct);
+int		  mdoc_tail_alloc(struct mdoc *, int, int, enum mdoct);
+int		  mdoc_body_alloc(struct mdoc *, int, int, enum mdoct);
+int		  mdoc_endbody_alloc(struct mdoc *, int, int, enum mdoct,
+d121 1
+a121 1
+int		  mdoc_node_relink(struct mdoc *, struct mdoc_node *);
+@
+
+
+1.89
+log
+@Multiple fixes with respect to in-line macros:
+* .No selects the default font; relevant e.g. in .Bf blocks
+* no need to force empty .Li elements
+* closing delimiters as leading macro arguments do not suppress space
+* opening delimiters at the end of a macro line do not suppress space
+* correctly handle delimiter spacing in -Tman
+As a side effect, these fixes let mandoc warn about empty .No macros
+as requested by bentley@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.88 2014/08/01 17:40:34 schwarze Exp $ */
+d130 2
+a131 2
+int		  mdoc_valid_pre(struct mdoc *, struct mdoc_node *);
+int		  mdoc_valid_post(struct mdoc *);
+@
+
+
+1.88
+log
+@demacrify: get rid of man_nmsg(), man_pmsg(), mdoc_nmsg(), mdoc_pmsg()
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.87 2014/07/30 21:18:24 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d40 1
+@
+
+
+1.87
+log
+@garbage collect three unused global flags; no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.86 2014/07/09 11:31:43 schwarze Exp $ */
+a106 4
+#define		  mdoc_pmsg(mdoc, l, p, t) \
+		  mandoc_msg((t), (mdoc)->parse, (l), (p), NULL)
+#define		  mdoc_nmsg(mdoc, n, t) \
+		  mandoc_msg((t), (mdoc)->parse, (n)->line, (n)->pos, NULL)
+@
+
+
+1.86
+log
+@mark defos as const; nobody needs to change it,
+and it is occasionally useful to be able to pass literal strings
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.85 2014/07/02 03:48:07 schwarze Exp $ */
+a30 1
+#define	MDOC_HALT	 (1 << 0) /* error in parse: halt */
+@
+
+
+1.85
+log
+@Implement the obsolete macros .En .Es .Fr .Ot for backward compatibility,
+since this is hardly more complicated than explicitly ignoring them
+as we did in the past.  Of course, do not use them!
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.84 2014/04/20 16:46:04 schwarze Exp $ */
+d28 1
+a28 1
+	char		 *defos; /* default argument for .Os */
+@
+
+
+1.84
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.83 2014/01/05 20:26:36 schwarze Exp $ */
+d44 1
+@
+
+
+1.83
+log
+@Add an option -Q (quick) to mandocdb(8)
+for accelerated generation of reduced-size databases.
+
+Implement this by allowing the parsers to optionally
+abort the parse sequence after the NAME section.
+
+While here, garbage collect the unused void *arg attribute of
+struct mparse and mparse_alloc() and fix some errors in mandoc(3).
+
+This reduces the processing time of mandocdb(8) on /usr/share/man
+by a factor of 2 and the database size by a factor of 4.
+However, it still takes 5 times the time and 6 times the space
+of makewhatis(8), so more work is clearly needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.82 2013/10/21 23:47:58 schwarze Exp $ */
+d112 1
+a112 1
+int		  mdoc_word_alloc(struct mdoc *, 
+d115 1
+a115 1
+int		  mdoc_elem_alloc(struct mdoc *, int, int, 
+d117 1
+a117 1
+int		  mdoc_block_alloc(struct mdoc *, int, int, 
+d140 1
+a140 1
+enum margserr	  mdoc_zargs(struct mdoc *, int, 
+@
+
+
+1.82
+log
+@There are three kinds of input lines: text lines, macros taking
+positional arguments (like Dt Fn Xr) and macros taking text as
+arguments (like Nd Sh Em %T An).  In the past, even the latter put
+each word of their arguments into its own MDOC_TEXT node; instead,
+concatenate arguments unless delimiters, keeps or spacing mode
+prevent that.  Regarding mandoc(1), this is internal refactoring,
+no output change intended.
+
+Regarding mandocdb(8), this fixes yet another regression introduced
+when switching from DB to SQLite: The ability to search for strings
+crossing word boundaries was lost and is hereby restored.  At the
+same time, database sizes and build times are both reduced by a bit
+more than 5% each.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.81 2012/11/17 00:26:33 schwarze Exp $ */
+d29 1
+@
+
+
+1.81
+log
+@Cleanup naming of local variables to make the code easier on the eye:
+Settle for "struct man *man", "struct mdoc *mdoc", "struct meta *meta"
+and avoid the confusing "*m" which was sometimes this, sometimes that.
+No functional change.
+
+ok kristaps@@ some time ago
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.80 2012/07/18 11:11:12 schwarze Exp $ */
+d4 1
+d38 2
+d63 2
+a64 2
+#define	MDOC_IGNDELIM	 (1 << 4) 
+	/* Reserved words in arguments treated as text. */
+d113 1
+@
+
+
+1.80
+log
+@Fix handling of paragraph macros inside lists:
+* When they are trailing the last item, move them outside the list.
+* When they are trailing any other none-compact item, drop them.
+
+OpenBSD rev. mdoc_validate.c 1.107, mdoc.c 1.91
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.79 2012/05/27 17:48:57 schwarze Exp $ */
+d46 1
+a46 1
+#define	MACRO_PROT_ARGS	struct mdoc *m, \
+d103 4
+a106 4
+#define		  mdoc_pmsg(m, l, p, t) \
+		  mandoc_msg((t), (m)->parse, (l), (p), NULL)
+#define		  mdoc_nmsg(m, n, t) \
+		  mandoc_msg((t), (m)->parse, (n)->line, (n)->pos, NULL)
+d117 2
+a118 3
+int		  mdoc_endbody_alloc(struct mdoc *m, int line, int pos,
+			enum mdoct tok, struct mdoc_node *body,
+			enum mdoc_endbody end);
+@
+
+
+1.79
+log
+@Support -Ios='OpenBSD 5.1' to override uname(3) as the source of the
+default value for the mdoc(7) .Os macro.
+Needed for man.cgi on the OpenBSD website.
+
+Problem with man.cgi first noticed by deraadt@@;
+beck@@ and deraadt@@ agree with the way to solve the issue.
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.78 2011/12/02 01:37:14 schwarze Exp $ */
+d121 1
+@
+
+
+1.78
+log
+@In man(7), when no explicit volume name is given, use the default
+volume name for the respective manual section, just like in mdoc(7).
+This gives us nicer page headers for cvs(1), lynx(1), tic(1),
+mkhybrid(8), and many curses(3) manuals.
+
+ok kristaps@@
+
+To not break compatibility, i wrote a corresponding patch for GNU troff
+which Werner Lemberg accepted upstream at rev. 1.65 of:
+http://cvs.savannah.gnu.org/viewvc/groff/tmac/an-old.tmac?root=groff
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.77 2011/09/18 14:14:15 schwarze Exp $ */
+d27 1
+@
+
+
+1.77
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.76 2011/07/18 07:48:14 kristaps Exp $ */
+a126 1
+const char	 *mdoc_a2msec(const char *);
+@
+
+
+1.76
+log
+@Follow-up: forgot to remove useless regset structs.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.75 2011/07/18 07:46:41 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.75
+log
+@Make `struct roff' be passed into libmdoc and libman upon creation.
+This is required for supporting in-line equations.  While here, push
+registers properly into roff and add an set/get/mod interface.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.74 2011/04/19 16:38:48 kristaps Exp $ */
+a41 1
+	struct regset	 *regs; /* registers */
+@
+
+
+1.74
+log
+@Clean up parsing of delimiters in -mdoc.  First, remove the "dowarn"
+variable from mandoc_getarg() so that it prints the warning every time.
+Then, remove the warning from args_checkpunct().  This way, warnings
+are being posted at the correct time.  This makes the flag argument to
+mdoc_zargs() superfluous, so make it be zero when it's invoked.  Finally,
+move the args() flags into mdoc_argv.c and make them enums.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.73 2011/04/17 09:08:19 kristaps Exp $ */
+d43 1
+@
+
+
+1.73
+log
+@Get mdoc_argv.c ready to use [some of] mandoc_getarg() by giving said
+function a parameter to suppress warnings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.72 2011/03/22 14:33:05 kristaps Exp $ */
+d136 1
+a136 5
+			int *, char *, int, char **);
+#define	ARGS_DELIM	(1 << 1)
+#define	ARGS_TABSEP	(1 << 2)
+#define	ARGS_NOWARN	(1 << 3)
+
+a137 2
+
+#define	DELIMSZ	  6 /* hint: max possible size of a delimiter */
+@
+
+
+1.72
+log
+@libmdoc.h and libman.h were including mdoc.h and man.h, respectively.
+Don't have them do that (includes in header files = faugh), and have
+individual files directly include these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.71 2011/03/22 14:28:48 kristaps Exp $ */
+d65 7
+a71 7
+	ARGS_EOLN,
+	ARGS_WORD,
+	ARGS_PUNCT,
+	ARGS_QWORD,
+	ARGS_PHRASE,
+	ARGS_PPHRASE,
+	ARGS_PEND
+d76 3
+a78 3
+	ARGV_EOLN,
+	ARGV_ARG,
+	ARGV_WORD
+@
+
+
+1.71
+log
+@mdoc_argn_free is only used local to mdoc_argv.c, so make it static.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.70 2011/03/22 14:05:45 kristaps Exp $ */
+a19 2
+#include "mdoc.h"
+
+@
+
+
+1.70
+log
+@Move mandoc_isdelim() back into libmdoc.h.  This fixes an unreported
+error where (1) -man pages were punctuating delimiters (e.g., `.B a ;')
+and where (2) standalone punctuation in -mdoc or -man (e.g., ";" on its
+own line) would also be punctuated.  This introduces a small amount of
+complexity of mdoc_{html,term}.c must manage their own spacing with
+running print_word() or print_text().  The check for delimiting now
+happens in mdoc_macro.c's dword().
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.69 2011/03/20 16:02:05 kristaps Exp $ */
+a134 1
+void		  mdoc_argn_free(struct mdoc_arg *, int);
+@
+
+
+1.69
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.68 2011/03/17 11:30:23 kristaps Exp $ */
+d83 17
+d146 3
+@
+
+
+1.68
+log
+@Clean-up in libmdoc: fix last checks for mdoc_*msg return value, then
+make mdoc_vmsg not return an int.  libmdoc is now completely clean of
+return-value checks from the message subsystem.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.67 2011/03/17 09:28:00 kristaps Exp $ */
+d28 2
+a29 3
+	void		 *data; /* private application data */
+	mandocmsg	  msg; /* message callback */
+	int		  flags;
+d88 1
+a88 1
+		  (*(m)->msg)((t), (m)->data, (l), (p), NULL)
+d90 1
+a90 3
+		  (*(m)->msg)((t), (m)->data, (n)->line, (n)->pos, NULL)
+void		  mdoc_vmsg(struct mdoc *, enum mandocerr, 
+			int, int, const char *, ...);
+@
+
+
+1.67
+log
+@Kill off some unused function prototypes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.66 2011/03/17 09:22:39 kristaps Exp $ */
+d92 1
+a92 1
+int		  mdoc_vmsg(struct mdoc *, enum mandocerr, 
+@
+
+
+1.66
+log
+@Move mdoc_str2sec() into mdoc_validate.c as a2sec(), as that's the only
+place that it's being used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.65 2011/03/17 09:16:38 kristaps Exp $ */
+a109 3
+size_t		  mdoc_isescape(const char *);
+time_t		  mdoc_atotime(const char *);
+size_t		  mdoc_macro2len(enum mdoct);
+@
+
+
+1.65
+log
+@Move mdoc_isdelim() into mandoc.h as mandoc_isdelim().  This allows the
+removal of manual delimiter checks in html.c and term.c.  Finally, add
+the escaped period as a closing delimiter, removing a TODO to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.64 2011/03/17 01:23:28 kristaps Exp $ */
+a110 1
+enum	mdoc_sec  mdoc_str2sec(const char *);
+@
+
+
+1.64
+log
+@Make args_checkpunct() use mdoc_isdelim() instead of mdoc_iscdelim(),
+which is wrong.  Then remove mdoc_iscdelim() alltogether.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.63 2010/11/30 13:04:14 kristaps Exp $ */
+a83 7
+enum	mdelim {
+	DELIM_NONE = 0,
+	DELIM_OPEN,
+	DELIM_MIDDLE,
+	DELIM_CLOSE
+};
+
+a109 2
+#define	DELIMSZ	  6 /* maximum size of a delimiter string */
+enum mdelim	  mdoc_isdelim(const char *);
+@
+
+
+1.63
+log
+@mdoc_action.c is no more.  Attic it and remove it from the Makefile.
+Remove references to MDOC_ACTED (it was only assertions) and the pre-
+and post-action functions.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.62 2010/08/20 01:02:07 schwarze Exp $ */
+d117 1
+a117 1
+enum mdelim	  mdoc_iscdelim(char);
+@
+
+
+1.62
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.61 2010/07/13 23:53:20 schwarze Exp $ */
+a130 3
+int		  mdoc_action_pre(struct mdoc *, 
+			struct mdoc_node *);
+int		  mdoc_action_post(struct mdoc *);
+@
+
+
+1.61
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.60 2010/07/07 15:04:54 kristaps Exp $ */
+a38 1
+	int		  pflags;
+@
+
+
+1.60
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.59 2010/07/01 22:35:54 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.59
+log
+@In the mdoc(7) parser, inspect roff registers early such that all parts
+of the parser can use the resulting cues.  In particular, this allows
+to use .nr nS to force SYNOPSIS-style .Nm indentation outside the
+SYNOPSIS as needed by ifconfig(8).
+
+To actually make this useable, .Pp must rewind .Nm, or the rest of the
+section would end up indented.  Implement a quick hack for now,
+a generic solution can be designed later.
+
+ok kristaps@@ and tested by sobrado@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.58 2010/06/29 19:20:38 schwarze Exp $ */
+a19 1
+#include "regs.h"
+@
+
+
+1.58
+log
+@Support for badly nested blocks, written around the time of
+the Rostock mandoc hackathon and tested and polished since,
+supporting constructs like:
+
+.Ao Bo    Ac    Bc        (exp breaking exp)
+.Aq Bo    eol   Bc        (imp breaking exp)
+.Ao Bq    Ac    eol       (exp breaking imp)
+.Ao Bo So Bc    Ac  Sc    (double break, inner before outer)
+.Ao Bo So Ac    Bc  Sc    (double break, outer before inner)
+.Ao Bo    Ac So Bc  Sc    (broken breaker)
+.Ao Bo So Bc Do Ac  Sc Dc (broken double breaker)
+
+There are still two known issues which are tricky:
+
+1) Breaking two identical explicit blocks (Ao Bo Bo Ac or Aq Bo Bo eol)
+fails outright, triggering a bogus syntax error.
+2) Breaking a block by two identical explicit blocks (Ao Ao Bo Ac Ac Bc
+or Ao Ao Bq Ac Ac eol) still has a minor rendering error left:
+"<ao1 <ao2 [bo ac2> ac1> bc]>" should not have the final ">".
+
+We can fix these later in the tree, let's not grow this diff too large.
+
+"get it in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.57 2010/06/27 16:18:13 kristaps Exp $ */
+d39 1
+@
+
+
+1.57
+log
+@Following clue-stick applied by schwarze@@, back out const-ness of regset
+passed in to libmdoc and libman.
+
+Fix mdoc.3 and man.3 EXAMPLE sections to include regset.
+
+Add MDOC_SYNPRETTY flag cueing front-end to nicely format certain values
+as if SEC_SYNOPSIS were the current section.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.56 2010/06/27 15:52:41 kristaps Exp $ */
+d112 3
+@
+
+
+1.56
+log
+@Downstream maintainers: this removes UGLY!  I don't want diverging
+functionality and UGLY works quite well thanks to schwarze@@'s careful
+attention.
+
+This also backs out function-prototype changes for struct regset,
+instead stuffing a pointer to the regset directly into struct
+mdoc/man/roff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.55 2010/06/26 16:07:08 kristaps Exp $ */
+d46 1
+a46 1
+	const struct regset *regs; /* readonly registers */
+@
+
+
+1.55
+log
+@Mechanical diff allowing the const struct regset to propogate through
+libman and libmdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.54 2010/06/26 15:36:37 kristaps Exp $ */
+d29 2
+a30 2
+	void		 *data;
+	mandocmsg	  msg;
+d40 4
+a43 4
+	enum mdoc_next	  next;
+	struct mdoc_node *last;
+	struct mdoc_node *first;
+	struct mdoc_meta  meta;
+d46 1
+a49 1
+			const struct regset *regs, \
+@
+
+
+1.54
+log
+@Churn-ish check-in getting mdoc_parseln() and man_parseln() to accept a
+const struct regset pointer.  No functionality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.53 2010/06/19 20:46:27 kristaps Exp $ */
+d48 7
+a54 2
+#define	MACRO_PROT_ARGS	struct mdoc *m, enum mdoct tok, \
+			int line, int ppos, int *pos, char *buf
+@
+
+
+1.53
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.52 2010/06/03 13:44:36 kristaps Exp $ */
+d20 1
+@
+
+
+1.52
+log
+@Consolidated list processing to a single loop in mdoc_validate.c.  This
+relieves having to repeat running over the argument list in
+mdoc_action.c and mdoc_validate.c.
+
+Default to LIST_item for type-less lists (groff technically doesn't do
+this: it just ignores the `It' lines altogether).
+
+Make MANDOC_LISTTYPE be a recoverable error.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.51 2010/05/31 15:42:09 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.51
+log
+@Add ability to interpret initial free-form lines as part of a `Bl
+-column' up until the first `It'.  This is UGLY and should have all
+sorts of warnings, and will.  On the one hand, it fits with groff's
+notion of tabs and tab-spaces.  On the other hand, it's not really
+"free-form" text any more.  Note that this does not yet accomodate for
+macros coming on these lines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.50 2010/05/24 12:05:04 schwarze Exp $ */
+d121 1
+a121 2
+int		  mdoc_valid_pre(struct mdoc *, 
+			const struct mdoc_node *);
+@
+
+
+1.50
+log
+@remove unused enum merr;
+ok joerg@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.49 2010/05/17 23:57:06 kristaps Exp $ */
+d37 1
+@
+
+
+1.49
+log
+@Increase performance by stashing the list type in struct mdoc_node.
+This will eventually be used so that mdoc_macro can known whether to
+dump list line arguments into the body (`Bl -column' overflowing).
+
+Remove a2list() and arg_listtype() because of this.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.48 2010/05/17 22:11:42 kristaps Exp $ */
+a45 56
+enum	merr {
+	ETAILWS = 0,
+	EQUOTPARM,
+	EQUOTTERM,
+	EARGVAL,	
+	EBODYPROL,
+	EPROLBODY,
+	ETEXTPROL,
+	ENOBLANK,
+	ETOOLONG,
+	EESCAPE,
+	EPRINT,
+	ENODAT,
+	ENOPROLOGUE,
+	ELINE,
+	EATT,
+	ENAME,
+	ELISTTYPE,
+	EDISPTYPE,
+	EMULTIDISP,
+	EMULTILIST,
+	ESECNAME,
+	ENAMESECINC,
+	EARGREP,
+	EBOOL,
+	ECOLMIS,
+	ENESTDISP,
+	EMISSWIDTH,
+	EWRONGMSEC,
+	ESECOOO,
+	ESECREP,
+	EBADSTAND,
+	ENOMULTILINE,
+	EMULTILINE,
+	ENOLINE,
+	EPROLOOO,
+	EPROLREP,
+	EBADMSEC,
+	EFONT,
+	EBADDATE,
+	ENUMFMT,
+	ENOWIDTH,
+	EUTSNAME,
+	EOBS,
+	EIMPBRK,
+	EIGNE,
+	EOPEN,
+	EQUOTPHR,
+	ENOCTX,
+	ELIB,
+	EBADCHILD,
+	ENOTYPE,
+	EBADCOMMENT,
+	MERRMAX
+};
+
+@
+
+
+1.48
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.47 2010/05/15 16:24:37 kristaps Exp $ */
+d180 1
+a180 1
+			const struct mdoc_node *);
+@
+
+
+1.47
+log
+@LIBRARY can also occur in section 9.
+All manual sections (unknown, 3p, 3f, etc.) correctly handled by -mdoc.
+Useful warning printed if unknown manual section.
+Checking for manual sections (e.g., LIBRARY) checks only first character, so 3p, 3f, etc. are free.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.46 2010/05/15 08:54:04 schwarze Exp $ */
+d29 1
+a29 1
+	struct mdoc_cb	  cb;
+d145 6
+a150 13
+#define		  mdoc_perr(m, l, p, t) \
+		  mdoc_err((m), (l), (p), 1, (t))
+#define		  mdoc_pwarn(m, l, p, t) \
+		  mdoc_err((m), (l), (p), 0, (t))
+#define		  mdoc_nerr(m, n, t) \
+		  mdoc_err((m), (n)->line, (n)->pos, 1, (t))
+#define		  mdoc_nwarn(m, n, t) \
+		  mdoc_err((m), (n)->line, (n)->pos, 0, (t))
+
+int		  mdoc_err(struct mdoc *, int, int, int, enum merr);
+int		  mdoc_verr(struct mdoc *, int, int, const char *, ...);
+int		  mdoc_vwarn(struct mdoc *, int, int, const char *, ...);
+
+@
+
+
+1.46
+log
+@Distinguish OPEN, MIDDLE and CLOSE delimiters (using an enum).
+Only OPEN are drawn before the beginning of a macro;
+this is new, before this, MIDDLE ('|') were drawn in front, too.
+Only CLOSE are pushed after the end of a macro (as before).
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.45 2010/05/15 04:47:38 kristaps Exp $ */
+d83 1
+a83 1
+	EBADSEC,
+@
+
+
+1.45
+log
+@More `Bl -column' dancing: It children also inherit in-phrase flags (noted by Ingo Schwarze).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.44 2010/05/14 17:31:25 kristaps Exp $ */
+d134 7
+d171 2
+a172 2
+int		  mdoc_iscdelim(char);
+int		  mdoc_isdelim(const char *);
+@
+
+
+1.44
+log
+@Backed out check for `Ex' manual sec (ok schwarze@@, joerg@@), in turn backing out check_msec() and deps.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.43 2010/05/14 12:55:22 kristaps Exp $ */
+d35 2
+a36 1
+#define	MDOC_PHRASELIT	 (1 << 4) /* in a literal within a phrase */
+a192 1
+#define ARGS_PPHRASED	(1 << 4)
+@
+
+
+1.43
+log
+@Proper handling of quoted tab-separated column lists.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.42 2010/05/13 06:22:11 kristaps Exp $ */
+a81 1
+	EBADMSEC,
+@
+
+
+1.42
+log
+@Fixed bug in -Thtml -mdoc where `Lb' would line-break in LIBRARY section.
+Fixed assumption that parse-point == 1 equates to beginning of line (false if whitespace separates macro and control character).
+Fixed line-break for non-first-macro in several SYNOPSIS macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.41 2010/05/12 08:41:17 kristaps Exp $ */
+d35 1
+d190 4
+a193 3
+#define	ARGS_DELIM	(1 << 1)	/* See args(). */
+#define	ARGS_TABSEP	(1 << 2)	/* See args(). */
+#define	ARGS_NOWARN	(1 << 3)	/* See args(). */
+@
+
+
+1.41
+log
+@mdoc_atosec -> mdoc_str2sec (consistent with str2 being different from a2).
+Changed ordering of sections (EXIT STATUS moved around), argued for by Ulrich Sporlein.
+Fixed mdoc_str2sec not to use weird structure.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.40 2010/05/09 10:17:02 kristaps Exp $ */
+d31 4
+a34 3
+#define	MDOC_HALT	 (1 << 0)	/* Error in parse. Halt. */
+#define	MDOC_LITERAL	 (1 << 1)	/* In a literal scope. */
+#define	MDOC_PBODY	 (1 << 2)	/* In the document body. */
+@
+
+
+1.40
+log
+@Introduce ARGS_PEND for `It -column' end-of-line special casing.
+Initial rules for insane `It -column' tabsep handling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.39 2010/05/08 07:30:19 kristaps Exp $ */
+d165 1
+a165 1
+enum	mdoc_sec  mdoc_atosec(const char *);
+@
+
+
+1.39
+log
+@Lint fixes (type-safety for enums via -cefuh).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.38 2010/05/07 06:05:38 kristaps Exp $ */
+d121 2
+a122 1
+	ARGS_PPHRASE
+@
+
+
+1.38
+log
+@Initial ARGS_PPHRASE (partial phrase) framework.
+Running tally of changes in index.sgml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.37 2010/05/07 05:54:09 kristaps Exp $ */
+d166 1
+a166 2
+
+size_t		  mdoc_macro2len(int);
+@
+
+
+1.37
+log
+@enum-ised mdoc_argv() return (better return-value safety).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.36 2010/05/07 05:48:29 kristaps Exp $ */
+d120 2
+a121 1
+	ARGS_PHRASE
+@
+
+
+1.36
+log
+@margerr -> margserr (getting ready for margverr).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.35 2010/05/07 05:34:56 kristaps Exp $ */
+d123 7
+d179 1
+a179 1
+int		  mdoc_argv(struct mdoc *, int, enum mdoct,
+a180 4
+#define	ARGV_ERROR	(-1)
+#define	ARGV_EOLN	(0)
+#define	ARGV_ARG	(1)
+#define	ARGV_WORD	(2)
+@
+
+
+1.35
+log
+@Wrangle mdoc_args() and mdoc_zargs() to use enum return type.
+Fixed lookup() and lookup_raw() to correctly use enum type.
+Quashed in_line_argn() bug (not reported, but there) where mixing return values.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.34 2010/04/08 07:53:01 kristaps Exp $ */
+d114 1
+a114 1
+enum	margerr {
+d180 1
+a180 1
+enum margerr	  mdoc_args(struct mdoc *, int,
+d182 1
+a182 1
+enum margerr	  mdoc_zargs(struct mdoc *, int, 
+@
+
+
+1.34
+log
+@Sync'd mdoc.c's function names with man.c.
+Prompted by Ingo and Claus Assman, added warn/ignore for text lines beginning with `\."'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.33 2010/04/06 11:33:00 kristaps Exp $ */
+d114 9
+d180 1
+a180 1
+int		  mdoc_args(struct mdoc *, int,
+d182 1
+a182 1
+int		  mdoc_zargs(struct mdoc *, int, 
+d187 1
+a187 6
+#define	ARGS_ERROR	(-1)
+#define	ARGS_EOLN	(0)
+#define	ARGS_WORD	(1)
+#define	ARGS_PUNCT	(2)
+#define	ARGS_QWORD	(3)
+#define	ARGS_PHRASE	(4)
+@
+
+
+1.33
+log
+@Migrating mdoc_node_free() and mdoc_node_freelist() to use mdoc_node_delete(), which has a more intuitive interface and mirrors libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.32 2010/04/03 14:02:10 kristaps Exp $ */
+d96 1
+@
+
+
+1.32
+log
+@Merged Ingo Schwarze's patch (plus documentation) for removing extraneous list types, which happens fairly often.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.31 2010/03/31 07:13:53 kristaps Exp $ */
+d140 1
+a140 2
+void		  mdoc_node_free(struct mdoc_node *);
+void		  mdoc_node_freelist(struct mdoc_node *);
+@
+
+
+1.31
+log
+@Macro types enum-ated (enum mdoct) (for easier debugging in gdb of "tok" values).
+Initial check-in of Ingo Schwarze's patch for Xo/Xc handling (in blocks ifdef'd "UGLY").
+Put Oc-close-Op parts into UGLY ifdef blocks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.30 2009/10/30 05:58:37 kristaps Exp $ */
+d170 1
+@
+
+
+1.30
+log
+@libmdoc and libman now using non-recoverable allocations (simpler code).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.29 2009/10/15 02:56:51 kristaps Exp $ */
+d99 2
+a100 2
+#define	MACRO_PROT_ARGS	struct mdoc *m, int tok, int line, \
+			int ppos, int *pos, char *buf
+d134 1
+a134 1
+			int, struct mdoc_arg *);
+d136 4
+a139 4
+			int, struct mdoc_arg *);
+int		  mdoc_head_alloc(struct mdoc *, int, int, int);
+int		  mdoc_tail_alloc(struct mdoc *, int, int, int);
+int		  mdoc_body_alloc(struct mdoc *, int, int, int);
+d143 1
+a143 1
+int		  mdoc_hash_find(const char *);
+d163 1
+a163 1
+int		  mdoc_argv(struct mdoc *, int, int,
+d171 1
+a171 1
+			int *, char *, int, char **);
+@
+
+
+1.29
+log
+@Added warning about specifying list arguments before type (suggested by Joerg Sonnenberg).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.28 2009/09/24 15:01:06 kristaps Exp $ */
+a46 1
+	EMALLOC,
+@
+
+
+1.28
+log
+@Added EBADCHILD error (bad child of parent context).
+`Rs' post-checks that all children are proper bibliographic elements.
+`Rs' correctly re-orders its children as per groff's output (including %C).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.27 2009/09/16 14:40:56 kristaps Exp $ */
+d96 1
+@
+
+
+1.27
+log
+@Lookup hashes are now static tables, ordered first-level by second character, then randomly along a chain.  Improves performance by a small fraction and considerably cleans up hash sources.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.26 2009/08/20 09:07:24 kristaps Exp $ */
+d95 1
+@
+
+
+1.26
+log
+@Documented ARGS_ handling in args().
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.25 2009/08/20 08:59:12 kristaps Exp $ */
+a29 1
+	void		 *htab;
+d141 2
+a142 3
+void		 *mdoc_hash_alloc(void);
+int		  mdoc_hash_find(const void *, const char *);
+void		  mdoc_hash_free(void *);
+@
+
+
+1.25
+log
+@Delimiter whitespace is correctly flagged (required some special handling).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.24 2009/08/19 14:09:33 kristaps Exp $ */
+d175 3
+a177 3
+#define	ARGS_DELIM	(1 << 1)
+#define	ARGS_TABSEP	(1 << 2)
+#define	ARGS_NOWARN	(1 << 3)
+@
+
+
+1.24
+log
+@In-line documentation of mdoc_macro file.
+Moved _NEXT_ macros into _alloc_ routines (where they belong).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.23 2009/08/18 14:27:16 kristaps Exp $ */
+d174 4
+a177 1
+			int *, char *, char **);
+a183 1
+
+@
+
+
+1.23
+log
+@libmdoc accepts whitespace following control character.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.22 2009/07/29 08:46:06 kristaps Exp $ */
+d99 1
+a99 1
+#define	MACRO_PROT_ARGS	struct mdoc *mdoc, int tok, int line, \
+@
+
+
+1.22
+log
+@Moved CALLABLE check to lookup_raw().
+Made PARSABLE check occur prior to lookup().
+Non-PARSEABLE macros no longer warn against having macro-like parameters.
+Non-CALLABLE macros no longer produce an error, just display their symbols (as in groff) (pointed out by joerg@@netbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.21 2009/07/20 14:09:38 kristaps Exp $ */
+a94 1
+	ESPACE,
+@
+
+
+1.21
+log
+@Replaced ugly TABSEP handling with simpler routine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.20 2009/07/19 21:26:27 kristaps Exp $ */
+a49 1
+	ENOCALL,
+a89 1
+	EMACPARM,
+@
+
+
+1.20
+log
+@Fixed and cleaned up "phrase" handling (`Bl -column' columns).
+Found strange newline bug in -diag handling (and others?).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.19 2009/07/17 12:27:49 kristaps Exp $ */
+a45 1
+	ECOLEMPTY,
+@
+
+
+1.19
+log
+@Removed EARGVPARM (superfluous, overly error-generating).
+Added `sp' handler.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.18 2009/07/12 20:50:08 kristaps Exp $ */
+d177 2
+@
+
+
+1.18
+log
+@Replacement of `Lb' in mdoc_action.c.
+Added warning against bogus `Lb' (like groff does).
+Added proper quotes around `Lb' in mdoc_term.c.
+Moved mdoc_a2lib -> libmdoc (where it belongs).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.17 2009/07/12 20:30:35 kristaps Exp $ */
+a46 1
+	EARGVPARM,
+@
+
+
+1.17
+log
+@Moved mdoc_a2st() out of mdoc.h -> libmdoc.h (replacement in mdoc_action.c).
+Made bad standards into an error (were a warning).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.16 2009/07/12 20:24:24 kristaps Exp $ */
+d100 1
+d158 1
+@
+
+
+1.16
+log
+@Moved mdoc_a2att() into libmdoc (replacement happens in mdoc_action.c).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.15 2009/07/12 09:13:21 kristaps Exp $ */
+d157 1
+@
+
+
+1.15
+log
+@Fixed mdoc_nwarn/mdoc_nerr considering themselves err/warn instead of warn/err (BIG mistake).  From suggestion by <joerg@@netbsd.org>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.14 2009/07/07 09:29:15 kristaps Exp $ */
+d156 1
+@
+
+
+1.14
+log
+@Tabularised error-code lookup in mdoc.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.13 2009/07/06 13:04:52 kristaps Exp $ */
+d126 2
+a128 2
+#define		  mdoc_nwarn(m, n, t) \
+		  mdoc_err((m), (n)->line, (n)->pos, 1, (t))
+@
+
+
+1.13
+log
+@Consolidated all err/warnings into mdoc.c via libmdoc.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.12 2009/07/06 09:21:24 kristaps Exp $ */
+d45 1
+a45 1
+	ETAILWS,
+a54 1
+	ESPACE,
+d68 1
+d70 1
+a70 1
+	EMULTILIST,
+a79 1
+	ENAMESECINC,
+d86 1
+d89 1
+a90 1
+	EBADSEC,
+a91 1
+	ENUMFMT,
+d97 1
+a97 1
+	EQUOT,
+d99 2
+a100 1
+	ENOPARMS
+@
+
+
+1.12
+log
+@Initial removal of enum mdoc_warn from mdoc warnings (unnecessary complication).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.11 2009/06/17 10:53:32 kristaps Exp $ */
+d44 58
+d121 11
+a131 4
+/* 
+ * When GCC2 is deprecated, most of these can be reverted to #define
+ * as mdoc_vXXX using __VA_ARGS__.  Until then, use real functions.
+ */
+d133 1
+a133 7
+int		  mdoc_verr(struct mdoc *, int, int, const char *, ...);
+int		  mdoc_nerr(struct mdoc *, const struct mdoc_node *,
+			const char *, ...);
+int		  mdoc_warn(struct mdoc *, const char *, ...);
+int		  mdoc_err(struct mdoc *, const char *, ...);
+int		  mdoc_pwarn(struct mdoc *, int, int, const char *, ...);
+int		  mdoc_perr(struct mdoc *, int, int, const char *, ...);
+@
+
+
+1.11
+log
+@Section orders are more elegantly handled (MDOC_PBODY is a flag).
+Cleaned up string->enum conversion for section lookup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.10 2009/06/15 10:36:01 kristaps Exp $ */
+d67 2
+a68 4
+int		  mdoc_vwarn(struct mdoc *, int, int, 
+			enum mdoc_warn, const char *, ...);
+int		  mdoc_verr(struct mdoc *, int, int, 
+			const char *, ...);
+d71 1
+a71 1
+int		  mdoc_warn(struct mdoc *, enum mdoc_warn, const char *, ...);
+d73 1
+a73 2
+int		  mdoc_pwarn(struct mdoc *, int, int,
+			enum mdoc_warn,const char *, ...);
+@
+
+
+1.10
+log
+@Deprecated mdoc_msg (not being used anywhere).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.9 2009/06/15 10:02:52 kristaps Exp $ */
+d32 3
+a34 2
+#define	MDOC_HALT	 (1 << 0)
+#define	MDOC_LITERAL	 (1 << 1)
+@
+
+
+1.9
+log
+@Removed mdoc_nwarn (not being used anywhere).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.8 2009/06/15 09:55:43 kristaps Exp $ */
+d64 1
+a64 1
+ * as mdoc_vmsg using __VA_ARGS__.  Until then, use real functions.
+a67 2
+void		  mdoc_vmsg(struct mdoc *, int, int, 
+			const char *, ...);
+a73 2
+void		  mdoc_msg(struct mdoc *, const char *, ...);
+void		  mdoc_pmsg(struct mdoc *, int, int, const char *, ...);
+@
+
+
+1.8
+log
+@mdoc error/warn macros replaced with real functions for GCC2 support (miod@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.7 2009/06/10 20:18:43 kristaps Exp $ */
+a71 2
+int		  mdoc_nwarn(struct mdoc *, const struct mdoc_node *,
+			enum mdoc_warn, const char *, ...);
+@
+
+
+1.7
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.6 2009/04/12 19:45:26 kristaps Exp $ */
+a57 32
+#define	mdoc_nwarn(mdoc, node, type, fmt, ...) \
+		  mdoc_vwarn((mdoc), (node)->line, \
+		  (node)->pos, (type), (fmt), ##__VA_ARGS__)
+
+#define	mdoc_nerr(mdoc, node, fmt, ...) \
+		  mdoc_verr((mdoc), (node)->line, \
+		  (node)->pos, (fmt), ##__VA_ARGS__)
+
+#define	mdoc_warn(mdoc, type, fmt, ...) \
+		  mdoc_vwarn((mdoc), (mdoc)->last->line, \
+		  (mdoc)->last->pos, (type), (fmt), ##__VA_ARGS__)
+
+#define	mdoc_err(mdoc, fmt, ...) \
+		  mdoc_verr((mdoc), (mdoc)->last->line, \
+		  (mdoc)->last->pos, (fmt), ##__VA_ARGS__)
+
+#define	mdoc_msg(mdoc, fmt, ...) \
+		  mdoc_vmsg((mdoc), (mdoc)->last->line, \
+		  (mdoc)->last->pos, (fmt), ##__VA_ARGS__)
+
+#define	mdoc_pmsg(mdoc, line, pos, fmt, ...) \
+		  mdoc_vmsg((mdoc), (line), \
+	  	  (pos), (fmt), ##__VA_ARGS__)
+
+#define	mdoc_pwarn(mdoc, line, pos, type, fmt, ...) \
+		  mdoc_vwarn((mdoc), (line), \
+	  	  (pos), (type), (fmt), ##__VA_ARGS__)
+
+#define	mdoc_perr(mdoc, line, pos, fmt, ...) \
+		  mdoc_verr((mdoc), (line), \
+	  	  (pos), (fmt), ##__VA_ARGS__)
+
+d62 4
+d72 11
+@
+
+
+1.6
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmdoc.h,v 1.5 2009/04/12 19:29:53 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.5
+log
+@Made \(ss render as "ss", documented under COMPATIBILITY in mandoc_char.7.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdoc.h,v 1.4 2009/04/02 06:51:44 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.4
+log
+@mdoc_tokhash -> hash
+Initial man hashtab (BROKEN).
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdoc.h,v 1.3 2009/03/31 13:50:19 kristaps Exp $ */
+a148 4
+/* FIXME: get rid of these. */
+int		  xstrlcpys(char *, const struct mdoc_node *, size_t);
+void	 	 *xrealloc(void *, size_t);
+char	 	 *xstrdup(const char *);
+@
+
+
+1.3
+log
+@General clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdoc.h,v 1.2 2009/03/23 15:41:09 kristaps Exp $ */
+d114 3
+a116 3
+void		 *mdoc_tokhash_alloc(void);
+int		  mdoc_tokhash_find(const void *, const char *);
+void		  mdoc_tokhash_free(void *);
+@
+
+
+1.2
+log
+@-man linked to mandoc in documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdoc.h,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
+a150 3
+int	  	  xstrlcat(char *, const char *, size_t);
+int	  	  xstrlcpy(char *, const char *, size_t);
+int	  	  xstrcmp(const char *, const char *);
+@
+
+
+1.1
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.91 2009/03/21 13:09:29 kristaps Exp $ */
+d156 1
+a156 1
+int		  macro_end(struct mdoc *);
+@

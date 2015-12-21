@@ -1,0 +1,141 @@
+head	1.6;
+access;
+symbols
+	VERSION_1_9_5:1.6
+	VERSION_1_8_5:1.6
+	VERSION_1_8_1:1.6
+	VERSION_1_7_16:1.6
+	VERSION_1_7_15:1.6
+	OPENBSD_CHECKIN:1.6
+	VERSION_1_6_5:1.6
+	VERSION_1_5_1:1.6
+	VERSION_1_3_15:1.6
+	VERSION_1_3_6:1.5
+	VERSION_1_3_5:1.5
+	VERSION_1_2_0:1.3
+	VERSION_1_1_0:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2009.02.27.17.24.30;	author kristaps;	state dead;
+branches;
+next	1.5;
+
+1.5
+date	2009.02.23.20.55.56;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.02.23.16.01.33;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.01.20.13.44.05;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.10.16.03.12;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.10.15.02.01;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@Initial NetBSD pkgsrc.
+@
+text
+@@
+
+
+1.5
+log
+@Port works.
+@
+text
+@a0 24
+# $OpenBSD$
+
+COMMENT=		mdoc macro compiler
+
+DISTNAME=		mdocml-@@VERSION@@
+CATEGORIES=		devel
+
+HOMEPAGE=		http://mdocml.bsd.lv/
+
+MAINTAINER=		Kristaps Dzonsons <kristaps@@kth.se>
+
+# BSD
+PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_FTP=	Yes
+PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_DISTFILES_FTP=	Yes
+
+MASTER_SITES=		http://mdocml.bsd.lv/snapshots/
+
+WANTLIB=		c
+
+NO_REGRESS=		No
+
+.include <bsd.port.mk>
+@
+
+
+1.4
+log
+@Fixing port generation & instructions.
+@
+text
+@d18 1
+a18 1
+MASTER_SITES=		http://mdocml.bsd.lv/ports-openbsd/
+d22 1
+a22 1
+NO_REGRESS=		Yes
+@
+
+
+1.3
+log
+@Re-merged old port-building routines.
+@
+text
+@d18 1
+a18 1
+MASTER_SITES=		http://mdocml.bsd.lv/
+@
+
+
+1.2
+log
+@Ready for looking over by people.
+@
+text
+@d3 1
+a3 1
+COMMENT=		compile mdoc macros into mark-up languages
+@
+
+
+1.1
+log
+@Added (prelim.) openbsd port.
+@
+text
+@d18 1
+a18 1
+MASTER_SITES=		http://sysjail.bsd.lv/dist/
+@

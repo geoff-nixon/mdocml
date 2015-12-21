@@ -1,0 +1,8034 @@
+head	1.132;
+access;
+symbols
+	VERSION_1_13_3:1.132
+	VERSION_1_13_2:1.127
+	VERSION_1_12_4:1.127
+	VERSION_1_13_1:1.127
+	VERSION_1_12_3:1.120
+	VERSION_1_12_2:1.120
+	VERSION_1_12:1.127.0.2
+	VERSION_1_12_1:1.113
+	VERSION_1_12_0:1.111
+	VERSION_1_11_7:1.108
+	VERSION_1_11_6:1.102
+	VERSION_1_11_5:1.102
+	VERSION_1_11_4:1.102
+	VERSION_1_11_3:1.100
+	VERSION_1_11_2:1.99
+	VERSION_1_11_1:1.99
+	VERSION_1_10_10:1.99
+	VERSION_1_10_9:1.94
+	VERSION_1_10_8:1.92
+	VERSION_1_10_7:1.91
+	VERSION_1_10_6:1.89
+	VERSION_1_10_5:1.80
+	VERSION_1_10_5_PREPDF:1.79
+	VERSION_1_10_4:1.74
+	VERSION_1_10_3:1.74
+	VERSION_1_10_2:1.74
+	VERSION_1_10_1:1.74
+	VERSION_1_9_24:1.66
+	VERSION_1_9_25:1.69
+	VERSION_1_9_23:1.61
+	VERSION_1_9_22:1.60
+	VERSION_1_9_21:1.60
+	VERSION_1_9_20:1.60
+	VERSION_1_9_19:1.60
+	VERSION_1_9_18:1.60
+	VERSION_1_9_17:1.58
+	VERSION_1_9_16:1.56
+	VERSION_1_9_15:1.55
+	VERSION_1_9_15-pre2:1.54
+	VERSION_1_9_15-pre1:1.54
+	VERSION_1_9_14:1.54
+	VERSION_1_9_13:1.46
+	VERSION_1_9_12:1.41
+	VERSION_1_9_11:1.41
+	VERSION_1_9_10:1.40
+	VERSION_1_9_9:1.39
+	VERSION_1_9_8:1.37
+	VERSION_1_9_7:1.37
+	VERSION_1_9_6:1.37
+	VERSION_1_9_5:1.37
+	VERSION_1_9_2:1.37
+	VERSION_1_9_1:1.35
+	VERSION_1_9_0:1.28
+	VERSION_1_8_5:1.21
+	VERSION_1_8_4:1.20
+	VERSION_1_8_3:1.20
+	VERSION_1_8_2:1.20
+	VERSION_1_8_1:1.19
+	VERSION_1_8_0:1.19
+	VERSION_1_7_24:1.18
+	VERSION_1_7_23:1.18
+	VERSION_1_7_22:1.18
+	VERSION_1_7_21:1.18
+	VERSION_1_7_20:1.15
+	VERSION_1_7_19:1.13
+	VERSION_1_7_17:1.12
+	VERSION_1_7_16:1.12
+	VERSION_1_7_15:1.12
+	VERSION_1_7_14:1.12
+	VERSION_1_7_13:1.10
+	VERSION_1_7_12:1.8
+	OPENBSD_CHECKIN:1.8
+	VERSION_1_7_10:1.8
+	VERSION_1_7_5:1.3;
+locks; strict;
+comment	@# @;
+
+
+1.132
+date	2015.01.29.00.33.57;	author schwarze;	state Exp;
+branches;
+next	1.131;
+
+1.131
+date	2015.01.24.02.41.49;	author schwarze;	state Exp;
+branches;
+next	1.130;
+
+1.130
+date	2015.01.24.02.14.46;	author schwarze;	state Exp;
+branches;
+next	1.129;
+
+1.129
+date	2015.01.24.01.58.33;	author schwarze;	state Exp;
+branches;
+next	1.128;
+
+1.128
+date	2014.12.28.15.23.33;	author schwarze;	state Exp;
+branches;
+next	1.127;
+
+1.127
+date	2014.06.22.16.39.45;	author schwarze;	state Exp;
+branches;
+next	1.126;
+
+1.126
+date	2014.03.31.01.05.32;	author schwarze;	state Exp;
+branches;
+next	1.125;
+
+1.125
+date	2014.03.17.06.57.48;	author schwarze;	state Exp;
+branches;
+next	1.124;
+
+1.124
+date	2014.02.16.14.26.55;	author schwarze;	state Exp;
+branches;
+next	1.123;
+
+1.123
+date	2014.02.14.17.35.05;	author schwarze;	state Exp;
+branches;
+next	1.122;
+
+1.122
+date	2014.01.06.00.53.33;	author schwarze;	state Exp;
+branches;
+next	1.121;
+
+1.121
+date	2013.12.31.15.17.51;	author schwarze;	state Exp;
+branches;
+next	1.120;
+
+1.120
+date	2013.09.16.22.58.57;	author schwarze;	state Exp;
+branches;
+next	1.119;
+
+1.119
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.118;
+
+1.118
+date	2012.07.29.13.37.20;	author schwarze;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2012.06.20.22.06.30;	author schwarze;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2012.06.02.20.16.23;	author schwarze;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2012.05.27.17.39.28;	author schwarze;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2012.04.15.21.24.18;	author schwarze;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2012.01.03.15.16.24;	author kristaps;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2011.12.02.01.37.14;	author schwarze;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2011.09.26.23.07.31;	author schwarze;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2011.09.20.22.46.47;	author schwarze;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2011.09.06.17.56.00;	author kristaps;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2011.08.30.13.14.01;	author kristaps;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2011.08.30.12.16.36;	author kristaps;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2011.08.19.13.07.22;	author kristaps;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2011.08.18.08.58.43;	author kristaps;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2011.08.17.22.20.14;	author kristaps;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2011.08.17.22.16.32;	author kristaps;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2011.07.08.09.35.06;	author kristaps;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2011.07.03.22.57.32;	author kristaps;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2011.05.26.09.26.16;	author kristaps;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2011.03.07.01.35.51;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2011.02.09.10.03.02;	author kristaps;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2011.01.25.00.40.14;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2011.01.24.23.17.19;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2011.01.12.10.43.22;	author kristaps;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2011.01.04.23.32.21;	author kristaps;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2010.12.29.16.18.13;	author kristaps;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2010.12.08.10.58.22;	author kristaps;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2010.12.06.15.31.19;	author kristaps;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2010.12.05.16.14.16;	author kristaps;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2010.09.26.19.46.48;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2010.09.04.17.22.41;	author kristaps;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2010.08.29.11.28.09;	author kristaps;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2010.08.28.22.08.38;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2010.08.24.13.39.37;	author kristaps;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2010.08.24.13.07.01;	author kristaps;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2010.08.24.12.18.48;	author kristaps;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2010.08.22.14.54.29;	author kristaps;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2010.08.06.17.07.11;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2010.07.26.10.00.03;	author kristaps;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2010.07.22.23.03.15;	author kristaps;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2010.07.19.23.21.39;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2010.07.19.10.48.36;	author kristaps;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2010.07.19.09.19.22;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2010.07.16.10.25.54;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2010.05.26.14.03.54;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2010.05.25.22.48.04;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2010.05.17.11.00.25;	author joerg;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2010.05.15.07.01.51;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2010.05.14.16.19.26;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2010.05.12.17.08.03;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2010.05.12.16.52.33;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2010.05.12.08.41.17;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2010.05.08.22.26.39;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2010.05.08.10.28.24;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2010.05.08.08.36.44;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2010.05.07.15.49.36;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2010.04.13.05.26.49;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2010.04.05.07.25.23;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2010.03.27.10.22.28;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2010.03.27.10.10.10;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2010.03.25.07.28.16;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2010.03.23.11.30.48;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.03.22.05.59.32;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.01.07.19.10.09;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2009.11.16.08.46.59;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2009.11.15.06.45.31;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2009.11.12.08.21.05;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2009.11.12.08.00.21;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2009.11.12.05.50.12;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2009.11.10.12.03.29;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2009.11.09.05.11.46;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2009.11.05.08.40.16;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2009.11.02.17.07.30;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2009.11.02.09.56.42;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2009.11.02.09.53.15;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2009.11.02.06.22.45;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2009.10.31.08.37.26;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2009.10.26.10.36.46;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2009.10.24.05.45.04;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2009.10.19.07.44.30;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2009.10.18.19.00.57;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2009.09.05.10.37.09;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2009.08.22.09.10.37;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.08.21.12.12.12;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.08.20.13.51.55;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.08.20.13.32.09;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.08.20.12.08.40;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.08.20.11.51.07;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.08.20.11.44.47;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.08.19.11.30.40;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.08.18.14.27.16;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.08.18.08.48.30;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.08.17.11.03.07;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.08.13.12.54.52;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.08.13.12.31.50;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.08.13.12.15.58;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.08.13.11.45.29;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.07.27.12.35.53;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.07.20.13.45.11;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.07.14.15.56.44;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.07.04.09.00.41;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.06.25.11.35.28;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.06.25.10.48.21;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.06.22.13.09.17;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.06.18.10.32.00;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.06.16.19.13.28;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.06.11.07.26.35;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.04.12.19.19.57;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.27.15.22.56;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.27.14.56.15;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.26.23.01.26;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.26.16.23.22;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.26.14.38.11;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.26.09.55.39;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.23.16.02.56;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.132
+log
+@Radical cleanup of COMPATIBILITY sections:
+Remove lots of lies, dozens of irrelevant implementation details,
+and all references to groff versions older than 1.17.  Move relevant
+information to the pages where it belongs, and out of mandoc(1) in
+particular.  Add some missing general remarks to roff(7), where it
+fits the character and purpose of the page much better.
+@
+text
+@.\"	$Id: man.7,v 1.131 2015/01/24 02:41:49 schwarze Exp $
+.\"
+.\" Copyright (c) 2009, 2010, 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2011-2015 Ingo Schwarze <schwarze@@openbsd.org>
+.\" Copyright (c) 2010 Joerg Sonnenberger <joerg@@netbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: January 24 2015 $
+.Dt MAN 7
+.Os
+.Sh NAME
+.Nm man
+.Nd legacy formatting language for manual pages
+.Sh DESCRIPTION
+Traditionally, the
+.Nm man
+language has been used to write
+.Ux
+manuals for the
+.Xr man 1
+utility.
+It supports limited control of presentational details like fonts,
+indentation and spacing.
+This reference document describes the structure of manual pages
+and the syntax and usage of the man language.
+.Pp
+.Bf -emphasis
+Do not use
+.Nm
+to write your manuals:
+.Ef
+It lacks support for semantic markup.
+Use the
+.Xr mdoc 7
+language, instead.
+.Pp
+In a
+.Nm
+document, lines beginning with the control character
+.Sq \&.
+are called
+.Dq macro lines .
+The first word is the macro name.
+It usually consists of two capital letters.
+For a list of available macros, see
+.Sx MACRO OVERVIEW .
+The words following the macro name are arguments to the macro.
+.Pp
+Lines not beginning with the control character are called
+.Dq text lines .
+They provide free-form text to be printed; the formatting of the text
+depends on the respective processing context:
+.Bd -literal -offset indent
+\&.SH Macro lines change control state.
+Text lines are interpreted within the current state.
+.Ed
+.Pp
+Many aspects of the basic syntax of the
+.Nm
+language are based on the
+.Xr roff 7
+language; see the
+.Em LANGUAGE SYNTAX
+and
+.Em MACRO SYNTAX
+sections in the
+.Xr roff 7
+manual for details, in particular regarding
+comments, escape sequences, whitespace, and quoting.
+.Sh MANUAL STRUCTURE
+Each
+.Nm
+document must contain the
+.Sx \&TH
+macro describing the document's section and title.
+It may occur anywhere in the document, although conventionally it
+appears as the first macro.
+.Pp
+Beyond
+.Sx \&TH ,
+at least one macro or text line must appear in the document.
+.Pp
+The following is a well-formed skeleton
+.Nm
+file for a utility
+.Qq progname :
+.Bd -literal -offset indent
+\&.TH PROGNAME 1 2009-10-10
+\&.SH NAME
+\efBprogname\efR \e(en one line about what it does
+\&.\e\(dq .SH LIBRARY
+\&.\e\(dq For sections 2, 3, and 9 only.
+\&.\e\(dq Not used in OpenBSD.
+\&.SH SYNOPSIS
+\efBprogname\efR [\efB\e-options\efR] \efIfile ...\efR
+\&.SH DESCRIPTION
+The \efBfoo\efR utility processes files ...
+\&.\e\(dq .Sh CONTEXT
+\&.\e\(dq For section 9 functions only.
+\&.\e\(dq .SH IMPLEMENTATION NOTES
+\&.\e\(dq Not used in OpenBSD.
+\&.\e\(dq .SH RETURN VALUES
+\&.\e\(dq For sections 2, 3, and 9 function return values only.
+\&.\e\(dq .SH ENVIRONMENT
+\&.\e\(dq For sections 1, 6, 7, and 8 only.
+\&.\e\(dq .SH FILES
+\&.\e\(dq .SH EXIT STATUS
+\&.\e\(dq For sections 1, 6, and 8 only.
+\&.\e\(dq .SH EXAMPLES
+\&.\e\(dq .SH DIAGNOSTICS
+\&.\e\(dq For sections 1, 4, 6, 7, 8, and 9 printf/stderr messages only.
+\&.\e\(dq .SH ERRORS
+\&.\e\(dq For sections 2, 3, 4, and 9 errno settings only.
+\&.\e\(dq .SH SEE ALSO
+\&.\e\(dq .BR foobar ( 1 )
+\&.\e\(dq .SH STANDARDS
+\&.\e\(dq .SH HISTORY
+\&.\e\(dq .SH AUTHORS
+\&.\e\(dq .SH CAVEATS
+\&.\e\(dq .SH BUGS
+\&.\e\(dq .SH SECURITY CONSIDERATIONS
+\&.\e\(dq Not used in OpenBSD.
+.Ed
+.Pp
+The sections in a
+.Nm
+document are conventionally ordered as they appear above.
+Sections should be composed as follows:
+.Bl -ohang -offset indent
+.It Em NAME
+The name(s) and a short description of the documented material.
+The syntax for this is generally as follows:
+.Pp
+.D1 \efBname\efR \e(en description
+.It Em LIBRARY
+The name of the library containing the documented material, which is
+assumed to be a function in a section 2 or 3 manual.
+For functions in the C library, this may be as follows:
+.Pp
+.D1 Standard C Library (libc, -lc)
+.It Em SYNOPSIS
+Documents the utility invocation syntax, function call syntax, or device
+configuration.
+.Pp
+For the first, utilities (sections 1, 6, and 8), this is
+generally structured as follows:
+.Pp
+.D1 \efBname\efR [-\efBab\efR] [-\efBc\efR\efIarg\efR] \efBpath\efR...
+.Pp
+For the second, function calls (sections 2, 3, 9):
+.Pp
+.D1 \&.B char *name(char *\efIarg\efR);
+.Pp
+And for the third, configurations (section 4):
+.Pp
+.D1 \&.B name* at cardbus ? function ?
+.Pp
+Manuals not in these sections generally don't need a
+.Em SYNOPSIS .
+.It Em DESCRIPTION
+This expands upon the brief, one-line description in
+.Em NAME .
+It usually contains a break-down of the options (if documenting a
+command).
+.It Em CONTEXT
+This section lists the contexts in which functions can be called in section 9.
+The contexts are autoconf, process, or interrupt.
+.It Em IMPLEMENTATION NOTES
+Implementation-specific notes should be kept here.
+This is useful when implementing standard functions that may have side
+effects or notable algorithmic implications.
+.It Em RETURN VALUES
+This section documents the return values of functions in sections 2, 3, and 9.
+.It Em ENVIRONMENT
+Documents any usages of environment variables, e.g.,
+.Xr environ 7 .
+.It Em FILES
+Documents files used.
+It's helpful to document both the file name and a short description of how
+the file is used (created, modified, etc.).
+.It Em EXIT STATUS
+This section documents the command exit status for
+section 1, 6, and 8 utilities.
+Historically, this information was described in
+.Em DIAGNOSTICS ,
+a practise that is now discouraged.
+.It Em EXAMPLES
+Example usages.
+This often contains snippets of well-formed,
+well-tested invocations.
+Make sure that examples work properly!
+.It Em DIAGNOSTICS
+Documents error conditions.
+In section 4 and 9 manuals, these are usually messages
+printed by the kernel to the console and to the kernel log.
+In section 1, 6, 7, and 8, these are usually messages
+printed by userland programs to the standard error output.
+.Pp
+Historically, this section was used in place of
+.Em EXIT STATUS
+for manuals in sections 1, 6, and 8; however, this practise is
+discouraged.
+.It Em ERRORS
+Documents
+.Xr errno 2
+settings in sections 2, 3, 4, and 9.
+.It Em SEE ALSO
+References other manuals with related topics.
+This section should exist for most manuals.
+.Pp
+.D1 \&.BR bar \&( 1 \&),
+.Pp
+Cross-references should conventionally be ordered
+first by section, then alphabetically.
+.It Em STANDARDS
+References any standards implemented or used, such as
+.Pp
+.D1 IEEE Std 1003.2 (\e(lqPOSIX.2\e(rq)
+.Pp
+If not adhering to any standards, the
+.Em HISTORY
+section should be used.
+.It Em HISTORY
+A brief history of the subject, including where support first appeared.
+.It Em AUTHORS
+Credits to the person or persons who wrote the code and/or documentation.
+Authors should generally be noted by both name and email address.
+.It Em CAVEATS
+Common misuses and misunderstandings should be explained
+in this section.
+.It Em BUGS
+Known bugs, limitations, and work-arounds should be described
+in this section.
+.It Em SECURITY CONSIDERATIONS
+Documents any security precautions that operators should consider.
+.El
+.Sh MACRO OVERVIEW
+This overview is sorted such that macros of similar purpose are listed
+together, to help find the best macro for any given purpose.
+Deprecated macros are not included in the overview, but can be found
+in the alphabetical reference below.
+.Ss Page header and footer meta-data
+.Bl -column "PP, LP, P" description
+.It Sx TH Ta set the title: Ar title section date Op Ar source Op Ar volume
+.It Sx AT Ta display AT&T UNIX version in the page footer (<= 1 argument)
+.It Sx UC Ta display BSD version in the page footer (<= 1 argument)
+.El
+.Ss Sections and paragraphs
+.Bl -column "PP, LP, P" description
+.It Sx SH Ta section header (one line)
+.It Sx SS Ta subsection header (one line)
+.It Sx PP , LP , P Ta start an undecorated paragraph (no arguments)
+.It Sx RS , RE Ta reset the left margin: Op Ar width
+.It Sx IP Ta indented paragraph: Op Ar head Op Ar width
+.It Sx TP Ta tagged paragraph: Op Ar width
+.It Sx HP Ta hanged paragraph: Op Ar width
+.It Sx PD Ta set vertical paragraph distance: Op Ar height
+.It Sx \&br Ta force output line break in text mode (no arguments)
+.It Sx \&sp Ta force vertical space: Op Ar height
+.It Sx fi , nf Ta fill mode and no-fill mode (no arguments)
+.It Sx in Ta additional indent: Op Ar width
+.El
+.Ss Physical markup
+.Bl -column "PP, LP, P" description
+.It Sx B Ta boldface font
+.It Sx I Ta italic font
+.It Sx R Ta roman (default) font
+.It Sx SB Ta small boldface font
+.It Sx SM Ta small roman font
+.It Sx BI Ta alternate between boldface and italic fonts
+.It Sx BR Ta alternate between boldface and roman fonts
+.It Sx IB Ta alternate between italic and boldface fonts
+.It Sx IR Ta alternate between italic and roman fonts
+.It Sx RB Ta alternate between roman and boldface fonts
+.It Sx RI Ta alternate between roman and italic fonts
+.El
+.Sh MACRO REFERENCE
+This section is a canonical reference to all macros, arranged
+alphabetically.
+For the scoping of individual macros, see
+.Sx MACRO SYNTAX .
+.Ss \&AT
+Sets the volume for the footer for compatibility with man pages from
+.At
+releases.
+The optional arguments specify which release it is from.
+.Ss \&B
+Text is rendered in bold face.
+.Pp
+See also
+.Sx \&I
+and
+.Sx \&R .
+.Ss \&BI
+Text is rendered alternately in bold face and italic.
+Thus,
+.Sq .BI this word and that
+causes
+.Sq this
+and
+.Sq and
+to render in bold face, while
+.Sq word
+and
+.Sq that
+render in italics.
+Whitespace between arguments is omitted in output.
+.Pp
+Examples:
+.Pp
+.Dl \&.BI bold italic bold italic
+.Pp
+The output of this example will be emboldened
+.Dq bold
+and italicised
+.Dq italic ,
+with spaces stripped between arguments.
+.Pp
+See also
+.Sx \&IB ,
+.Sx \&BR ,
+.Sx \&RB ,
+.Sx \&RI ,
+and
+.Sx \&IR .
+.Ss \&BR
+Text is rendered alternately in bold face and roman (the default font).
+Whitespace between arguments is omitted in output.
+.Pp
+See
+.Sx \&BI
+for an equivalent example.
+.Pp
+See also
+.Sx \&BI ,
+.Sx \&IB ,
+.Sx \&RB ,
+.Sx \&RI ,
+and
+.Sx \&IR .
+.Ss \&DT
+Has no effect.
+Included for compatibility.
+.Ss \&EE
+This is a non-standard GNU extension, included only for compatibility.
+In
+.Xr mandoc 1 ,
+it does the same as
+.Sx \&fi .
+.Ss \&EX
+This is a non-standard GNU extension, included only for compatibility.
+In
+.Xr mandoc 1 ,
+it does the same as
+.Sx \&nf .
+.Ss \&HP
+Begin a paragraph whose initial output line is left-justified, but
+subsequent output lines are indented, with the following syntax:
+.Bd -filled -offset indent
+.Pf \. Sx \&HP
+.Op Ar width
+.Ed
+.Pp
+The
+.Ar width
+argument is a
+.Xr roff 7
+scaling width.
+If specified, it's saved for later paragraph left-margins; if unspecified, the
+saved or default width is used.
+.Pp
+See also
+.Sx \&IP ,
+.Sx \&LP ,
+.Sx \&P ,
+.Sx \&PP ,
+and
+.Sx \&TP .
+.Ss \&I
+Text is rendered in italics.
+.Pp
+See also
+.Sx \&B
+and
+.Sx \&R .
+.Ss \&IB
+Text is rendered alternately in italics and bold face.
+Whitespace between arguments is omitted in output.
+.Pp
+See
+.Sx \&BI
+for an equivalent example.
+.Pp
+See also
+.Sx \&BI ,
+.Sx \&BR ,
+.Sx \&RB ,
+.Sx \&RI ,
+and
+.Sx \&IR .
+.Ss \&IP
+Begin an indented paragraph with the following syntax:
+.Bd -filled -offset indent
+.Pf \. Sx \&IP
+.Op Ar head Op Ar width
+.Ed
+.Pp
+The
+.Ar width
+argument is a
+.Xr roff 7
+scaling width defining the left margin.
+It's saved for later paragraph left-margins; if unspecified, the saved or
+default width is used.
+.Pp
+The
+.Ar head
+argument is used as a leading term, flushed to the left margin.
+This is useful for bulleted paragraphs and so on.
+.Pp
+See also
+.Sx \&HP ,
+.Sx \&LP ,
+.Sx \&P ,
+.Sx \&PP ,
+and
+.Sx \&TP .
+.Ss \&IR
+Text is rendered alternately in italics and roman (the default font).
+Whitespace between arguments is omitted in output.
+.Pp
+See
+.Sx \&BI
+for an equivalent example.
+.Pp
+See also
+.Sx \&BI ,
+.Sx \&IB ,
+.Sx \&BR ,
+.Sx \&RB ,
+and
+.Sx \&RI .
+.Ss \&LP
+Begin an undecorated paragraph.
+The scope of a paragraph is closed by a subsequent paragraph,
+sub-section, section, or end of file.
+The saved paragraph left-margin width is reset to the default.
+.Pp
+See also
+.Sx \&HP ,
+.Sx \&IP ,
+.Sx \&P ,
+.Sx \&PP ,
+and
+.Sx \&TP .
+.Ss \&OP
+Optional command-line argument.
+This is a non-standard GNU extension, included only for compatibility.
+It has the following syntax:
+.Bd -filled -offset indent
+.Pf \. Sx \&OP
+.Ar key Op Ar value
+.Ed
+.Pp
+The
+.Ar key
+is usually a command-line flag and
+.Ar value
+its argument.
+.Ss \&P
+Synonym for
+.Sx \&LP .
+.Pp
+See also
+.Sx \&HP ,
+.Sx \&IP ,
+.Sx \&LP ,
+.Sx \&PP ,
+and
+.Sx \&TP .
+.Ss \&PD
+Specify the vertical space to be inserted before each new paragraph.
+.br
+The syntax is as follows:
+.Bd -filled -offset indent
+.Pf \. Sx \&PD
+.Op Ar height
+.Ed
+.Pp
+The
+.Ar height
+argument is a
+.Xr roff 7
+scaling width.
+It defaults to
+.Cm 1v .
+If the unit is omitted,
+.Cm v
+is assumed.
+.Pp
+This macro affects the spacing before any subsequent instances of
+.Sx \&HP ,
+.Sx \&IP ,
+.Sx \&LP ,
+.Sx \&P ,
+.Sx \&PP ,
+.Sx \&SH ,
+.Sx \&SS ,
+and
+.Sx \&TP .
+.Ss \&PP
+Synonym for
+.Sx \&LP .
+.Pp
+See also
+.Sx \&HP ,
+.Sx \&IP ,
+.Sx \&LP ,
+.Sx \&P ,
+and
+.Sx \&TP .
+.Ss \&R
+Text is rendered in roman (the default font).
+.Pp
+See also
+.Sx \&I
+and
+.Sx \&B .
+.Ss \&RB
+Text is rendered alternately in roman (the default font) and bold face.
+Whitespace between arguments is omitted in output.
+.Pp
+See
+.Sx \&BI
+for an equivalent example.
+.Pp
+See also
+.Sx \&BI ,
+.Sx \&IB ,
+.Sx \&BR ,
+.Sx \&RI ,
+and
+.Sx \&IR .
+.Ss \&RE
+Explicitly close out the scope of a prior
+.Sx \&RS .
+The default left margin is restored to the state before that
+.Sx \&RS
+invocation.
+.Pp
+The syntax is as follows:
+.Bd -filled -offset indent
+.Pf \. Sx \&RE
+.Op Ar level
+.Ed
+.Pp
+Without an argument, the most recent
+.Sx \&RS
+block is closed out.
+If
+.Ar level
+is 1, all open
+.Sx \&RS
+blocks are closed out.
+Otherwise,
+.Ar level No \(mi 1
+nested
+.Sx \&RS
+blocks remain open.
+.Ss \&RI
+Text is rendered alternately in roman (the default font) and italics.
+Whitespace between arguments is omitted in output.
+.Pp
+See
+.Sx \&BI
+for an equivalent example.
+.Pp
+See also
+.Sx \&BI ,
+.Sx \&IB ,
+.Sx \&BR ,
+.Sx \&RB ,
+and
+.Sx \&IR .
+.Ss \&RS
+Temporarily reset the default left margin.
+This has the following syntax:
+.Bd -filled -offset indent
+.Pf \. Sx \&RS
+.Op Ar width
+.Ed
+.Pp
+The
+.Ar width
+argument is a
+.Xr roff 7
+scaling width.
+If not specified, the saved or default width is used.
+.Pp
+See also
+.Sx \&RE .
+.Ss \&SB
+Text is rendered in small size (one point smaller than the default font)
+bold face.
+.Ss \&SH
+Begin a section.
+The scope of a section is only closed by another section or the end of
+file.
+The paragraph left-margin width is reset to the default.
+.Ss \&SM
+Text is rendered in small size (one point smaller than the default
+font).
+.Ss \&SS
+Begin a sub-section.
+The scope of a sub-section is closed by a subsequent sub-section,
+section, or end of file.
+The paragraph left-margin width is reset to the default.
+.Ss \&TH
+Sets the title of the manual page for use in the page header
+and footer with the following syntax:
+.Bd -filled -offset indent
+.Pf \. Sx \&TH
+.Ar title section date
+.Op Ar source Op Ar volume
+.Ed
+.Pp
+Conventionally, the document
+.Ar title
+is given in all caps.
+The recommended
+.Ar date
+format is
+.Sy YYYY-MM-DD
+as specified in the ISO-8601 standard;
+if the argument does not conform, it is printed verbatim.
+If the
+.Ar date
+is empty or not specified, the current date is used.
+The optional
+.Ar source
+string specifies the organisation providing the utility.
+When unspecified,
+.Xr mandoc 1
+uses its
+.Fl Ios
+argument.
+The
+.Ar volume
+string replaces the default rendered volume, which is dictated by the
+manual section.
+.Pp
+Examples:
+.Pp
+.Dl \&.TH CVS 5 "1992-02-12" GNU
+.Ss \&TP
+Begin a paragraph where the head, if exceeding the indentation width, is
+followed by a newline; if not, the body follows on the same line after a
+buffer to the indentation width.
+Subsequent output lines are indented.
+The syntax is as follows:
+.Bd -filled -offset indent
+.Pf \. Sx \&TP
+.Op Ar width
+.Ed
+.Pp
+The
+.Ar width
+argument is a
+.Xr roff 7
+scaling width.
+If specified, it's saved for later paragraph left-margins; if
+unspecified, the saved or default width is used.
+.Pp
+See also
+.Sx \&HP ,
+.Sx \&IP ,
+.Sx \&LP ,
+.Sx \&P ,
+and
+.Sx \&PP .
+.Ss \&UC
+Sets the volume for the footer for compatibility with man pages from
+.Bx
+releases.
+The optional first argument specifies which release it is from.
+.Ss \&UE
+End a uniform resource identifier block.
+This is a non-standard GNU extension, included only for compatibility.
+See
+.Sx \&UE .
+.Ss \&UR
+Begin a uniform resource identifier block.
+This is a non-standard GNU extension, included only for compatibility.
+It has the following syntax:
+.Bd -literal -offset indent
+.Pf \. Sx \&UR Ar uri
+link description to be shown
+.Pf \. Sx UE
+.Ed
+.Ss \&br
+Breaks the current line.
+Consecutive invocations have no further effect.
+.Pp
+See also
+.Sx \&sp .
+.Ss \&fi
+End literal mode begun by
+.Sx \&nf .
+.Ss \&in
+Indent relative to the current indentation:
+.Pp
+.D1 Pf \. Sx \&in Op Ar width
+.Pp
+If
+.Ar width
+is signed, the new offset is relative.
+Otherwise, it is absolute.
+This value is reset upon the next paragraph, section, or sub-section.
+.Ss \&nf
+Begin literal mode: all subsequent free-form lines have their end of
+line boundaries preserved.
+May be ended by
+.Sx \&fi .
+Literal mode is implicitly ended by
+.Sx \&SH
+or
+.Sx \&SS .
+.Ss \&sp
+Insert vertical spaces into output with the following syntax:
+.Bd -filled -offset indent
+.Pf \. Sx \&sp
+.Op Ar height
+.Ed
+.Pp
+The
+.Ar height
+argument is a scaling width as described in
+.Xr roff 7 .
+If 0, this is equivalent to the
+.Sx \&br
+macro.
+Defaults to 1, if unspecified.
+.Pp
+See also
+.Sx \&br .
+.Sh MACRO SYNTAX
+The
+.Nm
+macros are classified by scope: line scope or block scope.
+Line macros are only scoped to the current line (and, in some
+situations, the subsequent line).
+Block macros are scoped to the current line and subsequent lines until
+closed by another block macro.
+.Ss Line Macros
+Line macros are generally scoped to the current line, with the body
+consisting of zero or more arguments.
+If a macro is scoped to the next line and the line arguments are empty,
+the next line, which must be text, is used instead.
+Thus:
+.Bd -literal -offset indent
+\&.I
+foo
+.Ed
+.Pp
+is equivalent to
+.Sq \&.I foo .
+If next-line macros are invoked consecutively, only the last is used.
+If a next-line macro is followed by a non-next-line macro, an error is
+raised, except for
+.Sx \&br
+and
+.Sx \&sp .
+.Pp
+The syntax is as follows:
+.Bd -literal -offset indent
+\&.YO \(lBbody...\(rB
+\(lBbody...\(rB
+.Ed
+.Bl -column "MacroX" "ArgumentsX" "ScopeXXXXX" "CompatX" -offset indent
+.It Em Macro Ta Em Arguments Ta Em Scope     Ta Em Notes
+.It Sx \&AT  Ta    <=1       Ta    current   Ta    \&
+.It Sx \&B   Ta    n         Ta    next-line Ta    \&
+.It Sx \&BI  Ta    n         Ta    current   Ta    \&
+.It Sx \&BR  Ta    n         Ta    current   Ta    \&
+.It Sx \&DT  Ta    0         Ta    current   Ta    \&
+.It Sx \&EE  Ta    0         Ta    current   Ta    compat
+.It Sx \&EX  Ta    0         Ta    current   Ta    compat
+.It Sx \&I   Ta    n         Ta    next-line Ta    \&
+.It Sx \&IB  Ta    n         Ta    current   Ta    \&
+.It Sx \&IR  Ta    n         Ta    current   Ta    \&
+.It Sx \&OP  Ta    0, 1      Ta    current   Ta    compat
+.It Sx \&PD  Ta    1         Ta    current   Ta    \&
+.It Sx \&R   Ta    n         Ta    next-line Ta    \&
+.It Sx \&RB  Ta    n         Ta    current   Ta    \&
+.It Sx \&RI  Ta    n         Ta    current   Ta    \&
+.It Sx \&SB  Ta    n         Ta    next-line Ta    \&
+.It Sx \&SM  Ta    n         Ta    next-line Ta    \&
+.It Sx \&TH  Ta    >1, <6    Ta    current   Ta    \&
+.It Sx \&UC  Ta    <=1       Ta    current   Ta    \&
+.It Sx \&br  Ta    0         Ta    current   Ta    compat
+.It Sx \&fi  Ta    0         Ta    current   Ta    compat
+.It Sx \&in  Ta    1         Ta    current   Ta    compat
+.It Sx \&nf  Ta    0         Ta    current   Ta    compat
+.It Sx \&sp  Ta    1         Ta    current   Ta    compat
+.El
+.Pp
+Macros marked as
+.Qq compat
+are included for compatibility with the significant corpus of existing
+manuals that mix dialects of roff.
+These macros should not be used for portable
+.Nm
+manuals.
+.Ss Block Macros
+Block macros comprise a head and body.
+As with in-line macros, the head is scoped to the current line and, in
+one circumstance, the next line (the next-line stipulations as in
+.Sx Line Macros
+apply here as well).
+.Pp
+The syntax is as follows:
+.Bd -literal -offset indent
+\&.YO \(lBhead...\(rB
+\(lBhead...\(rB
+\(lBbody...\(rB
+.Ed
+.Pp
+The closure of body scope may be to the section, where a macro is closed
+by
+.Sx \&SH ;
+sub-section, closed by a section or
+.Sx \&SS ;
+part, closed by a section, sub-section, or
+.Sx \&RE ;
+or paragraph, closed by a section, sub-section, part,
+.Sx \&HP ,
+.Sx \&IP ,
+.Sx \&LP ,
+.Sx \&P ,
+.Sx \&PP ,
+or
+.Sx \&TP .
+No closure refers to an explicit block closing macro.
+.Pp
+As a rule, block macros may not be nested; thus, calling a block macro
+while another block macro scope is open, and the open scope is not
+implicitly closed, is syntactically incorrect.
+.Bl -column "MacroX" "ArgumentsX" "Head ScopeX" "sub-sectionX" "compatX" -offset indent
+.It Em Macro Ta Em Arguments Ta Em Head Scope Ta Em Body Scope  Ta Em Notes
+.It Sx \&HP  Ta    <2        Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&IP  Ta    <3        Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&LP  Ta    0         Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&P   Ta    0         Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&PP  Ta    0         Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&RE  Ta    0         Ta    current    Ta    none        Ta    compat
+.It Sx \&RS  Ta    1         Ta    current    Ta    part        Ta    compat
+.It Sx \&SH  Ta    >0        Ta    next-line  Ta    section     Ta    \&
+.It Sx \&SS  Ta    >0        Ta    next-line  Ta    sub-section Ta    \&
+.It Sx \&TP  Ta    n         Ta    next-line  Ta    paragraph   Ta    \&
+.It Sx \&UE  Ta    0         Ta    current    Ta    none        Ta    compat
+.It Sx \&UR  Ta    1         Ta    current    Ta    part        Ta    compat
+.El
+.Pp
+Macros marked
+.Qq compat
+are as mentioned in
+.Sx Line Macros .
+.Pp
+If a block macro is next-line scoped, it may only be followed by in-line
+macros for decorating text.
+.Ss Font handling
+In
+.Nm
+documents, both
+.Sx Physical markup
+macros and
+.Xr roff 7
+.Ql \ef
+font escape sequences can be used to choose fonts.
+In text lines, the effect of manual font selection by escape sequences
+only lasts until the next macro invocation; in macro lines, it only lasts
+until the end of the macro scope.
+Note that macros like
+.Sx \&BR
+open and close a font scope for each argument.
+.Sh SEE ALSO
+.Xr man 1 ,
+.Xr mandoc 1 ,
+.Xr eqn 7 ,
+.Xr mandoc_char 7 ,
+.Xr mdoc 7 ,
+.Xr roff 7 ,
+.Xr tbl 7
+.Sh HISTORY
+The
+.Nm
+language first appeared as a macro package for the roff typesetting
+system in
+.At v7 .
+It was later rewritten by James Clark as a macro package for groff.
+Eric S. Raymond wrote the extended
+.Nm
+macros for groff in 2007.
+The stand-alone implementation that is part of the
+.Xr mandoc 1
+utility written by Kristaps Dzonsons appeared in
+.Ox 4.6 .
+.Sh AUTHORS
+This
+.Nm
+reference was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+.Sh CAVEATS
+Do not use this language.
+Use
+.Xr mdoc 7 ,
+instead.
+@
+
+
+1.131
+log
+@Strangely, ignoring the roff(7) .na request was implemented in the man(7)
+parser.  Simplify the code by moving it into the roff(7) parser, also
+making it work for mdoc(7).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.130 2015/01/24 02:14:46 schwarze Exp $
+a896 47
+.Sh COMPATIBILITY
+This section mentions some areas of questionable portability between
+implementations of the
+.Nm
+language.
+More incompatibilities exist.
+.Pp
+.Bl -dash -compact
+.It
+Do not depend on
+.Sx \&SH
+or
+.Sx \&SS
+to close out a literal context opened with
+.Sx \&nf .
+This behaviour may not be portable.
+.It
+troff suppresses a newline before
+.Sq \(aq
+macro output; in mandoc, it is an alias for the standard
+.Sq \&.
+control character.
+.It
+In page header lines, GNU troff versions up to and including 1.21
+only print
+.Ar volume
+names explicitly specified in the
+.Sx \&TH
+macro; mandoc and newer groff print the default volume name
+corresponding to the
+.Ar section
+number when no
+.Ar volume
+is given, like in
+.Xr mdoc 7 .
+.El
+.Pp
+The
+.Sx EE ,
+.Sx EX ,
+.Sx OP ,
+.Sx UE ,
+and
+.Sx UR
+macros are part of the GNU extended
+.Nm
+macro set, and may not be portable to non-GNU troff implementations.
+@
+
+
+1.130
+log
+@change .Cm to .Ar for macro arguments
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.129 2015/01/24 01:58:33 schwarze Exp $
+a729 2
+.Ss \&na
+Don't align to the right margin.
+d781 1
+a781 2
+.Sx \&br ,
+.Sx \&sp ,
+d783 1
+a783 1
+.Sx \&na .
+a813 1
+.It Sx \&na  Ta    0         Ta    current   Ta    compat
+@
+
+
+1.129
+log
+@Support .RE with an argument; needed for audio/pms(1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.128 2014/12/28 15:23:33 schwarze Exp $
+d19 1
+a19 1
+.Dd $Mdocdate: December 28 2014 $
+d372 1
+a372 1
+.Op Cm width
+d376 1
+a376 1
+.Cm width
+d416 1
+a416 1
+.Op Cm head Op Cm width
+d420 1
+a420 1
+.Cm width
+d428 1
+a428 1
+.Cm head
+d473 1
+a473 1
+.Cm key Op Cm value
+d477 1
+a477 1
+.Cm key
+d479 1
+a479 1
+.Cm value
+d498 1
+a498 1
+.Op Cm height
+d502 1
+a502 1
+.Cm height
+d601 1
+a601 1
+.Op Cm width
+d605 1
+a605 1
+.Cm width
+d674 1
+a674 1
+.Op Cm width
+d678 1
+a678 1
+.Cm width
+d723 1
+a723 1
+.D1 Pf \. Sx \&in Op Cm width
+d726 1
+a726 1
+.Cm width
+d745 1
+a745 1
+.Op Cm height
+d749 1
+a749 1
+.Cm height
+@
+
+
+1.128
+log
+@Improve documentation of the header/footer macros .Dt, .Os, .TH:
+* State the defaults for .Os and the fourth .TH argument.
+* Sync the section titles, and stop advertising obscure sections that
+aren't actually fully supported and certainly not recommended for use.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.127 2014/06/22 16:39:45 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d19 1
+a19 1
+.Dd $Mdocdate: June 22 2014 $
+d558 1
+a558 1
+The default left margin is restored to the state of the original
+d561 20
+@
+
+
+1.127
+log
+@Minimal cleanup of the COMPATIBILITY section:
+* Mention that the list is incomplete.
+* Quoting quotes by doubling them is documented in the
+Ossanna/Kernighan/Ritter Nroff/Troff User's Manual, Section 7.3.
+* Our roff(7) manual documents handling of escape sequences;
+besides, we partially support \w and \z now.
+* Scaling widths are documented in roff(7) as well, and f is not \f.
+* Negative arguments to .sp are handled now.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.126 2014/03/31 01:05:32 schwarze Exp $
+d19 1
+a19 1
+.Dd $Mdocdate: March 31 2014 $
+d610 2
+a611 1
+Sets the title of the manual page with the following syntax:
+d633 5
+@
+
+
+1.126
+log
+@Support the CONTEXT section for kernel manual pages found in Solaris and
+OpenBSD manuals.  It describes which contexts you can call functions in.
+from dlg@@, ok jmc@@ deraadt@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.125 2014/03/17 06:57:48 schwarze Exp $
+d19 1
+a19 1
+.Dd $Mdocdate: March 17 2014 $
+d876 1
+a876 1
+This section documents areas of questionable portability between
+d880 1
+a891 4
+In quoted literals, GNU troff allowed pair-wise double-quotes to produce
+a standalone double-quote in formatted output.
+It is not known whether this behaviour is exhibited by other formatters.
+.It
+a897 31
+The
+.Sq \eh
+.Pq horizontal position ,
+.Sq \ev
+.Pq vertical position ,
+.Sq \em
+.Pq text colour ,
+.Sq \eM
+.Pq text filling colour ,
+.Sq \ez
+.Pq zero-length character ,
+.Sq \ew
+.Pq string length ,
+.Sq \ek
+.Pq horizontal position marker ,
+.Sq \eo
+.Pq text overstrike ,
+and
+.Sq \es
+.Pq text size
+escape sequences are all discarded in mandoc.
+.It
+The
+.Sq \ef
+scaling unit is accepted by mandoc, but rendered as the default unit.
+.It
+The
+.Sx \&sp
+macro does not accept negative values in mandoc.
+In GNU troff, this would result in strange behaviour.
+.It
+d913 7
+a919 2
+.Sx OP
+macro is part of the extended
+@
+
+
+1.125
+log
+@sync to OpenBSD: .ft is a roff(7) request, not a man(7) macro,
+and it is not even used frequently in man(7)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.124 2014/02/16 14:26:55 schwarze Exp $
+d19 1
+a19 1
+.Dd $Mdocdate: February 16 2014 $
+d109 2
+d176 3
+@
+
+
+1.124
+log
+@After Werner Lemberg accepted and committed some updates to the manual
+page template contained in groff_mdoc(7), catch up with our own stuff.
+In particular, allow ERRORS in section 4 and DIAGNOSTICS in section 9.
+ok jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.123 2014/02/14 17:35:05 schwarze Exp $
+d19 1
+a19 1
+.Dd $Mdocdate: February 14 2014 $
+a688 5
+.Ss \&ft
+Change the current font mode.
+See
+.Sx Text Decoration
+for a listing of available font modes.
+a784 1
+.It Sx \&ft  Ta    1         Ta    current   Ta    compat
+@
+
+
+1.123
+log
+@use .At where appropriate; from Jan Stary <hans at stare dot cz>
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.122 2014/01/06 00:53:33 schwarze Exp $
+d19 1
+a19 1
+.Dd $Mdocdate: January 6 2014 $
+d101 1
+a101 1
+\efBprogname\efR \e(en a description goes here
+d103 1
+a103 1
+\&.\e\(dq For sections 2 & 3 only.
+d106 1
+a106 1
+\efBprogname\efR [\efB\e-options\efR] arguments...
+d108 1
+a108 1
+The \efBfoo\efR utility processes files...
+d112 1
+a112 1
+\&.\e\(dq For sections 2, 3, & 9 only.
+d114 1
+a114 1
+\&.\e\(dq For sections 1, 6, 7, & 8 only.
+d117 1
+a117 1
+\&.\e\(dq For sections 1, 6, & 8 only.
+d120 1
+a120 1
+\&.\e\(dq For sections 1, 4, 6, 7, & 8 only.
+d122 1
+a122 1
+\&.\e\(dq For sections 2, 3, & 9 only.
+d124 1
+a124 1
+\&.\e\(dq .BR foo ( 1 )
+d200 5
+a204 1
+This is most useful in section 4 manuals.
+d210 3
+a212 1
+Documents error handling in sections 2, 3, and 9.
+@
+
+
+1.122
+log
+@Joerg Sonnenberger contributed copyrightable amounts of text to
+some files.  To make it clear that he also put his contributions
+under the ISC license, with his explicit permission, add his
+Copyright notice to the relevant files.  No code change.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.121 2013/12/31 15:17:51 schwarze Exp $
+d19 1
+a19 1
+.Dd $Mdocdate: December 31 2013 $
+d284 1
+a284 1
+.Tn AT&T UNIX
+@
+
+
+1.121
+log
+@Add missing description of .UR/.UE.
+While here, also add .EX/.EE and .PD to the MACRO SYNTAX table.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.120 2013/09/16 22:58:57 schwarze Exp $
+d5 1
+d19 1
+a19 1
+.Dd $Mdocdate: September 16 2013 $
+@
+
+
+1.120
+log
+@use the .Bx macro; from Jan Stary via jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.119 2013/07/13 19:41:16 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: July 13 2013 $
+d659 14
+d767 2
+d773 1
+d843 2
+@
+
+
+1.119
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.118 2012/07/29 13:37:20 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 29 2012 $
+d656 2
+a657 1
+BSD releases.
+@
+
+
+1.118
+log
+@document .PD; related to man_term.c rev. 1.134
+OpenBSD man.7 rev. 1.30
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.117 2012/06/20 22:06:30 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: June 20 2012 $
+d951 1
+a951 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.117
+log
+@When i moved some low-level stuff from mdoc(7) and man(7)
+to roff(7) some time ago, i forgot to adjust the cross-references.
+Reported by Tim van der Molen <tbvdm at xs4all dot nl>, thanks.
+
+ok jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.116 2012/06/02 20:16:23 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: June 2 2012 $
+d256 1
+d480 30
+@
+
+
+1.116
+log
+@Minimal implementation of .EX and .EE for GNU compatibility.
+Do not use this, it is not portable and only defined in esr's man-ext.
+For example, sox(1) wants these macros.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.115 2012/05/27 17:39:28 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: May 27 2012 $
+d364 3
+a366 2
+argument must conform to
+.Sx Scaling Widths .
+d408 3
+a410 2
+argument defines the width of the left margin and is defined by
+.Sx Scaling Widths .
+d543 3
+a545 2
+argument must conform to
+.Sx Scaling Widths .
+d610 3
+a612 2
+argument must conform to
+.Sx Scaling Widths .
+d669 1
+a669 1
+Insert
+d671 2
+a672 2
+spaces, which must conform to
+.Sx Scaling Widths .
+@
+
+
+1.115
+log
+@update Copyright years according to the CVS logs; no code change
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.114 2012/04/15 21:24:18 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 15 2012 $
+d342 12
+@
+
+
+1.114
+log
+@Discourage the use of esr's man-ext macros:
+If man(7) has any advantage compared to mdoc(7), it's portability,
+and using man-ext would needlessly give that advantage away.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.113 2012/01/03 15:16:24 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+d18 1
+a18 1
+.Dd $Mdocdate: January 3 2012 $
+@
+
+
+1.113
+log
+@Add support for `OP', one of the extended man macros.  This also requires
+some man(7) changes to accomodate for the an-ext compatibility.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.112 2011/12/02 01:37:14 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 2 2011 $
+a274 4
+.Ss Semantic markup
+.Bl -column "PP, LP, P" description
+.It Sx OP Ta optional arguments
+.El
+d442 2
+a443 1
+This has the following syntax:
+@
+
+
+1.112
+log
+@In man(7), when no explicit volume name is given, use the default
+volume name for the respective manual section, just like in mdoc(7).
+This gives us nicer page headers for cvs(1), lynx(1), tic(1),
+mkhybrid(8), and many curses(3) manuals.
+
+ok kristaps@@
+
+To not break compatibility, i wrote a corresponding patch for GNU troff
+which Werner Lemberg accepted upstream at rev. 1.65 of:
+http://cvs.savannah.gnu.org/viewvc/groff/tmac/an-old.tmac?root=groff
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.111 2011/09/26 23:07:31 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 26 2011 $
+d275 4
+d444 13
+d711 1
+d875 6
+d896 3
+@
+
+
+1.111
+log
+@Reorganize part of the content:
+
+1) Move the LANGUAGE SYNTAX from mdoc(7) and man(7) to roff(7),
+it's common to both and it's actually roff syntax.
+2) Move the MACRO SYNTAX down to the bottom, such that the less
+technical parts MANUAL STRUCTURE and MACRO OVERVIEW get to the top.
+
+Getting everything to again fit together after the reshuffling
+required various adjustments; also adjust and improve
+the DESCRIPTIONS while there.
+
+feedback and "go ahead"  jmc@@ kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.110 2011/09/20 22:46:47 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 20 2011 $
+d843 13
+@
+
+
+1.110
+log
+@add a MACRO OVERVIEW section, similar to the one in mdoc(7);
+writing this for man(7), too, was suggested by kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.109 2011/09/06 17:56:00 kristaps Exp $
+d3 2
+a4 1
+.\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+d18 1
+a18 1
+.Dd $Mdocdate: September 6 2011 $
+d23 1
+a23 1
+.Nd man language reference
+d25 1
+a25 1
+The
+d27 1
+a27 1
+language was historically used to format
+d29 7
+a35 2
+manuals.
+This reference document describes its syntax, structure, and usage.
+d40 1
+a40 1
+to write your manuals.
+d42 1
+d47 1
+a47 1
+A
+d49 1
+a49 2
+document follows simple rules: lines beginning with the control
+character
+d51 12
+a62 3
+are parsed for macros.
+Lines not beginning with the control character are
+interpreted within the scope of prior macros:
+a66 101
+.Sh LANGUAGE SYNTAX
+.Nm
+documents may contain only graphable 7-bit ASCII characters, the
+space character, and the tab character.
+The back-space character
+.Sq \e
+indicates the start of an escape sequence for
+.Sx Comments ,
+.Sx Predefined Strings ,
+and
+.Sx Special Characters .
+.Ss Comments
+Text following an escaped double-quote
+.Sq \e\(dq ,
+whether in a macro or text line, is ignored to the end of
+line.
+A macro line beginning with a control character and comment escape
+.Sq \&.\e\(dq
+is also ignored.
+Furthermore,
+macro lines with only a control character and optional trailing
+whitespace are
+stripped from input.
+.Pp
+Examples:
+.Bd -literal -offset indent -compact
+\&.\e\(dq This is a comment line.
+\&.\e\(dq The next line is ignored:
+\&.
+\&.Em Emphasis \e\(dq This is also a comment.
+.Ed
+.Ss Special Characters
+Special characters are used to encode special glyphs and are rendered
+differently across output media.
+They may occur in both macro and text lines.
+Sequences begin with the escape character
+.Sq \e
+followed by either an open-parenthesis
+.Sq \&(
+for two-character sequences; an open-bracket
+.Sq \&[
+for n-character sequences (terminated at a close-bracket
+.Sq \&] ) ;
+or a single one character sequence.
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It Li \e(em
+Two-letter em dash escape.
+.It Li \ee
+One-letter backslash escape.
+.El
+.Pp
+See
+.Xr mandoc_char 7
+for a complete list.
+.Ss Text Decoration
+Terms may be text-decorated using the
+.Sq \ef
+escape followed by an indicator: B (bold), I (italic), R (regular), or P
+(revert to previous mode).
+A numerical representation 3, 2, or 1 (bold, italic, and regular,
+respectively) may be used instead.
+A text decoration is only valid, if specified in free-form text, until
+the next macro invocation; if specified within a macro, it's only valid
+until the macro closes scope.
+Note that macros like
+.Sx \&BR
+open and close a font scope with each argument.
+.Pp
+The
+.Sq \ef
+attribute is forgotten when entering or exiting a macro block.
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It Li \efBbold\efR
+Write in bold, then switch to regular font mode.
+.It Li \efIitalic\efP
+Write in italic, then return to previous font mode.
+.El
+.Ss Predefined Strings
+Predefined strings, like
+.Sx Special Characters ,
+mark special output glyphs.
+Predefined strings are escaped with the slash-asterisk,
+.Sq \e* :
+single-character
+.Sq \e*X ,
+two-character
+.Sq \e*(XX ,
+and N-character
+.Sq \e*[N] .
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It Li \e*(Am
+Two-letter ampersand predefined string.
+.It Li \e*q
+One-letter double-quote predefined string.
+.El
+d68 1
+a68 3
+These strings are set using
+.Xr roff 7 ,
+although
+d70 4
+a73 38
+consists of several pre-set escapes listed in
+.Xr mandoc_char 7 .
+.Ss Whitespace
+Whitespace consists of the space character.
+In text lines, whitespace is preserved within a line.
+In macro lines, whitespace delimits arguments and is discarded.
+.Pp
+Unescaped trailing spaces are stripped from text line input unless in a
+literal context.
+In general, trailing whitespace on any input line is discouraged for
+reasons of portability.
+In the rare case that a blank character is needed at the end of an
+input line, it may be forced by
+.Sq \e\ \e& .
+.Pp
+In general, space characters can be rendered as literal
+characters by using non-breaking space escapes or
+.Sx Quotation .
+If the first character of a text line is a space, that line is printed
+with a leading newline.
+.Ss Quotation
+Macro arguments may be quoted with double-quotes to so that the
+enclosed text is one literal term.
+Quoted text, even if whitespace or if it would cause a macro invocation
+when unquoted, is considered literal text.
+.Pp
+A quoted argument begins with a double-quote preceded by whitespace.
+The next double-quote not pairwise adjacent to another double-quote
+terminates the literal, regardless of surrounding whitespace.
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It Li .BR a \(dqb c\(dq d
+Group arguments
+.Qq b c
+into one un-bolded argument.
+If unspecified,
+.Qq a
+d75 5
+a79 95
+.Qq c
+will be in bold,
+.Qq b
+and
+.Qq d
+in regular font mode.
+Furthermore, will be preserved between
+.Qq b
+and
+.Qq c .
+.El
+.Ss Scaling Widths
+Many macros support scaled widths for their arguments.
+The syntax for a scaled width is
+.Sq Li [+-]?[0-9]*.[0-9]*[:unit:] ,
+where a decimal must be preceded or proceeded by at least one digit.
+Negative numbers, while accepted, are truncated to zero.
+.Pp
+The following scaling units are accepted:
+.Pp
+.Bl -tag -width Ds -offset indent -compact
+.It c
+centimetre
+.It i
+inch
+.It P
+pica (~1/6 inch)
+.It p
+point (~1/72 inch)
+.It f
+synonym for
+.Sq u
+.It v
+default vertical span
+.It m
+width of rendered
+.Sq m
+.Pq em
+character
+.It n
+width of rendered
+.Sq n
+.Pq en
+character
+.It u
+default horizontal span
+.It M
+mini-em (~1/100 em)
+.El
+.Pp
+Using anything other than
+.Sq m ,
+.Sq n ,
+.Sq u ,
+or
+.Sq v
+is necessarily non-portable across output media.
+See
+.Sx COMPATIBILITY .
+.Pp
+If a scaling unit is not provided, the numerical value is interpreted
+under the default rules of
+.Sq v
+for vertical spaces and
+.Sq u
+for horizontal ones.
+.Pp
+Examples:
+.Bl -tag -width Ds -offset indent -compact
+.It \&.HP 2i
+two-inch tagged list indentation
+.Pq see Sx \&HP
+.It \&.sp 2v
+two vertical spaces
+.Pq see Sx \&sp
+.El
+.Ss Sentence Spacing
+Sentences should terminate at the end of an input line.
+By doing this, a formatter will be able to apply the proper amount of
+spacing after the end of sentence (unescaped) period, exclamation mark,
+or question mark followed by zero or more non-sentence closing
+delimiters
+.Po
+.Sq \&) ,
+.Sq \&] ,
+.Sq \&' ,
+.Sq \&"
+.Pc .
+.Pp
+Examples:
+.Bd -literal -offset indent -compact
+Do not end sentences mid-line like this.  Instead,
+end a sentence like this.
+A new sentence gets a new line.
+.Ed
+d91 1
+a91 1
+at least one macro or text node must appear in the document.
+a235 144
+.Sh MACRO SYNTAX
+Macros are one to three characters in length and begin with a
+control character,
+.Sq \&. ,
+at the beginning of the line.
+The
+.Sq \(aq
+macro control character is also accepted.
+An arbitrary amount of whitespace (spaces or tabs) may sit between the
+control character and the macro name.
+Thus, the following are equivalent:
+.Bd -literal -offset indent
+\&.PP
+\&.\ \ \ PP
+.Ed
+.Pp
+To include space characters in macro arguments, arguments may be quoted;
+see the
+.Sq MACRO SYNTAX
+section in the
+.Xr roff 7
+manual for details.
+.Pp
+The
+.Nm
+macros are classified by scope: line scope or block scope.
+Line macros are only scoped to the current line (and, in some
+situations, the subsequent line).
+Block macros are scoped to the current line and subsequent lines until
+closed by another block macro.
+.Ss Line Macros
+Line macros are generally scoped to the current line, with the body
+consisting of zero or more arguments.
+If a macro is scoped to the next line and the line arguments are empty,
+the next line, which must be text, is used instead.
+Thus:
+.Bd -literal -offset indent
+\&.I
+foo
+.Ed
+.Pp
+is equivalent to
+.Sq \&.I foo .
+If next-line macros are invoked consecutively, only the last is used.
+If a next-line macro is followed by a non-next-line macro, an error is
+raised, except for
+.Sx \&br ,
+.Sx \&sp ,
+and
+.Sx \&na .
+.Pp
+The syntax is as follows:
+.Bd -literal -offset indent
+\&.YO \(lBbody...\(rB
+\(lBbody...\(rB
+.Ed
+.Bl -column "MacroX" "ArgumentsX" "ScopeXXXXX" "CompatX" -offset indent
+.It Em Macro Ta Em Arguments Ta Em Scope     Ta Em Notes
+.It Sx \&AT  Ta    <=1       Ta    current   Ta    \&
+.It Sx \&B   Ta    n         Ta    next-line Ta    \&
+.It Sx \&BI  Ta    n         Ta    current   Ta    \&
+.It Sx \&BR  Ta    n         Ta    current   Ta    \&
+.It Sx \&DT  Ta    0         Ta    current   Ta    \&
+.It Sx \&I   Ta    n         Ta    next-line Ta    \&
+.It Sx \&IB  Ta    n         Ta    current   Ta    \&
+.It Sx \&IR  Ta    n         Ta    current   Ta    \&
+.It Sx \&R   Ta    n         Ta    next-line Ta    \&
+.It Sx \&RB  Ta    n         Ta    current   Ta    \&
+.It Sx \&RI  Ta    n         Ta    current   Ta    \&
+.It Sx \&SB  Ta    n         Ta    next-line Ta    \&
+.It Sx \&SM  Ta    n         Ta    next-line Ta    \&
+.It Sx \&TH  Ta    >1, <6    Ta    current   Ta    \&
+.It Sx \&UC  Ta    <=1       Ta    current   Ta    \&
+.It Sx \&br  Ta    0         Ta    current   Ta    compat
+.It Sx \&fi  Ta    0         Ta    current   Ta    compat
+.It Sx \&ft  Ta    1         Ta    current   Ta    compat
+.It Sx \&in  Ta    1         Ta    current   Ta    compat
+.It Sx \&na  Ta    0         Ta    current   Ta    compat
+.It Sx \&nf  Ta    0         Ta    current   Ta    compat
+.It Sx \&sp  Ta    1         Ta    current   Ta    compat
+.El
+.Pp
+Macros marked as
+.Qq compat
+are included for compatibility with the significant corpus of existing
+manuals that mix dialects of roff.
+These macros should not be used for portable
+.Nm
+manuals.
+.Ss Block Macros
+Block macros comprise a head and body.
+As with in-line macros, the head is scoped to the current line and, in
+one circumstance, the next line (the next-line stipulations as in
+.Sx Line Macros
+apply here as well).
+.Pp
+The syntax is as follows:
+.Bd -literal -offset indent
+\&.YO \(lBhead...\(rB
+\(lBhead...\(rB
+\(lBbody...\(rB
+.Ed
+.Pp
+The closure of body scope may be to the section, where a macro is closed
+by
+.Sx \&SH ;
+sub-section, closed by a section or
+.Sx \&SS ;
+part, closed by a section, sub-section, or
+.Sx \&RE ;
+or paragraph, closed by a section, sub-section, part,
+.Sx \&HP ,
+.Sx \&IP ,
+.Sx \&LP ,
+.Sx \&P ,
+.Sx \&PP ,
+or
+.Sx \&TP .
+No closure refers to an explicit block closing macro.
+.Pp
+As a rule, block macros may not be nested; thus, calling a block macro
+while another block macro scope is open, and the open scope is not
+implicitly closed, is syntactically incorrect.
+.Bl -column "MacroX" "ArgumentsX" "Head ScopeX" "sub-sectionX" "compatX" -offset indent
+.It Em Macro Ta Em Arguments Ta Em Head Scope Ta Em Body Scope  Ta Em Notes
+.It Sx \&HP  Ta    <2        Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&IP  Ta    <3        Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&LP  Ta    0         Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&P   Ta    0         Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&PP  Ta    0         Ta    current    Ta    paragraph   Ta    \&
+.It Sx \&RE  Ta    0         Ta    current    Ta    none        Ta    compat
+.It Sx \&RS  Ta    1         Ta    current    Ta    part        Ta    compat
+.It Sx \&SH  Ta    >0        Ta    next-line  Ta    section     Ta    \&
+.It Sx \&SS  Ta    >0        Ta    next-line  Ta    sub-section Ta    \&
+.It Sx \&TP  Ta    n         Ta    next-line  Ta    paragraph   Ta    \&
+.El
+.Pp
+Macros marked
+.Qq compat
+are as mentioned in
+.Sx Line Macros .
+.Pp
+If a block macro is next-line scoped, it may only be followed by in-line
+macros for decorating text.
+d275 1
+a275 1
+.Sh REFERENCE
+d650 137
+@
+
+
+1.109
+log
+@It's unknown whether `SH' and `SS' closing out `nf' literalism is
+portable, so document it in COMPATIBILITY.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.108 2011/08/30 13:14:01 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 30 2011 $
+d592 39
+@
+
+
+1.108
+log
+@Order -column lists to have the arguments follow `-column'.  From a
+patch by Jason McIntyre.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.107 2011/08/30 12:16:36 kristaps Exp $
+d975 8
+@
+
+
+1.107
+log
+@Remove unnecessary `Pp'/`-compat' combination for column lists.
+Directly from a patch by Jason McIntyre.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.106 2011/08/19 13:07:22 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 19 2011 $
+d504 1
+a504 1
+.Bl -column -offset indent "MacroX" "ArgumentsX" "ScopeXXXXX" "CompatX"
+d571 1
+a571 1
+.Bl -column -offset indent "MacroX" "ArgumentsX" "Head ScopeX" "sub-sectionX" "compatX"
+@
+
+
+1.106
+log
+@Bring man.7's LANGUAGE SYNTAX in line with mdoc.7.  While here, change
+out the \*q escapes.  Also fix some spelling typos in both manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.105 2011/08/18 08:58:43 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 18 2011 $
+d504 1
+a504 2
+.Pp
+.Bl -column -compact -offset indent "MacroX" "ArgumentsX" "ScopeXXXXX" "CompatX"
+d571 1
+a571 2
+.Pp
+.Bl -column -compact -offset indent "MacroX" "ArgumentsX" "Head ScopeX" "sub-sectionX" "compatX"
+@
+
+
+1.105
+log
+@Replace the old `An'/`Aq' AUTHORS note with `An'/`Mt'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.104 2011/08/17 22:20:14 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 17 2011 $
+d42 1
+a42 1
+document follows simple rules:  lines beginning with the control
+d46 2
+a47 2
+Other lines are interpreted within the scope of
+prior macros:
+d50 1
+a50 1
+Other lines are interpreted within the current state.
+d65 1
+a65 1
+.Sq \e\*q ,
+d69 1
+a69 1
+.Sq \&.\e\*q
+d78 2
+a79 2
+\&.\e\*q This is a comment line.
+\&.\e\*q The next line is ignored:
+d81 1
+a81 1
+\&.Em Emphasis \e\*q This is also a comment.
+d99 4
+a102 4
+.It \e(em
+em dash
+.It \ee
+backslash
+d112 1
+a112 1
+(revert to previous mode):
+d128 4
+a131 4
+.It \efBbold\efR
+write in bold, then switch to regular
+.It \efIitalic\efP
+write in italic, then return to previous
+d148 4
+a151 4
+.It \e*(Am
+ampersand
+.It \e*(Ba
+vertical bar
+d173 3
+d179 4
+a182 2
+Macro arguments may be quoted with double-quotes; in this case,
+whitespace within the quotes is retained as part of the argument.
+d188 20
+a207 9
+In unquoted arguments, space characters can alternatively be included
+by preceding them with a backslash
+.Pq Sq \e\~ ,
+but quoting is usually better for clarity.
+.Pp
+Note that any quoted text, even if it would cause a macro invocation
+when unquoted, is considered literal text.
+.Pp
+In text lines, quotes are regarded as opaque text.
+d313 3
+a315 3
+\&.\e\*q .SH LIBRARY
+\&.\e\*q For sections 2 & 3 only.
+\&.\e\*q Not used in OpenBSD.
+d320 23
+a342 23
+\&.\e\*q .SH IMPLEMENTATION NOTES
+\&.\e\*q Not used in OpenBSD.
+\&.\e\*q .SH RETURN VALUES
+\&.\e\*q For sections 2, 3, & 9 only.
+\&.\e\*q .SH ENVIRONMENT
+\&.\e\*q For sections 1, 6, 7, & 8 only.
+\&.\e\*q .SH FILES
+\&.\e\*q .SH EXIT STATUS
+\&.\e\*q For sections 1, 6, & 8 only.
+\&.\e\*q .SH EXAMPLES
+\&.\e\*q .SH DIAGNOSTICS
+\&.\e\*q For sections 1, 4, 6, 7, & 8 only.
+\&.\e\*q .SH ERRORS
+\&.\e\*q For sections 2, 3, & 9 only.
+\&.\e\*q .SH SEE ALSO
+\&.\e\*q .BR foo ( 1 )
+\&.\e\*q .SH STANDARDS
+\&.\e\*q .SH HISTORY
+\&.\e\*q .SH AUTHORS
+\&.\e\*q .SH CAVEATS
+\&.\e\*q .SH BUGS
+\&.\e\*q .SH SECURITY CONSIDERATIONS
+\&.\e\*q Not used in OpenBSD.
+@
+
+
+1.104
+log
+@Add example of comments in man.7 and mdoc.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.103 2011/08/17 22:16:32 kristaps Exp $
+d1025 2
+a1026 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.103
+log
+@Sync man.7's LANGUAGE SYNTAX (was INPUT ENCODING) with mdoc.7.
+While here, fix the scaling widths example that incorrectly used `br'
+(it now correctly uses `sp').
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.102 2011/07/08 09:35:06 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 8 2011 $
+d75 8
+@
+
+
+1.102
+log
+@Clarify the role of `RS' in man(7) and also fix a bogus cross-reference.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.101 2011/07/03 22:57:32 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 3 2011 $
+d52 1
+a52 1
+.Sh INPUT ENCODING
+d56 7
+a62 6
+.Pp
+Blank lines are acceptable; where found, the output will assert a
+vertical space.
+.Pp
+If the first character of a line is a space, that line is printed
+with a leading newline.
+d64 1
+a64 1
+Text following a
+d66 1
+a66 1
+whether in a macro or free-form text line, is ignored to the end of
+d68 2
+a69 2
+A macro line with only a control character and comment escape,
+.Sq \&.\e\*q ,
+d71 3
+a73 1
+Macro lines with only a control character and optionally whitespace are
+d76 3
+a78 1
+Special characters may occur in both macro and free-form lines.
+d87 10
+a96 1
+or a single one-character sequence.
+a99 6
+Examples include
+.Sq \e(em
+.Pq em-dash
+and
+.Sq \ee
+.Pq back-slash .
+d103 1
+a103 1
+escape followed by an indicator: B (bold), I (italic), R (Roman), or P
+d105 1
+a105 4
+.Pp
+.D1 \efBbold\efR \efIitalic\efP
+.Pp
+A numerical representation 3, 2, or 1 (bold, italic, and Roman,
+d117 35
+d154 25
+a178 4
+In free-form lines, whitespace is preserved within a line; unescaped
+trailing spaces are stripped from input (unless in a literal context).
+Blank free-form lines, which may include spaces, are permitted and
+rendered as an empty line.
+d180 4
+a183 2
+In macro lines, whitespace delimits arguments and is discarded.
+If arguments are quoted, whitespace within the quotes is retained.
+d185 3
+a187 8
+Many macros support scaled widths for their arguments, such as
+stipulating a two-inch paragraph indentation with the following:
+.Bd -literal -offset indent
+\&.HP 2i
+.Ed
+.Pp
+The syntax for scaled widths is
+.Sq Li [+-]?[0-9]*.[0-9]*[:unit:]? ,
+d190 1
+d230 2
+d239 10
+a248 5
+.Em Note :
+this differs from
+.Xr mdoc 7 ,
+which, if a unit is not provided, will instead interpret the string as
+literal text.
+d250 2
+a251 3
+When composing a manual, make sure that sentences end at the end of
+a line.
+By doing so, front-ends will be able to apply the proper amount of
+d261 7
+@
+
+
+1.101
+log
+@Fix a TODO noted by schwarze@@, originally by Christian Weisgerber:
+literal mode (`nf') is ended by SH (and, it turns out, SS as well).
+Noted the updated behaviour in man.7 as well.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.100 2011/05/26 09:26:16 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 26 2011 $
+d710 3
+d729 1
+a729 4
+Begin a part setting the left margin.
+The left margin controls the offset, following an initial indentation,
+to un-indented text such as that of
+.Sx \&PP .
+d732 1
+a732 1
+.Pf \. Sx \&Rs
+d741 3
+@
+
+
+1.100
+log
+@Noticed that our skeleton mdoc.7 had lower-case `Dt'.  Fixed and added
+some language for clarity.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.99 2011/03/07 01:35:51 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 7 2011 $
+d848 4
+@
+
+
+1.99
+log
+@Clean up date handling,
+as a first step to get rid of the frequent petty warnings in this area:
+ - always store dates as strings, not as seconds since the Epoch
+ - for input, try the three most common formats everywhere
+ - for unrecognized format, just pass the date though verbatim
+ - when there is no date at all, still use the current date
+Originally triggered by a one-line patch from Tim van der Molen,
+<tbvdm at xs4all dot nl>, which is included here.
+Feedback and OK on manual parts from jmc@@.
+"please check this in" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.98 2011/02/09 10:03:02 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: February 9 2011 $
+d208 5
+a212 1
+Documents are generally structured as follows:
+d214 1
+a214 1
+\&.TH FOO 1 2009-10-10
+d216 1
+a216 1
+\efBfoo\efR \e(en a description goes here
+d221 1
+a221 1
+\efBfoo\efR [\efB\e-options\efR] arguments...
+@
+
+
+1.98
+log
+@Add stub for eqn.7 manual and flip it on.  Also note COMPATIBILITY issue
+of how we considered .TS (etc.) macros and how the preprocessors do.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.97 2011/01/25 00:40:14 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 25 2011 $
+a120 9
+.Ss Dates
+The
+.Sx \&TH
+macro is the only
+.Nm
+macro that requires a date.
+The form for this date is the ISO-8601
+standard
+.Cm YYYY-MM-DD .
+d757 2
+a758 2
+.Cm title section
+.Op Cm date Op Cm source Op Cm volume
+d761 14
+a774 13
+At least the upper-case document
+.Cm title
+and the manual
+.Cm section
+arguments must be provided.
+The
+.Cm date
+argument should be formatted as described in
+.Sx Dates ,
+but will be printed verbatim if it is not.
+If the date is not specified, the current date is used.
+The
+.Cm source
+d777 1
+a777 1
+.Cm volume
+@
+
+
+1.97
+log
+@As noticed by deraadt@@, it goes without saying that text files
+on a UNIX system use UNIX conventions, and UNIX tools working
+on them expect that.
+ok jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.96 2011/01/24 23:17:19 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 24 2011 $
+d922 1
+@
+
+
+1.96
+log
+@Better explain roff(7) macro argument quoting;
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.95 2011/01/12 10:43:22 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 12 2011 $
+a55 3
+All manuals must have
+.Ux
+line termination.
+@
+
+
+1.95
+log
+@If the first character of free-form text is whitespace, then a newline
+shall precede outputted text (surprise!).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.94 2011/01/04 23:32:21 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 4 2011 $
+d376 7
+@
+
+
+1.94
+log
+@Moved table stuff from roff.7 into the new tbl.7 (suggested by Jason McIntyre).
+
+Added cross-links to tbl.7 from other manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.93 2010/12/29 16:18:13 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 29 2010 $
+d62 3
+@
+
+
+1.93
+log
+@Use `Dl' instead of `D1' for code examples.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.92 2010/12/08 10:58:22 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 8 2010 $
+d916 3
+a918 1
+.Xr mdoc 7
+@
+
+
+1.92
+log
+@Remove `i' and `r' macro handlers.  These macros, originally part of the
+me package, aren't recognised by "groff -mandoc" so we don't need to do
+so either.  Discussed on tech@@ with schwarze@@.
+
+While at it, remove references to `b' in man.7.  As far as I know, this
+was never supported anyway.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.91 2010/12/06 15:31:19 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 6 2010 $
+d530 1
+a530 1
+.D1 \&.BI bold italic bold italic
+d784 1
+a784 1
+.D1 \&.TH CVS 5 "1992-02-12" GNU
+@
+
+
+1.91
+log
+@Add support for `ft' macro found in groff(7).  Based on a patch by
+schwarze@@, but without the -T[x]html handling, which structurally does
+not work.  Also add man.7 documentation (not in original patch).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.90 2010/12/05 16:14:16 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 5 2010 $
+a426 1
+.It Sx \&i   Ta    n         Ta    current   Ta    compat
+a429 1
+.It Sx \&r   Ta    0         Ta    current   Ta    compat
+d510 1
+a510 4
+.Sx \&I ,
+.Sx \&R ,
+.Sx \&b ,
+.Sx \&i ,
+d512 1
+a512 1
+.Sx \&r .
+d589 1
+a589 4
+.Sx \&B ,
+.Sx \&R ,
+.Sx \&b ,
+.Sx \&i ,
+d591 1
+a591 1
+.Sx \&r .
+d687 1
+a687 4
+.Sx \&I ,
+.Sx \&B ,
+.Sx \&b ,
+.Sx \&i ,
+d689 1
+a689 1
+.Sx \&r .
+a827 12
+.Ss \&i
+Italicise arguments.
+Synonym for
+.Sx \&I .
+.Pp
+See also
+.Sx \&B ,
+.Sx \&I ,
+.Sx \&R .
+.Sx \&b ,
+and
+.Sx \&r .
+a844 10
+.Ss \&r
+Fonts and styles (bold face, italics) reset to roman (default font).
+.Pp
+See also
+.Sx \&B ,
+.Sx \&I ,
+.Sx \&R ,
+.Sx \&b ,
+and
+.Sx \&i .
+@
+
+
+1.90
+log
+@Remove `Sp', `Vb', and `Ve' (as per schwarze@@'s changes in OpenBSD),
+which are now accomodated for the new libroff modifications.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.89 2010/09/26 19:46:48 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 26 2010 $
+a416 1
+.\" .It Sx \&PD  Ta    n         Ta    current   Ta    compat
+d426 1
+d834 5
+@
+
+
+1.89
+log
+@sync to OpenBSD:
+note that IMPLEMENTATION NOTES is not used in OpenBSD
+add missing comma in "sections 1, 6, & 8 only" below EXIT STATUS
+below SEE ALSO, add an .Xr to man(1), and from man(7) to mdoc(7)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.88 2010/09/04 17:22:41 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 4 2010 $
+a432 3
+.\" .It Sx \&Sp  Ta    <1        Ta    current   Ta    compat
+.\" .It Sx \&Vb  Ta    <1        Ta    current   Ta    compat
+.\" .It Sx \&Ve  Ta    0         Ta    current   Ta    compat
+a820 6
+.\" .
+.\" .
+.\" .Ss \&PD
+.\" Has no effect.  Included for compatibility.
+.\" .
+.\" .
+a890 15
+.\" .Ss \&Sp
+.\" A synonym for
+.\" .Sx \&sp
+.\" .Cm 0.5v .
+.\" .
+.\" .Ss \&Vb
+.\" A synonym for
+.\" .Sx \&nf .
+.\" Accepts an argument (the height of the formatted space) which is
+.\" disregarded.
+.\" .
+.\" .Ss \&Ve
+.\" A synonym for
+.\" .Sx \&fi .
+.\" .
+@
+
+
+1.88
+log
+@Clarified EXIT STATUS sections.  Discussed among schwarze@@, Thomas, and
+Jason.  Patch by Jason.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.87 2010/08/29 11:28:09 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 29 2010 $
+d230 1
+d237 1
+a237 1
+\&.\e\*q For sections 1, 6 & 8 only.
+d965 1
+d967 2
+a968 1
+.Xr mandoc_char 7
+@
+
+
+1.87
+log
+@Remove overstrike `\o'.  This isn't the best solution because we really
+should be printing the contents, but for the time being, this is good
+enough.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.86 2010/08/28 22:08:38 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 28 2010 $
+d236 1
+a236 1
+\&.\e\*q For sections 1 & 8 only.
+@
+
+
+1.86
+log
+@Move mdoc/man template "The next is for" into the section itself.  Added
+OpenBSD compatibility notes.  Based on a patch by Jason McIntyre.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.85 2010/08/24 13:39:37 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 24 2010 $
+d947 2
+@
+
+
+1.85
+log
+@Strip out `\k' escape.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.84 2010/08/24 13:07:01 kristaps Exp $
+a221 1
+\&.\e\*q The next is for sections 2 & 3 only.
+d223 2
+a229 1
+\&.\e\*q The next is for sections 2, 3, & 9 only.
+d231 1
+a231 1
+\&.\e\*q The next is for sections 1, 6, 7, & 8 only.
+d233 1
+a234 1
+\&.\e\*q The next is for sections 1 & 8 only.
+d236 1
+a237 1
+\&.\e\*q The next is for sections 1, 4, 6, 7, & 8 only.
+d239 1
+a239 1
+\&.\e\*q The next is for sections 2, 3, & 9 only.
+d241 1
+d250 1
+@
+
+
+1.84
+log
+@Stripping out of `\w' groff escape.  Yet another for pod2man...
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.83 2010/08/24 12:18:48 kristaps Exp $
+d943 2
+@
+
+
+1.83
+log
+@Strip out the `\z' escape.  This is the first recursive sequence,
+getting mandoc ready to handle pod2man's complex escapes.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.82 2010/08/22 14:54:29 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 22 2010 $
+d941 2
+d946 1
+a946 2
+.Sx Text Decoration
+escapes are all discarded in mandoc.
+@
+
+
+1.82
+log
+@Sort COMPATIBILITY in mdoc(7) (from schwarze@@).
+
+Update escape COMPATIBILITY in mdoc(7) and man(7) (ok schwarze@@).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.81 2010/08/06 17:07:11 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 6 2010 $
+d939 2
+@
+
+
+1.81
+log
+@merge from OpenBSD:
+- HISTORY is interesting even when there are STANDARDS
+- more precise instructions what to put into AUTHORS
+- add the version argument to the mdoc(7) .Os macro
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.80 2010/07/26 10:00:03 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 26 2010 $
+a919 3
+The \es (font size), \em (font colour), and \eM (font filling colour)
+font decoration escapes are all discarded in mandoc.
+.It
+d924 25
+a952 7
+.It
+The
+.Sq \(aq
+macro control character, in GNU troff (and prior troffs) suppresses a
+newline before macro output; in mandoc, it is an alias for the standard
+.Sq \&.
+control character.
+@
+
+
+1.80
+log
+@Merge Jason McIntyre's corrections to man.7.
+
+"urgle": Jason McIntyre.  "This is all ok" schwarze@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.79 2010/07/22 23:03:15 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 22 2010 $
+d341 1
+a341 3
+The history of any manual without a
+.Em STANDARDS
+section should be described in this section.
+d343 1
+a343 1
+Credits to authors, if applicable, should appear in this section.
+@
+
+
+1.79
+log
+@Added `in' macro support for -man -Tascii.  This is not yet supported in
+-Thtml (I'm surprised to note that neither is LITERAL mode).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.78 2010/07/19 23:21:39 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 19 2010 $
+d114 1
+a114 1
+In free-form lines, whitespace is preserved within a line; un-escaped
+d193 1
+a193 1
+When composing a manual, make sure that your sentences end at the end of
+d198 3
+a200 2
+delimiters (
+.Ns Sq \&) ,
+d203 2
+a204 1
+.Sq \&" ) .
+d208 1
+a208 1
+document must contain contains at least the
+d211 1
+a211 1
+It may occur anywhere in the document, although conventionally, it
+d296 1
+a296 4
+This section is the dual of
+.Em EXIT STATUS ,
+which is used for commands.
+It documents the return values of functions in sections 2, 3, and 9.
+d305 2
+a306 4
+Command exit status for section 1, 6, and 8 manuals.
+This section is the dual of
+.Em RETURN VALUES ,
+which is used for functions.
+d314 1
+a314 1
+Make doubly sure that your examples work properly!
+d351 1
+a351 1
+Known bugs, limitations and work-arounds should be described
+d357 1
+a357 1
+Macros are one to three three characters in length and begin with a
+d445 2
+a446 2
+Block macros are comprised of a head and body.
+Like for in-line macros, the head is scoped to the current line and, in
+d603 2
+a604 2
+Text is rendered alternately in italics and bold face.  Whitespace
+between arguments is omitted in output.
+d627 1
+a627 1
+.Sx Scaling Widths ,
+d954 1
+a954 1
+.Ox 4.6.
+@
+
+
+1.78
+log
+@sync to OpenBSD:
+* briefly mention the HISTORY of the man(7) language
+* update the copyright notice
+* improve the wording in a few places
+* fix a couple of typos
+including two suggestions from J.C. Roberts
+feedback and ok jmc@@, ok sobrado@@ and kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.77 2010/07/19 10:48:36 kristaps Exp $
+d430 1
+d857 10
+@
+
+
+1.77
+log
+@Note discarding of \m, \M, and \s in COMPATIBILITY sections.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.76 2010/07/19 09:19:22 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+d40 1
+a40 1
+An
+d55 1
+a55 1
+space character, and the tabs character.
+d95 1
+a95 1
+escape followed by an indicator: B (bold), I, (italic), R (Roman), or P
+d303 1
+a303 1
+It's helpful to document both the file and a short description of how
+d349 1
+a349 1
+Authors should generally be noted by both name and an e-mail address.
+d351 1
+a351 1
+Explanations of common misuses and misunderstandings should be explained
+d354 2
+a355 1
+Extant bugs should be described in this section.
+d361 1
+a361 1
+control character ,
+d397 1
+a397 1
+raised (unless in the case of
+d400 2
+a401 2
+or
+.Sx \&na ) .
+d664 1
+a664 1
+The saved paragraph left-margin width is re-set to the default.
+d761 1
+a761 1
+The paragraph left-margin width is re-set to the default.
+d769 1
+a769 1
+The paragraph left-margin width is re-set to the default.
+d778 1
+a778 1
+At least the upper-case document title
+d780 1
+a780 1
+and numeric manual section
+d936 11
+d948 1
+a948 1
+The
+@
+
+
+1.76
+log
+@Removed \s documentation, as we (1) never supported it, and (2) never
+will.
+
+Also whack the dot-separator from the embedded man.7 manual.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.75 2010/07/16 10:25:54 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 16 2010 $
+d913 3
+@
+
+
+1.75
+log
+@Fix which escapes are used to format \".
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.74 2010/05/26 14:03:54 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 26 2010 $
+d109 1
+a109 24
+Text may also be sized with the
+.Sq \es
+escape, whose syntax is one of
+.Sq \es+-n
+for one-digit numerals;
+.Sq \es(+-nn
+or
+.Sq \es+-(nn
+for two-digit numerals; and
+.Sq \es[+-N] ,
+.Sq \es+-[N] ,
+.Sq \es'+-N' ,
+or
+.Sq \es+-'N'
+for arbitrary-digit numerals:
+.Pp
+.D1 \es+1bigger\es-1
+.D1 \es[+10]much bigger\es[-10]
+.D1 \es+(10much bigger\es-(10
+.D1 \es+'100'much much bigger\es-'100'
+.Pp
+Both
+.Sq \es
+and
+d111 1
+a111 1
+attributes are forgotten when entering or exiting a macro block.
+a217 1
+\&.
+a221 1
+\&.
+a223 1
+\&.
+a225 1
+\&.
+@
+
+
+1.74
+log
+@Allow bad -man dates to flow verbatim into the front-ends.  Noted by
+Ulrich Spoerlein.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.73 2010/05/25 22:48:04 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 25 2010 $
+d64 1
+a64 1
+.Sq \e\*" ,
+d68 1
+a68 1
+.Sq \&.\e" ,
+@
+
+
+1.73
+log
+@Fix man.7 to include AT and UC in its syntax table.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.72 2010/05/17 11:00:25 joerg Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 17 2010 $
+d812 3
+a814 2
+.Sx Dates :
+if it does not conform, the current date is used instead.
+@
+
+
+1.72
+log
+@Entry for .AT and .UC
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.71 2010/05/15 07:01:51 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 15 2010 $
+d437 1
+d452 1
+a452 1
+.\" .It Sx \&UC  Ta    n         Ta    current   Ta    compat
+@
+
+
+1.71
+log
+@Documented EOS buffered spaces and added `]'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.70 2010/05/14 16:19:26 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 14 2010 $
+d532 5
+d855 4
+a858 2
+.\" .Ss \&UC
+.\" Has no effect.  Included for compatibility.
+@
+
+
+1.70
+log
+@Pulled back in mysterious lost le1 <-> eq0 for Sp macro.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.69 2010/05/12 17:08:03 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 12 2010 $
+d219 7
+a225 2
+spacing after the end of sentence (unescaped) period, exclamation, or question
+mark.
+@
+
+
+1.69
+log
+@Put the eos-checker into libmandoc.h.
+Added bits in mdoc.7 and man.7 about EOS spacing.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.68 2010/05/12 16:52:33 kristaps Exp $
+d454 1
+a454 1
+.\" .It Sx \&Sp  Ta    0         Ta    current   Ta    compat
+@
+
+
+1.68
+log
+@End-of-sentence, end-of-line.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.67 2010/05/12 08:41:17 kristaps Exp $
+d215 6
+@
+
+
+1.67
+log
+@mdoc_atosec -> mdoc_str2sec (consistent with str2 being different from a2).
+Changed ordering of sections (EXIT STATUS moved around), argued for by Ulrich Sporlein.
+Fixed mdoc_str2sec not to use weird structure.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.66 2010/05/08 22:26:39 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 8 2010 $
+d28 2
+a29 2
+manuals.  This reference document describes its syntax, structure, and
+usage.
+d45 2
+a46 1
+are parsed for macros.  Other lines are interpreted within the scope of
+d55 2
+a56 1
+space character, and the tabs character.  All manuals must have
+d66 2
+a67 1
+line.  A macro line with only a control character and comment escape,
+d69 3
+a71 2
+is also ignored.  Macro lines with only a control character and
+optionally whitespace are stripped from input.
+d82 2
+a83 1
+or a single one-character sequence.  See
+d85 2
+a86 1
+for a complete list.  Examples include
+d101 4
+a104 3
+respectively) may be used instead.  A text decoration is only valid, if
+specified in free-form text, until the next macro invocation; if
+specified within a macro, it's only valid until the macro closes scope.
+d142 2
+a143 2
+In macro lines, whitespace delimits arguments and is discarded.  If
+arguments are quoted, whitespace within the quotes is retained.
+d149 2
+a150 1
+macro that requires a date.  The form for this date is the ISO-8601
+d163 2
+a164 2
+Negative numbers, while accepted, are truncated to zero.  The following
+scaling units are accepted:
+d220 3
+a222 3
+macro describing the document's section and title.  It may occur
+anywhere in the document, although conventionally, it appears as the
+first macro.
+d226 2
+a227 2
+at least one macro or text node must appear in the document.  Documents
+are generally structured as follows:
+d267 2
+a268 2
+document are conventionally ordered as they appear above.  Sections
+should be composed as follows:
+d271 2
+a272 2
+The name(s) and a short description of the documented material.  The
+syntax for this is generally as follows:
+d277 2
+a278 2
+assumed to be a function in a section 2 or 3 manual.  For functions in
+the C library, this may be as follows:
+d306 3
+a308 3
+Implementation-specific notes should be kept here.  This is useful when
+implementing standard functions that may have side effects or notable
+algorithmic implications.
+d312 2
+a313 2
+which is used for commands.  It documents the return values of functions
+in sections 2, 3, and 9.
+d318 3
+a320 2
+Documents files used.  It's helpful to document both the file and a
+short description of how the file is used (created, modified, etc.).
+d322 2
+a323 2
+Command exit status for section 1, 6, and 8 manuals.  This section is
+the dual of
+d325 2
+a326 2
+which is used for functions.  Historically, this information was
+described in
+d330 4
+a333 3
+Example usages.  This often contains snippets of well-formed,
+well-tested invocations.  Make doubly sure that your examples work
+properly!
+d335 2
+a336 1
+Documents error conditions.  This is most useful in section 4 manuals.
+d344 2
+a345 2
+References other manuals with related topics.  This section should exist
+for most manuals.
+d378 2
+a379 1
+at the beginning of the line.  The
+d381 4
+a384 3
+macro control character is also accepted.  An arbitrary amount of
+whitespace (spaces or tabs) may sit between the control character and
+the macro name.  Thus, the following are equivalent:
+d392 5
+a396 4
+macros are classified by scope: line scope or block scope.  Line
+macros are only scoped to the current line (and, in some situations,
+the subsequent line).  Block macros are scoped to the current line and
+subsequent lines until closed by another block macro.
+d399 4
+a402 3
+consisting of zero or more arguments.  If a macro is scoped to the next
+line and the line arguments are empty, the next line, which must be
+text, is used instead.  Thus:
+d456 2
+a457 2
+manuals that mix dialects of roff.  These macros should not be used for
+portable
+d461 3
+a463 3
+Block macros are comprised of a head and body.  Like for in-line macros,
+the head is scoped to the current line and, in one circumstance, the
+next line (the next-line stipulations as in
+d518 2
+a519 1
+alphabetically.  For the scoping of individual macros, see
+d532 2
+a533 1
+Text is rendered alternately in bold face and italic.  Thus,
+d543 2
+a544 1
+render in italics.  Whitespace between arguments is omitted in output.
+d579 2
+a580 1
+Has no effect.  Included for compatibility.
+d644 2
+a645 2
+argument is used as a leading term, flushed to the left margin.  This is
+useful for bulleted paragraphs and so on.
+d670 4
+a673 3
+Begin an undecorated paragraph.  The scope of a paragraph is closed by a
+subsequent paragraph, sub-section, section, or end of file.  The saved
+paragraph left-margin width is re-set to the default.
+d748 3
+a750 3
+Begin a part setting the left margin.  The left margin controls the
+offset, following an initial indentation, to un-indented text such as
+that of
+d767 4
+a770 3
+Begin a section.  The scope of a section is only closed by another
+section or the end of file.  The paragraph left-margin width is re-set
+to the default.
+d775 4
+a778 3
+Begin a sub-section.  The scope of a sub-section is closed by a
+subsequent sub-section, section, or end of file.  The paragraph
+left-margin width is re-set to the default.
+d791 2
+a792 1
+arguments must be provided.  The
+d796 2
+a797 1
+if it does not conform, the current date is used instead.  The
+d799 2
+a800 1
+string specifies the organisation providing the utility.  The
+d811 2
+a812 1
+buffer to the indentation width.  Subsequent output lines are indented.
+d842 2
+a843 1
+Breaks the current line.  Consecutive invocations have no further effect.
+d851 2
+a852 1
+Italicise arguments.  Synonym for
+d866 2
+a867 1
+line boundaries preserved.  May be ended by
+d892 2
+a893 1
+macro.  Defaults to 1, if unspecified.
+d921 2
+a922 2
+a standalone double-quote in formatted output.  It is not known whether
+this behaviour is exhibited by other formatters.
+d926 2
+a927 2
+macro does not accept negative values in mandoc.  In GNU troff, this
+would result in strange behaviour.
+d945 2
+a946 1
+Do not use this language.  Use
+@
+
+
+1.66
+log
+@Adding initial mailing list section to homepage.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.65 2010/05/08 10:28:24 kristaps Exp $
+a234 2
+\&.\e\*q The next is for sections 1 & 8 only.
+\&.\e\*q .SH EXIT STATUS
+d240 2
+a300 8
+.It Em EXIT STATUS
+Command exit status for section 1, 6, and 8 manuals.  This section is
+the dual of
+.Em RETURN VALUES ,
+which is used for functions.  Historically, this information was
+described in
+.Em DIAGNOSTICS ,
+a practise that is now discouraged.
+d312 8
+@
+
+
+1.65
+log
+@Note that whitespace is really only the space character.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.64 2010/05/08 08:36:44 kristaps Exp $
+d129 1
+a129 1
+Whitespace consists of the space character.  
+@
+
+
+1.64
+log
+@Strip trailing, unescaped whitespace from free-form, non-literal lines (like groff).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.63 2010/05/07 15:49:36 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 7 2010 $
+d129 1
+@
+
+
+1.63
+log
+@De-chunking of text removed from parsers.  This is a significant change (and I don't really like it), but it's what groff does.
+Distinction of ARGS_PHRASE and ARGS_PPHRASE in backend (not yet used).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.62 2010/04/13 05:26:49 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: April 13 2010 $
+d129 7
+a135 4
+Unless specifically escaped, consecutive blocks of whitespace are pruned
+from input.  These are later re-added, if applicable, by a front-end
+utility such as
+.Xr mandoc 1 .
+@
+
+
+1.62
+log
+@As per Jason McIntyre's heartful urgings, do away with '.' separators between logical sections.
+Change email address to BSD.lv one (this is not an academic project...)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.61 2010/04/05 07:25:23 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: April 5 2010 $
+a889 5
+Blocks of whitespace are stripped from macro and free-form text lines
+(except when in literal mode) in mandoc.  This is not the case for GNU
+troff: for maximum portability, whitespace sensitive blocks should be
+enclosed in literal contexts.
+.It
+@
+
+
+1.61
+log
+@Removed lingering `Sp' reference (not -man).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.60 2010/03/27 10:22:28 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+d17 1
+a17 1
+.Dd $Mdocdate: March 27 2010 $
+a19 2
+.
+.
+a22 2
+.
+.
+a29 1
+.
+a38 1
+.
+a50 2
+.
+.
+a56 1
+.
+a59 2
+.
+.
+a67 2
+.
+.
+a85 2
+.
+.
+a127 2
+.
+.
+a132 2
+.
+.
+a140 2
+.
+.
+a146 1
+.
+a152 1
+.
+a190 1
+.
+a202 2
+.
+.
+a210 1
+.
+a304 1
+.
+a309 1
+.
+a312 1
+.
+a315 1
+.
+a319 1
+.
+a325 1
+.
+a327 1
+.
+a335 1
+.
+a343 1
+.
+a347 1
+.
+a350 1
+.
+a353 1
+.
+a355 1
+.
+a357 1
+.
+a358 2
+.
+.
+a371 1
+.
+a378 2
+.
+.
+a387 1
+.
+a403 1
+.
+a432 1
+.
+a440 2
+.
+.
+a453 1
+.
+a470 1
+.
+a474 1
+.
+a489 1
+.
+a493 1
+.
+a496 2
+.
+.
+a500 2
+.
+.
+a510 2
+.
+.
+a540 2
+.
+.
+a555 2
+.
+.
+a557 2
+.
+.
+a579 2
+.
+.
+a589 2
+.
+.
+a604 2
+.
+.
+a630 2
+.
+.
+a645 2
+.
+.
+a657 2
+.
+.
+a668 2
+.
+.
+a679 2
+.
+.
+a689 2
+.
+.
+a704 2
+.
+.
+a707 2
+.
+.
+a722 2
+.
+.
+a738 2
+.
+.
+a741 2
+.
+.
+a745 2
+.
+.
+a748 2
+.
+.
+a752 2
+.
+.
+a778 2
+.
+.
+a810 2
+.
+.
+a815 2
+.
+.
+a818 2
+.
+.
+a829 2
+.
+.
+a831 2
+.
+.
+a835 2
+.
+.
+a845 2
+.
+.
+a862 1
+.
+a877 1
+.
+a882 1
+.
+a888 1
+.
+a893 1
+.
+a898 1
+.
+a906 2
+.
+.
+a909 2
+.
+.
+d914 1
+a914 3
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+.
+.
+a918 1
+.
+@
+
+
+1.60
+log
+@...finishing last commit message: accept both tabs and spaces between control character and macro text.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.59 2010/03/27 10:10:10 kristaps Exp $
+a442 1
+.Sx \&Sp ,
+@
+
+
+1.59
+log
+@Documentation of apostrophe control character.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.58 2010/03/25 07:28:16 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 25 2010 $
+d409 2
+a410 2
+whitespace may sit between the control character and the macro name.
+Thus, the following are equivalent:
+@
+
+
+1.58
+log
+@Fixed up some documentation in man.7: only documenting man.7 macros, not related ones (de, Vb, etc.), which aren't technically man.  It's an open question as to where these /should/ be documented, however.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.57 2010/03/23 11:30:48 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 23 2010 $
+d406 5
+a410 3
+at the beginning of the line.  An arbitrary amount of whitespace may
+sit between the control character and the macro name.  Thus, the
+following are equivalent:
+d1004 1
+d1011 1
+d1017 1
+d1023 8
+@
+
+
+1.57
+log
+@Support for pod2man standard header macros (Vb, Ve, Sp).  Based largely on a set of patches by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.56 2010/03/22 05:59:32 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 22 2010 $
+d461 1
+a461 1
+.It Sx \&PD  Ta    n         Ta    current   Ta    compat
+d468 1
+a468 1
+.It Sx \&UC  Ta    n         Ta    current   Ta    compat
+d476 3
+a478 3
+.It Sx \&Sp  Ta    0         Ta    current   Ta    compat
+.It Sx \&Vb  Ta    <1        Ta    current   Ta    compat
+.It Sx \&Ve  Ta    0         Ta    current   Ta    compat
+d486 3
+a488 1
+portable manuals.
+d524 5
+d906 8
+a913 8
+.
+.
+.Ss \&PD
+Has no effect.  Included for compatibility.
+.
+.
+.Ss \&UC
+Has no effect.  Included for compatibility.
+d981 15
+a995 15
+.Ss \&Sp
+A synonym for
+.Sx \&sp
+.Cm 0.5v .
+.
+.Ss \&Vb
+A synonym for
+.Sx \&nf .
+Accepts an argument (the height of the formatted space) which is
+disregarded.
+.
+.Ss \&Ve
+A synonym for
+.Sx \&fi .
+.
+d998 4
+a1001 3
+This section documents compatibility with other roff implementations, at
+this time limited to
+.Xr groff 1 .
+d1005 3
+a1007 5
+The
+.Xr groff 1
+.Sx \&i
+macro will italicise all subsequent text if a line argument is not
+provided.  This behaviour is not implemented.
+d1009 4
+a1012 3
+In quoted literals, groff allowed pair-wise double-quotes to produce a
+standalone double-quote in formatted output.  This idiosyncratic
+behaviour is no longer applicable.
+d1016 2
+a1017 5
+macro does not accept negative numbers.
+.It
+Blocks of whitespace are stripped from both macro and free-form text
+lines (except when in literal mode), while groff would retain whitespace
+in free-form text lines.
+@
+
+
+1.56
+log
+@Accomodate (libman) for next-line macros followed by non-text macros `na', `sp', and `br'.
+Based on a patch by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.55 2010/01/07 19:10:09 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 7 2010 $
+d441 1
+d452 27
+a478 24
+.Bl -column -compact -offset indent "MacroX" "ArgumentsX" "ScopeXXXXX"
+.It Em Macro Ta Em Arguments Ta Em Scope
+.It Sx \&B   Ta    n         Ta    next-line
+.It Sx \&BI  Ta    n         Ta    current
+.It Sx \&BR  Ta    n         Ta    current
+.It Sx \&DT  Ta    0         Ta    current
+.It Sx \&I   Ta    n         Ta    next-line
+.It Sx \&IB  Ta    n         Ta    current
+.It Sx \&IR  Ta    n         Ta    current
+.It Sx \&PD  Ta    n         Ta    current
+.It Sx \&R   Ta    n         Ta    next-line
+.It Sx \&RB  Ta    n         Ta    current
+.It Sx \&RI  Ta    n         Ta    current
+.It Sx \&SB  Ta    n         Ta    next-line
+.It Sx \&SM  Ta    n         Ta    next-line
+.It Sx \&TH  Ta    >1, <6    Ta    current
+.It Sx \&UC  Ta    n         Ta    current
+.It Sx \&br  Ta    0         Ta    current
+.It Sx \&fi  Ta    0         Ta    current
+.It Sx \&i   Ta    n         Ta    current
+.It Sx \&na  Ta    0         Ta    current
+.It Sx \&nf  Ta    0         Ta    current
+.It Sx \&r   Ta    0         Ta    current
+.It Sx \&sp  Ta    1         Ta    current
+d482 5
+a486 14
+The
+.Sx \&PD ,
+.Sx \&RS ,
+.Sx \&RE ,
+.Sx \&UC ,
+.Sx \&br ,
+.Sx \&fi ,
+.Sx \&i ,
+.Sx \&na ,
+.Sx \&nf ,
+.Sx \&r ,
+and
+.Sx \&sp
+macros should not be used.  They're included for compatibility.
+d492 3
+a494 2
+next line (the next-line stipulations for line macros apply here as
+well).
+d522 12
+a533 12
+.Bl -column "MacroX" "ArgumentsX" "Head ScopeX" "sub-sectionX" -compact -offset indent
+.It Em Macro Ta Em Arguments Ta Em Head Scope Ta Em Body Scope
+.It Sx \&HP  Ta    <2        Ta    current    Ta    paragraph
+.It Sx \&IP  Ta    <3        Ta    current    Ta    paragraph
+.It Sx \&LP  Ta    0         Ta    current    Ta    paragraph
+.It Sx \&P   Ta    0         Ta    current    Ta    paragraph
+.It Sx \&PP  Ta    0         Ta    current    Ta    paragraph
+.It Sx \&RE  Ta    0         Ta    current    Ta    none
+.It Sx \&RS  Ta    1         Ta    current    Ta    part
+.It Sx \&SH  Ta    >0        Ta    next-line  Ta    section
+.It Sx \&SS  Ta    >0        Ta    next-line  Ta    sub-section
+.It Sx \&TP  Ta    n         Ta    next-line  Ta    paragraph
+d535 6
+d544 1
+a544 11
+macros (excluding
+.Sx \&DT ,
+.Sx \&PD ,
+.Sx \&TH ,
+.Sx \&UC ,
+.Sx \&br ,
+.Sx \&na ,
+.Sx \&sp ,
+.Sx \&nf ,
+and
+.Sx \&fi ) .
+d974 15
+@
+
+
+1.55
+log
+@Fix white-space issues found by mandoc's better white-space finder.
+Fixed bogus `\\' escapes in some manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.54 2009/11/16 08:46:59 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate$
+d426 2
+a427 2
+line and the line arguments are empty, the next line is used instead,
+else the general syntax is used.  Thus:
+d436 9
+a444 3
+If next-line macros are invoked consecutively, only the last is used; in
+other words, if a next-line macro is preceded by a block macro, it is
+ignored.
+d497 4
+a500 2
+next line; the body is scoped to subsequent lines and is closed out by a
+subsequent block macro invocation.
+@
+
+
+1.54
+log
+@Enabled -Thtml -mdoc to work with \f (see compat notes in mandoc.1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.53 2009/11/15 06:45:31 kristaps Exp $
+d105 1
+a105 1
+(revert to previous mode):  
+d298 1
+a298 1
+configuration. 
+d313 1
+a313 1
+Manuals not in these sections generally don't need a 
+d316 1
+a316 1
+This expands upon the brief, one-line description in 
+d364 1
+a364 1
+for most manuals.  
+d507 1
+a507 1
+or paragraph, closed by a section, sub-section, part, 
+d566 1
+a566 1
+Text is rendered alternately in bold face and italic.  Thus, 
+d572 1
+a572 1
+to render in bold face, while 
+d822 1
+a822 1
+If not specified, the saved or default width is used. 
+d963 1
+a963 1
+Insert 
+@
+
+
+1.53
+log
+@\f escapes appear to work properly for -Thtml -man.  Needs more testing.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.52 2009/11/12 08:21:05 kristaps Exp $
+d113 3
+@
+
+
+1.52
+log
+@Fixed \c support for all input and output modes (documented in mandoc_char.7).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.51 2009/11/12 08:00:21 kristaps Exp $
+d139 1
+a139 2
+attributes are forgotten when exiting a subsequent (or current) macro
+invocation.
+@
+
+
+1.51
+log
+@Deprecated ".i <notext>" support (nobody uses it -- it can be re-added, but adds a bit of complexity that I'd rather avoid).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.50 2009/11/12 05:50:12 kristaps Exp $
+a69 8
+.Pp
+The
+.Sq \ec
+escape is common in historical
+.Nm
+documents; if encountered at the end of a word, it ensures that the
+subsequent word isn't off-set by whitespace.
+.
+@
+
+
+1.50
+log
+@Basically re-wrote -Tascii font handling: instead of incrementers for
+bold and underline, we use a stack (no cascading, no double-font-mode).
+Font modes with \f only affect the current stack point, as documented in
+mdoc.7 and man.7.  While -mdoc stacks fonts with embedded macros, -man
+replaces them (the stack is always size 1).  This works for all
+invocations in supported systems' manual corpora to date.  It doesn't
+support groff's insanity with line-scoped \f as documented in mdoc.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.49 2009/11/10 12:03:29 kristaps Exp $
+d928 2
+a929 2
+Italicise arguments.  If no arguments are specified, all subsequent text
+is italicised.
+d985 8
+a992 1
+.Bl -hyphen
+d999 1
+a999 1
+.Sq sp
+@
+
+
+1.49
+log
+@Noted that -man text decoration is re-set when exiting a macro invocation.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.48 2009/11/09 05:11:46 kristaps Exp $
+d118 3
+a120 1
+respectively) may be used instead.
+@
+
+
+1.48
+log
+@Documented \s and cleaned up \f documentation in mdoc.7, man.7.
+-Thtml now using a2roffdeco().
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.47 2009/11/05 08:40:16 kristaps Exp $
+d140 7
+@
+
+
+1.47
+log
+@Correct support for `\fX' font modes in -Tascii.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.46 2009/11/02 17:07:30 kristaps Exp $
+d113 27
+a139 2
+(revert to previous mode).  A numerical representation 3, 2, or 1
+(bold, italic, and Roman, respectively) may be used instead.
+@
+
+
+1.46
+log
+@Examples not being link-referenced (consistency).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.45 2009/11/02 09:56:42 kristaps Exp $
+d112 3
+a114 2
+escape followed by an indicator: B (bold), I, (italic), or P and R
+(Roman, or reset).
+@
+
+
+1.45
+log
+@Fixed `Sx' links in man.7 (todo: add a check for these).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.44 2009/11/02 09:53:15 kristaps Exp $
+d550 2
+a551 4
+.Bd -filled -offset indent
+.Pf \. Sx \&BI
+bold italic bold italic
+.Ed
+d842 2
+a843 3
+.Bd -filled -offset indent
+\&.TH CVS 5 "1992-02-12" GNU
+.Ed
+@
+
+
+1.44
+log
+@Significant improvements to man(7).  More or less finished.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.43 2009/11/02 06:22:45 kristaps Exp $
+d607 4
+a610 4
+.Sx IP ,
+.Sx LP ,
+.Sx P ,
+.Sx PP ,
+d612 1
+a612 1
+.Sx TP .
+d664 4
+a667 4
+.Sx HP ,
+.Sx LP ,
+.Sx P ,
+.Sx PP ,
+d669 1
+a669 1
+.Sx TP .
+d695 4
+a698 4
+.Sx HP ,
+.Sx IP ,
+.Sx P ,
+.Sx PP ,
+d700 1
+a700 1
+.Sx TP .
+d708 4
+a711 4
+.Sx HP ,
+.Sx IP ,
+.Sx LP ,
+.Sx PP ,
+d713 1
+a713 1
+.Sx TP .
+d721 4
+a724 4
+.Sx HP ,
+.Sx IP ,
+.Sx LP ,
+.Sx P ,
+d726 1
+a726 1
+.Sx TP .
+d867 4
+a870 4
+.Sx HP ,
+.Sx IP ,
+.Sx LP ,
+.Sx P ,
+d872 1
+a872 1
+.Sx PP .
+@
+
+
+1.43
+log
+@Added mandoc_a2time() for proper date conversion.
+Fitted TH and Dd handlers to use mandoc_a2time().
+Documented date syntax for -man, fixed documentation for -mdoc.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.42 2009/10/31 08:37:26 kristaps Exp $
+d85 1
+a85 1
+is also ignored.  Macro lines with only a control charater and
+d122 1
+a131 7
+.Ss Scaling Widths
+Many macros support scaled widths for their arguments, such as
+stipulating a two-inch list indentation with the following:
+.Bd -literal -offset indent
+\&.Bl -tag -width 2i
+.Ed
+.
+d184 1
+a184 2
+is necessarily non-portable across output media.  See 
+.Sx COMPATIBILITY .
+d278 1
+a278 1
+.D1 \. Ns Sx \&B No char *name(char *\efIarg\efR);
+d282 1
+a282 1
+.D1 \. Ns Sx \&B No name* at cardbus ? function ?
+d321 1
+a321 2
+properly!  Assume that users will skip to this section and use your
+example verbatim.
+d335 5
+a339 1
+for most manuals.  Cross-references should conventionally be ordered
+a340 4
+.Pp
+.D1 \. Ns Sx \&BR No bar \&( 1 \&),
+.D1 \. Ns Sx \&BR No foo \&( 1 \&),
+.D1 \. Ns Sx \&BR No baz \&( 2 \&).
+d407 3
+a409 2
+If next-line macros are invoked consecutively, only the last is used.
+If a next-line macro is proceded by a block macro, it is ignored.
+d523 1
+d526 10
+d548 22
+d573 14
+d589 2
+d594 3
+a596 2
+.Bd -literal -offset indent
+\&.HP [width]
+d598 16
+a614 5
+.Pp
+If scaling width
+.Va width
+is specified, it's saved for later paragraph left-margins; if
+unspecified, the saved or default width is used.
+d617 10
+d630 14
+d645 4
+a648 3
+Begin a paragraph with the following syntax:
+.Bd -literal -offset indent
+\&.IP [head [width]]
+d650 21
+a671 8
+.Pp
+This follows the behaviour of the
+.Sx \&TP
+except for the macro syntax (all arguments on the line, instead of
+having next-line scope).  If
+.Va width
+is specified, it's saved for later paragraph left-margins; if
+unspecified, the saved or default width is used.
+d675 14
+d693 10
+d706 10
+d719 10
+d731 10
+d744 14
+d761 2
+d766 14
+d785 4
+a788 3
+A scaling width may be specified as following:
+.Bd -literal -offset indent
+\&.RS [width]
+d790 7
+a797 4
+.Pp
+If
+.Va width
+is not specified, the saved or default width is used. 
+d801 2
+d807 2
+d812 2
+d818 2
+d822 5
+a826 2
+.Pp
+.D1 \. Ns Sx \&TH No Cm title msec Op Cm date Op Cm src Op Cm vol
+d831 1
+a831 1
+.Cm msec
+d837 1
+a837 1
+.Cm src
+d839 1
+a839 1
+.Cm vol
+d844 1
+a844 1
+.Bd -literal -offset indent
+d848 1
+d853 4
+a856 5
+.
+.Pp
+The indentation scaling width may be set as follows:
+.Bd -literal -offset indent
+\&.TP [width]
+a857 1
+.
+d859 5
+a863 3
+If
+.Va width
+is specified, it's saved for later paragraph left-margins; if
+d865 10
+d877 2
+d881 2
+d885 5
+d893 2
+d898 10
+d910 2
+d916 2
+d920 10
+d931 11
+a941 2
+Insert n spaces, where n is the macro's positive numeric argument.  If
+0, this is equivalent to the
+d943 4
+a946 1
+macro.
+@
+
+
+1.42
+log
+@Finished section-by-section definitions in man.7 (will be used as baseline for mdoc.7).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.41 2009/10/26 10:36:46 kristaps Exp $
+d122 17
+d222 1
+a222 1
+\&.TH FOO 1 "13 Aug 2009"
+d634 19
+d654 1
+a654 1
+\&.TH title section [date [source [volume]]]
+a656 16
+.Pp
+At least the 
+.Va title
+and
+.Va section
+arguments must be provided.  The
+.Va date
+argument should be formatted as
+.Qq %b [%d] %Y
+format, described in
+.Xr strptime 3 .
+The
+.Va source
+string specifies the organisation providing the utility.  The
+.Va volume
+replaces the default rendered volume as dictated by the manual section.
+@
+
+
+1.41
+log
+@Fix to segfault in ordering Rs blocks (d'oh!).
+Version: 1.9.11.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.40 2009/10/24 05:45:04 kristaps Exp $
+d232 1
+a232 1
+\&.\e\*q \efBbar\efR(1)
+d245 2
+a246 2
+.Bl -tag -width Ds -offset Ds
+.It NAME
+d251 1
+a251 1
+.It LIBRARY
+d257 1
+a257 1
+.It SYNOPSIS
+d274 8
+a281 5
+Manuals not in these sections generally don't need a SYNOPSIS.
+.It DESCRIPTION
+This expands upon the brief, one-line description in NAME.  It usually
+contains a break-down of the options (if documenting a command).
+.It IMPLEMENTATION NOTES
+d285 76
+a360 14
+.It EXIT STATUS
+.It RETURN VALUES
+.It ENVIRONMENT
+.It FILES
+.It EXAMPLES
+.It DIAGNOSTICS
+.It ERRORS
+.It SEE ALSO
+.It STANDARDS
+.It HISTORY
+.It AUTHORS
+.It CAVEATS
+.It BUGS
+.It SECURITY CONSIDERATIONS
+@
+
+
+1.40
+log
+@Added `PD' to -man (doesn't do anything, yet).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.39 2009/10/19 07:44:30 kristaps Exp $
+d240 57
+@
+
+
+1.39
+log
+@Made man.7 use lots of Sx/Ss to link between macro definitions and references.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.38 2009/10/18 19:00:57 kristaps Exp $
+d293 1
+d312 1
+d375 1
+d531 2
+@
+
+
+1.38
+log
+@Properly documented scaling widths in man.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.37 2009/09/05 10:37:09 kristaps Exp $
+d194 1
+a194 1
+.Sq TH
+d201 1
+a201 1
+.Sq TH ,
+d247 6
+a252 5
+sit between the control character and the macro name.  Thus,
+.Sq .PP
+and
+.Sq \&.\ \ \ PP
+are equivalent.
+d286 21
+a306 21
+.It    B     Ta    n         Ta    next-line
+.It    BI    Ta    n         Ta    current
+.It    BR    Ta    n         Ta    current
+.It    DT    Ta    0         Ta    current
+.It    I     Ta    n         Ta    next-line
+.It    IB    Ta    n         Ta    current
+.It    IR    Ta    n         Ta    current
+.It    R     Ta    n         Ta    next-line
+.It    RB    Ta    n         Ta    current
+.It    RI    Ta    n         Ta    current
+.It    SB    Ta    n         Ta    next-line
+.It    SM    Ta    n         Ta    next-line
+.It    TH    Ta    >1, <6    Ta    current
+.It    UC    Ta    n         Ta    current
+.It    br    Ta    0         Ta    current
+.It    fi    Ta    0         Ta    current
+.It    i     Ta    n         Ta    current
+.It    na    Ta    0         Ta    current
+.It    nf    Ta    0         Ta    current
+.It    r     Ta    0         Ta    current
+.It    sp    Ta    1         Ta    current
+d311 9
+a319 9
+.Sq RS ,
+.Sq RE ,
+.Sq UC ,
+.Sq br ,
+.Sq fi ,
+.Sq i ,
+.Sq na ,
+.Sq nf ,
+.Sq r ,
+d321 1
+a321 1
+.Sq sp
+d339 1
+a339 1
+.Sq SH ;
+d341 1
+a341 1
+.Sq SS ;
+d343 1
+a343 1
+.Sq RE ;
+d345 5
+a349 5
+.Sq HP ,
+.Sq IP ,
+.Sq LP ,
+.Sq P ,
+.Sq PP ,
+d351 1
+a351 1
+.Sq TP .
+d357 10
+a366 10
+.It   HP     Ta    <2        Ta    current    Ta    paragraph
+.It   IP     Ta    <3        Ta    current    Ta    paragraph
+.It   LP     Ta    0         Ta    current    Ta    paragraph
+.It   P      Ta    0         Ta    current    Ta    paragraph
+.It   PP     Ta    0         Ta    current    Ta    paragraph
+.It   RE     Ta    0         Ta    current    Ta    none
+.It   RS     Ta    1         Ta    current    Ta    part
+.It   SH     Ta    >0        Ta    next-line  Ta    section
+.It   SS     Ta    >0        Ta    next-line  Ta    sub-section
+.It   TP     Ta    n         Ta    next-line  Ta    paragraph
+d372 7
+a378 7
+.Sq DT ,
+.Sq TH ,
+.Sq UC ,
+.Sq br ,
+.Sq na ,
+.Sq sp ,
+.Sq nf ,
+d380 1
+a380 1
+.Sq fi ) .
+d388 1
+a388 2
+.Bl -tag -width Ds
+.It B
+d390 1
+a390 1
+.It BI
+d402 1
+a402 1
+.It BR
+d405 1
+a405 1
+.It DT
+d407 1
+a407 1
+.It HP
+d419 1
+a419 1
+.It I
+d421 1
+a421 1
+.It IB
+d424 1
+a424 1
+.It IP
+d432 1
+a432 1
+.Sq TP
+d438 1
+a438 1
+.It IR
+d441 1
+a441 1
+.It LP, P, PP
+d445 7
+a451 1
+.It R
+d453 1
+a453 1
+.It RB
+d456 1
+a456 1
+.It RE
+d458 2
+a459 2
+.Sq RS .
+.It RI
+d462 1
+a462 1
+.It RS
+d466 1
+a466 1
+.Sq PP .
+d476 1
+a476 1
+.It SB
+d479 1
+a479 1
+.It SH
+d483 1
+a483 1
+.It SM
+d486 1
+a486 1
+.It SS
+d490 1
+a490 1
+.It TH
+d512 1
+a512 1
+.It TP
+d528 1
+a528 1
+.It UC
+d530 1
+a530 1
+.It br
+d532 1
+a532 1
+.It fi
+d534 2
+a535 2
+.Sq nf .
+.It i
+d538 1
+a538 1
+.It na
+d540 1
+a540 1
+.It nf
+d543 2
+a544 2
+.Sq fi .
+.It r
+d546 1
+a546 1
+.It sp
+d549 1
+a549 1
+.Sq br
+a550 1
+.El
+@
+
+
+1.37
+log
+@Version: 1.9.2.
+Fixed man.7 syntax error (oops).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.36 2009/08/22 09:10:37 kristaps Exp $
+d122 67
+a386 22
+.
+.Ss Definitions
+In this reference, a numerical width may be either a standalone natural
+number (such as 3, 4, 10, etc.) or a natural number followed by a width
+multiplier 
+.Qq n ,
+corresponding to the width of the formatted letter n, or
+.Qq m ,
+corresponding to the width of the formatted letter m.  The latter is the
+default, if unspecified.  Thus,
+.Bd -literal -offset indent
+\&.HP 12n
+.Ed
+.
+.Pp
+indicates an offset of 12 
+.Qq n
+.Ns -sized
+letters.
+.
+.
+.Ss Macro Reference
+d415 1
+a415 1
+If 
+d461 1
+a461 1
+The width may be specified as following:
+d512 1
+a512 1
+The indentation width may be set as follows:
+d518 1
+a518 3
+Where
+.Va width
+must be a properly-formed numeric width.  If
+@
+
+
+1.36
+log
+@Added `UC' libman macro (has no effect).
+Corrected `UC' and `DT' not to print their arguments.
+Noted that `UC' and `DT' shouldn't be used.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.35 2009/08/21 12:12:12 kristaps Exp $
+a469 2
+.It UC
+Has no effect.  Included for compatibility.
+d479 2
+@
+
+
+1.35
+log
+@Open explicit scope on libman exit now only generates warning.
+Consecutive ELINE scopes are now pruned (with a warning).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.34 2009/08/20 13:51:55 kristaps Exp $
+d231 1
+d245 1
+d254 1
+a254 3
+macros aren't historically part of
+.Nm
+and should not be used.  They're included for compatibility.
+d306 1
+d361 1
+a361 1
+Re-set the tab spacing to 0.5 inches.
+d470 2
+d490 1
+a490 1
+Don't alignment the right margin.
+@
+
+
+1.34
+log
+@Fixed (not documented anywhere of course) that `SH' and `SS' in libman have next-line head scope.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.33 2009/08/20 13:32:09 kristaps Exp $
+d208 2
+a209 2
+.\" PARAGRAPH
+Consecutive next-line scope invocations are disallowed.
+a215 4
+It is considered an error when next-line scope is open at the end of
+file.
+.
+.Pp
+a286 4
+It is considered an error when part or next-line scope is open at the
+end of file.
+.
+.Pp
+@
+
+
+1.33
+log
+@Synchronised man.7, mdoc.7, mdoc.template manual structure.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.32 2009/08/20 12:08:40 kristaps Exp $
+d304 2
+a305 2
+.It   SH     Ta    >0        Ta    current    Ta    section
+.It   SS     Ta    >0        Ta    current    Ta    sub-section
+@
+
+
+1.32
+log
+@Documented omission of `na' and `Dt'.
+Clarified COMPATIBILITY section (which modes/inputs).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.31 2009/08/20 11:51:07 kristaps Exp $
+d142 2
+d149 1
+a149 1
+The \efBfoo\efR utility does...
+d151 4
+d156 1
+d160 1
+d162 1
+d171 1
+@
+
+
+1.31
+log
+@Added `DT' macro (pointed out by joerg@@netbsd.org).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.30 2009/08/20 11:44:47 kristaps Exp $
+d23 2
+a24 2
+. Nm man
+. Nd man language reference
+d29 1
+a29 1
+. Nm man
+d31 1
+a31 1
+. Ux
+d34 3
+a36 2
+. Pp
+. Bf -emphasis
+d38 1
+a38 1
+.  Nm
+d40 1
+a40 1
+. Ef
+d42 1
+a42 1
+. Xr mdoc 7
+d44 2
+a45 1
+. Pp
+d47 1
+a47 1
+. Nm
+d50 1
+a50 1
+. Sq \&.
+d53 1
+a53 1
+. Bd -literal -offset indent
+d56 1
+a56 1
+. Ed
+d60 1
+a60 1
+. Nm
+d63 1
+a63 1
+. Ux
+d65 2
+a66 1
+. Pp
+d69 2
+a70 1
+. Pp
+d72 1
+a72 1
+. Sq \ec
+d74 1
+a74 1
+. Nm
+d79 1
+a79 1
+. Ss Comments
+d81 1
+a81 1
+.  Sq \e\*" ,
+d84 1
+a84 1
+.  Sq \&.\e" ,
+d89 1
+a89 1
+. Ss Special Characters
+d92 1
+a92 1
+.  Sq \e
+d94 1
+a94 1
+.  Sq \&(
+d96 1
+a96 1
+.  Sq \&[
+d98 1
+a98 1
+.  Sq \&] ) ;
+d100 1
+a100 1
+.  Xr mandoc_char 7
+d102 2
+a103 2
+.  Sq \e(em
+.  Pq em-dash
+d105 2
+a106 2
+.  Sq \ee
+.  Pq back-slash .
+d109 1
+a109 1
+. Ss Text Decoration
+d111 1
+a111 1
+.  Sq \ef
+d116 1
+a116 1
+. Ss Whitespace
+d120 1
+a120 1
+.  Xr mandoc 1 .
+d125 1
+a125 1
+. Nm
+d127 1
+a127 1
+. Sq TH
+d131 2
+a132 1
+. Pp
+d134 1
+a134 1
+. Sq TH ,
+d137 1
+a137 1
+. Bd -literal -offset indent
+d162 1
+a162 1
+. Ed
+d168 1
+a168 1
+. Sq \&. ,
+d171 1
+a171 1
+. Sq .PP
+d173 1
+a173 1
+. Sq \&.\ \ \ PP
+d175 2
+a176 1
+. Pp
+d178 1
+a178 1
+. Nm
+d185 1
+a185 1
+. Ss Line Macros
+d190 1
+a190 1
+.  Bd -literal -offset indent
+d193 3
+a195 2
+.  Ed
+.  Pp
+d197 1
+a197 1
+.  Sq \&.I foo .
+d200 1
+a200 1
+.  Bd -literal -offset indent
+d203 3
+a205 2
+.  Ed
+.  Pp
+d208 27
+a234 25
+.  Pp
+.  Bl -column -compact -offset indent "MacroX" "ArgumentsX" "ScopeXXXXX"
+.   It Em Macro Ta Em Arguments Ta Em Scope
+.   It    B     Ta    n         Ta    next-line
+.   It    BI    Ta    n         Ta    current
+.   It    BR    Ta    n         Ta    current
+.   It    DT    Ta    0         Ta    current
+.   It    I     Ta    n         Ta    next-line
+.   It    IB    Ta    n         Ta    current
+.   It    IR    Ta    n         Ta    current
+.   It    R     Ta    n         Ta    next-line
+.   It    RB    Ta    n         Ta    current
+.   It    RI    Ta    n         Ta    current
+.   It    SB    Ta    n         Ta    next-line
+.   It    SM    Ta    n         Ta    next-line
+.   It    TH    Ta    >1, <6    Ta    current
+.   It    br    Ta    0         Ta    current
+.   It    fi    Ta    0         Ta    current
+.   It    i     Ta    n         Ta    current
+.   It    na    Ta    0         Ta    current
+.   It    nf    Ta    0         Ta    current
+.   It    r     Ta    0         Ta    current
+.   It    sp    Ta    1         Ta    current
+.  El
+.  Pp
+d236 8
+a243 8
+.  Sq RS ,
+.  Sq RE ,
+.  Sq br ,
+.  Sq fi ,
+.  Sq i ,
+.  Sq na ,
+.  Sq nf ,
+.  Sq r ,
+d245 1
+a245 1
+.  Sq sp
+d247 1
+a247 1
+.  Nm
+d251 1
+a251 1
+. Ss Block Macros
+d256 1
+a256 1
+.  Bd -literal -offset indent
+d260 3
+a262 2
+.  Ed
+.  Pp
+d265 1
+a265 1
+.  Sq SH ;
+d267 1
+a267 1
+.  Sq SS ;
+d269 1
+a269 1
+.  Sq RE ;
+d271 5
+a275 5
+.  Sq HP ,
+.  Sq IP ,
+.  Sq LP ,
+.  Sq P ,
+.  Sq PP ,
+d277 1
+a277 1
+.  Sq TP .
+d279 2
+a280 1
+.  Pp
+d283 17
+a299 15
+.  Pp
+.  Bl -column "MacroX" "ArgumentsX" "Head ScopeX" "sub-sectionX" -compact -offset indent
+.   It Em Macro Ta Em Arguments Ta Em Head Scope Ta Em Body Scope
+.   It   HP     Ta    <2        Ta    current    Ta    paragraph
+.   It   IP     Ta    <3        Ta    current    Ta    paragraph
+.   It   LP     Ta    0         Ta    current    Ta    paragraph
+.   It   P      Ta    0         Ta    current    Ta    paragraph
+.   It   PP     Ta    0         Ta    current    Ta    paragraph
+.   It   RE     Ta    0         Ta    current    Ta    none
+.   It   RS     Ta    1         Ta    current    Ta    part
+.   It   SH     Ta    >0        Ta    current    Ta    section
+.   It   SS     Ta    >0        Ta    current    Ta    sub-section
+.   It   TP     Ta    n         Ta    next-line  Ta    paragraph
+.  El
+.  Pp
+d302 6
+a307 6
+.  Sq DT ,
+.  Sq TH ,
+.  Sq br ,
+.  Sq na ,
+.  Sq sp ,
+.  Sq nf ,
+d309 1
+a309 1
+.  Sq fi ) .
+d315 1
+a315 1
+. Sx MACRO SYNTAX .
+d318 1
+a318 1
+. Ss Definitions
+d322 1
+a322 1
+.  Qq n ,
+d324 1
+a324 1
+.  Qq m ,
+d327 1
+a327 1
+.  Bd -literal -offset indent
+d329 3
+a331 2
+.  Ed
+.  Pp
+d333 2
+a334 2
+.  Qq n
+.  Ns -sized
+d338 3
+a340 3
+. Ss Macro Reference
+.  Bl -tag -width Ds
+.   It B
+d342 1
+a342 1
+.   It BI
+d344 1
+a344 1
+.    Sq .BI this word and that
+d346 1
+a346 1
+.    Sq this
+d348 1
+a348 1
+.    Sq and
+d350 1
+a350 1
+.    Sq word
+d352 1
+a352 1
+.    Sq that
+d354 1
+a354 1
+.   It BR
+d357 1
+a357 1
+.   It DT
+d359 1
+a359 1
+.   It HP
+d362 1
+a362 1
+.    Bd -literal -offset indent
+d364 3
+a366 2
+.    Ed
+.    Pp
+d368 1
+a368 1
+.    Va width
+d371 1
+a371 1
+.   It I
+d373 1
+a373 1
+.   It IB
+d376 1
+a376 1
+.   It IP
+d378 1
+a378 1
+.    Bd -literal -offset indent
+d380 3
+a382 2
+.    Ed
+.    Pp
+d384 1
+a384 1
+.    Sq TP
+d387 1
+a387 1
+.    Va width
+d390 1
+a390 1
+.   It IR
+d393 1
+a393 1
+.   It LP, P, PP
+d397 1
+a397 1
+.   It R
+d399 1
+a399 1
+.   It RB
+d402 1
+a402 1
+.   It RE
+d404 2
+a405 2
+.    Sq RS .
+.   It RI
+d408 1
+a408 1
+.   It RS
+d412 1
+a412 1
+.    Sq PP .
+d414 1
+a414 1
+.    Bd -literal -offset indent
+d416 3
+a418 2
+.    Ed
+.    Pp
+d420 1
+a420 1
+.    Va width
+d422 1
+a422 1
+.   It SB
+d425 1
+a425 1
+.   It SH
+d429 1
+a429 1
+.   It SM
+d432 1
+a432 1
+.   It SS
+d436 1
+a436 1
+.   It TH
+d438 1
+a438 1
+.    Bd -literal -offset indent
+d440 3
+a442 2
+.    Ed
+.    Pp
+d444 1
+a444 1
+.    Va title
+d446 1
+a446 1
+.    Va section
+d448 1
+a448 1
+.    Va date
+d450 1
+a450 1
+.    Qq %b [%d] %Y
+d452 1
+a452 1
+.    Xr strptime 3 .
+d454 1
+a454 1
+.    Va source
+d456 1
+a456 1
+.    Va volume
+d458 1
+a458 1
+.   It TP
+d462 2
+a463 1
+.    Pp
+d465 1
+a465 1
+.    Bd -literal -offset indent
+d467 3
+a469 2
+.    Ed
+.    Pp
+d471 1
+a471 1
+.    Va width
+d473 1
+a473 1
+.    Va width
+d476 1
+a476 1
+.   It br
+d478 1
+a478 1
+.   It fi
+d480 2
+a481 2
+.    Sq nf .
+.   It i
+d484 1
+a484 1
+.   It na
+d486 1
+a486 1
+.   It nf
+d489 2
+a490 2
+.    Sq fi .
+.   It r
+d492 1
+a492 1
+.   It sp
+d495 1
+a495 1
+.    Sq br
+d497 1
+a497 1
+.  El
+d503 3
+a505 3
+. Xr groff 1 .
+. Bl -hyphen
+.  It
+d509 1
+a509 1
+.  It
+d511 1
+a511 1
+.   Sq sp
+d513 1
+a513 1
+.  It
+d517 1
+a517 1
+. El
+d521 2
+a522 2
+. Xr mandoc 1 ,
+. Xr mandoc_char 7
+d527 1
+a527 1
+. Nm
+d529 1
+a529 1
+. An Kristaps Dzonsons Aq kristaps@@kth.se .
+d534 1
+a534 1
+. Xr mdoc 7 ,
+@
+
+
+1.30
+log
+@Fix to libmdoc passing over delimiters.
+`RS' and `RE' documented in man.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.29 2009/08/19 11:30:40 kristaps Exp $
+d206 1
+d225 3
+a227 1
+The lower-case 
+d288 2
+a293 1
+.  Sq fi ,
+d295 1
+a295 1
+.  Sq TH ) .
+d342 2
+d464 1
+a464 1
+No alignment to the right margin.
+@
+
+
+1.29
+log
+@`RS' blocks correctly formatting in output device.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.28 2009/08/18 14:27:16 kristaps Exp $
+d123 1
+a123 1
+. Sq \&TH
+d129 1
+a129 1
+. Sq \&TH ,
+d166 1
+a166 1
+. Sq \&.PP
+d168 1
+a168 1
+. Sq \&.\ \ \ \&PP
+d173 1
+a173 1
+macros are classified by scope: line scope or block scope.  Line-scoped
+d180 4
+a183 3
+Line-macros are scoped to the current line, with the body consisting of
+zero or more arguments.  If a macro is next-line scoped and the line
+arguments are empty, the next line is used instead.  Thus:
+d185 1
+a185 1
+\&.RI
+d190 1
+a190 1
+.  Sq \&.RI foo .
+d192 1
+a192 1
+Consecutive next-line invocations are disallowed.
+d198 3
+d203 19
+a221 19
+.   It  \&B     Ta    n         Ta    next-line
+.   It  \&BI    Ta    n         Ta    current
+.   It  \&BR    Ta    n         Ta    current
+.   It  \&I     Ta    n         Ta    next-line
+.   It  \&IB    Ta    n         Ta    current
+.   It  \&IR    Ta    n         Ta    current
+.   It  \&R     Ta    n         Ta    next-line
+.   It  \&RB    Ta    n         Ta    current
+.   It  \&RI    Ta    n         Ta    current
+.   It  \&SB    Ta    n         Ta    next-line
+.   It  \&SM    Ta    n         Ta    next-line
+.   It  \&TH    Ta    >1, <6    Ta    current
+.   It  \&br    Ta    0         Ta    current
+.   It  \&fi    Ta    0         Ta    current
+.   It  \&i     Ta    n         Ta    current
+.   It  \&na    Ta    0         Ta    current
+.   It  \&nf    Ta    0         Ta    current
+.   It  \&r     Ta    0         Ta    current
+.   It  \&sp    Ta    1         Ta    current
+d225 6
+a230 6
+.  Sq \&br ,
+.  Sq \&fi ,
+.  Sq \&i ,
+.  Sq \&na ,
+.  Sq \&nf ,
+.  Sq \&r ,
+d232 1
+a232 1
+.  Sq \&sp
+d239 4
+a242 4
+Block macros are comprised of a head and body.  The head is scoped to
+the current line and, in one circumstance, the next line; the body is
+scoped to subsequent lines and is closed out by a subsequent block macro
+invocation.
+d249 34
+a291 12
+.  Pp
+.  Bl -column "MacroX" "Arguments" "ScopeXXXX" -compact -offset indent
+.   It Em Macro Ta Em Arguments Ta Em Scope
+.   It \&HP     Ta    <2        Ta    current
+.   It \&IP     Ta    <3        Ta    current
+.   It \&LP     Ta    0         Ta    current
+.   It \&P      Ta    0         Ta    current
+.   It \&PP     Ta    0         Ta    current
+.   It \&SH     Ta    >0        Ta    current
+.   It \&SS     Ta    >0        Ta    current
+.   It \&TP     Ta    n         Ta    next-line
+.  El
+d300 1
+a300 1
+. Ss Terms
+d321 1
+a321 1
+.   It \&B
+d323 1
+a323 1
+.   It \&BI
+d325 1
+a325 1
+.    Sq \&.BI this word and that
+d335 1
+a335 1
+.   It \&BR
+d338 1
+a338 1
+.   It \&HP
+d349 1
+a349 1
+.   It \&I
+d351 1
+a351 1
+.   It \&IB
+d354 1
+a354 1
+.   It \&IP
+d361 1
+a361 1
+.    Sq \&TP
+d367 1
+a367 1
+.   It \&IR
+d370 1
+a370 1
+.   It \&LP, \&P, \&PP
+d374 1
+a374 1
+.   It \&R
+d376 1
+a376 1
+.   It \&RB
+d379 4
+a382 1
+.   It \&RI
+d385 14
+a398 1
+.   It \&SB
+d401 1
+a401 1
+.   It \&SH
+d405 1
+a405 1
+.   It \&SM
+d408 1
+a408 1
+.   It \&SS
+d412 1
+a412 1
+.   It \&TH
+d415 1
+a415 1
+\&.TH title section date source volume
+d433 1
+a433 1
+.   It \&TP
+d449 1
+a449 1
+.   It \&br
+d451 1
+a451 1
+.   It \&fi
+d453 2
+a454 2
+.    Sq \&nf .
+.   It \&i
+d457 1
+a457 1
+.   It \&na
+d459 1
+a459 1
+.   It \&nf
+d462 2
+a463 2
+.    Sq \&fi .
+.   It \&r
+d465 1
+a465 1
+.   It \&sp
+d484 1
+a484 1
+.   Sq \&sp
+@
+
+
+1.28
+log
+@libmdoc accepts whitespace following control character.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.27 2009/08/18 08:48:30 kristaps Exp $
+d136 1
+a136 1
+foo \e- a description goes here
+@
+
+
+1.27
+log
+@Small updates to man.7 (next-line break-exclusions, numerical width example).
+Fully tested and correct scope-rewinding of block macros.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.26 2009/08/17 11:03:07 kristaps Exp $
+d20 2
+a21 1
+.\" SECTION
+d23 4
+a26 3
+.Nm man
+.Nd man language reference
+.\" SECTION
+d29 1
+a29 1
+.Nm man
+d31 1
+a31 1
+.Ux
+d34 2
+a35 2
+.Pp
+.Bf -emphasis
+d37 1
+a37 1
+.Nm
+d39 1
+a39 1
+.Ef
+d41 1
+a41 1
+.Xr mdoc 7
+d43 1
+a43 2
+.\" PARAGRAPH
+.Pp
+d45 1
+a45 1
+.Nm
+d48 1
+a48 1
+.Sq \&.
+d51 1
+a51 1
+.Bd -literal -offset indent
+d54 3
+a56 2
+.Ed
+.\" SECTION
+d58 1
+a58 1
+.Nm
+d61 1
+a61 1
+.Ux
+d63 1
+a63 1
+.Pp
+d66 1
+a66 1
+.Pp
+d68 1
+a68 1
+.Sq \ec
+d70 1
+a70 1
+.Nm
+d73 3
+a75 2
+.\" SUB-SECTION
+.Ss Comments
+d77 1
+a77 1
+.Sq \e\*" ,
+d80 1
+a80 1
+.Sq \&.\e" ,
+d83 3
+a85 2
+.\" SUB-SECTION
+.Ss Special Characters
+d88 1
+a88 1
+.Sq \e
+d90 1
+a90 1
+.Sq \&(
+d92 1
+a92 1
+.Sq \&[
+d94 1
+a94 1
+.Sq \&] ) ;
+d96 1
+a96 1
+.Xr mandoc_char 7
+d98 2
+a99 2
+.Sq \e(em
+.Pq em-dash
+d101 5
+a105 4
+.Sq \ee
+.Pq back-slash .
+.\" SUB-SECTION----------------------
+.Ss Text Decoration
+d107 1
+a107 1
+.Sq \ef
+d110 3
+a112 2
+.\" SUB-SECTION----------------------
+.Ss Whitespace
+d116 3
+a118 2
+.Xr mandoc 1 .
+.\" SECTION
+d121 1
+a121 1
+.Nm
+d123 1
+a123 1
+.Sq \&TH
+d127 1
+a127 1
+.Pp
+d129 1
+a129 1
+.Sq \&TH ,
+d132 1
+a132 1
+.Bd -literal -offset indent
+d157 3
+a159 2
+.Ed
+.\" SECTION
+d163 1
+a163 1
+.Sq \&. ,
+d166 1
+a166 1
+.Sq \&.PP
+d168 1
+a168 1
+.Sq \&.\ \ \ \&PP
+d170 1
+a170 1
+.Pp
+d172 1
+a172 1
+.Nm
+d177 3
+a179 2
+.\" SUBSECTION
+.Ss Line Macros
+d183 1
+a183 1
+.Bd -literal -offset indent
+d186 2
+a187 3
+.Ed
+.\" PARAGRAPH
+.Pp
+d189 1
+a189 1
+.Sq \&.RI foo .
+d192 1
+a192 1
+.Bd -literal -offset indent
+d195 25
+a219 27
+.Ed
+.\" PARAGRAPH
+.Pp
+.Bl -column -compact -offset indent "MacroX" "ArgumentsX" "ScopeXXXXX"
+.It Em Macro Ta Em Arguments Ta Em Scope
+.It  \&B     Ta    n         Ta    next-line
+.It  \&BI    Ta    n         Ta    current
+.It  \&BR    Ta    n         Ta    current
+.It  \&I     Ta    n         Ta    next-line
+.It  \&IB    Ta    n         Ta    current
+.It  \&IR    Ta    n         Ta    current
+.It  \&R     Ta    n         Ta    next-line
+.It  \&RB    Ta    n         Ta    current
+.It  \&RI    Ta    n         Ta    current
+.It  \&SB    Ta    n         Ta    next-line
+.It  \&SM    Ta    n         Ta    next-line
+.It  \&TH    Ta    >1, <6    Ta    current
+.It  \&br    Ta    0         Ta    current
+.It  \&fi    Ta    0         Ta    current
+.It  \&i     Ta    n         Ta    current
+.It  \&na    Ta    0         Ta    current
+.It  \&nf    Ta    0         Ta    current
+.It  \&r     Ta    0         Ta    current
+.It  \&sp    Ta    1         Ta    current
+.El
+.\" PARAGRAPH
+.Pp
+d221 6
+a226 6
+.Sq \&br ,
+.Sq \&fi ,
+.Sq \&i ,
+.Sq \&na ,
+.Sq \&nf ,
+.Sq \&r ,
+d228 1
+a228 1
+.Sq \&sp
+d230 1
+a230 1
+.Nm
+d232 3
+a234 2
+.\" SUBSECTION
+.Ss Block Macros
+d239 1
+a239 1
+.Bd -literal -offset indent
+d243 2
+a244 3
+.Ed
+.\" PARAGRAPH
+.Pp
+d247 5
+a251 5
+.Sq br ,
+.Sq na ,
+.Sq sp ,
+.Sq nf ,
+.Sq fi ,
+d253 15
+a267 15
+.Sq TH ) .
+.\" PARAGRAPH
+.Pp
+.Bl -column "MacroX" "Arguments" "ScopeXXXX" -compact -offset indent
+.It Em Macro Ta Em Arguments Ta Em Scope
+.It \&HP     Ta    <2        Ta    current
+.It \&IP     Ta    <3        Ta    current
+.It \&LP     Ta    0         Ta    current
+.It \&P      Ta    0         Ta    current
+.It \&PP     Ta    0         Ta    current
+.It \&SH     Ta    >0        Ta    current
+.It \&SS     Ta    >0        Ta    current
+.It \&TP     Ta    n         Ta    next-line
+.El
+.\" SECTION
+d271 4
+a274 3
+.Sx MACRO SYNTAX .
+.\" SUBSECTION
+.Ss Terms
+d278 1
+a278 1
+.Qq n ,
+d280 1
+a280 1
+.Qq m ,
+d283 1
+a283 1
+.Bd -literal -offset indent
+d285 2
+a286 2
+.Ed
+.Pp
+d288 2
+a289 2
+.Qq n
+.Ns -sized
+d291 5
+a295 4
+.\" SUBSECTION
+.Ss Macro Reference
+.Bl -tag -width Ds
+.It \&B
+d297 1
+a297 1
+.It \&BI
+d299 1
+a299 1
+.Sq \&.BI this word and that
+d301 1
+a301 1
+.Sq this
+d303 1
+a303 1
+.Sq and
+d305 1
+a305 1
+.Sq word
+d307 1
+a307 1
+.Sq that
+d309 1
+a309 1
+.It \&BR
+d312 1
+a312 1
+.It \&HP
+d315 1
+a315 1
+.Bd -literal -offset indent
+d317 2
+a318 2
+.Ed
+.Pp
+d320 1
+a320 1
+.Va width
+d323 1
+a323 1
+.It \&I
+d325 1
+a325 1
+.It \&IB
+d328 1
+a328 1
+.It \&IP
+d330 1
+a330 1
+.Bd -literal -offset indent
+d332 2
+a333 2
+.Ed
+.Pp
+d335 1
+a335 1
+.Sq \&TP
+d338 1
+a338 1
+.Va width
+d341 1
+a341 1
+.It \&IR
+d344 1
+a344 1
+.It \&LP, \&P, \&PP
+d348 1
+a348 1
+.It \&R
+d350 1
+a350 1
+.It \&RB
+d353 1
+a353 1
+.It \&RI
+d356 1
+a356 1
+.It \&SB
+d359 1
+a359 1
+.It \&SH
+d363 1
+a363 1
+.It \&SM
+d366 1
+a366 1
+.It \&SS
+d370 1
+a370 1
+.It \&TH
+d372 1
+a372 1
+.Bd -literal -offset indent
+d374 2
+a375 2
+.Ed
+.Pp
+d377 1
+a377 1
+.Va title
+d379 1
+a379 1
+.Va section
+d381 1
+a381 1
+.Va date
+d383 1
+a383 1
+.Qq %b [%d] %Y
+d385 1
+a385 1
+.Xr strptime 3 .
+d387 1
+a387 1
+.Va source
+d389 1
+a389 1
+.Va volume
+d391 1
+a391 1
+.It \&TP
+d395 1
+a395 1
+.Pp
+d397 1
+a397 1
+.Bd -literal -offset indent
+d399 2
+a400 2
+.Ed
+.Pp
+d402 1
+a402 1
+.Va width
+d404 1
+a404 1
+.Va width
+d407 1
+a407 1
+.It \&br
+d409 1
+a409 1
+.It \&fi
+d411 2
+a412 2
+.Sq \&nf .
+.It \&i
+d415 1
+a415 1
+.It \&na
+d417 1
+a417 1
+.It \&nf
+d420 2
+a421 2
+.Sq \&fi .
+.It \&r
+d423 1
+a423 1
+.It \&sp
+d426 1
+a426 1
+.Sq br
+d428 3
+a430 2
+.El
+.\" SECTION
+d434 3
+a436 3
+.Xr groff 1 .
+.Bl -hyphen
+.It
+d440 1
+a440 1
+.It
+d442 1
+a442 1
+.Sq \&sp
+d444 1
+a444 1
+.It
+d448 3
+a450 2
+.El
+.\" SECTION
+d452 4
+a455 3
+.Xr mandoc 1 ,
+.Xr mandoc_char 7
+.\" SECTION
+d458 1
+a458 1
+.Nm
+d460 3
+a462 2
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+.\" SECTION
+d465 1
+a465 1
+.Xr mdoc 7 ,
+d467 1
+@
+
+
+1.26
+log
+@`IP' and `TP' correctly handle width arguments.
+Documented numeric widths.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.25 2009/08/13 12:54:52 kristaps Exp $
+d241 1
+d275 9
+a283 1
+default, if unspecified.
+d306 9
+a314 1
+subsequent output lines are indented.
+d329 4
+a332 1
+having next-line scope).
+d338 2
+a339 1
+subsequent paragraph, sub-section, section, or end of file.
+d353 2
+a354 1
+section or the end of file.
+d360 2
+a361 1
+subsequent sub-section, section, or end of file.
+d395 4
+a398 2
+must be a properly-formed numeric width.  If unspecified or improperly
+formed, the default indentation width is used.
+@
+
+
+1.25
+log
+@Finished correct `IP' handling.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.24 2009/08/13 12:31:50 kristaps Exp $
+d265 12
+d311 2
+a312 5
+macro except that 
+.Va width ,
+which is only considered as such if properly-formed (e.g., 24n, 4,
+etc.), is used as the indentation offset instead of the default
+indentation value.
+d364 10
+@
+
+
+1.24
+log
+@Added proper `TP' support.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.23 2009/08/13 12:15:58 kristaps Exp $
+a285 1
+.\" TODO.
+d292 12
+a303 1
+.\" TODO.
+d352 1
+a352 1
+Begin a paragraph where the head, if exceeding the indentation point, is
+d354 1
+a354 1
+buffer to the indentation point.  Subsequent output lines are indented.
+a356 1
+.\" TODO.
+@
+
+
+1.23
+log
+@Added full `HP' libman macro support.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.22 2009/08/13 11:45:29 kristaps Exp $
+d342 3
+a344 1
+.\" TODO.
+@
+
+
+1.22
+log
+@Significant overhaul in libman.  Macros are now block- and line-scoped (with
+next-line scope extensions possible).  man.7 reflects block and line scoping,
+and also includes a REFERENCE section that will be used as a template for the
+big mdoc reference.  Many fixes in next-line behaviour for both inline and
+block macros.  Added some macros for compatibility (from me.7).  Corrected
+quoted-literal handling for libman.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.21 2009/07/27 12:35:53 kristaps Exp $
+d265 1
+a265 1
+.Bl -tag -width Ds -offset indent
+d284 2
+d368 17
+a384 3
+See
+.Xr mdoc 7
+for groff compatibility notes.
+d393 1
+a393 1
+utility was written by
+@
+
+
+1.21
+log
+@Clarified special chars/predefined chars in mandoc_char.7.
+Cleaned up escape section in man.7, mdoc.7.
+Cleaned up function names in term.c.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.20 2009/07/20 13:45:11 kristaps Exp $
+d74 1
+a74 1
+.Sq \e" ,
+d78 2
+a79 1
+is also ignored.
+d112 1
+a112 1
+.Sh STRUCTURE
+d116 1
+a116 1
+.Sq \&.TH
+d121 30
+a150 3
+Beyond the
+.Sq \&.TH ,
+at least one macro or text node must appear in the document.
+d152 1
+a152 1
+.Sh SYNTAX
+a162 7
+All
+.Nm
+macros follow the same structural rules:
+.Bd -literal -offset indent
+\&.YO \(lBbody...\(rB
+.Ed
+.Pp
+a163 3
+.Dq body
+consists of zero or more arguments to the macro.
+.Pp
+d165 9
+a173 16
+has a primitive notion of multi-line scope for the following macros:
+.Sq \&.TM ,
+.Sq \&.SM ,
+.Sq \&.SB ,
+.Sq \&.BI ,
+.Sq \&.IB ,
+.Sq \&.BR ,
+.Sq \&.RB ,
+.Sq \&.R ,
+.Sq \&.B ,
+.Sq \&.I ,
+.Sq \&.IR
+and
+.Sq \&.RI .
+When these macros are invoked without arguments, the subsequent line is
+considered a continuation of the macro.  Thus:
+d178 1
+d182 2
+a183 2
+If two consecutive lines exhibit the latter behaviour,
+an error is raised.  Thus, the following is not acceptable:
+d185 2
+a186 3
+\&.RI
+\&.I
+Hello, world.
+d188 1
+d190 21
+a210 32
+The
+.Sq \&.TP
+macro is similar, but does not need an empty argument line to trigger
+the behaviour.
+.\" SECTION
+.Sh MACROS
+This section contains a complete list of all
+.Nm
+macros and corresponding number of arguments.
+.Pp
+.Bl -column "MacroX" "Arguments" -compact -offset indent
+.It Em Macro Ta Em Arguments
+.It \&.TH    Ta    >1, <6
+.It \&.SH    Ta    >0
+.It \&.SS    Ta    >0
+.It \&.TP    Ta    n
+.It \&.LP    Ta    0
+.It \&.PP    Ta    0
+.It \&.P     Ta    0
+.It \&.IP    Ta    <3
+.It \&.HP    Ta    <2
+.It \&.SM    Ta    n
+.It \&.SB    Ta    n
+.It \&.BI    Ta    n
+.It \&.IB    Ta    n
+.It \&.BR    Ta    n
+.It \&.RB    Ta    n
+.It \&.R     Ta    n
+.It \&.B     Ta    n
+.It \&.I     Ta    n
+.It \&.IR    Ta    n
+.It \&.RI    Ta    n
+d212 1
+d214 10
+a223 1
+Although not historically part of the
+d225 23
+a247 1
+system, the following macros are also supported:
+d249 10
+a258 4
+.Bl -column "MacroX" "Arguments" -compact -offset indent
+.It Em Macro Ta Em Arguments
+.It \&.br    Ta    0
+.It \&.i     Ta    n
+d260 63
+d324 40
+a363 3
+These follow the same calling conventions as the above
+.Nm
+macros.
+@
+
+
+1.20
+log
+@Removed trailing whitespace in manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.19 2009/07/14 15:56:44 kristaps Exp $
+d73 6
+a78 8
+Anything following a
+.Sq \e"
+delimiter is considered a comment (unless the
+.Sq \e
+itself has been escaped) and is ignored to the end of line.
+Furthermore, a macro line with only a control character
+.Sq \. ,
+optionally followed by whitespace, is ignored.
+d81 2
+a82 1
+Special character sequences begin with the escape character
+d90 11
+a100 7
+or a single one-character sequence.
+.Pp
+Characters may alternatively be escaped by a slash-asterisk,
+.Sq \e* ,
+with the same combinations as described above.
+.Pp
+Terms may also be text-decorated using the
+d102 3
+a104 3
+escape followed by a text-decoration letter: B (bold), I, (italic), or P
+and R (Roman, or reset).
+.\" SUB-SECTION
+@
+
+
+1.19
+log
+@Small changes, reducing verbosity.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.18 2009/07/04 09:00:41 kristaps Exp $
+d28 1
+a28 1
+language was historically used to format 
+d33 2
+a34 2
+.Bf Em
+Do not use 
+d36 1
+a36 1
+to write your manuals.  
+d46 1
+a46 1
+character 
+d60 1
+a60 1
+line termination.  
+d74 2
+a75 2
+.Sq \e" 
+delimiter is considered a comment (unless the 
+d85 1
+a85 1
+followed by either an open-parenthesis 
+d117 1
+a117 1
+Beyond the 
+d132 1
+a132 1
+All 
+d136 1
+a136 1
+\&.YO \(lBbody...\(rB 
+d144 1
+a144 1
+has a primitive notion of multi-line scope for the following macros: 
+d155 1
+a155 1
+.Sq \&.IR 
+d160 2
+a161 2
+.Bd -literal -offset indent 
+\&.RI 
+d165 1
+a165 1
+is equivalent to 
+d169 3
+a171 3
+.Bd -literal -offset indent 
+\&.RI 
+\&.I 
+d181 1
+a181 1
+This section contains a complete list of all 
+d235 1
+a235 1
+utility was written by 
+@
+
+
+1.18
+log
+@man.7/mdoc.7 properly reflect escape-character handling.
+man.7 points to mdoc.7 for COMPATIBILITY.
+Whitespace stripping noted in mdoc.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.17 2009/06/25 11:35:28 kristaps Exp $
+d30 2
+a31 2
+manuals.  This reference document describes the syntax and structure of
+this language.
+d33 2
+a34 2
+.Em \&Do not
+use 
+d36 3
+a38 1
+to write your manuals.  Use the
+d58 1
+a58 5
+space character
+.Sq \  ,
+and tabs
+.Sq \et . 
+All manuals must have
+a59 1
+.Sq \en
+@
+
+
+1.17
+log
+@Added note about whitespace being stripped from mdoc/man input and re-added in mandoc(1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.16 2009/06/25 10:48:21 kristaps Exp $
+d98 6
+a103 1
+with the same combinations as described above.  This form is deprecated.  
+d226 5
+@
+
+
+1.16
+log
+@Fixed STRUCTURE/SYNTAX section data.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.15 2009/06/22 13:09:17 kristaps Exp $
+d99 6
+@
+
+
+1.15
+log
+@libman documents require `TH' and at least one node.
+libman requirements documented in man.7 STRUCTURE section.
+Added STRUCTURE section to mdoc.7, too.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.14 2009/06/18 10:32:00 kristaps Exp $
+d100 13
+a171 13
+.Sh STRUCTURE
+Each
+.Nm
+document must contain contains at least the
+.Sq \&.TH
+macro describing the document's section and title.  It may occur
+anywhere in the document, although conventionally, it appears as the
+first macro.
+.Pp
+Beyond the 
+.Sq \&.TH ,
+at least one macro or text node must appear in the document.
+.\" SECTION
+@
+
+
+1.14
+log
+@Added -fno-ign-chars support to libman.
+man_validate.c checks for non-tab/isprint words.
+libman hashtable fixed (was ignoring .br).
+Added ncount field to man_node, deprecating count() functions.
+Documented use of tabs in man.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.13 2009/06/16 19:13:28 kristaps Exp $
+d100 1
+a100 1
+.Sh STRUCTURE
+d158 14
+a171 1
+.\" PARAGRAPH
+@
+
+
+1.13
+log
+@Modernised comment handling: text following \" is thrown away before
+either parser is invoked.  Single-dot lines correctly handled.  This
+confirms with both new- and old-groff.  "Comment" subsection added to
+mdoc.7 and man.7.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.12 2009/06/11 07:26:35 kristaps Exp $
+d55 1
+a55 1
+documents may contain only graphable 7-bit ASCII characters and the
+d57 3
+a59 1
+.Sq \  .
+@
+
+
+1.12
+log
+@Fixed email address in manual AUTHOR reference.
+Set max right margin to 80 columns (schwarze@@openbsd.org).
+Fixed centre-field heading position (schwarze@@openbsd.org).
+Also fixed -Tman centre-field.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.11 2009/06/10 20:18:43 kristaps Exp $
+d73 10
+@
+
+
+1.11
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.10 2009/04/12 19:45:26 kristaps Exp $
+d198 1
+a198 1
+.An Kristaps Dzonsons Aq kristaps@@openbsd.org .
+@
+
+
+1.10
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: man.7,v 1.9 2009/04/12 19:19:57 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.9
+log
+@Manual .Dt fields CAPITALISED.
+Indent set to 5 chars (nroff compat).
+Half-indent set to 3 chars (nroff compat).
+Default behaviour is loose-y (ignore macro/char/escape).
+Added -fstrict.
+Added unknown-character ignoring.
+@
+text
+@d1 1
+a1 1
+.\" $Id: man.7,v 1.8 2009/04/05 16:34:22 kristaps Exp $
+d6 10
+a15 3
+.\" purpose with or without fee is hereby granted, provided that the
+.\" above copyright notice and this permission notice appear in all
+.\" copies.
+a16 9
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+.\" WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+.\" WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+.\" AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+.\" DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+.\" PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+.\" TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+.\" PERFORMANCE OF THIS SOFTWARE.
+.\" 
+@
+
+
+1.8
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d1 1
+a1 1
+.\" $Id: man.7,v 1.7 2009/03/27 15:22:56 kristaps Exp $
+d20 1
+a20 1
+.Dt man 7
+@
+
+
+1.7
+log
+@Added br documentation.
+@
+text
+@d1 1
+a1 1
+.\" $Id: man.7,v 1.6 2009/03/27 14:56:15 kristaps Exp $
+d32 2
+a33 4
+manuals.  In this reference document, we describe the syntax and
+structure of the 
+.Nm
+language.
+d35 1
+a35 1
+.Em \&Do not ever
+d135 1
+a135 1
+.Sq \&.RI foo .  
+d185 1
+d187 4
+@
+
+
+1.6
+log
+@Added some new manuals (mdoc.3 mandoc_char.7).
+Support for .br in libman.
+@
+text
+@d1 1
+a1 1
+.\" $Id: man.7,v 1.5 2009/03/26 23:01:26 kristaps Exp $
+d179 9
+@
+
+
+1.5
+log
+@Clean-ups to documentation.
+@
+text
+@d1 1
+a1 1
+.\" $Id: man.7,v 1.4 2009/03/26 16:23:22 kristaps Exp $
+a90 4
+.Pp
+The 
+.Xr mdoc 7
+contains a table of all available escapes.
+d181 2
+a182 1
+.Xr mandoc 1
+@
+
+
+1.4
+log
+@All macro-invocations, for consistency, begin with `.' in documentation.
+Fixed \\ -> \e in manual documentation.
+All preliminary -man macros in place.
+@
+text
+@d1 1
+a1 1
+.\" $Id: man.7,v 1.3 2009/03/26 14:38:11 kristaps Exp $
+a55 4
+.\" PARAGRAPH
+.Pp
+Macros are character sequences whose structural rules are described
+later in this document.
+d63 1
+d67 1
+a67 1
+Blank lines are acceptable; where found, the output will also assert a
+a134 12
+.Bd -literal -offset indent
+\&.RI foo
+.Ed
+.Pp
+and
+.Bd -literal -offset indent 
+\&.RI 
+foo
+.Ed
+.Pp
+are equivalent.  If two consecutive lines exhibit the latter behaviour,
+an error is raised.  Thus, the following is acceptable:
+a136 1
+\&.I Hello, world.
+d140 4
+a143 1
+The following, however, is not:
+d152 2
+a153 2
+macro has similar behaviour, but does not need an empty argument line in
+order to trigger scope.
+d158 1
+a158 1
+macros, arranged alphabetically, with the number of arguments.
+@
+
+
+1.3
+log
+@Initial front-end formatting for -man pages.
+@
+text
+@d1 1
+a1 1
+.\" $Id: man.7,v 1.2 2009/03/26 09:55:39 kristaps Exp $
+d37 1
+a37 1
+.Em \&Do not
+d52 1
+a52 1
+.Bd -literal -offset XXX
+d72 7
+d101 2
+a102 2
+control character 
+.Sq \&.
+d105 1
+a105 1
+.Sq \&PP
+d110 5
+a114 4
+All follow the same
+structural rules:
+.Bd -literal -offset XXXX
+\&.Yo \(lBbody...\(rB 
+d120 47
+d173 1
+a173 1
+.Bl -column "MacroX" "Arguments" -compact -offset XXXX
+d175 3
+a177 3
+.It \&.TH    Ta    >0
+.It \&.SH    Ta    n
+.It \&.SS    Ta    n
+d179 5
+a183 5
+.It \&.LP    Ta    n
+.It \&.PP    Ta    n
+.It \&.P     Ta    n
+.It \&.IP    Ta    n
+.It \&.HP    Ta    n
+@
+
+
+1.2
+log
+@Fixed reading whitespace for man.7 `.    TH'.
+Documented this.
+@
+text
+@d1 1
+a1 1
+.\" $Id: man.7,v 1.1 2009/03/23 16:02:56 kristaps Exp $
+d139 1
+@
+
+
+1.1
+log
+@Initial documentation in place for man.7.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdoc.7,v 1.14 2009/03/23 14:22:11 kristaps Exp $
+d49 1
+a49 1
+.Sq \.
+d75 1
+a75 1
+.Sq \\
+d85 1
+a85 1
+.Sq \\* ,
+d88 3
+a90 414
+The following is a table of all available escapes.
+.Pp
+Grammatic:
+.Bl -tag -width 12n -offset "XXXX" -compact
+.It \\(em
+.Pq em-dash
+.It \\(en
+.Pq en-dash
+.It \e-
+.Pq hyphen
+.It \\\\
+.Pq back-slash
+.It \e'
+.Pq apostrophe
+.It \e`
+.Pq back-tick
+.It \\
+.Pq space
+.It \\.
+.Pq period
+.It \\(r!
+.Pq upside-down exclamation
+.It \\(r?
+.Pq upside-down question
+.El
+.\" PARAGRAPH
+.Pp
+Enclosures:
+.Bl -tag -width 12n -offset "XXXX" -compact
+.It \\(lh
+.Pq left hand
+.It \\(rh
+.Pq right hand
+.It \\(Fo
+.Pq left guillemet
+.It \\(Fc
+.Pq right guillemet
+.It \\(fo
+.Pq left guilsing
+.It \\(fc
+.Pq right guilsing
+.It \\(rC
+.Pq right brace
+.It \\(lC
+.Pq left brace
+.It \\(ra
+.Pq right angle
+.It \\(la
+.Pq left angle
+.It \\(rB
+.Pq right bracket
+.It \\(lB
+.Pq left bracket
+.It \\q
+.Pq double-quote
+.It \\(lq
+.Pq left double-quote
+.It \\(Lq
+.Pq left double-quote, deprecated
+.It \\(rq
+.Pq right double-quote
+.It \\(Rq
+.Pq right double-quote, deprecated
+.It \\(oq
+.Pq left single-quote
+.It \\(aq
+.Pq right single-quote
+.It \\(Bq
+.Pq right low double-quote
+.It \\(bq
+.Pq right low single-quote
+.El
+.\" PARAGRAPH
+.Pp
+Indicatives:
+.Bl -tag -width 12n -offset "XXXX" -compact
+.It \\(<-
+.Pq left arrow
+.It \\(->
+.Pq right arrow
+.It \\(ua
+.Pq up arrow
+.It \\(da
+.Pq down arrow
+.It \\(<>
+.Pq left-right arrow
+.It \\(lA
+.Pq left double-arrow
+.It \\(rA
+.Pq right double-arrow
+.It \\(uA
+.Pq up double-arrow
+.It \\(dA
+.Pq down double-arrow
+.It \\(hA
+.Pq left-right double-arrow
+.El
+.\" PARAGRAPH
+.Pp
+Mathematical:
+.Bl -tag -width 12n -offset "XXXX" -compact
+.It \\(es
+.Pq empty set
+.It \\(ca
+.Pq intersection
+.It \\(cu
+.Pq union
+.It \\(gr
+.Pq gradient
+.It \\(pd
+.Pq partial differential
+.It \\(ap
+.Pq similarity
+.It \\(=)
+.Pq proper superset
+.It \\((=
+.Pq proper subset
+.It \\(eq
+.Pq equals
+.It \\(di
+.Pq division
+.It \\(mu
+.Pq multiplication
+.It \\(pl
+.Pq addition
+.It \\(nm
+.Pq not element
+.It \\(mo
+.Pq element
+.It \\(Im
+.Pq imaginary
+.It \\(Re
+.Pq real
+.It \\(Ah
+.Pq aleph
+.It \\(te
+.Pq existential quantifier
+.It \\(fa
+.Pq universal quantifier
+.It \\(AN
+.Pq logical AND
+.It \\(OR
+.Pq logical OR
+.It \\(no
+.Pq logical NOT
+.It \\(st
+.Pq such that
+.It \\(tf
+.Pq therefore
+.It \\(~~
+.Pq approximate
+.It \\(~=
+.Pq approximately equals
+.It \\(=~
+.Pq congruent
+.It \\(Gt
+.Pq greater-than, deprecated
+.It \\(Lt
+.Pq less-than, deprecated
+.It \\(<=
+.Pq less-than-equal
+.It \\(Le
+.Pq less-than-equal, deprecated
+.It \\(>=
+.Pq greater-than-equal
+.It \\(Ge
+.Pq greater-than-equal
+.It \\(==
+.Pq equal
+.It \\(!=
+.Pq not equal
+.It \\(Ne
+.Pq not equal, deprecated
+.It \\(if
+.Pq infinity
+.It \\(If
+.Pq infinity, deprecated
+.It \\(na
+.Pq NaN , an extension
+.It \\(Na
+.Pq NaN, deprecated
+.It \\(+-
+.Pq plus-minus
+.It \\(Pm
+.Pq plus-minus, deprecated
+.It \\(**
+.Pq asterisk
+.El
+.\" PARAGRAPH
+.Pp
+Ligatures:
+.Bl -tag -width 12n -offset "XXXX" -compact
+.It \\(ss
+.Pq German eszett
+.It \\(AE
+.Pq upper-case AE
+.It \\(ae
+.Pq lower-case AE
+.It \\(OE
+.Pq upper-case OE
+.It \\(oe
+.Pq lower-case OE
+.It \\(ff
+.Pq ff ligature
+.It \\(fi
+.Pq fi ligature
+.It \\(fl
+.Pq fl ligature
+.It \\(Fi
+.Pq ffi ligature
+.It \\(Fl
+.Pq ffl ligature
+.El
+.\" PARAGRAPH
+.Pp
+Diacritics and letters:
+.Bl -tag -width 12n -offset "XXXX" -compact
+.It \\(ga
+.Pq grave accent
+.It \\(aa
+.Pq accute accent
+.It \\(a"
+.Pq umlaut accent
+.It \\(ad
+.Pq dieresis accent
+.It \\(a~
+.Pq tilde accent
+.It \\(a^
+.Pq circumflex accent
+.It \\(ac
+.Pq cedilla accent
+.It \\(ad
+.Pq dieresis accent
+.It \\(ah
+.Pq caron accent
+.It \\(ao
+.Pq ring accent
+.It \\(ho
+.Pq hook accent
+.It \\(ab
+.Pq breve accent
+.It \\(a-
+.Pq macron accent
+.It \\(-D
+.Pq upper-case eth
+.It \\(Sd
+.Pq lower-case eth
+.It \\(TP
+.Pq upper-case thorn
+.It \\(Tp
+.Pq lower-case thorn
+.It \\('A
+.Pq upper-case acute A
+.It \\('E
+.Pq upper-case acute E
+.It \\('I
+.Pq upper-case acute I
+.It \\('O
+.Pq upper-case acute O
+.It \\('U
+.Pq upper-case acute U
+.It \\('a
+.Pq lower-case acute a
+.It \\('e
+.Pq lower-case acute e
+.It \\('i
+.Pq lower-case acute i
+.It \\('o
+.Pq lower-case acute o
+.It \\('u
+.Pq lower-case acute u
+.It \\(`A
+.Pq upper-case grave A
+.It \\(`E
+.Pq upper-case grave E
+.It \\(`I
+.Pq upper-case grave I
+.It \\(`O
+.Pq upper-case grave O
+.It \\(`U
+.Pq upper-case grave U
+.It \\(`a
+.Pq lower-case grave a
+.It \\(`e
+.Pq lower-case grave e
+.It \\(`i
+.Pq lower-case grave i
+.It \\(`o
+.Pq lower-case grave o
+.It \\(`u
+.Pq lower-case grave u
+.It \\(~A
+.Pq upper-case tilde A
+.It \\(~N
+.Pq upper-case tilde N
+.It \\(~O
+.Pq upper-case tilde O
+.It \\(~a
+.Pq lower-case tilde a
+.It \\(~n
+.Pq lower-case tilde n
+.It \\(~o
+.Pq lower-case tilde o
+.It \\(:A
+.Pq upper-case dieresis A
+.It \\(:E
+.Pq upper-case dieresis E
+.It \\(:I
+.Pq upper-case dieresis I
+.It \\(:O
+.Pq upper-case dieresis O
+.It \\(:U
+.Pq upper-case dieresis U
+.It \\(:a
+.Pq lower-case dieresis a
+.It \\(:e
+.Pq lower-case dieresis e
+.It \\(:i
+.Pq lower-case dieresis i
+.It \\(:o
+.Pq lower-case dieresis o
+.It \\(:u
+.Pq lower-case dieresis u
+.It \\(:y
+.Pq lower-case dieresis y
+.It \\(^A
+.Pq upper-case circumflex A
+.It \\(^E
+.Pq upper-case circumflex E
+.It \\(^I
+.Pq upper-case circumflex I
+.It \\(^O
+.Pq upper-case circumflex O
+.It \\(^U
+.Pq upper-case circumflex U
+.It \\(^a
+.Pq lower-case circumflex a
+.It \\(^e
+.Pq lower-case circumflex e
+.It \\(^i
+.Pq lower-case circumflex i
+.It \\(^o
+.Pq lower-case circumflex o
+.It \\(^u
+.Pq lower-case circumflex u
+.It \\(,C
+.Pq upper-case cedilla C
+.It \\(,c
+.Pq lower-case cedilla c
+.It \\(/L
+.Pq upper-case stroke L
+.It \\(/l
+.Pq lower-case stroke l
+.It \\(/O
+.Pq upper-case stroke O
+.It \\(/o
+.Pq lower-case stroke o
+.It \\(oA
+.Pq upper-case ring A
+.It \\(oa
+.Pq lower-case ring a
+.El
+.\" PARAGRAPH
+.Pp
+Monetary:
+.Bl -tag -width 12n -offset "XXXX" -compact
+.It \\(Cs
+.Pq Scandinavian
+.It \\(Do
+.Pq dollar
+.It \\(Po
+.Pq pound
+.It \\(Ye
+.Pq yen
+.It \\(Fn
+.Pq florin
+.It \\(ct
+.Pq cent
+.El
+.\" PARAGRAPH
+.Pp
+Special symbols:
+.Bl -tag -width 12n -offset "XXXX" -compact
+.It \\(de
+.Pq degree
+.It \\(ps
+.Pq paragraph
+.It \\(sc
+.Pq section
+.It \\(dg
+.Pq dagger
+.It \\(dd
+.Pq double dagger
+.It \\(ci
+.Pq circle
+.It \\(ba
+.Pq bar
+.It \\(bb
+.Pq broken bar
+.It \\(Ba
+.Pq bar, deprecated
+.It \\(co
+.Pq copyright
+.It \\(rg
+.Pq registered
+.It \\(tm
+.Pq trademarked
+.It \\&
+.Pq non-breaking space
+.It \\e
+.Pq escape
+.It \\(Am
+.Pq ampersand, deprecated
+.El 
+d93 12
+a104 2
+Macros are case in-sensitive and one to three three characters in
+length.  All follow the same structural rules:
+@

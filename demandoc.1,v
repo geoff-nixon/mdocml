@@ -1,0 +1,324 @@
+head	1.8;
+access;
+symbols
+	VERSION_1_13_3:1.8
+	VERSION_1_13_2:1.8
+	VERSION_1_12_4:1.7
+	VERSION_1_13_1:1.7
+	VERSION_1_12_3:1.7
+	VERSION_1_12_2:1.7
+	VERSION_1_12:1.7.0.2
+	VERSION_1_12_1:1.6
+	VERSION_1_12_0:1.5
+	VERSION_1_11_7:1.5;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2014.09.12.00.10.26;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.12.25.19.35.44;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.09.02.13.04.05;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.09.01.22.25.53;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.09.01.22.09.50;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.09.01.20.55.50;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.09.01.10.46.28;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@document new SEE ALSO .Xr warnings
+@
+text
+@.\"	$Id: demandoc.1,v 1.7 2013/07/13 19:41:16 schwarze Exp $
+.\"
+.\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: July 13 2013 $
+.Dt DEMANDOC 1
+.Os
+.Sh NAME
+.Nm demandoc
+.Nd emit only text of UNIX manuals
+.Sh SYNOPSIS
+.Nm demandoc
+.Op Fl w
+.Op Ar
+.Sh DESCRIPTION
+The
+.Nm
+utility emits only the text portions of well-formed
+.Xr mdoc 7
+and
+.Xr man 7
+.Ux
+manual files.
+.Pp
+By default,
+.Nm
+parses standard input and outputs only text nodes, preserving line
+and column position.
+Escape sequences are omitted from the output.
+.Pp
+Its arguments are as follows:
+.Bl -tag -width Ds
+.It Fl w
+Output a word list.
+This outputs each word of text on its own line.
+A
+.Qq word ,
+in this case, refers to whitespace-delimited terms beginning with at
+least two letters and not consisting of any escape sequences.
+Words have their leading and trailing punctuation
+.Pq double-quotes, sentence punctuation, etc.
+stripped.
+.It Ar
+The input files.
+.El
+.Pp
+If a document is not well-formed, it is skipped.
+.Pp
+The
+.Fl i ,
+.Fl k ,
+.Fl m ,
+and
+.Fl p
+flags are silently discarded for calling compatibility with the
+historical deroff.
+.Sh EXIT STATUS
+The
+.Nm
+utility exits with one of the following values:
+.Pp
+.Bl -tag -width Ds -compact
+.It 0
+No errors occurred.
+.It 6
+An operating system error occurred, for example memory exhaustion or an
+error accessing input files.
+Such errors cause
+.Nm
+to exit at once, possibly in the middle of parsing or formatting a file.
+The output databases are corrupt and should be removed .
+.El
+.Sh EXAMPLES
+The traditional usage of
+.Nm
+is for spell-checking manuals on
+.Bx .
+This is accomplished as follows (assuming British spelling):
+.Pp
+.Dl $ demandoc -w file.1 | spell -b
+.Sh SEE ALSO
+.Xr mandoc 1 ,
+.Xr man 7 ,
+.Xr mdoc 7
+.Sh HISTORY
+.Nm
+replaces the historical deroff utility for handling modern
+.Xr man 7
+and
+.Xr mdoc 7
+documents.
+.Sh AUTHORS
+The
+.Nm
+utility was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+@
+
+
+1.7
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: demandoc.1,v 1.6 2011/12/25 19:35:44 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 25 2011 $
+d95 1
+a95 1
+.Xr man 7
+@
+
+
+1.6
+log
+@State default usage before listing arguments of a utility.  Inspired by a
+patch to mandocdb.8 by schwarze@@ some time ago.  Ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: demandoc.1,v 1.5 2011/09/02 13:04:05 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 2 2011 $
+d108 1
+a108 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.5
+log
+@Adding version notes.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: demandoc.1,v 1.4 2011/09/01 22:25:53 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 1 2011 $
+d36 7
+a58 5
+If
+.Ar file
+is not provided,
+.Nm
+accepts standard input.
+a60 6
+By default,
+.Nm
+parses its input and outputs only text nodes, preserving line column
+position.
+Escape sequences are omitted from the output.
+.Pp
+@
+
+
+1.4
+log
+@Finishing touches on demandoc.  It now backs over ending punctuation as
+well as leading punctuation.  Again, this isn't the same as deroff
+(which uses, I think, some punctuation as delimiters), but it's easier
+to explain and simpler to audit.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: demandoc.1,v 1.3 2011/09/01 22:09:50 kristaps Exp $
+d45 1
+a45 1
+Terms have their leading and trailing punctuation
+@
+
+
+1.3
+log
+@Make `-w' mode work much better.  This is INCREDIBLY poorly specified in
+any other deroff manual, and as I don't think anybody actually uses
+deroff, I don't feel compelled to research its behaviour too much and
+can just do what's logical.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: demandoc.1,v 1.2 2011/09/01 20:55:50 kristaps Exp $
+d44 4
+a47 2
+least two letters after opening punctuation and not consisting of any
+escape sequences.
+d89 8
+@
+
+
+1.2
+log
+@Have demandoc throw away deroff's flags.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: demandoc.1,v 1.1 2011/09/01 10:46:28 kristaps Exp $
+d42 4
+a45 3
+.Qq word
+starts with at least two letters and consists of at least three letters
+total.
+d55 1
+d61 1
+a61 1
+If a document is not well-formed, it is skipped.
+@
+
+
+1.1
+log
+@Add demandoc utility, a replacement for deroff.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: preconv.1,v 1.5 2011/08/18 08:58:44 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 18 2011 $
+d25 1
+d30 1
+a30 1
+utility emits only the text portions of
+d38 7
+d55 1
+d57 12
+a68 1
+output preserves the line numbering and column position of its input.
+d89 7
+@

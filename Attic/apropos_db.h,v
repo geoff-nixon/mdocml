@@ -1,0 +1,433 @@
+head	1.14;
+access;
+symbols
+	VERSION_1_12_4:1.13
+	VERSION_1_12_3:1.13
+	VERSION_1_12_2:1.13
+	VERSION_1_12:1.13.0.2
+	VERSION_1_12_1:1.13;
+locks; strict;
+comment	@ * @;
+
+
+1.14
+date	2012.06.08.10.47.17;	author kristaps;	state dead;
+branches;
+next	1.13;
+
+1.13
+date	2012.03.24.01.46.25;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2012.03.24.00.31.55;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.12.16.12.06.35;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.11.27.23.11.37;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.11.27.18.54.01;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.11.26.22.38.11;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.11.23.09.55.28;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.11.20.15.43.14;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.11.18.07.02.19;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.11.14.10.07.06;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.11.13.11.10.27;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.11.13.10.49.57;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.13.10.12.05;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.14
+log
+@Remove lint from Makefile.
+Disable some parts of the build (man.cgi, etc.) while sqlite3 is being
+merged in nice and slow.
+Remove the bit swapping stuff in config.h.post.
+Remove apropos_db (replaced by mansearch).
+@
+text
+@@
+
+
+1.13
+log
+@Be insane.  Make apropos(1) subsume man(1).
+@
+text
+@a0 73
+/*	$Id: apropos_db.h,v 1.12 2012/03/24 00:31:55 kristaps Exp $ */
+/*
+ * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef APROPOS_H
+#define APROPOS_H
+
+enum	restype {
+	RESTYPE_MAN, /* man(7) file */
+	RESTYPE_MDOC, /* mdoc(7) file */
+	RESTYPE_CAT /* pre-formatted file */
+};
+
+struct	res {
+	enum restype	 type; /* input file type */
+	char		*file; /* file in file-system */
+	char		*cat; /* category (3p, 3, etc.) */
+	char		*title; /* title (FOO, etc.) */
+	char		*arch; /* arch (or empty string) */
+	char		*desc; /* description (from Nd) */
+	unsigned int	 rec; /* record in index */
+	/*
+	 * The index volume.  This indexes into the array of directories
+	 * searched for manual page databases.
+	 */
+	unsigned int	 volume;
+	/*
+	 * The following fields are used internally.
+	 *
+	 * Maintain a binary tree for checking the uniqueness of `rec'
+	 * when adding elements to the results array.
+	 * Since the results array is dynamic, use offset in the array
+	 * instead of a pointer to the structure.
+	 */
+	int		 lhs;
+	int		 rhs;
+	int		 matched; /* expression is true */
+	int		*matches; /* partial truth evaluations */
+};
+
+struct	opts {
+	const char	*arch; /* restrict to architecture */
+	const char	*cat; /* restrict to manual section */
+};
+
+__BEGIN_DECLS
+
+struct	expr;
+
+int		 apropos_search(int, char **, const struct opts *,
+			const struct expr *, size_t, 
+			void *, size_t *, struct res **,
+			void (*)(struct res *, size_t, void *));
+struct	expr	*exprcomp(int, char *[], size_t *);
+void		 exprfree(struct expr *);
+void	 	 resfree(struct res *, size_t);
+struct	expr	*termcomp(int, char *[], size_t *);
+
+__END_DECLS
+
+#endif /*!APROPOS_H*/
+@
+
+
+1.12
+log
+@Simplify by not pre-filtering the result vector for satisfied matches:
+we can do this in the frontend.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.11 2011/12/16 12:06:35 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.11
+log
+@Make the stored "cat"/"mdoc"/"man" strings just be c/d/a single-character
+bytes.  This cuts down a little in index size and allows for cleaner
+extraction of information.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.10 2011/11/27 23:11:37 schwarze Exp $ */
+d39 12
+d62 3
+a64 2
+int	 	 apropos_search(int, char **, const struct opts *,
+			const struct expr *, size_t, void *,
+d68 1
+@
+
+
+1.10
+log
+@Save the manual type (mdoc, man, or cat) in the index file
+of the mandoc databases, as suggested by kristaps@@.
+Given the well-structured code, this is surprisingly simple.
+
+This changes the mandoc.index database format.
+Run "sudo mandocdb" to regenerate your databases.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.9 2011/11/27 18:54:01 kristaps Exp $ */
+d20 6
+d27 1
+a27 1
+	char		*type; /* file type: mdoc, man or cat */
+@
+
+
+1.9
+log
+@Get us a whatis(1) mode for apropos(1).
+This is from a patch to tech@@ as critiqued by schwarze@@, checked in to
+get the ball rolling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.8 2011/11/26 22:38:11 schwarze Exp $ */
+d21 1
+@
+
+
+1.8
+log
+@Sync to OpenBSD, mostly gratuitous and whitespace differences,
+but a few serious things as well:
+* -M overrides MANPATH
+* -m prepends to the path
+* put back database close calls that got lost in mandocdb
+* missing sys/types.h in manpath.c, needed for size_t
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.7 2011/11/23 09:55:28 kristaps Exp $ */
+d48 1
+@
+
+
+1.7
+log
+@Let apropos_db.h export the volume of manpages for a parsed record.
+This is necessary since an array of records can have duplicate record
+numbers in different mandoc.index files.
+The volume [right now] is just the index of the parsed mandoc.index in
+the manpaths.  This is sensible because the order of the manpath is
+significant (it's the order of duplicate-named manuals displayed by
+man(1)) and is thus not likely to change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.6 2011/11/20 15:43:14 kristaps Exp $ */
+d27 1
+a27 1
+	/* 
+d31 1
+a31 1
+	unsigned int	 volume; 
+d43 2
+a44 2
+int	 	 apropos_search(int, char **, const struct opts *, 
+			const struct expr *, size_t, void *, 
+@
+
+
+1.6
+log
+@Integrate a moderately-patched version of schwarze@@'s support for multiple
+directories containing mandocdb(8) databases.  Some changes follow:
+
+ (1) don't support -M yet;
+ (2) fall back to cwd if no prior manpath has been specified;
+ (3) resolve manpages using realpath() to prevent consecutive chdir()'s
+     over relative paths;
+ (4) note where further error-reporting is required;
+ (5) fix leaking memory on exit in several cases.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.5 2011/11/18 07:02:19 kristaps Exp $ */
+d27 5
+@
+
+
+1.5
+log
+@Evaluation with logical subexpressions.  This allows support for arbitrary,
+nested logical subexpressions with AND (-a) and OR (-o) support.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.4 2011/11/14 10:07:06 kristaps Exp $ */
+d38 1
+a38 1
+int	 	 apropos_search(const struct opts *, 
+@
+
+
+1.4
+log
+@Have exprcomp() accept a string instead of an array-pointer.  Also, collapse
+the arguments in apropos(1) into a single string passed to exprcomp().  Ok
+schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.3 2011/11/13 11:10:27 schwarze Exp $ */
+d20 1
+a20 1
+struct	rec {
+a26 10
+	/*
+	 * By the time the apropos_search() callback is called, these
+	 * are superfluous.
+	 * Maintain a binary tree for checking the uniqueness of `rec'
+	 * when adding elements to the results array.
+	 * Since the results array is dynamic, use offset in the array
+	 * instead of a pointer to the structure.
+	 */
+	int		 lhs;
+	int		 rhs;
+d38 4
+a41 5
+void	 	 apropos_search(const struct opts *, 
+			const struct expr *, void *, 
+			void (*)(struct rec *, size_t, void *));
+
+struct	expr	*exprcomp(char *);
+@
+
+
+1.3
+log
+@Rewrite the expression parser for a more concise syntax:
+
+ apropos [search_type[,...]=]substring
+ apropos search_type[,...][,i]~regex
+
+... and expression evaluation must take the search type into account.
+
+This allows to:
+* drop the global -I option and
+* drop the enum match, just using a boolean int.
+
+"go ahead" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.2 2011/11/13 10:49:57 schwarze Exp $ */
+d52 1
+a52 1
+struct	expr	*exprcomp(int, char *[]);
+@
+
+
+1.2
+log
+@Inventing new keywords for mostly the same thing when a well-established
+set of keywords already exists is a bad idea, so reuse the mdoc(7)
+macro names as apropos(1) search types.  This is a gain in brevity
+as well.  Some time ago, kristaps@@ agreed in principle.
+
+The search type bit field constants are used by both mandocdb(8) and
+apropos(1) and should better stay in sync, so give them their own
+header file.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.h,v 1.1 2011/11/13 10:12:05 schwarze Exp $ */
+d52 1
+a52 1
+struct	expr	*exprcomp(int, char *[], int);
+@
+
+
+1.1
+log
+@Less misleading file names; ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.h,v 1.2 2011/11/09 22:05:56 kristaps Exp $ */
+a19 14
+#define TYPE_NAME	  0x01
+#define TYPE_FUNCTION	  0x02
+#define TYPE_UTILITY	  0x04
+#define TYPE_INCLUDES	  0x08
+#define TYPE_VARIABLE	  0x10
+#define TYPE_STANDARD	  0x20
+#define TYPE_AUTHOR	  0x40
+#define TYPE_CONFIG	  0x80
+#define TYPE_DESC	  0x100
+#define TYPE_XREF	  0x200
+#define TYPE_PATH	  0x400
+#define TYPE_ENV	  0x800
+#define TYPE_ERR	  0x1000
+
+@

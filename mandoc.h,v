@@ -1,0 +1,6084 @@
+head	1.208;
+access;
+symbols
+	VERSION_1_13_3:1.201
+	VERSION_1_13_2:1.176
+	VERSION_1_12_4:1.152
+	VERSION_1_13_1:1.152
+	VERSION_1_14:1.148.0.2
+	VERSION_1_12_3:1.112
+	VERSION_1_12_2:1.110
+	VERSION_1_12:1.152.0.4
+	VERSION_1_12_1:1.99
+	VERSION_1_12_0:1.96
+	VERSION_1_11_7:1.95
+	VERSION_1_11_6:1.95
+	VERSION_1_11_5:1.95
+	VERSION_1_11_4:1.77
+	VERSION_1_11_3:1.77
+	VERSION_1_11_2:1.74
+	VERSION_1_11_1:1.69
+	VERSION_1_10_10:1.61
+	VERSION_1_10_9:1.49
+	VERSION_1_10_8:1.35
+	VERSION_1_10_7:1.32
+	VERSION_1_10_6:1.20
+	VERSION_1_10_5:1.17
+	VERSION_1_10_5_PREPDF:1.17
+	VERSION_1_10_4:1.16
+	VERSION_1_10_3:1.12
+	VERSION_1_10_2:1.12
+	VERSION_1_10_1:1.10;
+locks; strict;
+comment	@ * @;
+
+
+1.208
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.207;
+
+1.207
+date	2015.10.30.19.04.16;	author schwarze;	state Exp;
+branches;
+next	1.206;
+
+1.206
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.205;
+
+1.205
+date	2015.09.14.15.36.14;	author schwarze;	state Exp;
+branches;
+next	1.204;
+
+1.204
+date	2015.07.19.06.05.16;	author schwarze;	state Exp;
+branches;
+next	1.203;
+
+1.203
+date	2015.04.18.16.34.25;	author schwarze;	state Exp;
+branches;
+next	1.202;
+
+1.202
+date	2015.04.18.16.06.40;	author schwarze;	state Exp;
+branches;
+next	1.201;
+
+1.201
+date	2015.02.23.13.31.04;	author schwarze;	state Exp;
+branches;
+next	1.200;
+
+1.200
+date	2015.02.06.16.06.25;	author schwarze;	state Exp;
+branches;
+next	1.199;
+
+1.199
+date	2015.02.06.11.54.36;	author schwarze;	state Exp;
+branches;
+next	1.198;
+
+1.198
+date	2015.02.06.07.13.14;	author schwarze;	state Exp;
+branches;
+next	1.197;
+
+1.197
+date	2015.02.06.03.38.45;	author schwarze;	state Exp;
+branches;
+next	1.196;
+
+1.196
+date	2015.02.04.18.03.47;	author schwarze;	state Exp;
+branches;
+next	1.195;
+
+1.195
+date	2015.02.04.16.38.56;	author schwarze;	state Exp;
+branches;
+next	1.194;
+
+1.194
+date	2015.01.30.17.32.16;	author schwarze;	state Exp;
+branches;
+next	1.193;
+
+1.193
+date	2015.01.30.04.11.50;	author schwarze;	state Exp;
+branches;
+next	1.192;
+
+1.192
+date	2015.01.28.21.11.53;	author schwarze;	state Exp;
+branches;
+next	1.191;
+
+1.191
+date	2015.01.28.17.32.07;	author schwarze;	state Exp;
+branches;
+next	1.190;
+
+1.190
+date	2015.01.27.05.21.44;	author schwarze;	state Exp;
+branches;
+next	1.189;
+
+1.189
+date	2015.01.26.18.42.30;	author schwarze;	state Exp;
+branches;
+next	1.188;
+
+1.188
+date	2015.01.26.13.03.48;	author schwarze;	state Exp;
+branches;
+next	1.187;
+
+1.187
+date	2015.01.26.00.57.22;	author schwarze;	state Exp;
+branches;
+next	1.186;
+
+1.186
+date	2015.01.24.01.58.33;	author schwarze;	state Exp;
+branches;
+next	1.185;
+
+1.185
+date	2015.01.22.21.38.16;	author schwarze;	state Exp;
+branches;
+next	1.184;
+
+1.184
+date	2015.01.21.20.33.25;	author schwarze;	state Exp;
+branches;
+next	1.183;
+
+1.183
+date	2015.01.20.21.16.51;	author schwarze;	state Exp;
+branches;
+next	1.182;
+
+1.182
+date	2015.01.15.04.26.40;	author schwarze;	state Exp;
+branches;
+next	1.181;
+
+1.181
+date	2015.01.15.02.29.26;	author schwarze;	state Exp;
+branches;
+next	1.180;
+
+1.180
+date	2015.01.14.22.58.16;	author schwarze;	state Exp;
+branches;
+next	1.179;
+
+1.179
+date	2015.01.14.22.02.50;	author schwarze;	state Exp;
+branches;
+next	1.178;
+
+1.178
+date	2015.01.14.17.49.15;	author schwarze;	state Exp;
+branches;
+next	1.177;
+
+1.177
+date	2014.12.16.23.44.41;	author schwarze;	state Exp;
+branches;
+next	1.176;
+
+1.176
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.175;
+
+1.175
+date	2014.12.01.04.14.14;	author schwarze;	state Exp;
+branches;
+next	1.174;
+
+1.174
+date	2014.12.01.04.05.32;	author schwarze;	state Exp;
+branches;
+next	1.173;
+
+1.173
+date	2014.11.30.05.29.00;	author schwarze;	state Exp;
+branches;
+next	1.172;
+
+1.172
+date	2014.11.30.02.36.38;	author schwarze;	state Exp;
+branches;
+next	1.171;
+
+1.171
+date	2014.11.28.18.09.01;	author schwarze;	state Exp;
+branches;
+next	1.170;
+
+1.170
+date	2014.11.27.23.40.19;	author schwarze;	state Exp;
+branches;
+next	1.169;
+
+1.169
+date	2014.11.26.21.40.17;	author schwarze;	state Exp;
+branches;
+next	1.168;
+
+1.168
+date	2014.10.29.00.17.43;	author schwarze;	state Exp;
+branches;
+next	1.167;
+
+1.167
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.166;
+
+1.166
+date	2014.10.26.18.07.28;	author schwarze;	state Exp;
+branches;
+next	1.165;
+
+1.165
+date	2014.10.25.01.03.52;	author schwarze;	state Exp;
+branches;
+next	1.164;
+
+1.164
+date	2014.10.20.19.04.45;	author kristaps;	state Exp;
+branches;
+next	1.163;
+
+1.163
+date	2014.10.14.02.16.06;	author schwarze;	state Exp;
+branches;
+next	1.162;
+
+1.162
+date	2014.10.12.19.31.41;	author schwarze;	state Exp;
+branches;
+next	1.161;
+
+1.161
+date	2014.10.11.21.14.16;	author schwarze;	state Exp;
+branches;
+next	1.160;
+
+1.160
+date	2014.10.10.15.26.29;	author schwarze;	state Exp;
+branches;
+next	1.159;
+
+1.159
+date	2014.10.10.08.44.24;	author kristaps;	state Exp;
+branches;
+next	1.158;
+
+1.158
+date	2014.09.28.14.05.11;	author kristaps;	state Exp;
+branches;
+next	1.157;
+
+1.157
+date	2014.09.28.11.32.08;	author kristaps;	state Exp;
+branches;
+next	1.156;
+
+1.156
+date	2014.09.12.00.54.10;	author schwarze;	state Exp;
+branches;
+next	1.155;
+
+1.155
+date	2014.09.11.23.53.30;	author schwarze;	state Exp;
+branches;
+next	1.154;
+
+1.154
+date	2014.09.07.23.25.01;	author schwarze;	state Exp;
+branches;
+next	1.153;
+
+1.153
+date	2014.09.03.23.21.47;	author schwarze;	state Exp;
+branches;
+next	1.152;
+
+1.152
+date	2014.08.06.15.09.05;	author schwarze;	state Exp;
+branches;
+next	1.151;
+
+1.151
+date	2014.08.01.17.27.44;	author schwarze;	state Exp;
+branches;
+next	1.150;
+
+1.150
+date	2014.08.01.15.08.46;	author schwarze;	state Exp;
+branches;
+next	1.149;
+
+1.149
+date	2014.07.31.09.22.21;	author schwarze;	state Exp;
+branches;
+next	1.148;
+
+1.148
+date	2014.07.31.00.41.10;	author schwarze;	state Exp;
+branches;
+next	1.147;
+
+1.147
+date	2014.07.30.23.38.52;	author schwarze;	state Exp;
+branches;
+next	1.146;
+
+1.146
+date	2014.07.30.17.06.26;	author schwarze;	state Exp;
+branches;
+next	1.145;
+
+1.145
+date	2014.07.30.14.50.08;	author schwarze;	state Exp;
+branches;
+next	1.144;
+
+1.144
+date	2014.07.30.12.58.21;	author schwarze;	state Exp;
+branches;
+next	1.143;
+
+1.143
+date	2014.07.30.00.19.16;	author schwarze;	state Exp;
+branches;
+next	1.142;
+
+1.142
+date	2014.07.09.11.31.43;	author schwarze;	state Exp;
+branches;
+next	1.141;
+
+1.141
+date	2014.07.07.21.36.20;	author schwarze;	state Exp;
+branches;
+next	1.140;
+
+1.140
+date	2014.07.07.16.12.20;	author schwarze;	state Exp;
+branches;
+next	1.139;
+
+1.139
+date	2014.07.07.15.03.43;	author schwarze;	state Exp;
+branches;
+next	1.138;
+
+1.138
+date	2014.07.07.11.35.06;	author schwarze;	state Exp;
+branches;
+next	1.137;
+
+1.137
+date	2014.07.06.19.09.00;	author schwarze;	state Exp;
+branches;
+next	1.136;
+
+1.136
+date	2014.07.05.12.34.17;	author schwarze;	state Exp;
+branches;
+next	1.135;
+
+1.135
+date	2014.07.05.01.12.20;	author schwarze;	state Exp;
+branches;
+next	1.134;
+
+1.134
+date	2014.07.04.16.12.08;	author schwarze;	state Exp;
+branches;
+next	1.133;
+
+1.133
+date	2014.07.04.01.50.06;	author schwarze;	state Exp;
+branches;
+next	1.132;
+
+1.132
+date	2014.07.03.23.24.56;	author schwarze;	state Exp;
+branches;
+next	1.131;
+
+1.131
+date	2014.07.03.21.23.54;	author schwarze;	state Exp;
+branches;
+next	1.130;
+
+1.130
+date	2014.07.02.20.19.11;	author schwarze;	state Exp;
+branches;
+next	1.129;
+
+1.129
+date	2014.07.02.13.10.45;	author schwarze;	state Exp;
+branches;
+next	1.128;
+
+1.128
+date	2014.07.02.11.43.20;	author schwarze;	state Exp;
+branches;
+next	1.127;
+
+1.127
+date	2014.07.02.05.52.25;	author schwarze;	state Exp;
+branches;
+next	1.126;
+
+1.126
+date	2014.07.02.03.48.07;	author schwarze;	state Exp;
+branches;
+next	1.125;
+
+1.125
+date	2014.07.01.22.37.15;	author schwarze;	state Exp;
+branches;
+next	1.124;
+
+1.124
+date	2014.06.30.23.45.07;	author schwarze;	state Exp;
+branches;
+next	1.123;
+
+1.123
+date	2014.06.25.00.20.19;	author schwarze;	state Exp;
+branches;
+next	1.122;
+
+1.122
+date	2014.06.20.23.02.31;	author schwarze;	state Exp;
+branches;
+next	1.121;
+
+1.121
+date	2014.06.20.17.24.00;	author schwarze;	state Exp;
+branches;
+next	1.120;
+
+1.120
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.119;
+
+1.119
+date	2014.03.28.23.26.25;	author schwarze;	state Exp;
+branches;
+next	1.118;
+
+1.118
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2014.03.19.22.20.43;	author schwarze;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2014.03.19.21.51.20;	author schwarze;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2014.01.22.20.58.39;	author schwarze;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2014.01.05.20.26.36;	author schwarze;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2014.01.02.16.29.55;	author schwarze;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2013.12.30.18.30.32;	author schwarze;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2013.10.05.20.30.05;	author schwarze;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2013.09.16.00.25.07;	author schwarze;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2013.08.08.20.07.47;	author schwarze;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2013.07.13.12.52.07;	author schwarze;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2013.05.31.21.37.17;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2012.11.19.22.30.58;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2012.11.16.22.21.05;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2012.07.18.11.11.12;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2012.07.12.15.11.14;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2012.05.31.22.29.13;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2012.05.27.17.54.54;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2012.05.27.17.48.57;	author schwarze;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2012.02.16.20.51.31;	author joerg;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2011.11.08.00.15.23;	author kristaps;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2011.11.07.01.24.40;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2011.10.06.22.29.12;	author kristaps;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2011.07.23.18.44.42;	author kristaps;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2011.07.23.18.41.18;	author kristaps;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2011.07.23.12.10.16;	author kristaps;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2011.07.23.12.01.54;	author kristaps;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2011.07.22.14.55.07;	author kristaps;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2011.07.22.09.57.04;	author kristaps;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2011.07.21.23.30.39;	author kristaps;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2011.07.21.15.21.13;	author kristaps;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2011.07.21.14.13.00;	author kristaps;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2011.07.21.13.37.04;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2011.07.21.13.18.24;	author kristaps;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2011.07.21.12.30.44;	author kristaps;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2011.07.21.11.34.53;	author kristaps;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2011.07.21.10.24.35;	author kristaps;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2011.07.18.14.30.51;	author kristaps;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2011.07.17.14.08.49;	author kristaps;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2011.07.17.12.52.54;	author kristaps;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2011.07.15.10.14.12;	author kristaps;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2011.05.24.21.31.23;	author kristaps;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2011.05.17.11.50.20;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2011.05.15.15.30.33;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2011.04.30.22.24.31;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2011.04.30.22.14.42;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2011.04.30.22.14.02;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2011.04.29.22.18.12;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2011.04.09.15.29.40;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2011.03.28.21.49.42;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2011.03.23.09.47.13;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2011.03.22.14.05.45;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2011.03.22.10.35.26;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2011.03.22.09.48.13;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2011.03.20.16.05.21;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2011.03.20.11.41.24;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2011.03.17.12.08.01;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2011.03.17.09.16.38;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2011.03.17.08.49.34;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2011.03.07.01.35.51;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2011.02.09.09.05.52;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2011.02.06.22.02.58;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2011.02.06.20.36.36;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2011.02.02.21.40.45;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2011.01.12.15.50.42;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2011.01.11.00.11.45;	author schwarze;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2011.01.10.15.31.00;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2011.01.10.14.40.30;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2011.01.06.13.45.47;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2011.01.04.15.02.00;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2011.01.04.12.06.21;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2011.01.03.23.53.51;	author schwarze;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2011.01.03.13.59.21;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2011.01.02.12.04.23;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2011.01.02.10.10.57;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2011.01.01.22.27.08;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2011.01.01.22.19.15;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2011.01.01.17.10.20;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2011.01.01.15.45.18;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.12.31.18.19.43;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.12.29.14.38.14;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.12.29.01.16.57;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.12.22.11.38.17;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.12.15.23.39.40;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.12.10.20.58.56;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.12.06.16.55.35;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.12.06.15.31.19;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.12.06.11.01.19;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.12.05.15.55.01;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.12.05.15.49.37;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.12.05.15.37.30;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.12.01.16.54.25;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.12.01.10.31.35;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.11.29.15.45.15;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.10.11.15.46.19;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.10.04.07.01.02;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.10.02.10.14.37;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.09.27.09.26.27;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.09.26.20.22.28;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.07.20.14.56.42;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.07.05.20.10.22;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.07.02.12.54.33;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.07.01.15.38.56;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.06.30.20.32.15;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.06.12.11.41.50;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2010.06.12.10.09.19;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.06.03.13.44.36;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.06.01.14.54.37;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.05.31.23.40.25;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.05.25.12.37.20;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.05.24.01.41.31;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.05.16.22.28.33;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.05.16.19.08.11;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.05.15.21.53.11;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.05.15.18.35.14;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.208
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: mandoc.h,v 1.207 2015/10/30 19:04:16 schwarze Exp $ */
+/*
+ * Copyright (c) 2010, 2011, 2014 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+#define ASCII_NBRSP	 31  /* non-breaking space */
+#define	ASCII_HYPH	 30  /* breakable hyphen */
+#define	ASCII_BREAK	 29  /* breakable zero-width space */
+
+/*
+ * Status level.  This refers to both internal status (i.e., whilst
+ * running, when warnings/errors are reported) and an indicator of a
+ * threshold of when to halt (when said internal state exceeds the
+ * threshold).
+ */
+enum	mandoclevel {
+	MANDOCLEVEL_OK = 0,
+	MANDOCLEVEL_RESERVED,
+	MANDOCLEVEL_WARNING, /* warnings: syntax, whitespace, etc. */
+	MANDOCLEVEL_ERROR, /* input has been thrown away */
+	MANDOCLEVEL_UNSUPP, /* input needs unimplemented features */
+	MANDOCLEVEL_BADARG, /* bad argument in invocation */
+	MANDOCLEVEL_SYSERR, /* system error */
+	MANDOCLEVEL_MAX
+};
+
+/*
+ * All possible things that can go wrong within a parse, be it libroff,
+ * libmdoc, or libman.
+ */
+enum	mandocerr {
+	MANDOCERR_OK,
+
+	MANDOCERR_WARNING, /* ===== start of warnings ===== */
+
+	/* related to the prologue */
+	MANDOCERR_DT_NOTITLE, /* missing manual title, using UNTITLED: line */
+	MANDOCERR_TH_NOTITLE, /* missing manual title, using "": [macro] */
+	MANDOCERR_TITLE_CASE, /* lower case character in document title */
+	MANDOCERR_MSEC_MISSING, /* missing manual section, using "": macro */
+	MANDOCERR_MSEC_BAD, /* unknown manual section: Dt ... section */
+	MANDOCERR_DATE_MISSING, /* missing date, using today's date */
+	MANDOCERR_DATE_BAD, /* cannot parse date, using it verbatim: date */
+	MANDOCERR_OS_MISSING, /* missing Os macro, using "" */
+	MANDOCERR_PROLOG_REP, /* duplicate prologue macro: macro */
+	MANDOCERR_PROLOG_LATE, /* late prologue macro: macro */
+	MANDOCERR_DT_LATE, /* skipping late title macro: Dt args */
+	MANDOCERR_PROLOG_ORDER, /* prologue macros out of order: macros */
+
+	/* related to document structure */
+	MANDOCERR_SO, /* .so is fragile, better use ln(1): so path */
+	MANDOCERR_DOC_EMPTY, /* no document body */
+	MANDOCERR_SEC_BEFORE, /* content before first section header: macro */
+	MANDOCERR_NAMESEC_FIRST, /* first section is not NAME: Sh title */
+	MANDOCERR_NAMESEC_NONM, /* NAME section without name */
+	MANDOCERR_NAMESEC_NOND, /* NAME section without description */
+	MANDOCERR_NAMESEC_ND, /* description not at the end of NAME */
+	MANDOCERR_NAMESEC_BAD, /* bad NAME section content: macro */
+	MANDOCERR_ND_EMPTY, /* missing description line, using "" */
+	MANDOCERR_SEC_ORDER, /* sections out of conventional order: Sh title */
+	MANDOCERR_SEC_REP, /* duplicate section title: Sh title */
+	MANDOCERR_SEC_MSEC, /* unexpected section: Sh title for ... only */
+	MANDOCERR_XR_ORDER, /* unusual Xr order: ... after ... */
+	MANDOCERR_XR_PUNCT, /* unusual Xr punctuation: ... after ... */
+	MANDOCERR_AN_MISSING, /* AUTHORS section without An macro */
+
+	/* related to macros and nesting */
+	MANDOCERR_MACRO_OBS, /* obsolete macro: macro */
+	MANDOCERR_MACRO_CALL, /* macro neither callable nor escaped: macro */
+	MANDOCERR_PAR_SKIP, /* skipping paragraph macro: macro ... */
+	MANDOCERR_PAR_MOVE, /* moving paragraph macro out of list: macro */
+	MANDOCERR_NS_SKIP, /* skipping no-space macro */
+	MANDOCERR_BLK_NEST, /* blocks badly nested: macro ... */
+	MANDOCERR_BD_NEST, /* nested displays are not portable: macro ... */
+	MANDOCERR_BL_MOVE, /* moving content out of list: macro */
+	MANDOCERR_FI_SKIP, /* fill mode already enabled, skipping: fi */
+	MANDOCERR_NF_SKIP, /* fill mode already disabled, skipping: nf */
+	MANDOCERR_BLK_LINE, /* line scope broken: macro breaks macro */
+
+	/* related to missing arguments */
+	MANDOCERR_REQ_EMPTY, /* skipping empty request: request */
+	MANDOCERR_COND_EMPTY, /* conditional request controls empty scope */
+	MANDOCERR_MACRO_EMPTY, /* skipping empty macro: macro */
+	MANDOCERR_BLK_EMPTY, /* empty block: macro */
+	MANDOCERR_ARG_EMPTY, /* empty argument, using 0n: macro arg */
+	MANDOCERR_BD_NOTYPE, /* missing display type, using -ragged: Bd */
+	MANDOCERR_BL_LATETYPE, /* list type is not the first argument: Bl arg */
+	MANDOCERR_BL_NOWIDTH, /* missing -width in -tag list, using 8n */
+	MANDOCERR_EX_NONAME, /* missing utility name, using "": Ex */
+	MANDOCERR_FO_NOHEAD, /* missing function name, using "": Fo */
+	MANDOCERR_IT_NOHEAD, /* empty head in list item: Bl -type It */
+	MANDOCERR_IT_NOBODY, /* empty list item: Bl -type It */
+	MANDOCERR_BF_NOFONT, /* missing font type, using \fR: Bf */
+	MANDOCERR_BF_BADFONT, /* unknown font type, using \fR: Bf font */
+	MANDOCERR_PF_SKIP, /* nothing follows prefix: Pf arg */
+	MANDOCERR_RS_EMPTY, /* empty reference block: Rs */
+	MANDOCERR_ARG_STD, /* missing -std argument, adding it: macro */
+	MANDOCERR_OP_EMPTY, /* missing option string, using "": OP */
+	MANDOCERR_UR_NOHEAD, /* missing resource identifier, using "": UR */
+	MANDOCERR_EQN_NOBOX, /* missing eqn box, using "": op */
+
+	/* related to bad arguments */
+	MANDOCERR_ARG_QUOTE, /* unterminated quoted argument */
+	MANDOCERR_ARG_REP, /* duplicate argument: macro arg */
+	MANDOCERR_AN_REP, /* skipping duplicate argument: An -arg */
+	MANDOCERR_BD_REP, /* skipping duplicate display type: Bd -type */
+	MANDOCERR_BL_REP, /* skipping duplicate list type: Bl -type */
+	MANDOCERR_BL_SKIPW, /* skipping -width argument: Bl -type */
+	MANDOCERR_BL_COL, /* wrong number of cells */
+	MANDOCERR_AT_BAD, /* unknown AT&T UNIX version: At version */
+	MANDOCERR_FA_COMMA, /* comma in function argument: arg */
+	MANDOCERR_FN_PAREN, /* parenthesis in function name: arg */
+	MANDOCERR_RS_BAD, /* invalid content in Rs block: macro */
+	MANDOCERR_SM_BAD, /* invalid Boolean argument: macro arg */
+	MANDOCERR_FT_BAD, /* unknown font, skipping request: ft font */
+	MANDOCERR_TR_ODD, /* odd number of characters in request: tr char */
+
+	/* related to plain text */
+	MANDOCERR_FI_BLANK, /* blank line in fill mode, using .sp */
+	MANDOCERR_FI_TAB, /* tab in filled text */
+	MANDOCERR_SPACE_EOL, /* whitespace at end of input line */
+	MANDOCERR_COMMENT_BAD, /* bad comment style */
+	MANDOCERR_ESC_BAD, /* invalid escape sequence: esc */
+	MANDOCERR_STR_UNDEF, /* undefined string, using "": name */
+
+	/* related to tables */
+	MANDOCERR_TBLLAYOUT_SPAN, /* tbl line starts with span */
+	MANDOCERR_TBLLAYOUT_DOWN, /* tbl column starts with span */
+	MANDOCERR_TBLLAYOUT_VERT, /* skipping vertical bar in tbl layout */
+
+	MANDOCERR_ERROR, /* ===== start of errors ===== */
+
+	/* related to tables */
+	MANDOCERR_TBLOPT_ALPHA, /* non-alphabetic character in tbl options */
+	MANDOCERR_TBLOPT_BAD, /* skipping unknown tbl option: option */
+	MANDOCERR_TBLOPT_NOARG, /* missing tbl option argument: option */
+	MANDOCERR_TBLOPT_ARGSZ, /* wrong tbl option argument size: option */
+	MANDOCERR_TBLLAYOUT_NONE, /* empty tbl layout */
+	MANDOCERR_TBLLAYOUT_CHAR, /* invalid character in tbl layout: char */
+	MANDOCERR_TBLLAYOUT_PAR, /* unmatched parenthesis in tbl layout */
+	MANDOCERR_TBLDATA_NONE, /* tbl without any data cells */
+	MANDOCERR_TBLDATA_SPAN, /* ignoring data in spanned tbl cell: data */
+	MANDOCERR_TBLDATA_EXTRA, /* ignoring extra tbl data cells: data */
+	MANDOCERR_TBLDATA_BLK, /* data block open at end of tbl: macro */
+
+	/* related to document structure and macros */
+	MANDOCERR_FILE, /* cannot open file */
+	MANDOCERR_ROFFLOOP, /* input stack limit exceeded, infinite loop? */
+	MANDOCERR_CHAR_BAD, /* skipping bad character: number */
+	MANDOCERR_MACRO, /* skipping unknown macro: macro */
+	MANDOCERR_REQ_INSEC, /* skipping insecure request: request */
+	MANDOCERR_IT_STRAY, /* skipping item outside list: It ... */
+	MANDOCERR_TA_STRAY, /* skipping column outside column list: Ta */
+	MANDOCERR_BLK_NOTOPEN, /* skipping end of block that is not open */
+	MANDOCERR_RE_NOTOPEN, /* fewer RS blocks open, skipping: RE arg */
+	MANDOCERR_BLK_BROKEN, /* inserting missing end of block: macro ... */
+	MANDOCERR_BLK_NOEND, /* appending missing end of block: macro */
+
+	/* related to request and macro arguments */
+	MANDOCERR_NAMESC, /* escaped character not allowed in a name: name */
+	MANDOCERR_BD_FILE, /* NOT IMPLEMENTED: Bd -file */
+	MANDOCERR_BD_NOARG, /* skipping display without arguments: Bd */
+	MANDOCERR_BL_NOTYPE, /* missing list type, using -item: Bl */
+	MANDOCERR_NM_NONAME, /* missing manual name, using "": Nm */
+	MANDOCERR_OS_UNAME, /* uname(3) system call failed, using UNKNOWN */
+	MANDOCERR_ST_BAD, /* unknown standard specifier: St standard */
+	MANDOCERR_IT_NONUM, /* skipping request without numeric argument */
+	MANDOCERR_SO_PATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
+	MANDOCERR_SO_FAIL, /* .so request failed */
+	MANDOCERR_ARG_SKIP, /* skipping all arguments: macro args */
+	MANDOCERR_ARG_EXCESS, /* skipping excess arguments: macro ... args */
+	MANDOCERR_DIVZERO, /* divide by zero */
+
+	MANDOCERR_UNSUPP, /* ===== start of unsupported features ===== */
+
+	MANDOCERR_TOOLARGE, /* input too large */
+	MANDOCERR_CHAR_UNSUPP, /* unsupported control character: number */
+	MANDOCERR_REQ_UNSUPP, /* unsupported roff request: request */
+	MANDOCERR_TBLOPT_EQN, /* eqn delim option in tbl: arg */
+	MANDOCERR_TBLLAYOUT_MOD, /* unsupported tbl layout modifier: m */
+	MANDOCERR_TBLMACRO, /* ignoring macro in table: macro */
+
+	MANDOCERR_MAX
+};
+
+struct	tbl_opts {
+	char		  tab; /* cell-separator */
+	char		  decimal; /* decimal point */
+	int		  opts;
+#define	TBL_OPT_CENTRE	 (1 << 0)
+#define	TBL_OPT_EXPAND	 (1 << 1)
+#define	TBL_OPT_BOX	 (1 << 2)
+#define	TBL_OPT_DBOX	 (1 << 3)
+#define	TBL_OPT_ALLBOX	 (1 << 4)
+#define	TBL_OPT_NOKEEP	 (1 << 5)
+#define	TBL_OPT_NOSPACE	 (1 << 6)
+#define	TBL_OPT_NOWARN	 (1 << 7)
+	int		  cols; /* number of columns */
+	int		  lvert; /* width of left vertical line */
+	int		  rvert; /* width of right vertical line */
+};
+
+enum	tbl_cellt {
+	TBL_CELL_CENTRE, /* c, C */
+	TBL_CELL_RIGHT, /* r, R */
+	TBL_CELL_LEFT, /* l, L */
+	TBL_CELL_NUMBER, /* n, N */
+	TBL_CELL_SPAN, /* s, S */
+	TBL_CELL_LONG, /* a, A */
+	TBL_CELL_DOWN, /* ^ */
+	TBL_CELL_HORIZ, /* _, - */
+	TBL_CELL_DHORIZ, /* = */
+	TBL_CELL_MAX
+};
+
+/*
+ * A cell in a layout row.
+ */
+struct	tbl_cell {
+	struct tbl_cell	 *next;
+	int		  vert; /* width of subsequent vertical line */
+	enum tbl_cellt	  pos;
+	size_t		  spacing;
+	int		  col; /* column number, starting from 0 */
+	int		  flags;
+#define	TBL_CELL_TALIGN	 (1 << 0) /* t, T */
+#define	TBL_CELL_BALIGN	 (1 << 1) /* d, D */
+#define	TBL_CELL_BOLD	 (1 << 2) /* fB, B, b */
+#define	TBL_CELL_ITALIC	 (1 << 3) /* fI, I, i */
+#define	TBL_CELL_EQUAL	 (1 << 4) /* e, E */
+#define	TBL_CELL_UP	 (1 << 5) /* u, U */
+#define	TBL_CELL_WIGN	 (1 << 6) /* z, Z */
+#define	TBL_CELL_WMAX	 (1 << 7) /* x, X */
+};
+
+/*
+ * A layout row.
+ */
+struct	tbl_row {
+	struct tbl_row	 *next;
+	struct tbl_cell	 *first;
+	struct tbl_cell	 *last;
+	int		  vert; /* width of left vertical line */
+};
+
+enum	tbl_datt {
+	TBL_DATA_NONE, /* has no data */
+	TBL_DATA_DATA, /* consists of data/string */
+	TBL_DATA_HORIZ, /* horizontal line */
+	TBL_DATA_DHORIZ, /* double-horizontal line */
+	TBL_DATA_NHORIZ, /* squeezed horizontal line */
+	TBL_DATA_NDHORIZ /* squeezed double-horizontal line */
+};
+
+/*
+ * A cell within a row of data.  The "string" field contains the actual
+ * string value that's in the cell.  The rest is layout.
+ */
+struct	tbl_dat {
+	struct tbl_cell	 *layout; /* layout cell */
+	int		  spans; /* how many spans follow */
+	struct tbl_dat	 *next;
+	char		 *string; /* data (NULL if not TBL_DATA_DATA) */
+	enum tbl_datt	  pos;
+};
+
+enum	tbl_spant {
+	TBL_SPAN_DATA, /* span consists of data */
+	TBL_SPAN_HORIZ, /* span is horizontal line */
+	TBL_SPAN_DHORIZ /* span is double horizontal line */
+};
+
+/*
+ * A row of data in a table.
+ */
+struct	tbl_span {
+	struct tbl_opts	 *opts;
+	struct tbl_row	 *layout; /* layout row */
+	struct tbl_dat	 *first;
+	struct tbl_dat	 *last;
+	struct tbl_span	 *prev;
+	struct tbl_span	 *next;
+	int		  line; /* parse line */
+	enum tbl_spant	  pos;
+};
+
+enum	eqn_boxt {
+	EQN_ROOT, /* root of parse tree */
+	EQN_TEXT, /* text (number, variable, whatever) */
+	EQN_SUBEXPR, /* nested `eqn' subexpression */
+	EQN_LIST, /* list (braces, etc.) */
+	EQN_LISTONE, /* singleton list */
+	EQN_PILE, /* vertical pile */
+	EQN_MATRIX /* pile of piles */
+};
+
+enum	eqn_fontt {
+	EQNFONT_NONE = 0,
+	EQNFONT_ROMAN,
+	EQNFONT_BOLD,
+	EQNFONT_FAT,
+	EQNFONT_ITALIC,
+	EQNFONT__MAX
+};
+
+enum	eqn_post {
+	EQNPOS_NONE = 0,
+	EQNPOS_SUP,
+	EQNPOS_SUBSUP,
+	EQNPOS_SUB,
+	EQNPOS_TO,
+	EQNPOS_FROM,
+	EQNPOS_FROMTO,
+	EQNPOS_OVER,
+	EQNPOS_SQRT,
+	EQNPOS__MAX
+};
+
+enum	eqn_pilet {
+	EQNPILE_NONE = 0,
+	EQNPILE_PILE,
+	EQNPILE_CPILE,
+	EQNPILE_RPILE,
+	EQNPILE_LPILE,
+	EQNPILE_COL,
+	EQNPILE_CCOL,
+	EQNPILE_RCOL,
+	EQNPILE_LCOL,
+	EQNPILE__MAX
+};
+
+ /*
+ * A "box" is a parsed mathematical expression as defined by the eqn.7
+ * grammar.
+ */
+struct	eqn_box {
+	int		  size; /* font size of expression */
+#define	EQN_DEFSIZE	  INT_MIN
+	enum eqn_boxt	  type; /* type of node */
+	struct eqn_box	 *first; /* first child node */
+	struct eqn_box	 *last; /* last child node */
+	struct eqn_box	 *next; /* node sibling */
+	struct eqn_box	 *prev; /* node sibling */
+	struct eqn_box	 *parent; /* node sibling */
+	char		 *text; /* text (or NULL) */
+	char		 *left; /* fence left-hand */
+	char		 *right; /* fence right-hand */
+	char		 *top; /* expression over-symbol */
+	char		 *bottom; /* expression under-symbol */
+	size_t		  args; /* arguments in parent */
+	size_t		  expectargs; /* max arguments in parent */
+	enum eqn_post	  pos; /* position of next box */
+	enum eqn_fontt	  font; /* font of box */
+	enum eqn_pilet	  pile; /* equation piling */
+};
+
+/*
+ * An equation consists of a tree of expressions starting at a given
+ * line and position.
+ */
+struct	eqn {
+	char		 *name; /* identifier (or NULL) */
+	struct eqn_box	 *root; /* root mathematical expression */
+	int		  ln; /* invocation line */
+	int		  pos; /* invocation position */
+};
+
+/*
+ * Parse options.
+ */
+#define	MPARSE_MDOC	1  /* assume -mdoc */
+#define	MPARSE_MAN	2  /* assume -man */
+#define	MPARSE_SO	4  /* honour .so requests */
+#define	MPARSE_QUICK	8  /* abort the parse early */
+#define	MPARSE_UTF8	16 /* accept UTF-8 input */
+#define	MPARSE_LATIN1	32 /* accept ISO-LATIN-1 input */
+
+enum	mandoc_esc {
+	ESCAPE_ERROR = 0, /* bail! unparsable escape */
+	ESCAPE_IGNORE, /* escape to be ignored */
+	ESCAPE_SPECIAL, /* a regular special character */
+	ESCAPE_FONT, /* a generic font mode */
+	ESCAPE_FONTBOLD, /* bold font mode */
+	ESCAPE_FONTITALIC, /* italic font mode */
+	ESCAPE_FONTBI, /* bold italic font mode */
+	ESCAPE_FONTROMAN, /* roman font mode */
+	ESCAPE_FONTPREV, /* previous font mode */
+	ESCAPE_NUMBERED, /* a numbered glyph */
+	ESCAPE_UNICODE, /* a unicode codepoint */
+	ESCAPE_NOSPACE, /* suppress space if the last on a line */
+	ESCAPE_SKIPCHAR, /* skip the next character */
+	ESCAPE_OVERSTRIKE /* overstrike all chars in the argument */
+};
+
+typedef	void	(*mandocmsg)(enum mandocerr, enum mandoclevel,
+			const char *, int, int, const char *);
+
+
+struct	mparse;
+struct	roff_man;
+
+enum mandoc_esc	  mandoc_escape(const char **, const char **, int *);
+void		  mchars_alloc(void);
+void		  mchars_free(void);
+int		  mchars_num2char(const char *, size_t);
+const char	 *mchars_uc2str(int);
+int		  mchars_num2uc(const char *, size_t);
+int		  mchars_spec2cp(const char *, size_t);
+const char	 *mchars_spec2str(const char *, size_t, size_t *);
+struct mparse	 *mparse_alloc(int, enum mandoclevel, mandocmsg, const char *);
+void		  mparse_free(struct mparse *);
+void		  mparse_keep(struct mparse *);
+enum mandoclevel  mparse_open(struct mparse *, int *, const char *);
+enum mandoclevel  mparse_readfd(struct mparse *, int, const char *);
+enum mandoclevel  mparse_readmem(struct mparse *, void *, size_t,
+			const char *);
+void		  mparse_reset(struct mparse *);
+void		  mparse_result(struct mparse *,
+			struct roff_man **, char **);
+const char	 *mparse_getkeep(const struct mparse *);
+const char	 *mparse_strerror(enum mandocerr);
+const char	 *mparse_strlevel(enum mandoclevel);
+@
+
+
+1.207
+log
+@If a .Bd block has no arguments at all, drop the block and only keep
+its contents.  Removing a gratuitious difference to groff output
+found after a related bug report from krw@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.206 2015/10/13 22:59:54 schwarze Exp $ */
+a410 1
+__BEGIN_DECLS
+a435 2
+
+__END_DECLS
+@
+
+
+1.206
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.205 2015/09/14 15:36:14 schwarze Exp $ */
+d175 1
+@
+
+
+1.205
+log
+@Remove the warning about children of .Vt blocks because actually,
+.Vt type global_variable No = Dv defined_constant ;
+is the best way to specify in the SYNOPSIS how a global variable
+is initialized in the rare case where that matters.
+Issue noticed by jmc@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.204 2015/07/19 06:05:16 schwarze Exp $ */
+a412 1
+struct	mchars;
+d416 2
+a417 2
+struct mchars	 *mchars_alloc(void);
+void		  mchars_free(struct mchars *);
+d421 3
+a423 6
+int		  mchars_spec2cp(const struct mchars *,
+			const char *, size_t);
+const char	 *mchars_spec2str(const struct mchars *,
+			const char *, size_t, size_t *);
+struct mparse	 *mparse_alloc(int, enum mandoclevel, mandocmsg,
+			const struct mchars *, const char *);
+@
+
+
+1.204
+log
+@Do not fork and exec gunzip(1), just link with libz instead.
+As discussed with deraadt@@, that's cleaner and will help tame(2).
+Something like this was also suggested earlier by bapt at FreeBSD.
+Minus 50 lines of code, deleting one interface function (mparse_wait),
+no functional change intended.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.203 2015/04/18 16:34:25 schwarze Exp $ */
+a88 1
+	MANDOCERR_VT_CHILD, /* .Vt block has child macro: macro */
+@
+
+
+1.203
+log
+@Profit from the unified struct roff_man and reduce the number of
+arguments of mparse_result() by one.  No functional change.
+Written on the ICE Bruxelles-Koeln on the way back from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.202 2015/04/18 16:06:40 schwarze Exp $ */
+a440 1
+enum mandoclevel  mparse_wait(struct mparse *);
+@
+
+
+1.202
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.201 2015/02/23 13:31:04 schwarze Exp $ */
+d436 1
+a436 1
+void		  mparse_result(struct mparse *, struct roff_man **,
+@
+
+
+1.201
+log
+@improve NAME section diagnostics;
+confusing messages reported by Jan Stary <hans at stare dot cz>
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.200 2015/02/06 16:06:25 schwarze Exp $ */
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d415 1
+a415 2
+struct	mdoc;
+struct	man;
+d436 2
+a437 2
+void		  mparse_result(struct mparse *,
+			struct mdoc **, struct man **, char **);
+@
+
+
+1.200
+log
+@replace the last legacy generic message type, "argument count wrong",
+by more specific messages, improving diagnostics for .cc .tr .Bl -column
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.199 2015/02/06 11:54:36 schwarze Exp $ */
+d68 4
+a71 1
+	MANDOCERR_NAMESEC_BAD, /* bad NAME section contents: macro */
+@
+
+
+1.199
+log
+@better error reporting regarding .OP .RS .UR .TH arguments
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.198 2015/02/06 07:13:14 schwarze Exp $ */
+d120 1
+d127 1
+a171 1
+	MANDOCERR_ARGCOUNT, /* argument count wrong */
+@
+
+
+1.198
+log
+@Delete the legacy generic warning type MANDOCERR_ARGCWARN,
+replacing the last instances by more specific warnings.
+Improved functionality, minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.197 2015/02/06 03:38:45 schwarze Exp $ */
+d109 2
+@
+
+
+1.197
+log
+@better handle .Fo and .Fd without argument
+better handle .Fo with more than one argument
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.196 2015/02/04 18:03:47 schwarze Exp $ */
+d95 1
+a96 1
+	MANDOCERR_ARGCWARN, /* argument count wrong */
+@
+
+
+1.196
+log
+@discard .Rs head arguments and improve .Rs diagnostics
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.195 2015/02/04 16:38:56 schwarze Exp $ */
+d101 1
+@
+
+
+1.195
+log
+@more specific .Nd diagnostics, allowing to get rid of enum check_lvl
+and the respective argument of check_count()
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.194 2015/01/30 17:32:16 schwarze Exp $ */
+d106 1
+@
+
+
+1.194
+log
+@Delete the redundant tbl span flags, just inspect the actual data
+where needed, which is less fragile.
+This fixes a subtle NULL pointer access to tp->tbl.cols:
+Due to a bug in the man(7) parser, the first span of a table can
+end up in a .TP head, in which case tblcalc() was never called.
+Found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.193 2015/01/30 04:11:50 schwarze Exp $ */
+d69 1
+@
+
+
+1.193
+log
+@Abolish struct tbl_head and replace it by an "int col" member in
+struct tbl_cell.  No functional change, minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.192 2015/01/28 21:11:53 schwarze Exp $ */
+a287 3
+	int		  flags;
+#define	TBL_SPAN_FIRST	 (1 << 0)
+#define	TBL_SPAN_LAST	 (1 << 1)
+@
+
+
+1.192
+log
+@Clean up eqn(7) error handling:
+* When "define" fails, do not drop the whole equation.
+* Free memory after "undef".
+* Use standard mandoc error types instead of rolling our own.
+* Delete obfuscating EQN_MSG() macro.
+* Add function prototypes while here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.191 2015/01/28 17:32:07 schwarze Exp $ */
+a206 11
+/*
+ * The head of a table specifies all of its columns.  When formatting a
+ * tbl_span, iterate over these and plug in data from the tbl_span when
+ * appropriate, using tbl_cell as a guide to placement.
+ */
+struct	tbl_head {
+	int		  ident; /* 0 <= unique id < cols */
+	struct tbl_head	 *next;
+	struct tbl_head	 *prev;
+};
+
+d228 1
+a237 1
+	struct tbl_head	 *head;
+a281 1
+	struct tbl_head	 *head;
+@
+
+
+1.191
+log
+@* Polish tbl(7) error reporting.
+* Do not print out macro names in tbl(7) data blocks.
+* Like with GNU tbl, let empty tables cause a blank line.
+* Avoid producing empty tables in -Tman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.190 2015/01/27 05:21:44 schwarze Exp $ */
+a136 6
+	/* related to equations */
+	MANDOCERR_EQNNSCOPE, /* unexpected equation scope closure*/
+	MANDOCERR_EQNSCOPE, /* equation scope open on exit */
+	MANDOCERR_EQNBADSCOPE, /* overlapping equation scopes */
+	MANDOCERR_EQNEOF, /* unexpected end of equation */
+
+@
+
+
+1.190
+log
+@Multiple parser and formatter fixes for line drawing in tbl(7).
+* Allow mixing vertical line bars with the layout options
+of the preceding layout cell.
+* Correctly combine box options with layout lines.
+* Correctly print vertical lines in data rows, with the right spacing.
+* Correctly print cross markers and left and right ends of
+horizontal lines even if vertical lines differ above and below.
+* Avoid the bogus error message "no table data cells"
+when a table data section starts with a horizontal line.
+No increase in code size.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.189 2015/01/26 18:42:30 schwarze Exp $ */
+d146 2
+a147 2
+	MANDOCERR_TBLOPT_NOARG, /* missing tbl option argument */
+	MANDOCERR_TBLOPT_ARGSZ, /* wrong tbl option argument size */
+d151 4
+a154 4
+	MANDOCERR_TBLNODATA, /* no table data cells specified */
+	MANDOCERR_TBLIGNDATA, /* ignore data in cell */
+	MANDOCERR_TBLBLOCK, /* data block still open */
+	MANDOCERR_TBLEXTRADAT, /* ignoring extra data cells */
+d189 1
+a191 1
+	MANDOCERR_TBLEQN, /* eqn in tbl */
+@
+
+
+1.189
+log
+@Rework tbl(7) layout parsing:
+* Continue parsing even if part of the input is invalid.
+* Do not require whitespace between cell specifications.
+* Allow tabs as well as blanks between modifiers.
+* Mark the 'm' modifier as unsupported.
+* Parse and ignore the 'p' and 'v' modifiers.
+* Better warning and error messages.
+* Get rid of a static buffer.
+Improved functionality but minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.188 2015/01/26 13:03:48 schwarze Exp $ */
+d209 2
+a219 1
+	int		  vert; /* width of preceding vertical line */
+d242 1
+a242 1
+	int		  vert; /* width of preceding vertical line */
+d264 1
+a264 1
+	int		  vert; /* trailing vertical line */
+d303 2
+a309 1
+	struct tbl_span	 *next;
+@
+
+
+1.188
+log
+@More improvements regarding tbl(7) options.
+* Treat "allbox" as an alias for "box" for now.
+* Parse and ignore the GNU tbl "nowarn" option.
+* For separation, allow spaces, tabs, and commas only.
+* Mark eqn(7) within tbl(7) as unsupported.
+* Simplify the option table.
+* Improve and sort documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.187 2015/01/26 00:57:22 schwarze Exp $ */
+d130 5
+d148 3
+a150 1
+	MANDOCERR_TBLNOLAYOUT, /* no table layout cells specified */
+d189 1
+a189 1
+	MANDOCERR_TBLLAYOUT, /* unsupported table layout */
+@
+
+
+1.187
+log
+@Improve (or rather, rewrite) tbl(7) option parsing.
+* Allow the layout to start after the semicolon on the options line.
+* Ignore leading commas.
+* Option arguments cannot contain closing parentheses.
+* Avoid needless UNSUPP messages.
+* Better ERROR reporting.
+* Delete unused "linesize" field in struct tbl_opts.
+* No need for static buffers.
+* Garbage collect one almost empty wrapper function.
+Improved functionality, but minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.186 2015/01/24 01:58:33 schwarze Exp $ */
+d184 1
+d200 1
+@
+
+
+1.186
+log
+@Support .RE with an argument; needed for audio/pms(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.185 2015/01/22 21:38:16 schwarze Exp $ */
+d139 4
+a181 2
+	MANDOCERR_TBL, /* unsupported table syntax */
+	MANDOCERR_TBLOPT, /* unsupported table option */
+a190 1
+	int		  linesize;
+@
+
+
+1.185
+log
+@Traditional roff(7) explicitly allows certain control characters
+in the input stream (SOH, STX, ETX, ENQ, ACK, BEL, BS) for specific
+purposes (leaders, backspace, delimiters, .tr), but making sure
+these don't leak through to the output is tricky, so mark them as
+unsupported for now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.184 2015/01/21 20:33:25 schwarze Exp $ */
+d154 1
+@
+
+
+1.184
+log
+@Rudimentary implementation of the roff(7) \o escape sequence (overstrike).
+This is of some relevance because the pod2man(1) preamble abuses it
+for the icelandic letter Thorn, instead of simply using \(TP and \(Tp.
+Missing feature found by sthen@@ in DateTime::Locale::is_IS(3p).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.183 2015/01/20 21:16:51 schwarze Exp $ */
+d148 1
+a148 1
+	MANDOCERR_BADCHAR, /* skipping bad character: number */
+d175 1
+@
+
+
+1.183
+log
+@Split the -Werror message level into -Werror (broken manual, probably
+using mandoc is better than using groff) and -Wunsupp (manual using
+unsupported low-level roff(7) feature, probably using groff is better
+than using mandoc).  Once this feature is complete, it is intended
+to help porting, making the decision whether to USE_GROFF easier.
+
+As a first step, distinguish four classes of roff(7) requests:
+1. Supported (currently 24 requests)
+2. Currently ignored because unimportant (120)  ->  no message
+3. Ignored for good because insecure (14)  ->  -Werror
+4. Currently unsupported (68)  ->  these trigger the new -Wunsupp messages
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.182 2015/01/15 04:26:40 schwarze Exp $ */
+d402 2
+a403 1
+	ESCAPE_SKIPCHAR /* skip the next character */
+@
+
+
+1.182
+log
+@Fatal errors no longer exist.
+If a file can be opened, mandoc will produce some output;
+at worst, the output may be almost empty.
+Simplifies error handling and frees a message type for future use.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.181 2015/01/15 02:29:26 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@@openbsd.org>
+d34 1
+a34 1
+	MANDOCLEVEL_FATAL, /* input is borked */
+a138 3
+	MANDOCERR_TBL, /* bad table syntax */
+	MANDOCERR_TBLOPT, /* bad table option */
+	MANDOCERR_TBLLAYOUT, /* bad table layout */
+a143 1
+	MANDOCERR_TBLMACRO, /* ignoring macro in table: macro */
+a146 1
+	MANDOCERR_TOOLARGE, /* input too large */
+d150 1
+d172 9
+@
+
+
+1.181
+log
+@downgrade .so failure from FATAL to ERROR
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.180 2015/01/14 22:58:16 schwarze Exp $ */
+d151 1
+a175 4
+	MANDOCERR_FATAL, /* ===== start of fatal errors ===== */
+
+	MANDOCERR_TOOLARGE, /* input too large */
+
+@
+
+
+1.180
+log
+@downgrade ".so with absolute path" from FATAL to ERROR;
+allows to get rid of ROFF_ERR
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.179 2015/01/14 22:02:50 schwarze Exp $ */
+d170 1
+a177 1
+	MANDOCERR_SO_FAIL, /* .so request failed */
+@
+
+
+1.179
+log
+@To get rid of SYSERR entries in enum mandocerr, downgrade problems with
+missing and unreadable files from SYSERR to ERROR.
+Needed for upcoming work.
+As a bonus, this minimally simplifies code and documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.178 2015/01/14 17:49:15 schwarze Exp $ */
+d169 1
+a176 1
+	MANDOCERR_SO_PATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
+@
+
+
+1.178
+log
+@Simplify handling of system errors: just exit(3).
+We already do the same for malloc(3) failure.
+The is no virtue in trying to survive failure of fork(2) and the like.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.177 2014/12/16 23:44:41 schwarze Exp $ */
+d150 1
+a178 6
+	/* ===== system errors ===== */
+
+	MANDOCERR_SYSEXIT, /* gunzip failed with code */
+	MANDOCERR_SYSOPEN, /* cannot open file */
+	MANDOCERR_SYSSIG, /* gunzip died from signal */
+
+@
+
+
+1.177
+log
+@Ignore mdoc(7) and man(7) macros inside tbl(7) code because they
+would abort the table in an unclean way, causing assertion failures
+found by jsg@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.176 2014/12/01 08:05:52 schwarze Exp $ */
+a179 2
+	MANDOCERR_SYSDUP, /* cannot dup file descriptor */
+	MANDOCERR_SYSEXEC, /* cannot exec */
+a180 1
+	MANDOCERR_SYSFORK, /* cannot fork */
+a181 2
+	MANDOCERR_SYSPIPE, /* cannot open pipe */
+	MANDOCERR_SYSREAD, /* cannot read file */
+a182 2
+	MANDOCERR_SYSSTAT, /* cannot stat file */
+	MANDOCERR_SYSWAIT, /* wait failed */
+@
+
+
+1.176
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.175 2014/12/01 04:14:14 schwarze Exp $ */
+d147 1
+@
+
+
+1.175
+log
+@The file read.c is part of the parser, so it cannot include main.h,
+which is not part of the parser.  Besides, the parser *does* modify
+the input buffer, so marking it "const" in the mparse_readmem()
+interface is an outright lie.  Fix all this by killing the const,
+the UNCONST, and the bogus inclusion.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.174 2014/12/01 04:05:32 schwarze Exp $ */
+d417 2
+a423 2
+__BEGIN_DECLS
+
+@
+
+
+1.174
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.173 2014/11/30 05:29:00 schwarze Exp $ */
+d440 1
+a440 1
+enum mandoclevel  mparse_readmem(struct mparse *, const void *, size_t,
+@
+
+
+1.173
+log
+@Multiple fixes with respect to .Pf:
+* The first argument of .Pf is not parsed.
+* Normal delimiter handling does not apply to the first argument of .Pf.
+* Warn if nothing follows a prefix (inspired by groff_mdoc(7)).
+* In that case, do not suppress spacing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.172 2014/11/30 02:36:38 schwarze Exp $ */
+a17 2
+#ifndef MANDOC_H
+#define MANDOC_H
+a450 2
+
+#endif /*!MANDOC_H*/
+@
+
+
+1.172
+log
+@warn about attempts to call non-callable macros;
+inspired by a similar warning in the groff_mdoc(7) macros
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.171 2014/11/28 18:09:01 schwarze Exp $ */
+d106 1
+@
+
+
+1.171
+log
+@Drop useless architecture table.  Validating architecture names
+is a job for makewhatis(8)/mandoc.db(5), not for the parser.
+Removes 150 lines from source files and 4k (1%) from the binary.
+Bloat found by deraadt@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.170 2014/11/27 23:40:19 schwarze Exp $ */
+d80 1
+@
+
+
+1.170
+log
+@Downgrade .Bd -file from FATAL to ERROR.
+Since this was the last remaining FATAL error in this area,
+this change will allow major simplifications in the mdoc(7) parser.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.169 2014/11/26 21:40:17 schwarze Exp $ */
+a56 1
+	MANDOCERR_ARCH_BAD, /* unknown manual volume or arch: Dt ... volume */
+@
+
+
+1.169
+log
+@Simplify the mparse_open()/mparse_wait() interface.
+Don't bother the user with the PID of the child process,
+store it inside the opaque mparse handle.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.168 2014/10/29 00:17:43 schwarze Exp $ */
+d162 1
+a174 1
+	MANDOCERR_BD_FILE, /* NOT IMPLEMENTED: Bd -file */
+@
+
+
+1.168
+log
+@In terminal output, unify handling of Unicode and numbered character
+escape sequences just like it was earlier implemented for -Thtml.
+Do not let control characters other than ASCII 9 (horizontal tab)
+propagate to the output, even though groff allows them; but that
+really doesn't look like a great idea.
+
+Let mchars_num2char() return int such that we can distinguish invalid \N
+syntax from \N'0'.  This also reduces the danger of signed char issues
+popping up.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.167 2014/10/28 17:36:19 schwarze Exp $ */
+d439 1
+a439 2
+enum mandoclevel  mparse_open(struct mparse *, int *, const char *,
+			pid_t *);
+d449 1
+a449 1
+enum mandoclevel  mparse_wait(struct mparse *, pid_t);
+@
+
+
+1.167
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.166 2014/10/26 18:07:28 schwarze Exp $ */
+d428 1
+a428 1
+char		  mchars_num2char(const char *, size_t);
+@
+
+
+1.166
+log
+@In -Tascii mode, provide approximations even for some Unicode escape
+sequences above codepoint 512 by doing a reverse lookup in the
+existing mandoc_char(7) character table.
+
+Again, groff isn't smart enough to do this and silently discards such
+escape sequences without printing anything.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.165 2014/10/25 01:03:52 schwarze Exp $ */
+d436 1
+a436 1
+			const char *);
+@
+
+
+1.165
+log
+@integrate preconv(1) into mandoc(1);
+enhances functionality and reduces code and docs by more than 300 lines
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.164 2014/10/20 19:04:45 kristaps Exp $ */
+d429 1
+@
+
+
+1.164
+log
+@Protect the roff parser from dividing by zero.  ok schwarze@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.163 2014/10/14 02:16:06 schwarze Exp $ */
+d396 2
+@
+
+
+1.163
+log
+@Rudimentary implementation of the e, x, and z table layout modifiers
+to equalize, maximize, and ignore the width of columns.
+Does not yet take vertical rulers into account,
+and does not do line breaks within table cells.
+Considerably improves the lftp(1) manual; issue noticed by sthen@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.162 2014/10/12 19:31:41 schwarze Exp $ */
+d169 1
+@
+
+
+1.162
+log
+@Improve error handling in the eqn(7) parser.
+Get rid of the first fatal error, MANDOCERR_EQNSYNT.
+In eqn(7), there is no need to be bug-compatible with groff, so there
+is no need to abondon the whole equation in case of a syntax error.
+
+In particular:
+* Skip "back", "delim", "down", "fwd", "gfont", "gsize", "left",
+  "right", "size", and "up" without arguments.
+* Skip "gsize" and "size" with a non-numeric argument.
+* Skip closing delimiters that are not open.
+* Skip "above" outside piles.
+* For diacritic marks and binary operators without a left operand,
+  default to an empty box.
+* Let piles and matrices take one argument rather than insisting
+  on a braced list.  Let HTML output handle that, too.
+* When rewinding, if the root box is guaranteed to match
+  the termination condition, no error handling is needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.161 2014/10/11 21:14:16 schwarze Exp $ */
+d249 1
+@
+
+
+1.161
+log
+@warn about parentheses in function names after .Fn and .Fo;
+particularly useful when converting from other languages to mdoc(7);
+feature suggested by bentley@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.160 2014/10/10 15:26:29 schwarze Exp $ */
+d107 1
+a137 1
+	MANDOCERR_EQNSYNT, /* equation syntax error */
+@
+
+
+1.160
+log
+@sync Copyright years after merge to OpenBSD; no code change
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.159 2014/10/10 08:44:24 kristaps Exp $ */
+d117 1
+@
+
+
+1.159
+log
+@Re-write of eqn(7) parser and MathML output.
+This adds parser-level support for the grammar described by the eqn
+second-edition technical paper, "Typesetting Mathematics — User's Guide"
+(Kernighan, Cherry).
+The reason for this re-write is the grouping rules, which were not
+possible given the existing implementation.
+The re-write has also considerably simplified the HTML (and, if it ever
+is completed, terminal) front-end.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.158 2014/09/28 14:05:11 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.158
+log
+@Parse from/to clauses in eqn.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.157 2014/09/28 11:32:08 kristaps Exp $ */
+d309 4
+a312 15
+	EQN_LIST, /* subexpressions list */
+	EQN_MATRIX /* matrix subexpression */
+};
+
+enum	eqn_markt {
+	EQNMARK_NONE = 0,
+	EQNMARK_DOT,
+	EQNMARK_DOTDOT,
+	EQNMARK_HAT,
+	EQNMARK_TILDE,
+	EQNMARK_VEC,
+	EQNMARK_DYAD,
+	EQNMARK_BAR,
+	EQNMARK_UNDER,
+	EQNMARK__MAX
+a325 1
+	EQNPOS_OVER,
+d332 2
+d364 6
+a369 2
+	char		 *left;
+	char		 *right;
+a370 1
+	enum eqn_markt	  mark; /* a mark about the box */
+@
+
+
+1.157
+log
+@Add support for EQNPOS_SUBSUP and a doubly-linked eqn_box list.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.156 2014/09/12 00:54:10 schwarze Exp $ */
+d343 1
+@
+
+
+1.156
+log
+@warn about commas in function arguments; inspired by mdoclint(1)
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.155 2014/09/11 23:53:30 schwarze Exp $ */
+d339 1
+d370 1
+@
+
+
+1.155
+log
+@warn about botched .Xr ordering and punctuation below SEE ALSO;
+inspired by mdoclint(1)
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.154 2014/09/07 23:25:01 schwarze Exp $ */
+d116 1
+@
+
+
+1.154
+log
+@warn about AUTHORS sections without .An macros, inspired by mdoclint(1)
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.153 2014/09/03 23:21:47 schwarze Exp $ */
+d75 2
+@
+
+
+1.153
+log
+@Add *.gz support to apropos(1) -a, man(1), and even mandoc(1).
+Implemented by moving the zip code from makewhatis(8) to the parser lib.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.152 2014/08/06 15:09:05 schwarze Exp $ */
+d75 1
+@
+
+
+1.152
+log
+@Bring the handling of defective prologues even closer to groff,
+in particular relaxing the distinction between prologue and body
+and further improving messages.
+* The last .Dd wins and the last .Os wins, even in the body.
+* The last .Dt before the first body macro wins.
+* Missing title in .Dt defaults to UNTITLED.  Warn about it.
+* Missing section in .Dt does not default to 1.  But warn about it.
+* Do not warn multiple times about the same mdoc(7) prologue macro.
+* Warn about missing .Os.
+* Incomplete .TH defaults to empty strings.  Warn about it.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.151 2014/08/01 17:27:44 schwarze Exp $ */
+d174 4
+d179 3
+d183 1
+a183 1
+	MANDOCERR_SYSREAD, /* cannot read file */
+d433 2
+d444 1
+@
+
+
+1.151
+log
+@mention requests and macros in more messages
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.150 2014/08/01 15:08:46 schwarze Exp $ */
+d52 2
+a53 1
+	MANDOCERR_TH_MISSING, /* missing .TH macro, using "unknown 1" */
+d55 1
+d60 1
+a60 1
+	MANDOCERR_PROLOG_ORDER, /* prologue macros out of order: macro */
+d62 3
+a64 2
+	MANDOCERR_PROLOG_BAD, /* incomplete prologue, terminated by: macro */
+	MANDOCERR_PROLOG_ONLY, /* skipping prologue macro in body: macro */
+@
+
+
+1.150
+log
+@Dynamically allocate the stack of roff(7) .ie condition values
+and thus get rid of the last useless fatal error.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.149 2014/07/31 09:22:21 schwarze Exp $ */
+d54 2
+a55 2
+	MANDOCERR_MSEC_BAD, /* unknown manual section: section */
+	MANDOCERR_ARCH_BAD, /* unknown manual volume or arch: volume */
+d64 1
+a64 1
+	MANDOCERR_SO, /* .so is fragile, better use ln(1): .so path */
+d67 1
+a67 1
+	MANDOCERR_NAMESEC_FIRST, /* first section is not "NAME": title */
+d69 3
+a71 3
+	MANDOCERR_SEC_ORDER, /* sections out of conventional order: title */
+	MANDOCERR_SEC_REP, /* duplicate section title: title */
+	MANDOCERR_SEC_MSEC, /* unexpected section: title for ... only */
+d82 2
+a83 2
+	MANDOCERR_FI_SKIP, /* fill mode already enabled, skipping .fi */
+	MANDOCERR_NF_SKIP, /* fill mode already disabled, skipping .nf */
+d92 2
+a93 2
+	MANDOCERR_BD_NOTYPE, /* missing display type, using -ragged */
+	MANDOCERR_BL_LATETYPE, /* list type is not the first argument: arg */
+d95 5
+a99 5
+	MANDOCERR_EX_NONAME, /* missing name for .Ex, using "" */
+	MANDOCERR_IT_NOHEAD, /* empty head in list item: type */
+	MANDOCERR_IT_NOBODY, /* empty list item: type */
+	MANDOCERR_BF_NOFONT, /* missing font type, using \fR */
+	MANDOCERR_BF_BADFONT, /* unknown font type, using \fR: macro font */
+d106 2
+a107 2
+	MANDOCERR_BD_REP, /* skipping duplicate display type: type */
+	MANDOCERR_BL_REP, /* skipping duplicate list type: type */
+d109 1
+a109 1
+	MANDOCERR_AT_BAD, /* unknown AT&T UNIX version: version */
+d112 1
+a112 1
+	MANDOCERR_FT_BAD, /* unknown font, skipping request: request font */
+d143 4
+a146 4
+	MANDOCERR_BADCHAR, /* skipping bad character */
+	MANDOCERR_MACRO, /* skipping unknown macro */
+	MANDOCERR_IT_STRAY, /* skipping item outside list */
+	MANDOCERR_TA_STRAY, /* skipping column outside column list */
+d152 1
+a152 1
+	MANDOCERR_NAMESC, /* escaped character not allowed in a name */
+d154 2
+a155 2
+	MANDOCERR_BL_NOTYPE, /* missing list type, using -item */
+	MANDOCERR_NM_NONAME, /* missing manual name, using "" */
+d157 1
+a157 1
+	MANDOCERR_ST_BAD, /* unknown standard specifier: standard */
+d165 1
+a165 1
+	MANDOCERR_BADDISP, /* NOT IMPLEMENTED: .Bd -file */
+@
+
+
+1.149
+log
+@Split MANDOCERR_IGNARGV into one message for .An and one for .Bl
+and report the macro name and argument.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.148 2014/07/31 00:41:10 schwarze Exp $ */
+a167 1
+	MANDOCERR_MEM, /* static buffer exhausted */
+@
+
+
+1.148
+log
+@In .Bl -column, if some of the column width declarations are given
+right after the -column argument and some at the very end of the
+argument list, after some other arguments like -compact, concatenate
+the column lists.
+This gets rid of one of the last useless FATAL errors
+and actually shortens the code by a few lines.
+
+This fixes an issue introduced more than five years ago, at first
+causing an assert() since mdoc_action.c rev. 1.14 (June 17, 2009),
+then later a FATAL error since mdoc_validate rev. 1.130 (Nov. 30, 2010),
+and marked as "TODO" ever since.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.147 2014/07/30 23:38:52 schwarze Exp $ */
+a102 1
+	MANDOCERR_IGNARGV, /* skipping argument */
+d105 1
+d108 1
+@
+
+
+1.147
+log
+@Remove the useless FATAL error "argument count wrong, violates syntax".
+The last remaining instance was .It in .Bl -column with more than one
+excessive .Ta.  However, simply downgrading from FATAL to ERROR, it just
+works fine, almost the same way as in groff, without any other changes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.146 2014/07/30 17:06:26 schwarze Exp $ */
+a163 1
+	MANDOCERR_COLUMNS, /* column syntax is inconsistent */
+@
+
+
+1.146
+log
+@Get rid of the useless FATAL error "child violates parent syntax".
+When finding items outside lists, simply skip them and throw an ERROR.
+Handle subsections before the first section instead of bailing out.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.145 2014/07/30 14:50:08 schwarze Exp $ */
+a165 1
+	MANDOCERR_SYNTARGCOUNT, /* argument count wrong, violates syntax */
+@
+
+
+1.145
+log
+@Remove two useless FATAL errors.
+When a file contains neither text nor macros, treat it as an empty document.
+When the mdoc(7) document prologue is incomplete, use some default values.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.144 2014/07/30 12:58:21 schwarze Exp $ */
+d144 1
+a165 1
+	MANDOCERR_SYNTCHILD, /* child violates parent syntax */
+@
+
+
+1.144
+log
+@better name and wording for the last two non-generic errors
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.143 2014/07/30 00:19:16 schwarze Exp $ */
+a162 1
+	MANDOCERR_NOTMANUAL, /* not a manual */
+a168 1
+	MANDOCERR_NODOCPROLOG, /* no document prologue */
+@
+
+
+1.143
+log
+@Various improvements related to .Ex and .Rv:
+* let .Nm fall back to the empty string, not to UNKNOWN
+* never let .Rv copy an argument from .Nm
+* avoid spurious \fR after empty .Nm in -Tman
+* correct handling of .Ex and .Rv in -Tman
+* correct the wording of the output for .Rv without arguments
+* use non-breaking spaces in .Ex and .Rv output where required
+* split MANDOCERR_NONAME into a warning for .Ex and an error for .Nm
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.142 2014/07/09 11:31:43 schwarze Exp $ */
+d152 1
+d154 1
+d156 1
+a156 3
+	MANDOCERR_UNAME, /* uname(3) system call failed */
+	MANDOCERR_NUMERIC, /* request requires a numeric argument */
+	MANDOCERR_BL_NOTYPE, /* missing list type, using -item */
+@
+
+
+1.142
+log
+@mark defos as const; nobody needs to change it,
+and it is occasionally useful to be able to pass literal strings
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.141 2014/07/07 21:36:20 schwarze Exp $ */
+d95 1
+a150 1
+	MANDOCERR_NONAME, /* manual name not yet set */
+d152 1
+@
+
+
+1.141
+log
+@Clean up ERROR messages related to document structure and macros:
+Hierarchical naming and mention macro names in messages.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.140 2014/07/07 16:12:20 schwarze Exp $ */
+d422 2
+a423 1
+struct mparse	 *mparse_alloc(int, enum mandoclevel, mandocmsg, char *);
+@
+
+
+1.140
+log
+@no need to delete any content from .Rs blocks,
+and downgrade the related message from ERROR to WARNING
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.139 2014/07/07 15:03:43 schwarze Exp $ */
+d78 1
+a78 1
+	MANDOCERR_BLOCK_NEST, /* blocks badly nested: macro ... */
+d84 1
+a84 1
+	MANDOCERR_LINESCOPE, /* line scope broken: macro breaks macro */
+d139 1
+d142 7
+a150 1
+	MANDOCERR_MACRO, /* skipping unknown macro */
+a152 4
+	MANDOCERR_STRAYTA, /* skipping column outside column list */
+	MANDOCERR_NOSCOPE, /* skipping end of block that is not open */
+	MANDOCERR_SCOPEBROKEN, /* missing end of block */
+	MANDOCERR_SCOPEEXIT, /* scope open on exit */
+@
+
+
+1.139
+log
+@no need to skip content before first section header
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.138 2014/07/07 11:35:06 schwarze Exp $ */
+d108 1
+a144 1
+	MANDOCERR_RS_SKIP, /* skipping invalid content in .Rs block: macro */
+@
+
+
+1.138
+log
+@implement .dei and .ami
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.137 2014/07/06 19:09:00 schwarze Exp $ */
+a141 1
+	MANDOCERR_NOTEXT, /* skipping text before first section header */
+@
+
+
+1.137
+log
+@Clean up messages related to plain text and to escape sequences.
+* Mention invalid escape sequences and string names, and fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.136 2014/07/05 12:34:17 schwarze Exp $ */
+a143 1
+	MANDOCERR_REQUEST, /* NOT IMPLEMENTED: skipping request */
+@
+
+
+1.136
+log
+@Cleanup with respect to bad macro arguments.
+* Fix .Sm with invalid arg: move arg out and toggle mode.
+* Promote "unknown standard" from WARNING to ERROR, it loses information.
+* Delete MANDOCERR_BADWIDTH, it would only indicate a mandoc(1) bug.
+* Do not report MANDOCERR_BL_LATETYPE when there is no type at all.
+* Mention macro names, arguments and fallbacks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.135 2014/07/05 01:12:20 schwarze Exp $ */
+d101 1
+a101 1
+	/* related to bad macro arguments */
+d103 1
+d112 6
+a117 6
+	MANDOCERR_NOBLANKLN, /* blank line in non-literal context */
+	MANDOCERR_BADTAB, /* tab in non-literal context */
+	MANDOCERR_EOLNSPACE, /* end of line whitespace */
+	MANDOCERR_BADCOMMENT, /* bad comment style */
+	MANDOCERR_BADESCAPE, /* bad escape sequence */
+	MANDOCERR_BADQUOTE, /* unterminated quoted string */
+@
+
+
+1.135
+log
+@Cleanup regarding -offset and -width:
+* Bugfix: Last one wins, not first one.
+* Fix .Bl -width without argument: it means 0n, so do not ignore it.
+* Report macro names, argument names and fallbacks in related messages.
+* Simplify: Garbage collect auxiliary variables in pre_bd() and pre_bl().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.134 2014/07/04 16:12:08 schwarze Exp $ */
+d94 1
+a94 1
+	MANDOCERR_BL_WIDTH, /* missing -width in -tag list, using 8n */
+d98 1
+a98 1
+	MANDOCERR_BF_BADFONT, /* unknown font type, using \fR: Bf font */
+d104 5
+a108 7
+	MANDOCERR_DISPREP, /* duplicate display type */
+	MANDOCERR_LISTREP, /* duplicate list type */
+	MANDOCERR_BADATT, /* unknown AT&T UNIX version */
+	MANDOCERR_BADBOOL, /* bad Boolean value */
+	MANDOCERR_BADFONT, /* unknown font */
+	MANDOCERR_BADSTANDARD, /* unknown standard specifier */
+	MANDOCERR_BADWIDTH, /* bad width argument */
+d146 1
+@
+
+
+1.134
+log
+@Clean up messages regarding excess arguments:
+* Downgrade ".Bf -emphasis Em" from FATAL to WARNING.
+* Mention the macros, the arguments, and the fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.133 2014/07/04 01:50:06 schwarze Exp $ */
+d90 1
+d103 1
+a103 1
+	MANDOCERR_ARGVREP, /* duplicate argument */
+@
+
+
+1.133
+log
+@Clean up messages related to missing arguments.
+* Do not warn about empty -column cells, they seem valid to me.
+* Downgrade empty item and missing -std from ERROR to WARNING.
+* Hierarchical naming.
+* Descriptive, not imperative style.
+* Mention macro names, argument names, and fallbacks.
+* Garbage collect some unreachable code in post_it().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.132 2014/07/03 23:24:56 schwarze Exp $ */
+d96 2
+a97 1
+	MANDOCERR_FONTTYPE, /* missing font type */
+d154 2
+a155 1
+	MANDOCERR_ARGSLOST, /* line argument(s) will be lost */
+a162 1
+	MANDOCERR_SYNTARGVCOUNT, /* argument count wrong, violates syntax */
+@
+
+
+1.132
+log
+@Fix formatting of empty .Bl -inset item heads.
+Downgrade empty item heads from ERROR to WARNING.
+Show the list type in the error message.
+Choose better variable names for nodes in post_it().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.131 2014/07/03 21:23:54 schwarze Exp $ */
+d91 5
+a95 4
+	MANDOCERR_DISPTYPE, /* missing display type */
+	MANDOCERR_LISTFIRST, /* list type must come first */
+	MANDOCERR_NOWIDTHARG, /* tag lists require a width argument */
+	MANDOCERR_IT_NOHEAD, /* missing head in list item: type */
+d97 1
+a150 3
+	/* FIXME: merge following with MANDOCERR_ARGCOUNT */
+	MANDOCERR_NOBODY, /* macro requires body argument(s) */
+	MANDOCERR_NOARGV, /* macro requires argument(s) */
+d152 1
+a152 1
+	MANDOCERR_LISTTYPE, /* missing list type */
+@
+
+
+1.131
+log
+@MANDOCERR_NOARGS reported three completely unrelated classes of problems.
+Split the roff(7) parts out of it and report the request names for these cases.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.130 2014/07/02 20:19:11 schwarze Exp $ */
+d94 1
+a149 1
+	MANDOCERR_NOARGS, /* macro requires line argument(s) */
+@
+
+
+1.130
+log
+@Improve and test the messages about empty macros,
+in particular reporting the macro names involved.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.129 2014/07/02 13:10:45 schwarze Exp $ */
+d86 3
+a88 1
+	/* related to missing macro arguments */
+@
+
+
+1.129
+log
+@Disentangle the MANDOCERR_CHILD message, which reported three
+completely different things, into three distinct messages.
+Also mention the macro names we are talking about.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.128 2014/07/02 11:43:20 schwarze Exp $ */
+d87 1
+a87 1
+	MANDOCERR_MACROEMPTY, /* skipping empty macro */
+@
+
+
+1.128
+log
+@Clean up warnings related to macros and nesting.
+* Hierarchical naming of enum mandocerr items.
+* Improve the wording to make it comprehensible.
+* Mention the offending macro.
+* Garbage collect one chunk of ancient, long unreachable code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.127 2014/07/02 05:52:25 schwarze Exp $ */
+a78 1
+	MANDOCERR_CHILD, /* child violates parent syntax */
+d80 2
+d140 1
+@
+
+
+1.127
+log
+@Improve "skipping paragraph macro" messages,
+showing which macro was skipped and before or after what.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.126 2014/07/02 03:48:07 schwarze Exp $ */
+d77 2
+a78 2
+	MANDOCERR_IGNNS, /* skipping no-space macro */
+	MANDOCERR_SCOPENEST, /* blocks badly nested */
+d80 4
+a83 3
+	MANDOCERR_NESTEDDISP, /* nested displays are not portable */
+	MANDOCERR_SCOPEREP, /* already in literal mode */
+	MANDOCERR_LINESCOPE, /* line scope broken */
+a91 1
+	MANDOCERR_WNOSCOPE, /* skipping end of block that is not open */
+@
+
+
+1.126
+log
+@Implement the obsolete macros .En .Es .Fr .Ot for backward compatibility,
+since this is hardly more complicated than explicitly ignoring them
+as we did in the past.  Of course, do not use them!
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.125 2014/07/01 22:37:15 schwarze Exp $ */
+d75 2
+a76 2
+	MANDOCERR_IGNPAR, /* skipping paragraph macro */
+	MANDOCERR_MOVEPAR, /* moving paragraph macro out of list */
+@
+
+
+1.125
+log
+@Clean up the warnings related to document structure.
+* Hierarchical naming of the related enum mandocerr items.
+* Mention the offending macro, section title, or string.
+While here, improve some wordings:
+* Descriptive instead of imperative style.
+* Uniform style for "missing" and "skipping".
+* Where applicable, mention the fallback used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.124 2014/06/30 23:45:07 schwarze Exp $ */
+d74 1
+a74 1
+	MANDOCERR_MACROOBS, /* skipping obsolete macro */
+@
+
+
+1.124
+log
+@garbage collect two unused enum mandocerr items
+and fix a couple of comments while here
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.123 2014/06/25 00:20:19 schwarze Exp $ */
+d52 10
+a61 10
+	MANDOCERR_TH_MISSING, /* no TH macro in document */
+	MANDOCERR_TITLE_CASE, /* document title should be all caps */
+	MANDOCERR_MSEC_BAD, /* unknown manual section */
+	MANDOCERR_ARCH_BAD, /* unknown manual volume or arch */
+	MANDOCERR_DATE_MISSING, /* date missing, using today's date */
+	MANDOCERR_DATE_BAD, /* cannot parse date, using it verbatim */
+	MANDOCERR_PROLOG_ORDER, /* prologue macros out of order */
+	MANDOCERR_PROLOG_REP, /* duplicate prologue macro */
+	MANDOCERR_PROLOG_BAD, /* macro not allowed in prologue: macro */
+	MANDOCERR_PROLOG_ONLY, /* macro not allowed in body: macro */
+d66 6
+a71 6
+	MANDOCERR_SEC_BEFORE, /* content before the first section header */
+	MANDOCERR_NAMESECFIRST, /* NAME section must come first */
+	MANDOCERR_BADNAMESEC, /* bad NAME section contents */
+	MANDOCERR_SECOOO, /* sections out of conventional order */
+	MANDOCERR_SECREP, /* duplicate section name */
+	MANDOCERR_SECMSEC, /* section header suited to sections ... */
+d135 1
+a135 1
+	MANDOCERR_NOTEXT, /* skipping text before the first section header */
+@
+
+
+1.123
+log
+@Improve messages related to the roff(7) .so request.
+
+In all these messages, show the filename argument that was passed
+to the .so request.
+
+In case of failure, show an additional message reporting the file
+and the line number where the failing request was found.
+The existing message reporting the reason for the failure -
+for example, "Permission denied" - is left in place, unchanged.
+
+Inspired by a question asked by Nick@@ after he saw the
+confusing old messages that used to be emitted in this area.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.122 2014/06/20 23:02:31 schwarze Exp $ */
+d60 2
+a61 2
+	MANDOCERR_PROLOG_BAD, /* macro not allowed in prologue */
+	MANDOCERR_PROLOG_ONLY, /* macro not allowed in body */
+d64 1
+a64 1
+	MANDOCERR_SO, /* .so is fragile, better use ln(1) */
+d109 1
+a109 1
+	MANDOCERR_BADESCAPE, /* unknown escape sequence */
+a111 3
+	/* related to equations */
+	MANDOCERR_EQNQUOTE, /* unexpected literal in equation */
+
+a150 1
+	MANDOCERR_BODYLOST, /* body argument(s) will be lost */
+d155 1
+a155 1
+	MANDOCERR_NOTMANUAL, /* manual isn't really a manual */
+@
+
+
+1.122
+log
+@As suggested by jmc@@, only include line and column numbers into messages
+when they are meaningful, to avoid confusing stuff like this:
+$ mandoc /dev/null
+mandoc: /dev/null:0:1: FATAL: not a manual
+Instead, just say:
+mandoc: /dev/null: FATAL: not a manual
+
+Another example this applies to is documents having a prologue,
+but lacking a body.  Do not throw a FATAL error for these; instead,
+issue a WARNING and show the empty document, in the man(7) case with
+the same amount of blank lines as groff does.  Also downgrade mdoc(7)
+documents having content before the first .Sh from FATAL to WARNING.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.121 2014/06/20 17:24:00 schwarze Exp $ */
+d165 2
+a166 1
+	MANDOCERR_SOPATH, /* NOT IMPLEMENTED: .so with absolute path or ".." */
+@
+
+
+1.121
+log
+@Start systematic improvements of error reporting.
+So far, this covers all WARNINGs related to the prologue.
+
+1) hierarchical naming of MANDOCERR_* constants
+2) mention the macro name in messages where that adds clarity
+3) add one missing MANDOCERR_DATE_MISSING msg
+4) fix the wording of one message related to the man(7) prologue
+
+Started on the plane back from Ottawa.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.120 2014/04/20 16:46:04 schwarze Exp $ */
+d65 2
+a165 1
+	MANDOCERR_NODOCBODY, /* no document body */
+@
+
+
+1.120
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.119 2014/03/28 23:26:25 schwarze Exp $ */
+d52 10
+a61 10
+	MANDOCERR_NOTITLE, /* no title in document */
+	MANDOCERR_UPPERCASE, /* document title should be all caps */
+	MANDOCERR_BADMSEC, /* unknown manual section */
+	MANDOCERR_BADVOLARCH, /* unknown manual volume or arch */
+	MANDOCERR_NODATE, /* date missing, using today's date */
+	MANDOCERR_BADDATE, /* cannot parse date, using it verbatim */
+	MANDOCERR_PROLOGOOO, /* prologue macros out of order */
+	MANDOCERR_PROLOGREP, /* duplicate prologue macro */
+	MANDOCERR_BADPROLOG, /* macro not allowed in prologue */
+	MANDOCERR_BADBODY, /* macro not allowed in body */
+@
+
+
+1.119
+log
+@Allow leading and trailing vertical lines,
+and format them in the same way as groff.
+While here, do not require whitespace before vertical lines
+in layout specifications.
+Issues found by bentley@@ in mpv(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.118 2014/03/23 11:25:26 schwarze Exp $ */
+d366 1
+a366 1
+ * line and position. 
+d412 1
+a412 1
+char	 	  mchars_num2char(const char *, size_t);
+d414 1
+a414 1
+int		  mchars_spec2cp(const struct mchars *, 
+d416 1
+a416 1
+const char	 *mchars_spec2str(const struct mchars *, 
+d425 1
+a425 1
+void		  mparse_result(struct mparse *, 
+@
+
+
+1.118
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.117 2014/03/19 22:20:43 schwarze Exp $ */
+d243 1
+@
+
+
+1.117
+log
+@Without the MPARSE_SO option, if the file contains nothing but a
+single .so request, do not read the file pointed to, but instead
+let mparse_result() provide the file name pointed to as a return
+value.  To be used by makewhatis(8) in the future.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.116 2014/03/19 21:51:20 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012, 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+a407 1
+void		 *mandoc_calloc(size_t, size_t);
+a408 4
+void		 *mandoc_malloc(size_t);
+void		 *mandoc_realloc(void *, size_t);
+char		 *mandoc_strdup(const char *);
+char		 *mandoc_strndup(const char *, size_t);
+@
+
+
+1.116
+log
+@Generalize the mparse_alloc() and roff_alloc() functions by giving
+them an "options" argument, replacing the existing "inttype" and
+"quick" arguments, preparing for a future MPARSE_SO option.
+Store this argument in struct mparse and struct roff, replacing the
+existing "inttype", "parsetype", and "quick" members.
+No functional change except one tiny cosmetic fix in roff_TH().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.115 2014/01/22 20:58:39 schwarze Exp $ */
+d430 1
+a430 1
+			struct mdoc **, struct man **);
+@
+
+
+1.115
+log
+@Implement the \: (optional line break) escape sequence,
+documented in the Ossanna-Kernighan-Ritter troff manual
+and also supported by groff.
+
+Missing feature reported by Steffen Nurpmeso <sdaoden at gmail dot com>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.114 2014/01/05 20:26:36 schwarze Exp $ */
+d375 6
+a380 9
+ * The type of parse sequence.  This value is usually passed via the
+ * mandoc(1) command line of -man and -mdoc.  It's almost exclusively
+ * -mandoc but the others have been retained for compatibility.
+ */
+enum	mparset {
+	MPARSE_AUTO, /* magically determine the document type */
+	MPARSE_MDOC, /* assume -mdoc */
+	MPARSE_MAN /* assume -man */
+};
+d422 1
+a422 2
+struct mparse	 *mparse_alloc(enum mparset, enum mandoclevel,
+			mandocmsg, char *, int);
+@
+
+
+1.114
+log
+@Add an option -Q (quick) to mandocdb(8)
+for accelerated generation of reduced-size databases.
+
+Implement this by allowing the parsers to optionally
+abort the parse sequence after the NAME section.
+
+While here, garbage collect the unused void *arg attribute of
+struct mparse and mparse_alloc() and fix some errors in mandoc(3).
+
+This reduces the processing time of mandocdb(8) on /usr/share/man
+by a factor of 2 and the database size by a factor of 4.
+However, it still takes 5 times the time and 6 times the space
+of makewhatis(8), so more work is clearly needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.113 2014/01/02 16:29:55 schwarze Exp $ */
+d23 1
+@
+
+
+1.113
+log
+@Since the functions in read.c are part of the mandoc(3) library,
+do not print to stderr.  Instead, properly use the mmsg callback.
+Issue noticed by Abhinav Upadhyay <er dot abhinav dot upadhyay
+at gmail dot com> and Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.112 2013/12/30 18:30:32 schwarze Exp $ */
+d425 1
+a425 1
+			mandocmsg, void *, char *);
+@
+
+
+1.112
+log
+@Remove duplicate const specifiers from the declaration of mandoc_escape().
+Found by Thomas Klausner <wiz at NetBSD dot org> using clang.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.111 2013/10/05 20:30:05 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d155 1
+d166 7
+@
+
+
+1.111
+log
+@Cleanup suggested by gcc-4.8.1, following hints by Christos Zoulas:
+- avoid bad qualifier casting in roff.c, roff_parsetext()
+  by changing the mandoc_escape arguments to "const char const **"
+- avoid bad qualifier casting in mandocdb.c, index_merge()
+- do not complain about unused variables in test-*.c
+- garbage collect a few unused variables elsewhere
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.110 2013/09/16 00:25:07 schwarze Exp $ */
+d403 1
+a403 2
+enum mandoc_esc	  mandoc_escape(const char const **,
+			const char const **, int *);
+@
+
+
+1.110
+log
+@One of the WARNING messages has to use the word "section" twice in two
+different meanings, that cannot be helped.  But we can make this less
+confusing by stating that the second instance refers to stuff like (2),
+(3), and (9), and by adding the sections header the first instance
+refers to, for example ERRORS or RETURN VALUES.
+
+Source for confusion noticed by Jan Stary <hans at stare dot cz>,
+better wording suggested by jmc@@, tweaked by me.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.109 2013/08/08 20:07:47 schwarze Exp $ */
+d403 2
+a404 1
+enum mandoc_esc	  mandoc_escape(const char **, const char **, int *);
+@
+
+
+1.109
+log
+@Implement the roff(7) font-escape sequence \f(BI "bold+italic".
+This improves the formatting of about 40 base manuals
+and reduces groff-mandoc formatting differences in base by about 5%.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.108 2013/07/13 12:52:07 schwarze Exp $ */
+d68 1
+a68 1
+	MANDOCERR_SECMSEC, /* section not in conventional manual section */
+@
+
+
+1.108
+log
+@Rudimentary implementation of the .it request (input line trap).
+As with any low-level roff request involving subtle interactions
+with macro internals, this implementation is not exact, but it
+does handle the simplest cases.
+
+This request occurs in man(7) code generated from DocBook,
+for example mysql(1) and yasm_arch(7).
+Thanks to brad@@ for reporting the issue back in January 2011.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.107 2013/05/31 21:37:17 schwarze Exp $ */
+d383 1
+@
+
+
+1.107
+log
+@The name "struct tbl" was badly misleading for two reasons:
+1) This struct almost exclusively contains the table options.
+2) Information about the table as a whole is actually in "struct tbl_node".
+Besides, "struct tbl" was almost impossible to search for.
+So rename it to "struct tbl_opts".  No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.106 2012/11/19 22:30:58 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d148 1
+@
+
+
+1.106
+log
+@Do not crash on stray .Ta macros found outside column lists.
+Problem reported by jmc@@, thanks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.105 2012/11/16 22:21:05 schwarze Exp $ */
+d167 1
+a167 1
+struct	tbl {
+d266 1
+a266 1
+	struct tbl	 *tbl;
+@
+
+
+1.105
+log
+@Warn about unknown volume or arch in Dt macro arguments;
+patch written by Nicolas Joly <njoly at pasteur dot fr>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.104 2012/07/18 11:11:12 schwarze Exp $ */
+d4 1
+d139 1
+@
+
+
+1.104
+log
+@Fix handling of paragraph macros inside lists:
+* When they are trailing the last item, move them outside the list.
+* When they are trailing any other none-compact item, drop them.
+
+OpenBSD rev. mdoc_validate.c 1.107, mdoc.c 1.91
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.103 2012/07/12 15:11:14 schwarze Exp $ */
+d53 1
+@
+
+
+1.103
+log
+@The post_nm() validation function crashed when the first .Nm child node
+was a non-text node.  Fix this by rewriting post_nm() to always set
+the meta name to UNKNOWN when the name is missing or unusable.
+While here, make MANDOCERR_NONAME an ERROR, as it usually renders
+the page content unintelligible.
+
+Bug reported by Maxim <Belooussov at gmail dot com>, thanks.
+OpenBSD rev. 1.105
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.102 2012/05/31 22:29:13 schwarze Exp $ */
+d71 1
+@
+
+
+1.102
+log
+@Implement the roff \z escape sequence, intended to output the next
+character without advancing the cursor position; implement it to
+simply skip the next character, as it will usually be overwritten.
+
+With this change, the pod2man(1) preamble user-defined string \*:,
+intended to render as a diaeresis or umlaut diacritic above the
+preceding character, is rendered in a slightly less ugly way,
+though still not correctly.  It was rendered as "z.." and is now
+rendered as ".".
+
+Given that the definition of \*: uses elaborate manual \h positioning,
+there is little chance for mandoc(1) to ever render it correctly,
+but at least we can refrain from printing out a spurious "z", and
+we can make the \z do something semi-reasonable for easier cases.
+
+"just commit" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.101 2012/05/27 17:54:54 schwarze Exp $ */
+a63 1
+	MANDOCERR_NONAME, /* manual name not yet set */
+d131 1
+@
+
+
+1.101
+log
+@Do not handle vertical lines as additional tbl(7) columns,
+instead save their properties with the following column.
+This simplifies layout parsing and saves a lot of code
+related to column handling.
+
+At output time, print all white space and vertical lines
+separating columns before printing the following column,
+and none after printing the preceding column, considerably
+simplifying white space handling and width calculations.
+
+No functional change, but it saves 150 lines of code,
+and it allows the next patch to tbl_term.c, tbl_literal().
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.100 2012/05/27 17:48:57 schwarze Exp $ */
+d382 2
+a383 1
+	ESCAPE_NOSPACE /* suppress space if the last on a line */
+@
+
+
+1.100
+log
+@Support -Ios='OpenBSD 5.1' to override uname(3) as the source of the
+default value for the mdoc(7) .Os macro.
+Needed for man.cgi on the OpenBSD website.
+
+Problem with man.cgi first noticed by deraadt@@;
+beck@@ and deraadt@@ agree with the way to solve the issue.
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.99 2012/02/16 20:51:31 joerg Exp $ */
+a177 6
+enum	tbl_headt {
+	TBL_HEAD_DATA, /* plug in data from tbl_dat */
+	TBL_HEAD_VERT, /* vertical spacer */
+	TBL_HEAD_DVERT  /* double-vertical spacer */
+};
+
+a183 1
+	enum tbl_headt	  pos;
+d185 1
+a199 2
+	TBL_CELL_VERT, /* | */
+	TBL_CELL_DVERT, /* || */
+d208 1
+@
+
+
+1.99
+log
+@Add mparse_readmem, which allows application to run the parser directly
+from memory, e.g. after de-compressing a document.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.98 2011/11/08 00:15:23 kristaps Exp $ */
+d416 2
+a417 2
+struct mparse	 *mparse_alloc(enum mparset, 
+			enum mandoclevel, mandocmsg, void *);
+@
+
+
+1.98
+log
+@Const-ify some mchars arguments.  I think these are non-const for historical
+dumbness on my part.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.97 2011/11/07 01:24:40 schwarze Exp $ */
+d421 2
+@
+
+
+1.97
+log
+@When the HEAD scope of .TP is broken by another block macro,
+do not abort with a FATAL error, but report a report a WARNING,
+remove the broken .TP from the syntax tree, and prod on.
+Reported repeatedly by ports people, at least by brad@@ and jeremy@@.
+Also fixes rendition(4) in Xenocara.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.96 2011/10/06 22:29:12 kristaps Exp $ */
+d412 1
+a412 1
+int		  mchars_spec2cp(struct mchars *, 
+d414 1
+a414 1
+const char	 *mchars_spec2str(struct mchars *, 
+@
+
+
+1.96
+log
+@If -Tman is specified and input is -man, echo the preprocessed (`so'
+replaced by file) input.  This replaces earlier behaviour of doing
+nothing, which I found unexpected (mandoc should always output).
+
+This requires a buffer in read.c that saves the input lines before being
+parsed, with a special hook if `so' is invoked.  This buffer is just
+flushed to output if -mman is the input.
+
+While mucking around doing this, I also alpha-ordered the mandoc.h
+functions.
+
+Ok schwarze@@, with no screaming when the polished patch was published.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.95 2011/07/23 18:44:42 kristaps Exp $ */
+a152 1
+	MANDOCERR_SYNTLINESCOPE, /* line scope broken, syntax violated */
+@
+
+
+1.95
+log
+@Note GNU extensions in eqn.7.  Also add `col' and `pile', which are
+mentioned briefly in the eqn User's Manual, but otherwise are
+unspecified.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.94 2011/07/23 18:41:18 kristaps Exp $ */
+a402 9
+void		  mparse_free(struct mparse *);
+void		  mparse_reset(struct mparse *);
+struct mparse	 *mparse_alloc(enum mparset, 
+			enum mandoclevel, mandocmsg, void *);
+enum mandoclevel  mparse_readfd(struct mparse *, int, const char *);
+void		  mparse_result(struct mparse *, struct mdoc **, struct man **);
+const char	 *mparse_strerror(enum mandocerr);
+const char	 *mparse_strlevel(enum mandoclevel);
+
+d404 1
+a408 3
+
+enum mandoc_esc	  mandoc_escape(const char **, const char **, int *);
+
+d410 1
+d413 15
+a427 4
+const char	 *mchars_spec2str(struct mchars *, const char *, size_t, size_t *);
+int		  mchars_spec2cp(struct mchars *, const char *, size_t);
+void		  mchars_free(struct mchars *);
+
+@
+
+
+1.94
+log
+@Add support for tdefine and ndefine.  Consolidate some error messages.  Add
+somem more version notes (getting there).  Have the equation nanme be captured.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.93 2011/07/23 12:10:16 kristaps Exp $ */
+d325 1
+d329 1
+@
+
+
+1.93
+log
+@Add `fat' font.  This pretty much brings us in line with the second
+edition of eqn.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.92 2011/07/23 12:01:54 kristaps Exp $ */
+a112 1
+	MANDOCERR_EQNNEST, /* too many nested equation defines */
+d360 1
+@
+
+
+1.92
+log
+@Add matrix support.  Also remove "above" notion, as all elements in a
+list are delimited by their "aboveness" and it's superfluous.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.91 2011/07/22 14:55:07 kristaps Exp $ */
+d309 1
+@
+
+
+1.91
+log
+@Add support for `gsize' eqn token (introduced in second-edition troff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.90 2011/07/22 09:57:04 kristaps Exp $ */
+d288 2
+a289 1
+	EQN_LIST /* list of subexpressions */
+d328 3
+a352 1
+	int		  above; /* next node is above */
+@
+
+
+1.90
+log
+@Give lists their own eqn function.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.89 2011/07/21 23:30:39 kristaps Exp $ */
+a112 1
+	MANDOCERR_EQNARGS, /* bad equation macro arguments */
+@
+
+
+1.89
+log
+@Complete eqn.7 parsing.  Features all productions from the original 1975
+CACM paper in an LR(1) parse (1 -> eqn_rewind()).  Right now the code is
+a little jungly, but will clear up as I consolidate parse components.
+The AST structure will also be cleaned up, as right now it's pretty ad
+hoc (this won't change the parse itself).  I added the mandoc_strndup()
+function will here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.88 2011/07/21 15:21:13 kristaps Exp $ */
+d288 2
+a289 1
+	EQN_SUBEXPR /* nested subexpression */
+@
+
+
+1.88
+log
+@Support `size' constructs in eqn.7.  Generalise mandoc_strontou to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.87 2011/07/21 14:13:00 kristaps Exp $ */
+d117 3
+a318 1
+	EQNPOS_ABOVE,
+d322 8
+d338 7
+a344 2
+	struct eqn_box	 *child; /* child node */
+	struct eqn_box	 *next; /* next in tree */
+a345 1
+	char		 *text; /* text (or NULL) */
+d348 2
+d410 1
+@
+
+
+1.87
+log
+@Full support for eqn positionals (above, over, sup, sub, etc.).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.86 2011/07/21 13:37:04 kristaps Exp $ */
+d325 2
+@
+
+
+1.86
+log
+@Add eqn subexpression fonts.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.85 2011/07/21 13:18:24 kristaps Exp $ */
+d309 11
+d328 1
+d334 4
+@
+
+
+1.85
+log
+@Add support for markers.  These decorate the last box: see eqn.7.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.84 2011/07/21 12:30:44 kristaps Exp $ */
+d301 9
+a309 1
+/*
+d318 2
+a319 1
+	enum eqn_markt	  mark; /* whether 'marked' */
+@
+
+
+1.84
+log
+@Support nested `{, }' subexpressions in eqn.  Document in code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.83 2011/07/21 11:34:53 kristaps Exp $ */
+d288 13
+d310 1
+@
+
+
+1.83
+log
+@Flip eqn into using parsed nodes.  I've temporarily disabled printing
+these in the front-ends except for -Ttree, which will display the parsed
+tree.
+
+While here, fix that quoted strings aren't scanned for replacement parts.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.82 2011/07/21 10:24:35 kristaps Exp $ */
+d115 2
+d283 3
+a285 2
+	EQN_ROOT,
+	EQN_TEXT
+d288 4
+d293 4
+a296 4
+	enum eqn_boxt	  type;
+	struct eqn_box	 *child;
+	struct eqn_box	 *next;
+	char		 *text;
+d300 1
+a300 1
+	struct eqn_box	 *root;
+@
+
+
+1.82
+log
+@Finish the eqn syntactic parser.  This correctly parses terms and does
+the proper `define' dance, which amounts to pure word-replace (you can,
+say, define `foo' as `define' then define `define' as something else).
+eqn.c is now ready for some semantic parsing of `box' and `eqn'
+productions as defined by the grammar.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.81 2011/07/18 14:30:51 kristaps Exp $ */
+d280 12
+d293 1
+a293 2
+	size_t		  sz;
+	char		 *data;
+@
+
+
+1.81
+log
+@Forgot to add these bits to the last commit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.80 2011/07/17 14:08:49 kristaps Exp $ */
+d283 1
+a283 1
+	int		  line; /* invocation line */
+@
+
+
+1.80
+log
+@Provide implementations of `define', `set', and `unset'.
+Tie them into the stream of data.
+Document these appropriate, bringing in the grammar as defined by the
+original eqn manual (Kernighan/Richie).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.79 2011/07/17 12:52:54 kristaps Exp $ */
+d114 1
+@
+
+
+1.79
+log
+@Warn if equation `define' key is quoted (groff-ism).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.78 2011/07/15 10:14:12 kristaps Exp $ */
+d112 3
+@
+
+
+1.78
+log
+@Expose mandoc_strdup() to the outside world.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.77 2011/05/24 21:31:23 kristaps Exp $ */
+d107 3
+@
+
+
+1.77
+log
+@Remove all references to ESCAPE_PREDEF, which is now not exposed passed
+the libroff point.  This clears up a nice chunk of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.76 2011/05/17 11:50:20 kristaps Exp $ */
+d327 1
+@
+
+
+1.76
+log
+@Flip on unicode output (via \[uNNNN]) in -T[x]html.  Here we go!
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.75 2011/05/15 15:30:33 kristaps Exp $ */
+a294 1
+	ESCAPE_PREDEF, /* a predefined special character */
+a334 2
+const char	 *mchars_res2str(struct mchars *, const char *, size_t, size_t *);
+int		  mchars_res2cp(struct mchars *, const char *, size_t);
+@
+
+
+1.75
+log
+@Support groff's escape for Unicode input.  See
+
+  http://mdocml.bsd.lv/archives/tech/0368.html
+
+For the time being, we just throw it away.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.74 2011/04/30 22:24:31 kristaps Exp $ */
+d333 1
+@
+
+
+1.74
+log
+@Make mchars_num2char() return a char like it says.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.73 2011/04/30 22:14:42 kristaps Exp $ */
+d302 1
+@
+
+
+1.73
+log
+@Rename mchars_init() -> mchars_alloc() for consistency.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.72 2011/04/30 22:14:02 kristaps Exp $ */
+d331 1
+a331 1
+const char	 *mchars_num2char(const char *, size_t);
+@
+
+
+1.72
+log
+@Remove enum mcharst, which hasn't been used in quite some time.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.71 2011/04/29 22:18:12 kristaps Exp $ */
+d330 1
+a330 1
+struct mchars	 *mchars_init(void);
+@
+
+
+1.71
+log
+@Move "chars" interface out of out.h and into mandoc.h.  This doesn't
+change any code but for renaming functions and types to be consistent
+with other mandoc.h stuff.  The reason for moving into libmandoc is that
+the rendering of special characters is part of mandoc itself---not an
+external part.  From mandoc(1)'s perspective, this changes nothing, but
+for other utilities, it's important to have these part of libmandoc.
+Note this isn't documented [yet] in mandoc.3 because there are some
+parts I'd like to change around beforehand.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.70 2011/04/09 15:29:40 kristaps Exp $ */
+a304 5
+enum	mcharst {
+	MCHARS_ASCII, /* 7-bit ascii representation */
+	MCHARS_HTML /* unicode values */
+};
+
+d330 1
+a330 1
+struct mchars	 *mchars_init(enum mcharst);
+@
+
+
+1.70
+log
+@Remove a2roffdeco() and mandoc_special() functions and replace them with
+a public (mandoc.h) function mandoc_escape(), which merges the
+functionality of both prior functions.
+
+Reason: code duplication.  The a2roffdeco() and mandoc_special()
+functions were pretty much the same thing and both quite complex.  This
+allows one function to receive improvements in (e.g.) subexpression
+handling and performance, instead of having to replicate functionality.
+
+As such, the mandoc_escape() function already handles a superset of the
+escapes handled in previous versions and has improvements in performance
+(using strcspn(), for example) and reliable handling of subexpressions.
+
+This code Works For Me, but may need work to catch any regressions.
+Since the benefits are great (leaner code, simpler API), I'd rather have
+it in-tree than floating as a patch.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.69 2011/03/28 21:49:42 kristaps Exp $ */
+d305 5
+d314 1
+d335 9
+@
+
+
+1.69
+log
+@Put mandocerrs and mandoclevels arrays into libmandoc with accessors
+mparse_strerror() and mparse_strlevel().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.68 2011/03/23 09:47:13 kristaps Exp $ */
+d291 14
+d327 2
+@
+
+
+1.68
+log
+@Make (e.g.) `SM' before `B' be only a warning.  In reality, this refers
+to ELINE macros ("next-line", but not unbreakable like the next-line
+paragraph macros) followed by other macros.  This addresses a report by
+Christian Weisgerber, posted in the TODO by schwarze@@, and aired on
+discuss@@ (22/03/2011) for whether a fix is warranted.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.67 2011/03/22 14:05:45 kristaps Exp $ */
+d306 2
+@
+
+
+1.67
+log
+@Move mandoc_isdelim() back into libmdoc.h.  This fixes an unreported
+error where (1) -man pages were punctuating delimiters (e.g., `.B a ;')
+and where (2) standalone punctuation in -mdoc or -man (e.g., ";" on its
+own line) would also be punctuated.  This introduces a small amount of
+complexity of mdoc_{html,term}.c must manage their own spacing with
+running print_word() or print_text().  The check for delimiting now
+happens in mdoc_macro.c's dword().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.66 2011/03/22 10:35:26 kristaps Exp $ */
+d77 1
+a124 1
+	MANDOCERR_LINESCOPE, /* line scope broken */
+@
+
+
+1.66
+log
+@Add a FATAL error for when no manual type was assigned (you can repeat
+this for yourself by having a file consisting only of comments).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.65 2011/03/22 09:48:13 kristaps Exp $ */
+a280 16
+ * A punctuation delimiter, used only in mdoc(7) documents, is opening,
+ * closing, or "middle mark" punctuation.  These govern spacing.
+ * Opening punctuation (e.g., the opening parenthesis) suppresses the
+ * following space; closing punctuation (e.g., the closing parenthesis)
+ * suppresses the leading space; middle punctuation (e.g., the vertical
+ * bar) can do either.  The middle punctuation delimiter bends the rules
+ * depending on usage.
+ */
+enum	mdelim {
+	DELIM_NONE = 0,
+	DELIM_OPEN,
+	DELIM_MIDDLE,
+	DELIM_CLOSE
+};
+
+/*
+a309 2
+#define	DELIMSZ	  6 /* hint: max possible size of a delimiter */
+enum mdelim	  mandoc_isdelim(const char *);
+@
+
+
+1.65
+log
+@Step 1 of restructuring: libmandoc.h.  Move all compiler-set-specific
+stuff into libmandoc.h, including old mdoc.h/man.h/roff.h functions now
+used by read.c.  The motivation behind this is to tighten the
+relationship between the underlying compilers while keeping parse data
+hidden from general callers (e.g., main.c).
+
+While here, also move register values from mandoc.h into libmandoc.h as
+noted by schwarze@@.  See above for explanation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.64 2011/03/20 16:05:21 kristaps Exp $ */
+d140 1
+@
+
+
+1.64
+log
+@Let read.c worry about the currently-open file instead of having this
+information duplicated in main.c.  For the time being, remove evt_close
+and evt_open, as the only known mparse interface (main.c) doesn't need
+them.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.63 2011/03/20 16:02:05 kristaps Exp $ */
+a279 36
+ * Available registers (set in libroff, accessed elsewhere).
+ */
+enum	regs {
+	REG_nS = 0,
+	REG__MAX
+};
+
+/*
+ * A register (struct reg) can consist of many types: this consists of
+ * normalised types from the original string form.
+ */
+union	regval {
+	unsigned  u; /* unsigned integer */
+};
+
+/*
+ * A single register entity.  If "set" is zero, the value of the
+ * register should be the default one, which is per-register.  It's
+ * assumed that callers know which type in "v" corresponds to which
+ * register value.
+ */
+struct	reg {
+	int		  set; /* whether set or not */
+	union regval	  v; /* parsed data */
+};
+
+/*
+ * The primary interface to setting register values is in libroff,
+ * although libmdoc and libman from time to time will manipulate
+ * registers (such as `.Sh SYNOPSIS' enabling REG_nS).
+ */
+struct	regset {
+	struct reg	  regs[REG__MAX];
+};
+
+/*
+@
+
+
+1.63
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.62 2011/03/20 11:41:24 kristaps Exp $ */
+a343 2
+typedef	int	(*mevt_open)(void *, const char *);
+typedef	void	(*mevt_close)(void *, const char *);
+d353 1
+a353 2
+struct mparse	 *mparse_alloc(enum mparset, mevt_open, 
+			mevt_close, 
+@
+
+
+1.62
+log
+@Split the document parsing sequence out of main.c and into read.c,
+putting the interface into mandoc.h.  This effectively makes the
+function of main.c be command-line handling, invoking the parser, and
+sending its output to the output handler.  The sequence of parsing
+(pfile(), pdesc(), etc.) has changed very little but for clean-up of
+some state variables (curp->fd, etc.).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.61 2011/03/17 12:08:01 kristaps Exp $ */
+d342 2
+a343 2
+typedef	void	(*mandocmsg)(enum mandocerr, void *,
+			int, int, const char *);
+d356 2
+a357 2
+			mevt_close, mandocmsg, void *);
+void		  mparse_setstatus(struct mparse *, enum mandoclevel);
+@
+
+
+1.61
+log
+@mandocmsg finally has no return value.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.60 2011/03/17 09:16:38 kristaps Exp $ */
+d331 11
+d344 6
+d353 8
+@
+
+
+1.60
+log
+@Move mdoc_isdelim() into mandoc.h as mandoc_isdelim().  This allows the
+removal of manual delimiter checks in html.c and term.c.  Finally, add
+the escaped period as a closing delimiter, removing a TODO to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.59 2011/03/17 08:49:34 kristaps Exp $ */
+d331 1
+a331 1
+typedef	int	(*mandocmsg)(enum mandocerr, void *,
+@
+
+
+1.59
+log
+@Move mandoc_{realloc,malloc,calloc} out of libmandoc.h and into mandoc.h
+so that everybody can use them.  This follows the convention of
+libXXXX.h being internal to a library and XXXX.h being the external
+interface.  Not only does this allow the removal of lots of redundant
+NULL-checking code, it also sets the tone for adding new mandoc-global
+routines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.58 2011/03/07 01:35:51 schwarze Exp $ */
+d315 16
+d339 2
+@
+
+
+1.58
+log
+@Clean up date handling,
+as a first step to get rid of the frequent petty warnings in this area:
+ - always store dates as strings, not as seconds since the Epoch
+ - for input, try the three most common formats everywhere
+ - for unrecognized format, just pass the date though verbatim
+ - when there is no date at all, still use the current date
+Originally triggered by a one-line patch from Tim van der Molen,
+<tbvdm at xs4all dot nl>, which is included here.
+Feedback and OK on manual parts from jmc@@.
+"please check this in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.57 2011/02/09 09:05:52 kristaps Exp $ */
+d315 3
+d320 3
+a322 6
+/*
+ * Callback function for warnings, errors, and fatal errors as they
+ * occur in the compilers libroff, libmdoc, and libman.
+ */
+typedef	int		(*mandocmsg)(enum mandocerr, void *,
+				int, int, const char *);
+@
+
+
+1.57
+log
+@Allow EQN data to be pushed down into libmdoc via mdoc_addeqn().  Only
+the adding itself is implemented; equation data is not yet shown.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.56 2011/02/06 22:02:58 kristaps Exp $ */
+d53 2
+a54 1
+	MANDOCERR_BADDATE, /* cannot parse date argument */
+@
+
+
+1.56
+log
+@Let the line-number of a tbl_span be remembered.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.55 2011/02/06 20:36:36 kristaps Exp $ */
+d274 2
+@
+
+
+1.55
+log
+@Add initial EQN support to mandoc.  This parses, then throws away, data
+between EQ and EN roff blocks.  EQN is different from TBL in that data
+after .EQ is unilaterally considered an equation until an .EN.  Thus,
+there's no need to jump through hoops in having table spans and so on.
+This is ONLY the parse code framework in libroff.  EQN is not yet passed
+into the backends.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.54 2011/02/02 21:40:45 kristaps Exp $ */
+d263 1
+@
+
+
+1.54
+log
+@If `Ns' is specified on its own line, it should be ignored.  This is
+shitty groff behaviour.  Do the same, but raise a warning to this
+effect.  This from a TODO noted by schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.53 2011/01/12 15:50:42 kristaps Exp $ */
+d270 5
+@
+
+
+1.53
+log
+@Make out-of-context `fi' invocations not cause an error, but just a
+warning.  From a TODO by schwarze@@, originally noted by Brad Smith.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.52 2011/01/11 00:11:45 schwarze Exp $ */
+d71 1
+@
+
+
+1.52
+log
+@Refactoring in preparation for .rm support:
+Unify parsing of names given as roff request arguments into a new
+function roff_getname(), which is rather different from the parsing
+function for normal arguments, mandoc_getarg(), because names cannot
+be quoted and cannot contain whitespace or escaped characters.
+The new function now throws an ERROR when finding escaped characters
+in a name.
+"I'm fine with this." kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.51 2011/01/10 15:31:00 kristaps Exp $ */
+d83 1
+@
+
+
+1.51
+log
+@Clarify what members may be NULL or not in calculating widths.  Make
+sure signedness is correct.  Verify that layouts MUST exit for data
+cells.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.50 2011/01/10 14:40:30 kristaps Exp $ */
+d117 1
+@
+
+
+1.50
+log
+@First, make extra data cells be thrown away.  This makes "dp->layout"
+always hold, which cleans up the table stuff a bit.
+
+Second, set a "spans" value per data cell consisting of the number of
+skipped TBL_CELL_SPAN layout cells.
+
+Third, make tbl_term.c understand how to skip over spanned sections when
+iterating over the header queue.
+
+What remains is to calculate the widths of spanned cells.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.49 2011/01/06 13:45:47 kristaps Exp $ */
+d203 1
+a203 1
+	int		  spacing;
+d225 6
+a230 6
+	TBL_DATA_NONE,
+	TBL_DATA_DATA,
+	TBL_DATA_HORIZ,
+	TBL_DATA_DHORIZ,
+	TBL_DATA_NHORIZ,
+	TBL_DATA_NDHORIZ
+d238 1
+a238 1
+	struct tbl_cell	 *layout; /* layout cell: CAN BE NULL */
+d241 1
+a241 1
+	char		 *string;
+d257 1
+a257 1
+	struct tbl_row	 *layout; /* layout row: CAN BE NULL */
+@
+
+
+1.49
+log
+@Remove delims from struct tbl (not used anywhere and never will be).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.48 2011/01/04 15:02:00 kristaps Exp $ */
+a102 3
+	/* related to tables */
+	MANDOCERR_TBLEXTRADAT, /* extra data cells */
+
+d113 1
+d239 1
+@
+
+
+1.48
+log
+@Support `T{' and `T}' data blocks.  When a standalone `T{' is
+encountered as a line's last data cell, move into TBL_PART_CDATA mode
+whilst leaving the cell's designation as TBL_DATA_NONE.  When new data
+arrives that's not a standalone `T}', append it to the cell contends.
+Close out and warn appropriately.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.47 2011/01/04 12:06:21 kristaps Exp $ */
+a154 1
+	char		  delims[2]; /* FIXME: deprecate */
+@
+
+
+1.47
+log
+@Fix to make horizontal spanners in the layout be properly printed.
+mandoc also now warns (so does tbl(1)) if a horizontal spanner is
+specified along with data.
+
+While here, fix up some documentation and uncomment the tbl reference.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.46 2011/01/03 23:53:51 schwarze Exp $ */
+d115 1
+d228 1
+@
+
+
+1.46
+log
+@Partial cleanup of argument count validation in mdoc(7):
+
+* Do not segfault on empty .Db, .Rs, .Sm, and .St.
+* Let check_count() really throw the requested level, not always ERROR.
+* Downgrade most bad argument counts from ERROR to WARNING.
+* And some related internal cleanup.
+
+Looks fine to kristaps@@.
+
+Note that the macros using eerr_ge1() still need to be checked at a later
+time; but as all the others are done, let's use what we already have.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.45 2011/01/03 13:59:21 kristaps Exp $ */
+d114 1
+@
+
+
+1.45
+log
+@Make width calculations occur within tbl_term.c, not tbl.c.  This allows
+for front-ends to make decisions about widths, not the back-end.
+
+To pull this off, first make each tbl_head contain a unique index value
+(0 <= index < total tbl_head elements) and remove the tbl_calc() routine
+from the back-end.
+
+Then, when encountering the first tbl_span in the front-end, dynamically
+create an array of configurations (termp_tbl) keyed on each tbl_head's
+unique index value.  Construct the decimals and widths at this time,
+then continue parsing as before.
+
+The termp_tbl and indexes are required because we pass a const tbl AST
+into the front-end.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.44 2011/01/02 12:04:23 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+d78 1
+@
+
+
+1.44
+log
+@Add some final bits necessary in the upcoming -Tascii tbl stuff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.43 2011/01/02 10:10:57 kristaps Exp $ */
+d152 1
+a152 1
+	char		  delims[2];
+d161 1
+d177 1
+a177 2
+	int		  width; /* width of cell in fixed chars */
+	int		  decimal; /* decimal point position */
+@
+
+
+1.43
+log
+@Churn to get parts of 'struct tbl' visible from mandoc.h: rename the
+existing 'struct tbl' as 'struct tbl_node', then move all option stuff
+into a 'struct tbl' in mandoc.h.
+
+This conflicted with a structure in chars.c, which was renamed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.42 2011/01/01 22:27:08 kristaps Exp $ */
+d253 2
+d258 3
+@
+
+
+1.42
+log
+@Add a warning if a data cell has no layout.  Also make -Ttree show this
+with a little star next to the entry (yeah, this is mostly for testing).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.41 2011/01/01 22:19:15 kristaps Exp $ */
+d148 15
+@
+
+
+1.41
+log
+@Plug in the "head" concept for tables.  A tbl_head specifies the full
+layout for each row, including vertical spacers.  One grabs the tbl_head
+for a row and iterates through each entry, plugging data from the
+tbl_span into the header as appropriate.
+
+This is pulled in more or less verbatim from tbl.bsd.lv.  In fact, this
+is verbatim except that lists macros are made into hard-coded lists (for
+compatibility, as long-ago noted by joerg@@).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.40 2011/01/01 17:10:20 kristaps Exp $ */
+d102 3
+d107 1
+d113 1
+@
+
+
+1.40
+log
+@Make some bit-flags into enums as they should be.  Make printing of -Ttree
+tables a little bit smarter.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.39 2011/01/01 15:45:18 kristaps Exp $ */
+d143 19
+d192 1
+@
+
+
+1.39
+log
+@Add documentation bits for libroff's new roff_span().
+
+Add bits to remember tbl's invocation point.
+
+Add ERROR class message if no data's in the table.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.38 2010/12/31 18:19:43 kristaps Exp $ */
+d184 8
+d200 7
+a206 5
+	int		  flags;
+#define	TBL_DATA_HORIZ	 (1 << 0)
+#define	TBL_DATA_DHORIZ	 (1 << 1)
+#define	TBL_DATA_NHORIZ	 (1 << 2)
+#define	TBL_DATA_NDHORIZ (1 << 3)
+d216 1
+a216 3
+	int		  flags;
+#define	TBL_SPAN_HORIZ	(1 << 0)
+#define	TBL_SPAN_DHORIZ	(1 << 1)
+@
+
+
+1.38
+log
+@Expose the parsed table API to the world and add accessors through the
+roff.h interface.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.37 2010/12/29 14:38:14 kristaps Exp $ */
+d108 1
+@
+
+
+1.37
+log
+@Merge, with considerable changes, tbl.bsd.lv's layout-handling code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.36 2010/12/29 01:16:57 kristaps Exp $ */
+d142 69
+@
+
+
+1.36
+log
+@Significant update to options handling, which now departs almost
+completely with the BSD.lv code due to performance issues and flat-out
+errors.
+
+Performance issues: functions called per character.  Ugly.
+
+Flat-out errors: disallowing "reserved" tokens as arguments to those
+options accepting arguments.
+
+Also added are two mandoc.h error codes for general tbl syntax errors
+and for bad options.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.35 2010/12/22 11:38:17 kristaps Exp $ */
+d106 2
+@
+
+
+1.35
+log
+@Revert IGNPAR to a warning after clue-stick applied by schwarze@@:
+although technically-speaking a lost macro is an error (e.g.,
+MANDOCERR_MACRO), casting out some extra whitespace (note, IGNPAR only
+happens in conditions where whitespace already exists!) is hardly an
+error matter.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.34 2010/12/15 23:39:40 kristaps Exp $ */
+d104 2
+@
+
+
+1.34
+log
+@Add a "last child" member of struct mdoc_node.
+
+Remove `Pp' or `Lp' if it is the FIRST or LAST child of an `Sh' or `Sh' body.
+
+Make "skipping paragraph" be an error, not a warning, as information (an
+invoked macro) is ignored.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.33 2010/12/10 20:58:56 schwarze Exp $ */
+d70 1
+a107 1
+	MANDOCERR_IGNPAR, /* skipping paragraph macro */
+@
+
+
+1.33
+log
+@Abort endless loops during roff macro and string expansion.
+For now, use the simplest conceivable approach, like groff does:
+Just a fixed, ugly input stack limit.
+"check it in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.32 2010/12/06 16:55:35 kristaps Exp $ */
+a69 1
+	MANDOCERR_IGNPAR, /* skipping paragraph macro */
+d107 1
+@
+
+
+1.32
+log
+@Bring schwarze@@'s mandoc.h and main.c errors and warnings entirely in sync,
+except for the tbl one which will be the focus of later study.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.31 2010/12/06 15:31:19 kristaps Exp $ */
+d104 1
+@
+
+
+1.31
+log
+@Add support for `ft' macro found in groff(7).  Based on a patch by
+schwarze@@, but without the -T[x]html handling, which structurally does
+not work.  Also add man.7 documentation (not in original patch).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.30 2010/12/06 11:01:19 kristaps Exp $ */
+d48 12
+d61 3
+a63 1
+	MANDOCERR_UPPERCASE, /* text should be uppercase */
+d65 1
+a65 11
+	MANDOCERR_SECREP, /* section name repeats */
+	MANDOCERR_PROLOGOOO, /* out of order prologue */
+	MANDOCERR_PROLOGREP, /* repeated prologue entry */
+	MANDOCERR_LISTFIRST, /* list type must come first */
+	MANDOCERR_BADTAB, /* tab in non-literal context */
+	MANDOCERR_BADESCAPE, /* bad escape sequence */
+	MANDOCERR_BADQUOTE, /* unterminated quoted string */
+	MANDOCERR_NOWIDTHARG, /* argument requires the width argument */
+	MANDOCERR_BADDATE, /* bad date argument */
+	MANDOCERR_BADWIDTH, /* bad width argument */
+	MANDOCERR_BADMSEC, /* unknown manual section */
+d67 4
+a70 1
+	MANDOCERR_EOLNSPACE, /* end of line whitespace */
+d72 10
+d83 6
+a88 2
+	MANDOCERR_ERROR, /* ===== start of errors ===== */
+	MANDOCERR_NAMESECFIRST, /* NAME section must come first */
+d91 7
+a97 17
+	MANDOCERR_CHILD, /* child violates parent syntax */
+	MANDOCERR_NESTEDDISP, /* displays may not be nested */
+	MANDOCERR_BADATT, /* bad AT&T symbol */
+	MANDOCERR_BADSTANDARD, /* bad standard */
+	MANDOCERR_LISTREP, /* list type repeated */
+	MANDOCERR_DISPREP, /* display type repeated */
+	MANDOCERR_ARGVREP, /* argument repeated */
+	MANDOCERR_IGNARGV, /* ignoring argument */
+	MANDOCERR_NONAME, /* manual name not yet set */
+	MANDOCERR_MACROOBS, /* obsolete macro ignored */
+	MANDOCERR_MACROEMPTY, /* empty macro ignored */
+	MANDOCERR_BADBODY, /* macro not allowed in body */
+	MANDOCERR_BADPROLOG, /* macro not allowed in prologue */
+	MANDOCERR_BADCHAR, /* bad character */
+	MANDOCERR_BADNAMESEC, /* bad NAME section contents */
+	MANDOCERR_NOBLANKLN, /* no blank lines */
+	MANDOCERR_NOTEXT, /* no text in this context */
+d99 8
+a106 1
+	MANDOCERR_MACRO, /* unknown macro will be lost */
+d110 1
+a110 1
+	MANDOCERR_NOSCOPE, /* no such block is open */
+a111 1
+	MANDOCERR_SCOPEREP, /* scope already open */
+a117 1
+	MANDOCERR_NOTITLE, /* no title in document */
+a118 2
+	MANDOCERR_DISPTYPE, /* missing display type */
+	MANDOCERR_FONTTYPE, /* missing font type */
+a120 1
+	MANDOCERR_IGNPAR, /* paragraph macro ignored */
+d123 1
+d125 1
+a125 3
+	MANDOCERR_BADDISP, /* unsupported display type */
+	MANDOCERR_SCOPEFATAL, /* blocks badly nested */
+	MANDOCERR_SYNTNOSCOPE, /* no scope to rewind: syntax violated */
+@
+
+
+1.30
+log
+@Merge schwarze@@'s relaxation of scope-breaking rules: allow implicit
+ending of scopes and drop stray scope-endings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.29 2010/12/05 15:55:01 kristaps Exp $ */
+d69 1
+@
+
+
+1.29
+log
+@Remove long-standing FIXME regarding the consolidation of WIDTHARG and
+NOARGV warnings.  From patch by schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.28 2010/12/05 15:49:37 kristaps Exp $ */
+d92 1
+@
+
+
+1.28
+log
+@Merge schwarze@@'s patch to allow uname() to fail without causing an exit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.27 2010/12/05 15:37:30 kristaps Exp $ */
+a58 2
+	/* FIXME: merge with MANDOCERR_IGNARGV. */
+	MANDOCERR_WIDTHARG, /* superfluous width argument */
+@
+
+
+1.27
+log
+@Merge schwarze@@'s changes allowing nested displays.  Tweak the patch by
+making sure output doesn't add a superfluous newline with the nested displays.
+Also add a COMPATIBILITY note.
+
+Rename a macro (DATESIZ) to be in line with OpenBSD (DATESIZE).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.26 2010/12/01 16:54:25 kristaps Exp $ */
+d96 1
+a120 1
+	MANDOCERR_UTSNAME, /* utsname system call failed */
+@
+
+
+1.26
+log
+@Merge OpenBSD's `so' handling (plus some documentation).  Great work to
+schwarze@@ and joerg@@ for his comments!
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.25 2010/12/01 10:31:35 kristaps Exp $ */
+d72 1
+a109 2
+	/* FIXME: this should be a MANDOCERR_ERROR */
+	MANDOCERR_NESTEDDISP, /* displays may not be nested */
+@
+
+
+1.25
+log
+@Re-ordering of roff requests as per OpenBSD.
+
+Made `rm' be an error (again, OpenBSD...).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.24 2010/11/29 15:45:15 kristaps Exp $ */
+d48 1
+d118 1
+@
+
+
+1.24
+log
+@Remove left-over rsord[] in mdoc_actions.c.
+
+Remove MANDOCERR_BADLIB (not used).
+
+Moved `St' handling from mdoc_action.c into mdoc_validate.c.
+
+Moved relevant MDOC_LITERAL macros (`Dl', `Bd' subtypes) from
+mdoc_action.c into mdoc_validate.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.23 2010/10/11 15:46:19 kristaps Exp $ */
+d88 1
+@
+
+
+1.23
+log
+@Use proper error for `An' multiple arguments.
+
+Making IGNARGV be an ERROR, not a WARNING, as information is lost.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.22 2010/10/04 07:01:02 kristaps Exp $ */
+a53 2
+	MANDOCERR_BADSTANDARD, /* bad standard */
+	MANDOCERR_BADLIB, /* bad library */
+d72 1
+@
+
+
+1.22
+log
+@Revert merging of {mdoc,man}.h -> mandoc.h.
+
+While I'm add it, properly document all structures in these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.21 2010/10/02 10:14:37 kristaps Exp $ */
+a61 1
+	MANDOCERR_IGNARGV, /* ignoring argument */
+d77 1
+@
+
+
+1.21
+log
+@Unify mdoc and man enums and structs into mandoc.h.  This is part of the
+slow process of logically splitting formatting frontend and parser backend
+without pollution.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.20 2010/09/27 09:26:27 kristaps Exp $ */
+d23 6
+a28 2
+__BEGIN_DECLS
+
+d32 5
+a36 5
+	MANDOCLEVEL_WARNING,
+	MANDOCLEVEL_ERROR,
+	MANDOCLEVEL_FATAL,
+	MANDOCLEVEL_BADARG,
+	MANDOCLEVEL_SYSERR,
+d40 4
+d124 3
+d128 1
+a128 1
+	REG_nS = 0,	/* register: nS */
+d132 6
+a137 395
+enum	mant {
+	MAN_br = 0,
+	MAN_TH,
+	MAN_SH,
+	MAN_SS,
+	MAN_TP,
+	MAN_LP,
+	MAN_PP,
+	MAN_P,
+	MAN_IP,
+	MAN_HP,
+	MAN_SM,
+	MAN_SB,
+	MAN_BI,
+	MAN_IB,
+	MAN_BR,
+	MAN_RB,
+	MAN_R,
+	MAN_B,
+	MAN_I,
+	MAN_IR,
+	MAN_RI,
+	MAN_na,
+	MAN_i,
+	MAN_sp,
+	MAN_nf,
+	MAN_fi,
+	MAN_r,
+	MAN_RE,
+	MAN_RS,
+	MAN_DT,
+	MAN_UC,
+	MAN_PD,
+	MAN_Sp,
+	MAN_Vb,
+	MAN_Ve,
+	MAN_AT,
+	MAN_in,
+	MAN_MAX
+};
+
+enum	man_type {
+	MAN_TEXT,
+	MAN_ELEM,
+	MAN_ROOT,
+	MAN_BLOCK,
+	MAN_HEAD,
+	MAN_BODY
+};
+
+enum	mdoct {
+	MDOC_Ap = 0,
+	MDOC_Dd,
+	MDOC_Dt,
+	MDOC_Os,
+	MDOC_Sh,
+	MDOC_Ss,
+	MDOC_Pp,
+	MDOC_D1,
+	MDOC_Dl,
+	MDOC_Bd,
+	MDOC_Ed,
+	MDOC_Bl,
+	MDOC_El,
+	MDOC_It,
+	MDOC_Ad,
+	MDOC_An,
+	MDOC_Ar,
+	MDOC_Cd,
+	MDOC_Cm,
+	MDOC_Dv,
+	MDOC_Er,
+	MDOC_Ev,
+	MDOC_Ex,
+	MDOC_Fa,
+	MDOC_Fd,
+	MDOC_Fl,
+	MDOC_Fn,
+	MDOC_Ft,
+	MDOC_Ic,
+	MDOC_In,
+	MDOC_Li,
+	MDOC_Nd,
+	MDOC_Nm,
+	MDOC_Op,
+	MDOC_Ot,
+	MDOC_Pa,
+	MDOC_Rv,
+	MDOC_St,
+	MDOC_Va,
+	MDOC_Vt,
+	MDOC_Xr,
+	MDOC__A,
+	MDOC__B,
+	MDOC__D,
+	MDOC__I,
+	MDOC__J,
+	MDOC__N,
+	MDOC__O,
+	MDOC__P,
+	MDOC__R,
+	MDOC__T,
+	MDOC__V,
+	MDOC_Ac,
+	MDOC_Ao,
+	MDOC_Aq,
+	MDOC_At,
+	MDOC_Bc,
+	MDOC_Bf,
+	MDOC_Bo,
+	MDOC_Bq,
+	MDOC_Bsx,
+	MDOC_Bx,
+	MDOC_Db,
+	MDOC_Dc,
+	MDOC_Do,
+	MDOC_Dq,
+	MDOC_Ec,
+	MDOC_Ef,
+	MDOC_Em,
+	MDOC_Eo,
+	MDOC_Fx,
+	MDOC_Ms,
+	MDOC_No,
+	MDOC_Ns,
+	MDOC_Nx,
+	MDOC_Ox,
+	MDOC_Pc,
+	MDOC_Pf,
+	MDOC_Po,
+	MDOC_Pq,
+	MDOC_Qc,
+	MDOC_Ql,
+	MDOC_Qo,
+	MDOC_Qq,
+	MDOC_Re,
+	MDOC_Rs,
+	MDOC_Sc,
+	MDOC_So,
+	MDOC_Sq,
+	MDOC_Sm,
+	MDOC_Sx,
+	MDOC_Sy,
+	MDOC_Tn,
+	MDOC_Ux,
+	MDOC_Xc,
+	MDOC_Xo,
+	MDOC_Fo,
+	MDOC_Fc,
+	MDOC_Oo,
+	MDOC_Oc,
+	MDOC_Bk,
+	MDOC_Ek,
+	MDOC_Bt,
+	MDOC_Hf,
+	MDOC_Fr,
+	MDOC_Ud,
+	MDOC_Lb,
+	MDOC_Lp,
+	MDOC_Lk,
+	MDOC_Mt,
+	MDOC_Brq,
+	MDOC_Bro,
+	MDOC_Brc,
+	MDOC__C,
+	MDOC_Es,
+	MDOC_En,
+	MDOC_Dx,
+	MDOC__Q,
+	MDOC_br,
+	MDOC_sp,
+	MDOC__U,
+	MDOC_Ta,
+	MDOC_MAX
+};
+
+enum	mdocargt {
+	MDOC_Split,
+	MDOC_Nosplit,
+	MDOC_Ragged,
+	MDOC_Unfilled,
+	MDOC_Literal,
+	MDOC_File,
+	MDOC_Offset,
+	MDOC_Bullet,
+	MDOC_Dash,
+	MDOC_Hyphen,
+	MDOC_Item,
+	MDOC_Enum,
+	MDOC_Tag,
+	MDOC_Diag,
+	MDOC_Hang,
+	MDOC_Ohang,
+	MDOC_Inset,
+	MDOC_Column,
+	MDOC_Width,
+	MDOC_Compact,
+	MDOC_Std,
+	MDOC_Filled,
+	MDOC_Words,
+	MDOC_Emphasis,
+	MDOC_Symbolic,
+	MDOC_Nested,
+	MDOC_Centred,
+	MDOC_ARG_MAX
+};
+
+enum	mdoc_type {
+	MDOC_TEXT,
+	MDOC_ELEM,
+	MDOC_HEAD,
+	MDOC_TAIL,
+	MDOC_BODY,
+	MDOC_BLOCK,
+	MDOC_ROOT
+};
+
+enum	mdoc_sec {
+	SEC_NONE,
+	SEC_NAME,
+	SEC_LIBRARY,
+	SEC_SYNOPSIS,
+	SEC_DESCRIPTION,
+	SEC_IMPLEMENTATION,
+	SEC_RETURN_VALUES,
+	SEC_ENVIRONMENT, 
+	SEC_FILES,
+	SEC_EXIT_STATUS,
+	SEC_EXAMPLES,
+	SEC_DIAGNOSTICS,
+	SEC_COMPATIBILITY,
+	SEC_ERRORS,
+	SEC_SEE_ALSO,
+	SEC_STANDARDS,
+	SEC_HISTORY,
+	SEC_AUTHORS,
+	SEC_CAVEATS,
+	SEC_BUGS,
+	SEC_SECURITY,
+	SEC_CUSTOM,
+	SEC__MAX
+};
+
+enum	mdoc_endbody {
+	ENDBODY_NOT = 0,
+	ENDBODY_SPACE,
+	ENDBODY_NOSPACE
+};
+
+enum	mdoc_list {
+	LIST__NONE = 0,
+	LIST_bullet,
+	LIST_column,
+	LIST_dash,
+	LIST_diag,
+	LIST_enum,
+	LIST_hang,
+	LIST_hyphen,
+	LIST_inset,
+	LIST_item,
+	LIST_ohang,
+	LIST_tag
+};
+
+enum	mdoc_disp {
+	DISP__NONE = 0,
+	DISP_centred,
+	DISP_ragged,
+	DISP_unfilled,
+	DISP_filled,
+	DISP_literal
+};
+
+enum	mdoc_auth {
+	AUTH__NONE = 0,
+	AUTH_split,
+	AUTH_nosplit
+};
+
+enum	mdoc_font {
+	FONT__NONE = 0,
+	FONT_Em,
+	FONT_Li,
+	FONT_Sy
+};
+
+struct	man_meta {
+	char		*msec; /* `TH' section (e.g., 1--9) */
+	time_t		 date; /* parsed `TH' date */
+	char		*rawdate; /* raw `TH' date */
+	char		*vol; /* `TH' volume (e.g., KM) */
+	char		*title; /* `TH' title (e.g., LS, CAT) */
+	char		*source; /* `TH' source (e.g., GNU) */
+};
+
+struct	man_node {
+	struct man_node	*parent;
+	struct man_node	*child;
+	struct man_node	*next;
+	struct man_node	*prev;
+	int		 nchild;
+	int		 line;
+	int		 pos;
+	enum mant	 tok;
+	int		 flags;
+#define	MAN_VALID	(1 << 0)
+#define	MAN_ACTED	(1 << 1)
+#define	MAN_EOS		(1 << 2)
+	enum man_type	 type;
+	char		*string;
+	struct man_node	*head;
+	struct man_node	*body;
+};
+
+struct	mdoc_meta {
+	char		 *msec; /* `Dt' section (e.g., 1--9) */
+	char		 *vol; /* `Dt' volume (e.g., LOCAL) */
+	char		 *arch; /* `Dt' architecture (e.g., i386) */
+	time_t		  date; /* `Dd' date */
+	char		 *title; /* `Dt' title (e.g., LS, CAT) */
+	char		 *os; /* `Os' system (e.g., OpenBSD) */
+	char		 *name; /* leading `Nm' (e.g., ls, cat) */
+};
+
+struct	mdoc_argv {
+	enum mdocargt  	  arg;
+	int		  line;
+	int		  pos;
+	size_t		  sz;
+	char		**value;
+};
+
+struct 	mdoc_arg {
+	size_t		  argc;
+	struct mdoc_argv *argv;
+	unsigned int	  refcnt;
+};
+
+
+struct	mdoc_bd {
+	const char	 *offs; /* -offset */
+	enum mdoc_disp	  type; /* -ragged, etc. */
+	int		  comp; /* -compact */
+};
+
+struct	mdoc_bl {
+	const char	 *width; /* -width */
+	const char	 *offs; /* -offset */
+	enum mdoc_list	  type; /* -tag, -enum, etc. */
+	int		  comp; /* -compact */
+	size_t		  ncols; /* -column arg count */
+	const char	**cols; /* -column val ptr */
+};
+
+struct	mdoc_bf {
+	enum mdoc_font	  font; /* font */
+};
+
+struct	mdoc_an {
+	enum mdoc_auth	  auth; /* -split, etc. */
+};
+
+struct	mdoc_node {
+	struct mdoc_node *parent; /* parent AST node */
+	struct mdoc_node *child; /* first child AST node */
+	struct mdoc_node *next; /* sibling AST node */
+	struct mdoc_node *prev; /* prior sibling AST node */
+	int		  nchild; /* number children */
+	int		  line; /* parse line */
+	int		  pos; /* parse column */
+	enum mdoct	  tok; /* tok or MDOC__MAX if none */
+	int		  flags;
+#define	MDOC_VALID	 (1 << 0) /* has been validated */
+#define	MDOC_ACTED	 (1 << 1) /* has been acted upon */
+#define	MDOC_EOS	 (1 << 2) /* at sentence boundary */
+#define	MDOC_LINE	 (1 << 3) /* first macro/text on line */
+#define	MDOC_SYNPRETTY	 (1 << 4) /* SYNOPSIS-style formatting */
+#define	MDOC_ENDED	 (1 << 5) /* rendering has been ended */
+	enum mdoc_type	  type; /* AST node type */
+	enum mdoc_sec	  sec; /* current named section */
+	/* XXX: these can be union'd to shave a few bytes. */
+	struct mdoc_arg	 *args; 	/* BLOCK/ELEM */
+	struct mdoc_node *pending;	/* BLOCK */
+	struct mdoc_node *head;		/* BLOCK */
+	struct mdoc_node *body;		/* BLOCK */
+	struct mdoc_node *tail;		/* BLOCK */
+	char		 *string;	/* TEXT */
+	enum mdoc_endbody end;		/* BODY */
+
+	union {
+		struct mdoc_an  An;
+		struct mdoc_bd *Bd;
+		struct mdoc_bf *Bf;
+		struct mdoc_bl *Bl;
+	} data;
+d148 1
+a148 3
+	union {
+		unsigned  u; /* unsigned integer */
+	} v;
+d160 2
+@
+
+
+1.20
+log
+@Ignore double-`Pp' and `Pp' before `Bd' and `Bl' (unless -compact is
+specified).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.19 2010/09/26 20:22:28 schwarze Exp $ */
+a19 4
+/*
+ * This contains declarations that are available system-wide.
+ */
+
+d39 1
+a39 2
+	MANDOCERR_WARNING, /* ===== end of warnings ===== */
+
+d62 1
+a62 2
+	MANDOCERR_ERROR, /* ===== end of errors ===== */
+
+d98 1
+a98 2
+	MANDOCERR_FATAL, /* ===== end of fatal errors ===== */
+
+a112 1
+
+d121 397
+@
+
+
+1.19
+log
+@If an explicit scope is still open at the end of an input file,
+report an ERROR:  We can still render the page by just closing
+the open scope, but it is likely that information will be missing
+or document structure mangled.
+Before, man(7) only reported a WARNING (which is dangerous because
+we cannot be sure rendering is correct) and mdoc(7) ran into FATAL
+(which is too drastic, there is no reason not to show what we have).
+"looks good" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.18 2010/08/20 01:02:07 schwarze Exp $ */
+d102 1
+@
+
+
+1.18
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.17 2010/07/20 14:56:42 kristaps Exp $ */
+a65 1
+	MANDOCERR_SCOPEEXIT, /* scope open on exit */
+d91 1
+a110 1
+	MANDOCERR_SYNTSCOPE, /* scope broken, syntax violated */
+@
+
+
+1.17
+log
+@Strip non-graphable input characters from input.  The manuals
+specifically say that this is not allowed, and were it allowed, output
+would be inconsistent across output media (-Tps will puke,
+non-your-charset terminals will puke, etc.).
+
+With this done, simplify check_text() to only check escapes and for
+tabs.  Add in a new tab warning, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.16 2010/07/05 20:10:22 kristaps Exp $ */
+d29 11
+d119 1
+a119 1
+	MANDOCERR_MEM, /* memory exhausted */
+@
+
+
+1.16
+log
+@Move register information into mandoc.h, which is where it should have
+been in the first place (mandoc.h contains system-wide declarations).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.15 2010/07/02 12:54:33 kristaps Exp $ */
+d42 1
+@
+
+
+1.15
+log
+@Stash `Bf' parameters into struct mdoc_bf.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.14 2010/07/01 15:38:56 schwarze Exp $ */
+d20 4
+a26 1
+
+d112 33
+a144 2
+typedef	int	(*mandocmsg)(enum mandocerr, 
+			void *, int, int, const char *);
+@
+
+
+1.14
+log
+@Improve .Nm indentation in the SYNOPSIS;
+kristaps@@ will do the missing HTML part soon.
+"looks nicer" jmc@@
+"seems perfect to me" sobrado@@
+"slap it in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.13 2010/06/30 20:32:15 schwarze Exp $ */
+d84 1
+a91 2
+	MANDOCERR_FONTTYPE, /* missing font type */
+	/* FIXME: this should be a MANDOCERR_ERROR */
+@
+
+
+1.13
+log
+@improve error reporting:
+* avoid error exit code after mere warnings
+* add ERROR: and FATAL: to messages when appropriate
+* sort the code in mmsg() to make it easier on the eye
+* make the mandocerrs[] list easier to maintain
+* update a few comments in mandoc.h
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.12 2010/06/12 11:41:50 kristaps Exp $ */
+d50 1
+a73 1
+	MANDOCERR_SCOPE, /* scope broken */
+d75 1
+a75 1
+	MANDOCERR_NOSCOPE, /* request scope close w/none open */
+d95 1
+@
+
+
+1.12
+log
+@Removed stipulation that an empty `Bd -offset' will default to 6n.  Not
+sure where this came about.  Added regression tests to convince myself
+that this is so.  Also consolidated COMPATIBILITY notes regarding `Bd'.
+Added COMPATIBILITY note to the effect that old groff pukes on `Bd
+-compact -ragged' (regression test will fail on old groff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.11 2010/06/12 10:09:19 kristaps Exp $ */
+d28 3
+d44 1
+a44 1
+	MANDOCERR_IGNARGV, /* macro ignoring argv */
+d51 2
+a52 1
+#define	MANDOCERR_WARNING	MANDOCERR_SCOPEEXIT
+d86 2
+a87 1
+#define	MANDOCERR_ERROR		MANDOCERR_BODYLOST
+d95 1
+a95 1
+	MANDOCERR_SYNTNOSCOPE, /* request scope close w/none open */
+d103 1
+a103 1
+	MANDOCERR_UTSNAME, /* utsname() system call failed */
+a104 1
+#define	MANDOCERR_FATAL		MANDOCERR_MEM
+@
+
+
+1.11
+log
+@Added enum mdoc_disp (similar to enum mdoc_list).  Display types are now
+only calculated once in mdoc_validate.c.
+
+Noted that `Bd -file xxx' is not supported:  it now raises a fatal
+warning.  This is noted in mdoc.7.
+
+Empty `Bd' now defaults to LIST_ragged, which is not quite what groff
+does, but close enough (gross just throws away the `Bd' and gets upset
+when it encounters an `Ed').
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.10 2010/06/03 13:44:36 kristaps Exp $ */
+d39 1
+d41 1
+@
+
+
+1.10
+log
+@Consolidated list processing to a single loop in mdoc_validate.c.  This
+relieves having to repeat running over the argument list in
+mdoc_action.c and mdoc_validate.c.
+
+Default to LIST_item for type-less lists (groff technically doesn't do
+this: it just ignores the `It' lines altogether).
+
+Make MANDOC_LISTTYPE be a recoverable error.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.9 2010/06/01 14:54:37 kristaps Exp $ */
+d77 1
+a85 2
+	MANDOCERR_DISPTYPE, /* missing display type */
+	/* FIXME: this should be a MANDOCERR_ERROR */
+d87 1
+@
+
+
+1.9
+log
+@Spelling patches provided by Ulrich Spoerlein.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.8 2010/05/31 23:40:25 kristaps Exp $ */
+d76 1
+a86 2
+	MANDOCERR_LISTTYPE, /* missing list type */
+	/* FIXME: this should be a MANDOCERR_ERROR */
+@
+
+
+1.8
+log
+@Cleanup post_bl_head() to use enum mdoc_list (avoid traversing that
+list).
+
+Reverted MANDOC_COLUMNS to be a bad-bad syntax error: we don't, and
+apparently never have, allowed mixing of -column syntaxes.  This would
+have segfaulted if encountered.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.7 2010/05/25 12:37:20 kristaps Exp $ */
+d29 1
+a29 1
+	MANDOCERR_SECOOO, /* sections out of conentional order */
+d42 1
+a42 1
+	MANDOCERR_BADMSEC, /* unknown manual sction */
+@
+
+
+1.7
+log
+@Modified version of Ingo Schwarze's patch for hyphen-breaking.
+Breakable hyphens are cued in the back-ends (with ASCII_HYPH) and acted
+upon in term.c or ignored in html.c.
+
+Also cleaned up XML decl printing (no need for extra vars).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.6 2010/05/24 01:41:31 schwarze Exp $ */
+a33 1
+	MANDOCERR_COLUMNS, /* column syntax is inconsistent */
+d80 1
+@
+
+
+1.6
+log
+@fix an obvious oversight introduced in rev. 1.5:
+MANDOCERR_BODYLOST is not intended to be fatal;
+required to unbreak the OpenBSD build
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.5 2010/05/17 22:11:42 kristaps Exp $ */
+d20 4
+@
+
+
+1.5
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.4 2010/05/16 22:28:33 kristaps Exp $ */
+d75 1
+a75 1
+#define	MANDOCERR_ERROR		MANDOCERR_ARGSLOST
+@
+
+
+1.4
+log
+@`ig' support in all its glory.  Try
+
+  .ig ig
+  asdf
+  .ig
+  fdsa
+  ..
+
+or
+
+  .ig if
+  asdf
+  .if n \
+  foo
+
+for a laugh.  It all works.  Lots of regression tests supporting this
+and documentation for the same.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.3 2010/05/16 19:08:11 kristaps Exp $ */
+d24 18
+d45 21
+d67 8
+a74 2
+	MANDOCERR_NOARGS, /* macro requires argument(s) */
+	MANDOCERR_ARGSLOST, /* line arguments will be lost */
+d77 17
+@
+
+
+1.3
+log
+@Regression tests in place for `.if' in libroff.
+Check against some strange `.if' constructs I missed.
+Added initial roff.7 manual.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.2 2010/05/15 21:53:11 kristaps Exp $ */
+d25 2
+a28 2
+#define	MANDOCERR_WARNING	MANDOCERR_SCOPEEXIT
+
+@
+
+
+1.2
+log
+@The `ig' now supports `ig end-macro'.
+Initial warning/error messages in place (still experimental).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.h,v 1.1 2010/05/15 18:35:14 kristaps Exp $ */
+d26 1
+@
+
+
+1.1
+log
+@Add mandoc.h, which will eventually replace compilers' inner enum errors with unified ones.
+Add initial roff pre-processor shim, a compiler sitting outside of the other compilers that processes pure roff instructions.
+@
+text
+@d1 1
+a1 1
+/*	$Id: roff.h,v 1.12 2010/05/15 07:52:11 kristaps Exp $ */
+d28 3
+@

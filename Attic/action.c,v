@@ -1,0 +1,3433 @@
+head	1.52;
+access;
+symbols
+	VERSION_1_9_5:1.52
+	VERSION_1_8_5:1.52
+	VERSION_1_8_1:1.52
+	VERSION_1_7_16:1.52
+	VERSION_1_7_15:1.52
+	OPENBSD_CHECKIN:1.52
+	VERSION_1_6_5:1.48
+	VERSION_1_6_2:1.44
+	VERSION_1_5_3:1.43
+	VERSION_1_5_1:1.41
+	VERSION_1_4_6:1.38
+	VERSION_1_4_5:1.38
+	VERSION_1_4_4:1.37
+	VERSION_1_4_2:1.35
+	VERSION_1_3_15:1.28
+	VERSION_1_3_13:1.27
+	VERSION_1_3_11:1.25
+	VERSION_1_3_10:1.23
+	VERSION_1_3_9:1.22
+	VERSION_1_3_8:1.22
+	VERSION_1_3_6:1.22
+	VERSION_1_3_5:1.19
+	VERSION_1_2_0:1.14
+	VERSION_1_1_0:1.7;
+locks; strict;
+comment	@ * @;
+
+
+1.52
+date	2009.03.25.15.36.05;	author kristaps;	state dead;
+branches;
+next	1.51;
+
+1.51
+date	2009.03.23.14.31.58;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2009.03.21.21.09.00;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2009.03.21.09.48.29;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2009.03.21.09.42.07;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2009.03.20.19.56.25;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2009.03.20.16.43.28;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2009.03.20.15.14.01;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2009.03.12.16.30.50;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2009.03.11.00.39.58;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2009.03.09.14.19.59;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2009.03.09.13.17.49;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2009.03.08.20.57.35;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2009.03.08.20.50.12;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.03.08.13.01.35;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.03.08.12.40.27;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.03.08.11.41.22;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.03.06.14.24.49;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.03.05.13.12.12;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.03.05.12.08.53;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.03.01.23.14.15;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.02.28.21.50.01;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.02.28.19.15.28;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.02.28.14.43.35;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.02.28.14.40.07;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.02.28.13.47.36;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.02.27.10.55.16;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.02.27.09.39.40;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.02.26.16.08.11;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.02.22.14.31.08;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.02.21.21.00.06;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.02.20.11.04.23;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.01.21.11.35.26;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.01.20.22.55.46;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.01.20.13.44.05;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.01.20.12.51.28;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.01.19.17.02.58;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.01.17.16.47.02;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.01.17.16.15.27;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.01.16.12.23.25;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.01.16.11.50.54;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.01.12.12.52.21;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.01.09.14.45.44;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.01.08.15.59.58;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.01.08.15.05.50;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.01.07.15.53.00;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.01.05.16.11.14;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.01.05.14.14.04;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.52
+log
+@Added man_action.c, renamed mdoc_action.c.
+@
+text
+@@
+
+
+1.51
+log
+@Linux fixes.
+@
+text
+@a0 708
+/* $Id: action.c,v 1.50 2009/03/23 14:22:11 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <sys/utsname.h>
+
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "libmdoc.h"
+
+/*
+ * Actions are executed on macros after they've been post-validated: in
+ * other words, a macro will not be "acted upon" until all of its
+ * children have been filled in (post-fix order).
+ */
+
+enum	mwarn {
+	WBADSEC,
+	WNOWIDTH,
+	WBADDATE
+};
+
+#define	PRE_ARGS  struct mdoc *m, const struct mdoc_node *n
+#define	POST_ARGS struct mdoc *m
+
+struct	actions {
+	int	(*pre)(PRE_ARGS);
+	int	(*post)(POST_ARGS);
+};
+
+static	int	  pwarn(struct mdoc *, int, int, enum mwarn);
+
+static	int	  post_ar(POST_ARGS);
+static	int	  post_bl(POST_ARGS);
+static	int	  post_bl_width(POST_ARGS);
+static	int	  post_bl_tagwidth(POST_ARGS);
+static	int	  post_dd(POST_ARGS);
+static	int	  post_display(POST_ARGS);
+static	int	  post_dt(POST_ARGS);
+static	int	  post_nm(POST_ARGS);
+static	int	  post_os(POST_ARGS);
+static	int	  post_prol(POST_ARGS);
+static	int	  post_sh(POST_ARGS);
+static	int	  post_std(POST_ARGS);
+
+static	int	  pre_bd(PRE_ARGS);
+static	int	  pre_dl(PRE_ARGS);
+
+#define	mwarn(m, t) pwarn((m), (m)->last->line, (m)->last->pos, (t))
+
+const	struct actions mdoc_actions[MDOC_MAX] = {
+	{ NULL, NULL }, /* \" */
+	{ NULL, post_dd }, /* Dd */ 
+	{ NULL, post_dt }, /* Dt */ 
+	{ NULL, post_os }, /* Os */ 
+	{ NULL, post_sh }, /* Sh */ 
+	{ NULL, NULL }, /* Ss */ 
+	{ NULL, NULL }, /* Pp */ 
+	{ NULL, NULL }, /* D1 */
+	{ pre_dl, post_display }, /* Dl */
+	{ pre_bd, post_display }, /* Bd */ 
+	{ NULL, NULL }, /* Ed */
+	{ NULL, post_bl }, /* Bl */ 
+	{ NULL, NULL }, /* El */
+	{ NULL, NULL }, /* It */
+	{ NULL, NULL }, /* Ad */ 
+	{ NULL, NULL }, /* An */
+	{ NULL, post_ar }, /* Ar */
+	{ NULL, NULL }, /* Cd */
+	{ NULL, NULL }, /* Cm */
+	{ NULL, NULL }, /* Dv */ 
+	{ NULL, NULL }, /* Er */ 
+	{ NULL, NULL }, /* Ev */ 
+	{ NULL, post_std }, /* Ex */
+	{ NULL, NULL }, /* Fa */ 
+	{ NULL, NULL }, /* Fd */ 
+	{ NULL, NULL }, /* Fl */
+	{ NULL, NULL }, /* Fn */ 
+	{ NULL, NULL }, /* Ft */ 
+	{ NULL, NULL }, /* Ic */ 
+	{ NULL, NULL }, /* In */ 
+	{ NULL, NULL }, /* Li */
+	{ NULL, NULL }, /* Nd */ 
+	{ NULL, post_nm }, /* Nm */ 
+	{ NULL, NULL }, /* Op */
+	{ NULL, NULL }, /* Ot */
+	{ NULL, NULL }, /* Pa */
+	{ NULL, post_std }, /* Rv */
+	{ NULL, NULL }, /* St */
+	{ NULL, NULL }, /* Va */
+	{ NULL, NULL }, /* Vt */ 
+	{ NULL, NULL }, /* Xr */
+	{ NULL, NULL }, /* %A */
+	{ NULL, NULL }, /* %B */
+	{ NULL, NULL }, /* %D */
+	{ NULL, NULL }, /* %I */
+	{ NULL, NULL }, /* %J */
+	{ NULL, NULL }, /* %N */
+	{ NULL, NULL }, /* %O */
+	{ NULL, NULL }, /* %P */
+	{ NULL, NULL }, /* %R */
+	{ NULL, NULL }, /* %T */
+	{ NULL, NULL }, /* %V */
+	{ NULL, NULL }, /* Ac */
+	{ NULL, NULL }, /* Ao */
+	{ NULL, NULL }, /* Aq */
+	{ NULL, NULL }, /* At */ 
+	{ NULL, NULL }, /* Bc */
+	{ NULL, NULL }, /* Bf */ 
+	{ NULL, NULL }, /* Bo */
+	{ NULL, NULL }, /* Bq */
+	{ NULL, NULL }, /* Bsx */
+	{ NULL, NULL }, /* Bx */
+	{ NULL, NULL }, /* Db */
+	{ NULL, NULL }, /* Dc */
+	{ NULL, NULL }, /* Do */
+	{ NULL, NULL }, /* Dq */
+	{ NULL, NULL }, /* Ec */
+	{ NULL, NULL }, /* Ef */
+	{ NULL, NULL }, /* Em */ 
+	{ NULL, NULL }, /* Eo */
+	{ NULL, NULL }, /* Fx */
+	{ NULL, NULL }, /* Ms */
+	{ NULL, NULL }, /* No */
+	{ NULL, NULL }, /* Ns */
+	{ NULL, NULL }, /* Nx */
+	{ NULL, NULL }, /* Ox */
+	{ NULL, NULL }, /* Pc */
+	{ NULL, NULL }, /* Pf */
+	{ NULL, NULL }, /* Po */
+	{ NULL, NULL }, /* Pq */
+	{ NULL, NULL }, /* Qc */
+	{ NULL, NULL }, /* Ql */
+	{ NULL, NULL }, /* Qo */
+	{ NULL, NULL }, /* Qq */
+	{ NULL, NULL }, /* Re */
+	{ NULL, NULL }, /* Rs */
+	{ NULL, NULL }, /* Sc */
+	{ NULL, NULL }, /* So */
+	{ NULL, NULL }, /* Sq */
+	{ NULL, NULL }, /* Sm */
+	{ NULL, NULL }, /* Sx */
+	{ NULL, NULL }, /* Sy */
+	{ NULL, NULL }, /* Tn */
+	{ NULL, NULL }, /* Ux */
+	{ NULL, NULL }, /* Xc */
+	{ NULL, NULL }, /* Xo */
+	{ NULL, NULL }, /* Fo */ 
+	{ NULL, NULL }, /* Fc */ 
+	{ NULL, NULL }, /* Oo */
+	{ NULL, NULL }, /* Oc */
+	{ NULL, NULL }, /* Bk */
+	{ NULL, NULL }, /* Ek */
+	{ NULL, NULL }, /* Bt */
+	{ NULL, NULL }, /* Hf */
+	{ NULL, NULL }, /* Fr */
+	{ NULL, NULL }, /* Ud */
+	{ NULL, NULL }, /* Lb */
+	{ NULL, NULL }, /* Ap */
+	{ NULL, NULL }, /* Lp */
+	{ NULL, NULL }, /* Lk */
+	{ NULL, NULL }, /* Mt */
+	{ NULL, NULL }, /* Brq */
+	{ NULL, NULL }, /* Bro */
+	{ NULL, NULL }, /* Brc */
+	{ NULL, NULL }, /* %C */
+	{ NULL, NULL }, /* Es */
+	{ NULL, NULL }, /* En */
+	{ NULL, NULL }, /* Dx */
+	{ NULL, NULL }, /* %Q */
+};
+
+
+int
+mdoc_action_pre(struct mdoc *m, const struct mdoc_node *n)
+{
+
+	switch (n->type) {
+	case (MDOC_ROOT):
+		break;
+	case (MDOC_TEXT):
+		break;
+	default:
+		if (NULL == mdoc_actions[m->last->tok].pre)
+			break;
+		return((*mdoc_actions[m->last->tok].pre)(m, n));
+	}
+	return(1);
+}
+
+
+int
+mdoc_action_post(struct mdoc *m)
+{
+
+	if (MDOC_ACTED & m->last->flags)
+		return(1);
+	m->last->flags |= MDOC_ACTED;
+
+	switch (m->last->type) {
+	case (MDOC_TEXT):
+		break;
+	case (MDOC_ROOT):
+		break;
+	default:
+		if (NULL == mdoc_actions[m->last->tok].post)
+			break;
+		return((*mdoc_actions[m->last->tok].post)(m));
+	}
+	return(1);
+}
+
+
+static int
+pwarn(struct mdoc *m, int line, int pos, enum mwarn type)
+{
+	char		*p;
+	int		 c;
+
+	p = NULL;
+	c = WARN_SYNTAX;
+
+	switch (type) {
+	case (WBADSEC):
+		p = "inappropriate document section in manual section";
+		c = WARN_COMPAT;
+		break;
+	case (WNOWIDTH):
+		p = "cannot determine default width";
+		break;
+	case (WBADDATE):
+		p = "malformed date syntax";
+		break;
+	}
+
+	assert(p);
+	return(mdoc_pwarn(m, line, pos, c, p));
+}
+
+
+static int
+post_std(POST_ARGS)
+{
+
+	/*
+	 * If '-std' is invoked without an argument, fill it in with our
+	 * name (if it's been set).
+	 */
+
+	if (NULL == m->last->args)
+		return(1);
+	if (m->last->args->argv[0].sz)
+		return(1);
+
+	assert(m->meta.name);
+
+	m->last->args->argv[0].value = calloc(1, sizeof(char *));
+	if (NULL == m->last->args->argv[0].value)
+		err(1, "calloc");
+
+	m->last->args->argv[0].sz = 1;
+	m->last->args->argv[0].value[0] = xstrdup(m->meta.name);
+	return(1);
+}
+
+
+static int
+post_nm(POST_ARGS)
+{
+	char		 buf[64];
+
+	if (m->meta.name)
+		return(1);
+
+	(void)xstrlcpys(buf, m->last->child, sizeof(buf));
+	m->meta.name = xstrdup(buf);
+
+	return(1);
+}
+
+
+static int
+post_sh(POST_ARGS)
+{
+	enum mdoc_sec	 sec;
+	char		 buf[64];
+
+	/*
+	 * We keep track of the current section /and/ the "named"
+	 * section, which is one of the conventional ones, in order to
+	 * check ordering.
+	 */
+
+	if (MDOC_HEAD != m->last->type)
+		return(1);
+
+	(void)xstrlcpys(buf, m->last->child, sizeof(buf));
+	if (SEC_CUSTOM != (sec = mdoc_atosec(buf)))
+		m->lastnamed = sec;
+
+	switch ((m->lastsec = sec)) {
+	case (SEC_RETURN_VALUES):
+		/* FALLTHROUGH */
+	case (SEC_ERRORS):
+		switch (m->meta.msec) {
+		case (2):
+			/* FALLTHROUGH */
+		case (3):
+			/* FALLTHROUGH */
+		case (9):
+			break;
+		default:
+			return(mwarn(m, WBADSEC));
+		}
+		break;
+	default:
+		break;
+	}
+	return(1);
+}
+
+
+static int
+post_dt(POST_ARGS)
+{
+	struct mdoc_node *n;
+	const char	 *cp;
+	char		 *ep;
+	long		  lval;
+
+	if (m->meta.title)
+		free(m->meta.title);
+	if (m->meta.vol)
+		free(m->meta.vol);
+	if (m->meta.arch)
+		free(m->meta.arch);
+
+	m->meta.title = m->meta.vol = m->meta.arch = NULL;
+	m->meta.msec = 0;
+
+	/* Handles: `.Dt' 
+	 *   --> title = unknown, volume = local, msec = 0, arch = NULL
+	 */
+
+	if (NULL == (n = m->last->child)) {
+		m->meta.title = xstrdup("unknown");
+		m->meta.vol = xstrdup("local");
+		return(post_prol(m));
+	}
+
+	/* Handles: `.Dt TITLE' 
+	 *   --> title = TITLE, volume = local, msec = 0, arch = NULL
+	 */
+
+	m->meta.title = xstrdup(n->string);
+
+	if (NULL == (n = n->next)) {
+		m->meta.vol = xstrdup("local");
+		return(post_prol(m));
+	}
+
+	/* Handles: `.Dt TITLE SEC'
+	 *   --> title = TITLE, volume = SEC is msec ? 
+	 *           format(msec) : SEC,
+	 *       msec = SEC is msec ? atoi(msec) : 0,
+	 *       arch = NULL
+	 */
+
+	cp = mdoc_a2msec(n->string);
+	if (cp) {
+		m->meta.vol = xstrdup(cp);
+		errno = 0;
+		lval = strtol(n->string, &ep, 10);
+		if (n->string[0] != '\0' && *ep == '\0')
+			m->meta.msec = (int)lval;
+	} else 
+		m->meta.vol = xstrdup(n->string);
+
+	if (NULL == (n = n->next))
+		return(post_prol(m));
+
+	/* Handles: `.Dt TITLE SEC VOL'
+	 *   --> title = TITLE, volume = VOL is vol ?
+	 *       format(VOL) : 
+	 *           VOL is arch ? format(arch) : 
+	 *               VOL
+	 */
+
+	cp = mdoc_a2vol(n->string);
+	if (cp) {
+		free(m->meta.vol);
+		m->meta.vol = xstrdup(cp);
+		n = n->next;
+	} else {
+		cp = mdoc_a2arch(n->string);
+		if (NULL == cp) {
+			free(m->meta.vol);
+			m->meta.vol = xstrdup(n->string);
+		} else
+			m->meta.arch = xstrdup(cp);
+	}	
+
+	/* Ignore any subsequent parameters... */
+
+	return(post_prol(m));
+}
+
+
+static int
+post_os(POST_ARGS)
+{
+	char		  buf[64];
+	struct utsname	  utsname;
+
+	if (m->meta.os)
+		free(m->meta.os);
+
+	(void)xstrlcpys(buf, m->last->child, sizeof(buf));
+
+	if (0 == buf[0]) {
+		if (-1 == uname(&utsname))
+			return(mdoc_err(m, "utsname"));
+		(void)xstrlcpy(buf, utsname.sysname, sizeof(buf));
+		(void)xstrlcat(buf, " ", sizeof(buf));
+		(void)xstrlcat(buf, utsname.release, sizeof(buf));
+	}
+
+	m->meta.os = xstrdup(buf);
+	m->lastnamed = m->lastsec = SEC_BODY;
+
+	return(post_prol(m));
+}
+
+
+/*
+ * Calculate the -width for a `Bl -tag' list if it hasn't been provided.
+ * Uses the first head macro.
+ */
+static int
+post_bl_tagwidth(struct mdoc *m)
+{
+	struct mdoc_node  *n;
+	int		   sz;
+	char		   buf[32];
+
+	/*
+	 * Use the text width, if a text node, or the default macro
+	 * width if a macro.
+	 */
+
+	n = m->last->head->child;
+	sz = 10; /* Default size. */
+
+	if (n) {
+		if (MDOC_TEXT != n->type) {
+			if (0 == (sz = (int)mdoc_macro2len(n->tok)))
+				if ( ! mwarn(m, WNOWIDTH))
+					return(0);
+		} else
+			sz = (int)strlen(n->string) + 1;
+	} 
+
+	(void)snprintf(buf, sizeof(buf), "%dn", sz);
+
+	/*
+	 * We have to dynamically add this to the macro's argument list.
+	 * We're guaranteed that a MDOC_Width doesn't already exist.
+	 */
+
+	n = m->last;
+	assert(n->args);
+
+	(n->args->argc)++;
+	n->args->argv = xrealloc(n->args->argv, 
+			n->args->argc * sizeof(struct mdoc_argv));
+
+	n->args->argv[n->args->argc - 1].arg = MDOC_Width;
+	n->args->argv[n->args->argc - 1].line = m->last->line;
+	n->args->argv[n->args->argc - 1].pos = m->last->pos;
+	n->args->argv[n->args->argc - 1].sz = 1;
+	n->args->argv[n->args->argc - 1].value = calloc(1, sizeof(char *));
+	if (NULL == n->args->argv[n->args->argc - 1].value)
+		err(1, "calloc");
+	n->args->argv[n->args->argc - 1].value[0] = xstrdup(buf);
+
+	return(1);
+}
+
+
+static int
+post_bl_width(struct mdoc *m)
+{
+	size_t		  width;
+	int		  i, tok;
+	char		  buf[32];
+	char		 *p;
+
+	if (NULL == m->last->args)
+		return(1);
+
+	for (i = 0; i < (int)m->last->args->argc; i++)
+		if (MDOC_Width == m->last->args->argv[i].arg)
+			break;
+
+	if (i == (int)m->last->args->argc)
+		return(1);
+
+	p = m->last->args->argv[i].value[0];
+
+	/*
+	 * If the value to -width is a macro, then we re-write it to be
+	 * the macro's width as set in share/tmac/mdoc/doc-common.
+	 */
+
+	if (xstrcmp(p, "Ds"))
+		width = 8;
+	else if (MDOC_MAX == (tok = mdoc_tokhash_find(m->htab, p)))
+		return(1);
+	else if (0 == (width = mdoc_macro2len(tok))) 
+		return(mwarn(m, WNOWIDTH));
+
+	/* The value already exists: free and reallocate it. */
+
+	(void)snprintf(buf, sizeof(buf), "%zun", width);
+
+	free(m->last->args->argv[i].value[0]);
+	m->last->args->argv[i].value[0] = xstrdup(buf);
+
+	return(1);
+}
+
+
+static int
+post_bl(POST_ARGS)
+{
+	int		  i, r, len;
+
+	if (MDOC_BLOCK != m->last->type)
+		return(1);
+
+	/*
+	 * These are fairly complicated, so we've broken them into two
+	 * functions.  post_bl_tagwidth() is called when a -tag is
+	 * specified, but no -width (it must be guessed).  The second
+	 * when a -width is specified (macro indicators must be
+	 * rewritten into real lengths).
+	 */
+
+	len = (int)(m->last->args ? m->last->args->argc : 0);
+
+	for (r = i = 0; i < len; i++) {
+		if (MDOC_Tag == m->last->args->argv[i].arg)
+			r |= 1 << 0;
+		if (MDOC_Width == m->last->args->argv[i].arg)
+			r |= 1 << 1;
+	}
+
+	if (r & (1 << 0) && ! (r & (1 << 1))) {
+		if ( ! post_bl_tagwidth(m))
+			return(0);
+	} else if (r & (1 << 1))
+		if ( ! post_bl_width(m))
+			return(0);
+
+	return(1);
+}
+
+
+static int
+post_ar(POST_ARGS)
+{
+	struct mdoc_node *n;
+
+	if (m->last->child)
+		return(1);
+	
+	n = m->last;
+	m->next = MDOC_NEXT_CHILD;
+	if ( ! mdoc_word_alloc(m, m->last->line,
+				m->last->pos, "file"))
+		return(0);
+	m->next = MDOC_NEXT_SIBLING;
+	if ( ! mdoc_word_alloc(m, m->last->line, 
+				m->last->pos, "..."))
+		return(0);
+
+	m->last = n;
+	m->next = MDOC_NEXT_SIBLING;
+	return(1);
+}
+
+
+static int
+post_dd(POST_ARGS)
+{
+	char		  buf[64];
+
+	(void)xstrlcpys(buf, m->last->child, sizeof(buf));
+
+	if (0 == (m->meta.date = mdoc_atotime(buf))) {
+		if ( ! mwarn(m, WBADDATE))
+			return(0);
+		m->meta.date = time(NULL);
+	}
+
+	return(post_prol(m));
+}
+
+
+static int
+post_prol(POST_ARGS)
+{
+	struct mdoc_node *n;
+
+	/* 
+	 * The end document shouldn't have the prologue macros as part
+	 * of the syntax tree (they encompass only meta-data).  
+	 */
+
+	if (m->last->parent->child == m->last)
+		m->last->parent->child = m->last->prev;
+	if (m->last->prev)
+		m->last->prev->next = NULL;
+
+	n = m->last;
+	assert(NULL == m->last->next);
+
+	if (m->last->prev) {
+		m->last = m->last->prev;
+		m->next = MDOC_NEXT_SIBLING;
+	} else {
+		m->last = m->last->parent;
+		m->next = MDOC_NEXT_CHILD;
+	}
+
+	mdoc_node_freelist(n);
+	return(1);
+}
+
+
+static int
+pre_dl(PRE_ARGS)
+{
+
+	if (MDOC_BODY != n->type)
+		return(1);
+	m->flags |= MDOC_LITERAL;
+	return(1);
+}
+
+
+static int
+pre_bd(PRE_ARGS)
+{
+	int		 i;
+
+	if (MDOC_BODY != n->type)
+		return(1);
+
+	/* 
+	 * We ONLY enter a literal context if `Bd -literal' or `Bd
+	 * -unfilled'.  
+	 */
+
+	n = n->parent;
+
+	for (i = 0; i < (int)n->args->argc; i++)
+		if (MDOC_Literal == n->args->argv[i].arg)
+			break;
+		else if (MDOC_Unfilled == n->args->argv[i].arg)
+			break;
+
+	if (i < (int)n->args->argc)
+		m->flags |= MDOC_LITERAL;
+
+	return(1);
+}
+
+
+static int
+post_display(POST_ARGS)
+{
+
+	if (MDOC_BODY == m->last->type)
+		m->flags &= ~MDOC_LITERAL;
+	return(1);
+}
+
+
+@
+
+
+1.50
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.49 2009/03/21 21:09:00 kristaps Exp $ */
+d22 1
+@
+
+
+1.49
+log
+@Fixes to dynamic addition of Bl width.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.48 2009/03/21 09:48:29 kristaps Exp $ */
+d27 1
+a27 1
+#include "private.h"
+d275 4
+a278 1
+	m->last->args->argv[0].value = xcalloc(1, sizeof(char *));
+d499 3
+a501 1
+	n->args->argv[n->args->argc - 1].value = xcalloc(1, sizeof(char *));
+@
+
+
+1.48
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.47 2009/03/21 09:42:07 kristaps Exp $ */
+a34 4
+enum	merr {
+	ENOWIDTH
+};
+
+a49 1
+static	int	  perr(struct mdoc *, int, int, enum merr);
+a66 1
+#define	merr(m, t) perr((m), (m)->last->line, (m)->last->pos, (t))
+a232 18
+perr(struct mdoc *m, int line, int pos, enum merr type)
+{
+	char		*p;
+
+	p = NULL;
+
+	switch (type) {
+	case (ENOWIDTH):
+		p = "missing width argument";
+		break;
+	}
+
+	assert(p);
+	return(mdoc_perr(m, line, pos, p));
+}
+
+
+static int
+d450 4
+a461 8
+	 * If -tag has been specified and -width has not been, then try
+	 * to intuit our width from the first body element.  
+	 */
+
+	if (NULL == (n = m->last->body->child))
+		return(1);
+
+	/*
+d466 3
+a468 1
+	n = n->head->child;
+d472 2
+a473 1
+				sz = -1;
+d476 1
+a476 8
+	} else
+		sz = -1;
+
+	if (-1 == sz) {
+		if ( ! mwarn(m, WNOWIDTH))
+			return(0);
+		sz = 10;
+	}
+d485 2
+a486 5
+	if (NULL == m->last->args) {
+		m->last->args = xcalloc
+			(1, sizeof(struct mdoc_arg));
+		m->last->args->refcnt = 1;
+	}
+a487 3
+	n = m->last;
+	sz = (int)n->args->argc;
+	
+a488 1
+
+d490 1
+a490 1
+			n->args->argc * sizeof(struct mdoc_arg));
+d492 6
+a497 6
+	n->args->argv[sz - 1].arg = MDOC_Width;
+	n->args->argv[sz - 1].line = m->last->line;
+	n->args->argv[sz - 1].pos = m->last->pos;
+	n->args->argv[sz - 1].sz = 1;
+	n->args->argv[sz - 1].value = xcalloc(1, sizeof(char *));
+	n->args->argv[sz - 1].value[0] = xstrdup(buf);
+d512 1
+a512 1
+		return(merr(m, ENOWIDTH));
+d519 1
+a519 1
+		return(merr(m, ENOWIDTH));
+@
+
+
+1.47
+log
+@Added %Q macro.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.46 2009/03/20 19:56:25 kristaps Exp $ */
+d408 2
+a409 1
+	if ((cp = mdoc_a2msec(n->string))) {
+d428 2
+a429 1
+	if ((cp = mdoc_a2vol(n->string))) {
+d494 2
+a495 1
+	if ((n = n->head->child)) {
+@
+
+
+1.46
+log
+@Proper .Dl literalism.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.45 2009/03/20 16:43:28 kristaps Exp $ */
+d194 1
+@
+
+
+1.45
+log
+@Fixed literal-formatting error with `Dl'.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.44 2009/03/20 15:14:01 kristaps Exp $ */
+a59 1
+static	int	  post_bd(POST_ARGS);
+d61 1
+d70 1
+d84 2
+a85 2
+	{ NULL, NULL }, /* Dl */
+	{ pre_bd, post_bd }, /* Bd */ 
+d690 11
+d729 1
+a729 1
+post_bd(POST_ARGS)
+@
+
+
+1.44
+log
+@Support for `Bd' of all types (see mdoc.7 for newline/tab rules).
+Renamed term.c and terminal.c functions to be term_.
+Some bugfixes to lists.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.43 2009/03/16 23:37:28 kristaps Exp $ */
+d60 1
+a60 1
+static	int	  post_display(POST_ARGS);
+d69 1
+a69 1
+static	int	  pre_display(PRE_ARGS);
+d83 2
+a84 2
+	{ pre_display, post_display }, /* Dl */
+	{ pre_display, post_display }, /* Bd */ 
+d689 1
+a689 1
+pre_display(PRE_ARGS)
+d702 1
+d717 1
+a717 1
+post_display(POST_ARGS)
+@
+
+
+1.43
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.42 2009/03/16 22:19:19 kristaps Exp $ */
+d45 3
+d49 2
+a50 1
+	int	(*post)(struct mdoc *);
+d53 15
+a67 15
+static	int	 nwarn(struct mdoc *, 
+			const struct mdoc_node *, enum mwarn);
+static	int	 nerr(struct mdoc *, 
+			const struct mdoc_node *, enum merr);
+static	int	 post_ar(struct mdoc *);
+static	int	 post_bl(struct mdoc *);
+static	int	 post_bl_width(struct mdoc *);
+static	int	 post_bl_tagwidth(struct mdoc *);
+static	int	 post_dd(struct mdoc *);
+static	int	 post_dt(struct mdoc *);
+static	int	 post_nm(struct mdoc *);
+static	int	 post_os(struct mdoc *);
+static	int	 post_sh(struct mdoc *);
+static	int	 post_std(struct mdoc *);
+static	int	 post_prologue(struct mdoc *);
+d69 4
+a72 2
+#define	merr(m, t) nerr((m), (m)->last, (t))
+#define	mwarn(m, t) nwarn((m), (m)->last, (t))
+d75 118
+a192 118
+	{ NULL }, /* \" */
+	{ post_dd }, /* Dd */ 
+	{ post_dt }, /* Dt */ 
+	{ post_os }, /* Os */ 
+	{ post_sh }, /* Sh */ 
+	{ NULL }, /* Ss */ 
+	{ NULL }, /* Pp */ 
+	{ NULL }, /* D1 */
+	{ NULL }, /* Dl */
+	{ NULL }, /* Bd */ 
+	{ NULL }, /* Ed */
+	{ post_bl }, /* Bl */ 
+	{ NULL }, /* El */
+	{ NULL }, /* It */
+	{ NULL }, /* Ad */ 
+	{ NULL }, /* An */
+	{ post_ar }, /* Ar */
+	{ NULL }, /* Cd */
+	{ NULL }, /* Cm */
+	{ NULL }, /* Dv */ 
+	{ NULL }, /* Er */ 
+	{ NULL }, /* Ev */ 
+	{ post_std }, /* Ex */
+	{ NULL }, /* Fa */ 
+	{ NULL }, /* Fd */ 
+	{ NULL }, /* Fl */
+	{ NULL }, /* Fn */ 
+	{ NULL }, /* Ft */ 
+	{ NULL }, /* Ic */ 
+	{ NULL }, /* In */ 
+	{ NULL }, /* Li */
+	{ NULL }, /* Nd */ 
+	{ post_nm }, /* Nm */ 
+	{ NULL }, /* Op */
+	{ NULL }, /* Ot */
+	{ NULL }, /* Pa */
+	{ post_std }, /* Rv */
+	{ NULL }, /* St */
+	{ NULL }, /* Va */
+	{ NULL }, /* Vt */ 
+	{ NULL }, /* Xr */
+	{ NULL }, /* %A */
+	{ NULL }, /* %B */
+	{ NULL }, /* %D */
+	{ NULL }, /* %I */
+	{ NULL }, /* %J */
+	{ NULL }, /* %N */
+	{ NULL }, /* %O */
+	{ NULL }, /* %P */
+	{ NULL }, /* %R */
+	{ NULL }, /* %T */
+	{ NULL }, /* %V */
+	{ NULL }, /* Ac */
+	{ NULL }, /* Ao */
+	{ NULL }, /* Aq */
+	{ NULL }, /* At */ 
+	{ NULL }, /* Bc */
+	{ NULL }, /* Bf */ 
+	{ NULL }, /* Bo */
+	{ NULL }, /* Bq */
+	{ NULL }, /* Bsx */
+	{ NULL }, /* Bx */
+	{ NULL }, /* Db */
+	{ NULL }, /* Dc */
+	{ NULL }, /* Do */
+	{ NULL }, /* Dq */
+	{ NULL }, /* Ec */
+	{ NULL }, /* Ef */
+	{ NULL }, /* Em */ 
+	{ NULL }, /* Eo */
+	{ NULL }, /* Fx */
+	{ NULL }, /* Ms */
+	{ NULL }, /* No */
+	{ NULL }, /* Ns */
+	{ NULL }, /* Nx */
+	{ NULL }, /* Ox */
+	{ NULL }, /* Pc */
+	{ NULL }, /* Pf */
+	{ NULL }, /* Po */
+	{ NULL }, /* Pq */
+	{ NULL }, /* Qc */
+	{ NULL }, /* Ql */
+	{ NULL }, /* Qo */
+	{ NULL }, /* Qq */
+	{ NULL }, /* Re */
+	{ NULL }, /* Rs */
+	{ NULL }, /* Sc */
+	{ NULL }, /* So */
+	{ NULL }, /* Sq */
+	{ NULL }, /* Sm */
+	{ NULL }, /* Sx */
+	{ NULL }, /* Sy */
+	{ NULL }, /* Tn */
+	{ NULL }, /* Ux */
+	{ NULL }, /* Xc */
+	{ NULL }, /* Xo */
+	{ NULL }, /* Fo */ 
+	{ NULL }, /* Fc */ 
+	{ NULL }, /* Oo */
+	{ NULL }, /* Oc */
+	{ NULL }, /* Bk */
+	{ NULL }, /* Ek */
+	{ NULL }, /* Bt */
+	{ NULL }, /* Hf */
+	{ NULL }, /* Fr */
+	{ NULL }, /* Ud */
+	{ NULL }, /* Lb */
+	{ NULL }, /* Ap */
+	{ NULL }, /* Lp */
+	{ NULL }, /* Lk */
+	{ NULL }, /* Mt */
+	{ NULL }, /* Brq */
+	{ NULL }, /* Bro */
+	{ NULL }, /* Brc */
+	{ NULL }, /* %C */
+	{ NULL }, /* Es */
+	{ NULL }, /* En */
+	{ NULL }, /* Dx */
+d196 40
+d237 1
+a237 1
+nerr(struct mdoc *m, const struct mdoc_node *n, enum merr type)
+d250 1
+a250 1
+	return(mdoc_nerr(m, n, p));
+d255 1
+a255 1
+nwarn(struct mdoc *m, const struct mdoc_node *n, enum mwarn type)
+d277 1
+a277 1
+	return(mdoc_nwarn(m, n, c, p));
+d282 1
+a282 1
+post_std(struct mdoc *mdoc)
+d290 1
+a290 1
+	if (NULL == mdoc->last->args)
+d292 1
+a292 1
+	if (mdoc->last->args->argv[0].sz)
+d295 1
+a295 5
+	assert(mdoc->meta.name);
+
+	mdoc_msg(mdoc, "writing %s argument: %s", 
+			mdoc_argnames[MDOC_Std], 
+			mdoc->meta.name);
+d297 3
+a299 3
+	mdoc->last->args->argv[0].value = xcalloc(1, sizeof(char *));
+	mdoc->last->args->argv[0].sz = 1;
+	mdoc->last->args->argv[0].value[0] = xstrdup(mdoc->meta.name);
+d305 1
+a305 1
+post_nm(struct mdoc *mdoc)
+d309 1
+a309 1
+	if (mdoc->meta.name)
+d312 2
+a313 3
+	(void)xstrlcpys(buf, mdoc->last->child, sizeof(buf));
+	mdoc->meta.name = xstrdup(buf);
+	mdoc_msg(mdoc, "name: %s", mdoc->meta.name);
+d320 1
+a320 1
+post_sh(struct mdoc *mdoc)
+d331 1
+a331 1
+	if (MDOC_HEAD != mdoc->last->type)
+d334 1
+a334 1
+	(void)xstrlcpys(buf, mdoc->last->child, sizeof(buf));
+d336 1
+a336 1
+		mdoc->lastnamed = sec;
+d338 1
+a338 3
+	mdoc->lastsec = sec;
+
+	switch (mdoc->lastsec) {
+d342 1
+a342 1
+		switch (mdoc->meta.msec) {
+d350 1
+a350 1
+			return(mwarn(mdoc, WBADSEC));
+d361 1
+a361 1
+post_dt(struct mdoc *mdoc)
+d368 6
+a373 6
+	if (mdoc->meta.title)
+		free(mdoc->meta.title);
+	if (mdoc->meta.vol)
+		free(mdoc->meta.vol);
+	if (mdoc->meta.arch)
+		free(mdoc->meta.arch);
+d375 2
+a376 2
+	mdoc->meta.title = mdoc->meta.vol = mdoc->meta.arch = NULL;
+	mdoc->meta.msec = 0;
+d382 4
+a385 8
+	if (NULL == (n = mdoc->last->child)) {
+		mdoc->meta.title = xstrdup("unknown");
+		mdoc->meta.vol = xstrdup("local");
+		mdoc_msg(mdoc, "title: %s", mdoc->meta.title);
+		mdoc_msg(mdoc, "volume: %s", mdoc->meta.vol);
+		mdoc_msg(mdoc, "arch: <unset>");
+		mdoc_msg(mdoc, "msec: <unset>");
+		return(post_prologue(mdoc));
+d392 1
+a392 2
+	mdoc->meta.title = xstrdup(n->string);
+	mdoc_msg(mdoc, "title: %s", mdoc->meta.title);
+d395 2
+a396 5
+		mdoc->meta.vol = xstrdup("local");
+		mdoc_msg(mdoc, "volume: %s", mdoc->meta.vol);
+		mdoc_msg(mdoc, "arch: <unset>");
+		mdoc_msg(mdoc, "msec: %d", mdoc->meta.msec);
+		return(post_prologue(mdoc));
+d407 1
+a407 1
+		mdoc->meta.vol = xstrdup(cp);
+d411 1
+a411 1
+			mdoc->meta.msec = (int)lval;
+d413 1
+a413 1
+		mdoc->meta.vol = xstrdup(n->string);
+d415 2
+a416 6
+	if (NULL == (n = n->next)) {
+		mdoc_msg(mdoc, "volume: %s", mdoc->meta.vol);
+		mdoc_msg(mdoc, "arch: <unset>");
+		mdoc_msg(mdoc, "msec: %d", mdoc->meta.msec);
+		return(post_prologue(mdoc));
+	}
+d426 2
+a427 2
+		free(mdoc->meta.vol);
+		mdoc->meta.vol = xstrdup(cp);
+d432 2
+a433 2
+			free(mdoc->meta.vol);
+			mdoc->meta.vol = xstrdup(n->string);
+d435 1
+a435 1
+			mdoc->meta.arch = xstrdup(cp);
+a437 5
+	mdoc_msg(mdoc, "volume: %s", mdoc->meta.vol);
+	mdoc_msg(mdoc, "arch: %s", mdoc->meta.arch ?
+			mdoc->meta.arch : "<unset>");
+	mdoc_msg(mdoc, "msec: %d", mdoc->meta.msec);
+
+d440 1
+a440 1
+	return(post_prologue(mdoc));
+d445 1
+a445 1
+post_os(struct mdoc *mdoc)
+d450 2
+a451 2
+	if (mdoc->meta.os)
+		free(mdoc->meta.os);
+d453 1
+a453 1
+	(void)xstrlcpys(buf, mdoc->last->child, sizeof(buf));
+d457 1
+a457 1
+			return(mdoc_err(mdoc, "utsname"));
+d463 2
+a464 2
+	mdoc->meta.os = xstrdup(buf);
+	mdoc_msg(mdoc, "system: %s", mdoc->meta.os);
+d466 1
+a466 3
+	mdoc->lastnamed = mdoc->lastsec = SEC_BODY;
+
+	return(post_prologue(mdoc));
+d471 1
+a471 1
+post_bl_tagwidth(struct mdoc *mdoc)
+d482 1
+a482 1
+	if (NULL == (n = mdoc->last->body->child))
+d500 1
+a500 1
+		if ( ! mwarn(mdoc, WNOWIDTH))
+d512 2
+a513 2
+	if (NULL == mdoc->last->args) {
+		mdoc->last->args = xcalloc
+d515 1
+a515 1
+		mdoc->last->args->refcnt = 1;
+d518 1
+a518 1
+	n = mdoc->last;
+d527 2
+a528 2
+	n->args->argv[sz - 1].line = mdoc->last->line;
+	n->args->argv[sz - 1].pos = mdoc->last->pos;
+a532 3
+	mdoc_msg(mdoc, "adding %s argument: %s", 
+			mdoc_argnames[MDOC_Width], buf);
+
+a568 3
+	mdoc_msg(m, "re-writing %s argument: %s -> %zun", 
+			mdoc_argnames[MDOC_Width], p, width);
+
+d581 1
+a581 1
+post_bl(struct mdoc *mdoc)
+d585 1
+a585 1
+	if (MDOC_BLOCK != mdoc->last->type)
+d596 1
+a596 1
+	len = (int)(mdoc->last->args ? mdoc->last->args->argc : 0);
+d599 1
+a599 1
+		if (MDOC_Tag == mdoc->last->args->argv[i].arg)
+d601 1
+a601 1
+		if (MDOC_Width == mdoc->last->args->argv[i].arg)
+d606 1
+a606 1
+		if ( ! post_bl_tagwidth(mdoc))
+d609 1
+a609 1
+		if ( ! post_bl_width(mdoc))
+d617 1
+a617 1
+post_ar(struct mdoc *mdoc)
+d621 1
+a621 1
+	if (mdoc->last->child)
+d624 4
+a627 5
+	n = mdoc->last;
+
+	mdoc->next = MDOC_NEXT_CHILD;
+	if ( ! mdoc_word_alloc(mdoc, mdoc->last->line,
+				mdoc->last->pos, "file"))
+d629 3
+a631 3
+	mdoc->next = MDOC_NEXT_SIBLING;
+	if ( ! mdoc_word_alloc(mdoc, mdoc->last->line, 
+				mdoc->last->pos, "..."))
+d634 2
+a635 2
+	mdoc->last = n;
+	mdoc->next = MDOC_NEXT_SIBLING;
+d641 1
+a641 1
+post_dd(struct mdoc *mdoc)
+d645 1
+a645 1
+	(void)xstrlcpys(buf, mdoc->last->child, sizeof(buf));
+d647 2
+a648 2
+	if (0 == (mdoc->meta.date = mdoc_atotime(buf))) {
+		if ( ! mwarn(mdoc, WBADDATE))
+d650 1
+a650 1
+		mdoc->meta.date = time(NULL);
+d653 1
+a653 2
+	mdoc_msg(mdoc, "date: %u", mdoc->meta.date);
+	return(post_prologue(mdoc));
+d658 1
+a658 1
+post_prologue(struct mdoc *mdoc)
+d667 11
+a677 11
+	if (mdoc->last->parent->child == mdoc->last)
+		mdoc->last->parent->child = mdoc->last->prev;
+	if (mdoc->last->prev)
+		mdoc->last->prev->next = NULL;
+
+	n = mdoc->last;
+	assert(NULL == mdoc->last->next);
+
+	if (mdoc->last->prev) {
+		mdoc->last = mdoc->last->prev;
+		mdoc->next = MDOC_NEXT_SIBLING;
+d679 2
+a680 2
+		mdoc->last = mdoc->last->parent;
+		mdoc->next = MDOC_NEXT_CHILD;
+d688 2
+a689 2
+int
+mdoc_action_post(struct mdoc *mdoc)
+d691 1
+d693 1
+a693 1
+	if (MDOC_ACTED & mdoc->last->flags)
+a694 1
+	mdoc->last->flags |= MDOC_ACTED;
+d696 26
+a721 7
+	if (MDOC_TEXT == mdoc->last->type)
+		return(1);
+	if (MDOC_ROOT == mdoc->last->type)
+		return(1);
+	if (NULL == mdoc_actions[mdoc->last->tok].post)
+		return(1);
+	return((*mdoc_actions[mdoc->last->tok].post)(mdoc));
+d723 2
+@
+
+
+1.42
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.41 2009/03/12 16:30:50 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+d186 1
+@
+
+
+1.41
+log
+@Added -nested (doesn't do anything).
+Added .%C.
+.Cd is now callable.
+Added .Rv -std.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.40 2009/03/11 00:39:58 kristaps Exp $ */
+d65 3
+d184 2
+a188 1
+#define	merr(m, t) nerr((m), (m)->last, (t))
+a206 1
+#define	mwarn(m, t) nwarn((m), (m)->last, (t))
+@
+
+
+1.40
+log
+@Expanded perfect htab to use 27 * 26 * 3 space.
+Added Brq, Bro and Brc macros.
+Added lbrace and rbrace to special characters.
+Fixed spacing in braces.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.39 2009/03/09 14:19:59 kristaps Exp $ */
+d62 1
+a62 1
+static	int	 post_ex(struct mdoc *);
+d88 1
+a88 1
+	{ post_ex }, /* Ex */
+d102 1
+a102 1
+	{ NULL }, /* Rv */
+d180 1
+d232 1
+a232 1
+post_ex(struct mdoc *mdoc)
+d236 2
+a237 2
+	 * If `.Ex -std' is invoked without an argument, fill it in with
+	 * our name (if it's been set).
+@
+
+
+1.39
+log
+@Added `Mt' and `Lk' macros (NetBSD).
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.38 2009/03/09 13:17:49 kristaps Exp $ */
+d177 3
+@
+
+
+1.38
+log
+@Easier integration into FreeBSD (sys/types.h, time.h, etc.).
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.37 2009/03/08 20:57:35 kristaps Exp $ */
+d175 2
+@
+
+
+1.37
+log
+@Added `Lp' macro.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.36 2009/03/08 20:50:12 kristaps Exp $ */
+a25 1
+#include <time.h>
+@
+
+
+1.36
+log
+@Added .Ap.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.35 2009/03/08 13:01:35 kristaps Exp $ */
+d175 1
+@
+
+
+1.35
+log
+@Memory-corruption fix.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.34 2009/03/08 12:40:27 kristaps Exp $ */
+d174 1
+@
+
+
+1.34
+log
+@Memory fixes in new dynamic schema.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.33 2009/03/08 11:41:22 kristaps Exp $ */
+d244 1
+a244 2
+	assert(1 == mdoc->last->args->argv[0].sz);
+
+a245 1
+	mdoc->last->args->argv[0].value = xcalloc(1, sizeof(char *));
+@
+
+
+1.33
+log
+@BROKEN CHECK-IN.  Wide-ranging updates.
+Removed libmdoc internal argv limit (all dynamic).
+Removed "data" union in mdoc_node (to be selectively re-added).
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.32 2009/03/06 14:24:49 kristaps Exp $ */
+d517 1
+a517 1
+	char		**p;
+d529 1
+a529 1
+	p = &m->last->args->argv[i].value[0];
+d536 1
+a536 1
+	if (xstrcmp(*p, "Ds"))
+d538 1
+a538 1
+	else if (MDOC_MAX == (tok = mdoc_tokhash_find(m->htab, *p)))
+d544 1
+a544 1
+			mdoc_argnames[MDOC_Width], *p, width);
+d550 2
+a551 2
+	free(*p);
+	*p = xstrdup(buf);
+@
+
+
+1.32
+log
+@Documented the strings script.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.31 2009/03/06 14:13:47 kristaps Exp $ */
+d36 10
+d50 4
+a53 2
+/* Per-macro action routines. */
+
+a63 1
+
+a65 2
+/* Array of macro action routines. */
+
+d177 47
+d233 1
+a233 1
+	if (0 == mdoc->last->data.elem.argc)
+d235 1
+a235 1
+	if (mdoc->last->data.elem.argv[0].sz)
+d241 2
+a242 1
+			mdoc_argnames[MDOC_Std], mdoc->meta.name);
+d244 5
+a248 3
+	mdoc->last->data.elem.argv[0].sz = 1;
+	mdoc->last->data.elem.argv[0].value = xcalloc(1, sizeof(char *));
+	mdoc->last->data.elem.argv[0].value[0] = xstrdup(mdoc->meta.name);
+d302 1
+a302 3
+			return(mdoc_warn(mdoc, WARN_COMPAT,
+					"inappropriate section for "
+					"manual section"));
+d348 1
+a348 1
+	mdoc->meta.title = xstrdup(n->data.text.string);
+d366 1
+a366 1
+	if ((cp = mdoc_a2msec(n->data.text.string))) {
+d369 2
+a370 2
+		lval = strtol(n->data.text.string, &ep, 10);
+		if (n->data.text.string[0] != '\0' && *ep == '\0')
+d373 1
+a373 1
+		mdoc->meta.vol = xstrdup(n->data.text.string);
+d389 1
+a389 1
+	if ((cp = mdoc_a2vol(n->data.text.string))) {
+d394 1
+a394 1
+		cp = mdoc_a2arch(n->data.text.string);
+d397 1
+a397 1
+			mdoc->meta.vol = xstrdup(n->data.text.string);
+a444 1
+	struct mdoc_block *b;
+d453 1
+a453 3
+	b = &mdoc->last->data.block;
+
+	if (NULL == (n = b->body->child))
+a454 1
+	assert(MDOC_It == n->tok);
+d461 1
+a461 1
+	if ((n = n->data.block.head->child)) {
+d463 1
+a463 1
+			if (0 == (sz = mdoc_macro2len(n->tok)))
+d466 1
+a466 1
+			sz = (int)strlen(n->data.text.string) + 1;
+d471 1
+a471 3
+		if ( ! mdoc_warn(mdoc, WARN_SYNTAX,
+				"cannot determine default %s",
+				mdoc_argnames[MDOC_Width]))
+d483 13
+a495 2
+	(b->argc)++;
+	b->argv = xrealloc(b->argv, b->argc * sizeof(struct mdoc_arg));
+d497 6
+a502 6
+	b->argv[b->argc - 1].arg = MDOC_Width;
+	b->argv[b->argc - 1].line = mdoc->last->line;
+	b->argv[b->argc - 1].pos = mdoc->last->pos;
+	b->argv[b->argc - 1].sz = 1;
+	b->argv[b->argc - 1].value = xcalloc(1, sizeof(char *));
+	b->argv[b->argc - 1].value[0] = xstrdup(buf);
+d504 2
+a505 2
+	mdoc_msg(mdoc, "adding %s argument: %dn", 
+			mdoc_argnames[MDOC_Width], sz);
+d512 1
+a512 1
+post_bl_width(struct mdoc *mdoc)
+d519 5
+a523 2
+	for (i = 0; i < (int)mdoc->last->data.block.argc; i++) 
+		if (MDOC_Width == mdoc->last->data.block.argv[i].arg)
+d526 4
+a529 3
+	assert(i < (int)mdoc->last->data.block.argc);
+	assert(1 == mdoc->last->data.block.argv[i].sz);
+	p = &mdoc->last->data.block.argv[i].value[0];
+d538 1
+a538 1
+	else if (MDOC_MAX == (tok = mdoc_find(mdoc, *p)))
+d541 1
+a541 3
+		return(mdoc_warn(mdoc, WARN_SYNTAX,
+					"%s macro has no length", 
+					mdoc_argnames[MDOC_Width]));
+d543 1
+a543 1
+	mdoc_msg(mdoc, "re-writing %s argument: %s -> %zun", 
+d551 1
+a551 1
+	*p = strdup(buf);
+d560 1
+a560 1
+	int		  i, r;
+d573 4
+a576 2
+	for (r = i = 0; i < (int)mdoc->last->data.block.argc; i++) {
+		if (MDOC_Tag == mdoc->last->data.block.argv[i].arg)
+d578 1
+a578 1
+		if (MDOC_Width == mdoc->last->data.block.argv[i].arg)
+d625 5
+a629 2
+	if (0 == (mdoc->meta.date = mdoc_atotime(buf)))
+		return(mdoc_err(mdoc, "invalid date syntax"));
+@
+
+
+1.31
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.30 2009/03/05 13:12:12 kristaps Exp $ */
+d538 3
+a540 2
+	mdoc_word_alloc(mdoc, mdoc->last->line,
+			mdoc->last->pos, "file");
+d542 3
+a544 2
+	mdoc_word_alloc(mdoc, mdoc->last->line,
+			mdoc->last->pos, "...");
+@
+
+
+1.30
+log
+@Cleaned up ctype functions (netbsd).
+Fixed .Ex/.Rv -std usage.
+Made Ar provide default value.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.29 2009/03/05 12:08:53 kristaps Exp $ */
+d19 2
+d22 1
+d164 1
+a198 9
+	assert(MDOC_ELEM == mdoc->last->type);
+	assert(MDOC_Nm == mdoc->last->tok);
+
+	/*
+	 * The `Nm' macro sets the document's name when used the first
+	 * time with an argument.  Subsequent calls without a value will
+	 * result in the name value being used.
+	 */
+
+d202 3
+a204 4
+	if (xstrlcats(buf, mdoc->last->child, 64)) {
+		mdoc->meta.name = xstrdup(buf);
+		return(1);
+	}
+d206 1
+a206 1
+	return(mdoc_err(mdoc, "macro parameters too long"));
+d224 6
+a229 6
+	if (xstrlcats(buf, mdoc->last->child, 64)) {
+		if (SEC_CUSTOM != (sec = mdoc_atosec(buf)))
+			mdoc->lastnamed = sec;
+		mdoc->lastsec = sec;
+	} else
+		return(mdoc_err(mdoc, "parameters too long"));
+d236 1
+a236 1
+		case (MSEC_2):
+d238 1
+a238 1
+		case (MSEC_3):
+d240 1
+a240 1
+		case (MSEC_9):
+a257 2
+	int		  i;
+	char		 *p;
+d259 27
+d287 2
+a288 2
+	/* 
+	 * Prologue title must be parsed into document meta-data.
+d291 10
+a300 2
+	assert(MDOC_ELEM == mdoc->last->type);
+	assert(MDOC_Dt == mdoc->last->tok);
+d302 22
+a323 1
+	assert(NULL == mdoc->meta.title);
+d325 6
+a330 4
+	/* LINTED */
+	for (i = 0, n = mdoc->last->child; n; n = n->next, i++) {
+		assert(MDOC_TEXT == n->type);
+		p = n->data.text.string;
+d332 12
+a343 24
+		switch (i) {
+		case (0):
+			mdoc->meta.title = xstrdup(p);
+			break;
+		case (1):
+			mdoc->meta.msec = mdoc_atomsec(p);
+			if (MSEC_DEFAULT != mdoc->meta.msec)
+				break;
+			return(mdoc_nerr(mdoc, n, 
+					"invalid parameter syntax"));
+		case (2):
+			mdoc->meta.vol = mdoc_atovol(p);
+			if (VOL_DEFAULT != mdoc->meta.vol)
+				break;
+			mdoc->meta.arch = mdoc_atoarch(p);
+			if (ARCH_DEFAULT != mdoc->meta.arch)
+				break;
+			return(mdoc_nerr(mdoc, n, 
+					"invalid parameter syntax"));
+		default:
+			return(mdoc_nerr(mdoc, n, 
+					"too many parameters"));
+		}
+	}
+d345 4
+a348 2
+	if (NULL == mdoc->meta.title)
+		mdoc->meta.title = xstrdup("UNTITLED");
+d350 1
+a350 1
+	mdoc_msg(mdoc, "title: %s", mdoc->meta.title);
+d360 1
+d362 2
+a363 4
+	/* 
+	 * Prologue operating system must be parsed into document
+	 * meta-data.
+	 */
+d365 1
+a365 3
+	assert(MDOC_ELEM == mdoc->last->type);
+	assert(MDOC_Os == mdoc->last->tok);
+	assert(NULL == mdoc->meta.os);
+d367 7
+a373 2
+	if ( ! xstrlcats(buf, mdoc->last->child, 64))
+		return(mdoc_err(mdoc, "macro parameters too long")); 
+d375 4
+a378 2
+	mdoc->meta.os = xstrdup(buf[0] ? buf : "LOCAL");
+	mdoc->lastnamed = SEC_BODY;
+d555 1
+a555 8
+	/* 
+	 * Prologue date must be parsed into document meta-data.  We
+	 * accept multiple kinds of dates, described mostly in
+	 * mdoc_atotime().
+	 */
+
+	assert(MDOC_ELEM == mdoc->last->type);
+	assert(MDOC_Dd == mdoc->last->tok);
+a556 4
+	assert(0 == mdoc->meta.date);
+
+	if ( ! xstrlcats(buf, mdoc->last->child, 64))
+		return(mdoc_err(mdoc, "macro parameters too long"));
+d558 1
+a558 1
+		return(mdoc_err(mdoc, "invalid parameter syntax"));
+a560 1
+
+@
+
+
+1.29
+log
+@Added argv regression tests.
+Table-ised argument flags in argv.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.28 2009/03/01 23:14:15 kristaps Exp $ */
+d39 1
+a44 1
+static	int	 post_ex(struct mdoc *);
+d48 1
+d71 1
+a71 1
+	{ NULL }, /* Ar */
+d175 1
+a175 3
+
+	assert(1 == mdoc->last->data.elem.argc);
+	if (1 == mdoc->last->data.elem.argv[0].sz)
+a176 1
+	assert(0 == mdoc->last->data.elem.argv[0].sz);
+d178 1
+a178 2
+	if (NULL == mdoc->meta.name)
+		return(mdoc_err(mdoc, "default name not yet set"));
+d484 23
+@
+
+
+1.28
+log
+@Backed-out warning about Ds.
+Backed-out assertion about Bd subtypes.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.27 2009/02/28 21:50:01 kristaps Exp $ */
+d42 1
+a42 2
+static	int	 post_sh(struct mdoc *);
+static	int	 post_os(struct mdoc *);
+d44 1
+a44 1
+static	int	 post_dd(struct mdoc *);
+d46 2
+d76 1
+a76 1
+	{ NULL }, /* Ex */
+d164 30
+@
+
+
+1.27
+log
+@White-space churn.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.26 2009/02/28 19:15:28 kristaps Exp $ */
+d398 1
+a398 5
+	if (xstrcmp(*p, "Ds")) {
+		if ( ! mdoc_warn(mdoc, WARN_COMPAT,
+					"%s argument deprecated",
+					mdoc_argnames[MDOC_Width]))
+			return(0);
+d400 1
+a400 1
+	} else if (MDOC_MAX == (tok = mdoc_find(mdoc, *p)))
+@
+
+
+1.26
+log
+@Initial Rs/Re support.
+Fixed default Ds width.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.25 2009/02/28 14:43:35 kristaps Exp $ */
+d262 2
+a263 1
+			return(mdoc_nerr(mdoc, n, "invalid parameter syntax"));
+d271 2
+a272 1
+			return(mdoc_nerr(mdoc, n, "invalid parameter syntax"));
+d274 2
+a275 1
+			return(mdoc_nerr(mdoc, n, "too many parameters"));
+@
+
+
+1.25
+log
+@Made `Ds' emit a warning.
+Default width is 78.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.24 2009/02/28 14:40:07 kristaps Exp $ */
+d400 1
+a400 1
+		width = 6;
+@
+
+
+1.24
+log
+@Added support for traditional `Ds' width.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.23 2009/02/28 13:47:36 kristaps Exp $ */
+d395 5
+a399 1
+	if (xstrcmp(*p, "Ds"))
+d401 1
+a401 1
+	else if (MDOC_MAX == (tok = mdoc_find(mdoc, *p)))
+d405 1
+a405 1
+					"-%s macro has no length", 
+@
+
+
+1.23
+log
+@Added support for dynamic -width detection for -tag lists.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.22 2009/02/27 10:55:16 kristaps Exp $ */
+d395 3
+a397 1
+	if (MDOC_MAX == (tok = mdoc_find(mdoc, *p)))
+d399 1
+a399 2
+
+	if (0 == (width = mdoc_macro2len(tok))) 
+@
+
+
+1.22
+log
+@Slowly decoupling mdoc(3) from being OpenBSD-only.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.21 2009/02/27 09:39:40 kristaps Exp $ */
+d40 2
+a161 5
+/*
+ * The `Nm' macro sets the document's name when used the first time with
+ * an argument.  Subsequent calls without a value will result in the
+ * name value being used.
+ */
+d170 6
+a187 4
+/*
+ * We keep track of the current section in order to provide warnings on
+ * section ordering, per-section macros, and so on.
+ */
+d194 6
+d206 22
+a227 1
+		return(1);
+d229 1
+a229 2
+
+	return(mdoc_err(mdoc, "macro parameters too long"));
+a232 3
+/* 
+ * Prologue title must be parsed into document meta-data.
+ */
+d240 4
+a284 3
+/* 
+ * Prologue operating system must be parsed into document meta-data.
+ */
+d290 5
+a308 3
+/* 
+ * Transform -width MACRO values into real widths. 
+ */
+d310 1
+a310 1
+post_bl(struct mdoc *mdoc)
+d312 3
+a314 3
+	struct mdoc_block *bl;
+	size_t		   width;
+	int		   tok, i;
+d317 55
+a371 2
+	if (MDOC_BLOCK != mdoc->last->type)
+		return(1);
+a372 1
+	bl = &mdoc->last->data.block;
+d374 10
+a383 2
+	for (i = 0; i < (int)bl->argc; i++)
+		if (MDOC_Width == bl->argv[i].arg)
+d386 8
+a393 2
+	if (i == (int)bl->argc)
+		return(1);
+d395 1
+a395 2
+	assert(1 == bl->argv[i].sz);
+	if (MDOC_MAX == (tok = mdoc_find(mdoc, *bl->argv[i].value)))
+d404 3
+a406 2
+			mdoc_argnames[MDOC_Width],
+			*bl->argv[i].value, width);
+a407 1
+	/* FIXME: silently truncates. */
+d410 36
+a445 2
+	free(*bl->argv[i].value);
+	*bl->argv[i].value = strdup(buf);
+a450 3
+/* 
+ * Prologue date must be parsed into document meta-data.
+ */
+d456 6
+a477 4
+/*
+ * The end document shouldn't have the prologue macros as part of the
+ * syntax tree (they encompass only meta-data). 
+ */
+d483 5
+@
+
+
+1.21
+log
+@Lintified sources.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.20 2009/02/26 16:08:11 kristaps Exp $ */
+d274 1
+a274 1
+	mdoc->meta.os = xstrdup(buf[0] ? buf : "local");
+@
+
+
+1.20
+log
+@Support for macro widths (/usr/share/tmac/mdoc/doc-common).
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.19 2009/02/22 14:31:08 kristaps Exp $ */
+d288 2
+a289 2
+	size_t		   i, width;
+	int		   tok;
+d297 1
+a297 1
+	for (i = 0; i < bl->argc; i++)
+d301 1
+a301 1
+	if (i == bl->argc)
+@
+
+
+1.19
+log
+@Cleaned up validation source a bit.
+Fixed `Nm' and `Nd' detection.
+Added a few more terminal outputs.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.18 2009/02/21 21:00:06 kristaps Exp $ */
+d20 1
+d22 1
+d39 1
+d62 1
+a62 1
+	{ NULL }, /* Bl */ 
+d282 46
+@
+
+
+1.18
+log
+@Split mdocml -> mdocterm, mdoctree (new manuals, etc.).
+Escape-recognition term.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.17 2009/02/20 11:04:23 kristaps Exp $ */
+d197 1
+@
+
+
+1.17
+log
+@Re-added tree.c (for now).
+Added initial terminal-output filter (term.c).
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.16 2009/01/21 11:35:26 kristaps Exp $ */
+d219 1
+@
+
+
+1.16
+log
+@More validation on prologue/first NAME section.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.15 2009/01/20 22:55:46 kristaps Exp $ */
+d246 1
+a246 1
+		mdoc->meta.title = xstrdup("untitled");
+@
+
+
+1.15
+log
+@Added regression tests (just for prologue, for now).
+Minor fixes in parsing prologue.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.14 2009/01/20 13:44:05 kristaps Exp $ */
+d196 1
+a196 2
+			mdoc->sec_lastn = sec;
+		mdoc->sec_last = sec;
+d270 1
+a270 2
+	mdoc->sec_lastn = mdoc->sec_last = SEC_BODY;
+	mdoc->flags |= MDOC_BODYPARSE;
+@
+
+
+1.14
+log
+@Re-merged old port-building routines.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.13 2009/01/20 12:51:28 kristaps Exp $ */
+d249 2
+d284 1
+a284 4
+	char		  date[64];
+	size_t		  sz;
+	char		 *p;
+	struct mdoc_node *n;
+a288 1
+	n = mdoc->last->child; 
+a289 1
+	date[0] = 0;
+d291 4
+a294 1
+	sz = 64;
+d296 1
+a296 3
+	for ( ; 0 == mdoc->meta.date && n; n = n->next) {
+		assert(MDOC_TEXT == n->type);
+		p = n->data.text.string;
+d298 1
+a298 22
+		if (xstrcmp(p, "$Mdocdate$")) {
+			mdoc->meta.date = time(NULL);
+			continue;
+		} else if (xstrcmp(p, "$")) {
+			mdoc->meta.date = mdoc_atotime(date);
+			continue;
+		} else if (xstrcmp(p, "$Mdocdate:"))
+			continue;
+
+		if ( ! xstrlcat(date, n->data.text.string, sz))
+			return(mdoc_nerr(mdoc, n, "invalid parameter syntax"));
+		if (n->next && ! xstrlcat(date, " ", sz))
+			return(mdoc_nerr(mdoc, n, "invalid parameter syntax"));
+	}
+
+	if (mdoc->meta.date && NULL == n)
+		return(post_prologue(mdoc));
+	else if (n)
+		return(mdoc_err(mdoc, "invalid parameter syntax"));
+	if ((mdoc->meta.date = mdoc_atotime(date)))
+		return(post_prologue(mdoc));
+	return(mdoc_err(mdoc, "invalid parameter syntax"));
+@
+
+
+1.13
+log
+@Moved prologue-pruning into action.c.
+Added line-arg softmax.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.12 2009/01/19 17:02:58 kristaps Exp $ */
+d25 5
+d157 5
+d182 4
+d205 3
+d253 3
+d276 3
+d325 4
+@
+
+
+1.12
+log
+@Removed unnecessary test cases (most were for visual).
+Finally fixed scope-rewinding (MDOC_VALID).
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.11 2009/01/17 16:47:02 kristaps Exp $ */
+d32 7
+a38 5
+static int	 post_sh(struct mdoc *);
+static int	 post_os(struct mdoc *);
+static int	 post_dt(struct mdoc *);
+static int	 post_dd(struct mdoc *);
+static int	 post_nm(struct mdoc *);
+d231 2
+a232 1
+	return(1);
+d250 3
+a252 1
+	return(1);
+d293 1
+a293 1
+		return(1);
+d297 1
+a297 1
+		return(1);
+d302 26
+@
+
+
+1.11
+log
+@Added tests to makefile.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.10 2009/01/17 16:15:27 kristaps Exp $ */
+d301 4
+@
+
+
+1.10
+log
+@Documentation, more validations, cleaned up actions, added Nm action.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.9 2009/01/16 12:23:25 kristaps Exp $ */
+d30 1
+d38 2
+d161 4
+a164 2
+	if ( ! xstrlcats(buf, mdoc->last->child, 64))
+		return(mdoc_err(mdoc, "macro parameters too long"));
+d166 1
+a166 3
+	mdoc->meta.name = xstrdup(buf);
+	mdoc_msg(mdoc, "parsed name: %s", mdoc->meta.name);
+	return(1);
+d178 6
+a183 6
+	if ( ! xstrlcats(buf, mdoc->last->child, 64))
+		return(mdoc_err(mdoc, "macro parameters too long"));
+
+	if (SEC_CUSTOM != (sec = mdoc_atosec(buf)))
+		mdoc->sec_lastn = sec;
+	mdoc->sec_last = sec;
+d185 1
+a185 1
+	return(1);
+a228 3
+
+	mdoc_msg(mdoc, "parsed title: %s", mdoc->meta.title);
+	/* TODO: print vol2a functions. */
+a245 1
+	mdoc_msg(mdoc, "parsed operating system: %s", mdoc->meta.os);
+d287 1
+a287 3
+	if (mdoc->meta.date && NULL == n) {
+		mdoc_msg(mdoc, "parsed time: %u since epoch", 
+				mdoc->meta.date);
+d289 1
+a289 1
+	} else if (n)
+d291 1
+a291 4
+
+	if ((mdoc->meta.date = mdoc_atotime(date))) {
+		mdoc_msg(mdoc, "parsed time: %u since epoch", 
+				mdoc->meta.date);
+a292 2
+	}
+
+@
+
+
+1.9
+log
+@Clean-ups & documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.8 2009/01/16 11:50:54 kristaps Exp $ */
+a24 3
+typedef int	(*a_pre)(struct mdoc *, struct mdoc_node *);
+typedef int	(*a_post)(struct mdoc *);
+
+d27 1
+a27 2
+	a_pre	 pre;
+	a_post	 post;
+d35 1
+a35 1
+
+d38 106
+a143 106
+	{ NULL, NULL }, /* \" */
+	{ NULL, post_dd }, /* Dd */ 
+	{ NULL, post_dt }, /* Dt */ 
+	{ NULL, post_os }, /* Os */ 
+	{ NULL, post_sh }, /* Sh */ 
+	{ NULL, NULL }, /* Ss */ 
+	{ NULL, NULL }, /* Pp */ 
+	{ NULL, NULL }, /* D1 */
+	{ NULL, NULL }, /* Dl */
+	{ NULL, NULL }, /* Bd */ 
+	{ NULL, NULL }, /* Ed */
+	{ NULL, NULL }, /* Bl */ 
+	{ NULL, NULL }, /* El */
+	{ NULL, NULL }, /* It */
+	{ NULL, NULL }, /* Ad */ 
+	{ NULL, NULL }, /* An */
+	{ NULL, NULL }, /* Ar */
+	{ NULL, NULL }, /* Cd */
+	{ NULL, NULL }, /* Cm */
+	{ NULL, NULL }, /* Dv */ 
+	{ NULL, NULL }, /* Er */ 
+	{ NULL, NULL }, /* Ev */ 
+	{ NULL, NULL }, /* Ex */
+	{ NULL, NULL }, /* Fa */ 
+	{ NULL, NULL }, /* Fd */ 
+	{ NULL, NULL }, /* Fl */
+	{ NULL, NULL }, /* Fn */ 
+	{ NULL, NULL }, /* Ft */ 
+	{ NULL, NULL }, /* Ic */ 
+	{ NULL, NULL }, /* In */ 
+	{ NULL, NULL }, /* Li */
+	{ NULL, NULL }, /* Nd */ 
+	{ NULL, NULL }, /* Nm */ 
+	{ NULL, NULL }, /* Op */
+	{ NULL, NULL }, /* Ot */
+	{ NULL, NULL }, /* Pa */
+	{ NULL, NULL }, /* Rv */
+	{ NULL, NULL }, /* St */
+	{ NULL, NULL }, /* Va */
+	{ NULL, NULL }, /* Vt */ 
+	{ NULL, NULL }, /* Xr */
+	{ NULL, NULL }, /* %A */
+	{ NULL, NULL }, /* %B */
+	{ NULL, NULL }, /* %D */
+	{ NULL, NULL }, /* %I */
+	{ NULL, NULL }, /* %J */
+	{ NULL, NULL }, /* %N */
+	{ NULL, NULL }, /* %O */
+	{ NULL, NULL }, /* %P */
+	{ NULL, NULL }, /* %R */
+	{ NULL, NULL }, /* %T */
+	{ NULL, NULL }, /* %V */
+	{ NULL, NULL }, /* Ac */
+	{ NULL, NULL }, /* Ao */
+	{ NULL, NULL }, /* Aq */
+	{ NULL, NULL }, /* At */ 
+	{ NULL, NULL }, /* Bc */
+	{ NULL, NULL }, /* Bf */ 
+	{ NULL, NULL }, /* Bo */
+	{ NULL, NULL }, /* Bq */
+	{ NULL, NULL }, /* Bsx */
+	{ NULL, NULL }, /* Bx */
+	{ NULL, NULL }, /* Db */
+	{ NULL, NULL }, /* Dc */
+	{ NULL, NULL }, /* Do */
+	{ NULL, NULL }, /* Dq */
+	{ NULL, NULL }, /* Ec */
+	{ NULL, NULL }, /* Ef */
+	{ NULL, NULL }, /* Em */ 
+	{ NULL, NULL }, /* Eo */
+	{ NULL, NULL }, /* Fx */
+	{ NULL, NULL }, /* Ms */
+	{ NULL, NULL }, /* No */
+	{ NULL, NULL }, /* Ns */
+	{ NULL, NULL }, /* Nx */
+	{ NULL, NULL }, /* Ox */
+	{ NULL, NULL }, /* Pc */
+	{ NULL, NULL }, /* Pf */
+	{ NULL, NULL }, /* Po */
+	{ NULL, NULL }, /* Pq */
+	{ NULL, NULL }, /* Qc */
+	{ NULL, NULL }, /* Ql */
+	{ NULL, NULL }, /* Qo */
+	{ NULL, NULL }, /* Qq */
+	{ NULL, NULL }, /* Re */
+	{ NULL, NULL }, /* Rs */
+	{ NULL, NULL }, /* Sc */
+	{ NULL, NULL }, /* So */
+	{ NULL, NULL }, /* Sq */
+	{ NULL, NULL }, /* Sm */
+	{ NULL, NULL }, /* Sx */
+	{ NULL, NULL }, /* Sy */
+	{ NULL, NULL }, /* Tn */
+	{ NULL, NULL }, /* Ux */
+	{ NULL, NULL }, /* Xc */
+	{ NULL, NULL }, /* Xo */
+	{ NULL, NULL }, /* Fo */ 
+	{ NULL, NULL }, /* Fc */ 
+	{ NULL, NULL }, /* Oo */
+	{ NULL, NULL }, /* Oc */
+	{ NULL, NULL }, /* Bk */
+	{ NULL, NULL }, /* Ek */
+	{ NULL, NULL }, /* Bt */
+	{ NULL, NULL }, /* Hf */
+	{ NULL, NULL }, /* Fr */
+	{ NULL, NULL }, /* Ud */
+d148 20
+d170 2
+a171 4
+	enum mdoc_sec	  sec;
+	int		  i;
+	struct mdoc_node *n;
+	char		 *args[MDOC_LINEARG_MAX];
+d175 2
+a176 12
+	
+	assert(MDOC_Sh == mdoc->last->tok);
+
+	n = mdoc->last->child;
+	assert(n);
+
+	for (i = 0; n && i < MDOC_LINEARG_MAX; n = n->next, i++) {
+		assert(MDOC_TEXT == n->type);
+		assert(NULL == n->child);
+		assert(n->data.text.string);
+		args[i] = n->data.text.string;
+	}
+d178 1
+a178 2
+	sec = mdoc_atosec((size_t)i, (const char **)args);
+	if (SEC_CUSTOM != sec)
+a190 1
+	size_t		  sz;
+a194 1
+	assert(0 == mdoc->meta.title[0]);
+d196 1
+a196 2
+	sz = META_TITLE_SZ;
+	(void)xstrlcpy(mdoc->meta.title, "UNTITLED", sz);
+d204 2
+a205 3
+			if (xstrlcpy(mdoc->meta.title, p, sz))
+				break;
+			return(mdoc_nerr(mdoc, n, "badly-formed manual title parameter"));
+d210 1
+a210 1
+			return(mdoc_nerr(mdoc, n, "badly-formed manual section parameter"));
+d218 1
+a218 1
+			return(mdoc_nerr(mdoc, n, "badly-formed manual volume parameter"));
+d224 3
+d236 1
+a236 3
+	char		 *p;
+	size_t		  sz;
+	struct mdoc_node *n;
+d240 1
+a240 7
+	assert(0 == mdoc->meta.os[0]);
+
+	sz = META_OS_SZ;
+
+	for (n = mdoc->last->child; n; n = n->next) {
+		assert(MDOC_TEXT == n->type);
+		p = n->data.text.string;
+d242 2
+a243 8
+		if ( ! xstrlcat(mdoc->meta.os, p, sz))
+			return(mdoc_nerr(mdoc, n, "badly-formed manual system parameter"));
+		if ( ! xstrlcat(mdoc->meta.os, " ", sz))
+			return(mdoc_nerr(mdoc, n, "badly-formed manual system parameter"));
+	}
+
+	if (0 == mdoc->meta.os[0]) 
+		(void)xstrlcpy(mdoc->meta.os, "LOCAL", sz);
+d245 1
+d283 1
+a283 1
+			return(mdoc_nerr(mdoc, n, "badly-formed manual date parameter"));
+d285 1
+a285 1
+			return(mdoc_nerr(mdoc, n, "badly-formed manual date parameter"));
+d293 1
+a293 1
+		return(mdoc_err(mdoc, "badly-formed manual date"));
+d301 1
+a301 9
+	return(mdoc_err(mdoc, "badly-formed manual date"));
+}
+
+
+int
+mdoc_action_pre(struct mdoc *mdoc, struct mdoc_node *node)
+{
+
+	return(1);
+a312 1
+
+a314 1
+	/* TODO: MDOC_Nm... ? */
+@
+
+
+1.8
+log
+@Finished re-fitting err/warn/msg routines.
+Some minor bug-fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.7 2009/01/12 12:52:21 kristaps Exp $ */
+d295 1
+a295 1
+		if ( ! xstrlcat(date, " ", sz))
+d303 7
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.6 2009/01/09 14:45:44 kristaps Exp $ */
+d206 1
+a206 1
+			return(mdoc_err(mdoc, ERR_SYNTAX_ARGFORM));
+d211 1
+a211 1
+			return(mdoc_err(mdoc, ERR_SYNTAX_ARGFORM));
+d219 1
+a219 1
+			return(mdoc_err(mdoc, ERR_SYNTAX_ARGFORM));
+d221 1
+a221 1
+			return(mdoc_err(mdoc, ERR_ARGS_MANY));
+d249 1
+a249 1
+			return(mdoc_err(mdoc, ERR_SYNTAX_ARGFORM));
+d251 1
+a251 1
+			return(mdoc_err(mdoc, ERR_SYNTAX_ARGFORM));
+d294 1
+a294 1
+			return(mdoc_err(mdoc, ERR_SYNTAX_ARGFORM));
+d296 1
+a296 1
+			return(mdoc_err(mdoc, ERR_SYNTAX_ARGFORM));
+d305 1
+a305 1
+	return(mdoc_err(mdoc, ERR_SYNTAX_ARGFORM));
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.5 2009/01/08 15:59:58 kristaps Exp $ */
+d162 1
+a162 1
+	assert(MDOC_Sh == mdoc->last->data.head.tok);
+d192 1
+a192 1
+	assert(MDOC_Dt == mdoc->last->data.elem.tok);
+d239 1
+a239 1
+	assert(MDOC_Os == mdoc->last->data.elem.tok);
+d272 1
+a272 1
+	assert(MDOC_Dd == mdoc->last->data.elem.tok);
+a319 1
+	int		 t;
+d321 3
+a323 14
+	switch (mdoc->last->type) {
+	case (MDOC_BODY):
+		t = mdoc->last->data.body.tok;
+		break;
+	case (MDOC_ELEM):
+		t = mdoc->last->data.elem.tok;
+		break;
+	case (MDOC_BLOCK):
+		t = mdoc->last->data.block.tok;
+		break;
+	case (MDOC_HEAD):
+		t = mdoc->last->data.head.tok;
+		break;
+	default:
+a324 1
+	}
+d326 1
+a326 1
+	if (NULL == mdoc_actions[t].post)
+d329 1
+a329 1
+	return((*mdoc_actions[t].post)(mdoc));
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.4 2009/01/08 15:05:50 kristaps Exp $ */
+d226 1
+a226 1
+	/* TODO: have vol2a functions. */
+a242 1
+	(void)xstrlcpy(mdoc->meta.os, "LOCAL", sz);
+d254 4
+a257 1
+	mdoc_msg(mdoc, "parsed operating system (entering document body)");
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.3 2009/01/07 15:53:00 kristaps Exp $ */
+d21 1
+d186 11
+a196 3
+#if 0
+	int		  lastarg, j;
+	char		 *args[MDOC_LINEARG_MAX];
+d198 3
+a200 30
+	if (SEC_PROLOGUE != mdoc->sec_lastn)
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_NPROLOGUE));
+	if (0 == mdoc->meta.date)
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_PROLOGUE_OO));
+	if (mdoc->meta.title[0])
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_PROLOGUE_REP));
+
+	j = -1;
+	lastarg = ppos;
+
+again:
+	if (j == MDOC_LINEARG_MAX)
+		return(mdoc_err(mdoc, tok, lastarg, ERR_ARGS_MANY));
+
+	lastarg = *pos;
+
+	switch (mdoc_args(mdoc, tok, pos, buf, 0, &args[++j])) {
+	case (ARGS_EOLN):
+		if (mdoc->meta.title)
+			return(1);
+		if ( ! mdoc_warn(mdoc, tok, ppos, WARN_ARGS_GE1))
+			return(0);
+		(void)xstrlcpy(mdoc->meta.title, 
+				"UNTITLED", META_TITLE_SZ);
+		return(1);
+	case (ARGS_ERROR):
+		return(0);
+	default:
+		break;
+	}
+d202 21
+a222 19
+	if (0 == j) {
+		if (xstrlcpy(mdoc->meta.title, args[0], META_TITLE_SZ))
+			goto again;
+		return(mdoc_err(mdoc, tok, lastarg, ERR_SYNTAX_ARGFORM));
+
+	} else if (1 == j) {
+		mdoc->meta.msec = mdoc_atomsec(args[1]);
+		if (MSEC_DEFAULT != mdoc->meta.msec)
+			goto again;
+		return(mdoc_err(mdoc, tok, -1, ERR_SYNTAX_ARGFORM));
+
+	} else if (2 == j) {
+		mdoc->meta.vol = mdoc_atovol(args[2]);
+		if (VOL_DEFAULT != mdoc->meta.vol)
+			goto again;
+		mdoc->meta.arch = mdoc_atoarch(args[2]);
+		if (ARCH_DEFAULT != mdoc->meta.arch)
+			goto again;
+		return(mdoc_err(mdoc, tok, lastarg, ERR_SYNTAX_ARGFORM));
+d225 2
+a226 2
+	return(mdoc_err(mdoc, tok, lastarg, ERR_ARGS_MANY));
+#endif
+d234 7
+a240 3
+#if 0
+	int		  lastarg, j;
+	char		 *args[MDOC_LINEARG_MAX];
+d242 2
+a243 1
+	/* FIXME: if we use `Os' again... ? */
+d245 8
+a252 25
+	if (SEC_PROLOGUE != mdoc->sec_lastn)
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_NPROLOGUE));
+	if (0 == mdoc->meta.title[0])
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_PROLOGUE_OO));
+	if (mdoc->meta.os[0])
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_PROLOGUE_REP));
+
+	j = -1;
+	lastarg = ppos;
+
+again:
+	if (j == MDOC_LINEARG_MAX)
+		return(mdoc_err(mdoc, tok, lastarg, ERR_ARGS_MANY));
+
+	lastarg = *pos;
+
+	switch (mdoc_args(mdoc, tok, pos, buf, 
+				ARGS_QUOTED, &args[++j])) {
+	case (ARGS_EOLN):
+		mdoc->sec_lastn = mdoc->sec_last = SEC_BODY;
+		return(1);
+	case (ARGS_ERROR):
+		return(0);
+	default:
+		break;
+d254 3
+a256 9
+	
+	if ( ! xstrlcat(mdoc->meta.os, args[j], sizeof(mdoc->meta.os)))
+		return(mdoc_err(mdoc, tok, lastarg, ERR_SYNTAX_ARGFORM));
+	if ( ! xstrlcat(mdoc->meta.os, " ", sizeof(mdoc->meta.os)))
+		return(mdoc_err(mdoc, tok, lastarg, ERR_SYNTAX_ARGFORM));
+
+	goto again;
+	/* NOTREACHED */
+#endif
+d264 4
+a267 10
+#if 0
+	int		  lastarg, j;
+	char		 *args[MDOC_LINEARG_MAX], date[64];
+
+	if (SEC_PROLOGUE != mdoc->sec_lastn)
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_NPROLOGUE));
+	if (mdoc->meta.title[0])
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_PROLOGUE_OO));
+	if (mdoc->meta.date)
+		return(mdoc_err(mdoc, tok, ppos, ERR_SEC_PROLOGUE_REP));
+d269 5
+a273 1
+	j = -1;
+a274 1
+	lastarg = ppos;
+d276 25
+a300 17
+again:
+	if (j == MDOC_LINEARG_MAX)
+		return(mdoc_err(mdoc, tok, lastarg, ERR_ARGS_MANY));
+
+	lastarg = *pos;
+	switch (mdoc_args(mdoc, tok, pos, buf, 0, &args[++j])) {
+	case (ARGS_EOLN):
+		if (mdoc->meta.date)
+			return(1);
+		mdoc->meta.date = mdoc_atotime(date);
+		if (mdoc->meta.date)
+			return(1);
+		return(mdoc_err(mdoc, tok, ppos, ERR_SYNTAX_ARGFORM));
+	case (ARGS_ERROR):
+		return(0);
+	default:
+		break;
+d302 2
+a303 24
+	
+	if (MDOC_MAX != mdoc_find(mdoc, args[j]) && ! mdoc_warn
+			(mdoc, tok, lastarg, WARN_SYNTAX_MACLIKE))
+		return(0);
+	
+	if (0 == j) {
+		if (xstrcmp("$Mdocdate$", args[j])) {
+			mdoc->meta.date = time(NULL);
+			goto again;
+		} else if (xstrcmp("$Mdocdate:", args[j])) 
+			goto again;
+	} else if (4 == j)
+		if ( ! xstrcmp("$", args[j]))
+			goto again;
+
+	if ( ! xstrlcat(date, args[j], sizeof(date)))
+		return(mdoc_err(mdoc, tok, lastarg, ERR_SYNTAX_ARGFORM));
+	if ( ! xstrlcat(date, " ", sizeof(date)))
+		return(mdoc_err(mdoc, tok, lastarg, ERR_SYNTAX_ARGFORM));
+
+	goto again;
+	/* NOTREACHED */
+#endif
+	return(1);
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.2 2009/01/05 16:11:14 kristaps Exp $ */
+d24 2
+a25 1
+typedef int	(*a_act)(struct mdoc *, int, int);
+d29 2
+a30 1
+	a_act	 action;
+d34 4
+a37 1
+static int	 action_sh(struct mdoc *, int, int);
+d41 106
+a146 106
+	{ NULL }, /* \" */
+	{ NULL }, /* Dd */ 
+	{ NULL }, /* Dt */ 
+	{ NULL }, /* Os */ 
+	{ action_sh }, /* Sh */ 
+	{ NULL }, /* Ss */ 
+	{ NULL }, /* Pp */ 
+	{ NULL }, /* D1 */
+	{ NULL }, /* Dl */
+	{ NULL }, /* Bd */ 
+	{ NULL }, /* Ed */
+	{ NULL }, /* Bl */ 
+	{ NULL }, /* El */
+	{ NULL }, /* It */
+	{ NULL }, /* Ad */ 
+	{ NULL }, /* An */
+	{ NULL }, /* Ar */
+	{ NULL }, /* Cd */
+	{ NULL }, /* Cm */
+	{ NULL }, /* Dv */ 
+	{ NULL }, /* Er */ 
+	{ NULL }, /* Ev */ 
+	{ NULL }, /* Ex */
+	{ NULL }, /* Fa */ 
+	{ NULL }, /* Fd */ 
+	{ NULL }, /* Fl */
+	{ NULL }, /* Fn */ 
+	{ NULL }, /* Ft */ 
+	{ NULL }, /* Ic */ 
+	{ NULL }, /* In */ 
+	{ NULL }, /* Li */
+	{ NULL }, /* Nd */ 
+	{ NULL }, /* Nm */ 
+	{ NULL }, /* Op */
+	{ NULL }, /* Ot */
+	{ NULL }, /* Pa */
+	{ NULL }, /* Rv */
+	{ NULL }, /* St */
+	{ NULL }, /* Va */
+	{ NULL }, /* Vt */ 
+	{ NULL }, /* Xr */
+	{ NULL }, /* %A */
+	{ NULL }, /* %B */
+	{ NULL }, /* %D */
+	{ NULL }, /* %I */
+	{ NULL }, /* %J */
+	{ NULL }, /* %N */
+	{ NULL }, /* %O */
+	{ NULL }, /* %P */
+	{ NULL }, /* %R */
+	{ NULL }, /* %T */
+	{ NULL }, /* %V */
+	{ NULL }, /* Ac */
+	{ NULL }, /* Ao */
+	{ NULL }, /* Aq */
+	{ NULL }, /* At */ 
+	{ NULL }, /* Bc */
+	{ NULL }, /* Bf */ 
+	{ NULL }, /* Bo */
+	{ NULL }, /* Bq */
+	{ NULL }, /* Bsx */
+	{ NULL }, /* Bx */
+	{ NULL }, /* Db */
+	{ NULL }, /* Dc */
+	{ NULL }, /* Do */
+	{ NULL }, /* Dq */
+	{ NULL }, /* Ec */
+	{ NULL }, /* Ef */
+	{ NULL }, /* Em */ 
+	{ NULL }, /* Eo */
+	{ NULL }, /* Fx */
+	{ NULL }, /* Ms */
+	{ NULL }, /* No */
+	{ NULL }, /* Ns */
+	{ NULL }, /* Nx */
+	{ NULL }, /* Ox */
+	{ NULL }, /* Pc */
+	{ NULL }, /* Pf */
+	{ NULL }, /* Po */
+	{ NULL }, /* Pq */
+	{ NULL }, /* Qc */
+	{ NULL }, /* Ql */
+	{ NULL }, /* Qo */
+	{ NULL }, /* Qq */
+	{ NULL }, /* Re */
+	{ NULL }, /* Rs */
+	{ NULL }, /* Sc */
+	{ NULL }, /* So */
+	{ NULL }, /* Sq */
+	{ NULL }, /* Sm */
+	{ NULL }, /* Sx */
+	{ NULL }, /* Sy */
+	{ NULL }, /* Tn */
+	{ NULL }, /* Ux */
+	{ NULL }, /* Xc */
+	{ NULL }, /* Xo */
+	{ NULL }, /* Fo */ 
+	{ NULL }, /* Fc */ 
+	{ NULL }, /* Oo */
+	{ NULL }, /* Oc */
+	{ NULL }, /* Bk */
+	{ NULL }, /* Ek */
+	{ NULL }, /* Bt */
+	{ NULL }, /* Hf */
+	{ NULL }, /* Fr */
+	{ NULL }, /* Ud */
+d151 1
+a151 1
+action_sh(struct mdoc *mdoc, int tok, int pos)
+d160 2
+d182 176
+d359 9
+a367 1
+mdoc_action(struct mdoc *mdoc, int pos)
+d388 1
+a388 1
+	if (NULL == mdoc_actions[t].action)
+d391 1
+a391 1
+	return((*mdoc_actions[t].action)(mdoc, t, pos));
+a392 1
+
+@
+
+
+1.2
+log
+@Finished initial parse sequence.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.1 2009/01/05 14:14:04 kristaps Exp $ */
+d24 1
+a24 3
+typedef int	(*a_act)(struct mdoc *, int, int, 
+			int, const char *[],
+			int, const struct mdoc_arg *);
+d32 3
+d40 1
+a40 1
+	{ NULL }, /* Sh */ 
+d145 2
+a146 2
+int
+mdoc_action(struct mdoc *mdoc, int tok, int pos)
+d148 22
+d174 18
+a191 8
+#if 0
+	/* Post-processing. */
+	switch (tok) {
+	case (MDOC_Sh):
+		sec = mdoc_atosec((size_t)sz, _CC(args));
+		if (SEC_CUSTOM != sec)
+			mdoc->sec_lastn = sec;
+		mdoc->sec_last = sec;
+d194 1
+a194 1
+		break;
+d197 5
+a201 2
+	MDOC_Nm... ?
+#endif
+@
+
+
+1.1
+log
+@Actions and validations properly added.
+@
+text
+@d1 1
+a1 1
+/* $Id: validate.c,v 1.15 2009/01/03 22:10:22 kristaps Exp $ */
+d163 2
+@

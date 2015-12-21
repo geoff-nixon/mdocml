@@ -1,0 +1,2004 @@
+head	1.79;
+access;
+symbols
+	VERSION_1_13_3:1.67
+	VERSION_1_13_2:1.66
+	VERSION_1_12_4:1.63
+	VERSION_1_13_1:1.63
+	VERSION_1_12_3:1.56
+	VERSION_1_12_2:1.56
+	VERSION_1_12:1.63.0.2
+	VERSION_1_12_1:1.55
+	VERSION_1_12_0:1.54
+	VERSION_1_11_7:1.53
+	VERSION_1_11_6:1.53
+	VERSION_1_11_5:1.53
+	VERSION_1_11_4:1.51
+	VERSION_1_11_3:1.51
+	VERSION_1_11_2:1.51
+	VERSION_1_11_1:1.51
+	VERSION_1_10_10:1.46
+	VERSION_1_10_9:1.44
+	VERSION_1_10_8:1.44
+	VERSION_1_10_7:1.44
+	VERSION_1_10_6:1.43
+	VERSION_1_10_5:1.42
+	VERSION_1_10_5_PREPDF:1.42
+	VERSION_1_10_4:1.41
+	VERSION_1_10_3:1.40
+	VERSION_1_10_2:1.36
+	VERSION_1_10_1:1.34
+	VERSION_1_9_24:1.31
+	VERSION_1_9_25:1.31
+	VERSION_1_9_23:1.30
+	VERSION_1_9_22:1.30
+	VERSION_1_9_21:1.30
+	VERSION_1_9_20:1.30
+	VERSION_1_9_19:1.28
+	VERSION_1_9_18:1.28
+	VERSION_1_9_17:1.27
+	VERSION_1_9_16:1.25
+	VERSION_1_9_15:1.23
+	VERSION_1_9_15-pre2:1.23
+	VERSION_1_9_15-pre1:1.23
+	VERSION_1_9_14:1.23
+	VERSION_1_9_13:1.23
+	VERSION_1_9_12:1.23
+	VERSION_1_9_11:1.22
+	VERSION_1_9_10:1.22
+	VERSION_1_9_9:1.21
+	VERSION_1_9_8:1.21
+	VERSION_1_9_7:1.21
+	VERSION_1_9_6:1.21
+	VERSION_1_9_5:1.21
+	VERSION_1_9_2:1.20
+	VERSION_1_9_1:1.20
+	VERSION_1_9_0:1.16
+	VERSION_1_8_5:1.15
+	VERSION_1_8_4:1.15
+	VERSION_1_8_3:1.14
+	VERSION_1_8_2:1.14
+	VERSION_1_8_1:1.14
+	VERSION_1_8_0:1.14
+	VERSION_1_7_24:1.14
+	VERSION_1_7_23:1.14
+	VERSION_1_7_22:1.12
+	VERSION_1_7_21:1.12
+	VERSION_1_7_20:1.11
+	VERSION_1_7_19:1.9
+	VERSION_1_7_17:1.9
+	VERSION_1_7_16:1.9
+	VERSION_1_7_15:1.9
+	VERSION_1_7_14:1.9
+	VERSION_1_7_13:1.8
+	VERSION_1_7_12:1.7
+	OPENBSD_CHECKIN:1.7
+	VERSION_1_7_10:1.7
+	VERSION_1_7_5:1.7;
+locks; strict;
+comment	@ * @;
+
+
+1.79
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2015.10.22.21.54.23;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2015.04.23.15.35.59;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2015.04.19.14.57.38;	author schwarze;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2015.04.19.14.25.41;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2015.04.19.13.50.25;	author schwarze;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2015.04.18.17.28.36;	author schwarze;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2015.04.18.17.01.58;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2015.04.18.16.06.39;	author schwarze;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2015.04.02.23.48.19;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2015.03.20.12.54.22;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2014.12.28.14.42.27;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2014.12.01.04.05.31;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2014.11.28.05.51.32;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2014.11.03.23.18.39;	author schwarze;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2014.08.01.21.24.17;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2014.08.01.17.40.34;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2014.07.30.21.18.24;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2014.07.30.20.06.36;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2014.07.07.19.18.15;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2014.01.05.20.26.36;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2012.11.17.00.26.33;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2011.11.07.01.24.40;	author schwarze;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2011.07.18.07.48.14;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2011.07.18.07.46.41;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2011.03.23.15.33.57;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2011.03.23.12.40.04;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2011.03.23.12.33.01;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2011.03.22.14.33.05;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2011.03.17.11.56.17;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2011.01.12.10.43.22;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.11.30.15.36.28;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.07.07.15.04.54;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.06.27.16.18.13;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.06.27.15.52.41;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.06.26.16.07.08;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.06.26.15.36.37;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.06.19.20.46.27;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.06.09.19.22.56;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.05.15.22.44.04;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.05.15.15.54.39;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.04.08.07.53.01;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.03.29.10.10.35;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.03.29.04.52.14;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.03.27.10.04.56;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.03.24.20.10.53;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.03.23.21.50.43;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.03.22.14.03.03;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.03.22.05.59.32;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.10.30.05.58.36;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.10.26.07.11.06;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.09.16.14.40.56;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.08.21.13.14.07;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.08.21.12.32.38;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.08.19.12.15.58;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.08.19.09.14.50;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.08.13.11.45.29;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.07.24.20.22.24;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.07.07.09.35.40;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.07.06.13.04.52;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.07.04.09.01.55;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.06.22.13.09.17;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.06.18.10.53.58;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.26.14.38.11;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.25.21.03.13;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.25.15.36.05;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.25.15.17.49;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.23.15.41.09;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.23.15.20.51;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.79
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: libman.h,v 1.78 2015/10/22 21:54:23 schwarze Exp $ */
+/*
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+#define	MACRO_PROT_ARGS	  struct roff_man *man, \
+			  int tok, \
+			  int line, \
+			  int ppos, \
+			  int *pos, \
+			  char *buf
+
+struct	man_macro {
+	void		(*fp)(MACRO_PROT_ARGS);
+	int		  flags;
+#define	MAN_SCOPED	 (1 << 0)  /* Optional next-line scope. */
+#define	MAN_NSCOPED	 (1 << 1)  /* Allowed in next-line element scope. */
+#define	MAN_BSCOPE	 (1 << 2)  /* Break next-line block scope. */
+#define	MAN_JOIN	 (1 << 3)  /* Join arguments together. */
+};
+
+extern	const struct man_macro *const man_macros;
+
+
+int		  man_hash_find(const char *);
+void		  man_node_validate(struct roff_man *);
+void		  man_state(struct roff_man *, struct roff_node *);
+void		  man_unscope(struct roff_man *, const struct roff_node *);
+@
+
+
+1.78
+log
+@move man(7) validation into the dedicated validation phase, too
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.77 2015/04/23 15:35:59 schwarze Exp $ */
+a36 1
+__BEGIN_DECLS
+a41 2
+
+__END_DECLS
+@
+
+
+1.77
+log
+@Get rid of two empty wrapper functions.  No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.76 2015/04/19 14:57:38 schwarze Exp $ */
+d40 2
+a41 1
+void		  man_valid_post(struct roff_man *);
+@
+
+
+1.76
+log
+@Unify trickier node handling functions.
+* man_elem_alloc() -> roff_elem_alloc()
+* man_block_alloc() -> roff_block_alloc()
+The functions mdoc_elem_alloc() and mdoc_block_alloc() remain for
+now because they need to do mdoc(7)-specific argument processing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.75 2015/04/19 14:25:41 schwarze Exp $ */
+a39 1
+void		  man_macroend(struct roff_man *);
+@
+
+
+1.75
+log
+@Unify some node handling functions that use TOKEN_NONE.
+* mdoc_word_alloc(), man_word_alloc() -> roff_word_alloc()
+* mdoc_word_append(), man_word_append() -> roff_word_append()
+* mdoc_addspan(), man_addspan() -> roff_addtbl()
+* mdoc_addeqn(), man_addeqn() -> roff_addeqn()
+Minus 50 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.74 2015/04/19 13:50:25 schwarze Exp $ */
+a38 2
+void		  man_block_alloc(struct roff_man *, int, int, int);
+void		  man_elem_alloc(struct roff_man *, int, int, int);
+@
+
+
+1.74
+log
+@Unify node handling functions:
+* node_alloc() for mdoc and man_node_alloc() -> roff_node_alloc()
+* node_append() for mdoc and man_node_append() -> roff_node_append()
+* mdoc_head_alloc() and man_head_alloc() -> roff_head_alloc()
+* mdoc_body_alloc() and man_body_alloc() -> roff_body_alloc()
+* mdoc_node_unlink() and man_node_unlink() -> roff_node_unlink()
+* mdoc_node_free() and man_node_free() -> roff_node_free()
+* mdoc_node_delete() and man_node_delete() -> roff_node_delete()
+Minus 130 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.73 2015/04/18 17:28:36 schwarze Exp $ */
+a38 2
+void		  man_word_alloc(struct roff_man *, int, int, const char *);
+void		  man_word_append(struct roff_man *, const char *);
+@
+
+
+1.73
+log
+@Unify {mdoc,man}_{alloc,reset,free}() into roff_man_{alloc,reset,free}().
+Minus 80 lines of code, no functional change.
+Written on the train from Koeln to Wolfsburg returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.72 2015/04/18 17:01:58 schwarze Exp $ */
+a41 2
+void		  man_head_alloc(struct roff_man *, int, int, int);
+void		  man_body_alloc(struct roff_man *, int, int, int);
+@
+
+
+1.72
+log
+@Move mdoc_hash_init() and man_hash_init() to libmandoc.h
+and call them from mparse_alloc() and choose_parser(),
+preparing unified allocation of struct roff_man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.71 2015/04/18 16:06:39 schwarze Exp $ */
+a44 1
+void		  man_node_delete(struct roff_man *, struct roff_node *);
+@
+
+
+1.71
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.70 2015/04/02 23:48:19 schwarze Exp $ */
+a45 1
+void		  man_hash_init(void);
+@
+
+
+1.70
+log
+@Third step towards parser unification:
+Replace struct mdoc_meta and struct man_meta by a unified struct roff_meta.
+Written of the train from London to Exeter on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.69 2015/04/02 22:48:17 schwarze Exp $ */
+d19 1
+a19 22
+enum	man_next {
+	MAN_NEXT_SIBLING = 0,
+	MAN_NEXT_CHILD
+};
+
+struct	man {
+	struct mparse	*parse; /* parse pointer */
+	const char	*defos; /* default OS argument for .TH */
+	int		 quick; /* abort parse early */
+	int		 flags; /* parse flags */
+#define	MAN_ELINE	(1 << 1) /* Next-line element scope. */
+#define	MAN_BLINE	(1 << 2) /* Next-line block scope. */
+#define	MAN_LITERAL	(1 << 4) /* Literal input. */
+#define	MAN_NEWLINE	(1 << 6) /* first macro/text in a line */
+	enum man_next	 next; /* where to put the next node */
+	struct roff_node *last; /* the last parsed node */
+	struct roff_node *first; /* the first parsed node */
+	struct roff_meta meta; /* document meta-data */
+	struct roff	*roff;
+};
+
+#define	MACRO_PROT_ARGS	  struct man *man, \
+d39 7
+a45 7
+void		  man_word_alloc(struct man *, int, int, const char *);
+void		  man_word_append(struct man *, const char *);
+void		  man_block_alloc(struct man *, int, int, int);
+void		  man_head_alloc(struct man *, int, int, int);
+void		  man_body_alloc(struct man *, int, int, int);
+void		  man_elem_alloc(struct man *, int, int, int);
+void		  man_node_delete(struct man *, struct roff_node *);
+d48 3
+a50 3
+void		  man_macroend(struct man *);
+void		  man_valid_post(struct man *);
+void		  man_unscope(struct man *, const struct roff_node *);
+@
+
+
+1.69
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.68 2015/03/20 12:54:22 schwarze Exp $ */
+d36 1
+a36 1
+	struct man_meta	 meta; /* document meta-data */
+@
+
+
+1.68
+log
+@Simplify by almost halving the number of macro flags:
+1. MAN_EXPLICIT was used iff fp == blk_exp, so just test fp.
+2. MAN_FSCOPED was used only for TP, so just test for TP.
+3. MAN_NOCLOSE was completely unused.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.67 2014/12/28 14:42:27 schwarze Exp $ */
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d34 2
+a35 2
+	struct man_node	*last; /* the last parsed node */
+	struct man_node	*first; /* the first parsed node */
+d41 1
+a41 1
+			  enum mant tok, \
+d62 5
+a66 5
+void		  man_block_alloc(struct man *, int, int, enum mant);
+void		  man_head_alloc(struct man *, int, int, enum mant);
+void		  man_body_alloc(struct man *, int, int, enum mant);
+void		  man_elem_alloc(struct man *, int, int, enum mant);
+void		  man_node_delete(struct man *, struct man_node *);
+d68 1
+a68 1
+enum mant	  man_hash_find(const char *);
+d71 1
+a71 1
+void		  man_unscope(struct man *, const struct man_node *);
+@
+
+
+1.67
+log
+@mdoc(7) already uses the mandoc(1) -Ios argument in the footer line
+when .Os has no argument, so do the same for man(7) when .TH has less
+than four arguments; there is no reason to treat both differently.
+Issue found following a question from Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.66 2014/12/01 04:05:31 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d50 4
+a53 7
+#define	MAN_SCOPED	 (1 << 0)
+#define	MAN_EXPLICIT	 (1 << 1)	/* See blk_imp(). */
+#define	MAN_FSCOPED	 (1 << 2)	/* See blk_imp(). */
+#define	MAN_NSCOPED	 (1 << 3)	/* See in_line_eoln(). */
+#define	MAN_NOCLOSE	 (1 << 4)	/* See blk_exp(). */
+#define	MAN_BSCOPE	 (1 << 5)	/* Break BLINE scope. */
+#define	MAN_JOIN	 (1 << 6)	/* Join arguments together. */
+@
+
+
+1.66
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.65 2014/11/28 05:51:32 schwarze Exp $ */
+d26 1
+@
+
+
+1.65
+log
+@Simplify by making many functions in the man(7) parser void,
+and some cleanup; no functional change, minus 70 lines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.64 2014/11/03 23:18:39 schwarze Exp $ */
+a17 2
+#ifndef LIBMAN_H
+#define LIBMAN_H
+a75 2
+
+#endif /*!LIBMAN_H*/
+@
+
+
+1.64
+log
+@Allow the five man(7) font macros to concatenate their line arguments,
+the same way the mdoc(7) macros marked MDOC_JOIN do it.
+In -Thtml, this removes bogus <br/> when the font macros are used
+in no-fill mode; issue found by jsg@@ in the Xcursor(3) SYNOPSIS.
+As a bonus, this slightly reduces the size of the syntax tree.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.63 2014/08/01 21:24:17 schwarze Exp $ */
+d49 1
+a49 1
+	int		(*fp)(MACRO_PROT_ARGS);
+d64 1
+a64 1
+int		  man_word_alloc(struct man *, int, int, const char *);
+d66 4
+a69 5
+int		  man_block_alloc(struct man *, int, int, enum mant);
+int		  man_head_alloc(struct man *, int, int, enum mant);
+int		  man_tail_alloc(struct man *, int, int, enum mant);
+int		  man_body_alloc(struct man *, int, int, enum mant);
+int		  man_elem_alloc(struct man *, int, int, enum mant);
+d73 3
+a75 3
+int		  man_macroend(struct man *);
+int		  man_valid_post(struct man *);
+int		  man_unscope(struct man *, const struct man_node *);
+@
+
+
+1.63
+log
+@Simplify man(7) validation:
+Drop pre-handlers, they were almost unused.
+Drop the needless complexity of allowing more than one post-handler.
+
+This saves one internal interface function, one static function, one
+private struct definition, sixteen static arrays, and 45 lines of code.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.62 2014/08/01 17:40:34 schwarze Exp $ */
+d4 1
+d57 1
+d65 1
+@
+
+
+1.62
+log
+@demacrify: get rid of man_nmsg(), man_pmsg(), mdoc_nmsg(), mdoc_pmsg()
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.61 2014/07/30 21:18:24 schwarze Exp $ */
+a72 1
+int		  man_valid_pre(struct man *, struct man_node *);
+@
+
+
+1.61
+log
+@garbage collect three unused global flags; no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.60 2014/07/30 20:06:36 schwarze Exp $ */
+a61 4
+#define		  man_pmsg(man, l, p, t) \
+		  mandoc_msg((t), (man)->parse, (l), (p), NULL)
+#define		  man_nmsg(man, n, t) \
+		  mandoc_msg((t), (man)->parse, (n)->line, (n)->pos, NULL)
+@
+
+
+1.60
+log
+@Simplify: replace one global flag by one local variable.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.59 2014/07/07 19:18:15 schwarze Exp $ */
+a28 1
+#define	MAN_HALT	(1 << 0) /* badness happened: die */
+a30 1
+#define	MAN_ILINE	(1 << 3) /* Ignored in next-line scope. */
+@
+
+
+1.59
+log
+@Simplify man_unscope(), removing 18 lines of code, that is,
+removing one function argument, one function definition,
+three function invocations and two pointless assert()s.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.58 2014/04/20 16:46:04 schwarze Exp $ */
+a33 1
+#define	MAN_BPLINE	(1 << 5)
+@
+
+
+1.58
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.57 2014/01/05 20:26:36 schwarze Exp $ */
+d81 1
+a81 2
+int		  man_unscope(struct man *, const struct man_node *,
+			enum mandocerr);
+@
+
+
+1.57
+log
+@Add an option -Q (quick) to mandocdb(8)
+for accelerated generation of reduced-size databases.
+
+Implement this by allowing the parsers to optionally
+abort the parse sequence after the NAME section.
+
+While here, garbage collect the unused void *arg attribute of
+struct mparse and mparse_alloc() and fix some errors in mandoc(3).
+
+This reduces the processing time of mandocdb(8) on /usr/share/man
+by a factor of 2 and the database size by a factor of 4.
+However, it still takes 5 times the time and 6 times the space
+of makewhatis(8), so more work is clearly needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.56 2012/11/17 00:26:33 schwarze Exp $ */
+d81 2
+a82 2
+int		  man_unscope(struct man *, 
+			const struct man_node *, enum mandocerr);
+@
+
+
+1.56
+log
+@Cleanup naming of local variables to make the code easier on the eye:
+Settle for "struct man *man", "struct mdoc *mdoc", "struct meta *meta"
+and avoid the confusing "*m" which was sometimes this, sometimes that.
+No functional change.
+
+ok kristaps@@ some time ago
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.55 2011/11/07 01:24:40 schwarze Exp $ */
+d27 1
+@
+
+
+1.55
+log
+@When the HEAD scope of .TP is broken by another block macro,
+do not abort with a FATAL error, but report a report a WARNING,
+remove the broken .TP from the syntax tree, and prod on.
+Reported repeatedly by ports people, at least by brad@@ and jeremy@@.
+Also fixes rendition(4) in Xenocara.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.54 2011/09/18 14:14:15 schwarze Exp $ */
+d42 1
+a42 1
+#define	MACRO_PROT_ARGS	  struct man *m, \
+d64 4
+a67 4
+#define		  man_pmsg(m, l, p, t) \
+		  mandoc_msg((t), (m)->parse, (l), (p), NULL)
+#define		  man_nmsg(m, n, t) \
+		  mandoc_msg((t), (m)->parse, (n)->line, (n)->pos, NULL)
+@
+
+
+1.54
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.53 2011/07/18 07:48:14 kristaps Exp $ */
+d57 1
+@
+
+
+1.53
+log
+@Follow-up: forgot to remove useless regset structs.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.52 2011/07/18 07:46:41 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.52
+log
+@Make `struct roff' be passed into libmdoc and libman upon creation.
+This is required for supporting in-line equations.  While here, push
+registers properly into roff and add an set/get/mod interface.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.51 2011/03/23 15:33:57 kristaps Exp $ */
+a38 1
+	struct regset	*regs; /* registers */
+@
+
+
+1.51
+log
+@Merge man_args() into man_macro.c, the only place where it's called, and
+make its return value boolean (we don't care about QWORD).  We can move
+it into mdoc_macro.c because it's basically just a wrapper around
+mandoc_getarg().  Then blow away man_argv.c, which is left empty.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.50 2011/03/23 12:40:04 kristaps Exp $ */
+d40 1
+@
+
+
+1.50
+log
+@First, make -man ARGS_EOLN et al. be an enum.  Second, remove
+ARGS_ERROR, as it is never returned by man_args().  Then clean up
+invocations of man_args() to only check for ARGS_EOLN.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.49 2011/03/23 12:33:01 kristaps Exp $ */
+a58 6
+enum	margserr {
+	ARGS_EOLN,
+	ARGS_WORD,
+	ARGS_QWORD
+};
+
+a76 1
+enum margserr	  man_args(struct man *, int, int *, char *, char **);
+@
+
+
+1.49
+log
+@Add MAN_TAIL, which will be used by `UE' (forthcoming) and needs to be
+used for `RE'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.48 2011/03/22 14:33:05 kristaps Exp $ */
+d59 6
+d81 1
+a81 1
+enum	mant	  man_hash_find(const char *);
+d83 1
+a83 5
+int		  man_args(struct man *, int, int *, char *, char **);
+#define	ARGS_ERROR	(-1)
+#define	ARGS_EOLN	(0)
+#define	ARGS_WORD	(1)
+#define	ARGS_QWORD	(1)
+@
+
+
+1.48
+log
+@libmdoc.h and libman.h were including mdoc.h and man.h, respectively.
+Don't have them do that (includes in header files = faugh), and have
+individual files directly include these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.47 2011/03/20 16:02:05 kristaps Exp $ */
+d70 1
+@
+
+
+1.47
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.46 2011/03/17 11:56:17 kristaps Exp $ */
+a19 2
+#include "man.h"
+
+@
+
+
+1.46
+log
+@Clean-up in libman: make all calls to man_*msg not check return value.
+Also convert man_vmsg to return void.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.45 2011/01/12 10:43:22 kristaps Exp $ */
+d28 1
+a28 2
+	void		*data; /* private application data */
+	mandocmsg	 msg; /* output message handler */
+d66 1
+a66 1
+		  (*(m)->msg)((t), (m)->data, (l), (p), NULL)
+d68 1
+a68 1
+		  (*(m)->msg)((t), (m)->data, (n)->line, (n)->pos, NULL)
+a82 2
+void		  man_vmsg(struct man *, enum mandocerr,
+			int, int, const char *, ...);
+@
+
+
+1.45
+log
+@If the first character of free-form text is whitespace, then a newline
+shall precede outputted text (surprise!).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.44 2010/11/30 15:36:28 kristaps Exp $ */
+d84 1
+a84 1
+int		  man_vmsg(struct man *, enum mandocerr,
+@
+
+
+1.44
+log
+@Kill man_action.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.43 2010/08/20 01:02:07 schwarze Exp $ */
+d37 1
+@
+
+
+1.43
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.42 2010/07/13 23:53:20 schwarze Exp $ */
+a86 2
+int		  man_action_post(struct man *);
+int		  man_action_pre(struct man *, struct man_node *);
+@
+
+
+1.42
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.41 2010/07/07 15:04:54 kristaps Exp $ */
+a29 1
+	int		 pflags; /* parse flags (see man.h) */
+@
+
+
+1.41
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.40 2010/06/27 16:18:13 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.40
+log
+@Following clue-stick applied by schwarze@@, back out const-ness of regset
+passed in to libmdoc and libman.
+
+Fix mdoc.3 and man.3 EXAMPLE sections to include regset.
+
+Add MDOC_SYNPRETTY flag cueing front-end to nicely format certain values
+as if SEC_SYNOPSIS were the current section.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.39 2010/06/27 15:52:41 kristaps Exp $ */
+a19 1
+#include "regs.h"
+@
+
+
+1.39
+log
+@Downstream maintainers: this removes UGLY!  I don't want diverging
+functionality and UGLY works quite well thanks to schwarze@@'s careful
+attention.
+
+This also backs out function-prototype changes for struct regset,
+instead stuffing a pointer to the regset directly into struct
+mdoc/man/roff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.38 2010/06/26 16:07:08 kristaps Exp $ */
+d43 1
+a43 1
+	const struct regset *regs; /* readonly registers */
+@
+
+
+1.38
+log
+@Mechanical diff allowing the const struct regset to propogate through
+libman and libmdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.37 2010/06/26 15:36:37 kristaps Exp $ */
+d29 2
+a30 2
+	void		*data;
+	mandocmsg	 msg;
+d39 5
+a43 4
+	enum man_next	 next;
+	struct man_node	*last;
+	struct man_node	*first;
+	struct man_meta	 meta;
+a46 1
+			  const struct regset *regs, \
+@
+
+
+1.37
+log
+@Churn-ish check-in getting mdoc_parseln() and man_parseln() to accept a
+const struct regset pointer.  No functionality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.36 2010/06/19 20:46:27 kristaps Exp $ */
+d45 7
+a51 2
+#define	MACRO_PROT_ARGS	  struct man *m, enum mant tok, int line, \
+			  int ppos, int *pos, char *buf
+@
+
+
+1.36
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.35 2010/06/09 19:22:56 kristaps Exp $ */
+d20 1
+@
+
+
+1.35
+log
+@Squash bug noted by Ulrich Spoerlein where "-" were being converted to
+ASCII_HYPH, as per normal, but were screwing up mandoc_special().  Fixed
+by making mandoc_special() first check isspace() instead of ! isgraph(),
+then normalise its string as it passes out.  This require de-constifying
+some validation routines not already de-constified (those in libman),
+but that's ok, because I'd like to be pushing actions into validation
+routines to save on space and redundant calculations.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.34 2010/05/17 22:11:42 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.34
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.33 2010/05/15 22:44:04 kristaps Exp $ */
+d82 1
+a82 1
+int		  man_valid_pre(struct man *, const struct man_node *);
+@
+
+
+1.33
+log
+@Remove `am', `ami', `de', `dei', and `.' from -man, as they're now in the roff preprocessor.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.32 2010/05/15 15:54:39 kristaps Exp $ */
+d29 1
+a29 1
+	struct man_cb	 cb;
+a43 24
+enum	merr {
+	WNPRINT = 0,
+	WDATE,
+	WLNSCOPE,
+	WLNSCOPE2,
+	WTSPACE,
+	WTQUOTE,
+	WNODATA,
+	WNOTITLE,
+	WESCAPE,
+	WNUMFMT,
+	WHEADARGS,
+	WBODYARGS,
+	WNHEADARGS,
+	WMACROFORM,
+	WEXITSCOPE,
+	WNOSCOPE,
+	WOLITERAL,
+	WNLITERAL,
+	WTITLECASE,
+	WBADCOMMENT,
+	WERRMAX
+};
+
+d61 4
+a64 9
+#define		  man_perr(m, l, p, t) \
+		  man_err((m), (l), (p), 1, (t))
+#define		  man_pwarn(m, l, p, t) \
+		  man_err((m), (l), (p), 0, (t))
+#define		  man_nerr(m, n, t) \
+		  man_err((m), (n)->line, (n)->pos, 1, (t))
+#define		  man_nwarn(m, n, t) \
+		  man_err((m), (n)->line, (n)->pos, 0, (t))
+
+d79 2
+a80 3
+int		  man_err(struct man *, int, int, int, enum merr);
+int		  man_vwarn(struct man *, int, int, const char *, ...);
+int		  man_verr(struct man *, int, int, const char *, ...);
+d86 1
+a86 1
+			const struct man_node *, enum merr);
+@
+
+
+1.32
+log
+@Removed restriction on integer manual sections in -man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.31 2010/04/08 07:53:01 kristaps Exp $ */
+a30 1
+	int		 svflags; /* flags saved during roff blocks */
+a38 1
+	enum man_next	 svnext;
+a62 2
+	WROFFNEST,
+	WROFFSCOPE,
+@
+
+
+1.31
+log
+@Sync'd mdoc.c's function names with man.c.
+Prompted by Ingo and Claus Assman, added warn/ignore for text lines beginning with `\."'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.30 2010/03/29 10:10:35 kristaps Exp $ */
+a47 1
+	WMSEC,
+@
+
+
+1.30
+log
+@Final (?) fix to issue pointed out by Sascha Wildner: roff instructions clobbering prior scope rules and line modes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.29 2010/03/29 04:52:14 kristaps Exp $ */
+d69 1
+@
+
+
+1.29
+log
+@Initial step in fixing badness reported by Sascha Wildner (wip).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.28 2010/03/27 10:04:56 kristaps Exp $ */
+d40 1
+@
+
+
+1.28
+log
+@Fixed re-adjustment of scope in exiting roff instructions (libman).
+Added title-case check for (libman).
+Fixed premature closure of roff instruction scope (libman).
+Added documentation of ignored roff macros to man(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.27 2010/03/24 20:10:53 kristaps Exp $ */
+d30 4
+a33 3
+	int		 pflags;
+	int		 flags;
+#define	MAN_HALT	(1 << 0)
+d38 1
+@
+
+
+1.27
+log
+@Using man_node_delete() instead of man_node_free()/man_node_freelist() and friends (much simpler).
+Split blk_imp() into blk_exp() (explicit macros), blk_dotted() (roff macros), and the original.
+Added de, dei, am, ami, and ig roff macros (for now, these are discarded within the parse).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.26 2010/03/23 21:50:43 kristaps Exp $ */
+d64 2
+d116 2
+a117 1
+int		  man_unscope(struct man *, const struct man_node *);
+@
+
+
+1.26
+log
+@libman using enum mant instead of #defines for macros.
+Clean-ups, better documentation in man_hash.c.
+Added extra space for "." in man_hash.c (unused for the time being).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.25 2010/03/22 14:03:03 kristaps Exp $ */
+d63 1
+d77 1
+d98 1
+a98 3
+void		  man_node_free(struct man_node *);
+void		  man_node_freelist(struct man_node *);
+void		  man_node_unlink(struct man *, struct man_node *);
+@
+
+
+1.25
+log
+@Clarify -man -T[x]html handling of `br' within `B'.
+Consolidated node unlinking in -man.
+Conclude nested next-line scope issues noted by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.24 2010/03/22 05:59:32 kristaps Exp $ */
+d66 1
+a66 1
+#define	MACRO_PROT_ARGS	  struct man *m, int tok, int line, \
+d92 4
+a95 4
+int		  man_block_alloc(struct man *, int, int, int);
+int		  man_head_alloc(struct man *, int, int, int);
+int		  man_body_alloc(struct man *, int, int, int);
+int		  man_elem_alloc(struct man *, int, int, int);
+d100 1
+a100 1
+int		  man_hash_find(const char *);
+@
+
+
+1.24
+log
+@Accomodate (libman) for next-line macros followed by non-text macros `na', `sp', and `br'.
+Based on a patch by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.23 2009/10/30 05:58:36 kristaps Exp $ */
+d48 1
+d98 1
+@
+
+
+1.23
+log
+@libmdoc and libman now using non-recoverable allocations (simpler code).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.22 2009/10/26 07:11:06 kristaps Exp $ */
+d33 4
+a36 3
+#define	MAN_ELINE	(1 << 1) 	/* Next-line element scope. */
+#define	MAN_BLINE	(1 << 2) 	/* Next-line block scope. */
+#define	MAN_LITERAL	(1 << 3)	/* Literal input. */
+d74 1
+@
+
+
+1.22
+log
+@-man also prints unknown macro (noted by Joerg Sonnenberger).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.21 2009/09/16 14:40:56 kristaps Exp $ */
+a43 1
+	WNMEM,
+@
+
+
+1.21
+log
+@Lookup hashes are now static tables, ordered first-level by second character, then randomly along a chain.  Improves performance by a small fraction and considerably cleans up hash sources.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.20 2009/08/21 13:14:07 kristaps Exp $ */
+a56 1
+	WMACRO,
+@
+
+
+1.20
+log
+@Fixed next-line scoping of `.HP nnn' (has both next-line and on-line in head).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.19 2009/08/21 12:32:38 kristaps Exp $ */
+a29 1
+	void		*htab;
+d97 2
+a98 3
+void		 *man_hash_alloc(void);
+int		  man_hash_find(const void *, const char *);
+void		  man_hash_free(void *);
+@
+
+
+1.19
+log
+@Fixed `nf' behaviour (had broken with de-chunking).
+Added warnings if literal context already open/closed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.18 2009/08/19 12:15:58 kristaps Exp $ */
+d74 2
+a75 1
+#define	MAN_EXPLICIT	 (1 << 1)
+@
+
+
+1.18
+log
+@libman checks for open explicit scopes on exit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.17 2009/08/19 09:14:50 kristaps Exp $ */
+d36 1
+d62 2
+d112 1
+@
+
+
+1.17
+log
+@Added RS/RE macro pair (had to adjust closing rules, sec/ssec/rs/par).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.16 2009/08/13 11:45:29 kristaps Exp $ */
+d71 1
+@
+
+
+1.16
+log
+@Significant overhaul in libman.  Macros are now block- and line-scoped (with
+next-line scope extensions possible).  man.7 reflects block and line scoping,
+and also includes a REFERENCE section that will be used as a template for the
+big mdoc reference.  Many fixes in next-line behaviour for both inline and
+block macros.  Added some macros for compatibility (from me.7).  Corrected
+quoted-literal handling for libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.15 2009/07/24 20:22:24 kristaps Exp $ */
+d60 1
+@
+
+
+1.15
+log
+@Added `sp' support to libman.
+Added `\c' to known escapes (only used in man, but still).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.14 2009/07/07 09:35:40 kristaps Exp $ */
+d34 2
+a35 1
+#define	MAN_NLINE	(1 << 1)
+d54 6
+d63 11
+a84 1
+int		  man_err(struct man *, int, int, int, enum merr);
+d86 3
+a92 2
+int		  man_macro(struct man *, int, 
+			int, int, int *, char *);
+d96 6
+d105 1
+d107 1
+@
+
+
+1.14
+log
+@Tabularised error strings in libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.13 2009/07/06 13:04:52 kristaps Exp $ */
+d52 1
+@
+
+
+1.13
+log
+@Consolidated all err/warnings into mdoc.c via libmdoc.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.12 2009/07/04 09:01:55 kristaps Exp $ */
+d42 1
+a42 1
+	WNPRINT,
+d51 2
+a52 1
+	WESCAPE
+@
+
+
+1.12
+log
+@Moved escape validation into libmandoc.h/mandoc.c (common between libman/libmdoc1).
+libman supports MAN_IGN_ESCAPE (like MDOC_IGN_ESCAPE).
+All popular escapes now handled consistently.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.11 2009/06/22 13:09:17 kristaps Exp $ */
+d57 1
+a57 1
+		  man_err((m), l, p, 1, (t))
+d59 1
+a59 1
+		  man_err((m), l, p, 0, (t))
+@
+
+
+1.11
+log
+@libman documents require `TH' and at least one node.
+libman requirements documented in man.7 STRUCTURE section.
+Added STRUCTURE section to mdoc.7, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.10 2009/06/18 10:53:58 kristaps Exp $ */
+d50 2
+a51 1
+	WNOTITLE
+@
+
+
+1.10
+log
+@Moved all formatted libman warn/error into man.c/libman.h.
+Converted all formatted warn/errors into regular syntax.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.9 2009/06/10 20:18:43 kristaps Exp $ */
+d48 3
+a50 1
+	WTQUOTE
+@
+
+
+1.9
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.8 2009/04/12 19:45:26 kristaps Exp $ */
+d41 10
+d53 10
+@
+
+
+1.8
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.7 2009/03/26 14:38:11 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.7
+log
+@Initial front-end formatting for -man pages.
+@
+text
+@d1 1
+a1 1
+/* $Id: libman.h,v 1.6 2009/03/25 21:03:13 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.6
+log
+@Added pflags to man_alloc.
+Abstract fflags -> pflags in main.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: libman.h,v 1.5 2009/03/25 15:36:05 kristaps Exp $ */
+d36 1
+@
+
+
+1.5
+log
+@Added man_action.c, renamed mdoc_action.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: libman.h,v 1.4 2009/03/25 15:17:49 kristaps Exp $ */
+d33 1
+@
+
+
+1.4
+log
+@Added man validator, renamed mdoc validator.
+@
+text
+@d1 1
+a1 1
+/* $Id: libman.h,v 1.3 2009/03/23 15:41:09 kristaps Exp $ */
+d55 2
+@
+
+
+1.3
+log
+@-man linked to mandoc in documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: libman.h,v 1.2 2009/03/23 15:20:51 kristaps Exp $ */
+d30 2
+d53 2
+@
+
+
+1.2
+log
+@-man printing linked to -Ttree.
+@
+text
+@d1 1
+a1 1
+/* $Id: libman.h,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
+d50 1
+@
+
+
+1.1
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@d1 1
+a1 1
+/* $Id: private.h,v 1.91 2009/03/21 13:09:29 kristaps Exp $ */
+d32 1
+a32 1
+#define	MAN_LITERAL	(1 << 1)
+a38 12
+
+#define	MACRO_PROT_ARGS	struct man *man, int tok, int line, \
+			int ppos, int *pos, char *buf
+
+struct	man_macro {
+	int		(*fp)(MACRO_PROT_ARGS);
+	int		  flags;
+#define	MDOC_PROLOGUE	 (1 << 0)
+};
+
+extern	const struct man_macro *const man_macros;
+
+a42 3
+int		  man_block_alloc(struct man *, int, int, int);
+int		  man_head_alloc(struct man *, int, int, int);
+int		  man_body_alloc(struct man *, int, int, int);
+d46 2
+@

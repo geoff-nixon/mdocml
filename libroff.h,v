@@ -1,0 +1,1131 @@
+head	1.39;
+access;
+symbols
+	VERSION_1_13_3:1.38
+	VERSION_1_13_2:1.33
+	VERSION_1_12_4:1.29
+	VERSION_1_13_1:1.29
+	VERSION_1_12_3:1.28
+	VERSION_1_12_2:1.28
+	VERSION_1_12:1.29.0.2
+	VERSION_1_12_1:1.27
+	VERSION_1_12_0:1.27
+	VERSION_1_11_7:1.27
+	VERSION_1_11_6:1.27
+	VERSION_1_11_5:1.26
+	VERSION_1_11_4:1.20
+	VERSION_1_11_3:1.20
+	VERSION_1_11_2:1.20
+	VERSION_1_11_1:1.20
+	VERSION_1_10_10:1.19
+	VERSION_1_10_9:1.16;
+locks; strict;
+comment	@ * @;
+
+
+1.39
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2015.01.30.04.11.50;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2015.01.28.17.32.07;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2015.01.28.15.03.45;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.01.21.00.47.04;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.01.14.22.44.55;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2014.12.01.04.05.32;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2014.10.25.14.35.37;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2014.10.16.01.11.20;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2013.05.31.21.37.17;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2011.07.25.15.37.00;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2011.07.23.18.41.18;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.07.22.14.55.07;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.07.21.23.30.39;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.07.21.10.24.35;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.07.17.12.13.37;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.07.12.21.32.43;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.02.09.09.05.52;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.02.06.20.36.36;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.01.25.12.24.27;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.01.04.15.02.00;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.01.02.10.10.57;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.01.01.22.19.15;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.01.01.16.10.40;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.01.01.15.45.18;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2010.12.31.18.19.43;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.12.31.14.52.41;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.12.30.10.26.00;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.12.30.09.34.06;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.12.29.16.44.23;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.12.29.14.53.31;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.12.29.14.38.14;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.12.29.01.18.23;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.12.29.01.16.57;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.12.28.13.46.07;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.12.28.10.51.03;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.39
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: libroff.h,v 1.38 2015/01/30 04:11:50 schwarze Exp $ */
+/*
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+enum	tbl_part {
+	TBL_PART_OPTS, /* in options (first line) */
+	TBL_PART_LAYOUT, /* describing layout */
+	TBL_PART_DATA, /* creating data rows */
+	TBL_PART_CDATA /* continue previous row */
+};
+
+struct	tbl_node {
+	struct mparse	 *parse; /* parse point */
+	int		  pos; /* invocation column */
+	int		  line; /* invocation line */
+	enum tbl_part	  part;
+	struct tbl_opts	  opts;
+	struct tbl_row	 *first_row;
+	struct tbl_row	 *last_row;
+	struct tbl_span	 *first_span;
+	struct tbl_span	 *current_span;
+	struct tbl_span	 *last_span;
+	struct tbl_node	 *next;
+};
+
+struct	eqn_node {
+	struct eqn	  eqn;    /* syntax tree of this equation */
+	struct mparse	 *parse;  /* main parser, for error reporting */
+	struct eqn_node  *next;   /* singly linked list of equations */
+	struct eqn_def	 *defs;   /* array of definitions */
+	char		 *data;   /* source code of this equation */
+	size_t		  defsz;  /* number of definitions */
+	size_t		  sz;     /* length of the source code */
+	size_t		  cur;    /* parse point in the source code */
+	size_t		  rew;    /* beginning of the current token */
+	int		  gsize;  /* default point size */
+	int		  delim;  /* in-line delimiters enabled */
+	char		  odelim; /* in-line opening delimiter */
+	char		  cdelim; /* in-line closing delimiter */
+};
+
+struct	eqn_def {
+	char		 *key;
+	size_t		  keysz;
+	char		 *val;
+	size_t		  valsz;
+};
+
+
+struct tbl_node	*tbl_alloc(int, int, struct mparse *);
+void		 tbl_restart(int, int, struct tbl_node *);
+void		 tbl_free(struct tbl_node *);
+void		 tbl_reset(struct tbl_node *);
+enum rofferr	 tbl_read(struct tbl_node *, int, const char *, int);
+void		 tbl_option(struct tbl_node *, int, const char *, int *);
+void		 tbl_layout(struct tbl_node *, int, const char *, int);
+void		 tbl_data(struct tbl_node *, int, const char *, int);
+int		 tbl_cdata(struct tbl_node *, int, const char *, int);
+const struct tbl_span	*tbl_span(struct tbl_node *);
+int		 tbl_end(struct tbl_node **);
+struct eqn_node	*eqn_alloc(int, int, struct mparse *);
+enum rofferr	 eqn_end(struct eqn_node **);
+void		 eqn_free(struct eqn_node *);
+enum rofferr	 eqn_read(struct eqn_node **, int,
+			const char *, int, int *);
+@
+
+
+1.38
+log
+@Abolish struct tbl_head and replace it by an "int col" member in
+struct tbl_cell.  No functional change, minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.37 2015/01/28 17:32:07 schwarze Exp $ */
+a62 1
+__BEGIN_DECLS
+a79 2
+
+__END_DECLS
+@
+
+
+1.37
+log
+@* Polish tbl(7) error reporting.
+* Do not print out macro names in tbl(7) data blocks.
+* Like with GNU tbl, let empty tables cause a blank line.
+* Avoid producing empty tables in -Tman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.36 2015/01/28 15:03:45 schwarze Exp $ */
+a36 2
+	struct tbl_head	 *first_head;
+	struct tbl_head	 *last_head;
+@
+
+
+1.36
+log
+@For now, it can't be helped that mandoc tbl(7) ignores high-level macros,
+but stop throwing away their arguments.  This fixes information loss in a
+handful of Xenocara manuals, at the price of a small amount of formatting
+noise creeping through.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.35 2015/01/21 00:47:04 schwarze Exp $ */
+d77 1
+a77 1
+void		 tbl_end(struct tbl_node **);
+@
+
+
+1.35
+log
+@blank lines in tables do not need special handling; simplifies code
+and reduces groff/mandoc differences in OpenBSD base by about 1%
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.34 2015/01/14 22:44:55 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d72 4
+a75 4
+void		 tbl_option(struct tbl_node *, int, const char *);
+void		 tbl_layout(struct tbl_node *, int, const char *);
+void		 tbl_data(struct tbl_node *, int, const char *);
+int		 tbl_cdata(struct tbl_node *, int, const char *);
+@
+
+
+1.34
+log
+@simplify by getting rid of ROFF_ERR in tbl(7) parsing; no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.33 2014/12/01 08:05:52 schwarze Exp $ */
+d74 1
+a74 1
+int		 tbl_data(struct tbl_node *, int, const char *);
+@
+
+
+1.33
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.32 2014/12/01 04:05:32 schwarze Exp $ */
+d72 2
+a73 2
+int		 tbl_option(struct tbl_node *, int, const char *);
+int		 tbl_layout(struct tbl_node *, int, const char *);
+@
+
+
+1.32
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.31 2014/10/25 14:35:37 schwarze Exp $ */
+a18 2
+__BEGIN_DECLS
+
+d65 2
+@
+
+
+1.31
+log
+@Report arguments to .EQ as an error, and simplify the code:
+* drop trivial wrapper function roff_openeqn()
+* drop unused first arg of function eqn_alloc()
+* drop usused member "name" of struct eqn_node
+While here, sync to OpenBSD by killing some trailing blanks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.30 2014/10/16 01:11:20 schwarze Exp $ */
+a17 2
+#ifndef LIBROFF_H
+#define LIBROFF_H
+a84 2
+
+#endif /*LIBROFF_H*/
+@
+
+
+1.30
+log
+@Implement in-line equations, much needed by Xenocara manuals.
+Put the steering into the roff parser rather than into the mdoc
+parser such that it works for all macro languages and on both text
+and macro lines.
+Line breaks and blank characters generated before and after in-line
+equations are not perfect yet, but let's do one thing at a time.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.29 2014/04/20 16:46:04 schwarze Exp $ */
+d80 1
+a80 1
+struct eqn_node	*eqn_alloc(const char *, int, int, struct mparse *);
+@
+
+
+1.29
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.28 2013/05/31 21:37:17 schwarze Exp $ */
+d4 1
+d47 13
+a59 10
+	struct eqn_def	 *defs;
+	size_t		  defsz;
+	char		 *data;
+	size_t		  rew;
+	size_t		  cur;
+	size_t		  sz;
+	int		  gsize;
+	struct eqn	  eqn;
+	struct mparse	 *parse;
+	struct eqn_node  *next;
+@
+
+
+1.28
+log
+@The name "struct tbl" was badly misleading for two reasons:
+1) This struct almost exclusively contains the table options.
+2) Information about the table as a whole is actually in "struct tbl_node".
+Besides, "struct tbl" was almost impossible to search for.
+So rename it to "struct tbl_opts".  No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.27 2011/07/25 15:37:00 kristaps Exp $ */
+d69 1
+a69 1
+enum rofferr 	 tbl_read(struct tbl_node *, int, const char *, int);
+d79 1
+a79 1
+enum rofferr 	 eqn_read(struct eqn_node **, int, 
+@
+
+
+1.27
+log
+@Implement the first steps of equation parsing from within libmdoc.
+This consists of a shim around the text parser that calls out to libroff
+if equation components exist on the line.  Right now this will do
+nothing, as the equation delimiter always returns nil.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.26 2011/07/23 18:41:18 kristaps Exp $ */
+d34 1
+a34 1
+	struct tbl	  opts;
+@
+
+
+1.26
+log
+@Add support for tdefine and ndefine.  Consolidate some error messages.  Add
+somem more version notes (getting there).  Have the equation nanme be captured.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.25 2011/07/22 14:55:07 kristaps Exp $ */
+d75 1
+a75 1
+void		 tbl_end(struct tbl_node *);
+d77 1
+a77 1
+enum rofferr	 eqn_end(struct eqn_node *);
+@
+
+
+1.25
+log
+@Add support for `gsize' eqn token (introduced in second-edition troff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.24 2011/07/21 23:30:39 kristaps Exp $ */
+d76 1
+a76 1
+struct eqn_node	*eqn_alloc(int, int, struct mparse *);
+@
+
+
+1.24
+log
+@Complete eqn.7 parsing.  Features all productions from the original 1975
+CACM paper in an LR(1) parse (1 -> eqn_rewind()).  Right now the code is
+a little jungly, but will clear up as I consolidate parse components.
+The AST structure will also be cleaned up, as right now it's pretty ad
+hoc (this won't change the parse itself).  I added the mandoc_strndup()
+function will here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.23 2011/07/21 10:24:35 kristaps Exp $ */
+d52 1
+@
+
+
+1.23
+log
+@Finish the eqn syntactic parser.  This correctly parses terms and does
+the proper `define' dance, which amounts to pure word-replace (you can,
+say, define `foo' as `define' then define `define' as something else).
+eqn.c is now ready for some semantic parsing of `box' and `eqn'
+productions as defined by the grammar.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.22 2011/07/17 12:13:37 kristaps Exp $ */
+d49 1
+@
+
+
+1.22
+log
+@Add initial `define' support for eqn(7).
+This works by iterating over a simple list.  It's a slow, auditable
+early implementation.  Data is read (the reading function will be
+reused) then parsed, then the line re-run if remaining stuff exists.
+Note this function isn't the same as mandoc_getarg(), as eqn(7) uses a
+different system for reading quoted strings.
+This doesn't actually use the defines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.21 2011/07/12 21:32:43 kristaps Exp $ */
+a44 7
+struct	eqn_def {
+	char		 *key;
+	size_t		  keysz;
+	char		 *val;
+	size_t		  valsz;
+};
+
+d48 3
+d56 7
+d75 1
+a75 1
+void		 eqn_end(struct eqn_node *);
+@
+
+
+1.21
+log
+@Have equation be allocated with mparse.  Will be needed for logging of
+messages.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.20 2011/03/20 16:02:05 kristaps Exp $ */
+d45 7
+d53 2
+a55 1
+	struct eqn_node	 *next;
+d57 1
+d74 2
+a75 1
+enum rofferr 	 eqn_read(struct eqn_node **, int, const char *, int);
+@
+
+
+1.20
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.19 2011/02/09 09:05:52 kristaps Exp $ */
+d48 1
+d62 1
+a62 1
+struct eqn_node	*eqn_alloc(int, int);
+@
+
+
+1.19
+log
+@Allow EQN data to be pushed down into libmdoc via mdoc_addeqn().  Only
+the adding itself is implemented; equation data is not yet shown.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.18 2011/02/06 20:36:36 kristaps Exp $ */
+d30 1
+a30 2
+	mandocmsg	  msg; /* status messages */
+	void		 *data; /* privdata for messages */
+d50 1
+a50 4
+#define	TBL_MSG(tblp, type, line, col) \
+	(*(tblp)->msg)((type), (tblp)->data, (line), (col), NULL)
+
+struct tbl_node	*tbl_alloc(int, int, void *, mandocmsg);
+@
+
+
+1.18
+log
+@Add initial EQN support to mandoc.  This parses, then throws away, data
+between EQ and EN roff blocks.  EQN is different from TBL in that data
+after .EQ is unilaterally considered an equation until an .EN.  Thus,
+there's no need to jump through hoops in having table spans and so on.
+This is ONLY the parse code framework in libroff.  EQN is not yet passed
+into the backends.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.17 2011/01/25 12:24:27 schwarze Exp $ */
+a46 2
+	int		  pos; /* invocation column */
+	int		  line; /* invocation line */
+@
+
+
+1.17
+log
+@Since tbl_data() can now produce multiple spans, let parsebuf()
+generate man(7) or mdoc(7) nodes for all these spans,
+not only for the last one.
+Restores the horizontal lines in the cpu(4/hppa) tables.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.16 2011/01/04 15:02:00 kristaps Exp $ */
+d46 7
+d67 4
+@
+
+
+1.16
+log
+@Support `T{' and `T}' data blocks.  When a standalone `T{' is
+encountered as a line's last data cell, move into TBL_PART_CDATA mode
+whilst leaving the cell's designation as TBL_DATA_NONE.  When new data
+arrives that's not a standalone `T}', append it to the cell contends.
+Close out and warn appropriately.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.15 2011/01/02 10:10:57 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+d39 1
+d58 1
+a58 1
+const struct tbl_span *tbl_span(const struct tbl_node *);
+@
+
+
+1.15
+log
+@Churn to get parts of 'struct tbl' visible from mandoc.h: rename the
+existing 'struct tbl' as 'struct tbl_node', then move all option stuff
+into a 'struct tbl' in mandoc.h.
+
+This conflicted with a structure in chars.c, which was renamed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.14 2011/01/01 22:19:15 kristaps Exp $ */
+d25 2
+a26 1
+	TBL_PART_DATA  /* creating data rows */
+d56 1
+@
+
+
+1.14
+log
+@Plug in the "head" concept for tables.  A tbl_head specifies the full
+layout for each row, including vertical spacers.  One grabs the tbl_head
+for a row and iterates through each entry, plugging data from the
+tbl_span into the header as appropriate.
+
+This is pulled in more or less verbatim from tbl.bsd.lv.  In fact, this
+is verbatim except that lists macros are made into hard-coded lists (for
+compatibility, as long-ago noted by joerg@@).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.13 2011/01/01 16:10:40 kristaps Exp $ */
+d28 1
+a28 1
+struct	tbl {
+a30 3
+	enum tbl_part	  part;
+	char		  tab; /* cell-separator */
+	char		  decimal; /* decimal point */
+d33 2
+a34 10
+	int		  linesize;
+	char		  delims[2];
+	int		  opts;
+#define	TBL_OPT_CENTRE	 (1 << 0)
+#define	TBL_OPT_EXPAND	 (1 << 1)
+#define	TBL_OPT_BOX	 (1 << 2)
+#define	TBL_OPT_DBOX	 (1 << 3)
+#define	TBL_OPT_ALLBOX	 (1 << 4)
+#define	TBL_OPT_NOKEEP	 (1 << 5)
+#define	TBL_OPT_NOSPACE	 (1 << 6)
+d41 1
+a41 1
+	struct tbl	 *next;
+d47 10
+a56 10
+struct tbl	*tbl_alloc(int, int, void *, mandocmsg);
+void		 tbl_restart(int, int, struct tbl *);
+void		 tbl_free(struct tbl *);
+void		 tbl_reset(struct tbl *);
+enum rofferr 	 tbl_read(struct tbl *, int, const char *, int);
+int		 tbl_option(struct tbl *, int, const char *);
+int		 tbl_layout(struct tbl *, int, const char *);
+int		 tbl_data(struct tbl *, int, const char *);
+const struct tbl_span *tbl_span(const struct tbl *);
+void		 tbl_end(struct tbl *);
+@
+
+
+1.13
+log
+@Raise an error if a table is closed without data.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.12 2011/01/01 15:45:18 kristaps Exp $ */
+d50 2
+@
+
+
+1.12
+log
+@Add documentation bits for libroff's new roff_span().
+
+Add bits to remember tbl's invocation point.
+
+Add ERROR class message if no data's in the table.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.11 2010/12/31 18:19:43 kristaps Exp $ */
+d57 1
+a57 1
+void		 tbl_restart(struct tbl *);
+@
+
+
+1.11
+log
+@Expose the parsed table API to the world and add accessors through the
+roff.h interface.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.10 2010/12/31 14:52:41 kristaps Exp $ */
+d34 2
+d56 1
+a56 1
+struct tbl	*tbl_alloc(void *, mandocmsg);
+d65 1
+@
+
+
+1.10
+log
+@Put parsed tables into a queue that's cleared at the end of parsing.
+This completes the parsing phase of the new tbl implementation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.9 2010/12/30 10:26:00 kristaps Exp $ */
+a27 56
+enum	tbl_cellt {
+	TBL_CELL_CENTRE, /* c, C */
+	TBL_CELL_RIGHT, /* r, R */
+	TBL_CELL_LEFT, /* l, L */
+	TBL_CELL_NUMBER, /* n, N */
+	TBL_CELL_SPAN, /* s, S */
+	TBL_CELL_LONG, /* a, A */
+	TBL_CELL_DOWN, /* ^ */
+	TBL_CELL_HORIZ, /* _, - */
+	TBL_CELL_DHORIZ, /* = */
+	TBL_CELL_VERT, /* | */
+	TBL_CELL_DVERT, /* || */
+	TBL_CELL_MAX
+};
+
+struct	tbl_cell {
+	struct tbl_cell	 *next;
+	enum tbl_cellt	  pos;
+	int		  spacing;
+	int		  flags;
+#define	TBL_CELL_TALIGN	 (1 << 0) /* t, T */
+#define	TBL_CELL_BALIGN	 (1 << 1) /* d, D */
+#define	TBL_CELL_BOLD	 (1 << 2) /* fB, B, b */
+#define	TBL_CELL_ITALIC	 (1 << 3) /* fI, I, i */
+#define	TBL_CELL_EQUAL	 (1 << 4) /* e, E */
+#define	TBL_CELL_UP	 (1 << 5) /* u, U */
+#define	TBL_CELL_WIGN	 (1 << 6) /* z, Z */
+};
+
+struct	tbl_row {
+	struct tbl_row	 *next;
+	struct tbl_cell	 *first;
+	struct tbl_cell	 *last;
+};
+
+struct	tbl_dat {
+	struct tbl_cell	 *layout; /* layout cell: CAN BE NULL */
+	struct tbl_dat	 *next;
+	char		 *string;
+	int		  flags;
+#define	TBL_DATA_HORIZ	 (1 << 0)
+#define	TBL_DATA_DHORIZ	 (1 << 1)
+#define	TBL_DATA_NHORIZ	 (1 << 2)
+#define	TBL_DATA_NDHORIZ (1 << 3)
+};
+
+struct	tbl_span {
+	struct tbl_row	 *layout; /* layout row: CAN BE NULL */
+	struct tbl_dat	 *first;
+	struct tbl_dat	 *last;
+	int		  flags;
+#define	TBL_SPAN_HORIZ	(1 << 0)
+#define	TBL_SPAN_DHORIZ	(1 << 1)
+	struct tbl_span	 *next;
+};
+
+d62 1
+@
+
+
+1.9
+log
+@Assign layout cells to parsed data.  This follows primarily from
+tbl.bsd.lv, although it has been reimplemented.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.8 2010/12/30 09:34:06 kristaps Exp $ */
+d104 1
+@
+
+
+1.8
+log
+@Move clean-up of parsed tbl nodes into the tbl_clear() function, called
+once per invocation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.7 2010/12/29 16:44:23 kristaps Exp $ */
+d64 1
+d75 1
+@
+
+
+1.7
+log
+@Initial check-in of table data-row processing.  For the time being, this
+parses table data then throws it away immediately.  It does not yet try
+to cross-check data rows against layout or anything.  This copied more
+or less completely from tbl.bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.6 2010/12/29 14:53:31 kristaps Exp $ */
+d79 1
+d98 4
+a101 2
+	struct tbl_row	 *first;
+	struct tbl_row	 *last;
+d114 1
+a114 1
+struct tbl_span	*tbl_data(struct tbl *, int, const char *);
+@
+
+
+1.6
+log
+@Add handling for `T&', which restarts a table except for its options.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.5 2010/12/29 14:38:14 kristaps Exp $ */
+d63 18
+d111 1
+@
+
+
+1.5
+log
+@Merge, with considerable changes, tbl.bsd.lv's layout-handling code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.4 2010/12/29 01:18:23 kristaps Exp $ */
+d87 1
+@
+
+
+1.4
+log
+@Whack removed function from libroff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.3 2010/12/29 01:16:57 kristaps Exp $ */
+d28 35
+d64 2
+a65 2
+	mandocmsg	 msg; /* status messages */
+	void		*data; /* privdata for messages */
+d79 2
+d91 1
+@
+
+
+1.3
+log
+@Significant update to options handling, which now departs almost
+completely with the BSD.lv code due to performance issues and flat-out
+errors.
+
+Performance issues: functions called per character.  Ugly.
+
+Flat-out errors: disallowing "reserved" tokens as arguments to those
+options accepting arguments.
+
+Also added are two mandoc.h error codes for general tbl syntax errors
+and for bad options.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.2 2010/12/28 13:46:07 kristaps Exp $ */
+a52 1
+enum tbl_tok	 tbl_next(struct tbl *, const char *, int *);
+@
+
+
+1.2
+log
+@Adding initial options processing (not hooked into parse yet).  This is
+more or less copied from tbl.bsd.lv and still needs integration with the
+general mandoc framework, e.g., with error messages.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libroff.h,v 1.1 2010/12/28 10:51:03 kristaps Exp $ */
+a21 12
+enum	tbl_tok {
+	TBL_TOK_OPENPAREN = 0,
+	TBL_TOK_CLOSEPAREN,
+	TBL_TOK_COMMA,
+	TBL_TOK_SEMICOLON,
+	TBL_TOK_PERIOD,
+	TBL_TOK_SPACE,
+	TBL_TOK_TAB,
+	TBL_TOK_NIL,
+	TBL_TOK__MAX
+};
+
+d29 2
+a31 1
+	char		  buf[BUFSIZ];
+d46 4
+a49 1
+struct tbl	*tbl_alloc(void);
+d54 1
+@
+
+
+1.1
+log
+@Initial tbl framework.  Parse point is in libroff, which keeps a
+reference to a current tbl parse and routes ALL text into the tbl parse
+after stripping reserved words and making block-level pre-processing
+(e.g., `ig').  This is consistent with an analysis of embedded `TS/TE'
+in manuals with sprinkled -mdoc, roff, and -man macros.
+
+Fact of a parse is exposed to main.c by a return value (ROFF_TBL), which
+will trigger main.c to add a foreign parsed body to the -mdoc or -man
+parse stream.  This interface isn't in yet, but will follow the
+parse-text functions in both libraries.  I put this login in main.c
+because I don't want libroff calling directly into libmdoc or libman.
+
+As a consequence, a parsed row can be pushed directly into any -mdoc or
+-man context (put a `Bd -literal -offset indent' into a `TE/TS' block to
+see why this is necessary).  It will then absorb formatting cues in the
+front-ends.
+
+A note on naming.  I decided on libroff.h instead of tbl.h because this
+is purely within the roff layer.  Separate tbl implementations will
+need, then, to interface with libroff.  This is "how it should be"
+because tbl is tightly linked with roff in terms of `ds' and other
+formatting macros, as well as, of course, special characters and other
+roffisms.
+@
+text
+@d1 1
+a1 1
+/*	$Id: tbl.h,v 1.3 2009/09/11 15:01:24 kristaps Exp $ */
+d22 34
+a55 1
+struct tbl;
+d61 1
+@

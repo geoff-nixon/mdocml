@@ -1,0 +1,2009 @@
+head	1.33;
+access;
+symbols
+	VERSION_1_13_3:1.31
+	VERSION_1_13_2:1.29
+	VERSION_1_12_4:1.25
+	VERSION_1_13_1:1.25
+	VERSION_1_12_3:1.22
+	VERSION_1_12_2:1.20
+	VERSION_1_12:1.25.0.2
+	VERSION_1_12_1:1.17
+	VERSION_1_12_0:1.14
+	VERSION_1_11_7:1.13
+	VERSION_1_11_6:1.12
+	VERSION_1_11_5:1.12
+	VERSION_1_11_4:1.12
+	VERSION_1_11_3:1.10
+	VERSION_1_11_2:1.6
+	VERSION_1_11_1:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.33
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.07.19.06.05.16;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.01.15.04.26.40;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2015.01.15.02.29.26;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2014.11.26.23.42.14;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2014.11.26.21.40.17;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2014.09.03.23.21.47;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2014.08.05.05.48.56;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2014.01.05.20.26.36;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2013.10.06.17.01.52;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2013.10.05.20.30.05;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2013.09.16.22.54.38;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2013.06.02.03.48.26;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2012.01.13.15.27.14;	author joerg;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.11.08.00.15.23;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.10.18.13.25.38;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.10.06.22.29.12;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.08.18.08.58.44;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.07.11.08.43.27;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.06.22.22.10.02;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.05.24.21.41.11;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.05.24.21.31.23;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.05.17.12.22.15;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.05.17.11.50.20;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.05.01.10.40.52;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.04.30.10.18.24;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.04.19.16.30.00;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.04.09.15.53.48;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.03.28.21.49.42;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.03.22.10.02.50;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.33
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@.\"	$Id: mandoc.3,v 1.32 2015/07/19 06:05:16 schwarze Exp $
+.\"
+.\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2010, 2013, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: July 19 2015 $
+.Dt MANDOC 3
+.Os
+.Sh NAME
+.Nm mandoc ,
+.Nm man_deroff ,
+.Nm man_meta ,
+.Nm man_mparse ,
+.Nm man_node ,
+.Nm mdoc_deroff ,
+.Nm mdoc_meta ,
+.Nm mdoc_node ,
+.Nm mparse_alloc ,
+.Nm mparse_free ,
+.Nm mparse_getkeep ,
+.Nm mparse_keep ,
+.Nm mparse_open ,
+.Nm mparse_readfd ,
+.Nm mparse_reset ,
+.Nm mparse_result ,
+.Nm mparse_strerror ,
+.Nm mparse_strlevel
+.Nd mandoc macro compiler library
+.Sh SYNOPSIS
+.In sys/types.h
+.In mandoc.h
+.Pp
+.Fd "#define ASCII_NBRSP"
+.Fd "#define ASCII_HYPH"
+.Fd "#define ASCII_BREAK"
+.Ft struct mparse *
+.Fo mparse_alloc
+.Fa "int options"
+.Fa "enum mandoclevel wlevel"
+.Fa "mandocmsg mmsg"
+.Fa "char *defos"
+.Fc
+.Ft void
+.Fo (*mandocmsg)
+.Fa "enum mandocerr errtype"
+.Fa "enum mandoclevel level"
+.Fa "const char *file"
+.Fa "int line"
+.Fa "int col"
+.Fa "const char *msg"
+.Fc
+.Ft void
+.Fo mparse_free
+.Fa "struct mparse *parse"
+.Fc
+.Ft const char *
+.Fo mparse_getkeep
+.Fa "const struct mparse *parse"
+.Fc
+.Ft void
+.Fo mparse_keep
+.Fa "struct mparse *parse"
+.Fc
+.Ft "enum mandoclevel"
+.Fo mparse_open
+.Fa "struct mparse *parse"
+.Fa "int *fd"
+.Fa "const char *fname"
+.Fc
+.Ft "enum mandoclevel"
+.Fo mparse_readfd
+.Fa "struct mparse *parse"
+.Fa "int fd"
+.Fa "const char *fname"
+.Fc
+.Ft void
+.Fo mparse_reset
+.Fa "struct mparse *parse"
+.Fc
+.Ft void
+.Fo mparse_result
+.Fa "struct mparse *parse"
+.Fa "struct mdoc **mdoc"
+.Fa "struct man **man"
+.Fa "char **sodest"
+.Fc
+.Ft "const char *"
+.Fo mparse_strerror
+.Fa "enum mandocerr"
+.Fc
+.Ft "const char *"
+.Fo mparse_strlevel
+.Fa "enum mandoclevel"
+.Fc
+.In sys/types.h
+.In mandoc.h
+.In mdoc.h
+.Ft void
+.Fo mdoc_deroff
+.Fa "char **dest"
+.Fa "const struct mdoc_node *node"
+.Fc
+.Ft "const struct mdoc_meta *"
+.Fo mdoc_meta
+.Fa "const struct mdoc *mdoc"
+.Fc
+.Ft "const struct mdoc_node *"
+.Fo mdoc_node
+.Fa "const struct mdoc *mdoc"
+.Fc
+.Vt extern const char * const * mdoc_argnames;
+.Vt extern const char * const * mdoc_macronames;
+.In sys/types.h
+.In mandoc.h
+.In man.h
+.Ft void
+.Fo man_deroff
+.Fa "char **dest"
+.Fa "const struct man_node *node"
+.Fc
+.Ft "const struct man_meta *"
+.Fo man_meta
+.Fa "const struct man *man"
+.Fc
+.Ft "const struct mparse *"
+.Fo man_mparse
+.Fa "const struct man *man"
+.Fc
+.Ft "const struct man_node *"
+.Fo man_node
+.Fa "const struct man *man"
+.Fc
+.Vt extern const char * const * man_macronames;
+.Sh DESCRIPTION
+The
+.Nm mandoc
+library parses a
+.Ux
+manual into an abstract syntax tree (AST).
+.Ux
+manuals are composed of
+.Xr mdoc 7
+or
+.Xr man 7 ,
+and may be mixed with
+.Xr roff 7 ,
+.Xr tbl 7 ,
+and
+.Xr eqn 7
+invocations.
+.Pp
+The following describes a general parse sequence:
+.Bl -enum
+.It
+initiate a parsing sequence with
+.Xr mchars_alloc 3
+and
+.Fn mparse_alloc ;
+.It
+open a file with
+.Xr open 2
+or
+.Fn mparse_open ;
+.It
+parse it with
+.Fn mparse_readfd ;
+.It
+retrieve the syntax tree with
+.Fn mparse_result ;
+.It
+iterate over parse nodes with
+.Fn mdoc_node
+or
+.Fn man_node ;
+.It
+free all allocated memory with
+.Fn mparse_free
+and
+.Xr mchars_free 3 ,
+or invoke
+.Fn mparse_reset
+and parse new files.
+.El
+.Sh REFERENCE
+This section documents the functions, types, and variables available
+via
+.In mandoc.h ,
+with the exception of those documented in
+.Xr mandoc_escape 3
+and
+.Xr mchars_alloc 3 .
+.Ss Types
+.Bl -ohang
+.It Vt "enum mandocerr"
+An error or warning message during parsing.
+.It Vt "enum mandoclevel"
+A classification of an
+.Vt "enum mandocerr"
+as regards system operation.
+.It Vt "struct mparse"
+An opaque pointer to a running parse sequence.
+Created with
+.Fn mparse_alloc
+and freed with
+.Fn mparse_free .
+This may be used across parsed input if
+.Fn mparse_reset
+is called between parses.
+.It Vt "mandocmsg"
+A prototype for a function to handle error and warning
+messages emitted by the parser.
+.El
+.Ss Functions
+.Bl -ohang
+.It Fn man_deroff
+Obtain a text-only representation of a
+.Vt struct man_node ,
+including text contained in its child nodes.
+To be used on children of the pointer returned from
+.Fn man_node .
+When it is no longer needed, the pointer returned from
+.Fn man_deroff
+can be passed to
+.Xr free 3 .
+.It Fn man_meta
+Obtain the meta-data of a successful
+.Xr man 7
+parse.
+This may only be used on a pointer returned by
+.Fn mparse_result .
+Declared in
+.In man.h ,
+implemented in
+.Pa man.c .
+.It Fn man_mparse
+Get the parser used for the current output.
+Declared in
+.In man.h ,
+implemented in
+.Pa man.c .
+.It Fn man_node
+Obtain the root node of a successful
+.Xr man 7
+parse.
+This may only be used on a pointer returned by
+.Fn mparse_result .
+Declared in
+.In man.h ,
+implemented in
+.Pa man.c .
+.It Fn mdoc_deroff
+Obtain a text-only representation of a
+.Vt struct mdoc_node ,
+including text contained in its child nodes.
+To be used on children of the pointer returned from
+.Fn mdoc_node .
+When it is no longer needed, the pointer returned from
+.Fn mdoc_deroff
+can be passed to
+.Xr free 3 .
+.It Fn mdoc_meta
+Obtain the meta-data of a successful
+.Xr mdoc
+parse.
+This may only be used on a pointer returned by
+.Fn mparse_result .
+Declared in
+.In mdoc.h ,
+implemented in
+.Pa mdoc.c .
+.It Fn mdoc_node
+Obtain the root node of a successful
+.Xr mdoc
+parse.
+This may only be used on a pointer returned by
+.Fn mparse_result .
+Declared in
+.In mdoc.h ,
+implemented in
+.Pa mdoc.c .
+.It Fn mparse_alloc
+Allocate a parser.
+The arguments have the following effect:
+.Bl -tag -offset 5n -width inttype
+.It Ar options
+When the
+.Dv MPARSE_MDOC
+or
+.Dv MPARSE_MAN
+bit is set, only that parser is used.
+Otherwise, the document type is automatically detected.
+.Pp
+When the
+.Dv MPARSE_SO
+bit is set,
+.Xr roff 7
+.Ic \&so
+file inclusion requests are always honoured.
+Otherwise, if the request is the only content in an input file,
+only the file name is remembered, to be returned in the
+.Fa sodest
+argument of
+.Fn mparse_result .
+.Pp
+When the
+.Dv MPARSE_QUICK
+bit is set, parsing is aborted after the NAME section.
+This is for example useful in
+.Xr makewhatis 8
+.Fl Q
+to quickly build minimal databases.
+.It Ar wlevel
+Can be set to
+.Dv MANDOCLEVEL_BADARG ,
+.Dv MANDOCLEVEL_ERROR ,
+or
+.Dv MANDOCLEVEL_WARNING .
+Messages below the selected level will be suppressed.
+.It Ar mmsg
+A callback function to handle errors and warnings.
+See
+.Pa main.c
+for an example.
+.It Ar defos
+A default string for the
+.Xr mdoc 7
+.Sq \&Os
+macro, overriding the
+.Dv OSNAME
+preprocessor definition and the results of
+.Xr uname 3 .
+.El
+.Pp
+The same parser may be used for multiple files so long as
+.Fn mparse_reset
+is called between parses.
+.Fn mparse_free
+must be called to free the memory allocated by this function.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_free
+Free all memory allocated by
+.Fn mparse_alloc .
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_getkeep
+Acquire the keep buffer.
+Must follow a call of
+.Fn mparse_keep .
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_keep
+Instruct the parser to retain a copy of its parsed input.
+This can be acquired with subsequent
+.Fn mparse_getkeep
+calls.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_open
+Open the file for reading.
+If that fails and
+.Fa fname
+does not already end in
+.Ql .gz ,
+try again after appending
+.Ql .gz .
+Save the information whether the file is zipped or not.
+Return a file descriptor open for reading in
+.Fa fd ,
+or -1 on failure.
+It can be passed to
+.Fn mparse_readfd
+or used directly.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_readfd
+Parse a file descriptor opened with
+.Xr open 2
+or
+.Fn mparse_open .
+Pass the associated filename in
+.Va fname .
+This function may be called multiple times with different parameters; however,
+.Fn mparse_reset
+should be invoked between parses.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_reset
+Reset a parser so that
+.Fn mparse_readfd
+may be used again.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_result
+Obtain the result of a parse.
+One of the three pointers will be filled in.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_strerror
+Return a statically-allocated string representation of an error code.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.It Fn mparse_strlevel
+Return a statically-allocated string representation of a level code.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+.El
+.Ss Variables
+.Bl -ohang
+.It Va man_macronames
+The string representation of a man macro as indexed by
+.Vt "enum mant" .
+.It Va mdoc_argnames
+The string representation of a mdoc macro argument as indexed by
+.Vt "enum mdocargt" .
+.It Va mdoc_macronames
+The string representation of a mdoc macro as indexed by
+.Vt "enum mdoct" .
+.El
+.Sh IMPLEMENTATION NOTES
+This section consists of structural documentation for
+.Xr mdoc 7
+and
+.Xr man 7
+syntax trees and strings.
+.Ss Man and Mdoc Strings
+Strings may be extracted from mdoc and man meta-data, or from text
+nodes (MDOC_TEXT and MAN_TEXT, respectively).
+These strings have special non-printing formatting cues embedded in the
+text itself, as well as
+.Xr roff 7
+escapes preserved from input.
+Implementing systems will need to handle both situations to produce
+human-readable text.
+In general, strings may be assumed to consist of 7-bit ASCII characters.
+.Pp
+The following non-printing characters may be embedded in text strings:
+.Bl -tag -width Ds
+.It Dv ASCII_NBRSP
+A non-breaking space character.
+.It Dv ASCII_HYPH
+A soft hyphen.
+.It Dv ASCII_BREAK
+A breakable zero-width space.
+.El
+.Pp
+Escape characters are also passed verbatim into text strings.
+An escape character is a sequence of characters beginning with the
+backslash
+.Pq Sq \e .
+To construct human-readable text, these should be intercepted with
+.Xr mandoc_escape 3
+and converted with one the functions described in
+.Xr mchars_alloc 3 .
+.Ss Man Abstract Syntax Tree
+This AST is governed by the ontological rules dictated in
+.Xr man 7
+and derives its terminology accordingly.
+.Pp
+The AST is composed of
+.Vt struct man_node
+nodes with element, root and text types as declared by the
+.Va type
+field.
+Each node also provides its parse point (the
+.Va line ,
+.Va sec ,
+and
+.Va pos
+fields), its position in the tree (the
+.Va parent ,
+.Va child ,
+.Va next
+and
+.Va prev
+fields) and some type-specific data.
+.Pp
+The tree itself is arranged according to the following normal form,
+where capitalised non-terminals represent nodes.
+.Pp
+.Bl -tag -width "ELEMENTXX" -compact
+.It ROOT
+\(<- mnode+
+.It mnode
+\(<- ELEMENT | TEXT | BLOCK
+.It BLOCK
+\(<- HEAD BODY
+.It HEAD
+\(<- mnode*
+.It BODY
+\(<- mnode*
+.It ELEMENT
+\(<- ELEMENT | TEXT*
+.It TEXT
+\(<- [[:ascii:]]*
+.El
+.Pp
+The only elements capable of nesting other elements are those with
+next-line scope as documented in
+.Xr man 7 .
+.Ss Mdoc Abstract Syntax Tree
+This AST is governed by the ontological
+rules dictated in
+.Xr mdoc 7
+and derives its terminology accordingly.
+.Qq In-line
+elements described in
+.Xr mdoc 7
+are described simply as
+.Qq elements .
+.Pp
+The AST is composed of
+.Vt struct mdoc_node
+nodes with block, head, body, element, root and text types as declared
+by the
+.Va type
+field.
+Each node also provides its parse point (the
+.Va line ,
+.Va sec ,
+and
+.Va pos
+fields), its position in the tree (the
+.Va parent ,
+.Va child ,
+.Va nchild ,
+.Va next
+and
+.Va prev
+fields) and some type-specific data, in particular, for nodes generated
+from macros, the generating macro in the
+.Va tok
+field.
+.Pp
+The tree itself is arranged according to the following normal form,
+where capitalised non-terminals represent nodes.
+.Pp
+.Bl -tag -width "ELEMENTXX" -compact
+.It ROOT
+\(<- mnode+
+.It mnode
+\(<- BLOCK | ELEMENT | TEXT
+.It BLOCK
+\(<- HEAD [TEXT] (BODY [TEXT])+ [TAIL [TEXT]]
+.It ELEMENT
+\(<- TEXT*
+.It HEAD
+\(<- mnode*
+.It BODY
+\(<- mnode* [ENDBODY mnode*]
+.It TAIL
+\(<- mnode*
+.It TEXT
+\(<- [[:ascii:]]*
+.El
+.Pp
+Of note are the TEXT nodes following the HEAD, BODY and TAIL nodes of
+the BLOCK production: these refer to punctuation marks.
+Furthermore, although a TEXT node will generally have a non-zero-length
+string, in the specific case of
+.Sq \&.Bd \-literal ,
+an empty line will produce a zero-length string.
+Multiple body parts are only found in invocations of
+.Sq \&Bl \-column ,
+where a new body introduces a new phrase.
+.Pp
+The
+.Xr mdoc 7
+syntax tree accommodates for broken block structures as well.
+The ENDBODY node is available to end the formatting associated
+with a given block before the physical end of that block.
+It has a non-null
+.Va end
+field, is of the BODY
+.Va type ,
+has the same
+.Va tok
+as the BLOCK it is ending, and has a
+.Va pending
+field pointing to that BLOCK's BODY node.
+It is an indirect child of that BODY node
+and has no children of its own.
+.Pp
+An ENDBODY node is generated when a block ends while one of its child
+blocks is still open, like in the following example:
+.Bd -literal -offset indent
+\&.Ao ao
+\&.Bo bo ac
+\&.Ac bc
+\&.Bc end
+.Ed
+.Pp
+This example results in the following block structure:
+.Bd -literal -offset indent
+BLOCK Ao
+    HEAD Ao
+    BODY Ao
+        TEXT ao
+        BLOCK Bo, pending -> Ao
+            HEAD Bo
+            BODY Bo
+                TEXT bo
+                TEXT ac
+                ENDBODY Ao, pending -> Ao
+                TEXT bc
+TEXT end
+.Ed
+.Pp
+Here, the formatting of the
+.Sq \&Ao
+block extends from TEXT ao to TEXT ac,
+while the formatting of the
+.Sq \&Bo
+block extends from TEXT bo to TEXT bc.
+It renders as follows in
+.Fl T Ns Cm ascii
+mode:
+.Pp
+.Dl <ao [bo ac> bc] end
+.Pp
+Support for badly-nested blocks is only provided for backward
+compatibility with some older
+.Xr mdoc 7
+implementations.
+Using badly-nested blocks is
+.Em strongly discouraged ;
+for example, the
+.Fl T Ns Cm html
+and
+.Fl T Ns Cm xhtml
+front-ends to
+.Xr mandoc 1
+are unable to render them in any meaningful way.
+Furthermore, behaviour when encountering badly-nested blocks is not
+consistent across troff implementations, especially when using multiple
+levels of badly-nested blocks.
+.Sh SEE ALSO
+.Xr mandoc 1 ,
+.Xr mandoc_escape 3 ,
+.Xr mandoc_malloc 3 ,
+.Xr mchars_alloc 3 ,
+.Xr eqn 7 ,
+.Xr man 7 ,
+.Xr mandoc_char 7 ,
+.Xr mdoc 7 ,
+.Xr roff 7 ,
+.Xr tbl 7
+.Sh AUTHORS
+The
+.Nm
+library was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+@
+
+
+1.32
+log
+@Do not fork and exec gunzip(1), just link with libz instead.
+As discussed with deraadt@@, that's cleaner and will help tame(2).
+Something like this was also suggested earlier by bapt at FreeBSD.
+Minus 50 lines of code, deleting one interface function (mparse_wait),
+no functional change intended.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.31 2015/01/15 04:26:40 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 15 2015 $
+a52 1
+.Fa "const struct mchars *mchars"
+a211 6
+.It Vt "struct mchars"
+An opaque pointer to a a character table.
+Created with
+.Xr mchars_alloc 3
+and freed with
+.Xr mchars_free 3 .
+a335 3
+.It Ar mchars
+An opaque pointer to a a character table obtained from
+.Xr mchars_alloc 3 .
+@
+
+
+1.31
+log
+@Fatal errors no longer exist.
+If a file can be opened, mandoc will produce some output;
+at worst, the output may be almost empty.
+Simplifies error handling and frees a message type for future use.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.30 2015/01/15 02:29:26 schwarze Exp $
+a39 1
+.Nm mparse_wait ,
+a107 4
+.Ft "enum mandoclevel"
+.Fo mparse_wait
+.Fa "struct mparse *parse"
+.Fc
+d390 2
+a391 1
+If the
+d393 5
+a397 12
+ends in
+.Pa .gz ,
+open with
+.Xr gunzip 1 ;
+otherwise, with
+.Xr open 2 .
+If
+.Xr open 2
+fails, append
+.Pa .gz
+and try with
+.Xr gunzip 1 .
+a414 3
+Calls
+.Fn mparse_wait
+before returning.
+a448 22
+.It Fn mparse_wait
+Bury a
+.Xr gunzip 1
+child process that was spawned with
+.Fn mparse_open .
+To be called after the parse sequence is complete.
+Not needed after
+.Fn mparse_readfd ,
+but does no harm in that case, either.
+Returns
+.Dv MANDOCLEVEL_OK
+on success and
+.Dv MANDOCLEVEL_SYSERR
+on failure, that is, when
+.Xr wait 2
+fails, or when
+.Xr gunzip 1
+died from a signal or exited with non-zero status.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa read.c .
+@
+
+
+1.30
+log
+@downgrade .so failure from FATAL to ERROR
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.29 2014/11/26 23:42:14 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2010 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: November 26 2014 $
+a41 2
+.Sh LIBRARY
+.Lb libmandoc
+d45 1
+d178 6
+a183 3
+parse files with
+.Fn mparse_open
+and
+d186 1
+a186 1
+retrieve a parsed syntax tree, if the parse was successful, with
+d213 1
+a213 1
+A fatal error, error, or warning message during parsing.
+d234 1
+a234 1
+A prototype for a function to handle fatal error, error, and warning
+d338 1
+a338 1
+.Dv MANDOCLEVEL_FATAL ,
+d446 1
+a446 8
+Only successful parses
+.Po
+i.e., those where
+.Fn mparse_readfd
+returned less than MANDOCLEVEL_FATAL
+.Pc
+should invoke this function, in which case one of the three pointers will
+be filled in.
+@
+
+
+1.29
+log
+@Let mparse_readfd() use mparse_open() and mparse_wait()
+and let mparse_open() fall back to .gz files
+such that .so works even when the target is zipped,
+requested by and in part using ideas from <bapt at FreeBSD>.
+While here, make sure files are readable before forking,
+both for efficiency and for better error reporting.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.28 2014/11/26 21:40:17 schwarze Exp $
+d179 3
+a181 1
+parse files or file descriptors with
+d418 3
+a420 6
+Parse a file or file descriptor.
+If
+.Va fd
+is -1, open
+.Va fname
+with
+d422 2
+a423 4
+Otherwise,
+.Va fname
+is assumed to be the name associated with
+.Va fd .
+@
+
+
+1.28
+log
+@Simplify the mparse_open()/mparse_wait() interface.
+Don't bother the user with the PID of the child process,
+store it inside the opaque mparse handle.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.27 2014/10/28 17:36:19 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 28 2014 $
+d399 6
+d419 1
+a419 1
+is -1,
+d421 2
+a422 1
+is opened for reading.
+d427 4
+a430 1
+This may be called multiple times with different parameters; however,
+d474 1
+a474 3
+child process
+.Fa child_pid
+that was spawned with
+d477 3
+@
+
+
+1.27
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.26 2014/09/03 23:21:47 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 3 2014 $
+a83 1
+.Fa "pid_t *child_pid"
+a112 1
+.Fa "pid_t child_pid"
+a404 8
+If applicable, return the
+.Xr gunzip 1
+child process ID in
+.Fa child_pid ,
+or otherwise 0.
+If non-zero, it should be passed to
+.Fn mparse_wait
+after completing the parse sequence.
+@
+
+
+1.26
+log
+@Add *.gz support to apropos(1) -a, man(1), and even mandoc(1).
+Implemented by moving the zip code from makewhatis(8) to the parser lib.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.25 2014/08/05 05:48:56 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 5 2014 $
+d55 1
+d177 2
+d193 3
+a195 1
+.Fn mparse_free ,
+d216 6
+d346 3
+@
+
+
+1.25
+log
+@Sync library documentation with reality.
+Split mandoc_escape(3), mandoc_malloc(3), and mchars_alloc(3)
+out of mandoc(3), adding lots of new information.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.24 2014/03/23 11:25:26 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 23 2014 $
+d34 1
+d40 1
+d79 7
+d110 5
+d378 27
+d457 21
+@
+
+
+1.24
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.23 2014/01/05 20:26:36 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 5 2014 $
+d23 1
+a23 6
+.Nm mandoc_calloc ,
+.Nm mandoc_escape ,
+.Nm mandoc_malloc ,
+.Nm mandoc_realloc ,
+.Nm mandoc_strdup ,
+.Nm mandoc_strndup ,
+d27 1
+a27 6
+.Nm mchars_alloc ,
+.Nm mchars_free ,
+.Nm mchars_num2char ,
+.Nm mchars_num2uc ,
+.Nm mchars_spec2cp ,
+.Nm mchars_spec2str ,
+d43 1
+d48 1
+a48 41
+.Ft "void *"
+.Fo mandoc_calloc
+.Fa "size_t nmemb"
+.Fa "size_t size"
+.Fc
+.Ft "enum mandoc_esc"
+.Fo mandoc_escape
+.Fa "const char **end"
+.Fa "const char **start"
+.Fa "int *sz"
+.Fc
+.Ft "void *"
+.Fn mandoc_malloc "size_t size"
+.Ft "struct mchars *"
+.Fo mandoc_realloc
+.Fa "void *ptr"
+.Fa "size_t size"
+.Fc
+.Ft "char *"
+.Fn mandoc_strdup
+.Fn mchars_alloc "void"
+.Ft void
+.Fn mchars_free "struct mchars *p"
+.Ft char
+.Fn mchars_num2char "const char *cp" "size_t sz"
+.Ft int
+.Fn mchars_num2uc "const char *cp" "size_t sz"
+.Ft "const char *"
+.Fo mchars_spec2str
+.Fa "const struct mchars *p"
+.Fa "const char *cp"
+.Fa "size_t sz"
+.Fa "size_t *rsz"
+.Fc
+.Ft int
+.Fo mchars_spec2cp
+.Fa "const struct mchars *p"
+.Fa "const char *cp"
+.Fa "size_t sz"
+.Fc
+.Ft void
+d50 1
+a50 1
+.Fa "enum mparset inttype"
+a53 1
+.Fa "int quick"
+d91 1
+d101 1
+d104 5
+d119 1
+d122 5
+a180 7
+.Pp
+The
+.Nm
+library also contains routines for translating character strings into glyphs
+.Pq see Fn mchars_alloc
+and parsing escape sequences from strings
+.Pq see Fn mandoc_escape .
+d184 5
+a188 1
+.In mandoc.h .
+a190 2
+.It Vt "enum mandoc_esc"
+An escape sequence classification.
+a196 10
+.It Vt "struct mchars"
+An opaque pointer to an object allowing for translation between
+character strings and glyphs.
+See
+.Fn mchars_alloc .
+.It Vt "enum mparset"
+The type of parser when reading input.
+This should usually be
+.Dv MPARSE_AUTO
+for auto-detection.
+d212 10
+a221 30
+.It Fn mandoc_escape
+Scan an escape sequence, i.e., a character string beginning with
+.Sq \e .
+Pass a pointer to the character after the
+.Sq \e
+as
+.Va end ;
+it will be set to the supremum of the parsed escape sequence unless
+returning
+.Dv ESCAPE_ERROR ,
+in which case the string is bogus and should be
+thrown away.
+If not
+.Dv ESCAPE_ERROR
+or
+.Dv ESCAPE_IGNORE ,
+.Va start
+is set to the first relevant character of the substring (font, glyph,
+whatever) of length
+.Va sz .
+Both
+.Va start
+and
+.Va sz
+may be
+.Dv NULL .
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa mandoc.c .
+d223 3
+a225 1
+Obtain the meta-data of a successful parse.
+d239 3
+a241 1
+Obtain the root node of a successful parse.
+d248 10
+a257 52
+.It Fn mchars_alloc
+Allocate an
+.Vt "struct mchars *"
+object for translating special characters into glyphs.
+See
+.Xr mandoc_char 7
+for an overview of special characters.
+The object must be freed with
+.Fn mchars_free .
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa chars.c .
+.It Fn mchars_free
+Free an object created with
+.Fn mchars_alloc .
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa chars.c .
+.It Fn mchars_num2char
+Convert a character index (e.g., the \eN\(aq\(aq escape) into a
+printable ASCII character.
+Returns \e0 (the nil character) if the input sequence is malformed.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa chars.c .
+.It Fn mchars_num2uc
+Convert a hexadecimal character index (e.g., the \e[uNNNN] escape) into
+a Unicode codepoint.
+Returns \e0 (the nil character) if the input sequence is malformed.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa chars.c .
+.It Fn mchars_spec2cp
+Convert a special character into a valid Unicode codepoint.
+Returns \-1 on failure or a non-zero Unicode codepoint on success.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa chars.c .
+.It Fn mchars_spec2str
+Convert a special character into an ASCII string.
+Returns
+.Dv NULL
+on failure.
+Declared in
+.In mandoc.h ,
+implemented in
+.Pa chars.c .
+d259 3
+a261 1
+Obtain the meta-data of a successful parse.
+d269 3
+a271 1
+Obtain the root node of a successful parse.
+d282 2
+a283 2
+.It Ar inttype
+When set to
+d286 23
+a308 5
+.Dv MPARSE_MAN ,
+only that parser will be used.
+With
+.Dv MPARSE_AUTO ,
+the document type will be automatically detected.
+a328 3
+.It Ar quick
+When set, parsing is aborted after the NAME section.
+This is for example useful to quickly build minimal databases.
+d398 1
+a398 1
+should invoke this function, in which case one of the two pointers will
+d452 2
+d461 3
+a463 5
+.Fn mandoc_escape
+and converted with one of
+.Fn mchars_num2char ,
+.Fn mchars_spec2str ,
+and so on.
+d508 1
+a508 1
+next-lint scope as documented in
+d644 1
+a644 1
+consistent across troff implementations, especially when using  multiple
+d648 3
+@
+
+
+1.23
+log
+@Add an option -Q (quick) to mandocdb(8)
+for accelerated generation of reduced-size databases.
+
+Implement this by allowing the parsers to optionally
+abort the parse sequence after the NAME section.
+
+While here, garbage collect the unused void *arg attribute of
+struct mparse and mparse_alloc() and fix some errors in mandoc(3).
+
+This reduces the processing time of mandocdb(8) on /usr/share/man
+by a factor of 2 and the database size by a factor of 4.
+However, it still takes 5 times the time and 6 times the space
+of makewhatis(8), so more work is clearly needed.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.22 2013/10/06 17:01:52 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 6 2013 $
+d23 1
+d25 4
+a52 2
+.In man.h
+.In mdoc.h
+d54 8
+d68 6
+a73 11
+.Ft "const struct man_meta *"
+.Fo man_meta
+.Fa "const struct man *man"
+.Fc
+.Ft "const struct mparse *"
+.Fo man_mparse
+.Fa "const struct man *man"
+.Fc
+.Ft "const struct man_node *"
+.Fo man_node
+.Fa "const struct man *man"
+d75 2
+a76 1
+.Ft "struct mchars *"
+a96 8
+.Ft "const struct mdoc_meta *"
+.Fo mdoc_meta
+.Fa "const struct mdoc *mdoc"
+.Fc
+.Ft "const struct mdoc_node *"
+.Fo mdoc_node
+.Fa "const struct mdoc *mdoc"
+.Fc
+d106 9
+d150 10
+a159 1
+.Vt extern const char * const * man_macronames;
+d162 15
+a176 2
+.Fd "#define ASCII_NBRSP"
+.Fd "#define ASCII_HYPH"
+@
+
+
+1.22
+log
+@The .Lb arguments wants a "lib" prefix;
+from Sascha Wildner via Franco Fichtner (DragonFly);
+also fixing the same in the mdoc(7) example while i'm about it.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.21 2013/10/05 20:30:05 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 5 2013 $
+d53 2
+a54 2
+.Fa "const char const **end"
+.Fa "const char const **start"
+d100 1
+a100 1
+.Fa "enum mparset type"
+d102 3
+a104 2
+.Fa "mandocmsg msg"
+.Fa "void *msgarg"
+d110 1
+a110 1
+.Ft void
+d207 1
+a207 1
+.Vt "enum mandoclevel"
+d356 36
+@
+
+
+1.21
+log
+@Cleanup suggested by gcc-4.8.1, following hints by Christos Zoulas:
+- avoid bad qualifier casting in roff.c, roff_parsetext()
+  by changing the mandoc_escape arguments to "const char const **"
+- avoid bad qualifier casting in mandocdb.c, index_merge()
+- do not complain about unused variables in test-*.c
+- garbage collect a few unused variables elsewhere
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.20 2013/09/16 22:54:38 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 16 2013 $
+d46 1
+a46 1
+.Lb mandoc
+@
+
+
+1.20
+log
+@two improvements in the SYNOPSIS;
+from Sascha Wildner <swildner at gmail dot com> (DragonFly)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.19 2013/07/13 19:41:16 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 13 2013 $
+d53 2
+a54 2
+.Fa "const char **end"
+.Fa "const char **start"
+@
+
+
+1.19
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.18 2013/06/02 03:48:26 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: June 2 2013 $
+d70 1
+a70 1
+.Fn mchars_alloc
+a88 1
+.Ft "const char *"
+@
+
+
+1.18
+log
+@Note where these functions are declared and implemented.
+That helps to find one's way when hacking on the code.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.17 2012/01/13 15:27:14 joerg Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 13 2012 $
+d683 1
+a683 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.17
+log
+@Reflect reality, mandoc_escape does not skip the "\" itself, but expects
+the caller to have done that.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.16 2011/11/08 00:15:23 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 8 2011 $
+d260 4
+d268 4
+d274 4
+d282 4
+d295 4
+d302 4
+d310 4
+d318 4
+d325 4
+d334 4
+d342 4
+d350 4
+d361 4
+d368 4
+d376 4
+d385 4
+d403 4
+d411 4
+d425 4
+d431 4
+d437 4
+@
+
+
+1.16
+log
+@Const-ify some mchars arguments.  I think these are non-const for historical
+dumbness on my part.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.15 2011/10/18 13:25:38 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 18 2011 $
+d237 3
+a239 1
+Pass a pointer to this string as
+@
+
+
+1.15
+log
+@Fix mandoc_escape() function argument names.  From a fix by Abhinav
+Upadhyay, thanks!
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.14 2011/10/06 22:29:12 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 6 2011 $
+d79 1
+a79 1
+.Fa "struct mchars *p"
+d86 1
+a86 1
+.Fa "struct mchars *p"
+@
+
+
+1.14
+log
+@If -Tman is specified and input is -man, echo the preprocessed (`so'
+replaced by file) input.  This replaces earlier behaviour of doing
+nothing, which I found unexpected (mandoc should always output).
+
+This requires a buffer in read.c that saves the input lines before being
+parsed, with a special hook if `so' is invoked.  This buffer is just
+flushed to output if -mman is the input.
+
+While mucking around doing this, I also alpha-ordered the mandoc.h
+functions.
+
+Ok schwarze@@, with no screaming when the polished patch was published.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.13 2011/08/18 08:58:44 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 18 2011 $
+d53 3
+a55 3
+.Fa "const char **in"
+.Fa "const char **seq"
+.Fa "int *len"
+@
+
+
+1.13
+log
+@Replace the old `An'/`Aq' AUTHORS note with `An'/`Mt'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.12 2011/07/11 08:43:27 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: July 11 2011 $
+d25 1
+d37 2
+d61 4
+d110 8
+d262 2
+d314 9
+@
+
+
+1.12
+log
+@Make sure constants in mandoc.3 use the `Dv' macro.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.11 2011/06/22 22:10:02 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: June 22 2011 $
+d571 2
+a572 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.11
+log
+@Add more documentation for libmandoc.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.10 2011/05/24 21:41:11 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: May 24 2011 $
+d202 1
+a202 1
+.Va MPARSE_AUTO
+d225 3
+a227 1
+returning ESCAPE_ERROR, in which case the string is bogus and should be
+d229 4
+a232 1
+If not ESCAPE_ERROR or ESCAPE_IGNORE,
+d241 2
+a242 1
+may be NULL.
+d276 3
+a278 1
+Returns NULL on failure.
+@
+
+
+1.10
+log
+@Document that spec2cp never returns 0.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.9 2011/05/24 21:31:23 kristaps Exp $
+a179 3
+.Pp
+This library is
+.Ud
+d187 1
+d189 1
+d191 3
+d200 4
+d205 8
+d214 2
+d339 30
+a368 1
+syntax trees.
+d409 1
+a409 1
+\(<- [[:alpha:]]*
+d468 1
+a468 1
+\(<- [[:printable:],0x1e]*
+@
+
+
+1.9
+log
+@Remove all references to ESCAPE_PREDEF, which is now not exposed passed
+the libroff point.  This clears up a nice chunk of code.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.8 2011/05/17 12:22:15 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: May 17 2011 $
+d251 1
+a251 3
+Returns \-1 on failure and 0 if no code-point exists (if this occurs,
+the caller should fall back to
+.Fn mchars_spec2str ) .
+@
+
+
+1.8
+log
+@Documentation: note COMPATIBILITY of -Tascii `?' printing in mandoc.1
+and remove some long-fixed notes in sthe same section.  Also, add an
+`Lb' for the mandoc library to mandoc.3 (noted by Sascha Wildner).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.7 2011/05/17 11:50:20 kristaps Exp $
+a29 2
+.Nm mchars_res2cp ,
+.Nm mchars_res2str ,
+a70 14
+.Fo mchars_res2str
+.Fa "struct mchars *p"
+.Fa "const char *cp"
+.Fa "size_t sz"
+.Fa "size_t *rsz"
+.Fc
+.Ft int
+.Fo mchars_res2cp
+.Fa "struct mchars *p"
+.Fa "const char *cp"
+.Fa "size_t sz"
+.Ft "const char *"
+.Fc
+.Ft "const char *"
+a248 8
+.It Fn mchars_res2cp
+Convert a predefined character into a valid Unicode codepoint.
+Returns \-1 on failure and 0 if no code-point exists (if this occurs,
+the caller should fall back to
+.Fn mchars_res2str ) .
+.It Fn mchars_res2str
+Convert a predefined character into an ASCII string.
+Returns NULL on failure.
+@
+
+
+1.7
+log
+@Flip on unicode output (via \[uNNNN]) in -T[x]html.  Here we go!
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.6 2011/05/01 10:40:52 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: May 1 2011 $
+d44 2
+@
+
+
+1.6
+log
+@Documenting the mchars_XXXX part of mandoc.h.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.5 2011/04/30 10:18:24 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 30 2011 $
+d29 1
+d68 2
+d194 3
+d256 6
+a261 2
+Convert a character index as found in \eN\(aq\(aq into a printable
+character.
+@
+
+
+1.5
+log
+@No code change: fixing spelling errors.  From a patch by uqs@@.  Thanks!
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.4 2011/04/19 16:30:00 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 19 2011 $
+d26 7
+d61 34
+d184 7
+d200 5
+d237 32
+d524 1
+@
+
+
+1.4
+log
+@Add more documentation bits to mandoc.3.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.3 2011/04/09 15:53:48 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 9 2011 $
+d367 1
+a367 1
+syntax tree accomodates for broken block structures as well.
+@
+
+
+1.3
+log
+@Skeleton of documentation functions, types, and variables in mandoc.h.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.2 2011/03/28 21:49:42 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 28 2011 $
+d100 2
+d159 17
+d177 3
+d181 3
+d185 3
+d189 3
+d193 6
+d200 2
+d203 13
+d217 3
+d221 9
+d231 1
+d233 1
+d238 2
+d241 2
+d244 2
+@
+
+
+1.2
+log
+@Put mandocerrs and mandoclevels arrays into libmandoc with accessors
+mparse_strerror() and mparse_strlevel().
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.3,v 1.1 2011/03/22 10:02:50 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 22 2011 $
+d23 1
+d40 6
+d141 34
+@
+
+
+1.1
+log
+@Step 3: consolidate manuals.  The parse functions in mdoc.h, roff.h, and
+man.h are now part of libmandoc.h, so remove these from their respective
+manuals (they're no longer public-facing and we don't need a libmandoc.3
+(yet?)).  Before that, move the juicy data (parse tree syntax) into
+new-born mandoc.3.  Peck around in Makefile and index.sgml to reflect
+reality.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mdoc.3,v 1.57 2011/02/09 09:18:15 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 9 2011 $
+d31 3
+a33 1
+.Nm mparse_result
+d82 8
+@

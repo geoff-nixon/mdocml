@@ -1,0 +1,595 @@
+head	1.6;
+access;
+symbols
+	VERSION_1_13_3:1.6
+	VERSION_1_13_2:1.6
+	VERSION_1_13_1:1.4;
+locks; strict;
+comment	@ * @;
+
+
+1.6
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2014.06.20.02.24.40;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.06.20.02.10.05;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.01.04.14.09.28;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2012.06.09.11.00.13;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@#include "config.h"
+
+#if HAVE_OHASH
+
+int dummy;
+
+#else
+
+/* $OpenBSD: ohash.c,v 1.1 2014/06/02 18:52:03 deraadt Exp $ */
+
+/* Copyright (c) 1999, 2004 Marc Espie <espie@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+#include <sys/types.h>
+
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
+#include "compat_ohash.h"
+
+struct _ohash_record {
+	uint32_t	hv;
+	const char	*p;
+};
+
+#define DELETED		((const char *)h)
+#define NONE		(h->size)
+
+/* Don't bother changing the hash table if the change is small enough.  */
+#define MINSIZE		(1UL << 4)
+#define MINDELETED	4
+
+static void ohash_resize(struct ohash *);
+
+
+/* This handles the common case of variable length keys, where the
+ * key is stored at the end of the record.
+ */
+void *
+ohash_create_entry(struct ohash_info *i, const char *start, const char **end)
+{
+	char *p;
+
+	if (!*end)
+		*end = start + strlen(start);
+	p = (i->alloc)(i->key_offset + (*end - start) + 1, i->data);
+	if (p) {
+		memcpy(p+i->key_offset, start, *end-start);
+		p[i->key_offset + (*end - start)] = '\0';
+	}
+	return (void *)p;
+}
+
+/* hash_delete only frees the hash structure. Use hash_first/hash_next
+ * to free entries as well.  */
+void
+ohash_delete(struct ohash *h)
+{
+	(h->info.free)(h->t, h->info.data);
+#ifndef NDEBUG
+	h->t = NULL;
+#endif
+}
+
+static void
+ohash_resize(struct ohash *h)
+{
+	struct _ohash_record *n;
+	size_t ns;
+	unsigned int	j;
+	unsigned int	i, incr;
+
+	if (4 * h->deleted < h->total) {
+		if (h->size >= (UINT_MAX >> 1U))
+			ns = UINT_MAX;
+		else
+			ns = h->size << 1U;
+	} else if (3 * h->deleted > 2 * h->total)
+		ns = h->size >> 1U;
+	else
+		ns = h->size;
+	if (ns < MINSIZE)
+		ns = MINSIZE;
+#ifdef STATS_HASH
+	STAT_HASH_EXPAND++;
+	STAT_HASH_SIZE += ns - h->size;
+#endif
+
+	n = (h->info.calloc)(ns, sizeof(struct _ohash_record), h->info.data);
+	if (!n)
+		return;
+
+	for (j = 0; j < h->size; j++) {
+		if (h->t[j].p != NULL && h->t[j].p != DELETED) {
+			i = h->t[j].hv % ns;
+			incr = ((h->t[j].hv % (ns - 2)) & ~1) + 1;
+			while (n[i].p != NULL) {
+				i += incr;
+				if (i >= ns)
+					i -= ns;
+			}
+			n[i].hv = h->t[j].hv;
+			n[i].p = h->t[j].p;
+		}
+	}
+	(h->info.free)(h->t, h->info.data);
+	h->t = n;
+	h->size = ns;
+	h->total -= h->deleted;
+	h->deleted = 0;
+}
+
+void *
+ohash_remove(struct ohash *h, unsigned int i)
+{
+	void		*result = (void *)h->t[i].p;
+
+	if (result == NULL || result == DELETED)
+		return NULL;
+
+#ifdef STATS_HASH
+	STAT_HASH_ENTRIES--;
+#endif
+	h->t[i].p = DELETED;
+	h->deleted++;
+	if (h->deleted >= MINDELETED && 4 * h->deleted > h->total)
+		ohash_resize(h);
+	return result;
+}
+
+void *
+ohash_find(struct ohash *h, unsigned int i)
+{
+	if (h->t[i].p == DELETED)
+		return NULL;
+	else
+		return (void *)h->t[i].p;
+}
+
+void *
+ohash_insert(struct ohash *h, unsigned int i, void *p)
+{
+#ifdef STATS_HASH
+	STAT_HASH_ENTRIES++;
+#endif
+	if (h->t[i].p == DELETED) {
+		h->deleted--;
+		h->t[i].p = p;
+	} else {
+		h->t[i].p = p;
+		/* Arbitrary resize boundary.  Tweak if not efficient enough.  */
+		if (++h->total * 4 > h->size * 3)
+			ohash_resize(h);
+	}
+	return p;
+}
+
+unsigned int
+ohash_entries(struct ohash *h)
+{
+	return h->total - h->deleted;
+}
+
+void *
+ohash_first(struct ohash *h, unsigned int *pos)
+{
+	*pos = 0;
+	return ohash_next(h, pos);
+}
+
+void *
+ohash_next(struct ohash *h, unsigned int *pos)
+{
+	for (; *pos < h->size; (*pos)++)
+		if (h->t[*pos].p != DELETED && h->t[*pos].p != NULL)
+			return (void *)h->t[(*pos)++].p;
+	return NULL;
+}
+
+void
+ohash_init(struct ohash *h, unsigned int size, struct ohash_info *info)
+{
+	h->size = 1UL << size;
+	if (h->size < MINSIZE)
+		h->size = MINSIZE;
+#ifdef STATS_HASH
+	STAT_HASH_CREATION++;
+	STAT_HASH_SIZE += h->size;
+#endif
+	/* Copy info so that caller may free it.  */
+	h->info.key_offset = info->key_offset;
+	h->info.calloc = info->calloc;
+	h->info.free = info->free;
+	h->info.alloc = info->alloc;
+	h->info.data = info->data;
+	h->t = (h->info.calloc)(h->size, sizeof(struct _ohash_record),
+		    h->info.data);
+	h->total = h->deleted = 0;
+}
+
+uint32_t
+ohash_interval(const char *s, const char **e)
+{
+	uint32_t k;
+
+	if (!*e)
+		*e = s + strlen(s);
+	if (s == *e)
+		k = 0;
+	else
+		k = *s++;
+	while (s != *e)
+		k =  ((k << 2) | (k >> 30)) ^ *s++;
+	return k;
+}
+
+unsigned int
+ohash_lookup_interval(struct ohash *h, const char *start, const char *end,
+    uint32_t hv)
+{
+	unsigned int	i, incr;
+	unsigned int	empty;
+
+#ifdef STATS_HASH
+	STAT_HASH_LOOKUP++;
+#endif
+	empty = NONE;
+	i = hv % h->size;
+	incr = ((hv % (h->size-2)) & ~1) + 1;
+	while (h->t[i].p != NULL) {
+#ifdef STATS_HASH
+		STAT_HASH_LENGTH++;
+#endif
+		if (h->t[i].p == DELETED) {
+			if (empty == NONE)
+				empty = i;
+		} else if (h->t[i].hv == hv &&
+		    strncmp(h->t[i].p+h->info.key_offset, start,
+			end - start) == 0 &&
+		    (h->t[i].p+h->info.key_offset)[end-start] == '\0') {
+			if (empty != NONE) {
+				h->t[empty].hv = hv;
+				h->t[empty].p = h->t[i].p;
+				h->t[i].p = DELETED;
+				return empty;
+			} else {
+#ifdef STATS_HASH
+				STAT_HASH_POSITIVE++;
+#endif
+				return i;
+			}
+		}
+		i += incr;
+		if (i >= h->size)
+			i -= h->size;
+	}
+
+	/* Found an empty position.  */
+	if (empty != NONE)
+		i = empty;
+	h->t[i].hv = hv;
+	return i;
+}
+
+unsigned int
+ohash_lookup_memory(struct ohash *h, const char *k, size_t size, uint32_t hv)
+{
+	unsigned int	i, incr;
+	unsigned int	empty;
+
+#ifdef STATS_HASH
+	STAT_HASH_LOOKUP++;
+#endif
+	empty = NONE;
+	i = hv % h->size;
+	incr = ((hv % (h->size-2)) & ~1) + 1;
+	while (h->t[i].p != NULL) {
+#ifdef STATS_HASH
+		STAT_HASH_LENGTH++;
+#endif
+		if (h->t[i].p == DELETED) {
+			if (empty == NONE)
+				empty = i;
+		} else if (h->t[i].hv == hv &&
+		    memcmp(h->t[i].p+h->info.key_offset, k, size) == 0) {
+			if (empty != NONE) {
+				h->t[empty].hv = hv;
+				h->t[empty].p = h->t[i].p;
+				h->t[i].p = DELETED;
+				return empty;
+			} else {
+#ifdef STATS_HASH
+				STAT_HASH_POSITIVE++;
+#endif
+			}	return i;
+		}
+		i += incr;
+		if (i >= h->size)
+			i -= h->size;
+	}
+
+	/* Found an empty position.  */
+	if (empty != NONE)
+		i = empty;
+	h->t[i].hv = hv;
+	return i;
+}
+
+unsigned int
+ohash_qlookup(struct ohash *h, const char *s)
+{
+	const char *e = NULL;
+	return ohash_qlookupi(h, s, &e);
+}
+
+unsigned int
+ohash_qlookupi(struct ohash *h, const char *s, const char **e)
+{
+	uint32_t hv;
+
+	hv = ohash_interval(s, e);
+	return ohash_lookup_interval(h, s, *e, hv);
+}
+
+#endif /*!HAVE_OHASH*/
+@
+
+
+1.5
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d3 1
+a3 1
+#ifdef HAVE_OHASH
+@
+
+
+1.4
+log
+@Merge from OpenBSD - Marc Espie improved the ohash interface:
+* rename the halloc callback to calloc, provide overflow protection
+* rename the hfree callback to free, drop the useless size argument
+* prevent integer overflows in ohash_resize
+@
+text
+@a0 1
+#ifdef HAVE_CONFIG_H
+a1 1
+#endif
+d26 2
+@
+
+
+1.3
+log
+@sync to OpenBSD:
+whitespace and comment changes, no functional change
+@
+text
+@d32 1
+d73 1
+a73 2
+	(h->info.hfree)(h->t, sizeof(struct _ohash_record) * h->size,
+		h->info.data);
+d83 2
+a84 1
+	unsigned int 	ns, j;
+d87 7
+a93 4
+	if (4 * h->deleted < h->total)
+		ns = h->size << 1;
+	else if (3 * h->deleted > 2 * h->total)
+		ns = h->size >> 1;
+d102 2
+a103 1
+	n = (h->info.halloc)(sizeof(struct _ohash_record) * ns, h->info.data);
+d120 1
+a120 2
+	(h->info.hfree)(h->t, sizeof(struct _ohash_record) * h->size, 
+		h->info.data);
+d206 2
+a207 2
+	h->info.halloc = info->halloc;
+	h->info.hfree = info->hfree;
+d210 2
+a211 2
+	h->t = (h->info.halloc)(sizeof(struct _ohash_record) * h->size,
+	    h->info.data);
+@
+
+
+1.2
+log
+@Use C99 uint32_t, not BSD-style u_int32_t.
+Needed for Solaris 10 as reported by Matthias Scheler.
+@
+text
+@d11 16
+a26 1
+/*	$OpenBSD: ohash_int.h,v 1.3 2006/01/16 15:52:25 espie Exp $	*/
+d36 1
+a36 1
+	const char 	*p;
+a44 3
+/* $OpenBSD: ohash_create_entry.c,v 1.2 2004/06/22 20:00:16 espie Exp $ */
+/* ex:ts=8 sw=4: 
+ */
+d46 2
+a47 14
+/* Copyright (c) 1999, 2004 Marc Espie <espie@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+d49 1
+a49 1
+/* This handles the common case of variable length keys, where the 
+d61 2
+a62 2
+	    memcpy(p+i->key_offset, start, *end-start);
+	    p[i->key_offset + (*end - start)] = '\0';
+d69 1
+a69 1
+void 
+d79 1
+a79 3
+static void ohash_resize(struct ohash *);
+
+static void 
+d110 1
+a110 1
+		    	}
+d126 1
+a126 1
+	void 		*result = (void *)h->t[i].p;
+d161 1
+a161 1
+	/* Arbitrary resize boundary.  Tweak if not efficient enough.  */
+d165 1
+a165 1
+    	return p;
+d180 1
+a180 1
+	
+d184 2
+a185 2
+	for (; *pos < h->size; (*pos)++) 
+		if (h->t[*pos].p != DELETED && h->t[*pos].p != NULL) 
+d190 1
+a190 1
+void 
+d228 1
+a228 1
+ohash_lookup_interval(struct ohash *h, const char *start, const char *end, 
+d231 1
+a231 1
+	unsigned int 	i, incr;
+d233 1
+a233 1
+	
+d247 3
+a249 3
+		} else if (h->t[i].hv == hv && 
+		    strncmp(h->t[i].p+h->info.key_offset, start, 
+		    	end - start) == 0 &&
+d251 1
+a251 1
+		    	if (empty != NONE) {
+d264 1
+a264 1
+		if (i >= h->size) 
+d269 1
+a269 1
+	if (empty != NONE) 
+d280 1
+a280 1
+	
+d294 1
+a294 1
+		} else if (h->t[i].hv == hv && 
+d296 1
+a296 1
+		    	if (empty != NONE) {
+d308 1
+a308 1
+		if (i >= h->size) 
+d313 1
+a313 1
+	if (empty != NONE) 
+@
+
+
+1.1
+log
+@Add a compatibility interface for ohash.
+This include's espie@@'s wholesale src/lib/libc/ohash directory from OpenBSD
+into compat_ohash.c (with a single copyright/license notice at the top)
+and src/include/ohash.h as compat_ohash.h.
+The ohash_int.h part of compat_ohash.c has been changed only in that ohash.h
+points to compat_ohash.h.
+Added HAVE_OHASH test (test-ohash.c) to Makefile.
+In mandocdb.c and mansearch.c, check HAVE_OHASH test for inclusion.
+@
+text
+@d20 1
+a20 1
+	u_int32_t	hv;
+d331 1
+a331 1
+	u_int32_t hv;
+@

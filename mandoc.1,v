@@ -1,0 +1,7753 @@
+head	1.164;
+access;
+symbols
+	VERSION_1_13_3:1.155
+	VERSION_1_13_2:1.128
+	VERSION_1_12_4:1.106
+	VERSION_1_13_1:1.106
+	VERSION_1_12_3:1.103
+	VERSION_1_12_2:1.103
+	VERSION_1_12:1.106.0.4
+	VERSION_1_12_1:1.100
+	VERSION_1_12_0:1.96
+	VERSION_1_11_7:1.90
+	VERSION_1_11_6:1.89
+	VERSION_1_11_5:1.89
+	VERSION_1_11_4:1.89
+	VERSION_1_11_3:1.88
+	VERSION_1_11_2:1.85
+	VERSION_1_11_1:1.85
+	VERSION_1_10_10:1.85
+	VERSION_1_10_9:1.84
+	VERSION_1_10_8:1.83
+	VERSION_1_10_7:1.78
+	VERSION_1_10_6:1.78
+	VERSION_1_10_5:1.73
+	VERSION_1_10_5_PREPDF:1.72
+	VERSION_1_10_4:1.71
+	VERSION_1_10_3:1.66
+	VERSION_1_10_2:1.63
+	VERSION_1_10_1:1.62
+	VERSION_1_9_24:1.59
+	VERSION_1_9_25:1.60
+	VERSION_1_9_23:1.56
+	VERSION_1_9_22:1.56
+	VERSION_1_9_21:1.56
+	VERSION_1_9_20:1.56
+	VERSION_1_9_19:1.55
+	VERSION_1_9_18:1.54
+	VERSION_1_9_17:1.53
+	VERSION_1_9_16:1.51
+	VERSION_1_9_15:1.50
+	VERSION_1_9_15-pre2:1.48
+	VERSION_1_9_15-pre1:1.48
+	VERSION_1_9_14:1.48
+	VERSION_1_9_13:1.45
+	VERSION_1_9_12:1.45
+	VERSION_1_9_11:1.44
+	VERSION_1_9_10:1.44
+	VERSION_1_9_9:1.43
+	VERSION_1_9_8:1.42
+	VERSION_1_9_7:1.41
+	VERSION_1_9_6:1.38
+	VERSION_1_9_5:1.38
+	VERSION_1_9_2:1.35
+	VERSION_1_9_1:1.33
+	VERSION_1_9_0:1.29
+	VERSION_1_8_5:1.29
+	VERSION_1_8_4:1.28
+	VERSION_1_8_3:1.27
+	VERSION_1_8_2:1.26
+	VERSION_1_8_1:1.25
+	VERSION_1_8_0:1.25
+	VERSION_1_7_24:1.24
+	VERSION_1_7_23:1.24
+	VERSION_1_7_22:1.23
+	VERSION_1_7_21:1.23
+	VERSION_1_7_20:1.22
+	VERSION_1_7_19:1.20
+	VERSION_1_7_17:1.19
+	VERSION_1_7_16:1.18
+	VERSION_1_7_15:1.18
+	VERSION_1_7_14:1.18
+	VERSION_1_7_13:1.16
+	VERSION_1_7_12:1.13
+	OPENBSD_CHECKIN:1.13
+	VERSION_1_7_10:1.13
+	VERSION_1_7_5:1.9
+	VERSION_1_6_5:1.3
+	VERSION_1_6_2:1.3;
+locks; strict;
+comment	@# @;
+
+
+1.164
+date	2015.11.05.17.47.51;	author schwarze;	state Exp;
+branches;
+next	1.163;
+
+1.163
+date	2015.10.30.19.04.16;	author schwarze;	state Exp;
+branches;
+next	1.162;
+
+1.162
+date	2015.10.06.15.33.29;	author schwarze;	state Exp;
+branches;
+next	1.161;
+
+1.161
+date	2015.09.26.12.56.04;	author schwarze;	state Exp;
+branches;
+next	1.160;
+
+1.160
+date	2015.09.14.15.36.14;	author schwarze;	state Exp;
+branches;
+next	1.159;
+
+1.159
+date	2015.04.03.08.46.17;	author schwarze;	state Exp;
+branches;
+next	1.158;
+
+1.158
+date	2015.03.30.16.06.14;	author schwarze;	state Exp;
+branches;
+next	1.157;
+
+1.157
+date	2015.03.27.21.40.04;	author schwarze;	state Exp;
+branches;
+next	1.156;
+
+1.156
+date	2015.03.27.16.36.31;	author schwarze;	state Exp;
+branches;
+next	1.155;
+
+1.155
+date	2015.02.23.13.31.03;	author schwarze;	state Exp;
+branches;
+next	1.154;
+
+1.154
+date	2015.02.16.19.02.48;	author schwarze;	state Exp;
+branches;
+next	1.153;
+
+1.153
+date	2015.02.16.16.23.54;	author schwarze;	state Exp;
+branches;
+next	1.152;
+
+1.152
+date	2015.02.07.15.15.20;	author schwarze;	state Exp;
+branches;
+next	1.151;
+
+1.151
+date	2015.02.06.16.06.25;	author schwarze;	state Exp;
+branches;
+next	1.150;
+
+1.150
+date	2015.02.06.11.54.36;	author schwarze;	state Exp;
+branches;
+next	1.149;
+
+1.149
+date	2015.02.06.09.38.43;	author schwarze;	state Exp;
+branches;
+next	1.148;
+
+1.148
+date	2015.02.06.08.28.35;	author schwarze;	state Exp;
+branches;
+next	1.147;
+
+1.147
+date	2015.02.06.07.13.14;	author schwarze;	state Exp;
+branches;
+next	1.146;
+
+1.146
+date	2015.02.06.03.38.45;	author schwarze;	state Exp;
+branches;
+next	1.145;
+
+1.145
+date	2015.02.04.22.30.10;	author schwarze;	state Exp;
+branches;
+next	1.144;
+
+1.144
+date	2015.02.04.19.20.12;	author schwarze;	state Exp;
+branches;
+next	1.143;
+
+1.143
+date	2015.02.04.18.03.47;	author schwarze;	state Exp;
+branches;
+next	1.142;
+
+1.142
+date	2015.02.04.16.38.56;	author schwarze;	state Exp;
+branches;
+next	1.141;
+
+1.141
+date	2015.01.29.00.33.57;	author schwarze;	state Exp;
+branches;
+next	1.140;
+
+1.140
+date	2015.01.28.21.11.53;	author schwarze;	state Exp;
+branches;
+next	1.139;
+
+1.139
+date	2015.01.28.17.32.07;	author schwarze;	state Exp;
+branches;
+next	1.138;
+
+1.138
+date	2015.01.26.18.42.30;	author schwarze;	state Exp;
+branches;
+next	1.137;
+
+1.137
+date	2015.01.26.13.03.48;	author schwarze;	state Exp;
+branches;
+next	1.136;
+
+1.136
+date	2015.01.26.00.57.22;	author schwarze;	state Exp;
+branches;
+next	1.135;
+
+1.135
+date	2015.01.24.01.58.33;	author schwarze;	state Exp;
+branches;
+next	1.134;
+
+1.134
+date	2015.01.20.22.45.07;	author schwarze;	state Exp;
+branches;
+next	1.133;
+
+1.133
+date	2015.01.20.21.16.51;	author schwarze;	state Exp;
+branches;
+next	1.132;
+
+1.132
+date	2015.01.15.04.26.40;	author schwarze;	state Exp;
+branches;
+next	1.131;
+
+1.131
+date	2015.01.14.22.02.49;	author schwarze;	state Exp;
+branches;
+next	1.130;
+
+1.130
+date	2014.12.28.14.42.27;	author schwarze;	state Exp;
+branches;
+next	1.129;
+
+1.129
+date	2014.12.16.23.44.41;	author schwarze;	state Exp;
+branches;
+next	1.128;
+
+1.128
+date	2014.12.02.11.31.51;	author schwarze;	state Exp;
+branches;
+next	1.127;
+
+1.127
+date	2014.11.30.05.29.00;	author schwarze;	state Exp;
+branches;
+next	1.126;
+
+1.126
+date	2014.11.30.02.36.38;	author schwarze;	state Exp;
+branches;
+next	1.125;
+
+1.125
+date	2014.11.28.18.09.01;	author schwarze;	state Exp;
+branches;
+next	1.124;
+
+1.124
+date	2014.11.27.23.40.19;	author schwarze;	state Exp;
+branches;
+next	1.123;
+
+1.123
+date	2014.11.25.20.18.15;	author schwarze;	state Exp;
+branches;
+next	1.122;
+
+1.122
+date	2014.11.11.02.43.41;	author schwarze;	state Exp;
+branches;
+next	1.121;
+
+1.121
+date	2014.10.30.17.14.59;	author schwarze;	state Exp;
+branches;
+next	1.120;
+
+1.120
+date	2014.10.25.14.35.37;	author schwarze;	state Exp;
+branches;
+next	1.119;
+
+1.119
+date	2014.10.25.01.03.52;	author schwarze;	state Exp;
+branches;
+next	1.118;
+
+1.118
+date	2014.10.12.19.31.41;	author schwarze;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2014.10.11.21.14.16;	author schwarze;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2014.10.10.08.44.24;	author kristaps;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2014.10.07.14.07.03;	author schwarze;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2014.09.27.11.17.19;	author kristaps;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2014.09.12.00.54.10;	author schwarze;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2014.09.12.00.10.26;	author schwarze;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2014.09.07.23.25.01;	author schwarze;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2014.09.03.05.22.45;	author schwarze;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2014.08.30.18.08.10;	author schwarze;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2014.08.22.04.52.55;	author schwarze;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2014.08.22.03.42.18;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2014.08.08.01.50.59;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2014.06.23.22.03.30;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2014.06.20.23.02.31;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2013.03.06.08.08.24;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2012.05.27.17.48.57;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2011.12.25.19.35.44;	author kristaps;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2011.11.13.14.50.54;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2011.11.13.13.15.14;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2011.10.09.21.37.06;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2011.10.06.23.05.55;	author kristaps;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2011.10.06.22.29.12;	author kristaps;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2011.10.05.21.35.17;	author kristaps;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2011.09.26.20.47.23;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2011.09.17.15.00.51;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2011.08.18.08.58.43;	author kristaps;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2011.05.30.07.24.15;	author kristaps;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2011.05.20.15.51.18;	author kristaps;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2011.05.17.22.32.45;	author kristaps;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2011.05.17.12.22.15;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2011.02.09.10.03.02;	author kristaps;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2011.01.04.23.32.21;	author kristaps;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2010.12.20.13.57.49;	author kristaps;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2010.12.17.11.18.57;	author kristaps;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2010.12.16.23.07.01;	author kristaps;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2010.12.16.11.23.08;	author kristaps;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2010.12.15.15.59.23;	author kristaps;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2010.09.26.23.05.46;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2010.08.18.08.41.40;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2010.08.18.08.40.22;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2010.08.07.17.46.39;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2010.07.25.11.44.31;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2010.07.04.20.06.59;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2010.07.04.19.24.00;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2010.07.04.10.53.04;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2010.07.01.14.23.45;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2010.06.30.20.57.41;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2010.06.29.14.55.41;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2010.06.29.14.18.05;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2010.06.25.19.02.48;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2010.06.11.07.15.42;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2010.06.07.20.57.09;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2010.06.07.10.55.27;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2010.05.09.21.19.42;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2010.04.13.05.26.49;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2010.04.12.19.27.22;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2010.04.08.07.40.03;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.03.29.10.10.35;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.03.27.14.44.19;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2010.03.27.10.10.10;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2010.03.25.07.28.16;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2010.03.22.20.43.00;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2010.03.22.14.03.03;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2010.01.29.14.39.38;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2010.01.07.19.10.09;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2009.11.16.09.52.47;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2009.11.16.08.46.59;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2009.11.05.10.16.01;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2009.10.26.15.44.51;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2009.10.26.04.15.42;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2009.10.15.02.42.53;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2009.10.10.11.05.23;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2009.10.03.16.36.06;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2009.10.03.15.26.26;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2009.10.03.15.08.09;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2009.09.21.13.44.56;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2009.09.21.13.06.13;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2009.09.15.08.16.20;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.09.05.10.30.51;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.08.22.09.10.38;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.08.20.12.26.15;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.08.20.12.08.40;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.08.20.11.51.07;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.08.19.09.14.50;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.07.26.19.30.50;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.07.24.14.00.59;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.07.21.15.52.41;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.07.20.13.45.11;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.07.14.15.57.43;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.07.06.09.34.29;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.06.25.10.51.55;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.06.22.12.04.05;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.06.18.08.13.34;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.06.17.19.12.03;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.06.15.09.35.16;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.06.11.07.26.35;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.04.12.19.30.45;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.04.12.19.19.57;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.04.02.16.42.35;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.03.26.16.44.22;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.03.26.16.23.22;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.03.23.16.02.56;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.03.23.15.41.09;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.23.09.42.43;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.22.19.08.53;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.21.21.09.00;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.21.13.09.29;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.20.15.14.01;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.19.18.30.26;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.19.16.17.27;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.164
+log
+@Unify the three stylesheets into a single CSS file.
+Many thanks to bentley@@ for doing this work.
+@
+text
+@.\"	$Id: mandoc.1,v 1.163 2015/10/30 19:04:16 schwarze Exp $
+.\"
+.\" Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2012, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: October 30 2015 $
+.Dt MANDOC 1
+.Os
+.Sh NAME
+.Nm mandoc
+.Nd format and display UNIX manuals
+.Sh SYNOPSIS
+.Nm mandoc
+.Op Fl acfhkl
+.Op Fl I Cm os Ns = Ns Ar name
+.Op Fl K Ar encoding
+.Op Fl m Ns Ar format
+.Op Fl O Ar option
+.Op Fl T Ar output
+.Op Fl W Ar level
+.Op Ar
+.Sh DESCRIPTION
+The
+.Nm
+utility formats
+.Ux
+manual pages for display.
+.Pp
+By default,
+.Nm
+reads
+.Xr mdoc 7
+or
+.Xr man 7
+text from stdin, implying
+.Fl m Ns Cm andoc ,
+and produces
+.Fl T Cm locale
+output.
+.Pp
+The options are as follows:
+.Bl -tag -width Ds
+.It Fl a
+If the standard output is a terminal device and
+.Fl c
+is not specified, use
+.Xr more 1
+to paginate the output, just like
+.Xr man 1
+would.
+.It Fl c
+Copy the formatted manual pages to the standard output without using
+.Xr more 1
+to paginate them.
+This is the default.
+It can be specified to override
+.Fl a .
+.It Fl f
+A synonym for
+.Xr whatis 1 .
+This overrides any earlier
+.Fl k
+and
+.Fl l
+options.
+.It Fl I Cm os Ns = Ns Ar name
+Override the default operating system
+.Ar name
+for the
+.Xr mdoc 7
+.Sq \&Os
+and for the
+.Xr man 7
+.Sq \&TH
+macro.
+.It Fl h
+Display only the SYNOPSIS lines.
+Implies
+.Fl c .
+.It Fl K Ar encoding
+Specify the input encoding.
+The supported
+.Ar encoding
+arguments are
+.Cm us-ascii ,
+.Cm iso-8859-1 ,
+and
+.Cm utf-8 .
+If not specified, autodetection uses the first match:
+.Bl -tag -width iso-8859-1
+.It Cm utf-8
+if the first three bytes of the input file
+are the UTF-8 byte order mark (BOM, 0xefbbbf)
+.It Ar encoding
+if the first or second line of the input file matches the
+.Sy emacs
+mode line format
+.Pp
+.D1 .\e" -*- Oo ...; Oc coding: Ar encoding ; No -*-
+.It Cm utf-8
+if the first non-ASCII byte in the file introduces a valid UTF-8 sequence
+.It Cm iso-8859-1
+otherwise
+.El
+.It Fl k
+A synonym for
+.Xr apropos 1 .
+This overrides any earlier
+.Fl f
+and
+.Fl l
+options.
+.It Fl l
+A synonym for
+.Fl a .
+Also reverts any earlier
+.Fl f
+and
+.Fl k
+options.
+.It Fl m Ns Ar format
+Input format.
+See
+.Sx Input Formats
+for available formats.
+Defaults to
+.Fl m Ns Cm andoc .
+.It Fl O Ar option
+Comma-separated output options.
+.It Fl T Ar output
+Output format.
+See
+.Sx Output Formats
+for available formats.
+Defaults to
+.Fl T Cm locale .
+.It Fl W Ar level
+Specify the minimum message
+.Ar level
+to be reported on the standard error output and to affect the exit status.
+The
+.Ar level
+can be
+.Cm warning ,
+.Cm error ,
+or
+.Cm unsupp ;
+.Cm all
+is an alias for
+.Cm warning .
+By default,
+.Nm
+is silent.
+See
+.Sx EXIT STATUS
+and
+.Sx DIAGNOSTICS
+for details.
+.Pp
+The special option
+.Fl W Cm stop
+tells
+.Nm
+to exit after parsing a file that causes warnings or errors of at least
+the requested level.
+No formatted output will be produced from that file.
+If both a
+.Ar level
+and
+.Cm stop
+are requested, they can be joined with a comma, for example
+.Fl W Cm error , Ns Cm stop .
+.It Ar file
+Read input from zero or more files.
+If unspecified, reads from stdin.
+If multiple files are specified,
+.Nm
+will halt with the first failed parse.
+.El
+.Pp
+In
+.Fl f
+and
+.Fl k
+mode,
+.Nm
+also supports the options
+.Fl CMmOSsw
+described in the
+.Xr apropos 1
+manual.
+.Ss Input Formats
+The
+.Nm
+utility accepts
+.Xr mdoc 7
+and
+.Xr man 7
+input with
+.Fl m Ns Cm doc
+and
+.Fl m Ns Cm an ,
+respectively.
+The
+.Xr mdoc 7
+format is
+.Em strongly
+recommended;
+.Xr man 7
+should only be used for legacy manuals.
+.Pp
+A third option,
+.Fl m Ns Cm andoc ,
+which is also the default, determines encoding on-the-fly: if the first
+non-comment macro is
+.Sq \&Dd
+or
+.Sq \&Dt ,
+the
+.Xr mdoc 7
+parser is used; otherwise, the
+.Xr man 7
+parser is used.
+.Pp
+If multiple
+files are specified with
+.Fl m Ns Cm andoc ,
+each has its file-type determined this way.
+If multiple files are
+specified and
+.Fl m Ns Cm doc
+or
+.Fl m Ns Cm an
+is specified, then this format is used exclusively.
+.Ss Output Formats
+The
+.Nm
+utility accepts the following
+.Fl T
+arguments, which correspond to output modes:
+.Bl -tag -width "-T locale"
+.It Fl T Cm ascii
+Produce 7-bit ASCII output.
+See
+.Sx ASCII Output .
+.It Fl T Cm html
+Produce HTML5, CSS1, and MathML output.
+See
+.Sx HTML Output .
+.It Fl T Cm lint
+Parse only: produce no output.
+Implies
+.Fl W Cm warning .
+.It Fl T Cm locale
+Encode output using the current locale.
+This is the default.
+See
+.Sx Locale Output .
+.It Fl T Cm man
+Produce
+.Xr man 7
+format output.
+See
+.Sx Man Output .
+.It Fl T Cm pdf
+Produce PDF output.
+See
+.Sx PDF Output .
+.It Fl T Cm ps
+Produce PostScript output.
+See
+.Sx PostScript Output .
+.It Fl T Cm tree
+Produce an indented parse tree.
+See
+.Sx Syntax tree output .
+.It Fl T Cm utf8
+Encode output in the UTF\-8 multi-byte format.
+See
+.Sx UTF\-8 Output .
+.It Fl T Cm xhtml
+This is a synonym for
+.Fl T Cm html .
+.El
+.Pp
+If multiple input files are specified, these will be processed by the
+corresponding filter in-order.
+.Ss ASCII Output
+Output produced by
+.Fl T Cm ascii
+is rendered in standard 7-bit ASCII documented in
+.Xr ascii 7 .
+.Pp
+Font styles are applied by using back-spaced encoding such that an
+underlined character
+.Sq c
+is rendered as
+.Sq _ Ns \e[bs] Ns c ,
+where
+.Sq \e[bs]
+is the back-space character number 8.
+Emboldened characters are rendered as
+.Sq c Ns \e[bs] Ns c .
+.Pp
+The special characters documented in
+.Xr mandoc_char 7
+are rendered best-effort in an ASCII equivalent.
+.Pp
+Output width is limited to 78 visible columns unless literal input lines
+exceed this limit.
+.Pp
+The following
+.Fl O
+arguments are accepted:
+.Bl -tag -width Ds
+.It Cm indent Ns = Ns Ar indent
+The left margin for normal text is set to
+.Ar indent
+blank characters instead of the default of five for
+.Xr mdoc 7
+and seven for
+.Xr man 7 .
+Increasing this is not recommended; it may result in degraded formatting,
+for example overfull lines or ugly line breaks.
+.It Cm width Ns = Ns Ar width
+The output width is set to
+.Ar width ,
+which will normalise to \(>=58.
+.El
+.Ss HTML Output
+Output produced by
+.Fl T Cm html
+conforms to HTML5 using optional self-closing tags.
+Default styles use only CSS1.
+Equations rendered from
+.Xr eqn 7
+blocks use MathML.
+.Pp
+The
+.Pa mandoc.css
+file documents style-sheet classes available for customising output.
+If a style-sheet is not specified with
+.Fl O Cm style ,
+.Fl T Cm html
+defaults to simple output (via an embedded style-sheet)
+readable in any graphical or text-based web
+browser.
+.Pp
+Special characters are rendered in decimal-encoded UTF\-8.
+.Pp
+The following
+.Fl O
+arguments are accepted:
+.Bl -tag -width Ds
+.It Cm fragment
+Omit the <!DOCTYPE> declaration and the <html>, <head>, and <body>
+elements and only emit the subtree below the <body> element.
+The
+.Cm style
+argument will be ignored.
+This is useful when embedding manual content within existing documents.
+.It Cm includes Ns = Ns Ar fmt
+The string
+.Ar fmt ,
+for example,
+.Ar ../src/%I.html ,
+is used as a template for linked header files (usually via the
+.Sq \&In
+macro).
+Instances of
+.Sq \&%I
+are replaced with the include filename.
+The default is not to present a
+hyperlink.
+.It Cm man Ns = Ns Ar fmt
+The string
+.Ar fmt ,
+for example,
+.Ar ../html%S/%N.%S.html ,
+is used as a template for linked manuals (usually via the
+.Sq \&Xr
+macro).
+Instances of
+.Sq \&%N
+and
+.Sq %S
+are replaced with the linked manual's name and section, respectively.
+If no section is included, section 1 is assumed.
+The default is not to
+present a hyperlink.
+.It Cm style Ns = Ns Ar style.css
+The file
+.Ar style.css
+is used for an external style-sheet.
+This must be a valid absolute or
+relative URI.
+.El
+.Ss Locale Output
+Locale-depending output encoding is triggered with
+.Fl T Cm locale .
+This is the default.
+.Pp
+This option is not available on all systems: systems without locale
+support, or those whose internal representation is not natively UCS-4,
+will fall back to
+.Fl T Cm ascii .
+See
+.Sx ASCII Output
+for font style specification and available command-line arguments.
+.Ss Man Output
+Translate input format into
+.Xr man 7
+output format.
+This is useful for distributing manual sources to legacy systems
+lacking
+.Xr mdoc 7
+formatters.
+.Pp
+If
+.Xr mdoc 7
+is passed as input, it is translated into
+.Xr man 7 .
+If the input format is
+.Xr man 7 ,
+the input is copied to the output, expanding any
+.Xr roff 7
+.Sq so
+requests.
+The parser is also run, and as usual, the
+.Fl W
+level controls which
+.Sx DIAGNOSTICS
+are displayed before copying the input to the output.
+.Ss PDF Output
+PDF-1.1 output may be generated by
+.Fl T Cm pdf .
+See
+.Sx PostScript Output
+for
+.Fl O
+arguments and defaults.
+.Ss PostScript Output
+PostScript
+.Qq Adobe-3.0
+Level-2 pages may be generated by
+.Fl T Cm ps .
+Output pages default to letter sized and are rendered in the Times font
+family, 11-point.
+Margins are calculated as 1/9 the page length and width.
+Line-height is 1.4m.
+.Pp
+Special characters are rendered as in
+.Sx ASCII Output .
+.Pp
+The following
+.Fl O
+arguments are accepted:
+.Bl -tag -width Ds
+.It Cm paper Ns = Ns Ar name
+The paper size
+.Ar name
+may be one of
+.Ar a3 ,
+.Ar a4 ,
+.Ar a5 ,
+.Ar legal ,
+or
+.Ar letter .
+You may also manually specify dimensions as
+.Ar NNxNN ,
+width by height in millimetres.
+If an unknown value is encountered,
+.Ar letter
+is used.
+.El
+.Ss UTF\-8 Output
+Use
+.Fl T Cm utf8
+to force a UTF\-8 locale.
+See
+.Sx Locale Output
+for details and options.
+.Ss Syntax tree output
+Use
+.Fl T Cm tree
+to show a human readable representation of the syntax tree.
+It is useful for debugging the source code of manual pages.
+The exact format is subject to change, so don't write parsers for it.
+Each output line shows one syntax tree node.
+Child nodes are indented with respect to their parent node.
+The columns are:
+.Pp
+.Bl -enum -compact
+.It
+For macro nodes, the macro name; for text and
+.Xr tbl 7
+nodes, the content.
+There is a special format for
+.Xr eqn 7
+nodes.
+.It
+Node type (text, elem, block, head, body, body-end, tail, tbl, eqn).
+.It
+Flags:
+.Bl -dash -compact
+.It
+An opening parenthesis if the node is an opening delimiter.
+.It
+An asterisk if the node starts a new input line.
+.It
+The input line number (starting at one).
+.It
+A colon.
+.It
+The input column number (starting at one).
+.It
+A closing parenthesis if the node is a closing delimiter.
+.It
+A full stop if the node ends a sentence.
+.El
+.El
+.Sh ENVIRONMENT
+.Bl -tag -width MANPAGER
+.It Ev MANPAGER
+Any non-empty value of the environment variable
+.Ev MANPAGER
+will be used instead of the standard pagination program,
+.Xr more 1 .
+.It Ev PAGER
+Specifies the pagination program to use when
+.Ev MANPAGER
+is not defined.
+If neither PAGER nor MANPAGER is defined,
+.Xr more 1
+.Fl s
+will be used.
+.El
+.Sh EXIT STATUS
+The
+.Nm
+utility exits with one of the following values, controlled by the message
+.Ar level
+associated with the
+.Fl W
+option:
+.Pp
+.Bl -tag -width Ds -compact
+.It 0
+No warnings or errors occurred, or those that did were ignored because
+they were lower than the requested
+.Ar level .
+.It 2
+At least one warning occurred, but no error, and
+.Fl W Cm warning
+was specified.
+.It 3
+At least one parsing error occurred,
+but no unsupported feature was encountered, and
+.Fl W Cm error
+or
+.Fl W Cm warning
+was specified.
+.It 4
+At least one unsupported feature was encountered, and
+.Fl W Cm unsupp ,
+.Fl W Cm error
+or
+.Fl W Cm warning
+was specified.
+.It 5
+Invalid command line arguments were specified.
+No input files have been read.
+.It 6
+An operating system error occurred, for example exhaustion
+of memory, file descriptors, or process table entries.
+Such errors cause
+.Nm
+to exit at once, possibly in the middle of parsing or formatting a file.
+.El
+.Pp
+Note that selecting
+.Fl T Cm lint
+output mode implies
+.Fl W Cm warning .
+.Sh EXAMPLES
+To page manuals to the terminal:
+.Pp
+.Dl $ mandoc \-W all,stop mandoc.1 2\*(Gt&1 | less
+.Dl $ mandoc mandoc.1 mdoc.3 mdoc.7 | less
+.Pp
+To produce HTML manuals with
+.Pa mandoc.css
+as the style-sheet:
+.Pp
+.Dl $ mandoc \-T html -O style=mandoc.css mdoc.7 \*(Gt mdoc.7.html
+.Pp
+To check over a large set of manuals:
+.Pp
+.Dl $ mandoc \-T lint \(gafind /usr/src -name \e*\e.[1-9]\(ga
+.Pp
+To produce a series of PostScript manuals for A4 paper:
+.Pp
+.Dl $ mandoc \-T ps \-O paper=a4 mdoc.7 man.7 \*(Gt manuals.ps
+.Pp
+Convert a modern
+.Xr mdoc 7
+manual to the older
+.Xr man 7
+format, for use on systems lacking an
+.Xr mdoc 7
+parser:
+.Pp
+.Dl $ mandoc \-T man foo.mdoc \*(Gt foo.man
+.Sh DIAGNOSTICS
+Messages displayed by
+.Nm
+follow this format:
+.Pp
+.D1 Nm Ns : Ar file : Ns Ar line : Ns Ar column : level : message : macro args
+.Pp
+Line and column numbers start at 1.
+Both are omitted for messages referring to an input file as a whole.
+Macro names and arguments are omitted where meaningless.
+Fatal messages about invalid command line arguments
+or operating system errors, for example when memory is exhausted,
+may also omit the
+.Ar file
+and
+.Ar level
+fields.
+.Pp
+Message levels have the following meanings:
+.Bl -tag -width "warning"
+.It Cm unsupp
+An input file uses unsupported low-level
+.Xr roff 7
+features.
+The output may be incomplete and/or misformatted,
+so using GNU troff instead of
+.Nm
+to process the file may be preferable.
+.It Cm error
+An input file contains invalid syntax that cannot be safely interpreted.
+By discarding part of the input or inserting missing tokens,
+the parser is able to continue, and the error does not prevent
+generation of formatted output, but typically, preparing that
+output involves information loss, broken document structure
+or unintended formatting, no matter whether
+.Nm
+or GNU troff is used.
+In many cases, the output of
+.Nm
+and GNU troff is identical, but in some,
+.Nm
+is more resilient than GNU troff with respect to malformed input.
+.Pp
+Non-existent or unreadable input files are also reported on the
+.Cm error
+level.
+In that case, the parser cannot even be started and no output
+is produced from those input files.
+.It Cm warning
+An input file uses obsolete, discouraged or non-portable syntax.
+All the same, the meaning of the input is unambiguous and a correct
+rendering can be produced.
+Documents causing warnings may render poorly when using other
+formatting tools instead of
+.Nm .
+.El
+.Pp
+Messages of the
+.Cm warning ,
+.Cm error ,
+and
+.Cm unsupp
+levels except those about non-existent or unreadable input files
+are hidden unless their level, or a lower level, is requested using a
+.Fl W
+option or
+.Fl T Cm lint
+output mode.
+.Ss Warnings related to the document prologue
+.Bl -ohang
+.It Sy "missing manual title, using UNTITLED"
+.Pq mdoc
+A
+.Ic \&Dt
+macro has no arguments, or there is no
+.Ic \&Dt
+macro before the first non-prologue macro.
+.It Sy "missing manual title, using \(dq\(dq"
+.Pq man
+There is no
+.Ic \&TH
+macro, or it has no arguments.
+.It Sy "lower case character in document title"
+.Pq mdoc , man
+The title is still used as given in the
+.Ic \&Dt
+or
+.Ic \&TH
+macro.
+.It Sy "missing manual section, using \(dq\(dq"
+.Pq mdoc , man
+A
+.Ic \&Dt
+or
+.Ic \&TH
+macro lacks the mandatory section argument.
+.It Sy "unknown manual section"
+.Pq mdoc
+The section number in a
+.Ic \&Dt
+line is invalid, but still used.
+.It Sy "missing date, using today's date"
+.Pq mdoc, man
+The document was parsed as
+.Xr mdoc 7
+and it has no
+.Ic \&Dd
+macro, or the
+.Ic \&Dd
+macro has no arguments or only empty arguments;
+or the document was parsed as
+.Xr man 7
+and it has no
+.Ic \&TH
+macro, or the
+.Ic \&TH
+macro has less than three arguments or its third argument is empty.
+.It Sy "cannot parse date, using it verbatim"
+.Pq mdoc , man
+The date given in a
+.Ic \&Dd
+or
+.Ic \&TH
+macro does not follow the conventional format.
+.It Sy "missing Os macro, using \(dq\(dq"
+.Pq mdoc
+The default or current system is not shown in this case.
+.It Sy "duplicate prologue macro"
+.Pq mdoc
+One of the prologue macros occurs more than once.
+The last instance overrides all previous ones.
+.It Sy "late prologue macro"
+.Pq mdoc
+A
+.Ic \&Dd
+or
+.Ic \&Os
+macro occurs after some non-prologue macro, but still takes effect.
+.It Sy "skipping late title macro"
+.Pq mdoc
+The
+.Ic \&Dt
+macro appears after the first non-prologue macro.
+Traditional formatters cannot handle this because
+they write the page header before parsing the document body.
+Even though this technical restriction does not apply to
+.Nm ,
+traditional semantics is preserved.
+The late macro is discarded including its arguments.
+.It Sy "prologue macros out of order"
+.Pq mdoc
+The prologue macros are not given in the conventional order
+.Ic \&Dd ,
+.Ic \&Dt ,
+.Ic \&Os .
+All three macros are used even when given in another order.
+.El
+.Ss Warnings regarding document structure
+.Bl -ohang
+.It Sy ".so is fragile, better use ln(1)"
+.Pq roff
+Including files only works when the parser program runs with the correct
+current working directory.
+.It Sy "no document body"
+.Pq mdoc , man
+The document body contains neither text nor macros.
+An empty document is shown, consisting only of a header and a footer line.
+.It Sy "content before first section header"
+.Pq mdoc , man
+Some macros or text precede the first
+.Ic \&Sh
+or
+.Ic \&SH
+section header.
+The offending macros and text are parsed and added to the top level
+of the syntax tree, outside any section block.
+.It Sy "first section is not NAME"
+.Pq mdoc
+The argument of the first
+.Ic \&Sh
+macro is not
+.Sq NAME .
+This may confuse
+.Xr makewhatis 8
+and
+.Xr apropos 1 .
+.It Sy "NAME section without name"
+.Pq mdoc
+The NAME section does not contain any
+.Ic \&Nm
+child macro.
+.It Sy "NAME section without description"
+.Pq mdoc
+The NAME section lacks the mandatory
+.Ic \&Nd
+child macro.
+.It Sy "description not at the end of NAME"
+.Pq mdoc
+The NAME section does contain an
+.Ic \&Nd
+child macro, but other content follows it.
+.It Sy "bad NAME section content"
+.Pq mdoc
+The NAME section contains plain text or macros other than
+.Ic \&Nm
+and
+.Ic \&Nd .
+.It Sy "missing description line, using \(dq\(dq"
+.Pq mdoc
+The
+.Ic \&Nd
+macro lacks the required argument.
+The title line of the manual will end after the dash.
+.It Sy "sections out of conventional order"
+.Pq mdoc
+A standard section occurs after another section it usually precedes.
+All section titles are used as given,
+and the order of sections is not changed.
+.It Sy "duplicate section title"
+.Pq mdoc
+The same standard section title occurs more than once.
+.It Sy "unexpected section"
+.Pq mdoc
+A standard section header occurs in a section of the manual
+where it normally isn't useful.
+.It Sy "unusual Xr order"
+.Pq mdoc
+In the SEE ALSO section, an
+.Ic \&Xr
+macro with a lower section number follows one with a higher number,
+or two
+.Ic \&Xr
+macros referring to the same section are out of alphabetical order.
+.It Sy "unusual Xr punctuation"
+.Pq mdoc
+In the SEE ALSO section, punctuation between two
+.Ic \&Xr
+macros differs from a single comma, or there is trailing punctuation
+after the last
+.Ic \&Xr
+macro.
+.It Sy "AUTHORS section without An macro"
+.Pq mdoc
+An AUTHORS sections contains no
+.Ic \&An
+macros, or only empty ones.
+Probably, there are author names lacking markup.
+.El
+.Ss "Warnings related to macros and nesting"
+.Bl -ohang
+.It Sy "obsolete macro"
+.Pq mdoc
+See the
+.Xr mdoc 7
+manual for replacements.
+.It Sy "macro neither callable nor escaped"
+.Pq mdoc
+The name of a macro that is not callable appears on a macro line.
+It is printed verbatim.
+If the intention is to call it, move it to its own input line;
+otherwise, escape it by prepending
+.Sq \e& .
+.It Sy "skipping paragraph macro"
+In
+.Xr mdoc 7
+documents, this happens
+.Bl -dash -compact
+.It
+at the beginning and end of sections and subsections
+.It
+right before non-compact lists and displays
+.It
+at the end of items in non-column, non-compact lists
+.It
+and for multiple consecutive paragraph macros.
+.El
+In
+.Xr man 7
+documents, it happens
+.Bl -dash -compact
+.It
+for empty
+.Ic \&P ,
+.Ic \&PP ,
+and
+.Ic \&LP
+macros
+.It
+for
+.Ic \&IP
+macros having neither head nor body arguments
+.It
+for
+.Ic \&br
+or
+.Ic \&sp
+right after
+.Ic \&SH
+or
+.Ic \&SS
+.El
+.It Sy "moving paragraph macro out of list"
+.Pq mdoc
+A list item in a
+.Ic \&Bl
+list contains a trailing paragraph macro.
+The paragraph macro is moved after the end of the list.
+.It Sy "skipping no-space macro"
+.Pq mdoc
+An input line begins with an
+.Ic \&Ns
+macro.
+The macro is ignored.
+.It Sy "blocks badly nested"
+.Pq mdoc
+If two blocks intersect, one should completely contain the other.
+Otherwise, rendered output is likely to look strange in any output
+format, and rendering in SGML-based output formats is likely to be
+outright wrong because such languages do not support badly nested
+blocks at all.
+Typical examples of badly nested blocks are
+.Qq Ic \&Ao \&Bo \&Ac \&Bc
+and
+.Qq Ic \&Ao \&Bq \&Ac .
+In these examples,
+.Ic \&Ac
+breaks
+.Ic \&Bo
+and
+.Ic \&Bq ,
+respectively.
+.It Sy "nested displays are not portable"
+.Pq mdoc
+A
+.Ic \&Bd ,
+.Ic \&D1 ,
+or
+.Ic \&Dl
+display occurs nested inside another
+.Ic \&Bd
+display.
+This works with
+.Nm ,
+but fails with most other implementations.
+.It Sy "moving content out of list"
+.Pq mdoc
+A
+.Ic \&Bl
+list block contains text or macros before the first
+.Ic \&It
+macro.
+The offending children are moved before the beginning of the list.
+.It Sy "fill mode already enabled, skipping"
+.Pq man
+A
+.Ic \&fi
+request occurs even though the document is still in fill mode,
+or already switched back to fill mode.
+It has no effect.
+.It Sy "fill mode already disabled, skipping"
+.Pq man
+An
+.Ic \&nf
+request occurs even though the document already switched to no-fill mode
+and did not switch back to fill mode yet.
+It has no effect.
+.It Sy "line scope broken"
+.Pq man
+While parsing the next-line scope of the previous macro,
+another macro is found that prematurely terminates the previous one.
+The previous, interrupted macro is deleted from the parse tree.
+.El
+.Ss "Warnings related to missing arguments"
+.Bl -ohang
+.It Sy "skipping empty request"
+.Pq roff , eqn
+The macro name is missing from a macro definition request,
+or an
+.Xr eqn 7
+control statement or operation keyword lacks its required argument.
+.It Sy "conditional request controls empty scope"
+.Pq roff
+A conditional request is only useful if any of the following
+follows it on the same logical input line:
+.Bl -dash -compact
+.It
+The
+.Sq \e{
+keyword to open a multi-line scope.
+.It
+A request or macro or some text, resulting in a single-line scope.
+.It
+The immediate end of the logical line without any intervening whitespace,
+resulting in next-line scope.
+.El
+Here, a conditional request is followed by trailing whitespace only,
+and there is no other content on its logical input line.
+Note that it doesn't matter whether the logical input line is split
+across multiple physical input lines using
+.Sq \e
+line continuation characters.
+This is one of the rare cases
+where trailing whitespace is syntactically significant.
+The conditional request controls a scope containing whitespace only,
+so it is unlikely to have a significant effect,
+except that it may control a following
+.Ic \&el
+clause.
+.It Sy "skipping empty macro"
+.Pq mdoc
+The indicated macro has no arguments and hence no effect.
+.It Sy "empty block"
+.Pq mdoc , man
+A
+.Ic \&Bd ,
+.Ic \&Bk ,
+.Ic \&Bl ,
+.Ic \&D1 ,
+.Ic \&Dl ,
+.Ic \&RS ,
+or
+.Ic \&UR
+block contains nothing in its body and will produce no output.
+.It Sy "empty argument, using 0n"
+.Pq mdoc
+The required width is missing after
+.Ic \&Bd
+or
+.Ic \&Bl
+.Fl offset
+or
+.Fl width.
+.It Sy "missing display type, using -ragged"
+.Pq mdoc
+The
+.Ic \&Bd
+macro is invoked without the required display type.
+.It Sy "list type is not the first argument"
+.Pq mdoc
+In a
+.Ic \&Bl
+macro, at least one other argument precedes the type argument.
+The
+.Nm
+utility copes with any argument order, but some other
+.Xr mdoc 7
+implementations do not.
+.It Sy "missing -width in -tag list, using 8n"
+.Pq mdoc
+Every
+.Ic \&Bl
+macro having the
+.Fl tag
+argument requires
+.Fl width ,
+too.
+.It Sy "missing utility name, using \(dq\(dq"
+.Pq mdoc
+The
+.Ic \&Ex Fl std
+macro is called without an argument before
+.Ic \&Nm
+has first been called with an argument.
+.It Sy "missing function name, using \(dq\(dq"
+.Pq mdoc
+The
+.Ic \&Fo
+macro is called without an argument.
+No function name is printed.
+.It Sy "empty head in list item"
+.Pq mdoc
+In a
+.Ic \&Bl
+.Fl diag ,
+.Fl hang ,
+.Fl inset ,
+.Fl ohang ,
+or
+.Fl tag
+list, an
+.Ic \&It
+macro lacks the required argument.
+The item head is left empty.
+.It Sy "empty list item"
+.Pq mdoc
+In a
+.Ic \&Bl
+.Fl bullet ,
+.Fl dash ,
+.Fl enum ,
+or
+.Fl hyphen
+list, an
+.Ic \&It
+block is empty.
+An empty list item is shown.
+.It Sy "missing font type, using \efR"
+.Pq mdoc
+A
+.Ic \&Bf
+macro has no argument.
+It switches to the default font.
+.It Sy "unknown font type, using \efR"
+.Pq mdoc
+The
+.Ic \&Bf
+argument is invalid.
+The default font is used instead.
+.It Sy "nothing follows prefix"
+.Pq mdoc
+A
+.Ic \&Pf
+macro has no argument, or only one argument and no macro follows
+on the same input line.
+This defeats its purpose; in particular, spacing is not suppressed
+before the text or macros following on the next input line.
+.It Sy "empty reference block"
+.Pq mdoc
+An
+.Ic \&Rs
+macro is immediately followed by an
+.Ic \&Re
+macro on the next input line.
+Such an empty block does not produce any output.
+.It Sy "missing -std argument, adding it"
+.Pq mdoc
+An
+.Ic \&Ex
+or
+.Ic \&Rv
+macro lacks the required
+.Fl std
+argument.
+The
+.Nm
+utility assumes
+.Fl std
+even when it is not specified, but other implementations may not.
+.It Sy "missing option string, using \(dq\(dq"
+.Pq man
+The
+.Ic \&OP
+macro is invoked without any argument.
+An empty pair of square brackets is shown.
+.It Sy "missing resource identifier, using \(dq\(dq"
+.Pq man
+The
+.Ic \&UR
+macro is invoked without any argument.
+An empty pair of angle brackets is shown.
+.It Sy "missing eqn box, using \(dq\(dq"
+.Pq eqn
+A diacritic mark or a binary operator is found,
+but there is nothing to the left of it.
+An empty box is inserted.
+.El
+.Ss "Warnings related to bad macro arguments"
+.Bl -ohang
+.It Sy "unterminated quoted argument"
+.Pq roff
+Macro arguments can be enclosed in double quote characters
+such that space characters and macro names contained in the quoted
+argument need not be escaped.
+The closing quote of the last argument of a macro can be omitted.
+However, omitting it is not recommended because it makes the code
+harder to read.
+.It Sy "duplicate argument"
+.Pq mdoc
+A
+.Ic \&Bd
+or
+.Ic \&Bl
+macro has more than one
+.Fl compact ,
+more than one
+.Fl offset ,
+or more than one
+.Fl width
+argument.
+All but the last instances of these arguments are ignored.
+.It Sy "skipping duplicate argument"
+.Pq mdoc
+An
+.Ic \&An
+macro has more than one
+.Fl split
+or
+.Fl nosplit
+argument.
+All but the first of these arguments are ignored.
+.It Sy "skipping duplicate display type"
+.Pq mdoc
+A
+.Ic \&Bd
+macro has more than one type argument; the first one is used.
+.It Sy "skipping duplicate list type"
+.Pq mdoc
+A
+.Ic \&Bl
+macro has more than one type argument; the first one is used.
+.It Sy "skipping -width argument"
+.Pq mdoc
+A
+.Ic \&Bl
+.Fl column ,
+.Fl diag ,
+.Fl ohang ,
+.Fl inset ,
+or
+.Fl item
+list has a
+.Fl width
+argument.
+That has no effect.
+.It Sy "wrong number of cells"
+In a line of a
+.Ic \&Bl Fl column
+list, the number of tabs or
+.Ic \&Ta
+macros is less than the number expected from the list header line
+or exceeds the expected number by more than one.
+Missing cells remain empty, and all cells exceeding the number of
+columns are joined into one single cell.
+.It Sy "unknown AT&T UNIX version"
+.Pq mdoc
+An
+.Ic \&At
+macro has an invalid argument.
+It is used verbatim, with
+.Qq "AT&T UNIX "
+prefixed to it.
+.It Sy "comma in function argument"
+.Pq mdoc
+An argument of an
+.Ic \&Fa
+or
+.Ic \&Fn
+macro contains a comma; it should probably be split into two arguments.
+.It Sy "parenthesis in function name"
+.Pq mdoc
+The first argument of an
+.Ic \&Fc
+or
+.Ic \&Fn
+macro contains an opening or closing parenthesis; that's probably wrong,
+parentheses are added automatically.
+.It Sy "invalid content in Rs block"
+.Pq mdoc
+An
+.Ic \&Rs
+block contains plain text or non-% macros.
+The bogus content is left in the syntax tree.
+Formatting may be poor.
+.It Sy "invalid Boolean argument"
+.Pq mdoc
+An
+.Ic \&Sm
+macro has an argument other than
+.Cm on
+or
+.Cm off .
+The invalid argument is moved out of the macro, which leaves the macro
+empty, causing it to toggle the spacing mode.
+.It Sy "unknown font, skipping request"
+.Pq man , tbl
+A
+.Xr roff 7
+.Ic \&ft
+request or a
+.Xr tbl 7
+.Ic \&f
+layout modifier has an unknown
+.Ar font
+argument.
+.It Sy "odd number of characters in request"
+.Pq roff
+A
+.Ic \&tr
+request contains an odd number of characters.
+The last character is mapped to the blank character.
+.El
+.Ss "Warnings related to plain text"
+.Bl -ohang
+.It Sy "blank line in fill mode, using .sp"
+.Pq mdoc
+The meaning of blank input lines is only well-defined in non-fill mode:
+In fill mode, line breaks of text input lines are not supposed to be
+significant.
+However, for compatibility with groff, blank lines in fill mode
+are replaced with
+.Ic \&sp
+requests.
+.It Sy "tab in filled text"
+.Pq mdoc , man
+The meaning of tab characters is only well-defined in non-fill mode:
+In fill mode, whitespace is not supposed to be significant
+on text input lines.
+As an implementation dependent choice, tab characters on text lines
+are passed through to the formatters in any case.
+Given that the text before the tab character will be filled,
+it is hard to predict which tab stop position the tab will advance to.
+.It Sy "whitespace at end of input line"
+.Pq mdoc , man , roff
+Whitespace at the end of input lines is almost never semantically
+significant \(em but in the odd case where it might be, it is
+extremely confusing when reviewing and maintaining documents.
+.It Sy "bad comment style"
+.Pq roff
+Comment lines start with a dot, a backslash, and a double-quote character.
+The
+.Nm
+utility treats the line as a comment line even without the backslash,
+but leaving out the backslash might not be portable.
+.It Sy "invalid escape sequence"
+.Pq roff
+An escape sequence has an invalid opening argument delimiter, lacks the
+closing argument delimiter, or the argument has too few characters.
+If the argument is incomplete,
+.Ic \e*
+and
+.Ic \en
+expand to an empty string,
+.Ic \eB
+to the digit
+.Sq 0 ,
+and
+.Ic \ew
+to the length of the incomplete argument.
+All other invalid escape sequences are ignored.
+.It Sy "undefined string, using \(dq\(dq"
+.Pq roff
+If a string is used without being defined before,
+its value is implicitly set to the empty string.
+However, defining strings explicitly before use
+keeps the code more readable.
+.El
+.Ss "Warnings related to tables"
+.Bl -ohang
+.It Sy "tbl line starts with span"
+.Pq tbl
+The first cell in a table layout line is a horizontal span
+.Pq Sq Cm s .
+Data provided for this cell is ignored, and nothing is printed in the cell.
+.It Sy "tbl column starts with span"
+.Pq tbl
+The first line of a table layout specification
+requests a vertical span
+.Pq Sq Cm ^ .
+Data provided for this cell is ignored, and nothing is printed in the cell.
+.It Sy "skipping vertical bar in tbl layout"
+.Pq tbl
+A table layout specification contains more than two consecutive vertical bars.
+A double bar is printed, all additional bars are discarded.
+.El
+.Ss "Errors related to tables"
+.Bl -ohang
+.It Sy "non-alphabetic character in tbl options"
+.Pq tbl
+The table options line contains a character other than a letter,
+blank, or comma where the beginning of an option name is expected.
+The character is ignored.
+.It Sy "skipping unknown tbl option"
+.Pq tbl
+The table options line contains a string of letters that does not
+match any known option name.
+The word is ignored.
+.It Sy "missing tbl option argument"
+.Pq tbl
+A table option that requires an argument is not followed by an
+opening parenthesis, or the opening parenthesis is immediately
+followed by a closing parenthesis.
+The option is ignored.
+.It Sy "wrong tbl option argument size"
+.Pq tbl
+A table option argument contains an invalid number of characters.
+Both the option and the argument are ignored.
+.It Sy "empty tbl layout"
+.Pq tbl
+A table layout specification is completely empty,
+specifying zero lines and zero columns.
+As a fallback, a single left-justified column is used.
+.It Sy "invalid character in tbl layout"
+.Pq tbl
+A table layout specification contains a character that can neither
+be interpreted as a layout key character nor as a layout modifier,
+or a modifier precedes the first key.
+The invalid character is discarded.
+.It Sy "unmatched parenthesis in tbl layout"
+.Pq tbl
+A table layout specification contains an opening parenthesis,
+but no matching closing parenthesis.
+The rest of the input line, starting from the parenthesis, has no effect.
+.It Sy "tbl without any data cells"
+.Pq tbl
+A table does not contain any data cells.
+It will probably produce no output.
+.It Sy "ignoring data in spanned tbl cell"
+.Pq tbl
+A table cell is marked as a horizontal span
+.Pq Sq Cm s
+or vertical span
+.Pq Sq Cm ^
+in the table layout, but it contains data.
+The data is ignored.
+.It Sy "ignoring extra tbl data cells"
+.Pq tbl
+A data line contains more cells than the corresponding layout line.
+The data in the extra cells is ignored.
+.It Sy "data block open at end of tbl"
+.Pq tbl
+A data block is opened with
+.Cm T{ ,
+but never closed with a matching
+.Cm T} .
+The remaining data lines of the table are all put into one cell,
+and any remaining cells stay empty.
+.El
+.Ss "Errors related to roff, mdoc, and man code"
+.Bl -ohang
+.It Sy "input stack limit exceeded, infinite loop?"
+.Pq roff
+Explicit recursion limits are implemented for the following features,
+in order to prevent infinite loops:
+.Bl -dash -compact
+.It
+expansion of nested escape sequences
+including expansion of strings and number registers,
+.It
+expansion of nested user-defined macros,
+.It
+and
+.Ic \&so
+file inclusion.
+.El
+When a limit is hit, the output is incorrect, typically losing
+some content, but the parser can continue.
+.It Sy "skipping bad character"
+.Pq mdoc , man , roff
+The input file contains a byte that is not a printable
+.Xr ascii 7
+character.
+The message mentions the character number.
+The offending byte is replaced with a question mark
+.Pq Sq \&? .
+Consider editing the input file to replace the byte with an ASCII
+transliteration of the intended character.
+.It Sy "skipping unknown macro"
+.Pq mdoc , man , roff
+The first identifier on a request or macro line is neither recognized as a
+.Xr roff 7
+request, nor as a user-defined macro, nor, respectively, as an
+.Xr mdoc 7
+or
+.Xr man 7
+macro.
+It may be mistyped or unsupported.
+The request or macro is discarded including its arguments.
+.It Sy "skipping insecure request"
+.Pq roff
+An input file attempted to run a shell command
+or to read or write an external file.
+Such attempts are denied for security reasons.
+.It Sy "skipping item outside list"
+.Pq mdoc , eqn
+An
+.Ic \&It
+macro occurs outside any
+.Ic \&Bl
+list, or an
+.Xr eqn 7
+.Ic above
+delimiter occurs outside any pile.
+It is discarded including its arguments.
+.It Sy "skipping column outside column list"
+.Pq mdoc
+A
+.Ic \&Ta
+macro occurs outside any
+.Ic \&Bl Fl column
+block.
+It is discarded including its arguments.
+.It Sy "skipping end of block that is not open"
+.Pq mdoc , man , eqn , tbl , roff
+Various syntax elements can only be used to explicitly close blocks
+that have previously been opened.
+An
+.Xr mdoc 7
+block closing macro, a
+.Xr man 7
+.Ic \&RE
+or
+.Ic \&UE
+macro, an
+.Xr eqn 7
+right delimiter or closing brace, or the end of an equation, table, or
+.Xr roff 7
+conditional request is encountered but no matching block is open.
+The offending request or macro is discarded.
+.It Sy "fewer RS blocks open, skipping"
+.Pq man
+The
+.Ic \&RE
+macro is invoked with an argument, but less than the specified number of
+.Ic \&RS
+blocks is open.
+The
+.Ic \&RE
+macro is discarded.
+.It Sy "inserting missing end of block"
+.Pq mdoc , tbl
+Various
+.Xr mdoc 7
+macros as well as tables require explicit closing by dedicated macros.
+A block that doesn't support bad nesting
+ends before all of its children are properly closed.
+The open child nodes are closed implicitly.
+.It Sy "appending missing end of block"
+.Pq mdoc , man , eqn , tbl , roff
+At the end of the document, an explicit
+.Xr mdoc 7
+block, a
+.Xr man 7
+next-line scope or
+.Ic \&RS
+or
+.Ic \&UR
+block, an equation, table, or
+.Xr roff 7
+conditional or ignore block is still open.
+The open block is closed implicitly.
+.It Sy "escaped character not allowed in a name"
+.Pq roff
+Macro, string and register identifiers consist of printable,
+non-whitespace ASCII characters.
+Escape sequences and characters and strings expressed in terms of them
+cannot form part of a name.
+The first argument of an
+.Ic \&am ,
+.Ic \&as ,
+.Ic \&de ,
+.Ic \&ds ,
+.Ic \&nr ,
+or
+.Ic \&rr
+request, or any argument of an
+.Ic \&rm
+request, or the name of a request or user defined macro being called,
+is terminated by an escape sequence.
+In the cases of
+.Ic \&as ,
+.Ic \&ds ,
+and
+.Ic \&nr ,
+the request has no effect at all.
+In the cases of
+.Ic \&am ,
+.Ic \&de ,
+.Ic \&rr ,
+and
+.Ic \&rm ,
+what was parsed up to this point is used as the arguments to the request,
+and the rest of the input line is discarded including the escape sequence.
+When parsing for a request or a user-defined macro name to be called,
+only the escape sequence is discarded.
+The characters preceding it are used as the request or macro name,
+the characters following it are used as the arguments to the request or macro.
+.It Sy "NOT IMPLEMENTED: Bd -file"
+.Pq mdoc
+For security reasons, the
+.Ic \&Bd
+macro does not support the
+.Fl file
+argument.
+By requesting the inclusion of a sensitive file, a malicious document
+might otherwise trick a privileged user into inadvertently displaying
+the file on the screen, revealing the file content to bystanders.
+The argument is ignored including the file name following it.
+.It Sy "skipping display without arguments"
+.Pq mdoc
+A
+.Ic \&Bd
+block macro does not have any arguments.
+The block is discarded, and the block content is displayed in
+whatever mode was active before the block.
+.It Sy "missing list type, using -item"
+.Pq mdoc
+A
+.Ic \&Bl
+macro fails to specify the list type.
+.It Sy "missing manual name, using \(dq\(dq"
+.Pq mdoc
+The first call to
+.Ic \&Nm
+lacks the required argument.
+.It Sy "uname(3) system call failed, using UNKNOWN"
+.Pq mdoc
+The
+.Ic \&Os
+macro is called without arguments, and the
+.Xr uname 3
+system call failed.
+As a workaround,
+.Nm
+can be compiled with
+.Sm off
+.Fl D Cm OSNAME=\(dq\e\(dq Ar string Cm \e\(dq\(dq .
+.Sm on
+.It Sy "unknown standard specifier"
+.Pq mdoc
+An
+.Ic \&St
+macro has an unknown argument and is discarded.
+.It Sy "skipping request without numeric argument"
+.Pq roff , eqn
+An
+.Ic \&it
+request or an
+.Xr eqn 7
+.Ic \&size
+or
+.Ic \&gsize
+statement has a non-numeric or negative argument or no argument at all.
+The invalid request or statement is ignored.
+.It Sy "NOT IMPLEMENTED: .so with absolute path or \(dq..\(dq"
+.Pq roff
+For security reasons,
+.Nm
+allows
+.Ic \&so
+file inclusion requests only with relative paths
+and only without ascending to any parent directory.
+By requesting the inclusion of a sensitive file, a malicious document
+might otherwise trick a privileged user into inadvertently displaying
+the file on the screen, revealing the file content to bystanders.
+.Nm
+only shows the path as it appears behind
+.Ic \&so .
+.It Sy ".so request failed"
+.Pq roff
+Servicing a
+.Ic \&so
+request requires reading an external file, but the file could not be
+opened.
+.Nm
+only shows the path as it appears behind
+.Ic \&so .
+.It Sy "skipping all arguments"
+.Pq mdoc , man , eqn , roff
+An
+.Xr mdoc 7
+.Ic \&Bt ,
+.Ic \&Ed ,
+.Ic \&Ef ,
+.Ic \&Ek ,
+.Ic \&El ,
+.Ic \&Lp ,
+.Ic \&Pp ,
+.Ic \&Re ,
+.Ic \&Rs ,
+or
+.Ic \&Ud
+macro, an
+.Ic \&It
+macro in a list that don't support item heads, a
+.Xr man 7
+.Ic \&LP ,
+.Ic \&P ,
+or
+.Ic \&PP
+macro, an
+.Xr eqn 7
+.Ic \&EQ
+or
+.Ic \&EN
+macro, or a
+.Xr roff 7
+.Ic \&br ,
+.Ic \&fi ,
+or
+.Ic \&nf
+request or
+.Sq \&..
+block closing request is invoked with at least one argument.
+All arguments are ignored.
+.It Sy "skipping excess arguments"
+.Pq mdoc , man , roff
+A macro or request is invoked with too many arguments:
+.Bl -dash -offset 2n -width 2n -compact
+.It
+.Ic \&Fo ,
+.Ic \&PD ,
+.Ic \&RS ,
+.Ic \&UR ,
+.Ic \&ft ,
+or
+.Ic \&sp
+with more than one argument
+.It
+.Ic \&An
+with another argument after
+.Fl split
+or
+.Fl nosplit
+.It
+.Ic \&RE
+with more than one argument or with a non-integer argument
+.It
+.Ic \&OP
+or a request of the
+.Ic \&de
+family with more than two arguments
+.It
+.Ic \&Dt
+with more than three arguments
+.It
+.Ic \&TH
+with more than five arguments
+.It
+.Ic \&Bd ,
+.Ic \&Bk ,
+or
+.Ic \&Bl
+with invalid arguments
+.El
+The excess arguments are ignored.
+.El
+.Ss Unsupported features
+.Bl -ohang
+.It Sy "input too large"
+.Pq mdoc , man
+Currently,
+.Nm
+cannot handle input files larger than its arbitrary size limit
+of 2^31 bytes (2 Gigabytes).
+Since useful manuals are always small, this is not a problem in practice.
+Parsing is aborted as soon as the condition is detected.
+.It Sy "unsupported control character"
+.Pq roff
+An ASCII control character supported by other
+.Xr roff 7
+implementations but not by
+.Nm
+was found in an input file.
+It is replaced by a question mark.
+.It Sy "unsupported roff request"
+.Pq roff
+An input file contains a
+.Xr roff 7
+request supported by GNU troff or Heirloom troff but not by
+.Nm ,
+and it is likely that this will cause information loss
+or considerable misformatting.
+.It Sy "eqn delim option in tbl"
+.Pq eqn , tbl
+The options line of a table defines equation delimiters.
+Any equation source code contained in the table will be printed unformatted.
+.It Sy "unsupported table layout modifier"
+.Pq tbl
+A table layout specification contains an
+.Sq Cm m
+modifier.
+The modifier is discarded.
+.It Sy "ignoring macro in table"
+.Pq tbl , mdoc , man
+A table contains an invocation of an
+.Xr mdoc 7
+or
+.Xr man 7
+macro or of an undefined macro.
+The macro is ignored, and its arguments are handled
+as if they were a text line.
+.El
+.Sh SEE ALSO
+.Xr apropos 1 ,
+.Xr man 1 ,
+.Xr eqn 7 ,
+.Xr man 7 ,
+.Xr mandoc_char 7 ,
+.Xr mdoc 7 ,
+.Xr roff 7 ,
+.Xr tbl 7
+.Sh AUTHORS
+.An -nosplit
+The
+.Nm
+utility was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv
+and is maintained by
+.An Ingo Schwarze Aq Mt schwarze@@openbsd.org .
+.Sh BUGS
+In
+.Fl T Cm html ,
+the maximum size of an element attribute is determined by
+.Dv BUFSIZ ,
+which is usually 1024 bytes.
+Be aware of this when setting long link
+formats such as
+.Fl O Cm style Ns = Ns Ar really/long/link .
+@
+
+
+1.163
+log
+@If a .Bd block has no arguments at all, drop the block and only keep
+its contents.  Removing a gratuitious difference to groff output
+found after a related bug report from krw@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.162 2015/10/06 15:33:29 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 6 2015 $
+d352 1
+a352 1
+.Pa example.style.css
+d604 1
+a604 1
+.Ar style.css
+d607 1
+a607 1
+.Dl $ mandoc \-T html -O style=style.css mdoc.7 \*(Gt mdoc.7.html
+@
+
+
+1.162
+log
+@improve wording and start a new sentence on a new line; from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.161 2015/09/26 12:56:04 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 26 2015 $
+d1603 7
+@
+
+
+1.161
+log
+@briefly document -T tree output
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.160 2015/09/14 15:36:14 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 14 2015 $
+d500 1
+a500 1
+The exact format is subject to change, don't write parsers for it.
+d509 2
+a510 1
+nodes, the content.  There is a special format for
+@
+
+
+1.160
+log
+@Remove the warning about children of .Vt blocks because actually,
+.Vt type global_variable No = Dv defined_constant ;
+is the best way to specify in the SYNOPSIS how a global variable
+is initialized in the rare case where that matters.
+Issue noticed by jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.159 2015/04/03 08:46:17 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 3 2015 $
+d287 2
+d495 38
+@
+
+
+1.159
+log
+@No need to hardcode /usr/bin/ as the path to more(1); helps portability.
+We don't hardcode the paths to gunzip(1) and cmp(1) either.
+Discussed with ajacoutot@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.158 2015/03/30 16:06:14 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 30 2015 $
+a936 7
+.It Sy ".Vt block has child macro"
+.Pq mdoc
+The
+.Ic \&Vt
+macro supports plain text arguments only.
+Formatting may be ugly and semantic searching
+for the affected content might not work.
+@
+
+
+1.158
+log
+@Escape punctuation characters that have a different meaning in -Tpdf.
+
+~, `, and ' get translated to non-ASCII characters by most troff
+implementations when generating PostScript/PDF output.  When the
+original ASCII character is meant, it needs to be manually escaped.
+
+Patch from bentley@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.157 2015/03/27 21:40:04 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 27 2015 $
+d505 2
+a506 1
+.Pa /usr/bin/more Fl s
+@
+
+
+1.157
+log
+@refering -> referring; patch from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.156 2015/03/27 16:36:31 schwarze Exp $
+d569 1
+a569 1
+.Dl $ mandoc \-T lint `find /usr/src -name \e*\e.[1-9]`
+@
+
+
+1.156
+log
+@Modernize documentation by inserting blanks between option letters
+and option arguments, except for -m because "-m an" and "-m andoc"
+look just too weird.  Of course, the traditional form without the
+blank will continue to work.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.155 2015/02/23 13:31:03 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 23 2015 $
+d816 1
+a816 1
+macros refering to the same section are out of alphabetical order.
+@
+
+
+1.155
+log
+@improve NAME section diagnostics;
+confusing messages reported by Jan Stary <hans at stare dot cz>
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.154 2015/02/16 19:02:48 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 16 2015 $
+d27 2
+a28 4
+.Sm off
+.Op Fl I Cm os Li = Ar name
+.Sm on
+.Op Fl K Ns Ar encoding
+d30 3
+a32 3
+.Op Fl O Ns Ar option
+.Op Fl T Ns Ar output
+.Op Fl W Ns Ar level
+d50 1
+a50 1
+.Fl T Ns Cm locale
+d78 1
+a78 3
+.Sm off
+.It Fl I Cm os Li = Ar name
+.Sm on
+d92 1
+a92 1
+.It Fl K Ns Ar encoding
+d140 1
+a140 1
+.It Fl O Ns Ar option
+d142 1
+a142 1
+.It Fl T Ns Ar output
+d148 2
+a149 2
+.Fl T Ns Cm locale .
+.It Fl W Ns Ar level
+d173 1
+a173 1
+.Fl W Ns Cm stop
+d184 1
+a184 1
+.Fl W Ns Cm error , Ns Cm stop .
+d253 2
+a254 2
+.Bl -tag -width "-Tlocale"
+.It Fl T Ns Cm ascii
+d258 1
+a258 1
+.It Fl T Ns Cm html
+d262 1
+a262 1
+.It Fl T Ns Cm lint
+d265 2
+a266 2
+.Fl W Ns Cm warning .
+.It Fl T Ns Cm locale
+d271 1
+a271 1
+.It Fl T Ns Cm man
+d277 1
+a277 1
+.It Fl T Ns Cm pdf
+d281 1
+a281 1
+.It Fl T Ns Cm ps
+d285 1
+a285 1
+.It Fl T Ns Cm tree
+d287 1
+a287 1
+.It Fl T Ns Cm utf8
+d291 1
+a291 1
+.It Fl T Ns Cm xhtml
+d293 1
+a293 1
+.Fl T Ns Cm html .
+d300 1
+a300 1
+.Fl T Ns Cm ascii
+d342 1
+a342 1
+.Fl T Ns Cm html
+d353 2
+a354 2
+.Fl O Ns Ar style ,
+.Fl T Ns Cm html
+d410 1
+a410 1
+.Fl T Ns Cm locale .
+d416 1
+a416 1
+.Fl T Ns Cm ascii .
+d446 1
+a446 1
+.Fl T Ns Cm pdf .
+d456 1
+a456 1
+.Fl T Ns Cm ps .
+d488 1
+a488 1
+.Fl T Ns Cm utf8
+d524 1
+a524 1
+.Fl W Ns Cm warning
+d529 1
+a529 1
+.Fl W Ns Cm error
+d531 1
+a531 1
+.Fl W Ns Cm warning
+d535 2
+a536 2
+.Fl W Ns Cm unsupp ,
+.Fl W Ns Cm error
+d538 1
+a538 1
+.Fl W Ns Cm warning
+d552 1
+a552 1
+.Fl T Ns Cm lint
+d554 1
+a554 1
+.Fl W Ns Cm warning .
+d558 1
+a558 1
+.Dl $ mandoc \-Wall,stop mandoc.1 2\*(Gt&1 | less
+d565 1
+a565 1
+.Dl $ mandoc \-Thtml -Ostyle=style.css mdoc.7 \*(Gt mdoc.7.html
+d569 1
+a569 1
+.Dl $ mandoc \-Tlint `find /usr/src -name \e*\e.[1-9]`
+d573 1
+a573 1
+.Dl $ mandoc \-Tps \-Opaper=a4 mdoc.7 man.7 \*(Gt manuals.ps
+d583 1
+a583 1
+.Dl $ mandoc \-Tman foo.mdoc \*(Gt foo.man
+d650 1
+a650 1
+.Fl T Ns Cm lint
+d1766 1
+d1775 1
+a1775 1
+.Fl T Ns Cm html ,
+d1781 1
+a1781 1
+.Fl O Ns Cm style Ns = Ns Ar really/long/link .
+@
+
+
+1.154
+log
+@clean up post_dt() validation function;
+improved diagnostics, minus six lines of code
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.153 2015/02/16 16:23:54 schwarze Exp $
+d774 1
+a774 1
+.It Sy "bad NAME section contents"
+d776 6
+a781 1
+The last node in the NAME section is not an
+d783 10
+a792 5
+macro, or any preceding macro is not
+.Ic \&Nm ,
+or the NAME section is completely empty.
+This may confuse
+.Xr makewhatis 8
+d794 1
+a794 1
+.Xr apropos 1 .
+@
+
+
+1.153
+log
+@Delete the -V option.  It serves no purpose but keeps confusing people.
+
+Keeping track of the versions of installed software is the job of
+the package manager, not of the individual binaries.  If individual
+binaries include version numbers, that tends to goad people into
+writing broken configuration tests that inspect version numbers
+instead of properly testing for features.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.152 2015/02/07 15:15:20 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 7 2015 $
+d1690 3
+@
+
+
+1.152
+log
+@some tweaks to the DIAGNOSTICS section
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.151 2015/02/06 16:06:25 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 6 2015 $
+d26 1
+a26 1
+.Op Fl acfhklV
+a152 2
+.It Fl V
+Print version and exit.
+@
+
+
+1.151
+log
+@replace the last legacy generic message type, "argument count wrong",
+by more specific messages, improving diagnostics for .cc .tr .Bl -column
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.150 2015/02/06 11:54:36 schwarze Exp $
+d732 3
+a734 3
+macro can only occur before the first non-prologue macro
+because traditional formatters write the page header
+before parsing the document body.
+d839 1
+a839 1
+If the intention is to call it, move it to its own line;
+d1083 1
+a1083 1
+.It Sy "missing font type"
+d1088 2
+a1089 3
+It switches to the default font,
+.Cm \efR .
+.It Sy "unknown font type"
+d1094 1
+a1094 3
+The default font
+.Cm \efR
+is used instead.
+d1503 1
+a1503 1
+.It Sy "scope open on exit"
+@
+
+
+1.150
+log
+@better error reporting regarding .OP .RS .UR .TH arguments
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.149 2015/02/06 09:38:43 schwarze Exp $
+d1204 9
+d1264 6
+a1555 6
+.It Sy "argument count wrong"
+.Pq mdoc , man , roff
+The indicated request or macro has too few or too many arguments.
+The syntax tree will contain the wrong number of arguments as given.
+Formatting behaviour depends on the specific request or macro in question.
+Note that the same message may also occur as a WARNING, see above.
+@
+
+
+1.149
+log
+@better diagnostics about excess arguments to .PD .ft .sp
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.148 2015/02/06 08:28:35 schwarze Exp $
+d1128 12
+d1660 12
+a1671 1
+The
+d1673 1
+a1673 1
+macro is invoked with another argument after
+d1676 13
+a1688 3
+.Fl nosplit ,
+.Ic \&Fo
+is invoked with more than one argument,
+d1693 2
+a1694 12
+are invoked with invalid arguments, the
+.Ic \&RE
+macro is invoked with more than one argument
+or with a non-integer argument, the
+.Ic \&PD
+macro or the
+.Ic \&ft
+or
+.Ic \&sp
+request is invoked with more than one argument, or a request of the
+.Ic \&de
+family is invoked with more than two arguments.
+@
+
+
+1.148
+log
+@better error reporting for .br .fi .nf with arguments
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.147 2015/02/06 07:13:14 schwarze Exp $
+d1664 4
+@
+
+
+1.147
+log
+@Delete the legacy generic warning type MANDOCERR_ARGCWARN,
+replacing the last instances by more specific warnings.
+Improved functionality, minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.146 2015/02/06 03:38:45 schwarze Exp $
+d1638 4
+a1641 1
+.Ic \&br
+@
+
+
+1.146
+log
+@better handle .Fo and .Fd without argument
+better handle .Fo with more than one argument
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.145 2015/02/04 22:30:10 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 4 2015 $
+d997 13
+a1009 2
+The indicated macro has no arguments or no body content
+and hence no effect.
+a1018 6
+.It Sy "argument count wrong"
+.Pq mdoc , man
+The indicated macro has too few or too many arguments.
+The syntax tree will contain the wrong number of arguments as given.
+Formatting behaviour depends on the specific macro in question.
+Note that the same message may also occur as an ERROR, see below.
+@
+
+
+1.145
+log
+@Discard excess head arguments for .Bd .Bl .Bk and delete hwarn_eq0().
+Discard empty .Bk blocks.
+Improve related diagnostics.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.144 2015/02/04 19:20:12 schwarze Exp $
+d1045 6
+d1646 2
+@
+
+
+1.144
+log
+@improve diagnostics regarding arguments of .An .Pp .Lp .br .sp
+in particular, get rid of check_count(..., CHECK_EQ, 0)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.143 2015/02/04 18:03:47 schwarze Exp $
+d997 2
+a998 1
+The indicated macro has no arguments and hence no effect.
+d1640 5
+a1644 5
+the
+.Ic \&Bf
+macro or the
+.Ic \&sp
+request is invoked with more than one argument, the
+d1647 3
+a1649 1
+or with a non-integer argument, or a request of the
+@
+
+
+1.143
+log
+@discard .Rs head arguments and improve .Rs diagnostics
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.142 2015/02/04 16:38:56 schwarze Exp $
+d1605 2
+d1626 2
+d1634 6
+d1641 3
+a1643 1
+macro is invoked with more than one argument, the
+@
+
+
+1.142
+log
+@more specific .Nd diagnostics, allowing to get rid of enum check_lvl
+and the respective argument of check_count()
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.141 2015/01/29 00:33:57 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 29 2015 $
+d1094 8
+d1606 1
+@
+
+
+1.141
+log
+@Radical cleanup of COMPATIBILITY sections:
+Remove lots of lies, dozens of irrelevant implementation details,
+and all references to groff versions older than 1.17.  Move relevant
+information to the pages where it belongs, and out of mandoc(1) in
+particular.  Add some missing general remarks to roff(7), where it
+fits the character and purpose of the page much better.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.140 2015/01/28 21:11:53 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 28 2015 $
+d787 6
+@
+
+
+1.140
+log
+@Clean up eqn(7) error handling:
+* When "define" fails, do not drop the whole equation.
+* Free memory after "undef".
+* Use standard mandoc error types instead of rolling our own.
+* Delete obfuscating EQN_MSG() macro.
+* Add function prototypes while here.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.139 2015/01/28 17:32:07 schwarze Exp $
+a323 3
+If no equivalent is found,
+.Sq \&?
+is used instead.
+d344 1
+a344 1
+which will normalise to \(>=60.
+a1669 81
+.Sh COMPATIBILITY
+This section summarises
+.Nm
+compatibility with GNU troff.
+Each input and output format is separately noted.
+.Ss ASCII Compatibility
+.Bl -bullet -compact
+.It
+Unrenderable unicode codepoints specified with
+.Sq \e[uNNNN]
+escapes are printed as
+.Sq \&?
+in mandoc.
+In GNU troff, these raise an error.
+.It
+The
+.Sq \&Bd \-literal
+and
+.Sq \&Bd \-unfilled
+macros of
+.Xr mdoc 7
+in
+.Fl T Ns Cm ascii
+are synonyms, as are \-filled and \-ragged.
+.It
+In historic GNU troff, the
+.Sq \&Pa
+.Xr mdoc 7
+macro does not underline when scoped under an
+.Sq \&It
+in the FILES section.
+This behaves correctly in
+.Nm .
+.It
+A list or display following the
+.Sq \&Ss
+.Xr mdoc 7
+macro in
+.Fl T Ns Cm ascii
+does not assert a prior vertical break, just as it doesn't with
+.Sq \&Sh .
+.It
+The
+.Sq \&na
+.Xr man 7
+macro in
+.Fl T Ns Cm ascii
+has no effect.
+.It
+Words aren't hyphenated.
+.El
+.Ss HTML Compatibility
+.Bl -bullet -compact
+.It
+The
+.Sq \efP
+escape will revert the font to the previous
+.Sq \ef
+escape, not to the last rendered decoration, which is now dictated by
+CSS instead of hard-coded.
+It also will not span past the current scope,
+for the same reason.
+Note that in
+.Sx ASCII Output
+mode, this will work fine.
+.It
+The
+.Xr mdoc 7
+.Sq \&Bl \-hang
+and
+.Sq \&Bl \-tag
+list types render similarly (no break following overreached left-hand
+side) due to the expressive constraints of HTML.
+.It
+The
+.Xr man 7
+.Sq IP
+and
+.Sq TP
+lists render similarly.
+.El
+d1671 2
+d1683 4
+a1686 2
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+.Sh CAVEATS
+d1688 1
+a1688 3
+.Fl T Ns Cm html
+and
+.Fl T Ns Cm xhtml ,
+a1694 17
+.Pp
+Nesting elements within next-line element scopes of
+.Fl m Ns Cm an ,
+such as
+.Sq br
+within an empty
+.Sq B ,
+will confuse
+.Fl T Ns Cm html
+and
+.Fl T Ns Cm xhtml
+and cause them to forget the formatting of the prior next-line scope.
+.Pp
+The
+.Sq \(aq
+control character is an alias for the standard macro control character
+and does not emit a line-break as stipulated in GNU troff.
+@
+
+
+1.139
+log
+@* Polish tbl(7) error reporting.
+* Do not print out macro names in tbl(7) data blocks.
+* Like with GNU tbl, let empty tables cause a blank line.
+* Avoid producing empty tables in -Tman.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.138 2015/01/26 18:42:30 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 26 2015 $
+a1293 7
+.Ss "Errors related to equations"
+.Bl -inset -compact
+.It "unexpected equation scope closure"
+.It "equation scope open on exit"
+.It "overlapping equation scopes"
+.It "unexpected end of equation"
+.El
+@
+
+
+1.138
+log
+@Rework tbl(7) layout parsing:
+* Continue parsing even if part of the input is invalid.
+* Do not require whitespace between cell specifications.
+* Allow tabs as well as blanks between modifiers.
+* Mark the 'm' modifier as unsupported.
+* Parse and ignore the 'p' and 'v' modifiers.
+* Better warning and error messages.
+* Get rid of a static buffer.
+Improved functionality but minus 50 lines of code.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.137 2015/01/26 13:03:48 schwarze Exp $
+d1339 24
+a1362 7
+.El
+.Pp
+.Bl -inset -compact
+.It Sy "no table data cells specified"
+.It Sy "ignore data in cell"
+.It Sy "data block still open"
+.It Sy "ignoring extra data cells"
+d1660 5
+a1664 1
+.It Sy "unsupported table layout modfier"
+d1671 8
+a1678 4
+.It Sy "eqn in tbl"
+.Pq eqn , tbl
+The options line of a table defines equation delimiters.
+Any equation source code contained in the table will be printed unformatted.
+@
+
+
+1.137
+log
+@More improvements regarding tbl(7) options.
+* Treat "allbox" as an alias for "box" for now.
+* Parse and ignore the GNU tbl "nowarn" option.
+* For separation, allow spaces, tabs, and commas only.
+* Mark eqn(7) within tbl(7) as unsupported.
+* Simplify the option table.
+* Improve and sort documentation.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.136 2015/01/26 00:57:22 schwarze Exp $
+d1276 18
+d1323 16
+a1341 1
+.It Sy "no table layout cells specified"
+d1643 6
+a1648 1
+.It Sy "unsupported table layout"
+@
+
+
+1.136
+log
+@Improve (or rather, rewrite) tbl(7) option parsing.
+* Allow the layout to start after the semicolon on the options line.
+* Ignore leading commas.
+* Option arguments cannot contain closing parentheses.
+* Avoid needless UNSUPP messages.
+* Better ERROR reporting.
+* Delete unused "linesize" field in struct tbl_opts.
+* No need for static buffers.
+* Garbage collect one almost empty wrapper function.
+Improved functionality, but minus 40 lines of code.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.135 2015/01/24 01:58:33 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 24 2015 $
+d1612 4
+@
+
+
+1.135
+log
+@Support .RE with an argument; needed for audio/pms(1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.134 2015/01/20 22:45:07 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 20 2015 $
+d1284 23
+d1308 5
+a1312 5
+.It "no table layout cells specified"
+.It "no table data cells specified"
+.It "ignore data in cell"
+.It "data block still open"
+.It "ignoring extra data cells"
+d1594 8
+d1610 1
+a1610 3
+.It Sy "bad table syntax"
+.It Sy "bad table option"
+.It Sy "bad table layout"
+@
+
+
+1.134
+log
+@typo fixes from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.133 2015/01/20 21:16:51 schwarze Exp $
+d1372 10
+d1550 1
+a1550 1
+.Pq mdoc , roff
+d1553 4
+a1556 1
+macro is invoked with more than one argument, or a request of the
+@
+
+
+1.133
+log
+@Split the -Werror message level into -Werror (broken manual, probably
+using mandoc is better than using groff) and -Wunsupp (manual using
+unsupported low-level roff(7) feature, probably using groff is better
+than using mandoc).  Once this feature is complete, it is intended
+to help porting, making the decision whether to USE_GROFF easier.
+
+As a first step, distinguish four classes of roff(7) requests:
+1. Supported (currently 24 requests)
+2. Currently ignored because unimportant (120)  ->  no message
+3. Ignored for good because insecure (14)  ->  -Werror
+4. Currently unsupported (68)  ->  these trigger the new -Wunsupp messages
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.132 2015/01/15 04:26:40 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 15 2015 $
+d543 1
+a543 1
+At least on unsupported feature was encountered, and
+@
+
+
+1.132
+log
+@Fatal errors no longer exist.
+If a file can be opened, mandoc will produce some output;
+at worst, the output may be almost empty.
+Simplifies error handling and frees a message type for future use.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.131 2015/01/14 22:02:49 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: January 14 2015 $
+d162 2
+a163 1
+.Cm warning
+d165 1
+a165 1
+.Cm error ;
+d536 9
+a544 1
+At least one parsing error occurred, and
+d613 8
+d622 1
+a622 4
+An input file contains syntax that cannot be safely interpreted,
+either because it is invalid or because
+.Nm
+does not implement it yet.
+d627 8
+a634 1
+or unintended formatting.
+d651 2
+a652 1
+.Cm warning
+d654 1
+a654 1
+.Cm error
+a1284 3
+.It "bad table syntax"
+.It "bad table option"
+.It "bad table layout"
+a1289 1
+.It "ignoring macro in table"
+a1292 8
+.It Sy "input too large"
+.Pq mdoc , man
+Currently,
+.Nm
+cannot handle input files larger than its arbitrary size limit
+of 2^31 bytes (2 Gigabytes).
+Since useful manuals are always small, this is not a problem in practice.
+Parsing is aborted as soon as the condition is detected.
+d1331 5
+d1548 23
+@
+
+
+1.131
+log
+@To get rid of SYSERR entries in enum mandocerr, downgrade problems with
+missing and unreadable files from SYSERR to ERROR.
+Needed for upcoming work.
+As a bonus, this minimally simplifies code and documentation.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.130 2014/12/28 14:42:27 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 28 2014 $
+d162 1
+a162 2
+.Cm warning ,
+.Cm error ,
+d164 2
+a165 4
+.Cm fatal .
+The default is
+.Fl W Ns Cm fatal ;
+.Fl W Ns Cm all
+d167 4
+a170 1
+.Fl W Ns Cm warning .
+d535 1
+a535 1
+At least one parsing error occurred, but no fatal error, and
+a539 2
+.It 4
+A fatal parsing error occurred.
+a603 3
+.It Cm fatal
+The parser is unable to parse a given input file at all.
+No formatted output is produced from that input file.
+d1275 8
+d1471 23
+a1532 38
+.Ss FATAL errors
+.Bl -ohang
+.It Sy "input too large"
+.Pq mdoc , man
+Currently,
+.Nm
+cannot handle input files larger than its arbitrary size limit
+of 2^31 bytes (2 Gigabytes).
+Since useful manuals are always small, this is not a problem in practice.
+Parsing is aborted as soon as the condition is detected.
+.It Sy "NOT IMPLEMENTED: .so with absolute path or \(dq..\(dq"
+.Pq roff
+For security reasons,
+.Nm
+allows
+.Ic \&so
+file inclusion requests only with relative paths
+and only without ascending to any parent directory.
+By requesting the inclusion of a sensitive file, a malicious document
+might otherwise trick a privileged user into inadvertently displaying
+the file on the screen, revealing the file content to bystanders.
+The parser exits immediately.
+.It Sy ".so request failed"
+.Pq roff
+Servicing a
+.Ic \&so
+request requires reading an external file.
+While trying to do so, an
+.Xr open 2 ,
+.Xr stat 2 ,
+or
+.Xr read 2
+system call failed.
+The parser exits immediately.
+Before showing this message,
+.Nm
+always shows another message explaining why the system call failed.
+.El
+@
+
+
+1.130
+log
+@mdoc(7) already uses the mandoc(1) -Ios argument in the footer line
+when .Os has no argument, so do the same for man(7) when .TH has less
+than four arguments; there is no reason to treat both differently.
+Issue found following a question from Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.129 2014/12/16 23:44:41 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2012, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: December 16 2014 $
+d546 2
+a547 2
+An operating system error occurred, for example memory exhaustion or an
+error accessing input files.
+a605 3
+.It Cm syserr
+Opening or reading an input file failed, so the parser cannot
+even be started and no output is produced from that input file.
+d619 6
+d638 2
+a639 1
+levels are hidden unless their level, or a lower level, is requested using a
+@
+
+
+1.129
+log
+@Ignore mdoc(7) and man(7) macros inside tbl(7) code because they
+would abort the table in an unclean way, causing assertion failures
+found by jsg@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.128 2014/12/02 11:31:51 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 2 2014 $
+d88 3
+@
+
+
+1.128
+log
+@Switch the default output mode from -Tascii to -Tlocale.
+This doesn't change anything unless LC_CTYPE is set,
+but it helps when running with LC_TYPE=something.UTF-8.
+
+OK tedu@@  and earlier positive feedback from:
+bentley@@ deraadt@@ naddy@@ stsp@@  uqs@@freebsd wiz@@netbsd
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.127 2014/11/30 05:29:00 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 30 2014 $
+d1269 1
+@
+
+
+1.127
+log
+@Multiple fixes with respect to .Pf:
+* The first argument of .Pf is not parsed.
+* Normal delimiter handling does not apply to the first argument of .Pf.
+* Warn if nothing follows a prefix (inspired by groff_mdoc(7)).
+* In that case, do not suppress spacing.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.126 2014/11/30 02:36:38 schwarze Exp $
+d52 1
+a52 1
+.Fl T Ns Cm ascii
+d149 1
+a149 1
+.Fl T Ns Cm ascii .
+a257 1
+This is the default.
+d270 1
+d302 2
+a303 2
+.Fl T Ns Cm ascii ,
+which is the default, is rendered in standard 7-bit ASCII documented in
+d416 2
+@
+
+
+1.126
+log
+@warn about attempts to call non-callable macros;
+inspired by a similar warning in the groff_mdoc(7) macros
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.125 2014/11/28 18:09:01 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 28 2014 $
+d1057 8
+@
+
+
+1.125
+log
+@Drop useless architecture table.  Validating architecture names
+is a job for makewhatis(8)/mandoc.db(5), not for the parser.
+Removes 150 lines from source files and 4k (1%) from the binary.
+Bloat found by deraadt@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.124 2014/11/27 23:40:19 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 27 2014 $
+d806 7
+@
+
+
+1.124
+log
+@Downgrade .Bd -file from FATAL to ERROR.
+Since this was the last remaining FATAL error in this area,
+this change will allow major simplifications in the mdoc(7) parser.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.123 2014/11/25 20:18:15 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 25 2014 $
+a667 6
+.It Sy "unknown manual volume or arch"
+.Pq mdoc
+The volume name in a
+.Ic \&Dt
+line is invalid, but still used.
+The manual is assumed to be architecture-independent.
+@
+
+
+1.123
+log
+@"Aq foo" is not the same as "<foo>". Don't use it to mark up HTML;
+from bentley@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.122 2014/11/11 02:43:41 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: November 11 2014 $
+d1399 11
+a1497 11
+.It Sy "NOT IMPLEMENTED: Bd -file"
+.Pq mdoc
+For security reasons, the
+.Ic \&Bd
+macro does not support the
+.Fl file
+argument.
+By requesting the inclusion of a sensitive file, a malicious document
+might otherwise trick a privileged user into inadvertently displaying
+the file on the screen, revealing the file content to bystanders.
+The parser exits immediately.
+@
+
+
+1.122
+log
+@Let -h imply -c (that is, not use the pager).
+Usually, -h output is short, so the pager is just a nuisance.
+Also, traditional man(1) does not use a pager for -h.
+Triggered by a remark of deraadt@@ on ICB.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.121 2014/10/30 17:14:59 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 30 2014 $
+d371 2
+a372 10
+Omit the
+.Aq !DOCTYPE
+declaration and the
+.Aq html ,
+.Aq head ,
+and
+.Aq body
+elements and only emit the subtree below the
+.Aq body
+element.
+@
+
+
+1.121
+log
+@fix a macro error in previous; from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.120 2014/10/25 14:35:37 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 25 2014 $
+d92 1
+a92 1
+.Fl a .
+@
+
+
+1.120
+log
+@Report arguments to .EQ as an error, and simplify the code:
+* drop trivial wrapper function roff_openeqn()
+* drop unused first arg of function eqn_alloc()
+* drop usused member "name" of struct eqn_node
+While here, sync to OpenBSD by killing some trailing blanks.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.119 2014/10/25 01:03:52 schwarze Exp $
+d30 1
+a30 1
+.Op Fl K Na Ar encoding
+@
+
+
+1.119
+log
+@integrate preconv(1) into mandoc(1);
+enhances functionality and reduces code and docs by more than 300 lines
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.118 2014/10/12 19:31:41 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 12 2014 $
+d1468 2
+@
+
+
+1.118
+log
+@Improve error handling in the eqn(7) parser.
+Get rid of the first fatal error, MANDOCERR_EQNSYNT.
+In eqn(7), there is no need to be bug-compatible with groff, so there
+is no need to abondon the whole equation in case of a syntax error.
+
+In particular:
+* Skip "back", "delim", "down", "fwd", "gfont", "gsize", "left",
+  "right", "size", and "up" without arguments.
+* Skip "gsize" and "size" with a non-numeric argument.
+* Skip closing delimiters that are not open.
+* Skip "above" outside piles.
+* For diacritic marks and binary operators without a left operand,
+  default to an empty box.
+* Let piles and matrices take one argument rather than insisting
+  on a braced list.  Let HTML output handle that, too.
+* When rewinding, if the root box is guaranteed to match
+  the termination condition, no error handling is needed.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.117 2014/10/11 21:14:16 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 11 2014 $
+d30 1
+d93 25
+@
+
+
+1.117
+log
+@warn about parentheses in function names after .Fn and .Fo;
+particularly useful when converting from other languages to mdoc(7);
+feature suggested by bentley@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.116 2014/10/10 08:44:24 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 10 2014 $
+d914 5
+a918 2
+.Pq roff
+The macro name is missing from a macro definition request.
+d1052 5
+a1228 1
+.It "equation syntax error"
+d1282 1
+a1282 1
+.Pq mdoc
+d1287 4
+a1290 1
+list.
+d1311 3
+a1313 1
+macro, or the end of an equation, table, or
+d1410 1
+a1410 1
+.Pq roff
+d1413 7
+a1419 2
+request has a non-numeric or negative argument or no argument at all.
+The invalid request is ignored.
+@
+
+
+1.116
+log
+@Re-write of eqn(7) parser and MathML output.
+This adds parser-level support for the grammar described by the eqn
+second-edition technical paper, "Typesetting Mathematics — User's Guide"
+(Kernighan, Cherry).
+The reason for this re-write is the grouping rules, which were not
+possible given the existing implementation.
+The re-write has also considerably simplified the HTML (and, if it ever
+is completed, terminal) front-end.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.115 2014/10/07 14:07:03 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 7 2014 $
+d1123 8
+@
+
+
+1.115
+log
+@If a tbl(7) layout contains unknown font modifiers, fall back to the
+default font rather than failing the whole table.
+Needed by some pages in books/man-pages-posix.
+Written on the plane back from EuroBSDCon in Sofia.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.114 2014/09/27 11:17:19 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 27 2014 $
+d236 1
+a236 1
+Produce CSS1/HTML5 output.
+d323 4
+@
+
+
+1.114
+log
+@Don't pretend we have a separate XHTML and HTML mode any more.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.113 2014/09/12 00:54:10 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 12 2014 $
+d1137 1
+a1137 1
+.Pq man
+d1141 6
+a1146 1
+request has an invalid argument.
+@
+
+
+1.113
+log
+@warn about commas in function arguments; inspired by mdoclint(1)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.112 2014/09/12 00:10:26 schwarze Exp $
+d236 1
+a236 1
+Produce strict CSS1/HTML-4.01 output.
+d268 2
+a269 3
+Produce strict CSS1/XHTML-1.0 output.
+See
+.Sx XHTML Output .
+d322 1
+a322 1
+conforms to HTML-4.01 strict.
+d330 2
+a331 1
+defaults to simple output readable in any graphical or text-based web
+a473 9
+.Ss XHTML Output
+Output produced by
+.Fl T Ns Cm xhtml
+conforms to XHTML-1.0 strict.
+.Pp
+See
+.Sx HTML Output
+for details; beyond generating XHTML tags instead of HTML tags, these
+output modes are identical.
+d1523 1
+a1523 1
+.Ss HTML/XHTML Compatibility
+@
+
+
+1.112
+log
+@document new SEE ALSO .Xr warnings
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.111 2014/09/07 23:25:01 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 7 2014 $
+d1121 7
+@
+
+
+1.111
+log
+@warn about AUTHORS sections without .An macros, inspired by mdoclint(1)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.110 2014/09/03 05:22:45 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 3 2014 $
+d769 16
+@
+
+
+1.110
+log
+@Implement the traditional -h option for man(1): show the SYNOPSIS only.
+As usual, we get mandoc -h and apropos -h for free.
+Try stuff like "apropos -h In=dirent" or "apropos -h Fa=timespec".
+
+Only useful for terminal output, so -Tps, -Tpdf, -Thtml ignore -h for now.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.109 2014/08/30 18:08:10 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 30 2014 $
+d769 6
+@
+
+
+1.109
+log
+@Introduce a man(1) -l option as an alias for mandoc -a.
+Basically, this does the same as man -l in Linux man-db.
+The point is that now all functionality of the combined tool
+is reachable from the man(1) command name:
+apropos = man -k, whatis = man -f, mandoc = man -cl.
+
+Originally suggested by Carsten dot Kunze at arcor dot de,
+current maintainer of the Heirloom Documentation Tools.
+
+While here, add various missing information to the usage()
+and to the manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.108 2014/08/22 04:52:55 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 22 2014 $
+d26 1
+a26 1
+.Op Fl acfklV
+d88 4
+@
+
+
+1.108
+log
+@implement MANPAGER and PAGER
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.107 2014/08/22 03:42:18 schwarze Exp $
+d26 1
+a26 1
+.Op Fl acV
+d54 1
+a54 1
+The arguments are as follows:
+d71 8
+d88 16
+d164 12
+@
+
+
+1.107
+log
+@mandoc -a, man, apropos -a, whatis -a now paginate by default
+but provide an option -c to not paginate;
+taking inspiration from manpage.c, hence adding (c) 2012 kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.106 2014/08/08 01:50:59 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 8 2014 $
+d443 15
+@
+
+
+1.106
+log
+@document warning and error messages, using quite some feedback from jmc@@;
+more cleanup is likely to happen when it's in
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.105 2014/06/23 22:03:30 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: June 23 2014 $
+d26 1
+a26 1
+.Op Fl V
+d56 15
+@
+
+
+1.105
+log
+@Below DIAGNOSTICS, document the SYSERR message level;
+jmc@@ wondered what it meant and agrees with this patch.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.104 2014/06/20 23:02:31 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: June 20 2014 $
+d499 3
+a501 3
+Standard error messages reporting parsing errors are prefixed by
+.Pp
+.D1 Nm Ns : Ar file : Ns Ar line : Ns Ar column : level :
+d503 1
+a503 15
+where the fields have the following meanings:
+.Bl -tag -width "column"
+.It Ar file
+The name of the input file causing the message.
+.It Ar line
+The line number in that input file.
+Line numbering starts at 1.
+.It Ar column
+The column number in that input file.
+Column numbering starts at 1.
+If the issue is caused by a word, the column number usually
+points to the first character of the word.
+.It Ar level
+The message level, printed in capital letters.
+.El
+d505 7
+a511 2
+The
+.Ar line
+d513 2
+a514 2
+.Ar column
+fields are omitted when meaningless.
+d552 774
+a1325 1
+.Pp
+d1327 30
+d1358 24
+a1381 3
+utility may also print messages related to invalid command line arguments
+or operating system errors, for example when memory is exhausted.
+Such messages may not carry the prefix described above.
+@
+
+
+1.104
+log
+@As suggested by jmc@@, only include line and column numbers into messages
+when they are meaningful, to avoid confusing stuff like this:
+$ mandoc /dev/null
+mandoc: /dev/null:0:1: FATAL: not a manual
+Instead, just say:
+mandoc: /dev/null: FATAL: not a manual
+
+Another example this applies to is documents having a prologue,
+but lacking a body.  Do not throw a FATAL error for these; instead,
+issue a WARNING and show the empty document, in the man(7) case with
+the same amount of blank lines as groff does.  Also downgrade mdoc(7)
+documents having content before the first .Sh from FATAL to WARNING.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.103 2013/07/13 19:41:16 schwarze Exp $
+d4 1
+a4 1
+.\" Copyright (c) 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d18 1
+a18 1
+.Dd $Mdocdate: July 13 2013 $
+d527 3
+d565 1
+a565 2
+or operating system errors, for example when memory is exhausted or
+input files cannot be read.
+@
+
+
+1.103
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.102 2013/03/06 08:08:24 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 6 2013 $
+d501 1
+a501 3
+.Sm off
+.D1 Ar file : line : column : \ level :
+.Sm on
+d519 6
+d564 1
+a564 1
+Such messages do not carry the prefix described above.
+@
+
+
+1.102
+log
+@legancy -> legacy; reported by Chris Hettrick
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.101 2012/05/27 17:48:57 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: May 27 2012 $
+d653 1
+a653 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.101
+log
+@Support -Ios='OpenBSD 5.1' to override uname(3) as the source of the
+default value for the mdoc(7) .Os macro.
+Needed for man.cgi on the OpenBSD website.
+
+Problem with man.cgi first noticed by deraadt@@;
+beck@@ and deraadt@@ agree with the way to solve the issue.
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.100 2011/12/25 19:35:44 kristaps Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: December 25 2011 $
+d350 1
+a350 1
+This is useful for distributing manual sources to legancy systems
+@
+
+
+1.100
+log
+@State default usage before listing arguments of a utility.  Inspired by a
+patch to mandocdb.8 by schwarze@@ some time ago.  Ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.99 2011/11/13 14:50:54 schwarze Exp $
+d4 1
+d18 1
+a18 1
+.Dd $Mdocdate: November 13 2011 $
+d27 3
+d56 9
+@
+
+
+1.99
+log
+@typo: overful -> overfull; thanks to jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.98 2011/11/13 13:15:14 schwarze Exp $
+d37 13
+a111 12
+.Pp
+By default,
+.Nm
+reads
+.Xr mdoc 7
+or
+.Xr man 7
+text from stdin, implying
+.Fl m Ns Cm andoc ,
+and produces
+.Fl T Ns Cm ascii
+output.
+@
+
+
+1.98
+log
+@Make the default left text margin configurable from the command line,
+just like the default right margin already is.  This may be useful for
+people with expensive screen real estate.  Besides, it helps automated
+man(7) to mdoc(7) output comparisons to validate -Tman output.
+ok kristaps@@ on an earlier version
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.97 2011/10/09 21:37:06 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: October 9 2011 $
+d245 1
+a245 1
+for example overful lines or ugly line breaks.
+@
+
+
+1.97
+log
+@A bit more precision and nicer wording in the descriptions
+of -Ofragment and -Tman; using input from jmc@@ and kristaps@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.96 2011/10/06 23:05:55 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: October 6 2011 $
+d237 9
+@
+
+
+1.96
+log
+@Nix end-of-line whitespace.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.95 2011/10/06 22:29:12 kristaps Exp $
+d263 10
+a272 1
+Do not emit doctype, html, and body elements.
+d275 1
+a275 1
+argument shall be unused.
+d335 2
+a336 2
+.Xr man 7 ;
+if the input format is
+d338 1
+a338 2
+it is parsed and re-outputted.
+In either case, the
+d341 6
+a346 1
+macros are processed prior to producing output.
+@
+
+
+1.95
+log
+@If -Tman is specified and input is -man, echo the preprocessed (`so'
+replaced by file) input.  This replaces earlier behaviour of doing
+nothing, which I found unexpected (mandoc should always output).
+
+This requires a buffer in read.c that saves the input lines before being
+parsed, with a special hook if `so' is invoked.  This buffer is just
+flushed to output if -mman is the input.
+
+While mucking around doing this, I also alpha-ordered the mandoc.h
+functions.
+
+Ok schwarze@@, with no screaming when the polished patch was published.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.94 2011/10/05 21:35:17 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: October 5 2011 $
+d319 1
+a319 1
+lacking 
+@
+
+
+1.94
+log
+@Add the -Ofragment option to -T[]x]html.  This accomodates for embedding
+manual output in existing HTML or XHTML documents, e.g., when invoking
+mandoc from an SSI or CGI.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.93 2011/09/26 20:47:23 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 26 2011 $
+d179 1
+a179 1
+Produce output in
+d181 3
+a183 3
+format; only useful when applied to
+.Fl m Ns Cm doc
+input.
+d314 20
+@
+
+
+1.93
+log
+@restore alphabetical order for the -Toutput list, and use a width
+specifier that makes it look nicer;
+from jmc@@, ok kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.92 2011/09/18 14:14:15 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 18 2011 $
+d262 6
+@
+
+
+1.92
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.91 2011/09/17 15:00:51 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 17 2011 $
+d160 1
+a160 9
+.Bl -tag -width Ds
+.It Fl T Ns Cm utf8
+Encode output in the UTF\-8 multi-byte format.
+See
+.Sx UTF\-8 Output .
+.It Fl T Ns Cm locale
+Encode output using the current locale.
+See
+.Sx Locale Output .
+d174 4
+d194 4
+a205 17
+.Ss UTF\-8 Output
+Use
+.Fl T Ns Cm utf8
+to force a UTF\-8 locale.
+See
+.Sx Locale Output
+for details and options.
+.Ss Locale Output
+Locale-depending output encoding is triggered with
+.Fl T Ns Cm locale .
+This option is not available on all systems: systems without locale
+support, or those whose internal representation is not natively UCS-4,
+will fall back to
+.Fl T Ns Cm ascii .
+See
+.Sx ASCII Output
+for font style specification and available command-line arguments.
+d298 18
+d350 4
+a353 3
+.Ss PDF Output
+PDF-1.1 output may be generated by
+.Fl T Ns Cm pdf .
+d355 2
+a356 4
+.Sx PostScript Output
+for
+.Fl O
+arguments and defaults.
+@
+
+
+1.91
+log
+@Initial, incomplete support for -Tman
+to convert mdoc(7) documents to the man(7) language.
+This is work in progress and will be developed in tree.
+It does already handle the cat(1) manual,
+but will hardly handle all your fancy manuals yet.
+go ahead  kristaps@@ jmc@@ millert@@ deraadt@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.90 2011/08/18 08:58:43 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+d17 1
+a17 1
+.Dd $Mdocdate: August 18 2011 $
+@
+
+
+1.90
+log
+@Replace the old `An'/`Aq' AUTHORS note with `An'/`Mt'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.89 2011/05/30 07:24:15 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 30 2011 $
+d182 6
+d426 10
+@
+
+
+1.89
+log
+@Fix some bad bits in the mandoc manual: `Xr' instead of `Sx', unescaped
+stuff that should be escaped, and a style matter or two.  Pointed out by
+Jason McIntyre, thanks!
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.88 2011/05/20 15:51:18 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 20 2011 $
+d575 2
+a576 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.88
+log
+@Turn on -Tutf8 in the frontend.  Here we go!
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.87 2011/05/17 22:32:45 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 17 2011 $
+d30 1
+a30 1
+.Op Ar file...
+d162 1
+a162 1
+Encode output in the UTF-8 multi-byte format.
+d164 1
+a164 1
+.Xr UTF-8 Output .
+d166 1
+a166 2
+Encode output using the current
+.Xr locale 1 .
+d200 1
+a200 1
+.Ss UTF-8 Output
+d203 1
+a203 1
+to force a UTF-8 locale.
+d267 1
+a267 1
+Special characters are rendered in decimal-encoded UTF-8.
+@
+
+
+1.87
+log
+@Locale support.  I'm checking this in to clean up fall-out in-tree, but
+it looks pretty good.  Basically, the -Tlocale option propogates into
+term_ascii.c, where we set locale-specific console call-backs IFF (1)
+setlocale() works; (2) locale support is compiled in (see Makefile for
+-DUSE_WCHAR); (3) the internal structure of wchar_t maps directly to
+Unicode codepoints as defined by __STDC_ISO_10646__; and (4) the console
+supports multi-byte characters.
+
+To date, this configuration only supports GNU/Linux.  OpenBSD doesn't
+export __STDC_ISO_10646__ although I'm told by stsp@@openbsd.org that it
+should (it has the correct map).  Apparently FreeBSD is the same way.
+NetBSD?  Don't know.  Apple also supports this, but doesn't define the
+macro.  Special-casing!
+
+Benchmark: -Tlocale incurs less than 0.2 factor overhead when run
+through several thousand manuals when UTF8 output is enabled.  Native
+mode (whether directly -Tascii or through no locale or whatever) is
+UNCHANGED: the function callbacks are the same as before.
+
+Note.  If the underlying system does NOT support STDC_ISO_10646, there
+is a "slow" version possible with iconv or other means of flipping from
+a Unicode codepoint to a wchar_t.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.86 2011/05/17 12:22:15 kristaps Exp $
+d161 4
+d166 2
+a167 3
+This option encodes output characters using the current
+.Xr locale 1
+configuration.
+d201 7
+@
+
+
+1.86
+log
+@Documentation: note COMPATIBILITY of -Tascii `?' printing in mandoc.1
+and remove some long-fixed notes in sthe same section.  Also, add an
+`Lb' for the mandoc library to mandoc.3 (noted by Sascha Wildner).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.85 2011/02/09 10:03:02 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: February 9 2011 $
+d161 6
+d198 10
+d228 3
+d482 1
+a482 1
+Unicode codepoints specified with
+@
+
+
+1.85
+log
+@Add stub for eqn.7 manual and flip it on.  Also note COMPATIBILITY issue
+of how we considered .TS (etc.) macros and how the preprocessors do.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.84 2011/01/04 23:32:21 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 4 2011 $
+d463 7
+d480 1
+a480 1
+In GNU troff, the
+a504 2
+.It
+Sentences are unilaterally monospaced.
+@
+
+
+1.84
+log
+@Moved table stuff from roff.7 into the new tbl.7 (suggested by Jason McIntyre).
+
+Added cross-links to tbl.7 from other manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.83 2010/12/20 13:57:49 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 20 2010 $
+d532 1
+@
+
+
+1.83
+log
+@Clarify style inclusions and update release information.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.82 2010/12/17 11:18:57 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 17 2010 $
+d534 3
+a536 1
+.Xr mdoc 7
+@
+
+
+1.82
+log
+@Correctly mark the examples as `Dl', not `D1'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.81 2010/12/16 23:07:01 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 16 2010 $
+a229 5
+Font styles and page structure are applied using CSS1.
+By default, no font style is applied to any text,
+although CSS1 is hard-coded to format
+the basic structure of output.
+.Pp
+d232 6
+a237 3
+file documents the range of styles applied to output and, if used, will
+cause rendered documents to appear as they do in
+.Fl T Ns Cm ascii .
+@
+
+
+1.81
+log
+@Note that we use CSS1, not CSS2.
+
+Remove superfluous language in output-mode short description.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.80 2010/12/16 11:23:08 kristaps Exp $
+d378 2
+a379 2
+.D1 $ mandoc \-Wall,stop mandoc.1 2\*(Gt&1 | less
+.D1 $ mandoc mandoc.1 mdoc.3 mdoc.7 | less
+d385 1
+a385 1
+.D1 $ mandoc \-Thtml -Ostyle=style.css mdoc.7 \*(Gt mdoc.7.html
+d393 1
+a393 1
+.D1 $ mandoc \-Tps \-Opaper=a4 mdoc.7 man.7 \*(Gt manuals.ps
+@
+
+
+1.80
+log
+@Remove stray note on `i', which we no longer support.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.79 2010/12/15 15:59:23 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 15 2010 $
+d162 1
+a162 2
+Produce 7-bit ASCII output, backspace-encoded for bold and underline
+styles.
+d167 1
+a167 1
+Produce strict HTML-4.01 output, with a sane default style.
+d185 1
+a185 1
+Produce strict XHTML-1.0 output, with a sane default style.
+d230 1
+a230 1
+Font styles and page structure are applied using CSS2.
+d232 1
+a232 1
+although CSS2 is hard-coded to format
+@
+
+
+1.79
+log
+@Remove stupid outer DIV tag in favour of regular BODY and HTML that can
+be handled in CSS.
+
+Clarified "lit" tag (will be the subject of future clarification).
+
+Removed CSS2 note in mandoc.1, which is no longer the case.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.78 2010/09/26 23:05:46 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 26 2010 $
+a567 6
+.Sq i
+macro in
+.Fl m Ns Cm an
+should italicise all subsequent text if a line argument is not provided.
+This behaviour is not implemented.
+The
+@
+
+
+1.78
+log
+@sync to OpenBSD:
+new sentence, new line;
+from jmc@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.77 2010/08/20 01:02:07 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 20 2010 $
+a543 9
+The
+.Fl T Ns Cm html
+and
+.Fl T Ns Cm xhtml
+CSS2 styling used for
+.Fl m Ns Cm doc
+input lists does not render properly in older browsers, such as Internet
+Explorer 6 and earlier.
+.Pp
+@
+
+
+1.77
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.76 2010/08/18 08:41:40 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 18 2010 $
+d456 2
+a457 2
+input files cannot be read.  Such messages do not carry the prefix
+described above.
+@
+
+
+1.76
+log
+@Migrate `Xr groff 1' -> GNU troff.  I no longer assume that groff is
+installed on the host system.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.75 2010/08/18 08:40:22 kristaps Exp $
+a25 1
+.Op Fl f Ns Ar option
+d29 1
+a29 1
+.Op Fl W Ns Ar err
+a38 5
+.It Fl f Ns Ar option
+Comma-separated compiler options.
+See
+.Sx Compiler Options
+for details.
+d57 13
+a69 3
+.It Fl W Ns Ar err
+Comma-separated warning options.
+Use
+d71 21
+a91 8
+to print warnings,
+.Fl W Ns Cm error
+for warnings to be considered errors and cause utility
+termination.
+Multiple
+.Fl W
+arguments may be comma-separated, such as
+.Fl W Ns Cm error , Ns Cm all .
+a110 2
+.Pp
+.Ex -std mandoc
+a153 33
+.Ss Compiler Options
+Default
+.Xr mdoc 7
+and
+.Xr man 7
+compilation behaviour may be overridden with the
+.Fl f
+flag.
+.Bl -tag -width Ds
+.It Fl f Ns Cm ign-errors
+When parsing multiple files, don't halt when one errors out.
+Useful with
+.Fl T Ns Cm lint
+over a large set of manuals passed on the command line.
+.It Fl f Ns Cm ign-escape
+Ignore invalid escape sequences.
+This is the default, but the option can be used to override an earlier
+.Fl f Ns Cm strict .
+.It Fl f Ns Cm ign-scope
+When rewinding the scope of a block macro, forces the compiler to ignore
+scope violations.
+This can seriously mangle the resulting tree.
+.Pq mdoc only
+.It Fl f Ns Cm no-ign-escape
+Do not ignore invalid escape sequences.
+.It Fl f Ns Cm no-ign-macro
+Do not ignore unknown macros at the start of input lines.
+.It Fl f Ns Cm strict
+Implies
+.Fl f Ns Cm no-ign-escape
+and
+.Fl f Ns Cm no-ign-macro .
+.El
+d174 1
+a174 3
+.Fl W Ns Cm all
+and
+.Fl f Ns Cm strict .
+d335 41
+d379 1
+a379 1
+.D1 $ mandoc \-Wall,error \-fstrict mandoc.1 2\*(Gt&1 | less
+d390 1
+a390 1
+.Dl $ mandoc \-Tlint \-fign-errors `find /usr/src -name \e*\e.[1-9]`
+d395 63
+@
+
+
+1.75
+log
+@Remove references to \s in mandoc.1: we no longer document these and just
+flat-out ignore them.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.74 2010/08/07 17:46:39 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 7 2010 $
+d377 1
+a377 2
+compatibility with
+.Xr groff 1 .
+d392 1
+a392 3
+In
+.Xr groff 1 ,
+the
+@
+
+
+1.74
+log
+@Remove mandoc.1 compatibility notes that are no longer relevant.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.73 2010/07/25 11:44:31 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 25 2010 $
+a482 11
+The
+.Fl T Ns Cm html
+and
+.Fl T Ns Cm xhtml
+output modes don't render the
+.Sq \es
+font size escape documented in
+.Xr mdoc 7
+and
+.Xr man 7 .
+.Pp
+@
+
+
+1.73
+log
+@Initial PDF shim over PS.  This produces working PDF output with -Tpdf.
+It's currently missing the xref table, so you'll get a warning in most
+PDF viewers).  It also produces lots of redundant output, which will go
+away once I get a better handle on the PDF spec.  The code doesn't
+really touch any existing functionality; it's a bunch of conditionals
+atop the -Tps (term_ps.c) implementation.  I'm checking it in now to
+have it exist and be auditable.  It needs clean-up, polish, and general
+care (and xref!).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.72 2010/07/13 23:53:20 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 13 2010 $
+a383 5
+.Sq \e~
+special character doesn't produce expected behaviour in
+.Fl T Ns Cm ascii .
+.It
+The
+a420 5
+In normal mode (not a literal block), blocks of spaces aren't preserved,
+so double spaces following sentence closure are reduced to a single space;
+.Xr groff 1
+retains spaces.
+.It
+@
+
+
+1.72
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.71 2010/07/04 20:06:59 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 4 2010 $
+d195 4
+d338 8
+@
+
+
+1.71
+log
+@Set line-height to be 1.4em.  Removed check for minimum margins that are no
+longer important.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.70 2010/07/04 19:24:00 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.70
+log
+@Backed out margin calculations in favour of much simpler rule of thumb:
+margins are 1/9 the length/width.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.69 2010/07/04 10:53:04 kristaps Exp $
+d308 1
+@
+
+
+1.69
+log
+@Auto-margins.  Documented in mandoc.1.  Also bumped line-height and made
+sure header and footer accomodate for said line-height.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.68 2010/07/01 14:23:45 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 1 2010 $
+d306 2
+a307 4
+family, 11-point.  Margins are calculated as the maximum of either space
+left by page width minus text width (65
+.Sq m
+characters), or given default margins of 2 cm.
+@
+
+
+1.68
+log
+@First, I'm defaulting to 11-point font, which renders much nicer (the
+"Internet" vaguely suggests using 11- or 9-Point for serifed fonts).
+This verified on GNU/Linux, Mac OSX, Windows, and OpenBSD.  Noted in
+mandoc.1.
+
+Then added a3, a4, a5, letter, legal, and custom page dimensions.  These
+seem to be the main players.  Noted in mandoc.1.
+
+Lintified the casting.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.67 2010/06/30 20:57:41 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 30 2010 $
+d306 4
+a309 1
+family, 11-point.
+@
+
+
+1.67
+log
+@Now using Times AFM provided by Dillo.  Verified on OpenBSD by me and Mac OSX
+by M. Deksters.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.66 2010/06/29 14:55:41 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 29 2010 $
+d306 1
+a306 1
+family.
+d319 4
+a322 1
+.Ar a4
+d325 6
+@
+
+
+1.66
+log
+@Remove some incorrect data from mandoc.1 (that of non-macro lines and
+spacing, which is for mdoc.7/man.7 anyway).  Also document -Opage=xxx
+and push the per-output options into the output subsections.  Makes the
+manual shorter and more readable.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.65 2010/06/29 14:18:05 kristaps Exp $
+d305 2
+a306 2
+Output pages are US-letter sized and rendered in fixed, 10-point Courier
+font.
+@
+
+
+1.65
+log
+@Give -Tps better PostScript hinting.  Note that we're using Adobe-3.0
+constructs.  Push the stupid CPP defines for page boundaries and margins
+into proper variables.  Give enum termfont a proper TERMFONT__MAX.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.64 2010/06/25 19:02:48 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 25 2010 $
+a53 3
+See
+.Sx Output Options
+for details.
+d139 33
+d177 1
+a177 2
+arguments (see
+.Sx OUTPUT ) :
+d209 27
+a235 4
+.Ss Compiler Options
+Default compiler behaviour may be overridden with the
+.Fl f
+flag.
+d237 4
+a240 23
+.It Fl f Ns Cm ign-errors
+When parsing multiple files, don't halt when one errors out.
+Useful with
+.Fl T Ns Cm lint
+over a large set of manuals passed on the command line.
+.It Fl f Ns Cm ign-escape
+Ignore invalid escape sequences.
+This is the default, but the option can be used to override an earlier
+.Fl f Ns Cm strict .
+.It Fl f Ns Cm ign-scope
+When rewinding the scope of a block macro, forces the compiler to ignore
+scope violations.
+This can seriously mangle the resulting tree.
+.Pq mdoc only
+.It Fl f Ns Cm no-ign-escape
+Do not ignore invalid escape sequences.
+.It Fl f Ns Cm no-ign-macro
+Do not ignore unknown macros at the start of input lines.
+.It Fl f Ns Cm strict
+Implies
+.Fl f Ns Cm no-ign-escape
+and
+.Fl f Ns Cm no-ign-macro .
+d242 10
+a251 1
+.Ss Output Options
+d253 8
+a260 4
+.Fl T Ns Ar html
+and
+.Fl T Ns Ar xhtml
+modes accept the following
+d262 1
+a262 1
+arguments:
+a299 100
+.Pp
+The
+.Fl T Ns Ar ascii
+mode accepts the following
+.Fl O
+argument:
+.Bl -tag -width Ds
+.It Cm width Ns = Ns Ar width
+The output width is set to
+.Ar width ,
+which will normalise to \(>=60.
+.El
+.Sh OUTPUT
+This section documents output details of
+.Nm .
+In general, output conforms to the traditional manual style of a header,
+a body composed of sections and sub-sections, and a footer.
+.Pp
+The text style of output characters (non-macro characters, punctuation,
+and white-space) is dictated by context.
+.Pp
+White-space is generally stripped from input.
+This can be changed with
+character escapes (specified in
+.Xr mandoc_char 7 )
+or literal modes (specified in
+.Xr mdoc 7
+and
+.Xr man 7 ) .
+.Pp
+If non-macro punctuation is set apart from words, such as in the phrase
+.Dq to be \&, or not to be ,
+it's processed by
+.Nm ,
+regardless of output format, according to the following rules:  opening
+punctuation
+.Po
+.Sq \&( ,
+.Sq \&[ ,
+and
+.Sq \&{
+.Pc
+is not followed by a space; closing punctuation
+.Po
+.Sq \&. ,
+.Sq \&, ,
+.Sq \&; ,
+.Sq \&: ,
+.Sq \&? ,
+.Sq \&! ,
+.Sq \&) ,
+.Sq \&]
+and
+.Sq \&}
+.Pc
+is not preceded by white-space.
+.Pp
+If the input is
+.Xr mdoc 7 ,
+however, these rules are also applied to macro arguments when appropriate.
+.Ss ASCII Output
+Output produced by
+.Fl T Ns Cm ascii ,
+which is the default, is rendered in standard 7-bit ASCII documented in
+.Xr ascii 7 .
+.Pp
+Font styles are applied by using back-spaced encoding such that an
+underlined character
+.Sq c
+is rendered as
+.Sq _ Ns \e[bs] Ns c ,
+where
+.Sq \e[bs]
+is the back-space character number 8.
+Emboldened characters are rendered as
+.Sq c Ns \e[bs] Ns c .
+.Pp
+The special characters documented in
+.Xr mandoc_char 7
+are rendered best-effort in an ASCII equivalent.
+.Pp
+Output width is limited to 78 visible columns unless literal input lines
+exceed this limit.
+.Ss HTML Output
+Output produced by
+.Fl T Ns Cm html
+conforms to HTML-4.01 strict.
+.Pp
+Font styles and page structure are applied using CSS2.
+By default, no font style is applied to any text,
+although CSS2 is hard-coded to format
+the basic structure of output.
+.Pp
+The
+.Pa example.style.css
+file documents the range of styles applied to output and, if used, will
+cause rendered documents to appear as they do in
+.Fl T Ns Cm ascii .
+.Pp
+Special characters are rendered in decimal-encoded UTF-8.
+d305 18
+a322 2
+Output pages are US-letter sized (215.9 x 279.4 mm) and rendered in
+fixed, 10-point Courier font.
+d347 4
+@
+
+
+1.64
+log
+@Allow OpenBSD's nroff to process mandoc.1 without puking on long `It'
+lines.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.63 2010/06/11 07:15:42 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 11 2010 $
+d355 3
+a357 1
+PostScript Level 2 pages may be generated by
+@
+
+
+1.63
+log
+@Note that we use PostScript level 2, not 1 (the /Courier invocation).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.62 2010/06/07 20:57:09 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 7 2010 $
+d214 3
+a216 1
+modes accept the following output options:
+d218 1
+a218 1
+.It Fl O Ns Cm includes Ns = Ns Ar fmt
+d231 1
+a231 1
+.It Fl O Ns Cm man Ns = Ns Ar fmt
+d247 1
+a247 1
+.It Fl O Ns Cm style Ns = Ns Ar style.css
+d257 3
+a259 1
+mode accepts the following output option:
+d261 1
+a261 1
+.It Fl O Ns Cm width Ns = Ns Ar width
+@
+
+
+1.62
+log
+@First check-in of PostScript output.  This does not change any logic
+within term.c, but does add a small shim over putchar() that switches on
+the output engine.  Prints, for this initial version, only monospace and
+without font decorations.  It's a start.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.61 2010/06/07 10:55:27 kristaps Exp $
+d351 1
+a351 1
+PostScript Level 1 pages may be generated by
+@
+
+
+1.61
+log
+@Forgot to check in manual along with -Owidth=width patch.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.60 2010/05/09 21:19:42 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 9 2010 $
+d166 4
+d350 5
+@
+
+
+1.60
+log
+@Remove -fno-ign-chars as well-argued by Ingo Schwarze.  Patch by Ingo Schwarze, too.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.59 2010/04/13 05:26:49 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: April 13 2010 $
+d206 1
+a206 1
+For the time being, only
+d210 1
+a210 1
+accept output options:
+d248 10
+@
+
+
+1.59
+log
+@As per Jason McIntyre's heartful urgings, do away with '.' separators between logical sections.
+Change email address to BSD.lv one (this is not an academic project...)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.58 2010/04/12 19:27:22 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: April 12 2010 $
+a194 2
+.It Fl f Ns Cm no-ign-chars
+Do not ignore disallowed characters.
+d201 1
+a201 2
+.Fl f Ns Cm no-ign-escape ,
+.Fl f Ns Cm no-ign-macro ,
+d203 1
+a203 1
+.Fl f Ns Cm no-ign-chars .
+@
+
+
+1.58
+log
+@Merge patch by Jason McIntyre cleaning on mandoc.1: `Ar' -> `Cm' and other readability fixes.
+Merge modified patch by Joerg Sonnenberger that rewinds to whitespace when encountering trailing line-comments.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.57 2010/04/08 07:40:03 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+d17 1
+a17 1
+.Dd $Mdocdate: April 8 2010 $
+a19 2
+.
+.
+a22 2
+.
+.
+a31 2
+.
+.
+a38 1
+.
+a44 1
+.
+a51 1
+.
+a56 1
+.
+a63 1
+.
+a65 1
+.
+a77 1
+.
+a84 1
+.
+a96 1
+.
+a98 2
+.
+.
+a117 1
+.
+a130 1
+.
+a141 2
+.
+.
+a148 1
+.
+a155 1
+.
+a159 1
+.
+a165 1
+.
+a167 1
+.
+a172 1
+.
+a175 2
+.
+.
+a179 1
+.
+a185 1
+.
+a189 1
+.
+a194 1
+.
+a196 1
+.
+a198 1
+.
+a200 1
+.
+a207 2
+.
+.
+a250 2
+.
+.
+a294 1
+.
+a298 2
+.
+.
+a321 2
+.
+.
+a338 2
+.
+.
+a347 2
+.
+.
+a349 1
+.
+a352 1
+.
+a360 1
+.
+a362 2
+.
+.
+a368 2
+.
+.
+a375 1
+.
+a385 1
+.
+a396 1
+.
+a404 1
+.
+a411 1
+.
+a413 1
+.
+a418 1
+.
+a421 2
+.
+.
+a443 1
+.
+a451 2
+.
+.
+a455 1
+.
+d460 1
+a460 3
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+.
+.
+a469 1
+.
+a480 1
+.
+a491 1
+.
+a503 1
+.
+a510 1
+.
+@
+
+
+1.57
+log
+@Merged Jason McIntyre's "new-sentence, new-line" patch along with Ingo Schwarze' "gt" patch.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.56 2010/03/29 10:10:35 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 29 2010 $
+d29 2
+a30 1
+.Op Fl f Ns Ar option...
+d32 1
+a32 1
+.Op Fl O Ns Ar option...
+d34 2
+a35 3
+.Op Fl V
+.Op Fl W Ns Ar err...
+.Op Ar infile...
+d47 1
+a47 1
+.It Fl f Ns Ar option...
+d59 1
+a59 1
+.Fl m Ns Ar andoc .
+d61 1
+a61 1
+.It Fl O Ns Ar option...
+d73 1
+a73 1
+.Fl T Ns Ar ascii .
+d78 1
+a78 1
+.It Fl W Ns Ar err...
+d81 1
+a81 1
+.Fl W Ns Ar all
+d83 1
+a83 1
+.Fl W Ns Ar error
+d89 1
+a89 1
+.Fl W Ns Ar error,all .
+d91 2
+a92 3
+.It Ar infile...
+Read input from zero or more
+.Ar infile .
+d107 1
+a107 1
+.Fl m Ns Ar andoc ,
+d109 1
+a109 1
+.Fl T Ns Ar ascii
+d124 1
+a124 1
+.Fl m Ns Ar doc
+d126 1
+a126 1
+.Fl m Ns Ar an ,
+d138 1
+a138 1
+.Fl m Ns Ar andoc ,
+d153 1
+a153 1
+.Fl m Ns Ar andoc ,
+d157 1
+a157 1
+.Fl m Ns Ar doc
+d159 1
+a159 1
+.Fl m Ns Ar an
+d172 1
+a172 1
+.It Fl T Ns Ar ascii
+d179 1
+a179 1
+.It Fl T Ns Ar html
+d184 11
+a194 1
+.It Fl T Ns Ar xhtml
+a197 10
+.
+.It Fl T Ns Ar tree
+Produce an indented parse tree.
+.
+.It Fl T Ns Ar lint
+Parse only: produce no output.
+Implies
+.Fl W Ns Ar all
+and
+.Fl f Ns Ar strict .
+d211 12
+a222 1
+.It Fl f Ns Ar ign-scope
+d228 2
+a229 4
+.It Fl f Ns Ar ign-escape
+Ignore invalid escape sequences.
+This is the default, but the option can be used to override an earlier
+.Fl f Ns Ar strict .
+d231 2
+a232 2
+.It Fl f Ns Ar no-ign-escape
+Don't ignore invalid escape sequences.
+d234 1
+a234 1
+.It Fl f Ns Ar no-ign-macro
+d237 1
+a237 4
+.It Fl f Ns Ar no-ign-chars
+Do not ignore disallowed characters.
+.
+.It Fl f Ns Ar strict
+d239 2
+a240 2
+.Fl f Ns Ar no-ign-escape ,
+.Fl f Ns Ar no-ign-macro
+d242 1
+a242 7
+.Fl f Ns Ar no-ign-chars .
+.
+.It Fl f Ns Ar ign-errors
+When parsing multiple files, don't halt when one errors out.
+Useful with
+.Fl T Ns Ar lint
+over a large set of manuals passed on the command line.
+d251 1
+a251 1
+accepts output options:
+d253 1
+a253 7
+.It Fl O Ns Ar style=style.css
+The file
+.Ar style.css
+is used for an external style-sheet.
+This must be a valid absolute or
+relative URI.
+.It Fl O Ns Ar includes=fmt
+d266 1
+a266 1
+.It Fl O Ns Ar man=fmt
+d282 6
+d344 1
+a344 1
+.Fl T Ns Ar ascii ,
+d369 1
+a369 1
+.Fl T Ns Ar html
+d381 1
+a381 1
+.Fl T Ns Ar ascii .
+d388 1
+a388 1
+.Fl T Ns Ar xhtml
+d401 2
+a402 2
+.D1 % mandoc \-Wall,error \-fstrict mandoc.1 2\*(Gt&1 | less
+.D1 % mandoc mandoc.1 mdoc.3 mdoc.7 | less
+d409 1
+a409 1
+.D1 % mandoc \-Thtml -Ostyle=style.css mdoc.7 \*(Gt mdoc.7.html
+d414 1
+a414 1
+.Dl % mandoc \-Tlint \-fign-errors `find /usr/src -name \e*\e.[1-9]`
+d431 1
+a431 1
+.Fl T Ns Ar ascii .
+d441 1
+a441 1
+.Fl T Ns Ar ascii
+d457 1
+a457 1
+A list or display following
+d461 1
+a461 1
+.Fl T Ns Ar ascii
+d470 1
+a470 1
+.Fl T Ns Ar ascii
+d534 1
+a534 1
+.Fl T Ns Ar html
+d536 1
+a536 1
+.Fl T Ns Ar xhtml
+d538 1
+a538 1
+.Fl m Ns Ar doc
+d544 1
+a544 1
+.Fl T Ns Ar html
+d546 1
+a546 1
+.Fl T Ns Ar xhtml ,
+d551 2
+a552 2
+formats, e.g.,
+.Fl O Ns Ar style=really/long/link .
+d556 1
+a556 1
+.Fl T Ns Ar html
+d558 1
+a558 1
+.Fl T Ns Ar xhtml
+d568 1
+a568 1
+.Fl m Ns Ar an ,
+d574 1
+a574 1
+.Fl T Ns Ar html
+d576 1
+a576 1
+.Fl T Ns Ar xhtml
+d583 1
+a583 1
+.Fl m Ns Ar an
+@
+
+
+1.56
+log
+@Final (?) fix to issue pointed out by Sascha Wildner: roff instructions clobbering prior scope rules and line modes.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.55 2010/03/27 14:44:19 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 27 2010 $
+d43 2
+a44 1
+manual pages for display.  The arguments are as follows:
+d48 2
+a49 1
+Comma-separated compiler options.  See
+d54 2
+a55 1
+Input format.  See
+d57 2
+a58 1
+for available formats.  Defaults to
+d62 2
+a63 1
+Comma-separated output options.  See
+d68 2
+a69 1
+Output format.  See
+d71 2
+a72 1
+for available formats.  Defaults to
+d79 2
+a80 1
+Comma-separated warning options.  Use
+d85 2
+a86 1
+termination.  Multiple
+d94 2
+a95 1
+If unspecified, reads from stdin.  If multiple files are specified,
+d128 2
+a129 1
+respectively.  The
+d155 2
+a156 1
+each has its file-type determined this way.  If multiple files are
+d175 3
+a177 1
+styles.  This is the default.  See
+d181 2
+a182 1
+Produce strict HTML-4.01 output, with a sane default style.  See
+d186 2
+a187 1
+Produce strict XHTML-1.0 output, with a sane default style.  See
+d214 2
+a215 1
+scope violations.  This can seriously mangle the resulting tree.
+d240 2
+a241 2
+When parsing multiple files, don't halt when one errors out.  Useful
+with
+d257 2
+a258 1
+is used for an external style-sheet.  This must be a valid absolute or
+d267 2
+a268 1
+macro).  Instances of
+d270 2
+a271 1
+are replaced with the include filename.  The default is not to present a
+d280 2
+a281 1
+macro).  Instances of
+d286 2
+a287 1
+If no section is included, section 1 is assumed.  The default is not to
+d301 2
+a302 1
+White-space is generally stripped from input.  This can be changed with
+d356 2
+a357 1
+is the back-space character number 8.  Emboldened characters are rendered as
+d373 3
+a375 2
+Font styles and page structure are applied using CSS2.  By default, no
+font style is applied to any text, although CSS2 is hard-coded to format
+d402 1
+a402 1
+.D1 % mandoc \-Wall,error \-fstrict mandoc.1 2>&1 | less
+d410 1
+a410 1
+.D1 % mandoc \-Thtml -Ostyle=style.css mdoc.7 > mdoc.7.html
+d453 2
+a454 1
+in the FILES section.  This behaves correctly in
+d496 4
+a499 2
+CSS instead of hard-coded.  It also will not span past the current
+scope, for the same reason.  Note that in
+d522 1
+d524 1
+a524 2
+.Xr mdoc 7 ,
+.Xr man 7
+d550 2
+a551 1
+which is usually 1024 bytes.  Be aware of this when setting long link
+@
+
+
+1.55
+log
+@Fix mandoc.1 ending (noted by Sascha Wildner).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.54 2010/03/27 10:10:10 kristaps Exp $
+d223 2
+a224 1
+Don't halt when encountering parse errors.  Useful with
+@
+
+
+1.54
+log
+@Documentation of apostrophe control character.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.53 2010/03/25 07:28:16 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 25 2010 $
+d560 2
+a561 1
+control character does not have the same 
+@
+
+
+1.53
+log
+@Fixed up some documentation in man.7: only documenting man.7 macros, not related ones (de, Vb, etc.), which aren't technically man.  It's an open question as to where these /should/ be documented, however.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.52 2010/03/22 20:43:00 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 22 2010 $
+d513 1
+d524 1
+d536 1
+d549 1
+d557 4
+@
+
+
+1.52
+log
+@Have -Tlint imply -Wall and -fstrict.  Based on a patch submitted by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.51 2010/03/22 14:03:03 kristaps Exp $
+d546 7
+@
+
+
+1.51
+log
+@Clarify -man -T[x]html handling of `br' within `B'.
+Consolidated node unlinking in -man.
+Conclude nested next-line scope issues noted by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.50 2010/01/29 14:39:38 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: January 29 2010 $
+d179 4
+d232 2
+d536 1
+a536 1
+.Fl m Ar Ns an ,
+d545 1
+a545 1
+and cause it to forget the formatting.
+@
+
+
+1.50
+log
+@Fixed Makefile for `make lint' dep. on config.h
+Added -Txhtml for XHTML output (minimal increase to programme logic).  Because groff has it and it bothers me that we don't.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.49 2010/01/07 19:10:09 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate$
+d505 2
+a506 2
+input lists does not render properly in brain-dead browsers, such as
+Internet Explorer 6 and earlier.
+d528 12
+@
+
+
+1.49
+log
+@Fix white-space issues found by mandoc's better white-space finder.
+Fixed bogus `\\' escapes in some manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.48 2009/11/16 09:52:47 kristaps Exp $
+d170 4
+d340 1
+a340 1
+comforms to HTML-4.01 strict.
+d355 11
+d455 1
+a455 1
+.Ss HTML Compatibility
+d501 2
+d509 3
+a511 1
+.Fl T Ns Ar html ,
+d520 3
+a522 1
+output mode doesn't render the
+@
+
+
+1.48
+log
+@More clarification in manuals.  Added per-OUTPUT section in mandoc.1.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.47 2009/11/16 08:46:59 kristaps Exp $
+d234 1
+a234 1
+for example, 
+d245 1
+a245 1
+for example, 
+d263 1
+a263 1
+a body composed of sections and sub-sections, and a footer.  
+d310 1
+a310 1
+Output produced by 
+d382 1
+a382 1
+The 
+d384 1
+a384 1
+special character doesn't produce expected behaviour in 
+d388 1
+a388 1
+The 
+d390 1
+a390 1
+and 
+d399 1
+a399 1
+In 
+d449 1
+a449 1
+scope, for the same reason.  Note that in 
+@
+
+
+1.47
+log
+@Enabled -Thtml -mdoc to work with \f (see compat notes in mandoc.1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.46 2009/11/05 10:16:01 kristaps Exp $
+d99 1
+a99 1
+and prints 78-column backspace-encoded output to stdout as if
+d101 1
+a101 1
+were provided.
+a106 41
+.Ss Punctuation and Spacing
+If punctuation is set apart from words, such as in the phrase
+.Dq to be \&, or not to be ,
+it's processed by
+.Nm
+according to the following rules:  opening punctuation
+.Po
+.Sq \&( ,
+.Sq \&[ ,
+and
+.Sq \&{
+.Pc
+is not followed by a space; closing punctuation
+.Po
+.Sq \&. ,
+.Sq \&, ,
+.Sq \&; ,
+.Sq \&: ,
+.Sq \&? ,
+.Sq \&! ,
+.Sq \&) ,
+.Sq \&]
+and
+.Sq \&}
+.Pc
+is not preceded by whitespace.
+.
+.Pp
+If the input is
+.Xr mdoc 7 ,
+these rules are also applied to macro arguments when appropriate.
+.
+.Pp
+White-space, in non-literal (normal) mode, is stripped from input and
+replaced on output by a single space.  Thus, if you wish to preserve multiple
+spaces, they must be space-escaped or used in a literal display mode, e.g.,
+.Sq \&Bd \-literal
+in
+.Xr mdoc 7 .
+.
+.
+d157 2
+a158 1
+arguments:
+d163 2
+a164 1
+styles.  This is the default.
+d167 2
+a168 1
+Produce strict HTML-4.01 output, with a sane default style.
+d220 1
+d224 1
+a224 1
+is the only mode with output options:
+d258 93
+d363 1
+a363 1
+.D1 % mandoc \-Thtml -ostyle=style.css mdoc.7 > mdoc.7.html
+d379 1
+a379 1
+.Ss ASCII output
+d439 2
+a440 1
+.Ss HTML output
+d469 2
+a470 1
+.\" SECTION
+d482 1
+d484 7
+d496 2
+a497 2
+formats with
+.Fl O Ns Ar man=fmt .
+d501 1
+a501 1
+utility doesn't yet render the
+@
+
+
+1.46
+log
+@Documented that `\s' and `\f' don't work in HTML mode (and why).
+Added support for recognising the many forms of `\s' (doesn't yet render).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.45 2009/10/26 15:44:51 kristaps Exp $
+d387 10
+d435 1
+a435 3
+utility doesn't support the
+.Sq \ef
+and
+d437 1
+a437 1
+text decorations documented in
+@
+
+
+1.45
+log
+@Merged patch to allow -fign-escape (thanks Joerg Sonnenberger).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.44 2009/10/26 04:15:42 kristaps Exp $
+d422 11
+@
+
+
+1.44
+log
+@Changed `-o' to `-O' for clarity.  THIS BREAKS UTILITIES DEPENDING ON -o!
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.43 2009/10/15 02:42:53 kristaps Exp $
+d231 5
+@
+
+
+1.43
+log
+@Fix in mandoc.1 and mandoc_char.7 syntax (submitted Joerg Sonnenberger).
+Added note on character format per output type.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.42 2009/10/10 11:05:23 kristaps Exp $
+d31 1
+a31 1
+.Op Fl o Ns Ar option...
+d57 1
+a57 1
+.It Fl o Ns Ar option...
+d258 1
+a258 1
+.It Fl o Ns Ar style=style.css
+d263 1
+a263 1
+.It Fl o Ns Ar includes=fmt
+d274 1
+a274 1
+.It Fl o Ns Ar man=fmt
+d416 1
+a416 1
+.Fl o Ns Ar man=fmt .
+@
+
+
+1.42
+log
+@Fix hang lists in -Tascii -Tmdoc, which seem to have been broken since ~1.8.x.
+Noted similarity of HP/TP and -hang/-tag in mandoc.1.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.41 2009/10/03 16:36:06 kristaps Exp $
+d271 1
+a271 1
+.Sq %I
+d282 1
+a282 1
+.Sq %N
+@
+
+
+1.41
+log
+@Fixed mandoc.1 examples (new -Thtml options).
+Fixed manuals to use `In', not `Fd'.
+Moved buf* functions into html.c.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.40 2009/10/03 15:26:26 kristaps Exp $
+d377 20
+@
+
+
+1.40
+log
+@Added the -oincludes=FMT option.
+The `In' handler now decorates with a hyperlink.
+If no -oman= or -oincludes= is stipulated, no link is printed (but the text is still style-decorated).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.39 2009/10/03 15:08:09 kristaps Exp $
+d57 1
+a57 1
+.It Fl o Ns Ar format
+d298 3
+a300 3
+To produce HTML manuals with 
+.Pa http://localhost/
+as the base URI:
+d302 1
+a302 1
+.D1 % mandoc \-Thtml -obase=http://localhost/ mdoc.7 > mdoc.7.html
+@
+
+
+1.39
+log
+@Element tag buffer is now part of struct html.
+buffmt() can be called in sequence.
+Noted BUFSIZ-sized buffer in CAVEATS (attribute length for link formats).
+Added -oman=FMT -Thtml option for `Xr' manual links.
+Removed -obase=URI -Thtml option (obsolete).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.38 2009/09/21 13:44:56 kristaps Exp $
+d263 11
+d281 7
+a287 2
+macro).  The default is
+.Ar %N.%S.html .
+@
+
+
+1.38
+log
+@Fixed body/divbody structure of html pages.
+Added example style.css (example.style.css).
+Enabled using -Thtml to generate manuals in Makefile.
+Stopped making text manuals for webpage.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.37 2009/09/21 13:06:13 kristaps Exp $
+d263 6
+a268 5
+.It Fl o Ns Ar base=http://base/
+The URL
+.Ar http://base/
+is used as a base URL for all relative links.  This is useful when
+linking between documents via the
+d270 2
+a271 1
+macro.
+d366 1
+a366 1
+.\" SECTION
+d372 9
+@
+
+
+1.37
+log
+@Removed new-born out.{h,c} (not a good idea).
+Removed if 0 for HTML-mode output (why not).
+Added option -oxxxx for passing options to output devices.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.36 2009/09/15 08:16:20 kristaps Exp $
+d280 6
+@
+
+
+1.36
+log
+@Removed TERMP_BOLD, TERMP_UNDER, TERMP_STYLE in favour of recursive-friendly increments.
+Cleaned up confusing behaviour of p->flags.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.35 2009/09/05 10:30:51 kristaps Exp $
+a28 1
+.Op Fl V
+d31 3
+a34 1
+.Op Fl T Ns Ar output
+d47 1
+a47 1
+Override default compiler behaviour.  See
+d57 5
+d72 1
+a72 1
+Configure warning messages.  Use
+d205 3
+d253 18
+a270 10
+.Pp
+As with the
+.Fl W
+flag, multiple
+.Fl f
+options may be grouped and delimited with a comma.  Using
+.Fl f Ns Ar ign-scope,no-ign-escape ,
+for example, will try to ignore scope and not ignore character-escape
+errors.
+.
+d295 1
+a295 1
+.Bl -bullet -compact -width Ds
+@
+
+
+1.35
+log
+@Typo fix (jmc@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.34 2009/08/22 09:10:38 kristaps Exp $
+d278 1
+a278 1
+.Bl -bullet -compact
+@
+
+
+1.34
+log
+@Added `UC' libman macro (has no effect).
+Corrected `UC' and `DT' not to print their arguments.
+Noted that `UC' and `DT' shouldn't be used.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.33 2009/08/20 12:26:15 kristaps Exp $
+d212 1
+a212 1
+Default compiler behaviour may be overriden with the
+@
+
+
+1.33
+log
+@Small cleanup in mandoc.1.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.32 2009/08/20 12:08:40 kristaps Exp $
+a318 2
+and
+.Sq \&Dt
+d320 1
+a320 1
+macros in
+d322 1
+a322 1
+have no effect.
+@
+
+
+1.32
+log
+@Documented omission of `na' and `Dt'.
+Clarified COMPATIBILITY section (which modes/inputs).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.31 2009/08/20 11:51:07 kristaps Exp $
+d135 2
+a136 4
+replaced on output by a single space.  Thus, if you wish to preserve
+multiple spaces, they must be space-escaped
+.Sq \e\
+or used in a literal display mode, e.g.,
+d287 1
+a287 1
+.Sq \&Bd \-literal 
+@
+
+
+1.31
+log
+@Added `DT' macro (pointed out by joerg@@netbsd.org).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.30 2009/08/19 09:14:50 kristaps Exp $
+d20 2
+a21 1
+.\" SECTION
+d25 2
+a26 1
+.\" SECTION
+d35 2
+a36 1
+.\" SECTION
+d43 1
+a44 1
+.\" ITEM
+d49 1
+a49 1
+.\" ITEM
+d55 1
+a55 1
+.\" ITEM
+d61 1
+a61 1
+.\" ITEM
+d64 1
+a64 1
+.\" ITEM
+d75 1
+a75 1
+.\" ITEM
+d83 1
+a83 1
+.\" PARAGRAPH
+d96 1
+a96 1
+.\" PARAGRAPH
+d99 2
+a100 1
+.\" SUB-SECTION
+d127 1
+d132 1
+d142 2
+a143 1
+.\" SUB-SECTION
+d162 1
+d176 1
+d187 2
+a188 12
+.\" .Pp
+.\" The following escape sequences are recognised, although the per-format
+.\" compiler may not allow certain sequences.
+.\" .Bl -tag -width Ds -offset XXXX
+.\" .It \efX
+.\" sets the font mode to X (B, I, R or P, where P resets the font)
+.\" .It \eX, \e(XX, \e[XN]
+.\" queries the special-character table for a corresponding symbol
+.\" .It \e*X, \e*(XX, \e*[XN]
+.\" deprecated special-character format
+.\" .El
+.\" SUB-SECTION
+d195 1
+d200 1
+d203 1
+d207 1
+d211 2
+a212 1
+.\" SUB-SECTION
+d217 1
+d223 1
+d226 1
+d229 1
+d232 1
+d239 1
+d245 1
+a245 1
+.\" PARAGRAPH
+d255 2
+a256 1
+.\" SECTION
+d259 1
+a259 1
+.\" PARAGRAPH
+d263 1
+a263 1
+.\" PARAGRAPH
+d266 1
+a266 1
+.\" PARAGRAPH
+d269 2
+a270 1
+.\" SECTION
+a271 1
+.\" FIXME: libman `na' and `DT' have no effect.
+d276 4
+a279 1
+.Pp
+a280 1
+.\" LIST-ITEM
+d284 14
+a297 2
+special character doesn't produce expected behaviour.
+.\" LIST-ITEM
+d303 2
+a304 1
+macro does not underline when under a
+d308 1
+a308 1
+.\" LIST-ITEM
+d312 3
+d317 1
+d319 9
+a327 4
+The \-literal and \-unfilled
+.Sq \&Bd
+displays types are synonyms, as are \-filled and \-ragged.
+.\" LIST-ITEM
+d330 1
+a330 1
+.\" LIST-ITEM
+d333 6
+a338 1
+so double spaces following sentence closure are reduced to a single space.
+@
+
+
+1.30
+log
+@Added RS/RE macro pair (had to adjust closing rules, sec/ssec/rs/par).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.29 2009/07/26 19:30:50 kristaps Exp $
+d260 1
+@
+
+
+1.29
+log
+@Removed POSIX.1 COMPATIBILITY note in mdoc.7.
+Noted that \~ doesn't work in mandoc.1 (thanks uqs@@sporlein.net).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.28 2009/07/24 14:00:59 kristaps Exp $
+d278 2
+a279 2
+.Sq \&It .
+This behaves correctly in
+@
+
+
+1.28
+log
+@Added -fign-errors for VERY fast checking of many manuals without stopping at errors.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.27 2009/07/21 15:52:41 kristaps Exp $
+d266 6
+d281 1
+d291 1
+d294 1
+d297 1
+a297 2
+so double spaces following sentence closure are reduced to a single space
+.Pq Dq French spacing .
+@
+
+
+1.27
+log
+@Noted COMPATIBILITY where, in groff, `Pa' under `It' doesn't render its style.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.26 2009/07/20 13:45:11 kristaps Exp $
+d230 4
+d252 6
+@
+
+
+1.26
+log
+@Removed trailing whitespace in manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.25 2009/07/14 15:57:43 kristaps Exp $
+d133 1
+a133 1
+.Sq \&.Bd \-literal
+d160 1
+a160 1
+.Sq \&.Dd
+d162 1
+a162 1
+.Sq \&.Dt ,
+d257 9
+d267 1
+a267 1
+.Sq \&.Ss
+d269 1
+a269 1
+.Sq \&.Sh .
+d272 1
+a272 1
+.Sq \&.Bd
+@
+
+
+1.25
+log
+@Ceremonial removal of "-hang lists not supported".  Candlelight, romantic music, etc.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.24 2009/07/06 09:34:29 kristaps Exp $
+d37 1
+a37 1
+utility formats 
+d43 1
+a43 1
+Override default compiler behaviour.  See 
+d66 1
+a66 1
+.Fl W Ns Ar error 
+d68 1
+a68 1
+termination.  Multiple 
+d82 3
+a84 3
+By default, 
+.Nm 
+reads 
+d104 2
+a105 2
+.Sq \&( , 
+.Sq \&[ , 
+d108 1
+a108 1
+.Pc 
+d111 8
+a118 8
+.Sq \&. , 
+.Sq \&, , 
+.Sq \&; , 
+.Sq \&: , 
+.Sq \&? , 
+.Sq \&! , 
+.Sq \&) , 
+.Sq \&] 
+d121 1
+a121 1
+.Pc 
+d131 4
+a134 4
+.Sq \e\ 
+or used in a literal display mode, e.g., 
+.Sq \&.Bd \-literal 
+in 
+d152 1
+a152 1
+recommended; 
+d159 1
+a159 1
+non-comment macro is 
+d163 1
+a163 1
+the 
+d170 2
+a171 2
+files are specified with 
+.Fl m Ns Ar andoc , 
+d225 1
+a225 1
+Implies 
+d227 1
+a227 1
+.Fl f Ns Ar no-ign-macro 
+d229 1
+a229 1
+.Fl f Ns Ar no-ign-chars . 
+d250 1
+a250 1
+This section summarises 
+d252 1
+a252 1
+compatibility with 
+d256 1
+a256 1
+.It 
+d262 1
+a262 1
+The \-literal and \-unfilled 
+d281 1
+a281 1
+utility was written by 
+@
+
+
+1.24
+log
+@Backed -Wcompat,syntax out of front-end.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.23 2009/06/25 10:51:55 kristaps Exp $
+a282 8
+.\" SECTION
+.Sh CAVEATS
+The 
+.Nm
+utility doesn't yet know how to display \-hang lists.
+.Pp
+Other macros still aren't supported by virtue of nobody complaining
+about their absence.
+@
+
+
+1.23
+log
+@Language clarification in mandoc.1 (schwarze@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.22 2009/06/22 12:04:05 kristaps Exp $
+d63 1
+a63 1
+Print warning messages.  May be set to 
+d65 1
+a65 5
+for all warnings, 
+.Ar compat
+for groff/troff-compatibility warnings, or
+.Ar syntax
+for syntax warnings.  If
+d67 1
+a67 1
+is specified, warnings are considered errors and cause utility
+@
+
+
+1.22
+log
+@Added "Spacing" part of "Punctuation and Spacing" in mandoc.1 manual.
+Fixed `Ds' meta-macro default width.
+Fixed -width and -offset "indent", "indent-two", and "left" widths.
+Fixed -width and -offset literal-word and numeric widths.
+Fixed off-by-one errors in whitespace output (schwarze@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.21 2009/06/18 08:13:34 kristaps Exp $
+d135 1
+a135 1
+.Sq \e\  .
+d273 2
+a274 3
+so double spaces following sentence closure 
+.Pq Qq French spacing
+are reduced to a single space.
+@
+
+
+1.21
+log
+@mandoc.1 reflects actual use of -f option (schwarze@@openbsd.org)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.20 2009/06/17 19:12:03 kristaps Exp $
+d101 1
+a101 1
+.Ss Punctuation
+d106 1
+a106 1
+according to the following rules.  Opening punctuation
+d113 1
+a113 1
+is not followed by a space. Closing punctuation
+d131 9
+a264 1
+.\" LIST-ITEM
+a268 1
+.\" LIST-ITEM
+d271 5
+@
+
+
+1.20
+log
+@Bumped version.
+Removed CVS note from index (they'll contact me if they need it).
+Properly ordered mandoc.1 CAVEATS/COMPATIBILITY.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.19 2009/06/15 09:35:16 kristaps Exp $
+d213 2
+a214 6
+.It Fl f Ns Ar ign-escape
+Ignore invalid escape sequences.
+.It Fl f Ns Ar ign-macro
+Ignore unknown macros at the start of input lines (default for 
+.Xr man 7
+parsing).
+d216 9
+a224 3
+Do not ignore unknown macros at the start of input lines (default for 
+.Xr mdoc 7
+parsing).
+d233 3
+a235 2
+.Fl f Ns Ar ign-scope,ign-escape ,
+for example, will try to ignore scope and character-escape errors.
+d241 1
+a241 2
+.D1 % mandoc \-Wall,error mandoc.1 2>&1 | less
+.Pp
+@
+
+
+1.19
+log
+@Manual-aesthetics fix (schwarze@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.18 2009/06/11 07:26:35 kristaps Exp $
+d242 22
+d268 1
+a268 1
+.\" 
+d278 1
+a278 10
+utility in
+.Fl T Ns Ar ascii
+mode doesn't yet know how to display the following:
+.Pp
+.Bl -bullet -compact
+.It
+The \-hang 
+.Sq \&.Bl
+list is not yet supported.
+.El
+d281 1
+a281 22
+about their absence.  Please report any omissions: this is a work in
+progress.
+.Pp
+The following list documents differences between traditional
+.Xr nroff 1
+output and
+.Nm :
+.Pp
+.Bl -bullet -compact
+.It 
+A list of display following
+.Sq \&.Ss
+does not assert a prior vertical break, just as it doesn't with
+.Sq \&.Sh .
+.It
+Special characters don't follow the current font style.
+.\" LIST-ITEM
+.It
+The \-literal and \-unfilled 
+.Sq \&.Bd
+displays types are synonyms, as are \-filled and \-ragged.
+.El
+@
+
+
+1.18
+log
+@Fixed email address in manual AUTHOR reference.
+Set max right margin to 80 columns (schwarze@@openbsd.org).
+Fixed centre-field heading position (schwarze@@openbsd.org).
+Also fixed -Tman centre-field.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.17 2009/06/10 20:18:43 kristaps Exp $
+d40 1
+a40 1
+.Bl -tag -width XXXXXXXXXXXX
+d47 1
+a47 1
+.It Fl m
+d53 1
+a53 1
+.It Fl T
+d191 1
+a191 1
+.Bl -tag -width XXXXXXXXXXXX 
+d208 1
+a208 1
+.Bl -tag -width XXXXXXXXXXXXXX 
+@
+
+
+1.17
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.16 2009/04/12 19:45:26 kristaps Exp $
+d251 1
+a251 1
+.An Kristaps Dzonsons Aq kristaps@@openbsd.org .
+@
+
+
+1.16
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc.1,v 1.15 2009/04/12 19:30:45 kristaps Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.15
+log
+@Spelling "preceed" -> "precede" (naddy).
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.14 2009/04/12 19:19:57 kristaps Exp $
+d6 2
+a7 3
+.\" purpose with or without fee is hereby granted, provided that the
+.\" above copyright notice and this permission notice appear in all
+.\" copies.
+d9 7
+a15 8
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+.\" WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+.\" WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+.\" AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+.\" DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+.\" PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+.\" TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+.\" PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.14
+log
+@Manual .Dt fields CAPITALISED.
+Indent set to 5 chars (nroff compat).
+Half-indent set to 3 chars (nroff compat).
+Default behaviour is loose-y (ignore macro/char/escape).
+Added -fstrict.
+Added unknown-character ignoring.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.13 2009/04/05 16:34:22 kristaps Exp $
+d128 1
+a128 1
+is not preceeded by whitespace.
+@
+
+
+1.13
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.12 2009/04/02 16:42:35 kristaps Exp $
+d20 1
+a20 1
+.Dt mandoc 1
+@
+
+
+1.12
+log
+@Documented -mandoc behaviour.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.11 2009/03/26 16:44:22 kristaps Exp $
+d103 6
+a108 7
+.Ss Reserved Words (mdoc only)
+The reserved words described in
+.Xr mdoc 7
+are handled according to the following rules:
+.Bl -enum -offset XXX
+.It
+Opening delimiters 
+d114 2
+a115 3
+.Pc are not followed by whitespace.
+.It
+Closing delimiters
+d127 2
+a128 3
+.Pc are not preceeded by whitespace.
+.El
+.\" PARAGRAPH
+d130 3
+a132 13
+Note that reserved words only register as such as if they appear as
+standalone tokens, either in parsed lines or streams of text.  Thus, the
+following fragment:
+.Bd -literal -offset XXXX
+this self is not that of the waking , empirically real man
+.Ed
+.\" PARAGRAPH
+.Pp
+\&...correctly adjusts the comma spacing to
+.Dq this self is not that of the waking , empirically real man .
+However, if the comma were part of 
+.Dq ,empirically ,
+it would not.
+d155 16
+a170 3
+which is also the default, determines encoding on-the-fly.  If multiple
+files are passed in, each has its file-type determined this way.  If
+multiple files are passed and
+d175 11
+a185 11
+.Pp
+The following escape sequences are recognised, although the per-format
+compiler may not allow certain sequences.
+.Bl -tag -width Ds -offset XXXX
+.It \efX
+sets the font mode to X (B, I, R or P, where P resets the font)
+.It \eX, \e(XX, \e[XN]
+queries the special-character table for a corresponding symbol
+.It \e*X, \e*(XX, \e*[XN]
+deprecated special-character format
+.El
+d193 2
+a194 2
+.Bl -tag -width XXXXXXXXXXXX -offset XXXX
+.It Ar ascii
+d197 1
+a197 1
+.It Ar tree
+d199 1
+a199 1
+.It Ar lint
+d202 3
+d210 1
+a210 1
+.Bl -tag -width XXXXXXXXXXXXXX -offset XXXX
+d237 1
+a237 1
+To page this manual page on the terminal:
+d241 2
+d245 1
+@
+
+
+1.11
+log
+@Added simple font-escapes.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.10 2009/03/26 16:23:22 kristaps Exp $
+d53 1
+a53 1
+.Fl m Ns Ar doc .
+d92 2
+d95 1
+a95 1
+.Fl m Ns Ar mdoc ,
+d166 10
+d207 1
+a207 1
+.Bl -tag -width XXXXXXXXXXXX -offset XXXX
+d215 7
+a221 1
+Ignore unknown macros at the start of input lines.
+@
+
+
+1.10
+log
+@All macro-invocations, for consistency, begin with `.' in documentation.
+Fixed \\ -> \e in manual documentation.
+All preliminary -man macros in place.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.9 2009/03/23 16:02:56 kristaps Exp $
+d163 11
+@
+
+
+1.9
+log
+@Initial documentation in place for man.7.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.8 2009/03/23 15:41:09 kristaps Exp $
+d53 1
+a53 1
+.Fl m Ns Ar mdoc .
+d153 1
+a153 1
+.Fl m Ns Ar mdoc
+d155 1
+a155 1
+.Fl m Ns Ar man ,
+a162 5
+.Pp
+Note that the
+.Fl m Ns Ar man
+option is experimental and only works with
+.Fl T Ns Ar tree .
+d230 1
+a230 1
+.Sq \&Bl
+d246 1
+a246 1
+.Sq \&Ss
+d248 1
+a248 1
+.Sq \&Sh .
+d254 1
+a254 1
+.Sq \&Bd
+@
+
+
+1.8
+log
+@-man linked to mandoc in documentation.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.7 2009/03/23 09:42:43 kristaps Exp $
+d216 2
+a217 1
+.Xr mdoc 7
+@
+
+
+1.7
+log
+@More manual documentation fixed/improved.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.6 2009/03/22 19:08:53 kristaps Exp $
+d25 1
+a25 1
+.Nd format and display BSD manuals
+d31 1
+d39 3
+a41 3
+utility formats a BSD 
+.Dq mdoc 
+manual page for display.  The arguments are as follows:
+d49 6
+d90 5
+a94 2
+reads from stdin and prints 78-column backspace-encoded output to stdout
+as if
+d101 1
+a101 1
+.Ss Reserved Words
+d145 24
+d193 1
+@
+
+
+1.6
+log
+@Removed Xo/Xc no-support notices.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.5 2009/03/21 21:09:00 kristaps Exp $
+d121 3
+a123 1
+Note that reserved words may occur in streams of text, so the following:
+d130 4
+a133 1
+.Qq this self is not that of the waking , empirically real man .
+d201 19
+a224 5
+.\" LIST-ITEM
+.It
+The
+.Sq \&Bd
+macro doesn't process \-compact .
+a225 4
+.Pp
+Other macros still aren't supported by virtue of nobody complaining
+about their absence.  Please report any omissions: this is a work in
+progress.
+@
+
+
+1.5
+log
+@Fixes to dynamic addition of Bl width.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.4 2009/03/21 13:09:29 kristaps Exp $
+a203 5
+.Sq \&Xo/Xc
+pair isn't supported.
+.\" LIST-ITEM
+.It
+The
+@
+
+
+1.4
+log
+@`Em' accepts empty tokens.
+Punctuation fully fixed (per-reserved-word).
+Sm enabled.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.3 2009/03/20 15:14:01 kristaps Exp $
+d187 3
+a189 1
+utility doesn't yet know how to display the following:
+d196 1
+d201 1
+d206 5
+@
+
+
+1.3
+log
+@Support for `Bd' of all types (see mdoc.7 for newline/tab rules).
+Renamed term.c and terminal.c functions to be term_.
+Some bugfixes to lists.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.2 2009/03/19 18:30:26 kristaps Exp $
+d91 39
+a201 4
+.It
+The
+.Sq \&Sm
+macro has no effect, yet.
+@
+
+
+1.2
+log
+@Fixed mandoc read from stdin.
+Added some more groff_chars.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mandoc.1,v 1.1 2009/03/19 16:17:27 kristaps Exp $
+d158 1
+a158 1
+displays only accept text contents.
+@
+
+
+1.1
+log
+@Split mdocterm.c -> main.c terminal.c.
+Abstracted output with -T selector (default ascii).
+Name change: mdocterm -> mandoc.
+Re-imported tree with -Ttree.
+@
+text
+@d1 1
+a1 1
+.\" $Id: mdocterm.1,v 1.26 2009/03/19 11:49:00 kristaps Exp $
+d75 3
+a77 1
+If unspecified, reads from stdin.
+@

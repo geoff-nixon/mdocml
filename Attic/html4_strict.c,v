@@ -1,0 +1,1382 @@
+head	1.10;
+access;
+symbols
+	VERSION_1_9_5:1.10
+	VERSION_1_8_5:1.10
+	VERSION_1_8_1:1.10
+	VERSION_1_7_16:1.10
+	VERSION_1_7_15:1.10
+	OPENBSD_CHECKIN:1.10
+	VERSION_1_6_5:1.10
+	VERSION_1_5_1:1.10
+	VERSION_1_3_15:1.10
+	VERSION_1_3_6:1.10
+	VERSION_1_2_0:1.10
+	VERSION_1_0_2:1.10;
+locks; strict;
+comment	@ * @;
+
+
+1.10
+date	2008.12.03.14.39.59;	author kristaps;	state dead;
+branches;
+next	1.9;
+
+1.9
+date	2008.11.29.14.14.21;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.11.25.12.14.02;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.11.24.14.24.55;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.11.24.08.50.33;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.11.23.23.35.25;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.11.23.23.12.47;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.11.23.22.30.53;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.11.23.19.10.03;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.11.23.16.53.18;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@Abstract ml/mlg/html/xml.
+@
+text
+@@
+
+
+1.9
+log
+@Inclusion of "real" validation code.
+@
+text
+@a0 51
+/* $Id: html4_strict.c,v 1.8 2008/11/25 12:14:02 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <assert.h>
+#include <stdlib.h>
+
+#include "libmdocml.h"
+#include "private.h"
+
+
+/* ARGSUSED */
+int
+md_line_html4_strict(void *data, char *buf)
+{
+
+	return(1);
+}
+
+
+/* ARGSUSED */
+int
+md_exit_html4_strict(void *data, int flush)
+{
+
+	return(1);
+}
+
+
+/* ARGSUSED */
+void *
+md_init_html4_strict(const struct md_args *args,
+		struct md_mbuf *mbuf, const struct md_rbuf *rbuf)
+{
+
+	return(NULL);
+}
+@
+
+
+1.8
+log
+@Single call-back for filters.
+Removed verbose flag.
+Added more macros and arguments.
+@
+text
+@d1 1
+a1 1
+/* $Id: html4_strict.c,v 1.7 2008/11/24 14:24:55 kristaps Exp $ */
+d28 1
+a28 1
+md_line_html4_strict(void *data, char *buf, size_t sz)
+@
+
+
+1.7
+log
+@Split roff engine into roff.c.
+Re-worked calling convention for md_*.
+@
+text
+@d1 1
+a1 1
+/* $Id: dummy.c,v 1.2 2008/11/24 08:50:33 kristaps Exp $ */
+d26 1
+d35 1
+d44 1
+@
+
+
+1.6
+log
+@Roff-line tokens parsed into char**.
+@
+text
+@d1 1
+a1 1
+/* $Id: html4_strict.c,v 1.5 2008/11/23 23:35:25 kristaps Exp $ */
+a19 2
+#include <ctype.h>
+#include <err.h>
+a20 3
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+a24 99
+#define	ROFF_MAXARG	  10
+
+enum	roffd { 
+	ROFF_ENTER = 0, 
+	ROFF_EXIT 
+};
+
+enum	rofftype { 
+	ROFF_TITLE, 
+	ROFF_COMMENT, 
+	ROFF_TEXT, 
+	ROFF_LAYOUT 
+};
+
+#define	ROFFCALL_ARGS	  					\
+	const struct md_args *arg, struct md_mbuf *out,		\
+	const struct md_rbuf *in, const char *argv[],		\
+	enum roffd type, struct rofftree *tree
+
+struct	rofftree;
+
+struct	rofftok {
+	int		  id;
+	char		  name[2];
+	int		(*cb)(ROFFCALL_ARGS);
+	enum rofftype	  type;
+	int		  flags;
+#define	ROFF_NESTED	 (1 << 0) 
+#define	ROFF_PARSED	 (1 << 1)
+#define	ROFF_CALLABLE	 (1 << 2)
+#define	ROFF_QUOTES	 (1 << 3)
+};
+
+struct	roffnode {
+	int		  tok;	
+	struct roffnode	 *parent;
+	size_t		  line;
+};
+
+struct	rofftree {
+	struct roffnode	 *last;
+	time_t		  date;
+	char		  title[256];
+	char		  section[256];
+	char		  volume[256];
+	int		  state;
+#define	ROFF_PRELUDE	 (1 << 1)
+#define	ROFF_PRELUDE_Os	 (1 << 2)
+#define	ROFF_PRELUDE_Dt	 (1 << 3)
+#define	ROFF_PRELUDE_Dd	 (1 << 4)
+#define	ROFF_BODY	 (1 << 5)
+};
+
+#define	ROFF___	 	  0
+#define	ROFF_Dd		  1
+#define	ROFF_Dt		  2
+#define	ROFF_Os		  3
+#define	ROFF_Sh		  4
+#define	ROFF_An		  5
+#define	ROFF_Li		  6
+#define	ROFF_MAX	  7
+
+static	int		  roff_Dd(ROFFCALL_ARGS);
+static	int		  roff_Dt(ROFFCALL_ARGS);
+static	int		  roff_Os(ROFFCALL_ARGS);
+static	int		  roff_Sh(ROFFCALL_ARGS);
+static	int		  roff_An(ROFFCALL_ARGS);
+static	int		  roff_Li(ROFFCALL_ARGS);
+
+static	struct roffnode	 *roffnode_new(int, size_t, 
+				struct rofftree *);
+static	void		  roffnode_free(int, struct rofftree *);
+
+static	int		  rofffind(const char *);
+static	int		  roffargs(int, char *, char **);
+static	int 		  roffparse(const struct md_args *, 
+				struct md_mbuf *,
+				const struct md_rbuf *, 
+				char *, size_t, struct rofftree *);
+static	int		  textparse(struct md_mbuf *, 
+				const struct md_rbuf *, 
+				const char *, size_t, 
+				const struct rofftree *);
+
+static	void		  dbg_enter(const struct md_args *, int);
+static	void		  dbg_leave(const struct md_args *, int);
+
+
+static const struct rofftok tokens[ROFF_MAX] = 
+{
+{ ROFF___, "\\\"",     NULL, ROFF_COMMENT,			  0 },
+{ ROFF_Dd,   "Dd",  roff_Dd, ROFF_TITLE,			  0 },
+{ ROFF_Dt,   "Dt",  roff_Dt, ROFF_TITLE,			  0 },
+{ ROFF_Os,   "Os",  roff_Os, ROFF_TITLE,			  0 },
+{ ROFF_Sh,   "Sh",  roff_Sh, ROFF_LAYOUT,			  0 },
+{ ROFF_An,   "An",  roff_An, ROFF_TEXT,	ROFF_PARSED 		    },
+{ ROFF_Li,   "Li",  roff_Li, ROFF_TEXT,	ROFF_PARSED | ROFF_CALLABLE },
+};
+
+d27 1
+a27 2
+md_exit_html4_strict(const struct md_args *args, struct md_mbuf *out, 
+		const struct md_rbuf *in, int error, void *data)
+a28 21
+	struct rofftree	*tree;
+
+	assert(args);
+	assert(data);
+	tree = (struct rofftree *)data;
+
+	if (-1 == error)
+		out = NULL;
+
+	/* LINTED */
+	while (tree->last)
+		if ( ! (*tokens[tree->last->tok].cb)(args, out, in, 
+					NULL, ROFF_EXIT, tree))
+			out = NULL;
+
+	if (out && (ROFF_PRELUDE & tree->state)) {
+		warnx("%s: prelude never finished", in->name);
+		error = 1;
+	}
+
+	free(tree);
+a29 25
+	return(error ? 0 : 1);
+}
+
+
+int
+md_init_html4_strict(const struct md_args *args, struct md_mbuf *out, 
+		const struct md_rbuf *in, void **data) 
+{
+	struct rofftree	*tree;
+
+	assert(args);
+	assert(in);
+	assert(out);
+	assert(data);
+
+	/* TODO: write HTML-DTD header. */
+
+	if (NULL == (tree = calloc(1, sizeof(struct rofftree)))) {
+		warn("malloc");
+		return(0);
+	}
+
+	tree->state = ROFF_PRELUDE;
+
+	*data = tree;
+d35 1
+a35 372
+md_line_html4_strict(const struct md_args *args, struct md_mbuf *out, 
+		const struct md_rbuf *in, char *buf, 
+		size_t sz, void *data)
+{
+	struct rofftree	*tree;
+
+	assert(args);
+	assert(in);
+	assert(data);
+
+	tree = (struct rofftree *)data;
+
+	if (0 == sz) {
+		warnx("%s: blank line (line %zu)", in->name, in->line);
+		return(0);
+	} else if ('.' != *buf)
+		return(textparse(out, in, buf, sz, tree));
+
+	return(roffparse(args, out, in, buf, sz, tree));
+}
+
+
+static int
+textparse(struct md_mbuf *out, const struct md_rbuf *in, 
+		const char *buf, size_t sz, 
+		const struct rofftree *tree)
+{
+	
+	assert(tree);
+	assert(out);
+	assert(in);
+	assert(buf);
+	assert(sz > 0);
+
+	if (NULL == tree->last) {
+		warnx("%s: unexpected text (line %zu)",
+				in->name, in->line);
+		return(0);
+	} else if (NULL == tree->last->parent) {
+		warnx("%s: disallowed text (line %zu)",
+				in->name, in->line);
+		return(0);
+	}
+
+	if ( ! md_buf_puts(out, buf, sz))
+		return(0);
+	return(md_buf_putstring(out, " "));
+}
+
+
+static int
+roffargs(int tok, char *buf, char **argv)
+{
+	int		 i;
+
+	(void)tok;/* FIXME: quotable strings? */
+
+	assert(tok >= 0 && tok < ROFF_MAX);
+	assert('.' == *buf);
+
+	/* LINTED */
+	for (i = 0; *buf && i < ROFF_MAXARG; i++) {
+		argv[i] = buf++;
+		while (*buf && ! isspace(*buf))
+			buf++;
+		if (NULL == *buf) {
+			continue;
+		}
+		*buf++ = 0;
+		while (*buf && isspace(*buf))
+			buf++;
+	}
+	
+	assert(i > 0);
+	if (i < ROFF_MAXARG)
+		argv[i] = NULL;
+
+	return(ROFF_MAXARG > i);
+}
+
+
+static int
+roffparse(const struct md_args *args, struct md_mbuf *out,
+		const struct md_rbuf *in, char *buf, size_t sz, 
+		struct rofftree *tree)
+{
+	int		 tok, t;
+	struct roffnode	*node;
+	char		*argv[ROFF_MAXARG];
+
+	assert(sz > 0);
+
+	/*
+	 * Extract the token identifier from the buffer.  If there's no
+	 * callback for the token (comment, etc.) then exit immediately.
+	 * We don't do any error handling (yet), so if the token doesn't
+	 * exist, die.
+	 */
+
+	if (3 > sz) {
+		warnx("%s: malformed line (line %zu)", 
+				in->name, in->line);
+		return(0);
+	} else if (ROFF_MAX == (tok = rofffind(buf + 1))) {
+		warnx("%s: unknown line token `%c%c' (line %zu)",
+				in->name, *(buf + 1), 
+				*(buf + 2), in->line);
+		return(0);
+	} else if (ROFF_COMMENT == tokens[tok].type) 
+		/* Ignore comment tokens. */
+		return(1);
+	
+	if ( ! roffargs(tok, buf, argv)) {
+		warnx("%s: too many arguments to `%s' (line %zu)",
+				in->name, tokens[tok].name, in->line);
+		return(0);
+	}
+
+	/* Domain cross-contamination (and sanity) checks. */
+
+	switch (tokens[tok].type) {
+	case (ROFF_TITLE):
+		if (ROFF_PRELUDE & tree->state) {
+			assert( ! (ROFF_BODY & tree->state));
+			break;
+		}
+		assert(ROFF_BODY & tree->state);
+		warnx("%s: prelude token `%s' in body (line %zu)",
+				in->name, tokens[tok].name, in->line);
+		return(0);
+	case (ROFF_LAYOUT):
+		/* FALLTHROUGH */
+	case (ROFF_TEXT):
+		if (ROFF_BODY & tree->state) {
+			assert( ! (ROFF_PRELUDE & tree->state));
+			break;
+		}
+		assert(ROFF_PRELUDE & tree->state);
+		warnx("%s: body token `%s' in prelude (line %zu)",
+				in->name, tokens[tok].name, in->line);
+		return(0);
+	case (ROFF_COMMENT):
+		return(1);
+	default:
+		abort();
+	}
+
+	/*
+	 * Text-domain checks.
+	 */
+
+	if (ROFF_TEXT == tokens[tok].type &&
+			! (ROFF_PARSED & tokens[tok].flags)) {
+		warnx("%s: text token `%s' not callable (line %zu)",
+				in->name, tokens[tok].name, in->line);
+		return(0);
+	}
+
+	/*
+	 * If this is a non-nestable layout token and we're below a
+	 * token of the same type, then recurse upward to the token,
+	 * closing out the interim scopes.
+	 *
+	 * If there's a nested token on the chain, then raise an error
+	 * as nested tokens have corresponding "ending" tokens and we're
+	 * breaking their scope.
+	 */
+
+	node = NULL;
+
+	if (ROFF_LAYOUT == tokens[tok].type && 
+			! (ROFF_NESTED & tokens[tok].flags)) {
+		for (node = tree->last; node; node = node->parent) {
+			if (node->tok == tok)
+				break;
+
+			/* Don't break nested scope. */
+
+			if ( ! (ROFF_NESTED & tokens[node->tok].flags))
+				continue;
+			warnx("%s: scope of %s (line %zu) broken by "
+					"%s (line %zu)", in->name, 
+					tokens[tok].name,
+					node->line, 
+					tokens[node->tok].name,
+					in->line);
+			return(0);
+		}
+	}
+
+	if (node) {
+		assert(ROFF_LAYOUT == tokens[tok].type);
+		assert( ! (ROFF_NESTED & tokens[tok].flags));
+		assert(node->tok == tok);
+
+		/* Clear up to last scoped token. */
+
+		/* LINTED */
+		do {
+			t = tree->last->tok;
+			if ( ! (*tokens[tree->last->tok].cb)
+					(args, out, in, NULL,
+					 ROFF_EXIT, tree))
+				return(0);
+		} while (t != tok);
+	}
+
+	/* Proceed with actual token processing. */
+
+	return((*tokens[tok].cb)(args, out, in, (const char **)argv, 
+				ROFF_ENTER, tree));
+}
+
+
+static int
+rofffind(const char *name)
+{
+	size_t		 i;
+
+	assert(name);
+	/* FIXME: use a table, this is slow but ok for now. */
+
+	/* LINTED */
+	for (i = 0; i < ROFF_MAX; i++)
+		/* LINTED */
+		if (0 == strncmp(name, tokens[i].name, 2))
+			return((int)i);
+	
+	return(ROFF_MAX);
+}
+
+
+static struct roffnode *
+roffnode_new(int tokid, size_t line, struct rofftree *tree)
+{
+	struct roffnode	*p;
+	
+	if (NULL == (p = malloc(sizeof(struct roffnode)))) {
+		warn("malloc");
+		return(NULL);
+	}
+
+	p->line = line;
+	p->tok = tokid;
+	p->parent = tree->last;
+	tree->last = p;
+	return(p);
+}
+
+
+static void
+roffnode_free(int tokid, struct rofftree *tree)
+{
+	struct roffnode	*p;
+
+	assert(tree->last);
+	assert(tree->last->tok == tokid);
+
+	p = tree->last;
+	tree->last = tree->last->parent;
+	free(p);
+}
+
+
+static int dbg_lvl = 0;
+
+
+static void
+dbg_enter(const struct md_args *args, int tokid)
+{
+	int		 i;
+	static char	 buf[72];
+
+	assert(args);
+	if ( ! (args->dbg & MD_DBG_TREE))
+		return;
+	assert(tokid >= 0 && tokid <= ROFF_MAX);
+
+	buf[0] = 0;
+
+	switch (tokens[tokid].type) {
+	case (ROFF_LAYOUT):
+		/* FALLTHROUGH */
+	case (ROFF_TEXT):
+		(void)strlcat(buf, "body: ", sizeof(buf));
+		break;
+	case (ROFF_TITLE):
+		(void)strlcat(buf, "prelude: ", sizeof(buf));
+		break;
+	default:
+		abort();
+	}
+
+	/* LINTED */
+	for (i = 0; i < dbg_lvl; i++)
+		(void)strlcat(buf, "  ", sizeof(buf));
+
+	(void)strlcat(buf, tokens[tokid].name, sizeof(buf));
+
+	(void)printf("%s\n", buf);
+
+	if (ROFF_LAYOUT == tokens[tokid].type)
+		dbg_lvl++;
+}
+
+
+static void
+dbg_leave(const struct md_args *args, int tokid)
+{
+	assert(args);
+	if ( ! (args->dbg & MD_DBG_TREE))
+		return;
+	if (ROFF_LAYOUT != tokens[tokid].type)
+		return;
+
+	assert(tokid >= 0 && tokid <= ROFF_MAX);
+	assert(dbg_lvl > 0);
+	dbg_lvl--;
+}
+
+
+/* ARGSUSED */
+static	int
+roff_Dd(ROFFCALL_ARGS)
+{
+
+	dbg_enter(arg, ROFF_Dd);
+
+	assert(ROFF_PRELUDE & tree->state);
+	if (ROFF_PRELUDE_Dt & tree->state ||
+			ROFF_PRELUDE_Dd & tree->state) {
+		warnx("%s: prelude `Dd' out-of-order (line %zu)",
+				in->name, in->line);
+		return(0);
+	}
+
+	assert(NULL == tree->last);
+	tree->state |= ROFF_PRELUDE_Dd;
+
+	dbg_leave(arg, ROFF_Dd);
+
+	return(1);
+}
+
+
+/* ARGSUSED */
+static	int
+roff_Dt(ROFFCALL_ARGS)
+{
+
+	dbg_enter(arg, ROFF_Dt);
+
+	assert(ROFF_PRELUDE & tree->state);
+	if ( ! (ROFF_PRELUDE_Dd & tree->state) ||
+			(ROFF_PRELUDE_Dt & tree->state)) {
+		warnx("%s: prelude `Dt' out-of-order (line %zu)",
+				in->name, in->line);
+		return(0);
+	}
+
+	assert(NULL == tree->last);
+	tree->state |= ROFF_PRELUDE_Dt;
+
+	dbg_leave(arg, ROFF_Dt);
+
+	return(1);
+}
+
+
+/* ARGSUSED */
+static	int
+roff_Os(ROFFCALL_ARGS)
+a37 46
+	if (ROFF_EXIT == type) {
+		roffnode_free(ROFF_Os, tree);
+		dbg_leave(arg, ROFF_Os);
+		return(1);
+	} 
+
+	dbg_enter(arg, ROFF_Os);
+
+	assert(ROFF_PRELUDE & tree->state);
+	if ( ! (ROFF_PRELUDE_Dt & tree->state) ||
+			! (ROFF_PRELUDE_Dd & tree->state)) {
+		warnx("%s: prelude `Os' out-of-order (line %zu)",
+				in->name, in->line);
+		return(0);
+	}
+
+	assert(NULL == tree->last);
+	if (NULL == roffnode_new(ROFF_Os, in->line, tree))
+		return(0);
+
+	tree->state |= ROFF_PRELUDE_Os;
+	tree->state &= ~ROFF_PRELUDE;
+	tree->state |= ROFF_BODY;
+
+	return(1);
+}
+
+
+/* ARGSUSED */
+static int
+roff_Sh(ROFFCALL_ARGS)
+{
+
+	if (ROFF_EXIT == type) {
+		roffnode_free(ROFF_Sh, tree);
+		dbg_leave(arg, ROFF_Sh);
+		return(1);
+	} 
+
+	dbg_enter(arg, ROFF_Sh);
+
+	if (NULL == roffnode_new(ROFF_Sh, in->line, tree))
+		return(0);
+
+	dbg_leave(arg, ROFF_Li);
+
+d42 3
+a44 3
+/* ARGSUSED */
+static int
+roff_Li(ROFFCALL_ARGS) 
+d47 1
+a47 43
+	dbg_enter(arg, ROFF_Li);
+	dbg_leave(arg, ROFF_Li);
+
+	return(1);
+}
+
+
+#if 0
+static int
+parse_args(void)
+{
+	skip_whitespace();
+
+	while (pos < sz) {
+
+		if (is_arg) {
+		} else if (parsable) {
+			if (is_callable_token()) {
+			}
+		} 
+
+		skip_whitespace();
+	}
+}
+#endif
+
+
+/* ARGSUSED */
+static int
+roff_An(ROFFCALL_ARGS) 
+{
+
+	dbg_enter(arg, ROFF_An);
+
+	/* Do our ML stuff. */
+
+	/*parse_args();*/
+
+	/* Do our trailing whitespace stuff. */
+
+	dbg_leave(arg, ROFF_An);
+
+	return(1);
+@
+
+
+1.5
+log
+@Added initial support for callable/parsable.
+@
+text
+@d1 1
+a1 1
+/* $Id: html4_strict.c,v 1.4 2008/11/23 23:12:47 kristaps Exp $ */
+d30 2
+d46 2
+a47 2
+	const struct md_rbuf *in, const char *buf, size_t sz,	\
+	size_t pos, enum roffd type, struct rofftree *tree
+d60 1
+d90 1
+a90 1
+#define	ROFF_Max	  7
+d104 1
+d108 1
+a108 2
+				const char *, size_t,
+				struct rofftree *);
+d118 1
+a118 1
+static const struct rofftok tokens[ROFF_Max] = 
+d146 1
+a146 1
+					NULL, 0, 0, ROFF_EXIT, tree))
+d187 1
+a187 1
+		const struct md_rbuf *in, const char *buf, 
+d237 31
+d269 2
+a270 2
+		const struct md_rbuf *in, const char *buf,
+		size_t sz, struct rofftree *tree)
+d272 1
+a272 2
+	int		 tokid, t;
+	size_t		 pos;
+d274 1
+a275 4
+	assert(args);
+	assert(out);
+	assert(in);
+	assert(buf);
+a276 1
+	assert(tree);
+d289 1
+a289 1
+	} else if (ROFF_Max == (tokid = rofffind(buf + 1))) {
+d294 9
+a302 1
+	} 
+d306 1
+a306 1
+	switch (tokens[tokid].type) {
+d314 1
+a314 1
+				in->name, tokens[tokid].name, in->line);
+d325 1
+a325 1
+				in->name, tokens[tokid].name, in->line);
+d337 2
+a338 2
+	if (ROFF_TEXT == tokens[tokid].type &&
+			! (ROFF_PARSED & tokens[tokid].flags)) {
+d340 1
+a340 1
+				in->name, tokens[tokid].name, in->line);
+a354 1
+	pos = 3;
+d356 2
+a357 2
+	if (ROFF_LAYOUT == tokens[tokid].type && 
+			! (ROFF_NESTED & tokens[tokid].flags)) {
+d359 1
+a359 1
+			if (node->tok == tokid)
+d368 1
+a368 1
+					tokens[tokid].name,
+d377 3
+a379 3
+		assert(ROFF_LAYOUT == tokens[tokid].type);
+		assert( ! (ROFF_NESTED & tokens[tokid].flags));
+		assert(node->tok == tokid);
+d388 1
+a388 1
+					 0, 0, ROFF_EXIT, tree))
+d390 1
+a390 1
+		} while (t != tokid);
+d395 2
+a396 2
+	return((*tokens[tokid].cb)(args, out, in, buf, sz, 
+				pos, ROFF_ENTER, tree));
+d409 1
+a409 1
+	for (i = 0; i < ROFF_Max; i++)
+d414 1
+a414 1
+	return(ROFF_Max);
+d462 1
+a462 1
+	assert(tokid >= 0 && tokid <= ROFF_Max);
+d501 1
+a501 1
+	assert(tokid >= 0 && tokid <= ROFF_Max);
+d507 1
+d531 1
+d555 1
+d588 1
+d610 1
+d642 1
+@
+
+
+1.4
+log
+@Fixed clarity in libmdocml.c.
+Fixed debugging messages.
+@
+text
+@d1 1
+a1 1
+/* $Id: html4_strict.c,v 1.3 2008/11/23 22:30:53 kristaps Exp $ */
+d475 2
+d488 2
+a489 1
+	dbg_enter(arg, ROFF_Dd);
+d498 2
+d511 2
+a512 1
+	dbg_enter(arg, ROFF_Dt);
+d527 2
+a544 1
+	dbg_enter(arg, ROFF_Os);
+d559 2
+d564 2
+a565 1
+	dbg_enter(arg, ROFF_Sh);
+d574 3
+d581 20
+d605 10
+@
+
+
+1.3
+log
+@Considerable improvements across the board.
+@
+text
+@d1 1
+a1 1
+/* $Id: html4_strict.c,v 1.2 2008/11/23 19:10:03 kristaps Exp $ */
+d42 4
+a45 6
+#define	ROFFCALL_ARGS	  const struct md_args *arg,		\
+			  struct md_mbuf *out,			\
+			  const struct md_rbuf *in,		\
+			  const char *buf, size_t sz,		\
+			  size_t pos, enum roffd type,		\
+			  struct rofftree *tree
+d55 3
+a57 3
+#define	ROFF_NESTED	 (1 << 0) /* FIXME: test. */
+#define	ROFF_PARSED	 (1 << 1) /* FIXME: test. */
+#define	ROFF_CALLABLE	 (1 << 2) /* FIXME: test. */
+d287 1
+a287 1
+		warnx("%s: text token `%s' in prelude (line %zu)",
+d290 2
+d293 1
+a293 1
+		return(1);
+d414 1
+a414 1
+static int dbg_lvl = 0; /* FIXME: de-globalise. */
+d421 1
+d426 1
+d428 14
+a441 1
+	assert(tokid >= 0 && tokid <= ROFF_Max);
+d445 3
+a447 1
+		(void)printf("    ");
+d449 1
+a449 1
+	(void)printf("%s\n", tokens[tokid].name);
+a458 2
+	int		 i;
+
+a466 1
+
+a467 6
+
+	/* LINTED */
+	for (i = 0; i < dbg_lvl; i++) 
+		(void)printf("    ");
+
+	(void)printf("%s\n", tokens[tokid].name);
+d478 1
+a478 1
+		warnx("%s: bad prelude ordering (line %zu)",
+d498 1
+a498 1
+		warnx("%s: bad prelude ordering (line %zu)",
+d524 1
+a524 1
+		warnx("%s: bad prelude ordering (line %zu)",
+@
+
+
+1.2
+log
+@Initial support for Sh.
+Debugging things (will be changed out).
+@
+text
+@d1 1
+a1 1
+/* $Id: html4_strict.c,v 1.1 2008/11/23 16:53:18 kristaps Exp $ */
+d30 3
+a32 3
+enum	roffd {
+	ROFF_ENTER = 0,
+	ROFF_EXIT
+d35 5
+a39 3
+enum	rofftype {
+	ROFF_NONE = 0,
+	ROFF_LAYOUT
+a41 2
+struct rofftree;
+
+a47 1
+typedef	int		(*roffcall)(ROFFCALL_ARGS);
+d49 1
+a49 4
+static	int		  roff_Dd(ROFFCALL_ARGS);
+static	int		  roff_Dt(ROFFCALL_ARGS);
+static	int		  roff_Os(ROFFCALL_ARGS);
+static	int		  roff_Sh(ROFFCALL_ARGS);
+d52 1
+a52 7
+	char		  id;
+#define	ROFF___	 	  0
+#define	ROFF_Dd		  1
+#define	ROFF_Dt		  2
+#define	ROFF_Os		  3
+#define	ROFF_Sh		  4
+#define	ROFF_Max	  5
+d54 1
+a54 1
+	roffcall	  cb;
+d57 3
+a59 9
+#define	ROFF_NESTED	 (1 << 0)
+};
+
+static const struct rofftok tokens[ROFF_Max] = {
+	{ ROFF___,    "\\\"",	   NULL, ROFF_NONE,	0 },
+	{ ROFF_Dd,	"Dd",	roff_Dd, ROFF_NONE,	0 },
+	{ ROFF_Dt,	"Dt",	roff_Dt, ROFF_NONE,	0 },
+	{ ROFF_Os,	"Os",	roff_Os, ROFF_LAYOUT,	0 },
+	{ ROFF_Sh,	"Sh",	roff_Sh, ROFF_LAYOUT,	0 },
+d65 1
+a65 1
+	/* TODO: line number at acquisition. */
+d68 1
+a68 1
+struct rofftree {
+d75 5
+a79 3
+#define	ROFF_PRELUDE_Os	 (1 << 1)
+#define	ROFF_PRELUDE_Dt	 (1 << 2)
+#define	ROFF_PRELUDE_Dd	 (1 << 3)
+d82 20
+d117 12
+d131 1
+a131 1
+		const struct md_rbuf *in, void *data)
+a133 1
+	int		 error;
+a137 1
+	error = 0;
+d139 4
+d144 8
+a151 4
+		if ( ! (*tokens[tree->last->tok].cb)
+				(args, error ? NULL : out, in, NULL,
+				 0, 0, ROFF_EXIT, tree))
+			error = 1;
+d154 1
+d177 2
+d259 1
+a259 1
+		warnx("%s: malformed input (line %zu, col 1)", 
+d263 1
+a263 1
+		warnx("%s: unknown token `%c%c' (line %zu, col 1)",
+d267 32
+a298 2
+	} else if (NULL == tokens[tokid].cb) 
+		return(1); /* Skip token. */
+d300 6
+a305 1
+	pos = 3;
+d318 1
+d330 4
+a333 3
+			warnx("%s: scope of %s broken by %s "
+					"(line %zu, col %zu)",
+					in->name, tokens[tokid].name,
+d335 1
+a335 1
+					in->line, pos);
+d339 1
+d347 1
+d371 2
+d374 1
+d376 1
+a376 1
+			return(i);
+d382 81
+a462 1
+/* ARGUSED */
+d467 5
+a471 12
+	assert(in);
+	assert(tree);
+	assert(arg);
+	assert(out);
+	assert(buf);
+	assert(sz > 0);
+	assert(pos > 0);
+	assert(type == ROFF_ENTER);
+
+	if (tree->last) {
+		warnx("%s: superfluous prelude (line %zu, col %zu)",
+				in->name, in->line, pos);
+d475 1
+a475 9
+	if (0 != tree->state) {
+		warnx("%s: bad manual prelude (line %zu, col %zu)",
+				in->name, in->line, pos);
+		return(1);
+	}
+
+	/* TODO: parse date from buffer. */
+
+	tree->date = time(NULL);
+d478 1
+a478 2
+	(void)printf("Dd\n");
+
+d487 1
+a487 15
+	assert(in);
+	assert(tree);
+	assert(arg);
+	assert(out);
+	assert(buf);
+	assert(sz > 0);
+	assert(pos > 0);
+	assert(type == ROFF_ENTER);
+
+	if (tree->last) {
+		warnx("%s: superfluous prelude (line %zu, col %zu)",
+				in->name, in->line, pos);
+		return(0);
+	}
+
+a488 1
+			(ROFF_PRELUDE_Os & tree->state) ||
+d490 3
+a492 3
+		warnx("%s: bad manual prelude (line %zu, col %zu)",
+				in->name, in->line, pos);
+		return(1);
+d495 1
+a495 2
+	/* TODO: parse titles from buffer. */
+
+d498 1
+a498 2
+	(void)printf("Dt\n");
+
+a505 5
+	struct roffnode	*node;
+
+	assert(arg);
+	assert(tree);
+	assert(in);
+d508 1
+a508 9
+		assert(tree->last);
+		assert(tree->last->tok == ROFF_Os);
+
+		/* TODO: flush out ML footer. */
+
+		node = tree->last;
+		tree->last = node->parent;
+		free(node);
+
+a509 1
+
+d513 5
+a517 8
+	assert(out);
+	assert(buf);
+	assert(sz > 0);
+	assert(pos > 0);
+
+	if (tree->last) {
+		warnx("%s: superfluous prelude (line %zu, col %zu)",
+				in->name, in->line, pos);
+d521 2
+a522 11
+	if ((ROFF_PRELUDE_Os & tree->state) ||
+			! (ROFF_PRELUDE_Dt & tree->state) ||
+			! (ROFF_PRELUDE_Dd & tree->state)) {
+		warnx("%s: bad manual prelude (line %zu, col %zu)",
+				in->name, in->line, pos);
+		return(1);
+	}
+
+	node = malloc(sizeof(struct roffnode));
+	if (NULL == node) {
+		warn("malloc");
+a523 3
+	}
+	node->tok = ROFF_Os;
+	node->parent = NULL;
+d526 2
+a527 1
+	tree->last = node;
+a529 1
+
+d534 1
+a534 1
+static	int
+a536 6
+	struct roffnode	*node;
+
+	assert(arg);
+	assert(tree);
+	assert(tree->last);
+	assert(in);
+d539 1
+a539 6
+		assert(tree->last->tok == ROFF_Sh);
+
+		node = tree->last;
+		tree->last = node->parent;
+		free(node);
+
+a540 1
+
+d544 1
+a544 8
+	assert(out);
+	assert(buf);
+	assert(sz > 0);
+	assert(pos > 0);
+
+	node = malloc(sizeof(struct roffnode));
+	if (NULL == node) {
+		warn("malloc");
+a545 5
+	}
+	node->tok = ROFF_Sh;
+	node->parent = tree->last;
+
+	tree->last = node;
+a547 1
+
+d552 2
+a553 5
+static int dbg_lvl = 0; /* FIXME: de-globalise. */
+
+
+static void
+dbg_enter(const struct md_args *args, int tokid)
+a554 1
+	int		 i;
+d556 1
+a556 13
+	assert(args);
+	if ( ! (args->dbg & MD_DBG_TREE))
+		return;
+
+	assert(tokid >= 0 && tokid <= ROFF_Max);
+
+	for (i = 0; i < dbg_lvl; i++)
+		(void)printf(" ");
+
+	(void)printf("%s\n", tokens[tokid].name);
+
+	if (ROFF_LAYOUT == tokens[tokid].type)
+		dbg_lvl++;
+d560 2
+a561 2
+static void
+dbg_leave(const struct md_args *args, int tokid)
+a562 1
+	int		 i;
+d564 1
+a564 12
+	assert(args);
+	if ( ! (args->dbg & MD_DBG_TREE))
+		return;
+
+	assert(tokid >= 0 && tokid <= ROFF_Max);
+	assert(dbg_lvl > 0);
+
+	dbg_lvl--;
+	for (i = 0; i < dbg_lvl; i++) 
+		(void)printf(" ");
+
+	(void)printf("%s\n", tokens[tokid].name);
+a565 1
+
+@
+
+
+1.1
+log
+@Segmentation into html and dummy parsers.
+Initial recursive-descent parser in place for html/ml parser.
+Parsing of title tags more-or-less in place.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.4 2008/11/23 11:05:25 kristaps Exp $ */
+a85 1
+
+a89 1
+
+a90 1
+#define	ROFF_PRELUDE	 (1 << 0)
+d96 2
+a97 2
+static int		  rofffind(const char *);
+static int 		  roffparse(const struct md_args *, 
+d102 1
+a102 1
+static int		  textparse(struct md_mbuf *, 
+d107 3
+d343 3
+d380 3
+d406 2
+d441 2
+d450 1
+d453 2
+a454 1
+	/*assert(out);*/(void)out;
+d456 30
+a485 5
+	/*assert(buf);*/(void)buf;
+	(void)sz;
+	(void)pos;
+	(void)type;
+	assert(tree);
+d489 44
+@

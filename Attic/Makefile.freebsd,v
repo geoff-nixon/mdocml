@@ -1,0 +1,115 @@
+head	1.3;
+access;
+symbols
+	VERSION_1_9_5:1.3
+	VERSION_1_8_5:1.3
+	VERSION_1_8_1:1.3
+	VERSION_1_8_0:1.2
+	VERSION_1_7_24:1.2
+	VERSION_1_7_23:1.2
+	VERSION_1_7_22:1.2
+	VERSION_1_7_21:1.2
+	VERSION_1_7_20:1.2
+	VERSION_1_7_19:1.2
+	VERSION_1_7_17:1.2
+	VERSION_1_7_16:1.2
+	VERSION_1_7_15:1.2
+	VERSION_1_7_14:1.2
+	VERSION_1_7_13:1.2
+	VERSION_1_7_12:1.2
+	OPENBSD_CHECKIN:1.2
+	VERSION_1_7_10:1.2
+	VERSION_1_7_5:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2009.07.17.13.23.26;	author kristaps;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.24.20.05.43;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.23.21.47.54;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Removed automatic port generation, as the downstream versions should be used instead.
+@
+text
+@@
+
+
+1.2
+log
+@More fixes from Ulrich Sporlein. (freebsd)
+@
+text
+@a0 22
+# New ports collection makefile for:	textproc/mdocml
+# Date created:				09.03.2009
+# Whom:					Ulrich Spoerlein <uspoerlein@@gmail.com>
+#
+# $FreeBSD$
+#
+
+PORTNAME=	mdocml
+PORTVERSION=	@@VERSION@@
+CATEGORIES=	textproc
+MASTER_SITES=	http://mdocml.bsd.lv/snapshots/ \
+  		https://www.spoerlein.net/pub/mdocml/
+
+MAINTAINER=	uspoerlein@@gmail.com
+COMMENT=	mdoc macro compiler
+
+MAN1=		mandoc.1
+MAN7=		mdoc.7
+
+PLIST_FILES=	bin/mandoc
+
+.include <bsd.port.mk>
+@
+
+
+1.1
+log
+@Added FreeBSD port Makefile.
+@
+text
+@d1 22
+a22 22
+# New ports collection makefile for:	textproc/mdocml
+# Date created:				09.03.2009
+# Whom:					Ulrich Spoerlein <uspoerlein@@gmail.com>
+#
+# $FreeBSD$
+#
+
+PORTNAME=	mdocml
+PORTVERSION=	@@VERSION@@
+CATEGORIES=	textproc
+MASTER_SITES=	http://mdocml.bsd.lv/snapshots/ \
+  		https://www.spoerlein.net/pub/mdocml/
+
+MAINTAINER=	uspoerlein@@gmail.com
+COMMENT=	mdoc macro compiler
+
+MAN1=		mandoc.1
+MAN7=		mdoc.7
+
+PLIST_FILES=	bin/mandoc
+
+.include <bsd.port.mk>
+@

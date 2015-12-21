@@ -1,0 +1,526 @@
+head	1.10;
+access;
+symbols
+	VERSION_1_9_5:1.10
+	VERSION_1_9_2:1.9
+	VERSION_1_9_1:1.9
+	VERSION_1_9_0:1.9
+	VERSION_1_8_5:1.9
+	VERSION_1_8_4:1.8
+	VERSION_1_8_3:1.8
+	VERSION_1_8_2:1.8
+	VERSION_1_8_1:1.8
+	VERSION_1_8_0:1.8
+	VERSION_1_7_24:1.8
+	VERSION_1_7_23:1.8
+	VERSION_1_7_22:1.8
+	VERSION_1_7_21:1.8
+	VERSION_1_7_20:1.8
+	VERSION_1_7_19:1.8
+	VERSION_1_7_17:1.8
+	VERSION_1_7_16:1.8
+	VERSION_1_7_15:1.8
+	VERSION_1_7_14:1.8
+	VERSION_1_7_13:1.7
+	VERSION_1_7_12:1.5
+	OPENBSD_CHECKIN:1.5
+	VERSION_1_7_10:1.5
+	VERSION_1_7_5:1.4
+	VERSION_1_6_5:1.4
+	VERSION_1_6_2:1.3
+	VERSION_1_5_3:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.10
+date	2009.09.17.07.41.28;	author kristaps;	state dead;
+branches;
+next	1.9;
+
+1.9
+date	2009.07.27.12.02.49;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.04.12.19.19.57;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.20.21.58.38;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.20.15.14.01;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.17.13.35.46;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@ascii_xxx -> chars_xxx (intended to hold more than just ascii encoding).
+More html work.
+@
+text
+@@
+
+
+1.9
+log
+@Correct handling of \*(xx, \*[xxx], \*x versus \x, \(xx, \([xxx]: predefined strings and escape characters, respectively.
+@
+text
+@a0 217
+/*	$Id: ascii.c,v 1.8 2009/06/10 20:18:43 kristaps Exp $ */
+/*
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <assert.h>
+#include <err.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "term.h"
+
+#define	ASCII_PRINT_HI	 126
+#define	ASCII_PRINT_LO	 32
+
+struct	line {
+	const char	 *code;
+	const char	 *out;
+	size_t		  codesz;
+	size_t		  outsz;
+	int		  type;
+#define	ASCII_CHAR	 (1 << 0)
+#define	ASCII_STRING	 (1 << 1)
+#define ASCII_BOTH	 (0x03)
+};
+
+struct	linep {
+	const struct line *line;
+	struct linep	 *next;
+};
+
+#define CHAR(w, x, y, z) \
+	{ (w), (y), (x), (z), ASCII_CHAR },
+#define STRING(w, x, y, z) \
+	{ (w), (y), (x), (z), ASCII_STRING },
+#define BOTH(w, x, y, z) \
+	{ (w), (y), (x), (z), ASCII_BOTH },
+static	const struct line lines[] = {
+#include "ascii.in"
+};
+
+struct	asciitab {
+	struct linep	 *lines;
+	void		**htab;
+};
+
+
+static	inline int	  match(const struct line *,
+				const char *, size_t, int);
+static	const char *	  lookup(struct asciitab *, const char *, 
+				size_t, size_t *, int);
+
+
+void
+term_asciifree(void *arg)
+{
+	struct asciitab	*tab;
+
+	tab = (struct asciitab *)arg;
+
+	free(tab->lines);
+	free(tab->htab);
+	free(tab);
+}
+
+
+void *
+term_ascii2htab(void)
+{
+	struct asciitab  *tab;
+	void		**htab;
+	struct linep	 *pp, *p;
+	int		  i, len, hash;
+
+	/*
+	 * Constructs a very basic chaining hashtable.  The hash routine
+	 * is simply the integral value of the first character.
+	 * Subsequent entries are chained in the order they're processed
+	 * (they're in-line re-ordered during lookup).
+	 */
+
+	if (NULL == (tab = malloc(sizeof(struct asciitab))))
+		err(1, "malloc");
+
+	len = sizeof(lines) / sizeof(struct line);
+
+	if (NULL == (p = calloc((size_t)len, sizeof(struct linep))))
+		err(1, "malloc");
+
+	htab = calloc(ASCII_PRINT_HI - ASCII_PRINT_LO + 1, 
+			sizeof(struct linep **));
+
+	if (NULL == htab)
+		err(1, "malloc");
+
+	for (i = 0; i < len; i++) {
+		assert(lines[i].codesz > 0);
+		assert(lines[i].code);
+		assert(lines[i].out);
+
+		p[i].line = &lines[i];
+
+		hash = (int)lines[i].code[0] - ASCII_PRINT_LO;
+
+		if (NULL == (pp = ((struct linep **)htab)[hash])) {
+			htab[hash] = &p[i];
+			continue;
+		}
+
+		for ( ; pp->next; pp = pp->next)
+			/* Scan ahead. */ ;
+
+		pp->next = &p[i];
+	}
+
+	tab->htab = htab;
+	tab->lines = p;
+
+	return(tab);
+}
+
+
+const char *
+term_a2ascii(void *arg, const char *p, size_t sz, size_t *rsz)
+{
+
+	return(lookup((struct asciitab *)arg, p, 
+				sz, rsz, ASCII_CHAR));
+}
+
+
+const char *
+term_a2res(void *arg, const char *p, size_t sz, size_t *rsz)
+{
+
+	return(lookup((struct asciitab *)arg, p, 
+				sz, rsz, ASCII_STRING));
+}
+
+
+static const char *
+lookup(struct asciitab *tab, const char *p, 
+		size_t sz, size_t *rsz, int type)
+{
+	struct linep	 *pp, *prev;
+	void		**htab;
+	int		  hash;
+
+	assert(p);
+	assert(sz > 0);
+
+	if (p[0] < ASCII_PRINT_LO || p[0] > ASCII_PRINT_HI)
+		return(NULL);
+
+
+	/*
+	 * Lookup the symbol in the symbol hash.  See ascii2htab for the
+	 * hashtable specs.  This dynamically re-orders the hash chain
+	 * to optimise for repeat hits.
+	 */
+
+	hash = (int)p[0] - ASCII_PRINT_LO;
+	htab = tab->htab;
+
+	if (NULL == (pp = ((struct linep **)htab)[hash]))
+		return(NULL);
+
+	if (NULL == pp->next) {
+		if ( ! match(pp->line, p, sz, type)) 
+			return(NULL);
+		*rsz = pp->line->outsz;
+		return(pp->line->out);
+	}
+
+	for (prev = NULL; pp; pp = pp->next) {
+		if ( ! match(pp->line, p, sz, type)) {
+			prev = pp;
+			continue;
+		}
+
+		/* Re-order the hash chain. */
+
+		if (prev) {
+			prev->next = pp->next;
+			pp->next = ((struct linep **)htab)[hash];
+			htab[hash] = pp;
+		}
+
+		*rsz = pp->line->outsz;
+		return(pp->line->out);
+	}
+
+	return(NULL);
+}
+
+
+static inline int
+match(const struct line *line, const char *p, size_t sz, int type)
+{
+
+	if ( ! (line->type & type))
+		return(0);
+	if (line->codesz != sz)
+		return(0);
+	return(0 == strncmp(line->code, p, sz));
+}
+@
+
+
+1.8
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.c,v 1.7 2009/04/12 19:45:26 kristaps Exp $ */
+a29 1
+	/* 32- and 64-bit alignment safe. */
+d32 4
+d43 6
+a48 2
+#define LINE(w, x, y, z) \
+	{ (w), (y), (x), (z) },
+d60 3
+a62 1
+				const char *, size_t);
+d137 19
+a155 1
+	struct asciitab	 *tab;
+a159 3
+	tab = (struct asciitab *)arg;
+	htab = tab->htab;
+
+d174 1
+d180 1
+a180 1
+		if ( ! match(pp->line, p, sz)) 
+d187 1
+a187 1
+		if ( ! match(pp->line, p, sz)) {
+d209 1
+a209 1
+match(const struct line *line, const char *p, size_t sz)
+d212 2
+@
+
+
+1.7
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.c,v 1.6 2009/04/12 19:19:57 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.6
+log
+@Manual .Dt fields CAPITALISED.
+Indent set to 5 chars (nroff compat).
+Half-indent set to 3 chars (nroff compat).
+Default behaviour is loose-y (ignore macro/char/escape).
+Added -fstrict.
+Added unknown-character ignoring.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.c,v 1.5 2009/04/05 16:34:22 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.5
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.c,v 1.4 2009/03/20 21:58:38 kristaps Exp $ */
+d140 4
+a143 1
+	assert(p[0] >= ASCII_PRINT_LO && p[0] <= ASCII_PRINT_HI);
+@
+
+
+1.4
+log
+@Lintification.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.c,v 1.3 2009/03/20 15:14:01 kristaps Exp $ */
+a28 6
+/*
+ * Lookup and hashing routines for constructing the ASCII symbol table,
+ * which should contain a significant portion of mdoc(7)'s special
+ * symbols.
+ */
+
+@
+
+
+1.3
+log
+@Support for `Bd' of all types (see mdoc.7 for newline/tab rules).
+Renamed term.c and terminal.c functions to be term_.
+Some bugfixes to lists.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.c,v 1.2 2009/03/17 13:35:46 kristaps Exp $ */
+a94 1
+	assert(0 == sizeof(lines) % sizeof(struct line));
+@
+
+
+1.2
+log
+@Clean up ASCII table's memory.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.c,v 1.1 2009/03/16 22:19:19 kristaps Exp $ */
+d65 1
+a65 1
+asciifree(void *arg)
+d78 1
+a78 1
+ascii2htab(void)
+d135 1
+a135 1
+a2ascii(void *arg, const char *p, size_t sz, size_t *rsz)
+@
+
+
+1.1
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.51 2009/03/14 05:21:58 kristaps Exp $ */
+d36 2
+a37 2
+	const char	*code;
+	const char	*out;
+d39 2
+a40 2
+	size_t		 codesz;
+	size_t		 outsz;
+d45 1
+a45 1
+	struct linep	*next;
+d54 5
+d60 1
+a60 1
+static	inline int	 match(const struct line *,
+d64 13
+d80 1
+d92 3
+d127 4
+a130 1
+	return((void *)htab);
+d135 1
+a135 1
+a2ascii(void *htabp, const char *p, size_t sz, size_t *rsz)
+d137 1
+d142 2
+a143 1
+	htab = (void **)htabp;
+@

@@ -1,0 +1,1802 @@
+head	1.62;
+access;
+symbols
+	VERSION_1_13_3:1.55
+	VERSION_1_13_2:1.51
+	VERSION_1_12_4:1.42
+	VERSION_1_13_1:1.42
+	VERSION_1_12_3:1.35
+	VERSION_1_12_2:1.32
+	VERSION_1_12:1.42.0.2
+	VERSION_1_12_1:1.29
+	VERSION_1_12_0:1.28
+	VERSION_1_11_7:1.28
+	VERSION_1_11_6:1.28
+	VERSION_1_11_5:1.24
+	VERSION_1_11_4:1.21
+	VERSION_1_11_3:1.21
+	VERSION_1_11_2:1.20
+	VERSION_1_11_1:1.17
+	VERSION_1_10_10:1.12
+	VERSION_1_10_9:1.10
+	VERSION_1_10_8:1.9
+	VERSION_1_10_7:1.9
+	VERSION_1_10_6:1.9
+	VERSION_1_10_5:1.9
+	VERSION_1_10_5_PREPDF:1.9
+	VERSION_1_10_4:1.8
+	VERSION_1_10_3:1.8
+	VERSION_1_10_2:1.8
+	VERSION_1_10_1:1.6
+	VERSION_1_9_24:1.4
+	VERSION_1_9_25:1.5
+	VERSION_1_9_23:1.4
+	VERSION_1_9_22:1.4
+	VERSION_1_9_21:1.4
+	VERSION_1_9_20:1.4
+	VERSION_1_9_19:1.4
+	VERSION_1_9_18:1.4
+	VERSION_1_9_17:1.4
+	VERSION_1_9_16:1.4
+	VERSION_1_9_15:1.4
+	VERSION_1_9_15-pre2:1.4
+	VERSION_1_9_15-pre1:1.4
+	VERSION_1_9_14:1.4
+	VERSION_1_9_13:1.4
+	VERSION_1_9_12:1.3
+	VERSION_1_9_11:1.1
+	VERSION_1_9_10:1.1
+	VERSION_1_9_9:1.1
+	VERSION_1_9_8:1.1
+	VERSION_1_9_7:1.1
+	VERSION_1_9_6:1.1
+	VERSION_1_9_5:1.1
+	VERSION_1_9_2:1.1
+	VERSION_1_9_1:1.1
+	VERSION_1_9_0:1.1
+	VERSION_1_8_5:1.1
+	VERSION_1_8_4:1.1
+	VERSION_1_8_3:1.1
+	VERSION_1_8_2:1.1
+	VERSION_1_8_1:1.1
+	VERSION_1_8_0:1.1
+	VERSION_1_7_24:1.1
+	VERSION_1_7_23:1.1
+	VERSION_1_7_22:1.1
+	VERSION_1_7_21:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.62
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2015.04.19.14.25.41;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2015.04.19.13.50.25;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2015.04.18.17.28.36;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2015.04.18.17.01.58;	author schwarze;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2015.04.18.16.06.39;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2015.01.15.04.26.39;	author schwarze;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2015.01.14.22.58.16;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2014.12.28.14.42.27;	author schwarze;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2014.12.21.14.14.35;	author schwarze;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2014.12.01.04.05.32;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2014.11.28.06.27.05;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2014.11.01.06.03.13;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2014.11.01.04.08.43;	author schwarze;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2014.10.25.01.03.52;	author schwarze;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2014.10.16.01.11.20;	author schwarze;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2014.09.06.22.39.36;	author schwarze;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2014.07.09.11.31.43;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2014.03.19.21.51.20;	author schwarze;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2014.01.06.21.34.31;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2014.01.05.20.26.36;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2014.01.05.19.10.56;	author joerg;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2013.12.31.23.23.10;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2013.12.15.21.23.52;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2013.10.05.22.15.03;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2013.10.05.22.08.12;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2012.11.19.17.57.23;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2012.06.12.20.21.04;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2012.05.27.17.48.57;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2011.12.02.01.37.14;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2011.07.28.14.17.11;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2011.07.27.12.41.02;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2011.07.27.07.32.26;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.07.25.15.37.00;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.07.21.15.21.13;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.07.18.07.46.41;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.07.17.11.14.53;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.05.14.16.06.09;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.04.19.16.38.48;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.04.17.09.08.19;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.04.09.15.29.40;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.03.28.23.52.13;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.03.22.14.05.45;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.03.22.10.02.50;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.03.22.09.48.13;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.03.17.08.49.34;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.03.07.01.35.51;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.01.03.22.42.37;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.07.18.17.00.26;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.06.19.20.46.27;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.06.09.19.22.56;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.05.25.12.37.20;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.05.12.17.08.03;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.11.02.06.22.45;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.10.30.05.58.37;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.10.28.19.21.59;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.07.04.09.01.55;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.62
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: libmandoc.h,v 1.61 2015/10/13 22:59:54 schwarze Exp $ */
+/*
+ * Copyright (c) 2009, 2010, 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+enum	rofferr {
+	ROFF_CONT, /* continue processing line */
+	ROFF_RERUN, /* re-run roff interpreter with offset */
+	ROFF_APPEND, /* re-run main parser, appending next line */
+	ROFF_REPARSE, /* re-run main parser on the result */
+	ROFF_SO, /* include another file */
+	ROFF_IGN, /* ignore current line */
+	ROFF_TBL, /* a table row was successfully parsed */
+	ROFF_EQN /* an equation was successfully parsed */
+};
+
+struct	buf {
+	char	*buf;
+	size_t	 sz;
+};
+
+
+struct	mparse;
+struct	tbl_span;
+struct	eqn;
+struct	roff;
+struct	roff_man;
+struct	roff_node;
+
+void		 mandoc_msg(enum mandocerr, struct mparse *,
+			int, int, const char *);
+#if __GNUC__ - 0 >= 4
+__attribute__((__format__ (__printf__, 5, 6)))
+#endif
+void		 mandoc_vmsg(enum mandocerr, struct mparse *,
+			int, int, const char *, ...);
+char		*mandoc_getarg(struct mparse *, char **, int, int *);
+char		*mandoc_normdate(struct mparse *, char *, int, int);
+int		 mandoc_eos(const char *, size_t);
+int		 mandoc_strntoi(const char *, size_t, int);
+const char	*mandoc_a2msec(const char*);
+
+void		 mdoc_hash_init(void);
+int		 mdoc_parseln(struct roff_man *, int, char *, int);
+void		 mdoc_endparse(struct roff_man *);
+
+void		 man_hash_init(void);
+int		 man_parseln(struct roff_man *, int, char *, int);
+void		 man_endparse(struct roff_man *);
+
+int		 preconv_cue(const struct buf *, size_t);
+int		 preconv_encode(struct buf *, size_t *,
+			struct buf *, size_t *, int *);
+
+void		 roff_free(struct roff *);
+struct roff	*roff_alloc(struct mparse *, int);
+void		 roff_reset(struct roff *);
+void		 roff_man_free(struct roff_man *);
+struct roff_man	*roff_man_alloc(struct roff *, struct mparse *,
+			const char *, int);
+void		 roff_man_reset(struct roff_man *);
+enum rofferr	 roff_parseln(struct roff *, int, struct buf *, int *);
+void		 roff_endparse(struct roff *);
+void		 roff_setreg(struct roff *, const char *, int, char sign);
+int		 roff_getreg(const struct roff *, const char *);
+char		*roff_strdup(const struct roff *, const char *);
+int		 roff_getcontrol(const struct roff *,
+			const char *, int *);
+int		 roff_getformat(const struct roff *);
+
+const struct tbl_span	*roff_span(const struct roff *);
+const struct eqn	*roff_eqn(const struct roff *);
+@
+
+
+1.61
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.60 2015/04/19 14:25:41 schwarze Exp $ */
+a34 1
+__BEGIN_DECLS
+a85 2
+
+__END_DECLS
+@
+
+
+1.60
+log
+@Unify some node handling functions that use TOKEN_NONE.
+* mdoc_word_alloc(), man_word_alloc() -> roff_word_alloc()
+* mdoc_word_append(), man_word_append() -> roff_word_append()
+* mdoc_addspan(), man_addspan() -> roff_addtbl()
+* mdoc_addeqn(), man_addeqn() -> roff_addeqn()
+Minus 50 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.59 2015/04/19 13:50:25 schwarze Exp $ */
+a37 1
+struct	mchars;
+d70 1
+a70 1
+struct roff	*roff_alloc(struct mparse *, const struct mchars *, int);
+@
+
+
+1.59
+log
+@Unify node handling functions:
+* node_alloc() for mdoc and man_node_alloc() -> roff_node_alloc()
+* node_append() for mdoc and man_node_append() -> roff_node_append()
+* mdoc_head_alloc() and man_head_alloc() -> roff_head_alloc()
+* mdoc_body_alloc() and man_body_alloc() -> roff_body_alloc()
+* mdoc_node_unlink() and man_node_unlink() -> roff_node_unlink()
+* mdoc_node_free() and man_node_free() -> roff_node_free()
+* mdoc_node_delete() and man_node_delete() -> roff_node_delete()
+Minus 130 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.58 2015/04/18 17:28:36 schwarze Exp $ */
+a60 2
+void		 mdoc_addspan(struct roff_man *, const struct tbl_span *);
+void		 mdoc_addeqn(struct roff_man *, const struct eqn *);
+a64 2
+void		 man_addspan(struct roff_man *, const struct tbl_span *);
+void		 man_addeqn(struct roff_man *, const struct eqn *);
+@
+
+
+1.58
+log
+@Unify {mdoc,man}_{alloc,reset,free}() into roff_man_{alloc,reset,free}().
+Minus 80 lines of code, no functional change.
+Written on the train from Koeln to Wolfsburg returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.57 2015/04/18 17:01:58 schwarze Exp $ */
+a58 1
+void		 mdoc_node_delete(struct roff_man *, struct roff_node *);
+a64 1
+void		 man_node_delete(struct roff_man *, struct roff_node *);
+@
+
+
+1.57
+log
+@Move mdoc_hash_init() and man_hash_init() to libmandoc.h
+and call them from mparse_alloc() and choose_parser(),
+preparing unified allocation of struct roff_man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.56 2015/04/18 16:06:39 schwarze Exp $ */
+d43 1
+a57 4
+void		 mdoc_free(struct roff_man *);
+struct roff_man	*mdoc_alloc(struct roff *, struct mparse *,
+			const char *, int);
+void		 mdoc_reset(struct roff_man *);
+d59 1
+a64 4
+void		 man_free(struct roff_man *);
+struct roff_man	*man_alloc(struct roff *, struct mparse *,
+			const char *, int);
+void		 man_reset(struct roff_man *);
+d66 1
+d79 4
+@
+
+
+1.56
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.55 2015/01/15 04:26:39 schwarze Exp $ */
+d61 1
+d71 1
+@
+
+
+1.55
+log
+@Fatal errors no longer exist.
+If a file can be opened, mandoc will produce some output;
+at worst, the output may be almost empty.
+Simplifies error handling and frees a message type for future use.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.54 2015/01/14 22:58:16 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d42 1
+a42 2
+struct	mdoc;
+struct	man;
+d57 2
+a58 2
+void		 mdoc_free(struct mdoc *);
+struct	mdoc	*mdoc_alloc(struct roff *, struct mparse *,
+d60 5
+a64 5
+void		 mdoc_reset(struct mdoc *);
+int		 mdoc_parseln(struct mdoc *, int, char *, int);
+void		 mdoc_endparse(struct mdoc *);
+void		 mdoc_addspan(struct mdoc *, const struct tbl_span *);
+void		 mdoc_addeqn(struct mdoc *, const struct eqn *);
+d66 2
+a67 2
+void		 man_free(struct man *);
+struct	man	*man_alloc(struct roff *, struct mparse *,
+d69 5
+a73 5
+void		 man_reset(struct man *);
+int		 man_parseln(struct man *, int, char *, int);
+void		 man_endparse(struct man *);
+void		 man_addspan(struct man *, const struct tbl_span *);
+void		 man_addeqn(struct man *, const struct eqn *);
+@
+
+
+1.54
+log
+@downgrade ".so with absolute path" from FATAL to ERROR;
+allows to get rid of ROFF_ERR
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.53 2014/12/28 14:42:27 schwarze Exp $ */
+d63 1
+a63 1
+int		 mdoc_endparse(struct mdoc *);
+d72 1
+a72 1
+int		 man_endparse(struct man *);
+@
+
+
+1.53
+log
+@mdoc(7) already uses the mandoc(1) -Ios argument in the footer line
+when .Os has no argument, so do the same for man(7) when .TH has less
+than four arguments; there is no reason to treat both differently.
+Issue found following a question from Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.52 2014/12/21 14:14:35 schwarze Exp $ */
+d27 1
+a27 2
+	ROFF_EQN, /* an equation was successfully parsed */
+	ROFF_ERR /* badness: puke and stop */
+@
+
+
+1.52
+log
+@ISO C99 explicitly forbids forward references to enum types (6.7.2.3.3.);
+patch from daniel@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.51 2014/12/01 08:05:52 schwarze Exp $ */
+d69 2
+a70 1
+struct	man	*man_alloc(struct roff *, struct mparse *, int);
+@
+
+
+1.51
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.50 2014/12/01 04:05:32 schwarze Exp $ */
+a39 1
+enum	mandocerr;
+@
+
+
+1.50
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.49 2014/11/28 06:27:05 schwarze Exp $ */
+d38 5
+@
+
+
+1.49
+log
+@Simplify by making the eqn and tbl steering functions void;
+no functional change, minus 15 lines of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.48 2014/11/01 06:03:13 schwarze Exp $ */
+a17 2
+#ifndef LIBMANDOC_H
+#define LIBMANDOC_H
+a91 2
+
+#endif /*!LIBMANDOC_H*/
+@
+
+
+1.48
+log
+@Use struct buf in libroff, it is very natural there
+and reduces the number of arguments of many functions.
+While here, sprinkle some KNF.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.47 2014/11/01 04:08:43 schwarze Exp $ */
+d63 2
+a64 2
+int		 mdoc_addspan(struct mdoc *, const struct tbl_span *);
+int		 mdoc_addeqn(struct mdoc *, const struct eqn *);
+d71 2
+a72 2
+int		 man_addspan(struct man *, const struct tbl_span *);
+int		 man_addeqn(struct man *, const struct eqn *);
+@
+
+
+1.47
+log
+@Refactor, no functional change: Remove the parse point from struct buf.
+Some functions need multiple parse points, some none at all,
+and it varies whether any of them need to be passed around.
+So better pass them as a separate argument, and only when needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.46 2014/10/28 17:36:19 schwarze Exp $ */
+d81 1
+a81 2
+enum rofferr	 roff_parseln(struct roff *, int,
+			char **, size_t *, int, int *);
+@
+
+
+1.46
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.45 2014/10/25 01:03:52 schwarze Exp $ */
+a35 1
+	size_t	 offs;
+d74 3
+a76 2
+int		 preconv_cue(const struct buf *);
+int		 preconv_encode(struct buf *, struct buf *, int *);
+@
+
+
+1.45
+log
+@integrate preconv(1) into mandoc(1);
+enhances functionality and reduces code and docs by more than 300 lines
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.44 2014/10/16 01:11:20 schwarze Exp $ */
+d79 1
+a79 1
+struct roff	*roff_alloc(struct mparse *, int);
+@
+
+
+1.44
+log
+@Implement in-line equations, much needed by Xenocara manuals.
+Put the steering into the roff parser rather than into the mdoc
+parser such that it works for all macro languages and on both text
+and macro lines.
+Line breaks and blank characters generated before and after in-line
+equations are not perfect yet, but let's do one thing at a time.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.43 2014/09/06 22:39:36 schwarze Exp $ */
+d33 6
+d75 3
+@
+
+
+1.43
+log
+@Move main format autodetection from the parser dispatcher to the
+roff parser where .Dd and .TH are already detected, anyway.  This
+improves robustness because it correctly handles whitespace or an
+alternate control character before Dd.  In the parser dispatcher,
+provide a fallback looking ahead in the input buffer instead of
+always assuming man(7).  This corrects autodetection when Dd is
+preceded by other macros or macro-like handled requests like .ll.
+
+Triggered by reports from Daniel Levai about issues on Slackware Linux.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.42 2014/07/09 11:31:43 schwarze Exp $ */
+a80 6
+#if 0
+char		 roff_eqndelim(const struct roff *);
+void		 roff_openeqn(struct roff *, const char *,
+			int, int, const char *);
+int		 roff_closeeqn(struct roff *);
+#endif
+@
+
+
+1.42
+log
+@mark defos as const; nobody needs to change it,
+and it is occasionally useful to be able to pass literal strings
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.41 2014/04/20 16:46:04 schwarze Exp $ */
+d80 1
+@
+
+
+1.41
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.40 2014/03/19 21:51:20 schwarze Exp $ */
+d53 2
+a54 1
+struct	mdoc	*mdoc_alloc(struct roff *, struct mparse *, char *, int);
+@
+
+
+1.40
+log
+@Generalize the mparse_alloc() and roff_alloc() functions by giving
+them an "options" argument, replacing the existing "inttype" and
+"quick" arguments, preparing for a future MPARSE_SO option.
+Store this argument in struct mparse and struct roff, replacing the
+existing "inttype", "parsetype", and "quick" members.
+No functional change except one tiny cosmetic fix in roff_TH().
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.39 2014/01/06 21:34:31 schwarze Exp $ */
+d39 1
+a39 1
+void		 mandoc_msg(enum mandocerr, struct mparse *, 
+d44 1
+a44 1
+void		 mandoc_vmsg(enum mandocerr, struct mparse *, 
+d52 1
+a52 1
+void	 	 mdoc_free(struct mdoc *);
+d55 1
+a55 1
+int	 	 mdoc_parseln(struct mdoc *, int, char *, int);
+d60 1
+a60 1
+void	 	 man_free(struct man *);
+d63 1
+a63 1
+int	 	 man_parseln(struct man *, int, char *, int);
+d68 1
+a68 1
+void	 	 roff_free(struct roff *);
+d71 1
+a71 1
+enum rofferr	 roff_parseln(struct roff *, int, 
+d77 1
+a77 1
+int		 roff_getcontrol(const struct roff *, 
+d81 1
+a81 1
+void		 roff_openeqn(struct roff *, const char *, 
+@
+
+
+1.39
+log
+@Another 25% speedup for mandocdb(8) -Q mode, found with gprof(1).
+For /usr/share/man, we only need 56% of the time of makewhatis(8) now.
+
+In groff, user-defined macros clashing with mdoc(7) or man(7)
+standard macros are cleared when parsing the .Dd or .TH macro,
+respectively.  Of course, we continue doing that in standard mode
+to assure full groff bug compatibility.
+
+However, in -Q mode, full groff bug compatibility makes no sense
+when it's unreasonably expensive, so skip this step in -Q mode.
+Real-world manuals hardly ever redefine standard macros,
+that's terrible style, and if they do, it's pointless to do so
+before .Dd or .TH because it has no effect.  Even if someone does,
+it's extremely unlikely to break mandocdb(8) -Q parsing because we
+abort the parse sequence after the NAME section, anyway.
+
+So if you manually redefine .Sh, .Nm, .Nd, or .SH in a way that doesn't
+work at all and rely on .Dd or .TH to fix it up for you, your broken
+manual will no longer get a perfect apropos(1) entry until you re-run
+mandocdb(8) without -Q.  It think that consequence is acceptable
+in order to get a 25% speedup for everyone else.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.38 2014/01/05 20:26:36 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d69 1
+a69 1
+struct roff	*roff_alloc(enum mparset, struct mparse *, int);
+@
+
+
+1.38
+log
+@Add an option -Q (quick) to mandocdb(8)
+for accelerated generation of reduced-size databases.
+
+Implement this by allowing the parsers to optionally
+abort the parse sequence after the NAME section.
+
+While here, garbage collect the unused void *arg attribute of
+struct mparse and mparse_alloc() and fix some errors in mandoc(3).
+
+This reduces the processing time of mandocdb(8) on /usr/share/man
+by a factor of 2 and the database size by a factor of 4.
+However, it still takes 5 times the time and 6 times the space
+of makewhatis(8), so more work is clearly needed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.37 2014/01/05 19:10:56 joerg Exp $ */
+d69 1
+a69 1
+struct roff	*roff_alloc(enum mparset, struct mparse *);
+@
+
+
+1.37
+log
+@Tag functions with format strings as arguments as printf-like.
+Fix one case where a non-literal is used as format string.
+Fix another case where a variable is formatted using the wrong type.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.36 2013/12/31 23:23:10 schwarze Exp $ */
+d53 1
+a53 1
+struct	mdoc	*mdoc_alloc(struct roff *, struct mparse *, char *);
+d61 1
+a61 1
+struct	man	*man_alloc(struct roff *, struct mparse *);
+@
+
+
+1.36
+log
+@Simplify: Remove an unused argument from the mandoc_eos() function.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.35 2013/12/15 21:23:52 schwarze Exp $ */
+d41 3
+@
+
+
+1.35
+log
+@The "value" argument to the roff(7) .nr requests ends right before
+the first non-digit character.  While here, implement and document
+an optional sign, requesting increment or decrement, as documented
+in the Ossanna/Kernighan/Ritter troff manual and supported by groff.
+
+Reported by bentley@@ on discuss@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.34 2013/10/05 22:15:03 schwarze Exp $ */
+d45 1
+a45 1
+int		 mandoc_eos(const char *, size_t, int);
+@
+
+
+1.34
+log
+@Expand references to number registers in exactly the same way as
+references to user-defined strings.  While here, make number registers
+signed int, like in groff.
+
+Inspired by NetBSD roff.c rev. 1.8 and read.c rev. 1.7
+written by Christos Zoulas on March 21, 2013, but implemented
+in a completely different way, without hacking into read.c,
+where this functionality really doesn't belong.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.33 2013/10/05 22:08:12 schwarze Exp $ */
+d71 1
+a71 1
+void		 roff_setreg(struct roff *, const char *, int);
+@
+
+
+1.33
+log
+@Support setting arbitrary roff(7) number registers,
+preserving read support for the ".nr nS" SYNOPSIS state register.
+
+Inspired by NetBSD roff.c rev. 1.18 (Christos Zoulas, March 21, 2013),
+but implemented differently.  I don't want to have yet another different
+implementation of a hash table in mandoc - it would be the second one
+in roff.c alone and the fifth one in mandoc grand total.
+Instead, i designed and implemented roff_setreg() and roff_getreg()
+to be similar to roff_setstrn() and roff_getstrn().
+
+Once we feel the need to optimize, we can introduce one common
+hash table implementation for everything in mandoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.32 2012/11/19 17:57:23 schwarze Exp $ */
+d71 2
+a72 2
+void		 roff_setreg(struct roff *, const char *, unsigned int);
+unsigned int	 roff_getreg(const struct roff *, const char *);
+@
+
+
+1.32
+log
+@In groff, trying to redefine standard man(7) macros before .TH has no effect;
+after .TH, it works.  Trying to redefine standard mdoc(7) macros before .Dd
+works when calling groff with the -mdoc command line option, but does not
+when calling groff with -mandoc; after .Dd, it always works.
+
+Arguably, one might call that buggy behaviour in groff, but it is very
+unlikely that anybody will change groff in this respect (certainly, i'm
+not volunteering).  So let's be bug-compatible.
+
+This fixes the vertical spacing in sox(1).
+
+Merging from OpenBSD libmandoc.h 1.18, read.c 1.8, roff.c 1.47, June 2, 2012.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.31 2012/06/12 20:21:04 kristaps Exp $ */
+d4 1
+a32 5
+enum	regs {
+	REG_nS = 0, /* nS register */
+	REG__MAX
+};
+
+d71 2
+a72 3
+int		 roff_regisset(const struct roff *, enum regs);
+unsigned int	 roff_regget(const struct roff *, enum regs);
+void		 roff_regunset(struct roff *, enum regs);
+@
+
+
+1.31
+log
+@Add `cc' support.
+This was reported by espie@@ and in the TODO.
+Caveat: `cc' has buggy behaviour when invoked in groff(1) and followed
+by a line-breaking control character macro, e.g., in a -man doc,
+
+  .cc |
+  .B foo
+  'B foo
+  |cc
+  'B foo
+
+will cause groff(1) to behave properly for `.B' but inline the macro
+definition for `B' when invoked with the line-breaking macro.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.30 2012/05/27 17:48:57 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+d70 1
+a70 1
+struct roff	*roff_alloc(struct mparse *);
+@
+
+
+1.30
+log
+@Support -Ios='OpenBSD 5.1' to override uname(3) as the source of the
+default value for the mdoc(7) .Os macro.
+Needed for man.cgi on the OpenBSD website.
+
+Problem with man.cgi first noticed by deraadt@@;
+beck@@ and deraadt@@ agree with the way to solve the issue.
+
+"Please check them in and I'll look into them later!" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.29 2011/12/02 01:37:14 schwarze Exp $ */
+a49 1
+int		 mandoc_getcontrol(const char *, int *);
+d79 2
+@
+
+
+1.29
+log
+@In man(7), when no explicit volume name is given, use the default
+volume name for the respective manual section, just like in mdoc(7).
+This gives us nicer page headers for cvs(1), lynx(1), tic(1),
+mkhybrid(8), and many curses(3) manuals.
+
+ok kristaps@@
+
+To not break compatibility, i wrote a corresponding patch for GNU troff
+which Werner Lemberg accepted upstream at rev. 1.65 of:
+http://cvs.savannah.gnu.org/viewvc/groff/tmac/an-old.tmac?root=groff
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.28 2011/07/28 14:17:11 kristaps Exp $ */
+d55 1
+a55 1
+struct	mdoc	*mdoc_alloc(struct roff *, struct mparse *);
+@
+
+
+1.28
+log
+@An implementation of `tr'.  This routes allocations of TEXT nodes
+through libroff, which does the appropriate translations of `tr'.  This
+is SLOW: it uses the backend of `ds' and `de', which is a simple linear
+list.  However, unlike `ds' and `de', it iterates over EACH CHARACTER of
+the entire file looking for replacements.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.27 2011/07/27 12:41:02 kristaps Exp $ */
+d52 1
+@
+
+
+1.27
+log
+@Disable in-line eqn processing for a bit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.26 2011/07/27 07:32:26 kristaps Exp $ */
+d78 1
+@
+
+
+1.26
+log
+@Move mandoc_hyph() into roff_parsetext() as a single conditional.  While
+here, do some function renames for clarity and make all function
+prototypes be in one place.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.25 2011/07/25 15:37:00 kristaps Exp $ */
+d78 1
+d83 1
+@
+
+
+1.25
+log
+@Implement the first steps of equation parsing from within libmdoc.
+This consists of a shim around the text parser that calls out to libroff
+if equation components exist on the line.  Right now this will do
+nothing, as the equation delimiter always returns nil.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.24 2011/07/21 15:21:13 kristaps Exp $ */
+a49 1
+int		 mandoc_hyph(const char *, const char *);
+@
+
+
+1.24
+log
+@Support `size' constructs in eqn.7.  Generalise mandoc_strontou to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.23 2011/07/18 07:46:41 kristaps Exp $ */
+d79 4
+@
+
+
+1.23
+log
+@Make `struct roff' be passed into libmdoc and libman upon creation.
+This is required for supporting in-line equations.  While here, push
+registers properly into roff and add an set/get/mod interface.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.22 2011/07/17 11:14:53 kristaps Exp $ */
+d52 1
+a52 1
+int		 mandoc_strntou(const char *, size_t, int);
+@
+
+
+1.22
+log
+@Remove prototype since moved into mandoc.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.21 2011/05/14 16:06:09 kristaps Exp $ */
+a36 29
+/*
+ * A register (struct reg) can consist of many types: this consists of
+ * normalised types from the original string form.  For the time being,
+ * there's only an unsigned integer type.
+ */
+union	regval {
+	unsigned  u; /* unsigned integer */
+};
+
+/*
+ * A single register entity.  If "set" is zero, the value of the
+ * register should be the default one, which is per-register.  It's
+ * assumed that callers know which type in "v" corresponds to which
+ * register value.
+ */
+struct	reg {
+	int		  set; /* whether set or not */
+	union regval	  v; /* parsed data */
+};
+
+/*
+ * The primary interface to setting register values is in libroff,
+ * although libmdoc and libman from time to time will manipulate
+ * registers (such as `.Sh SYNOPSIS' enabling REG_nS).
+ */
+struct	regset {
+	struct reg	  regs[REG__MAX];
+};
+
+d55 1
+a55 1
+struct	mdoc	*mdoc_alloc(struct regset *, struct mparse *);
+d63 1
+a63 1
+struct	man	*man_alloc(struct regset *, struct mparse *);
+d71 1
+a71 1
+struct roff	*roff_alloc(struct regset *, struct mparse *);
+d76 3
+@
+
+
+1.21
+log
+@Move roff.c's strtol into libmandoc.h for use by other parts of the code
+(which will come).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.20 2011/04/19 16:38:48 kristaps Exp $ */
+a75 1
+char		*mandoc_strdup(const char *);
+@
+
+
+1.20
+log
+@Clean up parsing of delimiters in -mdoc.  First, remove the "dowarn"
+variable from mandoc_getarg() so that it prints the warning every time.
+Then, remove the warning from args_checkpunct().  This way, warnings
+are being posted at the correct time.  This makes the flag argument to
+mdoc_zargs() superfluous, so make it be zero when it's invoked.  Finally,
+move the args() flags into mdoc_argv.c and make them enums.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.19 2011/04/17 09:08:19 kristaps Exp $ */
+d82 1
+@
+
+
+1.19
+log
+@Get mdoc_argv.c ready to use [some of] mandoc_getarg() by giving said
+function a parameter to suppress warnings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.18 2011/04/09 15:29:40 kristaps Exp $ */
+d77 1
+a77 2
+char		*mandoc_getarg(struct mparse *, 
+			char **, int, int, int *);
+@
+
+
+1.18
+log
+@Remove a2roffdeco() and mandoc_special() functions and replace them with
+a public (mandoc.h) function mandoc_escape(), which merges the
+functionality of both prior functions.
+
+Reason: code duplication.  The a2roffdeco() and mandoc_special()
+functions were pretty much the same thing and both quite complex.  This
+allows one function to receive improvements in (e.g.) subexpression
+handling and performance, instead of having to replicate functionality.
+
+As such, the mandoc_escape() function already handles a superset of the
+escapes handled in previous versions and has improvements in performance
+(using strcspn(), for example) and reliable handling of subexpressions.
+
+This code Works For Me, but may need work to catch any regressions.
+Since the benefits are great (leaner code, simpler API), I'd rather have
+it in-tree than floating as a patch.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.17 2011/03/28 23:52:13 kristaps Exp $ */
+d77 2
+a78 1
+char		*mandoc_getarg(struct mparse *, char **, int, int *);
+@
+
+
+1.17
+log
+@Have libman and libmdoc use mandoc_getcontrol() to determine whether a
+macro has been invoked.  libroff is next.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.16 2011/03/22 14:05:45 kristaps Exp $ */
+a75 1
+int		 mandoc_special(char *);
+@
+
+
+1.16
+log
+@Move mandoc_isdelim() back into libmdoc.h.  This fixes an unreported
+error where (1) -man pages were punctuating delimiters (e.g., `.B a ;')
+and where (2) standalone punctuation in -mdoc or -man (e.g., ";" on its
+own line) would also be punctuated.  This introduces a small amount of
+complexity of mdoc_{html,term}.c must manage their own spacing with
+running print_word() or print_text().  The check for delimiting now
+happens in mdoc_macro.c's dword().
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.15 2011/03/22 10:02:50 kristaps Exp $ */
+d82 1
+@
+
+
+1.15
+log
+@Step 3: consolidate manuals.  The parse functions in mdoc.h, roff.h, and
+man.h are now part of libmandoc.h, so remove these from their respective
+manuals (they're no longer public-facing and we don't need a libmandoc.3
+(yet?)).  Before that, move the juicy data (parse tree syntax) into
+new-born mandoc.3.  Peck around in Makefile and index.sgml to reflect
+reality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.14 2011/03/22 09:48:13 kristaps Exp $ */
+a31 3
+/*
+ * Available registers (set in libroff, accessed elsewhere).
+ */
+d33 1
+a33 1
+	REG_nS = 0,
+d39 2
+a40 1
+ * normalised types from the original string form.
+d77 3
+a79 3
+char		 *mandoc_strdup(const char *);
+char		 *mandoc_getarg(struct mparse *, char **, int, int *);
+char		 *mandoc_normdate(struct mparse *, char *, int, int);
+d104 1
+a104 4
+void		  roff_endparse(struct roff *);
+
+const struct tbl_span *roff_span(const struct roff *);
+const struct eqn *roff_eqn(const struct roff *);
+d106 2
+@
+
+
+1.14
+log
+@Step 1 of restructuring: libmandoc.h.  Move all compiler-set-specific
+stuff into libmandoc.h, including old mdoc.h/man.h/roff.h functions now
+used by read.c.  The motivation behind this is to tighten the
+relationship between the underlying compilers while keeping parse data
+hidden from general callers (e.g., main.c).
+
+While here, also move register values from mandoc.h into libmandoc.h as
+noted by schwarze@@.  See above for explanation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.13 2011/03/20 16:02:05 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.13
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.12 2011/03/17 08:49:34 kristaps Exp $ */
+d20 48
+d70 41
+a110 10
+void	 mandoc_msg(enum mandocerr, struct mparse *, 
+		int, int, const char *);
+void	 mandoc_vmsg(enum mandocerr, struct mparse *, 
+		int, int, const char *, ...);
+int	 mandoc_special(char *);
+char	*mandoc_strdup(const char *);
+char	*mandoc_getarg(struct mparse *, char **, int, int *);
+char	*mandoc_normdate(struct mparse *, char *, int, int);
+int	 mandoc_eos(const char *, size_t, int);
+int	 mandoc_hyph(const char *, const char *);
+@
+
+
+1.12
+log
+@Move mandoc_{realloc,malloc,calloc} out of libmandoc.h and into mandoc.h
+so that everybody can use them.  This follows the convention of
+libXXXX.h being internal to a library and XXXX.h being the external
+interface.  Not only does this allow the removal of lots of redundant
+NULL-checking code, it also sets the tone for adding new mandoc-global
+routines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.11 2011/03/07 01:35:51 schwarze Exp $ */
+d22 10
+a31 6
+int		 mandoc_special(char *);
+char		*mandoc_strdup(const char *);
+char		*mandoc_getarg(char **, mandocmsg, void *, int, int *);
+char		*mandoc_normdate(char *, mandocmsg, void *, int, int);
+int		 mandoc_eos(const char *, size_t, int);
+int		 mandoc_hyph(const char *, const char *);
+@
+
+
+1.11
+log
+@Clean up date handling,
+as a first step to get rid of the frequent petty warnings in this area:
+ - always store dates as strings, not as seconds since the Epoch
+ - for input, try the three most common formats everywhere
+ - for unrecognized format, just pass the date though verbatim
+ - when there is no date at all, still use the current date
+Originally triggered by a one-line patch from Tim van der Molen,
+<tbvdm at xs4all dot nl>, which is included here.
+Feedback and OK on manual parts from jmc@@.
+"please check this in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.10 2011/01/03 22:42:37 schwarze Exp $ */
+a22 1
+void		*mandoc_calloc(size_t, size_t);
+a23 2
+void		*mandoc_malloc(size_t);
+void		*mandoc_realloc(void *, size_t);
+@
+
+
+1.10
+log
+@Unify roff macro argument parsing (in roff.c, roff_userdef()) and man macro
+argument parsing (in man_argv.c, man_args()), both having different bugs,
+to use one common macro argument parser (in mandoc.c, mandoc_getarg()),
+because from the point of view of roff, man macros are just roff macros,
+hence their arguments are parsed in exactly the same way.
+
+While doing so, fix these bugs:
+ * Escaped blanks (i.e. those preceded by an odd number of backslashes)
+   were mishandled as argument separators in unquoted arguments to
+   user-defined roff macros.
+ * Unescaped blanks preceded by an even number of backslashes were not
+   recognized as argument separators in unquoted arguments to man macros.
+ * Escaped backslashes (i.e. pairs of backslashes) were not reduced
+   to single backslashes both in unquoted and quoted arguments both
+   to user-defined roff macros and to man macros.
+ * Escaped quotes (i.e. pairs of quotes inside quoted arguments) were
+   not reduced to single quotes in man macros.
+
+OK kristaps@@
+
+Note that mdoc macro argument parsing is yet another beast for no good
+reason and is probably afflicted by similar bugs.  But i don't attempt
+to fix that right now because it is intricately entangled with lots of
+unrelated high-level mdoc(7) functionality, like delimiter handling and
+column list phrase handling.  Disentagling that would waste too much
+time now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.9 2010/07/18 17:00:26 schwarze Exp $ */
+d28 1
+a28 5
+time_t		 mandoc_a2time(int, const char *);
+#define		 MTIME_CANONICAL	(1 << 0)
+#define		 MTIME_REDUCED		(1 << 1)
+#define		 MTIME_MDOCDATE		(1 << 2)
+#define		 MTIME_ISO_8601		(1 << 3)
+@
+
+
+1.9
+log
+@Text ending in a full stop, exclamation mark or question mark
+should not flag the end of a sentence if:
+
+1) The punctuation is followed by closing delimiters
+and not preceded by alphanumeric characters, like in
+"There is no full stop (.) in this sentence"
+
+or
+
+2) The punctuation is a child of a macro
+and not preceded by alphanumeric characters, like in
+"There is no full stop
+.Pq \&.
+in this sentence"
+
+"looks fine" to kristaps@@; tested by jmc@@ and sobrado@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.8 2010/06/19 20:46:27 kristaps Exp $ */
+d27 1
+@
+
+
+1.8
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.7 2010/06/09 19:22:56 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+d32 1
+a32 1
+int		 mandoc_eos(const char *, size_t);
+@
+
+
+1.7
+log
+@Squash bug noted by Ulrich Spoerlein where "-" were being converted to
+ASCII_HYPH, as per normal, but were screwing up mandoc_special().  Fixed
+by making mandoc_special() first check isspace() instead of ! isgraph(),
+then normalise its string as it passes out.  This require de-constifying
+some validation routines not already de-constified (those in libman),
+but that's ok, because I'd like to be pushing actions into validation
+routines to save on space and redundant calculations.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.6 2010/05/25 12:37:20 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.6
+log
+@Modified version of Ingo Schwarze's patch for hyphen-breaking.
+Breakable hyphens are cued in the back-ends (with ASCII_HYPH) and acted
+upon in term.c or ignored in html.c.
+
+Also cleaned up XML decl printing (no need for extra vars).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.5 2010/05/12 17:08:03 kristaps Exp $ */
+d22 1
+a22 1
+int		 mandoc_special(const char *);
+@
+
+
+1.5
+log
+@Put the eos-checker into libmandoc.h.
+Added bits in mdoc.7 and man.7 about EOS spacing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.4 2009/11/02 06:22:45 kristaps Exp $ */
+d33 1
+@
+
+
+1.4
+log
+@Added mandoc_a2time() for proper date conversion.
+Fitted TH and Dd handlers to use mandoc_a2time().
+Documented date syntax for -man, fixed documentation for -mdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.3 2009/10/30 05:58:37 kristaps Exp $ */
+d32 1
+@
+
+
+1.3
+log
+@libmdoc and libman now using non-recoverable allocations (simpler code).
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.2 2009/10/28 19:21:59 kristaps Exp $ */
+d27 5
+@
+
+
+1.2
+log
+@Slow movement of internal allocations to fail completely.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libmandoc.h,v 1.1 2009/07/04 09:01:55 kristaps Exp $ */
+a26 1
+void		*mandoc_reallocf(void *, size_t);
+@
+
+
+1.1
+log
+@Moved escape validation into libmandoc.h/mandoc.c (common between libman/libmdoc1).
+libman supports MAN_IGN_ESCAPE (like MDOC_IGN_ESCAPE).
+All popular escapes now handled consistently.
+@
+text
+@d1 1
+a1 1
+/*	$Id: libman.h,v 1.11 2009/06/22 13:09:17 kristaps Exp $ */
+d23 5
+@

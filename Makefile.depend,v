@@ -1,0 +1,689 @@
+head	1.21;
+access;
+symbols
+	VERSION_1_13_3:1.8
+	VERSION_1_13_2:1.7
+	VERSION_1_12_4:1.1.2.1
+	VERSION_1_13_1:1.3
+	VERSION_1_12:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.21
+date	2015.11.07.20.52.52;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2015.11.07.17.58.55;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2015.10.22.22.06.43;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2015.10.20.02.01.31;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2015.10.13.15.53.05;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2015.10.11.21.12.54;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.07.17.22.38.29;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.07.14.23.16.29;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.04.19.13.50.25;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.04.02.21.36.49;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.03.27.17.37.25;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.03.19.14.57.29;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.02.16.14.56.22;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2014.11.28.18.57.31;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2014.08.17.03.24.47;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2014.08.11.01.39.00;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.08.10.16.21.08;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.08.05.16.12.25;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.08.05.05.27.16;	author schwarze;	state Exp;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2014.08.05.05.29.53;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.21
+log
+@provide a simple stand-alone implementation of getline(3)
+for systems lacking it
+@
+text
+@att.o: att.c config.h roff.h mdoc.h libmdoc.h
+cgi.o: cgi.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h man.h main.h manconf.h mansearch.h cgi.h
+chars.o: chars.c config.h mandoc.h mandoc_aux.h mandoc_ohash.h compat_ohash.h libmandoc.h
+compat_err.o: compat_err.c config.h
+compat_fts.o: compat_fts.c config.h compat_fts.h
+compat_getline.o: compat_getline.c config.h
+compat_getsubopt.o: compat_getsubopt.c config.h
+compat_isblank.o: compat_isblank.c config.h
+compat_mkdtemp.o: compat_mkdtemp.c config.h
+compat_ohash.o: compat_ohash.c config.h compat_ohash.h
+compat_progname.o: compat_progname.c config.h
+compat_reallocarray.o: compat_reallocarray.c config.h
+compat_sqlite3_errstr.o: compat_sqlite3_errstr.c config.h
+compat_strcasestr.o: compat_strcasestr.c config.h
+compat_stringlist.o: compat_stringlist.c config.h compat_stringlist.h
+compat_strlcat.o: compat_strlcat.c config.h
+compat_strlcpy.o: compat_strlcpy.c config.h
+compat_strsep.o: compat_strsep.c config.h
+compat_strtonum.o: compat_strtonum.c config.h
+compat_vasprintf.o: compat_vasprintf.c config.h
+demandoc.o: demandoc.c config.h roff.h man.h mdoc.h mandoc.h
+eqn.o: eqn.c config.h mandoc.h mandoc_aux.h libmandoc.h libroff.h
+eqn_html.o: eqn_html.c config.h mandoc.h out.h html.h
+eqn_term.o: eqn_term.c config.h mandoc.h out.h term.h
+html.o: html.c config.h mandoc.h mandoc_aux.h out.h html.h manconf.h main.h
+lib.o: lib.c config.h roff.h mdoc.h libmdoc.h lib.in
+main.o: main.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h man.h tag.h main.h manconf.h mansearch.h
+man.o: man.c config.h mandoc_aux.h mandoc.h roff.h man.h libmandoc.h roff_int.h libman.h
+man_hash.o: man_hash.c config.h roff.h man.h libman.h
+man_html.o: man_html.c config.h mandoc_aux.h roff.h man.h out.h html.h main.h
+man_macro.o: man_macro.c config.h mandoc.h roff.h man.h libmandoc.h roff_int.h libman.h
+man_term.o: man_term.c config.h mandoc_aux.h mandoc.h roff.h man.h out.h term.h main.h
+man_validate.o: man_validate.c config.h mandoc_aux.h mandoc.h roff.h man.h libmandoc.h roff_int.h libman.h
+mandoc.o: mandoc.c config.h mandoc.h mandoc_aux.h libmandoc.h
+mandoc_aux.o: mandoc_aux.c config.h mandoc.h mandoc_aux.h
+mandoc_ohash.o: mandoc_ohash.c mandoc_aux.h mandoc_ohash.h compat_ohash.h
+mandocdb.o: mandocdb.c config.h compat_fts.h mandoc_aux.h mandoc_ohash.h compat_ohash.h mandoc.h roff.h mdoc.h man.h manconf.h mansearch.h
+manpage.o: manpage.c config.h manconf.h mansearch.h
+manpath.o: manpath.c config.h mandoc_aux.h manconf.h
+mansearch.o: mansearch.c config.h mandoc.h mandoc_aux.h mandoc_ohash.h compat_ohash.h manconf.h mansearch.h
+mansearch_const.o: mansearch_const.c config.h mansearch.h
+mdoc.o: mdoc.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h libmandoc.h roff_int.h libmdoc.h
+mdoc_argv.o: mdoc_argv.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h libmandoc.h libmdoc.h
+mdoc_hash.o: mdoc_hash.c config.h roff.h mdoc.h libmdoc.h
+mdoc_html.o: mdoc_html.c config.h mandoc_aux.h roff.h mdoc.h out.h html.h main.h
+mdoc_macro.o: mdoc_macro.c config.h mandoc.h roff.h mdoc.h libmandoc.h roff_int.h libmdoc.h
+mdoc_man.o: mdoc_man.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h man.h out.h main.h
+mdoc_state.o: mdoc_state.c mandoc.h roff.h mdoc.h libmandoc.h libmdoc.h
+mdoc_term.o: mdoc_term.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h out.h term.h tag.h main.h
+mdoc_validate.o: mdoc_validate.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h libmandoc.h roff_int.h libmdoc.h
+msec.o: msec.c config.h mandoc.h libmandoc.h msec.in
+out.o: out.c config.h mandoc_aux.h mandoc.h out.h
+preconv.o: preconv.c config.h mandoc.h libmandoc.h
+read.o: read.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h man.h libmandoc.h roff_int.h
+roff.o: roff.c config.h mandoc.h mandoc_aux.h roff.h libmandoc.h roff_int.h libroff.h predefs.in
+soelim.o: soelim.c config.h compat_stringlist.h
+st.o: st.c config.h roff.h mdoc.h libmdoc.h st.in
+tag.o: tag.c config.h mandoc_aux.h mandoc_ohash.h compat_ohash.h tag.h
+tbl.o: tbl.c config.h mandoc.h mandoc_aux.h libmandoc.h libroff.h
+tbl_data.o: tbl_data.c config.h mandoc.h mandoc_aux.h libmandoc.h libroff.h
+tbl_html.o: tbl_html.c config.h mandoc.h out.h html.h
+tbl_layout.o: tbl_layout.c config.h mandoc.h mandoc_aux.h libmandoc.h libroff.h
+tbl_opts.o: tbl_opts.c config.h mandoc.h libmandoc.h libroff.h
+tbl_term.o: tbl_term.c config.h mandoc.h out.h term.h
+term.o: term.c config.h mandoc.h mandoc_aux.h out.h term.h main.h
+term_ascii.o: term_ascii.c config.h mandoc.h mandoc_aux.h out.h term.h manconf.h main.h
+term_ps.o: term_ps.c config.h mandoc_aux.h out.h term.h manconf.h main.h
+tree.o: tree.c config.h mandoc.h roff.h mdoc.h man.h main.h
+@
+
+
+1.20
+log
+@Modernization, no functional change intended:
+Use the POSIX function getline(3) rather than the slightly
+dangerous BSD function fgetln(3).
+Remove the related compatibility code.
+@
+text
+@d6 1
+@
+
+
+1.19
+log
+@use the new function man_validate() here, too
+@
+text
+@a4 1
+compat_fgetln.o: compat_fgetln.c config.h
+d10 1
+@
+
+
+1.18
+log
+@In order to become able to generate syntax tree nodes on the roff(7)
+level, validation must be separated from parsing and rewinding.
+This first big step moves calling of the mdoc(7) post_*() functions
+out of the parser loop into their own mdoc_validate() pass, while
+using a new mdoc_state() module to make syntax tree state handling
+available to both the parser loop and the validation pass.
+@
+text
+@d2 1
+a2 1
+cgi.o: cgi.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h main.h manconf.h mansearch.h cgi.h
+@
+
+
+1.17
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@d2 1
+a2 1
+cgi.o: cgi.c config.h mandoc_aux.h mandoc.h roff.h main.h manconf.h mansearch.h cgi.h
+d47 1
+@
+
+
+1.16
+log
+@Reduce the amount of code by moving the three copies of the ohash
+callback functions into one common place, preparing for the use of
+ohash for some additional purposes.  No functional change.
+@
+text
+@d3 1
+a3 1
+chars.o: chars.c config.h mandoc.h mandoc_aux.h libmandoc.h chars.in
+@
+
+
+1.15
+log
+@Finally use __progname, err(3) and warn(3).
+That's more readable and less error-prone than fumbling around
+with argv[0], fprintf(3), strerror(3), perror(3), and exit(3).
+
+It's a bad idea to boycott good interfaces merely because standards
+committees ignore them.  Instead, let's provide compatibility modules
+for archaic systems (like commercial Solaris) that still don't have
+them.  The compat module has an UCB Copyright (c) 1993...
+@
+text
+@d35 2
+a36 1
+mandocdb.o: mandocdb.c config.h compat_fts.h compat_ohash.h mandoc_aux.h mandoc.h roff.h mdoc.h man.h manconf.h mansearch.h
+d39 1
+a39 1
+mansearch.o: mansearch.c config.h compat_ohash.h mandoc.h mandoc_aux.h manconf.h mansearch.h
+d56 1
+a56 1
+tag.o: tag.c config.h compat_ohash.h mandoc_aux.h tag.h
+@
+
+
+1.14
+log
+@Initial, still somewhat experimental implementation to leverage
+less(1) -T and :t ctags(1)-like functionality to jump to the
+definitions of various terms inside manual pages.
+To be polished in the tree, so bear with me and report issues.
+
+Technically, if less(1) is used as a pager, information is collected
+by the mdoc(7) terminal formatter, first stored using the ohash
+library, then ultimately written to a temporary file which is passed
+to less via -T.  No change intended for other output formatters or
+when running without a pager.
+
+Based on an idea from Kristaps using feedback from many, in particular
+phessler@@ nicm@@ millert@@ halex@@ doug@@ kspillner@@ deraadt@@.
+@
+text
+@d4 1
+d55 1
+a55 1
+tag.o: tag.c compat_ohash.h mandoc_aux.h tag.h
+@
+
+
+1.13
+log
+@Fix the "depend" target and regenerate Makefile.depend:
+* do not process the test-*.c files, they are not built via make
+* add the missing compat_stringlist.c and soelim.c
+* read.c now uses roff_int.h
+* roff.c no longer uses libmdoc.h
+@
+text
+@d25 1
+a25 1
+main.o: main.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h man.h main.h manconf.h mansearch.h
+d45 1
+a45 1
+mdoc_term.o: mdoc_term.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h out.h term.h main.h
+d54 1
+@
+
+
+1.12
+log
+@Unify node handling functions:
+* node_alloc() for mdoc and man_node_alloc() -> roff_node_alloc()
+* node_append() for mdoc and man_node_append() -> roff_node_append()
+* mdoc_head_alloc() and man_head_alloc() -> roff_head_alloc()
+* mdoc_body_alloc() and man_body_alloc() -> roff_body_alloc()
+* mdoc_node_unlink() and man_node_unlink() -> roff_node_unlink()
+* mdoc_node_free() and man_node_free() -> roff_node_free()
+* mdoc_node_delete() and man_node_delete() -> roff_node_delete()
+Minus 130 lines of code, no functional change.
+@
+text
+@d13 1
+d50 3
+a52 2
+read.o: read.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h man.h libmandoc.h
+roff.o: roff.c config.h mandoc.h mandoc_aux.h roff.h libmandoc.h roff_int.h libroff.h libmdoc.h predefs.in
+a63 19
+test-dirent-namlen.o: test-dirent-namlen.c
+test-fgetln.o: test-fgetln.c
+test-fts.o: test-fts.c
+test-getsubopt.o: test-getsubopt.c
+test-isblank.o: test-isblank.c
+test-mkdtemp.o: test-mkdtemp.c
+test-mmap.o: test-mmap.c
+test-ohash.o: test-ohash.c
+test-reallocarray.o: test-reallocarray.c
+test-sqlite3.o: test-sqlite3.c
+test-sqlite3_errstr.o: test-sqlite3_errstr.c
+test-strcasestr.o: test-strcasestr.c
+test-strlcat.o: test-strlcat.c
+test-strlcpy.o: test-strlcpy.c
+test-strptime.o: test-strptime.c
+test-strsep.o: test-strsep.c
+test-strtonum.o: test-strtonum.c
+test-vasprintf.o: test-vasprintf.c
+test-wchar.o: test-wchar.c
+@
+
+
+1.11
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d2 1
+a2 1
+cgi.o: cgi.c config.h mandoc.h mandoc_aux.h main.h manconf.h mansearch.h cgi.h
+d25 1
+a25 1
+man.o: man.c config.h mandoc_aux.h mandoc.h roff.h man.h libmandoc.h libman.h
+d28 1
+a28 1
+man_macro.o: man_macro.c config.h mandoc.h roff.h man.h libmandoc.h libman.h
+d30 1
+a30 1
+man_validate.o: man_validate.c config.h mandoc_aux.h mandoc.h roff.h man.h libmandoc.h libman.h
+d38 1
+a38 1
+mdoc.o: mdoc.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h libmandoc.h libmdoc.h
+d42 1
+a42 1
+mdoc_macro.o: mdoc_macro.c config.h mandoc.h roff.h mdoc.h libmandoc.h libmdoc.h
+d45 1
+a45 1
+mdoc_validate.o: mdoc_validate.c config.h mandoc_aux.h mandoc.h roff.h mdoc.h libmandoc.h libmdoc.h
+d50 1
+a50 1
+roff.o: roff.c config.h mandoc.h mandoc_aux.h libmandoc.h libroff.h predefs.in
+@
+
+
+1.10
+log
+@Parse the new man.conf(5) "output" directive.
+The next step will be to actually use the parsed data.
+@
+text
+@d1 1
+a1 1
+att.o: att.c config.h mdoc.h libmdoc.h
+d18 1
+a18 1
+demandoc.o: demandoc.c config.h man.h mdoc.h mandoc.h
+d22 9
+a30 9
+html.o: html.c config.h mandoc.h mandoc_aux.h out.h html.h main.h
+lib.o: lib.c config.h mdoc.h libmdoc.h lib.in
+main.o: main.c config.h mandoc.h mandoc_aux.h main.h mdoc.h man.h manconf.h mansearch.h
+man.o: man.c config.h man.h mandoc.h mandoc_aux.h libman.h libmandoc.h
+man_hash.o: man_hash.c config.h man.h libman.h
+man_html.o: man_html.c config.h mandoc_aux.h man.h out.h html.h main.h
+man_macro.o: man_macro.c config.h man.h mandoc.h libmandoc.h libman.h
+man_term.o: man_term.c config.h mandoc.h mandoc_aux.h out.h man.h term.h main.h
+man_validate.o: man_validate.c config.h man.h mandoc.h mandoc_aux.h libman.h libmandoc.h
+d33 1
+a33 1
+mandocdb.o: mandocdb.c config.h compat_fts.h compat_ohash.h mdoc.h man.h mandoc.h mandoc_aux.h manconf.h mansearch.h
+d38 8
+a45 8
+mdoc.o: mdoc.c config.h mdoc.h mandoc.h mandoc_aux.h libmdoc.h libmandoc.h
+mdoc_argv.o: mdoc_argv.c config.h mdoc.h mandoc.h mandoc_aux.h libmdoc.h libmandoc.h
+mdoc_hash.o: mdoc_hash.c config.h mdoc.h libmdoc.h
+mdoc_html.o: mdoc_html.c config.h mandoc_aux.h mdoc.h out.h html.h main.h
+mdoc_macro.o: mdoc_macro.c config.h mdoc.h mandoc.h libmdoc.h libmandoc.h
+mdoc_man.o: mdoc_man.c config.h mandoc.h mandoc_aux.h out.h man.h mdoc.h main.h
+mdoc_term.o: mdoc_term.c config.h mandoc.h mandoc_aux.h out.h term.h mdoc.h main.h
+mdoc_validate.o: mdoc_validate.c config.h mdoc.h mandoc.h mandoc_aux.h libmdoc.h libmandoc.h
+d49 1
+a49 1
+read.o: read.c config.h mandoc.h mandoc_aux.h libmandoc.h mdoc.h man.h
+d51 1
+a51 1
+st.o: st.c config.h mdoc.h libmdoc.h st.in
+d59 3
+a61 3
+term_ascii.o: term_ascii.c config.h mandoc.h mandoc_aux.h out.h term.h main.h
+term_ps.o: term_ps.c config.h mandoc_aux.h out.h term.h main.h
+tree.o: tree.c config.h mandoc.h mdoc.h man.h main.h
+@
+
+
+1.9
+log
+@Compat glue needed for Solaris 9 and 10.
+
+Thanks to Sevan Janiyan <venture37 at geeklan dot co dot uk> for
+reporting the Solaris 10 issues, to Jan Holzhueter <jh at opencsw
+dot org> for some additional insight, and to OpenCSW in general for
+providing me with a Solaris 9/10/11 testing environment.
+@
+text
+@d2 1
+a2 1
+cgi.o: cgi.c config.h mandoc.h mandoc_aux.h main.h manpath.h mansearch.h cgi.h
+d24 1
+a24 1
+main.o: main.c config.h mandoc.h mandoc_aux.h main.h mdoc.h man.h manpath.h mansearch.h
+d33 4
+a36 4
+mandocdb.o: mandocdb.c config.h compat_fts.h compat_ohash.h mdoc.h man.h mandoc.h mandoc_aux.h manpath.h mansearch.h
+manpage.o: manpage.c config.h manpath.h mansearch.h
+manpath.o: manpath.c config.h mandoc_aux.h manpath.h
+mansearch.o: mansearch.c config.h compat_ohash.h mandoc.h mandoc_aux.h manpath.h mansearch.h
+@
+
+
+1.8
+log
+@strtonum(3) compat glue
+@
+text
+@d7 2
+d17 1
+d66 2
+d79 1
+@
+
+
+1.7
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d14 1
+d43 1
+a43 1
+msec.o: msec.c config.h libmandoc.h msec.in
+d73 1
+@
+
+
+1.6
+log
+@AT&T is unlikely to release an new version of Research UNIX any time soon.
+So, it's pointless to make adding version strings easy for downstream.
+One source file less to maintain.
+@
+text
+@d18 1
+a18 1
+html.o: html.c config.h mandoc.h mandoc_aux.h libmandoc.h out.h html.h main.h
+d22 2
+a23 2
+man_hash.o: man_hash.c config.h man.h mandoc.h libman.h
+man_html.o: man_html.c config.h mandoc.h mandoc_aux.h out.h html.h man.h main.h
+d33 1
+a33 1
+mansearch_const.o: mansearch_const.c config.h manpath.h mansearch.h
+d37 1
+a37 1
+mdoc_html.o: mdoc_html.c config.h mandoc.h mandoc_aux.h out.h html.h mdoc.h main.h
+d42 1
+a42 1
+msec.o: msec.c config.h mandoc.h libmandoc.h msec.in
+d45 1
+a45 1
+read.o: read.c config.h mandoc.h mandoc_aux.h libmandoc.h mdoc.h man.h main.h
+d56 1
+a56 1
+term_ps.o: term_ps.c config.h mandoc.h mandoc_aux.h out.h main.h term.h
+@
+
+
+1.5
+log
+@Fully integrate apropos(1) into mandoc(1).
+Switch the argmode on the progname, including man(1).
+Provide -f and -k options to switch the argmode.
+Store the argmode inside struct search, generalizing the flags.
+Derive the deftype from the argmode when needed instead of storing it.
+Store the outkey inside struct search instead of passing it alone.
+While here, get rid of the trailing blanks in Makefile.depend.
+@
+text
+@d1 1
+a1 2
+arch.o: arch.c config.h mdoc.h libmdoc.h arch.in
+att.o: att.c config.h mdoc.h libmdoc.h att.in
+d44 1
+a44 1
+preconv.o: preconv.c config.h
+d46 1
+a46 1
+roff.o: roff.c config.h mandoc.h mandoc_aux.h libroff.h libmandoc.h predefs.in
+a57 1
+vol.o: vol.c config.h mdoc.h libmdoc.h vol.in
+@
+
+
+1.4
+log
+@Provide a fallback version of fts(3) for systems lacking it.
+I chose the OpenBSD version because it apparently contains various
+bugfixes that never made it into libnbcompat.  To reduce size and
+complexity, i stripped out the features we don't need.
+@
+text
+@a0 1
+apropos.o: apropos.c config.h manpath.h mansearch.h
+d8 1
+a8 1
+compat_ohash.o: compat_ohash.c config.h
+d21 1
+a21 1
+main.o: main.c config.h mandoc.h mandoc_aux.h main.h mdoc.h man.h
+d30 1
+a30 1
+mandocdb.o: mandocdb.c config.h compat_fts.h mdoc.h man.h mandoc.h mandoc_aux.h manpath.h mansearch.h
+d33 1
+a33 1
+mansearch.o: mansearch.c config.h mandoc.h mandoc_aux.h manpath.h mansearch.h
+d45 1
+a45 1
+preconv.o: preconv.c config.h 
+d60 15
+a74 11
+test-fgetln.o: test-fgetln.c 
+test-getsubopt.o: test-getsubopt.c 
+test-mmap.o: test-mmap.c 
+test-ohash.o: test-ohash.c 
+test-reallocarray.o: test-reallocarray.c 
+test-sqlite3_errstr.o: test-sqlite3_errstr.c 
+test-strcasestr.o: test-strcasestr.c 
+test-strlcat.o: test-strlcat.c 
+test-strlcpy.o: test-strlcpy.c 
+test-strptime.o: test-strptime.c 
+test-strsep.o: test-strsep.c 
+@
+
+
+1.3
+log
+@sync after adding config.h to mansearch_const.c;
+committing on behalf of kristaps@@ because i want to release now
+@
+text
+@d6 10
+a15 9
+compat_fgetln.o: compat_fgetln.c config.h 
+compat_getsubopt.o: compat_getsubopt.c config.h 
+compat_ohash.o: compat_ohash.c config.h 
+compat_reallocarray.o: compat_reallocarray.c config.h 
+compat_sqlite3_errstr.o: compat_sqlite3_errstr.c config.h 
+compat_strcasestr.o: compat_strcasestr.c config.h 
+compat_strlcat.o: compat_strlcat.c config.h 
+compat_strlcpy.o: compat_strlcpy.c config.h 
+compat_strsep.o: compat_strsep.c config.h 
+d31 1
+a31 1
+mandocdb.o: mandocdb.c config.h mdoc.h man.h mandoc.h mandoc_aux.h manpath.h mansearch.h
+@
+
+
+1.2
+log
+@sync after sqlite3_errstr() compat addition
+@
+text
+@d34 1
+a34 1
+mansearch_const.o: mansearch_const.c manpath.h mansearch.h
+@
+
+
+1.1
+log
+@Switch to autogenerated dependency rules; they are less error-prone.
+Provide a maintainer target to regenerate them.
+@
+text
+@d10 1
+d65 1
+@
+
+
+1.1.2.1
+log
+@Switch to autogenerated dependency rules; they are less error-prone.
+Provide a maintainer target to regenerate them.
+@
+text
+@d1 1
+a1 2
+apropos.o: apropos.c config.h apropos_db.h mandoc.h manpath.h
+apropos_db.o: apropos_db.c config.h mandocdb.h apropos_db.h mandoc.h mandoc_aux.h
+d4 1
+d8 1
+d29 2
+a30 1
+mandocdb.o: mandocdb.c config.h man.h mdoc.h mandoc.h mandoc_aux.h mandocdb.h manpath.h
+d32 2
+a58 1
+test-betoh64.o: test-betoh64.c 
+d62 1
+@

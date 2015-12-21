@@ -1,0 +1,1133 @@
+head	1.22;
+access;
+symbols
+	VERSION_1_9_5:1.22
+	VERSION_1_8_5:1.22
+	VERSION_1_8_1:1.22
+	VERSION_1_7_16:1.22
+	VERSION_1_7_15:1.22
+	OPENBSD_CHECKIN:1.22
+	VERSION_1_6_5:1.22
+	VERSION_1_5_1:1.22
+	VERSION_1_3_15:1.22
+	VERSION_1_3_6:1.22
+	VERSION_1_2_0:1.22
+	VERSION_1_0_2:1.20
+	VERSION_1_0_1:1.18
+	version_0_0:1.1.1.1
+	version_0:1.1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.22
+date	2008.12.15.01.54.58;	author kristaps;	state dead;
+branches;
+next	1.21;
+
+1.21
+date	2008.12.10.14.42.46;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2008.12.09.17.09.12;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2008.12.08.16.29.57;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2008.12.03.14.39.59;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2008.12.02.00.10.37;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2008.11.30.21.41.35;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2008.11.30.20.53.34;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2008.11.29.14.14.21;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2008.11.28.15.25.49;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2008.11.28.11.21.12;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2008.11.27.16.54.58;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2008.11.25.12.51.17;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2008.11.24.14.24.55;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.11.24.08.50.33;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.11.23.23.12.47;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.11.23.22.30.53;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.11.23.16.53.18;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.11.23.11.05.25;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.11.22.20.15.34;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.11.22.18.34.06;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.11.22.14.53.29;	author kristaps;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2008.11.22.14.53.29;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.22
+log
+@Purged all old files in favour of new design.  Selective reintegration.
+@
+text
+@@
+
+
+1.21
+log
+@Made noop the default filter.
+@
+text
+@a0 261
+/* $Id: libmdocml.c,v 1.20 2008/12/09 17:09:12 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <assert.h>
+#include <ctype.h>
+#include <fcntl.h>
+#include <err.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+#include "private.h"
+
+static	int	 md_run_enter(const struct md_args *, 
+			struct md_mbuf *, struct md_rbuf *, void *);
+static	int	 md_run_leave(const struct md_args *, struct md_mbuf *,
+			struct md_rbuf *, int, void *);
+
+static	ssize_t	 md_buf_fill(struct md_rbuf *);
+static	int	 md_buf_flush(struct md_mbuf *);
+
+
+static ssize_t
+md_buf_fill(struct md_rbuf *in)
+{
+	ssize_t		 ssz;
+
+	assert(in);
+	assert(in->buf);
+	assert(in->bufsz > 0);
+	assert(in->name);
+
+	if (-1 == (ssz = read(in->fd, in->buf, in->bufsz))) 
+		warn("%s", in->name);
+
+	return(ssz);
+}
+
+
+static int md_buf_flush(struct md_mbuf *buf)
+{
+	ssize_t		 sz;
+
+	assert(buf);
+	assert(buf->buf);
+	assert(buf->name);
+
+	if (0 == buf->pos)
+		return(1);
+
+	sz = write(buf->fd, buf->buf, buf->pos);
+
+	if (-1 == sz) {
+		warn("%s", buf->name);
+		return(0);
+	} else if ((size_t)sz != buf->pos) {
+		warnx("%s: short write", buf->name);
+		return(0);
+	}
+
+	buf->pos = 0;
+	return(1);
+}
+
+
+int
+md_buf_putchar(struct md_mbuf *buf, char c)
+{
+
+	assert(buf);
+	return(md_buf_puts(buf, &c, 1));
+}
+
+
+int
+md_buf_putstring(struct md_mbuf *buf, const char *p)
+{
+
+	assert(buf);
+	return(md_buf_puts(buf, p, strlen(p)));
+}
+
+
+int
+md_buf_puts(struct md_mbuf *buf, const char *p, size_t sz)
+{
+	size_t		 ssz;
+
+	assert(p);
+	assert(buf);
+	assert(buf->buf);
+
+	/* LINTED */
+	while (buf->pos + sz > buf->bufsz) {
+		ssz = buf->bufsz - buf->pos;
+		(void)memcpy(/* LINTED */
+				buf->buf + buf->pos, p, ssz);
+		p += (long)ssz;
+		sz -= ssz;
+		buf->pos += ssz;
+
+		if ( ! md_buf_flush(buf))
+			return(0);
+	}
+
+	(void)memcpy(/* LINTED */
+			buf->buf + buf->pos, p, sz);
+	buf->pos += sz;
+	return(1);
+}
+
+
+static int
+md_run_leave(const struct md_args *args, struct md_mbuf *mbuf, 
+		struct md_rbuf *rbuf, int c, void *data)
+{
+	md_exit		 fp;
+
+	assert(args);
+	assert(mbuf);
+	assert(rbuf);
+
+	/* Run exiters. */
+	switch (args->type) {
+	case (MD_HTML):
+		fp = md_exit_html;
+		break;
+	case (MD_XML):
+		fp = md_exit_xml;
+		break;
+	default:
+		fp = md_exit_noop;
+		break;
+	}
+
+	if ( ! (*fp)(data, -1 == c ? 0 : 1))
+		c = -1;
+
+	/* Make final flush of buffer. */
+	if (-1 != c && ! md_buf_flush(mbuf))
+		return(-1);
+
+	return(c);
+}
+
+
+static int
+md_run_enter(const struct md_args *args, struct md_mbuf *mbuf, 
+		struct md_rbuf *rbuf, void *p)
+{
+	ssize_t		 sz, i;
+	size_t		 pos;
+	char		 line[MD_LINE];
+	md_line		 fp;
+
+	assert(args);
+	assert(mbuf);
+	assert(rbuf); 
+
+	/* Function ptrs to line-parsers. */
+	switch (args->type) {
+	case (MD_HTML):
+		fp = md_line_html;
+		break;
+	case (MD_XML):
+		fp = md_line_xml;
+		break;
+	default:
+		fp = md_line_noop;
+		break;
+	}
+
+	pos = 0;
+
+again:
+	if (-1 == (sz = md_buf_fill(rbuf))) {
+		return(md_run_leave(args, mbuf, rbuf, -1, p));
+	} else if (0 == sz && 0 != pos) {
+		warnx("%s: no newline at end of file", rbuf->name);
+		return(md_run_leave(args, mbuf, rbuf, -1, p));
+	} else if (0 == sz)
+		return(md_run_leave(args, mbuf, rbuf, 0, p));
+
+	for (i = 0; i < sz; i++) {
+		if ('\n' != rbuf->buf[i]) {
+			if (pos < MD_LINE) {
+				/* LINTED */
+				rbuf->linebuf[pos++] = rbuf->buf[i];
+				continue;
+			}
+			warnx("%s: line %zu too long",
+					rbuf->name, rbuf->line);
+			return(md_run_leave(args, mbuf, rbuf, -1, p));
+		}
+
+		rbuf->linebuf[(int)pos] = 0;
+		(void)memcpy(line, rbuf->linebuf, sizeof(line));
+		if ( ! (*fp)(p, line))
+			return(md_run_leave(args, mbuf, rbuf, -1, p));
+		rbuf->line++;
+		pos = 0;
+	}
+
+	goto again;
+	/* NOTREACHED */
+}
+
+
+int
+md_run(const struct md_args *args,
+		const struct md_buf *out, const struct md_buf *in)
+{
+	md_init		 fp;
+	struct md_mbuf	 mbuf;
+	struct md_rbuf	 rbuf;
+	void		*data;
+
+	assert(args);
+	assert(in);
+	assert(out); 
+
+	(void)memcpy(&mbuf, out, sizeof(struct md_buf));
+	(void)memcpy(&rbuf, in, sizeof(struct md_buf));
+
+	mbuf.pos = 0;
+	rbuf.line = 1;
+
+	/* Run initialisers. */
+	switch (args->type) {
+	case (MD_HTML):
+		fp = md_init_html;
+		break;
+	case (MD_XML):
+		fp = md_init_xml;
+		break;
+	default:
+		fp = md_init_noop;
+		break;
+	}
+
+	data = (*fp)(args, &mbuf, &rbuf);
+
+	/* Go into mainline. */
+	return(md_run_enter(args, &mbuf, &rbuf, data));
+}
+@
+
+
+1.20
+log
+@Considerable clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.19 2008/12/08 16:29:57 kristaps Exp $ */
+d133 2
+d142 4
+a145 2
+		if ( ! md_exit_html(data, -1 == c ? 0 : 1))
+			c = -1;
+d148 1
+a148 2
+		if ( ! md_exit_xml(data, -1 == c ? 0 : 1))
+			c = -1;
+d152 3
+d181 3
+d185 1
+a185 1
+		fp = md_line_xml;
+d229 1
+d247 4
+a250 1
+		data = md_init_html(args, &mbuf, &rbuf);
+d253 1
+a253 1
+		data = md_init_xml(args, &mbuf, &rbuf);
+d257 2
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.18 2008/12/03 14:39:59 kristaps Exp $ */
+a27 1
+#include "libmdocml.h"
+@
+
+
+1.18
+log
+@Abstract ml/mlg/html/xml.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.17 2008/12/02 00:10:37 kristaps Exp $ */
+a30 2
+#define	BUFFER_LINE	 BUFSIZ	/* Default line-buffer size. */
+
+a162 1
+	char		 line[BUFFER_LINE];
+d164 1
+a192 7
+		/*
+		if ( ! isascii(rbuf->buf[i])) {
+			warnx("%s: non-ascii char (line %zu, col %zu)",
+					rbuf->name, rbuf->line, pos);
+			return(md_run_leave(args, mbuf, rbuf, -1, p));
+		}
+		*/
+d194 1
+a194 1
+			if (pos < BUFFER_LINE) {
+d196 1
+a196 1
+				line[pos++] = rbuf->buf[i];
+d204 2
+a205 1
+		line[(int)pos] = 0;
+@
+
+
+1.17
+log
+@Improvements to the xml part.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.16 2008/11/30 21:41:35 kristaps Exp $ */
+d142 2
+a143 2
+	case (MD_HTML4_STRICT):
+		if ( ! md_exit_html4_strict(data, -1 == c ? 0 : 1))
+d175 2
+a176 2
+	case (MD_HTML4_STRICT):
+		fp = md_line_html4_strict;
+d245 2
+a246 3
+	case (MD_HTML4_STRICT):
+		data = md_init_html4_strict
+			(args, &mbuf, &rbuf);
+@
+
+
+1.16
+log
+@Preliminary xml output filter (validate-renamed) done.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.15 2008/11/30 20:53:34 kristaps Exp $ */
+d153 1
+a153 1
+	if ( ! md_buf_flush(mbuf))
+@
+
+
+1.15
+log
+@Cleaned up presentation with mbuf_putstring & al.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.14 2008/11/29 14:14:21 kristaps Exp $ */
+d147 1
+a147 1
+		if ( ! md_exit_valid(data, -1 == c ? 0 : 1))
+d179 1
+a179 1
+		fp = md_line_valid;
+d250 1
+a250 2
+		data = md_init_valid
+			(args, &mbuf, &rbuf);
+@
+
+
+1.14
+log
+@Inclusion of "real" validation code.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.13 2008/11/28 15:25:49 kristaps Exp $ */
+d213 1
+a213 1
+		line[pos] = 0;
+@
+
+
+1.13
+log
+@Removed superfluous structures from rofftree.
+Added roffdata for generalised text processing.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.12 2008/11/28 11:21:12 kristaps Exp $ */
+d88 2
+d97 2
+d214 1
+a214 1
+		if ( ! (*fp)(p, line, pos))
+@
+
+
+1.12
+log
+@Initial pushing to mbuf.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.11 2008/11/27 16:54:58 kristaps Exp $ */
+d59 1
+a59 2
+static int
+md_buf_flush(struct md_mbuf *buf)
+@
+
+
+1.11
+log
+@Considerable fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.10 2008/11/25 12:51:17 kristaps Exp $ */
+d144 1
+a144 1
+		if ( ! md_exit_dummy(data, -1 == c ? 0 : 1))
+d176 1
+a176 1
+		fp = md_line_dummy;
+d247 1
+a247 1
+		data = md_init_dummy
+@
+
+
+1.10
+log
+@Protection against non-ascii.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.9 2008/11/24 14:24:55 kristaps Exp $ */
+d192 1
+d198 1
+@
+
+
+1.9
+log
+@Split roff engine into roff.c.
+Re-worked calling convention for md_*.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.8 2008/11/24 08:50:33 kristaps Exp $ */
+d20 1
+d192 5
+@
+
+
+1.8
+log
+@Roff-line tokens parsed into char**.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.7 2008/11/23 23:12:47 kristaps Exp $ */
+d139 2
+a140 2
+		if ( ! md_exit_html4_strict(args, mbuf, rbuf, c, data))
+			return(-1);
+d142 3
+a144 1
+	case (MD_DUMMY):
+a145 2
+	default:
+		abort();
+d203 1
+a203 1
+		if ( ! (*fp)(args, mbuf, rbuf, line, pos, p))
+a230 1
+	data = NULL;
+d235 2
+a236 2
+		if ( ! md_init_html4_strict(args, &mbuf, &rbuf, &data))
+			return(-1);
+d238 3
+a240 1
+	case (MD_DUMMY):
+a241 2
+	default:
+		abort();
+@
+
+
+1.7
+log
+@Fixed clarity in libmdocml.c.
+Fixed debugging messages.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.6 2008/11/23 22:30:53 kristaps Exp $ */
+d202 1
+@
+
+
+1.6
+log
+@Considerable improvements across the board.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.5 2008/11/23 16:53:18 kristaps Exp $ */
+d30 1
+a30 1
+#define	BUFFER_LINE	 BUFSIZ
+d36 1
+d174 1
+a174 1
+	case (MD_DUMMY):
+a176 2
+	default:
+		abort();
+d179 1
+a179 6
+	/* LINTED */
+	for (pos = 0; ; ) {
+		if (-1 == (sz = md_buf_fill(rbuf)))
+			return(md_run_leave(args, mbuf, rbuf, -1, p));
+		else if (0 == sz)
+			break;
+d181 8
+a188 9
+		for (i = 0; i < sz; i++) {
+			if ('\n' == rbuf->buf[i]) {
+				if ( ! (*fp)(args, mbuf, rbuf, line, pos, p))
+					return(md_run_leave(args, mbuf, rbuf,
+								-1, p));
+				rbuf->line++;
+				pos = 0;
+				continue;
+			}
+d190 2
+a196 1
+
+d201 5
+d208 2
+a209 4
+	if (0 != pos && ! (*fp)(args, mbuf, rbuf, line, pos, p))
+		return(md_run_leave(args, mbuf, rbuf, -1, p));
+
+	return(md_run_leave(args, mbuf, rbuf, 0, p));
+@
+
+
+1.5
+log
+@Segmentation into html and dummy parsers.
+Initial recursive-descent parser in place for html/ml parser.
+Parsing of title tags more-or-less in place.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.4 2008/11/23 11:05:25 kristaps Exp $ */
+d138 1
+a138 1
+		if ( ! md_exit_html4_strict(args, mbuf, rbuf, data))
+d238 1
+a238 2
+		if ( ! md_init_html4_strict
+				(args, &mbuf, &rbuf, &data))
+@
+
+
+1.4
+log
+@Initial foray into roff-parsing.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.3 2008/11/22 20:15:34 kristaps Exp $ */
+d28 1
+d32 6
+a37 49
+struct	md_rbuf {
+	int		 fd;
+	char		*name;
+	char		*buf;
+	size_t		 bufsz;
+	size_t		 line;
+};
+
+struct	md_mbuf {
+	int		 fd;
+	char		*name;
+	char		*buf;
+	size_t		 bufsz;
+	size_t		 pos;
+};
+
+typedef int (*md_line)	(const struct md_args *, struct md_mbuf *, 
+				const struct md_rbuf *,
+				const char *, size_t);
+typedef int (*md_init)	(const struct md_args *, struct md_mbuf *);
+typedef int (*md_exit)	(const struct md_args *, struct md_mbuf *);
+
+static int		 md_line_dummy(const struct md_args *,
+				struct md_mbuf *, 
+				const struct md_rbuf *, 
+				const char *, size_t);
+
+static int		 md_line_html4_strict(const struct md_args *,
+				struct md_mbuf *, 
+				const struct md_rbuf *,
+				const char *, size_t);
+static int		 md_init_html4_strict(const struct md_args *,
+				struct md_mbuf *);
+static int		 md_exit_html4_strict(const struct md_args *,
+				struct md_mbuf *);
+
+static int		 md_run_enter(const struct md_args *, 
+				struct md_mbuf *, struct md_rbuf *);
+static int		 md_run_leave(const struct md_args *, 
+				struct md_mbuf *, 
+				struct md_rbuf *, int);
+
+static ssize_t		 md_buf_fill(struct md_rbuf *);
+static int		 md_buf_flush(struct md_mbuf *);
+static int		 md_buf_putchar(struct md_mbuf *, char);
+static int		 md_buf_putstring(struct md_mbuf *, 
+				const char *);
+static int		 md_buf_puts(struct md_mbuf *, 
+				const char *, size_t);
+d84 1
+a84 1
+static int
+d91 1
+a91 1
+static int
+d98 1
+a98 1
+static int
+d128 2
+a129 2
+md_run_leave(const struct md_args *args, 
+		struct md_mbuf *mbuf, struct md_rbuf *rbuf, int c)
+d138 1
+a138 1
+		if ( ! md_exit_html4_strict(args, mbuf))
+d156 2
+a157 2
+md_run_enter(const struct md_args *args, 
+		struct md_mbuf *mbuf, struct md_rbuf *rbuf)
+d183 1
+a183 1
+			return(-1);
+d189 3
+a191 2
+				if ( ! (*fp)(args, mbuf, rbuf, line, pos))
+					return(-1);
+d205 1
+a205 1
+			return(-1);
+d209 2
+a210 2
+	if (0 != pos && ! (*fp)(args, mbuf, rbuf, line, pos))
+		return(-1);
+d212 1
+a212 1
+	return(md_run_leave(args, mbuf, rbuf, 0));
+d222 1
+d233 1
+d238 2
+a239 1
+		if ( ! md_init_html4_strict(args, &mbuf))
+d249 1
+a249 110
+	return(md_run_enter(args, &mbuf, &rbuf));
+}
+
+
+static int
+md_line_dummy(const struct md_args *args, struct md_mbuf *out, 
+		const struct md_rbuf *in, const char *buf, size_t sz)
+{
+
+	assert(buf);
+	assert(out);
+	assert(in);
+	assert(args);
+
+	if ( ! md_buf_puts(out, buf, sz))
+		return(0);
+	if ( ! md_buf_putchar(out, '\n'))
+		return(0);
+
+	return(1);
+}
+
+
+static int
+md_exit_html4_strict(const struct md_args *args, struct md_mbuf *out) 
+{
+	char		*tail;
+
+	assert(out);
+	assert(args);
+
+	tail =	"		</pre>\n"
+		"	</body>\n"
+		"</html>\n";
+
+	if ( ! md_buf_putstring(out, tail))
+		return(0);
+
+	return(1);
+}
+
+
+static int
+md_init_html4_strict(const struct md_args *args, struct md_mbuf *out) 
+{
+	char		*head;
+
+	assert(out);
+	assert(args);
+
+	head =	"<html>\n"
+		"	<head>\n"
+		"		<title>Manual Page</title>\n"
+		"	</head>\n"
+		"	<body>\n"
+		"		<pre>\n";
+
+	if ( ! md_buf_putstring(out, head))
+		return(0);
+
+	return(1);
+}
+
+
+struct md_roff_macro {
+	char		 name[2];
+	int		 flags;
+#define	MD_PARSED	(1 << 0)
+#define	MD_CALLABLE	(1 << 1)
+#define	MD_TITLE	(1 << 2)
+};
+
+struct md_roff_macro[] = {
+	{ "Dd",		MD_TITLE 	},
+	{ "Dt",		MD_TITLE 	},
+	{ "Os",		MD_TITLE 	},
+	{ "Sh",		MD_PARSED 	},
+};
+
+
+static int
+md_roff(struct md_mbuf *out, const struct md_rbuf *in, 
+		const char *buf, size_t sz)
+{
+
+	assert(out);
+	assert(in);
+	assert(buf);
+	assert(sz >= 1);
+}
+
+
+static int
+md_line_html4_strict(const struct md_args *args, struct md_mbuf *out, 
+		const struct md_rbuf *in, const char *buf, size_t sz)
+{
+
+	assert(args);
+	assert(in);
+
+	if (0 == sz) {
+		warnx("%s: blank line (line %zu)", in->name, in->line);
+		return(0);
+	}
+
+	if ('.' == *buf) {
+		return(1);
+	}
+	
+	return(md_buf_puts(out, buf, sz));
+@
+
+
+1.3
+log
+@Fuller seperation into mdocml/libmdocml.
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.2 2008/11/22 18:34:06 kristaps Exp $ */
+d76 2
+d134 7
+d311 1
+a311 1
+md_exit_html4_strict(const struct md_args *args, struct md_mbuf *p) 
+d313 1
+d315 1
+a315 1
+	assert(p);
+d317 8
+d330 1
+a330 1
+md_init_html4_strict(const struct md_args *args, struct md_mbuf *p) 
+d332 1
+d334 1
+a334 1
+	assert(p);
+d336 11
+d351 28
+a384 2
+	assert(buf);
+	assert(out);
+a385 1
+	(void)sz;
+d387 10
+a396 1
+	return(1);
+@
+
+
+1.2
+log
+@Putting md_run and friends into libmdocml (needs work to be useful).
+@
+text
+@d1 1
+a1 1
+/* $Id: libmdocml.c,v 1.1.1.1 2008/11/22 14:53:29 kristaps Exp $ */
+d31 25
+a55 1
+typedef int (*md_line)	(struct md_mbuf *, const struct md_rbuf *,
+d58 2
+a59 1
+static int		 md_line_dummy(struct md_mbuf *, 
+d62 11
+d80 1
+a80 1
+ssize_t
+d97 1
+a97 1
+int
+d124 1
+a124 1
+int
+d131 1
+a131 1
+int
+d160 31
+a190 2
+int
+md_run(enum md_type type, struct md_mbuf *out, struct md_rbuf *in)
+d195 1
+a195 1
+	md_line		 func;
+d197 15
+a211 8
+	assert(in);
+	assert(out); 
+
+	out->pos = 0;
+	in->line = 1;
+
+	assert(MD_DUMMY == type);
+	func = md_line_dummy;
+d215 2
+a216 2
+		if (-1 == (sz = md_buf_fill(in)))
+			return(1);
+d221 4
+a224 4
+			if ('\n' == in->buf[i]) {
+				if ((*func)(out, in, line, pos))
+					return(1);
+				in->line++;
+d231 1
+a231 1
+				line[pos++] = in->buf[i];
+d236 2
+a237 2
+					in->name, in->line);
+			return(1);
+d241 35
+a275 2
+	if (0 != pos && (*func)(out, in, line, pos))
+		return(1);
+d277 2
+a278 1
+	return(md_buf_flush(out) ? 0 : 1);
+d283 2
+a284 2
+md_line_dummy(struct md_mbuf *out, const struct md_rbuf *in,
+		const char *buf, size_t sz)
+d290 1
+d293 1
+a293 1
+		return(1);
+d295 19
+a313 1
+		return(1);
+d315 3
+a317 1
+	return(0);
+d321 13
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+/* $Id$ */
+d19 4
+d24 2
+d28 166
+@
+
+
+1.1.1.1
+log
+@Initial check-in of mdocml.
+@
+text
+@@

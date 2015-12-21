@@ -1,0 +1,55 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2011.12.15.12.05.19;	author kristaps;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2011.12.07.15.55.06;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Some presentation polish in man.cgi:
+
+ - include search bar above result page (I relent: it's annoying to
+   follow three links then press back three times to get a search page);
+ - make man.cgi.css into man-cgi.css so Apache isn't confused by two
+   handlers (css, cgi);
+ - finally consolidate example.style.css to be under the div.mandoc css
+   selector;
+ - put catman pages under div.catman;
+ - put search bar under div#mancgi;
+ - reflect this properly in the bundled CSS files.
+@
+text
+@@
+
+
+1.1
+log
+@Add skeleton man.cgi.css file.  I don't think this should become more
+complicated than this.  Also make the title be printed out in caps as it
+is in apropos(1) and whatis(1).
+@
+text
+@a0 6
+body		{ font-family: Helvetica,Arial, sans-serif;
+		  font-size: small; }
+fieldset	{ text-align: center; }
+input[name=expr] { width: 25%; }
+td.title	{ padding-right: 1em; 
+		  text-align: right; }
+@

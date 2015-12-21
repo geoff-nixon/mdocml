@@ -1,0 +1,4959 @@
+head	1.119;
+access;
+symbols
+	VERSION_1_13_3:1.112
+	VERSION_1_13_2:1.107
+	VERSION_1_12_4:1.97
+	VERSION_1_13_1:1.96
+	VERSION_1_12_3:1.90
+	VERSION_1_12_2:1.89
+	VERSION_1_12:1.97.0.2
+	VERSION_1_12_1:1.86
+	VERSION_1_12_0:1.82
+	VERSION_1_11_7:1.81
+	VERSION_1_11_6:1.80
+	VERSION_1_11_5:1.80
+	VERSION_1_11_4:1.78
+	VERSION_1_11_3:1.72
+	VERSION_1_11_2:1.70
+	VERSION_1_11_1:1.70
+	VERSION_1_10_10:1.70
+	VERSION_1_10_9:1.62
+	VERSION_1_10_8:1.57
+	VERSION_1_10_7:1.51
+	VERSION_1_10_6:1.45
+	VERSION_1_10_5:1.45
+	VERSION_1_10_5_PREPDF:1.45
+	VERSION_1_10_4:1.41
+	VERSION_1_10_3:1.40
+	VERSION_1_10_2:1.37
+	VERSION_1_10_1:1.36
+	VERSION_1_9_24:1.30
+	VERSION_1_9_25:1.30
+	VERSION_1_9_23:1.30
+	VERSION_1_9_22:1.30
+	VERSION_1_9_21:1.30
+	VERSION_1_9_20:1.30
+	VERSION_1_9_19:1.30
+	VERSION_1_9_18:1.30
+	VERSION_1_9_17:1.30
+	VERSION_1_9_16:1.28
+	VERSION_1_9_15:1.26
+	VERSION_1_9_15-pre2:1.25
+	VERSION_1_9_15-pre1:1.24
+	VERSION_1_9_14:1.24
+	VERSION_1_9_13:1.17
+	VERSION_1_9_12:1.17
+	VERSION_1_9_11:1.14
+	VERSION_1_9_10:1.14
+	VERSION_1_9_9:1.11
+	VERSION_1_9_8:1.9
+	VERSION_1_9_7:1.9
+	VERSION_1_9_6:1.1
+	VERSION_1_9_5:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.119
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.118;
+
+1.118
+date	2015.09.26.00.54.03;	author schwarze;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2015.04.18.17.53.21;	author schwarze;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2015.04.18.16.06.40;	author schwarze;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2015.04.02.23.48.19;	author schwarze;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2015.04.02.21.36.49;	author schwarze;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2015.03.03.21.11.34;	author schwarze;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2015.02.10.08.05.30;	author schwarze;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2015.01.30.22.04.44;	author schwarze;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2015.01.24.02.41.49;	author schwarze;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2014.12.23.09.31.46;	author schwarze;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2014.12.04.02.05.42;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2014.12.02.10.08.06;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2014.09.27.11.17.19;	author kristaps;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2014.09.27.10.56.18;	author kristaps;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2014.09.27.09.26.01;	author kristaps;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2014.09.27.09.20.03;	author kristaps;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2014.09.27.09.13.39;	author kristaps;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2014.09.27.09.05.57;	author kristaps;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2014.09.27.09.02.19;	author kristaps;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2014.08.01.19.25.52;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2014.04.23.16.08.33;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2014.04.20.20.18.12;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2014.03.08.15.50.41;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2013.10.17.20.54.58;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2012.11.17.00.26.33;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2012.06.02.20.16.23;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2012.05.27.17.39.28;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2012.01.03.15.16.24;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2011.12.04.00.44.12;	author schwarze;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2011.11.18.17.05.50;	author joerg;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2011.10.09.22.10.53;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2011.10.05.21.35.17;	author kristaps;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2011.08.18.09.16.01;	author kristaps;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2011.07.23.22.57.13;	author kristaps;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2011.07.21.11.34.53;	author kristaps;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2011.07.07.13.54.36;	author kristaps;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2011.07.07.13.26.25;	author kristaps;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2011.07.03.22.57.32;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2011.06.29.15.38.09;	author kristaps;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2011.06.18.20.34.08;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2011.06.18.17.58.48;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2011.05.17.11.34.31;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2011.05.17.11.19.45;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2011.03.07.01.35.51;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2011.02.09.09.52.47;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2011.02.06.21.44.36;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2011.01.17.00.21.29;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2011.01.13.14.30.13;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2011.01.12.15.41.09;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2011.01.12.15.31.17;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2011.01.12.10.43.22;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2011.01.07.13.20.58;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2011.01.04.10.31.15;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2011.01.04.10.29.41;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2011.01.04.01.23.18;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2011.01.01.12.59.17;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2010.12.24.00.46.49;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.12.22.09.51.27;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.12.17.08.26.42;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2010.12.17.00.18.29;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2010.12.15.17.19.41;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2010.12.08.10.58.22;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2010.12.06.15.31.44;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2010.12.06.15.31.19;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2010.12.06.14.12.48;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2010.12.06.14.07.01;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2010.12.06.13.53.07;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2010.12.05.16.14.16;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2010.07.23.12.27.28;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.07.22.23.53.54;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.07.22.23.03.15;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.07.07.15.04.54;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.06.27.16.18.13;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.06.27.15.52.41;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.06.26.15.36.37;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.05.26.14.03.54;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.05.17.10.50.32;	author joerg;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.05.15.22.44.04;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.05.15.20.51.40;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.05.15.15.54.39;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.03.24.20.10.53;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.03.23.11.30.48;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.03.22.14.03.03;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.03.22.05.59.32;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.01.29.14.39.38;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.01.01.17.14.28;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.11.16.08.46.59;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.11.16.06.07.49;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.11.15.06.53.59;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.11.15.06.45.31;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.11.14.19.23.58;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.11.14.11.58.36;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.11.10.12.03.30;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.10.30.18.53.08;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.10.28.08.00.18;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.10.27.04.50.15;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.10.26.08.18.16;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.10.24.05.45.04;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.10.22.18.55.32;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.10.18.19.03.36;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.10.13.10.57.25;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.10.09.07.10.37;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.10.08.23.00.15;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.10.07.12.35.23;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.10.04.15.24.54;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.10.04.10.24.31;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.10.04.09.35.26;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.10.03.19.57.53;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.10.03.15.08.09;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.09.21.14.56.57;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.119
+log
+@modernize style: "return" is not a function
+@
+text
+@/*	$Id: man_html.c,v 1.118 2015/09/26 00:54:03 schwarze Exp $ */
+/*
+ * Copyright (c) 2008-2012, 2014 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2013, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "mandoc_aux.h"
+#include "roff.h"
+#include "man.h"
+#include "out.h"
+#include "html.h"
+#include "main.h"
+
+/* TODO: preserve ident widths. */
+/* FIXME: have PD set the default vspace width. */
+
+#define	INDENT		  5
+
+#define	MAN_ARGS	  const struct roff_meta *man, \
+			  const struct roff_node *n, \
+			  struct mhtml *mh, \
+			  struct html *h
+
+struct	mhtml {
+	int		  fl;
+#define	MANH_LITERAL	 (1 << 0) /* literal context */
+};
+
+struct	htmlman {
+	int		(*pre)(MAN_ARGS);
+	int		(*post)(MAN_ARGS);
+};
+
+static	void		  print_bvspace(struct html *,
+				const struct roff_node *);
+static	void		  print_man_head(MAN_ARGS);
+static	void		  print_man_nodelist(MAN_ARGS);
+static	void		  print_man_node(MAN_ARGS);
+static	int		  a2width(const struct roff_node *,
+				struct roffsu *);
+static	int		  man_B_pre(MAN_ARGS);
+static	int		  man_HP_pre(MAN_ARGS);
+static	int		  man_IP_pre(MAN_ARGS);
+static	int		  man_I_pre(MAN_ARGS);
+static	int		  man_OP_pre(MAN_ARGS);
+static	int		  man_PP_pre(MAN_ARGS);
+static	int		  man_RS_pre(MAN_ARGS);
+static	int		  man_SH_pre(MAN_ARGS);
+static	int		  man_SM_pre(MAN_ARGS);
+static	int		  man_SS_pre(MAN_ARGS);
+static	int		  man_UR_pre(MAN_ARGS);
+static	int		  man_alt_pre(MAN_ARGS);
+static	int		  man_br_pre(MAN_ARGS);
+static	int		  man_ign_pre(MAN_ARGS);
+static	int		  man_in_pre(MAN_ARGS);
+static	int		  man_literal_pre(MAN_ARGS);
+static	void		  man_root_post(MAN_ARGS);
+static	void		  man_root_pre(MAN_ARGS);
+
+static	const struct htmlman mans[MAN_MAX] = {
+	{ man_br_pre, NULL }, /* br */
+	{ NULL, NULL }, /* TH */
+	{ man_SH_pre, NULL }, /* SH */
+	{ man_SS_pre, NULL }, /* SS */
+	{ man_IP_pre, NULL }, /* TP */
+	{ man_PP_pre, NULL }, /* LP */
+	{ man_PP_pre, NULL }, /* PP */
+	{ man_PP_pre, NULL }, /* P */
+	{ man_IP_pre, NULL }, /* IP */
+	{ man_HP_pre, NULL }, /* HP */
+	{ man_SM_pre, NULL }, /* SM */
+	{ man_SM_pre, NULL }, /* SB */
+	{ man_alt_pre, NULL }, /* BI */
+	{ man_alt_pre, NULL }, /* IB */
+	{ man_alt_pre, NULL }, /* BR */
+	{ man_alt_pre, NULL }, /* RB */
+	{ NULL, NULL }, /* R */
+	{ man_B_pre, NULL }, /* B */
+	{ man_I_pre, NULL }, /* I */
+	{ man_alt_pre, NULL }, /* IR */
+	{ man_alt_pre, NULL }, /* RI */
+	{ man_br_pre, NULL }, /* sp */
+	{ man_literal_pre, NULL }, /* nf */
+	{ man_literal_pre, NULL }, /* fi */
+	{ NULL, NULL }, /* RE */
+	{ man_RS_pre, NULL }, /* RS */
+	{ man_ign_pre, NULL }, /* DT */
+	{ man_ign_pre, NULL }, /* UC */
+	{ man_ign_pre, NULL }, /* PD */
+	{ man_ign_pre, NULL }, /* AT */
+	{ man_in_pre, NULL }, /* in */
+	{ man_ign_pre, NULL }, /* ft */
+	{ man_OP_pre, NULL }, /* OP */
+	{ man_literal_pre, NULL }, /* EX */
+	{ man_literal_pre, NULL }, /* EE */
+	{ man_UR_pre, NULL }, /* UR */
+	{ NULL, NULL }, /* UE */
+	{ man_ign_pre, NULL }, /* ll */
+};
+
+
+/*
+ * Printing leading vertical space before a block.
+ * This is used for the paragraph macros.
+ * The rules are pretty simple, since there's very little nesting going
+ * on here.  Basically, if we're the first within another block (SS/SH),
+ * then don't emit vertical space.  If we are (RS), then do.  If not the
+ * first, print it.
+ */
+static void
+print_bvspace(struct html *h, const struct roff_node *n)
+{
+
+	if (n->body && n->body->child)
+		if (n->body->child->type == ROFFT_TBL)
+			return;
+
+	if (n->parent->type == ROFFT_ROOT || n->parent->tok != MAN_RS)
+		if (NULL == n->prev)
+			return;
+
+	print_paragraph(h);
+}
+
+void
+html_man(void *arg, const struct roff_man *man)
+{
+	struct mhtml	 mh;
+	struct htmlpair	 tag;
+	struct html	*h;
+	struct tag	*t, *tt;
+
+	memset(&mh, 0, sizeof(mh));
+	PAIR_CLASS_INIT(&tag, "mandoc");
+	h = (struct html *)arg;
+
+	if ( ! (HTML_FRAGMENT & h->oflags)) {
+		print_gen_decls(h);
+		t = print_otag(h, TAG_HTML, 0, NULL);
+		tt = print_otag(h, TAG_HEAD, 0, NULL);
+		print_man_head(&man->meta, man->first, &mh, h);
+		print_tagq(h, tt);
+		print_otag(h, TAG_BODY, 0, NULL);
+		print_otag(h, TAG_DIV, 1, &tag);
+	} else
+		t = print_otag(h, TAG_DIV, 1, &tag);
+
+	print_man_nodelist(&man->meta, man->first, &mh, h);
+	print_tagq(h, t);
+	putchar('\n');
+}
+
+static void
+print_man_head(MAN_ARGS)
+{
+
+	print_gen_head(h);
+	assert(man->title);
+	assert(man->msec);
+	bufcat_fmt(h, "%s(%s)", man->title, man->msec);
+	print_otag(h, TAG_TITLE, 0, NULL);
+	print_text(h, h->buf);
+}
+
+static void
+print_man_nodelist(MAN_ARGS)
+{
+
+	while (n != NULL) {
+		print_man_node(man, n, mh, h);
+		n = n->next;
+	}
+}
+
+static void
+print_man_node(MAN_ARGS)
+{
+	int		 child;
+	struct tag	*t;
+
+	child = 1;
+	t = h->tags.head;
+
+	switch (n->type) {
+	case ROFFT_ROOT:
+		man_root_pre(man, n, mh, h);
+		break;
+	case ROFFT_TEXT:
+		if ('\0' == *n->string) {
+			print_paragraph(h);
+			return;
+		}
+		if (n->flags & MAN_LINE && (*n->string == ' ' ||
+		    (n->prev != NULL && mh->fl & MANH_LITERAL &&
+		     ! (h->flags & HTML_NONEWLINE))))
+			print_otag(h, TAG_BR, 0, NULL);
+		print_text(h, n->string);
+		return;
+	case ROFFT_EQN:
+		if (n->flags & MAN_LINE)
+			putchar('\n');
+		print_eqn(h, n->eqn);
+		break;
+	case ROFFT_TBL:
+		/*
+		 * This will take care of initialising all of the table
+		 * state data for the first table, then tearing it down
+		 * for the last one.
+		 */
+		print_tbl(h, n->span);
+		return;
+	default:
+		/*
+		 * Close out scope of font prior to opening a macro
+		 * scope.
+		 */
+		if (HTMLFONT_NONE != h->metac) {
+			h->metal = h->metac;
+			h->metac = HTMLFONT_NONE;
+		}
+
+		/*
+		 * Close out the current table, if it's open, and unset
+		 * the "meta" table state.  This will be reopened on the
+		 * next table element.
+		 */
+		if (h->tblt) {
+			print_tblclose(h);
+			t = h->tags.head;
+		}
+		if (mans[n->tok].pre)
+			child = (*mans[n->tok].pre)(man, n, mh, h);
+		break;
+	}
+
+	if (child && n->child)
+		print_man_nodelist(man, n->child, mh, h);
+
+	/* This will automatically close out any font scope. */
+	print_stagq(h, t);
+
+	switch (n->type) {
+	case ROFFT_ROOT:
+		man_root_post(man, n, mh, h);
+		break;
+	case ROFFT_EQN:
+		break;
+	default:
+		if (mans[n->tok].post)
+			(*mans[n->tok].post)(man, n, mh, h);
+		break;
+	}
+}
+
+static int
+a2width(const struct roff_node *n, struct roffsu *su)
+{
+
+	if (n->type != ROFFT_TEXT)
+		return 0;
+	if (a2roffsu(n->string, su, SCALE_EN))
+		return 1;
+
+	return 0;
+}
+
+static void
+man_root_pre(MAN_ARGS)
+{
+	struct htmlpair	 tag;
+	struct tag	*t, *tt;
+	char		*title;
+
+	assert(man->title);
+	assert(man->msec);
+	mandoc_asprintf(&title, "%s(%s)", man->title, man->msec);
+
+	PAIR_CLASS_INIT(&tag, "head");
+	t = print_otag(h, TAG_TABLE, 1, &tag);
+
+	print_otag(h, TAG_TBODY, 0, NULL);
+
+	tt = print_otag(h, TAG_TR, 0, NULL);
+
+	PAIR_CLASS_INIT(&tag, "head-ltitle");
+	print_otag(h, TAG_TD, 1, &tag);
+	print_text(h, title);
+	print_stagq(h, tt);
+
+	PAIR_CLASS_INIT(&tag, "head-vol");
+	print_otag(h, TAG_TD, 1, &tag);
+	if (NULL != man->vol)
+		print_text(h, man->vol);
+	print_stagq(h, tt);
+
+	PAIR_CLASS_INIT(&tag, "head-rtitle");
+	print_otag(h, TAG_TD, 1, &tag);
+	print_text(h, title);
+	print_tagq(h, t);
+	free(title);
+}
+
+static void
+man_root_post(MAN_ARGS)
+{
+	struct htmlpair	 tag;
+	struct tag	*t, *tt;
+
+	PAIR_CLASS_INIT(&tag, "foot");
+	t = print_otag(h, TAG_TABLE, 1, &tag);
+
+	tt = print_otag(h, TAG_TR, 0, NULL);
+
+	PAIR_CLASS_INIT(&tag, "foot-date");
+	print_otag(h, TAG_TD, 1, &tag);
+
+	assert(man->date);
+	print_text(h, man->date);
+	print_stagq(h, tt);
+
+	PAIR_CLASS_INIT(&tag, "foot-os");
+	print_otag(h, TAG_TD, 1, &tag);
+
+	if (man->os)
+		print_text(h, man->os);
+	print_tagq(h, t);
+}
+
+
+static int
+man_br_pre(MAN_ARGS)
+{
+	struct roffsu	 su;
+	struct htmlpair	 tag;
+
+	SCALE_VS_INIT(&su, 1);
+
+	if (MAN_sp == n->tok) {
+		if (NULL != (n = n->child))
+			if ( ! a2roffsu(n->string, &su, SCALE_VS))
+				su.scale = 1.0;
+	} else
+		su.scale = 0.0;
+
+	bufinit(h);
+	bufcat_su(h, "height", &su);
+	PAIR_STYLE_INIT(&tag, h);
+	print_otag(h, TAG_DIV, 1, &tag);
+
+	/* So the div isn't empty: */
+	print_text(h, "\\~");
+
+	return 0;
+}
+
+static int
+man_SH_pre(MAN_ARGS)
+{
+	struct htmlpair	 tag;
+
+	if (n->type == ROFFT_BLOCK) {
+		mh->fl &= ~MANH_LITERAL;
+		PAIR_CLASS_INIT(&tag, "section");
+		print_otag(h, TAG_DIV, 1, &tag);
+		return 1;
+	} else if (n->type == ROFFT_BODY)
+		return 1;
+
+	print_otag(h, TAG_H1, 0, NULL);
+	return 1;
+}
+
+static int
+man_alt_pre(MAN_ARGS)
+{
+	const struct roff_node	*nn;
+	int		 i, savelit;
+	enum htmltag	 fp;
+	struct tag	*t;
+
+	if ((savelit = mh->fl & MANH_LITERAL))
+		print_otag(h, TAG_BR, 0, NULL);
+
+	mh->fl &= ~MANH_LITERAL;
+
+	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
+		t = NULL;
+		switch (n->tok) {
+		case MAN_BI:
+			fp = i % 2 ? TAG_I : TAG_B;
+			break;
+		case MAN_IB:
+			fp = i % 2 ? TAG_B : TAG_I;
+			break;
+		case MAN_RI:
+			fp = i % 2 ? TAG_I : TAG_MAX;
+			break;
+		case MAN_IR:
+			fp = i % 2 ? TAG_MAX : TAG_I;
+			break;
+		case MAN_BR:
+			fp = i % 2 ? TAG_MAX : TAG_B;
+			break;
+		case MAN_RB:
+			fp = i % 2 ? TAG_B : TAG_MAX;
+			break;
+		default:
+			abort();
+		}
+
+		if (i)
+			h->flags |= HTML_NOSPACE;
+
+		if (TAG_MAX != fp)
+			t = print_otag(h, fp, 0, NULL);
+
+		print_man_node(man, nn, mh, h);
+
+		if (t)
+			print_tagq(h, t);
+	}
+
+	if (savelit)
+		mh->fl |= MANH_LITERAL;
+
+	return 0;
+}
+
+static int
+man_SM_pre(MAN_ARGS)
+{
+
+	print_otag(h, TAG_SMALL, 0, NULL);
+	if (MAN_SB == n->tok)
+		print_otag(h, TAG_B, 0, NULL);
+	return 1;
+}
+
+static int
+man_SS_pre(MAN_ARGS)
+{
+	struct htmlpair	 tag;
+
+	if (n->type == ROFFT_BLOCK) {
+		mh->fl &= ~MANH_LITERAL;
+		PAIR_CLASS_INIT(&tag, "subsection");
+		print_otag(h, TAG_DIV, 1, &tag);
+		return 1;
+	} else if (n->type == ROFFT_BODY)
+		return 1;
+
+	print_otag(h, TAG_H2, 0, NULL);
+	return 1;
+}
+
+static int
+man_PP_pre(MAN_ARGS)
+{
+
+	if (n->type == ROFFT_HEAD)
+		return 0;
+	else if (n->type == ROFFT_BLOCK)
+		print_bvspace(h, n);
+
+	return 1;
+}
+
+static int
+man_IP_pre(MAN_ARGS)
+{
+	const struct roff_node	*nn;
+
+	if (n->type == ROFFT_BODY) {
+		print_otag(h, TAG_DD, 0, NULL);
+		return 1;
+	} else if (n->type != ROFFT_HEAD) {
+		print_otag(h, TAG_DL, 0, NULL);
+		return 1;
+	}
+
+	/* FIXME: width specification. */
+
+	print_otag(h, TAG_DT, 0, NULL);
+
+	/* For IP, only print the first header element. */
+
+	if (MAN_IP == n->tok && n->child)
+		print_man_node(man, n->child, mh, h);
+
+	/* For TP, only print next-line header elements. */
+
+	if (MAN_TP == n->tok) {
+		nn = n->child;
+		while (NULL != nn && 0 == (MAN_LINE & nn->flags))
+			nn = nn->next;
+		while (NULL != nn) {
+			print_man_node(man, nn, mh, h);
+			nn = nn->next;
+		}
+	}
+
+	return 0;
+}
+
+static int
+man_HP_pre(MAN_ARGS)
+{
+	struct htmlpair	 tag[2];
+	struct roffsu	 su;
+	const struct roff_node *np;
+
+	if (n->type == ROFFT_HEAD)
+		return 0;
+	else if (n->type != ROFFT_BLOCK)
+		return 1;
+
+	np = n->head->child;
+
+	if (NULL == np || ! a2width(np, &su))
+		SCALE_HS_INIT(&su, INDENT);
+
+	bufinit(h);
+
+	print_bvspace(h, n);
+	bufcat_su(h, "margin-left", &su);
+	su.scale = -su.scale;
+	bufcat_su(h, "text-indent", &su);
+	PAIR_STYLE_INIT(&tag[0], h);
+	PAIR_CLASS_INIT(&tag[1], "spacer");
+	print_otag(h, TAG_DIV, 2, tag);
+	return 1;
+}
+
+static int
+man_OP_pre(MAN_ARGS)
+{
+	struct tag	*tt;
+	struct htmlpair	 tag;
+
+	print_text(h, "[");
+	h->flags |= HTML_NOSPACE;
+	PAIR_CLASS_INIT(&tag, "opt");
+	tt = print_otag(h, TAG_SPAN, 1, &tag);
+
+	if (NULL != (n = n->child)) {
+		print_otag(h, TAG_B, 0, NULL);
+		print_text(h, n->string);
+	}
+
+	print_stagq(h, tt);
+
+	if (NULL != n && NULL != n->next) {
+		print_otag(h, TAG_I, 0, NULL);
+		print_text(h, n->next->string);
+	}
+
+	print_stagq(h, tt);
+	h->flags |= HTML_NOSPACE;
+	print_text(h, "]");
+	return 0;
+}
+
+static int
+man_B_pre(MAN_ARGS)
+{
+
+	print_otag(h, TAG_B, 0, NULL);
+	return 1;
+}
+
+static int
+man_I_pre(MAN_ARGS)
+{
+
+	print_otag(h, TAG_I, 0, NULL);
+	return 1;
+}
+
+static int
+man_literal_pre(MAN_ARGS)
+{
+
+	if (MAN_fi == n->tok || MAN_EE == n->tok) {
+		print_otag(h, TAG_BR, 0, NULL);
+		mh->fl &= ~MANH_LITERAL;
+	} else
+		mh->fl |= MANH_LITERAL;
+
+	return 0;
+}
+
+static int
+man_in_pre(MAN_ARGS)
+{
+
+	print_otag(h, TAG_BR, 0, NULL);
+	return 0;
+}
+
+static int
+man_ign_pre(MAN_ARGS)
+{
+
+	return 0;
+}
+
+static int
+man_RS_pre(MAN_ARGS)
+{
+	struct htmlpair	 tag;
+	struct roffsu	 su;
+
+	if (n->type == ROFFT_HEAD)
+		return 0;
+	else if (n->type == ROFFT_BODY)
+		return 1;
+
+	SCALE_HS_INIT(&su, INDENT);
+	if (n->head->child)
+		a2width(n->head->child, &su);
+
+	bufinit(h);
+	bufcat_su(h, "margin-left", &su);
+	PAIR_STYLE_INIT(&tag, h);
+	print_otag(h, TAG_DIV, 1, &tag);
+	return 1;
+}
+
+static int
+man_UR_pre(MAN_ARGS)
+{
+	struct htmlpair		 tag[2];
+
+	n = n->child;
+	assert(n->type == ROFFT_HEAD);
+	if (n->nchild) {
+		assert(n->child->type == ROFFT_TEXT);
+		PAIR_CLASS_INIT(&tag[0], "link-ext");
+		PAIR_HREF_INIT(&tag[1], n->child->string);
+		print_otag(h, TAG_A, 2, tag);
+	}
+
+	assert(n->next->type == ROFFT_BODY);
+	if (n->next->nchild)
+		n = n->next;
+
+	print_man_nodelist(man, n->child, mh, h);
+
+	return 0;
+}
+@
+
+
+1.118
+log
+@/* NOTREACHED */ after abort() is silly, delete it
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.117 2015/04/18 17:53:21 schwarze Exp $ */
+d281 1
+a281 1
+		return(0);
+d283 1
+a283 1
+		return(1);
+d285 1
+a285 1
+	return(0);
+d374 1
+a374 1
+	return(0);
+d386 1
+a386 1
+		return(1);
+d388 1
+a388 1
+		return(1);
+d391 1
+a391 1
+	return(1);
+d447 1
+a447 1
+	return(0);
+d457 1
+a457 1
+	return(1);
+d469 1
+a469 1
+		return(1);
+d471 1
+a471 1
+		return(1);
+d474 1
+a474 1
+	return(1);
+d482 1
+a482 1
+		return(0);
+d486 1
+a486 1
+	return(1);
+d496 1
+a496 1
+		return(1);
+d499 1
+a499 1
+		return(1);
+d523 1
+a523 1
+	return(0);
+d534 1
+a534 1
+		return(0);
+d536 1
+a536 1
+		return(1);
+d552 1
+a552 1
+	return(1);
+d581 1
+a581 1
+	return(0);
+d589 1
+a589 1
+	return(1);
+d597 1
+a597 1
+	return(1);
+d610 1
+a610 1
+	return(0);
+d618 1
+a618 1
+	return(0);
+d625 1
+a625 1
+	return(0);
+d635 1
+a635 1
+		return(0);
+d637 1
+a637 1
+		return(1);
+d647 1
+a647 1
+	return(1);
+d670 1
+a670 1
+	return(0);
+@
+
+
+1.117
+log
+@Delete the wrapper functions mdoc_meta(), man_meta(), mdoc_node(),
+man_node() from the mandoc(3) semi-public interface and the internal
+wrapper functions print_mdoc() and print_man() from the HTML formatters.
+Minus 60 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.116 2015/04/18 16:06:40 schwarze Exp $ */
+a429 1
+			/* NOTREACHED */
+@
+
+
+1.116
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.115 2015/04/02 23:48:19 schwarze Exp $ */
+a56 1
+static	void		  print_man(MAN_ARGS);
+d150 2
+a151 9
+
+	memset(&mh, 0, sizeof(struct mhtml));
+	print_man(man_meta(man), man_node(man), &mh, (struct html *)arg);
+	putchar('\n');
+}
+
+static void
+print_man(MAN_ARGS)
+{
+a152 1
+	struct htmlpair	 tag;
+d154 1
+d156 1
+d162 1
+a162 1
+		print_man_head(man, n, mh, h);
+d169 1
+a169 1
+	print_man_nodelist(man, n, mh, h);
+d171 1
+@
+
+
+1.115
+log
+@Third step towards parser unification:
+Replace struct mdoc_meta and struct man_meta by a unified struct roff_meta.
+Written of the train from London to Exeter on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.114 2015/04/02 22:48:17 schwarze Exp $ */
+d148 1
+a148 1
+html_man(void *arg, const struct man *man)
+@
+
+
+1.114
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.113 2015/04/02 21:36:49 schwarze Exp $ */
+d40 1
+a40 1
+#define	MAN_ARGS	  const struct man_meta *man, \
+d351 2
+a352 2
+	if (man->source)
+		print_text(h, man->source);
+@
+
+
+1.113
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.112 2015/03/03 21:11:34 schwarze Exp $ */
+d41 1
+a41 1
+			  const struct man_node *n, \
+d56 1
+a56 1
+				const struct man_node *);
+d61 1
+a61 1
+static	int		  a2width(const struct man_node *,
+d133 1
+a133 1
+print_bvspace(struct html *h, const struct man_node *n)
+d283 1
+a283 1
+a2width(const struct man_node *n, struct roffsu *su)
+d403 1
+a403 1
+	const struct man_node	*nn;
+d499 1
+a499 1
+	const struct man_node	*nn;
+d538 1
+a538 1
+	const struct man_node *np;
+@
+
+
+1.112
+log
+@If an eqn(7) starts on a new input line, be sure to output whitespace
+in front of it.  Issue found by tedu@@ in glOrtho(3).
+
+There are also cases of excessive whitespace before and after
+equations.  This patch neither fixes them nor makes them worse.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.111 2015/02/10 08:05:30 schwarze Exp $ */
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d29 1
+d137 1
+a137 1
+		if (MAN_TBL == n->body->child->type)
+d140 1
+a140 1
+	if (MAN_ROOT == n->parent->type || MAN_RS != n->parent->tok)
+d212 1
+a212 1
+	case MAN_ROOT:
+d215 1
+a215 1
+	case MAN_TEXT:
+d226 1
+a226 1
+	case MAN_EQN:
+d231 1
+a231 1
+	case MAN_TBL:
+d270 1
+a270 1
+	case MAN_ROOT:
+d273 1
+a273 1
+	case MAN_EQN:
+d286 1
+a286 1
+	if (MAN_TEXT != n->type)
+d388 1
+a388 1
+	if (MAN_BLOCK == n->type) {
+d393 1
+a393 1
+	} else if (MAN_BODY == n->type)
+d472 1
+a472 1
+	if (MAN_BLOCK == n->type) {
+d477 1
+a477 1
+	} else if (MAN_BODY == n->type)
+d488 1
+a488 1
+	if (MAN_HEAD == n->type)
+d490 1
+a490 1
+	else if (MAN_BLOCK == n->type)
+d501 1
+a501 1
+	if (MAN_BODY == n->type) {
+d504 1
+a504 1
+	} else if (MAN_HEAD != n->type) {
+d540 1
+a540 1
+	if (MAN_HEAD == n->type)
+d542 1
+a542 1
+	else if (MAN_BLOCK != n->type)
+d641 1
+a641 1
+	if (MAN_HEAD == n->type)
+d643 1
+a643 1
+	else if (MAN_BODY == n->type)
+d663 1
+a663 1
+	assert(MAN_HEAD == n->type);
+d665 1
+a665 1
+		assert(MAN_TEXT == n->child->type);
+d671 1
+a671 1
+	assert(MAN_BODY == n->next->type);
+@
+
+
+1.111
+log
+@trim trailing white space, no code change;
+from Svyatoslav Mishyn <juef at openmailboxd dot org>, Crux Linux
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.110 2015/01/30 22:04:44 schwarze Exp $ */
+d226 2
+@
+
+
+1.110
+log
+@Have pity on the poor stack.
+Replace tail recursion by iteration when walking the syntax trees.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.109 2015/01/24 02:41:49 schwarze Exp $ */
+d219 1
+a219 1
+		if (n->flags & MAN_LINE && (*n->string == ' ' || 
+@
+
+
+1.109
+log
+@Strangely, ignoring the roff(7) .na request was implemented in the man(7)
+parser.  Simplify the code by moving it into the roff(7) parser, also
+making it work for mdoc(7).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.108 2014/12/23 09:31:46 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d195 4
+a198 3
+	print_man_node(man, n, mh, h);
+	if (n->next)
+		print_man_nodelist(man, n->next, mh, h);
+@
+
+
+1.108
+log
+@some scaling unit fixes:
+- .sp with an invalid argument is .sp 1v, not .sp 0v
+- in man(1), trailing garbage doesn't make scaling units invalid
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.107 2014/12/04 02:05:42 schwarze Exp $ */
+a102 1
+	{ man_ign_pre, NULL }, /* na */
+@
+
+
+1.107
+log
+@fix handling of roff requests having a default scale other than "n",
+in particular .sp which uses "v", when the scale is not specified;
+cures groff-mandoc differences in about a dozen Xenocara manuals
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.106 2014/12/02 10:08:06 schwarze Exp $ */
+d365 1
+a365 1
+				SCALE_VS_INIT(&su, atoi(n->string));
+@
+
+
+1.106
+log
+@Fix the implementation and documentation of \c (continue text input line).
+In particular, make it work in no-fill mode, too.
+Reminded by Carsten dot Kunze at arcor dot de (Heirloom roff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.105 2014/12/01 08:05:52 schwarze Exp $ */
+d285 1
+a285 1
+	if (a2roffsu(n->string, su, SCALE_BU))
+@
+
+
+1.105
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.104 2014/09/27 11:17:19 kristaps Exp $ */
+a214 5
+		/*
+		 * If we have a blank line, output a vertical space.
+		 * If we have a space as the first character, break
+		 * before printing the line's data.
+		 */
+d219 3
+a221 2
+
+		if (' ' == *n->string && MAN_LINE & n->flags)
+a222 3
+		else if (MANH_LITERAL & mh->fl && n->prev)
+			print_otag(h, TAG_BR, 0, NULL);
+
+@
+
+
+1.104
+log
+@Don't pretend we have a separate XHTML and HTML mode any more.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.103 2014/09/27 10:56:18 kristaps Exp $ */
+a27 1
+#include "mandoc.h"
+d29 1
+a31 1
+#include "man.h"
+@
+
+
+1.103
+log
+@Remove <p> in favour of <div class="spacer">.
+This is good because <p> is brittle: it can't appear within other block
+macros.
+This fixes a regression of the original HTML5 patch as noted by schwarze@@
+on the tech@@ list, 14/8/2014.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.102 2014/09/27 09:26:01 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.102
+log
+@Remove last hard-coded width attribute.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.101 2014/09/27 09:20:03 kristaps Exp $ */
+d145 1
+a145 1
+	print_otag(h, TAG_P, 0, NULL);
+d222 1
+a222 1
+			print_otag(h, TAG_P, 0, NULL);
+d541 1
+a541 1
+	struct htmlpair	 tag;
+d561 3
+a563 2
+	PAIR_STYLE_INIT(&tag, h);
+	print_otag(h, TAG_P, 1, &tag);
+@
+
+
+1.101
+log
+@HTML5-isation: remove more alignments.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.100 2014/09/27 09:13:39 kristaps Exp $ */
+a311 4
+	PAIR_INIT(&tag, ATTR_WIDTH, "30%");
+	print_otag(h, TAG_COL, 1, &tag);
+	print_otag(h, TAG_COL, 1, &tag);
+	print_otag(h, TAG_COL, 1, &tag);
+a342 3
+	PAIR_INIT(&tag, ATTR_WIDTH, "50%");
+	print_otag(h, TAG_COL, 1, &tag);
+	print_otag(h, TAG_COL, 1, &tag);
+@
+
+
+1.100
+log
+@Continue in HTML5-ing by kicking out some hard-coded alignments.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.99 2014/09/27 09:05:57 kristaps Exp $ */
+d302 1
+a302 1
+	struct htmlpair	 tag[2];
+d310 6
+a315 6
+	PAIR_CLASS_INIT(&tag[0], "head");
+	t = print_otag(h, TAG_TABLE, 1, tag);
+	PAIR_INIT(&tag[0], ATTR_WIDTH, "30%");
+	print_otag(h, TAG_COL, 1, tag);
+	print_otag(h, TAG_COL, 1, tag);
+	print_otag(h, TAG_COL, 1, tag);
+d321 2
+a322 2
+	PAIR_CLASS_INIT(&tag[0], "head-ltitle");
+	print_otag(h, TAG_TD, 1, tag);
+d326 2
+a327 3
+	PAIR_CLASS_INIT(&tag[0], "head-vol");
+	PAIR_INIT(&tag[1], ATTR_ALIGN, "center");
+	print_otag(h, TAG_TD, 2, tag);
+d332 2
+a333 2
+	PAIR_CLASS_INIT(&tag[0], "head-rtitle");
+	print_otag(h, TAG_TD, 1, tag);
+d342 1
+a342 1
+	struct htmlpair	 tag[2];
+d345 5
+a349 5
+	PAIR_CLASS_INIT(&tag[0], "foot");
+	t = print_otag(h, TAG_TABLE, 1, tag);
+	PAIR_INIT(&tag[0], ATTR_WIDTH, "50%");
+	print_otag(h, TAG_COL, 1, tag);
+	print_otag(h, TAG_COL, 1, tag);
+d353 2
+a354 2
+	PAIR_CLASS_INIT(&tag[0], "foot-date");
+	print_otag(h, TAG_TD, 1, tag);
+d360 2
+a361 2
+	PAIR_CLASS_INIT(&tag[0], "foot-os");
+	print_otag(h, TAG_TD, 1, tag);
+@
+
+
+1.99
+log
+@Kick out "summary" attribute, which isn't HTML5.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.98 2014/09/27 09:02:19 kristaps Exp $ */
+d334 1
+a334 2
+	PAIR_INIT(&tag[1], ATTR_ALIGN, "right");
+	print_otag(h, TAG_TD, 2, tag);
+d362 1
+a362 2
+	PAIR_INIT(&tag[1], ATTR_ALIGN, "right");
+	print_otag(h, TAG_TD, 2, tag);
+@
+
+
+1.98
+log
+@First, add space for default styling for HTML5 (non-fragment) output.
+This uses a <style /> block right before the <link /> for the stylesheet.
+Use this to kick out hardcoded header and footer table widths.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.97 2014/08/10 23:54:41 schwarze Exp $ */
+d310 2
+a311 3
+	PAIR_SUMMARY_INIT(&tag[0], "Document Header");
+	PAIR_CLASS_INIT(&tag[1], "head");
+	t = print_otag(h, TAG_TABLE, 2, tag);
+d347 2
+a348 3
+	PAIR_SUMMARY_INIT(&tag[0], "Document Footer");
+	PAIR_CLASS_INIT(&tag[1], "foot");
+	t = print_otag(h, TAG_TABLE, 2, tag);
+@
+
+
+1.97
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.96 2014/08/01 19:25:52 schwarze Exp $ */
+d302 1
+a302 1
+	struct htmlpair	 tag[3];
+d312 1
+a312 2
+	PAIR_INIT(&tag[2], ATTR_WIDTH, "100%");
+	t = print_otag(h, TAG_TABLE, 3, tag);
+d345 1
+a345 1
+	struct htmlpair	 tag[3];
+d350 1
+a350 2
+	PAIR_INIT(&tag[2], ATTR_WIDTH, "100%");
+	t = print_otag(h, TAG_TABLE, 3, tag);
+@
+
+
+1.96
+log
+@Clarity with respect to floating point handling:
+Write double constants as double rather than integer literals.
+Remove useless explicit (double) cast done at one place and nowhere else.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.95 2014/04/23 16:08:33 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+a18 1
+#endif
+@
+
+
+1.95
+log
+@Audit strlcpy(3)/strlcat(3) usage.
+
+* Repair three instances of silent truncation, use asprintf(3).
+* Change two instances of strlen(3)+malloc(3)+strlcpy(3)+strlcat(3)+...
+to use asprintf(3) instead to make them less error prone.
+* Cast the return value of four instances where the destination
+buffer is known to be large enough to (void).
+* Completely remove three useless instances of strlcpy(3)/strlcat(3).
+* Mark two places in -Thtml with XXX that can cause information loss
+and crashes but are not easy to fix, requiring design changes of
+some internal interfaces.
+* The file mandocdb.c remains to be audited.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.94 2014/04/20 20:18:12 schwarze Exp $ */
+d391 1
+a391 1
+		su.scale = 0;
+@
+
+
+1.94
+log
+@fix unchecked snprintf(3) in page header printing:
+the length of the title is unknown, and speed doesn't matter here,
+so use asprintf/free rather than a static buffer
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.93 2014/04/20 16:46:04 schwarze Exp $ */
+a303 1
+	char		 b[BUFSIZ];
+a307 4
+	b[0] = 0;
+	if (man->vol)
+		(void)strlcat(b, man->vol, BUFSIZ);
+
+d333 2
+a334 1
+	print_text(h, b);
+@
+
+
+1.93
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.92 2014/03/30 19:47:48 schwarze Exp $ */
+d31 1
+d304 1
+d307 1
+a307 1
+	char		 b[BUFSIZ], title[BUFSIZ];
+d315 1
+a315 1
+	snprintf(title, BUFSIZ - 1, "%s(%s)", man->title, man->msec);
+d346 1
+@
+
+
+1.92
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.91 2014/03/08 15:50:41 schwarze Exp $ */
+d56 1
+a56 1
+static	void		  print_bvspace(struct html *, 
+d93 1
+a93 1
+	{ man_HP_pre, NULL }, /* HP */ 
+d125 1
+d160 1
+a160 1
+print_man(MAN_ARGS) 
+d175 1
+a175 1
+	} else 
+a181 2
+
+/* ARGSUSED */
+a193 1
+
+a202 1
+
+d213 1
+a213 1
+	case (MAN_ROOT):
+d216 1
+a216 1
+	case (MAN_TEXT):
+d234 1
+a234 1
+	case (MAN_EQN):
+d237 1
+a237 1
+	case (MAN_TBL):
+d246 1
+a246 1
+		/* 
+d276 1
+a276 1
+	case (MAN_ROOT):
+d279 1
+a279 1
+	case (MAN_EQN):
+a287 1
+
+a299 2
+
+/* ARGSUSED */
+a345 2
+
+/* ARGSUSED */
+a378 1
+/* ARGSUSED */
+a404 1
+/* ARGSUSED */
+a421 1
+/* ARGSUSED */
+d430 1
+a430 1
+	if ((savelit = mh->fl & MANH_LITERAL)) 
+d438 1
+a438 1
+		case (MAN_BI):
+d441 1
+a441 1
+		case (MAN_IB):
+d444 1
+a444 1
+		case (MAN_RI):
+d447 1
+a447 1
+		case (MAN_IR):
+d450 1
+a450 1
+		case (MAN_BR):
+d453 1
+a453 1
+		case (MAN_RB):
+a478 1
+/* ARGSUSED */
+d482 1
+a482 1
+	
+a488 1
+/* ARGSUSED */
+a505 1
+/* ARGSUSED */
+a517 1
+/* ARGSUSED */
+d523 1
+a523 1
+	if (MAN_BODY == n->type) { 
+a554 1
+/* ARGSUSED */
+a582 1
+/* ARGSUSED */
+a611 2
+
+/* ARGSUSED */
+a619 1
+/* ARGSUSED */
+d623 1
+a623 1
+	
+a627 1
+/* ARGSUSED */
+a640 1
+/* ARGSUSED */
+a648 1
+/* ARGSUSED */
+a655 1
+/* ARGSUSED */
+a677 1
+/* ARGSUSED */
+@
+
+
+1.91
+log
+@To find out whether .TP head arguments are same-line or next-line arguments,
+use the MAN_LINE flag instead of the man_node line member.
+This is required such that user-defined macros wrapping .TP work correctly.
+
+Issue found by Havard Eidnes in Tcl_NewStringObj(3), reported via
+the NetBSD bug tracking system and Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.90 2013/10/17 20:54:58 schwarze Exp $ */
+d122 1
+@
+
+
+1.90
+log
+@Implement the .UR/.UE block (uniform resource identifier) introduced in the
+man-ext macros by Eric S. Raymond, enabled by default in groff_man(7).
+Usual disclaimer: You don't write new man(7) code, so you are not going
+to use these, either.
+Improves e.g. the bzr(1) and etherape(1) manuals.
+Thanks to naddy@@ for bringing these to my attention.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.89 2012/11/17 00:26:33 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d556 9
+a564 4
+	if (MAN_TP == n->tok)
+		for (nn = n->child; nn; nn = nn->next)
+			if (nn->line > n->line)
+				print_man_node(man, nn, mh, h);
+@
+
+
+1.89
+log
+@Cleanup naming of local variables to make the code easier on the eye:
+Settle for "struct man *man", "struct mdoc *mdoc", "struct meta *meta"
+and avoid the confusing "*m" which was sometimes this, sometimes that.
+No functional change.
+
+ok kristaps@@ some time ago
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.88 2012/06/02 20:16:23 schwarze Exp $ */
+d4 1
+d74 1
+d120 2
+d695 24
+@
+
+
+1.88
+log
+@Minimal implementation of .EX and .EE for GNU compatibility.
+Do not use this, it is not portable and only defined in esr's man-ext.
+For example, sox(1) wants these macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.87 2012/05/27 17:39:28 schwarze Exp $ */
+d40 1
+a40 1
+#define	MAN_ARGS	  const struct man_meta *m, \
+d144 1
+a144 1
+html_man(void *arg, const struct man *m)
+d149 1
+a149 1
+	print_man(man_meta(m), man_node(m), &mh, (struct html *)arg);
+d165 1
+a165 1
+		print_man_head(m, n, mh, h);
+d172 1
+a172 1
+	print_man_nodelist(m, n, mh, h);
+d183 3
+a185 3
+	assert(m->title);
+	assert(m->msec);
+	bufcat_fmt(h, "%s(%s)", m->title, m->msec);
+d195 1
+a195 1
+	print_man_node(m, n, mh, h);
+d197 1
+a197 1
+		print_man_nodelist(m, n->next, mh, h);
+d212 1
+a212 1
+		man_root_pre(m, n, mh, h);
+d263 1
+a263 1
+			child = (*mans[n->tok].pre)(m, n, mh, h);
+d268 1
+a268 1
+		print_man_nodelist(m, n->child, mh, h);
+d275 1
+a275 1
+		man_root_post(m, n, mh, h);
+d281 1
+a281 1
+			(*mans[n->tok].post)(m, n, mh, h);
+d309 2
+a310 2
+	if (m->vol)
+		(void)strlcat(b, m->vol, BUFSIZ);
+d312 3
+a314 3
+	assert(m->title);
+	assert(m->msec);
+	snprintf(title, BUFSIZ - 1, "%s(%s)", m->title, m->msec);
+d368 2
+a369 2
+	assert(m->date);
+	print_text(h, m->date);
+d376 2
+a377 2
+	if (m->source)
+		print_text(h, m->source);
+d473 1
+a473 1
+		print_man_node(m, nn, mh, h);
+d548 1
+a548 1
+		print_man_node(m, n->child, mh, h);
+d555 1
+a555 1
+				print_man_node(m, nn, mh, h);
+@
+
+
+1.87
+log
+@update Copyright years according to the CVS logs; no code change
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.86 2012/01/03 15:16:24 kristaps Exp $ */
+d116 2
+d643 1
+a643 1
+	if (MAN_nf != n->tok) {
+@
+
+
+1.86
+log
+@Add support for `OP', one of the extended man macros.  This also requires
+some man(7) changes to accomodate for the an-ext compatibility.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.85 2011/12/04 00:44:12 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.85
+log
+@Jumping out of man_unscope() for the root node is a bad idea
+because that will skip root node validation, potentially entering
+rendering modules will NULL pointers lurking in the meta data.
+Instead, always validate the root node and (as suggested by joerg@@)
+assert validity of the meta data before using it in the renderers.
+ok joerg@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.84 2011/11/18 17:05:50 joerg Exp $ */
+a60 1
+
+a62 8
+
+static	int		  man_alt_pre(MAN_ARGS);
+static	int		  man_br_pre(MAN_ARGS);
+static	int		  man_ign_pre(MAN_ARGS);
+static	int		  man_in_pre(MAN_ARGS);
+static	int		  man_literal_pre(MAN_ARGS);
+static	void		  man_root_post(MAN_ARGS);
+static	void		  man_root_pre(MAN_ARGS);
+d65 1
+d67 1
+a67 1
+static	int		  man_IP_pre(MAN_ARGS);
+d73 7
+d115 1
+d589 31
+@
+
+
+1.84
+log
+@Don't depend on snprintf to handle NULL strings. Deal with missing date.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.83 2011/10/09 22:10:53 schwarze Exp $ */
+d181 2
+d310 3
+a312 2
+	snprintf(title, BUFSIZ - 1, "%s(%s)", m->title ? m->title : "",
+	    m->msec ? m->msec : "");
+d366 2
+a367 2
+	if (m->date)
+		print_text(h, m->date);
+@
+
+
+1.83
+log
+@Always print <table> column widths in -T[x]html;
+if desired, they can be overridden in the CSS file.
+Suggested by kristaps@@, and i always like to simplify code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.82 2011/10/05 21:35:17 kristaps Exp $ */
+d308 2
+a309 1
+	snprintf(title, BUFSIZ - 1, "%s(%s)", m->title, m->msec);
+d363 2
+a364 1
+	print_text(h, m->date);
+@
+
+
+1.82
+log
+@Add the -Ofragment option to -T[]x]html.  This accomodates for embedding
+manual output in existing HTML or XHTML documents, e.g., when invoking
+mandoc from an SSI or CGI.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.81 2011/08/18 09:16:01 kristaps Exp $ */
+d312 6
+a317 9
+	if (NULL == h->style) {
+		PAIR_INIT(&tag[2], ATTR_WIDTH, "100%");
+		t = print_otag(h, TAG_TABLE, 3, tag);
+		PAIR_INIT(&tag[0], ATTR_WIDTH, "30%");
+		print_otag(h, TAG_COL, 1, tag);
+		print_otag(h, TAG_COL, 1, tag);
+		print_otag(h, TAG_COL, 1, tag);
+	} else
+		t = print_otag(h, TAG_TABLE, 2, tag);
+a324 1
+
+d329 2
+a330 6
+	if (NULL == h->style) {
+		PAIR_INIT(&tag[1], ATTR_ALIGN, "center");
+		print_otag(h, TAG_TD, 2, tag);
+	} else 
+		print_otag(h, TAG_TD, 1, tag);
+
+d335 2
+a336 6
+	if (NULL == h->style) {
+		PAIR_INIT(&tag[1], ATTR_ALIGN, "right");
+		print_otag(h, TAG_TD, 2, tag);
+	} else 
+		print_otag(h, TAG_TD, 1, tag);
+
+d351 5
+a355 8
+	if (NULL == h->style) {
+		PAIR_INIT(&tag[2], ATTR_WIDTH, "100%");
+		t = print_otag(h, TAG_TABLE, 3, tag);
+		PAIR_INIT(&tag[0], ATTR_WIDTH, "50%");
+		print_otag(h, TAG_COL, 1, tag);
+		print_otag(h, TAG_COL, 1, tag);
+	} else
+		t = print_otag(h, TAG_TABLE, 2, tag);
+d366 2
+a367 5
+	if (NULL == h->style) {
+		PAIR_INIT(&tag[1], ATTR_ALIGN, "right");
+		print_otag(h, TAG_TD, 2, tag);
+	} else 
+		print_otag(h, TAG_TD, 1, tag);
+@
+
+
+1.81
+log
+@Align `-offset indent' and `D1' by forcing BLOCKQUOTE to have a 5ex
+margin.  This is dubious: the HTML4 spec specifically says that
+BLOCKQUOTE shouldn't be abused for indentation, which is exactly what we
+do.  However, `D1' needs indentation and it's the only way to force text
+browsers to do so.  Alternatives?
+
+Also remove the unused HALFINDENT defines while here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.80 2011/07/23 22:57:13 kristaps Exp $ */
+a143 2
+	struct html	*h;
+	struct tag	*t;
+a145 4
+	h = (struct html *)arg;
+
+	print_gen_decls(h);
+
+d147 2
+a148 6
+
+	t = print_otag(h, TAG_HTML, 0, NULL);
+	print_man(man_meta(m), man_node(m), &mh, h);
+	print_tagq(h, t);
+
+	printf("\n");
+d154 4
+a157 1
+	struct tag	*t;
+d159 10
+a168 3
+	t = print_otag(h, TAG_HEAD, 0, NULL);
+	print_man_head(m, n, mh, h);
+	print_tagq(h, t);
+a169 1
+	t = print_otag(h, TAG_BODY, 0, NULL);
+@
+
+
+1.80
+log
+@Flip on equation printing for -T[x]html.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.79 2011/07/21 11:34:53 kristaps Exp $ */
+a38 1
+#define	HALFINDENT	  3
+@
+
+
+1.79
+log
+@Flip eqn into using parsed nodes.  I've temporarily disabled printing
+these in the front-ends except for -Ttree, which will display the parsed
+tree.
+
+While here, fix that quoted strings aren't scanned for replacement parts.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.78 2011/07/07 13:54:36 kristaps Exp $ */
+a203 1
+	struct htmlpair	 tag;
+d231 1
+a231 3
+		PAIR_CLASS_INIT(&tag, "eqn");
+		/*print_otag(h, TAG_SPAN, 1, &tag);
+		print_text(h, n->eqn->data);*/
+@
+
+
+1.78
+log
+@Considerably fix up -man -T[x]html's handling of verbatim spaces (`nf'),
+which before were being handled erratically.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.77 2011/07/07 13:26:25 kristaps Exp $ */
+d233 2
+a234 2
+		print_otag(h, TAG_SPAN, 1, &tag);
+		print_text(h, n->eqn->data);
+@
+
+
+1.77
+log
+@Clean up how -man -T[x]html handles TP, IP, and HP (dd lists and
+indented paragraph macros, respectively).  This cleans up code and also
+cleans up the output quite a lot.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.76 2011/07/03 22:57:32 kristaps Exp $ */
+d222 5
+a226 1
+		} else if (' ' == *n->string && MAN_LINE & n->flags)
+a229 12
+
+		/*
+		 * If we're in a literal context, make sure that words
+		 * togehter on the same line stay together.  This is a
+		 * POST-printing call, so we check the NEXT word.  Since
+		 * -man doesn't have nested macros, we don't need to be
+		 * more specific than this.
+		 */
+		if (MANH_LITERAL & mh->fl &&
+				(NULL == n->next ||
+				 n->next->line > n->line))
+			print_otag(h, TAG_BR, 0, NULL);
+d448 1
+a448 1
+	int		 i;
+d452 5
+d495 3
+d557 2
+d628 1
+a628 1
+	if (MAN_nf == n->tok) {
+d630 2
+a632 2
+	} else
+		mh->fl &= ~MANH_LITERAL;
+@
+
+
+1.76
+log
+@Fix a TODO noted by schwarze@@, originally by Christian Weisgerber:
+literal mode (`nf') is ended by SH (and, it turns out, SS as well).
+Noted the updated behaviour in man.7 as well.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.75 2011/06/29 15:38:09 kristaps Exp $ */
+a405 1
+
+a432 1
+
+a450 1
+
+a500 1
+
+a511 1
+
+a529 1
+
+a542 1
+
+a546 2
+	struct roffsu		 su;
+	struct htmlpair	 	 tag;
+a548 7
+	/*
+	 * This scattering of 1-BU margins and pads is to make sure that
+	 * when text overruns its box, the subsequent text isn't flush
+	 * up against it.  However, the rest of the right-hand box must
+	 * also be adjusted in consideration of this 1-BU space.
+	 */
+
+d550 4
+a553 1
+		print_otag(h, TAG_TD, 0, NULL);
+d557 1
+a557 35
+	nn = MAN_BLOCK == n->type ? 
+		n->head->child : n->parent->head->child;
+
+	SCALE_HS_INIT(&su, INDENT);
+
+	/* Width is the second token. */
+
+	if (MAN_IP == n->tok && NULL != nn)
+		if (NULL != (nn = nn->next))
+			a2width(nn, &su);
+
+	/* Width is the first token. */
+
+	if (MAN_TP == n->tok && NULL != nn) {
+		/* Skip past non-text children. */
+		while (nn && MAN_TEXT != nn->type)
+			nn = nn->next;
+		if (nn)
+			a2width(nn, &su);
+	}
+
+	if (MAN_BLOCK == n->type) {
+		print_bvspace(h, n);
+		print_otag(h, TAG_TABLE, 0, NULL);
+		bufinit(h);
+		bufcat_su(h, "width", &su);
+		PAIR_STYLE_INIT(&tag, h);
+		print_otag(h, TAG_COL, 1, &tag);
+		print_otag(h, TAG_COL, 0, NULL);
+		print_otag(h, TAG_TBODY, 0, NULL);
+		print_otag(h, TAG_TR, 0, NULL);
+		return(1);
+	} 
+
+	print_otag(h, TAG_TD, 0, NULL);
+a573 1
+
+d582 4
+a585 1
+	bufinit(h);
+d587 1
+a587 3
+	np = MAN_BLOCK == n->type ? 
+		n->head->child : 
+		n->parent->head->child;
+d592 1
+a592 14
+	if (MAN_HEAD == n->type) {
+		print_otag(h, TAG_TD, 0, NULL);
+		return(0);
+	} else if (MAN_BLOCK == n->type) {
+		print_bvspace(h, n);
+		print_otag(h, TAG_TABLE, 0, NULL);
+		bufcat_su(h, "width", &su);
+		PAIR_STYLE_INIT(&tag, h);
+		print_otag(h, TAG_COL, 1, &tag);
+		print_otag(h, TAG_COL, 0, NULL);
+		print_otag(h, TAG_TBODY, 0, NULL);
+		print_otag(h, TAG_TR, 0, NULL);
+		return(1);
+	}
+d594 2
+d599 1
+a599 1
+	print_otag(h, TAG_TD, 1, &tag);
+a602 1
+
+a611 1
+
+a620 1
+
+a634 1
+
+a643 1
+
+a651 1
+
+@
+
+
+1.75
+log
+@First fix how `sp 1' doesn't imply `1v' (it now does) and that 1
+followed by non-digits, e.g. `1g', really means `1'.  Next, fix some
+spacing issues where `sp' was invoked in -man after sections or
+subsections.  Make sure this behaviour is mirrored in -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.74 2011/06/18 20:34:08 kristaps Exp $ */
+d442 1
+d524 1
+@
+
+
+1.74
+log
+@Make -T[x]html in -man also be aware of the vertical-space issues in the
+last few commits.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.73 2011/06/18 17:58:48 kristaps Exp $ */
+d417 3
+a419 2
+		if (n->child)
+			a2roffsu(n->child->string, &su, SCALE_VS);
+@
+
+
+1.73
+log
+@Fix two TODOs with one check-in.  Both of these relate to vertical space
+before paragraphs and/or within `RS' blocks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.72 2011/05/17 11:34:31 kristaps Exp $ */
+d56 2
+d119 22
+d540 2
+a541 2
+	else if (MAN_BODY == n->type && n->prev)
+		print_otag(h, TAG_P, 0, NULL);
+d589 1
+a589 1
+		print_otag(h, TAG_P, 0, NULL);
+d640 1
+a640 1
+		print_otag(h, TAG_P, 0, NULL);
+@
+
+
+1.72
+log
+@Cleanups in -T[x]html: make html_idcat() use the buffer and be called
+bufcat_id(), then collapse it into a little function without so much
+crap.  Next, make bufinit() only be called when we really need to do so,
+and not simply before pre/post calls.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.71 2011/05/17 11:19:45 kristaps Exp $ */
+a137 1
+
+@
+
+
+1.71
+log
+@Clean-ups in -T[x]html: inline print_num(), as it was just a single
+conditional; same for print_xmltype() and print_doctype(), same reason;
+make bufncat() be static, as it was only being called from html.c;
+have bufcat() simply call through to strlcat().  Finally, assert()
+whenever we truncate.
+
+Also rename buffmt() -> bufcat_fmt() to differentiate from buffmt_man et
+al., which do not concatenate.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.70 2011/03/07 01:35:51 schwarze Exp $ */
+a159 1
+	bufinit(h);
+a160 1
+
+a184 1
+	bufinit(h);
+a258 2
+	bufinit(h);
+
+d399 1
+d568 1
+d604 2
+d706 1
+@
+
+
+1.70
+log
+@Clean up date handling,
+as a first step to get rid of the frequent petty warnings in this area:
+ - always store dates as strings, not as seconds since the Epoch
+ - for input, try the three most common formats everywhere
+ - for unrecognized format, just pass the date though verbatim
+ - when there is no date at all, still use the current date
+Originally triggered by a one-line patch from Tim van der Molen,
+<tbvdm at xs4all dot nl>, which is included here.
+Feedback and OK on manual parts from jmc@@.
+"please check this in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.69 2011/02/09 09:52:47 kristaps Exp $ */
+d161 1
+a161 1
+	buffmt(h, "%s(%s)", m->title, m->msec);
+@
+
+
+1.69
+log
+@EQN blocks are now printed in all modes.  This is simply a printing of
+the concatenated string (in -T[x]html, it gets a SPAN, too).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.68 2011/02/06 21:44:36 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+a354 6
+	char		 b[DATESIZ];
+
+	if (m->rawdate)
+		strlcpy(b, m->rawdate, DATESIZ);
+	else
+		time2a(m->date, b, DATESIZ);
+d372 1
+a372 1
+	print_text(h, b);
+@
+
+
+1.68
+log
+@Add initial libmdoc and libman top-most machinery for accepting TBL
+directives.  For now this will just ignore them (except for -Ttree,
+which just notes that an EQN's been accepted).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.67 2011/01/17 00:21:29 schwarze Exp $ */
+d183 1
+d220 4
+a223 1
+		return;
+d268 2
+@
+
+
+1.67
+log
+@Refrain from throwing fatal errors for
+* .br .sp .nf .fi .na with arguments - just skip the arguments
+* .TH lacking arguments - use empty strings instead like groff
+* .TH with excessive arguments - skip those
+Reminded by joerg@@, ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.66 2011/01/13 14:30:13 kristaps Exp $ */
+d218 2
+@
+
+
+1.66
+log
+@Change how -Thtml behaves with tables: use multiple rows, with widths
+set by COL, until an external macro is encountered.  At this point in
+time, close out the table and process the macro.  When the first table
+row is again re-encountered, re-start the table.  This requires a bit of
+tracking added to "struct html", but the change is very small and
+follows the logic of meta-fonts.  This all follows a bug-report by
+joerg@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.65 2011/01/12 15:41:09 kristaps Exp $ */
+d103 1
+a103 1
+	{ NULL, NULL }, /* na */
+d666 1
+a666 1
+	return(1);
+@
+
+
+1.65
+log
+@Bring in -Tascii comments for -Thtml MANH_LITERAL line-breaking stuff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.64 2011/01/12 15:31:17 kristaps Exp $ */
+d219 5
+d229 1
+a229 2
+		 * scope.  Assert that the metafont is on the top of the
+		 * stack (it's never nested).
+d235 10
+@
+
+
+1.64
+log
+@Make sure that -Thtml doesn't break within literal lines.  This is the
+same logic as the -Tascii case.  Also remove the TODO.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.63 2011/01/12 10:43:22 kristaps Exp $ */
+d70 1
+a70 1
+static	int		  man_root_pre(MAN_ARGS);
+a185 1
+
+d190 1
+a190 1
+		child = man_root_pre(m, n, mh, h);
+d193 5
+d206 7
+d270 1
+a270 1
+static int
+a323 1
+	return(1);
+@
+
+
+1.63
+log
+@If the first character of free-form text is whitespace, then a newline
+shall precede outputted text (surprise!).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.62 2011/01/07 13:20:58 kristaps Exp $ */
+a188 6
+	/*
+	 * FIXME: embedded elements within next-line scopes (e.g., `br'
+	 * within an empty `B') will cause formatting to be forgotten
+	 * due to scope closing out.
+	 */
+
+d197 1
+a197 3
+		}
+
+		if (' ' == *n->string && MAN_LINE & n->flags)
+d202 3
+a204 1
+		if (MANH_LITERAL & mh->fl)
+d209 1
+a209 1
+		break;
+a236 2
+	case (MAN_TBL):
+		break;
+@
+
+
+1.62
+log
+@Quiesce lint with some type handling.  Does not change anything.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.61 2011/01/04 10:31:15 kristaps Exp $ */
+d200 8
+d209 1
+@
+
+
+1.61
+log
+@Protect tbl nodes from getting a post call.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.60 2011/01/04 10:29:41 kristaps Exp $ */
+a507 1
+	int			 width;
+a524 1
+	width = 0;
+d530 1
+a530 1
+			width = a2width(nn, &su);
+d539 1
+a539 1
+			width = a2width(nn, &su);
+@
+
+
+1.60
+log
+@Add skeleton for -T[x]html tbl stuff.  Also start to put in some bits about
+the up-coming version, although we're not quite there yet.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.59 2011/01/04 01:23:18 schwarze Exp $ */
+d230 2
+a231 1
+	if (MAN_ROOT == n->type) 
+d233 8
+a240 2
+	else if (mans[n->tok].post)
+		(*mans[n->tok].post)(m, n, mh, h);
+@
+
+
+1.59
+log
+@Multiple man(7) .IP and .TP fixes started during p2k10:
+
+Affecting both -Tascii and -Thtml:
+* The .IP HEAD uses the second argument as the width, not the last one.
+* Only print the first .IP HEAD argument, not all but the last.
+
+Affecting only -Tascii:
+* The .IP and .TP HEADs must be printed without literal mode,
+but literal mode must be restored afterwards.
+* After the .IP and .TP bodies, we only want term_newln(), not
+term_flushln(), or we would get two blank lines in literal mode.
+* The .TP HEAD does not use TWOSPACE, just like .IP doesn't either.
+* In literal mode, clear NOLPAD after each line, or subsequent lines
+would get no indentation whatsoever.
+
+Affecting only -Thtml:
+* Only print next-line .TP children, instead of all but the first.
+
+OK kristaps@@ on the -Tascii part; and:
+"Can you work this into man_html.c, too?"
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.58 2011/01/01 12:59:17 kristaps Exp $ */
+d205 2
+a206 1
+		return;
+@
+
+
+1.58
+log
+@Add -man support for tables.  Like -mdoc, this consists of an
+external-facing function man_addspan() (this required shuffling around
+the descope routine) and hooks elsewhere.
+
+Also fixed mdoc.c's post-validation of tables.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.57 2010/12/24 00:46:49 kristaps Exp $ */
+d520 1
+a520 1
+	/* Width is the last token. */
+d523 1
+a523 3
+		if (NULL != (nn = nn->next)) {
+			for ( ; nn->next; nn = nn->next)
+				/* Do nothing. */ ;
+a524 1
+		}
+d550 1
+a550 3
+	/*
+	 * Without a length string, we can print all of our children.
+	 */
+d552 2
+a553 2
+	if ( ! width)
+		return(1);
+d555 1
+a555 6
+	/*
+	 * When a length has been specified, we need to carefully print
+	 * our child context:  IP gets all children printed but the last
+	 * (the width), while TP gets all children printed but the first
+	 * (the width).
+	 */
+a556 3
+	if (MAN_IP == n->tok)
+		for (nn = n->child; nn->next; nn = nn->next)
+			print_man_node(m, nn, mh, h);
+d558 3
+a560 2
+		for (nn = n->child->next; nn; nn = nn->next)
+			print_man_node(m, nn, mh, h);
+@
+
+
+1.57
+log
+@Drastically fix -T[x]html's handling of font-escape mode changes (i.e.,
+using \fI or \fP).  Now, using these modes will cause a font to be
+rendered for each word; furthermore, setting mode within a word will do
+the correct thing.
+
+Second, make -man use real font tags (B, I, SMALL) to set its font
+instead of using font modes and fix up the pre-macro unsetting of the
+current mode.
+
+This fixes how roff.7 wasn't validating (<P> closing out a font mode)
+and has been checked against gcc.1 (more will come).  I considered
+failure to validate OUR manual to be a show-stopper for the up-coming
+release.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.56 2010/12/22 09:51:27 kristaps Exp $ */
+a200 1
+
+d203 2
+a204 1
+
+d229 1
+a229 2
+	switch (n->type) {
+	case (MAN_ROOT):
+d231 2
+a232 8
+		break;
+	case (MAN_TEXT):
+		break;
+	default:
+		if (mans[n->tok].post)
+			(*mans[n->tok].post)(m, n, mh, h);
+		break;
+	}
+@
+
+
+1.56
+log
+@Throw out negative margin garbage in -man -T[x]html in favour of using
+TABLE and P and so on.  Now renders in text-based browsers.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.55 2010/12/17 08:26:42 kristaps Exp $ */
+d212 3
+a214 5
+		if (h->metaf) {
+			assert(h->metaf == t);
+			print_tagq(h, h->metaf);
+			assert(NULL == h->metaf);
+			t = h->tags.head;
+d410 3
+a412 3
+	struct tag		*t;
+	int			 i;
+	enum htmlfont		 fp;
+d415 1
+d418 1
+a418 1
+			fp = i % 2 ? HTMLFONT_ITALIC : HTMLFONT_BOLD;
+d421 1
+a421 1
+			fp = i % 2 ? HTMLFONT_BOLD : HTMLFONT_ITALIC;
+d424 1
+a424 1
+			fp = i % 2 ? HTMLFONT_ITALIC : HTMLFONT_NONE;
+d427 1
+a427 1
+			fp = i % 2 ? HTMLFONT_NONE : HTMLFONT_ITALIC;
+d430 1
+a430 1
+			fp = i % 2 ? HTMLFONT_NONE : HTMLFONT_BOLD;
+d433 1
+a433 1
+			fp = i % 2 ? HTMLFONT_BOLD : HTMLFONT_NONE;
+d443 3
+a445 6
+		/* 
+		 * Open and close the scope with each argument, so that
+		 * internal \f escapes, which are common, are also
+		 * closed out with the scope.
+		 */
+		t = print_ofont(h, fp);
+d447 3
+a449 1
+		print_tagq(h, t);
+a459 1
+	struct htmlpair	 tag;
+d461 1
+a461 3
+	/* FIXME: print_ofont(). */
+	PAIR_CLASS_INIT(&tag, "small");
+	print_otag(h, TAG_SPAN, 1, &tag);
+d463 1
+a463 1
+		print_ofont(h, HTMLFONT_BOLD);
+d628 1
+a628 1
+	print_ofont(h, HTMLFONT_BOLD);
+d638 1
+a638 1
+	print_ofont(h, HTMLFONT_ITALIC);
+@
+
+
+1.55
+log
+@Banished -man -Thtml header and footer to example.style.css as well.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.54 2010/12/17 00:18:29 kristaps Exp $ */
+a76 1
+static	int		  man_SB_pre(MAN_ARGS);
+d93 1
+a93 1
+	{ man_SB_pre, NULL }, /* SB */
+d262 1
+a262 1
+	struct htmlpair	 tag[2];
+d272 13
+a284 3
+	PAIR_CLASS_INIT(&tag[0], "head");
+	PAIR_SUMMARY_INIT(&tag[1], "Document Header");
+	t = print_otag(h, TAG_TABLE, 2, tag);
+d295 5
+a299 1
+	print_otag(h, TAG_TD, 1, tag);
+d305 5
+a309 1
+	print_otag(h, TAG_TD, 1, tag);
+d321 1
+a321 1
+	struct htmlpair	 tag[2];
+d330 10
+a339 3
+	PAIR_CLASS_INIT(&tag[0], "foot");
+	PAIR_SUMMARY_INIT(&tag[1], "Document Footer");
+	t = print_otag(h, TAG_TABLE, 2, tag);
+d350 5
+a354 1
+	print_otag(h, TAG_TD, 1, tag);
+d460 1
+a460 1
+man_SB_pre(MAN_ARGS)
+a464 12
+	PAIR_CLASS_INIT(&tag, "small bold");
+	print_otag(h, TAG_SPAN, 1, &tag);
+	return(1);
+}
+
+
+/* ARGSUSED */
+static int
+man_SM_pre(MAN_ARGS)
+{
+	struct htmlpair	 tag;
+	
+d467 2
+a494 3
+	struct htmlpair	 tag;
+	struct roffsu	 su;
+	int		 i;
+a495 2
+	if (MAN_BODY == n->type)
+		return(1);
+d498 2
+a499 16
+
+	i = 0;
+
+	if (MAN_ROOT == n->parent->type) {
+		SCALE_HS_INIT(&su, INDENT);
+		bufcat_su(h, "margin-left", &su);
+		i = 1;
+	}
+	if (n->prev) {
+		SCALE_VS_INIT(&su, 1);
+		bufcat_su(h, "margin-top", &su);
+		i = 1;
+	}
+
+	PAIR_STYLE_INIT(&tag, h);
+	print_otag(h, TAG_DIV, i, &tag);
+d522 1
+a522 4
+		SCALE_HS_INIT(&su, INDENT);
+		bufcat_su(h, "margin-left", &su);
+		PAIR_STYLE_INIT(&tag, h);
+		print_otag(h, TAG_DIV, 1, &tag);
+d552 3
+a554 4
+		bufcat_su(h, "margin-left", &su);
+		SCALE_VS_INIT(&su, 1);
+		bufcat_su(h, "margin-top", &su);
+		bufcat_style(h, "clear", "both");
+d556 4
+a559 1
+		print_otag(h, TAG_DIV, 1, &tag);
+d563 1
+a563 12
+	bufcat_su(h, "min-width", &su);
+	SCALE_INVERT(&su);
+	bufcat_su(h, "margin-left", &su);
+	SCALE_HS_INIT(&su, 1);
+	bufcat_su(h, "margin-right", &su);
+	bufcat_style(h, "clear", "left");
+
+	if (n->next && n->next->child)
+		bufcat_style(h, "float", "left");
+
+	PAIR_STYLE_INIT(&tag, h);
+	print_otag(h, TAG_DIV, 1, &tag);
+d594 3
+a596 3
+	const struct man_node	*nn;
+	struct htmlpair	 	 tag;
+	struct roffsu		 su;
+d598 3
+a600 2
+	if (MAN_HEAD == n->type)
+		return(0);
+d602 2
+a603 2
+	nn = MAN_BLOCK == n->type ?
+		n->head->child : n->parent->head->child;
+d605 7
+a611 10
+	SCALE_HS_INIT(&su, INDENT);
+
+	if (NULL != nn)
+		(void)a2width(nn, &su);
+
+	if (MAN_BLOCK == n->type) {
+		bufcat_su(h, "margin-left", &su);
+		SCALE_VS_INIT(&su, 1);
+		bufcat_su(h, "margin-top", &su);
+		bufcat_style(h, "clear", "both");
+d613 4
+a616 1
+		print_otag(h, TAG_DIV, 1, &tag);
+d620 1
+a620 2
+	bufcat_su(h, "margin-left", &su);
+	SCALE_INVERT(&su);
+a621 1
+
+d623 1
+a623 1
+	print_otag(h, TAG_DIV, 1, &tag);
+d695 1
+a695 4
+	bufcat_su(h, "margin-left", &su);
+
+	if (n->head->child) {
+		SCALE_VS_INIT(&su, 1);
+a696 2
+		bufcat_su(h, "margin-top", &su);
+	}
+d698 1
+@
+
+
+1.54
+log
+@Significantly clean up Sh, Ss, SH, and SS handling in -Thtml.  Now a
+top-level DIV is used with only an H1 or H2 as the section header.  This
+makes manuals much more readable in lynx, less complicated, and
+relegates left-margin widths to example.style.css.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.53 2010/12/15 17:19:41 kristaps Exp $ */
+d263 1
+a263 1
+	struct htmlpair	 tag[3];
+d273 3
+a275 4
+	PAIR_CLASS_INIT(&tag[0], "header");
+	bufcat_style(h, "width", "100%");
+	PAIR_STYLE_INIT(&tag[1], h);
+	PAIR_SUMMARY_INIT(&tag[2], "header");
+a276 1
+	t = print_otag(h, TAG_TABLE, 3, tag);
+d279 1
+a279 3
+	bufinit(h);
+	bufcat_style(h, "width", "10%");
+	PAIR_STYLE_INIT(&tag[0], h);
+d281 1
+d285 1
+a285 5
+	bufinit(h);
+	bufcat_style(h, "width", "80%");
+	bufcat_style(h, "white-space", "nowrap");
+	bufcat_style(h, "text-align", "center");
+	PAIR_STYLE_INIT(&tag[0], h);
+d287 1
+d291 1
+a291 4
+	bufinit(h);
+	bufcat_style(h, "width", "10%");
+	bufcat_style(h, "text-align", "right");
+	PAIR_STYLE_INIT(&tag[0], h);
+d293 1
+d304 1
+a304 1
+	struct htmlpair	 tag[3];
+d313 3
+a315 4
+	PAIR_CLASS_INIT(&tag[0], "footer");
+	bufcat_style(h, "width", "100%");
+	PAIR_STYLE_INIT(&tag[1], h);
+	PAIR_SUMMARY_INIT(&tag[2], "footer");
+a316 1
+	t = print_otag(h, TAG_TABLE, 3, tag);
+d319 1
+a319 3
+	bufinit(h);
+	bufcat_style(h, "width", "50%");
+	PAIR_STYLE_INIT(&tag[0], h);
+d321 1
+d325 1
+a325 4
+	bufinit(h);
+	bufcat_style(h, "width", "50%");
+	bufcat_style(h, "text-align", "right");
+	PAIR_STYLE_INIT(&tag[0], h);
+d327 1
+@
+
+
+1.53
+log
+@Use a single P tag for paragraph breaks (which can be configured for
+paragraph breaking in CSS).
+
+Use -man's handling of `sp' and `br', which accomodates for scaling
+widths (-mdoc wasn't).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.52 2010/12/08 10:58:22 kristaps Exp $ */
+d378 1
+a378 2
+	struct htmlpair	 tag[2];
+	struct roffsu	 su;
+d380 5
+a384 21
+	if (MAN_BODY == n->type) {
+		SCALE_HS_INIT(&su, INDENT);
+		bufcat_su(h, "margin-left", &su);
+		PAIR_CLASS_INIT(&tag[0], "sec-body");
+		PAIR_STYLE_INIT(&tag[1], h);
+		print_otag(h, TAG_DIV, 2, tag);
+		return(1);
+	} else if (MAN_BLOCK == n->type) {
+		PAIR_CLASS_INIT(&tag[0], "sec-block");
+		if (n->prev && MAN_SH == n->prev->tok)
+			if (NULL == n->prev->body->child) {
+				print_otag(h, TAG_DIV, 1, tag);
+				return(1);
+			}
+
+		SCALE_VS_INIT(&su, 1);
+		bufcat_su(h, "margin-top", &su);
+		if (NULL == n->next)
+			bufcat_su(h, "margin-bottom", &su);
+		PAIR_STYLE_INIT(&tag[1], h);
+		print_otag(h, TAG_DIV, 2, tag);
+a385 1
+	}
+d387 1
+a387 2
+	PAIR_CLASS_INIT(&tag[0], "sec-head");
+	print_otag(h, TAG_DIV, 1, tag);
+d472 1
+a472 2
+	struct htmlpair	 tag[3];
+	struct roffsu	 su;
+d474 3
+a476 12
+	SCALE_VS_INIT(&su, 1);
+
+	if (MAN_BODY == n->type) {
+		PAIR_CLASS_INIT(&tag[0], "ssec-body");
+		if (n->parent->next && n->child) {
+			bufcat_su(h, "margin-bottom", &su);
+			PAIR_STYLE_INIT(&tag[1], h);
+			print_otag(h, TAG_DIV, 2, tag);
+			return(1);
+		}
+
+		print_otag(h, TAG_DIV, 1, tag);
+d478 1
+a478 11
+	} else if (MAN_BLOCK == n->type) {
+		PAIR_CLASS_INIT(&tag[0], "ssec-block");
+		if (n->prev && MAN_SS == n->prev->tok) 
+			if (n->prev->body->child) {
+				bufcat_su(h, "margin-top", &su);
+				PAIR_STYLE_INIT(&tag[1], h);
+				print_otag(h, TAG_DIV, 2, tag);
+				return(1);
+			}
+
+		print_otag(h, TAG_DIV, 1, tag);
+a479 1
+	}
+d481 1
+a481 5
+	SCALE_HS_INIT(&su, INDENT - HALFINDENT);
+	bufcat_su(h, "margin-left", &su);
+	PAIR_CLASS_INIT(&tag[0], "ssec-head");
+	PAIR_STYLE_INIT(&tag[1], h);
+	print_otag(h, TAG_DIV, 2, tag);
+@
+
+
+1.52
+log
+@Remove `i' and `r' macro handlers.  These macros, originally part of the
+me package, aren't recognised by "groff -mandoc" so we don't need to do
+so either.  Discussed on tech@@ with schwarze@@.
+
+While at it, remove references to `b' in man.7.  As far as I know, this
+was never supported anyway.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.51 2010/12/06 15:31:44 kristaps Exp $ */
+a143 1
+	struct htmlpair	 tag;
+a145 1
+
+d148 1
+a149 5
+
+	tag.key = ATTR_CLASS;
+	tag.val = "body";
+	print_otag(h, TAG_DIV, 1, &tag);
+
+a150 1
+
+@
+
+
+1.51
+log
+@Typo: man_in_pre -> man_ign_pre for `ft'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.50 2010/12/06 15:31:19 kristaps Exp $ */
+a104 1
+	{ NULL, NULL }, /* i */
+a107 1
+	{ NULL, NULL }, /* r */
+@
+
+
+1.50
+log
+@Add support for `ft' macro found in groff(7).  Based on a patch by
+schwarze@@, but without the -T[x]html handling, which structurally does
+not work.  Also add man.7 documentation (not in original patch).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.49 2010/12/06 14:12:48 kristaps Exp $ */
+d117 1
+a117 1
+	{ man_in_pre, NULL }, /* ft */
+@
+
+
+1.49
+log
+@Small merges from schwarze@@'s man_html.c edits.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.48 2010/12/06 14:07:01 kristaps Exp $ */
+d117 1
+@
+
+
+1.48
+log
+@Let some man_term.c cleanups bleed into man_html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.47 2010/12/06 13:53:07 kristaps Exp $ */
+d365 1
+a365 2
+	switch (n->tok) {
+	case (MAN_sp):
+d368 1
+a368 2
+		break;
+	default:
+a369 2
+		break;
+	}
+@
+
+
+1.47
+log
+@Header for `PP', `P', and `LP' should never be printed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.46 2010/12/05 16:14:16 kristaps Exp $ */
+d736 1
+a736 2
+	switch (n->tok) {
+	case (MAN_nf):
+d739 1
+a739 2
+		break;
+	default:
+a740 2
+		break;
+	}
+@
+
+
+1.46
+log
+@Remove `Sp', `Vb', and `Ve' (as per schwarze@@'s changes in OpenBSD),
+which are now accomodated for the new libroff modifications.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.45 2010/07/23 12:27:28 kristaps Exp $ */
+d550 1
+a550 1
+	if (MAN_BLOCK != n->type)
+d552 2
+d570 1
+@
+
+
+1.45
+log
+@Enable literal contexts (Vb/nf) in -T[x]html -man.  This requires that a
+new struct pass down in the call-tree (as also in man_term.c).
+
+Also add a line-break for `in', which isn't otherwise supported (yet).
+
+Now -Thtml -man cvs.1 for GNU's cvs.1 isn't as ugly.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.44 2010/07/22 23:53:54 kristaps Exp $ */
+a114 3
+	{ man_br_pre, NULL }, /* Sp */
+	{ man_literal_pre, NULL }, /* Vb */
+	{ man_literal_pre, NULL }, /* Ve */
+a365 3
+	case (MAN_Sp):
+		SCALE_VS_INIT(&su, 0.5);
+		break;
+a734 2
+		/* FALLTHROUGH */
+	case (MAN_Vb):
+d737 1
+a737 1
+		return(MAN_Vb != n->tok);
+@
+
+
+1.44
+log
+@Fix broken compilation, hopefully before anybody notices.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.43 2010/07/22 23:03:15 kristaps Exp $ */
+d43 1
+d46 5
+d67 2
+d107 2
+a108 2
+	{ NULL, NULL }, /* nf */
+	{ NULL, NULL }, /* fi */
+d116 2
+a117 2
+	{ man_ign_pre, NULL }, /* Vb */
+	{ NULL, NULL }, /* Ve */
+d119 1
+a119 1
+	{ NULL, NULL }, /* in */
+d128 1
+d134 2
+d137 1
+a137 1
+	print_man(man_meta(m), man_node(m), h);
+d152 1
+a152 1
+	print_man_head(m, n, h);
+d160 1
+a160 1
+	print_man_nodelist(m, n, h);
+d184 1
+a184 1
+	print_man_node(m, n, h);
+d186 1
+a186 1
+		print_man_nodelist(m, n->next, h);
+d209 1
+a209 1
+		child = man_root_pre(m, n, h);
+d213 4
+d231 1
+a231 1
+			child = (*mans[n->tok].pre)(m, n, h);
+d236 1
+a236 1
+		print_man_nodelist(m, n->child, h);
+d245 1
+a245 1
+		man_root_post(m, n, h);
+d251 1
+a251 1
+			(*mans[n->tok].post)(m, n, h);
+d472 1
+a472 1
+		print_man_node(m, nn, h);
+d666 1
+a666 1
+			print_man_node(m, nn, h);
+d669 1
+a669 1
+			print_man_node(m, nn, h);
+d736 31
+@
+
+
+1.43
+log
+@Added `in' macro support for -man -Tascii.  This is not yet supported in
+-Thtml (I'm surprised to note that neither is LITERAL mode).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.42 2010/07/13 23:53:20 schwarze Exp $ */
+d111 1
+a111 1
+	{ man-in_pre, NULL }, /* in */
+@
+
+
+1.42
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.41 2010/07/07 15:04:54 kristaps Exp $ */
+d111 1
+@
+
+
+1.41
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.40 2010/06/27 16:18:13 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.40
+log
+@Following clue-stick applied by schwarze@@, back out const-ness of regset
+passed in to libmdoc and libman.
+
+Fix mdoc.3 and man.3 EXAMPLE sections to include regset.
+
+Add MDOC_SYNPRETTY flag cueing front-end to nicely format certain values
+as if SEC_SYNOPSIS were the current section.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.39 2010/06/27 15:52:41 kristaps Exp $ */
+a31 1
+#include "regs.h"
+@
+
+
+1.39
+log
+@Downstream maintainers: this removes UGLY!  I don't want diverging
+functionality and UGLY works quite well thanks to schwarze@@'s careful
+attention.
+
+This also backs out function-prototype changes for struct regset,
+instead stuffing a pointer to the regset directly into struct
+mdoc/man/roff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.38 2010/06/26 15:36:37 kristaps Exp $ */
+d255 1
+@
+
+
+1.38
+log
+@Churn-ish check-in getting mdoc_parseln() and man_parseln() to accept a
+const struct regset pointer.  No functionality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.37 2010/06/19 20:46:28 kristaps Exp $ */
+a254 1
+/* ARGSUSED */
+@
+
+
+1.37
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.36 2010/05/26 14:03:54 kristaps Exp $ */
+d32 1
+@
+
+
+1.36
+log
+@Allow bad -man dates to flow verbatim into the front-ends.  Noted by
+Ulrich Spoerlein.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.35 2010/05/17 22:11:42 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.35
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.34 2010/05/17 10:50:32 joerg Exp $ */
+d311 4
+a314 1
+	time2a(m->date, b, DATESIZ);
+@
+
+
+1.34
+log
+@Add support for .AT. Properly implement .UC. Add regress tests.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.33 2010/05/15 22:44:04 kristaps Exp $ */
+d29 1
+@
+
+
+1.33
+log
+@Remove `am', `ami', `de', `dei', and `.' from -man, as they're now in the roff preprocessor.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.32 2010/05/15 20:51:40 kristaps Exp $ */
+d109 1
+@
+
+
+1.32
+log
+@Pull `ig' out of -man and leave it the roff preparser.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.31 2010/05/15 15:54:39 kristaps Exp $ */
+a108 5
+	{ man_ign_pre, NULL }, /* de */
+	{ man_ign_pre, NULL }, /* dei */
+	{ man_ign_pre, NULL }, /* am */
+	{ man_ign_pre, NULL }, /* ami */
+	{ NULL, NULL }, /* . */
+@
+
+
+1.31
+log
+@Removed restriction on integer manual sections in -man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.30 2010/03/24 20:10:53 kristaps Exp $ */
+a112 1
+	{ man_ign_pre, NULL }, /* ig */
+@
+
+
+1.30
+log
+@Using man_node_delete() instead of man_node_free()/man_node_freelist() and friends (much simpler).
+Split blk_imp() into blk_exp() (explicit macros), blk_dotted() (roff macros), and the original.
+Added de, dei, am, ami, and ig roff macros (for now, these are discarded within the parse).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.29 2010/03/23 11:30:48 kristaps Exp $ */
+d165 1
+a165 1
+	buffmt(h, "%s(%d)", m->title, m->msec);
+d270 1
+a270 1
+	snprintf(title, BUFSIZ - 1, "%s(%d)", m->title, m->msec);
+@
+
+
+1.29
+log
+@Support for pod2man standard header macros (Vb, Ve, Sp).  Based largely on a set of patches by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.28 2010/03/22 14:03:03 kristaps Exp $ */
+d108 7
+a114 1
+	{ NULL, NULL }, /* Vi */
+@
+
+
+1.28
+log
+@Clarify -man -T[x]html handling of `br' within `B'.
+Consolidated node unlinking in -man.
+Conclude nested next-line scope issues noted by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.27 2010/03/22 05:59:32 kristaps Exp $ */
+d106 3
+d347 9
+a355 3
+	if (MAN_sp == n->tok && n->child)
+		a2roffsu(n->child->string, &su, SCALE_VS);
+	else if (MAN_br == n->tok)
+d357 2
+@
+
+
+1.27
+log
+@Accomodate (libman) for next-line macros followed by non-text macros `na', `sp', and `br'.
+Based on a patch by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.26 2010/01/29 14:39:38 kristaps Exp $ */
+d184 6
+d576 2
+d585 2
+d588 1
+d591 2
+a592 2
+		/* FIXME: sync with pre_TP(), man_term.c */
+		width = a2width(nn, &su);
+d618 3
+a620 1
+	/* With a length string, manually omit the last child. */
+d625 6
+a630 1
+	/* FIXME: sync with pre_TP(), man_term.c */
+@
+
+
+1.26
+log
+@Fixed Makefile for `make lint' dep. on config.h
+Added -Txhtml for XHTML output (minimal increase to programme logic).  Because groff has it and it bothers me that we don't.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.25 2010/01/01 17:14:28 kristaps Exp $ */
+d577 4
+a580 1
+	if (MAN_TP == n->tok && NULL != nn)
+d582 1
+d612 2
+@
+
+
+1.25
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.24 2009/11/16 08:46:59 kristaps Exp $ */
+d117 1
+a117 1
+	print_gen_doctype(h);
+@
+
+
+1.24
+log
+@Enabled -Thtml -mdoc to work with \f (see compat notes in mandoc.1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.23 2009/11/16 06:07:49 kristaps Exp $ */
+d17 4
+a72 5
+#ifdef __linux__
+extern	size_t	  	  strlcpy(char *, const char *, size_t);
+extern	size_t	  	  strlcat(char *, const char *, size_t);
+#endif
+
+@
+
+
+1.23
+log
+@Abstraction of -Thtml -man font setting (still experimental).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.22 2009/11/15 06:53:59 kristaps Exp $ */
+d212 1
+d256 1
+a256 2
+	(void)snprintf(title, BUFSIZ - 1, 
+			"%s(%d)", m->title, m->msec);
+d347 1
+d429 5
+@
+
+
+1.22
+log
+@Fixed -Thtml -man PP left- and top-margin.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.21 2009/11/15 06:45:31 kristaps Exp $ */
+d398 1
+a398 5
+	struct htmlpair		 tagi, tagb, tagr, *tagp;
+
+	PAIR_CLASS_INIT(&tagi, "italic");
+	PAIR_CLASS_INIT(&tagb, "bold");
+	PAIR_CLASS_INIT(&tagr, "roman");
+d403 1
+a403 1
+			tagp = i % 2 ? &tagi : &tagb;
+d406 1
+a406 1
+			tagp = i % 2 ? &tagb : &tagi;
+d409 1
+a409 1
+			tagp = i % 2 ? &tagi : &tagr;
+d412 1
+a412 1
+			tagp = i % 2 ? &tagr : &tagi;
+d415 1
+a415 1
+			tagp = i % 2 ? &tagr : &tagb;
+d418 1
+a418 1
+			tagp = i % 2 ? &tagb : &tagr;
+d428 1
+a428 1
+		t = print_otag(h, TAG_SPAN, 1, tagp);
+d443 1
+a656 1
+	struct htmlpair	 tag;
+d658 1
+a658 2
+	PAIR_CLASS_INIT(&tag, "bold");
+	print_otag(h, TAG_SPAN, 1, &tag);
+d667 2
+a668 4
+	struct htmlpair	 tag;
+
+	PAIR_CLASS_INIT(&tag, "italic");
+	print_otag(h, TAG_SPAN, 1, &tag);
+@
+
+
+1.21
+log
+@\f escapes appear to work properly for -Thtml -man.  Needs more testing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.20 2009/11/14 19:23:58 kristaps Exp $ */
+d521 1
+a521 1
+	if (MAN_ROOT == n->parent->tok) {
+d524 1
+a524 1
+		i++;
+d526 1
+a526 1
+	if (n->next && n->next->child) {
+d528 2
+a529 2
+		bufcat_su(h, "margin-bottom", &su);
+		i++;
+d533 1
+a533 1
+	print_otag(h, TAG_DIV, i ? 1 : 0, &tag);
+@
+
+
+1.20
+log
+@Initial check-in of -man -Thtml \f support (needs testing).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.19 2009/11/14 11:58:36 kristaps Exp $ */
+d193 5
+d201 1
+d209 3
+d398 1
+a398 1
+	struct htmlpair		 tagi, tagb, *tagp;
+d402 1
+d413 1
+a413 1
+			tagp = i % 2 ? &tagi : NULL;
+d416 1
+a416 1
+			tagp = i % 2 ? NULL : &tagi;
+d419 1
+a419 1
+			tagp = i % 2 ? NULL : &tagb;
+d422 1
+a422 1
+			tagp = i % 2 ? &tagb : NULL;
+d432 3
+a434 6
+		if (tagp) {
+			t = print_otag(h, TAG_SPAN, 1, tagp);
+			print_man_node(m, nn, h);
+			print_tagq(h, t);
+		} else
+			print_man_node(m, nn, h);
+@
+
+
+1.19
+log
+@Fixed \c handling in -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.18 2009/11/10 12:03:30 kristaps Exp $ */
+d193 5
+a202 3
+	if (child && n->child)
+		print_man_nodelist(m, n->child, h);
+
+@
+
+
+1.18
+log
+@Noted that -man text decoration is re-set when exiting a macro invocation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.17 2009/10/30 18:53:08 kristaps Exp $ */
+d191 1
+a191 1
+		break;
+a213 3
+
+		/* Reset metafont upon exit from macro. */
+		h->metafont = 0;
+@
+
+
+1.17
+log
+@More lint fixes.
+Removed err.h from inclusions (less main.c--still in progress).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.16 2009/10/28 08:00:18 kristaps Exp $ */
+d214 3
+@
+
+
+1.16
+log
+@Fixed `sp', `br', `Pp', etc. so as not to have an empty div (-Thtml, -man, -mdoc).
+Made html_idcat be completely correct (messy standard) (-Thtml).
+Fixed warnings about -ohang and -item lists (-Thtml, -mdoc).
+Fixed typo in index.sgml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.15 2009/10/27 04:50:15 kristaps Exp $ */
+a20 1
+#include <err.h>
+@
+
+
+1.15
+log
+@Added "summary" tag to tables in order to silence HTML-tidy's complaints.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.14 2009/10/26 08:18:16 kristaps Exp $ */
+d337 3
+@
+
+
+1.14
+log
+@Portability: replaced queue macros in html.c (Joerg Sonnenberger).
+Fixed "-o" residue.
+Added "-O" to usage() (-o didn't appear there either).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.13 2009/10/24 05:45:04 kristaps Exp $ */
+d237 1
+a237 1
+	struct htmlpair	 tag[2];
+d251 3
+a253 1
+	t = print_otag(h, TAG_TABLE, 2, tag);
+d287 1
+a287 1
+	struct htmlpair	 tag[2];
+d296 3
+a298 1
+	t = print_otag(h, TAG_TABLE, 2, tag);
+@
+
+
+1.13
+log
+@Added `PD' to -man (doesn't do anything, yet).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.12 2009/10/22 18:55:32 kristaps Exp $ */
+a17 1
+#include <sys/queue.h>
+d182 1
+a182 1
+	t = SLIST_FIRST(&h->tags);
+@
+
+
+1.12
+log
+@Fixed maddening mismatch between groff and strftime mismatch of day ("%e").  Noted by Ulrich Sporlein.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.11 2009/10/18 19:03:36 kristaps Exp $ */
+d33 1
+d108 1
+@
+
+
+1.11
+log
+@Made sure devices and formats recognise that -man and -mdoc have different syntax for scaling widths: -mdoc assumes no unit means that the value is a string literal while -man instead uses the default vertical/horizontal scale.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.10 2009/10/13 10:57:25 kristaps Exp $ */
+a283 1
+	struct tm	 tm;
+d286 1
+a286 1
+	char		 b[BUFSIZ];
+d288 1
+a288 4
+	(void)localtime_r(&m->date, &tm);
+
+	if (0 == strftime(b, BUFSIZ - 1, "%B %e, %Y", &tm))
+		err(EXIT_FAILURE, "strftime");
+@
+
+
+1.10
+log
+@Moved output definitions into main.h.
+Pushed terminal_{mdoc,man} into {mdoc,man}_term.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.9 2009/10/09 07:10:37 kristaps Exp $ */
+d225 1
+a225 1
+	if (a2roffsu(n->string, su))
+d328 3
+a330 5
+	if (MAN_sp == n->tok) {
+		su.scale = 1;
+		if (n->child)
+			a2roffsu(n->child->string, &su);
+	} else if (MAN_br == n->tok)
+@
+
+
+1.9
+log
+@RS tags implemented for -Tman -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.8 2009/10/08 23:00:15 kristaps Exp $ */
+d30 1
+@
+
+
+1.8
+log
+@Consolidated some -man -Tascii functions.
+Added many -man -Thtml functions (almost complete).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.7 2009/10/07 12:35:23 kristaps Exp $ */
+d63 1
+d103 1
+a103 1
+	{ NULL, NULL }, /* RS */
+d569 2
+d627 2
+d676 27
+@
+
+
+1.7
+log
+@Additions to -Tman -Thtml: all structural components tested & in place.
+Fitted both -Thtml with handling of arbitrary vertical and horizontal scaling units (see groff(7)).  Undocumented until fitted into -Tascii (next release).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.6 2009/10/04 15:24:54 kristaps Exp $ */
+d53 1
+d55 4
+d60 1
+d63 1
+a63 2
+static	void		  man_root_post(MAN_ARGS);
+static	int		  man_root_pre(MAN_ARGS);
+d65 1
+d84 6
+a89 6
+	{ NULL, NULL }, /* SM */
+	{ NULL, NULL }, /* SB */
+	{ NULL, NULL }, /* BI */
+	{ NULL, NULL }, /* IB */
+	{ NULL, NULL }, /* BR */
+	{ NULL, NULL }, /* RB */
+d91 4
+a94 4
+	{ NULL, NULL }, /* B */
+	{ NULL, NULL }, /* I */
+	{ NULL, NULL }, /* IR */
+	{ NULL, NULL }, /* RI */
+d103 2
+a104 2
+	{ NULL, NULL }, /* DT */
+	{ NULL, NULL }, /* UC */
+d379 76
+d639 32
+@
+
+
+1.6
+log
+@Structural components of -man -Thtml in place (note that HP is the same as IP, as HTML doesn't "do" this construction without fixed page widths).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.5 2009/10/04 10:24:31 kristaps Exp $ */
+d27 1
+d50 2
+a51 1
+static	int		  a2width(const struct man_node *);
+d212 1
+a212 1
+a2width(const struct man_node *n)
+a213 2
+	int		 i, len;
+	const char	*p;
+d216 3
+a218 1
+		return(-1);
+d220 1
+a220 16
+	p = n->string;
+
+	if (0 == (len = (int)strlen(p)))
+		return(-1);
+
+	for (i = 0; i < len; i++) 
+		if ( ! isdigit((u_char)p[i]))
+			break;
+
+	if (i == len - 1)  {
+		if ('n' == p[len - 1] || 'm' == p[len - 1])
+			return(atoi(p));
+	} else if (i == len)
+		return(atoi(p));
+
+	return(-1);
+d239 3
+a241 4
+	tag[0].key = ATTR_CLASS;
+	tag[0].val = "header";
+	tag[1].key = ATTR_STYLE;
+	tag[1].val = "width: 100%;";
+d245 3
+a247 2
+	tag[0].key = ATTR_STYLE;
+	tag[0].val = "width: 10%;";
+d252 5
+a256 2
+	tag[0].key = ATTR_STYLE;
+	tag[0].val = "width: 80%; white-space: nowrap; text-align: center;";
+d261 4
+a264 2
+	tag[0].key = ATTR_STYLE;
+	tag[0].val = "width: 10%; text-align: right;";
+a267 1
+
+d286 3
+a288 4
+	tag[0].key = ATTR_CLASS;
+	tag[0].val = "footer";
+	tag[1].key = ATTR_STYLE;
+	tag[1].val = "width: 100%;";
+d292 3
+a294 2
+	tag[0].key = ATTR_STYLE;
+	tag[0].val = "width: 50%;";
+d299 4
+a302 2
+	tag[0].key = ATTR_STYLE;
+	tag[0].val = "width: 50%; text-align: right;";
+d315 2
+a316 2
+	int		len;
+	struct htmlpair	tag;
+d318 8
+a325 11
+	switch (n->tok) {
+	case (MAN_sp):
+		len = n->child ? atoi(n->child->string) : 1;
+		break;
+	case (MAN_br):
+		len = 0;
+		break;
+	default:
+		len = 1;
+		break;
+	}
+d327 2
+a328 3
+	buffmt(h, "height: %dem;", len);
+	tag.key = ATTR_STYLE;
+	tag.val = h->buf;
+d330 1
+a330 1
+	return(1);
+d338 2
+a339 1
+	struct htmlpair		tag[2];
+d342 4
+a345 7
+		buffmt(h, "margin-left: %dem;", INDENT);
+
+		tag[0].key = ATTR_CLASS;
+		tag[0].val = "sec-body";
+		tag[1].key = ATTR_STYLE;
+		tag[1].val = h->buf;
+
+d349 1
+a349 3
+		tag[0].key = ATTR_CLASS;
+		tag[0].val = "sec-block";
+
+d356 2
+a357 1
+		bufcat(h, "margin-top: 1em;");
+d359 2
+a360 5
+			bufcat(h, "margin-bottom: 1em;");
+
+		tag[1].key = ATTR_STYLE;
+		tag[1].val = h->buf;
+
+d365 1
+a365 3
+	tag[0].key = ATTR_CLASS;
+	tag[0].val = "sec-head";
+
+d376 1
+a376 1
+	int		 i;
+d378 1
+a378 1
+	i = 0;
+d381 1
+a381 3
+		tag[i].key = ATTR_CLASS;
+		tag[i++].val = "ssec-body";
+
+d383 4
+a386 3
+			bufcat(h, "margin-bottom: 1em;");
+			tag[i].key = ATTR_STYLE;
+			tag[i++].val = h->buf;
+d389 1
+a389 1
+		print_otag(h, TAG_DIV, i, tag);
+d392 1
+a392 3
+		tag[i].key = ATTR_CLASS;
+		tag[i++].val = "ssec-block";
+
+d395 4
+a398 3
+				bufcat(h, "margin-top: 1em;");
+				tag[i].key = ATTR_STYLE;
+				tag[i++].val = h->buf;
+d401 1
+a401 1
+		print_otag(h, TAG_DIV, i, tag);
+d405 4
+a408 7
+	buffmt(h, "margin-left: -%dem;", INDENT - HALFINDENT);
+
+	tag[0].key = ATTR_CLASS;
+	tag[0].val = "ssec-head";
+	tag[1].key = ATTR_STYLE;
+	tag[1].val = h->buf;
+
+d419 1
+d428 3
+a430 2
+		buffmt(h, "margin-left: %dem;", INDENT);
+		i = 1;
+d433 3
+a435 2
+		i = 1;
+		bufcat(h, "margin-bottom: 1em;");
+d438 2
+a439 3
+	tag.key = ATTR_STYLE;
+	tag.val = h->buf;
+	print_otag(h, TAG_DIV, i, &tag);
+d448 1
+a449 1
+	int		 	 len, ival;
+d451 1
+d453 12
+a464 2
+	if (MAN_BODY == n->type) {
+		print_otag(h, TAG_DIV, 0, NULL);
+a469 2
+	len = INDENT;
+	ival = -1;
+d471 2
+a472 1
+	/* Calculate the indentation length. */
+d474 1
+a474 1
+	if (NULL != nn)
+d478 1
+a478 2
+			if ((ival = a2width(nn)) >= 0)
+				len = ival;
+d481 3
+d485 3
+a487 3
+		buffmt(h, "clear: both; margin-left: %dem;", len);
+		tag.key = ATTR_STYLE;
+		tag.val = h->buf;
+d492 6
+a497 5
+	/* If there's an indent string, print it out. */
+
+	buffmt(h, "margin-left: -%dem; min-width: %dem;", 
+			len, len - 1);
+	bufcat(h, "clear: left; padding-right: 1em;");
+d500 1
+a500 1
+		bufcat(h, "float: left;");
+d502 1
+a502 2
+	tag.key = ATTR_STYLE;
+	tag.val = h->buf;
+d505 3
+a507 1
+	if (ival < 0)
+d510 6
+a515 4
+	/* With a length string, omit the last child. */
+
+	for (nn = n->child; nn->next; nn = nn->next)
+		print_man_node(m, nn, h);
+a524 1
+	int			 ival, len;
+d527 1
+d535 1
+a535 1
+	len = INDENT;
+d538 1
+a538 2
+		if ((ival = a2width(nn)) >= 0)
+			len = ival;
+d541 3
+a543 3
+		buffmt(h, "clear: both; margin-left: %dem;", len);
+		tag.key = ATTR_STYLE;
+		tag.val = h->buf;
+d548 3
+a550 1
+	buffmt(h, "text-indent: -%dem;", len);
+d552 1
+a552 2
+	tag.key = ATTR_STYLE;
+	tag.val = h->buf;
+a553 1
+
+@
+
+
+1.5
+log
+@Initial IP implementation in -Thtml -man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.4 2009/10/04 09:35:26 kristaps Exp $ */
+d30 3
+a32 1
+#define	INDENT		  7
+d52 1
+d70 1
+a70 1
+	{ NULL, NULL }, /* TP */
+d75 1
+a75 1
+	{ NULL, NULL }, /* HP */ 
+d215 2
+a216 2
+	assert(MAN_TEXT == n->type);
+	assert(n->string);
+d474 13
+a486 2
+	len = 1;
+	if (NULL != (nn = n->parent->head->child))
+d500 49
+a548 7
+	} else if (MAN_HEAD == n->type) {
+		buffmt(h, "margin-left: -%dem; min-width: %dem;", 
+				len, len - 1);
+		bufcat(h, "clear: left;");
+		bufcat(h, "padding-right: 1em;");
+		if (n->next && n->next->child)
+			bufcat(h, "float: left;");
+d552 2
+d555 1
+a555 1
+		/* Don't print the length value. */
+d557 3
+a559 4
+		for (nn = n->child; nn->next; nn = nn->next)
+			print_man_node(m, nn, h);
+		return(0);
+	}
+a560 1
+	print_otag(h, TAG_DIV, 0, &tag);
+d563 1
+@
+
+
+1.4
+log
+@SS, SH, PP, P, LP, br, sp tags in -man -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.3 2009/10/03 19:57:53 kristaps Exp $ */
+d20 2
+d47 2
+d50 1
+d71 1
+a71 1
+	{ NULL, NULL }, /* IP */
+d206 28
+d439 2
+a440 1
+	struct htmlpair	tag;
+d445 8
+a452 2
+	buffmt(h, "margin-left: %dem;", INDENT);
+	if (n->next && n->next->child) 
+d454 1
+d458 47
+a504 1
+	print_otag(h, TAG_DIV, 1, &tag);
+@
+
+
+1.3
+log
+@Added initial -man framework for -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.2 2009/10/03 15:08:09 kristaps Exp $ */
+d20 1
+d23 1
+d28 3
+a39 1
+
+d42 2
+d45 11
+d58 1
+a58 1
+	{ NULL, NULL }, /* br */
+d60 2
+a61 2
+	{ NULL, NULL }, /* SH */
+	{ NULL, NULL }, /* SS */
+d63 3
+a65 3
+	{ NULL, NULL }, /* LP */
+	{ NULL, NULL }, /* PP */
+	{ NULL, NULL }, /* P */
+d81 1
+a81 1
+	{ NULL, NULL }, /* sp */
+d126 1
+a126 1
+	/*print_man_nodelist(m, n, h);*/
+d144 276
+@
+
+
+1.2
+log
+@Element tag buffer is now part of struct html.
+buffmt() can be called in sequence.
+Noted BUFSIZ-sized buffer in CAVEATS (attribute length for link formats).
+Added -oman=FMT -Thtml option for `Xr' manual links.
+Removed -obase=URI -Thtml option (obsolete).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_html.c,v 1.1 2009/09/21 14:56:57 kristaps Exp $ */
+d26 48
+a74 1
+/* ARGSUSED */
+d78 48
+@
+
+
+1.1
+log
+@Split html.c into html.h, mdoc_html.c, man_html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.c,v 1.50 2009/09/21 14:40:31 kristaps Exp $ */
+d20 1
+@

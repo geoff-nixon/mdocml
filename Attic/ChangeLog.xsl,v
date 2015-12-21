@@ -1,0 +1,207 @@
+head	1.5;
+access;
+symbols
+	VERSION_1_10_10:1.4
+	VERSION_1_10_9:1.4
+	VERSION_1_10_8:1.4
+	VERSION_1_10_7:1.4
+	VERSION_1_10_6:1.4
+	VERSION_1_10_5:1.4
+	VERSION_1_10_5_PREPDF:1.4
+	VERSION_1_10_4:1.4
+	VERSION_1_10_3:1.4
+	VERSION_1_10_2:1.4
+	VERSION_1_10_1:1.4
+	VERSION_1_9_24:1.4
+	VERSION_1_9_25:1.4
+	VERSION_1_9_23:1.4
+	VERSION_1_9_22:1.4
+	VERSION_1_9_21:1.4
+	VERSION_1_9_20:1.4
+	VERSION_1_9_19:1.4
+	VERSION_1_9_18:1.4
+	VERSION_1_9_17:1.4
+	VERSION_1_9_16:1.4
+	VERSION_1_9_15:1.4
+	VERSION_1_9_15-pre2:1.4
+	VERSION_1_9_15-pre1:1.4
+	VERSION_1_9_14:1.4
+	VERSION_1_9_13:1.4
+	VERSION_1_9_12:1.4
+	VERSION_1_9_11:1.4
+	VERSION_1_9_10:1.4
+	VERSION_1_9_9:1.4
+	VERSION_1_9_8:1.4
+	VERSION_1_9_7:1.4
+	VERSION_1_9_6:1.4
+	VERSION_1_9_5:1.4
+	VERSION_1_9_2:1.3
+	VERSION_1_9_1:1.3
+	VERSION_1_9_0:1.3
+	VERSION_1_8_5:1.3
+	VERSION_1_8_4:1.3
+	VERSION_1_8_3:1.3
+	VERSION_1_8_2:1.3
+	VERSION_1_8_1:1.3;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2011.03.22.10.20.56;	author kristaps;	state dead;
+branches;
+next	1.4;
+
+1.4
+date	2009.09.21.15.12.03;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.07.19.08.49.57;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.07.16.14.07.23;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.07.16.13.41.12;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@As mentioned: ChangeLog isn't being built any more.
+@
+text
+@@
+
+
+1.4
+log
+@Wrong stylesheet in xsl.
+@
+text
+@a0 43
+<?xml version='1.0' encoding="utf-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" >
+<xsl:output encoding="utf-8" method="html" indent="yes" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN" />
+<xsl:template match="/changelog">
+<html>
+	<head>
+		<title>mdocml - CVS-ChangeLog</title>
+		<link rel="stylesheet" href="index.css" type="text/css" media="all" />
+	</head>
+	<body>
+				<xsl:for-each select="entry">
+					<div class="clhead">
+						<xsl:text>Files modified by </xsl:text>
+						<xsl:value-of select="concat(author, ': ', date, ' (', time, ')')" />
+					</div>
+					<div class="clbody">
+						<strong>
+							<xsl:text>Note: </xsl:text>
+						</strong>
+						<xsl:value-of select="msg"/>
+						<ul class="clbody">
+							<xsl:for-each select="file">
+								<li>
+									<xsl:value-of select="name"/>
+									<span class="rev">
+										<xsl:text> &#8212; Rev: </xsl:text>
+										<xsl:value-of select="revision"/>
+										<xsl:text>, Status: </xsl:text>
+										<xsl:value-of select="cvsstate"/>
+										<xsl:if test="tag">
+											<xsl:text>, Tag: </xsl:text>
+											<xsl:value-of select="tag" />
+										</xsl:if>
+									</span>
+								</li>
+							</xsl:for-each>
+						</ul>
+					</div>
+				</xsl:for-each>
+	</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+@
+
+
+1.3
+log
+@ChangeLog xsl reflects symbolic tag.
+@
+text
+@d8 1
+a8 1
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+@
+
+
+1.2
+log
+@Proper html showing of ChangeLog.
+@
+text
+@d30 4
+@
+
+
+1.1
+log
+@Added changelog xsl.
+@
+text
+@d1 1
+a1 1
+<?xml version='1.0' encoding="iso-8859-1"?>
+d3 36
+a38 37
+  <xsl:output encoding="iso-8859-15" method="html" indent="yes" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN" />
+  <xsl:template match="/changelog">
+    <html>
+    <head>
+      <title>mdocml - CVS-ChangeLog</title>
+      <style type="text/css">
+      	h3 { background-color: #E6E6FA; color: #000000; padding: 2px; }
+	.rev { color: #808080 }
+      </style>
+    </head>
+      <body>
+          <xsl:for-each select="entry">
+              <h3>
+	      	<xsl:text>Files modified by </xsl:text>
+                <xsl:value-of select="concat(author, ': ', date, ' (', time, ')')" />
+              </h3>
+	      <strong>
+	      	<xsl:text>Note: </xsl:text>
+	      </strong>
+	      	<xsl:value-of select="msg"/>
+              <ul>
+                <xsl:for-each select="file">
+		 <li>
+                  <xsl:value-of select="name"/>
+		  <span class="rev">
+		  <xsl:text> - Rev: </xsl:text>
+		  <xsl:value-of select="revision"/>
+		  <xsl:text>, Status: </xsl:text>
+		  <xsl:value-of select="cvsstate"/>
+		  </span>
+		 </li>
+                </xsl:for-each>
+              </ul>
+          </xsl:for-each>
+      </body>
+    </html>
+  </xsl:template>
+@

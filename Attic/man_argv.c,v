@@ -1,0 +1,385 @@
+head	1.9;
+access;
+symbols
+	VERSION_1_10_10:1.5
+	VERSION_1_10_9:1.5
+	VERSION_1_10_8:1.4
+	VERSION_1_10_7:1.4
+	VERSION_1_10_6:1.4
+	VERSION_1_10_5:1.4
+	VERSION_1_10_5_PREPDF:1.4
+	VERSION_1_10_4:1.4
+	VERSION_1_10_3:1.4
+	VERSION_1_10_2:1.4
+	VERSION_1_10_1:1.3
+	VERSION_1_9_24:1.2
+	VERSION_1_9_25:1.2
+	VERSION_1_9_23:1.2
+	VERSION_1_9_22:1.2
+	VERSION_1_9_21:1.2
+	VERSION_1_9_20:1.2
+	VERSION_1_9_19:1.2
+	VERSION_1_9_18:1.2
+	VERSION_1_9_17:1.2
+	VERSION_1_9_16:1.2
+	VERSION_1_9_15:1.2
+	VERSION_1_9_15-pre2:1.2
+	VERSION_1_9_15-pre1:1.1
+	VERSION_1_9_14:1.1
+	VERSION_1_9_13:1.1
+	VERSION_1_9_12:1.1
+	VERSION_1_9_11:1.1
+	VERSION_1_9_10:1.1
+	VERSION_1_9_9:1.1
+	VERSION_1_9_8:1.1
+	VERSION_1_9_7:1.1
+	VERSION_1_9_6:1.1
+	VERSION_1_9_5:1.1
+	VERSION_1_9_2:1.1
+	VERSION_1_9_1:1.1
+	VERSION_1_9_0:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.9
+date	2011.03.23.15.33.57;	author kristaps;	state dead;
+branches;
+next	1.8;
+
+1.8
+date	2011.03.23.12.40.04;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.03.22.14.33.05;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.01.03.22.42.37;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.01.01.17.14.28;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.08.13.11.45.29;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@Merge man_args() into man_macro.c, the only place where it's called, and
+make its return value boolean (we don't care about QWORD).  We can move
+it into mdoc_macro.c because it's basically just a wrapper around
+mandoc_getarg().  Then blow away man_argv.c, which is left empty.
+@
+text
+@@
+
+
+1.8
+log
+@First, make -man ARGS_EOLN et al. be an enum.  Second, remove
+ARGS_ERROR, as it is never returned by man_args().  Then clean up
+invocations of man_args() to only check for ARGS_EOLN.
+@
+text
+@a0 42
+/*	$Id: man_argv.c,v 1.7 2011/03/22 14:33:05 kristaps Exp $ */
+/*
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <assert.h>
+
+#include "man.h"
+#include "mandoc.h"
+#include "libman.h"
+#include "libmandoc.h"
+
+enum margserr
+man_args(struct man *m, int line, int *pos, char *buf, char **v)
+{
+	char	 *start;
+
+	assert(*pos);
+	*v = start = buf + *pos;
+	assert(' ' != *start);
+
+	if ('\0' == *start)
+		return(ARGS_EOLN);
+
+	*v = mandoc_getarg(m->parse, v, line, pos);
+	return('"' == *start ? ARGS_QWORD : ARGS_WORD);
+}
+@
+
+
+1.7
+log
+@libmdoc.h and libman.h were including mdoc.h and man.h, respectively.
+Don't have them do that (includes in header files = faugh), and have
+individual files directly include these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_argv.c,v 1.6 2011/03/20 16:02:05 kristaps Exp $ */
+a20 2
+#include <sys/types.h>
+
+d28 1
+a28 1
+int
+@
+
+
+1.6
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_argv.c,v 1.5 2011/01/03 22:42:37 schwarze Exp $ */
+d25 1
+a29 1
+
+@
+
+
+1.5
+log
+@Unify roff macro argument parsing (in roff.c, roff_userdef()) and man macro
+argument parsing (in man_argv.c, man_args()), both having different bugs,
+to use one common macro argument parser (in mandoc.c, mandoc_getarg()),
+because from the point of view of roff, man macros are just roff macros,
+hence their arguments are parsed in exactly the same way.
+
+While doing so, fix these bugs:
+ * Escaped blanks (i.e. those preceded by an odd number of backslashes)
+   were mishandled as argument separators in unquoted arguments to
+   user-defined roff macros.
+ * Unescaped blanks preceded by an even number of backslashes were not
+   recognized as argument separators in unquoted arguments to man macros.
+ * Escaped backslashes (i.e. pairs of backslashes) were not reduced
+   to single backslashes both in unquoted and quoted arguments both
+   to user-defined roff macros and to man macros.
+ * Escaped quotes (i.e. pairs of quotes inside quoted arguments) were
+   not reduced to single quotes in man macros.
+
+OK kristaps@@
+
+Note that mdoc macro argument parsing is yet another beast for no good
+reason and is probably afflicted by similar bugs.  But i don't attempt
+to fix that right now because it is intricately entangled with lots of
+unrelated high-level mdoc(7) functionality, like delimiter handling and
+column list phrase handling.  Disentagling that would waste too much
+time now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_argv.c,v 1.4 2010/06/19 20:46:28 kristaps Exp $ */
+d42 1
+a42 1
+	*v = mandoc_getarg(v, m->msg, m->data, line, pos);
+@
+
+
+1.4
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_argv.c,v 1.3 2010/05/17 22:11:42 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+a23 2
+#include <stdlib.h>
+#include <string.h>
+d27 1
+d33 1
+d36 2
+a37 1
+	assert(' ' != buf[*pos]);
+d39 1
+a39 1
+	if (0 == buf[*pos])
+d42 2
+a43 62
+	*v = &buf[*pos];
+
+	/* 
+	 * Process a quoted literal.  A quote begins with a double-quote
+	 * and ends with a double-quote NOT preceded by a double-quote.
+	 * Whitespace is NOT involved in literal termination.
+	 */
+
+	if ('\"' == buf[*pos]) {
+		*v = &buf[++(*pos)];
+
+		for ( ; buf[*pos]; (*pos)++) {
+			if ('\"' != buf[*pos])
+				continue;
+			if ('\"' != buf[*pos + 1])
+				break;
+			(*pos)++;
+		}
+
+		if (0 == buf[*pos]) {
+			if ( ! man_pmsg(m, line, *pos, MANDOCERR_BADQUOTE))
+				return(ARGS_ERROR);
+			return(ARGS_QWORD);
+		}
+
+		buf[(*pos)++] = 0;
+
+		if (0 == buf[*pos])
+			return(ARGS_QWORD);
+
+		while (' ' == buf[*pos])
+			(*pos)++;
+
+		if (0 == buf[*pos])
+			if ( ! man_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE))
+				return(ARGS_ERROR);
+
+		return(ARGS_QWORD);
+	}
+
+	/* 
+	 * A non-quoted term progresses until either the end of line or
+	 * a non-escaped whitespace.
+	 */
+
+	for ( ; buf[*pos]; (*pos)++)
+		if (' ' == buf[*pos] && '\\' != buf[*pos - 1])
+			break;
+
+	if (0 == buf[*pos])
+		return(ARGS_WORD);
+
+	buf[(*pos)++] = 0;
+
+	while (' ' == buf[*pos])
+		(*pos)++;
+
+	if (0 == buf[*pos])
+		if ( ! man_pmsg(m, line, *pos, MANDOCERR_EOLNSPACE))
+			return(ARGS_ERROR);
+
+	return(ARGS_WORD);
+a44 1
+
+@
+
+
+1.3
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_argv.c,v 1.2 2010/01/01 17:14:28 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.2
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_argv.c,v 1.1 2009/08/13 11:45:29 kristaps Exp $ */
+d27 1
+d61 1
+a61 1
+			if ( ! man_pwarn(m, line, *pos, WTQUOTE))
+d75 1
+a75 1
+			if ( ! man_pwarn(m, line, *pos, WTSPACE))
+d99 1
+a99 1
+		if ( ! man_pwarn(m, line, *pos, WTSPACE))
+@
+
+
+1.1
+log
+@Significant overhaul in libman.  Macros are now block- and line-scoped (with
+next-line scope extensions possible).  man.7 reflects block and line scoping,
+and also includes a REFERENCE section that will be used as a template for the
+big mdoc reference.  Many fixes in next-line behaviour for both inline and
+block macros.  Added some macros for compatibility (from me.7).  Corrected
+quoted-literal handling for libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_argv.c,v 1.21 2009/07/20 14:12:27 kristaps Exp $ */
+d17 4
+@

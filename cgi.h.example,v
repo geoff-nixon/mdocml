@@ -1,0 +1,109 @@
+head	1.4;
+access;
+symbols
+	VERSION_1_13_3:1.3
+	VERSION_1_13_2:1.3
+	VERSION_1_13_1:1.3;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2015.11.05.20.55.41;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.07.21.15.45.17;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.07.13.15.38.36;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.07.12.18.32.47;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@Use include files "header.html" and "footer.html" rather than a
+compiled-in string.  This is not a security risk, we read the file
+manpath.conf from the same directory, anyway.  No error handling
+is needed; even if the files are absent, that's not an error.
+
+This is more flexible without causing complication of the code or
+the user interface.  It helps the upcoming revamp of the online
+manual pages on man.NetBSD.org.
+
+Based on an idea by Jean-Yves Migeon <jeanyves dot migeon at free dot fr>,
+but implemented in a much simpler way.
+@
+text
+@/* Example compile-time configuration file for man.cgi(8). */
+
+#define	HTTP_HOST "mdocml.bsd.lv"
+#define	MAN_DIR "/var/www/man"
+#define	CSS_DIR ""
+#define	CUSTOMIZE_TITLE "Manual pages with mandoc"
+#define	COMPAT_OLDURI Yes
+@
+
+
+1.3
+log
+@Kristaps points out that the current HTTP/1.1 draft standard (RFC
+2616) requires the Location: response-header field to be an absolute
+URI (14.30), and only the most recent proposed standard (RFC 7231),
+which is barely a month old, allows a relative Location: (7.1.2).
+While most modern browsers appear to support relative Location:
+headers, some may not, and it's maybe a bit early to rely on relative
+Location: headers.
+
+I'm not going back to the HTTP_HOST or SERVER_NAME CGI variables,
+though.  While some CGI programs certainly require those, in which
+case both the CGI programmer and the web server admin have to be
+very careful to keep the system secure and reliable, man.cgi(8)
+does not really need them.  We always know at compile time which
+domain we are running for, and for man.cgi(8), security and reliability
+are definitely much more important than flexibility.  So make HTTP_HOST
+a compile-time definition for now.
+@
+text
+@a6 2
+#define	CUSTOMIZE_BEGIN "<H2>\nManual pages with " \
+	"<A HREF=\"http://mdocml.bsd.lv/\">mandoc</A>\n</H2>"
+@
+
+
+1.2
+log
+@Compatibility hack for the old "manpath=OpenBSD<blank>" query parameter format;
+unfortunate, more than 400 links needing this are scattered all around
+the www.openbsd.org website, and CVSweb needs this as well.
+@
+text
+@d3 1
+d9 1
+a9 1
+#define COMPAT_OLDURI Yes
+@
+
+
+1.1
+log
+@No need for run-time configuration, add minimal compile-time
+configuration facilities, just two paths and two HTML strings.
+Show the title on all pages, not just the index page.
+@
+text
+@d8 1
+@

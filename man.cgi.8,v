@@ -1,0 +1,868 @@
+head	1.13;
+access;
+symbols
+	VERSION_1_13_3:1.11
+	VERSION_1_13_2:1.11
+	VERSION_1_13_1:1.9;
+locks; strict;
+comment	@# @;
+
+
+1.13
+date	2015.11.05.20.55.41;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.11.05.17.47.51;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2014.09.14.19.44.28;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2014.08.22.15.49.50;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2014.07.22.18.14.13;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2014.07.21.15.45.17;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2014.07.18.19.03.39;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2014.07.13.15.38.36;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2014.07.13.09.39.32;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2014.07.13.00.19.51;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.07.12.23.41.04;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.07.11.21.30.52;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.07.10.00.31.10;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.13
+log
+@Use include files "header.html" and "footer.html" rather than a
+compiled-in string.  This is not a security risk, we read the file
+manpath.conf from the same directory, anyway.  No error handling
+is needed; even if the files are absent, that's not an error.
+
+This is more flexible without causing complication of the code or
+the user interface.  It helps the upcoming revamp of the online
+manual pages on man.NetBSD.org.
+
+Based on an idea by Jean-Yves Migeon <jeanyves dot migeon at free dot fr>,
+but implemented in a much simpler way.
+@
+text
+@.\"     $Id: man.cgi.8,v 1.12 2015/11/05 17:47:51 schwarze Exp $
+.\"
+.\" Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: November 5 2015 $
+.Dt MAN.CGI 8
+.Os
+.Sh NAME
+.Nm man.cgi
+.Nd CGI program to search and display manual pages
+.Sh DESCRIPTION
+The
+.Nm
+CGI program searches for manual pages on a WWW server
+and displays them to HTTP clients,
+providing functionality equivalent to the
+.Xr apropos 1
+and
+.Xr man 1
+utilities.
+It can use multiple manual trees in parallel.
+.Ss HTML search interface
+At the top of each generated HTML page,
+.Nm
+displays a search form containing these elements:
+.Bl -enum
+.It
+An input box for search queries, expecting
+either a name of a manual page or an
+.Ar expression
+using the syntax described in the
+.Xr apropos 1
+manual; filling this in is required for each search.
+.Pp
+The expression is broken into words at whitespace.
+Whitespace characters and backslashes can be escaped
+by prepending a backslash.
+The effect of prepending a backslash to another character is undefined;
+in the current implementation, it has no effect.
+.It
+A
+.Dq Submit
+button to send a search request from the client to the server.
+.It
+A
+.Dq Reset
+button to undo any changes to the input boxes and the dropdown menus
+and reset them to the values contained in the
+.Ev QUERY_STRING .
+.It
+Radio buttons to select pages either by name like in
+.Xr man 1
+or using
+.Xr apropos 1
+queries.
+.It
+A dropdown menu to optionally select a manual section.
+If one is provided, it has the same effect as the
+.Xr man 1
+and
+.Xr apropos 1
+.Fl s
+option.
+Otherwise, pages from all sections are shown.
+.It
+A dropdown menu to optionally select an architecture.
+If one is provided, it has the same effect as the
+.Xr man 1
+and
+.Xr apropos 1
+.Fl S
+option.
+By default, pages for all architectures are shown.
+.It
+A dropdown menu to select a manual tree.
+If the configuration file
+.Pa /var/www/man/manpath.conf
+contains only one manpath, the dropdown menu is not shown.
+By default, the first manpath given in the file is used.
+.El
+.Ss Program output
+The
+.Nm
+program generates five kinds of output pages:
+.Bl -tag -width Ds
+.It The index page.
+This is returned when calling
+.Nm
+without
+.Ev PATH_INFO
+and without a
+.Ev QUERY_STRING .
+It serves as a starting point for using the program
+and shows the search form only.
+.It A list page.
+Lists are returned when searches match more than one manual page.
+The first column shows the names and section numbers of manuals
+as clickable links.
+The second column shows the one-line descriptions of the manuals.
+.It A manual page.
+This output format is used when a search matches exactly one
+manual page, or when a link on a list page or an
+.Ic \&Xr
+link on another manual page is followed.
+.It A no-result page.
+This is shown when a search request returns no results -
+eiher because it violates the query syntax, or because
+the search does not match any manual pages.
+.It \&An error page.
+This cannot happen by merely clicking the
+.Dq Search
+button, but only by manually entering an invalid URI.
+It does not show the search form, but only an error message
+and a link back to the index page.
+.El
+.Ss Setup
+For each manual tree, create one first-level subdirectory below
+.Pa /var/www/man .
+The name of one of these directories is called a
+.Dq manpath
+in the context of
+.Nm .
+Create a single ASCII text file
+.Pa /var/www/man/manpath.conf
+containing the names of these directories, one per line.
+The directory given first is used as the default manpath.
+.Pp
+Inside each of these directories, use the same directory and file
+structure as found below
+.Pa /usr/share/man ,
+that is, second-level subdirectories
+.Pa /var/www/man/*/man1 , /var/www/man/*/man2
+etc. containing source
+.Xr mdoc 7
+and
+.Xr man 7
+manuals with file name extensions matching the section numbers,
+second-level subdirectories
+.Pa /var/www/man/*/cat1 , /var/www/man/*/cat2
+etc. containing preformatted manuals with the file name extension
+.Sq 0 ,
+and optional third-level subdirectories for architectures.
+Use
+.Xr makewhatis 8
+to create a
+.Xr mandoc.db 5
+database inside each manpath.
+.Pp
+Configure your web server to execute CGI programs located in
+.Pa /cgi-bin .
+When using
+.Ox
+.Xr httpd 8
+or
+.Xr nginx 8 ,
+the
+.Xr slowcgi 8
+proxy daemon is needed to translate FastCGI requests to plain old CGI.
+.Pp
+To compile
+.Nm ,
+first copy
+.Pa cgi.h.example
+to
+.Pa cgi.h
+and edit it according to your needs.
+It contains the following compile-time definitions:
+.Bl -tag -width Ds
+.It Ev COMPAT_OLDURI
+Only useful for running on www.openbsd.org to deal with old URIs containing
+.Qq "manpath=OpenBSD "
+where the blank character has to be translated to a hyphen.
+When compiling for other sites, this definition can be deleted.
+.It Ev CSS_DIR
+An optional path to the directory containing the CSS files,
+to be specified relative to the server's document root,
+and to be specified without a trailing slash.
+When not specified, the CSS files
+are assumed to be in the document root.
+This is used in generated HTML code.
+.It Ev CUSTOMIZE_TITLE
+An ASCII string to be used for the HTML <TITLE> element.
+.It Ev HTTP_HOST
+The FQDN of the (possibly virtual) host the HTTP server is running on.
+This is used for
+.Ic Location:
+headers in HTTP 303 responses.
+.It Ev MAN_DIR
+A path to the
+.Nm
+data directory to be used instead of
+.Pa /var/www/man ,
+relative to the web server
+.Xr chroot 2
+directory, to be specified without a trailing slash.
+This is prepended to the manpath when opening
+.Xr mandoc.db 5
+and manual page files.
+.El
+.Pp
+After editing
+.Pa cgi.h ,
+run
+.Pp
+.Dl make man.cgi
+.Pp
+and copy the files to the proper locations.
+Reading the
+.Cm installcgi
+target in the
+.Pa Makefile
+can help with that, but do not run it without carefully checking it
+because the directory layouts of web servers vary greatly.
+.Ss URI interface
+.Nm
+uniform resource identifiers are not needed for interactive use,
+but can be useful for deep linking.
+They consist of:
+.Bl -enum
+.It
+The
+.Cm http://
+protocol specifier.
+.It
+The host name and a following slash.
+.It
+The path to the program, normally
+.Pa cgi-bin/man.cgi/ .
+.It
+To show a single page, a slash, the manpath, another slash,
+and the name of the requested file, for example
+.Pa /OpenBSD-current/man1/mandoc.1 .
+.It
+For searches, a query string starting with a question mark
+and consisting of
+.Ar key Ns = Ns Ar value
+pairs, separated by ampersands, for example
+.Pa ?manpath=OpenBSD-current&query=mandoc .
+Supported keys are
+.Cm manpath ,
+.Cm query ,
+.Cm sec ,
+.Cm arch ,
+corresponding to
+.Xr apropos 1
+.Fl M ,
+.Ar expression ,
+.Fl s ,
+.Fl S ,
+respectively, and
+.Cm apropos ,
+which is a boolean parameter to select or deselect the
+.Xr apropos 1
+query mode.
+For backward compatibility with the traditional
+.Nm ,
+.Cm sektion
+is supported as an alias for
+.Cm sec .
+.El
+.Ss Restricted character set
+For security reasons, in particular to prevent cross site scripting
+attacks, some strings used by
+.Nm
+can only contain the following characters:
+.Pp
+.Bl -dash -compact -offset indent
+.It
+lower case and upper case ASCII letters
+.It
+the ten decimal digits
+.It
+the dash
+.Pq Sq -
+.It
+the dot
+.Pq Sq \&.
+.It
+the slash
+.Pq Sq /
+.It
+the underscore
+.Pq Sq _
+.El
+.Pp
+In particular, this applies to the
+.Ev SCRIPT_NAME ,
+to all manpaths, and to all architecture names.
+.Sh ENVIRONMENT
+The web server may pass the following CGI variables to
+.Nm :
+.Bl -tag -width Ds
+.It Ev PATH_INFO
+The final part of the URI path passed from the client to the server,
+starting after the
+.Ev SCRIPT_NAME
+and ending before the
+.Ev QUERY_STRING .
+It is used by the
+.Cm show
+page to acquire the manpath and filename it needs.
+.It Ev QUERY_STRING
+The HTTP query string passed from the client to the server.
+It is the final part of the URI, after the question mark.
+It is used by the
+.Cm search
+page to acquire the named parameters it needs.
+.It Ev SCRIPT_NAME
+The path to the
+.Nm
+binary relative to the server root, usually
+.Pa /cgi-bin/man.cgi .
+This is used for generating URIs to be embedded
+in generated HTML code and HTTP headers.
+If this contains any character not contained in the
+.Sx Restricted character set ,
+.Nm
+reports an internal server error and exits without doing anything.
+.El
+.Sh FILES
+.Bl -tag -width Ds
+.It Pa /var/www
+Default web server
+.Xr chroot 2
+directory.
+All the following paths are specified relative to this directory.
+.It Pa /cgi-bin/man.cgi
+The path to the
+.Nm
+program relative to the server root.
+Can be overridden by
+.Ev SCRIPT_NAME .
+.It Pa /htdocs
+The path to the server document root relative to the server root.
+This is part of the web server configuration and not specific to
+.Nm .
+.It Pa /htdocs/mandoc.css
+A style sheet for
+.Xr mandoc 1
+HTML styling, referenced from each generated HTML page.
+.It Pa /man
+Default
+.Nm
+data directory containing all the manual trees.
+Can be overridden by
+.Ev MAN_DIR .
+.It Pa /man/mandoc/man1/apropos.1 , /man/mandoc/man8/man.cgi.8
+Manual pages documenting
+.Nm
+itself, linked from the index page.
+.It Pa /man/manpath.conf
+The list of available manpaths, one per line.
+If any of the lines in this file contains a slash
+.Pq Sq /
+or any character not contained in the
+.Sx Restricted character set ,
+.Nm
+reports an internal server error and exits without doing anything.
+.It Pa /man/header.html
+An optional file containing static HTML code to be inserted right
+after opening the <BODY> element.
+.It Pa /man/footer.html
+An optional file containing static HTML code to be inserted right
+before closing the <BODY> element.
+.It Pa /man/OpenBSD-current/man1/mandoc.1
+An example
+.Xr mdoc 7
+source file located below the
+.Dq OpenBSD-current
+manpath.
+.El
+.Sh COMPATIBILITY
+The
+.Nm
+CGI program is call-compatible with queries from the traditional
+.Pa man.cgi
+script by Wolfram Schneider.
+However, the output may not be quite the same.
+.Sh SEE ALSO
+.Xr apropos 1 ,
+.Xr mandoc.db 5 ,
+.Xr makewhatis 8 ,
+.Xr slowcgi 8
+.Sh HISTORY
+A version of
+.Nm
+based on
+.Xr mandoc 1
+first appeared in mdocml-1.12.1 (March 2012).
+The current SQLite3-based version first appeared in
+.Ox 5.6 .
+.Sh AUTHORS
+.An -nosplit
+The
+.Nm
+program was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv
+and ported to the SQLite3-based
+.Xr mandoc.db 5
+backend by
+.An Ingo Schwarze Aq Mt schwarze@@openbsd.org .
+@
+
+
+1.12
+log
+@Unify the three stylesheets into a single CSS file.
+Many thanks to bentley@@ for doing this work.
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.11 2014/09/14 19:44:28 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 14 2014 $
+a192 4
+.It Ev CUSTOMIZE_BEGIN
+A HTML string to be inserted right after opening the
+.Aq BODY
+element.
+d194 1
+a194 3
+An ASCII string to be used for the HTML
+.Aq TITLE
+element.
+d371 6
+@
+
+
+1.11
+log
+@Support backslash-escaping of white space in the query expression,
+to be more similar to apropos(1) called from the shell.
+Missing feature reported by Marcus MERIGHI <mcmer dash openbsd at
+tor dot at> on misc@@.
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.10 2014/08/22 15:49:50 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 22 2014 $
+d164 3
+d355 1
+a355 5
+.It Pa /htdocs/man-cgi.css
+A style sheet for general
+.Nm
+styling, referenced from each generated HTML page.
+.It Pa /htdocs/man.css
+d358 1
+a358 2
+HTML styling, referenced from each generated HTML page after
+.Pa man-cgi.css .
+@
+
+
+1.10
+log
+@typo; noticed by jmc@@ some time ago
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.9 2014/07/22 18:14:13 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 22 2014 $
+d46 6
+@
+
+
+1.9
+log
+@Security fix to prevent XSS attacks:
+Restrict the character set of strings passed into html_alloc(),
+in particular architecture names that come from the QUERY_STRING,
+but also SCRIPT_NAME and manpath.conf content for additional safety,
+and bail out safely on violations.
+Issue reported by Sebastien Marie <semarie-openbsd at latrappe dot fr>.
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.8 2014/07/21 15:45:17 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 21 2014 $
+d310 1
+a310 1
+page to aquire the manpath and filename it needs.
+@
+
+
+1.8
+log
+@Kristaps points out that the current HTTP/1.1 draft standard (RFC
+2616) requires the Location: response-header field to be an absolute
+URI (14.30), and only the most recent proposed standard (RFC 7231),
+which is barely a month old, allows a relative Location: (7.1.2).
+While most modern browsers appear to support relative Location:
+headers, some may not, and it's maybe a bit early to rely on relative
+Location: headers.
+
+I'm not going back to the HTTP_HOST or SERVER_NAME CGI variables,
+though.  While some CGI programs certainly require those, in which
+case both the CGI programmer and the web server admin have to be
+very careful to keep the system secure and reliable, man.cgi(8)
+does not really need them.  We always know at compile time which
+domain we are running for, and for man.cgi(8), security and reliability
+are definitely much more important than flexibility.  So make HTTP_HOST
+a compile-time definition for now.
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.7 2014/07/18 19:03:39 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 18 2014 $
+d270 28
+d324 4
+d367 6
+@
+
+
+1.7
+log
+@Do not use the HTTP_HOST CGI variable,
+just make the HTTP redirect Location: relative.
+Less user input is good, it reduces the attack surface.
+Besides, this removes one global variable and 4 lines of code.
+
+Patch from Sebastien Marie <semarie-openbsd at latrappe dot fr>.
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.6 2014/07/13 15:38:36 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 13 2014 $
+d192 5
+@
+
+
+1.6
+log
+@Compatibility hack for the old "manpath=OpenBSD<blank>" query parameter format;
+unfortunate, more than 400 links needing this are scattered all around
+the www.openbsd.org website, and CVSweb needs this as well.
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.5 2014/07/13 09:39:32 schwarze Exp $
+a268 5
+.It Ev HTTP_HOST
+The FQDN of the (possibly virtual) host the HTTP server is running on.
+This is used for
+.Ic Location:
+headers in HTTP 303 responses.
+@
+
+
+1.5
+log
+@Install the manuals of the web interface below the same directory
+as manpath.conf, such that we do not need to mix our own documentation
+into the documentation we are serving, which may not even be possible
+if the latter is updated automatically.
+
+Based on an idea by beck@@.
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.4 2014/07/13 00:19:51 schwarze Exp $
+d162 56
+a341 21
+.Sh COMPILE-TIME DEFINES
+.Bl -tag -width Ds
+.It Ev CSS_DIR
+An optional path to the directory containing the CSS files,
+to be specified relative to the server's document root,
+and to be specified without a trailing slash.
+When not specified, the CSS files
+are assumed to be in the document root.
+This is used in generated HTML code.
+.It Ev MAN_DIR
+A path to the
+.Nm
+data directory to be used instead of
+.Pa /var/www/man ,
+relative to the web server
+.Xr chroot 2
+directory, to be specified without a trailing slash.
+This is prepended to the manpath when opening
+.Xr mandoc.db 5
+and manual page files.
+.El
+@
+
+
+1.4
+log
+@update after recent code changes
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.3 2014/07/12 23:41:04 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 12 2014 $
+d273 4
+@
+
+
+1.3
+log
+@Polish the search form using feedback from beck@@ and others,
+in particular introduce a section dropdown and an architecture dropdown.
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.2 2014/07/11 21:30:52 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 11 2014 $
+d40 2
+a41 6
+A
+.Dq Search
+button to send a search request from the client to the server,
+to be clicked after filling in the following input box(es).
+.It
+An input box for search queries, expecting an
+d47 17
+a63 1
+An input box for an optional section number.
+d65 2
+d72 1
+a72 1
+An input box for an optional architecture name.
+d74 2
+a85 6
+.It
+A
+.Dq Reset
+button to undo any changes to the input boxes and the dropdown menu
+and reset them to the values contained in the
+.Ev QUERY_STRING .
+d178 1
+a178 10
+A page name, which can be
+.Cm index ,
+which is the default and can be omitted,
+.Cm search ,
+or
+.Cm show .
+.It
+For
+.Cm show
+only, a slash, the manpath, another slash,
+d182 1
+a182 3
+For
+.Cm search
+only, a query string starting with a question mark
+d186 1
+a186 1
+.Pa ?manpath=OpenBSD-current&expr=mandoc .
+d189 1
+a189 1
+.Cm expr ,
+a190 1
+and
+a196 1
+and
+d198 5
+a202 1
+respectively.
+d205 1
+a205 1
+.Cm query
+a206 4
+.Cm expr
+and
+.Cm sektion
+as an alias for
+a212 7
+.It Ev CSS_DIR
+An optional path to the directory containing the CSS files,
+to be specified relative to the server's document root,
+and to be specified without a trailing slash.
+When not specified, the CSS files
+are assumed to be in the document root.
+This is used in generated HTML code.
+a217 11
+.It Ev MAN_DIR
+A path to the
+.Nm
+data directory to be used instead of
+.Pa /man ,
+relative to the web server
+.Xr chroot 2
+directory, to be specified without a trailing slash.
+This is prepended to the manpath when opening
+.Xr mandoc.db 5
+and manual page files.
+d282 21
+d309 1
+a309 1
+However, the results may not be quite the same.
+@
+
+
+1.2
+log
+@add HISTORY section
+@
+text
+@d1 1
+a1 1
+.\"     $Id: man.cgi.8,v 1.1 2014/07/10 00:31:10 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 10 2014 $
+d174 1
+a174 1
+.It 
+@
+
+
+1.1
+log
+@Full rewrite of the man.cgi(8) manual.
+
+Almost everything in the old man.cgi(7) was outdated in one way
+or another - catman, catman.conf, CACHE_DIR, /cache, manroots,
+replacing '/' with spaces, /tmp...
+
+Instead, document the HTML and URI interfaces, the output and the setup,
+and complete the listings of ENVIRONMENT variables and FILES.
+
+Using section 8 instead of section 7 because that's the usual place
+for CGI programs, see for example bgplg(8) and slowcgi(8).
+@
+text
+@d1 1
+a1 1
+.\"     $Id$
+d17 1
+a17 1
+.Dd $Mdocdate$
+d315 8
+@

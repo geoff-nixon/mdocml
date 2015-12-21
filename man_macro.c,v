@@ -1,0 +1,4550 @@
+head	1.113;
+access;
+symbols
+	VERSION_1_13_3:1.98
+	VERSION_1_13_2:1.91
+	VERSION_1_12_4:1.89
+	VERSION_1_13_1:1.87
+	VERSION_1_12_3:1.79
+	VERSION_1_12_2:1.75
+	VERSION_1_12:1.89.0.2
+	VERSION_1_12_1:1.71
+	VERSION_1_12_0:1.65
+	VERSION_1_11_7:1.64
+	VERSION_1_11_6:1.64
+	VERSION_1_11_5:1.64
+	VERSION_1_11_4:1.64
+	VERSION_1_11_3:1.62
+	VERSION_1_11_2:1.62
+	VERSION_1_11_1:1.60
+	VERSION_1_10_10:1.56
+	VERSION_1_10_9:1.54
+	VERSION_1_10_8:1.54
+	VERSION_1_10_7:1.53
+	VERSION_1_10_6:1.50
+	VERSION_1_10_5:1.49
+	VERSION_1_10_5_PREPDF:1.49
+	VERSION_1_10_4:1.48
+	VERSION_1_10_3:1.48
+	VERSION_1_10_2:1.47
+	VERSION_1_10_1:1.46
+	VERSION_1_9_24:1.42
+	VERSION_1_9_25:1.42
+	VERSION_1_9_23:1.42
+	VERSION_1_9_22:1.42
+	VERSION_1_9_21:1.42
+	VERSION_1_9_20:1.42
+	VERSION_1_9_19:1.40
+	VERSION_1_9_18:1.40
+	VERSION_1_9_17:1.37
+	VERSION_1_9_16:1.31
+	VERSION_1_9_15:1.30
+	VERSION_1_9_15-pre2:1.30
+	VERSION_1_9_15-pre1:1.29
+	VERSION_1_9_14:1.29
+	VERSION_1_9_13:1.29
+	VERSION_1_9_12:1.29
+	VERSION_1_9_11:1.29
+	VERSION_1_9_10:1.29
+	VERSION_1_9_9:1.28
+	VERSION_1_9_8:1.28
+	VERSION_1_9_7:1.28
+	VERSION_1_9_6:1.28
+	VERSION_1_9_5:1.28
+	VERSION_1_9_2:1.28
+	VERSION_1_9_1:1.27
+	VERSION_1_9_0:1.20
+	VERSION_1_8_5:1.18
+	VERSION_1_8_4:1.18
+	VERSION_1_8_3:1.17
+	VERSION_1_8_2:1.17
+	VERSION_1_8_1:1.17
+	VERSION_1_8_0:1.17
+	VERSION_1_7_24:1.17
+	VERSION_1_7_23:1.17
+	VERSION_1_7_22:1.17
+	VERSION_1_7_21:1.17
+	VERSION_1_7_20:1.17
+	VERSION_1_7_19:1.16
+	VERSION_1_7_17:1.15
+	VERSION_1_7_16:1.15
+	VERSION_1_7_15:1.15
+	VERSION_1_7_14:1.15
+	VERSION_1_7_13:1.14
+	VERSION_1_7_12:1.13
+	OPENBSD_CHECKIN:1.13
+	VERSION_1_7_10:1.13
+	VERSION_1_7_5:1.9;
+locks; strict;
+comment	@ * @;
+
+
+1.113
+date	2015.10.22.21.54.23;	author schwarze;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2015.09.26.00.54.04;	author schwarze;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2015.09.04.21.25.00;	author schwarze;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2015.04.23.15.35.59;	author schwarze;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2015.04.19.14.57.38;	author schwarze;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2015.04.19.14.25.41;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2015.04.19.13.50.25;	author schwarze;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2015.04.18.16.06.40;	author schwarze;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2015.04.03.23.19.15;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2015.04.03.17.00.52;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2015.04.02.21.36.50;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2015.03.20.14.47.52;	author schwarze;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2015.03.20.12.54.22;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2015.02.06.11.54.36;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2015.02.06.09.38.43;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2015.02.06.08.28.35;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2015.01.24.10.08.53;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2015.01.24.02.41.49;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2015.01.24.01.58.33;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2014.12.16.17.26.00;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2014.11.28.05.51.32;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2014.11.03.23.18.39;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2014.08.18.16.36.54;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2014.07.30.23.01.39;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2014.07.30.21.18.24;	author schwarze;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2014.07.09.11.28.26;	author schwarze;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2014.07.07.21.36.20;	author schwarze;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2014.07.07.19.18.15;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2013.12.31.23.23.10;	author schwarze;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2013.12.25.00.50.05;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2013.12.22.13.25.17;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2013.11.11.00.37.55;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2013.10.17.20.54.58;	author schwarze;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2012.11.17.00.26.33;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2012.06.12.12.47.14;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2012.06.03.09.52.07;	author schwarze;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2012.06.02.20.16.23;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2012.01.03.15.16.24;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2011.12.04.00.44.12;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2011.11.18.17.06.19;	author joerg;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2011.11.18.16.43.29;	author joerg;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2011.11.18.16.39.08;	author joerg;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2011.11.07.01.24.40;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2011.07.07.05.42.32;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2011.06.18.17.36.52;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2011.04.19.16.38.48;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2011.04.17.09.08.19;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2011.03.23.15.33.57;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2011.03.23.12.40.04;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2011.03.22.14.33.05;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2011.03.17.11.56.17;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2011.01.12.16.55.22;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2010.12.08.10.58.22;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2010.12.06.15.31.19;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2010.12.05.16.14.16;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2010.11.30.15.36.28;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2010.07.31.23.52.58;	author schwarze;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2010.07.22.23.03.15;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2010.06.26.16.07.08;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2010.05.17.10.50.32;	author joerg;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.05.15.22.44.04;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.05.15.20.51.40;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.03.29.10.10.35;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.03.29.04.52.14;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.03.27.10.14.32;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.03.27.10.13.16;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.03.27.10.04.56;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.03.25.07.39.25;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.03.25.07.28.16;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.03.24.20.10.53;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.03.24.03.46.02;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.03.23.21.50.43;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.03.23.11.30.48;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.03.22.05.59.32;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.01.01.17.14.28;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.10.24.05.45.05;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.08.22.09.10.38;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.08.21.13.14.07;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.08.21.12.12.12;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.08.20.13.55.19;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.08.20.13.51.55;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.08.20.11.51.07;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.08.19.12.15.58;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.08.19.09.14.50;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.08.18.08.48.30;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.08.13.11.45.29;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.07.24.20.22.24;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.06.18.10.53.58;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.06.16.19.55.28;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.04.02.06.51.44;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.03.31.13.50.19;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.03.27.14.56.15;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.03.26.14.38.11;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.03.26.11.16.21;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.25.16.07.36;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.25.15.36.05;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.25.15.17.49;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.23.15.41.09;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.23.15.20.51;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.23.14.31.58;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.113
+log
+@move man(7) validation into the dedicated validation phase, too
+@
+text
+@/*	$Id: man_macro.c,v 1.112 2015/10/06 18:32:19 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2012, 2013, 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ * Copyright (c) 2013 Franco Fichtner <franco@@lastsummer.de>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "mandoc.h"
+#include "roff.h"
+#include "man.h"
+#include "libmandoc.h"
+#include "roff_int.h"
+#include "libman.h"
+
+static	void		 blk_close(MACRO_PROT_ARGS);
+static	void		 blk_exp(MACRO_PROT_ARGS);
+static	void		 blk_imp(MACRO_PROT_ARGS);
+static	void		 in_line_eoln(MACRO_PROT_ARGS);
+static	int		 man_args(struct roff_man *, int,
+				int *, char *, char **);
+static	void		 rew_scope(struct roff_man *, int);
+
+const	struct man_macro __man_macros[MAN_MAX] = {
+	{ in_line_eoln, MAN_NSCOPED }, /* br */
+	{ in_line_eoln, MAN_BSCOPE }, /* TH */
+	{ blk_imp, MAN_BSCOPE | MAN_SCOPED }, /* SH */
+	{ blk_imp, MAN_BSCOPE | MAN_SCOPED }, /* SS */
+	{ blk_imp, MAN_BSCOPE | MAN_SCOPED }, /* TP */
+	{ blk_imp, MAN_BSCOPE }, /* LP */
+	{ blk_imp, MAN_BSCOPE }, /* PP */
+	{ blk_imp, MAN_BSCOPE }, /* P */
+	{ blk_imp, MAN_BSCOPE }, /* IP */
+	{ blk_imp, MAN_BSCOPE }, /* HP */
+	{ in_line_eoln, MAN_SCOPED | MAN_JOIN }, /* SM */
+	{ in_line_eoln, MAN_SCOPED | MAN_JOIN }, /* SB */
+	{ in_line_eoln, 0 }, /* BI */
+	{ in_line_eoln, 0 }, /* IB */
+	{ in_line_eoln, 0 }, /* BR */
+	{ in_line_eoln, 0 }, /* RB */
+	{ in_line_eoln, MAN_SCOPED | MAN_JOIN }, /* R */
+	{ in_line_eoln, MAN_SCOPED | MAN_JOIN }, /* B */
+	{ in_line_eoln, MAN_SCOPED | MAN_JOIN }, /* I */
+	{ in_line_eoln, 0 }, /* IR */
+	{ in_line_eoln, 0 }, /* RI */
+	{ in_line_eoln, MAN_NSCOPED }, /* sp */
+	{ in_line_eoln, MAN_NSCOPED }, /* nf */
+	{ in_line_eoln, MAN_NSCOPED }, /* fi */
+	{ blk_close, MAN_BSCOPE }, /* RE */
+	{ blk_exp, MAN_BSCOPE }, /* RS */
+	{ in_line_eoln, 0 }, /* DT */
+	{ in_line_eoln, 0 }, /* UC */
+	{ in_line_eoln, MAN_NSCOPED }, /* PD */
+	{ in_line_eoln, 0 }, /* AT */
+	{ in_line_eoln, 0 }, /* in */
+	{ in_line_eoln, 0 }, /* ft */
+	{ in_line_eoln, 0 }, /* OP */
+	{ in_line_eoln, MAN_BSCOPE }, /* EX */
+	{ in_line_eoln, MAN_BSCOPE }, /* EE */
+	{ blk_exp, MAN_BSCOPE }, /* UR */
+	{ blk_close, MAN_BSCOPE }, /* UE */
+	{ in_line_eoln, 0 }, /* ll */
+};
+
+const	struct man_macro * const man_macros = __man_macros;
+
+
+void
+man_unscope(struct roff_man *man, const struct roff_node *to)
+{
+	struct roff_node *n;
+
+	to = to->parent;
+	n = man->last;
+	while (n != to) {
+
+		/* Reached the end of the document? */
+
+		if (to == NULL && ! (n->flags & MAN_VALID)) {
+			if (man->flags & (MAN_BLINE | MAN_ELINE) &&
+			    man_macros[n->tok].flags & MAN_SCOPED) {
+				mandoc_vmsg(MANDOCERR_BLK_LINE,
+				    man->parse, n->line, n->pos,
+				    "EOF breaks %s",
+				    man_macronames[n->tok]);
+				if (man->flags & MAN_ELINE)
+					man->flags &= ~MAN_ELINE;
+				else {
+					assert(n->type == ROFFT_HEAD);
+					n = n->parent;
+					man->flags &= ~MAN_BLINE;
+				}
+				man->last = n;
+				n = n->parent;
+				roff_node_delete(man, man->last);
+				continue;
+			}
+			if (n->type == ROFFT_BLOCK &&
+			    man_macros[n->tok].fp == blk_exp)
+				mandoc_msg(MANDOCERR_BLK_NOEND,
+				    man->parse, n->line, n->pos,
+				    man_macronames[n->tok]);
+		}
+
+		/*
+		 * We might delete the man->last node
+		 * in the post-validation phase.
+		 * Save a pointer to the parent such that
+		 * we know where to continue the iteration.
+		 */
+
+		man->last = n;
+		n = n->parent;
+		man->last->flags |= MAN_VALID;
+	}
+
+	/*
+	 * If we ended up at the parent of the node we were
+	 * supposed to rewind to, that means the target node
+	 * got deleted, so add the next node we parse as a child
+	 * of the parent instead of as a sibling of the target.
+	 */
+
+	man->next = (man->last == to) ?
+	    ROFF_NEXT_CHILD : ROFF_NEXT_SIBLING;
+}
+
+/*
+ * Rewinding entails ascending the parse tree until a coherent point,
+ * for example, the `SH' macro will close out any intervening `SS'
+ * scopes.  When a scope is closed, it must be validated and actioned.
+ */
+static void
+rew_scope(struct roff_man *man, int tok)
+{
+	struct roff_node *n;
+
+	/* Preserve empty paragraphs before RS. */
+
+	n = man->last;
+	if (tok == MAN_RS && n->nchild == 0 &&
+	    (n->tok == MAN_P || n->tok == MAN_PP || n->tok == MAN_LP))
+		return;
+
+	for (;;) {
+		if (n->type == ROFFT_ROOT)
+			return;
+		if (n->flags & MAN_VALID) {
+			n = n->parent;
+			continue;
+		}
+		if (n->type != ROFFT_BLOCK) {
+			if (n->parent->type == ROFFT_ROOT) {
+				man_unscope(man, n);
+				return;
+			} else {
+				n = n->parent;
+				continue;
+			}
+		}
+		if (tok != MAN_SH && (n->tok == MAN_SH ||
+		    (tok != MAN_SS && (n->tok == MAN_SS ||
+		     man_macros[n->tok].fp == blk_exp))))
+			return;
+		man_unscope(man, n);
+		n = man->last;
+	}
+}
+
+
+/*
+ * Close out a generic explicit macro.
+ */
+void
+blk_close(MACRO_PROT_ARGS)
+{
+	int			 ntok;
+	const struct roff_node	*nn;
+	char			*p;
+	int			 nrew, target;
+
+	nrew = 1;
+	switch (tok) {
+	case MAN_RE:
+		ntok = MAN_RS;
+		if ( ! man_args(man, line, pos, buf, &p))
+			break;
+		for (nn = man->last->parent; nn; nn = nn->parent)
+			if (nn->tok == ntok && nn->type == ROFFT_BLOCK)
+				nrew++;
+		target = strtol(p, &p, 10);
+		if (*p != '\0')
+			mandoc_vmsg(MANDOCERR_ARG_EXCESS, man->parse,
+			    line, p - buf, "RE ... %s", p);
+		if (target == 0)
+			target = 1;
+		nrew -= target;
+		if (nrew < 1) {
+			mandoc_vmsg(MANDOCERR_RE_NOTOPEN, man->parse,
+			    line, ppos, "RE %d", target);
+			return;
+		}
+		break;
+	case MAN_UE:
+		ntok = MAN_UR;
+		break;
+	default:
+		abort();
+	}
+
+	for (nn = man->last->parent; nn; nn = nn->parent)
+		if (nn->tok == ntok && nn->type == ROFFT_BLOCK && ! --nrew)
+			break;
+
+	if (nn == NULL) {
+		mandoc_msg(MANDOCERR_BLK_NOTOPEN, man->parse,
+		    line, ppos, man_macronames[tok]);
+		rew_scope(man, MAN_PP);
+	} else {
+		line = man->last->line;
+		ppos = man->last->pos;
+		ntok = man->last->tok;
+		man_unscope(man, nn);
+
+		/* Move a trailing paragraph behind the block. */
+
+		if (ntok == MAN_LP || ntok == MAN_PP || ntok == MAN_P) {
+			*pos = strlen(buf);
+			blk_imp(man, ntok, line, ppos, pos, buf);
+		}
+	}
+}
+
+void
+blk_exp(MACRO_PROT_ARGS)
+{
+	struct roff_node *head;
+	char		*p;
+	int		 la;
+
+	rew_scope(man, tok);
+	roff_block_alloc(man, line, ppos, tok);
+	head = roff_head_alloc(man, line, ppos, tok);
+
+	la = *pos;
+	if (man_args(man, line, pos, buf, &p))
+		roff_word_alloc(man, line, la, p);
+
+	if (buf[*pos] != '\0')
+		mandoc_vmsg(MANDOCERR_ARG_EXCESS,
+		    man->parse, line, *pos, "%s ... %s",
+		    man_macronames[tok], buf + *pos);
+
+	man_unscope(man, head);
+	roff_body_alloc(man, line, ppos, tok);
+}
+
+/*
+ * Parse an implicit-block macro.  These contain a ROFFT_HEAD and a
+ * ROFFT_BODY contained within a ROFFT_BLOCK.  Rules for closing out other
+ * scopes, such as `SH' closing out an `SS', are defined in the rew
+ * routines.
+ */
+void
+blk_imp(MACRO_PROT_ARGS)
+{
+	int		 la;
+	char		*p;
+	struct roff_node *n;
+
+	rew_scope(man, tok);
+	n = roff_block_alloc(man, line, ppos, tok);
+	if (n->tok == MAN_SH || n->tok == MAN_SS)
+		man->flags &= ~MAN_LITERAL;
+	n = roff_head_alloc(man, line, ppos, tok);
+
+	/* Add line arguments. */
+
+	for (;;) {
+		la = *pos;
+		if ( ! man_args(man, line, pos, buf, &p))
+			break;
+		roff_word_alloc(man, line, la, p);
+	}
+
+	/*
+	 * For macros having optional next-line scope,
+	 * keep the head open if there were no arguments.
+	 * For `TP', always keep the head open.
+	 */
+
+	if (man_macros[tok].flags & MAN_SCOPED &&
+	    (tok == MAN_TP || n == man->last)) {
+		man->flags |= MAN_BLINE;
+		return;
+	}
+
+	/* Close out the head and open the body. */
+
+	man_unscope(man, n);
+	roff_body_alloc(man, line, ppos, tok);
+}
+
+void
+in_line_eoln(MACRO_PROT_ARGS)
+{
+	int		 la;
+	char		*p;
+	struct roff_node *n;
+
+	roff_elem_alloc(man, line, ppos, tok);
+	n = man->last;
+
+	for (;;) {
+		if (buf[*pos] != '\0' && (tok == MAN_br ||
+		    tok == MAN_fi || tok == MAN_nf)) {
+			mandoc_vmsg(MANDOCERR_ARG_SKIP,
+			    man->parse, line, *pos, "%s %s",
+			    man_macronames[tok], buf + *pos);
+			break;
+		}
+		if (buf[*pos] != '\0' && man->last != n &&
+		    (tok == MAN_PD || tok == MAN_ft || tok == MAN_sp)) {
+			mandoc_vmsg(MANDOCERR_ARG_EXCESS,
+			    man->parse, line, *pos, "%s ... %s",
+			    man_macronames[tok], buf + *pos);
+			break;
+		}
+		la = *pos;
+		if ( ! man_args(man, line, pos, buf, &p))
+			break;
+		if (man_macros[tok].flags & MAN_JOIN &&
+		    man->last->type == ROFFT_TEXT)
+			roff_word_append(man, p);
+		else
+			roff_word_alloc(man, line, la, p);
+	}
+
+	/*
+	 * Append MAN_EOS in case the last snipped argument
+	 * ends with a dot, e.g. `.IR syslog (3).'
+	 */
+
+	if (n != man->last &&
+	    mandoc_eos(man->last->string, strlen(man->last->string)))
+		man->last->flags |= MAN_EOS;
+
+	/*
+	 * If no arguments are specified and this is MAN_SCOPED (i.e.,
+	 * next-line scoped), then set our mode to indicate that we're
+	 * waiting for terms to load into our context.
+	 */
+
+	if (n == man->last && man_macros[tok].flags & MAN_SCOPED) {
+		assert( ! (man_macros[tok].flags & MAN_NSCOPED));
+		man->flags |= MAN_ELINE;
+		return;
+	}
+
+	assert(man->last->type != ROFFT_ROOT);
+	man->next = ROFF_NEXT_SIBLING;
+
+	/* Rewind our element scope. */
+
+	for ( ; man->last; man->last = man->last->parent) {
+		man_state(man, man->last);
+		if (man->last == n)
+			break;
+	}
+}
+
+void
+man_endparse(struct roff_man *man)
+{
+
+	man_unscope(man, man->first);
+	man->flags &= ~MAN_LITERAL;
+}
+
+static int
+man_args(struct roff_man *man, int line, int *pos, char *buf, char **v)
+{
+	char	 *start;
+
+	assert(*pos);
+	*v = start = buf + *pos;
+	assert(' ' != *start);
+
+	if ('\0' == *start)
+		return 0;
+
+	*v = mandoc_getarg(man->parse, v, line, pos);
+	return 1;
+}
+@
+
+
+1.112
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.111 2015/09/26 00:54:04 schwarze Exp $ */
+d133 1
+a133 1
+		man_valid_post(man);
+d382 1
+a382 5
+	/*
+	 * Rewind our element scope.  Note that when TH is pruned, we'll
+	 * be back at the root, so make sure that we don't clobber as
+	 * its sibling.
+	 */
+d385 1
+a387 3
+		if (man->last->type == ROFFT_ROOT)
+			break;
+		man_valid_post(man);
+a388 9
+
+	assert(man->last);
+
+	/*
+	 * Same here regarding whether we're back at the root.
+	 */
+
+	if (man->last->type != ROFFT_ROOT)
+		man_valid_post(man);
+d396 1
+@
+
+
+1.111
+log
+@/* NOTREACHED */ after abort() is silly, delete it
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.110 2015/09/04 21:25:00 schwarze Exp $ */
+d423 1
+a423 1
+		return(0);
+d426 1
+a426 1
+	return(1);
+@
+
+
+1.110
+log
+@Fill mode changes don't break next-line scope in all cases,
+in particular not for tagged paragraphs.
+Issue found by Christian Neukirchen <chneukirchen at gmail dot com>
+in the exiv2(1) manual page.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.109 2015/04/23 15:35:59 schwarze Exp $ */
+a227 1
+		/* NOTREACHED */
+@
+
+
+1.109
+log
+@Get rid of two empty wrapper functions.  No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.108 2015/04/19 14:57:38 schwarze Exp $ */
+d66 2
+a67 2
+	{ in_line_eoln, MAN_BSCOPE }, /* nf */
+	{ in_line_eoln, MAN_BSCOPE }, /* fi */
+@
+
+
+1.108
+log
+@Unify trickier node handling functions.
+* man_elem_alloc() -> roff_elem_alloc()
+* man_block_alloc() -> roff_block_alloc()
+The functions mdoc_elem_alloc() and mdoc_block_alloc() remain for
+now because they need to do mdoc(7)-specific argument processing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.107 2015/04/19 14:25:41 schwarze Exp $ */
+a406 1
+
+d408 1
+a408 1
+man_macroend(struct roff_man *man)
+@
+
+
+1.107
+log
+@Unify some node handling functions that use TOKEN_NONE.
+* mdoc_word_alloc(), man_word_alloc() -> roff_word_alloc()
+* mdoc_word_append(), man_word_append() -> roff_word_append()
+* mdoc_addspan(), man_addspan() -> roff_addtbl()
+* mdoc_addeqn(), man_addeqn() -> roff_addeqn()
+Minus 50 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.106 2015/04/19 13:50:25 schwarze Exp $ */
+d262 1
+a262 1
+	man_block_alloc(man, line, ppos, tok);
+d292 1
+a292 2
+	man_block_alloc(man, line, ppos, tok);
+	n = man->last;
+d331 1
+a331 1
+	man_elem_alloc(man, line, ppos, tok);
+@
+
+
+1.106
+log
+@Unify node handling functions:
+* node_alloc() for mdoc and man_node_alloc() -> roff_node_alloc()
+* node_append() for mdoc and man_node_append() -> roff_node_append()
+* mdoc_head_alloc() and man_head_alloc() -> roff_head_alloc()
+* mdoc_body_alloc() and man_body_alloc() -> roff_body_alloc()
+* mdoc_node_unlink() and man_node_unlink() -> roff_node_unlink()
+* mdoc_node_free() and man_node_free() -> roff_node_free()
+* mdoc_node_delete() and man_node_delete() -> roff_node_delete()
+Minus 130 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.105 2015/04/18 16:06:40 schwarze Exp $ */
+d267 1
+a267 1
+		man_word_alloc(man, line, la, p);
+d304 1
+a304 1
+		man_word_alloc(man, line, la, p);
+d355 1
+a355 1
+			man_word_append(man, p);
+d357 1
+a357 1
+			man_word_alloc(man, line, la, p);
+@
+
+
+1.105
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.104 2015/04/03 23:19:15 schwarze Exp $ */
+d32 1
+d114 1
+a114 1
+				man_node_delete(man, man->last);
+d263 1
+a263 2
+	man_head_alloc(man, line, ppos, tok);
+	head = man->last;
+d275 1
+a275 1
+	man_body_alloc(man, line, ppos, tok);
+a292 1
+	man_head_alloc(man, line, ppos, tok);
+d294 3
+d322 1
+a322 1
+	man_body_alloc(man, line, ppos, tok);
+@
+
+
+1.104
+log
+@Vastly simplify man(7) block unwinding, similar to mdoc_macro.c 1.171.
+Drop one enum type, two static functions, 70 lines of code.
+Also fixes the mpeg_encode(1) manual reported broken by naddy@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.103 2015/04/03 17:00:52 schwarze Exp $ */
+d38 1
+a38 1
+static	int		 man_args(struct man *, int,
+d40 1
+a40 1
+static	void		 rew_scope(struct man *, int);
+d87 1
+a87 1
+man_unscope(struct man *man, const struct roff_node *to)
+d143 1
+a143 1
+	    MAN_NEXT_CHILD : MAN_NEXT_SIBLING;
+d152 1
+a152 1
+rew_scope(struct man *man, int tok)
+d380 1
+a380 1
+	man->next = MAN_NEXT_SIBLING;
+d408 1
+a408 1
+man_macroend(struct man *man)
+d415 1
+a415 1
+man_args(struct man *man, int line, int *pos, char *buf, char **v)
+@
+
+
+1.103
+log
+@It turns out the man(7) parser suffers from unintelligible handling
+of block rewinding, just like then mdoc(7) parser did.
+First step in getting rid of rew_scope():
+Replace the only call where the target block is known.
+This commit is analogous to mdoc_macro.c rev. 1.167.
+One down, three to go.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.102 2015/04/02 22:48:17 schwarze Exp $ */
+a33 6
+enum	rew {
+	REW_REWIND,
+	REW_NOHALT,
+	REW_HALT
+};
+
+d40 1
+a40 6
+
+static	void		 rew_scope(enum roff_type, struct man *, int);
+static	enum rew	 rew_dohalt(int, enum roff_type,
+				const struct roff_node *);
+static	enum rew	 rew_block(int, enum roff_type,
+				const struct roff_node *);
+a145 83
+static enum rew
+rew_block(int ntok, enum roff_type type, const struct roff_node *n)
+{
+
+	if (type == ROFFT_BLOCK && n->parent->tok == ntok &&
+	    n->parent->type == ROFFT_BODY)
+		return(REW_REWIND);
+	return(ntok == n->tok ? REW_HALT : REW_NOHALT);
+}
+
+/*
+ * There are three scope levels: scoped to the root (all), scoped to the
+ * section (all less sections), and scoped to subsections (all less
+ * sections and subsections).
+ */
+static enum rew
+rew_dohalt(int tok, enum roff_type type, const struct roff_node *n)
+{
+	enum rew	 c;
+
+	/* We cannot progress beyond the root ever. */
+	if (n->type == ROFFT_ROOT)
+		return(REW_HALT);
+
+	assert(n->parent);
+
+	/* Normal nodes shouldn't go to the level of the root. */
+	if (n->parent->type == ROFFT_ROOT)
+		return(REW_REWIND);
+
+	/* Already-validated nodes should be closed out. */
+	if (MAN_VALID & n->flags)
+		return(REW_NOHALT);
+
+	/* First: rewind to ourselves. */
+	if (type == n->type && tok == n->tok) {
+		if (man_macros[n->tok].fp == blk_exp)
+			return(REW_HALT);
+		else
+			return(REW_REWIND);
+	}
+
+	/*
+	 * Next follow the implicit scope-smashings as defined by man.7:
+	 * section, sub-section, etc.
+	 */
+
+	switch (tok) {
+	case MAN_SH:
+		break;
+	case MAN_SS:
+		/* Rewind to a section, if a block. */
+		if (REW_NOHALT != (c = rew_block(MAN_SH, type, n)))
+			return(c);
+		break;
+	case MAN_RS:
+		/* Preserve empty paragraphs before RS. */
+		if (0 == n->nchild && (MAN_P == n->tok ||
+		    MAN_PP == n->tok || MAN_LP == n->tok))
+			return(REW_HALT);
+		/* Rewind to a subsection, if a block. */
+		if (REW_NOHALT != (c = rew_block(MAN_SS, type, n)))
+			return(c);
+		/* Rewind to a section, if a block. */
+		if (REW_NOHALT != (c = rew_block(MAN_SH, type, n)))
+			return(c);
+		break;
+	default:
+		/* Rewind to an offsetter, if a block. */
+		if (REW_NOHALT != (c = rew_block(MAN_RS, type, n)))
+			return(c);
+		/* Rewind to a subsection, if a block. */
+		if (REW_NOHALT != (c = rew_block(MAN_SS, type, n)))
+			return(c);
+		/* Rewind to a section, if a block. */
+		if (REW_NOHALT != (c = rew_block(MAN_SH, type, n)))
+			return(c);
+		break;
+	}
+
+	return(REW_NOHALT);
+}
+
+d152 1
+a152 1
+rew_scope(enum roff_type type, struct man *man, int tok)
+a154 1
+	enum rew	 c;
+d156 26
+a181 8
+	for (n = man->last; n; n = n->parent) {
+		/*
+		 * Whether we should stop immediately (REW_HALT), stop
+		 * and rewind until this point (REW_REWIND), or keep
+		 * rewinding (REW_NOHALT).
+		 */
+		c = rew_dohalt(tok, type, n);
+		if (REW_HALT == c)
+d183 2
+a184 2
+		if (REW_REWIND == c)
+			break;
+a185 7
+
+	/*
+	 * Rewind until the current point.  Warn if we're a roff
+	 * instruction that's mowing over explicit scopes.
+	 */
+
+	man_unscope(man, n);
+d237 1
+a237 1
+		rew_scope(ROFFT_BLOCK, man, MAN_PP);
+d260 1
+a260 1
+	rew_scope(ROFFT_BLOCK, man, tok);
+d291 1
+a291 2
+	rew_scope(ROFFT_BODY, man, tok);
+	rew_scope(ROFFT_BLOCK, man, tok);
+@
+
+
+1.102
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.101 2015/04/02 21:36:50 schwarze Exp $ */
+d404 1
+a404 1
+	rew_scope(ROFFT_HEAD, man, tok);
+@
+
+
+1.101
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.100 2015/03/20 14:47:52 schwarze Exp $ */
+d47 5
+a51 6
+static	void		 rew_scope(enum roff_type,
+				struct man *, enum mant);
+static	enum rew	 rew_dohalt(enum mant, enum roff_type,
+				const struct man_node *);
+static	enum rew	 rew_block(enum mant, enum roff_type,
+				const struct man_node *);
+d98 1
+a98 1
+man_unscope(struct man *man, const struct man_node *to)
+d100 1
+a100 1
+	struct man_node	*n;
+d158 1
+a158 1
+rew_block(enum mant ntok, enum roff_type type, const struct man_node *n)
+d173 1
+a173 1
+rew_dohalt(enum mant tok, enum roff_type type, const struct man_node *n)
+d246 1
+a246 1
+rew_scope(enum roff_type type, struct man *man, enum mant tok)
+d248 1
+a248 1
+	struct man_node	*n;
+d279 2
+a280 2
+	enum mant		 ntok;
+	const struct man_node	*nn;
+d340 1
+a340 1
+	struct man_node	*head;
+d373 1
+a373 1
+	struct man_node	*n;
+d413 1
+a413 1
+	struct man_node	*n;
+@
+
+
+1.100
+log
+@The .PD macro can occur in next-line scope.  Fixes zshmisc(1).
+Issue reported by Christian Neukirchen <chneukirchen at gmail dot com>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.99 2015/03/20 12:54:22 schwarze Exp $ */
+d11 1
+a11 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d13 1
+a13 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d28 2
+a30 1
+#include "mandoc.h"
+d47 1
+a47 1
+static	void		 rew_scope(enum man_type,
+d49 1
+a49 1
+static	enum rew	 rew_dohalt(enum mant, enum man_type,
+d51 1
+a51 1
+static	enum rew	 rew_block(enum mant, enum man_type,
+d119 1
+a119 1
+					assert(n->type == MAN_HEAD);
+d128 1
+a128 1
+			if (n->type == MAN_BLOCK &&
+d159 1
+a159 1
+rew_block(enum mant ntok, enum man_type type, const struct man_node *n)
+d162 2
+a163 2
+	if (type == MAN_BLOCK && ntok == n->parent->tok &&
+	    n->parent->type == MAN_BODY)
+d174 1
+a174 1
+rew_dohalt(enum mant tok, enum man_type type, const struct man_node *n)
+d179 1
+a179 1
+	if (MAN_ROOT == n->type)
+d185 1
+a185 1
+	if (MAN_ROOT == n->parent->type)
+d247 1
+a247 1
+rew_scope(enum man_type type, struct man *man, enum mant tok)
+d292 1
+a292 1
+			if (nn->tok == ntok && nn->type == MAN_BLOCK)
+d316 1
+a316 1
+		if (nn->tok == ntok && nn->type == MAN_BLOCK && ! --nrew)
+d322 1
+a322 1
+		rew_scope(MAN_BLOCK, man, MAN_PP);
+d345 1
+a345 1
+	rew_scope(MAN_BLOCK, man, tok);
+d364 2
+a365 2
+ * Parse an implicit-block macro.  These contain a MAN_HEAD and a
+ * MAN_BODY contained within a MAN_BLOCK.  Rules for closing out other
+d376 2
+a377 2
+	rew_scope(MAN_BODY, man, tok);
+	rew_scope(MAN_BLOCK, man, tok);
+d405 1
+a405 1
+	rew_scope(MAN_HEAD, man, tok);
+d438 1
+a438 1
+		    man->last->type == MAN_TEXT)
+d465 1
+a465 1
+	assert(man->last->type != MAN_ROOT);
+d477 1
+a477 1
+		if (man->last->type == MAN_ROOT)
+d488 1
+a488 1
+	if (man->last->type != MAN_ROOT)
+@
+
+
+1.99
+log
+@Simplify by almost halving the number of macro flags:
+1. MAN_EXPLICIT was used iff fp == blk_exp, so just test fp.
+2. MAN_FSCOPED was used only for TP, so just test for TP.
+3. MAN_NOCLOSE was completely unused.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.98 2015/02/06 11:54:36 schwarze Exp $ */
+d82 1
+a82 1
+	{ in_line_eoln, 0 }, /* PD */
+@
+
+
+1.98
+log
+@better error reporting regarding .OP .RS .UR .TH arguments
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.97 2015/02/06 09:38:43 schwarze Exp $ */
+d58 1
+a58 1
+	{ blk_imp, MAN_BSCOPE | MAN_SCOPED | MAN_FSCOPED }, /* TP */
+d79 1
+a79 1
+	{ blk_exp, MAN_BSCOPE | MAN_EXPLICIT }, /* RS */
+d89 1
+a89 1
+	{ blk_exp, MAN_BSCOPE | MAN_EXPLICIT }, /* UR */
+d128 1
+a128 1
+			    man_macros[n->tok].flags & MAN_EXPLICIT)
+d193 1
+a193 1
+		if (MAN_EXPLICIT & man_macros[n->tok].flags)
+d390 5
+a394 1
+	/* Close out head and open body (unless MAN_SCOPE). */
+d396 4
+a399 9
+	if (man_macros[tok].flags & MAN_SCOPED) {
+		/* If we're forcing scope (`TP'), keep it open. */
+		if (man_macros[tok].flags & MAN_FSCOPED) {
+			man->flags |= MAN_BLINE;
+			return;
+		} else if (n == man->last) {
+			man->flags |= MAN_BLINE;
+			return;
+		}
+d401 3
+@
+
+
+1.97
+log
+@better diagnostics about excess arguments to .PD .ft .sp
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.96 2015/02/06 08:28:35 schwarze Exp $ */
+d340 2
+a341 1
+	struct man_node	*n;
+a342 1
+	char		*p;
+d347 1
+d349 2
+a350 4
+	for (;;) {
+		la = *pos;
+		if ( ! man_args(man, line, pos, buf, &p))
+			break;
+a351 4
+	}
+
+	assert(man);
+	assert(tok != MAN_MAX);
+d353 4
+a356 6
+	for (n = man->last; n; n = n->parent)
+		if (n->tok == tok) {
+			assert(n->type == MAN_HEAD);
+			man_unscope(man, n);
+			break;
+		}
+d358 1
+@
+
+
+1.96
+log
+@better error reporting for .br .fi .nf with arguments
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.95 2015/01/24 10:08:53 schwarze Exp $ */
+d430 7
+@
+
+
+1.95
+log
+@preserve .PP before .RE; effect found in audio/pms(1)
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.94 2015/01/24 02:41:49 schwarze Exp $ */
+d423 7
+@
+
+
+1.94
+log
+@Strangely, ignoring the roff(7) .na request was implemented in the man(7)
+parser.  Simplify the code by moving it into the roff(7) parser, also
+making it work for mdoc(7).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.93 2015/01/24 01:58:33 schwarze Exp $ */
+d322 4
+a325 1
+	} else
+d327 8
+@
+
+
+1.93
+log
+@Support .RE with an argument; needed for audio/pms(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.92 2014/12/16 17:26:00 schwarze Exp $ */
+a74 1
+	{ in_line_eoln, MAN_NSCOPED }, /* na */
+@
+
+
+1.92
+log
+@Explicit block closure macros clobber next-line block head scope,
+just like explicit block macros themselves.
+Fixing an assertion failure jsg@@ found with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.91 2014/11/28 05:51:32 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012, 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d282 2
+d285 1
+d289 17
+d316 1
+a316 1
+		if (nn->tok == ntok && nn->type == MAN_BLOCK)
+@
+
+
+1.91
+log
+@Simplify by making many functions in the man(7) parser void,
+and some cleanup; no functional change, minus 70 lines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.90 2014/11/03 23:18:39 schwarze Exp $ */
+d79 1
+a79 1
+	{ blk_close, 0 }, /* RE */
+d91 1
+a91 1
+	{ blk_close, 0 }, /* UE */
+@
+
+
+1.90
+log
+@Allow the five man(7) font macros to concatenate their line arguments,
+the same way the mdoc(7) macros marked MDOC_JOIN do it.
+In -Thtml, this removes bogus <br/> when the font macros are used
+in no-fill mode; issue found by jsg@@ in the Xcursor(3) SYNOPSIS.
+As a bonus, this slightly reduces the size of the syntax tree.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.89 2014/08/18 16:36:54 schwarze Exp $ */
+d39 4
+a42 4
+static	int		 blk_close(MACRO_PROT_ARGS);
+static	int		 blk_exp(MACRO_PROT_ARGS);
+static	int		 blk_imp(MACRO_PROT_ARGS);
+static	int		 in_line_eoln(MACRO_PROT_ARGS);
+d46 1
+a46 1
+static	int		 rew_scope(enum man_type,
+d98 1
+a98 1
+int
+d144 1
+a144 2
+		if ( ! man_valid_post(man))
+			return(0);
+a155 2
+
+	return(1);
+d162 2
+a163 2
+	if (MAN_BLOCK == type && ntok == n->parent->tok &&
+	    MAN_BODY == n->parent->type)
+d246 1
+a246 1
+static int
+d260 1
+a260 1
+			return(1);
+a268 1
+	assert(n);
+d270 1
+a270 1
+	return(man_unscope(man, n));
+d277 1
+a277 1
+int
+d296 1
+a296 1
+		if (ntok == nn->tok && MAN_BLOCK == nn->type)
+d299 1
+a299 1
+	if (NULL == nn) {
+d302 1
+a302 2
+		if ( ! rew_scope(MAN_BLOCK, man, MAN_PP))
+			return(0);
+a304 2
+
+	return(1);
+d307 1
+a307 1
+int
+d314 3
+a316 9
+	/* Close out prior implicit scopes. */
+
+	if ( ! rew_scope(MAN_BLOCK, man, tok))
+		return(0);
+
+	if ( ! man_block_alloc(man, line, ppos, tok))
+		return(0);
+	if ( ! man_head_alloc(man, line, ppos, tok))
+		return(0);
+d322 1
+a322 2
+		if ( ! man_word_alloc(man, line, la, p))
+			return(0);
+d328 6
+a333 7
+	for (n = man->last; n; n = n->parent) {
+		if (n->tok != tok)
+			continue;
+		assert(MAN_HEAD == n->type);
+		man_unscope(man, n);
+		break;
+	}
+d335 1
+a335 1
+	return(man_body_alloc(man, line, ppos, tok));
+d344 1
+a344 1
+int
+d351 4
+a354 14
+	/* Close out prior scopes. */
+
+	if ( ! rew_scope(MAN_BODY, man, tok))
+		return(0);
+	if ( ! rew_scope(MAN_BLOCK, man, tok))
+		return(0);
+
+	/* Allocate new block & head scope. */
+
+	if ( ! man_block_alloc(man, line, ppos, tok))
+		return(0);
+	if ( ! man_head_alloc(man, line, ppos, tok))
+		return(0);
+
+d363 1
+a363 2
+		if ( ! man_word_alloc(man, line, la, p))
+			return(0);
+d368 1
+a368 1
+	if (MAN_SCOPED & man_macros[tok].flags) {
+d370 1
+a370 1
+		if (MAN_FSCOPED & man_macros[tok].flags) {
+d372 1
+a372 1
+			return(1);
+d375 1
+a375 1
+			return(1);
+d378 2
+a379 4
+
+	if ( ! rew_scope(MAN_HEAD, man, tok))
+		return(0);
+	return(man_body_alloc(man, line, ppos, tok));
+d382 1
+a382 1
+int
+d389 1
+a389 3
+	if ( ! man_elem_alloc(man, line, ppos, tok))
+		return(0);
+
+d399 2
+a400 2
+		else if ( ! man_word_alloc(man, line, la, p))
+			return(0);
+d418 2
+a419 2
+	if (n == man->last && MAN_SCOPED & man_macros[tok].flags) {
+		assert( ! (MAN_NSCOPED & man_macros[tok].flags));
+d421 1
+a421 1
+		return(1);
+d424 1
+a424 1
+	assert(MAN_ROOT != man->last->type);
+d438 1
+a438 2
+		if ( ! man_valid_post(man))
+			return(0);
+d447 2
+a448 4
+	if (man->last->type != MAN_ROOT && ! man_valid_post(man))
+		return(0);
+
+	return(1);
+d452 1
+a452 1
+int
+d456 1
+a456 1
+	return(man_unscope(man, man->first));
+@
+
+
+1.89
+log
+@When the first child of the node being validated gets deleted during
+validation, man_node_unlink() switches to MAN_NEXT_CHILD.  After
+that, we have to switch back to MAN_NEXT_SIBLING after completing
+validation, or subsequent parsing would add content into an already
+closed node, clobbering potentially existing children, causing
+information loss and a memory leak.  Bug found by kristaps@@ with
+valgrind in groff(7) on Mac OS X.
+
+Note that the switch back must be conditional, for if the node being
+validated itself gets deleted, we must *not* go to MAN_NEXT_SIBLING,
+which would not only yield wrong results in general but also crash
+in malformed manuals having an empty paragraph before the first .SH,
+for example OpenBSD c++filt(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.88 2014/08/10 23:54:41 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d64 2
+a65 2
+	{ in_line_eoln, MAN_SCOPED }, /* SM */
+	{ in_line_eoln, MAN_SCOPED }, /* SB */
+d70 3
+a72 3
+	{ in_line_eoln, MAN_SCOPED }, /* R */
+	{ in_line_eoln, MAN_SCOPED }, /* B */
+	{ in_line_eoln, MAN_SCOPED }, /* I */
+d426 4
+a429 1
+		if ( ! man_word_alloc(man, line, la, p))
+@
+
+
+1.88
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.87 2014/07/30 23:01:39 schwarze Exp $ */
+a102 1
+	man->next = MAN_NEXT_SIBLING;
+d141 1
+d147 11
+@
+
+
+1.87
+log
+@Improve handling of next-line scope broken by end of file.
+Detect the condition earlier, report in the error message
+which block is broken, and delete the broken block.
+Consequently, empty section headers can no longer happen.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.86 2014/07/30 21:18:24 schwarze Exp $ */
+a18 1
+#ifdef HAVE_CONFIG_H
+d20 2
+a21 1
+#endif
+@
+
+
+1.86
+log
+@garbage collect three unused global flags; no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.85 2014/07/09 11:28:26 schwarze Exp $ */
+d107 29
+a135 7
+		if (NULL == to &&
+		    MAN_BLOCK == n->type &&
+		    0 == (MAN_VALID & n->flags) &&
+		    MAN_EXPLICIT & man_macros[n->tok].flags)
+			mandoc_msg(MANDOCERR_BLK_NOEND,
+			    man->parse, n->line, n->pos,
+			    man_macronames[n->tok]);
+@
+
+
+1.85
+log
+@delete forgotten, obsolete rew_warn() prototype
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.84 2014/07/07 21:36:20 schwarze Exp $ */
+a417 7
+	/* Set ignorable context, if applicable. */
+
+	if (MAN_NSCOPED & man_macros[tok].flags) {
+		assert( ! (MAN_SCOPED & man_macros[tok].flags));
+		man->flags |= MAN_ILINE;
+	}
+
+@
+
+
+1.84
+log
+@Clean up ERROR messages related to document structure and macros:
+Hierarchical naming and mention macro names in messages.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.83 2014/07/07 19:18:15 schwarze Exp $ */
+a51 2
+static	void		 rew_warn(struct man *,
+				struct man_node *, enum mandocerr);
+@
+
+
+1.83
+log
+@Simplify man_unscope(), removing 18 lines of code, that is,
+removing one function argument, one function definition,
+three function invocations and two pointless assert()s.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.82 2014/04/20 16:46:04 schwarze Exp $ */
+d113 1
+a113 1
+			mandoc_msg(MANDOCERR_SCOPEEXIT,
+d273 2
+a274 1
+		man_pmsg(man, line, ppos, MANDOCERR_NOSCOPE);
+@
+
+
+1.82
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.81 2014/03/30 19:47:48 schwarze Exp $ */
+a99 22
+/*
+ * Warn when "n" is an explicit non-roff macro.
+ */
+static void
+rew_warn(struct man *man, struct man_node *n, enum mandocerr er)
+{
+
+	if (er == MANDOCERR_MAX || MAN_BLOCK != n->type)
+		return;
+	if (MAN_VALID & n->flags)
+		return;
+	if ( ! (MAN_EXPLICIT & man_macros[n->tok].flags))
+		return;
+
+	assert(er < MANDOCERR_FATAL);
+	man_nmsg(man, n, er);
+}
+
+/*
+ * Rewind scope.  If a code "er" != MANDOCERR_MAX has been provided, it
+ * will be used if an explicit block scope is being closed out.
+ */
+d101 1
+a101 2
+man_unscope(struct man *man, const struct man_node *to,
+		enum mandocerr er)
+a104 2
+	assert(to);
+
+d106 10
+a115 2
+
+	while (man->last != to) {
+d117 4
+a120 4
+		 * Save the parent here, because we may delete the
+		 * man->last node in the post-validation phase and reset
+		 * it to man->last->parent, causing a step in the closing
+		 * out to be lost.
+d122 2
+a123 2
+		n = man->last->parent;
+		rew_warn(man, man->last, er);
+a125 2
+		man->last = n;
+		assert(man->last);
+a126 5
+
+	rew_warn(man, man->last, er);
+	if ( ! man_valid_post(man))
+		return(0);
+
+d243 1
+a243 1
+	return(man_unscope(man, n, MANDOCERR_MAX));
+d277 1
+a277 1
+		man_unscope(man, nn, MANDOCERR_MAX);
+d314 1
+a314 1
+		man_unscope(man, n, MANDOCERR_MAX);
+d461 1
+a461 1
+	return(man_unscope(man, man->first, MANDOCERR_SCOPEEXIT));
+@
+
+
+1.81
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.80 2013/12/31 23:23:10 schwarze Exp $ */
+d43 1
+a43 1
+static	int		 man_args(struct man *, int, 
+d46 1
+a46 1
+static	int		 rew_scope(enum man_type, 
+d48 1
+a48 1
+static	enum rew	 rew_dohalt(enum mant, enum man_type, 
+d50 1
+a50 1
+static	enum rew	 rew_block(enum mant, enum man_type, 
+d52 1
+a52 1
+static	void		 rew_warn(struct man *, 
+a117 1
+
+d123 1
+a123 1
+man_unscope(struct man *man, const struct man_node *to, 
+a131 1
+	/* LINTED */
+a153 1
+
+d158 2
+a159 2
+	if (MAN_BLOCK == type && ntok == n->parent->tok && 
+			MAN_BODY == n->parent->type)
+a163 1
+
+d169 1
+a169 1
+static enum rew 
+d196 1
+a196 1
+	/* 
+d202 1
+a202 1
+	case (MAN_SH):
+d204 1
+a204 1
+	case (MAN_SS):
+d209 1
+a209 1
+	case (MAN_RS):
+a236 1
+
+a247 1
+	/* LINTED */
+d249 1
+a249 1
+		/* 
+d261 1
+a261 1
+	/* 
+a273 1
+/* ARGSUSED */
+d277 1
+a277 1
+	enum mant	 	 ntok;
+d281 1
+a281 1
+	case (MAN_RE):
+d284 1
+a284 1
+	case (MAN_UE):
+d300 1
+a300 1
+	} else 
+a305 2
+
+/* ARGSUSED */
+a344 2
+
+
+a350 1
+/* ARGSUSED */
+a401 2
+
+/* ARGSUSED */
+d441 1
+a441 1
+	} 
+d452 1
+a452 1
+	
+d471 1
+a471 1
+	 * Same here regarding whether we're back at the root. 
+@
+
+
+1.80
+log
+@Simplify: Remove an unused argument from the mandoc_eos() function.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.79 2013/12/25 00:50:05 schwarze Exp $ */
+d94 1
+@
+
+
+1.79
+log
+@s/[Nn]ull/NUL/ in comments where appropriate;
+suggested by Thomas Klausner <wiz @@ NetBSD dot org>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.78 2013/12/22 13:25:17 schwarze Exp $ */
+d441 1
+a441 1
+	    mandoc_eos(man->last->string, strlen(man->last->string), 0))
+@
+
+
+1.78
+log
+@Implement end-of-sentence spacing at the end of man(7) macro lines.
+
+Patch from Franco Fichtner <franco at lastsummer dot de> (DragonFly).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.77 2013/11/11 00:37:55 schwarze Exp $ */
+d5 1
+@
+
+
+1.77
+log
+@In the parser, when closing an explicit block that is not open,
+close below-subsection implicit scopes that may still be open.
+In the formatter, make sure indentation is reset when leaving a scope,
+not only when entering the next one.
+
+Improves the formatting of gpg(1); issue reported by jca on ports.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.76 2013/10/17 20:54:58 schwarze Exp $ */
+d435 9
+@
+
+
+1.76
+log
+@Implement the .UR/.UE block (uniform resource identifier) introduced in the
+man-ext macros by Eric S. Raymond, enabled by default in groff_man(7).
+Usual disclaimer: You don't write new man(7) code, so you are not going
+to use these, either.
+Improves e.g. the bzr(1) and etherape(1) manuals.
+Thanks to naddy@@ for bringing these to my attention.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.75 2012/11/17 00:26:33 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d301 5
+a305 1
+	if (NULL != nn)
+a306 2
+	else
+		man_pmsg(man, line, ppos, MANDOCERR_NOSCOPE);
+@
+
+
+1.75
+log
+@Cleanup naming of local variables to make the code easier on the eye:
+Settle for "struct man *man", "struct mdoc *mdoc", "struct meta *meta"
+and avoid the confusing "*m" which was sometimes this, sometimes that.
+No functional change.
+
+ok kristaps@@ some time ago
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.74 2012/06/12 12:47:14 kristaps Exp $ */
+d91 2
+d289 3
+@
+
+
+1.74
+log
+@Fix an assert() raised by `RS' when following `TP'.
+The reason was that `RS' wasn't BSCOPE'd, so the next-line (BLINE) scope
+opened by `TP' would still be in the HEAD macro.
+This was from joerg@@'s archive of failures.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.73 2012/06/03 09:52:07 schwarze Exp $ */
+d100 1
+a100 1
+rew_warn(struct man *m, struct man_node *n, enum mandocerr er)
+d111 1
+a111 1
+	man_nmsg(m, n, er);
+d120 1
+a120 1
+man_unscope(struct man *m, const struct man_node *to, 
+d127 1
+a127 1
+	m->next = MAN_NEXT_SIBLING;
+d130 1
+a130 1
+	while (m->last != to) {
+d133 2
+a134 2
+		 * m->last node in the post-validation phase and reset
+		 * it to m->last->parent, causing a step in the closing
+d137 3
+a139 3
+		n = m->last->parent;
+		rew_warn(m, m->last, er);
+		if ( ! man_valid_post(m))
+d141 2
+a142 2
+		m->last = n;
+		assert(m->last);
+d145 2
+a146 2
+	rew_warn(m, m->last, er);
+	if ( ! man_valid_post(m))
+d244 1
+a244 1
+rew_scope(enum man_type type, struct man *m, enum mant tok)
+d250 1
+a250 1
+	for (n = m->last; n; n = n->parent) {
+d269 1
+a269 1
+	return(man_unscope(m, n, MANDOCERR_MAX));
+d292 1
+a292 1
+	for (nn = m->last->parent; nn; nn = nn->parent)
+d297 1
+a297 1
+		man_unscope(m, nn, MANDOCERR_MAX);
+d299 1
+a299 1
+		man_pmsg(m, line, ppos, MANDOCERR_NOSCOPE);
+d315 1
+a315 1
+	if ( ! rew_scope(MAN_BLOCK, m, tok))
+d318 1
+a318 1
+	if ( ! man_block_alloc(m, line, ppos, tok))
+d320 1
+a320 1
+	if ( ! man_head_alloc(m, line, ppos, tok))
+d325 1
+a325 1
+		if ( ! man_args(m, line, pos, buf, &p))
+d327 1
+a327 1
+		if ( ! man_word_alloc(m, line, la, p))
+d331 1
+a331 1
+	assert(m);
+d334 1
+a334 1
+	for (n = m->last; n; n = n->parent) {
+d338 1
+a338 1
+		man_unscope(m, n, MANDOCERR_MAX);
+d342 1
+a342 1
+	return(man_body_alloc(m, line, ppos, tok));
+d363 1
+a363 1
+	if ( ! rew_scope(MAN_BODY, m, tok))
+d365 1
+a365 1
+	if ( ! rew_scope(MAN_BLOCK, m, tok))
+d370 1
+a370 1
+	if ( ! man_block_alloc(m, line, ppos, tok))
+d372 1
+a372 1
+	if ( ! man_head_alloc(m, line, ppos, tok))
+d375 1
+a375 1
+	n = m->last;
+d381 1
+a381 1
+		if ( ! man_args(m, line, pos, buf, &p))
+d383 1
+a383 1
+		if ( ! man_word_alloc(m, line, la, p))
+d392 1
+a392 1
+			m->flags |= MAN_BLINE;
+d394 2
+a395 2
+		} else if (n == m->last) {
+			m->flags |= MAN_BLINE;
+d400 1
+a400 1
+	if ( ! rew_scope(MAN_HEAD, m, tok))
+d402 1
+a402 1
+	return(man_body_alloc(m, line, ppos, tok));
+d414 1
+a414 1
+	if ( ! man_elem_alloc(m, line, ppos, tok))
+d417 1
+a417 1
+	n = m->last;
+d421 1
+a421 1
+		if ( ! man_args(m, line, pos, buf, &p))
+d423 1
+a423 1
+		if ( ! man_word_alloc(m, line, la, p))
+d433 1
+a433 1
+	if (n == m->last && MAN_SCOPED & man_macros[tok].flags) {
+d435 1
+a435 1
+		m->flags |= MAN_ELINE;
+d443 1
+a443 1
+		m->flags |= MAN_ILINE;
+d446 2
+a447 2
+	assert(MAN_ROOT != m->last->type);
+	m->next = MAN_NEXT_SIBLING;
+d455 2
+a456 2
+	for ( ; m->last; m->last = m->last->parent) {
+		if (m->last == n)
+d458 1
+a458 1
+		if (m->last->type == MAN_ROOT)
+d460 1
+a460 1
+		if ( ! man_valid_post(m))
+d464 1
+a464 1
+	assert(m->last);
+d470 1
+a470 1
+	if (m->last->type != MAN_ROOT && ! man_valid_post(m))
+d478 1
+a478 1
+man_macroend(struct man *m)
+d481 1
+a481 1
+	return(man_unscope(m, m->first, MANDOCERR_SCOPEEXIT));
+d485 1
+a485 1
+man_args(struct man *m, int line, int *pos, char *buf, char **v)
+d496 1
+a496 1
+	*v = mandoc_getarg(m->parse, v, line, pos);
+@
+
+
+1.73
+log
+@Close a preceding implicit block before opening an explicit block.
+
+To allow doing so, no longer abuse rew_scope() to unwind explicit blocks;
+explicitly call man_unscope() instead.
+
+Fixing the indentation of slapd.conf(5) in the OpenLDAP port;
+thanks to guenther@@ for the report.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.72 2012/06/02 20:16:23 schwarze Exp $ */
+d81 1
+a81 1
+	{ blk_exp, MAN_EXPLICIT }, /* RS */
+@
+
+
+1.72
+log
+@Minimal implementation of .EX and .EE for GNU compatibility.
+Do not use this, it is not portable and only defined in esr's man-ext.
+For example, sox(1) wants these macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.71 2012/01/03 15:16:24 kristaps Exp $ */
+d4 1
+d189 6
+a194 2
+	if (type == n->type && tok == n->tok)
+		return(REW_REWIND);
+d210 4
+d293 1
+a293 1
+		if (ntok == nn->tok)
+d296 3
+a298 1
+	if (NULL == nn)
+a300 5
+	if ( ! rew_scope(MAN_BODY, m, ntok))
+		return(0);
+	if ( ! rew_scope(MAN_BLOCK, m, ntok))
+		return(0);
+
+d309 1
+d313 4
+a316 5
+	/* 
+	 * Close out prior scopes.  "Regular" explicit macros cannot be
+	 * nested, but we allow roff macros to be placed just about
+	 * anywhere.
+	 */
+d334 8
+a341 2
+	if ( ! rew_scope(MAN_HEAD, m, tok))
+		return(0);
+@
+
+
+1.71
+log
+@Add support for `OP', one of the extended man macros.  This also requires
+some man(7) changes to accomodate for the an-ext compatibility.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.70 2011/12/04 00:44:12 schwarze Exp $ */
+d88 2
+@
+
+
+1.70
+log
+@Jumping out of man_unscope() for the root node is a bad idea
+because that will skip root node validation, potentially entering
+rendering modules will NULL pointers lurking in the meta data.
+Instead, always validate the root node and (as suggested by joerg@@)
+assert validity of the meta data before using it in the renderers.
+ok joerg@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.69 2011/11/18 17:06:19 joerg Exp $ */
+d87 1
+@
+
+
+1.69
+log
+@Fix condition. Not enough tea.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.68 2011/11/18 16:43:29 joerg Exp $ */
+a122 2
+	if (MAN_ROOT == m->last->type)
+		return(1);
+@
+
+
+1.68
+log
+@Slightly adjust last: return successful as some times the correct error
+is raised later.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.67 2011/11/18 16:39:08 joerg Exp $ */
+d123 1
+a123 1
+	if (MAN_ROOT != m->last->type)
+@
+
+
+1.67
+log
+@Convert an assert into an explicit check. man_unscope can be triggered
+on unknown macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.66 2011/11/07 01:24:40 schwarze Exp $ */
+d124 1
+a124 1
+		return(0);
+@
+
+
+1.66
+log
+@When the HEAD scope of .TP is broken by another block macro,
+do not abort with a FATAL error, but report a report a WARNING,
+remove the broken .TP from the syntax tree, and prod on.
+Reported repeatedly by ports people, at least by brad@@ and jeremy@@.
+Also fixes rendition(4) in Xenocara.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.65 2011/09/18 14:14:15 schwarze Exp $ */
+d123 2
+a124 1
+	assert(MAN_ROOT != m->last->type);
+@
+
+
+1.65
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.64 2011/07/07 05:42:32 kristaps Exp $ */
+d55 9
+a63 9
+	{ in_line_eoln, 0 }, /* TH */
+	{ blk_imp, MAN_SCOPED }, /* SH */
+	{ blk_imp, MAN_SCOPED }, /* SS */
+	{ blk_imp, MAN_SCOPED | MAN_FSCOPED }, /* TP */
+	{ blk_imp, 0 }, /* LP */
+	{ blk_imp, 0 }, /* PP */
+	{ blk_imp, 0 }, /* P */
+	{ blk_imp, 0 }, /* IP */
+	{ blk_imp, 0 }, /* HP */
+d77 2
+a78 2
+	{ in_line_eoln, 0 }, /* nf */
+	{ in_line_eoln, 0 }, /* fi */
+@
+
+
+1.64
+log
+@Fix a bug in the -man parser where deleting nodes (such as `PP' or `LP'
+in certain situations) caused the next macros to be assigned as siblings
+instead of child nodes to the original parent.  Noticed and ok by
+schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.63 2011/06/18 17:36:52 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.63
+log
+@Allow RS/RE blocks to nest.  This requires first the syntax tree to
+accomodate for the fix, then for the front-ends.  -T[x]html accepted the
+syntax tree natively, but -Tascii had to use relative offsets.  It's
+quite a simple fix.
+
+From a TODO by {dcoppa,dsoares}@@openbsd.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.62 2011/04/19 16:38:48 kristaps Exp $ */
+d123 3
+a145 3
+	m->next = MAN_ROOT == m->last->type ? 
+		MAN_NEXT_CHILD : MAN_NEXT_SIBLING;
+
+d431 3
+a458 3
+	m->next = MAN_ROOT == m->last->type ?
+		MAN_NEXT_CHILD : MAN_NEXT_SIBLING;
+
+@
+
+
+1.62
+log
+@Clean up parsing of delimiters in -mdoc.  First, remove the "dowarn"
+variable from mandoc_getarg() so that it prints the warning every time.
+Then, remove the warning from args_checkpunct().  This way, warnings
+are being posted at the correct time.  This makes the flag argument to
+mdoc_zargs() superfluous, so make it be zero when it's invoked.  Finally,
+move the args() flags into mdoc_argv.c and make them enums.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.61 2011/04/17 09:08:19 kristaps Exp $ */
+a309 5
+	if ( ! rew_scope(MAN_BODY, m, tok))
+		return(0);
+	if ( ! rew_scope(MAN_BLOCK, m, tok))
+		return(0);
+
+@
+
+
+1.61
+log
+@Get mdoc_argv.c ready to use [some of] mandoc_getarg() by giving said
+function a parameter to suppress warnings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.60 2011/03/23 15:33:57 kristaps Exp $ */
+d487 1
+a487 1
+	*v = mandoc_getarg(m->parse, v, line, 1, pos);
+@
+
+
+1.60
+log
+@Merge man_args() into man_macro.c, the only place where it's called, and
+make its return value boolean (we don't care about QWORD).  We can move
+it into mdoc_macro.c because it's basically just a wrapper around
+mandoc_getarg().  Then blow away man_argv.c, which is left empty.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.59 2011/03/23 12:40:04 kristaps Exp $ */
+d487 1
+a487 1
+	*v = mandoc_getarg(m->parse, v, line, pos);
+@
+
+
+1.59
+log
+@First, make -man ARGS_EOLN et al. be an enum.  Second, remove
+ARGS_ERROR, as it is never returned by man_args().  Then clean up
+invocations of man_args() to only check for ARGS_EOLN.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.58 2011/03/22 14:33:05 kristaps Exp $ */
+d41 2
+d322 1
+a322 1
+		if (ARGS_EOLN == man_args(m, line, pos, buf, &p))
+d372 1
+a372 1
+		if (ARGS_EOLN == man_args(m, line, pos, buf, &p))
+d412 1
+a412 1
+		if (ARGS_EOLN == man_args(m, line, pos, buf, &p))
+d475 15
+@
+
+
+1.58
+log
+@libmdoc.h and libman.h were including mdoc.h and man.h, respectively.
+Don't have them do that (includes in header files = faugh), and have
+individual files directly include these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.57 2011/03/20 16:02:05 kristaps Exp $ */
+d299 1
+a299 1
+	int		 w, la;
+d320 1
+a320 5
+		w = man_args(m, line, pos, buf, &p);
+
+		if (-1 == w)
+			return(0);
+		if (0 == w)
+a321 1
+
+d346 1
+a346 1
+	int		 w, la;
+d370 1
+a370 5
+		w = man_args(m, line, pos, buf, &p);
+
+		if (-1 == w)
+			return(0);
+		if (0 == w)
+a371 1
+
+d399 1
+a399 1
+	int		 w, la;
+d410 1
+a410 5
+		w = man_args(m, line, pos, buf, &p);
+
+		if (-1 == w)
+			return(0);
+		if (0 == w)
+@
+
+
+1.57
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.56 2011/03/17 11:56:17 kristaps Exp $ */
+d26 1
+@
+
+
+1.56
+log
+@Clean-up in libman: make all calls to man_*msg not check return value.
+Also convert man_vmsg to return void.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.55 2011/01/12 16:55:22 kristaps Exp $ */
+d27 1
+@
+
+
+1.55
+log
+@Downgrade -man message of ignored empty paragraph to MANDOC_IGNPAR.  The
+change in man_macro.c was from an assertion caused by a subtle problem:
+(1) macro is removed, causing m->last to be m->last->parent; (2) by jumping
+to the m->last->parent after post-validation, the original
+m->last->parent is skipped; (3) the rewinder climbs to the root of the
+tree and aborts.
+
+The original issue recorded in the TODO by schwarze@@, reminded by Brad
+Smith.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.54 2010/12/08 10:58:22 kristaps Exp $ */
+d46 1
+a46 1
+static	int		 rew_warn(struct man *, 
+d91 1
+a91 1
+static int
+d96 1
+a96 1
+		return(1);
+d98 1
+a98 1
+		return(1);
+d100 4
+a103 2
+		return(1);
+	return(man_nmsg(m, n, er));
+d128 1
+a128 2
+		if ( ! rew_warn(m, m->last, er))
+			return(0);
+d135 1
+a135 2
+	if ( ! rew_warn(m, m->last, er))
+		return(0);
+d282 1
+a282 2
+		if ( ! man_pmsg(m, line, ppos, MANDOCERR_NOSCOPE))
+			return(0);
+@
+
+
+1.54
+log
+@Remove `i' and `r' macro handlers.  These macros, originally part of the
+me package, aren't recognised by "groff -mandoc" so we don't need to do
+so either.  Discussed on tech@@ with schwarze@@.
+
+While at it, remove references to `b' in man.7.  As far as I know, this
+was never supported anyway.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.53 2010/12/06 15:31:19 kristaps Exp $ */
+d110 1
+a110 1
+man_unscope(struct man *m, const struct man_node *n, 
+d113 1
+d115 1
+a115 1
+	assert(n);
+d118 8
+a125 1
+	while (m->last != n) {
+d130 1
+a130 1
+		m->last = m->last->parent;
+@
+
+
+1.53
+log
+@Add support for `ft' macro found in groff(7).  Based on a patch by
+schwarze@@, but without the -T[x]html handling, which structurally does
+not work.  Also add man.7 documentation (not in original patch).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.52 2010/12/05 16:14:16 kristaps Exp $ */
+a71 1
+	{ in_line_eoln, 0 }, /* i */
+a74 1
+	{ in_line_eoln, 0 }, /* r */
+@
+
+
+1.52
+log
+@Remove `Sp', `Vb', and `Ve' (as per schwarze@@'s changes in OpenBSD),
+which are now accomodated for the new libroff modifications.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.51 2010/11/30 15:36:28 kristaps Exp $ */
+d84 1
+@
+
+
+1.51
+log
+@Kill man_action.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.50 2010/07/31 23:52:58 schwarze Exp $ */
+a81 3
+	{ in_line_eoln, MAN_NSCOPED }, /* Sp */
+	{ in_line_eoln, 0 }, /* Vb */
+	{ in_line_eoln, 0 }, /* Ve */
+@
+
+
+1.50
+log
+@Sync to OpenBSD: add missing Copyright years.
+I checked that substantial changes were committed
+to these files during these years.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.49 2010/07/22 23:03:15 kristaps Exp $ */
+a125 2
+		if ( ! man_action_post(m))
+			return(0);
+a133 2
+	if ( ! man_action_post(m))
+		return(0);
+a456 2
+		if ( ! man_action_post(m))
+			return(0);
+a466 2
+	if (m->last->type != MAN_ROOT && ! man_action_post(m))
+		return(0);
+@
+
+
+1.49
+log
+@Added `in' macro support for -man -Tascii.  This is not yet supported in
+-Thtml (I'm surprised to note that neither is LITERAL mode).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.48 2010/06/26 16:07:08 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.48
+log
+@Mechanical diff allowing the const struct regset to propogate through
+libman and libmdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.47 2010/06/19 20:46:28 kristaps Exp $ */
+d86 1
+@
+
+
+1.47
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.46 2010/05/17 22:11:42 kristaps Exp $ */
+d293 1
+d345 1
+d403 1
+@
+
+
+1.46
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.45 2010/05/17 10:50:32 joerg Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.45
+log
+@Add support for .AT. Properly implement .UC. Add regress tests.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.44 2010/05/15 22:44:04 kristaps Exp $ */
+d26 1
+d47 1
+a47 1
+				struct man_node *, enum merr);
+d95 1
+a95 1
+rew_warn(struct man *m, struct man_node *n, enum merr er)
+d98 1
+a98 1
+	if (er == WERRMAX || MAN_BLOCK != n->type)
+d104 1
+a104 1
+	return(man_nwarn(m, n, er));
+d109 2
+a110 2
+ * Rewind scope.  If a code "er" != WERRMAX has been provided, it will
+ * be used if an explicit block scope is being closed out.
+d113 2
+a114 1
+man_unscope(struct man *m, const struct man_node *n, enum merr er)
+d253 1
+a253 1
+	return(man_unscope(m, n, WERRMAX));
+d281 1
+a281 1
+		if ( ! man_pwarn(m, line, ppos, WNOSCOPE))
+d483 1
+a483 1
+	return(man_unscope(m, m->first, WEXITSCOPE));
+@
+
+
+1.44
+log
+@Remove `am', `ami', `de', `dei', and `.' from -man, as they're now in the roff preprocessor.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.43 2010/05/15 20:51:40 kristaps Exp $ */
+d84 1
+@
+
+
+1.43
+log
+@Pull `ig' out of -man and leave it the roff preparser.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.42 2010/03/29 10:10:35 kristaps Exp $ */
+a34 1
+static	int		 blk_dotted(MACRO_PROT_ARGS);
+a83 5
+	{ blk_exp, MAN_EXPLICIT | MAN_NOCLOSE}, /* de */
+	{ blk_exp, MAN_EXPLICIT | MAN_NOCLOSE}, /* dei */
+	{ blk_exp, MAN_EXPLICIT | MAN_NOCLOSE}, /* am */
+	{ blk_exp, MAN_EXPLICIT | MAN_NOCLOSE}, /* ami */
+	{ blk_dotted, 0 }, /* . */
+a101 2
+	if (MAN_NOCLOSE & man_macros[n->tok].flags)
+		return(1);
+a180 18
+	/*
+	 * If we're a roff macro, then we can close out anything that
+	 * stands between us and our parent context.
+	 */
+	if (MAN_NOCLOSE & man_macros[tok].flags)
+		return(REW_NOHALT);
+
+	/* 
+	 * Don't clobber roff macros: this is a bit complicated.  If the
+	 * current macro is a roff macro, halt immediately and don't
+	 * rewind.  If it's not, and the parent is, then close out the
+	 * current scope and halt at the parent.
+	 */
+	if (MAN_NOCLOSE & man_macros[n->tok].flags)
+		return(REW_HALT);
+	if (MAN_NOCLOSE & man_macros[n->parent->tok].flags)
+		return(REW_REWIND);
+
+a248 2
+	if (MAN_NOCLOSE & man_macros[tok].flags)
+		return(man_unscope(m, n, WROFFSCOPE));
+a254 45
+ * Closure for dotted macros (de, dei, am, ami, ign).  This must handle
+ * any of these as the parent node, so it needs special handling.
+ * Beyond this, it's the same as blk_close().
+ */
+/* ARGSUSED */
+int
+blk_dotted(MACRO_PROT_ARGS)
+{
+	enum mant	 ntok;
+	struct man_node	*nn;
+
+	/* Check for any of the following parents... */
+
+	for (nn = m->last->parent; nn; nn = nn->parent)
+		if (nn->tok == MAN_de || nn->tok == MAN_dei ||
+				nn->tok == MAN_am ||
+				nn->tok == MAN_ami) {
+			ntok = nn->tok;
+			break;
+		}
+
+	if (NULL == nn) {
+		if ( ! man_pwarn(m, line, ppos, WNOSCOPE))
+			return(0);
+		return(1);
+	}
+
+	if ( ! rew_scope(MAN_BODY, m, ntok))
+		return(0);
+	if ( ! rew_scope(MAN_BLOCK, m, ntok))
+		return(0);
+
+	/*
+	 * Restore flags set when we got here and also stipulate that we
+	 * don't post-process the line when exiting the macro op
+	 * function in man_pmacro().  See blk_exp().
+	 */
+
+	m->flags = m->svflags | MAN_ILINE;
+	m->next = m->svnext;
+	return(1);
+}
+
+
+/*
+d302 4
+a305 17
+	if ( ! (MAN_NOCLOSE & man_macros[tok].flags)) {
+		if ( ! rew_scope(MAN_BODY, m, tok))
+			return(0);
+		if ( ! rew_scope(MAN_BLOCK, m, tok))
+			return(0);
+	} else {
+		/*
+		 * Save our state and next-scope indicator; we restore
+		 * it when exiting from the roff instruction block.  See
+		 * blk_dotted().
+		 */
+		m->svflags = m->flags;
+		m->svnext = m->next;
+		
+		/* Make sure we drop any line modes. */
+		m->flags = 0;
+	}
+@
+
+
+1.42
+log
+@Final (?) fix to issue pointed out by Sascha Wildner: roff instructions clobbering prior scope rules and line modes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.41 2010/03/29 04:52:14 kristaps Exp $ */
+a88 1
+	{ blk_exp, MAN_EXPLICIT | MAN_NOCLOSE}, /* ig */
+d299 1
+a299 2
+				nn->tok == MAN_ami ||
+				nn->tok == MAN_ig) {
+@
+
+
+1.41
+log
+@Initial step in fixing badness reported by Sascha Wildner (wip).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.40 2010/03/27 10:14:32 kristaps Exp $ */
+a316 14
+	/* 
+	 * XXX: manually adjust our next-line status.  roff macros are,
+	 * for the moment, ignored, so we don't want to close out bodies
+	 * and so on.
+	 */
+
+	switch (m->last->type) {
+	case (MAN_BODY):
+		m->next = MAN_NEXT_CHILD;
+		break;
+	default:
+		break;
+	}
+
+d320 1
+a320 1
+	 * function in man_pmacro().
+a321 2
+	m->flags = m->svflags;
+	m->flags |= MAN_ILINE;
+d323 2
+d384 3
+a386 2
+		 * Save our state; we restore it when exiting from the
+		 * roff instruction block.
+d389 3
+@
+
+
+1.40
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.39 2010/03/27 10:13:16 kristaps Exp $ */
+d331 8
+d396 7
+@
+
+
+1.39
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.38 2010/03/27 10:04:56 kristaps Exp $ */
+d31 1
+a31 1
+	REW_HALT,
+@
+
+
+1.38
+log
+@Fixed re-adjustment of scope in exiting roff instructions (libman).
+Added title-case check for (libman).
+Fixed premature closure of roff instruction scope (libman).
+Added documentation of ignored roff macros to man(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.37 2010/03/25 07:39:25 kristaps Exp $ */
+a561 4
+	struct man_node	*n;
+
+	n = MAN_VALID & m->last->flags ?
+		m->last->parent : m->last;
+@
+
+
+1.37
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.36 2010/03/25 07:28:16 kristaps Exp $ */
+d46 2
+d96 23
+d120 1
+a120 1
+man_unscope(struct man *m, const struct man_node *n)
+d127 2
+d137 2
+d172 1
+d175 1
+d177 2
+d181 2
+d186 1
+a186 1
+	/* Rewind to ourselves, first. */
+d190 23
+d271 7
+a277 1
+	/* Rewind until the current point. */
+d279 1
+a279 2
+	assert(n);
+	return(man_unscope(m, n));
+d295 2
+d317 14
+d567 1
+a567 10
+	for ( ; n; n = n->parent) {
+		if (MAN_BLOCK != n->type)
+			continue;
+		if ( ! (MAN_EXPLICIT & man_macros[n->tok].flags))
+			continue;
+		if ( ! man_nwarn(m, n, WEXITSCOPE))
+			return(0);
+	}
+
+	return(man_unscope(m, m->first));
+@
+
+
+1.36
+log
+@Fixed up some documentation in man.7: only documenting man.7 macros, not related ones (de, Vb, etc.), which aren't technically man.  It's an open question as to where these /should/ be documented, however.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.35 2010/03/24 20:10:53 kristaps Exp $ */
+d225 1
+d259 1
+@
+
+
+1.35
+log
+@Using man_node_delete() instead of man_node_free()/man_node_freelist() and friends (much simpler).
+Split blk_imp() into blk_exp() (explicit macros), blk_dotted() (roff macros), and the original.
+Added de, dei, am, ami, and ig roff macros (for now, these are discarded within the parse).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.34 2010/03/24 03:46:02 kristaps Exp $ */
+d220 5
+a224 1
+/* ARGSUSED */
+d255 3
+a257 1
+/* ARGSUSED */
+a294 1
+	struct man_node	*n;
+a313 2
+	n = m->last;
+
+@
+
+
+1.34
+log
+@enum-ised rew_* return values (type-safety).
+Removed ignoring of MAN_Vb argument (symmetry).
+Removed superfluous utsname inclusion.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.33 2010/03/23 21:50:43 kristaps Exp $ */
+d34 4
+a38 2
+static	int		 blk_imp(MACRO_PROT_ARGS);
+static	int		 blk_close(MACRO_PROT_ARGS);
+d76 1
+a76 1
+	{ blk_imp, MAN_EXPLICIT }, /* RS */
+d83 6
+a98 1
+	m->next = MAN_NEXT_SIBLING;
+d112 7
+a118 1
+	return(man_action_post(m));
+d222 31
+d279 1
+a279 1
+	m->next = MAN_NEXT_SIBLING;
+d284 50
+a392 1
+
+d467 3
+a469 2
+	if (m->last->type != MAN_ROOT)
+		m->next = MAN_NEXT_SIBLING;
+@
+
+
+1.33
+log
+@libman using enum mant instead of #defines for macros.
+Clean-ups, better documentation in man_hash.c.
+Added extra space for "." in man_hash.c (unused for the time being).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.32 2010/03/23 11:30:48 kristaps Exp $ */
+d28 5
+a32 3
+#define	REW_REWIND	(0)		/* See rew_scope(). */
+#define	REW_NOHALT	(1)		/* See rew_scope(). */
+#define	REW_HALT	(2)		/* See rew_scope(). */
+d40 1
+a40 1
+static	int 		 rew_dohalt(enum mant, enum man_type, 
+d42 1
+a42 1
+static	int		 rew_block(enum mant, enum man_type, 
+d109 1
+a109 1
+static int
+d125 1
+a125 1
+static int 
+d128 1
+a128 1
+	int		 c;
+d184 1
+a184 1
+	int		 c;
+a323 5
+
+		/* XXX ignore Vb arguments for now */
+		if (MAN_Vb == tok)
+			continue;
+
+@
+
+
+1.32
+log
+@Support for pod2man standard header macros (Vb, Ve, Sp).  Based largely on a set of patches by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.31 2010/03/22 05:59:32 kristaps Exp $ */
+d36 3
+a38 2
+static	int		 rew_scope(enum man_type, struct man *, int);
+static	int 		 rew_dohalt(int, enum man_type, 
+d40 1
+a40 1
+static	int		 rew_block(int, enum man_type, 
+d108 1
+a108 1
+rew_block(int ntok, enum man_type type, const struct man_node *n)
+d124 1
+a124 1
+rew_dohalt(int tok, enum man_type type, const struct man_node *n)
+d179 1
+a179 1
+rew_scope(enum man_type type, struct man *m, int tok)
+d209 1
+a209 1
+	int 		 	 ntok;
+@
+
+
+1.31
+log
+@Accomodate (libman) for next-line macros followed by non-text macros `na', `sp', and `br'.
+Based on a patch by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.30 2010/01/01 17:14:28 kristaps Exp $ */
+d75 3
+d322 4
+@
+
+
+1.30
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.29 2009/10/24 05:45:05 kristaps Exp $ */
+d43 1
+a43 1
+	{ in_line_eoln, 0 }, /* br */
+d64 1
+a64 1
+	{ in_line_eoln, 0 }, /* na */
+d66 1
+a66 1
+	{ in_line_eoln, 0 }, /* sp */
+d323 6
+d330 1
+d335 7
+d343 3
+a345 2
+	 * Note that when TH is pruned, we'll be back at the root, so
+	 * make sure that we don't clobber as its sibling.
+@
+
+
+1.29
+log
+@Added `PD' to -man (doesn't do anything, yet).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.28 2009/08/22 09:10:38 kristaps Exp $ */
+d17 4
+@
+
+
+1.28
+log
+@Added `UC' libman macro (has no effect).
+Corrected `UC' and `DT' not to print their arguments.
+Noted that `UC' and `DT' shouldn't be used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.27 2009/08/21 13:14:07 kristaps Exp $ */
+d70 1
+@
+
+
+1.27
+log
+@Fixed next-line scoping of `.HP nnn' (has both next-line and on-line in head).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.26 2009/08/21 12:12:12 kristaps Exp $ */
+d69 1
+@
+
+
+1.26
+log
+@Open explicit scope on libman exit now only generates warning.
+Consecutive ELINE scopes are now pruned (with a warning).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.25 2009/08/20 13:55:19 kristaps Exp $ */
+d43 1
+a43 1
+	{ blk_imp, MAN_SCOPED }, /* TP */
+d274 12
+a285 4
+	if (n == m->last && MAN_SCOPED & man_macros[tok].flags) {
+		m->flags |= MAN_BLINE;
+		return(1);
+	} else if ( ! rew_scope(MAN_HEAD, m, tok))
+@
+
+
+1.25
+log
+@Fixed next-line scope error in libman block macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.24 2009/08/20 13:51:55 kristaps Exp $ */
+d360 2
+a361 1
+		return(man_nerr(m, n, WEXITSCOPE));
+@
+
+
+1.24
+log
+@Fixed (not documented anywhere of course) that `SH' and `SS' in libman have next-line head scope.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.23 2009/08/20 11:51:07 kristaps Exp $ */
+d239 1
+d255 2
+d274 1
+a274 1
+	if (MAN_SCOPED & man_macros[tok].flags) {
+d309 1
+a309 1
+	if (n == m->last && (MAN_SCOPED & man_macros[tok].flags)) {
+@
+
+
+1.23
+log
+@Added `DT' macro (pointed out by joerg@@netbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.22 2009/08/19 12:15:58 kristaps Exp $ */
+d41 2
+a42 2
+	{ blk_imp, 0 }, /* SH */
+	{ blk_imp, 0 }, /* SS */
+@
+
+
+1.22
+log
+@libman checks for open explicit scopes on exit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.21 2009/08/19 09:14:50 kristaps Exp $ */
+d68 1
+@
+
+
+1.21
+log
+@Added RS/RE macro pair (had to adjust closing rules, sec/ssec/rs/par).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.20 2009/08/18 08:48:30 kristaps Exp $ */
+d67 1
+a67 1
+	{ blk_imp, 0 }, /* RS */
+a314 2
+	/* FIXME: clean this to use man_unscope(). */
+
+d346 12
+@
+
+
+1.20
+log
+@Small updates to man.7 (next-line break-exclusions, numerical width example).
+Fully tested and correct scope-rewinding of block macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.19 2009/08/13 11:45:29 kristaps Exp $ */
+d30 1
+d35 2
+d66 2
+d96 11
+d115 1
+d125 4
+a130 3
+		/* Rewind to ourselves. */
+		if (type == n->type && tok == n->tok)
+			return(REW_REWIND);
+a132 3
+		/* Rewind to ourselves. */
+		if (type == n->type && tok == n->tok)
+			return(REW_REWIND);
+d134 10
+a143 6
+		if (MAN_BLOCK == type && MAN_SH == n->parent->tok && 
+				MAN_BODY == n->parent->type)
+			return(REW_REWIND);
+		/* Don't go beyond a section. */
+		if (MAN_SH == n->tok)
+			return(REW_HALT);
+d146 3
+a148 3
+		/* Rewind to ourselves. */
+		if (type == n->type && tok == n->tok)
+			return(REW_REWIND);
+d150 2
+a151 6
+		if (MAN_BLOCK == type && MAN_SS == n->parent->tok && 
+				MAN_BODY == n->parent->type)
+			return(REW_REWIND);
+		/* Don't go beyond a subsection. */
+		if (MAN_SS == n->tok)
+			return(REW_HALT);
+d153 2
+a154 6
+		if (MAN_BLOCK == type && MAN_SH == n->parent->tok && 
+				MAN_BODY == n->parent->type)
+			return(REW_REWIND);
+		/* Don't go beyond a section. */
+		if (MAN_SH == n->tok)
+			return(REW_HALT);
+d194 33
+a265 1
+		m->next = MAN_NEXT_SIBLING;
+a290 1
+	m->next = MAN_NEXT_CHILD;
+a302 1
+		m->next = MAN_NEXT_SIBLING;
+@
+
+
+1.19
+log
+@Significant overhaul in libman.  Macros are now block- and line-scoped (with
+next-line scope extensions possible).  man.7 reflects block and line scoping,
+and also includes a REFERENCE section that will be used as a template for the
+big mdoc reference.  Many fixes in next-line behaviour for both inline and
+block macros.  Added some macros for compatibility (from me.7).  Corrected
+quoted-literal handling for libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.18 2009/07/24 20:22:24 kristaps Exp $ */
+d110 1
+a110 1
+		/* Break at root. */
+d115 1
+a115 1
+		/* Break at section. */
+d118 6
+a123 1
+		if (MAN_BODY == n->type && MAN_SH == n->tok)
+d127 1
+a127 1
+		/* Break at subsection. */
+d130 6
+a135 1
+		if (MAN_BODY == n->type && MAN_SS == n->tok)
+d137 6
+a142 1
+		if (MAN_BODY == n->type && MAN_SH == n->tok)
+@
+
+
+1.18
+log
+@Added `sp' support to libman.
+Added `\c' to known escapes (only used in man, but still).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.17 2009/06/18 10:53:58 kristaps Exp $ */
+d24 40
+a63 2
+#define	FL_NLINE	(1 << 0)
+#define	FL_TLINE	(1 << 1)
+d65 1
+a65 2
+static	int		 man_args(struct man *, int, 
+				int *, char *, char **);
+a66 26
+static	int man_flags[MAN_MAX] = {
+	0, /* br */
+	0, /* TH */
+	0, /* SH */
+	0, /* SS */
+	FL_TLINE, /* TP */
+	0, /* LP */
+	0, /* PP */
+	0, /* P */
+	0, /* IP */
+	0, /* HP */
+	FL_NLINE, /* SM */
+	FL_NLINE, /* SB */
+	FL_NLINE, /* BI */
+	FL_NLINE, /* IB */
+	FL_NLINE, /* BR */
+	FL_NLINE, /* RB */
+	FL_NLINE, /* R */
+	FL_NLINE, /* B */
+	FL_NLINE, /* I */
+	FL_NLINE, /* IR */
+	FL_NLINE, /* RI */
+	0, /* na */
+	FL_NLINE, /* i */
+	0, /* sp */
+};
+d69 1
+a69 2
+man_macro(struct man *man, int tok, int line, 
+		int ppos, int *pos, char *buf)
+a70 3
+	int		 w, la;
+	char		*p;
+	struct man_node	*n;
+d72 14
+a85 1
+	if ( ! man_elem_alloc(man, line, ppos, tok))
+d87 2
+a88 2
+	n = man->last;
+	man->next = MAN_NEXT_CHILD;
+a89 3
+	for (;;) {
+		la = *pos;
+		w = man_args(man, line, pos, buf, &p);
+d91 8
+a98 4
+		if (-1 == w)
+			return(0);
+		if (0 == w)
+			break;
+d100 30
+a129 3
+		if ( ! man_word_alloc(man, line, la, p))
+			return(0);
+		man->next = MAN_NEXT_SIBLING;
+d132 2
+a133 6
+	if (n == man->last && (FL_NLINE & man_flags[tok])) {
+		if (MAN_NLINE & man->flags) 
+			return(man_perr(man, line, ppos, WLNSCOPE));
+		man->flags |= MAN_NLINE;
+		return(1);
+	}
+a134 6
+	if (FL_TLINE & man_flags[tok]) {
+		if (MAN_NLINE & man->flags) 
+			return(man_perr(man, line, ppos, WLNSCOPE));
+		man->flags |= MAN_NLINE;
+		return(1);
+	}
+d136 10
+a145 4
+	/*
+	 * Note that when TH is pruned, we'll be back at the root, so
+	 * make sure that we don't clobber as its sibling.
+	 */
+d147 11
+a157 2
+	for ( ; man->last; man->last = man->last->parent) {
+		if (man->last == n)
+a158 6
+		if (man->last->type == MAN_ROOT)
+			break;
+		if ( ! man_valid_post(man))
+			return(0);
+		if ( ! man_action_post(man))
+			return(0);
+d161 6
+a166 1
+	assert(man->last);
+d168 13
+a180 3
+	/*
+	 * Same here regarding whether we're back at the root. 
+	 */
+d182 1
+a182 1
+	if (man->last->type != MAN_ROOT && ! man_valid_post(man))
+d184 1
+a184 1
+	if (man->last->type != MAN_ROOT && ! man_action_post(man))
+a185 2
+	if (man->last->type != MAN_ROOT)
+		man->next = MAN_NEXT_SIBLING;
+d187 6
+a192 2
+	return(1);
+}
+d194 1
+d196 3
+a198 3
+int
+man_macroend(struct man *m)
+{
+d200 1
+a200 3
+	for ( ; m->last && m->last != m->first; 
+			m->last = m->last->parent) {
+		if ( ! man_valid_post(m))
+d202 4
+a205 1
+		if ( ! man_action_post(m))
+d207 1
+a208 1
+	assert(m->last == m->first);
+d210 6
+a215 3
+	if ( ! man_valid_post(m))
+		return(0);
+	if ( ! man_action_post(m))
+d218 1
+a218 1
+	return(1);
+d222 2
+a223 4
+/* ARGSUSED */
+static int
+man_args(struct man *m, int line, 
+		int *pos, char *buf, char **v)
+d225 3
+d229 1
+a229 1
+	if (0 == buf[*pos])
+d232 2
+a233 1
+	/* First parse non-quoted strings. */
+d235 3
+a237 2
+	if ('\"' != buf[*pos]) {
+		*v = &buf[*pos];
+d239 4
+a242 6
+		while (buf[*pos]) {
+			if (' ' == buf[*pos])
+				if ('\\' != buf[*pos - 1])
+					break;
+			(*pos)++;
+		}
+d244 4
+a247 2
+		if (0 == buf[*pos])
+			return(1);
+d249 4
+a252 1
+		buf[(*pos)++] = 0;
+d254 4
+a257 2
+		if (0 == buf[*pos])
+			return(1);
+d259 1
+a259 2
+		while (buf[*pos] && ' ' == buf[*pos])
+			(*pos)++;
+d261 10
+a270 2
+		if (buf[*pos])
+			return(1);
+d272 1
+a272 5
+		if ( ! man_pwarn(m, line, *pos, WTSPACE))
+			return(-1);
+
+		return(1);
+	}
+d275 1
+a275 3
+	 * If we're a quoted string (and quoted strings are allowed),
+	 * then parse ahead to the next quote.  If none's found, it's an
+	 * error.  After, parse to the next word.  
+d278 6
+a283 1
+	*v = &buf[++(*pos)];
+d285 2
+a286 2
+	while (buf[*pos] && '\"' != buf[*pos])
+		(*pos)++;
+a287 5
+	if (0 == buf[*pos]) {
+		if ( ! man_pwarn(m, line, *pos, WTQUOTE))
+			return(-1);
+		return(1);
+	}
+d289 3
+a291 3
+	buf[(*pos)++] = 0;
+	if (0 == buf[*pos])
+		return(1);
+d293 2
+a294 2
+	while (buf[*pos] && ' ' == buf[*pos])
+		(*pos)++;
+a295 7
+	if (buf[*pos])
+		return(1);
+
+	if ( ! man_pwarn(m, line, *pos, WTSPACE))
+		return(-1);
+	return(1);
+}
+@
+
+
+1.17
+log
+@Moved all formatted libman warn/error into man.c/libman.h.
+Converted all formatted warn/errors into regular syntax.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.16 2009/06/16 19:55:28 kristaps Exp $ */
+d54 1
+@
+
+
+1.16
+log
+@Removed MAN___: moved MAN_br to its index (comments not passed into parser).
+Fix: hashtable not fully formed after removal of MDOC___.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.15 2009/06/10 20:18:43 kristaps Exp $ */
+d85 1
+a85 2
+			return(man_verr(man, line, ppos, 
+				"next-line scope already open"));
+d92 1
+a92 2
+			return(man_verr(man, line, ppos, 
+				"next-line scope already open"));
+d187 1
+a187 1
+		if ( ! man_vwarn(m, line, *pos, "trailing spaces"))
+d205 1
+a205 1
+		if ( ! man_vwarn(m, line, *pos, "unterminated quote"))
+d220 1
+a220 1
+	if ( ! man_vwarn(m, line, *pos, "trailing spaces"))
+@
+
+
+1.15
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.14 2009/04/12 19:45:26 kristaps Exp $ */
+d31 1
+a31 1
+	0, /* __ */
+a51 1
+	0, /* br */
+@
+
+
+1.14
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_macro.c,v 1.13 2009/04/05 16:34:22 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.13
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.12 2009/04/02 06:51:44 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.12
+log
+@mdoc_tokhash -> hash
+Initial man hashtab (BROKEN).
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.11 2009/03/31 13:50:19 kristaps Exp $ */
+d56 1
+@
+
+
+1.11
+log
+@General clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.10 2009/03/27 14:56:15 kristaps Exp $ */
+d55 1
+@
+
+
+1.10
+log
+@Added some new manuals (mdoc.3 mandoc_char.7).
+Support for .br in libman.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.9 2009/03/26 14:38:11 kristaps Exp $ */
+a21 1
+#include <stdio.h>
+@
+
+
+1.9
+log
+@Initial front-end formatting for -man pages.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.8 2009/03/26 11:16:21 kristaps Exp $ */
+d55 1
+@
+
+
+1.8
+log
+@Fixed inheritence of initial macro into man_macro.
+Removed warnxs from man_macro (man_vwarn).
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.7 2009/03/25 16:07:36 kristaps Exp $ */
+d27 3
+d33 23
+d84 16
+@
+
+
+1.7
+log
+@Actions in place for prologue parsing.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.6 2009/03/25 15:36:05 kristaps Exp $ */
+a20 1
+#include <err.h> /* XXX */
+d115 1
+a115 1
+man_args(struct man *man, int line, 
+d148 4
+a151 2
+		warnx("tail whitespace");
+		return(-1);
+d166 3
+a168 2
+		warnx("unterminated quotation");
+		return(-1);
+d181 3
+a183 2
+	warnx("tail whitespace");
+	return(-1);
+@
+
+
+1.6
+log
+@Added man_action.c, renamed mdoc_action.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.5 2009/03/25 15:17:49 kristaps Exp $ */
+d59 10
+a68 2
+	for ( ; man->last && man->last != n; 
+			man->last = man->last->parent) {
+d77 5
+a81 1
+	if ( ! man_valid_post(man))
+d83 1
+a83 1
+	if ( ! man_action_post(man))
+d85 2
+a86 2
+
+	man->next = MAN_NEXT_SIBLING;
+d103 1
+@
+
+
+1.5
+log
+@Added man validator, renamed mdoc validator.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.4 2009/03/23 15:41:09 kristaps Exp $ */
+d60 1
+a60 1
+			man->last = man->last->parent)
+d63 3
+d68 1
+d71 3
+d84 13
+a96 1
+	/* TODO: validate & actions. */
+@
+
+
+1.4
+log
+@-man linked to mandoc in documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.3 2009/03/23 15:20:51 kristaps Exp $ */
+d59 4
+a62 1
+	/* TODO: validate & actions. */
+d64 3
+a66 1
+	man->last = n;
+@
+
+
+1.3
+log
+@-man printing linked to -Ttree.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.2 2009/03/23 14:31:58 kristaps Exp $ */
+d59 1
+a59 2
+	/* TODO: validate. */
+	/* TODO: validate. */
+d68 9
+d78 1
+a78 1
+int
+@
+
+
+1.2
+log
+@Linux fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_macro.c,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
+d21 1
+d28 2
+a29 1
+static	int	  in_line_eoln(MACRO_PROT_ARGS);
+a30 21
+const	struct man_macro __man_macros[MAN_MAX] = {
+	{ in_line_eoln, 0 },	/* MAN___ */
+	{ in_line_eoln, 0 },	/* MAN_TH */
+	{ in_line_eoln, 0 },	/* MAN_SH */
+	{ in_line_eoln, 0 },	/* MAN_SS */
+	{ in_line_eoln, 0 },	/* MAN_TP */
+	{ in_line_eoln, 0 },	/* MAN_LP */
+	{ in_line_eoln, 0 },	/* MAN_PP */
+	{ in_line_eoln, 0 },	/* MAN_P */
+	{ in_line_eoln, 0 },	/* MAN_IP */
+	{ in_line_eoln, 0 },	/* MAN_HP */
+	{ in_line_eoln, 0 },	/* MAN_SM */
+	{ in_line_eoln, 0 },	/* MAN_SB */
+	{ in_line_eoln, 0 },	/* MAN_BI */
+	{ in_line_eoln, 0 },	/* MAN_IB */
+	{ in_line_eoln, 0 },	/* MAN_BR */
+	{ in_line_eoln, 0 },	/* MAN_RB */
+	{ in_line_eoln, 0 },	/* MAN_R */
+	{ in_line_eoln, 0 },	/* MAN_B */
+	{ in_line_eoln, 0 },	/* MAN_I */
+};
+d32 3
+a34 9
+const	struct man_macro * const man_macros = __man_macros;
+
+
+/*
+ * In-line macro that spans an entire line.  May be callable, but has no
+ * subsequent parsed arguments.
+ */
+static int
+in_line_eoln(MACRO_PROT_ARGS)
+d36 3
+a38 3
+#if 0
+	int		  c, w, la;
+	char		 *p;
+d40 1
+a40 1
+	if ( ! man_elem_alloc(man, line, ppos, tok, arg))
+d42 2
+a43 1
+	man->next = MDOC_NEXT_SIBLING;
+d47 1
+a47 1
+		w = man_args(man, line, pos, buf, tok, &p);
+d49 1
+a49 1
+		if (ARGS_ERROR == w)
+d51 1
+a51 1
+		if (ARGS_EOLN == w)
+d54 4
+a57 2
+		c = ARGS_QWORD == w ? MAN_MAX :
+			lookup(man, line, la, tok, p);
+d59 2
+a60 6
+		if (MDOC_MAX != c && -1 != c) {
+			if ( ! rew_elem(mdoc, tok))
+				return(0);
+			return(mdoc_macro(mdoc, c, line, la, pos, buf));
+		} else if (-1 == c)
+			return(0);
+d62 2
+a63 3
+		if ( ! mdoc_word_alloc(mdoc, line, la, p))
+			return(0);
+	}
+a64 2
+	return(rew_elem(mdoc, tok));
+#endif
+d68 69
+@
+
+
+1.1
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@d1 1
+a1 1
+/* $Id: macro.c,v 1.77 2009/03/22 19:01:11 kristaps Exp $ */
+d30 19
+a48 19
+	{ in_line_eoln, NULL },	/* MAN___ */
+	{ in_line_eoln, NULL },	/* MAN_TH */
+	{ in_line_eoln, NULL },	/* MAN_SH */
+	{ in_line_eoln, NULL },	/* MAN_SS */
+	{ in_line_eoln, NULL },	/* MAN_TP */
+	{ in_line_eoln, NULL },	/* MAN_LP */
+	{ in_line_eoln, NULL },	/* MAN_PP */
+	{ in_line_eoln, NULL },	/* MAN_P */
+	{ in_line_eoln, NULL },	/* MAN_IP */
+	{ in_line_eoln, NULL },	/* MAN_HP */
+	{ in_line_eoln, NULL },	/* MAN_SM */
+	{ in_line_eoln, NULL },	/* MAN_SB */
+	{ in_line_eoln, NULL },	/* MAN_BI */
+	{ in_line_eoln, NULL },	/* MAN_IB */
+	{ in_line_eoln, NULL },	/* MAN_BR */
+	{ in_line_eoln, NULL },	/* MAN_RB */
+	{ in_line_eoln, NULL },	/* MAN_R */
+	{ in_line_eoln, NULL },	/* MAN_B */
+	{ in_line_eoln, NULL },	/* MAN_I */
+@

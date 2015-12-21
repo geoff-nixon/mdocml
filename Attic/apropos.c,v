@@ -1,0 +1,2740 @@
+head	1.42;
+access;
+symbols
+	VERSION_1_12_4:1.27.2.2
+	VERSION_1_13_1:1.39
+	VERSION_1_12_3:1.27.2.1
+	VERSION_1_12_2:1.27.2.1
+	VERSION_1_12:1.27.0.2
+	VERSION_1_12_1:1.30
+	VERSION_1_12_0:1.4;
+locks; strict;
+comment	@ * @;
+
+
+1.42
+date	2014.08.17.03.24.47;	author schwarze;	state dead;
+branches;
+next	1.41;
+
+1.41
+date	2014.08.16.23.04.25;	author schwarze;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2014.04.11.15.46.52;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2014.01.06.03.02.46;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2013.12.31.03.41.14;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2013.12.27.18.51.25;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2013.07.05.09.33.02;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2012.06.09.17.49.13;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2012.06.09.14.11.15;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2012.06.08.10.44.52;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2012.03.24.02.18.51;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2012.03.24.02.07.32;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2012.03.24.01.46.25;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2012.03.24.00.31.55;	author kristaps;	state Exp;
+branches
+	1.27.2.1;
+next	1.26;
+
+1.26
+date	2012.03.23.02.52.33;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.12.31.18.47.52;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.12.12.02.00.49;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.12.07.16.08.55;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.11.29.10.53.42;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.11.28.09.44.05;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.11.27.18.54.01;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.11.26.22.38.11;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.11.23.09.50.40;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.11.20.21.36.00;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.11.20.16.29.50;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.11.20.15.43.14;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.11.18.07.02.19;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.11.14.10.07.06;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.11.13.11.10.27;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.11.13.10.12.05;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.11.09.22.05.56;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.11.09.10.53.48;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.11.09.01.24.23;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.10.09.10.46.38;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.10.09.10.37.52;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.10.09.10.35.12;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.10.08.12.20.09;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.10.07.13.29.03;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.10.07.13.22.33;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.10.06.23.00.54;	author kristaps;	state Exp;
+branches;
+next	;
+
+1.27.2.1
+date	2013.09.17.23.23.10;	author schwarze;	state Exp;
+branches;
+next	1.27.2.2;
+
+1.27.2.2
+date	2014.08.11.00.31.13;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.42
+log
+@Fully integrate apropos(1) into mandoc(1).
+Switch the argmode on the progname, including man(1).
+Provide -f and -k options to switch the argmode.
+Store the argmode inside struct search, generalizing the flags.
+Derive the deftype from the argmode when needed instead of storing it.
+Store the outkey inside struct search instead of passing it alone.
+While here, get rid of the trailing blanks in Makefile.depend.
+@
+text
+@@
+
+
+1.41
+log
+@When BUILD_DB is active, link apropos(1) into the mandoc binary.
+This is the first step on the way to a man(1) implementation.
+The new ./configure is flexible enough to make this step quite easy.
+@
+text
+@a0 123
+/*	$Id: apropos.c,v 1.40 2014/08/10 23:54:41 schwarze Exp $ */
+/*
+ * Copyright (c) 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2013 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/param.h>
+#include <sys/types.h>
+
+#include <assert.h>
+#include <getopt.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+#include "manpath.h"
+#include "mansearch.h"
+
+
+int
+apropos(int argc, char *argv[])
+{
+	int		 ch, whatis;
+	struct mansearch search;
+	size_t		 i, sz;
+	struct manpage	*res;
+	struct manpaths	 paths;
+	char		*defpaths, *auxpaths;
+	char		*conf_file;
+	char		*progname;
+	const char	*outkey;
+	extern char	*optarg;
+	extern int	 optind;
+
+	progname = strrchr(argv[0], '/');
+	if (progname == NULL)
+		progname = argv[0];
+	else
+		++progname;
+
+	whatis = (0 == strncmp(progname, "whatis", 6));
+
+	memset(&paths, 0, sizeof(struct manpaths));
+	memset(&search, 0, sizeof(struct mansearch));
+
+	auxpaths = defpaths = NULL;
+	conf_file = NULL;
+	outkey = "Nd";
+
+	while (-1 != (ch = getopt(argc, argv, "C:M:m:O:S:s:")))
+		switch (ch) {
+		case 'C':
+			conf_file = optarg;
+			break;
+		case 'M':
+			defpaths = optarg;
+			break;
+		case 'm':
+			auxpaths = optarg;
+			break;
+		case 'O':
+			outkey = optarg;
+			break;
+		case 'S':
+			search.arch = optarg;
+			break;
+		case 's':
+			search.sec = optarg;
+			break;
+		default:
+			goto usage;
+		}
+
+	argc -= optind;
+	argv += optind;
+
+	if (0 == argc)
+		goto usage;
+
+	search.deftype = whatis ? TYPE_Nm : TYPE_Nm | TYPE_Nd;
+	search.flags = whatis ? MANSEARCH_WHATIS : 0;
+
+	manpath_parse(&paths, conf_file, defpaths, auxpaths);
+	mansearch_setup(1);
+	ch = mansearch(&search, &paths, argc, argv, outkey, &res, &sz);
+	manpath_free(&paths);
+
+	if (0 == ch)
+		goto usage;
+
+	for (i = 0; i < sz; i++) {
+		printf("%s - %s\n", res[i].names,
+		    NULL == res[i].output ? "" : res[i].output);
+		free(res[i].file);
+		free(res[i].names);
+		free(res[i].output);
+	}
+
+	free(res);
+	mansearch_setup(0);
+	return(sz ? EXIT_SUCCESS : EXIT_FAILURE);
+usage:
+	fprintf(stderr, "usage: %s [-C file] [-M path] [-m path] "
+			"[-O outkey] "
+			"[-S arch] [-s section]%s ...\n", progname,
+			whatis ? " name" : "\n               expression");
+	return(EXIT_FAILURE);
+}
+@
+
+
+1.40
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.39 2014/04/20 16:46:04 schwarze Exp $ */
+d36 1
+a36 1
+main(int argc, char *argv[])
+@
+
+
+1.39
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.38 2014/04/11 15:46:52 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+d19 1
+a19 1
+#endif
+d21 1
+@
+
+
+1.38
+log
+@Further apropos(1) speed optimization was trickier than anticipated.
+Contrary to what i initially thought, almost all time is now spent
+inside sqlite3(3) routines, and i found no easy way calling less of them.
+However, sqlite(3) spends substantial time in malloc(3), and even more
+(twice that) in its immediate malloc wrapper, sqlite3MemMalloc(),
+keeping track of all individual malloc chunk sizes.  Typically about
+90% of the malloced memory is used for purposes of the pagecache.
+
+By providing an mmap(3) MAP_ANON SQLITE_CONFIG_PAGECACHE, execution
+time decreases by 20-25% for simple (Nd and/or Nm) queries, 10-20% for
+non-NAME queries, and even apropos(1) resident memory size as reported
+by top(1) decreases by 20% for simple and by 60% for non-NAME queries.
+The new function, mansearch_setup(), spends no measurable time.
+
+The pagesize chosen is optimal:
+* Substantially smaller pages yield no gain at all.
+* Larger pages provide no additional benefit and just waste memory.
+
+The chosen number of pages in the cache is a compromise:
+* For simple queries, a handful of pages would suffice to get the full
+speed effect, at an apropos(1) resident memory size of about 2.0 MB.
+* For non-NAME queries, a large pagecache with 2k pages (2.5 MB) might
+gain a few more percent in speed, but at the expense of doubling the
+apropos(1) resident memory size for *all* queries.
+* The chosen number of 256 pages (330 kB) allows nearly full speed gain
+for all queries at the price of a 15% resident memory size increase.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.37 2014/01/06 03:02:46 schwarze Exp $ */
+d34 1
+d67 1
+a67 1
+		case ('C'):
+d70 1
+a70 1
+		case ('M'):
+d73 1
+a73 1
+		case ('m'):
+d76 1
+a76 1
+		case ('O'):
+d79 1
+a79 1
+		case ('S'):
+d82 1
+a82 1
+		case ('s'):
+@
+
+
+1.37
+log
+@Drop Nd from the mpages table, it is still in the keys table.
+This shrinks the database in standard mode by 3%, in -Q mode by 9%,
+without loss of functionality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.36 2013/12/31 03:41:14 schwarze Exp $ */
+d98 1
+d114 1
+@
+
+
+1.36
+log
+@Experimental feature to let apropos(1) show different keys than .Nd.
+This really takes us beyond what grep -R /usr/*/man/ can do
+because now you can search for pages by *one* criterion and then
+display the contents of *another* macro from those pages, like in
+$ apropos -O Ox Fa~wchar
+to get an impression how long wide character handling is available.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.35 2013/12/27 18:51:25 schwarze Exp $ */
+d45 1
+a45 1
+	char		*outkey;
+d62 1
+a62 1
+	outkey = NULL;
+a105 1
+		    NULL == outkey ? res[i].desc :
+a108 1
+		free(res[i].desc);
+@
+
+
+1.35
+log
+@Change the mansearch() interface to use the mlinks table in the database
+and return a list of names with sections, used by apropos(1) for display.
+While here, improve uniformity of the interface by allocating the file
+name dynamically, just like the names list and the description.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.34 2013/07/05 09:33:02 schwarze Exp $ */
+d4 1
+d45 1
+d62 1
+d64 1
+a64 1
+	while (-1 != (ch = getopt(argc, argv, "C:M:m:S:s:")))
+d75 3
+d98 1
+a98 1
+	ch = mansearch(&search, &paths, argc, argv, &res, &sz);
+d105 3
+a107 1
+		printf("%s - %s\n", res[i].names, res[i].desc);
+d111 1
+d118 1
+@
+
+
+1.34
+log
+@Simple partial sync with OpenBSD:
+* Again accept suffixes on the name of the whatis utility.
+* The usage line for whatis must not invite expressions.
+* Revert the argument names in the SYNOPSIS back to the usual ones.
+* Revert a few gratuitious changes regarding line breaks etc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.33 2012/06/09 17:49:13 kristaps Exp $ */
+d99 3
+a101 1
+		printf("%s - %s\n", res[i].file, res[i].desc);
+@
+
+
+1.33
+log
+@Allow compilation on Mac OSX.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.32 2012/06/09 14:11:15 kristaps Exp $ */
+a39 1
+	char		*conf_file, *defpaths, *auxpaths;
+d41 2
+d53 2
+a54 1
+	auxpaths = defpaths = conf_file = NULL;
+d57 3
+a59 1
+	whatis = (0 == strcmp(progname, "whatis"));
+d106 3
+a108 7
+	fprintf(stderr, "usage: %s [-C conf] "
+			 	  "[-M paths] "
+				  "[-m paths] "
+				  "[-S arch] "
+				  "[-s section] "
+			          "expr ...\n", 
+				  progname);
+@
+
+
+1.32
+log
+@Merge whatis.1 into apropos.1 (and remove), add whatis bits to apropos
+(via mansearch), and merge mandocdb.h into mansearch.h (and remove).
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.31 2012/06/08 10:44:52 kristaps Exp $ */
+d24 1
+@
+
+
+1.31
+log
+@Flip apropos to use mansearch instead of apropos_db.
+This makes the utility much smaller and simpler.
+A lot of functionality has been omitted while the sqlite3 search routines
+improve (logical operations, etc.).
+It still needs work to make the output more conventional.
+Also add the manpage utility, which I use extensively as a mind-meld of
+apropos and man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandocdb.c,v 1.46 2012/03/23 06:52:17 kristaps Exp $ */
+d35 2
+a36 1
+	int		 ch;
+d39 1
+a39 2
+	char		*conf_file, *defpaths, *auxpaths,
+			*arch, *sec;
+d51 1
+a51 1
+	auxpaths = defpaths = conf_file = arch = sec = NULL;
+d53 2
+d68 1
+a68 1
+			arch = optarg;
+d71 1
+a71 1
+			sec = optarg;
+d83 3
+d87 1
+a87 1
+	ch = mansearch(&paths, arch, sec, argc, argv, &res, &sz);
+@
+
+
+1.30
+log
+@Forgot chdir(2) into volume path.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.29 2012/03/24 02:07:32 kristaps Exp $ */
+d3 1
+a3 2
+ * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+a28 2
+#include "apropos_db.h"
+#include "mandoc.h"
+d30 1
+a30 12
+
+#define	SINGLETON(_res, _sz) \
+	((_sz) && (_res)[0].matched && \
+	 (1 == (_sz) || 0 == (_res)[1].matched))
+#define	EMPTYSET(_res, _sz) \
+	((0 == (_sz)) || 0 == (_res)[0].matched)
+
+static	int	 cmp(const void *, const void *);
+static	void	 list(struct res *, size_t, void *);
+static	void	 usage(void);
+
+static	char	*progname;
+d35 5
+a39 2
+	int		 ch, rc, whatis, usecat;
+	struct res	*res;
+d41 2
+a42 8
+	const char	*prog;
+	pid_t		 pid;
+	char		 path[PATH_MAX];
+	int		 fds[2];
+	size_t		 terms, ressz, sz;
+	struct opts	 opts;
+	struct expr	*e;
+	char		*defpaths, *auxpaths, *conf_file, *cp;
+a43 1
+	extern char	*optarg;
+d51 1
+a51 2
+	whatis = 0 == strncmp(progname, "whatis", 6);
+
+a52 9
+	memset(&opts, 0, sizeof(struct opts));
+
+	usecat = 0;
+	ressz = 0;
+	res = NULL;
+	auxpaths = defpaths = NULL;
+	conf_file = NULL;
+	e = NULL;
+	path[0] = '\0';
+d66 1
+a66 1
+			opts.arch = optarg;
+d69 1
+a69 1
+			opts.cat = optarg;
+d72 1
+a72 2
+			usage();
+			return(EXIT_FAILURE);
+d78 2
+a79 4
+	if (0 == argc) 
+		return(EXIT_SUCCESS);
+
+	rc = 0;
+d82 1
+a82 38
+
+	e = whatis ? termcomp(argc, argv, &terms) :
+		     exprcomp(argc, argv, &terms);
+		
+	if (NULL == e) {
+		fprintf(stderr, "%s: Bad expression\n", progname);
+		goto out;
+	}
+
+	rc = apropos_search
+		(paths.sz, paths.paths, &opts, 
+		 e, terms, NULL, &ressz, &res, list);
+
+	terms = 1;
+
+	if (0 == rc) {
+		fprintf(stderr, "%s: Bad database\n", progname);
+		goto out;
+	} else if ( ! isatty(STDOUT_FILENO) || EMPTYSET(res, ressz))
+		goto out;
+
+	if ( ! SINGLETON(res, ressz)) {
+		printf("Which manpage would you like [1]? ");
+		fflush(stdout);
+		if (NULL != (cp = fgetln(stdin, &sz)) && 
+				sz > 1 && '\n' == cp[--sz]) {
+			if ((ch = atoi(cp)) <= 0)
+				goto out;
+			terms = (size_t)ch;
+		}
+	}
+
+	if (--terms < ressz && res[terms].matched) {
+		chdir(paths.paths[res[terms].volume]);
+		strlcpy(path, res[terms].file, PATH_MAX);
+		usecat = RESTYPE_CAT == res[terms].type;
+	}
+out:
+a83 2
+	resfree(res, ressz);
+	exprfree(e);
+d85 2
+a86 7
+	if ('\0' == path[0])
+		return(rc ? EXIT_SUCCESS : EXIT_FAILURE);
+
+	if (-1 == pipe(fds)) {
+		perror(NULL);
+		exit(EXIT_FAILURE);
+	}
+d88 3
+a90 13
+	if (-1 == (pid = fork())) {
+		perror(NULL);
+		exit(EXIT_FAILURE);
+	} else if (pid > 0) {
+		dup2(fds[0], STDIN_FILENO);
+		close(fds[1]);
+		prog = NULL != getenv("MANPAGER") ? 
+			getenv("MANPAGER") :
+			(NULL != getenv("PAGER") ? 
+			 getenv("PAGER") : "more");
+		execlp(prog, prog, (char *)NULL);
+		perror(prog);
+		return(EXIT_FAILURE);
+d93 10
+a102 5
+	dup2(fds[1], STDOUT_FILENO);
+	close(fds[0]);
+	prog = usecat ? "cat" : "mandoc";
+	execlp(prog, prog, path, (char *)NULL);
+	perror(prog);
+a104 55
+
+/* ARGSUSED */
+static void
+list(struct res *res, size_t sz, void *arg)
+{
+	size_t		 i;
+
+	qsort(res, sz, sizeof(struct res), cmp);
+
+	if (EMPTYSET(res, sz) || SINGLETON(res, sz))
+		return;
+
+	if ( ! isatty(STDOUT_FILENO))
+		for (i = 0; i < sz && res[i].matched; i++)
+			printf("%s(%s%s%s) - %.70s\n", 
+					res[i].title, res[i].cat,
+					*res[i].arch ? "/" : "",
+					*res[i].arch ? res[i].arch : "",
+					res[i].desc);
+	else
+		for (i = 0; i < sz && res[i].matched; i++)
+			printf("[%zu] %s(%s%s%s) - %.70s\n", i + 1,
+					res[i].title, res[i].cat,
+					*res[i].arch ? "/" : "",
+					*res[i].arch ? res[i].arch : "",
+					res[i].desc);
+}
+
+static int
+cmp(const void *p1, const void *p2)
+{
+	const struct res *r1 = p1;
+	const struct res *r2 = p2;
+
+	if (0 == r1->matched)
+		return(1);
+	else if (0 == r2->matched)
+		return(1);
+
+	return(strcasecmp(r1->title, r2->title));
+}
+
+static void
+usage(void)
+{
+
+	fprintf(stderr, "usage: %s "
+			"[-C file] "
+			"[-M manpath] "
+			"[-m manpath] "
+			"[-S arch] "
+			"[-s section] "
+			"expression ...\n",
+			progname);
+}
+@
+
+
+1.29
+log
+@Small tweaks for release.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.28 2012/03/24 01:46:25 kristaps Exp $ */
+d146 1
+@
+
+
+1.28
+log
+@Be insane.  Make apropos(1) subsume man(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.27 2012/03/24 00:31:55 kristaps Exp $ */
+d28 1
+@
+
+
+1.27
+log
+@Simplify by not pre-filtering the result vector for satisfied matches:
+we can do this in the frontend.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.26 2012/03/23 02:52:33 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+d33 6
+d48 1
+a48 1
+	int		 ch, rc, whatis;
+d51 5
+a55 1
+	size_t		 terms, ressz;
+d58 1
+a58 2
+	char		*defpaths, *auxpaths;
+	char		*conf_file;
+d73 1
+d79 1
+d125 2
+d130 17
+d152 30
+a181 1
+	return(rc ? EXIT_SUCCESS : EXIT_FAILURE);
+d192 17
+a208 10
+	for (i = 0; i < sz; i++) {
+		if ( ! res[i].matched)
+			continue;
+		printf("%s(%s%s%s) - %.70s\n", 
+				res[i].title,
+				res[i].cat,
+				*res[i].arch ? "/" : "",
+				*res[i].arch ? res[i].arch : "",
+				res[i].desc);
+	}
+d214 7
+d222 1
+a222 2
+	return(strcasecmp(((const struct res *)p1)->title,
+				((const struct res *)p2)->title));
+@
+
+
+1.27.2.1
+log
+@Merge OpenBSD revision 1.17:
+Without arguments, show the usage line and EXIT_FAILURE.
+Resolve some gratuitious differences (order, parantheses, white space, etc).
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.27 2012/03/24 00:31:55 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+d35 1
+d50 1
+a51 1
+	extern int	 optind;
+d59 1
+a59 1
+	whatis = (0 == strncmp(progname, "whatis", 6));
+d88 2
+a89 1
+			goto usage;
+d95 2
+a96 2
+	if (0 == argc)
+		goto usage;
+a117 1
+
+a122 6
+
+usage:
+	fprintf(stderr, "usage: %s [-C file] [-M path] [-m path] "
+			"[-S arch] [-s section]%s ...\n", progname,
+			whatis ? " name" : "\n               expression");
+	return(EXIT_FAILURE);
+d136 1
+a136 1
+		printf("%s(%s%s%s) - %.70s\n",
+d152 14
+@
+
+
+1.27.2.2
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.27.2.1 2013/09/17 23:23:10 schwarze Exp $ */
+d18 1
+d20 1
+a20 1
+
+a21 1
+#include <sys/types.h>
+@
+
+
+1.26
+log
+@Revert to mandocdb.{index,db} for database files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.25 2011/12/31 18:47:52 kristaps Exp $ */
+d21 1
+d43 1
+d45 1
+a45 1
+	size_t		 terms;
+d64 2
+d111 2
+a112 6
+		(paths.sz, paths.paths,
+		 &opts, e, terms, NULL, list);
+
+	if (0 == rc)
+		fprintf(stderr, "%s: Error reading "
+				"manual database\n", progname);
+d114 4
+d120 1
+a121 1
+
+d133 3
+a135 1
+	for (i = 0; i < sz; i++)
+d142 1
+@
+
+
+1.25
+log
+@When parsing catpages, read from the first section (NAME, we hope) until
+the next section.  Also, remove the limit of 72 characters and enforce
+this, instead in the apropos frontend.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.24 2011/12/12 02:00:49 schwarze Exp $ */
+d125 1
+a125 1
+	int		 i;
+d129 3
+a131 2
+	for (i = 0; i < (int)sz; i++)
+		printf("%s(%s%s%s) - %.70s\n", res[i].title,
+@
+
+
+1.24
+log
+@implement -C (alternative config file) for apropos(1) and mandocdb(8),
+including various tweaks to the whatis(8) manual;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.23 2011/12/07 16:08:55 kristaps Exp $ */
+d130 1
+a130 1
+		printf("%s(%s%s%s) - %s\n", res[i].title,
+@
+
+
+1.23
+log
+@Apropos and man.cgi should strcasecmp their output sorting.
+man.cgi should sort in the first place -- it wasn't before.
+Revert uppercasing of man.cgi title.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.22 2011/11/29 10:53:42 kristaps Exp $ */
+d47 1
+d63 1
+d66 1
+a66 1
+	while (-1 != (ch = getopt(argc, argv, "M:m:S:s:")))
+d68 3
+d96 1
+a96 1
+	manpath_parse(&paths, defpaths, auxpaths);
+d150 1
+d155 1
+a155 1
+			"expression...\n",
+@
+
+
+1.22
+log
+@Make `-i' only apply to regular expressions.  For the equality operator
+(and thus the default), always use strcasestr().  Discussed on tech@@
+with schwarze@@.  While here, fix the apropos.c usage() message to be
+consistent with apropos(1) and clean up the EXAMPLES in apropos(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.21 2011/11/28 09:44:05 schwarze Exp $ */
+d136 1
+a136 1
+	return(strcmp(((const struct res *)p1)->title,
+@
+
+
+1.21
+log
+@Tweak whatis(1):
+* Bugfix: Use all arguments, not just the last one.
+* Use 'Nm~' instead of 'Nm,Nd~' to match OpenBSD behaviour.
+* For the progname, accept '^whatis', not '^whatis$' to ease testing.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.20 2011/11/27 18:54:01 kristaps Exp $ */
+d145 2
+a146 2
+			"[-M path] "
+			"[-m path] "
+@
+
+
+1.20
+log
+@Get us a whatis(1) mode for apropos(1).
+This is from a patch to tech@@ as critiqued by schwarze@@, checked in to
+get the ball rolling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.19 2011/11/26 22:38:11 schwarze Exp $ */
+d56 1
+a56 1
+	whatis = 0 == strcmp(progname, "whatis");
+@
+
+
+1.19
+log
+@Sync to OpenBSD, mostly gratuitous and whitespace differences,
+but a few serious things as well:
+* -M overrides MANPATH
+* -m prepends to the path
+* put back database close calls that got lost in mandocdb
+* missing sys/types.h in manpath.c, needed for size_t
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.18 2011/11/23 09:50:40 kristaps Exp $ */
+d41 1
+a41 1
+	int		 ch, rc;
+d56 2
+a62 1
+	rc = 0;
+d80 1
+a80 1
+			goto out;
+d86 4
+a89 4
+	if (0 == argc) {
+		rc = 1;
+		goto out;
+	}
+d93 4
+a96 1
+	if (NULL == (e = exprcomp(argc, argv, &terms))) {
+@
+
+
+1.18
+log
+@Have apropos(1) take advantage of manpath.h instead of doing the work
+itself.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.17 2011/11/20 21:36:00 kristaps Exp $ */
+a22 1
+#include <ctype.h>
+d63 1
+a63 1
+	while (-1 != (ch = getopt(argc, argv, "M:m:S:s:"))) 
+d98 1
+a98 1
+		(paths.sz, paths.paths, 
+d101 1
+a101 1
+	if (0 == rc) 
+d121 2
+a122 2
+		printf("%s(%s%s%s) - %s\n", res[i].title, 
+				res[i].cat, 
+d141 2
+a142 2
+			"[-M dirs] "
+			"[-m dirs] "
+d145 2
+a146 1
+			"expression...\n", progname);
+@
+
+
+1.17
+log
+@Initial support for man.conf/makepath(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.16 2011/11/20 16:29:50 kristaps Exp $ */
+a24 1
+#include <limits.h>
+d31 1
+a31 15
+
+/*
+ * FIXME: add support for manpath(1), which everybody but OpenBSD and
+ * NetBSD seem to use.
+ */
+#define MAN_CONF_FILE	"/etc/man.conf"
+#define MAN_CONF_KEY	"_whatdb"
+
+/*
+ * List of paths to be searched for manual databases.
+ */
+struct	manpaths {
+	int	  sz;
+	char	**paths;
+};
+a34 3
+static	void	 manpath_add(struct manpaths *, const char *);
+static	void	 manpath_parse(struct manpaths *, char *);
+static	void	 manpath_parseconf(struct manpaths *);
+d42 1
+a42 1
+	int		 i, ch, rc;
+d91 1
+a91 9
+	if (NULL != getenv("MANPATH"))
+		defpaths = getenv("MANPATH");
+
+	if (NULL == defpaths)
+		manpath_parseconf(&paths);
+	else
+		manpath_parse(&paths, defpaths);
+
+	manpath_parse(&paths, auxpaths);
+d107 1
+a107 4
+	for (i = 0; i < paths.sz; i++)
+		free(paths.paths[i]);
+
+	free(paths.paths);
+a147 100
+
+/*
+ * Parse a FULL pathname from a colon-separated list of arrays.
+ */
+static void
+manpath_parse(struct manpaths *dirs, char *path) 
+{
+	char	*dir;
+
+	if (NULL == path)
+		return;
+
+	for (dir = strtok(path, ":"); dir; dir = strtok(NULL, ":"))
+		manpath_add(dirs, dir);
+}
+
+/*
+ * Add a directory to the array, ignoring bad directories.
+ * Grow the array one-by-one for simplicity's sake.
+ */
+static void
+manpath_add(struct manpaths *dirs, const char *dir) 
+{
+	char		 buf[PATH_MAX];
+	char		*cp;
+	int		 i;
+
+	if (NULL == (cp = realpath(dir, buf)))
+		return;
+
+	for (i = 0; i < dirs->sz; i++)
+		if (0 == strcmp(dirs->paths[i], dir))
+			return;
+
+	dirs->paths = mandoc_realloc
+		(dirs->paths, 
+		 ((size_t)dirs->sz + 1) * sizeof(char *));
+
+	dirs->paths[dirs->sz++] = mandoc_strdup(cp);
+}
+
+static void
+manpath_parseconf(struct manpaths *dirs) 
+{
+	FILE		*stream;
+#ifdef	USE_MANPATH
+	char		*buf;
+	size_t		 sz, bsz;
+
+	stream = popen("manpath", "r");
+	if (NULL == stream)
+		return;
+
+	buf = NULL;
+	bsz = 0;
+
+	do {
+		buf = mandoc_realloc(buf, bsz + 1024);
+		sz = fread(buf + (int)bsz, 1, 1024, stream);
+		bsz += sz;
+	} while (sz > 0);
+
+	assert(bsz && '\n' == buf[bsz - 1]);
+	buf[bsz - 1] = '\0';
+
+	manpath_parse(dirs, buf);
+	free(buf);
+	pclose(stream);
+#else
+	char		*p, *q;
+	size_t	 	 len, keysz;
+
+	keysz = strlen(MAN_CONF_KEY);
+	assert(keysz > 0);
+
+	if (NULL == (stream = fopen(MAN_CONF_FILE, "r")))
+		return;
+
+	while (NULL != (p = fgetln(stream, &len))) {
+		if (0 == len || '\n' == p[--len])
+			break;
+		p[len] = '\0';
+		while (isspace((unsigned char)*p))
+			p++;
+		if (strncmp(MAN_CONF_KEY, p, keysz))
+			continue;
+		p += keysz;
+		while (isspace(*p))
+			p++;
+		if ('\0' == *p)
+			continue;
+		if (NULL == (q = strrchr(p, '/')))
+			continue;
+		*q = '\0';
+		manpath_add(dirs, p);
+	}
+
+	fclose(stream);
+#endif
+}
+@
+
+
+1.16
+log
+@Clarify some behaviour, bringing schwarze@@'s patch and mine closer together
+(although I still don't have -M, which is a big piece).
+
+First, the default search path is the cwd.  This will change to use -M
+once I look over that code.
+
+If MANPATH is specified, this replaces the cwd.
+
+Both of these are augmented by -m.
+
+If paths don't exist or don't have databases, they're silently ignored.
+This makes perfect sense: you may be given a superset of possible paths.
+The corner case of no paths (where, say, MANPATH consists of bogus paths
+or the cwd is unreadable) simply means that no paths are searched.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.15 2011/11/20 15:43:14 kristaps Exp $ */
+d23 1
+d34 7
+d52 1
+d65 1
+d78 1
+d82 1
+a82 1
+	while (-1 != (ch = getopt(argc, argv, "m:S:s:"))) 
+d84 3
+d88 1
+a88 1
+			manpath_parse(&paths, optarg);
+d109 2
+a110 3
+	/*
+	 * Let MANPATH override our default paths.
+	 */
+d112 2
+a113 2
+	if (NULL != getenv("MANPATH"))
+		manpath_add(&paths, getenv("MANPATH"));
+d115 3
+a117 1
+		manpath_add(&paths, ".");
+d171 1
+d186 3
+d202 1
+d207 4
+d217 60
+@
+
+
+1.15
+log
+@Integrate a moderately-patched version of schwarze@@'s support for multiple
+directories containing mandocdb(8) databases.  Some changes follow:
+
+ (1) don't support -M yet;
+ (2) fall back to cwd if no prior manpath has been specified;
+ (3) resolve manpages using realpath() to prevent consecutive chdir()'s
+     over relative paths;
+ (4) note where further error-reporting is required;
+ (5) fix leaking memory on exit in several cases.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.14 2011/11/18 07:02:19 kristaps Exp $ */
+d42 2
+a43 2
+static	int	 manpath_add(struct manpaths *, const char *);
+static	int	 manpath_parse(struct manpaths *, char *);
+d74 1
+a74 2
+			if ( ! manpath_parse(&paths, optarg))
+				goto out;
+d95 8
+a102 2
+	if (0 == paths.sz && ! manpath_add(&paths, "."))
+		goto out;
+d105 1
+a105 2
+		/* FIXME: be more specific about this. */
+		fprintf(stderr, "Bad expression\n");
+d113 3
+a115 1
+	/* FIXME: report an error based on ch. */
+d165 1
+a165 1
+static int
+d171 1
+a171 4
+		if ( ! manpath_add(dirs, dir))
+			return(0);
+
+	return(1);
+d175 1
+a175 1
+ * Add a directory to the array.
+a176 1
+ * Return 0 if the directory is not a real path.
+d178 1
+a178 1
+static int
+d184 2
+a185 4
+	if (NULL == (cp = realpath(dir, buf))) {
+		fprintf(stderr, "%s: Invalid path\n", dir);
+		return(0);
+	}
+a191 1
+	return(1);
+@
+
+
+1.14
+log
+@Evaluation with logical subexpressions.  This allows support for arbitrary,
+nested logical subexpressions with AND (-a) and OR (-o) support.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.13 2011/11/14 10:07:06 kristaps Exp $ */
+d4 1
+d32 8
+d42 2
+d51 2
+a52 1
+	int		 ch;
+a58 2
+	memset(&opts, 0, sizeof(struct opts));
+
+d65 7
+a71 1
+	while (-1 != (ch = getopt(argc, argv, "S:s:"))) 
+d73 4
+d85 1
+a85 1
+			return(EXIT_FAILURE);
+d91 7
+a97 2
+	if (0 == argc) 
+		return(EXIT_SUCCESS);
+d100 1
+d102 1
+a102 1
+		return(EXIT_FAILURE);
+d105 5
+a109 6
+	/*
+	 * Configure databases.
+	 * The keyword database is a btree that allows for duplicate
+	 * entries.
+	 * The index database is a recno.
+	 */
+d111 5
+a115 1
+	ch = apropos_search(&opts, e, terms, NULL, list);
+d117 2
+a118 3
+	if (0 == ch)
+		fprintf(stderr, "%s: Database error\n", progname);
+	return(ch ? EXIT_SUCCESS : EXIT_FAILURE);
+d149 4
+a152 1
+	fprintf(stderr, "usage: %s [-S arch] [-s section] "
+d155 39
+@
+
+
+1.13
+log
+@Have exprcomp() accept a string instead of an array-pointer.  Also, collapse
+the arguments in apropos(1) into a single string passed to exprcomp().  Ok
+schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.12 2011/11/13 11:10:27 schwarze Exp $ */
+d32 1
+a32 1
+static	void	 list(struct rec *, size_t, void *);
+d41 1
+a41 2
+	size_t		 sz;
+	char		*buf;
+d74 1
+a74 19
+	/* 
+	 * Collapse expressions into a single string.  
+	 * First count up the contained strings, adding a space at the
+	 * end of each (plus nil-terminator).  Then merge.
+	 */
+
+	for (sz = 0, ch = 0; ch < argc; ch++)
+		sz += strlen(argv[ch]) + 1;
+
+	buf = mandoc_malloc(++sz);
+
+	for (*buf = '\0', ch = 0; ch < argc; ch++) {
+		strlcat(buf, argv[ch], sz);
+		strlcat(buf, " ", sz);
+	}
+
+	buf[sz - 2] = '\0';
+
+	if (NULL == (e = exprcomp(buf))) {
+a75 1
+		free(buf);
+a78 2
+	free(buf);
+
+d86 1
+a86 1
+	apropos_search(&opts, e, NULL, list);
+d88 3
+a90 1
+	return(EXIT_SUCCESS);
+d95 1
+a95 1
+list(struct rec *res, size_t sz, void *arg)
+d99 1
+a99 1
+	qsort(res, sz, sizeof(struct rec), cmp);
+d113 2
+a114 2
+	return(strcmp(((const struct rec *)p1)->title,
+				((const struct rec *)p2)->title));
+d121 2
+a122 6
+	fprintf(stderr, "usage: %s "
+			"[-I] "
+			"[-S arch] "
+			"[-s section] "
+			"EXPR\n", 
+			progname);
+@
+
+
+1.12
+log
+@Rewrite the expression parser for a more concise syntax:
+
+ apropos [search_type[,...]=]substring
+ apropos search_type[,...][,i]~regex
+
+... and expression evaluation must take the search type into account.
+
+This allows to:
+* drop the global -I option and
+* drop the enum match, just using a boolean int.
+
+"go ahead" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.11 2011/11/13 10:12:05 schwarze Exp $ */
+d17 4
+d41 2
+d75 19
+a93 1
+	if (NULL == (e = exprcomp(argc, argv))) {
+d95 1
+d99 2
+@
+
+
+1.11
+log
+@Less misleading file names; ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.10 2011/11/09 22:05:56 kristaps Exp $ */
+d36 1
+a36 1
+	int		 ch, cs;
+d50 1
+a50 3
+	cs = 0;
+
+	while (-1 != (ch = getopt(argc, argv, "S:s:I"))) 
+a57 3
+		case ('I'):
+			cs = 1;
+			break;
+d69 1
+a69 1
+	if (NULL == (e = exprcomp(cs, argv, argc))) {
+@
+
+
+1.10
+log
+@Make apropos's lookup use a find(1)-like expression.  I'll write more on
+this when it completes; this is to keep it in-tree.
+
+Right now this uses prefix notation.  Ignore it.  I'll make this into
+infix notation real soon.
+
+The goal of this (exprcomp and exprexec) is to have arbitrary logical
+expressions.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.9 2011/11/09 10:53:48 kristaps Exp $ */
+d24 1
+a24 1
+#include "apropos.h"
+@
+
+
+1.9
+log
+@Change getopt() to be more like schwarze@@'s suggestions.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.8 2011/11/09 01:24:23 kristaps Exp $ */
+a26 23
+struct	type {
+	int		 mask;
+	const char	*name; /* command-line type name */
+};
+
+static	const struct type types[] = {
+	{ TYPE_NAME, "name" },
+	{ TYPE_FUNCTION, "func" },
+	{ TYPE_UTILITY, "utility" },
+	{ TYPE_INCLUDES, "incl" },
+	{ TYPE_VARIABLE, "var" },
+	{ TYPE_STANDARD, "stand" },
+	{ TYPE_AUTHOR, "auth" },
+	{ TYPE_CONFIG, "conf" },
+	{ TYPE_DESC, "desc" },
+	{ TYPE_XREF, "xref" },
+	{ TYPE_PATH, "path" },
+	{ TYPE_ENV, "env" },
+	{ TYPE_ERR, "err" },
+	{ INT_MAX, "all" },
+	{ 0, NULL }
+};
+
+d36 1
+a36 2
+	int		 ch, i;
+	char		*q, *v;
+d38 1
+a43 2
+	q = NULL;
+
+d50 3
+a52 1
+	while (-1 != (ch = getopt(argc, argv, "S:s:It:"))) 
+d61 1
+a61 1
+			opts.flags |= OPTS_INSENS;
+a62 18
+		case ('t'):
+			while (NULL != (v = strsep(&optarg, ","))) {
+				if ('\0' == *v)
+					continue;
+				for (i = 0; types[i].mask; i++) {
+					if (strcmp(types[i].name, v))
+						continue;
+					break;
+				}
+				if (0 == types[i].mask)
+					break;
+				opts.types |= types[i].mask;
+			}
+			if (NULL == v)
+				break;
+			
+			fprintf(stderr, "%s: Bad type\n", v);
+			return(EXIT_FAILURE);
+d71 1
+a71 2
+	if (0 == argc || '\0' == **argv) {
+		usage();
+a72 2
+	} else
+		q = *argv;
+d74 4
+a77 2
+	if (0 == opts.types)
+		opts.types = TYPE_NAME | TYPE_DESC;
+d86 2
+a87 1
+	apropos_search(&opts, q, NULL, list);
+d123 2
+a124 2
+			"[-t type[,...]] "
+			"key\n", progname);
+@
+
+
+1.8
+log
+@Split apropos.c into db.c and apropos.h with simpler code (re-written, but
+inspired by apropos.c and mandoc-tools' mandoc-cgi.c).  This uses UTF-8
+right now for its re-writing, but will soon accomodate for the regular
+suspects (this is a rather simple matter).
+
+I also introduce man.cgi (cgi.c), which is a standalone CGI that replaces
+mandoc-tools' mandoc.cgi.  Right now it's just a framework.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.7 2011/10/09 10:46:38 kristaps Exp $ */
+d75 1
+a75 1
+	while (-1 != (ch = getopt(argc, argv, "a:c:I:t:"))) 
+d77 1
+a77 1
+		case ('a'):
+d80 1
+a80 1
+		case ('c'):
+d162 2
+a163 2
+			"[-a arch] "
+			"[-c cat] "
+@
+
+
+1.7
+log
+@Make apropos results-gathering able to error out and clean up before
+making the utility exit non-zero.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.6 2011/10/09 10:37:52 kristaps Exp $ */
+d3 1
+a3 1
+* Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+a16 6
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <sys/types.h>
+
+a17 2
+#include <errno.h>
+#include <fcntl.h>
+a19 3
+#include <regex.h>
+#include <stdarg.h>
+#include <stdint.h>
+a22 7
+#include <unistd.h>
+
+#ifdef __linux__
+# include <db_185.h>
+#else
+# include <db.h>
+#endif
+d24 1
+a26 39
+#define	MAXRESULTS	 256
+
+/* Bit-fields.  See mandocdb.8. */
+
+#define TYPE_NAME	  0x01
+#define TYPE_FUNCTION	  0x02
+#define TYPE_UTILITY	  0x04
+#define TYPE_INCLUDES	  0x08
+#define TYPE_VARIABLE	  0x10
+#define TYPE_STANDARD	  0x20
+#define TYPE_AUTHOR	  0x40
+#define TYPE_CONFIG	  0x80
+#define TYPE_DESC	  0x100
+#define TYPE_XREF	  0x200
+#define TYPE_PATH	  0x400
+#define TYPE_ENV	  0x800
+#define TYPE_ERR	  0x1000
+
+enum	match {
+	MATCH_SUBSTR = 0,
+	MATCH_REGEX,
+	MATCH_EXACT
+};
+
+enum	sort {
+	SORT_TITLE = 0,
+	SORT_CAT,
+	SORT__MAX
+};
+
+struct	opts {
+	enum sort	 sort; /* output sorting */
+	const char	*arch; /* restrict to architecture */
+	const char	*cat; /* restrict to category */
+	int		 types; /* only types in bitmask */
+	int		 insens; /* case-insensitive match */
+	enum match	 match; /* match type */
+};
+
+a31 40
+struct	rec {
+	char		*file; /* file in file-system */
+	char		*cat; /* category (3p, 3, etc.) */
+	char		*title; /* title (FOO, etc.) */
+	char		*arch; /* arch (or empty string) */
+	char		*desc; /* description (from Nd) */
+	recno_t		 rec; /* record in index */
+};
+
+struct	res {
+	char		*arch; /* architecture */
+	char		*desc; /* free-form description */
+	char		*keyword; /* matched keyword */
+	int	 	 types; /* bitmask of field selectors */
+	char		*cat; /* manual section */
+	char		*title; /* manual section */
+	char		*uri; /* formatted uri of file */
+	recno_t		 rec; /* unique id of underlying manual */
+	/*
+	 * Maintain a binary tree for checking the uniqueness of `rec'
+	 * when adding elements to the results array.
+	 * Since the results array is dynamic, use offset in the array
+	 * instead of a pointer to the structure.
+	 */
+	int		 lhs;
+	int		 rhs;
+};
+
+struct	state {
+	DB		 *db; /* database */
+	DB		 *idx; /* index */
+	const char	 *dbf; /* database name */
+	const char	 *idxf; /* index name */
+};
+
+static	const char * const sorts[SORT__MAX] = {
+	"cat", /* SORT_CAT */
+	"title", /* SORT_TITLE */
+};
+
+d50 2
+a51 11
+static	void	 buf_alloc(char **, size_t *, size_t);
+static	void	 buf_dup(struct mchars *, char **, const char *);
+static	void	 buf_redup(struct mchars *, char **, 
+			size_t *, const char *);
+static	int	 sort_cat(const void *, const void *);
+static	int	 sort_title(const void *, const void *);
+static	int	 state_getrecord(struct state *, 
+			recno_t, struct rec *);
+static	void	 state_output(const struct res *, int);
+static	int	 state_search(struct state *, 
+			const struct opts *, char *);
+d59 1
+a59 4
+	BTREEINFO	 info;
+	int		 ch, i, rc;
+	const char	*dbf, *idxf;
+	struct state	 state;
+a65 1
+	memset(&state, 0, sizeof(struct state));
+a66 2
+	dbf = "mandoc.db";
+	idxf = "mandoc.index";
+a67 1
+	rc = EXIT_FAILURE;
+d75 1
+a75 3
+	opts.match = MATCH_SUBSTR;
+
+	while (-1 != (ch = getopt(argc, argv, "a:c:eIrs:t:"))) 
+a82 3
+		case ('e'):
+			opts.match = MATCH_EXACT;
+			break;
+d84 1
+a84 4
+			opts.insens = 1;
+			break;
+		case ('r'):
+			opts.match = MATCH_REGEX;
+a85 13
+		case ('s'):
+			for (i = 0; i < SORT__MAX; i++) {
+				if (strcmp(optarg, sorts[i])) 
+					continue;
+				opts.sort = (enum sort)i;
+				break;
+			}
+
+			if (i < SORT__MAX)
+				break;
+
+			fprintf(stderr, "%s: Bad sort\n", optarg);
+			return(EXIT_FAILURE);
+d114 1
+a114 1
+		goto out;
+d128 2
+a129 244
+	memset(&info, 0, sizeof(BTREEINFO));
+	info.flags = R_DUP;
+
+	state.db = dbopen(dbf, O_RDONLY, 0, DB_BTREE, &info);
+	if (NULL == state.db) {
+		perror(dbf);
+		goto out;
+	}
+
+	state.idx = dbopen(idxf, O_RDONLY, 0, DB_RECNO, NULL);
+	if (NULL == state.idx) {
+		perror(idxf);
+		goto out;
+	}
+
+	/* Main search function. */
+
+	rc = state_search(&state, &opts, q) ?
+		EXIT_SUCCESS : EXIT_FAILURE;
+out:
+	if (state.db)
+		(*state.db->close)(state.db);
+	if (state.idx)
+		(*state.idx->close)(state.idx);
+
+	return(rc);
+}
+
+static int
+state_search(struct state *p, const struct opts *opts, char *q)
+{
+	int		 leaf, root, len, ch, dflag, rc;
+	struct mchars	*mc;
+	char		*buf;
+	size_t		 bufsz;
+	recno_t		 rec;
+	uint32_t	 fl;
+	DBT		 key, val;
+	struct res	*res;
+	regex_t		 reg;
+	regex_t		*regp;
+	char		 filebuf[10];
+	struct rec	 record;
+
+	rc = 0;
+	root = leaf = -1;
+	res = NULL;
+	len = 0;
+	buf = NULL;
+	bufsz = 0;
+	regp = NULL;
+
+	/*
+	 * Configure how we scan through results to see if we match:
+	 * whether by regexp or exact matches.
+	 */
+
+	switch (opts->match) {
+	case (MATCH_REGEX):
+		ch = REG_EXTENDED | REG_NOSUB | 
+			(opts->insens ? REG_ICASE : 0);
+
+		if (0 != regcomp(&reg, q, ch)) {
+			fprintf(stderr, "%s: Bad pattern\n", q);
+			return(0);
+		}
+
+		regp = &reg;
+		dflag = R_FIRST;
+		break;
+	case (MATCH_EXACT):
+		key.data = q;
+		key.size = strlen(q) + 1;
+		dflag = R_CURSOR;
+		break;
+	default:
+		dflag = R_FIRST;
+		break;
+	}
+
+	mc = mchars_alloc();
+
+	/*
+	 * Iterate over the entire keyword database.
+	 * For each record, we must first translate the key into UTF-8.
+	 * Following that, make sure it's acceptable.
+	 * Lastly, add it to the available records.
+	 */
+
+	while (0 == (ch = (*p->db->seq)(p->db, &key, &val, dflag))) {
+		dflag = R_NEXT;
+
+		/* 
+		 * Keys must be sized as such: the keyword must be
+		 * non-empty (nil terminator plus one character) and the
+		 * value must be 8 (recno_t---uint32_t---index reference
+		 * and a uint32_t flag field).
+		 */
+
+		if (key.size < 2 || 8 != val.size) {
+			fprintf(stderr, "%s: Bad database\n", p->dbf);
+			goto out;
+		}
+
+		buf_redup(mc, &buf, &bufsz, (char *)key.data);
+
+		fl = *(uint32_t *)val.data;
+
+		if ( ! (fl & opts->types))
+			continue;
+
+		switch (opts->match) {
+		case (MATCH_REGEX):
+			if (regexec(regp, buf, 0, NULL, 0))
+				continue;
+			break;
+		case (MATCH_EXACT):
+			if (opts->insens && strcasecmp(buf, q))
+				goto send;
+			if ( ! opts->insens && strcmp(buf, q))
+				goto send;
+			break;
+		default:
+			if (opts->insens && NULL == strcasestr(buf, q))
+				continue;
+			if ( ! opts->insens && NULL == strstr(buf, q))
+				continue;
+			break;
+		}
+
+		/*
+		 * Now look up the file itself in our index.  The file's
+		 * indexed by its recno for fast lookups.
+		 */
+
+		memcpy(&rec, val.data + 4, sizeof(recno_t));
+
+		if ( ! state_getrecord(p, rec, &record))
+			goto out;
+
+		/* If we're in a different section, skip... */
+
+		if (opts->cat && strcasecmp(opts->cat, record.cat))
+			continue;
+		if (opts->arch && strcasecmp(opts->arch, record.arch))
+			continue;
+
+		/* 
+		 * Do a binary search to dedupe the results tree of the
+		 * same record: we don't print the same file.
+		 */
+
+		for (leaf = root; leaf >= 0; )
+			if (rec > res[leaf].rec && res[leaf].rhs >= 0)
+				leaf = res[leaf].rhs;
+			else if (rec < res[leaf].rec && res[leaf].lhs >= 0)
+				leaf = res[leaf].lhs;
+			else 
+				break;
+
+		if (leaf >= 0 && res[leaf].rec == rec)
+			continue;
+
+		res = mandoc_realloc
+			(res, (len + 1) * sizeof(struct res));
+
+		/*
+		 * Now we have our filename, keywords, types, and all
+		 * other necessary information.  
+		 * Process it and add it to our list of results.
+		 */
+
+		filebuf[9] = '\0';
+		snprintf(filebuf, 10, "%u", record.rec);
+		assert('\0' == filebuf[9]);
+
+		res[len].rec = record.rec;
+		res[len].types = fl;
+		res[len].lhs = res[len].rhs = -1;
+
+		buf_dup(mc, &res[len].keyword, buf);
+		buf_dup(mc, &res[len].uri, filebuf);
+		buf_dup(mc, &res[len].cat, record.cat);
+		buf_dup(mc, &res[len].arch, record.arch);
+		buf_dup(mc, &res[len].title, record.title);
+		buf_dup(mc, &res[len].desc, record.desc);
+
+		if (leaf >= 0) {
+			if (record.rec > res[leaf].rec)
+				res[leaf].rhs = len;
+			else
+				res[leaf].lhs = len;
+		} else
+			root = len;
+
+		len++;
+	}
+
+	if (ch < 0) {
+		perror(p->dbf);
+		goto out;
+	} 
+send:
+	/* Sort our results. */
+
+	if (SORT_CAT == opts->sort)
+		qsort(res, len, sizeof(struct res), sort_cat);
+	else
+		qsort(res, len, sizeof(struct res), sort_title);
+
+	state_output(res, len);
+	rc = 1;
+out:
+	for (len-- ; len >= 0; len--) {
+		free(res[len].keyword);
+		free(res[len].title);
+		free(res[len].cat);
+		free(res[len].arch);
+		free(res[len].desc);
+		free(res[len].uri);
+	}
+
+	free(res);
+	free(buf);
+	mchars_free(mc);
+
+	if (regp)
+		regfree(regp);
+
+	return(rc);
+}
+
+/*
+ * Track allocated buffer size for buf_redup().
+ */
+static inline void
+buf_alloc(char **buf, size_t *bufsz, size_t sz)
+{
+
+	if (sz < *bufsz) 
+		return;
+
+	*bufsz = sz + 1024;
+	*buf = mandoc_realloc(*buf, *bufsz);
+d132 1
+a132 3
+/*
+ * Like buf_redup() but throwing away the buffer size.
+ */
+d134 1
+a134 1
+buf_dup(struct mchars *mc, char **buf, const char *val)
+d136 1
+a136 80
+	size_t		 bufsz;
+
+	bufsz = 0;
+	*buf = NULL;
+	buf_redup(mc, buf, &bufsz, val);
+}
+
+/*
+ * Normalise strings from the index and database.
+ * These strings are escaped as defined by mandoc_char(7) along with
+ * other goop in mandoc.h (e.g., soft hyphens).
+ */
+static void
+buf_redup(struct mchars *mc, char **buf, 
+		size_t *bufsz, const char *val)
+{
+	size_t		 sz;
+	const char	*seq, *cpp;
+	int		 len, pos;
+	enum mandoc_esc	 esc;
+	const char	 rsv[] = { '\\', ASCII_NBRSP, ASCII_HYPH, '\0' };
+
+	/* Pre-allocate by the length of the input */
+
+	buf_alloc(buf, bufsz, strlen(val) + 1);
+
+	pos = 0;
+
+	while ('\0' != *val) {
+		/*
+		 * Halt on the first escape sequence.
+		 * This also halts on the end of string, in which case
+		 * we just copy, fallthrough, and exit the loop.
+		 */
+		if ((sz = strcspn(val, rsv)) > 0) {
+			memcpy(&(*buf)[pos], val, sz);
+			pos += (int)sz;
+			val += (int)sz;
+		}
+
+		if (ASCII_HYPH == *val) {
+			(*buf)[pos++] = '-';
+			val++;
+			continue;
+		} else if (ASCII_NBRSP == *val) {
+			(*buf)[pos++] = ' ';
+			val++;
+			continue;
+		} else if ('\\' != *val)
+			break;
+
+		/* Read past the slash. */
+
+		val++;
+
+		/*
+		 * Parse the escape sequence and see if it's a
+		 * predefined character or special character.
+		 */
+
+		esc = mandoc_escape(&val, &seq, &len);
+		if (ESCAPE_ERROR == esc)
+			break;
+
+		cpp = ESCAPE_SPECIAL == esc ? 
+			mchars_spec2str(mc, seq, len, &sz) : NULL;
+
+		if (NULL == cpp)
+			continue;
+
+		/* Copy the rendered glyph into the stream. */
+
+		buf_alloc(buf, bufsz, sz);
+
+		memcpy(&(*buf)[pos], cpp, sz);
+		pos += (int)sz;
+	}
+
+	(*buf)[pos] = '\0';
+}
+d138 1
+a138 4
+static void
+state_output(const struct res *res, int sz)
+{
+	int		 i;
+d140 1
+a140 1
+	for (i = 0; i < sz; i++)
+d148 8
+d161 1
+a161 1
+			"[-eIr] "
+a163 1
+			"[-s sort] "
+a166 60
+
+static int
+state_getrecord(struct state *p, recno_t rec, struct rec *rp)
+{
+	DBT		key, val;
+	size_t		sz;
+	int		rc;
+
+	key.data = &rec;
+	key.size = sizeof(recno_t);
+
+	rc = (*p->idx->get)(p->idx, &key, &val, 0);
+	if (rc < 0) {
+		perror(p->idxf);
+		return(0);
+	} else if (rc > 0)
+		goto err;
+
+	rp->file = (char *)val.data;
+	if ((sz = strlen(rp->file) + 1) >= val.size)
+		goto err;
+
+	rp->cat = (char *)val.data + (int)sz;
+	if ((sz += strlen(rp->cat) + 1) >= val.size)
+		goto err;
+
+	rp->title = (char *)val.data + (int)sz;
+	if ((sz += strlen(rp->title) + 1) >= val.size)
+		goto err;
+
+	rp->arch = (char *)val.data + (int)sz;
+	if ((sz += strlen(rp->arch) + 1) >= val.size)
+		goto err;
+
+	rp->desc = (char *)val.data + (int)sz;
+	rp->rec = rec;
+	return(1);
+err:
+	fprintf(stderr, "%s: Corrupt index\n", p->idxf);
+	return(0);
+}
+
+static int
+sort_title(const void *p1, const void *p2)
+{
+
+	return(strcmp(((const struct res *)p1)->title,
+		      ((const struct res *)p2)->title));
+}
+
+static int
+sort_cat(const void *p1, const void *p2)
+{
+	int		 rc;
+
+	rc = strcmp(((const struct res *)p1)->cat,
+			((const struct res *)p2)->cat);
+
+	return(0 == rc ? sort_title(p1, p2) : rc);
+}
+@
+
+
+1.6
+log
+@Remove some unnecessary variables and note that mchars_alloc never returns
+NULL.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.5 2011/10/09 10:35:12 kristaps Exp $ */
+d155 1
+a155 1
+static	void	 state_search(struct state *, 
+d278 2
+a279 3
+	state_search(&state, &opts, q);
+
+	rc = EXIT_SUCCESS;
+d289 1
+a289 1
+static void
+d292 1
+a292 1
+	int		 leaf, root, len, ch, dflag;
+d305 1
+d325 1
+a325 1
+			return;
+d361 2
+a362 2
+			fprintf(stderr, "%s: Corrupt database\n", p->dbf);
+			exit(EXIT_FAILURE);
+d399 1
+a399 1
+			exit(EXIT_FAILURE);
+a458 1
+send:
+d461 1
+a461 1
+		exit(EXIT_FAILURE);
+d463 1
+a463 1
+
+d472 2
+a473 1
+
+d489 2
+@
+
+
+1.5
+log
+@Use a binary tree (for now, unbalanced) for deduping the records in the
+results array.  This is much faster than the previous method, a linear
+search, at a small cost.  Note that array offsets are used instead of
+storing the res pointer because we may realloc the results vector.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.4 2011/10/08 12:20:09 kristaps Exp $ */
+d293 1
+a293 1
+	int		 leaf, root, len, ch, rflags, dflag;
+a310 1
+	ch = 0;
+d320 1
+a320 1
+		rflags = REG_EXTENDED | REG_NOSUB | 
+d323 1
+a323 1
+		if (0 != regcomp(&reg, q, rflags)) {
+d341 1
+a341 4
+	if (NULL == (mc = mchars_alloc())) {
+		perror(NULL);
+		exit(EXIT_FAILURE);
+	}
+d465 1
+a465 11
+	/*
+	 * Sort our results.
+	 * We do this post-scan (instead of an in-line sort) because
+	 * it's more or less the same in terms of run-time.  Assuming we
+	 * sort in-line with a tree versus post:
+	 * 
+	 *  In-place: n * O(lg n)
+	 *  After: n + O(n lg n)
+	 *
+	 * Whatever.  This also buys us simplicity.
+	 */
+d467 1
+a467 2
+	switch (opts->sort) {
+	case (SORT_CAT):
+d469 1
+a469 2
+		break;
+	default:
+a470 2
+		break;
+	}
+@
+
+
+1.4
+log
+@Use mandoc_realloc() in apropos, as we're linking to libmandoc.a.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.3 2011/10/07 13:29:03 kristaps Exp $ */
+d106 8
+d293 1
+a293 1
+	int		 i, len, ch, rflags, dflag;
+d306 1
+d412 4
+a415 1
+		/* FIXME: this needs to be changed.  Ugh.  Linear. */
+d417 6
+a422 2
+		for (i = 0; i < len; i++)
+			if (res[i].rec == record.rec)
+d425 1
+a425 1
+		if (i < len)
+d443 1
+d451 9
+@
+
+
+1.3
+log
+@Lift hard-coded limit of results.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.2 2011/10/07 13:22:33 kristaps Exp $ */
+d494 1
+a494 4
+	if (NULL == (*buf = realloc(*buf, *bufsz))) {
+		perror(NULL);
+		exit(EXIT_FAILURE);
+	}
+@
+
+
+1.2
+log
+@Clean up file a bit: remove errx and err function pointers from the
+state struct (directly using fprintf and perror to do this); add some
+in-line documentation; remove state init and destroy directly to the
+main function.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.1 2011/10/06 23:00:54 kristaps Exp $ */
+d292 1
+a292 1
+	struct res	 res[MAXRESULTS];
+d298 1
+d345 1
+a345 4
+	while (len < MAXRESULTS) {
+		if ((ch = (*p->db->seq)(p->db, &key, &val, dflag)))
+			break;
+
+d412 3
+d475 1
+@
+
+
+1.1
+log
+@Import apropos from mandoc-tools after inlining all source files
+(originally including extern.h, state.c, and sort.c).  The apropos
+utility interfaces with the databases of mandocdb to provide semantic
+searching capabilities.  It Works For Me, but will need lots of cleanup
+in the coming months.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos.c,v 1.18 2011/07/12 15:57:41 kristaps Exp $ */
+d44 1
+a44 1
+#define	MAXRESULTS	 100
+d46 15
+a60 13
+#define TYPE_NAME	0x01
+#define TYPE_FUNCTION	0x02
+#define TYPE_UTILITY	0x04
+#define TYPE_INCLUDES	0x08
+#define TYPE_VARIABLE	0x10
+#define TYPE_STANDARD	0x20
+#define TYPE_AUTHOR	0x40
+#define TYPE_CONFIG	0x80
+#define TYPE_DESC	0x100
+#define TYPE_XREF	0x200
+#define TYPE_PATH	0x400
+#define	TYPE_ENV	0x800
+#define	TYPE_ERR	0x1000
+d85 1
+a85 1
+	const char	*name;
+d89 6
+a94 6
+	char		*file;
+	char		*cat;
+	char		*title;
+	char		*arch;
+	char		*desc;
+	recno_t		 rec;
+a112 2
+	void		(*err)(const char *);
+	void		(*errx)(const char *, ...);
+a141 1
+static	void	 error(const char *, ...);
+d144 2
+a145 6
+static	void	 state_destroy(struct state *);
+static	int	 state_getrecord(struct state *, recno_t, struct rec *);
+static	int	 state_init(struct state *, 
+			const char *, const char *,
+			void (*err)(const char *),
+			void (*errx)(const char *, ...));
+a148 1
+
+d151 1
+a151 1
+static	const char	 *progname;
+d156 2
+a157 1
+	int		 ch, i;
+d166 1
+d171 1
+d209 1
+a209 1
+			error("%s: Bad sort\n", optarg);
+d227 1
+a227 1
+			error("%s: Bad type\n", v);
+d239 1
+a239 1
+		return(EXIT_FAILURE);
+d246 20
+a265 3
+	if ( ! state_init(&state, dbf, idxf, perror, error)) {
+		state_destroy(&state);
+		return(EXIT_FAILURE);
+d268 2
+a270 1
+	state_destroy(&state);
+d272 8
+a279 1
+	return(EXIT_SUCCESS);
+d304 5
+d315 1
+a315 1
+			error("%s: Bad pattern\n", q);
+d358 1
+a358 1
+			error("%s: Corrupt database\n", p->dbf);
+d442 12
+a585 10
+error(const char *fmt, ...)
+{
+	va_list		 ap;
+
+	va_start(ap, fmt);
+	vfprintf(stderr, fmt, ap);
+	va_end(ap);
+}
+
+static void
+a611 42
+state_init(struct state *p, 
+		const char *dbf, const char *idxf,
+		void (*err)(const char *),
+		void (*errx)(const char *, ...))
+{
+	BTREEINFO	 info;
+
+	memset(p, 0, sizeof(struct state));
+	memset(&info, 0, sizeof(BTREEINFO));
+
+	info.flags = R_DUP;
+
+	p->dbf = dbf;
+	p->idxf = idxf;
+	p->err = err;
+
+	p->db = dbopen(p->dbf, O_RDONLY, 0, DB_BTREE, &info);
+	if (NULL == p->db) {
+		(*err)(p->dbf);
+		return(0);
+	}
+
+	p->idx = dbopen(p->idxf, O_RDONLY, 0, DB_RECNO, NULL);
+	if (NULL == p->idx) {
+		(*err)(p->idxf);
+		return(0);
+	}
+
+	return(1);
+}
+
+static void
+state_destroy(struct state *p)
+{
+
+	if (p->db)
+		(*p->db->close)(p->db);
+	if (p->idx)
+		(*p->idx->close)(p->idx);
+}
+
+static int
+d623 1
+a623 1
+		(*p->err)(p->idxf);
+d625 2
+a626 4
+	} else if (rc > 0) {
+		(*p->errx)("%s: Corrupt index\n", p->idxf);
+		return(0);
+	}
+d629 2
+a630 4
+	if ((sz = strlen(rp->file) + 1) >= val.size) {
+		(*p->errx)("%s: Corrupt index\n", p->idxf);
+		return(0);
+	}
+d633 2
+a634 4
+	if ((sz += strlen(rp->cat) + 1) >= val.size) {
+		(*p->errx)("%s: Corrupt index\n", p->idxf);
+		return(0);
+	}
+d637 2
+a638 4
+	if ((sz += strlen(rp->title) + 1) >= val.size) {
+		(*p->errx)("%s: Corrupt index\n", p->idxf);
+		return(0);
+	}
+d641 2
+a642 4
+	if ((sz += strlen(rp->arch) + 1) >= val.size) {
+		(*p->errx)("%s: Corrupt index\n", p->idxf);
+		return(0);
+	}
+d647 3
+@

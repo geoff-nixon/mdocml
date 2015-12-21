@@ -1,0 +1,69 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2015.11.06.16.30.33;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Use getprogname(3) rather than __progname.
+Suggested by Joerg@@ Sonnenberger (NetBSD).
+Last year, deraadt@@ confirmed on tech@@ that this "has the potential
+to be more portable", and micro-optimizing for speed is not relevant
+here.  Also gets rid of one global variable.
+@
+text
+@#include "config.h"
+
+#if HAVE_PROGNAME
+
+int dummy;
+
+#else
+
+/*	$Id: compat_isblank.c,v 1.2 2015/10/06 18:32:19 schwarze Exp $	*/
+/*
+ * Copyright (c) 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+static const char *progname;
+
+void
+setprogname(const char *name)
+{
+
+	progname = name;
+}
+
+const char *
+getprogname(void)
+{
+
+	return progname;
+}
+
+#endif
+@

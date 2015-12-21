@@ -1,0 +1,1910 @@
+head	1.72;
+access;
+symbols
+	VERSION_1_13_3:1.70
+	VERSION_1_13_2:1.70
+	VERSION_1_12_4:1.53
+	VERSION_1_13_1:1.51
+	VERSION_1_12_3:1.49
+	VERSION_1_12_2:1.49
+	VERSION_1_12:1.53.0.2
+	VERSION_1_12_1:1.47
+	VERSION_1_12_0:1.47
+	VERSION_1_11_7:1.45
+	VERSION_1_11_6:1.45
+	VERSION_1_11_5:1.45
+	VERSION_1_11_4:1.44
+	VERSION_1_11_3:1.44
+	VERSION_1_11_2:1.41
+	VERSION_1_11_1:1.40
+	VERSION_1_10_10:1.40
+	VERSION_1_10_9:1.38
+	VERSION_1_10_8:1.36
+	VERSION_1_10_7:1.27
+	VERSION_1_10_6:1.27
+	VERSION_1_10_5:1.27
+	VERSION_1_10_5_PREPDF:1.27
+	VERSION_1_10_4:1.25
+	VERSION_1_10_3:1.24
+	VERSION_1_10_2:1.24
+	VERSION_1_10_1:1.23
+	VERSION_1_9_24:1.23
+	VERSION_1_9_25:1.23
+	VERSION_1_9_23:1.23
+	VERSION_1_9_22:1.22
+	VERSION_1_9_21:1.22
+	VERSION_1_9_20:1.22
+	VERSION_1_9_19:1.22
+	VERSION_1_9_18:1.22
+	VERSION_1_9_17:1.22
+	VERSION_1_9_16:1.22
+	VERSION_1_9_15:1.22
+	VERSION_1_9_15-pre2:1.21
+	VERSION_1_9_15-pre1:1.21
+	VERSION_1_9_14:1.21
+	VERSION_1_9_13:1.17
+	VERSION_1_9_12:1.17
+	VERSION_1_9_11:1.14
+	VERSION_1_9_10:1.14
+	VERSION_1_9_9:1.13
+	VERSION_1_9_8:1.12
+	VERSION_1_9_7:1.12
+	VERSION_1_9_6:1.7
+	VERSION_1_9_5:1.6
+	VERSION_1_8_5:1.5
+	VERSION_1_8_1:1.5
+	VERSION_1_7_16:1.5
+	VERSION_1_7_15:1.5
+	OPENBSD_CHECKIN:1.5
+	VERSION_1_6_5:1.5
+	VERSION_1_5_1:1.5
+	VERSION_1_3_15:1.5
+	VERSION_1_3_6:1.5
+	VERSION_1_2_0:1.5
+	VERSION_1_0_2:1.3;
+locks; strict;
+comment	@ * @;
+
+
+1.72
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2015.10.13.22.59.54;	author schwarze;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2014.12.02.10.08.06;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2014.12.01.04.05.31;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2014.10.10.15.26.29;	author schwarze;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2014.10.10.08.44.24;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2014.09.28.20.14.20;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2014.09.28.11.33.15;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2014.09.27.11.17.19;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2014.09.27.10.56.18;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2014.09.27.09.26.01;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2014.09.27.09.20.03;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2014.09.27.09.05.57;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2014.09.27.09.03.24;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2014.09.27.09.02.19;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2014.09.27.08.54.34;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2014.09.17.19.55.59;	author schwarze;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2014.08.14.00.31.43;	author schwarze;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2014.08.13.15.25.22;	author schwarze;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2014.01.05.19.10.56;	author joerg;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2013.08.08.20.07.47;	author schwarze;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2012.05.31.22.29.13;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2011.10.05.21.35.17;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2011.07.23.22.57.13;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2011.05.17.11.34.31;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2011.05.17.11.19.45;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2011.05.14.16.28.23;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2011.04.29.22.18.12;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2011.01.29.14.49.44;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2011.01.13.14.30.13;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2011.01.06.11.55.39;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2011.01.04.10.29.41;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.12.24.14.14.00;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.12.24.00.46.49;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.12.22.11.15.16;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.12.20.13.07.55;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.12.20.10.40.11;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.12.17.10.37.26;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.12.15.17.19.41;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.12.15.15.59.23;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.12.15.14.52.16;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.07.23.00.08.57;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.07.06.12.37.17;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.06.19.20.46.27;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.04.05.08.51.56;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.01.29.14.39.38;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.11.16.06.07.49;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.11.14.12.04.59;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.11.14.11.58.36;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.11.10.16.20.22;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.10.28.08.00.18;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.10.28.05.08.17;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.10.27.04.50.14;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.10.26.08.18.16;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.10.13.10.21.24;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.10.07.12.35.23;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.10.04.09.02.40;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.10.03.16.36.06;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.10.03.15.26.26;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.10.03.15.08.09;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.09.24.09.50.31;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.09.21.14.56.56;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.12.15.01.54.58;	author kristaps;	state dead;
+branches;
+next	1.4;
+
+1.4
+date	2008.12.10.17.40.56;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.12.10.12.09.47;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.10.00.58.15;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.10.00.52.46;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.72
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@/*	$Id: html.h,v 1.71 2015/10/13 22:59:54 schwarze Exp $ */
+/*
+ * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+enum	htmltag {
+	TAG_HTML,
+	TAG_HEAD,
+	TAG_BODY,
+	TAG_META,
+	TAG_TITLE,
+	TAG_DIV,
+	TAG_H1,
+	TAG_H2,
+	TAG_SPAN,
+	TAG_LINK,
+	TAG_BR,
+	TAG_A,
+	TAG_TABLE,
+	TAG_TBODY,
+	TAG_COL,
+	TAG_TR,
+	TAG_TD,
+	TAG_LI,
+	TAG_UL,
+	TAG_OL,
+	TAG_DL,
+	TAG_DT,
+	TAG_DD,
+	TAG_BLOCKQUOTE,
+	TAG_PRE,
+	TAG_B,
+	TAG_I,
+	TAG_CODE,
+	TAG_SMALL,
+	TAG_STYLE,
+	TAG_MATH,
+	TAG_MROW,
+	TAG_MI,
+	TAG_MO,
+	TAG_MSUP,
+	TAG_MSUB,
+	TAG_MSUBSUP,
+	TAG_MFRAC,
+	TAG_MSQRT,
+	TAG_MFENCED,
+	TAG_MTABLE,
+	TAG_MTR,
+	TAG_MTD,
+	TAG_MUNDEROVER,
+	TAG_MUNDER,
+	TAG_MOVER,
+	TAG_MAX
+};
+
+enum	htmlattr {
+	ATTR_NAME,
+	ATTR_REL,
+	ATTR_HREF,
+	ATTR_TYPE,
+	ATTR_MEDIA,
+	ATTR_CLASS,
+	ATTR_STYLE,
+	ATTR_ID,
+	ATTR_COLSPAN,
+	ATTR_CHARSET,
+	ATTR_OPEN,
+	ATTR_CLOSE,
+	ATTR_MATHVARIANT,
+	ATTR_MAX
+};
+
+enum	htmlfont {
+	HTMLFONT_NONE = 0,
+	HTMLFONT_BOLD,
+	HTMLFONT_ITALIC,
+	HTMLFONT_BI,
+	HTMLFONT_MAX
+};
+
+struct	tag {
+	struct tag	 *next;
+	enum htmltag	  tag;
+};
+
+struct tagq {
+	struct tag	 *head;
+};
+
+struct	htmlpair {
+	enum htmlattr	  key;
+	const char	 *val;
+};
+
+#define	PAIR_INIT(p, t, v) \
+	do { \
+		(p)->key = (t); \
+		(p)->val = (v); \
+	} while (/* CONSTCOND */ 0)
+
+#define	PAIR_ID_INIT(p, v)	PAIR_INIT(p, ATTR_ID, v)
+#define	PAIR_CLASS_INIT(p, v)	PAIR_INIT(p, ATTR_CLASS, v)
+#define	PAIR_HREF_INIT(p, v)	PAIR_INIT(p, ATTR_HREF, v)
+#define	PAIR_STYLE_INIT(p, h)	PAIR_INIT(p, ATTR_STYLE, (h)->buf)
+
+struct	html {
+	int		  flags;
+#define	HTML_NOSPACE	 (1 << 0) /* suppress next space */
+#define	HTML_IGNDELIM	 (1 << 1)
+#define	HTML_KEEP	 (1 << 2)
+#define	HTML_PREKEEP	 (1 << 3)
+#define	HTML_NONOSPACE	 (1 << 4) /* never add spaces */
+#define	HTML_LITERAL	 (1 << 5) /* literal (e.g., <PRE>) context */
+#define	HTML_SKIPCHAR	 (1 << 6) /* skip the next character */
+#define	HTML_NOSPLIT	 (1 << 7) /* do not break line before .An */
+#define	HTML_SPLIT	 (1 << 8) /* break line before .An */
+#define	HTML_NONEWLINE	 (1 << 9) /* No line break in nofill mode. */
+	struct tagq	  tags; /* stack of open tags */
+	struct rofftbl	  tbl; /* current table */
+	struct tag	 *tblt; /* current open table scope */
+	char		 *base_man; /* base for manpage href */
+	char		 *base_includes; /* base for include href */
+	char		 *style; /* style-sheet URI */
+	char		  buf[BUFSIZ]; /* see bufcat and friends */
+	size_t		  buflen;
+	struct tag	 *metaf; /* current open font scope */
+	enum htmlfont	  metal; /* last used font */
+	enum htmlfont	  metac; /* current font mode */
+	int		  oflags; /* output options */
+#define	HTML_FRAGMENT	 (1 << 0) /* don't emit HTML/HEAD/BODY */
+};
+
+
+struct	tbl_span;
+struct	eqn;
+
+void		  print_gen_decls(struct html *);
+void		  print_gen_head(struct html *);
+struct tag	 *print_otag(struct html *, enum htmltag,
+				int, const struct htmlpair *);
+void		  print_tagq(struct html *, const struct tag *);
+void		  print_stagq(struct html *, const struct tag *);
+void		  print_text(struct html *, const char *);
+void		  print_tblclose(struct html *);
+void		  print_tbl(struct html *, const struct tbl_span *);
+void		  print_eqn(struct html *, const struct eqn *);
+void		  print_paragraph(struct html *);
+
+#if __GNUC__ - 0 >= 4
+__attribute__((__format__ (__printf__, 2, 3)))
+#endif
+void		  bufcat_fmt(struct html *, const char *, ...);
+void		  bufcat(struct html *, const char *);
+void		  bufcat_id(struct html *, const char *);
+void		  bufcat_style(struct html *,
+			const char *, const char *);
+void		  bufcat_su(struct html *, const char *,
+			const struct roffsu *);
+void		  bufinit(struct html *);
+void		  buffmt_man(struct html *,
+			const char *, const char *);
+void		  buffmt_includes(struct html *, const char *);
+
+int		  html_strlen(const char *);
+@
+
+
+1.71
+log
+@Major character table cleanup:
+* Use ohash(3) rather than a hand-rolled hash table.
+* Make the character table static in the chars.c module:
+There is no need to pass a pointer around, we most certainly
+never want to use two different character tables concurrently.
+* No need to keep the characters in a separate file chars.in;
+that merely encourages downstream porters to mess with them.
+* Sort the characters to agree with the mandoc_chars(7) manual page.
+* Specify Unicode codepoints in hex, not decimal (that's the detail
+that originally triggered this patch).
+No functional change, minus 100 LOC, and i don't see a performance change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.70 2014/12/02 10:08:06 schwarze Exp $ */
+a144 1
+__BEGIN_DECLS
+a176 2
+
+__END_DECLS
+@
+
+
+1.70
+log
+@Fix the implementation and documentation of \c (continue text input line).
+In particular, make it work in no-fill mode, too.
+Reminded by Carsten dot Kunze at arcor dot de (Heirloom roff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.69 2014/12/01 08:05:52 schwarze Exp $ */
+a132 1
+	const struct mchars *symtab; /* character table */
+@
+
+
+1.69
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.68 2014/12/01 04:05:31 schwarze Exp $ */
+d129 1
+@
+
+
+1.68
+log
+@remove unneccessary inclusion protection; patch from deraadt@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.67 2014/10/28 17:36:19 schwarze Exp $ */
+a17 2
+__BEGIN_DECLS
+
+d145 5
+@
+
+
+1.67
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.66 2014/10/10 15:26:29 schwarze Exp $ */
+a16 2
+#ifndef HTML_H
+#define HTML_H
+a176 2
+
+#endif /*!HTML_H*/
+@
+
+
+1.66
+log
+@sync Copyright years after merge to OpenBSD; no code change
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.65 2014/10/10 08:44:24 kristaps Exp $ */
+d136 1
+a136 1
+	struct mchars	 *symtab; /* character-escapes */
+@
+
+
+1.65
+log
+@Re-write of eqn(7) parser and MathML output.
+This adds parser-level support for the grammar described by the eqn
+second-edition technical paper, "Typesetting Mathematics — User's Guide"
+(Kernighan, Cherry).
+The reason for this re-write is the grouping rules, which were not
+possible given the existing implementation.
+The re-write has also considerably simplified the HTML (and, if it ever
+is completed, terminal) front-end.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.64 2014/09/28 20:14:20 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.64
+log
+@Change "to" and "from" commands to use munder, mover, and munderover.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.63 2014/09/28 11:33:15 kristaps Exp $ */
+d85 1
+@
+
+
+1.63
+log
+@Add support for some MathML elements and attributes in our HTML5.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.62 2014/09/27 11:17:19 kristaps Exp $ */
+d66 3
+@
+
+
+1.62
+log
+@Don't pretend we have a separate XHTML and HTML mode any more.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.61 2014/09/27 10:56:18 kristaps Exp $ */
+d53 13
+d80 2
+@
+
+
+1.61
+log
+@Remove <p> in favour of <div class="spacer">.
+This is good because <p> is brittle: it can't appear within other block
+macros.
+This fixes a regression of the original HTML5 patch as noted by schwarze@@
+on the tech@@ list, 14/8/2014.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.60 2014/09/27 09:26:01 kristaps Exp $ */
+a102 5
+enum	htmltype {
+	HTML_HTML_4_01_STRICT,
+	HTML_XHTML_1_0_STRICT
+};
+
+a125 1
+	enum htmltype	  type; /* output media type */
+@
+
+
+1.60
+log
+@Remove last hard-coded width attribute.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.59 2014/09/27 09:20:03 kristaps Exp $ */
+a46 1
+	TAG_P,
+d146 1
+@
+
+
+1.59
+log
+@HTML5-isation: remove more alignments.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.58 2014/09/27 09:05:57 kristaps Exp $ */
+a64 1
+	ATTR_WIDTH,
+@
+
+
+1.58
+log
+@Kick out "summary" attribute, which isn't HTML5.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.57 2014/09/27 09:03:24 kristaps Exp $ */
+a66 1
+	ATTR_ALIGN,
+@
+
+
+1.57
+log
+@Kick out two attibutes we don't use any more in HTML5.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.56 2014/09/27 09:02:19 kristaps Exp $ */
+a66 1
+	ATTR_SUMMARY,
+a104 1
+#define	PAIR_SUMMARY_INIT(p, v)	PAIR_INIT(p, ATTR_SUMMARY, v)
+@
+
+
+1.56
+log
+@First, add space for default styling for HTML5 (non-fragment) output.
+This uses a <style /> block right before the <link /> for the stylesheet.
+Use this to kick out hardcoded header and footer table widths.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.55 2014/09/27 08:54:34 kristaps Exp $ */
+a57 2
+	ATTR_HTTPEQUIV,
+	ATTR_CONTENT,
+@
+
+
+1.55
+log
+@First steps in HTML5: use UTF8 meta-charset and HTML5 doctype identifier.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.54 2014/09/17 19:55:59 schwarze Exp $ */
+d53 1
+@
+
+
+1.54
+log
+@implement .An -[no]split for -Thtml
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.53 2014/08/14 00:31:43 schwarze Exp $ */
+d71 1
+@
+
+
+1.53
+log
+@Revert previous, as requested by kristaps@@.
+The .Bf block can contain subblocks, so it has to render as an
+element that can contain flow content.  But <em> cannot contain
+flow content, only phrasing content.  Rendering .Em and .Bf differently
+would by unfortunate, and closing out .Bf before subblocks and
+re-opening it afterwards would merely complicate both the C code
+of the program and the generated HTML code.  Besides, converting
+.Em to semantic HTML markup would require some content to be put
+into <em> and some into <i>, but we cannot automatically distinguish
+which is which, so strictly speaking, we can't use semantic HTML
+here but have to fall back to physical markup.  Wonders of HTML...
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.52 2014/08/13 15:25:22 schwarze Exp $ */
+d122 2
+@
+
+
+1.52
+log
+@Use <em> for .Em and .Bf -emphasis.
+
+The vast majority of .Em in real-world manuals is stress emphasis,
+for which <em> is the correct markup.  Admittedly, there are some
+instances of .Em usage for alternate quality, for which <i> would
+be a better match.  Most of these are technical terms that neither
+allow semantic markup nor are keywords - for the latter, .Sy would
+be preferable.  A typical example is that the shell breaks input into
+.Em words .
+Alternate voice or mood, which would also require <i>, is almost
+absent from manuals.
+We cannot satisfy both stress emphasis and alternate quality, so
+pick the one that fits more often and looks less wrong when off.
+
+Patch from Guy Harris <guy at alum dot mit dot edu>.
+ok joerg@@ bentley@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.51 2014/04/20 16:46:04 schwarze Exp $ */
+a52 1
+	TAG_EM,
+@
+
+
+1.51
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.50 2014/01/05 19:10:56 joerg Exp $ */
+d53 1
+@
+
+
+1.50
+log
+@Tag functions with format strings as arguments as printf-like.
+Fix one case where a non-literal is used as format string.
+Fix another case where a variable is formatted using the wrong type.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.49 2013/08/08 20:07:47 schwarze Exp $ */
+d108 1
+a108 1
+enum	htmltype { 
+d130 1
+a130 1
+	size_t		  buflen; 
+d141 1
+a141 1
+struct tag	 *print_otag(struct html *, enum htmltag, 
+d156 1
+a156 1
+void		  bufcat_style(struct html *, 
+d158 1
+a158 1
+void		  bufcat_su(struct html *, const char *, 
+d161 1
+a161 1
+void		  buffmt_man(struct html *, 
+@
+
+
+1.49
+log
+@Implement the roff(7) font-escape sequence \f(BI "bold+italic".
+This improves the formatting of about 40 base manuals
+and reduces groff-mandoc formatting differences in base by about 5%.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.48 2012/05/31 22:29:13 schwarze Exp $ */
+d150 3
+@
+
+
+1.48
+log
+@Implement the roff \z escape sequence, intended to output the next
+character without advancing the cursor position; implement it to
+simply skip the next character, as it will usually be overwritten.
+
+With this change, the pod2man(1) preamble user-defined string \*:,
+intended to render as a diaeresis or umlaut diacritic above the
+preceding character, is rendered in a slightly less ugly way,
+though still not correctly.  It was rendered as "z.." and is now
+rendered as ".".
+
+Given that the definition of \*: uses elaborate manual \h positioning,
+there is little chance for mandoc(1) to ever render it correctly,
+but at least we can refrain from printing out a spurious "z", and
+we can make the \z do something semi-reasonable for easier cases.
+
+"just commit" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.47 2011/10/05 21:35:17 kristaps Exp $ */
+d78 1
+@
+
+
+1.47
+log
+@Add the -Ofragment option to -T[]x]html.  This accomodates for embedding
+manual output in existing HTML or XHTML documents, e.g., when invoking
+mandoc from an SSI or CGI.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.46 2011/09/18 14:14:15 schwarze Exp $ */
+d120 1
+@
+
+
+1.46
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.45 2011/07/23 22:57:13 kristaps Exp $ */
+d107 1
+a107 1
+enum	htmltype {
+d128 1
+a128 1
+	size_t		  buflen;
+d132 3
+a134 1
+	enum htmltype	  type;
+@
+
+
+1.45
+log
+@Flip on equation printing for -T[x]html.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.44 2011/05/17 11:34:31 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.44
+log
+@Cleanups in -T[x]html: make html_idcat() use the buffer and be called
+bufcat_id(), then collapse it into a little function without so much
+crap.  Next, make bufinit() only be called when we really need to do so,
+and not simply before pre/post calls.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.43 2011/05/17 11:19:45 kristaps Exp $ */
+d144 1
+@
+
+
+1.43
+log
+@Clean-ups in -T[x]html: inline print_num(), as it was just a single
+conditional; same for print_xmltype() and print_doctype(), same reason;
+make bufncat() be static, as it was only being called from html.c;
+have bufcat() simply call through to strlcat().  Finally, assert()
+whenever we truncate.
+
+Also rename buffmt() -> bufcat_fmt() to differentiate from buffmt_man et
+al., which do not concatenate.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.42 2011/05/14 16:28:23 kristaps Exp $ */
+d145 5
+d152 1
+a155 5
+void		  bufcat_fmt(struct html *, const char *, ...);
+void		  bufcat(struct html *, const char *);
+void		  bufcat_style(struct html *, 
+			const char *, const char *);
+void		  bufinit(struct html *);
+a156 1
+void		  html_idcat(char *, const char *, int);
+@
+
+
+1.42
+log
+@Give -Thtml and -Txhtml the gift of recognising escapes when calculating
+widths (e.g., `Bl -tag -width "\s[blahblah]bar").  This has long since
+been done for -Tascii but escaped noticed with -T[x]html.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.41 2011/04/29 22:18:12 kristaps Exp $ */
+d150 1
+a150 1
+void		  buffmt(struct html *, const char *, ...);
+a153 1
+void		  bufncat(struct html *, const char *, size_t);
+@
+
+
+1.41
+log
+@Move "chars" interface out of out.h and into mandoc.h.  This doesn't
+change any code but for renaming functions and types to be consistent
+with other mandoc.h stuff.  The reason for moving into libmandoc is that
+the rendering of special characters is part of mandoc itself---not an
+external part.  From mandoc(1)'s perspective, this changes nothing, but
+for other utilities, it's important to have these part of libmandoc.
+Note this isn't documented [yet] in mandoc.3 because there are some
+parts I'd like to change around beforehand.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.40 2011/01/29 14:49:44 kristaps Exp $ */
+d158 1
+@
+
+
+1.40
+log
+@When in a <PRE>, don't print out the <BR> before lines that have leading
+whitespace.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.39 2011/01/13 14:30:13 kristaps Exp $ */
+d123 1
+a123 1
+	void		 *symtab; /* character-escapes */
+@
+
+
+1.39
+log
+@Change how -Thtml behaves with tables: use multiple rows, with widths
+set by COL, until an external macro is encountered.  At this point in
+time, close out the table and process the macro.  When the first table
+row is again re-encountered, re-start the table.  This requires a bit of
+tracking added to "struct html", but the change is very small and
+follows the logic of meta-fonts.  This all follows a bug-report by
+joerg@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.38 2011/01/06 11:55:39 kristaps Exp $ */
+d114 1
+a114 1
+#define	HTML_NOSPACE	 (1 << 0)
+d118 2
+a119 1
+#define	HTML_NONOSPACE	 (1 << 4)
+@
+
+
+1.38
+log
+@Make -T[x]html for tables structure cells with a width.  I don't
+anticipate doing much more than this for the coming release.
+
+Also, remove "base" part of struct html (not used anywhere) and put some
+comments in struct html.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.37 2011/01/04 10:29:41 kristaps Exp $ */
+d70 1
+d121 1
+d141 1
+@
+
+
+1.37
+log
+@Add skeleton for -T[x]html tbl stuff.  Also start to put in some bits about
+the up-coming version, although we're not quite there yet.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.36 2010/12/24 14:14:00 kristaps Exp $ */
+d118 7
+a124 7
+	struct tagq	  tags;
+	void		 *symtab;
+	char		 *base;
+	char		 *base_man;
+	char		 *base_includes;
+	char		 *style;
+	char		  buf[BUFSIZ];
+a131 2
+struct	roffsu;
+
+@
+
+
+1.36
+log
+@Apparently the U tag is deprecated, so use a SPAN instead (blah).  Bump
+version date for release.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.35 2010/12/24 00:46:49 kristaps Exp $ */
+d141 1
+@
+
+
+1.35
+log
+@Drastically fix -T[x]html's handling of font-escape mode changes (i.e.,
+using \fI or \fP).  Now, using these modes will cause a font to be
+rendered for each word; furthermore, setting mode within a word will do
+the correct thing.
+
+Second, make -man use real font tags (B, I, SMALL) to set its font
+instead of using font modes and fix up the pre-macro unsetting of the
+current mode.
+
+This fixes how roff.7 wasn't validating (<P> closing out a font mode)
+and has been checked against gcc.1 (more will come).  I considered
+failure to validate OUR manual to be a show-stopper for the up-coming
+release.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.34 2010/12/22 11:15:16 kristaps Exp $ */
+a50 1
+	TAG_U,
+@
+
+
+1.34
+log
+@Implement reference-counted version of original union mdoc_data.  This
+simplifies clean-up and allows for more types without extra hassle.
+
+Also made in-line literal types in -T[x]html use CODE instead of SPAN to
+match how literal blocks use PRE.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.33 2010/12/20 13:07:55 kristaps Exp $ */
+d53 1
+d127 3
+a129 3
+	struct tag	 *metaf;
+	enum htmlfont	  metal;
+	enum htmlfont	  metac;
+a136 1
+struct tag	 *print_ofont(struct html *, enum htmlfont);
+@
+
+
+1.33
+log
+@More use default tags, this time I and U.  Also fix a stack overflow
+segfault in the last commit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.32 2010/12/20 10:40:11 kristaps Exp $ */
+d52 1
+@
+
+
+1.32
+log
+@Give header and footer table cells default widths (using WIDTH and ALIGN
+atttributes) if no style is specified.
+
+Give the default-bold elements a B tag instead of a SPAN tag, as this
+can be overriden in the stylesheet.
+
+Prune some unused attributes from html.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.31 2010/12/17 10:37:26 kristaps Exp $ */
+d50 2
+@
+
+
+1.31
+log
+@Make literal `Bd' use a PRE in -Thtml.  Make `Bd' output in general use
+only a single DIV or PRE.  Tag all displays with display class.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.30 2010/12/15 17:19:41 kristaps Exp $ */
+d49 1
+a63 2
+	ATTR_VALIGN,
+	ATTR_TARGET,
+d66 1
+@
+
+
+1.30
+log
+@Use a single P tag for paragraph breaks (which can be configured for
+paragraph breaking in CSS).
+
+Use -man's handling of `sp' and `br', which accomodates for scaling
+widths (-mdoc wasn't).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.29 2010/12/15 15:59:23 kristaps Exp $ */
+d48 1
+@
+
+
+1.29
+log
+@Remove stupid outer DIV tag in favour of regular BODY and HTML that can
+be handled in CSS.
+
+Clarified "lit" tag (will be the subject of future clarification).
+
+Removed CSS2 note in mandoc.1, which is no longer the case.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.28 2010/12/15 14:52:16 kristaps Exp $ */
+d47 1
+@
+
+
+1.28
+log
+@In-progress move from -T[x]html using DIVs for its lists to using DL,
+OL, and UL.  Issue raised by Will Backman, solution proposed by
+schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.27 2010/07/23 00:08:57 kristaps Exp $ */
+d46 1
+@
+
+
+1.27
+log
+@Add support for `Sm' in -T[x]html -mdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.26 2010/07/13 23:53:20 schwarze Exp $ */
+d36 1
+d43 3
+a78 6
+struct	ord {
+	struct ord	 *next;
+	const void	 *cookie;
+	int		  pos;
+};
+
+a81 3
+struct ordq {
+	struct ord	 *head;
+};
+a112 1
+	struct ordq	  ords;
+@
+
+
+1.26
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.25 2010/07/06 12:37:17 kristaps Exp $ */
+d116 1
+@
+
+
+1.25
+log
+@Give -T[x]html `Bk -words' capability.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.24 2010/06/19 20:46:27 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.24
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.23 2010/04/05 08:51:56 kristaps Exp $ */
+d113 3
+a115 1
+#define	HTML_IGNDELIM	 (1 << 2)
+@
+
+
+1.23
+log
+@Fix in `Mt' mailto from a patch by Tim van der Molen.
+Fixed PAIR_xxx_INIT macros -- this are to be unified.
+Have `Vt', `Fn', `Ft', and `Fo' print whitespace afterward, instead of before.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.22 2010/01/29 14:39:38 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.22
+log
+@Fixed Makefile for `make lint' dep. on config.h
+Added -Txhtml for XHTML output (minimal increase to programme logic).  Because groff has it and it bothers me that we don't.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.21 2009/11/16 06:07:49 kristaps Exp $ */
+d93 11
+a103 12
+#define	PAIR_CLASS_INIT(p, v) \
+	do { (p)->key = ATTR_CLASS; \
+	(p)->val = (v); } while (/* CONSTCOND */ 0)
+#define	PAIR_HREF_INIT(p, v) \
+	do { (p)->key = ATTR_HREF; \
+	(p)->val = (v); } while (/* CONSTCOND */ 0)
+#define	PAIR_STYLE_INIT(p, h) \
+	do { (p)->key = ATTR_STYLE; \
+	(p)->val = (h)->buf; } while (/* CONSTCOND */ 0)
+#define	PAIR_SUMMARY_INIT(p, v) \
+	do { (p)->key = ATTR_SUMMARY; \
+	(p)->val = (v); } while (/* CONSTCOND */ 0)
+@
+
+
+1.21
+log
+@Abstraction of -Thtml -man font setting (still experimental).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.20 2009/11/14 12:04:59 kristaps Exp $ */
+a30 1
+	TAG_P,
+a41 1
+	TAG_BASE,
+d106 5
+d127 1
+d132 1
+a132 1
+void		  print_gen_doctype(struct html *);
+@
+
+
+1.20
+log
+@Removed superfluous HTML_NEWLINE.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.19 2009/11/14 11:58:36 kristaps Exp $ */
+d65 7
+d122 2
+d130 1
+@
+
+
+1.19
+log
+@Fixed \c handling in -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.18 2009/11/10 16:20:22 kristaps Exp $ */
+a103 1
+#define	HTML_NEWLINE	 (1 << 1)
+@
+
+
+1.18
+log
+@(Forgot to update html.h with metafonts.  Build will puke on check-out.)
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.17 2009/10/28 08:00:18 kristaps Exp $ */
+d115 1
+a115 4
+	int		  metafont;
+#define	METAF_BOLD	 (1 << 0)
+#define	METAF_UNDER	 (1 << 1)
+	int		  metamask;
+@
+
+
+1.17
+log
+@Fixed `sp', `br', `Pp', etc. so as not to have an empty div (-Thtml, -man, -mdoc).
+Made html_idcat be completely correct (messy standard) (-Thtml).
+Fixed warnings about -ohang and -item lists (-Thtml, -mdoc).
+Fixed typo in index.sgml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.16 2009/10/28 05:08:17 kristaps Exp $ */
+d115 4
+@
+
+
+1.16
+log
+@Fixed un-reset buffer in `.In', -Thtml, -mdoc.
+Added html_id[cat,cpy] for transforming id's into well-formed attribute strings (no %s, etc.).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.15 2009/10/27 04:50:14 kristaps Exp $ */
+a139 1
+void		  html_idcpy(char *, const char *, int);
+@
+
+
+1.15
+log
+@Added "summary" tag to tables in order to silence HTML-tidy's complaints.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.14 2009/10/26 08:18:16 kristaps Exp $ */
+d139 3
+@
+
+
+1.14
+log
+@Portability: replaced queue macros in html.c (Joerg Sonnenberger).
+Fixed "-o" residue.
+Added "-O" to usage() (-o didn't appear there either).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.13 2009/10/13 10:21:24 kristaps Exp $ */
+d61 1
+d97 3
+@
+
+
+1.13
+log
+@Clean up consts (noted by Joerg Sonnenberger and Ulrich Sporlein).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.12 2009/10/07 12:35:23 kristaps Exp $ */
+d65 1
+a66 1
+	SLIST_ENTRY(tag)  entry;
+d70 2
+a72 2
+	const void	 *cookie;
+	SLIST_ENTRY(ord)  entry;
+d75 6
+a80 2
+SLIST_HEAD(tagq, tag);
+SLIST_HEAD(ordq, ord);
+@
+
+
+1.12
+log
+@Additions to -Tman -Thtml: all structural components tested & in place.
+Fitted both -Thtml with handling of arbitrary vertical and horizontal scaling units (see groff(7)).  Undocumented until fitted into -Tascii (next release).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.11 2009/10/04 09:02:40 kristaps Exp $ */
+d80 1
+a80 1
+	char		 *val;
+@
+
+
+1.11
+log
+@Example style-sheet reflecting modified section/subsection style tags.
+Added ATTR_ID and so forth to attrs.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.10 2009/10/03 16:36:06 kristaps Exp $ */
+d83 10
+d109 2
+d119 4
+a122 1
+void		  buffmt_man(struct html *, const char *, const char *);
+d126 2
+@
+
+
+1.10
+log
+@Fixed mandoc.1 examples (new -Thtml options).
+Fixed manuals to use `In', not `Fd'.
+Moved buf* functions into html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.9 2009/10/03 15:26:26 kristaps Exp $ */
+d60 1
+@
+
+
+1.9
+log
+@Added the -oincludes=FMT option.
+The `In' handler now decorates with a hyperlink.
+If no -oman= or -oincludes= is stipulated, no link is printed (but the text is still style-decorated).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.8 2009/10/03 15:08:09 kristaps Exp $ */
+d106 7
+@
+
+
+1.8
+log
+@Element tag buffer is now part of struct html.
+buffmt() can be called in sequence.
+Noted BUFSIZ-sized buffer in CAVEATS (attribute length for link formats).
+Added -oman=FMT -Thtml option for `Xr' manual links.
+Removed -obase=URI -Thtml option (obsolete).
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.7 2009/09/24 09:50:31 kristaps Exp $ */
+d59 1
+d92 1
+@
+
+
+1.7
+log
+@Added Bf, Pf, etc. to -Thtml.
+Fixed Rs in -Tascii to behave properly when not in "SEE ALSO" section.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.h,v 1.6 2009/09/21 14:56:56 kristaps Exp $ */
+d90 1
+d92 2
+@
+
+
+1.6
+log
+@Split html.c into html.h, mdoc_html.c, man_html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: html.c,v 1.50 2009/09/21 14:40:31 kristaps Exp $ */
+d85 1
+@
+
+
+1.5
+log
+@Purged all old files in favour of new design.  Selective reintegration.
+@
+text
+@d1 102
+@
+
+
+1.4
+log
+@Prettier HTML.
+@
+text
+@a0 86
+/* $Id: html.h,v 1.3 2008/12/10 12:09:47 kristaps Exp $ */
+/*
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifndef HTML_H
+#define HTML_H
+
+#include "ml.h"
+
+enum	html_tag {
+	HTML_TAG_SPAN	= 0,
+	HTML_TAG_HTML	= 1,
+	HTML_TAG_HEAD	= 2,
+	HTML_TAG_META	= 3,
+	HTML_TAG_TITLE	= 4,
+	HTML_TAG_STYLE	= 5,
+	HTML_TAG_LINK	= 6,
+	HTML_TAG_BODY	= 7,
+	HTML_TAG_DIV	= 8,
+	HTML_TAG_TABLE	= 9,
+	HTML_TAG_TD	= 10,
+	HTML_TAG_TR	= 11,
+	HTML_TAG_OL	= 12,
+	HTML_TAG_UL	= 13,
+	HTML_TAG_LI	= 14,
+	HTML_TAG_H1	= 15,
+	HTML_TAG_H2	= 16,
+	HTML_TAG_A	= 17
+};
+
+enum	html_attr {
+	HTML_ATTR_CLASS = 0,
+	HTML_ATTR_HTTP_EQUIV = 1,
+	HTML_ATTR_CONTENT = 2,
+	HTML_ATTR_NAME	= 3,
+	HTML_ATTR_TYPE	= 4,
+	HTML_ATTR_REL	= 5,
+	HTML_ATTR_HREF	= 6,
+	HTML_ATTR_WIDTH	= 7,
+	HTML_ATTR_ALIGN	= 8,
+	HTML_ATTR_VALIGN = 9,
+	HTML_ATTR_NOWRAP = 10
+};
+
+enum	html_type {
+	HTML_TYPE_4_01_STRICT = 0
+};
+
+struct	html_pair {
+	enum html_attr	 attr;
+	char		*val;
+};
+
+__BEGIN_DECLS
+
+int		 html_typeput(struct md_mbuf *, 
+			enum html_type, size_t *);
+int		 html_commentput(struct md_mbuf *, 
+			enum ml_scope, size_t *);
+int		 html_tput(struct md_mbuf *, 
+			enum ml_scope, enum html_tag, size_t *);
+int		 html_aput(struct md_mbuf *, enum ml_scope, 
+			enum html_tag, size_t *, 
+			int, const struct html_pair *);
+int		 html_stput(struct md_mbuf *,
+			enum html_tag, size_t *);
+int		 html_saput(struct md_mbuf *, enum html_tag, 
+			size_t *, int, const struct html_pair *);
+
+__END_DECLS
+
+#endif /*!HTML_H*/
+@
+
+
+1.3
+log
+@Linted on NetBSD side.
+@
+text
+@d1 1
+a1 1
+/* $Id: html.h,v 1.2 2008/12/10 00:58:15 kristaps Exp $ */
+d54 3
+a56 1
+	HTML_ATTR_ALIGN	= 8
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: html.h,v 1.1 2008/12/10 00:52:46 kristaps Exp $ */
+d42 1
+a42 1
+	HTML_TAG_A	= 17,
+d54 1
+a54 1
+	HTML_ATTR_ALIGN	= 8,
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: ml.h,v 1.11 2008/12/09 17:09:12 kristaps Exp $ */
+d54 1
+@

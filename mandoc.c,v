@@ -1,0 +1,4932 @@
+head	1.98;
+access;
+symbols
+	VERSION_1_13_3:1.92
+	VERSION_1_13_2:1.88
+	VERSION_1_12_4:1.84.2.1
+	VERSION_1_13_1:1.83
+	VERSION_1_12_3:1.74
+	VERSION_1_12_2:1.68
+	VERSION_1_12:1.84.0.2
+	VERSION_1_12_1:1.62
+	VERSION_1_12_0:1.59
+	VERSION_1_11_7:1.58
+	VERSION_1_11_6:1.58
+	VERSION_1_11_5:1.56
+	VERSION_1_11_4:1.53
+	VERSION_1_11_3:1.53
+	VERSION_1_11_2:1.49
+	VERSION_1_11_1:1.44
+	VERSION_1_10_10:1.41
+	VERSION_1_10_9:1.36
+	VERSION_1_10_8:1.35
+	VERSION_1_10_7:1.35
+	VERSION_1_10_6:1.35
+	VERSION_1_10_5:1.27
+	VERSION_1_10_5_PREPDF:1.26
+	VERSION_1_10_4:1.21
+	VERSION_1_10_3:1.19
+	VERSION_1_10_2:1.19
+	VERSION_1_10_1:1.17
+	VERSION_1_9_24:1.11
+	VERSION_1_9_25:1.12
+	VERSION_1_9_23:1.11
+	VERSION_1_9_22:1.10
+	VERSION_1_9_21:1.10
+	VERSION_1_9_20:1.10
+	VERSION_1_9_19:1.10
+	VERSION_1_9_18:1.10
+	VERSION_1_9_17:1.10
+	VERSION_1_9_16:1.10
+	VERSION_1_9_15:1.10
+	VERSION_1_9_15-pre2:1.9
+	VERSION_1_9_15-pre1:1.8
+	VERSION_1_9_14:1.8
+	VERSION_1_9_13:1.7
+	VERSION_1_9_12:1.6
+	VERSION_1_9_11:1.3
+	VERSION_1_9_10:1.3
+	VERSION_1_9_9:1.3
+	VERSION_1_9_8:1.3
+	VERSION_1_9_7:1.3
+	VERSION_1_9_6:1.3
+	VERSION_1_9_5:1.3
+	VERSION_1_9_2:1.3
+	VERSION_1_9_1:1.3
+	VERSION_1_9_0:1.3
+	VERSION_1_8_5:1.3
+	VERSION_1_8_4:1.3
+	VERSION_1_8_3:1.2
+	VERSION_1_8_2:1.2
+	VERSION_1_8_1:1.2
+	VERSION_1_8_0:1.2
+	VERSION_1_7_24:1.1
+	VERSION_1_7_23:1.1
+	VERSION_1_7_22:1.1
+	VERSION_1_7_21:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.98
+date	2015.11.12.22.44.27;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2015.10.15.23.35.55;	author schwarze;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2015.10.13.23.30.50;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2015.10.12.00.08.15;	author schwarze;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2015.08.29.22.40.05;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2015.02.20.23.55.10;	author schwarze;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2015.01.21.20.33.25;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2015.01.01.18.11.45;	author schwarze;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2014.12.15.17.30.30;	author schwarze;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2014.10.28.13.24.44;	author schwarze;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2014.10.13.17.17.45;	author schwarze;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2014.08.18.09.11.47;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches
+	1.84.2.1;
+next	1.83;
+
+1.83
+date	2014.07.06.19.09.00;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2014.07.06.18.37.34;	author schwarze;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2014.07.01.22.37.15;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2014.06.20.17.24.00;	author schwarze;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2014.04.08.01.37.27;	author schwarze;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2014.04.07.17.51.10;	author schwarze;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2013.12.31.23.23.10;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2013.12.30.18.30.32;	author schwarze;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2013.12.26.02.55.28;	author schwarze;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2013.12.25.22.45.33;	author schwarze;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2013.12.25.00.50.05;	author schwarze;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2013.11.10.21.34.04;	author schwarze;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2013.10.05.20.30.05;	author schwarze;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2013.08.08.20.07.47;	author schwarze;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2013.06.20.22.39.30;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2012.06.12.20.21.04;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2012.05.31.22.38.16;	author schwarze;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2012.05.31.22.34.06;	author schwarze;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2012.05.31.22.29.13;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2011.12.03.16.08.51;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2011.11.06.14.43.14;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2011.10.24.20.30.57;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2011.09.18.14.14.15;	author schwarze;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2011.07.27.07.32.26;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2011.07.27.07.06.29;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2011.07.24.18.15.14;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2011.07.21.23.30.39;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2011.07.21.15.21.13;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2011.05.24.21.31.23;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2011.05.15.15.30.33;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2011.05.14.17.54.42;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2011.05.14.16.06.09;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2011.04.30.10.18.24;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2011.04.19.16.38.48;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2011.04.17.09.08.19;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2011.04.09.15.35.30;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2011.04.09.15.29.40;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2011.03.28.23.52.13;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2011.03.22.14.05.45;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2011.03.20.16.02.05;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2011.03.17.09.18.12;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2011.03.17.09.16.38;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2011.03.15.16.23.51;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2011.03.15.03.03.54;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2011.03.07.01.35.51;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2011.01.03.22.42.37;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.09.04.20.18.53;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.08.29.11.28.09;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.08.24.13.56.51;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.08.24.13.39.37;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.08.24.13.07.01;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.08.24.12.18.48;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.08.20.01.02.07;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.08.16.09.37.58;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.07.25.19.05.59;	author joerg;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.07.22.14.03.50;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.07.21.20.35.03;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.07.18.22.55.06;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.07.18.17.00.26;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.07.18.12.10.08;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.07.06.22.04.31;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.07.05.20.00.55;	author kristaps;	state dead;
+branches;
+next	1.19;
+
+1.19
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.06.09.19.22.56;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.06.01.11.47.28;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.05.25.12.37.20;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.05.15.07.01.51;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.05.15.06.48.13;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.05.14.14.09.13;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.05.12.17.08.03;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2010.04.07.11.25.38;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.01.05.19.51.10;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.01.01.17.14.28;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.11.05.10.16.01;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.11.02.06.22.45;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.10.31.06.10.58;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.10.30.05.58.38;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.10.28.19.21.59;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.07.24.20.22.24;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.07.12.09.48.00;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.07.04.09.01.55;	author kristaps;	state Exp;
+branches;
+next	;
+
+1.84.2.1
+date	2014.08.18.13.16.00;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.98
+log
+@Simplify the logic in mandoc_normdate() and add some comments.
+Also add a comment in time2a() explaining why it isn't possible
+to use just one single call to strftime().
+Do some style cleanup while here.
+No functional change.
+Triggered by a very different patch from des@@FreeBSD.
+@
+text
+@/*	$Id: mandoc.c,v 1.97 2015/10/15 23:35:55 schwarze Exp $ */
+/*
+ * Copyright (c) 2008-2011, 2014 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2011-2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <errno.h>
+#include <limits.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+#include "mandoc.h"
+#include "mandoc_aux.h"
+#include "libmandoc.h"
+
+static	int	 a2time(time_t *, const char *, const char *);
+static	char	*time2a(time_t);
+
+
+enum mandoc_esc
+mandoc_escape(const char **end, const char **start, int *sz)
+{
+	const char	*local_start;
+	int		 local_sz;
+	char		 term;
+	enum mandoc_esc	 gly;
+
+	/*
+	 * When the caller doesn't provide return storage,
+	 * use local storage.
+	 */
+
+	if (NULL == start)
+		start = &local_start;
+	if (NULL == sz)
+		sz = &local_sz;
+
+	/*
+	 * Beyond the backslash, at least one input character
+	 * is part of the escape sequence.  With one exception
+	 * (see below), that character won't be returned.
+	 */
+
+	gly = ESCAPE_ERROR;
+	*start = ++*end;
+	*sz = 0;
+	term = '\0';
+
+	switch ((*start)[-1]) {
+	/*
+	 * First the glyphs.  There are several different forms of
+	 * these, but each eventually returns a substring of the glyph
+	 * name.
+	 */
+	case '(':
+		gly = ESCAPE_SPECIAL;
+		*sz = 2;
+		break;
+	case '[':
+		gly = ESCAPE_SPECIAL;
+		term = ']';
+		break;
+	case 'C':
+		if ('\'' != **start)
+			return ESCAPE_ERROR;
+		*start = ++*end;
+		gly = ESCAPE_SPECIAL;
+		term = '\'';
+		break;
+
+	/*
+	 * Escapes taking no arguments at all.
+	 */
+	case 'd':
+	case 'u':
+	case ',':
+	case '/':
+		return ESCAPE_IGNORE;
+
+	/*
+	 * The \z escape is supposed to output the following
+	 * character without advancing the cursor position.
+	 * Since we are mostly dealing with terminal mode,
+	 * let us just skip the next character.
+	 */
+	case 'z':
+		return ESCAPE_SKIPCHAR;
+
+	/*
+	 * Handle all triggers matching \X(xy, \Xx, and \X[xxxx], where
+	 * 'X' is the trigger.  These have opaque sub-strings.
+	 */
+	case 'F':
+	case 'g':
+	case 'k':
+	case 'M':
+	case 'm':
+	case 'n':
+	case 'V':
+	case 'Y':
+		gly = ESCAPE_IGNORE;
+		/* FALLTHROUGH */
+	case 'f':
+		if (ESCAPE_ERROR == gly)
+			gly = ESCAPE_FONT;
+		switch (**start) {
+		case '(':
+			*start = ++*end;
+			*sz = 2;
+			break;
+		case '[':
+			*start = ++*end;
+			term = ']';
+			break;
+		default:
+			*sz = 1;
+			break;
+		}
+		break;
+
+	/*
+	 * These escapes are of the form \X'Y', where 'X' is the trigger
+	 * and 'Y' is any string.  These have opaque sub-strings.
+	 * The \B and \w escapes are handled in roff.c, roff_res().
+	 */
+	case 'A':
+	case 'b':
+	case 'D':
+	case 'R':
+	case 'X':
+	case 'Z':
+		gly = ESCAPE_IGNORE;
+		/* FALLTHROUGH */
+	case 'o':
+		if (**start == '\0')
+			return ESCAPE_ERROR;
+		if (gly == ESCAPE_ERROR)
+			gly = ESCAPE_OVERSTRIKE;
+		term = **start;
+		*start = ++*end;
+		break;
+
+	/*
+	 * These escapes are of the form \X'N', where 'X' is the trigger
+	 * and 'N' resolves to a numerical expression.
+	 */
+	case 'h':
+	case 'H':
+	case 'L':
+	case 'l':
+	case 'S':
+	case 'v':
+	case 'x':
+		if (strchr(" %&()*+-./0123456789:<=>", **start)) {
+			if ('\0' != **start)
+				++*end;
+			return ESCAPE_ERROR;
+		}
+		gly = ESCAPE_IGNORE;
+		term = **start;
+		*start = ++*end;
+		break;
+
+	/*
+	 * Special handling for the numbered character escape.
+	 * XXX Do any other escapes need similar handling?
+	 */
+	case 'N':
+		if ('\0' == **start)
+			return ESCAPE_ERROR;
+		(*end)++;
+		if (isdigit((unsigned char)**start)) {
+			*sz = 1;
+			return ESCAPE_IGNORE;
+		}
+		(*start)++;
+		while (isdigit((unsigned char)**end))
+			(*end)++;
+		*sz = *end - *start;
+		if ('\0' != **end)
+			(*end)++;
+		return ESCAPE_NUMBERED;
+
+	/*
+	 * Sizes get a special category of their own.
+	 */
+	case 's':
+		gly = ESCAPE_IGNORE;
+
+		/* See +/- counts as a sign. */
+		if ('+' == **end || '-' == **end || ASCII_HYPH == **end)
+			*start = ++*end;
+
+		switch (**end) {
+		case '(':
+			*start = ++*end;
+			*sz = 2;
+			break;
+		case '[':
+			*start = ++*end;
+			term = ']';
+			break;
+		case '\'':
+			*start = ++*end;
+			term = '\'';
+			break;
+		case '3':
+		case '2':
+		case '1':
+			*sz = (*end)[-1] == 's' &&
+			    isdigit((unsigned char)(*end)[1]) ? 2 : 1;
+			break;
+		default:
+			*sz = 1;
+			break;
+		}
+
+		break;
+
+	/*
+	 * Anything else is assumed to be a glyph.
+	 * In this case, pass back the character after the backslash.
+	 */
+	default:
+		gly = ESCAPE_SPECIAL;
+		*start = --*end;
+		*sz = 1;
+		break;
+	}
+
+	assert(ESCAPE_ERROR != gly);
+
+	/*
+	 * Read up to the terminating character,
+	 * paying attention to nested escapes.
+	 */
+
+	if ('\0' != term) {
+		while (**end != term) {
+			switch (**end) {
+			case '\0':
+				return ESCAPE_ERROR;
+			case '\\':
+				(*end)++;
+				if (ESCAPE_ERROR ==
+				    mandoc_escape(end, NULL, NULL))
+					return ESCAPE_ERROR;
+				break;
+			default:
+				(*end)++;
+				break;
+			}
+		}
+		*sz = (*end)++ - *start;
+	} else {
+		assert(*sz > 0);
+		if ((size_t)*sz > strlen(*start))
+			return ESCAPE_ERROR;
+		*end += *sz;
+	}
+
+	/* Run post-processors. */
+
+	switch (gly) {
+	case ESCAPE_FONT:
+		if (2 == *sz) {
+			if ('C' == **start) {
+				/*
+				 * Treat constant-width font modes
+				 * just like regular font modes.
+				 */
+				(*start)++;
+				(*sz)--;
+			} else {
+				if ('B' == (*start)[0] && 'I' == (*start)[1])
+					gly = ESCAPE_FONTBI;
+				break;
+			}
+		} else if (1 != *sz)
+			break;
+
+		switch (**start) {
+		case '3':
+		case 'B':
+			gly = ESCAPE_FONTBOLD;
+			break;
+		case '2':
+		case 'I':
+			gly = ESCAPE_FONTITALIC;
+			break;
+		case 'P':
+			gly = ESCAPE_FONTPREV;
+			break;
+		case '1':
+		case 'R':
+			gly = ESCAPE_FONTROMAN;
+			break;
+		}
+		break;
+	case ESCAPE_SPECIAL:
+		if (1 == *sz && 'c' == **start)
+			gly = ESCAPE_NOSPACE;
+		/*
+		 * Unicode escapes are defined in groff as \[u0000]
+		 * to \[u10FFFF], where the contained value must be
+		 * a valid Unicode codepoint.  Here, however, only
+		 * check the length and range.
+		 */
+		if (**start != 'u' || *sz < 5 || *sz > 7)
+			break;
+		if (*sz == 7 && ((*start)[1] != '1' || (*start)[2] != '0'))
+			break;
+		if (*sz == 6 && (*start)[1] == '0')
+			break;
+		if (*sz == 5 && (*start)[1] == 'D' &&
+		    strchr("89ABCDEF", (*start)[2]) != NULL)
+			break;
+		if ((int)strspn(*start + 1, "0123456789ABCDEFabcdef")
+		    + 1 == *sz)
+			gly = ESCAPE_UNICODE;
+		break;
+	default:
+		break;
+	}
+
+	return gly;
+}
+
+/*
+ * Parse a quoted or unquoted roff-style request or macro argument.
+ * Return a pointer to the parsed argument, which is either the original
+ * pointer or advanced by one byte in case the argument is quoted.
+ * NUL-terminate the argument in place.
+ * Collapse pairs of quotes inside quoted arguments.
+ * Advance the argument pointer to the next argument,
+ * or to the NUL byte terminating the argument line.
+ */
+char *
+mandoc_getarg(struct mparse *parse, char **cpp, int ln, int *pos)
+{
+	char	 *start, *cp;
+	int	  quoted, pairs, white;
+
+	/* Quoting can only start with a new word. */
+	start = *cpp;
+	quoted = 0;
+	if ('"' == *start) {
+		quoted = 1;
+		start++;
+	}
+
+	pairs = 0;
+	white = 0;
+	for (cp = start; '\0' != *cp; cp++) {
+
+		/*
+		 * Move the following text left
+		 * after quoted quotes and after "\\" and "\t".
+		 */
+		if (pairs)
+			cp[-pairs] = cp[0];
+
+		if ('\\' == cp[0]) {
+			/*
+			 * In copy mode, translate double to single
+			 * backslashes and backslash-t to literal tabs.
+			 */
+			switch (cp[1]) {
+			case 't':
+				cp[0] = '\t';
+				/* FALLTHROUGH */
+			case '\\':
+				pairs++;
+				cp++;
+				break;
+			case ' ':
+				/* Skip escaped blanks. */
+				if (0 == quoted)
+					cp++;
+				break;
+			default:
+				break;
+			}
+		} else if (0 == quoted) {
+			if (' ' == cp[0]) {
+				/* Unescaped blanks end unquoted args. */
+				white = 1;
+				break;
+			}
+		} else if ('"' == cp[0]) {
+			if ('"' == cp[1]) {
+				/* Quoted quotes collapse. */
+				pairs++;
+				cp++;
+			} else {
+				/* Unquoted quotes end quoted args. */
+				quoted = 2;
+				break;
+			}
+		}
+	}
+
+	/* Quoted argument without a closing quote. */
+	if (1 == quoted)
+		mandoc_msg(MANDOCERR_ARG_QUOTE, parse, ln, *pos, NULL);
+
+	/* NUL-terminate this argument and move to the next one. */
+	if (pairs)
+		cp[-pairs] = '\0';
+	if ('\0' != *cp) {
+		*cp++ = '\0';
+		while (' ' == *cp)
+			cp++;
+	}
+	*pos += (int)(cp - start) + (quoted ? 1 : 0);
+	*cpp = cp;
+
+	if ('\0' == *cp && (white || ' ' == cp[-1]))
+		mandoc_msg(MANDOCERR_SPACE_EOL, parse, ln, *pos, NULL);
+
+	return start;
+}
+
+static int
+a2time(time_t *t, const char *fmt, const char *p)
+{
+	struct tm	 tm;
+	char		*pp;
+
+	memset(&tm, 0, sizeof(struct tm));
+
+	pp = NULL;
+#if HAVE_STRPTIME
+	pp = strptime(p, fmt, &tm);
+#endif
+	if (NULL != pp && '\0' == *pp) {
+		*t = mktime(&tm);
+		return 1;
+	}
+
+	return 0;
+}
+
+static char *
+time2a(time_t t)
+{
+	struct tm	*tm;
+	char		*buf, *p;
+	size_t		 ssz;
+	int		 isz;
+
+	tm = localtime(&t);
+	if (tm == NULL)
+		return NULL;
+
+	/*
+	 * Reserve space:
+	 * up to 9 characters for the month (September) + blank
+	 * up to 2 characters for the day + comma + blank
+	 * 4 characters for the year and a terminating '\0'
+	 */
+
+	p = buf = mandoc_malloc(10 + 4 + 4 + 1);
+
+	if ((ssz = strftime(p, 10 + 1, "%B ", tm)) == 0)
+		goto fail;
+	p += (int)ssz;
+
+	/*
+	 * The output format is just "%d" here, not "%2d" or "%02d".
+	 * That's also the reason why we can't just format the
+	 * date as a whole with "%B %e, %Y" or "%B %d, %Y".
+	 * Besides, the present approach is less prone to buffer
+	 * overflows, in case anybody should ever introduce the bug
+	 * of looking at LC_TIME.
+	 */
+
+	if ((isz = snprintf(p, 4 + 1, "%d, ", tm->tm_mday)) == -1)
+		goto fail;
+	p += isz;
+
+	if (strftime(p, 4 + 1, "%Y", tm) == 0)
+		goto fail;
+	return buf;
+
+fail:
+	free(buf);
+	return NULL;
+}
+
+char *
+mandoc_normdate(struct mparse *parse, char *in, int ln, int pos)
+{
+	time_t		 t;
+
+	/* No date specified: use today's date. */
+
+	if (in == NULL || *in == '\0' || strcmp(in, "$" "Mdocdate$") == 0) {
+		mandoc_msg(MANDOCERR_DATE_MISSING, parse, ln, pos, NULL);
+		return time2a(time(NULL));
+	}
+
+	/* Valid mdoc(7) date format. */
+
+	if (a2time(&t, "$" "Mdocdate: %b %d %Y $", in) ||
+	    a2time(&t, "%b %d, %Y", in))
+		return time2a(t);
+
+	/* Do not warn about the legacy man(7) format. */
+
+	if ( ! a2time(&t, "%Y-%m-%d", in))
+		mandoc_msg(MANDOCERR_DATE_BAD, parse, ln, pos, in);
+
+	/* Use any non-mdoc(7) date verbatim. */
+
+	return mandoc_strdup(in);
+}
+
+int
+mandoc_eos(const char *p, size_t sz)
+{
+	const char	*q;
+	int		 enclosed, found;
+
+	if (0 == sz)
+		return 0;
+
+	/*
+	 * End-of-sentence recognition must include situations where
+	 * some symbols, such as `)', allow prior EOS punctuation to
+	 * propagate outward.
+	 */
+
+	enclosed = found = 0;
+	for (q = p + (int)sz - 1; q >= p; q--) {
+		switch (*q) {
+		case '\"':
+		case '\'':
+		case ']':
+		case ')':
+			if (0 == found)
+				enclosed = 1;
+			break;
+		case '.':
+		case '!':
+		case '?':
+			found = 1;
+			break;
+		default:
+			return found &&
+			    (!enclosed || isalnum((unsigned char)*q));
+		}
+	}
+
+	return found && !enclosed;
+}
+
+/*
+ * Convert a string to a long that may not be <0.
+ * If the string is invalid, or is less than 0, return -1.
+ */
+int
+mandoc_strntoi(const char *p, size_t sz, int base)
+{
+	char		 buf[32];
+	char		*ep;
+	long		 v;
+
+	if (sz > 31)
+		return -1;
+
+	memcpy(buf, p, sz);
+	buf[(int)sz] = '\0';
+
+	errno = 0;
+	v = strtol(buf, &ep, base);
+
+	if (buf[0] == '\0' || *ep != '\0')
+		return -1;
+
+	if (v > INT_MAX)
+		v = INT_MAX;
+	if (v < INT_MIN)
+		v = INT_MIN;
+
+	return (int)v;
+}
+@
+
+
+1.97
+log
+@Delete two preprocessor constants that are no longer used.
+Patch from Michael Reed <m dot reed at mykolab dot com>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.96 2015/10/13 23:30:50 schwarze Exp $ */
+d481 1
+d484 1
+a484 1
+	if (0 == (ssz = strftime(p, 10 + 1, "%B ", tm)))
+d488 10
+a497 1
+	if (-1 == (isz = snprintf(p, 4 + 1, "%d, ", tm->tm_mday)))
+d501 1
+a501 1
+	if (0 == strftime(p, 4 + 1, "%Y", tm))
+a512 1
+	char		*out;
+d515 3
+a517 2
+	if (NULL == in || '\0' == *in ||
+	    0 == strcmp(in, "$" "Mdocdate$")) {
+d519 1
+a519 1
+		time(&t);
+d521 10
+a530 4
+	else if (a2time(&t, "%Y-%m-%d", in))
+		t = 0;
+	else if (!a2time(&t, "$" "Mdocdate: %b %d %Y $", in) &&
+	    !a2time(&t, "%b %d, %Y", in)) {
+d532 4
+a535 4
+		t = 0;
+	}
+	out = t ? time2a(t) : NULL;
+	return out ? out : mandoc_strdup(in);
+@
+
+
+1.96
+log
+@Reject the escape sequences \[uD800] to \[uDFFF] in the parser.
+These surrogates are not valid Unicode codepoints,
+so treat them just like any other undefined character escapes:
+Warn about them and do not produce output.
+Issue noticed while talking to stsp@@, semarie@@, and bentley@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.95 2015/10/12 00:08:15 schwarze Exp $ */
+a34 2
+#define DATESIZE 32
+
+@
+
+
+1.95
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.94 2015/10/06 18:32:19 schwarze Exp $ */
+d336 3
+@
+
+
+1.94
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.93 2015/08/29 22:40:05 schwarze Exp $ */
+a95 1
+		/* FALLTHROUGH */
+a96 1
+		/* FALLTHROUGH */
+a97 1
+		/* FALLTHROUGH */
+a114 1
+		/* FALLTHROUGH */
+a115 1
+		/* FALLTHROUGH */
+a116 1
+		/* FALLTHROUGH */
+a117 1
+		/* FALLTHROUGH */
+a118 1
+		/* FALLTHROUGH */
+a119 1
+		/* FALLTHROUGH */
+a120 1
+		/* FALLTHROUGH */
+a147 1
+		/* FALLTHROUGH */
+a148 1
+		/* FALLTHROUGH */
+a149 1
+		/* FALLTHROUGH */
+a150 1
+		/* FALLTHROUGH */
+a151 1
+		/* FALLTHROUGH */
+a168 1
+		/* FALLTHROUGH */
+a169 1
+		/* FALLTHROUGH */
+a170 1
+		/* FALLTHROUGH */
+a171 1
+		/* FALLTHROUGH */
+a172 1
+		/* FALLTHROUGH */
+a173 1
+		/* FALLTHROUGH */
+a228 1
+			/* FALLTHROUGH */
+a229 1
+			/* FALLTHROUGH */
+a304 1
+			/* FALLTHROUGH */
+a308 1
+			/* FALLTHROUGH */
+a315 1
+			/* FALLTHROUGH */
+a539 1
+			/* FALLTHROUGH */
+a540 1
+			/* FALLTHROUGH */
+a541 1
+			/* FALLTHROUGH */
+a546 1
+			/* FALLTHROUGH */
+a547 1
+			/* FALLTHROUGH */
+@
+
+
+1.93
+log
+@Parse and ignore the escape sequences \, and \/ (italic corrections).
+Actually using these is very stupid because they are groff extensions
+and other roff(7) implementations typically print unintended characters
+at the places where they are used.
+Nevertheless, some manuals contain them, for example ocserv(8).
+Problem reported by Kurt Jaeger <pi at FreeBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.92 2015/02/20 23:55:10 schwarze Exp $ */
+d86 1
+a86 1
+			return(ESCAPE_ERROR);
+d102 1
+a102 1
+		return(ESCAPE_IGNORE);
+d111 1
+a111 1
+		return(ESCAPE_SKIPCHAR);
+d172 1
+a172 1
+			return(ESCAPE_ERROR);
+d199 1
+a199 1
+			return(ESCAPE_ERROR);
+d212 1
+a212 1
+			return(ESCAPE_ERROR);
+d216 1
+a216 1
+			return(ESCAPE_IGNORE);
+d224 1
+a224 1
+		return(ESCAPE_NUMBERED);
+d286 1
+a286 1
+				return(ESCAPE_ERROR);
+d291 1
+a291 1
+					return(ESCAPE_ERROR);
+d302 1
+a302 1
+			return(ESCAPE_ERROR);
+d370 1
+a370 1
+	return(gly);
+d465 1
+a465 1
+	return(start);
+d482 1
+a482 1
+		return(1);
+d485 1
+a485 1
+	return(0);
+d498 1
+a498 1
+		return(NULL);
+d518 1
+a518 1
+	return(buf);
+d522 1
+a522 1
+	return(NULL);
+d544 1
+a544 1
+	return(out ? out : mandoc_strdup(in));
+d554 1
+a554 1
+		return(0);
+d583 2
+a584 1
+			return(found && (!enclosed || isalnum((unsigned char)*q)));
+d588 1
+a588 1
+	return(found && !enclosed);
+d603 1
+a603 1
+		return(-1);
+d612 1
+a612 1
+		return(-1);
+d619 1
+a619 1
+	return((int)v);
+@
+
+
+1.92
+log
+@For selecting a two-digit font size, support the historic syntax \s12
+in addition to the classic syntax \s(12, the modern syntax \s[12],
+and the alternative syntax \s'12'.  The historic syntax only works
+for the font sizes 10-39.
+Real-world usage found by naddy@@ in plan9/rc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.91 2015/01/21 20:33:25 schwarze Exp $ */
+d98 4
+@
+
+
+1.91
+log
+@Rudimentary implementation of the roff(7) \o escape sequence (overstrike).
+This is of some relevance because the pod2man(1) preamble abuses it
+for the icelandic letter Thorn, instead of simply using \(TP and \(Tp.
+Missing feature found by sthen@@ in DateTime::Locale::is_IS(3p).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.90 2015/01/01 18:11:45 schwarze Exp $ */
+d245 8
+@
+
+
+1.90
+log
+@Fix a read buffer overrun triggered by trailing \s- or trailing \s+
+without the required subsequent argument; found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.89 2014/12/15 17:30:30 schwarze Exp $ */
+a158 2
+	case 'o':
+		/* FALLTHROUGH */
+d164 4
+a167 1
+		if ('\0' == **start)
+d169 2
+a170 1
+		gly = ESCAPE_IGNORE;
+@
+
+
+1.89
+log
+@Catch localtime() failure for additional safety;
+patch from Jan Stary <hans at stare dot cz> some time ago.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.88 2014/10/28 13:24:44 schwarze Exp $ */
+d3 2
+a4 2
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2011, 2012, 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d228 1
+a228 1
+			(*end)++;
+@
+
+
+1.88
+log
+@Tighten Unicode escape name parsing.
+Accept only 0xXXXX, 0xYXXXX, 0x10XXXX with Y != 0.
+This simplifies mchars_num2uc().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.87 2014/10/13 17:17:45 schwarze Exp $ */
+d483 2
+@
+
+
+1.87
+log
+@Stricter syntax checking of Unicode character names:
+Require exactly 4, 5 or 6 hex digits and allow nothing else.
+This avoids mishandling stuff like \[ua] and \C'uA' as Unicode
+and also fixes underlining in eqn(7) -Thtml output which uses \[ul].
+Problem found and semantics suggested by kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.86 2014/08/18 09:11:47 kristaps Exp $ */
+d337 1
+a337 1
+		 * Unicode escapes are defined in groff as \[uXXXX]
+d340 1
+a340 1
+		 * check the length and the validity of all digits.
+d342 7
+a348 2
+		else if (*sz > 4 && *sz < 8 && **start == 'u' &&
+		    (int)strspn(*start + 1, "0123456789ABCDEFabcdef")
+@
+
+
+1.86
+log
+@Fix a corner case where \H<nil> (where <nil> is the \0 character) would
+cause mandoc_escape() to read past the end of an allocated string.
+Found when a script scanning of all Mac OSX manual accidentally also
+scanned binary (gzip'd) files, discussed with schwarze@@ on tech@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.85 2014/08/16 19:00:01 schwarze Exp $ */
+a81 8
+		/*
+		 * Unicode escapes are defined in groff as \[uXXXX] to
+		 * \[u10FFFF], where the contained value must be a valid
+		 * Unicode codepoint.  Here, however, only check whether
+		 * it's not a zero-width escape.
+		 */
+		if ('u' == (*start)[0] && ']' != (*start)[1])
+			gly = ESCAPE_UNICODE;
+d88 1
+a88 4
+		if ('u' == (*start)[0] && '\'' != (*start)[1])
+			gly = ESCAPE_UNICODE;
+		else
+			gly = ESCAPE_SPECIAL;
+d336 10
+@
+
+
+1.85
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.84 2014/08/10 23:54:41 schwarze Exp $ */
+d202 2
+a203 1
+			++*end;
+@
+
+
+1.84
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.83 2014/07/06 19:09:00 schwarze Exp $ */
+d458 1
+a458 1
+#ifdef	HAVE_STRPTIME
+@
+
+
+1.84.2.1
+log
+@merge kristaps@@' bugfix from HEAD:
+Fix a corner case where \H<nil> (where <nil> is the \0 character) would
+cause mandoc_escape() to read past the end of an allocated string.
+Found when a script scanning of all Mac OSX manual accidentally also
+scanned binary (gzip'd) files, discussed with schwarze@@ on tech@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.86 2014/08/18 09:11:47 kristaps Exp $ */
+d202 1
+a202 2
+			if ('\0' != **start)
+				++*end;
+@
+
+
+1.83
+log
+@Clean up messages related to plain text and to escape sequences.
+* Mention invalid escape sequences and string names, and fallbacks.
+* Hierarchical naming.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.82 2014/07/06 18:37:34 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+a18 1
+#endif
+@
+
+
+1.82
+log
+@Fix handling of escape sequences taking numeric arguments.
+* Repair detection of invalid delimiters.
+* Discard the invalid delimiter together with the invalid sequence.
+
+Note to self: In general, strchr("\0...", c) is a thoroughly bad idea.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.81 2014/07/01 22:37:15 schwarze Exp $ */
+d432 1
+a432 1
+		mandoc_msg(MANDOCERR_BADQUOTE, parse, ln, *pos, NULL);
+d446 1
+a446 1
+		mandoc_msg(MANDOCERR_EOLNSPACE, parse, ln, *pos, NULL);
+@
+
+
+1.81
+log
+@Clean up the warnings related to document structure.
+* Hierarchical naming of the related enum mandocerr items.
+* Mention the offending macro, section title, or string.
+While here, improve some wordings:
+* Descriptive instead of imperative style.
+* Uniform style for "missing" and "skipping".
+* Where applicable, mention the fallback used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.80 2014/06/20 17:24:00 schwarze Exp $ */
+d203 2
+a204 1
+		if (strchr("\0 %&()*+-./0123456789:<=>", **start))
+d206 1
+@
+
+
+1.80
+log
+@Start systematic improvements of error reporting.
+So far, this covers all WARNINGs related to the prologue.
+
+1) hierarchical naming of MANDOCERR_* constants
+2) mention the macro name in messages where that adds clarity
+3) add one missing MANDOCERR_DATE_MISSING msg
+4) fix the wording of one message related to the man(7) prologue
+
+Started on the plane back from Ottawa.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.79 2014/04/20 16:46:04 schwarze Exp $ */
+d519 1
+a519 1
+		mandoc_msg(MANDOCERR_DATE_BAD, parse, ln, pos, NULL);
+@
+
+
+1.79
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.78 2014/04/08 01:37:27 schwarze Exp $ */
+d512 1
+a512 1
+		mandoc_msg(MANDOCERR_NODATE, parse, ln, pos, NULL);
+d519 1
+a519 1
+		mandoc_msg(MANDOCERR_BADDATE, parse, ln, pos, NULL);
+@
+
+
+1.78
+log
+@Fully implement the \B (validate numerical expression) and
+partially implement the \w (measure text width) escape sequence
+in a way that makes them usable in numerical expressions and in
+conditional requests, similar to how \n (interpolate number register)
+and \* (expand user-defined string) are implemented.
+
+This lets mandoc(1) handle the baroque low-level roff code
+found at the beginning of the ggrep(1) manual.
+Thanks to pascal@@ for the report.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.77 2014/04/07 17:51:10 schwarze Exp $ */
+d49 1
+a49 1
+	enum mandoc_esc	 gly; 
+d78 1
+a78 1
+	case ('('):
+d82 1
+a82 1
+	case ('['):
+d94 1
+a94 1
+	case ('C'):
+d108 1
+a108 1
+	case ('d'):
+d110 1
+a110 1
+	case ('u'):
+d115 1
+a115 1
+	 * character without advancing the cursor position.  
+d119 1
+a119 1
+	case ('z'):
+d126 1
+a126 1
+	case ('F'):
+d128 1
+a128 1
+	case ('g'):
+d130 1
+a130 1
+	case ('k'):
+d132 1
+a132 1
+	case ('M'):
+d134 1
+a134 1
+	case ('m'):
+d136 1
+a136 1
+	case ('n'):
+d138 1
+a138 1
+	case ('V'):
+d140 1
+a140 1
+	case ('Y'):
+d143 1
+a143 1
+	case ('f'):
+d147 1
+a147 1
+		case ('('):
+d151 1
+a151 1
+		case ('['):
+d166 1
+a166 1
+	case ('A'):
+d168 1
+a168 1
+	case ('b'):
+d170 1
+a170 1
+	case ('D'):
+d172 1
+a172 1
+	case ('o'):
+d174 1
+a174 1
+	case ('R'):
+d176 1
+a176 1
+	case ('X'):
+d178 1
+a178 1
+	case ('Z'):
+d190 1
+a190 1
+	case ('h'):
+d192 1
+a192 1
+	case ('H'):
+d194 1
+a194 1
+	case ('L'):
+d196 1
+a196 1
+	case ('l'):
+d198 1
+a198 1
+	case ('S'):
+d200 1
+a200 1
+	case ('v'):
+d202 1
+a202 1
+	case ('x'):
+d214 1
+a214 1
+	case ('N'):
+d230 1
+a230 1
+	/* 
+d233 1
+a233 1
+	case ('s'):
+d241 1
+a241 1
+		case ('('):
+d245 1
+a245 1
+		case ('['):
+d249 1
+a249 1
+		case ('\''):
+d281 1
+a281 1
+			case ('\0'):
+d283 1
+a283 1
+			case ('\\'):
+d305 1
+a305 1
+	case (ESCAPE_FONT):
+d323 1
+a323 1
+		case ('3'):
+d325 1
+a325 1
+		case ('B'):
+d328 1
+a328 1
+		case ('2'):
+d330 1
+a330 1
+		case ('I'):
+d333 1
+a333 1
+		case ('P'):
+d336 1
+a336 1
+		case ('1'):
+d338 1
+a338 1
+		case ('R'):
+d343 1
+a343 1
+	case (ESCAPE_SPECIAL):
+d375 1
+a375 1
+	} 
+d394 1
+a394 1
+			case ('t'):
+d397 1
+a397 1
+			case ('\\'):
+d401 1
+a401 1
+			case (' '):
+d544 1
+a544 1
+		case ('\"'):
+d546 1
+a546 1
+		case ('\''):
+d548 1
+a548 1
+		case (']'):
+d550 1
+a550 1
+		case (')'):
+d554 1
+a554 1
+		case ('.'):
+d556 1
+a556 1
+		case ('!'):
+d558 1
+a558 1
+		case ('?'):
+@
+
+
+1.77
+log
+@Accept arbitrary argument delimiters for various roff(7) escape sequences.
+Needed for example by the new Perl pod2man(1) preamble.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.76 2014/03/23 11:25:26 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011, 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d164 1
+a169 2
+	case ('B'):
+		/* FALLTHROUGH */
+a175 2
+	case ('w'):
+		/* FALLTHROUGH */
+@
+
+
+1.76
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.75 2013/12/31 23:23:10 schwarze Exp $ */
+d182 1
+a182 1
+		if ('\'' != **start)
+d185 1
+a186 1
+		term = '\'';
+d206 1
+a206 1
+		if ('\'' != **start)
+d209 1
+a210 1
+		term = '\'';
+@
+
+
+1.75
+log
+@Simplify: Remove an unused argument from the mandoc_eos() function.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.74 2013/12/30 18:30:32 schwarze Exp $ */
+d34 1
+a356 68
+void *
+mandoc_calloc(size_t num, size_t size)
+{
+	void		*ptr;
+
+	ptr = calloc(num, size);
+	if (NULL == ptr) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+
+	return(ptr);
+}
+
+
+void *
+mandoc_malloc(size_t size)
+{
+	void		*ptr;
+
+	ptr = malloc(size);
+	if (NULL == ptr) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+
+	return(ptr);
+}
+
+
+void *
+mandoc_realloc(void *ptr, size_t size)
+{
+
+	ptr = realloc(ptr, size);
+	if (NULL == ptr) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+
+	return(ptr);
+}
+
+char *
+mandoc_strndup(const char *ptr, size_t sz)
+{
+	char		*p;
+
+	p = mandoc_malloc(sz + 1);
+	memcpy(p, ptr, sz);
+	p[(int)sz] = '\0';
+	return(p);
+}
+
+char *
+mandoc_strdup(const char *ptr)
+{
+	char		*p;
+
+	p = strdup(ptr);
+	if (NULL == p) {
+		perror(NULL);
+		exit((int)MANDOCLEVEL_SYSERR);
+	}
+
+	return(p);
+}
+
+@
+
+
+1.74
+log
+@Remove duplicate const specifiers from the declaration of mandoc_escape().
+Found by Thomas Klausner <wiz at NetBSD dot org> using clang.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.73 2013/12/26 02:55:28 schwarze Exp $ */
+d597 1
+a597 1
+mandoc_eos(const char *p, size_t sz, int enclosed)
+d599 2
+a600 2
+	const char *q;
+	int found;
+d611 1
+a611 1
+	found = 0;
+@
+
+
+1.73
+log
+@I have no idea how it happened that \B, \H, \h, \L, and \l got
+mapped to ESCAPE_NUMBERED (which is for \N and only for \N), that
+made no sense at all.  Properly remap them to ESCAPE_IGNORE.
+
+While here, move \B and \w from the group taking number arguments
+to the group taking string arguments; right now, that doesn't imply
+any functional change, but if we ever go ahead and implement a
+parser for roff(7) numerical expressions, it will suddenly start
+to matter, and cause confusion.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.72 2013/12/25 22:45:33 schwarze Exp $ */
+d43 1
+a43 1
+mandoc_escape(const char const **end, const char const **start, int *sz)
+@
+
+
+1.72
+log
+@Parse and ignore the roff(7) escape sequences \d (move half line down)
+und \u (move half line up).  Found by bentley@@ in some DocBook crap.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.71 2013/12/25 00:50:05 schwarze Exp $ */
+d168 2
+d176 2
+a191 2
+	case ('B'):
+		/* FALLTHROUGH */
+a198 1
+		gly = ESCAPE_NUMBERED;
+a203 2
+	case ('w'):
+		/* FALLTHROUGH */
+d207 1
+a207 2
+		if (ESCAPE_ERROR == gly)
+			gly = ESCAPE_IGNORE;
+@
+
+
+1.71
+log
+@s/[Nn]ull/NUL/ in comments where appropriate;
+suggested by Thomas Klausner <wiz @@ NetBSD dot org>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.70 2013/11/10 21:34:04 schwarze Exp $ */
+d105 8
+@
+
+
+1.70
+log
+@Support the alternative syntax \C'uXXXX' for Unicode characters.
+It is already documented in the Heirloom troff manual,
+and groff handles it as well.
+
+Bug reported by Bjarni Ingi Gislason <bjarniig at rhi dot hi dot is>
+on <bug-groff at gnu dot org>.  Well, admittedly, that bug was reported
+against groff, but mandoc was even more broken than groff with respect
+to this syntax...
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.69 2013/10/05 20:30:05 schwarze Exp $ */
+d422 1
+a422 1
+ * Null-terminate the argument in place.
+d425 1
+a425 1
+ * or to the null byte terminating the argument line.
+d496 1
+a496 1
+	/* Null-terminate this argument and move to the next one. */
+@
+
+
+1.69
+log
+@Cleanup suggested by gcc-4.8.1, following hints by Christos Zoulas:
+- avoid bad qualifier casting in roff.c, roff_parsetext()
+  by changing the mandoc_escape arguments to "const char const **"
+- avoid bad qualifier casting in mandocdb.c, index_merge()
+- do not complain about unused variables in test-*.c
+- garbage collect a few unused variables elsewhere
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.68 2013/08/08 20:07:47 schwarze Exp $ */
+a95 1
+		gly = ESCAPE_SPECIAL;
+d97 4
+@
+
+
+1.68
+log
+@Implement the roff(7) font-escape sequence \f(BI "bold+italic".
+This improves the formatting of about 40 base manuals
+and reduces groff-mandoc formatting differences in base by about 5%.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.67 2013/06/20 22:39:30 schwarze Exp $ */
+d43 1
+a43 1
+mandoc_escape(const char **end, const char **start, int *sz)
+@
+
+
+1.67
+log
+@Improve handling of the roff(7) "\t" escape sequence:
+* Parsing macro arguments has to be done in copy mode,
+  which implies replacing "\t" by a literal tab character.
+* Otherwise, render "\t" as the empty string, not as a 't' character.
+
+This fixes formatting of the distfile example in the oldrdist(1) manual.
+This also shows up in the unzip(1) manual as one of several issues
+preventing the removal of USE_GROFF from the archivers/unzip port.
+Thanks to espie@@ for attracting my attention to the unzip(1) manual.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.66 2012/06/12 20:21:04 kristaps Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d299 13
+a311 7
+		/*
+		 * Pretend that the constant-width font modes are the
+		 * same as the regular font modes.
+		 */
+		if (2 == *sz && 'C' == **start) {
+			(*start)++;
+			(*sz)--;
+@
+
+
+1.66
+log
+@Add `cc' support.
+This was reported by espie@@ and in the TODO.
+Caveat: `cc' has buggy behaviour when invoked in groff(1) and followed
+by a line-breaking control character macro, e.g., in a -man doc,
+
+  .cc |
+  .B foo
+  'B foo
+  |cc
+  'B foo
+
+will cause groff(1) to behave properly for `.B' but inline the macro
+definition for `B' when invoked with the line-breaking macro.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.65 2012/05/31 22:38:16 schwarze Exp $ */
+d435 5
+a439 1
+		/* Move left after quoted quotes and escaped backslashes. */
+d442 1
+d444 9
+a452 2
+			if ('\\' == cp[1]) {
+				/* Poor man's copy mode. */
+d455 2
+a456 1
+			} else if (0 == quoted && ' ' == cp[1])
+d458 6
+a463 1
+				cp++;
+@
+
+
+1.65
+log
+@While i already got my fingers dirty on mandoc_escape(),
+profit of the occasion to pull out some spaghetti, that is,
+three confusing variables and fourteen pointless assignments
+among them; instead, always operate on the official pointers
+**start, **end, and *sz, each of which conveys an obvious meaning.
+
+No functional change intended, and the new tests confirm that
+everything still (err...) "works", as far as that word can be
+applied to the kind of roff(7) mock-up code i'm polishing here.
+
+"just commit" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.64 2012/05/31 22:34:06 schwarze Exp $ */
+a606 26
+ * Find out whether a line is a macro line or not.  If it is, adjust the
+ * current position and return one; if it isn't, return zero and don't
+ * change the current position.
+ */
+int
+mandoc_getcontrol(const char *cp, int *ppos)
+{
+	int		pos;
+
+	pos = *ppos;
+
+	if ('\\' == cp[pos] && '.' == cp[pos + 1])
+		pos += 2;
+	else if ('.' == cp[pos] || '\'' == cp[pos])
+		pos++;
+	else
+		return(0);
+
+	while (' ' == cp[pos] || '\t' == cp[pos])
+		pos++;
+
+	*ppos = pos;
+	return(1);
+}
+
+/*
+@
+
+
+1.64
+log
+@Make recursive parsing of roff(7) escapes actually work in the general case,
+in particular when the inner escapes are preceded or followed by other terms.
+While doing so, remove lots of bogus code that was trying to make pointless
+distinctions between numeric and non-numeric escape sequences, while both
+actually share the same syntax and we ignore the semantics anyway.
+
+This prevents some of the strings defined in the pod2man(1) preamble
+from producing garbage output, in particular in scandinavian words.
+Of course, proper rendering of scandinavian national characters
+cannot be expected even with these fixes.
+
+"just commit" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.63 2012/05/31 22:29:13 schwarze Exp $ */
+d45 3
+a47 3
+	char		 c, term;
+	int		 i, rlim;
+	const char	*cp, *rstart;
+d50 16
+a65 5
+	cp = *end;
+	rstart = cp;
+	if (start)
+		*start = rstart;
+	i = rlim = 0;
+d67 2
+d71 1
+a71 1
+	switch ((c = cp[i++])) {
+d79 1
+a79 1
+		rlim = 2;
+d89 1
+a89 1
+		if ('u' == cp[i] && ']' != cp[i + 1])
+d94 1
+a94 1
+		if ('\'' != cp[i])
+d97 1
+a107 1
+		(*end)++;
+d134 1
+a134 6
+
+		rstart= &cp[i];
+		if (start) 
+			*start = rstart;
+
+		switch (cp[i++]) {
+d136 2
+a137 1
+			rlim = 2;
+d140 1
+d144 1
+a144 2
+			rlim = 1;
+			i--;
+d166 1
+a166 1
+		if ('\'' != cp[i++])
+d169 1
+d195 2
+d199 1
+a199 2
+		if ('\'' != cp[i++])
+			return(ESCAPE_ERROR);
+d208 1
+a208 1
+		if ('\0' == cp[i])
+d210 3
+a212 2
+		*end = &cp[++i];
+		if (isdigit((unsigned char)cp[i-1]))
+d214 2
+d218 1
+a218 4
+		if (start)
+			*start = &cp[i];
+		if (sz)
+			*sz = *end - &cp[i];
+a228 4
+		rstart = &cp[i];
+		if (start) 
+			*start = rstart;
+
+d230 2
+a231 3
+		c = cp[i];
+		if ('+' == c || '-' == c || ASCII_HYPH == c)
+			++i;
+d233 1
+a233 1
+		switch (cp[i++]) {
+d235 2
+a236 1
+			rlim = 2;
+d239 1
+d243 1
+d247 1
+a247 2
+			rlim = 1;
+			i--;
+a250 5
+		/* See +/- counts as a sign. */
+		c = cp[i];
+		if ('+' == c || '-' == c || ASCII_HYPH == c)
+			++i;
+
+d255 1
+d259 2
+a260 2
+		rlim = 1;
+		i--;
+a265 4
+	*end = rstart = &cp[i];
+	if (start)
+		*start = rstart;
+
+d287 1
+a287 1
+		rlim = (*end)++ - rstart;
+d289 2
+a290 2
+		assert(rlim > 0);
+		if ((size_t)rlim > strlen(rstart))
+d292 1
+a292 1
+		*end += rlim;
+a293 2
+	if (sz)
+		*sz = rlim;
+d303 4
+a306 3
+		if (2 == rlim && 'C' == *rstart)
+			rstart++;
+		else if (1 != rlim)
+d309 1
+a309 1
+		switch (*rstart) {
+d331 1
+a331 3
+		if (1 != rlim)
+			break;
+		if ('c' == *rstart)
+@
+
+
+1.63
+log
+@Implement the roff \z escape sequence, intended to output the next
+character without advancing the cursor position; implement it to
+simply skip the next character, as it will usually be overwritten.
+
+With this change, the pod2man(1) preamble user-defined string \*:,
+intended to render as a diaeresis or umlaut diacritic above the
+preceding character, is rendered in a slightly less ugly way,
+though still not correctly.  It was rendered as "z.." and is now
+rendered as ".".
+
+Given that the definition of \*: uses elaborate manual \h positioning,
+there is little chance for mandoc(1) to ever render it correctly,
+but at least we can refrain from printing out a spurious "z", and
+we can make the \z do something semi-reasonable for easier cases.
+
+"just commit" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.62 2011/12/03 16:08:51 schwarze Exp $ */
+a39 1
+static	int	 numescape(const char *);
+a40 57
+/*
+ * Pass over recursive numerical expressions.  This context of this
+ * function is important: it's only called within character-terminating
+ * escapes (e.g., \s[xxxyyy]), so all we need to do is handle initial
+ * recursion: we don't care about what's in these blocks. 
+ * This returns the number of characters skipped or -1 if an error
+ * occurs (the caller should bail).
+ */
+static int
+numescape(const char *start)
+{
+	int		 i;
+	size_t		 sz;
+	const char	*cp;
+
+	i = 0;
+
+	/* The expression consists of a subexpression. */
+
+	if ('\\' == start[i]) {
+		cp = &start[++i];
+		/*
+		 * Read past the end of the subexpression.
+		 * Bail immediately on errors.
+		 */
+		if (ESCAPE_ERROR == mandoc_escape(&cp, NULL, NULL))
+			return(-1);
+		return(i + cp - &start[i]);
+	} 
+
+	if ('(' != start[i++])
+		return(0);
+
+	/*
+	 * A parenthesised subexpression.  Read until the closing
+	 * parenthesis, making sure to handle any nested subexpressions
+	 * that might ruin our parse.
+	 */
+
+	while (')' != start[i]) {
+		sz = strcspn(&start[i], ")\\");
+		i += (int)sz;
+
+		if ('\0' == start[i])
+			return(-1);
+		else if ('\\' != start[i])
+			continue;
+
+		cp = &start[++i];
+		if (ESCAPE_ERROR == mandoc_escape(&cp, NULL, NULL))
+			return(-1);
+		i += cp - &start[i];
+	}
+
+	/* Read past the terminating ')'. */
+	return(++i);
+}
+d45 2
+a46 2
+	char		 c, term, numeric;
+	int		 i, lim, ssz, rlim;
+d54 1
+a54 1
+	i = lim = 0;
+d56 1
+a56 1
+	term = numeric = '\0';
+d66 1
+a66 1
+		lim = 2;
+d128 1
+a128 1
+			lim = 2;
+d134 1
+a134 1
+			lim = 1;
+d189 1
+a189 1
+		term = numeric = '\'';
+d229 1
+a229 1
+			lim = 2;
+d232 1
+a232 1
+			term = numeric = ']';
+d235 1
+a235 1
+			term = numeric = '\'';
+d238 1
+a238 1
+			lim = 1;
+d255 1
+a255 1
+		lim = 1;
+d262 1
+a262 1
+	rstart = &cp[i];
+d267 2
+a268 19
+	 * If a terminating block has been specified, we need to
+	 * handle the case of recursion, which could have their
+	 * own terminating blocks that mess up our parse.  This, by the
+	 * way, means that the "start" and "size" values will be
+	 * effectively meaningless.
+	 */
+
+	ssz = 0;
+	if (numeric && -1 == (ssz = numescape(&cp[i])))
+		return(ESCAPE_ERROR);
+
+	i += ssz;
+	rlim = -1;
+
+	/*
+	 * We have a character terminator.  Try to read up to that
+	 * character.  If we can't (i.e., we hit the nil), then return
+	 * an error; if we can, calculate our length, read past the
+	 * terminating character, and exit.
+d272 19
+a290 2
+		*end = strchr(&cp[i], term);
+		if ('\0' == *end)
+d292 1
+a292 6
+
+		rlim = *end - &cp[i];
+		if (sz)
+			*sz = rlim;
+		(*end)++;
+		goto out;
+a293 13
+
+	assert(lim > 0);
+
+	/*
+	 * We have a numeric limit.  If the string is shorter than that,
+	 * stop and return an error.  Else adjust our endpoint, length,
+	 * and return the current glyph.
+	 */
+
+	if ((size_t)lim > strlen(&cp[i]))
+		return(ESCAPE_ERROR);
+
+	rlim = lim;
+a296 5
+	*end = &cp[i] + lim;
+
+out:
+	assert(rlim >= 0 && rstart);
+
+@
+
+
+1.62
+log
+@ISO style "%Y-%m-%d" dates are common in man(7) .TH.
+They have been considered valid in the past, but were reformatted
+to the mdoc(7) "Month day, year" style.
+To make page footers more similar to groff, no longer reformat them,
+just print them as they are.
+This doesn't change anything with respect to what's considered valid
+or what is warned about.
+
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.61 2011/11/06 14:43:14 kristaps Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+d146 10
+@
+
+
+1.61
+log
+@Accomodate for \f(Cx formatting.  Noted by Andreas Vogele, thanks!
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.60 2011/10/24 20:30:57 schwarze Exp $ */
+d626 2
+d629 1
+a629 2
+	    !a2time(&t, "%b %d, %Y", in) &&
+	    !a2time(&t, "%Y-%m-%d", in)) {
+@
+
+
+1.60
+log
+@Handle \N numbered character escapes the same way as groff:
+If \N is followed by a digit, ignore \N and the digit.
+If \N is followed by a non-digit, the next non-digit
+ends the character number; the two delimiters need not match.
+Kristaps calls that "gross, but not our fault".
+
+For now, i'm fixing \N only.  Other escapes taking numeric arguments
+may or may not need similar handling, but \N is by far the most
+important for practical purposes.
+
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.59 2011/09/18 14:14:15 schwarze Exp $ */
+d372 7
+a378 1
+		if (1 != rlim)
+d380 1
+@
+
+
+1.59
+log
+@forgotten Copyright bumps; no code change
+found while syncing to OpenBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.58 2011/07/27 07:32:26 kristaps Exp $ */
+d164 1
+a164 2
+		if (ESCAPE_ERROR == gly)
+			gly = ESCAPE_IGNORE;
+d224 1
+a224 4
+		/* FALLTHROUGH */
+	case ('N'):
+		if (ESCAPE_ERROR == gly)
+			gly = ESCAPE_NUMBERED;
+d240 20
+@
+
+
+1.58
+log
+@Move mandoc_hyph() into roff_parsetext() as a single conditional.  While
+here, do some function renames for clarity and make all function
+prototypes be in one place.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.57 2011/07/27 07:06:29 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.57
+log
+@Update mandoc_hyph() to the extent that numbers on either side of the
+hyphen make for a non-breakable hyphen.  Found by random testing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.56 2011/07/24 18:15:14 kristaps Exp $ */
+a656 38
+ * Choose whether to break at a hyphenated character (identified by the
+ * ASCII_HYPH value in the input string).
+ */
+int
+mandoc_hyph(const char *start, const char *c)
+{
+	char		l, r;
+
+	l = *(c - 1);
+	r = *(c + 1);
+
+	/* Skip first/last character of buffer. */
+	if (c == start || '\0' == r)
+		return(0);
+
+	/* Skip a number on either side of the hyphen. */
+	if (isdigit((unsigned char)r) || isdigit((unsigned char)l))
+		return(0);
+
+	/* Skip first/last character of word. */
+	if ('\t' == r || '\t' == l)
+		return(0);
+
+	if (' ' == r || ' ' == l)
+		return(0);
+
+	/* Skip double invocations. */
+	if ('-' == r || '-' == l)
+		return(0);
+
+	/* Skip escapes. */
+	if ('\\' == l)
+		return(0);
+
+	return(1);
+}
+
+/*
+@
+
+
+1.56
+log
+@Scary-looking but otherwise harmless changes allow me to build for Windows.
+That is to say, with mingw32.  This amounts to the following:
+
+ (1) break compat.c into compat_strlcpy.c and compat_strlcat.c
+ (2) add compat_getsubopt.c (from OpenBSD) and test-getsubopt.c
+ (3) add test-strptime.c for HAVE_STRPTIME
+ (4) add ifdef bits here and there, where necessary
+ (5) remove some harmless unportable stuff (u_char, localtime_r)
+
+I've added the appropriate mdocml.zip target to the Makefile, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.55 2011/07/21 23:30:39 kristaps Exp $ */
+d656 4
+d663 1
+d665 2
+a666 4
+	/*
+	 * Choose whether to break at a hyphenated character.  We only
+	 * do this if it's free-standing within a word.
+	 */
+d669 5
+a673 1
+	if (c == start || '\0' == *(c + 1))
+d675 1
+d677 1
+a677 1
+	if ('\t' == *(c + 1) || '\t' == *(c - 1))
+d679 2
+a680 1
+	if (' ' == *(c + 1) || ' ' == *(c - 1))
+d682 1
+d684 1
+a684 1
+	if ('-' == *(c + 1) || '-' == *(c - 1))
+d686 1
+d688 1
+a688 1
+	if ('\\' == *(c - 1))
+@
+
+
+1.55
+log
+@Complete eqn.7 parsing.  Features all productions from the original 1975
+CACM paper in an LR(1) parse (1 -> eqn_rewind()).  Right now the code is
+a little jungly, but will clear up as I consolidate parse components.
+The AST structure will also be cleaned up, as right now it's pretty ad
+hoc (this won't change the parse itself).  I added the mandoc_strndup()
+function will here.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.54 2011/07/21 15:21:13 kristaps Exp $ */
+d545 2
+d548 1
+d560 1
+a560 1
+	struct tm	 tm;
+d565 1
+a565 1
+	localtime_r(&t, &tm);
+d575 1
+a575 1
+	if (0 == (ssz = strftime(p, 10 + 1, "%B ", &tm)))
+d579 1
+a579 1
+	if (-1 == (isz = snprintf(p, 4 + 1, "%d, ", tm.tm_mday)))
+d583 1
+a583 1
+	if (0 == strftime(p, 4 + 1, "%Y", &tm))
+@
+
+
+1.54
+log
+@Support `size' constructs in eqn.7.  Generalise mandoc_strontou to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.53 2011/05/24 21:31:23 kristaps Exp $ */
+d435 10
+@
+
+
+1.53
+log
+@Remove all references to ESCAPE_PREDEF, which is now not exposed passed
+the libroff point.  This clears up a nice chunk of code.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.52 2011/05/15 15:30:33 kristaps Exp $ */
+d701 1
+a701 1
+mandoc_strntou(const char *p, size_t sz, int base)
+d719 4
+a722 4
+	if ((errno == ERANGE && 
+			(v == LONG_MAX || v == LONG_MIN)) ||
+			(v > INT_MAX || v < 0))
+		return(-1);
+a725 1
+
+@
+
+
+1.52
+log
+@Support groff's escape for Unicode input.  See
+
+  http://mdocml.bsd.lv/archives/tech/0368.html
+
+For the time being, we just throw it away.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.51 2011/05/14 17:54:42 kristaps Exp $ */
+a166 4
+	case ('*'):
+		if (ESCAPE_ERROR == gly)
+			gly = ESCAPE_PREDEF;
+		/* FALLTHROUGH */
+@
+
+
+1.51
+log
+@Make character engine (-Tascii, -Tpdf, -Tps) ready for Unicode: make buffer
+consist of type "int".  This will take more work (especially in encode and
+friends), but this is a strong start.  This commit also consists of some
+harmless lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.50 2011/05/14 16:06:09 kristaps Exp $ */
+d128 8
+@
+
+
+1.50
+log
+@Move roff.c's strtol into libmandoc.h for use by other parts of the code
+(which will come).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.49 2011/04/30 10:18:24 kristaps Exp $ */
+d707 1
+a707 1
+	buf[sz] = '\0';
+@
+
+
+1.49
+log
+@No code change: fixing spelling errors.  From a patch by uqs@@.  Thanks!
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.48 2011/04/19 16:38:48 kristaps Exp $ */
+d26 2
+d691 32
+@
+
+
+1.48
+log
+@Clean up parsing of delimiters in -mdoc.  First, remove the "dowarn"
+variable from mandoc_getarg() so that it prints the warning every time.
+Then, remove the warning from args_checkpunct().  This way, warnings
+are being posted at the correct time.  This makes the flag argument to
+mdoc_zargs() superfluous, so make it be zero when it's invoked.  Finally,
+move the args() flags into mdoc_argv.c and make them enums.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.47 2011/04/17 09:08:19 kristaps Exp $ */
+d606 1
+a606 1
+	 * propogate outward.
+@
+
+
+1.47
+log
+@Get mdoc_argv.c ready to use [some of] mandoc_getarg() by giving said
+function a parameter to suppress warnings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.46 2011/04/09 15:35:30 kristaps Exp $ */
+a97 9
+/*
+ * Handle an escaped sequeence.  This should be called with any
+ * string subsequent a `\'.  Pass a pointer to this substring as "end";
+ * it will be set to the supremum of the parsed escape sequence.  If
+ * this returns ESCAPE_ERROR, the string is bogus and should be thrown
+ * away.  If not ESCAPE_ERROR or ESCAPE_IGNORE, "start" is set to the
+ * first relevant character of the substring (font, glyph, whatever) of
+ * length sz.  Both "start" and "sz" may be NULL.
+ */
+d454 1
+a454 2
+mandoc_getarg(struct mparse *parse, 
+		char **cpp, int ln, int dowarn, int *pos)
+d501 1
+a501 1
+	if (dowarn && 1 == quoted)
+d515 1
+a515 1
+	if (dowarn && '\0' == *cp && (white || ' ' == cp[-1]))
+@
+
+
+1.46
+log
+@Lint catching some potential issues.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.45 2011/04/09 15:29:40 kristaps Exp $ */
+d463 2
+a464 1
+mandoc_getarg(struct mparse *parse, char **cpp, int ln, int *pos)
+d471 1
+d475 1
+a475 2
+	} else
+		quoted = 0;
+d511 1
+a511 1
+	if (1 == quoted)
+d525 1
+a525 1
+	if ('\0' == *cp && (white || ' ' == cp[-1]))
+@
+
+
+1.45
+log
+@Remove a2roffdeco() and mandoc_special() functions and replace them with
+a public (mandoc.h) function mandoc_escape(), which merges the
+functionality of both prior functions.
+
+Reason: code duplication.  The a2roffdeco() and mandoc_special()
+functions were pretty much the same thing and both quite complex.  This
+allows one function to receive improvements in (e.g.) subexpression
+handling and performance, instead of having to replicate functionality.
+
+As such, the mandoc_escape() function already handles a superset of the
+escapes handled in previous versions and has improvements in performance
+(using strcspn(), for example) and reliable handling of subexpressions.
+
+This code Works For Me, but may need work to catch any regressions.
+Since the benefits are great (leaner code, simpler API), I'd rather have
+it in-tree than floating as a patch.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.44 2011/03/28 23:52:13 kristaps Exp $ */
+d119 1
+a119 1
+	i = 0;
+d121 1
+a121 2
+	term = '\0';
+	numeric = 0;
+d381 1
+@
+
+
+1.44
+log
+@Have libman and libmdoc use mandoc_getcontrol() to determine whether a
+macro has been invoked.  libroff is next.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.43 2011/03/22 14:05:45 kristaps Exp $ */
+d38 1
+d40 69
+a108 2
+int
+mandoc_special(char *p)
+d110 11
+a120 5
+	int		 len, i;
+	char		 term;
+	char		*sv;
+	
+	len = 0;
+d122 1
+a122 1
+	sv = p;
+d124 20
+a143 2
+	assert('\\' == *p);
+	p++;
+d145 7
+a151 3
+	switch (*p++) {
+#if 0
+	case ('Z'):
+d153 1
+a153 1
+	case ('X'):
+d155 1
+a155 1
+	case ('x'):
+d157 1
+a157 1
+	case ('S'):
+d159 1
+a159 1
+	case ('R'):
+d161 1
+a161 1
+	case ('N'):
+d163 3
+a165 1
+	case ('l'):
+d167 3
+a169 1
+	case ('L'):
+d171 27
+a197 1
+	case ('H'):
+d199 1
+a199 1
+	case ('h'):
+d203 1
+a203 1
+	case ('C'):
+d205 1
+a205 1
+	case ('b'):
+d207 1
+a207 1
+	case ('B'):
+d209 4
+a212 5
+	case ('a'):
+		/* FALLTHROUGH */
+	case ('A'):
+		if (*p++ != '\'')
+			return(0);
+d215 7
+a221 1
+#endif
+d224 12
+d238 13
+d252 1
+a252 2
+		if (ASCII_HYPH == *p)
+			*p = '-';
+d254 8
+a261 5
+		i = 0;
+		if ('+' == *p || '-' == *p) {
+			p++;
+			i = 1;
+		}
+d263 1
+a263 1
+		switch (*p++) {
+d265 1
+a265 1
+			len = 2;
+d268 1
+a268 1
+			term = ']';
+d271 1
+a271 1
+			term = '\'';
+a272 3
+		case ('0'):
+			i = 1;
+			/* FALLTHROUGH */
+d274 2
+a275 2
+			len = 1;
+			p--;
+d279 22
+a300 18
+		if (ASCII_HYPH == *p)
+			*p = '-';
+		if ('+' == *p || '-' == *p) {
+			if (i)
+				return(0);
+			p++;
+		} 
+		
+		/* Handle embedded numerical subexp or escape. */
+
+		if ('(' == *p) {
+			while (*p && ')' != *p)
+				if ('\\' == *p++) {
+					i = mandoc_special(--p);
+					if (0 == i)
+						return(0);
+					p += i;
+				}
+d302 53
+a354 2
+			if (')' == *p++)
+				break;
+d356 1
+a356 6
+			return(0);
+		} else if ('\\' == *p) {
+			if (0 == (i = mandoc_special(p)))
+				return(0);
+			p += i;
+		}
+d358 14
+a371 25
+		break;
+#if 0
+	case ('Y'):
+		/* FALLTHROUGH */
+	case ('V'):
+		/* FALLTHROUGH */
+	case ('$'):
+		/* FALLTHROUGH */
+	case ('n'):
+		/* FALLTHROUGH */
+#endif
+	case ('k'):
+		/* FALLTHROUGH */
+	case ('M'):
+		/* FALLTHROUGH */
+	case ('m'):
+		/* FALLTHROUGH */
+	case ('f'):
+		/* FALLTHROUGH */
+	case ('F'):
+		/* FALLTHROUGH */
+	case ('*'):
+		switch (*p++) {
+		case ('('):
+			len = 2;
+d373 2
+a374 2
+		case ('['):
+			term = ']';
+d376 4
+a379 3
+		default:
+			len = 1;
+			p--;
+d382 5
+a387 23
+	case ('('):
+		len = 2;
+		break;
+	case ('['):
+		term = ']';
+		break;
+	case ('z'):
+		len = 1;
+		if ('\\' == *p) {
+			if (0 == (i = mandoc_special(p)))
+				return(0);
+			p += i;
+			return(*p ? (int)(p - sv) : 0);
+		}
+		break;
+	case ('o'):
+		/* FALLTHROUGH */
+	case ('w'):
+		if ('\'' == *p++) {
+			term = '\'';
+			break;
+		}
+		/* FALLTHROUGH */
+a388 2
+		len = 1;
+		p--;
+d392 1
+a392 11
+	if (term) {
+		for ( ; *p && term != *p; p++)
+			if (ASCII_HYPH == *p)
+				*p = '-';
+		return(*p ? (int)(p - sv) : 0);
+	}
+
+	for (i = 0; *p && i < len; i++, p++)
+		if (ASCII_HYPH == *p)
+			*p = '-';
+	return(i == len ? (int)(p - sv) : 0);
+a394 1
+
+@
+
+
+1.43
+log
+@Move mandoc_isdelim() back into libmdoc.h.  This fixes an unreported
+error where (1) -man pages were punctuating delimiters (e.g., `.B a ;')
+and where (2) standalone punctuation in -mdoc or -man (e.g., ";" on its
+own line) would also be punctuated.  This introduces a small amount of
+complexity of mdoc_{html,term}.c must manage their own spacing with
+running print_word() or print_text().  The check for delimiting now
+happens in mdoc_macro.c's dword().
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.42 2011/03/20 16:02:05 kristaps Exp $ */
+d509 25
+@
+
+
+1.42
+log
+@Consolidate messages.  Have all parse-time messages (in libmdoc,
+libroff, etc., etc.) route into mandoc_msg() and mandoc_vmsg(), for the
+time being in libmandoc.h.  This requires struct mparse to be passed
+into the allocation routines instead of mandocmsg and a void pointer.
+Then, move some of the functionality of the old mmsg() into read.c's
+mparse_mmsg() (check against wlevel and setting of file_status) and use
+main.c's mmsg() as simply a printing tool.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.41 2011/03/17 09:18:12 kristaps Exp $ */
+a508 50
+/*
+ * Check if a string is a punctuation delimiter.  This only applies to
+ * mdoc(7) documents, but as it's used in both front-ends and back-ends,
+ * it needs to go here (instead of, say, in libmdoc.h).
+ */
+enum mdelim
+mandoc_isdelim(const char *p)
+{
+
+	if ('\0' == p[0])
+		return(DELIM_NONE);
+
+	if ('\0' == p[1])
+		switch (p[0]) {
+		case('('):
+			/* FALLTHROUGH */
+		case('['):
+			return(DELIM_OPEN);
+		case('|'):
+			return(DELIM_MIDDLE);
+		case('.'):
+			/* FALLTHROUGH */
+		case(','):
+			/* FALLTHROUGH */
+		case(';'):
+			/* FALLTHROUGH */
+		case(':'):
+			/* FALLTHROUGH */
+		case('?'):
+			/* FALLTHROUGH */
+		case('!'):
+			/* FALLTHROUGH */
+		case(')'):
+			/* FALLTHROUGH */
+		case(']'):
+			return(DELIM_CLOSE);
+		default:
+			return(DELIM_NONE);
+		}
+
+	if ('\\' != p[0])
+		return(DELIM_NONE);
+
+	if (0 == strcmp(p + 1, "."))
+		return(DELIM_CLOSE);
+	if (0 == strcmp(p + 1, "*(Ba"))
+		return(DELIM_MIDDLE);
+
+	return(DELIM_NONE);
+}
+@
+
+
+1.41
+log
+@Tiny optimisation in mandoc_isdelim() check.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.40 2011/03/17 09:16:38 kristaps Exp $ */
+d299 1
+a299 1
+mandoc_getarg(char **cpp, mandocmsg msg, void *data, int ln, int *pos)
+d346 2
+a347 2
+	if (1 == quoted && msg)
+		(*msg)(MANDOCERR_BADQUOTE, data, ln, *pos, NULL);
+d360 2
+a361 2
+	if ('\0' == *cp && msg && (white || ' ' == cp[-1]))
+		(*msg)(MANDOCERR_EOLNSPACE, data, ln, *pos, NULL);
+d419 1
+a419 1
+mandoc_normdate(char *in, mandocmsg msg, void *data, int ln, int pos)
+d426 1
+a426 1
+		(*msg)(MANDOCERR_NODATE, data, ln, pos, NULL);
+d432 1
+a432 1
+		(*msg)(MANDOCERR_BADDATE, data, ln, pos, NULL);
+@
+
+
+1.40
+log
+@Move mdoc_isdelim() into mandoc.h as mandoc_isdelim().  This allows the
+removal of manual delimiter checks in html.c and term.c.  Finally, add
+the escaped period as a closing delimiter, removing a TODO to this
+effect.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.39 2011/03/15 16:23:51 kristaps Exp $ */
+d552 1
+a552 1
+	if (0 == strcmp(p, "\\."))
+d554 1
+a554 1
+	if (0 == strcmp(p, "\\*(Ba"))
+@
+
+
+1.39
+log
+@Make lint shut up a little bit.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.38 2011/03/15 03:03:54 schwarze Exp $ */
+a365 1
+
+a382 1
+
+a417 1
+
+a438 1
+
+a481 1
+
+d508 51
+@
+
+
+1.38
+log
+@my $buf = "string"; return $string;  is cool in Perl, but not in C;
+found by Ulrich Spoerlein <uqs at freebsd> using the clang static analyzer;
+"ok, but please document the numbers" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.37 2011/03/07 01:35:51 schwarze Exp $ */
+d357 1
+a357 1
+	*pos += (cp - start) + (quoted ? 1 : 0);
+@
+
+
+1.37
+log
+@Clean up date handling,
+as a first step to get rid of the frequent petty warnings in this area:
+ - always store dates as strings, not as seconds since the Epoch
+ - for input, try the three most common formats everywhere
+ - for unrecognized format, just pass the date though verbatim
+ - when there is no date at all, still use the current date
+Originally triggered by a one-line patch from Tim van der Molen,
+<tbvdm at xs4all dot nl>, which is included here.
+Feedback and OK on manual parts from jmc@@.
+"please check this in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.36 2011/01/03 22:42:37 schwarze Exp $ */
+d389 2
+a390 3
+	char		 buf[DATESIZE];
+	char		*p;
+	size_t		 nsz, rsz;
+d395 7
+a401 8
+	p = buf;
+	rsz = DATESIZE;
+
+	if (0 == (nsz = strftime(p, rsz, "%B ", &tm)))
+		return(NULL);
+
+	p += (int)nsz;
+	rsz -= nsz;
+d403 3
+a405 2
+	if (-1 == (isz = snprintf(p, rsz, "%d, ", tm.tm_mday)))
+		return(NULL);
+d407 2
+a409 1
+	rsz -= isz;
+d411 7
+a417 1
+	return(strftime(p, rsz, "%Y", &tm) ? buf : NULL);
+d439 1
+a439 1
+	return(mandoc_strdup(out ? out : in));
+@
+
+
+1.36
+log
+@Unify roff macro argument parsing (in roff.c, roff_userdef()) and man macro
+argument parsing (in man_argv.c, man_args()), both having different bugs,
+to use one common macro argument parser (in mandoc.c, mandoc_getarg()),
+because from the point of view of roff, man macros are just roff macros,
+hence their arguments are parsed in exactly the same way.
+
+While doing so, fix these bugs:
+ * Escaped blanks (i.e. those preceded by an odd number of backslashes)
+   were mishandled as argument separators in unquoted arguments to
+   user-defined roff macros.
+ * Unescaped blanks preceded by an even number of backslashes were not
+   recognized as argument separators in unquoted arguments to man macros.
+ * Escaped backslashes (i.e. pairs of backslashes) were not reduced
+   to single backslashes both in unquoted and quoted arguments both
+   to user-defined roff macros and to man macros.
+ * Escaped quotes (i.e. pairs of quotes inside quoted arguments) were
+   not reduced to single quotes in man macros.
+
+OK kristaps@@
+
+Note that mdoc macro argument parsing is yet another beast for no good
+reason and is probably afflicted by similar bugs.  But i don't attempt
+to fix that right now because it is intricately entangled with lots of
+unrelated high-level mdoc(7) functionality, like delimiter handling and
+column list phrase handling.  Disentagling that would waste too much
+time now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.35 2010/09/04 20:18:53 kristaps Exp $ */
+d34 2
+d37 1
+a37 1
+
+d385 32
+a416 6
+/*
+ * Convert from a manual date string (see mdoc(7) and man(7)) into a
+ * date according to the stipulated date type.
+ */
+time_t
+mandoc_a2time(int flags, const char *p)
+d418 1
+d421 10
+a430 20
+	if (MTIME_MDOCDATE & flags) {
+		if (0 == strcmp(p, "$" "Mdocdate$"))
+			return(time(NULL));
+		if (a2time(&t, "$" "Mdocdate: %b %d %Y $", p))
+			return(t);
+	}
+
+	if (MTIME_CANONICAL & flags || MTIME_REDUCED & flags) 
+		if (a2time(&t, "%b %d, %Y", p))
+			return(t);
+
+	if (MTIME_ISO_8601 & flags) 
+		if (a2time(&t, "%Y-%m-%d", p))
+			return(t);
+
+	if (MTIME_REDUCED & flags) {
+		if (a2time(&t, "%d, %Y", p))
+			return(t);
+		if (a2time(&t, "%Y", p))
+			return(t);
+d432 2
+a433 2
+
+	return(0);
+@
+
+
+1.35
+log
+@Churny commit to quiet lint.  No functional changes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.34 2010/08/29 11:28:09 kristaps Exp $ */
+d4 1
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d287 77
+@
+
+
+1.34
+log
+@Remove overstrike `\o'.  This isn't the best solution because we really
+should be printing the contents, but for the time being, this is good
+enough.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.33 2010/08/24 13:56:51 kristaps Exp $ */
+d236 1
+a236 1
+		exit(MANDOCLEVEL_SYSERR);
+d251 1
+a251 1
+		exit(MANDOCLEVEL_SYSERR);
+d265 1
+a265 1
+		exit(MANDOCLEVEL_SYSERR);
+d280 1
+a280 1
+		exit(MANDOCLEVEL_SYSERR);
+@
+
+
+1.33
+log
+@Handle nested, recursive mathematical subexpressions.  This is
+definitely not general, but it's good enough for pod2man definitions
+(after I clean up the roff, which will be addressed in later fixes).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.32 2010/08/24 13:39:37 kristaps Exp $ */
+a61 2
+	case ('o'):
+		/* FALLTHROUGH */
+d200 2
+@
+
+
+1.32
+log
+@Strip out `\k' escape.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.31 2010/08/24 13:07:01 kristaps Exp $ */
+d131 21
+d196 3
+a198 1
+			p += mandoc_special(p);
+@
+
+
+1.31
+log
+@Stripping out of `\w' groff escape.  Yet another for pod2man...
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.30 2010/08/24 12:18:48 kristaps Exp $ */
+d141 1
+a143 1
+#endif
+@
+
+
+1.30
+log
+@Strip out the `\z' escape.  This is the first recursive sequence,
+getting mandoc ready to handle pod2man's complex escapes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.29 2010/08/20 01:02:07 schwarze Exp $ */
+a57 2
+	case ('w'):
+		/* FALLTHROUGH */
+d179 6
+@
+
+
+1.29
+log
+@Implement a simple, consistent user interface for error handling.
+We now have sufficient practical experience to know what we want,
+so this is intended to be final:
+- provide -Wlevel (warning, error or fatal) to select what you care about
+- provide -Wstop to stop after parsing a file with warnings you care about
+- provide consistent exit status codes for those warnings you care about
+- fully document what warnings, errors and fatal errors mean
+- remove all other cruft from the user interface, less is more:
+- remove all -f knobs along with the whole -f option
+- remove the old -Werror because calling warnings "fatal" is silly
+- always finish parsing each file, unless fatal errors prevent that
+This commit also includes a couple of related simplifications behind
+the scenes regarding error handling.
+Feedback and OK  kristaps@@;  Joerg Sonnenberger (NetBSD) and
+Sascha Wildner (DragonFly BSD) agree with the general direction.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.28 2010/08/16 09:37:58 kristaps Exp $ */
+d174 7
+@
+
+
+1.28
+log
+@Add \v and \h to ignored escapes.  These are in the category of \s.
+Also made sign-less \s-style escapes be ok (this is technically against
+what's in the groff.7 manual, but seems pretty widespread).  Noted by
+Thomas Jeunet as uglifying the gcc.1 manual.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.27 2010/07/25 19:05:59 joerg Exp $ */
+d202 1
+a202 1
+		exit(EXIT_FAILURE);
+d217 1
+a217 1
+		exit(EXIT_FAILURE);
+d231 1
+a231 1
+		exit(EXIT_FAILURE);
+d246 1
+a246 1
+		exit(EXIT_FAILURE);
+@
+
+
+1.27
+log
+@Ensure that isalnum is called with unsigned char argument.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.26 2010/07/22 14:03:50 kristaps Exp $ */
+a59 2
+	case ('v'):
+		/* FALLTHROUGH */
+d92 4
+d99 3
+a101 1
+		if ('+' == *p || '-' == *p)
+d103 2
+a104 2
+
+		i = ('s' != *(p - 1));
+d117 1
+a117 1
+			i++;
+d128 1
+a128 1
+			if (i++)
+a132 2
+		if (0 == i)
+			return(0);
+@
+
+
+1.26
+log
+@Accept "\s0" (i.e., properly ignore it).  Found in the wild (e.g., gfdl.7).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.25 2010/07/21 20:35:03 kristaps Exp $ */
+d340 1
+a340 1
+			return(found && (!enclosed || isalnum(*q)));
+@
+
+
+1.25
+log
+@Accomodate for groff's crappy behaviour wherein an unrecognised
+single-character escape (and ONLY this type of escape) will map back
+into itself:
+
+       "If a backslash is followed by a character that does not
+	constitute a defined escape sequence the backslash is silently
+        ignored and the  character maps to itself."
+
+(From groff.7.)
+
+Found by Jason McIntyre.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.24 2010/07/18 22:55:06 kristaps Exp $ */
+d112 3
+@
+
+
+1.24
+log
+@Throw out a2roffdeco() in out.c for a readable version.  The prior one
+was completely unmaintainable.  The new one is both readable and quite
+similar to mandoc_special(), which in future versions will easily allow
+throwing-away of unsupported escapes (such as \m).  It's also a fair bit
+smaller.
+
+DECO_SIZE has been removed: this crap, like colours, will not be
+supported.
+
+mandoc_special() also has #if 0'd switch branches for ALL groff.7
+escapes and some lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.23 2010/07/18 17:00:26 schwarze Exp $ */
+d317 1
+a317 1
+	for (q = p + sz - 1; q >= p; q--) {
+@
+
+
+1.23
+log
+@Text ending in a full stop, exclamation mark or question mark
+should not flag the end of a sentence if:
+
+1) The punctuation is followed by closing delimiters
+and not preceded by alphanumeric characters, like in
+"There is no full stop (.) in this sentence"
+
+or
+
+2) The punctuation is a child of a macro
+and not preceded by alphanumeric characters, like in
+"There is no full stop
+.Pq \&.
+in this sentence"
+
+"looks fine" to kristaps@@; tested by jmc@@ and sobrado@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.22 2010/07/18 12:10:08 kristaps Exp $ */
+d51 43
+d129 16
+d179 1
+a179 1
+		return(*p ? p - sv : 0);
+d185 1
+a185 1
+	return(i == len ? p - sv : 0);
+@
+
+
+1.22
+log
+@Clean up mandoc_special() (in order later to catch \m).  It also flags
+several syntactic errors that weren't caught before.
+
+Also un-puke chars.c on zero-length \[].
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.21 2010/07/06 22:04:31 kristaps Exp $ */
+d243 1
+a243 1
+mandoc_eos(const char *p, size_t sz)
+d245 2
+d257 3
+a259 2
+	for ( ; sz; sz--) {
+		switch (p[(int)sz - 1]) {
+d267 2
+a270 3
+			/* Escaped periods. */
+			if (sz > 1 && '\\' == p[(int)sz - 2])
+				return(0);
+d275 2
+a276 1
+			return(1);
+d278 1
+a278 1
+			return(0);
+d282 1
+a282 1
+	return(0);
+@
+
+
+1.21
+log
+@Resurrect mandoc.c after bogus removal (was: libmandoc.c).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.19 2010/06/19 20:46:28 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+a33 18
+static	int	 spec_norm(char *, int);
+
+
+/*
+ * "Normalise" a special string by converting its ASCII_HYPH entries
+ * into actual hyphens.
+ */
+static int
+spec_norm(char *p, int sz)
+{
+	int		 i;
+
+	for (i = 0; i < sz; i++)
+		if (ASCII_HYPH == p[i])
+			p[i] = '-';
+
+	return(sz);
+}
+d39 2
+a40 3
+	int		 terminator;	/* Terminator for \s. */
+	int		 lim;		/* Limit for N in \s. */
+	int		 c, i;
+d43 2
+d47 2
+a48 2
+	if ('\\' != *p++)
+		return(spec_norm(sv, 0));
+d50 1
+a50 35
+	switch (*p) {
+	case ('\''):
+		/* FALLTHROUGH */
+	case ('`'):
+		/* FALLTHROUGH */
+	case ('q'):
+		/* FALLTHROUGH */
+	case (ASCII_HYPH):
+		/* FALLTHROUGH */
+	case ('-'):
+		/* FALLTHROUGH */
+	case ('~'):
+		/* FALLTHROUGH */
+	case ('^'):
+		/* FALLTHROUGH */
+	case ('%'):
+		/* FALLTHROUGH */
+	case ('0'):
+		/* FALLTHROUGH */
+	case (' '):
+		/* FALLTHROUGH */
+	case ('}'):
+		/* FALLTHROUGH */
+	case ('|'):
+		/* FALLTHROUGH */
+	case ('&'):
+		/* FALLTHROUGH */
+	case ('.'):
+		/* FALLTHROUGH */
+	case (':'):
+		/* FALLTHROUGH */
+	case ('c'):
+		/* FALLTHROUGH */
+	case ('e'):
+		return(spec_norm(sv, 2));
+d52 4
+a55 23
+		if ('\0' == *++p)
+			return(spec_norm(sv, 2));
+
+		c = 2;
+		terminator = 0;
+		lim = 1;
+
+		if (*p == '\'') {
+			lim = 0;
+			terminator = 1;
+			++p;
+			++c;
+		} else if (*p == '[') {
+			lim = 0;
+			terminator = 2;
+			++p;
+			++c;
+		} else if (*p == '(') {
+			lim = 2;
+			terminator = 3;
+			++p;
+			++c;
+		}
+d57 1
+a57 4
+		if (*p == '+' || *p == '-') {
+			++p;
+			++c;
+		}
+d59 14
+a72 21
+		if (*p == '\'') {
+			if (terminator)
+				return(spec_norm(sv, 0));
+			lim = 0;
+			terminator = 1;
+			++p;
+			++c;
+		} else if (*p == '[') {
+			if (terminator)
+				return(spec_norm(sv, 0));
+			lim = 0;
+			terminator = 2;
+			++p;
+			++c;
+		} else if (*p == '(') {
+			if (terminator)
+				return(spec_norm(sv, 0));
+			lim = 2;
+			terminator = 3;
+			++p;
+			++c;
+d75 11
+a85 22
+		/* TODO: needs to handle floating point. */
+
+		if ( ! isdigit((u_char)*p))
+			return(spec_norm(sv, 0));
+
+		for (i = 0; isdigit((u_char)*p); i++) {
+			if (lim && i >= lim)
+				break;
+			++p;
+			++c;
+		}
+
+		if (terminator && terminator < 3) {
+			if (1 == terminator && *p != '\'')
+				return(spec_norm(sv, 0));
+			if (2 == terminator && *p != ']')
+				return(spec_norm(sv, 0));
+			++p;
+			++c;
+		}
+
+		return(spec_norm(sv, c));
+d91 1
+a91 3
+		if ('\0' == *++p || isspace((u_char)*p))
+			return(spec_norm(sv, 0));
+		switch (*p) {
+d93 2
+a94 3
+			if ('\0' == *++p || isspace((u_char)*p))
+				return(spec_norm(sv, 0));
+			return(spec_norm(sv, 4));
+d96 2
+a97 4
+			for (c = 3, p++; *p && ']' != *p; p++, c++)
+				if (isspace((u_char)*p))
+					break;
+			return(spec_norm(sv, *p == ']' ? c : 0));
+d99 2
+d103 1
+a103 1
+		return(spec_norm(sv, 3));
+d105 2
+a106 5
+		if ('\0' == *++p || isspace((u_char)*p))
+			return(spec_norm(sv, 0));
+		if ('\0' == *++p || isspace((u_char)*p))
+			return(spec_norm(sv, 0));
+		return(spec_norm(sv, 4));
+d108 1
+d111 3
+a113 1
+		return(spec_norm(sv, 0));
+d116 6
+a121 3
+	for (c = 3, p++; *p && ']' != *p; p++, c++)
+		if (isspace((u_char)*p))
+			break;
+d123 4
+a126 1
+	return(spec_norm(sv, *p == ']' ? c : 0));
+@
+
+
+1.20
+log
+@Renamed mandoc.c to libmandoc.c.  This is in the efforts of getting a
+cleaner namespace for functions across the entire system (mandoc.h:
+getting parsed-string values, or declarations necessary for the AST
+data), and compiler functions (libmandoc.h: back-end functions and
+declarations).
+@
+text
+@d1 396
+@
+
+
+1.19
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@a0 396
+/*	$Id: mandoc.c,v 1.18 2010/06/09 19:22:56 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+#include "mandoc.h"
+#include "libmandoc.h"
+
+static	int	 a2time(time_t *, const char *, const char *);
+static	int	 spec_norm(char *, int);
+
+
+/*
+ * "Normalise" a special string by converting its ASCII_HYPH entries
+ * into actual hyphens.
+ */
+static int
+spec_norm(char *p, int sz)
+{
+	int		 i;
+
+	for (i = 0; i < sz; i++)
+		if (ASCII_HYPH == p[i])
+			p[i] = '-';
+
+	return(sz);
+}
+
+
+int
+mandoc_special(char *p)
+{
+	int		 terminator;	/* Terminator for \s. */
+	int		 lim;		/* Limit for N in \s. */
+	int		 c, i;
+	char		*sv;
+	
+	sv = p;
+
+	if ('\\' != *p++)
+		return(spec_norm(sv, 0));
+
+	switch (*p) {
+	case ('\''):
+		/* FALLTHROUGH */
+	case ('`'):
+		/* FALLTHROUGH */
+	case ('q'):
+		/* FALLTHROUGH */
+	case (ASCII_HYPH):
+		/* FALLTHROUGH */
+	case ('-'):
+		/* FALLTHROUGH */
+	case ('~'):
+		/* FALLTHROUGH */
+	case ('^'):
+		/* FALLTHROUGH */
+	case ('%'):
+		/* FALLTHROUGH */
+	case ('0'):
+		/* FALLTHROUGH */
+	case (' '):
+		/* FALLTHROUGH */
+	case ('}'):
+		/* FALLTHROUGH */
+	case ('|'):
+		/* FALLTHROUGH */
+	case ('&'):
+		/* FALLTHROUGH */
+	case ('.'):
+		/* FALLTHROUGH */
+	case (':'):
+		/* FALLTHROUGH */
+	case ('c'):
+		/* FALLTHROUGH */
+	case ('e'):
+		return(spec_norm(sv, 2));
+	case ('s'):
+		if ('\0' == *++p)
+			return(spec_norm(sv, 2));
+
+		c = 2;
+		terminator = 0;
+		lim = 1;
+
+		if (*p == '\'') {
+			lim = 0;
+			terminator = 1;
+			++p;
+			++c;
+		} else if (*p == '[') {
+			lim = 0;
+			terminator = 2;
+			++p;
+			++c;
+		} else if (*p == '(') {
+			lim = 2;
+			terminator = 3;
+			++p;
+			++c;
+		}
+
+		if (*p == '+' || *p == '-') {
+			++p;
+			++c;
+		}
+
+		if (*p == '\'') {
+			if (terminator)
+				return(spec_norm(sv, 0));
+			lim = 0;
+			terminator = 1;
+			++p;
+			++c;
+		} else if (*p == '[') {
+			if (terminator)
+				return(spec_norm(sv, 0));
+			lim = 0;
+			terminator = 2;
+			++p;
+			++c;
+		} else if (*p == '(') {
+			if (terminator)
+				return(spec_norm(sv, 0));
+			lim = 2;
+			terminator = 3;
+			++p;
+			++c;
+		}
+
+		/* TODO: needs to handle floating point. */
+
+		if ( ! isdigit((u_char)*p))
+			return(spec_norm(sv, 0));
+
+		for (i = 0; isdigit((u_char)*p); i++) {
+			if (lim && i >= lim)
+				break;
+			++p;
+			++c;
+		}
+
+		if (terminator && terminator < 3) {
+			if (1 == terminator && *p != '\'')
+				return(spec_norm(sv, 0));
+			if (2 == terminator && *p != ']')
+				return(spec_norm(sv, 0));
+			++p;
+			++c;
+		}
+
+		return(spec_norm(sv, c));
+	case ('f'):
+		/* FALLTHROUGH */
+	case ('F'):
+		/* FALLTHROUGH */
+	case ('*'):
+		if ('\0' == *++p || isspace((u_char)*p))
+			return(spec_norm(sv, 0));
+		switch (*p) {
+		case ('('):
+			if ('\0' == *++p || isspace((u_char)*p))
+				return(spec_norm(sv, 0));
+			return(spec_norm(sv, 4));
+		case ('['):
+			for (c = 3, p++; *p && ']' != *p; p++, c++)
+				if (isspace((u_char)*p))
+					break;
+			return(spec_norm(sv, *p == ']' ? c : 0));
+		default:
+			break;
+		}
+		return(spec_norm(sv, 3));
+	case ('('):
+		if ('\0' == *++p || isspace((u_char)*p))
+			return(spec_norm(sv, 0));
+		if ('\0' == *++p || isspace((u_char)*p))
+			return(spec_norm(sv, 0));
+		return(spec_norm(sv, 4));
+	case ('['):
+		break;
+	default:
+		return(spec_norm(sv, 0));
+	}
+
+	for (c = 3, p++; *p && ']' != *p; p++, c++)
+		if (isspace((u_char)*p))
+			break;
+
+	return(spec_norm(sv, *p == ']' ? c : 0));
+}
+
+
+void *
+mandoc_calloc(size_t num, size_t size)
+{
+	void		*ptr;
+
+	ptr = calloc(num, size);
+	if (NULL == ptr) {
+		perror(NULL);
+		exit(EXIT_FAILURE);
+	}
+
+	return(ptr);
+}
+
+
+void *
+mandoc_malloc(size_t size)
+{
+	void		*ptr;
+
+	ptr = malloc(size);
+	if (NULL == ptr) {
+		perror(NULL);
+		exit(EXIT_FAILURE);
+	}
+
+	return(ptr);
+}
+
+
+void *
+mandoc_realloc(void *ptr, size_t size)
+{
+
+	ptr = realloc(ptr, size);
+	if (NULL == ptr) {
+		perror(NULL);
+		exit(EXIT_FAILURE);
+	}
+
+	return(ptr);
+}
+
+
+char *
+mandoc_strdup(const char *ptr)
+{
+	char		*p;
+
+	p = strdup(ptr);
+	if (NULL == p) {
+		perror(NULL);
+		exit(EXIT_FAILURE);
+	}
+
+	return(p);
+}
+
+
+static int
+a2time(time_t *t, const char *fmt, const char *p)
+{
+	struct tm	 tm;
+	char		*pp;
+
+	memset(&tm, 0, sizeof(struct tm));
+
+	pp = strptime(p, fmt, &tm);
+	if (NULL != pp && '\0' == *pp) {
+		*t = mktime(&tm);
+		return(1);
+	}
+
+	return(0);
+}
+
+
+/*
+ * Convert from a manual date string (see mdoc(7) and man(7)) into a
+ * date according to the stipulated date type.
+ */
+time_t
+mandoc_a2time(int flags, const char *p)
+{
+	time_t		 t;
+
+	if (MTIME_MDOCDATE & flags) {
+		if (0 == strcmp(p, "$" "Mdocdate$"))
+			return(time(NULL));
+		if (a2time(&t, "$" "Mdocdate: %b %d %Y $", p))
+			return(t);
+	}
+
+	if (MTIME_CANONICAL & flags || MTIME_REDUCED & flags) 
+		if (a2time(&t, "%b %d, %Y", p))
+			return(t);
+
+	if (MTIME_ISO_8601 & flags) 
+		if (a2time(&t, "%Y-%m-%d", p))
+			return(t);
+
+	if (MTIME_REDUCED & flags) {
+		if (a2time(&t, "%d, %Y", p))
+			return(t);
+		if (a2time(&t, "%Y", p))
+			return(t);
+	}
+
+	return(0);
+}
+
+
+int
+mandoc_eos(const char *p, size_t sz)
+{
+
+	if (0 == sz)
+		return(0);
+
+	/*
+	 * End-of-sentence recognition must include situations where
+	 * some symbols, such as `)', allow prior EOS punctuation to
+	 * propogate outward.
+	 */
+
+	for ( ; sz; sz--) {
+		switch (p[(int)sz - 1]) {
+		case ('\"'):
+			/* FALLTHROUGH */
+		case ('\''):
+			/* FALLTHROUGH */
+		case (']'):
+			/* FALLTHROUGH */
+		case (')'):
+			break;
+		case ('.'):
+			/* Escaped periods. */
+			if (sz > 1 && '\\' == p[(int)sz - 2])
+				return(0);
+			/* FALLTHROUGH */
+		case ('!'):
+			/* FALLTHROUGH */
+		case ('?'):
+			return(1);
+		default:
+			return(0);
+		}
+	}
+
+	return(0);
+}
+
+
+int
+mandoc_hyph(const char *start, const char *c)
+{
+
+	/*
+	 * Choose whether to break at a hyphenated character.  We only
+	 * do this if it's free-standing within a word.
+	 */
+
+	/* Skip first/last character of buffer. */
+	if (c == start || '\0' == *(c + 1))
+		return(0);
+	/* Skip first/last character of word. */
+	if ('\t' == *(c + 1) || '\t' == *(c - 1))
+		return(0);
+	if (' ' == *(c + 1) || ' ' == *(c - 1))
+		return(0);
+	/* Skip double invocations. */
+	if ('-' == *(c + 1) || '-' == *(c - 1))
+		return(0);
+	/* Skip escapes. */
+	if ('\\' == *(c - 1))
+		return(0);
+
+	return(1);
+}
+@
+
+
+1.18
+log
+@Squash bug noted by Ulrich Spoerlein where "-" were being converted to
+ASCII_HYPH, as per normal, but were screwing up mandoc_special().  Fixed
+by making mandoc_special() first check isspace() instead of ! isgraph(),
+then normalise its string as it passes out.  This require de-constifying
+some validation routines not already de-constified (those in libman),
+but that's ok, because I'd like to be pushing actions into validation
+routines to save on space and redundant calculations.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.17 2010/06/01 11:47:28 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.17
+log
+@Fixed condition of `\}' closing a conditional at the start of the line.
+
+Fixed flushed-out condition of \} causing subsequent arguments to be
+truncated, when in fact the whole line should be passed through (if the
+conditional succeeds) to the front-end and the \} ignored there.
+
+Added regression test of this behaviour.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.16 2010/05/25 12:37:20 kristaps Exp $ */
+d30 1
+d33 19
+a51 1
+static int	 a2time(time_t *, const char *, const char *);
+d55 1
+a55 1
+mandoc_special(const char *p)
+d60 1
+d62 2
+d65 1
+a65 1
+		return(0);
+d74 2
+d99 1
+a99 1
+		return(2);
+d101 1
+a101 1
+		return(2);
+d104 1
+a104 1
+			return(2);
+d134 1
+a134 1
+				return(0);
+d141 1
+a141 1
+				return(0);
+d148 1
+a148 1
+				return(0);
+d158 1
+a158 1
+			return(0);
+d169 1
+a169 1
+				return(0);
+d171 1
+a171 1
+				return(0);
+d176 1
+a176 1
+		return(c);
+d182 2
+a183 2
+		if (0 == *++p || ! isgraph((u_char)*p))
+			return(0);
+d186 3
+a188 3
+			if (0 == *++p || ! isgraph((u_char)*p))
+				return(0);
+			return(4);
+d191 1
+a191 1
+				if ( ! isgraph((u_char)*p))
+d193 1
+a193 1
+			return(*p == ']' ? c : 0);
+d197 1
+a197 1
+		return(3);
+d199 5
+a203 5
+		if (0 == *++p || ! isgraph((u_char)*p))
+			return(0);
+		if (0 == *++p || ! isgraph((u_char)*p))
+			return(0);
+		return(4);
+d207 1
+a207 1
+		return(0);
+d211 1
+a211 1
+		if ( ! isgraph((u_char)*p))
+d214 1
+a214 1
+	return(*p == ']' ? c : 0);
+@
+
+
+1.16
+log
+@Modified version of Ingo Schwarze's patch for hyphen-breaking.
+Breakable hyphens are cued in the back-ends (with ASCII_HYPH) and acted
+upon in term.c or ignored in html.c.
+
+Also cleaned up XML decl printing (no need for extra vars).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.15 2010/05/15 07:01:51 kristaps Exp $ */
+d64 2
+@
+
+
+1.15
+log
+@Documented EOS buffered spaces and added `]'.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.14 2010/05/15 06:48:13 kristaps Exp $ */
+d343 28
+@
+
+
+1.14
+log
+@More EOS: append_delims() fitted with EOS detection, so ANY macro with appended delimiters will properly EOS.
+Fixed mandoc_eos() to accept sentence punctuation followed by close-delim buffers.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.13 2010/05/14 14:09:13 kristaps Exp $ */
+d323 2
+@
+
+
+1.13
+log
+@Block-implicit macros now up-propogate end-of-sentence spacing.  NOTE: GROFF IS NOT SMART ENOUGH TO DO THIS.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.12 2010/05/12 17:08:03 kristaps Exp $ */
+d311 24
+a334 4
+	switch (p[(int)sz - 1]) {
+	case ('.'):
+		/* Escaped periods. */
+		if (sz > 1 && '\\' == p[(int)sz - 2])
+d336 1
+a336 7
+		/* FALLTHROUGH */
+	case ('!'):
+		/* FALLTHROUGH */
+	case ('?'):
+		break;
+	default:
+		return(0);
+d339 1
+a339 1
+	return(1);
+@
+
+
+1.12
+log
+@Put the eos-checker into libmandoc.h.
+Added bits in mdoc.7 and man.7 about EOS spacing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.11 2010/04/07 11:25:38 kristaps Exp $ */
+d308 2
+a309 1
+	assert(sz);
+@
+
+
+1.11
+log
+@Add support/ignoring of \f(xy, \f[X...], \F(xy, \FX, \F[X...] roff-style font escapes (noted by Frantisek Holop).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.10 2010/01/05 19:51:10 kristaps Exp $ */
+d303 23
+@
+
+
+1.10
+log
+@Removed references to `\\' escape (noted by Jason McIntyre, Ingo Schwarze).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.9 2010/01/01 17:14:28 kristaps Exp $ */
+a75 4
+	case ('f'):
+		if ('\0' == *++p || ! isgraph((u_char)*p))
+			return(0);
+		return(3);
+d151 4
+@
+
+
+1.9
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.8 2009/11/05 10:16:01 kristaps Exp $ */
+a45 2
+	case ('\\'):
+		/* FALLTHROUGH */
+@
+
+
+1.8
+log
+@Documented that `\s' and `\f' don't work in HTML mode (and why).
+Added support for recognising the many forms of `\s' (doesn't yet render).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.7 2009/11/02 06:22:45 kristaps Exp $ */
+d17 2
+a18 2
+#if defined(__linux__) || defined(__MINT__)
+# define _GNU_SOURCE /* strptime() */
+@
+
+
+1.7
+log
+@Added mandoc_a2time() for proper date conversion.
+Fitted TH and Dd handlers to use mandoc_a2time().
+Documented date syntax for -man, fixed documentation for -mdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.6 2009/10/31 06:10:58 kristaps Exp $ */
+d38 3
+a40 1
+	int		 c;
+d79 1
+a79 1
+		if (0 == *++p || ! isgraph((u_char)*p))
+d82 75
+@
+
+
+1.6
+log
+@Using perror() instead of fprintf for failure from library functions.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.5 2009/10/30 05:58:38 kristaps Exp $ */
+d17 4
+d28 1
+d32 3
+d174 54
+@
+
+
+1.5
+log
+@libmdoc and libman now using non-recoverable allocations (simpler code).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.4 2009/10/28 19:21:59 kristaps Exp $ */
+d116 1
+a116 1
+		fprintf(stderr, "memory exhausted\n");
+d131 1
+a131 1
+		fprintf(stderr, "memory exhausted\n");
+d145 1
+a145 1
+		fprintf(stderr, "memory exhausted\n");
+d160 1
+a160 1
+		fprintf(stderr, "memory exhausted\n");
+@
+
+
+1.4
+log
+@Slow movement of internal allocations to fail completely.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.3 2009/07/24 20:22:24 kristaps Exp $ */
+a152 13
+void *
+mandoc_reallocf(void *old_ptr, size_t size) /* FIXME: remove (not used) */
+{
+	void		*ptr;
+
+	ptr = realloc(old_ptr, size);
+	if (NULL == ptr)
+		free(old_ptr);
+
+	return(ptr);
+}
+
+
+@
+
+
+1.3
+log
+@Added `sp' support to libman.
+Added `\c' to known escapes (only used in man, but still).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.2 2009/07/12 09:48:00 kristaps Exp $ */
+d22 2
+d108 71
+@
+
+
+1.2
+log
+@Fix for u_char, FreeBSD 7.2 (uqs@@spoerlein.net).
+@
+text
+@d1 1
+a1 1
+/*	$Id: mandoc.c,v 1.1 2009/07/04 09:01:55 kristaps Exp $ */
+d62 2
+@
+
+
+1.1
+log
+@Moved escape validation into libmandoc.h/mandoc.c (common between libman/libmdoc1).
+libman supports MAN_IGN_ESCAPE (like MDOC_IGN_ESCAPE).
+All popular escapes now handled consistently.
+@
+text
+@d1 1
+a1 1
+/*	$Id: mdoc_validate.c,v 1.17 2009/06/27 09:03:03 kristaps Exp $ */
+d17 2
+@

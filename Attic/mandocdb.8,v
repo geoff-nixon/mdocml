@@ -1,0 +1,1492 @@
+head	1.26;
+access;
+symbols
+	VERSION_1_12_4:1.17.2.2
+	VERSION_1_12_3:1.17.2.1
+	VERSION_1_12_2:1.17.2.1
+	VERSION_1_12:1.17.0.2
+	VERSION_1_12_1:1.17
+	VERSION_1_12_0:1.4
+	VERSION_1_11_7:1.4
+	VERSION_1_11_6:1.3
+	VERSION_1_11_5:1.3;
+locks; strict;
+comment	@# @;
+
+
+1.26
+date	2014.04.18.10.30.37;	author schwarze;	state dead;
+branches;
+next	1.25;
+
+1.25
+date	2014.04.04.02.31.07;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2014.04.03.16.27.28;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2014.04.03.15.37.19;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2014.04.03.15.24.32;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2014.03.17.08.34.00;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2013.10.01.20.56.18;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2012.06.08.10.43.01;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.12.25.21.00.23;	author schwarze;	state Exp;
+branches
+	1.17.2.1;
+next	1.16;
+
+1.16
+date	2011.12.25.16.53.51;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.12.25.13.08.12;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.12.16.12.06.35;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.12.16.08.04.34;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.12.12.02.00.49;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.12.02.00.21.56;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.12.01.21.05.49;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.11.29.11.17.47;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.11.28.01.37.34;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.11.26.11.23.56;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.11.23.09.52.20;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.10.09.08.56.27;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.08.18.08.58.44;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.07.15.17.59.29;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.07.15.10.15.24;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.07.14.14.36.37;	author schwarze;	state Exp;
+branches;
+next	;
+
+1.17.2.1
+date	2013.09.18.01.04.07;	author schwarze;	state Exp;
+branches;
+next	1.17.2.2;
+
+1.17.2.2
+date	2014.03.17.09.04.52;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.26
+log
+@Slowly, the dust begins to settle.
+We are keeping the traditional name makewhatis(8).
+No content change.
+@
+text
+@@
+
+
+1.25
+log
+@When the -n or -t flag is given to makewhatis(8),
+write names and decriptions to stdout,
+in a format similar to apropos(1) output.
+Inspired by espie@@'s makewhatis.
+@
+text
+@a0 217
+.\"	$Id: mandocdb.8,v 1.24 2014/04/03 16:27:28 schwarze Exp $
+.\"
+.\" Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: April 3 2014 $
+.Dt MANDOCDB 8
+.Os
+.Sh NAME
+.Nm mandocdb
+.Nd index UNIX manuals
+.Sh SYNOPSIS
+.Nm
+.Op Fl aDnpQ
+.Op Fl T Cm utf8
+.Op Fl C Ar file
+.Nm
+.Op Fl aDnpQ
+.Op Fl T Cm utf8
+.Ar dir ...
+.Nm
+.Op Fl DnpQ
+.Op Fl T Cm utf8
+.Fl d Ar dir
+.Op Ar
+.Nm
+.Op Fl Dnp
+.Op Fl T Cm utf8
+.Fl u Ar dir
+.Op Ar
+.Nm
+.Op Fl Q
+.Fl t Ar
+.Sh DESCRIPTION
+The
+.Nm
+utility extracts keywords from
+.Ux
+manuals and indexes them in a database for fast retrieval by
+.Xr apropos 1 ,
+.Xr whatis 1 ,
+and
+.Xr man 1 Ns 's
+.Fl k
+option.
+.Pp
+By default,
+.Nm
+creates a database in each
+.Ar dir
+using the files
+.Sm off
+.Sy man Ar section Li /
+.Op Ar arch Li /
+.Ar title . section
+.Sm on
+and
+.Sm off
+.Sy cat Ar section Li /
+.Op Ar arch Li /
+.Ar title . Sy 0
+.Sm on
+in that directory.
+Existing databases are replaced.
+If
+.Ar dir
+is not provided,
+.Nm
+uses the default paths stipulated by
+.Xr manpath 1 ,
+or
+.Xr man.conf 5 .
+.Pp
+The arguments are as follows:
+.Bl -tag -width "-C file"
+.It Fl a
+Use all directories and files found below
+.Ar dir ... .
+.It Fl C Ar file
+Specify an alternative configuration
+.Ar file
+in
+.Xr man.conf 5
+format.
+.It Fl D
+Display all files added or removed to the index.
+With a second
+.Fl D ,
+also show all keyswords added for each file.
+.It Fl d Ar dir
+Merge (remove and re-add)
+.Ar
+to the database in
+.Ar dir .
+.It Fl n
+Do not create or modify any database; scan and parse only,
+and print manual page names and descriptions to standard output.
+.It Fl p
+Print warnings about potential problems with manual pages
+to the standard error output.
+.It Fl Q
+Quickly build reduced-size databases
+by reading only the NAME sections of manuals.
+The resulting databases will usually contain names and descriptions only.
+.It Fl T Cm utf8
+Use UTF-8 encoding instead of ASCII for strings stored in the databases.
+.It Fl t Ar
+Check the given
+.Ar files
+for potential problems.
+Implies
+.Fl a ,
+.Fl n ,
+and
+.Fl p .
+All diagnostic messages are printed to the standard output;
+the standard error output is not used.
+.It Fl u Ar dir
+Remove
+.Ar
+from the database in
+.Ar dir .
+.El
+.Pp
+If fatal parse errors are encountered while parsing, the offending file
+is printed to stderr, omitted from the index, and the parse continues
+with the next input file.
+.Sh FILES
+.Bl -tag -width Ds
+.It Pa mandoc.db
+A database of manpages relative to the directory of the file.
+This file is portable across architectures and systems, so long as the
+manpage hierarchy it indexes does not change.
+.It Pa /etc/man.conf
+The default
+.Xr man 1
+configuration file.
+.El
+.Sh EXIT STATUS
+The
+.Nm
+utility exits with one of the following values:
+.Pp
+.Bl -tag -width Ds -compact
+.It 0
+No errors occurred.
+.It 5
+Invalid command line arguments were specified.
+No input files have been read.
+.It 6
+An operating system error occurred, for example memory exhaustion or an
+error accessing input files.
+Such errors cause
+.Nm
+to exit at once, possibly in the middle of parsing or formatting a file.
+The output databases are corrupt and should be removed.
+.El
+.Sh SEE ALSO
+.Xr apropos 1 ,
+.Xr man 1 ,
+.Xr whatis 1 ,
+.Xr man.conf 5
+.Sh HISTORY
+A
+.Nm makewhatis
+utility first appeared in
+.Bx 2 .
+It was rewritten in
+.Xr perl 1
+for
+.Ox 2.7
+and in C for
+.Ox 5.6 .
+.Pp
+The
+.Ar dir
+argument first appeared in
+.Nx 1.0 ;
+the options
+.Fl dpt
+in
+.Ox 2.7 ;
+the option
+.Fl u
+in
+.Ox 3.4 ;
+and the options
+.Fl aCDnQT
+in
+.Ox 5.6 .
+.Sh AUTHORS
+.An -nosplit
+.An Bill Joy
+wrote the original
+.Bx
+.Nm makewhatis
+in February 1979,
+.An Marc Espie
+started the Perl version in 2000,
+and the current version of
+.Nm
+was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv
+and
+.An Ingo Schwarze Aq Mt schwarze@@openbsd.org .
+@
+
+
+1.24
+log
+@Rename the -W option to -p (mnemonics: picky, print to stderr):
+That letter was already chosen by espie@@ for OpenBSD 2.7,
+so avoid being gratuitiously different more than a decade later.
+Accept -v for backward compatibility with espie@@'s makewhatis,
+even though it does nothing right now.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.23 2014/04/03 15:37:19 schwarze Exp $
+d108 2
+a109 2
+Do not create or modify any database;
+scan and parse only.
+@
+
+
+1.23
+log
+@The -v option of mandocdb(8) clashes with the -v option of espie@@'s
+makewhatis(8), which traditionally does something different,
+so rename it to -D (mnemonics: Debug, Dump, Display).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.22 2014/04/03 15:24:32 schwarze Exp $
+d26 1
+a26 1
+.Op Fl aDnQW
+d30 1
+a30 1
+.Op Fl aDnQW
+d34 1
+a34 1
+.Op Fl DnQW
+d39 1
+a39 1
+.Op Fl DnW
+d110 3
+d127 1
+a127 1
+.Fl W .
+a134 3
+.It Fl W
+Print warnings about potential problems with manual pages
+to the standard error output.
+d192 1
+a192 1
+.Fl dtu
+d195 4
+d200 1
+a200 1
+.Fl aCDnQTW
+@
+
+
+1.22
+log
+@document -Q and -T; from OpenBSD
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.21 2014/03/17 08:34:00 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: March 17 2014 $
+d26 1
+a26 1
+.Op Fl anQvW
+d30 1
+a30 1
+.Op Fl anQvW
+d34 1
+a34 1
+.Op Fl nQvW
+d39 1
+a39 1
+.Op Fl nvW
+a131 2
+.It Fl v
+Display all files added or removed to the index.
+d196 1
+a196 1
+.Fl aCnQTvW
+@
+
+
+1.21
+log
+@minor sync to OpenBSD
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.20 2013/10/01 20:56:18 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 1 2013 $
+d26 2
+a27 1
+.Op Fl anvW
+d30 2
+a31 1
+.Op Fl anvW
+d34 2
+a35 1
+.Op Fl nvW
+d40 1
+d44 1
+d97 5
+d110 6
+d187 1
+a187 1
+.Ox 5.1 .
+d198 1
+a198 1
+.Fl aCvW
+d200 1
+a200 1
+.Ox 5.1 .
+@
+
+
+1.20
+log
+@Merge the relevant parts from the VERSION_1_12 branch:
+- change mandocdb.db to mandoc.db
+- add HISTORY to mandocdb(8)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.19 2013/07/13 19:41:16 schwarze Exp $
+d4 1
+d18 1
+a18 1
+.Dd $Mdocdate: July 13 2013 $
+d50 3
+a52 1
+.Xr man 1 .
+d132 4
+a135 2
+.It Pa mandoc.db~
+A temporary database used during scanning and parsing.
+d138 18
+a155 1
+.Ex -std
+@
+
+
+1.19
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.18 2012/06/08 10:43:01 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 8 2012 $
+d125 1
+a125 1
+.It Pa mandocdb.db
+d129 1
+a129 1
+.It Pa mandocdb.db~
+d139 24
+d164 9
+a172 1
+The
+d174 2
+a175 2
+utility was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv ,
+@
+
+
+1.18
+log
+@Re-tooled mandocdb using sqlite3 and ohash.
+See the tech@@ mailing list entries in June 2012 for details, as well as the
+discuss@@ mailing list entries from March 2012.
+Among other changes, this utility now:
+ 1.  uses a single sqlite3 database instead of several berkeley dbs
+ 2.  stores utf-8 encoded strings
+ 3.  using ohash to aggressively hash its contents
+ 4.  using fts() instead of manually walking directories
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.17 2011/12/25 21:00:23 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 25 2011 $
+d143 1
+a143 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv ,
+d145 1
+a145 2
+.An Ingo Schwarze ,
+.Mt schwarze@@openbsd.org .
+@
+
+
+1.17
+log
+@Update the whatis.db database format.
+While here, reference apropos(1) from the description,
+inspired by the makewhatis(8) manual.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.16 2011/12/25 16:53:51 schwarze Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+d25 1
+a25 1
+.Op Fl avW
+d28 1
+a28 1
+.Op Fl avW
+d31 1
+a31 1
+.Op Fl vW
+d35 1
+a35 1
+.Op Fl vW
+d45 1
+a45 5
+manuals and indexes them in a
+.Sx Keyword Database
+and
+.Sx Index Database
+for fast retrieval by
+d49 1
+a49 3
+.Xr man 1 Ns 's
+.Fl k
+option.
+d53 1
+a53 1
+creates databases in each
+d67 2
+a68 2
+in that directory;
+existing databases are truncated.
+d74 3
+a76 1
+.Xr man 1 .
+d93 4
+a96 2
+.Ar dir
+without truncating it.
+a100 1
+No databases are modified.
+d102 2
+a103 1
+.Fl a
+d112 1
+a112 2
+.Ar dir
+without truncating it.
+a122 100
+.Ss Index Database
+The index database,
+.Pa whatis.index ,
+is a
+.Xr recno 3
+database with record values consisting of
+.Pp
+.Bl -enum -compact
+.It
+the character
+.Cm d ,
+.Cm a ,
+or
+.Cm c
+to indicate the file type
+.Po
+.Xr mdoc 7 ,
+.Xr man 7 ,
+and post-formatted, respectively
+.Pc ,
+.It
+the filename relative to the databases' path,
+.It
+the manual section,
+.It
+the manual title,
+.It
+the architecture
+.Pq often empty ,
+.It
+and the description.
+.El
+.Pp
+Each of the above is NUL-terminated.
+.Pp
+If the record value is zero-length, it is unassigned.
+.Ss Keyword Database
+The keyword database,
+.Pa whatis.db ,
+is a
+.Xr btree 3
+database of NUL-terminated keywords (record length is non-zero string
+length plus one) mapping to a 16-byte binary field consisting of the
+64-bit keyword type and the 64-bit
+.Sx Index Database
+record number, both in network-byte order.
+.Pp
+The type bit-mask consists of the following
+values mapping into
+.Xr mdoc 7
+macro identifiers:
+.Pp
+.Bl -column "x0x0000000000000001ULLx" "xLix" -offset indent -compact
+.It Li 0x0000000000000001ULL Ta \&An
+.It Li 0x0000000000000002ULL Ta \&Ar
+.It Li 0x0000000000000004ULL Ta \&At
+.It Li 0x0000000000000008ULL Ta \&Bsx
+.It Li 0x0000000000000010ULL Ta \&Bx
+.It Li 0x0000000000000020ULL Ta \&Cd
+.It Li 0x0000000000000040ULL Ta \&Cm
+.It Li 0x0000000000000080ULL Ta \&Dv
+.It Li 0x0000000000000100ULL Ta \&Dx
+.It Li 0x0000000000000200ULL Ta \&Em
+.It Li 0x0000000000000400ULL Ta \&Er
+.It Li 0x0000000000000800ULL Ta \&Ev
+.It Li 0x0000000000001000ULL Ta \&Fa
+.It Li 0x0000000000002000ULL Ta \&Fl
+.It Li 0x0000000000004000ULL Ta \&Fn
+.It Li 0x0000000000008000ULL Ta \&Ft
+.It Li 0x0000000000010000ULL Ta \&Fx
+.It Li 0x0000000000020000ULL Ta \&Ic
+.It Li 0x0000000000040000ULL Ta \&In
+.It Li 0x0000000000080000ULL Ta \&Lb
+.It Li 0x0000000000100000ULL Ta \&Li
+.It Li 0x0000000000200000ULL Ta \&Lk
+.It Li 0x0000000000400000ULL Ta \&Ms
+.It Li 0x0000000000800000ULL Ta \&Mt
+.It Li 0x0000000001000000ULL Ta \&Nd
+.It Li 0x0000000002000000ULL Ta \&Nm
+.It Li 0x0000000004000000ULL Ta \&Nx
+.It Li 0x0000000008000000ULL Ta \&Ox
+.It Li 0x0000000010000000ULL Ta \&Pa
+.It Li 0x0000000020000000ULL Ta \&Rs
+.It Li 0x0000000040000000ULL Ta \&Sh
+.It Li 0x0000000080000000ULL Ta \&Ss
+.It Li 0x0000000100000000ULL Ta \&St
+.It Li 0x0000000200000000ULL Ta \&Sy
+.It Li 0x0000000400000000ULL Ta \&Tn
+.It Li 0x0000000800000000ULL Ta \&Va
+.It Li 0x0000001000000000ULL Ta \&Vt
+.It Li 0x0000002000000000ULL Ta \&Xr
+.El
+.Sh IMPLEMENTATION NOTES
+The time to construct a new database pair grows linearly with the
+number of keywords in the input files.
+However, removing or updating entries with
+.Fl u
+or
+.Fl d ,
+respectively, grows as a multiple of the index length and input size.
+d125 6
+a130 13
+.It Pa whatis.db
+A
+.Xr btree 3
+keyword database mapping keywords to a type and file reference in
+.Pa whatis.index .
+.It Pa whatis.index
+A
+.Xr recno 3
+database of indexed file-names.
+.It Pa /etc/man.conf
+The default
+.Xr man 1
+configuration file.
+d133 1
+a133 38
+The
+.Nm
+utility exits with one of the following values:
+.Pp
+.Bl -tag -width Ds -compact
+.It 0
+No errors occurred.
+.It 5
+Invalid command line arguments were specified.
+No input files have been read.
+.It 6
+An operating system error occurred, for example memory exhaustion or an
+error accessing input files.
+Such errors cause
+.Nm
+to exit at once, possibly in the middle of parsing or formatting a file.
+The output databases are corrupt and should be removed.
+.El
+.Sh DIAGNOSTICS
+If the following errors occur, the
+.Nm
+databases should be rebuilt.
+.Bl -diag
+.It "%s: Corrupt database"
+The keyword database file indicated by
+.Pa %s
+is unreadable.
+.It "%s: Corrupt index"
+The index database file indicated by
+.Pa %s
+is unreadable.
+.It "%s: Path too long"
+The file
+.Pa %s
+is too long.
+This usually indicates database corruption or invalid command-line
+arguments.
+.El
+a137 2
+.Xr btree 3 ,
+.Xr recno 3 ,
+d144 4
+a147 1
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.17.2.1
+log
+@Merge from OpenBSD:
+1) Revert filenames back to mandoc.{db,index}
+2) Improve AUTHORS and HISTORY
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.17 2011/12/25 21:00:23 schwarze Exp $
+d128 1
+a128 1
+.Pa mandoc.index ,
+d164 1
+a164 1
+.Pa mandoc.db ,
+d228 1
+a228 1
+.It Pa mandoc.db
+d232 2
+a233 2
+.Pa mandoc.index .
+.It Pa mandoc.index
+d288 1
+a288 12
+.Sh HISTORY
+A
+.Nm makewhatis
+utility first appeared in
+.Bx 2 .
+It was rewritten in
+.Xr perl 1
+for
+.Ox 2.7
+and in C for
+.Ox 5.1 .
+.Pp
+a289 21
+.Ar dir
+argument first appeared in
+.Nx 1.0 ;
+the options
+.Fl dtu
+in
+.Ox 2.7 ;
+and the options
+.Fl aCvW
+in
+.Ox 5.1 .
+.Sh AUTHORS
+.An -nosplit
+.An Bill Joy
+wrote the original
+.Bx
+.Nm makewhatis
+in February 1979,
+.An Marc Espie
+started the Perl version in 2000,
+and the current version of
+d291 3
+a293 2
+was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+@
+
+
+1.17.2.2
+log
+@minor sync with HEAD, but keep the Berkeley DB parts
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.17.2.1 2013/09/18 01:04:07 schwarze Exp $
+d3 1
+a3 2
+.\" Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2011, 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d17 1
+a17 1
+.Dd $Mdocdate: September 18 2013 $
+d73 2
+a74 2
+in that directory.
+Existing databases are replaced.
+d80 1
+a80 3
+.Xr manpath 1 ,
+or
+.Xr man.conf 5 .
+d324 1
+a324 3
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv
+and
+.An Ingo Schwarze Aq Mt schwarze@@openbsd.org .
+@
+
+
+1.16
+log
+@Use the traditional name "whatis.db" for the mandocdb(8) databases.
+Requested by deraadt@@, ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.15 2011/12/25 13:08:12 schwarze Exp $
+d49 7
+a55 1
+for fast retrieval.
+d168 2
+a169 2
+length plus one) mapping to a 12-byte binary field consisting of the
+64-bit keyword type and 32-bit source
+d172 1
+a217 3
+.Pp
+The last four bytes are a host-ordered record number within the
+.Sx Index Database .
+d259 1
+a259 1
+The output databases are corrupt and should be removed .
+@
+
+
+1.15
+log
+@Implement test mode (makewhatis -t), required for pkg_create(8).
+Always do all consistency checks; when any one fails, decide whether
+to print a message, or skip the file, or both, or none.
+
+While here, do some cleanup as well:
+* Bail out on conflicting options.
+* Do not crash with -a if there are plain files in the root dir.
+* Collect some related variables into structs.
+
+Feedback and OK kristaps@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.14 2011/12/16 12:06:35 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 16 2011 $
+d122 1
+a122 1
+.Pa mandoc.index ,
+d158 1
+a158 1
+.Pa mandoc.db ,
+d224 1
+a224 1
+.It Pa mandoc.db
+d228 2
+a229 2
+.Pa mandoc.index .
+.It Pa mandoc.index
+@
+
+
+1.14
+log
+@Make the stored "cat"/"mdoc"/"man" strings just be c/d/a single-character
+bytes.  This cuts down a little in index size and allows for cleaner
+extraction of information.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.13 2011/12/16 08:04:34 kristaps Exp $
+d25 1
+a25 1
+.Op Fl av
+d28 1
+a28 1
+.Op Fl av
+d31 1
+a31 1
+.Op Fl v
+d35 1
+a35 1
+.Op Fl v
+d38 2
+d93 11
+d112 3
+@
+
+
+1.13
+log
+@Make paths in the mandocdb(8) index relative to the databases' path
+prefix.  This means that an index in, say, /usr/share/man will point to
+man1/foo.1 instead of /usr/share/man/man1/foo.1.  Not only does this
+save a lot of space, it also allows manual trees to be moved around
+without any side effects to the mandocdb(8) databases.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.12 2011/12/12 02:00:49 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 12 2011 $
+d113 3
+a115 3
+the string
+.Cm mdoc ,
+.Cm man ,
+d117 1
+a117 1
+.Cm cat
+a119 1
+file in
+d139 1
+a139 3
+Both the manual section and description may be zero-length if the record
+is unassigned.
+Entries are sequentially-numbered, but the filenames are unordered.
+@
+
+
+1.12
+log
+@implement -C (alternative config file) for apropos(1) and mandocdb(8),
+including various tweaks to the whatis(8) manual;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.11 2011/12/02 00:21:56 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 2 2011 $
+d126 1
+a126 1
+the filename,
+@
+
+
+1.11
+log
+@This is a little gross: Linux and Apple need lots some cajoling to work
+with byte-swapping.  Tested on Mac.  Any Linux machines somebody can
+test on?  Anybody?
+
+While here, note the correct byte-size in mandocdb(8) and also note
+field widths and endianness.  The btree is now endian-neutral.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.10 2011/12/01 21:05:49 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 1 2011 $
+d26 4
+a29 1
+.Op Ar dir ...
+d75 1
+a75 1
+.Bl -tag -width Ds
+d79 6
+d153 1
+a153 1
+The typet bit-mask consists of the following
+d220 4
+d265 1
+d267 1
+d269 2
+a270 1
+.Xr recno 3
+@
+
+
+1.10
+log
+@Fix mandocdb(8) to pass over the type when pruning the database.  This
+fixed `-d' perpetually adding the same files.  While here, clean up the
+code and document it.  Remove -vv (complain if you want it back in).
+Document the error messages in a DIAGNOSTICS section of mandocdb(8).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.9 2011/11/29 11:17:47 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 29 2011 $
+d140 2
+a141 2
+length plus one) mapping to a 8-byte binary field consisting of the
+keyword type and source
+d143 2
+a144 2
+record number.
+The type, a 64-bit bit-mask in host order, consists of the following
+@
+
+
+1.9
+log
+@Note that mandocdb(8) record type is 64-bit and show all possible values.
+Also slightly clarify the role of mdoc/man/cat.  Finally, remove mandoc(1)
+reference (it's not mentioned in the manual).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.8 2011/11/28 01:37:34 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 28 2011 $
+d89 1
+a89 3
+Verbose operation.
+Use once to display all files added or removed and twice for keywords as
+well.
+d231 20
+@
+
+
+1.8
+log
+@Discuss the default behaviour up front before talking about options
+modifying it; based on a remark by kristaps@@.
+While here, mention parsing of unformatted files
+and the changed index format and fix a few minor issues.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.7 2011/11/26 11:23:56 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 26 2011 $
+d111 7
+a117 1
+to indicate the file type,
+d146 44
+a189 32
+The type, a 32-bit bit-mask in host order, consists of the following
+fields:
+.Pp
+.Bl -tag -width Ds -offset indent -compact
+.It Li 0x01
+The name of a manual page as given in the NAME section.
+.It Li 0x02
+A function prototype name as given in the SYNOPSIS section.
+.It Li 0x04
+A utility name as given in the SYNOPSIS section.
+.It Li 0x08
+An include file as given in the SYNOPSIS section.
+.It Li 0x10
+A variable name as given in the SYNOPSIS section.
+.It Li 0x20
+A standard as given in the STANDARDS section.
+.It Li 0x40
+An author as given in the AUTHORS section.
+.It Li 0x80
+A configuration as given in the SYNOPSIS section.
+.It Li 0x100
+Free-form descriptive text as given in the NAME section.
+.It Li 0x200
+Cross-links between manuals.
+Listed as the link name, then a period, then the link section.
+If the link has no section, the period terminates the string.
+.It Li 0x400
+Path reference as given in the FILES section.
+.It Li 0x800
+Environment variable as given in the ENVIRONMENT section.
+.It Li 0x1000
+Error codes as given in the ERRORS section.
+a193 5
+.Pp
+The
+.Nm
+utility is
+.Ud
+a234 1
+.Xr mandoc 1 ,
+@
+
+
+1.7
+log
+@Store page titles in the correct case, and by default, only
+put stuff into the database that man(1) will be able to retrieve.
+However, support an option to use all directories and files.
+feedback and ok  kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.6 2011/11/23 09:52:20 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 23 2011 $
+d26 1
+a26 1
+.Op Ar dir...
+d46 25
+a75 7
+By default, only files matching
+.Sm off
+.Sy man Ar section Li /
+.Op Ar arch Li /
+.Ar title . section
+.Sm on
+will be used.
+d79 3
+a81 2
+from the databases in
+.Ar dir .
+d85 1
+a85 4
+from the databases in
+.Ar dir .
+.It Ar dir...
+Recursively add files rooted at each
+d87 1
+a87 3
+to the databases in the respective
+.Ar dir .
+Existing databases are truncated.
+a93 12
+By default,
+.Nm
+creates databases in each
+.Ar dir
+using files rooted in that directory.
+If
+.Ar dir
+is not provided,
+.Nm
+uses the default paths stipulated by
+.Xr man 1 .
+.Pp
+d106 6
+a111 1
+a nil-terminated filename,
+d113 1
+a113 1
+a nil-terminated manual section,
+d115 1
+a115 1
+a nil-terminated manual title,
+d117 1
+a117 2
+a nil-terminated architecture
+.Pq this is not often available
+d119 4
+a122 1
+and a nil-terminated description.
+d125 2
+d135 1
+a135 1
+database of nil-terminated keywords (record length is non-zero string
+@
+
+
+1.6
+log
+@Have mandocdb(8) take advantage of manpath.h.
+This brings it in line with makewhatis(8), which, like apropos(1), will use
+man.conf (or manpath(1)) if no manpath entries are provided.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.5 2011/10/09 08:56:27 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: October 9 2011 $
+d25 1
+a25 1
+.Op Fl v
+d45 1
+d48 10
+@
+
+
+1.5
+log
+@The documented flags in mandocdb (-u, -d) were switched.  Fix this.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.4 2011/08/18 08:58:44 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: August 18 2011 $
+d74 6
+d199 1
+@
+
+
+1.4
+log
+@Replace the old `An'/`Aq' AUTHORS note with `An'/`Mt'.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.3 2011/07/15 17:59:29 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 15 2011 $
+d48 1
+a48 1
+Remove
+d53 1
+a53 1
+Update (remove and re-add)
+@
+
+
+1.3
+log
+@Big step forward in bringing mandocdb in line with most makewhatis-type
+systems.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.2 2011/07/15 10:15:24 kristaps Exp $
+d200 2
+a201 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.2
+log
+@First step of making mandocdb a true makewhatis/mandb replacement:
+accept a set of directories on the command line ("manpaths") that are
+recursed for files.  The databases are created in each manpath root.
+This temporarily removes OP_UPDATE and OP_DELETE functionality, which
+will be added back in.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.1 2011/07/14 14:36:37 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 14 2011 $
+d25 10
+a34 1
+.Ar dir...
+d40 5
+a44 1
+manuals and indexes them for fast retrieval.
+d47 10
+d58 1
+a58 6
+Recursively scan for
+.Xr mdoc 7
+and
+.Xr man 7
+.Ux
+manual files in each
+d60 2
+a61 7
+directory.
+.Sx Index Database
+and
+.Sx Keyword Database
+files are installed in each
+.Ar dir
+directory.
+d63 4
+d71 3
+a73 3
+does nothing: the
+.Ar dir...
+invocation must be used.
+d99 2
+a100 1
+Both the manual section and description may be zero-length.
+d155 1
+a155 1
+number of keywords in the input.
+d157 1
+a157 1
+.Fl r
+d159 1
+a159 1
+.Fl u ,
+d193 3
+a195 1
+.Xr mandoc 1
+@
+
+
+1.1
+log
+@move mandocdb(1) to mandocdb(8)
+"please make this change" kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandocdb.8,v 1.1 2011/07/14 10:57:02 kristaps Exp $
+d25 1
+a25 3
+.Op Fl ruv
+.Op Fl d Ar dir
+.Ar
+d34 2
+a35 4
+.It Fl d Ar dir
+The directory into which to write the keyword and index databases.
+.It Ar
+Read input from zero or more files in
+d37 1
+a37 1
+or
+d40 3
+a42 19
+manual format.
+.It Fl r
+Remove entries.
+This will remove the index and keyword references.
+If the record is not found, it is ignored.
+.It Fl u
+Update the record.
+This will first remove the record (as in
+.Fl r )
+then re-add it.
+.It Fl v
+Verbose output.
+If specified once, prints the name of each indexed file.
+If twice, prints keywords for each file.
+.El
+.Pp
+By default,
+.Nm
+constructs a new
+d46 3
+a48 1
+in the current working directory.
+d50 1
+d52 9
+a60 3
+If fatal parse errors are encountered, the offending file is printed to
+stderr, omitted from the index, and the parse continues with the next
+input file.
+@

@@ -1,0 +1,1098 @@
+head	1.34;
+access;
+symbols
+	VERSION_1_13_3:1.29
+	VERSION_1_13_2:1.29
+	VERSION_1_12_4:1.28
+	VERSION_1_13_1:1.27
+	VERSION_1_12_3:1.25
+	VERSION_1_12_2:1.25
+	VERSION_1_12:1.28.0.2
+	VERSION_1_12_1:1.25
+	VERSION_1_12_0:1.25
+	VERSION_1_11_7:1.25
+	VERSION_1_11_6:1.25
+	VERSION_1_11_5:1.25
+	VERSION_1_11_4:1.24
+	VERSION_1_11_3:1.24
+	VERSION_1_11_2:1.24
+	VERSION_1_11_1:1.24
+	VERSION_1_10_10:1.23
+	VERSION_1_10_9:1.23
+	VERSION_1_10_8:1.23
+	VERSION_1_10_7:1.23
+	VERSION_1_10_6:1.23
+	VERSION_1_10_5:1.22
+	VERSION_1_10_5_PREPDF:1.22
+	VERSION_1_10_4:1.22
+	VERSION_1_10_3:1.22
+	VERSION_1_10_2:1.22
+	VERSION_1_10_1:1.21
+	VERSION_1_9_24:1.19
+	VERSION_1_9_25:1.19
+	VERSION_1_9_23:1.18
+	VERSION_1_9_22:1.18
+	VERSION_1_9_21:1.18
+	VERSION_1_9_20:1.18
+	VERSION_1_9_19:1.18
+	VERSION_1_9_18:1.18
+	VERSION_1_9_17:1.17
+	VERSION_1_9_16:1.16
+	VERSION_1_9_15:1.16
+	VERSION_1_9_15-pre2:1.16
+	VERSION_1_9_15-pre1:1.15
+	VERSION_1_9_14:1.15
+	VERSION_1_9_13:1.15
+	VERSION_1_9_12:1.15
+	VERSION_1_9_11:1.15
+	VERSION_1_9_10:1.15
+	VERSION_1_9_9:1.15
+	VERSION_1_9_8:1.15
+	VERSION_1_9_7:1.15
+	VERSION_1_9_6:1.15
+	VERSION_1_9_5:1.14
+	VERSION_1_9_2:1.11
+	VERSION_1_9_1:1.11
+	VERSION_1_9_0:1.10
+	VERSION_1_8_5:1.10
+	VERSION_1_8_4:1.10
+	VERSION_1_8_3:1.10
+	VERSION_1_8_2:1.10
+	VERSION_1_8_1:1.10
+	VERSION_1_8_0:1.10
+	VERSION_1_7_24:1.10
+	VERSION_1_7_23:1.10
+	VERSION_1_7_22:1.10
+	VERSION_1_7_21:1.10
+	VERSION_1_7_20:1.10
+	VERSION_1_7_19:1.9
+	VERSION_1_7_17:1.8
+	VERSION_1_7_16:1.8
+	VERSION_1_7_15:1.8
+	VERSION_1_7_14:1.8
+	VERSION_1_7_13:1.7
+	VERSION_1_7_12:1.6
+	OPENBSD_CHECKIN:1.6
+	VERSION_1_7_10:1.6
+	VERSION_1_7_5:1.3;
+locks; strict;
+comment	@ * @;
+
+
+1.34
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.04.19.14.00.19;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.04.18.17.01.58;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2015.04.02.21.36.49;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2014.12.01.08.05.52;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2014.03.23.11.25.26;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.07.24.18.15.14;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.03.22.14.33.05;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.07.31.23.52.58;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.05.15.22.49.58;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.05.08.07.30.19;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.03.27.10.14.32;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.03.23.21.50.43;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.01.01.17.14.28;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.09.23.11.53.45;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.09.17.07.41.28;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.09.16.20.49.06;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.09.16.14.40.56;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.08.19.09.14.50;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.06.18.10.32.00;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.06.16.19.55.28;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.04.02.06.51.44;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.31.13.50.19;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.26.09.55.39;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.23.15.41.09;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.34
+log
+@modernize style: "return" is not a function
+@
+text
+@/*	$Id: man_hash.c,v 1.33 2015/04/19 14:00:19 schwarze Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <string.h>
+
+#include "roff.h"
+#include "man.h"
+#include "libman.h"
+
+#define	HASH_DEPTH	 6
+
+#define	HASH_ROW(x) do { \
+		if (isupper((unsigned char)(x))) \
+			(x) -= 65; \
+		else \
+			(x) -= 97; \
+		(x) *= HASH_DEPTH; \
+	} while (/* CONSTCOND */ 0)
+
+/*
+ * Lookup table is indexed first by lower-case first letter (plus one
+ * for the period, which is stored in the last row), then by lower or
+ * uppercase second letter.  Buckets correspond to the index of the
+ * macro (the integer value of the enum stored as a char to save a bit
+ * of space).
+ */
+static	unsigned char	 table[26 * HASH_DEPTH];
+
+
+void
+man_hash_init(void)
+{
+	int		 i, j, x;
+
+	if (*table != '\0')
+		return;
+
+	memset(table, UCHAR_MAX, sizeof(table));
+
+	for (i = 0; i < (int)MAN_MAX; i++) {
+		x = man_macronames[i][0];
+
+		assert(isalpha((unsigned char)x));
+
+		HASH_ROW(x);
+
+		for (j = 0; j < HASH_DEPTH; j++)
+			if (UCHAR_MAX == table[x + j]) {
+				table[x + j] = (unsigned char)i;
+				break;
+			}
+
+		assert(j < HASH_DEPTH);
+	}
+}
+
+int
+man_hash_find(const char *tmp)
+{
+	int		 x, y, i;
+	int		 tok;
+
+	if ('\0' == (x = tmp[0]))
+		return TOKEN_NONE;
+	if ( ! (isalpha((unsigned char)x)))
+		return TOKEN_NONE;
+
+	HASH_ROW(x);
+
+	for (i = 0; i < HASH_DEPTH; i++) {
+		if (UCHAR_MAX == (y = table[x + i]))
+			return TOKEN_NONE;
+
+		tok = y;
+		if (0 == strcmp(tmp, man_macronames[tok]))
+			return tok;
+	}
+
+	return TOKEN_NONE;
+}
+@
+
+
+1.33
+log
+@Decouple the token code for "no request or macro" from the individual
+high-level parsers to allow further unification of functions that
+only need to recognize this code, but that don't care about different
+high-level macrosets beyond that.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.32 2015/04/18 17:01:58 schwarze Exp $ */
+d4 1
+d85 1
+a85 1
+		return(TOKEN_NONE);
+d87 1
+a87 1
+		return(TOKEN_NONE);
+d93 1
+a93 1
+			return(TOKEN_NONE);
+d97 1
+a97 1
+			return(tok);
+d100 1
+a100 1
+	return(TOKEN_NONE);
+@
+
+
+1.32
+log
+@Move mdoc_hash_init() and man_hash_init() to libmandoc.h
+and call them from mparse_alloc() and choose_parser(),
+preparing unified allocation of struct roff_man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.31 2015/04/02 22:48:17 schwarze Exp $ */
+a59 2
+	assert(MAN_MAX < UCHAR_MAX);
+
+d84 1
+a84 1
+		return(MAN_MAX);
+d86 1
+a86 1
+		return(MAN_MAX);
+d92 1
+a92 1
+			return(MAN_MAX);
+d99 1
+a99 1
+	return(MAN_MAX);
+@
+
+
+1.31
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.30 2015/04/02 21:36:49 schwarze Exp $ */
+a49 4
+/*
+ * XXX - this hash has global scope, so if intended for use as a library
+ * with multiple callers, it will need re-invocation protection.
+ */
+d55 3
+@
+
+
+1.30
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.29 2014/12/01 08:05:52 schwarze Exp $ */
+d80 1
+a80 1
+enum mant
+d84 1
+a84 1
+	enum mant	 tok;
+d97 1
+a97 1
+		tok = (enum mant)y;
+@
+
+
+1.29
+log
+@header cleanup:
+* add missing forward declarations
+* remove needless header inclusions
+* some style unification
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.28 2014/08/10 23:54:41 schwarze Exp $ */
+d26 1
+@
+
+
+1.28
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.27 2014/04/20 16:46:04 schwarze Exp $ */
+a26 1
+#include "mandoc.h"
+@
+
+
+1.27
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.26 2014/03/23 11:25:26 schwarze Exp $ */
+a16 1
+#ifdef HAVE_CONFIG_H
+a17 1
+#endif
+@
+
+
+1.26
+log
+@The files mandoc.c and mandoc.h contained both specialised low-level
+functions used for multiple languages (mdoc, man, roff), for example
+mandoc_escape(), mandoc_getarg(), mandoc_eos(), and generic auxiliary
+functions.  Split the auxiliaries out into their own file and header.
+While here, do some #include cleanup.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.25 2011/07/24 18:15:14 kristaps Exp $ */
+d51 1
+d63 1
+a63 2
+	assert(/* LINTED */ 
+			MAN_MAX < UCHAR_MAX);
+a81 1
+
+@
+
+
+1.25
+log
+@Scary-looking but otherwise harmless changes allow me to build for Windows.
+That is to say, with mingw32.  This amounts to the following:
+
+ (1) break compat.c into compat_strlcpy.c and compat_strlcat.c
+ (2) add compat_getsubopt.c (from OpenBSD) and test-getsubopt.c
+ (3) add test-strptime.c for HAVE_STRPTIME
+ (4) add ifdef bits here and there, where necessary
+ (5) remove some harmless unportable stuff (u_char, localtime_r)
+
+I've added the appropriate mdocml.zip target to the Makefile, too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.24 2011/03/22 14:33:05 kristaps Exp $ */
+a25 1
+#include <stdlib.h>
+@
+
+
+1.24
+log
+@libmdoc.h and libman.h were including mdoc.h and man.h, respectively.
+Don't have them do that (includes in header files = faugh), and have
+individual files directly include these files.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.23 2010/07/31 23:52:58 schwarze Exp $ */
+d36 1
+a36 1
+		if (isupper((u_char)(x))) \
+d50 1
+a50 1
+static	u_char		 table[26 * HASH_DEPTH];
+d69 1
+a69 1
+		assert(isalpha((u_char)x));
+d75 1
+a75 1
+				table[x + j] = (u_char)i;
+d92 1
+a92 1
+	if ( ! (isalpha((u_char)x)))
+@
+
+
+1.23
+log
+@Sync to OpenBSD: add missing Copyright years.
+I checked that substantial changes were committed
+to these files during these years.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.22 2010/06/19 20:46:28 kristaps Exp $ */
+d29 1
+@
+
+
+1.22
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.21 2010/05/17 22:11:42 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.21
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.20 2010/05/15 22:49:58 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.20
+log
+@Removed `.' entry from -man hashtable.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.19 2010/05/08 07:30:19 kristaps Exp $ */
+d29 1
+@
+
+
+1.19
+log
+@Lint fixes (type-safety for enums via -cefuh).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.18 2010/03/27 10:14:32 kristaps Exp $ */
+d34 1
+a34 3
+		if ('.' == (x)) \
+			(x) = 26; \
+		else if (isupper((u_char)(x))) \
+d48 1
+a48 1
+static	u_char		 table[27 * HASH_DEPTH];
+d67 1
+a67 1
+		assert(isalpha((u_char)x) || '.' == x);
+d90 1
+a90 1
+	if ( ! (isalpha((u_char)x) || '.' == x))
+@
+
+
+1.18
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.17 2010/03/23 21:50:43 kristaps Exp $ */
+d66 1
+a66 1
+	for (i = 0; i < MAN_MAX; i++) {
+@
+
+
+1.17
+log
+@libman using enum mant instead of #defines for macros.
+Clean-ups, better documentation in man_hash.c.
+Added extra space for "." in man_hash.c (unused for the time being).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.16 2010/01/01 17:14:28 kristaps Exp $ */
+d63 2
+a64 1
+	assert(/* CONSTCOND */ MAN_MAX < UCHAR_MAX);
+@
+
+
+1.16
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.15 2009/09/23 11:53:45 kristaps Exp $ */
+d24 1
+d31 20
+a50 1
+static	u_char		table[26 * 6];
+d63 2
+a66 2
+		assert((x >= 65 && x <= 90) ||
+				(x >= 97 && x <= 122));
+d68 1
+a68 2
+		x -= (x <= 90) ? 65 : 97;
+		x *= 6;
+d70 3
+a72 1
+		for (j = 0; j < 6; j++)
+d77 2
+a78 1
+		assert(j < 6);
+d82 2
+a83 1
+int
+d86 2
+a87 1
+	int		 x, i, tok;
+d89 1
+a89 1
+	if (0 == (x = tmp[0]))
+d91 1
+a91 1
+	if ( ! ((x >= 65 && x <= 90) || (x >= 97 && x <= 122)))
+d94 1
+a94 2
+	x -= (x <= 90) ? 65 : 97;
+	x *= 6;
+d96 2
+a97 2
+	for (i = 0; i < 6; i++) {
+		if (UCHAR_MAX == (tok = table[x + i]))
+d99 2
+@
+
+
+1.15
+log
+@FreeBSD compile fixes (uqs@@spoerlein.net).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.14 2009/09/17 07:41:28 kristaps Exp $ */
+d17 4
+@
+
+
+1.14
+log
+@ascii_xxx -> chars_xxx (intended to hold more than just ascii encoding).
+More html work.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.13 2009/09/16 20:49:06 kristaps Exp $ */
+d17 2
+@
+
+
+1.13
+log
+@Lintifications.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.12 2009/09/16 14:40:56 kristaps Exp $ */
+a23 1
+
+d26 4
+a29 1
+
+a53 1
+
+@
+
+
+1.12
+log
+@Lookup hashes are now static tables, ordered first-level by second character, then randomly along a chain.  Improves performance by a small fraction and considerably cleans up hash sources.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.11 2009/08/19 09:14:50 kristaps Exp $ */
+d25 1
+a25 1
+static	unsigned char	table[26 * 6];
+d45 1
+a45 1
+				table[x + j] = i;
+@
+
+
+1.11
+log
+@Added RS/RE macro pair (had to adjust closing rules, sec/ssec/rs/par).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.10 2009/06/18 10:32:00 kristaps Exp $ */
+d18 1
+d25 1
+a25 7
+/* ARGUSED */
+void
+man_hash_free(void *htab)
+{
+
+	free(htab);
+}
+d28 2
+a29 3
+/* ARGUSED */
+void *
+man_hash_alloc(void)
+a30 1
+	int		*htab;
+d33 1
+a33 7
+	/* Initialised to -1. */
+
+	htab = malloc(26 * 6 * sizeof(int));
+	if (NULL == htab)
+		return(NULL);
+	for (i = 0; i < 26 * 6; i++)
+		htab[i] = -1;
+a36 1
+
+d44 2
+a45 2
+			if (-1 == htab[x + j]) {
+				htab[x + j] = i;
+a47 1
+
+a49 2
+
+	return((void *)htab);
+d54 1
+a54 1
+man_hash_find(const void *arg, const char *tmp)
+a56 3
+	const int	*htab;
+
+	htab = (const int *)arg;
+d67 1
+a67 1
+		if (-1 == (tok = htab[x + i]))
+a74 1
+
+@
+
+
+1.10
+log
+@Added -fno-ign-chars support to libman.
+man_validate.c checks for non-tab/isprint words.
+libman hashtable fixed (was ignoring .br).
+Added ncount field to man_node, deprecating count() functions.
+Documented use of tabs in man.7.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.9 2009/06/16 19:55:28 kristaps Exp $ */
+d42 1
+a42 1
+	htab = malloc(26 * 5 * sizeof(int));
+d45 1
+a45 1
+	for (i = 0; i < 26 * 5; i++)
+d55 1
+a55 1
+		x *= 5;
+d57 1
+a57 1
+		for (j = 0; j < 5; j++)
+d63 1
+a63 1
+		assert(j < 5);
+d84 1
+a84 1
+	x *= 5;
+d86 1
+a86 1
+	for (i = 0; i < 5; i++) {
+@
+
+
+1.9
+log
+@Removed MAN___: moved MAN_br to its index (comments not passed into parser).
+Fix: hashtable not fully formed after removal of MDOC___.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.8 2009/06/10 20:18:43 kristaps Exp $ */
+d40 3
+a42 1
+	htab = calloc(26 * 5, sizeof(int));
+d45 2
+d58 1
+a58 1
+			if (0 == htab[x + j]) {
+d87 1
+a87 1
+		if (0 == (tok = htab[x + i]))
+@
+
+
+1.8
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.7 2009/04/12 19:45:26 kristaps Exp $ */
+d44 1
+a44 1
+	for (i = 1; i < MAN_MAX; i++) {
+@
+
+
+1.7
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_hash.c,v 1.6 2009/04/05 16:34:22 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.6
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_hash.c,v 1.5 2009/04/02 06:51:44 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.5
+log
+@mdoc_tokhash -> hash
+Initial man hashtab (BROKEN).
+@
+text
+@d1 1
+a1 1
+/* $Id: man_hash.c,v 1.4 2009/03/31 13:50:19 kristaps Exp $ */
+d42 1
+a42 1
+	htab = calloc(26 * 4, sizeof(int));
+d53 1
+a53 1
+		x *= 4;
+d55 1
+a55 1
+		for (j = 0; j < 4; j++)
+d61 1
+a61 1
+		assert(j < 4);
+d82 1
+a82 1
+	x *= 4;
+d84 1
+a84 1
+	for (i = 0; i < 4; i++) {
+@
+
+
+1.4
+log
+@General clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_hash.c,v 1.3 2009/03/26 09:55:39 kristaps Exp $ */
+d19 1
+d25 1
+d31 1
+a31 1
+	/* Do nothing. */
+d39 24
+d64 1
+a64 2
+	/* Do nothing. */
+	return(NULL);
+d71 2
+a72 1
+	int		 i;
+d74 1
+a74 1
+	/* TODO */
+d76 14
+a89 3
+	for (i = 0; i < MAN_MAX; i++) 
+		if (0 == strcmp(tmp, man_macronames[i]))
+			return(i);
+@
+
+
+1.3
+log
+@Fixed reading whitespace for man.7 `.    TH'.
+Documented this.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_hash.c,v 1.2 2009/03/23 15:41:09 kristaps Exp $ */
+a18 3
+#include <assert.h>
+#include <ctype.h>
+#include <err.h>
+a19 1
+#include <stdio.h>
+@
+
+
+1.2
+log
+@-man linked to mandoc in documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_hash.c,v 1.1 2009/03/23 14:22:11 kristaps Exp $ */
+d55 1
+a55 1
+		if (0 == strcasecmp(tmp, man_macronames[i]))
+@
+
+
+1.1
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.11 2009/03/16 23:37:28 kristaps Exp $ */
+d52 2
+@

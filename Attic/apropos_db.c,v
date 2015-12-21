@@ -1,0 +1,2723 @@
+head	1.33;
+access;
+symbols
+	VERSION_1_12_4:1.32.2.8
+	VERSION_1_12_3:1.32.2.3
+	VERSION_1_12_2:1.32.2.1
+	VERSION_1_12:1.32.0.2
+	VERSION_1_12_1:1.31;
+locks; strict;
+comment	@ * @;
+
+
+1.33
+date	2012.06.08.10.47.17;	author kristaps;	state dead;
+branches;
+next	1.32;
+
+1.32
+date	2012.03.25.00.48.47;	author kristaps;	state Exp;
+branches
+	1.32.2.1;
+next	1.31;
+
+1.31
+date	2012.03.24.01.46.25;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2012.03.24.00.31.55;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2012.03.23.05.07.35;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2011.12.25.14.58.39;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2011.12.20.21.41.11;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2011.12.16.20.06.58;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2011.12.16.12.07.45;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2011.12.16.12.06.35;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2011.12.10.21.46.59;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2011.12.09.11.18.57;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2011.12.03.18.47.09;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2011.12.03.12.09.07;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2011.12.02.00.21.56;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2011.12.01.23.55.58;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2011.12.01.23.46.26;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.11.29.10.53.42;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2011.11.28.09.44.05;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.11.27.23.11.37;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.11.27.18.54.01;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.11.26.22.38.11;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.11.23.09.55.28;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.11.20.16.29.50;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.11.20.15.45.37;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.11.20.15.43.14;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.11.20.12.46.53;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.11.20.12.39.08;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.11.18.07.02.19;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.11.14.10.07.06;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.11.13.11.10.27;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.11.13.10.49.57;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.13.10.12.05;	author schwarze;	state Exp;
+branches;
+next	;
+
+1.32.2.1
+date	2013.10.02.21.03.26;	author schwarze;	state Exp;
+branches;
+next	1.32.2.2;
+
+1.32.2.2
+date	2013.10.05.20.30.05;	author schwarze;	state Exp;
+branches;
+next	1.32.2.3;
+
+1.32.2.3
+date	2013.10.10.23.43.04;	author schwarze;	state Exp;
+branches;
+next	1.32.2.4;
+
+1.32.2.4
+date	2014.01.22.21.02.54;	author schwarze;	state Exp;
+branches;
+next	1.32.2.5;
+
+1.32.2.5
+date	2014.03.23.12.04.54;	author schwarze;	state Exp;
+branches;
+next	1.32.2.6;
+
+1.32.2.6
+date	2014.04.23.21.31.38;	author schwarze;	state Exp;
+branches;
+next	1.32.2.7;
+
+1.32.2.7
+date	2014.08.11.00.31.13;	author schwarze;	state Exp;
+branches;
+next	1.32.2.8;
+
+1.32.2.8
+date	2014.08.14.04.13.30;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.33
+log
+@Remove lint from Makefile.
+Disable some parts of the build (man.cgi, etc.) while sqlite3 is being
+merged in nice and slow.
+Remove the bit swapping stuff in config.h.post.
+Remove apropos_db (replaced by mansearch).
+@
+text
+@@
+
+
+1.32
+log
+@Some documentation nits.
+@
+text
+@a0 879
+/*	$Id: apropos_db.c,v 1.31 2012/03/24 01:46:25 kristaps Exp $ */
+/*
+ * Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2011 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <sys/param.h>
+
+#include <assert.h>
+#include <fcntl.h>
+#include <regex.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+#if defined(__linux__)
+# include <endian.h>
+# include <db_185.h>
+#elif defined(__APPLE__)
+# include <libkern/OSByteOrder.h>
+# include <db.h>
+#else
+# include <db.h>
+#endif
+
+#include "mandocdb.h"
+#include "apropos_db.h"
+#include "mandoc.h"
+
+#define	RESFREE(_x) \
+	do { \
+		free((_x)->file); \
+		free((_x)->cat); \
+		free((_x)->title); \
+		free((_x)->arch); \
+		free((_x)->desc); \
+		free((_x)->matches); \
+	} while (/*CONSTCOND*/0)
+
+struct	expr {
+	int		 regex; /* is regex? */
+	int		 index; /* index in match array */
+	uint64_t 	 mask; /* type-mask */
+	int		 and; /* is rhs of logical AND? */
+	char		*v; /* search value */
+	regex_t	 	 re; /* compiled re, if regex */
+	struct expr	*next; /* next in sequence */
+	struct expr	*subexpr;
+};
+
+struct	type {
+	uint64_t	 mask;
+	const char	*name;
+};
+
+struct	rectree {
+	struct res	*node; /* record array for dir tree */
+	int		 len; /* length of record array */
+};
+
+static	const struct type types[] = {
+	{ TYPE_An, "An" },
+	{ TYPE_Ar, "Ar" },
+	{ TYPE_At, "At" },
+	{ TYPE_Bsx, "Bsx" },
+	{ TYPE_Bx, "Bx" },
+	{ TYPE_Cd, "Cd" },
+	{ TYPE_Cm, "Cm" },
+	{ TYPE_Dv, "Dv" },
+	{ TYPE_Dx, "Dx" },
+	{ TYPE_Em, "Em" },
+	{ TYPE_Er, "Er" },
+	{ TYPE_Ev, "Ev" },
+	{ TYPE_Fa, "Fa" },
+	{ TYPE_Fl, "Fl" },
+	{ TYPE_Fn, "Fn" },
+	{ TYPE_Fn, "Fo" },
+	{ TYPE_Ft, "Ft" },
+	{ TYPE_Fx, "Fx" },
+	{ TYPE_Ic, "Ic" },
+	{ TYPE_In, "In" },
+	{ TYPE_Lb, "Lb" },
+	{ TYPE_Li, "Li" },
+	{ TYPE_Lk, "Lk" },
+	{ TYPE_Ms, "Ms" },
+	{ TYPE_Mt, "Mt" },
+	{ TYPE_Nd, "Nd" },
+	{ TYPE_Nm, "Nm" },
+	{ TYPE_Nx, "Nx" },
+	{ TYPE_Ox, "Ox" },
+	{ TYPE_Pa, "Pa" },
+	{ TYPE_Rs, "Rs" },
+	{ TYPE_Sh, "Sh" },
+	{ TYPE_Ss, "Ss" },
+	{ TYPE_St, "St" },
+	{ TYPE_Sy, "Sy" },
+	{ TYPE_Tn, "Tn" },
+	{ TYPE_Va, "Va" },
+	{ TYPE_Va, "Vt" },
+	{ TYPE_Xr, "Xr" },
+	{ UINT64_MAX, "any" },
+	{ 0, NULL }
+};
+
+static	DB	*btree_open(void);
+static	int	 btree_read(const DBT *, const DBT *,
+			const struct mchars *,
+			uint64_t *, recno_t *, char **);
+static	int	 expreval(const struct expr *, int *);
+static	void	 exprexec(const struct expr *,
+			const char *, uint64_t, struct res *);
+static	int	 exprmark(const struct expr *,
+			const char *, uint64_t, int *);
+static	struct expr *exprexpr(int, char *[], int *, int *, size_t *);
+static	struct expr *exprterm(char *, int);
+static	DB	*index_open(void);
+static	int	 index_read(const DBT *, const DBT *, int,
+			const struct mchars *, struct res *);
+static	void	 norm_string(const char *,
+			const struct mchars *, char **);
+static	size_t	 norm_utf8(unsigned int, char[7]);
+static	int	 single_search(struct rectree *, const struct opts *,
+			const struct expr *, size_t terms,
+			struct mchars *, int);
+
+/*
+ * Open the keyword mandoc-db database.
+ */
+static DB *
+btree_open(void)
+{
+	BTREEINFO	 info;
+	DB		*db;
+
+	memset(&info, 0, sizeof(BTREEINFO));
+	info.lorder = 4321;
+	info.flags = R_DUP;
+
+	db = dbopen(MANDOC_DB, O_RDONLY, 0, DB_BTREE, &info);
+	if (NULL != db)
+		return(db);
+
+	return(NULL);
+}
+
+/*
+ * Read a keyword from the database and normalise it.
+ * Return 0 if the database is insane, else 1.
+ */
+static int
+btree_read(const DBT *k, const DBT *v, const struct mchars *mc,
+		uint64_t *mask, recno_t *rec, char **buf)
+{
+	uint64_t	 vbuf[2];
+
+	/* Are our sizes sane? */
+	if (k->size < 2 || sizeof(vbuf) != v->size)
+		return(0);
+
+	/* Is our string nil-terminated? */
+	if ('\0' != ((const char *)k->data)[(int)k->size - 1])
+		return(0);
+
+	norm_string((const char *)k->data, mc, buf);
+	memcpy(vbuf, v->data, v->size);
+	*mask = betoh64(vbuf[0]);
+	*rec  = betoh64(vbuf[1]);
+	return(1);
+}
+
+/*
+ * Take a Unicode codepoint and produce its UTF-8 encoding.
+ * This isn't the best way to do this, but it works.
+ * The magic numbers are from the UTF-8 packaging.
+ * They're not as scary as they seem: read the UTF-8 spec for details.
+ */
+static size_t
+norm_utf8(unsigned int cp, char out[7])
+{
+	int		 rc;
+
+	rc = 0;
+
+	if (cp <= 0x0000007F) {
+		rc = 1;
+		out[0] = (char)cp;
+	} else if (cp <= 0x000007FF) {
+		rc = 2;
+		out[0] = (cp >> 6  & 31) | 192;
+		out[1] = (cp       & 63) | 128;
+	} else if (cp <= 0x0000FFFF) {
+		rc = 3;
+		out[0] = (cp >> 12 & 15) | 224;
+		out[1] = (cp >> 6  & 63) | 128;
+		out[2] = (cp       & 63) | 128;
+	} else if (cp <= 0x001FFFFF) {
+		rc = 4;
+		out[0] = (cp >> 18 & 7) | 240;
+		out[1] = (cp >> 12 & 63) | 128;
+		out[2] = (cp >> 6  & 63) | 128;
+		out[3] = (cp       & 63) | 128;
+	} else if (cp <= 0x03FFFFFF) {
+		rc = 5;
+		out[0] = (cp >> 24 & 3) | 248;
+		out[1] = (cp >> 18 & 63) | 128;
+		out[2] = (cp >> 12 & 63) | 128;
+		out[3] = (cp >> 6  & 63) | 128;
+		out[4] = (cp       & 63) | 128;
+	} else if (cp <= 0x7FFFFFFF) {
+		rc = 6;
+		out[0] = (cp >> 30 & 1) | 252;
+		out[1] = (cp >> 24 & 63) | 128;
+		out[2] = (cp >> 18 & 63) | 128;
+		out[3] = (cp >> 12 & 63) | 128;
+		out[4] = (cp >> 6  & 63) | 128;
+		out[5] = (cp       & 63) | 128;
+	} else
+		return(0);
+
+	out[rc] = '\0';
+	return((size_t)rc);
+}
+
+/*
+ * Normalise strings from the index and database.
+ * These strings are escaped as defined by mandoc_char(7) along with
+ * other goop in mandoc.h (e.g., soft hyphens).
+ * This function normalises these into a nice UTF-8 string.
+ * Returns 0 if the database is fucked.
+ */
+static void
+norm_string(const char *val, const struct mchars *mc, char **buf)
+{
+	size_t		  sz, bsz;
+	char		  utfbuf[7];
+	const char	 *seq, *cpp;
+	int		  len, u, pos;
+	enum mandoc_esc	  esc;
+	static const char res[] = { '\\', '\t',
+				ASCII_NBRSP, ASCII_HYPH, '\0' };
+
+	/* Pre-allocate by the length of the input */
+
+	bsz = strlen(val) + 1;
+	*buf = mandoc_realloc(*buf, bsz);
+	pos = 0;
+
+	while ('\0' != *val) {
+		/*
+		 * Halt on the first escape sequence.
+		 * This also halts on the end of string, in which case
+		 * we just copy, fallthrough, and exit the loop.
+		 */
+		if ((sz = strcspn(val, res)) > 0) {
+			memcpy(&(*buf)[pos], val, sz);
+			pos += (int)sz;
+			val += (int)sz;
+		}
+
+		if (ASCII_HYPH == *val) {
+			(*buf)[pos++] = '-';
+			val++;
+			continue;
+		} else if ('\t' == *val || ASCII_NBRSP == *val) {
+			(*buf)[pos++] = ' ';
+			val++;
+			continue;
+		} else if ('\\' != *val)
+			break;
+
+		/* Read past the slash. */
+
+		val++;
+		u = 0;
+
+		/*
+		 * Parse the escape sequence and see if it's a
+		 * predefined character or special character.
+		 */
+
+		esc = mandoc_escape(&val, &seq, &len);
+		if (ESCAPE_ERROR == esc)
+			break;
+
+		/*
+		 * XXX - this just does UTF-8, but we need to know
+		 * beforehand whether we should do text substitution.
+		 */
+
+		switch (esc) {
+		case (ESCAPE_SPECIAL):
+			if (0 != (u = mchars_spec2cp(mc, seq, len)))
+				break;
+			/* FALLTHROUGH */
+		default:
+			continue;
+		}
+
+		/*
+		 * If we have a Unicode codepoint, try to convert that
+		 * to a UTF-8 byte string.
+		 */
+
+		cpp = utfbuf;
+		if (0 == (sz = norm_utf8(u, utfbuf)))
+			continue;
+
+		/* Copy the rendered glyph into the stream. */
+
+		sz = strlen(cpp);
+		bsz += sz;
+
+		*buf = mandoc_realloc(*buf, bsz);
+
+		memcpy(&(*buf)[pos], cpp, sz);
+		pos += (int)sz;
+	}
+
+	(*buf)[pos] = '\0';
+}
+
+/*
+ * Open the filename-index mandoc-db database.
+ * Returns NULL if opening failed.
+ */
+static DB *
+index_open(void)
+{
+	DB		*db;
+
+	db = dbopen(MANDOC_IDX, O_RDONLY, 0, DB_RECNO, NULL);
+	if (NULL != db)
+		return(db);
+
+	return(NULL);
+}
+
+/*
+ * Safely unpack from an index file record into the structure.
+ * Returns 1 if an entry was unpacked, 0 if the database is insane.
+ */
+static int
+index_read(const DBT *key, const DBT *val, int index,
+		const struct mchars *mc, struct res *rec)
+{
+	size_t		 left;
+	char		*np, *cp;
+	char		 type;
+
+#define	INDEX_BREAD(_dst) \
+	do { \
+		if (NULL == (np = memchr(cp, '\0', left))) \
+			return(0); \
+		norm_string(cp, mc, &(_dst)); \
+		left -= (np - cp) + 1; \
+		cp = np + 1; \
+	} while (/* CONSTCOND */ 0)
+
+	if (0 == (left = val->size))
+		return(0);
+
+	cp = val->data;
+	assert(sizeof(recno_t) == key->size);
+	memcpy(&rec->rec, key->data, key->size);
+	rec->volume = index;
+
+	if ('d' == (type = *cp++))
+		rec->type = RESTYPE_MDOC;
+	else if ('a' == type)
+		rec->type = RESTYPE_MAN;
+	else if ('c' == type)
+		rec->type = RESTYPE_CAT;
+	else
+		return(0);
+
+	left--;
+	INDEX_BREAD(rec->file);
+	INDEX_BREAD(rec->cat);
+	INDEX_BREAD(rec->title);
+	INDEX_BREAD(rec->arch);
+	INDEX_BREAD(rec->desc);
+	return(1);
+}
+
+/*
+ * Search mandocdb databases in paths for expression "expr".
+ * Filter out by "opts".
+ * Call "res" with the results, which may be zero.
+ * Return 0 if there was a database error, else return 1.
+ */
+int
+apropos_search(int pathsz, char **paths, const struct opts *opts,
+		const struct expr *expr, size_t terms, void *arg,
+		size_t *sz, struct res **resp,
+		void (*res)(struct res *, size_t, void *))
+{
+	struct rectree	 tree;
+	struct mchars	*mc;
+	int		 i, rc;
+
+	memset(&tree, 0, sizeof(struct rectree));
+
+	rc = 0;
+	mc = mchars_alloc();
+	*sz = 0;
+	*resp = NULL;
+
+	/*
+	 * Main loop.  Change into the directory containing manpage
+	 * databases.  Run our expession over each database in the set.
+	 */
+
+	for (i = 0; i < pathsz; i++) {
+		assert('/' == paths[i][0]);
+		if (chdir(paths[i]))
+			continue;
+		if (single_search(&tree, opts, expr, terms, mc, i))
+			continue;
+
+		resfree(tree.node, tree.len);
+		mchars_free(mc);
+		return(0);
+	}
+
+	(*res)(tree.node, tree.len, arg);
+	*sz = tree.len;
+	*resp = tree.node;
+	mchars_free(mc);
+	return(1);
+}
+
+static int
+single_search(struct rectree *tree, const struct opts *opts,
+		const struct expr *expr, size_t terms,
+		struct mchars *mc, int vol)
+{
+	int		 root, leaf, ch;
+	DBT		 key, val;
+	DB		*btree, *idx;
+	char		*buf;
+	struct res	*rs;
+	struct res	 r;
+	uint64_t	 mask;
+	recno_t		 rec;
+
+	root	= -1;
+	leaf	= -1;
+	btree	= NULL;
+	idx	= NULL;
+	buf	= NULL;
+	rs	= tree->node;
+
+	memset(&r, 0, sizeof(struct res));
+
+	if (NULL == (btree = btree_open()))
+		return(1);
+
+	if (NULL == (idx = index_open())) {
+		(*btree->close)(btree);
+		return(1);
+	}
+
+	while (0 == (ch = (*btree->seq)(btree, &key, &val, R_NEXT))) {
+		if ( ! btree_read(&key, &val, mc, &mask, &rec, &buf))
+			break;
+
+		/*
+		 * See if this keyword record matches any of the
+		 * expressions we have stored.
+		 */
+		if ( ! exprmark(expr, buf, mask, NULL))
+			continue;
+
+		/*
+		 * O(log n) scan for prior records.  Since a record
+		 * number is unbounded, this has decent performance over
+		 * a complex hash function.
+		 */
+
+		for (leaf = root; leaf >= 0; )
+			if (rec > rs[leaf].rec &&
+					rs[leaf].rhs >= 0)
+				leaf = rs[leaf].rhs;
+			else if (rec < rs[leaf].rec &&
+					rs[leaf].lhs >= 0)
+				leaf = rs[leaf].lhs;
+			else
+				break;
+
+		/*
+		 * If we find a record, see if it has already evaluated
+		 * to true.  If it has, great, just keep going.  If not,
+		 * try to evaluate it now and continue anyway.
+		 */
+
+		if (leaf >= 0 && rs[leaf].rec == rec) {
+			if (0 == rs[leaf].matched)
+				exprexec(expr, buf, mask, &rs[leaf]);
+			continue;
+		}
+
+		/*
+		 * We have a new file to examine.
+		 * Extract the manpage's metadata from the index
+		 * database, then begin partial evaluation.
+		 */
+
+		key.data = &rec;
+		key.size = sizeof(recno_t);
+
+		if (0 != (*idx->get)(idx, &key, &val, 0))
+			break;
+
+		r.lhs = r.rhs = -1;
+		if ( ! index_read(&key, &val, vol, mc, &r))
+			break;
+
+		/* XXX: this should be elsewhere, I guess? */
+
+		if (opts->cat && strcasecmp(opts->cat, r.cat))
+			continue;
+
+		if (opts->arch && *r.arch)
+			if (strcasecmp(opts->arch, r.arch))
+				continue;
+
+		tree->node = rs = mandoc_realloc
+			(rs, (tree->len + 1) * sizeof(struct res));
+
+		memcpy(&rs[tree->len], &r, sizeof(struct res));
+		memset(&r, 0, sizeof(struct res));
+		rs[tree->len].matches =
+			mandoc_calloc(terms, sizeof(int));
+
+		exprexec(expr, buf, mask, &rs[tree->len]);
+
+		/* Append to our tree. */
+
+		if (leaf >= 0) {
+			if (rec > rs[leaf].rec)
+				rs[leaf].rhs = tree->len;
+			else
+				rs[leaf].lhs = tree->len;
+		} else
+			root = tree->len;
+
+		tree->len++;
+	}
+
+	(*btree->close)(btree);
+	(*idx->close)(idx);
+
+	free(buf);
+	RESFREE(&r);
+	return(1 == ch);
+}
+
+void
+resfree(struct res *rec, size_t sz)
+{
+	size_t		 i;
+
+	for (i = 0; i < sz; i++)
+		RESFREE(&rec[i]);
+	free(rec);
+}
+
+/*
+ * Compile a list of straight-up terms.
+ * The arguments are re-written into ~[[:<:]]term[[:>:]], or "term"
+ * surrounded by word boundaries, then pumped through exprterm().
+ * Terms are case-insensitive.
+ * This emulates whatis(1) behaviour.
+ */
+struct expr *
+termcomp(int argc, char *argv[], size_t *tt)
+{
+	char		*buf;
+	int		 pos;
+	struct expr	*e, *next;
+	size_t		 sz;
+
+	buf = NULL;
+	e = NULL;
+	*tt = 0;
+
+	for (pos = argc - 1; pos >= 0; pos--) {
+		sz = strlen(argv[pos]) + 18;
+		buf = mandoc_realloc(buf, sz);
+		strlcpy(buf, "Nm~[[:<:]]", sz);
+		strlcat(buf, argv[pos], sz);
+		strlcat(buf, "[[:>:]]", sz);
+		if (NULL == (next = exprterm(buf, 0))) {
+			free(buf);
+			exprfree(e);
+			return(NULL);
+		}
+		next->next = e;
+		e = next;
+		(*tt)++;
+	}
+
+	free(buf);
+	return(e);
+}
+
+/*
+ * Compile a sequence of logical expressions.
+ * See apropos.1 for a grammar of this sequence.
+ */
+struct expr *
+exprcomp(int argc, char *argv[], size_t *tt)
+{
+	int		 pos, lvl;
+	struct expr	*e;
+
+	pos = lvl = 0;
+	*tt = 0;
+
+	e = exprexpr(argc, argv, &pos, &lvl, tt);
+
+	if (0 == lvl && pos >= argc)
+		return(e);
+
+	exprfree(e);
+	return(NULL);
+}
+
+/*
+ * Compile an array of tokens into an expression.
+ * An informal expression grammar is defined in apropos(1).
+ * Return NULL if we fail doing so.  All memory will be cleaned up.
+ * Return the root of the expression sequence if alright.
+ */
+static struct expr *
+exprexpr(int argc, char *argv[], int *pos, int *lvl, size_t *tt)
+{
+	struct expr	*e, *first, *next;
+	int		 log;
+
+	first = next = NULL;
+
+	for ( ; *pos < argc; (*pos)++) {
+		e = next;
+
+		/*
+		 * Close out a subexpression.
+		 */
+
+		if (NULL != e && 0 == strcmp(")", argv[*pos])) {
+			if (--(*lvl) < 0)
+				goto err;
+			break;
+		}
+
+		/*
+		 * Small note: if we're just starting, don't let "-a"
+		 * and "-o" be considered logical operators: they're
+		 * just tokens unless pairwise joining, in which case we
+		 * record their existence (or assume "OR").
+		 */
+		log = 0;
+
+		if (NULL != e && 0 == strcmp("-a", argv[*pos]))
+			log = 1;
+		else if (NULL != e && 0 == strcmp("-o", argv[*pos]))
+			log = 2;
+
+		if (log > 0 && ++(*pos) >= argc)
+			goto err;
+
+		/*
+		 * Now we parse the term part.  This can begin with
+		 * "-i", in which case the expression is case
+		 * insensitive.
+		 */
+
+		if (0 == strcmp("(", argv[*pos])) {
+			++(*pos);
+			++(*lvl);
+			next = mandoc_calloc(1, sizeof(struct expr));
+			next->subexpr = exprexpr(argc, argv, pos, lvl, tt);
+			if (NULL == next->subexpr) {
+				free(next);
+				next = NULL;
+			}
+		} else if (0 == strcmp("-i", argv[*pos])) {
+			if (++(*pos) >= argc)
+				goto err;
+			next = exprterm(argv[*pos], 0);
+		} else
+			next = exprterm(argv[*pos], 1);
+
+		if (NULL == next)
+			goto err;
+
+		next->and = log == 1;
+		next->index = (int)(*tt)++;
+
+		/* Append to our chain of expressions. */
+
+		if (NULL == first) {
+			assert(NULL == e);
+			first = next;
+		} else {
+			assert(NULL != e);
+			e->next = next;
+		}
+	}
+
+	return(first);
+err:
+	exprfree(first);
+	return(NULL);
+}
+
+/*
+ * Parse a terminal expression with the grammar as defined in
+ * apropos(1).
+ * Return NULL if we fail the parse.
+ */
+static struct expr *
+exprterm(char *buf, int cs)
+{
+	struct expr	 e;
+	struct expr	*p;
+	char		*key;
+	int		 i;
+
+	memset(&e, 0, sizeof(struct expr));
+
+	/* Choose regex or substring match. */
+
+	if (NULL == (e.v = strpbrk(buf, "=~"))) {
+		e.regex = 0;
+		e.v = buf;
+	} else {
+		e.regex = '~' == *e.v;
+		*e.v++ = '\0';
+	}
+
+	/* Determine the record types to search for. */
+
+	e.mask = 0;
+	if (buf < e.v) {
+		while (NULL != (key = strsep(&buf, ","))) {
+			i = 0;
+			while (types[i].mask &&
+					strcmp(types[i].name, key))
+				i++;
+			e.mask |= types[i].mask;
+		}
+	}
+	if (0 == e.mask)
+		e.mask = TYPE_Nm | TYPE_Nd;
+
+	if (e.regex) {
+		i = REG_EXTENDED | REG_NOSUB | (cs ? 0 : REG_ICASE);
+		if (regcomp(&e.re, e.v, i))
+			return(NULL);
+	}
+
+	e.v = mandoc_strdup(e.v);
+
+	p = mandoc_calloc(1, sizeof(struct expr));
+	memcpy(p, &e, sizeof(struct expr));
+	return(p);
+}
+
+void
+exprfree(struct expr *p)
+{
+	struct expr	*pp;
+
+	while (NULL != p) {
+		if (p->subexpr)
+			exprfree(p->subexpr);
+		if (p->regex)
+			regfree(&p->re);
+		free(p->v);
+		pp = p->next;
+		free(p);
+		p = pp;
+	}
+}
+
+static int
+exprmark(const struct expr *p, const char *cp,
+		uint64_t mask, int *ms)
+{
+
+	for ( ; p; p = p->next) {
+		if (p->subexpr) {
+			if (exprmark(p->subexpr, cp, mask, ms))
+				return(1);
+			continue;
+		} else if ( ! (mask & p->mask))
+			continue;
+
+		if (p->regex) {
+			if (regexec(&p->re, cp, 0, NULL, 0))
+				continue;
+		} else if (NULL == strcasestr(cp, p->v))
+			continue;
+
+		if (NULL == ms)
+			return(1);
+		else
+			ms[p->index] = 1;
+	}
+
+	return(0);
+}
+
+static int
+expreval(const struct expr *p, int *ms)
+{
+	int		 match;
+
+	/*
+	 * AND has precedence over OR.  Analysis is left-right, though
+	 * it doesn't matter because there are no side-effects.
+	 * Thus, step through pairwise ANDs and accumulate their Boolean
+	 * evaluation.  If we encounter a single true AND collection or
+	 * standalone term, the whole expression is true (by definition
+	 * of OR).
+	 */
+
+	for (match = 0; p && ! match; p = p->next) {
+		/* Evaluate a subexpression, if applicable. */
+		if (p->subexpr && ! ms[p->index])
+			ms[p->index] = expreval(p->subexpr, ms);
+
+		match = ms[p->index];
+		for ( ; p->next && p->next->and; p = p->next) {
+			/* Evaluate a subexpression, if applicable. */
+			if (p->next->subexpr && ! ms[p->next->index])
+				ms[p->next->index] =
+					expreval(p->next->subexpr, ms);
+			match = match && ms[p->next->index];
+		}
+	}
+
+	return(match);
+}
+
+/*
+ * First, update the array of terms for which this expression evaluates
+ * to true.
+ * Second, logically evaluate all terms over the updated array of truth
+ * values.
+ * If this evaluates to true, mark the expression as satisfied.
+ */
+static void
+exprexec(const struct expr *e, const char *cp,
+		uint64_t mask, struct res *r)
+{
+
+	assert(0 == r->matched);
+	exprmark(e, cp, mask, r->matches);
+	r->matched = expreval(e, r->matches);
+}
+@
+
+
+1.32.2.1
+log
+@DragonFly needs explicit #include <sys/endian.h> to use be64toh(),
+while most other systems include that indirectly via <sys/types.h>.
+Reported by Franco Fichtner <franco at lastsummer dot de>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.32 2012/03/25 00:48:47 kristaps Exp $ */
+a39 1
+# include <sys/endian.h>
+@
+
+
+1.32.2.2
+log
+@Cleanup suggested by gcc-4.8.1, following hints by Christos Zoulas:
+- avoid bad qualifier casting in roff.c, roff_parsetext()
+  by changing the mandoc_escape arguments to "const char const **"
+- avoid bad qualifier casting in mandocdb.c, index_merge()
+- do not complain about unused variables in test-*.c
+- garbage collect a few unused variables elsewhere
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.32.2.1 2013/10/02 21:03:26 schwarze Exp $ */
+d417 1
+a417 1
+	int		 i;
+d421 1
+@
+
+
+1.32.2.3
+log
+@On __sun, use <sys/byteorder.h>, BE_64(x), and <db_185.h>.
+Thanks to Thomas Klausner <wiz at NetBSD dot org> for providing
+failing SmartOS build logs such that i could write this patch
+without access to a __sun system and for confirming that these
+patches help.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.32.2.2 2013/10/05 20:30:05 schwarze Exp $ */
+d33 4
+a36 1
+#if defined(__APPLE__)
+d38 1
+a38 4
+#elif defined(__linux__)
+# include <endian.h>
+#elif defined(__sun)
+# include <sys/byteorder.h>
+a40 5
+#endif
+
+#if defined(__linux__) || defined(__sun)
+# include <db_185.h>
+#else
+@
+
+
+1.32.2.4
+log
+@Implement the \: (optional line break) escape sequence,
+documented in the Ossanna-Kernighan-Ritter troff manual
+and also supported by groff.
+
+Missing feature reported by Steffen Nurpmeso <sdaoden at gmail dot com>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.32.2.3 2013/10/10 23:43:04 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2011, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d262 2
+a263 2
+	static const char res[] = { '\\', '\t', ASCII_NBRSP,
+			ASCII_HYPH, ASCII_BREAK, '\0' };
+d283 1
+a283 2
+		switch (*val) {
+		case (ASCII_HYPH):
+d287 1
+a287 3
+		case ('\t'):
+			/* FALLTHROUGH */
+		case (ASCII_NBRSP):
+a289 2
+			/* FALLTHROUGH */
+		case (ASCII_BREAK):
+d291 1
+a291 4
+		default:
+			break;
+		}
+		if ('\\' != *val)
+@
+
+
+1.32.2.5
+log
+@introduce mandoc_aux to 1.12
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.32.2.4 2014/01/22 21:02:54 schwarze Exp $ */
+a51 1
+#include "mandoc_aux.h"
+@
+
+
+1.32.2.6
+log
+@Audit malloc(3)/calloc(3)/realloc(3) in VERSION_1_12.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.32.2.5 2014/03/23 12:04:54 schwarze Exp $ */
+d558 2
+a559 2
+		tree->node = rs = mandoc_reallocarray(rs,
+		    tree->len + 1, sizeof(struct res));
+@
+
+
+1.32.2.7
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.32.2.6 2014/04/23 21:31:38 schwarze Exp $ */
+d18 1
+d20 1
+a22 1
+#include <sys/types.h>
+@
+
+
+1.32.2.8
+log
+@Cygwin support; from Yaakov Selkowitz,
+https://sourceforge.net/p/cygwin-ports/mdocml/ci/master/tree/
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.32.2.7 2014/08/11 00:31:13 schwarze Exp $ */
+d34 1
+a34 1
+#elif defined(__linux__) || defined(__CYGWIN__)
+d42 1
+a42 1
+#if defined(__linux__) || defined(__CYGWIN__) || defined(__sun)
+@
+
+
+1.31
+log
+@Be insane.  Make apropos(1) subsume man(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.30 2012/03/24 00:31:55 kristaps Exp $ */
+d22 2
+d431 1
+@
+
+
+1.30
+log
+@Simplify by not pre-filtering the result vector for satisfied matches:
+we can do this in the frontend.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.29 2012/03/23 05:07:35 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.29
+log
+@Merge some/most of schwarze@@'s OpenBSD changes into mandoc: many more
+warnings about grokking manpages in their respective directories.
+DO NOT, however, import his temporary-file routines (I don't plan on
+staying with a recno/btree split) nor the realpath() routines, which
+destroy relative path-ness.
+
+Also pull in the lorder bits.
+
+There are some changes I started to make then stopped relating to
+reporting errors in the correct directories.  I'll clean this up in
+subsequent commits.
+
+This puts us more or less on parity with OpenBSD.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.28 2011/12/25 14:58:39 schwarze Exp $ */
+d45 9
+a53 13
+struct	rec {
+	struct res	 res; /* resulting record info */
+	/*
+	 * Maintain a binary tree for checking the uniqueness of `rec'
+	 * when adding elements to the results array.
+	 * Since the results array is dynamic, use offset in the array
+	 * instead of a pointer to the structure.
+	 */
+	int		 lhs;
+	int		 rhs;
+	int		 matched; /* expression is true */
+	int		*matches; /* partial truth evaluations */
+};
+d72 1
+a72 1
+	struct rec	*node; /* record array for dir tree */
+d126 1
+a126 1
+			const char *, uint64_t, struct rec *);
+d133 1
+a133 1
+			const struct mchars *, struct rec *);
+a136 1
+static	void	 recfree(struct rec *);
+d359 1
+a359 1
+		const struct mchars *mc, struct rec *rec)
+d379 2
+a380 2
+	memcpy(&rec->res.rec, key->data, key->size);
+	rec->res.volume = index;
+d383 1
+a383 1
+		rec->res.type = RESTYPE_MDOC;
+d385 1
+a385 1
+		rec->res.type = RESTYPE_MAN;
+d387 1
+a387 1
+		rec->res.type = RESTYPE_CAT;
+d392 5
+a396 5
+	INDEX_BREAD(rec->res.file);
+	INDEX_BREAD(rec->res.cat);
+	INDEX_BREAD(rec->res.title);
+	INDEX_BREAD(rec->res.arch);
+	INDEX_BREAD(rec->res.desc);
+d409 1
+d414 1
+a414 2
+	struct res	*ress;
+	int		 i, mlen, rc;
+d420 2
+d431 6
+a436 2
+		if ( ! single_search(&tree, opts, expr, terms, mc, i))
+			goto out;
+d439 3
+a441 25
+	/*
+	 * Count matching files, transfer to a "clean" array, then feed
+	 * them to the output handler.
+	 */
+
+	for (mlen = i = 0; i < tree.len; i++)
+		if (tree.node[i].matched)
+			mlen++;
+
+	ress = mandoc_malloc(mlen * sizeof(struct res));
+
+	for (mlen = i = 0; i < tree.len; i++)
+		if (tree.node[i].matched)
+			memcpy(&ress[mlen++], &tree.node[i].res,
+					sizeof(struct res));
+
+	(*res)(ress, mlen, arg);
+	free(ress);
+
+	rc = 1;
+out:
+	for (i = 0; i < tree.len; i++)
+		recfree(&tree.node[i]);
+
+	free(tree.node);
+d443 1
+a443 1
+	return(rc);
+d455 2
+a456 2
+	struct rec	*rs;
+	struct rec	 r;
+d467 1
+a467 1
+	memset(&r, 0, sizeof(struct rec));
+d495 1
+a495 1
+			if (rec > rs[leaf].res.rec &&
+d498 1
+a498 1
+			else if (rec < rs[leaf].res.rec &&
+d510 1
+a510 1
+		if (leaf >= 0 && rs[leaf].res.rec == rec) {
+d534 1
+a534 1
+		if (opts->cat && strcasecmp(opts->cat, r.res.cat))
+d537 2
+a538 2
+		if (opts->arch && *r.res.arch)
+			if (strcasecmp(opts->arch, r.res.arch))
+d542 1
+a542 1
+			(rs, (tree->len + 1) * sizeof(struct rec));
+d544 2
+a545 2
+		memcpy(&rs[tree->len], &r, sizeof(struct rec));
+		memset(&r, 0, sizeof(struct rec));
+d554 1
+a554 1
+			if (rec > rs[leaf].res.rec)
+d568 1
+a568 1
+	recfree(&r);
+d572 2
+a573 2
+static void
+recfree(struct rec *rec)
+d575 1
+d577 3
+a579 7
+	free(rec->res.file);
+	free(rec->res.cat);
+	free(rec->res.title);
+	free(rec->res.arch);
+	free(rec->res.desc);
+
+	free(rec->matches);
+d870 1
+a870 1
+		uint64_t mask, struct rec *r)
+@
+
+
+1.28
+log
+@For binary compatability of the databases across architectures,
+use pointers to arrays, not pointers to structs.  It is now possible
+to create databases on sparc64 and use them on i386 and vice versa.
+Kristaps@@ can't think of anything else that might be required, either.
+Put this in now such that we can move on.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.27 2011/12/20 21:41:11 schwarze Exp $ */
+d156 1
+@
+
+
+1.27
+log
+@Do not cast void pointers to pointers requiring alignment.
+This makes mandocdb(8)/apropos(1) work on strict alignment architectures.
+Basic way to fix this confirmed by deraadt@@ and kettenis@@, thanks.
+ok kristaps@@
+
+This now works on both sparc64 and i386, but note that the binary
+database format is still machine-dependent.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.26 2011/12/16 20:06:58 kristaps Exp $ */
+d126 2
+a127 2
+			const struct mchars *, 
+			struct db_val *, char **);
+d170 2
+a171 3
+btree_read(const DBT *k, const DBT *v, 
+		const struct mchars *mc, 
+		struct db_val *dbv, char **buf)
+d173 1
+a173 1
+	struct db_val	 raw_dbv;
+d176 1
+a176 1
+	if (k->size < 2 || sizeof(struct db_val) != v->size)
+d184 3
+a186 3
+	memcpy(&raw_dbv, v->data, v->size);
+	dbv->rec = betoh32(raw_dbv.rec);
+	dbv->mask = betoh64(raw_dbv.mask);
+d477 2
+a478 1
+	struct db_val	 vb;
+d498 1
+a498 1
+		if ( ! btree_read(&key, &val, mc, &vb, &buf))
+d505 1
+a505 1
+		if ( ! exprmark(expr, buf, vb.mask, NULL))
+d515 1
+a515 1
+			if (vb.rec > rs[leaf].res.rec &&
+d518 1
+a518 1
+			else if (vb.rec < rs[leaf].res.rec &&
+d530 1
+a530 1
+		if (leaf >= 0 && rs[leaf].res.rec == vb.rec) {
+d532 1
+a532 1
+				exprexec(expr, buf, vb.mask, &rs[leaf]);
+d542 1
+a542 1
+		key.data = &vb.rec;
+d569 1
+a569 1
+		exprexec(expr, buf, vb.mask, &rs[tree->len]);
+d574 1
+a574 1
+			if (vb.rec > rs[leaf].res.rec)
+@
+
+
+1.26
+log
+@Two lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.25 2011/12/16 12:07:45 kristaps Exp $ */
+d174 1
+a174 1
+	const struct db_val *vp;
+a183 1
+	vp = v->data;
+d185 3
+a187 2
+	dbv->rec = betoh32(vp->rec);
+	dbv->mask = betoh64(vp->mask);
+d383 2
+a384 1
+	rec->res.rec = *(recno_t *)key->data;
+@
+
+
+1.25
+log
+@Make sure that "any" is UINT64_MAX, not just INT_MAX, else "any" won't
+cover all types.  Found after some database trawling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.24 2011/12/16 12:06:35 kristaps Exp $ */
+d200 1
+a200 1
+	size_t		 rc;
+d241 1
+a241 1
+	return(rc);
+@
+
+
+1.24
+log
+@Make the stored "cat"/"mdoc"/"man" strings just be c/d/a single-character
+bytes.  This cuts down a little in index size and allows for cleaner
+extraction of information.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.23 2011/12/10 21:46:59 kristaps Exp $ */
+d120 1
+a120 1
+	{ INT_MAX, "any" },
+@
+
+
+1.23
+log
+@Plug a memory leak in single_search().
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.22 2011/12/09 11:18:57 kristaps Exp $ */
+d368 1
+d379 2
+a380 2
+	left = val->size;
+	cp = (char *)val->data;
+d382 1
+d386 10
+a395 1
+	INDEX_BREAD(rec->res.type);
+a594 1
+	free(rec->res.type);
+@
+
+
+1.22
+log
+@When specifying an architecture to whatis(1)/apropos(1)/man.cgi(7), do a
+comparison only if the manual specifies an architecture, otherwise let it
+through.  Looked over by schwarze@@.  This brings us much more in line with
+OpenBSD's behaviour.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.21 2011/12/03 18:47:09 kristaps Exp $ */
+d553 1
+a568 1
+		memset(&r, 0, sizeof(struct rec));
+d576 1
+@
+
+
+1.21
+log
+@Back out lorder, which doesn't seem necessary (?).  I think this means all
+fields are endian-neutral, although the recno(3) key is unknown.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.20 2011/12/03 12:09:07 kristaps Exp $ */
+d544 4
+a547 2
+		if (opts->arch && strcasecmp(opts->arch, r.res.arch))
+			continue;
+@
+
+
+1.20
+log
+@Make sure the btree(3) goop is also BE.  This covers both the DB metadata
+and prior commits handle the contained binary fields.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.19 2011/12/02 00:21:56 kristaps Exp $ */
+a155 1
+	info.lorder = 4321;
+@
+
+
+1.19
+log
+@This is a little gross: Linux and Apple need lots some cajoling to work
+with byte-swapping.  Tested on Mac.  Any Linux machines somebody can
+test on?  Anybody?
+
+While here, note the correct byte-size in mandocdb(8) and also note
+field widths and endianness.  The btree is now endian-neutral.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.18 2011/12/01 23:55:58 kristaps Exp $ */
+d156 1
+@
+
+
+1.18
+log
+@Use OpenBSD's endian functions.  Make btree type also be endian-neutral.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.17 2011/12/01 23:46:26 kristaps Exp $ */
+d18 4
+d31 2
+a32 1
+#ifdef __linux__
+d34 3
+@
+
+
+1.17
+log
+@In apropos_db.c, move all btree reading (and safety checks) into the
+btree_read() function.  Also, add a forgotten free() for the type of
+grokked record.
+
+Then in both mandocdb.c and apropos_db.c, make the "rec" field of the
+btree by in network-order.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.16 2011/11/29 10:53:42 kristaps Exp $ */
+a26 2
+#include <arpa/inet.h>
+
+d178 2
+a179 2
+	dbv->rec = ntohl(vp->rec);
+	dbv->mask = vp->mask;
+@
+
+
+1.16
+log
+@Make `-i' only apply to regular expressions.  For the equality operator
+(and thus the default), always use strcasestr().  Discussed on tech@@
+with schwarze@@.  While here, fix the apropos.c usage() message to be
+consistent with apropos(1) and clean up the EXAMPLES in apropos(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.15 2011/11/28 09:44:05 schwarze Exp $ */
+d27 2
+d119 3
+a121 2
+static	int	 btree_read(const DBT *,
+			const struct mchars *, char **);
+d164 3
+a166 1
+btree_read(const DBT *v, const struct mchars *mc, char **buf)
+d168 1
+d170 3
+a172 3
+	/* Sanity: are we nil-terminated? */
+
+	assert(v->size > 0);
+d174 2
+a175 1
+	if ('\0' != ((char *)v->data)[(int)v->size - 1])
+d178 4
+a181 1
+	norm_string((char *)v->data, mc, buf);
+a454 1
+	uint64_t	 mask;
+a457 1
+	recno_t		 rec;
+d460 1
+a460 1
+	struct db_val	*vbuf;
+d480 1
+a480 3
+		if (key.size < 2 || sizeof(struct db_val) != val.size)
+			break;
+		if ( ! btree_read(&key, mc, &buf))
+a482 4
+		vbuf = val.data;
+		rec = vbuf->rec;
+		mask = vbuf->mask;
+
+d487 1
+a487 1
+		if ( ! exprmark(expr, buf, mask, NULL))
+d497 1
+a497 1
+			if (rec > rs[leaf].res.rec &&
+d500 1
+a500 1
+			else if (rec < rs[leaf].res.rec &&
+d512 1
+a512 1
+		if (leaf >= 0 && rs[leaf].res.rec == rec) {
+d514 1
+a514 1
+				exprexec(expr, buf, mask, &rs[leaf]);
+d524 1
+a524 1
+		key.data = &rec;
+d548 1
+a548 1
+		exprexec(expr, buf, mask, &rs[tree->len]);
+d553 1
+a553 1
+			if (rec > rs[leaf].res.rec)
+d575 1
+@
+
+
+1.15
+log
+@Tweak whatis(1):
+* Bugfix: Use all arguments, not just the last one.
+* Use 'Nm~' instead of 'Nm,Nd~' to match OpenBSD behaviour.
+* For the progname, accept '^whatis', not '^whatis$' to ease testing.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.14 2011/11/27 23:11:37 schwarze Exp $ */
+a54 1
+	int		 cs; /* is case-sensitive? */
+a695 1
+			next->cs = 1;
+a745 2
+	e.cs = cs;
+
+d817 2
+a818 7
+		} else if (p->cs) {
+			if (NULL == strstr(cp, p->v))
+				continue;
+		} else {
+			if (NULL == strcasestr(cp, p->v))
+				continue;
+		}
+@
+
+
+1.14
+log
+@Save the manual type (mdoc, man, or cat) in the index file
+of the mandoc databases, as suggested by kristaps@@.
+Given the well-structured code, this is surprisingly simple.
+
+This changes the mandoc.index database format.
+Run "sudo mandocdb" to regenerate your databases.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.13 2011/11/27 18:54:01 kristaps Exp $ */
+d602 2
+a603 2
+	for (pos = 0; pos < argc; pos++) {
+		sz = strlen(argv[pos]) + 16;
+d605 1
+a605 1
+		strlcpy(buf, "~[[:<:]]", sz);
+d613 1
+a613 2
+		if (NULL != e)
+			e->next = next;
+@
+
+
+1.13
+log
+@Get us a whatis(1) mode for apropos(1).
+This is from a patch to tech@@ as critiqued by schwarze@@, checked in to
+get the ball rolling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.12 2011/11/26 22:38:11 schwarze Exp $ */
+d369 1
+@
+
+
+1.12
+log
+@Sync to OpenBSD, mostly gratuitous and whitespace differences,
+but a few serious things as well:
+* -M overrides MANPATH
+* -m prepends to the path
+* put back database close calls that got lost in mandocdb
+* missing sys/types.h in manpath.c, needed for size_t
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.11 2011/11/23 09:55:28 kristaps Exp $ */
+d582 44
+d776 1
+a776 1
+		i = REG_EXTENDED | REG_NOSUB | cs ? 0 : REG_ICASE;
+@
+
+
+1.11
+log
+@Let apropos_db.h export the volume of manpages for a parsed record.
+This is necessary since an array of records can have duplicate record
+numbers in different mandoc.index files.
+The volume [right now] is just the index of the parsed mandoc.index in
+the manpaths.  This is sensible because the order of the manpath is
+significant (it's the order of duplicate-named manuals displayed by
+man(1)) and is thus not likely to change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.10 2011/11/20 16:29:50 kristaps Exp $ */
+d118 1
+a118 1
+static	int	 btree_read(const DBT *, 
+d121 1
+a121 1
+static	void	 exprexec(const struct expr *, 
+d123 1
+a123 1
+static	int	 exprmark(const struct expr *, 
+d151 1
+a151 1
+	if (NULL != db) 
+d179 1
+a179 1
+ * The magic numbers are from the UTF-8 packaging.  
+d244 1
+a244 1
+	static const char res[] = { '\\', '\t', 
+d290 1
+a290 1
+		/* 
+d385 1
+a385 1
+		const struct expr *expr, size_t terms, void *arg, 
+d423 1
+a423 1
+			memcpy(&ress[mlen++], &tree.node[i].res, 
+d463 1
+a463 1
+	if (NULL == (btree = btree_open())) 
+d472 2
+a473 2
+ 		if (key.size < 2 || sizeof(struct db_val) != val.size) 
+  			break;
+d495 1
+a495 1
+			if (rec > rs[leaf].res.rec && 
+d498 1
+a498 1
+			else if (rec < rs[leaf].res.rec && 
+d501 1
+a501 1
+			else 
+d543 1
+a543 1
+		rs[tree->len].matches = 
+d546 2
+a547 1
+		exprexec(expr, buf, mask, &rs[tree->len]); 
+d557 1
+a557 1
+		
+d561 1
+a561 1
+	
+d636 1
+a636 1
+			log = 1;			
+d748 1
+a748 1
+	
+d762 1
+a762 1
+exprmark(const struct expr *p, const char *cp, 
+d817 1
+a817 1
+				ms[p->next->index] = 
+d834 1
+a834 1
+exprexec(const struct expr *p, const char *cp, 
+d839 2
+a840 2
+	exprmark(p, cp, mask, r->matches);
+	r->matched = expreval(p, r->matches);
+@
+
+
+1.10
+log
+@Clarify some behaviour, bringing schwarze@@'s patch and mine closer together
+(although I still don't have -M, which is a big piece).
+
+First, the default search path is the cwd.  This will change to use -M
+once I look over that code.
+
+If MANPATH is specified, this replaces the cwd.
+
+Both of these are augmented by -m.
+
+If paths don't exist or don't have databases, they're silently ignored.
+This makes perfect sense: you may be given a superset of possible paths.
+The corner case of no paths (where, say, MANPATH consists of bogus paths
+or the cwd is unreadable) simply means that no paths are searched.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.9 2011/11/20 15:45:37 kristaps Exp $ */
+d128 1
+a128 1
+static	int	 index_read(const DBT *, const DBT *, 
+d136 1
+a136 1
+			struct mchars *);
+d348 1
+a348 1
+index_read(const DBT *key, const DBT *val, 
+d367 1
+d406 1
+a406 1
+		if ( ! single_search(&tree, opts, expr, terms, mc))
+d442 1
+a442 1
+		struct mchars *mc)
+d529 1
+a529 1
+		if ( ! index_read(&key, &val, mc, &r))
+@
+
+
+1.9
+log
+@Ooops... tiny type error slipped in.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.8 2011/11/20 15:43:14 kristaps Exp $ */
+d377 1
+a377 2
+ * Search mandocdb databases in argv (size argc) for the expression
+ * "expr".
+d383 1
+a383 1
+apropos_search(int argc, char *argv[], const struct opts *opts,
+d394 1
+d397 7
+a403 3
+	for (rc = 1, i = 0; rc && i < argc; i++) {
+		/* FIXME: ugly warning: we shouldn't get here! */
+		if (chdir(argv[i]))
+d405 2
+a406 2
+		rc = single_search(&tree, opts, expr, terms, mc);
+		/* FIXME: warn and continue... ? */
+d410 2
+a411 2
+	 * Count the matching files
+	 * and feed them to the output handler.
+d428 2
+d463 1
+a463 1
+		return(0);
+d467 1
+a467 1
+		return(0);
+@
+
+
+1.8
+log
+@Integrate a moderately-patched version of schwarze@@'s support for multiple
+directories containing mandocdb(8) databases.  Some changes follow:
+
+ (1) don't support -M yet;
+ (2) fall back to cwd if no prior manpath has been specified;
+ (3) resolve manpages using realpath() to prevent consecutive chdir()'s
+     over relative paths;
+ (4) note where further error-reporting is required;
+ (5) fix leaking memory on exit in several cases.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.7 2011/11/20 12:46:53 kristaps Exp $ */
+d599 1
+a599 1
+exprexpr(int argc, char **argv, int *pos, int *lvl, size_t *tt)
+@
+
+
+1.7
+log
+@Fix white-space in apropos_db.c to make merging cleaner.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.6 2011/11/20 12:39:08 kristaps Exp $ */
+d25 1
+d68 5
+d134 3
+d377 2
+a378 1
+ * Search the mandocdb database for the expression "expr".
+d384 2
+a385 2
+apropos_search(const struct opts *opts, const struct expr *expr,
+		size_t terms, void *arg, 
+d388 50
+a437 1
+	int		 i, rsz, root, leaf, mlen, rc, ch;
+a440 1
+	struct mchars	*mc;
+a443 1
+	struct res	*ress;
+a446 1
+	rc	= 0;
+a450 1
+	mc	= NULL;
+d452 1
+a452 2
+	rs	= NULL;
+	rsz	= 0;
+d456 2
+a457 1
+	mc = mchars_alloc();
+d459 4
+a462 4
+	if (NULL == (btree = btree_open())) 
+		goto out;
+	if (NULL == (idx = index_open())) 
+		goto out;
+d532 2
+a533 2
+		rs = mandoc_realloc
+			(rs, (rsz + 1) * sizeof(struct rec));
+d535 3
+a537 2
+		memcpy(&rs[rsz], &r, sizeof(struct rec));
+		rs[rsz].matches = mandoc_calloc(terms, sizeof(int));
+d539 1
+a539 1
+		exprexec(expr, buf, mask, &rs[rsz]); 
+d544 1
+a544 1
+				rs[leaf].rhs = rsz;
+d546 1
+a546 1
+				rs[leaf].lhs = rsz;
+d548 1
+a548 1
+			root = rsz;
+d551 1
+a551 1
+		rsz++;
+d554 2
+a555 31
+	/*
+	 * If we haven't encountered any database errors, then construct
+	 * an array of results and push them to the caller.
+	 */
+
+	if (1 == ch) {
+		for (mlen = i = 0; i < rsz; i++)
+			if (rs[i].matched)
+				mlen++;
+		ress = mandoc_malloc(mlen * sizeof(struct res));
+		for (mlen = i = 0; i < rsz; i++)
+			if (rs[i].matched)
+				memcpy(&ress[mlen++], &rs[i].res, 
+						sizeof(struct res));
+		(*res)(ress, mlen, arg);
+		free(ress);
+		rc = 1;
+	}
+
+out:
+	for (i = 0; i < rsz; i++)
+		recfree(&rs[i]);
+
+	recfree(&r);
+
+	if (mc)
+		mchars_free(mc);
+	if (btree)
+		(*btree->close)(btree);
+	if (idx)
+		(*idx->close)(idx);
+d558 1
+a558 2
+	free(rs);
+	return(rc);
+d599 1
+a599 1
+exprexpr(int argc, char *argv[], int *pos, int *lvl, size_t *tt)
+@
+
+
+1.6
+log
+@Merge schwarze@@'s work for 64-bit types.  This is based on a tweaked patch
+submitted to tech@@ on 16/11/2011, 01:39.  It has been updated to account
+for the logical-operator functions and to avoid keeping a live pointer into
+the DBT value, which is not guaranteed to be consistent across calls into
+the bdb library.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.5 2011/11/18 07:02:19 kristaps Exp $ */
+d68 39
+a106 39
+  	{ TYPE_An, "An" },
+ 	{ TYPE_Ar, "Ar" },
+ 	{ TYPE_At, "At" },
+ 	{ TYPE_Bsx, "Bsx" },
+ 	{ TYPE_Bx, "Bx" },
+  	{ TYPE_Cd, "Cd" },
+ 	{ TYPE_Cm, "Cm" },
+ 	{ TYPE_Dv, "Dv" },
+ 	{ TYPE_Dx, "Dx" },
+ 	{ TYPE_Em, "Em" },
+  	{ TYPE_Er, "Er" },
+  	{ TYPE_Ev, "Ev" },
+ 	{ TYPE_Fa, "Fa" },
+ 	{ TYPE_Fl, "Fl" },
+  	{ TYPE_Fn, "Fn" },
+  	{ TYPE_Fn, "Fo" },
+ 	{ TYPE_Ft, "Ft" },
+ 	{ TYPE_Fx, "Fx" },
+ 	{ TYPE_Ic, "Ic" },
+  	{ TYPE_In, "In" },
+ 	{ TYPE_Lb, "Lb" },
+ 	{ TYPE_Li, "Li" },
+ 	{ TYPE_Lk, "Lk" },
+ 	{ TYPE_Ms, "Ms" },
+ 	{ TYPE_Mt, "Mt" },
+  	{ TYPE_Nd, "Nd" },
+  	{ TYPE_Nm, "Nm" },
+ 	{ TYPE_Nx, "Nx" },
+ 	{ TYPE_Ox, "Ox" },
+  	{ TYPE_Pa, "Pa" },
+ 	{ TYPE_Rs, "Rs" },
+ 	{ TYPE_Sh, "Sh" },
+ 	{ TYPE_Ss, "Ss" },
+  	{ TYPE_St, "St" },
+ 	{ TYPE_Sy, "Sy" },
+ 	{ TYPE_Tn, "Tn" },
+  	{ TYPE_Va, "Va" },
+  	{ TYPE_Va, "Vt" },
+  	{ TYPE_Xr, "Xr" },
+@
+
+
+1.5
+log
+@Evaluation with logical subexpressions.  This allows support for arbitrary,
+nested logical subexpressions with AND (-a) and OR (-o) support.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.4 2011/11/14 10:07:06 kristaps Exp $ */
+d22 1
+d53 1
+a53 1
+	int	 	 mask; /* type-mask */
+d63 1
+a63 1
+	int		 mask;
+d68 39
+a106 14
+	{ TYPE_An, "An" },
+	{ TYPE_Cd, "Cd" },
+	{ TYPE_Er, "Er" },
+	{ TYPE_Ev, "Ev" },
+	{ TYPE_Fn, "Fn" },
+	{ TYPE_Fn, "Fo" },
+	{ TYPE_In, "In" },
+	{ TYPE_Nd, "Nd" },
+	{ TYPE_Nm, "Nm" },
+	{ TYPE_Pa, "Pa" },
+	{ TYPE_St, "St" },
+	{ TYPE_Va, "Va" },
+	{ TYPE_Va, "Vt" },
+	{ TYPE_Xr, "Xr" },
+d116 1
+a116 1
+			const char *, int, struct rec *);
+d118 1
+a118 1
+			const char *, int, int *);
+d159 1
+d378 2
+a379 1
+	int		 i, rsz, root, leaf, mask, mlen, rc, ch;
+d388 1
+d410 2
+a411 7
+		/* 
+		 * Low-water mark for key and value.
+		 * The key must have something in it, and the value must
+		 * have the correct tags/recno mix.
+		 */
+		if (key.size < 2 || 8 != val.size) 
+			break;
+d415 3
+a417 1
+		mask = *(int *)val.data;
+a425 2
+		memcpy(&rec, val.data + 4, sizeof(recno_t));
+
+d728 2
+a729 1
+exprmark(const struct expr *p, const char *cp, int mask, int *ms)
+d800 2
+a801 1
+exprexec(const struct expr *p, const char *cp, int mask, struct rec *r)
+@
+
+
+1.4
+log
+@Have exprcomp() accept a string instead of an array-pointer.  Also, collapse
+the arguments in apropos(1) into a single string passed to exprcomp().  Ok
+schwarze@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.3 2011/11/13 11:10:27 schwarze Exp $ */
+d35 14
+d50 9
+a58 4
+	int		 regex;
+	int	 	 mask;
+	char		*v;
+	regex_t	 	 re;
+d86 9
+a94 2
+static	int	 btree_read(const DBT *, const struct mchars *, char **);
+static	int	 exprexec(const struct expr *, char *, int);
+d101 1
+d330 1
+a330 1
+	rec->rec = *(recno_t *)key->data;
+d332 5
+a336 5
+	INDEX_BREAD(rec->file);
+	INDEX_BREAD(rec->cat);
+	INDEX_BREAD(rec->title);
+	INDEX_BREAD(rec->arch);
+	INDEX_BREAD(rec->desc);
+d344 1
+d346 1
+a346 1
+void
+d348 2
+a349 1
+		void *arg, void (*res)(struct rec *, size_t, void *))
+d351 1
+a351 1
+	int		 i, len, root, leaf;
+a354 1
+	int		 ch;
+d357 3
+a359 2
+	struct rec	*recs;
+	struct rec	 srec;
+d361 1
+d368 2
+a369 4
+	recs	= NULL;
+	len	= 0;
+
+	memset(&srec, 0, sizeof(struct rec));
+d371 1
+a371 1
+	/* XXX: error out with bad regexp? */
+a374 2
+	/* XXX: return fact that we've errored? */
+
+d391 7
+a397 1
+		if ( ! exprexec(expr, buf, *(int *)val.data))
+d409 6
+a414 4
+			if (rec > recs[leaf].rec && recs[leaf].rhs >= 0)
+				leaf = recs[leaf].rhs;
+			else if (rec < recs[leaf].rec && recs[leaf].lhs >= 0)
+				leaf = recs[leaf].lhs;
+d418 9
+a426 1
+		if (leaf >= 0 && recs[leaf].rec == rec)
+d428 1
+d431 3
+a433 2
+		 * Now we actually extract the manpage's metadata from
+		 * the index database.
+d442 2
+a443 2
+		srec.lhs = srec.rhs = -1;
+		if ( ! index_read(&key, &val, mc, &srec))
+d446 3
+a448 1
+		if (opts->cat && strcasecmp(opts->cat, srec.cat))
+d450 1
+a450 1
+		if (opts->arch && strcasecmp(opts->arch, srec.arch))
+d453 2
+a454 2
+		recs = mandoc_realloc
+			(recs, (len + 1) * sizeof(struct rec));
+d456 2
+a457 1
+		memcpy(&recs[len], &srec, sizeof(struct rec));
+d459 1
+d463 2
+a464 2
+			if (rec > recs[leaf].rec)
+				recs[leaf].rhs = len;
+d466 1
+a466 1
+				recs[leaf].lhs = len;
+d468 1
+a468 1
+			root = len;
+d470 2
+a471 2
+		memset(&srec, 0, sizeof(struct rec));
+		len++;
+d473 5
+d479 13
+a491 2
+	if (1 == ch)
+		(*res)(recs, len, arg);
+a492 1
+	/* XXX: else?  corrupt database error? */
+d494 2
+a495 7
+	for (i = 0; i < len; i++) {
+		free(recs[i].file);
+		free(recs[i].cat);
+		free(recs[i].title);
+		free(recs[i].arch);
+		free(recs[i].desc);
+	}
+d497 1
+a497 5
+	free(srec.file);
+	free(srec.cat);
+	free(srec.title);
+	free(srec.arch);
+	free(srec.desc);
+d507 15
+a521 1
+	free(recs);
+d525 1
+a525 1
+exprcomp(char *buf)
+d527 113
+a640 1
+	struct expr	 e;
+d642 3
+a644 1
+	int		 i, icase;
+d646 1
+a646 2
+	if ('\0' == *buf)
+		return(NULL);
+d648 1
+a648 3
+	/*
+	 * Choose regex or substring match.
+	 */
+d658 1
+a658 3
+	/*
+	 * Determine the record types to search for.
+	 */
+a659 1
+	icase = 0;
+a662 4
+			if ('i' == key[0] && '\0' == key[1]) {
+				icase = REG_ICASE;
+				continue;
+			}
+d673 5
+a677 3
+	if (e.regex &&
+	    regcomp(&e.re, e.v, REG_EXTENDED | REG_NOSUB | icase))
+		return(NULL);
+d689 13
+d703 11
+a713 2
+	if (NULL == p)
+		return;
+d715 16
+a730 2
+	if (p->regex)
+		regfree(&p->re);
+d732 1
+a732 2
+	free(p->v);
+	free(p);
+d736 1
+a736 1
+exprexec(const struct expr *p, char *cp, int mask)
+d738 1
+d740 37
+a776 2
+	if ( ! (mask & p->mask))
+		return(0);
+d778 3
+a780 4
+	if (p->regex)
+		return(0 == regexec(&p->re, cp, 0, NULL, 0));
+	else
+		return(NULL != strcasestr(cp, p->v));
+@
+
+
+1.3
+log
+@Rewrite the expression parser for a more concise syntax:
+
+ apropos [search_type[,...]=]substring
+ apropos search_type[,...][,i]~regex
+
+... and expression evaluation must take the search type into account.
+
+This allows to:
+* drop the global -I option and
+* drop the enum match, just using a boolean int.
+
+"go ahead" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.2 2011/11/13 10:49:57 schwarze Exp $ */
+d457 1
+a457 1
+exprcomp(int argc, char *argv[])
+d464 1
+a464 1
+	if (0 >= argc)
+d471 1
+a471 1
+	if (NULL == (e.v = strpbrk(*argv, "=~"))) {
+d473 1
+a473 1
+		e.v = *argv;
+d485 2
+a486 2
+	if (*argv < e.v) {
+		while (NULL != (key = strsep(argv, ","))) {
+d493 1
+a493 1
+			    strcmp(types[i].name, key))
+@
+
+
+1.2
+log
+@Inventing new keywords for mostly the same thing when a well-established
+set of keywords already exists is a bad idea, so reuse the mdoc(7)
+macro names as apropos(1) search types.  This is a gain in brevity
+as well.  Some time ago, kristaps@@ agreed in principle.
+
+The search type bit field constants are used by both mandocdb(8) and
+apropos(1) and should better stay in sync, so give them their own
+header file.
+@
+text
+@d1 1
+a1 1
+/*	$Id: apropos_db.c,v 1.1 2011/11/13 10:12:05 schwarze Exp $ */
+d4 1
+a34 7
+enum	match {
+	MATCH_REGEX,
+	MATCH_REGEXCASE,
+	MATCH_STR,
+	MATCH_STRCASE
+};
+
+d36 1
+a36 1
+	enum match	 match;
+d68 1
+a68 1
+static	int	 exprexec(const struct expr *, char *);
+d365 1
+a365 1
+		if ( ! exprexec(expr, buf))
+d457 1
+a457 1
+exprcomp(int cs, char *argv[], int argc)
+d461 2
+a462 1
+	int		 i, pos, ch;
+d464 1
+a464 3
+	pos = 0;
+
+	if (pos > argc)
+d467 11
+a477 3
+	for (i = 0; 0 != types[i].mask; i++)
+		if (0 == strcmp(types[i].name, argv[pos]))
+			break;
+d479 21
+a499 2
+	if (0 == (e.mask = types[i].mask))
+		return(NULL);
+d501 2
+a502 1
+	if (++pos > argc--)
+d505 1
+a505 28
+	if ('-' != *argv[pos]) 
+		e.match = cs ? MATCH_STRCASE : MATCH_STR;
+	else if (0 == strcmp("-eq", argv[pos]))
+		e.match = cs ? MATCH_STRCASE : MATCH_STR;
+	else if (0 == strcmp("-ieq", argv[pos]))
+		e.match = MATCH_STRCASE;
+	else if (0 == strcmp("-re", argv[pos]))
+		e.match = cs ? MATCH_REGEXCASE : MATCH_REGEX;
+	else if (0 == strcmp("-ire", argv[pos]))
+		e.match = MATCH_REGEXCASE;
+	else
+		return(NULL);
+
+	if ('-' == *argv[pos])
+		pos++;
+
+	if (pos > argc--)
+		return(NULL);
+
+	e.v = mandoc_strdup(argv[pos]);
+
+	if (MATCH_REGEX == e.match || MATCH_REGEXCASE == e.match) {
+		ch = REG_EXTENDED | REG_NOSUB;
+		if (MATCH_REGEXCASE == e.match)
+			ch |= REG_ICASE;
+		if (regcomp(&e.re, e.v, ch))
+			return(NULL);
+	}
+d519 1
+a519 1
+	if (MATCH_REGEX == p->match)
+d527 1
+a527 1
+exprexec(const struct expr *p, char *cp)
+d530 2
+a531 4
+	if (MATCH_STR == p->match)
+		return(0 == strcmp(p->v, cp));
+	else if (MATCH_STRCASE == p->match)
+		return(0 == strcasecmp(p->v, cp));
+d533 4
+a536 2
+	assert(MATCH_REGEX == p->match);
+	return(0 == regexec(&p->re, cp, 0, NULL, 0));
+@
+
+
+1.1
+log
+@Less misleading file names; ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: db.c,v 1.3 2011/11/09 23:31:36 kristaps Exp $ */
+d30 1
+d54 15
+a68 14
+	{ TYPE_NAME, "name" },
+	{ TYPE_FUNCTION, "func" },
+	{ TYPE_UTILITY, "utility" },
+	{ TYPE_INCLUDES, "incl" },
+	{ TYPE_VARIABLE, "var" },
+	{ TYPE_STANDARD, "stand" },
+	{ TYPE_AUTHOR, "auth" },
+	{ TYPE_CONFIG, "conf" },
+	{ TYPE_DESC, "desc" },
+	{ TYPE_XREF, "xref" },
+	{ TYPE_PATH, "path" },
+	{ TYPE_ENV, "env" },
+	{ TYPE_ERR, "err" },
+	{ INT_MAX, "all" },
+d94 1
+a94 1
+	db = dbopen("mandoc.db", O_RDONLY, 0, DB_BTREE, &info);
+d279 1
+a279 1
+	db = dbopen("mandoc.index", O_RDONLY, 0, DB_RECNO, NULL);
+@

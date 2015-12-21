@@ -1,0 +1,279 @@
+head	1.6;
+access;
+symbols
+	bapt_150504:1.1.1.1
+	bapt:1.1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.6
+date	2015.11.07.14.22.29;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.05.21.00.13.43;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.05.20.23.43.03;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.05.20.23.00.43;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.05.20.22.22.59;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.05.20.20.55.04;	author schwarze;	state Exp;
+branches
+	1.1.1.1;
+next	;
+
+1.1.1.1
+date	2015.05.20.20.55.04;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@Without HAVE_ERR, don't try to include <err.h>, it probably isn't there.
+In that case, the required prototypes are in "config.h".
+Patch from Peter Bray <pdb_ml at yahoo dot com dot au>.
+@
+text
+@#include "config.h"
+
+#if HAVE_STRINGLIST
+
+int dummy;
+
+#else
+
+/*	$Id: compat_stringlist.c,v 1.5 2015/05/21 00:13:43 schwarze Exp $	*/
+/*
+ * Copyright (c) 1994 Christos Zoulas <christos@@netbsd.org>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+ * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ */
+
+#if HAVE_ERR
+#include <err.h>
+#endif
+#include <stdlib.h>
+#include <string.h>
+#include "compat_stringlist.h"
+
+#define _SL_CHUNKSIZE	20
+
+/*
+ * sl_init(): Initialize a string list
+ */
+StringList *
+sl_init(void)
+{
+	StringList *sl;
+
+	sl = malloc(sizeof(StringList));
+	if (sl == NULL)
+		err(1, "stringlist");
+
+	sl->sl_cur = 0;
+	sl->sl_max = _SL_CHUNKSIZE;
+	sl->sl_str = reallocarray(NULL, sl->sl_max, sizeof(char *));
+	if (sl->sl_str == NULL)
+		err(1, "stringlist");
+	return sl;
+}
+
+
+/*
+ * sl_add(): Add an item to the string list
+ */
+int
+sl_add(StringList *sl, char *name)
+{
+	if (sl->sl_cur == sl->sl_max - 1) {
+		sl->sl_max += _SL_CHUNKSIZE;
+		sl->sl_str = reallocarray(sl->sl_str,
+		    sl->sl_max, sizeof(char *));
+		if (sl->sl_str == NULL)
+			return (-1);
+	}
+	sl->sl_str[sl->sl_cur++] = name;
+	return (0);
+}
+
+
+/*
+ * sl_free(): Free a stringlist
+ */
+void
+sl_free(StringList *sl, int all)
+{
+	size_t i;
+
+	if (sl == NULL)
+		return;
+	if (sl->sl_str) {
+		if (all)
+			for (i = 0; i < sl->sl_cur; i++)
+				free(sl->sl_str[i]);
+		free(sl->sl_str);
+	}
+	free(sl);
+}
+
+
+/*
+ * sl_find(): Find a name in the string list
+ */
+char *
+sl_find(StringList *sl, const char *name)
+{
+	size_t i;
+
+	for (i = 0; i < sl->sl_cur; i++)
+		if (strcmp(sl->sl_str[i], name) == 0)
+			return sl->sl_str[i];
+
+	return NULL;
+}
+
+#endif
+@
+
+
+1.5
+log
+@add forgotten glue
+@
+text
+@d9 1
+a9 1
+/*	$Id: compat_stringlist.c,v 1.4 2015/05/20 23:43:03 schwarze Exp $	*/
+d36 1
+d38 1
+@
+
+
+1.4
+log
+@Remove clauses 3 and 4 from Christos Zoulas' BSD license.
+This is safe because Christos did that himself in NetBSD in 2008.
+No code change.
+@
+text
+@d1 9
+a9 1
+/*	$Id: compat_stringlist.c,v 1.3 2015/05/20 23:00:43 schwarze Exp $	*/
+d116 2
+@
+
+
+1.3
+log
+@fix integer overflows by using reallocarray(3)
+@
+text
+@d1 1
+a1 1
+/*	$Id: compat_stringlist.c,v 1.2 2015/05/20 22:22:59 schwarze Exp $	*/
+a13 2
+ * 4. The name of the author may not be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+@
+
+
+1.2
+log
+@* remove FreeBSDisms
+* purge and sort headers
+* add build and compat glue
+* and LICENSE information
+for soelim(1)
+@
+text
+@d1 1
+a1 1
+/*	$Id$	*/
+d51 1
+a51 1
+	sl->sl_str = malloc(sl->sl_max * sizeof(char *));
+d66 2
+a67 1
+		sl->sl_str = reallocf(sl->sl_str, sl->sl_max * sizeof(char *));
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+d3 1
+a3 1
+ * Copyright (c) 1994 Christos Zoulas
+a29 9
+#if defined(LIBC_SCCS) && !defined(lint)
+static char *rcsid = "$NetBSD: stringlist.c,v 1.2 1997/01/17 07:26:20 lukem Exp $";
+#endif /* LIBC_SCCS and not lint */
+#include <sys/cdefs.h>
+__FBSDID("$FreeBSD$");
+
+#include "namespace.h"
+#include <stdio.h>
+#include <string.h>
+d32 2
+a33 2
+#include <stringlist.h>
+#include "un-namespace.h"
+d47 1
+a47 1
+		_err(1, "stringlist: %m");
+d53 1
+a53 1
+		_err(1, "stringlist: %m");
+@
+
+
+1.1.1.1
+log
+@import bapt's original soelim(1) sources
+@
+text
+@@

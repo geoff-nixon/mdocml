@@ -1,0 +1,642 @@
+head	1.18;
+access;
+symbols
+	VERSION_1_13_3:1.18
+	VERSION_1_13_2:1.18
+	VERSION_1_12_4:1.18
+	VERSION_1_13_1:1.18
+	VERSION_1_12_3:1.17
+	VERSION_1_12_2:1.13
+	VERSION_1_12:1.18.0.2
+	VERSION_1_12_1:1.13
+	VERSION_1_12_0:1.10
+	VERSION_1_11_7:1.9
+	VERSION_1_11_6:1.9
+	VERSION_1_11_5:1.9
+	VERSION_1_11_4:1.9
+	VERSION_1_11_3:1.9
+	VERSION_1_11_2:1.9
+	VERSION_1_11_1:1.9
+	VERSION_1_10_10:1.9
+	VERSION_1_10_9:1.9
+	VERSION_1_10_8:1.9
+	VERSION_1_10_7:1.9
+	VERSION_1_10_6:1.9
+	VERSION_1_10_5:1.9
+	VERSION_1_10_5_PREPDF:1.9
+	VERSION_1_10_4:1.9
+	VERSION_1_10_3:1.9
+	VERSION_1_10_2:1.9
+	VERSION_1_10_1:1.7
+	VERSION_1_9_24:1.6
+	VERSION_1_9_25:1.6
+	VERSION_1_9_23:1.6
+	VERSION_1_9_22:1.6
+	VERSION_1_9_21:1.6
+	VERSION_1_9_20:1.6
+	VERSION_1_9_19:1.6
+	VERSION_1_9_18:1.6
+	VERSION_1_9_17:1.6
+	VERSION_1_9_16:1.6
+	VERSION_1_9_15:1.6
+	VERSION_1_9_15-pre2:1.6
+	VERSION_1_9_15-pre1:1.6
+	VERSION_1_9_14:1.6
+	VERSION_1_9_13:1.6
+	VERSION_1_9_12:1.5
+	VERSION_1_9_11:1.5
+	VERSION_1_9_10:1.5
+	VERSION_1_9_9:1.5
+	VERSION_1_9_8:1.5
+	VERSION_1_9_7:1.5
+	VERSION_1_9_6:1.5
+	VERSION_1_9_5:1.5
+	VERSION_1_9_2:1.5
+	VERSION_1_9_1:1.5
+	VERSION_1_9_0:1.5
+	VERSION_1_8_5:1.5
+	VERSION_1_8_4:1.5
+	VERSION_1_8_3:1.5
+	VERSION_1_8_2:1.5
+	VERSION_1_8_1:1.5
+	VERSION_1_8_0:1.5
+	VERSION_1_7_24:1.5
+	VERSION_1_7_23:1.5
+	VERSION_1_7_22:1.5
+	VERSION_1_7_21:1.5
+	VERSION_1_7_20:1.5
+	VERSION_1_7_19:1.5
+	VERSION_1_7_17:1.5
+	VERSION_1_7_16:1.5
+	VERSION_1_7_15:1.5
+	VERSION_1_7_14:1.5
+	VERSION_1_7_13:1.4
+	VERSION_1_7_12:1.3
+	OPENBSD_CHECKIN:1.3
+	VERSION_1_7_10:1.3
+	VERSION_1_7_5:1.3
+	VERSION_1_6_5:1.3
+	VERSION_1_6_2:1.3
+	VERSION_1_5_3:1.3
+	VERSION_1_5_1:1.2
+	VERSION_1_4_6:1.2
+	VERSION_1_4_5:1.2
+	VERSION_1_4_4:1.2
+	VERSION_1_4_2:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.18
+date	2014.01.06.00.53.33;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2013.10.13.15.24.03;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2013.10.13.14.45.56;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2013.10.13.02.54.53;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2013.10.05.21.51.26;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2012.01.28.23.46.28;	author joerg;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2012.01.28.14.04.39;	author joerg;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.10.16.16.25.19;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.09.20.23.36.24;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.06.19.20.46.27;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.06.11.23.40.33;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.05.14.17.10.06;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.11.01.07.34.22;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.06.14.24.49;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.18
+log
+@Joerg Sonnenberger contributed copyrightable amounts of text to
+some files.  To make it clear that he also put his contributions
+under the ISC license, with his explicit permission, add his
+Copyright notice to the relevant files.  No code change.
+@
+text
+@/*	$Id: lib.in,v 1.17 2013/10/13 15:24:03 schwarze Exp $ */
+/*
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2009, 2012 Joerg Sonnenberger <joerg@@netbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+/*
+ * These are all possible .Lb strings.  When a new library is added, add
+ * its short-string to the left-hand side and formatted string to the
+ * right-hand side.
+ *
+ * Be sure to escape strings.
+ */
+
+LINE("libalias",	"Packet Aliasing Library (libalias, \\-lalias)")
+LINE("libarchive",	"Streaming Archive Library (libarchive, \\-larchive)")
+LINE("libarm",		"ARM Architecture Library (libarm, \\-larm)")
+LINE("libarm32",	"ARM32 Architecture Library (libarm32, \\-larm32)")
+LINE("libbluetooth",	"Bluetooth Library (libbluetooth, \\-lbluetooth)")
+LINE("libbsdxml",	"eXpat XML parser library (libbsdxml, \\-lbsdxml)")
+LINE("libbsm",		"Basic Security Module User Library (libbsm, \\-lbsm)")
+LINE("libc",		"Standard C Library (libc, \\-lc)")
+LINE("libc_r",		"Reentrant C\\~Library (libc_r, \\-lc_r)")
+LINE("libcalendar",	"Calendar Arithmetic Library (libcalendar, \\-lcalendar)")
+LINE("libcam",		"Common Access Method User Library (libcam, \\-lcam)")
+LINE("libcdk",		"Curses Development Kit Library (libcdk, \\-lcdk)")
+LINE("libcipher",	"FreeSec Crypt Library (libcipher, \\-lcipher)")
+LINE("libcompat",	"Compatibility Library (libcompat, \\-lcompat)")
+LINE("libcrypt",	"Crypt Library (libcrypt, \\-lcrypt)")
+LINE("libcurses",	"Curses Library (libcurses, \\-lcurses)")
+LINE("libdevattr",	"Device attribute and event library (libdevattr, \\-ldevattr)")
+LINE("libdevinfo",	"Device and Resource Information Utility Library (libdevinfo, \\-ldevinfo)")
+LINE("libdevstat",	"Device Statistics Library (libdevstat, \\-ldevstat)")
+LINE("libdisk",		"Interface to Slice and Partition Labels Library (libdisk, \\-ldisk)")
+LINE("libdm",		"Device Mapper Library (libdm, \\-ldm)")
+LINE("libdwarf",	"DWARF Access Library (libdwarf, \\-ldwarf)")
+LINE("libedit",		"Command Line Editor Library (libedit, \\-ledit)")
+LINE("libefi",		"EFI Runtime Services Library (libefi, \\-lefi)")
+LINE("libelf",		"ELF Access Library (libelf, \\-lelf)")
+LINE("libevent",	"Event Notification Library (libevent, \\-levent)")
+LINE("libexecinfo",	"Backtrace Information Library (libexecinfo, \\-lexecinfo)")
+LINE("libfetch",	"File Transfer Library (libfetch, \\-lfetch)")
+LINE("libfsid",		"Filesystem Identification Library (libfsid, \\-lfsid)")
+LINE("libftpio",	"FTP Connection Management Library (libftpio, \\-lftpio)")
+LINE("libform",		"Curses Form Library (libform, \\-lform)")
+LINE("libgeom",		"Userland API Library for Kernel GEOM subsystem (libgeom, \\-lgeom)")
+LINE("libgpib",		"General-Purpose Instrument Bus (GPIB) library (libgpib, \\-lgpib)")
+LINE("libhammer",	"HAMMER Filesystem Userland Library (libhammer, \\-lhammer)")
+LINE("libi386",		"i386 Architecture Library (libi386, \\-li386)")
+LINE("libintl",		"Internationalized Message Handling Library (libintl, \\-lintl)")
+LINE("libipsec",	"IPsec Policy Control Library (libipsec, \\-lipsec)")
+LINE("libipx",		"IPX Address Conversion Support Library (libipx, \\-lipx)")
+LINE("libiscsi",	"iSCSI protocol library (libiscsi, \\-liscsi)")
+LINE("libisns",		"Internet Storage Name Service Library (libisns, \\-lisns)")
+LINE("libjail",		"Jail Library (libjail, \\-ljail)")
+LINE("libkcore",	"Kernel Memory Core Access Library (libkcore, \\-lkcore)")
+LINE("libkiconv",	"Kernel-side iconv Library (libkiconv, \\-lkiconv)")
+LINE("libkse",		"N:M Threading Library (libkse, \\-lkse)")
+LINE("libkvm",		"Kernel Data Access Library (libkvm, \\-lkvm)")
+LINE("libm",		"Math Library (libm, \\-lm)")
+LINE("libm68k",		"m68k Architecture Library (libm68k, \\-lm68k)")
+LINE("libmagic",	"Magic Number Recognition Library (libmagic, \\-lmagic)")
+LINE("libmandoc",	"Mandoc Macro Compiler Library (libmandoc, \\-lmandoc)")
+LINE("libmd",		"Message Digest (MD4, MD5, etc.) Support Library (libmd, \\-lmd)")
+LINE("libmemstat",	"Kernel Memory Allocator Statistics Library (libmemstat, \\-lmemstat)")
+LINE("libmenu",		"Curses Menu Library (libmenu, \\-lmenu)")
+LINE("libmj",		"Minimalist JSON library (libmj, \\-lmj)")
+LINE("libnetgraph",	"Netgraph User Library (libnetgraph, \\-lnetgraph)")
+LINE("libnetpgp",	"Netpgp Signing, Verification, Encryption and Decryption (libnetpgp, \\-lnetpgp)")
+LINE("libnetpgpverify",	"Netpgp Verification (libnetpgpverify, \\-lnetpgpverify)")
+LINE("libnpf",		"NPF Packet Filter Library (libnpf, \\-lnpf)")
+LINE("libossaudio",	"OSS Audio Emulation Library (libossaudio, \\-lossaudio)")
+LINE("libpam",		"Pluggable Authentication Module Library (libpam, \\-lpam)")
+LINE("libpcap",		"Capture Library (libpcap, \\-lpcap)")
+LINE("libpci",		"PCI Bus Access Library (libpci, \\-lpci)")
+LINE("libpmc",		"Performance Counters Library (libpmc, \\-lpmc)")
+LINE("libppath",	"Property-List Paths Library (libppath, \\-lppath)")
+LINE("libposix",	"POSIX Compatibility Library (libposix, \\-lposix)")
+LINE("libposix1e",	"POSIX.1e Security API Library (libposix1e, \\-lposix1e)")
+LINE("libppath",	"Property-List Paths Library (libppath, \\-lppath)")
+LINE("libprop",		"Property Container Object Library (libprop, \\-lprop)")
+LINE("libpthread",	"POSIX Threads Library (libpthread, \\-lpthread)")
+LINE("libpuffs",	"puffs Convenience Library (libpuffs, \\-lpuffs)")
+LINE("libquota",	"Disk Quota Access and Control Library (libquota, \\-lquota)")
+LINE("libradius",	"RADIUS Client Library (libradius, \\-lradius)")
+LINE("librefuse",	"File System in Userspace Convenience Library (librefuse, \\-lrefuse)")
+LINE("libresolv",	"DNS Resolver Library (libresolv, \\-lresolv)")
+LINE("librpcsec_gss",	"RPC GSS-API Authentication Library (librpcsec_gss, \\-lrpcsec_gss)")
+LINE("librpcsvc",	"RPC Service Library (librpcsvc, \\-lrpcsvc)")
+LINE("librt",		"POSIX Real\\-time Library (librt, \\-lrt)")
+LINE("librumpclient",	"Clientside Stubs for rump Kernel Remote Protocols (librumpclient, \\-lrumpclient)")
+LINE("libsaslc",	"Simple Authentication and Security Layer client library (libsaslc, \\-lsaslc)")
+LINE("libsdp",		"Bluetooth Service Discovery Protocol User Library (libsdp, \\-lsdp)")
+LINE("libssp",		"Buffer Overflow Protection Library (libssp, \\-lssp)")
+LINE("libstand",	"Standalone Applications Library (libstand, \\-lstand)")
+LINE("libSystem",	"System Library (libSystem, \\-lSystem)")
+LINE("libtacplus",	"TACACS+ Client Library (libtacplus, \\-ltacplus)")
+LINE("libtcplay",	"TrueCrypt-compatible API library (libtcplay, \\-ltcplay)")
+LINE("libtermcap",	"Termcap Access Library (libtermcap, \\-ltermcap)")
+LINE("libterminfo",	"Terminal Information Library (libterminfo, \\-lterminfo)")
+LINE("libthr",		"1:1 Threading Library (libthr, \\-lthr)")
+LINE("libufs",		"UFS File System Access Library (libufs, \\-lufs)")
+LINE("libugidfw",	"File System Firewall Interface Library (libugidfw, \\-lugidfw)")
+LINE("libulog",		"User Login Record Library (libulog, \\-lulog)")
+LINE("libusbhid",	"USB Human Interface Devices Library (libusbhid, \\-lusbhid)")
+LINE("libutil",		"System Utilities Library (libutil, \\-lutil)")
+LINE("libvgl",		"Video Graphics Library (libvgl, \\-lvgl)")
+LINE("libx86_64",	"x86_64 Architecture Library (libx86_64, \\-lx86_64)")
+LINE("libz",		"Compression Library (libz, \\-lz)")
+@
+
+
+1.17
+log
+@add libppath; Thomas Klausner, NetBSD rev. 1.4, Aug 29, 2011
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.16 2013/10/13 14:45:56 schwarze Exp $ */
+d4 1
+@
+
+
+1.16
+log
+@add libefi and simplify some names
+from FreeBSD ports SVN rev. 293734, Ulrich Spoerlein March 24, 2012
+in case of conflicts with NetBSD, i keep the simpler NetBSD names
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.15 2013/10/13 02:54:53 schwarze Exp $ */
+d88 1
+@
+
+
+1.15
+log
+@more DragonFly libraries; Franco Fichtner <franco at lastsummer dot de>
+dragonfly.git/commit/107cb94cae2c24ce3f6851ce0ed24b80d64e3ec8
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.14 2013/10/05 21:51:26 schwarze Exp $ */
+d27 1
+a27 1
+LINE("libarchive",	"Reading and Writing Streaming Archives Library (libarchive, \\-larchive)")
+d49 1
+d53 1
+a53 1
+LINE("libfetch",	"File Transfer Library for URLs (libfetch, \\-lfetch)")
+@
+
+
+1.14
+log
+@sync with NetBSD
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.13 2012/01/28 23:46:28 joerg Exp $ */
+d26 1
+d31 1
+d42 1
+d46 1
+d53 2
+d58 1
+d66 1
+d88 1
+d94 1
+d104 1
+d106 2
+@
+
+
+1.13
+log
+@Add libquota
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.12 2012/01/28 14:04:39 joerg Exp $ */
+d47 1
+d50 1
+a50 1
+LINE("libgeom",		"Userland API Library for kernel GEOM subsystem (libgeom, \\-lgeom)")
+d59 1
+a59 1
+LINE("libkiconv",	"Kernel side iconv library (libkiconv, \\-lkiconv)")
+d65 1
+d69 1
+d71 3
+a73 1
+LINE("libnetpgp",	"Netpgp signing, verification, encryption and decryption (libnetpgp, \\-lnetpgp)")
+d90 1
+@
+
+
+1.12
+log
+@Add libisns, libppath and libsaslc from NetBSD. Fix formatting of librt.
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.11 2011/10/16 16:25:19 schwarze Exp $ */
+d79 1
+@
+
+
+1.11
+log
+@Sync to groff, and add tier I and II NetBSD architectures.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.10 2011/09/20 23:36:24 schwarze Exp $ */
+d56 1
+d75 1
+d83 2
+a84 1
+LINE("librt",		"POSIX Real\\-time Library (librt, -lrt)")
+@
+
+
+1.10
+log
+@sync to groff: support .Lb -libdwarf, update .Lb -libelf
+after Werner Lemberg committed a patch by Joseph Koshy
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.9 2010/06/19 20:46:27 kristaps Exp $ */
+d84 1
+@
+
+
+1.9
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.8 2010/06/11 23:40:33 kristaps Exp $ */
+d43 1
+d45 1
+a45 1
+LINE("libelf",		"ELF Parsing Library (libelf, \\-lelf)")
+@
+
+
+1.8
+log
+@Add FreeBSD libraries (provided by Ulrich Spoerlein).
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.7 2010/05/14 17:10:06 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.7
+log
+@"Add libelf and libterminfo." (patch by Joerg Sonnenberger)
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.6 2009/11/01 07:34:22 kristaps Exp $ */
+d30 1
+d32 3
+d36 1
+d40 3
+d48 2
+d53 1
+d55 3
+d62 2
+d65 1
+d78 2
+d81 1
+d85 4
+d91 1
+@
+
+
+1.6
+log
+@More libraries entered into lib.in (thanks Joerg Sonnenberger).
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.5 2009/06/10 20:18:43 kristaps Exp $ */
+d36 1
+d64 1
+@
+
+
+1.5
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.4 2009/04/12 19:45:26 kristaps Exp $ */
+d26 1
+d29 1
+d37 1
+d42 1
+d48 1
+d55 1
+d57 2
+d61 1
+@
+
+
+1.4
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: lib.in,v 1.3 2009/03/16 22:19:19 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.3
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: att.in,v 1.2 2009/03/06 14:24:49 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.2
+log
+@Documented the strings script.
+@
+text
+@d1 18
+a18 7
+# $Id$
+#
+# This file defines the `.Lb' macro argument.  Lines are composed of
+# tab-delimited fields -- multiple tabs may delimit fields.  Comment
+# lines begin with '#'; blank lines are also ok.
+#
+# These were last grok'd from NetBSD-4.0.1's mdoc.samples(7).
+d20 40
+a59 32
+libarm		ARM Architecture Library (libarm, -larm)
+libarm32	ARM32 Architecture Library (libarm32, -larm32)
+libc		Standard C Library (libc, -lc)
+libcdk		Curses Development Kit Library (libcdk, -lcdk)
+libcompat	Compatibility Library (libcompat, -lcompat)
+libcrypt	Crypt Library (libcrypt, -lcrypt)
+libcurses	Curses Library (libcurses, -lcurses)
+libedit		Command Line Editor Library (libedit, -ledit)
+libevent	Event Notification Library (libevent, -levent)
+libform		Curses Form Library (libform, -lform)
+libi386		i386 Architecture Library (libi386, -li386)
+libintl		Internationalized Message Handling Library (libintl, -lintl)
+libipsec	IPsec Policy Control Library (libipsec, -lipsec)
+libkvm		Kernel Data Access Library (libkvm, -lkvm)
+libm		Math Library (libm, -lm)
+libm68k		m68k Architecture Library (libm68k, -lm68k)
+libmagic	Magic Number Recognition Library (libmagic, -lmagic)
+libmenu		Curses Menu Library (libmenu, -lmenu)
+libossaudio	OSS Audio Emulation Library (libossaudio, -lossaudio)
+libpam		Pluggable Authentication Module Library (libpam, -lpam)
+libpcap		Capture Library (libpcap, -lpcap)
+libpci		PCI Bus Access Library (libpci, -lpci)
+libpmc		Performance Counters Library (libpmc, -lpmc)
+libposix	POSIX Compatibility Library (libposix, -lposix)
+libpthread	POSIX Threads Library (libpthread, -lpthread)
+libresolv	DNS Resolver Library (libresolv, -lresolv)
+librt		POSIX Real-time Library (librt, -lrt)
+libtermcap	Termcap Access Library (libtermcap, -ltermcap)
+libusbhid	USB Human Interface Devices Library (libusbhid, -lusbhid)
+libutil		System Utilities Library (libutil, -lutil)
+libx86_64	x86_64 Architecture Library (libx86_64, -lx86_64)
+libz		Compression Library (libz, -lz)
+@
+
+
+1.1
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 8
+@

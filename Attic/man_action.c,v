@@ -1,0 +1,1534 @@
+head	1.44;
+access;
+symbols
+	VERSION_1_10_6:1.41
+	VERSION_1_10_5:1.40
+	VERSION_1_10_5_PREPDF:1.40
+	VERSION_1_10_4:1.39
+	VERSION_1_10_3:1.39
+	VERSION_1_10_2:1.39
+	VERSION_1_10_1:1.39
+	VERSION_1_9_24:1.30
+	VERSION_1_9_25:1.30
+	VERSION_1_9_23:1.30
+	VERSION_1_9_22:1.30
+	VERSION_1_9_21:1.30
+	VERSION_1_9_20:1.30
+	VERSION_1_9_19:1.30
+	VERSION_1_9_18:1.30
+	VERSION_1_9_17:1.29
+	VERSION_1_9_16:1.26
+	VERSION_1_9_15:1.25
+	VERSION_1_9_15-pre2:1.25
+	VERSION_1_9_15-pre1:1.24
+	VERSION_1_9_14:1.24
+	VERSION_1_9_13:1.24
+	VERSION_1_9_12:1.23
+	VERSION_1_9_11:1.20
+	VERSION_1_9_10:1.20
+	VERSION_1_9_9:1.19
+	VERSION_1_9_8:1.19
+	VERSION_1_9_7:1.19
+	VERSION_1_9_6:1.19
+	VERSION_1_9_5:1.19
+	VERSION_1_9_2:1.19
+	VERSION_1_9_1:1.18
+	VERSION_1_9_0:1.15
+	VERSION_1_8_5:1.14
+	VERSION_1_8_4:1.14
+	VERSION_1_8_3:1.13
+	VERSION_1_8_2:1.13
+	VERSION_1_8_1:1.13
+	VERSION_1_8_0:1.13
+	VERSION_1_7_24:1.13
+	VERSION_1_7_23:1.13
+	VERSION_1_7_22:1.13
+	VERSION_1_7_21:1.13
+	VERSION_1_7_20:1.13
+	VERSION_1_7_19:1.12
+	VERSION_1_7_17:1.11
+	VERSION_1_7_16:1.11
+	VERSION_1_7_15:1.11
+	VERSION_1_7_14:1.11
+	VERSION_1_7_13:1.10
+	VERSION_1_7_12:1.9
+	OPENBSD_CHECKIN:1.9
+	VERSION_1_7_10:1.9
+	VERSION_1_7_5:1.5;
+locks; strict;
+comment	@ * @;
+
+
+1.44
+date	2010.11.30.15.36.28;	author kristaps;	state dead;
+branches;
+next	1.43;
+
+1.43
+date	2010.11.30.15.24.27;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.10.11.15.45.36;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.07.31.23.52.58;	author schwarze;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.07.22.23.03.15;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.05.26.14.03.54;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.05.24.13.36.53;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.05.24.12.22.43;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.05.17.10.50.32;	author joerg;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.05.15.22.44.04;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.05.15.20.51.40;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.05.15.16.27.23;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.05.15.15.54.39;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.03.27.10.04.56;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.03.24.20.10.53;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.03.24.03.46.02;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.03.23.11.30.48;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.03.22.14.03.03;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.01.01.17.14.27;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.11.02.06.22.45;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.10.31.06.10.58;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.10.30.05.58.37;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.10.27.08.26.12;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.10.24.05.45.04;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.08.22.09.10.38;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.08.21.12.32.38;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.08.20.11.51.07;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.08.19.09.14.50;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.08.13.11.45.29;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.07.24.20.22.24;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.06.18.10.53.58;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.06.16.19.55.28;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.04.02.06.51.44;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.31.13.50.19;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.27.14.56.15;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.26.14.38.11;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.26.09.55.39;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.25.16.08.30;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.25.16.07.36;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.25.15.36.05;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.44
+log
+@Kill man_action.c.
+@
+text
+@@
+
+
+1.43
+log
+@Move all man_action.c routines into man_validate.c
+@
+text
+@a0 99
+/*	$Id: man_action.c,v 1.42 2010/10/11 15:45:36 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <assert.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+#include "mandoc.h"
+#include "libman.h"
+#include "libmandoc.h"
+
+struct	actions {
+	int	(*post)(struct man *);
+};
+
+const	struct actions man_actions[MAN_MAX] = {
+	{ NULL }, /* br */
+	{ NULL }, /* TH */
+	{ NULL }, /* SH */
+	{ NULL }, /* SS */
+	{ NULL }, /* TP */
+	{ NULL }, /* LP */
+	{ NULL }, /* PP */
+	{ NULL }, /* P */
+	{ NULL }, /* IP */
+	{ NULL }, /* HP */
+	{ NULL }, /* SM */
+	{ NULL }, /* SB */
+	{ NULL }, /* BI */
+	{ NULL }, /* IB */
+	{ NULL }, /* BR */
+	{ NULL }, /* RB */
+	{ NULL }, /* R */
+	{ NULL }, /* B */
+	{ NULL }, /* I */
+	{ NULL }, /* IR */
+	{ NULL }, /* RI */
+	{ NULL }, /* na */
+	{ NULL }, /* i */
+	{ NULL }, /* sp */
+	{ NULL }, /* nf */
+	{ NULL }, /* fi */
+	{ NULL }, /* r */
+	{ NULL }, /* RE */
+	{ NULL }, /* RS */
+	{ NULL }, /* DT */
+	{ NULL }, /* UC */
+	{ NULL }, /* PD */
+	{ NULL }, /* Sp */
+	{ NULL }, /* Vb */
+	{ NULL }, /* Ve */
+	{ NULL }, /* AT */
+	{ NULL }, /* in */
+};
+
+
+int
+man_action_post(struct man *m)
+{
+
+	if (MAN_ACTED & m->last->flags)
+		return(1);
+	m->last->flags |= MAN_ACTED;
+
+	switch (m->last->type) {
+	case (MAN_TEXT):
+		/* FALLTHROUGH */
+	case (MAN_ROOT):
+		return(1);
+	default:
+		break;
+	}
+
+	if (NULL == man_actions[m->last->tok].post)
+		return(1);
+	return((*man_actions[m->last->tok].post)(m));
+}
+
+
+
+
+@
+
+
+1.42
+log
+@Quiesce Linux header-inclusion warnings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.41 2010/07/31 23:52:58 schwarze Exp $ */
+a33 6
+static	int	  post_TH(struct man *);
+static	int	  post_fi(struct man *);
+static	int	  post_nf(struct man *);
+static	int	  post_AT(struct man *);
+static	int	  post_UC(struct man *);
+
+d36 1
+a36 1
+	{ post_TH }, /* TH */
+d59 2
+a60 2
+	{ post_nf }, /* nf */
+	{ post_fi }, /* fi */
+d65 1
+a65 1
+	{ post_UC }, /* UC */
+d68 3
+a70 3
+	{ post_nf }, /* Vb */
+	{ post_fi }, /* Ve */
+	{ post_AT }, /* AT */
+a97 174
+static int
+post_fi(struct man *m)
+{
+
+	if ( ! (MAN_LITERAL & m->flags))
+		if ( ! man_nmsg(m, m->last, MANDOCERR_NOSCOPE))
+			return(0);
+	m->flags &= ~MAN_LITERAL;
+	return(1);
+}
+
+
+static int
+post_nf(struct man *m)
+{
+
+	if (MAN_LITERAL & m->flags)
+		if ( ! man_nmsg(m, m->last, MANDOCERR_SCOPEREP))
+			return(0);
+	m->flags |= MAN_LITERAL;
+	return(1);
+}
+
+
+static int
+post_TH(struct man *m)
+{
+	struct man_node	*n;
+
+	if (m->meta.title)
+		free(m->meta.title);
+	if (m->meta.vol)
+		free(m->meta.vol);
+	if (m->meta.source)
+		free(m->meta.source);
+	if (m->meta.msec)
+		free(m->meta.msec);
+	if (m->meta.rawdate)
+		free(m->meta.rawdate);
+
+	m->meta.title = m->meta.vol = m->meta.rawdate =
+		m->meta.msec = m->meta.source = NULL;
+	m->meta.date = 0;
+
+	/* ->TITLE<- MSEC DATE SOURCE VOL */
+
+	n = m->last->child;
+	assert(n);
+	m->meta.title = mandoc_strdup(n->string);
+
+	/* TITLE ->MSEC<- DATE SOURCE VOL */
+
+	n = n->next;
+	assert(n);
+	m->meta.msec = mandoc_strdup(n->string);
+
+	/* TITLE MSEC ->DATE<- SOURCE VOL */
+
+	/*
+	 * Try to parse the date.  If this works, stash the epoch (this
+	 * is optimal because we can reformat it in the canonical form).
+	 * If it doesn't parse, isn't specified at all, or is an empty
+	 * string, then use the current date.
+	 */
+
+	n = n->next;
+	if (n && n->string && *n->string) {
+		m->meta.date = mandoc_a2time
+			(MTIME_ISO_8601, n->string);
+		if (0 == m->meta.date) {
+			if ( ! man_nmsg(m, n, MANDOCERR_BADDATE))
+				return(0);
+			m->meta.rawdate = mandoc_strdup(n->string);
+		}
+	} else
+		m->meta.date = time(NULL);
+
+	/* TITLE MSEC DATE ->SOURCE<- VOL */
+
+	if (n && (n = n->next))
+		m->meta.source = mandoc_strdup(n->string);
+
+	/* TITLE MSEC DATE SOURCE ->VOL<- */
+
+	if (n && (n = n->next))
+		m->meta.vol = mandoc_strdup(n->string);
+
+	/*
+	 * Remove the `TH' node after we've processed it for our
+	 * meta-data.
+	 */
+	man_node_delete(m, m->last);
+	return(1);
+}
+
+
+static int
+post_AT(struct man *m)
+{
+	static const char * const unix_versions[] = {
+	    "7th Edition",
+	    "System III",
+	    "System V",
+	    "System V Release 2",
+	};
+
+	const char	*p, *s;
+	struct man_node	*n, *nn;
+
+	n = m->last->child;
+
+	if (NULL == n || MAN_TEXT != n->type)
+		p = unix_versions[0];
+	else {
+		s = n->string;
+		if (0 == strcmp(s, "3"))
+			p = unix_versions[0];
+		else if (0 == strcmp(s, "4"))
+			p = unix_versions[1];
+		else if (0 == strcmp(s, "5")) {
+			nn = n->next;
+			if (nn && MAN_TEXT == nn->type && nn->string[0])
+				p = unix_versions[3];
+			else
+				p = unix_versions[2];
+		} else
+			p = unix_versions[0];
+	}
+
+	if (m->meta.source)
+		free(m->meta.source);
+
+	m->meta.source = mandoc_strdup(p);
+
+	return(1);
+}
+
+
+static int
+post_UC(struct man *m)
+{
+	static const char * const bsd_versions[] = {
+	    "3rd Berkeley Distribution",
+	    "4th Berkeley Distribution",
+	    "4.2 Berkeley Distribution",
+	    "4.3 Berkeley Distribution",
+	    "4.4 Berkeley Distribution",
+	};
+
+	const char	*p, *s;
+	struct man_node	*n;
+
+	n = m->last->child;
+
+	if (NULL == n || MAN_TEXT != n->type)
+		p = bsd_versions[0];
+	else {
+		s = n->string;
+		if (0 == strcmp(s, "3"))
+			p = bsd_versions[0];
+		else if (0 == strcmp(s, "4"))
+			p = bsd_versions[1];
+		else if (0 == strcmp(s, "5"))
+			p = bsd_versions[2];
+		else if (0 == strcmp(s, "6"))
+			p = bsd_versions[3];
+		else if (0 == strcmp(s, "7"))
+			p = bsd_versions[4];
+		else
+			p = bsd_versions[0];
+	}
+
+	if (m->meta.source)
+		free(m->meta.source);
+a98 1
+	m->meta.source = mandoc_strdup(p);
+a99 2
+	return(1);
+}
+@
+
+
+1.41
+log
+@Sync to OpenBSD: add missing Copyright years.
+I checked that substantial changes were committed
+to these files during these years.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.40 2010/07/22 23:03:15 kristaps Exp $ */
+d24 1
+@
+
+
+1.40
+log
+@Added `in' macro support for -man -Tascii.  This is not yet supported in
+-Thtml (I'm surprised to note that neither is LITERAL mode).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.39 2010/05/26 14:03:54 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.39
+log
+@Allow bad -man dates to flow verbatim into the front-ends.  Noted by
+Ulrich Spoerlein.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.38 2010/05/24 13:36:53 kristaps Exp $ */
+d76 1
+@
+
+
+1.38
+log
+@Plug second meta.source leak in `UT' handling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.37 2010/05/24 12:22:43 kristaps Exp $ */
+d139 2
+d142 1
+a142 1
+	m->meta.title = m->meta.vol = 
+d160 7
+d168 1
+a168 1
+	if (n) {
+d174 1
+a174 1
+			m->meta.date = time(NULL);
+@
+
+
+1.37
+log
+@Fixed memory leak for `AT' (-man input).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.36 2010/05/17 22:11:42 kristaps Exp $ */
+d265 3
+@
+
+
+1.36
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.35 2010/05/17 10:50:32 joerg Exp $ */
+d222 3
+@
+
+
+1.35
+log
+@Add support for .AT. Properly implement .UC. Add regress tests.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.34 2010/05/15 22:44:04 kristaps Exp $ */
+d25 1
+d107 1
+a107 1
+		if ( ! man_nwarn(m, m->last, WNLITERAL))
+d119 1
+a119 1
+		if ( ! man_nwarn(m, m->last, WOLITERAL))
+d163 1
+a163 1
+			if ( ! man_nwarn(m, n, WDATE))
+@
+
+
+1.34
+log
+@Remove `am', `ami', `de', `dei', and `.' from -man, as they're now in the roff preprocessor.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.33 2010/05/15 20:51:40 kristaps Exp $ */
+d35 2
+d69 1
+a69 1
+	{ NULL }, /* UC */
+d74 1
+d186 79
+@
+
+
+1.33
+log
+@Pull `ig' out of -man and leave it the roff preparser.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.32 2010/05/15 16:27:23 kristaps Exp $ */
+a32 1
+static	int	  post_de(struct man *);
+a71 5
+	{ post_de }, /* de */
+	{ post_de }, /* dei */
+	{ post_de }, /* am */
+	{ post_de }, /* ami */
+	{ NULL }, /* . */
+a110 14
+post_de(struct man *m)
+{
+
+	/*
+	 * XXX: for the time being, we indiscriminately remove roff
+	 * instructions from the parse stream.
+	 */
+	if (MAN_BLOCK == m->last->type)
+		man_node_delete(m, m->last);
+	return(1);
+}
+
+
+static int
+@
+
+
+1.32
+log
+@Fixed memory leak introduced in last checkin of man_action TH parsing (only if TH is called again, which never happens anyway).
+Fixed my email address in man_action.c and msec.c.
+Removed superfluous <time.h> inclusion in msec.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.31 2010/05/15 15:54:39 kristaps Exp $ */
+a76 1
+	{ post_de }, /* ig */
+@
+
+
+1.31
+log
+@Removed restriction on integer manual sections in -man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.30 2010/03/27 10:04:56 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+d154 2
+@
+
+
+1.30
+log
+@Fixed re-adjustment of scope in exiting roff instructions (libman).
+Added title-case check for (libman).
+Fixed premature closure of roff instruction scope (libman).
+Added documentation of ignored roff macros to man(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.29 2010/03/24 20:10:53 kristaps Exp $ */
+a146 2
+	char		*ep;
+	long		 lval;
+d155 2
+a156 2
+	m->meta.title = m->meta.vol = m->meta.source = NULL;
+	m->meta.msec = 0;
+d169 1
+a169 6
+
+	lval = strtol(n->string, &ep, 10);
+	if (n->string[0] != '\0' && *ep == '\0')
+		m->meta.msec = (int)lval;
+	else if ( ! man_nwarn(m, n, WMSEC))
+		return(0);
+a176 1
+
+@
+
+
+1.29
+log
+@Using man_node_delete() instead of man_node_free()/man_node_freelist() and friends (much simpler).
+Split blk_imp() into blk_exp() (explicit macros), blk_dotted() (roff macros), and the original.
+Added de, dei, am, ami, and ig roff macros (for now, these are discarded within the parse).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.28 2010/03/24 03:46:02 kristaps Exp $ */
+a126 1
+
+@
+
+
+1.28
+log
+@enum-ised rew_* return values (type-safety).
+Removed ignoring of MAN_Vb argument (symmetry).
+Removed superfluous utsname inclusion.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.27 2010/03/23 11:30:48 kristaps Exp $ */
+d33 1
+d73 6
+d118 15
+d204 5
+a208 3
+	n = m->last;
+	man_node_unlink(m, n);
+	man_node_freelist(n);
+@
+
+
+1.27
+log
+@Support for pod2man standard header macros (Vb, Ve, Sp).  Based largely on a set of patches by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.26 2010/03/22 14:03:03 kristaps Exp $ */
+a20 2
+#include <sys/utsname.h>
+
+@
+
+
+1.26
+log
+@Clarify -man -T[x]html handling of `br' within `B'.
+Consolidated node unlinking in -man.
+Conclude nested next-line scope issues noted by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.25 2010/01/01 17:14:27 kristaps Exp $ */
+d71 3
+@
+
+
+1.25
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.24 2009/11/02 06:22:45 kristaps Exp $ */
+d181 2
+a182 18
+	/* 
+	 * The end document shouldn't have the prologue macros as part
+	 * of the syntax tree (they encompass only meta-data).  
+	 */
+
+	if (m->last->parent->child == m->last) {
+		m->last->parent->child = NULL;
+		n = m->last;
+		m->last = m->last->parent;
+		m->next = MAN_NEXT_CHILD;
+	} else {
+		assert(m->last->prev);
+		m->last->prev->next = NULL;
+		n = m->last;
+		m->last = m->last->prev;
+		m->next = MAN_NEXT_SIBLING;
+	}
+
+@
+
+
+1.24
+log
+@Added mandoc_a2time() for proper date conversion.
+Fitted TH and Dd handlers to use mandoc_a2time().
+Documented date syntax for -man, fixed documentation for -mdoc.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.23 2009/10/31 06:10:58 kristaps Exp $ */
+d17 4
+@
+
+
+1.23
+log
+@Using perror() instead of fprintf for failure from library functions.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.22 2009/10/30 05:58:37 kristaps Exp $ */
+a68 5
+static	time_t	  man_atotime(const char *);
+#ifdef __linux__
+extern	char	 *strptime(const char *, const char *, struct tm *);
+#endif
+
+d154 11
+a164 5
+	if (NULL == (n = n->next))
+		m->meta.date = time(NULL);
+	else if (0 == (m->meta.date = man_atotime(n->string))) {
+		if ( ! man_nwarn(m, n, WDATE))
+			return(0);
+a165 1
+	}
+a197 21
+
+
+static time_t
+man_atotime(const char *p)
+{
+	struct tm	 tm;
+	char		*pp;
+
+	memset(&tm, 0, sizeof(struct tm));
+
+	if ((pp = strptime(p, "%b %d %Y", &tm)) && 0 == *pp)
+		return(mktime(&tm));
+	if ((pp = strptime(p, "%d %b %Y", &tm)) && 0 == *pp)
+		return(mktime(&tm));
+	if ((pp = strptime(p, "%b %d, %Y", &tm)) && 0 == *pp)
+		return(mktime(&tm));
+	if ((pp = strptime(p, "%b %Y", &tm)) && 0 == *pp)
+		return(mktime(&tm));
+
+	return(0);
+}
+@
+
+
+1.22
+log
+@libmdoc and libman now using non-recoverable allocations (simpler code).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.21 2009/10/27 08:26:12 kristaps Exp $ */
+a19 1
+#include <errno.h>
+a150 1
+	errno = 0;
+@
+
+
+1.21
+log
+@bzero() -> memset() (noted by Joerg Sonnenberger).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.20 2009/10/24 05:45:04 kristaps Exp $ */
+d25 1
+d145 1
+a145 3
+
+	if (NULL == (m->meta.title = strdup(n->string)))
+		return(man_nerr(m, n, WNMEM));
+d172 1
+a172 2
+		if (NULL == (m->meta.source = strdup(n->string)))
+			return(man_nerr(m, n, WNMEM));
+d177 1
+a177 2
+		if (NULL == (m->meta.vol = strdup(n->string)))
+			return(man_nerr(m, n, WNMEM));
+@
+
+
+1.20
+log
+@Added `PD' to -man (doesn't do anything, yet).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.19 2009/08/22 09:10:38 kristaps Exp $ */
+d211 1
+a211 1
+	bzero(&tm, sizeof(struct tm));
+@
+
+
+1.19
+log
+@Added `UC' libman macro (has no effect).
+Corrected `UC' and `DT' not to print their arguments.
+Noted that `UC' and `DT' shouldn't be used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.18 2009/08/21 12:32:38 kristaps Exp $ */
+d66 1
+@
+
+
+1.18
+log
+@Fixed `nf' behaviour (had broken with de-chunking).
+Added warnings if literal context already open/closed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.17 2009/08/20 11:51:07 kristaps Exp $ */
+d65 1
+@
+
+
+1.17
+log
+@Added `DT' macro (pointed out by joerg@@netbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.16 2009/08/19 09:14:50 kristaps Exp $ */
+a25 4
+#ifdef __linux__
+extern	char		*strptime(const char *, const char *, struct tm *);
+#endif
+
+a29 1
+
+d31 2
+a32 1
+static	time_t	  man_atotime(const char *);
+d59 2
+a60 2
+	{ NULL }, /* nf */
+	{ NULL }, /* fi */
+d67 5
+d83 1
+a83 1
+		break;
+d85 2
+a87 4
+	default:
+		if (NULL == man_actions[m->last->tok].post)
+			break;
+		return((*man_actions[m->last->tok].post)(m));
+d89 27
+@
+
+
+1.16
+log
+@Added RS/RE macro pair (had to adjust closing rules, sec/ssec/rs/par).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.15 2009/08/13 11:45:29 kristaps Exp $ */
+d68 1
+@
+
+
+1.15
+log
+@Significant overhaul in libman.  Macros are now block- and line-scoped (with
+next-line scope extensions possible).  man.7 reflects block and line scoping,
+and also includes a REFERENCE section that will be used as a template for the
+big mdoc reference.  Many fixes in next-line behaviour for both inline and
+block macros.  Added some macros for compatibility (from me.7).  Corrected
+quoted-literal handling for libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.14 2009/07/24 20:22:24 kristaps Exp $ */
+d65 3
+a67 1
+	{ NULL }, /* r*/
+@
+
+
+1.14
+log
+@Added `sp' support to libman.
+Added `\c' to known escapes (only used in man, but still).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.13 2009/06/18 10:53:58 kristaps Exp $ */
+d63 3
+a156 1
+		assert(MAN_ROOT == m->last->parent->type);
+a160 1
+		assert(m->last == m->first);
+@
+
+
+1.13
+log
+@Moved all formatted libman warn/error into man.c/libman.h.
+Converted all formatted warn/errors into regular syntax.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.12 2009/06/16 19:55:28 kristaps Exp $ */
+d62 1
+@
+
+
+1.12
+log
+@Removed MAN___: moved MAN_br to its index (comments not passed into parser).
+Fix: hashtable not fully formed after removal of MDOC___.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.11 2009/06/10 20:18:43 kristaps Exp $ */
+d111 1
+a111 2
+		return(man_verr(m, n->line, n->pos, 
+					"memory exhausted"));
+d122 1
+a122 1
+	else if ( ! man_vwarn(m, n->line, n->pos, "invalid section"))
+d130 1
+a130 1
+		if ( ! man_vwarn(m, n->line, n->pos, "invalid date"))
+d139 1
+a139 2
+			return(man_verr(m, n->line, n->pos, 
+						"memory exhausted"));
+d145 1
+a145 2
+			return(man_verr(m, n->line, n->pos, 
+						"memory exhausted"));
+d178 1
+a178 1
+	(void)memset(&tm, 0, sizeof(struct tm));
+@
+
+
+1.11
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.10 2009/04/12 19:45:26 kristaps Exp $ */
+d39 1
+a39 1
+	{ NULL }, /* __ */
+a59 1
+	{ NULL }, /* br */
+@
+
+
+1.10
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_action.c,v 1.9 2009/04/05 16:34:22 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.9
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_action.c,v 1.8 2009/04/02 06:51:44 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.8
+log
+@mdoc_tokhash -> hash
+Initial man hashtab (BROKEN).
+@
+text
+@d1 1
+a1 1
+/* $Id: man_action.c,v 1.7 2009/03/31 13:50:19 kristaps Exp $ */
+d64 1
+@
+
+
+1.7
+log
+@General clean-ups.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_action.c,v 1.6 2009/03/27 14:56:15 kristaps Exp $ */
+d63 1
+@
+
+
+1.6
+log
+@Added some new manuals (mdoc.3 mandoc_char.7).
+Support for .br in libman.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_action.c,v 1.5 2009/03/26 14:38:11 kristaps Exp $ */
+a21 1
+#include <err.h>
+a22 1
+#include <stdio.h>
+d112 2
+a113 1
+		return(man_verr(m, n->line, n->pos, "malloc"));
+d141 2
+a142 1
+			return(man_verr(m, n->line, n->pos, "malloc"));
+d148 2
+a149 1
+			return(man_verr(m, n->line, n->pos, "malloc"));
+@
+
+
+1.5
+log
+@Initial front-end formatting for -man pages.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_action.c,v 1.4 2009/03/26 09:55:39 kristaps Exp $ */
+d64 1
+@
+
+
+1.4
+log
+@Fixed reading whitespace for man.7 `.    TH'.
+Documented this.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_action.c,v 1.3 2009/03/25 16:08:30 kristaps Exp $ */
+d40 1
+a40 1
+static time_t	  man_atotime(const char *);
+d63 1
+d129 1
+a129 1
+	if (NULL == (n = n->next)) {
+d131 1
+a131 4
+		return(1);
+	}
+
+	if (0 == (m->meta.date = man_atotime(n->string))) {
+d139 1
+a139 1
+	if ((n = n->next))
+d145 1
+a145 1
+	if ((n = n->next))
+@
+
+
+1.3
+log
+@Linux fix (prototype).
+@
+text
+@d1 1
+a1 1
+/* $Id: man_action.c,v 1.2 2009/03/25 16:07:36 kristaps Exp $ */
+d156 14
+a169 6
+	assert(MAN_ROOT == m->last->parent->type);
+	m->last->parent->child = NULL;
+	n = m->last;
+	m->last = m->last->parent;
+	m->next = MAN_NEXT_CHILD;
+	assert(m->last == m->first);
+@
+
+
+1.2
+log
+@Actions in place for prologue parsing.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_action.c,v 1.1 2009/03/25 15:36:05 kristaps Exp $ */
+d30 3
+@
+
+
+1.1
+log
+@Added man_action.c, renamed mdoc_action.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: action.c,v 1.51 2009/03/23 14:31:58 kristaps Exp $ */
+d36 3
+d41 1
+a41 1
+	{ NULL }, /* TH */
+d84 1
+a84 1
+#if 0
+d86 1
+a86 1
+post_dt(POST_ARGS)
+d88 3
+a90 4
+	struct mdoc_node *n;
+	const char	 *cp;
+	char		 *ep;
+	long		  lval;
+d96 2
+a97 2
+	if (m->meta.arch)
+		free(m->meta.arch);
+d99 1
+a99 1
+	m->meta.title = m->meta.vol = m->meta.arch = NULL;
+d101 6
+d108 4
+a111 3
+	/* Handles: `.Dt' 
+	 *   --> title = unknown, volume = local, msec = 0, arch = NULL
+	 */
+d113 2
+a114 5
+	if (NULL == (n = m->last->child)) {
+		m->meta.title = xstrdup("unknown");
+		m->meta.vol = xstrdup("local");
+		return(post_prol(m));
+	}
+d116 6
+a121 3
+	/* Handles: `.Dt TITLE' 
+	 *   --> title = TITLE, volume = local, msec = 0, arch = NULL
+	 */
+d123 1
+a123 1
+	m->meta.title = xstrdup(n->string);
+d126 2
+a127 2
+		m->meta.vol = xstrdup("local");
+		return(post_prol(m));
+d130 5
+a134 6
+	/* Handles: `.Dt TITLE SEC'
+	 *   --> title = TITLE, volume = SEC is msec ? 
+	 *           format(msec) : SEC,
+	 *       msec = SEC is msec ? atoi(msec) : 0,
+	 *       arch = NULL
+	 */
+d136 1
+a136 19
+	cp = mdoc_a2msec(n->string);
+	if (cp) {
+		m->meta.vol = xstrdup(cp);
+		errno = 0;
+		lval = strtol(n->string, &ep, 10);
+		if (n->string[0] != '\0' && *ep == '\0')
+			m->meta.msec = (int)lval;
+	} else 
+		m->meta.vol = xstrdup(n->string);
+
+	if (NULL == (n = n->next))
+		return(post_prol(m));
+
+	/* Handles: `.Dt TITLE SEC VOL'
+	 *   --> title = TITLE, volume = VOL is vol ?
+	 *       format(VOL) : 
+	 *           VOL is arch ? format(arch) : 
+	 *               VOL
+	 */
+d138 3
+a140 13
+	cp = mdoc_a2vol(n->string);
+	if (cp) {
+		free(m->meta.vol);
+		m->meta.vol = xstrdup(cp);
+		n = n->next;
+	} else {
+		cp = mdoc_a2arch(n->string);
+		if (NULL == cp) {
+			free(m->meta.vol);
+			m->meta.vol = xstrdup(n->string);
+		} else
+			m->meta.arch = xstrdup(cp);
+	}	
+d142 1
+a142 1
+	/* Ignore any subsequent parameters... */
+d144 3
+a146 7
+	return(post_prol(m));
+}
+
+static int
+post_prol(POST_ARGS)
+{
+	struct mdoc_node *n;
+d153 10
+a162 4
+	if (m->last->parent->child == m->last)
+		m->last->parent->child = m->last->prev;
+	if (m->last->prev)
+		m->last->prev->next = NULL;
+a163 2
+	n = m->last;
+	assert(NULL == m->last->next);
+d165 16
+a180 7
+	if (m->last->prev) {
+		m->last = m->last->prev;
+		m->next = MDOC_NEXT_SIBLING;
+	} else {
+		m->last = m->last->parent;
+		m->next = MDOC_NEXT_CHILD;
+	}
+d182 1
+a182 2
+	mdoc_node_freelist(n);
+	return(1);
+a183 1
+#endif
+@

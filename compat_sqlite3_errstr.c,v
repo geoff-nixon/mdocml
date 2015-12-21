@@ -1,0 +1,106 @@
+head	1.4;
+access;
+symbols
+	VERSION_1_13_3:1.3
+	VERSION_1_13_2:1.3
+	VERSION_1_13_1:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.4
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.08.05.12.50.52;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@modernize style: "return" is not a function
+@
+text
+@#include "config.h"
+
+#if HAVE_SQLITE3_ERRSTR
+
+int dummy;
+
+#else
+
+const char *
+sqlite3_errstr(int rc)
+{
+
+	return rc ? "unknown error" : "not an error";
+}
+
+#endif
+@
+
+
+1.3
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@d13 1
+a13 1
+	return(rc ? "unknown error" : "not an error");
+@
+
+
+1.2
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d3 1
+a3 1
+#ifdef HAVE_SQLITE3_ERRSTR
+@
+
+
+1.1
+log
+@Since old SQLite versions do not have sqlite3_errstr(),
+provide a dummy fallback implementation.
+Do not bother to decode the error, SQLite error codes
+are not useful enough for that to be worthwhile.
+Note that using sqlite3_errmsg(db) would be a bad idea:
+On malloc() failure, db is NULL, which would cause a segfault.
+Issue noticed by kristaps@@.
+@
+text
+@a0 1
+#ifdef HAVE_CONFIG_H
+a1 1
+#endif
+@

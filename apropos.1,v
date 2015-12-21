@@ -1,0 +1,2307 @@
+head	1.39;
+access;
+symbols
+	VERSION_1_13_3:1.37
+	VERSION_1_13_2:1.36
+	VERSION_1_12_4:1.16.2.4
+	VERSION_1_13_1:1.29
+	VERSION_1_12_3:1.16.2.3
+	VERSION_1_12_2:1.16.2.3
+	VERSION_1_12:1.16.0.2
+	VERSION_1_12_1:1.17
+	VERSION_1_12_0:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.39
+date	2015.04.03.08.46.17;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2015.03.30.16.06.14;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2015.02.16.16.23.54;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2014.10.25.01.03.52;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2014.09.03.05.22.45;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2014.08.30.18.08.10;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2014.08.22.04.52.55;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2014.08.22.03.42.18;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2014.08.21.02.28.40;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2014.08.21.01.52.59;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2014.04.24.00.28.19;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2014.04.18.10.30.37;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2014.04.18.09.47.09;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2014.04.15.23.02.27;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2014.04.04.15.55.19;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2014.04.04.15.51.28;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2014.03.17.09.43.56;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2013.10.01.20.56.18;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2013.07.05.09.33.02;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2012.06.09.14.11.15;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2012.06.08.10.44.52;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2012.03.24.01.46.25;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2011.12.25.19.35.44;	author kristaps;	state Exp;
+branches
+	1.16.2.1;
+next	1.15;
+
+1.15
+date	2011.12.25.16.53.51;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2011.12.24.22.37.16;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2011.12.12.02.00.49;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.11.29.10.59.19;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.11.29.10.53.42;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.11.29.00.41.33;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.11.26.22.38.11;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.11.23.10.09.30;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.11.20.21.36.00;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.11.20.16.29.50;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.11.20.15.43.14;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.11.18.07.02.19;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.11.09.10.53.48;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.10.08.12.24.40;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.10.06.23.00.54;	author kristaps;	state Exp;
+branches;
+next	;
+
+1.16.2.1
+date	2013.09.17.20.39.17;	author schwarze;	state Exp;
+branches;
+next	1.16.2.2;
+
+1.16.2.2
+date	2013.09.17.20.42.09;	author schwarze;	state Exp;
+branches;
+next	1.16.2.3;
+
+1.16.2.3
+date	2013.10.05.01.25.20;	author schwarze;	state Exp;
+branches;
+next	1.16.2.4;
+
+1.16.2.4
+date	2014.03.17.09.52.42;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.39
+log
+@No need to hardcode /usr/bin/ as the path to more(1); helps portability.
+We don't hardcode the paths to gunzip(1) and cmp(1) either.
+Discussed with ajacoutot@@.
+@
+text
+@.\"	$Id: apropos.1,v 1.38 2015/03/30 16:06:14 schwarze Exp $
+.\"
+.\" Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\" Copyright (c) 2011, 2012, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: March 30 2015 $
+.Dt APROPOS 1
+.Os
+.Sh NAME
+.Nm apropos ,
+.Nm whatis
+.Nd search manual page databases
+.Sh SYNOPSIS
+.Nm
+.Op Fl acfhklw
+.Op Fl C Ar file
+.Op Fl M Ar path
+.Op Fl m Ar path
+.Op Fl O Ar outkey
+.Op Fl S Ar arch
+.Op Fl s Ar section
+.Ar expression ...
+.Sh DESCRIPTION
+The
+.Nm apropos
+and
+.Nm whatis
+utilities query manual page databases generated by
+.Xr makewhatis 8 ,
+evaluating
+.Ar expression
+for each file in each database.
+By default, they display the names, section numbers, and description lines
+of all matching manuals.
+.Pp
+By default,
+.Nm
+searches for
+.Xr makewhatis 8
+databases in the default paths stipulated by
+.Xr man 1
+and uses case-insensitive substring matching
+.Pq the Cm = No operator
+over manual names and descriptions
+.Pq the Li \&Nm No and Li \&Nd No macro keys .
+Multiple terms imply pairwise
+.Fl o .
+.Pp
+.Nm whatis
+is a synonym for
+.Nm
+.Fl f .
+.Pp
+The options are as follows:
+.Bl -tag -width Ds
+.It Fl a
+Instead of showing only the title lines, show the complete manual pages,
+just like
+.Xr man 1
+.Fl a
+would.
+If the standard output is a terminal device and
+.Fl c
+is not specified, use
+.Xr more 1
+to paginate them.
+In
+.Fl a
+mode, the options
+.Fl IKOTW
+described in the
+.Xr mandoc 1
+manual are also available.
+.It Fl C Ar file
+Specify an alternative configuration
+.Ar file
+in
+.Xr man.conf 5
+format.
+.It Fl c
+In
+.Fl a
+mode, copy the formatted manual pages to the standard output without using
+.Xr more 1
+to paginate them.
+.It Fl f
+Search for all words in
+.Ar expression
+in manual page names only.
+The search is case insensitive and matches whole words only.
+In this mode, macro keys, comparison operators, and logical operators
+are not available.
+This overrides any earlier
+.Fl k
+and
+.Fl l
+options.
+.It Fl h
+Instead of showing the title lines, show the SYNOPSIS sections, just like
+.Xr man 1
+.Fl h
+would.
+.It Fl k
+Support the full
+.Ar expression
+syntax.
+This overrides any earlier
+.Fl f
+and
+.Fl l
+options.
+It is the default for
+.Nm .
+.It Fl l
+An alias for
+.Xr mandoc 1
+.Fl a .
+This overrides any earlier
+.Fl f ,
+.Fl k ,
+and
+.Fl w
+options.
+.It Fl M Ar path
+Use the colon-separated path instead of the default list of paths
+searched for
+.Xr makewhatis 8
+databases.
+Invalid paths, or paths without manual databases, are ignored.
+.It Fl m Ar path
+Prepend the colon-separated paths to the list of paths searched
+for
+.Xr makewhatis 8
+databases.
+Invalid paths, or paths without manual databases, are ignored.
+.It Fl O Ar outkey
+Show the values associated with the key
+.Ar outkey
+instead of the manual descriptions.
+.It Fl S Ar arch
+Restrict the search to pages for the specified
+.Xr machine 1
+architecture.
+.Ar arch
+is case insensitive.
+By default, pages for all architectures are shown.
+.It Fl s Ar section
+Restrict the search to the specified section of the manual.
+By default, pages from all sections are shown.
+See
+.Xr man 1
+for a listing of sections.
+.It Fl w
+Instead of showing title lines, show the pathnames of the matching
+manual pages, just like
+.Xr man 1
+.Fl w
+would.
+.El
+.Pp
+An
+.Ar expression
+consists of search terms joined by logical operators
+.Fl a
+.Pq and
+and
+.Fl o
+.Pq or .
+The
+.Fl a
+operator has precedence over
+.Fl o
+and both are evaluated left-to-right.
+.Bl -tag -width Ds
+.It \&( Ar expr No \&)
+True if the subexpression
+.Ar expr
+is true.
+.It Ar expr1 Fl a Ar expr2
+True if both
+.Ar expr1
+and
+.Ar expr2
+are true (logical
+.Sq and ) .
+.It Ar expr1 Oo Fl o Oc Ar expr2
+True if
+.Ar expr1
+and/or
+.Ar expr2
+evaluate to true (logical
+.Sq or ) .
+.It Ar term
+True if
+.Ar term
+is satisfied.
+This has syntax
+.Sm off
+.Oo
+.Op Ar key Op , Ar key ...
+.Pq Cm = | \(ti
+.Oc
+.Ar val ,
+.Sm on
+where
+.Ar key
+is an
+.Xr mdoc 7
+macro to query and
+.Ar val
+is its value.
+See
+.Sx Macro Keys
+for a list of available keys.
+Operator
+.Cm =
+evaluates a substring, while
+.Cm \(ti
+evaluates a regular expression.
+.It Fl i Ar term
+If
+.Ar term
+is a regular expression, it
+is evaluated case-insensitively.
+Has no effect on substring terms.
+.El
+.Pp
+Results are sorted by manual sections and names, with output formatted as
+.Pp
+.D1 name[, name...](sec) \- description
+.Pp
+Where
+.Dq name
+is the manual's name,
+.Dq sec
+is the manual section, and
+.Dq description
+is the manual's short description.
+If an architecture is specified for the manual, it is displayed as
+.Pp
+.D1 name(sec/arch) \- description
+.Pp
+Resulting manuals may be accessed as
+.Pp
+.Dl $ man \-s sec name
+.Pp
+If an architecture is specified in the output, use
+.Pp
+.Dl $ man \-s sec \-S arch name
+.Ss Macro Keys
+Queries evaluate over a subset of
+.Xr mdoc 7
+macros indexed by
+.Xr makewhatis 8 .
+In addition to the macro keys listed below, the special key
+.Cm any
+may be used to match any available macro key.
+.Pp
+Names and description:
+.Bl -column "xLix" description -offset indent -compact
+.It Li \&Nm Ta manual name
+.It Li \&Nd Ta one-line manual description
+.It Li arch Ta machine architecture (case-insensitive)
+.It Li sec  Ta manual section number
+.El
+.Pp
+Sections and cross references:
+.Bl -column "xLix" description -offset indent -compact
+.It Li \&Sh Ta section header (excluding standard sections)
+.It Li \&Ss Ta subsection header
+.It Li \&Xr Ta cross reference to another manual page
+.It Li \&Rs Ta bibliographic reference
+.El
+.Pp
+Semantic markup for command line utilities:
+.Bl -column "xLix" description -offset indent -compact
+.It Li \&Fl Ta command line options (flags)
+.It Li \&Cm Ta command modifier
+.It Li \&Ar Ta command argument
+.It Li \&Ic Ta internal or interactive command
+.It Li \&Ev Ta environmental variable
+.It Li \&Pa Ta file system path
+.El
+.Pp
+Semantic markup for function libraries:
+.Bl -column "xLix" description -offset indent -compact
+.It Li \&Lb Ta function library name
+.It Li \&In Ta include file
+.It Li \&Ft Ta function return type
+.It Li \&Fn Ta function name
+.It Li \&Fa Ta function argument type and name
+.It Li \&Vt Ta variable type
+.It Li \&Va Ta variable name
+.It Li \&Dv Ta defined variable or preprocessor constant
+.It Li \&Er Ta error constant
+.It Li \&Ev Ta environmental variable
+.El
+.Pp
+Various semantic markup:
+.Bl -column "xLix" description -offset indent -compact
+.It Li \&An Ta author name
+.It Li \&Lk Ta hyperlink
+.It Li \&Mt Ta Do mailto Dc hyperlink
+.It Li \&Cd Ta kernel configuration declaration
+.It Li \&Ms Ta mathematical symbol
+.It Li \&Tn Ta tradename
+.El
+.Pp
+Physical markup:
+.Bl -column "xLix" description -offset indent -compact
+.It Li \&Em Ta italic font or underline
+.It Li \&Sy Ta boldface font
+.It Li \&Li Ta typewriter font
+.El
+.Pp
+Text production:
+.Bl -column "xLix" description -offset indent -compact
+.It Li \&St Ta reference to a standards document
+.It Li \&At Ta At No version reference
+.It Li \&Bx Ta Bx No version reference
+.It Li \&Bsx Ta Bsx No version reference
+.It Li \&Nx Ta Nx No version reference
+.It Li \&Fx Ta Fx No version reference
+.It Li \&Ox Ta Ox No version reference
+.It Li \&Dx Ta Dx No version reference
+.El
+.Sh ENVIRONMENT
+.Bl -tag -width MANPAGER
+.It Ev MANPAGER
+Any non-empty value of the environment variable
+.Ev MANPAGER
+will be used instead of the standard pagination program,
+.Xr more 1 .
+.It Ev MANPATH
+The standard search path used by
+.Xr man 1
+may be changed by specifying a path in the
+.Ev MANPATH
+environment variable.
+Invalid paths, or paths without manual databases, are ignored.
+Overridden by
+.Fl M .
+If
+.Ev MANPATH
+begins with a colon, it is appended to the default list;
+if it ends with a colon, it is prepended to the default list;
+or if it contains two adjacent colons,
+the standard search path is inserted between the colons.
+If none of these conditions are met, it overrides the
+standard search path.
+.It Ev PAGER
+Specifies the pagination program to use when
+.Ev MANPAGER
+is not defined.
+If neither PAGER nor MANPAGER is defined,
+.Xr more 1
+.Fl s
+will be used.
+.El
+.Sh FILES
+.Bl -tag -width "/etc/man.conf" -compact
+.It Pa mandoc.db
+name of the
+.Xr makewhatis 8
+keyword database
+.It Pa /etc/man.conf
+default
+.Xr man 1
+configuration file
+.El
+.Sh EXIT STATUS
+.Ex -std
+.Sh EXAMPLES
+Search for
+.Qq .cf
+as a substring of manual names and descriptions:
+.Pp
+.Dl $ apropos .cf
+.Pp
+Include matches for
+.Qq .cnf
+and
+.Qq .conf
+as well:
+.Pp
+.Dl $ apropos .cf .cnf .conf
+.Pp
+Search in names and descriptions using a regular expression:
+.Pp
+.Dl $ apropos \(aq\(tiset.?[ug]id\(aq
+.Pp
+Search for manuals in the library section mentioning both the
+.Qq optind
+and the
+.Qq optarg
+variables:
+.Pp
+.Dl $ apropos \-s 3 Va=optind \-a Va=optarg
+.Pp
+Do exactly the same as calling
+.Xr whatis 1
+with the argument
+.Qq ssh :
+.Pp
+.Dl $ apropos \-\- \-i \(aqNm\(ti[[:<:]]ssh[[:>:]]\(aq
+.Pp
+The following two invocations are equivalent:
+.Pp
+.D1 Li $ apropos -S Ar arch Li -s Ar section expression
+.Bd -ragged -offset indent
+.Li $ apropos \e( Ar expression Li \e)
+.Li -a arch\(ti^( Ns Ar arch Ns Li |any)$
+.Li -a sec\(ti^ Ns Ar section Ns Li $
+.Ed
+.Sh SEE ALSO
+.Xr man 1 ,
+.Xr re_format 7 ,
+.Xr makewhatis 8
+.Sh HISTORY
+Part of the functionality of
+.Nm whatis
+was already provided by the former
+.Nm manwhere
+utility in
+.Bx 1 .
+The
+.Nm
+and
+.Nm whatis
+utilities first appeared in
+.Bx 2 .
+They were rewritten from scratch for
+.Ox 5.6 .
+.Pp
+The
+.Fl M
+option and the
+.Ev MANPATH
+variable first appeared in
+.Bx 4.3 ;
+.Fl m
+in
+.Bx 4.3 Reno ;
+.Fl C
+in
+.Bx 4.4 Lite1 ;
+and
+.Fl S
+and
+.Fl s
+in
+.Ox 4.5
+for
+.Nm
+and in
+.Ox 5.6
+for
+.Nm whatis .
+.Sh AUTHORS
+.An -nosplit
+.An Bill Joy
+wrote
+.Nm manwhere
+in 1977 and the original
+.Bx
+.Nm
+and
+.Nm whatis
+in February 1979.
+The current version was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv
+and
+.An Ingo Schwarze Aq Mt schwarze@@openbsd.org .
+@
+
+
+1.38
+log
+@Escape punctuation characters that have a different meaning in -Tpdf.
+
+~, `, and ' get translated to non-ASCII characters by most troff
+implementations when generating PostScript/PDF output.  When the
+original ASCII character is meant, it needs to be manually escaped.
+
+Patch from bentley@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.37 2015/02/16 16:23:54 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: February 16 2015 $
+d368 2
+a369 1
+.Pa /usr/bin/more Fl s
+@
+
+
+1.37
+log
+@Delete the -V option.  It serves no purpose but keeps confusing people.
+
+Keeping track of the versions of installed software is the job of
+the package manager, not of the individual binaries.  If individual
+binaries include version numbers, that tends to goad people into
+writing broken configuration tests that inspect version numbers
+instead of properly testing for features.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.36 2014/10/25 01:03:52 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: October 25 2014 $
+d213 1
+a213 1
+.Pq Cm = | ~
+d230 1
+a230 1
+.Cm ~
+d401 1
+a401 1
+.Dl $ apropos '~set.?[ug]id'
+d416 1
+a416 1
+.Dl $ apropos \-\- \-i 'Nm~[[:<:]]ssh[[:>:]]'
+d423 2
+a424 2
+.Li -a arch~^( Ns Ar arch Ns Li |any)$
+.Li -a sec~^ Ns Ar section Ns Li $
+@
+
+
+1.36
+log
+@integrate preconv(1) into mandoc(1);
+enhances functionality and reduces code and docs by more than 300 lines
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.35 2014/09/03 05:22:45 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: September 3 2014 $
+d27 1
+a27 1
+.Op Fl acfhklVw
+a164 2
+.It Fl V
+Print version and exit.
+@
+
+
+1.35
+log
+@Implement the traditional -h option for man(1): show the SYNOPSIS only.
+As usual, we get mandoc -h and apropos -h for free.
+Try stuff like "apropos -h In=dirent" or "apropos -h Fa=timespec".
+
+Only useful for terminal output, so -Tps, -Tpdf, -Thtml ignore -h for now.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.34 2014/08/30 18:08:10 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 30 2014 $
+d82 1
+a82 1
+.Fl IOTW
+@
+
+
+1.34
+log
+@Introduce a man(1) -l option as an alias for mandoc -a.
+Basically, this does the same as man -l in Linux man-db.
+The point is that now all functionality of the combined tool
+is reachable from the man(1) command name:
+apropos = man -k, whatis = man -f, mandoc = man -cl.
+
+Originally suggested by Carsten dot Kunze at arcor dot de,
+current maintainer of the Heirloom Documentation Tools.
+
+While here, add various missing information to the usage()
+and to the manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.33 2014/08/22 04:52:55 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 22 2014 $
+d27 1
+a27 1
+.Op Fl acfklVw
+d110 5
+@
+
+
+1.33
+log
+@implement MANPAGER and PAGER
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.32 2014/08/22 03:42:18 schwarze Exp $
+d27 1
+a27 1
+.Op Fl acfkw
+d107 3
+a109 1
+option.
+d116 3
+a118 1
+option.
+d121 10
+d160 2
+@
+
+
+1.32
+log
+@mandoc -a, man, apropos -a, whatis -a now paginate by default
+but provide an option -c to not paginate;
+taking inspiration from manpage.c, hence adding (c) 2012 kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.31 2014/08/21 02:28:40 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: August 21 2014 $
+d321 6
+a326 1
+.Bl -tag -width MANPATH
+d344 7
+@
+
+
+1.31
+log
+@Describe the new options -afkw.
+Clean up the description of whatis(1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.30 2014/08/21 01:52:59 schwarze Exp $
+d27 1
+a27 1
+.Op Fl afkw
+d74 8
+a81 1
+In this mode, the options
+d92 6
+@
+
+
+1.30
+log
+@Complete the whatis.1 -> apropos.1 merge,
+in particular regarding HISTORY and AUTHORS.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.29 2014/04/24 00:28:19 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 24 2014 $
+d27 1
+d60 1
+d62 3
+a64 1
+maps terms only to case-sensitive manual names.
+d66 1
+a66 1
+Its arguments are as follows:
+d68 11
+d85 19
+d133 6
+a207 5
+.Nm whatis
+considers an
+.Ar expression
+to consist of an opaque keyword.
+.Pp
+@
+
+
+1.29
+log
+@misplaced punctuation
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.28 2014/04/18 10:30:37 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 18 2014 $
+d44 1
+a44 1
+By default, it displays the names, section numbers, and description lines
+d352 7
+a358 1
+An
+d360 3
+a362 1
+utility first appeared in
+d364 1
+a364 1
+It was rewritten from scratch for
+d384 7
+a390 1
+.Ox 4.5 .
+d394 3
+a396 1
+wrote the original
+d399 2
+@
+
+
+1.28
+log
+@Slowly, the dust begins to settle.
+We are keeping the traditional name makewhatis(8).
+No content change.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.27 2014/04/18 09:47:09 schwarze Exp $
+d143 2
+a144 2
+.Ar val
+.Sm on ,
+@
+
+
+1.27
+log
+@Fix a few lies; polish wording and formatting while here.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.26 2014/04/15 23:02:27 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 15 2014 $
+d40 1
+a40 1
+.Xr mandocdb 8 ,
+d50 1
+a50 1
+.Xr mandocdb 8
+d73 1
+a73 1
+.Xr mandocdb 8
+d79 1
+a79 1
+.Xr mandocdb 8
+d199 1
+a199 1
+.Xr mandocdb 8 .
+d296 1
+a296 1
+.Xr mandocdb 8
+d350 1
+a350 1
+.Xr mandocdb 8
+@
+
+
+1.26
+log
+@remove documentation of the former macro key "NAME";
+it got deleted with mansearch.h rev. 1.12
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.25 2014/04/04 15:55:19 schwarze Exp $
+d18 1
+a18 1
+.Dd $Mdocdate: April 4 2014 $
+d41 1
+a41 1
+evaluating on
+d44 2
+d52 3
+a54 3
+.Xr man 1 ,
+parses terms as case-sensitive regular expressions
+.Pq the Li \&~ operator
+d125 1
+a125 1
+.Qq and ) .
+d132 1
+a132 1
+.Qq or ) .
+d138 9
+a146 3
+.Li [key[,key]*(=~)]?val ,
+where operand
+.Cm key
+d150 1
+a150 1
+.Cm val
+d156 1
+a156 1
+.Li \&=
+d158 1
+a158 1
+.Li \&~
+d173 1
+a173 1
+Results are sorted by manual title, with output formatted as
+d175 1
+a175 1
+.D1 title(sec) \- description
+d178 3
+a180 4
+.Qq title
+is the manual's title (note multiple manual names may exist for one
+title),
+.Qq sec
+d182 1
+a182 1
+.Qq description
+d186 1
+a186 1
+.D1 title(cat/arch) \- description
+d190 1
+a190 1
+.Dl $ man \-s sec title
+d194 1
+a194 1
+.Dl $ man \-s sec \-S arch title
+d324 1
+a324 1
+Search for manuals in the library category mentioning both the
+@
+
+
+1.25
+log
+@Remember which names are in the NAME section.
+This helps to find missing MLINKS.
+Database build times do not change and database growth is minimal
+(1.2% with -Q, 0.7% without -Q in /usr/share/man),
+so making this optional would be pointless.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.24 2014/04/04 15:51:28 schwarze Exp $
+a198 1
+.It Li NAME Ta manual name in the NAME section, subset of \&Nm
+@
+
+
+1.24
+log
+@merge OpenBSD rev. 1.20, describing new features
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.23 2014/03/17 09:43:56 schwarze Exp $
+d4 1
+d18 1
+a18 1
+.Dd $Mdocdate: March 17 2014 $
+d199 1
+@
+
+
+1.23
+log
+@Sync to OpenBSD:
+* do not talk about shell globbing
+* describe logical operations
+* improve examples
+* add HISTORY
+* some wording improvements for clarity
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.22 2013/10/01 20:56:18 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: October 1 2013 $
+d29 1
+d79 4
+d200 2
+d330 9
+d349 1
+a349 1
+.Ox 5.1 .
+d377 3
+a379 1
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+@
+
+
+1.22
+log
+@Merge the relevant parts from the VERSION_1_12 branch:
+- change mandocdb.db to mandoc.db
+- add HISTORY to mandocdb(8)
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.21 2013/07/13 19:41:16 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 13 2013 $
+d48 7
+a54 4
+.Xr man 1
+and
+maps terms to case-sensitive manual names and descriptions.
+Multiple terms are OR'd.
+d79 9
+a87 3
+Search only for a particular architecture.
+.It Fl s Ar cat
+Search only for a manual section.
+d90 1
+a90 1
+for a listing of manual sections.
+d93 1
+a93 2
+.Nm whatis
+considers an
+d95 35
+a129 6
+to consist of an opaque keyword.
+.Nm apropos
+parses a
+.Ar expression
+into type and keyword pairs.
+This pair syntax
+d143 1
+a143 1
+evaluates a full string, while
+d145 13
+a157 3
+evaluates a
+.Xr glob 7
+pattern.
+d160 4
+a163 2
+.Qq title(sec) \- description
+where
+d172 10
+a181 1
+.Qq title(cat/arch) \- description .
+d183 1
+a183 2
+.Nm apropos
+queries evaluate over a subset of
+d258 1
+a258 1
+.Bl -tag -width Ds
+d260 5
+a264 2
+Colon-separated paths modifying the default list of paths searched for
+manual databases.
+d270 6
+a275 9
+begins with a
+.Sq \&: ,
+it is appended to the default list;
+else if it ends with
+.Sq \&: ,
+it is prepended to the default list; else if it contains
+.Sq \&:: ,
+the default list is inserted between the colons.
+If none of these conditions are met, it overrides the default list.
+d292 2
+a293 4
+.Qq mdoc
+as a word or
+.Xr glob 7
+expression:
+d295 1
+a295 2
+.Dl $ apropos mdoc
+.Dl $ apropos any~mdoc*
+d298 1
+a298 1
+.Qq roff
+d300 6
+a305 4
+.Qq man
+using
+.Xr glob 7
+expressions:
+d307 1
+a307 1
+.Dl $ apropos ~*mdoc* ~*roff*
+d309 3
+a311 1
+Search for
+d313 3
+a315 1
+as a variable name in the library category:
+d317 6
+a322 1
+.Dl $ apropos \-s 3 Va=optarg
+d324 2
+a325 1
+.Xr glob 7 ,
+d327 26
+d354 4
+a357 1
+The
+d359 2
+a360 1
+utility was written by
+@
+
+
+1.21
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.20 2013/07/05 09:33:02 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 5 2013 $
+d222 1
+a222 1
+.It Pa mandocdb.db
+@
+
+
+1.20
+log
+@Simple partial sync with OpenBSD:
+* Again accept suffixes on the name of the whatis utility.
+* The usage line for whatis must not invite expressions.
+* Revert the argument names in the SYNOPSIS back to the usual ones.
+* Revert a few gratuitious changes regarding line breaks etc.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.19 2012/06/09 14:11:15 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 9 2012 $
+d265 1
+a265 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.19
+log
+@Merge whatis.1 into apropos.1 (and remove), add whatis bits to apropos
+(via mansearch), and merge mandocdb.h into mansearch.h (and remove).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.18 2012/06/08 10:44:52 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 8 2012 $
+d27 2
+a28 2
+.Op Fl M Ar manpath
+.Op Fl m Ar manpath
+d63 1
+a63 1
+.It Fl M Ar manpath
+d69 1
+a69 1
+.It Fl m Ar manpath
+@
+
+
+1.18
+log
+@Flip apropos to use mansearch instead of apropos_db.
+This makes the utility much smaller and simpler.
+A lot of functionality has been omitted while the sqlite3 search routines
+improve (logical operations, etc.).
+It still needs work to make the output more conventional.
+Also add the manpage utility, which I use extensively as a mind-meld of
+apropos and man.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.17 2012/03/24 01:46:25 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: March 24 2012 $
+d21 2
+a22 1
+.Nm apropos
+d34 4
+a37 2
+.Nm
+utility queries manual page databases generated by
+d50 1
+a50 2
+parses terms as case-sensitive words
+over manual names and descriptions.
+d52 2
+d84 2
+a85 1
+An
+d87 5
+a91 1
+consists of type and keyword pairs.
+d125 2
+a126 1
+Queries evaluate over a subset of
+d222 1
+a222 1
+.It Pa whatis.db
+a225 4
+.It Pa whatis.index
+name of the
+.Xr mandocdb 8
+filename database
+@
+
+
+1.17
+log
+@Be insane.  Make apropos(1) subsume man(1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.16 2011/12/25 19:35:44 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 25 2011 $
+d45 3
+a47 2
+.Xr man 1 ,
+parses terms as case-sensitive regular expressions
+d49 1
+a49 4
+Multiple terms imply pairwise
+.Fl o .
+If standard output is a TTY, a result may be selected from a list and
+its manual displayed with the pager.
+d82 2
+a83 35
+consists of search terms joined by logical operators
+.Fl a
+.Pq and
+and
+.Fl o
+.Pq or .
+The
+.Fl a
+operator has precedence over
+.Fl o
+and both are evaluated left-to-right.
+.Bl -tag -width Ds
+.It \&( Ar expr No \&)
+True if the subexpression
+.Ar expr
+is true.
+.It Ar expr1 Fl a Ar expr2
+True if both
+.Ar expr1
+and
+.Ar expr2
+are true (logical
+.Qq and ) .
+.It Ar expr1 Oo Fl o Oc Ar expr2
+True if
+.Ar expr1
+and/or
+.Ar expr2
+evaluate to true (logical
+.Qq or ) .
+.It Ar term
+True if
+.Ar term
+is satisfied.
+This has syntax
+d97 1
+a97 1
+evaluates a substring, while
+d99 3
+a101 8
+evaluates a regular expression.
+.It Fl i Ar term
+If
+.Ar term
+is a regular expression, it
+is evaluated case-insensitively.
+Has no effect on substring terms.
+.El
+d104 2
+a105 4
+.Pp
+.D1 title(sec) \- description
+.Pp
+Where
+d114 1
+a114 18
+.Pp
+.D1 title(cat/arch) \- description
+.Pp
+If on a TTY, results are prefixed with a numeric identifier.
+.Pp
+.D1 [index] title(cat) \- description
+.Pp
+One may choose a manual be entering the index at the prompt.
+Valid choices are displayed using
+.Ev MANPAGER ,
+or failing that ,
+.Ev PAGER
+or just
+.Xr more 1 .
+Source pages are formatted with
+.Xr mandoc 1 ;
+preformatted pages with
+.Xr cat 1 .
+a191 8
+.It Ev MANPAGER
+Default pager for manuals.
+If this is unset, falls back to
+.Ev Pager .
+.It Ev PAGER
+The second choice for a manual pager.
+If this is unset, use
+.Xr more 1 .
+d230 3
+a232 2
+as a substring and regular expression
+within each manual name and description:
+d235 1
+a235 1
+.Dl $ apropos ~^mdoc$
+d241 3
+a243 1
+for the regular expression case:
+d245 1
+a245 2
+.Dl $ apropos ~^mdoc$ roff man
+.Dl $ apropos ~^mdoc$ \-o roff \-o man
+a247 2
+.Qq optind
+and
+d249 1
+a249 1
+as variable names in the library category:
+d251 1
+a251 1
+.Dl $ apropos \-s 3 Va~^optind \-a Va~^optarg$
+d253 1
+a253 2
+.Xr more 1
+.Xr re_format 7 ,
+@
+
+
+1.16
+log
+@State default usage before listing arguments of a utility.  Inspired by a
+patch to mandocdb.8 by schwarze@@ some time ago.  Ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.15 2011/12/25 16:53:51 schwarze Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+d47 1
+a47 3
+.Pq the Li \&~ operator
+over manual names and descriptions
+.Pq the Li \&Nm No and Li \&Nd No macro keys .
+d50 2
+d159 1
+a159 1
+Resulting manuals may be accessed as
+d161 1
+a161 1
+.Dl $ man \-s sec title
+d163 11
+a173 3
+If an architecture is specified in the output, use
+.Pp
+.Dl $ man \-s sec \-S arch title
+d251 8
+d320 1
+a320 1
+.Xr man 1 ,
+@
+
+
+1.16.2.1
+log
+@Merge rev. 1.20:
+Revert the argument names in the SYNOPSIS back to the usual ones.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.20 2013/07/05 09:33:02 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 5 2013 $
+d26 2
+a27 2
+.Op Fl M Ar path
+.Op Fl m Ar path
+d61 1
+a61 1
+.It Fl M Ar path
+d67 1
+a67 1
+.It Fl m Ar path
+@
+
+
+1.16.2.2
+log
+@Merge rev. 1.21:
+For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.21 2013/07/13 19:41:16 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 13 2013 $
+d311 2
+a312 1
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+@
+
+
+1.16.2.3
+log
+@whatis.{db,index} -> mandoc.{db,index}; from kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.16.2.2 2013/09/17 20:42:09 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: September 17 2013 $
+d263 1
+a263 1
+.It Pa mandoc.db
+d267 1
+a267 1
+.It Pa mandoc.index
+@
+
+
+1.16.2.4
+log
+@merge the applicable parts from HEAD
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.16.2.3 2013/10/05 01:25:20 schwarze Exp $
+d3 1
+a3 1
+.\" Copyright (c) 2011, 2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+d17 1
+a17 1
+.Dd $Mdocdate: October 5 2013 $
+d74 3
+a76 9
+Restrict the search to pages for the specified
+.Xr machine 1
+architecture.
+.Ar arch
+is case insensitive.
+By default, pages for all architectures are shown.
+.It Fl s Ar section
+Restrict the search to the specified section of the manual.
+By default, pages from all sections are shown.
+d79 1
+a79 1
+for a listing of sections.
+d242 1
+a242 1
+.Bl -tag -width MANPATH
+d244 2
+a245 5
+The standard search path used by
+.Xr man 1
+may be changed by specifying a path in the
+.Ev MANPATH
+environment variable.
+d251 9
+a259 6
+begins with a colon, it is appended to the default list;
+if it ends with a colon, it is prepended to the default list;
+or if it contains two adjacent colons,
+the standard search path is inserted between the colons.
+If none of these conditions are met, it overrides the
+standard search path.
+d280 3
+a282 2
+.Qq .cf
+as a substring of manual names and descriptions:
+d284 2
+a285 1
+.Dl $ apropos .cf
+d288 1
+a288 1
+.Qq .cnf
+d290 2
+a291 2
+.Qq .conf
+as well:
+d293 2
+a294 1
+.Dl $ apropos .cf .cnf .conf
+d296 1
+a296 5
+Search in names and descriptions using a regular expression:
+.Pp
+.Dl $ apropos '~set.?[ug]id'
+.Pp
+Search for manuals in the library category mentioning both the
+d298 1
+a298 1
+and the
+d300 1
+a300 3
+variables:
+.Pp
+.Dl $ apropos \-s 3 Va=optind \-a Va=optarg
+d302 1
+a302 6
+Do exactly the same as calling
+.Xr whatis 1
+with the argument
+.Qq ssh :
+.Pp
+.Dl $ apropos \-\- \-i 'Nm~[[:<:]]ssh[[:>:]]'
+d307 1
+a307 8
+.Sh HISTORY
+An
+.Nm
+utility first appeared in
+.Bx 2 .
+It was rewritten from scratch for
+.Ox 5.1 .
+.Pp
+a308 22
+.Fl M
+option and the
+.Ev MANPATH
+variable first appeared in
+.Bx 4.3 ;
+.Fl m
+in
+.Bx 4.3 Reno ;
+.Fl C
+in
+.Bx 4.4 Lite1 ;
+and
+.Fl S
+and
+.Fl s
+in
+.Ox 4.5 .
+.Sh AUTHORS
+.An -nosplit
+.An Bill Joy
+wrote the original
+.Bx
+d310 1
+a310 2
+in February 1979.
+The current version was written by
+@
+
+
+1.15
+log
+@Use the traditional name "whatis.db" for the mandocdb(8) databases.
+Requested by deraadt@@, ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.14 2011/12/24 22:37:16 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 24 2011 $
+d39 14
+a142 12
+By default,
+.Nm
+searches for
+.Xr mandocdb 8
+databases in the default paths stipulated by
+.Xr man 1 ,
+parses terms as case-sensitive regular expressions
+.Pq the Li \&~ operator
+over manual names and descriptions
+.Pq the Li \&Nm No and Li \&Nd No macro keys .
+Multiple terms imply pairwise
+.Fl o .
+@
+
+
+1.14
+log
+@Support leading, trailing and double colons in MANPATH to prepend,
+append or insert the man.conf(5) default path; compatible with GNU
+manpath(1), implementation by kristaps@@, heavily tweaked by schwarze@@.
+
+Updates to MANPATH documentation applied to whatis.1, apropos.1, and
+catman.8 also.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.13 2011/12/12 02:00:49 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: December 12 2011 $
+d261 1
+a261 1
+.It Pa mandoc.db
+d265 1
+a265 1
+.It Pa mandoc.index
+@
+
+
+1.13
+log
+@implement -C (alternative config file) for apropos(1) and mandocdb(8),
+including various tweaks to the whatis(8) manual;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.12 2011/11/29 10:59:19 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 29 2011 $
+d242 1
+a242 1
+Colon-separated paths overriding the default list of paths searched for
+d247 11
+@
+
+
+1.12
+log
+@Snip some whitespace from apropos(1) and remove mandoc(1) ref from
+whatis(1) (both apropos/whatis aren't related to mandoc from an
+operator's perspective).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.11 2011/11/29 10:53:42 kristaps Exp $
+d25 1
+d30 1
+a30 1
+.Ar expression...
+d41 6
+d248 15
+@
+
+
+1.11
+log
+@Make `-i' only apply to regular expressions.  For the equality operator
+(and thus the default), always use strcasestr().  Discussed on tech@@
+with schwarze@@.  While here, fix the apropos.c usage() message to be
+consistent with apropos(1) and clean up the EXAMPLES in apropos(1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.10 2011/11/29 00:41:33 kristaps Exp $
+d246 1
+a246 1
+as a substring and regular expression 
+@
+
+
+1.10
+log
+@Add tables of matchable keys into apropos.1.  Ok and with feedback by
+schwarze@@.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.9 2011/11/26 22:38:11 schwarze Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 26 2011 $
+d115 1
+a115 3
+Same as
+.Ar term ,
+but
+d117 1
+d119 1
+d128 1
+a128 1
+parses terms as case-insensitive regular expressions
+a240 1
+.\" .Sh FILES
+d246 2
+a247 1
+within the manual name and description:
+d250 1
+d252 3
+a254 4
+Two variants of searching for
+.Qq mdoc ,
+.Qq roff ,
+or
+d256 1
+a256 1
+within manual names and descriptions:
+d258 2
+a259 2
+.Dl $ apropos mdoc roff man
+.Dl $ apropos mdoc \-o roff \-o man
+d267 1
+a267 7
+.Dl $ apropos \-s 3 \(dqVa~^optind$\(dq -a \(dqVa~^optarg$\(dq
+.Pp
+Search for all manuals referencing
+.Qq POSIX
+in any letter case:
+.Pp
+.Dl $ apropos \-\- \-i posix
+d270 2
+a271 2
+.Xr mandoc 1 ,
+.Xr re_format 7
+@
+
+
+1.9
+log
+@Sync to OpenBSD, mostly gratuitous and whitespace differences,
+but a few serious things as well:
+* -M overrides MANPATH
+* -m prepends to the path
+* put back database close calls that got lost in mandocdb
+* missing sys/types.h in manpath.c, needed for size_t
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.8 2011/11/23 10:09:30 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 23 2011 $
+d100 1
+a100 1
+.Li key
+d104 1
+a104 1
+.Li val
+d106 3
+d128 1
+a128 1
+parses terms as case-sensitive regular expressions
+d131 1
+a131 1
+.Pq the Li \&Nm No and Li \&Nd No macros .
+d157 75
+@
+
+
+1.8
+log
+@Fix whitespace in manuals.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.7 2011/11/20 21:36:00 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 20 2011 $
+d47 1
+a47 1
+Append the colon-separated paths to the list of paths searched
+d157 1
+a157 1
+Comma-separated paths overriding the default list of paths searched for
+d160 1
+a160 1
+Takes precedence over
+@
+
+
+1.7
+log
+@Initial support for man.conf/makepath(1).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.6 2011/11/20 16:29:50 kristaps Exp $
+d34 1
+a34 1
+.Xr mandocdb 8 , 
+a73 1
+.Pp
+@
+
+
+1.6
+log
+@Clarify some behaviour, bringing schwarze@@'s patch and mine closer together
+(although I still don't have -M, which is a big piece).
+
+First, the default search path is the cwd.  This will change to use -M
+once I look over that code.
+
+If MANPATH is specified, this replaces the cwd.
+
+Both of these are augmented by -m.
+
+If paths don't exist or don't have databases, they're silently ignored.
+This makes perfect sense: you may be given a superset of possible paths.
+The corner case of no paths (where, say, MANPATH consists of bogus paths
+or the cwd is unreadable) simply means that no paths are searched.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.5 2011/11/20 15:43:14 kristaps Exp $
+d25 1
+d40 6
+d47 1
+a47 1
+Append the colon-separated paths to the default list of paths searched
+d122 1
+a122 1
+searches for a
+d124 2
+a125 1
+database in the current working directory and
+d161 2
+@
+
+
+1.5
+log
+@Integrate a moderately-patched version of schwarze@@'s support for multiple
+directories containing mandocdb(8) databases.  Some changes follow:
+
+ (1) don't support -M yet;
+ (2) fall back to cwd if no prior manpath has been specified;
+ (3) resolve manpages using realpath() to prevent consecutive chdir()'s
+     over relative paths;
+ (4) note where further error-reporting is required;
+ (5) fix leaking memory on exit in several cases.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.4 2011/11/18 07:02:19 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 18 2011 $
+d40 2
+a41 1
+A colon-separated list of paths containing
+d44 1
+a44 1
+Paths may be relative or absolute.
+d115 1
+a115 1
+searches for
+d147 7
+a153 6
+.\" .Sh IMPLEMENTATION NOTES
+.\" Not used in OpenBSD.
+.\" .Sh RETURN VALUES
+.\" For sections 2, 3, & 9 only.
+.\" .Sh ENVIRONMENT
+.\" For sections 1, 6, 7, & 8 only.
+a186 4
+.\" .Sh DIAGNOSTICS
+.\" For sections 1, 4, 6, 7, & 8 only.
+.\" .Sh ERRORS
+.\" For sections 2, 3, & 9 only.
+a190 2
+.\" .Sh STANDARDS
+.\" .Sh HISTORY
+a196 4
+.\" .Sh CAVEATS
+.\" .Sh BUGS
+.\" .Sh SECURITY CONSIDERATIONS
+.\" Not used in OpenBSD.
+@
+
+
+1.4
+log
+@Evaluation with logical subexpressions.  This allows support for arbitrary,
+nested logical subexpressions with AND (-a) and OR (-o) support.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.3 2011/11/09 10:53:48 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: November 9 2011 $
+d22 1
+a22 1
+.Nd search the manual page database
+d25 1
+d32 1
+a32 1
+utility queries a manual page database generated by
+d36 1
+a36 1
+for each file in the database.
+d39 5
+d114 3
+@
+
+
+1.3
+log
+@Change getopt() to be more like schwarze@@'s suggestions.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.2 2011/10/08 12:24:40 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: October 8 2011 $
+a24 1
+.Op Fl I
+d27 1
+a27 2
+.Op Fl t Ar types
+.Ar pattern
+d31 5
+a35 1
+utility queries the manual page database.
+d45 59
+a103 37
+.It Fl I
+Case-insensitive pattern matching.
+.It Fl t Ar types
+Consider only types of keyword match, where
+.Ar types
+is a comma-separated list consisting of the following:
+.Ar name ,
+manual names;
+.Ar func ,
+function names;
+.Ar utility ,
+utility names;
+.Ar incl ,
+include files;
+.Ar var ,
+variable names;
+.Ar stand ,
+standards ;
+.Ar auth ,
+authors;
+.Ar conf ,
+configuration strings;
+.Ar desc ,
+descriptive text;
+.Ar xref ,
+cross-references.
+.Ar path ,
+file pathnames;
+.Ar env ,
+environment variables; or
+.Ar err ,
+error codes.
+Specifying
+.Ar all
+will search for all types.
+.It Ar key
+The search key.
+d108 7
+a114 5
+searches for pattern matches of
+.Ar pattern
+in manual names and descriptions
+and displays results sorted by manual title.
+Output is formatted as
+d148 16
+d165 3
+a167 1
+as a variable name in the library category:
+d169 1
+a169 1
+.Dl $ apropos \-tvar \-s 3 optind
+d171 1
+a171 1
+Search for all manuals referencing the term
+d175 1
+a175 1
+.Dl $ apropos \-tall \-I posix
+@
+
+
+1.2
+log
+@Use `Mt' instead of `Aq' for email address.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.1,v 1.1 2011/10/06 23:00:54 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: October 6 2011 $
+d25 3
+a27 4
+.Op Fl eIr
+.Op Fl a Ar arch
+.Op Fl c Ar cat
+.Op Fl s Ar sort
+d29 1
+a29 1
+.Ar key
+d36 1
+a36 1
+.It Fl a Ar arch
+d38 2
+a39 2
+.It Fl c Ar cat
+Search only for a category (manual section).
+d42 1
+a42 4
+for a listing of categories.
+.It Fl e
+Search only for exact matches (subject to
+.Fl I ) .
+d44 1
+a44 16
+Case-insensitive matching.
+.It Fl r
+Consider
+.Ar key
+to be a POSIX regular expression (subject to
+.Fl I ) .
+See
+.Xr re_format 7
+for a description of regular expressions.
+.It Fl s Ar sort
+Sorting type.
+Accepts
+.Ar cat
+to sort by category and then by title or
+.Ar title
+to sort by title (which is the default).
+d84 2
+a85 2
+searches for substring matches of
+.Ar key
+d87 1
+a87 1
+and displays results by manual title.
+d90 1
+a90 1
+.D1 title(cat) \- description
+d96 2
+a97 2
+.Qq cat
+is the category, and
+d106 1
+a106 1
+.Dl $ man -s cat title
+d110 1
+a110 1
+.Dl $ man -s cat -S arch title
+d125 1
+a125 1
+.Dl $ apropos -tvar -c 3 optind
+d131 1
+a131 1
+.Dl $ apropos -tall -I posix
+@
+
+
+1.1
+log
+@Import apropos from mandoc-tools after inlining all source files
+(originally including extern.h, state.c, and sort.c).  The apropos
+utility interfaces with the databases of mandocdb to provide semantic
+searching capabilities.  It Works For Me, but will need lots of cleanup
+in the coming months.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: apropos.in.1,v 1.8 2011/07/01 13:49:24 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 1 2011 $
+d165 2
+a166 1
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@

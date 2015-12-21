@@ -1,0 +1,499 @@
+head	1.12;
+access;
+symbols
+	VERSION_1_9_5:1.12
+	VERSION_1_8_5:1.12
+	VERSION_1_8_1:1.12
+	VERSION_1_7_16:1.12
+	VERSION_1_7_15:1.12
+	OPENBSD_CHECKIN:1.12
+	VERSION_1_6_5:1.11
+	VERSION_1_6_2:1.11
+	VERSION_1_5_3:1.11
+	VERSION_1_5_1:1.10
+	VERSION_1_4_6:1.8
+	VERSION_1_4_5:1.8
+	VERSION_1_4_4:1.8
+	VERSION_1_4_2:1.7
+	VERSION_1_3_15:1.6
+	VERSION_1_3_13:1.6
+	VERSION_1_3_11:1.6
+	VERSION_1_3_10:1.6
+	VERSION_1_3_9:1.6
+	VERSION_1_3_8:1.6
+	VERSION_1_3_6:1.6
+	VERSION_1_3_5:1.6
+	VERSION_1_2_0:1.5
+	VERSION_1_1_0:1.4;
+locks; strict;
+comment	@ * @;
+
+
+1.12
+date	2009.03.23.14.22.11;	author kristaps;	state dead;
+branches;
+next	1.11;
+
+1.11
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.03.11.00.39.58;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.03.10.10.20.03;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.03.08.20.29.45;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.03.08.11.41.22;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.02.23.12.45.19;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.01.20.13.44.05;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.01.05.17.57.07;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.12.23.05.30.49;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.15.02.23.12;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.15.01.54.58;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.12
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@@
+
+
+1.11
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@a0 175
+/* $Id: hash.c,v 1.10 2009/03/11 00:39:58 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <assert.h>
+#include <ctype.h>
+#include <err.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "private.h"
+
+/*
+ * Routines for the perfect-hash hashtable used by the parser to look up
+ * tokens by their string-ified names (`.Fl' -> MDOC_Fl).  The
+ * allocation penalty for this is 27 * 26 * sizeof(ptr). 
+ */
+
+void
+mdoc_tokhash_free(void *htab)
+{
+
+	free(htab);
+}
+
+
+void *
+mdoc_tokhash_alloc(void)
+{
+	int		  i, major, minor, ind;
+	const void	**htab;
+
+	htab = calloc(27 * 26 * 3, sizeof(struct mdoc_macro *));
+	if (NULL == htab) 
+		err(1, "calloc");
+
+	for (i = 1; i < MDOC_MAX; i++) {
+		major = mdoc_macronames[i][0];
+		assert((major >= 65 && major <= 90) ||
+				major == 37);
+
+		if (major == 37) 
+			major = 0;
+		else
+			major -= 64;
+
+		minor = mdoc_macronames[i][1];
+		assert((minor >= 65 && minor <= 90) ||
+				(minor == 49) ||
+				(minor >= 97 && minor <= 122));
+
+		if (minor == 49)
+			minor = 0;
+		else if (minor <= 90)
+			minor -= 65;
+		else 
+			minor -= 97;
+
+		assert(major >= 0 && major < 27);
+		assert(minor >= 0 && minor < 26);
+
+		ind = (major * 27 * 3) + (minor * 3);
+
+		if (NULL == htab[ind]) {
+			htab[ind] = &mdoc_macros[i];
+			continue;
+		}
+
+		if (NULL == htab[++ind]) {
+			htab[ind] = &mdoc_macros[i];
+			continue;
+		}
+
+		assert(NULL == htab[++ind]);
+		htab[ind] = &mdoc_macros[i];
+	}
+
+	return((void *)htab);
+}
+
+
+int
+mdoc_tokhash_find(const void *arg, const char *tmp)
+{
+	int		  major, minor, ind, slot;
+	const void	**htab;
+
+	htab = /* LINTED */
+		(const void **)arg;
+
+	if (0 == tmp[0] || 0 == tmp[1])
+		return(MDOC_MAX);
+	if (tmp[2] && tmp[3])
+		return(MDOC_MAX);
+
+	if ( ! (tmp[0] == 37 || (tmp[0] >= 65 && tmp[0] <= 90)))
+		return(MDOC_MAX);
+
+	if ( ! ((tmp[1] >= 65 && tmp[1] <= 90) ||
+				(tmp[1] == 49) ||
+				(tmp[1] >= 97 && tmp[1] <= 122)))
+		return(MDOC_MAX);
+
+	if (tmp[0] == 37)
+		major = 0;
+	else
+		major = tmp[0] - 64;
+
+	if (tmp[1] == 49)
+		minor = 0;
+	else if (tmp[1] <= 90)
+		minor = tmp[1] - 65;
+	else
+		minor = tmp[1] - 97;
+
+	ind = (major * 27 * 3) + (minor * 3);
+	if (ind < 0 || ind >= (27 * 26 * 3))
+		return(MDOC_MAX);
+
+	if (htab[ind]) {
+		slot = htab[ind] - /* LINTED */
+			(void *)mdoc_macros;
+		assert(0 == (size_t)slot % sizeof(struct mdoc_macro));
+		slot /= sizeof(struct mdoc_macro);
+		if (mdoc_macronames[slot][0] == tmp[0] && 
+				mdoc_macronames[slot][1] == tmp[1] && 
+				(0 == tmp[2] ||
+				 mdoc_macronames[slot][2] == tmp[2]))
+			return(slot);
+		ind++;
+	}
+
+	if (htab[ind]) {
+		slot = htab[ind] - /* LINTED */
+			(void *)mdoc_macros;
+		assert(0 == (size_t)slot % sizeof(struct mdoc_macro));
+		slot /= sizeof(struct mdoc_macro);
+		if (mdoc_macronames[slot][0] == tmp[0] && 
+				mdoc_macronames[slot][1] == tmp[1] && 
+				(0 == tmp[2] ||
+				 mdoc_macronames[slot][2] == tmp[2]))
+			return(slot);
+		ind++;
+	}
+
+	if (NULL == htab[ind]) 
+		return(MDOC_MAX);
+	slot = htab[ind] - /* LINTED */
+		(void *)mdoc_macros;
+	assert(0 == (size_t)slot % sizeof(struct mdoc_macro));
+	slot /= sizeof(struct mdoc_macro);
+	if (mdoc_macronames[slot][0] == tmp[0] && 
+			mdoc_macronames[slot][1] == tmp[1] && 
+			(0 == tmp[2] ||
+			 mdoc_macronames[slot][2] == tmp[2]))
+		return(slot);
+
+	return(MDOC_MAX);
+}
+
+@
+
+
+1.10
+log
+@Expanded perfect htab to use 27 * 26 * 3 space.
+Added Brq, Bro and Brc macros.
+Added lbrace and rbrace to special characters.
+Fixed spacing in braces.
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.9 2009/03/10 10:20:03 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.9
+log
+@Fixed hash lookup regression.
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.8 2009/03/08 20:29:45 kristaps Exp $ */
+d48 1
+a48 1
+	htab = calloc(27 * 26, sizeof(struct mdoc_macro *));
+d77 1
+a77 1
+		ind = (major * 27) + minor;
+d79 11
+a89 1
+		assert(NULL == htab[ind]);
+d131 2
+a132 2
+	ind = (major * 27) + minor;
+	if (ind < 0 || ind >= (27 * 26))
+d135 27
+a161 1
+	if (NULL == htab[ind])
+a162 1
+
+d167 5
+d173 1
+a173 8
+	if (mdoc_macronames[slot][0] != tmp[0])
+		return(MDOC_MAX);
+	if (mdoc_macronames[slot][1] != tmp[1])
+		return(MDOC_MAX);
+	if (tmp[2] && mdoc_macronames[slot][2] != tmp[2])
+		return(MDOC_MAX);
+
+	return(slot);
+@
+
+
+1.8
+log
+@Small speed-ups in hash lookup.
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.7 2009/03/08 11:41:22 kristaps Exp $ */
+d133 6
+a138 2
+	if (0 == tmp[2])
+		return(slot);
+d140 1
+a140 2
+	assert(0 == tmp[3]);
+	return(tmp[2] == mdoc_macronames[slot][2] ? slot : MDOC_MAX);
+@
+
+
+1.7
+log
+@BROKEN CHECK-IN.  Wide-ranging updates.
+Removed libmdoc internal argv limit (all dynamic).
+Removed "data" union in mdoc_node (to be selectively re-added).
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.6 2009/02/23 12:45:19 kristaps Exp $ */
+d98 2
+d133 2
+a134 4
+	/* 
+	 * FIXME: is this necessary, or do we only need to check the
+	 * remaining characters (2+)? 
+	 */
+d136 2
+a137 3
+	if (0 != strcmp(mdoc_macronames[slot], tmp))
+		return(MDOC_MAX);
+	return(slot);
+@
+
+
+1.6
+log
+@More in-file documentation and Linux-isation.
+Moved mdoc_macros table definition into macro.c, where it belongs.
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.5 2009/01/20 13:44:05 kristaps Exp $ */
+d131 5
+@
+
+
+1.5
+log
+@Re-merged old port-building routines.
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.4 2009/01/05 17:57:07 kristaps Exp $ */
+d31 1
+a31 1
+ * allocation penalty for this is 27 * 26 * sizeof(ptr).
+a33 1
+
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.3 2008/12/23 05:30:49 kristaps Exp $ */
+d28 6
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.2 2008/12/15 02:23:12 kristaps Exp $ */
+d115 2
+@
+
+
+1.2
+log
+@Linted.
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.1 2008/12/15 01:54:58 kristaps Exp $ */
+d30 1
+a30 1
+mdoc_hash_free(void *htab)
+d38 1
+a38 1
+mdoc_hash_alloc(void)
+d83 1
+a83 1
+mdoc_hash_find(const void *arg, const char *tmp)
+@
+
+
+1.1
+log
+@Purged all old files in favour of new design.  Selective reintegration.
+@
+text
+@d1 1
+a1 1
+/* $Id: roff.c,v 1.64 2008/12/12 10:11:10 kristaps Exp $ */
+d40 1
+a40 1
+	int		  i, major, minor, index;
+d72 1
+a72 1
+		index = (major * 27) + minor;
+d74 2
+a75 2
+		assert(NULL == htab[index]);
+		htab[index] = &mdoc_macros[i];
+d85 1
+a85 1
+	int		  major, minor, index, slot;
+d88 2
+a89 1
+	htab = (const void **)arg;
+d114 1
+a114 1
+	index = (major * 27) + minor;
+d116 1
+a116 1
+	if (NULL == htab[index])
+d119 3
+a121 2
+	slot = htab[index] - (void *)mdoc_macros;
+	assert(0 == slot % sizeof(struct mdoc_macro));
+@

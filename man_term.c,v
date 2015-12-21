@@ -1,0 +1,8412 @@
+head	1.186;
+access;
+symbols
+	VERSION_1_13_3:1.169
+	VERSION_1_13_2:1.159
+	VERSION_1_12_4:1.150
+	VERSION_1_13_1:1.149
+	VERSION_1_12_3:1.139
+	VERSION_1_12_2:1.136
+	VERSION_1_12:1.150.0.2
+	VERSION_1_12_1:1.127
+	VERSION_1_12_0:1.121
+	VERSION_1_11_7:1.115
+	VERSION_1_11_6:1.115
+	VERSION_1_11_5:1.115
+	VERSION_1_11_4:1.113
+	VERSION_1_11_3:1.109
+	VERSION_1_11_2:1.108
+	VERSION_1_11_1:1.105
+	VERSION_1_10_10:1.104
+	VERSION_1_10_9:1.94
+	VERSION_1_10_8:1.90
+	VERSION_1_10_7:1.89
+	VERSION_1_10_6:1.85
+	VERSION_1_10_5:1.84
+	VERSION_1_10_5_PREPDF:1.84
+	VERSION_1_10_4:1.79
+	VERSION_1_10_3:1.78
+	VERSION_1_10_2:1.76
+	VERSION_1_10_1:1.73
+	VERSION_1_9_24:1.59
+	VERSION_1_9_25:1.63
+	VERSION_1_9_23:1.59
+	VERSION_1_9_22:1.59
+	VERSION_1_9_21:1.59
+	VERSION_1_9_20:1.59
+	VERSION_1_9_19:1.59
+	VERSION_1_9_18:1.59
+	VERSION_1_9_17:1.59
+	VERSION_1_9_16:1.56
+	VERSION_1_9_15:1.55
+	VERSION_1_9_15-pre2:1.55
+	VERSION_1_9_15-pre1:1.54
+	VERSION_1_9_14:1.54
+	VERSION_1_9_13:1.47
+	VERSION_1_9_12:1.47
+	VERSION_1_9_11:1.45
+	VERSION_1_9_10:1.45
+	VERSION_1_9_9:1.41
+	VERSION_1_9_8:1.35
+	VERSION_1_9_7:1.35
+	VERSION_1_9_6:1.31
+	VERSION_1_9_5:1.31
+	VERSION_1_9_2:1.29
+	VERSION_1_9_1:1.28
+	VERSION_1_9_0:1.24
+	VERSION_1_8_5:1.17
+	VERSION_1_8_4:1.17
+	VERSION_1_8_3:1.16
+	VERSION_1_8_2:1.16
+	VERSION_1_8_1:1.16
+	VERSION_1_8_0:1.16
+	VERSION_1_7_24:1.16
+	VERSION_1_7_23:1.16
+	VERSION_1_7_22:1.16
+	VERSION_1_7_21:1.16
+	VERSION_1_7_20:1.16
+	VERSION_1_7_19:1.14
+	VERSION_1_7_17:1.12
+	VERSION_1_7_16:1.12
+	VERSION_1_7_15:1.12
+	VERSION_1_7_14:1.12
+	VERSION_1_7_13:1.8
+	VERSION_1_7_12:1.7
+	OPENBSD_CHECKIN:1.7
+	VERSION_1_7_10:1.7
+	VERSION_1_7_5:1.3;
+locks; strict;
+comment	@ * @;
+
+
+1.186
+date	2015.10.12.00.08.15;	author schwarze;	state Exp;
+branches;
+next	1.185;
+
+1.185
+date	2015.10.06.18.32.19;	author schwarze;	state Exp;
+branches;
+next	1.184;
+
+1.184
+date	2015.09.21.13.25.00;	author schwarze;	state Exp;
+branches;
+next	1.183;
+
+1.183
+date	2015.04.19.19.44.21;	author schwarze;	state Exp;
+branches;
+next	1.182;
+
+1.182
+date	2015.04.19.14.00.19;	author schwarze;	state Exp;
+branches;
+next	1.181;
+
+1.181
+date	2015.04.18.17.53.21;	author schwarze;	state Exp;
+branches;
+next	1.180;
+
+1.180
+date	2015.04.18.16.06.40;	author schwarze;	state Exp;
+branches;
+next	1.179;
+
+1.179
+date	2015.04.06.22.06.23;	author schwarze;	state Exp;
+branches;
+next	1.178;
+
+1.178
+date	2015.04.06.14.59.21;	author schwarze;	state Exp;
+branches;
+next	1.177;
+
+1.177
+date	2015.04.06.13.35.08;	author schwarze;	state Exp;
+branches;
+next	1.176;
+
+1.176
+date	2015.04.04.18.52.51;	author schwarze;	state Exp;
+branches;
+next	1.175;
+
+1.175
+date	2015.04.04.17.47.18;	author schwarze;	state Exp;
+branches;
+next	1.174;
+
+1.174
+date	2015.04.04.11.44.43;	author schwarze;	state Exp;
+branches;
+next	1.173;
+
+1.173
+date	2015.04.02.23.48.19;	author schwarze;	state Exp;
+branches;
+next	1.172;
+
+1.172
+date	2015.04.02.22.48.17;	author schwarze;	state Exp;
+branches;
+next	1.171;
+
+1.171
+date	2015.04.02.21.36.50;	author schwarze;	state Exp;
+branches;
+next	1.170;
+
+1.170
+date	2015.03.15.16.53.41;	author schwarze;	state Exp;
+branches;
+next	1.169;
+
+1.169
+date	2015.03.06.15.48.52;	author schwarze;	state Exp;
+branches;
+next	1.168;
+
+1.168
+date	2015.01.30.22.04.44;	author schwarze;	state Exp;
+branches;
+next	1.167;
+
+1.167
+date	2015.01.30.17.32.16;	author schwarze;	state Exp;
+branches;
+next	1.166;
+
+1.166
+date	2015.01.24.02.41.49;	author schwarze;	state Exp;
+branches;
+next	1.165;
+
+1.165
+date	2014.12.24.18.04.10;	author schwarze;	state Exp;
+branches;
+next	1.164;
+
+1.164
+date	2014.12.24.09.58.35;	author schwarze;	state Exp;
+branches;
+next	1.163;
+
+1.163
+date	2014.12.23.13.48.57;	author schwarze;	state Exp;
+branches;
+next	1.162;
+
+1.162
+date	2014.12.23.09.31.46;	author schwarze;	state Exp;
+branches;
+next	1.161;
+
+1.161
+date	2014.12.23.08.15.53;	author schwarze;	state Exp;
+branches;
+next	1.160;
+
+1.160
+date	2014.12.23.01.57.35;	author schwarze;	state Exp;
+branches;
+next	1.159;
+
+1.159
+date	2014.12.04.02.05.42;	author schwarze;	state Exp;
+branches;
+next	1.158;
+
+1.158
+date	2014.12.04.01.33.42;	author schwarze;	state Exp;
+branches;
+next	1.157;
+
+1.157
+date	2014.12.02.10.08.06;	author schwarze;	state Exp;
+branches;
+next	1.156;
+
+1.156
+date	2014.11.21.01.52.53;	author schwarze;	state Exp;
+branches;
+next	1.155;
+
+1.155
+date	2014.10.28.17.36.19;	author schwarze;	state Exp;
+branches;
+next	1.154;
+
+1.154
+date	2014.10.20.15.50.24;	author schwarze;	state Exp;
+branches;
+next	1.153;
+
+1.153
+date	2014.10.20.02.47.09;	author schwarze;	state Exp;
+branches;
+next	1.152;
+
+1.152
+date	2014.10.20.02.33.06;	author schwarze;	state Exp;
+branches;
+next	1.151;
+
+1.151
+date	2014.09.03.05.22.45;	author schwarze;	state Exp;
+branches;
+next	1.150;
+
+1.150
+date	2014.08.10.23.54.41;	author schwarze;	state Exp;
+branches;
+next	1.149;
+
+1.149
+date	2014.06.20.23.02.31;	author schwarze;	state Exp;
+branches;
+next	1.148;
+
+1.148
+date	2014.04.23.16.08.33;	author schwarze;	state Exp;
+branches;
+next	1.147;
+
+1.147
+date	2014.04.20.20.18.12;	author schwarze;	state Exp;
+branches;
+next	1.146;
+
+1.146
+date	2014.04.20.16.46.04;	author schwarze;	state Exp;
+branches;
+next	1.145;
+
+1.145
+date	2014.04.08.07.13.11;	author schwarze;	state Exp;
+branches;
+next	1.144;
+
+1.144
+date	2014.03.30.21.28.01;	author schwarze;	state Exp;
+branches;
+next	1.143;
+
+1.143
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.142;
+
+1.142
+date	2014.03.08.16.22.04;	author schwarze;	state Exp;
+branches;
+next	1.141;
+
+1.141
+date	2014.03.08.15.50.41;	author schwarze;	state Exp;
+branches;
+next	1.140;
+
+1.140
+date	2014.02.16.12.33.39;	author schwarze;	state Exp;
+branches;
+next	1.139;
+
+1.139
+date	2013.12.22.23.34.13;	author schwarze;	state Exp;
+branches;
+next	1.138;
+
+1.138
+date	2013.11.11.00.37.55;	author schwarze;	state Exp;
+branches;
+next	1.137;
+
+1.137
+date	2013.10.17.20.54.58;	author schwarze;	state Exp;
+branches;
+next	1.136;
+
+1.136
+date	2013.01.05.22.19.12;	author schwarze;	state Exp;
+branches;
+next	1.135;
+
+1.135
+date	2012.11.17.00.26.33;	author schwarze;	state Exp;
+branches;
+next	1.134;
+
+1.134
+date	2012.07.29.12.35.42;	author schwarze;	state Exp;
+branches;
+next	1.133;
+
+1.133
+date	2012.07.16.21.59.40;	author schwarze;	state Exp;
+branches;
+next	1.132;
+
+1.132
+date	2012.07.14.10.47.07;	author schwarze;	state Exp;
+branches;
+next	1.131;
+
+1.131
+date	2012.07.13.14.19.49;	author schwarze;	state Exp;
+branches;
+next	1.130;
+
+1.130
+date	2012.07.10.19.54.11;	author schwarze;	state Exp;
+branches;
+next	1.129;
+
+1.129
+date	2012.06.02.20.16.23;	author schwarze;	state Exp;
+branches;
+next	1.128;
+
+1.128
+date	2012.05.27.17.39.28;	author schwarze;	state Exp;
+branches;
+next	1.127;
+
+1.127
+date	2012.01.03.15.16.24;	author kristaps;	state Exp;
+branches;
+next	1.126;
+
+1.126
+date	2011.12.04.23.10.52;	author schwarze;	state Exp;
+branches;
+next	1.125;
+
+1.125
+date	2011.12.04.00.44.12;	author schwarze;	state Exp;
+branches;
+next	1.124;
+
+1.124
+date	2011.11.18.17.04.06;	author joerg;	state Exp;
+branches;
+next	1.123;
+
+1.123
+date	2011.11.13.15.33.41;	author schwarze;	state Exp;
+branches;
+next	1.122;
+
+1.122
+date	2011.11.13.13.15.14;	author schwarze;	state Exp;
+branches;
+next	1.121;
+
+1.121
+date	2011.09.21.09.57.13;	author schwarze;	state Exp;
+branches;
+next	1.120;
+
+1.120
+date	2011.09.20.14.20.48;	author schwarze;	state Exp;
+branches;
+next	1.119;
+
+1.119
+date	2011.09.20.13.13.23;	author schwarze;	state Exp;
+branches;
+next	1.118;
+
+1.118
+date	2011.09.20.09.02.23;	author schwarze;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2011.09.19.22.36.16;	author schwarze;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2011.09.18.21.08.34;	author schwarze;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2011.07.22.10.50.46;	author kristaps;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2011.07.21.11.34.53;	author kristaps;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2011.07.03.22.57.32;	author kristaps;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2011.06.29.15.38.09;	author kristaps;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2011.06.18.17.58.48;	author kristaps;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2011.06.18.17.36.52;	author kristaps;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2011.05.17.14.38.34;	author kristaps;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2011.04.30.22.14.42;	author kristaps;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2011.04.30.22.14.02;	author kristaps;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2011.04.29.22.18.12;	author kristaps;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2011.03.22.10.13.01;	author kristaps;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2011.03.07.01.35.51;	author schwarze;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2011.02.09.09.52.47;	author kristaps;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2011.02.06.21.44.36;	author kristaps;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2011.01.25.12.35.09;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2011.01.23.14.54.21;	author schwarze;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2011.01.17.00.21.29;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2011.01.16.20.12.45;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2011.01.12.15.23.25;	author kristaps;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2011.01.12.10.43.22;	author kristaps;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2011.01.11.00.39.00;	author kristaps;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2011.01.04.01.23.18;	author schwarze;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2011.01.03.15.30.25;	author kristaps;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2011.01.02.12.21.07;	author kristaps;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2011.01.01.12.59.17;	author kristaps;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2010.12.08.10.58.22;	author kristaps;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2010.12.06.15.31.19;	author kristaps;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2010.12.06.14.04.11;	author kristaps;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2010.12.06.13.53.07;	author kristaps;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2010.12.05.16.14.16;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2010.09.15.14.36.16;	author kristaps;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2010.07.23.13.22.35;	author kristaps;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2010.07.22.23.03.15;	author kristaps;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2010.07.22.13.47.50;	author kristaps;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2010.07.22.13.36.25;	author kristaps;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2010.07.13.23.53.20;	author schwarze;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2010.07.07.15.04.54;	author kristaps;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2010.06.26.15.36.37;	author kristaps;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2010.06.25.18.53.14;	author kristaps;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2010.06.19.20.46.28;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2010.06.10.23.24.37;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2010.06.09.08.07.13;	author kristaps;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2010.06.07.20.57.09;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2010.05.26.14.03.54;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2010.05.17.22.11.42;	author kristaps;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2010.05.17.10.50.32;	author joerg;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2010.05.17.10.26.49;	author joerg;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2010.05.15.22.44.04;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2010.05.15.20.51.40;	author kristaps;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2010.05.15.17.25.21;	author joerg;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2010.05.15.16.18.23;	author joerg;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2010.05.15.15.54.39;	author kristaps;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2010.05.12.16.46.28;	author kristaps;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2010.05.10.08.31.41;	author kristaps;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2010.05.10.08.27.09;	author kristaps;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2010.05.10.08.05.17;	author kristaps;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2010.03.24.20.10.53;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2010.03.23.12.42.22;	author kristaps;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2010.03.23.11.30.48;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.03.22.05.59.32;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.01.01.17.14.28;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2009.11.12.08.21.05;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2009.11.12.08.00.21;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2009.11.12.05.50.12;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2009.11.10.12.03.30;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2009.11.10.11.45.57;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2009.11.05.08.39.36;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2009.11.05.08.37.12;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2009.10.30.18.53.08;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2009.10.27.08.49.44;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2009.10.26.04.09.45;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2009.10.24.05.45.05;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2009.10.22.18.55.32;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2009.10.21.03.31.49;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2009.10.18.19.17.14;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2009.10.18.19.03.37;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2009.10.18.13.34.16;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2009.10.18.11.52.18;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2009.10.18.11.14.04;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2009.10.13.10.57.25;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.10.08.23.00.15;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.10.07.12.19.39;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.10.04.15.24.54;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.10.03.19.57.53;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.09.16.09.41.24;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.09.15.08.16.20;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.08.22.09.10.38;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.08.21.08.41.05;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.08.20.11.51.07;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.08.19.11.30.40;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.08.19.09.14.50;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.08.18.08.48.30;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.08.17.11.03.07;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.08.13.12.54.52;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.08.13.12.31.50;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.08.13.12.15.58;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.08.13.11.45.29;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.08.10.10.09.51;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.07.24.20.22.24;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.06.18.20.46.19;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.06.18.19.54.04;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.06.16.19.55.28;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.06.15.20.26.47;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.06.11.13.18.42;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.06.11.12.07.49;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.06.11.07.26.35;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.04.05.16.34.22;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.04.02.06.51.44;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.27.14.56.15;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.26.16.23.22;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.26.15.19.44;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.26.14.44.41;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.26.14.38.11;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.186
+log
+@To make the code more readable, delete 283 /* FALLTHROUGH */ comments
+that were right between two adjacent case statement.  Keep only
+those 24 where the first case actually executes some code before
+falling through to the next case.
+@
+text
+@/*	$Id: man_term.c,v 1.185 2015/10/06 18:32:19 schwarze Exp $ */
+/*
+ * Copyright (c) 2008-2012 Kristaps Dzonsons <kristaps@@bsd.lv>
+ * Copyright (c) 2010-2015 Ingo Schwarze <schwarze@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIM ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+#include "config.h"
+
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "mandoc_aux.h"
+#include "mandoc.h"
+#include "roff.h"
+#include "man.h"
+#include "out.h"
+#include "term.h"
+#include "main.h"
+
+#define	MAXMARGINS	  64 /* maximum number of indented scopes */
+
+struct	mtermp {
+	int		  fl;
+#define	MANT_LITERAL	 (1 << 0)
+	int		  lmargin[MAXMARGINS]; /* margins (incl. vis. page) */
+	int		  lmargincur; /* index of current margin */
+	int		  lmarginsz; /* actual number of nested margins */
+	size_t		  offset; /* default offset to visible page */
+	int		  pardist; /* vert. space before par., unit: [v] */
+};
+
+#define	DECL_ARGS	  struct termp *p, \
+			  struct mtermp *mt, \
+			  struct roff_node *n, \
+			  const struct roff_meta *meta
+
+struct	termact {
+	int		(*pre)(DECL_ARGS);
+	void		(*post)(DECL_ARGS);
+	int		  flags;
+#define	MAN_NOTEXT	 (1 << 0) /* Never has text children. */
+};
+
+static	void		  print_man_nodelist(DECL_ARGS);
+static	void		  print_man_node(DECL_ARGS);
+static	void		  print_man_head(struct termp *,
+				const struct roff_meta *);
+static	void		  print_man_foot(struct termp *,
+				const struct roff_meta *);
+static	void		  print_bvspace(struct termp *,
+				const struct roff_node *, int);
+
+static	int		  pre_B(DECL_ARGS);
+static	int		  pre_HP(DECL_ARGS);
+static	int		  pre_I(DECL_ARGS);
+static	int		  pre_IP(DECL_ARGS);
+static	int		  pre_OP(DECL_ARGS);
+static	int		  pre_PD(DECL_ARGS);
+static	int		  pre_PP(DECL_ARGS);
+static	int		  pre_RS(DECL_ARGS);
+static	int		  pre_SH(DECL_ARGS);
+static	int		  pre_SS(DECL_ARGS);
+static	int		  pre_TP(DECL_ARGS);
+static	int		  pre_UR(DECL_ARGS);
+static	int		  pre_alternate(DECL_ARGS);
+static	int		  pre_ft(DECL_ARGS);
+static	int		  pre_ign(DECL_ARGS);
+static	int		  pre_in(DECL_ARGS);
+static	int		  pre_literal(DECL_ARGS);
+static	int		  pre_ll(DECL_ARGS);
+static	int		  pre_sp(DECL_ARGS);
+
+static	void		  post_IP(DECL_ARGS);
+static	void		  post_HP(DECL_ARGS);
+static	void		  post_RS(DECL_ARGS);
+static	void		  post_SH(DECL_ARGS);
+static	void		  post_SS(DECL_ARGS);
+static	void		  post_TP(DECL_ARGS);
+static	void		  post_UR(DECL_ARGS);
+
+static	const struct termact termacts[MAN_MAX] = {
+	{ pre_sp, NULL, MAN_NOTEXT }, /* br */
+	{ NULL, NULL, 0 }, /* TH */
+	{ pre_SH, post_SH, 0 }, /* SH */
+	{ pre_SS, post_SS, 0 }, /* SS */
+	{ pre_TP, post_TP, 0 }, /* TP */
+	{ pre_PP, NULL, 0 }, /* LP */
+	{ pre_PP, NULL, 0 }, /* PP */
+	{ pre_PP, NULL, 0 }, /* P */
+	{ pre_IP, post_IP, 0 }, /* IP */
+	{ pre_HP, post_HP, 0 }, /* HP */
+	{ NULL, NULL, 0 }, /* SM */
+	{ pre_B, NULL, 0 }, /* SB */
+	{ pre_alternate, NULL, 0 }, /* BI */
+	{ pre_alternate, NULL, 0 }, /* IB */
+	{ pre_alternate, NULL, 0 }, /* BR */
+	{ pre_alternate, NULL, 0 }, /* RB */
+	{ NULL, NULL, 0 }, /* R */
+	{ pre_B, NULL, 0 }, /* B */
+	{ pre_I, NULL, 0 }, /* I */
+	{ pre_alternate, NULL, 0 }, /* IR */
+	{ pre_alternate, NULL, 0 }, /* RI */
+	{ pre_sp, NULL, MAN_NOTEXT }, /* sp */
+	{ pre_literal, NULL, 0 }, /* nf */
+	{ pre_literal, NULL, 0 }, /* fi */
+	{ NULL, NULL, 0 }, /* RE */
+	{ pre_RS, post_RS, 0 }, /* RS */
+	{ pre_ign, NULL, 0 }, /* DT */
+	{ pre_ign, NULL, MAN_NOTEXT }, /* UC */
+	{ pre_PD, NULL, MAN_NOTEXT }, /* PD */
+	{ pre_ign, NULL, 0 }, /* AT */
+	{ pre_in, NULL, MAN_NOTEXT }, /* in */
+	{ pre_ft, NULL, MAN_NOTEXT }, /* ft */
+	{ pre_OP, NULL, 0 }, /* OP */
+	{ pre_literal, NULL, 0 }, /* EX */
+	{ pre_literal, NULL, 0 }, /* EE */
+	{ pre_UR, post_UR, 0 }, /* UR */
+	{ NULL, NULL, 0 }, /* UE */
+	{ pre_ll, NULL, MAN_NOTEXT }, /* ll */
+};
+
+
+void
+terminal_man(void *arg, const struct roff_man *man)
+{
+	struct termp		*p;
+	struct roff_node	*n;
+	struct mtermp		 mt;
+
+	p = (struct termp *)arg;
+	p->overstep = 0;
+	p->rmargin = p->maxrmargin = p->defrmargin;
+	p->tabwidth = term_len(p, 5);
+
+	memset(&mt, 0, sizeof(struct mtermp));
+	mt.lmargin[mt.lmargincur] = term_len(p, p->defindent);
+	mt.offset = term_len(p, p->defindent);
+	mt.pardist = 1;
+
+	n = man->first->child;
+	if (p->synopsisonly) {
+		while (n != NULL) {
+			if (n->tok == MAN_SH &&
+			    n->child->child->type == ROFFT_TEXT &&
+			    !strcmp(n->child->child->string, "SYNOPSIS")) {
+				if (n->child->next->child != NULL)
+					print_man_nodelist(p, &mt,
+					    n->child->next->child,
+					    &man->meta);
+				term_newln(p);
+				break;
+			}
+			n = n->next;
+		}
+	} else {
+		if (p->defindent == 0)
+			p->defindent = 7;
+		term_begin(p, print_man_head, print_man_foot, &man->meta);
+		p->flags |= TERMP_NOSPACE;
+		if (n != NULL)
+			print_man_nodelist(p, &mt, n, &man->meta);
+		term_end(p);
+	}
+}
+
+/*
+ * Printing leading vertical space before a block.
+ * This is used for the paragraph macros.
+ * The rules are pretty simple, since there's very little nesting going
+ * on here.  Basically, if we're the first within another block (SS/SH),
+ * then don't emit vertical space.  If we are (RS), then do.  If not the
+ * first, print it.
+ */
+static void
+print_bvspace(struct termp *p, const struct roff_node *n, int pardist)
+{
+	int	 i;
+
+	term_newln(p);
+
+	if (n->body && n->body->child)
+		if (n->body->child->type == ROFFT_TBL)
+			return;
+
+	if (n->parent->type == ROFFT_ROOT || n->parent->tok != MAN_RS)
+		if (NULL == n->prev)
+			return;
+
+	for (i = 0; i < pardist; i++)
+		term_vspace(p);
+}
+
+
+static int
+pre_ign(DECL_ARGS)
+{
+
+	return 0;
+}
+
+static int
+pre_ll(DECL_ARGS)
+{
+
+	term_setwidth(p, n->nchild ? n->child->string : NULL);
+	return 0;
+}
+
+static int
+pre_I(DECL_ARGS)
+{
+
+	term_fontrepl(p, TERMFONT_UNDER);
+	return 1;
+}
+
+static int
+pre_literal(DECL_ARGS)
+{
+
+	term_newln(p);
+
+	if (MAN_nf == n->tok || MAN_EX == n->tok)
+		mt->fl |= MANT_LITERAL;
+	else
+		mt->fl &= ~MANT_LITERAL;
+
+	/*
+	 * Unlike .IP and .TP, .HP does not have a HEAD.
+	 * So in case a second call to term_flushln() is needed,
+	 * indentation has to be set up explicitly.
+	 */
+	if (MAN_HP == n->parent->tok && p->rmargin < p->maxrmargin) {
+		p->offset = p->rmargin;
+		p->rmargin = p->maxrmargin;
+		p->trailspace = 0;
+		p->flags &= ~(TERMP_NOBREAK | TERMP_BRIND);
+		p->flags |= TERMP_NOSPACE;
+	}
+
+	return 0;
+}
+
+static int
+pre_PD(DECL_ARGS)
+{
+	struct roffsu	 su;
+
+	n = n->child;
+	if (n == NULL) {
+		mt->pardist = 1;
+		return 0;
+	}
+	assert(n->type == ROFFT_TEXT);
+	if (a2roffsu(n->string, &su, SCALE_VS))
+		mt->pardist = term_vspan(p, &su);
+	return 0;
+}
+
+static int
+pre_alternate(DECL_ARGS)
+{
+	enum termfont		 font[2];
+	struct roff_node	*nn;
+	int			 savelit, i;
+
+	switch (n->tok) {
+	case MAN_RB:
+		font[0] = TERMFONT_NONE;
+		font[1] = TERMFONT_BOLD;
+		break;
+	case MAN_RI:
+		font[0] = TERMFONT_NONE;
+		font[1] = TERMFONT_UNDER;
+		break;
+	case MAN_BR:
+		font[0] = TERMFONT_BOLD;
+		font[1] = TERMFONT_NONE;
+		break;
+	case MAN_BI:
+		font[0] = TERMFONT_BOLD;
+		font[1] = TERMFONT_UNDER;
+		break;
+	case MAN_IR:
+		font[0] = TERMFONT_UNDER;
+		font[1] = TERMFONT_NONE;
+		break;
+	case MAN_IB:
+		font[0] = TERMFONT_UNDER;
+		font[1] = TERMFONT_BOLD;
+		break;
+	default:
+		abort();
+	}
+
+	savelit = MANT_LITERAL & mt->fl;
+	mt->fl &= ~MANT_LITERAL;
+
+	for (i = 0, nn = n->child; nn; nn = nn->next, i = 1 - i) {
+		term_fontrepl(p, font[i]);
+		if (savelit && NULL == nn->next)
+			mt->fl |= MANT_LITERAL;
+		assert(nn->type == ROFFT_TEXT);
+		term_word(p, nn->string);
+		if (nn->flags & MAN_EOS)
+                	p->flags |= TERMP_SENTENCE;
+		if (nn->next)
+			p->flags |= TERMP_NOSPACE;
+	}
+
+	return 0;
+}
+
+static int
+pre_B(DECL_ARGS)
+{
+
+	term_fontrepl(p, TERMFONT_BOLD);
+	return 1;
+}
+
+static int
+pre_OP(DECL_ARGS)
+{
+
+	term_word(p, "[");
+	p->flags |= TERMP_NOSPACE;
+
+	if (NULL != (n = n->child)) {
+		term_fontrepl(p, TERMFONT_BOLD);
+		term_word(p, n->string);
+	}
+	if (NULL != n && NULL != n->next) {
+		term_fontrepl(p, TERMFONT_UNDER);
+		term_word(p, n->next->string);
+	}
+
+	term_fontrepl(p, TERMFONT_NONE);
+	p->flags |= TERMP_NOSPACE;
+	term_word(p, "]");
+	return 0;
+}
+
+static int
+pre_ft(DECL_ARGS)
+{
+	const char	*cp;
+
+	if (NULL == n->child) {
+		term_fontlast(p);
+		return 0;
+	}
+
+	cp = n->child->string;
+	switch (*cp) {
+	case '4':
+	case '3':
+	case 'B':
+		term_fontrepl(p, TERMFONT_BOLD);
+		break;
+	case '2':
+	case 'I':
+		term_fontrepl(p, TERMFONT_UNDER);
+		break;
+	case 'P':
+		term_fontlast(p);
+		break;
+	case '1':
+	case 'C':
+	case 'R':
+		term_fontrepl(p, TERMFONT_NONE);
+		break;
+	default:
+		break;
+	}
+	return 0;
+}
+
+static int
+pre_in(DECL_ARGS)
+{
+	struct roffsu	 su;
+	const char	*cp;
+	size_t		 v;
+	int		 less;
+
+	term_newln(p);
+
+	if (NULL == n->child) {
+		p->offset = mt->offset;
+		return 0;
+	}
+
+	cp = n->child->string;
+	less = 0;
+
+	if ('-' == *cp)
+		less = -1;
+	else if ('+' == *cp)
+		less = 1;
+	else
+		cp--;
+
+	if ( ! a2roffsu(++cp, &su, SCALE_EN))
+		return 0;
+
+	v = (term_hspan(p, &su) + 11) / 24;
+
+	if (less < 0)
+		p->offset -= p->offset > v ? v : p->offset;
+	else if (less > 0)
+		p->offset += v;
+	else
+		p->offset = v;
+	if (p->offset > SHRT_MAX)
+		p->offset = term_len(p, p->defindent);
+
+	return 0;
+}
+
+static int
+pre_sp(DECL_ARGS)
+{
+	struct roffsu	 su;
+	int		 i, len;
+
+	if ((NULL == n->prev && n->parent)) {
+		switch (n->parent->tok) {
+		case MAN_SH:
+		case MAN_SS:
+		case MAN_PP:
+		case MAN_LP:
+		case MAN_P:
+			return 0;
+		default:
+			break;
+		}
+	}
+
+	if (n->tok == MAN_br)
+		len = 0;
+	else if (n->child == NULL)
+		len = 1;
+	else {
+		if ( ! a2roffsu(n->child->string, &su, SCALE_VS))
+			su.scale = 1.0;
+		len = term_vspan(p, &su);
+	}
+
+	if (len == 0)
+		term_newln(p);
+	else if (len < 0)
+		p->skipvsp -= len;
+	else
+		for (i = 0; i < len; i++)
+			term_vspace(p);
+
+	/*
+	 * Handle an explicit break request in the same way
+	 * as an overflowing line.
+	 */
+
+	if (p->flags & TERMP_BRIND) {
+		p->offset = p->rmargin;
+		p->rmargin = p->maxrmargin;
+		p->flags &= ~(TERMP_NOBREAK | TERMP_BRIND);
+	}
+
+	return 0;
+}
+
+static int
+pre_HP(DECL_ARGS)
+{
+	struct roffsu		 su;
+	const struct roff_node	*nn;
+	int			 len;
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		print_bvspace(p, n, mt->pardist);
+		return 1;
+	case ROFFT_BODY:
+		break;
+	default:
+		return 0;
+	}
+
+	if ( ! (MANT_LITERAL & mt->fl)) {
+		p->flags |= TERMP_NOBREAK | TERMP_BRIND;
+		p->trailspace = 2;
+	}
+
+	/* Calculate offset. */
+
+	if ((nn = n->parent->head->child) != NULL &&
+	    a2roffsu(nn->string, &su, SCALE_EN)) {
+		len = term_hspan(p, &su) / 24;
+		if (len < 0 && (size_t)(-len) > mt->offset)
+			len = -mt->offset;
+		else if (len > SHRT_MAX)
+			len = term_len(p, p->defindent);
+		mt->lmargin[mt->lmargincur] = len;
+	} else
+		len = mt->lmargin[mt->lmargincur];
+
+	p->offset = mt->offset;
+	p->rmargin = mt->offset + len;
+	return 1;
+}
+
+static void
+post_HP(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BODY:
+		term_newln(p);
+
+		/*
+		 * Compatibility with a groff bug.
+		 * The .HP macro uses the undocumented .tag request
+		 * which causes a line break and cancels no-space
+		 * mode even if there isn't any output.
+		 */
+
+		if (n->child == NULL)
+			term_vspace(p);
+
+		p->flags &= ~(TERMP_NOBREAK | TERMP_BRIND);
+		p->trailspace = 0;
+		p->offset = mt->offset;
+		p->rmargin = p->maxrmargin;
+		break;
+	default:
+		break;
+	}
+}
+
+static int
+pre_PP(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		mt->lmargin[mt->lmargincur] = term_len(p, p->defindent);
+		print_bvspace(p, n, mt->pardist);
+		break;
+	default:
+		p->offset = mt->offset;
+		break;
+	}
+
+	return n->type != ROFFT_HEAD;
+}
+
+static int
+pre_IP(DECL_ARGS)
+{
+	struct roffsu		 su;
+	const struct roff_node	*nn;
+	int			 len, savelit;
+
+	switch (n->type) {
+	case ROFFT_BODY:
+		p->flags |= TERMP_NOSPACE;
+		break;
+	case ROFFT_HEAD:
+		p->flags |= TERMP_NOBREAK;
+		p->trailspace = 1;
+		break;
+	case ROFFT_BLOCK:
+		print_bvspace(p, n, mt->pardist);
+		/* FALLTHROUGH */
+	default:
+		return 1;
+	}
+
+	/* Calculate the offset from the optional second argument. */
+	if ((nn = n->parent->head->child) != NULL &&
+	    (nn = nn->next) != NULL &&
+	    a2roffsu(nn->string, &su, SCALE_EN)) {
+		len = term_hspan(p, &su) / 24;
+		if (len < 0 && (size_t)(-len) > mt->offset)
+			len = -mt->offset;
+		else if (len > SHRT_MAX)
+			len = term_len(p, p->defindent);
+		mt->lmargin[mt->lmargincur] = len;
+	} else
+		len = mt->lmargin[mt->lmargincur];
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		p->offset = mt->offset;
+		p->rmargin = mt->offset + len;
+
+		savelit = MANT_LITERAL & mt->fl;
+		mt->fl &= ~MANT_LITERAL;
+
+		if (n->child)
+			print_man_node(p, mt, n->child, meta);
+
+		if (savelit)
+			mt->fl |= MANT_LITERAL;
+
+		return 0;
+	case ROFFT_BODY:
+		p->offset = mt->offset + len;
+		p->rmargin = p->maxrmargin;
+		break;
+	default:
+		break;
+	}
+
+	return 1;
+}
+
+static void
+post_IP(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		term_flushln(p);
+		p->flags &= ~TERMP_NOBREAK;
+		p->trailspace = 0;
+		p->rmargin = p->maxrmargin;
+		break;
+	case ROFFT_BODY:
+		term_newln(p);
+		p->offset = mt->offset;
+		break;
+	default:
+		break;
+	}
+}
+
+static int
+pre_TP(DECL_ARGS)
+{
+	struct roffsu		 su;
+	struct roff_node	*nn;
+	int			 len, savelit;
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		p->flags |= TERMP_NOBREAK | TERMP_BRTRSP;
+		p->trailspace = 1;
+		break;
+	case ROFFT_BODY:
+		p->flags |= TERMP_NOSPACE;
+		break;
+	case ROFFT_BLOCK:
+		print_bvspace(p, n, mt->pardist);
+		/* FALLTHROUGH */
+	default:
+		return 1;
+	}
+
+	/* Calculate offset. */
+
+	if ((nn = n->parent->head->child) != NULL &&
+	    nn->string != NULL && ! (MAN_LINE & nn->flags) &&
+	    a2roffsu(nn->string, &su, SCALE_EN)) {
+		len = term_hspan(p, &su) / 24;
+		if (len < 0 && (size_t)(-len) > mt->offset)
+			len = -mt->offset;
+		else if (len > SHRT_MAX)
+			len = term_len(p, p->defindent);
+		mt->lmargin[mt->lmargincur] = len;
+	} else
+		len = mt->lmargin[mt->lmargincur];
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		p->offset = mt->offset;
+		p->rmargin = mt->offset + len;
+
+		savelit = MANT_LITERAL & mt->fl;
+		mt->fl &= ~MANT_LITERAL;
+
+		/* Don't print same-line elements. */
+		nn = n->child;
+		while (NULL != nn && 0 == (MAN_LINE & nn->flags))
+			nn = nn->next;
+
+		while (NULL != nn) {
+			print_man_node(p, mt, nn, meta);
+			nn = nn->next;
+		}
+
+		if (savelit)
+			mt->fl |= MANT_LITERAL;
+		return 0;
+	case ROFFT_BODY:
+		p->offset = mt->offset + len;
+		p->rmargin = p->maxrmargin;
+		p->trailspace = 0;
+		p->flags &= ~(TERMP_NOBREAK | TERMP_BRTRSP);
+		break;
+	default:
+		break;
+	}
+
+	return 1;
+}
+
+static void
+post_TP(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		term_flushln(p);
+		break;
+	case ROFFT_BODY:
+		term_newln(p);
+		p->offset = mt->offset;
+		break;
+	default:
+		break;
+	}
+}
+
+static int
+pre_SS(DECL_ARGS)
+{
+	int	 i;
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		mt->fl &= ~MANT_LITERAL;
+		mt->lmargin[mt->lmargincur] = term_len(p, p->defindent);
+		mt->offset = term_len(p, p->defindent);
+
+		/*
+		 * No vertical space before the first subsection
+		 * and after an empty subsection.
+		 */
+
+		do {
+			n = n->prev;
+		} while (n != NULL && n->tok != TOKEN_NONE &&
+		    termacts[n->tok].flags & MAN_NOTEXT);
+		if (n == NULL || (n->tok == MAN_SS && n->body->child == NULL))
+			break;
+
+		for (i = 0; i < mt->pardist; i++)
+			term_vspace(p);
+		break;
+	case ROFFT_HEAD:
+		term_fontrepl(p, TERMFONT_BOLD);
+		p->offset = term_len(p, 3);
+		p->rmargin = mt->offset;
+		p->trailspace = mt->offset;
+		p->flags |= TERMP_NOBREAK | TERMP_BRIND;
+		break;
+	case ROFFT_BODY:
+		p->offset = mt->offset;
+		p->rmargin = p->maxrmargin;
+		p->trailspace = 0;
+		p->flags &= ~(TERMP_NOBREAK | TERMP_BRIND);
+		break;
+	default:
+		break;
+	}
+
+	return 1;
+}
+
+static void
+post_SS(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		term_newln(p);
+		break;
+	case ROFFT_BODY:
+		term_newln(p);
+		break;
+	default:
+		break;
+	}
+}
+
+static int
+pre_SH(DECL_ARGS)
+{
+	int	 i;
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		mt->fl &= ~MANT_LITERAL;
+		mt->lmargin[mt->lmargincur] = term_len(p, p->defindent);
+		mt->offset = term_len(p, p->defindent);
+
+		/*
+		 * No vertical space before the first section
+		 * and after an empty section.
+		 */
+
+		do {
+			n = n->prev;
+		} while (n != NULL && termacts[n->tok].flags & MAN_NOTEXT);
+		if (n == NULL || (n->tok == MAN_SH && n->body->child == NULL))
+			break;
+
+		for (i = 0; i < mt->pardist; i++)
+			term_vspace(p);
+		break;
+	case ROFFT_HEAD:
+		term_fontrepl(p, TERMFONT_BOLD);
+		p->offset = 0;
+		p->rmargin = mt->offset;
+		p->trailspace = mt->offset;
+		p->flags |= TERMP_NOBREAK | TERMP_BRIND;
+		break;
+	case ROFFT_BODY:
+		p->offset = mt->offset;
+		p->rmargin = p->maxrmargin;
+		p->trailspace = 0;
+		p->flags &= ~(TERMP_NOBREAK | TERMP_BRIND);
+		break;
+	default:
+		break;
+	}
+
+	return 1;
+}
+
+static void
+post_SH(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_HEAD:
+		term_newln(p);
+		break;
+	case ROFFT_BODY:
+		term_newln(p);
+		break;
+	default:
+		break;
+	}
+}
+
+static int
+pre_RS(DECL_ARGS)
+{
+	struct roffsu	 su;
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		term_newln(p);
+		return 1;
+	case ROFFT_HEAD:
+		return 0;
+	default:
+		break;
+	}
+
+	n = n->parent->head;
+	n->aux = SHRT_MAX + 1;
+	if (n->child == NULL)
+		n->aux = mt->lmargin[mt->lmargincur];
+	else if (a2roffsu(n->child->string, &su, SCALE_EN))
+		n->aux = term_hspan(p, &su) / 24;
+	if (n->aux < 0 && (size_t)(-n->aux) > mt->offset)
+		n->aux = -mt->offset;
+	else if (n->aux > SHRT_MAX)
+		n->aux = term_len(p, p->defindent);
+
+	mt->offset += n->aux;
+	p->offset = mt->offset;
+	p->rmargin = p->maxrmargin;
+
+	if (++mt->lmarginsz < MAXMARGINS)
+		mt->lmargincur = mt->lmarginsz;
+
+	mt->lmargin[mt->lmargincur] = term_len(p, p->defindent);
+	return 1;
+}
+
+static void
+post_RS(DECL_ARGS)
+{
+
+	switch (n->type) {
+	case ROFFT_BLOCK:
+		return;
+	case ROFFT_HEAD:
+		return;
+	default:
+		term_newln(p);
+		break;
+	}
+
+	mt->offset -= n->parent->head->aux;
+	p->offset = mt->offset;
+
+	if (--mt->lmarginsz < MAXMARGINS)
+		mt->lmargincur = mt->lmarginsz;
+}
+
+static int
+pre_UR(DECL_ARGS)
+{
+
+	return n->type != ROFFT_HEAD;
+}
+
+static void
+post_UR(DECL_ARGS)
+{
+
+	if (n->type != ROFFT_BLOCK)
+		return;
+
+	term_word(p, "<");
+	p->flags |= TERMP_NOSPACE;
+
+	if (NULL != n->child->child)
+		print_man_node(p, mt, n->child->child, meta);
+
+	p->flags |= TERMP_NOSPACE;
+	term_word(p, ">");
+}
+
+static void
+print_man_node(DECL_ARGS)
+{
+	size_t		 rm, rmax;
+	int		 c;
+
+	switch (n->type) {
+	case ROFFT_TEXT:
+		/*
+		 * If we have a blank line, output a vertical space.
+		 * If we have a space as the first character, break
+		 * before printing the line's data.
+		 */
+		if ('\0' == *n->string) {
+			term_vspace(p);
+			return;
+		} else if (' ' == *n->string && MAN_LINE & n->flags)
+			term_newln(p);
+
+		term_word(p, n->string);
+		goto out;
+
+	case ROFFT_EQN:
+		if ( ! (n->flags & MAN_LINE))
+			p->flags |= TERMP_NOSPACE;
+		term_eqn(p, n->eqn);
+		if (n->next != NULL && ! (n->next->flags & MAN_LINE))
+			p->flags |= TERMP_NOSPACE;
+		return;
+	case ROFFT_TBL:
+		if (p->tbl.cols == NULL)
+			term_vspace(p);
+		term_tbl(p, n->span);
+		return;
+	default:
+		break;
+	}
+
+	if ( ! (MAN_NOTEXT & termacts[n->tok].flags))
+		term_fontrepl(p, TERMFONT_NONE);
+
+	c = 1;
+	if (termacts[n->tok].pre)
+		c = (*termacts[n->tok].pre)(p, mt, n, meta);
+
+	if (c && n->child)
+		print_man_nodelist(p, mt, n->child, meta);
+
+	if (termacts[n->tok].post)
+		(*termacts[n->tok].post)(p, mt, n, meta);
+	if ( ! (MAN_NOTEXT & termacts[n->tok].flags))
+		term_fontrepl(p, TERMFONT_NONE);
+
+out:
+	/*
+	 * If we're in a literal context, make sure that words
+	 * together on the same line stay together.  This is a
+	 * POST-printing call, so we check the NEXT word.  Since
+	 * -man doesn't have nested macros, we don't need to be
+	 * more specific than this.
+	 */
+	if (mt->fl & MANT_LITERAL &&
+	    ! (p->flags & (TERMP_NOBREAK | TERMP_NONEWLINE)) &&
+	    (n->next == NULL || n->next->flags & MAN_LINE)) {
+		rm = p->rmargin;
+		rmax = p->maxrmargin;
+		p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
+		p->flags |= TERMP_NOSPACE;
+		if (n->string != NULL && *n->string != '\0')
+			term_flushln(p);
+		else
+			term_newln(p);
+		if (rm < rmax && n->parent->tok == MAN_HP) {
+			p->offset = rm;
+			p->rmargin = rmax;
+		} else
+			p->rmargin = rm;
+		p->maxrmargin = rmax;
+	}
+	if (MAN_EOS & n->flags)
+		p->flags |= TERMP_SENTENCE;
+}
+
+
+static void
+print_man_nodelist(DECL_ARGS)
+{
+
+	while (n != NULL) {
+		print_man_node(p, mt, n, meta);
+		n = n->next;
+	}
+}
+
+static void
+print_man_foot(struct termp *p, const struct roff_meta *meta)
+{
+	char			*title;
+	size_t			 datelen, titlen;
+
+	assert(meta->title);
+	assert(meta->msec);
+	assert(meta->date);
+
+	term_fontrepl(p, TERMFONT_NONE);
+
+	if (meta->hasbody)
+		term_vspace(p);
+
+	/*
+	 * Temporary, undocumented option to imitate mdoc(7) output.
+	 * In the bottom right corner, use the operating system
+	 * instead of the title.
+	 */
+
+	if ( ! p->mdocstyle) {
+		if (meta->hasbody) {
+			term_vspace(p);
+			term_vspace(p);
+		}
+		mandoc_asprintf(&title, "%s(%s)",
+		    meta->title, meta->msec);
+	} else if (meta->os) {
+		title = mandoc_strdup(meta->os);
+	} else {
+		title = mandoc_strdup("");
+	}
+	datelen = term_strlen(p, meta->date);
+
+	/* Bottom left corner: operating system. */
+
+	p->flags |= TERMP_NOSPACE | TERMP_NOBREAK;
+	p->trailspace = 1;
+	p->offset = 0;
+	p->rmargin = p->maxrmargin > datelen ?
+	    (p->maxrmargin + term_len(p, 1) - datelen) / 2 : 0;
+
+	if (meta->os)
+		term_word(p, meta->os);
+	term_flushln(p);
+
+	/* At the bottom in the middle: manual date. */
+
+	p->offset = p->rmargin;
+	titlen = term_strlen(p, title);
+	p->rmargin = p->maxrmargin > titlen ? p->maxrmargin - titlen : 0;
+	p->flags |= TERMP_NOSPACE;
+
+	term_word(p, meta->date);
+	term_flushln(p);
+
+	/* Bottom right corner: manual title and section. */
+
+	p->flags &= ~TERMP_NOBREAK;
+	p->flags |= TERMP_NOSPACE;
+	p->trailspace = 0;
+	p->offset = p->rmargin;
+	p->rmargin = p->maxrmargin;
+
+	term_word(p, title);
+	term_flushln(p);
+	free(title);
+}
+
+static void
+print_man_head(struct termp *p, const struct roff_meta *meta)
+{
+	const char		*volume;
+	char			*title;
+	size_t			 vollen, titlen;
+
+	assert(meta->title);
+	assert(meta->msec);
+
+	volume = NULL == meta->vol ? "" : meta->vol;
+	vollen = term_strlen(p, volume);
+
+	/* Top left corner: manual title and section. */
+
+	mandoc_asprintf(&title, "%s(%s)", meta->title, meta->msec);
+	titlen = term_strlen(p, title);
+
+	p->flags |= TERMP_NOBREAK | TERMP_NOSPACE;
+	p->trailspace = 1;
+	p->offset = 0;
+	p->rmargin = 2 * (titlen+1) + vollen < p->maxrmargin ?
+	    (p->maxrmargin - vollen + term_len(p, 1)) / 2 :
+	    vollen < p->maxrmargin ? p->maxrmargin - vollen : 0;
+
+	term_word(p, title);
+	term_flushln(p);
+
+	/* At the top in the middle: manual volume. */
+
+	p->flags |= TERMP_NOSPACE;
+	p->offset = p->rmargin;
+	p->rmargin = p->offset + vollen + titlen < p->maxrmargin ?
+	    p->maxrmargin - titlen : p->maxrmargin;
+
+	term_word(p, volume);
+	term_flushln(p);
+
+	/* Top right corner: title and section, again. */
+
+	p->flags &= ~TERMP_NOBREAK;
+	p->trailspace = 0;
+	if (p->rmargin + titlen <= p->maxrmargin) {
+		p->flags |= TERMP_NOSPACE;
+		p->offset = p->rmargin;
+		p->rmargin = p->maxrmargin;
+		term_word(p, title);
+		term_flushln(p);
+	}
+
+	p->flags &= ~TERMP_NOSPACE;
+	p->offset = 0;
+	p->rmargin = p->maxrmargin;
+
+	/*
+	 * Groff prints three blank lines before the content.
+	 * Do the same, except in the temporary, undocumented
+	 * mode imitating mdoc(7) output.
+	 */
+
+	term_vspace(p);
+	if ( ! p->mdocstyle) {
+		term_vspace(p);
+		term_vspace(p);
+	}
+	free(title);
+}
+@
+
+
+1.185
+log
+@modernize style: "return" is not a function
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.184 2015/09/21 13:25:00 schwarze Exp $ */
+a373 1
+		/* FALLTHROUGH */
+a374 1
+		/* FALLTHROUGH */
+a378 1
+		/* FALLTHROUGH */
+a385 1
+		/* FALLTHROUGH */
+a386 1
+		/* FALLTHROUGH */
+a446 1
+			/* FALLTHROUGH */
+a447 1
+			/* FALLTHROUGH */
+a448 1
+			/* FALLTHROUGH */
+a449 1
+			/* FALLTHROUGH */
+a450 1
+			/* FALLTHROUGH */
+@
+
+
+1.184
+log
+@Trailing whitespace is significant when determining the width of a tag
+in mdoc(7) .Bl -tag and man(7) .TP, but not in man(7) .IP.
+Quirk reported by Jan Stary <hans at stare dot cz> on ports@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.183 2015/04/19 19:44:21 schwarze Exp $ */
+d215 1
+a215 1
+	return(0);
+d223 1
+a223 1
+	return(0);
+d231 1
+a231 1
+	return(1);
+d258 1
+a258 1
+	return(0);
+d269 1
+a269 1
+		return(0);
+d274 1
+a274 1
+	return(0);
+d328 1
+a328 1
+	return(0);
+d336 1
+a336 1
+	return(1);
+d358 1
+a358 1
+	return(0);
+d368 1
+a368 1
+		return(0);
+d398 1
+a398 1
+	return(0);
+d413 1
+a413 1
+		return(0);
+d427 1
+a427 1
+		return(0);
+d440 1
+a440 1
+	return(0);
+d461 1
+a461 1
+			return(0);
+d496 1
+a496 1
+	return(0);
+d509 1
+a509 1
+		return(1);
+d513 1
+a513 1
+		return(0);
+d536 1
+a536 1
+	return(1);
+d581 1
+a581 1
+	return(n->type != ROFFT_HEAD);
+d603 1
+a603 1
+		return(1);
+d633 1
+a633 1
+		return(0);
+d642 1
+a642 1
+	return(1);
+d684 1
+a684 1
+		return(1);
+d721 1
+a721 1
+		return(0);
+d732 1
+a732 1
+	return(1);
+d795 1
+a795 1
+	return(1);
+d856 1
+a856 1
+	return(1);
+d883 1
+a883 1
+		return(1);
+d885 1
+a885 1
+		return(0);
+d909 1
+a909 1
+	return(1);
+d937 1
+a937 1
+	return (n->type != ROFFT_HEAD);
+@
+
+
+1.183
+log
+@If an explicit line break request (.br or .sp) occurs within an .HP block,
+the next line doesn't hang, but is simply indented.
+Issue found by Christian Neukirchen <chneukirchen at gmail dot com>
+in the dmsetup(8) manual on Linux.
+This patch also improves the indentation of XDGA(3) and XrmGetResource(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.182 2015/04/19 14:00:19 schwarze Exp $ */
+d674 1
+a674 1
+		p->flags |= TERMP_NOBREAK;
+d726 1
+a726 1
+		p->flags &= ~TERMP_NOBREAK;
+@
+
+
+1.182
+log
+@Decouple the token code for "no request or macro" from the individual
+high-level parsers to allow further unification of functions that
+only need to recognize this code, but that don't care about different
+high-level macrosets beyond that.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.181 2015/04/18 17:53:21 schwarze Exp $ */
+d485 11
+@
+
+
+1.181
+log
+@Delete the wrapper functions mdoc_meta(), man_meta(), mdoc_node(),
+man_node() from the mandoc(3) semi-public interface and the internal
+wrapper functions print_mdoc() and print_man() from the HTML formatters.
+Minus 60 lines of code, no functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.180 2015/04/18 16:06:40 schwarze Exp $ */
+d759 1
+a759 1
+		} while (n != NULL && n->tok != MAN_MAX &&
+@
+
+
+1.180
+log
+@Replace the structs mdoc and man by a unified struct roff_man.
+Almost completely mechanical, no functional change.
+Written on the train from Exeter to London returning from p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.179 2015/04/06 22:06:23 schwarze Exp $ */
+a143 1
+	const struct roff_meta	*meta;
+a147 1
+
+a151 3
+	n = man_node(man)->child;
+	meta = man_meta(man);
+
+a152 1
+
+d157 1
+d165 2
+a166 1
+					    n->child->next->child, meta);
+d175 1
+a175 1
+		term_begin(p, print_man_head, print_man_foot, meta);
+d178 1
+a178 1
+			print_man_nodelist(p, &mt, n, meta);
+@
+
+
+1.179
+log
+@Do not mistreat empty arguments to font alternating macros
+as vertical spacing requests.  Bug found with xmahjongg(6).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.178 2015/04/06 14:59:21 schwarze Exp $ */
+d141 1
+a141 1
+terminal_man(void *arg, const struct man *man)
+@
+
+
+1.178
+log
+@On a new RS nesting level, the saved width starts from the default
+width, not from the saved width of the previous level.
+Improves xterm(1) and XSetEventQueueOwner(3); found in transcode_filter(1).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.177 2015/04/06 13:35:08 schwarze Exp $ */
+d324 4
+a327 1
+		print_man_node(p, mt, nn, meta);
+@
+
+
+1.177
+log
+@Use the default width for .RS without arguments.
+Reduces groff-mandoc differences in base and Xenocara by about 4%.
+Found while looking at wpa_supplicant(8).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.176 2015/04/04 18:52:51 schwarze Exp $ */
+d898 1
+a898 1
+	mt->lmargin[mt->lmargincur] = mt->lmargin[mt->lmargincur - 1];
+@
+
+
+1.176
+log
+@Give man(7) section and subsection headers hanging indentation.
+Reduces groff-mandoc differences in base by about 2.5% due to
+various Perl manuals having long section titles.
+Quirk found in argtable2(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.175 2015/04/04 17:47:18 schwarze Exp $ */
+d882 3
+a884 1
+	if (n->child != NULL && a2roffsu(n->child->string, &su, SCALE_EN))
+@
+
+
+1.175
+log
+@Rounding rules for horizontal scaling widths are more complicated.
+There is a first rounding to basic units on the input side.
+After that, rounding rules differ between requests and macros.
+Requests round to the nearest possible character position.
+Macros round to the next character position to the left.
+
+Implement that by changing the return value of term_hspan()
+to basic units and leaving the second scaling and rounding stage
+to the formatters instead of doing it in the terminal handler.
+
+Improves for example argtable2(3).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.174 2015/04/04 11:44:43 schwarze Exp $ */
+d771 3
+d777 3
+d832 3
+d838 3
+@
+
+
+1.174
+log
+@Fix a quirk with respect to empty .HP.
+Found while writing a regression test for man_macro.c rev. 1.66.
+Incidentally, this brings rendering of XFreeEventData(3) closer to groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.173 2015/04/02 23:48:19 schwarze Exp $ */
+d430 1
+a430 1
+	v = term_hspan(p, &su);
+d515 1
+a515 1
+		len = term_hspan(p, &su);
+d600 1
+a600 1
+		len = term_hspan(p, &su);
+d682 1
+a682 1
+		len = term_hspan(p, &su);
+d871 1
+a871 1
+		n->aux = term_hspan(p, &su);
+@
+
+
+1.173
+log
+@Third step towards parser unification:
+Replace struct mdoc_meta and struct man_meta by a unified struct roff_meta.
+Written of the train from London to Exeter on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.172 2015/04/02 22:48:17 schwarze Exp $ */
+d536 11
+@
+
+
+1.172
+log
+@Second step towards parser unification:
+Replace struct mdoc_node and struct man_node by a unified struct roff_node.
+To be able to use the tok member for both mdoc(7) and man(7) without
+defining all the macros in roff.h, sacrifice a tiny bit of type safety
+and make tok an int rather than an enum.
+Almost mechanical, no functional change.
+Written on the Eurostar from Bruxelles to London on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.171 2015/04/02 21:36:50 schwarze Exp $ */
+d52 1
+a52 1
+			  const struct man_meta *meta
+d63 4
+a66 2
+static	void		  print_man_head(struct termp *, const void *);
+static	void		  print_man_foot(struct termp *, const void *);
+d144 1
+a144 1
+	const struct man_meta	*meta;
+d1017 1
+a1017 1
+print_man_foot(struct termp *p, const void *arg)
+a1018 1
+	const struct man_meta	*meta;
+a1021 1
+	meta = (const struct man_meta *)arg;
+d1033 2
+a1034 2
+	 * In the bottom right corner, use the source instead of
+	 * the title.
+d1044 2
+a1045 2
+	} else if (meta->source) {
+		title = mandoc_strdup(meta->source);
+d1051 1
+a1051 1
+	/* Bottom left corner: manual source. */
+d1059 2
+a1060 2
+	if (meta->source)
+		term_word(p, meta->source);
+d1087 1
+a1087 1
+print_man_head(struct termp *p, const void *arg)
+a1088 1
+	const struct man_meta	*meta;
+a1092 1
+	meta = (const struct man_meta *)arg;
+@
+
+
+1.171
+log
+@First step towards parser unification:
+Replace enum mdoc_type and enum man_type by a unified enum roff_type.
+Almost mechanical, no functional change.
+Written on the ICE train from Frankfurt to Bruxelles on the way to p2k15.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.170 2015/03/15 16:53:41 schwarze Exp $ */
+d51 1
+a51 1
+			  struct man_node *n, \
+d66 1
+a66 1
+				const struct man_node *, int);
+d143 1
+a143 1
+	struct man_node		*n;
+d194 1
+a194 1
+print_bvspace(struct termp *p, const struct man_node *n, int pardist)
+d283 1
+a283 1
+	struct man_node		*nn;
+d491 1
+a491 1
+	const struct man_node	*nn;
+d565 1
+a565 1
+	const struct man_node	*nn;
+d646 1
+a646 1
+	struct man_node		*nn;
+@
+
+
+1.170
+log
+@Avoid off-by-one read access to the termacts array, which could
+sometimes result in missing line breaks before subsection headers.
+Found by carsten dot kunze at arcor dot de on SuSE 13.2.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.169 2015/03/06 15:48:52 schwarze Exp $ */
+d10 1
+a10 1
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+d12 1
+a12 1
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+d29 1
+d31 2
+a32 1
+#include "mandoc_aux.h"
+a33 1
+#include "man.h"
+d164 1
+a164 1
+			    n->child->child->type == MAN_TEXT &&
+d201 1
+a201 1
+		if (MAN_TBL == n->body->child->type)
+d204 1
+a204 1
+	if (MAN_ROOT == n->parent->type || MAN_RS != n->parent->tok)
+d273 1
+a273 1
+	assert(MAN_TEXT == n->type);
+d495 1
+a495 1
+	case MAN_BLOCK:
+d498 1
+a498 1
+	case MAN_BODY:
+d532 1
+a532 1
+	case MAN_BODY:
+d549 1
+a549 1
+	case MAN_BLOCK:
+d558 1
+a558 1
+	return(MAN_HEAD != n->type);
+d569 1
+a569 1
+	case MAN_BODY:
+d572 1
+a572 1
+	case MAN_HEAD:
+d576 1
+a576 1
+	case MAN_BLOCK:
+d597 1
+a597 1
+	case MAN_HEAD:
+d611 1
+a611 1
+	case MAN_BODY:
+d627 1
+a627 1
+	case MAN_HEAD:
+d633 1
+a633 1
+	case MAN_BODY:
+d650 1
+a650 1
+	case MAN_HEAD:
+d654 1
+a654 1
+	case MAN_BODY:
+d657 1
+a657 1
+	case MAN_BLOCK:
+d679 1
+a679 1
+	case MAN_HEAD:
+d699 1
+a699 1
+	case MAN_BODY:
+d717 1
+a717 1
+	case MAN_HEAD:
+d720 1
+a720 1
+	case MAN_BODY:
+d735 1
+a735 1
+	case MAN_BLOCK:
+d755 1
+a755 1
+	case MAN_HEAD:
+d759 1
+a759 1
+	case MAN_BODY:
+d774 1
+a774 1
+	case MAN_HEAD:
+d777 1
+a777 1
+	case MAN_BODY:
+d791 1
+a791 1
+	case MAN_BLOCK:
+d810 1
+a810 1
+	case MAN_HEAD:
+d814 1
+a814 1
+	case MAN_BODY:
+d829 1
+a829 1
+	case MAN_HEAD:
+d832 1
+a832 1
+	case MAN_BODY:
+d846 1
+a846 1
+	case MAN_BLOCK:
+d849 1
+a849 1
+	case MAN_HEAD:
+d880 1
+a880 1
+	case MAN_BLOCK:
+d882 1
+a882 1
+	case MAN_HEAD:
+d900 1
+a900 1
+	return (MAN_HEAD != n->type);
+d907 1
+a907 1
+	if (MAN_BLOCK != n->type)
+d927 1
+a927 1
+	case MAN_TEXT:
+d942 1
+a942 1
+	case MAN_EQN:
+d949 1
+a949 1
+	case MAN_TBL:
+@
+
+
+1.169
+log
+@Fix vertical spacing at the beginning of tables.
+man(7) always prints a blank line, mdoc(7) doesn't.
+Problem in mdoc(7) reported by kristaps@@.
+mdoc(7) part of the patch tested by kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.168 2015/01/30 22:04:44 schwarze Exp $ */
+d746 2
+a747 1
+		} while (n != NULL && termacts[n->tok].flags & MAN_NOTEXT);
+@
+
+
+1.168
+log
+@Have pity on the poor stack.
+Replace tail recursion by iteration when walking the syntax trees.
+No functional change.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.167 2015/01/30 17:32:16 schwarze Exp $ */
+d948 2
+a949 6
+		/*
+		 * Tables are preceded by a newline.  Then process a
+		 * table line, which will cause line termination,
+		 */
+		if (n->span->prev == NULL)
+			term_newln(p);
+@
+
+
+1.167
+log
+@Delete the redundant tbl span flags, just inspect the actual data
+where needed, which is less fragile.
+This fixes a subtle NULL pointer access to tp->tbl.cols:
+Due to a bug in the man(7) parser, the first span of a table can
+end up in a .TP head, in which case tblcalc() was never called.
+Found by jsg@@ with afl.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.166 2015/01/24 02:41:49 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010-2014 Ingo Schwarze <schwarze@@openbsd.org>
+d1010 4
+a1013 4
+	print_man_node(p, mt, n, meta);
+	if ( ! n->next)
+		return;
+	print_man_nodelist(p, mt, n->next, meta);
+@
+
+
+1.166
+log
+@Strangely, ignoring the roff(7) .na request was implemented in the man(7)
+parser.  Simplify the code by moving it into the roff(7) parser, also
+making it work for mdoc(7).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.165 2014/12/24 18:04:10 schwarze Exp $ */
+d952 1
+a952 1
+		if (TBL_SPAN_FIRST & n->span->flags)
+@
+
+
+1.165
+log
+@For .RS, we need to save the information how much we actually indented
+because negative indents can get truncated, in which case we no longer
+know how to restore the original indent at the end of the block.
+This also solves another case of effectively infinite output found
+by jsg@@ with afl, triggered by very large negative indents.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.164 2014/12/24 09:58:35 schwarze Exp $ */
+a116 1
+	{ pre_ign, NULL, MAN_NOTEXT }, /* na */
+@
+
+
+1.164
+log
+@When a man(7) document contains unreasonably large numbers for
+indentations or paragraph distances, large output may be generated,
+which is practically the same as an endless loop; found by jsg@@
+with afl.
+Reject such unreasonably large numbers beyond arbitrary limits
+similar to those used by groff (max. 65 blank lines between paragraphs
+and max. SHRT_MAX characters per output line) and fall back to
+defaults when exceeded.  Having the limits behave in exactly the
+same way is not relevant.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.163 2014/12/23 13:48:57 schwarze Exp $ */
+d50 1
+a50 1
+			  const struct man_node *n, \
+d283 1
+a283 1
+	const struct man_node	*nn;
+d646 1
+a646 1
+	const struct man_node	*nn;
+a842 1
+	int		 len;
+d854 8
+a861 6
+	len = SHRT_MAX + 1;
+	if ((n = n->parent->head->child) != NULL &&
+	    a2roffsu(n->string, &su, SCALE_EN))
+		len = term_hspan(p, &su);
+	if (len > SHRT_MAX)
+		len = term_len(p, p->defindent);
+d863 1
+a863 4
+	if (len > 0 || (size_t)(-len) < mt->offset)
+		mt->offset += len;
+	else
+		mt->offset = 0;
+a876 2
+	struct roffsu	 su;
+	int		 len;
+d888 1
+a888 11
+	len = SHRT_MAX + 1;
+	if ((n = n->parent->head->child) != NULL &&
+	    a2roffsu(n->string, &su, SCALE_EN))
+		len = term_hspan(p, &su);
+	if (len > SHRT_MAX)
+		len = term_len(p, p->defindent);
+
+	if (len < 0 || (size_t)len < mt->offset)
+		mt->offset -= len;
+	else
+		mt->offset = 0;
+@
+
+
+1.163
+log
+@support negative horizontal widths in man(7);
+minus twenty lines of code in spite of enhanced functionality
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.162 2014/12/23 09:31:46 schwarze Exp $ */
+d24 1
+d436 2
+d514 4
+d523 1
+a523 5
+	if (len > 0 || (size_t)(-len) < mt->offset)
+		p->rmargin = mt->offset + len;
+	else
+		p->rmargin = 0;
+
+a587 1
+		mt->lmargin[mt->lmargincur] = len;
+d590 3
+a669 1
+		mt->lmargin[mt->lmargincur] = len;
+d672 3
+d855 1
+d859 1
+a859 1
+	else
+d892 1
+d896 1
+a896 1
+	else
+@
+
+
+1.162
+log
+@some scaling unit fixes:
+- .sp with an invalid argument is .sp 1v, not .sp 0v
+- in man(1), trailing garbage doesn't make scaling units invalid
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.161 2014/12/23 08:15:53 schwarze Exp $ */
+d40 1
+a40 1
+	size_t		  lmargin[MAXMARGINS]; /* margins (incl. visible page) */
+a58 2
+static	int		  a2width(const struct termp *, const char *);
+
+a183 11
+static int
+a2width(const struct termp *p, const char *cp)
+{
+	struct roffsu	 su;
+
+	if ( ! a2roffsu(cp, &su, SCALE_EN))
+		return(-1);
+
+	return((int)term_hspan(p, &su));
+}
+
+d402 2
+a403 1
+	int		 len, less;
+d405 1
+a405 1
+	const char	*cp;
+d424 1
+a424 1
+	if ((len = a2width(p, ++cp)) < 0)
+d427 1
+a427 1
+	v = (size_t)len;
+d443 1
+a443 3
+	char		*s;
+	size_t		 i, len;
+	int		 neg;
+d463 1
+a463 3
+	neg = 0;
+	switch (n->tok) {
+	case MAN_br:
+d465 4
+a468 12
+		break;
+	default:
+		if (NULL == n->child) {
+			len = 1;
+			break;
+		}
+		s = n->child->string;
+		if ('-' == *s) {
+			neg = 1;
+			s++;
+		}
+		if ( ! a2roffsu(s, &su, SCALE_VS))
+a470 1
+		break;
+d473 1
+a473 1
+	if (0 == len)
+d475 2
+a476 2
+	else if (neg)
+		p->skipvsp += len;
+d487 1
+a487 2
+	size_t			 len, one;
+	int			 ival;
+d489 1
+a505 3
+	len = mt->lmargin[mt->lmargincur];
+	ival = -1;
+
+d508 6
+a513 7
+	if (NULL != (nn = n->parent->head->child))
+		if ((ival = a2width(p, nn->string)) >= 0)
+			len = (size_t)ival;
+
+	one = term_len(p, 1);
+	if (len < one)
+		len = one;
+d516 4
+a519 4
+	p->rmargin = mt->offset + len;
+
+	if (ival >= 0)
+		mt->lmargin[mt->lmargincur] = (size_t)ival;
+d561 1
+d563 1
+a563 2
+	size_t			 len;
+	int			 savelit, ival;
+a579 3
+	len = mt->lmargin[mt->lmargincur];
+	ival = -1;
+
+d581 9
+a589 4
+	if (NULL != (nn = n->parent->head->child))
+		if (NULL != (nn = nn->next))
+			if ((ival = a2width(p, nn->string)) >= 0)
+				len = (size_t)ival;
+a592 4
+		/* Handle zero-width lengths. */
+		if (0 == len)
+			len = term_len(p, 1);
+
+a595 4
+		/* Set the saved left-margin. */
+		if (ival >= 0)
+			mt->lmargin[mt->lmargincur] = (size_t)ival;
+
+d640 1
+d642 1
+a642 2
+	size_t			 len;
+	int			 savelit, ival;
+a658 3
+	len = (size_t)mt->lmargin[mt->lmargincur];
+	ival = -1;
+
+d661 9
+a669 4
+	if (NULL != (nn = n->parent->head->child))
+		if (nn->string && 0 == (MAN_LINE & nn->flags))
+			if ((ival = a2width(p, nn->string)) >= 0)
+				len = (size_t)ival;
+a672 4
+		/* Handle zero-length properly. */
+		if (0 == len)
+			len = term_len(p, 1);
+
+a690 3
+		if (ival >= 0)
+			mt->lmargin[mt->lmargincur] = (size_t)ival;
+
+d835 2
+a836 2
+	int		 ival;
+	size_t		 sz;
+d848 5
+a852 1
+	sz = term_len(p, p->defindent);
+d854 4
+a857 5
+	if (NULL != (n = n->parent->head->child))
+		if ((ival = a2width(p, n->string)) >= 0)
+			sz = (size_t)ival;
+
+	mt->offset += sz;
+d871 2
+a872 2
+	int		 ival;
+	size_t		 sz;
+d884 5
+a888 1
+	sz = term_len(p, p->defindent);
+d890 4
+a893 5
+	if (NULL != (n = n->parent->head->child))
+		if ((ival = a2width(p, n->string)) >= 0)
+			sz = (size_t)ival;
+
+	mt->offset = mt->offset < sz ?  0 : mt->offset - sz;
+@
+
+
+1.161
+log
+@even if the second argument to .IP is invalid, don't print it
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.160 2014/12/23 01:57:35 schwarze Exp $ */
+a59 1
+static	size_t		  a2height(const struct termp *, const char *);
+a185 12
+
+static size_t
+a2height(const struct termp *p, const char *cp)
+{
+	struct roffsu	 su;
+
+	if ( ! a2roffsu(cp, &su, SCALE_VS))
+		SCALE_VS_INIT(&su, atoi(cp));
+
+	return(term_vspan(p, &su));
+}
+
+d454 1
+d492 3
+a494 1
+		len = a2height(p, s);
+@
+
+
+1.160
+log
+@correctly handle scaling units after .PD
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.159 2014/12/04 02:05:42 schwarze Exp $ */
+a635 2
+		if (ival < 0)
+			break;
+d638 2
+a639 1
+		mt->lmargin[mt->lmargincur] = (size_t)ival;
+@
+
+
+1.159
+log
+@fix handling of roff requests having a default scale other than "n",
+in particular .sp which uses "v", when the scale is not specified;
+cures groff-mandoc differences in about a dozen Xenocara manuals
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.158 2014/12/04 01:33:42 schwarze Exp $ */
+d291 1
+d294 1
+a294 1
+	if (0 == n) {
+d299 2
+a300 1
+	mt->pardist = atoi(n->string);
+@
+
+
+1.158
+log
+@Ignore macros that never produce any text when deciding whether
+vertical whitespace is needed before a section or subsection.
+Cures groff-mandoc differences in more than 300 manuals,
+mostly Xenocara, some curses, a few GNU.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.157 2014/12/02 10:08:06 schwarze Exp $ */
+d204 1
+a204 1
+	if ( ! a2roffsu(cp, &su, SCALE_BU))
+@
+
+
+1.157
+log
+@Fix the implementation and documentation of \c (continue text input line).
+In particular, make it work in no-fill mode, too.
+Reminded by Carsten dot Kunze at arcor dot de (Heirloom roff).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.156 2014/11/21 01:52:53 schwarze Exp $ */
+d126 1
+a126 1
+	{ pre_ign, NULL, 0 }, /* UC */
+d781 10
+a790 5
+		/* If following a prior empty `SS', no vspace. */
+		if (n->prev && MAN_SS == n->prev->tok)
+			if (NULL == n->prev->body->child)
+				break;
+		if (NULL == n->prev)
+d792 1
+d836 10
+a845 6
+		/* If following a prior empty `SH', no vspace. */
+		if (n->prev && MAN_SH == n->prev->tok)
+			if (NULL == n->prev->body->child)
+				break;
+		/* If the first macro, no vspae. */
+		if (NULL == n->prev)
+d847 1
+@
+
+
+1.156
+log
+@We repeatedly observed assertion crashes in the low-level terminal
+output handler because the high level terminal formatters could be
+tricked into setting the left margin further to the right than the
+right margin.  Today, jsg@@ found more of these with afl.
+
+Change the internal interface between both levels, aiming for
+simplicity and robustness of the code.  Treat both margins as
+*independent* settings:  Now, termp.offset is the requested left
+margin, and termp.rmargin is the available space.  Let the lower
+level cope with that case of insufficient space.
+
+Obviously, high level code that does centering or flush right
+still has to do careful checks, so i did a full audit of margin
+settings in the terminal formatters.
+
+Fixes crashes caused by excessively long title or date strings in
+the man(7) footer, operating system or date strings in the mdoc(7)
+footer, volume strings in the man(7) or mdoc(7) header, and a few
+cases related to some non-prologue macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.155 2014/10/28 17:36:19 schwarze Exp $ */
+d1021 3
+a1023 2
+	if (MANT_LITERAL & mt->fl && ! (TERMP_NOBREAK & p->flags) &&
+	    (NULL == n->next || MAN_LINE & n->next->flags)) {
+d1028 1
+a1028 1
+		if (NULL != n->string && '\0' != *n->string)
+@
+
+
+1.155
+log
+@Make the character table available to libroff so it can check the
+validity of character escape names and warn about unknown ones.
+This requires mchars_spec2cp() to report unknown names again.
+Fortunately, that doesn't require changing the calling code because
+according to groff, invalid character escapes should not produce
+output anyway, and now that we warn about them, that's fine.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.154 2014/10/20 15:50:24 schwarze Exp $ */
+a458 5
+	/* Don't let this creep beyond the right margin. */
+
+	if (p->offset > p->rmargin)
+		p->offset = p->rmargin;
+
+d652 1
+a652 2
+		p->rmargin = p->maxrmargin > p->offset ?
+		    p->maxrmargin : p->offset;
+d743 1
+a743 2
+		p->rmargin = p->maxrmargin > p->offset ?
+		    p->maxrmargin : p->offset;
+d894 1
+a894 2
+	p->rmargin = p->maxrmargin > p->offset ?
+	    p->maxrmargin : p->offset;
+d1058 1
+a1058 1
+	size_t			 datelen;
+d1095 2
+a1096 1
+	p->rmargin = (p->maxrmargin - datelen + term_len(p, 1)) / 2;
+d1104 3
+a1107 4
+	p->offset = p->rmargin;
+	p->rmargin = p->maxrmargin - term_strlen(p, title);
+	if (p->offset + datelen >= p->rmargin)
+		p->rmargin = p->offset + datelen;
+d1150 1
+a1150 1
+	    p->maxrmargin - vollen;
+@
+
+
+1.154
+log
+@correct the spacing after in-line equations
+that start at the beginning of an input line
+but end before the end of an input line
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.153 2014/10/20 02:47:09 schwarze Exp $ */
+a153 3
+	if (NULL == p->symtab)
+		p->symtab = mchars_alloc();
+
+@
+
+
+1.153
+log
+@correct spacing *after* inline equations (much simpler than expected)
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.152 2014/10/20 02:33:06 schwarze Exp $ */
+d993 1
+a993 1
+		if ( ! (n->flags & MAN_LINE))
+@
+
+
+1.152
+log
+@correct spacing before inline equations
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.151 2014/09/03 05:22:45 schwarze Exp $ */
+d993 2
+@
+
+
+1.151
+log
+@Implement the traditional -h option for man(1): show the SYNOPSIS only.
+As usual, we get mandoc -h and apropos -h for free.
+Try stuff like "apropos -h In=dirent" or "apropos -h Fa=timespec".
+
+Only useful for terminal output, so -Tps, -Tpdf, -Thtml ignore -h for now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.150 2014/08/10 23:54:41 schwarze Exp $ */
+d990 2
+@
+
+
+1.150
+log
+@Get rid of HAVE_CONFIG_H, it is always defined; idea from libnbcompat.
+Include <sys/types.h> where needed, it does not belong in config.h.
+Remove <stdio.h> from config.h; if it is missing somewhere, it should
+be added, but i cannot find a *.c file where it is missing.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.149 2014/06/20 23:02:31 schwarze Exp $ */
+a143 1
+	const struct man_node	*n;
+d145 1
+a149 3
+	if (0 == p->defindent)
+		p->defindent = 7;
+
+d151 1
+a151 1
+	p->maxrmargin = p->defrmargin;
+d157 1
+a157 1
+	n = man_node(man);
+a159 3
+	term_begin(p, print_man_head, print_man_foot, meta);
+	p->flags |= TERMP_NOSPACE;
+
+d166 22
+a187 4
+	if (n->child)
+		print_man_nodelist(p, &mt, n->child, meta);
+
+	term_end(p);
+@
+
+
+1.149
+log
+@As suggested by jmc@@, only include line and column numbers into messages
+when they are meaningful, to avoid confusing stuff like this:
+$ mandoc /dev/null
+mandoc: /dev/null:0:1: FATAL: not a manual
+Instead, just say:
+mandoc: /dev/null: FATAL: not a manual
+
+Another example this applies to is documents having a prologue,
+but lacking a body.  Do not throw a FATAL error for these; instead,
+issue a WARNING and show the empty document, in the man(7) case with
+the same amount of blank lines as groff does.  Also downgrade mdoc(7)
+documents having content before the first .Sh from FATAL to WARNING.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.148 2014/04/23 16:08:33 schwarze Exp $ */
+a17 1
+#ifdef HAVE_CONFIG_H
+a18 1
+#endif
+@
+
+
+1.148
+log
+@Audit strlcpy(3)/strlcat(3) usage.
+
+* Repair three instances of silent truncation, use asprintf(3).
+* Change two instances of strlen(3)+malloc(3)+strlcpy(3)+strlcat(3)+...
+to use asprintf(3) instead to make them less error prone.
+* Cast the return value of four instances where the destination
+buffer is known to be large enough to (void).
+* Completely remove three useless instances of strlcpy(3)/strlcat(3).
+* Mark two places in -Thtml with XXX that can cause information loss
+and crashes but are not easy to fix, requiring design changes of
+some internal interfaces.
+* The file mandocdb.c remains to be audited.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.147 2014/04/20 20:18:12 schwarze Exp $ */
+d1064 2
+a1065 1
+	term_vspace(p);
+d1074 4
+a1077 2
+		term_vspace(p);
+		term_vspace(p);
+@
+
+
+1.147
+log
+@fix unchecked snprintf(3) in page header printing:
+the length of the title is unknown, and speed doesn't matter here,
+so use asprintf/free rather than a static buffer
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.146 2014/04/20 16:46:04 schwarze Exp $ */
+a1121 1
+	char			 buf[BUFSIZ];
+d1123 1
+d1125 1
+a1125 1
+	size_t			 buflen, titlen;
+d1131 2
+a1132 5
+	if (meta->vol)
+		strlcpy(buf, meta->vol, BUFSIZ);
+	else
+		buf[0] = '\0';
+	buflen = term_strlen(p, buf);
+d1142 3
+a1144 4
+	p->rmargin = 2 * (titlen+1) + buflen < p->maxrmargin ?
+	    (p->maxrmargin -
+	     term_strlen(p, buf) + term_len(p, 1)) / 2 :
+	    p->maxrmargin - buflen;
+d1153 1
+a1153 1
+	p->rmargin = p->offset + buflen + titlen < p->maxrmargin ?
+d1156 1
+a1156 1
+	term_word(p, buf);
+@
+
+
+1.146
+log
+@KNF: case (FOO):  ->  case FOO:, remove /* LINTED */ and /* ARGSUSED */,
+remove trailing whitespace and blanks before tabs, improve some indenting;
+no functional change
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.145 2014/04/08 07:13:11 schwarze Exp $ */
+d31 1
+d1053 3
+a1055 3
+	char		title[BUFSIZ];
+	size_t		datelen;
+	const struct man_meta *meta;
+d1075 2
+a1076 1
+		snprintf(title, BUFSIZ, "%s(%s)", meta->title, meta->msec);
+d1078 1
+a1078 1
+		strlcpy(title, meta->source, BUFSIZ);
+d1080 1
+a1080 1
+		title[0] = '\0';
+d1116 1
+d1122 4
+a1125 3
+	char		buf[BUFSIZ], title[BUFSIZ];
+	size_t		buflen, titlen;
+	const struct man_meta *meta;
+d1139 1
+a1139 1
+	snprintf(title, BUFSIZ, "%s(%s)", meta->title, meta->msec);
+d1190 1
+@
+
+
+1.145
+log
+@Add a new term_flushln() flag TERMP_BRIND (if break, then indent)
+to control indentation of continuation lines in TERMP_NOBREAK mode.
+In the past, this was always on; continue using it
+for .Bl, .Nm, .Fn, .Fo, and .HP, but no longer for .IP and .TP.
+
+I looked at this because sthen@@ reported the issue in a manual
+of a Perl module from ports, but it affects base, too: This patch
+reduces groff-mandoc differences in base by more than 15%.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.144 2014/03/30 21:28:01 schwarze Exp $ */
+d48 1
+a48 1
+#define	DECL_ARGS 	  struct termp *p, \
+d67 1
+a67 1
+static	void		  print_bvspace(struct termp *, 
+d108 1
+a108 1
+	{ pre_HP, post_HP, 0 }, /* HP */ 
+a140 1
+
+a190 1
+
+d229 1
+a229 1
+/* ARGSUSED */
+a236 2
+
+/* ARGSUSED */
+a244 2
+
+/* ARGSUSED */
+a252 2
+
+/* ARGSUSED */
+a279 1
+/* ARGSUSED */
+a293 1
+/* ARGSUSED */
+d302 1
+a302 1
+	case (MAN_RB):
+d306 1
+a306 1
+	case (MAN_RI):
+d310 1
+a310 1
+	case (MAN_BR):
+d314 1
+a314 1
+	case (MAN_BI):
+d318 1
+a318 1
+	case (MAN_IR):
+d322 1
+a322 1
+	case (MAN_IB):
+a344 1
+/* ARGSUSED */
+a352 1
+/* ARGSUSED */
+a374 1
+/* ARGSUSED */
+d387 1
+a387 1
+	case ('4'):
+d389 1
+a389 1
+	case ('3'):
+d391 1
+a391 1
+	case ('B'):
+d394 1
+a394 1
+	case ('2'):
+d396 1
+a396 1
+	case ('I'):
+d399 1
+a399 1
+	case ('P'):
+d402 1
+a402 1
+	case ('1'):
+d404 1
+a404 1
+	case ('C'):
+d406 1
+a406 1
+	case ('R'):
+a414 1
+/* ARGSUSED */
+d448 1
+a448 1
+	else 
+a458 2
+
+/* ARGSUSED */
+d468 1
+a468 1
+		case (MAN_SH):
+d470 1
+a470 1
+		case (MAN_SS):
+d472 1
+a472 1
+		case (MAN_PP):
+d474 1
+a474 1
+		case (MAN_LP):
+d476 1
+a476 1
+		case (MAN_P):
+d486 1
+a486 1
+	case (MAN_br):
+a513 2
+
+/* ARGSUSED */
+d522 1
+a522 1
+	case (MAN_BLOCK):
+d525 1
+a525 1
+	case (MAN_BODY):
+a557 2
+
+/* ARGSUSED */
+d563 1
+a563 1
+	case (MAN_BODY):
+a574 2
+
+/* ARGSUSED */
+d580 1
+a580 1
+	case (MAN_BLOCK):
+a591 2
+
+/* ARGSUSED */
+d600 1
+a600 1
+	case (MAN_BODY):
+d603 1
+a603 1
+	case (MAN_HEAD):
+d607 1
+a607 1
+	case (MAN_BLOCK):
+d624 1
+a624 1
+	case (MAN_HEAD):
+d647 1
+a647 1
+	case (MAN_BODY):
+d650 1
+a650 1
+				p->maxrmargin : p->offset;
+a658 2
+
+/* ARGSUSED */
+d664 1
+a664 1
+	case (MAN_HEAD):
+d670 1
+a670 1
+	case (MAN_BODY):
+a678 2
+
+/* ARGSUSED */
+d687 1
+a687 1
+	case (MAN_HEAD):
+d691 1
+a691 1
+	case (MAN_BODY):
+d694 1
+a694 1
+	case (MAN_BLOCK):
+d712 1
+a712 1
+	case (MAN_HEAD):
+d739 1
+a739 1
+	case (MAN_BODY):
+d742 1
+a742 1
+				p->maxrmargin : p->offset;
+a752 2
+
+/* ARGSUSED */
+d758 1
+a758 1
+	case (MAN_HEAD):
+d761 1
+a761 1
+	case (MAN_BODY):
+a769 2
+
+/* ARGSUSED */
+d776 1
+a776 1
+	case (MAN_BLOCK):
+d789 1
+a789 1
+	case (MAN_HEAD):
+d793 1
+a793 1
+	case (MAN_BODY):
+a802 2
+
+/* ARGSUSED */
+d806 1
+a806 1
+	
+d808 1
+a808 1
+	case (MAN_HEAD):
+d811 1
+a811 1
+	case (MAN_BODY):
+a818 2
+
+/* ARGSUSED */
+d825 1
+a825 1
+	case (MAN_BLOCK):
+d839 1
+a839 1
+	case (MAN_HEAD):
+d843 1
+a843 1
+	case (MAN_BODY):
+a852 2
+
+/* ARGSUSED */
+d856 1
+a856 1
+	
+d858 1
+a858 1
+	case (MAN_HEAD):
+d861 1
+a861 1
+	case (MAN_BODY):
+a868 1
+/* ARGSUSED */
+d876 1
+a876 1
+	case (MAN_BLOCK):
+d879 1
+a879 1
+	case (MAN_HEAD):
+d888 1
+a888 1
+		if ((ival = a2width(p, n->string)) >= 0) 
+d894 1
+a894 1
+			p->maxrmargin : p->offset;
+a902 1
+/* ARGSUSED */
+d910 1
+a910 1
+	case (MAN_BLOCK):
+d912 1
+a912 1
+	case (MAN_HEAD):
+d921 2
+a922 2
+	if (NULL != (n = n->parent->head->child)) 
+		if ((ival = a2width(p, n->string)) >= 0) 
+a931 1
+/* ARGSUSED */
+a938 1
+/* ARGSUSED */
+d963 1
+a963 1
+	case(MAN_TEXT):
+d978 1
+a978 1
+	case (MAN_EQN):
+d981 1
+a981 1
+	case (MAN_TBL):
+d986 1
+a986 1
+		if (TBL_SPAN_FIRST & n->span->flags) 
+a1048 1
+
+a1115 1
+
+d1142 1
+a1142 1
+	    (p->maxrmargin - 
+d1175 1
+a1175 1
+	/* 
+@
+
+
+1.144
+log
+@Support relative arguments to .ll (increase or decrease line length).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.143 2014/03/30 19:47:48 schwarze Exp $ */
+d281 1
+a281 1
+		p->flags &= ~TERMP_NOBREAK;
+d550 1
+a550 1
+		p->flags |= TERMP_NOBREAK;
+d585 1
+a585 1
+		p->flags &= ~TERMP_NOBREAK;
+@
+
+
+1.143
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.142 2014/03/08 16:22:04 schwarze Exp $ */
+d245 1
+a245 1
+	(*p->setwidth)(p, n->nchild ? a2width(p, n->child->string) : 0);
+@
+
+
+1.142
+log
+@In .nf mode, use the MAN_LINE flag to detect input line breaks
+instead of the man_node line member.  This is required to preserve
+line breaks contained in user-defined macros called in .nf mode.
+Found in a code audit triggered by fixing a similar issue in .TP.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.141 2014/03/08 15:50:41 schwarze Exp $ */
+d87 1
+d137 1
+d242 10
+@
+
+
+1.141
+log
+@To find out whether .TP head arguments are same-line or next-line arguments,
+use the MAN_LINE flag instead of the man_node line member.
+This is required such that user-defined macros wrapping .TP work correctly.
+
+Issue found by Havard Eidnes in Tcl_NewStringObj(3), reported via
+the NetBSD bug tracking system and Thomas Klausner <wiz at NetBSD>.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.140 2014/02/16 12:33:39 schwarze Exp $ */
+d1048 1
+a1048 1
+	    (NULL == n->next || n->next->line > n->line)) {
+@
+
+
+1.140
+log
+@when indenting, extend the right margin accordingly, when needed;
+fixes a crash reported by blambert@@ and a few other, similar ones
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.139 2013/12/22 23:34:13 schwarze Exp $ */
+d723 1
+a723 1
+		if (nn->string && nn->parent->line == nn->line)
+d740 8
+a747 3
+		for (nn = n->child; nn; nn = nn->next)
+			if (nn->line > n->line)
+				print_man_node(p, mt, nn, meta);
+@
+
+
+1.139
+log
+@Polishing the worms in my favourite can, term_flushln().
+
+The TERMP_TWOSPACE flag i introduced in August 2009 was idiosyncratic
+and served only a very narrow purpose.  Replace it by a more intuitive
+and more general termp attribute "trailspace", to be used together
+with TERMP_NOBREAK, to request a minimum amount of whitespace at
+the end of the current column.  Adapt all code to the new interface.
+
+No functional change intended;
+code reviews to confirm that are welcome *eg*.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.138 2013/11/11 00:37:55 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010, 2011, 2012, 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d661 2
+a662 1
+		p->rmargin = p->maxrmargin;
+d752 2
+a753 1
+		p->rmargin = p->maxrmargin;
+d914 3
+a916 2
+	p->rmargin = p->maxrmargin;
+	p->offset = mt->offset < p->rmargin ? mt->offset : p->rmargin;
+@
+
+
+1.138
+log
+@In the parser, when closing an explicit block that is not open,
+close below-subsection implicit scopes that may still be open.
+In the formatter, make sure indentation is reset when leaving a scope,
+not only when entering the next one.
+
+Improves the formatting of gpg(1); issue reported by jca on ports.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.137 2013/10/17 20:54:58 schwarze Exp $ */
+d268 2
+a269 1
+		p->flags &= ~(TERMP_NOBREAK | TERMP_TWOSPACE);
+d539 1
+a539 1
+		p->flags |= TERMP_TWOSPACE;
+d574 1
+a574 1
+		p->flags &= ~TERMP_TWOSPACE;
+d617 1
+d680 1
+d704 1
+d752 1
+a753 1
+		p->flags &= ~TERMP_TWOSPACE;
+d1108 1
+d1131 1
+d1163 1
+d1186 1
+@
+
+
+1.137
+log
+@Implement the .UR/.UE block (uniform resource identifier) introduced in the
+man-ext macros by Eric S. Raymond, enabled by default in groff_man(7).
+Usual disclaimer: You don't write new man(7) code, so you are not going
+to use these, either.
+Improves e.g. the bzr(1) and etherape(1) manuals.
+Thanks to naddy@@ for bringing these to my attention.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.136 2013/01/05 22:19:12 schwarze Exp $ */
+d682 1
+d770 1
+@
+
+
+1.136
+log
+@In literal mode (.nf), each input line must be kept together
+on the same output line, even if it is longer than the output width.
+This commit fixes a bug allowing an overly long last line of an
+indented block (.RS) to be broken even in literal mode.
+
+The bug was found using the sudo_plugin(4) manual provided by millert@@.
+
+I introduced the bug in rev. 1.84 during the g2k12 Budapest hackathon.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.135 2012/11/17 00:26:33 schwarze Exp $ */
+d81 1
+d95 1
+d134 2
+d946 26
+@
+
+
+1.135
+log
+@Cleanup naming of local variables to make the code easier on the eye:
+Settle for "struct man *man", "struct mdoc *mdoc", "struct meta *meta"
+and avoid the confusing "*m" which was sometimes this, sometimes that.
+No functional change.
+
+ok kristaps@@ some time ago
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.134 2012/07/29 12:35:42 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010, 2011, 2012 Ingo Schwarze <schwarze@@openbsd.org>
+d567 1
+a567 1
+		term_flushln(p);
+d1004 1
+a1004 1
+	    NULL != n->next && n->next->line > n->line) {
+@
+
+
+1.134
+log
+@Implement .PD for -Tascii.
+Reminded about the missing feature by millert@@.
+This reduces mandoc/groff differences in OpenBSD base by 25%.
+ok millert@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.133 2012/07/16 21:59:40 schwarze Exp $ */
+d51 1
+a51 1
+			  const struct man_meta *m
+d141 1
+a141 1
+	const struct man_meta	*m;
+d157 1
+a157 1
+	m = man_meta(man);
+d159 1
+a159 1
+	term_begin(p, print_man_head, print_man_foot, m);
+d169 1
+a169 1
+		print_man_nodelist(p, &mt, n->child, m);
+d330 1
+a330 1
+		print_man_node(p, mt, nn, m);
+d647 1
+a647 1
+			print_man_node(p, mt, n->child, m);
+d732 1
+a732 1
+				print_man_node(p, mt, nn, m);
+d985 1
+a985 1
+		c = (*termacts[n->tok].pre)(p, mt, n, m);
+d988 1
+a988 1
+		print_man_nodelist(p, mt, n->child, m);
+d991 1
+a991 1
+		(*termacts[n->tok].post)(p, mt, n, m);
+d1029 1
+a1029 1
+	print_man_node(p, mt, n, m);
+d1032 1
+a1032 1
+	print_man_nodelist(p, mt, n->next, m);
+d1107 1
+a1107 1
+	const struct man_meta *m;
+d1109 3
+a1111 3
+	m = (const struct man_meta *)arg;
+	assert(m->title);
+	assert(m->msec);
+d1113 2
+a1114 2
+	if (m->vol)
+		strlcpy(buf, m->vol, BUFSIZ);
+d1121 1
+a1121 1
+	snprintf(title, BUFSIZ, "%s(%s)", m->title, m->msec);
+@
+
+
+1.133
+log
+@Always fix the man(7) subsection header (.SS) indent to 3n,
+do not let it depend on the default indent provided by -Oindent.
+By default, this doesn't change anything because 7 / 2 = 3;
+in -Omdoc mode, it makes man(7) output the same as mdoc(7) output.
+OpenBSD rev. 1.87
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.132 2012/07/14 10:47:07 schwarze Exp $ */
+a37 2
+/* FIXME: have PD set the default vspace width. */
+
+d45 1
+d68 1
+a68 1
+				const struct man_node *);
+d75 1
+d125 1
+a125 1
+	{ pre_ign, NULL, 0 }, /* PD */
+d166 1
+d207 1
+a207 1
+print_bvspace(struct termp *p, const struct man_node *n)
+d209 1
+d221 2
+a222 1
+	term_vspace(p);
+d273 15
+d524 1
+a524 1
+		print_bvspace(p, n);
+d587 1
+a587 1
+		print_bvspace(p, n);
+d614 1
+a614 1
+		print_bvspace(p, n);
+d701 1
+a701 1
+		print_bvspace(p, n);
+d776 1
+d789 2
+a790 1
+		term_vspace(p);
+d829 1
+d843 2
+a844 1
+		term_vspace(p);
+@
+
+
+1.132
+log
+@Translate blank input lines to .sp just like in mdoc(7),
+and ignore .sp after .PP.  This fixes vertical spacing
+for blank lines after .PP and for .sp after .PP.
+OpenBSD rev. man.c 1.68 and man_term.c 1.86
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.131 2012/07/13 14:19:49 schwarze Exp $ */
+d774 1
+a774 1
+		p->offset = term_len(p, p->defindent/2);
+@
+
+
+1.131
+log
+@In -man -Tascii, support .sp with negative argument.
+In -mdoc -Tman, improve the framework to control vertical spacing.
+Use both to support .Bl -compact (surprisingly hard to get right).
+OpenBSD rev. 1.85 and 1.34, respectively.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.130 2012/07/10 19:54:11 schwarze Exp $ */
+d448 11
+a458 3
+		if (MAN_SS == n->parent->tok)
+			return(0);
+		if (MAN_SH == n->parent->tok)
+d460 3
+@
+
+
+1.130
+log
+@multiple fixes to -Tascii .HP rendering:
+* do not add an excessive blank line before the block
+* in literal mode, start a new line after the tag
+
+getting this to work requires some general (print_man_node) fixes:
+* in literal mode, break the output line at the end of each
+input line, not just after those input lines ending in text
+* but don't break it when there was no output on the line
+* and adjust the margins after the .HP tag
+
+these general fixes require an adjustment to -Tascii .TP rendering:
+* set up NOBREAK mode before the body, not after the head
+
+finally, based on all this, implement -Tman .Bl -hang in terms of .HP
+
+OpenBSD rev. 1.84 and 1.29, respectively
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.129 2012/06/02 20:16:23 schwarze Exp $ */
+d443 1
+d445 1
+d454 1
+d460 10
+a469 1
+		len = n->child ? a2height(p, n->child->string) : 1;
+d475 5
+a479 2
+	for (i = 0; i < len; i++)
+		term_vspace(p);
+@
+
+
+1.129
+log
+@Minimal implementation of .EX and .EE for GNU compatibility.
+Do not use this, it is not portable and only defined in esr's man-ext.
+For example, sox(1) wants these macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.128 2012/05/27 17:39:28 schwarze Exp $ */
+d4 1
+a4 1
+ * Copyright (c) 2010, 2011 Ingo Schwarze <schwarze@@openbsd.org>
+a482 2
+		p->flags |= TERMP_NOBREAK;
+		p->flags |= TERMP_TWOSPACE;
+d488 5
+a521 3
+	case (MAN_BLOCK):
+		term_flushln(p);
+		break;
+d699 2
+a717 3
+		p->flags &= ~TERMP_NOBREAK;
+		p->flags &= ~TERMP_TWOSPACE;
+		p->rmargin = p->maxrmargin;
+d914 1
+a915 22
+		/*
+		 * If we're in a literal context, make sure that words
+		 * togehter on the same line stay together.  This is a
+		 * POST-printing call, so we check the NEXT word.  Since
+		 * -man doesn't have nested macros, we don't need to be
+		 * more specific than this.
+		 */
+		if (MANT_LITERAL & mt->fl && ! (TERMP_NOBREAK & p->flags) &&
+				(NULL == n->next || 
+				 n->next->line > n->line)) {
+			rm = p->rmargin;
+			rmax = p->maxrmargin;
+			p->rmargin = p->maxrmargin = TERM_MAXMARGIN;
+			p->flags |= TERMP_NOSPACE;
+			term_flushln(p);
+			p->rmargin = rm;
+			p->maxrmargin = rmax;
+		}
+
+		if (MAN_EOS & n->flags)
+			p->flags |= TERMP_SENTENCE;
+		return;
+d947 25
+@
+
+
+1.128
+log
+@update Copyright years according to the CVS logs; no code change
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.127 2012/01/03 15:16:24 kristaps Exp $ */
+d130 2
+d248 1
+a248 1
+	if (MAN_nf == n->tok)
+@
+
+
+1.127
+log
+@Add support for `OP', one of the extended man macros.  This also requires
+some man(7) changes to accomodate for the an-ext compatibility.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.126 2011/12/04 23:10:52 schwarze Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010, 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.126
+log
+@Implement mdoc(7)-like output style variant for man(7) documents:
+* one instead of three blank lines after the page header;
+* one instead of three blank lines before the page footer;
+* source instead of title(section) in the lower right corner.
+Select this style variant with the undocumented command line option -Omdoc.
+In the long run, we hope to unify the ouput of both languages and
+to pull this out again, but that requires coordination with groff.
+
+Grudgingly ok and, (as usual,-) more comments requested by  kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.125 2011/12/04 00:44:12 schwarze Exp $ */
+a70 1
+static	int		  pre_alternate(DECL_ARGS);
+d75 1
+d81 2
+a86 1
+static	int		  pre_ft(DECL_ARGS);
+d129 1
+d329 23
+@
+
+
+1.125
+log
+@Jumping out of man_unscope() for the root node is a bad idea
+because that will skip root node validation, potentially entering
+rendering modules will NULL pointers lurking in the meta data.
+Instead, always validate the root node and (as suggested by joerg@@)
+assert validity of the meta data before using it in the renderers.
+ok joerg@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.124 2011/11/18 17:04:06 joerg Exp $ */
+d973 16
+a988 3
+	term_vspace(p);
+	term_vspace(p);
+	snprintf(title, BUFSIZ, "%s(%s)", meta->title, meta->msec);
+d991 2
+d1001 2
+d1012 2
+a1034 11
+	/*
+	 * Note that old groff would spit out some spaces before the
+	 * header.  We discontinue this strange behaviour, but at one
+	 * point we did so here.
+	 */
+
+	p->offset = 0;
+	p->rmargin = p->maxrmargin;
+
+	buf[0] = title[0] = '\0';
+
+d1037 2
+d1041 2
+d1056 2
+d1066 2
+d1082 3
+a1084 2
+	 * Groff likes to have some leading spaces before content.  Well
+	 * that's fine by me.
+d1088 4
+a1091 2
+	term_vspace(p);
+	term_vspace(p);
+@
+
+
+1.124
+log
+@Don't crash if the date can't be extracted. Don't depend on snprintf
+handling NULL strings.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.123 2011/11/13 15:33:41 schwarze Exp $ */
+d966 3
+d975 2
+a976 3
+	snprintf(title, BUFSIZ, "%s(%s)", meta->title ? meta->title : "",
+	    meta->msec ? meta->msec : "");
+	datelen = term_strlen(p, meta->date ? meta->date : "");
+d992 1
+a992 1
+	term_word(p, meta->date ? meta->date : "");
+d1013 2
+d1031 1
+a1031 2
+	snprintf(title, BUFSIZ, "%s(%s)", m->title ? m->title : "",
+	    m->msec ? m->msec : "");
+@
+
+
+1.123
+log
+@Make the man(7) page footer the same as in groff.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.122 2011/11/13 13:15:14 schwarze Exp $ */
+d972 3
+a974 2
+	snprintf(title, BUFSIZ, "%s(%s)", meta->title, meta->msec);
+	datelen = term_strlen(p, meta->date);
+d990 1
+a990 1
+	term_word(p, meta->date);
+d1027 2
+a1028 1
+	snprintf(title, BUFSIZ, "%s(%s)", m->title, m->msec);
+@
+
+
+1.122
+log
+@Make the default left text margin configurable from the command line,
+just like the default right margin already is.  This may be useful for
+people with expensive screen real estate.  Besides, it helps automated
+man(7) to mdoc(7) output comparisons to validate -Tman output.
+ok kristaps@@ on an earlier version
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.121 2011/09/21 09:57:13 schwarze Exp $ */
+d961 2
+d972 2
+a975 1
+	p->rmargin = p->maxrmargin - term_strlen(p, meta->date);
+d977 1
+a977 4
+
+	/* term_strlen() can return zero. */
+	if (p->rmargin == p->maxrmargin)
+		p->rmargin--;
+a980 2
+	if (meta->source)
+		term_word(p, "");
+d985 10
+a995 1
+	p->flags &= ~TERMP_NOBREAK;
+d997 1
+a997 1
+	term_word(p, meta->date);
+@
+
+
+1.121
+log
+@As noticed by kristaps@@, when breaking an overflowing line,
+forget about pending whitespace (vbl), or the next line would
+be misaligned and potentially too long; but i'm fixing this
+in a simpler way than he proposed.
+Also remove the kludges in .HP that compensated for this bug.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.120 2011/09/20 14:20:48 schwarze Exp $ */
+a35 2
+#define	INDENT		  7 /* fixed-width char full-indent */
+#define	HALFINDENT	  3 /* fixed-width char half-indent */
+d142 3
+d160 2
+a161 2
+	mt.lmargin[mt.lmargincur] = term_len(p, INDENT);
+	mt.offset = term_len(p, INDENT);
+d515 1
+a515 1
+		mt->lmargin[mt->lmargincur] = term_len(p, INDENT);
+d710 2
+a711 2
+		mt->lmargin[mt->lmargincur] = term_len(p, INDENT);
+		mt->offset = term_len(p, INDENT);
+d722 1
+a722 1
+		p->offset = term_len(p, HALFINDENT);
+d761 2
+a762 2
+		mt->lmargin[mt->lmargincur] = term_len(p, INDENT);
+		mt->offset = term_len(p, INDENT);
+d821 1
+a821 1
+	sz = term_len(p, INDENT);
+d855 1
+a855 1
+	sz = term_len(p, INDENT);
+@
+
+
+1.120
+log
+@Using user-defined macros, surprisingly, it is possible
+to have *next*-line head arguments on the *same* input line.
+So .TP must not assume that a head argument with a matching
+input line number is a same-line argument (and access a NULL pointer).
+Bug found and fix tested by kristaps@@ with groff_hdtbl(7).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.119 2011/09/20 13:13:23 schwarze Exp $ */
+d254 1
+a254 1
+		p->offset = p->rmargin + 1;
+d472 1
+a472 3
+	if (len > one)
+		len -= one;
+	else
+@
+
+
+1.119
+log
+@When advancing the left margin, .RS also needs to reset the right margin
+to the default and check that the left does not outgrow the right one.
+Otherwise, the (rmargin >= offset) assertion fails in term_flushln().
+Bug found and fix tested by kristaps@@ with NetBSD slapo-retcode(5).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.118 2011/09/20 09:02:23 schwarze Exp $ */
+d643 1
+a643 1
+		if (nn->parent->line == nn->line)
+@
+
+
+1.118
+log
+@Sync print_mdoc_head to print_man_head;
+this was forgotten after man_term.c rev. 1.25 on March 2, 2010.
+The benefit is a sane page header line when .Dt is very long.
+Reminded by Thomas Klausner <wiz at NetBSD>, thanks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.117 2011/09/19 22:36:16 schwarze Exp $ */
+d829 2
+a830 1
+	p->offset = mt->offset;
+@
+
+
+1.117
+log
+@Remove the terminal frontend flag TERMP_NOLPAD.
+
+In columnated contexts (.Bl -column, .Bl -tag, .IP, .TP, .HP etc.), do not
+pad after writing a column.  Instead, always pad before writing content.
+
+In itself, this change avoids:
+ - writing trailing whitespace in some situations
+ - with .fi/.nf in .HP, breaking lines that were already padded
+
+It allows several bugfixes included in this patch:
+ - Do not count backspace as a character with positive width.
+ - Set up proper indentation when encountering .fi/.nf in .HP.
+ - Adjust the .HP indentation width to what groff does.
+ - Never unlimit the right margin unless in the final column.
+
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.116 2011/09/18 21:08:34 schwarze Exp $ */
+d1010 1
+a1012 1
+	p->offset = 0;
+d1022 1
+a1027 1
+	p->flags |= TERMP_NOBREAK | TERMP_NOSPACE;
+d1049 2
+a1051 2
+	p->offset = 0;
+	p->flags &= ~TERMP_NOSPACE;
+@
+
+
+1.116
+log
+@Support nesting of indented blocks.
+
+This patch was originally written in July 2011 by kristaps@@,
+i promptly committed it to OpenBSD, and then it was forgotten.
+Now i rediscovered it when merging 1.11.7 to OpenBSD.
+
+ok kristaps@@  (on his own patch :)
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.115 2011/07/22 10:50:46 kristaps Exp $ */
+d248 12
+d446 1
+a446 1
+	size_t			 len;
+d471 5
+a475 2
+	if (0 == len)
+		len = term_len(p, 1);
+a537 1
+		p->flags |= TERMP_NOLPAD;
+a607 1
+		p->flags &= ~TERMP_NOLPAD;
+a627 1
+		p->flags |= TERMP_NOLPAD;
+a695 1
+		p->flags &= ~TERMP_NOLPAD;
+d896 1
+a896 1
+		if (MANT_LITERAL & mt->fl && 
+a903 1
+			p->flags &= ~TERMP_NOLPAD;
+d985 1
+a985 1
+	p->flags |= TERMP_NOLPAD | TERMP_NOSPACE;
+d1032 1
+a1032 1
+	p->flags |= TERMP_NOLPAD | TERMP_NOSPACE;
+d1042 1
+a1042 1
+		p->flags |= TERMP_NOLPAD | TERMP_NOSPACE;
+@
+
+
+1.115
+log
+@Add character output (-Tpdf, -Tps, -Tascii) for equations.  This is the
+minimum: unseparated terms.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.114 2011/07/21 11:34:53 kristaps Exp $ */
+d36 3
+a38 2
+#define	INDENT		  7
+#define	HALFINDENT	  3
+d45 4
+a48 15
+	/* 
+	 * Default amount to indent the left margin after leading text
+	 * has been printed (e.g., `HP' left-indent, `TP' and `IP' body
+	 * indent).  This needs to be saved because `HP' and so on, if
+	 * not having a specified value, must default.
+	 *
+	 * Note that this is the indentation AFTER the left offset, so
+	 * the total offset is usually offset + lmargin.
+	 */
+	size_t		  lmargin;
+	/*
+	 * The default offset, i.e., the amount between any text and the
+	 * page boundary.
+	 */
+	size_t		  offset;
+d157 3
+a159 2
+	mt.fl = 0;
+	mt.lmargin = term_len(p, INDENT);
+d450 1
+a450 1
+	len = mt->lmargin;
+d466 1
+a466 1
+		mt->lmargin = (size_t)ival;
+d501 1
+a501 1
+		mt->lmargin = term_len(p, INDENT);
+d536 1
+a536 1
+	len = mt->lmargin;
+d557 1
+a557 1
+		mt->lmargin = (size_t)ival;
+d625 1
+a625 1
+	len = (size_t)mt->lmargin;
+d630 2
+a631 4
+	if (NULL != (nn = n->parent->head->child)) {
+		while (nn && MAN_TEXT != nn->type)
+			nn = nn->next;
+		if (nn && nn->next)
+a633 1
+	}
+a653 1
+
+d655 1
+a655 1
+			mt->lmargin = (size_t)ival;
+d700 1
+a700 1
+		mt->lmargin = term_len(p, INDENT);
+d751 1
+a751 1
+		mt->lmargin = term_len(p, INDENT);
+d820 4
+d852 3
+@
+
+
+1.114
+log
+@Flip eqn into using parsed nodes.  I've temporarily disabled printing
+these in the front-ends except for -Ttree, which will display the parsed
+tree.
+
+While here, fix that quoted strings aren't scanned for replacement parts.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.113 2011/07/03 22:57:32 kristaps Exp $ */
+d908 1
+a908 1
+		/*term_word(p, n->eqn->data);*/
+@
+
+
+1.113
+log
+@Fix a TODO noted by schwarze@@, originally by Christian Weisgerber:
+literal mode (`nf') is ended by SH (and, it turns out, SS as well).
+Noted the updated behaviour in man.7 as well.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.112 2011/06/29 15:38:09 kristaps Exp $ */
+d908 1
+a908 1
+		term_word(p, n->eqn->data);
+@
+
+
+1.112
+log
+@First fix how `sp 1' doesn't imply `1v' (it now does) and that 1
+followed by non-digits, e.g. `1g', really means `1'.  Next, fix some
+spacing issues where `sp' was invoked in -man after sections or
+subsections.  Make sure this behaviour is mirrored in -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.111 2011/06/18 17:58:48 kristaps Exp $ */
+d712 1
+d763 1
+@
+
+
+1.111
+log
+@Fix two TODOs with one check-in.  Both of these relate to vertical space
+before paragraphs and/or within `RS' blocks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.110 2011/06/18 17:36:52 kristaps Exp $ */
+d184 1
+a184 1
+		SCALE_VS_INIT(&su, term_strlen(p, cp));
+d414 7
+@
+
+
+1.110
+log
+@Allow RS/RE blocks to nest.  This requires first the syntax tree to
+accomodate for the fix, then for the front-ends.  -T[x]html accepted the
+syntax tree natively, but -Tascii had to use relative offsets.  It's
+quite a simple fix.
+
+From a TODO by {dcoppa,dsoares}@@openbsd.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.109 2011/05/17 14:38:34 kristaps Exp $ */
+d201 8
+a208 1
+
+d212 1
+d215 3
+a217 2
+	if (n->body && n->body->child && MAN_TBL == n->body->child->type)
+		return;
+d219 3
+a221 7
+	if (NULL == n->prev)
+		return;
+
+	if (MAN_SS == n->prev->tok)
+		return;
+	if (MAN_SH == n->prev->tok)
+		return;
+a225 1
+
+@
+
+
+1.109
+log
+@Add mode for -Tlocale.  This mode, with this commit, behaves exactly
+like -Tascii.  While adding this, inline term_alloc() (was a one-liner),
+remove some switches around the terminal encoding for the symbol table
+(unnecessary), and split out ascii_alloc() into ascii_init(), which is
+also called from locale_init().
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.108 2011/04/30 22:14:42 kristaps Exp $ */
+a793 1
+
+d798 2
+a799 2
+	const struct man_node	*nn;
+	int			 ival;
+d811 1
+a811 5
+	if (NULL == (nn = n->parent->head->child)) {
+		mt->offset = mt->lmargin + term_len(p, INDENT);
+		p->offset = mt->offset;
+		return(1);
+	}
+d813 3
+a815 2
+	if ((ival = a2width(p, nn->string)) < 0)
+		return(1);
+d817 1
+a817 1
+	mt->offset = term_len(p, INDENT) + (size_t)ival;
+a822 1
+
+d827 2
+d832 1
+a832 2
+		mt->offset = mt->lmargin = term_len(p, INDENT);
+		break;
+d834 1
+a834 1
+		break;
+a836 1
+		p->offset = term_len(p, INDENT);
+d839 9
+a849 1
+
+@
+
+
+1.108
+log
+@Rename mchars_init() -> mchars_alloc() for consistency.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.107 2011/04/30 22:14:02 kristaps Exp $ */
+d159 1
+a159 8
+		switch (p->enc) {
+		case (TERMENC_ASCII):
+			p->symtab = mchars_alloc();
+			break;
+		default:
+			abort();
+			/* NOTREACHED */
+		}
+@
+
+
+1.107
+log
+@Remove enum mcharst, which hasn't been used in quite some time.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.106 2011/04/29 22:18:12 kristaps Exp $ */
+d161 1
+a161 1
+			p->symtab = mchars_init();
+@
+
+
+1.106
+log
+@Move "chars" interface out of out.h and into mandoc.h.  This doesn't
+change any code but for renaming functions and types to be consistent
+with other mandoc.h stuff.  The reason for moving into libmandoc is that
+the rendering of special characters is part of mandoc itself---not an
+external part.  From mandoc(1)'s perspective, this changes nothing, but
+for other utilities, it's important to have these part of libmandoc.
+Note this isn't documented [yet] in mandoc.3 because there are some
+parts I'd like to change around beforehand.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.105 2011/03/22 10:13:01 kristaps Exp $ */
+d161 1
+a161 1
+			p->symtab = mchars_init(MCHARS_ASCII);
+@
+
+
+1.105
+log
+@Step 4: merge chars.h into out.h.  The functions in this file are
+necessary to all [real] front-ends, so stop pretending it's special.
+While here, add some documentation to the variable types.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.104 2011/03/07 01:35:51 schwarze Exp $ */
+d161 1
+a161 1
+			p->symtab = chars_init(CHARS_ASCII);
+@
+
+
+1.104
+log
+@Clean up date handling,
+as a first step to get rid of the frequent petty warnings in this area:
+ - always store dates as strings, not as seconds since the Epoch
+ - for input, try the three most common formats everywhere
+ - for unrecognized format, just pass the date though verbatim
+ - when there is no date at all, still use the current date
+Originally triggered by a one-line patch from Tim van der Molen,
+<tbvdm at xs4all dot nl>, which is included here.
+Feedback and OK on manual parts from jmc@@.
+"please check this in" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.103 2011/02/09 09:52:47 kristaps Exp $ */
+a33 1
+#include "chars.h"
+@
+
+
+1.103
+log
+@EQN blocks are now printed in all modes.  This is simply a printing of
+the concatenated string (in -T[x]html, it gets a SPAN, too).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.102 2011/02/06 21:44:36 kristaps Exp $ */
+a948 1
+	char		buf[DATESIZ];
+a954 5
+	if (meta->rawdate)
+		strlcpy(buf, meta->rawdate, DATESIZ);
+	else
+		time2a(meta->date, buf, DATESIZ);
+
+d960 1
+a960 1
+	p->rmargin = p->maxrmargin - term_strlen(p, buf);
+d978 1
+a978 1
+	term_word(p, buf);
+@
+
+
+1.102
+log
+@Add initial libmdoc and libman top-most machinery for accepting TBL
+directives.  For now this will just ignore them (except for -Ttree,
+which just notes that an EQN's been accepted).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.101 2011/01/25 12:35:09 schwarze Exp $ */
+d900 1
+@
+
+
+1.101
+log
+@Avoid double blank line before a table preceded by .PP.
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.100 2011/01/23 14:54:21 schwarze Exp $ */
+d899 2
+@
+
+
+1.100
+log
+@Fix another regression caused by the reorg of print_man_node() in rev. 1.97:
+End-of-sentence spacing got lost for man(7) after plain text lines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.99 2011/01/17 00:21:29 schwarze Exp $ */
+d215 3
+@
+
+
+1.99
+log
+@Refrain from throwing fatal errors for
+* .br .sp .nf .fi .na with arguments - just skip the arguments
+* .TH lacking arguments - use empty strings instead like groff
+* .TH with excessive arguments - skip those
+Reminded by joerg@@, ok kristaps@@.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.98 2011/01/16 20:12:45 schwarze Exp $ */
+d892 3
+@
+
+
+1.98
+log
+@When processing a blank text line, do not break out of text processing
+into macro processing code.  Fixing a regression introduced in 1.95,
+found because it caused segfaults in my regression suite.
+OK kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.97 2011/01/12 15:23:25 kristaps Exp $ */
+d129 1
+a129 1
+	{ NULL, NULL, MAN_NOTEXT }, /* na */
+d258 1
+a258 1
+	return(1);
+@
+
+
+1.97
+log
+@Make -man -Tascii not break within literal lines, e.g.,
+
+ .nf
+ .B hello world
+ .fi
+
+Also, clean up the print_man_node() function a little bit.  This problem
+has long since been in the TODO and was recently noted again by Brad
+Smith.  The -T[x]html fix will follow...
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.96 2011/01/12 10:43:22 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@@bsd.lv>
+d867 1
+a867 1
+			break;
+@
+
+
+1.96
+log
+@If the first character of free-form text is whitespace, then a newline
+shall precede outputted text (surprise!).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.95 2011/01/11 00:39:00 kristaps Exp $ */
+a857 2
+	c = 1;
+
+d860 5
+d868 1
+a868 3
+		} 
+
+		if (' ' == *n->string && MAN_LINE & n->flags)
+d873 10
+a882 3
+		/* FIXME: this means that macro lines are munged!  */
+
+		if (MANT_LITERAL & mt->fl) {
+d892 1
+a892 2
+
+		break;
+d894 4
+d901 1
+a901 1
+		break;
+a902 4
+		if ( ! (MAN_NOTEXT & termacts[n->tok].flags))
+			term_fontrepl(p, TERMFONT_NONE);
+		if (termacts[n->tok].pre)
+			c = (*termacts[n->tok].pre)(p, mt, n, m);
+d906 7
+d916 4
+a919 12
+	switch (n->type) {
+	case (MAN_TEXT):
+		/* FALLTHROUGH */
+	case (MAN_TBL):
+		break;
+	default:
+		if (termacts[n->tok].post)
+			(*termacts[n->tok].post)(p, mt, n, m);
+		if ( ! (MAN_NOTEXT & termacts[n->tok].flags))
+			term_fontrepl(p, TERMFONT_NONE);
+		break;
+	}
+@
+
+
+1.95
+log
+@Don't let `in' creep past the right margin.
+
+From an assertion noted by Brad (at comstyle).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.94 2011/01/04 01:23:18 schwarze Exp $ */
+d862 1
+a862 1
+		if (0 == *n->string) {
+d865 4
+a868 1
+		}
+d884 1
+@
+
+
+1.94
+log
+@Multiple man(7) .IP and .TP fixes started during p2k10:
+
+Affecting both -Tascii and -Thtml:
+* The .IP HEAD uses the second argument as the width, not the last one.
+* Only print the first .IP HEAD argument, not all but the last.
+
+Affecting only -Tascii:
+* The .IP and .TP HEADs must be printed without literal mode,
+but literal mode must be restored afterwards.
+* After the .IP and .TP bodies, we only want term_newln(), not
+term_flushln(), or we would get two blank lines in literal mode.
+* The .TP HEAD does not use TWOSPACE, just like .IP doesn't either.
+* In literal mode, clear NOLPAD after each line, or subsequent lines
+would get no indentation whatsoever.
+
+Affecting only -Thtml:
+* Only print next-line .TP children, instead of all but the first.
+
+OK kristaps@@ on the -Tascii part; and:
+"Can you work this into man_html.c, too?"
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.93 2011/01/03 15:30:25 kristaps Exp $ */
+d400 5
+@
+
+
+1.93
+log
+@For tbl: -man documents print an extra space before `TS' blocks.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.92 2011/01/02 12:21:07 kristaps Exp $ */
+d4 1
+d517 1
+a517 1
+	int			 ival;
+d537 1
+a537 2
+	/* Calculate offset. */
+
+d539 1
+a539 3
+		if (NULL != (nn = nn->next)) {
+			for ( ; nn->next; nn = nn->next)
+				/* Do nothing. */ ;
+a541 1
+		}
+d557 9
+a565 3
+		/* Don't print the length value. */
+		for (nn = n->child; nn->next; nn = nn->next)
+			print_man_node(p, mt, nn, m);
+d591 1
+a591 1
+		term_flushln(p);
+d606 1
+a606 1
+	int			 ival;
+a610 1
+		p->flags |= TERMP_TWOSPACE;
+d645 3
+d649 1
+a649 1
+		for (nn = n->child; nn; nn = nn->next) 
+d653 3
+d685 1
+a685 1
+		term_flushln(p);
+d872 1
+@
+
+
+1.92
+log
+@Turn on -Tascii tbl printing.  The output still has some issues---I'm
+not sure whether it's in the header calculation or term.c squashing
+spaces or whatever, but let's get this in for general testing as soon as
+possible.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.91 2011/01/01 12:59:17 kristaps Exp $ */
+d869 2
+@
+
+
+1.91
+log
+@Add -man support for tables.  Like -mdoc, this consists of an
+external-facing function man_addspan() (this required shuffling around
+the descope routine) and hooks elsewhere.
+
+Also fixed mdoc.c's post-validation of tables.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.90 2010/12/08 10:58:22 kristaps Exp $ */
+d869 1
+@
+
+
+1.90
+log
+@Remove `i' and `r' macro handlers.  These macros, originally part of the
+me package, aren't recognised by "groff -mandoc" so we don't need to do
+so either.  Discussed on tech@@ with schwarze@@.
+
+While at it, remove references to `b' in man.7.  As far as I know, this
+was never supported anyway.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.89 2010/12/06 15:31:19 kristaps Exp $ */
+d868 2
+d881 6
+a886 1
+	if (MAN_TEXT != n->type) {
+d891 1
+@
+
+
+1.89
+log
+@Add support for `ft' macro found in groff(7).  Based on a patch by
+schwarze@@, but without the -T[x]html handling, which structurally does
+not work.  Also add man.7 documentation (not in original patch).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.88 2010/12/06 14:04:11 kristaps Exp $ */
+a128 1
+	{ pre_I, NULL, 0 }, /* i */
+a131 1
+	{ NULL, NULL, 0 }, /* r */
+@
+
+
+1.88
+log
+@My favourite: removing lots of code in favour of smaller, tighter code.
+Merge patch by schwarze@@ consolidating RB, BR, etc. into one function.
+man_html.c already does this.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.87 2010/12/06 13:53:07 kristaps Exp $ */
+d97 1
+d141 1
+d325 41
+@
+
+
+1.87
+log
+@Header for `PP', `P', and `LP' should never be printed.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.86 2010/12/05 16:14:16 kristaps Exp $ */
+d83 1
+a84 1
+static	int		  pre_BI(DECL_ARGS);
+a88 2
+static	int		  pre_RB(DECL_ARGS);
+static	int		  pre_RI(DECL_ARGS);
+d118 4
+a121 4
+	{ pre_BI, NULL, 0 }, /* BI */
+	{ pre_BI, NULL, 0 }, /* IB */
+	{ pre_RB, NULL, 0 }, /* BR */
+	{ pre_RB, NULL, 0 }, /* RB */
+d125 2
+a126 2
+	{ pre_RI, NULL, 0 }, /* IR */
+	{ pre_RI, NULL, 0 }, /* RI */
+d251 2
+a252 2
+	switch (n->tok) {
+	case (MAN_nf):
+d254 1
+a254 2
+		break;
+	default:
+a255 2
+		break;
+	}
+a259 2
+
+
+d262 1
+a262 1
+pre_RB(DECL_ARGS)
+d264 3
+a266 2
+	const struct man_node *nn;
+	int		 i;
+d268 28
+a295 7
+	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
+		if (i % 2 && MAN_RB == n->tok)
+			term_fontrepl(p, TERMFONT_BOLD);
+		else if ( ! (i % 2) && MAN_RB != n->tok)
+			term_fontrepl(p, TERMFONT_BOLD);
+		else
+			term_fontrepl(p, TERMFONT_NONE);
+d297 2
+a298 2
+		if (i > 0)
+			p->flags |= TERMP_NOSPACE;
+d300 4
+d305 1
+a305 21
+	}
+	return(0);
+}
+
+
+/* ARGSUSED */
+static int
+pre_RI(DECL_ARGS)
+{
+	const struct man_node *nn;
+	int		 i;
+
+	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
+		if (i % 2 && MAN_RI == n->tok)
+			term_fontrepl(p, TERMFONT_UNDER);
+		else if ( ! (i % 2) && MAN_RI != n->tok)
+			term_fontrepl(p, TERMFONT_UNDER);
+		else
+			term_fontrepl(p, TERMFONT_NONE);
+
+		if (i > 0)
+a306 2
+
+		print_man_node(p, mt, nn, m);
+a307 3
+	return(0);
+}
+
+a308 22
+/* ARGSUSED */
+static int
+pre_BI(DECL_ARGS)
+{
+	const struct man_node	*nn;
+	int			 i;
+
+	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
+		if (i % 2 && MAN_BI == n->tok)
+			term_fontrepl(p, TERMFONT_UNDER);
+		else if (i % 2)
+			term_fontrepl(p, TERMFONT_BOLD);
+		else if (MAN_BI == n->tok)
+			term_fontrepl(p, TERMFONT_BOLD);
+		else
+			term_fontrepl(p, TERMFONT_UNDER);
+
+		if (i)
+			p->flags |= TERMP_NOSPACE;
+
+		print_man_node(p, mt, nn, m);
+	}
+a311 1
+
+a320 1
+
+@
+
+
+1.86
+log
+@Remove `Sp', `Vb', and `Ve' (as per schwarze@@'s changes in OpenBSD),
+which are now accomodated for the new libroff modifications.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.85 2010/09/15 14:36:16 kristaps Exp $ */
+d495 1
+a495 1
+	return(1);
+@
+
+
+1.85
+log
+@Allow string lengths to account for escapes.  Now all calls to calculate
+column width in -Tascii, -Tpdf, and -Tps will account for "more real"
+string lengths.
+
+Example:
+
+.Bl -tag -width \s[+123424]foo
+.It bar
+baz
+.El
+
+The size escape will be correctly tossed.
+
+.Bl -tag -width \(aqbar
+.It \(aqbar
+baz
+.El
+
+The \(aq will be correctly handled.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.84 2010/07/23 13:22:35 kristaps Exp $ */
+a139 3
+ 	{ pre_sp, NULL, MAN_NOTEXT }, /* Sp */
+ 	{ pre_literal, NULL, 0 }, /* Vb */
+ 	{ pre_literal, NULL, 0 }, /* Ve */
+a253 2
+	case (MAN_Vb):
+		/* FALLTHROUGH */
+d256 1
+a256 1
+		return(MAN_Vb != n->tok);
+@
+
+
+1.84
+log
+@Collapse `nf', `fi', `Vb', and `Ve' into one function as in man_html.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.83 2010/07/22 23:03:15 kristaps Exp $ */
+d919 4
+@
+
+
+1.83
+log
+@Added `in' macro support for -man -Tascii.  This is not yet supported in
+-Thtml (I'm surprised to note that neither is LITERAL mode).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.82 2010/07/22 13:47:50 kristaps Exp $ */
+a94 1
+static	int		  pre_fi(DECL_ARGS);
+d97 1
+a97 1
+static	int		  pre_nf(DECL_ARGS);
+d132 2
+a133 2
+	{ pre_nf, NULL, 0 }, /* nf */
+	{ pre_fi, NULL, 0 }, /* fi */
+d141 2
+a142 2
+ 	{ pre_nf, NULL, 0 }, /* Vb */
+ 	{ pre_fi, NULL, 0 }, /* Ve */
+d252 1
+a252 1
+pre_fi(DECL_ARGS)
+d256 11
+a266 1
+	mt->fl &= ~MANT_LITERAL;
+a270 10
+/* ARGSUSED */
+static int
+pre_nf(DECL_ARGS)
+{
+
+	term_newln(p);
+	mt->fl |= MANT_LITERAL;
+	return(MAN_Vb != n->tok);
+}
+
+@
+
+
+1.82
+log
+@Bring `sp', `Sp', and `br' behaviour for -man in line with how -mdoc's
+is handled: correctly.  This removes superfluous line breaks in many
+-man manuals.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.81 2010/07/22 13:36:25 kristaps Exp $ */
+d97 1
+d145 1
+d359 41
+@
+
+
+1.81
+log
+@Have `nf' and `fi' flush lines.  This is necessary or the LITERAL will
+be meaningless when invoked within a non-flushing context.  This based
+on a formatting bug report submitted by Jonathon Gray (jsg@@) via
+Christian Weisgerber (naddy@@).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.80 2010/07/13 23:53:20 schwarze Exp $ */
+a94 1
+static	int		  pre_br(DECL_ARGS);
+d108 1
+a108 1
+	{ pre_br, NULL, MAN_NOTEXT }, /* br */
+d361 8
+a368 2
+	len = n->child ? 
+		a2height(p, n->child->string) : term_len(p, 1);
+d372 1
+a372 1
+	for (i = 0; i <= len; i++)
+a380 10
+pre_br(DECL_ARGS)
+{
+
+	term_newln(p);
+	return(0);
+}
+
+
+/* ARGSUSED */
+static int
+@
+
+
+1.80
+log
+@correct lots of copyright notices;
+ok kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.79 2010/07/07 15:04:54 kristaps Exp $ */
+d255 1
+d266 1
+@
+
+
+1.79
+log
+@Re-constitution of `ds' symbol processing.  First, push the
+roff_getstr() family of functions into roff.c with the "first_string"
+directly in struct roff.  Second, pre-process each line for reserved
+words in libroff, splicing and re-running a line if it has one (this
+allows defined symbols to be macros).  Remove term.c's invocation of the
+roff_getstrn() function.  Removed function documentation in roff.3 and
+added roff.7 `ds' documentation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.78 2010/06/26 15:36:37 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@bsd.lv>
+@
+
+
+1.78
+log
+@Churn-ish check-in getting mdoc_parseln() and man_parseln() to accept a
+const struct regset pointer.  No functionality.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.77 2010/06/25 18:53:14 kristaps Exp $ */
+a30 1
+#include "regs.h"
+@
+
+
+1.77
+log
+@Initial chunks for variable-width fonts.  Pushes all width calculations
+in mdoc_term.c and man_term.c down into term.c.  This is still not
+implemented in term.c, although stubs for width calculations are in
+place.  From now on, offset, rmargin, and other layout variables are
+abstract screen widths.  They will resolve to the the familiar values
+for -Tascii but -Tps will eventually use points instead of chars.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.76 2010/06/19 20:46:28 kristaps Exp $ */
+d31 1
+@
+
+
+1.76
+log
+@Churn as I finish email address migration kth.se -> bsd.lv.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.75 2010/06/10 23:24:37 schwarze Exp $ */
+d73 2
+a74 2
+static	int		  a2width(const struct man_node *);
+static	int		  a2height(const struct man_node *);
+d161 1
+a161 1
+	p->tabwidth = 5;
+d180 2
+a181 2
+	mt.lmargin = INDENT;
+	mt.offset = INDENT;
+d190 2
+a191 2
+static int
+a2height(const struct man_node *n)
+d195 2
+a196 4
+	assert(MAN_TEXT == n->type);
+	assert(n->string);
+	if ( ! a2roffsu(n->string, &su, SCALE_VS))
+		SCALE_VS_INIT(&su, strlen(n->string));
+d198 1
+a198 1
+	return((int)term_vspan(&su));
+d203 1
+a203 1
+a2width(const struct man_node *n)
+d207 1
+a207 3
+	assert(MAN_TEXT == n->type);
+	assert(n->string);
+	if ( ! a2roffsu(n->string, &su, SCALE_BU))
+d210 1
+a210 1
+	return((int)term_hspan(&su));
+d358 1
+a358 1
+	int		 i, len;
+d360 2
+a361 1
+	len = n->child ? a2height(n->child) : 1;
+d408 1
+a408 1
+		if ((ival = a2width(nn)) >= 0)
+d412 1
+a412 1
+		len = 1;
+d453 1
+a453 1
+		mt->lmargin = INDENT;
+d497 1
+a497 1
+			if ((ival = a2width(nn)) >= 0)
+d505 1
+a505 1
+			len = 1;
+d585 1
+a585 1
+			if ((ival = a2width(nn)) >= 0)
+d593 1
+a593 1
+			len = 1;
+d648 2
+a649 2
+		mt->lmargin = INDENT;
+		mt->offset = INDENT;
+d660 1
+a660 1
+		p->offset = HALFINDENT;
+d698 2
+a699 2
+		mt->lmargin = INDENT;
+		mt->offset = INDENT;
+d760 1
+a760 1
+		mt->offset = mt->lmargin + INDENT;
+d765 1
+a765 1
+	if ((ival = a2width(nn)) < 0)
+d768 1
+a768 1
+	mt->offset = INDENT + (size_t)ival;
+d782 1
+a782 1
+		mt->offset = mt->lmargin = INDENT;
+d788 1
+a788 1
+		p->offset = INDENT;
+d877 1
+a877 1
+	p->rmargin = p->maxrmargin - strlen(buf);
+d918 1
+a918 1
+	buflen = strlen(buf);
+d921 1
+a921 1
+	titlen = strlen(title);
+d925 2
+a926 1
+	    (p->maxrmargin - strlen(buf) + 1) / 2 :
+@
+
+
+1.75
+log
+@Fix a regression that crept in in man_term.c 1.73 and mdoc_term.c 1.144.
+When the title line uses special characters, mandoc will segfault.
+Thus, first set up the character tables, then print the header,
+as we always did.
+
+Found in OpenBSD /usr/src/usr.sbin/bind/bin/check/named-checkconf.8.
+
+While here, set p->tabwidth in terminal_man() for symmetry
+with terminal_mdoc(), as suggested by millert@@ (and already
+committed to OpenBSD earlier).   Since 5 is the default, this
+is not strictly required, but it is certainly clearer and more
+robust.
+
+"looks fine" kristaps@@
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.74 2010/06/09 08:07:13 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@kth.se>
+@
+
+
+1.74
+log
+@Have the standard manpage header and footer print on every page of -Tps
+output.  This is more tricky than you may think:  we can't just call the
+header function out-of-state (i.e., before a flushln has occured)
+because we'd clobber our current state.  Thus, we call at the beginning
+and dump the output into an auxiliary buffer.
+
+For the record, I don't think there's any other clean way to do this.
+The only other Way That Works is to copy-aside *all* termp state, zero
+it, and do the necessary headf/footf.  This is just as complex, as
+memory needs to be alloc'd and free'd per margin.
+
+Unfortunately, this prohibits page numbering (the margin is only printed
+once), so I'll probably end up re-writing this down the line.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.73 2010/06/07 20:57:09 kristaps Exp $ */
+d161 1
+a161 2
+
+	term_begin(p, print_man_head, print_man_foot, man_meta(man));
+d176 1
+@
+
+
+1.73
+log
+@First check-in of PostScript output.  This does not change any logic
+within term.c, but does add a small shim over putchar() that switches on
+the output engine.  Prints, for this initial version, only monospace and
+without font decorations.  It's a start.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.72 2010/05/26 14:03:54 kristaps Exp $ */
+a75 1
+static	void		  print_man_head(struct termp *, const void *);
+d78 1
+@
+
+
+1.72
+log
+@Allow bad -man dates to flow verbatim into the front-ends.  Noted by
+Ulrich Spoerlein.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.71 2010/05/17 22:11:42 kristaps Exp $ */
+d76 1
+a76 2
+static	void		  print_man_head(struct termp *, 
+				const struct man_meta *);
+d79 1
+a79 2
+static	void		  print_man_foot(struct termp *, 
+				const struct man_meta *);
+d162 2
+a176 1
+	print_man_head(p, m);
+d185 2
+a186 1
+	print_man_foot(p, m);
+d861 1
+a861 1
+print_man_foot(struct termp *p, const struct man_meta *meta)
+d864 3
+d900 1
+a900 1
+print_man_head(struct termp *p, const struct man_meta *m)
+d904 3
+@
+
+
+1.71
+log
+@Enable the unified error/warning enumeration in mandoc.h that's
+stringified in main.c.
+
+Allow `An' to handle an argument and child (with a warning).
+
+Allow `Rv' and `Ex' to work without a prior `Nm' as groff does (with a
+warning).
+
+Allow inconsistent column syntax to only raise a warning.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.70 2010/05/17 10:50:32 joerg Exp $ */
+d867 4
+a870 1
+	time2a(meta->date, buf, DATESIZ);
+@
+
+
+1.70
+log
+@Add support for .AT. Properly implement .UC. Add regress tests.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.69 2010/05/17 10:26:49 joerg Exp $ */
+d29 1
+@
+
+
+1.69
+log
+@groff uses three vspaces before the footer too.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.68 2010/05/15 22:44:04 kristaps Exp $ */
+d145 1
+@
+
+
+1.68
+log
+@Remove `am', `ami', `de', `dei', and `.' from -man, as they're now in the roff preprocessor.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.67 2010/05/15 20:51:40 kristaps Exp $ */
+d868 2
+@
+
+
+1.67
+log
+@Pull `ig' out of -man and leave it the roff preparser.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.66 2010/05/15 17:25:21 joerg Exp $ */
+a144 5
+ 	{ pre_ign, NULL, MAN_NOTEXT }, /* de */
+ 	{ pre_ign, NULL, MAN_NOTEXT }, /* dei */
+ 	{ pre_ign, NULL, MAN_NOTEXT }, /* am */
+ 	{ pre_ign, NULL, MAN_NOTEXT }, /* ami */
+ 	{ NULL, NULL, 0 }, /* . */
+@
+
+
+1.66
+log
+@For .IP groff requires a single space only after the head, adopt.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.65 2010/05/15 16:18:23 joerg Exp $ */
+a148 1
+ 	{ pre_ign, NULL, MAN_NOTEXT }, /* ig */
+@
+
+
+1.65
+log
+@Make the output width an option for ascii_alloc and use that to compute
+the default margin. Hard-code 80 chars/line for now.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.64 2010/05/15 15:54:39 kristaps Exp $ */
+a486 1
+		p->flags |= TERMP_TWOSPACE;
+a546 1
+		p->flags &= ~TERMP_TWOSPACE;
+@
+
+
+1.64
+log
+@Removed restriction on integer manual sections in -man.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.63 2010/05/12 16:46:28 kristaps Exp $ */
+d166 1
+a166 1
+	p->maxrmargin = 65;
+d806 1
+d823 2
+d828 2
+a829 1
+			p->rmargin = p->maxrmargin = 65;
+@
+
+
+1.63
+log
+@End-of-sentence spacing for -man -Tascii.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.62 2010/05/10 08:31:41 kristaps Exp $ */
+d914 1
+a914 1
+	snprintf(title, BUFSIZ, "%s(%d)", m->title, m->msec);
+@
+
+
+1.62
+log
+@Back out OpenBSD special case (ok Ingo Schwarze).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.61 2010/05/10 08:27:09 kristaps Exp $ */
+d845 3
+@
+
+
+1.61
+log
+@Proper leading spaces for new- and old-groff in -man -Tascii mode.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.60 2010/05/10 08:05:17 kristaps Exp $ */
+d896 6
+a903 6
+#ifdef	__OpenBSD__
+	term_vspace(p);
+	term_vspace(p);
+	term_vspace(p);
+#endif
+
+d944 5
+a948 1
+#ifdef	__OpenBSD__
+a950 1
+#else
+a951 3
+	term_vspace(p);
+	term_vspace(p);
+#endif
+@
+
+
+1.60
+log
+@-man also now has unbound margins for literal context.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.59 2010/03/24 20:10:53 kristaps Exp $ */
+d372 1
+a372 1
+	for (i = 0; i < len; i++)
+d713 3
+d898 6
+d943 9
+@
+
+
+1.59
+log
+@Using man_node_delete() instead of man_node_free()/man_node_freelist() and friends (much simpler).
+Split blk_imp() into blk_exp() (explicit macros), blk_dotted() (roff macros), and the original.
+Added de, dei, am, ami, and ig roff macros (for now, these are discarded within the parse).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.58 2010/03/23 12:42:22 kristaps Exp $ */
+a262 1
+	p->rmargin = p->maxrmargin = 65;
+a272 2
+	p->rmargin = p->maxrmargin = 78;
+	term_newln(p);
+a273 1
+
+d819 1
+d822 1
+@
+
+
+1.58
+log
+@Fixed two very subtle bugs in retaining overstep and maxrmargin widths between parse sequences.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.57 2010/03/23 11:30:48 kristaps Exp $ */
+d145 6
+d794 2
+@
+
+
+1.57
+log
+@Support for pod2man standard header macros (Vb, Ve, Sp).  Based largely on a set of patches by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.56 2010/03/22 05:59:32 kristaps Exp $ */
+d159 3
+a164 1
+			p->maxrmargin = 65;
+d888 1
+@
+
+
+1.56
+log
+@Accomodate (libman) for next-line macros followed by non-text macros `na', `sp', and `br'.
+Based on a patch by Ingo Schwarze.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.55 2010/01/01 17:14:28 kristaps Exp $ */
+d142 3
+d162 1
+d255 1
+d266 1
+d269 2
+a270 1
+	return(1);
+d883 1
+d891 1
+d894 1
+d897 3
+a899 1
+	p->rmargin = (p->maxrmargin - strlen(buf) + 1) / 2;
+d907 2
+a908 1
+	p->rmargin = p->maxrmargin - strlen(title);
+a912 2
+	p->offset = p->rmargin;
+	p->rmargin = p->maxrmargin;
+d914 7
+a920 4
+	p->flags |= TERMP_NOLPAD | TERMP_NOSPACE;
+
+	term_word(p, title);
+	term_flushln(p);
+@
+
+
+1.55
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.54 2009/11/12 08:21:05 kristaps Exp $ */
+d68 2
+d110 32
+a141 32
+	{ pre_br, NULL }, /* br */
+	{ NULL, NULL }, /* TH */
+	{ pre_SH, post_SH }, /* SH */
+	{ pre_SS, post_SS }, /* SS */
+	{ pre_TP, post_TP }, /* TP */
+	{ pre_PP, NULL }, /* LP */
+	{ pre_PP, NULL }, /* PP */
+	{ pre_PP, NULL }, /* P */
+	{ pre_IP, post_IP }, /* IP */
+	{ pre_HP, post_HP }, /* HP */ 
+	{ NULL, NULL }, /* SM */
+	{ pre_B, NULL }, /* SB */
+	{ pre_BI, NULL }, /* BI */
+	{ pre_BI, NULL }, /* IB */
+	{ pre_RB, NULL }, /* BR */
+	{ pre_RB, NULL }, /* RB */
+	{ NULL, NULL }, /* R */
+	{ pre_B, NULL }, /* B */
+	{ pre_I, NULL }, /* I */
+	{ pre_RI, NULL }, /* IR */
+	{ pre_RI, NULL }, /* RI */
+	{ NULL, NULL }, /* na */
+	{ pre_I, NULL }, /* i */
+	{ pre_sp, NULL }, /* sp */
+	{ pre_nf, NULL }, /* nf */
+	{ pre_fi, NULL }, /* fi */
+	{ NULL, NULL }, /* r */
+	{ NULL, NULL }, /* RE */
+	{ pre_RS, post_RS }, /* RS */
+	{ pre_ign, NULL }, /* DT */
+	{ pre_ign, NULL }, /* UC */
+	{ pre_ign, NULL }, /* PD */
+d579 4
+a582 2
+	if (NULL != (nn = n->parent->head->child))
+		if (NULL != nn->next)
+d585 1
+d811 2
+a812 1
+		term_fontrepl(p, TERMFONT_NONE);
+d824 2
+a825 1
+		term_fontrepl(p, TERMFONT_NONE);
+@
+
+
+1.54
+log
+@Fixed \c support for all input and output modes (documented in mandoc_char.7).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.53 2009/11/12 08:00:21 kristaps Exp $ */
+d17 4
+a69 5
+#ifdef __linux__
+extern	size_t		  strlcpy(char *, const char *, size_t);
+extern	size_t		  strlcat(char *, const char *, size_t);
+#endif
+
+@
+
+
+1.53
+log
+@Deprecated ".i <notext>" support (nobody uses it -- it can be re-added, but adds a bit of complexity that I'd rather avoid).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.52 2009/11/12 05:50:12 kristaps Exp $ */
+d786 1
+a786 1
+	int		 c, sz;
+d796 1
+a796 7
+		/*
+		 * Note!  This is hacky.  Here, we recognise the `\c'
+		 * escape embedded in so many -man pages.  It's supposed
+		 * to remove the subsequent space, so we mark NOSPACE if
+		 * it's encountered in the string.
+		 */
+		sz = (int)strlen(n->string);
+a797 3
+		if (sz >= 2 && n->string[sz - 1] == 'c' &&
+				n->string[sz - 2] == '\\')
+			p->flags |= TERMP_NOSPACE;
+@
+
+
+1.52
+log
+@Basically re-wrote -Tascii font handling: instead of incrementers for
+bold and underline, we use a stack (no cascading, no double-font-mode).
+Font modes with \f only affect the current stack point, as documented in
+mdoc.7 and man.7.  While -mdoc stacks fonts with embedded macros, -man
+replaces them (the stack is always size 1).  This works for all
+invocations in supported systems' manual corpora to date.  It doesn't
+support groff's insanity with line-scoped \f as documented in mdoc.7.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.51 2009/11/10 12:03:30 kristaps Exp $ */
+a106 1
+static	void		  post_i(DECL_ARGS);
+d131 1
+a131 1
+	{ pre_I, post_i }, /* i */
+a245 11
+static void
+post_i(DECL_ARGS)
+{
+
+	/* FIXME */
+	/*if (n->nchild)
+		p->under--;*/
+}
+
+
+/* ARGSUSED */
+@
+
+
+1.51
+log
+@Noted that -man text decoration is re-set when exiting a macro invocation.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.50 2009/11/10 11:45:57 kristaps Exp $ */
+d76 1
+a76 1
+static	void		  print_man_body(DECL_ARGS);
+a98 1
+static	int		  pre_r(DECL_ARGS);
+a100 2
+static	void		  post_B(DECL_ARGS);
+static	void		  post_I(DECL_ARGS);
+d121 1
+a121 1
+	{ pre_B, post_B }, /* SB */
+d127 2
+a128 2
+	{ pre_B, post_B }, /* B */
+	{ pre_I, post_I }, /* I */
+d136 1
+a136 1
+	{ pre_r, NULL }, /* r */
+d177 1
+a177 1
+		print_man_body(p, &mt, n->child, m);
+d241 1
+a241 11
+	p->under++;
+	return(1);
+}
+
+
+/* ARGSUSED */
+static int
+pre_r(DECL_ARGS)
+{
+
+	p->bold = p->under = 0;
+d251 3
+a253 11
+	if (n->nchild)
+		p->under--;
+}
+
+
+/* ARGSUSED */
+static void
+post_I(DECL_ARGS)
+{
+
+	p->under--;
+d287 1
+a287 1
+			p->bold++;
+d289 3
+a291 1
+			p->bold++;
+a296 5
+
+		if (i % 2 && MAN_RB == n->tok)
+			p->bold--;
+		else if ( ! (i % 2) && MAN_RB != n->tok)
+			p->bold--;
+d311 1
+a311 1
+			p->under++;
+d313 3
+a315 1
+			p->under++;
+d319 1
+a320 5
+
+		if (i % 2 && MAN_RI == n->tok)
+			p->under--;
+		else if ( ! (i % 2) && MAN_RI != n->tok)
+			p->under--;
+d335 1
+a335 1
+			p->under++;
+d337 1
+a337 1
+			p->bold++;
+d339 1
+a339 1
+			p->bold++;
+d341 1
+a341 1
+			p->under++;
+d345 1
+a346 9
+
+		if (i % 2 && MAN_BI == n->tok)
+			p->under--;
+		else if (i % 2)
+			p->bold--;
+		else if (MAN_BI == n->tok)
+			p->bold--;
+		else
+			p->under--;
+d357 1
+a357 1
+	p->bold++;
+a362 9
+static void
+post_B(DECL_ARGS)
+{
+
+	p->bold--;
+}
+
+
+/* ARGSUSED */
+d665 1
+a665 1
+		p->bold++;
+a686 1
+		p->bold--;
+d713 1
+a713 1
+		p->bold++;
+a734 1
+		p->bold--;
+d819 1
+d821 1
+d828 1
+d835 1
+a835 1
+		print_man_body(p, mt, n->child, m);
+d840 1
+a840 3
+
+		/* Reset metafont upon exit from macro. */
+		p->metafont = 0;
+d846 1
+a846 1
+print_man_body(DECL_ARGS)
+d852 1
+a852 1
+	print_man_body(p, mt, n->next, m);
+d861 1
+a861 1
+	p->metafont = 0;
+@
+
+
+1.50
+log
+@Disable metafonts when printing document footer.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.49 2009/11/05 08:39:36 kristaps Exp $ */
+d879 1
+a879 1
+	if (MAN_TEXT != n->type)
+d882 4
+@
+
+
+1.49
+log
+@Consolidated `RI' and `IR' handlers (-man -Tascii).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.48 2009/11/05 08:37:12 kristaps Exp $ */
+d901 2
+@
+
+
+1.48
+log
+@Fixed `RI' (was reversed).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.47 2009/10/30 18:53:08 kristaps Exp $ */
+a87 1
+static	int		  pre_IR(DECL_ARGS);
+d132 1
+a132 1
+	{ pre_IR, NULL }, /* IR */
+a300 20
+pre_IR(DECL_ARGS)
+{
+	const struct man_node *nn;
+	int		 i;
+
+	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
+		if ( ! (i % 2))
+			p->under++;
+		if (i > 0)
+			p->flags |= TERMP_NOSPACE;
+		print_man_node(p, mt, nn, m);
+		if ( ! (i % 2))
+			p->under--;
+	}
+	return(0);
+}
+
+
+/* ARGSUSED */
+static int
+d334 3
+a336 1
+		if (i % 2)
+d338 1
+d342 4
+a345 1
+		if (i % 2)
+@
+
+
+1.47
+log
+@More lint fixes.
+Removed err.h from inclusions (less main.c--still in progress).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.46 2009/10/27 08:49:44 kristaps Exp $ */
+d355 1
+a355 1
+		if ( ! (i % 2))
+d360 1
+a360 1
+		if ( ! (i % 2))
+@
+
+
+1.46
+log
+@Removed dynamic allocations of header/footer data.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.45 2009/10/26 04:09:45 kristaps Exp $ */
+a20 1
+#include <err.h>
+@
+
+
+1.45
+log
+@Full `%U' support.
+`Lk' display fixed.
+Renamed arg2xxxx as a2xxxx for consistency.
+Renamed print_foot to print_man_foot for consistency.
+Removed default printing of `~' when `Lk' not provided (not sure where I got that from).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.44 2009/10/24 05:45:05 kristaps Exp $ */
+d942 1
+a942 1
+print_man_head(struct termp *p, const struct man_meta *meta)
+d944 1
+a944 1
+	char		*buf, *title;
+d948 1
+d950 2
+a951 9
+	if (NULL == (buf = malloc(p->rmargin)))
+		err(EXIT_FAILURE, "malloc");
+	if (NULL == (title = malloc(p->rmargin)))
+		err(EXIT_FAILURE, "malloc");
+
+	if (meta->vol)
+		(void)strlcpy(buf, meta->vol, p->rmargin);
+	else
+		*buf = 0;
+d953 1
+a953 2
+	(void)snprintf(title, p->rmargin, "%s(%d)", 
+			meta->title, meta->msec);
+a979 3
+
+	free(title);
+	free(buf);
+a980 1
+
+@
+
+
+1.44
+log
+@Added `PD' to -man (doesn't do anything, yet).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.43 2009/10/22 18:55:32 kristaps Exp $ */
+d72 2
+a73 2
+static	int		  arg2width(const struct man_node *);
+static	int		  arg2height(const struct man_node *);
+d75 1
+a75 1
+static	void		  print_head(struct termp *, 
+d77 3
+a79 3
+static	void		  print_body(DECL_ARGS);
+static	void		  print_node(DECL_ARGS);
+static	void		  print_foot(struct termp *, 
+d174 1
+a174 1
+	print_head(p, m);
+d182 2
+a183 2
+		print_body(p, &mt, n->child, m);
+	print_foot(p, m);
+d188 1
+a188 1
+arg2height(const struct man_node *n)
+d202 1
+a202 1
+arg2width(const struct man_node *n)
+d313 1
+a313 1
+		print_node(p, mt, nn, m);
+d337 1
+a337 1
+		print_node(p, mt, nn, m);
+d360 1
+a360 1
+		print_node(p, mt, nn, m);
+d387 1
+a387 1
+		print_node(p, mt, nn, m);
+d427 1
+a427 1
+	len = n->child ? arg2height(n->child) : 1;
+d474 1
+a474 1
+		if ((ival = arg2width(nn)) >= 0)
+d564 1
+a564 1
+			if ((ival = arg2width(nn)) >= 0)
+d584 1
+a584 1
+			print_node(p, mt, nn, m);
+d651 1
+a651 1
+			if ((ival = arg2width(nn)) >= 0)
+d666 1
+a666 1
+				print_node(p, mt, nn, m);
+d829 1
+a829 1
+	if ((ival = arg2width(nn)) < 0)
+d857 1
+a857 1
+print_node(DECL_ARGS)
+d893 1
+a893 1
+		print_body(p, mt, n->child, m);
+d902 1
+a902 1
+print_body(DECL_ARGS)
+d905 1
+a905 1
+	print_node(p, mt, n, m);
+d908 1
+a908 1
+	print_body(p, mt, n->next, m);
+d913 1
+a913 1
+print_foot(struct termp *p, const struct man_meta *meta)
+d942 1
+a942 1
+print_head(struct termp *p, const struct man_meta *meta)
+@
+
+
+1.43
+log
+@Fixed maddening mismatch between groff and strftime mismatch of day ("%e").  Noted by Ulrich Sporlein.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.42 2009/10/21 03:31:49 kristaps Exp $ */
+d35 2
+d146 1
+@
+
+
+1.42
+log
+@Fixed strftime stray %d -> %e (pointed out by Ulrich Sporlein).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.41 2009/10/18 19:17:14 kristaps Exp $ */
+d912 1
+a912 2
+	struct tm	*tm;
+	char		 buf[BUFSIZ];
+d914 1
+a914 4
+	tm = localtime(&meta->date);
+
+	if (0 == strftime(buf, p->rmargin, "%B %e, %Y", tm))
+		(void)strlcpy(buf, "(invalid date)", BUFSIZ);
+@
+
+
+1.41
+log
+@Lint fixes.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.40 2009/10/18 19:03:37 kristaps Exp $ */
+d917 1
+a917 1
+	if (0 == strftime(buf, p->rmargin, "%B %d, %Y", tm))
+@
+
+
+1.40
+log
+@Made sure devices and formats recognise that -man and -mdoc have different syntax for scaling widths: -mdoc assumes no unit means that the value is a string literal while -man instead uses the default vertical/horizontal scale.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.39 2009/10/18 13:34:16 kristaps Exp $ */
+d194 1
+a194 1
+	return(term_vspan(&su));
+d206 1
+a206 1
+		SCALE_HS_INIT(&su, strlen(n->string) + 2);
+d208 1
+a208 1
+	return(term_hspan(&su));
+@
+
+
+1.39
+log
+@Arbitrary horizontal and vertical scaling widths now handled by -mdoc -Tascii.
+Terminal scaling backend pushed into term.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.38 2009/10/18 11:52:18 kristaps Exp $ */
+d26 1
+d187 1
+a187 1
+	int		r;
+d191 2
+d194 1
+a194 4
+	if ((r = a2height(n->string)) < 0)
+		return(1);
+
+	return(r);
+d201 1
+d205 4
+a208 1
+	return(a2width(n->string));
+@
+
+
+1.38
+log
+@Fitted -man -Tascii with scaling units (.5i, etc.).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.37 2009/10/18 11:14:04 kristaps Exp $ */
+a29 1
+#include "out.h"
+d64 17
+a144 15
+#ifdef __linux__
+extern	size_t		  strlcpy(char *, const char *, size_t);
+extern	size_t		  strlcat(char *, const char *, size_t);
+#endif
+
+static	void		  print_head(struct termp *, 
+				const struct man_meta *);
+static	void		  print_body(DECL_ARGS);
+static	void		  print_node(DECL_ARGS);
+static	void		  print_foot(struct termp *, 
+				const struct man_meta *);
+static	void		  fmt_block_vspace(struct termp *, 
+				const struct man_node *);
+static	int		  a2width(const char *);
+static	int		  a2height(const char *);
+d183 2
+a184 2
+static void
+fmt_block_vspace(struct termp *p, const struct man_node *n)
+d186 1
+a186 1
+	term_newln(p);
+d188 2
+a189 2
+	if (NULL == n->prev)
+		return;
+d191 2
+a192 4
+	if (MAN_SS == n->prev->tok)
+		return;
+	if (MAN_SH == n->prev->tok)
+		return;
+d194 1
+a194 1
+	term_vspace(p);
+d199 1
+a199 1
+a2height(const char *p)
+a200 2
+	struct roffsu	 su;
+	double		 r;
+d202 3
+a204 31
+	if ( ! a2roffsu(p, &su)) 
+		return(1);
+
+	switch (su.unit) {
+	case (SCALE_CM):
+		r = su.scale * 2;
+		break;
+	case (SCALE_IN):
+		r = su.scale * 6;
+		break;
+	case (SCALE_PC):
+		r = su.scale;
+		break;
+	case (SCALE_PT):
+		r = su.scale / 8;
+		break;
+	case (SCALE_MM):
+		r = su.scale / 1000;
+		break;
+	case (SCALE_VS):
+		r = su.scale;
+		break;
+	default:
+		r = su.scale - 1;
+		break;
+	}
+
+	if (r < 0.0)
+		r = 0.0;
+	return(/* LINTED */(int)
+			r);
+d208 2
+a209 2
+static int
+a2width(const char *p)
+d211 1
+a211 2
+	struct roffsu	 su;
+	double		 r;
+d213 2
+a214 2
+	if ( ! a2roffsu(p, &su)) 
+		return(-1);
+d216 4
+a219 23
+	switch (su.unit) {
+	case (SCALE_CM):
+		r = 4 * su.scale;
+		break;
+	case (SCALE_IN):
+		r = 10 * su.scale;
+		break;
+	case (SCALE_PC):
+		r = 2 * su.scale;
+		break;
+	case (SCALE_PT):
+		r = (su.scale / 10) + 1;
+		break;
+	case (SCALE_MM):
+		r = su.scale / 1000;
+		break;
+	case (SCALE_VS):
+		r = su.scale * 2 - 1;
+		break;
+	default:
+		r = su.scale + 1;
+		break;
+	}
+d221 1
+a221 4
+	if (r < 0.0)
+		r = 0.0;
+	return((int)/* LINTED */
+			r);
+d420 1
+a420 7
+	if (NULL == n->child) {
+		term_vspace(p);
+		return(0);
+	}
+
+	assert(MAN_TEXT == n->child->type);
+	len = a2height(n->child->string);
+d451 1
+a451 1
+		fmt_block_vspace(p, n);
+d466 2
+a467 3
+	if (NULL != (nn = n->parent->head->child)) {
+		assert(MAN_TEXT == nn->type);
+		if ((ival = a2width(nn->string)) >= 0)
+a468 1
+	}
+d513 1
+a513 1
+		fmt_block_vspace(p, n);
+d542 1
+a542 1
+		fmt_block_vspace(p, n);
+d557 1
+a557 2
+			assert(MAN_TEXT == nn->type);
+			if ((ival = a2width(nn->string)) >= 0)
+d631 1
+a631 1
+		fmt_block_vspace(p, n);
+d643 2
+a644 3
+		if (NULL != nn->next) {
+			assert(MAN_TEXT == nn->type);
+			if ((ival = a2width(nn->string)) >= 0)
+a645 1
+		}
+d822 1
+a822 2
+	assert(MAN_TEXT == nn->type);
+	if ((ival = a2width(nn->string)) < 0)
+@
+
+
+1.37
+log
+@Added horizontal scaling units to -Tman -Tascii.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.36 2009/10/13 10:57:25 kristaps Exp $ */
+d143 1
+d200 40
+d479 3
+a481 1
+	len = atoi(n->child->string);
+@
+
+
+1.36
+log
+@Moved output definitions into main.h.
+Pushed terminal_{mdoc,man} into {mdoc,man}_term.c.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.35 2009/10/08 23:00:15 kristaps Exp $ */
+d30 1
+d142 1
+a142 1
+static	int		  arg_width(const struct man_node *);
+d199 1
+a199 1
+arg_width(const struct man_node *n)
+d201 2
+a202 7
+	int		 i, len;
+	const char	*p;
+
+	assert(MAN_TEXT == n->type);
+	assert(n->string);
+
+	p = n->string;
+d204 1
+a204 1
+	if (0 == (len = (int)strlen(p)))
+d207 23
+a229 3
+	for (i = 0; i < len; i++) 
+		if ( ! isdigit((u_char)p[i]))
+			break;
+d231 4
+a234 7
+	if (i == len - 1)  {
+		if ('n' == p[len - 1] || 'm' == p[len - 1])
+			return(atoi(p));
+	} else if (i == len)
+		return(atoi(p));
+
+	return(-1);
+d483 3
+a485 2
+	if (NULL != (nn = n->parent->head->child))
+		if ((ival = arg_width(nn)) >= 0)
+d487 1
+d576 2
+a577 1
+			if ((ival = arg_width(nn)) >= 0)
+d663 3
+a665 2
+		if (NULL != nn->next)
+			if ((ival = arg_width(nn)) >= 0)
+d667 1
+d844 2
+a845 1
+	if ((ival = arg_width(nn)) < 0)
+@
+
+
+1.35
+log
+@Consolidated some -man -Tascii functions.
+Added many -man -Thtml functions (almost complete).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.34 2009/10/07 12:19:39 kristaps Exp $ */
+d26 1
+d28 2
+a29 1
+#include "man.h"
+d145 1
+a145 1
+man_run(struct termp *p, const struct man *m)
+d147 19
+a165 1
+	struct mtermp	 mt;
+d167 1
+a167 1
+	print_head(p, man_meta(m));
+d174 3
+a176 3
+	if (man_node(m)->child)
+		print_body(p, &mt, man_node(m)->child, man_meta(m));
+	print_foot(p, man_meta(m));
+@
+
+
+1.34
+log
+@Header buffers in -man -Tascii are static.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.33 2009/10/04 15:24:54 kristaps Exp $ */
+a63 1
+static	int		  pre_BR(DECL_ARGS);
+a65 1
+static	int		  pre_IB(DECL_ARGS);
+d106 2
+a107 2
+	{ pre_IB, NULL }, /* IB */
+	{ pre_BR, NULL }, /* BR */
+d296 1
+a296 1
+pre_IB(DECL_ARGS)
+d302 3
+a304 1
+		if (i % 2)
+d306 1
+a306 2
+		else
+			p->under++;
+d309 1
+d311 2
+a312 1
+		if (i % 2)
+d314 1
+a314 21
+		else
+			p->under--;
+	}
+	return(0);
+}
+
+
+/* ARGSUSED */
+static int
+pre_RB(DECL_ARGS)
+{
+	const struct man_node *nn;
+	int		 i;
+
+	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
+		if (i % 2)
+			p->bold++;
+		if (i > 0)
+			p->flags |= TERMP_NOSPACE;
+		print_node(p, mt, nn, m);
+		if (i % 2)
+a342 20
+pre_BR(DECL_ARGS)
+{
+	const struct man_node *nn;
+	int		 i;
+
+	for (i = 0, nn = n->child; nn; nn = nn->next, i++) {
+		if ( ! (i % 2))
+			p->bold++;
+		if (i > 0)
+			p->flags |= TERMP_NOSPACE;
+		print_node(p, mt, nn, m);
+		if ( ! (i % 2))
+			p->bold--;
+	}
+	return(0);
+}
+
+
+/* ARGSUSED */
+static int
+d345 2
+a346 2
+	const struct man_node *nn;
+	int		 i;
+d349 1
+a349 1
+		if (i % 2)
+d351 4
+d356 3
+a358 2
+			p->bold++;
+		if (i > 0)
+d361 2
+a362 1
+		if (i % 2)
+d364 4
+d369 1
+a369 1
+			p->bold--;
+@
+
+
+1.33
+log
+@Structural components of -man -Thtml in place (note that HP is the same as IP, as HTML doesn't "do" this construction without fixed page widths).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.32 2009/10/03 19:57:53 kristaps Exp $ */
+d922 1
+a922 4
+	char		*buf;
+
+	if (NULL == (buf = malloc(p->rmargin)))
+		err(EXIT_FAILURE, "malloc");
+d927 1
+a927 1
+		err(EXIT_FAILURE, "strftime");
+a947 2
+
+	free(buf);
+@
+
+
+1.32
+log
+@Added initial -man framework for -Thtml.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.31 2009/09/16 09:41:24 kristaps Exp $ */
+a162 1
+
+@
+
+
+1.31
+log
+@Made tree/term/out() functions return void.
+Put err() functions back into front-ends (no use making it needlessly complex).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.30 2009/09/15 08:16:20 kristaps Exp $ */
+d94 1
+a94 1
+static const struct termact termacts[MAN_MAX] = {
+d163 1
+@
+
+
+1.30
+log
+@Removed TERMP_BOLD, TERMP_UNDER, TERMP_STYLE in favour of recursive-friendly increments.
+Cleaned up confusing behaviour of p->flags.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.29 2009/08/22 09:10:38 kristaps Exp $ */
+d21 1
+d133 1
+a133 1
+static	int		  print_head(struct termp *, 
+d137 1
+a137 1
+static	int		  print_foot(struct termp *, 
+d144 1
+a144 1
+int
+d149 1
+a149 2
+	if ( ! print_head(p, man_meta(m)))
+		return(0);
+a150 2
+	assert(man_node(m));
+	assert(MAN_ROOT == man_node(m)->type);
+d158 1
+a158 4
+	if ( ! print_foot(p, man_meta(m)))
+		return(0);
+
+	return(1);
+d918 1
+a918 1
+static int
+d925 1
+a925 1
+		return(0);
+d930 1
+a930 1
+		buf[0] = 0;
+a952 1
+	return(1);
+d956 1
+a956 1
+static int
+d965 1
+a965 1
+		return(0);
+d967 1
+a967 1
+		return(0);
+a1004 1
+	return(1);
+@
+
+
+1.29
+log
+@Added `UC' libman macro (has no effect).
+Corrected `UC' and `DT' not to print their arguments.
+Noted that `UC' and `DT' shouldn't be used.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.28 2009/08/21 08:41:05 kristaps Exp $ */
+a20 1
+#include <err.h>
+d132 1
+a132 1
+static	void		  print_head(struct termp *, 
+d136 1
+a136 1
+static	void		  print_foot(struct termp *, 
+d148 2
+a149 1
+	print_head(p, man_meta(m));
+d160 2
+a161 1
+	print_foot(p, man_meta(m));
+d226 1
+a226 1
+	p->flags |= TERMP_UNDER;
+d236 1
+a236 2
+	p->flags &= ~TERMP_UNDER;
+	p->flags &= ~TERMP_BOLD;
+d247 1
+a247 1
+		p->flags &= ~TERMP_UNDER;
+d256 1
+a256 1
+	p->flags &= ~TERMP_UNDER;
+d290 1
+a290 1
+			p->flags |= TERMP_UNDER;
+d295 1
+a295 1
+			p->flags &= ~TERMP_UNDER;
+d309 4
+a312 1
+		p->flags |= i % 2 ? TERMP_BOLD : TERMP_UNDER;
+d316 4
+a319 1
+		p->flags &= i % 2 ? ~TERMP_BOLD : ~TERMP_UNDER;
+d334 1
+a334 1
+			p->flags |= TERMP_BOLD;
+d339 1
+a339 1
+			p->flags &= ~TERMP_BOLD;
+d354 1
+a354 1
+			p->flags |= TERMP_UNDER;
+d359 1
+a359 1
+			p->flags &= ~TERMP_UNDER;
+d374 1
+a374 1
+			p->flags |= TERMP_BOLD;
+d379 1
+a379 1
+			p->flags &= ~TERMP_BOLD;
+d393 4
+a396 1
+		p->flags |= i % 2 ? TERMP_UNDER : TERMP_BOLD;
+d400 4
+a403 1
+		p->flags &= i % 2 ? ~TERMP_UNDER : ~TERMP_BOLD;
+d414 1
+a414 1
+	p->flags |= TERMP_BOLD;
+d424 1
+a424 1
+	p->flags &= ~TERMP_BOLD;
+d735 1
+a735 1
+		p->flags |= TERMP_BOLD;
+d757 1
+a757 1
+		p->flags &= ~TERMP_BOLD;
+d784 1
+a784 1
+		p->flags |= TERMP_BOLD;
+d806 1
+a806 1
+		p->flags &= ~TERMP_BOLD;
+d923 1
+a923 1
+static void
+d930 1
+a930 1
+		err(1, "malloc");
+d935 1
+a935 1
+		err(1, "strftime");
+d958 1
+d962 1
+a962 1
+static void
+d971 1
+a971 1
+		err(1, "malloc");
+d973 1
+a973 1
+		err(1, "malloc");
+d1011 1
+@
+
+
+1.28
+log
+@FreeBSD fix (uqs@@spoerlein.net).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.27 2009/08/20 11:51:07 kristaps Exp $ */
+d79 1
+d124 2
+a125 1
+	{ NULL, NULL }, /* DT */
+d213 9
+@
+
+
+1.27
+log
+@Added `DT' macro (pointed out by joerg@@netbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.26 2009/08/19 11:30:40 kristaps Exp $ */
+d17 2
+@
+
+
+1.26
+log
+@`RS' blocks correctly formatting in output device.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.25 2009/08/19 09:14:50 kristaps Exp $ */
+d113 1
+a113 1
+	{ NULL, NULL }, /* na */ /* TODO: document that has no effect */
+d121 1
+@
+
+
+1.25
+log
+@Added RS/RE macro pair (had to adjust closing rules, sec/ssec/rs/par).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.24 2009/08/18 08:48:30 kristaps Exp $ */
+d33 15
+a47 1
+	int		  lmargin;
+d71 1
+d85 1
+d120 1
+a120 1
+	{ NULL, NULL }, /* RS */
+d151 1
+d453 1
+a453 1
+	len = (size_t)mt->lmargin;
+d465 2
+a466 2
+	p->offset = INDENT;
+	p->rmargin = INDENT + len;
+d469 1
+a469 1
+		mt->lmargin = ival;
+d488 1
+a488 1
+		p->offset = INDENT;
+d508 1
+a508 1
+		p->offset = INDENT;
+d540 1
+a540 1
+	len = (size_t)mt->lmargin;
+d559 2
+a560 2
+		p->offset = INDENT;
+		p->rmargin = INDENT + len;
+d565 1
+a565 1
+		mt->lmargin = ival;
+d572 1
+a572 1
+		p->offset = INDENT + len;
+d645 2
+a646 2
+		p->offset = INDENT;
+		p->rmargin = INDENT + len;
+d654 1
+a654 1
+			mt->lmargin = ival;
+d658 1
+a658 1
+		p->offset = INDENT + len;
+d699 1
+d713 1
+a713 1
+		p->offset = INDENT;
+d750 1
+d762 1
+a762 1
+		p->offset = INDENT;
+d791 50
+@
+
+
+1.24
+log
+@Small updates to man.7 (next-line break-exclusions, numerical width example).
+Fully tested and correct scope-rewinding of block macros.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.23 2009/08/17 11:03:07 kristaps Exp $ */
+d103 2
+@
+
+
+1.23
+log
+@`IP' and `TP' correctly handle width arguments.
+Documented numeric widths.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.22 2009/08/13 12:54:52 kristaps Exp $ */
+d30 2
+a31 5
+#ifdef __linux__
+extern	size_t		  strlcpy(char *, const char *, size_t);
+extern	size_t		  strlcat(char *, const char *, size_t);
+#endif
+
+d33 2
+d37 1
+a37 1
+			  int *fl, \
+d105 5
+d124 1
+a124 1
+	int		 fl;
+d131 3
+a133 1
+	fl = 0;
+d135 1
+a135 1
+		print_body(p, &fl, man_node(m)->child, man_meta(m));
+d232 1
+a232 1
+	*fl &= ~MANT_LITERAL;
+d243 1
+a243 1
+	*fl |= MANT_LITERAL;
+d260 1
+a260 1
+		print_node(p, fl, nn, m);
+d279 1
+a279 1
+		print_node(p, fl, nn, m);
+d298 1
+a298 1
+		print_node(p, fl, nn, m);
+d318 1
+a318 1
+		print_node(p, fl, nn, m);
+d338 1
+a338 1
+		print_node(p, fl, nn, m);
+d357 1
+a357 1
+		print_node(p, fl, nn, m);
+d418 3
+d425 1
+a425 1
+		break;
+a428 2
+		p->offset = INDENT;
+		p->rmargin = INDENT * 2;
+d434 18
+d462 3
+d485 1
+d521 1
+a521 1
+	len = INDENT;
+d545 3
+d550 1
+a550 1
+			print_node(p, fl, nn, m);
+d610 1
+a610 1
+	len = INDENT;
+d632 5
+a636 1
+				print_node(p, fl, nn, m);
+d679 8
+a686 3
+		term_newln(p);
+		if (n->prev)
+			term_vspace(p);
+d692 3
+a695 1
+		p->offset = INDENT;
+d713 3
+d729 1
+d795 1
+a795 1
+		if (MANT_LITERAL & *fl) {
+d802 1
+a802 1
+			c = (*termacts[n->tok].pre)(p, fl, n, m);
+d807 1
+a807 1
+		print_body(p, fl, n->child, m);
+d811 1
+a811 1
+			(*termacts[n->tok].post)(p, fl, n, m);
+d819 1
+a819 1
+	print_node(p, fl, n, m);
+d822 1
+a822 1
+	print_body(p, fl, n->next, m);
+@
+
+
+1.22
+log
+@Finished correct `IP' handling.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.21 2009/08/13 12:31:50 kristaps Exp $ */
+a476 3
+	case (MAN_BLOCK):
+		fmt_block_vspace(p, n);
+		return(1);
+d485 3
+d492 1
+a492 1
+	len = INDENT * 2;
+a505 4
+	case (MAN_BODY):
+		p->offset = INDENT + len;
+		p->rmargin = p->maxrmargin;
+		break;
+d507 4
+d520 4
+d558 3
+a562 3
+	case (MAN_BLOCK):
+		fmt_block_vspace(p, n);
+		break;
+a563 2
+		p->rmargin = INDENT * 2;
+		p->offset = INDENT;
+d570 35
+a604 1
+		p->offset = INDENT * 2;
+@
+
+
+1.21
+log
+@Added proper `TP' support.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.20 2009/08/13 12:15:58 kristaps Exp $ */
+d69 1
+d85 1
+a85 1
+	{ pre_IP, NULL }, /* IP */
+d472 3
+a474 5
+	/* TODO */
+#if 0
+	const struct man_node *nn;
+	size_t		 offs, sv;
+	int		 ival;
+d476 15
+a490 1
+	fmt_block_vspace(p, n);
+d492 2
+a493 1
+	p->flags |= TERMP_NOSPACE;
+d495 1
+a495 2
+	sv = p->offset;
+	p->offset = INDENT;
+d497 7
+a503 2
+	if (NULL == n->child)
+		return(1);
+d505 10
+a514 1
+	p->flags |= TERMP_NOBREAK;
+d516 6
+a521 16
+	offs = sv;
+
+	/*
+	 * If the last token is number-looking (3m, 3n, 3) then
+	 * interpret it as the width specifier, else we stick with the
+	 * prior saved offset.  XXX - obviously not documented.
+	 */
+	for (nn = n->child; nn; nn = nn->next) {
+		if (NULL == nn->next) {
+			ival = arg_width(nn);
+			if (ival >= 0) {
+				offs = (size_t)ival;
+				break;
+			}
+		}
+		print_node(p, fl, nn, m);
+d524 2
+a525 1
+	p->rmargin = p->offset + offs;
+a526 1
+	term_flushln(p);
+d528 4
+a531 2
+	p->offset = offs;
+	p->rmargin = p->maxrmargin;
+d533 14
+a546 5
+	p->flags |= TERMP_NOLPAD | TERMP_NOSPACE;
+
+	return(0);
+#endif
+	return(1);
+d644 1
+a644 4
+	/* 
+	 * XXX: undocumented: using two `SH' macros in sequence has no
+	 * vspace between calls, only a newline.
+	 */
+d647 1
+@
+
+
+1.20
+log
+@Added full `HP' libman macro support.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.19 2009/08/13 11:45:29 kristaps Exp $ */
+d72 1
+d80 1
+a80 1
+	{ pre_TP, NULL }, /* TP */
+a525 4
+	/* TODO */
+#if 0
+	const struct man_node *nn;
+	size_t		 offs;
+d527 18
+a544 1
+	term_vspace(p);
+d546 2
+a547 4
+	p->offset = INDENT;
+
+	if (NULL == (nn = n->child))
+		return(1);
+a548 7
+	if (nn->line == n->line) {
+		if (MAN_TEXT != nn->type)
+			errx(1, "expected text line argument");
+		offs = (size_t)atoi(nn->string);
+		nn = nn->next;
+	} else
+		offs = INDENT;
+d550 4
+a553 2
+	for ( ; nn; nn = nn->next)
+		print_node(p, fl, nn, m);
+d555 14
+a568 6
+	term_flushln(p);
+	p->flags |= TERMP_NOSPACE;
+	p->offset += offs;
+	return(0);
+#endif
+	return(1);
+@
+
+
+1.19
+log
+@Significant overhaul in libman.  Macros are now block- and line-scoped (with
+next-line scope extensions possible).  man.7 reflects block and line scoping,
+and also includes a REFERENCE section that will be used as a template for the
+big mdoc reference.  Many fixes in next-line behaviour for both inline and
+block macros.  Added some macros for compatibility (from me.7).  Corrected
+quoted-literal handling for libman.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.18 2009/08/10 10:09:51 kristaps Exp $ */
+d69 1
+d84 1
+a84 1
+	{ pre_HP, NULL }, /* HP */ 
+d411 14
+a424 1
+	/* TODO */
+d430 19
+@
+
+
+1.18
+log
+@Moved indentation size into *term.c files.
+Improved handling of libman `IP' macro (still needs work).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.17 2009/07/24 20:22:24 kristaps Exp $ */
+d35 2
+d38 1
+d50 1
+a50 1
+static	int		  pre_br(DECL_ARGS);
+d61 5
+d71 1
+d83 1
+a83 1
+	{ pre_PP, NULL }, /* HP */ /* FIXME */
+d95 6
+a100 3
+	{ NULL, NULL }, /* na */
+	{ pre_I, post_I }, /* i */
+	{ NULL, NULL }, /* sp */
+d117 1
+d123 2
+d126 1
+a126 1
+		print_body(p, man_node(m)->child, man_meta(m));
+d189 21
+d220 21
+d251 1
+a251 1
+		print_node(p, nn, m);
+d270 1
+a270 1
+		print_node(p, nn, m);
+d289 1
+a289 1
+		print_node(p, nn, m);
+d309 1
+a309 1
+		print_node(p, nn, m);
+d329 1
+a329 1
+		print_node(p, nn, m);
+d348 1
+a348 1
+		print_node(p, nn, m);
+d376 21
+d407 10
+d420 10
+a429 5
+	term_vspace(p);
+	term_vspace(p);
+	p->offset = INDENT;
+	p->flags |= TERMP_NOSPACE;
+	return(0);
+d437 2
+d470 1
+a470 1
+		print_node(p, nn, m);
+d483 2
+d492 2
+d513 1
+a513 1
+		print_node(p, nn, m);
+d519 2
+d529 15
+a543 2
+	term_vspace(p);
+	p->flags |= TERMP_BOLD;
+d553 8
+a560 3
+	term_flushln(p);
+	p->flags &= ~TERMP_BOLD;
+	p->flags |= TERMP_NOSPACE;
+d568 21
+a589 3
+	term_vspace(p);
+	p->offset = 0;
+	p->flags |= TERMP_BOLD;
+d599 11
+a609 4
+	term_flushln(p);
+	p->offset = INDENT;
+	p->flags &= ~TERMP_BOLD;
+	p->flags |= TERMP_NOSPACE;
+a620 4
+	case(MAN_ELEM):
+		if (termacts[n->tok].pre)
+			c = (*termacts[n->tok].pre)(p, n, m);
+		break;
+d637 5
+d644 2
+d650 1
+a650 1
+		print_body(p, n->child, m);
+d652 1
+a652 2
+	switch (n->type) {
+	case (MAN_ELEM):
+d654 1
+a654 5
+			(*termacts[n->tok].post)(p, n, m);
+		break;
+	default:
+		break;
+	}
+d661 2
+a662 1
+	print_node(p, n, m);
+d665 1
+a665 1
+	print_body(p, n->next, m);
+@
+
+
+1.17
+log
+@Added `sp' support to libman.
+Added `\c' to known escapes (only used in man, but still).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.16 2009/06/18 20:46:19 kristaps Exp $ */
+d18 1
+d27 3
+d97 3
+d118 45
+d333 1
+d335 1
+a343 1
+#if 0
+d345 6
+a350 2
+	size_t		 offs;
+#endif
+d352 1
+a352 1
+	term_vspace(p);
+d355 1
+a355 2
+#if 0
+	if (NULL == (nn = n->child))
+a356 2
+	if (MAN_TEXT != nn->type)
+		errx(1, "expected text line argument");
+d358 26
+a383 6
+	if (nn->next) {
+		if (MAN_TEXT != nn->next->type)
+			errx(1, "expected text line argument");
+		offs = (size_t)atoi(nn->next->string);
+	} else
+		offs = strlen(nn->string);
+d385 1
+a385 5
+	p->flags |= TERMP_NOSPACE;
+	/* FIXME */
+	if ((p->offset += offs) > p->rmargin)
+		errx(1, "line too long");
+#endif
+@
+
+
+1.16
+log
+@Added nchild decrement in libman (not used, but better in than forgotten).
+Added nchild to libmdoc, deprecated count() functions in validator.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.15 2009/06/18 19:54:04 kristaps Exp $ */
+d84 1
+@
+
+
+1.15
+log
+@Fixed libman .br to be a newline, not a .PP alias.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.14 2009/06/16 19:55:28 kristaps Exp $ */
+d328 1
+@
+
+
+1.14
+log
+@Removed MAN___: moved MAN_br to its index (comments not passed into parser).
+Fix: hashtable not fully formed after removal of MDOC___.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.13 2009/06/15 20:26:47 kristaps Exp $ */
+d43 1
+d61 1
+a61 1
+	{ pre_PP, NULL }, /* br */
+d266 10
+@
+
+
+1.13
+log
+@Removed superfluous ifdef around strftime (schwarze@@openbsd.org).
+Bumped version (this was supposed to be in 1.7.17).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.12 2009/06/11 13:18:42 kristaps Exp $ */
+d60 1
+a60 1
+	{ NULL, NULL }, /* __ */
+a80 1
+	{ pre_PP, NULL }, /* br */
+d99 4
+a102 1
+	print_body(p, man_node(m), man_meta(m));
+@
+
+
+1.12
+log
+@Backed-out .IP changes for libman (needs work).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.11 2009/06/11 12:07:49 kristaps Exp $ */
+a451 3
+#ifdef __OpenBSD__
+	if (NULL == strftime(buf, p->rmargin, "%B %d, %Y", tm))
+#else
+a452 1
+#endif
+@
+
+
+1.11
+log
+@Documented some un-clear parts of main.c.
+Fixed footer to be new-groff style (OS DATE OS).
+Removed sanity check from mdoc_term (unnecessary).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.10 2009/06/11 07:26:35 kristaps Exp $ */
+d276 1
+d279 1
+d284 1
+d301 2
+@
+
+
+1.10
+log
+@Fixed email address in manual AUTHOR reference.
+Set max right margin to 80 columns (schwarze@@openbsd.org).
+Fixed centre-field heading position (schwarze@@openbsd.org).
+Also fixed -Tman centre-field.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.9 2009/06/10 20:18:43 kristaps Exp $ */
+d295 3
+a297 1
+	p->offset += offs;
+@
+
+
+1.9
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.8 2009/04/12 19:45:26 kristaps Exp $ */
+d498 1
+a498 1
+	p->rmargin = (p->maxrmargin - strlen(buf)) / 2;
+@
+
+
+1.8
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: man_term.c,v 1.7 2009/04/05 16:34:22 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.7
+log
+@man(3) doesn't use err.h anymore.
+Added .i to man(3).
+Fixed up manuals.
+Fixed up webpage.
+Assertion fixes in man(3) (hashtable).
+Fixed assertion for .IP in mandoc -man.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_term.c,v 1.6 2009/04/02 06:51:44 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.6
+log
+@mdoc_tokhash -> hash
+Initial man hashtab (BROKEN).
+@
+text
+@d1 1
+a1 1
+/* $Id: man_term.c,v 1.5 2009/03/27 14:56:15 kristaps Exp $ */
+d85 1
+a285 4
+
+	/* FIXME - ignore the designator. */
+	nn = nn->next;
+
+d289 6
+a294 2
+	offs = (size_t)atoi(nn->string);
+	nn = nn->next;
+@
+
+
+1.5
+log
+@Added some new manuals (mdoc.3 mandoc_char.7).
+Support for .br in libman.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_term.c,v 1.4 2009/03/26 16:23:22 kristaps Exp $ */
+d84 1
+@
+
+
+1.4
+log
+@All macro-invocations, for consistency, begin with `.' in documentation.
+Fixed \\ -> \e in manual documentation.
+All preliminary -man macros in place.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_term.c,v 1.3 2009/03/26 15:19:44 kristaps Exp $ */
+d83 1
+@
+
+
+1.3
+log
+@Added several macros to man_term.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_term.c,v 1.2 2009/03/26 14:44:41 kristaps Exp $ */
+d47 1
+d70 2
+a71 2
+	{ NULL, NULL }, /* IP */
+	{ pre_PP, NULL }, /* HP */ /* XXX */
+d135 2
+d154 2
+d173 2
+d193 2
+d213 2
+d232 2
+d273 28
+d379 1
+a379 1
+	int		 c;
+d389 2
+a390 2
+		if (*n->string) {
+			term_word(p, n->string);
+d393 11
+a403 1
+		term_vspace(p);
+a450 7
+	/*
+	 * This is /slightly/ different from regular groff output
+	 * because we don't have page numbers.  Print the following:
+	 *
+	 * OS                                            MDOCDATE
+	 */
+
+a487 13
+	/*
+	 * The header is strange.  It has three components, which are
+	 * really two with the first duplicated.  It goes like this:
+	 *
+	 * IDENTIFIER              TITLE                   IDENTIFIER
+	 *
+	 * The IDENTIFIER is NAME(SECTION), which is the command-name
+	 * (if given, or "unknown" if not) followed by the manual page
+	 * section.  These are given in `Dt'.  The TITLE is a free-form
+	 * string depending on the manual volume.  If not specified, it
+	 * switches on the manual section.
+	 */
+
+@
+
+
+1.2
+log
+@Fixed after-NLINE-error assertion.
+Scanned over all manuals with valgrind.
+Version up.
+@
+text
+@d1 1
+a1 1
+/* $Id: man_term.c,v 1.1 2009/03/26 14:38:11 kristaps Exp $ */
+d43 2
+d46 2
+d49 2
+d73 4
+a76 4
+	{ NULL, NULL }, /* BI */
+	{ NULL, NULL }, /* IB */
+	{ NULL, NULL }, /* BR */
+	{ NULL, NULL }, /* RB */
+d80 2
+a81 2
+	{ NULL, NULL }, /* IR */
+	{ NULL, NULL }, /* RI */
+d105 1
+d115 1
+d124 105
+d238 1
+d247 1
+d258 1
+d274 1
+a274 1
+		offs = atoi(nn->string);
+d289 1
+d300 1
+d311 1
+d323 1
+@
+
+
+1.1
+log
+@Initial front-end formatting for -man pages.
+@
+text
+@d1 1
+a1 1
+/* $Id: term.c,v 1.69 2009/03/23 09:42:43 kristaps Exp $ */
+d28 5
+@

@@ -1,0 +1,5601 @@
+head	1.215;
+access;
+symbols
+	VERSION_1_13_3:1.202
+	VERSION_1_13_2:1.195
+	VERSION_1_12_4:1.179
+	VERSION_1_13_1:1.176
+	VERSION_1_12_3:1.162
+	VERSION_1_12_2:1.157
+	VERSION_1_12:1.179.0.2
+	VERSION_1_12_1:1.129
+	VERSION_1_12_0:1.122
+	VERSION_1_11_7:1.120
+	VERSION_1_11_6:1.120
+	VERSION_1_11_5:1.119
+	VERSION_1_11_4:1.119
+	VERSION_1_11_3:1.108
+	VERSION_1_11_2:1.104
+	VERSION_1_11_1:1.98
+	VERSION_1_10_10:1.93
+	VERSION_1_10_9:1.73
+	VERSION_1_10_8:1.68
+	VERSION_1_10_7:1.65
+	VERSION_1_10_6:1.55
+	VERSION_1_10_5:1.35
+	VERSION_1_10_5_PREPDF:1.32
+	VERSION_1_10_4:1.25
+	VERSION_1_10_3:1.17
+	VERSION_1_10_2:1.16
+	VERSION_1_10_1:1.15;
+locks; strict;
+comment	@# @;
+
+
+1.215
+date	2015.11.06.21.19.09;	author schwarze;	state Exp;
+branches;
+next	1.214;
+
+1.214
+date	2015.09.29.18.45.36;	author schwarze;	state Exp;
+branches;
+next	1.213;
+
+1.213
+date	2015.08.29.15.10.28;	author schwarze;	state Exp;
+branches;
+next	1.212;
+
+1.212
+date	2015.07.18.03.43.51;	author schwarze;	state Exp;
+branches;
+next	1.211;
+
+1.211
+date	2015.07.14.19.40.05;	author schwarze;	state Exp;
+branches;
+next	1.210;
+
+1.210
+date	2015.06.26.16.56.18;	author schwarze;	state Exp;
+branches;
+next	1.209;
+
+1.209
+date	2015.06.18.01.02.16;	author schwarze;	state Exp;
+branches;
+next	1.208;
+
+1.208
+date	2015.06.10.22.26.19;	author schwarze;	state Exp;
+branches;
+next	1.207;
+
+1.207
+date	2015.04.18.16.05.45;	author schwarze;	state Exp;
+branches;
+next	1.206;
+
+1.206
+date	2015.04.16.20.36.04;	author schwarze;	state Exp;
+branches;
+next	1.205;
+
+1.205
+date	2015.04.06.22.06.23;	author schwarze;	state Exp;
+branches;
+next	1.204;
+
+1.204
+date	2015.04.03.12.41.02;	author schwarze;	state Exp;
+branches;
+next	1.203;
+
+1.203
+date	2015.03.16.14.51.14;	author schwarze;	state Exp;
+branches;
+next	1.202;
+
+1.202
+date	2015.03.11.13.11.22;	author schwarze;	state Exp;
+branches;
+next	1.201;
+
+1.201
+date	2015.02.20.13.47.28;	author schwarze;	state Exp;
+branches;
+next	1.200;
+
+1.200
+date	2015.02.17.20.41.50;	author schwarze;	state Exp;
+branches;
+next	1.199;
+
+1.199
+date	2015.02.12.13.54.50;	author schwarze;	state Exp;
+branches;
+next	1.198;
+
+1.198
+date	2015.02.10.08.05.30;	author schwarze;	state Exp;
+branches;
+next	1.197;
+
+1.197
+date	2015.01.24.01.45.21;	author schwarze;	state Exp;
+branches;
+next	1.196;
+
+1.196
+date	2014.12.17.20.31.19;	author schwarze;	state Exp;
+branches;
+next	1.195;
+
+1.195
+date	2014.12.13.13.14.39;	author schwarze;	state Exp;
+branches;
+next	1.194;
+
+1.194
+date	2014.12.10.21.54.13;	author schwarze;	state Exp;
+branches;
+next	1.193;
+
+1.193
+date	2014.12.03.01.46.54;	author schwarze;	state Exp;
+branches;
+next	1.192;
+
+1.192
+date	2014.12.02.11.13.49;	author schwarze;	state Exp;
+branches;
+next	1.191;
+
+1.191
+date	2014.12.02.10.41.12;	author schwarze;	state Exp;
+branches;
+next	1.190;
+
+1.190
+date	2014.12.02.10.08.06;	author schwarze;	state Exp;
+branches;
+next	1.189;
+
+1.189
+date	2014.11.26.21.40.17;	author schwarze;	state Exp;
+branches;
+next	1.188;
+
+1.188
+date	2014.11.20.02.21.27;	author schwarze;	state Exp;
+branches;
+next	1.187;
+
+1.187
+date	2014.11.09.00.54.58;	author schwarze;	state Exp;
+branches;
+next	1.186;
+
+1.186
+date	2014.10.25.01.01.12;	author schwarze;	state Exp;
+branches;
+next	1.185;
+
+1.185
+date	2014.10.16.01.11.20;	author schwarze;	state Exp;
+branches;
+next	1.184;
+
+1.184
+date	2014.10.14.15.47.40;	author schwarze;	state Exp;
+branches;
+next	1.183;
+
+1.183
+date	2014.10.14.13.53.33;	author schwarze;	state Exp;
+branches;
+next	1.182;
+
+1.182
+date	2014.10.10.10.49.38;	author schwarze;	state Exp;
+branches;
+next	1.181;
+
+1.181
+date	2014.10.10.08.44.24;	author kristaps;	state Exp;
+branches;
+next	1.180;
+
+1.180
+date	2014.10.06.18.35.49;	author schwarze;	state Exp;
+branches;
+next	1.179;
+
+1.179
+date	2014.08.18.13.27.47;	author kristaps;	state Exp;
+branches;
+next	1.178;
+
+1.178
+date	2014.08.13.22.17.51;	author schwarze;	state Exp;
+branches;
+next	1.177;
+
+1.177
+date	2014.08.13.21.30.55;	author schwarze;	state Exp;
+branches;
+next	1.176;
+
+1.176
+date	2014.08.09.14.24.53;	author schwarze;	state Exp;
+branches;
+next	1.175;
+
+1.175
+date	2014.08.08.20.04.36;	author schwarze;	state Exp;
+branches;
+next	1.174;
+
+1.174
+date	2014.07.29.15.20.10;	author schwarze;	state Exp;
+branches;
+next	1.173;
+
+1.173
+date	2014.07.24.08.26.05;	author schwarze;	state Exp;
+branches;
+next	1.172;
+
+1.172
+date	2014.06.20.02.53.13;	author schwarze;	state Exp;
+branches;
+next	1.171;
+
+1.171
+date	2014.06.10.21.19.57;	author schwarze;	state Exp;
+branches;
+next	1.170;
+
+1.170
+date	2014.04.23.16.37.43;	author schwarze;	state Exp;
+branches;
+next	1.169;
+
+1.169
+date	2014.04.23.16.08.33;	author schwarze;	state Exp;
+branches;
+next	1.168;
+
+1.168
+date	2014.03.30.19.47.48;	author schwarze;	state Exp;
+branches;
+next	1.167;
+
+1.167
+date	2014.03.08.21.54.39;	author schwarze;	state Exp;
+branches;
+next	1.166;
+
+1.166
+date	2014.03.03.18.37.32;	author schwarze;	state Exp;
+branches;
+next	1.165;
+
+1.165
+date	2014.02.14.23.24.26;	author schwarze;	state Exp;
+branches;
+next	1.164;
+
+1.164
+date	2014.02.14.23.05.20;	author schwarze;	state Exp;
+branches;
+next	1.163;
+
+1.163
+date	2014.02.14.22.27.41;	author schwarze;	state Exp;
+branches;
+next	1.162;
+
+1.162
+date	2013.12.25.14.40.34;	author schwarze;	state Exp;
+branches;
+next	1.161;
+
+1.161
+date	2013.12.15.23.56.42;	author schwarze;	state Exp;
+branches;
+next	1.160;
+
+1.160
+date	2013.12.15.21.30.13;	author schwarze;	state Exp;
+branches;
+next	1.159;
+
+1.159
+date	2013.11.10.12.28.02;	author schwarze;	state Exp;
+branches;
+next	1.158;
+
+1.158
+date	2013.10.06.13.32.46;	author schwarze;	state Exp;
+branches;
+next	1.157;
+
+1.157
+date	2013.09.27.21.12.34;	author schwarze;	state Exp;
+branches;
+next	1.156;
+
+1.156
+date	2013.09.22.23.21.23;	author schwarze;	state Exp;
+branches;
+next	1.155;
+
+1.155
+date	2013.09.22.11.48.38;	author schwarze;	state Exp;
+branches;
+next	1.154;
+
+1.154
+date	2013.07.14.11.57.38;	author schwarze;	state Exp;
+branches;
+next	1.153;
+
+1.153
+date	2013.07.14.09.36.13;	author schwarze;	state Exp;
+branches;
+next	1.152;
+
+1.152
+date	2013.07.13.12.52.07;	author schwarze;	state Exp;
+branches;
+next	1.151;
+
+1.151
+date	2013.07.02.12.22.31;	author schwarze;	state Exp;
+branches;
+next	1.150;
+
+1.150
+date	2013.06.22.10.05.44;	author schwarze;	state Exp;
+branches;
+next	1.149;
+
+1.149
+date	2013.06.01.05.56.44;	author schwarze;	state Exp;
+branches;
+next	1.148;
+
+1.148
+date	2012.11.19.22.30.58;	author schwarze;	state Exp;
+branches;
+next	1.147;
+
+1.147
+date	2012.11.18.00.05.35;	author schwarze;	state Exp;
+branches;
+next	1.146;
+
+1.146
+date	2012.11.16.18.44.32;	author schwarze;	state Exp;
+branches;
+next	1.145;
+
+1.145
+date	2012.11.04.18.58.15;	author schwarze;	state Exp;
+branches;
+next	1.144;
+
+1.144
+date	2012.10.31.09.20.23;	author schwarze;	state Exp;
+branches;
+next	1.143;
+
+1.143
+date	2012.10.12.16.45.34;	author schwarze;	state Exp;
+branches;
+next	1.142;
+
+1.142
+date	2012.07.18.16.52.03;	author schwarze;	state Exp;
+branches;
+next	1.141;
+
+1.141
+date	2012.07.18.16.41.09;	author schwarze;	state Exp;
+branches;
+next	1.140;
+
+1.140
+date	2012.07.18.16.20.43;	author schwarze;	state Exp;
+branches;
+next	1.139;
+
+1.139
+date	2012.07.18.11.11.12;	author schwarze;	state Exp;
+branches;
+next	1.138;
+
+1.138
+date	2012.07.18.10.39.19;	author schwarze;	state Exp;
+branches;
+next	1.137;
+
+1.137
+date	2012.07.16.21.30.42;	author schwarze;	state Exp;
+branches;
+next	1.136;
+
+1.136
+date	2012.06.12.20.21.04;	author kristaps;	state Exp;
+branches;
+next	1.135;
+
+1.135
+date	2012.06.12.12.47.14;	author kristaps;	state Exp;
+branches;
+next	1.134;
+
+1.134
+date	2012.06.05.21.29.26;	author schwarze;	state Exp;
+branches;
+next	1.133;
+
+1.133
+date	2012.05.31.01.54.45;	author schwarze;	state Exp;
+branches;
+next	1.132;
+
+1.132
+date	2012.05.28.23.09.22;	author schwarze;	state Exp;
+branches;
+next	1.131;
+
+1.131
+date	2012.05.27.15.20.12;	author schwarze;	state Exp;
+branches;
+next	1.130;
+
+1.130
+date	2012.05.27.14.42.05;	author schwarze;	state Exp;
+branches;
+next	1.129;
+
+1.129
+date	2012.03.04.23.53.37;	author schwarze;	state Exp;
+branches;
+next	1.128;
+
+1.128
+date	2012.01.23.01.41.54;	author joerg;	state Exp;
+branches;
+next	1.127;
+
+1.127
+date	2012.01.02.15.48.05;	author kristaps;	state Exp;
+branches;
+next	1.126;
+
+1.126
+date	2011.12.05.00.41.40;	author schwarze;	state Exp;
+branches;
+next	1.125;
+
+1.125
+date	2011.11.17.17.41.07;	author schwarze;	state Exp;
+branches;
+next	1.124;
+
+1.124
+date	2011.11.13.10.02.54;	author schwarze;	state Exp;
+branches;
+next	1.123;
+
+1.123
+date	2011.11.07.01.24.40;	author schwarze;	state Exp;
+branches;
+next	1.122;
+
+1.122
+date	2011.09.20.14.20.48;	author schwarze;	state Exp;
+branches;
+next	1.121;
+
+1.121
+date	2011.09.18.16.43.28;	author schwarze;	state Exp;
+branches;
+next	1.120;
+
+1.120
+date	2011.07.28.14.37.39;	author kristaps;	state Exp;
+branches;
+next	1.119;
+
+1.119
+date	2011.07.09.10.26.57;	author kristaps;	state Exp;
+branches;
+next	1.118;
+
+1.118
+date	2011.07.07.06.34.13;	author kristaps;	state Exp;
+branches;
+next	1.117;
+
+1.117
+date	2011.07.03.22.57.32;	author kristaps;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2011.07.03.22.40.10;	author schwarze;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2011.06.30.08.05.13;	author kristaps;	state Exp;
+branches;
+next	1.114;
+
+1.114
+date	2011.06.29.15.38.09;	author kristaps;	state Exp;
+branches;
+next	1.113;
+
+1.113
+date	2011.06.18.17.58.48;	author kristaps;	state Exp;
+branches;
+next	1.112;
+
+1.112
+date	2011.06.18.17.36.52;	author kristaps;	state Exp;
+branches;
+next	1.111;
+
+1.111
+date	2011.06.18.16.18.04;	author kristaps;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2011.06.12.12.13.27;	author joerg;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2011.06.11.15.41.35;	author schwarze;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2011.05.24.14.00.39;	author kristaps;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2011.05.21.21.38.17;	author schwarze;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2011.05.18.23.59.08;	author kristaps;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2011.05.18.09.45.21;	author kristaps;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2011.04.30.10.18.24;	author kristaps;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2011.04.17.13.32.27;	author schwarze;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2011.04.16.23.00.45;	author schwarze;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2011.04.16.22.35.26;	author schwarze;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2011.04.13.09.57.41;	author kristaps;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2011.04.12.23.54.12;	author schwarze;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2011.03.30.00.02.40;	author schwarze;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2011.03.29.09.00.48;	author kristaps;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2011.03.23.22.16.03;	author schwarze;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2011.03.23.09.47.13;	author kristaps;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2011.03.22.15.30.30;	author kristaps;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2011.03.19.23.36.08;	author schwarze;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2011.03.17.09.16.38;	author kristaps;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2011.02.27.14.17.28;	author schwarze;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2011.02.09.10.03.02;	author kristaps;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2011.02.03.10.24.21;	author kristaps;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2011.02.02.21.40.45;	author kristaps;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2011.01.31.12.52.43;	author kristaps;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2011.01.25.16.20.24;	author kristaps;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2011.01.25.15.17.18;	author kristaps;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2011.01.25.10.37.49;	author kristaps;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2011.01.24.01.34.56;	author schwarze;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2011.01.23.15.35.10;	author schwarze;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2011.01.22.23.27.06;	author schwarze;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2011.01.22.20.36.02;	author schwarze;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2011.01.22.20.24.53;	author schwarze;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2011.01.12.16.55.22;	author kristaps;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2011.01.12.15.50.42;	author kristaps;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2011.01.12.15.31.17;	author kristaps;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2011.01.10.03.43.47;	author schwarze;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2011.01.09.18.45.46;	author schwarze;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2011.01.06.14.05.12;	author kristaps;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2011.01.03.21.53.46;	author kristaps;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2010.12.30.00.51.32;	author schwarze;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2010.12.26.14.38.10;	author kristaps;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2010.12.25.13.50.37;	author kristaps;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2010.12.16.01.00.29;	author kristaps;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2010.12.09.23.44.39;	author schwarze;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2010.12.09.10.32.22;	author kristaps;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2010.11.29.13.04.31;	author kristaps;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2010.11.03.12.07.58;	author schwarze;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2010.10.29.13.05.27;	author schwarze;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2010.10.23.22.40.13;	author schwarze;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2010.10.19.21.40.27;	author schwarze;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2010.10.17.21.10.53;	author schwarze;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2010.10.10.09.59.48;	author kristaps;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2010.10.01.21.51.13;	author schwarze;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2010.09.27.22.42.48;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2010.09.27.21.33.52;	author schwarze;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2010.09.27.11.21.39;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2010.09.27.10.47.48;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2010.09.27.09.26.27;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2010.09.25.16.52.15;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2010.09.25.16.41.33;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2010.09.25.15.51.30;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2010.09.25.15.29.12;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2010.09.23.19.52.36;	author schwarze;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2010.09.15.14.36.16;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2010.09.15.13.10.30;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2010.09.08.11.57.29;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2010.09.04.19.01.52;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2010.09.04.18.52.21;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2010.08.20.22.51.29;	author schwarze;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2010.08.18.08.39.54;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2010.08.16.09.51.17;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2010.08.15.17.38.41;	author schwarze;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2010.08.15.16.38.35;	author schwarze;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2010.08.14.09.48.56;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2010.08.07.17.52.36;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2010.07.27.08.46.30;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2010.07.27.08.39.36;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2010.07.25.18.22.18;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2010.07.19.11.06.31;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2010.07.19.09.21.58;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2010.07.18.23.06.18;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2010.07.18.18.04.25;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2010.07.18.16.42.03;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2010.07.16.22.33.30;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2010.07.16.22.10.04;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2010.07.11.22.39.32;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2010.07.05.10.45.14;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2010.07.03.16.09.03;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2010.07.03.00.48.09;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2010.07.02.12.54.33;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.07.02.10.43.21;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2010.06.30.23.57.30;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2010.06.29.22.35.01;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2010.06.27.17.31.38;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2010.06.13.22.44.33;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2010.06.07.21.03.02;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2010.06.01.22.05.59;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2010.05.31.23.40.25;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2010.05.31.20.14.10;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2010.05.31.15.42.09;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2010.05.30.22.56.02;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2010.05.25.13.42.51;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2010.05.24.19.33.51;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2010.05.18.20.06.03;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2010.05.15.18.10.26;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2010.05.15.17.50.30;	author joerg;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2010.05.15.15.54.39;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2010.05.15.09.41.43;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2010.05.15.09.28.11;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.05.14.18.20.20;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.215
+log
+@In ./configure, select a RE syntax for word boundaries supported by libc;
+issue reported by Svyatoslav Mishyn, Peter Bray, and Daniel Levai.
+@
+text
+@************************************************************************
+* Official mandoc TODO.
+* $Id: TODO,v 1.214 2015/09/29 18:45:36 schwarze Exp $
+************************************************************************
+
+Many issues are annotated for difficulty as follows:
+
+ - loc = locality of the issue
+    *    single file issue, affects file only, or very few
+    **   single module issue, affects several files of one module
+    ***  cross-module issue, significantly impacts multiple modules
+         and may require substantial changes to internal interfaces
+ - exist = difficulty of the existing code in this area
+    *    affected code is straightforward and easy to read and change
+    **   affected code is somewhat complex, but once you understand
+         the design, not particularly difficult to understand
+    ***  affected code uses a special, exceptionally tricky design
+ - algo = difficulty of the new algorithm to be written
+    *    the required logic and code is straightforward
+    **   the required logic is somewhat complex and needs a careful design
+    ***  the required logic is exceptionally tricky,
+         maybe an approach to solve that is not even known yet
+ - size = the amount of code to be written or changed
+    *    a small number of lines (at most 100, usually much less)
+    **   a considerable amount of code (several dozen to a few hundred)
+    ***  a large amount of code (many hundreds, maybe thousands)
+ - imp = importance of the issue
+    *    mostly for completeness
+    **   would be nice to have
+    ***  issue causes considerable inconvenience
+
+Obviously, as the issues have not been solved yet, these annotations
+are mere guesses, and some may be wrong.
+
+************************************************************************
+* crashes
+************************************************************************
+
+- The abort() in bufcat(), html.c, can be triggered via buffmt_includes()
+  by running -Thtml -Oincludes on a file containing a long .In argument.
+  Fixing this will probably require reworking the whole bufcat() concept.
+  loc **  exist *  algo *  size **  imp **
+
+************************************************************************
+* missing features
+************************************************************************
+
+--- missing roff features ----------------------------------------------
+
+- .ad (adjust margins)
+  .ad l -- adjust left margin only (flush left)
+  .ad r -- adjust right margin only (flush right)
+  .ad c -- center text on line
+  .ad b -- adjust both margins (alias: .ad n)
+  .na   -- temporarily disable adjustment without changing the mode
+  .ad   -- re-enable adjustment without changing the mode
+  Adjustment mode is ignored while in no-fill mode (.nf).
+  loc ***  exist ***  algo **  size **  imp **  (parser reorg would help)
+
+- .fc (field control)
+  found by naddy@@ in xloadimage(1)
+  loc **  exist ***  algo *  size *  imp *
+
+- .nr third argument (auto-increment step size, requires \n+)
+  found by bentley@@ in sbcl(1)  Mon, 9 Dec 2013 18:36:57 -0700
+  loc *  exist *  algo *  size *  imp **
+
+- .ns (no-space mode) occurs in xine-config(1)
+  when implementing this, also let .TH set it
+  reported by brad@@  Sat, 15 Jan 2011 15:45:23 -0500
+  loc ***  exist ***  algo ***  size **  imp *
+
+- .ta (tab settings)
+  #1 most important issue naddy@@ Mon, 16 Feb 2015 20:59:17 +0100
+  ircbug(1) gnats(1) reported by brad@@  Sat, 15 Jan 2011 15:50:51 -0500
+  also Tcl_NewStringObj(3) via wiz@@  Wed, 5 Mar 2014 22:27:43 +0100
+  also posix2time(3) Carsten Kunze  Mon, 1 Dec 2014 13:03:10 +0100
+  loc **  exist ***  algo **  size **  imp ***
+
+- .ti (temporary indent)
+  found by naddy@@ in xloadimage(1) [devel/libvstr] vstr(3)
+  found by bentley@@ in nmh(1)  Mon, 23 Apr 2012 13:38:28 -0600
+  loc **  exist **  algo **  size *  imp ** (parser reorg helps a lot)
+
+- .while and .shift
+  found by jca@@ in ratpoison(1)  Sun, 30 Jun 2013 12:01:09 +0200
+  loc *  exist **  algo **  size **  imp **
+
+- \h horizontal move
+  #2 most important issue naddy@@  Mon, 16 Feb 2015 20:59:17 +0100
+  found in cclive(1) nasm(1) bogofilter(1) asciidoc/DocBook output
+  bentley@@ on discuss@@  Sat, 21 Sep 2013 22:29:34 -0600
+  naddy@@  Thu, 4 Dec 2014 16:26:41 +0100
+  loc **  exist **  algo **  size *  imp *** (parser reorg helps a lot)
+
+- \n+ and \n- numerical register increment and decrement
+  found by bentley@@ in sbcl(1)  Mon, 9 Dec 2013 18:36:57 -0700
+  loc *  exist *  algo *  size *  imp **
+
+- \n(.$ macro argument count number register; ocserv(8) by autogen
+  found by sthen@@  Thu, 19 Feb 2015 22:03:01 +0000
+  loc *  exist **  algo *  size *  imp **
+
+- \w'' improve width measurements
+  would not be very useful without an expression parser, see below
+  needed for Tcl_NewStringObj(3) via wiz@@  Wed, 5 Mar 2014 22:27:43 +0100
+  loc **  exist ***  algo ***  size *  imp ***
+
+- \\ in high-level macro arguments
+  Currently, \\ is expanded in two situations:
+  1) macro and string definition (roff.c setstrn())
+  2) macro argument parsing (mandoc.c mandoc_getarg())
+  For user defined macros, the second happens in time because of ROFF_REPARSE.
+  But for standard high-level macros, it only happens after entering the
+  high level parsers, which is too late because the code doesn't get
+  back to roff.c roff_res() from that point.  Because this requires
+  distinguishing requests, user-defined macros and standard macros
+  on the roff_res() level, it is hard to solve without the parser reorg.
+  Found by naddy@@ in devel/cutils cobfusc(1)  Mon, 16 Feb 2015 19:10:52 +0100
+  loc ***  exist ***  algo ***  size **  imp *
+
+- using undefined strings or macros defines them to be empty
+  wl@@  Mon, 14 Nov 2011 14:37:01 +0000
+  loc *  exist *  algo *  size *  imp *
+
+--- missing mdoc features ----------------------------------------------
+
+- .Bl -column .Xo support is missing
+  ultimate goal:
+  restore .Xr and .Dv to
+  lib/libc/compat-43/sigvec.3
+  lib/libc/gen/signal.3
+  lib/libc/sys/sigaction.2
+  loc *  exist ***  algo ***  size *  imp **
+
+- edge case: decide how to deal with blk_full bad nesting, e.g.
+  .Sh .Nm .Bk .Nm .Ek .Sh found by jmc@@ in ssh-keygen(1)
+  from jmc@@  Wed, 14 Jul 2010 18:10:32 +0100
+  loc *  exist ***  algo ***  size **  imp **
+
+- .Bd -centered implies -filled, not -unfilled, which is not
+  easy to implement; it requires code similar to .ce, which
+  we don't have either.
+  Besides, groff has bug causing text right *before* .Bd -centered
+  to be centered as well.
+  loc ***  exist ***  algo **  size **  imp **  (parser reorg would help)
+
+- .Bd -filled should not be the same as .Bd -ragged, but align both
+  the left and right margin.  In groff, it is implemented in terms
+  of .ad b, which we don't have either.  Found in cksum(1).
+  loc ***  exist ***  algo **  size **  imp **  (parser reorg would help)
+
+- implement blank `Bl -column', such as
+  .Bl -column
+  .It foo Ta bar
+  .El
+  loc *  exist ***  algo ***  size *  imp *
+
+- explicitly disallow nested `Bl -column', which would clobber internal
+  flags defined for struct mdoc_macro
+  loc *  exist *  algo *  size *  imp **
+
+- In .Bl -column .It, the end of the line probably has to be regarded
+  as an implicit .Ta, if there could be one, see the following mildly
+  ugly code from login.conf(5):
+    .Bl -column minpasswordlen program xetcxmotd
+    .It path Ta path Ta value of Dv _PATH_DEFPATH
+    .br
+    Default search path.
+  reported by Michal Mazurek <akfaew at jasminek dot net>
+  via jmc@@ Thu, 7 Apr 2011 16:00:53 +0059
+  loc *  exist ***  algo **  size *  imp **
+
+- inside `.Bl -column' phrases, punctuation is handled like normal
+  text, e.g. `.Bl -column .It Fl x . Ta ...' should give "-x -."
+
+- inside `.Bl -column' phrases, TERMP_IGNDELIM handling by `Pf'
+  is not safe, e.g. `.Bl -column .It Pf a b .' gives "ab."
+  but should give "ab ."
+
+- check whether it is correct that `D1' uses INDENT+1;
+  does it need its own constant?
+  loc *  exist **  algo **  size *  imp **
+
+- prohibit `Nm' from having non-text HEAD children
+  (e.g., NetBSD mDNSShared/dns-sd.1)
+  (mdoc_html.c and mdoc_term.c `Nm' handlers can be slightly simplified)
+
+- support translated section names
+  e.g. x11/scrotwm scrotwm_es.1:21:2: error: NAME section must be first
+  that one uses NOMBRE because it is spanish...
+  deraadt tends to think that section-dependent macro behaviour
+  is a bad idea in the first place, so this may be irrelevant
+  loc **  exist **  algo **  size *  imp **
+
+- When there is free text in the SYNOPSIS and that free text contains
+  the .Nm macro, groff somehow understands to treat the .Nm as an in-line
+  macro, while mandoc treats it as a block macro and breaks the line.
+  No idea how the logic for distinguishing in-line and block instances
+  should be, needs investigation.
+  uqs@@  Thu, 2 Jun 2011 11:03:51 +0200
+  uqs@@  Thu, 2 Jun 2011 11:33:35 +0200
+  loc *  exist **  algo ***  size *  imp **
+
+--- missing man features -----------------------------------------------
+
+- -T[x]html doesn't stipulate non-collapsing spaces in literal mode
+
+--- missing tbl features -----------------------------------------------
+
+- horizontal lines in the layout still consume data cells
+  and can be mixed with actual data on the same table line
+  synaptics(4) found by tedu@@  Mon, 17 Aug 2015 21:17:42 -0400
+  loc **  exist **  algo **  size **  imp ***
+
+- the "w" layout option is ignored
+  synaptics(4) found by tedu@@  Mon, 17 Aug 2015 21:17:42 -0400
+  loc *  exist *  algo *  size *  imp **
+
+- the "s" layout column specifier is used for placement of data
+  into columns, but ignored during column width calculations
+  synaptics(4) found by tedu@@  Mon, 17 Aug 2015 21:17:42 -0400
+  loc *  exist **  algo ***  size *  imp **
+
+- support mdoc(7) and man(7) macros inside tbl(7) code;
+  probably requires the parser reorg and letting tbl(7)
+  use roff_node such that macro sets can mix;
+  informed by bapt@@ that FreeBSD needs this.
+  loc ***  exist **  algo ***  size **  imp ***
+
+- look at the POSIX manuals in the books/man-pages-posix port,
+  they use some unsupported tbl(7) features.
+  loc *  exist **  algo **  size **  imp ***
+
+- use Unicode U+2500 to U+256C for table borders
+  in tbl(7) -Tutf-8 output
+  suggested by bentley@@  Tue, 14 Oct 2014 04:10:55 -0600
+  loc *  exist **  algo *  size *  imp **
+
+--- missing eqn features -----------------------------------------------
+
+- In a matrix, break the output line after each matrix line.
+  Found in the discussion at CDBUG 2015.
+  Suggested by Avi Weinstock.
+  loc *  exist *  algo *  size *  imp **
+
+- The "size" keyword is parsed, but ignored by the formatter.
+  loc *  exist *  algo *  size *  imp *
+
+- The spacing characters `~', `^', and tab are currently ignored,
+  see User's Guide (Second Edition) page 2 section 4.
+  loc *  exist *  algo **  size *  imp **
+
+- Mark and lineup are parsed and ignored,
+  see User's Guide (Second Edition) page 5 section 15.
+  loc **  exist **  algo **  size **  imp **
+
+--- missing misc features ----------------------------------------------
+
+- italic correction (\/) in PostScript mode
+  Werner LEMBERG on groff at gnu dot org  Sun, 10 Nov 2013 12:47:46
+  loc **  exist **  algo *  size *  imp *
+
+- change the default PAGER to more -Es and use the pager
+  even for apropos title line output; req by bapt@@
+  loc *  exist *  algo *  size *  imp ***
+
+- makewhatis(8) for preformatted pages:
+  parse the section number from the header line
+  and compare to the section number from the directory name
+  loc *  exist *  algo *  size *  imp **
+
+- Does makewhatis(8) detect missing NAME sections, missing names,
+  and missing descriptions in all the file formats?
+  loc *  exist *  algo *  size *  imp ***
+
+- clean up escape sequence handling, creating three classes:
+  (1) fully implemented, or parsed and ignored without loss of content
+  (2) unimplemented, potentially causing loss of content
+      or serious mangling of formatting (e.g. \n) -> ERROR
+      see textproc/mgdiff(1) for nice examples
+  (3) undefined, just output the character -> perhaps WARNING
+  loc ***  exist **  algo **  size **  imp *** (parser reorg helps)
+
+- kettenis wants base roff, ms, and me  Fri, 1 Jan 2010 22:13:15 +0100 (CET)
+  loc **  exist **  algo **  size ***  imp *
+
+- Vsevolod Stakhov (FreeBSD) needs either a markdown output formatter
+  for mandoc -mdoc or a markdown to mdoc converter because they
+  have to maintain manuals needed both in markdown and mdoc format.
+  Look at the libsoldout (markdown -> whatever)
+  loc *  exist *  algo *  size **  imp **
+
+--- compatibility checks -----------------------------------------------
+
+- is .Bk implemented correctly in modern groff?
+  sobrado@@  Tue, 19 Apr 2011 22:12:55 +0200
+
+- compare output to Heirloom roff, Solaris roff, and
+  http://repo.or.cz/w/neatroff.git  http://litcave.rudi.ir/
+
+- look at AT&T DWB http://www2.research.att.com/sw/download
+  Carsten Kunze <carsten dot kunze at arcor dot de> has patches
+  Mon, 4 Aug 2014 17:01:28 +0200
+
+- look at pages generated from reStructeredText, e.g. devel/mercurial hg(1)
+  These are a weird mixture of man(7) and custom autogenerated low-level
+  roff stuff.  Figure out to what extent we can cope.
+  For details, see http://docutils.sourceforge.net/rst.html
+  noted by stsp@@  Sat, 24 Apr 2010 09:17:55 +0200
+  reminded by nicm@@  Mon, 3 May 2010 09:52:41 +0100
+
+- look at pages generated from ronn(1) github.com/rtomayko/ronn
+  (based on markdown)
+
+- look at pages generated from Texinfo source by yat2m, e.g. security/gnupg
+  First impression is not that bad.
+
+- look at pages generated by pandoc; see
+  https://github.com/jgm/pandoc/blob/master/src/Text/Pandoc/Writers/Man.hs
+  porting planned by kili@@  Thu, 19 Jun 2014 19:46:28 +0200
+
+- check compatibility with Plan9:
+  http://swtch.com/usr/local/plan9/tmac/tmac.an
+  http://swtch.com/plan9port/man/man7/man.html
+  "Anthony J. Bentley" <anthonyjbentley@@gmail.com> 28 Dec 2010 21:58:40 -0700
+
+- check compatibility with COHERENT troff:
+  http://www.nesssoftware.com/home/mwc/source.php
+
+- check compatibility with the man(7) formatter
+  https://raw.githubusercontent.com/rofl0r/hardcore-utils/master/man.c
+
+- check compatibility with
+  http://ikiwiki.info/plugins/contrib/mandoc/
+  https://github.com/schmonz/ikiwiki/compare/mandoc
+  Amitai Schlair  Mon, 19 May 2014 14:05:53 -0400
+
+************************************************************************
+* formatting issues: ugly output
+************************************************************************
+
+- revisit empty in-line macros
+  look at the difference between "Em x Em ." and "Sq x Em ."
+  Carsten Kunze  Fri, 12 Dec 2014 00:15:41 +0100
+  loc *** exist *** algo *** size * imp **
+
+- a column list with blank `Ta' cells triggers a spurious
+  start-with-whitespace printing of a newline
+
+- In .Bl -column, .It a<tab>"b<tab>c"
+  shows the quotes in groff, but not in mandoc
+  loc * exist *** algo ** size * imp **
+
+- In .Bl -column,
+  .It Em Authentication<tab>Key Length
+  ought to render "Key Length" with emphasis, too,
+  see OpenBSD iked.conf(5).
+  reported again Nicolas Joly via wiz@@ Wed, 12 Oct 2011 00:20:00 +0200
+  loc *  exist ***  algo ***  size **  imp ***
+
+- empty phrases in .Bl column produce too few blanks
+  try e.g. .Bl -column It Ta Ta
+  reported by millert Fri, 02 Apr 2010 16:13:46 -0400
+  loc *  exist ***  algo ***  size *  imp **
+
+- .%T can have trailing punctuation.  Currently, it puts the trailing
+  punctuation into a trailing MDOC_TEXT element inside its own scope.
+  That element should rather be outside its scope, such that the
+  punctuation does not get underlines.  This is not trivial to
+  implement because .%T then needs some features of in_line_eoln() -
+  slurp all arguments into one single text element - and one feature
+  of in_line() - put trailing punctuation out of scope.
+  Found in mount_nfs(8) and exports(5), search for "Appendix".
+  loc **  exist **  algo ***  size *  imp **
+
+- Trailing punctuation after .%T triggers EOS spacing, at least
+  outside .Rs (eek!).  Simply setting ARGSFL_DELIM for .%T is not
+  the right solution, it sends mandoc into an endless loop.
+  reported by Nicolas Joly  Sat, 17 Nov 2012 11:49:54 +0100
+  loc *  exist **  algo **  size *  imp **
+
+- global variables in the SYNOPSIS of section 3 pages
+  .Vt vs .Vt/.Va vs .Ft/.Va vs .Ft/.Fa ...
+  from kristaps@@  Tue, 08 Jun 2010 11:13:32 +0200
+
+- in enclosures, mandoc sometimes fancies a bogus end of sentence
+  reminded by jmc@@  Thu, 23 Sep 2010 18:13:39 +0059
+  loc *  exist **  algo ***  size *  imp ***
+
+- a line starting with "\fB something" counts as starting with whitespace
+  and triggers a line break; found in audio/normalize-mp3(1)
+  loc **  exist *  algo **  size *  imp **
+
+- formatting /usr/local/man/man1/latex2man.1 with groff and mandoc
+  reveals lots of bugs both in groff and mandoc...
+  reported by bentley@@  Wed, 22 May 2013 23:49:30 -0600
+
+--- PDF issues ---------------------------------------------------------
+
+- PDF output doesn't use a monospaced font for .Bd -literal
+  Example: "mandoc -Tpdf afterboot.8 > output.pdf && pdfviewer output.pdf".
+  Search the text "Routing tables".
+  Also check what PostScript mode does when fixing this.
+  reported by juanfra@@ Wed, 04 Jun 2014 21:44:58 +0200
+  instructions from juanfra@@  Wed, 11 Jun 2014 02:21:01 +0200
+    add a new <</Type /Font>> block to the PDF files with /BaseFont /Courier
+    and change the /Name from /F0 to the new font (/F5 (?)).
+  loc *  exist **  algo **  size *  imp **
+
+--- HTML issues --------------------------------------------------------
+
+- <dl><dt><dd> formatting is ugly
+  hints are easy to find on the web, e.g.
+  http://stackoverflow.com/questions/1713048/
+  see also matthew@@  Fri, 18 Jul 2014 19:25:12 -0700
+  loc *  exist *  algo **  size *  imp ***
+
+- .Bf at the beginning of a paragraph inserts a bogus 1ex horizontal
+  space, see for example random(3).  Introduced in
+  http://mdocml.bsd.lv/cgi-bin/cvsweb/mdoc_html.c.diff?r1=1.91&r2=1.92
+  reported by deraadt@@ Mon, 28 Sep 2015 20:14:13 -0600 (MDT)
+  loc **  exist **  algo **  size *  imp *
+
+- jsg on icb, Nov 3, 2014:
+  try to guess Xr in man(7) for hyperlinking
+
+- The tables used to render the three-part page headers actually force
+  the width of the <body> to the max-width given for <html>.
+  Not yet sure how to fix that...
+  Observed by an Anonymous Coward on undeadly.org:
+  http://undeadly.org/cgi?action=article&sid=20140925064244&pid=1
+  loc *  exist *  algo **  size *  imp ***
+
+- consider whether <var> can be used for Ar Dv Er Ev Fa Va.
+  from bentley@@  Wed, 13 Aug 2014 09:17:55 -0600
+
+- generate <img> tags in HTML
+  idea from florian@@  Tue, 7 Apr 2015 00:26:28 +0000
+  may be possible to implement with .Lk img://something.png alt_text
+
+- check https://github.com/trentm/mdocml
+
+************************************************************************
+* formatting issues: gratuitous differences
+************************************************************************
+
+- .Fn reopens a new scope after punctuation in mandoc,
+  but closes its scope for good in groff.
+  Do we want to change mandoc or groff?
+  Steffen Nurpmeso  Sat, 08 Nov 2014 13:34:59 +0100
+  loc *  exist **  algo **  size *  imp **
+
+- In .Bl -enum -width 0n, groff continues one the same line after
+  the number, mandoc breaks the line.
+  mail to kristaps@@  Mon, 20 Jul 2009 02:21:39 +0200
+  loc *  exist **  algo **  size *  imp **
+
+- .Pp between two .It in .Bl -column should produce one,
+  not two blank lines, see e.g. login.conf(5).
+  reported by jmc@@  Sun, 17 Apr 2011 14:04:58 +0059
+  reported again by sthen@@  Wed, 18 Jan 2012 02:09:39 +0000 (UTC)
+  loc *  exist ***  algo **  size *  imp **
+
+- If the *first* line after .It is .Pp, break the line right after
+  the tag, do not pad with space characters before breaking.
+  See the description of the a, c, and i commands in sed(1).
+  loc *  exist **  algo **  size *  imp **
+
+- If the first line after .It is .D1, do not assert a blank line
+  in between, see for example tmux(1).
+  reported by nicm@@  13 Jan 2011 00:18:57 +0000
+  loc *  exist **  algo **  size *  imp **
+
+- Trailing punctuation after .It should trigger EOS spacing.
+  reported by Nicolas Joly  Sat, 17 Nov 2012 11:49:54 +0100
+  Probably, this should be fixed somewhere in termp_it_pre(), not sure.
+  loc *  exist **  algo **  size *  imp **
+
+- .Nx 1.0a
+  should be "NetBSD 1.0A", not "NetBSD 1.0a",
+  see OpenBSD ccdconfig(8).
+  loc *  exist *  algo *  size *  imp **
+
+- In .Bl -tag, if a tag exceeds the right margin and must be continued
+  on the next line, it must be indented by -width, not width+1;
+  see "rule block|pass" in OpenBSD ifconfig(8).
+  loc *  exist ***  algo **  size *  imp **
+
+- When the -width string contains macros, the macros must be rendered
+  before measuring the width, for example
+    .Bl -tag -width ".Dv message"
+  in magic(5), located in src/usr.bin/file, is the same
+  as -width 7n, not -width 11n.
+  The same applies to .Bl -column column widths;
+  reported again by Nicolas Joly Thu, 1 Mar 2012 13:41:26 +0100 via wiz@@ 5 Mar
+  reported again by Franco Fichtner Fri, 27 Sep 2013 21:02:28 +0200
+  loc ***  exist ***  algo ***  size **  imp ***
+  An easy partial fix would be to just skip the first word if it starts
+  with a dot, including any following white space, when measuring.
+  loc *  exist *  algo *  size *  imp ***
+
+- The \& zero-width character counts as output.
+  That is, when it is alone on a line between two .Pp,
+  we want three blank lines, not two as in mandoc.
+  loc **  exist **  algo **  size *  imp **
+
+- Header lines of excessive length:
+  Port OpenBSD man_term.c rev. 1.25 to mdoc_term.c
+  and document it in mdoc(7) and man(7) COMPATIBILITY
+  found while talking to Chris Bennett
+  loc *  exist *  algo *  size *  imp *
+
+- Sequences of multiple man(7) paragraphs (.PP, .IP) interspersed
+  with .ps and .nf/.fi produce execessive blank lines, see libJudy
+  and graphics/dcmtk.  The parser reorg may help with this.
+
+- trailing whitespace must be ignored even when followed by a font escape,
+  see for example
+    makes
+    \fBdig \fR
+    operate in batch mode
+  in dig(1).
+  loc **  exist **  algo **  size *  imp **
+
+************************************************************************
+* portability
+************************************************************************
+
+- systems having UTF-8 but not en_US.UTF-8
+  call locale(1) from ./configure, select a UTF-8-locale,
+  and use that for test-wchar.c and term_ascii.c
+  to Markus Waldeck  Sat, 18 Jul 2015 01:55:37 +0200
+  loc *  exist *  algo *  size *  imp *
+
+************************************************************************
+* warning issues
+************************************************************************
+
+- Report errors in -O suboption parsing.
+  loc *  exist *  algo *  size *  imp **
+
+- warn when .Sh or .Ss contain other macros
+  Steffen Nurpmeso, savannah.gnu.org/bugs/index.php?45034
+  loc *  exist *  algo *  size *  imp **
+
+- check that MANDOCERR_BADTAB is thrown in the right cases,
+  i.e. when finding a literal tab character in fill mode,
+  and possibly change the wording of the warning message
+  to refer to fill mode, not literal mode
+  See the mail from Werner LEMBERG on the groff list,
+  Fri, 14 Feb 2014 18:54:42 +0100 (CET)
+  loc *  exist **  algo **  size *  imp **
+
+- warn about attempts to call non-callable macros
+  Steffen Nurpmeso  Tue, 11 Nov 2014 22:55:16 +0100
+  Note that formatting is inconsistent in groff.
+  .Fn Po prints "Po()", .Ar Sh prints "file ..." and no "Sh".
+  Relatively hard because the relevant code is scattered
+  all over mdoc_macro.c and all subtly different.
+  loc **  exist **  algo **  size **  imp **
+
+- warn about "new sentence, new line"
+  loc **  exist **  algo ***  size *  imp **
+
+- mandoc_special does not really check the escape sequence,
+  but just the overall format
+  loc **  exist **  algo ***  size **  imp **
+
+- integrate mdoclint into mandoc ("end-of-line whitespace" thread)
+  from jmc@@  Mon, 13 Jul 2009 17:12:09 +0100
+  from kristaps@@  Mon, 13 Jul 2009 18:34:53 +0200
+  from jmc@@  Mon, 13 Jul 2009 17:45:37 +0059
+  from kristaps@@  Mon, 13 Jul 2009 19:02:03 +0200
+  (mostly done, check what remains)
+
+- -Tlint parser errors and warnings to stdout
+  to tech@@mdocml, naddy@@  Wed, 28 Sep 2011 11:21:46 +0200
+  wait!  kristaps@@  Sun, 02 Oct 2011 17:12:52 +0200
+
+- for system errors, use errno/strerror/warn/err
+
+************************************************************************
+* documentation issues
+************************************************************************
+
+- mention hyphenation rules:
+  breaking at letter-letter in text mode (not macro args)
+  proper hyphenation is unimplemented
+
+- talk about spacing around delimiters
+  to jmc@@, kristaps@@  Sat, 23 Apr 2011 17:41:27 +0200
+
+- mark macros as: page structure domain, manual domain, general text domain
+  is this useful?
+
+- mention /usr/share/misc/mdoc.template in mdoc(7)?
+
+- Is all the content from http://www.std.com/obi/BSD/doc/usd/28.tbl/tbl
+  covered in tbl(7)?
+
+************************************************************************
+* performance issues
+************************************************************************
+
+- Why are we using MAP_SHARED, not MAP_PRIVATE for mmap(2)?
+  How does SQLITE_CONFIG_PAGECACHE actually work?  Document it!
+  from kristaps@@  Sat, 09 Aug 2014 13:51:36 +0200
+
+Several areas can be cleaned up to make mandoc even faster.  These are
+
+- improve hashing mechanism for macros (quite important: performance)
+
+- improve hashing mechanism for characters (not as important)
+
+- the PDF file is HUGE: this can be reduced by using relative offsets
+
+- instead of re-initialising the roff predefined-strings set before each
+  parse, create a read-only version the first time and copy it
+  loc *  exist **  algo **  size *  imp **
+
+************************************************************************
+* structural issues
+************************************************************************
+
+- Use libz directly instead of forking gunzip(1).
+  Suggested by bapt at FreeBSD among others.
+
+- We use the input line number at several places to distinguish
+  same-line from different-line input.  That plainly doesn't work
+  with user-defined macros, leading to random breakage.
+
+- Find better ways to prevent endless loops
+  in roff(7) macro and string expansion.
+
+- Finish cleanup of date handling.
+  Decide which formats should be recognized where.
+  Update both mdoc(7) and man(7) documentation.
+  Triggered by  Tim van der Molen  Tue, 22 Feb 2011 20:30:45 +0100
+
+- struct mparse refactoring
+  Steffen Nurpmeso  Thu, 04 Sep 2014 12:50:00 +0200
+
+- Consider creating some views that will make the database more
+  readable from the sqlite3 shell.  Consider using them to
+  abstract from the database structure, too.
+  suggested by espie@@  Sat, 19 Apr 2014 14:52:57 +0200
+
+************************************************************************
+* CGI issues
+************************************************************************
+
+ - Enable HTTP compression by detecting gzip encoding and filtering
+   output through libz.
+ - Sandbox (see OpenSSH).
+ - Enable caching support via HTTP 304 and If-Modified-Since.
+ - Allow for cgi.h to be overridden by CGI environment variables.
+   Otherwise, binary distributions will inherit the compile-time
+   behaviour, which is not optimal.
+ - Have Mac OSX systems automatically disable -static compilation of the
+   CGI: -static isn't supported.
+
+************************************************************************
+* to improve in the groff_mdoc(7) macros
+************************************************************************
+
+- use uname(1) to set doc-default-operating-system at install time
+  tobimensch  Mon, 1 Dec 2014 00:25:07 +0100
+@
+
+
+1.214
+log
+@Theo found a stray blank in HTML output.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.213 2015/08/29 15:10:28 schwarze Exp $
+a529 6
+- word boundaries in regular expressions for whatis(1)
+  set up config tests to use [[:<:]], \<, or nothing
+  Svyatoslav Mishyn  Wed, 17 Dec 2014 11:07:10 +0200
+  reminded by Peter Bray Fri, 03 Apr 2015 23:02:16 +1100
+  loc *  exist *  algo *  size *  imp *
+
+@
+
+
+1.213
+log
+@tedu@@ reports tbl(7) issues in synaptics(4)
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.212 2015/07/18 03:43:51 schwarze Exp $
+d419 6
+@
+
+
+1.212
+log
+@another portability todo
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.211 2015/07/14 19:40:05 schwarze Exp $
+d211 14
+@
+
+
+1.211
+log
+@headers should not contain macros
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.210 2015/06/26 16:56:18 schwarze Exp $
+d514 7
+@
+
+
+1.210
+log
+@delete some TODO entries that were already fixed
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.209 2015/06/18 01:02:16 schwarze Exp $
+d522 4
+@
+
+
+1.209
+log
+@nice idea for eqn(7) from CDBUG.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.208 2015/06/10 22:26:19 schwarze Exp $
+a225 5
+- allow standalone `.' to be interpreted as an end-of-layout
+  delimiter instead of being thrown away as a no-op roff line
+  reported by Yuri Pankov, Wed 18 May 2011 11:34:59 CEST
+  loc **  exist **  algo **  size *  imp **
+
+d250 3
+a252 7
+- When makewhatis(8) encounters a FATAL parse error,
+  it silently treats the file as formatted, which makes no sense
+  at all for paths like man1/foo.1 - and which also contradicts
+  what the manual says at the end of the description.
+  The end result will be ENOENT for file names returned
+  by mansearch() in manpage.file.
+  loc *  exist *  algo *  size *  imp **
+d274 1
+a274 1
+- Some FreeBSD people need either a markdown output formatter
+d277 2
+a281 4
+- write a configure check for [[:<:]] support and provide some
+  fallback for whatis(1) when it doesn't work;
+  Svyatoslav Mishyn  Wed, 17 Dec 2014 11:07:10 +0200
+
+d512 1
+d519 3
+a600 5
+- Improve -O suboption parsing.  Do it in the main program such that
+  errors can be reported.  Pay attention to distinguishing the
+  mandoc(1) and apropos(1) styles of both options.
+  loc **  exist *  algo **  size **  imp ***
+
+@
+
+
+1.208
+log
+@two new tasks i heard about at BSDCan
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.207 2015/04/18 16:05:45 schwarze Exp $
+d233 5
+@
+
+
+1.207
+log
+@look at COHERENT troff
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.206 2015/04/16 20:36:04 schwarze Exp $
+d211 6
+d278 4
+@
+
+
+1.206
+log
+@florian want <img> tags for https://tlakh.xyz/p2k15.7.html
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.205 2015/04/06 22:06:23 schwarze Exp $
+d310 3
+d492 1
+a492 1
+  The parser reorg may help with this.
+@
+
+
+1.205
+log
+@Do not mistreat empty arguments to font alternating macros
+as vertical spacing requests.  Bug found with xmahjongg(6).
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.204 2015/04/03 12:41:02 schwarze Exp $
+d411 4
+@
+
+
+1.204
+log
+@portability: word boundaries in regular expressions
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.203 2015/03/16 14:51:14 schwarze Exp $
+d69 1
+d483 4
+@
+
+
+1.203
+log
+@naddy@@ found a tough problem - fittingly, in cobfusc(1)...
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.202 2015/03/11 13:11:22 schwarze Exp $
+d491 8
+@
+
+
+1.202
+log
+@When interpreting the -O argument as a macro name fails,
+fall back to showing Nd rather than not showing anything.
+Issue reported by jmc@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.201 2015/02/20 13:47:28 schwarze Exp $
+d108 13
+@
+
+
+1.201
+log
+@\n(.$
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.200 2015/02/17 20:41:50 schwarze Exp $
+d560 5
+@
+
+
+1.200
+log
+@naddy@@ scoured the ports tree for remaining mandoc issues
+and identified two top priority issues
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.199 2015/02/12 13:54:50 schwarze Exp $
+d99 4
+@
+
+
+1.199
+log
+@After almost five years and 99 revisions, mdoc_macro.c rev. 1.182
+finally fixed the four issues explained in the mdoc_macro.c rev. 1.83
+commit message.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.198 2015/02/10 08:05:30 schwarze Exp $
+d72 3
+a74 2
+- .ta (tab settings) occurs in ircbug(1) and probably gnats(1)
+  reported by brad@@  Sat, 15 Jan 2011 15:50:51 -0500
+d89 2
+a90 1
+  found in cclive(1) and nasm(1) asciidoc/DocBook output
+d93 1
+a93 1
+  loc **  exist **  algo **  size *  imp ** (parser reorg helps a lot)
+@
+
+
+1.198
+log
+@trim trailing white space, no code change;
+from Svyatoslav Mishyn <juef at openmailboxd dot org>, Crux Linux
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.197 2015/01/24 01:45:21 schwarze Exp $
+a107 4
+- fix bad block nesting involving multiple identical explicit blocks
+  see the OpenBSD mdoc_macro.c 1.47 commit message
+  loc *  exist ***  algo ***  size *  imp **
+
+@
+
+
+1.197
+log
+@new task: escape blank at the beginning of a line
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.196 2014/12/17 20:31:19 schwarze Exp $
+d63 1
+a63 1
+  
+d83 1
+a83 1
+- .while and .shift 
+d468 1
+a468 1
+  see for example 
+d542 1
+a542 1
+Several areas can be cleaned up to make mandoc even faster.  These are 
+d551 1
+a551 1
+  parse, create a read-only version the first time and copy it 
+d567 1
+a567 1
+ 
+@
+
+
+1.196
+log
+@[[:<:]] is not POSIX
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.195 2014/12/13 13:14:39 schwarze Exp $
+d79 1
+a79 1
+  found by naddy@@ in xloadimage(1)
+d354 4
+@
+
+
+1.195
+log
+@Fix a regression found by Carsten dot Kunze at arcor dot de:
+Do not show bogus quotes when .Bl -column phrases are quoted.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.194 2014/12/10 21:54:13 schwarze Exp $
+d258 4
+@
+
+
+1.194
+log
+@the asciidoc/docbook toolchain uses braindead \h for indentation
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.193 2014/12/03 01:46:54 schwarze Exp $
+d302 6
+a307 1
+- a column list with blank `Ta' cells triggers a spurrious
+d310 4
+@
+
+
+1.193
+log
+@delete five entries that were already fixed
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.192 2014/12/02 11:13:49 schwarze Exp $
+d88 3
+a90 2
+  found in cclive(1) DocBook output
+  Anthony J. Bentley on discuss@@  Sat, 21 Sep 2013 22:29:34 -0600
+@
+
+
+1.192
+log
+@note to self to not forget about groff
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.191 2014/12/02 10:41:12 schwarze Exp $
+a123 7
+- \\ is now implemented correctly
+  * when defining strings and macros using .ds and .de
+  * when parsing roff(7) and man(7) macro arguments
+  It does not yet work in mdoc(7) macro arguments
+  because libmdoc does not yet use mandoc_getarg().
+  Also check what happens in plain text, it must be identical to \e.
+
+a163 6
+- set a meaningful default if no `Bl' list type is assigned
+  loc *  exist *  algo *  size *  imp **  (already done?)
+
+- have a blank `It' head for `Bl -tag' not puke
+  loc *  exist *  algo *  size *  imp **  (already done?)
+
+a388 10
+- .Rv (and probably .Ex) print different text if an `Nm' has been named
+  or not (run a manual without `Nm blah' to see this).  I'm not sure
+  that this exists in the wild, but it's still an error.
+  loc *  exist *  algo *  size *  imp * (already done?)
+
+- In .Bl -bullet, the groff bullet is "+\b+\bo\bo", the mandoc bullet
+  is just "o\bo".  The problem is to not break ps/pdf when fixing.
+  see for example OpenBSD ksh(1)
+  loc **  exist **  algo **  size *  imp **
+
+@
+
+
+1.191
+log
+@we really need .ta
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.190 2014/12/02 10:08:06 schwarze Exp $
+d600 6
+@
+
+
+1.190
+log
+@Fix the implementation and documentation of \c (continue text input line).
+In particular, make it work in no-fill mode, too.
+Reminded by Carsten dot Kunze at arcor dot de (Heirloom roff).
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.189 2014/11/26 21:40:17 schwarze Exp $
+d75 2
+a76 1
+  loc **  exist ***  algo **  size **  imp **
+@
+
+
+1.189
+log
+@Simplify the mparse_open()/mparse_wait() interface.
+Don't bother the user with the PID of the child process,
+store it inside the opaque mparse handle.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.188 2014/11/20 02:21:27 schwarze Exp $
+a85 5
+- \c (interrupted text) should prevent the line break
+  even inside .Bd literal; that occurs in chat(8)
+  also found in cclive(1) - DocBook output
+  loc **  exist ***  algo **  size *  imp *
+
+@
+
+
+1.188
+log
+@warn about calling non-callable macros
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.187 2014/11/09 00:54:58 schwarze Exp $
+d567 3
+@
+
+
+1.187
+log
+@hyperlinking in -man -Thtml
+punctuation in the middle of .Fn
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.186 2014/10/25 01:01:12 schwarze Exp $
+d496 8
+@
+
+
+1.186
+log
+@some new tasks
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.185 2014/10/16 01:11:20 schwarze Exp $
+d381 3
+d400 6
+@
+
+
+1.185
+log
+@Implement in-line equations, much needed by Xenocara manuals.
+Put the steering into the roff parser rather than into the mdoc
+parser such that it works for all macro languages and on both text
+and macro lines.
+Line breaks and blank characters generated before and after in-line
+equations are not perfect yet, but let's do one thing at a time.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.184 2014/10/14 15:47:40 schwarze Exp $
+d309 5
+d368 4
+a371 1
+  loc *  exist **  algo ?  size *  imp **
+d562 3
+@
+
+
+1.184
+log
+@annotate for difficulty, and some minor cleanup
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.183 2014/10/14 13:53:33 schwarze Exp $
+a226 3
+- delim
+  loc **  exist **  algo **  size *  imp ***
+
+d515 3
+@
+
+
+1.183
+log
+@bentley@@ suggests Unicode table borders;
+while here, remove the note about sox(1), it works now
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.182 2014/10/10 10:49:38 schwarze Exp $
+d6 29
+d42 1
+d58 1
+d62 1
+d66 1
+d70 1
+d75 1
+d80 1
+d84 1
+d89 1
+d94 1
+d98 1
+d100 1
+a100 1
+- \w'' width measurements
+d103 1
+d107 1
+d113 1
+d121 1
+d126 1
+d140 1
+d145 1
+d151 1
+d155 1
+d166 1
+d176 1
+d179 1
+d183 1
+d194 1
+d203 1
+d213 1
+d218 1
+d223 1
+d227 2
+a228 1
+- set, delim, fonts
+d231 1
+d235 1
+d239 1
+d245 1
+d253 1
+d258 1
+d262 1
+d270 1
+d273 1
+d324 1
+d329 1
+d339 1
+d345 1
+d353 1
+d366 1
+d374 1
+d381 1
+a387 5
+--- eqn issues ---------------------------------------------------------
+
+- If .EQ follows preceding text, a space should be output between the
+  text and the equation.
+
+d395 1
+d398 1
+a398 1
+  is just "o\bo".
+d400 1
+d405 1
+d411 1
+d416 1
+d421 1
+d426 1
+d431 1
+d436 1
+d446 1
+d449 1
+d454 1
+d460 1
+d468 1
+d480 1
+d483 1
+d487 1
+d494 1
+d536 1
+@
+
+
+1.182
+log
+@tasks found while reading the eqn(7) User's Guide
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.181 2014/10/10 08:44:24 kristaps Exp $
+d159 3
+a161 2
+- investigate tbl(1) errors in sox(1)
+  see also naddy@@  Sat, 16 Oct 2010 23:51:57 +0200
+@
+
+
+1.181
+log
+@Re-write of eqn(7) parser and MathML output.
+This adds parser-level support for the grammar described by the eqn
+second-edition technical paper, "Typesetting Mathematics — User's Guide"
+(Kernighan, Cherry).
+The reason for this re-write is the grouping rules, which were not
+possible given the existing implementation.
+The re-write has also considerably simplified the HTML (and, if it ever
+is completed, terminal) front-end.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.180 2014/10/06 18:35:49 schwarze Exp $
+d166 12
+d311 5
+a481 5
+************************************************************************
+* eqn missing features
+************************************************************************
+
+ - set, delim, fonts
+@
+
+
+1.180
+log
+@note HTML max-width issue
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.179 2014/08/18 13:27:47 kristaps Exp $
+d464 6
+@
+
+
+1.179
+log
+@Notes on CGI: installation (readying cgi.h) and future plans.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.178 2014/08/13 22:17:51 schwarze Exp $
+d288 6
+@
+
+
+1.178
+log
+@note about AT&T documenters workbench
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.177 2014/08/13 21:30:55 schwarze Exp $
+d445 13
+@
+
+
+1.177
+log
+@note about <var>
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.176 2014/08/09 14:24:53 schwarze Exp $
+d202 4
+@
+
+
+1.176
+log
+@mmap(2) requires MAP_PRIVATE ^ MAP_SHARED for flags;
+found by kristaps@@ on Mac OS X
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.175 2014/08/08 20:04:36 schwarze Exp $
+d284 3
+@
+
+
+1.175
+log
+@mention neatroff
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.174 2014/07/29 15:20:10 schwarze Exp $
+d402 4
+@
+
+
+1.174
+log
+@move some things here from my private TODO list,
+and remove some items that have already been taken care of
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.173 2014/07/24 08:26:05 schwarze Exp $
+d199 2
+a200 1
+- compare output to Heirloom roff and Solaris roff
+@
+
+
+1.173
+log
+@improve FATAL handling in makewhatis(8)
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.172 2014/06/20 02:53:13 schwarze Exp $
+a66 5
+- general expression parser, including arithmetics
+  to be used at least for .if/.ie and .nr and maybe at other places
+  could use J.T.Conklin's PD code in bin/expr/expr.c for inspiration
+  needed for Tcl_NewStringObj(3) via wiz@@  Wed, 5 Mar 2014 22:27:43 +0100
+
+d90 6
+d129 3
+d136 6
+d159 2
+a160 3
+- implement basic non-parametric .de to support e.g. sox(1)
+  reported by naddy@@ Sat, 16 Oct 2010 23:51:57 +0200
+  *** sox(1) still doesn't work, tbl(1) errors need investigation
+a170 9
+- The whatis(1) utility looks for whole words in Nm.
+  If the file name of a page does not agree with the contents of any
+  of its Nm macros (e.g. pool(9)), add the file name as an Nm entry
+  to the mandoc.db as well, such that whatis(1) finds it.
+  If there is a page with a file name that does not appear as a substring
+  neither in Nm nor in Nd, the same fix would allow finding that page
+  with apropos(1) using the file name as a key, as well.
+  Issue reported by tedu@@  Fri, 05 Jul 2013 21:15:23 -0400
+
+d192 9
+d208 3
+d223 3
+d257 4
+d278 5
+d297 4
+d364 33
+@
+
+
+1.172
+log
+@take a note about pandoc
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.171 2014/06/10 21:19:57 schwarze Exp $
+d171 7
+d257 4
+@
+
+
+1.171
+log
+@some new things to do
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.170 2014/04/23 16:37:43 schwarze Exp $
+d195 4
+@
+
+
+1.170
+log
+@espie@@ suggests using SQL views
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.169 2014/04/23 16:08:33 schwarze Exp $
+d146 3
+d171 7
+d238 8
+@
+
+
+1.169
+log
+@Audit strlcpy(3)/strlcat(3) usage.
+
+* Repair three instances of silent truncation, use asprintf(3).
+* Change two instances of strlen(3)+malloc(3)+strlcpy(3)+strlcat(3)+...
+to use asprintf(3) instead to make them less error prone.
+* Cast the return value of four instances where the destination
+buffer is known to be large enough to (void).
+* Completely remove three useless instances of strlcpy(3)/strlcat(3).
+* Mark two places in -Thtml with XXX that can cause information loss
+and crashes but are not easy to fix, requiring design changes of
+some internal interfaces.
+* The file mandocdb.c remains to be audited.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.168 2014/03/30 19:47:48 schwarze Exp $
+d333 6
+@
+
+
+1.168
+log
+@Implement the roff(7) .ll (line length) request.
+Found by naddy@@ in the textproc/enchant(1) port.
+Of course, do not use this in new manuals.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.167 2014/03/08 21:54:39 schwarze Exp $
+d10 3
+a12 1
+None known.
+@
+
+
+1.167
+log
+@new bug report from wiz@@ regarding Tcl*(3)
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.166 2014/03/03 18:37:32 schwarze Exp $
+a29 3
+- .ll (line length)
+  found by naddy@@ in textproc/enchant(1)  Sat, 12 Oct 2013 03:27:10 +0200
+
+@
+
+
+1.166
+log
+@MANDOCERR_BADTAB needs checking, but .UR/.UE is done
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.165 2014/02/14 23:24:26 schwarze Exp $
+d41 1
+d61 4
+d68 5
+@
+
+
+1.165
+log
+@Parse and ignore the roff(7) .ce request (center some lines).
+
+We even parse and ignore the .ad request (adjustment mode),
+and it doesn't make sense to more prominently warn about
+temporary than about permanent adjustment changes.
+
+Request found by naddy@@ in xloadimage(1) and by juanfra@@ in racket(1).
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.164 2014/02/14 23:05:20 schwarze Exp $
+a132 5
+- groff an-ext.tmac macros (.UR, .UE) occur in xine(5)
+  reported by brad@@  Sat, 15 Jan 2011 15:45:23 -0500
+  also occur in freeciv-client(6) freeciv-server(6) freeciv-modpack(6)
+  reported by bentley@@  Tue, 30 Oct 2012 01:05:57 -0600
+
+d284 11
+@
+
+
+1.164
+log
+@Implement the roff(7) .as request (append to user-defined string).
+Missing feature found by jca@@ in ratpoison(1).
+The ratpoison(1) manual still doesn't work because it uses .shift
+and .while, too (apparently, ratpoison is so complex that it
+needs a Turing-complete language to even format its manual :-).
+
+Written at Christchurch International Airport.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.163 2014/02/14 22:27:41 schwarze Exp $
+a26 5
+- .ce (center N lines)
+  found by naddy@@ in xloadimage(1)
+  found by Juan Francisco Cantero Hurtado <iam at juanfra dot info>
+           in lang/racket(1)  Thu, 20 Jun 2013 03:19:11 +0200
+
+@
+
+
+1.163
+log
+@Handle some predefined read-only number registers, e.g. .H and .V.
+In particular, this improves handling of the pod2man(1) preamble;
+for examples of the effect, see some author names in perlthrtut(1).
+
+Missing feature reported by Andreas Voegele <mail at andreasvoegele dot com>
+more than two years ago.  Written at Christchurch International Airport.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.162 2013/12/25 14:40:34 schwarze Exp $
+a26 3
+- .as (append to string)
+  found by jca@@ in ratpoison(1)  Sun, 30 Jun 2013 12:01:09 +0200
+  
+@
+
+
+1.162
+log
+@In the SYNOPSIS, implement hanging indentation for .Fo
+and avoid output line breaks inside .Fa arguments.
+This reduces groff-mandoc differences in OpenBSD base by more than 8%.
+Patch from Franco Fichtner <franco at lastsummer dot de> (DragonFly).
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.161 2013/12/15 23:56:42 schwarze Exp $
+a17 5
+- roff.c should treat \n(.H>23 and \n(.V>19 in the pod2man(1)
+  preamble as true, see for example AUTHORS in MooseX::Getopt.3p
+  reported by Andreas Voegele <mail at andreasvoegele dot com>
+  Tue, 22 Nov 2011 15:34:47 +0100 on ports@@
+
+@
+
+
+1.161
+log
+@In quoted macro arguments, double quotes can be quoted by doubling them.
+For a long time, we handle this in roff(7) and man(7) macros.
+Now add correct handling for the mdoc(7) case, too.
+
+Closely based on a patch by Tsugutomo dot ENAMI at jp dot sony dot com,
+see http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48438
+received via Thomas Klausner (wiz@@), slightly tweaked by me.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.160 2013/12/15 21:30:13 schwarze Exp $
+a288 7
+- When .Fn arguments exceed one output line, all but the first
+  should be indented, see e.g. rpc(3);
+  reported by jmc@@ on discuss@@  Fri, 29 Oct 2010 13:48:33 +0100
+  reported again by Nicolas Joly via wiz@@  Sun, 18 Sep 2011 18:24:40 +0200
+  Also, we don't want to break the line within the argument of:
+  .Fa "chtype tl"
+
+@
+
+
+1.160
+log
+@bentley@@ looked at sbcl(1) and found new tasks for us...
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.159 2013/11/10 12:28:02 schwarze Exp $
+a205 5
+- double quotes inside double quotes are escaped by doubling them
+  implement this in mdoc(7), too
+  so far, we only have it in roff(7) and man(7)
+  reminded by millert@@  Thu, 09 Dec 2010 17:29:52 -0500
+
+@
+
+
+1.159
+log
+@missing features: line length and italic correction
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.158 2013/10/06 13:32:46 schwarze Exp $
+d46 3
+d70 3
+d191 3
+@
+
+
+1.158
+log
+@If there is random stuff inside a .Bl block body before the first .It,
+do not throw a FATAL error and do not die, but just throw a WARNING
+and move the stuff out of the .Bl block.
+
+This bug felt completely 2008-ish; meanwhile, such bugs from the
+Kristaps-doesnt-like-syntax-errors-so-lets-just-give-up--Era
+are becoming rare, but this was one of the last survivors.
+
+Thanks to bentley@@ for reminding me to finally fix this.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.157 2013/09/27 21:12:34 schwarze Exp $
+d43 3
+d159 3
+@
+
+
+1.157
+log
+@Maybe we can easily improve -width parsing.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.156 2013/09/22 23:21:23 schwarze Exp $
+d10 1
+a10 7
+- .Bl -tag followed by a text node preceding the first .It should not
+  throw a FATAL error, but only a normal ERROR.  Putting this into the
+  HEAD of an implicit .It might be cleanest, inserting an implicit .Pp
+  or just dumping the orphan stuff directly into the BODY of the .Bl
+  might be easier to implement, and all options can no doubt be made
+  to yield correct (i.e. groff bug-compatible) rendering.
+  Anthony J. Bentley on discuss@@  Sun, 22 Sep 2013 16:33:21 -0600
+@
+
+
+1.156
+log
+@Throwing FATAL MANDOCERR_SYNTCHILD on non-.It children of .Bl
+feels so 2008-ish, one of the last remnants of the
+Kristaps-doesnt-like-syntax-errors-so-lets-just-give-up--Era.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.155 2013/09/22 11:48:38 schwarze Exp $
+d277 3
+@
+
+
+1.155
+log
+@DocBook abuses \h - for no good reason, but maybe we should eventually
+try to deal with it.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.154 2013/07/14 11:57:38 schwarze Exp $
+d10 7
+a16 1
+None known right now.
+@
+
+
+1.154
+log
+@jca@@ found .as .shift .while in ratpoison(1)
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.153 2013/07/14 09:36:13 schwarze Exp $
+d58 5
+@
+
+
+1.153
+log
+@tedu@@ says: "whatis pool" doesn't work
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.152 2013/07/13 12:52:07 schwarze Exp $
+d32 3
+d53 3
+@
+
+
+1.152
+log
+@Rudimentary implementation of the .it request (input line trap).
+As with any low-level roff request involving subtle interactions
+with macro internals, this implementation is not exact, but it
+does handle the simplest cases.
+
+This request occurs in man(7) code generated from DocBook,
+for example mysql(1) and yasm_arch(7).
+Thanks to brad@@ for reporting the issue back in January 2011.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.151 2013/07/02 12:22:31 schwarze Exp $
+d145 9
+@
+
+
+1.151
+log
+@fixed in mandoc.c rev. 1.67 and OpenBSD mandoc.c rev. 1.36
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.150 2013/06/22 10:05:44 schwarze Exp $
+a39 4
+- .it (line traps) occur in mysql(1), yasm_arch(7)
+  generated by DocBook XSL Stylesheets v1.71.1 <http://docbook.sf.net/>
+  reported by brad@@  Sat, 15 Jan 2011 15:48:18 -0500
+
+@
+
+
+1.150
+log
+@sort missing roff requests, and add some usage info
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.149 2013/06/01 05:56:44 schwarze Exp $
+a155 8
+- The \t escape sequence is the same as a literal tab, see for example
+  the ASCII table in hexdump(1) where
+    .Bl -column \&000_nu \&001_so \&002_st \&003_et \&004_eo
+    .It \&000\ nul\t001\ soh\t002\ stx\t003\ etx\t004\ eot\t005\ enq
+  produces
+    000 nul  001 soh  002 stx  003 etx  004 eot  005 enq
+  and the example in oldrdist(1)
+
+@
+
+
+1.149
+log
+@latex2man.1 - oh boy...
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.148 2012/11/19 22:30:58 schwarze Exp $
+d32 8
+a46 4
+- xloadimage(1) wants .ti (temporary indent), rep by naddy@@
+  reported again by bentley@@ in nmh(1)  Mon, 23 Apr 2012 13:38:28 -0600
+  also uses .ce (center N lines) and .fc (field control)
+
+d50 4
+@
+
+
+1.148
+log
+@Do not crash on stray .Ta macros found outside column lists.
+Problem reported by jmc@@, thanks.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.147 2012/11/18 00:05:35 schwarze Exp $
+d207 4
+@
+
+
+1.147
+log
+@Fix four small whitespace issues related to trailing punctuation
+reported by Nicolas Joly <njoly at pasteur dot fr>:
+
+- add EOS spacing after trailing punctuation after .Cd, .Fc, and .Lb
+- suppress spacing before trailing punctuation after .Fd
+
+Add the remaining issues from the same report to the TODO file.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.146 2012/11/16 18:44:32 schwarze Exp $
+d10 1
+a10 5
+- $ echo ".Ta" >> ls.1
+  $ mandoc ls.1
+  assertion "MDOC_BLOCK == p->parent->type" failed:
+  file "/usr/src/usr.bin/mandoc/mdoc.c", line 399, function "node_append"
+  from jmc@@  Thu, 20 Sep 2012 21:35:58 +0059
+@
+
+
+1.146
+log
+@End of sentence spacing after trailing punctuation after .In and .Ap
+has just been fixed.  Note that my problem description was somewhat
+misleading, even though Nicolas Joly's problem report was fine.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.145 2012/11/04 18:58:15 schwarze Exp $
+d203 5
+d236 4
+@
+
+
+1.145
+log
+@crash caused by .Ta outside .Bl
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.144 2012/10/31 09:20:23 schwarze Exp $
+a205 8
+- Trailing isolated dots lack EOS for some macros.
+  This cannot use mandoc_eos() because groff only does EOS
+  for isolated dots at least in some of these cases.
+  Affected macros included those using in_line_eoln().
+  Make sure to fix open(2)
+  without breaking fstat(1), ksh(1), tzset(3) and UKC(8).
+  reported by Nicolas Joly  Fri, 12 Oct 2012 17:00:36 +0200
+
+@
+
+
+1.144
+log
+@freeciv wants .UR/.UE too; from bentley@@
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.143 2012/10/12 16:45:34 schwarze Exp $
+d7 10
+@
+
+
+1.143
+log
+@minor EOS issue reported by Nicolas Joly
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.142 2012/07/18 16:52:03 schwarze Exp $
+d118 2
+@
+
+
+1.142
+log
+@Drop empty .IP such that is does not cause additional vertical spacing.
+Issue first reported by naddy@@ in rsync(1).
+OpenBSD rev. 1.55.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.141 2012/07/18 16:41:09 schwarze Exp $
+d194 8
+@
+
+
+1.141
+log
+@Drop .sp and .br right after .SH and .SS.
+
+Fixes vertical spacing after "OPTIONS" in gcc(1).
+Issue first reported by naddy@@ in rsync(1).
+
+OpenBSD rev. 1.54.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.140 2012/07/18 16:20:43 schwarze Exp $
+a250 20
+- In man(7), the sequence
+    regular text
+    .IP
+    .IP "tag"
+    indented text
+  should produce one, not four blank lines between the regular text
+  and the tag, see for example rsync(1).
+  Likewise,
+    regular text
+    .IP
+    indented text
+  should produce one, not two blank lines in between, and
+    regular text
+    .IP
+    .RS
+    .IP tag
+    indented text
+  should produce one, not three blank lines.
+  Reported by naddy@@  Mon, 28 Mar 2011 20:45:42 +0200
+
+@
+
+
+1.140
+log
+@Let a trailing .Ns macro take effect
+even on an input line containing a partial implicit macro.
+
+Fixes horizontal spacing in vi(1), ddb(4), and ppp(8).
+
+OpenBSD rev. 1.74.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.139 2012/07/18 11:11:12 schwarze Exp $
+a251 9
+    .SH HEADER
+    <blank line>
+    .PP
+    regular text
+  should not produce any blank lines between the header and the text,
+  see for example rsync(1).
+  Reported by naddy@@  Mon, 28 Mar 2011 20:45:42 +0200
+
+- In man(7), the sequence
+@
+
+
+1.139
+log
+@Fix handling of paragraph macros inside lists:
+* When they are trailing the last item, move them outside the list.
+* When they are trailing any other none-compact item, drop them.
+
+OpenBSD rev. mdoc_validate.c 1.107, mdoc.c 1.91
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.138 2012/07/18 10:39:19 schwarze Exp $
+a245 9
+- .Ns should work when called at the end of an input line, see
+  the following code in vi(1):
+    .It Xo
+    .Op Ar line
+    .Cm a Ns Op Cm ppend Ns
+    .Op Cm !\&
+    .Xc
+    The input text is appended after the specified line.
+
+@
+
+
+1.138
+log
+@The mdoc(7) \*(Ba predefined string actually forces roman font;
+that's stupid because it may break enclosing font changes,
+but let's do the same for groff bug compatibility.
+
+--> Never use \*(Ba, use just plain "|"! <--
+
+Also, predefined strings are already expanded by the roff(7) parser,
+so the mdoc(7) parser has to look for the expanded string.
+
+OpenBSD rev. mdoc.c 1.90 and predefs.in 1.3
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.137 2012/07/16 21:30:42 schwarze Exp $
+a205 7
+- A bogus .Pp between two .It must not produce a double blank line,
+  see between -R and -r in OpenBSD rm(1), before "update" in mount(8),
+  or in DIAGNOSTICS in init(8), or before "is always true" in ksh(1).
+  The same happens with .Pp just before .El, see bgpd.conf(5).
+  Also have `It' complain if `Pp' is invoked at certain times (not
+  -compact?).
+
+@
+
+
+1.137
+log
+@In flush-left mode of both man(7) and mdoc(7), when an output line is broken
+at the position of a literal tab, the tab indents the following line.
+Fixes the perl(1) SYNOPSIS; reminded by deraadt@@; OpenBSD rev. 1.66.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.136 2012/06/12 20:21:04 kristaps Exp $
+a205 5
+- The characters "|" and "\*(Ba" should never be bold,
+  not even in the middle of a word, e.g. ".Cm b\*(Bac" in
+  "mknod [-m mode] name b|c major minor"
+  in OpenBSD ksh(1)
+
+a267 7
+    .HP
+    one line of regular text
+    .SH
+  should not produce two blank lines before the .SH,
+  see for example named-checkconf(8).
+
+- In man(7), the sequence
+@
+
+
+1.136
+log
+@Add `cc' support.
+This was reported by espie@@ and in the TODO.
+Caveat: `cc' has buggy behaviour when invoked in groff(1) and followed
+by a line-breaking control character macro, e.g., in a -man doc,
+
+  .cc |
+  .B foo
+  'B foo
+  |cc
+  'B foo
+
+will cause groff(1) to behave properly for `.B' but inline the macro
+definition for `B' when invoked with the line-breaking macro.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.135 2012/06/12 12:47:14 kristaps Exp $
+a171 3
+- perl(1) SYNOPSIS looks bad; reported by deraadt@@
+  1) man(7) seems to need SYNOPSIS .Nm blocks, too
+
+@
+
+
+1.135
+log
+@Fix an assert() raised by `RS' when following `TP'.
+The reason was that `RS' wasn't BSCOPE'd, so the next-line (BLINE) scope
+opened by `TP' would still be in the HEAD macro.
+This was from joerg@@'s archive of failures.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.134 2012/06/05 21:29:26 schwarze Exp $
+a25 3
+- .cc (change control character) occurs in sqlite3(1)
+  reported by espie@@  Sat, 14 Apr 2012 15:35:38 +0200
+
+@
+
+
+1.134
+log
+@forgot to commit one request bu espie@@
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.133 2012/05/31 01:54:45 schwarze Exp $
+a321 6
+* error reporting issues
+************************************************************************
+
+- .TP directly followed by .RS gives an assertion.
+
+************************************************************************
+@
+
+
+1.133
+log
+@.if vertical spacing now fixed in OpenBSD
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.132 2012/05/28 23:09:22 schwarze Exp $
+d26 3
+@
+
+
+1.132
+log
+@clarify two entries related to roff(7) escapes
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.131 2012/05/27 15:20:12 schwarze Exp $
+a16 4
+- .if n \{
+  .br\}
+  should cause an extra space to be raised.
+
+@
+
+
+1.131
+log
+@Horizontal spacing of tables was fixed
+in tbl_term.c rev. 1.10 and out.c rev. 1.16
+on September 20, 2011.
+I merely forgot to delete the TODO entry.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.130 2012/05/27 14:42:05 schwarze Exp $
+d12 2
+a13 2
+- The pod2man preamble wants \h'...' with quoted numerical arguments,
+  see for example AUTHORS in MooseX::Getopt.3p, p5-MooseX-Getopt.
+d44 2
+a45 1
+- \c (interrupted text) occurs in chat(8)
+@
+
+
+1.130
+log
+@The .\} -> .\& -> pset() bug reported by naddy has already been fixed;
+i'm really sure because i both stepped through the code with gdb
+and wrote an OpenBSD regression test for it.
+
+While here, note that bentley@@ reported .ti .ce .fc missing.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.129 2012/03/04 23:53:37 schwarze Exp $
+a6 9
+* formatter bugs
+************************************************************************
+
+- tbl(7): Horizontal and vertical lines are formatted badly:
+  With the box option, there is too much white space at the end of cells.
+  Horizontal lines from "=" lines are a bit too long.
+  yuri dot pankov at gmail dot com  Thu, 14 Apr 2011 05:45:26 +0400
+
+************************************************************************
+@
+
+
+1.129
+log
+@two reminders
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.128 2012/01/23 01:41:54 joerg Exp $
+a6 9
+* parser bugs
+************************************************************************
+
+- ".\}" on its own line gets translated to bare ".\&"
+  which forces pset() into man(7)
+  and then triggers an unknown macro error
+  reported by naddy@@  Sun, 3 Jul 2011 21:52:24 +0200
+
+************************************************************************
+d47 2
+@
+
+
+1.128
+log
+@Add entry about the .TP / .RS crash before I forget about it again.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.127 2012/01/02 15:48:05 kristaps Exp $
+d243 1
+d266 2
+@
+
+
+1.127
+log
+@`-diag' lists aren't parsed, unlike other list types.  This fixes a TODO
+entry raised by deraadt@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.126 2011/12/05 00:41:40 schwarze Exp $
+d338 2
+@
+
+
+1.126
+log
+@must ignore \h with quoted argument
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.125 2011/11/17 17:41:07 schwarze Exp $
+a14 3
+- .It is parsed in general, except in .Bl -diag
+  deraadt@@  Mon, 07 Nov 2011 11:10:52 -0700
+
+@
+
+
+1.125
+log
+@using undefined macros or strings should define them to be empty
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.124 2011/11/13 10:02:54 schwarze Exp $
+d33 5
+@
+
+
+1.124
+log
+@another detail to implement;
+long live the tricky exceptions!
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.123 2011/11/07 01:24:40 schwarze Exp $
+d60 3
+@
+
+
+1.123
+log
+@When the HEAD scope of .TP is broken by another block macro,
+do not abort with a FATAL error, but report a report a WARNING,
+remove the broken .TP from the syntax tree, and prod on.
+Reported repeatedly by ports people, at least by brad@@ and jeremy@@.
+Also fixes rendition(4) in Xenocara.
+ok kristaps@@
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.122 2011/09/20 14:20:48 schwarze Exp $
+d15 3
+@
+
+
+1.122
+log
+@Using user-defined macros, surprisingly, it is possible
+to have *next*-line head arguments on the *same* input line.
+So .TP must not assume that a head argument with a matching
+input line number is a same-line argument (and access a NULL pointer).
+Bug found and fix tested by kristaps@@ with groff_hdtbl(7).
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.121 2011/09/18 16:43:28 schwarze Exp $
+a14 5
+- .TP before .SH is still FATAL in man(7)
+  reported by brad@@  Sat, 15 Jan 2011 15:54:54 -0500
+  also occurs in emulators/pcsxr/patches/patch-doc_pcsx_1
+  jeremy@@  commit Wed, 7 Sep 2011 10:00:19 -0600 (MDT)
+
+d190 1
+@
+
+
+1.121
+log
+@two issues were reported again
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.120 2011/07/28 14:37:39 kristaps Exp $
+d353 4
+@
+
+
+1.120
+log
+@Remove TODO entry about `tr'.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.119 2011/07/09 10:26:57 kristaps Exp $
+d17 2
+d269 3
+@
+
+
+1.119
+log
+@Spaces must be preserved in -T[x]html literal mode.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.118 2011/07/07 06:34:13 kristaps Exp $
+a57 2
+- pod2man expects `tr' to be implemented for \*(-- to work
+
+@
+
+
+1.118
+log
+@Note the strange `if'+newline issue raised by schwarze@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.117 2011/07/03 22:57:32 kristaps Exp $
+d135 2
+@
+
+
+1.117
+log
+@Fix a TODO noted by schwarze@@, originally by Christian Weisgerber:
+literal mode (`nf') is ended by SH (and, it turns out, SS as well).
+Noted the updated behaviour in man.7 as well.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.116 2011/07/03 22:40:10 schwarze Exp $
+d33 4
+@
+
+
+1.116
+log
+@two new bugs reported by naddy@@:
+ - .\} breaks
+ - .SH implies .fi
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.115 2011/06/30 08:05:13 kristaps Exp $
+a130 3
+- .SH implies .fi, see e.g. sasl_setpass(1)
+  reported by naddy@@  Sun, 3 Jul 2011 23:55:17 +0200
+
+@
+
+
+1.115
+log
+@Ouch: predefined strings moved into roff.c weren't being reinitalised
+after the first parse.  Do this, but note there are more efficient ways
+just waiting for a table of macros.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.114 2011/06/29 15:38:09 kristaps Exp $
+d10 5
+d131 3
+@
+
+
+1.114
+log
+@First fix how `sp 1' doesn't imply `1v' (it now does) and that 1
+followed by non-digits, e.g. `1g', really means `1'.  Next, fix some
+spacing issues where `sp' was invoked in -man after sections or
+subsections.  Make sure this behaviour is mirrored in -Thtml.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.113 2011/06/18 17:58:48 kristaps Exp $
+d332 3
+@
+
+
+1.113
+log
+@Fix two TODOs with one check-in.  Both of these relate to vertical space
+before paragraphs and/or within `RS' blocks.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.112 2011/06/18 17:36:52 kristaps Exp $
+a308 2
+- At least sometimes, .sp is ignored right after .SH; see named.conf(5).
+
+@
+
+
+1.112
+log
+@Allow RS/RE blocks to nest.  This requires first the syntax tree to
+accomodate for the fix, then for the front-ends.  -T[x]html accepted the
+syntax tree natively, but -Tascii had to use relative offsets.  It's
+quite a simple fix.
+
+From a TODO by {dcoppa,dsoares}@@openbsd.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.111 2011/06/18 16:18:04 kristaps Exp $
+a280 7
+    regular text
+    .RS
+    .IP
+  should have a blank line between the text and the beginning of the
+  indented paragraph, see for example sudo(1).
+
+- In man(7), the sequence
+a290 14
+    .PP
+    .RS
+    indented text
+  should produce one blank line between the regular and indented texts,
+  see for example rsync(1), and
+    .RE
+    <blank line>
+    .PP
+    .RS
+  should produce two,not one blank lines.
+  Reported by naddy@@  Mon, 28 Mar 2011 20:45:42 +0200
+
+- In man(7), the sequence
+    regular text
+@
+
+
+1.111
+log
+@Fix an assertion failure raised by the following interesting scenario: a
+auto-opened `It' (i.e., a column list with a free-text first line) with
+leading spaces in the line triggering assertion when searching for
+arguments.
+
+This led to a fix giving a nice performance speed-ups (a few percent,
+with some quick trials): the search for flags immediately exits if the
+macro has no flags, instead of having to first parse the leading word
+then look it up.  I also cleaned up the argv parsing stuff a little bit
+and added more documentation.
+
+This comes from a TODO by joerg@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.110 2011/06/12 12:13:27 joerg Exp $
+a122 5
+- .RS/.RE can be nested, see e.g. the x11/fluxbox manuals
+  noticed by dcoppa@@  Wed, Apr 13, 2011 at 04:58:14PM +0200:
+  also affects p5-Net-SFTP-Foreign-1.65
+  as reported by gsoares@@  Wed, 18 May 2011 09:59:06 -0300
+
+@
+
+
+1.110
+log
+@Add note about crash on invalid found in the NetBSD tree
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.109 2011/06/11 15:41:35 schwarze Exp $
+a12 3
+- Assertion failure on src/share/man/man1/man1.atari/edahdi.1 rev 1.9
+  in the NetBSD.
+
+@
+
+
+1.109
+log
+@.Nm in-line/block issues reported by uqs@@
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.108 2011/05/24 14:00:39 kristaps Exp $
+d13 3
+@
+
+
+1.108
+log
+@Fix a TODO to the effect that `.if n \{\ foo .br \}' was failing due to
+the `\}' not being directly after the `.br'.  Now we check for `\}' in
+arbitrary parts of the line, and account for if it's escaped in funny
+ways.
+
+This behaviour diverges somewhat from groff in that the text at and
+following the `\}' is lost, while groff keeps it (sort-of).  I'll add a
+COMPATIBILITY note to this effect.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.107 2011/05/21 21:38:17 schwarze Exp $
+d113 8
+@
+
+
+1.107
+log
+@nested .RS/.RE is becoming more important
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.106 2011/05/18 23:59:08 kristaps Exp $
+a12 6
+- the roff parser doesn't tolerate additional characters between
+  a macro and the \} terminating a conditional block, e.g.
+  .if n \{
+  .br \}
+  reported by ulrich spoerlein  Tue, 19 Oct 2010 20:39:50 +0200
+
+@
+
+
+1.106
+log
+@Make any un-recognised font be considered a call for the Roman font.
+This makes sequences of \f[unknown] \fP not completely puke.  From a
+TODO by schwarze@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.105 2011/05/18 09:45:21 kristaps Exp $
+d123 2
+@
+
+
+1.105
+log
+@Add TODO entry for standalone `.' in tbl pages (pointed out by Yuri
+Pankov).  Also fix typo in Makefile, same reporter.  Thanks!
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.104 2011/04/30 10:18:24 kristaps Exp $
+a58 5
+- \f(CW (constant width font) occurs in rsyncd.conf(5).
+  I think we should treat unknown/unavailable fonts as \fR
+  such that switching back with \fP works correctly -
+  and doesn't revert the _previous_ \fP.
+
+@
+
+
+1.104
+log
+@No code change: fixing spelling errors.  From a patch by uqs@@.  Thanks!
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.103 2011/04/17 13:32:27 schwarze Exp $
+d138 4
+@
+
+
+1.103
+log
+@.Pp in .Bl -column
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.102 2011/04/16 23:00:45 schwarze Exp $
+d204 1
+a204 1
+* formatting issues: gratuitious differences
+@
+
+
+1.102
+log
+@mini-bug at eol after .Bl -column .It
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.101 2011/04/16 22:35:26 schwarze Exp $
+d227 4
+@
+
+
+1.101
+log
+@lines in tables and .RS/.RE nesting
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.100 2011/04/13 09:57:41 kristaps Exp $
+d99 10
+@
+
+
+1.100
+log
+@Remove TODO from prior commit of lifting warnings from `Sh', `Ss', `SH',
+and `SS' bodies.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.99 2011/04/12 23:54:12 schwarze Exp $
+d23 5
+d116 3
+@
+
+
+1.99
+log
+@empty .SS is ok
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.98 2011/03/30 00:02:40 schwarze Exp $
+a322 7
+- In man(7), an empty subsection (.SS) should not be an error, probably
+  not even a warning.  For example, in ExtUtils::CChecker(3p), this is
+  used in a way similar to empty .It -tag in mdoc(7), that is, explaining
+  two commands (both presented with .SS markup) in one paragraph of text.
+  Reported by Gleydson Soares <gsoares at trusted dot com dot br>
+  on ports@@  Tue, 12 Apr 2011 15:39:26 -0300
+
+@
+
+
+1.98
+log
+@naddy@@ reports rsync(1)
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.97 2011/03/29 09:00:48 kristaps Exp $
+d323 7
+@
+
+
+1.97
+log
+@Carefully let mandoc_getcontrol() handle libroff's detection of a macro
+line.  Note that we now properly ignore \.", which earlier would have
+been pushed through macro detection.  This required attention to all
+entries of roff_parse().
+
+This removes a TODO by schwarze@@ to the effect that \. can be a control
+character, which is now handled in mandoc_getcontrol().
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.96 2011/03/23 22:16:03 schwarze Exp $
+d54 5
+d267 43
+@
+
+
+1.96
+log
+@new: \. at the beginning of a line
+partially done: date cleanup
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.95 2011/03/23 09:47:13 kristaps Exp $
+a18 5
+- \. at the start of the line does *not* prevent interpretation
+  of the following word as a macro.
+  Werner LEMBERG on bug-groff@@  Tue, 22 Mar 2011 14:21:28 +0100
+  http://lists.gnu.org/archive/html/bug-groff/2011-03/msg00011.html
+
+@
+
+
+1.95
+log
+@Make (e.g.) `SM' before `B' be only a warning.  In reality, this refers
+to ELINE macros ("next-line", but not unbreakable like the next-line
+paragraph macros) followed by other macros.  This addresses a report by
+Christian Weisgerber, posted in the TODO by schwarze@@, and aired on
+discuss@@ (22/03/2011) for whether a fix is warranted.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.94 2011/03/22 15:30:30 kristaps Exp $
+d19 5
+d299 1
+a299 5
+- Clean up date handling.
+  Store dates as strings, not time numbers.
+  When the format is not recognized, just use the string from the input.
+  When the format is recognized, normalize the string to whatever
+  format is standard at the respective place.
+@
+
+
+1.94
+log
+@Make empty sections and parts (SH, SS, RS) only produce a warning if it
+has no children.  Noted by Brad, added to TODO by schwarze@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.93 2011/03/19 23:36:08 schwarze Exp $
+a105 6
+- bashbug(1) complains "line scope broken" after
+  .SM
+  .B something
+  should either just work or be a warning
+  reported by naddy@@
+
+@
+
+
+1.93
+log
+@.RS w/o line args is not serious
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.92 2011/03/17 09:16:38 kristaps Exp $
+a280 4
+- empty .RS blocks in man(7) should be warnings, not errors,
+  see for example qemu(1);
+  brad@@comstyle.com  Sat Mar 19 00:36:56 2011
+
+@
+
+
+1.92
+log
+@Move mdoc_isdelim() into mandoc.h as mandoc_isdelim().  This allows the
+removal of manual delimiter checks in html.c and term.c.  Finally, add
+the escaped period as a closing delimiter, removing a TODO to this
+effect.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.91 2011/02/27 14:17:28 schwarze Exp $
+d281 4
+@
+
+
+1.91
+log
+@date handling needs cleanup
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.90 2011/02/09 10:03:02 kristaps Exp $
+a12 9
+- The mdoc(7) parser should handle `\.' as punctuation:
+    .Ql .if ${VAR} op something \.
+  should produce
+    `.if ${VAR} op something'.
+  not
+    `.if ${VAR} op something .'
+  as seen in make(1).
+  To escape the dot, one would use `\&.'.
+
+@
+
+
+1.90
+log
+@Add stub for eqn.7 manual and flip it on.  Also note COMPATIBILITY issue
+of how we considered .TS (etc.) macros and how the preprocessors do.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.89 2011/02/03 10:24:21 kristaps Exp $
+d308 9
+a316 1
+  
+@
+
+
+1.89
+log
+@TODO note on that `.TS', `.TE' etc. aren't real roff macros and troff
+won't recognise them when invoked as e.g. `.   TS' (we, however, do).
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.88 2011/02/02 21:40:45 kristaps Exp $
+a9 6
+- It should be noted that in mandoc, the TBL macros are interpreted as
+  real roff macros (e.g., `.  TS' is ok), while the troff preprocessor
+  only looks for `.TS' (static string).  This should be noted in the
+  COMPATIBILITY section.  The same applies for nascent `.EQ' (as it is
+  now, `.EN' is processed as a static string).
+
+@
+
+
+1.88
+log
+@If `Ns' is specified on its own line, it should be ignored.  This is
+shitty groff behaviour.  Do the same, but raise a warning to this
+effect.  This from a TODO noted by schwarze@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.87 2011/01/31 12:52:43 kristaps Exp $
+d10 6
+@
+
+
+1.87
+log
+@Note an error found in the wild.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.86 2011/01/25 16:20:24 kristaps Exp $
+a248 4
+- .Ns should only be effective when called by another macro,
+  not as a stand-alone macro at the beginning of a line;
+  see for example the awk(1) SYNOPSIS.
+
+@
+
+
+1.86
+log
+@Arguments to `Bsx' and friends are separated by a non-breaking space.
+This removes a TODO raised by schwarze@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.85 2011/01/25 15:17:18 kristaps Exp $
+d163 3
+@
+
+
+1.85
+log
+@Have `Bx' accept two arguments, not just one, and join these arguments
+with "xxBSD-yy"
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.84 2011/01/25 10:37:49 kristaps Exp $
+a227 3
+- The space character joining .Dx .Fx .Nx .Ox (are these all?) to its
+  argument is non-breaking.  See the cdio(1) HISTORY and many others.
+
+@
+
+
+1.84
+log
+@If %B is specified, quote %T.  Noted by schwarze@@ in the TODO.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.83 2011/01/24 01:34:56 schwarze Exp $
+a230 6
+- .Bx uses a dash before its argument, not a space,
+  see for example the chpass(1) and column(1) HISTORY.
+  Besides, the second argument is capitalized, for example,
+    .Bx 4.3 tahoe .
+  produces 4.3BSD-Tahoe.
+
+@
+
+
+1.83
+log
+@results of some systematic comparisons
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.82 2011/01/23 15:35:10 schwarze Exp $
+a267 5
+- When we have both .%T and .%B in .Rs, .%T uses "", not underline, see
+  for example arp(4); admittedly, arp(4) is abusing both .%T and .%B,
+  but when dealing with anthologies, sensible use of of both in the
+  same .Rs can occur.
+
+@
+
+
+1.82
+log
+@not implemented: adjustment
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.81 2011/01/22 23:27:06 schwarze Exp $
+d13 9
+d61 2
+d139 8
+d180 9
+d211 2
+a212 1
+  or in DIAGNOSTICS in init(8).
+d216 8
+d228 9
+d241 6
+d255 18
+d278 23
+@
+
+
+1.81
+log
+@some more reports from brad@@
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.80 2011/01/22 20:36:02 schwarze Exp $
+d29 9
+d75 4
+@
+
+
+1.80
+log
+@missing: .ns, .UR; reported by brad@@
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.79 2011/01/22 20:24:53 schwarze Exp $
+d10 3
+d29 4
+d38 3
+@
+
+
+1.79
+log
+@sort missing features, no change of content
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.78 2011/01/12 16:55:22 kristaps Exp $
+d26 2
+a27 1
+- pod2man expects `tr' to be implemented for \*(-- to work
+d29 1
+a29 2
+- implement `rm' - it is easy to do and used in the pod2man preamble
+  reminded by brad@@  Sun, Jan 09, 2011 at 09:45:58PM -0500
+d31 1
+a31 1
+- xloadimage(1) wants .ti (temporary indent), rep by naddy@@
+d87 3
+d108 1
+@
+
+
+1.78
+log
+@Downgrade -man message of ignored empty paragraph to MANDOC_IGNPAR.  The
+change in man_macro.c was from an assertion caused by a subtle problem:
+(1) macro is removed, causing m->last to be m->last->parent; (2) by jumping
+to the m->last->parent after post-validation, the original
+m->last->parent is skipped; (3) the rewinder climbs to the root of the
+tree and aborts.
+
+The original issue recorded in the TODO by schwarze@@, reminded by Brad
+Smith.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.77 2011/01/12 15:50:42 kristaps Exp $
+d24 2
+d31 4
+a55 17
+- implement basic non-parametric .de to support e.g. sox(1)
+  reported by naddy@@ Sat, 16 Oct 2010 23:51:57 +0200
+  *** sox(1) still doesn't work, tbl(1) errors need investigation
+
+- clean up escape sequence handling, creating three classes:
+  (1) fully implemented, or parsed and ignored without loss of content
+  (2) unimplemented, potentially causing loss of content
+      or serious mangling of formatting (e.g. \n) -> ERROR
+      see textproc/mgdiff(1) for nice examples
+  (3) undefined, just output the character -> perhaps WARNING
+
+- look at pages generated from reStructeredText, e.g. devel/mercurial hg(1)
+  These are a weird mixture of man(7) and custom autogenerated low-level
+  roff stuff.  Figure out to what extent we can cope.
+  noted by stsp@@  Sat, 24 Apr 2010 09:17:55 +0200
+  reminded by nicm@@  Mon, 3 May 2010 09:52:41 +0100
+
+d79 1
+a79 1
+- xloadimage(1) wants .ti (temporary indent), rep by naddy@@
+d87 21
+@
+
+
+1.77
+log
+@Make out-of-context `fi' invocations not cause an error, but just a
+warning.  From a TODO by schwarze@@, originally noted by Brad Smith.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.76 2011/01/12 15:31:17 kristaps Exp $
+a174 4
+- downgrade "ERROR: macro requires body argument(s)" to WARNING
+  for the typical man(7) cases, it keeps confusing people
+  reminded by brad@@  Sun, Jan 09, 2011 at 09:45:58PM -0500
+
+@
+
+
+1.76
+log
+@Make sure that -Thtml doesn't break within literal lines.  This is the
+same logic as the -Tascii case.  Also remove the TODO.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.75 2011/01/10 03:43:47 schwarze Exp $
+a174 4
+- .fi without preceding .nf need not be an ERROR,
+  a warning is sufficient; occurs in all postfix manuals
+  reported by brad@@  Sun, Jan 09, 2011 at 09:45:58PM -0500
+
+@
+
+
+1.75
+log
+@some minor issues reported by brad@@
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.74 2011/01/09 18:45:46 schwarze Exp $
+a19 4
+- in literal mode, the man(7) -Tascii formatter
+  breaks the line between macro arguments,
+  e.g. ".B #include <libintl.h>" in gettext(3)
+
+@
+
+
+1.74
+log
+@Remove lots of issues that have been resolved,
+and rephrase some that have been partially resolved.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.73 2011/01/06 14:05:12 kristaps Exp $
+d30 3
+d176 12
+@
+
+
+1.73
+log
+@Make -literal displays only have 8-character displays.  From a
+low-hanging TODO added by schwarze@@ on 15/08/10.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.72 2011/01/03 21:53:46 kristaps Exp $
+d16 7
+a22 4
+- .BI "string string " word punct in gettext(3)
+  add bogus line breaks (rep by naddy@@)
+  committed; currently working on IP and TP?
+  and what about B and I?
+a29 4
+- explicit blocks with missing end macro should be implicitely closed
+  at the end of the enclosing block, e.g. .Bl It (El) Sh
+  reminded by stsp@@  in net/pptp pptp.8  Fri, 23 Apr 2010 20:32:39 +0200
+
+d44 6
+a49 10
+- auto-Bk in the SYNOPSIS
+  patch from kristaps@@  Fri, 16 Jul 2010 14:51:24 +0200
+  to be revisited after OpenBSD 4.8 tree unlock
+
+- implement \\
+  in plain text, identical to \e
+  as a macro argument, identical to \ i.e. escaping the next character
+  We do not have macro definitions yet; if we implement them,
+  \\ must behave in a macro def like in a macro argument,
+  and when using the macro, it must expand yet again.
+d109 2
+a110 1
+  implement this in man(7) and mdoc(7)
+a166 3
+- It seems that .TP does not want TWOSPACE after the tag;
+  see bashbug(1); reported by naddy@@
+
+@
+
+
+1.72
+log
+@Remove TODO for tbl.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.71 2010/12/30 00:51:32 schwarze Exp $
+a154 5
+- .Bd -literal and .Bd -unfilled are *not* identical.
+  In -literal, tabs are 8 spaces.
+  In -unfilled, tabs are 5 spaces, just like in -filled and -ragged.
+  See the CCDF_* display in OpenBSD ccdconfig(8).
+
+@
+
+
+1.71
+log
+@Plan9 has a man(7) implementation that looks extremely archaic,
+even more archaic than Solaris/Heirloom stuff; so that is quite
+interesting from a perspective of compatibility and history.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.70 2010/12/26 14:38:10 kristaps Exp $
+a66 2
+- port OpenBSD tbl integration bsd.lv, probably cleaning it up
+
+@
+
+
+1.70
+log
+@pod2man re-writes this and that using `tr', which we don't implement.  Noted
+by Andreas Vogele.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.69 2010/12/25 13:50:37 kristaps Exp $
+d106 5
+@
+
+
+1.69
+log
+@Specifying both %T and %J in an `Rs' block causes the title to be quoted
+instead of underlined.  This only happens in -Tascii, as -T[x]html both
+underlines and italicises.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.68 2010/12/16 01:00:29 kristaps Exp $
+d25 2
+@
+
+
+1.68
+log
+@Note that `Sh' and `Ss' are now rigorously checked for paragraph macros.
+Merge other TODO regarding `It' and paragraphs.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.67 2010/12/09 23:44:39 schwarze Exp $
+a134 4
+- .%T should be quoted, not underlined, when .%J is also present,
+  to better distinguish the contents of .%T and .%J,
+  see for example OpenBSD cat(1)
+
+@
+
+
+1.67
+log
+@done: .de; todo: """"; loops in macro and string expansion
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.66 2010/12/09 10:32:22 kristaps Exp $
+a95 4
+- Have `Sh', `It', `Ss' and others complain if `Pp' is invoked prior to
+  close (in the post validation) or prior to open (pre).  This noted by
+  jmc@@ a thousand years ago.
+
+d151 2
+@
+
+
+1.66
+log
+@Allow quote macros (`Op', `Aq', `Bq', `Dq', `Pq', `Ql', `Qq', `Sq', and
+`Brq') to have zero arguments without warning.  This makes sense because
+the multi-line quote macros (`Oo/Oc' etc.) allow zero children anyway.
+Furthermore, the documentation doesn't state that they're required to
+have children.
+
+Originally reported by Alex Kozlov, thanks!
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.65 2010/11/29 13:04:31 kristaps Exp $
+a54 14
+  .de SP
+  .if t .sp .5
+  .if n .sp
+  ..
+  .de EX
+  .SP
+  .nf
+  .ft CW
+  ..
+  .de EE
+  .ft R
+  .SP
+  .fi
+  ..
+d56 1
+a56 8
+
+- implement parametric .de to support e.g.
+  /usr/xenocara/lib/libXxf86vm/manXF86VM.man
+  .de ZN
+  .ie t \fB\^\\$1\^\fR\\$2
+  .el \fI\^\\$1\^\fP\\$2
+  ..
+  .ZN -lXxf86vm
+d112 4
+d200 4
+@
+
+
+1.65
+log
+@Note that `Rv' and `Ex' have different values if a manual name has been
+specified or not.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.64 2010/11/03 12:07:58 schwarze Exp $
+a116 3
+- allow `Qq', `Dq', `Sq', `Aq', `Bq' to have 0 arguments
+  noted by Alex Kozlov 08/06/10 23:05
+
+@
+
+
+1.64
+log
+@new: parametric .de, and header lines of excessive length
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.63 2010/10/29 13:05:27 schwarze Exp $
+d155 4
+@
+
+
+1.63
+log
+@a bunch of small issues collected during p2k10
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.62 2010/10/23 22:40:13 schwarze Exp $
+d71 8
+d196 5
+@
+
+
+1.62
+log
+@new: escape sequence handling
+done: nested displays
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.61 2010/10/19 21:40:27 schwarze Exp $
+d16 5
+d116 8
+d181 7
+@
+
+
+1.61
+log
+@two new TODOs based on submissions by Ulrich Spoerlein
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.60 2010/10/17 21:10:53 schwarze Exp $
+a19 3
+- deal with nested displays, e.g. D1 inside Bd
+  schwarze has an old patch somewhere and would need to brush it up
+
+d66 7
+@
+
+
+1.60
+log
+@dream about .de support,
+and remove irrelevant stuff regarding tbl
+now that it's imported into OpenBSD
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.59 2010/10/10 09:59:48 kristaps Exp $
+d7 10
+d20 3
+@
+
+
+1.59
+log
+@`Sm' no longer produces a linebreak when used in `Bd'.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.58 2010/10/01 21:51:13 schwarze Exp $
+d39 18
+a56 5
+- look at bsd.lv tbl(1)
+  from kristaps@@  Fri, 11 Sep 2009 17:10:53 +0200
+  also look at the mail from Thomas Klausner wiz at NetBSD
+    on Wed, 2 Jun 2010 11:01:29 +0200
+  joerg@@ has patches for this somewhere...
+@
+
+
+1.58
+log
+@* need a space before .No even if it starts with a closing delimiter
+* slightly simplify .Pf *_IGNDELIM code, and share part of it with .No
+* do not let opening delimiters fall out of the front of .Ns (from kristaps@@)
+This fixes a few spacing issues in csh(1) and ksh(1).
+OK kristaps@@
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.57 2010/09/27 22:42:48 kristaps Exp $
+a111 3
+- .Sm should *not* produce as a blank line in .Bd -literal
+  see for example "Brace expansion" in OpenBSD ksh(1)
+
+@
+
+
+1.57
+log
+@Added TODO for more `Pp' warnings.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.56 2010/09/27 21:33:52 schwarze Exp $
+a107 7
+- .It ${name Ns [ selector ] Ns }
+  should be "${name[selector]}" not "${name [selector]}"
+  This is parsed as
+  text("${name") text("[") Ns() text(selector)...
+  Opening punctuation should not fall out of .Ns.
+  see for example OpenBSD csh(1)
+
+a111 5
+- .No text No ) is "text )", not "text)"
+  see the terrible example
+    case word in [[(]  pattern [| pattern] ... ) list ;; ] ... esac
+  in OpenBSD ksh(1)
+
+@
+
+
+1.56
+log
+@A minor issue with \& between .Pp found while merging 1.10.6.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.55 2010/09/27 11:21:39 kristaps Exp $
+d77 4
+@
+
+
+1.55
+log
+@Suppress whitespace following Pp, Lp, sp, and the other newline-emitting
+macros within an unfilled or literal `Bd'.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.54 2010/09/27 10:47:48 kristaps Exp $
+d145 4
+@
+
+
+1.54
+log
+@Remove finished TODO.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.53 2010/09/27 09:26:27 kristaps Exp $
+a136 3
+- In .Bd -unfilled, .Pp should produce one blank line, not two;
+  see the ccd.conf display in OpenBSD ccdconfig(8).
+
+@
+
+
+1.53
+log
+@Ignore double-`Pp' and `Pp' before `Bd' and `Bl' (unless -compact is
+specified).
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.52 2010/09/25 16:52:15 kristaps Exp $
+a162 2
+
+- remove superfluous NOSPACE invocations (e.g., with term_word(p, "("))
+@
+
+
+1.52
+log
+@Remove fixed TODO and add a new one.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.51 2010/09/25 16:41:33 kristaps Exp $
+a147 4
+- Bogus .Pp before .Bl should not cause a double blank line,
+  see "The route utility provides the following simple commands:"
+  in OpenBSD route(8).
+
+@
+
+
+1.51
+log
+@A `%T' invoked outside of `Rs' should not produce trailing punctuation.
+This from a TODO entry.  Also stripped the superfluous NOSPACE, which is
+handled in term_word() or print_text() anyway.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.50 2010/09/25 15:51:30 kristaps Exp $
+a147 4
+- When .%T is used outside an .Rs context and with a trailing comma,
+  there is no point in rendering two commata,
+  see the first paragraph of the DESCRIPTION in OpenBSD mount_nfs(8).
+
+d168 1
+@
+
+
+1.50
+log
+@Add `Rs' vertical-space in -T[x]html "SEE ALSO" section.  Remove
+corresponding TODO entry.
+
+Also have the "." after an `Rs' block trigger inter-sentence spacing.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.49 2010/09/25 15:29:12 kristaps Exp $
+a151 4
+- When .%T is used outside an .Rs context and without a trailing comma,
+  no comma should be rendered at all,
+  see the first paragraph of the DESCRIPTION in OpenBSD exports(5).
+
+@
+
+
+1.49
+log
+@Removed TODO that was fixed by parsing escapes in offset strings.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.48 2010/09/23 19:52:36 schwarze Exp $
+a159 2
+- In -T[x]html, Rs/Re need a div.
+
+@
+
+
+1.48
+log
+@enclosures sometimes cause bogus end-of-sentence
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.47 2010/09/15 14:36:16 kristaps Exp $
+a177 4
+- another example of the same problem:
+  .Bl -tag -width "\eD{format}XX" -compact
+  in OpenBSD ksh(1) gives the wrong width
+  because "\e" is one character in groff, two in mandoc
+@
+
+
+1.47
+log
+@Allow string lengths to account for escapes.  Now all calls to calculate
+column width in -Tascii, -Tpdf, and -Tps will account for "more real"
+string lengths.
+
+Example:
+
+.Bl -tag -width \s[+123424]foo
+.It bar
+baz
+.El
+
+The size escape will be correctly tossed.
+
+.Bl -tag -width \(aqbar
+.It \(aqbar
+baz
+.El
+
+The \(aq will be correctly handled.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.46 2010/09/15 13:10:30 kristaps Exp $
+d93 3
+@
+
+
+1.46
+log
+@Remove last pod2man escapes.  These render ok, although \*(-- renders as
+O- because the underlying macro depends on \(*W, which a prior pod2man
+preamble `tr' macro rewrites as "-".  This is an error in groff as this
+tramples on the real \(*W, or Greek omega.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.45 2010/09/08 11:57:29 kristaps Exp $
+a174 5
+- rendering frontend code can calculate widths only for plain strings,
+  not for strings containing escape sequences.  For example, this
+  hinders calculation of the indent required for .Nm \&[ in text(1).
+  comments from kristaps@@  Wed, 21 Jul 2010 23:26:08 +0200
+
+@
+
+
+1.45
+log
+@Found nit in -T[x]html.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.44 2010/09/04 19:01:52 kristaps Exp $
+a183 5
+
+- Now that `ds' is minimally supported, we can get rid of some
+  predefined strings.  \*(C+ has already been thrown out.  Track these
+  down and whack them.  Look in e.g. gcc.1 for the top-level `ds'
+  invocations.  These are reproduced across most crappy GNU manuals.
+@
+
+
+1.44
+log
+@Properly handle -mdoc %A in all outputs.  This has two-author entires
+separated by only "and" while two or more are with ", and" for the last
+author.
+
+Also remove relevant TODO and add regression tests.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.43 2010/09/04 18:52:21 kristaps Exp $
+d157 2
+@
+
+
+1.43
+log
+@Removed 'br\} comment from TODO.  This was fixed a few weeks ago.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.42 2010/08/20 22:51:29 schwarze Exp $
+a92 2
+- %A doesn't put an "and" before the final author name.
+
+a107 4
+- .%A should append the last author with " and " (if there are two)
+  or ", and " (if there are more), not ", "
+  see for example OpenBSD csh(1)
+
+@
+
+
+1.42
+log
+@.Bl -column phrases ignore spacing rules for trailing punctuation
+and render it just like normal text.
+Minimal fix of a formatting bug in operator(7) reported by ray@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.41 2010/08/18 08:39:54 kristaps Exp $
+a76 3
+- 'br\} doesn't correctly close scope.
+  Noted by joerg@@, 28/7/2010.
+  
+@
+
+
+1.41
+log
+@Add joerg@@'s note that br\} needs work in libroff.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.40 2010/08/16 09:51:17 kristaps Exp $
+d59 7
+@
+
+
+1.40
+log
+@Remove \*(C+ from the pre-predefined strings.  It is always `ds'-defined
+when being used in manuals.  Since we now support `ds', it's no longer
+necessary to account for it.  From a bug report originally by Thomas
+Jeunet.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.39 2010/08/15 17:38:41 schwarze Exp $
+d69 3
+@
+
+
+1.39
+log
+@OpenBSD src/sbin was used as a tool to hunt bugs in mandoc.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.38 2010/08/15 16:38:35 schwarze Exp $
+d182 4
+@
+
+
+1.38
+log
+@OpenBSD src/bin was used as a tool to hunt bugs in mandoc.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.37 2010/08/14 09:48:56 kristaps Exp $
+d77 5
+d125 30
+a154 1
+  see between -R and -r in OpenBSD rm(1).
+@
+
+
+1.37
+log
+@Note first that TODO file should be up to date.
+
+Note also that the PDF file should be reduced in case I somehow forget.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.36 2010/08/07 17:52:36 kristaps Exp $
+d87 34
+a120 1
+- none reported right now (yet schwarze@@ knows of some)
+d142 6
+@
+
+
+1.36
+log
+@Add TODO noted by Alex Kozlov.
+@
+text
+@d2 2
+a3 2
+* Official mandoc TODO.  May not be quite up to date.
+* $Id: TODO,v 1.35 2010/07/27 08:46:30 kristaps Exp $
+d99 2
+a108 1
+
+@
+
+
+1.35
+log
+@Update TODO to note that %A needs "and" before final author and that
+joerg@@ has some tbl(1) patches lying around that need merging.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.34 2010/07/27 08:39:36 kristaps Exp $
+d66 3
+@
+
+
+1.34
+log
+@Removed boot_config.8 breakage, which was fixed by the last commit of
+`Bd -literal' and `Bd -unfilled' unbreakage.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.33 2010/07/25 18:22:18 schwarze Exp $
+d43 1
+d78 2
+@
+
+
+1.33
+log
+@list two additional issues
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.32 2010/07/19 11:06:31 kristaps Exp $
+a69 11
+- boot_config.8
+    .Bd -literal
+    .No UKC> Ic find ne
+    24 ne0 at isa0
+  should be
+    UKC> find ne
+    24 ne0 at isa0
+  but is
+    UKC>find ne24 ne0 at isa0
+  from jmc@@  Wed, 21 Jul 2010 22:40:02 +0100
+
+@
+
+
+1.32
+log
+@Fix spurrious newline emitted by `Pp' when specified before or after
+`Sh'/`Ss'.  Reported by Jason McIntyre.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.31 2010/07/19 09:21:58 kristaps Exp $
+d70 11
+d107 6
+@
+
+
+1.31
+log
+@Remove \s TODO: these are intelligently ignored along with \m and \M.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.30 2010/07/18 23:06:18 kristaps Exp $
+a76 3
+- .Pp before and after .Sh (and .Ss) produces a spurious blank line;
+  reported by jmc@@  Thu, 15 Jul 2010 23:00:28 +0100
+
+@
+
+
+1.30
+log
+@Properly discard \m colour escapes.  Noted by J.C. Roberts.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.29 2010/07/18 18:04:25 kristaps Exp $
+a38 9
+- implement \s (physical font size)
+  \sN - set to N
+  \s+N - increment by N, 1 <= N <= 8
+  \s-N - decrement by N, 1 <= N <= 8
+  \s0 - restore previous size
+  \s(nn \s+-(nn \s'+-nn' \s+-'nn' \s[+-nn] \s+-[nn] - disambiguate
+  registers: .s .ps .sr .psr
+  used by e.g. cu(1), tip(1)
+
+@
+
+
+1.29
+log
+@Make "\ " produce non-breaking space.
+
+Noted by Theo de Raadt.  Ok schwarze@@.
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.28 2010/07/18 16:42:03 schwarze Exp $
+a70 3
+- ignore horrendous m[] font colouring
+  reported by J.C. Roberts
+
+@
+
+
+1.28
+log
+@fixed .Sm spacing, but there are four new issues
+@
+text
+@d3 1
+a3 1
+* $Id: TODO,v 1.27 2010/07/16 22:33:30 kristaps Exp $
+d83 1
+a83 2
+  1) "\ " is non-breaking
+  2) man(7) seems to need SYNOPSIS .Nm blocks, too
+@
+
+
+1.27
+log
+@Change chars.in HTML encoding to be a Unicode codepoint (int), which is
+later formatted in html.c.
+@
+text
+@d3 1
+a3 1
+* $Id$
+d24 8
+d82 3
+a84 10
+- outside list context, text following .Sm off
+  seems to follow without a blank (TERM_NOBLANK reset late?) e.g.
+        .Sm off
+        .Xo
+        .Op Ar bind_address No /
+        .Ar port
+        .Xc
+        .Sm on
+        or by enclosing
+  reported by jmc Tue, 13 Apr 2010 08:48:14 +0100
+d90 3
+@
+
+
+1.26
+log
+@Removed completed TODO.
+@
+text
+@d2 5
+a107 1
+
+@
+
+
+1.25
+log
+@remove three issues fixed near the end of the c2k10 hackathon
+@
+text
+@a103 4
+- The regs.h functionality and the roff_getstrn() family should be moved
+  into mandoc.c, which should be accessable by libroff, libmdoc, and
+  libman.  Right now there's pollution between these libraries.
+
+@
+
+
+1.24
+log
+@Remove caching TODO: this has been committed.
+@
+text
+@a11 10
+- we need real .ds; for example, terminfo.3 has
+  .ds n 5
+  and then later
+  \fBterminfo\fR(\*n)
+  reported orally by halex@@ during c2k10
+
+- \*(Pu is not implemented, but used in mdoc.samples
+  implementing .ds would solve this as well
+  reminded by jmc@@, last on Sun, 27 Jun 2010 15:29:18 +0100
+
+a79 7
+- indentation got lost in SYNOPSIS, e.g.
+   SYNOPSIS
+        date [-ajnu] [-d dst] [-r seconds] [-t minutes_west] [+format]
+  -          [[[[[[cc]yy]mm]dd]HH]MM[.SS]]
+  +     [[[[[[cc]yy]mm]dd]HH]MM[.SS]]
+  reminded by Ludo Smissaert  Mon, 10 May 2010 12:15:11 +0200
+
+@
+
+
+1.23
+log
+@Note to myself on what I need to do regarding inter-library functions.
+@
+text
+@a112 5
+- improve caching mechanism to handle other per-element arguments so
+  that they need not be recalculated between front- and back-ends (also
+  reduces code size and complexity):
+    `Bl -column' pointer
+
+@
+
+
+1.22
+log
+@The roff escape function "\s" is definitely not urgent,
+but it is used in the tree and we should not forget.
+@
+text
+@d121 9
+@
+
+
+1.21
+log
+@Stash `Bf' parameters into struct mdoc_bf.
+@
+text
+@d36 9
+@
+
+
+1.20
+log
+@Added TODO to sanitise `Nm' blocks such that HEAD optionally contains
+only a TEXT element consisting of the name.
+@
+text
+@a107 1
+    `Bf' font type
+@
+
+
+1.19
+log
+@remove a couple of issues that have been fixed
+@
+text
+@d61 4
+@
+
+
+1.18
+log
+@let's not forget the remaining badly nested block issue,
+even though there are no more urgent problems
+@
+text
+@a76 13
+- URGENT, this is making many kernel manuals look bad:
+  .Ft/.Fn should MAYBE behave in custom section like in SYNOPSIS?
+  autoconf.9:
+    .Sh DIRECT CONFIGURATION
+    .nr nS 1
+    .Ft "struct device *"
+    .Fn config_found_sm "struct device *parent"
+  groff:
+    DIRECT CONFIGURATION
+      struct device *
+      config_found_sm(struct device *parent, ...
+  reported by sthen  Tue, 20 Apr 2010 13:42:51 +0100
+
+d92 1
+a92 14
+- FIXED OpenBSD mdoc.c 1.52 schwarze 16.5.10
+  lines containing blank characters, and nothing else,
+  in literal context (.Bd -literal):
+  groff outputs just blank lines "\n"
+  mandoc outputs blanks to the left margin,
+  then the number of balnks minus one
+  NEEDS MERGING TO bsd.lv
+
+
+************************************************************************
+* parser errors without any effect on formatting
+************************************************************************
+
+- OpenBSD::PackageName(3p) has "if (block) 90:1" in the parse tree
+@
+
+
+1.17
+log
+@remove .Bk which is done
+while here, add .ds as a desideratum
+@
+text
+@d9 3
+@
+
+
+1.16
+log
+@Removed finished TODOs
+@
+text
+@d9 10
+a25 8
+- .Bk / .Ek is broken, e.g.
+  $ man ssh
+  [...]
+  ssh [-1246AaCfgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec] [-D
+  [bind_address:]port] [-e escape_char] [-F configfile] [-I pkcs11]
+  reminded by Ludo Smissaert  Mon, 10 May 2010 12:15:11 +0200
+  also reported by jmc@@ earlier
+
+d35 2
+@
+
+
+1.15
+log
+@Lint fix.
+
+Added J.C. Roberts' TODO note.
+@
+text
+@a4 4
+- .` "macro" not implemented (see gnu/usr.bin/cvs/man/cvs.1)
+  found by Anthony Bentley (anthonyjbentley@@gmail.com)
+  06/01/10 23:48 on tech@@openbsd
+
+a39 13
+
+- FIXED OpenBSD term.h 1.16 term.c 1.30 mdoc_term.c 1.75 schwarze 23.4.10
+  handle tab characters outside literal context, e.g. usb(4)
+  reported by jmc@@  Mon, 19 Apr 2010 07:42:12 +0100
+  NEEDS MERGING TO bsd.lv
+
+- FIXED OpenBSD man.h 1.15 libman.h 1.16 man_hash.c 1.9 
+  man.c 1.25 man_macro.c 1.15 man_validate.c 1.19 man_action.c 1.15 
+  man_term.c 1.28 man_html.c 1.9 schwarze 25.4.
+  implement .if .ie .el
+  noticed by espie@@  Fri, 23 Apr 2010 17:10:35 +0200
+  NEEDS MERGING TO bsd.lv
+
+a69 3
+- do not break the line after "--", it's probably a long option
+  reminded by stsp in net/pptp pptp.8  Fri, 23 Apr 2010 20:32:39 +0200
+
+a93 3
+- nroff inserts a space before :, mandoc doesn't:
+    .Dl expr "/$a" Li : '.*/\e(.*\e)'
+
+a118 3
+- cache `Bd' display types as `Bl' types are cached (this primarily
+  improves code-size by removing the a2disp type functions)
+
+d121 3
+a123 1
+  reduces code size and complexity)
+@
+
+
+1.14
+log
+@Note missing man/roff(?) feature not documented anywhere.
+@
+text
+@d68 3
+@
+
+
+1.13
+log
+@Cleanup post_bl_head() to use enum mdoc_list (avoid traversing that
+list).
+
+Reverted MANDOC_COLUMNS to be a bad-bad syntax error: we don't, and
+apparently never have, allowed mixing of -column syntaxes.  This would
+have segfaulted if encountered.
+@
+text
+@d5 4
+@
+
+
+1.12
+log
+@Macro lines now infer an `It' if they immediately follow a `Bl -column'
+or a closed-out `It' block within a `Bl -column' (which only happens
+when a macro or free-form text is encountered prior to an `It').
+
+Added some regression tests for this behaviour.
+@
+text
+@d62 2
+@
+
+
+1.11
+log
+@Add ability to interpret initial free-form lines as part of a `Bl
+-column' up until the first `It'.  This is UGLY and should have all
+sorts of warnings, and will.  On the one hand, it fits with groff's
+notion of tabs and tab-spaces.  On the other hand, it's not really
+"free-form" text any more.  Note that this does not yet accomodate for
+macros coming on these lines.
+@
+text
+@d60 2
+@
+
+
+1.10
+log
+@Migrate `Bl -column' phrases to be MDOC_BODY instead of MDOC_HEAD.  This
+will make it easy for re-entrant parsing of `Ta' macros to fit in with
+standard closure rules.
+
+Added some more regressions for `Bl -column'.  Note that one should
+fail, as documented in the TODO file.
+
+Recorded change of AST BNF in mdoc.3.
+@
+text
+@d57 3
+@
+
+
+1.9
+log
+@Noted areas where performance can be increased.
+@
+text
+@d53 5
+a57 1
+
+@
+
+
+1.8
+log
+@.Bl -tag -compact
+.Sm off
+.It ...
+fixed by joerg@@ in mdoc_action.c bsd.lv 1.61, OpenBSD 1.38
+@
+text
+@d118 16
+@
+
+
+1.7
+log
+@lines containing blank characters FIXED in OpenBSD,
+and add one new .Bl -tag issue reported by Joerg
+@
+text
+@a23 9
+- .Bl -tag -compact
+  .Sm off
+  .It ...
+  .Sm on
+  .El
+  triggers the assertion in mdoc_action.c:618 (post_bl_tagwidth).
+  It should probably assume a default tag width?
+  reported by Joerg Sonnenberger 18.5.10 (Re: .Bl and .Pp)
+
+@
+
+
+1.6
+log
+@non-numeric section headers in -man merged to OpenBSD
+@
+text
+@d24 9
+d112 2
+a113 1
+- lines containing blank characters, and nothing else,
+d118 1
+@
+
+
+1.5
+log
+@Mishandling of : in expr(1)
+@
+text
+@a23 4
+- FIXED man(7) .TH should recognize "3p" as a section number
+  found in usr.bin/pkg_add OpenBSD::Getopt
+  NEEDS MERGING TO openbsd.org
+
+@
+
+
+1.4
+log
+@Removed restriction on integer manual sections in -man.
+@
+text
+@d100 2
+@
+
+
+1.3
+log
+@fixed tabs in quoted .Bl -column; and removed right margin from displays
+@
+text
+@d24 1
+a24 1
+- man(7) .TH should recognize "3p" as a section number
+d26 1
+@
+
+
+1.2
+log
+@no more info on bugs FIXED in bsd.lv;
+this info is in old revisions of this file
+@
+text
+@a74 5
+- in .Bl -column .It, "\t" seems to be synonymous to " Ta ",
+  see sysctl(3) for many examples;
+  mishandling this results in spurious quotes at EOL
+  reminded by guenther@@  Mon, 26 Apr 2010 01:16:52 -0700
+
+a103 5
+- in literal context, groff disables the right margin
+  an example: syslog.conf.5 EXAMPLES section
+  reported by jmc Tue, 13 Apr 2010 10:12:15 +0100
+  solution: raise termp->maxrmargin in literal context
+
+@
+
+
+1.1
+log
+@Added Ingo's TODO file.
+@
+text
+@a0 8
+
+Before trying to fix anything from this list,
+check against -current mandoc from OpenBSD CVS.
+Sometimes, i'm a bit behind marking entries FIXED.
+
+In general, i keep FIXED entries for some time
+and remove them when they turn into old news.
+
+d47 1
+d54 1
+a54 9
+
+- FIXED bsd.lv libman.h 1.31 libmdoc.h 1.34 man.c 1.60 mdoc.c 1.123
+        kristaps@@ 8.4.10
+  FIXED OpenBSD libman.h 1.17 libmdoc.h 1.28 man.c 1.26 mdoc.c 1.45
+        schwarze@@ 8.5.10
+  groff handles \." just like .\"
+  Thus, mandoc must also ignore such lines.
+  For an example, see tr(1).
+  reported by Claus Assmann Mon, 5 Apr 2010 08:46:30 -0700
+a104 17
+- FIXED on bsd.lv for mdoc, need to merge and test in OpenBSD
+    kristaps@@  Mon, 10 May 2010 03:12:44 +0200
+    man fix still pending!
+  in literal displays, ignore the right margin
+  reminded by stsp in net/pptp pptp.8  Fri, 23 Apr 2010 20:32:39 +0200
+
+- FIXED on bsd.lv, need to merge and test in OpenBSD
+    kristaps@@  Mon, 10 May 2010 02:59:40 +0200
+  do not mark \*(Ba and | up
+  e.g. .Op Fl c Ar string \*(Ba Fl s \*(Ba Ar file Op Ar argument ...
+  The first should not be in an .Ar font.
+  The second must not end up as -|.
+  When fixing, check whether this is a specific problem with this
+  character, or whether other characters are affected, too.
+  reminded by jmc@@  Sat, 24 Apr 2010 06:54:26 +0100
+
+
+a120 6
+- FIXED bsd.lv mdoc_html.c 1.61 mdoc_term.c 1.117 kristaps@@ 8.4.10
+  FIXED OpenBSD mdoc_html.c 1.12 mdoc_term.c 1.76 schwarze@@ 8.5.10
+  mandoc .%T changed from quoted to underlined
+  reported by jmc Mon, 10 Aug 2009 05:50:21 +0100
+
+
+@

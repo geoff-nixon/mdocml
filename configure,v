@@ -1,0 +1,1363 @@
+head	1.37;
+access;
+symbols
+	VERSION_1_13_3:1.21
+	VERSION_1_13_2:1.17
+	VERSION_1_12_4:1.1.2.5
+	VERSION_1_13_1:1.8
+	VERSION_1_12:1.1.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.37
+date	2015.11.26.07.42.11;	author schwarze;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2015.11.07.21.31.22;	author schwarze;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.11.07.20.52.52;	author schwarze;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.11.07.17.58.55;	author schwarze;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.11.07.14.01.16;	author schwarze;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.11.07.13.14.21;	author schwarze;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.11.06.21.19.09;	author schwarze;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2015.11.06.17.33.34;	author schwarze;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2015.11.06.16.30.33;	author schwarze;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2015.10.11.21.12.54;	author schwarze;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2015.07.19.06.05.16;	author schwarze;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2015.05.20.22.22.59;	author schwarze;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2015.03.27.00.18.14;	author schwarze;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2015.03.22.18.14.30;	author schwarze;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2015.03.19.14.57.29;	author schwarze;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2015.03.18.17.13.37;	author schwarze;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2015.03.11.13.15.44;	author schwarze;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2015.02.16.16.23.54;	author schwarze;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2015.02.16.14.56.22;	author schwarze;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2015.01.21.22.41.49;	author schwarze;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2014.12.13.13.43.47;	author schwarze;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2014.12.09.09.14.33;	author schwarze;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2014.12.09.07.29.42;	author schwarze;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2014.08.28.10.38.06;	author schwarze;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2014.08.17.20.53.50;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2014.08.16.23.04.25;	author schwarze;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2014.08.11.03.19.39;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2014.08.11.01.39.00;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2014.08.10.02.45.04;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2014.08.08.23.47.21;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2014.08.05.12.50.52;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2014.08.04.23.44.29;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2014.06.20.02.55.49;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.04.23.21.06.41;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.01.04.13.40.01;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.01.04.01.11.00;	author schwarze;	state Exp;
+branches
+	1.1.2.1;
+next	;
+
+1.1.2.1
+date	2014.01.04.01.24.48;	author schwarze;	state Exp;
+branches;
+next	1.1.2.2;
+
+1.1.2.2
+date	2014.01.04.13.49.22;	author schwarze;	state Exp;
+branches;
+next	1.1.2.3;
+
+1.1.2.3
+date	2014.04.23.21.31.38;	author schwarze;	state Exp;
+branches;
+next	1.1.2.4;
+
+1.1.2.4
+date	2014.08.04.23.45.37;	author schwarze;	state Exp;
+branches;
+next	1.1.2.5;
+
+1.1.2.5
+date	2014.08.14.20.33.55;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.37
+log
+@No point in trying to go on when elementary database operations
+like preparing queries or binding variables fail; that won't yield
+useful results anyway but may generate huge pointless error messages.
+Issue reported by deraadt@@.
+@
+text
+@#!/bin/sh
+#
+# Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+#
+# Permission to use, copy, modify, and distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+set -e
+
+[ -w config.log ] && mv config.log config.log.old
+[ -w config.h   ] && mv config.h config.h.old
+
+# Output file descriptor usage:
+# 1 (stdout): config.h, Makefile.local
+# 2 (stderr): original stderr, usually to the console
+# 3: config.log
+
+exec 3> config.log
+echo "config.log: writing..."
+
+# --- default settings -------------------------------------------------
+# Initialize all variables here,
+# such that nothing can leak in from the environment.
+
+MANPATH_DEFAULT="/usr/share/man:/usr/X11R6/man:/usr/local/man"
+OSNAME=
+
+CC=`printf "all:\\n\\t@@echo \\\$(CC)\\n" | make -f -`
+CFLAGS="-g -W -Wall -Wstrict-prototypes -Wno-unused-parameter -Wwrite-strings"
+DBLIB=
+STATIC="-static"
+
+BUILD_DB=1
+BUILD_CGI=0
+
+HAVE_DIRENT_NAMLEN=
+HAVE_ERR=
+HAVE_FTS=
+HAVE_GETLINE=
+HAVE_GETSUBOPT=
+HAVE_ISBLANK=
+HAVE_MKDTEMP=
+HAVE_MMAP=
+HAVE_PLEDGE=
+HAVE_PROGNAME=
+HAVE_REALLOCARRAY=
+HAVE_REWB_BSD=
+HAVE_REWB_SYSV=
+HAVE_STRCASESTR=
+HAVE_STRINGLIST=
+HAVE_STRLCAT=
+HAVE_STRLCPY=
+HAVE_STRPTIME=
+HAVE_STRSEP=
+HAVE_STRTONUM=
+HAVE_VASPRINTF=
+HAVE_WCHAR=
+
+HAVE_SQLITE3=
+HAVE_SQLITE3_ERRSTR=
+HAVE_OHASH=
+HAVE_MANPATH=
+
+PREFIX="/usr/local"
+BINDIR=
+SBINDIR=
+INCLUDEDIR=
+LIBDIR=
+MANDIR=
+HOMEBREWDIR=
+
+WWWPREFIX="/var/www"
+HTDOCDIR=
+CGIBINDIR=
+
+BINM_APROPOS="apropos"
+BINM_MAKEWHATIS="makewhatis"
+BINM_MAN="man"
+BINM_SOELIM="soelim"
+BINM_WHATIS="whatis"
+MANM_MAN="man"
+MANM_MANCONF="man.conf"
+MANM_MDOC="mdoc"
+MANM_ROFF="roff"
+MANM_EQN="eqn"
+MANM_TBL="tbl"
+
+INSTALL="install"
+INSTALL_PROGRAM=
+INSTALL_LIB=
+INSTALL_MAN=
+INSTALL_DATA=
+
+# --- manual settings from configure.local -----------------------------
+
+if [ -r ./configure.local ]; then
+	echo "configure.local: reading..." 1>&2
+	echo "configure.local: reading..." 1>&3
+	cat ./configure.local 1>&3
+	. ./configure.local
+else
+	echo "configure.local: no (fully automatic configuration)" 1>&2
+	echo "configure.local: no (fully automatic configuration)" 1>&3
+fi
+echo 1>&3
+
+# --- tests for config.h  ----------------------------------------------
+
+COMP="${CC} ${CFLAGS} -Wno-unused -Werror"
+
+# Check whether this HAVE_ setting is manually overridden.
+# If yes, use the override, if no, do not decide anything yet.
+# Arguments: lower-case test name, manual value
+ismanual() {
+	[ -z "${2}" ] && return 1
+	echo "${1}: manual (${2})" 1>&2
+	echo "${1}: manual (${2})" 1>&3
+	echo 1>&3
+	return 0
+}
+
+# Run a single autoconfiguration test.
+# In case of success, enable the feature.
+# In case of failure, do not decide anything yet.
+# Arguments: lower-case test name, upper-case test name, additional CFLAGS
+singletest() {
+	cat 1>&3 << __HEREDOC__
+${1}: testing...
+${COMP} ${3} -o test-${1} test-${1}.c
+__HEREDOC__
+
+	if ${COMP} ${3} -o "test-${1}" "test-${1}.c" 1>&3 2>&3; then
+		echo "${1}: ${CC} succeeded" 1>&3
+	else
+		echo "${1}: ${CC} failed with $?" 1>&3
+		echo 1>&3
+		return 1
+	fi
+
+	if ./test-${1} 1>&3 2>&3; then
+		echo "${1}: yes" 1>&2
+		echo "${1}: yes" 1>&3
+		echo 1>&3
+		eval HAVE_${2}=1
+		rm "test-${1}"
+		return 0
+	else
+		echo "${1}: execution failed with $?" 1>&3
+		echo 1>&3
+		rm "test-${1}"
+		return 1
+	fi
+}
+
+# Run a complete autoconfiguration test, including the check for
+# a manual override and disabling the feature on failure.
+# Arguments: lower case name, upper case name, additional CFLAGS
+runtest() {
+	eval _manual=\${HAVE_${2}}
+	ismanual "${1}" "${_manual}" && return 0
+	singletest "${1}" "${2}" "${3}" && return 0
+	echo "${1}: no" 1>&2
+	eval HAVE_${2}=0
+	return 1
+}
+
+# --- library functions ---
+runtest dirent-namlen	DIRENT_NAMLEN	|| true
+runtest err		ERR		|| true
+runtest fts		FTS		|| true
+runtest getline		GETLINE		|| true
+runtest getsubopt	GETSUBOPT	|| true
+runtest isblank		ISBLANK		|| true
+runtest mkdtemp		MKDTEMP		|| true
+runtest mmap		MMAP		|| true
+runtest pledge		PLEDGE		|| true
+runtest progname	PROGNAME	|| true
+runtest reallocarray	REALLOCARRAY	|| true
+runtest rewb-bsd	REWB_BSD	|| true
+runtest rewb-sysv	REWB_SYSV	|| true
+runtest strcasestr	STRCASESTR	|| true
+runtest stringlist	STRINGLIST	|| true
+runtest strlcat		STRLCAT		|| true
+runtest strlcpy		STRLCPY		|| true
+runtest strptime	STRPTIME	|| true
+runtest strsep		STRSEP		|| true
+runtest strtonum	STRTONUM	|| true
+runtest vasprintf	VASPRINTF	|| true
+runtest wchar		WCHAR		|| true
+
+# --- sqlite3 ---
+DETECTLIB=
+if [ ${BUILD_DB} -eq 0 ]; then
+	echo "BUILD_DB=0 (manual)" 1>&2
+	echo "BUILD_DB=0 (manual)" 1>&3
+	echo 1>&3
+	HAVE_SQLITE3=0
+elif ismanual sqlite3 "${HAVE_SQLITE3}"; then
+	DETECTLIB="-lsqlite3"
+elif [ -n "${DBLIB}" ]; then
+	runtest sqlite3 SQLITE3 "${DBLIB}" || true
+elif singletest sqlite3 SQLITE3 "-lsqlite3"; then
+	DETECTLIB="-lsqlite3"
+elif runtest sqlite3 SQLITE3 \
+		"-I/usr/local/include -L/usr/local/lib -lsqlite3"; then
+	DETECTLIB="-L/usr/local/lib -lsqlite3"
+	CFLAGS="${CFLAGS} -I/usr/local/include"
+fi
+if [ ${BUILD_DB} -gt 0 -a ${HAVE_SQLITE3} -eq 0 ]; then
+	echo "BUILD_DB=0 (no sqlite3)" 1>&2
+	echo "BUILD_DB=0 (no sqlite3)" 1>&3
+	echo 1>&3
+	BUILD_DB=0
+fi
+
+# --- sqlite3_errstr ---
+if [ ${BUILD_DB} -eq 0 ]; then
+	HAVE_SQLITE3_ERRSTR=1
+elif ismanual sqlite3_errstr "${HAVE_SQLITE3_ERRSTR}"; then
+	:
+elif [ -n "${DBLIB}" ]; then
+	runtest sqlite3_errstr SQLITE3_ERRSTR "${DBLIB}" || true
+else
+	runtest sqlite3_errstr SQLITE3_ERRSTR "${DETECTLIB}" || true
+fi
+
+# --- ohash ---
+if [ ${BUILD_DB} -eq 0 ]; then
+	HAVE_OHASH=1
+elif ismanual ohash "${HAVE_OHASH}"; then
+	:
+elif [ -n "${DBLIB}" ]; then
+	runtest ohash OHASH "${DBLIB}" || true
+elif singletest ohash OHASH; then
+	:
+elif runtest ohash OHASH "-lutil"; then
+	DETECTLIB="${DETECTLIB} -lutil"
+fi
+
+# --- DBLIB ---
+if [ ${BUILD_DB} -eq 0 ]; then
+	DBLIB="-lz"
+elif [ -z "${DBLIB}" ]; then
+	DBLIB="${DETECTLIB} -lz"
+	echo "DBLIB=\"${DBLIB}\"" 1>&2
+	echo "DBLIB=\"${DBLIB}\"" 1>&3
+	echo 1>&3
+fi
+
+# --- manpath ---
+if ismanual manpath "${HAVE_MANPATH}"; then
+	:
+elif manpath 1>&3 2>&3; then
+	echo "manpath: yes" 1>&2
+	echo "manpath: yes" 1>&3
+	echo 1>&3
+	HAVE_MANPATH=1
+else
+	echo "manpath: no" 1>&2
+	echo "manpath: no" 1>&3
+	echo 1>&3
+	HAVE_MANPATH=0
+fi
+
+# --- write config.h ---
+
+exec > config.h
+
+cat << __HEREDOC__
+#ifdef __cplusplus
+#error "Do not use C++.  See the INSTALL file."
+#endif
+
+#ifndef MANDOC_CONFIG_H
+#define MANDOC_CONFIG_H
+
+#if defined(__linux__) || defined(__MINT__)
+#define _GNU_SOURCE	/* See test-*.c what needs this. */
+#endif
+
+__HEREDOC__
+
+[ ${HAVE_GETLINE} -eq 0 -o ${HAVE_REALLOCARRAY} -eq 0 -o \
+  ${HAVE_STRLCAT} -eq 0 -o ${HAVE_STRLCPY} -eq 0 ] \
+	&& echo "#include <sys/types.h>"
+[ ${HAVE_VASPRINTF} -eq 0 ] && echo "#include <stdarg.h>"
+[ ${HAVE_GETLINE} -eq 0 ] && echo "#include <stdio.h>"
+
+echo
+echo "#define MAN_CONF_FILE \"/etc/${MANM_MANCONF}\""
+echo "#define MANPATH_DEFAULT \"${MANPATH_DEFAULT}\""
+[ -n "${OSNAME}" ] && echo "#define OSNAME \"${OSNAME}\""
+[ -n "${HOMEBREWDIR}" ] && echo "#define HOMEBREWDIR \"${HOMEBREWDIR}\""
+
+cat << __HEREDOC__
+#define HAVE_DIRENT_NAMLEN ${HAVE_DIRENT_NAMLEN}
+#define HAVE_ERR ${HAVE_ERR}
+#define HAVE_FTS ${HAVE_FTS}
+#define HAVE_GETLINE ${HAVE_GETLINE}
+#define HAVE_GETSUBOPT ${HAVE_GETSUBOPT}
+#define HAVE_ISBLANK ${HAVE_ISBLANK}
+#define HAVE_MKDTEMP ${HAVE_MKDTEMP}
+#define HAVE_MMAP ${HAVE_MMAP}
+#define HAVE_PLEDGE ${HAVE_PLEDGE}
+#define HAVE_PROGNAME ${HAVE_PROGNAME}
+#define HAVE_REALLOCARRAY ${HAVE_REALLOCARRAY}
+#define HAVE_REWB_BSD ${HAVE_REWB_BSD}
+#define HAVE_REWB_SYSV ${HAVE_REWB_SYSV}
+#define HAVE_STRCASESTR ${HAVE_STRCASESTR}
+#define HAVE_STRINGLIST ${HAVE_STRINGLIST}
+#define HAVE_STRLCAT ${HAVE_STRLCAT}
+#define HAVE_STRLCPY ${HAVE_STRLCPY}
+#define HAVE_STRPTIME ${HAVE_STRPTIME}
+#define HAVE_STRSEP ${HAVE_STRSEP}
+#define HAVE_STRTONUM ${HAVE_STRTONUM}
+#define HAVE_VASPRINTF ${HAVE_VASPRINTF}
+#define HAVE_WCHAR ${HAVE_WCHAR}
+#define HAVE_SQLITE3 ${HAVE_SQLITE3}
+#define HAVE_SQLITE3_ERRSTR ${HAVE_SQLITE3_ERRSTR}
+#define HAVE_OHASH ${HAVE_OHASH}
+#define HAVE_MANPATH ${HAVE_MANPATH}
+
+#define BINM_APROPOS "${BINM_APROPOS}"
+#define BINM_MAKEWHATIS "${BINM_MAKEWHATIS}"
+#define BINM_MAN "${BINM_MAN}"
+#define BINM_SOELIM "${BINM_SOELIM}"
+#define BINM_WHATIS "${BINM_WHATIS}"
+
+__HEREDOC__
+
+if [ ${HAVE_ERR} -eq 0 ]; then
+	echo "extern	void	  err(int, const char *, ...);"
+	echo "extern	void	  errx(int, const char *, ...);"
+	echo "extern	void	  warn(const char *, ...);"
+	echo "extern	void	  warnx(const char *, ...);"
+fi
+
+[ ${HAVE_GETLINE} -eq 0 ] && \
+	echo "extern	ssize_t	  getline(char **, size_t *, FILE *);"
+
+[ ${HAVE_GETSUBOPT} -eq 0 ] && \
+	echo "extern	int	  getsubopt(char **, char * const *, char **);"
+
+[ ${HAVE_ISBLANK} -eq 0 ] && \
+	echo "extern	int	  isblank(int);"
+
+[ ${HAVE_MKDTEMP} -eq 0 ] && \
+	echo "extern	char	 *mkdtemp(char *);"
+
+if [ ${HAVE_PROGNAME} -eq 0 ]; then
+	echo "extern 	const char *getprogname(void);"
+	echo "extern	void	  setprogname(const char *);"
+fi
+
+[ ${HAVE_REALLOCARRAY} -eq 0 ] && \
+	echo "extern	void	 *reallocarray(void *, size_t, size_t);"
+
+[ ${BUILD_DB} -gt 0 -a ${HAVE_SQLITE3_ERRSTR} -eq 0 ] &&
+	echo "extern	const char *sqlite3_errstr(int);"
+
+[ ${HAVE_STRCASESTR} -eq 0 ] && \
+	echo "extern	char	 *strcasestr(const char *, const char *);"
+
+[ ${HAVE_STRLCAT} -eq 0 ] && \
+	echo "extern	size_t	  strlcat(char *, const char *, size_t);"
+
+[ ${HAVE_STRLCPY} -eq 0 ] && \
+	echo "extern	size_t	  strlcpy(char *, const char *, size_t);"
+
+[ ${HAVE_STRSEP} -eq 0 ] && \
+	echo "extern	char	 *strsep(char **, const char *);"
+
+[ ${HAVE_STRTONUM} -eq 0 ] && \
+	echo "extern	long long strtonum(const char *, long long, long long, const char **);"
+
+[ ${HAVE_VASPRINTF} -eq 0 ] && \
+	echo "extern	int	  vasprintf(char **, const char *, va_list);"
+
+echo
+echo "#endif /* MANDOC_CONFIG_H */"
+
+echo "config.h: written" 1>&2
+echo "config.h: written" 1>&3
+
+# --- tests for Makefile.local -----------------------------------------
+
+exec > Makefile.local
+
+[ -z "${BINDIR}"     ] && BINDIR="${PREFIX}/bin"
+[ -z "${SBINDIR}"    ] && SBINDIR="${PREFIX}/sbin"
+[ -z "${INCLUDEDIR}" ] && INCLUDEDIR="${PREFIX}/include/mandoc"
+[ -z "${LIBDIR}"     ] && LIBDIR="${PREFIX}/lib/mandoc"
+[ -z "${MANDIR}"     ] && MANDIR="${PREFIX}/man"
+
+[ -z "${HTDOCDIR}"   ] && HTDOCDIR="${WWWPREFIX}/htdocs"
+[ -z "${CGIBINDIR}"  ] && CGIBINDIR="${WWWPREFIX}/cgi-bin"
+
+[ -z "${INSTALL_PROGRAM}" ] && INSTALL_PROGRAM="${INSTALL} -m 0555"
+[ -z "${INSTALL_LIB}"     ] && INSTALL_LIB="${INSTALL} -m 0444"
+[ -z "${INSTALL_MAN}"     ] && INSTALL_MAN="${INSTALL} -m 0444"
+[ -z "${INSTALL_DATA}"    ] && INSTALL_DATA="${INSTALL} -m 0444"
+
+if [ ${BUILD_DB} -eq 0 -a ${BUILD_CGI} -gt 0 ]; then
+	echo "BUILD_CGI=0 (no BUILD_DB)" 1>&2
+	echo "BUILD_CGI=0 (no BUILD_DB)" 1>&3
+	BUILD_CGI=0
+fi
+
+BUILD_TARGETS="base-build"
+[ ${BUILD_CGI} -gt 0 ] && BUILD_TARGETS="${BUILD_TARGETS} cgi-build"
+INSTALL_TARGETS="base-install"
+[ ${BUILD_DB}  -gt 0 ] && INSTALL_TARGETS="${INSTALL_TARGETS} db-install"
+[ ${BUILD_CGI} -gt 0 ] && INSTALL_TARGETS="${INSTALL_TARGETS} cgi-install"
+
+cat << __HEREDOC__
+BUILD_TARGETS	= ${BUILD_TARGETS}
+INSTALL_TARGETS	= ${INSTALL_TARGETS}
+CC		= ${CC}
+CFLAGS		= ${CFLAGS}
+DBLIB		= ${DBLIB}
+STATIC		= ${STATIC}
+PREFIX		= ${PREFIX}
+BINDIR		= ${BINDIR}
+SBINDIR		= ${SBINDIR}
+INCLUDEDIR	= ${INCLUDEDIR}
+LIBDIR		= ${LIBDIR}
+MANDIR		= ${MANDIR}
+WWWPREFIX	= ${WWWPREFIX}
+HTDOCDIR	= ${HTDOCDIR}
+CGIBINDIR	= ${CGIBINDIR}
+BINM_APROPOS	= ${BINM_APROPOS}
+BINM_MAKEWHATIS	= ${BINM_MAKEWHATIS}
+BINM_MAN	= ${BINM_MAN}
+BINM_SOELIM	= ${BINM_SOELIM}
+BINM_WHATIS	= ${BINM_WHATIS}
+MANM_MAN	= ${MANM_MAN}
+MANM_MANCONF	= ${MANM_MANCONF}
+MANM_MDOC	= ${MANM_MDOC}
+MANM_ROFF	= ${MANM_ROFF}
+MANM_EQN	= ${MANM_EQN}
+MANM_TBL	= ${MANM_TBL}
+INSTALL		= ${INSTALL}
+INSTALL_PROGRAM	= ${INSTALL_PROGRAM}
+INSTALL_LIB	= ${INSTALL_LIB}
+INSTALL_MAN	= ${INSTALL_MAN}
+INSTALL_DATA	= ${INSTALL_DATA}
+__HEREDOC__
+
+[ ${BUILD_DB} -gt 0 ] && \
+	echo "MAIN_OBJS	= \$(BASE_OBJS) \$(DB_OBJS)"
+
+echo "Makefile.local: written" 1>&2
+echo "Makefile.local: written" 1>&3
+
+exit 0
+@
+
+
+1.36
+log
+@The sh(1) "test" builtin on Solaris 10 doesn't have -e,
+even though that's required by POSIX.
+Use -w and -r, that's just as good.
+@
+text
+@d342 1
+@
+
+
+1.35
+log
+@provide a simple stand-alone implementation of getline(3)
+for systems lacking it
+@
+text
+@d19 2
+a20 2
+[ -e config.log ] && mv config.log config.log.old
+[ -e config.h   ] && mv config.h config.h.old
+d105 1
+a105 1
+if [ -e ./configure.local ]; then
+@
+
+
+1.34
+log
+@Modernization, no functional change intended:
+Use the POSIX function getline(3) rather than the slightly
+dangerous BSD function fgetln(3).
+Remove the related compatibility code.
+@
+text
+@d48 1
+d180 1
+d292 1
+a292 1
+[ ${HAVE_REALLOCARRAY} -eq 0 -o \
+d296 1
+d308 1
+d346 3
+@
+
+
+1.33
+log
+@In private header files, __BEGIN_DECLS and __END_DECLS are pointless.
+Because these work slightly differently on different systems,
+they are becoming a maintenance burden in the portable version,
+so delete them.
+
+Besides, one of the chief design goals of the mandoc toolbox is to
+make sure that nothing related to documentation requires C++.
+Consequently, linking mandoc against any kind of C++ program would
+defeat the purpose and is not supported.
+I don't understand why kristaps@@ added them in the first place.
+@
+text
+@a46 1
+HAVE_FGETLN=
+a177 1
+runtest fgetln		FGETLN		|| true
+d290 1
+a290 1
+[ ${HAVE_FGETLN} -eq 0 -o ${HAVE_REALLOCARRAY} -eq 0 -o \
+a293 1
+[ ${HAVE_FGETLN} -eq 0 ] && echo "#include <stdio.h>"
+a303 1
+#define HAVE_FGETLN ${HAVE_FGETLN}
+a341 3
+[ ${HAVE_FGETLN} -eq 0 ] && \
+	echo "extern	char	 *fgetln(FILE *, size_t *);"
+
+@
+
+
+1.32
+log
+@garbage collect unused EXAMPLEDIR, forgotten in the CSS cleanup;
+noticed by Peter Bray <pdb_ml at yahoo dot com dot au>
+@
+text
+@d279 4
+a337 15
+#if !defined(__BEGIN_DECLS)
+#  ifdef __cplusplus
+#  define	__BEGIN_DECLS		extern "C" {
+#  else
+#  define	__BEGIN_DECLS
+#  endif
+#endif
+#if !defined(__END_DECLS)
+#  ifdef __cplusplus
+#  define	__END_DECLS		}
+#  else
+#  define	__END_DECLS
+#  endif
+#endif
+
+@
+
+
+1.31
+log
+@In ./configure, select a RE syntax for word boundaries supported by libc;
+issue reported by Svyatoslav Mishyn, Peter Bray, and Daniel Levai.
+@
+text
+@a78 1
+EXAMPLEDIR=
+a412 1
+[ -z "${EXAMPLEDIR}" ] && EXAMPLEDIR="${PREFIX}/share/examples/mandoc"
+a446 1
+EXAMPLEDIR	= ${EXAMPLEDIR}
+@
+
+
+1.30
+log
+@merge pledge(2) support from OpenBSD
+@
+text
+@d56 2
+d189 2
+d313 2
+@
+
+
+1.29
+log
+@Use getprogname(3) rather than __progname.
+Suggested by Joerg@@ Sonnenberger (NetBSD).
+Last year, deraadt@@ confirmed on tech@@ that this "has the potential
+to be more portable", and micro-optimizing for speed is not relevant
+here.  Also gets rid of one global variable.
+@
+text
+@d53 1
+d184 1
+d306 1
+@
+
+
+1.28
+log
+@Finally use __progname, err(3) and warn(3).
+That's more readable and less error-prone than fumbling around
+with argv[0], fprintf(3), strerror(3), perror(3), and exit(3).
+
+It's a bad idea to boycott good interfaces merely because standards
+committees ignore them.  Instead, let's provide compatibility modules
+for archaic systems (like commercial Solaris) that still don't have
+them.  The compat module has an UCB Copyright (c) 1993...
+@
+text
+@a292 1
+[ ${HAVE_PROGNAME} -eq 0 ] && echo "#define __progname mandoc_progname"
+d361 5
+@
+
+
+1.27
+log
+@Do not fork and exec gunzip(1), just link with libz instead.
+As discussed with deraadt@@, that's cleaner and will help tame(2).
+Something like this was also suggested earlier by bapt at FreeBSD.
+Minus 50 lines of code, deleting one interface function (mparse_wait),
+no functional change intended.
+@
+text
+@d46 1
+d53 1
+d176 1
+d183 1
+d293 1
+d298 1
+d305 1
+d344 6
+@
+
+
+1.26
+log
+@* remove FreeBSDisms
+* purge and sort headers
+* add build and compat glue
+* and LICENSE information
+for soelim(1)
+@
+text
+@d242 1
+a242 1
+	DBLIB=
+d244 1
+a244 1
+	DBLIB="${DETECTLIB}"
+@
+
+
+1.25
+log
+@Add man.conf(5).  After adding some additional functionality,
+one of the next steps will be to use it in addition to manpath(1)
+rather than as an alternative to it.
+@
+text
+@d54 1
+d82 1
+d84 1
+a85 1
+BINM_MAKEWHATIS="makewhatis"
+d182 1
+d301 1
+d315 1
+d317 1
+a318 1
+#define BINM_MAKEWHATIS "${BINM_MAKEWHATIS}"
+d428 1
+d430 1
+a431 1
+BINM_MAKEWHATIS	= ${BINM_MAKEWHATIS}
+@
+
+
+1.24
+log
+@make MANPATH_DEFAULT compile-time configurable
+@
+text
+@d85 1
+d283 1
+d427 1
+@
+
+
+1.23
+log
+@Compat glue needed for Solaris 9 and 10.
+
+Thanks to Sevan Janiyan <venture37 at geeklan dot co dot uk> for
+reporting the Solaris 10 issues, to Jan Holzhueter <jh at opencsw
+dot org> for some additional insight, and to OpenCSW in general for
+providing me with a Solaris 9/10/11 testing environment.
+@
+text
+@d34 1
+d282 1
+@
+
+
+1.22
+log
+@Pass the CC set in configure.local to Makefile.local.
+Issue found while testing on opencsw.org.
+@
+text
+@d48 2
+d58 1
+d173 2
+d183 1
+d277 1
+d289 2
+d299 1
+d334 6
+d361 3
+@
+
+
+1.21
+log
+@When manpath(1) is available, enable HAVE_MANPATH even when building
+without database support.  Required now that we have man(1) even
+without database support.
+@
+text
+@d385 1
+@
+
+
+1.20
+log
+@Delete the -V option.  It serves no purpose but keeps confusing people.
+
+Keeping track of the versions of installed software is the job of
+the package manager, not of the individual binaries.  If individual
+binaries include version numbers, that tends to goad people into
+writing broken configuration tests that inspect version numbers
+instead of properly testing for features.
+@
+text
+@d240 1
+a240 3
+if [ ${BUILD_DB} -eq 0 ]; then
+	HAVE_MANPATH=0
+elif ismanual manpath "${HAVE_MANPATH}"; then
+@
+
+
+1.19
+log
+@strtonum(3) compat glue
+@
+text
+@a33 4
+VERSION="1.13.2"
+echo "VERSION=\"${VERSION}\"" 1>&2
+echo "VERSION=\"${VERSION}\"" 1>&3
+
+a275 1
+echo "#define VERSION \"${VERSION}\""
+a384 1
+VERSION		= ${VERSION}
+@
+
+
+1.18
+log
+@Support homebrew-style linking on Mac OS X.
+Idea found together with Alexis Hildebrandt <surryhill at gmail dot com>.
+@
+text
+@d59 1
+d181 1
+d296 1
+d349 3
+@
+
+
+1.17
+log
+@version 1.13.2
+@
+text
+@d3 1
+a3 1
+# Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d73 1
+d280 1
+@
+
+
+1.16
+log
+@Support choosing alternative binary and manual names from configure.local,
+to help downstream distributions avoid naming conflicts.
+@
+text
+@d34 1
+a34 1
+VERSION="1.13.1"
+@
+
+
+1.15
+log
+@Integrate the makewhatis binary into the mandoc binary
+just like we do it on OpenBSD.  Smaller and neater.
+While here, let ./configure set INSTALL_TARGETS.
+@
+text
+@d78 10
+d298 5
+d398 9
+@
+
+
+1.14
+log
+@On Linux, wcwidth() needs _XOPEN_SOURCE, or just _GNU_SOURCE for simplicity.
+Besides, signedness of wchar_t and wint_t may differ, it i only
+guaranteed that each wchar_t can be represented as a wint_t.
+A problem report by Daniel Levai reminded me to fix this.
+@
+text
+@a360 1
+[ ${BUILD_DB}  -gt 0 ] && BUILD_TARGETS="${BUILD_TARGETS} db-build"
+d362 3
+d369 1
+d391 1
+a391 1
+	echo "MAN_OBJS	= \$(MANDOC_OBJS) \$(APROPOS_OBJS)"
+@
+
+
+1.13
+log
+@Do not require getsubopt() to provide extern char *suboptarg.
+We don't use it anyway in mandoc.  Like this, fewer systems need
+the compat implementation.  In particular, we can now use the stock
+getsubopt() on glibc and musl.
+
+Besides, the comment in the BSD getsubopt.c that error messages are
+tricky without *suboptarg is massively overblown.  If you simply
+save a copy of the pointer you pass into getsubopt(), that's quite
+usable for an error message.
+
+People start campaigning for the addition of *suboptarg to C libraries
+on the grounds that mandoc wants it, but actually, i consider library
+functions manipulating global data quite ugly, so stop pushing people
+into that questionable direction.
+
+While here, add an explicit Copyright header to the test file.
+While it's obviously to me what Kristaps intended, others might
+consider this file copyrightable and wonder what's up.
+@
+text
+@d256 1
+a256 1
+#define _GNU_SOURCE /* getsubopt(), strcasestr(), strptime() */
+@
+
+
+1.12
+log
+@When BUILD_DB is active, link apropos(1) into the mandoc binary.
+This is the first step on the way to a man(1) implementation.
+The new ./configure is flexible enough to make this step quite easy.
+@
+text
+@d308 1
+a308 1
+if [ ${HAVE_GETSUBOPT} -eq 0 ]; then
+a309 2
+	echo "extern	char	 *suboptarg;"
+fi
+@
+
+
+1.11
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@d283 1
+d389 3
+@
+
+
+1.10
+log
+@work around lack of d_namlen and ALIGN/ALIGNBYTES on Linux
+@
+text
+@d17 68
+a84 1
+echo "/* RUNNING ./CONFIGURE - SHOULD BE USED ONLY VIA MAKE, READ INSTALL */"
+d86 43
+a128 2
+set -e
+exec > config.h 2> config.log
+d130 14
+a143 1
+CFLAGS="${CFLAGS} -Wno-unused -Werror"
+d145 3
+d149 6
+a154 5
+	echo ${CC} ${CFLAGS} ${3} -o test-${1} test-${1}.c 1>&2
+	${CC} ${CFLAGS} ${3} -o "test-${1}" "test-${1}.c" 1>&2 || return 0
+	"./test-${1}" && echo "#define HAVE_${2}" \
+		|| echo FAILURE: test-${1} returned $? 1>&2
+	rm "test-${1}"
+d157 109
+a265 1
+cat config.h.pre
+d268 62
+a329 13
+runtest dirent-namlen DIRENT_NAMLEN
+runtest fgetln FGETLN
+runtest fts FTS
+runtest getsubopt GETSUBOPT
+runtest mmap MMAP
+runtest ohash OHASH "${DBLIB}"
+runtest reallocarray REALLOCARRAY
+runtest sqlite3_errstr SQLITE3_ERRSTR "${DBLIB}"
+runtest strcasestr STRCASESTR
+runtest strlcat STRLCAT
+runtest strlcpy STRLCPY
+runtest strptime STRPTIME
+runtest strsep STRSEP
+d331 59
+a389 1
+cat config.h.post
+@
+
+
+1.9
+log
+@Provide a fallback version of fts(3) for systems lacking it.
+I chose the OpenBSD version because it apparently contains various
+bugfixes that never made it into libnbcompat.  To reduce size and
+complexity, i stripped out the features we don't need.
+@
+text
+@d35 1
+@
+
+
+1.8
+log
+@Clarifications in comments and standard output suggested by
+Paul Onyschuk <ptmelville at gmail dot com> (Alpine Linux)
+@
+text
+@d36 1
+@
+
+
+1.7
+log
+@Do not hardcode stuff in ./configure that is actually user-configurable
+in the Makefile; instead, pass it down via the environment just
+like CFLAGS.
+Nice suggestion from kristaps@@ hoping to make MacOS X happier.
+@
+text
+@d17 2
+@
+
+
+1.6
+log
+@Since old SQLite versions do not have sqlite3_errstr(),
+provide a dummy fallback implementation.
+Do not bother to decode the error, SQLite error codes
+are not useful enough for that to be worthwhile.
+Note that using sqlite3_errmsg(db) would be a bad idea:
+On malloc() failure, db is NULL, which would cause a segfault.
+Issue noticed by kristaps@@.
+@
+text
+@d36 1
+a36 1
+runtest ohash OHASH -lutil
+d38 1
+a38 2
+runtest sqlite3_errstr SQLITE3_ERRSTR \
+	"-I/usr/local/include -L/usr/local/lib -lsqlite3"
+@
+
+
+1.5
+log
+@remove strnlen(3) compat, we no longer use it
+@
+text
+@d38 2
+@
+
+
+1.4
+log
+@let the build system cope with the recent ohash changes
+@
+text
+@a40 1
+runtest strnlen STRNLEN
+@
+
+
+1.3
+log
+@Audit malloc(3)/calloc(3)/realloc(3) usage.
+* Change eight reallocs to reallocarray to be safe from overflows.
+* Change one malloc to reallocarray to be safe from overflows.
+* Change one calloc to reallocarray, no zeroing needed.
+* Change the order of arguments of three callocs (aesthetical).
+@
+text
+@d23 2
+a24 2
+	echo ${CC} ${CFLAGS} -o test-${1} test-${1}.c 1>&2
+	${CC} ${CFLAGS} -o "test-${1}" "test-${1}.c" 1>&2 || return 0
+d36 1
+a36 1
+runtest ohash OHASH
+@
+
+
+1.2
+log
+@Even though strnlen(3) is required by POSIX 2008,
+Matthias Scheler reports than Solaris 10 lacks it.
+While here, sort the declarations in config.h
+and move the headers to the top.
+@
+text
+@d37 1
+@
+
+
+1.1
+log
+@Clean up feature tests:
+* Split the configure steering script out of the Makefile.
+* Let the configure step depend on the test sources.
+* Clean up the test programs such that they can be run.
+@
+text
+@d40 1
+@
+
+
+1.1.2.1
+log
+@Merge cleanup of feature tests to VERSION_1_12, resolving conflicts.
+@
+text
+@a32 1
+runtest betoh64 BETOH64
+d36 1
+@
+
+
+1.1.2.2
+log
+@Merge strnlen(3) configuration bits.
+@
+text
+@a39 1
+runtest strnlen STRNLEN
+@
+
+
+1.1.2.3
+log
+@Audit malloc(3)/calloc(3)/realloc(3) in VERSION_1_12.
+@
+text
+@a36 1
+runtest reallocarray REALLOCARRAY
+@
+
+
+1.1.2.4
+log
+@remove strnlen(3) compat, we no longer use it
+@
+text
+@d41 1
+@
+
+
+1.1.2.5
+log
+@Standard output reminder to run ./configure from make, suggested by
+Paul Onyschuk <ptmelville at gmail dot com> (Alpine Linux)
+@
+text
+@a16 2
+echo "/* RUNNING ./CONFIGURE - SHOULD BE USED ONLY VIA MAKE, READ INSTALL */"
+
+@

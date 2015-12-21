@@ -1,0 +1,513 @@
+head	1.14;
+access;
+symbols
+	VERSION_1_11_4:1.13
+	VERSION_1_11_3:1.2
+	VERSION_1_11_2:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.14
+date	2011.07.14.17.32.53;	author kristaps;	state dead;
+branches;
+next	1.13;
+
+1.13
+date	2011.07.11.21.56.06;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2011.07.11.09.44.07;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2011.07.11.09.40.49;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.07.01.13.46.39;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.07.01.12.02.44;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.07.01.09.11.35;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.06.25.13.19.25;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.06.22.10.36.36;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.06.21.14.16.05;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.06.21.13.09.19;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.05.26.23.01.26;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.05.14.23.43.03;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.05.13.00.42.26;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.14
+log
+@Apparently these weren't removed properly...
+@
+text
+@@
+
+
+1.13
+log
+@Fairly straightforward patch adding basic update (-u) and remove (-r)
+functionality to makewhatis.  This is somewhat expensive (requiring the
+index file to be trawled multiple times), but it's a good start.
+@
+text
+@a0 191
+.\"	$Id: makewhatis.1,v 1.12 2011/07/11 09:44:07 kristaps Exp $
+.\"
+.\" Copyright (c) 2011 Kristaps Dzonsons <kristaps@@bsd.lv>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: July 11 2011 $
+.Dt MAKEWHATIS 1
+.Os
+.Sh NAME
+.Nm makewhatis
+.Nd index UNIX manuals
+.Sh SYNOPSIS
+.Nm
+.Op Fl ruv
+.Op Fl d Ar dir
+.Ar
+.Sh DESCRIPTION
+The
+.Nm
+utility extracts keywords from
+.Ux
+manuals and indexes them for fast retrieval.
+The arguments are as follows:
+.Bl -tag -width Ds
+.It Fl d Ar dir
+The directory into which to write the keyword and index databases.
+.It Ar
+Read input from zero or more files in
+.Xr mdoc 7
+or
+.Xr man 7
+.Ux
+manual format.
+.It Fl r
+Remove entries.
+This will remove the index and keyword references.
+If the record is not found, it is ignored.
+.It Fl u
+Update the record.
+This will first remove the record (as in
+.Fl r )
+then re-add it.
+.It Fl v
+Verbose output.
+If specified once, prints the name of each indexed file.
+If twice, prints keywords for each file.
+.El
+.Pp
+By default,
+.Nm
+constructs a new
+.Sx Index Database
+and
+.Sx Keyword Database
+in the current working directory.
+Existing databases are truncated.
+.Pp
+If fatal parse errors are encountered, the offending file is printed to
+stderr, omitted from the index, and the parse continues with the next
+input file.
+.Ss Index Database
+The index database,
+.Pa mandoc.index ,
+is a
+.Xr recno 3
+database with record values consisting of
+.Pp
+.Bl -enum -compact
+.It
+a nil-terminated filename,
+.It
+a nil-terminated manual section,
+.It
+a nil-terminated manual title,
+.It
+a nil-terminated architecture
+.Pq this is not often available
+.It
+and a nil-terminated description.
+.El
+.Pp
+Both the manual section and description may be zero-length.
+Entries are sequentially-numbered, but the filenames are unordered.
+.Ss Keyword Database
+The keyword database,
+.Pa mandoc.db ,
+is a
+.Xr btree 3
+database of nil-terminated keywords (record length is non-zero string
+length plus one) mapping to a 8-byte binary field consisting of the
+keyword type and source
+.Sx Index Database
+record number.
+The type, a 32-bit bit-mask in host order, consists of the following
+fields:
+.Pp
+.Bl -tag -width Ds -offset indent -compact
+.It Li 0x01
+The name of a manual page as given in the NAME section.
+.It Li 0x02
+A function prototype name as given in the SYNOPSIS section.
+.It Li 0x04
+A utility name as given in the SYNOPSIS section.
+.It Li 0x08
+An include file as given in the SYNOPSIS section.
+.It Li 0x10
+A variable name as given in the SYNOPSIS section.
+.It Li 0x20
+A standard as given in the STANDARDS section.
+.It Li 0x40
+An author as given in the AUTHORS section.
+.It Li 0x80
+A configuration as given in the SYNOPSIS section.
+.It Li 0x100
+Free-form descriptive text as given in the NAME section.
+.It Li 0x200
+Cross-links between manuals.
+Listed as the link name, then a period, then the link section.
+If the link has no section, the period terminates the string.
+.It Li 0x400
+Path reference as given in the FILES section.
+.It Li 0x800
+Environment variable as given in the ENVIRONMENT section.
+.It Li 0x1000
+Error codes as given in the ERRORS section.
+.El
+.Pp
+The last four bytes are a host-ordered record number within the
+.Sx Index Database .
+.Pp
+The
+.Nm
+utility is
+.Ud
+.Sh IMPLEMENTATION NOTES
+The time to construct a new database pair grows linearly with the
+number of keywords in the input.
+However, removing or updating entries with
+.Fl r
+or
+.Fl u ,
+respectively, grows as a multiple of the index length and input size.
+.Sh FILES
+.Bl -tag -width Ds
+.It Pa mandoc.db
+A
+.Xr btree 3
+keyword database mapping keywords to a type and file reference in
+.Pa mandoc.index .
+.It Pa mandoc.index
+A
+.Xr recno 3
+database of indexed file-names.
+.El
+.Sh EXIT STATUS
+The
+.Nm
+utility exits with one of the following values:
+.Pp
+.Bl -tag -width Ds -compact
+.It 0
+No errors occurred.
+.It 5
+Invalid command line arguments were specified.
+No input files have been read.
+.It 6
+An operating system error occurred, for example memory exhaustion or an
+error accessing input files.
+Such errors cause
+.Nm
+to exit at once, possibly in the middle of parsing or formatting a file.
+The output databases are corrupt and should be removed .
+.El
+.Sh SEE ALSO
+.Xr mandoc 1
+.Sh AUTHORS
+The
+.Nm
+utility was written by
+.An Kristaps Dzonsons Aq kristaps@@bsd.lv .
+@
+
+
+1.12
+log
+@Use mandoc.1's error codes (we use them internally).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.11 2011/07/11 09:40:49 kristaps Exp $
+d25 1
+a25 1
+.Op Fl v
+d45 9
+d62 1
+a62 1
+constructs the
+d67 1
+d146 8
+@
+
+
+1.11
+log
+@Note we're no longer using temporary files.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.10 2011/07/01 13:46:39 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: July 1 2011 $
+d149 18
+a166 1
+.Ex -std
+@
+
+
+1.10
+log
+@Added `Er' in ERRORS scan to makewhatis.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.9 2011/07/01 12:02:44 kristaps Exp $
+a142 3
+.It Pa mandoc.db~
+Working copy of
+.Pa mandoc.db .
+a146 3
+.It Pa mandoc.index~
+Working copy of
+.Pa mandoc.index .
+@
+
+
+1.9
+log
+@Added search for `Ev' environment variables in ENVIRONMENT section.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.8 2011/07/01 09:11:35 kristaps Exp $
+d125 2
+@
+
+
+1.8
+log
+@Add path reference (`Pa' in FILES section).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.7 2011/06/25 13:19:25 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 25 2011 $
+d123 2
+@
+
+
+1.7
+log
+@Add cross-reference records to makewhatis.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.6 2011/06/22 10:36:36 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 22 2011 $
+d121 2
+@
+
+
+1.6
+log
+@Clean up makewhatis.c a little bit and add verbosity (-v).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.5 2011/06/21 14:16:05 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: June 21 2011 $
+d117 4
+@
+
+
+1.5
+log
+@Let descriptions (bit-mask 0x100) also be mined for text.  This doubles
+the database size (one record for each file), but it's critical
+information.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.4 2011/06/21 13:09:19 kristaps Exp $
+d25 1
+d45 4
+@
+
+
+1.4
+log
+@Make sure makewhatis.1 is documenting the correct bit-fields.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.3 2011/05/26 23:01:26 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 26 2011 $
+d110 2
+@
+
+
+1.3
+log
+@Remove untrue CAVEAT in makewhatis.1.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.2 2011/05/14 23:43:03 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 14 2011 $
+d90 2
+a91 2
+The type, an unsigned 32-bit integer in host order, is one of the
+following:
+d98 1
+a98 1
+.It Li 0x03
+d100 1
+a100 1
+.It Li 0x04
+d102 1
+a102 1
+.It Li 0x05
+d104 1
+a104 1
+.It Li 0x06
+d106 1
+a106 1
+.It Li 0x07
+d108 1
+a108 1
+.It Li 0x08
+d112 1
+a112 4
+If a value is encountered outside of this range, the database is
+corrupt.
+.Pp
+The latter four bytes are a host-ordered record number within the
+@
+
+
+1.2
+log
+@Fix makewhatis.1 to have the correct name (it was MANDOC-DB, oops).
+@
+text
+@d1 1
+a1 1
+.\"	$Id: makewhatis.1,v 1.1 2011/05/13 00:42:26 kristaps Exp $
+d17 1
+a17 1
+.Dd $Mdocdate: May 13 2011 $
+a148 4
+.Sh CAVEATS
+Only
+.Xr mdoc 7
+manuals are processed.
+@
+
+
+1.1
+log
+@Rename mandoc-db to makewhatis.  On the suggestion of schwarze@@; I agree.
+Add initial version notes.
+@
+text
+@d1 1
+a1 1
+.\"	$Id: mandoc-db.1,v 1.5 2011/05/04 20:43:38 kristaps Exp $
+d17 2
+a18 2
+.Dd $Mdocdate: May 4 2011 $
+.Dt MANDOC-DB 1
+@

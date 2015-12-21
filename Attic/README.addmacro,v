@@ -1,0 +1,77 @@
+head	1.2;
+access;
+symbols
+	VERSION_1_9_5:1.2
+	VERSION_1_8_5:1.2
+	VERSION_1_8_1:1.2
+	VERSION_1_7_16:1.2
+	VERSION_1_7_15:1.2
+	OPENBSD_CHECKIN:1.2
+	VERSION_1_6_5:1.2
+	VERSION_1_5_1:1.2
+	VERSION_1_3_15:1.1
+	VERSION_1_3_13:1.1
+	VERSION_1_3_11:1.1
+	VERSION_1_3_10:1.1
+	VERSION_1_3_9:1.1
+	VERSION_1_3_8:1.1
+	VERSION_1_3_6:1.1
+	VERSION_1_3_5:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2009.03.06.14.13.47;	author kristaps;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.23.13.05.06;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@@
+
+
+1.1
+log
+@Added mdoclint.
+`make regress' uses mdoclint
+@
+text
+@a0 21
+$Id: READE.addmacro,v 1.1 2009/02/23 12:45:19 kristaps Exp $
+
+This documents how to go about adding a macro to mdoc.3.
+
+(1) Add the macro to the #define list in mdoc.h.
+(2) Add the macro to __mdoc_macronames in mdoc.c.
+(3) Add the macro to __mdoc_macros in mdoc.c.
+(4) Add the macro to mdoc_valids in validate.c.
+(5) Add the macro to mdoc_actions in action.c.
+(6) Add the macro to mdoc_argflags in argv.c.
+(7) Modify the hash routine in hash.c (may not be required).
+
+If the macro has arguments:
+
+(1) Add arguments to the #define list in mdoc.h.
+(2) Add the arguments to __mdoc_argnames in mdoc.c.
+(3) Modify parts of argv.c (lookup() and mdoc_args()).
+
+You'll certainly want to change the front-ends:
+
+(1) Add the macro to __termacts in term.c.
+@

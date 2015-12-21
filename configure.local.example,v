@@ -1,0 +1,486 @@
+head	1.10;
+access;
+symbols
+	VERSION_1_13_3:1.6
+	VERSION_1_13_2:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2015.11.07.13.14.21;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.05.20.22.22.59;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.03.27.00.18.14;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.03.22.18.14.30;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.02.16.14.56.22;	author schwarze;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.02.03.21.16.02;	author schwarze;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.01.23.21.59.31;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.01.21.22.41.49;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.12.09.09.14.33;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.08.16.19.00.01;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@garbage collect unused EXAMPLEDIR, forgotten in the CSS cleanup;
+noticed by Peter Bray <pdb_ml at yahoo dot com dot au>
+@
+text
+@# $Id: configure.local.example,v 1.9 2015/05/20 22:22:59 schwarze Exp $
+#
+# Copyright (c) 2014, 2015 Ingo Schwarze <schwarze@@openbsd.org>
+#
+# Permission to use, copy, modify, and distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+# For all settings documented in this file, there are reasonable
+# defaults and/or the ./configure script attempts autodetection.
+# Consequently, you only need to create a file ./configure.local
+# and put any of these settings into it if ./configure autodetection
+# fails or if you want to make different choices for other reasons.
+
+# If autodetection fails, please tell <tech@@mdocml.bsd.lv>.
+
+# We recommend that you write ./configure.local from scratch and
+# only put the lines there you need.  This file contains examples.
+# It is not intended as a template to be copied as a whole.
+
+# --- user settings relevant for all builds ----------------------------
+
+# For -Tutf8 and -Tlocale operation, mandoc(1) requires <locale.h>
+# providing setlocale(3) and <wchar.h> providing wcwidth(3) and
+# putwchar(3) with a wchar_t storing UCS-4 values.  Theoretically,
+# the latter should be tested with the __STDC_ISO_10646__ feature
+# macro.  In practice, many <wchar.h> headers do not provide that
+# macro even though they treat wchar_t as UCS-4.  So the automatic
+# test only checks that wchar_t is wide enough, that is, at least
+# four bytes.
+
+# The following line forces multi-byte support.
+# If your C library does not treat wchar_t as UCS-4, the UTF-8 output
+# mode will print garbage.
+
+HAVE_WCHAR=1
+
+# The following line disables multi-byte support.
+# The output modes -Tutf8 and -Tlocale will be the same as -Tascii.
+
+HAVE_WCHAR=0
+
+# When man(1) or apropos(1) is called without -m and -M options,
+# MANPATH is not set in the environment, man.conf(5) is not available
+# and manpath(1) not used, manuals are searched for in the following
+# directory trees by default.
+
+MANPATH_DEFAULT="/usr/share/man:/usr/X11R6/man:/usr/local/man"
+
+# In manual pages written in the mdoc(7) language, the operating system
+# version is displayed in the page footer line.  If an operating system
+# is specified as an argument to the .Os macro, that is always used.
+# If the .Os macro has no argument and an operation system is specified
+# with the mandoc(1) -Ios= command line option, that is used.
+# Otherwise, the uname(3) library function is called at runtime to find
+# the name of the operating system.
+# If you do not want uname(3) to be called but instead want a fixed
+# string to be used, use the following line:
+
+OSNAME="OpenBSD 5.6"
+
+# The following installation directories are used.
+# It is possible to set only one or a few of these variables,
+# there is no need to copy the whole block.
+# Even if you set PREFIX to something else, the other variables
+# pick it up without copying them all over.
+
+PREFIX="/usr/local"
+BINDIR="${PREFIX}/bin"
+SBINDIR="${PREFIX}/sbin"
+INCLUDEDIR="${PREFIX}/include/mandoc"
+LIBDIR="${PREFIX}/lib/mandoc"
+MANDIR="${PREFIX}/man"
+
+# The man(1) utility needs to know where the manuals reside.
+# We know of two ways to tell it: via manpath(1) or man.conf(5).
+# The latter is used by OpenBSD and NetBSD, the former by most
+# other systems.
+
+# Force usage of manpath(1).
+# If it is not installed or not operational,
+# man(1), makewhatis(8), and apropos(1) will not work properly.
+HAVE_MANPATH=1
+
+# Force usage of man.conf(5).
+# If it does not exist or contains no valid configuration,
+# man(1), makewhatis(8), and apropos(1) will not work properly.
+HAVE_MANPATH=0
+
+# Some distributions may want to avoid naming conflicts
+# with the configuration files of other man(1) implementations.
+# This changes the name of the installed section 5 manual page as well.
+MANM_MANCONF="mandoc.conf"	# default is "man.conf"
+
+# Some distributions may want to avoid naming conflicts among manuals.
+# If you want to change the names of installed section 7 manual pages,
+# the following alternative names are suggested.
+# The suffix ".7" will automatically be appended.
+# It is possible to set only one or a few of these variables,
+# there is no need to copy the whole block.
+
+MANM_MAN="mandoc_man"		# default is "man"
+MANM_MDOC="mandoc_mdoc"		# default is "mdoc"
+MANM_ROFF="mandoc_roff"		# default is "roff"
+MANM_EQN="mandoc_eqn"		# default is "eqn"
+MANM_TBL="mandoc_tbl"		# default is "tbl"
+
+# Some distributions may want to avoid naming conflicts
+# with other man(1) and soelim(1) utilities.
+# If you want to change the names of binary programs,
+# the following alternative names are suggested.
+# Using different names is possible as well.
+# This changes the names of the installed section 1 manual pages as well.
+
+BINM_MAN=mman			# default is "man"
+BINM_SOELIM=msoelim		# default is "soelim"
+
+# It is possible to change the utility program used for installation
+# and the modes files are installed with.  The defaults are:
+
+INSTALL="install"
+INSTALL_PROGRAM="${INSTALL} -m 0555"
+INSTALL_LIB="${INSTALL} -m 0444"
+INSTALL_MAN="${INSTALL} -m 0444"
+INSTALL_DATA="${INSTALL} -m 0444"
+
+# --- user settings related to database support ------------------------
+
+# By default, building makewhatis(8) and apropos(1) is enabled.
+# To disable it, for example to avoid the dependency on SQLite3,
+# use the following line.  It that case, the remaining settings
+# in this section are irrelevant.
+
+BUILD_DB=0
+
+# Two libraries are needed: SQLite3 and ohash(3).
+# Autoconfiguration tries the following linker flags to find them.
+# If none of these work, add a working DBLIB line to configure.local,
+# disabling autodetection for library directories.
+
+DBLIB="-lsqlite3"
+DBLIB="-lsqlite3 -lutil"
+DBLIB="-L/usr/local/lib -lsqlite3"
+
+# When library autodetection decides to use -L/usr/local/lib,
+# -I/usr/local/include is automatically added to CFLAGS.
+# If you manually set DBLIB to something including -L/usr/local/lib,
+# chances are you will also need the following line:
+
+CFLAGS="${CFLAGS} -I/usr/local/include"
+
+# Some distributions may want to avoid naming conflicts
+# with another implementation of apropos(1) and makewhatis(8).
+# If you want to change the names of the binary programs,
+# the following alternative names are suggested.
+# Using other names is possible as well.
+# This changes the names of the installed section 1 and section 8
+# manual pages as well.
+# It is possible to set only one or two of these variables,
+# there is no need to copy the whole block.
+
+BINM_APROPOS=mapropos		# default is "apropos"
+BINM_WHATIS=mwhatis		# default is "whatis"
+BINM_MAKEWHATIS=mandocdb	# default is "makewhatis"
+
+# When using the "homebrew" package manager on Mac OS X, the actual
+# manuals are located in a so-called "cellar" and only symlinked
+# into the manual trees.  To allow mandoc to follow such symlinks,
+# you have to specify the physical location of the cellar as returned
+# by realpath(3), for example:
+
+PREFIX="/usr/local"
+HOMEBREWDIR="${PREFIX}/Cellar"
+
+# --- user settings related man.cgi ------------------------------------
+
+# By default, building man.cgi(8) is disabled.  To enable it, copy
+# cgi.h.example to cgi.h, edit it, and use the following line.
+# Obviously, this requires that BUILD_DB is enabled, too.
+
+BUILD_CGI=1
+
+# The remaining settings in this section are only relevant if BUILD_CGI
+# is enabled.  Otherwise, they have no effect either way.
+
+# By default, man.cgi(8) is linked statically.
+# Some systems do not support static linking, for example Mac OS X.
+# In that case, use the following line:
+
+STATIC=
+
+# Some systems, for example Linux, require -pthread for static linking:
+
+STATIC="-static -pthread"
+
+# Some directories.
+# This works just like PREFIX, see above.
+
+WWWPREFIX="/var/www"
+HTDOCDIR="${WWWPREFIX}/htdocs"
+CGIBINDIR="${WWWPREFIX}/cgi-bin"
+
+# --- settings that rarely need to be touched --------------------------
+
+# Do not set these variables unless you really need to.
+
+# You can manually override the compiler to be used.
+# But that's rarely useful because ./configure asks your make(1)
+# which compiler to use, and that answer will hardly be wrong.
+
+CC=cc
+
+# The default compiler flags are:
+
+CFLAGS="-g -W -Wall -Wstrict-prototypes -Wno-unused-parameter -Wwrite-strings"
+
+# In rare cases, it may be required to skip individual automatic tests.
+# Each of the following variables can be set to 0 (test will not be run
+# and will be regarded as failed) or 1 (test will not be run and will
+# be regarded as successful).
+
+HAVE_DIRENT_NAMLEN=0
+HAVE_FGETLN=0
+HAVE_FTS=0
+HAVE_GETSUBOPT=0
+HAVE_MMAP=0
+HAVE_REALLOCARRAY=0
+HAVE_STRCASESTR=0
+HAVE_STRLCAT=0
+HAVE_STRLCPY=0
+HAVE_STRPTIME=0
+HAVE_STRSEP=0
+HAVE_STRTONUM=0
+
+HAVE_SQLITE3=0
+HAVE_SQLITE3_ERRSTR=0
+HAVE_OHASH=0
+@
+
+
+1.9
+log
+@* remove FreeBSDisms
+* purge and sort headers
+* add build and compat glue
+* and LICENSE information
+for soelim(1)
+@
+text
+@d1 1
+a1 1
+# $Id: configure.local.example,v 1.8 2015/03/27 00:18:14 schwarze Exp $
+a81 1
+EXAMPLEDIR="${PREFIX}/share/examples/mandoc"
+@
+
+
+1.8
+log
+@Add man.conf(5).  After adding some additional functionality,
+one of the next steps will be to use it in addition to manpath(1)
+rather than as an alternative to it.
+@
+text
+@d1 1
+a1 1
+# $Id: configure.local.example,v 1.7 2015/03/22 18:14:30 schwarze Exp $
+d118 5
+a122 5
+# with another man(1) utility.
+# If you want to change the name of the binary program,
+# the following alternative name is suggested.
+# Using a different name is possible as well.
+# This changes the name of the installed section 1 manual page as well.
+d125 1
+@
+
+
+1.7
+log
+@make MANPATH_DEFAULT compile-time configurable
+@
+text
+@d1 1
+a1 1
+# $Id: configure.local.example,v 1.6 2015/02/16 14:56:22 schwarze Exp $
+d99 5
+@
+
+
+1.6
+log
+@strtonum(3) compat glue
+@
+text
+@d1 1
+a1 1
+# $Id: configure.local.example,v 1.5 2015/02/03 21:16:02 schwarze Exp $
+d51 7
+@
+
+
+1.5
+log
+@Enable the integrated man(1) even when database support is disabled,
+using the file system lookup fallback code, also reducing the number
+of preprocessor conditional directives.
+Hopefully, it will make some small Linux distros happy.
+@
+text
+@d1 1
+a1 1
+# $Id: configure.local.example,v 1.4 2015/01/23 21:59:31 schwarze Exp $
+d229 1
+@
+
+
+1.4
+log
+@improve homebrew cellar config example
+@
+text
+@d1 1
+a1 1
+# $Id: configure.local.example,v 1.3 2015/01/21 22:41:49 schwarze Exp $
+d77 15
+d105 9
+a147 17
+# The man(1) utility needs to know where the manuals reside.
+# We know of two ways to tell it: via manpath(1) or man.conf(5).
+# The latter is used by OpenBSD and NetBSD, the former by most
+# other systems.
+
+# Force usage of manpath(1).
+# If it is not installed or not operational,
+# makewhatis(8) and apropos(1) will not work properly.
+
+HAVE_MANPATH=1
+
+# Force usage of man.conf(5).
+# If it does not exist or contains no valid configuration,
+# makewhatis(8) and apropos(1) will not work properly.
+
+HAVE_MANPATH=0
+
+d149 2
+a150 2
+# with groff, man-db, or other tools.
+# If you want to change the names of binary programs,
+d155 1
+a155 1
+# It is possible to set only one or a few of these variables,
+a158 1
+BINM_MAN=mman			# default is "man"
+@
+
+
+1.3
+log
+@Support homebrew-style linking on Mac OS X.
+Idea found together with Alexis Hildebrandt <surryhill at gmail dot com>.
+@
+text
+@d1 1
+a1 1
+# $Id: configure.local.example,v 1.2 2014/12/09 09:14:33 schwarze Exp $
+d162 2
+a163 1
+HOMEBREWDIR=/Cellar
+@
+
+
+1.2
+log
+@Support choosing alternative binary and manual names from configure.local,
+to help downstream distributions avoid naming conflicts.
+@
+text
+@d1 1
+a1 1
+# $Id: configure.local.example,v 1.1 2014/08/16 19:00:01 schwarze Exp $
+d3 1
+a3 1
+# Copyright (c) 2014 Ingo Schwarze <schwarze@@openbsd.org>
+d156 8
+@
+
+
+1.1
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@d1 1
+a1 1
+# $Id$
+d61 1
+a61 1
+OSNAME="OpenBSD 5.5"
+d77 13
+d141 15
+@

@@ -1,0 +1,1102 @@
+head	1.18;
+access;
+symbols
+	VERSION_1_9_5:1.18
+	VERSION_1_9_2:1.17
+	VERSION_1_9_1:1.17
+	VERSION_1_9_0:1.17
+	VERSION_1_8_5:1.17
+	VERSION_1_8_4:1.11
+	VERSION_1_8_3:1.11
+	VERSION_1_8_2:1.11
+	VERSION_1_8_1:1.11
+	VERSION_1_8_0:1.11
+	VERSION_1_7_24:1.11
+	VERSION_1_7_23:1.10
+	VERSION_1_7_22:1.10
+	VERSION_1_7_21:1.10
+	VERSION_1_7_20:1.10
+	VERSION_1_7_19:1.10
+	VERSION_1_7_17:1.10
+	VERSION_1_7_16:1.10
+	VERSION_1_7_15:1.10
+	VERSION_1_7_14:1.10
+	VERSION_1_7_13:1.9
+	VERSION_1_7_12:1.6
+	OPENBSD_CHECKIN:1.6
+	VERSION_1_7_10:1.6
+	VERSION_1_7_5:1.5
+	VERSION_1_6_5:1.4
+	VERSION_1_6_2:1.4
+	VERSION_1_5_3:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.18
+date	2009.09.17.07.41.28;	author kristaps;	state dead;
+branches;
+next	1.17;
+
+1.17
+date	2009.07.28.11.59.18;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.07.28.11.53.26;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.07.28.10.09.29;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.07.27.13.10.08;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.07.27.12.02.49;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.07.26.19.53.40;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.07.12.08.45.56;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.06.10.20.18.43;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.04.12.19.45.26;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.04.12.19.29.53;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.04.12.19.24.10;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.03.27.13.44.24;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.03.21.13.47.02;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.03.19.20.43.13;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.19.18.30.26;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.19.11.49.00;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.18
+log
+@ascii_xxx -> chars_xxx (intended to hold more than just ascii encoding).
+More html work.
+@
+text
+@@
+
+
+1.17
+log
+@Version: 1.8.5.
+Added \*R, \*(Tm (obscure -man predefined strings).
+@
+text
+@a0 299
+/*	$Id: ascii.in,v 1.16 2009/07/28 11:53:26 kristaps Exp $ */
+/*
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@kth.se>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+/*
+ * The ASCII translation tables.  STRING corresponds to predefined
+ * strings (cf. mdoc_samples.7 and tmac/mdoc/doc-nroff).  CHAR
+ * corresponds to special characters (cf. groff_char.7).  BOTH contains
+ * sequences that are equivalent in both STRING and CHAR.
+ *
+ * Either way, the left-hand side corresponds to the input sequence (\x,
+ * \(xx, \*(xx and so on) whose length is listed second element.  The
+ * right-hand side is what's produced by the front-end, with the fourth
+ * element being its length.
+ *
+ * Be sure to C-escape strings!
+ */
+
+STRING("Am",			2,	"&",		1)
+STRING("Ba",			2,	"|",		1)
+STRING("Ge",			2,	">=",		2)
+STRING("Gt",			2,	">",		1)
+STRING("If",			2,	"infinity",	8)
+STRING("Le",			2,	"<=",		2)
+STRING("Lq",			2,	"``",		2)
+STRING("Lt",			2,	"<",		1)
+STRING("Na",			2,	"NaN",		3)
+STRING("Ne",			2,	"!=",		2)
+STRING("Pi",			2,	"pi",		2)
+STRING("Pm",			2,	"+-",		2)
+STRING("R",			1,	"(R)",		3)
+STRING("Rq",			2,	"\'\'",		2)
+STRING("Tm",			2,	"tm",		2)
+STRING("left-bracket",		12,	"[",		1)
+STRING("left-parenthesis",	16,	"(",		1)
+STRING("left-singlequote",	16,	"`",		1)
+STRING("lp",			2,	"(",		1)
+STRING("q",			1,	"\"",		1)
+STRING("quote-left",		10,	"`",		1)
+STRING("quote-right",		11,	"\'",		1)
+STRING("right-bracket",		13,	"]",		1)
+STRING("right-parenthesis",	17,	")",		1)
+STRING("right-singlequote",	17,	"\'",		1)
+STRING("rp",			2,	")",		1)
+
+BOTH("<=",			2,	"<=",		2)
+BOTH(">=",			2,	">=",		2)
+BOTH("aa",			2,	"\'",		1)
+BOTH("ga",			2,	"`",		1)
+BOTH("lq",			2, 	"``",		2)
+BOTH("rq",			2, 	"\'\'",		2)
+BOTH("ua",			2,	"^",		1)
+
+CHAR(" ",			1,	" ",		1)
+CHAR("!=",			2, 	"!=",		2)
+CHAR("%",			1,	"",		0)
+CHAR("&",			1,	"",		0)
+CHAR("(=",			2,	"(=",		2)
+CHAR("**",			2, 	"*",		1)
+CHAR("*A",			2,	"A",		1)
+CHAR("*B",			2,	"B",		1)
+CHAR("*C",			2,	"H",		1)
+CHAR("*D",			2,	"/\\",		2)
+CHAR("*E",			2,	"E",		1)
+CHAR("*F",			2,	"O_",		1)
+CHAR("*G",			2,	"|",		1)
+CHAR("*H",			2,	"O",		1)
+CHAR("*I",			2,	"I",		1)
+CHAR("*K",			2,	"K",		1)
+CHAR("*L",			2,	"/\\",		2)
+CHAR("*M",			2,	"M",		1)
+CHAR("*N",			2,	"N",		1)
+CHAR("*O",			2,	"O",		1)
+CHAR("*P",			2,	"TT",		2)
+CHAR("*Q",			2,	"Y",		1)
+CHAR("*R",			2,	"P",		1)
+CHAR("*S",			2,	">",		1)
+CHAR("*T",			2,	"T",		1)
+CHAR("*U",			2,	"Y",		1)
+CHAR("*W",			2,	"O",		1)
+CHAR("*X",			2,	"X",		1)
+CHAR("*Y",			2,	"H",		1)
+CHAR("*Z",			2,	"Z",		1)
+CHAR("*a",			2,	"a",		1)
+CHAR("*b",			2,	"B",		1)
+CHAR("*c",			2,	"E",		1)
+CHAR("*d",			2,	"d",		1)
+CHAR("*e",			2,	"e",		1)
+CHAR("*f",			2,	"o",		1)
+CHAR("*g",			2,	"y",		1)
+CHAR("*h",			2,	"0",		1)
+CHAR("*i",			2,	"i",		1)
+CHAR("*k",			2,	"k",		1)
+CHAR("*l",			2,	"\\",		1)
+CHAR("*m",			2,	"u",		1)
+CHAR("*n",			2,	"v",		1)
+CHAR("*o",			2,	"o",		1)
+CHAR("*p",			2,	"n",		1)
+CHAR("*q",			2,	"u",		1)
+CHAR("*r",			2,	"p",		1)
+CHAR("*s",			2,	"o",		1)
+CHAR("*t",			2,	"t",		1)
+CHAR("*u",			2,	"u",		1)
+CHAR("*w",			2,	"w",		1)
+CHAR("*x",			2,	"x",		1)
+CHAR("*y",			2,	"n",		1)
+CHAR("*z",			2,	"C",		1)
+CHAR("+-",			2, 	"+-",		2)
+CHAR("+f",			2,	"o",		1)
+CHAR("+h",			2,	"0",		1)
+CHAR("+p",			2,	"w",		1)
+CHAR(",C",			2,	"C",		1)
+CHAR(",c",			2,	"c",		1)
+CHAR("-",			1,	"-",		1)
+CHAR("->",			2, 	"->",		2)
+CHAR("-D",			2,	"D",		1)
+CHAR(".",			1,	".",		1)
+CHAR("/L",			2,	"L",		1)
+CHAR("/O",			2,	"O",		1)
+CHAR("/l",			2,	"l",		1)
+CHAR("/o",			2,	"o",		1)
+CHAR("0",			1,	" ",		1)
+CHAR(":A",			2,	"A",		1)
+CHAR(":E",			2,	"E",		1)
+CHAR(":I",			2,	"I",		1)
+CHAR(":O",			2,	"O",		1)
+CHAR(":U",			2,	"U",		1)
+CHAR(":a",			2,	"a",		1)
+CHAR(":e",			2,	"e",		1)
+CHAR(":i",			2,	"i",		1)
+CHAR(":o",			2,	"o",		1)
+CHAR(":u",			2,	"u",		1)
+CHAR(":y",			2,	"y",		1)
+CHAR("<-",			2, 	"<-",		2)
+CHAR("<=",			2, 	"<=",		2)
+CHAR("<>",			2, 	"<>",		2)
+CHAR("=)",			2,	"=)",		2)
+CHAR("==",			2, 	"==",		2)
+CHAR("=~",			2,	"=~",		2)
+CHAR(">=",			2, 	">=",		2)
+CHAR("AE",			2,	"AE",		2)
+CHAR("AN",			2,	"^",		1)
+CHAR("Ah",			2,	"N",		1)
+CHAR("Bq",			2, 	",,",		2)
+CHAR("Cs",			2,	"x",		1)
+CHAR("Do",			2,	"$",		1)
+CHAR("Eu",			2,	"EUR",		3)
+CHAR("Fc",			2,	">>",		2)
+CHAR("Fi",			2,	"ffi",		3)
+CHAR("Fl",			2,	"ffl",		3)
+CHAR("Fn",			2,	"f",		1)
+CHAR("Fo",			2,	"<<",		2)
+CHAR("Im",			2,	"I",		1)
+CHAR("OE",			2,	"OE",		2)
+CHAR("OR",			2,	"v",		1)
+CHAR("Po",			2,	"L",		1)
+CHAR("Re",			2,	"R",		1)
+CHAR("Sd",			2,	"o",		1)
+CHAR("TP",			2,	"b",		1)
+CHAR("Tp",			2,	"b",		1)
+CHAR("Ye",			2,	"Y",		1)
+CHAR("\'",			1,	"\'",		1)
+CHAR("\'A",			2,	"A",		1)
+CHAR("\'E",			2,	"E",		1)
+CHAR("\'I",			2,	"I",		1)
+CHAR("\'O",			2,	"O",		1)
+CHAR("\'U",			2,	"U",		1)
+CHAR("\'a",			2,	"a",		1)
+CHAR("\'e",			2,	"e",		1)
+CHAR("\'i",			2,	"i",		1)
+CHAR("\'o",			2,	"o",		1)
+CHAR("\'u",			2,	"u",		1)
+CHAR("\\",			1,	"\\",		1)
+CHAR("^",			1,	"",		0)
+CHAR("^A",			2,	"A",		1)
+CHAR("^E",			2,	"E",		1)
+CHAR("^I",			2,	"I",		1)
+CHAR("^O",			2,	"O",		1)
+CHAR("^U",			2,	"U",		1)
+CHAR("^a",			2,	"a",		1)
+CHAR("^e",			2,	"e",		1)
+CHAR("^i",			2,	"i",		1)
+CHAR("^o",			2,	"o",		1)
+CHAR("^u",			2,	"u",		1)
+CHAR("`",			1,	"`",		1)
+CHAR("`A",			2,	"A",		1)
+CHAR("`E",			2,	"E",		1)
+CHAR("`I",			2,	"I",		1)
+CHAR("`O",			2,	"O",		1)
+CHAR("`U",			2,	"U",		1)
+CHAR("`a",			2,	"a",		1)
+CHAR("`e",			2,	"e",		1)
+CHAR("`i",			2,	"i",		1)
+CHAR("`o",			2,	"o",		1)
+CHAR("`u",			2,	"u",		1)
+CHAR("a-",			2,	"-",		1)
+CHAR("a\"",			2,	"\"",		1)
+CHAR("a^",			2,	"^",		1)
+CHAR("aa",			2, 	"\'",		1)
+CHAR("ab",			2,	"`",		1)
+CHAR("ac",			2,	",",		1)
+CHAR("ad",			2,	"\"",		1)
+CHAR("ae",			2,	"ae",		2)
+CHAR("ah",			2,	"v",		1)
+CHAR("ao",			2,	"o",		1)
+CHAR("ap",			2,	"~",		1)
+CHAR("aq",			2, 	"\'",		1)
+CHAR("a~",			2, 	"~",		1)
+CHAR("ba",			2, 	"|",		1)
+CHAR("bb",			2, 	"|",		1)
+CHAR("bq",			2, 	",",		1)
+CHAR("bu",			2, 	"o",		1)
+CHAR("c",			1,	"",		0)
+CHAR("ca",			2,	"(^)",		3)
+CHAR("ci",			2, 	"O",		1)
+CHAR("co",			2, 	"(C)",		3)
+CHAR("ct",			2,	"c",		1)
+CHAR("cu",			2,	"U",		1)
+CHAR("dA",			2, 	"v",		1)
+CHAR("da",			2, 	"v",		1)
+CHAR("dd",			2,	"=",		1)
+CHAR("de",			2,	"o",		1)
+CHAR("dg",			2,	"-",		1)
+CHAR("di",			2,	"-:-",		3)
+CHAR("e",			1,	"\\",		1)
+CHAR("em",			2, 	"--",		2)
+CHAR("en",			2, 	"-",		1)
+CHAR("eq",			2,	"=",		1)
+CHAR("es",			2,	"{}",		2)
+CHAR("eu",			2,	"EUR",		3)
+CHAR("fa",			2,	"V",		1)
+CHAR("fc",			2,	">",		1)
+CHAR("ff",			2,	"ff",		2)
+CHAR("fi",			2,	"fi",		2)
+CHAR("fl",			2,	"fl",		2)
+CHAR("fo",			2,	"<",		1)
+CHAR("ga",			2, 	"`",		1)
+CHAR("gr",			2,	"V",		1)
+CHAR("hA",			2, 	"<=>",		3)
+CHAR("ho",			2,	",",		1)
+CHAR("hy",			2, 	"-",		1)
+CHAR("if",			2, 	"oo",		2)
+CHAR("lA",			2, 	"<=",		2)
+CHAR("lB",			2, 	"[",		1)
+CHAR("lC",			2, 	"{",		1)
+CHAR("la",			2, 	"<",		1)
+CHAR("lh",			2,	"<=",		2)
+CHAR("mo",			2,	"E",		1)
+CHAR("mu",			2,	"x",		1)
+CHAR("na",			2, 	"NaN",		3)
+CHAR("nm",			2,	"E",		1)
+CHAR("no",			2,	"~",		1)
+CHAR("oA",			2,	"A",		1)
+CHAR("oa",			2,	"a",		1)
+CHAR("oe",			2,	"oe",		2)
+CHAR("oq",			2, 	"`",		1)
+CHAR("pd",			2,	"a",		1)
+CHAR("pl",			2,	"+",		1)
+CHAR("ps",			2,	"9|",		2)
+CHAR("r!",			2,	"i",		1)
+CHAR("r?",			2,	"c",		1)
+CHAR("rA",			2, 	"=>",		2)
+CHAR("rB",			2, 	"]",		1)
+CHAR("rC",			2, 	"}",		1)
+CHAR("ra",			2, 	">",		1)
+CHAR("rg",			2, 	"(R)",		3)
+CHAR("rh",			2,	"=>",		2)
+CHAR("sc",			2,	"S",		1)
+CHAR("ss",			2,	"ss",		2)
+CHAR("st",			2,	"-)",		2)
+CHAR("te",			2,	"3",		1)
+CHAR("tf",			2,	".:.",		3)
+CHAR("tm",			2, 	"tm",		2)
+CHAR("ts",			2,	"s",		1)
+CHAR("uA",			2, 	"^",		1)
+CHAR("ua",			2, 	"^",		1)
+CHAR("|",			1,	"",		0)
+CHAR("~",			1,	" ",		1)
+CHAR("~=",			2,	"~=",		2)
+CHAR("~A",			2,	"A",		1)
+CHAR("~N",			2,	"N",		1)
+CHAR("~O",			2,	"O",		1)
+CHAR("~a",			2,	"a",		1)
+CHAR("~n",			2,	"n",		1)
+CHAR("~o",			2,	"o",		1)
+CHAR("~~",			2,	"~~",		2)
+@
+
+
+1.16
+log
+@Added Greek characters to ascii.in (from groff_char.7).
+Added Euro symbols (from groff_char.7).
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.in,v 1.15 2009/07/28 10:09:29 kristaps Exp $ */
+d44 1
+d46 1
+@
+
+
+1.15
+log
+@Fixed \(bq.
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.in,v 1.14 2009/07/27 13:10:08 kristaps Exp $ */
+d71 48
+d120 3
+d158 1
+d241 1
+d285 1
+@
+
+
+1.14
+log
+@Re-ordered ascii.in looking for dupes.
+Added `vim -q' tip to manuals.7 (thanks uqs@@sporlein.net).
+ifdef'd production of missing specials/predefines.
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.in,v 1.13 2009/07/27 12:02:49 kristaps Exp $ */
+d170 1
+a170 1
+CHAR("bq",			2, 	",,",		2)
+@
+
+
+1.13
+log
+@Correct handling of \*(xx, \*[xxx], \*x versus \x, \(xx, \([xxx]: predefined strings and escape characters, respectively.
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.in,v 1.12 2009/07/26 19:53:40 kristaps Exp $ */
+d32 14
+d47 1
+a47 1
+STRING("right-parenthesis",	17,	")",		1)
+d49 3
+a51 2
+STRING("rp",			2,	")",		1)
+STRING("left-bracket",		12,	"[",		1)
+d53 1
+a53 1
+STRING("left-singlequote",	16,	"`",		1)
+d55 1
+a55 16
+STRING("quote-left",		10,	"`",		1)
+STRING("quote-right",		11,	"\'",		1)
+STRING("q",			1,	"\"",		1)
+STRING("Ne",			2,	"!=",		2)
+STRING("Le",			2,	"<=",		2)
+STRING("Ge",			2,	">=",		2)
+STRING("Lt",			2,	"<",		1)
+STRING("Gt",			2,	">",		1)
+STRING("Pm",			2,	"+-",		2)
+STRING("Na",			2,	"NaN",		3)
+STRING("Ba",			2,	"|",		1)
+STRING("Am",			2,	"&",		1)
+STRING("Rq",			2,	"\'\'",		2)
+STRING("Lq",			2,	"``",		2)
+STRING("Pi",			2,	"pi",		2)
+STRING("If",			2,	"infinity",	8)
+d57 2
+d61 2
+a63 2
+BOTH("<=",			2,	"<=",		2)
+BOTH(">=",			2,	">=",		2)
+d65 2
+a66 3
+CHAR("\\",			1,	"\\",		1)
+CHAR("\'",			1,	"\'",		1)
+CHAR("`",			1,	"`",		1)
+d68 6
+d75 7
+a81 3
+CHAR(" ",			1,	" ",		1)
+CHAR("~",			1,	" ",		1)
+CHAR("^",			1,	"",		0)
+d83 11
+a93 16
+CHAR(".",			1,	".",		1)
+CHAR("&",			1,	"",		0)
+CHAR("e",			1,	"\\",		1)
+CHAR("|",			1,	"",		0)
+CHAR("rC",			2, 	"}",		1)
+CHAR("lC",			2, 	"{",		1)
+CHAR("rB",			2, 	"]",		1)
+CHAR("lB",			2, 	"[",		1)
+CHAR("ra",			2, 	">",		1)
+CHAR("la",			2, 	"<",		1)
+CHAR("lq",			2, 	"``",		2)
+CHAR("rq",			2, 	"\'\'",		2)
+CHAR("oq",			2, 	"`",		1)
+CHAR("aq",			2, 	"\'",		1)
+CHAR("Bq",			2, 	",,",		2)
+CHAR("bq",			2, 	",,",		2)
+d95 1
+a95 1
+CHAR("->",			2, 	"->",		2)
+d97 3
+a99 10
+CHAR("ua",			2, 	"^",		1)
+CHAR("da",			2, 	"v",		1)
+CHAR("bu",			2, 	"o",		1)
+CHAR("ci",			2, 	"O",		1)
+CHAR("ba",			2, 	"|",		1)
+CHAR("bb",			2, 	"|",		1)
+CHAR("co",			2, 	"(C)",		3)
+CHAR("rg",			2, 	"(R)",		3)
+CHAR("tm",			2, 	"tm",		2)
+CHAR("<=",			2, 	"<=",		2)
+d101 10
+a110 12
+CHAR("==",			2, 	"==",		2)
+CHAR("!=",			2, 	"!=",		2)
+CHAR("+-",			2, 	"+-",		2)
+CHAR("if",			2, 	"oo",		2)
+CHAR("na",			2, 	"NaN",		3)
+CHAR("**",			2, 	"*",		1)
+CHAR("aa",			2, 	"\'",		1)
+CHAR("a~",			2, 	"~",		1)
+CHAR("ga",			2, 	"`",		1)
+CHAR("en",			2, 	"-",		1)
+CHAR("em",			2, 	"--",		2)
+CHAR("hy",			2, 	"-",		1)
+d112 1
+a112 8
+CHAR("Fc",			2,	">>",		2)
+CHAR("fo",			2,	"<",		1)
+CHAR("fc",			2,	">",		1)
+CHAR("lh",			2,	"<=",		2)
+CHAR("rh",			2,	"=>",		2)
+CHAR("ae",			2,	"ae",		2)
+CHAR("AE",			2,	"AE",		2)
+CHAR("oe",			2,	"oe",		2)
+d114 8
+a121 1
+CHAR("ss",			2,	"ss",		2)
+d132 13
+d155 2
+a156 44
+CHAR("~A",			2,	"A",		1)
+CHAR("~N",			2,	"N",		1)
+CHAR("~O",			2,	"O",		1)
+CHAR("~a",			2,	"a",		1)
+CHAR("~n",			2,	"n",		1)
+CHAR("~o",			2,	"o",		1)
+CHAR("lA",			2, 	"<=",		2)
+CHAR("rA",			2, 	"=>",		2)
+CHAR("uA",			2, 	"^",		1)
+CHAR("dA",			2, 	"v",		1)
+CHAR("hA",			2, 	"<=>",		3)
+CHAR(":A",			2,	"A",		1)
+CHAR(":E",			2,	"E",		1)
+CHAR(":I",			2,	"I",		1)
+CHAR(":O",			2,	"O",		1)
+CHAR(":U",			2,	"U",		1)
+CHAR(":a",			2,	"a",		1)
+CHAR(":e",			2,	"e",		1)
+CHAR(":i",			2,	"i",		1)
+CHAR(":o",			2,	"o",		1)
+CHAR(":u",			2,	"u",		1)
+CHAR(":y",			2,	"y",		1)
+CHAR("^A",			2,	"A",		1)
+CHAR("^E",			2,	"E",		1)
+CHAR("^I",			2,	"I",		1)
+CHAR("^O",			2,	"O",		1)
+CHAR("^U",			2,	"U",		1)
+CHAR("^a",			2,	"a",		1)
+CHAR("^e",			2,	"e",		1)
+CHAR("^i",			2,	"i",		1)
+CHAR("^o",			2,	"o",		1)
+CHAR("^u",			2,	"u",		1)
+CHAR("-D",			2,	"D",		1)
+CHAR("Sd",			2,	"o",		1)
+CHAR("TP",			2,	"b",		1)
+CHAR("Tp",			2,	"b",		1)
+CHAR(",C",			2,	"C",		1)
+CHAR(",c",			2,	"c",		1)
+CHAR("/L",			2,	"L",		1)
+CHAR("/l",			2,	"l",		1)
+CHAR("/O",			2,	"O",		1)
+CHAR("/o",			2,	"o",		1)
+CHAR("oA",			2,	"A",		1)
+CHAR("oa",			2,	"a",		1)
+d158 2
+d162 1
+d165 11
+a175 9
+CHAR("ho",			2,	",",		1)
+CHAR("ab",			2,	"`",		1)
+CHAR("a\"",			2,	"\"",		1)
+CHAR("a-",			2,	"-",		1)
+CHAR("Cs",			2,	"x",		1)
+CHAR("Do",			2,	"$",		1)
+CHAR("Po",			2,	"L",		1)
+CHAR("Ye",			2,	"Y",		1)
+CHAR("Fn",			2,	"f",		1)
+d177 14
+d194 24
+a217 2
+CHAR("Fi",			2,	"ffi",		3)
+CHAR("Fl",			2,	"ffl",		3)
+d220 6
+a225 3
+CHAR("dd",			2,	"=",		1)
+CHAR("dg",			2,	"-",		1)
+CHAR("ps",			2,	"9|",		2)
+d227 3
+a229 1
+CHAR("de",			2,	"o",		1)
+d231 12
+a243 25
+CHAR("~=",			2,	"~=",		2)
+CHAR("=~",			2,	"=~",		2)
+CHAR("AN",			2,	"^",		1)
+CHAR("OR",			2,	"v",		1)
+CHAR("no",			2,	"~",		1)
+CHAR("fa",			2,	"V",		1)
+CHAR("te",			2,	"3",		1)
+CHAR("Ah",			2,	"N",		1)
+CHAR("Im",			2,	"I",		1)
+CHAR("Re",			2,	"R",		1)
+CHAR("mo",			2,	"E",		1)
+CHAR("nm",			2,	"E",		1)
+CHAR("eq",			2,	"=",		1)
+CHAR("pl",			2,	"+",		1)
+CHAR("di",			2,	"-:-",		3)
+CHAR("mu",			2,	"x",		1)
+CHAR("(=",			2,	"(=",		2)
+CHAR("=)",			2,	"=)",		2)
+CHAR("ap",			2,	"~",		1)
+CHAR("pd",			2,	"a",		1)
+CHAR("gr",			2,	"V",		1)
+CHAR("ca",			2,	"(^)",		3)
+CHAR("cu",			2,	"U",		1)
+CHAR("es",			2,	"{}",		2)
+CHAR("st",			2,	"-)",		2)
+@
+
+
+1.12
+log
+@Fixed \% special char (via groff.7).
+Added some typographic special chars to mandoc_char.7.
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.in,v 1.11 2009/07/12 08:45:56 kristaps Exp $ */
+d19 4
+a22 4
+ * The ASCII translation table.  The left-hand side corresponds to the
+ * escape sequence (\x, \(xx and so on) whose length is listed second
+ * element.  The right-hand side is what's produced by the front-end,
+ * with the fourth element being its length.
+d24 6
+a29 1
+ * Be sure to escape strings.
+d32 211
+a242 194
+LINE("\\", 1,	  "\\", 1)
+LINE("\'", 1,	  "\'", 1)
+LINE("`", 1,	  "`", 1)
+LINE("%", 1,	  "", 0)
+LINE("-", 1,	  "-", 1)
+LINE(" ", 1,	  " ", 1)
+LINE("~", 1,	  " ", 1)
+LINE("^", 1,	  "", 0)
+LINE("0", 1,	  " ", 1)
+LINE(".", 1,	  ".", 1)
+LINE("&", 1,	  "", 0)
+LINE("e", 1,	  "\\", 1)
+LINE("q", 1,	  "\"", 1)
+LINE("|", 1,	  "", 0)
+LINE("rC", 2, 	  "}", 1)
+LINE("lC", 2, 	  "{", 1)
+LINE("rB", 2, 	  "]", 1)
+LINE("lB", 2, 	  "[", 1)
+LINE("ra", 2, 	  ">", 1)
+LINE("la", 2, 	  "<", 1)
+LINE("Lq", 2, 	  "``", 2)
+LINE("lq", 2, 	  "``", 2)
+LINE("Rq", 2, 	  "\'\'", 2)
+LINE("rq", 2, 	  "\'\'", 2)
+LINE("oq", 2, 	  "`", 1)
+LINE("aq", 2, 	  "\'", 1)
+LINE("Bq", 2, 	  ",,", 2)
+LINE("bq", 2, 	  ",,", 2)
+LINE("<-", 2, 	  "<-", 2)
+LINE("->", 2, 	  "->", 2)
+LINE("<>", 2, 	  "<>", 2)
+LINE("ua", 2, 	  "^", 1)
+LINE("da", 2, 	  "v", 1)
+LINE("bu", 2, 	  "o", 1)
+LINE("ci", 2, 	  "O", 1)
+LINE("Ba", 2, 	  "|", 1)
+LINE("ba", 2, 	  "|", 1)
+LINE("bb", 2, 	  "|", 1)
+LINE("co", 2, 	  "(C)", 3)
+LINE("rg", 2, 	  "(R)", 3)
+LINE("tm", 2, 	  "tm", 2)
+LINE("Am", 2, 	  "&", 1)
+LINE("Le", 2, 	  "<=", 2)
+LINE("<=", 2, 	  "<=", 2)
+LINE("Ge", 2, 	  ">=", 2)
+LINE(">=", 2, 	  ">=", 2)
+LINE("==", 2, 	  "==", 2)
+LINE("Ne", 2, 	  "!=", 2)
+LINE("!=", 2, 	  "!=", 2)
+LINE("Pm", 2, 	  "+-", 2)
+LINE("+-", 2, 	  "+-", 2)
+LINE("If", 2, 	  "infinity", 8)
+LINE("if", 2, 	  "oo", 2)
+LINE("Na", 2, 	  "NaN", 3)
+LINE("na", 2, 	  "NaN", 3)
+LINE("**", 2, 	  "*", 1)
+LINE("Gt", 2, 	  ">", 1)
+LINE("Lt", 2, 	  "<", 1)
+LINE("aa", 2, 	  "\'", 1)
+LINE("a~", 2, 	  "~", 1)
+LINE("ga", 2, 	  "`", 1)
+LINE("en", 2, 	  "-", 1)
+LINE("em", 2, 	  "--", 2)
+LINE("hy", 2, 	  "-", 1)
+LINE("Pi", 2, 	  "pi", 2)
+LINE("Fo", 2,	  "<<", 2)
+LINE("Fc", 2,	  ">>", 2)
+LINE("fo", 2,	  "<", 1)
+LINE("fc", 2,	  ">", 1)
+LINE("lh", 2,	  "<=", 2)
+LINE("rh", 2,	  "=>", 2)
+LINE("ae", 2,	  "ae", 2)
+LINE("AE", 2,	  "AE", 2)
+LINE("oe", 2,	  "oe", 2)
+LINE("OE", 2,	  "OE", 2)
+LINE("ss", 2,	  "ss", 2)
+LINE("\'A", 2,	  "A", 1)
+LINE("\'E", 2,	  "E", 1)
+LINE("\'I", 2,	  "I", 1)
+LINE("\'O", 2,	  "O", 1)
+LINE("\'U", 2,	  "U", 1)
+LINE("\'a", 2,	  "a", 1)
+LINE("\'e", 2,	  "e", 1)
+LINE("\'i", 2,	  "i", 1)
+LINE("\'o", 2,	  "o", 1)
+LINE("\'u", 2,	  "u", 1)
+LINE("`A", 2,	  "A", 1)
+LINE("`E", 2,	  "E", 1)
+LINE("`I", 2,	  "I", 1)
+LINE("`O", 2,	  "O", 1)
+LINE("`U", 2,	  "U", 1)
+LINE("`a", 2,	  "a", 1)
+LINE("`e", 2,	  "e", 1)
+LINE("`i", 2,	  "i", 1)
+LINE("`o", 2,	  "o", 1)
+LINE("`u", 2,	  "u", 1)
+LINE("~A", 2,	  "A", 1)
+LINE("~N", 2,	  "N", 1)
+LINE("~O", 2,	  "O", 1)
+LINE("~a", 2,	  "a", 1)
+LINE("~n", 2,	  "n", 1)
+LINE("~o", 2,	  "o", 1)
+LINE("lA", 2, 	  "<=", 2)
+LINE("rA", 2, 	  "=>", 2)
+LINE("uA", 2, 	  "^", 1)
+LINE("dA", 2, 	  "v", 1)
+LINE("hA", 2, 	  "<=>", 3)
+LINE(":A", 2,	  "A", 1)
+LINE(":E", 2,	  "E", 1)
+LINE(":I", 2,	  "I", 1)
+LINE(":O", 2,	  "O", 1)
+LINE(":U", 2,	  "U", 1)
+LINE(":a", 2,	  "a", 1)
+LINE(":e", 2,	  "e", 1)
+LINE(":i", 2,	  "i", 1)
+LINE(":o", 2,	  "o", 1)
+LINE(":u", 2,	  "u", 1)
+LINE(":y", 2,	  "y", 1)
+LINE("^A", 2,	  "A", 1)
+LINE("^E", 2,	  "E", 1)
+LINE("^I", 2,	  "I", 1)
+LINE("^O", 2,	  "O", 1)
+LINE("^U", 2,	  "U", 1)
+LINE("^a", 2,	  "a", 1)
+LINE("^e", 2,	  "e", 1)
+LINE("^i", 2,	  "i", 1)
+LINE("^o", 2,	  "o", 1)
+LINE("^u", 2,	  "u", 1)
+LINE("-D", 2,	  "D", 1)
+LINE("Sd", 2,	  "o", 1)
+LINE("TP", 2,	  "b", 1)
+LINE("Tp", 2,	  "b", 1)
+LINE(",C", 2,	  "C", 1)
+LINE(",c", 2,	  "c", 1)
+LINE("/L", 2,	  "L", 1)
+LINE("/l", 2,	  "l", 1)
+LINE("/O", 2,	  "O", 1)
+LINE("/o", 2,	  "o", 1)
+LINE("oA", 2,	  "A", 1)
+LINE("oa", 2,	  "a", 1)
+LINE("a^", 2,	  "^", 1)
+LINE("ac", 2,	  ",", 1)
+LINE("ad", 2,	  "\"", 1)
+LINE("ah", 2,	  "v", 1)
+LINE("ao", 2,	  "o", 1)
+LINE("ho", 2,	  ",", 1)
+LINE("ab", 2,	  "`", 1)
+LINE("a\"", 2,	  "\"", 1)
+LINE("a-", 2,	  "-", 1)
+LINE("Cs", 2,	  "x", 1)
+LINE("Do", 2,	  "$", 1)
+LINE("Po", 2,	  "L", 1)
+LINE("Ye", 2,	  "Y", 1)
+LINE("Fn", 2,	  "f", 1)
+LINE("ct", 2,	  "c", 1)
+LINE("ff", 2,	  "ff", 2)
+LINE("fi", 2,	  "fi", 2)
+LINE("fl", 2,	  "fl", 2)
+LINE("Fi", 2,	  "ffi", 3)
+LINE("Fl", 2,	  "ffl", 3)
+LINE("r!", 2,	  "i", 1)
+LINE("r?", 2,	  "c", 1)
+LINE("dd", 2,	  "=", 1)
+LINE("dg", 2,	  "-", 1)
+LINE("ps", 2,	  "9|", 2)
+LINE("sc", 2,	  "S", 1)
+LINE("de", 2,	  "o", 1)
+LINE("tf", 2,	  ".:.", 3)
+LINE("~~", 2,	  "~~", 2)
+LINE("~=", 2,	  "~=", 2)
+LINE("=~", 2,	  "=~", 2)
+LINE("AN", 2,	  "^", 1)
+LINE("OR", 2,	  "v", 1)
+LINE("no", 2,	  "~", 1)
+LINE("fa", 2,	  "V", 1)
+LINE("te", 2,	  "3", 1)
+LINE("Ah", 2,	  "N", 1)
+LINE("Im", 2,	  "I", 1)
+LINE("Re", 2,	  "R", 1)
+LINE("mo", 2,	  "E", 1)
+LINE("nm", 2,	  "E", 1)
+LINE("eq", 2,	  "=", 1)
+LINE("pl", 2,	  "+", 1)
+LINE("di", 2,	  "-:-", 3)
+LINE("mu", 2,	  "x", 1)
+LINE("(=", 2,	  "(=", 2)
+LINE("=)", 2,	  "=)", 2)
+LINE("ap", 2,	  "~", 1)
+LINE("pd", 2,	  "a", 1)
+LINE("gr", 2,	  "V", 1)
+LINE("ca", 2,	  "(^)", 3)
+LINE("cu", 2,	  "U", 1)
+LINE("es", 2,	  "{}", 2)
+LINE("st", 2,	  "-)", 2)
+@
+
+
+1.11
+log
+@Added \(hy symbol.
+Properly categorised \- as an arithmetic minus sign.
+Nd produces \(em instead of old \-.
+OpenBSD ifdef'd to use old \- after Nd (ok: jmc@@openbsd.org).
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.in,v 1.10 2009/06/10 20:18:43 kristaps Exp $ */
+d30 1
+a30 1
+LINE("%", 1,	  "%", 1)
+@
+
+
+1.10
+log
+@Fixed license email address.
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.in,v 1.9 2009/04/12 19:45:26 kristaps Exp $ */
+d90 1
+@
+
+
+1.9
+log
+@Using proper license template (const).
+@
+text
+@d1 1
+a1 1
+/*	$Id: ascii.in,v 1.8 2009/04/12 19:29:53 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+@
+
+
+1.8
+log
+@Made \(ss render as "ss", documented under COMPATIBILITY in mandoc_char.7.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.in,v 1.7 2009/04/12 19:24:10 kristaps Exp $ */
+d6 2
+a7 3
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+d9 7
+a15 8
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+@
+
+
+1.7
+log
+@Added \^ and \~ escapes (Joerg).
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.in,v 1.6 2009/03/27 13:44:24 kristaps Exp $ */
+d103 1
+a103 1
+LINE("ss", 2,	  "B", 1)
+@
+
+
+1.6
+log
+@Fixes in going over all OpenBSD manuals.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.in,v 1.5 2009/03/21 13:47:02 kristaps Exp $ */
+d35 2
+@
+
+
+1.5
+log
+@Freed more macros from zero-length restrictions.
+Fixed `Fn' spacing.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.in,v 1.4 2009/03/19 20:43:13 kristaps Exp $ */
+d35 1
+@
+
+
+1.4
+log
+@Finished all symbols.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.in,v 1.3 2009/03/19 18:30:26 kristaps Exp $ */
+d32 1
+@
+
+
+1.3
+log
+@Fixed mandoc read from stdin.
+Added some more groff_chars.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.in,v 1.2 2009/03/19 11:49:00 kristaps Exp $ */
+d186 32
+@
+
+
+1.2
+log
+@Many more ASCII escapes added.
+Stripped nroff punt from mdocterm.c.
+Fixed multiple-file handling for mdocterm.c.
+Cleared up mdoc.h API.
+@
+text
+@d1 1
+a1 1
+/* $Id: ascii.in,v 1.1 2009/03/16 22:19:19 kristaps Exp $ */
+d51 2
+d59 1
+d62 1
+d171 1
+d184 2
+@
+
+
+1.1
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: att.in,v 1.2 2009/03/06 14:24:49 kristaps Exp $ */
+d85 4
+a88 2
+LINE("<<", 2,	  "<<", 2)
+LINE(">>", 2,	  ">>", 2)
+d95 1
+d138 41
+@

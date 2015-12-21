@@ -1,0 +1,508 @@
+head	1.15;
+access;
+symbols
+	VERSION_1_9_5:1.15
+	VERSION_1_8_5:1.15
+	VERSION_1_8_1:1.15
+	VERSION_1_7_16:1.15
+	VERSION_1_7_15:1.15
+	OPENBSD_CHECKIN:1.15
+	VERSION_1_6_5:1.15
+	VERSION_1_5_1:1.15
+	VERSION_1_3_15:1.15
+	VERSION_1_3_6:1.15
+	VERSION_1_2_0:1.15
+	VERSION_1_0_2:1.10
+	VERSION_1_0_1:1.8;
+locks; strict;
+comment	@# @;
+
+
+1.15
+date	2008.12.15.01.54.58;	author kristaps;	state dead;
+branches;
+next	1.14;
+
+1.14
+date	2008.12.10.16.03.12;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2008.12.10.14.42.46;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2008.12.10.13.41.58;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2008.12.10.13.15.55;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2008.12.10.12.05.33;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2008.12.08.16.29.57;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2008.12.08.12.46.28;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2008.12.07.23.44.19;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2008.12.07.23.08.23;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2008.12.07.21.30.49;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.12.06.13.18.44;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.12.04.19.31.57;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.04.16.34.59;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.04.16.19.52;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.15
+log
+@Purged all old files in favour of new design.  Selective reintegration.
+@
+text
+@@
+
+
+1.14
+log
+@Ready for looking over by people.
+@
+text
+@a0 156
+.\"
+.Dd $Mdocdate$
+.Dt index 7 
+.Os LOCAL
+.\"
+.Sh NAME
+.Nm mdocml
+.Nd compile mdoc macros into mark-up language
+.\"
+.Sh DESCRIPTION
+The
+.Nm 
+utility compiles 
+.Xr mdoc 7
+macros, such as those inheriting from
+.Xr mdoc.samples 7 , 
+into XML or HTML documents.  Unlike other similar utilities such as 
+.Xr rman 1
+and
+.Xr man2html 1 ,
+.Nm
+is a full macro parser operating on source documents, specifically mdoc,
+validating input and compiling to HTML and XML output types.
+.Pp
+Downloads (source and ports) are available in the
+.Sx DOWNLOADS
+section.
+.Pp
+The
+.Nm
+utility is tested specifically on
+.Ox 
+manual sources as compiled and invoked both on 
+.Ox
+and Linux.
+.Nm
+is
+.Ud 
+.\"
+.Ss Validation
+In order to operate sanely,
+.Nm
+fully validates its input.  This includes, but is not limited to, the
+following checks:
+.Pp
+.Bl -enum -compact
+.It 
+valid special characters (such as
+.Sq \en
+and
+.Sq \et ) ,
+.It 
+sane macro scope (such as
+.Sq \&.Sh
+macros clobbering a pending
+.Sq \&.Bl
+scope),
+.It 
+valid predefined characters (such as \\*(>= and \\*q),
+.It
+correctly-ordered prelude and sections,
+.It
+sane macro argument values (such as those for 
+.Sq \&.Dt
+or
+.Sq \&.Sm ) ,
+.It
+valid manual sections and systems;
+.It
+and so on.
+.El
+.\"
+.Ss Filtering
+When a line of source has been parsed, it's passed to the output
+filters, which format and display data.  The two available filters are
+HTML and XML.
+.Pp
+The HTML filter has the following features:
+.Pp
+.Bl -enum -compact
+.It
+HTML-4.01 strict compliance;
+.It
+proper rendering of values in UTF-8, such as
+.Dq quotes
+and \*(>= predefined values;
+.It
+URI-appearing http://bsd.lv/ strings are correctly enclosed in link tags;
+.It
+CSS-dictated style with meaningful non-CSS defaults;
+.It
+and so on.
+.El
+.Pp
+The XML filter creates a correct XML tree with 
+.Dq block ,
+.Dq head ,
+.Dq body ,
+and
+.Dq inline
+namespaces corresponding to macro categories.  Namespace identifiers
+correspond to their definitions.  A sample is available at
+http://mdocml.bsd.lv/index.xml
+.Ns .
+.\" 
+.Sh DOWNLOADS
+Download 
+.Nm
+at http://mdocml.bsd.lv/mdocml.tar.gz
+.Ns . 
+.\" - UPDATE ME WITH EVERY RELEASE. ----------------------------------
+The current version is 1.0.3, dated 10/12/2008.
+.\" ------------------------------------------------------------------
+.Pp
+An OpenBSD port is available at http://mdocml.bsd.lv/mdocml-port.tar.gz
+.Ns .
+.Pp
+Previous versions are archived as mdocml-x.y.z.tar.gz, with the appropriate
+versions filled in.
+.\" 
+.Sh DOCUMENTS
+The manual for 
+.Nm
+is available at http://mdocml.bsd.lv/mdocml.html
+.Ns .
+.\" 
+.Sh EXAMPLES
+This page was produced as follows:
+.Pp
+.D1 % mdocml -fhtml -Wall -e -o index.html index.7
+.Pp
+The original mdoc source is at http://mdocml.bsd.lv/index.txt 
+.Ns .
+.\"
+.Sh SEE ALSO
+.Bl -ohang
+.It Xr rman Ns : http://polyglotman.sourceforge.net/rman.html
+Accepts either formatted roff output or source and produces HTML output.
+.It Xr man2html Ns : http://www.nongnu.org/man2html/
+Accepts formatted
+.Xr nroff 1
+text and produces HTML output.
+.It Xr man.cgi Ns : http://www.freebsd.org/cgi/man.cgi/source
+.Fx
+and
+.Ox 
+project CGI for producing HTML from nroff source.
+.It Xr roffit Ns : http://daniel.haxx.se/projects/roffit/
+HTML from roff manual source.  Dead project?
+.El
+.\"
+.Sh AUTHORS
+The
+.Nm
+utility was written by 
+.An Kristaps Dzonsons Aq kristaps@@kth.se .
+@
+
+
+1.13
+log
+@Made noop the default filter.
+@
+text
+@d82 1
+a82 1
+HTML-4.01 strict compliance.
+d84 1
+a84 1
+Proper render of values in UTF-8, such as
+d86 1
+a86 1
+and \*(>= predefined values.
+d88 1
+a88 1
+URI-appearing http://bsd.lv/ strings are correctly enclosed in link tags.
+d90 3
+a92 1
+CSS-dictated style with meaningful non-CSS defaults.
+d109 1
+a109 1
+at http://mdocml.bsd.lv/mdocml.tgz
+d115 4
+a118 1
+Previous versions are archived as mdocml-x.y.z.tgz, with the appropriate
+@
+
+
+1.12
+log
+@Sx to Sh anchors work.
+@
+text
+@d110 1
+a110 1
+The current version is 1.0.2, dated 10/12/2008.
+@
+
+
+1.11
+log
+@Put prelude checking into asec.
+@
+text
+@d25 4
+@
+
+
+1.10
+log
+@Versioning up.
+@
+text
+@d139 2
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d106 1
+a106 1
+The current version is 1.0.1, dated 08/12/2008.
+d121 4
+a124 1
+.D1 % mdocml -fhtml -W -e -o index.html index.7
+@
+
+
+1.8
+log
+@Added warnings for using macros in the wrong sections.
+@
+text
+@d57 1
+a57 1
+correctly-ordered document prelude,
+d106 1
+a106 1
+The current version is 1.0.0, dated 08/12/2008.
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d64 2
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d22 13
+a34 2
+acts directly on source documents, validating its input and producing a
+variety of outputs.
+d44 1
+a44 1
+special characters (such as
+d49 1
+a49 1
+macro scope (such as
+d55 1
+a55 1
+predefined characters (such as \\*(>= and \\*q),
+d59 1
+a59 1
+sane argument values (such as those for 
+a65 11
+.Pp
+The
+.Nm
+utility has been tested under Linux and 
+.Ox ,
+specifically on
+.Ox 
+manual source.
+.Nm
+is
+.Ud 
+d68 5
+a72 6
+When a block of source has been verified, it's passed to the front-end
+fitlers, which format and display data.  The
+.Nm
+utility is invoked with a filter by the
+.Fl f
+flag.  The HTML filter has the following features:
+d94 3
+a96 1
+correspond to their definitions.
+d106 3
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d55 12
+d74 1
+d83 1
+a83 1
+URI-appearing http://bsd.lv strings are correctly enclosed in link tags.
+d87 9
+d97 11
+a107 2
+.Sh ENVIRONMENT
+The
+d109 2
+a110 5
+utility has been tested under Linux and 
+.Ox ,
+specifically on
+.Ox 
+manual source.
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+.Nd compile manpage source into mark-up language
+d55 19
+a73 1
+.Pp
+d78 5
+a82 1
+utility has been tested under Linux and OpenBSD.
+d87 1
+a87 1
+.D1 % mdocml -fhtml -o index.html index.7
+d90 13
+a102 1
+TODO.
+d108 1
+a108 1
+.An Em Kristaps Dzonsons Aq kristaps@@kth.se .
+@
+
+
+1.3
+log
+@Moved charset recognition into the filter.
+@
+text
+@d44 1
+a44 2
+predefined characters (such as \\*(>= and \\*q, rendering as \*(>= and \*q,
+respectively),
+@
+
+
+1.2
+log
+@Character-set validation fixes.
+@
+text
+@d50 1
+a50 1
+.Sq \& Dt
+d52 1
+a52 1
+.Sq \& Sm ) ,
+@
+
+
+1.1
+log
+@Character-encoding tests.
+@
+text
+@d24 3
+a26 2
+.Ss Features
+In order to operate properly, 
+d44 2
+a45 1
+predefined characters (such as \\*(>= and \\*q),
+d48 7
+d56 1
+@

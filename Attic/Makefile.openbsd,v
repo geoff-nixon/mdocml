@@ -1,0 +1,125 @@
+head	1.4;
+access;
+symbols
+	VERSION_1_9_5:1.4
+	VERSION_1_8_5:1.4
+	VERSION_1_8_1:1.4
+	VERSION_1_8_0:1.3
+	VERSION_1_7_24:1.3
+	VERSION_1_7_23:1.3
+	VERSION_1_7_22:1.3
+	VERSION_1_7_21:1.3
+	VERSION_1_7_20:1.3
+	VERSION_1_7_19:1.3
+	VERSION_1_7_17:1.3
+	VERSION_1_7_16:1.3
+	VERSION_1_7_15:1.3
+	VERSION_1_7_14:1.3
+	VERSION_1_7_13:1.3
+	VERSION_1_7_12:1.3
+	OPENBSD_CHECKIN:1.3
+	VERSION_1_7_10:1.3
+	VERSION_1_7_5:1.3
+	VERSION_1_6_5:1.3
+	VERSION_1_6_2:1.2
+	VERSION_1_5_3:1.2
+	VERSION_1_5_1:1.2
+	VERSION_1_4_6:1.1
+	VERSION_1_4_5:1.1
+	VERSION_1_4_4:1.1
+	VERSION_1_4_2:1.1
+	VERSION_1_3_15:1.1
+	VERSION_1_3_13:1.1
+	VERSION_1_3_11:1.1
+	VERSION_1_3_10:1.1
+	VERSION_1_3_9:1.1
+	VERSION_1_3_8:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2009.07.17.13.23.26;	author kristaps;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2009.03.21.09.50.07;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.03.13.14.17.41;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.27.17.24.30;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@Removed automatic port generation, as the downstream versions should be used instead.
+@
+text
+@@
+
+
+1.3
+log
+@Category devel -> textproc.
+@
+text
+@a0 22
+# $OpenBSD$
+
+COMMENT=		mdoc macro compiler
+
+DISTNAME=		mdocml-@@VERSION@@
+CATEGORIES=		textproc
+
+HOMEPAGE=		http://mdocml.bsd.lv/
+
+MAINTAINER=		Kristaps Dzonsons <kristaps@@kth.se>
+
+# BSD
+PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_FTP=	Yes
+PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_DISTFILES_FTP=	Yes
+
+MASTER_SITES=		http://mdocml.bsd.lv/snapshots/
+
+WANTLIB=		c
+
+.include <bsd.port.mk>
+@
+
+
+1.2
+log
+@Removed "regression" for OpenBSD (broken).
+Added mdoc.7 to include-in-dist hook.
+@
+text
+@d6 1
+a6 1
+CATEGORIES=		devel
+@
+
+
+1.1
+log
+@Initial NetBSD pkgsrc.
+@
+text
+@a21 2
+NO_REGRESS=		No
+
+@

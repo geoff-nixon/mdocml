@@ -1,0 +1,519 @@
+head	1.14;
+access;
+symbols
+	VERSION_1_12_3:1.12
+	VERSION_1_12_2:1.12
+	VERSION_1_12:1.12.0.2
+	VERSION_1_12_1:1.11;
+locks; strict;
+comment	@# @;
+
+
+1.14
+date	2014.07.10.00.31.10;	author schwarze;	state dead;
+branches;
+next	1.13;
+
+1.13
+date	2014.04.18.10.30.37;	author schwarze;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2013.07.13.19.41.16;	author schwarze;	state Exp;
+branches
+	1.12.2.1;
+next	1.11;
+
+1.11
+date	2012.03.24.00.30.30;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2011.12.15.12.07.54;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2011.12.14.13.36.59;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2011.12.11.00.24.41;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2011.12.11.00.23.55;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2011.12.10.23.44.42;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2011.12.10.23.31.06;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.12.07.13.00.40;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.12.04.22.52.50;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.11.27.11.46.44;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.24.12.43.34;	author kristaps;	state Exp;
+branches;
+next	;
+
+1.12.2.1
+date	2014.08.05.17.07.56;	author schwarze;	state dead;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.14
+log
+@Full rewrite of the man.cgi(8) manual.
+
+Almost everything in the old man.cgi(7) was outdated in one way
+or another - catman, catman.conf, CACHE_DIR, /cache, manroots,
+replacing '/' with spaces, /tmp...
+
+Instead, document the HTML and URI interfaces, the output and the setup,
+and complete the listings of ENVIRONMENT variables and FILES.
+
+Using section 8 instead of section 7 because that's the usual place
+for CGI programs, see for example bgplg(8) and slowcgi(8).
+@
+text
+@@
+
+
+1.13
+log
+@Slowly, the dust begins to settle.
+We are keeping the traditional name makewhatis(8).
+No content change.
+@
+text
+@a0 122
+.Dd $Mdocdate: July 13 2013 $
+.Dt MAN.CGI 7
+.Os
+.Sh NAME
+.Nm man.cgi
+.Nd cgi for manpage query and display
+.Sh SYNOPSIS
+.Nm
+.Sh DESCRIPTION
+The
+.Nm
+script queries and displays manual pages.
+It interfaces with
+.Xr makewhatis 8
+databases cached with
+.Xr catman 8 .
+.Pp
+To use
+.Nm ,
+create a manual cache in
+.Xr catman 8 .
+Assign this directory to the environment variable
+.Ev CACHE_DIR ,
+defaulting to
+.Pa /cache/man.cgi .
+Copy the
+.Pa man.cgi
+script into your CGI directory (see
+.Sx FILES
+for other relevant files).
+.Pp
+Multiple
+.Xr catman 8
+trees may be managed by
+.Nm :
+directories under
+.Ev CACHE_DIR
+containing
+.Pa etc/catman.conf
+are identified as
+.Qq manroots .
+The path of a manroot under
+.Ev CACHE_DIR
+is converted to a name by replacing path separators with spaces.
+.Pp
+Thus, if
+.Ev CACHE_DIR
+is the default
+.Pa /cache/man.cgi ,
+the web-server is jailed to
+.Pa /var/www ,
+and cache subdirectories
+.Pa ./foo/1
+and
+.Pa ./bar/2
+contain
+.Pa etc/catman.conf ,
+.Nm
+will assign these to manroots
+.Qq foo 1
+and
+.Qq bar 2 ,
+respectively.
+These names will appear as choices when searching for manuals.
+.Pp
+If
+.Nm
+finds only one manroot, or none, then the selection box is omitted.
+If no manroot is specified during search, the first manroot is used by
+default.
+.Sh ENVIRONMENT
+.Bl -tag -width Ds
+.It Ev CACHE_DIR
+The absolute path of the
+.Xr catman 8
+cache directory.
+This must not have a trailing slash.
+.It Ev CSS_DIR
+Prepended to CSS file links in outputted HTML files.
+This must not have a trailing slash.
+.El
+.Sh FILES
+.Bl -tag -width Ds
+.It Pa etc/catman.conf
+Built by
+.Xr catman 8
+and must exist at least once under the configuration directory root.
+.It Pa man.css
+Should be visible in the server document root or within
+.Ev CSS_DIR .
+Included in each page after
+.Pa man-cgi.css ,
+ostensibly for
+.Xr mandoc 1
+HTML output styling.
+.It Pa man.cgi.css
+Should be visible in the server document root or within
+.Ev CSS_DIR .
+Included in each page, ostensibly for general
+.Nm
+styling.
+.El
+.Sh COMPATIBILITY
+The
+.Nm
+script is call-compatible with queries from the traditional
+.Pa man.cgi
+script by Wolfram Schneider.
+However, the results may not be quite the same.
+.Sh SEE ALSO
+.Xr catman 8 ,
+.Xr makewhatis 8
+.Sh AUTHORS
+The
+.Nm
+utility was written by
+.An Kristaps Dzonsons Aq Mt kristaps@@bsd.lv .
+.Sh CAVEATS
+If you're running in a jailed web-server, make sure the
+.Pa /tmp
+directory exists and is writable.
+The databases may need this for scratch space.
+@
+
+
+1.12
+log
+@For citing the names and email addresses of authors,
+consistently use the style ".An name Aq Mt email".
+
+Triggered by a question from Jan Stary <hans at stare dot cz>,
+ok jmc@@.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: March 24 2012 $
+d14 1
+a14 1
+.Xr mandocdb 8
+d112 1
+a112 1
+.Xr mandocdb 8
+@
+
+
+1.12.2.1
+log
+@remove another leftover file
+@
+text
+@d1 122
+@
+
+
+1.11
+log
+@Whitespace fix.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: December 15 2011 $
+d117 1
+a117 2
+.An Kristaps Dzonsons ,
+.Mt kristaps@@bsd.lv .
+@
+
+
+1.10
+log
+@Update man.cgi.7 with new CSS files.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: December 14 2011 $
+d92 1
+a92 1
+.Pa man-cgi.css , 
+@
+
+
+1.9
+log
+@Unbreak man.cgi's css directories when CSS_DIR isn't specified.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: December 11 2011 $
+d79 1
+a79 1
+Prepended to CSS file links.
+d89 7
+a95 5
+Must be visible in the server document root, used for styling source
+manual page output.
+.It Pa catman.css
+Must be visible in the server document root, used for styling
+pre-formatted manual page output.
+d97 3
+a99 1
+Must be visible in the server document root, used for general styling of
+d101 1
+a101 1
+search and error pages.
+@
+
+
+1.8
+log
+@Ugh, environmental variables are Ev, not Er.  Fix typos.
+@
+text
+@d77 1
+d80 1
+@
+
+
+1.7
+log
+@Note CSS_DIR in man.cgi.7.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: December 10 2011 $
+d73 1
+a73 1
+.It Er CACHE_DIR
+d77 1
+a77 1
+.It Er CSS_DIR
+@
+
+
+1.6
+log
+@Begin working on release notes.  Also whitespace-fix man.cgi.7.
+@
+text
+@d77 2
+@
+
+
+1.5
+log
+@Update man.cgi.7 to note compatibility and running with multiple roots.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: December 7 2011 $
+d42 1
+a42 1
+The path of a manroot under 
+@
+
+
+1.4
+log
+@Have a whatis/apropos mode, with the default (hitting enter within the
+expression text) be whatis.  This is a much nicer default than apropos,
+which can be scary.  While here, fix the cat.css location (erroneously
+put in the response page instead of the catman page) and add bits for
+a default style-sheet.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: December 4 2011 $
+d15 1
+a15 4
+databases for query and with
+.Xr mandoc 3
+for display.
+It operates over a cache of manuals generated by
+d20 1
+a20 1
+first create a manual cache in
+d22 15
+a36 3
+If your web-server is running in a jail, the cache directory must be
+within the jail.
+Set the environment variable
+d38 33
+a70 5
+to this directory, which defaults to
+.Pa /cache/man.cgi .
+If you're running in a jailed web-server, make sure the
+.Pa /tmp
+directory exists and is writable.
+d83 1
+a83 1
+and must exist under the configuration directory root.
+d95 7
+a102 1
+.Xr mandoc 3 ,
+d111 5
+@
+
+
+1.3
+log
+@Make catman and man.cgi understand the index type-field.
+Also make catman's man.conf be generated as catman.conf to avoid clobbering
+a real man.conf file.
+Finally, add a placeholder catman() function to man.cgi for preformatted
+manuals in the cache.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: November 27 2011 $
+d42 16
+a57 5
+The configuration file
+.Pa etc/catman.conf
+must exist within the cache directory.
+This is built by
+.Xr catman 8 .
+@
+
+
+1.2
+log
+@Removing INSECURE mode.  This is a work in progress!  Logic for
+formatting manpages is now linked into man.cgi.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate: November 24 2011 $
+d16 1
+a16 1
+.Xr mandoc 1
+d43 1
+a43 1
+.Pa etc/man.conf
+d48 1
+a48 2
+.Xr apropos 1 ,
+.Xr mandoc 1 ,
+@
+
+
+1.1
+log
+@Make a small manual for how to run man.cgi.
+This exists almost entirely to document that /tmp must exist in a jailed
+Apache directory for dbopen() not to fail.  This was a massive headache
+to track down.
+@
+text
+@d1 1
+a1 1
+.Dd $Mdocdate$
+d18 2
+a19 21
+This script operates in two modes: secure and insecure.
+.Bl -tag -width Ds
+.It insecure
+Act as a web-based
+.Xr apropos 1
+and
+.Xr mandoc 1 .
+This assumes full access to the file-system.
+It is not recommended for public-facing servers.
+.It secure
+Act on manual pages cached by
+.Xr manup 8 .
+A cached file tree is queried for pre-formatted manuals.
+.El
+.Pp
+To run in insecure mode, drop
+.Nm
+into your web-server's CGI directory.
+The environment variable
+.Ev INSECURE
+must be set.
+d21 4
+a24 3
+To run in secure mode, you must maintain a cache directory of
+preformatted manuals using
+.Xr manup 8 .
+a35 3
+.It Er INSECURE
+Run in insecure mode.
+Not recommended.
+d38 1
+a38 1
+.Xr manup 8
+d46 1
+a46 1
+.Xr manup 8 .
+d50 1
+a50 1
+.Xr manup 8 ,
+@

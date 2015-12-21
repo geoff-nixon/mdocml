@@ -1,0 +1,478 @@
+head	1.12;
+access;
+symbols
+	VERSION_1_12_4:1.6.2.7
+	VERSION_1_13_1:1.11
+	VERSION_1_12_3:1.6.2.3
+	VERSION_1_12_2:1.6.2.2
+	VERSION_1_12:1.6.0.2
+	VERSION_1_12_1:1.4
+	VERSION_1_12_0:1.2
+	VERSION_1_11_7:1.2
+	VERSION_1_11_6:1.2
+	VERSION_1_11_5:1.2
+	VERSION_1_11_4:1.1
+	VERSION_1_11_3:1.1
+	VERSION_1_11_2:1.1
+	VERSION_1_11_1:1.1
+	VERSION_1_10_10:1.1
+	VERSION_1_10_9:1.1
+	VERSION_1_10_8:1.1
+	VERSION_1_10_7:1.1
+	VERSION_1_10_6:1.1
+	VERSION_1_10_5:1.1
+	VERSION_1_10_5_PREPDF:1.1
+	VERSION_1_10_4:1.1
+	VERSION_1_10_3:1.1
+	VERSION_1_10_2:1.1
+	VERSION_1_10_1:1.1
+	VERSION_1_9_24:1.1
+	VERSION_1_9_25:1.1
+	VERSION_1_9_23:1.1
+	VERSION_1_9_22:1.1
+	VERSION_1_9_21:1.1
+	VERSION_1_9_20:1.1
+	VERSION_1_9_19:1.1
+	VERSION_1_9_18:1.1
+	VERSION_1_9_17:1.1
+	VERSION_1_9_16:1.1
+	VERSION_1_9_15:1.1
+	VERSION_1_9_15-pre2:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.12
+date	2014.08.16.19.00.01;	author schwarze;	state dead;
+branches;
+next	1.11;
+
+1.11
+date	2014.08.05.12.50.52;	author schwarze;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2014.08.04.23.44.29;	author schwarze;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2014.04.23.23.29.10;	author schwarze;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2014.01.04.13.40.01;	author schwarze;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2013.12.31.23.03.47;	author schwarze;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2012.06.08.10.47.17;	author kristaps;	state Exp;
+branches
+	1.6.2.1;
+next	1.5;
+
+1.5
+date	2012.03.24.06.23.14;	author joerg;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2011.12.13.11.26.12;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2011.12.02.00.21.56;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.07.24.18.15.14;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.01.01.17.14.27;	author kristaps;	state Exp;
+branches;
+next	;
+
+1.6.2.1
+date	2013.09.29.23.28.48;	author schwarze;	state Exp;
+branches;
+next	1.6.2.2;
+
+1.6.2.2
+date	2013.10.03.00.46.36;	author schwarze;	state Exp;
+branches;
+next	1.6.2.3;
+
+1.6.2.3
+date	2013.10.10.23.43.04;	author schwarze;	state Exp;
+branches;
+next	1.6.2.4;
+
+1.6.2.4
+date	2013.12.31.23.19.04;	author schwarze;	state Exp;
+branches;
+next	1.6.2.5;
+
+1.6.2.5
+date	2014.01.04.13.49.22;	author schwarze;	state Exp;
+branches;
+next	1.6.2.6;
+
+1.6.2.6
+date	2014.04.23.23.31.21;	author schwarze;	state Exp;
+branches;
+next	1.6.2.7;
+
+1.6.2.7
+date	2014.08.04.23.45.37;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.12
+log
+@Improve build system and autodetection.
+* Make ./configure standalone, that's what people expect.
+* Let people write a ./configure.local from scratch, not edit existing files.
+* Autodetect wchar, sqlite3, and manpath and act accordingly.
+* Autodetect the need for -L/usr/local/lib and -lutil.
+* Get rid of config.h.p{re,ost}, let ./configure only write what's needed.
+* Let ./configure write a Makefile.local snippet, that's quite flexible.
+@
+text
+@@
+
+
+1.11
+log
+@Since old SQLite versions do not have sqlite3_errstr(),
+provide a dummy fallback implementation.
+Do not bother to decode the error, SQLite error codes
+are not useful enough for that to be worthwhile.
+Note that using sqlite3_errmsg(db) would be a bad idea:
+On malloc() failure, db is NULL, which would cause a segfault.
+Issue noticed by kristaps@@.
+@
+text
+@a0 42
+#if !defined(__BEGIN_DECLS)
+#  ifdef __cplusplus
+#  define	__BEGIN_DECLS		extern "C" {
+#  else
+#  define	__BEGIN_DECLS
+#  endif
+#endif
+#if !defined(__END_DECLS)
+#  ifdef __cplusplus
+#  define	__END_DECLS		}
+#  else
+#  define	__END_DECLS
+#  endif
+#endif
+
+#ifndef HAVE_FGETLN
+extern	char	 *fgetln(FILE *, size_t *);
+#endif
+#ifndef HAVE_GETSUBOPT
+extern	int	  getsubopt(char **, char * const *, char **);
+extern	char	 *suboptarg;
+#endif
+#ifndef HAVE_REALLOCARRAY
+extern	void	 *reallocarray(void *, size_t, size_t);
+#endif
+#ifndef HAVE_SQLITE3_ERRSTR
+extern	const char *sqlite3_errstr(int);
+#endif
+#ifndef HAVE_STRCASESTR
+extern	char	 *strcasestr(const char *, const char *);
+#endif
+#ifndef HAVE_STRLCAT
+extern	size_t	  strlcat(char *, const char *, size_t);
+#endif
+#ifndef HAVE_STRLCPY
+extern	size_t	  strlcpy(char *, const char *, size_t);
+#endif
+#ifndef HAVE_STRSEP
+extern	char	 *strsep(char **, const char *);
+#endif
+
+#endif /* MANDOC_CONFIG_H */
+@
+
+
+1.10
+log
+@remove strnlen(3) compat, we no longer use it
+@
+text
+@d26 3
+@
+
+
+1.9
+log
+@prototype for reallocarray()
+@
+text
+@a34 3
+#ifndef HAVE_STRNLEN
+extern	size_t	  strnlen(const char *, size_t);
+#endif
+@
+
+
+1.8
+log
+@Even though strnlen(3) is required by POSIX 2008,
+Matthias Scheler reports than Solaris 10 lacks it.
+While here, sort the declarations in config.h
+and move the headers to the top.
+@
+text
+@d23 3
+@
+
+
+1.7
+log
+@Provide strcasestr(3) and strsep(3) for Solaris 10 compat;
+reported missing by Matthias Scheler <tron at NetBSD> via wiz@@.
+@
+text
+@a0 2
+#include <sys/types.h>
+
+d16 7
+d32 3
+a37 7
+#ifndef HAVE_GETSUBOPT
+extern	int	  getsubopt(char **, char * const *, char **);
+extern	char	 *suboptarg;
+#endif
+#ifndef HAVE_FGETLN
+extern	char	 *fgetln(FILE *, size_t *);
+#endif
+@
+
+
+1.6
+log
+@Remove lint from Makefile.
+Disable some parts of the build (man.cgi, etc.) while sqlite3 is being
+merged in nice and slow.
+Remove the bit swapping stuff in config.h.post.
+Remove apropos_db (replaced by mansearch).
+@
+text
+@d18 3
+d27 3
+@
+
+
+1.6.2.1
+log
+@Final tweaks for the release candidate:
+* Test for betoh64(), otherwise use be64toh().
+* In the Makefile, improve the explanation of STATIC.
+* Update VERSION and VDATE.
+@
+text
+@a17 3
+#ifndef HAVE_BETOH64
+#define betoh64(x) be64toh(x)
+#endif
+@
+
+
+1.6.2.2
+log
+@Byte-order functions for Mac OS X.
+Same patch sent in by Franco Fichtner and Kristaps Dzonsons.
+Tested by Franco Fichtner <franco at lastsummer dot de>.
+@
+text
+@d19 1
+a19 6
+#  if defined(__APPLE__)
+#    define betoh64(x) OSSwapBigToHostInt64(x)
+#    define htobe64(x) OSSwapHostToBigInt64(x)
+#  else
+#    define betoh64(x) be64toh(x)
+#  endif
+a20 1
+
+@
+
+
+1.6.2.3
+log
+@On __sun, use <sys/byteorder.h>, BE_64(x), and <db_185.h>.
+Thanks to Thomas Klausner <wiz at NetBSD dot org> for providing
+failing SmartOS build logs such that i could write this patch
+without access to a __sun system and for confirming that these
+patches help.
+@
+text
+@a21 3
+#  elif defined(__sun)
+#    define betoh64(x) BE_64(x)
+#    define htobe64(x) BE_64(x)
+@
+
+
+1.6.2.4
+log
+@Provide strcasestr(3) and strsep(3) for Solaris 10 compat;
+reported missing by Matthias Scheler <tron at NetBSD> via wiz@@.
+@
+text
+@a29 3
+#ifndef HAVE_STRCASESTR
+extern	char	 *strcasestr(const char *, const char *);
+#endif
+a35 3
+#ifndef HAVE_STRSEP
+extern	char	 *strsep(char **, const char *);
+#endif
+@
+
+
+1.6.2.5
+log
+@Merge strnlen(3) configuration bits.
+@
+text
+@d1 2
+a29 7
+#ifndef HAVE_FGETLN
+extern	char	 *fgetln(FILE *, size_t *);
+#endif
+#ifndef HAVE_GETSUBOPT
+extern	int	  getsubopt(char **, char * const *, char **);
+extern	char	 *suboptarg;
+#endif
+a38 3
+#ifndef HAVE_STRNLEN
+extern	size_t	  strnlen(const char *, size_t);
+#endif
+d42 7
+@
+
+
+1.6.2.6
+log
+@prototype for reallocarray()
+@
+text
+@a34 3
+#ifndef HAVE_REALLOCARRAY
+extern	void	 *reallocarray(void *, size_t, size_t);
+#endif
+@
+
+
+1.6.2.7
+log
+@remove strnlen(3) compat, we no longer use it
+@
+text
+@d47 3
+@
+
+
+1.5
+log
+@FreeBSD, NetBSD and DragonFly use the same names as Linux.
+Add dummy entry for OpenBSD and XXX entry for the rest.
+@
+text
+@a17 14
+#if defined(__APPLE__)
+# define htobe32(x) OSSwapHostToBigInt32(x)
+# define betoh32(x) OSSwapBigToHostInt32(x)
+# define htobe64(x) OSSwapHostToBigInt64(x)
+# define betoh64(x) OSSwapBigToHostInt64(x)
+#elif defined(__linux__) || defined(__FreeBSD__) || defined(__NetBSD__) || defined(__DragonFly__)
+# define betoh32(x) be32toh(x)
+# define betoh64(x) be64toh(x)
+#elif defined(__OpenBSD__)
+/* Nothing */
+#else
+/* XXX Fallback */
+#endif
+
+@
+
+
+1.4
+log
+@Compatibility support fgetln() on Linux.  This uses the BSD-licensed
+implementation from NetBSD tnftpd, Christos Zoulas (copyright message
+retained in the compat_fgetln.c file).  Patch verified by schwarze@@.  He
+notes that you'll need -pthread for -static binaries (due to libdb), so
+I've noted that -static should really only be used for BSD UNIX.
+
+While here, add some forgotten goop to the Makefile, building and
+cleaning extra manpages.
+@
+text
+@d23 1
+a23 1
+#elif defined(__linux__)
+d26 4
+@
+
+
+1.3
+log
+@This is a little gross: Linux and Apple need lots some cajoling to work
+with byte-swapping.  Tested on Mac.  Any Linux machines somebody can
+test on?  Anybody?
+
+While here, note the correct byte-size in mandocdb(8) and also note
+field widths and endianness.  The btree is now endian-neutral.
+@
+text
+@d38 3
+@
+
+
+1.2
+log
+@Scary-looking but otherwise harmless changes allow me to build for Windows.
+That is to say, with mingw32.  This amounts to the following:
+
+ (1) break compat.c into compat_strlcpy.c and compat_strlcat.c
+ (2) add compat_getsubopt.c (from OpenBSD) and test-getsubopt.c
+ (3) add test-strptime.c for HAVE_STRPTIME
+ (4) add ifdef bits here and there, where necessary
+ (5) remove some harmless unportable stuff (u_char, localtime_r)
+
+I've added the appropriate mdocml.zip target to the Makefile, too.
+@
+text
+@d18 10
+@
+
+
+1.1
+log
+@Big check-in of compatibility layer.  This should work on most major architectures. Thanks to Joerg Sonnenberger.
+@
+text
+@d24 4
+@

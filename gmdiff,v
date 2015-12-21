@@ -1,0 +1,147 @@
+head	1.4;
+access;
+symbols
+	VERSION_1_13_3:1.3
+	VERSION_1_13_2:1.2
+	VERSION_1_12_4:1.2
+	VERSION_1_13_1:1.2
+	VERSION_1_12_3:1.1
+	VERSION_1_12_2:1.1
+	VERSION_1_12:1.2.0.2;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2015.04.05.09.30.24;	author schwarze;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.02.03.15.52.08;	author schwarze;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.04.07.18.26.10;	author schwarze;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2013.06.22.08.54.13;	author schwarze;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@allow using an alternate mandoc binary
+@
+text
+@#!/bin/sh
+# Copyright (c) 2013, 2014 Ingo Schwarze <schwarze@@openbsd.org>
+#
+# Permission to use, copy, modify, and distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+if [ `id -u` -eq 0 ]; then
+  echo "$0: do not run me as root"
+  exit 1
+fi
+
+if [ $# -eq 0 ]; then
+  echo "usage: $0 -h manual_source_file ..."
+  exit 1
+fi
+
+if [ "X$1" = "X-h" ]; then
+  shift
+  export PATH="/usr/local/heirloom-doctools/bin:$PATH"
+  EQN="neqn"
+  ROFF="nroff"
+  MOPT="-Omdoc $MOPT"
+else
+  EQN="eqn -Tascii"
+  ROFF="groff -ww -Tascii -P -c"
+fi
+MOPT="-Werror $MOPT"
+
+while [ -n "$1" ]; do
+  file=$1
+  shift
+  echo " ========== $file ========== "
+  tbl $file | $EQN | $ROFF -mandoc 2> /tmp/roff.err > /tmp/roff.out
+  ${MANDOC:=mandoc} -Ios='OpenBSD ports' $MOPT $file \
+    2> /tmp/mandoc.err > /tmp/mandoc.out
+  for i in roff mandoc; do
+    [[ -s /tmp/$i.err ]] && echo "$i errors:" && cat /tmp/$i.err
+  done
+  diff -au /tmp/roff.out /tmp/mandoc.out 2>&1
+done
+
+exit 0
+@
+
+
+1.3
+log
+@minimal support for Heirloom nroff
+@
+text
+@d43 2
+a44 1
+  mandoc -Ios='OpenBSD ports' $MOPT $file 2> /tmp/mandoc.err > /tmp/mandoc.out
+@
+
+
+1.2
+log
+@Make it clear which errors come from which tool.
+joint work with sthen@@
+@
+text
+@d22 1
+a22 1
+  echo "usage: $0 manual_source_file ..."
+d26 12
+d42 3
+a44 3
+  tbl $file | groff -mandoc -Tascii -P -c 2> /tmp/groff.err > /tmp/groff.out
+  mandoc -Ios='OpenBSD ports' -Werror $file 2> /tmp/mandoc.err > /tmp/mandoc.out
+  for i in groff mandoc; do
+d47 1
+a47 1
+  diff -au /tmp/groff.out /tmp/mandoc.out 2>&1
+@
+
+
+1.1
+log
+@A very simple utility script to automatically compare groff and mandoc
+output on collections of manual source files.  I'm using this for quite
+some time now, and it has proven to be rather useful.
+
+Obviously, this will not be installed on user's systems.
+@
+text
+@d2 1
+a2 1
+# Copyright (c) 2013 Ingo Schwarze <schwarze@@openbsd.org>
+d30 5
+a34 2
+  tbl $file | groff -mandoc -Tascii -P -c 2>&1 > /tmp/groff.out
+  mandoc -Ios='OpenBSD ports' -Werror $file 2>&1 > /tmp/mandoc.out
+@

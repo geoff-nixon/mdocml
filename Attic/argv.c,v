@@ -1,0 +1,3182 @@
+head	1.58;
+access;
+symbols
+	VERSION_1_9_5:1.58
+	VERSION_1_8_5:1.58
+	VERSION_1_8_1:1.58
+	VERSION_1_7_16:1.58
+	VERSION_1_7_15:1.58
+	OPENBSD_CHECKIN:1.58
+	VERSION_1_7_5:1.57
+	VERSION_1_6_5:1.54
+	VERSION_1_6_2:1.53
+	VERSION_1_5_3:1.53
+	VERSION_1_5_1:1.51
+	VERSION_1_4_6:1.44
+	VERSION_1_4_5:1.44
+	VERSION_1_4_4:1.43
+	VERSION_1_4_2:1.41
+	VERSION_1_3_15:1.34
+	VERSION_1_3_13:1.34
+	VERSION_1_3_11:1.34
+	VERSION_1_3_10:1.34
+	VERSION_1_3_9:1.34
+	VERSION_1_3_8:1.33
+	VERSION_1_3_6:1.33
+	VERSION_1_3_5:1.31
+	VERSION_1_2_0:1.21
+	VERSION_1_1_0:1.13;
+locks; strict;
+comment	@ * @;
+
+
+1.58
+date	2009.03.31.13.50.19;	author kristaps;	state dead;
+branches;
+next	1.57;
+
+1.57
+date	2009.03.23.14.31.58;	author kristaps;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2009.03.23.14.22.11;	author kristaps;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2009.03.21.21.09.00;	author kristaps;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2009.03.21.09.42.07;	author kristaps;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2009.03.16.23.37.28;	author kristaps;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2009.03.16.22.19.19;	author kristaps;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2009.03.14.05.21.58;	author kristaps;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2009.03.12.16.30.50;	author kristaps;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2009.03.12.02.57.35;	author kristaps;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2009.03.11.00.39.58;	author kristaps;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2009.03.10.21.27.39;	author kristaps;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2009.03.10.15.01.54;	author kristaps;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2009.03.09.14.19.59;	author kristaps;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2009.03.09.13.17.49;	author kristaps;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2009.03.08.20.57.35;	author kristaps;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2009.03.08.20.50.12;	author kristaps;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2009.03.08.12.46.38;	author kristaps;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2009.03.08.12.40.27;	author kristaps;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2009.03.08.11.41.22;	author kristaps;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2009.03.06.14.13.47;	author kristaps;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2009.03.05.13.12.12;	author kristaps;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2009.03.05.12.08.53;	author kristaps;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.03.03.22.28.21;	author kristaps;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.02.28.12.16.02;	author kristaps;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.02.27.09.39.40;	author kristaps;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.02.26.14.56.27;	author kristaps;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.02.24.13.46.54;	author kristaps;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.02.24.11.43.13;	author kristaps;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.02.23.15.34.53;	author kristaps;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.02.23.15.19.47;	author kristaps;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.02.23.12.45.19;	author kristaps;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.01.22.14.56.21;	author kristaps;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.01.22.12.21.03;	author kristaps;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.01.21.17.56.32;	author kristaps;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.01.20.22.55.46;	author kristaps;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.01.20.20.56.21;	author kristaps;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.01.20.13.49.36;	author kristaps;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.01.20.13.44.05;	author kristaps;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.01.20.13.05.28;	author kristaps;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.01.20.12.51.28;	author kristaps;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.01.19.17.02.58;	author kristaps;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.01.17.20.10.36;	author kristaps;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.01.16.12.23.25;	author kristaps;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.01.16.11.50.54;	author kristaps;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.01.15.15.46.45;	author kristaps;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.01.12.16.39.57;	author kristaps;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.01.12.10.31.53;	author kristaps;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.01.09.15.07.04;	author kristaps;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.01.08.14.55.59;	author kristaps;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.01.05.17.57.07;	author kristaps;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.01.05.16.11.14;	author kristaps;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.01.02.14.06.16;	author kristaps;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.01.01.20.40.16;	author kristaps;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2008.12.30.19.06.03;	author kristaps;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2008.12.30.13.43.53;	author kristaps;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2008.12.28.00.34.20;	author kristaps;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2008.12.23.05.30.49;	author kristaps;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.58
+log
+@General clean-ups.
+@
+text
+@@
+
+
+1.57
+log
+@Linux fixes.
+@
+text
+@a0 857
+/* $Id: argv.c,v 1.56 2009/03/23 14:22:11 kristaps Exp $ */
+/*
+ * Copyright (c) 2008, 2009 Kristaps Dzonsons <kristaps@@openbsd.org>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the
+ * above copyright notice and this permission notice appear in all
+ * copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ * AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ */
+#include <sys/types.h>
+
+#include <assert.h>
+#include <ctype.h>
+#include <err.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "libmdoc.h"
+
+/*
+ * Routines to parse arguments of macros.  Arguments follow the syntax
+ * of `-arg [val [valN...]]'.  Arguments come in all types:  quoted
+ * arguments, multiple arguments per value, no-value arguments, etc.
+ *
+ * There's no limit to the number or arguments that may be allocated.
+ */
+
+#define	ARGS_QUOTED	(1 << 0)
+#define	ARGS_DELIM	(1 << 1)
+#define	ARGS_TABSEP	(1 << 2)
+#define	ARGS_ARGVLIKE	(1 << 3)
+
+#define	ARGV_NONE	(1 << 0)
+#define	ARGV_SINGLE	(1 << 1)
+#define	ARGV_MULTI	(1 << 2)
+#define	ARGV_OPT_SINGLE	(1 << 3)
+
+#define	MULTI_STEP	 5
+
+enum 	mwarn {
+	WQUOTPARM,
+	WARGVPARM,
+	WCOLEMPTY,
+	WTAILWS	
+};
+
+enum	merr {
+	EQUOTTERM,
+	EARGVAL	
+};
+
+static	int		 argv_a2arg(int, const char *);
+static	int		 args(struct mdoc *, int, int *, 
+				char *, int, char **);
+static	int		 argv(struct mdoc *, int, 
+				struct mdoc_argv *, int *, char *);
+static	int		 argv_single(struct mdoc *, int, 
+				struct mdoc_argv *, int *, char *);
+static	int		 argv_opt_single(struct mdoc *, int, 
+				struct mdoc_argv *, int *, char *);
+static	int		 argv_multi(struct mdoc *, int, 
+				struct mdoc_argv *, int *, char *);
+static	int		 pwarn(struct mdoc *, int, int, enum mwarn);
+static	int		 perr(struct mdoc *, int, int, enum merr);
+
+/* Per-argument flags. */
+
+static	int mdoc_argvflags[MDOC_ARG_MAX] = {
+	ARGV_NONE,	/* MDOC_Split */
+	ARGV_NONE,	/* MDOC_Nosplit */
+	ARGV_NONE,	/* MDOC_Ragged */
+	ARGV_NONE,	/* MDOC_Unfilled */
+	ARGV_NONE,	/* MDOC_Literal */
+	ARGV_NONE,	/* MDOC_File */
+	ARGV_SINGLE,	/* MDOC_Offset */
+	ARGV_NONE,	/* MDOC_Bullet */
+	ARGV_NONE,	/* MDOC_Dash */
+	ARGV_NONE,	/* MDOC_Hyphen */
+	ARGV_NONE,	/* MDOC_Item */
+	ARGV_NONE,	/* MDOC_Enum */
+	ARGV_NONE,	/* MDOC_Tag */
+	ARGV_NONE,	/* MDOC_Diag */
+	ARGV_NONE,	/* MDOC_Hang */
+	ARGV_NONE,	/* MDOC_Ohang */
+	ARGV_NONE,	/* MDOC_Inset */
+	ARGV_MULTI,	/* MDOC_Column */
+	ARGV_SINGLE,	/* MDOC_Width */
+	ARGV_NONE,	/* MDOC_Compact */
+	ARGV_OPT_SINGLE, /* MDOC_Std */
+	ARGV_NONE,	/* MDOC_Filled */
+	ARGV_NONE,	/* MDOC_Words */
+	ARGV_NONE,	/* MDOC_Emphasis */
+	ARGV_NONE,	/* MDOC_Symbolic */
+	ARGV_NONE	/* MDOC_Symbolic */
+};
+
+static	int mdoc_argflags[MDOC_MAX] = {
+	0, /* \" */
+	0, /* Dd */
+	0, /* Dt */
+	0, /* Os */
+	0, /* Sh */
+	0, /* Ss */ 
+	ARGS_DELIM, /* Pp */ 
+	ARGS_DELIM, /* D1 */
+	ARGS_DELIM, /* Dl */
+	0, /* Bd */
+	0, /* Ed */
+	0, /* Bl */
+	0, /* El */
+	0, /* It */
+	ARGS_DELIM, /* Ad */ 
+	ARGS_DELIM, /* An */
+	ARGS_DELIM, /* Ar */
+	ARGS_QUOTED, /* Cd */
+	ARGS_DELIM, /* Cm */
+	ARGS_DELIM, /* Dv */ 
+	ARGS_DELIM, /* Er */ 
+	ARGS_DELIM, /* Ev */ 
+	0, /* Ex */
+	ARGS_DELIM | ARGS_QUOTED, /* Fa */ 
+	0, /* Fd */ 
+	ARGS_DELIM, /* Fl */
+	ARGS_DELIM | ARGS_QUOTED, /* Fn */ 
+	ARGS_DELIM | ARGS_QUOTED, /* Ft */ 
+	ARGS_DELIM, /* Ic */ 
+	0, /* In */ 
+	ARGS_DELIM, /* Li */
+	0, /* Nd */ 
+	ARGS_DELIM, /* Nm */ 
+	ARGS_DELIM, /* Op */
+	0, /* Ot */
+	ARGS_DELIM, /* Pa */
+	0, /* Rv */
+	ARGS_DELIM | ARGS_ARGVLIKE, /* St */ 
+	ARGS_DELIM, /* Va */
+	ARGS_DELIM, /* Vt */ 
+	ARGS_DELIM, /* Xr */
+	ARGS_QUOTED, /* %A */
+	ARGS_QUOTED, /* %B */
+	ARGS_QUOTED, /* %D */
+	ARGS_QUOTED, /* %I */
+	ARGS_QUOTED, /* %J */
+	ARGS_QUOTED, /* %N */
+	ARGS_QUOTED, /* %O */
+	ARGS_QUOTED, /* %P */
+	ARGS_QUOTED, /* %R */
+	ARGS_QUOTED, /* %T */
+	ARGS_QUOTED, /* %V */
+	ARGS_DELIM, /* Ac */
+	0, /* Ao */
+	ARGS_DELIM, /* Aq */
+	ARGS_DELIM, /* At */
+	ARGS_DELIM, /* Bc */
+	0, /* Bf */ 
+	0, /* Bo */
+	ARGS_DELIM, /* Bq */
+	ARGS_DELIM, /* Bsx */
+	ARGS_DELIM, /* Bx */
+	0, /* Db */
+	ARGS_DELIM, /* Dc */
+	0, /* Do */
+	ARGS_DELIM, /* Dq */
+	ARGS_DELIM, /* Ec */
+	0, /* Ef */
+	ARGS_DELIM, /* Em */ 
+	0, /* Eo */
+	ARGS_DELIM, /* Fx */
+	ARGS_DELIM, /* Ms */
+	ARGS_DELIM, /* No */
+	ARGS_DELIM, /* Ns */
+	ARGS_DELIM, /* Nx */
+	ARGS_DELIM, /* Ox */
+	ARGS_DELIM, /* Pc */
+	ARGS_DELIM, /* Pf */
+	0, /* Po */
+	ARGS_DELIM, /* Pq */
+	ARGS_DELIM, /* Qc */
+	ARGS_DELIM, /* Ql */
+	0, /* Qo */
+	ARGS_DELIM, /* Qq */
+	0, /* Re */
+	0, /* Rs */
+	ARGS_DELIM, /* Sc */
+	0, /* So */
+	ARGS_DELIM, /* Sq */
+	0, /* Sm */
+	ARGS_DELIM, /* Sx */
+	ARGS_DELIM, /* Sy */
+	ARGS_DELIM, /* Tn */
+	ARGS_DELIM, /* Ux */
+	ARGS_DELIM, /* Xc */
+	0, /* Xo */
+	0, /* Fo */ 
+	0, /* Fc */ 
+	0, /* Oo */
+	ARGS_DELIM, /* Oc */
+	0, /* Bk */
+	0, /* Ek */
+	0, /* Bt */
+	0, /* Hf */
+	0, /* Fr */
+	0, /* Ud */
+	0, /* Lb */
+	0, /* Ap */
+	ARGS_DELIM, /* Lp */
+	ARGS_DELIM | ARGS_QUOTED, /* Lk */
+	ARGS_DELIM | ARGS_QUOTED, /* Mt */
+	ARGS_DELIM, /* Brq */
+	0, /* Bro */
+	ARGS_DELIM, /* Brc */
+	ARGS_QUOTED, /* %C */
+	0, /* Es */
+	0, /* En */
+	0, /* Dx */
+	ARGS_QUOTED, /* %Q */
+};
+
+
+/*
+ * Parse an argument from line text.  This comes in the form of -key
+ * [value0...], which may either have a single mandatory value, at least
+ * one mandatory value, an optional single value, or no value.
+ */
+int
+mdoc_argv(struct mdoc *mdoc, int line, int tok,
+		struct mdoc_arg **v, int *pos, char *buf)
+{
+	int		  i;
+	char		 *p, sv;
+	struct mdoc_argv tmp;
+	struct mdoc_arg	 *arg;
+
+	if (0 == buf[*pos])
+		return(ARGV_EOLN);
+
+	assert(' ' != buf[*pos]);
+
+	if ('-' != buf[*pos] || ARGS_ARGVLIKE & mdoc_argflags[tok])
+		return(ARGV_WORD);
+
+	/* Parse through to the first unescaped space. */
+
+	i = *pos;
+	p = &buf[++(*pos)];
+
+	assert(*pos > 0);
+
+	/* LINTED */
+	while (buf[*pos]) {
+		if (' ' == buf[*pos])
+			if ('\\' != buf[*pos - 1])
+				break;
+		(*pos)++;
+	}
+
+	/* XXX - save zeroed byte, if not an argument. */
+
+	sv = 0;
+	if (buf[*pos]) {
+		sv = buf[*pos];
+		buf[(*pos)++] = 0;
+	}
+
+	(void)memset(&tmp, 0, sizeof(struct mdoc_argv));
+	tmp.line = line;
+	tmp.pos = *pos;
+
+	/* See if our token accepts the argument. */
+
+	if (MDOC_ARG_MAX == (tmp.arg = argv_a2arg(tok, p))) {
+		/* XXX - restore saved zeroed byte. */
+		if (sv)
+			buf[*pos - 1] = sv;
+		if ( ! pwarn(mdoc, line, i, WARGVPARM))
+			return(ARGV_ERROR);
+		return(ARGV_WORD);
+	}
+
+	while (buf[*pos] && ' ' == buf[*pos])
+		(*pos)++;
+
+	if ( ! argv(mdoc, line, &tmp, pos, buf))
+		return(ARGV_ERROR);
+
+	if (NULL == (arg = *v)) {
+		if (NULL == (*v = calloc(1, sizeof(struct mdoc_arg))))
+			err(1, "calloc");
+		arg = *v;
+	} 
+
+	arg->argc++;
+	arg->argv = xrealloc(arg->argv, arg->argc * 
+			sizeof(struct mdoc_argv));
+
+	(void)memcpy(&arg->argv[(int)arg->argc - 1], 
+			&tmp, sizeof(struct mdoc_argv));
+
+	return(ARGV_ARG);
+}
+
+
+void
+mdoc_argv_free(struct mdoc_arg *p)
+{
+	int		 i, j;
+
+	if (NULL == p)
+		return;
+
+	if (p->refcnt) {
+		--(p->refcnt);
+		if (p->refcnt)
+			return;
+	}
+
+	assert(p->argc);
+
+	/* LINTED */
+	for (i = 0; i < (int)p->argc; i++) {
+		if (0 == p->argv[i].sz)
+			continue;
+		/* LINTED */
+		for (j = 0; j < (int)p->argv[i].sz; j++) 
+			free(p->argv[i].value[j]);
+
+		free(p->argv[i].value);
+	}
+
+	free(p->argv);
+	free(p);
+}
+
+
+
+static int
+perr(struct mdoc *mdoc, int line, int pos, enum merr code)
+{
+	char		*p;
+
+	p = NULL;
+
+	switch (code) {
+	case (EQUOTTERM):
+		p = "unterminated quoted parameter";
+		break;
+	case (EARGVAL):
+		p = "argument requires a value";
+		break;
+	}
+
+	assert(p);
+	return(mdoc_perr(mdoc, line, pos, p));
+}
+
+
+static int
+pwarn(struct mdoc *mdoc, int line, int pos, enum mwarn code)
+{
+	char		*p;
+	int		 c;
+
+	p = NULL;
+	c = WARN_SYNTAX;
+
+	switch (code) {
+	case (WQUOTPARM):
+		p = "unexpected quoted parameter";
+		break;
+	case (WARGVPARM):
+		p = "argument-like parameter";
+		break;
+	case (WCOLEMPTY):
+		p = "last list column is empty";
+		c = WARN_COMPAT;
+		break;
+	case (WTAILWS):
+		p = "trailing whitespace";
+		c = WARN_COMPAT;
+		break;
+	}
+
+	assert(p);
+	return(mdoc_pwarn(mdoc, line, pos, c, p));
+}
+
+
+int
+mdoc_args(struct mdoc *mdoc, int line, 
+		int *pos, char *buf, int tok, char **v)
+{
+	int		  fl, c, i;
+	struct mdoc_node *n;
+
+	fl = (0 == tok) ? 0 : mdoc_argflags[tok];
+
+	/* 
+	 * Override per-macro argument flags with context-specific ones.
+	 * As of now, this is only valid for `It' depending on its list
+	 * context.
+	 */
+
+	switch (tok) {
+	case (MDOC_It):
+		for (n = mdoc->last; n; n = n->parent)
+			if (MDOC_BLOCK == n->type && MDOC_Bl == n->tok)
+				break;
+
+		assert(n);
+		c = (int)(n->args ? n->args->argc : 0);
+		assert(c > 0);
+
+		/*
+		 * Using `Bl -column' adds ARGS_TABSEP to the arguments
+		 * and invalidates ARGS_DELIM.  Using `Bl -diag' allows
+		 * for quoted arguments.
+		 */
+
+		/* LINTED */
+		for (i = 0; i < c; i++) {
+			switch (n->args->argv[i].arg) {
+			case (MDOC_Column):
+				fl |= ARGS_TABSEP;
+				fl &= ~ARGS_DELIM;
+				i = c;
+				break;
+			case (MDOC_Diag):
+				fl |= ARGS_QUOTED;
+				i = c;
+				break;
+			default:
+				break;
+			}
+		}
+		break;
+	default:
+		break;
+	}
+
+	return(args(mdoc, line, pos, buf, fl, v));
+}
+
+
+static int
+args(struct mdoc *mdoc, int line, 
+		int *pos, char *buf, int fl, char **v)
+{
+	int		  i;
+	char		 *p, *pp;
+
+	assert(*pos > 0);
+
+	if (0 == buf[*pos])
+		return(ARGS_EOLN);
+
+	if ('\"' == buf[*pos] && ! (fl & ARGS_QUOTED))
+		if ( ! pwarn(mdoc, line, *pos, WQUOTPARM))
+			return(ARGS_ERROR);
+
+	if ( ! (fl & ARGS_ARGVLIKE) && '-' == buf[*pos]) 
+		if ( ! pwarn(mdoc, line, *pos, WARGVPARM))
+			return(ARGS_ERROR);
+
+	/* 
+	 * If the first character is a delimiter and we're to look for
+	 * delimited strings, then pass down the buffer seeing if it
+	 * follows the pattern of [[::delim::][ ]+]+.
+	 */
+
+	if ((fl & ARGS_DELIM) && mdoc_iscdelim(buf[*pos])) {
+		for (i = *pos; buf[i]; ) {
+			if ( ! mdoc_iscdelim(buf[i]))
+				break;
+			i++;
+			/* There must be at least one space... */
+			if (0 == buf[i] || ' ' != buf[i])
+				break;
+			i++;
+			while (buf[i] && ' ' == buf[i])
+				i++;
+		}
+		if (0 == buf[i]) {
+			*v = &buf[*pos];
+			return(ARGS_PUNCT);
+		}
+	}
+
+	/* First parse non-quoted strings. */
+
+	if ('\"' != buf[*pos] || ! (ARGS_QUOTED & fl)) {
+		*v = &buf[*pos];
+
+		/* 
+		 * Thar be dragons here!  If we're tab-separated, search
+		 * ahead for either a tab or the `Ta' macro.  
+		 * If a `Ta' is detected, it must be space-buffered before and
+		 * after.  If either of these hold true, then prune out the
+		 * extra spaces and call it an argument.
+		 */
+
+		if (ARGS_TABSEP & fl) {
+			/* Scan ahead to unescaped tab. */
+
+			p = strchr(*v, '\t');
+
+			/* Scan ahead to unescaped `Ta'. */
+
+			for (pp = *v; ; pp++) {
+				if (NULL == (pp = strstr(pp, "Ta")))
+					break;
+				if (pp > *v && ' ' != *(pp - 1))
+					continue;
+				if (' ' == *(pp + 2) || 0 == *(pp + 2))
+					break;
+			}
+
+			/* Choose delimiter tab/Ta. */
+
+			if (p && pp)
+				p = (p < pp ? p : pp);
+			else if ( ! p && pp)
+				p = pp;
+
+			/* Strip delimiter's preceding whitespace. */
+
+			if (p && p > *v) {
+				pp = p - 1;
+				while (pp > *v && ' ' == *pp)
+					pp--;
+				if (pp == *v && ' ' == *pp) 
+					*pp = 0;
+				else if (' ' == *pp)
+					*(pp + 1) = 0;
+			}
+
+			/* ...in- and proceding whitespace. */
+
+			if (p && ('\t' != *p)) {
+				*p++ = 0;
+				*p++ = 0;
+			} else if (p)
+				*p++ = 0;
+
+			if (p) {
+				while (' ' == *p)
+					p++;
+				if (0 != *p)
+					*(p - 1) = 0;
+				*pos += (int)(p - *v);
+			} 
+
+			if (p && 0 == *p)
+				if ( ! pwarn(mdoc, line, *pos, WCOLEMPTY))
+					return(0);
+			if (p && 0 == *p && p > *v && ' ' == *(p - 1))
+				if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+					return(0);
+
+			if (p)
+				return(ARGS_PHRASE);
+
+			/* Configure the eoln case, too. */
+
+			p = strchr(*v, 0);
+			assert(p);
+
+			if (p > *v && ' ' == *(p - 1))
+				if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+					return(0);
+			*pos += (int)(p - *v);
+
+			return(ARGS_PHRASE);
+		} 
+		
+		/* Do non-tabsep look-ahead here. */
+		
+		if ( ! (ARGS_TABSEP & fl))
+			while (buf[*pos]) {
+				if (' ' == buf[*pos])
+					if ('\\' != buf[*pos - 1])
+						break;
+				(*pos)++;
+			}
+
+		if (0 == buf[*pos])
+			return(ARGS_WORD);
+
+		buf[(*pos)++] = 0;
+
+		if (0 == buf[*pos])
+			return(ARGS_WORD);
+
+		if ( ! (ARGS_TABSEP & fl))
+			while (buf[*pos] && ' ' == buf[*pos])
+				(*pos)++;
+
+		if (buf[*pos])
+			return(ARGS_WORD);
+
+		if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+			return(ARGS_ERROR);
+
+		return(ARGS_WORD);
+	}
+
+	/*
+	 * If we're a quoted string (and quoted strings are allowed),
+	 * then parse ahead to the next quote.  If none's found, it's an
+	 * error.  After, parse to the next word.  
+	 */
+
+	*v = &buf[++(*pos)];
+
+	while (buf[*pos] && '\"' != buf[*pos])
+		(*pos)++;
+
+	if (0 == buf[*pos]) {
+		(void)perr(mdoc, line, *pos, EQUOTTERM);
+		return(ARGS_ERROR);
+	}
+
+	buf[(*pos)++] = 0;
+	if (0 == buf[*pos])
+		return(ARGS_QWORD);
+
+	while (buf[*pos] && ' ' == buf[*pos])
+		(*pos)++;
+
+	if (buf[*pos])
+		return(ARGS_QWORD);
+
+	if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+		return(ARGS_ERROR);
+
+	return(ARGS_QWORD);
+}
+
+
+static int
+argv_a2arg(int tok, const char *argv)
+{
+
+	/*
+	 * Parse an argument identifier from its text.  XXX - this
+	 * should really be table-driven to clarify the code.
+	 *
+	 * If you add an argument to the list, make sure that you
+	 * register it here with its one or more macros!
+	 */
+
+	switch (tok) {
+	case (MDOC_An):
+		if (xstrcmp(argv, "split"))
+			return(MDOC_Split);
+		else if (xstrcmp(argv, "nosplit"))
+			return(MDOC_Nosplit);
+		break;
+
+	case (MDOC_Bd):
+		if (xstrcmp(argv, "ragged"))
+			return(MDOC_Ragged);
+		else if (xstrcmp(argv, "unfilled"))
+			return(MDOC_Unfilled);
+		else if (xstrcmp(argv, "filled"))
+			return(MDOC_Filled);
+		else if (xstrcmp(argv, "literal"))
+			return(MDOC_Literal);
+		else if (xstrcmp(argv, "file"))
+			return(MDOC_File);
+		else if (xstrcmp(argv, "offset"))
+			return(MDOC_Offset);
+		else if (xstrcmp(argv, "compact"))
+			return(MDOC_Compact);
+		break;
+
+	case (MDOC_Bf):
+		if (xstrcmp(argv, "emphasis"))
+			return(MDOC_Emphasis);
+		else if (xstrcmp(argv, "literal"))
+			return(MDOC_Literal);
+		else if (xstrcmp(argv, "symbolic"))
+			return(MDOC_Symbolic);
+		break;
+
+	case (MDOC_Bk):
+		if (xstrcmp(argv, "words"))
+			return(MDOC_Words);
+		break;
+
+	case (MDOC_Bl):
+		if (xstrcmp(argv, "bullet"))
+			return(MDOC_Bullet);
+		else if (xstrcmp(argv, "dash"))
+			return(MDOC_Dash);
+		else if (xstrcmp(argv, "hyphen"))
+			return(MDOC_Hyphen);
+		else if (xstrcmp(argv, "item"))
+			return(MDOC_Item);
+		else if (xstrcmp(argv, "enum"))
+			return(MDOC_Enum);
+		else if (xstrcmp(argv, "tag"))
+			return(MDOC_Tag);
+		else if (xstrcmp(argv, "diag"))
+			return(MDOC_Diag);
+		else if (xstrcmp(argv, "hang"))
+			return(MDOC_Hang);
+		else if (xstrcmp(argv, "ohang"))
+			return(MDOC_Ohang);
+		else if (xstrcmp(argv, "inset"))
+			return(MDOC_Inset);
+		else if (xstrcmp(argv, "column"))
+			return(MDOC_Column);
+		else if (xstrcmp(argv, "width"))
+			return(MDOC_Width);
+		else if (xstrcmp(argv, "offset"))
+			return(MDOC_Offset);
+		else if (xstrcmp(argv, "compact"))
+			return(MDOC_Compact);
+		else if (xstrcmp(argv, "nested"))
+			return(MDOC_Nested);
+		break;
+	
+	case (MDOC_Rv):
+		/* FALLTHROUGH */
+	case (MDOC_Ex):
+		if (xstrcmp(argv, "std"))
+			return(MDOC_Std);
+		break;
+	default:
+		break;
+	}
+
+	return(MDOC_ARG_MAX);
+}
+
+
+static int
+argv_multi(struct mdoc *mdoc, int line, 
+		struct mdoc_argv *v, int *pos, char *buf)
+{
+	int		 c, ppos;
+	char		*p;
+
+	ppos = *pos;
+
+	for (v->sz = 0; ; v->sz++) {
+		if ('-' == buf[*pos])
+			break;
+		c = args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+		if (ARGS_ERROR == c)
+			return(0);
+		else if (ARGS_EOLN == c)
+			break;
+
+		if (0 == v->sz % MULTI_STEP)
+			v->value = xrealloc(v->value, 
+				(v->sz + MULTI_STEP) * sizeof(char *));
+		if (NULL == (v->value[(int)v->sz] = strdup(p)))
+			err(1, "strdup");
+	}
+
+	if (v->sz)
+		return(1);
+
+	return(perr(mdoc, line, ppos, EARGVAL));
+}
+
+
+static int
+argv_opt_single(struct mdoc *mdoc, int line, 
+		struct mdoc_argv *v, int *pos, char *buf)
+{
+	int		 c;
+	char		*p;
+
+	if ('-' == buf[*pos])
+		return(1);
+
+	c = args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+	if (ARGS_ERROR == c)
+		return(0);
+	if (ARGS_EOLN == c)
+		return(1);
+
+	v->sz = 1;
+	if (NULL == (v->value = calloc(1, sizeof(char *))))
+		err(1, "calloc");
+	if (NULL == (v->value[0] = strdup(p)))
+		err(1, "strdup");
+	return(1);
+}
+
+
+/*
+ * Parse a single, mandatory value from the stream.
+ */
+static int
+argv_single(struct mdoc *mdoc, int line, 
+		struct mdoc_argv *v, int *pos, char *buf)
+{
+	int		 c, ppos;
+	char		*p;
+
+	ppos = *pos;
+
+	c = args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+	if (ARGS_ERROR == c)
+		return(0);
+	if (ARGS_EOLN == c)
+		return(perr(mdoc, line, ppos, EARGVAL));
+
+	v->sz = 1;
+	if (NULL == (v->value = calloc(1, sizeof(char *))))
+		err(1, "calloc");
+	if (NULL == (v->value[0] = strdup(p)))
+		err(1, "strdup");
+	return(1);
+}
+
+
+/*
+ * Determine rules for parsing arguments.  Arguments can either accept
+ * no parameters, an optional single parameter, one parameter, or
+ * multiple parameters.
+ */
+static int
+argv(struct mdoc *mdoc, int line, 
+		struct mdoc_argv *v, int *pos, char *buf)
+{
+
+	v->sz = 0;
+	v->value = NULL;
+
+	switch (mdoc_argvflags[v->arg]) {
+	case (ARGV_SINGLE):
+		return(argv_single(mdoc, line, v, pos, buf));
+	case (ARGV_MULTI):
+		return(argv_multi(mdoc, line, v, pos, buf));
+	case (ARGV_OPT_SINGLE):
+		return(argv_opt_single(mdoc, line, v, pos, buf));
+	default:
+		/* ARGV_NONE */
+		break;
+	}
+
+	return(1);
+}
+@
+
+
+1.56
+log
+@First addition of -man macro support.
+Abstraction of mdoc.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.55 2009/03/21 21:09:00 kristaps Exp $ */
+d768 2
+a769 2
+
+		v->value[(int)v->sz] = xstrdup(p);
+@
+
+
+1.55
+log
+@Fixes to dynamic addition of Bl width.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.54 2009/03/21 09:42:07 kristaps Exp $ */
+d28 1
+a28 1
+#include "private.h"
+d297 2
+a298 1
+		*v = xcalloc(1, sizeof(struct mdoc_arg));
+d796 4
+a799 2
+	v->value = xcalloc(1, sizeof(char *));
+	v->value[0] = xstrdup(p);
+d823 4
+a826 2
+	v->value = xcalloc(1, sizeof(char *));
+	v->value[0] = xstrdup(p);
+@
+
+
+1.54
+log
+@Added %Q macro.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.53 2009/03/16 23:37:28 kristaps Exp $ */
+d333 1
+a333 1
+		for (j = 0; j < (int)p->argv[i].sz; j++)
+@
+
+
+1.53
+log
+@Changed e-mail address to @@openbsd.
+Cleaned up manual-page documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.52 2009/03/16 22:19:19 kristaps Exp $ */
+d226 1
+@
+
+
+1.52
+log
+@Fixed mdoc_phrase escape handling.
+Added MDOC_IGNDELIM (Pf, soon Li, etc.).
+macro_constant_delimited ignargs -> argv.c parsing.
+Renamed macro functions to correspond to ontologies.
+`Fo' and `St' made callable (compat documented).
+strings.sh deprecated (directly using CPP).
+Abstracted ASCII translation into ascii.{c,in}.
+ASCII table uses a self-reordering chained hashtable.
+Removed old regressions.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.51 2009/03/14 05:21:58 kristaps Exp $ */
+d3 1
+a3 1
+ * Copyright (c) 2008 Kristaps Dzonsons <kristaps@@kth.se>
+d225 1
+@
+
+
+1.51
+log
+@mdoc.3 refers to local mdoc.7.
+mdoc.7 includes its compatibility with system-dependent roff installations.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.50 2009/03/12 16:30:50 kristaps Exp $ */
+d48 2
+d223 2
+d245 1
+a245 1
+	assert( ! isspace((u_char)buf[*pos]));
+d247 1
+a247 1
+	if ('-' != buf[*pos])
+d250 2
+d259 1
+a259 1
+		if (isspace((u_char)buf[*pos])) 
+d265 1
+a265 5
+	/* 
+	 * XXX: save the nullified byte as we'll restore it if this
+	 * doesn't end up being a command after all.  This is a little
+	 * bit hacky.  I don't like it, but it works for now.
+	 */
+d277 1
+a277 5
+	/*
+	 * We now parse out the per-macro arguments.  XXX - this can be
+	 * made much cleaner using per-argument tables.  See argv_a2arg
+	 * for details.
+	 */
+d280 1
+a280 1
+		/* XXX - restore saved byte. */
+d288 1
+a288 1
+	while (buf[*pos] && isspace((u_char)buf[*pos]))
+a290 2
+	/* FIXME: whitespace if no value. */
+
+a446 2
+	/* Continue parsing the arguments themselves...  */
+
+d483 1
+a483 1
+			if (0 == buf[i] || ! isspace((u_char)buf[i]))
+d486 1
+a486 1
+			while (buf[i] && isspace((u_char)buf[i]))
+d502 3
+a504 4
+		 * ahead for either a tab or the `Ta' macro.  If a tab
+		 * is detected, it mustn't be escaped; if a `Ta' is
+		 * detected, it must be space-buffered before and after.
+		 * If either of these hold true, then prune out the
+d511 1
+a511 8
+			for (p = *v; ; p++) {
+				if (NULL == (p = strchr(p, '\t')))
+					break;
+				if (p == *v)
+					break;
+				if ('\\' != *(p - 1))
+					break;
+			}
+d586 1
+a586 1
+				if (isspace((u_char)buf[*pos]))
+d601 1
+a601 1
+			while (buf[*pos] && isspace((u_char)buf[*pos]))
+d633 1
+a633 1
+	while (buf[*pos] && isspace((u_char)buf[*pos]))
+d762 1
+a762 1
+		if (0 == v->sz % 5)
+d764 1
+a764 1
+				(v->sz + 5) * sizeof(char *));
+@
+
+
+1.50
+log
+@Added -nested (doesn't do anything).
+Added .%C.
+.Cd is now callable.
+Added .Rv -std.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.49 2009/03/12 02:57:35 kristaps Exp $ */
+d63 1
+a63 1
+static	int		 argv(struct mdoc *, int, int,
+d295 1
+a295 1
+	if ( ! argv(mdoc, tok, line, &tmp, pos, buf))
+d844 1
+a844 1
+argv(struct mdoc *mdoc, int tok, int line, 
+@
+
+
+1.49
+log
+@Brq/Bro/Brc fixed up and pretty.
+Cleaned up Aq/Sq use of escapes in term.c.
+Added initial -column support.
+Fixed argv returning ARGV_WORD and tokenising anyway.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.48 2009/03/11 00:39:58 kristaps Exp $ */
+d97 1
+a97 1
+	ARGV_SINGLE,	/* MDOC_Std */
+d101 1
+d220 1
+d740 2
+a846 1
+	int		 fl;
+a849 1
+	fl = mdoc_argvflags[v->arg];
+d851 1
+a851 13
+	/*
+	 * Override the default per-argument value.
+	 */
+
+	switch (tok) {
+	case (MDOC_Ex):
+		fl = ARGV_OPT_SINGLE;
+		break;
+	default:
+		break;
+	}
+
+	switch (fl) {
+@
+
+
+1.48
+log
+@Expanded perfect htab to use 27 * 26 * 3 space.
+Added Brq, Bro and Brc macros.
+Added lbrace and rbrace to special characters.
+Fixed spacing in braces.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.47 2009/03/10 21:27:39 kristaps Exp $ */
+d579 1
+a579 1
+				return(ARGS_WORD);
+d591 1
+a591 1
+			return(ARGS_WORD);
+d691 2
+@
+
+
+1.47
+log
+@Made sure saved value is initialised.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.46 2009/03/10 15:01:54 kristaps Exp $ */
+d216 3
+@
+
+
+1.46
+log
+@Bug-fix in mdoc_argv.
+Added some documentation to macro.c.
+Version-up.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.45 2009/03/09 14:19:59 kristaps Exp $ */
+d256 2
+a257 1
+	 * doesn't end up being a command after all.
+d260 1
+d277 3
+a279 2
+		/* Restore saved byte. */
+		buf[*pos - 1] = sv;
+@
+
+
+1.45
+log
+@Added `Mt' and `Lk' macros (NetBSD).
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.44 2009/03/09 13:17:49 kristaps Exp $ */
+d229 1
+a229 1
+	char		 *p;
+d254 7
+a260 1
+	if (buf[*pos])
+d262 1
+d275 2
+d587 1
+a587 1
+
+@
+
+
+1.44
+log
+@Easier integration into FreeBSD (sys/types.h, time.h, etc.).
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.43 2009/03/08 20:57:35 kristaps Exp $ */
+d213 3
+a215 1
+	0, /* Lp */
+@
+
+
+1.43
+log
+@Added `Lp' macro.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.42 2009/03/08 20:50:12 kristaps Exp $ */
+d19 2
+@
+
+
+1.42
+log
+@Added .Ap.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.41 2009/03/08 12:46:38 kristaps Exp $ */
+d211 1
+@
+
+
+1.41
+log
+@Fixed null-pointer dereference.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.40 2009/03/08 12:40:27 kristaps Exp $ */
+d210 1
+@
+
+
+1.40
+log
+@Memory fixes in new dynamic schema.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.39 2009/03/08 11:41:22 kristaps Exp $ */
+d296 3
+@
+
+
+1.39
+log
+@BROKEN CHECK-IN.  Wide-ranging updates.
+Removed libmdoc internal argv limit (all dynamic).
+Removed "data" union in mdoc_node (to be selectively re-added).
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.38 2009/03/06 14:13:47 kristaps Exp $ */
+d276 1
+a276 1
+		v = xcalloc(1, sizeof(struct mdoc_arg));
+d278 1
+a278 1
+	}
+d282 1
+a282 1
+			sizeof(struct mdoc_arg));
+d296 7
+a302 2
+	if (p->refcnt && --(p->refcnt) > 0)
+		return;
+d311 1
+d315 1
+a315 2
+	if (p->argc)
+		free(p->argv);
+d750 1
+a750 1
+		v->value[(int)v->sz] = p;
+d778 1
+a778 1
+	v->value[0] = p;
+d803 1
+a803 1
+	v->value[0] = p;
+@
+
+
+1.38
+log
+@Strings abstracted into dynamically-created C files.
+Added -V option.
+Deprecated README files.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.37 2009/03/05 13:12:12 kristaps Exp $ */
+d32 2
+d46 12
+d62 1
+a62 1
+				struct mdoc_arg *, int *, char *);
+d64 1
+a64 1
+				struct mdoc_arg *, int *, char *);
+d66 1
+a66 1
+				struct mdoc_arg *, int *, char *);
+d68 3
+a70 16
+				struct mdoc_arg *, int *, char *);
+static	int		 pwarn(struct mdoc *, int, int, int);
+static	int		 perr(struct mdoc *, int, int, int);
+
+/* Warning messages. */
+
+#define	WQUOTPARM	(0)
+#define	WARGVPARM	(1)
+#define	WCOLEMPTY	(2)
+#define	WTAILWS		(3)
+
+/* Error messages. */
+
+#define	EQUOTTERM	(0)
+#define	EARGVAL		(1)
+#define	EARGMANY	(2)
+d213 103
+d317 1
+a317 1
+perr(struct mdoc *mdoc, int line, int pos, int code)
+d319 3
+a321 1
+	int		 c;
+d325 1
+a325 2
+		c = mdoc_perr(mdoc, line, pos, 
+				"unterminated quoted parameter");
+d328 1
+a328 2
+		c = mdoc_perr(mdoc, line, pos, 
+				"argument requires a value");
+a329 7
+	case (EARGMANY):
+		c = mdoc_perr(mdoc, line, pos, 
+				"too many values for argument");
+		break;
+	default:
+		abort();
+		/* NOTREACHED */
+d331 3
+a333 1
+	return(c);
+d338 1
+a338 1
+pwarn(struct mdoc *mdoc, int line, int pos, int code)
+d340 1
+d343 3
+d348 1
+a348 2
+		c = mdoc_pwarn(mdoc, line, pos, WARN_SYNTAX, 
+				"unexpected quoted parameter");
+d351 1
+a351 2
+		c = mdoc_pwarn(mdoc, line, pos, WARN_SYNTAX, 
+				"argument-like parameter");
+d354 2
+a355 2
+		c = mdoc_pwarn(mdoc, line, pos, WARN_SYNTAX, 
+				"last list column is empty");
+d358 2
+a359 2
+		c = mdoc_pwarn(mdoc, line, pos, WARN_COMPAT, 
+				"trailing whitespace");
+a360 3
+	default:
+		abort();
+		/* NOTREACHED */
+d362 3
+a364 1
+	return(c);
+d390 1
+a390 1
+		c = (int)n->data.block.argc;
+d401 1
+a401 1
+			switch (n->data.block.argv[i].arg) {
+d415 1
+d725 1
+a725 1
+		struct mdoc_arg *v, int *pos, char *buf)
+a729 3
+	v->sz = 0;
+	v->value = xcalloc(MDOC_LINEARG_MAX, sizeof(char *));
+
+d732 1
+a732 1
+	for (v->sz = 0; v->sz < MDOC_LINEARG_MAX; v->sz++) {
+d736 1
+a736 2
+		if (ARGS_ERROR == c) {
+			free(v->value);
+d738 1
+a738 1
+		} else if (ARGS_EOLN == c)
+d740 5
+d748 1
+a748 1
+	if (0 < v->sz && v->sz < MDOC_LINEARG_MAX)
+d751 1
+a751 5
+	free(v->value);
+	if (0 == v->sz) 
+		return(perr(mdoc, line, ppos, EARGVAL));
+
+	return(perr(mdoc, line, ppos, EARGMANY));
+d757 1
+a757 1
+		struct mdoc_arg *v, int *pos, char *buf)
+d759 1
+a759 1
+	int		 c, ppos;
+a761 2
+	ppos = *pos;
+
+d783 1
+a783 1
+		struct mdoc_arg *v, int *pos, char *buf)
+d810 1
+a810 1
+		struct mdoc_arg *v, int *pos, char *buf)
+a843 82
+
+
+/*
+ * Parse an argument from line text.  This comes in the form of -key
+ * [value0...], which may either have a single mandatory value, at least
+ * one mandatory value, an optional single value, or no value.
+ */
+int
+mdoc_argv(struct mdoc *mdoc, int line, int tok,
+		struct mdoc_arg *v, int *pos, char *buf)
+{
+	int		 i;
+	char		*p;
+
+	(void)memset(v, 0, sizeof(struct mdoc_arg));
+
+	if (0 == buf[*pos])
+		return(ARGV_EOLN);
+
+	assert( ! isspace((u_char)buf[*pos]));
+
+	if ('-' != buf[*pos])
+		return(ARGV_WORD);
+
+	i = *pos;
+	p = &buf[++(*pos)];
+
+	v->line = line;
+	v->pos = *pos;
+
+	assert(*pos > 0);
+
+	/* LINTED */
+	while (buf[*pos]) {
+		if (isspace((u_char)buf[*pos])) 
+			if ('\\' != buf[*pos - 1])
+				break;
+		(*pos)++;
+	}
+
+	if (buf[*pos])
+		buf[(*pos)++] = 0;
+
+	/*
+	 * We now parse out the per-macro arguments.  XXX - this can be
+	 * made much cleaner using per-argument tables.  See argv_a2arg
+	 * for details.
+	 */
+
+	if (MDOC_ARG_MAX == (v->arg = argv_a2arg(tok, p))) {
+		if ( ! pwarn(mdoc, line, i, WARGVPARM))
+			return(ARGV_ERROR);
+		return(ARGV_WORD);
+	}
+
+	while (buf[*pos] && isspace((u_char)buf[*pos]))
+		(*pos)++;
+
+	/* FIXME: whitespace if no value. */
+
+	if ( ! argv(mdoc, tok, line, v, pos, buf))
+		return(ARGV_ERROR);
+
+	return(ARGV_ARG);
+}
+
+
+void
+mdoc_argv_free(int sz, struct mdoc_arg *arg)
+{
+	int		 i;
+
+	for (i = 0; i < sz; i++) {
+		if (0 == arg[i].sz) {
+			assert(NULL == arg[i].value);
+			continue;
+		}
+		assert(arg[i].value);
+		free(arg[i].value);
+	}
+}
+
+@
+
+
+1.37
+log
+@Cleaned up ctype functions (netbsd).
+Fixed .Ex/.Rv -std usage.
+Made Ar provide default value.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.36 2009/03/05 12:08:53 kristaps Exp $ */
+d37 1
+a94 37
+	ARGV_NONE,	/* MDOC_p1003_1_88 */
+	ARGV_NONE,	/* MDOC_p1003_1_90 */
+	ARGV_NONE,	/* MDOC_p1003_1_96 */
+	ARGV_NONE,	/* MDOC_p1003_1_2001 */
+	ARGV_NONE,	/* MDOC_p1003_1_2004 */
+	ARGV_NONE,	/* MDOC_p1003_1 */
+	ARGV_NONE,	/* MDOC_p1003_1b */
+	ARGV_NONE,	/* MDOC_p1003_1b_93 */
+	ARGV_NONE,	/* MDOC_p1003_1c_95 */
+	ARGV_NONE,	/* MDOC_p1003_1g_2000 */
+	ARGV_NONE,	/* MDOC_p1003_2_92 */
+	ARGV_NONE,	/* MDOC_p1387_2_95 */
+	ARGV_NONE,	/* MDOC_p1003_2 */
+	ARGV_NONE,	/* MDOC_p1387_2 */
+	ARGV_NONE,	/* MDOC_isoC_90 */
+	ARGV_NONE,	/* MDOC_isoC_amd1 */
+	ARGV_NONE,	/* MDOC_isoC_tcor1 */
+	ARGV_NONE,	/* MDOC_isoC_tcor2 */
+	ARGV_NONE,	/* MDOC_isoC_99 */
+	ARGV_NONE,	/* MDOC_ansiC */
+	ARGV_NONE,	/* MDOC_ansiC_89 */
+	ARGV_NONE,	/* MDOC_ansiC_99 */
+	ARGV_NONE,	/* MDOC_ieee754 */
+	ARGV_NONE,	/* MDOC_iso8802_3 */
+	ARGV_NONE,	/* MDOC_xpg3 */
+	ARGV_NONE,	/* MDOC_xpg4 */
+	ARGV_NONE,	/* MDOC_xpg4_2 */
+	ARGV_NONE,	/* MDOC_xpg4_3 */
+	ARGV_NONE,	/* MDOC_xbd5 */
+	ARGV_NONE,	/* MDOC_xcu5 */
+	ARGV_NONE,	/* MDOC_xsh5 */
+	ARGV_NONE,	/* MDOC_xns5 */
+	ARGV_NONE,	/* MDOC_xns5_2d2_0 */
+	ARGV_NONE,	/* MDOC_xcurses4_2 */
+	ARGV_NONE,	/* MDOC_susv2 */
+	ARGV_NONE,	/* MDOC_susv3 */
+	ARGV_NONE,	/* MDOC_svid4 */
+d139 1
+a139 1
+	ARGS_DELIM, /* St */ 
+d208 1
+d341 1
+a341 1
+	if ('-' == buf[*pos]) 
+a613 78
+	
+	case (MDOC_St):
+		if (xstrcmp(argv, "p1003.1-88"))
+			return(MDOC_p1003_1_88);
+		else if (xstrcmp(argv, "p1003.1-90"))
+			return(MDOC_p1003_1_90);
+		else if (xstrcmp(argv, "p1003.1-96"))
+			return(MDOC_p1003_1_96);
+		else if (xstrcmp(argv, "p1003.1-2001"))
+			return(MDOC_p1003_1_2001);
+		else if (xstrcmp(argv, "p1003.1-2004"))
+			return(MDOC_p1003_1_2004);
+		else if (xstrcmp(argv, "p1003.1"))
+			return(MDOC_p1003_1);
+		else if (xstrcmp(argv, "p1003.1b"))
+			return(MDOC_p1003_1b);
+		else if (xstrcmp(argv, "p1003.1b-93"))
+			return(MDOC_p1003_1b_93);
+		else if (xstrcmp(argv, "p1003.1c-95"))
+			return(MDOC_p1003_1c_95);
+		else if (xstrcmp(argv, "p1003.1g-2000"))
+			return(MDOC_p1003_1g_2000);
+		else if (xstrcmp(argv, "p1003.2-92"))
+			return(MDOC_p1003_2_92);
+		else if (xstrcmp(argv, "p1003.2-95"))
+			return(MDOC_p1387_2_95);
+		else if (xstrcmp(argv, "p1003.2"))
+			return(MDOC_p1003_2);
+		else if (xstrcmp(argv, "p1387.2-95"))
+			return(MDOC_p1387_2);
+		else if (xstrcmp(argv, "isoC-90"))
+			return(MDOC_isoC_90);
+		else if (xstrcmp(argv, "isoC-amd1"))
+			return(MDOC_isoC_amd1);
+		else if (xstrcmp(argv, "isoC-tcor1"))
+			return(MDOC_isoC_tcor1);
+		else if (xstrcmp(argv, "isoC-tcor2"))
+			return(MDOC_isoC_tcor2);
+		else if (xstrcmp(argv, "isoC-99"))
+			return(MDOC_isoC_99);
+		else if (xstrcmp(argv, "ansiC"))
+			return(MDOC_ansiC);
+		else if (xstrcmp(argv, "ansiC-89"))
+			return(MDOC_ansiC_89);
+		else if (xstrcmp(argv, "ansiC-99"))
+			return(MDOC_ansiC_99);
+		else if (xstrcmp(argv, "ieee754"))
+			return(MDOC_ieee754);
+		else if (xstrcmp(argv, "iso8802-3"))
+			return(MDOC_iso8802_3);
+		else if (xstrcmp(argv, "xpg3"))
+			return(MDOC_xpg3);
+		else if (xstrcmp(argv, "xpg4"))
+			return(MDOC_xpg4);
+		else if (xstrcmp(argv, "xpg4.2"))
+			return(MDOC_xpg4_2);
+		else if (xstrcmp(argv, "xpg4.3"))
+			return(MDOC_xpg4_3);
+		else if (xstrcmp(argv, "xbd5"))
+			return(MDOC_xbd5);
+		else if (xstrcmp(argv, "xcu5"))
+			return(MDOC_xcu5);
+		else if (xstrcmp(argv, "xsh5"))
+			return(MDOC_xsh5);
+		else if (xstrcmp(argv, "xns5"))
+			return(MDOC_xns5);
+		else if (xstrcmp(argv, "xns5.2d2.0"))
+			return(MDOC_xns5_2d2_0);
+		else if (xstrcmp(argv, "xcurses4.2"))
+			return(MDOC_xcurses4_2);
+		else if (xstrcmp(argv, "susv2"))
+			return(MDOC_susv2);
+		else if (xstrcmp(argv, "susv3"))
+			return(MDOC_susv3);
+		else if (xstrcmp(argv, "svid4"))
+			return(MDOC_svid4);
+		break;
+
+@
+
+
+1.36
+log
+@Added argv regression tests.
+Table-ised argument flags in argv.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.35 2009/03/03 22:28:21 kristaps Exp $ */
+d46 1
+a46 1
+static	int		 argv(struct mdoc *, int,
+d93 1
+a93 1
+	ARGV_OPT_SINGLE, /* MDOC_Std */
+d392 1
+a392 1
+			if (0 == buf[i] || ! isspace((int)buf[i]))
+d395 1
+a395 1
+			while (buf[i] && isspace((int)buf[i]))
+d503 1
+a503 1
+				if (isspace((int)buf[*pos]))
+d518 1
+a518 1
+			while (buf[*pos] && isspace((int)buf[*pos]))
+d550 1
+a550 1
+	while (buf[*pos] && isspace((int)buf[*pos]))
+d826 1
+a826 1
+argv(struct mdoc *mdoc, int line, 
+d829 1
+d833 1
+d835 13
+a847 1
+	switch (mdoc_argvflags[v->arg]) {
+d880 1
+a880 1
+	assert( ! isspace((int)buf[*pos]));
+d895 1
+a895 1
+		if (isspace((int)buf[*pos])) 
+d916 1
+a916 1
+	while (buf[*pos] && isspace((int)buf[*pos]))
+d921 1
+a921 1
+	if ( ! argv(mdoc, line, v, pos, buf))
+@
+
+
+1.35
+log
+@-diag fixed (allows quoted parameters)
+Versioned up.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.34 2009/02/28 12:16:02 kristaps Exp $ */
+d38 5
+d50 2
+d70 67
+d313 3
+a315 2
+	 * First see if we should use TABSEP (Bl -column).  This
+	 * invalidates the use of ARGS_DELIM.
+d318 2
+a319 1
+	if (MDOC_It == tok) {
+d321 3
+a323 3
+			if (MDOC_BLOCK == n->type)
+				if (MDOC_Bl == n->tok)
+					break;
+d328 6
+d350 2
+d354 2
+d567 8
+d771 28
+d811 1
+a811 1
+		return(perr(mdoc, line, ppos,  EARGVAL));
+d820 5
+d833 2
+a834 6
+	switch (v->arg) {
+	case(MDOC_Std):
+		/* FALLTHROUGH */
+	case(MDOC_Width):
+		/* FALLTHROUGH */
+	case(MDOC_Offset):
+d836 1
+a836 1
+	case(MDOC_Column):
+d838 2
+d841 1
+d849 5
+d890 6
+@
+
+
+1.34
+log
+@Fixed delimiter end-of-line parsing.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.33 2009/02/27 09:39:40 kristaps Exp $ */
+d254 13
+a266 5
+			if (MDOC_Column != n->data.block.argv[i].arg)
+				continue;
+			fl |= ARGS_TABSEP;
+			fl &= ~ARGS_DELIM;
+			break;
+@
+
+
+1.33
+log
+@Lintified sources.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.32 2009/02/26 14:56:27 kristaps Exp $ */
+d297 4
+@
+
+
+1.32
+log
+@Lists (scoped elements) now put delims in-scope.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.31 2009/02/24 13:46:54 kristaps Exp $ */
+d375 1
+a375 1
+				*pos += p - *v;
+d396 1
+a396 1
+			*pos += p - *v;
+d650 1
+a650 1
+		v->value[v->sz] = p;
+@
+
+
+1.31
+log
+@Character-encoding checked for all text (arguments/values).
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.30 2009/02/24 11:43:13 kristaps Exp $ */
+d77 1
+a77 1
+	ARGS_DELIM, /* It */
+@
+
+
+1.30
+log
+@Escape-sequence validation in place (for nodes).
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.29 2009/02/23 15:34:53 kristaps Exp $ */
+d270 1
+a270 1
+	int		  i, c;
+d293 2
+a294 2
+		for (i = *pos; (c = buf[i]); ) {
+			if ( ! mdoc_iscdelim(c))
+d297 1
+a297 4
+			if (0 == buf[i] || ! isspace(c))
+				break;
+			i++;
+			while (buf[i] && isspace(c))
+d404 2
+a405 2
+			while ((c = buf[*pos])) {
+				if (isspace(c))
+@
+
+
+1.29
+log
+@Compiles fine on NetBSD now, too.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.28 2009/02/23 15:19:47 kristaps Exp $ */
+d38 1
+a38 1
+static	int		 lookup(int, const char *);
+d469 1
+a469 1
+lookup(int tok, const char *argv)
+d750 1
+a750 1
+	if (MDOC_ARG_MAX == (v->arg = lookup(tok, p))) {
+@
+
+
+1.28
+log
+@Adding revamped webpage.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.27 2009/02/23 12:45:19 kristaps Exp $ */
+d718 1
+a718 1
+	int		 i, ppos;
+a760 1
+	ppos = *pos;
+@
+
+
+1.27
+log
+@More in-file documentation and Linux-isation.
+Moved mdoc_macros table definition into macro.c, where it belongs.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.26 2009/01/22 14:56:21 kristaps Exp $ */
+a46 2
+static	int		 postargv(struct mdoc *, int, 
+				const struct mdoc_arg *, int);
+d60 2
+a61 3
+#define	EOFFSET		(1)
+#define	EARGVAL		(2)
+#define	EARGMANY	(3)
+a182 4
+	case (EOFFSET):
+		c = mdoc_perr(mdoc, line, pos, 
+				"invalid value for offset argument");
+		break;
+a632 27
+postargv(struct mdoc *mdoc, int line, const struct mdoc_arg *v, int pos)
+{
+
+	switch (v->arg) {
+	case (MDOC_Offset):
+		assert(v->value);
+		assert(v->value[0]);
+		if (xstrcmp(v->value[0], "left"))
+			break;
+		if (xstrcmp(v->value[0], "right"))
+			break;
+		if (xstrcmp(v->value[0], "center"))
+			break;
+		if (xstrcmp(v->value[0], "indent"))
+			break;
+		if (xstrcmp(v->value[0], "indent-two"))
+			break;
+		return(perr(mdoc, line, pos, EOFFSET));
+	default:
+		break;
+	}
+
+	return(1);
+}
+
+
+static int
+a763 2
+	if ( ! postargv(mdoc, line, v, ppos))
+		return(ARGV_ERROR);
+@
+
+
+1.26
+log
+@Fix-ups to macro.c.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.25 2009/01/22 12:21:03 kristaps Exp $ */
+d29 3
+a31 4
+ * Parse arguments and parameters of macros.  Arguments follow the
+ * syntax of `-arg [val [valN...]]', while parameters are free-form text
+ * following arguments (if any).  This file must correctly handle the
+ * strange punctuation rules dictated by groff.
+@
+
+
+1.25
+log
+@Finished proper parsing of -column macros.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.24 2009/01/21 17:56:32 kristaps Exp $ */
+d40 3
+a42 1
+static	int		 parse(struct mdoc *, int,
+d44 1
+a44 1
+static	int		 parse_single(struct mdoc *, int, 
+d46 1
+a46 1
+static	int		 parse_multi(struct mdoc *, int, 
+d48 1
+a48 1
+static	int		 postparse(struct mdoc *, int, 
+d53 2
+d60 2
+d241 1
+a241 2
+	int		  i, c, fl;
+	char		 *p, *pp;
+a243 5
+	assert(*pos > 0);
+
+	if (0 == buf[*pos])
+		return(ARGS_EOLN);
+
+a245 8
+	if ('\"' == buf[*pos] && ! (fl & ARGS_QUOTED))
+		if ( ! pwarn(mdoc, line, *pos, WQUOTPARM))
+			return(ARGS_ERROR);
+
+	if ('-' == buf[*pos]) 
+		if ( ! pwarn(mdoc, line, *pos, WARGVPARM))
+			return(ARGS_ERROR);
+
+d259 2
+d266 1
+d270 24
+d396 3
+d401 7
+a407 9
+			if (NULL == p) {
+				p = strchr(*v, 0);
+				assert(p);
+
+				if (p > *v && ' ' == *(p - 1))
+					if ( ! pwarn(mdoc, line, *pos, WTAILWS))
+						return(0);
+				*pos += p - *v;
+			}
+d641 1
+a641 1
+postparse(struct mdoc *mdoc, int line, const struct mdoc_arg *v, int pos)
+d668 1
+a668 1
+parse_multi(struct mdoc *mdoc, int line, 
+d682 1
+a682 1
+		c = mdoc_args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+d703 1
+a703 1
+parse_single(struct mdoc *mdoc, int line, 
+d711 1
+a711 1
+	c = mdoc_args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+d725 1
+a725 1
+parse(struct mdoc *mdoc, int line, 
+d738 1
+a738 1
+		return(parse_single(mdoc, line, v, pos, buf));
+d740 1
+a740 1
+		return(parse_multi(mdoc, line, v, pos, buf));
+d754 1
+a754 1
+	char		*argv;
+d767 1
+a767 1
+	argv = &buf[++(*pos)];
+d773 2
+d785 1
+a785 1
+	if (MDOC_ARG_MAX == (v->arg = lookup(tok, argv))) {
+d797 1
+a797 1
+	if ( ! parse(mdoc, line, v, pos, buf))
+d799 1
+a799 1
+	if ( ! postparse(mdoc, line, v, ppos))
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.23 2009/01/20 22:55:46 kristaps Exp $ */
+d49 1
+d53 7
+d172 30
+d215 8
+a366 3
+				else if (0 == *p) 
+					if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_SYNTAX, "empty final token")) /* FIXME: verbiage */
+						return(0);
+d370 7
+d383 3
+a385 3
+				/*if (p > *v && ' ' == *(p - 1))
+					Warn about whitespace. */
+
+d417 1
+a417 1
+		if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_COMPAT, "whitespace at end-of-line"))
+d435 1
+a435 1
+		(void)mdoc_perr(mdoc, line, *pos, "unterminated quoted parameter");
+d449 1
+a449 1
+	if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_COMPAT, "whitespace at end-of-line"))
+d638 1
+a638 1
+		return(mdoc_perr(mdoc, line, pos, "invalid offset value"));
+d675 4
+a678 3
+	return(mdoc_perr(mdoc, line, ppos, 0 == v->sz ?
+				"argument requires a value" :
+				"too many values to argument"));
+d695 1
+a695 1
+		return(mdoc_perr(mdoc, line, ppos,  "argument requires a value"));
+d764 1
+a764 1
+		if ( ! mdoc_pwarn(mdoc, line, i, WARN_SYNTAX, "argument-like parameter"))
+@
+
+
+1.23
+log
+@Added regression tests (just for prologue, for now).
+Minor fixes in parsing prologue.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.22 2009/01/20 20:56:21 kristaps Exp $ */
+d35 3
+a37 1
+/* FIXME: .It called with -column and quoted arguments. */
+d48 1
+d50 2
+a51 3
+#define	ARGS_QUOTED	(1 << 0)
+#define	ARGS_DELIM	(1 << 1)
+#define	ARGS_TABSEP	(1 << 2)
+d163 22
+d189 2
+a190 1
+	int		  i, fl;
+d193 1
+a193 5
+	fl = 0 == tok ? 0 : mdoc_argflags[tok];
+	if (MDOC_It == tok) {
+		n = mdoc->last->parent;
+		/* FIXME: scan for ARGS_TABSEP. */
+	}
+d198 2
+d201 1
+a201 1
+		if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_SYNTAX, "unexpected quoted parameter"))
+d205 1
+a205 1
+		if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_SYNTAX, "argument-like parameter"))
+d208 27
+d236 2
+a237 6
+		/* 
+		 * If ARGS_DELIM, return ARGS_PUNCT if only space-separated
+		 * punctuation remains.  
+		 */
+		for (i = *pos; buf[i]; ) {
+			if ( ! mdoc_iscdelim(buf[i]))
+d240 1
+a240 1
+			if (0 == buf[i] || ! isspace((int)buf[i]))
+d243 1
+a243 1
+			while (buf[i] && isspace((int)buf[i]))
+d252 1
+a252 1
+	/* Parse routine for non-quoted string. */
+a253 1
+	assert(*pos > 0);
+d257 11
+a267 1
+		/* FIXME: UGLY tab-sep processing. */
+d269 6
+a274 3
+		if (ARGS_TABSEP & fl)
+			while (buf[*pos]) {
+				if ('\t' == buf[*pos])
+a275 10
+				if ('T' == buf[*pos]) {
+					(*pos)++;
+					if (0 == buf[*pos])
+						break;
+					if ('a' == buf[*pos]) {
+						buf[*pos - 1] = 0;
+						break;
+					}
+				}
+				(*pos)++;
+d277 70
+a346 3
+		else {
+			while (buf[*pos]) {
+				if (isspace((int)buf[*pos]))
+a350 1
+		}
+@
+
+
+1.22
+log
+@In-progress migration to ARGV separation.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.21 2009/01/20 13:49:36 kristaps Exp $ */
+a171 1
+
+@
+
+
+1.21
+log
+@Lint- and NetBSD-compiler checks.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.20 2009/01/20 13:44:05 kristaps Exp $ */
+d47 113
+d162 2
+a163 1
+mdoc_args(struct mdoc *mdoc, int line, int *pos, char *buf, int fl, char **v)
+d165 9
+a173 1
+	int		 i;
+@
+
+
+1.20
+log
+@Re-merged old port-building routines.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.19 2009/01/20 13:05:28 kristaps Exp $ */
+d73 1
+a73 1
+			if (0 == buf[i] || ! isspace(buf[i]))
+d76 1
+a76 1
+			while (buf[i] && isspace(buf[i]))
+d110 1
+a110 1
+				if (isspace(buf[*pos]))
+d126 1
+a126 1
+			while (buf[*pos] && isspace(buf[*pos]))
+d158 1
+a158 1
+	while (buf[*pos] && isspace(buf[*pos]))
+d455 1
+a455 1
+	assert( ! isspace(buf[*pos]));
+d468 1
+a468 1
+		if (isspace(buf[*pos])) 
+d483 1
+a483 1
+	while (buf[*pos] && isspace(buf[*pos]))
+@
+
+
+1.19
+log
+@Quoted-literals handled correctly.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.18 2009/01/20 12:51:28 kristaps Exp $ */
+d28 7
+a35 2
+/* FIXME: if arguments are quoted, they should not be later parsed for
+ * macros. */
+@
+
+
+1.18
+log
+@Moved prologue-pruning into action.c.
+Added line-arg softmax.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.17 2009/01/19 17:02:58 kristaps Exp $ */
+d151 1
+a151 1
+		return(ARGS_WORD);
+d157 1
+a157 1
+		return(ARGS_WORD);
+d162 1
+a162 1
+	return(ARGS_WORD);
+@
+
+
+1.17
+log
+@Removed unnecessary test cases (most were for visual).
+Finally fixed scope-rewinding (MDOC_VALID).
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.16 2009/01/17 20:10:36 kristaps Exp $ */
+a27 1
+
+d29 2
+@
+
+
+1.16
+log
+@Lint checks.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.15 2009/01/16 12:23:25 kristaps Exp $ */
+d81 2
+a82 1
+	if ('\"' != buf[*pos]) {
+d102 5
+a106 2
+		else
+			while (buf[*pos] && ! isspace(buf[*pos]))
+d108 2
+d460 5
+a464 1
+	while (buf[*pos] && ! isspace(buf[*pos]))
+d466 1
+@
+
+
+1.15
+log
+@Clean-ups & documentation.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.14 2009/01/16 11:50:54 kristaps Exp $ */
+d32 1
+a32 1
+static	int		 parse(struct mdoc *, int, int,
+d407 1
+a407 1
+parse(struct mdoc *mdoc, int line, int tok, 
+d472 1
+a472 1
+	if ( ! parse(mdoc, line, tok, v, pos, buf))
+@
+
+
+1.14
+log
+@Finished re-fitting err/warn/msg routines.
+Some minor bug-fixes.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.13 2009/01/15 15:46:45 kristaps Exp $ */
+d29 2
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.12 2009/01/12 16:39:57 kristaps Exp $ */
+d49 1
+a49 1
+		if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_SYNTAX_QUOTED))
+d53 1
+a53 1
+		if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_SYNTAX_ARGLIKE))
+d118 1
+a118 1
+		if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_SYNTAX_WS_EOLN))
+a129 2
+	assert( ! (ARGS_TABSEP & fl));
+
+d136 1
+a136 1
+		(void)mdoc_perr(mdoc, line, *pos, ERR_SYNTAX_UNQUOTE);
+d150 1
+a150 1
+	if ( ! mdoc_pwarn(mdoc, line, *pos, WARN_SYNTAX_WS_EOLN))
+d339 1
+a339 1
+		return(mdoc_perr(mdoc, line, pos, ERR_SYNTAX_ARGBAD));
+a374 1
+	c = 0 == v->sz ? ERR_SYNTAX_ARGVAL : ERR_SYNTAX_ARGMANY;
+d376 3
+a378 1
+	return(mdoc_perr(mdoc, line, ppos, c));
+d395 1
+a395 1
+		return(mdoc_perr(mdoc, line, ppos, ERR_SYNTAX_ARGVAL));
+d459 2
+a460 1
+		(void)mdoc_pwarn(mdoc, line, i, WARN_SYNTAX_ARGLIKE);
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.11 2009/01/12 10:31:53 kristaps Exp $ */
+d176 2
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.10 2009/01/09 15:07:04 kristaps Exp $ */
+d32 4
+d57 4
+d77 1
+a77 3
+	/*
+	 * Parse routine for non-quoted string.  
+	 */
+d82 20
+a101 2
+		while (buf[*pos] && ! isspace(buf[*pos]))
+			(*pos)++;
+d107 1
+d111 3
+a113 2
+		while (buf[*pos] && isspace(buf[*pos]))
+			(*pos)++;
+d130 2
+d349 34
+a382 1
+parse(struct mdoc *mdoc, int line, int tok, 
+d385 1
+a386 1
+	int		 c, ppos, i;
+d390 21
+d417 1
+a417 14
+		/*
+		 * This has a single value for an argument.
+		 */
+		c = mdoc_args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+		if (ARGS_ERROR == c)
+			return(0);
+		else if (ARGS_EOLN != c) {
+			v->sz = 1;
+			v->value = xcalloc(1, sizeof(char *));
+			v->value[0] = p;
+			break;
+		}
+		return(mdoc_perr(mdoc, line, ppos, ERR_SYNTAX_ARGVAL));
+
+d419 1
+a419 27
+		/*
+		 * This has several value for a single argument.  We
+		 * pre-allocate a pointer array and don't let it exceed
+		 * this size.
+		 */
+		v->sz = 0;
+		v->value = xcalloc(MDOC_LINEARG_MAX, sizeof(char *));
+		for (i = 0; i < MDOC_LINEARG_MAX; i++) {
+			c = mdoc_args(mdoc, line, pos, buf, ARGS_QUOTED, &p);
+			if (ARGS_ERROR == c) {
+				free(v->value);
+				return(0);
+			} else if (ARGS_EOLN == c)
+				break;
+			v->value[i] = p;
+		}
+		if (0 == i) {
+			free(v->value);
+			return(mdoc_perr(mdoc, line, ppos, 
+						ERR_SYNTAX_ARGVAL));
+		} else if (MDOC_LINEARG_MAX == i)
+			return(mdoc_perr(mdoc, line, ppos, 
+						ERR_SYNTAX_ARGMANY));
+
+		v->sz = i;
+		break;
+
+a420 2
+		v->sz = 0;
+		v->value = NULL;
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.9 2009/01/08 14:55:59 kristaps Exp $ */
+d407 3
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.8 2009/01/05 17:57:07 kristaps Exp $ */
+d414 2
+a415 2
+		(void)mdoc_perr(mdoc, line, i, ERR_SYNTAX_ARG);
+		return(ARGV_ERROR);
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.7 2009/01/05 16:11:14 kristaps Exp $ */
+d30 1
+a30 1
+static	int		 parse(struct mdoc *, int, 
+d37 1
+a37 1
+mdoc_args(struct mdoc *mdoc, int tok, int *pos, char *buf, int fl, char **v)
+d45 1
+a45 1
+		if ( ! mdoc_warn(mdoc, tok, *pos, WARN_SYNTAX_QUOTED))
+d49 1
+a49 1
+		if ( ! mdoc_warn(mdoc, tok, *pos, WARN_SYNTAX_ARGLIKE))
+d92 1
+a92 1
+		if ( ! mdoc_warn(mdoc, tok, *pos, WARN_SYNTAX_WS_EOLN))
+d110 1
+a110 1
+		(void)mdoc_err(mdoc, tok, *pos, ERR_SYNTAX_UNQUOTE);
+d124 1
+a124 1
+	if ( ! mdoc_warn(mdoc, tok, *pos, WARN_SYNTAX_WS_EOLN))
+d294 1
+a294 1
+postparse(struct mdoc *mdoc, int tok, const struct mdoc_arg *v, int pos)
+d311 1
+a311 1
+		return(mdoc_err(mdoc, tok, pos, ERR_SYNTAX_ARGBAD));
+d321 1
+a321 1
+parse(struct mdoc *mdoc, int tok, 
+d338 1
+a338 1
+		c = mdoc_args(mdoc, tok, pos, buf, ARGS_QUOTED, &p);
+d341 7
+a347 7
+		else if (ARGS_EOLN == c)
+			return(mdoc_err(mdoc, tok, ppos, ERR_SYNTAX_ARGVAL));
+			
+		v->sz = 1;
+		v->value = xcalloc(1, sizeof(char *));
+		v->value[0] = p;
+		break;
+d358 1
+a358 1
+			c = mdoc_args(mdoc, tok, pos, buf, ARGS_QUOTED, &p);
+d368 2
+a369 1
+			return(mdoc_err(mdoc, tok, ppos, ERR_SYNTAX_ARGVAL));
+d371 2
+a372 1
+			return(mdoc_err(mdoc, tok, ppos, ERR_SYNTAX_ARGMANY));
+d388 1
+a388 1
+mdoc_argv(struct mdoc *mdoc, int tok, 
+d414 1
+a414 1
+		(void)mdoc_err(mdoc, tok, i, ERR_SYNTAX_ARG);
+d424 1
+a424 1
+	if ( ! parse(mdoc, tok, v, pos, buf))
+d426 1
+a426 1
+	if ( ! postparse(mdoc, tok, v, ppos))
+@
+
+
+1.7
+log
+@Finished initial parse sequence.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.6 2009/01/02 14:06:16 kristaps Exp $ */
+a135 9
+	case (MDOC_Bf):
+		if (xstrcmp(argv, "emphasis"))
+			return(MDOC_Emphasis);
+		else if (xstrcmp(argv, "literal"))
+			return(MDOC_Literal);
+		else if (xstrcmp(argv, "symbolic"))
+			return(MDOC_Symbolic);
+		break;
+
+d156 9
+d286 1
+a286 2
+		abort();
+		/* NOTREACHED */
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.5 2009/01/01 20:40:16 kristaps Exp $ */
+d165 5
+@
+
+
+1.5
+log
+@Broke apart macro_prologuexxx into prologue.
+Fixed validation for line-scoped.
+Merged const_arg and const.
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.4 2008/12/30 19:06:03 kristaps Exp $ */
+d136 16
+a325 33
+	case(MDOC_Compact):
+		/* FALLTHROUGH */
+	case(MDOC_Ragged):
+		/* FALLTHROUGH */
+	case(MDOC_Unfilled):
+		/* FALLTHROUGH */
+	case(MDOC_Literal):
+		/* FALLTHROUGH */
+	case(MDOC_File):
+		/* FALLTHROUGH */
+	case(MDOC_Bullet):
+		/* FALLTHROUGH */
+	case(MDOC_Dash):
+		/* FALLTHROUGH */
+	case(MDOC_Hyphen):
+		/* FALLTHROUGH */
+	case(MDOC_Item):
+		/* FALLTHROUGH */
+	case(MDOC_Enum):
+		/* FALLTHROUGH */
+	case(MDOC_Tag):
+		/* FALLTHROUGH */
+	case(MDOC_Diag):
+		/* FALLTHROUGH */
+	case(MDOC_Hang):
+		/* FALLTHROUGH */
+	case(MDOC_Ohang):
+		/* FALLTHROUGH */
+	case(MDOC_Inset):
+		v->sz = 0;
+		v->value = NULL;
+		break;
+
+d370 1
+d372 3
+a374 2
+		abort();
+		/* NOTREACHED */
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.3 2008/12/30 13:43:53 kristaps Exp $ */
+d186 77
+d406 1
+a406 1
+		return(0);
+d410 2
+a411 4
+	if ('-' != buf[*pos]) {
+		(void)mdoc_err(mdoc, tok, *pos, ERR_SYNTAX_ARGFORM);
+		return(-1);
+	}
+d424 1
+a424 1
+		return(-1);
+d434 1
+a434 1
+		return(-1);
+d436 1
+a436 1
+		return(-1);
+d438 1
+a438 1
+	return(1);
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.2 2008/12/28 00:34:20 kristaps Exp $ */
+d101 1
+a101 2
+	 * error.  After, parse to the next word.  We're not allowed to
+	 * also be DELIM requests (for now).
+a102 1
+	assert( ! (fl & ARGS_DELIM));
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: argv.c,v 1.1 2008/12/23 05:30:49 kristaps Exp $ */
+d181 7
+d268 2
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/* $Id: hash.c,v 1.2 2008/12/15 02:23:12 kristaps Exp $ */
+d29 5
+a33 2
+static	int		 parse_next(struct mdoc *, int, 
+				int *, char *, char **);
+d36 2
+a37 3
+static int
+parse_next(struct mdoc *mdoc, int tok, 
+		int *pos, char *buf, char **v)
+d39 1
+d42 30
+a71 1
+		return(0);
+d80 1
+a80 1
+			return(1);
+d84 1
+a84 1
+			return(1);
+d90 1
+a90 1
+			return(1);
+d93 1
+a93 3
+			return(-1);
+		return(1);
+	} 
+d95 10
+a104 3
+	if ('-' == buf[*pos]) 
+		if ( ! mdoc_warn(mdoc, tok, *pos, WARN_SYNTAX_ARGLIKE))
+			return(-1);
+d113 1
+a113 1
+		return(-1);
+d118 1
+a118 1
+		return(1);
+d124 1
+a124 1
+		return(1);
+d127 3
+a129 2
+		return(-1);
+	return(1);
+d133 2
+a134 2
+int
+mdoc_argv_lookup(int tok, const char *argv)
+d138 1
+a138 1
+	case (MDOC_Bl):
+d149 4
+a152 1
+		else if (xstrcmp(argv, "bullet"))
+d176 2
+d180 1
+a181 1
+		break;
+d191 29
+a219 2
+int
+mdoc_argv_parse(struct mdoc *mdoc, int tok, int arg, 
+a224 1
+	v->arg = arg;
+d227 1
+a227 1
+	switch (arg) {
+d267 2
+a268 2
+		c = parse_next(mdoc, tok, pos, buf, &p);
+		if (-1 == c)
+d270 1
+a270 1
+		else if (0 == c)
+d287 2
+a288 2
+			c = parse_next(mdoc, tok, pos, buf, &p);
+			if (-1 == c) {
+d291 1
+a291 1
+			} else if (0 == c)
+d312 48
+d374 1
+@

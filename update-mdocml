@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Go to the rcs branch.
+git checkout rcs || :
+
+echo "Warning: this will take ~2.5 hours." >&2
+
+# This takes forever so `time` is useful. 
+time ./cvssuck -o . -v anoncvs@mdocml.bsd.lv:/cvs mdocml
+
+git add -A .
+git commit -am "Update from docml.bsd.lv cvs: $(date)"
+
+# Delete existing branches; fast-import will recreate them.
+git branch | xargs -n1 git branch -D
+find * -name \*,v | cvs-fast-export -pA authormap | git fast-import
+
+
+git checkout master
